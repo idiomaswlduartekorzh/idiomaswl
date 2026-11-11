@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-river-map",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Paper Solution: Bridging the Digital Divide in Riverton",
+      "en": "The Paper Solution: Bridging the Digital Divide in Riverton"
+    },
+    "intro": {
+      "es": "This article explores how a community-led initiative addresses technological barriers during emergency preparedness planning.",
+      "en": "This article explores how a community-led initiative addresses technological barriers during emergency preparedness planning."
+    },
+    "mission": {
+      "es": "Analyze the text to understand the tension between digital efficiency and accessibility in public safety communication.",
+      "en": "Analyze the text to understand the tension between digital efficiency and accessibility in public safety communication."
+    },
+    "targetText": "When the Riverton Emergency Agency released the new interactive flood risk map, they hailed it as a triumph of modern cartography. By overlaying real-time sensor data onto satellite imagery, the agency provided a granular view of potential water levels. However, for residents like Elena Vance, who relies on a refurbished smartphone with a dim, low-resolution screen, the map was a frustrating blur of indistinguishable blues and greys. While the digital tool offered sophisticated zoom functions for tech-savvy users, it effectively alienated the elderly and those without high-end devices, creating a dangerous information gap in a town prone to seasonal surges.\n\nRecognizing this oversight, the Riverton Neighborhood Alliance, led by community organizer Marcus Thorne, proposed a pragmatic alternative: high-contrast, large-format printed maps. Thorne argued that during a crisis, relying on a battery-dependent device with poor display quality was a recipe for disaster. The Alliance suggested placing these waterproof, physical maps in high-traffic community hubs like the library and the post office. They believed that when the power grid flickers, a static piece of paper remains the most reliable source of truth, offering immediate clarity that a malfunctioning screen simply cannot replicate.\n\nThe agency’s response was lukewarm at best. Director Sarah Jenkins acknowledged the validity of the accessibility concerns but maintained that printed materials are inherently static. She argued that in a rapidly evolving flood event, a printed map becomes obsolete within minutes as water levels shift. For the agency, the digital map’s greatest strength was its dynamic nature, allowing them to broadcast updates instantly. They feared that providing printed versions would give residents a false sense of security, leading them to ignore the more accurate, albeit difficult-to-read, digital updates.\n\nDespite the agency’s resistance, the Alliance proceeded with their plan. They secured a small grant from a local hardware store to print two hundred copies. The launch event at the town square saw an unexpected turnout, with dozens of residents praising the clarity of the printed graphics. It was a clear victory for accessibility, yet it highlighted a persistent tension. As the town entered the rainy season, the community was left with two competing systems: one that was accurate but inaccessible, and one that was accessible but static.\n\nThe situation remains unresolved, serving as a cautionary tale for municipal planners everywhere. While digital transformation promises greater precision, it often inadvertently leaves the most vulnerable citizens behind. The Riverton experiment proves that technology alone is not a panacea for public safety. Until planners can ensure that digital tools are truly universal, or until hybrid systems are integrated into standard protocols, the divide between the connected and the disconnected will continue to threaten the safety of the entire community.",
+    "wordCount": 445,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "granular",
+        "lemma": "granular",
+        "glosses": {
+          "es": "composed of small, distinct parts or details",
+          "en": "composed of small, distinct parts or details"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienated",
+        "lemma": "alienated",
+        "glosses": {
+          "es": "made someone feel isolated or excluded",
+          "en": "made someone feel isolated or excluded"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatic",
+        "lemma": "pragmatic",
+        "glosses": {
+          "es": "dealing with things sensibly and realistically",
+          "en": "dealing with things sensibly and realistically"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolete",
+        "lemma": "obsolete",
+        "glosses": {
+          "es": "no longer produced or used; out of date",
+          "en": "no longer produced or used; out of date"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "panacea",
+        "lemma": "panacea",
+        "glosses": {
+          "es": "a solution or remedy for all difficulties",
+          "en": "a solution or remedy for all difficulties"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hybrid",
+        "lemma": "hybrid",
+        "glosses": {
+          "es": "a thing made by combining two different elements",
+          "en": "a thing made by combining two different elements"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict discussed in the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle between digital and physical mapping."
+        },
+        {
+          "id": "a2",
+          "text": "The funding issues for the local hardware store."
+        },
+        {
+          "id": "a3",
+          "text": "The disagreement over who should lead the agency."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The situation remains unresolved, serving as a cautionary tale for municipal planners everywhere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did the agency oppose the printed maps?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They cost too much."
+        },
+        {
+          "id": "a2",
+          "text": "They become obsolete."
+        },
+        {
+          "id": "a3",
+          "text": "They were poorly designed."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "She argued that in a rapidly evolving flood event, a printed map becomes obsolete within minutes as water levels shift.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the text imply about the agency's digital map?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is useless for everyone."
+        },
+        {
+          "id": "a2",
+          "text": "It is too cheap to function."
+        },
+        {
+          "id": "a3",
+          "text": "It is technically advanced."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "By overlaying real-time sensor data onto satellite imagery, the agency provided a granular view of potential water levels.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the example of Elena Vance?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To show why the digital map is flawed."
+        },
+        {
+          "id": "a2",
+          "text": "To explain how to use a smartphone."
+        },
+        {
+          "id": "a3",
+          "text": "To highlight the need for new phones."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "While the digital tool offered sophisticated zoom functions for tech-savvy users, it effectively alienated the elderly and those without high-end devices, creating a dangerous information gap in a town prone to seasonal surges.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the author's tone regarding the situation in Riverton?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dismissive and cynical."
+        },
+        {
+          "id": "a2",
+          "text": "Analytical and cautious."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistic and celebratory."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The situation remains unresolved, serving as a cautionary tale for municipal planners everywhere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author mean by the word 'panacea'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A complex system."
+        },
+        {
+          "id": "a2",
+          "text": "A digital update."
+        },
+        {
+          "id": "a3",
+          "text": "A universal fix."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The Riverton experiment proves that technology alone is not a panacea for public safety.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word email to the Riverton Emergency Agency proposing a compromise that combines the digital map's real-time accuracy with the accessibility of the printed maps.",
+      "en": "Write a 150-word email to the Riverton Emergency Agency proposing a compromise that combines the digital map's real-time accuracy with the accessibility of the printed maps."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the text to understand the tension between digital efficiency and accessibility in public safety communication.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Paper Solution: Bridging the Digital Divide in Riverton | B2 Reading | WeLearn",
+      "en": "The Paper Solution: Bridging the Digital Divide in Riverton | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "This article explores how a community-led initiative addresses technological barriers during emergency preparedness planning.",
+      "en": "This article explores how a community-led initiative addresses technological barriers during emergency preparedness planning."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

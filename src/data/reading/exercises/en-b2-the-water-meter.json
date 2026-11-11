@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-water-meter",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Drip Dilemma: Smart Tech vs. Ancient Pipes",
+      "en": "The Drip Dilemma: Smart Tech vs. Ancient Pipes"
+    },
+    "intro": {
+      "es": "A look at the tension between modern municipal water tracking and the reality of aging urban infrastructure.",
+      "en": "A look at the tension between modern municipal water tracking and the reality of aging urban infrastructure."
+    },
+    "mission": {
+      "es": "Read the report on the city's smart meter initiative and evaluate the conflict between data transparency and tenant agency.",
+      "en": "Read the report on the city's smart meter initiative and evaluate the conflict between data transparency and tenant agency."
+    },
+    "targetText": "The city of Oakhaven recently launched its 'ClearStream' initiative, installing high-precision smart water meters across all residential districts. The municipal government touted the program as a revolutionary step toward sustainability, promising to identify hidden leaks in real-time. For homeowners, the project was a resounding success; within weeks, dozens of residents discovered underground pipe fractures that had been quietly inflating their bills for years. However, for the tenants of the historic Ironwood Apartments, the technology has become a source of profound anxiety rather than empowerment.\n\nElias Thorne, a long-term resident of Ironwood, received a notification from the city app last Tuesday indicating a persistent water leak in his unit. According to the data, his apartment was losing nearly thirty liters of water every hour, even when the taps were closed. Elias immediately contacted his landlord, Marcus Vane, who brushed off the report as a glitch in the new system. Vane argued that the century-old copper plumbing throughout the building was prone to vibrations that likely confused the sensitive sensors. He refused to authorize a professional inspection, citing the exorbitant costs of retrofitting such an aged structure.\n\nThis refusal created a stalemate. Elias is now caught in a bureaucratic trap: he is legally responsible for the water usage recorded at his meter, yet he lacks the authority to modify the building's infrastructure. While the city’s dashboard provides granular data on where the waste occurs, it offers no mechanism for tenants to compel landlords to perform maintenance. The smart technology has effectively turned tenants into passive observers of their own financial loss, highlighting a glaring oversight in the city's rollout plan.\n\nSome urban planners defend the initiative, noting that the data is essential for long-term conservation efforts. They argue that without such precise tracking, the city would be blind to the cumulative impact of thousands of minor leaks. While this is objectively true, it ignores the immediate economic burden placed on individuals who occupy outdated housing. The technology is undeniably efficient, yet its implementation assumes that all residents have the agency to act upon the insights provided by the digital interface.\n\nAs the situation at Ironwood continues, the divide between technological capability and physical reality grows wider. Elias has begun a petition to force the city council to create an emergency fund for repairs in rental properties, but progress is slow. The smart meters continue to ping his phone with relentless updates, documenting the waste he is powerless to stop. This case serves as a sober reminder that innovation, when decoupled from social equity, can exacerbate existing vulnerabilities rather than solving them. The water continues to flow, the meters continue to report, and the pipes remain stubbornly, anciently broken.",
+    "wordCount": 446,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "touted",
+        "lemma": "touted",
+        "glosses": {
+          "es": "promoted or publicized aggressively",
+          "en": "promoted or publicized aggressively"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exorbitant",
+        "lemma": "exorbitant",
+        "glosses": {
+          "es": "unreasonably high or expensive",
+          "en": "unreasonably high or expensive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stalemate",
+        "lemma": "stalemate",
+        "glosses": {
+          "es": "a situation where no progress can be made",
+          "en": "a situation where no progress can be made"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "granular",
+        "lemma": "granular",
+        "glosses": {
+          "es": "consisting of small, detailed components",
+          "en": "consisting of small, detailed components"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cumulative",
+        "lemma": "cumulative",
+        "glosses": {
+          "es": "increasing in quantity through successive additions",
+          "en": "increasing in quantity through successive additions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decoupled",
+        "lemma": "decoupled",
+        "glosses": {
+          "es": "separated or disconnected from something else",
+          "en": "separated or disconnected from something else"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.3,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the passage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Systemic flaws in smart infrastructure."
+        },
+        {
+          "id": "a2",
+          "text": "The failure of municipal technology."
+        },
+        {
+          "id": "a3",
+          "text": "Water conservation in modern cities."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "This case serves as a sober reminder that innovation, when decoupled from social equity, can exacerbate existing vulnerabilities rather than solving them.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Marcus Vane decline to fix the pipes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He doubted the sensor accuracy."
+        },
+        {
+          "id": "a2",
+          "text": "He claimed the costs were too high."
+        },
+        {
+          "id": "a3",
+          "text": "He blamed the city for the leaks."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vane argued that the century-old copper plumbing throughout the building was prone to vibrations that likely confused the sensitive sensors. He refused to authorize a professional inspection, citing the exorbitant costs of retrofitting such an aged structure.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Elias feel about the new technology?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He is highly skeptical."
+        },
+        {
+          "id": "a2",
+          "text": "He is excited for change."
+        },
+        {
+          "id": "a3",
+          "text": "He feels helpless."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The smart technology has effectively turned tenants into passive observers of their own financial loss",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the homeowners' success with the meters?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To contrast their experience with tenants."
+        },
+        {
+          "id": "a2",
+          "text": "To show the system works well."
+        },
+        {
+          "id": "a3",
+          "text": "To prove the city spent money wisely."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "For homeowners, the project was a resounding success; within weeks, dozens of residents discovered underground pipe fractures that had been quietly inflating their bills for years. However, for the tenants of the historic Ironwood Apartments, the technology has become a source of profound anxiety rather than empowerment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the author's tone regarding the smart meter rollout?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic and supportive."
+        },
+        {
+          "id": "a2",
+          "text": "Critical and objective."
+        },
+        {
+          "id": "a3",
+          "text": "Angry and judgmental."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The technology is undeniably efficient, yet its implementation assumes that all residents have the agency to act upon the insights provided by the digital interface.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by the word 'granular' in the third paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The data is too difficult for most residents to read."
+        },
+        {
+          "id": "a2",
+          "text": "The data is based on sand."
+        },
+        {
+          "id": "a3",
+          "text": "The data is extremely detailed."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "While the city’s dashboard provides granular data on where the waste occurs, it offers no mechanism for tenants to compel landlords to perform maintenance.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short email to the city council proposing a solution that bridges the gap between smart meter data and the rights of tenants living in older buildings.",
+      "en": "Write a short email to the city council proposing a solution that bridges the gap between smart meter data and the rights of tenants living in older buildings."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Read the report on the city's smart meter initiative and evaluate the conflict between data transparency and tenant agency.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Drip Dilemma: Smart Tech vs. Ancient Pipes | B2 Reading | WeLearn",
+      "en": "The Drip Dilemma: Smart Tech vs. Ancient Pipes | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A look at the tension between modern municipal water tracking and the reality of aging urban infrastructure.",
+      "en": "A look at the tension between modern municipal water tracking and the reality of aging urban infrastructure."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

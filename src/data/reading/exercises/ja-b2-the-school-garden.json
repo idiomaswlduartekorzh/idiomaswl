@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-school-garden",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "緑の教室：学校菜園の夏をめぐる葛藤",
+      "en": "緑の教室：学校菜園の夏をめぐる葛藤"
+    },
+    "intro": {
+      "es": "学校菜園の収穫物が給食を豊かにする一方で、夏休みの管理という現実的な課題が浮上しました。生徒と保護者の間で揺れる責任の所在について考えます。",
+      "en": "学校菜園の収穫物が給食を豊かにする一方で、夏休みの管理という現実的な課題が浮上しました。生徒と保護者の間で揺れる責任の所在について考えます。"
+    },
+    "mission": {
+      "es": "学校菜園の持続可能性を確保するための、生徒主導の新しい管理体制の提案を読み解く。",
+      "en": "学校菜園の持続可能性を確保するための、生徒主導の新しい管理体制の提案を読み解く。"
+    },
+    "targetText": "本校の「緑の教室」プロジェクトは、校庭の一角で生徒たちが野菜を育てる活動を通じて、食育と環境教育を実践してきた。収穫された新鮮な野菜は給食の献立に活用され、生徒たちの食への関心は確実に高まった。しかし、夏休みという長い休暇期間が、このプロジェクトにとって最大の障壁となっている。炎天下での水やりや雑草取りといった日々の管理を誰が担うべきかという問題が、昨年度の末から教職員会議での主要な議題となっていた。\n\nこの状況を打開するため、生徒会役員の佐藤さんは、全校生徒による「夏休み当番制」を提案した。クラスごとに週単位で担当を割り振り、夏休み中も交代で菜園を管理するという計画である。佐藤さんは、生徒が自ら責任を持って野菜を育てることで、より深い学びが得られると主張した。この提案は、給食の質を維持したい学校側からは歓迎されたが、保護者からは懸念の声が上がった。特に共働きの家庭からは、登校の安全管理や送迎の負担が増えることへの反発が強かったのである。\n\n保護者代表の田中さんは、この提案が家庭に過度な負担を強いるものであると指摘した。田中さんは、ボランティアを募るなど、学校側が主体となって管理体制を構築すべきだと主張し、生徒の自主性を盾にした責任の転嫁であると厳しく批判した。これに対し、生徒会は、自分たちの活動の成果を自分たちで守るという姿勢こそが教育的価値であると反論した。両者の主張は平行線をたどり、議論は膠着状態に陥った。\n\nこの対立を解消するため、最終的に学校側は「地域連携型管理プログラム」を導入することを決定した。これは、生徒の当番に加えて、地域のシルバー人材センターや近隣の農家と提携し、専門的な指導を受けながら管理を行うという折衷案である。生徒の主体性を尊重しつつ、家庭への負担を最小限に抑えるというこの試みは、一見すると理想的な解決策のように思われた。しかし、地域住民との調整や、専門家を招くための予算確保という新たな課題が浮上した。\n\n現在、菜園は以前よりも活気に満ちているが、その裏では、生徒、保護者、地域住民が複雑な利害関係の中で協力し合っている。夏休みの菜園管理は、単なる労働の分担を超え、学校と地域社会の境界線を問い直す契機となった。このプロジェクトが今後も持続可能であるか否かは、この新たな協力体制がどれほど柔軟に機能するかにかかっている。菜園の緑は豊かさを増しているが、その管理をめぐる対話は、今もなお静かな緊張感を孕んだまま続いているのである。",
+    "wordCount": 967,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "障壁",
+        "lemma": "障壁",
+        "glosses": {
+          "es": "barrier",
+          "en": "barrier"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "当番制",
+        "lemma": "当番制",
+        "glosses": {
+          "es": "rotation system",
+          "en": "rotation system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "転嫁",
+        "lemma": "転嫁",
+        "glosses": {
+          "es": "shifting (blame or responsibility)",
+          "en": "shifting (blame or responsibility)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "膠着状態",
+        "lemma": "膠着状態",
+        "glosses": {
+          "es": "deadlock",
+          "en": "deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "折衷案",
+        "lemma": "折衷案",
+        "glosses": {
+          "es": "compromise plan",
+          "en": "compromise plan"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "契機",
+        "lemma": "契機",
+        "glosses": {
+          "es": "opportunity or catalyst",
+          "en": "opportunity or catalyst"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 46,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "学校菜園の運営をめぐる対立と解決の試み"
+        },
+        {
+          "id": "a2",
+          "text": "夏休みの学校菜園管理における生徒の学習意欲の向上"
+        },
+        {
+          "id": "a3",
+          "text": "保護者と学校間の教育方針をめぐる詳細な法的議論"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "夏休みの菜園管理は、単なる労働の分担を超え、学校と地域社会の境界線を問い直す契機となった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "保護者から提案に対して反対意見が出た主な理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "野菜の質"
+        },
+        {
+          "id": "a2",
+          "text": "家庭の負担が増えるから"
+        },
+        {
+          "id": "a3",
+          "text": "登校の安全管理や送迎の負担が増えることへの反発が強かったから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "特に共働きの家庭からは、登校の安全管理や送迎の負担が増えることへの反発が強かったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "「地域連携型管理プログラム」に対する筆者の評価はどうですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "成功した"
+        },
+        {
+          "id": "a2",
+          "text": "失敗した"
+        },
+        {
+          "id": "a3",
+          "text": "新たな課題を生んだ"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "地域住民との調整や、専門家を招くための予算確保という新たな課題が浮上した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がこの記事を書いた目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "学校運営における対話の重要性を示すため"
+        },
+        {
+          "id": "a2",
+          "text": "学校菜園の野菜を効率的に収穫する方法を広めるため"
+        },
+        {
+          "id": "a3",
+          "text": "夏休みの管理業務における具体的な作業手順を伝えるため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "夏休みの菜園管理は、単なる労働の分担を超え、学校と地域社会の境界線を問い直す契機となった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この記事全体の語り口はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "主観的"
+        },
+        {
+          "id": "a2",
+          "text": "客観的で冷静"
+        },
+        {
+          "id": "a3",
+          "text": "極めて批判的で情熱的な訴え"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "菜園の緑は豊かさを増しているが、その管理をめぐる対話は、今もなお静かな緊張感を孕んだまま続いているのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「膠着状態」という言葉の意味として最も適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "激しく対立する状態"
+        },
+        {
+          "id": "a2",
+          "text": "協力体制が整う状態"
+        },
+        {
+          "id": "a3",
+          "text": "議論が進まない状態"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "両者の主張は平行線をたどり、議論は膠着状態に陥った。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたの学校で、生徒が主体となって取り組むべき新しいプロジェクトを一つ提案してください。その際、予想される課題と、それを解決するための具体的な協力体制について、本文の論理構成を参考にしながら記述してください。",
+      "en": "あなたの学校で、生徒が主体となって取り組むべき新しいプロジェクトを一つ提案してください。その際、予想される課題と、それを解決するための具体的な協力体制について、本文の論理構成を参考にしながら記述してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "学校菜園の持続可能性を確保するための、生徒主導の新しい管理体制の提案を読み解く。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "緑の教室：学校菜園の夏をめぐる葛藤 | B2 Reading | WeLearn",
+      "en": "緑の教室：学校菜園の夏をめぐる葛藤 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "学校菜園の収穫物が給食を豊かにする一方で、夏休みの管理という現実的な課題が浮上しました。生徒と保護者の間で揺れる責任の所在について考えます。",
+      "en": "学校菜園の収穫物が給食を豊かにする一方で、夏休みの管理という現実的な課題が浮上しました。生徒と保護者の間で揺れる責任の所在について考えます。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

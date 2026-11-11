@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-open-schedule",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La flexibilité à quel prix ?",
+      "en": "La flexibilité à quel prix ?"
+    },
+    "intro": {
+      "es": "Lisez cet échange de courriels entre la direction de l'école Horizon et une représentante des parents d'élèves concernant la nouvelle politique d'horaires.",
+      "en": "Lisez cet échange de courriels entre la direction de l'école Horizon et une représentante des parents d'élèves concernant la nouvelle politique d'horaires."
+    },
+    "mission": {
+      "es": "Analysez les arguments avancés par les deux parties et identifiez les tensions sous-jacentes concernant la gestion du temps scolaire.",
+      "en": "Analysez les arguments avancés par les deux parties et identifiez les tensions sous-jacentes concernant la gestion du temps scolaire."
+    },
+    "targetText": "Objet : Révision nécessaire de la politique d'arrivée flexible\n\nChère Madame Morel,\n\nJe vous écris au nom du conseil des parents concernant la mise en œuvre de notre politique d'arrivée flexible. Si nous saluons l'intention initiale de soulager les familles résidant en périphérie, force est de constater que le dispositif actuel engendre une désorganisation chronique. Les élèves arrivant à des heures disparates perturbent le démarrage des cours magistraux, obligeant les enseignants à répéter les consignes essentielles. Cette situation crée une iniquité pédagogique : ceux qui arrivent à l'heure subissent des interruptions constantes, tandis que les retardataires manquent les bases méthodologiques indispensables à leur progression. Il est impératif de repenser ce fonctionnement pour rétablir une sérénité propice aux apprentissages.\n\nMonsieur le Directeur, je comprends vos préoccupations, mais il faut considérer la réalité logistique de nos foyers. Pour beaucoup, cet aménagement n'est pas un choix de confort, mais une nécessité dictée par les contraintes de transport en commun et les obligations professionnelles. Supprimer cette flexibilité reviendrait à exclure de facto une partie de notre communauté scolaire. Nous ne pouvons ignorer que la réussite scolaire dépend aussi de la stabilité émotionnelle des enfants, souvent mise à mal par des trajets stressants et précipités. La flexibilité est, selon nous, un vecteur d'inclusion sociale indispensable dans notre contexte géographique actuel.\n\nNéanmoins, nous reconnaissons que le système actuel nécessite un ajustement structurel. Nous proposons donc de segmenter les arrivées en deux créneaux fixes plutôt que de laisser une liberté totale. Cela permettrait aux enseignants de stabiliser le début de séance tout en maintenant une souplesse pour les familles les plus éloignées. Cette solution médiane semble être le seul compromis viable pour concilier les exigences académiques et les réalités quotidiennes de nos familles.\n\nCependant, cette proposition soulève une question épineuse : comment garantir que ces créneaux ne deviennent pas une simple tolérance au retard systématique ? Si nous acceptons ce compromis, nous craignons que la rigueur académique ne s'effrite davantage. La ponctualité n'est pas seulement une règle administrative, c'est une compétence de vie que l'école se doit de transmettre. Accepter une telle segmentation, c'est peut-être admettre que nous privilégions la commodité au détriment de l'exigence intellectuelle.\n\nEn conclusion, nous sommes à la croisée des chemins. La direction maintient que l'unité du groupe-classe est non négociable, tandis que les parents insistent sur la préservation de l'équilibre familial. Le conseil se réunira la semaine prochaine pour trancher, mais il est clair qu'aucune solution ne fera l'unanimité. Nous restons dans une impasse où chaque concession semble fragiliser un pilier fondamental de notre institution : soit l'excellence académique, soit la bienveillance sociale. Le débat reste ouvert, mais le temps presse pour définir les modalités de la rentrée prochaine.",
+    "wordCount": 447,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "disparates",
+        "lemma": "disparates",
+        "glosses": {
+          "es": "uneven or inconsistent",
+          "en": "uneven or inconsistent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "iniquité",
+        "lemma": "iniquité",
+        "glosses": {
+          "es": "unfairness or inequality",
+          "en": "unfairness or inequality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "de facto",
+        "lemma": "de facto",
+        "glosses": {
+          "es": "in practice, even if not officially",
+          "en": "in practice, even if not officially"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "épineuse",
+        "lemma": "épineuse",
+        "glosses": {
+          "es": "tricky or delicate",
+          "en": "tricky or delicate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "effrite",
+        "lemma": "effrite",
+        "glosses": {
+          "es": "crumbles or erodes",
+          "en": "crumbles or erodes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "a deadlock or stalemate",
+          "en": "a deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.4,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:51:00.562Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet central du débat entre la direction et les parents ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestion des arrivées des élèves."
+        },
+        {
+          "id": "a2",
+          "text": "L'organisation des horaires des enseignants et du personnel administratif."
+        },
+        {
+          "id": "a3",
+          "text": "La modification structurelle des programmes pédagogiques durant l'année scolaire."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la mise en œuvre de notre politique d'arrivée flexible",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi les enseignants sont-ils mécontents ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils ont trop d'élèves par classe."
+        },
+        {
+          "id": "a2",
+          "text": "Ils doivent répéter les consignes."
+        },
+        {
+          "id": "a3",
+          "text": "Ils manquent de matériel pédagogique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "obligeant les enseignants à répéter les consignes essentielles",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position sous-jacente des parents ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils exigent."
+        },
+        {
+          "id": "a2",
+          "text": "Ils veulent."
+        },
+        {
+          "id": "a3",
+          "text": "Ils valorisent l'inclusion."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La flexibilité est, selon nous, un vecteur d'inclusion sociale",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif de la proposition de créer deux créneaux fixes ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Équilibrer les contraintes scolaires et familiales."
+        },
+        {
+          "id": "a2",
+          "text": "Augmenter drastiquement le nombre d'heures de cours hebdomadaires obligatoires."
+        },
+        {
+          "id": "a3",
+          "text": "Uniformiser strictement les méthodes d'évaluation pour tous les niveaux scolaires."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "concilier les exigences académiques et les réalités quotidiennes de nos familles",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans le paragraphe final ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Confiant."
+        },
+        {
+          "id": "a2",
+          "text": "Incertain et tendu."
+        },
+        {
+          "id": "a3",
+          "text": "Serein et très diplomate."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "il est clair qu'aucune solution ne fera l'unanimité",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'épineuse' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Futile."
+        },
+        {
+          "id": "a2",
+          "text": "Banal."
+        },
+        {
+          "id": "a3",
+          "text": "Complexe."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "cette proposition soulève une question épineuse",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 150 mots au nom du conseil d'administration, proposant une alternative qui garantit la ponctualité tout en soutenant les familles en difficulté.",
+      "en": "Rédigez une réponse de 150 mots au nom du conseil d'administration, proposant une alternative qui garantit la ponctualité tout en soutenant les familles en difficulté."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analysez les arguments avancés par les deux parties et identifiez les tensions sous-jacentes concernant la gestion du temps scolaire.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:51:00.562Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La flexibilité à quel prix ? | B2 Reading | WeLearn",
+      "en": "La flexibilité à quel prix ? | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet échange de courriels entre la direction de l'école Horizon et une représentante des parents d'élèves concernant la nouvelle politique d'horaires.",
+      "en": "Lisez cet échange de courriels entre la direction de l'école Horizon et une représentante des parents d'élèves concernant la nouvelle politique d'horaires."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:51:00.562Z"
+  }
+}

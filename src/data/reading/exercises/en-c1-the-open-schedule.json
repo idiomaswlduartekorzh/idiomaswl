@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-open-schedule",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Synchronicity Paradox",
+      "en": "The Synchronicity Paradox"
+    },
+    "intro": {
+      "es": "An email exchange between a department head and a faculty member reveals the hidden friction behind a new 'flexible' scheduling initiative.",
+      "en": "An email exchange between a department head and a faculty member reveals the hidden friction behind a new 'flexible' scheduling initiative."
+    },
+    "mission": {
+      "es": "Analyze the conflicting perspectives on administrative flexibility and its impact on institutional stability.",
+      "en": "Analyze the conflicting perspectives on administrative flexibility and its impact on institutional stability."
+    },
+    "targetText": "Subject: Urgent: Re-evaluating the Modular Block Schedule\n\nDear Marcus, I am writing to you following the feedback session regarding our transition to the modular block schedule. While I fully appreciate the pedagogical autonomy this shift was intended to foster, I must voice my growing concern regarding the operational fallout. When we initially proposed the 'fluid-time' framework, the objective was to allow teachers to extend high-engagement seminars beyond the traditional fifty-minute constraints. However, the current reality is that this flexibility has devolved into a logistical quagmire. Yesterday, the sudden extension of your Advanced Literature workshop caused a cascading delay that prevented the Physics department from accessing the laboratory equipment they had reserved for the subsequent period. It is becoming increasingly clear that one individual’s pedagogical spontaneity is effectively functioning as an institutional imposition on the time and resources of their colleagues.\n\nFrom: Marcus Thorne\nTo: Elena Vance\n\nElena, I read your assessment with a degree of frustration. To characterize the pursuit of deep, immersive learning as an 'imposition' strikes me as fundamentally antithetical to the very mission of this academy. The modular block was specifically designed to move us away from the factory-model bell system that prioritizes administrative tidiness over intellectual depth. When the students are in the midst of a breakthrough—as they were during our analysis of post-structuralist texts yesterday—the idea that I should forcibly terminate that engagement to satisfy a rigid clock is, in my view, a dereliction of my duty as an educator. If the laboratory schedule is so fragile that a thirty-minute extension in a humanities block destabilizes it, then the issue is not with the flexibility of the curriculum, but with the lack of institutional buffer capacity.\n\nSubject: Re: Urgent: Re-evaluating the Modular Block Schedule\n\nMarcus, I understand your commitment to the 'breakthrough' moments, but we must acknowledge the zero-sum nature of our current infrastructure. We operate within a finite physical space with shared resources. When you choose to ignore the end-of-block signal, you are not merely prioritizing your lesson; you are unilaterally deciding that your subject matter holds a higher claim on the common space than the Physics department’s experimental requirements. This creates a culture of uncertainty where staff members are constantly left waiting in corridors, unsure if their allotted time will be respected. Flexibility for the sake of the individual, when uncoordinated, inevitably manifests as a lack of consideration for the collective. We cannot sustain a system where the schedule is treated as a mere suggestion by some, while others are bound by the strictures of laboratory safety protocols and equipment turnover.\n\nFrom: Marcus Thorne\nTo: Elena Vance\n\nElena, your focus on 'common space' as a finite resource misses the broader point about the nature of our work. If we are to be a truly flexible institution, we must move toward an asynchronous model where the physical room is secondary to the digital availability of materials. The friction you describe is a symptom of our refusal to fully commit to the transition. If you are concerned about the Physics department’s access, why not advocate for a digital reservation system that accommodates overflow? By attempting to rein in the flexibility of the block schedule, you are essentially asking us to revert to a system that prioritizes predictability over the erratic, yet essential, nature of genuine inquiry. I cannot, in good conscience, prioritize the clock over the cognitive needs of my students.\n\nSubject: Final Notice: Adjustment to Scheduling Protocols\n\nMarcus, I appreciate your vision for an asynchronous future, but we are currently anchored in a physical reality that demands coordination. Effective tomorrow, the 'fluid-time' policy will be amended to include a mandatory hard-stop at the ten-minute mark past the scheduled hour. Any extension beyond this will require prior approval from the department office. This is not a rejection of your pedagogical philosophy, but a necessary correction to maintain the basic functionality of our shared environment. The uncertainty created by the current lack of boundaries has eroded the collaborative spirit of the faculty, and I am not willing to sacrifice the cohesion of our team for the sake of an unmanaged ideal. We will discuss the long-term implications of this at the next faculty meeting, but for now, the priority must be the restoration of predictability.",
+    "wordCount": 709,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "pedagogical",
+        "lemma": "pedagogical",
+        "glosses": {
+          "es": "relating to the methods and practice of teaching",
+          "en": "relating to the methods and practice of teaching"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "quagmire",
+        "lemma": "quagmire",
+        "glosses": {
+          "es": "an awkward, complex, or hazardous situation",
+          "en": "an awkward, complex, or hazardous situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "antithetical",
+        "lemma": "antithetical",
+        "glosses": {
+          "es": "directly opposed or contrasted",
+          "en": "directly opposed or contrasted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dereliction",
+        "lemma": "dereliction",
+        "glosses": {
+          "es": "the shameful failure to fulfill one's obligations",
+          "en": "the shameful failure to fulfill one's obligations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zero-sum",
+        "lemma": "zero-sum",
+        "glosses": {
+          "es": "a situation where one person's gain is equivalent to another's loss",
+          "en": "a situation where one person's gain is equivalent to another's loss"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asynchronous",
+        "lemma": "asynchronous",
+        "glosses": {
+          "es": "not occurring or existing at the same time",
+          "en": "not occurring or existing at the same time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.4,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict described in the correspondence?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A clash between flexibility and coordination."
+        },
+        {
+          "id": "a2",
+          "text": "A dispute over curriculum content."
+        },
+        {
+          "id": "a3",
+          "text": "A disagreement regarding budget allocation."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Flexibility for the sake of the individual, when uncoordinated, inevitably manifests as a lack of consideration for the collective.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What specific consequence resulted from the schedule extension?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The literature class ended early."
+        },
+        {
+          "id": "a2",
+          "text": "Physics students could not access the lab."
+        },
+        {
+          "id": "a3",
+          "text": "The school day was shortened."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the sudden extension of your Advanced Literature workshop caused a cascading delay that prevented the Physics department from accessing the laboratory equipment they had reserved for the subsequent period.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Marcus view the administration's role in the classroom?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a necessary facilitator of learning."
+        },
+        {
+          "id": "a2",
+          "text": "As a partner in developing new technology."
+        },
+        {
+          "id": "a3",
+          "text": "As an obstacle to genuine intellectual depth."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The modular block was specifically designed to move us away from the factory-model bell system that prioritizes administrative tidiness over intellectual depth.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does Elena implement a mandatory hard-stop policy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To restore predictability."
+        },
+        {
+          "id": "a2",
+          "text": "To punish Marcus."
+        },
+        {
+          "id": "a3",
+          "text": "To save money on utilities."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The uncertainty created by the current lack of boundaries has eroded the collaborative spirit of the faculty, and I am not willing to sacrifice the cohesion of our team for the sake of an unmanaged ideal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the tone of Elena's final message?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Apologetic."
+        },
+        {
+          "id": "a2",
+          "text": "Authoritative."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Effective tomorrow, the 'fluid-time' policy will be amended to include a mandatory hard-stop at the ten-minute mark past the scheduled hour.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author mean by 'dereliction' in the second paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A dedicated effort."
+        },
+        {
+          "id": "a2",
+          "text": "A creative choice."
+        },
+        {
+          "id": "a3",
+          "text": "A failure of duty."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "the idea that I should forcibly terminate that engagement to satisfy a rigid clock is, in my view, a dereliction of my duty as an educator.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response from the perspective of a third faculty member who proposes a compromise between the 'fluid-time' model and the need for departmental coordination.",
+      "en": "Write a 200-word response from the perspective of a third faculty member who proposes a compromise between the 'fluid-time' model and the need for departmental coordination."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the conflicting perspectives on administrative flexibility and its impact on institutional stability.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Synchronicity Paradox | C1 Reading | WeLearn",
+      "en": "The Synchronicity Paradox | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An email exchange between a department head and a faculty member reveals the hidden friction behind a new 'flexible' scheduling initiative.",
+      "en": "An email exchange between a department head and a faculty member reveals the hidden friction behind a new 'flexible' scheduling initiative."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

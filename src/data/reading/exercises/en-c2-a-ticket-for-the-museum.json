@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Price of Admission: Curating Exclusion in the Open Gallery",
+      "en": "The Price of Admission: Curating Exclusion in the Open Gallery"
+    },
+    "intro": {
+      "es": "A critical examination of how the rhetoric of 'free' access to cultural institutions often masks systemic barriers, focusing on the recent controversy at the Aethelgard Pavilion.",
+      "en": "A critical examination of how the rhetoric of 'free' access to cultural institutions often masks systemic barriers, focusing on the recent controversy at the Aethelgard Pavilion."
+    },
+    "mission": {
+      "es": "Analyze the text to understand how linguistic framing in cultural policy influences public perception and socio-economic accessibility.",
+      "en": "Analyze the text to understand how linguistic framing in cultural policy influences public perception and socio-economic accessibility."
+    },
+    "targetText": "The recent unveiling of the Aethelgard Pavilion’s 'Open Horizon' initiative was heralded by the city’s cultural elite as a triumph of egalitarianism. By removing the standard entry fee, the board of directors ostensibly opened the doors of high culture to the masses. However, as I stood in the marble-clad foyer during the inaugural evening gala, the disconnect between the marketing rhetoric and the lived reality of the space was palpable. The term 'free' acts as a linguistic sleight of hand, a seductive shorthand that conflates the absence of a ticket price with the presence of accessibility. It is a rhetorical narrowing that deliberately obscures the multifaceted costs of arrival—the invisible toll of transit, the opportunity cost of leisure time, and the pervasive, unspoken social codes that dictate who belongs in such hallowed halls. The Pavilion, in its zeal to broadcast its benevolence, has merely shifted the barrier from the wallet to the psyche.\n\nDr. Aris Thorne, the Pavilion’s lead curator, defended the initiative by pointing to the influx of casual visitors during the first week. Yet, a closer inspection reveals a demographic homogeneity that remains stubbornly intact. While the turnstiles recorded higher volume, the composition of the crowd remained largely unchanged from the era of paid admission. The conflict crystallized during a public forum held in the atrium, where a local community organizer, Elena Vance, challenged Thorne on the lack of outreach to the marginalized districts of the lower basin. Vance argued that a free ticket is a hollow gesture if the museum remains geographically and culturally sequestered. Thorne’s response—a rehearsed defense of aesthetic purity—betrayed the institution’s underlying fear: that true accessibility would necessitate a dilution of the Pavilion’s curated identity. The institution is caught in an unresolved tension between its desire for democratic legitimacy and its reliance on a legacy of exclusivity.\n\nThis tension was made manifest by the Pavilion’s decision to maintain its restrictive, high-end café and the exorbitant valet parking rates, both of which serve as gatekeepers in their own right. One cannot claim to be an open institution while surrounding oneself with a moat of luxury services. The 'free' label functions as a performative shield, allowing the board to deflect criticism regarding their failure to integrate with the surrounding urban fabric. It is a classic case of what sociologists might term 'institutional gaslighting,' where the public is told they are welcome, yet the environment is meticulously engineered to signal that they are merely guests in a space designed for others. The cost of arrival is not merely monetary; it is the cumulative weight of micro-aggressions and the subtle, persistent feeling of being an interloper in a space that claims to belong to everyone.\n\nAs the evening progressed, the gala attendees—mostly affluent patrons who had previously paid for membership—circulated through the galleries with an air of proprietary ease. They were the true beneficiaries of the 'free' initiative, as the removal of the entry fee functioned as a tax break for the wealthy rather than an invitation to the underrepresented. The Pavilion’s board had effectively subsidized the leisure time of the elite while maintaining the structural barriers that keep the working class at bay. When I asked a security guard if there had been any reports of 'disruptive' behavior, his dismissive shrug spoke volumes. The institution is not worried about the public; it is worried about the disruption of its carefully managed atmosphere. The 'Open Horizon' is not a bridge; it is a barricade dressed in the vestments of charity.\n\nUltimately, the Aethelgard Pavilion’s experiment serves as a cautionary tale for the cultural sector. True accessibility requires more than the dismantling of a toll booth; it demands the interrogation of the institutional architecture itself. By focusing exclusively on the ticket price, the Pavilion has successfully avoided the harder work of community engagement and structural reform. The consequence is a deepening of the divide, as the 'free' label provides the institution with a moral alibi for its continued elitism. As I departed, the sight of a lone bus idling at the curb—the only public transit link, which runs only once an hour—reminded me that for many, the cost of arrival remains insurmountable. The Pavilion remains a fortress, its gates wide open, yet its heart remains shuttered to those who lack the cultural capital to claim their place within.\n\nFurthermore, this performative inclusivity risks delegitimizing genuine advocacy for equitable cultural access by co-opting the language of social justice for institutional branding. When the Pavilion claims the mantle of progress, it inadvertently stifles discourse, making it increasingly difficult for critics to demand substantive change without appearing ungrateful for the empty gesture of a waived fee. This strategic co-optation effectively silences the very voices the initiative purportedly seeks to welcome, as any subsequent critique is framed as a rejection of the museum’s newfound generosity. Consequently, the institution secures its reputation while the systemic barriers remain fortified, ensuring that the 'Open Horizon' serves as a sophisticated mechanism for preserving the status quo under the guise of revolutionary openness.",
+    "wordCount": 835,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "egalitarianism",
+        "lemma": "egalitarianism",
+        "glosses": {
+          "es": "the doctrine that all people are equal and deserve equal rights and opportunities",
+          "en": "the doctrine that all people are equal and deserve equal rights and opportunities"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "homogeneity",
+        "lemma": "homogeneity",
+        "glosses": {
+          "es": "the quality or state of being all the same or of the same kind",
+          "en": "the quality or state of being all the same or of the same kind"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sequestered",
+        "lemma": "sequestered",
+        "glosses": {
+          "es": "isolated and hidden away",
+          "en": "isolated and hidden away"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "performative",
+        "lemma": "performative",
+        "glosses": {
+          "es": "relating to an action that is done for show rather than for genuine intent",
+          "en": "relating to an action that is done for show rather than for genuine intent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "proprietary",
+        "lemma": "proprietary",
+        "glosses": {
+          "es": "relating to an owner or ownership; implying a right to exclusive control",
+          "en": "relating to an owner or ownership; implying a right to exclusive control"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insurmountable",
+        "lemma": "insurmountable",
+        "glosses": {
+          "es": "too great to be overcome",
+          "en": "too great to be overcome"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.9,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument of the text regarding the Pavilion's new policy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is a superficial change that ignores real barriers."
+        },
+        {
+          "id": "a2",
+          "text": "It represents a comprehensive strategy to foster genuine cultural inclusivity across all demographics."
+        },
+        {
+          "id": "a3",
+          "text": "It functions as a transformative initiative that effectively dismantles long-standing socioeconomic hierarchies."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The term 'free' acts as a linguistic sleight of hand, a seductive shorthand that conflates the absence of a ticket price with the presence of accessibility.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What specific services does the author cite as evidence of the Pavilion's continued exclusivity?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The limited gallery hours."
+        },
+        {
+          "id": "a2",
+          "text": "The high-end café and valet parking."
+        },
+        {
+          "id": "a3",
+          "text": "The expensive gift shop and guided tours."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "This tension was made manifest by the Pavilion’s decision to maintain its restrictive, high-end café and the exorbitant valet parking rates, both of which serve as gatekeepers in their own right.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does the author suggest the wealthy benefited most from the policy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They paid."
+        },
+        {
+          "id": "a2",
+          "text": "They left."
+        },
+        {
+          "id": "a3",
+          "text": "They were already frequenting the space."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "the gala attendees—mostly affluent patrons who had previously paid for membership—circulated through the galleries with an air of proprietary ease.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's intent in describing the security guard's reaction?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the institution's preoccupation with order."
+        },
+        {
+          "id": "a2",
+          "text": "To emphasize the urgent necessity of protecting valuable artifacts from potential physical vandalism."
+        },
+        {
+          "id": "a3",
+          "text": "To demonstrate how the security personnel are actively collaborating with local law enforcement agencies."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The institution is not worried about the public; it is worried about the disruption of its carefully managed atmosphere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the author's tone toward the Pavilion's board?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifferent."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical and critical."
+        },
+        {
+          "id": "a3",
+          "text": "Admiring and respectful."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The Pavilion’s board had effectively subsidized the leisure time of the elite while maintaining the structural barriers that keep the working class at bay.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'institutional gaslighting' imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Deception."
+        },
+        {
+          "id": "a2",
+          "text": "Neglect."
+        },
+        {
+          "id": "a3",
+          "text": "That the museum creates a false sense of welcome."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It is a classic case of what sociologists might term 'institutional gaslighting,' where the public is told they are welcome, yet the environment is meticulously engineered to signal that they are merely guests in a space designed for others.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word response evaluating whether a cultural institution can ever be truly 'free' in a capitalist society, considering the author's arguments about the 'cost of arrival'.",
+      "en": "Write a 300-word response evaluating whether a cultural institution can ever be truly 'free' in a capitalist society, considering the author's arguments about the 'cost of arrival'."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the text to understand how linguistic framing in cultural policy influences public perception and socio-economic accessibility.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Price of Admission: Curating Exclusion in the Open Gallery | C2 Reading | WeLearn",
+      "en": "The Price of Admission: Curating Exclusion in the Open Gallery | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A critical examination of how the rhetoric of 'free' access to cultural institutions often masks systemic barriers, focusing on the recent controversy at the Aethelgard Pavilion.",
+      "en": "A critical examination of how the rhetoric of 'free' access to cultural institutions often masks systemic barriers, focusing on the recent controversy at the Aethelgard Pavilion."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

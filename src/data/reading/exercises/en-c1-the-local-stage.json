@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-local-stage",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Invisible Stage: Measuring Impact Beyond the Spotlight",
+      "en": "The Invisible Stage: Measuring Impact Beyond the Spotlight"
+    },
+    "intro": {
+      "es": "An investigative look at how the 'Riverton Community Arts Grant' metrics fail to capture the transformative power of non-performance-based theatre programs.",
+      "en": "An investigative look at how the 'Riverton Community Arts Grant' metrics fail to capture the transformative power of non-performance-based theatre programs."
+    },
+    "mission": {
+      "es": "To analyze the tension between quantitative reporting requirements and the qualitative reality of community-based artistic engagement.",
+      "en": "To analyze the tension between quantitative reporting requirements and the qualitative reality of community-based artistic engagement."
+    },
+    "targetText": "The Riverton Community Arts Grant was designed to foster local engagement, yet its recent annual report has sparked a quiet firestorm among the city’s grassroots practitioners. At the center of the controversy is the director of the 'Echoes Initiative,' Elena Vance, who has spent the last year working with marginalized youth in the industrial district. Her program, which focuses on improvisational storytelling and collaborative script-writing, does not culminate in a public performance. Instead, the participants use the theatre space as a sanctuary to process trauma and build social cohesion. When the grant committee released its performance metrics, Vance’s program was flagged as 'underperforming' because it lacked ticketed attendance records, a primary metric for funding renewal. The committee, led by fiscal strategist Marcus Thorne, maintains that taxpayer money must be justified by visible, quantifiable output. Thorne argues that without a stage presence, the 'Echoes Initiative' is indistinguishable from a social work program, which falls outside the mandate of the Arts Council. This rigid interpretation of the grant’s mission statement has forced a confrontation regarding the very definition of community theatre. While Vance acknowledges that the grant’s original language emphasized 'public-facing cultural enrichment,' she contends that the committee’s narrow focus ignores the long-term societal benefits of her work. She points to improved school attendance and decreased behavioral incidents among her participants as evidence of success, yet these indicators are categorized as anecdotal rather than empirical. The tension reached a breaking point during the public oversight hearing held last Tuesday. Vance presented a dossier of testimonials and longitudinal data, but the board members remained unmoved, fixated on the absence of a box-office trail. The committee’s insistence on ticket sales as a proxy for artistic value has created a paradoxical situation where the most impactful programs are the most vulnerable to defunding. For the participants, the theatre is not a venue for exhibition but a laboratory for identity construction. By prioritizing the spectacle over the process, the committee has inadvertently incentivized performative art at the expense of transformative practice. The consequence of this bureaucratic myopia is already visible: Vance has been forced to suspend her outreach sessions due to a lack of operational funding. As the city prepares for the next grant cycle, the 'Echoes Initiative' remains shuttered, a casualty of a reporting system that values the audience’s gaze over the participant’s growth. The community is left to grapple with a stark reality: when art is measured exclusively by its reach, its depth is often the first thing to be sacrificed. The silence in the studio, once filled with the voices of young writers, now serves as a haunting reminder of the disconnect between administrative efficiency and the messy, vital work of human development. Whether the committee will revise its metrics remains to be seen, but for now, the ledger is balanced, and the stage remains dark.\n\nHowever, this administrative victory for the committee may inadvertently trigger a broader civic backlash that threatens the very stability they seek to protect. By dismissing the qualitative evidence provided by Vance, the board has alienated a significant segment of the local artistic community, many of whom now view the grant process as an exclusionary mechanism rather than a supportive resource. This growing disillusionment has begun to manifest in organized protests and a collective refusal by several prominent local collectives to participate in future grant cycles, citing the committee’s narrow metrics as a betrayal of the city’s cultural integrity. Furthermore, the fiscal logic employed by Thorne ignores the hidden costs of shuttering such programs; the uptick in behavioral incidents among the youth formerly served by the 'Echoes Initiative' is already placing a measurable strain on local school resources and municipal social services. As these secondary expenses mount, the city council faces mounting pressure to re-evaluate the committee’s mandate, suggesting that the pursuit of quantifiable artistic output may ultimately prove more expensive than the programs it sought to defund. The fiscal strategist’s ledger, while balanced on paper, fails to account for the long-term societal erosion caused by prioritizing bureaucratic convenience over the complex, intangible requirements of a thriving, resilient, and healthy community.",
+    "wordCount": 683,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "grassroots",
+        "lemma": "grassroots",
+        "glosses": {
+          "es": "relating to the most basic level of an organization or society",
+          "en": "relating to the most basic level of an organization or society"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "culminate",
+        "lemma": "culminate",
+        "glosses": {
+          "es": "to reach a climax or point of highest development",
+          "en": "to reach a climax or point of highest development"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "anecdotal",
+        "lemma": "anecdotal",
+        "glosses": {
+          "es": "based on personal accounts rather than facts or research",
+          "en": "based on personal accounts rather than facts or research"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "myopia",
+        "lemma": "myopia",
+        "glosses": {
+          "es": "lack of foresight or intellectual insight",
+          "en": "lack of foresight or intellectual insight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradoxical",
+        "lemma": "paradoxical",
+        "glosses": {
+          "es": "seemingly absurd or self-contradictory",
+          "en": "seemingly absurd or self-contradictory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "proxy",
+        "lemma": "proxy",
+        "glosses": {
+          "es": "a figure that can be used to represent the value of something else",
+          "en": "a figure that can be used to represent the value of something else"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.3,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict described in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle between artistic integrity and bureaucratic measurement."
+        },
+        {
+          "id": "a2",
+          "text": "The disagreement over the funding of a new theatre building."
+        },
+        {
+          "id": "a3",
+          "text": "The failure of youth to engage with local community arts."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The committee’s insistence on ticket sales as a proxy for artistic value has created a paradoxical situation where the most impactful programs are the most vulnerable to defunding.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why was the 'Echoes Initiative' flagged as underperforming?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Poor school attendance of participants."
+        },
+        {
+          "id": "a2",
+          "text": "Lack of ticketed attendance records."
+        },
+        {
+          "id": "a3",
+          "text": "A lack of public-facing cultural enrichment."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vance’s program was flagged as 'underperforming' because it lacked ticketed attendance records, a primary metric for funding renewal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the text imply about the committee's priorities?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They seek to support social work programs."
+        },
+        {
+          "id": "a2",
+          "text": "They value long-term societal benefits."
+        },
+        {
+          "id": "a3",
+          "text": "They prioritize visible, quantifiable output."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The committee, led by fiscal strategist Marcus Thorne, maintains that taxpayer money must be justified by visible, quantifiable output.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary purpose in mentioning the school attendance data?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the conflict between qualitative evidence and grant requirements."
+        },
+        {
+          "id": "a2",
+          "text": "To prove that the program is effective at improving academic performance."
+        },
+        {
+          "id": "a3",
+          "text": "To argue that the committee should change its focus to educational reform."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "She points to improved school attendance and decreased behavioral incidents among her participants as evidence of success, yet these indicators are categorized as anecdotal rather than empirical.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic and forward-looking."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholic and critical."
+        },
+        {
+          "id": "a3",
+          "text": "Neutral and purely descriptive."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The silence in the studio, once filled with the voices of young writers, now serves as a haunting reminder of the disconnect between administrative efficiency and the messy, vital work of human development.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'myopia' refer to?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The inability of the students to see the future."
+        },
+        {
+          "id": "a2",
+          "text": "The lack of physical sight among the board members."
+        },
+        {
+          "id": "a3",
+          "text": "The committee's narrow focus on ticket sales."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The consequence of this bureaucratic myopia is already visible: Vance has been forced to suspend her outreach sessions due to a lack of operational funding.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a formal proposal to the Riverton Community Arts Grant committee arguing for a new category of 'Process-Based Impact' that would allow non-performance programs to receive funding based on qualitative outcomes rather than ticket sales.",
+      "en": "Write a formal proposal to the Riverton Community Arts Grant committee arguing for a new category of 'Process-Based Impact' that would allow non-performance programs to receive funding based on qualitative outcomes rather than ticket sales."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "To analyze the tension between quantitative reporting requirements and the qualitative reality of community-based artistic engagement.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Invisible Stage: Measuring Impact Beyond the Spotlight | C1 Reading | WeLearn",
+      "en": "The Invisible Stage: Measuring Impact Beyond the Spotlight | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An investigative look at how the 'Riverton Community Arts Grant' metrics fail to capture the transformative power of non-performance-based theatre programs.",
+      "en": "An investigative look at how the 'Riverton Community Arts Grant' metrics fail to capture the transformative power of non-performance-based theatre programs."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

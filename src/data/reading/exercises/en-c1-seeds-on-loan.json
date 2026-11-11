@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Heirloom Schism",
+      "en": "The Heirloom Schism"
+    },
+    "intro": {
+      "es": "A community seed library in the village of Oakhaven becomes the epicenter of a bitter dispute between the Thorne and Vane families over the provenance of a rare, drought-resistant grain.",
+      "en": "A community seed library in the village of Oakhaven becomes the epicenter of a bitter dispute between the Thorne and Vane families over the provenance of a rare, drought-resistant grain."
+    },
+    "mission": {
+      "es": "Analyze the subjective nature of historical preservation and the ethics of intellectual property in communal agricultural practices.",
+      "en": "Analyze the subjective nature of historical preservation and the ethics of intellectual property in communal agricultural practices."
+    },
+    "targetText": "The Oakhaven Seed Library was housed in a converted grain silo, its walls lined with glass jars containing the genetic history of a valley that had long ago forgotten how to feed itself. Among the most prized specimens was the 'Copper-Kernel Wheat,' a robust strain that had survived the Great Blight of the previous century. For decades, the library operated on the tacit understanding that these seeds were common heritage. However, the annual Harvest Gala, held under the amber glow of late-autumn lanterns, shattered this fragile consensus. Elias Thorne, a man whose hands were perpetually stained with the dark loam of his ancestral plot, stood before the assembly and claimed that his great-grandmother had single-handedly rescued the wheat from extinction by drying the final stalks in her attic during the famine. He argued that the Thorne family’s stewardship was the only reason the grain existed, and therefore, they held a moral lien over its distribution.\n\nAcross the room, Clara Vane, the library’s lead curator, felt the blood drain from her face. She had spent years meticulously cross-referencing oral histories and soil samples, concluding that the Vane lineage had actually introduced the grain to the valley via a trade route from the northern highlands. She countered Elias’s narrative with a cold, analytical precision, suggesting that the Thornes had merely been the recipients of a Vane-led agricultural experiment. The atmosphere in the silo grew stifling; the air, thick with the scent of dried husks and impending confrontation, became charged with the friction of two competing mythologies. The villagers, who had long benefited from the seeds, found themselves forced into a silent, uncomfortable partisanship.\n\nThis was not merely a dispute over provenance; it was a struggle for cultural capital. Elias insisted that the physical labor of the Thornes—the daily tending of the soil—constituted the ultimate form of preservation. He viewed the library’s cataloging efforts as a sterile abstraction that stripped the seed of its lived experience. Conversely, Clara maintained that without the systematic preservation and rigorous documentation she provided, the grain would have succumbed to genetic drift or neglect long ago. She viewed the Thorne claim as an attempt to privatize a collective success, turning a communal resource into a proprietary heirloom that served only to bolster their social standing in the valley.\n\nAs the evening progressed, the argument devolved into a series of pointed anecdotes and veiled accusations. Elias recounted the winter his family survived solely on the Copper-Kernel bread, while Clara produced ledgers detailing the exact distribution of seeds to neighboring farms, implying that her family’s generosity had been the catalyst for the grain’s survival. The tension reached a breaking point when Elias demanded that the library restrict access to the seeds, requiring a 'Thorne seal of approval' for any new farmers. The audience, once a unified body of growers, fractured into factions. The library, intended to be a sanctuary of shared knowledge, now felt like a battlefield where the history of the seeds was being rewritten in real-time to suit the egos of the living.\n\nBy the time the last lantern flickered out, the conflict remained unresolved, leaving a palpable rift in the community. The Copper-Kernel Wheat remained in the jars, yet its symbolic value had shifted irrevocably. It was no longer just a seed; it was a contested relic, a vessel for the pride of two families who had conflated their own survival with the history of the land. The library doors were locked, but the damage was done. The seeds were safe in their glass containers, but the trust that had allowed them to flourish in the fields had withered. The future of Oakhaven’s agriculture now hung in the balance, caught between the weight of competing legacies that refused to acknowledge the other’s truth.\n\nYet, this localized discord inadvertently invited a more existential threat to the valley's food security. By prioritizing ancestral pride over cooperative cultivation, both factions neglected the encroaching pests that thrived on such administrative paralysis. As the villagers retreated into their respective camps, the fields lay fallow, proving that history matters little when hunger returns.",
+    "wordCount": 680,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tacit",
+        "lemma": "tacit",
+        "glosses": {
+          "es": "understood or implied without being stated",
+          "en": "understood or implied without being stated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "provenance",
+        "lemma": "provenance",
+        "glosses": {
+          "es": "the place of origin or earliest known history of something",
+          "en": "the place of origin or earliest known history of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stifling",
+        "lemma": "stifling",
+        "glosses": {
+          "es": "suffocating or oppressively close",
+          "en": "suffocating or oppressively close"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "partisanship",
+        "lemma": "partisanship",
+        "glosses": {
+          "es": "prejudice in favor of a particular cause",
+          "en": "prejudice in favor of a particular cause"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sterile",
+        "lemma": "sterile",
+        "glosses": {
+          "es": "lacking in imagination or vitality",
+          "en": "lacking in imagination or vitality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conflated",
+        "lemma": "conflated",
+        "glosses": {
+          "es": "combined two or more texts or ideas into one",
+          "en": "combined two or more texts or ideas into one"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.7,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the narrative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The conflict over ownership of history."
+        },
+        {
+          "id": "a2",
+          "text": "The historical analysis of modern agricultural irrigation infrastructure."
+        },
+        {
+          "id": "a3",
+          "text": "The systematic evaluation of biodiversity loss within regional urban landscapes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "This was not merely a dispute over provenance; it was a struggle for cultural capital.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What did Elias Thorne demand during the Harvest Gala?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A public hearing."
+        },
+        {
+          "id": "a2",
+          "text": "Restriction of seed access."
+        },
+        {
+          "id": "a3",
+          "text": "Strict oversight of seed distribution protocols by an appointed committee."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elias demanded that the library restrict access to the seeds, requiring a 'Thorne seal of approval' for any new farmers.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How do the villagers react to the dispute?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They flee."
+        },
+        {
+          "id": "a2",
+          "text": "They ignore."
+        },
+        {
+          "id": "a3",
+          "text": "They take sides."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The villagers, who had long benefited from the seeds, found themselves forced into a silent, uncomfortable partisanship.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author describe the library as a battlefield?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To emphasize the shift in the library's purpose."
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the literal combat occurring within the archive's architecture."
+        },
+        {
+          "id": "a3",
+          "text": "To document the specific weaponry utilized during the intense territorial dispute."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The library, intended to be a sanctuary of shared knowledge, now felt like a battlefield where the history of the seeds was being rewritten in real-time to suit the egos of the living.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the overall tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Jubilant."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholic."
+        },
+        {
+          "id": "a3",
+          "text": "A sense of profound disappointment regarding the loss of communal faith."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The seeds were safe in their glass containers, but the trust that had allowed them to flourish in the fields had withered.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'sterile' imply in the context of the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Clean."
+        },
+        {
+          "id": "a2",
+          "text": "Ineffective."
+        },
+        {
+          "id": "a3",
+          "text": "Emotionless and uninspired."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He viewed the library’s cataloging efforts as a sterile abstraction that stripped the seed of its lived experience.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response evaluating whether the preservation of cultural heritage should be prioritized over the individual rights of those who maintained it.",
+      "en": "Write a 200-word response evaluating whether the preservation of cultural heritage should be prioritized over the individual rights of those who maintained it."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the subjective nature of historical preservation and the ethics of intellectual property in communal agricultural practices.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Heirloom Schism | C1 Reading | WeLearn",
+      "en": "The Heirloom Schism | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A community seed library in the village of Oakhaven becomes the epicenter of a bitter dispute between the Thorne and Vane families over the provenance of a rare, drought-resistant grain.",
+      "en": "A community seed library in the village of Oakhaven becomes the epicenter of a bitter dispute between the Thorne and Vane families over the provenance of a rare, drought-resistant grain."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

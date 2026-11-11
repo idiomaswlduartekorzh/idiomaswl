@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Digital Threshold",
+      "en": "The Digital Threshold"
+    },
+    "intro": {
+      "es": "In the bustling Oakwood Medical Center, a new digital queuing system aims to modernize patient flow. This story explores the divide between technological convenience and accessibility.",
+      "en": "In the bustling Oakwood Medical Center, a new digital queuing system aims to modernize patient flow. This story explores the divide between technological convenience and accessibility."
+    },
+    "mission": {
+      "es": "Analyze the impact of digital transformation on healthcare equity.",
+      "en": "Analyze the impact of digital transformation on healthcare equity."
+    },
+    "targetText": "The lobby of Oakwood Medical Center used to be a cacophony of coughing, shuffling feet, and the rhythmic ticking of a wall clock. Last month, Dr. Aris implemented the 'Pulse-Link' system, a platform designed to send real-time text updates to patients, allowing them to wait in their cars or nearby cafes rather than the cramped, germ-laden waiting room. For the middle-class professionals of the district, the transition was seamless. They checked their smartphones, sipped lattes, and wandered in only when their digital queue position hit number one. However, the system assumed a baseline of connectivity that not everyone possessed.\n\nElias, a retired carpenter with failing eyesight, sat on a plastic chair in the corner of the lobby. He did not own a smartphone, nor did he have a reliable data plan on his battered flip phone. When he arrived at eight in the morning, the receptionist, Sarah, gave him a polite but firm nod. She explained that the system required a mobile number to activate the notification protocol. Without it, Elias was effectively invisible to the software. He remained in the lobby, a relic of a bygone era, watching others breeze in and out with an air of digital entitlement.\n\nBy mid-morning, the conflict reached a breaking point. A young woman, clearly frustrated by a notification delay, approached the desk and demanded to be seen immediately because her phone had 'pinged' her arrival time. Sarah was caught in the crossfire between the demands of the algorithm and the physical reality of the patients in front of her. She looked at Elias, who had been waiting patiently for three hours, and then at the screen, which showed no record of his presence. The system prioritized those who had checked in via the app, leaving the walk-ins at the mercy of whatever gaps appeared in the schedule.\n\nElias finally approached the desk, his voice raspy but steady. He explained that he had been waiting since dawn, yet the screen displayed no name for him. Sarah felt a pang of guilt; the efficiency of the clinic was being bought at the price of those who lacked the tools to participate in the new order. She realized that the digital bridge intended to connect patients to care had instead become a moat for those left behind. She manually overrode the system, inserting Elias into the next available slot, despite the protestations of the woman with the smartphone.\n\nAs the clinic closed, the lobby fell silent once more. The Pulse-Link system reported a record-breaking day of efficiency, with wait times slashed by half for app users. Yet, Sarah sat at her desk, staring at the blank screen, wondering if the clinic was truly serving its community or merely optimizing for the privileged. The technology was flawless in its logic, yet it failed to account for the human element that existed outside the network. Elias left with his prescription, but the tension remained, a quiet reminder that progress often demands an exclusion that society is too eager to ignore.",
+    "wordCount": 503,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cacophony",
+        "lemma": "cacophony",
+        "glosses": {
+          "es": "a harsh, discordant mixture of sounds",
+          "en": "a harsh, discordant mixture of sounds"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "baseline",
+        "lemma": "baseline",
+        "glosses": {
+          "es": "a minimum or starting point used for comparisons",
+          "en": "a minimum or starting point used for comparisons"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "entitlement",
+        "lemma": "entitlement",
+        "glosses": {
+          "es": "the belief that one is inherently deserving of privileges",
+          "en": "the belief that one is inherently deserving of privileges"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "crossfire",
+        "lemma": "crossfire",
+        "glosses": {
+          "es": "the situation of being caught between two opposing demands",
+          "en": "the situation of being caught between two opposing demands"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "overrode",
+        "lemma": "overrode",
+        "glosses": {
+          "es": "used authority to reject or cancel a decision",
+          "en": "used authority to reject or cancel a decision"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "moat",
+        "lemma": "moat",
+        "glosses": {
+          "es": "a deep, wide ditch that acts as a barrier",
+          "en": "a deep, wide ditch that acts as a barrier"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.6,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the story?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The inequality of digital access."
+        },
+        {
+          "id": "a2",
+          "text": "The benefits of medical technology."
+        },
+        {
+          "id": "a3",
+          "text": "The daily routine of a clinic receptionist."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "She realized that the digital bridge intended to connect patients to care had instead become a moat for those left behind.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why was Elias initially ignored by the Pulse-Link system?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He arrived too late."
+        },
+        {
+          "id": "a2",
+          "text": "He lacked a smartphone."
+        },
+        {
+          "id": "a3",
+          "text": "He refused to use the app."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He did not own a smartphone, nor did he have a reliable data plan on his battered flip phone.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author imply about the clinic's efficiency data?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is completely fabricated."
+        },
+        {
+          "id": "a2",
+          "text": "It is highly accurate."
+        },
+        {
+          "id": "a3",
+          "text": "It is incomplete."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The technology was flawless in its logic, yet it failed to account for the human element that existed outside the network.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the character of the young woman with the smartphone?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the conflict between users and non-users."
+        },
+        {
+          "id": "a2",
+          "text": "To show the system's success."
+        },
+        {
+          "id": "a3",
+          "text": "To demonstrate the technical errors of the app."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sarah was caught in the crossfire between the demands of the algorithm and the physical reality of the patients in front of her.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the author's tone regarding the clinic's new system?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Enthusiastic and supportive."
+        },
+        {
+          "id": "a2",
+          "text": "Critical and reflective."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "She realized that the digital bridge intended to connect patients to care had instead become a moat for those left behind.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'cacophony' describe in the first paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The quiet atmosphere of the lobby."
+        },
+        {
+          "id": "a2",
+          "text": "The sound of the digital system."
+        },
+        {
+          "id": "a3",
+          "text": "The noise of the waiting room."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The lobby of Oakwood Medical Center used to be a cacophony of coughing, shuffling feet, and the rhythmic ticking of a wall clock.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word response arguing whether medical facilities should be required by law to provide non-digital alternatives for patients who do not have access to smartphones.",
+      "en": "Write a 150-word response arguing whether medical facilities should be required by law to provide non-digital alternatives for patients who do not have access to smartphones."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the impact of digital transformation on healthcare equity.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Digital Threshold | B2 Reading | WeLearn",
+      "en": "The Digital Threshold | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In the bustling Oakwood Medical Center, a new digital queuing system aims to modernize patient flow. This story explores the divide between technological convenience and accessibility.",
+      "en": "In the bustling Oakwood Medical Center, a new digital queuing system aims to modernize patient flow. This story explores the divide between technological convenience and accessibility."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

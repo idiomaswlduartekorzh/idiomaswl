@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-school-garden",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le dilemme des tomates : un jardin scolaire en péril",
+      "en": "Le dilemme des tomates : un jardin scolaire en péril"
+    },
+    "intro": {
+      "es": "L'école primaire des Tilleuls a inauguré un potager pédagogique ambitieux, mais la gestion estivale crée des tensions inattendues entre l'administration et les familles.",
+      "en": "L'école primaire des Tilleuls a inauguré un potager pédagogique ambitieux, mais la gestion estivale crée des tensions inattendues entre l'administration et les familles."
+    },
+    "mission": {
+      "es": "Analyser les défis logistiques et les conflits d'intérêts liés aux projets de développement durable en milieu scolaire.",
+      "en": "Analyser les défis logistiques et les conflits d'intérêts liés aux projets de développement durable en milieu scolaire."
+    },
+    "targetText": "Le potager de l'école des Tilleuls, véritable poumon vert au cœur de la cour de récréation, a transformé les déjeuners à la cantine. Grâce à l'implication de Mme Lefebvre, professeure de sciences, les élèves récoltent désormais des légumes frais, réduisant ainsi la dépendance aux fournisseurs industriels. Cependant, cette réussite biologique se heurte à la réalité du calendrier scolaire. Avec l'arrivée des grandes vacances, le jardin se retrouve orphelin, menaçant la survie des plantations durement entretenues par les enfants durant le printemps.\n\nFace à cette urgence, le conseil d'école a proposé une solution innovante : un calendrier de roulement estival. Chaque famille volontaire se verrait attribuer une semaine de corvée d'arrosage et de désherbage. Si l'idée semble séduisante sur le papier, elle a immédiatement suscité une levée de boucliers chez les parents les plus occupés. M. Durand, représentant des parents d'élèves, a exprimé une inquiétude légitime : « Nous soutenons l'éducation environnementale, mais imposer une charge de travail supplémentaire aux familles, déjà accablées par les contraintes professionnelles estivales, est une demande déraisonnable. »\n\nLe conflit s'est cristallisé lors de la dernière réunion trimestrielle. D'un côté, les enseignants soutiennent que le jardin est un outil pédagogique vivant qui ne peut s'arrêter en juillet. Pour eux, l'implication des parents est le prolongement naturel de l'éducation. De l'autre, les familles soulignent que l'école ne peut externaliser sa gestion technique sur le dos des particuliers. La tension est montée d'un cran lorsque certains parents ont menacé de boycotter les futures activités liées au jardin si le système de volontariat devenait obligatoire.\n\nLa directrice, Mme Morel, a tenté une médiation en proposant une alternative : le recrutement d'un jardinier municipal à temps partiel. Toutefois, le budget de l'établissement ne permet pas une telle dépense sans réduire les crédits alloués aux sorties culturelles. Ce dilemme financier place l'école dans une impasse : soit le jardin dépérit faute d'entretien, soit il devient une source de discorde communautaire persistante. Le projet, autrefois symbole d'unité, est devenu le miroir des fractures sociales au sein de l'établissement.\n\nFinalement, aucune décision n'a été actée. Le jardin attend, sous un soleil de plomb, que les parties trouvent un terrain d'entente. La situation reste suspendue, illustrant la difficulté de maintenir des projets collectifs durables quand les responsabilités ne sont pas clairement définies. En attendant la rentrée, les tomates rougissent dans une solitude inquiétante, symbolisant l'échec provisoire d'une ambition partagée qui, faute de moyens structurels, risque de ne pas survivre à la saison estivale.",
+    "wordCount": 409,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "orphelin",
+        "lemma": "orphelin",
+        "glosses": {
+          "es": "abandoned or lacking support",
+          "en": "abandoned or lacking support"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "levée de boucliers",
+        "lemma": "levée de boucliers",
+        "glosses": {
+          "es": "strong collective protest",
+          "en": "strong collective protest"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristallisé",
+        "lemma": "cristallisé",
+        "glosses": {
+          "es": "became clearly defined or intense",
+          "en": "became clearly defined or intense"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "externaliser",
+        "lemma": "externaliser",
+        "glosses": {
+          "es": "to outsource",
+          "en": "to outsource"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock",
+          "en": "deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dépérit",
+        "lemma": "dépérit",
+        "glosses": {
+          "es": "withers or decays",
+          "en": "withers or decays"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.6,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le problème central abordé dans cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestion estivale du jardin."
+        },
+        {
+          "id": "a2",
+          "text": "Le manque de légumes frais."
+        },
+        {
+          "id": "a3",
+          "text": "Le coût élevé des sorties scolaires."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Avec l'arrivée des grandes vacances, le jardin se retrouve orphelin, menaçant la survie des plantations",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi le recrutement d'un jardinier est-il difficile ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les parents refusent."
+        },
+        {
+          "id": "a2",
+          "text": "Le budget est limité."
+        },
+        {
+          "id": "a3",
+          "text": "Le jardin est trop petit."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "le budget de l'établissement ne permet pas une telle dépense sans réduire les crédits alloués aux sorties culturelles.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position des enseignants ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils veulent fermer le jardin."
+        },
+        {
+          "id": "a2",
+          "text": "Ils exigent un jardinier municipal payé par la ville."
+        },
+        {
+          "id": "a3",
+          "text": "Ils pensent que les parents doivent aider."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Pour eux, l'implication des parents est le prolongement naturel de l'éducation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal du dernier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Démontrer la fragilité des projets collectifs sans structure claire."
+        },
+        {
+          "id": "a2",
+          "text": "Proposer une solution concrète."
+        },
+        {
+          "id": "a3",
+          "text": "Décrire l'échec de la médiation."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La situation reste suspendue, illustrant la difficulté de maintenir des projets collectifs durables quand les responsabilités ne sont pas clairement définies.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de l'article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste."
+        },
+        {
+          "id": "a2",
+          "text": "Analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Critique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le projet, autrefois symbole d'unité, est devenu le miroir des fractures sociales au sein de l'établissement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'dépérit' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il grandit."
+        },
+        {
+          "id": "a2",
+          "text": "Il disparaît."
+        },
+        {
+          "id": "a3",
+          "text": "Il s'abîme."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "soit le jardin dépérit faute d'entretien",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une lettre de 150 mots adressée à la directrice, Mme Morel, proposant une solution alternative pour sauver le jardin sans imposer de corvée aux familles.",
+      "en": "Rédigez une lettre de 150 mots adressée à la directrice, Mme Morel, proposant une solution alternative pour sauver le jardin sans imposer de corvée aux familles."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyser les défis logistiques et les conflits d'intérêts liés aux projets de développement durable en milieu scolaire.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le dilemme des tomates : un jardin scolaire en péril | B2 Reading | WeLearn",
+      "en": "Le dilemme des tomates : un jardin scolaire en péril | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "L'école primaire des Tilleuls a inauguré un potager pédagogique ambitieux, mais la gestion estivale crée des tensions inattendues entre l'administration et les familles.",
+      "en": "L'école primaire des Tilleuls a inauguré un potager pédagogique ambitieux, mais la gestion estivale crée des tensions inattendues entre l'administration et les familles."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

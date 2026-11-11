@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-open-schedule",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Morning Logistical Dilemma",
+      "en": "The Morning Logistical Dilemma"
+    },
+    "intro": {
+      "es": "An email exchange between a parent and a school administrator regarding the implementation of a new flexible arrival policy.",
+      "en": "An email exchange between a parent and a school administrator regarding the implementation of a new flexible arrival policy."
+    },
+    "mission": {
+      "es": "Analyze the impact of policy changes on school operations and individual family needs.",
+      "en": "Analyze the impact of policy changes on school operations and individual family needs."
+    },
+    "targetText": "Subject: Concerns regarding the new 'Staggered Start' initiative\n\nDear Principal Halloway, I am writing to you as a parent of two students currently enrolled in the Silverpine Academy. While I initially welcomed the news of the flexible arrival window, which allows students to arrive anytime between eight and nine in the morning, the reality has created an unexpected conflict for our household. As we live in the northern district, the morning commute is notoriously unpredictable. The flexibility was meant to alleviate the stress of traffic, yet it has inadvertently disrupted the academic rhythm of my children’s first-period classes. Because the school allows students to drift in at different times, the teachers are forced to spend the first twenty minutes repeating instructions, which effectively wastes the time of those who arrive promptly.\n\nMy primary concern lies with the core subjects. My eldest daughter, Elena, often finds that by the time she settles into her advanced mathematics lesson, the teacher is already halfway through a complex derivation. Because the lesson began at eight-fifteen sharp, those who arrived at eight-fifty missed the foundational concepts entirely. This creates a fragmented learning environment where the class is never truly synchronized. While I appreciate the school’s desire to accommodate families with long commutes, it seems that the current policy prioritizes convenience over the integrity of the instructional time. The spirit of the policy is noble, but the execution is failing those who rely on a structured start.\n\nI understand that the administration intended to support working parents by providing this buffer zone. It is a concession to the modern reality of urban congestion, and I do not wish to see it abolished entirely. However, I propose a compromise: keep the flexible arrival for non-core subjects or study halls, but mandate a firm start time for all primary academic blocks. This would ensure that the instructional flow remains uninterrupted while still offering the relief that many families, including ours, desperately need during the morning rush.\n\nI have spoken with several other parents who share this frustration. We feel that the current lack of structure is detrimental to long-term academic progress. We are not asking for a return to the rigid, punitive policies of the past, but rather a more nuanced approach that respects the value of the classroom environment. If the school continues to allow this staggered entry, I fear that the quality of education will continue to erode, leaving students to catch up on missed content rather than engaging with new material.\n\nI look forward to hearing your thoughts on this matter. I am available to meet later this week to discuss how we might refine this policy to better serve the entire student body without compromising the educational standards that define Silverpine Academy. We hope that a solution can be reached that balances logistical necessity with academic excellence, ensuring that every student starts their day with the same opportunity to succeed.",
+    "wordCount": 486,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "staggered",
+        "lemma": "staggered",
+        "glosses": {
+          "es": "arranged in a series of different times",
+          "en": "arranged in a series of different times"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inadvertently",
+        "lemma": "inadvertently",
+        "glosses": {
+          "es": "without intention; accidentally",
+          "en": "without intention; accidentally"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fragmented",
+        "lemma": "fragmented",
+        "glosses": {
+          "es": "broken into separate, disconnected parts",
+          "en": "broken into separate, disconnected parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "concession",
+        "lemma": "concession",
+        "glosses": {
+          "es": "a thing that is granted in response to demands",
+          "en": "a thing that is granted in response to demands"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "detrimental",
+        "lemma": "detrimental",
+        "glosses": {
+          "es": "tending to cause harm",
+          "en": "tending to cause harm"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erode",
+        "lemma": "erode",
+        "glosses": {
+          "es": "gradually wear away or diminish",
+          "en": "gradually wear away or diminish"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.1,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument presented in the email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The policy creates academic disruption."
+        },
+        {
+          "id": "a2",
+          "text": "The morning commute is too long."
+        },
+        {
+          "id": "a3",
+          "text": "The school needs more teachers."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "the reality has created an unexpected conflict for our household.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What happens during the first twenty minutes of class?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Students finish their homework."
+        },
+        {
+          "id": "a2",
+          "text": "Teachers repeat instructions."
+        },
+        {
+          "id": "a3",
+          "text": "Students discuss the commute."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the teachers are forced to spend the first twenty minutes repeating instructions",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does the parent feel about the school's intention?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They think the school is lazy."
+        },
+        {
+          "id": "a2",
+          "text": "They feel the school wants to save money."
+        },
+        {
+          "id": "a3",
+          "text": "They believe the school had good intentions."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The spirit of the policy is noble",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author suggest keeping the policy for study halls?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To maintain flexibility without hurting core learning."
+        },
+        {
+          "id": "a2",
+          "text": "To make the school look better to the public."
+        },
+        {
+          "id": "a3",
+          "text": "To ensure students have more time to socialize."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "keep the flexible arrival for non-core subjects or study halls, but mandate a firm start time for all primary academic blocks.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the tone of the email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggressive and demanding."
+        },
+        {
+          "id": "a2",
+          "text": "Constructive and critical."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I propose a compromise: keep the flexible arrival for non-core subjects or study halls, but mandate a firm start time for all primary academic blocks.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by saying the quality of education will 'erode'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It will become very expensive."
+        },
+        {
+          "id": "a2",
+          "text": "It will change to a new format."
+        },
+        {
+          "id": "a3",
+          "text": "It will gradually decline."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "I fear that the quality of education will continue to erode, leaving students to catch up on missed content rather than engaging with new material.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a response from Principal Halloway to the parent, acknowledging the concerns about the staggered start and proposing a meeting to discuss the specific compromise mentioned in the email.",
+      "en": "Write a response from Principal Halloway to the parent, acknowledging the concerns about the staggered start and proposing a meeting to discuss the specific compromise mentioned in the email."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the impact of policy changes on school operations and individual family needs.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Morning Logistical Dilemma | B2 Reading | WeLearn",
+      "en": "The Morning Logistical Dilemma | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An email exchange between a parent and a school administrator regarding the implementation of a new flexible arrival policy.",
+      "en": "An email exchange between a parent and a school administrator regarding the implementation of a new flexible arrival policy."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

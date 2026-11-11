@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-food-label",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La révolution des étiquettes chez Épicerie Fine",
+      "en": "La révolution des étiquettes chez Épicerie Fine"
+    },
+    "intro": {
+      "es": "Une analyse critique de la nouvelle politique de dates limites chez Épicerie Fine, où l'intention écologique se heurte à l'incertitude du consommateur.",
+      "en": "Une analyse critique de la nouvelle politique de dates limites chez Épicerie Fine, où l'intention écologique se heurte à l'incertitude du consommateur."
+    },
+    "mission": {
+      "es": "Lisez cet article et répondez aux questions pour évaluer votre compréhension des enjeux liés à la gestion des stocks et à la perception des consommateurs.",
+      "en": "Lisez cet article et répondez aux questions pour évaluer votre compréhension des enjeux liés à la gestion des stocks et à la perception des consommateurs."
+    },
+    "targetText": "La semaine dernière, la direction de l'enseigne Épicerie Fine a instauré une mesure audacieuse : remplacer les mentions 'à consommer de préférence avant' par une évaluation sensorielle simplifiée sur les produits frais. Cette initiative, baptisée 'Le Goût avant le Calendrier', vise à réduire drastiquement le gaspillage alimentaire. Selon Marc, gérant du magasin, le système actuel pousse les clients à jeter des produits parfaitement sains par simple peur d'un chiffre imprimé. La nouvelle signalétique propose désormais trois icônes visuelles : une loupe pour l'aspect, un nez pour l'odeur et une main pour la texture, incitant le client à devenir le propre arbitre de la sécurité sanitaire de ses achats.\n\nL'accueil des habitués est mitigé. Lors d'une visite en magasin mardi matin, j'ai surpris une discussion animée entre Sophie, une cliente fidèle, et un employé. Sophie, bien que sensible à la cause environnementale, exprimait une inquiétude légitime : comment distinguer un produit naturellement mature d'un produit réellement altéré sans le repère rassurant d'une date fixe ? Cette incertitude crée une tension palpable dans les rayons. Si l'intention est louable, elle déplace la responsabilité de la sécurité alimentaire du producteur vers le consommateur, créant une charge cognitive supplémentaire lors des courses hebdomadaires.\n\nLe conflit a atteint son paroxysme jeudi soir lors d'une réunion publique organisée par le magasin. Des experts en sécurité sanitaire ont souligné que si l'odorat reste un indicateur puissant, il ne permet pas de détecter certains agents pathogènes invisibles, comme les toxines bactériennes. Marc a concédé que la méthode n'était pas infaillible, mais a insisté sur le fait que le gaspillage massif de produits encore consommables constitue un risque éthique bien plus grave. La salle était divisée entre les partisans d'une autonomie retrouvée et les sceptiques réclamant le maintien d'une sécurité objective.\n\nLa situation s'est soldée par un compromis inattendu. Épicerie Fine a accepté d'ajouter une mention 'Date limite indicative' en plus des pictogrammes sensoriels. Cette solution, bien que techniquement redondante, semble apaiser les craintes tout en conservant l'esprit de l'initiative. Cependant, cette issue laisse un goût d'inachevé. En cherchant à éduquer le consommateur, l'enseigne a surtout révélé la fragilité de notre confiance envers les systèmes de régulation alimentaire automatisés.\n\nEn définitive, cette expérience montre que la transition écologique ne peut se limiter à un simple changement d'étiquetage. Elle nécessite une refonte profonde de notre rapport à la nourriture, passant d'une consommation passive à une vigilance active. Si le succès de l'initiative reste à prouver sur le long terme, elle a au moins le mérite d'avoir forcé une réflexion collective nécessaire. Reste à savoir si le consommateur moyen, pressé par le quotidien, aura réellement le temps et l'envie de devenir l'expert de ses propres denrées.",
+    "wordCount": 445,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "audacieuse",
+        "lemma": "audacieuse",
+        "glosses": {
+          "es": "bold",
+          "en": "bold"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arbitre",
+        "lemma": "arbitre",
+        "glosses": {
+          "es": "judge",
+          "en": "judge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "tangible",
+          "en": "tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "infaillible",
+        "lemma": "infaillible",
+        "glosses": {
+          "es": "foolproof",
+          "en": "foolproof"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "redondante",
+        "lemma": "redondante",
+        "glosses": {
+          "es": "superfluous",
+          "en": "superfluous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "denrées",
+        "lemma": "denrées",
+        "glosses": {
+          "es": "foodstuffs",
+          "en": "foodstuffs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:51:00.562Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet central du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le changement des étiquettes."
+        },
+        {
+          "id": "a2",
+          "text": "Le succès total de l'initiative."
+        },
+        {
+          "id": "a3",
+          "text": "Une critique des produits frais."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "remplacer les mentions 'à consommer de préférence avant' par une évaluation sensorielle simplifiée sur les produits frais.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle est la réaction de Sophie ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle est très enthousiaste."
+        },
+        {
+          "id": "a2",
+          "text": "Elle est inquiète."
+        },
+        {
+          "id": "a3",
+          "text": "Elle est indifférente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sophie, bien que sensible à la cause environnementale, exprimait une inquiétude légitime",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi le système est-il critiqué par les experts ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il coûte trop cher."
+        },
+        {
+          "id": "a2",
+          "text": "Il est dangereux."
+        },
+        {
+          "id": "a3",
+          "text": "Il est incomplet."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "il ne permet pas de détecter certains agents pathogènes invisibles",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de la réunion de jeudi soir ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Débattre de la sécurité."
+        },
+        {
+          "id": "a2",
+          "text": "Vendre des produits."
+        },
+        {
+          "id": "a3",
+          "text": "Former le personnel."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le conflit a atteint son paroxysme jeudi soir lors d'une réunion publique organisée par le magasin.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton de l'auteur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Colérique et agressif."
+        },
+        {
+          "id": "a2",
+          "text": "Neutre et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Optimiste et joyeux."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "En définitive, cette expérience montre que la transition écologique ne peut se limiter à un simple changement d'étiquetage.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'infaillible' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Très difficile."
+        },
+        {
+          "id": "a2",
+          "text": "Trop complexe."
+        },
+        {
+          "id": "a3",
+          "text": "Sans erreur."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Marc a concédé que la méthode n'était pas infaillible",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif expliquant si, selon vous, les consommateurs sont prêts à assumer la responsabilité de juger la fraîcheur de leurs aliments.",
+      "en": "Rédigez un court paragraphe argumentatif expliquant si, selon vous, les consommateurs sont prêts à assumer la responsabilité de juger la fraîcheur de leurs aliments."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lisez cet article et répondez aux questions pour évaluer votre compréhension des enjeux liés à la gestion des stocks et à la perception des consommateurs.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:51:00.562Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La révolution des étiquettes chez Épicerie Fine | B2 Reading | WeLearn",
+      "en": "La révolution des étiquettes chez Épicerie Fine | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une analyse critique de la nouvelle politique de dates limites chez Épicerie Fine, où l'intention écologique se heurte à l'incertitude du consommateur.",
+      "en": "Une analyse critique de la nouvelle politique de dates limites chez Épicerie Fine, où l'intention écologique se heurte à l'incertitude du consommateur."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:51:00.562Z"
+  }
+}

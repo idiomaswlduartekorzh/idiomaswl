@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il dilemma del Seme Comune",
+      "en": "Il dilemma del Seme Comune"
+    },
+    "intro": {
+      "es": "Nella piccola comunità di Valverde, la biblioteca dei semi affronta una crisi climatica senza precedenti che mette a dura prova la solidarietà dei suoi membri.",
+      "en": "Nella piccola comunità di Valverde, la biblioteca dei semi affronta una crisi climatica senza precedenti che mette a dura prova la solidarietà dei suoi membri."
+    },
+    "mission": {
+      "es": "Riflettere sull'etica della condivisione delle risorse in tempi di scarsità e sulla responsabilità collettiva verso il patrimonio agricolo locale.",
+      "en": "Riflettere sull'etica della condivisione delle risorse in tempi di scarsità e sulla responsabilità collettiva verso il patrimonio agricolo locale."
+    },
+    "targetText": "La Biblioteca dei Semi di Valverde, situata in un vecchio granaio ristrutturato, era il cuore pulsante dell'agricoltura locale. Ogni primavera, i residenti prendevano in prestito bustine di varietà antiche di pomodori e fagioli, promettendo di restituire una parte del raccolto a fine stagione. Tuttavia, quell'anno, una siccità implacabile aveva inaridito i campi, rendendo la produzione quasi nulla. Durante la riunione di settembre, il clima era teso: i volontari, guidati dalla pragmatica Elena e dall'idealista Marco, dovevano decidere come gestire il deficit di semi.\n\nElena sosteneva la necessità di una regola ferrea: chi non avesse restituito il doppio dei semi ricevuti avrebbe perso il diritto al prestito per l'anno successivo. Sosteneva che, senza questa disciplina, la banca avrebbe esaurito le scorte in breve tempo, condannando la biodiversità locale. Al contrario, Marco ribatteva che punire i contadini per un disastro naturale era un atto di crudeltà. Proponeva invece di sospendere le regole, permettendo a tutti di accedere alle scorte residue come gesto di mutuo soccorso.\n\nIl dibattito si protraeva fino a tarda sera. I membri anziani, che avevano visto generazioni di raccolti, ascoltavano in silenzio. La tensione era palpabile tra chi vedeva la biblioteca come un'istituzione tecnica da preservare e chi la considerava un rifugio comunitario. La siccità non aveva solo bruciato le piante, ma aveva messo a nudo la fragilità del loro patto sociale. La sfida non era più solo agricola, ma etica: era giusto privilegiare la sopravvivenza della banca o quella dei suoi membri più fragili?\n\nAlla fine, fu trovata una soluzione di compromesso, sebbene lasciasse un senso di amarezza. Si decise di dare priorità ai piccoli orticoltori che avevano perso tutto, ma imponendo una tassa simbolica in ore di lavoro volontario per la manutenzione del granaio. Non era la soluzione perfetta, né la più equa, ma serviva a mantenere vivo il legame tra le persone. La biblioteca avrebbe superato l'inverno, ma il dubbio rimaneva: in futuro, il patto sarebbe stato ancora basato sulla fiducia o solo su un calcolo di convenienza?\n\nQuella notte, mentre chiudeva la porta del granaio, Elena osservò i pochi barattoli rimasti sugli scaffali. Sapeva che la siccità avrebbe potuto ripetersi. La vera prova non sarebbe stata la disponibilità di semi, ma la capacità della comunità di restare unita quando le risorse scarseggiano. La biblioteca non era più solo un deposito di granaglie, ma uno specchio della loro resilienza collettiva, ancora incrinata ma non spezzata dal sole cocente di quell'estate difficile.",
+    "wordCount": 405,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "aridito",
+        "lemma": "aridito",
+        "glosses": {
+          "es": "dried up",
+          "en": "dried up"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ferrea",
+        "lemma": "ferrea",
+        "glosses": {
+          "es": "strict/iron",
+          "en": "strict/iron"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scorte",
+        "lemma": "scorte",
+        "glosses": {
+          "es": "stocks/supplies",
+          "en": "stocks/supplies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpabile",
+        "lemma": "palpabile",
+        "glosses": {
+          "es": "tangible/palpable",
+          "en": "tangible/palpable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amarezza",
+        "lemma": "amarezza",
+        "glosses": {
+          "es": "bitterness",
+          "en": "bitterness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resilienza",
+        "lemma": "resilienza",
+        "glosses": {
+          "es": "resilience",
+          "en": "resilience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.3,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema principale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione di una crisi agricola."
+        },
+        {
+          "id": "a2",
+          "text": "Il miglioramento delle tecniche di semina."
+        },
+        {
+          "id": "a3",
+          "text": "La costruzione di un nuovo granaio."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La sfida non era più solo agricola, ma etica: era giusto privilegiare la sopravvivenza della banca o quella dei suoi membri più fragili?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa proponeva Marco durante la riunione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Di imporre una tassa."
+        },
+        {
+          "id": "a2",
+          "text": "Di sospendere le regole."
+        },
+        {
+          "id": "a3",
+          "text": "Di chiudere la biblioteca."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Proponeva invece di sospendere le regole, permettendo a tutti di accedere alle scorte residue come gesto di mutuo soccorso.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Come si sentono i membri dopo il compromesso?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Soddisfatti."
+        },
+        {
+          "id": "a2",
+          "text": "Indifferenti."
+        },
+        {
+          "id": "a3",
+          "text": "Un po' amareggiati."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Alla fine, fu trovata una soluzione di compromesso, sebbene lasciasse un senso di amarezza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché l'autore descrive il dibattito tra Elena e Marco?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per mostrare due visioni opposte sulla gestione delle risorse comuni."
+        },
+        {
+          "id": "a2",
+          "text": "Per confermare la superiorità morale di Elena nel gestire i conflitti agricoli."
+        },
+        {
+          "id": "a3",
+          "text": "Per esporre la strategia di Marco volta a massimizzare i profitti della banca."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elena sosteneva la necessità di una regola ferrea: chi non avesse restituito il doppio dei semi ricevuti avrebbe perso il diritto al prestito per l'anno successivo. Sosteneva che, senza questa disciplina, la banca avrebbe esaurito le scorte in breve tempo, condannando la biodiversità locale. Al contrario, Marco ribatteva che punire i contadini per un disastro naturale era un atto di crudeltà.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono prevalente nel finale del brano?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Solenne."
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo e incerto."
+        },
+        {
+          "id": "a3",
+          "text": "Malinconico e rassegnato verso il futuro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La biblioteca avrebbe superato l'inverno, ma il dubbio rimaneva: in futuro, il patto sarebbe stato ancora basato sulla fiducia o solo su un calcolo di convenienza?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'resilienza' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'uso."
+        },
+        {
+          "id": "a2",
+          "text": "La cura."
+        },
+        {
+          "id": "a3",
+          "text": "La capacità di adattarsi e superare le difficoltà."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La biblioteca non era più solo un deposito di granaglie, ma uno specchio della loro resilienza collettiva, ancora incrinata ma non spezzata dal sole cocente di quell'estate difficile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve paragrafo in cui proponi una regola alternativa che potrebbe bilanciare le esigenze di Elena e quelle di Marco, spiegando le motivazioni della tua scelta.",
+      "en": "Scrivi un breve paragrafo in cui proponi una regola alternativa che potrebbe bilanciare le esigenze di Elena e quelle di Marco, spiegando le motivazioni della tua scelta."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Riflettere sull'etica della condivisione delle risorse in tempi di scarsità e sulla responsabilità collettiva verso il patrimonio agricolo locale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il dilemma del Seme Comune | B2 Reading | WeLearn",
+      "en": "Il dilemma del Seme Comune | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Nella piccola comunità di Valverde, la biblioteca dei semi affronta una crisi climatica senza precedenti che mette a dura prova la solidarietà dei suoi membri.",
+      "en": "Nella piccola comunità di Valverde, la biblioteca dei semi affronta una crisi climatica senza precedenti che mette a dura prova la solidarietà dei suoi membri."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

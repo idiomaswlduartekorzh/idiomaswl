@@ -131,13 +131,17 @@ export function HubPage({ locale, language, level, exercises }: { locale: TutorL
 }
 
 function readingPilotLinks(): ReadingPilotLink[] {
-  return availableExercises('en')
-    .filter((exercise) => exercise.schemaVersion === '1.2.0')
-    .map((exercise) => ({
-      id: exercise.id,
+  const groups = new Map<string, ReadingPilotLink>()
+  for (const exercise of availableExercises('en').filter((item) => item.schemaVersion === '1.2.0')) {
+    const key = `${exercise.language}/${exercise.level.cefr}`
+    const existing = groups.get(key)
+    if (existing) existing.count++
+    else groups.set(key, {
       language: exercise.language,
       level: exercise.level.cefr,
-      title: localized(exercise.content.title, 'en'),
-      href: readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug),
-    }))
+      count: 1,
+      href: readingHubPath('en', exercise.language, exercise.level.cefr),
+    })
+  }
+  return [...groups.values()]
 }

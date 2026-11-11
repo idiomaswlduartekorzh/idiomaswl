@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema da Biblioteca de Sementes",
+      "en": "O Dilema da Biblioteca de Sementes"
+    },
+    "intro": {
+      "es": "Em uma pequena comunidade agrícola, voluntários gerenciam um sistema de empréstimo de sementes. Uma seca severa coloca em risco a sustentabilidade desse projeto coletivo.",
+      "en": "Em uma pequena comunidade agrícola, voluntários gerenciam um sistema de empréstimo de sementes. Uma seca severa coloca em risco a sustentabilidade desse projeto coletivo."
+    },
+    "mission": {
+      "es": "Analisar as tensões entre a responsabilidade individual e a preservação do bem comum em um contexto de escassez.",
+      "en": "Analisar as tensões entre a responsabilidade individual e a preservação do bem comum em um contexto de escassez."
+    },
+    "targetText": "A Biblioteca de Sementes de Vale Verde operava sob uma premissa simples: os agricultores pegavam sementes locais e, após a colheita, devolviam o dobro da quantidade recebida para manter o estoque. Durante anos, o sistema funcionou com precisão, garantindo a diversidade genética da região. No entanto, uma seca prolongada atingiu os campos no último ciclo. A maioria dos agricultores mal conseguiu colher o suficiente para o próprio sustento, tornando a devolução das sementes um desafio logístico e emocional. A coordenadora, Dona Helena, convocou uma reunião de emergência com os voluntários para decidir como proceder diante da escassez.\n\nO debate foi intenso. Marcos, um voluntário pragmático, argumentou que a regra deveria ser mantida sem exceções. Para ele, se a biblioteca abrisse mão da reposição, o estoque se esgotaria rapidamente, levando ao colapso total do projeto. Ele insistia que a sobrevivência da instituição dependia da disciplina dos participantes, mesmo em tempos difíceis. Por outro lado, Beatriz, uma agricultora que também atuava como voluntária, defendia uma moratória temporária. Ela argumentava que exigir sementes de quem mal tinha o que comer seria um ato de crueldade que destruiria o tecido social da comunidade.\n\nO impasse era evidente. Se seguissem a regra, muitos agricultores teriam que comprar sementes comerciais de baixa qualidade, perdendo a identidade das variedades locais. Se perdoassem a dívida, a biblioteca ficaria vazia para a próxima temporada de plantio. A tensão na sala era palpável; cada lado via no outro uma ameaça ao futuro de Vale Verde. A responsabilidade individual de cada agricultor colidia frontalmente com a necessidade coletiva de garantir a resiliência do banco de sementes para os anos seguintes.\n\nDona Helena observava o grupo, ciente de que qualquer decisão teria consequências profundas. Ela propôs um meio-termo: os agricultores devolveriam apenas o que pudessem, mas deveriam registrar o déficit em um livro de promessas, comprometendo-se a repor a diferença assim que as chuvas retornassem. Essa solução, embora parecesse justa, não eliminava a incerteza. O banco de sementes continuaria com um estoque reduzido e a dependência de uma colheita futura incerta tornava o plano uma aposta arriscada.\n\nAo final da noite, os voluntários aceitaram a proposta, mas o clima de apreensão permaneceu. A biblioteca sobreviveu ao momento imediato, mas a confiança no sistema foi abalada. A questão de quem deveria arcar com o custo da escassez – o indivíduo ou o coletivo – permanecia sem uma resposta definitiva. Enquanto as luzes da sala se apagavam, todos sabiam que, sem chuva, o livro de promessas seria apenas um lembrete da fragilidade de seu sonho comunitário.",
+    "wordCount": 422,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "moratória",
+        "lemma": "moratória",
+        "glosses": {
+          "es": "a temporary prohibition or suspension of an activity",
+          "en": "a temporary prohibition or suspension of an activity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tecido social",
+        "lemma": "tecido social",
+        "glosses": {
+          "es": "the structure of relationships within a community",
+          "en": "the structure of relationships within a community"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpável",
+        "lemma": "palpável",
+        "glosses": {
+          "es": "tangible or easily perceived",
+          "en": "tangible or easily perceived"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "colidia",
+        "lemma": "colidia",
+        "glosses": {
+          "es": "clashed or conflicted",
+          "en": "clashed or conflicted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resiliência",
+        "lemma": "resiliência",
+        "glosses": {
+          "es": "the capacity to recover quickly from difficulties",
+          "en": "the capacity to recover quickly from difficulties"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "apreensão",
+        "lemma": "apreensão",
+        "glosses": {
+          "es": "anxiety or fear that something bad will happen",
+          "en": "anxiety or fear that something bad will happen"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.6,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:43:22.916Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central enfrentado pela biblioteca de sementes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A escassez causada pela seca."
+        },
+        {
+          "id": "a2",
+          "text": "A deterioração física das instalações da biblioteca."
+        },
+        {
+          "id": "a3",
+          "text": "A ausência de interessados em realizar a colheita anual."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "No entanto, uma seca prolongada atingiu os campos no último ciclo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que Marcos defende na reunião?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A flexibilização."
+        },
+        {
+          "id": "a2",
+          "text": "A manutenção da regra."
+        },
+        {
+          "id": "a3",
+          "text": "A aquisição imediata de novas sementes híbridas."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Marcos, um voluntário pragmático, argumentou que a regra deveria ser mantida sem exceções.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que a solução de Helena é considerada uma aposta arriscada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque os agricultores não aceitaram o acordo."
+        },
+        {
+          "id": "a2",
+          "text": "Porque o banco de sementes será fechado."
+        },
+        {
+          "id": "a3",
+          "text": "Porque depende de uma colheita futura incerta."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a dependência de uma colheita futura incerta tornava o plano uma aposta arriscada.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo principal do texto ao apresentar o impasse?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Expor a complexidade de manter um bem comum em tempos de crise."
+        },
+        {
+          "id": "a2",
+          "text": "Apontar a ineficiência técnica dos métodos de plantio tradicionais."
+        },
+        {
+          "id": "a3",
+          "text": "Justificar a necessidade de privatizar o banco comunitário de sementes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A responsabilidade individual de cada agricultor colidia frontalmente com a necessidade coletiva de garantir a resiliência do banco de sementes para os anos seguintes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante ao final da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aliviado."
+        },
+        {
+          "id": "a2",
+          "text": "Incerto e apreensivo."
+        },
+        {
+          "id": "a3",
+          "text": "Satisfeito e resoluto."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ao final da noite, os voluntários aceitaram a proposta, mas o clima de apreensão permaneceu.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'tecido social' no contexto do segundo parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A produção têxtil da região."
+        },
+        {
+          "id": "a2",
+          "text": "O estoque de sementes da biblioteca."
+        },
+        {
+          "id": "a3",
+          "text": "A estrutura das relações comunitárias."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ela argumentava que exigir sementes de quem mal tinha o que comer seria um ato de crueldade que destruiria o tecido social da comunidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo se a decisão de Dona Helena foi a mais ética ou se ela deveria ter priorizado a regra original da biblioteca.",
+      "en": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo se a decisão de Dona Helena foi a mais ética ou se ela deveria ter priorizado a regra original da biblioteca."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analisar as tensões entre a responsabilidade individual e a preservação do bem comum em um contexto de escassez.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:43:22.916Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema da Biblioteca de Sementes | B2 Reading | WeLearn",
+      "en": "O Dilema da Biblioteca de Sementes | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Em uma pequena comunidade agrícola, voluntários gerenciam um sistema de empréstimo de sementes. Uma seca severa coloca em risco a sustentabilidade desse projeto coletivo.",
+      "en": "Em uma pequena comunidade agrícola, voluntários gerenciam um sistema de empréstimo de sementes. Uma seca severa coloca em risco a sustentabilidade desse projeto coletivo."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:43:22.916Z"
+  }
+}

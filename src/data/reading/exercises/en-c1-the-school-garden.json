@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-school-garden",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Perennial Oversight: Cultivating Equity at Oakridge Academy",
+      "en": "The Perennial Oversight: Cultivating Equity at Oakridge Academy"
+    },
+    "intro": {
+      "es": "Principal Elena Vance unveils the 'Green Equity' initiative, a school garden project that promises to foster community inclusivity, yet faces scrutiny over its reliance on parental labor.",
+      "en": "Principal Elena Vance unveils the 'Green Equity' initiative, a school garden project that promises to foster community inclusivity, yet faces scrutiny over its reliance on parental labor."
+    },
+    "mission": {
+      "es": "Analyze the dissonance between the school's inclusive rhetoric and the practical barriers inherent in the garden's operational model.",
+      "en": "Analyze the dissonance between the school's inclusive rhetoric and the practical barriers inherent in the garden's operational model."
+    },
+    "targetText": "The unveiling of the Oakridge Academy Community Garden was heralded by Principal Elena Vance as a transformative milestone in the institution’s history. Standing before a crowd of parents and faculty, Vance painted a vivid portrait of a space where students would engage with the earth, cultivating not only heirloom tomatoes and kale but also a profound sense of civic responsibility. The garden, she asserted, was designed to be the great equalizer, a communal plot where socioeconomic disparities would dissolve into the rich, dark soil. By integrating the garden into the curriculum, the school sought to provide every child with equal access to experiential learning, regardless of their background. However, beneath the veneer of this verdant vision lay a structural assumption that threatened to undermine the very inclusivity Vance championed: the expectation of volunteerism.\n\nThe operational mandate for the garden rested upon the 'Collective Stewardship' model, a strategy requiring families to dedicate weekend hours to weeding, irrigation, and general maintenance. During the launch event, the school’s outreach coordinator, Marcus Thorne, emphasized that the garden’s survival depended entirely on the generous donation of time from the parent body. While the rhetoric of 'community contribution' sounded noble, it masked a logistical reality that favored families with flexible schedules and financial security. For single-parent households or those balancing multiple hourly-wage jobs, the requirement to participate in Saturday morning 'dig-ins' was not merely an inconvenience; it was an exclusionary barrier that effectively barred them from the inner circle of the garden’s management.\n\nAs the weeks progressed, the garden began to reflect the demographic divide of the parent body. The plots were meticulously tended by a small, affluent contingent of volunteers who possessed the leisure time to cultivate the land. Meanwhile, families who could not commit to the rigid volunteer roster found themselves sidelined. When a group of parents from the night-shift workforce requested a weekday evening rotation, Thorne dismissed the proposal, citing the lack of volunteer supervisors available after hours. This refusal highlighted a glaring contradiction: the school claimed the garden was a universal resource, yet it functioned as a private club for those with the privilege of time. The garden, intended to be a site of shared growth, had inadvertently become a monument to the disparity of resources among the school’s constituency.\n\nThe tension reached a breaking point during the mid-season harvest festival. A group of parents, led by Sarah Jenkins, presented a petition advocating for a shift toward a professional maintenance contract funded by the school’s general budget, rather than relying on unpaid labor. Jenkins argued that the current model penalized families who were already stretched thin, forcing them to choose between their livelihoods and their children’s inclusion in the garden’s activities. Principal Vance countered that the volunteer requirement was essential for 'instilling character' and maintaining the community spirit. She maintained that outsourcing the labor would strip the project of its pedagogical value, effectively turning the garden into a mere commodity rather than a collaborative endeavor. Her response, while framed in the language of educational philosophy, failed to address the systemic inequality inherent in the requirement.\n\nThe resolution of this conflict remains elusive, leaving the Oakridge Academy garden in a state of quiet, unresolved tension. The rows of vegetables grow with vigor, yet the community remains fractured. The garden stands as a testament to the fact that inclusivity cannot be achieved through a one-size-fits-all mandate that ignores the realities of its participants. As long as the school prioritizes the aesthetics of community labor over the practical accessibility of its programs, the garden will continue to serve as a mirror of the very inequities it was meant to transcend. The project serves as a sobering reminder that without a critical examination of the barriers to participation, even the most well-intentioned initiatives risk reinforcing the structures they aim to dismantle.\n\nUltimately, this impasse suggests that true equity requires more than just shared space; it demands an acknowledgment of disparate capacities. Unless the administration reconciles its pedagogical ideals with the pragmatic limitations of its families, the garden will remain a fractured landscape, symbolizing an aspiration that never quite took root.",
+    "wordCount": 684,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "verdant",
+        "lemma": "verdant",
+        "glosses": {
+          "es": "green with grass or other rich vegetation",
+          "en": "green with grass or other rich vegetation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mandate",
+        "lemma": "mandate",
+        "glosses": {
+          "es": "an official order or requirement",
+          "en": "an official order or requirement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "constituency",
+        "lemma": "constituency",
+        "glosses": {
+          "es": "a body of voters or supporters in a specified area",
+          "en": "a body of voters or supporters in a specified area"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "elusive",
+        "lemma": "elusive",
+        "glosses": {
+          "es": "difficult to find, catch, or achieve",
+          "en": "difficult to find, catch, or achieve"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "transcend",
+        "lemma": "transcend",
+        "glosses": {
+          "es": "to rise above or go beyond the limits of",
+          "en": "to rise above or go beyond the limits of"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pedagogical",
+        "lemma": "pedagogical",
+        "glosses": {
+          "es": "relating to the methods and practice of teaching",
+          "en": "relating to the methods and practice of teaching"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.4,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict presented in the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The school garden's volunteer model creates an unintended barrier to participation."
+        },
+        {
+          "id": "a2",
+          "text": "The current agricultural curriculum fails to integrate modern sustainable farming techniques for the student body."
+        },
+        {
+          "id": "a3",
+          "text": "The parents are actively campaigning against the implementation of the new school garden project this semester."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "the expectation of volunteerism.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Marcus Thorne reject the proposal for weekday evening rotations?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Safety risks."
+        },
+        {
+          "id": "a2",
+          "text": "The school lacked available supervisors."
+        },
+        {
+          "id": "a3",
+          "text": "The garden project was deemed too expensive to maintain during the late hours."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "citing the lack of volunteer supervisors available after hours.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author imply about Principal Vance's stance on the garden's maintenance?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She is unaware of the socioeconomic divide within the school."
+        },
+        {
+          "id": "a2",
+          "text": "She intends to outsource the labor to professional gardeners."
+        },
+        {
+          "id": "a3",
+          "text": "She prioritizes the pedagogical value of labor over equitable access."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "She maintained that outsourcing the labor would strip the project of its pedagogical value, effectively turning the garden into a mere commodity rather than a collaborative endeavor.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the primary purpose of the author in the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the ongoing, unresolved nature of the garden's exclusionary practices."
+        },
+        {
+          "id": "a2",
+          "text": "To suggest that the school will eventually adopt the proposal for professional maintenance."
+        },
+        {
+          "id": "a3",
+          "text": "To conclude that the garden has successfully fostered a sense of civic responsibility."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The resolution of this conflict remains elusive, leaving the Oakridge Academy garden in a state of quiet, unresolved tension.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the author's tone regarding the school's inclusivity claims?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Warmly hopeful."
+        },
+        {
+          "id": "a2",
+          "text": "Critical and skeptical."
+        },
+        {
+          "id": "a3",
+          "text": "Detached and analytical in its presentation of the facts."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "However, beneath the veneer of this verdant vision lay a structural assumption that threatened to undermine the very inclusivity Vance championed",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does the word 'constituency' refer to?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The faculty."
+        },
+        {
+          "id": "a2",
+          "text": "The donors."
+        },
+        {
+          "id": "a3",
+          "text": "The entire group of parents and families served by the school."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The garden, intended to be a site of shared growth, had inadvertently become a monument to the disparity of resources among the school’s constituency.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 250-word policy proposal for Oakridge Academy that outlines a revised volunteer model. Your proposal must address the equity concerns raised by parents while maintaining the school's goal of student experiential learning. Use formal, persuasive language.",
+      "en": "Write a 250-word policy proposal for Oakridge Academy that outlines a revised volunteer model. Your proposal must address the equity concerns raised by parents while maintaining the school's goal of student experiential learning. Use formal, persuasive language."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the dissonance between the school's inclusive rhetoric and the practical barriers inherent in the garden's operational model.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Perennial Oversight: Cultivating Equity at Oakridge Academy | C1 Reading | WeLearn",
+      "en": "The Perennial Oversight: Cultivating Equity at Oakridge Academy | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Principal Elena Vance unveils the 'Green Equity' initiative, a school garden project that promises to foster community inclusivity, yet faces scrutiny over its reliance on parental labor.",
+      "en": "Principal Elena Vance unveils the 'Green Equity' initiative, a school garden project that promises to foster community inclusivity, yet faces scrutiny over its reliance on parental labor."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

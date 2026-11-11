@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il dilemma del cacciavite: cronaca di una serata al Laboratorio di Rigenerazione",
+      "en": "Il dilemma del cacciavite: cronaca di una serata al Laboratorio di Rigenerazione"
+    },
+    "intro": {
+      "es": "Un'analisi critica sull'efficacia dei centri di riparazione comunitaria gestiti da volontari.",
+      "en": "Un'analisi critica sull'efficacia dei centri di riparazione comunitaria gestiti da volontari."
+    },
+    "mission": {
+      "es": "Valutare se l'iniziativa di riparazione condivisa sia una soluzione sostenibile o solo un palliativo temporaneo.",
+      "en": "Valutare se l'iniziativa di riparazione condivisa sia una soluzione sostenibile o solo un palliativo temporaneo."
+    },
+    "targetText": "Il Laboratorio di Rigenerazione, situato nel cuore del quartiere industriale, promette di contrastare l'obsolescenza programmata offrendo uno spazio dove i cittadini possono riparare i propri oggetti. Sono arrivato martedì sera con un tostapane vintage, sperando di trovare quella sinergia tra esperti e neofiti che il sito web pubblicizza con tanto entusiasmo. L'atmosfera era densa di polvere e aspettative, ma la realtà si è scontrata immediatamente con la scarsità delle risorse disponibili. Il coordinatore, un ingegnere in pensione di nome Marco, gestiva l'unico banco da lavoro con una pazienza che rasentava il martirio, mentre una fila di persone attendeva con elettrodomestici sempre più complessi.\n\nIl problema centrale è emerso quando ho cercato di accedere alla postazione di saldatura. C'era un solo saldatore a stagno funzionante per quindici persone, e il volontario addetto, una studentessa di nome Elena, non riusciva a gestire le richieste pressanti di chi voleva riparare schede madri di computer portatili. La tensione è salita quando un utente ha preteso che Elena riparasse il suo dispositivo all'istante, ignorando il protocollo di apprendimento che impone al proprietario di eseguire il lavoro sotto supervisione. Questo conflitto ha evidenziato una falla nel modello operativo: la filosofia del 'fai da te assistito' si scontra con la frenesia consumistica di chi vede il centro come un servizio di riparazione rapida e gratuita.\n\nNonostante il caos, ho osservato momenti di vera illuminazione. Una signora anziana è riuscita a riparare la sua vecchia lampada da tavolo grazie ai consigli di Marco, un successo che ha sollevato il morale dell'intera stanza. Tuttavia, questo trionfo è stato isolato. La maggior parte dei partecipanti ha finito per abbandonare i propri oggetti sul tavolo, scoraggiata dalla mancanza di strumenti specifici o dalla complessità dei guasti. La mia esperienza si è conclusa con il tostapane ancora guasto: il pezzo di ricambio necessario non era disponibile e la competenza richiesta superava le capacità del gruppo presente in quella sessione.\n\nÈ innegabile che il Laboratorio offra un valore pedagogico inestimabile, promuovendo una cultura della cura contro lo spreco. Eppure, la sostenibilità a lungo termine appare fragile. Senza un investimento in attrezzature professionali e una selezione più rigorosa dei volontari, il rischio è che il centro diventi un semplice cimitero di oggetti semiriparati. La frustrazione dei partecipanti, alimentata da attese estenuanti, rischia di alienare proprio coloro che vorrebbero abbracciare uno stile di vita più consapevole.\n\nIn conclusione, il Laboratorio di Rigenerazione è un esperimento nobile ma incompleto. Sebbene la missione di ridurre i rifiuti sia lodevole, la gestione operativa attuale non è all'altezza delle sfide tecniche moderne. Senza una trasformazione radicale nel modo in cui vengono gestiti i tempi e le risorse, il laboratorio rimarrà un rifugio per nostalgici piuttosto che una vera alternativa al consumismo sfrenato. La domanda rimane: siamo pronti a dedicare il tempo necessario per riparare, o preferiamo la comodità di un nuovo acquisto?",
+    "wordCount": 473,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "obsolescenza",
+        "lemma": "obsolescenza",
+        "glosses": {
+          "es": "obsolescence",
+          "en": "obsolescence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sinergia",
+        "lemma": "sinergia",
+        "glosses": {
+          "es": "synergy",
+          "en": "synergy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "protocollo",
+        "lemma": "protocollo",
+        "glosses": {
+          "es": "protocol",
+          "en": "protocol"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pedagogico",
+        "lemma": "pedagogico",
+        "glosses": {
+          "es": "pedagogical",
+          "en": "pedagogical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienare",
+        "lemma": "alienare",
+        "glosses": {
+          "es": "to alienate",
+          "en": "to alienate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "consumismo",
+        "lemma": "consumismo",
+        "glosses": {
+          "es": "consumerism",
+          "en": "consumerism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.5,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è la tesi principale dell'autore riguardo al Laboratorio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È utile ma mal gestito."
+        },
+        {
+          "id": "a2",
+          "text": "È un fallimento totale."
+        },
+        {
+          "id": "a3",
+          "text": "È una soluzione perfetta."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il Laboratorio di Rigenerazione è un esperimento nobile ma incompleto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché c'è stata tensione tra Elena e un utente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per la mancata consegna di un pezzo di ricambio."
+        },
+        {
+          "id": "a2",
+          "text": "Per la riparazione."
+        },
+        {
+          "id": "a3",
+          "text": "Per un ritardo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "un utente ha preteso che Elena riparasse il suo dispositivo all'istante",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autore riguardo al comportamento degli utenti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Amano studiare elettronica."
+        },
+        {
+          "id": "a2",
+          "text": "Vogliono solo socializzare."
+        },
+        {
+          "id": "a3",
+          "text": "Cercano riparazioni veloci."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la filosofia del 'fai da te assistito' si scontra con la frenesia consumistica di chi vede il centro come un servizio di riparazione rapida e gratuita.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo del riferimento alla signora con la lampada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mostrare un successo."
+        },
+        {
+          "id": "a2",
+          "text": "Criticare la lentezza."
+        },
+        {
+          "id": "a3",
+          "text": "Dimostrare la complessità tecnica eccessiva."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Una signora anziana è riuscita a riparare la sua vecchia lampada da tavolo grazie ai consigli di Marco, un successo che ha sollevato il morale dell'intera stanza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale parola descrive meglio il tono dell'autore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Estremamente pessimista."
+        },
+        {
+          "id": "a2",
+          "text": "Critico ma riflessivo."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Senza una trasformazione radicale nel modo in cui vengono gestiti i tempi e le risorse, il laboratorio rimarrà un rifugio per nostalgici piuttosto che una vera alternativa al consumismo sfrenato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con 'obsolescenza programmata'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La durata dei prodotti."
+        },
+        {
+          "id": "a2",
+          "text": "La fine del ciclo di vita dei beni."
+        },
+        {
+          "id": "a3",
+          "text": "La pianificazione tecnica di prodotti destinati a rompersi."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "promette di contrastare l'obsolescenza programmata offrendo uno spazio dove i cittadini possono riparare i propri oggetti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve recensione (150 parole) di un servizio comunitario che hai utilizzato, analizzandone pregi e difetti in modo critico.",
+      "en": "Scrivi una breve recensione (150 parole) di un servizio comunitario che hai utilizzato, analizzandone pregi e difetti in modo critico."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Valutare se l'iniziativa di riparazione condivisa sia una soluzione sostenibile o solo un palliativo temporaneo.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il dilemma del cacciavite: cronaca di una serata al Laboratorio di Rigenerazione | B2 Reading | WeLearn",
+      "en": "Il dilemma del cacciavite: cronaca di una serata al Laboratorio di Rigenerazione | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sull'efficacia dei centri di riparazione comunitaria gestiti da volontari.",
+      "en": "Un'analisi critica sull'efficacia dei centri di riparazione comunitaria gestiti da volontari."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

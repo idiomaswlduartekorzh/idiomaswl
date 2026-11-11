@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-library-window",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'aube des lecteurs",
+      "en": "L'aube des lecteurs"
+    },
+    "intro": {
+      "es": "La bibliothèque municipale de Val-des-Pins expérimente une ouverture matinale pour les travailleurs postés, bouleversant les habitudes du personnel et la sérénité des usagers.",
+      "en": "La bibliothèque municipale de Val-des-Pins expérimente une ouverture matinale pour les travailleurs postés, bouleversant les habitudes du personnel et la sérénité des usagers."
+    },
+    "mission": {
+      "es": "Analyser les enjeux de la restructuration des services publics et les tensions entre besoins professionnels et confort social.",
+      "en": "Analyser les enjeux de la restructuration des services publics et les tensions entre besoins professionnels et confort social."
+    },
+    "targetText": "À la bibliothèque de Val-des-Pins, le silence habituel a été rompu par une décision audacieuse : ouvrir les portes dès six heures du matin pour accommoder les travailleurs postés. Cette initiative, portée par la directrice Élise Morel, visait à offrir un espace de calme avant l'agitation urbaine. Pourtant, la mise en œuvre s'est avérée complexe. Marc, bibliothécaire depuis vingt ans, a vu son rythme de vie basculer. Le passage aux horaires décalés a nécessité une réorganisation totale de son emploi du temps familial, créant une fatigue latente qu'il dissimule difficilement derrière ses sourires de service. La gestion des flux, autrefois prévisible, est devenue une équation à plusieurs inconnues.\n\nParmi les nouveaux usagers, Clara, infirmière de nuit, apprécie cette bulle de tranquillité. Pour elle, lire quelques pages au lever du jour est une nécessité vitale pour décompresser avant de retrouver le sommeil. Elle représente cette catégorie de citoyens souvent oubliée par les horaires administratifs classiques. Cependant, cette satisfaction contraste avec le mécontentement des habitués du matin, comme Monsieur Girard, un retraité qui déplore l'effervescence inhabituelle dès l'aube. Il estime que la bibliothèque perd son essence de sanctuaire pour devenir un simple lieu de passage fonctionnel.\n\nLe conflit a atteint son paroxysme lors de la réunion de service du mardi. Marc, soutenu par une partie de l'équipe, a soulevé la question de la viabilité à long terme. Il soutient que le coût humain dépasse les bénéfices sociaux, arguant que le personnel n'est pas une ressource illimitée. Élise, quant à elle, maintient que la mission de service public impose une flexibilité constante. Elle refuse de faire marche arrière, voyant dans cette résistance un simple refus de modernisation face à une société qui ne dort plus.\n\nLa tension est palpable dans les travées. On observe désormais deux groupes distincts : les 'lève-tôt' qui cherchent le calme et les 'employés épuisés' qui tentent de maintenir une façade professionnelle. La bibliothèque, autrefois lieu d'unité, semble se fragmenter. L'équilibre précaire entre les besoins des travailleurs et le bien-être des employés ne pourra pas durer sans une médiation sérieuse, mais aucune solution ne semble satisfaire les deux camps.\n\nFinalement, le projet reste en suspens. Élise a promis une évaluation en fin de mois, mais les positions sont figées. Marc continue son service, le regard un peu plus terne, tandis que Clara savoure ses derniers instants de lecture paisible, consciente que son droit à cet espace est désormais au cœur d'une bataille dont elle ne maîtrise pas les ressorts. La bibliothèque est devenue un miroir des tensions sociales, un lieu où, paradoxalement, le silence est devenu le sujet le plus bruyant de tous les débats.",
+    "wordCount": 436,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "travailleurs postés",
+        "lemma": "travailleurs postés",
+        "glosses": {
+          "es": "shift workers",
+          "en": "shift workers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "dormant or underlying",
+          "en": "dormant or underlying"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "effervescence",
+        "lemma": "effervescence",
+        "glosses": {
+          "es": "bustle or agitation",
+          "en": "bustle or agitation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanctuaire",
+        "lemma": "sanctuaire",
+        "glosses": {
+          "es": "a place of refuge",
+          "en": "a place of refuge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paroxysme",
+        "lemma": "paroxysme",
+        "glosses": {
+          "es": "peak or climax",
+          "en": "peak or climax"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "travées",
+        "lemma": "travées",
+        "glosses": {
+          "es": "library aisles or bays",
+          "en": "library aisles or bays"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.2,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit sur les horaires."
+        },
+        {
+          "id": "a2",
+          "text": "Le succès total de l'initiative."
+        },
+        {
+          "id": "a3",
+          "text": "Une crise de gestion interne."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le passage aux horaires décalés a nécessité une réorganisation totale de son emploi du temps familial, créant une fatigue latente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Monsieur Girard est-il mécontent ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il manque de livres."
+        },
+        {
+          "id": "a2",
+          "text": "L'ambiance a changé."
+        },
+        {
+          "id": "a3",
+          "text": "Il préfère le soir."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il estime que la bibliothèque perd son essence de sanctuaire pour devenir un simple lieu de passage fonctionnel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quel est l'état d'esprit de Marc ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il est motivé par le changement."
+        },
+        {
+          "id": "a2",
+          "text": "Il veut démissionner immédiatement."
+        },
+        {
+          "id": "a3",
+          "text": "Il est épuisé par les nouveaux horaires."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le passage aux horaires décalés a nécessité une réorganisation totale de son emploi du temps familial, créant une fatigue latente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but d'Élise ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Moderniser le service public."
+        },
+        {
+          "id": "a2",
+          "text": "Réduire les coûts salariaux."
+        },
+        {
+          "id": "a3",
+          "text": "Fermer la bibliothèque."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elle refuse de faire marche arrière, voyant dans cette résistance un simple refus de modernisation face à une société qui ne dort plus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et joyeux."
+        },
+        {
+          "id": "a2",
+          "text": "Nuancé et préoccupé."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre et informatif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'équilibre précaire entre les besoins des travailleurs et le bien-être des employés ne pourra pas durer sans une médiation sérieuse",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'paroxysme' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un moment de calme."
+        },
+        {
+          "id": "a2",
+          "text": "Une réunion administrative."
+        },
+        {
+          "id": "a3",
+          "text": "Le point le plus intense."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le conflit a atteint son paroxysme lors de la réunion de service du mardi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court argumentaire (150 mots) proposant une solution de compromis qui pourrait satisfaire à la fois les travailleurs postés et le personnel de la bibliothèque.",
+      "en": "Rédigez un court argumentaire (150 mots) proposant une solution de compromis qui pourrait satisfaire à la fois les travailleurs postés et le personnel de la bibliothèque."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyser les enjeux de la restructuration des services publics et les tensions entre besoins professionnels et confort social.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'aube des lecteurs | B2 Reading | WeLearn",
+      "en": "L'aube des lecteurs | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "La bibliothèque municipale de Val-des-Pins expérimente une ouverture matinale pour les travailleurs postés, bouleversant les habitudes du personnel et la sérénité des usagers.",
+      "en": "La bibliothèque municipale de Val-des-Pins expérimente une ouverture matinale pour les travailleurs postés, bouleversant les habitudes du personnel et la sérénité des usagers."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

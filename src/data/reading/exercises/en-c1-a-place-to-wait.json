@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Algorithm of Anticipation",
+      "en": "The Algorithm of Anticipation"
+    },
+    "intro": {
+      "es": "A reflection on the psychological impact of digital queuing systems within a clinical environment.",
+      "en": "A reflection on the psychological impact of digital queuing systems within a clinical environment."
+    },
+    "mission": {
+      "es": "Analyze the text to understand how technological efficiency shifts the burden of anxiety from the clinic's interior to the external world.",
+      "en": "Analyze the text to understand how technological efficiency shifts the burden of anxiety from the clinic's interior to the external world."
+    },
+    "targetText": "The lobby of the St. Judea Diagnostic Centre has always been a theatre of human patience. Before the implementation of the 'Flow-State' interface, the room was a cacophony of rustling magazines, heavy sighs, and the rhythmic clicking of a wall-mounted clock that seemed to mock the lethargy of our triage process. Patients sat in rigid rows, their eyes fixed on the flickering fluorescent tubes, tethered to the physical space by the sheer necessity of their presence. When we transitioned to the digital queue, the atmosphere underwent a peculiar metamorphosis. The lobby emptied, not because our throughput increased, but because the wait was no longer tethered to a chair. Patients now receive notifications on their mobile devices, allowing them to wander the surrounding streets, sipping lukewarm coffee or pacing through the nearby park. The physical queue has vanished, replaced by a ghost-like presence that exists only in the cloud.\n\nElias, our lead administrator, views this as a triumph of modern logistics. He points to the metrics: zero complaints about lobby overcrowding and a significant reduction in custodial costs. Yet, I observe a different phenomenon from behind my plexiglass partition. The anxiety has not dissipated; it has merely migrated. Where patients once sat in a communal, albeit tense, silence, they now haunt the pavement outside our glass doors. They pace with their phones clutched like talismans, terrified that a momentary lapse in signal or a diverted glance will result in their digital ticket expiring. The queue has become an invisible tether, tighter and more demanding than the physical chairs ever were. The efficiency is an illusion, a sleight of hand that prioritizes the aesthetics of an empty room over the mental tranquility of the patient.\n\nConsider Mrs. Gable, a regular who visits for chronic pain management. In the old days, she would occupy the corner seat, knitting with a stoic resolve that anchored the room. Yesterday, I watched her through the glass. She spent forty minutes pacing a tight circle on the sidewalk, her knuckles white around her smartphone. She was not 'free' to do as she pleased; she was a hostage to the ping of a notification. When her turn finally arrived, she entered the clinic not with the weary resignation of a patient, but with the frantic energy of someone who had narrowly escaped a disaster. She apologized profusely for her 'lateness,' despite having been standing three feet from our entrance for nearly an hour. The digital system had convinced her that she was failing a test she didn't fully understand.\n\nThis shift creates a profound disconnect between the institution and the individual. We have optimized for the convenience of the facility while externalizing the stress onto the vulnerable. Elias argues that autonomy is a virtue, that giving patients the ability to leave the building empowers them. But is it autonomy if the price of freedom is constant, low-level panic? The lobby is quiet, yes, but it is the quiet of a vacuum. We have traded the visible frustration of a crowded room for the invisible, corrosive anxiety of a population tethered to a server. The patients are no longer participants in a shared experience of healing; they are isolated nodes in a network, perpetually waiting for a signal that validates their existence in our queue.\n\nAs I close the clinic doors this evening, the street is empty, but the digital dashboard remains populated with names that will likely linger in the ether until the server resets at midnight. There is a haunting quality to these ghost-names, a reminder that our progress has created a new kind of displacement. We have solved the problem of the crowded waiting room, but we have failed to address the human need for stability. The clinic is efficient, the lobby is pristine, and the patients are scattered across the city, vibrating with a phantom impatience that no algorithm can soothe. We have not reduced the wait; we have simply hidden it from view, leaving our patients to carry the weight of their own uncertainty in the cold air outside our walls.",
+    "wordCount": 677,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "lethargy",
+        "lemma": "lethargy",
+        "glosses": {
+          "es": "a lack of energy and enthusiasm",
+          "en": "a lack of energy and enthusiasm"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "metamorphosis",
+        "lemma": "metamorphosis",
+        "glosses": {
+          "es": "a change of the form or nature of a thing",
+          "en": "a change of the form or nature of a thing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "talisman",
+        "lemma": "talisman",
+        "glosses": {
+          "es": "an object thought to have magic powers",
+          "en": "an object thought to have magic powers"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "corrosive",
+        "lemma": "corrosive",
+        "glosses": {
+          "es": "harmful or destructive in a gradual way",
+          "en": "harmful or destructive in a gradual way"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ether",
+        "lemma": "ether",
+        "glosses": {
+          "es": "the clear sky or the upper regions of air",
+          "en": "the clear sky or the upper regions of air"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "phantom",
+        "lemma": "phantom",
+        "glosses": {
+          "es": "a figment of the imagination or an illusion",
+          "en": "a figment of the imagination or an illusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 18.3,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central argument regarding the new digital queue?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It hides patient anxiety."
+        },
+        {
+          "id": "a2",
+          "text": "It significantly enhances clinical operational throughput."
+        },
+        {
+          "id": "a3",
+          "text": "It provides a comprehensive solution for medical staff shortages."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The efficiency is an illusion, a sleight of hand that prioritizes the aesthetics of an empty room over the mental tranquility of the patient.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How do patients interact with the clinic now?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They call."
+        },
+        {
+          "id": "a2",
+          "text": "They use mobile phones."
+        },
+        {
+          "id": "a3",
+          "text": "They are tracked via GPS sensors installed in the clinic walls."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Patients now receive notifications on their mobile devices, allowing them to wander the surrounding streets",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does the narrator believe Mrs. Gable is anxious?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She dislikes digital tools."
+        },
+        {
+          "id": "a2",
+          "text": "She is in physical pain."
+        },
+        {
+          "id": "a3",
+          "text": "She fears missing her turn."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "she was a hostage to the ping of a notification.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the narrator's intention in describing the empty lobby?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To critique the illusion."
+        },
+        {
+          "id": "a2",
+          "text": "To highlight the architectural benefits of modern design."
+        },
+        {
+          "id": "a3",
+          "text": "To illustrate the logistical advantages of the scheduling system."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The lobby is quiet, yes, but it is the quiet of a vacuum.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Jovial."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholic."
+        },
+        {
+          "id": "a3",
+          "text": "Analytical and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "There is a haunting quality to these ghost-names, a reminder that our progress has created a new kind of displacement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'tethered' imply in the first paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Freed or released."
+        },
+        {
+          "id": "a2",
+          "text": "Confused or lost."
+        },
+        {
+          "id": "a3",
+          "text": "Connected or bound."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "tethered to the physical space by the sheer necessity of their presence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response arguing whether digital efficiency in public services constitutes true progress or merely a transfer of labor to the user.",
+      "en": "Write a 200-word response arguing whether digital efficiency in public services constitutes true progress or merely a transfer of labor to the user."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the text to understand how technological efficiency shifts the burden of anxiety from the clinic's interior to the external world.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Algorithm of Anticipation | C1 Reading | WeLearn",
+      "en": "The Algorithm of Anticipation | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A reflection on the psychological impact of digital queuing systems within a clinical environment.",
+      "en": "A reflection on the psychological impact of digital queuing systems within a clinical environment."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

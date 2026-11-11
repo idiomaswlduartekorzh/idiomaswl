@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-water-meter",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Arithmetic of Accountability",
+      "en": "The Arithmetic of Accountability"
+    },
+    "intro": {
+      "es": "An exploration of how a simple numerical discrepancy in a municipal water bill catalyzed a profound shift in moral responsibility for a local homeowner.",
+      "en": "An exploration of how a simple numerical discrepancy in a municipal water bill catalyzed a profound shift in moral responsibility for a local homeowner."
+    },
+    "mission": {
+      "es": "Analyze the text to identify the tension between technical precision and ethical obligation in the context of resource management.",
+      "en": "Analyze the text to identify the tension between technical precision and ethical obligation in the context of resource management."
+    },
+    "targetText": "When Elias Thorne received his quarterly utility statement, the figure staring back from the parchment was not merely a debt to be settled; it was a discordant note in the symphony of his domestic life. The municipal water board had registered a consumption volume that defied the physical constraints of his modest Victorian residence. Elias, a man who measured his existence in the steady, rhythmic ticking of analog clocks, felt an immediate, visceral repulsion toward the digit. It was an anomaly that demanded reconciliation. He spent the better part of a Tuesday evening tracing the serpentine path of copper piping through his basement, his flashlight cutting through the gloom like a scalpel. He was searching for the culprit—a weeping joint or a porous seal—but found only the dry, dusty silence of a house that seemed to be holding its breath. The water meter, however, continued its rhythmic, agonizing spin, a mechanical heartbeat that suggested a life force bleeding out into the unseen earth.\n\nBy Wednesday morning, the silence of the house had transformed into an accusatory presence. Elias’s neighbor, Clara Vance, a retired hydro-engineer with a penchant for unsolicited observations, leaned over the picket fence, her eyes tracking the damp patch forming near the foundation. She noted, with a clinical detachment that Elias found grating, that the soil saturation did not align with the recent drought conditions. Her assessment was a catalyst. It forced Elias to confront the reality that the leak was not a structural failure of his home, but a failure of his stewardship. The water was not simply escaping; it was being squandered. The realization shifted the narrative from one of plumbing maintenance to one of moral culpability. He was no longer a victim of a faulty pipe; he was the primary agent in a quiet, environmental erosion.\n\nHe began the excavation with a frantic, almost penitential energy. As he dug, the earth yielded not just mud and stone, but the history of his own negligence. He unearthed a fractured ceramic main, a relic of a previous era that had long since surrendered to the pressure of the shifting soil. Each shovelful of dirt felt like an act of atonement. Yet, as he uncovered the source, he found himself caught in a complex web of competing interpretations. Was he responsible for the decay of infrastructure he had never seen? Or was the municipality, in its reliance on archaic conduits, the true architect of this waste? The tension between his personal duty to conserve and the systemic failure of the city’s aging network remained unresolved. He was a man digging a hole, trying to fill the void left by a system that prioritized maintenance over prevention.\n\nClara watched from her porch, her expression unreadable. She understood that Elias was not just repairing a pipe; he was attempting to reconcile the abstract concept of conservation with the concrete reality of a broken object. The water, now bubbling up from the earth, represented a loss that could not be calculated by a utility company. It was a loss of trust in the stability of his own environment. Elias looked at the gushing water, his hands covered in the slick, dark soil of his garden, and realized that the number on the bill was the only language the system understood. It was a blunt, unfeeling metric that failed to capture the weight of the labor he had invested or the depth of the guilt he felt as the water continued to drain away.\n\nAs the sun began to dip below the horizon, casting long, fractured shadows across the lawn, Elias finally managed to stem the flow. The silence returned, but it was no longer the silence of a house holding its breath; it was the heavy, exhausted quiet of a man who had confronted his own limitations. He had fixed the leak, yet the numerical discrepancy remained, a ghost in the machine of the utility board’s ledger. He sat on the damp grass, watching the last of the water seep into the thirsty ground. He had saved the resource, but he had lost the illusion of control. The water was gone, the bill was paid, and the structural integrity of his life remained as porous as the earth he had just disturbed. He realized then that conservation was not a destination, but a perpetual, unfinished labor, a constant struggle against the inevitable decay of all things built by human hands.\n\nYet, this triumph over the physical breach offered little solace against the encroaching bureaucracy. Even as the meter ceased its frantic rotation, Elias understood that his singular act of repair was a futile gesture against the city’s systemic indifference. The ledger would remain indifferent to his sweat, recording only the past consumption that he could never truly erase. He stood amidst the churned mud, recognizing that his personal integrity was merely a drop in an ocean of institutional neglect. In the end, the system demanded not his stewardship, but his continued, silent compliance with its own inherent inefficiency.",
+    "wordCount": 837,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "discordant",
+        "lemma": "discordant",
+        "glosses": {
+          "es": "clashing or lacking harmony",
+          "en": "clashing or lacking harmony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "visceral",
+        "lemma": "visceral",
+        "glosses": {
+          "es": "relating to deep inward feelings rather than intellect",
+          "en": "relating to deep inward feelings rather than intellect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "culpability",
+        "lemma": "culpability",
+        "glosses": {
+          "es": "responsibility for a fault or wrong",
+          "en": "responsibility for a fault or wrong"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "penitential",
+        "lemma": "penitential",
+        "glosses": {
+          "es": "showing sorrow and desire for atonement",
+          "en": "showing sorrow and desire for atonement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conduits",
+        "lemma": "conduits",
+        "glosses": {
+          "es": "channels or pipes for conveying fluids",
+          "en": "channels or pipes for conveying fluids"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "porous",
+        "lemma": "porous",
+        "glosses": {
+          "es": "having minute spaces or holes through which liquid may pass",
+          "en": "having minute spaces or holes through which liquid may pass"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19.9,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central theme of the passage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle between individual ethics and infrastructure."
+        },
+        {
+          "id": "a2",
+          "text": "The logistical challenges of modernizing urban pipe networks."
+        },
+        {
+          "id": "a3",
+          "text": "A comprehensive analysis regarding municipal water waste policies."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension between his personal duty to conserve and the systemic failure of the city’s aging network remained unresolved.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What was the actual cause of the water loss?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A corroded valve."
+        },
+        {
+          "id": "a2",
+          "text": "A fractured ceramic main."
+        },
+        {
+          "id": "a3",
+          "text": "A faulty pipe joint in the main line."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He unearthed a fractured ceramic main, a relic of a previous era that had long since surrendered to the pressure of the shifting soil.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does Elias feel guilt despite fixing the pipe?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He knows the bill will still be high."
+        },
+        {
+          "id": "a2",
+          "text": "He failed to satisfy Clara's expectations."
+        },
+        {
+          "id": "a3",
+          "text": "He realizes his stewardship was insufficient."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It forced Elias to confront the reality that the leak was not a structural failure of his home, but a failure of his stewardship.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary goal in describing the excavation process?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the physical labor of atonement."
+        },
+        {
+          "id": "a2",
+          "text": "To detail the methods of residential plumbing repair."
+        },
+        {
+          "id": "a3",
+          "text": "To show how Elias tried to avoid the municipal water board."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Each shovelful of dirt felt like an act of atonement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would one characterize the tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Joyful."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholy and reflective."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressive and highly critical."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He sat on the damp grass, watching the last of the water seep into the thirsty ground. He had saved the resource, but he had lost the illusion of control.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the phrase 'discordant note in the symphony of his domestic life', what does 'discordant' imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A musical composition."
+        },
+        {
+          "id": "a2",
+          "text": "A silent domestic life."
+        },
+        {
+          "id": "a3",
+          "text": "A jarring inconsistency."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The municipal water board had registered a consumption volume that defied the physical constraints of his modest Victorian residence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a reflective essay discussing how modern digital metrics—such as utility usage data or fitness tracking—influence our sense of personal identity and moral accountability.",
+      "en": "Write a reflective essay discussing how modern digital metrics—such as utility usage data or fitness tracking—influence our sense of personal identity and moral accountability."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the text to identify the tension between technical precision and ethical obligation in the context of resource management.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Arithmetic of Accountability | C2 Reading | WeLearn",
+      "en": "The Arithmetic of Accountability | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of how a simple numerical discrepancy in a municipal water bill catalyzed a profound shift in moral responsibility for a local homeowner.",
+      "en": "An exploration of how a simple numerical discrepancy in a municipal water bill catalyzed a profound shift in moral responsibility for a local homeowner."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

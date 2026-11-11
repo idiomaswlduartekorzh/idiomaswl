@@ -297,6 +297,7 @@ import advancedPilot21 from '@/data/reading/exercises/pt-c2-uma-fila-mais-justa.
 import advancedPilot22 from '@/data/reading/exercises/ru-b2-biblioteka-veshchey.json'
 import advancedPilot23 from '@/data/reading/exercises/ru-c1-dve-tablichki.json'
 import advancedPilot24 from '@/data/reading/exercises/ru-c2-ochered-spravedlivee.json'
+import { ADVANCED_SCALE_EXERCISES } from '@/data/reading/advanced-scale-catalog'
 import { validateReadingExercise } from './validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
@@ -325,6 +326,7 @@ const RAW_EXERCISES: unknown[] = [
   advancedPilot22,
   advancedPilot23,
   advancedPilot24,
+  ...ADVANCED_SCALE_EXERCISES,
   cafeMorning,
   libraryMessage,
   saturdayBus,

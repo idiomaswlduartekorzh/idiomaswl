@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Myth of the Solitary Fixer: A Review of the 'Heirloom Collective' Workshop",
+      "en": "The Myth of the Solitary Fixer: A Review of the 'Heirloom Collective' Workshop"
+    },
+    "intro": {
+      "es": "An analytical review of a community repair event, exploring the tension between the romanticized ideal of self-reliance and the hidden labor that sustains it.",
+      "en": "An analytical review of a community repair event, exploring the tension between the romanticized ideal of self-reliance and the hidden labor that sustains it."
+    },
+    "mission": {
+      "es": "To analyze the rhetorical framing of repair culture and identify the underlying dependency structures within community-based DIY initiatives.",
+      "en": "To analyze the rhetorical framing of repair culture and identify the underlying dependency structures within community-based DIY initiatives."
+    },
+    "targetText": "The invitation to the Heirloom Collective’s 'Resurrection Evening' promised a reclamation of autonomy. Billed as a radical departure from the disposable economy, the workshop invited participants to bring their broken domestic artifacts—a grandfather clock, a tarnished silver teapot, a recalcitrant sewing machine—to be restored under the tutelage of master artisans. The rhetoric was intoxicating: by mastering the mechanics of our own possessions, we were told, we could sever our tether to the global supply chain. For the attendees, many of whom were professionals seeking a tactile respite from their digital labor, the event was framed as an exercise in sovereignty. Yet, as I navigated the crowded, dimly lit basement of the community hall, a different reality began to crystallize. The workshop was not a monument to self-reliance, but a theater of invisible dependency. The 'master artisans' were not merely teaching; they were performing a complex choreography of labor that remained largely unacknowledged by the participants, who were busy documenting their 'DIY' journey on their smartphones.\n\nElias, a retired horologist with hands that moved with the precision of a surgeon, spent nearly two hours hunched over a brass gear assembly brought in by a young architect named Julian. While Julian stood by, nodding sagely at the terminology Elias employed, the actual restoration was entirely the product of the old man’s decades of tacit knowledge and his own stash of scavenged, vintage parts. When the clock finally chimed, Julian’s triumphant declaration—'I fixed it'—was met with a polite, weary smile from Elias. The architecture of the event necessitated this erasure; the narrative of the 'empowered fixer' required the master to recede into the background, rendering his labor a mere utility for the participant’s personal growth. It was a transactional masquerade, where the satisfaction of the amateur was bought at the cost of the expert's visibility.\n\nThis dynamic reached a point of friction when Sarah, the event’s lead organizer, attempted to implement a mandatory 'peer-teaching' segment. She urged those who had completed their repairs to assist others, ostensibly to foster a horizontal community of knowledge. However, this directive ignored the profound asymmetry of skill present in the room. A participant who had successfully tightened a loose screw on a toaster was suddenly expected to instruct another on the delicate calibration of a vacuum-tube amplifier. The result was a chaotic diffusion of misinformation, leading to a near-catastrophic short circuit in a vintage radio. The conflict was not merely logistical; it was ideological. Sarah’s insistence on a flat hierarchy of expertise was a rhetorical flourish that masked the reality that repair is, by nature, a deeply hierarchical and exclusionary practice, requiring years of apprenticeship that cannot be replicated in a three-hour workshop.\n\nAs the evening drew to a close, the aftermath became apparent. The floor was littered with discarded packaging, broken components, and the debris of failed attempts, all of which were quietly gathered by a small, unpaid crew of volunteers—the 'Shadow Staff'—who had not been part of the official workshop curriculum. These individuals, mostly older women who had spent the evening organizing tools and cleaning spills, were the true architects of the event’s success. Their labor was the prerequisite for the 'sovereignty' the participants felt they had achieved. Without the invisible scaffolding of this domestic maintenance, the workshop would have been nothing more than a room of frustrated people surrounded by piles of scrap metal. The participants left with their restored heirlooms and a bolstered sense of self-sufficiency, blissfully unaware that their autonomy was entirely contingent upon the uncompensated, unseen work of others.\n\nThe final irony was the closing statement issued by Sarah, who lauded the evening as a triumph of 'decentralized repair.' She spoke of a future where we no longer rely on corporations, yet she failed to acknowledge that the event itself relied on a highly centralized, albeit informal, structure of care work. The tension remains unresolved. We crave the narrative of the solitary fixer, the rugged individual who stands outside the system, but we are terrified of the reality: that repair is a social, relational, and often burdensome endeavor. Until we are willing to acknowledge the labor that makes our independence possible, our workshops will remain not sites of liberation, but elaborate stages for the performance of a comfortable, curated, and ultimately hollow self-reliance.\n\nFurthermore, this performative independence inadvertently reinforces the very consumerist cycle it claims to dismantle. By fetishizing the aesthetic of the 'restored object' while ignoring the systemic reliance on hidden labor, participants merely shift their dependence from modern corporations to a localized, precarious underclass. This commodification of the repair process transforms a vital communal duty into a fleeting lifestyle accessory, stripping the act of its radical potential. True sustainability requires a dismantling of the hierarchy that devalues maintenance work, yet the Heirloom Collective’s model suggests we are far more comfortable with the illusion of self-sufficiency than the messy, egalitarian reality of collective interdependence. Ultimately, as long as we prioritize the ego of the individual artisan over the invisible hands sustaining our world, we remain trapped.",
+    "wordCount": 836,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "recalcitrant",
+        "lemma": "recalcitrant",
+        "glosses": {
+          "es": "stubbornly resistant to authority or control",
+          "en": "stubbornly resistant to authority or control"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tacit",
+        "lemma": "tacit",
+        "glosses": {
+          "es": "understood or implied without being stated",
+          "en": "understood or implied without being stated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asymmetry",
+        "lemma": "asymmetry",
+        "glosses": {
+          "es": "lack of equality or equivalence",
+          "en": "lack of equality or equivalence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "flourish",
+        "lemma": "flourish",
+        "glosses": {
+          "es": "a bold or extravagant gesture",
+          "en": "a bold or extravagant gesture"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contingent",
+        "lemma": "contingent",
+        "glosses": {
+          "es": "subject to chance or dependent on something else",
+          "en": "subject to chance or dependent on something else"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decentralized",
+        "lemma": "decentralized",
+        "glosses": {
+          "es": "distributed away from a central authority",
+          "en": "distributed away from a central authority"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.9,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:59:41.007Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument the author makes regarding the 'Heirloom Collective' workshop?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It relies on hidden labor to maintain a myth of independence."
+        },
+        {
+          "id": "a2",
+          "text": "It fosters an environment where participants effectively achieve total self-sufficiency through collaborative learning techniques."
+        },
+        {
+          "id": "a3",
+          "text": "It demonstrates a structural failure to provide adequate resources for participants attempting to master complex mechanical repairs."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The workshop was not a monument to self-reliance, but a theater of invisible dependency.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What specific incident highlights the problematic nature of the 'peer-teaching' segment?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The radio."
+        },
+        {
+          "id": "a2",
+          "text": "The short circuit in a radio."
+        },
+        {
+          "id": "a3",
+          "text": "The disorganized instruction provided by the lead facilitator during the afternoon session."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The result was a chaotic diffusion of misinformation, leading to a near-catastrophic short circuit in a vintage radio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does the author refer to the participants as 'blissfully unaware'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They are intentionally ignoring the volunteers to maintain their sense of superiority."
+        },
+        {
+          "id": "a2",
+          "text": "They are not intelligent enough to understand how their repairs were completed."
+        },
+        {
+          "id": "a3",
+          "text": "They are too focused on their own sense of accomplishment to notice the labor supporting them."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The participants left with their restored heirlooms and a bolstered sense of self-sufficiency, blissfully unaware that their autonomy was entirely contingent upon the uncompensated, unseen work of others.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in highlighting the role of the 'Shadow Staff'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To contrast the participants' perceived autonomy with the reality of their dependency."
+        },
+        {
+          "id": "a2",
+          "text": "To highlight the logistical challenges of managing a large group of amateur participants in a workshop setting."
+        },
+        {
+          "id": "a3",
+          "text": "To critique the specific organizational methods used by the event coordinators when managing the tool distribution process."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "These individuals, mostly older women who had spent the evening organizing tools and cleaning spills, were the true architects of the event’s success.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the author's tone toward the workshop's rhetoric?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Admiring and hopeful."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical and critical."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The rhetoric was intoxicating: by mastering the mechanics of our own possessions, we were told, we could sever our tether to the global supply chain.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'recalcitrant' imply about the sewing machine?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It was old."
+        },
+        {
+          "id": "a2",
+          "text": "It was lost."
+        },
+        {
+          "id": "a3",
+          "text": "It was difficult to operate or repair."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a recalcitrant sewing machine—to be restored under the tutelage of master artisans.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word response evaluating whether the author's critique of 'invisible labor' could be applied to modern digital 'DIY' platforms, such as online coding tutorials or open-source software communities.",
+      "en": "Write a 300-word response evaluating whether the author's critique of 'invisible labor' could be applied to modern digital 'DIY' platforms, such as online coding tutorials or open-source software communities."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "To analyze the rhetorical framing of repair culture and identify the underlying dependency structures within community-based DIY initiatives.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:59:41.007Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Myth of the Solitary Fixer: A Review of the 'Heirloom Collective' Workshop | C2 Reading | WeLearn",
+      "en": "The Myth of the Solitary Fixer: A Review of the 'Heirloom Collective' Workshop | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An analytical review of a community repair event, exploring the tension between the romanticized ideal of self-reliance and the hidden labor that sustains it.",
+      "en": "An analytical review of a community repair event, exploring the tension between the romanticized ideal of self-reliance and the hidden labor that sustains it."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:59:41.007Z"
+  }
+}

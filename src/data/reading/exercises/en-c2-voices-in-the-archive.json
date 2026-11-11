@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Ossuary of Echoes",
+      "en": "The Ossuary of Echoes"
+    },
+    "intro": {
+      "es": "Dr. Aris Thorne, a curator at the Aural Repository, faces an ethical dilemma when tasked with digitizing the final, contradictory oral testimonies of a reclusive poet whose work defined a generation.",
+      "en": "Dr. Aris Thorne, a curator at the Aural Repository, faces an ethical dilemma when tasked with digitizing the final, contradictory oral testimonies of a reclusive poet whose work defined a generation."
+    },
+    "mission": {
+      "es": "Analyze the tension between archival preservation and the agency of the subject, evaluating how the act of curation inevitably alters the essence of a living memory.",
+      "en": "Analyze the tension between archival preservation and the agency of the subject, evaluating how the act of curation inevitably alters the essence of a living memory."
+    },
+    "targetText": "The Aural Repository occupied a subterranean vault beneath the city, a place where sound went to be calcified. Dr. Aris Thorne adjusted his spectacles, staring at the reel-to-reel machine that hummed with a low, rhythmic vibration. Before him lay the final recordings of Elias Vane, the poet whose verses had once ignited riots and hushed lecture halls alike. Vane had been a man of mercurial temperament, his voice a jagged landscape of gravel and silk. Now, that voice was trapped on magnetic tape, a relic waiting for the final indignity of digitization. Aris felt the familiar weight of his profession: the curator’s paradox. To preserve a voice, one had to strip it of its temporal context, fixing it in a static form that the speaker could no longer influence or contest. He considered the irony of his task; he was essentially embalming a ghost, turning a fluid, breathing history into a series of immutable digital files.\n\nThe conflict had begun weeks prior, when Vane’s estate demanded the release of the 'Unfiltered Sessions.' These recordings were not the polished, rhythmic recitations the public revered, but a chaotic, rambling series of late-night monologues where Vane dismantled his own mythos. In one segment, he mocked the very metaphors that had made him famous, calling them the 'crutches of the unimaginative.' Aris knew that releasing these tapes would irrevocably alter the public perception of Vane’s legacy. The estate, however, saw only the market value of the controversy. They wanted the raw, the unvarnished, and the scandalous. Aris, conversely, felt a protective instinct toward the man who had entrusted him with the physical reels. He wondered if Vane, in his final, delirious state, had truly intended for these private exorcisms to become public property. By fixing these words in a permanent, searchable format, Aris was effectively stripping Vane of his final right: the right to be forgotten, or at least, the right to remain misunderstood.\n\nAs the evening shadows lengthened in the vault, Aris examined the metadata tags he had prepared. He had been instructed to categorize the recordings by theme, a process that felt like dissecting a butterfly to understand its flight. He paused at a file labeled 'The Silence of the Muse.' In it, Vane spoke of the terror of being understood, of how the act of interpretation was a form of violence against the creator. Aris looked at the console, his hand hovering over the 'Publish' button. If he released the files, he would be fulfilling his duty to the archive, ensuring that the historical record was complete. Yet, he would also be complicit in the betrayal of Vane’s desire for opacity. The archival impulse, he realized, was inherently predatory. It sought to consume, categorize, and control the past, leaving no room for the ambiguity that allowed a human life to retain its dignity.\n\nHe thought of the patrons who would eventually access these files. They would listen with the clinical detachment of scholars or the voyeuristic hunger of fans. They would never hear the hesitation in Vane’s breath or the way his voice faltered when he spoke of his failures. They would only hear the data, the extracted content, the curated truth. Aris considered the possibility of corrupting the files, of introducing a subtle degradation that would render the most intimate parts of the recording unintelligible. It would be a small act of rebellion, a way to maintain the barrier between the public and the private. But such an act would be a professional suicide, a violation of the very ethics that defined his existence. He was a creature of the archive, bound by the mandate to protect the record, even when the record itself was a weapon pointed at its creator.\n\nThe final hour arrived. The server light blinked a steady, rhythmic green, awaiting the command to broadcast the collection to the world. Aris felt a strange, hollow sensation in his chest. He realized that the archive was not a sanctuary, but a tomb. By making Vane’s voice accessible, he was ensuring that the poet would never truly be silent, but he was also ensuring that the poet would never again be free. With a heavy hand, he initiated the transfer. The progress bar crawled across the screen, a digital countdown to the end of a mystery. As the last file uploaded, the vault fell into an absolute, suffocating silence. Aris sat in the dark, listening to the echo of his own breathing, knowing that he had successfully preserved the ghost, and in doing so, had finally finished killing the man.\n\nYet, the aftermath proved far more complex than Aris had anticipated. Almost immediately, the public reacted not with the expected fervor, but with a profound, collective indifference. Stripped of their mystery and contextualized within the rigid framework of the archive, Vane’s once-incendiary confessions became mere academic curiosities, easily dismissed by a distracted audience. By forcing the poet into the light of total transparency, Aris had inadvertently neutralized his power, proving that absolute clarity is often the ultimate erasure.",
+    "wordCount": 839,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "calcified",
+        "lemma": "calcified",
+        "glosses": {
+          "es": "hardened or made rigid and unchanging",
+          "en": "hardened or made rigid and unchanging"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mercurial",
+        "lemma": "mercurial",
+        "glosses": {
+          "es": "subject to sudden or unpredictable changes of mood",
+          "en": "subject to sudden or unpredictable changes of mood"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unvarnished",
+        "lemma": "unvarnished",
+        "glosses": {
+          "es": "plain and straightforward; without embellishment",
+          "en": "plain and straightforward; without embellishment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "opacity",
+        "lemma": "opacity",
+        "glosses": {
+          "es": "the quality of being difficult to understand or explain",
+          "en": "the quality of being difficult to understand or explain"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "predatory",
+        "lemma": "predatory",
+        "glosses": {
+          "es": "seeking to exploit or thrive at the expense of others",
+          "en": "seeking to exploit or thrive at the expense of others"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mandate",
+        "lemma": "mandate",
+        "glosses": {
+          "es": "an official order or commission to do something",
+          "en": "an official order or commission to do something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict Aris Thorne faces regarding the archival process?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle between archival duty and the ethical preservation of the subject's intended privacy."
+        },
+        {
+          "id": "a2",
+          "text": "The technical challenges associated with converting legacy magnetic tape formats into modern digital storage."
+        },
+        {
+          "id": "a3",
+          "text": "The intense pressure exerted by the poet's estate to maximize the financial profitability of the collection."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "he was essentially embalming a ghost, turning a fluid, breathing history into a series of immutable digital files.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does the estate want the 'Unfiltered Sessions' released?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To fulfill the poet's dying request."
+        },
+        {
+          "id": "a2",
+          "text": "To capitalize on the controversial content."
+        },
+        {
+          "id": "a3",
+          "text": "To exploit the sensational nature of the recordings for financial gain."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The estate, however, saw only the market value of the controversy.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Aris view the act of categorization?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a necessary step to ensure the poet's legacy remains intact."
+        },
+        {
+          "id": "a2",
+          "text": "As a way to make the poet's complex work more accessible to the public."
+        },
+        {
+          "id": "a3",
+          "text": "As a destructive process that compromises the integrity of the subject."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He had been instructed to categorize the recordings by theme, a process that felt like dissecting a butterfly to understand its flight.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary goal in describing the 'server light' in the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To emphasize the cold, mechanical nature of the finality Aris is enforcing."
+        },
+        {
+          "id": "a2",
+          "text": "To signify the successful completion of the complex digitization process for the entire archive."
+        },
+        {
+          "id": "a3",
+          "text": "To illustrate the stark visual contrast between the dim, confined vault and the intense digital signal."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The server light blinked a steady, rhythmic green, awaiting the command to broadcast the collection to the world.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which adjective best describes the tone of the narrative's conclusion?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Hopeful."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholic and resigned."
+        },
+        {
+          "id": "a3",
+          "text": "Cold and clinically analytical."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Aris sat in the dark, listening to the echo of his own breathing, knowing that he had successfully preserved the ghost, and in doing so, had finally finished killing the man.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'opacity' imply regarding Vane's desires?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "His poor speech."
+        },
+        {
+          "id": "a2",
+          "text": "His hidden sins."
+        },
+        {
+          "id": "a3",
+          "text": "His desire to remain mysterious and unexamined."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Yet, he would also be complicit in the betrayal of Vane’s desire for opacity.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short essay (300 words) discussing whether an archivist has a moral obligation to protect the privacy of a deceased creator, even when that privacy conflicts with the historical mandate to preserve a complete record.",
+      "en": "Write a short essay (300 words) discussing whether an archivist has a moral obligation to protect the privacy of a deceased creator, even when that privacy conflicts with the historical mandate to preserve a complete record."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the tension between archival preservation and the agency of the subject, evaluating how the act of curation inevitably alters the essence of a living memory.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Ossuary of Echoes | C2 Reading | WeLearn",
+      "en": "The Ossuary of Echoes | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dr. Aris Thorne, a curator at the Aural Repository, faces an ethical dilemma when tasked with digitizing the final, contradictory oral testimonies of a reclusive poet whose work defined a generation.",
+      "en": "Dr. Aris Thorne, a curator at the Aural Repository, faces an ethical dilemma when tasked with digitizing the final, contradictory oral testimonies of a reclusive poet whose work defined a generation."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

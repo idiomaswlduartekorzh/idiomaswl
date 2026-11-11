@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-last-bus",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Crepúsculo do Ônibus 402",
+      "en": "O Crepúsculo do Ônibus 402"
+    },
+    "intro": {
+      "es": "Uma análise sobre a transição do transporte público na pequena cidade de Vila Serena.",
+      "en": "Uma análise sobre a transição do transporte público na pequena cidade de Vila Serena."
+    },
+    "mission": {
+      "es": "Leia o texto atentamente e responda às questões de compreensão para avaliar sua capacidade de interpretação de textos jornalísticos em nível B2.",
+      "en": "Leia o texto atentamente e responda às questões de compreensão para avaliar sua capacidade de interpretação de textos jornalísticos em nível B2."
+    },
+    "targetText": "Em Vila Serena, o anúncio da substituição da última linha noturna do ônibus 402 por um sistema de vans sob demanda gerou um debate acalorado entre os habitantes. Por décadas, o veículo de grande porte percorria a rota circular às vinte e duas horas, servindo como a espinha dorsal do retorno para casa de trabalhadores do setor de serviços e estudantes noturnos. A prefeitura, sob a justificativa de otimização de custos e baixa ocupação, implementou a mudança na última segunda-feira, substituindo o itinerário fixo por um aplicativo de transporte compartilhado gerido pela municipalidade.\n\nPara os jovens trabalhadores, a mudança foi recebida com um otimismo cauteloso. Lucas, um garçom que encerra seu turno tarde da noite, elogia a flexibilidade do novo sistema. Ele destaca que, anteriormente, precisava caminhar três quilômetros do ponto final até sua residência, enquanto agora a van o deixa exatamente na porta de sua casa. Para ele, a modernização é um passo necessário para a eficiência urbana, permitindo que o transporte se adapte à vida contemporânea, onde os horários de trabalho são cada vez mais fragmentados e imprevisíveis.\n\nEm contrapartida, os residentes mais velhos de Vila Serena manifestam uma profunda desconfiança. Dona Helena, uma aposentada que frequentava o centro cultural às terças-feiras, sente-se isolada pelo novo modelo. Ela argumenta que a dependência de um aplicativo de celular exclui aqueles que não possuem familiaridade com dispositivos digitais ou planos de dados constantes. Para a comunidade idosa, o ônibus não era apenas um meio de transporte, mas um espaço de socialização previsível, onde o motorista conhecia cada passageiro pelo nome e oferecia assistência no embarque.\n\nO conflito atingiu seu ápice na reunião da câmara municipal, onde o secretário de transportes enfrentou críticas severas. O embate revelou uma tensão clara: a eficiência técnica versus a coesão social. Enquanto a prefeitura apresenta dados de redução de gastos operacionais, os moradores apontam a perda da autonomia dos cidadãos mais vulneráveis. A concessão feita pelos gestores — a criação de uma linha telefônica para agendamentos — não foi suficiente para apaziguar os ânimos, pois o tempo de espera para a van, em dias de chuva, mostrou-se superior ao antigo trajeto fixo.\n\nO desfecho dessa transição permanece incerto. A cidade agora vive uma dinâmica dividida onde a conveniência tecnológica colide com a tradição comunitária. O sistema de vans, embora resolva a questão da capilaridade geográfica, falha em replicar a segurança emocional que o antigo ônibus proporcionava. Vila Serena encontra-se diante de um dilema moderno: o progresso deve ser medido apenas pela velocidade e economia, ou deveria preservar os laços sociais que sustentam a identidade de uma pequena comunidade? A resposta, por ora, perde-se no silêncio das ruas noturnas que, antes vibrantes com o motor do 402, agora aguardam, isoladas, pela próxima notificação no celular.",
+    "wordCount": 459,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "espinha dorsal",
+        "lemma": "espinha dorsal",
+        "glosses": {
+          "es": "backbone or main support",
+          "en": "backbone or main support"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "otimização",
+        "lemma": "otimização",
+        "glosses": {
+          "es": "optimization",
+          "en": "optimization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fragmentados",
+        "lemma": "fragmentados",
+        "glosses": {
+          "es": "fragmented",
+          "en": "fragmented"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "desconfiança",
+        "lemma": "desconfiança",
+        "glosses": {
+          "es": "distrust",
+          "en": "distrust"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ápice",
+        "lemma": "ápice",
+        "glosses": {
+          "es": "climax or peak",
+          "en": "climax or peak"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "capilaridade",
+        "lemma": "capilaridade",
+        "glosses": {
+          "es": "reach or distribution network",
+          "en": "reach or distribution network"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.9,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:43:22.916Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O debate sobre a mudança no transporte noturno."
+        },
+        {
+          "id": "a2",
+          "text": "A completa falência do sistema de transporte público municipal."
+        },
+        {
+          "id": "a3",
+          "text": "A crescente preferência dos jovens pelo uso de aplicativos de carona."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "o anúncio da substituição da última linha noturna do ônibus 402 por um sistema de vans sob demanda gerou um debate acalorado entre os habitantes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que Lucas prefere o novo sistema?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pelo preço."
+        },
+        {
+          "id": "a2",
+          "text": "Pela conveniência de desembarque."
+        },
+        {
+          "id": "a3",
+          "text": "Por ser um serviço mais eficiente e rápido para todos os passageiros."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "enquanto agora a van o deixa exatamente na porta de sua casa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a exclusão digital representa para os idosos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Acesso."
+        },
+        {
+          "id": "a2",
+          "text": "Medo."
+        },
+        {
+          "id": "a3",
+          "text": "A perda de autonomia."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "os moradores apontam a perda da autonomia dos cidadãos mais vulneráveis.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a intenção do autor ao mencionar a reunião da câmara?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mostrar a tensão entre técnica e coesão social."
+        },
+        {
+          "id": "a2",
+          "text": "Evidenciar a total ineficiência dos representantes políticos locais."
+        },
+        {
+          "id": "a3",
+          "text": "Destacar o conflito geracional entre os moradores mais antigos e novos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O embate revelou uma tensão clara: a eficiência técnica versus a coesão social.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no encerramento do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasmado."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Frio, objetivo e puramente técnico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Vila Serena encontra-se diante de um dilema moderno: o progresso deve ser medido apenas pela velocidade e economia, ou deveria preservar os laços sociais que sustentam a identidade de uma pequena comunidade?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa 'capilaridade' no contexto do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Fluxo."
+        },
+        {
+          "id": "a2",
+          "text": "Rota."
+        },
+        {
+          "id": "a3",
+          "text": "Alcance geográfico."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O sistema de vans, embora resolva a questão da capilaridade geográfica, falha em replicar a segurança emocional que o antigo ônibus proporcionava.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo discutindo se a tecnologia deve ou não substituir serviços tradicionais em comunidades pequenas, considerando os pontos de vista apresentados no texto.",
+      "en": "Escreva um parágrafo argumentativo discutindo se a tecnologia deve ou não substituir serviços tradicionais em comunidades pequenas, considerando os pontos de vista apresentados no texto."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o texto atentamente e responda às questões de compreensão para avaliar sua capacidade de interpretação de textos jornalísticos em nível B2.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:43:22.916Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Crepúsculo do Ônibus 402 | B2 Reading | WeLearn",
+      "en": "O Crepúsculo do Ônibus 402 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise sobre a transição do transporte público na pequena cidade de Vila Serena.",
+      "en": "Uma análise sobre a transição do transporte público na pequena cidade de Vila Serena."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:43:22.916Z"
+  }
+}

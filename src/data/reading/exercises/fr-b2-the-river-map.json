@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-river-map",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'impasse des pixels : quand la technologie fait obstacle à la sécurité",
+      "en": "L'impasse des pixels : quand la technologie fait obstacle à la sécurité"
+    },
+    "intro": {
+      "es": "Une initiative citoyenne à Val-des-Brumes met en lumière les limites de la numérisation des systèmes d'alerte en cas d'inondation, soulevant un débat sur l'accessibilité technologique.",
+      "en": "Une initiative citoyenne à Val-des-Brumes met en lumière les limites de la numérisation des systèmes d'alerte en cas d'inondation, soulevant un débat sur l'accessibilité technologique."
+    },
+    "mission": {
+      "es": "Lisez cet article pour comprendre les enjeux de la fracture numérique dans la gestion des risques naturels.",
+      "en": "Lisez cet article pour comprendre les enjeux de la fracture numérique dans la gestion des risques naturels."
+    },
+    "targetText": "À Val-des-Brumes, la gestion des crues repose sur une carte interactive hébergée sur le portail municipal. Cependant, lors de la dernière montée des eaux, le système a montré ses limites. Marc, un retraité habitant près de la rivière, a tenté de consulter les zones inondables sur son smartphone vieillissant. Sur son écran aux couleurs délavées, les nuances de bleu représentant les niveaux de risque étaient indiscernables. Cette confusion a mené à une évacuation tardive, provoquant une tension palpable entre les résidents et les services techniques de la ville.\n\nFace à ce constat, le collectif « Rives Sûres » a proposé une solution pragmatique : la distribution de cartes imprimées haute résolution chez les commerçants locaux. Selon Sarah, porte-parole du groupe, la technologie ne doit pas devenir un obstacle à la sécurité civile. Elle soutient que le support papier offre une fiabilité constante, indépendamment de la qualité du matériel ou de la connexion internet. Pour elle, le numérique est un complément, non un substitut universel, surtout lorsque l'intégrité physique des citoyens est en jeu lors d'épisodes climatiques imprévisibles.\n\nLa mairie, par la voix de son responsable informatique, reste sceptique. Elle argue que les cartes imprimées deviennent obsolètes dès leur impression, contrairement à la carte numérique mise à jour en temps réel. Le responsable souligne que le coût d'impression et la logistique de distribution représenteraient un budget conséquent pour une efficacité jugée moindre. Il insiste sur le fait que la majorité des foyers possède des terminaux modernes, rendant l'investissement dans le papier superflu et écologiquement discutable.\n\nLe débat s'est intensifié lors du dernier conseil municipal. Les élus ont concédé que l'interface actuelle méritait une refonte ergonomique pour améliorer le contraste des couleurs. Toutefois, ils ont refusé de financer l'édition papier, craignant de créer un précédent coûteux. Cette position a laissé les membres de « Rives Sûres dans une impasse, contraints de financer eux-mêmes une première série d'impressions pour les quartiers les plus vulnérables, marquant une rupture entre la vision administrative et la réalité du terrain.\n\nCette situation illustre une fracture numérique persistante. Si la digitalisation des services publics promet une efficacité accrue, elle occulte parfois les besoins de ceux qui ne suivent pas le rythme de l'innovation technologique. Le problème ne réside pas dans l'outil lui-même, mais dans l'exclusivité de son usage. À Val-des-Brumes, le conflit reste entier : la sécurité doit-elle être conditionnée par la possession d'un équipement moderne, ou les autorités ont-elles le devoir de garantir une accessibilité universelle, quitte à revenir vers des solutions analogiques ancestrales ?",
+    "wordCount": 418,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "indiscernables",
+        "lemma": "indiscernables",
+        "glosses": {
+          "es": "impossible to distinguish",
+          "en": "impossible to distinguish"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "substitut",
+        "lemma": "substitut",
+        "glosses": {
+          "es": "replacement",
+          "en": "replacement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolètes",
+        "lemma": "obsolètes",
+        "glosses": {
+          "es": "outdated",
+          "en": "outdated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conséquent",
+        "lemma": "conséquent",
+        "glosses": {
+          "es": "significant",
+          "en": "significant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock",
+          "en": "deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "analogiques",
+        "lemma": "analogiques",
+        "glosses": {
+          "es": "non-digital",
+          "en": "non-digital"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.9,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit sur l'accès aux cartes de risques."
+        },
+        {
+          "id": "a2",
+          "text": "Le coût des inondations."
+        },
+        {
+          "id": "a3",
+          "text": "La modernisation des outils de gestion municipale."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "le collectif « Rives Sûres » a proposé une solution pragmatique : la distribution de cartes imprimées haute résolution chez les commerçants locaux.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Marc a-t-il eu des difficultés ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Son écran était trop petit."
+        },
+        {
+          "id": "a2",
+          "text": "La carte était illisible sur son téléphone."
+        },
+        {
+          "id": "a3",
+          "text": "Il n'avait pas de connexion internet."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sur son écran aux couleurs délavées, les nuances de bleu représentant les niveaux de risque étaient indiscernables.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position de la mairie ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle veut supprimer les cartes."
+        },
+        {
+          "id": "a2",
+          "text": "Elle soutient le projet du collectif."
+        },
+        {
+          "id": "a3",
+          "text": "Elle privilégie la mise à jour en temps réel."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elle argue que les cartes imprimées deviennent obsolètes dès leur impression, contrairement à la carte numérique mise à jour en temps réel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi l'auteur mentionne-t-il le conseil municipal ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour souligner la divergence entre administration et citoyens."
+        },
+        {
+          "id": "a2",
+          "text": "Pour montrer l'échec de la médiation."
+        },
+        {
+          "id": "a3",
+          "text": "Pour décrire le processus de vote des élus."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette position a laissé les membres de « Rives Sûres dans une impasse, contraints de financer eux-mêmes une première série d'impressions pour les quartiers les plus vulnérables, marquant une rupture entre la vision administrative et la réalité du terrain.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Très polémique et engagé."
+        },
+        {
+          "id": "a2",
+          "text": "Analytique et nuancé."
+        },
+        {
+          "id": "a3",
+          "text": "Purement informatif et neutre."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Si la digitalisation des services publics promet une efficacité accrue, elle occulte parfois les besoins de ceux qui ne suivent pas le rythme de l'innovation technologique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'impasse' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une rue sans issue."
+        },
+        {
+          "id": "a2",
+          "text": "Un problème de budget."
+        },
+        {
+          "id": "a3",
+          "text": "Une situation bloquée."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Cette position a laissé les membres de « Rives Sûres dans une impasse, contraints de financer eux-mêmes une première série d'impressions pour les quartiers les plus vulnérables",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif (100 mots) proposant une solution de compromis entre la mairie et le collectif pour résoudre le problème d'accessibilité à Val-des-Brumes.",
+      "en": "Rédigez un court paragraphe argumentatif (100 mots) proposant une solution de compromis entre la mairie et le collectif pour résoudre le problème d'accessibilité à Val-des-Brumes."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lisez cet article pour comprendre les enjeux de la fracture numérique dans la gestion des risques naturels.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'impasse des pixels : quand la technologie fait obstacle à la sécurité | B2 Reading | WeLearn",
+      "en": "L'impasse des pixels : quand la technologie fait obstacle à la sécurité | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une initiative citoyenne à Val-des-Brumes met en lumière les limites de la numérisation des systèmes d'alerte en cas d'inondation, soulevant un débat sur l'accessibilité technologique.",
+      "en": "Une initiative citoyenne à Val-des-Brumes met en lumière les limites de la numérisation des systèmes d'alerte en cas d'inondation, soulevant un débat sur l'accessibilité technologique."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'ombra del tramonto al Museo Civico",
+      "en": "L'ombra del tramonto al Museo Civico"
+    },
+    "intro": {
+      "es": "Un'analisi critica sull'iniziativa di apertura serale del Museo Civico di Valchiara, esplorando il paradosso tra accessibilità culturale e carenze infrastrutturali.",
+      "en": "Un'analisi critica sull'iniziativa di apertura serale del Museo Civico di Valchiara, esplorando il paradosso tra accessibilità culturale e carenze infrastrutturali."
+    },
+    "mission": {
+      "es": "Valutare la comprensione del testo riguardo alle dinamiche di gestione museale e alle conseguenze sociali di una pianificazione urbana incompleta.",
+      "en": "Valutare la comprensione del testo riguardo alle dinamiche di gestione museale e alle conseguenze sociali di una pianificazione urbana incompleta."
+    },
+    "targetText": "L'iniziativa 'Venerdì sotto le Stelle', lanciata dalla direzione del Museo Civico di Valchiara per incentivare l'affluenza serale, è stata accolta con un entusiasmo quasi unanime. L'idea di offrire l'ingresso gratuito dopo le diciotto mirava a democratizzare l'accesso alle collezioni, permettendo ai lavoratori di godere delle opere senza la fretta degli orari d'ufficio. Per le prime settimane, l'esperimento è sembrato un trionfo: le sale, solitamente silenziose, si sono riempite di giovani professionisti e studenti, trasformando il museo in un vivace centro di aggregazione culturale. Tuttavia, dietro il successo numerico delle presenze, si è presto celata una crepa logistica profonda che minaccia la sostenibilità del progetto.\n\nIl problema risiede nell'incoerenza tra l'orario di chiusura del museo e il sistema di trasporto pubblico locale. L'azienda dei trasporti, ignara o forse indifferente ai nuovi flussi, ha mantenuto invariato il piano corse, con l'ultima navetta che parte dal centro storico alle ventuno e trenta. Poiché il museo chiude i battenti alle ventidue e trenta, si è creata una situazione paradossale: i visitatori si trovano bloccati nel quartiere museale, isolati dal resto della città. Molti, per evitare di restare a piedi, abbandonano le gallerie in anticipo, vanificando di fatto l'estensione dell'orario.\n\nLa direttrice, Elena Valli, ha tentato di minimizzare il disagio, suggerendo ai visitatori di utilizzare soluzioni di mobilità condivisa. Questa posizione, tuttavia, è stata percepita da molti come elitaria. È innegabile che l'iniziativa abbia arricchito la vita culturale cittadina, ma la mancanza di un coordinamento tra le istituzioni ha trasformato un'opportunità di inclusione in un privilegio per chi possiede un mezzo privato. Il museo non è più uno spazio pubblico accessibile a tutti, ma un club esclusivo di chi può permettersi un taxi o possiede un'auto.\n\nIl conflitto è ormai palese durante le serate di punta, quando il personale di sorveglianza deve gestire non solo il flusso dei visitatori, ma anche la frustrazione di chi, giunto al guardaroba, scopre di aver perso l'ultimo collegamento utile. La tensione tra la missione educativa del museo e la realtà urbana è diventata palpabile. La direzione insiste nel voler proseguire, convinta che il prestigio dell'offerta basti a giustificare il disagio, ma la realtà dei fatti suggerisce una frattura insanabile.\n\nIn conclusione, l'esperimento di Valchiara solleva una domanda fondamentale: può un'istituzione culturale operare in isolamento? Senza un impegno concreto da parte dell'amministrazione comunale per potenziare i collegamenti serali, 'Venerdì sotto le Stelle' resterà una bellissima vetrina priva di fondamenta. Il museo ha aperto le porte, ma ha dimenticato di costruire la strada per uscirne. L'entusiasmo iniziale sta lasciando il posto a una crescente disillusione, trasformando un traguardo di civiltà in un monito sulla miopia della pianificazione urbana.",
+    "wordCount": 437,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "democratizzare",
+        "lemma": "democratizzare",
+        "glosses": {
+          "es": "to make accessible to everyone",
+          "en": "to make accessible to everyone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "incoerenza",
+        "lemma": "incoerenza",
+        "glosses": {
+          "es": "lack of consistency",
+          "en": "lack of consistency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vanificando",
+        "lemma": "vanificando",
+        "glosses": {
+          "es": "rendering useless",
+          "en": "rendering useless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "elitaria",
+        "lemma": "elitaria",
+        "glosses": {
+          "es": "exclusive or snobbish",
+          "en": "exclusive or snobbish"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpabile",
+        "lemma": "palpabile",
+        "glosses": {
+          "es": "tangible or obvious",
+          "en": "tangible or obvious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miopia",
+        "lemma": "miopia",
+        "glosses": {
+          "es": "lack of foresight",
+          "en": "lack of foresight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 23,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:59:45.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il fallimento logistico."
+        },
+        {
+          "id": "a2",
+          "text": "Il successo del museo."
+        },
+        {
+          "id": "a3",
+          "text": "La gestione del personale."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la mancanza di un coordinamento tra le istituzioni ha trasformato un'opportunità di inclusione in un privilegio per chi possiede un mezzo privato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché i visitatori lasciano il museo prima della chiusura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per la stanchezza."
+        },
+        {
+          "id": "a2",
+          "text": "Per i trasporti."
+        },
+        {
+          "id": "a3",
+          "text": "Per il costo alto."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Molti, per evitare di restare a piedi, abbandonano le gallerie in anticipo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Come viene percepita la soluzione proposta dalla direttrice?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Come un'idea valida."
+        },
+        {
+          "id": "a2",
+          "text": "Come troppo costosa."
+        },
+        {
+          "id": "a3",
+          "text": "Come poco inclusiva."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Questa posizione, tuttavia, è stata percepita da molti come elitaria.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale dell'autore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticare la pianificazione urbana."
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere il museo civico."
+        },
+        {
+          "id": "a3",
+          "text": "Intervistare Elena Valli."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il museo ha aperto le porte, ma ha dimenticato di costruire la strada per uscirne.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono prevalente nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e gioioso."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e riflessivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e neutro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'entusiasmo iniziale sta lasciando il posto a una crescente disillusione",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'miopia' nel contesto finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Problemi di vista."
+        },
+        {
+          "id": "a2",
+          "text": "Scarsa illuminazione."
+        },
+        {
+          "id": "a3",
+          "text": "Mancanza di visione."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "un monito sulla miopia della pianificazione urbana.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve articolo di opinione (150 parole) in cui proponi una soluzione concreta per risolvere il conflitto tra gli orari del museo e quelli dei trasporti, considerando le esigenze dei visitatori e le limitazioni del budget comunale.",
+      "en": "Scrivi un breve articolo di opinione (150 parole) in cui proponi una soluzione concreta per risolvere il conflitto tra gli orari del museo e quelli dei trasporti, considerando le esigenze dei visitatori e le limitazioni del budget comunale."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Valutare la comprensione del testo riguardo alle dinamiche di gestione museale e alle conseguenze sociali di una pianificazione urbana incompleta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:59:45.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'ombra del tramonto al Museo Civico | B2 Reading | WeLearn",
+      "en": "L'ombra del tramonto al Museo Civico | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sull'iniziativa di apertura serale del Museo Civico di Valchiara, esplorando il paradosso tra accessibilità culturale e carenze infrastrutturali.",
+      "en": "Un'analisi critica sull'iniziativa di apertura serale del Museo Civico di Valchiara, esplorando il paradosso tra accessibilità culturale e carenze infrastrutturali."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:59:45.480Z"
+  }
+}

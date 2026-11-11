@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-quiet-street",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Acoustic Architecture of Silence",
+      "en": "The Acoustic Architecture of Silence"
+    },
+    "intro": {
+      "es": "An investigative look at how urban planning decisions regarding night traffic prioritize the tranquility of affluent districts, effectively displacing noise into marginalized neighborhoods.",
+      "en": "An investigative look at how urban planning decisions regarding night traffic prioritize the tranquility of affluent districts, effectively displacing noise into marginalized neighborhoods."
+    },
+    "mission": {
+      "es": "Analyze the text to understand the sociopolitical implications of urban soundscapes and the narrator's critique of systemic inequality disguised as environmental progress.",
+      "en": "Analyze the text to understand the sociopolitical implications of urban soundscapes and the narrator's critique of systemic inequality disguised as environmental progress."
+    },
+    "targetText": "The municipal council of Oakhaven recently unveiled their 'Harmonious Dusk' initiative, a project ostensibly designed to reclaim the city’s nocturnal atmosphere from the persistent drone of internal combustion. Mayor Julian Thorne stood before the press, gesturing toward heat maps that glowed with the soft, inviting amber of reduced decibel levels in the historic district. The rhetoric was impeccably curated: peace, tranquility, and the restoration of the urban night to its rightful owners. Yet, as I stood on the corner of Elm and Fifth, watching the redirected flow of heavy freight vehicles navigate the narrow, crumbling arteries of the industrial quarter, the dissonance between the Mayor’s narrative and the reality on the ground became impossible to ignore. The silence in the center was not an absence of noise; it was a relocation of it. By shuttering the affluent avenues to heavy transit, the council had effectively transformed the peripheral working-class sectors into acoustic dumping grounds, where the roar of engines now reverberates against the soot-stained brick of tenements that were never designed to withstand such constant, low-frequency pressure.\n\nMy encounter with Elias Thorne, a veteran logistics coordinator for the regional freight hub, provided a chilling insight into the mechanics of this redistribution. Elias, a man whose face was etched with the weariness of decades spent managing the city’s circulatory system, spoke with a weary cynicism about the new routing protocols. He noted that the drivers, pressured by strict delivery windows, were now forced to navigate the tighter, poorly lit corridors of the East End. The 'Harmonious Dusk' policy did not reduce the total volume of traffic; it merely optimized the geography of the disturbance. Elias pointed to a logbook where transit times had spiked, not because of volume, but because the new routes were structurally ill-equipped for the weight of the cargo. The peace enjoyed by the residents of the historic district was, in effect, a luxury good, purchased with the currency of the East End’s sleep. The city was not becoming quieter; it was becoming more stratified, with silence serving as a marker of social capital that could be bought and sold through administrative fiat.\n\nThere is a seductive quality to the language of sustainability that often blinds us to the underlying power dynamics. When we speak of 'noise pollution mitigation,' we are rarely speaking of universal improvement. Instead, we are engaging in a form of urban triage, deciding which neighborhoods are worthy of serenity and which are deemed expendable in the pursuit of a curated aesthetic. The residents of the East End, many of whom work the very night shifts that facilitate the city’s functioning, were never consulted on the placement of these new transit corridors. Their streets, already burdened by the remnants of industrial decline, were simply repurposed as bypasses for the convenience of the affluent. The irony was palpable: the people who keep the city running during the dark hours are now the ones most severely impacted by the logistical demands of their own labor. This is not merely a failure of urban planning; it is an active, calculated displacement of discomfort.\n\nConsider the case of the Miller family, who reside in a ground-floor apartment directly adjacent to the newly designated freight bypass. Sarah Miller, a night-shift nurse, described the vibration of the heavy trucks as a physical assault that rattles the very foundations of her home. Her struggle is not an outlier; it is the inevitable consequence of a policy that prioritizes the comfort of the few over the fundamental well-being of the many. The council’s insistence that these measures are temporary, pending further infrastructure upgrades, feels increasingly hollow. There is no evidence of a long-term plan to mitigate the impact on these secondary corridors. Instead, there is a pervasive sense that the noise is now 'where it belongs,' relegated to the shadows of the city where the voices of protest are less likely to reach the ears of those in power. The silence of the elite is maintained by the cacophony of the ignored, a symbiotic relationship that sustains the illusion of progress while deepening the fractures of inequality.\n\nAs the night deepened, the rumble of a heavy hauler shook the pavement beneath my feet, a stark reminder of the human cost of this 'harmonious' policy. The city is a living organism, and like any organism, it seeks to shed its impurities. In Oakhaven, those impurities are the sounds of industry, the essential vibrations of a working city that the affluent wish to banish from their sight and sound. We must question whether a policy that achieves peace through displacement can ever be considered a success. If the price of tranquility for one is the degradation of another, then we are not solving the problem of noise; we are merely refining the art of social exclusion. The silence of the historic district is not a triumph of planning; it is a testament to the persistent, quiet violence of systemic neglect, a noise that, while invisible, is deafening to those forced to endure it.",
+    "wordCount": 838,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ostensibly",
+        "lemma": "ostensibly",
+        "glosses": {
+          "es": "apparently or purportedly, but perhaps not actually",
+          "en": "apparently or purportedly, but perhaps not actually"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonance",
+        "lemma": "dissonance",
+        "glosses": {
+          "es": "a lack of harmony or agreement",
+          "en": "a lack of harmony or agreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiat",
+        "lemma": "fiat",
+        "glosses": {
+          "es": "an authoritative or arbitrary order",
+          "en": "an authoritative or arbitrary order"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "triage",
+        "lemma": "triage",
+        "glosses": {
+          "es": "the process of determining the priority of patients or tasks",
+          "en": "the process of determining the priority of patients or tasks"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "able to be touched or felt; tangible",
+          "en": "able to be touched or felt; tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cacophony",
+        "lemma": "cacophony",
+        "glosses": {
+          "es": "a harsh, discordant mixture of sounds",
+          "en": "a harsh, discordant mixture of sounds"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.4,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:15:04.597Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument the narrator makes regarding the 'Harmonious Dusk' initiative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It shifts noise from wealthy to poor areas."
+        },
+        {
+          "id": "a2",
+          "text": "It successfully reduces total noise levels."
+        },
+        {
+          "id": "a3",
+          "text": "It improves infrastructure for all citizens."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The silence in the center was not an absence of noise; it was a relocation of it.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why are logistics transit times increasing according to the logbook?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Drivers are taking longer breaks."
+        },
+        {
+          "id": "a2",
+          "text": "The new routes are structurally ill-equipped."
+        },
+        {
+          "id": "a3",
+          "text": "There is a sudden surge in cargo volume."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the new routes were structurally ill-equipped for the weight of the cargo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the narrator imply about the 'temporary' nature of the project?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It will be reversed next month."
+        },
+        {
+          "id": "a2",
+          "text": "It is a necessary phase of growth."
+        },
+        {
+          "id": "a3",
+          "text": "It will likely become permanent."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The council’s insistence that these measures are temporary, pending further infrastructure upgrades, feels increasingly hollow.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the narrator include the specific anecdote about Sarah Miller?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the personal human impact of policy."
+        },
+        {
+          "id": "a2",
+          "text": "To provide a counter-argument to the council."
+        },
+        {
+          "id": "a3",
+          "text": "To illustrate the efficiency of new routes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sarah Miller, a night-shift nurse, described the vibration of the heavy trucks as a physical assault that rattles the very foundations of her home.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the narrator's attitude toward the city's municipal leadership?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Admiring and hopeful."
+        },
+        {
+          "id": "a2",
+          "text": "Cynical and accusatory."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a policy that prioritizes the comfort of the few over the fundamental well-being of the many.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Based on the text, what does the author mean by 'acoustic dumping grounds'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Areas where sound is recycled."
+        },
+        {
+          "id": "a2",
+          "text": "Natural zones designed to absorb noise."
+        },
+        {
+          "id": "a3",
+          "text": "Places where noise is deliberately pushed."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "the council had effectively transformed the peripheral working-class sectors into acoustic dumping grounds",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word response arguing whether urban planners have a moral obligation to distribute environmental burdens equally across all socioeconomic districts, even if it compromises the efficiency of city transit.",
+      "en": "Write a 300-word response arguing whether urban planners have a moral obligation to distribute environmental burdens equally across all socioeconomic districts, even if it compromises the efficiency of city transit."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the text to understand the sociopolitical implications of urban soundscapes and the narrator's critique of systemic inequality disguised as environmental progress.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:15:04.597Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Acoustic Architecture of Silence | C2 Reading | WeLearn",
+      "en": "The Acoustic Architecture of Silence | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An investigative look at how urban planning decisions regarding night traffic prioritize the tranquility of affluent districts, effectively displacing noise into marginalized neighborhoods.",
+      "en": "An investigative look at how urban planning decisions regarding night traffic prioritize the tranquility of affluent districts, effectively displacing noise into marginalized neighborhoods."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:15:04.597Z"
+  }
+}

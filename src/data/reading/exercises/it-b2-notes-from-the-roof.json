@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Proposta energetica per il condominio Via dei Tigli",
+      "en": "Proposta energetica per il condominio Via dei Tigli"
+    },
+    "intro": {
+      "es": "Un'email inviata dall'amministratore di condominio riguardo all'installazione di pannelli solari sul tetto comune.",
+      "en": "Un'email inviata dall'amministratore di condominio riguardo all'installazione di pannelli solari sul tetto comune."
+    },
+    "mission": {
+      "es": "Analizza il testo per comprendere le implicazioni economiche e le tensioni tra i residenti riguardo alla gestione dell'energia condivisa.",
+      "en": "Analizza il testo per comprendere le implicazioni economiche e le tensioni tra i residenti riguardo alla gestione dell'energia condivisa."
+    },
+    "targetText": "Gentili condomini, vi scrivo in merito alla proposta presentata da Marco, il rappresentante del terzo piano, riguardante l'installazione di un impianto fotovoltaico sul tetto del nostro edificio. L'iniziativa mira a ridurre drasticamente i costi energetici comuni, promettendo un risparmio considerevole sulle bollette dell'illuminazione delle scale, dell'ascensore e dell'autoclave. L'idea è tecnicamente solida, ma solleva questioni complesse riguardo alla ripartizione delle spese iniziali e alla gestione dei benefici a lungo termine.\n\nAttualmente, il progetto prevede che i proprietari sostengano interamente l'investimento iniziale per l'acquisto e il montaggio dei pannelli. Marco sostiene che, essendo un miglioramento strutturale permanente, il costo debba ricadere esclusivamente su chi detiene il titolo di proprietà. Tuttavia, i locatari, che costituiscono metà degli abitanti, vorrebbero contribuire pro quota in cambio di una riduzione diretta del canone d'affitto, sostenendo che il risparmio energetico immediato dovrebbe riflettersi anche sul loro bilancio mensile, dato che sono loro a sostenere le spese correnti.\n\nLa situazione si è complicata durante l'ultima assemblea, quando la signora Elena, proprietaria di due appartamenti affittati, si è opposta fermamente. Ella teme che l'investimento non aumenti proporzionalmente il valore di mercato degli immobili, giudicando il progetto un azzardo economico. Dall'altro lato, i giovani inquilini vedono l'iniziativa come un dovere etico verso la sostenibilità, accusando i proprietari di miopia conservatrice. La tensione è palpabile: da una parte c'è la prudenza finanziaria, dall'altra l'urgenza di una transizione ecologica che non può più attendere le lungaggini burocratiche.\n\nEsiste una terza via, suggerita da un consulente esterno, che propone un fondo di ammortamento gestito dal condominio. In questo scenario, i locatari pagherebbero una quota extra temporanea, recuperando l'investimento tramite un credito d'imposta cedibile. Questa soluzione, sebbene tecnicamente elegante, richiede una modifica del regolamento condominiale che necessita dell'unanimità. Purtroppo, la diffidenza reciproca rende difficile raggiungere un accordo su una questione che richiede una visione collettiva e non meramente individuale.\n\nIn conclusione, vi invito a riflettere seriamente sulla proposta prima della prossima riunione straordinaria. Se non riusciremo a trovare un punto di incontro tra le esigenze dei proprietari e le aspirazioni degli inquilini, il progetto verrà archiviato a tempo indeterminato. Il tetto rimarrà nudo, e noi continueremo a dipendere esclusivamente dalla rete elettrica nazionale, rinunciando a un'opportunità che avrebbe potuto trasformare il nostro edificio in un modello di efficienza per l'intero quartiere. La scelta, ora, spetta esclusivamente a voi.\n\nTuttavia, il fallimento di tale accordo rischia di generare un precedente pericoloso, scoraggiando futuri investimenti in riqualificazione energetica. Senza una visione condivisa, il condominio resterà ostaggio di una stagnazione economica e tecnologica ormai insostenibile.",
+    "wordCount": 419,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "autoclave",
+        "lemma": "autoclave",
+        "glosses": {
+          "es": "pressure tank for water supply",
+          "en": "pressure tank for water supply"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pro quota",
+        "lemma": "pro quota",
+        "glosses": {
+          "es": "in proportion to one's share",
+          "en": "in proportion to one's share"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miopia",
+        "lemma": "miopia",
+        "glosses": {
+          "es": "nearsightedness or lack of foresight",
+          "en": "nearsightedness or lack of foresight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ammortamento",
+        "lemma": "ammortamento",
+        "glosses": {
+          "es": "amortization or depreciation",
+          "en": "amortization or depreciation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "diffidenza",
+        "lemma": "diffidenza",
+        "glosses": {
+          "es": "distrust or suspicion",
+          "en": "distrust or suspicion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "archiviato",
+        "lemma": "archiviato",
+        "glosses": {
+          "es": "filed away or abandoned",
+          "en": "filed away or abandoned"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale della comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione dell'energia."
+        },
+        {
+          "id": "a2",
+          "text": "Il rinnovo del regolamento."
+        },
+        {
+          "id": "a3",
+          "text": "La vendita degli appartamenti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'iniziativa mira a ridurre drasticamente i costi energetici comuni",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché la signora Elena si oppone?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Vuole più pannelli."
+        },
+        {
+          "id": "a2",
+          "text": "Teme per il valore."
+        },
+        {
+          "id": "a3",
+          "text": "Non vuole l'ascensore."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ella teme che l'investimento non aumenti proporzionalmente il valore di mercato degli immobili",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quale atteggiamento prevale tra i residenti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasmo collettivo."
+        },
+        {
+          "id": "a2",
+          "text": "Totale indifferenza."
+        },
+        {
+          "id": "a3",
+          "text": "Sospetto reciproco."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la diffidenza reciproca rende difficile raggiungere un accordo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sollecitare una decisione."
+        },
+        {
+          "id": "a2",
+          "text": "Informare sui costi fissi."
+        },
+        {
+          "id": "a3",
+          "text": "Criticare i proprietari."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "vi invito a riflettere seriamente sulla proposta prima della prossima riunione straordinaria.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Che tono usa l'amministratore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggressivo e polemico."
+        },
+        {
+          "id": "a2",
+          "text": "Formale e neutrale."
+        },
+        {
+          "id": "a3",
+          "text": "Scherzoso e informale."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Gentili condomini, vi scrivo in merito alla proposta presentata da Marco",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'miopia' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Problema di salute."
+        },
+        {
+          "id": "a2",
+          "text": "Scarsa illuminazione."
+        },
+        {
+          "id": "a3",
+          "text": "Mancanza di visione."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "accusando i proprietari di miopia conservatrice.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una breve risposta (100-150 parole) in cui, assumendo il ruolo di un inquilino, proponi un compromesso tra le esigenze dei proprietari e quelle dei locatari per sbloccare la situazione.",
+      "en": "Scrivi una breve risposta (100-150 parole) in cui, assumendo il ruolo di un inquilino, proponi un compromesso tra le esigenze dei proprietari e quelle dei locatari per sbloccare la situazione."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizza il testo per comprendere le implicazioni economiche e le tensioni tra i residenti riguardo alla gestione dell'energia condivisa.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Proposta energetica per il condominio Via dei Tigli | B2 Reading | WeLearn",
+      "en": "Proposta energetica per il condominio Via dei Tigli | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'email inviata dall'amministratore di condominio riguardo all'installazione di pannelli solari sul tetto comune.",
+      "en": "Un'email inviata dall'amministratore di condominio riguardo all'installazione di pannelli solari sul tetto comune."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

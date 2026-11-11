@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-quiet-street",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "静寂の実験：青葉町の夜間歩行者天国",
+      "en": "静寂の実験：青葉町の夜間歩行者天国"
+    },
+    "intro": {
+      "es": "自動車の通行を制限した夜の商店街。その試みがもたらした変化と、住民や店主たちの複雑な反応について読み解きます。",
+      "en": "自動車の通行を制限した夜の商店街。その試みがもたらした変化と、住民や店主たちの複雑な反応について読み解きます。"
+    },
+    "mission": {
+      "es": "本文を読み、青葉町で実施された交通規制が各方面にどのような影響を与えたか、その論点を整理してください。",
+      "en": "本文を読み、青葉町で実施された交通規制が各方面にどのような影響を与えたか、その論点を整理してください。"
+    },
+    "targetText": "青葉町商店街では先週、金曜の夜間限定で「歩行者天国」の社会実験が行われた。午後六時から十時まで、主要な通りから車両を排除し、歩行者の利便性と街の活性化を目指す試みである。この企画を主導した自治会代表の佐藤氏は、「車を気にせず歩ける開放感こそが、地域コミュニティを再生する鍵だ」と主張する。確かに、普段は車道として機能している道が広場のように開放されると、近隣住民が立ち止まり、会話を交わす姿が多く見られた。普段の騒がしいエンジン音から解放された夜道は、確かに新鮮な空気に満ちていた。\n\nしかし、この実験に対する商店主たちの反応は一様ではない。雑貨店を営む田中氏は、配送の遅延に頭を悩ませている。通常、夕方の時間帯は翌日の販売に向けた商品の搬入が行われるが、車両進入禁止により、店先までトラックを横付けできなくなった。田中氏は「歩行者は増えたが、荷物を運ぶ手間が増え、結果として営業効率が落ちている」と不満を隠さない。一方で、カフェを経営する鈴木氏は、テラス席の利用客が増加したことを歓迎している。歩行者が増えることで、ふらりと立ち寄る客の数も確かに伸びたという。\n\n住民間でも意見は真っ二つに割れている。静かな夜を期待していた高齢層からは、「車が消えても、結局は歩行者の話し声や笑い声が響き、騒音は形を変えただけだ」との指摘が上がった。確かに、エンジン音という機械的なノイズは消えたが、人が集まることで発生する生活音は、深夜の住宅街においては別の種類の刺激となる。一方で、若い世代の家族連れは、「子供が安全に走り回れる環境は貴重だ」と、この変化を高く評価している。騒音の定義が、人々の生活スタイルによってこれほどまでに異なるとは興味深い。\n\nこの実験の結末は、明確な成功とも失敗とも言えない曖昧なものとなった。商店街の売上データは、一部の店舗では微増したものの、物流コストの増大と相殺され、全体的な経済効果は限定的であった。また、騒音問題についても、車を排除したことで「静かになった」と感じる人と、「人の気配がうるさくなった」と感じる人の間で、溝は埋まっていない。自治会は来月も同様の実験を計画しているが、今後は物流業者への配慮や、夜間の音量規制など、より詳細なルール作りが求められるだろう。\n\n結局のところ、都市の空間を誰のために使うべきかという問いは、解決の糸口を見つけるのが難しい。車を排除すれば、確かに歩行者のための空間は広がるが、それは同時に、物流という都市の血管を圧迫することにもなる。青葉町の実験は、利便性と快適性のトレードオフを浮き彫りにした。住民たちがこの「静寂」をどう定義し、どのような夜の街を望むのか。その合意形成こそが、次なる社会実験の真の課題となるはずである。私たちは、便利さと引き換えに何かを失い、また何かを得ていることに、もっと自覚的であるべきかもしれない。",
+    "wordCount": 1093,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "排除",
+        "lemma": "排除",
+        "glosses": {
+          "es": "exclusion",
+          "en": "exclusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "活性化",
+        "lemma": "活性化",
+        "glosses": {
+          "es": "revitalization",
+          "en": "revitalization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "一様",
+        "lemma": "一様",
+        "glosses": {
+          "es": "uniform",
+          "en": "uniform"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "相殺",
+        "lemma": "相殺",
+        "glosses": {
+          "es": "offset",
+          "en": "offset"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "トレードオフ",
+        "lemma": "トレードオフ",
+        "glosses": {
+          "es": "trade-off",
+          "en": "trade-off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "合意形成",
+        "lemma": "合意形成",
+        "glosses": {
+          "es": "consensus building",
+          "en": "consensus building"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 42,
+      "maxSentenceWords": 61,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主なテーマは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "青葉町の商店街で行われた夜間歩行者天国の実験の成果と課題"
+        },
+        {
+          "id": "a2",
+          "text": "商店街の売上を向上させるための具体的な戦略と物流の改善策"
+        },
+        {
+          "id": "a3",
+          "text": "自動車の通行を制限することで得られる騒音対策の有効性について"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "青葉町商店街では先週、金曜の夜間限定で「歩行者天国」の社会実験が行われた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "雑貨店主の田中氏が不満を感じている理由は？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "歩行者が増えすぎて店が混雑するため"
+        },
+        {
+          "id": "a2",
+          "text": "車両進入禁止で商品の搬入が困難になったため"
+        },
+        {
+          "id": "a3",
+          "text": "夜間営業のコストが以前よりも高騰しているため"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "車両進入禁止により、店先までトラックを横付けできなくなった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ騒音問題が住民間で意見が分かれたのでしょうか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "車がなくなったことで、以前よりも静かになったと全員が認めているため"
+        },
+        {
+          "id": "a2",
+          "text": "自治会が夜間の音量規制を厳しく設定しすぎたため"
+        },
+        {
+          "id": "a3",
+          "text": "騒音の定義が個人の生活スタイルや価値観によって異なるため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "騒音の定義が、人々の生活スタイルによってこれほどまでに異なるとは興味深い。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がこの実験を「曖昧なもの」と表現した意図は？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "実験の結果が経済的にも社会的にも評価が分かれ、決定的な結論が出なかったから"
+        },
+        {
+          "id": "a2",
+          "text": "商店街の売上が大幅に減少したことが統計的に明らかになったから"
+        },
+        {
+          "id": "a3",
+          "text": "住民全員がこの実験を中止すべきだと強く主張しているから"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この実験の結末は、明確な成功とも失敗とも言えない曖昧なものとなった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "文章全体の筆者の態度はどのようなものですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "実験の成功を強く確信し、読者に賛同を求めている"
+        },
+        {
+          "id": "a2",
+          "text": "客観的な視点を保ちつつ、複雑な利害関係を分析している"
+        },
+        {
+          "id": "a3",
+          "text": "実験の失敗を批判し、自治会の無能さを強調している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "青葉町の実験は、利便性と快適性のトレードオフを浮き彫りにした。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「相殺」という言葉が文中で意味していることは？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "物流のコストが売上の増加分を大幅に上回ること"
+        },
+        {
+          "id": "a2",
+          "text": "売上の増加分が物流のコストを完全にカバーすること"
+        },
+        {
+          "id": "a3",
+          "text": "売上の増加分と物流のコスト増が打ち消し合うこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "商店街の売上データは、一部の店舗では微増したものの、物流コストの増大と相殺され、全体的な経済効果は限定的であった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "青葉町の実験結果を踏まえ、今後どのようなルール作りが必要だと考えますか。あなたの意見を400字程度で述べてください。",
+      "en": "青葉町の実験結果を踏まえ、今後どのようなルール作りが必要だと考えますか。あなたの意見を400字程度で述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "本文を読み、青葉町で実施された交通規制が各方面にどのような影響を与えたか、その論点を整理してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "静寂の実験：青葉町の夜間歩行者天国 | B2 Reading | WeLearn",
+      "en": "静寂の実験：青葉町の夜間歩行者天国 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "自動車の通行を制限した夜の商店街。その試みがもたらした変化と、住民や店主たちの複雑な反応について読み解きます。",
+      "en": "自動車の通行を制限した夜の商店街。その試みがもたらした変化と、住民や店主たちの複雑な反応について読み解きます。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

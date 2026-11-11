@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Syntax of Memory",
+      "en": "The Syntax of Memory"
+    },
+    "intro": {
+      "es": "In the climate-controlled silence of the Echo Archive, two professionals debate the ethics of preserving oral histories.",
+      "en": "In the climate-controlled silence of the Echo Archive, two professionals debate the ethics of preserving oral histories."
+    },
+    "mission": {
+      "es": "Analyze the tension between linguistic preservation and narrative authenticity in the context of historical record-keeping.",
+      "en": "Analyze the tension between linguistic preservation and narrative authenticity in the context of historical record-keeping."
+    },
+    "targetText": "Elias, the lead archivist, sat bathed in the cool, blue luminescence of his workstation, his fingers hovering over a digital transcription of a coal miner’s recollection from the mid-century. Beside him stood Clara, a storyteller whose penchant for dramatic flair was matched only by her insistence on the sanctity of the spoken word. The conflict had been simmering for weeks, ever since the archive decided to standardize the transcripts of the 'Forgotten Voices' collection. Elias argued that grammatical precision was a courtesy to the reader, a way to ensure that the wisdom of the past was not obscured by the clutter of colloquialisms or fractured syntax. He believed that by smoothing out the jagged edges of a sentence, he was polishing a diamond that had been buried in the dust of unrefined speech.\n\nClara leaned over his shoulder, her shadow falling across the flickering cursor. 'You are not polishing, Elias; you are erasing,' she countered, her voice echoing slightly in the hollowed-out chamber of the archive. She pointed to a line where a miner described the sound of a collapsing shaft. In the original audio, the man had hesitated, repeating a preposition twice before finding the word that captured the specific, hollow thud of shifting earth. Elias had replaced the stutter with a clean, singular phrase. To him, it was a correction; to Clara, it was the death of the man’s anxiety, the evaporation of the very moment he had struggled to articulate. She argued that the hesitations were the architecture of the memory itself, providing the listener with a map of the speaker’s internal process.\n\nElias sighed, rubbing his temples. He understood the appeal of the raw, but he feared that leaving the transcript unedited would render it inaccessible to future researchers who lacked the patience for linguistic reconstruction. He envisioned a future where the archive was a labyrinth of incoherent fragments, dismissed by scholars as mere noise. He proposed a compromise: a dual-track system where the edited version served as the primary text, while the raw audio remained available for the intrepid few. However, Clara remained unmoved, sensing that the mere existence of a 'corrected' version would inevitably relegate the original to the status of a secondary, flawed curiosity. She insisted that the speaker’s voice was inseparable from their syntax, and that to alter the structure was to censor the soul of the testimony.\n\nAs the evening deepened, the air in the room grew heavy with the weight of their impasse. Elias pulled up another file, this one from a woman who had survived the great flood, her speech patterns rhythmic and repetitive, almost liturgical in their cadence. He had removed the repetitions, turning her mournful chant into a series of concise, declarative statements. Clara read the revised text and felt a chill. The woman’s grief had been transformed into a dry report, a sterile summary of facts that stripped away the visceral experience of the disaster. By imposing order upon the chaos of trauma, Elias had inadvertently sanitized the history he was tasked with protecting, turning human suffering into a manageable, bureaucratic entry.\n\nUltimately, the disagreement remained unresolved, casting a long shadow over the archive’s future. Elias continued his work, his fingers moving with a mechanical rhythm, while Clara retreated to the listening booths, where the raw, unpolished voices still breathed and stumbled in the dark. They had reached a stalemate that defined the very nature of their work: one sought to build a bridge of clarity to the past, while the other insisted on leaving the river of history wild, dangerous, and entirely, authentically itself. The records remained in limbo, caught between the desire for transparency and the necessity of truth, a silent testament to the fact that every act of preservation is, at its core, an act of interpretation.\n\nYet, this philosophical divide creates a profound dilemma for the institution's legacy. If the archive prioritizes accessibility, it risks distorting the human experience, but if it preserves raw chaos, it may alienate the public. Ultimately, the burden of truth shifts from the historian to the reader's own interpretation.",
+    "wordCount": 682,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "luminescence",
+        "lemma": "luminescence",
+        "glosses": {
+          "es": "the emission of light not resulting from heat",
+          "en": "the emission of light not resulting from heat"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "colloquialisms",
+        "lemma": "colloquialisms",
+        "glosses": {
+          "es": "words or phrases used in informal conversation",
+          "en": "words or phrases used in informal conversation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "a situation where no progress is possible",
+          "en": "a situation where no progress is possible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "liturgical",
+        "lemma": "liturgical",
+        "glosses": {
+          "es": "relating to public worship or religious ritual",
+          "en": "relating to public worship or religious ritual"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "visceral",
+        "lemma": "visceral",
+        "glosses": {
+          "es": "relating to deep inward feelings rather than intellect",
+          "en": "relating to deep inward feelings rather than intellect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanitized",
+        "lemma": "sanitized",
+        "glosses": {
+          "es": "made more pleasant or acceptable by removing unpleasant details",
+          "en": "made more pleasant or acceptable by removing unpleasant details"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict between Elias and Clara?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The editing of oral histories"
+        },
+        {
+          "id": "a2",
+          "text": "The classification of archives"
+        },
+        {
+          "id": "a3",
+          "text": "The digital preservation of audio"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The conflict had been simmering for weeks, ever since the archive decided to standardize the transcripts of the 'Forgotten Voices' collection.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Elias remove the miner's repeated preposition?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To save digital space"
+        },
+        {
+          "id": "a2",
+          "text": "To improve readability"
+        },
+        {
+          "id": "a3",
+          "text": "To follow archive policy"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elias argued that grammatical precision was a courtesy to the reader, a way to ensure that the wisdom of the past was not obscured by the clutter of colloquialisms or fractured syntax.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Clara perceive the 'corrected' transcripts?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a necessary evil"
+        },
+        {
+          "id": "a2",
+          "text": "As a helpful tool for researchers"
+        },
+        {
+          "id": "a3",
+          "text": "As a form of censorship"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "She insisted that the speaker’s voice was inseparable from their syntax, and that to alter the structure was to censor the soul of the testimony.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the primary function of the flood survivor's original speech patterns?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To convey the visceral nature of the disaster"
+        },
+        {
+          "id": "a2",
+          "text": "To provide a clear account of the flood events"
+        },
+        {
+          "id": "a3",
+          "text": "To demonstrate the linguistic habits of the region"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The woman’s grief had been transformed into a dry report, a sterile summary of facts that stripped away the visceral experience of the disaster.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the author's tone regarding the archive's impasse?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Hopeful"
+        },
+        {
+          "id": "a2",
+          "text": "Ambivalent"
+        },
+        {
+          "id": "a3",
+          "text": "Critical"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The records remained in limbo, caught between the desire for transparency and the necessity of truth, a silent testament to the fact that every act of preservation is, at its core, an act of interpretation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'impasse' imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A total agreement"
+        },
+        {
+          "id": "a2",
+          "text": "A temporary pause in work"
+        },
+        {
+          "id": "a3",
+          "text": "A state of deadlock"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "As the evening deepened, the air in the room grew heavy with the weight of their impasse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short essay (200 words) arguing whether oral history archives should prioritize linguistic clarity for future readers or the authentic, unedited voice of the speaker.",
+      "en": "Write a short essay (200 words) arguing whether oral history archives should prioritize linguistic clarity for future readers or the authentic, unedited voice of the speaker."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the tension between linguistic preservation and narrative authenticity in the context of historical record-keeping.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Syntax of Memory | C1 Reading | WeLearn",
+      "en": "The Syntax of Memory | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In the climate-controlled silence of the Echo Archive, two professionals debate the ethics of preserving oral histories.",
+      "en": "In the climate-controlled silence of the Echo Archive, two professionals debate the ethics of preserving oral histories."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

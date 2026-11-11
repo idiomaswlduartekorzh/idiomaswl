@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-local-stage",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le Théâtre des Embruns : un équilibre fragile",
+      "en": "Le Théâtre des Embruns : un équilibre fragile"
+    },
+    "intro": {
+      "es": "Au cœur de la ville côtière de Saint-Lunaire, le Théâtre des Embruns fait face à une crise budgétaire majeure.",
+      "en": "Au cœur de la ville côtière de Saint-Lunaire, le Théâtre des Embruns fait face à une crise budgétaire majeure."
+    },
+    "mission": {
+      "es": "Analyser les enjeux financiers et artistiques d'une institution culturelle locale.",
+      "en": "Analyser les enjeux financiers et artistiques d'une institution culturelle locale."
+    },
+    "targetText": "Le Théâtre des Embruns, pilier culturel de Saint-Lunaire, traverse une période de turbulences financières sans précédent. Depuis des années, la direction applique une politique tarifaire avantageuse pour les moins de vingt-cinq ans, une initiative louable visant à démocratiser l'accès au spectacle vivant. Cependant, cette générosité a fini par peser lourdement sur les comptes, au point de compromettre la qualité des répétitions. Les techniciens, faute de moyens, doivent travailler dans des conditions précaires, limitant le temps de préparation des pièces à seulement quelques jours, ce qui frustre les comédiens et dégrade la finition des représentations.\n\nFace à cette impasse, la troupe permanente, menée par la metteuse en scène Éléonore Valois, a proposé un compromis audacieux. Ils suggèrent de maintenir les tarifs réduits pour les étudiants, mais d'instaurer une tarification « soutien » pour les spectateurs aisés, tout en acceptant de réduire le nombre de répétitions rémunérées en salle. En contrepartie, les artistes s'engagent à utiliser des espaces publics extérieurs pour leurs répétitions générales, une pratique qui, bien que contraignante, permet de libérer le plateau principal pour des locations privées lucratives.\n\nLa direction, représentée par Marc-Antoine Lefebvre, reste sceptique face à cette proposition. Si l'idée de louer la salle semble séduisante sur le papier, elle craint que le public ne se lasse de voir des répétitions improvisées sur la place du marché, perçues par certains comme une dévalorisation du travail artistique. De plus, le risque de dégradation du matériel lors des déplacements fréquents constitue un argument de poids pour les conservateurs du conseil d'administration qui privilégient la sécurité des équipements sur l'audace créative.\n\nLe débat a atteint son paroxysme lors de l'assemblée générale de mardi soir. Les jeunes spectateurs, craignant une hausse brutale des prix, ont manifesté leur soutien à la troupe, brandissant des pancartes réclamant le maintien de l'accès à la culture. Les comédiens, quant à eux, ont insisté sur le fait que la qualité artistique ne peut être sacrifiée sur l'autel de la rentabilité immédiate. Ils estiment que la visibilité offerte par les répétitions en plein air pourrait paradoxalement attirer un nouveau public, plus curieux et prêt à payer le prix fort pour les soirées de première.\n\nFinalement, un accord temporaire a été trouvé : la troupe pourra répéter à l'extérieur durant les mois cléments, tandis que la direction testera la tarification solidaire lors de la prochaine saison. L'avenir reste incertain, car si ce modèle hybride échoue à combler le déficit, le théâtre devra soit abandonner sa mission sociale, soit fermer ses portes définitivement. Cette solution, bien que pragmatique, laisse un goût amer aux puristes qui craignent que le théâtre ne perde son âme en devenant une simple salle de location polyvalente.",
+    "wordCount": 442,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "turbulences",
+        "lemma": "turbulences",
+        "glosses": {
+          "es": "instability or crisis",
+          "en": "instability or crisis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock or stalemate",
+          "en": "deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lucratives",
+        "lemma": "lucratives",
+        "glosses": {
+          "es": "profitable",
+          "en": "profitable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paroxysme",
+        "lemma": "paroxysme",
+        "glosses": {
+          "es": "peak or climax",
+          "en": "peak or climax"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradoxalement",
+        "lemma": "paradoxalement",
+        "glosses": {
+          "es": "in a contradictory way",
+          "en": "in a contradictory way"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatique",
+        "lemma": "pragmatique",
+        "glosses": {
+          "es": "practical and realistic",
+          "en": "practical and realistic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 26,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:51:00.562Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestion financière difficile du théâtre."
+        },
+        {
+          "id": "a2",
+          "text": "L'organisation d'une grève générale des techniciens de la ville de Saint-Lunaire."
+        },
+        {
+          "id": "a3",
+          "text": "Le succès croissant des nouvelles politiques de tarifs réduits pour les jeunes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le Théâtre des Embruns, pilier culturel de Saint-Lunaire, traverse une période de turbulences financières sans précédent.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle solution la troupe propose-t-elle pour libérer la salle ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Réduire les salaires."
+        },
+        {
+          "id": "a2",
+          "text": "Répéter à l'extérieur."
+        },
+        {
+          "id": "a3",
+          "text": "Annuler les spectacles."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "les artistes s'engagent à utiliser des espaces publics extérieurs pour leurs répétitions générales",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi la direction hésite-t-elle à accepter la proposition ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "À cause du coût des répétitions."
+        },
+        {
+          "id": "a2",
+          "text": "Parce que les acteurs refusent."
+        },
+        {
+          "id": "a3",
+          "text": "Par peur de dégrader le matériel."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "le risque de dégradation du matériel lors des déplacements fréquents constitue un argument de poids",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi les comédiens souhaitent-ils répéter en public ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour obtenir de nouveaux spectateurs."
+        },
+        {
+          "id": "a2",
+          "text": "Pour éviter de payer la location de la salle."
+        },
+        {
+          "id": "a3",
+          "text": "Pour prouver leur talent aux passants curieux."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ils estiment que la visibilité offerte par les répétitions en plein air pourrait paradoxalement attirer un nouveau public",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de la conclusion ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et joyeux."
+        },
+        {
+          "id": "a2",
+          "text": "Incertain et réservé."
+        },
+        {
+          "id": "a3",
+          "text": "Colérique et revendicatif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'avenir reste incertain, car si ce modèle hybride échoue à combler le déficit, le théâtre devra soit abandonner sa mission sociale, soit fermer ses portes définitivement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « paroxysme » dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un calme."
+        },
+        {
+          "id": "a2",
+          "text": "Un essai."
+        },
+        {
+          "id": "a3",
+          "text": "Le point culminant d'une tension."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le débat a atteint son paroxysme lors de l'assemblée générale de mardi soir.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une lettre ouverte au conseil d'administration du théâtre pour argumenter en faveur ou contre la délocalisation des répétitions, en utilisant au moins trois termes du vocabulaire étudié.",
+      "en": "Rédigez une lettre ouverte au conseil d'administration du théâtre pour argumenter en faveur ou contre la délocalisation des répétitions, en utilisant au moins trois termes du vocabulaire étudié."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyser les enjeux financiers et artistiques d'une institution culturelle locale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:51:00.562Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le Théâtre des Embruns : un équilibre fragile | B2 Reading | WeLearn",
+      "en": "Le Théâtre des Embruns : un équilibre fragile | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Au cœur de la ville côtière de Saint-Lunaire, le Théâtre des Embruns fait face à une crise budgétaire majeure.",
+      "en": "Au cœur de la ville côtière de Saint-Lunaire, le Théâtre des Embruns fait face à une crise budgétaire majeure."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:51:00.562Z"
+  }
+}

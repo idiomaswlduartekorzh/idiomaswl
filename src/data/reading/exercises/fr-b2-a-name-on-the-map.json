@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'héritage de Val-des-Brumes",
+      "en": "L'héritage de Val-des-Brumes"
+    },
+    "intro": {
+      "es": "Dans la petite commune de Val-des-Brumes, le conseil municipal débat du retour à l'ancien nom du village, 'Sainte-Aube'. Ce texte explore les tensions entre identité historique et modernité pratique.",
+      "en": "Dans la petite commune de Val-des-Brumes, le conseil municipal débat du retour à l'ancien nom du village, 'Sainte-Aube'. Ce texte explore les tensions entre identité historique et modernité pratique."
+    },
+    "mission": {
+      "es": "Lisez attentivement le texte pour comprendre les enjeux du changement de nom et répondez aux questions de compréhension.",
+      "en": "Lisez attentivement le texte pour comprendre les enjeux du changement de nom et répondez aux questions de compréhension."
+    },
+    "targetText": "La salle du conseil municipal de Val-des-Brumes résonnait encore des murmures de la réunion publique de la veille. Sur la table, le dossier portant le sceau officiel de la préfecture attendait une décision définitive : le rétablissement du nom historique, Sainte-Aube. Madame Morel, la maire, observait la place du village par la fenêtre, songeant aux racines oubliées de cette terre. Pour elle, redonner son nom originel au village n'était pas une simple coquetterie onomastique, mais un acte de réconciliation avec un passé effacé par une réforme administrative arbitraire survenue il y a plusieurs décennies. Elle voyait en ce changement une opportunité de raviver une fierté locale souvent étouffée par l'anonymat des zones rurales en déclin.\n\nCependant, une opposition structurée s'était rapidement formée autour de Marc, un hôtelier dont l'établissement dépendait largement du flux touristique estival. Marc ne contestait pas la beauté du nom Sainte-Aube, mais il redoutait les conséquences logistiques d'une telle transition. Pour lui, le nom Val-des-Brumes, bien que récent, était désormais ancré dans les systèmes de navigation par satellite et les guides de voyage internationaux. Il craignait que les touristes, perdus face à cette discordance, ne renoncent à leur halte, préférant la simplicité des destinations mieux référencées. Il avançait que la clarté géographique primait sur la nostalgie historique, arguant qu'une confusion administrative pourrait durablement nuire à l'économie locale.\n\nLors de la séance, le débat s'envenima. Les partisans du changement évoquaient la dignité retrouvée, tandis que les commerçants soulignaient les coûts prohibitifs du remplacement des panneaux signalétiques et de la mise à jour des documents officiels. Madame Morel concéda que le coût financier était un obstacle réel, mais elle souligna que l'identité d'un lieu ne se mesurait pas uniquement à l'aune de sa visibilité sur les plateformes numériques. Elle affirmait que, sans une âme propre, le village risquait de devenir une simple escale sans relief, interchangeable avec n'importe quel autre lieu-dit.\n\nLe point de rupture survint lorsqu'un historien local présenta une étude démontrant que l'appellation Val-des-Brumes avait été imposée par une erreur de transcription lors d'un recensement. Cette révélation, loin d'apaiser les tensions, divisa davantage l'assemblée. Les uns y voyaient une justification morale pour corriger l'erreur, les autres une raison supplémentaire de maintenir le statu quo, jugeant que l'usage prolongé avait fini par légitimer le nom actuel, indépendamment de ses origines douteuses.\n\nLa séance fut levée sans vote final. Madame Morel quitta la salle, consciente que la décision ne pourrait satisfaire tout le monde. En sortant, elle croisa Marc qui, malgré ses réserves, lui adressa un signe de tête respectueux. Le silence retomba sur la place, mais une tension sourde persistait, celle d'une communauté suspendue entre le poids de son histoire et les exigences froides de la modernité, laissant le destin de Sainte-Aube en suspens.",
+    "wordCount": 456,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "onomastique",
+        "lemma": "onomastique",
+        "glosses": {
+          "es": "relating to the study of names",
+          "en": "relating to the study of names"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "discordance",
+        "lemma": "discordance",
+        "glosses": {
+          "es": "discrepancy or lack of agreement",
+          "en": "discrepancy or lack of agreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prohibitifs",
+        "lemma": "prohibitifs",
+        "glosses": {
+          "es": "excessively high",
+          "en": "excessively high"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "l'aune",
+        "lemma": "l'aune",
+        "glosses": {
+          "es": "standard of measure",
+          "en": "standard of measure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "statu quo",
+        "lemma": "statu quo",
+        "glosses": {
+          "es": "the existing state of affairs",
+          "en": "the existing state of affairs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "suspendue",
+        "lemma": "suspendue",
+        "glosses": {
+          "es": "left hanging or unresolved",
+          "en": "left hanging or unresolved"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.7,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:51:00.562Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet central du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le changement de nom."
+        },
+        {
+          "id": "a2",
+          "text": "La gestion touristique."
+        },
+        {
+          "id": "a3",
+          "text": "La faillite de la mairie."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "le rétablissement du nom historique, Sainte-Aube.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Marc s'oppose-t-il au changement ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il déteste l'histoire."
+        },
+        {
+          "id": "a2",
+          "text": "Il craint la confusion."
+        },
+        {
+          "id": "a3",
+          "text": "Il veut faire des économies."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il craignait que les touristes, perdus face à cette discordance, ne renoncent à leur halte",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position implicite de la maire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle veut le profit."
+        },
+        {
+          "id": "a2",
+          "text": "Elle est indécise."
+        },
+        {
+          "id": "a3",
+          "text": "Elle privilégie l'identité."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "redonner son nom originel au village n'était pas une simple coquetterie onomastique, mais un acte de réconciliation",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le rôle de l'historien ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Révéler une erreur."
+        },
+        {
+          "id": "a2",
+          "text": "Apaiser les débats."
+        },
+        {
+          "id": "a3",
+          "text": "Soutenir les commerçants."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "une étude démontrant que l'appellation Val-des-Brumes avait été imposée par une erreur de transcription lors d'un recensement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de la fin du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et joyeux."
+        },
+        {
+          "id": "a2",
+          "text": "Incertain et tendu."
+        },
+        {
+          "id": "a3",
+          "text": "Colérique et violent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "une tension sourde persistait, celle d'une communauté suspendue entre le poids de son histoire et les exigences froides de la modernité",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'onomastique' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestion urbaine."
+        },
+        {
+          "id": "a2",
+          "text": "La planification fiscale."
+        },
+        {
+          "id": "a3",
+          "text": "L'étude des noms."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "redonner son nom originel au village n'était pas une simple coquetterie onomastique",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif (100 mots) dans lequel vous prenez position : faut-il privilégier l'histoire locale ou l'efficacité administrative dans le choix du nom d'une ville ?",
+      "en": "Rédigez un court paragraphe argumentatif (100 mots) dans lequel vous prenez position : faut-il privilégier l'histoire locale ou l'efficacité administrative dans le choix du nom d'une ville ?"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lisez attentivement le texte pour comprendre les enjeux du changement de nom et répondez aux questions de compréhension.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:51:00.562Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'héritage de Val-des-Brumes | B2 Reading | WeLearn",
+      "en": "L'héritage de Val-des-Brumes | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans la petite commune de Val-des-Brumes, le conseil municipal débat du retour à l'ancien nom du village, 'Sainte-Aube'. Ce texte explore les tensions entre identité historique et modernité pratique.",
+      "en": "Dans la petite commune de Val-des-Brumes, le conseil municipal débat du retour à l'ancien nom du village, 'Sainte-Aube'. Ce texte explore les tensions entre identité historique et modernité pratique."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:51:00.562Z"
+  }
+}

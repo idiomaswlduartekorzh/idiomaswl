@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Paradox of the Patchwork Collective",
+      "en": "The Paradox of the Patchwork Collective"
+    },
+    "intro": {
+      "es": "An exploration of the social dynamics within the 'Reclaim & Restore' community repair workshops.",
+      "en": "An exploration of the social dynamics within the 'Reclaim & Restore' community repair workshops."
+    },
+    "mission": {
+      "es": "To analyze the friction between egalitarian participation and the reliance on expert labor in volunteer-led repair initiatives.",
+      "en": "To analyze the friction between egalitarian participation and the reliance on expert labor in volunteer-led repair initiatives."
+    },
+    "targetText": "The Reclaim & Restore initiative, hosted in the cavernous, drafty hall of the old municipal library, promised a radical departure from the consumerist ethos of 'replace and discard.' As the evening progressed, the air grew thick with the scent of soldering flux and the frantic, rhythmic clatter of screwdrivers. The workshop’s stated mission is egalitarian: to democratize repair skills, ensuring that every participant leaves with a functioning appliance and a newfound sense of agency. Yet, as I observed the chaotic assembly of toasters and vintage lamps, a palpable tension simmered beneath the surface of this communal endeavor. The workshop relies on a core group of seasoned technicians—individuals like Elias, a retired electrical engineer, and Sarah, a master carpenter—whose expertise is the literal glue holding the event together. While the organizers lauded the collective spirit of the evening, the reality was a stark division of labor that challenged the very premise of the event.\n\nElias spent his entire three-hour shift hunched over a complex circuit board from a high-end espresso machine, his hands moving with a surgeon’s precision. He was the silent engine of the room, yet he was rarely the one holding the screwdriver for the novices. Instead, he was perpetually interrupted by well-meaning but unskilled participants who viewed the workshop as a social space rather than a technical challenge. The organizers, led by a charismatic but technically illiterate coordinator named Julian, frequently interrupted Elias to offer him 'encouragement' or to pull him away for photo opportunities documenting the 'vibrant community engagement.' Julian’s focus was entirely on the optics of participation; he valued the headcount and the smiling faces of those who had merely held a flashlight, rather than the grueling, unpaid labor required to actually fix the broken items. The friction was not merely interpersonal; it was systemic.\n\nThis tension reached a breaking point when an expensive, heirloom record player was brought in by a local politician. Julian immediately gestured for Elias to take the lead, treating the repair as a public relations coup. Elias, visibly exhausted and frustrated by the lack of respect for his time, attempted to delegate the task to a group of enthusiastic teenagers who had been shadowing him. Julian intervened, insisting that the 'expert touch' was required to ensure the item was returned in pristine condition for the cameras. The teenagers were relegated to the sidelines, their opportunity for genuine apprenticeship sacrificed at the altar of a successful public image. Elias eventually completed the repair, but the look of defeat on his face was unmistakable. He had been transformed from a mentor into a glorified service technician, his expertise exploited to maintain the illusion of a seamless, collaborative success story.\n\nBy the time the lights flickered, signaling the end of the session, the divide between the organizers' rhetoric and the reality of the workshop was cavernous. The participants left feeling empowered, carrying their repaired goods with a sense of pride that was, in many ways, unearned. They had participated in the ritual of repair, but they had not performed the labor. Meanwhile, the experts packed their tools in silence, their contributions treated as a background utility rather than the primary value of the night. The organizers celebrated the 'community triumph' on social media, ignoring the fact that without the unpaid, high-stakes labor of the few, the entire event would have been a catastrophic failure. The workshop succeeded as a social gathering, but it failed as a sustainable model for knowledge transfer.\n\nUltimately, the Reclaim & Restore initiative leaves one with a haunting question: does the democratization of repair necessitate the devaluation of expertise? If the goal is to make everyone feel like a repairer, we must accept that some will always be more equal than others. The current structure prioritizes the psychological comfort of the many over the professional integrity of the few. Until the organizers acknowledge that their 'egalitarian' vision relies on the quiet, uncompensated sacrifice of their most skilled members, the workshop will remain a performative space. It is a place where we play at sustainability, carefully curating the image of a circular economy while the foundations of that economy are built on the backs of those we refuse to adequately recognize or empower.",
+    "wordCount": 702,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "egalitarian",
+        "lemma": "egalitarian",
+        "glosses": {
+          "es": "Believing in the principle that all people are equal and deserve equal rights and opportunities.",
+          "en": "Believing in the principle that all people are equal and deserve equal rights and opportunities."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "So intense as to seem almost tangible or physically felt.",
+          "en": "So intense as to seem almost tangible or physically felt."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "optics",
+        "lemma": "optics",
+        "glosses": {
+          "es": "The way in which an event or course of action is perceived by the public.",
+          "en": "The way in which an event or course of action is perceived by the public."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "relegated",
+        "lemma": "relegated",
+        "glosses": {
+          "es": "Dismissed to an inferior rank or position.",
+          "en": "Dismissed to an inferior rank or position."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cavernous",
+        "lemma": "cavernous",
+        "glosses": {
+          "es": "Giving the impression of vast, dark, and empty space.",
+          "en": "Giving the impression of vast, dark, and empty space."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "performative",
+        "lemma": "performative",
+        "glosses": {
+          "es": "Relating to an action or gesture that is done primarily for the sake of appearances.",
+          "en": "Relating to an action or gesture that is done primarily for the sake of appearances."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.4,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict described in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The tension between public image and expert labor."
+        },
+        {
+          "id": "a2",
+          "text": "The lack of tools for participants."
+        },
+        {
+          "id": "a3",
+          "text": "The disagreement over the workshop location."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The friction was not merely interpersonal; it was systemic.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Julian prevent the teenagers from working on the record player?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He feared they would break it."
+        },
+        {
+          "id": "a2",
+          "text": "He wanted an expert to ensure a perfect result."
+        },
+        {
+          "id": "a3",
+          "text": "He preferred to do the work himself."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Julian intervened, insisting that the 'expert touch' was required to ensure the item was returned in pristine condition for the cameras.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does the author view the participants' sense of pride?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As deserved and hard-earned."
+        },
+        {
+          "id": "a2",
+          "text": "As a sign of future skill growth."
+        },
+        {
+          "id": "a3",
+          "text": "As largely unearned and performative."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The participants left feeling empowered, carrying their repaired goods with a sense of pride that was, in many ways, unearned.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's ultimate purpose in writing this review?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To critique the reliance on unpaid expert labor in social models."
+        },
+        {
+          "id": "a2",
+          "text": "To provide a guide for starting a repair shop."
+        },
+        {
+          "id": "a3",
+          "text": "To praise the organizers for creating a successful community event."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Until the organizers acknowledge that their 'egalitarian' vision relies on the quiet, uncompensated sacrifice of their most skilled members, the workshop will remain a performative space.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the author's tone regarding the workshop organizers?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Supportive."
+        },
+        {
+          "id": "a2",
+          "text": "Cynical."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Julian’s focus was entirely on the optics of participation; he valued the headcount and the smiling faces of those who had merely held a flashlight, rather than the grueling, unpaid labor required to actually fix the broken items.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Based on the text, what does the author mean by 'performative'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Highly efficient and productive."
+        },
+        {
+          "id": "a2",
+          "text": "Requiring professional acting skills."
+        },
+        {
+          "id": "a3",
+          "text": "Done to create a specific public impression."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It is a place where we play at sustainability, carefully curating the image of a circular economy while the foundations of that economy are built on the backs of those we refuse to adequately recognize or empower.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response arguing whether a community project should prioritize the quality of the final output or the inclusivity of the learning experience, using examples from the text to support your position.",
+      "en": "Write a 200-word response arguing whether a community project should prioritize the quality of the final output or the inclusivity of the learning experience, using examples from the text to support your position."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "To analyze the friction between egalitarian participation and the reliance on expert labor in volunteer-led repair initiatives.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Paradox of the Patchwork Collective | C1 Reading | WeLearn",
+      "en": "The Paradox of the Patchwork Collective | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the social dynamics within the 'Reclaim & Restore' community repair workshops.",
+      "en": "An exploration of the social dynamics within the 'Reclaim & Restore' community repair workshops."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-the-quiet-street",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Experimento da Rua Silenciosa",
+      "en": "O Experimento da Rua Silenciosa"
+    },
+    "intro": {
+      "es": "Um artigo sobre a tentativa de transformar uma rua movimentada em uma zona exclusiva para pedestres durante a noite.",
+      "en": "Um artigo sobre a tentativa de transformar uma rua movimentada em uma zona exclusiva para pedestres durante a noite."
+    },
+    "mission": {
+      "es": "Leia o texto abaixo com atenção para compreender as nuances do conflito entre comerciantes e moradores sobre a revitalização do espaço público.",
+      "en": "Leia o texto abaixo com atenção para compreender as nuances do conflito entre comerciantes e moradores sobre a revitalização do espaço público."
+    },
+    "targetText": "O bairro de Vila Serena viveu na última terça-feira um experimento inusitado: o projeto 'Noite sem Motores', que proibiu a circulação de veículos automotores na Rua das Acácias entre as dezoito e as vinte e duas horas. A iniciativa, proposta pela associação de moradores, visava reduzir a poluição sonora e fomentar o comércio local através da ocupação do espaço público por pedestres. No entanto, o resultado foi um mosaico de experiências contraditórias que revelou tensões latentes na comunidade.\n\nPara os comerciantes, o impacto foi ambivalente. Dona Helena, proprietária de uma padaria artesanal, notou uma queda acentuada nas entregas rápidas que costumam sustentar seu faturamento noturno. 'Meus clientes habituais de delivery simplesmente não conseguiram receber seus pedidos, e o fluxo de pedestres não compensou a perda financeira imediata', afirmou. Em contrapartida, o dono de uma pequena livraria, Sr. Jorge, relatou um movimento atípico de pessoas que, caminhando sem a pressa do trânsito, acabaram entrando em seu estabelecimento para folhear livros, algo raro em dias comuns.\n\nO debate entre os moradores sobre o nível de ruído foi o ponto de maior discórdia. Enquanto alguns defensores do projeto celebravam a ausência do ronco dos motores, outros argumentavam que o silêncio foi apenas substituído por uma algazarra humana constante. A moradora Clara, que reside no segundo andar de um prédio comercial, sentiu que a acústica da rua, agora sem o ruído branco do tráfego, amplificou as conversas dos transeuntes, tornando o ambiente mais perturbador do que quando os carros circulavam.\n\nO conflito atingiu seu ápice quando a associação de moradores tentou estender o horário do experimento, enfrentando a resistência imediata dos lojistas que dependem da logística de carga e descarga noturna. A tentativa de conciliar o lazer dos pedestres com a funcionalidade comercial revelou que a gentrificação do espaço público não é um processo isento de custos operacionais. A prefeitura, observando o embate, optou por suspender futuras edições até que um plano de logística alternativa seja apresentado.\n\nAo final da noite, o que restou foi uma rua limpa de gases, mas carregada de incertezas. O experimento provou que a ausência de carros altera a percepção do tempo e do espaço, mas não garante a harmonia social. Enquanto o bairro busca um consenso, fica a lição de que o planejamento urbano exige mais do que apenas proibições; ele demanda uma compreensão profunda de como cada grupo habita a cidade. A Rua das Acácias permanece, por ora, um palco de debates onde o silêncio ainda é uma conquista distante.",
+    "wordCount": 413,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "inusitado",
+        "lemma": "inusitado",
+        "glosses": {
+          "es": "unusual",
+          "en": "unusual"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fomentar",
+        "lemma": "fomentar",
+        "glosses": {
+          "es": "to foster",
+          "en": "to foster"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ambivalente",
+        "lemma": "ambivalente",
+        "glosses": {
+          "es": "ambivalent",
+          "en": "ambivalent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "algazarra",
+        "lemma": "algazarra",
+        "glosses": {
+          "es": "uproar/commotion",
+          "en": "uproar/commotion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gentrificação",
+        "lemma": "gentrificação",
+        "glosses": {
+          "es": "gentrification",
+          "en": "gentrification"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "embate",
+        "lemma": "embate",
+        "glosses": {
+          "es": "clash",
+          "en": "clash"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 22.9,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:43:22.916Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central do artigo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O impacto do projeto no bairro."
+        },
+        {
+          "id": "a2",
+          "text": "A falha do comércio local."
+        },
+        {
+          "id": "a3",
+          "text": "A proibição total de carros em Vila Serena."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "o projeto 'Noite sem Motores', que proibiu a circulação de veículos automotores na Rua das Acácias entre as dezoito e as vinte e duas horas.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que a padaria de Dona Helena foi prejudicada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pela falta de pedestres."
+        },
+        {
+          "id": "a2",
+          "text": "Pela queda nas entregas."
+        },
+        {
+          "id": "a3",
+          "text": "Pelo aumento da poluição."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Dona Helena, proprietária de uma padaria artesanal, notou uma queda acentuada nas entregas rápidas que costumam sustentar seu faturamento noturno.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a experiência de Clara sugere sobre o silêncio urbano?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que ele é impossível de alcançar."
+        },
+        {
+          "id": "a2",
+          "text": "Que ele depende da acústica dos prédios."
+        },
+        {
+          "id": "a3",
+          "text": "Que o tráfego mascarava outros sons."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a acústica da rua, agora sem o ruído branco do tráfego, amplificou as conversas dos transeuntes, tornando o ambiente mais perturbador",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao mencionar a prefeitura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar a necessidade de mediação política."
+        },
+        {
+          "id": "a2",
+          "text": "Criticar a falta de apoio ao comércio."
+        },
+        {
+          "id": "a3",
+          "text": "Explicar por que o projeto foi um sucesso absoluto."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A prefeitura, observando o embate, optou por suspender futuras edições até que um plano de logística alternativa seja apresentado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o autor descreve a situação atual do bairro?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como um exemplo de sucesso urbano."
+        },
+        {
+          "id": "a2",
+          "text": "Como um conflito sem solução clara."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma vitória dos moradores."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O experimento provou que a ausência de carros altera a percepção do tempo e do espaço, mas não garante a harmonia social.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No texto, o que significa a palavra 'algazarra'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O som constante de motores."
+        },
+        {
+          "id": "a2",
+          "text": "O silêncio absoluto da rua."
+        },
+        {
+          "id": "a3",
+          "text": "Barulho excessivo de pessoas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "outros argumentavam que o silêncio foi apenas substituído por uma algazarra humana constante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo (80-100 palavras) defendendo ou criticando a implementação de zonas livres de carros em áreas residenciais que também possuem estabelecimentos comerciais, utilizando exemplos do texto para justificar sua opinião.",
+      "en": "Escreva um parágrafo argumentativo (80-100 palavras) defendendo ou criticando a implementação de zonas livres de carros em áreas residenciais que também possuem estabelecimentos comerciais, utilizando exemplos do texto para justificar sua opinião."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leia o texto abaixo com atenção para compreender as nuances do conflito entre comerciantes e moradores sobre a revitalização do espaço público.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:43:22.916Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Experimento da Rua Silenciosa | B2 Reading | WeLearn",
+      "en": "O Experimento da Rua Silenciosa | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um artigo sobre a tentativa de transformar uma rua movimentada em uma zona exclusiva para pedestres durante a noite.",
+      "en": "Um artigo sobre a tentativa de transformar uma rua movimentada em uma zona exclusiva para pedestres durante a noite."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:43:22.916Z"
+  }
+}

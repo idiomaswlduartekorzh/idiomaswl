@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-library-window",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Midnight Threshold",
+      "en": "The Midnight Threshold"
+    },
+    "intro": {
+      "es": "A reflection on the paradox of institutional accessibility through the lens of a weary librarian's log.",
+      "en": "A reflection on the paradox of institutional accessibility through the lens of a weary librarian's log."
+    },
+    "mission": {
+      "es": "To analyze the distinction between extended operating hours and genuine community inclusivity in public spaces.",
+      "en": "To analyze the distinction between extended operating hours and genuine community inclusivity in public spaces."
+    },
+    "targetText": "October 14th. The fluorescent hum of the Oakhaven Public Library at 9:45 PM is a specific kind of silence—it is not the absence of noise, but the presence of exhaustion. I sat at the circulation desk, watching the digital clock tick toward our new, board-mandated closing time of midnight. We were told that extending our hours would democratize knowledge, making the library a refuge for the shift workers and the night owls who had previously been barred by our rigid 6:00 PM shutters. The mandate was framed as a triumph of inclusivity, a bold step toward the utopian ideal of the 'always-open' civic hearth. Yet, as I looked out into the cavernous, dimly lit stacks, I realized that we had merely extended our presence, not our reach.\n\nElias, our oldest regular, shuffled toward the desk, his coat collar turned up against the chill of the late autumn air. He had been coming here for decades, usually arriving at noon to pore over the local archives. Tonight, he looked disoriented, clutching a stack of periodicals he had no intention of reading. He didn't need the extra six hours of lighting or the expanded Wi-Fi access; he needed the community programs that had been gutted to pay for the electricity bills of this midnight expansion. The board had traded the human infrastructure of morning reading circles and children's story hours for the cold, unblinking glare of late-night operations. We were open, yes, but we were hollowed out.\n\nBy 11:00 PM, the demographic of the library had shifted entirely. We were no longer a community hub, but a transient dormitory for those with nowhere else to go. A young man in a heavy parka was sleeping in the corner of the biography section, while a group of students occupied the study rooms, not to engage with our collections, but to escape the noise of their dorms. The library had become a surrogate for a lack of social safety nets, a role we were ill-equipped to perform. The librarians were now part-time security guards, our primary duty having drifted from curating information to managing the restless energy of a displaced population. We were accessible, certainly, but we were no longer a library in any sense that mattered to the collective intellect of the town.\n\nI stepped into the breakroom to escape the sterile atmosphere, finding Sarah, the head of circulation, staring blankly at the coffee machine. She had been the loudest proponent of the midnight initiative, arguing that a library that closes is a library that judges. Now, she looked defeated. She admitted that the 'after-hours' attendance numbers were technically high, but the engagement metrics—book checkouts, research inquiries, meaningful intellectual exchanges—were plummeting. We had prioritized the physical availability of the building over the actual utility of the service. We had built a bridge to nowhere, a monument to the idea of access that ignored the necessity of purpose.\n\nAs the clock finally struck midnight, I began the ritual of clearing the floors. There was no joy in this administrative victory, no sense that we had served the public good. We had simply shifted the burden of our societal failures into the dark hours of the night. I turned the key in the lock, feeling the heavy weight of the glass door. We were open longer, but we were less relevant than ever. The irony was suffocating; by trying to be everything to everyone at all times, we had ceased to be a place for anyone to grow. Tomorrow, the sun would rise, and the people who actually needed us would arrive to find a staff too exhausted to greet them, and a library that had forgotten how to be anything other than a room with lights on.\n\nFurthermore, this expansion inadvertently eroded the library’s identity as a sanctuary for focused inquiry. By prioritizing mere presence over purposeful engagement, the institution risks losing its core constituency entirely. As the intellectual heartbeat of the community fades, the library transforms into a hollow shell, ultimately failing both the marginalized populations it shelters and the scholars it was originally designed to serve.",
+    "wordCount": 684,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cavernous",
+        "lemma": "cavernous",
+        "glosses": {
+          "es": "resembling a large, dark cave",
+          "en": "resembling a large, dark cave"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "democratize",
+        "lemma": "democratize",
+        "glosses": {
+          "es": "to make something accessible to all people",
+          "en": "to make something accessible to all people"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "surrogate",
+        "lemma": "surrogate",
+        "glosses": {
+          "es": "a substitute for something else",
+          "en": "a substitute for something else"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "transient",
+        "lemma": "transient",
+        "glosses": {
+          "es": "lasting only for a short time",
+          "en": "lasting only for a short time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "metrics",
+        "lemma": "metrics",
+        "glosses": {
+          "es": "a system or standard of measurement",
+          "en": "a system or standard of measurement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "suffocating",
+        "lemma": "suffocating",
+        "glosses": {
+          "es": "causing difficulty in breathing or feeling trapped",
+          "en": "causing difficulty in breathing or feeling trapped"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.1,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument regarding the library's extended hours?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Extended hours have prioritized presence over purpose."
+        },
+        {
+          "id": "a2",
+          "text": "The extended hours represent a significant financial investment in local infrastructure."
+        },
+        {
+          "id": "a3",
+          "text": "The library board maintains that longer hours are the only way to ensure future funding."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "We had prioritized the physical availability of the building over the actual utility of the service.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What happened to the library's morning programs?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They were moved to the evening."
+        },
+        {
+          "id": "a2",
+          "text": "They were canceled to save money."
+        },
+        {
+          "id": "a3",
+          "text": "They were replaced by security staff."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The board had traded the human infrastructure of morning reading circles and children's story hours for the cold, unblinking glare of late-night operations.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does the narrator feel about the current state of the library?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifferent and detached."
+        },
+        {
+          "id": "a2",
+          "text": "Optimistic about future growth."
+        },
+        {
+          "id": "a3",
+          "text": "Resentful of the board's decision."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "There was no joy in this administrative victory, no sense that we had served the public good.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the character of Elias?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the loss of community."
+        },
+        {
+          "id": "a2",
+          "text": "To provide a counterexample to the library's operational success regarding digital literacy."
+        },
+        {
+          "id": "a3",
+          "text": "To offer a detailed historical perspective on the architectural evolution of the facility."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "He didn't need the extra six hours of lighting or the expanded Wi-Fi access; he needed the community programs that had been gutted to pay for the electricity bills of this midnight expansion.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What best describes the tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic"
+        },
+        {
+          "id": "a2",
+          "text": "Cynical and weary."
+        },
+        {
+          "id": "a3",
+          "text": "Resentful and highly critical of the administrative board's decision-making process."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "We were open longer, but we were less relevant than ever.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'transient' imply about the late-night visitors?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They drift."
+        },
+        {
+          "id": "a2",
+          "text": "They stay."
+        },
+        {
+          "id": "a3",
+          "text": "They are temporary occupants."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "By 11:00 PM, the demographic of the library had shifted entirely. We were no longer a community hub, but a transient dormitory for those with nowhere else to go.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short persuasive response arguing whether public institutions should prioritize being 'always open' or 'deeply engaged' with their core user base.",
+      "en": "Write a short persuasive response arguing whether public institutions should prioritize being 'always open' or 'deeply engaged' with their core user base."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "To analyze the distinction between extended operating hours and genuine community inclusivity in public spaces.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Midnight Threshold | C1 Reading | WeLearn",
+      "en": "The Midnight Threshold | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A reflection on the paradox of institutional accessibility through the lens of a weary librarian's log.",
+      "en": "A reflection on the paradox of institutional accessibility through the lens of a weary librarian's log."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

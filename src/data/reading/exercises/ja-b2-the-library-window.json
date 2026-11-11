@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-library-window",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "静寂の試行：暁の図書館",
+      "en": "静寂の試行：暁の図書館"
+    },
+    "intro": {
+      "es": "深夜勤務に従事する人々のために、図書館が試験的に早朝開館を開始した際の人間模様と、その影響を描いた物語。",
+      "en": "深夜勤務に従事する人々のために、図書館が試験的に早朝開館を開始した際の人間模様と、その影響を描いた物語。"
+    },
+    "mission": {
+      "es": "この物語を通じて、公共サービスの変容が個人の生活や地域の調和にどのような影響を与えるかを考察し、読解力を養う。",
+      "en": "この物語を通じて、公共サービスの変容が個人の生活や地域の調和にどのような影響を与えるかを考察し、読解力を養う。"
+    },
+    "targetText": "市立中央図書館の館長である佐藤は、夜勤明けの市民から「静かな読書時間が確保できない」という苦情を度々受けていた。そこで彼は、午前六時からの「静寂の試行」という試験的な早朝開館を導入することを決断した。この施策には、通常業務のシフト変更を余儀なくされるスタッフの強い反発があった。特に、長年勤務するベテラン司書の田中は、「朝の準備時間は本来、蔵書の整理や展示の入れ替えに不可欠な時間だ。開館を早めれば、サービスの質が低下する」と強く反対した。しかし、佐藤は「図書館は市民の生活リズムに寄り添うべきだ」と譲らず、二週間の試験運用が強行されることとなった。\n\n初日の早朝、図書館の扉が開くと、そこには予想を上回る数の利用者が並んでいた。工場勤務を終えたばかりの作業着姿の男性や、早朝の静けさを求めてやってきた学生たちが、慣れた手つきで書架へ向かっていく。館内は、普段の喧騒が嘘のように静まり返り、ページをめくる音だけが響いていた。田中は不満げにカウンターに立っていたが、窓から差し込む朝日の中で、一心不乱に本を読み耽る人々の姿を目の当たりにし、少しずつ表情を和らげていった。彼らにとって、この時間は単なる読書ではなく、過酷な一日を終えて自分を取り戻すための聖域だったのだ。\n\nしかし、順調に見えた試行の裏で、新たな問題が浮上した。早朝シフトを任された若手職員の鈴木が、疲労から業務ミスを連発し始めたのだ。深夜の準備と早朝の接客という二重の負担が、彼の生活リズムを崩壊させていた。田中はその様子を見て、かつての自分の頑固さを恥じると同時に、佐藤の理想論だけでは現場が持たないことを痛感した。彼女は佐藤に対して、シフトの交代制を抜本的に見直すべきだと進言した。「利用者の喜びを守るには、まず働く側の持続可能性を確保しなければならない」という田中の言葉は、佐藤の心に深く突き刺さった。\n\n二週間の期限が迫る中、館内では「このまま継続してほしい」という署名運動が自然発生的に広がっていた。一方で、スタッフの疲弊は限界に達しており、佐藤は苦渋の決断を迫られた。彼は、早朝開館を恒久的なサービスとして認める代わりに、外部のボランティアを募り、職員の負担を軽減する新たな運営体制を提案した。この提案に対し、田中は「現場の声を無視した妥協案だ」と批判しつつも、利用者の笑顔を失いたくないという思いから、渋々ながらも協力する姿勢を見せた。図書館という空間が、公共の利益と個人の犠牲の間で揺れ動く瞬間だった。\n\n最終日の夜、佐藤と田中は閉館後の静かな館内で、今後の運営について議論を重ねた。早朝開館は確かに市民の生活を豊かにしたが、それはスタッフの献身という見えない犠牲の上に成り立っていた。二人は、完璧な解決策など存在しないことを認めつつも、対話を続けることでしか図書館の未来は切り拓けないと確信した。翌朝、再び朝日が昇る中、図書館の扉は開かれた。そこには、昨日までとは少し違う、互いの立場を尊重し合うスタッフと、静かな読書時間を慈しむ市民たちの姿があった。問題は完全には解決していないが、彼らは確かに新しい一歩を踏み出していた。",
+    "wordCount": 1203,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "余儀なくされる",
+        "lemma": "余儀なくされる",
+        "glosses": {
+          "es": "to be forced to",
+          "en": "to be forced to"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "喧騒",
+        "lemma": "喧騒",
+        "glosses": {
+          "es": "noise and bustle",
+          "en": "noise and bustle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "聖域",
+        "lemma": "聖域",
+        "glosses": {
+          "es": "sanctuary",
+          "en": "sanctuary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "抜本的",
+        "lemma": "抜本的",
+        "glosses": {
+          "es": "drastic",
+          "en": "drastic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "恒久的な",
+        "lemma": "恒久的な",
+        "glosses": {
+          "es": "permanent",
+          "en": "permanent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "献身",
+        "lemma": "献身",
+        "glosses": {
+          "es": "devotion",
+          "en": "devotion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 43,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:12.273Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主なテーマは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "公共サービスの拡充と現場の負担の調和"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の経営戦略と効率化の重要性"
+        },
+        {
+          "id": "a3",
+          "text": "スタッフの労働環境改善のみを目指す物語"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "図書館という空間が、公共の利益と個人の犠牲の間で揺れ動く瞬間だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "田中が佐藤にシフトの見直しを進言した主な理由は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "利用者の喜びを守るため"
+        },
+        {
+          "id": "a2",
+          "text": "若手職員の疲弊を懸念したため"
+        },
+        {
+          "id": "a3",
+          "text": "自身の業務負担が増えたため"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "早朝シフトを任された若手職員の鈴木が、疲労から業務ミスを連発し始めたのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "物語の最後で、佐藤と田中が対話を続けたことの意味は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "問題の完全な解決"
+        },
+        {
+          "id": "a2",
+          "text": "妥協による現状維持"
+        },
+        {
+          "id": "a3",
+          "text": "持続可能な運営への模索"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "二人は、完璧な解決策など存在しないことを認めつつも、対話を続けることでしか図書館の未来は切り拓けないと確信した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "佐藤が早朝開館を強行した本来の目的は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "市民の生活リズムに寄り添うため"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の利用者を増やすため"
+        },
+        {
+          "id": "a3",
+          "text": "スタッフの労働意欲を高めるため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "佐藤は「図書館は市民の生活リズムに寄り添うべきだ」と譲らず",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この物語の結末における筆者の態度はどのようなものですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちている"
+        },
+        {
+          "id": "a2",
+          "text": "未解決の課題を抱えつつも前向き"
+        },
+        {
+          "id": "a3",
+          "text": "現状への強い批判と悲観"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "問題は完全には解決していないが、彼らは確かに新しい一歩を踏み出していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「聖域」という言葉が持つニュアンスとして最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "誰も立ち入ることができない場所"
+        },
+        {
+          "id": "a2",
+          "text": "神聖な儀式を行うための場所"
+        },
+        {
+          "id": "a3",
+          "text": "静けさが守られた特別な空間"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼らにとって、この時間は単なる読書ではなく、過酷な一日を終えて自分を取り戻すための聖域だったのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "公共サービスにおける「利用者の利便性」と「労働者の負担」のバランスをどう取るべきか、あなたの意見を400字程度で述べてください。",
+      "en": "公共サービスにおける「利用者の利便性」と「労働者の負担」のバランスをどう取るべきか、あなたの意見を400字程度で述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "この物語を通じて、公共サービスの変容が個人の生活や地域の調和にどのような影響を与えるかを考察し、読解力を養う。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:12.273Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "静寂の試行：暁の図書館 | B2 Reading | WeLearn",
+      "en": "静寂の試行：暁の図書館 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "深夜勤務に従事する人々のために、図書館が試験的に早朝開館を開始した際の人間模様と、その影響を描いた物語。",
+      "en": "深夜勤務に従事する人々のために、図書館が試験的に早朝開館を開始した際の人間模様と、その影響を描いた物語。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:12.273Z"
+  }
+}

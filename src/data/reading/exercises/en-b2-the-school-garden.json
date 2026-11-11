@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-school-garden",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Roots of Responsibility",
+      "en": "The Roots of Responsibility"
+    },
+    "intro": {
+      "es": "An exploration of the social dynamics and logistical challenges inherent in sustaining a community-driven school garden project.",
+      "en": "An exploration of the social dynamics and logistical challenges inherent in sustaining a community-driven school garden project."
+    },
+    "mission": {
+      "es": "To analyze the tension between communal benefits and individual obligations within a school-based agricultural initiative.",
+      "en": "To analyze the tension between communal benefits and individual obligations within a school-based agricultural initiative."
+    },
+    "targetText": "The Oakwood Academy garden was once a patch of neglected weeds, but after a year of student-led cultivation, it has become the pride of the school. Fresh kale, heirloom tomatoes, and crisp snap peas now feature prominently in the cafeteria’s salad bar, providing students with nutritious ingredients that were previously unavailable. However, as the academic year draws to a close, the garden faces a precarious future. The summer months, characterized by scorching heat and minimal rainfall, threaten to undo the progress made by the student gardening club. Without consistent irrigation and weeding, the vibrant beds will inevitably succumb to the encroaching wilderness.\n\nTo address this, Leo, the club president, proposed a summer volunteer rota. He envisioned a system where families would be assigned one week of maintenance duty throughout the break. While the plan was logically sound, it triggered a wave of dissent among parents. At a tense town hall meeting, Sarah, a mother of two, argued that the burden of upkeep should not fall upon families who are already struggling to balance work and childcare during the holidays. She questioned why the school administration had not allocated funds for a professional groundskeeper, suggesting that the garden’s success had masked the reality of its labor-intensive nature.\n\nThe conflict deepened when the school board released a statement clarifying that the garden was intended as an educational tool rather than a commercial enterprise. They maintained that if the community could not sustain the project voluntarily, the garden would be repurposed into a paved courtyard. This ultimatum forced a shift in the debate. Supporters of the garden, including several local teachers, argued that the labor was a small price to pay for the educational value the space provided. They emphasized that the act of tending to the soil taught students resilience and patience—qualities that could not be replicated in a classroom setting.\n\nDespite these passionate defenses, the tension remained unresolved. A compromise was eventually suggested: the garden would be significantly downsized to a few low-maintenance raised beds, and only those families who actively participated in the summer rota would be eligible to harvest the produce in the autumn. This solution, while practical, left a bitter taste for some. It transformed a communal asset into a conditional privilege, alienating parents who felt that their contribution to the school community was being measured solely by their ability to weed during July.\n\nAs the final bell rang, the future of the Oakwood garden remained uncertain. The beds were still lush, but the social climate was fractured. The project had succeeded in growing food, but it had failed to cultivate a consensus on the nature of shared responsibility. Ultimately, the garden serves as a poignant reminder that even the most well-intentioned community initiatives require more than just sunlight and water to thrive; they require a foundation of mutual understanding that, in this instance, proved far harder to nurture than the crops themselves.",
+    "wordCount": 485,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "precarious",
+        "lemma": "precarious",
+        "glosses": {
+          "es": "uncertain or unstable",
+          "en": "uncertain or unstable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "succumb",
+        "lemma": "succumb",
+        "glosses": {
+          "es": "fail to resist pressure or illness",
+          "en": "fail to resist pressure or illness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissent",
+        "lemma": "dissent",
+        "glosses": {
+          "es": "disagreement with an official decision",
+          "en": "disagreement with an official decision"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ultimatum",
+        "lemma": "ultimatum",
+        "glosses": {
+          "es": "a final demand or statement of terms",
+          "en": "a final demand or statement of terms"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienating",
+        "lemma": "alienating",
+        "glosses": {
+          "es": "causing someone to feel isolated",
+          "en": "causing someone to feel isolated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "poignant",
+        "lemma": "poignant",
+        "glosses": {
+          "es": "evoking a keen sense of sadness",
+          "en": "evoking a keen sense of sadness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary focus of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The conflict over garden maintenance."
+        },
+        {
+          "id": "a2",
+          "text": "The nutritional benefits of school gardens."
+        },
+        {
+          "id": "a3",
+          "text": "The history of the Oakwood Academy."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The conflict deepened when the school board released a statement clarifying that the garden was intended as an educational tool rather than a commercial enterprise.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What was the result of the town hall meeting?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The board hired a groundskeeper."
+        },
+        {
+          "id": "a2",
+          "text": "The board issued an ultimatum."
+        },
+        {
+          "id": "a3",
+          "text": "Parents agreed to the rota."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "They maintained that if the community could not sustain the project voluntarily, the garden would be repurposed into a paved courtyard.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did the compromise leave a 'bitter taste' for some parents?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It reduced the garden to a small size."
+        },
+        {
+          "id": "a2",
+          "text": "It required too much physical labor."
+        },
+        {
+          "id": "a3",
+          "text": "It made access to produce conditional."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It transformed a communal asset into a conditional privilege, alienating parents who felt that their contribution to the school community was being measured solely by their ability to weed during July.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention that the garden teaches resilience?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the educational value argued by supporters."
+        },
+        {
+          "id": "a2",
+          "text": "To prove that students are better off outside."
+        },
+        {
+          "id": "a3",
+          "text": "To justify the cost of the project."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "They emphasized that the act of tending to the soil taught students resilience and patience—qualities that could not be replicated in a classroom setting.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would one describe the author's tone in the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic and encouraging."
+        },
+        {
+          "id": "a2",
+          "text": "Reflective and slightly melancholic."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and purely factual."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ultimately, the garden serves as a poignant reminder that even the most well-intentioned community initiatives require more than just sunlight and water to thrive",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'precarious' suggest about the garden's future?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is likely to thrive."
+        },
+        {
+          "id": "a2",
+          "text": "It is currently very stable."
+        },
+        {
+          "id": "a3",
+          "text": "It is in a dangerous state."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The summer months, characterized by scorching heat and minimal rainfall, threaten to undo the progress made by the student gardening club.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word proposal for a school project that balances community involvement with administrative support to avoid the conflicts described in the text.",
+      "en": "Write a 150-word proposal for a school project that balances community involvement with administrative support to avoid the conflicts described in the text."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "To analyze the tension between communal benefits and individual obligations within a school-based agricultural initiative.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Roots of Responsibility | B2 Reading | WeLearn",
+      "en": "The Roots of Responsibility | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the social dynamics and logistical challenges inherent in sustaining a community-driven school garden project.",
+      "en": "An exploration of the social dynamics and logistical challenges inherent in sustaining a community-driven school garden project."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

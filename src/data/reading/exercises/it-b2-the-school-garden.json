@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-school-garden",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il dilemma dell'orto scolastico: tra educazione e fatica",
+      "en": "Il dilemma dell'orto scolastico: tra educazione e fatica"
+    },
+    "intro": {
+      "es": "Un articolo che esplora le tensioni nate attorno alla gestione estiva dell'orto didattico presso l'Istituto 'Girasole'.",
+      "en": "Un articolo che esplora le tensioni nate attorno alla gestione estiva dell'orto didattico presso l'Istituto 'Girasole'."
+    },
+    "mission": {
+      "es": "Analizzare le dinamiche tra istituzione scolastica, studenti e famiglie in merito alla sostenibilità di un progetto educativo.",
+      "en": "Analizzare le dinamiche tra istituzione scolastica, studenti e famiglie in merito alla sostenibilità di un progetto educativo."
+    },
+    "targetText": "L'orto didattico dell'Istituto Girasole è diventato, nel corso dell'ultimo anno, il fulcro di un ambizioso progetto di educazione alimentare. Grazie alla dedizione della professoressa Elena Bianchi e dei suoi studenti, la mensa scolastica ha iniziato a servire verdure fresche a chilometro zero, trasformando il pranzo in un'esperienza pedagogica tangibile. Tuttavia, il successo del raccolto ha sollevato un problema logistico di non poco conto: la chiusura estiva della scuola. Con l'arrivo di giugno, le piante rischiano di appassire sotto il sole torrido, vanificando mesi di lavoro meticoloso.\n\nPer ovviare a questo inconveniente, il consiglio studentesco ha proposto un sistema di rotazione volontaria. L'idea prevedeva che ogni studente, a turno, si occupasse dell'irrigazione e della manutenzione del terreno durante le vacanze. La proposta, inizialmente accolta con entusiasmo, si è scontrata con una realtà familiare complessa. Molti genitori hanno sollevato obiezioni, interpretando l'iniziativa come un carico di lavoro non retribuito e un'intrusione nel tempo libero delle famiglie. La polemica si è accesa durante l'ultima riunione dei rappresentanti, dove la signora Rossi ha apertamente criticato l'idea, definendola una delega impropria di una responsabilità che spetterebbe esclusivamente alla scuola.\n\nLa professoressa Bianchi, dal canto suo, ha cercato di mediare, sottolineando come la cura del verde sia parte integrante del percorso formativo. Secondo la docente, l'orto non è un semplice fornitore di verdure, ma un laboratorio di cittadinanza attiva dove la responsabilità collettiva dovrebbe prevalere sull'individualismo. Eppure, la tensione resta palpabile. Alcuni studenti, inizialmente motivati, iniziano a mostrare segni di insofferenza, temendo che la pressione dei genitori possa trasformare una passione in un obbligo frustrante.\n\nLe interpretazioni del conflitto divergono profondamente tra i vari attori. Per il corpo docente, il rifiuto delle famiglie è sintomo di una visione utilitaristica della scuola, vista solo come un servizio e non come una comunità. Al contrario, per i genitori, la pretesa della scuola di estendere la propria influenza oltre il calendario scolastico rappresenta una violazione della privacy familiare. La scuola si trova dunque a un bivio: imporre una gestione centralizzata, che però richiederebbe costi aggiuntivi per il personale, o rinunciare al progetto, accettando il fallimento di un'iniziativa che aveva saputo unire l'intera comunità.\n\nLa conclusione rimane sospesa in un limbo di incertezza. Nonostante gli appelli alla collaborazione, il calendario delle rotazioni estive è rimasto vuoto. La professoressa Bianchi ha deciso di prendersi carico personalmente della cura dell'orto per le prime settimane di luglio, un gesto di abnegazione che, lungi dal risolvere la questione, ha solo evidenziato la fragilità del sistema. L'orto continua a crescere, ma il futuro del progetto appare incerto, trasformandosi in un monito su quanto sia difficile coniugare le ambizioni pedagogiche con le resistenze quotidiane della vita reale.",
+    "wordCount": 441,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vanificando",
+        "lemma": "vanificando",
+        "glosses": {
+          "es": "making useless",
+          "en": "making useless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ovviare",
+        "lemma": "ovviare",
+        "glosses": {
+          "es": "to remedy",
+          "en": "to remedy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpabile",
+        "lemma": "palpabile",
+        "glosses": {
+          "es": "tangible/obvious",
+          "en": "tangible/obvious"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "utilitaristica",
+        "lemma": "utilitaristica",
+        "glosses": {
+          "es": "utilitarian",
+          "en": "utilitarian"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abnegazione",
+        "lemma": "abnegazione",
+        "glosses": {
+          "es": "self-sacrifice",
+          "en": "self-sacrifice"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "monito",
+        "lemma": "monito",
+        "glosses": {
+          "es": "warning",
+          "en": "warning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione estiva dell'orto."
+        },
+        {
+          "id": "a2",
+          "text": "Il costo delle verdure scolastiche."
+        },
+        {
+          "id": "a3",
+          "text": "Il successo del progetto didattico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Con l'arrivo di giugno, le piante rischiano di appassire sotto il sole torrido, vanificando mesi di lavoro meticoloso.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Chi ha espresso critiche durante la riunione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La professoressa Bianchi."
+        },
+        {
+          "id": "a2",
+          "text": "La signora Rossi."
+        },
+        {
+          "id": "a3",
+          "text": "Il consiglio studentesco."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la signora Rossi ha apertamente criticato l'idea, definendola una delega impropria di una responsabilità che spetterebbe esclusivamente alla scuola.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual è l'atteggiamento dei genitori verso la scuola?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Vogliono più orti."
+        },
+        {
+          "id": "a2",
+          "text": "Vogliono meno compiti."
+        },
+        {
+          "id": "a3",
+          "text": "Vedono la scuola come un servizio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Per il corpo docente, il rifiuto delle famiglie è sintomo di una visione utilitaristica della scuola, vista solo come un servizio e non come una comunità.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Perché la professoressa Bianchi si prende cura dell'orto a luglio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché non c'è una soluzione condivisa."
+        },
+        {
+          "id": "a2",
+          "text": "Perché ama l'agricoltura."
+        },
+        {
+          "id": "a3",
+          "text": "Perché è pagata dalla scuola per farlo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Nonostante gli appelli alla collaborazione, il calendario delle rotazioni estive è rimasto vuoto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono dell'autore riguardo al futuro del progetto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista."
+        },
+        {
+          "id": "a2",
+          "text": "Incertezza sospesa."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La conclusione rimane sospesa in un limbo di incertezza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'vanificando' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Migliorando la qualità."
+        },
+        {
+          "id": "a2",
+          "text": "Aumentando la produzione."
+        },
+        {
+          "id": "a3",
+          "text": "Rendendo inutile."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "le piante rischiano di appassire sotto il sole torrido, vanificando mesi di lavoro meticoloso.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve testo in cui proponi una soluzione alternativa per salvare l'orto scolastico, mediando tra le esigenze della scuola e quelle delle famiglie.",
+      "en": "Scrivi un breve testo in cui proponi una soluzione alternativa per salvare l'orto scolastico, mediando tra le esigenze della scuola e quelle delle famiglie."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizzare le dinamiche tra istituzione scolastica, studenti e famiglie in merito alla sostenibilità di un progetto educativo.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il dilemma dell'orto scolastico: tra educazione e fatica | B2 Reading | WeLearn",
+      "en": "Il dilemma dell'orto scolastico: tra educazione e fatica | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un articolo che esplora le tensioni nate attorno alla gestione estiva dell'orto didattico presso l'Istituto 'Girasole'.",
+      "en": "Un articolo che esplora le tensioni nate attorno alla gestione estiva dell'orto didattico presso l'Istituto 'Girasole'."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

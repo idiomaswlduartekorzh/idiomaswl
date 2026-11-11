@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "種子の循環と沈黙の約束",
+      "en": "種子の循環と沈黙の約束"
+    },
+    "intro": {
+      "es": "ある小さな町の種子図書館で起きた、深刻な干ばつと貸し出しルールの衝突を描く物語です。",
+      "en": "ある小さな町の種子図書館で起きた、深刻な干ばつと貸し出しルールの衝突を描く物語です。"
+    },
+    "mission": {
+      "es": "地域固有の作物を守り、次世代へ継承するための種子貸し出しルールの是非を考察する。",
+      "en": "地域固有の作物を守り、次世代へ継承するための種子貸し出しルールの是非を考察する。"
+    },
+    "targetText": "山あいの町にある「結びの種子図書館」は、古くから伝わる地元の野菜の種を守る聖域であった。館長の佐藤さんは、借りた種を育て、収穫した種を翌年に返却するという循環を大切にしていた。しかし、今年は記録的な干ばつに見舞われ、多くの農家が作物の枯死に直面した。収穫が皆無に近い状況下で、返却を求めるべきか、それとも免除すべきか、運営委員会は二手に分かれた。ベテラン農家の田中さんは「例外を認めれば、図書館の信頼が崩れる」と厳格なルール維持を主張し、一方で若手のボランティアであるエミさんは「今、返却を強制すれば、彼らは二度とここへ戻ってこない」と救済を訴えた。佐藤さんは、この図書館が単なる種子の保管庫ではなく、町の人々の絆を育む場所であることを再認識していた。\n\n議論は深夜まで続いた。田中さんは、種子が貴重な公的資産であることを強調し、返却ができない者には来年の貸し出しを停止するべきだと説いた。対照的にエミさんは、干ばつという不可抗力に対して罰を与えることは、コミュニティの精神に反すると反論した。佐藤さんは静かに耳を傾けながら、一つの妥協案を提示した。それは、返却できない者には、代わりに次回の種まき時期に図書館の畑を手伝う「労働奉仕」を課すというものだった。これならば、種子の循環を止めることなく、同時に農家の負担も軽減できるという論理であった。\n\nしかし、この提案に対しても新たな懸念が浮上した。労働奉仕を課すことは、農家にとって「罰」と受け取られるのではないか、という指摘である。田中さんは、労働は対価であり罰ではないと主張するが、エミさんは、自尊心を傷つける行為は地域社会の分断を招くと危惧した。結局、満場一致の結論は出なかった。佐藤さんは、最終的に「返却義務の免除」を一時的な措置として導入しつつ、翌年の収穫が回復した際に、余剰分を少し多めに寄付してもらうという「恩送り」の仕組みを提案した。\n\nこの決定は、厳格なルールを好む層からは甘いと批判されたが、多くの農家からは安堵の声が上がった。数ヶ月後、図書館の棚には例年よりも少ない種子しか戻ってこなかったが、それ以上に多くの農家が図書館を訪れ、互いの苦労を語り合う姿があった。種子の数は減っても、人々の繋がりは以前よりも深まっていたのである。佐藤さんは、種子をただの物質としてではなく、人々の生活の記憶として捉えることの重要性を噛み締めていた。\n\n物語は、種子図書館の未来に一つの問いを投げかけている。ルールはコミュニティを守るための盾なのか、それとも人を縛り付ける檻なのか。干ばつが去った後の町で、人々は再び種を蒔き始めたが、その手つきには以前とは異なる慎重さと、隣人への配慮が宿っていた。種子の循環が物理的な収穫量だけで測れないことを、彼らは身をもって学んだのである。この小さな図書館の試行錯誤は、持続可能な社会とは何かという問いに対する、一つの静かな回答なのかもしれない。",
+    "wordCount": 1121,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "聖域",
+        "lemma": "聖域",
+        "glosses": {
+          "es": "sanctuary",
+          "en": "sanctuary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "枯死",
+        "lemma": "枯死",
+        "glosses": {
+          "es": "withering to death",
+          "en": "withering to death"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不可抗力",
+        "lemma": "不可抗力",
+        "glosses": {
+          "es": "force majeure",
+          "en": "force majeure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "危惧",
+        "lemma": "危惧",
+        "glosses": {
+          "es": "fear or apprehension",
+          "en": "fear or apprehension"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "恩送り",
+        "lemma": "恩送り",
+        "glosses": {
+          "es": "paying it forward",
+          "en": "paying it forward"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "持続可能",
+        "lemma": "持続可能",
+        "glosses": {
+          "es": "sustainable",
+          "en": "sustainable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 43.1,
+      "maxSentenceWords": 93,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主なテーマは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "種子の保存とルールの葛藤"
+        },
+        {
+          "id": "a2",
+          "text": "干ばつによる農業の経済的損失"
+        },
+        {
+          "id": "a3",
+          "text": "種子図書館の運営に関する法的責任"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "収穫が皆無に近い状況下で、返却を求めるべきか、それとも免除すべきか、運営委員会は二手に分かれた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐藤さんが最終的に採用した方針は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "労働奉仕の導入"
+        },
+        {
+          "id": "a2",
+          "text": "返却義務の免除"
+        },
+        {
+          "id": "a3",
+          "text": "罰金の徴収"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "佐藤さんは、最終的に「返却義務の免除」を一時的な措置として導入しつつ、翌年の収穫が回復した際に、余剰分を少し多めに寄付してもらうという「恩送り」の仕組みを提案した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "田中さんが「労働奉仕」を提案した理由は何だと推測されますか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "農家の自尊心を高めるため"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の運営資金を稼ぐため"
+        },
+        {
+          "id": "a3",
+          "text": "種子の返却という原則を守るため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "田中さんは、種子が貴重な公的資産であることを強調し、返却ができない者には来年の貸し出しを停止するべきだと説いた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者が物語の最後に「問い」を投げかけている目的は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "読者にコミュニティのあり方を考えさせるため"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の運営上の問題を解決するため"
+        },
+        {
+          "id": "a3",
+          "text": "干ばつ対策の重要性を強調するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "物語は、種子図書館の未来に一つの問いを投げかけている。ルールはコミュニティを守るための盾なのか、それとも人を縛り付ける檻なのか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この物語の全体的なトーンとして最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的"
+        },
+        {
+          "id": "a2",
+          "text": "思索的"
+        },
+        {
+          "id": "a3",
+          "text": "批判的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "種子の循環が物理的な収穫量だけで測れないことを、彼らは身をもって学んだのである。この小さな図書館の試行錯誤は、持続可能な社会とは何かという問いに対する、一つの静かな回答なのかもしれない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「恩送り」という言葉が持つ意味として、文脈上最も近いものはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "過去の借りを返すこと"
+        },
+        {
+          "id": "a2",
+          "text": "将来の利益を期待して投資すること"
+        },
+        {
+          "id": "a3",
+          "text": "地域社会で助け合うこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "翌年の収穫が回復した際に、余剰分を少し多めに寄付してもらうという「恩送り」の仕組みを提案した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたの地域やコミュニティにおいて、ルールと個人の事情が対立した経験を、この物語の教訓を踏まえて800文字程度で論じてください。",
+      "en": "あなたの地域やコミュニティにおいて、ルールと個人の事情が対立した経験を、この物語の教訓を踏まえて800文字程度で論じてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "地域固有の作物を守り、次世代へ継承するための種子貸し出しルールの是非を考察する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "種子の循環と沈黙の約束 | B2 Reading | WeLearn",
+      "en": "種子の循環と沈黙の約束 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "ある小さな町の種子図書館で起きた、深刻な干ばつと貸し出しルールの衝突を描く物語です。",
+      "en": "ある小さな町の種子図書館で起きた、深刻な干ばつと貸し出しルールの衝突を描く物語です。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

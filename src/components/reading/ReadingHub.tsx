@@ -65,7 +65,7 @@ export function ReadingHub({
         ) : <div className={styles.heroGlyph} aria-hidden="true"><BookOpenText size={44} /></div>}
       </section>
 
-      {advanced && <ReadingPilotDirectory links={pilotLinks} />}
+      {advanced && <ReadingPilotDirectory links={pilotLinks} currentLanguage={language} currentLevel={level} />}
 
       {exercises.length ? (
         <section className={styles.topicList} aria-label={copy.title}>

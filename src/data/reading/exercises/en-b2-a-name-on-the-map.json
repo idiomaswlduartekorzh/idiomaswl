@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-a-name-on-the-map",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Echo of Oakhaven",
+      "en": "The Echo of Oakhaven"
+    },
+    "intro": {
+      "es": "A small town faces a dilemma over its identity versus its modern convenience.",
+      "en": "A small town faces a dilemma over its identity versus its modern convenience."
+    },
+    "mission": {
+      "es": "Read the story of Oakhaven's renaming debate and answer the questions to demonstrate comprehension of the narrative conflict.",
+      "en": "Read the story of Oakhaven's renaming debate and answer the questions to demonstrate comprehension of the narrative conflict."
+    },
+    "targetText": "The town council meeting in Oakhaven was unusually crowded, the air thick with the scent of damp wool and brewing tension. At the center of the debate was a proposal to revert the town’s name from the utilitarian 'District Four' back to its historical moniker, 'Oakhaven.' Mayor Elias Thorne stood at the podium, his knuckles white as he gripped the edges. For decades, the name District Four had been an administrative convenience, printed on every map and highway sign to streamline postal routes and navigation for transient travelers. Yet, a vocal faction led by local historian Clara Vance argued that the erasure of the original name had stripped the community of its soul, turning a place with deep roots into a mere waypoint on a GPS screen.\n\nClara stood to address the room, her voice steady despite the murmurs from the back. She spoke of the ancient groves that once defined the valley, arguing that names are not merely labels but vessels for cultural memory. She conceded that the transition might cause temporary logistical headaches for delivery services and tourists, yet she insisted that the long-term preservation of identity outweighed the annoyance of updating a few road signs. Her argument was met with a mixture of nods and skeptical frowns from the business owners in the front row, who feared that any deviation from the recognizable District Four would lead to a decline in tourism revenue.\n\nMr. Henderson, owner of the town’s primary inn, represented the opposition. He pointed to the digital age, where efficiency was the currency of survival. He argued that travelers, already exhausted by long journeys, would likely bypass a town that appeared to have 'lost' its designated location on their navigation systems. To him, the name change was an act of vanity that ignored the practical realities of the modern economy. He painted a picture of confused delivery drivers and lost tourists, suggesting that Oakhaven was a romanticized dream that could not sustain the town’s financial health.\n\nAs the debate raged, the tension shifted from historical preservation to economic survival. The council members sat in silence, weighing the intangible value of heritage against the tangible necessity of accessibility. The room felt divided by an invisible line, separating those who saw the town as a living history book and those who saw it as a functional node in a global network. There was no easy middle ground, as the identity of the town seemed to be tethered to its very name.\n\nIn the end, the motion was tabled indefinitely. No vote was cast, leaving the town in a state of suspended animation. The signs remained as they were, yet the conversation had permanently altered the atmosphere of the town. Residents walked home under the dim streetlights, aware that while the name District Four remained on the maps, the secret name of Oakhaven now lingered on their tongues, a ghost of a history that refused to be fully buried.",
+    "wordCount": 491,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "moniker",
+        "lemma": "moniker",
+        "glosses": {
+          "es": "a name or nickname",
+          "en": "a name or nickname"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "utilitarian",
+        "lemma": "utilitarian",
+        "glosses": {
+          "es": "designed to be useful or practical rather than attractive",
+          "en": "designed to be useful or practical rather than attractive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "waypoint",
+        "lemma": "waypoint",
+        "glosses": {
+          "es": "a stopping point on a journey",
+          "en": "a stopping point on a journey"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tangible",
+        "lemma": "tangible",
+        "glosses": {
+          "es": "perceptible by touch; clear and definite",
+          "en": "perceptible by touch; clear and definite"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tethered",
+        "lemma": "tethered",
+        "glosses": {
+          "es": "tied or fastened to something",
+          "en": "tied or fastened to something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tabled",
+        "lemma": "tabled",
+        "glosses": {
+          "es": "postponed consideration of a proposal",
+          "en": "postponed consideration of a proposal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.3,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict described in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle between historical identity and modern efficiency."
+        },
+        {
+          "id": "a2",
+          "text": "A dispute over the town's budget."
+        },
+        {
+          "id": "a3",
+          "text": "The rivalry between the mayor and the local innkeeper."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The room felt divided by an invisible line, separating those who saw the town as a living history book and those who saw it as a functional node in a global network.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Mr. Henderson oppose the name change?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He hated history."
+        },
+        {
+          "id": "a2",
+          "text": "He feared losing tourists."
+        },
+        {
+          "id": "a3",
+          "text": "He wanted to move away from the town entirely."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He argued that travelers, already exhausted by long journeys, would likely bypass a town that appeared to have 'lost' its designated location on their navigation systems.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author imply about the town's future?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The name will change soon."
+        },
+        {
+          "id": "a2",
+          "text": "The town will go bankrupt."
+        },
+        {
+          "id": "a3",
+          "text": "The division will persist."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The signs remained as they were, yet the conversation had permanently altered the atmosphere of the town.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the 'scent of damp wool' in the opening?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To set a somber, tense mood."
+        },
+        {
+          "id": "a2",
+          "text": "To describe the weather."
+        },
+        {
+          "id": "a3",
+          "text": "To explain the town's industry."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The town council meeting in Oakhaven was unusually crowded, the air thick with the scent of damp wool and brewing tension.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the overall tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Hopeful and optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Unresolved and reflective."
+        },
+        {
+          "id": "a3",
+          "text": "Angry and confrontational."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "In the end, the motion was tabled indefinitely. No vote was cast, leaving the town in a state of suspended animation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What is the meaning of 'utilitarian' as used in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Old-fashioned."
+        },
+        {
+          "id": "a2",
+          "text": "Highly aesthetic."
+        },
+        {
+          "id": "a3",
+          "text": "Practical and functional."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "For decades, the name District Four had been an administrative convenience, printed on every map and highway sign to streamline postal routes and navigation for transient travelers.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short paragraph arguing whether a town should prioritize its historical identity or its modern convenience, using at least two of the vocabulary words provided in the text.",
+      "en": "Write a short paragraph arguing whether a town should prioritize its historical identity or its modern convenience, using at least two of the vocabulary words provided in the text."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Read the story of Oakhaven's renaming debate and answer the questions to demonstrate comprehension of the narrative conflict.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Echo of Oakhaven | B2 Reading | WeLearn",
+      "en": "The Echo of Oakhaven | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A small town faces a dilemma over its identity versus its modern convenience.",
+      "en": "A small town faces a dilemma over its identity versus its modern convenience."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

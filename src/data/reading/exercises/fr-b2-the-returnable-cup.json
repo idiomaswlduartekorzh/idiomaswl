@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le dilemme de la consigne : l'expérience du café L'Éveil",
+      "en": "Le dilemme de la consigne : l'expérience du café L'Éveil"
+    },
+    "intro": {
+      "es": "Cet article examine les défis logistiques et environnementaux liés à l'introduction de tasses réutilisables dans un établissement urbain prisé.",
+      "en": "Cet article examine les défis logistiques et environnementaux liés à l'introduction de tasses réutilisables dans un établissement urbain prisé."
+    },
+    "mission": {
+      "es": "Analysez l'impact de la nouvelle politique de consigne sur la clientèle et la gestion opérationnelle du café.",
+      "en": "Analysez l'impact de la nouvelle politique de consigne sur la clientèle et la gestion opérationnelle du café."
+    },
+    "targetText": "Le café L'Éveil, situé au cœur du quartier des arts, a récemment instauré une politique de tasses consignées pour réduire ses déchets quotidiens. Désormais, chaque boisson à emporter nécessite le paiement d'une consigne de deux euros, récupérable uniquement en rapportant le contenant sur place. Cette initiative, saluée par les habitués engagés dans une démarche écologique, a permis de diviser par quatre le volume des poubelles débordantes qui jonchaient auparavant la terrasse. Cependant, cette transition n'est pas sans heurts, révélant une tension croissante entre l'éthique environnementale et la réalité du service client.\n\nMarc, le gérant, a observé une baisse significative de la fréquentation des touristes. Pour ces visiteurs de passage, la contrainte de revenir au café pour récupérer leur dû s'avère rédhibitoire. Lors d'un après-midi pluvieux, une cliente étrangère a vivement critiqué ce système, arguant qu'elle ne pouvait pas modifier son itinéraire pour rendre une tasse. Ce conflit illustre une fracture entre les résidents, qui intègrent ce geste dans leur routine, et les usagers occasionnels qui perçoivent la consigne comme une taxe déguisée plutôt que comme un service écoresponsable.\n\nL'aspect logistique pose également un défi majeur. Les serveurs, déjà sous pression, doivent désormais gérer le nettoyage et le stockage des tasses retournées, ce qui ralentit considérablement la cadence. Léa, une employée, souligne que la gestion des stocks de tasses propres devient un casse-tête quotidien. La pénurie de contenants le matin, causée par un retour massif en fin de journée, crée un déséquilibre opérationnel difficile à stabiliser. Le personnel se retrouve alors à devoir refuser des commandes, transformant une solution écologique en un obstacle commercial.\n\nLa direction hésite sur la marche à suivre. D'un côté, le bilan carbone du café s'est indéniablement amélioré, renforçant l'image de marque de l'établissement auprès d'une clientèle locale fidèle. De l'autre, le mécontentement des clients de passage et la fatigue des employés menacent la viabilité économique du projet. L'idée de collaborer avec d'autres commerces du quartier pour mutualiser les points de retour a été évoquée, mais les coûts logistiques d'une telle plateforme semblent pour l'instant prohibitifs pour une petite structure.\n\nEn fin de compte, l'expérience du café L'Éveil met en lumière une contradiction fondamentale. Si la réduction des déchets est un objectif louable, sa mise en œuvre impose des compromis qui pèsent lourdement sur la fluidité des interactions humaines. Le café se trouve désormais à la croisée des chemins : maintenir une politique stricte au risque d'aliéner une partie de sa clientèle, ou assouplir ses règles au détriment de ses engagements initiaux. Cette situation demeure un exemple frappant des limites de l'action individuelle face aux exigences d'une économie globale et mobile.",
+    "wordCount": 434,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "consigne",
+        "lemma": "consigne",
+        "glosses": {
+          "es": "deposit",
+          "en": "deposit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rédhibitoire",
+        "lemma": "rédhibitoire",
+        "glosses": {
+          "es": "prohibitive or deal-breaking",
+          "en": "prohibitive or deal-breaking"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cadence",
+        "lemma": "cadence",
+        "glosses": {
+          "es": "pace or rhythm",
+          "en": "pace or rhythm"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mutualiser",
+        "lemma": "mutualiser",
+        "glosses": {
+          "es": "to share or pool resources",
+          "en": "to share or pool resources"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prohibitifs",
+        "lemma": "prohibitifs",
+        "glosses": {
+          "es": "excessively expensive",
+          "en": "excessively expensive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aliéner",
+        "lemma": "aliéner",
+        "glosses": {
+          "es": "to alienate",
+          "en": "to alienate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.7,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:51:00.562Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal de ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les défis d'une consigne."
+        },
+        {
+          "id": "a2",
+          "text": "La gestion administrative des déchets municipaux."
+        },
+        {
+          "id": "a3",
+          "text": "Une étude sociologique sur les habitudes de consommation urbaine."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette initiative, saluée par les habitués engagés dans une démarche écologique, a permis de diviser par quatre le volume des poubelles débordantes qui jonchaient auparavant la terrasse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi les touristes sont-ils mécontents ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le prix est trop élevé."
+        },
+        {
+          "id": "a2",
+          "text": "La contrainte du retour."
+        },
+        {
+          "id": "a3",
+          "text": "Le café est fermé le soir."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Pour ces visiteurs de passage, la contrainte de revenir au café pour récupérer leur dû s'avère rédhibitoire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quel est l'impact sur le personnel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils sont plus efficaces."
+        },
+        {
+          "id": "a2",
+          "text": "Ils sont moins nombreux."
+        },
+        {
+          "id": "a3",
+          "text": "Ils subissent une surcharge."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Les serveurs, déjà sous pression, doivent désormais gérer le nettoyage et le stockage des tasses retournées, ce qui ralentit considérablement la cadence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quelle est l'intention de l'auteur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Analyser la complexité d'un changement durable."
+        },
+        {
+          "id": "a2",
+          "text": "Critiquer les méthodes de gestion interne du personnel."
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer l'inefficacité totale des mesures environnementales."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En fin de compte, l'expérience du café L'Éveil met en lumière une contradiction fondamentale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton utilisé par l'auteur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critique."
+        },
+        {
+          "id": "a2",
+          "text": "Neutre et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Subjectif et passionné."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La direction hésite sur la marche à suivre. D'un côté, le bilan carbone du café s'est indéniablement amélioré, renforçant l'image de marque de l'établissement auprès d'une clientèle locale fidèle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'rédhibitoire' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un gain."
+        },
+        {
+          "id": "a2",
+          "text": "Un atout."
+        },
+        {
+          "id": "a3",
+          "text": "Une condition qui empêche l'achat."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Pour ces visiteurs de passage, la contrainte de revenir au café pour récupérer leur dû s'avère rédhibitoire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif sur la possibilité de généraliser ce système de consigne dans les grandes métropoles internationales.",
+      "en": "Rédigez un court paragraphe argumentatif sur la possibilité de généraliser ce système de consigne dans les grandes métropoles internationales."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analysez l'impact de la nouvelle politique de consigne sur la clientèle et la gestion opérationnelle du café.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:51:00.562Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le dilemme de la consigne : l'expérience du café L'Éveil | B2 Reading | WeLearn",
+      "en": "Le dilemme de la consigne : l'expérience du café L'Éveil | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Cet article examine les défis logistiques et environnementaux liés à l'introduction de tasses réutilisables dans un établissement urbain prisé.",
+      "en": "Cet article examine les défis logistiques et environnementaux liés à l'introduction de tasses réutilisables dans un établissement urbain prisé."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:51:00.562Z"
+  }
+}

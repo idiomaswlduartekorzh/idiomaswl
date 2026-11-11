@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-new-crossing",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「安全」という名の岐路：青葉町クリニック前の横断歩道実験",
+      "en": "「安全」という名の岐路：青葉町クリニック前の横断歩道実験"
+    },
+    "intro": {
+      "es": "青葉町クリニック前の交通安全対策を巡る、地域住民とドライバーの対立と、その後の結末について考察する。",
+      "en": "青葉町クリニック前の交通安全対策を巡る、地域住民とドライバーの対立と、その後の結末について考察する。"
+    },
+    "mission": {
+      "es": "記事を読み、横断歩道設置実験がもたらした社会的影響と、その背後にある複雑な対立構造を理解してください。",
+      "en": "記事を読み、横断歩道設置実験がもたらした社会的影響と、その背後にある複雑な対立構造を理解してください。"
+    },
+    "targetText": "青葉町クリニック前の道路は、長年、地域住民にとって「恐怖の横断」を強いる場所であった。高齢の患者が頻繁に利用するこの場所では、車道が広く、車両が速度を落とさずに通過するため、危険な場面が絶えなかった。住民代表の佐藤氏は、クリニックへの安全なアクセスを確保するため、横断歩道の設置を市に強く要望した。しかし、これに対して通勤路としてこの道を利用するドライバーたちは、横断歩道が設置されることで渋滞が深刻化し、朝夕の移動時間が大幅に延びることを懸念し、猛反発した。市は妥協案として、試験的な横断歩道設置を二週間実施することに決定した。\n\n試験期間中、クリニック前には仮設の横断歩道が引かれ、歩行者の安全は確かに向上した。実際に、高齢者たちが安心して道路を渡る姿が見られ、住民側はこれを勝利と捉えた。しかし、反対側のドライバーたちの主張も無視できない現実があった。朝の通勤ラッシュ時には、横断歩道で一時停止する車両により、数百メートルにわたる列が形成され、近隣の幹線道路にまで影響が及んだ。物流業者からは、配送の遅延が業務に支障をきたしているという苦情が市役所に殺到した。この期間、双方の主張は平行線をたどり、歩み寄りの気配は全く見られなかった。\n\n実験の最終日、市が発表した報告書は、極めて慎重な内容であった。歩行者の安全性向上という成果を認めつつも、交通渋滞による経済的損失と、周辺環境への悪影響を無視できないと指摘した。この結果に対し、佐藤氏は「命よりも時間を優先するのか」と憤り、ドライバー団体は「日常的な移動の権利が侵害されている」と反論した。市は、恒久的な設置を見送り、代わりに信号機の設置やガードレールの強化といった代替案を検討すると示唆したが、予算と用地の問題から、その実現性は不透明なままである。\n\nこの騒動は、単なる交通ルールの是非を超え、地域社会における「優先順位」の決定という困難な問いを突きつけた。住民は安全を求め、ドライバーは効率を求める。両者の要求はどちらも正当であり、どちらか一方が完全に譲歩することは不可能に近い。クリニックに通う患者の安全という人道的な側面と、都市機能としての交通の円滑化という実務的な側面は、この道路という狭い空間で激しく衝突し続けている。解決策が見つからないまま、仮設の横断歩道は撤去され、道は元の姿に戻った。\n\n現在、青葉町クリニック前の道路には、以前と変わらぬ光景が広がっている。住民は再び車を避けながら道路を渡り、ドライバーは速度を緩めることなく走り去る。市が提示した「代替案」の具体化は進んでおらず、対立の火種はくすぶったままである。この実験は、安全と効率という二つの価値観が対立した際、いかに妥協点を見出すことが難しいかを浮き彫りにした。私たちは、誰かの犠牲の上に成り立つ便利さを享受しているのではないかという重い問いを、この場所は静かに問いかけ続けている。",
+    "wordCount": 1117,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "絶えなかった",
+        "lemma": "絶えなかった",
+        "glosses": {
+          "es": "did not cease",
+          "en": "did not cease"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "猛反発",
+        "lemma": "猛反発",
+        "glosses": {
+          "es": "fierce opposition",
+          "en": "fierce opposition"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "平行線をたどり",
+        "lemma": "平行線をたどり",
+        "glosses": {
+          "es": "to run parallel (to reach no agreement)",
+          "en": "to run parallel (to reach no agreement)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "示唆した",
+        "lemma": "示唆した",
+        "glosses": {
+          "es": "suggested",
+          "en": "suggested"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "くすぶった",
+        "lemma": "くすぶった",
+        "glosses": {
+          "es": "smoldering",
+          "en": "smoldering"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "享受",
+        "lemma": "享受",
+        "glosses": {
+          "es": "enjoying",
+          "en": "enjoying"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 44.7,
+      "maxSentenceWords": 76,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主なテーマは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "交通安全と効率の対立"
+        },
+        {
+          "id": "a2",
+          "text": "クリニックの経営問題"
+        },
+        {
+          "id": "a3",
+          "text": "道路の補修工事の計画"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "住民は安全を求め、ドライバーは効率を求める。両者の要求はどちらも正当であり、どちらか一方が完全に譲歩することは不可能に近い。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "試験的な横断歩道設置の結果、何が起きましたか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "事故が激減した"
+        },
+        {
+          "id": "a2",
+          "text": "渋滞が発生した"
+        },
+        {
+          "id": "a3",
+          "text": "信号機が設置された"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "朝の通勤ラッシュ時には、横断歩道で一時停止する車両により、数百メートルにわたる列が形成され、近隣の幹線道路にまで影響が及んだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ市は恒久的な設置を見送ったのでしょうか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "住民からの反対意見が強かったため"
+        },
+        {
+          "id": "a2",
+          "text": "警察からの許可が下りなかったため"
+        },
+        {
+          "id": "a3",
+          "text": "経済的損失と環境への影響を懸念したため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "歩行者の安全性向上という成果を認めつつも、交通渋滞による経済的損失と、周辺環境への悪影響を無視できないと指摘した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者がこの文章を書いた主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "安全と効率の対立の難しさを考察するため"
+        },
+        {
+          "id": "a2",
+          "text": "市役所の不手際を厳しく批判するため"
+        },
+        {
+          "id": "a3",
+          "text": "新しい交通ルールの導入を提案するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この実験は、安全と効率という二つの価値観が対立した際、いかに妥協点を見出すことが難しいかを浮き彫りにした。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "文章全体のトーンとして最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "感情的かつ扇動的"
+        },
+        {
+          "id": "a2",
+          "text": "客観的かつ思索的"
+        },
+        {
+          "id": "a3",
+          "text": "楽観的かつ断定的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私たちは、誰かの犠牲の上に成り立つ便利さを享受しているのではないかという重い問いを、この場所は静かに問いかけ続けている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「平行線をたどり」という表現が意味する状況はどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "二つのグループが協力して問題を解決すること"
+        },
+        {
+          "id": "a2",
+          "text": "ドライバーと住民が同じ道路を並走すること"
+        },
+        {
+          "id": "a3",
+          "text": "互いの主張が変わらず議論がまとまらないこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この期間、双方の主張は平行線をたどり、歩み寄りの気配は全く見られなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたがもしこの街の市議会議員だとしたら、住民とドライバーのどちらの意見を優先すべきだと考えますか。また、その理由と、双方が納得できる具体的な妥協案を400字程度の日本語で提案してください。",
+      "en": "あなたがもしこの街の市議会議員だとしたら、住民とドライバーのどちらの意見を優先すべきだと考えますか。また、その理由と、双方が納得できる具体的な妥協案を400字程度の日本語で提案してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "記事を読み、横断歩道設置実験がもたらした社会的影響と、その背後にある複雑な対立構造を理解してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「安全」という名の岐路：青葉町クリニック前の横断歩道実験 | B2 Reading | WeLearn",
+      "en": "「安全」という名の岐路：青葉町クリニック前の横断歩道実験 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "青葉町クリニック前の交通安全対策を巡る、地域住民とドライバーの対立と、その後の結末について考察する。",
+      "en": "青葉町クリニック前の交通安全対策を巡る、地域住民とドライバーの対立と、その後の結末について考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

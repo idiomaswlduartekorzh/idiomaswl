@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-water-meter",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "スマートメーターの光と影：ある集合住宅の断水騒動",
+      "en": "スマートメーターの光と影：ある集合住宅の断水騒動"
+    },
+    "intro": {
+      "es": "最新技術の導入が、古いインフラとぶつかり合うとき、そこに住む人々の生活はどう変わるのか。技術革新と社会的責任の狭間で揺れる住民の物語を読み解きます。",
+      "en": "最新技術の導入が、古いインフラとぶつかり合うとき、そこに住む人々の生活はどう変わるのか。技術革新と社会的責任の狭間で揺れる住民の物語を読み解きます。"
+    },
+    "mission": {
+      "es": "以下の文章を読み、スマートメーター導入が引き起こした予期せぬ対立と、その結末について理解を深めましょう。",
+      "en": "以下の文章を読み、スマートメーター導入が引き起こした予期せぬ対立と、その結末について理解を深めましょう。"
+    },
+    "targetText": "地方都市の「青葉台団地」では、水道局によるスマートメーターの全戸導入が進められた。この新しいメーターは、従来の検針員による巡回を不要にし、リアルタイムで水漏れを検知できるという触れ込みだった。団地自治会長の佐藤氏は、水資源の有効活用という大義名分に賛同し、導入を推進した。しかし、築四十年を超えるこの団地では、壁内の老朽化した配管が至る所で悲鳴を上げていた。導入から一週間後、佐藤氏のもとには、水道局から「異常な水漏れ」の通知が相次いで届いた。システムは正確だった。しかし、その漏水箇所は個人の専有部分ではなく、建物の共有部分である壁の内部に隠れていた。\n\n事態を深刻にしたのは、水道局の対応だった。彼らはメーターのデータを根拠に、漏水が確認された区画の元栓を遠隔操作で即座に閉鎖したのだ。これにより、住民たちは突然の断水に見舞われた。一人暮らしの高齢者や、幼い子供を抱える家庭にとって、事前の通告なしの断水は死活問題となった。佐藤氏は水道局に抗議したが、担当者は「システム上の自動遮断機能が働いただけである。修繕費用を誰が負担するか決まるまで、再開はできない」と冷淡に答えた。技術は確かに効率化をもたらしたが、その運用において、居住者の生活という最も重要な視点が欠落していたのだ。\n\n住民の不満は爆発した。特に、配管の管理責任が管理組合にあるのか、あるいは個別の賃貸契約に含まれるのかという法的解釈を巡り、対立は泥沼化した。大家である不動産会社は「配管の老朽化は予測可能であり、管理組合の怠慢だ」と主張し、管理組合は「構造上の欠陥を放置してきたのはオーナー側だ」と反論した。この対立の最中、断水は三日間続いた。スマートメーターが示した「効率的な漏水検知」は、皮肉にも、修繕の責任を押し付け合うための「証拠」として利用されることとなった。技術が透明性を高めるほど、隠されていた責任の所在が露わになり、人間関係を蝕んでいった。\n\n結局、断水は市の仲裁によって一時的に解除されたが、根本的な解決には至らなかった。住民たちは、メーターが刻む数字を見るたびに、自分たちではどうすることもできない老朽化の恐怖を感じるようになった。スマートメーターは、無駄を省くための道具であるはずだった。しかし、この団地においては、住環境の改善よりも先に、管理上の瑕疵を突きつける「監視装置」としての側面が強調されてしまった。住民たちは、テクノロジーがもたらす恩恵と、それが突きつける現実の格差に、ただ呆然とするしかなかった。\n\nこの出来事は、インフラの更新がいかに多層的な合意形成を必要とするかを物語っている。単に新しい機械を設置すれば良いというわけではない。配管という物理的な制約と、管理責任という法的な制約、そして住民の生活権という倫理的な制約。これら三者が噛み合わない限り、どれほど高度なデジタル技術を導入しても、それは「解決」ではなく「摩擦」を生む火種にしかならない。スマートメーターの数字は、今日も静かに、しかし冷酷に、青葉台団地の老いゆく配管の限界を記録し続けている。",
+    "wordCount": 1171,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "大義名分",
+        "lemma": "大義名分",
+        "glosses": {
+          "es": "justification or pretext",
+          "en": "justification or pretext"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "専有部分",
+        "lemma": "専有部分",
+        "glosses": {
+          "es": "private area in a building",
+          "en": "private area in a building"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "死活問題",
+        "lemma": "死活問題",
+        "glosses": {
+          "es": "matter of life and death",
+          "en": "matter of life and death"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "泥沼化",
+        "lemma": "泥沼化",
+        "glosses": {
+          "es": "becoming a quagmire/stalemate",
+          "en": "becoming a quagmire/stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "瑕疵",
+        "lemma": "瑕疵",
+        "glosses": {
+          "es": "defect or flaw",
+          "en": "defect or flaw"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "多層的",
+        "lemma": "多層的",
+        "glosses": {
+          "es": "multi-layered",
+          "en": "multi-layered"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 39,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこの文章を通じて最も伝えたいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "技術導入には、物理的・法的・倫理的な合意形成が不可欠である。"
+        },
+        {
+          "id": "a2",
+          "text": "スマートメーターの導入は、インフラの老朽化を解決する唯一の手段である。"
+        },
+        {
+          "id": "a3",
+          "text": "自治会長の佐藤氏の管理責任が、今回の断水騒動の根本原因である。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "インフラの更新がいかに多層的な合意形成を必要とするかを物語っている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "断水が即座に行われた直接的な理由は何だったか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "水道局が住民への嫌がらせとして閉鎖したから。"
+        },
+        {
+          "id": "a2",
+          "text": "システム上の自動遮断機能が働いたから。"
+        },
+        {
+          "id": "a3",
+          "text": "管理組合が配管の修理を拒否したから。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "システム上の自動遮断機能が働いただけである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ住民たちはスマートメーターを「監視装置」と感じるようになったのか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "水道局が住民の生活時間を記録し始めたから。"
+        },
+        {
+          "id": "a2",
+          "text": "メーターが設置されたことでプライバシーが侵害されたから。"
+        },
+        {
+          "id": "a3",
+          "text": "メーターの数値が、住民の責任を追及する材料にされたから。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "スマートメーターが示した「効率的な漏水検知」は、皮肉にも、修繕の責任を押し付け合うための「証拠」として利用されることとなった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「皮肉にも」という言葉を用いた意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "水漏れを早期発見するはずの技術が、かえって住民に不利益をもたらしたことを強調するため。"
+        },
+        {
+          "id": "a2",
+          "text": "水道局の担当者が非常に皮肉屋であったことを読者に伝えるため。"
+        },
+        {
+          "id": "a3",
+          "text": "住民たちがスマートメーターの導入に最初から反対していたことを示すため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "スマートメーターが示した「効率的な漏水検知」は、皮肉にも、修繕の責任を押し付け合うための「証拠」として利用されることとなった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体の論調として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい技術の導入を全面的に推奨する、楽観的な論調。"
+        },
+        {
+          "id": "a2",
+          "text": "技術と社会の摩擦を冷静かつ批判的に分析する、洞察的な論調。"
+        },
+        {
+          "id": "a3",
+          "text": "古い団地の管理体制を激しく非難する、感情的な論調。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "技術が透明性を高めるほど、隠されていた責任の所在が露わになり、人間関係を蝕んでいった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「瑕疵」という言葉が文中で意味していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "水道局のシステムが持つ計算上のミス。"
+        },
+        {
+          "id": "a2",
+          "text": "住民たちの管理組合に対する不信感。"
+        },
+        {
+          "id": "a3",
+          "text": "建物の配管における欠陥や不具合のこと。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "配管の老朽化は予測可能であり、管理組合の怠慢だ」と主張し、管理組合は「構造上の欠陥を放置してきたのはオーナー側だ」と反論した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "テクノロジーが社会に導入される際、どのような準備や対話が不足していると、この物語のような摩擦が生まれると思いますか。あなたの考えを400字程度で述べてください。",
+      "en": "テクノロジーが社会に導入される際、どのような準備や対話が不足していると、この物語のような摩擦が生まれると思いますか。あなたの考えを400字程度で述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "以下の文章を読み、スマートメーター導入が引き起こした予期せぬ対立と、その結末について理解を深めましょう。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "スマートメーターの光と影：ある集合住宅の断水騒動 | B2 Reading | WeLearn",
+      "en": "スマートメーターの光と影：ある集合住宅の断水騒動 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "最新技術の導入が、古いインフラとぶつかり合うとき、そこに住む人々の生活はどう変わるのか。技術革新と社会的責任の狭間で揺れる住民の物語を読み解きます。",
+      "en": "最新技術の導入が、古いインフラとぶつかり合うとき、そこに住む人々の生活はどう変わるのか。技術革新と社会的責任の狭間で揺れる住民の物語を読み解きます。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

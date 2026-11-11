@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "記憶の修正者",
+      "en": "記憶の修正者"
+    },
+    "intro": {
+      "es": "図書館のアーカイブ事業で語り部となった老婦人が、公開直前の記録の修正を求めて司書を訪ねる物語。",
+      "en": "図書館のアーカイブ事業で語り部となった老婦人が、公開直前の記録の修正を求めて司書を訪ねる物語。"
+    },
+    "mission": {
+      "es": "物語を読み、登場人物の葛藤とアーカイブの意義について考察してください。",
+      "en": "物語を読み、登場人物の葛藤とアーカイブの意義について考察してください。"
+    },
+    "targetText": "地域の歴史を後世に残すため、市立図書館は「街の記憶プロジェクト」を立ち上げた。退職した司書の佐藤は、録音された長老たちの語りを文字起こしする作業を担当している。ある雨の日の夕方、プロジェクトの協力者である八十歳の藤村敏子が、青ざめた表情で図書館のカウンターを訪れた。彼女は数週間前に録音した自身の体験談の原稿を手にし、震える声で「このまま公開してはいけない箇所がある」と訴えた。佐藤は規定に基づき、一度確定した記録の修正は原則として認められないと説明したが、藤村は頑として譲らなかった。\n\n藤村が指摘したのは、戦後の混乱期に彼女が営んでいた小さな商店での出来事だった。原稿には、当時近所の困窮していた家族に食料を無償で分け与えたと記されていた。しかし、藤村は「実際は、彼らから法外な値段で貴重な骨董品を買い取っていた」と告白した。彼女にとって、その事実は一生隠し通すべき恥であり、善人として記録されることは耐え難い欺瞞だったのだ。佐藤は、歴史とは美談だけでなく、人間の弱さや利己心も含めて記録されるべきだと説得を試みたが、藤村の決意は固かった。\n\n「私は聖人君子として記憶されたいわけではない。ただ、嘘で塗り固められた物語が、未来の子供たちの教訓になることが許せないのです」と藤村は語った。彼女の主張は、アーカイブが持つ二面性を浮き彫りにした。一つは、事実を客観的に保存するという学術的使命であり、もう一つは、語り手が自らの人生をどう定義したいかという個人的な権利である。佐藤は、歴史的事実と個人の尊厳の板挟みになり、深い沈黙に包まれた。図書館の静寂の中で、二人の間には解決のつかない緊張感が漂っていた。\n\n佐藤は、藤村の言葉を反芻しながら、アーカイブの目的を再考した。もし記録が語り手の意図によって改ざんされることを許せば、歴史の客観性は失われる。しかし、語り手の同意なしにその人生を公開し続けることは、一種の暴力ではないか。佐藤は、修正を全面的に認めるのではなく、注釈という形で「語り手の回想と当時の状況には乖離がある可能性」を明記することを提案した。これは妥協案に過ぎないが、藤村はしばらく考え込んだ末に、小さく頷いた。\n\n数日後、記録は注釈付きで公開された。藤村の告白は記録には残されなかったが、彼女の表情は以前よりもどこか穏やかだった。佐藤は、完璧な歴史など存在しないことを悟った。アーカイブは、完成された過去を提示する場所ではなく、現在を生きる私たちが、過去の断片と向き合い、対話を続けるための場所なのだ。藤村が去った後の図書館には、今日もまた、誰かの人生の断片が静かに収められていく。歴史は、誰かの手によって常に書き換えられ、そして守られていくのである。",
+    "wordCount": 1044,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "長老",
+        "lemma": "長老",
+        "glosses": {
+          "es": "elder",
+          "en": "elder"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "欺瞞",
+        "lemma": "欺瞞",
+        "glosses": {
+          "es": "deception",
+          "en": "deception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "聖人君子",
+        "lemma": "聖人君子",
+        "glosses": {
+          "es": "saintly person",
+          "en": "saintly person"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "板挟み",
+        "lemma": "板挟み",
+        "glosses": {
+          "es": "dilemma",
+          "en": "dilemma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "反芻",
+        "lemma": "反芻",
+        "glosses": {
+          "es": "ruminate",
+          "en": "ruminate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "乖離",
+        "lemma": "乖離",
+        "glosses": {
+          "es": "divergence",
+          "en": "divergence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 38.7,
+      "maxSentenceWords": 60,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:12.273Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主なテーマは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "歴史の客観性と個人の尊厳の対立"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の運営上の問題"
+        },
+        {
+          "id": "a3",
+          "text": "過去の美談の重要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "歴史的事実と個人の尊厳の板挟みになり、深い沈黙に包まれた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "藤村が記録の修正を求めた理由はなぜですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "記憶違いがあったから"
+        },
+        {
+          "id": "a2",
+          "text": "嘘の記録が残ることを拒んだから"
+        },
+        {
+          "id": "a3",
+          "text": "公開されるのが恥ずかしいから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ただ、嘘で塗り固められた物語が、未来の子供たちの教訓になることが許せないのです",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤が提案した解決策について、どのようなことが言えますか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "完全に藤村の要求を退けた"
+        },
+        {
+          "id": "a2",
+          "text": "事実を全て削除した"
+        },
+        {
+          "id": "a3",
+          "text": "歴史の客観性を優先しつつ配慮した"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "修正を全面的に認めるのではなく、注釈という形で「語り手の回想と当時の状況には乖離がある可能性」を明記することを提案した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者がこの物語を通じて読者に伝えたいことは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "アーカイブは対話の場であるという認識"
+        },
+        {
+          "id": "a2",
+          "text": "歴史は常に書き換えられるべきだという主張"
+        },
+        {
+          "id": "a3",
+          "text": "記録の重要性についての教育的示唆"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "アーカイブは、完成された過去を提示する場所ではなく、現在を生きる私たちが、過去の断片と向き合い、対話を続けるための場所なのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語の結末における雰囲気はどのようなものですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "悲劇的で暗い"
+        },
+        {
+          "id": "a2",
+          "text": "未解決の緊張が残る思索的なもの"
+        },
+        {
+          "id": "a3",
+          "text": "解決に至り安堵している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "歴史は、誰かの手によって常に書き換えられ、そして守られていくのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「欺瞞」という言葉の意味として最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "過去を振り返り反省すること"
+        },
+        {
+          "id": "a2",
+          "text": "歴史を記録すること"
+        },
+        {
+          "id": "a3",
+          "text": "真実を隠し、他人をあざむくこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "善人として記録されることは耐え難い欺瞞だったのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたが図書館の司書だとしたら、歴史的な記録における「客観的な事実」と「語り手の主観」のどちらを優先すべきだと考えますか。その理由を、本編の事例を引用しながら400字程度で述べてください。",
+      "en": "あなたが図書館の司書だとしたら、歴史的な記録における「客観的な事実」と「語り手の主観」のどちらを優先すべきだと考えますか。その理由を、本編の事例を引用しながら400字程度で述べてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "物語を読み、登場人物の葛藤とアーカイブの意義について考察してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:12.273Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "記憶の修正者 | B2 Reading | WeLearn",
+      "en": "記憶の修正者 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "図書館のアーカイブ事業で語り部となった老婦人が、公開直前の記録の修正を求めて司書を訪ねる物語。",
+      "en": "図書館のアーカイブ事業で語り部となった老婦人が、公開直前の記録の修正を求めて司書を訪ねる物語。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:12.273Z"
+  }
+}

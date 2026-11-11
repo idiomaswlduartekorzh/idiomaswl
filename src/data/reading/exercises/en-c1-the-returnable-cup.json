@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Glass Mirage: A Sustainability Paradox",
+      "en": "The Glass Mirage: A Sustainability Paradox"
+    },
+    "intro": {
+      "es": "An investigative look at the hidden environmental costs behind a corporate sustainability initiative.",
+      "en": "An investigative look at the hidden environmental costs behind a corporate sustainability initiative."
+    },
+    "mission": {
+      "es": "Analyze the dissonance between superficial environmental metrics and systemic resource expenditure.",
+      "en": "Analyze the dissonance between superficial environmental metrics and systemic resource expenditure."
+    },
+    "targetText": "The atmosphere within the boardroom of Aethelgard Logistics was palpably self-congratulatory as Elias Thorne, the Director of Operations, unveiled the quarterly sustainability audit. On the screen, a vibrant bar chart illustrated a precipitous decline in the procurement of single-use polystyrene cups across the company’s regional hubs. Thorne beamed, gesturing toward the data with a flourish that suggested a triumph of corporate conscience. The initiative, dubbed 'Project Clarity,' had mandated the distribution of high-grade, branded stainless steel tumblers to every employee. The narrative was simple, compelling, and arguably incomplete: by eliminating the daily influx of disposable waste, the company had ostensibly pivoted toward a model of circular responsibility. For the board members, the visual evidence of empty waste bins in the breakrooms served as a powerful, tangible testament to their commitment to the planet.\n\nHowever, the reality of the transition was far more nuanced than the curated data suggested. Behind the scenes, the maintenance department, led by Sarah Vance, had been grappling with the logistical fallout of the mandate. The transition necessitated the installation of industrial-grade sanitization stations at every floor’s kitchenette. These machines, while efficient, operated on a continuous cycle that consumed vast quantities of potable water and specialized, phosphate-heavy detergents. Sarah had repeatedly attempted to raise concerns regarding the surge in utility costs and the chemical runoff, but her reports were consistently buried under the weight of the company’s public relations triumph. The irony was not lost on her: the carbon footprint of the manufacturing process for the stainless steel vessels, combined with the daily energy expenditure of the washers, likely eclipsed the impact of the discarded cups they replaced.\n\nFurthermore, the supply chain implications were equally problematic. To ensure the tumblers arrived in time for the fiscal launch, the procurement team had opted for expedited air freight rather than the standard maritime shipping route. This decision, driven by the desire to meet a specific quarterly deadline, resulted in a carbon emission spike that negated the environmental savings of the cups for the next several years. The paradox of the situation was that the rush to appear sustainable had forced the company into unsustainable logistical practices. Thorne remained oblivious to these complexities, preferring to focus on the immediate, observable reduction in landfill waste, a metric that played exceptionally well with the company’s stakeholders and external auditors.\n\nAs the meeting progressed, the tension between the polished presentation and the operational reality reached a breaking point. When Sarah was finally invited to present her departmental update, she chose to deviate from the sanitized script. She presented a ledger detailing the increased water consumption and the hidden energy costs incurred by the new sanitizing infrastructure. The room fell into a sudden, uncomfortable silence. Thorne attempted to dismiss the data as an 'inevitable transition cost,' yet the seed of doubt had been sown. The board members, previously unified in their praise, began to exchange wary glances. The narrative of progress was being challenged by the cold, unvarnished reality of resource management, revealing that the company had merely traded one form of waste for another, more resource-intensive one.\n\nIn the aftermath of the meeting, the company found itself at a crossroads. The stainless steel tumblers remained on every desk, a gleaming symbol of a commitment that was as fragile as it was performative. While the waste bins were indeed empty, the environmental ledger was deeper in the red than before. Thorne’s project had succeeded in its primary objective: to change the optics of the company’s footprint. Yet, the unresolved tension remained. The executive leadership was now forced to decide whether to continue the charade of sustainability or to address the systemic inefficiencies that had been so conveniently ignored. The silence following Sarah’s report lingered, a testament to the fact that true sustainability requires an accounting of the invisible, not just the observable.\n\nUltimately, Aethelgard’s dilemma underscores a recurring corporate fallacy: prioritizing aesthetic metrics over holistic impact. By valuing visible waste reduction above systemic efficiency, the firm inadvertently institutionalized a more complex environmental burden, proving that superficial solutions often mask deeper, more costly ecological failures.",
+    "wordCount": 680,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "precipitous",
+        "lemma": "precipitous",
+        "glosses": {
+          "es": "dangerously high or steep; sudden and dramatic",
+          "en": "dangerously high or steep; sudden and dramatic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ostensibly",
+        "lemma": "ostensibly",
+        "glosses": {
+          "es": "apparently or purportedly, but perhaps not actually",
+          "en": "apparently or purportedly, but perhaps not actually"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fallout",
+        "lemma": "fallout",
+        "glosses": {
+          "es": "the adverse side effects or results of a situation",
+          "en": "the adverse side effects or results of a situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eclipsed",
+        "lemma": "eclipsed",
+        "glosses": {
+          "es": "surpassed or made less significant by comparison",
+          "en": "surpassed or made less significant by comparison"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradox",
+        "lemma": "paradox",
+        "glosses": {
+          "es": "a situation that seems contradictory or impossible",
+          "en": "a situation that seems contradictory or impossible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "performative",
+        "lemma": "performative",
+        "glosses": {
+          "es": "done for show rather than for genuine effect",
+          "en": "done for show rather than for genuine effect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.6,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict of the passage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The conflict between visual metrics and hidden costs."
+        },
+        {
+          "id": "a2",
+          "text": "The struggle between two managers over budget allocations."
+        },
+        {
+          "id": "a3",
+          "text": "The disagreement regarding the design of the new office equipment."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The narrative was simple, compelling, and arguably incomplete: by eliminating the daily influx of disposable waste, the company had ostensibly pivoted toward a model of circular responsibility.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did the company choose air freight for the tumblers?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To avoid the high costs of maritime shipping."
+        },
+        {
+          "id": "a2",
+          "text": "To ensure they arrived by the fiscal deadline."
+        },
+        {
+          "id": "a3",
+          "text": "To reduce the overall carbon footprint of transport."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "To ensure the tumblers arrived in time for the fiscal launch, the procurement team had opted for expedited air freight rather than the standard maritime shipping route.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author suggest about the board's reaction to Sarah's report?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They were indifferent."
+        },
+        {
+          "id": "a2",
+          "text": "They felt deeply betrayed."
+        },
+        {
+          "id": "a3",
+          "text": "They were forced to reconsider their perspective."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The board members, previously unified in their praise, began to exchange wary glances.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary purpose in including the details about the water and detergent usage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the hidden environmental costs of the new policy."
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the specific technical specifications required for daily machine operation."
+        },
+        {
+          "id": "a3",
+          "text": "To justify the increased logistical expenses incurred by the regional supply chain division."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "These machines, while efficient, operated on a continuous cycle that consumed vast quantities of potable water and specialized, phosphate-heavy detergents.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would one describe the author's tone toward Thorne's project?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutral."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical and critical."
+        },
+        {
+          "id": "a3",
+          "text": "Resentful and deeply disillusioned by the project's lack of progress."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Thorne’s project had succeeded in its primary objective: to change the optics of the company’s footprint.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does the author mean by describing the tumblers as 'performative'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Useful."
+        },
+        {
+          "id": "a2",
+          "text": "Rare."
+        },
+        {
+          "id": "a3",
+          "text": "They were for show."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The stainless steel tumblers remained on every desk, a gleaming symbol of a commitment that was as fragile as it was performative.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word persuasive email from Sarah Vance to the board of directors, proposing a comprehensive audit that accounts for the hidden environmental impacts of their sustainability initiatives.",
+      "en": "Write a 200-word persuasive email from Sarah Vance to the board of directors, proposing a comprehensive audit that accounts for the hidden environmental impacts of their sustainability initiatives."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the dissonance between superficial environmental metrics and systemic resource expenditure.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Glass Mirage: A Sustainability Paradox | C1 Reading | WeLearn",
+      "en": "The Glass Mirage: A Sustainability Paradox | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An investigative look at the hidden environmental costs behind a corporate sustainability initiative.",
+      "en": "An investigative look at the hidden environmental costs behind a corporate sustainability initiative."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

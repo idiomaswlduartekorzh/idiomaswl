@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-school-garden",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Cultivated Coercion of the Verdant Commons",
+      "en": "The Cultivated Coercion of the Verdant Commons"
+    },
+    "intro": {
+      "es": "An exploration of the social dynamics governing the communal garden at St. Jude’s Academy, where the line between civic duty and social obligation blurs.",
+      "en": "An exploration of the social dynamics governing the communal garden at St. Jude’s Academy, where the line between civic duty and social obligation blurs."
+    },
+    "mission": {
+      "es": "To analyze the subtle mechanisms of peer pressure within voluntary communal projects and the resulting psychological tension.",
+      "en": "To analyze the subtle mechanisms of peer pressure within voluntary communal projects and the resulting psychological tension."
+    },
+    "targetText": "The establishment of the North Quad Garden at St. Jude’s Academy was initially framed as an exercise in elective stewardship. Headmaster Halloway marketed the initiative as a 'living laboratory' where students could voluntarily engage with ecological cycles. Yet, as the seasons shifted, the garden transformed from a pedagogical tool into a litmus test for social integration. The project was overseen by Elias Thorne, a senior prefect whose fervor for heirloom tomatoes was matched only by his capacity for subtle social exclusion. Thorne maintained a digital spreadsheet of 'contributions,' a ledger that ostensibly tracked watering schedules and weeding shifts but functioned, in practice, as a public record of loyalty to the school’s burgeoning environmental ethos. For those who opted out, the consequences were not administrative penalties, but a pervasive, atmospheric chill. Refusal was not met with detention, but with a quiet, devastating erasure from the social periphery of the upper-form common room.\n\nClara Vance, a junior student with a penchant for classical literature and a profound indifference to horticulture, became the focal point of this tension. When she declined to participate in the autumn harvest festival, citing a desire to focus on her studies, the reaction was immediate. Thorne did not argue; he merely adjusted the roster, his silence serving as a social condemnation. By the following week, Clara found that her presence in the library was no longer greeted with the usual camaraderie. Her peers, having internalized the garden as the new moral center of the academy, viewed her abstention not as a personal choice, but as a breach of the unspoken social contract. The garden had become a proxy for character, and to neglect the soil was to signal a lack of investment in the collective identity of the student body.\n\nThis dynamic raises a profound question regarding the nature of voluntary participation. If the cost of refusal is a degradation of one's social standing, can the act of participation truly be considered free? The garden, in its lush, verdant reality, thrived on the labor of students who were driven less by a passion for botany than by a desperate need to avoid the social stigma of the 'uncommitted.' The irony was palpable: the more the garden flourished under this regime of soft coercion, the more it eroded the very community it claimed to foster. The students were not cultivating vegetables; they were cultivating a facade of unity that masked a growing resentment toward the performative nature of their civic duties. The garden became a theater of conformity, where every hoe stroke was a performance for an audience of peers.\n\nAs the winter frost approached, the tension reached an inevitable breaking point. During a mandatory-voluntary planning session, Clara confronted Thorne regarding the 'participation metrics' he had been circulating. She argued that the garden had ceased to be an educational endeavor and had morphed into a mechanism for behavioral modification. Thorne, unflinching, insisted that the garden required total commitment to survive the harsh winter months, and that those who were not 'fully invested' were essentially dead weight. The room fell into a heavy, suffocating silence. It was clear that the garden had become a sacred cow, and any critique of its administration was perceived as an attack on the moral fiber of the school itself. The conflict was no longer about the garden; it was about the right to exist outside the collective gaze.\n\nUltimately, the North Quad Garden remains a testament to the fragility of voluntary associations. The plants continue to grow, fed by the labor of students who have learned that silence is the safest path to social survival. Clara eventually returned to the garden, not out of a newfound love for botany, but because the social cost of her continued absence had become too heavy to bear. She became a model participant, her movements precise and her interactions with Thorne impeccably polite. The garden is, by all accounts, a resounding success, yielding record harvests that are celebrated in the school’s annual report. Yet, beneath the surface of this verdant success lies the quiet, unresolved tension of a community that has sacrificed the autonomy of its members on the altar of communal achievement, proving that the most effective forms of coercion are those that wear the mask of voluntary virtue.\n\nYet, this triumph of enforced harmony carries a lingering, corrosive legacy that threatens the academy’s long-term intellectual vitality. By prioritizing the performative alignment of the student body over genuine individual inquiry, the institution has inadvertently stifled the very critical discourse it once championed as its primary pedagogical goal. The garden, while visually immaculate, now stands as a monument to intellectual stagnation, where the fear of social exile has replaced the pursuit of authentic curiosity. As students prioritize the maintenance of their reputations over the exploration of dissenting ideas, the academy risks becoming a hollowed-out shell of its former self. Ultimately, the success of the harvest serves only to obscure the deeper, more profound failure of a community that has traded its capacity for dissent for the comfort of uniformity.",
+    "wordCount": 841,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "litmus test",
+        "lemma": "litmus test",
+        "glosses": {
+          "es": "a decisive indicator or test of quality",
+          "en": "a decisive indicator or test of quality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ostensibly",
+        "lemma": "ostensibly",
+        "glosses": {
+          "es": "apparently or purportedly, but perhaps not actually",
+          "en": "apparently or purportedly, but perhaps not actually"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "camaraderie",
+        "lemma": "camaraderie",
+        "glosses": {
+          "es": "mutual trust and friendship among people",
+          "en": "mutual trust and friendship among people"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "proxy",
+        "lemma": "proxy",
+        "glosses": {
+          "es": "a substitute or representative",
+          "en": "a substitute or representative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to seem almost tangible",
+          "en": "so intense as to seem almost tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autonomy",
+        "lemma": "autonomy",
+        "glosses": {
+          "es": "the right or condition of self-governance",
+          "en": "the right or condition of self-governance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.1,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The cost of social conformity."
+        },
+        {
+          "id": "a2",
+          "text": "The horticultural techniques required for optimal plant growth."
+        },
+        {
+          "id": "a3",
+          "text": "The historical evolution of community gardening in academic settings."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The garden became a theater of conformity, where every hoe stroke was a performance for an audience of peers.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How did Elias Thorne monitor student participation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "By hand."
+        },
+        {
+          "id": "a2",
+          "text": "Using a digital spreadsheet."
+        },
+        {
+          "id": "a3",
+          "text": "Through a complex system of peer-reviewed observation logs."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Thorne maintained a digital spreadsheet of 'contributions,' a ledger that ostensibly tracked watering schedules and weeding shifts",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why did Clara eventually participate in the garden project?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She grew to enjoy botany."
+        },
+        {
+          "id": "a2",
+          "text": "She was forced by the Headmaster."
+        },
+        {
+          "id": "a3",
+          "text": "She wanted to avoid social isolation."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Clara eventually returned to the garden, not out of a newfound love for botany, but because the social cost of her continued absence had become too heavy to bear.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in detailing the conflict between Clara and Thorne?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the dangers of groupthink."
+        },
+        {
+          "id": "a2",
+          "text": "To describe the specific agricultural challenges of maintaining a school garden."
+        },
+        {
+          "id": "a3",
+          "text": "To provide a comprehensive analysis of the administrative failures within the institution."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "It was clear that the garden had become a sacred cow, and any critique of its administration was perceived as an attack on the moral fiber of the school itself.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the author's tone toward the garden's success?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical and ironic."
+        },
+        {
+          "id": "a3",
+          "text": "Critical and deeply concerned about the long-term environmental sustainability."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The irony was palpable: the more the garden flourished under this regime of soft coercion, the more it eroded the very community it claimed to foster.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'sacred cow' imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A literal animal in the garden."
+        },
+        {
+          "id": "a2",
+          "text": "A religious symbol of the school."
+        },
+        {
+          "id": "a3",
+          "text": "A protected, unquestionable entity."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It was clear that the garden had become a sacred cow, and any critique of its administration was perceived as an attack on the moral fiber of the school itself.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word persuasive essay arguing whether institutions should implement 'voluntary' programs that carry significant social consequences for non-participants.",
+      "en": "Write a 300-word persuasive essay arguing whether institutions should implement 'voluntary' programs that carry significant social consequences for non-participants."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "To analyze the subtle mechanisms of peer pressure within voluntary communal projects and the resulting psychological tension.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Cultivated Coercion of the Verdant Commons | C2 Reading | WeLearn",
+      "en": "The Cultivated Coercion of the Verdant Commons | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the social dynamics governing the communal garden at St. Jude’s Academy, where the line between civic duty and social obligation blurs.",
+      "en": "An exploration of the social dynamics governing the communal garden at St. Jude’s Academy, where the line between civic duty and social obligation blurs."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

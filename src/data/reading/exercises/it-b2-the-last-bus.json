@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-last-bus",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'ultima corsa verso il tramonto",
+      "en": "L'ultima corsa verso il tramonto"
+    },
+    "intro": {
+      "es": "Un piccolo borgo montano sostituisce il suo storico autobus serale con un servizio a chiamata, scatenando reazioni contrastanti tra la popolazione.",
+      "en": "Un piccolo borgo montano sostituisce il suo storico autobus serale con un servizio a chiamata, scatenando reazioni contrastanti tra la popolazione."
+    },
+    "mission": {
+      "es": "Leggi il testo e analizza le implicazioni sociali del cambiamento nei trasporti locali.",
+      "en": "Leggi il testo e analizza le implicazioni sociali del cambiamento nei trasporti locali."
+    },
+    "targetText": "Il borgo di Valchiusa ha ufficialmente archiviato l'era dell'autobus di linea delle ore ventidue. Per decenni, quel mezzo sgangherato ha rappresentato l'unico cordone ombelicale tra il centro urbano e le frazioni isolate, trasportando turnisti stanchi e anziani di ritorno dalle visite mediche. Da lunedì, il servizio è stato sostituito da 'Navetta-Veloce', un sistema di van a chiamata prenotabile esclusivamente tramite una piattaforma digitale. La giunta comunale sostiene che l'ottimizzazione fosse necessaria per ridurre gli sprechi di carburante, dato che spesso il bus viaggiava completamente vuoto.\n\nPer i giovani lavoratori, come il cameriere venticinquenne Marco, il cambiamento è un ostacolo insormontabile. Marco finisce il turno a mezzanotte e, sebbene l'app prometta corse flessibili, la disponibilità dei veicoli è soggetta a una saturazione imprevedibile. Ieri sera, dopo aver atteso invano per quaranta minuti sotto una pioggia battente, ha dovuto chiamare un taxi privato, spendendo metà della sua paga giornaliera. Egli sostiene che la digitalizzazione abbia ignorato la realtà materiale del lavoro notturno, trasformando un diritto alla mobilità in un servizio di lusso precario.\n\nDi contro, la signora Elvira, ottantenne residente nella frazione di Poggio Alto, accoglie la novità con un cauto entusiasmo. Prima, doveva camminare per un chilometro fino alla fermata principale, spesso al buio. Ora, il van la preleva direttamente davanti al cancello di casa. Per lei, la tecnologia non è un nemico, ma un facilitatore che ha accorciato le distanze fisiche, rendendo il borgo più accessibile. Tuttavia, la sua soddisfazione maschera una tensione latente: la perdita di quel momento di socialità che il vecchio autobus garantiva, dove i vicini si scambiavano racconti durante il tragitto.\n\nIl conflitto si è cristallizzato durante l'ultima assemblea cittadina, dove le due generazioni si sono scontrate apertamente. I giovani hanno denunciato l'esclusione digitale e l'inaffidabilità del nuovo sistema, mentre gli anziani hanno difeso la comodità del porta-a-porta. Il sindaco, cercando una mediazione, ha promesso un potenziamento della flotta, ma senza fornire una data certa per l'implementazione. La promessa è apparsa a molti come un palliativo temporaneo, insufficiente a placare il malcontento crescente.\n\nLa situazione rimane sospesa in un equilibrio precario. Mentre il borgo cerca di modernizzarsi per sopravvivere allo spopolamento, il tessuto connettivo della comunità sembra sfilacciarsi. La tecnologia ha risolto il problema logistico per alcuni, ma ha esacerbato le distanze umane per altri. Resta il dubbio se un servizio pubblico possa davvero essere considerato tale quando la sua efficienza dipende da un algoritmo che non comprende le necessità umane, lasciando i cittadini in attesa di un futuro che, per ora, si ferma sempre un chilometro prima della destinazione desiderata.",
+    "wordCount": 425,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sgangherato",
+        "lemma": "sgangherato",
+        "glosses": {
+          "es": "dilapidated or rickety",
+          "en": "dilapidated or rickety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cordone ombelicale",
+        "lemma": "cordone ombelicale",
+        "glosses": {
+          "es": "umbilical cord / vital link",
+          "en": "umbilical cord / vital link"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "saturazione",
+        "lemma": "saturazione",
+        "glosses": {
+          "es": "saturation or full capacity",
+          "en": "saturation or full capacity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "latent or hidden",
+          "en": "latent or hidden"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristallizzato",
+        "lemma": "cristallizzato",
+        "glosses": {
+          "es": "crystallized or solidified",
+          "en": "crystallized or solidified"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palliativo",
+        "lemma": "palliativo",
+        "glosses": {
+          "es": "palliative or temporary fix",
+          "en": "palliative or temporary fix"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 46,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del brano?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto generazionale sui trasporti."
+        },
+        {
+          "id": "a2",
+          "text": "Il declino demografico del borgo."
+        },
+        {
+          "id": "a3",
+          "text": "L'efficienza digitale dei nuovi trasporti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I giovani hanno denunciato l'esclusione digitale e l'inaffidabilità del nuovo sistema, mentre gli anziani hanno difeso la comodità del porta-a-porta.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché Marco ha dovuto prendere un taxi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché l'app non funzionava."
+        },
+        {
+          "id": "a2",
+          "text": "Perché non c'erano van disponibili."
+        },
+        {
+          "id": "a3",
+          "text": "Perché il van era troppo lontano."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ieri sera, dopo aver atteso invano per quaranta minuti sotto una pioggia battente, ha dovuto chiamare un taxi privato",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa pensa la signora Elvira del nuovo servizio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Lo considera un servizio di lusso."
+        },
+        {
+          "id": "a2",
+          "text": "Lo ritiene un fallimento totale."
+        },
+        {
+          "id": "a3",
+          "text": "Lo trova comodo ma meno sociale."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Per lei, la tecnologia non è un nemico, ma un facilitatore che ha accorciato le distanze fisiche, rendendo il borgo più accessibile. Tuttavia, la sua soddisfazione maschera una tensione latente: la perdita di quel momento di socialità",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo del sindaco nell'assemblea?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cercare una mediazione tra le parti."
+        },
+        {
+          "id": "a2",
+          "text": "Risolvere il problema definitivamente."
+        },
+        {
+          "id": "a3",
+          "text": "Ignorare le proteste dei cittadini."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il sindaco, cercando una mediazione, ha promesso un potenziamento della flotta, ma senza fornire una data certa per l'implementazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono usa l'autore nel paragrafo conclusivo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e risolutivo."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e riflessivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e distaccato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Resta il dubbio se un servizio pubblico possa davvero essere considerato tale quando la sua efficienza dipende da un algoritmo che non comprende le necessità umane",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con 'palliativo' riferito alla promessa del sindaco?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una soluzione definitiva e strutturale."
+        },
+        {
+          "id": "a2",
+          "text": "Una strategia di marketing innovativa."
+        },
+        {
+          "id": "a3",
+          "text": "Un rimedio temporaneo e poco efficace."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La promessa è apparsa a molti come un palliativo temporaneo, insufficiente a placare il malcontento crescente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve articolo di opinione (150 parole) in cui proponi una soluzione alternativa per conciliare le esigenze dei lavoratori notturni e degli anziani nel sistema di trasporto di Valchiusa.",
+      "en": "Scrivi un breve articolo di opinione (150 parole) in cui proponi una soluzione alternativa per conciliare le esigenze dei lavoratori notturni e degli anziani nel sistema di trasporto di Valchiusa."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leggi il testo e analizza le implicazioni sociali del cambiamento nei trasporti locali.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'ultima corsa verso il tramonto | B2 Reading | WeLearn",
+      "en": "L'ultima corsa verso il tramonto | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un piccolo borgo montano sostituisce il suo storico autobus serale con un servizio a chiamata, scatenando reazioni contrastanti tra la popolazione.",
+      "en": "Un piccolo borgo montano sostituisce il suo storico autobus serale con un servizio a chiamata, scatenando reazioni contrastanti tra la popolazione."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「直す」という選択：地域修理工房の光と影",
+      "en": "「直す」という選択：地域修理工房の光と影"
+    },
+    "intro": {
+      "es": "地域コミュニティで注目される「修理工房」を、実際に体験した利用者の視点から考察する。",
+      "en": "地域コミュニティで注目される「修理工房」を、実際に体験した利用者の視点から考察する。"
+    },
+    "mission": {
+      "es": "壊れた物を捨てるのではなく、技術を共有して寿命を延ばす。",
+      "en": "壊れた物を捨てるのではなく、技術を共有して寿命を延ばす。"
+    },
+    "targetText": "先週の土曜日、私は愛用していた古いトースターを抱えて、町外れの公民館で開催されている「リペア・ラボ」の門を叩いた。この活動は、専門知識を持つボランティアが、持ち込まれた家電の修理を無償で手助けするというものだ。会場に入ると、工具の擦れる音と、焦げた配線の匂いが立ち込めていた。私の担当になったのは、元電気技師だという佐藤さんという男性だった。彼は私のトースターを一目見るなり、「これはサーモスタットの故障だね。部品さえあれば直せる」と即断した。しかし、現実はそう甘くはなかった。ラボには汎用的なドライバーやハンダごては揃っているものの、特定のメーカーの特殊なネジを回すための専用工具は不足していたのだ。\n\n作業が始まって一時間、私たちは悪戦苦闘した。佐藤さんは手際よく内部を分解したが、肝心の交換部品が手元にない。彼は「本来ならメーカーから取り寄せるべきだが、この型番はもう製造中止だ」と肩を落とした。結局、私たちは代替品を工夫して装着し、なんとか通電させることに成功した。その時の達成感は、新品を買うのとは全く異なる、自分の手で命を吹き込んだという実感を伴うものだった。しかし、この活動が抱える限界も同時に痛感させられた。それは、ボランティアの善意と技術力に過度に依存しているという構造的な脆さである。\n\n会場を見渡すと、修理を待つ列は長くなる一方だった。特に高齢者の利用者が多く、彼らにとってここは単なる修理の場ではなく、孤独を癒やす社交場としての役割も果たしているようだった。しかし、限られた工具とスペースの中で、ボランティアたちは疲弊の色を隠せない。佐藤さんも、私の作業を終えた後、次の依頼者のトースターに向かう際の足取りは重かった。技術を継承し、物を大切にするという理念は素晴らしいが、それを個人のボランティアに丸投げする現状は、持続可能性という観点から見てあまりに危ういのではないだろうか。\n\nこのラボの存在意義は、単に家電を修理することにあるのか、それとも「直して使う」という文化を醸成することにあるのか。もし後者であれば、行政やメーカーがもっと積極的に関与し、部品の供給や工具の貸し出しを支援すべきではないか。現状のままでは、熱心なボランティアが燃え尽きて終わりを迎える未来が容易に想像できる。修理という行為が、特別な技能を持つ一部の聖人君子による奉仕活動として消費される限り、社会全体の消費行動を変えることは難しいだろう。\n\n結局、私のトースターは無事にパンを焼けるようになった。しかし、そのパンを食べるたびに、私は佐藤さんの疲れた横顔を思い出す。修理工房は、確かに使い捨て社会に対する小さな抵抗の拠点である。だが、その抵抗がいつまで続くのか、そして誰がその重荷を背負い続けるのか。私たちは、修理という行為を個人の美徳に還元するのではなく、社会的なインフラとして再定義する必要がある。この小さな工房の光は、持続可能な未来を照らしているのか、それとも単に消えゆく灯火の最後の輝きなのか。答えはまだ、誰にも分からない。",
+    "wordCount": 1172,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "即断",
+        "lemma": "即断",
+        "glosses": {
+          "es": "immediate decision",
+          "en": "immediate decision"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "悪戦苦闘",
+        "lemma": "悪戦苦闘",
+        "glosses": {
+          "es": "a hard struggle",
+          "en": "a hard struggle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "脆さ",
+        "lemma": "脆さ",
+        "glosses": {
+          "es": "fragility",
+          "en": "fragility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疲弊",
+        "lemma": "疲弊",
+        "glosses": {
+          "es": "exhaustion",
+          "en": "exhaustion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "醸成",
+        "lemma": "醸成",
+        "glosses": {
+          "es": "brewing/fostering",
+          "en": "brewing/fostering"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "インフラ",
+        "lemma": "インフラ",
+        "glosses": {
+          "es": "infrastructure",
+          "en": "infrastructure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 37.8,
+      "maxSentenceWords": 76,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこの修理工房について抱いている主な見解はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "理念は素晴らしいが、持続可能な運営には課題が残されている。"
+        },
+        {
+          "id": "a2",
+          "text": "ボランティアの献身により、家電の廃棄問題は完全に解決される。"
+        },
+        {
+          "id": "a3",
+          "text": "個人の技術に頼るべきではなく、メーカーが修理を独占すべきだ。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "技術を継承し、物を大切にするという理念は素晴らしいが、それを個人のボランティアに丸投げする現状は、持続可能性という観点から見てあまりに危ういのではないだろうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "修理作業中に発生した具体的な問題は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "工具が壊れていた。"
+        },
+        {
+          "id": "a2",
+          "text": "部品が足りなかった。"
+        },
+        {
+          "id": "a3",
+          "text": "技術者が不在だった。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼は「本来ならメーカーから取り寄せるべきだが、この型番はもう製造中止だ」と肩を落とした。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "修理工房が「社交場」として機能している理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "修理の待ち時間が長いため。"
+        },
+        {
+          "id": "a2",
+          "text": "ボランティアが話し好きだから。"
+        },
+        {
+          "id": "a3",
+          "text": "高齢者が集まっているため。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "特に高齢者の利用者が多く、彼らにとってここは単なる修理の場ではなく、孤独を癒やす社交場としての役割も果たしているようだった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「誰がその重荷を背負い続けるのか」と問いかける目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "修理の責任の所在を社会全体で見直す必要性を強調するため。"
+        },
+        {
+          "id": "a2",
+          "text": "ボランティアの負担を軽減する具体的な案を提示するため。"
+        },
+        {
+          "id": "a3",
+          "text": "特定のボランティアの労働環境を批判するため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "私たちは、修理という行為を個人の美徳に還元するのではなく、社会的なインフラとして再定義する必要がある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体のトーンとして最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちている。"
+        },
+        {
+          "id": "a2",
+          "text": "思索的で懸念を抱いている。"
+        },
+        {
+          "id": "a3",
+          "text": "批判的で冷笑的である。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この小さな工房の光は、持続可能な未来を照らしているのか、それとも単に消えゆく灯火の最後の輝きなのか。答えはまだ、誰にも分からない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「脆さ」という言葉が持つニュアンスに近いものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "非常に硬い性質。"
+        },
+        {
+          "id": "a2",
+          "text": "新しい可能性。"
+        },
+        {
+          "id": "a3",
+          "text": "不安定な状態。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは、ボランティアの善意と技術力に過度に依存しているという構造的な脆さである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたが住む地域に「修理工房」があったとしたら、どのようなルールや仕組みがあれば持続可能になると思いますか。400字程度で具体的に提案してください。",
+      "en": "あなたが住む地域に「修理工房」があったとしたら、どのようなルールや仕組みがあれば持続可能になると思いますか。400字程度で具体的に提案してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "壊れた物を捨てるのではなく、技術を共有して寿命を延ばす。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「直す」という選択：地域修理工房の光と影 | B2 Reading | WeLearn",
+      "en": "「直す」という選択：地域修理工房の光と影 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "地域コミュニティで注目される「修理工房」を、実際に体験した利用者の視点から考察する。",
+      "en": "地域コミュニティで注目される「修理工房」を、実際に体験した利用者の視点から考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

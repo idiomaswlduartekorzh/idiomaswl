@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "屋上太陽光発電プロジェクトに関する提案",
+      "en": "屋上太陽光発電プロジェクトに関する提案"
+    },
+    "intro": {
+      "es": "マンションの管理組合で持ち上がった太陽光パネル設置案を巡る、居住者間の意見の対立と葛藤を描いたメールを読みます。",
+      "en": "マンションの管理組合で持ち上がった太陽光パネル設置案を巡る、居住者間の意見の対立と葛藤を描いたメールを読みます。"
+    },
+    "mission": {
+      "es": "テキストの内容を正確に把握し、登場人物の立場や論理的な対立点を分析してください。",
+      "en": "テキストの内容を正確に把握し、登場人物の立場や論理的な対立点を分析してください。"
+    },
+    "targetText": "マンション管理組合の皆様、お疲れ様です。402号室の佐藤です。先日の理事会で話題に上がった「屋上太陽光パネル設置計画」について、詳細な検討案を共有させていただきます。現在、屋上の空きスペースを活用し、共有電力のコスト削減を図るプロジェクトが提案されています。試算によれば、設置から数年で初期投資を回収でき、その後は管理費の引き下げに貢献する見込みです。環境負荷の低減という社会的意義も大きく、資産価値の向上にも寄与するはずです。しかし、この計画には大きな懸念点があります。それは、設置費用を誰が負担すべきかという問題です。現在、マンション内には長期居住を前提とした区分所有者と、数年単位で入れ替わる賃借人が混在しています。所有者側は、長期的なメリットを享受できるため投資に積極的ですが、賃借人側からは「退去時にメリットを回収できない」という不満が上がっています。特に、賃貸に出している部屋のオーナーからは、賃借人が負担を拒否した場合の費用分担について、明確なルール作りを求める声が強まっています。私は、このプロジェクトを成功させるためには、所有者と賃借人の間に明確な「受益者負担」の枠組みを構築する必要があると考えます。例えば、設置費用を管理費に上乗せするのではなく、希望者のみが参加する共同購入形式にする、あるいは所有者が全額負担し、その分を賃料に微調整して反映させるなど、柔軟なアプローチが求められます。しかし、管理組合の規約上、共有部分の改修に一部の居住者のみが関与することは、公平性の観点から非常に困難です。全戸一律の負担を求める声と、短期居住者への配慮を求める声が交錯し、議論は平行線をたどっています。もしこのまま合意形成ができなければ、せっかくの省エネ化計画も白紙撤回せざるを得ません。私は、このプロジェクトが単なる節約術ではなく、コミュニティの結束を試す試金石であると感じています。皆様の率直なご意見を伺い、次回の総会までに妥協点を見出したいと考えています。この計画を単なる経済合理性の追求で終わらせず、将来の住民にも誇れる住環境を共に作り上げていきましょう。皆様のご協力を心よりお願い申し上げます。",
+    "wordCount": 845,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "区分所有者",
+        "lemma": "区分所有者",
+        "glosses": {
+          "es": "condominium unit owner",
+          "en": "condominium unit owner"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "賃借人",
+        "lemma": "賃借人",
+        "glosses": {
+          "es": "renter",
+          "en": "renter"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "受益者負担",
+        "lemma": "受益者負担",
+        "glosses": {
+          "es": "beneficiary-pays principle",
+          "en": "beneficiary-pays principle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "平行線",
+        "lemma": "平行線",
+        "glosses": {
+          "es": "parallel lines (no consensus)",
+          "en": "parallel lines (no consensus)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "試金石",
+        "lemma": "試金石",
+        "glosses": {
+          "es": "touchstone/litmus test",
+          "en": "touchstone/litmus test"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "経済合理性",
+        "lemma": "経済合理性",
+        "glosses": {
+          "es": "economic rationality",
+          "en": "economic rationality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 42.3,
+      "maxSentenceWords": 88,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "このメールの主な目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "設置計画の合意形成に向けた議論の提起"
+        },
+        {
+          "id": "a2",
+          "text": "太陽光パネル導入の即時実施の要請"
+        },
+        {
+          "id": "a3",
+          "text": "管理費の値上げに関する住民への通告"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "皆様の率直なご意見を伺い、次回の総会までに妥協点を見出したいと考えています。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "賃借人が設置費用負担に難色を示す理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "管理組合の規約に反対しているから"
+        },
+        {
+          "id": "a2",
+          "text": "退去時にメリットを回収できないから"
+        },
+        {
+          "id": "a3",
+          "text": "環境問題に関心がないから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "賃借人側からは「退去時にメリットを回収できない」という不満が上がっています。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤さんが最も懸念していることは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "管理組合の資金不足"
+        },
+        {
+          "id": "a2",
+          "text": "所有者と賃借人の人間関係の悪化"
+        },
+        {
+          "id": "a3",
+          "text": "合意形成の失敗による計画の白紙化"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "もしこのまま合意形成ができなければ、せっかくの省エネ化計画も白紙撤回せざるを得ません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「受益者負担」の枠組みを提案する意図は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "所有者と賃借人の対立を解消し、プロジェクトを前進させるため"
+        },
+        {
+          "id": "a2",
+          "text": "賃借人をマンションから退去させやすくするため"
+        },
+        {
+          "id": "a3",
+          "text": "管理組合の運営を効率化し、事務作業を減らすため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "私は、このプロジェクトを成功させるためには、所有者と賃借人の間に明確な「受益者負担」の枠組みを構築する必要があると考えます。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "このメール全体の筆者の姿勢として最も適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "断定的で強引"
+        },
+        {
+          "id": "a2",
+          "text": "冷静かつ協調的"
+        },
+        {
+          "id": "a3",
+          "text": "感情的で批判的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "皆様のご協力を心よりお願い申し上げます。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「試金石」という言葉が持つ意味に最も近いものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "経済的な損失を補填する手段"
+        },
+        {
+          "id": "a2",
+          "text": "新しい技術を導入するための装置"
+        },
+        {
+          "id": "a3",
+          "text": "価値や能力を判定する基準"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "私は、このプロジェクトが単なる節約術ではなく、コミュニティの結束を試す試金石であると感じています。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "もしあなたがこのマンションの賃借人だとしたら、どのような条件であれば太陽光パネル設置費用を負担しても良いと考えますか。また、その理由を論理的に説明してください。",
+      "en": "もしあなたがこのマンションの賃借人だとしたら、どのような条件であれば太陽光パネル設置費用を負担しても良いと考えますか。また、その理由を論理的に説明してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "テキストの内容を正確に把握し、登場人物の立場や論理的な対立点を分析してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "屋上太陽光発電プロジェクトに関する提案 | B2 Reading | WeLearn",
+      "en": "屋上太陽光発電プロジェクトに関する提案 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "マンションの管理組合で持ち上がった太陽光パネル設置案を巡る、居住者間の意見の対立と葛藤を描いたメールを読みます。",
+      "en": "マンションの管理組合で持ち上がった太陽光パネル設置案を巡る、居住者間の意見の対立と葛藤を描いたメールを読みます。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

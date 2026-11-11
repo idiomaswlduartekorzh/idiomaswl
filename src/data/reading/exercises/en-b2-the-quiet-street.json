@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-quiet-street",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Evening Without Cars: The Test in Willowbrook",
+      "en": "Evening Without Cars: The Test in Willowbrook"
+    },
+    "intro": {
+      "es": "Read the article about Willowbrook’s car‑free evening experiment and answer the questions that follow.",
+      "en": "Read the article about Willowbrook’s car‑free evening experiment and answer the questions that follow."
+    },
+    "mission": {
+      "es": "Identify the main ideas, specific details, and implied meanings, and demonstrate your understanding of key vocabulary.",
+      "en": "Identify the main ideas, specific details, and implied meanings, and demonstrate your understanding of key vocabulary."
+    },
+    "targetText": "Willowbrook, a quiet suburb on the edge of the city, launched a car‑free evening on Thursday to test whether traffic could be replaced by pedestrians and cyclists. The idea originated from the local council’s sustainable‑mobility committee and the community group ‘Green Streets’. Residents were invited to leave their cars at designated bays and walk or cycle to the town centre. The experiment was scheduled to run from 6 p.m. until midnight, with streetlights dimmed to encourage a calmer atmosphere. Proponents argued that reduced emissions would improve air quality and that a quieter night could encourage more evening strolls.\n\nShopkeepers responded with a mixture of optimism and caution. Bakery owner Marco Alvarez reported that, despite deliveries taking longer, the surge of walkers boosted his evening sales by 18%. The clothing boutique on Main Street noted a 22% rise in foot traffic, even though delivery logistics had to be re‑planned. The merchants made a concession that slower deliveries were a price to pay for the increased visibility of their storefronts. The electronics store, which usually receives nightly shipments, noted that the delayed arrivals forced them to keep a larger inventory on the floor, a concession they hoped would be temporary.\n\nResidents were less unanimous. while some neighbours said the streets were quieter, others complained that the lack of engines made conversations and children’s games sound louder. The experiment sparked contention among long‑time residents, who argued that the perceived quiet was merely a shift in the source of noise. Moreover, the laughter of children seemed to reverberate through the quiet streets, reminding some that noise is inevitable. Even the local school reported that the quieter streets allowed after‑school clubs to hold outdoor rehearsals without disturbing nearby apartments.\n\nThe council’s environmental team recorded a 12% drop in average decibel levels, yet the number of formal complaints rose by 9%. Delivery logistics had to be re‑planned, extending average arrival times by 15 minutes. The discussion remains nuanced, with each side pointing to different metrics. Council member Priya Singh suggested that a rotating schedule could spread delivery times more evenly, a logistical tweak that might further reduce the 12% noise drop's impact on complaints. Officials highlighted that the reduction in traffic noise could alleviate health concerns, but they also acknowledged the logistical challenges.\n\nThe council plans to extend the trial with adjusted delivery windows, while the community remains divided, promising another town‑hall meeting next month. Organisers hope the changes will alleviate resident concerns and provide clearer data for future policy. As the evening lights dimmed, the streets of Willowbrook held their breath, waiting to see whether the car‑free vision could become a permanent rhythm. If the next meeting ends with a majority vote, the car‑free evening could become a weekly event, reshaping Willowbrook’s nightscape for years to come.",
+    "wordCount": 462,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "concession",
+        "lemma": "concession",
+        "glosses": {
+          "es": "an admission that something is true or a compromise",
+          "en": "an admission that something is true or a compromise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "logistics",
+        "lemma": "logistics",
+        "glosses": {
+          "es": "the detailed coordination of a complex operation",
+          "en": "the detailed coordination of a complex operation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reverberate",
+        "lemma": "reverberate",
+        "glosses": {
+          "es": "to echo or resound",
+          "en": "to echo or resound"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contention",
+        "lemma": "contention",
+        "glosses": {
+          "es": "disagreement or conflict",
+          "en": "disagreement or conflict"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nuanced",
+        "lemma": "nuanced",
+        "glosses": {
+          "es": "characterized by subtle distinctions",
+          "en": "characterized by subtle distinctions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alleviate",
+        "lemma": "alleviate",
+        "glosses": {
+          "es": "to make something less severe",
+          "en": "to make something less severe"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.8,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:12:02.644Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary focus of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The impact of a car‑free evening on Willowbrook’s community."
+        },
+        {
+          "id": "a2",
+          "text": "The history of Willowbrook’s traffic laws."
+        },
+        {
+          "id": "a3",
+          "text": "A new public transport system."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Willowbrook, a quiet suburb on the edge of the city, launched a car‑free evening on Thursday to test whether traffic could be replaced by pedestrians and cyclists.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "According to shopkeepers, what positive effect did the car‑free evening have on their businesses?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Faster delivery times."
+        },
+        {
+          "id": "a2",
+          "text": "Increased foot traffic leading to higher sales."
+        },
+        {
+          "id": "a3",
+          "text": "Reduced rent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the surge of walkers boosted his evening sales by 18%",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What can be inferred about the residents' attitudes toward noise?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "All residents agreed that noise had decreased."
+        },
+        {
+          "id": "a2",
+          "text": "Residents were indifferent to noise levels."
+        },
+        {
+          "id": "a3",
+          "text": "Some residents felt noise shifted to louder conversations."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "while some neighbours said the streets were quieter, others complained that the lack of engines made conversations and children’s games sound louder.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the article present the council’s noise measurements?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To provide an objective basis for the debate."
+        },
+        {
+          "id": "a2",
+          "text": "To prove the experiment failed."
+        },
+        {
+          "id": "a3",
+          "text": "To advertise new sound‑monitoring equipment."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The council’s environmental team recorded a 12% drop in average decibel levels, yet the number of formal complaints rose by 9%.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would you describe the author’s tone in the concluding paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Defeated and dismissive."
+        },
+        {
+          "id": "a2",
+          "text": "Optimistic yet cautious."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressive and accusatory."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The council plans to extend the trial with adjusted delivery windows, while the community remains divided, promising another town‑hall meeting next month.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the article, the word 'nuanced' most closely means:",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Simple and clear."
+        },
+        {
+          "id": "a2",
+          "text": "Confusing and vague."
+        },
+        {
+          "id": "a3",
+          "text": "Detailed and subtle."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "remains nuanced, with each side pointing to different metrics.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short opinion paragraph (80‑120 words) in which you argue whether car‑free evenings should become a regular feature in your own neighbourhood. Use at least two of the vocabulary words from the list.",
+      "en": "Write a short opinion paragraph (80‑120 words) in which you argue whether car‑free evenings should become a regular feature in your own neighbourhood. Use at least two of the vocabulary words from the list."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Identify the main ideas, specific details, and implied meanings, and demonstrate your understanding of key vocabulary.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:12:02.644Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Evening Without Cars: The Test in Willowbrook | B2 Reading | WeLearn",
+      "en": "Evening Without Cars: The Test in Willowbrook | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read the article about Willowbrook’s car‑free evening experiment and answer the questions that follow.",
+      "en": "Read the article about Willowbrook’s car‑free evening experiment and answer the questions that follow."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:12:02.644Z"
+  }
+}

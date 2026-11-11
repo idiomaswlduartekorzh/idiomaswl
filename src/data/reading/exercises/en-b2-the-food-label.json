@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-food-label",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Clarity Conundrum: Freshway Market’s New Labeling Policy",
+      "en": "The Clarity Conundrum: Freshway Market’s New Labeling Policy"
+    },
+    "intro": {
+      "es": "An exploration of a local grocery store's attempt to combat food waste through revised date labeling and the subsequent consumer confusion that followed.",
+      "en": "An exploration of a local grocery store's attempt to combat food waste through revised date labeling and the subsequent consumer confusion that followed."
+    },
+    "mission": {
+      "es": "Read the following review and analyze the effectiveness of the store's new labeling system and the consumer reaction.",
+      "en": "Read the following review and analyze the effectiveness of the store's new labeling system and the consumer reaction."
+    },
+    "targetText": "Last Tuesday, Freshway Market implemented a radical policy shift, replacing traditional 'sell-by' tags with a dual-label system: 'Best Before' for quality and 'Use By' for safety. The initiative, spearheaded by store manager Elena Vance, aimed to curb the massive volume of edible produce discarded daily. By distinguishing between aesthetic imperfections and genuine spoilage, Vance hoped to empower shoppers to trust their senses rather than arbitrary calendar dates. The store even installed sensory kiosks where staff demonstrated how to identify the subtle signs of rot versus harmless bruising, a gesture that was initially met with widespread local acclaim.\n\nHowever, the transition has been far from seamless. During a busy Friday evening, I observed a heated exchange between a regular patron, Marcus Thorne, and a floor assistant. Thorne, holding a carton of organic yogurt, expressed deep frustration, arguing that the new labels lacked the definitive authority of the old system. He contended that 'Best Before' was too ambiguous, leaving him to gamble on whether the product was truly safe for his young children. The assistant, clearly exhausted, could only reiterate the store’s official guidance, which felt more like a legal disclaimer than a helpful instruction.\n\nThis conflict highlights a fundamental tension in the fight against food waste: the clash between corporate responsibility and consumer anxiety. While the environmental benefits of reducing waste are undeniable, the burden of judgment is being shifted onto the individual. Shoppers are now expected to act as amateur food safety inspectors, a role many feel unqualified to fulfill. The store's attempt to educate the public through kiosks is a noble start, but it fails to address the underlying psychological reliance on rigid expiration dates that has been ingrained in consumers for decades.\n\nAdmittedly, the initiative has successfully reduced the store’s daily refuse. I noticed significantly fewer discarded items in the clearance bins compared to last month. Yet, this success comes at a cost to the store’s atmosphere. The shopping experience, once a straightforward errand, has become a source of stress. The ambiguity of the new labeling system creates a lingering doubt that permeates the aisles, making even the most basic purchases feel like a high-stakes decision. It is a classic case of a well-intentioned policy creating unforeseen social friction.\n\nUltimately, Freshway Market has succeeded in its primary goal of waste reduction, but at the expense of customer confidence. Elena Vance has proven that data-driven changes can alter inventory outcomes, yet she has underestimated the emotional weight of a label. Until the store can bridge the gap between scientific accuracy and the human need for certainty, the initiative will continue to alienate those who value peace of mind over sustainability. The market is currently a laboratory for a social experiment that, while environmentally sound, remains psychologically taxing for its participants.",
+    "wordCount": 461,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "curb",
+        "lemma": "curb",
+        "glosses": {
+          "es": "to restrain or keep in check",
+          "en": "to restrain or keep in check"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arbitrary",
+        "lemma": "arbitrary",
+        "glosses": {
+          "es": "based on random choice rather than reason",
+          "en": "based on random choice rather than reason"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "disclaimer",
+        "lemma": "disclaimer",
+        "glosses": {
+          "es": "a statement that denies responsibility",
+          "en": "a statement that denies responsibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ingrained",
+        "lemma": "ingrained",
+        "glosses": {
+          "es": "firmly fixed or established",
+          "en": "firmly fixed or established"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "permeates",
+        "lemma": "permeates",
+        "glosses": {
+          "es": "spreads throughout something",
+          "en": "spreads throughout something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "taxing",
+        "lemma": "taxing",
+        "glosses": {
+          "es": "physically or mentally demanding",
+          "en": "physically or mentally demanding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The friction of new labeling."
+        },
+        {
+          "id": "a2",
+          "text": "The success of waste reduction."
+        },
+        {
+          "id": "a3",
+          "text": "The failure of store management."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "This conflict highlights a fundamental tension in the fight against food waste: the clash between corporate responsibility and consumer anxiety.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What was the specific function of the store's new kiosks?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To sell products."
+        },
+        {
+          "id": "a2",
+          "text": "To show rot signs."
+        },
+        {
+          "id": "a3",
+          "text": "To explain labels."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The store even installed sensory kiosks where staff demonstrated how to identify the subtle signs of rot versus harmless bruising",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does the author view the store's current situation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a failed experiment."
+        },
+        {
+          "id": "a2",
+          "text": "As a necessary transition with no meaningful drawbacks."
+        },
+        {
+          "id": "a3",
+          "text": "As a balance of good and bad."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ultimately, Freshway Market has succeeded in its primary goal of waste reduction, but at the expense of customer confidence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the interaction between Marcus and the assistant?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the consumer anxiety caused by the new labels."
+        },
+        {
+          "id": "a2",
+          "text": "To show staff incompetence."
+        },
+        {
+          "id": "a3",
+          "text": "To provide evidence that the store should revert to old systems."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Thorne, holding a carton of organic yogurt, expressed deep frustration, arguing that the new labels lacked the definitive authority of the old system.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best describes the author's tone toward the store's policy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entirely supportive."
+        },
+        {
+          "id": "a2",
+          "text": "Critically balanced."
+        },
+        {
+          "id": "a3",
+          "text": "Openly hostile."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Admittedly, the initiative has successfully reduced the store’s daily refuse. I noticed significantly fewer discarded items in the clearance bins compared to last month. Yet, this success comes at a cost to the store’s atmosphere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by describing the market as a 'laboratory'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The store is physically changing its layout to look like a science facility."
+        },
+        {
+          "id": "a2",
+          "text": "The store is conducting scientific research that is unrelated to food sales."
+        },
+        {
+          "id": "a3",
+          "text": "The store is testing a new social policy on its customers."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The market is currently a laboratory for a social experiment that, while environmentally sound, remains psychologically taxing for its participants.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short proposal (150 words) for a grocery store manager suggesting one way to improve customer trust while maintaining their new waste-reduction labeling policy.",
+      "en": "Write a short proposal (150 words) for a grocery store manager suggesting one way to improve customer trust while maintaining their new waste-reduction labeling policy."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Read the following review and analyze the effectiveness of the store's new labeling system and the consumer reaction.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Clarity Conundrum: Freshway Market’s New Labeling Policy | B2 Reading | WeLearn",
+      "en": "The Clarity Conundrum: Freshway Market’s New Labeling Policy | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of a local grocery store's attempt to combat food waste through revised date labeling and the subsequent consumer confusion that followed.",
+      "en": "An exploration of a local grocery store's attempt to combat food waste through revised date labeling and the subsequent consumer confusion that followed."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

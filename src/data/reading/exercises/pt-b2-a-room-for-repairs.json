@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "portuguese B2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Dilema da Oficina de Reparos da Vila Esperança",
+      "en": "O Dilema da Oficina de Reparos da Vila Esperança"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a sustentabilidade e a eficácia do projeto comunitário de consertos compartilhados.",
+      "en": "Uma análise crítica sobre a sustentabilidade e a eficácia do projeto comunitário de consertos compartilhados."
+    },
+    "mission": {
+      "es": "Avaliar se o modelo de oficina comunitária de reparos consegue equilibrar a demanda crescente por consertos com a escassez de recursos e voluntários.",
+      "en": "Avaliar se o modelo de oficina comunitária de reparos consegue equilibrar a demanda crescente por consertos com a escassez de recursos e voluntários."
+    },
+    "targetText": "A Oficina de Reparos da Vila Esperança surgiu com a promessa nobre de combater a cultura do descarte. Localizada em um galpão cedido pela prefeitura, o espaço convida moradores a trazerem eletrodomésticos quebrados para serem consertados por voluntários qualificados. Durante uma visita de campo na última terça-feira, observei que a iniciativa atrai um público diversificado, desde estudantes com cafeteiras avariadas até idosos tentando salvar rádios antigos. O ambiente é carregado de uma energia colaborativa, onde o aprendizado técnico é tão valorizado quanto o objeto restaurado. No entanto, a experiência revelou fragilidades estruturais que impedem o sucesso pleno da empreitada.\n\nO principal gargalo reside na assimetria entre a oferta e a demanda. Naquela noite, vi o Sr. Alberto, um dos poucos eletricistas voluntários, sobrecarregado. Ele precisava atender simultaneamente três pessoas enquanto buscava chaves de fenda específicas que, frequentemente, estavam desaparecidas ou danificadas. A escassez de ferramentas de precisão cria um gargalo logístico onde o tempo de espera ultrapassa duas horas. Muitos moradores, frustrados com a lentidão, acabam desistindo de seus aparelhos no meio do processo, deixando-os como sucata no canto da sala, o que paradoxalmente aumenta o acúmulo de resíduos que o projeto visava eliminar.\n\nExiste também uma tensão implícita sobre a responsabilidade técnica. Quando um voluntário, como a jovem engenheira Beatriz, tenta consertar um liquidificador complexo e falha, a decepção do proprietário é palpável. O projeto opera sob a premissa de 'ajuda mútua', mas a falta de um sistema de triagem profissional transforma o espaço em um campo de incertezas. A ausência de peças de reposição obrigatórias faz com que muitos reparos sejam apenas paliativos, funcionando por poucos dias antes de falharem novamente, o que levanta questões sobre a real eficácia ambiental da oficina.\n\nPor outro lado, não se pode ignorar o valor imaterial do projeto. A oficina funciona como um centro de convivência onde o conhecimento sobre o funcionamento das máquinas é democratizado. Mesmo com as falhas técnicas, a sensação de pertencimento gerada pelo ato de consertar algo em conjunto é um antídoto poderoso contra o isolamento urbano. O problema é que o entusiasmo voluntário não substitui a necessidade de uma gestão profissionalizada e de um investimento constante em equipamentos de qualidade que suportem o uso intensivo.\n\nAo final da noite, o Sr. Alberto fechou as portas com um suspiro de cansaço, observando a pilha de aparelhos incompletos. A oficina é, sem dúvida, uma ideia necessária, mas que corre o risco de tornar-se um símbolo de boas intenções desprovidas de sustentabilidade operacional. Sem uma reforma no modelo de governança e um aporte maior de ferramentas, a Vila Esperança continuará a consertar apenas as aparências, enquanto o problema real dos resíduos eletrônicos permanece intacto sob a mesa de trabalho.",
+    "wordCount": 449,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "gargalo",
+        "lemma": "gargalo",
+        "glosses": {
+          "es": "bottleneck",
+          "en": "bottleneck"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "avariadas",
+        "lemma": "avariadas",
+        "glosses": {
+          "es": "damaged",
+          "en": "damaged"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paliativos",
+        "lemma": "paliativos",
+        "glosses": {
+          "es": "temporary or superficial solutions",
+          "en": "temporary or superficial solutions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "democratizado",
+        "lemma": "democratizado",
+        "glosses": {
+          "es": "made accessible to everyone",
+          "en": "made accessible to everyone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aporte",
+        "lemma": "aporte",
+        "glosses": {
+          "es": "contribution or investment",
+          "en": "contribution or investment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sucata",
+        "lemma": "sucata",
+        "glosses": {
+          "es": "scrap metal or junk",
+          "en": "scrap metal or junk"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.5,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:43:22.916Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central do texto sobre a oficina?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O projeto carece de estrutura."
+        },
+        {
+          "id": "a2",
+          "text": "A oficina é um sucesso total."
+        },
+        {
+          "id": "a3",
+          "text": "O voluntariado é desnecessário."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a iniciativa atrai um público diversificado, desde estudantes com cafeteiras avariadas até idosos tentando salvar rádios antigos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que os moradores desistem de seus aparelhos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Por falta de café."
+        },
+        {
+          "id": "a2",
+          "text": "Pela espera longa."
+        },
+        {
+          "id": "a3",
+          "text": "Pela falta de interesse."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A escassez de ferramentas de precisão cria um gargalo logístico onde o tempo de espera ultrapassa duas horas. Muitos moradores, frustrados com a lentidão, acabam desistindo de seus aparelhos",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que acontece com os aparelhos que não são consertados?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "São reciclados adequadamente."
+        },
+        {
+          "id": "a2",
+          "text": "São devolvidos aos donos consertados."
+        },
+        {
+          "id": "a3",
+          "text": "Acumulam-se como sucata no local."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "deixando-os como sucata no canto da sala, o que paradoxalmente aumenta o acúmulo de resíduos que o projeto visava eliminar.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao mencionar o Sr. Alberto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar a sobrecarga e a falta de recursos."
+        },
+        {
+          "id": "a2",
+          "text": "Elogiar sua habilidade técnica."
+        },
+        {
+          "id": "a3",
+          "text": "Demonstrar que a oficina funciona bem."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Naquela noite, vi o Sr. Alberto, um dos poucos eletricistas voluntários, sobrecarregado. Ele precisava atender simultaneamente três pessoas enquanto buscava chaves de fenda específicas",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na conclusão do autor?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Cético e preocupado."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e neutro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A oficina é, sem dúvida, uma ideia necessária, mas que corre o risco de tornar-se um símbolo de boas intenções desprovidas de sustentabilidade operacional.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'paliativos' no contexto do terceiro parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Reparos definitivos e duradouros."
+        },
+        {
+          "id": "a2",
+          "text": "Ferramentas de alta tecnologia."
+        },
+        {
+          "id": "a3",
+          "text": "Soluções temporárias e superficiais."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A ausência de peças de reposição obrigatórias faz com que muitos reparos sejam apenas paliativos, funcionando por poucos dias antes de falharem novamente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo propondo uma solução prática para os problemas de gestão e falta de ferramentas descritos no texto, considerando o papel da comunidade e da administração pública.",
+      "en": "Escreva um parágrafo argumentativo propondo uma solução prática para os problemas de gestão e falta de ferramentas descritos no texto, considerando o papel da comunidade e da administração pública."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Avaliar se o modelo de oficina comunitária de reparos consegue equilibrar a demanda crescente por consertos com a escassez de recursos e voluntários.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:43:22.916Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Dilema da Oficina de Reparos da Vila Esperança | B2 Reading | WeLearn",
+      "en": "O Dilema da Oficina de Reparos da Vila Esperança | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a sustentabilidade e a eficácia do projeto comunitário de consertos compartilhados.",
+      "en": "Uma análise crítica sobre a sustentabilidade e a eficácia do projeto comunitário de consertos compartilhados."
+    },
+    "canonicalPath": "/en/practice/portuguese/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:43:22.916Z"
+  }
+}

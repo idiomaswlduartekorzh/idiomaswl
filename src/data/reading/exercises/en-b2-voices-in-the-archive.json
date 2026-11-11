@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Archivist’s Dilemma",
+      "en": "The Archivist’s Dilemma"
+    },
+    "intro": {
+      "es": "An exploration of memory, accuracy, and the ethics of preserving oral histories.",
+      "en": "An exploration of memory, accuracy, and the ethics of preserving oral histories."
+    },
+    "mission": {
+      "es": "Read the story to understand the tension between literal transcription and the subjective nature of personal narrative.",
+      "en": "Read the story to understand the tension between literal transcription and the subjective nature of personal narrative."
+    },
+    "targetText": "The Oakwood Community Library’s 'Living Voices' project was designed to capture the fading memories of the town’s eldest citizens. Elias Thorne, a retired clockmaker with trembling hands but a razor-sharp mind, had spent three afternoons recording his experiences during the post-war industrial boom. When the library’s lead archivist, Sarah, finally presented the printed transcript for his approval, Elias’s face tightened. He sat in the quiet, dust-moted reading room, his finger tracing the lines of his own spoken words. While the transcription was technically accurate, capturing every stutter and colloquialism, Elias felt the essence of his narrative had been stripped away. He pointed to a passage describing the closure of the local textile mill. In the recording, he had described the event as a 'quiet tragedy,' but the transcript read as a 'minor economic adjustment.' He argued that while the latter was factually correct regarding the town’s ledger, it betrayed the emotional reality of the hundreds of families who lost their livelihoods overnight. Sarah listened patiently, her notebook open, yet she hesitated. Her mandate was to preserve the oral history as it was spoken, ensuring that the archive remained an objective record for future historians. She explained that altering the transcript would compromise the integrity of the primary source material, effectively turning a historical document into a curated memoir. She acknowledged his perspective, conceding that language often fails to capture the weight of lived experience, but she remained firm on the library’s policy of verbatim documentation. The tension in the room grew palpable as the grandfather clock in the corner struck five. Elias stood up, his posture stiff with a mixture of disappointment and resolve. He informed Sarah that if the library insisted on publishing the sterile version, he would withdraw his consent for the recording to be made public. He argued that a record devoid of the speaker's truth was merely a collection of data, not a history. Sarah, caught between her professional duty and the desire to honor the subject’s wishes, realized that the project’s goal—to preserve the town’s spirit—was now at risk of failure. She proposed a compromise: they would append a preface written by Elias, explaining his interpretation of the events, alongside the original transcript. Elias considered this, his gaze lingering on the pages that had caused such friction. He finally nodded, agreeing to the compromise, though a lingering sense of unease remained. He realized that even with his preface, the raw, unvarnished truth of his memory would always be filtered through the institutional lens of the library. As he walked out into the cool evening air, he understood that history is never truly captured; it is only ever interpreted, debated, and ultimately, reshaped by those who hold the pen or, in this case, the transcript.",
+    "wordCount": 459,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "colloquialism",
+        "lemma": "colloquialism",
+        "glosses": {
+          "es": "a word or phrase that is used in informal conversation",
+          "en": "a word or phrase that is used in informal conversation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mandate",
+        "lemma": "mandate",
+        "glosses": {
+          "es": "an official order or requirement",
+          "en": "an official order or requirement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compromise",
+        "lemma": "compromise",
+        "glosses": {
+          "es": "an agreement reached by each side making concessions",
+          "en": "an agreement reached by each side making concessions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to seem almost tangible",
+          "en": "so intense as to seem almost tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sterile",
+        "lemma": "sterile",
+        "glosses": {
+          "es": "lacking in imagination or vitality",
+          "en": "lacking in imagination or vitality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "unvarnished",
+        "lemma": "unvarnished",
+        "glosses": {
+          "es": "plain and straightforward; without any attempt to hide the truth",
+          "en": "plain and straightforward; without any attempt to hide the truth"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict in the story?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Accuracy versus emotion."
+        },
+        {
+          "id": "a2",
+          "text": "The library lacks funding."
+        },
+        {
+          "id": "a3",
+          "text": "Elias dislikes the library."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "He argued that while the latter was factually correct regarding the town’s ledger, it betrayed the emotional reality of the hundreds of families who lost their livelihoods overnight.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does Sarah initially refuse to change the transcript?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She fears losing her job."
+        },
+        {
+          "id": "a2",
+          "text": "Policy requires verbatim records."
+        },
+        {
+          "id": "a3",
+          "text": "She disagrees with his memory."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "She explained that altering the transcript would compromise the integrity of the primary source material, effectively turning a historical document into a curated memoir.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Elias feel about the final compromise?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Completely satisfied."
+        },
+        {
+          "id": "a2",
+          "text": "Angry and vengeful."
+        },
+        {
+          "id": "a3",
+          "text": "Skeptical but accepting."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He finally nodded, agreeing to the compromise, though a lingering sense of unease remained.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the primary goal of the Living Voices project?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To document the town's past."
+        },
+        {
+          "id": "a2",
+          "text": "To create a town museum."
+        },
+        {
+          "id": "a3",
+          "text": "To train new historians."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The Oakwood Community Library’s 'Living Voices' project was designed to capture the fading memories of the town’s eldest citizens.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the tone of the ending?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Hopeful."
+        },
+        {
+          "id": "a2",
+          "text": "Ambivalent."
+        },
+        {
+          "id": "a3",
+          "text": "Triumphant."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He realized that even with his preface, the raw, unvarnished truth of his memory would always be filtered through the institutional lens of the library.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'palpable' suggest about the atmosphere?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It was very quiet."
+        },
+        {
+          "id": "a2",
+          "text": "It was very confusing."
+        },
+        {
+          "id": "a3",
+          "text": "It was very tense."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The tension in the room grew palpable as the grandfather clock in the corner struck five.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short reflection (100 words) on whether oral history archives should prioritize objective facts or the subjective emotional experiences of the speakers.",
+      "en": "Write a short reflection (100 words) on whether oral history archives should prioritize objective facts or the subjective emotional experiences of the speakers."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Read the story to understand the tension between literal transcription and the subjective nature of personal narrative.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Archivist’s Dilemma | B2 Reading | WeLearn",
+      "en": "The Archivist’s Dilemma | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of memory, accuracy, and the ethics of preserving oral histories.",
+      "en": "An exploration of memory, accuracy, and the ethics of preserving oral histories."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

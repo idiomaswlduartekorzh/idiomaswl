@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-a-place-to-wait",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La fin de la file d'attente",
+      "en": "La fin de la file d'attente"
+    },
+    "intro": {
+      "es": "Dans une clinique moderne, la transition vers un système de rendez-vous par messagerie électronique pose un défi d'équité sociale.",
+      "en": "Dans une clinique moderne, la transition vers un système de rendez-vous par messagerie électronique pose un défi d'équité sociale."
+    },
+    "mission": {
+      "es": "Analyser les implications de la dématérialisation des services de santé sur l'accès aux soins pour les populations vulnérables.",
+      "en": "Analyser les implications de la dématérialisation des services de santé sur l'accès aux soins pour les populations vulnérables."
+    },
+    "targetText": "La salle d'attente de la clinique Saint-Jude, autrefois un espace bruyant et surpeuplé, était devenue étrangement silencieuse. Le directeur, Monsieur Valmont, avait instauré un système de notifications par SMS pour avertir les patients de leur tour, espérant ainsi éradiquer les files d'attente interminables. Sur le papier, l'idée était louable : optimiser le flux et respecter le temps de chacun. Pourtant, cette efficacité technologique masquait une fracture invisible qui se manifestait chaque matin devant la porte coulissante en verre. \n\nMadame Morel, une habituée des lieux, observait la scène depuis son banc habituel. Elle voyait arriver les patients munis de smartphones récents, qui entraient avec assurance, tandis que d'autres, plus démunis, restaient sur le trottoir, l'air perdu. Parmi eux se trouvait Monsieur Diallo, un homme âgé qui n'avait jamais possédé de téléphone portable. Il attendait patiemment, espérant qu'une infirmière sortirait pour appeler les noms à haute voix, comme autrefois. Mais le personnel, désormais focalisé sur leurs tablettes numériques, ne levait plus les yeux vers la salle d'attente.\n\nLe conflit éclata lorsque Monsieur Diallo, fatigué d'attendre, osa entrer pour demander de l'aide. L'infirmière de garde, débordée par les alertes sonores de son terminal, lui répondit sèchement que sans confirmation numérique, son rendez-vous était annulé. « Le système ne ment pas », affirma-t-elle, sans même regarder l'homme en face d'elle. Monsieur Diallo, dont la santé déclinait, ne comprenait pas comment une simple absence de connexion pouvait invalider sa nécessité médicale. Il n'était pas un numéro sur un écran, mais un patient souffrant.\n\nValmont, témoin de la scène, ressentit un malaise profond. Il savait que son système fonctionnait pour la majorité, mais il réalisait soudainement que la technologie, censée être un outil de progrès, devenait une barrière infranchissable. La clinique avait gagné en fluidité ce qu'elle avait perdu en humanité. Le silence de la salle d'attente n'était plus le signe d'une organisation parfaite, mais celui d'une exclusion silencieuse. Le progrès, aussi séduisant soit-il, avait laissé sur le bord du chemin ceux qui n'avaient pas les moyens de suivre la cadence.\n\nFinalement, Monsieur Diallo repartit sans avoir été ausculté, ses pieds traînant sur le trottoir froid. Valmont resta immobile, fixant l'écran de contrôle qui affichait une liste de noms sans visage. Il comprit alors que l'efficacité pure ne pouvait remplacer l'empathie. Le soir même, il commença à rédiger une note pour réintroduire un accueil physique, malgré les protestations de ses supérieurs. Il était temps de reconnaître que la santé ne devrait jamais dépendre de la possession d'un appareil, mais de la reconnaissance de la vulnérabilité humaine.",
+    "wordCount": 420,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "louable",
+        "lemma": "louable",
+        "glosses": {
+          "es": "praiseworthy",
+          "en": "praiseworthy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fracture",
+        "lemma": "fracture",
+        "glosses": {
+          "es": "split or divide",
+          "en": "split or divide"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "démunis",
+        "lemma": "démunis",
+        "glosses": {
+          "es": "destitute or lacking resources",
+          "en": "destitute or lacking resources"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "invalider",
+        "lemma": "invalider",
+        "glosses": {
+          "es": "to make invalid",
+          "en": "to make invalid"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "infranchissable",
+        "lemma": "infranchissable",
+        "glosses": {
+          "es": "impassable",
+          "en": "impassable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ausculté",
+        "lemma": "ausculté",
+        "glosses": {
+          "es": "examined by a doctor",
+          "en": "examined by a doctor"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:51:00.562Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les limites de la dématérialisation."
+        },
+        {
+          "id": "a2",
+          "text": "L'impact positif de la numérisation sur les services de soins de santé modernes."
+        },
+        {
+          "id": "a3",
+          "text": "La nécessité d'améliorer les infrastructures de communication dans les centres hospitaliers."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la technologie, censée être un outil de progrès, devenait une barrière infranchissable.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Monsieur Diallo n'a-t-il pas pu consulter ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il a oublié ses papiers."
+        },
+        {
+          "id": "a2",
+          "text": "Il n'avait pas de téléphone."
+        },
+        {
+          "id": "a3",
+          "text": "Il ne savait pas utiliser l'interface numérique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Monsieur Diallo, un homme âgé qui n'avait jamais possédé de téléphone portable.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est l'attitude du personnel envers les patients ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ils sont froids."
+        },
+        {
+          "id": "a2",
+          "text": "Ils sont absents."
+        },
+        {
+          "id": "a3",
+          "text": "Ils sont très distants."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "le personnel, désormais focalisé sur leurs tablettes numériques, ne levait plus les yeux vers la salle d'attente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi l'auteur mentionne-t-il le silence de la salle d'attente ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour illustrer le sentiment d'exclusion."
+        },
+        {
+          "id": "a2",
+          "text": "Pour décrire une gestion des flux de patients parfaitement maîtrisée par le personnel soignant."
+        },
+        {
+          "id": "a3",
+          "text": "Pour mettre en évidence la sérénité inhabituelle qui précède une réorganisation majeure du service."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le silence de la salle d'attente n'était plus le signe d'une organisation parfaite, mais celui d'une exclusion silencieuse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de cette histoire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Informatif."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et mélancolique."
+        },
+        {
+          "id": "a3",
+          "text": "Amèrement désabusé et empreint d'une profonde tristesse face à la déshumanisation."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Valmont resta immobile, fixant l'écran de contrôle qui affichait une liste de noms sans visage.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'démunis' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ceux qui manquent de ressources."
+        },
+        {
+          "id": "a2",
+          "text": "Ceux qui sont dans le besoin."
+        },
+        {
+          "id": "a3",
+          "text": "Des individus sans accès aux outils numériques."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "tandis que d'autres, plus démunis, restaient sur le trottoir, l'air perdu.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif (80-100 mots) expliquant si, selon vous, les services publics devraient maintenir des canaux de communication traditionnels en parallèle des outils numériques.",
+      "en": "Rédigez un court paragraphe argumentatif (80-100 mots) expliquant si, selon vous, les services publics devraient maintenir des canaux de communication traditionnels en parallèle des outils numériques."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyser les implications de la dématérialisation des services de santé sur l'accès aux soins pour les populations vulnérables.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:51:00.562Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La fin de la file d'attente | B2 Reading | WeLearn",
+      "en": "La fin de la file d'attente | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans une clinique moderne, la transition vers un système de rendez-vous par messagerie électronique pose un défi d'équité sociale.",
+      "en": "Dans une clinique moderne, la transition vers un système de rendez-vous par messagerie électronique pose un défi d'équité sociale."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:51:00.562Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-local-stage",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Staging the Future: The Marrowstone Compromise",
+      "en": "Staging the Future: The Marrowstone Compromise"
+    },
+    "intro": {
+      "es": "A local community theatre faces a financial dilemma regarding youth accessibility and production costs.",
+      "en": "A local community theatre faces a financial dilemma regarding youth accessibility and production costs."
+    },
+    "mission": {
+      "es": "Analyze the text to understand the conflict between accessibility and sustainability in arts funding.",
+      "en": "Analyze the text to understand the conflict between accessibility and sustainability in arts funding."
+    },
+    "targetText": "The Marrowstone Playhouse, a cornerstone of our district’s cultural life, recently found itself at a crossroads. For decades, the theatre has maintained a policy of offering heavily discounted tickets to patrons under twenty-five, a tradition intended to foster a lifelong appreciation for the dramatic arts. However, the rising costs of stagecraft, lighting, and technical maintenance have placed an immense strain on the venue’s operational budget. Last month, the board of directors announced that the youth discount would be suspended for the upcoming season of 'The Silent Echo' to ensure the production remained financially viable.\n\nThis decision triggered an immediate outcry from the resident troupe, the Echo Collective. Led by artistic director Elena Vance and lead actor Marcus Thorne, the performers argued that removing the discount would effectively bar the very demographic the theatre aimed to serve. They contended that a theatre without a youthful audience is a theatre without a future. Yet, the board remained unmoved, citing the necessity of covering rehearsal expenses, which had ballooned due to the complexity of the new set designs.\n\nIn an attempt to bridge the divide, Vance and Thorne proposed a radical compromise. They offered to forgo their own rehearsal stipends for the duration of the production cycle. By shifting these funds back into the general pool, they hoped to offset the ticket revenue loss enough to maintain the discounted seating. This proposal was not merely a gesture of goodwill; it was a strategic move to force the board to acknowledge that the performers were as invested in the theatre’s sustainability as the administrators were.\n\nThe board’s response was one of cautious hesitation. While they welcomed the financial relief, they worried about the precedent of performers working without compensation. Chairperson Julian Halloway noted that professional standards must be upheld, even in a community setting. He feared that accepting the performers' sacrifice might lead to future expectations that artists should subsidize the theatre’s operational shortcomings. The tension between maintaining professional integrity and ensuring accessibility remained palpable as the opening night approached.\n\nUltimately, a tentative agreement was reached. The youth discount was reinstated, but only for weekday performances, and the performers accepted a reduced stipend rather than a total loss of pay. This resolution ensured the show would proceed, yet it left a lingering question regarding the long-term health of the institution. While the immediate conflict was resolved, the underlying issue—the struggle to balance artistic mission with economic reality—remains an unresolved tension that will likely resurface when the next season’s budget is drafted. The Marrowstone Playhouse has secured its audience for now, but the cost of that security has left both the board and the troupe wary of the fiscal challenges ahead.",
+    "wordCount": 446,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cornerstone",
+        "lemma": "cornerstone",
+        "glosses": {
+          "es": "an important quality or feature on which a particular thing depends",
+          "en": "an important quality or feature on which a particular thing depends"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "viable",
+        "lemma": "viable",
+        "glosses": {
+          "es": "capable of working successfully",
+          "en": "capable of working successfully"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stipends",
+        "lemma": "stipends",
+        "glosses": {
+          "es": "fixed regular sums paid as a salary or allowance",
+          "en": "fixed regular sums paid as a salary or allowance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "precedent",
+        "lemma": "precedent",
+        "glosses": {
+          "es": "an earlier event or action that is regarded as an example to be considered in subsequent similar circumstances",
+          "en": "an earlier event or action that is regarded as an example to be considered in subsequent similar circumstances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to seem almost tangible",
+          "en": "so intense as to seem almost tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiscal",
+        "lemma": "fiscal",
+        "glosses": {
+          "es": "relating to government revenue or financial matters",
+          "en": "relating to government revenue or financial matters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.3,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary focus of this article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The financial struggle of a community theatre"
+        },
+        {
+          "id": "a2",
+          "text": "The artistic vision of the Echo Collective"
+        },
+        {
+          "id": "a3",
+          "text": "The history of the Marrowstone Playhouse"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The Marrowstone Playhouse, a cornerstone of our district’s cultural life, recently found itself at a crossroads.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did the board initially suspend the youth discount?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To increase profits"
+        },
+        {
+          "id": "a2",
+          "text": "To cover rehearsal costs"
+        },
+        {
+          "id": "a3",
+          "text": "To limit the audience to adult subscribers only"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the board of directors announced that the youth discount would be suspended for the upcoming season of 'The Silent Echo' to ensure the production remained financially viable.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the board fear regarding the performers' proposal?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "That the quality of the show will decline"
+        },
+        {
+          "id": "a2",
+          "text": "That the actors will quit the theatre"
+        },
+        {
+          "id": "a3",
+          "text": "That it sets a bad professional standard"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He feared that accepting the performers' sacrifice might lead to future expectations that artists should subsidize the theatre’s operational shortcomings.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why did the performers suggest they forgo their stipends?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To ensure youth could still attend"
+        },
+        {
+          "id": "a2",
+          "text": "To protest the current board management"
+        },
+        {
+          "id": "a3",
+          "text": "To prove they were better than the board"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "By shifting these funds back into the general pool, they hoped to offset the ticket revenue loss enough to maintain the discounted seating.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How does the author characterize the final resolution?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a complete success"
+        },
+        {
+          "id": "a2",
+          "text": "As a temporary fix"
+        },
+        {
+          "id": "a3",
+          "text": "As a total failure"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "This resolution ensured the show would proceed, yet it left a lingering question regarding the long-term health of the institution.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'palpable' imply in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The tension was invisible"
+        },
+        {
+          "id": "a2",
+          "text": "The tension was nonexistent"
+        },
+        {
+          "id": "a3",
+          "text": "The tension was obvious"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The tension between maintaining professional integrity and ensuring accessibility remained palpable as the opening night approached.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short email from the perspective of a young patron thanking the theatre for the discount, explaining why attending the play was significant for your personal development.",
+      "en": "Write a short email from the perspective of a young patron thanking the theatre for the discount, explaining why attending the play was significant for your personal development."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the text to understand the conflict between accessibility and sustainability in arts funding.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Staging the Future: The Marrowstone Compromise | B2 Reading | WeLearn",
+      "en": "Staging the Future: The Marrowstone Compromise | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A local community theatre faces a financial dilemma regarding youth accessibility and production costs.",
+      "en": "A local community theatre faces a financial dilemma regarding youth accessibility and production costs."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

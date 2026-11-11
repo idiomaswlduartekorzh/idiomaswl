@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-notes-from-the-roof",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Solar Sovereignty Dispute",
+      "en": "The Solar Sovereignty Dispute"
+    },
+    "intro": {
+      "es": "Read this email correspondence between a building manager and a tenant representative regarding the installation of a communal solar array, then answer the questions.",
+      "en": "Read this email correspondence between a building manager and a tenant representative regarding the installation of a communal solar array, then answer the questions."
+    },
+    "mission": {
+      "es": "Analyze the conflicting interpretations of the building's bylaws regarding collective consent.",
+      "en": "Analyze the conflicting interpretations of the building's bylaws regarding collective consent."
+    },
+    "targetText": "Subject: Formal Objection regarding the Rooftop Photovoltaic Initiative\n\nDear Mr. Sterling, I am writing to you in my capacity as the elected representative of the residents of the Meridian Heights complex. While the building committee has long championed the transition to renewable energy, the recent decision to proceed with the installation of the solar array on the south-facing roof has encountered significant resistance. Our primary contention is not with the technology itself, but with the procedural legitimacy of the mandate you claim to possess. You have cited the 'General Improvement Clause' of our residency agreement, suggesting that a simple majority of the board is sufficient to authorize structural modifications. However, the residents argue that the installation constitutes a permanent alteration of common property, which, according to the founding charter, necessitates a two-thirds supermajority of the total tenancy, not merely the board members present at the last quarterly meeting. We believe that by bypassing the broader consensus, the board is effectively disenfranchising the very people who will bear the long-term maintenance costs of these panels.\n\nFurthermore, the financial burden placed upon the tenants is not distributed equitably under the current proposal. The plan dictates that the capital expenditure will be recovered through a flat-rate increase in monthly service charges. This approach ignores the reality that residents on the lower floors gain negligible benefit from the energy offset compared to those in the penthouse units, who stand to see their cooling costs slashed by the shaded insulation provided by the panels. It is fundamentally inequitable to demand that those who derive the least utility from the project subsidize the comfort of the most privileged. We have collected signatures from over forty percent of the residents who demand an immediate stay on the procurement process until a town hall meeting can be convened to debate the cost-sharing mechanism. Without such a forum, we are prepared to seek legal counsel to determine if the board has exceeded its fiduciary authority.\n\nDear Ms. Vance, thank you for your candid communication. I must clarify that the board’s decision was predicated on the interpretation that solar arrays are classified as 'essential infrastructure' rather than 'non-essential structural modifications.' Under our bylaws, essential infrastructure upgrades are exempt from the supermajority requirement to prevent gridlock on vital maintenance. Regarding your concerns about the cost distribution, the board analyzed the energy output data and concluded that the communal savings would be funneled into the general building fund, thereby lowering the base maintenance fee for all residents over the next decade. While I acknowledge that the penthouse residents may see immediate individual gains, the long-term fiscal health of the entire complex is the primary objective of this initiative. We see this as a necessary evolution of our building, and we cannot afford to delay the installation, as the current government subsidies for such projects are set to expire shortly. \n\nI find your assertion regarding the board’s fiduciary duty to be somewhat misplaced. Our duty is to ensure the building remains competitive and sustainable in a volatile energy market. Delaying for a town hall meeting would not only jeopardize our eligibility for these time-sensitive grants but would also signal to prospective buyers that Meridian Heights is a reactionary environment, resistant to modernization. The board has acted within the scope of its mandate, and we have no intention of stalling the procurement process. We are, however, willing to host an informational session after the contract is signed to explain how the energy credits will be managed. This session will serve to clarify the technical aspects of the project, though it will not function as a referendum on the board’s authority, as the decision is final.\n\nIt is clear that our perspectives on governance are irreconcilable. You view the board as a representative body that must seek constant validation, whereas we operate under the belief that the board is a stewardship entity tasked with making difficult, long-term decisions that the average tenant may not fully grasp. We will proceed with the installation on Monday. If you choose to pursue legal action, please direct all correspondence to our solicitors. We believe that history will vindicate our decision to prioritize the building’s future over the immediate comfort of a vocal minority. The transition to a sustainable future requires bold action, and we are prepared to accept the friction that such progress inevitably creates.",
+    "wordCount": 726,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "disenfranchising",
+        "lemma": "disenfranchising",
+        "glosses": {
+          "es": "depriving someone of a right or privilege",
+          "en": "depriving someone of a right or privilege"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiduciary",
+        "lemma": "fiduciary",
+        "glosses": {
+          "es": "involving a trust, especially with regard to the relationship between a trustee and a beneficiary",
+          "en": "involving a trust, especially with regard to the relationship between a trustee and a beneficiary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "predicated",
+        "lemma": "predicated",
+        "glosses": {
+          "es": "founded or based on something",
+          "en": "founded or based on something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gridlock",
+        "lemma": "gridlock",
+        "glosses": {
+          "es": "a situation where no progress can be made",
+          "en": "a situation where no progress can be made"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irreconcilable",
+        "lemma": "irreconcilable",
+        "glosses": {
+          "es": "representing findings or points of view that are so different that they cannot be made compatible",
+          "en": "representing findings or points of view that are so different that they cannot be made compatible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stewardship",
+        "lemma": "stewardship",
+        "glosses": {
+          "es": "the job of supervising or taking care of something",
+          "en": "the job of supervising or taking care of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.7,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict between the residents and the board?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A dispute regarding the board's authority to mandate building changes."
+        },
+        {
+          "id": "a2",
+          "text": "A disagreement over the technical efficiency of solar panels."
+        },
+        {
+          "id": "a3",
+          "text": "A debate over whether the building should prioritize renewable energy sources."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Our primary contention is not with the technology itself, but with the procedural legitimacy of the mandate you claim to possess.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does the board refuse to hold a town hall meeting before signing the contract?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They fear the residents will vote against the project."
+        },
+        {
+          "id": "a2",
+          "text": "They want to secure government grants before they expire."
+        },
+        {
+          "id": "a3",
+          "text": "They believe the residents lack the expertise to understand the project."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Delaying for a town hall meeting would not only jeopardize our eligibility for these time-sensitive grants but would also signal to prospective buyers that Meridian Heights is a reactionary environment",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the board's final email suggest about their view of the residents?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They believe the residents are being manipulated by a small group of agitators."
+        },
+        {
+          "id": "a2",
+          "text": "They think the residents are primarily concerned with their own financial gain."
+        },
+        {
+          "id": "a3",
+          "text": "They feel that the residents are incapable of understanding the long-term benefits."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "we operate under the belief that the board is a stewardship entity tasked with making difficult, long-term decisions that the average tenant may not fully grasp.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the primary function of the board's final correspondence in this exchange?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To justify their decision while firmly rejecting the request for a vote."
+        },
+        {
+          "id": "a2",
+          "text": "To offer a compromise that might satisfy the residents' concerns."
+        },
+        {
+          "id": "a3",
+          "text": "To invite the residents to a discussion about the future of the building."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The board has acted within the scope of its mandate, and we have no intention of stalling the procurement process.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would one characterize the tone of the board's responses throughout the exchange?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Defensive and conciliatory."
+        },
+        {
+          "id": "a2",
+          "text": "Authoritative and dismissive."
+        },
+        {
+          "id": "a3",
+          "text": "Collaborative and transparent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I find your assertion regarding the board’s fiduciary duty to be somewhat misplaced.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'fiduciary' imply in the context of the residents' argument?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The board is legally required to consult the residents on all spending."
+        },
+        {
+          "id": "a2",
+          "text": "The board is hiding information about the maintenance costs of the panels."
+        },
+        {
+          "id": "a3",
+          "text": "The board is failing to act in the best financial interest of the residents."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "We believe that by bypassing the broader consensus, the board is effectively disenfranchising the very people who will bear the long-term maintenance costs of these panels.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response from the perspective of a neutral third-party mediator who has been invited to resolve the dispute between the residents and the board, proposing a compromise that respects both the board's need for efficiency and the residents' desire for democratic oversight.",
+      "en": "Write a 200-word response from the perspective of a neutral third-party mediator who has been invited to resolve the dispute between the residents and the board, proposing a compromise that respects both the board's need for efficiency and the residents' desire for democratic oversight."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the conflicting interpretations of the building's bylaws regarding collective consent.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Solar Sovereignty Dispute | C1 Reading | WeLearn",
+      "en": "The Solar Sovereignty Dispute | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read this email correspondence between a building manager and a tenant representative regarding the installation of a communal solar array, then answer the questions.",
+      "en": "Read this email correspondence between a building manager and a tenant representative regarding the installation of a communal solar array, then answer the questions."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

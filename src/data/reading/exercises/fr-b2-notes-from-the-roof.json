@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le projet solaire de la résidence Les Acacias",
+      "en": "Le projet solaire de la résidence Les Acacias"
+    },
+    "intro": {
+      "es": "Lisez cet échange de courriels entre M. Delacroix, propriétaire, et Mme Vasseur, représentante des locataires, concernant l'installation de panneaux solaires sur le toit de leur immeuble.",
+      "en": "Lisez cet échange de courriels entre M. Delacroix, propriétaire, et Mme Vasseur, représentante des locataires, concernant l'installation de panneaux solaires sur le toit de leur immeuble."
+    },
+    "mission": {
+      "es": "Analysez les tensions financières et structurelles liées à la transition énergétique en copropriété.",
+      "en": "Analysez les tensions financières et structurelles liées à la transition énergétique en copropriété."
+    },
+    "targetText": "Objet : Projet d'installation photovoltaïque sur le toit\n\nChère Madame Vasseur, je vous écris au nom du conseil syndical concernant notre proposition d'installer des panneaux solaires sur le toit de la résidence. Après avoir consulté plusieurs prestataires, nous avons identifié une solution technique qui permettrait de réduire drastiquement nos factures d'électricité communes, notamment pour l'éclairage des parties communes et le fonctionnement de l'ascenseur. Cette initiative s'inscrit dans une démarche de durabilité que nous souhaitons tous voir aboutir, tout en valorisant notre patrimoine immobilier sur le long terme.\n\nCependant, nous devons aborder la question du financement. La proposition actuelle prévoit que les propriétaires assument la totalité des frais d'investissement initial. En contrepartie, nous envisageons une refacturation directe aux locataires par le biais d'une augmentation modérée des charges, justifiée par l'économie réalisée sur leur consommation individuelle si nous parvenions à étendre le réseau. Cette répartition, bien que complexe, semble être la seule manière de rendre le projet viable sans alourdir indûment le budget de chaque foyer dès le premier mois.\n\nJe comprends que cette approche puisse susciter des interrogations, surtout pour les locataires qui n'ont pas vocation à rester dans l'immeuble sur une décennie. Il est vrai que les propriétaires bénéficient de la plus-value immobilière, tandis que les locataires, eux, ne verraient qu'une baisse marginale de leurs factures. Nous reconnaissons volontiers que cet équilibre est délicat, mais nous espérons que vous percevrez l'intérêt collectif de cette transition énergétique nécessaire face à la hausse constante des tarifs de l'énergie.\n\nÀ ce sujet, j'aimerais clarifier un point crucial : le syndic a déjà commencé à préparer les dossiers administratifs, anticipant une validation rapide lors de la prochaine assemblée générale. Nous avons besoin de votre soutien pour convaincre les autres résidents que cette dépense initiale, bien que significative, est un investissement plutôt qu'une contrainte. Votre rôle de médiatrice auprès des locataires sera déterminant pour éviter tout blocage lors du vote décisif qui se tiendra bientôt.\n\nJe reste conscient que cette proposition soulève une tension persistante entre les intérêts à court terme des occupants et la vision patrimoniale des propriétaires. Si nous ne parvenons pas à un consensus sur la répartition des coûts, le projet sera malheureusement abandonné, et nous continuerons à subir les fluctuations du marché de l'énergie sans aucune protection. J'attends votre retour avec impatience afin d'ajuster, si nécessaire, les modalités de cette transition avant que les devis ne deviennent caducs et que l'opportunité ne nous échappe totalement.",
+    "wordCount": 404,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "drastiquement",
+        "lemma": "drastiquement",
+        "glosses": {
+          "es": "drastically",
+          "en": "drastically"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "patrimoine",
+        "lemma": "patrimoine",
+        "glosses": {
+          "es": "assets/estate",
+          "en": "assets/estate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "indûment",
+        "lemma": "indûment",
+        "glosses": {
+          "es": "unduly",
+          "en": "unduly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "médiatrice",
+        "lemma": "médiatrice",
+        "glosses": {
+          "es": "mediator",
+          "en": "mediator"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "caducs",
+        "lemma": "caducs",
+        "glosses": {
+          "es": "expired/void",
+          "en": "expired/void"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "consensus",
+        "lemma": "consensus",
+        "glosses": {
+          "es": "agreement",
+          "en": "agreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 25.3,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal de ce courriel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le financement de panneaux solaires."
+        },
+        {
+          "id": "a2",
+          "text": "La modernisation complète de l'installation électrique de l'immeuble."
+        },
+        {
+          "id": "a3",
+          "text": "Une stratégie globale de réduction des impôts fonciers pour les copropriétaires."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "nous avons identifié une solution technique qui permettrait de réduire drastiquement nos factures d'électricité communes, notamment pour l'éclairage des parties communes et le fonctionnement de l'ascenseur.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Qui doit payer l'investissement initial selon la proposition ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les locataires."
+        },
+        {
+          "id": "a2",
+          "text": "Les propriétaires."
+        },
+        {
+          "id": "a3",
+          "text": "Le fonds de réserve de la copropriété géré par le syndic."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La proposition actuelle prévoit que les propriétaires assument la totalité des frais d'investissement initial.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi le projet risque-t-il d'être abandonné ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un problème."
+        },
+        {
+          "id": "a2",
+          "text": "Une erreur."
+        },
+        {
+          "id": "a3",
+          "text": "Par manque d'accord financier."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Si nous ne parvenons pas à un consensus sur la répartition des coûts, le projet sera malheureusement abandonné",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi M. Delacroix sollicite-t-il Mme Vasseur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour obtenir son soutien auprès des locataires."
+        },
+        {
+          "id": "a2",
+          "text": "Pour organiser la prochaine assemblée générale extraordinaire des copropriétaires."
+        },
+        {
+          "id": "a3",
+          "text": "Pour solliciter son expertise technique sur le fonctionnement des nouveaux ascenseurs."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Votre rôle de médiatrice auprès des locataires sera déterminant pour éviter tout blocage lors du vote décisif qui se tiendra bientôt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton employé par l'auteur dans cet échange ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Directif et menaçant."
+        },
+        {
+          "id": "a2",
+          "text": "Persuasif et diplomate."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et informel."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Je comprends que cette approche puisse susciter des interrogations, surtout pour les locataires qui n'ont pas vocation à rester dans l'immeuble sur une décennie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'caducs' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Vieux."
+        },
+        {
+          "id": "a2",
+          "text": "Faux."
+        },
+        {
+          "id": "a3",
+          "text": "Non valides."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "avant que les devis ne deviennent caducs et que l'opportunité ne nous échappe totalement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 150 mots au nom de Mme Vasseur, exprimant les doutes des locataires concernant la rentabilité réelle pour eux et proposant une réunion publique pour discuter des modalités de partage des coûts.",
+      "en": "Rédigez une réponse de 150 mots au nom de Mme Vasseur, exprimant les doutes des locataires concernant la rentabilité réelle pour eux et proposant une réunion publique pour discuter des modalités de partage des coûts."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analysez les tensions financières et structurelles liées à la transition énergétique en copropriété.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le projet solaire de la résidence Les Acacias | B2 Reading | WeLearn",
+      "en": "Le projet solaire de la résidence Les Acacias | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet échange de courriels entre M. Delacroix, propriétaire, et Mme Vasseur, représentante des locataires, concernant l'installation de panneaux solaires sur le toit de leur immeuble.",
+      "en": "Lisez cet échange de courriels entre M. Delacroix, propriétaire, et Mme Vasseur, représentante des locataires, concernant l'installation de panneaux solaires sur le toit de leur immeuble."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

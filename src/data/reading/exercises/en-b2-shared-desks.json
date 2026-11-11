@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-shared-desks",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Logistics of Flexibility",
+      "en": "The Logistics of Flexibility"
+    },
+    "intro": {
+      "es": "An internal email from a workspace manager addressing a growing conflict regarding equipment storage in a hot-desking environment.",
+      "en": "An internal email from a workspace manager addressing a growing conflict regarding equipment storage in a hot-desking environment."
+    },
+    "mission": {
+      "es": "Analyze the email to understand the challenges of hybrid office policies and the tension between flexibility and operational efficiency.",
+      "en": "Analyze the email to understand the challenges of hybrid office policies and the tension between flexibility and operational efficiency."
+    },
+    "targetText": "Subject: Update on Workspace Allocation and Equipment Storage\n\nDear Team, as we continue to refine our hybrid working model, I want to address the recent feedback regarding our shared desk policy. While the majority of you have embraced the freedom of choosing your workspace each morning, it has become evident that our current storage solutions are insufficient. The policy of 'clear desks at the end of the day' was intended to foster a clean, collaborative environment, yet it is increasingly at odds with the reality of our technical requirements. Many of you rely on specialized hardware that simply does not fit into the standard-issue lockers provided.\n\nI recognize that the ability to work from home three days a week has significantly improved our collective morale. However, the friction occurs when employees arrive on Tuesday mornings—our busiest day—only to find that their necessary peripherals have been misplaced or damaged during the overnight cleaning rotation. Last week, Sarah from the design department was unable to access her calibrated monitor stand, leading to a two-hour delay in the client presentation. This is not merely an inconvenience; it is a structural failure in how we support your daily output.\n\nI propose a compromise to resolve this mounting tension. Starting next week, we will designate a 'Technical Zone' in the central hub. This area will feature secure, larger storage units intended specifically for specialist equipment. While I appreciate that some of you prefer the aesthetic of an entirely empty desk, we must prioritize the logistical needs of our creative staff. We will trial this for one month, after which we will reassess whether this configuration truly balances our need for a streamlined office with the reality of your complex workflows.\n\nI understand there is a lingering concern that this might lead to 'desk hoarding,' where individuals claim specific spots indefinitely. Let me be clear: the hot-desking policy remains in effect. The lockers are for equipment storage only, not for reserving physical desk space. If we find that these units are being used to circumvent our flexible seating arrangement, we will have to revert to the previous, albeit flawed, system. Your cooperation is essential to making this hybrid experiment sustainable.\n\nFinally, I invite those of you who feel this solution is inadequate to join me for a brief meeting this Friday. I am eager to hear your suggestions, provided they account for the limited square footage we have available. We are all navigating these changes together, and while I cannot guarantee a perfect setup for every individual, I am committed to minimizing the disruptions that have plagued our recent operations. Thank you for your continued patience and for your dedication to maintaining our high standards of work despite these logistical hurdles.",
+    "wordCount": 455,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "hot-desking",
+        "lemma": "hot-desking",
+        "glosses": {
+          "es": "a practice where office desks are shared by multiple employees at different times",
+          "en": "a practice where office desks are shared by multiple employees at different times"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "peripherals",
+        "lemma": "peripherals",
+        "glosses": {
+          "es": "external devices such as monitors or scanners that connect to a computer",
+          "en": "external devices such as monitors or scanners that connect to a computer"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mounting",
+        "lemma": "mounting",
+        "glosses": {
+          "es": "increasing in amount or intensity",
+          "en": "increasing in amount or intensity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "circumvent",
+        "lemma": "circumvent",
+        "glosses": {
+          "es": "to find a way around an obstacle or rule",
+          "en": "to find a way around an obstacle or rule"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "plagued",
+        "lemma": "plagued",
+        "glosses": {
+          "es": "caused continual trouble or distress to",
+          "en": "caused continual trouble or distress to"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "logistical",
+        "lemma": "logistical",
+        "glosses": {
+          "es": "relating to the complex organization and implementation of a plan",
+          "en": "relating to the complex organization and implementation of a plan"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.7,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary purpose of the email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To propose a solution to equipment storage issues."
+        },
+        {
+          "id": "a2",
+          "text": "To enforce a new seating chart."
+        },
+        {
+          "id": "a3",
+          "text": "To announce the end of the hybrid work experiment."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I propose a compromise to resolve this mounting tension.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why was the design department delayed?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A monitor was broken."
+        },
+        {
+          "id": "a2",
+          "text": "A stand was missing."
+        },
+        {
+          "id": "a3",
+          "text": "A desk was unavailable."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sarah from the design department was unable to access her calibrated monitor stand, leading to a two-hour delay in the client presentation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What is the manager's concern regarding the new lockers?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They will look messy."
+        },
+        {
+          "id": "a2",
+          "text": "They will be too expensive to install."
+        },
+        {
+          "id": "a3",
+          "text": "They will be used to reserve desks."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "I understand there is a lingering concern that this might lead to 'desk hoarding,' where individuals claim specific spots indefinitely.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the manager mention the Friday meeting?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To address feedback from unsatisfied employees."
+        },
+        {
+          "id": "a2",
+          "text": "To announce that the new floor plan could never change."
+        },
+        {
+          "id": "a3",
+          "text": "To explain why the current system is perfect."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I invite those of you who feel this solution is inadequate to join me for a brief meeting this Friday.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the manager's attitude toward the current situation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifferent."
+        },
+        {
+          "id": "a2",
+          "text": "Pragmatic."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressive."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I propose a compromise to resolve this mounting tension.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author mean by 'circumvent' in this context?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To follow."
+        },
+        {
+          "id": "a2",
+          "text": "To ignore."
+        },
+        {
+          "id": "a3",
+          "text": "To bypass."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "If we find that these units are being used to circumvent our flexible seating arrangement, we will have to revert to the previous, albeit flawed, system.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word response to this email from the perspective of an employee who believes the new storage solution is insufficient. Propose an alternative way to handle specialist equipment that does not involve shared lockers.",
+      "en": "Write a 150-word response to this email from the perspective of an employee who believes the new storage solution is insufficient. Propose an alternative way to handle specialist equipment that does not involve shared lockers."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the email to understand the challenges of hybrid office policies and the tension between flexibility and operational efficiency.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Logistics of Flexibility | B2 Reading | WeLearn",
+      "en": "The Logistics of Flexibility | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An internal email from a workspace manager addressing a growing conflict regarding equipment storage in a hot-desking environment.",
+      "en": "An internal email from a workspace manager addressing a growing conflict regarding equipment storage in a hot-desking environment."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

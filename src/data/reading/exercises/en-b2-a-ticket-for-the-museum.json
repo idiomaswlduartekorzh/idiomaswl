@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Twilight Paradox at the Sterling Gallery",
+      "en": "The Twilight Paradox at the Sterling Gallery"
+    },
+    "intro": {
+      "es": "An exploration of the unintended consequences of urban accessibility initiatives through the lens of local cultural policy.",
+      "en": "An exploration of the unintended consequences of urban accessibility initiatives through the lens of local cultural policy."
+    },
+    "mission": {
+      "es": "To analyze how well-intentioned public policies can create logistical barriers that undermine their primary objectives.",
+      "en": "To analyze how well-intentioned public policies can create logistical barriers that undermine their primary objectives."
+    },
+    "targetText": "The Sterling Gallery recently inaugurated its 'Twilight Access' initiative, a bold experiment designed to democratize art by offering free admission from six until nine in the evening. As a regular patron, I initially lauded the decision. The gallery, once a quiet sanctuary for the elite, transformed into a vibrant hub where students, shift workers, and families mingled under the soft glow of halogen lights. Attendance figures soared, suggesting that the barrier to entry was indeed financial rather than a lack of interest. Curator Elena Vance appeared triumphant, noting that the late-night atmosphere fostered a more intimate connection with the exhibits than the frantic, sunlight-drenched tours of the morning. \n\nHowever, this newfound accessibility has birthed a secondary, more insidious form of exclusion. The city’s public transit authority, seemingly oblivious to the gallery's shifting schedule, maintains a strict service cutoff at eight-thirty. Consequently, the final thirty minutes of the 'Twilight Access' window have become a logistical nightmare for those without private transportation. Visitors are often forced to abandon their exploration prematurely, sprinting toward the nearest bus stop to avoid being stranded in the industrial district. This creates a jarring conclusion to an otherwise tranquil evening, turning the final gallery room into a staging area for frantic departures.\n\nMy experience last Thursday was emblematic of this disconnect. I was admiring a series of charcoal sketches when a security guard, Marcus, apologetically informed the crowd that the last bus was departing in ten minutes. The gallery, previously filled with hushed conversation, erupted into a chaotic exodus. Marcus, caught in the middle, looked visibly exhausted. He explained that he frequently hears complaints from visitors who feel lured into the gallery, only to be abandoned by the city's infrastructure the moment they step outside. The policy, while noble in its intent, has effectively created a two-tiered system: those who can afford a taxi, and those who must forfeit the final act of their cultural experience.\n\nOne might argue that the gallery is not responsible for the city’s transit failures, yet the optics are undeniably problematic. By promoting an evening event that the city cannot support, the Sterling Gallery has inadvertently highlighted the fragility of urban integration. The institution offers a dream of inclusion, but the city’s concrete reality remains firmly anchored in a nine-to-five framework. It is a classic case of policy silos, where cultural ambition outpaces municipal coordination, leaving the public to navigate the resulting void.\n\nUltimately, the 'Twilight Access' program is a triumph of spirit but a failure of logistics. While I applaud the gallery for opening its doors, the current situation leaves a bitter aftertaste. Until the transit authority aligns its schedule with the cultural calendar, the initiative will remain a half-measure. We are left with a paradoxical experience: a gallery that welcomes everyone, but only allows those with cars to fully enjoy the peace of the closing hour.",
+    "wordCount": 476,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "inaugurated",
+        "lemma": "inaugurated",
+        "glosses": {
+          "es": "formally opened or introduced",
+          "en": "formally opened or introduced"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insidious",
+        "lemma": "insidious",
+        "glosses": {
+          "es": "proceeding in a gradual, subtle way, but with harmful effects",
+          "en": "proceeding in a gradual, subtle way, but with harmful effects"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emblematic",
+        "lemma": "emblematic",
+        "glosses": {
+          "es": "serving as a representative symbol of a quality or idea",
+          "en": "serving as a representative symbol of a quality or idea"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "optics",
+        "lemma": "optics",
+        "glosses": {
+          "es": "the way in which an event or course of action is perceived by the public",
+          "en": "the way in which an event or course of action is perceived by the public"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "silos",
+        "lemma": "silos",
+        "glosses": {
+          "es": "isolated systems that do not communicate or cooperate with others",
+          "en": "isolated systems that do not communicate or cooperate with others"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradoxical",
+        "lemma": "paradoxical",
+        "glosses": {
+          "es": "seemingly absurd or self-contradictory",
+          "en": "seemingly absurd or self-contradictory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19.8,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the passage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Infrastructure gaps."
+        },
+        {
+          "id": "a2",
+          "text": "The success of free art."
+        },
+        {
+          "id": "a3",
+          "text": "Museum staffing issues."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The institution offers a dream of inclusion, but the city’s concrete reality remains firmly anchored in a nine-to-five framework.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "At what time do buses stop running?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "At 9:00 PM."
+        },
+        {
+          "id": "a2",
+          "text": "At 8:30 PM."
+        },
+        {
+          "id": "a3",
+          "text": "At 6:00 PM."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The city’s public transit authority, seemingly oblivious to the gallery's shifting schedule, maintains a strict service cutoff at eight-thirty.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Marcus feel about the transit situation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifferent."
+        },
+        {
+          "id": "a2",
+          "text": "Supportive."
+        },
+        {
+          "id": "a3",
+          "text": "Frustrated."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Marcus, caught in the middle, looked visibly exhausted.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the morning tours?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To contrast the atmosphere."
+        },
+        {
+          "id": "a2",
+          "text": "To show high attendance."
+        },
+        {
+          "id": "a3",
+          "text": "To explain the gallery costs."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Curator Elena Vance appeared triumphant, noting that the late-night atmosphere fostered a more intimate connection with the exhibits than the frantic, sunlight-drenched tours of the morning.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the author's attitude toward the gallery?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Hostile and critical."
+        },
+        {
+          "id": "a2",
+          "text": "Balanced and analytical."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistic and supportive."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The policy, while noble in its intent, has effectively created a two-tiered system: those who can afford a taxi, and those who must forfeit the final act of their cultural experience.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'insidious' imply in the context of the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is very obvious."
+        },
+        {
+          "id": "a2",
+          "text": "It is only a minor annoyance to museum visitors."
+        },
+        {
+          "id": "a3",
+          "text": "It is harmful but hidden."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "However, this newfound accessibility has birthed a secondary, more insidious form of exclusion.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word proposal to the city council suggesting how to resolve the conflict between the gallery's hours and the transit schedule.",
+      "en": "Write a 150-word proposal to the city council suggesting how to resolve the conflict between the gallery's hours and the transit schedule."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "To analyze how well-intentioned public policies can create logistical barriers that undermine their primary objectives.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Twilight Paradox at the Sterling Gallery | B2 Reading | WeLearn",
+      "en": "The Twilight Paradox at the Sterling Gallery | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the unintended consequences of urban accessibility initiatives through the lens of local cultural policy.",
+      "en": "An exploration of the unintended consequences of urban accessibility initiatives through the lens of local cultural policy."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

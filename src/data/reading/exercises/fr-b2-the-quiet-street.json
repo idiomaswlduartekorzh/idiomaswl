@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-quiet-street",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'expérience du silence : le quartier de la Place des Ormes",
+      "en": "L'expérience du silence : le quartier de la Place des Ormes"
+    },
+    "intro": {
+      "es": "Un article explorant les tensions sociales et économiques nées d'une initiative municipale visant à bannir les véhicules motorisés lors d'une soirée hebdomadaire.",
+      "en": "Un article explorant les tensions sociales et économiques nées d'une initiative municipale visant à bannir les véhicules motorisés lors d'une soirée hebdomadaire."
+    },
+    "mission": {
+      "es": "Lisez attentivement l'article suivant, puis répondez aux questions pour démontrer votre compréhension des enjeux soulevés par cette expérience urbaine.",
+      "en": "Lisez attentivement l'article suivant, puis répondez aux questions pour démontrer votre compréhension des enjeux soulevés par cette expérience urbaine."
+    },
+    "targetText": "Le projet « Soirée Apaisée » lancé par la mairie de la Place des Ormes visait à transformer le cœur historique du quartier en zone piétonne chaque jeudi soir. L'objectif affiché était de réduire la pollution sonore et de favoriser la convivialité. Cependant, après trois mois d'application, les avis divergent radicalement. Pour les restaurateurs, l'impact est contrasté. Marc, gérant de la brasserie « Le Zinc », observe une hausse significative de la clientèle flânant sur les trottoirs, mais déplore la logistique complexe. « Mes fournisseurs de boissons, habitués à livrer en camionnette à 18 heures, doivent désormais décharger leurs fûts à trois rues de là, ce qui ralentit considérablement mon service », explique-t-il. Cette contrainte logistique pèse sur ses marges, bien que le remplissage des tables en terrasse compense partiellement ces pertes.\n\nDu côté des résidents, le débat est tout aussi vif. Mme Lefebvre, qui habite au-dessus de la place depuis vingt ans, se réjouit du calme retrouvé. « Le ronronnement incessant des moteurs a disparu, laissant place au chant des oiseaux et aux conversations des passants », témoigne-t-elle. À l'opposé, son voisin du troisième étage, M. Morel, conteste cette vision idyllique. Pour lui, le bruit s'est simplement déplacé. « Le silence est une illusion. Les rires, les cris des enfants et le brouhaha des terrasses bondées créent une nuisance sonore différente, mais tout aussi envahissante que celle des voitures », soutient-il. Il souligne que la densité humaine génère une agitation nocturne qui empêche le sommeil autant que le trafic routier le faisait autrefois.\n\nLa mairie, consciente de ces frictions, tente de jouer les médiateurs. Elle propose désormais des zones de livraison déportées et une meilleure signalisation pour orienter les piétons, espérant ainsi calmer les esprits. Pourtant, l'opposition ne faiblit pas. Certains commerçants commencent à signer une pétition pour demander un assouplissement des horaires, arguant que la piétonnisation forcée nuit à l'accessibilité globale du quartier. Ils craignent que cette mesure, bien qu'attrayante en été, ne devienne un cauchemar logistique dès l'arrivée de l'automne.\n\nLa situation reste donc dans une impasse délicate. Si le projet a réussi à créer une dynamique de vie sociale plus dense, il a également exacerbé les tensions entre ceux qui voient la ville comme un espace de loisirs et ceux qui y vivent au quotidien. L'équilibre entre tranquillité et animation semble plus difficile à atteindre que prévu. Alors que la municipalité envisage d'étendre cette mesure, le quartier de la Place des Ormes devient le théâtre d'une expérimentation urbaine où chaque décision semble engendrer autant de bénéfices que de nouvelles frustrations, laissant les habitants dans une attente incertaine quant à l'avenir de leur cadre de vie.",
+    "wordCount": 439,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "flânant",
+        "lemma": "flânant",
+        "glosses": {
+          "es": "strolling",
+          "en": "strolling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fûts",
+        "lemma": "fûts",
+        "glosses": {
+          "es": "kegs",
+          "en": "kegs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ronronnement",
+        "lemma": "ronronnement",
+        "glosses": {
+          "es": "purring or humming sound",
+          "en": "purring or humming sound"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "brouhaha",
+        "lemma": "brouhaha",
+        "glosses": {
+          "es": "hubbub",
+          "en": "hubbub"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "frictions",
+        "lemma": "frictions",
+        "glosses": {
+          "es": "tensions",
+          "en": "tensions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "deadlock",
+          "en": "deadlock"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.6,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:13:43.538Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le bilan mitigé d'une initiative locale."
+        },
+        {
+          "id": "a2",
+          "text": "Le succès total de la piétonnisation."
+        },
+        {
+          "id": "a3",
+          "text": "Les défis de la vie urbaine moderne."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "après trois mois d'application, les avis divergent radicalement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Marc rencontre-t-il des difficultés avec ses livraisons ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les fournisseurs refusent de travailler."
+        },
+        {
+          "id": "a2",
+          "text": "Le déchargement se fait trop loin."
+        },
+        {
+          "id": "a3",
+          "text": "Il manque de personnel de stockage."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "doivent désormais décharger leurs fûts à trois rues de là, ce qui ralentit considérablement mon service",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que pense M. Morel de la disparition des voitures ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il préfère les voitures."
+        },
+        {
+          "id": "a2",
+          "text": "Il est très satisfait."
+        },
+        {
+          "id": "a3",
+          "text": "Le bruit est remplacé."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le silence est une illusion. Les rires, les cris des enfants et le brouhaha des terrasses bondées créent une nuisance sonore différente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quelle est l'intention de l'auteur en citant les deux voisins ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Montrer que les résidents sont divisés."
+        },
+        {
+          "id": "a2",
+          "text": "Souligner l'échec total du projet municipal."
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer que le silence est revenu partout."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Du côté des résidents, le débat est tout aussi vif.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critique et polémique."
+        },
+        {
+          "id": "a2",
+          "text": "Neutre et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Optimiste et encourageant."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La situation reste donc dans une impasse délicate. Si le projet a réussi à créer une dynamique de vie sociale plus dense, il a également exacerbé les tensions",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « flânant » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Travaillant."
+        },
+        {
+          "id": "a2",
+          "text": "En train de courir rapidement."
+        },
+        {
+          "id": "a3",
+          "text": "Se déplaçant lentement."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "observe une hausse significative de la clientèle flânant sur les trottoirs",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumenté dans lequel vous proposez une solution alternative pour concilier les besoins des commerçants et la tranquillité des résidents lors de ces soirées piétonnes.",
+      "en": "Rédigez un court paragraphe argumenté dans lequel vous proposez une solution alternative pour concilier les besoins des commerçants et la tranquillité des résidents lors de ces soirées piétonnes."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lisez attentivement l'article suivant, puis répondez aux questions pour démontrer votre compréhension des enjeux soulevés par cette expérience urbaine.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:13:43.538Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'expérience du silence : le quartier de la Place des Ormes | B2 Reading | WeLearn",
+      "en": "L'expérience du silence : le quartier de la Place des Ormes | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un article explorant les tensions sociales et économiques nées d'une initiative municipale visant à bannir les véhicules motorisés lors d'une soirée hebdomadaire.",
+      "en": "Un article explorant les tensions sociales et économiques nées d'une initiative municipale visant à bannir les véhicules motorisés lors d'une soirée hebdomadaire."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:13:43.538Z"
+  }
+}

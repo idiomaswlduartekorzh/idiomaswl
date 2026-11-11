@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-new-crossing",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Pedestrian Paradox: Safety or Speed?",
+      "en": "The Pedestrian Paradox: Safety or Speed?"
+    },
+    "intro": {
+      "es": "An investigative look at the controversial installation of the Oakhaven Crossing and the subsequent local government report.",
+      "en": "An investigative look at the controversial installation of the Oakhaven Crossing and the subsequent local government report."
+    },
+    "mission": {
+      "es": "Analyze the text to distinguish between stated findings and omitted variables in urban planning communications.",
+      "en": "Analyze the text to distinguish between stated findings and omitted variables in urban planning communications."
+    },
+    "targetText": "The Oakhaven Crossing was inaugurated last autumn with much fanfare, marketed by the Municipal Transit Authority as a triumph of modern engineering. Positioned at the intersection of High Street and Willow Lane, the crossing features high-visibility LED beacons and tactile paving specifically designed to mitigate the historical frequency of pedestrian-vehicle collisions. In its recent retrospective report, the Authority lauded the crossing as a primary driver behind a significant reduction in accidents over the last six months. According to the document, the integration of smart-sensor lighting has created a 'protective corridor' that forces drivers to maintain heightened vigilance. The report concludes that the physical redesign of the intersection is the sole variable responsible for the newfound safety metrics, a claim that has been met with skepticism by local urban planners and long-term residents alike.\n\nHowever, the Authority’s narrative conveniently ignores a concurrent policy shift that occurred precisely one week before the crossing’s completion. City Council records reveal that the speed limit on the entire High Street corridor was reduced from forty kilometers per hour to thirty. This regulatory adjustment, enacted under the guise of an environmental initiative to lower carbon emissions, fundamentally altered the kinetic energy profile of the traffic moving through the intersection. Critics argue that the reduction in velocity, rather than the aesthetic upgrades of the crossing itself, is the actual mechanism behind the decline in severe accidents. By isolating the physical infrastructure as the hero of the story, the Authority has effectively obfuscated the role of legislative intervention in urban safety.\n\nThis omission has sparked a heated debate regarding the transparency of municipal reporting. Councilmember Elena Vance, who spearheaded the speed limit reduction, has publicly expressed frustration at the report’s lack of nuance. She suggests that by failing to acknowledge the speed limit change, the Authority is prioritizing a narrative of technological superiority over a more holistic understanding of traffic management. The Authority, for its part, maintains that the report was intended to evaluate infrastructure performance exclusively, arguing that the speed limit change is a separate bureaucratic matter that falls outside the scope of their engineering review. This compartmentalization, while technically accurate in a bureaucratic sense, serves to create a distorted public perception of how safety is actually achieved.\n\nFor the residents of Oakhaven, the distinction is more than academic. The crossing has become a focal point of local identity, yet the confusion surrounding its efficacy has led to a sense of cynicism. If the city government is willing to curate facts to suit a specific agenda, the public wonders what other policy successes might be built on similarly shaky foundations. The tension is palpable during town hall meetings, where the Authority’s representatives are frequently challenged to reconcile the report’s findings with the reality of the slower, more cautious driving habits that emerged following the speed limit signs. The refusal to synthesize these two factors has left the community feeling patronized rather than informed.\n\nAs the city prepares for a second phase of intersection upgrades, the Oakhaven case serves as a cautionary tale for urban planners everywhere. The desire to present a clean, singular solution to complex urban problems often leads to the suppression of inconvenient truths. True safety, as this situation demonstrates, is rarely the result of a single intervention, but rather a convergence of physical design and regulatory intent. Until the Municipal Transit Authority acknowledges the interplay between the Oakhaven Crossing and the speed limit reduction, the report will remain a testament to the dangers of selective reporting. The unresolved tension between the city’s engineering narrative and the reality of the legislative change ensures that the debate over High Street will likely continue for the foreseeable future.\n\nFurthermore, this persistent obfuscation risks undermining public trust in future municipal infrastructure projects. When citizens perceive that data is manipulated to support a specific technological agenda, their willingness to cooperate with subsequent safety initiatives diminishes significantly. Consequently, the Authority may find that their next phase of upgrades faces unprecedented resistance, as residents demand greater transparency and a more comprehensive accounting of how their tax dollars truly influence urban safety.",
+    "wordCount": 680,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mitigate",
+        "lemma": "mitigate",
+        "glosses": {
+          "es": "to make less severe or painful",
+          "en": "to make less severe or painful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obfuscated",
+        "lemma": "obfuscated",
+        "glosses": {
+          "es": "made obscure or unclear",
+          "en": "made obscure or unclear"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "compartmentalization",
+        "lemma": "compartmentalization",
+        "glosses": {
+          "es": "the act of separating into distinct categories",
+          "en": "the act of separating into distinct categories"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "curate",
+        "lemma": "curate",
+        "glosses": {
+          "es": "to select and organize information",
+          "en": "to select and organize information"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "convergence",
+        "lemma": "convergence",
+        "glosses": {
+          "es": "the process of coming together",
+          "en": "the process of coming together"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retrospective",
+        "lemma": "retrospective",
+        "glosses": {
+          "es": "looking back on or dealing with past events",
+          "en": "looking back on or dealing with past events"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.3,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central argument of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Data was manipulated."
+        },
+        {
+          "id": "a2",
+          "text": "The legislative body prioritizes urban aesthetics over public safety protocols."
+        },
+        {
+          "id": "a3",
+          "text": "The Authority failed to implement the necessary structural changes to the roads."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "By isolating the physical infrastructure as the hero of the story, the Authority has effectively obfuscated the role of legislative intervention in urban safety.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What did the speed limit change involve?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Increased enforcement."
+        },
+        {
+          "id": "a2",
+          "text": "A 10 km/h reduction."
+        },
+        {
+          "id": "a3",
+          "text": "New traffic lights."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "City Council records reveal that the speed limit on the entire High Street corridor was reduced from forty kilometers per hour to thirty.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why are local residents cynical?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The crossing is ugly."
+        },
+        {
+          "id": "a2",
+          "text": "Traffic is now worse."
+        },
+        {
+          "id": "a3",
+          "text": "They distrust official reporting."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "If the city government is willing to curate facts to suit a specific agenda, the public wonders what other policy successes might be built on similarly shaky foundations.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention Elena Vance?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the political conflict over the report."
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the specific technical failures identified by the municipal engineering department."
+        },
+        {
+          "id": "a3",
+          "text": "To showcase the legislative process involved in drafting the new urban safety regulations."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Councilmember Elena Vance, who spearheaded the speed limit reduction, has publicly expressed frustration at the report’s lack of nuance.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the tone of the concluding paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Apathetic."
+        },
+        {
+          "id": "a2",
+          "text": "Cautionary."
+        },
+        {
+          "id": "a3",
+          "text": "Definitively optimistic regarding future policy changes."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the Oakhaven case serves as a cautionary tale for urban planners everywhere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by the word 'obfuscated'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The report was too complex for the average reader."
+        },
+        {
+          "id": "a2",
+          "text": "The report was accidentally missing important data."
+        },
+        {
+          "id": "a3",
+          "text": "The report purposefully hid the speed limit change."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "By isolating the physical infrastructure as the hero of the story, the Authority has effectively obfuscated the role of legislative intervention in urban safety.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response evaluating whether municipal governments have a moral obligation to disclose all variables when reporting on public safety projects, even if those variables complicate the narrative of success.",
+      "en": "Write a 200-word response evaluating whether municipal governments have a moral obligation to disclose all variables when reporting on public safety projects, even if those variables complicate the narrative of success."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the text to distinguish between stated findings and omitted variables in urban planning communications.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Pedestrian Paradox: Safety or Speed? | C1 Reading | WeLearn",
+      "en": "The Pedestrian Paradox: Safety or Speed? | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An investigative look at the controversial installation of the Oakhaven Crossing and the subsequent local government report.",
+      "en": "An investigative look at the controversial installation of the Oakhaven Crossing and the subsequent local government report."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

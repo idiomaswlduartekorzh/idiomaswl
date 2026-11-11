@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-library-window",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Architecture of Perpetual Access",
+      "en": "The Architecture of Perpetual Access"
+    },
+    "intro": {
+      "es": "An exploration of the ethical implications of institutional permanence and the invisible human cost of maintaining public accessibility.",
+      "en": "An exploration of the ethical implications of institutional permanence and the invisible human cost of maintaining public accessibility."
+    },
+    "mission": {
+      "es": "To analyze the tension between the ideal of the 'always-open' public institution and the reality of the labor required to sustain it.",
+      "en": "To analyze the tension between the ideal of the 'always-open' public institution and the reality of the labor required to sustain it."
+    },
+    "targetText": "The brass plaque outside the Oakhaven Athenaeum proclaimed that the institution was a 'sanctuary of infinite inquiry,' a promise underscored by its twenty-four-hour accessibility policy. Elias, the night archivist, stood in the dim glow of the foyer, watching the rain streak against the reinforced glass. He was the only human presence in a building designed to feel occupied, yet he felt less like a steward and more like a ghost haunting a machine. The Athenaeum did not close; it simply shifted its burden. While the morning staff curated exhibits and fielded inquiries from scholars, Elias spent his nights resetting the automated retrieval systems, cleaning the haptic interfaces, and recalibrating the climate control that kept the fragile manuscripts from succumbing to the humidity. The institution prided itself on being a beacon of democratic access, yet the very mechanisms that allowed for this perpetual availability required a constant, invisible human presence that the public never acknowledged. Elias often wondered if the board of directors truly believed the Athenaeum was 'always open,' or if they were merely adept at marketing the illusion of autonomy, conveniently forgetting that every hour of access was bought with someone else's solitude. The central conflict of the Athenaeum was not one of funding or philosophy, but of visibility. By branding the library as a space of infinite, effortless reach, the institution effectively erased the labor of those who maintained that reach. The patrons who wandered in at three in the morning to read digitized archives assumed the system functioned by divine providence or sheer technological inevitability. They did not see Elias wiping condensation from the servers or manually overriding the mechanical arms that occasionally snagged on a stray page. He was a variable that had been systematically removed from the narrative of the institution. If the public knew that a man was sitting in a windowless basement, tethered to the physical reality of the building, the myth of the 'infinite sanctuary' would shatter. It was a delicate deception, one that Elias participated in every time he dimmed the lights in the common room to ensure the automated sensors detected no 'unauthorized' presence, even though he was standing right there. One Tuesday, a young researcher named Clara stumbled upon Elias while he was troubleshooting a jammed pneumatic tube in the restricted wing. She had been searching for a primary source on local labor movements, a topic she found ironically absent from the Athenaeum’s curated history. When she saw him—grease-stained, exhausted, and holding a wrench—she did not recoil. Instead, she stared at the machinery, then at him, and asked if the library was actually a machine or a workspace. Elias hesitated. He could have recited the official talking points, the platitudes about seamless integration and user-centric design that he had been trained to deliver. Instead, he simply gestured toward the humming, claustrophobic guts of the building. He explained that the 'infinite' nature of the Athenaeum was a carefully constructed fiction, a performance of accessibility that relied entirely on the suppression of the physical labor required to keep the doors unlocked. Clara listened, her initial academic detachment replaced by a dawning realization of the exploitation embedded in the architecture of the space. She realized that the convenience she enjoyed was not a natural right but a manufactured product. The consequence of this encounter was swift and unsettling. Clara began to document the mechanical failures and the 'ghost' shifts in her own research, turning her lens toward the institution itself. She did not lobby for shorter hours; instead, she demanded that the labor of the night staff be integrated into the public record of the Athenaeum. The board, faced with the prospect of their carefully curated illusion being dismantled, responded with a cold, bureaucratic efficiency. They did not fire Elias, as that would have invited scrutiny, but they moved him to an automated, remote-monitoring facility in a different city, effectively erasing his physical presence from the Athenaeum. The library remained 'always open,' the lights stayed on, and the books were retrieved with the same silent, eerie precision. Elias, watching the live feed from his new, sterile office, saw the patrons continue to wander in, oblivious to the fact that the sanctuary they worshipped was now even more hollow than before. The institution had succeeded in its mission of perpetual access, but in doing so, it had finally achieved the total invisibility of its own foundation, leaving Elias to monitor the empty, automated shell of a dream he had once helped to keep alive.\n\nYet, this total automation birthed an unforeseen paradox: the archival integrity began to decay. Without Elias’s intuitive touch to interpret the subtle, non-digital nuances of ancient manuscripts, the retrieval systems started misclassifying fragile documents, treating historical artifacts as mere data points. The patrons, once beneficiaries of a seamless experience, now encountered fragmented records and corrupted files. The Athenaeum’s quest for perfect, invisible maintenance had inadvertently severed the vital, human connection to the past, transforming a sanctuary of infinite inquiry into a silent, decaying tomb.",
+    "wordCount": 835,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "steward",
+        "lemma": "steward",
+        "glosses": {
+          "es": "a person who looks after or manages an institution or property",
+          "en": "a person who looks after or manages an institution or property"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "platitudes",
+        "lemma": "platitudes",
+        "glosses": {
+          "es": "flat, dull, or trite remarks, especially those uttered as if they were profound",
+          "en": "flat, dull, or trite remarks, especially those uttered as if they were profound"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "claustrophobic",
+        "lemma": "claustrophobic",
+        "glosses": {
+          "es": "inducing a feeling of fear or discomfort due to being in a small, confined space",
+          "en": "inducing a feeling of fear or discomfort due to being in a small, confined space"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bureaucratic",
+        "lemma": "bureaucratic",
+        "glosses": {
+          "es": "relating to a system of government or management characterized by rigid adherence to rules",
+          "en": "relating to a system of government or management characterized by rigid adherence to rules"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scrutiny",
+        "lemma": "scrutiny",
+        "glosses": {
+          "es": "critical observation or examination",
+          "en": "critical observation or examination"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sterile",
+        "lemma": "sterile",
+        "glosses": {
+          "es": "lacking in imagination, creativity, or vitality; bleak",
+          "en": "lacking in imagination, creativity, or vitality; bleak"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.2,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the narrative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The hidden cost of accessibility."
+        },
+        {
+          "id": "a2",
+          "text": "The struggle for funding."
+        },
+        {
+          "id": "a3",
+          "text": "The evolution of library technology."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "By branding the library as a space of infinite, effortless reach, the institution effectively erased the labor of those who maintained that reach.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What specific task does Elias perform when he is discovered by Clara?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cleaning the haptic interfaces."
+        },
+        {
+          "id": "a2",
+          "text": "Troubleshooting a jammed pneumatic tube."
+        },
+        {
+          "id": "a3",
+          "text": "Recalibrating climate control."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Clara stumbled upon Elias while he was troubleshooting a jammed pneumatic tube in the restricted wing.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does the board move Elias to a remote facility?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To improve his working conditions."
+        },
+        {
+          "id": "a2",
+          "text": "To reduce the library's operating costs."
+        },
+        {
+          "id": "a3",
+          "text": "To prevent his work from being exposed."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The board, faced with the prospect of their carefully curated illusion being dismantled, responded with a cold, bureaucratic efficiency.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in including the encounter between Elias and Clara?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To catalyze the institutional reaction against the truth."
+        },
+        {
+          "id": "a2",
+          "text": "To introduce a romantic subplot."
+        },
+        {
+          "id": "a3",
+          "text": "To highlight the irony of the library's history."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The consequence of this encounter was swift and unsettling. Clara began to document the mechanical failures and the 'ghost' shifts in her own research, turning her lens toward the institution itself.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the tone of the ending?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Desolate."
+        },
+        {
+          "id": "a3",
+          "text": "Celebratory."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The institution had succeeded in its mission of perpetual access, but in doing so, it had finally achieved the total invisibility of its own foundation, leaving Elias to monitor the empty, automated shell of a dream he had once helped to keep alive.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by describing the Athenaeum as a 'sanctuary of infinite inquiry'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is a place of deep spiritual learning."
+        },
+        {
+          "id": "a2",
+          "text": "It is a technologically advanced research center."
+        },
+        {
+          "id": "a3",
+          "text": "It is a marketing term used to mask labor."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elias often wondered if the board of directors truly believed the Athenaeum was 'always open,' or if they were merely adept at marketing the illusion of autonomy",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a reflective essay of 300 words discussing whether modern digital services, such as streaming platforms or 24/7 customer support, rely on the same 'invisible labor' described in the text.",
+      "en": "Write a reflective essay of 300 words discussing whether modern digital services, such as streaming platforms or 24/7 customer support, rely on the same 'invisible labor' described in the text."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "To analyze the tension between the ideal of the 'always-open' public institution and the reality of the labor required to sustain it.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Architecture of Perpetual Access | C2 Reading | WeLearn",
+      "en": "The Architecture of Perpetual Access | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the ethical implications of institutional permanence and the invisible human cost of maintaining public accessibility.",
+      "en": "An exploration of the ethical implications of institutional permanence and the invisible human cost of maintaining public accessibility."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

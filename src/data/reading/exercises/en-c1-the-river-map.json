@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-river-map",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Cartography of Calamity",
+      "en": "The Cartography of Calamity"
+    },
+    "intro": {
+      "es": "An exploration of how conflicting hydrological modeling methodologies can dictate the socio-economic fate of coastal communities.",
+      "en": "An exploration of how conflicting hydrological modeling methodologies can dictate the socio-economic fate of coastal communities."
+    },
+    "mission": {
+      "es": "Analyze the text to identify how technical ambiguity in flood mapping impacts local governance and individual property rights.",
+      "en": "Analyze the text to identify how technical ambiguity in flood mapping impacts local governance and individual property rights."
+    },
+    "targetText": "The coastal township of Oakhaven has long existed in a state of uneasy truce with the encroaching tides. For decades, the municipal zoning board relied upon the 'Historical Baseline Model' (HBM), a conservative, retrospective assessment that mapped flood risk based on the high-water marks of the previous century. Under this framework, the low-lying district of Salt-Creek was designated as a 'Moderate Hazard Zone,' a classification that allowed homeowners to access municipal grants for minor structural reinforcements. However, the recent introduction of the 'Dynamic Predictive Projection' (DPP), commissioned by the regional environmental council, has upended this fragile equilibrium. The DPP, which accounts for shifting climate variables and sediment erosion, reclassified the entirety of Salt-Creek as a 'High-Velocity Inundation Zone.'\n\nCouncilwoman Elena Vance, a staunch proponent of the DPP, argues that the new map is an essential diagnostic tool for future-proofing the town. During the Tuesday evening town hall, she presented the DPP’s findings, emphasizing that the HBM was a relic of a more stable climate. 'We cannot continue to subsidize the illusion of safety,' Vance stated, her voice steady despite the mounting murmurs from the gallery. For Vance, the map is a moral imperative, a way to prevent future tragedies by restricting development in areas that the data now deems indefensible. She views the reclassification not as a punitive measure, but as a necessary surgical intervention to preserve the town’s long-term financial solvency.\n\nConversely, Julian Thorne, a long-time resident and spokesperson for the Salt-Creek Property Owners Association, contends that the DPP is an instrument of bureaucratic overreach. Thorne argues that the methodology behind the DPP is opaque, relying on algorithmic simulations rather than physical observation. He points out that the sudden shift in zoning status has effectively rendered the homes in Salt-Creek uninsurable, causing property values to plummet overnight. 'This is not about safety; it is about administrative convenience,' Thorne argued during the meeting. He posits that the council is using the DPP as a pretext to force managed retreat, thereby offloading the burden of coastal protection from the municipality to the individual homeowner.\n\nThe tension reached a breaking point when the municipal auditor revealed that the town’s emergency relief fund was tied directly to the zoning classification. Under the new DPP map, Salt-Creek residents are now ineligible for the very grants they previously utilized, as the area is now deemed 'unrecoverable' rather than 'improvable.' This creates a perverse paradox: the residents who are most vulnerable to flooding have lost their access to the resources required to protect their homes. The conflict is no longer merely academic; it has become a visceral struggle over the right to inhabit one’s own land, with the map serving as the primary weapon in a battle of competing realities.\n\nAs the meeting concluded, the council remained deadlocked. The HBM still governs current insurance policies, yet the DPP dictates the town’s future development permits. Oakhaven is now trapped in a liminal space, caught between a past that no longer exists and a future that the residents refuse to accept. The map, intended to provide clarity, has instead fractured the community’s shared understanding of risk. Whether the town will eventually adopt the DPP as its singular standard or retreat to the comfort of the HBM remains an open question, one that will likely be decided not by environmental science, but by the slow, grinding machinery of litigation and political attrition.\n\nBeyond the immediate legislative deadlock, the long-term implications for Oakhaven extend into the very fabric of its socioeconomic identity. By formalizing this state of perpetual uncertainty, the town risks a slow-motion exodus of its younger, more mobile demographic, leaving behind an aging population tethered to depreciating assets. This demographic shift could paralyze the local economy, eroding the tax base necessary to fund any future coastal defense infrastructure, regardless of which model prevails. Consequently, the town’s reliance on bureaucratic mapping has inadvertently fostered a climate of deep-seated distrust, where technical expertise is viewed with profound skepticism. Ultimately, the struggle over Salt-Creek serves as a cautionary microcosm of how modern governance struggles to reconcile scientific foresight with the deeply human desire for permanence and stability.",
+    "wordCount": 686,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "equilibrium",
+        "lemma": "equilibrium",
+        "glosses": {
+          "es": "a state of balance or stability",
+          "en": "a state of balance or stability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "solvency",
+        "lemma": "solvency",
+        "glosses": {
+          "es": "the ability to meet financial obligations",
+          "en": "the ability to meet financial obligations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "opaque",
+        "lemma": "opaque",
+        "glosses": {
+          "es": "difficult to understand or explain",
+          "en": "difficult to understand or explain"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pretext",
+        "lemma": "pretext",
+        "glosses": {
+          "es": "a false reason given to hide the true purpose",
+          "en": "a false reason given to hide the true purpose"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "liminal",
+        "lemma": "liminal",
+        "glosses": {
+          "es": "occupying a position at the threshold or boundary",
+          "en": "occupying a position at the threshold or boundary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "attrition",
+        "lemma": "attrition",
+        "glosses": {
+          "es": "the process of gradually reducing strength through sustained pressure",
+          "en": "the process of gradually reducing strength through sustained pressure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.7,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict described in the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The debate over the accuracy of two different flood mapping methodologies."
+        },
+        {
+          "id": "a2",
+          "text": "A dispute regarding the historical boundaries of the township and land ownership records."
+        },
+        {
+          "id": "a3",
+          "text": "The disagreement between local developers and the government concerning zoning permit delays."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The conflict is no longer merely academic; it has become a visceral struggle over the right to inhabit one’s own land, with the map serving as the primary weapon in a battle of competing realities.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How does the DPP change the status of Salt-Creek residents regarding grants?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It mandates relocation."
+        },
+        {
+          "id": "a2",
+          "text": "It makes them ineligible for previous grants."
+        },
+        {
+          "id": "a3",
+          "text": "It provides additional fiscal relief for home repairs."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Under the new DPP map, Salt-Creek residents are now ineligible for the very grants they previously utilized, as the area is now deemed 'unrecoverable' rather than 'improvable.'",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does Julian Thorne believe the council supports the DPP?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To update data."
+        },
+        {
+          "id": "a2",
+          "text": "To meet standards."
+        },
+        {
+          "id": "a3",
+          "text": "To save the town money by forcing residents to leave."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He posits that the council is using the DPP as a pretext to force managed retreat, thereby offloading the burden of coastal protection from the municipality to the individual homeowner.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in mentioning the town auditor's revelation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To demonstrate how the mapping change directly impacts financial security."
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the technical inconsistencies found within the municipal accounting software used for zoning."
+        },
+        {
+          "id": "a3",
+          "text": "To provide a comprehensive history of the emergency relief fund and its legislative origins in the region."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension reached a breaking point when the municipal auditor revealed that the town’s emergency relief fund was tied directly to the zoning classification.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best describes the tone of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Melancholic."
+        },
+        {
+          "id": "a2",
+          "text": "Analytical and detached."
+        },
+        {
+          "id": "a3",
+          "text": "Whimsical and lighthearted in its approach to local governance."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Oakhaven is now trapped in a liminal space, caught between a past that no longer exists and a future that the residents refuse to accept.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does the word 'liminal' suggest about Oakhaven?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The town is physically divided by a large river that prevents easy travel."
+        },
+        {
+          "id": "a2",
+          "text": "The town is experiencing a period of rapid economic growth and development."
+        },
+        {
+          "id": "a3",
+          "text": "The town is currently in a state of transition between two conflicting realities."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Oakhaven is now trapped in a liminal space, caught between a past that no longer exists and a future that the residents refuse to accept.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 250-word policy brief recommending whether the town of Oakhaven should prioritize the HBM or the DPP, justifying your choice by balancing safety and economic stability.",
+      "en": "Write a 250-word policy brief recommending whether the town of Oakhaven should prioritize the HBM or the DPP, justifying your choice by balancing safety and economic stability."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the text to identify how technical ambiguity in flood mapping impacts local governance and individual property rights.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Cartography of Calamity | C1 Reading | WeLearn",
+      "en": "The Cartography of Calamity | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of how conflicting hydrological modeling methodologies can dictate the socio-economic fate of coastal communities.",
+      "en": "An exploration of how conflicting hydrological modeling methodologies can dictate the socio-economic fate of coastal communities."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

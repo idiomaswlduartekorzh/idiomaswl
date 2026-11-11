@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'impasse nocturne du Musée des Arts Appliqués",
+      "en": "L'impasse nocturne du Musée des Arts Appliqués"
+    },
+    "intro": {
+      "es": "Une analyse critique sur les conséquences inattendues de la gratuité nocturne dans une institution culturelle renommée.",
+      "en": "Une analyse critique sur les conséquences inattendues de la gratuité nocturne dans une institution culturelle renommée."
+    },
+    "mission": {
+      "es": "Évaluer la compréhension de lecture, la capacité d'inférence et l'analyse contextuelle d'un texte argumentatif.",
+      "en": "Évaluer la compréhension de lecture, la capacité d'inférence et l'analyse contextuelle d'un texte argumentatif."
+    },
+    "targetText": "Le Musée des Arts Appliqués a récemment instauré une politique d'accès gratuit tous les jeudis soir, une initiative initialement saluée par la directrice, Mme Valérie Beaumont, comme une démocratisation indispensable de la culture. L'objectif était clair : permettre aux travailleurs urbains, souvent indisponibles en journée, de s'immerger dans les collections permanentes sans contrainte financière. Dès les premières semaines, l'affluence a dépassé toutes les attentes, transformant les salles silencieuses en espaces de vie vibrants où les échanges intergénérationnels se multipliaient sous les voûtes de pierre.\n\nToutefois, cette réussite populaire a rapidement révélé une faille logistique majeure. Si le musée ferme ses portes à vingt-deux heures, le réseau de transport public, géré par la municipalité, cesse ses rotations vers le quartier des musées dès vingt-et-une heures trente. Cette dissonance temporelle crée une situation absurde : les visiteurs, captivés par les dernières salles de l'exposition, se retrouvent piégés dans un périmètre déserté, loin des stations de métro opérationnelles. La direction du musée, bien qu'informée, peine à négocier une extension des horaires avec les autorités de transport, qui invoquent des contraintes budgétaires strictes.\n\nLe cas de Julien, un étudiant en design, illustre parfaitement cette impasse. Attiré par l'exposition temporaire sur le modernisme, il s'est retrouvé à devoir parcourir cinq kilomètres à pied pour regagner son domicile après une fermeture précipitée des accès. Ce qui devait être une expérience enrichissante s'est transformé en une corvée nocturne, remettant en question la pertinence même de cette gratuité si l'accessibilité physique n'est pas garantie. Le musée, en voulant ouvrir ses portes, a paradoxalement fermé les chemins du retour.\n\nIl est indéniable que la fréquentation a bondi, prouvant l'existence d'une demande latente pour des activités culturelles en soirée. Cependant, cette statistique flatteuse masque une réalité plus complexe. La gratuité ne peut être considérée comme un levier d'inclusion efficace si elle ne s'accompagne pas d'une réflexion globale sur l'écosystème urbain. Offrir l'accès aux œuvres est une chose, mais assurer le retour sécurisé des visiteurs en est une autre. Le musée se trouve aujourd'hui dans une position inconfortable, pris en étau entre son désir de rayonnement et la réalité matérielle des infrastructures.\n\nEn conclusion, l'initiative du Musée des Arts Appliqués, bien que généreuse dans son intention, souligne une déconnexion regrettable entre les politiques culturelles et les services publics. Sans une coordination étroite entre ces deux piliers, l'expérience muséale risque de se transformer en un privilège réservé à ceux qui possèdent un véhicule personnel. Pour que cette gratuité soit réellement inclusive, il est impératif que le conseil municipal revoie ses priorités, faute de quoi le musée restera une île inaccessible, brillant d'un éclat solitaire au cœur d'une ville qui s'endort trop tôt.",
+    "wordCount": 440,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "démocratisation",
+        "lemma": "démocratisation",
+        "glosses": {
+          "es": "making something accessible to everyone",
+          "en": "making something accessible to everyone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonance",
+        "lemma": "dissonance",
+        "glosses": {
+          "es": "a lack of agreement or harmony",
+          "en": "a lack of agreement or harmony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "a deadlock or difficult situation",
+          "en": "a deadlock or difficult situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "latente",
+        "lemma": "latente",
+        "glosses": {
+          "es": "existing but not yet developed",
+          "en": "existing but not yet developed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "étau",
+        "lemma": "étau",
+        "glosses": {
+          "es": "a vice, used here metaphorically as a trap",
+          "en": "a vice, used here metaphorically as a trap"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inaccessible",
+        "lemma": "inaccessible",
+        "glosses": {
+          "es": "impossible to reach or enter",
+          "en": "impossible to reach or enter"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 23.2,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le problème central abordé dans ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le décalage des transports."
+        },
+        {
+          "id": "a2",
+          "text": "La saturation des infrastructures urbaines pendant les heures de pointe."
+        },
+        {
+          "id": "a3",
+          "text": "La diminution drastique de la fréquentation touristique dans le centre."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "le réseau de transport public, géré par la municipalité, cesse ses rotations vers le quartier des musées dès vingt-et-une heures trente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "À quelle heure le musée ferme-t-il ses portes ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "À minuit."
+        },
+        {
+          "id": "a2",
+          "text": "À vingt-deux heures."
+        },
+        {
+          "id": "a3",
+          "text": "À vingt-trois heures quinze."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Si le musée ferme ses portes à vingt-deux heures",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi la gratuité est-elle critiquée par l'auteur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le coût."
+        },
+        {
+          "id": "a2",
+          "text": "Le temps."
+        },
+        {
+          "id": "a3",
+          "text": "Elle exclut les non-motorisés."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'expérience muséale risque de se transformer en un privilège réservé à ceux qui possèdent un véhicule personnel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de l'auteur dans cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Souligner le besoin de coordination entre services."
+        },
+        {
+          "id": "a2",
+          "text": "Critiquer la politique de tarification appliquée aux résidents locaux."
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer l'inutilité des transports publics dans les zones urbaines."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sans une coordination étroite entre ces deux piliers, l'expérience muséale risque de se transformer en un privilège",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il tout au long de son analyse ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton purement laudatif."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton critique et nuancé."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton colérique et agressif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'initiative du Musée des Arts Appliqués, bien que généreuse dans son intention, souligne une déconnexion regrettable",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'impasse' dans le contexte du troisième paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un échec."
+        },
+        {
+          "id": "a2",
+          "text": "Un choix."
+        },
+        {
+          "id": "a3",
+          "text": "Une situation bloquée."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le cas de Julien, un étudiant en design, illustre parfaitement cette impasse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court courriel adressé à la mairie pour proposer une solution concrète permettant de résoudre le problème des transports après la fermeture du musée.",
+      "en": "Rédigez un court courriel adressé à la mairie pour proposer une solution concrète permettant de résoudre le problème des transports après la fermeture du musée."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Évaluer la compréhension de lecture, la capacité d'inférence et l'analyse contextuelle d'un texte argumentatif.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'impasse nocturne du Musée des Arts Appliqués | B2 Reading | WeLearn",
+      "en": "L'impasse nocturne du Musée des Arts Appliqués | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une analyse critique sur les conséquences inattendues de la gratuité nocturne dans une institution culturelle renommée.",
+      "en": "Une analyse critique sur les conséquences inattendues de la gratuité nocturne dans une institution culturelle renommée."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

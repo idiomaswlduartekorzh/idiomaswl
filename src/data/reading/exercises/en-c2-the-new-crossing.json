@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-new-crossing",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Ghost of the Intersection",
+      "en": "The Ghost of the Intersection"
+    },
+    "intro": {
+      "es": "An exploration of the epistemological crisis faced by a traffic safety consultant who witnesses a tragedy that never occurred.",
+      "en": "An exploration of the epistemological crisis faced by a traffic safety consultant who witnesses a tragedy that never occurred."
+    },
+    "mission": {
+      "es": "Analyze the text to identify the narrator's struggle with empirical evidence versus subjective intuition in the context of urban planning.",
+      "en": "Analyze the text to identify the narrator's struggle with empirical evidence versus subjective intuition in the context of urban planning."
+    },
+    "targetText": "The intersection of Halloway and Vane is a mundane geometry of asphalt and faded thermoplastic, a place where the city’s pulse slows to a rhythmic, predictable thrum. As a consultant for the municipal transit board, my existence is defined by the quantifiable: traffic flow velocity, pedestrian throughput, and the cold, hard metrics of collision statistics. My mandate is to engineer safety, to impose order upon the chaotic dance of commuters. Yet, on a Tuesday evening, as the sky bruised into a deep, melancholic violet, I stood on the corner and witnessed an event that defied the very foundations of my profession. I saw a young courier, Elias, dart into the path of an oncoming delivery truck. The driver, a man named Marcus, was distracted by a flickering dashboard display. The collision was inevitable, a mathematical certainty etched into the trajectory of their converging paths. I braced for the sickening crunch of metal on bone, the visceral vocabulary of a road fatality. But the sound never came. The truck swerved, a whisper of rubber against the grit, and Elias stumbled, his bicycle frame barely clipping the bumper. They both continued, oblivious to the fact that, in a parallel calculation, they had just ceased to exist. They were ghosts in the machine, survivors of a catastrophe that left no scar upon the pavement.\n\nThis incident has precipitated a profound professional crisis. In my field, evidence is the currency of truth. If a traffic light fails, the logs record it; if a pedestrian is struck, the police report codifies the tragedy. But here, the absence of an accident is not proof of safety; it is merely a void where a tragedy should have been. I find myself haunted by the 'near-miss' that is, by all accounts, a non-event. If I report this to the board, I am reporting a phantom. I have no data points to justify a redesign of the intersection. The traffic cameras, calibrated to capture impact, recorded only the mundane flow of evening commuters. The system is blind to the near-catastrophe, seeing only the continuity of movement. I am left with the burden of a memory that contradicts the physical reality of the site. How does one advocate for policy change when the evidence is ephemeral, existing only in the synapses of a solitary witness? The bureaucracy demands tangible proof, yet the most critical moments of urban fragility are often the ones that leave no trace.\n\nMy colleague, Elena, argues that my obsession is a manifestation of professional hubris. She suggests that by seeking to engineer the world into a state of total safety, I have become hyper-sensitive to the inherent risks that are, in fact, the baseline of urban living. 'You are looking for ghosts,' she told me over coffee, her tone dismissive of my existential dilemma. 'If the system functions, it functions. The fact that an accident was averted—whether by luck, reflex, or divine intervention—is irrelevant to the metrics of efficiency.' Her perspective is the standard industry line: safety is the absence of recorded harm. But this reductionist view ignores the precariousness of the human element. It treats the intersection as a closed system, ignoring the psychological toll of the uncertainty that governs every crossing. If the infrastructure relies on the split-second reflexes of a distracted driver and a hurried courier to prevent death, then the intersection is fundamentally broken, regardless of whether the asphalt remains unblemished.\n\nI have attempted to reconcile these competing interpretations by drafting a proposal for a pedestrian-priority signal, yet I find myself unable to justify the expenditure. Without a record of a collision, the proposal is deemed 'unsupported by incident history.' I am trapped in a feedback loop where the lack of an accident validates the status quo, and the status quo ensures that the potential for future accidents remains constant. The irony is palpable: the very efficiency I strive for is the barrier to meaningful improvement. I have begun to frequent the intersection at the same hour, hoping to catch another glimpse of the fragility I witnessed. I watch the pedestrians, the drivers, the couriers, and I see the same patterns of near-misses unfolding in the periphery of my vision. They are all skating on the thin ice of probability, unaware that their survival is a statistical anomaly. I am no longer just a consultant; I am a witness to the silent, invisible failures of our urban design.\n\nUltimately, I am left with an unresolved tension that permeates my work. Is a disaster avoided truly a disaster? Or is it merely a state of grace, a moment where the variables aligned in our favor? I suspect that the true measure of our cities lies not in the reports we file, but in the near-misses we choose to ignore. If we only react to the visible wreckage, we are merely cleaning up the debris of our own negligence. My experience at Halloway and Vane has taught me that the most significant events are those that vanish into the ether, leaving us to wonder if they happened at all. I will continue to monitor the intersection, not as a scientist looking for data, but as a sentinel guarding against the inevitable. There is no evidence, no report, and no record. There is only the silence of the street, a silence that screams of everything that almost was, and everything that surely will be.",
+    "wordCount": 899,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "thermoplastic",
+        "lemma": "thermoplastic",
+        "glosses": {
+          "es": "A type of plastic material that becomes soft when heated and hard when cooled, often used for road markings.",
+          "en": "A type of plastic material that becomes soft when heated and hard when cooled, often used for road markings."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "codifies",
+        "lemma": "codifies",
+        "glosses": {
+          "es": "To arrange laws or rules into a systematic code or to organize information into a formal structure.",
+          "en": "To arrange laws or rules into a systematic code or to organize information into a formal structure."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ephemeral",
+        "lemma": "ephemeral",
+        "glosses": {
+          "es": "Lasting for a very short time; transitory or fleeting.",
+          "en": "Lasting for a very short time; transitory or fleeting."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hubris",
+        "lemma": "hubris",
+        "glosses": {
+          "es": "Excessive pride or self-confidence that often leads to a downfall.",
+          "en": "Excessive pride or self-confidence that often leads to a downfall."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reductionist",
+        "lemma": "reductionist",
+        "glosses": {
+          "es": "Characterized by the oversimplification of complex phenomena into basic, often inadequate, components.",
+          "en": "Characterized by the oversimplification of complex phenomena into basic, often inadequate, components."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sentinel",
+        "lemma": "sentinel",
+        "glosses": {
+          "es": "A soldier or guard whose job is to stand and keep watch.",
+          "en": "A soldier or guard whose job is to stand and keep watch."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 18,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The limitations of empirical data in safety"
+        },
+        {
+          "id": "a2",
+          "text": "The history of urban planning"
+        },
+        {
+          "id": "a3",
+          "text": "The technological failure of traffic cameras"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "How does one advocate for policy change when the evidence is ephemeral, existing only in the synapses of a solitary witness?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does the narrator feel he cannot propose a change to the intersection?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He lacks the authority"
+        },
+        {
+          "id": "a2",
+          "text": "He lacks the data"
+        },
+        {
+          "id": "a3",
+          "text": "He fears the cost"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Without a record of a collision, the proposal is deemed 'unsupported by incident history.'",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the narrator imply about the current state of the intersection?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is perfectly safe for all users"
+        },
+        {
+          "id": "a2",
+          "text": "It requires more traffic cameras"
+        },
+        {
+          "id": "a3",
+          "text": "It is dangerous despite the lack of accidents"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "If the infrastructure relies on the split-second reflexes of a distracted driver and a hurried courier to prevent death, then the intersection is fundamentally broken",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the character of Elena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To provide a counter-argument to the narrator's obsession"
+        },
+        {
+          "id": "a2",
+          "text": "To help the narrator solve the problem"
+        },
+        {
+          "id": "a3",
+          "text": "To represent the government's official stance"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "She suggests that by seeking to engineer the world into a state of total safety, I have become hyper-sensitive to the inherent risks that are, in fact, the baseline of urban living.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the tone of the concluding paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic"
+        },
+        {
+          "id": "a2",
+          "text": "Resigned"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "My experience at Halloway and Vane has taught me that the most significant events are those that vanish into the ether, leaving us to wonder if they happened at all.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the narrator mean by describing the intersection as a 'mundane geometry'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is a complex mathematical puzzle"
+        },
+        {
+          "id": "a2",
+          "text": "It is a dangerous place to cross"
+        },
+        {
+          "id": "a3",
+          "text": "It is a simple and unremarkable layout"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The intersection of Halloway and Vane is a mundane geometry of asphalt and faded thermoplastic, a place where the city’s pulse slows to a rhythmic, predictable thrum.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word response arguing whether urban safety should be based solely on recorded accident data or if 'near-miss' observations should influence policy.",
+      "en": "Write a 300-word response arguing whether urban safety should be based solely on recorded accident data or if 'near-miss' observations should influence policy."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the text to identify the narrator's struggle with empirical evidence versus subjective intuition in the context of urban planning.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Ghost of the Intersection | C2 Reading | WeLearn",
+      "en": "The Ghost of the Intersection | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the epistemological crisis faced by a traffic safety consultant who witnesses a tragedy that never occurred.",
+      "en": "An exploration of the epistemological crisis faced by a traffic safety consultant who witnesses a tragedy that never occurred."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-a-room-for-repairs",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Gearbox Gambit: A Night at the Fix-It Hub",
+      "en": "The Gearbox Gambit: A Night at the Fix-It Hub"
+    },
+    "intro": {
+      "es": "A critical look at the community-led initiative designed to combat throwaway culture through collaborative repair.",
+      "en": "A critical look at the community-led initiative designed to combat throwaway culture through collaborative repair."
+    },
+    "mission": {
+      "es": "Evaluate the efficacy of the Fix-It Hub in balancing high demand with limited volunteer resources.",
+      "en": "Evaluate the efficacy of the Fix-It Hub in balancing high demand with limited volunteer resources."
+    },
+    "targetText": "The fluorescent lights of the community center hummed with an anxious energy last Tuesday, casting long shadows over the Fix-It Hub. This initiative, founded on the premise that our appliances deserve a second life, operates on a simple, albeit strained, promise: bring your broken goods, and our volunteers will help you fix them. As a skeptic of the 'repair revolution,' I arrived with a jammed vintage toaster, eager to see if the rhetoric of sustainability could withstand the reality of a Tuesday evening rush.\n\nUpon entry, I was greeted by Elias, the lead coordinator, whose face bore the weariness of a man who had spent three hours explaining the difference between a Phillips and a flathead screwdriver. The room was a chaotic symphony of whirring drills and the smell of ozone. The mission here is clear: empower citizens to mend rather than discard. However, the constraints were immediately apparent. With only four soldering irons and a dwindling supply of spare fuses, the bottleneck was inevitable. People stood in a queue that snaked toward the exit, clutching blenders and lamps like wounded soldiers.\n\nMy interaction with Sarah, a volunteer with grease-stained fingers, highlighted the core conflict. She spent twenty minutes patiently guiding me through the internal wiring of my toaster, yet she was visibly distracted by the impatient grumbles of an elderly man behind me demanding attention for his malfunctioning kettle. The tension was palpable. While the Hub succeeds in fostering a sense of community, it risks alienating those it seeks to help by operating at a capacity that frequently exceeds its physical and human resources. The volunteers are dedicated, but they are not magicians; they cannot stretch time or hardware to accommodate everyone.\n\nBy nine o'clock, the lights flickered, signaling the end of the session. Elias had to turn away three people, including the man with the kettle, whose frustration was a sharp reminder of the Hub’s limitations. My toaster, miraculously, was functional again, but the victory felt hollow. I watched as the volunteers began packing away the tools, their backs hunched with exhaustion. The Hub is a noble experiment, yet it teeters on the edge of burnout. It provides a vital service, yet it remains fundamentally fragile, unable to scale its operations to meet the genuine need of the neighborhood.\n\nUltimately, the Fix-It Hub is a triumph of spirit over logistics. It succeeds as a social experiment in shared knowledge, but as a reliable service for the community, it is perpetually one broken circuit away from collapse. Whether this model can survive without more funding or a more robust inventory of tools remains an open question. For now, it is a beautiful, messy, and deeply flawed sanctuary for our discarded belongings.",
+    "wordCount": 452,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "rhetoric",
+        "lemma": "rhetoric",
+        "glosses": {
+          "es": "the art of effective or persuasive speaking or writing",
+          "en": "the art of effective or persuasive speaking or writing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bottleneck",
+        "lemma": "bottleneck",
+        "glosses": {
+          "es": "a situation that causes delay in a process or system",
+          "en": "a situation that causes delay in a process or system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to seem almost tangible or touchable",
+          "en": "so intense as to seem almost tangible or touchable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienating",
+        "lemma": "alienating",
+        "glosses": {
+          "es": "causing someone to feel isolated or estranged",
+          "en": "causing someone to feel isolated or estranged"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "teeters",
+        "lemma": "teeters",
+        "glosses": {
+          "es": "to move or balance unsteadily",
+          "en": "to move or balance unsteadily"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanctuary",
+        "lemma": "sanctuary",
+        "glosses": {
+          "es": "a place of refuge or safety",
+          "en": "a place of refuge or safety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.8,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument presented regarding the Fix-It Hub?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is a helpful but limited service."
+        },
+        {
+          "id": "a2",
+          "text": "It is a failing project."
+        },
+        {
+          "id": "a3",
+          "text": "It needs to replace all its volunteers."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The Hub is a noble experiment, yet it teeters on the edge of burnout. It provides a vital service, yet it remains fundamentally fragile",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why was Elias unable to help everyone by the end of the night?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The tools were stolen."
+        },
+        {
+          "id": "a2",
+          "text": "He ran out of time."
+        },
+        {
+          "id": "a3",
+          "text": "The volunteers went home."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "By nine o'clock, the lights flickered, signaling the end of the session. Elias had to turn away three people",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author suggest about the volunteers' experience?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They are highly paid."
+        },
+        {
+          "id": "a2",
+          "text": "They enjoy the chaos."
+        },
+        {
+          "id": "a3",
+          "text": "They are overwhelmed."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "I watched as the volunteers began packing away the tools, their backs hunched with exhaustion.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the elderly man with the kettle?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the Hub's operational strain."
+        },
+        {
+          "id": "a2",
+          "text": "To show the demand."
+        },
+        {
+          "id": "a3",
+          "text": "To highlight the rude behavior of local residents."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elias had to turn away three people, including the man with the kettle, whose frustration was a sharp reminder of the Hub’s limitations.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the author's overall perspective?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cynical."
+        },
+        {
+          "id": "a2",
+          "text": "Ambivalent."
+        },
+        {
+          "id": "a3",
+          "text": "Appreciative."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The Hub is a noble experiment, yet it teeters on the edge of burnout. It provides a vital service, yet it remains fundamentally fragile",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author mean by describing the room as a 'bottleneck'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The room was overcrowded."
+        },
+        {
+          "id": "a2",
+          "text": "The tools were being broken."
+        },
+        {
+          "id": "a3",
+          "text": "The process was hindered by limited resources."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "With only four soldering irons and a dwindling supply of spare fuses, the bottleneck was inevitable.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word proposal for a local council meeting suggesting two specific ways the Fix-It Hub could improve its efficiency without requiring a significant increase in budget.",
+      "en": "Write a 150-word proposal for a local council meeting suggesting two specific ways the Fix-It Hub could improve its efficiency without requiring a significant increase in budget."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Evaluate the efficacy of the Fix-It Hub in balancing high demand with limited volunteer resources.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Gearbox Gambit: A Night at the Fix-It Hub | B2 Reading | WeLearn",
+      "en": "The Gearbox Gambit: A Night at the Fix-It Hub | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A critical look at the community-led initiative designed to combat throwaway culture through collaborative repair.",
+      "en": "A critical look at the community-led initiative designed to combat throwaway culture through collaborative repair."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

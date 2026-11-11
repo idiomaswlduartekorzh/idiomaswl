@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Ledger of Living Ancestors",
+      "en": "The Ledger of Living Ancestors"
+    },
+    "intro": {
+      "es": "A narrative exploring the friction between institutional archival standards and the preservation of heirloom agricultural traditions.",
+      "en": "A narrative exploring the friction between institutional archival standards and the preservation of heirloom agricultural traditions."
+    },
+    "mission": {
+      "es": "To analyze the tension between bureaucratic requirements for provenance and the intrinsic value of oral histories within a community seed library.",
+      "en": "To analyze the tension between bureaucratic requirements for provenance and the intrinsic value of oral histories within a community seed library."
+    },
+    "targetText": "The air inside the Oakhaven Seed Archive was perpetually chilled, a stark contrast to the humid, loam-scented afternoon outside. Elara, the archive’s newly appointed curator, adjusted her spectacles, staring at the mahogany desk where Silas stood. Silas, a man whose hands were mapped by years of tilling the valley’s northern slopes, held a small, wax-sealed packet of heirloom ‘Sun-Drenched’ tomatoes. He had been the steward of these seeds for four decades, a lineage passed down from his grandmother, who had carried them across the mountain pass during the Great Drought. Yet, the Archive’s new mandate was absolute: every accession required a notarized chain of custody. Silas possessed only stories—the whispered instructions of a woman long buried and the rhythmic songs he sang to the soil each spring. To the Archive, these were mere anecdotes; to Silas, they were the only certification that mattered.\n\nElara felt the weight of the institutional bylaws pressing down on her. The Board of Regents had recently tightened protocols, insisting that 'heritage' was a legal classification, not a sentimental one. They demanded documentation that could withstand an audit, fearing that undocumented seeds might introduce invasive pathogens or violate intellectual property claims. She looked at the packet, then at Silas’s expectant face. She knew the ‘Sun-Drenched’ variety was genetically distinct, a resilient outlier that thrived in the valley’s unique microclimate. However, the intake form remained starkly blank in the 'Provenance Documentation' field. Elara attempted to explain that without a paper trail—a bill of sale, a land deed, or a written transfer of ownership—the seeds could not be entered into the permanent collection. She spoke of liability and the necessity of standardized preservation, her voice sounding brittle against the high, vaulted ceilings of the repository.\n\nSilas listened with a quiet, unsettling intensity. He did not raise his voice, nor did he plead. Instead, he recounted the specific year the frost had decimated the valley’s commercial crops, leaving only his grandmother’s tomatoes standing, a testament to their hardiness. He spoke of how the seeds were never bought or sold, but gifted in exchange for labor or neighborly favors, a currency of trust that the Archive’s ledger could not accommodate. He argued that by demanding a written history, the Archive was effectively stripping the seeds of their cultural identity, turning living heritage into static, lifeless specimens. The tension in the room was palpable; Elara represented the preservation of form, while Silas represented the preservation of meaning. The Archive was a fortress of data, but it was currently failing to house the very life it sought to protect.\n\nAs the sun began to dip below the ridge, casting long, amber shadows across the polished floor, Elara reached for the ledger. She had the power to waive the requirement under the 'Exceptional Cultural Significance' clause, a provision rarely invoked due to the administrative scrutiny it invited. She hesitated, her pen hovering over the page. If she accepted the seeds, she would be inviting a storm of bureaucratic inquiries into her own judgment. If she rejected them, she would be complicit in the erasure of a lineage that had survived for generations. She looked at the packet again, realizing that the 'Sun-Drenched' tomato was not just a plant; it was an act of defiance against a world that demanded everything be quantified, labeled, and owned. The silence stretched, heavy with the weight of competing worlds.\n\nFinally, Elara closed the ledger without making an entry. She slid the packet back across the mahogany surface toward Silas. She could not provide the protection of the Archive without destroying the essence of what she was trying to save. Silas took the packet, his expression unreadable, and turned toward the door. As he stepped out into the twilight, the heavy oak doors groaned shut, sealing the Archive in its sterile, documented perfection. Elara remained at her desk, surrounded by thousands of cataloged, legally sound seeds, yet she felt a profound sense of loss. She had upheld the integrity of the institution, but in doing so, she had ensured that the most vital history in the valley would remain, as it had always been, outside the reach of the ledger.\n\nYet, by choosing to exclude the Sun-Drenched variety, Elara inadvertently accelerated the very fragility she feared. Without the Archive’s climate-controlled sanctuary, the seeds remained tethered to the whims of a single, aging steward and the unpredictable patterns of a changing climate. Silas’s departure marked the beginning of a precarious existence for the heirloom; should his health fail or the valley’s microclimate shift beyond the tolerance of these specific tomatoes, the lineage would vanish entirely, leaving no record of its former resilience. The Archive’s rigid adherence to provenance had successfully purged uncertainty from its inventory, but it had simultaneously created a void in the region’s botanical heritage. Elara’s sterile victory ensured that while her ledgers remained pristine and legally unassailable, the valley’s true history was now drifting toward an inevitable, silent extinction, unrecorded and ultimately forgotten by the world.",
+    "wordCount": 830,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "accession",
+        "lemma": "accession",
+        "glosses": {
+          "es": "the formal process of adding an item to a collection",
+          "en": "the formal process of adding an item to a collection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "notarized",
+        "lemma": "notarized",
+        "glosses": {
+          "es": "certified by an authorized official to be authentic",
+          "en": "certified by an authorized official to be authentic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Provenance",
+        "lemma": "Provenance",
+        "glosses": {
+          "es": "the history of ownership or origin of an object",
+          "en": "the history of ownership or origin of an object"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pathogens",
+        "lemma": "pathogens",
+        "glosses": {
+          "es": "biological agents that cause disease",
+          "en": "biological agents that cause disease"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to be almost tangible or physical",
+          "en": "so intense as to be almost tangible or physical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "complicit",
+        "lemma": "complicit",
+        "glosses": {
+          "es": "involved in an illegal or questionable act",
+          "en": "involved in an illegal or questionable act"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict of the story?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle between bureaucratic archival standards and the preservation of oral history."
+        },
+        {
+          "id": "a2",
+          "text": "A disagreement over the market value of heirloom seeds."
+        },
+        {
+          "id": "a3",
+          "text": "The personal animosity between a curator and a local farmer."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elara represented the preservation of form, while Silas represented the preservation of meaning.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does the Archive require documentation for the seeds?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To ensure they are not invasive."
+        },
+        {
+          "id": "a2",
+          "text": "To protect against liability and intellectual property claims."
+        },
+        {
+          "id": "a3",
+          "text": "To increase the market value of the collection."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "They demanded documentation that could withstand an audit, fearing that undocumented seeds might introduce invasive pathogens or violate intellectual property claims.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the ending suggest about Elara's decision?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She was forced to reject the seeds by her superiors."
+        },
+        {
+          "id": "a2",
+          "text": "She decided that Silas was lying about the seeds."
+        },
+        {
+          "id": "a3",
+          "text": "She chose institutional safety over the preservation of the seeds."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "She had upheld the integrity of the institution, but in doing so, she had ensured that the most vital history in the valley would remain, as it had always been, outside the reach of the ledger.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the description of Silas’s hands?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To emphasize his long-term connection to the land."
+        },
+        {
+          "id": "a2",
+          "text": "To show he has worked hard all his life."
+        },
+        {
+          "id": "a3",
+          "text": "To contrast his physical appearance with Elara."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Silas, a man whose hands were mapped by years of tilling the valley’s northern slopes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the tone of the narrative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggressive and confrontational."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholy and reflective."
+        },
+        {
+          "id": "a3",
+          "text": "Objective and purely descriptive."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elara remained at her desk, surrounded by thousands of cataloged, legally sound seeds, yet she felt a profound sense of loss.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'accession' mean in the context of the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A legal document of ownership."
+        },
+        {
+          "id": "a2",
+          "text": "A type of heirloom seed."
+        },
+        {
+          "id": "a3",
+          "text": "A formal addition to an archive."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "every accession required a notarized chain of custody.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word persuasive essay arguing whether institutions like the Oakhaven Seed Archive should prioritize legal documentation or cultural preservation when dealing with intangible heritage.",
+      "en": "Write a 300-word persuasive essay arguing whether institutions like the Oakhaven Seed Archive should prioritize legal documentation or cultural preservation when dealing with intangible heritage."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "To analyze the tension between bureaucratic requirements for provenance and the intrinsic value of oral histories within a community seed library.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Ledger of Living Ancestors | C2 Reading | WeLearn",
+      "en": "The Ledger of Living Ancestors | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A narrative exploring the friction between institutional archival standards and the preservation of heirloom agricultural traditions.",
+      "en": "A narrative exploring the friction between institutional archival standards and the preservation of heirloom agricultural traditions."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

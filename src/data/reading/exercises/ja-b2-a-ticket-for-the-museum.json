@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「夜の美術館」という名の不完全な贈り物",
+      "en": "「夜の美術館」という名の不完全な贈り物"
+    },
+    "intro": {
+      "es": "美術館の無料開放がもたらした光と影について、ある来館者の視点から考察する。",
+      "en": "美術館の無料開放がもたらした光と影について、ある来館者の視点から考察する。"
+    },
+    "mission": {
+      "es": "夜間開館の利便性と公共交通機関の未整備という矛盾を読み解き、都市のインフラと文化政策の乖離について議論する。",
+      "en": "夜間開館の利便性と公共交通機関の未整備という矛盾を読み解き、都市のインフラと文化政策の乖離について議論する。"
+    },
+    "targetText": "先月、市内の「星影美術館」が試験的に夜間無料開放を開始した。仕事帰りの市民をターゲットにしたこの試みは、初日から多くの関心を集め、平日の夜にもかかわらず館内は活気に満ちている。学芸員の佐藤氏は、従来の客層とは異なる若い世代の来館が増えたことに喜びを隠さない。確かに、夜の静寂の中で作品と対峙する体験は格別であり、この試みは文化の民主化という観点では大きな成功を収めていると言えるだろう。しかし、この素晴らしい取り組みには、看過できない大きな矛盾が潜んでいる。\n\n問題は、美術館の閉館時間と周辺の公共交通機関の運行状況にある。美術館が夜九時まで開館しているにもかかわらず、最寄りのバス停を経由する最終バスは、なんと八時半に発車してしまうのだ。結果として、最後の展示室を駆け足で鑑賞した来館者は、駅までの長い道のりを徒歩で戻らざるを得ない。この状況に対し、美術館側は「周辺の交通事情は自治体の管轄である」と主張し、市側は「利用者の動向を見極める必要がある」と責任を転嫁し続けている。\n\nこのちぐはぐな連携不足は、単なる不便さを超えて、来館者の意欲を削ぐ要因となっている。先日、遠方から訪れた学生の田中さんは、展示の途中で帰路につく羽目になったと肩を落としていた。芸術を享受する権利は誰にでもあるはずだが、帰宅手段が確保されていない現状では、その権利は一部の近隣住民や自家用車を持つ層に限定されてしまう。無料開放という寛大な施策が、皮肉にも新たな格差を生み出している事実は否定できない。\n\nもちろん、美術館側が予算の制約の中で最大限の努力をしていることは理解できる。照明の維持や警備員の配置など、夜間運営には多額のコストがかかるからだ。しかし、アクセスの改善を伴わない開放は、いわば「招待状を送りながら玄関の鍵を閉めておく」ようなものだ。文化的な体験を届けるという使命があるならば、美術館は単に門戸を開くだけでなく、来館者が安心して帰路につける環境づくりまでをセットで考えるべきではないだろうか。\n\n結局のところ、この夜間開館は、都市計画における縦割り行政の弊害を浮き彫りにしただけに終わるのだろうか。館内を彩る美しい絵画とは対照的に、外に出れば暗く静まり返った通りが待っている。この矛盾が解消されない限り、星影美術館の夜は、多くの市民にとって「遠くから眺めるだけの星」であり続けるだろう。利便性と芸術性の両立という課題は、解決の糸口が見えないまま、今日もまた閉館の鐘が鳴り響く。",
+    "wordCount": 963,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "看過",
+        "lemma": "看過",
+        "glosses": {
+          "es": "overlooking",
+          "en": "overlooking"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "転嫁",
+        "lemma": "転嫁",
+        "glosses": {
+          "es": "shifting (blame/responsibility)",
+          "en": "shifting (blame/responsibility)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ちぐはぐ",
+        "lemma": "ちぐはぐ",
+        "glosses": {
+          "es": "inconsistent or mismatched",
+          "en": "inconsistent or mismatched"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "享受",
+        "lemma": "享受",
+        "glosses": {
+          "es": "enjoying or receiving",
+          "en": "enjoying or receiving"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "制約",
+        "lemma": "制約",
+        "glosses": {
+          "es": "constraint",
+          "en": "constraint"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "縦割り行政",
+        "lemma": "縦割り行政",
+        "glosses": {
+          "es": "bureaucratic sectionalism",
+          "en": "bureaucratic sectionalism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 45.9,
+      "maxSentenceWords": 76,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:12.273Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこの文章を通じて最も伝えたいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "交通インフラの改善なしの無料開放は不十分だ。"
+        },
+        {
+          "id": "a2",
+          "text": "夜間開館の利便性を高めるべきだ。"
+        },
+        {
+          "id": "a3",
+          "text": "美術館の運営には多額の費用が必要である。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "アクセスの改善を伴わない開放は、いわば「招待状を送りながら玄関の鍵を閉めておく」ようなものだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "最終バスの時間が来館者に与える影響は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "来館者がタクシー代を負担している。"
+        },
+        {
+          "id": "a2",
+          "text": "展示を途中で切り上げることになる。"
+        },
+        {
+          "id": "a3",
+          "text": "美術館側のコスト削減につながっている。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "遠方から訪れた学生の田中さんは、展示の途中で帰路につく羽目になったと肩を落としていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "美術館と市が責任を押し付け合っている背景には何があるか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "予算の不足。"
+        },
+        {
+          "id": "a2",
+          "text": "来館者の減少。"
+        },
+        {
+          "id": "a3",
+          "text": "管轄の分断。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "美術館側は「周辺の交通事情は自治体の管轄である」と主張し、市側は「利用者の動向を見極める必要がある」と責任を転嫁し続けている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「招待状を送りながら玄関の鍵を閉めておく」と比喩を用いた理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "無料開放という施策の矛盾を強調するため。"
+        },
+        {
+          "id": "a2",
+          "text": "美術館の閉館作業の様子を説明するため。"
+        },
+        {
+          "id": "a3",
+          "text": "来館者に夜間開館の注意を呼びかけるため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "アクセスの改善を伴わない開放は、いわば「招待状を送りながら玄関の鍵を閉めておく」ようなものだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体の筆者の態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "中立的で事実のみを述べる。"
+        },
+        {
+          "id": "a2",
+          "text": "批判的かつ改善を求める。"
+        },
+        {
+          "id": "a3",
+          "text": "楽観的で将来に期待を寄せる。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この矛盾が解消されない限り、星影美術館の夜は、多くの市民にとって「遠くから眺めるだけの星」であり続けるだろう。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「看過できない」の意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "理解することができない。"
+        },
+        {
+          "id": "a2",
+          "text": "期待することができない。"
+        },
+        {
+          "id": "a3",
+          "text": "見逃すことはできない。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "しかし、この素晴らしい取り組みには、看過できない大きな矛盾が潜んでいる。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたが美術館の広報担当者だとしたら、公共交通機関の未整備という問題に対し、どのような具体的な解決策を市やバス会社に提案しますか。800字程度で論じてください。",
+      "en": "あなたが美術館の広報担当者だとしたら、公共交通機関の未整備という問題に対し、どのような具体的な解決策を市やバス会社に提案しますか。800字程度で論じてください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "夜間開館の利便性と公共交通機関の未整備という矛盾を読み解き、都市のインフラと文化政策の乖離について議論する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:12.273Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「夜の美術館」という名の不完全な贈り物 | B2 Reading | WeLearn",
+      "en": "「夜の美術館」という名の不完全な贈り物 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "美術館の無料開放がもたらした光と影について、ある来館者の視点から考察する。",
+      "en": "美術館の無料開放がもたらした光と影について、ある来館者の視点から考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:12.273Z"
+  }
+}

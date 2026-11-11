@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-new-crossing",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Standoff at Willow Creek",
+      "en": "The Standoff at Willow Creek"
+    },
+    "intro": {
+      "es": "A community debate over a new pedestrian crossing reveals the tension between road efficiency and public safety.",
+      "en": "A community debate over a new pedestrian crossing reveals the tension between road efficiency and public safety."
+    },
+    "mission": {
+      "es": "Read the article about the Willow Creek crossing trial and analyze the conflict between local residents and commuters.",
+      "en": "Read the article about the Willow Creek crossing trial and analyze the conflict between local residents and commuters."
+    },
+    "targetText": "For years, the stretch of road passing the Willow Creek Medical Clinic was a source of anxiety for local residents. Elderly patients often struggled to navigate the heavy traffic to reach the clinic entrance, leading to several near-misses that sparked public outcry. Last month, the City Council finally bowed to pressure from the Willow Creek Neighborhood Association, represented by spokesperson Elena Vance. They installed a temporary pedestrian crossing, complete with flashing yellow beacons, intended to grant residents priority access. However, the installation immediately drew the ire of the Commuter Alliance, a group of daily drivers who rely on the route to bypass the town center. Their leader, Marcus Thorne, argued that the crossing created an unnecessary bottleneck, causing significant congestion during the morning and evening rush hours.\n\nThe trial period lasted three weeks, during which the city monitored traffic flow and safety metrics. The results were undeniably mixed. While the number of pedestrian incidents dropped to zero, the average commute time for drivers increased by several minutes. Residents celebrated the newfound accessibility, noting that the clinic was finally reachable for those with mobility issues. Conversely, the Commuter Alliance pointed to the idling vehicles as an environmental concern, suggesting that the stop-start traffic pattern increased local air pollution. The tension reached a boiling point during a town hall meeting, where both sides presented conflicting data to support their agendas.\n\nElena Vance argued that human lives outweighed the convenience of a shorter commute. She presented testimonials from clinic staff who had witnessed the daily hazards faced by patients. Marcus Thorne countered that the road was designed as a high-capacity artery, not a local street, and that the crossing was poorly placed. He proposed an alternative: a pedestrian bridge further down the road. However, the city engineer noted that such a structure would be prohibitively expensive and would not serve the immediate needs of the clinic’s most vulnerable visitors.\n\nAs the trial concluded, the City Council faced a difficult decision. They opted for a compromise: the crossing would remain, but it would be upgraded to a smart-sensor system that only activates when a pedestrian is present, theoretically reducing unnecessary stops. Yet, the resolution felt fragile. The Commuter Alliance remained skeptical, promising to monitor the new system closely for any signs of continued inefficiency, while the residents feared that any future technical failure would lead to the total removal of the crossing.\n\nThe situation in Willow Creek serves as a microcosm for modern urban planning dilemmas. It highlights the inherent friction between prioritizing local accessibility and maintaining regional transit speed. While the smart-sensor system offers a temporary reprieve, the underlying conflict remains unresolved. The residents have secured their safety for now, but the drivers have not abandoned their cause. The road outside the clinic remains a contested space, where the value of a few minutes of time is weighed against the fundamental right to safe passage.",
+    "wordCount": 482,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bottleneck",
+        "lemma": "bottleneck",
+        "glosses": {
+          "es": "a point of congestion that slows down progress",
+          "en": "a point of congestion that slows down progress"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "metrics",
+        "lemma": "metrics",
+        "glosses": {
+          "es": "a set of numbers or statistics used for analysis",
+          "en": "a set of numbers or statistics used for analysis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "artery",
+        "lemma": "artery",
+        "glosses": {
+          "es": "a major road through which traffic flows",
+          "en": "a major road through which traffic flows"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prohibitively",
+        "lemma": "prohibitively",
+        "glosses": {
+          "es": "at a level that is too expensive or extreme",
+          "en": "at a level that is too expensive or extreme"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "microcosm",
+        "lemma": "microcosm",
+        "glosses": {
+          "es": "a small-scale representation of a larger system",
+          "en": "a small-scale representation of a larger system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reprieve",
+        "lemma": "reprieve",
+        "glosses": {
+          "es": "a temporary relief from a difficult situation",
+          "en": "a temporary relief from a difficult situation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.5,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the passage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A conflict over urban space."
+        },
+        {
+          "id": "a2",
+          "text": "The impact of road design on health."
+        },
+        {
+          "id": "a3",
+          "text": "The failure of city planning."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "It highlights the inherent friction between prioritizing local accessibility and maintaining regional transit speed.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What was the result of the three-week trial?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Drivers were satisfied."
+        },
+        {
+          "id": "a2",
+          "text": "Safety improved."
+        },
+        {
+          "id": "a3",
+          "text": "Costs were reduced."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "While the number of pedestrian incidents dropped to zero, the average commute time for drivers increased by several minutes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why is the Commuter Alliance still unhappy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They want a bridge."
+        },
+        {
+          "id": "a2",
+          "text": "They dislike the clinic."
+        },
+        {
+          "id": "a3",
+          "text": "They doubt the new system."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The Commuter Alliance remained skeptical, promising to monitor the new system closely for any signs of continued inefficiency",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the city engineer?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To suggest that the bridge proposal is unrealistic."
+        },
+        {
+          "id": "a2",
+          "text": "To show that the city council is incompetent."
+        },
+        {
+          "id": "a3",
+          "text": "To prove that residents are wrong."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "the city engineer noted that such a structure would be prohibitively expensive and would not serve the immediate needs of the clinic’s most vulnerable visitors.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Uncertain."
+        },
+        {
+          "id": "a3",
+          "text": "Objective."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The residents have secured their safety for now, but the drivers have not abandoned their cause.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'bottleneck' imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A place where vehicles stop for fuel."
+        },
+        {
+          "id": "a2",
+          "text": "A road designed for high capacity."
+        },
+        {
+          "id": "a3",
+          "text": "A location where traffic speed is reduced."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Marcus Thorne, argued that the crossing created an unnecessary bottleneck, causing significant congestion during the morning and evening rush hours.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word letter to the City Council from the perspective of a local business owner who is caught between the interests of the residents and the commuters. Propose a third alternative for the crossing.",
+      "en": "Write a 150-word letter to the City Council from the perspective of a local business owner who is caught between the interests of the residents and the commuters. Propose a third alternative for the crossing."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Read the article about the Willow Creek crossing trial and analyze the conflict between local residents and commuters.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Standoff at Willow Creek | B2 Reading | WeLearn",
+      "en": "The Standoff at Willow Creek | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A community debate over a new pedestrian crossing reveals the tension between road efficiency and public safety.",
+      "en": "A community debate over a new pedestrian crossing reveals the tension between road efficiency and public safety."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-quiet-street",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "침묵의 거리: 소음 없는 밤의 역설",
+      "en": "침묵의 거리: 소음 없는 밤의 역설"
+    },
+    "intro": {
+      "es": "도시 계획의 성공을 측정하는 방식에 대한 비판적 시각을 담은 기사입니다. 교통량 감소가 반드시 정주 여건의 개선으로 이어지는지 고찰합니다.",
+      "en": "도시 계획의 성공을 측정하는 방식에 대한 비판적 시각을 담은 기사입니다. 교통량 감소가 반드시 정주 여건의 개선으로 이어지는지 고찰합니다."
+    },
+    "mission": {
+      "es": "교통 데이터와 주민 체감 사이의 괴리를 분석하고, 도시 정책의 성공 기준을 누가 설정해야 하는지 논의하십시오.",
+      "en": "교통 데이터와 주민 체감 사이의 괴리를 분석하고, 도시 정책의 성공 기준을 누가 설정해야 하는지 논의하십시오."
+    },
+    "targetText": "최근 '은하수 지구' 관리 사무소는 지난 분기 야간 차량 통행량이 이전 대비 현저히 줄었다는 보고서를 발표했다. 이 보고서는 도로에 설치된 센서 데이터를 근거로, 밤 시간대 차량 흐름이 완화되었음을 강조하며 이를 성공적인 교통 정책의 결실로 자평했다. 그러나 이러한 통계적 성과는 현장에서 체감되는 현실과 묘하게 어긋난다. 차량의 절대적인 대수는 감소했을지언정, 새벽 시간대를 관통하는 대형 물류 트럭들의 엔진음은 오히려 이전보다 더 날카롭고 불규칙하게 울려 퍼지고 있기 때문이다. 주민 대표인 박영희 씨는 이를 두고 '숫자의 기만'이라며 분통을 터뜨렸다. 그녀의 주장에 따르면, 일반 승용차의 통행은 줄었으나, 물류 허브로 향하는 화물차들이 좁은 주택가 골목을 우회로로 이용하는 현상이 고착화되었다는 것이다. 즉, 교통량은 감소했으나 소음 공해는 오히려 심화되는 역설적인 상황이 연출된 셈이다. 관리 사무소 측은 이러한 지적에 대해 도로의 전체적인 물리적 통행량을 기준으로 성공 여부를 판단하는 것이 표준적인 지침이라며 책임을 회피했다. 하지만 주민들은 정작 필요한 것은 통행량의 총합이 아니라, 거주자의 수면권을 보장할 수 있는 환경적 질이라고 반박한다. 과연 도시의 평온함은 누가 정의하는가. 관리 사무소는 데이터를 통해 효율성을 증명하려 하고, 주민들은 일상의 평온을 통해 삶의 질을 증명하려 한다. 이러한 간극은 단순히 행정상의 오류가 아니라, 도시를 바라보는 근본적인 시각 차이에서 기인한다. 결국, 이번 사태는 단순히 교통 문제를 넘어, 도시 공간의 주권이 누구에게 있는지를 묻는 시험대가 되었다. 밤의 적막을 깨는 것은 트럭의 엔진 소리만이 아니다. 관리 사무소의 경직된 데이터 중심주의가 주민들의 삶을 배제할 때, 그 거리는 이미 죽은 공간이나 다름없다. 보고서상의 성공은 실질적인 평온을 담보하지 못하며, 오히려 주민들의 불신을 키우는 도구로 전락했다. 정책의 성공 여부는 통계 수치가 아니라, 가장 예민한 주민의 수면 시간 속에서 판가름 나야 한다. 관리 사무소가 데이터라는 안전한 요새 뒤에 숨어 있는 한, 은하수 지구의 밤은 결코 평온해질 수 없을 것이다. 소음의 주범이 사라지지 않는 한, 통계상의 감소는 허울 좋은 수치에 불과하기 때문이다.\n\n결국 이러한 행정적 태도는 주민들의 일상적 고통을 수치화된 성과 뒤로 은폐하려는 무책임한 처사라는 비판을 피하기 어렵다. 진정한 도시의 가치는 관리 사무소가 내세우는 효율적인 데이터 정렬에 있지 않고, 그 공간을 실제로 점유하며 살아가는 이들의 평온한 호흡에 달려 있기 때문이다. 만약 당국이 실질적인 소음 저감 대책을 마련하지 않고 현재의 통계 수치에만 매몰된다면, 은하수 지구는 머지않아 주민들이 떠나버린 텅 빈 공간으로 전락할 위험이 크다. 결국 행정의 본질은 숫자를 관리하는 것이 아니라 사람의 삶을 보호하는 데 있어야 하며, 이를 망각한 정책은 결국 공동체의 신뢰를 무너뜨리는 부메랑으로 돌아올 뿐이다. 이제라도 관리 사무소는 책상 위의 보고서를 덮고, 새벽마다 트럭의 굉음에 잠을 설치는 주민들의 목소리에 귀를 기울여야 할 시점이다. 소음이 사라진 고요한 밤이야말로 진정한 도시의 성공을 증명하는 가장 확실한 지표가 될 것이기 때문이다.",
+    "wordCount": 381,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "자평했다",
+        "lemma": "자평했다",
+        "glosses": {
+          "es": "evaluated oneself",
+          "en": "evaluated oneself"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고착화",
+        "lemma": "고착화",
+        "glosses": {
+          "es": "fixation or solidification",
+          "en": "fixation or solidification"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역설적인",
+        "lemma": "역설적인",
+        "glosses": {
+          "es": "paradoxical",
+          "en": "paradoxical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "담보",
+        "lemma": "담보",
+        "glosses": {
+          "es": "guarantee",
+          "en": "guarantee"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전락했다",
+        "lemma": "전락했다",
+        "glosses": {
+          "es": "degenerated into",
+          "en": "degenerated into"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "요새",
+        "lemma": "요새",
+        "glosses": {
+          "es": "fortress",
+          "en": "fortress"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.2,
+      "maxSentenceWords": 23,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:15:52.763Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 다루고 있는 핵심적인 갈등은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "데이터와 체감의 괴리"
+        },
+        {
+          "id": "a2",
+          "text": "관리 사무소의 예산 부족"
+        },
+        {
+          "id": "a3",
+          "text": "주민들의 이기적인 태도"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "통계적 성과는 현장에서 체감되는 현실과 묘하게 어긋난다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박영희 씨가 지적한 구체적인 문제점은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "센서 데이터의 조작"
+        },
+        {
+          "id": "a2",
+          "text": "화물차의 우회로 이용"
+        },
+        {
+          "id": "a3",
+          "text": "가로등 설치의 미비"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "물류 허브로 향하는 화물차들이 좁은 주택가 골목을 우회로로 이용하는 현상이 고착화되었다는 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "관리 사무소가 통계에 집착하는 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민 의견 수렴"
+        },
+        {
+          "id": "a2",
+          "text": "환경 개선 목표"
+        },
+        {
+          "id": "a3",
+          "text": "객관적 성과 증명"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "관리 사무소 측은 이러한 지적에 대해 도로의 전체적인 물리적 통행량을 기준으로 성공 여부를 판단하는 것이 표준적인 지침이라며 책임을 회피했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 이 글을 통해 궁극적으로 전달하고자 하는 메시지는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "정책 성공 기준의 재정립 필요성"
+        },
+        {
+          "id": "a2",
+          "text": "교통량 측정 센서의 기술적 결함 지적"
+        },
+        {
+          "id": "a3",
+          "text": "물류 트럭 운전자에 대한 강력한 제재"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "정책의 성공 여부는 통계 수치가 아니라, 가장 예민한 주민의 수면 시간 속에서 판가름 나야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 사무적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "관리 사무소의 경직된 데이터 중심주의가 주민들의 삶을 배제할 때, 그 거리는 이미 죽은 공간이나 다름없다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'담보'의 문맥적 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "담보물"
+        },
+        {
+          "id": "a2",
+          "text": "저당"
+        },
+        {
+          "id": "a3",
+          "text": "보장"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "보고서상의 성공은 실질적인 평온을 담보하지 못하며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "당신이 은하수 지구의 새로운 도시 기획자라면, 주민들의 불만을 해소하고 관리 사무소의 데이터 중심주의를 보완하기 위해 어떤 구체적인 소통 방식을 도입하겠습니까? 200자 내외로 작성하십시오.",
+      "en": "당신이 은하수 지구의 새로운 도시 기획자라면, 주민들의 불만을 해소하고 관리 사무소의 데이터 중심주의를 보완하기 위해 어떤 구체적인 소통 방식을 도입하겠습니까? 200자 내외로 작성하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "교통 데이터와 주민 체감 사이의 괴리를 분석하고, 도시 정책의 성공 기준을 누가 설정해야 하는지 논의하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:15:52.763Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "침묵의 거리: 소음 없는 밤의 역설 | C1 Reading | WeLearn",
+      "en": "침묵의 거리: 소음 없는 밤의 역설 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "도시 계획의 성공을 측정하는 방식에 대한 비판적 시각을 담은 기사입니다. 교통량 감소가 반드시 정주 여건의 개선으로 이어지는지 고찰합니다.",
+      "en": "도시 계획의 성공을 측정하는 방식에 대한 비판적 시각을 담은 기사입니다. 교통량 감소가 반드시 정주 여건의 개선으로 이어지는지 고찰합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:15:52.763Z"
+  }
+}

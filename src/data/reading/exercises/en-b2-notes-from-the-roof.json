@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-notes-from-the-roof",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Solar Divide at Oakwood Terrace",
+      "en": "The Solar Divide at Oakwood Terrace"
+    },
+    "intro": {
+      "es": "Read the following email exchange between an apartment owner and a tenant representative regarding a proposed renewable energy project.",
+      "en": "Read the following email exchange between an apartment owner and a tenant representative regarding a proposed renewable energy project."
+    },
+    "mission": {
+      "es": "Analyze the email to understand the underlying conflict between property owners and long-term renters regarding infrastructure investment.",
+      "en": "Analyze the email to understand the underlying conflict between property owners and long-term renters regarding infrastructure investment."
+    },
+    "targetText": "Subject: Proposal for Rooftop Solar Array - Oakwood Terrace\n\nDear Residents and Owners,\n\nI am writing to formally propose the installation of a communal solar array on the roof of Oakwood Terrace. After consulting with local contractors, it is clear that our building’s south-facing orientation is ideal for energy generation. We estimate that this system could reduce our common area utility bills by a significant margin, potentially lowering the monthly maintenance fees for everyone. However, the initial capital expenditure remains a hurdle, and we must determine how to equitably distribute the costs between those who own their units and those who currently lease them.\n\nAs an owner, I am prepared to advocate for a special assessment to cover the upfront purchase. I recognize that this is a substantial request, yet the long-term appreciation of our property values and the reduction in overhead make it a prudent financial strategy. By investing now, we shield ourselves from the volatility of regional energy prices. I understand that for renters, the immediate financial benefit is less obvious, as your monthly rent is fixed by your lease agreement regardless of the building’s energy efficiency.\n\nThis is where the conflict arises. The Residents’ Committee, led by Elena Vance, has expressed hesitation. Elena argues that since renters do not benefit from property value appreciation, they should not be expected to contribute to the capital levy. She suggests that owners should bear the entire cost, with the building recouping funds through slightly higher utility surcharges for tenants who choose to use the solar-generated electricity. While I admire her pragmatism, this model risks creating a two-tier system where only those who pay a premium have access to green energy, effectively excluding the very people we aim to support.\n\nFurthermore, the legal implications of such an arrangement are complex. If the building incurs debt to finance the panels, the repayment structure must be transparent. If we move forward with a special assessment, owners will see an immediate increase in their out-of-pocket expenses. Conversely, if we rely on a surcharge model, we might struggle to secure a loan from a bank that typically requires a guaranteed return on investment. The board is currently deadlocked, and we have reached an impasse regarding who bears the financial burden of this sustainability initiative.\n\nI invite you all to attend the town hall meeting next Tuesday to voice your concerns. We need a consensus that balances the desire for a greener future with the economic realities of our diverse living arrangements. Please consider whether you value long-term environmental stewardship over short-term fiscal relief. Without a compromise on the funding mechanism, this project will remain a theoretical dream rather than a functional reality for our community.",
+    "wordCount": 450,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "capital expenditure",
+        "lemma": "capital expenditure",
+        "glosses": {
+          "es": "funds used by a company to acquire or upgrade physical assets",
+          "en": "funds used by a company to acquire or upgrade physical assets"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prudent",
+        "lemma": "prudent",
+        "glosses": {
+          "es": "acting with or showing care and thought for the future",
+          "en": "acting with or showing care and thought for the future"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "volatility",
+        "lemma": "volatility",
+        "glosses": {
+          "es": "liability to change rapidly and unpredictably",
+          "en": "liability to change rapidly and unpredictably"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatism",
+        "lemma": "pragmatism",
+        "glosses": {
+          "es": "dealing with things sensibly and realistically",
+          "en": "dealing with things sensibly and realistically"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impasse",
+        "lemma": "impasse",
+        "glosses": {
+          "es": "a situation in which no progress is possible",
+          "en": "a situation in which no progress is possible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stewardship",
+        "lemma": "stewardship",
+        "glosses": {
+          "es": "the job of supervising or taking care of something",
+          "en": "the job of supervising or taking care of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.5,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary obstacle to the solar project?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Disagreement on funding."
+        },
+        {
+          "id": "a2",
+          "text": "The roof structure."
+        },
+        {
+          "id": "a3",
+          "text": "Lack of resident interest."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "we must determine how to equitably distribute the costs between those who own their units and those who currently lease them.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What does Elena Vance propose?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A one-time special assessment paid by renters only."
+        },
+        {
+          "id": "a2",
+          "text": "A utility surcharge model."
+        },
+        {
+          "id": "a3",
+          "text": "A bank loan."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "She suggests that owners should bear the entire cost, with the building recouping funds through slightly higher utility surcharges for tenants who choose to use the solar-generated electricity.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why might the bank be hesitant?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The project is too small."
+        },
+        {
+          "id": "a2",
+          "text": "The roof is inadequate."
+        },
+        {
+          "id": "a3",
+          "text": "The return is uncertain."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "if we rely on a surcharge model, we might struggle to secure a loan from a bank that typically requires a guaranteed return on investment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention property appreciation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To justify the cost to owners."
+        },
+        {
+          "id": "a2",
+          "text": "To attract new buyers."
+        },
+        {
+          "id": "a3",
+          "text": "To shame the renters."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I recognize that this is a substantial request, yet the long-term appreciation of our property values and the reduction in overhead make it a prudent financial strategy.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would you describe the author's tone?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demanding and aggressive."
+        },
+        {
+          "id": "a2",
+          "text": "Diplomatic yet concerned."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I invite you all to attend the town hall meeting next Tuesday to voice your concerns.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author mean by 'impasse'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A total collapse."
+        },
+        {
+          "id": "a2",
+          "text": "A successful agreement."
+        },
+        {
+          "id": "a3",
+          "text": "A deadlock."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The board is currently deadlocked, and we have reached an impasse regarding who bears the financial burden of this sustainability initiative.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word response from the perspective of a tenant, explaining why you support the solar initiative but disagree with the proposed surcharge model.",
+      "en": "Write a 150-word response from the perspective of a tenant, explaining why you support the solar initiative but disagree with the proposed surcharge model."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the email to understand the underlying conflict between property owners and long-term renters regarding infrastructure investment.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Solar Divide at Oakwood Terrace | B2 Reading | WeLearn",
+      "en": "The Solar Divide at Oakwood Terrace | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read the following email exchange between an apartment owner and a tenant representative regarding a proposed renewable energy project.",
+      "en": "Read the following email exchange between an apartment owner and a tenant representative regarding a proposed renewable energy project."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

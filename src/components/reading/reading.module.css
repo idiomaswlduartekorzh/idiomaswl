@@ -301,7 +301,7 @@
 .pilotDirectoryGrid h2 { margin: 0 0 9px; color: var(--premium-night); font: 400 20px/1.2 Georgia, 'Times New Roman', serif; }
 .pilotDirectoryGrid section > div { display: grid; gap: 7px; }
 .pilotDirectoryGrid a { display: flex; align-items: baseline; gap: 10px; min-width: 0; padding: 10px 12px; border: 1px solid var(--premium-line); border-radius: 8px; color: var(--premium-ink); text-decoration: none; font: 600 12px/1.35 var(--sans); }
-.pilotDirectoryGrid a:hover, .pilotDirectoryGrid a[aria-current="page"] { border-color: #a9c1e8; background: #eaf0fa; }
+.pilotDirectoryGrid a:hover, .pilotDirectoryGrid a[aria-current="location"] { border-color: #a9c1e8; background: #eaf0fa; }
 .pilotDirectoryGrid a b { flex: none; color: var(--premium-blue); }
 .pilotDirectoryGrid a span { min-width: 0; overflow-wrap: anywhere; }
 .pilotDirectory summary:focus-visible, .pilotDirectoryGrid a:focus-visible { outline: 3px solid #86a8ef; outline-offset: 2px; }

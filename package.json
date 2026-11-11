@@ -192,6 +192,7 @@
     "test:writing-workplace-b2": "node --test tests/writing-workplace-b2.test.mjs",
     "audit:dark-mode": "node scripts/audit-dark-mode.mjs",
     "check:reading-content": "npm run check:reading-grammar-index && npm run check:reading-derived && node scripts/build-reading-advanced-pilot.mjs && node scripts/check-reading-content.mjs",
+    "check:reading-advanced-scale": "node scripts/check-reading-advanced-scale.mjs",
     "check:reading-grammar-index": "node scripts/build-reading-grammar-index.mjs",
     "check:reading-derived": "node scripts/normalize-reading-exercises.mjs",
     "check:listening-series": "node scripts/validate-listening-series.mjs && node scripts/check-listening-target-language.mjs",

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-returnable-cup",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Cup Conundrum at The Silver Bean",
+      "en": "The Cup Conundrum at The Silver Bean"
+    },
+    "intro": {
+      "es": "An exploration of how a local coffee shop's attempt to reduce waste created an unexpected social friction for its patrons.",
+      "en": "An exploration of how a local coffee shop's attempt to reduce waste created an unexpected social friction for its patrons."
+    },
+    "mission": {
+      "es": "Analyze the text to understand the logistical trade-offs of environmental initiatives in retail settings.",
+      "en": "Analyze the text to understand the logistical trade-offs of environmental initiatives in retail settings."
+    },
+    "targetText": "The Silver Bean, a popular neighborhood cafe, recently implemented a mandatory deposit scheme for all takeaway beverages. Under the new policy, customers pay an additional two-dollar fee for a durable, branded plastic cup. This deposit is fully refundable, provided the patron returns the vessel to any of the three participating locations across the city. The store manager, Elena, initiated the program after observing overflowing bins of single-use paper cups during the busy morning rush. While the environmental impact was immediate—waste production dropped significantly within the first week—the operational reality proved far more complex than anticipated.\n\nThe friction became apparent on a Tuesday afternoon when Julian, a tourist visiting from out of town, attempted to order an iced latte. Unaware of the new policy, Julian was surprised to find his total bill higher than expected. Upon learning he had to carry the cup until he could locate a return station, he expressed frustration. He was only in the city for a few hours and planned to leave by train shortly after finishing his drink. For Julian, the deposit was not an incentive to recycle, but an inconvenient tax on his mobility. He eventually left the cafe without purchasing anything, feeling that the establishment prioritized local habits over visitor accessibility.\n\nElena defended the policy, arguing that the long-term benefits of waste reduction outweigh the temporary inconvenience for transient customers. She pointed out that regular patrons, who make up the majority of her revenue, have integrated the return process into their daily routines. They view the cups as a sign of community commitment rather than a chore. However, this perspective highlights a growing divide between the cafe’s core demographic and the occasional visitor. The system assumes a level of permanence that not everyone possesses, creating a barrier for those who do not frequent the neighborhood.\n\nCritics of the scheme argue that the cafe failed to consider the 'last mile' of the circular economy. While the return stations are conveniently located for residents, they are clustered in residential zones, far from the central transit hub where Julian found himself. This geographic limitation turns a sustainability initiative into a logistical hurdle. By failing to place a return bin at the train station, the cafe effectively penalized visitors for participating in a program they could not realistically complete. The initiative, while noble in its environmental aim, inadvertently alienated a segment of the customer base.\n\nThe situation remains unresolved, with Elena considering a mobile app to track return locations, though this does little to solve the immediate problem of physical transport. The Silver Bean is now at a crossroads: maintain its strict environmental stance at the cost of alienating tourists, or introduce a non-refundable, compostable alternative that undermines its zero-waste goal. The tension between local environmental stewardship and the needs of a mobile population continues to simmer, leaving the cafe to navigate the difficult balance between ecological responsibility and inclusive service.",
+    "wordCount": 484,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mandatory",
+        "lemma": "mandatory",
+        "glosses": {
+          "es": "required by law or rules",
+          "en": "required by law or rules"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vessel",
+        "lemma": "vessel",
+        "glosses": {
+          "es": "a container used for holding liquids",
+          "en": "a container used for holding liquids"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "transient",
+        "lemma": "transient",
+        "glosses": {
+          "es": "lasting only for a short time",
+          "en": "lasting only for a short time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "demographic",
+        "lemma": "demographic",
+        "glosses": {
+          "es": "a specific segment of the population",
+          "en": "a specific segment of the population"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stewardship",
+        "lemma": "stewardship",
+        "glosses": {
+          "es": "the responsible overseeing of something",
+          "en": "the responsible overseeing of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "simmer",
+        "lemma": "simmer",
+        "glosses": {
+          "es": "to remain in a state of suppressed tension",
+          "en": "to remain in a state of suppressed tension"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of this article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Waste policy conflicts."
+        },
+        {
+          "id": "a2",
+          "text": "The success of recycling."
+        },
+        {
+          "id": "a3",
+          "text": "Cafe management tips."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension between local environmental stewardship and the needs of a mobile population continues to simmer",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Julian refuse to buy coffee?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He had no cash."
+        },
+        {
+          "id": "a2",
+          "text": "He was leaving soon."
+        },
+        {
+          "id": "a3",
+          "text": "The cup was heavy."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He was only in the city for a few hours and planned to leave by train shortly after finishing his drink.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How do regular customers view the new policy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As an annoying waste."
+        },
+        {
+          "id": "a2",
+          "text": "As a way to save."
+        },
+        {
+          "id": "a3",
+          "text": "As a community effort."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "They view the cups as a sign of community commitment rather than a chore.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in mentioning the train station?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight a gap in the cafe's logistics."
+        },
+        {
+          "id": "a2",
+          "text": "To suggest a new location for a cafe branch."
+        },
+        {
+          "id": "a3",
+          "text": "To explain why Julian missed his departure."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "By failing to place a return bin at the train station, the cafe effectively penalized visitors for participating in a program they could not realistically complete.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best describes the author's tone toward the cafe's dilemma?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Biased and angry."
+        },
+        {
+          "id": "a2",
+          "text": "Balanced and analytical."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistic and cheerful."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The initiative, while noble in its environmental aim, inadvertently alienated a segment of the customer base.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'transient' mean in the context of the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A person who works at the cafe."
+        },
+        {
+          "id": "a2",
+          "text": "A local resident of the city."
+        },
+        {
+          "id": "a3",
+          "text": "Someone who stays for a brief period."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "long-term benefits of waste reduction outweigh the temporary inconvenience for transient customers.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short proposal (150 words) for Elena suggesting a compromise that could satisfy both local environmental goals and the needs of visiting customers.",
+      "en": "Write a short proposal (150 words) for Elena suggesting a compromise that could satisfy both local environmental goals and the needs of visiting customers."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the text to understand the logistical trade-offs of environmental initiatives in retail settings.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Cup Conundrum at The Silver Bean | B2 Reading | WeLearn",
+      "en": "The Cup Conundrum at The Silver Bean | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of how a local coffee shop's attempt to reduce waste created an unexpected social friction for its patrons.",
+      "en": "An exploration of how a local coffee shop's attempt to reduce waste created an unexpected social friction for its patrons."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

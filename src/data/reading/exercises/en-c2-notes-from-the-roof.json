@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-notes-from-the-roof",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Solar Schism at Verdant Heights",
+      "en": "The Solar Schism at Verdant Heights"
+    },
+    "intro": {
+      "es": "An email correspondence between a property owner and a long-term tenant regarding a contentious vote on rooftop solar infrastructure.",
+      "en": "An email correspondence between a property owner and a long-term tenant regarding a contentious vote on rooftop solar infrastructure."
+    },
+    "mission": {
+      "es": "Analyze the underlying socio-economic tensions embedded in the seemingly democratic process of building maintenance and energy transition.",
+      "en": "Analyze the underlying socio-economic tensions embedded in the seemingly democratic process of building maintenance and energy transition."
+    },
+    "targetText": "Subject: Urgent: Re-evaluating the Solar Array Proposal for the AGM\n\nDear Mr. Sterling,\n\nI trust this email finds you well. I am writing to you in your capacity as the representative of the tenant collective regarding the upcoming Annual General Meeting. As we approach the vote concerning the installation of the photovoltaic array on our rooftop, I feel compelled to address the growing discord within the building committee. While the discourse in the hallway has been framed as a simple matter of environmental stewardship, the reality is far more bifurcated. For those of us who hold the deeds to these units, this project represents a long-term capital investment, a strategic hedge against the volatility of energy markets, and a tangible enhancement of our asset value. Conversely, I recognize that for you and your fellow tenants, the horizon of risk is drastically different. The proposed special assessment fee, which would be levied to cover the initial installation costs, imposes an immediate liquidity burden on those who lack the equity buffer that ownership provides. I concede that the transition to sustainable energy is a moral imperative, yet I must emphasize that the fiscal implementation of such a transition cannot be decoupled from the disparate economic realities of our residents.\n\nMy primary concern, which I suspect is shared by many of the other owners, is the lack of a clear amortized repayment scheme that accounts for the transient nature of a rental contract. If the building proceeds with the installation, we are effectively asking tenants to subsidize a permanent improvement that will likely increase their own future rental premiums. It is a classic collective action problem: the owners reap the long-term dividends of reduced utility costs and increased property valuation, while the tenants bear the brunt of the upfront capital expenditure. I have proposed an alternative motion that would shift the financial burden of the upfront costs entirely onto the property owners, with a modest, gradual recovery plan integrated into the building’s reserve fund. This would decouple the installation from the immediate financial stability of our tenants, yet it has been met with skepticism by the more fiscally conservative members of the board who fear that such a move would set a precedent for future capital expenditure projects.\n\nI am acutely aware that your collective has already signaled an intent to vote in favor of the current proposal, ostensibly to demonstrate a commitment to the building’s green credentials. However, I urge you to consider the downstream implications of this decision. A vote for the current motion is, in effect, a vote for a reduction in your own disposable income for the remainder of your residency, without a commensurate guarantee of rent stabilization. The owners who are pushing for this are not necessarily malicious, but they are operating under a different temporal framework. They view this as a twenty-year horizon; you are viewing it through the lens of a two-year lease. By forcing this vote, we are not merely deciding on solar panels; we are deciding who bears the cost of the building’s modernization. The tension here is not between green energy and fossil fuels, but between those who possess the luxury of time and those who are tethered to the constraints of the present.\n\nI have spent the better part of the last week analyzing the projected energy savings against the proposed special assessment. Even under the most optimistic scenarios provided by the contractors, the break-even point for the average unit exceeds the typical duration of a tenant's stay by nearly double. This means that the majority of your cohort will effectively be paying for a utility upgrade that will benefit the next generation of occupants or the owners themselves. I have attempted to raise this point at the informal pre-vote caucus, but my concerns were dismissed as paternalistic. It is a curious irony that in our pursuit of a collective environmental good, we have managed to alienate the very people who stand to be most affected by the financial mechanics of the project. The board’s refusal to engage with the nuance of tenant-owner disparity is, in my view, a failure of governance that will inevitably lead to a fracturing of our community spirit.\n\nShould the vote pass in its current form, I fear we will see a significant turnover in our tenant population, as those who cannot absorb the assessment fee will be forced to vacate. This would be a regrettable outcome, as it would erode the social fabric of Verdant Heights. I am therefore asking you to reconsider your position. If you were to abstain or join me in requesting a deferment until a more equitable funding model is drafted, we might force the board to reconsider the current, regressive structure. I am prepared to leverage my voting block to ensure that any future proposal includes a tenant-protection clause, but I cannot do so effectively without your support. Please consider the gravity of this decision; once the vote is cast, the precedent will be set, and the financial burden will be locked into the building’s bylaws. I await your response with the hope that we can find a path forward that does not penalize the most vulnerable among us for the sake of a superficial environmental victory.",
+    "wordCount": 876,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bifurcated",
+        "lemma": "bifurcated",
+        "glosses": {
+          "es": "divided into two branches or parts",
+          "en": "divided into two branches or parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stewardship",
+        "lemma": "stewardship",
+        "glosses": {
+          "es": "the job of supervising or taking care of something",
+          "en": "the job of supervising or taking care of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amortized",
+        "lemma": "amortized",
+        "glosses": {
+          "es": "gradually written off or paid off over time",
+          "en": "gradually written off or paid off over time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paternalistic",
+        "lemma": "paternalistic",
+        "glosses": {
+          "es": "restricting the freedom or responsibilities of those subordinate to one's power",
+          "en": "restricting the freedom or responsibilities of those subordinate to one's power"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "caucus",
+        "lemma": "caucus",
+        "glosses": {
+          "es": "a meeting of members of a legislative body or group",
+          "en": "a meeting of members of a legislative body or group"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "regressive",
+        "lemma": "regressive",
+        "glosses": {
+          "es": "becoming less advanced or imposing a disproportionate burden on the poor",
+          "en": "becoming less advanced or imposing a disproportionate burden on the poor"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.8,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central conflict described in the email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A disagreement regarding the financial structure of a building project."
+        },
+        {
+          "id": "a2",
+          "text": "A fundamental disagreement regarding the implementation of sustainable energy infrastructure within the residential complex."
+        },
+        {
+          "id": "a3",
+          "text": "A significant ideological divide between the property management firm and the residents concerning the long-term maintenance of the building."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension here is not between green energy and fossil fuels, but between those who possess the luxury of time and those who are tethered to the constraints of the present.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does the author believe the current solar proposal is unfavorable for tenants?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It causes debt."
+        },
+        {
+          "id": "a2",
+          "text": "It is a short-term financial burden."
+        },
+        {
+          "id": "a3",
+          "text": "It lacks long-term sustainability benefits for the entire residential community."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The proposed special assessment fee, which would be levied to cover the initial installation costs, imposes an immediate liquidity burden on those who lack the equity buffer that ownership provides.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author imply about the motivations of the board members pushing for the vote?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They seek profit."
+        },
+        {
+          "id": "a2",
+          "text": "They want change."
+        },
+        {
+          "id": "a3",
+          "text": "They are blinded by a long-term perspective that ignores immediate tenant hardship."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The owners who are pushing for this are not necessarily malicious, but they are operating under a different temporal framework.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary objective in sending this email to Mr. Sterling?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To convince the tenant collective to change their voting stance."
+        },
+        {
+          "id": "a2",
+          "text": "To warn the tenants about the potential for future rent increases."
+        },
+        {
+          "id": "a3",
+          "text": "To express personal frustration with the building's management committee."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I am therefore asking you to reconsider your position. If you were to abstain or join me in requesting a deferment until a more equitable funding model is drafted, we might force the board to reconsider the current, regressive structure.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the tone of the author throughout the email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggressively confrontational and demanding."
+        },
+        {
+          "id": "a2",
+          "text": "Calculated, analytical, and diplomatically urgent."
+        },
+        {
+          "id": "a3",
+          "text": "Casual, friendly, and informal regarding the building's future."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I have spent the better part of the last week analyzing the projected energy savings against the proposed special assessment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what is the meaning of 'regressive'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A policy that moves the building back to older, less efficient energy sources."
+        },
+        {
+          "id": "a2",
+          "text": "A decision that results in a decrease in the overall value of the property."
+        },
+        {
+          "id": "a3",
+          "text": "A system that places a heavier relative burden on those with fewer financial resources."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "I am prepared to leverage my voting block to ensure that any future proposal includes a tenant-protection clause, but I cannot do so effectively without your support. Please consider the gravity of this decision; once the vote is cast, the precedent will be set, and the financial burden will be locked into the building’s bylaws.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a response from the perspective of Mr. Sterling, addressing the author's concerns while explaining why the tenant collective feels compelled to support the solar project despite the financial risks mentioned.",
+      "en": "Write a response from the perspective of Mr. Sterling, addressing the author's concerns while explaining why the tenant collective feels compelled to support the solar project despite the financial risks mentioned."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the underlying socio-economic tensions embedded in the seemingly democratic process of building maintenance and energy transition.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Solar Schism at Verdant Heights | C2 Reading | WeLearn",
+      "en": "The Solar Schism at Verdant Heights | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An email correspondence between a property owner and a long-term tenant regarding a contentious vote on rooftop solar infrastructure.",
+      "en": "An email correspondence between a property owner and a long-term tenant regarding a contentious vote on rooftop solar infrastructure."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

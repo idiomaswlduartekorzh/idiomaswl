@@ -377,7 +377,7 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
           </div>
         </header>
 
-        {advanced && <ReadingPilotDirectory links={pilotLinks} currentId={exercise.id} />}
+        {advanced && <ReadingPilotDirectory links={pilotLinks} currentLanguage={exercise.language} currentLevel={exercise.level.cefr} />}
 
         <ol className={`listen-steps ${styles.readingSteps}`} aria-label={copy.progress}>
           {copy.stages.map((label, index) => (

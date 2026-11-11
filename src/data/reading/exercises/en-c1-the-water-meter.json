@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-water-meter",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Metered Mirage: Transparency and the Hydrological Divide",
+      "en": "The Metered Mirage: Transparency and the Hydrological Divide"
+    },
+    "intro": {
+      "es": "An investigative look at how aggregated municipal water data obscures the socioeconomic reality of urban living in the district of Oakhaven.",
+      "en": "An investigative look at how aggregated municipal water data obscures the socioeconomic reality of urban living in the district of Oakhaven."
+    },
+    "mission": {
+      "es": "Analyze the text to identify the discrepancies between municipal reporting and individual household experiences, focusing on the implications for conservation policy.",
+      "en": "Analyze the text to identify the discrepancies between municipal reporting and individual household experiences, focusing on the implications for conservation policy."
+    },
+    "targetText": "The Oakhaven Municipal Council recently released its annual Water Stewardship Report, a document lauded by local officials as a triumph of conservationist transparency. According to the report, the average household in the district has reduced its daily consumption by a commendable margin, a trend attributed to the widespread adoption of low-flow fixtures and a newfound civic duty among residents. Councilwoman Elena Vance, the primary architect of the initiative, heralded these figures as proof that the 'Oakhaven Ethos'—a voluntary pledge to curb excess—is yielding tangible results. However, beneath the polished veneer of these statistics lies a structural anomaly that threatens to undermine the entire conservation strategy: the prevalence of non-individualized metering in the city's older, high-density residential blocks.\n\nIn the labyrinthine hallways of the Sterling Heights complex, a building housing over two hundred families, the reality is starkly different from the Council's narrative. Marcus Thorne, the building manager, spends his mornings not reading individual water meters, but monitoring a single, gargantuan master meter that logs the collective usage of the entire structure. Because the billing is distributed equally among all tenants regardless of individual habits, there is no financial incentive for residents to repair leaking faucets or shorten their showers. Thorne has repeatedly petitioned the Council for the installation of sub-meters, arguing that the current system fosters a 'tragedy of the commons' where the reckless consumption of a few is subsidized by the conservation efforts of the many. His requests, however, have been met with bureaucratic inertia, as the city maintains that the cost of retrofitting historic infrastructure is prohibitive.\n\nThis administrative deadlock creates a profound inequity. Residents in detached suburban homes, who benefit from individual meters and lower collective usage, receive rebates for their conservation efforts. Conversely, those living in shared-meter complexes like Sterling Heights are essentially paying a tax on their neighbors' inefficiency. When Thorne attempted to organize a building-wide 'Conservation Week' to encourage voluntary reductions, the lack of granular data meant he could not demonstrate any actual savings to the tenants. Without the ability to track progress, the initiative collapsed within days, leaving the residents disillusioned and the master meter spinning at its usual, unchecked velocity.\n\nCritics of the Council’s policy argue that the aggregated data is not merely a technical oversight but a convenient obfuscation. By averaging consumption across the entire district, the Council effectively masks the high usage of shared-meter buildings with the low usage of detached homes. This statistical smoothing allows the administration to claim success while ignoring the specific, localized failures that perpetuate waste. The tension between the Council’s optimistic public-facing metrics and the granular reality of urban infrastructure has created a growing divide in the community, where the concept of 'civic duty' is increasingly viewed as a tool for political posturing rather than genuine environmental stewardship.\n\nAs the next fiscal cycle approaches, the conflict between Thorne’s cohort and the Council shows no signs of resolution. The Council remains steadfast in its refusal to prioritize sub-metering, citing the need to focus on broader, city-wide infrastructure projects. Meanwhile, the master meter at Sterling Heights continues to record usage patterns that are fundamentally detached from the individual actions of the tenants it serves. The result is a stalled equilibrium: the city reports progress, the infrastructure remains stagnant, and the residents are left to navigate a system where their personal contributions to sustainability are rendered invisible by the very data designed to measure them.\n\nFurthermore, this persistent disparity risks fostering a deep-seated resentment that could ultimately dismantle the Oakhaven Ethos entirely. If a significant segment of the population perceives that their sacrifices are systematically ignored or unfairly penalized, the social contract underpinning these voluntary measures may dissolve. When citizens conclude that the municipal framework prioritizes statistical appearances over equitable participation, the motivation to engage in conservation will likely evaporate. This disillusionment threatens to replace the current culture of collective responsibility with a cynical disregard for resource management. Consequently, the Council’s reliance on aggregated data may prove to be a pyrrhic victory, preserving the appearance of progress while eroding the very public cooperation necessary for long-term sustainability.",
+    "wordCount": 679,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "lauded",
+        "lemma": "lauded",
+        "glosses": {
+          "es": "praised or acclaimed",
+          "en": "praised or acclaimed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "veneer",
+        "lemma": "veneer",
+        "glosses": {
+          "es": "a thin, often deceptive, outer layer",
+          "en": "a thin, often deceptive, outer layer"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "labyrinthine",
+        "lemma": "labyrinthine",
+        "glosses": {
+          "es": "complicated and confusing",
+          "en": "complicated and confusing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prohibitive",
+        "lemma": "prohibitive",
+        "glosses": {
+          "es": "so high as to prevent use or purchase",
+          "en": "so high as to prevent use or purchase"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obfuscation",
+        "lemma": "obfuscation",
+        "glosses": {
+          "es": "the act of making something unclear",
+          "en": "the act of making something unclear"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stagnant",
+        "lemma": "stagnant",
+        "glosses": {
+          "es": "showing no activity or growth",
+          "en": "showing no activity or growth"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.1,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict described in the passage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The discrepancy between municipal data and the reality of shared metering."
+        },
+        {
+          "id": "a2",
+          "text": "The ongoing legal dispute regarding the implementation of mandatory utility taxes for all high-density residential zones."
+        },
+        {
+          "id": "a3",
+          "text": "The fundamental disagreement between environmental policy makers and the city council concerning the future of water management."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "However, beneath the polished veneer of these statistics lies a structural anomaly that threatens to undermine the entire conservation strategy: the prevalence of non-individualized metering in the city's older, high-density residential blocks.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Marcus Thorne’s 'Conservation Week' fail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Tenants were indifferent."
+        },
+        {
+          "id": "a2",
+          "text": "The lack of granular data made progress invisible."
+        },
+        {
+          "id": "a3",
+          "text": "The logistical requirements for the event were far too complex to manage within a single week."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "When Thorne attempted to organize a building-wide 'Conservation Week' to encourage voluntary reductions, the lack of granular data meant he could not demonstrate any actual savings to the tenants.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author suggest about the Council’s motivation for using aggregated data?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To save money."
+        },
+        {
+          "id": "a2",
+          "text": "To help staff."
+        },
+        {
+          "id": "a3",
+          "text": "They use it to hide failures and claim success."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "This statistical smoothing allows the administration to claim success while ignoring the specific, localized failures that perpetuate waste.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary purpose in highlighting the situation at Sterling Heights?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate how systemic infrastructure issues contradict official conservation narratives."
+        },
+        {
+          "id": "a2",
+          "text": "To argue that Sterling Heights should be the primary model for all future municipal water conservation programs across the state."
+        },
+        {
+          "id": "a3",
+          "text": "To demonstrate that private property owners are solely responsible for the current state of decay found within urban water systems."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension between the Council’s optimistic public-facing metrics and the granular reality of urban infrastructure has created a growing divide in the community",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would one characterize the tone of the passage regarding the Council’s stewardship report?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical and critical."
+        },
+        {
+          "id": "a3",
+          "text": "Detached and purely objective in its presentation of the municipal data."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the concept of 'civic duty' is increasingly viewed as a tool for political posturing rather than genuine environmental stewardship.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does the term 'prohibitive' imply regarding the cost of retrofitting?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is a minor expense."
+        },
+        {
+          "id": "a2",
+          "text": "It is a variable cost."
+        },
+        {
+          "id": "a3",
+          "text": "The cost is excessively high, preventing the implementation of sub-meters."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "His requests, however, have been met with bureaucratic inertia, as the city maintains that the cost of retrofitting historic infrastructure is prohibitive.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word persuasive letter from the perspective of a resident of Sterling Heights to the Oakhaven Municipal Council, demanding a change in how water usage is measured and billed for high-density buildings.",
+      "en": "Write a 200-word persuasive letter from the perspective of a resident of Sterling Heights to the Oakhaven Municipal Council, demanding a change in how water usage is measured and billed for high-density buildings."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the text to identify the discrepancies between municipal reporting and individual household experiences, focusing on the implications for conservation policy.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Metered Mirage: Transparency and the Hydrological Divide | C1 Reading | WeLearn",
+      "en": "The Metered Mirage: Transparency and the Hydrological Divide | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An investigative look at how aggregated municipal water data obscures the socioeconomic reality of urban living in the district of Oakhaven.",
+      "en": "An investigative look at how aggregated municipal water data obscures the socioeconomic reality of urban living in the district of Oakhaven."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

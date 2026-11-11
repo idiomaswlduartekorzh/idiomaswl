@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-new-crossing",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Scontro sulla Via dei Cedri: Sicurezza contro Fluidità",
+      "en": "Scontro sulla Via dei Cedri: Sicurezza contro Fluidità"
+    },
+    "intro": {
+      "es": "Un articolo che analizza le tensioni tra i residenti del quartiere e gli automobilisti riguardo alla nuova segnaletica stradale.",
+      "en": "Un articolo che analizza le tensioni tra i residenti del quartiere e gli automobilisti riguardo alla nuova segnaletica stradale."
+    },
+    "mission": {
+      "es": "Leggi il testo e rispondi alle domande per comprendere le diverse prospettive sulla gestione del traffico urbano.",
+      "en": "Leggi il testo e rispondi alle domande per comprendere le diverse prospettive sulla gestione del traffico urbano."
+    },
+    "targetText": "La quieta Via dei Cedri, arteria principale che costeggia la clinica Villa Serena, è diventata teatro di una disputa accesa. Da mesi, il comitato dei residenti, guidato da Elena Valli, premeva per l'installazione di un attraversamento pedonale rialzato, citando il pericolo costante per gli anziani che si recano alle visite mediche. La richiesta, inizialmente ignorata, ha trovato accoglimento dopo che alcuni episodi di frenate brusche hanno allarmato il vicinato. L'amministrazione comunale ha dunque avviato un periodo di prova di trenta giorni, installando dossi e segnaletica luminosa, una decisione che ha sollevato un polverone tra i pendolari che utilizzano la via come collegamento rapido verso il centro.\n\nIl conflitto è esploso durante l'ora di punta. I commercianti della zona hanno segnalato un calo nei rifornimenti mattutini, poiché i camion di consegna si trovano bloccati nel traffico causato dal rallentamento forzato. Marco Rinaldi, portavoce degli autotrasportatori, sostiene che la soluzione sia inefficace: 'Non si proteggono i pedoni rallentando l'intera città, si crea solo frustrazione e inquinamento da soste prolungate'. Le sue parole riflettono il malumore di chi vede nella viabilità un diritto alla fluidità, contrapposto alla sicurezza dei più fragili.\n\nNonostante le rimostranze, i dati raccolti durante la sperimentazione offrono una lettura ambivalente. Se da un lato il tempo di percorrenza medio è aumentato di quasi quattro minuti, dall'altro la velocità dei veicoli è scesa drasticamente, eliminando il rischio di incidenti gravi. Elena Valli difende i risultati, sottolineando che la vita di un cittadino non può essere misurata in minuti di attesa. Tuttavia, la tensione rimane palpabile: gli automobilisti percepiscono il dosso come una barriera arbitraria, mentre i residenti vedono in esso l'unica difesa contro l'arroganza della velocità.\n\nIl consiglio comunale si trova ora di fronte a un bivio. La proposta di mantenere il dosso in modo permanente ha spaccato l'opinione pubblica. Alcuni consiglieri suggeriscono una soluzione di compromesso: un semaforo a chiamata, che garantirebbe il passaggio pedonale senza bloccare costantemente il flusso dei veicoli. Tuttavia, questa opzione richiede investimenti che il bilancio attuale non può coprire, lasciando la questione in un limbo burocratico.\n\nLa vicenda si è conclusa con una sospensione temporanea del provvedimento, in attesa di ulteriori studi tecnici. La Via dei Cedri è tornata alla sua conformazione originale, ma la calma è solo apparente. Le due fazioni continuano a monitorare la strada, pronte a riaccendere la protesta al primo segnale di pericolo o di ingorgo. La questione solleva un interrogativo profondo: quanto siamo disposti a sacrificare della nostra comodità quotidiana per garantire uno spazio pubblico condiviso e sicuro per tutti?",
+    "wordCount": 421,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "arteria",
+        "lemma": "arteria",
+        "glosses": {
+          "es": "main road",
+          "en": "main road"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "polverone",
+        "lemma": "polverone",
+        "glosses": {
+          "es": "uproar or controversy",
+          "en": "uproar or controversy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pendolari",
+        "lemma": "pendolari",
+        "glosses": {
+          "es": "commuters",
+          "en": "commuters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ambivalente",
+        "lemma": "ambivalente",
+        "glosses": {
+          "es": "having mixed or contradictory feelings",
+          "en": "having mixed or contradictory feelings"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "limbo",
+        "lemma": "limbo",
+        "glosses": {
+          "es": "uncertain or intermediate state",
+          "en": "uncertain or intermediate state"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conformazione",
+        "lemma": "conformazione",
+        "glosses": {
+          "es": "structure or layout",
+          "en": "structure or layout"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:59:45.480Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione del traffico."
+        },
+        {
+          "id": "a2",
+          "text": "La ristrutturazione edilizia della clinica privata"
+        },
+        {
+          "id": "a3",
+          "text": "La pianificazione urbanistica dell'intero quartiere"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La quieta Via dei Cedri, arteria principale che costeggia la clinica Villa Serena, è diventata teatro di una disputa accesa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa ha causato il malcontento dei commercianti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La crisi"
+        },
+        {
+          "id": "a2",
+          "text": "Il ritardo dei camion."
+        },
+        {
+          "id": "a3",
+          "text": "L'aumento dei costi per le licenze commerciali"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I commercianti della zona hanno segnalato un calo nei rifornimenti mattutini, poiché i camion di consegna si trovano bloccati nel traffico",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché la soluzione del semaforo non è stata adottata?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il guasto"
+        },
+        {
+          "id": "a2",
+          "text": "L'errore"
+        },
+        {
+          "id": "a3",
+          "text": "Mancanza di fondi."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Tuttavia, questa opzione richiede investimenti che il bilancio attuale non può coprire",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale dell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Analizzare un conflitto sociale."
+        },
+        {
+          "id": "a2",
+          "text": "Denunciare l'inadeguatezza delle infrastrutture stradali esistenti"
+        },
+        {
+          "id": "a3",
+          "text": "Descrivere dettagliatamente le abitudini quotidiane dei residenti locali"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La questione solleva un interrogativo profondo: quanto siamo disposti a sacrificare della nostra comodità quotidiana per garantire uno spazio pubblico condiviso e sicuro per tutti?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono dell'autore nel descrivere la situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critico"
+        },
+        {
+          "id": "a2",
+          "text": "Equilibrato e riflessivo."
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta e propositivo verso le nuove direttive comunali"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Nonostante le rimostranze, i dati raccolti durante la sperimentazione offrono una lettura ambivalente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa si intende con il termine 'pendolari'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Turisti"
+        },
+        {
+          "id": "a2",
+          "text": "Agenti"
+        },
+        {
+          "id": "a3",
+          "text": "Coloro che viaggiano ogni giorno per lavoro."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "una decisione che ha sollevato un polverone tra i pendolari che utilizzano la via come collegamento rapido verso il centro.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve paragrafo (100-150 parole) in cui proponi una soluzione alternativa per risolvere il conflitto tra residenti e automobilisti, giustificando la tua scelta.",
+      "en": "Scrivi un breve paragrafo (100-150 parole) in cui proponi una soluzione alternativa per risolvere il conflitto tra residenti e automobilisti, giustificando la tua scelta."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leggi il testo e rispondi alle domande per comprendere le diverse prospettive sulla gestione del traffico urbano.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:59:45.480Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Scontro sulla Via dei Cedri: Sicurezza contro Fluidità | B2 Reading | WeLearn",
+      "en": "Scontro sulla Via dei Cedri: Sicurezza contro Fluidità | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un articolo che analizza le tensioni tra i residenti del quartiere e gli automobilisti riguardo alla nuova segnaletica stradale.",
+      "en": "Un articolo che analizza le tensioni tra i residenti del quartiere e gli automobilisti riguardo alla nuova segnaletica stradale."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:59:45.480Z"
+  }
+}

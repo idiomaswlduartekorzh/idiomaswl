@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Harvest Debt",
+      "en": "The Harvest Debt"
+    },
+    "intro": {
+      "es": "In the arid valley of Oakhaven, the local seed library faces a crisis when a severe drought prevents farmers from returning the seeds they borrowed.",
+      "en": "In the arid valley of Oakhaven, the local seed library faces a crisis when a severe drought prevents farmers from returning the seeds they borrowed."
+    },
+    "mission": {
+      "es": "To analyze the ethical dilemma of community resource management during environmental hardship.",
+      "en": "To analyze the ethical dilemma of community resource management during environmental hardship."
+    },
+    "targetText": "The Oakhaven Seed Library occupied a single, sun-bleached room in the community center, housing hundreds of glass jars filled with heirloom beans, tomatoes, and hardy greens. Unlike a traditional library, its currency was biological; borrowers took seeds in spring and were expected to return a portion of their harvest in autumn to replenish the stock. For years, this cycle sustained the valley, fostering a resilient network of local agriculture. However, this season, the sky remained stubbornly clear, and the relentless heat withered the crops before they could reach maturity. By late September, the shelves were nearly empty, and the return bins remained frustratingly hollow.\n\nElias, the library’s founder, gathered the volunteers on a Tuesday evening to address the deficit. The tension was palpable. Among the group was Sarah, a pragmatic farmer who had lost half her yield, and Julian, a newcomer who believed in strict adherence to the library’s bylaws. The conflict centered on a proposed 'drought amnesty' policy. Sarah argued that forcing farmers to return seeds they did not possess would bankrupt the community’s trust, effectively ending the project. She proposed that the library waive the return requirement for those who could prove crop failure, allowing them to borrow again next year.\n\nJulian, however, remained skeptical. He contended that the library’s integrity relied on the reciprocity of its members. If they suspended the rules, he feared the project would devolve into a charity rather than a sustainable system. He suggested a tiered penalty system, where those unable to return seeds would be placed on a waiting list, prioritizing those who had successfully harvested. The room fell silent as the volunteers weighed the necessity of survival against the preservation of their shared rules. It was a classic clash between communal compassion and institutional durability.\n\nAs the debate deepened, the limitations of their mandate became apparent. The library was designed for abundance, not for a climate-shifted reality. Elias watched the clock, realizing that a decision had to be made before the first frost. He conceded that while the rules provided a necessary framework, they were ultimately servants to the community's survival. Yet, he also acknowledged Julian’s concern; without a standard of accountability, the library risked losing its purpose entirely. The volunteers were stuck between the rock of rigid policy and the hard place of regional collapse.\n\nIn the end, they reached a fragile compromise: a 'partial return' mandate. Borrowers would be required to return only ten percent of their original loan, regardless of their total yield, to maintain active status. It was an imperfect solution, leaving many farmers still struggling and others feeling the rules had been diluted. As the meeting adjourned, the air outside was cool and biting, a reminder that the winter would be long. The library survived the night, but the underlying tension remained, leaving the future of Oakhaven’s seeds as uncertain as the next year’s rainfall.",
+    "wordCount": 479,
+    "estimatedMinutes": 8,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "replenish",
+        "lemma": "replenish",
+        "glosses": {
+          "es": "to fill something up again",
+          "en": "to fill something up again"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to seem almost tangible",
+          "en": "so intense as to seem almost tangible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reciprocity",
+        "lemma": "reciprocity",
+        "glosses": {
+          "es": "the practice of exchanging things for mutual benefit",
+          "en": "the practice of exchanging things for mutual benefit"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "devolve",
+        "lemma": "devolve",
+        "glosses": {
+          "es": "to degenerate or transition into a lower state",
+          "en": "to degenerate or transition into a lower state"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mandate",
+        "lemma": "mandate",
+        "glosses": {
+          "es": "an official order or requirement",
+          "en": "an official order or requirement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "adjourned",
+        "lemma": "adjourned",
+        "glosses": {
+          "es": "to break off a meeting with the intention of resuming later",
+          "en": "to break off a meeting with the intention of resuming later"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 17.1,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the narrative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle to maintain institutional rules during a crisis."
+        },
+        {
+          "id": "a2",
+          "text": "The impact of climate change on community ethics."
+        },
+        {
+          "id": "a3",
+          "text": "The historical evolution of seed saving techniques."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "It was a classic clash between communal compassion and institutional durability.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What did Julian propose as a solution?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A total amnesty for all farmers."
+        },
+        {
+          "id": "a2",
+          "text": "A tiered penalty system."
+        },
+        {
+          "id": "a3",
+          "text": "Closing the library for the winter."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He suggested a tiered penalty system, where those unable to return seeds would be placed on a waiting list",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why was the library's future considered uncertain at the end?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The library had no seeds left to lend."
+        },
+        {
+          "id": "a2",
+          "text": "The volunteers decided to resign."
+        },
+        {
+          "id": "a3",
+          "text": "The compromise satisfied no one completely."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It was an imperfect solution, leaving many farmers still struggling and others feeling the rules had been diluted.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention the weather at the end of the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the ongoing environmental threat."
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the physical discomfort of the volunteers."
+        },
+        {
+          "id": "a3",
+          "text": "To signal that the planting season had finally arrived."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "As the meeting adjourned, the air outside was cool and biting, a reminder that the winter would be long.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What is the author's tone toward the library's dilemma?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Highly critical and biased."
+        },
+        {
+          "id": "a2",
+          "text": "Objective and analytical."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistic and celebratory."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elias watched the clock, realizing that a decision had to be made before the first frost.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word 'replenish' mean in this context?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To destroy the original contents."
+        },
+        {
+          "id": "a2",
+          "text": "To replace the old stock with new varieties."
+        },
+        {
+          "id": "a3",
+          "text": "To make full again."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "borrowers took seeds in spring and were expected to return a portion of their harvest in autumn to replenish the stock.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short paragraph arguing whether the library should prioritize the needs of individual farmers or the long-term survival of the seed collection during a natural disaster.",
+      "en": "Write a short paragraph arguing whether the library should prioritize the needs of individual farmers or the long-term survival of the seed collection during a natural disaster."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "To analyze the ethical dilemma of community resource management during environmental hardship.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Harvest Debt | B2 Reading | WeLearn",
+      "en": "The Harvest Debt | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In the arid valley of Oakhaven, the local seed library faces a crisis when a severe drought prevents farmers from returning the seeds they borrowed.",
+      "en": "In the arid valley of Oakhaven, the local seed library faces a crisis when a severe drought prevents farmers from returning the seeds they borrowed."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

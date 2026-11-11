@@ -32,17 +32,23 @@ for (const file of files) {
   }
 }
 
-// El piloto B2–C2 tiene su propio contrato. Las 24 fichas siguen siendo borradores y
-// ninguna puede entrar al catálogo público sin revisión humana documentada.
+// B2–C2 conserva las fichas existentes mientras se amplía el catálogo. La cantidad
+// exigida para lanzamiento se comprueba por separado con check:reading-advanced-scale.
 const advanced = exercises.filter(({ exercise }) => exercise.schemaVersion === '1.2.0')
 if (advanced.length) {
   const expected = ['en', 'fr', 'it', 'de', 'ru', 'ja', 'ko', 'pt'].flatMap((language) =>
     ['B2', 'C1', 'C2'].map((cefr) => `${language}/${cefr}`))
   const keys = advanced.map(({ exercise }) => `${exercise.language}/${exercise.level.cefr}`)
   for (const key of expected) {
-    if (keys.filter((value) => value === key).length !== 1) {
+    if (!keys.includes(key)) {
       failed = true
-      console.error(`✗ piloto avanzado: se exige exactamente una lectura ${key}`)
+      console.error(`✗ lectura avanzada: falta al menos una lectura ${key}`)
+    }
+    const group = advanced.filter(({ exercise }) => `${exercise.language}/${exercise.level.cefr}` === key)
+    const published = group.filter(({ exercise }) => exercise.status === 'published').length
+    if (published > 0 && published < 20) {
+      failed = true
+      console.error(`✗ lectura avanzada ${key}: ${published}/20 publicadas; el nivel no se publica parcialmente`)
     }
   }
   for (const { file, exercise } of advanced) {
@@ -64,7 +70,7 @@ if (advanced.length) {
       if (position >= 0 && position < 3) answerPositions[position]++
     }
     if (answerPositions.some((count) => count !== 2)) errors.push(`sesgo de posición: ${answerPositions.join('/')}; se exige 2/2/2`)
-    if (exercise.status !== 'draft' || exercise.seo.indexable || exercise.leveling.independentAssessment.passed) errors.push('el piloto debe quedar como borrador sin evaluación independiente aprobada')
+    if (exercise.status === 'draft' && (exercise.seo.indexable || exercise.leveling.independentAssessment.passed)) errors.push('el borrador no puede ser indexable ni tener evaluación independiente aprobada')
     if (errors.length) {
       failed = true
       console.error(`✗ ${file}: ${errors.join('; ')}`)

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-shared-desks",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Optimization of Our Collaborative Ecosystem",
+      "en": "The Optimization of Our Collaborative Ecosystem"
+    },
+    "intro": {
+      "es": "An internal email from a corporate regional director regarding the transition to a hybrid-remote model.",
+      "en": "An internal email from a corporate regional director regarding the transition to a hybrid-remote model."
+    },
+    "mission": {
+      "es": "Analyze the rhetorical strategies used to shift operational costs onto employees while framing it as a benefit.",
+      "en": "Analyze the rhetorical strategies used to shift operational costs onto employees while framing it as a benefit."
+    },
+    "targetText": "Subject: Embracing the Future: Our Evolving Workspace Strategy. Dear Team, as we navigate the complexities of our post-transition operations, I am writing to share our vision for the next phase of our collaborative ecosystem. Over the past year, we have observed a remarkable resilience in our collective output. It has become increasingly clear that the traditional office is no longer the sole crucible of productivity. In light of this, we are officially sunsetting our long-term lease at the Meridian Plaza facility. This decision is not merely a cost-saving measure; it is a strategic pivot toward a model that prioritizes individual autonomy and the freedom to cultivate a workspace that reflects your personal professional identity. We recognize that this shift requires a new approach to our logistical infrastructure. Consequently, we are formalizing our 'Home-Base Empowerment' initiative. This program is designed to vest you with the agency to curate your own environment, ensuring that your surroundings are perfectly tailored to your unique workflow. While the company will continue to provide core hardware—laptops and encrypted access tokens—we are transitioning the responsibility for ambient workspace maintenance, including high-speed connectivity, ergonomic furniture, and climate control, to the individual. We believe this decentralization of resources will foster a sense of ownership that was previously unattainable within the rigid confines of a centralized office. We understand that this transition may necessitate a recalibration of your personal budgets. To facilitate this, we have partnered with a third-party vendor to offer discounted rates on office supplies and ergonomic equipment. This adjustment is a testament to our trust in your ability to manage your professional needs with the same professional rigor you apply to your client deliverables. By removing the physical barriers of a commute and the institutional constraints of a shared office, we are effectively gifting you the most valuable commodity: time. We anticipate that this shift will lead to a more harmonious integration of your professional and personal lives. However, we also acknowledge that the loss of a physical hub may be felt by those who rely on the office for social cohesion. To mitigate this, we are introducing a monthly stipend for off-site coworking memberships, provided that the chosen location meets our security compliance standards. The stipend will be capped at a level that encourages mindful usage rather than habitual reliance. Please review the updated employee handbook addendum attached to this email. It outlines the specific expectations regarding your home-office security protocols and the mandatory check-in procedures that will replace our daily in-person stand-ups. We are confident that this evolution will empower every member of our team to operate with greater efficiency and autonomy. Thank you for your continued dedication to our shared success as we embark on this exciting, albeit unconventional, chapter of our organizational journey. Best regards, Marcus Thorne, Regional Director.\n\nWhile this decentralized model promises unparalleled flexibility, we must remain cognizant of the potential erosion of our corporate culture. The physical office served as a spontaneous laboratory for innovation, where serendipitous hallway conversations frequently sparked breakthroughs that structured digital meetings struggle to replicate. By removing the shared environment, we risk creating isolated silos of productivity that, while individually efficient, may lack the collective creative friction necessary for long-term strategic evolution. Furthermore, the blurring of boundaries between domestic sanctuary and professional duty can inadvertently lead to an 'always-on' culture, where the absence of a physical departure from the workplace complicates the essential psychological detachment required for sustained well-being. We must therefore be intentional in our virtual interactions, ensuring that our digital communication channels are not merely transactional conduits for task management, but vibrant spaces for the mentorship and peer-to-peer engagement that define our professional identity. It is imperative that we actively cultivate these intangible connections to prevent the fragmentation of our team spirit. As we embrace this autonomy, our challenge is to prove that our cohesion is anchored in our shared purpose and values rather than the proximity of our desks. We are committed to evolving our collaborative rituals to ensure that distance does not diminish our collective impact.",
+    "wordCount": 674,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "crucible",
+        "lemma": "crucible",
+        "glosses": {
+          "es": "a situation of severe trial or a place where different elements interact to produce something new",
+          "en": "a situation of severe trial or a place where different elements interact to produce something new"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sunsetting",
+        "lemma": "sunsetting",
+        "glosses": {
+          "es": "the planned discontinuation of a project or service",
+          "en": "the planned discontinuation of a project or service"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vest",
+        "lemma": "vest",
+        "glosses": {
+          "es": "to confer or bestow power or authority upon someone",
+          "en": "to confer or bestow power or authority upon someone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ambient",
+        "lemma": "ambient",
+        "glosses": {
+          "es": "relating to the immediate surroundings of something",
+          "en": "relating to the immediate surroundings of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "recalibration",
+        "lemma": "recalibration",
+        "glosses": {
+          "es": "the process of adjusting something to a new standard or state",
+          "en": "the process of adjusting something to a new standard or state"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cohesion",
+        "lemma": "cohesion",
+        "glosses": {
+          "es": "the action or fact of forming a united whole",
+          "en": "the action or fact of forming a united whole"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary objective of Marcus Thorne's communication?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To justify the closure of the office while offloading costs."
+        },
+        {
+          "id": "a2",
+          "text": "To formally announce a permanent shift to a fully remote work model for all departments."
+        },
+        {
+          "id": "a3",
+          "text": "To invite staff members to provide detailed feedback regarding the new office policy changes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "we are officially sunsetting our long-term lease at the Meridian Plaza facility. This decision is not merely a cost-saving measure; it is a strategic pivot",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What specific items will the company continue to provide under the new policy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Laptops."
+        },
+        {
+          "id": "a2",
+          "text": "Laptops and encrypted access tokens."
+        },
+        {
+          "id": "a3",
+          "text": "Ergonomic furniture, high-speed internet, and encrypted access tokens for remote security."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the company will continue to provide core hardware—laptops and encrypted access tokens",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does the management perceive the change in office maintenance responsibilities?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a loss."
+        },
+        {
+          "id": "a2",
+          "text": "As a shift."
+        },
+        {
+          "id": "a3",
+          "text": "As an opportunity for employees to gain autonomy."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "We believe this decentralization of resources will foster a sense of ownership that was previously unattainable within the rigid confines of a centralized office.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the director mention the third-party vendor partnership?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To provide a solution for the costs employees must now bear."
+        },
+        {
+          "id": "a2",
+          "text": "To ensure that all employees buy the same brand of furniture."
+        },
+        {
+          "id": "a3",
+          "text": "To prove that the company is still investing in employee comfort."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "To facilitate this, we have partnered with a third-party vendor to offer discounted rates on office supplies and ergonomic equipment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best describes the tone of the email?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Apologetic and transparent."
+        },
+        {
+          "id": "a2",
+          "text": "Formal and manipulative."
+        },
+        {
+          "id": "a3",
+          "text": "Casual and encouraging."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "By removing the physical barriers of a commute and the institutional constraints of a shared office, we are effectively gifting you the most valuable commodity: time.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'recalibration' imply?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A loss."
+        },
+        {
+          "id": "a2",
+          "text": "A plan."
+        },
+        {
+          "id": "a3",
+          "text": "A necessary adjustment to one's personal spending."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "We understand that this transition may necessitate a recalibration of your personal budgets.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response from an employee to Marcus Thorne that addresses the financial implications of the 'Home-Base Empowerment' initiative while maintaining a professional tone.",
+      "en": "Write a 200-word response from an employee to Marcus Thorne that addresses the financial implications of the 'Home-Base Empowerment' initiative while maintaining a professional tone."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the rhetorical strategies used to shift operational costs onto employees while framing it as a benefit.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Optimization of Our Collaborative Ecosystem | C1 Reading | WeLearn",
+      "en": "The Optimization of Our Collaborative Ecosystem | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An internal email from a corporate regional director regarding the transition to a hybrid-remote model.",
+      "en": "An internal email from a corporate regional director regarding the transition to a hybrid-remote model."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-water-meter",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La ville connectée face à la fuite invisible",
+      "en": "La ville connectée face à la fuite invisible"
+    },
+    "intro": {
+      "es": "Un article d'analyse sur l'installation de compteurs d'eau intelligents dans le quartier résidentiel de Val-des-Pins et les tensions sociales qui en découlent.",
+      "en": "Un article d'analyse sur l'installation de compteurs d'eau intelligents dans le quartier résidentiel de Val-des-Pins et les tensions sociales qui en découlent."
+    },
+    "mission": {
+      "es": "Lisez attentivement le texte pour comprendre les enjeux techniques et humains liés à la modernisation urbaine, puis répondez aux questions de compréhension.",
+      "en": "Lisez attentivement le texte pour comprendre les enjeux techniques et humains liés à la modernisation urbaine, puis répondez aux questions de compréhension."
+    },
+    "targetText": "À Val-des-Pins, la municipalité a récemment déployé des compteurs d'eau communicants, promettant une gestion optimisée des ressources. Pour Mme Lefebvre, gestionnaire du parc immobilier, l'outil est une révolution : elle reçoit désormais des alertes en temps réel sur son tableau de bord dès qu'une anomalie de débit est détectée. Le système, capable de distinguer une consommation normale d'une fuite persistante, a permis de repérer en quelques heures une rupture de canalisation dans les sous-sols du bâtiment « Les Glycines ». Pourtant, cette prouesse technologique a rapidement révélé une fracture sociale au sein de la copropriété.\n\nLe conflit a éclaté lorsque M. Durand, locataire au troisième étage, a reçu une notification automatisée l'informant d'une surconsommation majeure liée à son logement. Or, après vérification par un plombier indépendant, il s'avère que la fuite provient de colonnes montantes vétustes situées dans les parties communes, hors de portée de son intervention. Malgré l'efficacité du capteur, M. Durand se retrouve injustement pointé du doigt par le système de gestion. Il refuse désormais de payer les frais de réparation, arguant que la technologie ne fait que déplacer la responsabilité vers les résidents au lieu de résoudre les carences structurelles du bâti.\n\nLa situation illustre une tension croissante entre l'innovation numérique et la réalité matérielle des infrastructures anciennes. Si les compteurs intelligents offrent une précision chirurgicale pour détecter les pertes, ils ne possèdent aucune intelligence contextuelle. Ils signalent un problème sans en identifier la cause profonde, transformant les données brutes en outils de pression administrative. Pour les propriétaires, le gain de temps est indéniable, mais pour les locataires, la transparence accrue devient une source d'anxiété, car ils sont tenus pour responsables de défaillances qu'ils ne peuvent matériellement pas corriger.\n\nLe conseil municipal soutient que la modernisation est indispensable pour atteindre les objectifs de sobriété hydrique. Toutefois, cette approche descendante néglige le besoin de rénovations lourdes dans les immeubles du siècle dernier. Mme Lefebvre, coincée entre les exigences de la mairie et la grogne des occupants, propose désormais une médiation. Elle demande que les données collectées soient systématiquement couplées à une inspection technique avant toute facturation, afin d'éviter que la technologie ne serve de bouclier aux négligences des propriétaires.\n\nL'affaire de Val-des-Pins reste aujourd'hui sans issue juridique claire. Le compteur, bien qu'utile, a mis en lumière l'incapacité de la ville à harmoniser ses ambitions écologiques avec la vétusté du parc immobilier. Alors que la municipalité envisage d'étendre le dispositif à d'autres quartiers, le débat sur la justice algorithmique ne fait que commencer. La technologie a transformé une fuite d'eau en une fuite de confiance, prouvant que la gestion des ressources ne peut se limiter à une simple lecture de chiffres, aussi précise soit-elle.",
+    "wordCount": 445,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "déployé",
+        "lemma": "déployé",
+        "glosses": {
+          "es": "installed or rolled out",
+          "en": "installed or rolled out"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vétustes",
+        "lemma": "vétustes",
+        "glosses": {
+          "es": "dilapidated or old",
+          "en": "dilapidated or old"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "carences",
+        "lemma": "carences",
+        "glosses": {
+          "es": "deficiencies or lacks",
+          "en": "deficiencies or lacks"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sobriété",
+        "lemma": "sobriété",
+        "glosses": {
+          "es": "restraint or temperance",
+          "en": "restraint or temperance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "grogne",
+        "lemma": "grogne",
+        "glosses": {
+          "es": "grumbling or discontent",
+          "en": "grumbling or discontent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "harmoniser",
+        "lemma": "harmoniser",
+        "glosses": {
+          "es": "to bring into agreement",
+          "en": "to bring into agreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 20.2,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit social lié à la technologie."
+        },
+        {
+          "id": "a2",
+          "text": "L'optimisation énergétique des compteurs communicants."
+        },
+        {
+          "id": "a3",
+          "text": "La procédure administrative de rénovation des vieux bâtiments."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Pourtant, cette prouesse technologique a rapidement révélé une fracture sociale au sein de la copropriété.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi M. Durand conteste-t-il les frais ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le montant est excessif."
+        },
+        {
+          "id": "a2",
+          "text": "La fuite est dans les parties communes."
+        },
+        {
+          "id": "a3",
+          "text": "La fuite est située dans ses parties privatives."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "il s'avère que la fuite provient de colonnes montantes vétustes situées dans les parties communes, hors de portée de son intervention.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la limite des compteurs intelligents ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le prix."
+        },
+        {
+          "id": "a2",
+          "text": "La panne."
+        },
+        {
+          "id": "a3",
+          "text": "Ils manquent de contexte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Si les compteurs intelligents offrent une précision chirurgicale pour détecter les pertes, ils ne possèdent aucune intelligence contextuelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Pourquoi Mme Lefebvre propose-t-elle une médiation ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour éviter des erreurs de facturation injustes."
+        },
+        {
+          "id": "a2",
+          "text": "Pour protéger les intérêts financiers de la mairie."
+        },
+        {
+          "id": "a3",
+          "text": "Pour forcer les locataires à réparer les tuyaux."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elle demande que les données collectées soient systématiquement couplées à une inspection technique avant toute facturation, afin d'éviter que la technologie ne serve de bouclier aux négligences des propriétaires.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton de l'auteur à la fin du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste."
+        },
+        {
+          "id": "a2",
+          "text": "Critique."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La technologie a transformé une fuite d'eau en une fuite de confiance, prouvant que la gestion des ressources ne peut se limiter à une simple lecture de chiffres, aussi précise soit-elle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'vétustes' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neuf."
+        },
+        {
+          "id": "a2",
+          "text": "Utile."
+        },
+        {
+          "id": "a3",
+          "text": "Très anciennes et abîmées."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "il s'avère que la fuite provient de colonnes montantes vétustes situées dans les parties communes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif (80-100 mots) expliquant si, selon vous, les avantages environnementaux de la technologie justifient les problèmes sociaux qu'elle engendre dans ce cas précis.",
+      "en": "Rédigez un court paragraphe argumentatif (80-100 mots) expliquant si, selon vous, les avantages environnementaux de la technologie justifient les problèmes sociaux qu'elle engendre dans ce cas précis."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Lisez attentivement le texte pour comprendre les enjeux techniques et humains liés à la modernisation urbaine, puis répondez aux questions de compréhension.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La ville connectée face à la fuite invisible | B2 Reading | WeLearn",
+      "en": "La ville connectée face à la fuite invisible | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un article d'analyse sur l'installation de compteurs d'eau intelligents dans le quartier résidentiel de Val-des-Pins et les tensions sociales qui en découlent.",
+      "en": "Un article d'analyse sur l'installation de compteurs d'eau intelligents dans le quartier résidentiel de Val-des-Pins et les tensions sociales qui en découlent."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

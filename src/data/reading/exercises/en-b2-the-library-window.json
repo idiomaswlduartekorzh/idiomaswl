@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-library-window",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Dawn Shift at Oakhaven Library",
+      "en": "The Dawn Shift at Oakhaven Library"
+    },
+    "intro": {
+      "es": "A local library experiments with a new schedule to accommodate shift workers, leading to unexpected social dynamics.",
+      "en": "A local library experiments with a new schedule to accommodate shift workers, leading to unexpected social dynamics."
+    },
+    "mission": {
+      "es": "Analyze the impact of operational changes on staff morale and community utilization.",
+      "en": "Analyze the impact of operational changes on staff morale and community utilization."
+    },
+    "targetText": "The Oakhaven Public Library had long operated on a standard nine-to-five schedule, leaving its doors closed during the early morning hours when the town’s shift workers were most active. Librarian Elena Vance, observing the weary nurses and factory staff passing by the darkened windows at dawn, proposed a radical experiment: opening the library at 5:00 AM. The initiative, dubbed 'The Dawn Shift,' was intended to provide a sanctuary for those whose lives existed in the margins of the traditional workday. For the first two weeks, the atmosphere was serene. Patrons like Marcus, a night-shift logistics manager, found solace in the quietude, finally having a space to read without the interruptions of the bustling afternoon crowds. The silence was absolute, broken only by the rhythmic turning of pages and the soft hum of the ventilation system.\n\nHowever, the logistical reality soon clashed with this peaceful vision. Elena’s staff, particularly the senior archivist, Mr. Henderson, struggled immensely with the sudden shift in their circadian rhythms. Henderson, who had spent twenty years managing the afternoon archives, found the pre-dawn commute exhausting and the lack of sunlight during his shift demoralizing. The conflict reached a breaking point when Henderson accidentally misfiled a collection of rare town records due to fatigue, an error that threatened the integrity of the library’s historical catalog. The tension between the staff’s welfare and the service needs of the community became palpable during the weekly meetings, where the once-harmonious team began to fracture over the issue of scheduling equity.\n\nElena attempted to mediate by proposing a rotating schedule, but the compromise was met with resistance. The shift workers, who had come to rely on the library as their only point of stability, argued that the consistency of the early hours was the service’s greatest value. They viewed the library not just as a repository of books, but as a vital anchor in their disjointed lives. Meanwhile, the staff felt their professional expertise was being sidelined in favor of a social experiment that ignored their physical and mental health. The library board, caught between the glowing feedback from the community and the formal grievances filed by the staff, faced an impossible choice.\n\nAs the trial period neared its conclusion, the library remained caught in a state of suspended animation. The morning quiet was still cherished by the patrons, yet the internal culture of the library had soured. Elena realized that she had prioritized the needs of the users so heavily that she had inadvertently neglected the foundation of the institution itself: the people who ran it. The quiet hours were productive for the readers, but they were becoming increasingly costly for the staff who facilitated them.\n\nUltimately, the library decided to discontinue the 5:00 AM opening, opting instead for a slightly extended evening schedule. The decision left the shift workers disappointed, but it restored the internal stability of the library team. Oakhaven learned that while accessibility is a noble goal, it cannot be sustained if it demands the sacrifice of the very workers who make such services possible, leaving the quiet morning hours once again to the shadows.",
+    "wordCount": 517,
+    "estimatedMinutes": 9,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "quietude",
+        "lemma": "quietude",
+        "glosses": {
+          "es": "a state of stillness, calmness, and quiet",
+          "en": "a state of stillness, calmness, and quiet"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "circadian",
+        "lemma": "circadian",
+        "glosses": {
+          "es": "relating to the natural 24-hour cycle of physical processes",
+          "en": "relating to the natural 24-hour cycle of physical processes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "demoralizing",
+        "lemma": "demoralizing",
+        "glosses": {
+          "es": "causing someone to lose confidence or hope",
+          "en": "causing someone to lose confidence or hope"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "so intense as to seem almost tangible or physical",
+          "en": "so intense as to seem almost tangible or physical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "repository",
+        "lemma": "repository",
+        "glosses": {
+          "es": "a place where things are stored or kept",
+          "en": "a place where things are stored or kept"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "disjointed",
+        "lemma": "disjointed",
+        "glosses": {
+          "es": "lacking a coherent sequence or connection",
+          "en": "lacking a coherent sequence or connection"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.5,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the story?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle to balance service accessibility with staff well-being."
+        },
+        {
+          "id": "a2",
+          "text": "The importance of early morning reading for shift workers."
+        },
+        {
+          "id": "a3",
+          "text": "The technical difficulties of archiving rare historical records."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension between the staff’s welfare and the service needs of the community became palpable",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Mr. Henderson struggle with the new schedule?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He disliked the library patrons."
+        },
+        {
+          "id": "a2",
+          "text": "He suffered from fatigue and lack of sunlight."
+        },
+        {
+          "id": "a3",
+          "text": "He preferred working in the afternoon."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Henderson, who had spent twenty years managing the afternoon archives, found the pre-dawn commute exhausting and the lack of sunlight during his shift demoralizing.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How did the shift workers feel about the potential end of the early hours?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They were indifferent to the change."
+        },
+        {
+          "id": "a2",
+          "text": "They were angry at the librarian personally."
+        },
+        {
+          "id": "a3",
+          "text": "They felt a sense of loss regarding their stability."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The shift workers, who had come to rely on the library as their only point of stability, argued that the consistency of the early hours was the service’s greatest value.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What was the author's intent in describing the 'suspended animation' of the library?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the unresolved conflict between staff and patrons."
+        },
+        {
+          "id": "a2",
+          "text": "To highlight the physical stillness of the library furniture."
+        },
+        {
+          "id": "a3",
+          "text": "To explain why the library needed to close for renovations."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "As the trial period neared its conclusion, the library remained caught in a state of suspended animation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What tone does the narrator adopt regarding the library's final decision?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critical and dismissive."
+        },
+        {
+          "id": "a2",
+          "text": "Reflective and balanced."
+        },
+        {
+          "id": "a3",
+          "text": "Enthusiastic and hopeful."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Oakhaven learned that while accessibility is a noble goal, it cannot be sustained if it demands the sacrifice of the very workers who make such services possible",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'palpable' describe?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The physical weight of the books in the archives."
+        },
+        {
+          "id": "a2",
+          "text": "The quiet atmosphere experienced by the early morning patrons."
+        },
+        {
+          "id": "a3",
+          "text": "The intensity of the conflict among the staff members."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The tension between the staff’s welfare and the service needs of the community became palpable during the weekly meetings",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short letter (150 words) from the perspective of a shift worker to the library board, arguing for a compromise that respects both the needs of the community and the staff.",
+      "en": "Write a short letter (150 words) from the perspective of a shift worker to the library board, arguing for a compromise that respects both the needs of the community and the staff."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyze the impact of operational changes on staff morale and community utilization.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Dawn Shift at Oakhaven Library | B2 Reading | WeLearn",
+      "en": "The Dawn Shift at Oakhaven Library | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A local library experiments with a new schedule to accommodate shift workers, leading to unexpected social dynamics.",
+      "en": "A local library experiments with a new schedule to accommodate shift workers, leading to unexpected social dynamics."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

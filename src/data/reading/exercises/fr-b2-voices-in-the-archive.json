@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La voix corrigée",
+      "en": "La voix corrigée"
+    },
+    "intro": {
+      "es": "Dans le cadre d'un projet de sauvegarde de la mémoire locale, la bibliothèque municipale de Saint-Céneri a lancé une initiative de collecte de récits oraux. Cependant, la retranscription fidèle des témoignages soulève parfois des tensions entre l'authenticité historique et la volonté de préserver une image publique.",
+      "en": "Dans le cadre d'un projet de sauvegarde de la mémoire locale, la bibliothèque municipale de Saint-Céneri a lancé une initiative de collecte de récits oraux. Cependant, la retranscription fidèle des témoignages soulève parfois des tensions entre l'authenticité historique et la volonté de préserver une image publique."
+    },
+    "mission": {
+      "es": "Analyser les enjeux éthiques liés à la transcription des témoignages oraux dans un contexte de préservation patrimoniale.",
+      "en": "Analyser les enjeux éthiques liés à la transcription des témoignages oraux dans un contexte de préservation patrimoniale."
+    },
+    "targetText": "La bibliothèque de Saint-Céneri s'est transformée en un sanctuaire de la mémoire vivante. Depuis des mois, les archivistes recueillent les récits des doyens du village pour constituer une collection numérique. Ce projet, intitulé « Voix d'hier », vise à documenter l'évolution sociale de la région à travers des entretiens informels. Pourtant, ce qui devait être une célébration du passé est devenu une source de discorde pour Monsieur Morel, un ancien artisan local dont le témoignage a été récemment retranscrit.\n\nMonsieur Morel a sollicité une entrevue urgente avec la directrice, Élise, pour demander une modification substantielle de son récit. Le texte original, généré par un logiciel de transcription automatique puis relu par un stagiaire, inclut des propos tenus lors d'un moment de fatigue où l'homme critiquait vertement la gestion de l'ancienne coopérative agricole. Selon lui, ces commentaires, bien que sincères sur le moment, ne reflètent pas sa pensée globale sur la communauté et risquent de ternir sa réputation auprès des familles des anciens administrateurs.\n\nÉlise se trouve face à un dilemme déontologique. Elle reconnaît que la précision historique est la pierre angulaire de leur mission, mais elle comprend également la vulnérabilité de Monsieur Morel. Elle concède que la transcription brute peut parfois transformer une réflexion passagère en une condamnation pérenne, déformant ainsi l'intention initiale du locuteur. Cependant, elle refuse de céder totalement à la censure, craignant qu'une telle pratique n'ouvre la porte à une réécriture complaisante de l'histoire locale par tous les participants.\n\nLa tension est palpable dans le bureau feutré de la bibliothèque. Monsieur Morel insiste sur son droit à l'oubli et à la rectification, arguant que la mémoire est une construction personnelle et non une donnée brute. Il propose d'ajouter une note de bas de page explicative, une solution que la directrice juge insuffisante. Pour elle, l'intérêt du projet réside précisément dans la spontanéité des propos, même lorsqu'ils sont empreints d'amertume ou de contradictions, car c'est là que réside la vérité humaine.\n\nFinalement, aucune issue satisfaisante n'est trouvée. Monsieur Morel retire son autorisation de publication, privant ainsi l'archive d'un témoignage précieux mais préservant sa tranquillité d'esprit. Cet incident marque une rupture dans le projet : la bibliothèque décide de suspendre temporairement la mise en ligne des récits pour repenser son protocole de diffusion. L'archive, bien que moins riche, devient le symbole d'une lutte inachevée entre le respect de la vie privée et la soif de vérité historique, laissant planer un doute persistant sur la légitimité d'une telle entreprise.",
+    "wordCount": 409,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "doyens",
+        "lemma": "doyens",
+        "glosses": {
+          "es": "elders",
+          "en": "elders"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vertement",
+        "lemma": "vertement",
+        "glosses": {
+          "es": "sharply",
+          "en": "sharply"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "déontologique",
+        "lemma": "déontologique",
+        "glosses": {
+          "es": "ethical",
+          "en": "ethical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérenne",
+        "lemma": "pérenne",
+        "glosses": {
+          "es": "lasting",
+          "en": "lasting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spontanéité",
+        "lemma": "spontanéité",
+        "glosses": {
+          "es": "spontaneity",
+          "en": "spontaneity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "légitimité",
+        "lemma": "légitimité",
+        "glosses": {
+          "es": "legitimacy",
+          "en": "legitimacy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.5,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit éthique autour de la publication d'un témoignage."
+        },
+        {
+          "id": "a2",
+          "text": "La gestion technique des archives numériques."
+        },
+        {
+          "id": "a3",
+          "text": "La biographie détaillée de Monsieur Morel à Saint-Céneri."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ce qui devait être une célébration du passé est devenu une source de discorde pour Monsieur Morel, un ancien artisan local dont le témoignage a été récemment retranscrit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Monsieur Morel veut-il modifier son témoignage ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il veut corriger des erreurs de date."
+        },
+        {
+          "id": "a2",
+          "text": "Il craint pour sa réputation."
+        },
+        {
+          "id": "a3",
+          "text": "Il a oublié ses propos tenus."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ces commentaires, bien que sincères sur le moment, ne reflètent pas sa pensée globale sur la communauté et risquent de ternir sa réputation",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position d'Élise face à la demande de Monsieur Morel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle accepte de tout modifier."
+        },
+        {
+          "id": "a2",
+          "text": "Elle refuse par principe absolu."
+        },
+        {
+          "id": "a3",
+          "text": "Elle est partagée entre deux exigences."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elle reconnaît que la précision historique est la pierre angulaire de leur mission, mais elle comprend également la vulnérabilité de Monsieur Morel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de la bibliothèque avec ce projet ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Documenter l'évolution sociale locale."
+        },
+        {
+          "id": "a2",
+          "text": "Promouvoir les services de la bibliothèque."
+        },
+        {
+          "id": "a3",
+          "text": "Corriger les erreurs des anciens habitants."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ce projet, intitulé « Voix d'hier », vise à documenter l'évolution sociale de la région à travers des entretiens informels.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de la fin du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste."
+        },
+        {
+          "id": "a2",
+          "text": "Indécis."
+        },
+        {
+          "id": "a3",
+          "text": "Triomphant."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "laissant planer un doute persistant sur la légitimité d'une telle entreprise.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot « pérenne » dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Temporaire."
+        },
+        {
+          "id": "a2",
+          "text": "Inutile."
+        },
+        {
+          "id": "a3",
+          "text": "Durable."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la transcription brute peut parfois transformer une réflexion passagère en une condamnation pérenne",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif expliquant si, selon vous, les institutions publiques devraient privilégier la protection de l'image des citoyens ou la transparence historique absolue lors de la publication d'archives orales.",
+      "en": "Rédigez un court paragraphe argumentatif expliquant si, selon vous, les institutions publiques devraient privilégier la protection de l'image des citoyens ou la transparence historique absolue lors de la publication d'archives orales."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyser les enjeux éthiques liés à la transcription des témoignages oraux dans un contexte de préservation patrimoniale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La voix corrigée | B2 Reading | WeLearn",
+      "en": "La voix corrigée | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans le cadre d'un projet de sauvegarde de la mémoire locale, la bibliothèque municipale de Saint-Céneri a lancé une initiative de collecte de récits oraux. Cependant, la retranscription fidèle des témoignages soulève parfois des tensions entre l'authenticité historique et la volonté de préserver une image publique.",
+      "en": "Dans le cadre d'un projet de sauvegarde de la mémoire locale, la bibliothèque municipale de Saint-Céneri a lancé une initiative de collecte de récits oraux. Cependant, la retranscription fidèle des témoignages soulève parfois des tensions entre l'authenticité historique et la volonté de préserver une image publique."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

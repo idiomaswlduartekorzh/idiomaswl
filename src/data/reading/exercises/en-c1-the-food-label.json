@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-food-label",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Semantics of Spoilage: A Comparative Analysis of Fresh-Keep Labels",
+      "en": "The Semantics of Spoilage: A Comparative Analysis of Fresh-Keep Labels"
+    },
+    "intro": {
+      "es": "An examination of how two competing labeling systems influence consumer behavior regarding food waste.",
+      "en": "An examination of how two competing labeling systems influence consumer behavior regarding food waste."
+    },
+    "mission": {
+      "es": "Analyze the rhetorical framing and behavioral impact of 'Best Before' versus 'Peak Quality' food labeling systems.",
+      "en": "Analyze the rhetorical framing and behavioral impact of 'Best Before' versus 'Peak Quality' food labeling systems."
+    },
+    "targetText": "In the burgeoning landscape of sustainable consumerism, the nomenclature of food longevity has become a battleground for corporate ethics and environmental stewardship. Recently, two prominent grocery chains, Verdant Grocers and Heirloom Provisions, introduced divergent labeling systems aimed at curbing domestic food waste. Verdant Grocers opted for the 'Best Before' standard, a traditional, albeit ambiguous, directive. Conversely, Heirloom Provisions launched an initiative titled 'Peak Quality,' which attempts to reframe the expiration paradigm by focusing on culinary excellence rather than safety. As a consultant tasked with evaluating the efficacy of these labels, I spent a week observing consumer interactions at both establishments, specifically monitoring how shoppers interpreted these seemingly innocuous phrases when faced with produce that had passed its initial distribution window.\n\nThe conflict emerges from the psychological weight of the terminology. At Verdant Grocers, the 'Best Before' label acts as a binary gatekeeper. During my observation, I noted a customer discarding a perfectly firm head of kale simply because the date had elapsed by twenty-four hours. The label, while intended to signify optimal freshness, is frequently misconstrued by the public as a hard safety deadline, leading to premature disposal. The ambiguity inherent in this phrasing creates a cognitive dissonance; the consumer perceives the food as 'bad' despite sensory evidence to the contrary. This linguistic rigidity inadvertently fosters a culture of waste, as the label overrides the consumer's own judgment regarding the item's current state.\n\nHeirloom Provisions, however, employs a more nuanced strategy with their 'Peak Quality' branding. This approach explicitly invites the consumer to exercise agency. By framing the date as a marker of culinary zenith rather than a threshold of edibility, the store encourages the shopper to assess the produce through sight and smell. During a Tuesday afternoon session, I witnessed a shopper pause, inspect a tray of bell peppers labeled 'Peak Quality' from two days prior, and ultimately decide to purchase them at a reduced rate. The label did not dictate the end of the product's life; it merely provided a reference point. This shift in framing effectively mitigates the anxiety associated with consumption, placing the onus of quality assessment back onto the individual.\n\nYet, this transition toward subjective assessment is not without its perils. While 'Peak Quality' reduces waste by empowering the consumer, it introduces a degree of uncertainty that may alienate those who prefer clear, authoritative guidance. A significant portion of the demographic at Heirloom Provisions expressed frustration, noting that they lacked the confidence to determine the safety of items without a definitive expiration date. The concession here is clear: while one system forces unnecessary waste through over-caution, the other risks a loss of consumer trust by abandoning the safety net of explicit dates. The tension lies in the trade-off between the security of a rigid label and the sustainability of a flexible one.\n\nUltimately, the efficacy of these labels is tethered to the broader societal inability to discern between quality and safety. Verdant Grocers’ reliance on tradition provides clarity at the expense of resources, while Heirloom Provisions’ progressive approach prioritizes waste reduction at the cost of consumer comfort. My final assessment suggests that neither system is a panacea. The resolution of this tension requires a fundamental shift in food literacy, moving beyond the reliance on printed dates toward a more intuitive understanding of perishability. Until such a shift occurs, these labels will continue to serve as imperfect proxies for a complex reality, leaving the consumer caught between the comfort of a deadline and the responsibility of discernment.\n\nFurthermore, the institutionalization of such subjective labels might inadvertently shift legal liability onto the consumer, creating a precarious landscape for those who misjudge a product's state. If retailers relinquish the definitive safety markers that once protected them, the burden of potential foodborne illness falls squarely upon the individual, potentially deterring the very shoppers these initiatives aim to empower. This paradox suggests that while linguistic reform is necessary to combat waste, it cannot function in a vacuum. True progress necessitates a robust educational framework that bridges the gap between corporate transparency and the practical, often intimidating, realities of domestic food management.",
+    "wordCount": 681,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "nomenclature",
+        "lemma": "nomenclature",
+        "glosses": {
+          "es": "the body or system of names in a particular field",
+          "en": "the body or system of names in a particular field"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "innocuous",
+        "lemma": "innocuous",
+        "glosses": {
+          "es": "not harmful or offensive",
+          "en": "not harmful or offensive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cognitive dissonance",
+        "lemma": "cognitive dissonance",
+        "glosses": {
+          "es": "the state of having inconsistent thoughts or beliefs",
+          "en": "the state of having inconsistent thoughts or beliefs"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zenith",
+        "lemma": "zenith",
+        "glosses": {
+          "es": "the time at which something is most powerful or successful",
+          "en": "the time at which something is most powerful or successful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mitigates",
+        "lemma": "mitigates",
+        "glosses": {
+          "es": "makes less severe, serious, or painful",
+          "en": "makes less severe, serious, or painful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "panacea",
+        "lemma": "panacea",
+        "glosses": {
+          "es": "a solution or remedy for all difficulties or diseases",
+          "en": "a solution or remedy for all difficulties or diseases"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the review?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The behavioral influence of food labeling systems."
+        },
+        {
+          "id": "a2",
+          "text": "The environmental impact of grocery store logistics."
+        },
+        {
+          "id": "a3",
+          "text": "The superiority of Heirloom Provisions over Verdant Grocers."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "two prominent grocery chains, Verdant Grocers and Heirloom Provisions, introduced divergent labeling systems aimed at curbing domestic food waste.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How does the 'Best Before' label affect shoppers at Verdant Grocers?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It encourages them to save money."
+        },
+        {
+          "id": "a2",
+          "text": "It leads to premature disposal."
+        },
+        {
+          "id": "a3",
+          "text": "It clarifies safety standards."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The label, while intended to signify optimal freshness, is frequently misconstrued by the public as a hard safety deadline, leading to premature disposal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why might some shoppers dislike the 'Peak Quality' label?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It makes food prices higher."
+        },
+        {
+          "id": "a2",
+          "text": "It is too complex to read."
+        },
+        {
+          "id": "a3",
+          "text": "It lacks clear safety guidance."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A significant portion of the demographic at Heirloom Provisions expressed frustration, noting that they lacked the confidence to determine the safety of items without a definitive expiration date.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's main goal in analyzing these two labels?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the trade-offs between waste and comfort."
+        },
+        {
+          "id": "a2",
+          "text": "To advocate for the complete removal of all labeling requirements in the industry."
+        },
+        {
+          "id": "a3",
+          "text": "To propose an entirely new regulatory framework for international food safety standards."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The tension lies in the trade-off between the security of a rigid label and the sustainability of a flexible one.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How would the author describe the current state of consumer food literacy?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Highly sophisticated and intuitive."
+        },
+        {
+          "id": "a2",
+          "text": "Inadequate and overly reliant on labels."
+        },
+        {
+          "id": "a3",
+          "text": "Rapidly improving through new initiatives."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ultimately, the efficacy of these labels is tethered to the broader societal inability to discern between quality and safety.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by using the word 'panacea'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The labels fail."
+        },
+        {
+          "id": "a2",
+          "text": "The labels lack."
+        },
+        {
+          "id": "a3",
+          "text": "The labels are not a complete solution."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "My final assessment suggests that neither system is a panacea.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word persuasive response arguing whether food retailers should prioritize consumer safety or waste reduction, referencing the concepts of 'culinary zenith' and 'linguistic rigidity' discussed in the text.",
+      "en": "Write a 200-word persuasive response arguing whether food retailers should prioritize consumer safety or waste reduction, referencing the concepts of 'culinary zenith' and 'linguistic rigidity' discussed in the text."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the rhetorical framing and behavioral impact of 'Best Before' versus 'Peak Quality' food labeling systems.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Semantics of Spoilage: A Comparative Analysis of Fresh-Keep Labels | C1 Reading | WeLearn",
+      "en": "The Semantics of Spoilage: A Comparative Analysis of Fresh-Keep Labels | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An examination of how two competing labeling systems influence consumer behavior regarding food waste.",
+      "en": "An examination of how two competing labeling systems influence consumer behavior regarding food waste."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Gatekeeper’s Paradox: A Critique of the Veridian Institute",
+      "en": "The Gatekeeper’s Paradox: A Critique of the Veridian Institute"
+    },
+    "intro": {
+      "es": "This exercise examines a critical review of a cultural institution, focusing on the tension between stated egalitarian values and the logistical realities of attendance.",
+      "en": "This exercise examines a critical review of a cultural institution, focusing on the tension between stated egalitarian values and the logistical realities of attendance."
+    },
+    "mission": {
+      "es": "Analyze the rhetorical strategies used to expose the gap between institutional messaging and the lived experience of the public.",
+      "en": "Analyze the rhetorical strategies used to expose the gap between institutional messaging and the lived experience of the public."
+    },
+    "targetText": "The Veridian Institute of Antiquities recently unveiled its 'Open Horizons' initiative, a policy ostensibly designed to dismantle the barriers hindering public engagement with their collection. Standing in the grand atrium, surrounded by the hushed reverence of marble busts and gilded artifacts, the Director spoke eloquently of democratization, claiming that the museum had finally shed its reputation as an ivory tower. Yet, as I navigated the logistical labyrinth required to witness this supposed accessibility, the dissonance between the Institute’s lofty rhetoric and the harsh reality of the visitor experience became impossible to ignore. The museum promotes itself as a sanctuary for all, yet its operational structure functions more like a high-stakes obstacle course for the working family.\n\nThe primary barrier is not the price of admission, which the Institute has proudly eliminated, but the hidden costs of participation. To reach the museum by the advertised opening time, I had to secure private transport, as the local transit network remains dormant during the early hours. Furthermore, the Institute’s refusal to provide on-site childcare—citing insurance liabilities and space constraints—effectively bars single parents and low-income guardians from attending. While the Director lauded the 'freedom of the galleries,' my afternoon was spent managing a restless toddler in a space that clearly viewed such presence as an intrusion rather than an invitation. The silence of the halls, while aesthetically pleasing, functions as a form of social gatekeeping that penalizes those who cannot afford the luxury of quiet, orderly leisure.\n\nThere is, of course, a concession to be made: the Institute’s digital infrastructure is commendable. Their virtual tours are impeccably curated, offering a high-fidelity experience that arguably surpasses the physical one in terms of educational depth. However, the physical museum remains a prestige project, a vanity space for donors rather than a living utility for the local community. By framing physical attendance as the ultimate democratic act, the Institute ignores the fact that access is a spectrum. For the affluent patron, the museum is an afternoon stroll; for the parent of a young child, it is a logistical nightmare that requires a budget for taxis and private sitters. The 'Open Horizons' initiative, therefore, serves as a masterclass in performative inclusivity, where the removal of a ticket price acts as a convenient smokescreen for the preservation of systemic exclusion.\n\nFurthermore, the staff training seems to prioritize the sanctity of the artifacts over the dignity of the visitors. When I asked a docent for a quiet corner to attend to my child, I was directed to a dimly lit stairwell, a space that felt more like a containment zone than a facility. This interaction solidified my suspicion that the Institute’s 'open' door is merely a decorative feature. The museum has successfully rebranded its elitism as accessibility, ensuring that the 'right' kind of visitor—one who is quiet, unencumbered, and financially stable—remains the default occupant of their hallowed halls. The aesthetic of the space remains frozen in a time when the museum was an exclusive club, regardless of the progressive slogans plastered on the entrance.\n\nUltimately, the Veridian Institute stands as a monument to the failure of symbolic change. By refusing to address the material conditions that prevent genuine participation, they have merely modernized their exclusion. The 'Open Horizons' initiative is not a bridge; it is a lure, designed to garner positive press while maintaining the status quo. Until the Institute acknowledges that access includes the provision of basic human needs—childcare, reliable transit, and a tolerance for the messiness of public life—their grand claims of democratization will remain hollow. A museum that welcomes the public but rejects the realities of their lives is not an institution of culture; it is an institution of theater, performing the role of an educator while operating as a fortress for the privileged.\n\nUltimately, the Institute’s rigid adherence to its traditional atmosphere inadvertently accelerates its own cultural irrelevance. By prioritizing an idealized, silent patron over the diverse realities of modern society, the museum risks alienating the very demographic it claims to invite, ensuring that future generations perceive these hallowed halls as mere relics of an exclusionary past.",
+    "wordCount": 681,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ostensibly",
+        "lemma": "ostensibly",
+        "glosses": {
+          "es": "apparently or purportedly, but perhaps not actually",
+          "en": "apparently or purportedly, but perhaps not actually"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonance",
+        "lemma": "dissonance",
+        "glosses": {
+          "es": "a tension or clash resulting from the combination of two disharmonious elements",
+          "en": "a tension or clash resulting from the combination of two disharmonious elements"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "high-fidelity",
+        "lemma": "high-fidelity",
+        "glosses": {
+          "es": "reproducing sounds or images with a high degree of accuracy",
+          "en": "reproducing sounds or images with a high degree of accuracy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "smokescreen",
+        "lemma": "smokescreen",
+        "glosses": {
+          "es": "something intended to disguise or conceal one's true intentions",
+          "en": "something intended to disguise or conceal one's true intentions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanctity",
+        "lemma": "sanctity",
+        "glosses": {
+          "es": "the state or quality of being holy, sacred, or inviolable",
+          "en": "the state or quality of being holy, sacred, or inviolable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "status quo",
+        "lemma": "status quo",
+        "glosses": {
+          "es": "the existing state of affairs, especially regarding social or political issues",
+          "en": "the existing state of affairs, especially regarding social or political issues"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.2,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:36:21.408Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the author's primary argument regarding the Veridian Institute?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The museum's accessibility policies are performative."
+        },
+        {
+          "id": "a2",
+          "text": "The museum is failing due to poor digital design."
+        },
+        {
+          "id": "a3",
+          "text": "The museum should charge admission to fund childcare."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The 'Open Horizons' initiative, therefore, serves as a masterclass in performative inclusivity, where the removal of a ticket price acts as a convenient smokescreen for the preservation of systemic exclusion.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why does the author struggle to visit the museum?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The museum is too far away."
+        },
+        {
+          "id": "a2",
+          "text": "Logistical barriers like transport."
+        },
+        {
+          "id": "a3",
+          "text": "The cost of tickets is high."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "To reach the museum by the advertised opening time, I had to secure private transport, as the local transit network remains dormant during the early hours.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does the author view the museum's staff?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They are untrained and rude."
+        },
+        {
+          "id": "a2",
+          "text": "They are overworked by the new policy."
+        },
+        {
+          "id": "a3",
+          "text": "They prioritize prestige over public needs."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Furthermore, the staff training seems to prioritize the sanctity of the artifacts over the dignity of the visitors.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the function of the mention of the 'dimly lit stairwell'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the museum's lack of facilities for parents."
+        },
+        {
+          "id": "a2",
+          "text": "To describe the architectural style of the building."
+        },
+        {
+          "id": "a3",
+          "text": "To show the kindness of the docent."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "When I asked a docent for a quiet corner to attend to my child, I was directed to a dimly lit stairwell, a space that felt more like a containment zone than a facility.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best captures the author's attitude toward the 'Open Horizons' initiative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The 'Open Horizons' initiative is not a bridge; it is a lure, designed to garner positive press while maintaining the status quo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by describing the museum as an 'ivory tower'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is physically tall."
+        },
+        {
+          "id": "a2",
+          "text": "It is a historic landmark."
+        },
+        {
+          "id": "a3",
+          "text": "It is elitist and detached."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Standing in the grand atrium, surrounded by the hushed reverence of marble busts and gilded artifacts, the Director spoke eloquently of democratization, claiming that the museum had finally shed its reputation as an ivory tower.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 250-word response evaluating whether museums have a moral obligation to provide childcare services, considering the balance between preserving artifacts and serving the public.",
+      "en": "Write a 250-word response evaluating whether museums have a moral obligation to provide childcare services, considering the balance between preserving artifacts and serving the public."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the rhetorical strategies used to expose the gap between institutional messaging and the lived experience of the public.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:36:21.408Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Gatekeeper’s Paradox: A Critique of the Veridian Institute | C1 Reading | WeLearn",
+      "en": "The Gatekeeper’s Paradox: A Critique of the Veridian Institute | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "This exercise examines a critical review of a cultural institution, focusing on the tension between stated egalitarian values and the logistical realities of attendance.",
+      "en": "This exercise examines a critical review of a cultural institution, focusing on the tension between stated egalitarian values and the logistical realities of attendance."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:36:21.408Z"
+  }
+}

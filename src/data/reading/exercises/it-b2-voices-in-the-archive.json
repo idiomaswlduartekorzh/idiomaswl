@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-voices-in-the-archive",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'eco dei ricordi",
+      "en": "L'eco dei ricordi"
+    },
+    "intro": {
+      "es": "Elena, una giovane archivista, si trova di fronte a una richiesta inaspettata da parte di un anziano cittadino che ha partecipato al progetto di memoria storica locale.",
+      "en": "Elena, una giovane archivista, si trova di fronte a una richiesta inaspettata da parte di un anziano cittadino che ha partecipato al progetto di memoria storica locale."
+    },
+    "mission": {
+      "es": "Analizza il conflitto tra la conservazione della verità storica e il desiderio di preservare la dignità personale attraverso il racconto.",
+      "en": "Analizza il conflitto tra la conservazione della verità storica e il desiderio di preservare la dignità personale attraverso il racconto."
+    },
+    "targetText": "La biblioteca comunale di Valchiara ospitava il progetto 'Voci del Passato', un'iniziativa volta a raccogliere le testimonianze degli anziani del borgo. Elena, la responsabile dell'archivio, stava revisionando la trascrizione dell'intervista di Signor Alberto, un ex artigiano noto per la sua riservatezza. Il documento digitale era pronto per la pubblicazione online, ma una telefonata urgente interruppe il silenzio della sera. Era Alberto, visibilmente agitato, che insisteva per incontrare Elena immediatamente. Quando arrivò in biblioteca, il suo volto era segnato da un'ansia insolita. Senza troppi preamboli, posò una copia cartacea del testo sul tavolo, indicando con un dito tremante un paragrafo specifico riguardante la chiusura della sua vecchia bottega. 'Non posso permettere che questo venga letto da tutti,' esordì, spiegando che la versione ufficiale ometteva un dettaglio cruciale sulla sua collaborazione con il sindacato locale, preferendo una narrazione che lo faceva apparire più conciliante con la proprietà di quanto non fosse stato realmente in gioventù. Elena si trovò in una posizione difficile. Da un lato, la sua missione professionale era quella di garantire l'integrità storica dei documenti, evitando qualsiasi manipolazione postuma dei fatti. Dall'altro, comprendeva che la memoria non è solo un resoconto asettico di eventi, ma una costruzione soggettiva in cui la dignità dell'individuo gioca un ruolo fondamentale. Alberto non voleva mentire, voleva solo che la sua storia riflettesse il peso morale delle sue scelte passate, non solo l'esito burocratico della vicenda. La discussione si protrasse fino a tarda notte. Elena propose una nota a piè di pagina per chiarire le divergenze, ma Alberto rifiutò, temendo che un'aggiunta tecnica avrebbe solo attirato maggiore attenzione su un punto che lui voleva fosse narrato con una sfumatura diversa. Il conflitto tra la precisione documentale e la narrazione identitaria sembrava insanabile. Alla fine, Elena prese una decisione drastica: accettò di sospendere la pubblicazione dell'intero capitolo. Non era una vittoria per l'archivio, né una piena soddisfazione per Alberto, ma un compromesso silenzioso che lasciava la verità sospesa in un limbo. Mentre Alberto usciva, Elena guardò lo schermo spento del computer, consapevole che la storia, una volta scritta, non appartiene più a chi l'ha vissuta, ma a chi decide di leggerla. Il silenzio tornò a regnare, ma non era più lo stesso di prima: era il peso di una testimonianza che, per restare autentica, aveva scelto di restare segreta. La biblioteca, custode di troppe verità, aveva appena imparato che alcune storie esistono solo finché restano celate nel cuore di chi le ha vissute, lontano dagli sguardi indiscreti del pubblico.",
+    "wordCount": 413,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "riservatezza",
+        "lemma": "riservatezza",
+        "glosses": {
+          "es": "discretion or privacy",
+          "en": "discretion or privacy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conciliante",
+        "lemma": "conciliante",
+        "glosses": {
+          "es": "conciliatory or compromising",
+          "en": "conciliatory or compromising"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asettico",
+        "lemma": "asettico",
+        "glosses": {
+          "es": "aseptic or impersonal",
+          "en": "aseptic or impersonal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insanabile",
+        "lemma": "insanabile",
+        "glosses": {
+          "es": "irreconcilable",
+          "en": "irreconcilable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "limbo",
+        "lemma": "limbo",
+        "glosses": {
+          "es": "a state of uncertainty",
+          "en": "a state of uncertainty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "celate",
+        "lemma": "celate",
+        "glosses": {
+          "es": "hidden or concealed",
+          "en": "hidden or concealed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.7,
+      "maxSentenceWords": 46,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il dilemma tra verità storica e dignità."
+        },
+        {
+          "id": "a2",
+          "text": "La gestione dei fondi."
+        },
+        {
+          "id": "a3",
+          "text": "La digitalizzazione delle biblioteche."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il conflitto tra la precisione documentale e la narrazione identitaria sembrava insanabile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché Alberto vuole modificare la trascrizione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché vuole nascondere un fallimento."
+        },
+        {
+          "id": "a2",
+          "text": "Perché la versione attuale altera la sua posizione sindacale."
+        },
+        {
+          "id": "a3",
+          "text": "Perché teme che la proprietà della bottega faccia causa."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "preferendo una narrazione che lo faceva apparire più conciliante con la proprietà di quanto non fosse stato realmente in gioventù.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce la decisione finale di Elena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che Alberto ha mentito."
+        },
+        {
+          "id": "a2",
+          "text": "Che l'archivio è corrotto."
+        },
+        {
+          "id": "a3",
+          "text": "Che la storia è soggettiva."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la memoria non è solo un resoconto asettico di eventi, ma una costruzione soggettiva in cui la dignità dell'individuo gioca un ruolo fondamentale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo dell'autore nel descrivere il silenzio finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenziare il valore della riservatezza rispetto alla divulgazione pubblica."
+        },
+        {
+          "id": "a2",
+          "text": "Sottolineare la perdita di una testimonianza storica."
+        },
+        {
+          "id": "a3",
+          "text": "Mostrare come la tecnologia abbia fallito nel preservare la memoria degli anziani."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "alcune storie esistono solo finché restano celate nel cuore di chi le ha vissute, lontano dagli sguardi indiscreti del pubblico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual è il tono prevalente nel racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critico e polemico."
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo e malinconico."
+        },
+        {
+          "id": "a3",
+          "text": "Tecnico e distaccato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Non era una vittoria per l'archivio, né una piena soddisfazione per Alberto, ma un compromesso silenzioso che lasciava la verità sospesa in un limbo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'insanabile' nel contesto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che non può essere guarito."
+        },
+        {
+          "id": "a2",
+          "text": "Che è destinato a peggiorare nel tempo."
+        },
+        {
+          "id": "a3",
+          "text": "Che non può essere risolto o composto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il conflitto tra la precisione documentale e la narrazione identitaria sembrava insanabile.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio di 150 parole in cui discuti se sia più importante preservare la verità storica oggettiva o rispettare la volontà di chi ha vissuto gli eventi nel raccontare la propria storia.",
+      "en": "Scrivi un breve saggio di 150 parole in cui discuti se sia più importante preservare la verità storica oggettiva o rispettare la volontà di chi ha vissuto gli eventi nel raccontare la propria storia."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analizza il conflitto tra la conservazione della verità storica e il desiderio di preservare la dignità personale attraverso il racconto.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'eco dei ricordi | B2 Reading | WeLearn",
+      "en": "L'eco dei ricordi | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Elena, una giovane archivista, si trova di fronte a una richiesta inaspettata da parte di un anziano cittadino che ha partecipato al progetto di memoria storica locale.",
+      "en": "Elena, una giovane archivista, si trova di fronte a una richiesta inaspettata da parte di un anziano cittadino che ha partecipato al progetto di memoria storica locale."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-seeds-on-loan",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La banque des semences de Val-des-Pins",
+      "en": "La banque des semences de Val-des-Pins"
+    },
+    "intro": {
+      "es": "Dans le village de Val-des-Pins, une bibliothèque de semences fait face à une crise climatique sans précédent, forçant les bénévoles à repenser leurs règles de partage.",
+      "en": "Dans le village de Val-des-Pins, une bibliothèque de semences fait face à une crise climatique sans précédent, forçant les bénévoles à repenser leurs règles de partage."
+    },
+    "mission": {
+      "es": "Analyser les dilemmes éthiques liés à la gestion des ressources communautaires en période de pénurie.",
+      "en": "Analyser les dilemmes éthiques liés à la gestion des ressources communautaires en période de pénurie."
+    },
+    "targetText": "La bibliothèque de semences de Val-des-Pins, installée dans une ancienne grange, fonctionnait sur un principe simple : chaque jardinier emprunte des graines au printemps et rapporte le double de la récolte à l'automne. Ce système de troc solidaire permettait de préserver des variétés locales adaptées au terroir. Cependant, une sécheresse prolongée a frappé la vallée cette année, dévastant les potagers. Alors que l'automne approche, les rayons de la bibliothèque restent désespérément vides, car les récoltes ont été insuffisantes pour permettre le remboursement des graines empruntées.\n\nÉlise, la coordinatrice, a convoqué une réunion d'urgence avec les bénévoles principaux, Marc et Sarah. Marc, pragmatique, soutient que la règle doit rester immuable pour garantir la survie de la banque. Selon lui, si l'on autorise les gens à ne pas rendre leurs graines, le stock s'épuisera en une seule saison, rendant le projet caduc. Il propose d'exclure les membres incapables de rembourser cette année, afin de protéger les réserves restantes pour ceux qui ont réussi à produire quelques graines malgré les conditions climatiques extrêmes.\n\nSarah, quant à elle, défend une approche plus empathique. Elle argumente que la bibliothèque a pour mission première la résilience communautaire. Si la sécheresse est un événement exceptionnel, la règle doit pouvoir s'adapter. Elle propose une amnistie totale pour cette année, craignant que l'exclusion ne fragilise le tissu social du village. Elle souligne que les jardiniers les plus touchés sont souvent les plus précaires, ceux qui dépendent le plus de ces cultures pour leur alimentation quotidienne.\n\nLe débat s'intensifie. Élise écoute attentivement, consciente que chaque décision comporte un risque majeur. D'un côté, la rigueur garantit la pérennité matérielle ; de l'autre, la souplesse préserve l'esprit de solidarité qui fonde le groupe. Elle réalise que la sécheresse n'a pas seulement tari la terre, elle a aussi mis à nu les tensions sous-jacentes sur la définition même de leur engagement. La bibliothèque n'est pas qu'un simple entrepôt de graines, c'est un contrat social vivant qui se fissure sous la pression des éléments.\n\nFinalement, Élise propose une solution intermédiaire : les jardiniers pourront conserver leurs graines pour la prochaine plantation, mais devront s'engager à fournir une aide bénévole supplémentaire lors des travaux d'entretien de la bibliothèque. Cette décision, bien qu'acceptée, laisse un goût amer. Marc craint que le manque de semences ne compromette les futures distributions, tandis que Sarah s'inquiète de la charge de travail imposée aux plus démunis. L'hiver s'annonce long à Val-des-Pins, et la question de la justice face aux aléas climatiques reste, pour beaucoup, une plaie ouverte.",
+    "wordCount": 417,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "terroir",
+        "lemma": "terroir",
+        "glosses": {
+          "es": "local soil or land characteristics",
+          "en": "local soil or land characteristics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "caduc",
+        "lemma": "caduc",
+        "glosses": {
+          "es": "obsolete or void",
+          "en": "obsolete or void"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "résilience",
+        "lemma": "résilience",
+        "glosses": {
+          "es": "ability to recover quickly",
+          "en": "ability to recover quickly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amnistie",
+        "lemma": "amnistie",
+        "glosses": {
+          "es": "pardon or official forgiveness",
+          "en": "pardon or official forgiveness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérennité",
+        "lemma": "pérennité",
+        "glosses": {
+          "es": "long-term survival",
+          "en": "long-term survival"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aléas",
+        "lemma": "aléas",
+        "glosses": {
+          "es": "unpredictable events or hazards",
+          "en": "unpredictable events or hazards"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 19,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestion d'une crise au sein d'une banque de graines."
+        },
+        {
+          "id": "a2",
+          "text": "La lutte contre la sécheresse dans le village de Val-des-Pins."
+        },
+        {
+          "id": "a3",
+          "text": "Le conflit entre deux bénévoles sur le fonctionnement de la bibliothèque."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La bibliothèque de semences de Val-des-Pins, installée dans une ancienne grange, fonctionnait sur un principe simple : chaque jardinier emprunte des graines au printemps et rapporte le double de la récolte à l'automne.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle est la proposition de Marc pour résoudre le problème ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demander une aide bénévole."
+        },
+        {
+          "id": "a2",
+          "text": "Exclure les membres insolvables."
+        },
+        {
+          "id": "a3",
+          "text": "Réduire les futures distributions."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il propose d'exclure les membres incapables de rembourser cette année, afin de protéger les réserves restantes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi Sarah s'oppose-t-elle à la proposition de Marc ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle craint la fin du projet."
+        },
+        {
+          "id": "a2",
+          "text": "Elle veut favoriser les plus riches."
+        },
+        {
+          "id": "a3",
+          "text": "Elle redoute l'affaiblissement du lien social."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elle propose une amnistie totale pour cette année, craignant que l'exclusion ne fragilise le tissu social du village.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de la décision finale d'Élise ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Équilibrer la rigueur et la solidarité."
+        },
+        {
+          "id": "a2",
+          "text": "Punir les jardiniers les plus précaires."
+        },
+        {
+          "id": "a3",
+          "text": "Remplir les stocks de la bibliothèque rapidement."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "D'un côté, la rigueur garantit la pérennité matérielle ; de l'autre, la souplesse préserve l'esprit de solidarité qui fonde le groupe.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant à la fin du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste."
+        },
+        {
+          "id": "a2",
+          "text": "Incertain."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'hiver s'annonce long à Val-des-Pins, et la question de la justice face aux aléas climatiques reste, pour beaucoup, une plaie ouverte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'caduc' dans le contexte du deuxième paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Inutile."
+        },
+        {
+          "id": "a2",
+          "text": "Fragile."
+        },
+        {
+          "id": "a3",
+          "text": "Invalide."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Selon lui, si l'on autorise les gens à ne pas rendre leurs graines, le stock s'épuisera en une seule saison, rendant le projet caduc.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentant si la solution d'Élise est juste ou non, en vous appuyant sur les tensions entre survie matérielle et cohésion sociale.",
+      "en": "Rédigez un court paragraphe argumentant si la solution d'Élise est juste ou non, en vous appuyant sur les tensions entre survie matérielle et cohésion sociale."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Analyser les dilemmes éthiques liés à la gestion des ressources communautaires en période de pénurie.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La banque des semences de Val-des-Pins | B2 Reading | WeLearn",
+      "en": "La banque des semences de Val-des-Pins | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans le village de Val-des-Pins, une bibliothèque de semences fait face à une crise climatique sans précédent, forçant les bénévoles à repenser leurs règles de partage.",
+      "en": "Dans le village de Val-des-Pins, une bibliothèque de semences fait face à une crise climatique sans précédent, forçant les bénévoles à repenser leurs règles de partage."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

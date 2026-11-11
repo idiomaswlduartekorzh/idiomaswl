@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-quiet-street",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Phantom Flow of Oakhaven Lane",
+      "en": "The Phantom Flow of Oakhaven Lane"
+    },
+    "intro": {
+      "es": "An investigative look at how urban planning metrics often fail to capture the lived reality of residents in quiet zones.",
+      "en": "An investigative look at how urban planning metrics often fail to capture the lived reality of residents in quiet zones."
+    },
+    "mission": {
+      "es": "Analyze the discrepancy between quantitative traffic data and the subjective experience of neighborhood tranquility.",
+      "en": "Analyze the discrepancy between quantitative traffic data and the subjective experience of neighborhood tranquility."
+    },
+    "targetText": "For the residents of Oakhaven Lane, the recent municipal report on traffic mitigation was greeted with a mixture of bewilderment and indignation. The document, compiled by Lead Analyst Marcus Thorne, presented a series of heat maps and sensor logs suggesting a significant reduction in vehicular presence. According to the data, the installation of bollards and restricted-access signage had successfully diverted the morning commuter surge, resulting in a twenty-percent drop in daytime throughput. Thorne, speaking at the town hall, lauded the project as a triumph of modern traffic engineering, framing the quietude of the street as a measurable, objective victory for the local council. However, for those who actually inhabit the space, the report felt like a bureaucratic sleight of hand, a sanitized abstraction that ignored the nocturnal reality of their lives.\n\nEvelyn Vance, a long-term resident whose living room faces the street, has kept a meticulous log of the evening hours. While Thorne’s data focused on the traditional rush hours, Vance’s observations reveal a different phenomenon: the 'phantom flow.' As soon as the sun dips below the horizon, the restricted access points are ignored by delivery fleets and ride-sharing services that rely on GPS algorithms to bypass congestion on the main arterial roads. These vehicles do not appear in the municipal counts because the sensors are calibrated only for peak-hour passenger cars, effectively rendering the nocturnal influx invisible. The street, while tranquil during the day, transforms into a high-speed corridor for commercial logistics after dark, turning the quiet zone into a bypass for the city’s restless commerce.\n\nThis conflict highlights a fundamental tension in urban planning: who holds the authority to define a successful street? For the council, success is defined by throughput, emissions, and the reduction of daytime bottlenecks. For the residents, success is a qualitative experience—the ability to sleep without the jarring sound of heavy vans accelerating over speed humps or the intermittent glare of headlights sweeping across bedroom walls. The council views the street as a utility to be managed, whereas the residents view it as a sanctuary to be preserved. When the two definitions clash, the official data acts as a rhetorical shield, insulating the administration from the lived complaints of the citizenry by pointing to the 'success' of the daytime metrics.\n\nThorne’s insistence that the project is a success rests on a narrow interpretation of mobility. By focusing exclusively on the morning commute, his team has effectively curated the data to support a predetermined narrative of efficiency. This is not merely a technical oversight; it is a conceptual failure to acknowledge that traffic is a fluid entity that merely shifts its shape rather than disappearing. When the bollards went up, the cars did not vanish into thin air; they simply waited for the sensors to go dormant and the enforcement officers to retire for the evening. The residents are left to contend with a surge that is technically 'non-existent' according to the municipal ledger, yet physically overwhelming in their daily experience.\n\nUltimately, the Oakhaven Lane case serves as a cautionary tale about the limits of data-driven governance. When policy is divorced from the granular, lived reality of a community, it risks becoming an instrument of gaslighting. The council’s refusal to adjust their monitoring parameters suggests that they are more committed to the appearance of progress than to the actual well-being of the neighborhood. Until the metrics are expanded to encompass the entirety of the twenty-four-hour cycle, the residents will remain trapped in a paradox: living on a street that is statistically quiet, yet practically besieged. The phantom flow remains a ghost in the machine, a reminder that what we choose to measure determines the reality we choose to validate.\n\nFurthermore, this systemic disregard for nocturnal patterns risks eroding civic trust, transforming the council's analytical framework into a source of profound alienation. By privileging digitized metrics over the tangible experiences of citizens, the administration effectively silences the very voices it claims to serve. Such bureaucratic rigidity ensures that Oakhaven Lane remains a fragmented space, where official narratives and physical reality exist in perpetual, irreconcilable opposition.",
+    "wordCount": 679,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bewilderment",
+        "lemma": "bewilderment",
+        "glosses": {
+          "es": "a state of being confused or perplexed",
+          "en": "a state of being confused or perplexed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanitized",
+        "lemma": "sanitized",
+        "glosses": {
+          "es": "made more pleasant or acceptable by removing unpleasant details",
+          "en": "made more pleasant or acceptable by removing unpleasant details"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arterial",
+        "lemma": "arterial",
+        "glosses": {
+          "es": "referring to major roads that carry high volumes of traffic",
+          "en": "referring to major roads that carry high volumes of traffic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rhetorical",
+        "lemma": "rhetorical",
+        "glosses": {
+          "es": "used for effect or to persuade rather than to convey literal truth",
+          "en": "used for effect or to persuade rather than to convey literal truth"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "granular",
+        "lemma": "granular",
+        "glosses": {
+          "es": "consisting of small, detailed, or specific parts",
+          "en": "consisting of small, detailed, or specific parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gaslighting",
+        "lemma": "gaslighting",
+        "glosses": {
+          "es": "the act of manipulating someone into questioning their own perception of reality",
+          "en": "the act of manipulating someone into questioning their own perception of reality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.3,
+      "maxSentenceWords": 35,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict presented in the article?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Discrepancy between municipal data and resident experience."
+        },
+        {
+          "id": "a2",
+          "text": "The local government intends to widen the street to accommodate larger trucks for industrial development."
+        },
+        {
+          "id": "a3",
+          "text": "The primary issue stems from a persistent disagreement between the city planners and the local homeowners association regarding property taxes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "However, for those who actually inhabit the space, the report felt like a bureaucratic sleight of hand, a sanitized abstraction that ignored the nocturnal reality of their lives.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why do commercial vehicles use Oakhaven Lane at night?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They are avoiding tolls."
+        },
+        {
+          "id": "a2",
+          "text": "They follow GPS to avoid main road congestion."
+        },
+        {
+          "id": "a3",
+          "text": "They prefer the scenic views provided by the winding residential streets during the late hours of the night."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "As soon as the sun dips below the horizon, the restricted access points are ignored by delivery fleets and ride-sharing services that rely on GPS algorithms to bypass congestion on the main arterial roads.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author suggest about the council's motivation?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They are actively trying to harm the neighborhood."
+        },
+        {
+          "id": "a2",
+          "text": "They are unaware that the sensors are broken."
+        },
+        {
+          "id": "a3",
+          "text": "They prioritize the appearance of success over accuracy."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The council’s refusal to adjust their monitoring parameters suggests that they are more committed to the appearance of progress than to the actual well-being of the neighborhood.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in using the term 'phantom flow'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the invisible nature of the night traffic."
+        },
+        {
+          "id": "a2",
+          "text": "To describe the unauthorized parking of vehicles in restricted zones during the late evening hours."
+        },
+        {
+          "id": "a3",
+          "text": "To emphasize the specific technical limitations of the outdated hardware used by the city to monitor vehicular movement."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "These vehicles do not appear in the municipal counts because the sensors are calibrated only for peak-hour passenger cars, effectively rendering the nocturnal influx invisible.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the author's tone toward the municipal report?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutral."
+        },
+        {
+          "id": "a2",
+          "text": "Highly critical and skeptical."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressively dismissive and mocking toward the analyst's personal credentials."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "This is not merely a technical oversight; it is a conceptual failure to acknowledge that traffic is a fluid entity that merely shifts its shape rather than disappearing.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'sanitized' imply about the report?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It was presented in a professional format."
+        },
+        {
+          "id": "a2",
+          "text": "It was sanitized to remove sensitive data."
+        },
+        {
+          "id": "a3",
+          "text": "It was edited to remove inconvenient truths."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The document, compiled by Lead Analyst Marcus Thorne, presented a series of heat maps and sensor logs suggesting a significant reduction in vehicular presence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response arguing whether urban planning should prioritize quantitative data or qualitative feedback when assessing the success of neighborhood initiatives.",
+      "en": "Write a 200-word response arguing whether urban planning should prioritize quantitative data or qualitative feedback when assessing the success of neighborhood initiatives."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the discrepancy between quantitative traffic data and the subjective experience of neighborhood tranquility.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Phantom Flow of Oakhaven Lane | C1 Reading | WeLearn",
+      "en": "The Phantom Flow of Oakhaven Lane | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An investigative look at how urban planning metrics often fail to capture the lived reality of residents in quiet zones.",
+      "en": "An investigative look at how urban planning metrics often fail to capture the lived reality of residents in quiet zones."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

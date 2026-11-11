@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-last-bus",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Phantom Passenger: Efficiency as an Erasure",
+      "en": "The Phantom Passenger: Efficiency as an Erasure"
+    },
+    "intro": {
+      "es": "An exploration of how algorithmic optimization in public transit often masks the systemic neglect of marginalized rural populations.",
+      "en": "An exploration of how algorithmic optimization in public transit often masks the systemic neglect of marginalized rural populations."
+    },
+    "mission": {
+      "es": "Analyze the provided text to identify the tension between quantitative efficiency metrics and the qualitative reality of social exclusion.",
+      "en": "Analyze the provided text to identify the tension between quantitative efficiency metrics and the qualitative reality of social exclusion."
+    },
+    "targetText": "The morning mist clung to the valleys of Oakhaven, a region where the bus timetable had become more of a suggestion than a promise. Elias Thorne, the regional transport coordinator, sat in his glass-walled office, staring at a dashboard that glowed with the cold, clinical precision of a high-efficiency algorithm. His mandate was clear: optimize the routes to ensure the highest passenger-to-mile ratio. On his screen, the 6:15 AM service from the hamlet of Blackwood to the central hub was marked in a vibrant, cautionary red. It was underperforming. According to the data, only two passengers regularly boarded at Blackwood, a number deemed statistically insignificant against the cost of fuel and driver hours. Elias tapped a key, effectively pruning the route from the upcoming quarterly schedule. He felt the familiar, dull ache of bureaucratic necessity; after all, the municipal budget was finite, and resources had to be directed where they generated the most palpable impact. The decision was logical, data-driven, and, in his estimation, entirely defensible.\n\nHowever, the reality on the ground was far more nuanced than the digital abstraction suggested. Clara Vance, a retiree living in a converted barn on the outskirts of Blackwood, relied on that very bus to reach the regional infirmary for her bi-weekly dialysis. When the notice of the route cancellation was posted, it did not appear as a line item on a spreadsheet; it appeared as an insurmountable wall. Clara did not own a vehicle, and the local taxi consortium refused to service the unpaved, winding lanes that led to her residence. By removing the service, Elias had not merely optimized a route; he had effectively severed the umbilical cord connecting a vulnerable citizen to life-sustaining care. The data had failed to account for Clara because Clara, in her isolation, had ceased to be a 'passenger' and had become a 'problem' that the algorithm simply chose to ignore.\n\nElias was not a cruel man; he was merely a captive of his metrics. He viewed the transit system as a closed loop where efficiency was the primary virtue. If a route failed to meet the threshold, it was an inefficiency that demanded correction. He had never visited Blackwood, nor had he ever considered that the absence of ridership might be a symptom of the bus being consistently late, or perhaps the lack of a sheltered stop, rather than a lack of demand. He operated under the assumption that the data reflected the world as it was, rather than the world as it had been shaped by previous, equally flawed decisions. The conflict here was not one of malice, but of perspective. Elias saw a ledger; Clara saw a lifeline. The tragedy lay in the fact that the system was designed to reward the former while remaining completely blind to the latter.\n\nAs the new schedule went into effect, the silence in Blackwood became profound. The bus stop, a rusted pole leaning precariously against an ancient oak, stood as a monument to a service that no longer existed. Clara, unable to navigate the logistics of private transport, began to miss her appointments. Her health deteriorated rapidly, a decline that went unnoticed by the transit department, which was busy celebrating a five percent increase in overall fuel efficiency across the district. The 'phantom' passengers—those who needed the service but were excluded by its logistical failures—were erased from the record, their absence interpreted as a lack of interest rather than a failure of provision. The metrics had achieved their goal: the system was leaner, faster, and more profitable, yet it had failed its fundamental purpose of public service.\n\nIn the end, the tension between quantitative optimization and social equity remains unresolved. Elias eventually received a commendation for his fiscal stewardship, his name lauded in municipal reports for his ability to trim the fat from a bloated transport budget. He never learned of Clara, nor did he ever question the methodology that led to her erasure. The data remained clean, the graphs pointed upward, and the efficiency of the Oakhaven transport network was heralded as a model for neighboring districts. Yet, in the quiet corners of the region, the invisible cost of this efficiency continued to mount. The system had become a perfectly calibrated machine that produced nothing but its own success, while the people it was built to serve were left to fade into the landscape, ghosts in a machine that no longer recognized their existence.\n\nThis triumph of administrative logic inadvertently birthed a deeper, systemic instability within Oakhaven. As the most vulnerable residents vanished from the ledger, the municipal government lost its ability to identify genuine community needs, instead creating a feedback loop of artificial prosperity. By prioritizing fiscal metrics over human connectivity, the transport network became a hollow vessel, stripped of its social mandate. The long-term consequence was a fractured region where the lack of accessibility stifled local growth and deepened isolation. Ultimately, the quest for peak efficiency proved to be a self-defeating endeavor, eroding the very public trust required for governance.",
+    "wordCount": 836,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "palpable",
+        "lemma": "palpable",
+        "glosses": {
+          "es": "noticeable or able to be felt",
+          "en": "noticeable or able to be felt"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abstraction",
+        "lemma": "abstraction",
+        "glosses": {
+          "es": "a general idea or concept not based on reality",
+          "en": "a general idea or concept not based on reality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insurmountable",
+        "lemma": "insurmountable",
+        "glosses": {
+          "es": "too great to be overcome",
+          "en": "too great to be overcome"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiscal",
+        "lemma": "fiscal",
+        "glosses": {
+          "es": "relating to government revenue and taxes",
+          "en": "relating to government revenue and taxes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stewardship",
+        "lemma": "stewardship",
+        "glosses": {
+          "es": "the responsible management of resources",
+          "en": "the responsible management of resources"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "lauded",
+        "lemma": "lauded",
+        "glosses": {
+          "es": "praised highly",
+          "en": "praised highly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme of the narrative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The conflict between data-driven efficiency and human welfare."
+        },
+        {
+          "id": "a2",
+          "text": "The triumph of technology over rural decay."
+        },
+        {
+          "id": "a3",
+          "text": "The necessity of fiscal responsibility in public transport management."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The conflict here was not one of malice, but of perspective. Elias saw a ledger; Clara saw a lifeline.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why was the Blackwood route ultimately removed from the schedule?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The driver refused to travel the unpaved roads."
+        },
+        {
+          "id": "a2",
+          "text": "It was deemed statistically insignificant."
+        },
+        {
+          "id": "a3",
+          "text": "The municipal budget had been cut by the government."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "According to the data, only two passengers regularly boarded at Blackwood, a number deemed statistically insignificant against the cost of fuel and driver hours.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the text imply about the nature of the transit data?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is a neutral reflection of passenger behavior."
+        },
+        {
+          "id": "a2",
+          "text": "It is an accurate tool for long-term planning."
+        },
+        {
+          "id": "a3",
+          "text": "It is a biased reflection of existing systemic failures."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He operated under the assumption that the data reflected the world as it was, rather than the world as it had been shaped by previous, equally flawed decisions.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary purpose in characterizing Elias as a man who is not cruel?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the systemic nature of the problem."
+        },
+        {
+          "id": "a2",
+          "text": "To provide a sympathetic counterpoint to Clara's suffering."
+        },
+        {
+          "id": "a3",
+          "text": "To contrast his personal morality with his professional actions."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elias was not a cruel man; he was merely a captive of his metrics.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best describes the tone of the concluding paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic and forward-looking."
+        },
+        {
+          "id": "a2",
+          "text": "Cynical and deeply melancholic."
+        },
+        {
+          "id": "a3",
+          "text": "Analytical and objective."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The system had become a perfectly calibrated machine that produced nothing but its own success, while the people it was built to serve were left to fade into the landscape, ghosts in a machine that no longer recognized their existence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What is the meaning of 'palpable' as used in the first paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Obvious."
+        },
+        {
+          "id": "a2",
+          "text": "Significant."
+        },
+        {
+          "id": "a3",
+          "text": "Tangible."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "resources had to be directed where they generated the most palpable impact.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word argumentative essay debating whether public services should be evaluated solely on quantitative metrics or if qualitative social impact assessments are a necessary component of modern governance.",
+      "en": "Write a 300-word argumentative essay debating whether public services should be evaluated solely on quantitative metrics or if qualitative social impact assessments are a necessary component of modern governance."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the provided text to identify the tension between quantitative efficiency metrics and the qualitative reality of social exclusion.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Phantom Passenger: Efficiency as an Erasure | C2 Reading | WeLearn",
+      "en": "The Phantom Passenger: Efficiency as an Erasure | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of how algorithmic optimization in public transit often masks the systemic neglect of marginalized rural populations.",
+      "en": "An exploration of how algorithmic optimization in public transit often masks the systemic neglect of marginalized rural populations."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

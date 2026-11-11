@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-the-last-bus",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Phantom Load: Efficiency in the Valley",
+      "en": "The Phantom Load: Efficiency in the Valley"
+    },
+    "intro": {
+      "es": "An exploration of how data-driven transport metrics can obscure the lived reality of rural connectivity.",
+      "en": "An exploration of how data-driven transport metrics can obscure the lived reality of rural connectivity."
+    },
+    "mission": {
+      "es": "Analyze the text to identify the disconnect between statistical success and community accessibility.",
+      "en": "Analyze the text to identify the disconnect between statistical success and community accessibility."
+    },
+    "targetText": "The Oakhaven Transit Authority (OTA) recently released its annual performance review, a document heralded by Director Marcus Thorne as a triumph of logistical optimization. According to the report, the 'Green Corridor' bus route, which services the isolated hamlets nestled within the northern valley, has achieved its highest passenger-to-seat ratio in a decade. Thorne stood before the local council, gesturing toward a vibrant bar chart that illustrated a steady decline in empty seats. He lauded the decision to consolidate the morning and afternoon services, claiming that the restructuring had successfully eliminated the 'wasteful inefficiency' of underutilized transit. To the OTA, the data was irrefutable: fewer empty seats meant a more sustainable, fiscally responsible operation.\n\nHowever, the reality on the ground in the village of Elderwood tells a markedly different story. For residents like Clara Vance, a retired librarian who relies on public transport for her weekly visits to the regional hospital, the 'optimization' has effectively severed her lifeline. The consolidation meant that the 10:00 AM bus, once a reliable staple for elderly commuters, was scrapped in favor of a single, mid-day service that arrives long after the morning clinic appointments have concluded. For Clara, the bus is not merely a mode of transport; it is the difference between autonomy and isolation. She explains that the increase in passenger density is not a sign of growing demand, but a symptom of a forced bottleneck.\n\nThis discrepancy between the OTA’s metrics and the residents' experiences highlights a fundamental flaw in how transit success is quantified. By measuring only the occupancy of the buses that remain, the authority ignores the 'phantom load'—the population of commuters who have simply stopped attempting to travel. When the schedule became untenable, the students, the elderly, and the low-income workers did not suddenly vanish; they adapted by abandoning the service entirely. The remaining passengers are those with no other choice, forced to crowd into the singular, delayed vehicle that the OTA now cites as a success story. The authority is essentially celebrating the efficiency of a system that has successfully filtered out its most vulnerable users.\n\nDuring the council meeting, Thorne brushed aside concerns regarding the decline in total ridership, arguing that the OTA must prioritize 'fiscal viability over sentimental convenience.' He maintained that a bus running with five passengers is a drain on municipal resources, regardless of the hardship caused to those individuals. This perspective reflects a broader technocratic trend: the reduction of public services to a series of isolated variables on a spreadsheet. By prioritizing the occupancy rate as the sole metric of health, the OTA has created a feedback loop where service cuts lead to lower ridership, which in turn justifies further cuts. The council, swayed by the promise of reduced subsidies, offered little resistance to Thorne’s vision.\n\nAs the meeting concluded, the tension in the room remained palpable. The OTA had secured its budgetary approval, yet the social fabric of the valley had been quietly unraveled. The buses now arrive full, a fact that will undoubtedly grace the cover of next year’s report as further proof of a 'thriving' network. Yet, as the sun sets over the valley, the bus stop in Elderwood stands empty, a silent monument to the people who no longer wait. The authority has achieved its goal of efficiency, but in doing so, it has transformed a public utility into an exclusive service, leaving the most isolated members of the community to navigate the silence of their own immobility.\n\nUltimately, this optimization strategy risks creating a long-term economic paradox that the OTA has failed to anticipate. By systematically disenfranchising the valley’s most vulnerable residents, the authority is inadvertently eroding the local workforce and hindering access to essential regional services. As Elderwood’s elderly and low-income populations become increasingly housebound, the resulting decline in community engagement will inevitably diminish the valley’s overall economic vitality. Consequently, the fiscal savings gained today may be overshadowed by the future costs of social support programs and healthcare interventions necessitated by this forced isolation, proving that true transit efficiency requires serving the public, not just the spreadsheet.",
+    "wordCount": 679,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "heralded",
+        "lemma": "heralded",
+        "glosses": {
+          "es": "publicly acclaimed or celebrated",
+          "en": "publicly acclaimed or celebrated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irrefutable",
+        "lemma": "irrefutable",
+        "glosses": {
+          "es": "impossible to deny or disprove",
+          "en": "impossible to deny or disprove"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "severed",
+        "lemma": "severed",
+        "glosses": {
+          "es": "forcibly cut or broken off",
+          "en": "forcibly cut or broken off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "untenable",
+        "lemma": "untenable",
+        "glosses": {
+          "es": "not able to be maintained or defended",
+          "en": "not able to be maintained or defended"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "technocratic",
+        "lemma": "technocratic",
+        "glosses": {
+          "es": "relating to a system governed by technical experts",
+          "en": "relating to a system governed by technical experts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "immobility",
+        "lemma": "immobility",
+        "glosses": {
+          "es": "the state of being unable to move",
+          "en": "the state of being unable to move"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.4,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:32:20.209Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary conflict presented in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The tension between statistical efficiency and service accessibility."
+        },
+        {
+          "id": "a2",
+          "text": "The ongoing political debate surrounding the expansion of public infrastructure budgets."
+        },
+        {
+          "id": "a3",
+          "text": "The administrative friction between municipal oversight committees and regional transit operators."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "This discrepancy between the OTA’s metrics and the residents' experiences highlights a fundamental flaw in how transit success is quantified.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did the OTA consolidate the bus services?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To increase ridership."
+        },
+        {
+          "id": "a2",
+          "text": "To cut operational costs."
+        },
+        {
+          "id": "a3",
+          "text": "To improve service frequency."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He lauded the decision to consolidate the morning and afternoon services, claiming that the restructuring had successfully eliminated the 'wasteful inefficiency' of underutilized transit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What is the 'phantom load' mentioned in the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The empty seats on the buses."
+        },
+        {
+          "id": "a2",
+          "text": "The budget deficit of the OTA."
+        },
+        {
+          "id": "a3",
+          "text": "The passengers who stopped using the bus."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "the 'phantom load'—the population of commuters who have simply stopped attempting to travel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's purpose in including the anecdote about Clara Vance?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To highlight the human cost of purely data-driven policy."
+        },
+        {
+          "id": "a2",
+          "text": "To argue that the OTA should provide free medical transport."
+        },
+        {
+          "id": "a3",
+          "text": "To prove that the bus schedule was previously too frequent."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "For Clara, the bus is not merely a mode of transport; it is the difference between autonomy and isolation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which phrase best captures the author's tone toward the OTA's performance review?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cynical."
+        },
+        {
+          "id": "a2",
+          "text": "Critical and skeptical."
+        },
+        {
+          "id": "a3",
+          "text": "Approving and optimistic."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The authority is essentially celebrating the efficiency of a system that has successfully filtered out its most vulnerable users.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does 'untenable' mean regarding the bus schedule?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Bad"
+        },
+        {
+          "id": "a2",
+          "text": "Old"
+        },
+        {
+          "id": "a3",
+          "text": "The schedule was impossible to keep using."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "When the schedule became untenable, the students, the elderly, and the low-income workers did not suddenly vanish; they adapted by abandoning the service entirely.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 200-word response evaluating whether an organization's internal metrics can ever truly capture the social value of a public service. Use examples from the text to support your argument.",
+      "en": "Write a 200-word response evaluating whether an organization's internal metrics can ever truly capture the social value of a public service. Use examples from the text to support your argument."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Analyze the text to identify the disconnect between statistical success and community accessibility.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:32:20.209Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Phantom Load: Efficiency in the Valley | C1 Reading | WeLearn",
+      "en": "The Phantom Load: Efficiency in the Valley | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of how data-driven transport metrics can obscure the lived reality of rural connectivity.",
+      "en": "An exploration of how data-driven transport metrics can obscure the lived reality of rural connectivity."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:32:20.209Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "english C1"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Cartographer’s Ghost",
+      "en": "The Cartographer’s Ghost"
+    },
+    "intro": {
+      "es": "An exploration of the tension between colonial documentation and oral tradition through the lens of a disputed geographical landmark.",
+      "en": "An exploration of the tension between colonial documentation and oral tradition through the lens of a disputed geographical landmark."
+    },
+    "mission": {
+      "es": "Read the following narrative to analyze how official records can obscure cultural heritage, then complete the comprehension and production tasks.",
+      "en": "Read the following narrative to analyze how official records can obscure cultural heritage, then complete the comprehension and production tasks."
+    },
+    "targetText": "Elias Thorne, a meticulous archivist for the Royal Geographical Society, spent his evenings in the basement of the Oakhaven Library, surrounded by the smell of decaying parchment and damp stone. His task was to digitize the colonial surveys of the Northern Archipelago, a collection of maps that defined the region’s boundaries for centuries. One evening, he stumbled upon a hand-drawn chart of the Whispering Crag, a jagged promontory known in official records as 'Sentinel Point.' The map, dated from the early expansion period, contained a faint, handwritten annotation in the margin: 'The locals refuse to acknowledge the nomenclature; they insist on calling it the Widow’s Wail.' Elias found this discrepancy trivial at first, yet it gnawed at him. He knew the history of the archipelago was a tapestry of enforced naming conventions designed to erase the indigenous linguistic footprint. The official maps were tools of administrative convenience, but the oral history held the emotional weight of a people who had witnessed centuries of maritime tragedy.\n\nDriven by a sudden impulse, Elias traveled to the coastal village of Kaelen’s Reach. The villagers were notoriously guarded, viewing outsiders as harbingers of unwanted regulation. He sought out Elara, an elderly woman reputed to be the village chronicler. She sat on her porch, mending a fishing net with rhythmic precision. When Elias mentioned 'Sentinel Point,' she didn't look up, but her hands stilled. She explained that the name was a hollow construct, a word imposed by men who had never heard the wind whip through the limestone fissures of the crag. To the villagers, the crag was not a guardian, but a mourner. The name 'Widow’s Wail' was not merely a label; it was a sensory description of the sound produced by the gale-force winds funneling through the rock’s unique geography. For generations, the name served as a warning to sailors, a mnemonic device embedded in the landscape.\n\nElias spent days documenting the oral accounts, finding that every elder in the village possessed a specific, localized name for the features that the official maps flattened into generic, imperial descriptors. The conflict was not merely linguistic; it was ontological. The official map asserted that the land was a resource to be charted and mastered, while the oral tradition asserted that the land was a living participant in the community’s survival. Elias realized that by digitizing the official maps without including these local variants, he was effectively participating in the ongoing erasure of the region’s true identity. He faced a professional dilemma: his mandate was to preserve the official record, yet he felt a moral obligation to acknowledge the living history that the archive sought to silence.\n\nOn his final night in the village, Elara handed him a weathered, hand-carved piece of driftwood depicting the crag. She told him that names are like tides; they can be held back by walls of ink, but they eventually return to claim the shore. Elias returned to his desk in the library, the weight of the driftwood in his pocket serving as a constant reminder of the voices he had encountered. He began to draft a supplementary index for the digital archive, a project that would require him to circumvent the society’s rigid protocols. He knew that if he succeeded, he would be challenging the authority of the very institution that employed him, risking his reputation for the sake of a truth that existed outside the lines of his maps.\n\nThe final report he submitted was a hybrid document, weaving the cold, precise coordinates of the colonial surveys with the evocative, often melancholic names preserved by the villagers. He did not ask for permission, nor did he offer an apology. He simply presented the duality as a necessary evolution of the archive. The response from his superiors was swift and chillingly silent. They did not fire him, but they archived his supplementary index in a restricted folder, effectively burying his contribution beneath layers of bureaucracy. Elias remained at his desk, watching the digital cursor blink on his screen. He had failed to change the official record, yet he had ensured that the Widow’s Wail would exist, at least in the shadows of the archive, waiting for someone else to notice the discrepancy and ask why.",
+    "wordCount": 706,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "nomenclature",
+        "lemma": "nomenclature",
+        "glosses": {
+          "es": "a system of names or terms",
+          "en": "a system of names or terms"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontological",
+        "lemma": "ontological",
+        "glosses": {
+          "es": "relating to the nature of being or existence",
+          "en": "relating to the nature of being or existence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mnemonic",
+        "lemma": "mnemonic",
+        "glosses": {
+          "es": "a device or technique used to assist memory",
+          "en": "a device or technique used to assist memory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "circumvent",
+        "lemma": "circumvent",
+        "glosses": {
+          "es": "to find a way around an obstacle or rule",
+          "en": "to find a way around an obstacle or rule"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "promontory",
+        "lemma": "promontory",
+        "glosses": {
+          "es": "a point of high land that juts out into a large body of water",
+          "en": "a point of high land that juts out into a large body of water"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "discrepancy",
+        "lemma": "discrepancy",
+        "glosses": {
+          "es": "a lack of compatibility or similarity between two facts",
+          "en": "a lack of compatibility or similarity between two facts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.4,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:48:45.071Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central theme of the narrative?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The struggle to preserve indigenous naming."
+        },
+        {
+          "id": "a2",
+          "text": "The technical challenges of digitizing old maps."
+        },
+        {
+          "id": "a3",
+          "text": "The evolution of maritime navigation techniques."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "He knew the history of the archipelago was a tapestry of enforced naming conventions designed to erase the indigenous linguistic footprint.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did the villagers reject the name 'Sentinel Point'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It was too difficult to pronounce."
+        },
+        {
+          "id": "a2",
+          "text": "It was a colonial imposition."
+        },
+        {
+          "id": "a3",
+          "text": "It was inaccurate to the sound."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "She explained that the name was a hollow construct, a word imposed by men who had never heard the wind whip through the limestone fissures of the crag.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the author imply about the institutional response to Elias's work?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They valued his honesty."
+        },
+        {
+          "id": "a2",
+          "text": "They were indifferent to his work."
+        },
+        {
+          "id": "a3",
+          "text": "They prioritized administrative control."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "They did not fire him, but they archived his supplementary index in a restricted folder, effectively burying his contribution beneath layers of bureaucracy.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the primary function of the driftwood in the story?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To serve as a symbol of the oral history."
+        },
+        {
+          "id": "a2",
+          "text": "To act as a gift from the village elders."
+        },
+        {
+          "id": "a3",
+          "text": "To act as a physical map of the coastline."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elara handed him a weathered, hand-carved piece of driftwood depicting the crag. She told him that names are like tides; they can be held back by walls of ink, but they eventually return to claim the shore.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the tone of the ending?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic and triumphant."
+        },
+        {
+          "id": "a2",
+          "text": "Resolute but melancholic."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He had failed to change the official record, yet he had ensured that the Widow’s Wail would exist, at least in the shadows of the archive, waiting for someone else to notice the discrepancy and ask why.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the story, what does the term 'ontological' suggest regarding the conflict?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The conflict was about the definition of land ownership."
+        },
+        {
+          "id": "a2",
+          "text": "The conflict was about the validity of historical documentation."
+        },
+        {
+          "id": "a3",
+          "text": "The conflict was about the nature of reality."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The conflict was not merely linguistic; it was ontological. The official map asserted that the land was a resource to be charted and mastered, while the oral tradition asserted that the land was a living participant in the community’s survival.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short essay (200 words) discussing whether geographical names should be standardized by central authorities or maintained by local populations, considering the potential impact on cultural preservation.",
+      "en": "Write a short essay (200 words) discussing whether geographical names should be standardized by central authorities or maintained by local populations, considering the potential impact on cultural preservation."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "Read the following narrative to analyze how official records can obscure cultural heritage, then complete the comprehension and production tasks.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:48:45.071Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Cartographer’s Ghost | C1 Reading | WeLearn",
+      "en": "The Cartographer’s Ghost | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "An exploration of the tension between colonial documentation and oral tradition through the lens of a disputed geographical landmark.",
+      "en": "An exploration of the tension between colonial documentation and oral tradition through the lens of a disputed geographical landmark."
+    },
+    "canonicalPath": "/en/practice/english/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:48:45.071Z"
+  }
+}

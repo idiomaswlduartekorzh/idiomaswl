@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-b2-the-last-bus",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "english B2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "en",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Last Departure: Oakhaven’s Transit Shift",
+      "en": "The Last Departure: Oakhaven’s Transit Shift"
+    },
+    "intro": {
+      "es": "A small town transitions from a traditional bus route to an on-demand van service, sparking a divide between generations.",
+      "en": "A small town transitions from a traditional bus route to an on-demand van service, sparking a divide between generations."
+    },
+    "mission": {
+      "es": "Read the report on Oakhaven’s transit changes and answer the comprehension questions to analyze the social impact of the new policy.",
+      "en": "Read the report on Oakhaven’s transit changes and answer the comprehension questions to analyze the social impact of the new policy."
+    },
+    "targetText": "For decades, the 9:15 PM bus from Oakhaven Station was the lifeline for the town’s night-shift workers and the final connection for socialites returning from the city. Last month, the municipal council replaced this fixed-route service with 'Flexi-Van,' an on-demand shuttle accessible only via a smartphone application. While the council claims this modernization optimizes fuel consumption and reduces empty journeys, the transition has fundamentally altered the nightly rhythm of Oakhaven.\n\nElias Thorne, a twenty-four-year-old warehouse supervisor, views the change as a necessary evolution. For him, the ability to summon a van directly to his workplace door is a significant upgrade from the twenty-minute walk to the old bus stop. He argues that the rigid timetable was an archaic relic that failed to account for the fluid nature of modern employment. To Elias, the van represents efficiency and a welcome integration of technology into rural infrastructure, proving that even small towns can adapt to contemporary demands.\n\nConversely, Margaret Vance, a retired schoolteacher who has lived in Oakhaven for fifty years, sees the shift as a form of social exclusion. Margaret, who does not own a smartphone, relies on the bus for her weekly book club meetings at the community center. She recalls how the bus was a shared space where neighbors caught up on daily news. Now, she finds herself stranded, unable to book a ride without a digital interface. She feels the town has prioritized the convenience of the young at the expense of its most vulnerable citizens, creating a silent barrier to her mobility.\n\nThis tension reached a boiling point last Tuesday when the Flexi-Van system suffered a server outage during a heavy rainstorm. Elias was left waiting at his warehouse, unable to ping the server, while Margaret missed her club entirely, having waited in vain at the dark, empty stop. The incident highlighted the inherent fragility of a system that relies solely on digital connectivity. While the council maintains that the system is more flexible, the outage proved that when the network fails, the entire town’s movement grinds to a complete, unpredictable halt.\n\nUltimately, the Oakhaven transit experiment remains a contentious issue. The council plans to introduce a telephone booking line next month, a concession intended to appease residents like Margaret. However, the underlying disagreement persists. Is the goal of public transit to provide the most efficient route for the majority, or is it to guarantee a reliable, accessible service for everyone, regardless of their technological proficiency? As the town moves forward, the divide between those who embrace the digital shift and those who are left behind continues to widen, leaving the future of Oakhaven’s evening connectivity in a state of uneasy, unresolved tension.",
+    "wordCount": 446,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "archaic",
+        "lemma": "archaic",
+        "glosses": {
+          "es": "old-fashioned or no longer relevant",
+          "en": "old-fashioned or no longer relevant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fluid",
+        "lemma": "fluid",
+        "glosses": {
+          "es": "capable of changing or moving easily",
+          "en": "capable of changing or moving easily"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exclusion",
+        "lemma": "exclusion",
+        "glosses": {
+          "es": "the act of leaving someone or something out",
+          "en": "the act of leaving someone or something out"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fragility",
+        "lemma": "fragility",
+        "glosses": {
+          "es": "the state of being easily broken or damaged",
+          "en": "the state of being easily broken or damaged"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contentious",
+        "lemma": "contentious",
+        "glosses": {
+          "es": "likely to cause an argument or disagreement",
+          "en": "likely to cause an argument or disagreement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "concession",
+        "lemma": "concession",
+        "glosses": {
+          "es": "a thing that is granted in response to demands",
+          "en": "a thing that is granted in response to demands"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 21.2,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:17:24.118Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary focus of the text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A debate over transit policy."
+        },
+        {
+          "id": "a2",
+          "text": "The benefits of technology."
+        },
+        {
+          "id": "a3",
+          "text": "The history of Oakhaven buses."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "the transition has fundamentally altered the nightly rhythm of Oakhaven.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why did Margaret miss her book club?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The bus stop was dark."
+        },
+        {
+          "id": "a2",
+          "text": "She had no smartphone."
+        },
+        {
+          "id": "a3",
+          "text": "The van did not show up."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Margaret, who does not own a smartphone, relies on the bus for her weekly book club meetings",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "How does Elias feel about the old bus system?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "He feels it was reliable."
+        },
+        {
+          "id": "a2",
+          "text": "He feels it was dangerous."
+        },
+        {
+          "id": "a3",
+          "text": "He feels it was outdated."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "He argues that the rigid timetable was an archaic relic that failed to account for the fluid nature of modern employment.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "What is the author's primary goal in describing the server outage?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate the risks of relying on digital infrastructure."
+        },
+        {
+          "id": "a2",
+          "text": "To show that the new system is unreliable."
+        },
+        {
+          "id": "a3",
+          "text": "To explain why the council changed the bus route."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The incident highlighted the inherent fragility of a system that relies solely on digital connectivity.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which word best describes the tone of the final paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistic."
+        },
+        {
+          "id": "a2",
+          "text": "Uncertain."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the future of Oakhaven’s evening connectivity in a state of uneasy, unresolved tension.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the author imply by the word 'concession'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A total reversal of policy."
+        },
+        {
+          "id": "a2",
+          "text": "A complete failure of the new system."
+        },
+        {
+          "id": "a3",
+          "text": "A minor adjustment to satisfy critics."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The council plans to introduce a telephone booking line next month, a concession intended to appease residents like Margaret.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 150-word email to the Oakhaven Municipal Council proposing a hybrid solution that balances the needs of tech-savvy workers and residents who struggle with digital-only services.",
+      "en": "Write a 150-word email to the Oakhaven Municipal Council proposing a hybrid solution that balances the needs of tech-savvy workers and residents who struggle with digital-only services."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Read the report on Oakhaven’s transit changes and answer the comprehension questions to analyze the social impact of the new policy.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:17:24.118Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Last Departure: Oakhaven’s Transit Shift | B2 Reading | WeLearn",
+      "en": "The Last Departure: Oakhaven’s Transit Shift | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A small town transitions from a traditional bus route to an on-demand van service, sparking a divide between generations.",
+      "en": "A small town transitions from a traditional bus route to an on-demand van service, sparking a divide between generations."
+    },
+    "canonicalPath": "/en/practice/english/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:17:24.118Z"
+  }
+}

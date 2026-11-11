@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-b2-the-last-bus",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "japanese B2",
+    "jlpt": "N2",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "最終バスの終焉と新たな移動の形",
+      "en": "最終バスの終焉と新たな移動の形"
+    },
+    "intro": {
+      "es": "山間部の小さな町で、長年親しまれた最終バスが廃止され、予約制の乗り合いワゴンが導入されました。この変化が住民に与えた影響を考察します。",
+      "en": "山間部の小さな町で、長年親しまれた最終バスが廃止され、予約制の乗り合いワゴンが導入されました。この変化が住民に与えた影響を考察します。"
+    },
+    "mission": {
+      "es": "以下の文章を読み、住民たちの葛藤と新しい交通手段がもたらした社会的な変化について理解を深めてください。",
+      "en": "以下の文章を読み、住民たちの葛藤と新しい交通手段がもたらした社会的な変化について理解を深めてください。"
+    },
+    "targetText": "山あいに位置する緑ヶ丘町では、長年、午後八時発の最終バスが町民の足として機能してきた。しかし、深刻な運転手不足と利用者の減少を理由に、町議会は今年度をもってこの路線の廃止を決定した。代わって導入されたのは、スマートフォンや専用電話で予約する「オンデマンド・ワゴン」である。町はこれを「効率的で持続可能な移動手段」と銘打ったが、住民の間では戸惑いの声が隠せない。\n\n市街地のIT企業に勤める佐藤健太は、この変更に強い不満を抱く一人だ。残業を終えて帰路につく際、これまではバスの時間を気にすればよかったが、ワゴンは予約が埋まっていると乗車できない。先日も、会議が長引いたために予約枠がすべて埋まり、結局タクシー代として数千円を支払う羽目になった。「効率化という名の切り捨てだ」と彼は憤る。若い世代にとって、定時運行のバスは予測可能な生活の基盤であったのだ。\n\n一方で、高齢者世帯からは異なる視点が示されている。これまでバス停まで急な坂道を歩くのが困難だった八十代の田中美代子は、ワゴンが自宅前まで迎えに来てくれる利便性に驚きを隠さない。「以前は重い買い物袋を抱えて息を切らして帰っていたが、今は玄関先で待っていればいい」と彼女は語る。移動の自由が確保されたという点では、このシステムは確かに彼らの生活の質を向上させていると言えるだろう。\n\nしかし、この利便性の裏には、デジタル機器を使いこなせない層が取り残されるという新たな分断も存在する。予約システムがアプリ中心であるため、高齢者の中には電話予約の繋がりにくさに辟易し、外出そのものを控えるようになった者もいる。町役場はサポート窓口を設置したが、物理的な距離と心理的な障壁は依然として高い。効率化がもたらした恩恵は、誰にでも平等に行き渡っているわけではないのだ。\n\n最終的に、町が目指した「持続可能な交通」は、個人の生活様式を強制的に変容させる結果となった。利便性を享受する高齢者と、予測可能性を奪われた若者。両者の間には埋めがたい溝が生まれつつある。システムがどれほど洗練されても、住民一人ひとりの生活の文脈を無視した改革は、地域社会の結束を弱める可能性がある。この町の試行錯誤は、地方交通が直面する現代的な矛盾を象徴している。",
+    "wordCount": 869,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "廃止",
+        "lemma": "廃止",
+        "glosses": {
+          "es": "abolition",
+          "en": "abolition"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "戸惑い",
+        "lemma": "戸惑い",
+        "glosses": {
+          "es": "bewilderment",
+          "en": "bewilderment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "基盤",
+        "lemma": "基盤",
+        "glosses": {
+          "es": "foundation",
+          "en": "foundation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "利便性",
+        "lemma": "利便性",
+        "glosses": {
+          "es": "convenience",
+          "en": "convenience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "辟易",
+        "lemma": "辟易",
+        "glosses": {
+          "es": "fed up",
+          "en": "fed up"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "変容",
+        "lemma": "変容",
+        "glosses": {
+          "es": "transformation",
+          "en": "transformation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 39.5,
+      "maxSentenceWords": 61,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:42:19.235Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主な目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "交通手段の変更が住民に与えた複雑な影響を論じる。"
+        },
+        {
+          "id": "a2",
+          "text": "新しい交通システムの導入過程を詳述する。"
+        },
+        {
+          "id": "a3",
+          "text": "オンデマンド・ワゴンの利用方法を説明する。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "利便性を享受する高齢者と、予測可能性を奪われた若者。両者の間には埋めがたい溝が生まれつつある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐藤健太が不満を感じている理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "バスが廃止されたこと自体が不満だから。"
+        },
+        {
+          "id": "a2",
+          "text": "予約が取れずタクシー代がかかったから。"
+        },
+        {
+          "id": "a3",
+          "text": "高齢者ばかりが優遇されているから。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "先日も、会議が長引いたために予約枠がすべて埋まり、結局タクシー代として数千円を支払う羽目になった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "田中美代子の発言から読み取れることは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しいシステムの予約方法を完全に理解している。"
+        },
+        {
+          "id": "a2",
+          "text": "バスの廃止には反対していた。"
+        },
+        {
+          "id": "a3",
+          "text": "以前のバス停までの道のりが苦痛であった。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "以前は重い買い物袋を抱えて息を切らして帰っていたが、今は玄関先で待っていればいい",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "第四段落で「サポート窓口」について言及した意図は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "施策の限界と新たな課題を指摘するため。"
+        },
+        {
+          "id": "a2",
+          "text": "役場の対応が完璧であることを示すため。"
+        },
+        {
+          "id": "a3",
+          "text": "デジタル化による弊害を完全に解決するため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "町役場はサポート窓口を設置したが、物理的な距離と心理的な障壁は依然として高い。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者のこの問題に対する態度はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で、解決策を信じている。"
+        },
+        {
+          "id": "a2",
+          "text": "批判的で、解決が難しい矛盾を強調している。"
+        },
+        {
+          "id": "a3",
+          "text": "中立的で、事実のみを淡々と伝えている。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "システムがどれほど洗練されても、住民一人ひとりの生活の文脈を無視した改革は、地域社会の結束を弱める可能性がある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「辟易」という言葉の文脈上の意味は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "非常に楽しんでいる。"
+        },
+        {
+          "id": "a2",
+          "text": "困惑している。"
+        },
+        {
+          "id": "a3",
+          "text": "うんざりしている。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "予約システムがアプリ中心であるため、高齢者の中には電話予約の繋がりにくさに辟易し、外出そのものを控えるようになった者もいる。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたの住む地域で公共交通機関が廃止された場合、どのような代替手段が最も効果的だと思いますか。住民の年齢層や生活習慣を考慮し、論理的に説明してください。",
+      "en": "あなたの住む地域で公共交通機関が廃止された場合、どのような代替手段が最も効果的だと思いますか。住民の年齢層や生活習慣を考慮し、論理的に説明してください。"
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "以下の文章を読み、住民たちの葛藤と新しい交通手段がもたらした社会的な変化について理解を深めてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:42:19.235Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "最終バスの終焉と新たな移動の形 | B2 Reading | WeLearn",
+      "en": "最終バスの終焉と新たな移動の形 | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "山間部の小さな町で、長年親しまれた最終バスが廃止され、予約制の乗り合いワゴンが導入されました。この変化が住民に与えた影響を考察します。",
+      "en": "山間部の小さな町で、長年親しまれた最終バスが廃止され、予約制の乗り合いワゴンが導入されました。この変化が住民に与えた影響を考察します。"
+    },
+    "canonicalPath": "/en/practice/japanese/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:42:19.235Z"
+  }
+}

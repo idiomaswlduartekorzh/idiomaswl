@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-b2-the-quiet-street",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "italian B2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "it",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il quartiere senza motori: un esperimento di quiete",
+      "en": "Il quartiere senza motori: un esperimento di quiete"
+    },
+    "intro": {
+      "es": "Un articolo d'opinione che analizza l'impatto di una serata a traffico limitato nel quartiere di Borgo Vecchio, esplorando le tensioni tra commercianti e residenti.",
+      "en": "Un articolo d'opinione che analizza l'impatto di una serata a traffico limitato nel quartiere di Borgo Vecchio, esplorando le tensioni tra commercianti e residenti."
+    },
+    "mission": {
+      "es": "Leggi attentamente il testo e rispondi alle domande per valutare la comprensione del conflitto sociale emerso durante l'iniziativa.",
+      "en": "Leggi attentamente il testo e rispondi alle domande per valutare la comprensione del conflitto sociale emerso durante l'iniziativa."
+    },
+    "targetText": "L'iniziativa 'Borgo Silenzioso' ha trasformato il cuore pulsante della nostra zona in una zona pedonale sperimentale per una singola serata di venerdì. L'obiettivo dichiarato dal comitato di quartiere era ridurre l'inquinamento acustico e favorire la socializzazione, ma i risultati hanno sollevato più interrogativi che certezze. Mentre le piazze si riempivano di famiglie e turisti, il settore logistico ha subito una battuta d'arresto significativa. Marco, titolare di una storica gastronomia, ha lamentato ritardi critici nelle consegne serali della merce fresca, sostenendo che l'impossibilità di accedere con i furgoni abbia compromesso la qualità del servizio offerto ai clienti abituali, nonostante l'aumento dei passanti.\n\nParallelamente, la percezione del rumore ha diviso nettamente la popolazione residente. Da una parte, chi abita lungo il corso principale ha lodato la scomparsa del rombo dei motori, definendo l'atmosfera finalmente vivibile. Dall'altra, i residenti delle vie laterali hanno segnalato un fenomeno inaspettato: il vociare costante della folla e la musica diffusa dai locali hanno sostituito il traffico veicolare, creando un brusio persistente che si è protratto ben oltre la mezzanotte. La quiete tanto agognata si è rivelata, dunque, una semplice mutazione della fonte sonora, piuttosto che una sua reale eliminazione.\n\nIl conflitto tra le esigenze commerciali e il diritto al riposo si è manifestato con particolare intensità durante il consiglio di quartiere post-evento. I commercianti hanno sottolineato come l'affluenza pedonale non si sia tradotta in un incremento proporzionale degli incassi, evidenziando che il visitatore occasionale tende a passeggiare senza consumare nei negozi specializzati. Al contrario, il comitato promotore ha insistito sul valore immateriale dell'evento, sostenendo che la riappropriazione degli spazi urbani non possa essere misurata esclusivamente attraverso il bilancio economico di una singola serata.\n\nLa tensione è culminata in una discussione accesa tra Elena, portavoce dei residenti, e i gestori delle attività locali. Elena ha ribadito che il benessere dei cittadini non è negoziabile, mentre i commercianti hanno avvertito che, senza una logistica efficiente, il quartiere rischia una desertificazione commerciale a lungo termine. Il dibattito rimane aperto, privo di una sintesi condivisa che possa soddisfare le parti in causa.\n\nIn conclusione, l'esperimento di 'Borgo Silenzioso' ha messo in luce una verità scomoda: la riqualificazione urbana è un equilibrio precario tra istanze opposte. Non basta chiudere una strada per creare una comunità armoniosa. Senza un piano di gestione che integri le necessità logistiche con la qualità della vita, ogni tentativo di trasformazione rischia di trasformarsi in una sterile contrapposizione, lasciando il quartiere in un limbo tra desiderio di modernità e nostalgia della funzionalità perduta.",
+    "wordCount": 415,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "battuta d'arresto",
+        "lemma": "battuta d'arresto",
+        "glosses": {
+          "es": "setback",
+          "en": "setback"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "brusio",
+        "lemma": "brusio",
+        "glosses": {
+          "es": "buzz/murmur",
+          "en": "buzz/murmur"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "riappropriazione",
+        "lemma": "riappropriazione",
+        "glosses": {
+          "es": "reclamation",
+          "en": "reclamation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "desertificazione",
+        "lemma": "desertificazione",
+        "glosses": {
+          "es": "desertification/emptying",
+          "en": "desertification/emptying"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "limbo",
+        "lemma": "limbo",
+        "glosses": {
+          "es": "limbo",
+          "en": "limbo"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "istanze",
+        "lemma": "istanze",
+        "glosses": {
+          "es": "demands/requests",
+          "en": "demands/requests"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 24.4,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:54:06.760Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra esigenze diverse."
+        },
+        {
+          "id": "a2",
+          "text": "Il successo economico dell'evento."
+        },
+        {
+          "id": "a3",
+          "text": "Le difficoltà logistiche dei negozianti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "l'esperimento di 'Borgo Silenzioso' ha messo in luce una verità scomoda: la riqualificazione urbana è un equilibrio precario tra istanze opposte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa lamenta Marco riguardo alla serata?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La mancanza di clienti."
+        },
+        {
+          "id": "a2",
+          "text": "I ritardi nelle consegne."
+        },
+        {
+          "id": "a3",
+          "text": "Il rumore eccessivo notturno."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Marco, titolare di una storica gastronomia, ha lamentato ritardi critici nelle consegne serali della merce fresca",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché i residenti delle vie laterali non sono soddisfatti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le strade sono diventate troppo buie."
+        },
+        {
+          "id": "a2",
+          "text": "Non possono più usare le proprie auto."
+        },
+        {
+          "id": "a3",
+          "text": "Il rumore è cambiato ma non sparito."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La quiete tanto agognata si è rivelata, dunque, una semplice mutazione della fonte sonora, piuttosto che una sua reale eliminazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del paragrafo sui commercianti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Spiegare che l'affluenza non garantisce vendite."
+        },
+        {
+          "id": "a2",
+          "text": "Dimostrare che il profitto è calato."
+        },
+        {
+          "id": "a3",
+          "text": "Criticare il comitato per la cattiva organizzazione."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I commercianti hanno sottolineato come l'affluenza pedonale non si sia tradotta in un incremento proporzionale degli incassi, evidenziando che il visitatore occasionale tende a passeggiare senza consumare nei negozi specializzati.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere l'esperimento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e propositivo."
+        },
+        {
+          "id": "a2",
+          "text": "Analitico e imparziale."
+        },
+        {
+          "id": "a3",
+          "text": "Critico e disilluso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'esperimento di 'Borgo Silenzioso' ha messo in luce una verità scomoda: la riqualificazione urbana è un equilibrio precario tra istanze opposte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa 'desertificazione commerciale' nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La mancanza di spazi verdi nel quartiere."
+        },
+        {
+          "id": "a2",
+          "text": "Un aumento eccessivo dei prezzi dei prodotti."
+        },
+        {
+          "id": "a3",
+          "text": "La chiusura definitiva dei negozi."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "i commercianti hanno avvertito che, senza una logistica efficiente, il quartiere rischia una desertificazione commerciale a lungo termine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve paragrafo (80-100 parole) in cui proponi una possibile soluzione per conciliare le esigenze dei residenti e dei commercianti durante eventi simili a 'Borgo Silenzioso'.",
+      "en": "Scrivi un breve paragrafo (80-100 parole) in cui proponi una possibile soluzione per conciliare le esigenze dei residenti e dei commercianti durante eventi simili a 'Borgo Silenzioso'."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Leggi attentamente il testo e rispondi alle domande per valutare la comprensione del conflitto sociale emerso durante l'iniziativa.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:54:06.760Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il quartiere senza motori: un esperimento di quiete | B2 Reading | WeLearn",
+      "en": "Il quartiere senza motori: un esperimento di quiete | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un articolo d'opinione che analizza l'impatto di una serata a traffico limitato nel quartiere di Borgo Vecchio, esplorando le tensioni tra commercianti e residenti.",
+      "en": "Un articolo d'opinione che analizza l'impatto di una serata a traffico limitato nel quartiere di Borgo Vecchio, esplorando le tensioni tra commercianti e residenti."
+    },
+    "canonicalPath": "/en/practice/italian/b2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:54:06.760Z"
+  }
+}

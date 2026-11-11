@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-b2-the-last-bus",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "B2",
+    "displayLabel": "french B2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "b2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le dernier virage de la navette de Val-des-Pins",
+      "en": "Le dernier virage de la navette de Val-des-Pins"
+    },
+    "intro": {
+      "es": "Lisez cet article sur la transformation du transport local à Val-des-Pins et analysez les tensions sociales qui en découlent.",
+      "en": "Lisez cet article sur la transformation du transport local à Val-des-Pins et analysez les tensions sociales qui en découlent."
+    },
+    "mission": {
+      "es": "Comprenez les points de vue divergents sur la modernisation des services publics ruraux.",
+      "en": "Comprenez les points de vue divergents sur la modernisation des services publics ruraux."
+    },
+    "targetText": "À Val-des-Pins, le crépuscule ne marque plus le passage du grand bus bleu, mais l'arrivée du « Flexi-Van », un service à la demande qui remplace la ligne régulière de 21h00. Pour la municipalité, cette transition est une nécessité comptable face à une fréquentation en déclin. Cependant, ce changement suscite une fracture générationnelle palpable au sein du village. D’un côté, les jeunes actifs, comme Marc, un serveur rentrant du restaurant voisin, voient en cette flexibilité une solution moderne. Il apprécie de pouvoir réserver son trajet via une application, évitant ainsi l'attente solitaire sous l'abri-bus glacé. Pour lui, le progrès technologique est le seul rempart contre l'isolement rural.\n\nÀ l'opposé, Madame Delacroix, retraitée depuis une décennie, perçoit cette mutation comme un acte d'exclusion. Elle se souvient du chauffeur habituel, Monsieur Morel, qui l'aidait à porter ses sacs de courses et s'assurait qu'elle rentre en toute sécurité. Avec le Flexi-Van, elle se sent dépossédée de ce lien social informel. Elle craint que la dépendance au numérique ne crée une barrière infranchissable pour les personnes âgées, transformant un service public humanisé en une simple prestation logistique froide et impersonnelle.\n\nLa tension a atteint son paroxysme lors de la dernière réunion du conseil municipal. Les jeunes ont défendu l'efficacité du système, arguant que le bus vide était un gaspillage de fonds publics. Madame Delacroix a rétorqué que la rentabilité ne devrait jamais être l'unique boussole d'une commune. Elle a souligné que le bus de 21h00 n'était pas seulement un moyen de transport, mais un espace de rencontre où les générations se croisaient, renforçant ainsi le tissu social de Val-des-Pins.\n\nLe maire, pris entre ces deux visions irréconciliables, a proposé un compromis : maintenir le Flexi-Van tout en instaurant une permanence téléphonique pour les réservations. Pourtant, cette solution semble insuffisante pour apaiser les esprits. Les jeunes craignent que la bureaucratie ne ralentisse l'application, tandis que les aînés regrettent la perte de la spontanéité d'un trajet fixe. Le dialogue reste figé, chaque camp campant sur ses positions.\n\nEn fin de compte, la fin de la ligne régulière symbolise bien plus qu'une simple réorganisation des horaires. Elle cristallise le dilemme de la ruralité contemporaine : comment concilier l'optimisation des ressources avec le maintien des solidarités de proximité ? À Val-des-Pins, le silence qui succède désormais au passage du van, rapide et discret, résonne comme une question sans réponse. Le village est désormais plus efficace, mais peut-être moins vivant, laissant les habitants face à une solitude technologique qu'ils n'avaient pas prévue.",
+    "wordCount": 413,
+    "estimatedMinutes": 7,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "argument and concession"
+    ],
+    "vocabulary": [
+      {
+        "surface": "fracture",
+        "lemma": "fracture",
+        "glosses": {
+          "es": "split or rift",
+          "en": "split or rift"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "rempart",
+        "lemma": "rempart",
+        "glosses": {
+          "es": "bulwark or defense",
+          "en": "bulwark or defense"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dépossédée",
+        "lemma": "dépossédée",
+        "glosses": {
+          "es": "deprived of",
+          "en": "deprived of"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paroxysme",
+        "lemma": "paroxysme",
+        "glosses": {
+          "es": "climax or peak",
+          "en": "climax or peak"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irréconciliables",
+        "lemma": "irréconciliables",
+        "glosses": {
+          "es": "irreconcilable",
+          "en": "irreconcilable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristallise",
+        "lemma": "cristallise",
+        "glosses": {
+          "es": "crystallizes or embodies",
+          "en": "crystallizes or embodies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can follow an argument and recognise its conditions, evidence and reservations.",
+      "en": "You can follow an argument and recognise its conditions, evidence and reservations."
+    },
+    "allowedGrammar": [
+      "argument and concession"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "moderate",
+    "metrics": {
+      "averageSentenceWords": 18.8,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "B2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:38:20.466Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit générationnel lié aux transports."
+        },
+        {
+          "id": "a2",
+          "text": "La dégradation progressive de la voirie communale."
+        },
+        {
+          "id": "a3",
+          "text": "La baisse démographique constante observée dans la région."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ce changement suscite une fracture générationnelle palpable au sein du village.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Madame Delacroix est-elle mécontente ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le trajet est trop long."
+        },
+        {
+          "id": "a2",
+          "text": "Elle perd le contact humain."
+        },
+        {
+          "id": "a3",
+          "text": "Le coût du nouveau service de transport est devenu prohibitif pour les retraités."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "elle se sent dépossédée de ce lien social informel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que pensent les jeunes du bus traditionnel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il était inutile."
+        },
+        {
+          "id": "a2",
+          "text": "Il était trop vieux."
+        },
+        {
+          "id": "a3",
+          "text": "Il était un gaspillage."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Les jeunes ont défendu l'efficacité du système, arguant que le bus vide était un gaspillage de fonds publics.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif de l'auteur dans le dernier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Questionner l'évolution de la vie rurale."
+        },
+        {
+          "id": "a2",
+          "text": "Proposer une réforme administrative urgente."
+        },
+        {
+          "id": "a3",
+          "text": "Dénoncer les erreurs budgétaires de la municipalité actuelle."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elle cristallise le dilemme de la ruralité contemporaine : comment concilier l'optimisation des ressources avec le maintien des solidarités de proximité ?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de l'article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ironique."
+        },
+        {
+          "id": "a2",
+          "text": "Neutre et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Subjectif et passionné par les enjeux écologiques locaux."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le maire, pris entre ces deux visions irréconciliables, a proposé un compromis",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'paroxysme' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un débat calme."
+        },
+        {
+          "id": "a2",
+          "text": "Une fin définitive."
+        },
+        {
+          "id": "a3",
+          "text": "Un point culminant."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La tension a atteint son paroxysme lors de la dernière réunion du conseil municipal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court paragraphe argumentatif (100 mots) dans lequel vous proposez une solution alternative pour améliorer le transport rural tout en préservant le lien social entre les différentes générations.",
+      "en": "Rédigez un court paragraphe argumentatif (100 mots) dans lequel vous proposez une solution alternative pour améliorer le transport rural tout en préservant le lien social entre les différentes générations."
+    },
+    "minWords": 60,
+    "maxWords": 130,
+    "hints": [
+      "Comprenez les points de vue divergents sur la modernisation des services publics ruraux.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:38:20.466Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le dernier virage de la navette de Val-des-Pins | B2 Reading | WeLearn",
+      "en": "Le dernier virage de la navette de Val-des-Pins | B2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Lisez cet article sur la transformation du transport local à Val-des-Pins et analysez les tensions sociales qui en découlent.",
+      "en": "Lisez cet article sur la transformation du transport local à Val-des-Pins et analysez les tensions sociales qui en découlent."
+    },
+    "canonicalPath": "/en/practice/french/b2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:38:20.466Z"
+  }
+}

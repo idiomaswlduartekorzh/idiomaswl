@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-quiet-street",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "静寂の再分配：夜の街路が隠蔽する音響の階級",
+      "en": "静寂の再分配：夜の街路が隠蔽する音響の階級"
+    },
+    "intro": {
+      "es": "都市の夜、静寂は誰のために用意されているのか。本稿は、交通規制の裏側に潜む「音の不平等」を考察する。",
+      "en": "都市の夜、静寂は誰のために用意されているのか。本稿は、交通規制の裏側に潜む「音の不平等」を考察する。"
+    },
+    "mission": {
+      "es": "本文を精読し、筆者が提示する「静寂」の概念と、それが社会構造に与える影響について分析せよ。",
+      "en": "本文を精読し、筆者が提示する「静寂」の概念と、それが社会構造に与える影響について分析せよ。"
+    },
+    "targetText": "大都市の深夜、主要な幹線道路から重機や大型トラックの咆哮が消え去る時、都市はあたかも慈悲深い沈黙に包まれたかのような錯覚に陥る。都市計画家である佐藤氏は、これを「平和の言語」と呼ぶ。彼が推進する「夜間静穏化計画」は、中心部を貫く大通りを歩行者天国へと変貌させ、住民に安眠を約束するものだ。しかし、この平穏は、音という物理的エネルギーが単に消失したことを意味するのではない。それは、都市の地図上で価値を低く見積もられた路地裏、つまり社会的影響力の乏しい周辺地域へと、その騒音の総量を再分配しているに過ぎないのである。\n\nこの構造を如実に示すのが、物流管理官の田中氏が指揮する配送ルートの変更である。幹線道路の夜間通行が制限されると、物流は必然的に旧市街の入り組んだ生活道路へと迂回を余儀なくされる。かつては静かだった住宅街に、深夜、冷蔵トラックの唸りとアイドリングの振動が響き渡る。田中氏は「効率的な配送には最短距離が不可欠であり、中心部の静寂維持には代償が伴う」と淡々と語る。この代償を支払わされているのは、防音壁を設置する資金もなければ、市議会に陳情する政治的資源も持たない、低所得層の住民たちである。\n\n夜の街路で交錯するこの不均衡は、単なる騒音問題の枠を超え、都市の権力構造を可視化する鏡となっている。高級住宅街や再開発エリアに住まう富裕層が享受する静寂は、彼らの窓の外で起きていることではない。それは、彼らの生活圏から遠く離れた場所で、誰かの眠りを削り取ることで成立している「輸入された沈黙」である。佐藤氏が掲げる平和の言語は、この音の流動性を隠蔽し、都市をクリーンで洗練された空間として演出するための修辞に他ならない。\n\n先日、この問題に抗議する住民グループが市庁舎前で声を上げたが、その抗議活動さえも、深夜の物流ルートから外れた静かな広場で行われたため、都市の主要な意思決定層には届かなかった。彼らが選んだ「平和的な抗議」という手段は、皮肉にも彼らが批判する対象である「静寂の維持」に貢献してしまったのである。田中氏は、この抗議を「騒音公害への懸念」として事務的に処理し、配送時間をわずかに調整することで、実質的なルート変更は一切行わなかった。この結末は、権力が静寂を武器としていかに市民の声を無力化できるかを象徴している。\n\n結局のところ、都市における平和とは、誰にその騒音を押し付けるかという冷徹な計算の結果に過ぎないのだろうか。我々は、静かな夜の街を歩くとき、その静寂がどこから搾取されているのかを自問しなければならない。音の不平等は、光の届かない路地で今日も増幅され続けている。この構造的な不均衡を是正しない限り、都市が謳う「平和」は、特定の階級による特権的な幻想であり続けるだろう。静寂を享受する者が、その背景にある騒音の再分配に気づくとき、初めて真の対話が始まるのかもしれない。しかし、その夜はまだ遠い。\n\n真の変革を求めるならば、静寂の受益者たちが自らの特権を解体し、騒音を等しく分かち合うという不都合な現実を受け入れる必要がある。しかし、都市の設計思想は依然として効率と平穏を至上の価値として掲げており、その根底にある階層的な支配構造を温存し続けている。住民たちが選んだ穏やかな抗議が、皮肉にも支配層の耳に届くことのない「無音の叫び」に終わった事実は、権力が構築した静寂の壁がいかに強固であるかを物語る。もし、路地裏に押し込められた騒音が、物理的な限界を超えて中心部へと逆流し、富裕層の安眠を直接的に脅かす事態が訪れたとしたら、その時初めて、都市計画家や物流管理官たちは重い腰を上げるのかもしれない。だが、それは共生への道ではなく、さらなる監視と排除の強化を招くという最悪の帰結を孕んでいる。結局のところ、都市という巨大な装置において、誰もが等しく静寂を享受するという理想は、物理法則を無視した夢想に過ぎないのだろうか。我々が享受する平穏の裏側で、誰かの生活が犠牲になっているという認識を共有することは、もはや単なる道徳的義務ではなく、都市という共同体が崩壊を避けるための唯一の防波堤となるはずである。しかし、現状の都市は、その防波堤を築く代わりに、音の壁をより高く、より厚く塗り固めることで、分断を深める道を選んでいる。この閉塞した循環を断ち切る鍵は、静寂の価値を再定義し、騒音を社会の負債ではなく、都市という生命体が共有すべきコストとして再認識することにある。その認識が広まらない限り、都市の夜は、誰かにとっての安らぎと、誰かにとっての苦痛という二重構造を保持し続け、決して交わることのない平行線を歩み続けることになるだろう。我々に突きつけられているのは、静かな夜の街を歩くという些細な行為の中に潜む、残酷なまでの不平等の連鎖を直視する勇気そのものである。",
+    "wordCount": 1854,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "咆哮",
+        "lemma": "咆哮",
+        "glosses": {
+          "es": "roar",
+          "en": "roar"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "再分配",
+        "lemma": "再分配",
+        "glosses": {
+          "es": "redistribution",
+          "en": "redistribution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "修辞",
+        "lemma": "修辞",
+        "glosses": {
+          "es": "rhetoric",
+          "en": "rhetoric"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "無力化",
+        "lemma": "無力化",
+        "glosses": {
+          "es": "neutralization",
+          "en": "neutralization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "搾取",
+        "lemma": "搾取",
+        "glosses": {
+          "es": "exploitation",
+          "en": "exploitation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不均衡",
+        "lemma": "不均衡",
+        "glosses": {
+          "es": "imbalance",
+          "en": "imbalance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 53,
+      "maxSentenceWords": 92,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T14:15:34.127Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が本稿を通じて主張しようとしていることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "都市の静寂が隠す不平等"
+        },
+        {
+          "id": "a2",
+          "text": "夜間静穏化計画の成功"
+        },
+        {
+          "id": "a3",
+          "text": "物流業界の効率化の必要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "それは、都市の地図上で価値を低く見積もられた路地裏、つまり社会的影響力の乏しい周辺地域へと、その騒音の総量を再分配しているに過ぎないのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "住民グループの抗議が実を結ばなかった最大の理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "参加人数が少なかった"
+        },
+        {
+          "id": "a2",
+          "text": "抗議場所が静かだった"
+        },
+        {
+          "id": "a3",
+          "text": "物流ルートを無視した"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼らが選んだ「平和的な抗議」という手段は、皮肉にも彼らが批判する対象である「静寂の維持」に貢献してしまったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "「輸入された沈黙」という表現が示唆するものは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "海外の技術による静音化"
+        },
+        {
+          "id": "a2",
+          "text": "夜間配送による経済的利益"
+        },
+        {
+          "id": "a3",
+          "text": "富裕層が他者から奪った静寂"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは、彼らの生活圏から遠く離れた場所で、誰かの眠りを削り取ることで成立している「輸入された沈黙」である。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が佐藤氏と田中氏の言動を具体的に描写した目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "権力構造が静寂をいかに操作するかを暴露するため"
+        },
+        {
+          "id": "a2",
+          "text": "都市計画の複雑さを専門的に解説するため"
+        },
+        {
+          "id": "a3",
+          "text": "物流管理の改善策を具体的に提案するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この結末は、権力が静寂を武器としていかに市民の声を無力化できるかを象徴している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本文全体の論調として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "中立的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この構造的な不均衡を是正しない限り、都市が謳う「平和」は、特定の階級による特権的な幻想であり続けるだろう。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「咆哮」の意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "静かな囁き"
+        },
+        {
+          "id": "a2",
+          "text": "猛獣の叫び声"
+        },
+        {
+          "id": "a3",
+          "text": "機械の大きな音"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "主要な幹線道路から重機や大型トラックの咆哮が消え去る時",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "都市における「静寂」が、特定の階級の特権となっている現状について、あなたが考える解決策を400字程度で述べよ。",
+      "en": "都市における「静寂」が、特定の階級の特権となっている現状について、あなたが考える解決策を400字程度で述べよ。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "本文を精読し、筆者が提示する「静寂」の概念と、それが社会構造に与える影響について分析せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T14:15:34.127Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "静寂の再分配：夜の街路が隠蔽する音響の階級 | C2 Reading | WeLearn",
+      "en": "静寂の再分配：夜の街路が隠蔽する音響の階級 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "都市の夜、静寂は誰のために用意されているのか。本稿は、交通規制の裏側に潜む「音の不平等」を考察する。",
+      "en": "都市の夜、静寂は誰のために用意されているのか。本稿は、交通規制の裏側に潜む「音の不平等」を考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-11T14:15:34.127Z"
+  }
+}
