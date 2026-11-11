@@ -49,9 +49,12 @@ Fecha de corte: 25 de agosto de 2026.
 
 ## Escritura laboral B2–C2 multilingüe — 11 de noviembre de 2026
 
-Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
-`origin/main@fb2989af`. [PR #57](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/57)
-abierto. Estado: `EN_VALIDACION`, sin integración ni despliegue.
+Rama `codex/writing-b2-workplace-preview-20261110`, integrada mediante
+[PR #57](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/57) en
+`main@d4c956a5bc7d33a08a4d50a5f8b087558749c5e4`.
+Estado: `DESPLEGADO`. Vercel publicó ese SHA desde `main` en
+`dpl_Ddf65kmigogECTtsLEPdwQGqCnDa` (`READY`, Production, alias
+`www.idiomaswl.com`).
 El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
 recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
 nivel B2, C1 y C2 de inglés, francés, alemán, italiano, portugués, ruso, japonés
@@ -73,15 +76,18 @@ inglés B2–C2, francés B2, alemán B2 y japonés B2, además del foco y ancho
 
 El primer build local con Webpack agotó el límite de 2 GB de Node. Un segundo
 intento con 4 GB se detuvo durante la optimización para preservar espacio en
-el portátil. La vista previa remota de Vercel compiló `8ac448a8` y sirvió las
-24 rutas de escritura con GET/HEAD HTTP 200 y metadatos nativos. La prueba de los
-24 hubs encontró que italiano B2 usaba una página especial y carecía del enlace
-a escritura. Se corrigió esa página y el guardián para revisar el hub real; un
-nuevo build remoto y smoke del commit corregido son obligatorios antes de
-integrar. Después siguen la integración en `main` y el smoke de producción. El fallo
-previo de `check:reading-grammar-index` provenía de dos auxiliares existentes de
-inglés A1/A2; se distinguieron de las lecciones y se actualizó el índice, sin
-reducir los controles de temas. Contrato y estado:
+el portátil. El build completo pasó en GitHub Actions y la vista previa remota
+de Vercel compiló el commit final `eebda811`. El smoke remoto pasó 72/72:
+GET/HEAD de las 24 rutas de escritura y GET de los 24 hubs. Detectó que
+italiano B2 usaba una página especial y carecía del enlace a escritura; se
+corrigió y se volvió a comprobar antes de integrar. Los workflows de GitHub
+Actions `baseline-and-types` y `production-build` pasaron en el SHA integrado.
+En el dominio público pasaron 72/72 comprobaciones de rutas y 24/24 entradas
+del sitemap. El smoke general de producción, ampliado con las 24 rutas nuevas,
+pasó 49/49 rutas y 17/17 audios. El fallo previo de
+`check:reading-grammar-index` provenía de dos
+auxiliares existentes de inglés A1/A2; se distinguieron de las lecciones y se
+actualizó el índice, sin reducir los controles de temas. Contrato y estado:
 [`writing-workplace-agent-harness.md`](writing-workplace-agent-harness.md).
 
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
