@@ -3,9 +3,10 @@ import { WRITING_UI_IT } from './writing-workplace-ui-it'
 import { WRITING_UI_PT } from './writing-workplace-ui-pt'
 import { WRITING_UI_RU } from './writing-workplace-ui-ru'
 import { WRITING_UI_JA } from './writing-workplace-ui-ja'
+import { WRITING_UI_KO } from './writing-workplace-ui-ko'
 
 export type WritingLevel = 'B2' | 'C1' | 'C2'
-export type WritingLocale = 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ru' | 'ja'
+export type WritingLocale = 'en' | 'fr' | 'de' | 'it' | 'pt' | 'ru' | 'ja' | 'ko'
 
 type Stage = 'email' | 'document' | 'analysis' | 'reply' | 'review'
 
@@ -82,6 +83,7 @@ export const WRITING_UI: Record<WritingLocale, WritingUi> = {
   pt: WRITING_UI_PT,
   ru: WRITING_UI_RU,
   ja: WRITING_UI_JA,
+  ko: WRITING_UI_KO,
   en: {
     languageName: 'English',
     languageSlug: 'ingles',
