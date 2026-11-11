@@ -38,6 +38,8 @@ export type SkillHubProps = {
   /** Migaja del idioma: `/practica/ingles` y «🇬🇧 Inglés». */
   langHref: string
   langLabel: string
+  breadcrumbLabel?: string
+  breadcrumbAriaLabel?: string
   /** La chapa y la última migaja: «A2». */
   levelLabel: string
   eyebrow: string
@@ -61,6 +63,8 @@ export type SkillHubProps = {
 export default function SkillHub({
   langHref,
   langLabel,
+  breadcrumbLabel = 'Práctica',
+  breadcrumbAriaLabel = 'Migas de pan',
   levelLabel,
   eyebrow,
   title,
@@ -99,8 +103,8 @@ export default function SkillHub({
   return (
     <div className="wlp-page" style={{ '--wlp-accent': accent } as React.CSSProperties}>
       <div className="wlp-shell">
-        <nav className="wlp-breadcrumb" aria-label="Migas de pan">
-          <Link href="/practica">Práctica</Link>
+        <nav className="wlp-breadcrumb" aria-label={breadcrumbAriaLabel}>
+          <Link href="/practica">{breadcrumbLabel}</Link>
           <span aria-hidden="true">/</span>
           <Link href={langHref}>{langLabel}</Link>
           <span aria-hidden="true">/</span>

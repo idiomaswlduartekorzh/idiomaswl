@@ -35,8 +35,13 @@ for (const language of languages) {
     const image = fs.readFileSync(imagePath, 'utf8')
     const hubPath = language.slug === 'ingles'
       ? new URL(level === 'b2' ? '../src/app/(site)/practica/ingles/b2/page.tsx' : '../src/components/grammar/AdvancedEnglishLevelHub.tsx', import.meta.url)
-      : new URL(`../src/components/practica/${({ frances: 'French', aleman: 'German', italiano: 'Italian', portugues: 'Portuguese', ruso: 'Russian', japones: 'Japanese', coreano: 'Korean' })[language.slug]}AdvancedLevelHub.tsx`, import.meta.url)
-    if (!fs.readFileSync(hubPath, 'utf8').includes('/escritura') || /robots:\s*\{\s*index:\s*false/u.test(route)) {
+      : language.slug === 'italiano' && level === 'b2'
+        ? new URL('../src/app/(site)/practica/italiano/b2/page.tsx', import.meta.url)
+        : new URL(`../src/components/practica/${({ frances: 'French', aleman: 'German', italiano: 'Italian', portugues: 'Portuguese', ruso: 'Russian', japones: 'Japanese', coreano: 'Korean' })[language.slug]}AdvancedLevelHub.tsx`, import.meta.url)
+    const expectedLink = language.slug === 'italiano' && level === 'b2'
+      ? '/practica/italiano/b2/escritura'
+      : '/escritura'
+    if (!fs.readFileSync(hubPath, 'utf8').includes(expectedLink) || /robots:\s*\{\s*index:\s*false/u.test(route)) {
       console.error(`${language.slug}/${level}: writing route is hidden from the level hub or search index.`)
       failed = true
       continue
