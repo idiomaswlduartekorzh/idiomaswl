@@ -171,7 +171,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Hábito raro',
-            lines: [['Sofia', 'Nous [[0]] au restaurant. (~10%)']],
+            lines: [['Sofia', 'Nous [[0]] [[1]] restaurant. (~10%)']],
             blanks: [
               { options: ['mangeons rarement', 'rarement mangeons', 'mangeons'], answer: 'mangeons rarement', explain: '"Nous mangeons rarement" — verbe + adverbe.' },
               { options: ['au', 'à', 'en'], answer: 'au', explain: '"au restaurant" — contraction de "à + le".' },

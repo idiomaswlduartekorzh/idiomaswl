@@ -224,7 +224,6 @@ const topic: GrammarTopic = {
           { options: ['réussissent', 'réussissons', 'réussit', 'réussis'], answer: 'réussissent', explain: '"Les étudiants" (ils) → "réussissent".' },
           { options: ['réunissent', 'réunissons', 'réunit', 'réunis'], answer: 'réunissent', explain: '"Vera et Nico" (ils) → "réunissent".' },
           { options: ['choisis', 'choisit', 'choisissons', 'choisissent'], answer: 'choisis', explain: '"Tu" → "choisis" (-is).' },
-          { options: ['choisissent', 'choisissons', 'choisit', 'choisis'], answer: 'choisissent', explain: 'Confirmación.' },
         ],
       },
       {

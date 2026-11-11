@@ -181,6 +181,7 @@ const topic: GrammarTopic = {
           { options: ['arrivée', 'arrivé', 'arrivées', 'arrivés'], answer: 'arrivée', explain: '"suis arrivée" — être + je (Emma = fém. sg) → arrivée (-e).' },
           { options: ['vu', 'vue', 'vus', 'vues'], answer: 'vu', explain: '"ai vu mes amies" — avoir + COD après → pas d\'accord. vu invariable.' },
           { options: ['écoutée', 'écouté', 'écoutés', 'écoutées'], answer: 'écoutée', explain: '"ai écoutée" — avoir + COD (que = la conférence, fém. sg) avant → écoutée (-e).' },
+          { options: ['retrouvées', 'retrouvés', 'retrouvée', 'retrouvé'], answer: 'retrouvées', explain: 'Emma y sus amigas forman un grupo femenino plural: "nous nous sommes retrouvées".' },
         ],
       },
       {

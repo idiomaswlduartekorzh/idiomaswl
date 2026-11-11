@@ -213,7 +213,6 @@ const topic: GrammarTopic = {
           { options: ["n'a pas de", "n'a pas une", 'ne a pas de', "n'a pas"], answer: "n'a pas de", explain: '"avoir" + vocal → n\'. "Une voiture" → "pas de voiture" en negativa.' },
           { options: ['ne mange pas de', 'ne mange pas la', "n'mange pas de", 'ne pas mange de'], answer: 'ne mange pas de', explain: '"de la viande" → "pas de viande" en negativa.' },
           { options: ["n'aime pas", 'ne aime pas', "n'aime de pas", 'pas aime'], answer: "n'aime pas", explain: '"aimer" comienza por vocal → n\'aime pas.' },
-          { options: ["n'aime pas", 'ne aime pas', "n'aime de pas", 'pas aime'], answer: "n'aime pas", explain: 'Extra blank — confirma n\'aime pas.' },
         ],
       },
       {

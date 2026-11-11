@@ -52,8 +52,9 @@ async function readTopics(languageDir, level) {
   }
 
   const topics = []
-  // quality-closeout.ts transforma temas al importarlos; no define una lección propia.
-  for (const entry of entries.filter((name) => name.endsWith('.ts') && name !== 'index.ts' && name !== 'quality-closeout.ts').sort()) {
+  // Los closeouts y factories transforman o construyen temas al importarlos; no son
+  // lecciones públicas y no deben entrar en el catálogo de lectura.
+  for (const entry of entries.filter((name) => name.endsWith('.ts') && name !== 'index.ts' && !name.endsWith('quality-closeout.ts') && !name.endsWith('-factory.ts')).sort()) {
     const source = await readFile(path.join(dir, entry), 'utf8')
     const slug = extractField(source, 'slug')
     if (!slug) {

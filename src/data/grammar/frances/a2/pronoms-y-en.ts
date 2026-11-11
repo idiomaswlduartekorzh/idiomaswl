@@ -178,6 +178,10 @@ const topic: GrammarTopic = {
         text: 'Client: Bonjour ! Vous avez du pain de campagne ? Vendeur: Oui, nous [[0]] avons. Client: J\'[[1]] prends deux. Et des tomates ? Vendeur: Il [[2]] reste quelques-unes. Client: Je vais aussi au marché — vous [[3]] allez ? Vendeur: J\'[[4]] vais parfois. Client: Vous pensez souvent aux promotions ? Vendeur: Oui, j\'[[5]] pense toujours !',
         blanks: [
           { options: ['en', 'y', 'le', 'lui'], answer: 'en', explain: '"en avons / j\'en prends / il en reste" = partitivo → en.' },
+          { options: ['en', 'y', 'le', 'lui'], answer: 'en', explain: '"J\'en prends deux" sustituye du pain y conserva la cantidad.' },
+          { options: ['en', 'y', 'le', 'lui'], answer: 'en', explain: '"Il en reste" sustituye des tomates introducido por de.' },
+          { options: ['y', 'en', 'lui', 'le'], answer: 'y', explain: '"Vous y allez" sustituye au marché, un lugar con à.' },
+          { options: ['y', 'en', 'lui', 'le'], answer: 'y', explain: '"J\'y vais" retoma el lugar au marché.' },
           { options: ['y', 'en', 'lui', 'le'], answer: 'y', explain: '"y allez / j\'y vais / j\'y pense" = lieu/à+chose → y.' },
         ],
       },

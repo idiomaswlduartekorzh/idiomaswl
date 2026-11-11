@@ -217,7 +217,6 @@ const topic: GrammarTopic = {
           { options: ['chapeaux', 'chapeaus', 'chapeas', 'chapeauxs'], answer: 'chapeaux', explain: '"Chapeau" → -eau → -eaux: "chapeaux".' },
           { options: ['jeux', 'jeus', 'jeus', 'jeuxs'], answer: 'jeux', explain: '"Jeu" → -eu → -eux: "jeux".' },
           { options: ['animaux', 'animals', 'animales', 'animeaux'], answer: 'animaux', explain: '"Animal" → -al → -aux: "animaux".' },
-          { options: ['animaux', 'animals', 'animales', 'animeaux'], answer: 'animaux', explain: 'Confirmación.' },
         ],
       },
       {
@@ -234,6 +233,7 @@ const topic: GrammarTopic = {
           { answer: 'journaux', accepted: ['journaux'], explain: '"Journal" → -al → -aux: "journaux".' },
           { answer: 'tableaux', accepted: ['tableaux'], explain: '"Tableau" → -eau → -eaux: "tableaux".' },
           { answer: 'animaux', accepted: ['animaux'], explain: '"Animal" → -al → -aux: "animaux".' },
+          { answer: 'chats', accepted: ['chats'], explain: '"Chat" sigue la regla general: se añade -s.' },
         ],
       },
       {

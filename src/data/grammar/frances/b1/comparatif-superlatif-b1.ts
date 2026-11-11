@@ -208,7 +208,7 @@ const topic: GrammarTopic = {
         intro: "Completa este anuncio publicitario comparando productos.",
         type: "guidedText",
         scene: "Una empresa lanza un nuevo smartphone y lo compara con la competencia en un anuncio.",
-        text: "Notre nouveau téléphone est [[0]] rapide [[1]] tous les autres modèles sur le marché. Sa batterie dure [[2]] longtemps que celle de la concurrence. C'est l'appareil [[3]] léger de sa catégorie — il pèse [[4]] qu'une tablette de chocolat! La caméra prend [[5]] belles photos [[1]] jamais. Et bien sûr, il est [[6]] — c'est l'investissement le [[7]] pour votre argent.",
+        text: "Notre nouveau téléphone est [[0]] rapide [[1]] tous les autres modèles sur le marché. Sa batterie dure [[2]] longtemps que celle de la concurrence. C'est l'appareil [[3]] léger de sa catégorie — il pèse [[4]] qu'une tablette de chocolat! La caméra prend [[5]] belles photos que jamais. Et bien sûr, il est [[6]] — c'est l'investissement le [[7]] pour votre argent.",
         blanks: [
           { options: ["plus", "moins", "aussi", "autant"], answer: "plus", explain: "Superioridad: plus + adjectif + que. Nuestro teléfono es más rápido que todos los demás." },
           { options: ["que", "de", "qu'", "comme"], answer: "que", explain: "Comparatif: plus + adj + que. Siempre 'que' (o 'qu'' ante vocal/h mudo)." },

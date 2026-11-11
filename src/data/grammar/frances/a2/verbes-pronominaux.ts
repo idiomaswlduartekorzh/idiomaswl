@@ -179,6 +179,10 @@ const topic: GrammarTopic = {
         text: 'Le matin, je [[0]] lève à 6h30. Je [[1]] douche, puis je [[2]] habille. Mon frère, lui, [[3]] réveille très tard. Mes parents [[4]] lèvent ensemble et ils [[5]] préparent un café. Nous [[6]] retrouvons tous à table pour le petit-déjeuner.',
         blanks: [
           { options: ['me', 'te', 'se', 'nous'], answer: 'me', explain: '"je me lève / je me douche / je me habille → m\'habille" — je → me.' },
+          { options: ['me', 'te', 'se', 'nous'], answer: 'me', explain: '"Je me douche" — el pronombre reflexivo de je es me.' },
+          { options: ["m'", 'me', 'se', 'nous'], answer: "m'", explain: 'Ante vocal, me se elide: "je m\'habille".' },
+          { options: ['se', 'me', 'nous', 'vous'], answer: 'se', explain: '"Mon frère se réveille" — il → se.' },
+          { options: ['se', 'me', 'nous', 'vous'], answer: 'se', explain: '"Mes parents se lèvent" — ils → se.' },
           { options: ['se', 'me', 'nous', 'vous'], answer: 'se', explain: '"il se réveille / ils se lèvent / ils se préparent" — il/ils → se.' },
           { options: ['nous', 'se', 'vous', 'me'], answer: 'nous', explain: '"nous nous retrouvons" — nous → nous.' },
         ],

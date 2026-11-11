@@ -10,6 +10,7 @@ const routes = [
   ['japones', 'b1'],
 ]
 const errors = []
+const specialized = { aleman: 'German', frances: 'French' }
 
 function source(relativePath) {
   return readFileSync(join(root, relativePath), 'utf8')
@@ -23,8 +24,9 @@ for (const [language, level] of routes) {
     const routeRoot = `src/app/(site)/practica/${language}/${level}/gramatica`
     const indexSource = source(`${routeRoot}/page.tsx`)
     const topicSource = source(`${routeRoot}/[slug]/page.tsx`)
-    const indexComponent = language === 'aleman' ? '<GermanGrammarCollection' : '<GrammarCollectionIndex'
-    const topicComponent = language === 'aleman' ? '<GermanGrammarTopicPage' : '<GrammarCollectionTopicPage'
+    const componentPrefix = specialized[language]
+    const indexComponent = componentPrefix ? `<${componentPrefix}GrammarCollection` : '<GrammarCollectionIndex'
+    const topicComponent = componentPrefix ? `<${componentPrefix}GrammarTopicPage` : '<GrammarCollectionTopicPage'
 
     expect(indexSource, 'generateGrammarIndexMetadata', `${language}/${level} índice`)
     expect(indexSource, indexComponent, `${language}/${level} índice`)
@@ -80,6 +82,37 @@ for (const marker of [
 
 if (germanCollection.startsWith("'use client'") || germanTopic.startsWith("'use client'")) {
   errors.push('fachada alemana: colección y lección deben renderizar datos estructurados en servidor')
+}
+
+const frenchCollection = source('src/components/grammar/FrenchGrammarCollection.tsx')
+for (const marker of [
+  "'@type': 'CollectionPage'",
+  "'@type': 'ItemList'",
+  'topics.map',
+  'topic.slug',
+]) expect(frenchCollection, marker, 'fachada francesa de colección')
+
+const frenchTopic = source('src/components/grammar/FrenchGrammarTopicPage.tsx')
+for (const marker of [
+  "'@type': 'LearningResource'",
+  "'@type': 'BreadcrumbList'",
+  'isAccessibleForFree: true',
+  'grammarVisualImageObject',
+  '<FrenchGrammarLesson',
+  '<TopicNav',
+  'resource.exercisesPdf',
+  'resource.answerKeyPdf',
+]) expect(frenchTopic, marker, 'fachada francesa de lección')
+
+const frenchLesson = source('src/components/grammar/FrenchGrammarLesson.tsx')
+for (const marker of [
+  '<GrammarTopicVisual',
+  'topic.seo.map',
+  '<ReferenceTable',
+]) expect(frenchLesson, marker, 'contenido francés rastreable')
+
+if (frenchCollection.startsWith("'use client'") || frenchTopic.startsWith("'use client'")) {
+  errors.push('fachada francesa: colección y lección deben renderizar datos estructurados en servidor')
 }
 
 if (errors.length) {

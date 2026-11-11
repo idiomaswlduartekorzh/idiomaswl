@@ -254,6 +254,7 @@ const topic: GrammarTopic = {
           { answer: 'éclairaient', accepted: ['éclairaient'], explain: 'Descripción de las farolas como contexto → imparfait de "éclairer".' },
           { answer: "ai entendu", accepted: ["ai entendu", "j'ai entendu"], explain: '"Soudain" señala un evento puntual e inesperado → passé composé de "entendre".' },
           { answer: 'me suis retourné(e)', accepted: ['me suis retourné', 'me suis retournée', 'me suis retourné(e)'], explain: 'Acción puntual de girarse → passé composé de "se retourner".' },
+          { answer: 'ai vu', accepted: ['ai vu', "j'ai vu"], explain: 'Ver a la amiga es el segundo evento puntual de la secuencia → passé composé de "voir".' },
         ],
       },
       {

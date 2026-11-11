@@ -179,7 +179,9 @@ const topic: GrammarTopic = {
         blanks: [
           { options: ['soyez', 'êtes', 'seriez', 'serez'], answer: 'soyez', explain: '"que vous soyez / que vous preniez" — être: soyez. prendre: que vous preniez.' },
           { options: ['fasse', 'fait', 'ferait', 'fera'], answer: 'fasse', explain: '"que chacun fasse / que tout le monde fasse" — faire irregular: fasse (3ª sg).' },
-          { options: ['éteigniez', 'éteignez', 'éteigniez', 'éteindrez'], answer: 'éteigniez', explain: '"que vous éteigniez" — éteindre → ils éteignent → éteing- → éteigniez.' },
+          { options: ['preniez', 'prenez', 'prendrez', 'prendriez'], answer: 'preniez', explain: '"que vous preniez le temps" — prendre en subjonctif, vous.' },
+          { options: ['éteigniez', 'éteignez', 'éteindriez', 'éteindrez'], answer: 'éteigniez', explain: '"que vous éteigniez" — éteindre → ils éteignent → éteign- + -iez.' },
+          { options: ['fasse', 'fait', 'ferait', 'fera'], answer: 'fasse', explain: '"que tout le monde fasse" — faire irregular en tercera persona singular.' },
         ],
       },
       {

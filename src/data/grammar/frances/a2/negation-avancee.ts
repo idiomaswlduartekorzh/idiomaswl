@@ -22,7 +22,7 @@ const topic: GrammarTopic = {
   guide: {
     goal: 'Expresar matices de negación con ne...plus, jamais, rien, personne y que.',
     model: 'Je ne mange plus de viande. (Ya no como carne.) / Il ne dit jamais bonjour. (Nunca dice hola.) / Elle ne connaît personne ici. (No conoce a nadie aquí.)',
-    formula: 'ne + verbe + (plus / jamais / rien / personne / que) | rien/personne como sujeto: rien/personne + ne + V',
+    formula: 'ne/n’ + verbe conjugué + pas/plus/jamais/rien/personne/que',
     decisions: [
       'plus: "Je ne travaille plus là-bas" = ya no trabajo allí',
       'jamais: "Il n\'arrive jamais à l\'heure" = nunca llega a tiempo',
@@ -179,6 +179,8 @@ const topic: GrammarTopic = {
         blanks: [
           { options: ['plus', 'jamais', 'rien', 'personne'], answer: 'jamais', explain: '"ne dormais jamais bien / ne sortais jamais" — nunca/jamás.' },
           { options: ['pas', 'jamais', 'plus', 'rien'], answer: 'pas', explain: '"n\'y avait pas de chauffage / ne faisaient pas de bruit" — negación simple ne...pas.' },
+          { options: ['pas', 'jamais', 'plus', 'rien'], answer: 'pas', explain: '"ne faisaient pas de bruit" — negación simple con de.' },
+          { options: ['jamais', 'plus', 'rien', 'personne'], answer: 'jamais', explain: '"je ne sortais jamais seule" — nunca salía sola.' },
           { options: ['personne', 'rien', 'jamais', 'plus'], answer: 'personne', explain: '"il n\'y avait personne qui voulait" — nadie quería (COD).' },
           { options: ['jamais', 'plus', 'rien', 'personne'], answer: 'jamais', explain: '"je n\'ai jamais regretté" — nunca he lamentado.' },
         ],

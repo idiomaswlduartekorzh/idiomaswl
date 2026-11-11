@@ -180,6 +180,9 @@ const topic: GrammarTopic = {
           { options: ['que', 'qui', 'dont', 'où'], answer: 'que', explain: '"que j\'adore / que je t\'avais parlé → dont" — COD de adore. Nota: \'dont\' va en la 5ª oración.' },
           { options: ['qui', 'que', 'dont', 'où'], answer: 'qui', explain: '"qui a / qui j\'ai rencontrés → que" — sujeto de a. Nota: \'que\' para rencontrer.' },
           { options: ['où', 'que', 'qui', 'dont'], answer: 'où', explain: '"où j\'ai dormi / où on a visité" — lieu y tiempo → où.' },
+          { options: ['que', 'qui', 'dont', 'où'], answer: 'que', explain: '"les gens que j\'ai rencontrés" — que es COD de rencontrer.' },
+          { options: ['dont', 'que', 'qui', 'où'], answer: 'dont', explain: '"le restaurant dont je t\'avais parlé" — parler de quelque chose → dont.' },
+          { options: ['où', 'que', 'qui', 'dont'], answer: 'où', explain: '"le jour où" expresa el momento en que ocurrió la visita.' },
         ],
       },
       {

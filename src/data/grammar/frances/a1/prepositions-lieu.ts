@@ -209,16 +209,16 @@ const topic: GrammarTopic = {
         intro: 'Gael describe un viaje cultural de WeLearn. Elige la preposición correcta en cada caso.',
         type: 'guidedText',
         scene: 'Gael describe el viaje de estudiantes de WeLearn por el mundo.',
-        text: 'Les étudiants de WeLearn voyagent ! Ana habite [[0]] Madrid — elle est [[1]] Espagne. Carlos est allé [[2]] Brésil l\'an dernier. Vera est originaire [[3]] Ukraine mais elle habite maintenant [[0a]] Bucaramanga. Marco vit [[4]] États-Unis. Et Lina va partir [[5]] Japon la semaine prochaine. Tout le monde se retrouve [[6]] la salle de classe virtuelle de WeLearn.',
+        text: 'Les étudiants de WeLearn voyagent ! Ana habite [[0]] Madrid — elle est [[1]] Espagne. Carlos est allé [[2]] Brésil l\'an dernier. Vera est originaire [[3]] Ukraine mais elle habite maintenant [[4]] Bucaramanga. Marco vit [[5]] États-Unis. Et Lina va partir [[6]] Japon la semaine prochaine. Tout le monde se retrouve [[7]] la salle de classe virtuelle de WeLearn.',
         blanks: [
           { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: '"Madrid" es ciudad → "à Madrid".' },
           { options: ['en', 'au', 'à', 'aux'], answer: 'en', explain: '"Espagne" termina en -e → fem. → "en Espagne".' },
           { options: ['au', 'en', 'à', 'aux'], answer: 'au', explain: '"Brésil" es masc. → "au Brésil".' },
           { options: ["d'", 'du', 'de', 'des'], answer: "d'", explain: '"Ukraine" empieza por vocal → "d\'Ukraine" (origen: de/d\').' },
+          { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: '"Bucaramanga" es ciudad → "à Bucaramanga".' },
           { options: ['aux', 'au', 'en', 'à'], answer: 'aux', explain: '"États-Unis" es plural → "aux États-Unis".' },
           { options: ['au', 'en', 'à', 'aux'], answer: 'au', explain: '"Japon" es masc. → "au Japon".' },
           { options: ['dans', 'sur', 'devant', 'sous'], answer: 'dans', explain: '"Dans la salle" = dentro de la sala virtual.' },
-          { options: ['à', 'en', 'au', 'aux'], answer: 'à', explain: 'Extra confirming blank.' },
         ],
       },
       {
@@ -235,6 +235,7 @@ const topic: GrammarTopic = {
           { answer: 'en', accepted: ['en'], explain: '"Italie" termina en -e → fem. → "en Italie".' },
           { answer: 'aux', accepted: ['aux'], explain: '"États-Unis" es plural → "aux États-Unis".' },
           { answer: 'dans', accepted: ['dans'], explain: '"Dans la salle" = dentro de la sala.' },
+          { answer: 'sur', accepted: ['sur'], explain: '"Sur mon bureau" = encima de mi escritorio.' },
         ],
       },
       {

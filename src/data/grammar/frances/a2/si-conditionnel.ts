@@ -179,8 +179,12 @@ const topic: GrammarTopic = {
         blanks: [
           { options: ['avais', 'aurais', 'ai', 'aurai'], answer: 'avais', explain: '"si j\'avais / si j\'avais" — après si → imparfait (avais).' },
           { options: ['achèterais', 'achèterai', 'achetais', 'achète'], answer: 'achèterais', explain: '"j\'achèterais / nous partirions / je ferais" — conditionnel.' },
+          { options: ['achèterais', 'achèterai', 'achetais', 'achète'], answer: 'achèterais', explain: 'La consecuencia imaginada usa conditionnel présent: j\'achèterais.' },
           { options: ['avaient', 'auraient', 'ont', 'auront'], answer: 'avaient', explain: '"si mes amis avaient" — après si → imparfait (avaient, 3ª pl).' },
+          { options: ['partirions', 'partions', 'partirons', 'sommes partis'], answer: 'partirions', explain: 'La consecuencia de si + imparfait va en conditionnel: nous partirions.' },
           { options: ['serait', 'était', 'est', 'sera'], answer: 'serait', explain: '"ce serait" — être: ser- + -ait (conditionnel).' },
+          { options: ['étais', 'serais', 'suis', 'serai'], answer: 'étais', explain: 'Después de si se usa imparfait: si j\'étais.' },
+          { options: ['ferais', 'faisais', 'fais', 'ferai'], answer: 'ferais', explain: 'La consecuencia hipotética se expresa con conditionnel: je ferais.' },
         ],
       },
       {
@@ -196,6 +200,7 @@ const topic: GrammarTopic = {
           { answer: 'étions', explain: '"si nous étions" — être imparfait: étions.' },
           { answer: 'visiterions', explain: '"nous visiterions" — conditionnel: visiter + -ions.' },
           { answer: 'devrait', explain: '"elle devrait" — devoir: devr- + -ait.' },
+          { answer: 'pouvait', explain: 'Après si, la condition irréelle se formule à l\'imparfait: si elle pouvait.' },
         ],
       },
       {

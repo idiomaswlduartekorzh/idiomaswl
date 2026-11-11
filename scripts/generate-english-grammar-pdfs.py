@@ -15,7 +15,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import BaseDocTemplate, Frame, KeepTogether, PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.platypus import BaseDocTemplate, Frame, KeepTogether, NotAtTopPageBreak as PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
 PDF_LANGUAGE = os.environ.get('GRAMMAR_PDF_LANGUAGE', 'english').lower()
@@ -475,6 +475,28 @@ def l(english, french):
     return english
 
 
+def lower_language_es():
+    if IS_FRENCH:
+        return 'Francés'
+    if IS_GERMAN:
+        return 'Alemán'
+    if IS_ITALIAN:
+        return 'Italiano'
+    if IS_PORTUGUESE:
+        return 'Portugués'
+    if IS_KOREAN:
+        return 'Coreano'
+    if IS_JAPANESE:
+        return 'Japonés'
+    if IS_RUSSIAN:
+        return 'Ruso'
+    return 'Inglés'
+
+
+def lower_subject_es():
+    return f'Cuaderno de gramática {lower_language_es().lower()}'
+
+
 def p(text, style):
     printable = str(text).replace('→', '->')
     return Paragraph(escape(printable).replace('\n', '<br/>'), style)
@@ -512,8 +534,7 @@ class Workbook(BaseDocTemplate):
         self.edition = edition
         advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
         edition_label = {'complete': l('complete guide', 'cours complet'), 'exercises': l('exercise workbook', "cahier d'exercices"), 'answer-key': l('answer key', 'corrigé')}[edition]
-        lower_subject = 'Cuaderno de gramática alemana' if IS_GERMAN else 'Cuaderno de gramática inglesa'
-        subject = f"{l('English grammar', 'Grammaire française')} {edition_label} {topic['level']}" if advanced else f"{lower_subject} {topic['level']}"
+        subject = f"{l('English grammar', 'Grammaire française')} {edition_label} {topic['level']}" if advanced else f"{lower_subject_es()} {topic['level']}"
         super().__init__(filename, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=31 * mm, bottomMargin=20 * mm, title=f"Idiomas WeLearn - {topic['title']} - {edition_label}", author='Idiomas WeLearn', subject=subject)
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id='body')
         self.addPageTemplates([PageTemplate(id='welearn', frames=[frame], onPage=self.draw_page)])
@@ -547,8 +568,7 @@ class Workbook(BaseDocTemplate):
         canvas.setFillColor(MUTED)
         canvas.setFont('WeLearnEN', 6.7)
         edition_footer = {'complete': l('Complete guide', 'Cours complet'), 'exercises': l('Exercise workbook', "Cahier d'exercices"), 'answer-key': l('Answer key', 'Corrigé')}[self.edition]
-        lower_language = 'Alemán' if IS_GERMAN else 'Inglés'
-        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · {lower_language} {self.topic['level']} · idiomaswl.com"
+        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · {lower_language_es()} {self.topic['level']} · idiomaswl.com"
         page_label = l('Page', 'Page') if advanced else 'Página'
         canvas.drawString(18 * mm, 10 * mm, footer)
         canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'{page_label} {doc.page}')
@@ -954,7 +974,7 @@ def build_story(topic):
     if advanced:
         return build_advanced_standard_story(topic)
     labels = {
-        'cover': f"ENGLISH · LEVEL {topic['level']} · PRINTABLE WORKBOOK" if advanced else f"{'ALEMÁN' if IS_GERMAN else 'INGLÉS'} · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE",
+        'cover': f"ENGLISH · LEVEL {topic['level']} · PRINTABLE WORKBOOK" if advanced else f"{lower_language_es().upper()} · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE",
         'goal': 'Lesson goal' if advanced else 'Meta de la lección',
         'model': 'Model' if advanced else 'Modelo',
         'outcomes': 'By the end, you will be able to' if advanced else 'Al terminar podrás',
@@ -986,7 +1006,10 @@ def build_story(topic):
         block = [p(section['heading'], STYLES['h2'])] + [p(paragraph, STYLES['body']) for paragraph in section.get('paragraphs', [])]
         story.append(KeepTogether(block))
         if section.get('table'):
-            story += [Spacer(1, 2 * mm), data_table(section['table']), Spacer(1, 2 * mm)]
+            # The following heading already supplies vertical rhythm. A trailing
+            # spacer can spill onto an otherwise empty page immediately before
+            # the explicit section break, producing a blank branded sheet.
+            story += [Spacer(1, 2 * mm), data_table(section['table'])]
     story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['glance'], STYLES['title']), info_box(labels['formula'], topic['guide']['formula'], CREAM, 'formula'), Spacer(1, 4 * mm), p(labels['order'], STYLES['h1'])]
     story.extend(p(f'{index}. {decision}', STYLES['body']) for index, decision in enumerate(topic['guide']['decisions'], 1))
     story += [Spacer(1, 2 * mm), data_table(topic['guide']['table']), Spacer(1, 3 * mm), p(labels['errors'], STYLES['h2'])]

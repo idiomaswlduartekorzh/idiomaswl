@@ -3,6 +3,7 @@ import pronomsSujet from './pronoms-sujet'
 import verbeEtre from './verbe-etre'
 import verbeAvoir from './verbe-avoir'
 import articles from './articles'
+import articlesPartitifs from './articles-partitifs'
 import genreNoms from './genre-noms'
 import presentVerbesEr from './present-verbes-er'
 import negationNePas from './negation-ne-pas'
@@ -17,12 +18,16 @@ import prepositionsTemps from './prepositions-temps'
 import futurProche from './futur-proche'
 import adverbesFrequence from './adverbes-frequence'
 import imperatif from './imperatif'
+import demonstratifsPresentatifs from './demonstratifs-presentatifs'
+import { closeFrenchFoundationTopic } from '../quality-closeout'
 
 const topics: GrammarTopic[] = [
   pronomsSujet,
   verbeEtre,
   verbeAvoir,
   articles,
+  articlesPartitifs,
+  demonstratifsPresentatifs,
   genreNoms,
   presentVerbesEr,
   negationNePas,
@@ -37,6 +42,6 @@ const topics: GrammarTopic[] = [
   futurProche,
   adverbesFrequence,
   imperatif,
-]
+].map((topic, index) => closeFrenchFoundationTopic(topic, 'a1', index + 1))
 
 export default topics

@@ -6,7 +6,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ingles', 'frances', 'aleman', 'italiano', 'portugues', 'ruso', 'coreano', 'japones'];
 const minimumTopics = {
   ingles: { a1: 25, a2: 20, b1: 20 },
-  frances: { a1: 18, a2: 20, b1: 20 },
+  frances: { a1: 20, a2: 20, b1: 20 },
   aleman: { a1: 20, a2: 20, b1: 20 },
   italiano: { a1: 18, a2: 20, b1: 6 },
   portugues: { a1: 18, a2: 20, b1: 20 },

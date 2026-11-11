@@ -134,7 +134,7 @@ const topic: GrammarTopic = {
             scene: "Restricción",
             lines: [["", "Elle ___ parle ___ à ses collègues les plus proches. (solo)"]],
             options: ["ne / qu'", "ne / que", "n' / que", "ne / pas que"],
-            answer: "n' / qu'",
+            answer: "ne / qu'",
             explain: "'Solo' = ne...que. Antes de vocal (à), 'que' se elide en 'qu'': ne parle qu'à ses collègues.",
           },
           {
@@ -208,16 +208,16 @@ const topic: GrammarTopic = {
         intro: "Completa este diálogo sobre cambios de vida usando las negaciones correctas.",
         type: "guidedText",
         scene: "Lucas ha cambiado mucho su estilo de vida. Su amiga Sophie le hace preguntas.",
-        text: "Sophie: Tu as l'air en forme! Tu fumes encore? Lucas: Non, je [[0]] fume [[1]] — j'ai arrêté il y a six mois. Sophie: Et tu bois toujours autant? Lucas: Pas du tout. Je [[0]] bois [[2]] d'alcool maintenant. Sophie: C'est incroyable! Tu as vu tes anciens amis? Lucas: Non, je [[3]] ai vu [[4]] depuis ma transformation. Sophie: Tu veux qu'on aille au restaurant? Lucas: Je [[5]] mange [[6]] dans les fast-foods. Mais une bonne brasserie, pourquoi pas? Sophie: Tu as vraiment changé! Il te reste [[7]] tes habitudes d'avant?",
+        text: "Sophie: Tu as l'air en forme! Tu fumes encore? Lucas: Non, je [[0]] fume [[1]] — j'ai arrêté il y a six mois. Sophie: Et tu bois toujours autant? Lucas: Pas du tout. Je [[2]] bois [[3]] d'alcool maintenant. Sophie: C'est incroyable! Tu as vu tes anciens amis? Lucas: Non, je [[4]] ai vu [[5]] depuis ma transformation. Sophie: Tu veux qu'on aille au restaurant? Lucas: Je [[6]] mange [[7]] dans les fast-foods. Mais une bonne brasserie, pourquoi pas? Sophie: Tu as vraiment changé! Il ne te reste que tes habitudes d'avant?",
         blanks: [
           { options: ["ne", "n'", "pas", "ni"], answer: "ne", explain: "Negación antes de 'fume' (consonante): ne. Je ne fume plus." },
           { options: ["plus", "jamais", "pas", "rien"], answer: "plus", explain: "'Ya no' = ne...plus. Indica que antes fumaba y ahora ha parado." },
+          { options: ["ne", "n'", "pas", "ni"], answer: "ne", explain: "Antes de bois, que comienza por consonante, se conserva ne." },
           { options: ["plus", "jamais", "pas", "rien"], answer: "plus", explain: "'Ya no' otra vez: je ne bois plus d'alcool. Du/de la → de tras negación: plus d'alcool." },
           { options: ["n'", "ne", "pas", "ni"], answer: "n'", explain: "Ante vocal (ai): n'. Je n'ai vu personne." },
           { options: ["personne", "rien", "jamais", "plus"], answer: "personne", explain: "'Nadie' = personne. En temps composé, personne va APRÈS el participio: n'ai vu personne." },
           { options: ["ne", "n'", "pas", "ni"], answer: "ne", explain: "Negación antes de 'mange' (consonante): ne. Je ne mange plus..." },
           { options: ["plus", "que", "jamais", "rien"], answer: "plus", explain: "'Ya no' = ne...plus. Ne mange plus dans les fast-foods = ya no como en fast-foods." },
-          { options: ["ne", "n'", "plus", "que"], answer: "ne", explain: "Ne...que: ¿te queda solo...? Il te reste ne...que. Aquí empieza la estructura restrictiva." },
         ],
       },
       {

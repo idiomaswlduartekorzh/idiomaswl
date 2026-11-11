@@ -180,6 +180,8 @@ const topic: GrammarTopic = {
           { options: ["qu'", 'si', 'où', 'ce que'], answer: "qu'", explain: '"Elle dit qu\' / Elle précise qu\'" — afirmaciones → que/qu\'.' },
           { options: ['si', "qu'", 'où', 'quand'], answer: 'si', explain: '"Elle demande si..." — preguntas sí/no → si.' },
           { options: ['quand', 'si', "qu'", 'où'], answer: 'quand', explain: '"Elle veut savoir quand..." — mot interrog. de tiempo → quand.' },
+          { options: ["qu'", 'si', 'où', 'ce que'], answer: "qu'", explain: '"Elle précise qu\'elle a..." introduce una afirmación.' },
+          { options: ['si', "qu'", 'où', 'quand'], answer: 'si', explain: '"Elle demande si j\'ai..." transforma una pregunta cerrada.' },
         ],
       },
       {

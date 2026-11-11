@@ -214,7 +214,6 @@ const topic: GrammarTopic = {
           { options: ['Quand', 'Où', 'Comment', 'Qui'], answer: 'Quand', explain: '"Quand est-ce que vous avez commencé ?" — cuándo.' },
           { options: ['Qu\'', 'Où', 'Quand', 'Qui'], answer: 'Qu\'', explain: '"Qu\'est-ce que vous aimez le plus ?" — qué (ante vocal: qu\'est-ce que).' },
           { options: ['pourquoi', 'où', 'comment', 'combien'], answer: 'pourquoi', explain: '"Pourquoi êtes-vous professeur ?" — por qué con inversión formal.' },
-          { options: ['Où', 'Quand', 'Comment', 'Pourquoi'], answer: 'Où', explain: 'Extra confirming blank.' },
         ],
       },
       {

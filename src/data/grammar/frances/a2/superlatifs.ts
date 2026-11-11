@@ -179,7 +179,8 @@ const topic: GrammarTopic = {
         blanks: [
           { options: ['la plus', 'le plus', 'la moins', 'plus'], answer: 'la plus', explain: '"la plus grande ville" — ville femenino → la plus.' },
           { options: ['la plus', 'le plus', 'la moins', 'plus'], answer: 'la plus', explain: '"la plus touristique" — ville sous-entendu, femenino → la plus.' },
-          { options: ['la', 'le', 'les', 'l\''], answer: 'la', explain: '"la meilleure gastronomie" — el artículo corresponde a gastronomie (femenino).' },
+          { options: ['le plus célèbre', 'la plus célèbre', 'le moins célèbre', 'plus célèbre'], answer: 'le plus célèbre', explain: '"le monument le plus célèbre" — monument es masculino singular.' },
+          { options: ['la', 'le', 'les', 'l\''], answer: 'la', explain: '"la gastronomie" — el artículo corresponde al sustantivo femenino gastronomie.' },
           { options: ['la plus', 'le plus', 'la moins', 'les plus'], answer: 'la plus', explain: '"la plus réputée de France" — réputée concuerda con gastronomie (femenino).' },
         ],
       },

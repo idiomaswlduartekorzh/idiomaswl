@@ -180,6 +180,8 @@ const topic: GrammarTopic = {
         text: 'J\'ai un bon contact avec ma famille. J\'écris à ma mère tous les dimanches. Je [[0]] envoie des messages. Mon père est loin, mais je [[1]] téléphone souvent. Mes frères et sœurs ? Je [[2]] parle aussi, mais moins souvent. Quand j\'ai un problème, je demande conseil à mes parents. Je [[3]] fais confiance.',
         blanks: [
           { options: ['lui', 'leur', 'les', 'le'], answer: 'lui', explain: '"Je lui envoie / Je lui téléphone" = à ma mère/mon père (singular → lui).' },
+          { options: ['lui', 'leur', 'les', 'le'], answer: 'lui', explain: '"Je lui téléphone" = à mon père; el referente es singular.' },
+          { options: ['leur', 'lui', 'les', 'le'], answer: 'leur', explain: '"Je leur parle" = à mes frères et sœurs; el referente es plural.' },
           { options: ['leur', 'lui', 'les', 'le'], answer: 'leur', explain: '"Je leur parle / Je leur fais confiance" = à mes frères et sœurs (plural → leur).' },
         ],
       },

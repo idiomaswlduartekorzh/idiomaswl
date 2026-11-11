@@ -181,6 +181,7 @@ const topic: GrammarTopic = {
           { options: ['donc', 'parce que', 'puisque', 'comme'], answer: 'donc', explain: '"donc" = consecuencia. Jefe exigente → demasiado estrés.' },
           { options: ['Comme', 'Parce que', 'Donc', 'Car'], answer: 'Comme', explain: '"Comme" = causa al inicio de frase. Como buscaba algo diferente...' },
           { options: ["c'est pourquoi", 'parce que', 'puisque', 'car'], answer: "c'est pourquoi", explain: '"c\'est pourquoi" = consecuencia. Encontró trabajo → es por eso que aceptó.' },
+          { options: ['Comme', 'Donc', 'Pourtant', 'Alors'], answer: 'Comme', explain: '"Comme le salaire est meilleur" presenta otra causa al comienzo de la proposición.' },
         ],
       },
       {

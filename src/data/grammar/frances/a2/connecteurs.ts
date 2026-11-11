@@ -181,6 +181,7 @@ const topic: GrammarTopic = {
           { options: ['Ensuite', "D'abord", 'Enfin', 'Pourtant'], answer: 'Ensuite', explain: '"Ensuite" = además/luego. Segundo argumento.' },
           { options: ['Cependant', 'Donc', "D'abord", 'En revanche'], answer: 'Cependant', explain: '"Cependant" = sin embargo. Introduce los inconvenientes.' },
           { options: ['Pourtant', 'Donc', 'Ensuite', 'Enfin'], answer: 'Pourtant', explain: '"Pourtant" = sin embargo (concesión). Hay problemas pero algunos trabajan más.' },
+          { options: ['conclusion', 'revanche', 'effet', 'plus'], answer: 'conclusion', explain: '"En conclusion" abre la síntesis final del razonamiento.' },
         ],
       },
       {

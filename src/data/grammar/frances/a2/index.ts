@@ -20,6 +20,7 @@ import connecteurs from './connecteurs'
 import causeConsequence from './cause-consequence'
 import gerondif from './gerondif'
 import accordParticipePasse from './accord-participe-passe'
+import { closeFrenchFoundationTopic } from '../quality-closeout'
 
 const topics: GrammarTopic[] = [
   passeComposeAvoir,
@@ -42,6 +43,6 @@ const topics: GrammarTopic[] = [
   causeConsequence,
   gerondif,
   accordParticipePasse,
-]
+].map((topic, index) => closeFrenchFoundationTopic(topic, 'a2', index + 1))
 
 export default topics

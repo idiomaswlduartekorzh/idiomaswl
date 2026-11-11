@@ -19,6 +19,7 @@ import pronomsYEn from './pronoms-y-en-b1'
 import imperatif from './imperatif-b1'
 import participePresentTopic from './participe-present-b1'
 import nominalisation from './nominalisation-b1'
+import { closeFrenchFoundationTopic } from '../quality-closeout'
 
 const topics: GrammarTopic[] = [
   passeCompose,
@@ -41,6 +42,6 @@ const topics: GrammarTopic[] = [
   imperatif,
   participePresentTopic,
   nominalisation,
-]
+].map((topic, index) => closeFrenchFoundationTopic(topic, 'b1', index + 1))
 
 export default topics

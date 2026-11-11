@@ -179,7 +179,9 @@ const topic: GrammarTopic = {
         blanks: [
           { options: ['en écoutant', 'en regardant', 'en répétant', 'en parlant'], answer: 'en écoutant', explain: '"en écoutant / en regardant" — écouter → écoutant, regarder → regardant.' },
           { options: ['en répétant', 'en parlant', 'en écoutant', 'en lisant'], answer: 'en répétant', explain: '"en répétant" — répéter → nous répétons → répét- + -ant = répétant.' },
+          { options: ['En regardant', 'En répétant', 'En écoutant', 'En parlant'], answer: 'En regardant', explain: '"En regardant des films" expresa el medio empleado para mejorar.' },
           { options: ['en ayant', 'en étant', 'en sachant', 'en faisant'], answer: 'en ayant', explain: '"en ayant / en étant" — avoir: ayant, être: étant (irregulares).' },
+          { options: ['En étant', 'En ayant', 'En faisant', 'En sachant'], answer: 'En étant', explain: '"En étant régulière" usa el participio irregular étant.' },
         ],
       },
       {

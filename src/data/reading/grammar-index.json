@@ -461,10 +461,22 @@
           "file": "src/data/grammar/frances/a1/adverbes-frequence.ts"
         },
         {
+          "slug": "articles-partitifs",
+          "title": "Articles partitifs",
+          "category": null,
+          "file": "src/data/grammar/frances/a1/articles-partitifs.ts"
+        },
+        {
           "slug": "articles",
           "title": "Articles",
           "category": "Noms",
           "file": "src/data/grammar/frances/a1/articles.ts"
+        },
+        {
+          "slug": "demonstratifs-presentatifs",
+          "title": "Ce, cet, cette, ces · c’est et il y a",
+          "category": null,
+          "file": "src/data/grammar/frances/a1/demonstratifs-presentatifs.ts"
         },
         {
           "slug": "futur-proche",
