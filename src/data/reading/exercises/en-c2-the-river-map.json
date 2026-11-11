@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-river-map",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Cartography of Calamity",
+      "en": "The Cartography of Calamity"
+    },
+    "intro": {
+      "es": "Read the following advanced analytical article concerning the ethical implications of environmental demarcation and answer the comprehension questions that follow.",
+      "en": "Read the following advanced analytical article concerning the ethical implications of environmental demarcation and answer the comprehension questions that follow."
+    },
+    "mission": {
+      "es": "Analyze the text for its rhetorical strategies, implicit ideological stances, and moral paradoxes regarding bureaucratic risk assessment, then complete the reading comprehension and writing tasks.",
+      "en": "Analyze the text for its rhetorical strategies, implicit ideological stances, and moral paradoxes regarding bureaucratic risk assessment, then complete the reading comprehension and writing tasks."
+    },
+    "targetText": "When the municipal hydrographic board commissioned the updated flood vulnerability atlas for the meandering Oakhaven basin, the primary objective was ostensibly administrative clarity. For generations, the lower riparian valley had lived in a state of porous ambiguity, where the river's seasonal swelling was treated not as an existential emergency, but as an eccentric rhythm of rural existence. Farmers built their barns on elevated plinths of dry-laid stone, and villagers anticipated the spring inundations by moving their livestock to the upper pastures before the water lapped against their doorsteps. This adaptive flexibility, however, grated against the sensibilities of modern infrastructural governance, which demanded legibility above all else. Under the direction of Chief Hydrologist Dr. Aris Thorne, a team of geographic information specialists was tasked with translating the mercurial behavior of the Oakhaven into a definitive cartographic artifact: a red boundary line that would irrevocably sever the basin into zones of absolute safety and designated peril. The creation of this line was heralded by the municipal council as a triumph of scientific foresight, yet it immediately triggered a cascading moral crisis that Thorne had utterly failed to anticipate.\n\nThe methodological hubris of the project lay in its foundational assumption that a continuous fluid dynamic could be faithfully represented by a static vector. The river, fed by erratic alpine snowmelt and unpredictable convective storms, refused to recognize the algorithmic models designed to cage it. To establish the boundary, Thorne's algorithms relied on historical hydrological averages that conveniently smoothed over anomalies, treating extreme weather events as statistical outliers rather than harbingers of a shifting climate. Yet, the physical inaccuracy of the map was secondary to its performative power. Once the flood warning map was published and officially ratified by the district magistrates, the cartographic line assumed a metaphysical weight far exceeding the water it purported to track. Property values within the newly designated hazard zone plummeted overnight, not because a single drop of rain had fallen differently than it had the previous decade, but because the stroke of a digital pen had reconfigured human destiny. Conversely, those properties situated a mere meter uphill, miraculously stranded on the safe side of the red boundary, saw their valuations skyrocket, turning an arbitrary stroke of geographic luck into a windfall of speculative capital.\n\nThis artificial bifurcation immediately poisoned the communal solidarity that had historically sustained the Oakhaven residents through seasonal crises. Prior to the map's introduction, emergency response was an egalitarian enterprise rooted in mutual aid; neighbours cleared culverts together and shared high-ground storage barns without inquiring about municipal property designations. Once the map codified winners and losers, neighborly trust fractured along the newly minted frontier. Those on the protected side of the line began lobbying the council to restrict upstream runoff management, arguing that any municipal expenditure should be exclusively directed toward reinforcing their immediate perimeter, effectively weaponizing their fortuitous coordinates against their downstream counterparts. Meanwhile, residents trapped within the red zone found themselves ensnared in a kafkaesque trap of mandatory flood insurance premiums they could not afford and municipal prohibitions against structural renovations. The map had not merely described a risk; it had actively manufactured a permanent underclass of precarious citizens whose very existence was now legally categorized as an administrative liability.\n\nThe climax of this bureaucratic tragedy unfolded during the late autumn storms of the following year, when a sustained atmospheric river stalled directly over the Oakhaven basin. The rainfall was unprecedented in intensity, yet the volume of water was entirely consistent with the worst-case scenarios that Thorne's original computer simulations had theoretically accounted for. As the river swelled past its banks, it did not respect the administrative red line; rather, it overtopped the hastily constructed earthen berms that the council had authorized solely for the protection of the newly valorized upper residential tracts. The floodwaters surged into the lower basin with devastating velocity, but the true catastrophe was organizational. Emergency dispatchers, paralyzed by the rigid protocols tied to the map's designations, initially delayed deploying rescue assets to the peripheral zones because the automated dispatch system flagged those coordinates as uninsurable and therefore outside the primary municipal duty of care. Rescue boats sat idle at the municipal depot while families clinging to rooftops in the red zone watched emergency headlights illuminate the wealthier, dry neighborhoods across the valley.\n\nIn the aftermath of the inundation, as the floodwaters receded to reveal water-logged ruins and shattered community bonds, Dr. Thorne stood before an inquiry of aggrieved citizens and civic leaders, attempting to defend the integrity of his methodology. He argued, with cold technical precision, that the map had performed its analytical function by successfully predicting the inundation zone, and that the administrative failures were merely policy implementation errors distinct from the science of cartography. Yet this defense exposed the profound moral bankruptcy of modern environmental technocracy. By reducing a complex, living watershed to a binary ledger of risk, the cartographers had absolved the state of its holistic responsibility toward the landscape while simultaneously empowering it to exert totalizing control over human lives. The Oakhaven flood warning map stands as a sobering monument to the arrogance of administrative geometry, demonstrating that when a society attempts to legislate uncertainty with a red line, it ultimately creates the very disaster it claims to avert.",
+    "wordCount": 875,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mercurial",
+        "lemma": "mercurial",
+        "glosses": {
+          "es": "subject to sudden or unpredictable changes of mood or mind",
+          "en": "subject to sudden or unpredictable changes of mood or mind"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "legibility",
+        "lemma": "legibility",
+        "glosses": {
+          "es": "the quality of being clear enough to read or easily understood and managed",
+          "en": "the quality of being clear enough to read or easily understood and managed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hubris",
+        "lemma": "hubris",
+        "glosses": {
+          "es": "excessive pride or self-confidence",
+          "en": "excessive pride or self-confidence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "performative",
+        "lemma": "performative",
+        "glosses": {
+          "es": "relating to an expression that achieves something through being uttered or enacted",
+          "en": "relating to an expression that achieves something through being uttered or enacted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "bifurcation",
+        "lemma": "bifurcation",
+        "glosses": {
+          "es": "the division of something into two branches or parts",
+          "en": "the division of something into two branches or parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "technocracy",
+        "lemma": "technocracy",
+        "glosses": {
+          "es": "the governance of society by technical experts",
+          "en": "the governance of society by technical experts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.3,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T18:32:57.638Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument advanced by the author regarding the Oakhaven flood warning map?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The map created severe moral and social division by artificially translating natural uncertainty into rigid administrative categories."
+        },
+        {
+          "id": "a2",
+          "text": "The map was scientifically flawed because it underestimated the actual volume of rainfall during seasonal storms."
+        },
+        {
+          "id": "a3",
+          "text": "The map successfully protected wealthy residents while intentionally punishing the community's agricultural sector."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Once the map codified winners and losers, neighborly trust fractured along the newly minted frontier.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How did property values immediately react following the official publication and ratification of the flood warning map?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They remained entirely stable until the late autumn storms validated the predictive accuracy of the cartographic model."
+        },
+        {
+          "id": "a2",
+          "text": "They dropped precipitously inside the hazard zone while surging for properties situated just uphill on the safe side."
+        },
+        {
+          "id": "a3",
+          "text": "They increased across the entire valley because investors assumed the municipal council would build protective infrastructure."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Property values within the newly designated hazard zone plummeted overnight, not because a single drop of rain had fallen differently than it had the previous decade, but because the stroke of a digital pen had reconfigured human destiny.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What can be inferred about the community's approach to seasonal flooding prior to the introduction of the new map?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They relied exclusively on government-funded emergency response teams to protect their homes and livestock."
+        },
+        {
+          "id": "a2",
+          "text": "They ignored the seasonal weather patterns entirely, resulting in predictable annual tragedies before the council intervened."
+        },
+        {
+          "id": "a3",
+          "text": "They utilized an adaptive, cooperative approach characterized by mutual aid and flexible adjustments to rising waters."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Prior to the map's introduction, emergency response was an egalitarian enterprise rooted in mutual aid; neighbours cleared culverts together and shared high-ground storage barns without inquiring about municipal property designations.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author detail the delayed deployment of rescue boats during the late autumn storms?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To illustrate how the rigid administrative categories of the map translated into real-world institutional abandonment and systemic failure"
+        },
+        {
+          "id": "a2",
+          "text": "To demonstrate that Dr. Thorne's computer simulations were mathematically incorrect regarding the timing of the storm"
+        },
+        {
+          "id": "a3",
+          "text": "To prove that local emergency dispatchers lacked the necessary training to operate heavy watercraft during severe weather events"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Rescue boats sat idle at the municipal depot while families clinging to rooftops in the red zone watched emergency headlights illuminate the wealthier, dry neighborhoods across the valley.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which best characterizes the author's tone toward Dr. Thorne's defense at the post-inundation inquiry?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Earnest appreciation for the technical accuracy of his computer models"
+        },
+        {
+          "id": "a2",
+          "text": "Scathing critique of his cold technical detachment and moral evasion"
+        },
+        {
+          "id": "a3",
+          "text": "Sympathetic understanding of the immense pressure placed on municipal hydrologists"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "He argued, with cold technical precision, that the map had performed its analytical function by successfully predicting the inundation zone, and that the administrative failures were merely policy implementation errors distinct from the science of cartography.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does the word \"mercurial\" mean in the context of the opening paragraph?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Slow and methodical"
+        },
+        {
+          "id": "a2",
+          "text": "Poisonous and toxic"
+        },
+        {
+          "id": "a3",
+          "text": "Unpredictable and volatile"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "To establish the boundary, Thorne's algorithms relied on historical hydrological averages that conveniently smoothed over anomalies, treating extreme weather events as statistical outliers rather than harbingers of a shifting climate.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a critical essay of 300-450 words examining how bureaucratic tools of categorization can paradoxically exacerbate the very crises they intend to mitigate, referencing the themes of administrative legibility and moral responsibility explored in the reading.",
+      "en": "Write a critical essay of 300-450 words examining how bureaucratic tools of categorization can paradoxically exacerbate the very crises they intend to mitigate, referencing the themes of administrative legibility and moral responsibility explored in the reading."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the text for its rhetorical strategies, implicit ideological stances, and moral paradoxes regarding bureaucratic risk assessment, then complete the reading comprehension and writing tasks.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T18:32:57.638Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Cartography of Calamity | C2 Reading | WeLearn",
+      "en": "The Cartography of Calamity | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read the following advanced analytical article concerning the ethical implications of environmental demarcation and answer the comprehension questions that follow.",
+      "en": "Read the following advanced analytical article concerning the ethical implications of environmental demarcation and answer the comprehension questions that follow."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-11T18:32:57.638Z"
+  }
+}

@@ -13,20 +13,20 @@ const LANGUAGE_TAGS: Record<string, string> = {
 
 const REVIEW_COPY = {
   es: {
-    aria: 'Comentarios sobre tu texto', optional: 'Revisión opcional.', notice: 'Al pulsar el botón, enviaremos únicamente tu texto y el contexto de esta tarea a OpenAI para recibir comentarios. Esta revisión no envía grabaciones de audio.',
+    aria: 'Comentarios sobre tu texto', optional: 'Revisión opcional.', notice: 'Al pulsar el botón, enviaremos únicamente tu texto y el contexto de esta tarea a {provider} para recibir comentarios. Esta revisión no envía grabaciones de audio.',
     loading: 'Revisando…', action: 'Revisar mi texto', unavailable: 'La revisión no está disponible ahora. Tu ejercicio sigue intacto.', offline: 'No hay conexión con la revisión. Tu texto sigue aquí; inténtalo más tarde.',
     tooLong: 'El texto supera el tamaño permitido; acórtalo antes de solicitar comentarios.', short: 'Escribe un texto de al menos 12 caracteres para activar la revisión.',
     title: 'Comentarios para practicar', disclaimer: 'Orientación automática; no es una calificación oficial.', correction: 'Corrección:', noErrors: 'No hay errores prioritarios. Relee tu versión corregida y sigue practicando el objetivo de esta tarea.', version: 'Versión corregida', next: 'Ahora te toca', words: 'palabras', sentences: 'frases', maximum: 'máximo', requirement: 'Para esta tarea, escribe', beforeReview: 'antes de solicitar comentarios.',
   },
   en: {
-    aria: 'Feedback on your writing', optional: 'Optional review.', notice: 'When you press the button, only your text and this task’s context are sent to OpenAI for feedback. No audio recording is sent.',
+    aria: 'Feedback on your writing', optional: 'Optional review.', notice: 'When you press the button, only your text and this task’s context are sent to {provider} for feedback. No audio recording is sent.',
     loading: 'Reviewing…', action: 'Review my writing', unavailable: 'Review is unavailable right now. Your draft is still here.', offline: 'Could not connect to the review service. Your draft is still here; try again later.',
     tooLong: 'Your text is too long. Shorten it before requesting feedback.', short: 'Write at least 12 characters to enable the review.',
     title: 'Feedback for practice', disclaimer: 'Automated guidance, not an official grade.', correction: 'Correction:', noErrors: 'No priority errors found. Read the corrected version and keep practising this task.', version: 'Corrected version', next: 'Your turn', words: 'words', sentences: 'sentences', maximum: 'maximum', requirement: 'For this task, write', beforeReview: 'before requesting feedback.',
   },
 } as const
 
-export function WritingFeedbackReview({ text, assignment, requirements, locale = 'es' }: { text: string; assignment: WritingAssignmentContext; requirements?: WritingDraftRequirements; locale?: 'es' | 'en' }) {
+export function WritingFeedbackReview({ text, assignment, requirements, locale = 'es', endpoint = '/api/writing/feedback', provider = 'OpenAI' }: { text: string; assignment: WritingAssignmentContext; requirements?: WritingDraftRequirements; locale?: 'es' | 'en'; endpoint?: string; provider?: string }) {
   const copy = REVIEW_COPY[locale]
   const [loading, setLoading] = useState(false)
   const [submittedKey, setSubmittedKey] = useState('')
@@ -58,7 +58,7 @@ export function WritingFeedbackReview({ text, assignment, requirements, locale =
     setFeedback(null)
     setError('')
     try {
-      const response = await fetch('/api/writing/feedback', {
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ consent: true, text: normalizedText, assignment }),
@@ -76,7 +76,7 @@ export function WritingFeedbackReview({ text, assignment, requirements, locale =
   return (
     <section className={styles.review} aria-label={copy.aria}>
       <p className={styles.notice}>
-        <strong>{copy.optional}</strong> {copy.notice}
+        <strong>{copy.optional}</strong> {copy.notice.replace('{provider}', provider)}
       </p>
       <button type="button" className="btn btn-ghost" onClick={review} disabled={!ready || loading}>
         {loading ? copy.loading : copy.action}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-shared-desks",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Architecture of Obligation",
+      "en": "The Architecture of Obligation"
+    },
+    "intro": {
+      "es": "Read the following email correspondence regarding a dispute over shared workspace allocations and private expenditures, then complete the reading comprehension tasks.",
+      "en": "Read the following email correspondence regarding a dispute over shared workspace allocations and private expenditures, then complete the reading comprehension tasks."
+    },
+    "mission": {
+      "es": "Examine the nuanced arguments concerning organizational choice and private cost, and answer the comprehension items based on the text.",
+      "en": "Examine the nuanced arguments concerning organizational choice and private cost, and answer the comprehension items based on the text."
+    },
+    "targetText": "Dear Julian, I am writing not merely to register a formal grievance regarding the recent reallocation of our studio's tiered workstation modules, but to interrogate the conceptual dishonesty upon which this entire administrative transition has been predicated. When Human Resources introduced the 'Flexible Autonomy Framework' last quarter, the leadership team marketed the initiative as a triumph of modern organizational design—a decentralized model wherein creative professionals could curate their immediate physical environment according to individual workflow requirements. We were handed digital tokens, invited to browse an interactive portal, and told that our professional destinies within this agency were now entirely self-determined. Every desk, every acoustic pod, and every collaborative hub was laid before us as an open invitation, untethered from rigid hierarchies. Yet, as the operational dust settles and the financial realities of this vaunted liberty cascade down our respective payroll statements, the insidious nature of this administrative architecture becomes impossible to ignore. Choice, it turns out, is rarely an expansion of freedom when every conceivable permutation carries a distinctly calibrated private expense. The illusion of agency is maintained precisely because we are permitted to select our miseries, provided we are willing to shoulder the collateral damage of our own autonomy. Let us examine the mechanics of yesterday's booking cycle to understand the lived reality behind your polished slide decks. My primary project demands sustained periods of cognitive immersion, requiring an environment insulated from the ambient cacophony of the client-relations floor. Under the old regime, this acoustic segregation was treated as a fundamental infrastructural baseline, funded through institutional overhead as a prerequisite for competent labor. Under the new framework, however, quietude has been reclassified as a luxury commodity. The sound-attenuated pods on the fourth floor are indeed available for reservation, but they incur a daily micro-deduction from our discretionary professional development stipends. Conversely, the open-plan benches are nominally free at the point of access, yet occupying them exacts an immediate toll in lost concentration, interrupted momentum, and the subsequent erosion of work quality—deficits that ultimately manifest as diminished quarterly performance bonuses. To frame this dynamic as a liberation of the workforce is a staggering exercise in institutional gaslighting. We are not being offered choices; we are being subjected to a series of insidious taxations on basic operational efficacy. When every single option on the menu requires a sacrifice of personal capital, mental well-being, or professional standing, the act of selecting a workstation ceases to be an exercise in autonomy and devolves into a desperate calculation of loss mitigation. You have successfully monetized the friction of our daily labor, transforming the basic necessity of a functional workspace into a proprietary marketplace where we must constantly bid against our own peace of mind. What disturbs me most profoundly is the rhetorical sleight of hand through which this system has been legitimized. During the departmental town hall, when several senior designers raised concerns about the compounding costs of securing adequate environments, your response was to reiterate that nobody is forcing anyone to upgrade—that the baseline, zero-cost bench remains universally accessible. This defense relies on a breathtakingly cynical misrepresentation of competitive pressure. In an agency where performance is ruthlessly benchmarked against output volume, choosing the zero-cost bench is functionally equivalent to choosing professional obsolescence. You have engineered a competitive arena where employees must perpetually subsidize their own productivity out of pocket simply to remain viable contenders, while the firm pockets the dividend of our forced self-exploitation. To call this 'choice' is to drain the word of any meaningful semantic content, reducing human volition to a cruel parlor trick where the house wins regardless of which card we pull from the deck. Therefore, I am returning my remaining digital tokens to the administrative pool, effective immediately. I refuse to participate any longer in this elaborate theater of manufactured consent, wherein we are expected to express gratitude for the privilege of financing our own exploitation. Until the agency restores baseline infrastructural equity without imposing private financial penalties for cognitive basic needs, I will be working from the auxiliary archive room in the basement—a space conveniently overlooked by your algorithmic portal, entirely devoid of technological enhancements, and, most importantly, completely free. I expect this correspondence to be entered into your permanent record of the transition initiative, not as a disgruntled outburst, but as a formal autopsy of an enterprise model that mistakes the commercialization of necessity for the empowerment of its staff.\n\nOf course, this calculated retreat into the subterranean archive will undoubtedly be cataloged by your compliance metrics as a mere refusal to adapt, rather than the principled indictment of institutional bad faith it truly represents. You will likely convene another emergency steering committee to discuss the optimization of the basement's ambient temperature or to introduce a retroactive Wi-Fi access fee for unmapped zones, seeking ever-inventive vectors to monetize the literal margins of our employment. Yet, no algorithmic patch or bureaucratic reprimand can forever obscure the fundamental rot at the core of your framework: when labor is systematically hollowed out to subsidize executive efficiency, physical withdrawal becomes the only remaining language of dissent.",
+    "wordCount": 846,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "predicated",
+        "lemma": "predicated",
+        "glosses": {
+          "es": "based or founded upon",
+          "en": "based or founded upon"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cacophony",
+        "lemma": "cacophony",
+        "glosses": {
+          "es": "a harsh, discordant mixture of sounds",
+          "en": "a harsh, discordant mixture of sounds"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "deduction",
+        "lemma": "deduction",
+        "glosses": {
+          "es": "the action of subtracting something from a total",
+          "en": "the action of subtracting something from a total"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gaslighting",
+        "lemma": "gaslighting",
+        "glosses": {
+          "es": "manipulating someone into doubting their perception of reality",
+          "en": "manipulating someone into doubting their perception of reality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolescence",
+        "lemma": "obsolescence",
+        "glosses": {
+          "es": "the state of being outdated and no longer used",
+          "en": "the state of being outdated and no longer used"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autopsy",
+        "lemma": "autopsy",
+        "glosses": {
+          "es": "a critical examination of a failed event or system",
+          "en": "a critical examination of a failed event or system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.2,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T18:34:29.811Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary argument advanced by the author regarding the new workspace framework?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The framework weaponizes choice by attaching private financial and personal costs to every available option."
+        },
+        {
+          "id": "a2",
+          "text": "The system cleverly balances corporate overhead reduction with employee scheduling preferences."
+        },
+        {
+          "id": "a3",
+          "text": "The technical glitches in the digital booking portal prevent fair access to necessary resources."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Choice, it turns out, is rarely an expansion of freedom when every conceivable permutation carries a distinctly calibrated private expense.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "According to the text, what specific consequence does occupying the nominally free open-plan benches entail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Immediate deductions from discretionary professional development stipends"
+        },
+        {
+          "id": "a2",
+          "text": "Loss of concentration, interrupted momentum, and erosion of work quality"
+        },
+        {
+          "id": "a3",
+          "text": "Direct reassignment to the auxiliary archive room in the basement"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "occupying them exacts an immediate toll in lost concentration, interrupted momentum, and the subsequent erosion of work quality—deficits that ultimately manifest as diminished quarterly performance bonuses.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What can be inferred about the author's view of Julian's defense during the departmental town hall?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It was an honest misunderstanding of how employees utilize the booking portal."
+        },
+        {
+          "id": "a2",
+          "text": "It was a promising starting point for future administrative negotiations."
+        },
+        {
+          "id": "a3",
+          "text": "It was a cynical exploitation of competitive pressures to mask systemic coercion."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "This defense relies on a breathtakingly cynical misrepresentation of competitive pressure.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author mention returning the remaining digital tokens to the administrative pool?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To signal a definitive refusal to engage further in the manufactured consent of the system"
+        },
+        {
+          "id": "a2",
+          "text": "To protest the technological limitations of the fourth-floor sound-attenuated pods"
+        },
+        {
+          "id": "a3",
+          "text": "To demand a complete refund for the micro-deductions already taken from their payroll"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "I refuse to participate any longer in this elaborate theater of manufactured consent, wherein we are expected to express gratitude for the privilege of financing our own exploitation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which adjective best characterizes the author's overarching tone throughout the correspondence?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Placating and optimistic"
+        },
+        {
+          "id": "a2",
+          "text": "Scathing and analytical"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I expect this correspondence to be entered into your permanent record of the transition initiative, not as a disgruntled outburst, but as a formal autopsy of an enterprise model that mistakes the commercialization of necessity for the empowerment of its staff.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the text, what does the word 'permutation' signify?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A financial penalty applied directly to employee salaries"
+        },
+        {
+          "id": "a2",
+          "text": "An official administrative rule governing office safety"
+        },
+        {
+          "id": "a3",
+          "text": "A variation or alternative form resulting from rearrangement"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Choice, it turns out, is rarely an expansion of freedom when every conceivable permutation carries a distinctly calibrated private expense.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a 300-word response from Julian's perspective defending the workspace policy against the author's accusations of systemic coercion.",
+      "en": "Write a 300-word response from Julian's perspective defending the workspace policy against the author's accusations of systemic coercion."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Examine the nuanced arguments concerning organizational choice and private cost, and answer the comprehension items based on the text.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T18:34:29.811Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Architecture of Obligation | C2 Reading | WeLearn",
+      "en": "The Architecture of Obligation | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read the following email correspondence regarding a dispute over shared workspace allocations and private expenditures, then complete the reading comprehension tasks.",
+      "en": "Read the following email correspondence regarding a dispute over shared workspace allocations and private expenditures, then complete the reading comprehension tasks."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-11T18:34:29.811Z"
+  }
+}

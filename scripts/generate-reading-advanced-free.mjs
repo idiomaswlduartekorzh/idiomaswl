@@ -74,7 +74,7 @@ async function requestGemini(message) {
   const key = process.env.GEMINI_API_KEY
   if (!key) throw new Error('GEMINI_API_KEY is not configured')
   const model = args.model ?? 'gemini-3.1-flash-lite'
-  if (!['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'].includes(model)) throw new Error('Unsupported Gemini model')
+  if (!['gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'].includes(model)) throw new Error('Unsupported Gemini model')
   const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
     body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: message }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.55 } }),
@@ -141,13 +141,13 @@ function parseAndCheck(raw, language, level, { allowShort = false } = {}) {
 
 async function extendIfNeeded(item, language, level, call) {
   const [minimum] = target(language, level)
-  const current = count(item.text, language)
-  if (current >= minimum) return item
-  const needed = minimum - current + Math.min(45, Math.round(minimum * 0.05))
-  const raw = await call(`Return only a JSON object with one string field, "paragraph". Write a coherent additional final paragraph in ${languages[language]} of about ${needed} ${units[language]}. It must develop a consequence or counterargument of this fictional ${level} reading without contradicting any fact, undoing its ending, or repeating sentences. Preserve the same style. Existing text:\n${item.text}`)
-  const addition = JSON.parse(raw.replace(/^```(?:json)?\s*|\s*```$/g, '').trim()).paragraph
-  if (typeof addition !== 'string' || !addition.trim()) throw new Error('Expansion paragraph missing')
-  item.text = `${item.text.trim()}\n\n${addition.trim()}`
+  for (let attempt = 0; attempt < 2 && count(item.text, language) < minimum; attempt++) {
+    const needed = minimum - count(item.text, language) + Math.min(120, Math.round(minimum * 0.15))
+    const raw = await call(`Return only a JSON object with one string field, "paragraph". Write a coherent additional final paragraph in ${languages[language]} of about ${needed} ${units[language]}. It must develop a consequence or counterargument of this fictional ${level} reading without contradicting any fact, undoing its ending, or repeating sentences. Preserve the same style. Existing text:\n${item.text}`)
+    const addition = JSON.parse(raw.replace(/^```(?:json)?\s*|\s*```$/g, '').trim()).paragraph
+    if (typeof addition !== 'string' || !addition.trim()) throw new Error('Expansion paragraph missing')
+    item.text = `${item.text.trim()}\n\n${addition.trim()}`
+  }
   return item
 }
 
@@ -240,6 +240,7 @@ for (const { language, level, brief } of pending) {
       lastError = error
       console.error(`${language}/${level}/${brief.slug} attempt ${attempt + 1}: ${error.message}`)
       if (/\b(?:403|404)\b/.test(error.message)) break
+      if (/per day|PerDay|daily quota/i.test(error.message)) break
       if (/429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 65_000))
       else if (/503|high demand/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 15_000 * (attempt + 1)))
     }

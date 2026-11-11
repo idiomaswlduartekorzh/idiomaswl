@@ -490,7 +490,7 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
           objectives: exercise.content.objectives.map(item => localized(item, locale)),
           focus: exercise.content.grammarFocus ?? [],
           ...(advanced ? { feedbackLanguage: exercise.language } : {}),
-        }} locale={locale} requirements={exercise.id === GERMAN_A1_READING_TASK_ID ? {
+        }} locale={locale} freeReview={advanced} requirements={exercise.id === GERMAN_A1_READING_TASK_ID ? {
           minWords: 25, maxWords: 60, minSentences: 5, maxSentences: 7, maxCharacters: 700,
         } : exercise.language === 'ja' && advanced ? { minCharacters: exercise.production.minWords, maxCharacters: exercise.production.maxWords } : { minWords: exercise.production.minWords, maxWords: exercise.production.maxWords }} />
         {advanced && <ReadingWritingSubmission exercise={exercise} text={production} />}

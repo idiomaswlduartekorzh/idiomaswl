@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-local-stage",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Metric Stage",
+      "en": "The Metric Stage"
+    },
+    "intro": {
+      "es": "Read the following commentary on community theatre funding and audience metrics, then answer the comprehension questions.",
+      "en": "Read the following commentary on community theatre funding and audience metrics, then answer the comprehension questions."
+    },
+    "mission": {
+      "es": "Analyze the financial pressures facing local theatre companies and evaluate the author's argument regarding artistic value versus quantified reach.",
+      "en": "Analyze the financial pressures facing local theatre companies and evaluate the author's argument regarding artistic value versus quantified reach."
+    },
+    "targetText": "For nearly four decades, the Basement Players operated out of a damp cellar beneath a redundant Methodist hall, staging uncompromising revivals of early modern absurdist drama to houses rarely exceeding thirty souls. It was an aesthetic ecosystem sustained by stubborn devotion rather than fiscal viability, where the artistic director, Silas Vance, maintained that theatre lost its subversive edge the moment it began courting the statistical appetites of municipal grant committees. Yet last autumn, faced with soaring utility tariffs and the phased withdrawal of regional arts council subventions, the company appointed a corporate restructuring consultant named Julian Thorne. Thorne arrived bearing laminated spreadsheets and a vocabulary peppered with terms like horizontal integration and impact optimization, his mandate explicitly clear: modernize the enterprise or face imminent insolvency. Within months, the cellar smelling of damp masonry and stale port was retrofitted with modular LED lighting, and the repertoire pivoted decisively toward nostalgic jukebox musicals and digestible domestic comedies designed to maximize bums on seats. The transformation was swift, absolute, and undeniably effective on paper, converting a perennial deficit into a modest surplus while inflating attendance figures by over three hundred percent.\n\nThis miraculous numerical salvation, however, inaugurated a profound existential crisis among the troupe's veteran actors, who watched their meticulous interpretations of obscure European playwrights supplanted by breezy medleys and predictable crowd-pleasers. Silas Vance found himself marginalized into an emeritus figurehead role, nominally retained for his institutional memory but effectively silenced whenever artistic disagreements arose over pacing or commercial viability. Thorne defended the overhaul through the lens of democratization, arguing with unassailable bureaucratic logic that art financed by public monies owed a tangible return to the wider citizenry in the form of elevated footfall and community engagement. In Thorne's estimation, the previous regime had indulged in self-indulgent obscurity, staging esoteric productions for an incestuous clique of cognoscenti while ignoring the broader tax-paying public whose contributions kept the lights burning. Yet this populist rationale obscured a darker structural reality: as funding bodies increasingly tied discretionary grants to algorithmic indices of social impact, theatres were compelled to perform a relentless pantomime of growth, substituting quantifiable headcounts for qualitative artistic risk.\n\nThe friction reached its inevitable climax on the opening night of the company's spring blockbuster, a relentlessly upbeat pastiche of retro pop hits titled Dancing in the Stacks. The auditorium was packed to its newly expanded capacity, filled with families and casual theatregoers who had not darkened the cellar's doors during its avant-garde era, and the applause at the final curtain was undeniably thunderous. Backstage, however, the atmosphere was funereal; three founding cast members announced their immediate resignation, leaving notes on the green room noticeboard decrying the commodification of their once-sacred sanctuary. Thorne held up the evening's box office receipts and glowing digital feedback summaries as definitive vindication of his turnaround strategy, claiming that vibrant balance sheets were the only true metric of a community asset's health. Vance, standing silently in the wings amid the dismantled flats of an abandoned Beckett production, recognized that the theatre had indeed survived, but only by agreeing to commodify its soul into a marketable product.\n\nThis tension between quantitative sustainability and qualitative integrity exposes a deeply troubling philosophical paradox at the heart of contemporary cultural policy. When institutions are forced to justify their cultural worth through the crude metrics of audience throughput and digital engagement, they inevitably abandon the difficult, unquantifiable labor of cultural challenge in favor of comforting affirmation. The irony of the Basement Players' salvation is that in order to preserve the physical structure of the theatre, Thorne had to eradicate the very qualities that made its survival worth fighting for in the first place. The box office records will show an unprecedented triumph of administrative restructuring, a triumph celebrated in annual reports and municipal briefings as a model of cultural entrepreneurship. Yet this ledger-book victory conceals a profound cultural impoverishment, demonstrating how easily the language of access can be co-opted to justify the total erosion of artistic ambition.\n\nUltimately, the predicament of the Basement Players serves as a cautionary paradigm for the entire non-profit arts sector, where survival increasingly requires theatres to become indistinguishable from commercial entertainment venues. As long as cultural value is measured exclusively by the size of the crowd rather than the depth of the provocation, companies will continue to trade their artistic autonomy for administrative approval. The applause that shook the rafters on opening night was real enough, as were the pounds sterling deposited into the corporate bank account the following morning, but they purchased a hollow victory. In satisfying the relentless demand for measurable growth, the theatre secured its financial ledger at the permanent expense of its cultural imagination, leaving behind a monument to efficiency that entertains the masses while saying nothing at all.\n\nYet to dismiss this transition as merely a localized tragedy would be to overlook the broader systemic mechanics governing modern cultural funding. The institutional frameworks now conditioning artistic survival are themselves symptoms of a technocratic ideology that equates economic velocity with societal good. When municipal patrons and philanthropic trusts adopt the analytical tools of the corporate marketplace, they inadvertently transform artistic spaces into compliance engines, where every performance must justify its extraction of public resources through audited displays of civic utility. This structural reality suggests that the fate of the Basement Players was never truly within Silas Vance's or Julian Thorne's individual control; rather, it was the inevitable output of a policy matrix that has systematically dismantled the boundary between civic patronage and corporate enterprise.",
+    "wordCount": 918,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "subventions",
+        "lemma": "subventions",
+        "glosses": {
+          "es": "financial grants or subsidies",
+          "en": "financial grants or subsidies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esoteric",
+        "lemma": "esoteric",
+        "glosses": {
+          "es": "understood by only a small group with specialized knowledge",
+          "en": "understood by only a small group with specialized knowledge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pastiche",
+        "lemma": "pastiche",
+        "glosses": {
+          "es": "an artistic work imitating the style of another work",
+          "en": "an artistic work imitating the style of another work"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vindicat",
+        "lemma": "vindicat",
+        "glosses": {
+          "es": "clear someone of blame or suspicion",
+          "en": "clear someone of blame or suspicion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paradox",
+        "lemma": "paradox",
+        "glosses": {
+          "es": "a seemingly absurd or self-contradictory statement",
+          "en": "a seemingly absurd or self-contradictory statement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impoverishment",
+        "lemma": "impoverishment",
+        "glosses": {
+          "es": "the process of becoming poor or deteriorated",
+          "en": "the process of becoming poor or deteriorated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.7,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-11T18:38:19.419Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the primary theme explored through the transformation of the Basement Players?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The corrupting influence of commercial metrics on artistic integrity"
+        },
+        {
+          "id": "a2",
+          "text": "The triumph of modern management over outdated artistic traditions"
+        },
+        {
+          "id": "a3",
+          "text": "The logistical challenges of maintaining historic subterranean venues"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "In satisfying the relentless demand for measurable growth, the theatre secured its financial ledger at the permanent expense of its cultural imagination",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "How did Julian Thorne initially address the theatre company's financial insolvency?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "By securing private donations from wealthy benefactors in the local community"
+        },
+        {
+          "id": "a2",
+          "text": "By retrofitting the cellar with LED lighting and shifting the repertoire to commercial shows"
+        },
+        {
+          "id": "a3",
+          "text": "By reducing the salaries of veteran actors to preserve the avant-garde schedule"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "the cellar smelling of damp masonry and stale port was retrofitted with modular LED lighting, and the repertoire pivoted decisively toward nostalgic jukebox musicals and digestible domestic comedies designed to maximize bums on seats.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What can be inferred about the veteran actors' reaction to the opening night of Dancing in the Stacks?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They felt vindicated by the financial success and decided to stay on"
+        },
+        {
+          "id": "a2",
+          "text": "They were relieved to finally perform in front of a larger and more appreciative audience"
+        },
+        {
+          "id": "a3",
+          "text": "They viewed the commercial success as a betrayal of the theatre's core purpose"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Backstage, however, the atmosphere was funereal; three founding cast members announced their immediate resignation, leaving notes on the green room noticeboard decrying the commodification of their once-sacred sanctuary.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the author include the detail about Silas Vance standing among dismantled Beckett sets?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To symbolize the quiet erasure of uncompromising artistic ambition in favor of commercial output"
+        },
+        {
+          "id": "a2",
+          "text": "To illustrate the physical dilapidation of the cellar before the renovation took place"
+        },
+        {
+          "id": "a3",
+          "text": "To demonstrate the logistical difficulties of alternating between different theatrical genres"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Vance, standing silently in the wings amid the dismantled flats of an abandoned Beckett production, recognized that the theatre had indeed survived, but only by agreeing to commodify its soul into a marketable product.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Which best describes the author's tone toward the municipal grant committees and corporate restructuring?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Enthusiastic and admiring of their pragmatic approach to economic viability"
+        },
+        {
+          "id": "a2",
+          "text": "Skeptical and critical of their reduction of art to quantitative performance indicators"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferent and detached from the administrative struggles of local institutions"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Yet this populist rationale obscured a darker structural reality: as funding bodies increasingly tied discretionary grants to algorithmic indices of social impact, theatres were compelled to perform a relentless pantomime of growth, substituting quantifiable headcounts for qualitative artistic risk.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "In the context of the passage, what does the word \"vindication\" mean?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A sudden financial audit"
+        },
+        {
+          "id": "a2",
+          "text": "An artistic disagreement"
+        },
+        {
+          "id": "a3",
+          "text": "Proof that an action was correct"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Thorne held up the evening's box office receipts and glowing digital feedback summaries as definitive vindication of his turnaround strategy",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a critical commentary of 350 to 500 words examining how institutional pressures on arts organizations threaten unconventional creative work. Consider whether public arts funding should prioritize broad demographic reach or uncompromising artistic innovation.",
+      "en": "Write a critical commentary of 350 to 500 words examining how institutional pressures on arts organizations threaten unconventional creative work. Consider whether public arts funding should prioritize broad demographic reach or uncompromising artistic innovation."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyze the financial pressures facing local theatre companies and evaluate the author's argument regarding artistic value versus quantified reach.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-11T18:38:19.419Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Metric Stage | C2 Reading | WeLearn",
+      "en": "The Metric Stage | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Read the following commentary on community theatre funding and audience metrics, then answer the comprehension questions.",
+      "en": "Read the following commentary on community theatre funding and audience metrics, then answer the comprehension questions."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-11T18:38:19.419Z"
+  }
+}

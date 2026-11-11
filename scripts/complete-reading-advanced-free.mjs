@@ -9,7 +9,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const exerciseDir = path.join(root, 'src/data/reading/exercises')
 const languages = ['en', 'fr', 'it', 'de', 'pt', 'ru', 'ja', 'ko']
 const levels = ['B2', 'C1', 'C2']
-const models = ['gemini-3.1-flash-lite', 'gemini-3.5-flash-lite']
+const supportedModels = new Set(['gemini-3.8-flash', 'gemini-3.1-flash-lite', 'gemini-3.5-flash-lite'])
+const requestedModels = process.argv.find((arg) => arg.startsWith('--models='))?.slice('--models='.length)
+const models = requestedModels ? requestedModels.split(',') : [...supportedModels]
+if (!models.length || models.some((model) => !supportedModels.has(model))) throw new Error('Invalid --models selection')
 const minimum = 20
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
