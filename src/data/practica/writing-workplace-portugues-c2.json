@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "imagem-composta",
+    "title": "O antes e depois que não aconteceu",
+    "area": "Marketing × criação",
+    "areaLabel": "Marketing · criação",
+    "role": "Lívia · direção de conteúdo",
+    "teaser": "Uma peça de campanha usa uma montagem como se fosse a evolução real de uma cliente.",
+    "misunderstanding": "Uma simulação visual aprovada para conceito é apresentada como testemunho documental.",
+    "email": {
+      "from": "Rafael · marca",
+      "to": "Lívia · conteúdo",
+      "sent": "Terça-feira, 10h15",
+      "subject": "Imagem de antes e depois",
+      "body": "Oi, Lívia,\n\na cliente reconheceu sua foto no anúncio e perguntou se a imagem de depois era dela. A equipe de criação diz que a montagem era apenas ilustrativa, mas a legenda afirma «resultado de Ana em 30 dias». Precisamos responder hoje. Você consegue separar o consentimento da cliente para a foto, o uso da montagem e o resultado atribuído a ela, sem sugerir que ela mentiu?\n\nRafael"
+    },
+    "document": {
+      "title": "Autorização de imagem e arquivos da campanha",
+      "intro": "O material autorizado e a imagem publicada têm origens diferentes.",
+      "facts": [
+        {
+          "id": "PTC21F1",
+          "time": "Autorização",
+          "text": "Ana autorizou o uso de uma foto sua em uma peça explicativa, sem promessa de resultado pessoal."
+        },
+        {
+          "id": "PTC21F2",
+          "time": "Criação",
+          "text": "A imagem de depois foi produzida por montagem com banco de imagens e não retrata Ana."
+        },
+        {
+          "id": "PTC21F3",
+          "time": "Publicação",
+          "text": "A legenda publicada diz «resultado de Ana em 30 dias»."
+        },
+        {
+          "id": "PTC21F4",
+          "time": "Atual",
+          "text": "O anúncio foi pausado; o alcance e o número de visualizações ainda estão sendo apurados."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "imagem-composta-evidence",
+        "axis": "Evidence",
+        "prompt": "O que Ana autorizou?",
+        "evidenceIds": [
+          "PTC21F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uma afirmação de resultado em 30 dias.",
+            "feedback": "Essa promessa não consta da autorização."
+          },
+          {
+            "id": "b",
+            "text": "O uso de sua foto em uma peça explicativa.",
+            "feedback": "A autorização não cobre um resultado pessoal."
+          },
+          {
+            "id": "c",
+            "text": "O uso de uma montagem como evolução real dela.",
+            "feedback": "A imagem de depois nem retrata Ana."
+          }
+        ]
+      },
+      {
+        "id": "imagem-composta-scope",
+        "axis": "Scope",
+        "prompt": "Qual é o problema central da legenda?",
+        "evidenceIds": [
+          "PTC21F2",
+          "PTC21F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Apenas o tamanho da fonte está errado.",
+            "feedback": "O conteúdo, não a formatação, cria a atribuição falsa."
+          },
+          {
+            "id": "b",
+            "text": "A foto original não foi autorizada.",
+            "feedback": "A primeira foto tinha autorização limitada."
+          },
+          {
+            "id": "c",
+            "text": "Atribui a Ana um resultado que a montagem não documenta.",
+            "feedback": "O texto transforma ilustração em testemunho."
+          }
+        ]
+      },
+      {
+        "id": "imagem-composta-intent",
+        "axis": "Intent",
+        "prompt": "O que Rafael precisa preservar?",
+        "evidenceIds": [
+          "PTC21F1",
+          "PTC21F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A ideia de que Ana aprovou a legenda.",
+            "feedback": "Essa aprovação não está registrada."
+          },
+          {
+            "id": "b",
+            "text": "Uma defesa da promessa de 30 dias.",
+            "feedback": "Ela não é comprovada."
+          },
+          {
+            "id": "c",
+            "text": "A relação com Ana e uma explicação honesta do erro de publicação.",
+            "feedback": "Ele pede uma resposta sem culpabilizá-la."
+          }
+        ]
+      },
+      {
+        "id": "imagem-composta-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual ação é proporcional?",
+        "evidenceIds": [
+          "PTC21F2",
+          "PTC21F3",
+          "PTC21F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Afirmar que ninguém viu a peça.",
+            "feedback": "O alcance ainda é desconhecido."
+          },
+          {
+            "id": "b",
+            "text": "Manter a peça pausada, retirar a atribuição e informar Ana após verificar o alcance.",
+            "feedback": "Há uma correção imediata e uma apuração aberta."
+          },
+          {
+            "id": "c",
+            "text": "Reativar com a mesma legenda e uma nota pequena.",
+            "feedback": "A atribuição continuaria falsa."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Rafael com uma mensagem para Ana. Reconheça a diferença entre foto autorizada e montagem, explique a pausa e assuma a verificação do alcance.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Delimitar a autorização",
+        "Identificar a montagem",
+        "Corrigir a atribuição",
+        "Não inventar o alcance"
+      ]
+    },
+    "model": {
+      "subject": "Re: Imagem de antes e depois",
+      "body": "Oi, Rafael,\n\nAna autorizou o uso de uma foto sua numa peça explicativa. Ela não autorizou que uma montagem fosse apresentada como sua evolução pessoal. A imagem de depois veio de um banco de imagens, enquanto a legenda afirma que se trata do resultado dela em 30 dias. A atribuição está incorreta, independentemente da intenção da equipe de criação. A pausa do anúncio foi adequada; ainda precisamos verificar quantas pessoas o visualizaram.\n\nEu escreveria a Ana: «Você tem razão ao questionar a peça. A foto inicial é sua, mas a imagem seguinte é uma montagem e não retrata um resultado seu. A legenda atribuiu indevidamente essa evolução a você. Pausamos o anúncio e não voltaremos a utilizar a peça nessa forma. Estamos apurando sua circulação e compartilharemos com você os dados que conseguirmos confirmar. Pedimos desculpas pelo uso fora do contexto autorizado.»\n\nVou reunir as versões aprovadas, conferir onde o anúncio foi distribuído e propor uma correção para os canais em que apareceu. Antes de qualquer novo uso da foto, voltaremos a confirmar com Ana a finalidade e a redação.\n\nLívia",
+      "annotations": [
+        {
+          "label": "Delimita autorização",
+          "excerpt": "numa peça explicativa",
+          "evidenceIds": [
+            "PTC21F1"
+          ]
+        },
+        {
+          "label": "Identifica montagem",
+          "excerpt": "veio de um banco de imagens",
+          "evidenceIds": [
+            "PTC21F2"
+          ]
+        },
+        {
+          "label": "Assume erro",
+          "excerpt": "A legenda atribuiu indevidamente essa evolução",
+          "evidenceIds": [
+            "PTC21F3"
+          ]
+        },
+        {
+          "label": "Preserva incerteza",
+          "excerpt": "ainda precisamos verificar quantas pessoas o visualizaram",
+          "evidenceIds": [
+            "PTC21F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "exclusividade-cidade",
+    "title": "Exclusivo em qual território?",
+    "area": "Marketing × parcerias",
+    "areaLabel": "Marketing · parcerias",
+    "role": "Bruno · parcerias",
+    "teaser": "Um parceiro anuncia exclusividade nacional, mas o acordo cobre apenas eventos presenciais na cidade.",
+    "misunderstanding": "Uma exclusividade limitada por canal e território vira promessa geral de mercado.",
+    "email": {
+      "from": "Camila · comunicação",
+      "to": "Bruno · parcerias",
+      "sent": "Quinta-feira, 15h30",
+      "subject": "Anúncio de exclusividade",
+      "body": "Oi, Bruno,\n\no parceiro publicou que será nosso representante exclusivo em todo o Brasil. O contrato que encontrei fala de eventos presenciais em Recife. Não quero desautorizar a parceria em público antes de falar com eles, mas outros parceiros já perguntaram se perderam seus canais. Qual é o alcance real do acordo e como pedimos uma correção sem sugerir má-fé?\n\nCamila"
+    },
+    "document": {
+      "title": "Acordo e publicação do parceiro",
+      "intro": "O acordo especifica canal, cidade e período.",
+      "facts": [
+        {
+          "id": "PTC22F1",
+          "time": "Acordo",
+          "text": "A exclusividade cobre a organização de eventos presenciais em Recife por seis meses."
+        },
+        {
+          "id": "PTC22F2",
+          "time": "Acordo",
+          "text": "Vendas online e eventos em outras cidades permanecem fora da cláusula."
+        },
+        {
+          "id": "PTC22F3",
+          "time": "Publicação",
+          "text": "O parceiro anunciou «representante exclusivo no Brasil» sem qualificação."
+        },
+        {
+          "id": "PTC22F4",
+          "time": "Atual",
+          "text": "Nenhum aditivo ampliando a exclusividade foi assinado."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "exclusividade-cidade-evidence",
+        "axis": "Evidence",
+        "prompt": "Onde vale a exclusividade?",
+        "evidenceIds": [
+          "PTC22F1",
+          "PTC22F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Em todas as vendas online no Brasil.",
+            "feedback": "O canal online está excluído."
+          },
+          {
+            "id": "b",
+            "text": "Em qualquer evento nacional.",
+            "feedback": "Outras cidades estão fora."
+          },
+          {
+            "id": "c",
+            "text": "Nos eventos presenciais em Recife por seis meses.",
+            "feedback": "O contrato fixa canal, cidade e prazo."
+          }
+        ]
+      },
+      {
+        "id": "exclusividade-cidade-scope",
+        "axis": "Scope",
+        "prompt": "Qual parte do post excede o acordo?",
+        "evidenceIds": [
+          "PTC22F3",
+          "PTC22F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A menção à parceria.",
+            "feedback": "A parceria existe."
+          },
+          {
+            "id": "b",
+            "text": "A expressão «exclusivo no Brasil».",
+            "feedback": "Não há aditivo que amplie a cláusula."
+          },
+          {
+            "id": "c",
+            "text": "A indicação da cidade de Recife.",
+            "feedback": "Essa cidade está no contrato."
+          }
+        ]
+      },
+      {
+        "id": "exclusividade-cidade-intent",
+        "axis": "Intent",
+        "prompt": "Que relação Camila tenta proteger?",
+        "evidenceIds": [
+          "PTC22F1",
+          "PTC22F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uma disputa pública imediata.",
+            "feedback": "Ela quer conversar primeiro."
+          },
+          {
+            "id": "b",
+            "text": "A parceria atual e a confiança dos outros parceiros afetados pela formulação.",
+            "feedback": "Ela pede correção sem acusação."
+          },
+          {
+            "id": "c",
+            "text": "Um direito nacional já concedido.",
+            "feedback": "O acordo não o prevê."
+          }
+        ]
+      },
+      {
+        "id": "exclusividade-cidade-purpose",
+        "axis": "Purpose",
+        "prompt": "O que pedir ao parceiro?",
+        "evidenceIds": [
+          "PTC22F1",
+          "PTC22F2",
+          "PTC22F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trocar o texto por uma descrição do canal, cidade e prazo e alinhar respostas aos demais parceiros.",
+            "feedback": "A correção reflete o acordo assinado."
+          },
+          {
+            "id": "b",
+            "text": "Cancelar todos os eventos de Recife.",
+            "feedback": "Eles estão cobertos."
+          },
+          {
+            "id": "c",
+            "text": "Manter o post até surgir reclamação formal.",
+            "feedback": "A dúvida já chegou aos outros parceiros."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Camila com uma proposta de mensagem ao parceiro e uma linha interna aos demais. Não atribua intenção, mas corrija território e canal.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Definir canal e cidade",
+        "Preservar parceria válida",
+        "Evitar acusação sem prova",
+        "Alinhar comunicação a terceiros"
+      ]
+    },
+    "model": {
+      "subject": "Re: Anúncio de exclusividade",
+      "body": "Oi, Camila,\n\no acordo concede exclusividade para eventos presenciais em Recife durante seis meses. Ele não cobre vendas online nem eventos em outras cidades, e não há aditivo que amplie esse alcance. O anúncio de «representante exclusivo no Brasil» é, portanto, mais amplo do que o que assinamos. Não precisamos presumir por que o parceiro escolheu essa frase para pedir a correção.\n\nEu enviaria: «Valorizamos a parceria para os eventos presenciais em Recife. O texto publicado, porém, pode ser lido como exclusividade nacional para todos os canais, enquanto o acordo limita a exclusividade aos eventos presenciais na cidade pelo período de seis meses. Poderiam ajustar a publicação para refletir esse escopo? Podemos revisar juntos a nova redação antes da atualização.»\n\nAos demais parceiros, se perguntarem, podemos informar que o acordo não altera os canais online nem as atividades em outras cidades. Vou conferir com o parceiro quando a publicação será corrigida e guardar a versão original e a atualizada. Assim protegemos a parte legítima da colaboração e retiramos a interpretação que vem gerando dúvidas.\n\nBruno",
+      "annotations": [
+        {
+          "label": "Define escopo",
+          "excerpt": "eventos presenciais em Recife durante seis meses",
+          "evidenceIds": [
+            "PTC22F1"
+          ]
+        },
+        {
+          "label": "Nomeia exclusões",
+          "excerpt": "não cobre vendas online nem eventos em outras cidades",
+          "evidenceIds": [
+            "PTC22F2"
+          ]
+        },
+        {
+          "label": "Evita intenção",
+          "excerpt": "Não precisamos presumir por que o parceiro escolheu essa frase",
+          "evidenceIds": [
+            "PTC22F3"
+          ]
+        },
+        {
+          "label": "Pede correção",
+          "excerpt": "ajustar a publicação para refletir esse escopo",
+          "evidenceIds": [
+            "PTC22F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "finalista-nao-premio",
+    "title": "Finalista apresentado como vencedor",
+    "area": "Marketing × imprensa",
+    "areaLabel": "Marketing · imprensa",
+    "role": "Renata · assessoria de imprensa",
+    "teaser": "Uma premiação inclui a empresa entre finalistas, mas um release já usa a palavra vencedora.",
+    "misunderstanding": "A indicação para uma lista final é comunicada como resultado definitivo.",
+    "email": {
+      "from": "Marcelo · direção",
+      "to": "Renata · imprensa",
+      "sent": "Segunda-feira, 11h05",
+      "subject": "Release do prêmio",
+      "body": "Oi, Renata,\n\no release preparado pela agência nos chama de vencedores. O comunicado dos organizadores, porém, diz que somos finalistas e que o resultado sai na sexta. Alguns veículos receberam o texto, mas não sei se publicaram. Como corrigimos sem fingir que a indicação não é uma boa notícia e sem afirmar que a imprensa errou sozinha?\n\nMarcelo"
+    },
+    "document": {
+      "title": "Comunicado do prêmio e distribuição do release",
+      "intro": "A indicação e o anúncio do resultado têm datas diferentes.",
+      "facts": [
+        {
+          "id": "PTC23F1",
+          "time": "Organização",
+          "text": "A empresa foi selecionada entre cinco finalistas."
+        },
+        {
+          "id": "PTC23F2",
+          "time": "Calendário",
+          "text": "O vencedor será anunciado na sexta-feira."
+        },
+        {
+          "id": "PTC23F3",
+          "time": "Distribuição",
+          "text": "A agência enviou o release com «vencedora» a oito veículos."
+        },
+        {
+          "id": "PTC23F4",
+          "time": "Atual",
+          "text": "Não há confirmação de quais veículos publicaram o texto."
+        },
+        {
+          "id": "PTC23F5",
+          "time": "Atual",
+          "text": "A assessoria ainda não enviou uma correção."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "finalista-nao-premio-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual reconhecimento é confirmado?",
+        "evidenceIds": [
+          "PTC23F1",
+          "PTC23F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A exclusão da premiação.",
+            "feedback": "A indicação é real."
+          },
+          {
+            "id": "b",
+            "text": "A presença entre os cinco finalistas.",
+            "feedback": "O prêmio ainda não foi decidido publicamente."
+          },
+          {
+            "id": "c",
+            "text": "A vitória na categoria.",
+            "feedback": "O resultado sai na sexta."
+          }
+        ]
+      },
+      {
+        "id": "finalista-nao-premio-scope",
+        "axis": "Scope",
+        "prompt": "O que falta apurar sobre a circulação?",
+        "evidenceIds": [
+          "PTC23F3",
+          "PTC23F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Se a palavra «vencedora» constava do texto.",
+            "feedback": "Constava do release."
+          },
+          {
+            "id": "b",
+            "text": "Se a agência enviou alguma coisa.",
+            "feedback": "O envio está registrado."
+          },
+          {
+            "id": "c",
+            "text": "Quais veículos publicaram o release recebido.",
+            "feedback": "O envio a oito veículos é conhecido."
+          }
+        ]
+      },
+      {
+        "id": "finalista-nao-premio-intent",
+        "axis": "Intent",
+        "prompt": "Que responsabilidade Marcelo quer assumir?",
+        "evidenceIds": [
+          "PTC23F3",
+          "PTC23F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Corrigir o material enviado pela própria equipe sem desvalorizar a indicação.",
+            "feedback": "A correção ainda não ocorreu."
+          },
+          {
+            "id": "b",
+            "text": "Atribuir o erro exclusivamente à imprensa.",
+            "feedback": "O texto saiu da agência contratada."
+          },
+          {
+            "id": "c",
+            "text": "Apagar a notícia da indicação.",
+            "feedback": "Ele a considera boa notícia."
+          }
+        ]
+      },
+      {
+        "id": "finalista-nao-premio-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual sequência é adequada?",
+        "evidenceIds": [
+          "PTC23F1",
+          "PTC23F3",
+          "PTC23F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Enviar correção aos oito veículos, verificar publicações e usar «finalista» em todos os canais.",
+            "feedback": "Corrige a fonte e mede o alcance."
+          },
+          {
+            "id": "b",
+            "text": "Confirmar vitória para evitar constrangimento.",
+            "feedback": "Não há vencedor anunciado."
+          },
+          {
+            "id": "c",
+            "text": "Aguardar a sexta sem corrigir.",
+            "feedback": "A afirmação errada já circulou."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Marcelo com uma nota de correção para os veículos. Preserve a indicação verdadeira, assuma a origem do erro e explique a apuração das publicações.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Distinguir finalista de vencedor",
+        "Assumir o envio errado",
+        "Corrigir os destinatários",
+        "Não presumir o alcance"
+      ]
+    },
+    "model": {
+      "subject": "Re: Release do prêmio",
+      "body": "Oi, Marcelo,\n\na notícia correta é que estamos entre os cinco finalistas. O vencedor só será anunciado na sexta-feira. O release enviado pela agência a oito veículos usou «vencedora» antes desse resultado; a correção deve partir de nós, não de uma suposta falha da imprensa. Ainda não sabemos quais veículos chegaram a publicar o texto.\n\nEu encaminharia agora: «Correção ao release enviado hoje: nossa empresa foi selecionada como finalista do prêmio, e não anunciada como vencedora. O resultado será divulgado pela organização na sexta-feira. A expressão “vencedora” constou indevidamente do material que enviamos. Pedimos que considerem esta versão corrigida e lamentamos a informação imprecisa.»\n\nVou contactar os oito destinatários individualmente, conferir se houve publicação e solicitar atualização onde for necessário. Também substituirei a versão no nosso arquivo de imprensa e pausarei qualquer postagem programada com a palavra errada. Podemos celebrar a indicação com entusiasmo, desde que o texto deixe claro que o resultado continua aberto. Enviarei um resumo das correções confirmadas até o fim do dia.\n\nRenata",
+      "annotations": [
+        {
+          "label": "Preserva reconhecimento",
+          "excerpt": "entre os cinco finalistas",
+          "evidenceIds": [
+            "PTC23F1"
+          ]
+        },
+        {
+          "label": "Mantém resultado aberto",
+          "excerpt": "só será anunciado na sexta-feira",
+          "evidenceIds": [
+            "PTC23F2"
+          ]
+        },
+        {
+          "label": "Assume origem",
+          "excerpt": "do material que enviamos",
+          "evidenceIds": [
+            "PTC23F3"
+          ]
+        },
+        {
+          "label": "Apura publicação",
+          "excerpt": "Ainda não sabemos quais veículos chegaram a publicar",
+          "evidenceIds": [
+            "PTC23F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "teste-interrompido",
+    "title": "O vencedor de um teste interrompido",
+    "area": "Marketing × experimentação",
+    "areaLabel": "Marketing · experimentação",
+    "role": "Caio · análise de campanhas",
+    "teaser": "Um teste de duas mensagens foi interrompido por reclamações antes do prazo previsto.",
+    "misunderstanding": "Uma diferença temporária de cliques é comunicada como vitória estatística definitiva.",
+    "email": {
+      "from": "Patrícia · campanhas",
+      "to": "Caio · análise",
+      "sent": "Quarta-feira, 9h25",
+      "subject": "Qual mensagem venceu?",
+      "body": "Oi, Caio,\n\na versão B teve mais cliques e o gerente quer padronizá-la. O teste deveria durar duas semanas, mas foi interrompido no quarto dia porque a versão B gerou reclamações sobre a promessa apresentada. Posso chamar B de vencedora em cliques e, ao mesmo tempo, dizer que não devemos publicá-la? Preciso de uma leitura que una desempenho e qualidade da mensagem.\n\nPatrícia"
+    },
+    "document": {
+      "title": "Plano do teste e observações",
+      "intro": "O resultado parcial e as reclamações são evidências de naturezas diferentes.",
+      "facts": [
+        {
+          "id": "PTC24F1",
+          "time": "Plano",
+          "text": "O teste A/B estava previsto para quatorze dias, com análise após o período completo."
+        },
+        {
+          "id": "PTC24F2",
+          "time": "Dia 4",
+          "text": "B acumulou 18% mais cliques entre os usuários expostos até a interrupção."
+        },
+        {
+          "id": "PTC24F3",
+          "time": "Dia 4",
+          "text": "B gerou 27 reclamações sobre uma promessa entendida como garantida; A gerou 3."
+        },
+        {
+          "id": "PTC24F4",
+          "time": "Decisão",
+          "text": "A equipe interrompeu B e ainda não fez análise de conversão ou avaliação da promessa com a área responsável."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "teste-interrompido-evidence",
+        "axis": "Evidence",
+        "prompt": "O que os 18% indicam?",
+        "evidenceIds": [
+          "PTC24F1",
+          "PTC24F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uma diferença de cliques observada até o quarto dia.",
+            "feedback": "O período planejado não foi concluído."
+          },
+          {
+            "id": "b",
+            "text": "Que B é adequada para publicação.",
+            "feedback": "As reclamações questionam a mensagem."
+          },
+          {
+            "id": "c",
+            "text": "Uma vitória definitiva nas conversões.",
+            "feedback": "Conversões ainda não foram analisadas."
+          }
+        ]
+      },
+      {
+        "id": "teste-interrompido-scope",
+        "axis": "Scope",
+        "prompt": "Por que «vencedora» é incompleto?",
+        "evidenceIds": [
+          "PTC24F3",
+          "PTC24F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Porque B teve menos cliques.",
+            "feedback": "B teve mais cliques no período parcial."
+          },
+          {
+            "id": "b",
+            "text": "Porque A não recebeu reclamações.",
+            "feedback": "A recebeu três."
+          },
+          {
+            "id": "c",
+            "text": "Ignora reclamações e análise de conversão e de conteúdo ainda pendentes.",
+            "feedback": "Cliques não encerram a decisão."
+          }
+        ]
+      },
+      {
+        "id": "teste-interrompido-intent",
+        "axis": "Intent",
+        "prompt": "O que Patrícia tenta conciliar?",
+        "evidenceIds": [
+          "PTC24F2",
+          "PTC24F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A garantia de que A converte melhor.",
+            "feedback": "Essa comparação não foi feita."
+          },
+          {
+            "id": "b",
+            "text": "Uma métrica favorável e um problema real na promessa comunicada.",
+            "feedback": "A pergunta cita os dois aspectos."
+          },
+          {
+            "id": "c",
+            "text": "A necessidade de esconder os cliques.",
+            "feedback": "Ela quer nomeá-los corretamente."
+          }
+        ]
+      },
+      {
+        "id": "teste-interrompido-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual recomendação é defensável?",
+        "evidenceIds": [
+          "PTC24F1",
+          "PTC24F3",
+          "PTC24F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Declarar A vencedora definitiva.",
+            "feedback": "O teste e a análise não foram concluídos."
+          },
+          {
+            "id": "b",
+            "text": "Adotar B imediatamente por causa dos cliques.",
+            "feedback": "A mensagem gerou reclamações."
+          },
+          {
+            "id": "c",
+            "text": "Descrever o dado parcial, manter B suspensa e revisar a promessa antes de novo teste.",
+            "feedback": "Integra desempenho e risco de interpretação."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Patrícia com uma síntese para o gerente. Diferencie sinal parcial, qualidade da mensagem e decisão de publicação, e proponha a próxima avaliação.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Qualificar o período de teste",
+        "Nomear reclamações",
+        "Não inferir conversões",
+        "Propor revisão antes de publicar"
+      ]
+    },
+    "model": {
+      "subject": "Re: Qual mensagem venceu?",
+      "body": "Oi, Patrícia,\n\npodemos dizer que B registrou 18% mais cliques entre os usuários expostos nos quatro dias observados. Não chamaria isso de vitória definitiva: o plano previa quatorze dias, a análise de conversão não foi feita e o teste foi interrompido por um motivo relevante. A mensagem B gerou 27 reclamações sobre uma promessa interpretada como garantida, contra três na versão A. Esse retorno afeta a decisão de publicação, mesmo que o dado parcial de cliques seja real.\n\nEu resumiria ao gerente: «B apresentou mais cliques no período parcial, mas o teste não chegou ao prazo previsto. Também houve um volume maior de reclamações sobre o sentido da promessa. Por isso, B permanece suspensa até a revisão do texto e a análise dos resultados disponíveis. Não temos ainda uma versão vencedora para padronização.»\n\nVou separar os cliques das conversões observáveis e classificar as reclamações com a equipe responsável pela promessa. Depois podemos testar uma redação corrigida em condições previamente definidas. Assim preservamos o aprendizado do experimento sem transformar um indicador isolado em autorização para veicular uma frase problemática.\n\nCaio",
+      "annotations": [
+        {
+          "label": "Qualifica cliques",
+          "excerpt": "nos quatro dias observados",
+          "evidenceIds": [
+            "PTC24F1",
+            "PTC24F2"
+          ]
+        },
+        {
+          "label": "Considera reclamações",
+          "excerpt": "27 reclamações",
+          "evidenceIds": [
+            "PTC24F3"
+          ]
+        },
+        {
+          "label": "Evita vitória",
+          "excerpt": "Não temos ainda uma versão vencedora",
+          "evidenceIds": [
+            "PTC24F4"
+          ]
+        },
+        {
+          "label": "Propõe reavaliação",
+          "excerpt": "testar uma redação corrigida",
+          "evidenceIds": [
+            "PTC24F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "exportacao-anexos",
+    "title": "Completo sem anexos?",
+    "area": "Software × exportações",
+    "areaLabel": "Software · exportações",
+    "role": "Marina · operações de dados",
+    "teaser": "O cliente recebeu um arquivo marcado como completo, mas os anexos seguem em uma fila separada.",
+    "misunderstanding": "A conclusão do arquivo principal é comunicada como conclusão de toda a exportação.",
+    "email": {
+      "from": "Henrique · atendimento técnico",
+      "to": "Marina · dados",
+      "sent": "Segunda-feira, 14h20",
+      "subject": "Exportação marcada como concluída",
+      "body": "Oi, Marina,\n\no cliente baixou o arquivo de registros e viu no painel «exportação concluída», mas os anexos de várias ocorrências não aparecem. O time diz que o arquivo principal passou sem erro. Como explico o estado real sem afirmar que os anexos se perderam nem pedir que ele refaça tudo antes de investigarmos a fila?\n\nHenrique"
+    },
+    "document": {
+      "title": "Execução da exportação",
+      "intro": "O processo de registros e o de anexos têm estados separados.",
+      "facts": [
+        {
+          "id": "PTC25F1",
+          "time": "13h10",
+          "text": "O arquivo principal com 100 registros foi gerado e disponibilizado."
+        },
+        {
+          "id": "PTC25F2",
+          "time": "13h12",
+          "text": "A fila de anexos registrou 24 itens pendentes de processamento."
+        },
+        {
+          "id": "PTC25F3",
+          "time": "Painel",
+          "text": "A etiqueta «concluída» é acionada pelo arquivo principal, sem esperar a fila de anexos."
+        },
+        {
+          "id": "PTC25F4",
+          "time": "Atual",
+          "text": "Os anexos originais continuam no sistema; a causa do atraso da fila está sendo verificada."
+        },
+        {
+          "id": "PTC25F5",
+          "time": "Atual",
+          "text": "Não há horário confirmado para disponibilização dos 24 itens."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "exportacao-anexos-evidence",
+        "axis": "Evidence",
+        "prompt": "O que foi concluído?",
+        "evidenceIds": [
+          "PTC25F1",
+          "PTC25F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A exportação de todos os anexos.",
+            "feedback": "A fila ainda contém 24 itens."
+          },
+          {
+            "id": "b",
+            "text": "O arquivo principal de registros.",
+            "feedback": "A etiqueta reflete apenas essa etapa."
+          },
+          {
+            "id": "c",
+            "text": "A exclusão dos anexos originais.",
+            "feedback": "Eles continuam no sistema."
+          }
+        ]
+      },
+      {
+        "id": "exportacao-anexos-scope",
+        "axis": "Scope",
+        "prompt": "O que os 24 itens indicam?",
+        "evidenceIds": [
+          "PTC25F2",
+          "PTC25F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Processamento pendente, não perda confirmada.",
+            "feedback": "Os originais ainda existem."
+          },
+          {
+            "id": "b",
+            "text": "Vinte e quatro novos registros principais.",
+            "feedback": "São itens da fila de anexos."
+          },
+          {
+            "id": "c",
+            "text": "Vinte e quatro anexos apagados.",
+            "feedback": "A fila registra pendência."
+          }
+        ]
+      },
+      {
+        "id": "exportacao-anexos-intent",
+        "axis": "Intent",
+        "prompt": "Que preocupação Henrique precisa responder?",
+        "evidenceIds": [
+          "PTC25F3",
+          "PTC25F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A necessidade comprovada de refazer a solicitação.",
+            "feedback": "A fila deve ser examinada primeiro."
+          },
+          {
+            "id": "b",
+            "text": "A diferença entre o rótulo final e uma entrega ainda incompleta.",
+            "feedback": "O cliente viu esse rótulo."
+          },
+          {
+            "id": "c",
+            "text": "Uma cobrança adicional pela exportação.",
+            "feedback": "A pergunta não menciona cobrança."
+          }
+        ]
+      },
+      {
+        "id": "exportacao-anexos-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual atualização é defensável?",
+        "evidenceIds": [
+          "PTC25F1",
+          "PTC25F2",
+          "PTC25F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Repetir que tudo foi entregue.",
+            "feedback": "Os anexos estão pendentes."
+          },
+          {
+            "id": "b",
+            "text": "Explicar a etapa concluída, manter a busca dos anexos e dar novo status sem prometer horário.",
+            "feedback": "O prazo ainda não foi confirmado."
+          },
+          {
+            "id": "c",
+            "text": "Dizer que os anexos nunca existiram.",
+            "feedback": "Os originais estão no sistema."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Henrique com texto para o cliente. Defina o alcance da etiqueta, confirme o que existe e descreva a investigação da fila sem prazo inventado.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Separar registros e anexos",
+        "Corrigir o rótulo",
+        "Não presumir perda",
+        "Oferecer acompanhamento verificável"
+      ]
+    },
+    "model": {
+      "subject": "Re: Exportação marcada como concluída",
+      "body": "Oi, Henrique,\n\no arquivo principal com 100 registros foi gerado corretamente, mas isso não concluiu toda a solicitação. A fila de anexos ainda tem 24 itens pendentes. O painel exibe «exportação concluída» assim que o arquivo principal fica disponível; portanto, a etiqueta descreve mal o estado do conjunto. Os anexos originais continuam no sistema, e estamos verificando por que o processamento não terminou. Ainda não há horário confiável para a entrega desses itens.\n\nAo cliente eu diria: «O arquivo de registros já está disponível, mas identificamos que parte dos anexos continua em processamento. A indicação de conclusão no painel se referia apenas ao arquivo principal e foi imprecisa para a sua solicitação completa. Os anexos permanecem no sistema. Estamos verificando a fila e lhe enviaremos uma atualização sobre os itens restantes assim que tivermos um estado confirmado.»\n\nVou levantar as referências dos 24 anexos, verificar a fila e corrigir a etiqueta para que ela não apareça como final antes da conclusão de todas as etapas. Não peça uma nova solicitação por enquanto; isso poderia criar duas exportações sem resolver a causa do atraso.\n\nMarina",
+      "annotations": [
+        {
+          "label": "Define etapa concluída",
+          "excerpt": "arquivo principal com 100 registros",
+          "evidenceIds": [
+            "PTC25F1"
+          ]
+        },
+        {
+          "label": "Quantifica pendência",
+          "excerpt": "24 itens pendentes",
+          "evidenceIds": [
+            "PTC25F2"
+          ]
+        },
+        {
+          "label": "Corrige etiqueta",
+          "excerpt": "a etiqueta descreve mal o estado do conjunto",
+          "evidenceIds": [
+            "PTC25F3"
+          ]
+        },
+        {
+          "label": "Preserva originais",
+          "excerpt": "Os anexos originais continuam no sistema",
+          "evidenceIds": [
+            "PTC25F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "decisao-assistida",
+    "title": "Recomendação automática, decisão humana",
+    "area": "Software × produto",
+    "areaLabel": "Software · produto",
+    "role": "Daniel · responsável de produto",
+    "teaser": "Uma tela informa «recusado pelo algoritmo», embora haja revisão humana em parte dos casos.",
+    "misunderstanding": "A interface atribui uma decisão inteiramente ao sistema quando o processo real envolve revisão humana e exceções.",
+    "email": {
+      "from": "Luana · relações com clientes",
+      "to": "Daniel · produto",
+      "sent": "Quinta-feira, 10h40",
+      "subject": "Quem recusou a solicitação?",
+      "body": "Oi, Daniel,\n\num usuário contesta uma recusa porque a tela diz «decisão do algoritmo». No registro encontrei uma recomendação automática e a aprovação dessa recomendação por uma pessoa. Em outros casos, a equipe altera a recomendação. Como respondemos sem esconder a revisão humana nem atribuir a esse revisor uma análise que não esteja documentada?\n\nLuana"
+    },
+    "document": {
+      "title": "Fluxo de recomendação e caso específico",
+      "intro": "O registro mostra etapas e resultado, mas não todos os motivos do revisor.",
+      "facts": [
+        {
+          "id": "PTC26F1",
+          "time": "Fluxo",
+          "text": "O sistema gera uma recomendação, que um analista pode confirmar ou alterar."
+        },
+        {
+          "id": "PTC26F2",
+          "time": "Caso",
+          "text": "O sistema recomendou recusa e um analista confirmou o resultado."
+        },
+        {
+          "id": "PTC26F3",
+          "time": "Registro",
+          "text": "A confirmação está datada, mas não inclui justificativa individual além dos critérios aplicados pelo sistema."
+        },
+        {
+          "id": "PTC26F4",
+          "time": "Interface",
+          "text": "A mensagem ao usuário diz «decisão do algoritmo» sem mencionar a revisão."
+        },
+        {
+          "id": "PTC26F5",
+          "time": "Procedimento",
+          "text": "Pedidos de esclarecimento podem ser encaminhados para revisão do caso com registro dos fundamentos."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "decisao-assistida-evidence",
+        "axis": "Evidence",
+        "prompt": "Quem registrou a decisão final neste caso?",
+        "evidenceIds": [
+          "PTC26F1",
+          "PTC26F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "O sistema sozinho, sem participação humana.",
+            "feedback": "O registro traz uma recomendação automática seguida de confirmação datada por um analista."
+          },
+          {
+            "id": "b",
+            "text": "O usuário aprovou a recusa.",
+            "feedback": "O usuário contesta a recusa; quem confirmou o resultado no fluxo foi um analista."
+          },
+          {
+            "id": "c",
+            "text": "Um analista confirmou uma recomendação do sistema.",
+            "feedback": "O fluxo registra as duas etapas."
+          }
+        ]
+      },
+      {
+        "id": "decisao-assistida-scope",
+        "axis": "Scope",
+        "prompt": "O que não se pode inferir do registro?",
+        "evidenceIds": [
+          "PTC26F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Que houve critérios automáticos.",
+            "feedback": "Os critérios aplicados pelo sistema constam do registro; faltam razões individualizadas do analista."
+          },
+          {
+            "id": "b",
+            "text": "Os motivos pessoais detalhados do analista.",
+            "feedback": "A confirmação não os documenta."
+          },
+          {
+            "id": "c",
+            "text": "A data da confirmação.",
+            "feedback": "A data da confirmação consta; o que não foi registrado são os fundamentos próprios do revisor."
+          }
+        ]
+      },
+      {
+        "id": "decisao-assistida-intent",
+        "axis": "Intent",
+        "prompt": "Que imprecisão Luana quer corrigir?",
+        "evidenceIds": [
+          "PTC26F2",
+          "PTC26F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A existência de uma recomendação automática.",
+            "feedback": "Luana não nega a recomendação automática: quer evitar que a tela omita a confirmação humana."
+          },
+          {
+            "id": "b",
+            "text": "A possibilidade de revisar o caso.",
+            "feedback": "A revisão está prevista no procedimento; a imprecisão apontada por Luana é chamar a decisão de exclusivamente algorítmica."
+          },
+          {
+            "id": "c",
+            "text": "Uma atribuição exclusiva ao algoritmo que apaga a revisão humana.",
+            "feedback": "A interface não descreve o fluxo real."
+          }
+        ]
+      },
+      {
+        "id": "decisao-assistida-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual resposta é honesta?",
+        "evidenceIds": [
+          "PTC26F3",
+          "PTC26F4",
+          "PTC26F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Descrever recomendação e confirmação, admitir o limite da justificativa registrada e oferecer revisão fundamentada.",
+            "feedback": "Separa fatos do que ainda precisa ser apurado."
+          },
+          {
+            "id": "b",
+            "text": "Repetir que foi uma decisão puramente automática.",
+            "feedback": "Houve confirmação humana registrada, embora sem justificativa individual detalhada."
+          },
+          {
+            "id": "c",
+            "text": "Inventar a motivação pessoal do analista.",
+            "feedback": "O registro não contém razões pessoais do analista além dos critérios aplicados pelo sistema."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Luana com texto para o usuário. Atribua corretamente as etapas, não invente a motivação da pessoa e ofereça uma revisão do caso.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Explicar recomendação e confirmação",
+        "Corrigir a interface",
+        "Não criar motivos inexistentes",
+        "Oferecer revisão fundamentada"
+      ]
+    },
+    "model": {
+      "subject": "Re: Quem recusou a solicitação?",
+      "body": "Oi, Luana,\n\na tela descreve o processo de forma incompleta. Neste caso, o sistema recomendou a recusa e um analista confirmou o resultado. O registro permite afirmar isso, mas não traz uma justificativa individual detalhada do analista além dos critérios usados pelo sistema. Não devemos atribuir a ele razões que não estão documentadas nem repetir que a decisão foi exclusivamente automática.\n\nEu responderia ao usuário: «A mensagem da tela foi imprecisa ao atribuir a decisão apenas ao algoritmo. O sistema gerou uma recomendação de recusa, posteriormente confirmada por um analista. Lamentamos que essa etapa não tenha ficado clara. Estamos encaminhando sua solicitação para uma revisão do caso, na qual os fundamentos serão registrados e comunicados a você de modo compreensível.»\n\nVou pedir à equipe responsável que preserve o histórico da recomendação e da confirmação e faça a revisão prevista no procedimento. Também ajustaremos o texto da interface para refletir os diferentes caminhos possíveis, inclusive quando a recomendação é alterada. Assim respondemos à dúvida concreta do usuário sem presumir que a revisão anterior foi mais extensa do que o registro demonstra.\n\nDaniel",
+      "annotations": [
+        {
+          "label": "Descreve duas etapas",
+          "excerpt": "o sistema recomendou a recusa e um analista confirmou",
+          "evidenceIds": [
+            "PTC26F1",
+            "PTC26F2"
+          ]
+        },
+        {
+          "label": "Limita motivos",
+          "excerpt": "não traz uma justificativa individual detalhada",
+          "evidenceIds": [
+            "PTC26F3"
+          ]
+        },
+        {
+          "label": "Corrige tela",
+          "excerpt": "A mensagem da tela foi imprecisa",
+          "evidenceIds": [
+            "PTC26F4"
+          ]
+        },
+        {
+          "label": "Oferece revisão",
+          "excerpt": "na qual os fundamentos serão registrados",
+          "evidenceIds": [
+            "PTC26F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "teste-versao-antiga",
+    "title": "O laudo vale para qual versão?",
+    "area": "Software × segurança",
+    "areaLabel": "Software · segurança",
+    "role": "Aline · coordenação de segurança",
+    "teaser": "Um relatório de teste positivo é citado para uma versão alterada depois da avaliação.",
+    "misunderstanding": "O resultado de segurança de uma versão anterior é apresentado como garantia da versão atual.",
+    "email": {
+      "from": "Rogério · contas empresariais",
+      "to": "Aline · segurança",
+      "sent": "Terça-feira, 8h55",
+      "subject": "Relatório para cliente",
+      "body": "Oi, Aline,\n\no cliente quer confirmação de que a versão atual passou no teste de segurança. Tenho um relatório sem achados críticos do mês passado, mas houve uma mudança no módulo de autenticação desde então. Posso compartilhar o relatório como prova, ou preciso explicar o seu alcance e o plano de validação da mudança? A proposta comercial vence amanhã.\n\nRogério"
+    },
+    "document": {
+      "title": "Escopo do teste e histórico de versões",
+      "intro": "O relatório e a alteração posterior devem ser lidos em conjunto.",
+      "facts": [
+        {
+          "id": "PTC27F1",
+          "time": "Teste",
+          "text": "O relatório avaliou a versão 4.2 e não encontrou achados críticos no escopo examinado."
+        },
+        {
+          "id": "PTC27F2",
+          "time": "Alteração",
+          "text": "A versão 4.3 modificou o módulo de autenticação depois do teste."
+        },
+        {
+          "id": "PTC27F3",
+          "time": "Atual",
+          "text": "Ainda não há teste equivalente concluído para o módulo alterado na versão 4.3."
+        },
+        {
+          "id": "PTC27F4",
+          "time": "Atual",
+          "text": "Uma revisão direcionada foi solicitada, mas a data de conclusão não foi confirmada."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "teste-versao-antiga-evidence",
+        "axis": "Evidence",
+        "prompt": "A que versão se refere o relatório?",
+        "evidenceIds": [
+          "PTC27F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A todas as versões futuras.",
+            "feedback": "O teste não cobre mudanças posteriores."
+          },
+          {
+            "id": "b",
+            "text": "À 4.2 e ao escopo nela examinado.",
+            "feedback": "O relatório identifica essa versão."
+          },
+          {
+            "id": "c",
+            "text": "À 4.3 inteira.",
+            "feedback": "A alteração veio depois."
+          }
+        ]
+      },
+      {
+        "id": "teste-versao-antiga-scope",
+        "axis": "Scope",
+        "prompt": "O que fica sem validação equivalente?",
+        "evidenceIds": [
+          "PTC27F2",
+          "PTC27F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "O módulo de autenticação alterado na 4.3.",
+            "feedback": "A revisão dessa mudança está pendente."
+          },
+          {
+            "id": "b",
+            "text": "Toda a versão 4.2.",
+            "feedback": "Ela foi testada no escopo descrito."
+          },
+          {
+            "id": "c",
+            "text": "A existência de um relatório.",
+            "feedback": "O relatório existe."
+          }
+        ]
+      },
+      {
+        "id": "teste-versao-antiga-intent",
+        "axis": "Intent",
+        "prompt": "Que tensão Rogério enfrenta?",
+        "evidenceIds": [
+          "PTC27F1",
+          "PTC27F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Responder ao prazo comercial sem ampliar indevidamente a prova de segurança.",
+            "feedback": "A revisão não tem data definida."
+          },
+          {
+            "id": "b",
+            "text": "Garantir ausência absoluta de riscos.",
+            "feedback": "Nenhum teste dá essa garantia."
+          },
+          {
+            "id": "c",
+            "text": "Ocultar o relatório antigo.",
+            "feedback": "Ele pode ser compartilhado com contexto."
+          }
+        ]
+      },
+      {
+        "id": "teste-versao-antiga-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual resposta é defensável?",
+        "evidenceIds": [
+          "PTC27F1",
+          "PTC27F2",
+          "PTC27F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dizer que a 4.3 contém uma falha crítica.",
+            "feedback": "Nenhum achado desse tipo foi confirmado."
+          },
+          {
+            "id": "b",
+            "text": "Dizer que a 4.3 foi aprovada pelo teste da 4.2.",
+            "feedback": "A mudança de autenticação não foi avaliada."
+          },
+          {
+            "id": "c",
+            "text": "Compartilhar o relatório com versão e limites, informar a mudança posterior e a revisão solicitada.",
+            "feedback": "Os documentos são úteis se bem delimitados."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Rogério com um texto para o cliente. Delimite o relatório, identifique a mudança e ofereça um compromisso de atualização sem prometer data de teste não confirmada.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Nomear versão testada",
+        "Definir escopo dos achados",
+        "Não extrapolar para 4.3",
+        "Dar seguimento à revisão"
+      ]
+    },
+    "model": {
+      "subject": "Re: Relatório para cliente",
+      "body": "Oi, Rogério,\n\npodemos compartilhar o relatório, desde que ele seja apresentado como evidência sobre a versão 4.2 e o escopo examinado naquele momento. O documento não encontrou achados críticos nessa avaliação. Depois dela, a versão 4.3 alterou o módulo de autenticação, para o qual ainda não há teste equivalente concluído. Uma revisão direcionada foi solicitada, mas ainda não temos data confirmada para o resultado.\n\nAo cliente eu diria: «Encaminhamos o relatório de segurança da versão 4.2, que não registrou achados críticos no escopo avaliado. A versão atualmente utilizada inclui uma mudança posterior no módulo de autenticação. Essa alteração está em revisão específica; por isso, não apresentamos o relatório anterior como validação integral da versão 4.3. Informaremos o andamento da revisão e compartilharemos suas conclusões verificadas quando estiverem disponíveis.»\n\nVou confirmar hoje com a equipe de segurança o escopo exato da revisão e um ponto de atualização que possamos cumprir. Se a decisão comercial exigir uma resposta antes da conclusão, ela deverá considerar essa limitação explicitamente. É melhor fornecer uma evidência útil e bem atribuída do que uma certificação geral que o relatório não oferece.\n\nAline",
+      "annotations": [
+        {
+          "label": "Define versão",
+          "excerpt": "versão 4.2",
+          "evidenceIds": [
+            "PTC27F1"
+          ]
+        },
+        {
+          "label": "Nomeia alteração",
+          "excerpt": "módulo de autenticação",
+          "evidenceIds": [
+            "PTC27F2"
+          ]
+        },
+        {
+          "label": "Expõe lacuna",
+          "excerpt": "ainda não há teste equivalente concluído",
+          "evidenceIds": [
+            "PTC27F3"
+          ]
+        },
+        {
+          "label": "Qualifica prazo",
+          "excerpt": "ainda não temos data confirmada",
+          "evidenceIds": [
+            "PTC27F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "restauracao-parcial",
+    "title": "O teste de restauração incompleto",
+    "area": "Software × continuidade",
+    "areaLabel": "Software · continuidade",
+    "role": "Tiago · continuidade de serviço",
+    "teaser": "Um ensaio de recuperação pequeno viene citado come prova che tutto il sistema può essere restaurato.",
+    "misunderstanding": "O sucesso de uma amostra limitada é usado como comprovação de recuperação completa.",
+    "email": {
+      "from": "Fernanda · direção técnica",
+      "to": "Tiago · continuidade",
+      "sent": "Sexta-feira, 11h30",
+      "subject": "Podemos dizer que a recuperação foi validada?",
+      "body": "Oi, Tiago,\n\num cliente perguntou se conseguiríamos restaurar todo o serviço após uma falha. Temos um teste bem-sucedido de uma base pequena, e a apresentação interna já diz «recuperação integral validada». Lembro que os arquivos grandes e as integrações não entraram no ensaio. Pode redigir uma resposta que reconheça o que funcionou e exponha o trabalho pendente sem alarmismo?\n\nFernanda"
+    },
+    "document": {
+      "title": "Plano e relatório do ensaio",
+      "intro": "O teste comprova apenas o cenário executado.",
+      "facts": [
+        {
+          "id": "PTC28F1",
+          "time": "Plano",
+          "text": "O ensaio previsto para o trimestre inclui base principal, arquivos grandes e três integrações."
+        },
+        {
+          "id": "PTC28F2",
+          "time": "Execução",
+          "text": "Foi restaurada uma base de amostra de 5 GB em ambiente isolado."
+        },
+        {
+          "id": "PTC28F3",
+          "time": "Resultado",
+          "text": "A amostra ficou acessível após duas horas; arquivos grandes e integrações não foram testados."
+        },
+        {
+          "id": "PTC28F4",
+          "time": "Atual",
+          "text": "O ensaio completo ainda não tem data aprovada."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "restauracao-parcial-evidence",
+        "axis": "Evidence",
+        "prompt": "O que foi demonstrado?",
+        "evidenceIds": [
+          "PTC28F2",
+          "PTC28F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Restauração de uma amostra de 5 GB em duas horas.",
+            "feedback": "Esse é o teste executado."
+          },
+          {
+            "id": "b",
+            "text": "Recuperação integral de produção.",
+            "feedback": "O ensaio restaurou só uma amostra de 5 GB em ambiente isolado; não incluiu arquivos grandes nem as três integrações."
+          },
+          {
+            "id": "c",
+            "text": "Impossibilidade de recuperar o sistema.",
+            "feedback": "A amostra ficou acessível após duas horas, mostrando que ao menos esse recorte pôde ser restaurado."
+          }
+        ]
+      },
+      {
+        "id": "restauracao-parcial-scope",
+        "axis": "Scope",
+        "prompt": "Qual parte do plano continua aberta?",
+        "evidenceIds": [
+          "PTC28F1",
+          "PTC28F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Arquivos grandes e três integrações, além da validação do conjunto.",
+            "feedback": "Esses elementos ficaram fora do teste."
+          },
+          {
+            "id": "b",
+            "text": "A medição de duas horas no ensaio.",
+            "feedback": "Duas horas é o resultado medido para a amostra, não uma etapa que ficou por executar."
+          },
+          {
+            "id": "c",
+            "text": "A existência da base de amostra.",
+            "feedback": "A base de 5 GB já foi restaurada; as etapas ausentes são arquivos grandes e integrações."
+          }
+        ]
+      },
+      {
+        "id": "restauracao-parcial-intent",
+        "axis": "Intent",
+        "prompt": "Que equilíbrio Fernanda busca?",
+        "evidenceIds": [
+          "PTC28F2",
+          "PTC28F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Prometer uma data aprovada.",
+            "feedback": "Não há data aprovada para o ensaio completo; Fernanda pede uma resposta fiel ao teste já feito."
+          },
+          {
+            "id": "b",
+            "text": "Cancelar os testes futuros.",
+            "feedback": "O plano ainda prevê arquivos grandes e três integrações, portanto o pedido não é cancelar as próximas etapas."
+          },
+          {
+            "id": "c",
+            "text": "Valorizar a evidência limitada sem chamar o programa de concluído.",
+            "feedback": "Pede uma resposta sem alarmismo."
+          }
+        ]
+      },
+      {
+        "id": "restauracao-parcial-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual formulação é correta?",
+        "evidenceIds": [
+          "PTC28F2",
+          "PTC28F3",
+          "PTC28F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Informar o teste bem-sucedido e as etapas não testadas, com nova data a confirmar.",
+            "feedback": "O alcance da prova fica claro."
+          },
+          {
+            "id": "b",
+            "text": "Repetir «recuperação integral validada».",
+            "feedback": "A apresentação chama de integral um ensaio que deixou arquivos grandes e integrações de fora."
+          },
+          {
+            "id": "c",
+            "text": "Dizer que nunca houve ensaio.",
+            "feedback": "O registro confirma a restauração da amostra de 5 GB e seu acesso após duas horas."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Fernanda com texto para o cliente. Descreva o teste concluído, os componentes pendentes e o próximo planejamento sem converter a amostra em garantia global.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Quantificar o ensaio",
+        "Nomear exclusões",
+        "Corrigir a apresentação interna",
+        "Planejar o teste completo"
+      ]
+    },
+    "model": {
+      "subject": "Re: Podemos dizer que a recuperação foi validada?",
+      "body": "Oi, Fernanda,\n\no ensaio realizado fornece uma evidência útil, mas limitada. Conseguimos restaurar uma base de amostra de 5 GB em ambiente isolado, e ela ficou acessível após duas horas. O plano mais amplo inclui arquivos grandes e três integrações, que não participaram desse teste. Por isso, a frase «recuperação integral validada» na apresentação interna deve ser corrigida. Ainda não há data aprovada para um ensaio completo.\n\nEu responderia ao cliente: «Concluímos com sucesso um teste de restauração de uma base de amostra de 5 GB. O exercício não incluiu, nesta etapa, os arquivos de maior volume nem as integrações externas. Estamos planejando a validação desses componentes e do processo conjunto. Compartilharemos o escopo e o calendário confirmados assim que o plano for aprovado.»\n\nVou ajustar a apresentação hoje para distinguir resultado do ensaio e objetivo do programa. Também levantarei as dependências necessárias para testar arquivos e integrações, com responsáveis e critérios de aceitação. Quando houver um plano aprovado, poderemos dar ao cliente uma atualização verificável. Até lá, o teste da amostra não deve ser usado como promessa de recuperação completa.\n\nTiago",
+      "annotations": [
+        {
+          "label": "Quantifica amostra",
+          "excerpt": "base de amostra de 5 GB",
+          "evidenceIds": [
+            "PTC28F2"
+          ]
+        },
+        {
+          "label": "Nomeia ausência",
+          "excerpt": "arquivos grandes e três integrações",
+          "evidenceIds": [
+            "PTC28F1",
+            "PTC28F3"
+          ]
+        },
+        {
+          "label": "Corrige conclusão",
+          "excerpt": "«recuperação integral validada» na apresentação interna deve ser corrigida",
+          "evidenceIds": [
+            "PTC28F3"
+          ]
+        },
+        {
+          "label": "Preserva calendário",
+          "excerpt": "Ainda não há data aprovada",
+          "evidenceIds": [
+            "PTC28F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "queixa-inconclusiva",
+    "title": "Inconclusivo não significa inventado",
+    "area": "People × apuração",
+    "areaLabel": "Pessoas · apuração",
+    "role": "Helena · relações de trabalho",
+    "teaser": "Uma apuração não conseguiu confirmar uma alegação; a chefia quer dizer que a pessoa reclamou falsamente.",
+    "misunderstanding": "Ausência de prova suficiente é convertida em prova de falsidade do relato.",
+    "email": {
+      "from": "Marcos · gestão",
+      "to": "Helena · relações de trabalho",
+      "sent": "Terça-feira, 9h50",
+      "subject": "Como comunicar o resultado da apuração?",
+      "body": "Oi, Helena,\n\na apuração sobre a queixa de Beatriz terminou sem confirmação dos fatos. Um gestor sugere informar à equipe que a denúncia era falsa para encerrar os boatos. Isso me parece mais forte do que o relatório. Pode indicar o que o resultado permite dizer e como assegurar que Beatriz e a pessoa citada sejam tratadas com respeito?\n\nMarcos"
+    },
+    "document": {
+      "title": "Relatório de apuração e plano de comunicação",
+      "intro": "O relatório delimita a conclusão e quem deve receber informações do caso.",
+      "facts": [
+        {
+          "id": "PTC29F1",
+          "time": "Relatório",
+          "text": "Os depoimentos divergem e não há registro independente suficiente para confirmar o episódio alegado."
+        },
+        {
+          "id": "PTC29F2",
+          "time": "Conclusão",
+          "text": "O resultado formal é «não foi possível confirmar», sem conclusão de falsidade."
+        },
+        {
+          "id": "PTC29F3",
+          "time": "Procedimento",
+          "text": "As partes recebem comunicação individual; a equipe recebe apenas informações operacionais necessárias."
+        },
+        {
+          "id": "PTC29F4",
+          "time": "Atual",
+          "text": "Não houve conclusão disciplinar contra qualquer uma das partes."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "queixa-inconclusiva-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual é a conclusão formal?",
+        "evidenceIds": [
+          "PTC29F1",
+          "PTC29F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A queixa foi inventada.",
+            "feedback": "Falsidade não foi demonstrada."
+          },
+          {
+            "id": "b",
+            "text": "A alegação foi confirmada.",
+            "feedback": "Os elementos foram insuficientes."
+          },
+          {
+            "id": "c",
+            "text": "Não foi possível confirmar o episódio com as evidências disponíveis.",
+            "feedback": "O relatório não decide que o relato era falso."
+          }
+        ]
+      },
+      {
+        "id": "queixa-inconclusiva-scope",
+        "axis": "Scope",
+        "prompt": "O que não cabe divulgar à equipe?",
+        "evidenceIds": [
+          "PTC29F3",
+          "PTC29F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Detalhes dos depoimentos e uma atribuição de culpa não estabelecida.",
+            "feedback": "A comunicação coletiva é limitada."
+          },
+          {
+            "id": "b",
+            "text": "Uma orientação operacional necessária.",
+            "feedback": "O procedimento permite essa parte."
+          },
+          {
+            "id": "c",
+            "text": "A existência de canais de apoio.",
+            "feedback": "Isso não revela o conteúdo da apuração."
+          }
+        ]
+      },
+      {
+        "id": "queixa-inconclusiva-intent",
+        "axis": "Intent",
+        "prompt": "Que preocupação Marcos expressa?",
+        "evidenceIds": [
+          "PTC29F2",
+          "PTC29F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Aplicar punição imediata.",
+            "feedback": "Não houve conclusão disciplinar."
+          },
+          {
+            "id": "b",
+            "text": "Reabrir a apuração sem motivo.",
+            "feedback": "Ele pergunta sobre comunicação."
+          },
+          {
+            "id": "c",
+            "text": "Encerrar boatos sem ferir nenhuma das pessoas com uma conclusão indevida.",
+            "feedback": "Ele questiona a palavra «falsa»."
+          }
+        ]
+      },
+      {
+        "id": "queixa-inconclusiva-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual comunicação é adequada?",
+        "evidenceIds": [
+          "PTC29F2",
+          "PTC29F3",
+          "PTC29F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dizer que a pessoa citada foi considerada culpada.",
+            "feedback": "Também não houve tal conclusão."
+          },
+          {
+            "id": "b",
+            "text": "Declarar publicamente que Beatriz mentiu.",
+            "feedback": "O relatório não sustenta isso."
+          },
+          {
+            "id": "c",
+            "text": "Informar individualmente o resultado preciso e limitar a mensagem coletiva ao trabalho e à confidencialidade.",
+            "feedback": "Respeita o alcance do relatório."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Marcos com duas linhas de comunicação: uma às partes e outra à equipe. Preserve o resultado exato e evite usar «inconclusivo» como julgamento da credibilidade pessoal.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Descrever evidência insuficiente",
+        "Não chamar relato de falso",
+        "Proteger as duas partes",
+        "Limitar a comunicação coletiva"
+      ]
+    },
+    "model": {
+      "subject": "Re: Como comunicar o resultado da apuração?",
+      "body": "Oi, Marcos,\n\no relatório conclui que não foi possível confirmar o episódio com os elementos disponíveis. Os depoimentos divergem e não há registro independente suficiente. Isso não autoriza afirmar que Beatriz inventou o relato, assim como não autoriza declarar a pessoa citada responsável pelo fato. Nenhuma conclusão disciplinar foi tomada. A comunicação precisa respeitar esses limites e não transformar a ausência de confirmação em julgamento público de qualquer das partes.\n\nPara cada pessoa envolvida, proponho uma conversa individual: «A apuração foi concluída e, com as evidências disponíveis, não foi possível confirmar o episódio relatado. Por isso, não há uma conclusão disciplinar. Podemos explicar as medidas de acompanhamento e os canais para trazer informações novas, se surgirem.»\n\nÀ equipe, eu só enviaria uma orientação operacional geral se houvesse necessidade concreta, sem mencionar esta apuração ou as pessoas envolvidas. Informações individuais permaneceriam restritas às partes autorizadas. Posso revisar os dois textos antes do envio e acompanhar as pessoas envolvidas para que o encerramento formal não seja apresentado como desqualificação pessoal.\n\nHelena",
+      "annotations": [
+        {
+          "label": "Define resultado",
+          "excerpt": "não foi possível confirmar o episódio",
+          "evidenceIds": [
+            "PTC29F1",
+            "PTC29F2"
+          ]
+        },
+        {
+          "label": "Rejeita falsidade",
+          "excerpt": "não autoriza afirmar que Beatriz inventou",
+          "evidenceIds": [
+            "PTC29F2"
+          ]
+        },
+        {
+          "label": "Protege duas partes",
+          "excerpt": "não autoriza declarar a pessoa citada responsável",
+          "evidenceIds": [
+            "PTC29F4"
+          ]
+        },
+        {
+          "label": "Limita equipe",
+          "excerpt": "sem mencionar esta apuração ou as pessoas envolvidas",
+          "evidenceIds": [
+            "PTC29F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "tempo-entrevista",
+    "title": "Mais tempo, mesmos critérios",
+    "area": "People × seleção",
+    "areaLabel": "Pessoas · seleção",
+    "role": "Raquel · recrutamento",
+    "teaser": "Uma adaptação de tempo na entrevista é confundida com mudança nos critérios de avaliação.",
+    "misunderstanding": "O ajuste de formato para uma candidata é tratado como vantagem indevida no conteúdo da seleção.",
+    "email": {
+      "from": "Eduardo · líder da vaga",
+      "to": "Raquel · recrutamento",
+      "sent": "Quarta-feira, 16h05",
+      "subject": "Comparabilidade das entrevistas",
+      "body": "Oi, Raquel,\n\numa candidata terá tempo adicional para a etapa escrita, conforme ajuste confirmado por RH. Um avaliador teme que isso torne as notas incomparáveis e quer reduzir a pontuação dela. Não quero expor a justificativa pessoal do ajuste ao grupo. Como orientar a banca sobre critérios e registro da avaliação sem transformar uma condição de acesso em desconto de pontos?\n\nEduardo"
+    },
+    "document": {
+      "title": "Plano da etapa e ajuste de formato",
+      "intro": "O ajuste altera o tempo de realização, não os critérios de pontuação.",
+      "facts": [
+        {
+          "id": "PTC210F1",
+          "time": "Etapa",
+          "text": "Todas as candidaturas recebem as mesmas perguntas e são avaliadas pela mesma rubrica."
+        },
+        {
+          "id": "PTC210F2",
+          "time": "Ajuste",
+          "text": "RH aprovou tempo adicional para uma candidata, sem mudar as tarefas nem os critérios."
+        },
+        {
+          "id": "PTC210F3",
+          "time": "Procedimento",
+          "text": "A justificativa individual é restrita a RH; a banca recebe apenas a instrução operacional necessária."
+        },
+        {
+          "id": "PTC210F4",
+          "time": "Atual",
+          "text": "Nenhuma avaliação da candidata foi concluída."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "tempo-entrevista-evidence",
+        "axis": "Evidence",
+        "prompt": "O que permanece igual?",
+        "evidenceIds": [
+          "PTC210F1",
+          "PTC210F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perguntas, tarefas e rubrica de avaliação.",
+            "feedback": "O ajuste diz respeito ao tempo."
+          },
+          {
+            "id": "b",
+            "text": "A duração individual da etapa.",
+            "feedback": "Ela será diferente."
+          },
+          {
+            "id": "c",
+            "text": "A justificativa pessoal de todos.",
+            "feedback": "Ela é restrita."
+          }
+        ]
+      },
+      {
+        "id": "tempo-entrevista-scope",
+        "axis": "Scope",
+        "prompt": "O que a banca não deve fazer?",
+        "evidenceIds": [
+          "PTC210F2",
+          "PTC210F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Reduzir a pontuação por causa do ajuste de tempo.",
+            "feedback": "A rubrica não foi alterada."
+          },
+          {
+            "id": "b",
+            "text": "Registrar notas pela rubrica.",
+            "feedback": "Esse é o procedimento."
+          },
+          {
+            "id": "c",
+            "text": "Aplicar os mesmos critérios.",
+            "feedback": "Isso é necessário."
+          }
+        ]
+      },
+      {
+        "id": "tempo-entrevista-intent",
+        "axis": "Intent",
+        "prompt": "Que equilíbrio Eduardo busca?",
+        "evidenceIds": [
+          "PTC210F2",
+          "PTC210F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Divulgar a justificativa pessoal.",
+            "feedback": "Ela é restrita a RH."
+          },
+          {
+            "id": "b",
+            "text": "Comparabilidade da avaliação e confidencialidade da candidata.",
+            "feedback": "A pergunta menciona ambos."
+          },
+          {
+            "id": "c",
+            "text": "Cancelar a etapa.",
+            "feedback": "A etapa ainda pode ocorrer."
+          }
+        ]
+      },
+      {
+        "id": "tempo-entrevista-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual instrução resolve a dúvida?",
+        "evidenceIds": [
+          "PTC210F1",
+          "PTC210F2",
+          "PTC210F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Presumir a nota antes da entrevista.",
+            "feedback": "A avaliação ainda não ocorreu."
+          },
+          {
+            "id": "b",
+            "text": "Criar critérios mais difíceis para a candidata.",
+            "feedback": "As tarefas devem ser as mesmas."
+          },
+          {
+            "id": "c",
+            "text": "Informar à banca o tempo aplicável, manter a rubrica e avaliar o trabalho entregue sem penalidade pelo ajuste.",
+            "feedback": "Nenhuma nota foi fechada."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Eduardo com uma orientação à banca. Defina o limite da informação pessoal, preserve os critérios e indique como registrar a avaliação.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Distinguir formato e critérios",
+        "Não penalizar o ajuste",
+        "Preservar dados pessoais",
+        "Registrar avaliação comparável"
+      ]
+    },
+    "model": {
+      "subject": "Re: Comparabilidade das entrevistas",
+      "body": "Oi, Eduardo,\n\no ajuste confirmado por RH dá à candidata tempo adicional para concluir a mesma tarefa. As perguntas e a rubrica de avaliação permanecem iguais para todas as pessoas. A banca não deve reduzir pontos por causa do tempo autorizado: isso alteraria os critérios após a definição da etapa. Também não precisa conhecer a justificativa pessoal do ajuste, que fica restrita a RH.\n\nEu orientaria os avaliadores assim: «A candidata realizará a etapa com o tempo informado por RH. Avaliem o trabalho entregue pelos critérios da rubrica comum, sem acrescentar penalidade ou benefício ao conteúdo da nota pelo formato autorizado. Registrem a pontuação e os exemplos que a sustentam, como nas demais avaliações. Dúvidas sobre a aplicação do ajuste devem ser encaminhadas a RH, sem solicitar informações pessoais à candidata.»\n\nAntes da etapa, confirmarei com a equipe a duração operacional e a forma de coleta das respostas. Depois, revisaremos se as notas foram fundamentadas pelos mesmos critérios. Nenhuma avaliação foi concluída ainda, então podemos prevenir uma comparação inadequada sem reabrir decisões já tomadas.\n\nRaquel",
+      "annotations": [
+        {
+          "label": "Mantém critérios",
+          "excerpt": "As perguntas e a rubrica de avaliação permanecem iguais",
+          "evidenceIds": [
+            "PTC210F1"
+          ]
+        },
+        {
+          "label": "Define ajuste",
+          "excerpt": "tempo adicional",
+          "evidenceIds": [
+            "PTC210F2"
+          ]
+        },
+        {
+          "label": "Protege justificativa",
+          "excerpt": "fica restrita a RH",
+          "evidenceIds": [
+            "PTC210F3"
+          ]
+        },
+        {
+          "label": "Previne nota indevida",
+          "excerpt": "Nenhuma avaliação foi concluída ainda",
+          "evidenceIds": [
+            "PTC210F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "retorno-gradual",
+    "title": "Um plano de retorno ainda em revisão",
+    "area": "People × retorno ao trabalho",
+    "areaLabel": "Pessoas · retorno ao trabalho",
+    "role": "Júlia · gestão de pessoas",
+    "teaser": "A chefia divulga uma escala de retorno antes de confirmar condições de trabalho com a pessoa.",
+    "misunderstanding": "Uma proposta de escala é apresentada como acordo final com a funcionária.",
+    "email": {
+      "from": "André · coordenação",
+      "to": "Júlia · pessoas",
+      "sent": "Segunda-feira, 10h30",
+      "subject": "Escala de retorno da Marina",
+      "body": "Oi, Júlia,\n\na equipe recebeu uma escala dizendo que Marina voltará meio período na próxima semana. Eu a preparei para estudar cobertura, mas ainda não conversei com ela sobre horários e recursos de trabalho. Alguns colegas já lhe deram boas-vindas para segunda. Como corrigimos a expectativa sem expor informações de saúde nem sugerir que o retorno foi cancelado?\n\nAndré"
+    },
+    "document": {
+      "title": "Plano preliminar e comunicação",
+      "intro": "A escala de cobertura não é uma decisão individual concluída.",
+      "facts": [
+        {
+          "id": "PTC211F1",
+          "time": "Sexta-feira",
+          "text": "André preparou uma escala preliminar de meio período para avaliar a cobertura."
+        },
+        {
+          "id": "PTC211F2",
+          "time": "Sexta-feira",
+          "text": "A escala foi compartilhada com a equipe sem a marca «preliminar»."
+        },
+        {
+          "id": "PTC211F3",
+          "time": "Atual",
+          "text": "Marina ainda não confirmou horários nem recursos necessários para o retorno."
+        },
+        {
+          "id": "PTC211F4",
+          "time": "Procedimento",
+          "text": "A comunicação coletiva informa apenas a organização confirmada, preservando dados pessoais de saúde."
+        },
+        {
+          "id": "PTC211F5",
+          "time": "Atual",
+          "text": "Não há data final de retorno acordada."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "retorno-gradual-evidence",
+        "axis": "Evidence",
+        "prompt": "O que a escala demonstra?",
+        "evidenceIds": [
+          "PTC211F1",
+          "PTC211F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Um acordo final de Marina.",
+            "feedback": "Ela ainda não confirmou horários."
+          },
+          {
+            "id": "b",
+            "text": "O cancelamento do retorno.",
+            "feedback": "Não há decisão de cancelamento."
+          },
+          {
+            "id": "c",
+            "text": "Uma hipótese de cobertura que foi compartilhada cedo demais.",
+            "feedback": "O documento era preliminar."
+          }
+        ]
+      },
+      {
+        "id": "retorno-gradual-scope",
+        "axis": "Scope",
+        "prompt": "Qual informação não deve ir à equipe?",
+        "evidenceIds": [
+          "PTC211F3",
+          "PTC211F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A correção de que a escala era preliminar.",
+            "feedback": "Isso esclarece o erro."
+          },
+          {
+            "id": "b",
+            "text": "O estado confirmado dos turnos.",
+            "feedback": "Esse estado pode ser informado."
+          },
+          {
+            "id": "c",
+            "text": "Detalhes pessoais sobre condições de saúde ou necessidades individuais.",
+            "feedback": "O procedimento restringe esses dados."
+          }
+        ]
+      },
+      {
+        "id": "retorno-gradual-intent",
+        "axis": "Intent",
+        "prompt": "Que problema André precisa reparar?",
+        "evidenceIds": [
+          "PTC211F2",
+          "PTC211F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uma data tratada como certa antes de existir acordo individual.",
+            "feedback": "A equipe já criou expectativa."
+          },
+          {
+            "id": "b",
+            "text": "Um erro clínico.",
+            "feedback": "A questão é organizacional."
+          },
+          {
+            "id": "c",
+            "text": "A recusa de Marina em voltar.",
+            "feedback": "Nenhuma recusa é registrada."
+          }
+        ]
+      },
+      {
+        "id": "retorno-gradual-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual mensagem é adequada?",
+        "evidenceIds": [
+          "PTC211F1",
+          "PTC211F3",
+          "PTC211F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dizer que a escala era planejamento interno e que novos turnos serão informados após confirmação com as pessoas envolvidas.",
+            "feedback": "Protege decisão e privacidade."
+          },
+          {
+            "id": "b",
+            "text": "Confirmar segunda-feira como data final.",
+            "feedback": "A data não está acordada."
+          },
+          {
+            "id": "c",
+            "text": "Explicar à equipe as necessidades pessoais de Marina.",
+            "feedback": "Esses dados são reservados."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a André com uma correção para a equipe e um pedido de desculpas individual a Marina. Preserve a privacidade e o caráter ainda aberto do retorno.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Identificar escala preliminar",
+        "Não divulgar saúde",
+        "Restituir a Marina participação",
+        "Comunicar apenas organização confirmada"
+      ]
+    },
+    "model": {
+      "subject": "Re: Escala de retorno da Marina",
+      "body": "Oi, André,\n\na escala de meio período foi criada para estudar a cobertura, mas saiu para a equipe sem a indicação de que era preliminar. Marina ainda não confirmou horários nem recursos necessários, e não existe uma data final de retorno acordada. Precisamos corrigir a expectativa de segunda-feira sem interpretar isso como cancelamento e sem explicar à equipe questões pessoais dela.\n\nEu enviaria ao grupo: «A escala compartilhada na sexta era uma proposta de planejamento interno e não um cronograma confirmado. Ela foi divulgada antes da conclusão das conversas necessárias. Informaremos os turnos atualizados quando houver confirmação com as pessoas envolvidas. Por favor, não tomem a data indicada como definitiva.»\n\nA Marina, sugiro uma mensagem separada: «Compartilhamos uma proposta antes de conversar com você, e isso criou uma expectativa indevida. Pedimos desculpas. Queremos ouvir seus horários possíveis e as condições de trabalho necessárias antes de definir qualquer comunicado à equipe.»\n\nPosso participar dessa conversa e revisar a próxima versão da escala. Até lá, manteremos a cobertura com o planejamento atual e comunicaremos somente o que estiver efetivamente confirmado.\n\nJúlia",
+      "annotations": [
+        {
+          "label": "Define proposta",
+          "excerpt": "criada para estudar a cobertura",
+          "evidenceIds": [
+            "PTC211F1"
+          ]
+        },
+        {
+          "label": "Reconhece divulgação",
+          "excerpt": "saiu para a equipe sem a indicação",
+          "evidenceIds": [
+            "PTC211F2"
+          ]
+        },
+        {
+          "label": "Mantém data aberta",
+          "excerpt": "não existe uma data final de retorno acordada",
+          "evidenceIds": [
+            "PTC211F5"
+          ]
+        },
+        {
+          "label": "Protege privacidade",
+          "excerpt": "sem explicar à equipe questões pessoais dela",
+          "evidenceIds": [
+            "PTC211F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "vagas-congeladas",
+    "title": "Vagas congeladas não são extintas",
+    "area": "People × planejamento",
+    "areaLabel": "Pessoas · planejamento",
+    "role": "Sérgio · planejamento de pessoas",
+    "teaser": "Uma pausa na contratação é anunciada como eliminação definitiva das posições.",
+    "misunderstanding": "Congelamento temporário de reposições é comunicado como decisão de extinguir cargos.",
+    "email": {
+      "from": "Flávia · gerente de equipe",
+      "to": "Sérgio · pessoas",
+      "sent": "Quinta-feira, 11h10",
+      "subject": "O que significa o congelamento?",
+      "body": "Oi, Sérgio,\n\no financeiro pediu que seguremos novas contratações até a revisão do orçamento. No corredor já se comenta que as vagas foram extintas e que a equipe vai diminuir permanentemente. Tenho duas posições abertas e pessoas sobrecarregadas. Como explicar a pausa sem prometer que tudo será reaberto nem anunciar cortes que não foram decididos?\n\nFlávia"
+    },
+    "document": {
+      "title": "Decisão orçamentária e quadro de vagas",
+      "intro": "A medida trata do momento de contratar, não da estrutura definitiva.",
+      "facts": [
+        {
+          "id": "PTC212F1",
+          "time": "Financeiro",
+          "text": "Novas contratações ficam suspensas até a revisão orçamentária do próximo mês."
+        },
+        {
+          "id": "PTC212F2",
+          "time": "Quadro",
+          "text": "As duas posições da equipe continuam registradas como vagas abertas, com processo pausado."
+        },
+        {
+          "id": "PTC212F3",
+          "time": "Atual",
+          "text": "Não há decisão de extinguir os cargos nem aprovação para retomar as seleções."
+        },
+        {
+          "id": "PTC212F4",
+          "time": "Gestão",
+          "text": "A carga de trabalho atual da equipe foi sinalizada, mas o plano de cobertura ainda será discutido."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "vagas-congeladas-evidence",
+        "axis": "Evidence",
+        "prompt": "O que foi decidido?",
+        "evidenceIds": [
+          "PTC212F1",
+          "PTC212F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pausar contratações até a revisão, mantendo as posições registradas.",
+            "feedback": "As vagas não foram extintas."
+          },
+          {
+            "id": "b",
+            "text": "Extinguir definitivamente dois cargos.",
+            "feedback": "Não há decisão nesse sentido."
+          },
+          {
+            "id": "c",
+            "text": "Reabrir seleções amanhã.",
+            "feedback": "A retomada não foi aprovada."
+          }
+        ]
+      },
+      {
+        "id": "vagas-congeladas-scope",
+        "axis": "Scope",
+        "prompt": "Qual promessa seria excessiva?",
+        "evidenceIds": [
+          "PTC212F1",
+          "PTC212F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Informar que há revisão no próximo mês.",
+            "feedback": "Esse prazo está registrado."
+          },
+          {
+            "id": "b",
+            "text": "Garantir que as duas seleções voltarão após a revisão.",
+            "feedback": "O resultado orçamentário está aberto."
+          },
+          {
+            "id": "c",
+            "text": "Dizer que processos estão pausados.",
+            "feedback": "É o estado atual."
+          }
+        ]
+      },
+      {
+        "id": "vagas-congeladas-intent",
+        "axis": "Intent",
+        "prompt": "Que preocupação Flávia quer acolher?",
+        "evidenceIds": [
+          "PTC212F2",
+          "PTC212F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A sobrecarga real sem transformar rumor em decisão estrutural.",
+            "feedback": "Ela menciona equipe e vagas."
+          },
+          {
+            "id": "b",
+            "text": "A ideia de que não há trabalho pendente.",
+            "feedback": "A carga foi sinalizada."
+          },
+          {
+            "id": "c",
+            "text": "Uma aprovação imediata do financeiro.",
+            "feedback": "Não existe."
+          }
+        ]
+      },
+      {
+        "id": "vagas-congeladas-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual mensagem é precisa?",
+        "evidenceIds": [
+          "PTC212F1",
+          "PTC212F3",
+          "PTC212F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confirmar que os cargos foram eliminados.",
+            "feedback": "Não foram."
+          },
+          {
+            "id": "b",
+            "text": "Prometer contratação em data fixa.",
+            "feedback": "A revisão pode mudar o plano."
+          },
+          {
+            "id": "c",
+            "text": "Explicar pausa e revisão, reconhecer cobertura a discutir e evitar garantia ou anúncio de extinção.",
+            "feedback": "Mantém os limites da decisão."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Flávia com texto à equipe. Distinga pausa de extinção, reconheça a carga de trabalho e marque um ponto de atualização após a revisão.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Definir o congelamento",
+        "Não prometer retomada",
+        "Não anunciar extinção",
+        "Tratar sobrecarga"
+      ]
+    },
+    "model": {
+      "subject": "Re: O que significa o congelamento?",
+      "body": "Oi, Flávia,\n\na decisão atual é suspender novas contratações até a revisão do orçamento no próximo mês. As duas posições da sua equipe continuam registradas como vagas abertas, embora seus processos estejam pausados. Não há decisão de extinguir cargos, mas também não há autorização para prometer a retomada das seleções. Podemos corrigir o rumor com esses fatos e reconhecer que a pausa afeta uma equipe já sobrecarregada.\n\nEu diria ao grupo: «As contratações estão temporariamente suspensas até a próxima revisão orçamentária. As vagas abertas da equipe não foram extintas por esta decisão. O que acontecerá com cada processo após a revisão ainda não está definido. Sabemos que a carga de trabalho atual exige atenção e discutiremos medidas de cobertura enquanto aguardamos a decisão.»\n\nVou trabalhar com você numa análise das tarefas mais urgentes e das alternativas de distribuição de trabalho que podemos adotar sem depender de novas admissões imediatas. Depois da revisão orçamentária, comunicaremos o resultado e seus efeitos concretos, mesmo que parte do planejamento continue aberta. Assim a equipe recebe um estado honesto e um caminho de acompanhamento.\n\nSérgio",
+      "annotations": [
+        {
+          "label": "Define pausa",
+          "excerpt": "suspender novas contratações",
+          "evidenceIds": [
+            "PTC212F1"
+          ]
+        },
+        {
+          "label": "Mantém posições",
+          "excerpt": "continuam registradas como vagas abertas",
+          "evidenceIds": [
+            "PTC212F2"
+          ]
+        },
+        {
+          "label": "Evita promessa",
+          "excerpt": "não há autorização para prometer a retomada",
+          "evidenceIds": [
+            "PTC212F3"
+          ]
+        },
+        {
+          "label": "Acolhe carga",
+          "excerpt": "equipe já sobrecarregada",
+          "evidenceIds": [
+            "PTC212F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "medicamento-etiqueta",
+    "title": "Uma etiqueta de horário no frasco errado",
+    "area": "Health administration × farmácia",
+    "areaLabel": "Administração em saúde · farmácia",
+    "role": "Bianca · coordenação farmacêutica",
+    "teaser": "Uma etiqueta de orientação foi impressa para um medicamento, mas colada em outro pacote antes da entrega.",
+    "misunderstanding": "A conferência do pedido é confundida com a conferência da embalagem efetivamente entregue.",
+    "email": {
+      "from": "Rita · atendimento",
+      "to": "Bianca · farmácia",
+      "sent": "Terça-feira, 10h05",
+      "subject": "Etiqueta trocada na entrega",
+      "body": "Oi, Bianca,\n\num paciente ligou dizendo que a etiqueta de horários colada no pacote não corresponde ao nome do medicamento dentro dele. O pedido eletrônico parece correto. Não quero orientá-lo a seguir a etiqueta nem afirmar que houve uso errado sem verificar. Como responder de imediato e acionar a equipe clínica com a informação certa?\n\nRita"
+    },
+    "document": {
+      "title": "Pedido, separação e entrega",
+      "intro": "O registro eletrônico e a embalagem física precisam ser reconciliados.",
+      "facts": [
+        {
+          "id": "PTC213F1",
+          "time": "Pedido",
+          "text": "O prontuário registra corretamente os dois medicamentos prescritos para o paciente."
+        },
+        {
+          "id": "PTC213F2",
+          "time": "Separação",
+          "text": "A conferência eletrônica do pedido foi concluída antes da impressão das etiquetas."
+        },
+        {
+          "id": "PTC213F3",
+          "time": "Entrega",
+          "text": "Uma foto enviada pelo paciente mostra o nome do medicamento do pacote diferente do nome na etiqueta colada."
+        },
+        {
+          "id": "PTC213F4",
+          "time": "Atual",
+          "text": "Não há confirmação de que o paciente tenha utilizado qualquer medicamento com base na etiqueta."
+        },
+        {
+          "id": "PTC213F5",
+          "time": "Procedimento",
+          "text": "A farmácia verifica fisicamente o pacote; a equipe clínica orienta o paciente quanto a qualquer uso ou risco."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "medicamento-etiqueta-evidence",
+        "axis": "Evidence",
+        "prompt": "O que a foto demonstra?",
+        "evidenceIds": [
+          "PTC213F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Incompatibilidade entre nome no pacote e nome na etiqueta.",
+            "feedback": "É um fato físico visível."
+          },
+          {
+            "id": "b",
+            "text": "Que houve uso indevido.",
+            "feedback": "Isso ainda não foi confirmado."
+          },
+          {
+            "id": "c",
+            "text": "Que o prontuário estava errado.",
+            "feedback": "O pedido eletrônico está correto."
+          }
+        ]
+      },
+      {
+        "id": "medicamento-etiqueta-scope",
+        "axis": "Scope",
+        "prompt": "Qual etapa a conferência eletrônica não cobriu?",
+        "evidenceIds": [
+          "PTC213F2",
+          "PTC213F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A existência da prescrição.",
+            "feedback": "O pedido foi registrado."
+          },
+          {
+            "id": "b",
+            "text": "A entrega do pacote.",
+            "feedback": "A foto mostra o pacote recebido."
+          },
+          {
+            "id": "c",
+            "text": "A etiqueta efetivamente colada depois da conferência.",
+            "feedback": "A ordem temporal deixa uma lacuna."
+          }
+        ]
+      },
+      {
+        "id": "medicamento-etiqueta-intent",
+        "axis": "Intent",
+        "prompt": "Que cuidado Rita pede?",
+        "evidenceIds": [
+          "PTC213F4",
+          "PTC213F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Evitar instrução clínica improvisada e verificar o ocorrido.",
+            "feedback": "Ela separa atendimento e clínica."
+          },
+          {
+            "id": "b",
+            "text": "Afirmar que nada aconteceu.",
+            "feedback": "O uso ainda é desconhecido."
+          },
+          {
+            "id": "c",
+            "text": "Pedir ao paciente que ignore o problema.",
+            "feedback": "A divergência é real."
+          }
+        ]
+      },
+      {
+        "id": "medicamento-etiqueta-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual resposta imediata é adequada?",
+        "evidenceIds": [
+          "PTC213F3",
+          "PTC213F4",
+          "PTC213F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Declarar que o paciente tomou a dose errada.",
+            "feedback": "Não há essa confirmação."
+          },
+          {
+            "id": "b",
+            "text": "Orientar a não seguir a etiqueta divergente, acionar farmácia e equipe clínica e pedir retorno seguro.",
+            "feedback": "Os profissionais devem avaliar o caso."
+          },
+          {
+            "id": "c",
+            "text": "Confirmar por telefone um novo horário de uso sem revisão.",
+            "feedback": "A clínica deve orientar após verificar."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Rita com uma mensagem inicial ao paciente e a ordem de escalonamento. Reconheça a divergência, não interprete a prescrição e assegure contato clínico.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Nomear a divergência",
+        "Não inferir uso",
+        "Separar farmácia e clínica",
+        "Dar orientação de contato segura"
+      ]
+    },
+    "model": {
+      "subject": "Re: Etiqueta trocada na entrega",
+      "body": "Oi, Rita,\n\na foto mostra que o nome na etiqueta não corresponde ao medicamento indicado no pacote. O pedido eletrônico está correto, mas a conferência ocorreu antes de a etiqueta ser impressa e colada; portanto, ela não valida o pacote entregue. Ainda não sabemos se o paciente seguiu a etiqueta. Não devemos improvisar uma orientação de dose ou afirmar que não houve risco.\n\nEu diria ao paciente: «Obrigado por nos avisar. Identificamos uma divergência entre a etiqueta de horários e o nome do medicamento na embalagem. Por favor, não utilize a etiqueta divergente como orientação. Nossa farmácia vai conferir o pacote, e a equipe clínica entrará em contato para orientar você de acordo com o seu caso. Se já tiver usado qualquer medicamento do pacote ou apresentar sintomas, avise imediatamente a equipe clínica; não espere pela ligação de retorno.»\n\nVou registrar a foto e o número do pedido, pedir conferência física imediata à farmácia e solicitar contato clínico prioritário, imediato se houver relato de uso ou sintomas. A resposta final sobre uso e conduta deve vir dos profissionais responsáveis, depois da reconciliação do pacote.\n\nBianca",
+      "annotations": [
+        {
+          "label": "Identifica divergência",
+          "excerpt": "nome na etiqueta não corresponde",
+          "evidenceIds": [
+            "PTC213F3"
+          ]
+        },
+        {
+          "label": "Expõe lacuna",
+          "excerpt": "a conferência ocorreu antes de a etiqueta ser impressa",
+          "evidenceIds": [
+            "PTC213F2"
+          ]
+        },
+        {
+          "label": "Não presume uso",
+          "excerpt": "Ainda não sabemos se o paciente seguiu a etiqueta",
+          "evidenceIds": [
+            "PTC213F4"
+          ]
+        },
+        {
+          "label": "Separa papéis",
+          "excerpt": "Nossa farmácia vai conferir o pacote, e a equipe clínica entrará em contato",
+          "evidenceIds": [
+            "PTC213F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "recibo-sem-consulta",
+    "title": "Presente no prédio, ausente da consulta",
+    "area": "Health administration × atendimento",
+    "areaLabel": "Administração em saúde · atendimento",
+    "role": "Célia · coordenação de recepção",
+    "teaser": "O sistema marca ausência, mas o paciente tem comprovante de entrada no prédio.",
+    "misunderstanding": "A falta de registro na sala é tomada como prova de que o paciente não compareceu ao local.",
+    "email": {
+      "from": "Otávio · supervisão",
+      "to": "Célia · recepção",
+      "sent": "Quarta-feira, 13h40",
+      "subject": "Taxa por falta à consulta",
+      "body": "Oi, Célia,\no paciente contesta a taxa de não comparecimento. O consultório não registrou sua chegada, mas ele mostra um comprovante de entrada no prédio antes do horário. A recepção do andar estava fechada por troca de turno. Podemos suspender a cobrança enquanto reconstruímos o trajeto, sem declarar desde já que a consulta ocorreu ou que a taxa é definitivamente indevida?\n\nOtávio"
+    },
+    "document": {
+      "title": "Registros de acesso e atendimento",
+      "intro": "A entrada no prédio e a realização da consulta são eventos separados.",
+      "facts": [
+        {
+          "id": "PTC214F1",
+          "time": "10h45",
+          "text": "O controle de acesso registra a entrada do paciente no prédio."
+        },
+        {
+          "id": "PTC214F2",
+          "time": "11h00",
+          "text": "A consulta estava marcada para esse horário; não há registro de chamada ou atendimento na sala."
+        },
+        {
+          "id": "PTC214F3",
+          "time": "10h50–11h10",
+          "text": "O balcão do andar ficou sem atendente durante a troca de turno."
+        },
+        {
+          "id": "PTC214F4",
+          "time": "Atual",
+          "text": "A taxa de não comparecimento foi lançada automaticamente, ainda sem revisão manual."
+        },
+        {
+          "id": "PTC214F5",
+          "time": "Procedimento",
+          "text": "Contestações com evidência de presença exigem revisão antes de cobrança final."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "recibo-sem-consulta-evidence",
+        "axis": "Evidence",
+        "prompt": "O que o comprovante prova?",
+        "evidenceIds": [
+          "PTC214F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ausência total do paciente.",
+            "feedback": "O acesso mostra o contrário."
+          },
+          {
+            "id": "b",
+            "text": "Entrada no prédio antes da consulta.",
+            "feedback": "Não comprova atendimento clínico."
+          },
+          {
+            "id": "c",
+            "text": "Realização da consulta.",
+            "feedback": "Não há registro na sala."
+          }
+        ]
+      },
+      {
+        "id": "recibo-sem-consulta-scope",
+        "axis": "Scope",
+        "prompt": "Por que a taxa não deve ser tratada como final?",
+        "evidenceIds": [
+          "PTC214F3",
+          "PTC214F4",
+          "PTC214F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Porque nenhuma taxa foi lançada.",
+            "feedback": "O sistema a lançou."
+          },
+          {
+            "id": "b",
+            "text": "O lançamento foi automático e há evidência de presença a revisar.",
+            "feedback": "O procedimento exige revisão."
+          },
+          {
+            "id": "c",
+            "text": "Porque a consulta foi comprovadamente realizada.",
+            "feedback": "A entrada não prova atendimento."
+          }
+        ]
+      },
+      {
+        "id": "recibo-sem-consulta-intent",
+        "axis": "Intent",
+        "prompt": "Que equilíbrio Otávio busca?",
+        "evidenceIds": [
+          "PTC214F1",
+          "PTC214F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Afirmar culpa do paciente.",
+            "feedback": "O balcão estava sem atendente."
+          },
+          {
+            "id": "b",
+            "text": "Defender a cobrança automática a qualquer custo.",
+            "feedback": "Pede suspensão."
+          },
+          {
+            "id": "c",
+            "text": "Reconhecer a presença possível sem inventar o desfecho da consulta.",
+            "feedback": "Ele quer reconstruir o trajeto."
+          }
+        ]
+      },
+      {
+        "id": "recibo-sem-consulta-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual resposta serve ao paciente?",
+        "evidenceIds": [
+          "PTC214F1",
+          "PTC214F3",
+          "PTC214F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Suspender a cobrança, revisar registros e explicar quando haverá decisão documentada.",
+            "feedback": "A presença exige apuração."
+          },
+          {
+            "id": "b",
+            "text": "Confirmar que a consulta ocorreu.",
+            "feedback": "Não há registro clínico."
+          },
+          {
+            "id": "c",
+            "text": "Cobrar antes da revisão.",
+            "feedback": "A regra prevê o contrário."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Otávio com uma mensagem ao paciente. Diferencie entrada e consulta, suspenda o efeito da taxa durante a revisão e identifique os registros a consultar.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Reconhecer comprovante",
+        "Não inventar consulta",
+        "Suspender cobrança pendente",
+        "Revisar trajeto e atendimento"
+      ]
+    },
+    "model": {
+      "subject": "Re: Taxa por falta à consulta",
+      "body": "Oi, Otávio,\n\no comprovante confirma que o paciente entrou no prédio às 10h45, antes da consulta marcada para as 11h. Isso não prova que a consulta aconteceu, mas também impede tratar a ausência registrada na sala como prova de que ele não veio. O balcão do andar estava sem atendente no intervalo relevante, e a taxa foi lançada automaticamente, sem revisão. Pelo procedimento, devemos suspendê-la enquanto apuramos o percurso.\n\nEu responderia: «Recebemos seu comprovante de entrada no prédio e suspendemos a cobrança por não comparecimento durante a análise. Estamos verificando os registros de acesso, recepção e chamada da consulta para entender o que aconteceu. A entrada no prédio e o atendimento são registros diferentes; não concluiremos sobre a taxa antes de reconciliá-los. Enviaremos uma decisão documentada até a data que confirmarmos com a equipe responsável.»\n\nVou ouvir o atendimento do andar e conferir se houve chamada não registrada durante a troca de turno. Também verificarei o lançamento automático para que nenhuma cobrança seja finalizada antes da revisão. Comunicaremo-nos com o paciente mesmo que algum ponto permaneça incerto.\n\nCélia",
+      "annotations": [
+        {
+          "label": "Confirma entrada",
+          "excerpt": "entrou no prédio às 10h45",
+          "evidenceIds": [
+            "PTC214F1"
+          ]
+        },
+        {
+          "label": "Distingue atendimento",
+          "excerpt": "Isso não prova que a consulta aconteceu",
+          "evidenceIds": [
+            "PTC214F2"
+          ]
+        },
+        {
+          "label": "Observa balcão",
+          "excerpt": "sem atendente no intervalo relevante",
+          "evidenceIds": [
+            "PTC214F3"
+          ]
+        },
+        {
+          "label": "Suspende taxa",
+          "excerpt": "suspendemos a cobrança",
+          "evidenceIds": [
+            "PTC214F4",
+            "PTC214F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pesquisa-servico-ou-estudo",
+    "title": "Uma pesquisa enviada pelo canal errado",
+    "area": "Health administration × pesquisa",
+    "areaLabel": "Administração em saúde · pesquisa",
+    "role": "Mônica · gestão de contatos",
+    "teaser": "Um convite de pesquisa foi enviado pelo canal usado para avisos de atendimento, cuja finalidade é diferente.",
+    "misunderstanding": "A autorização para avisos administrativos é tratada como autorização para convites de pesquisa.",
+    "email": {
+      "from": "Dr. Pedro · coordenação de estudo",
+      "to": "Mônica · contatos",
+      "sent": "Segunda-feira, 9h10",
+      "subject": "Convite enviado aos pacientes",
+      "body": "Oi, Mônica,\n\na equipe enviou um convite para entrevista de pesquisa pelo canal de avisos de consultas. Os destinatários podem recusar, mas um paciente perguntou por que recebeu aquilo sem escolher participar de estudos. Não quero dizer que o envio foi autorizado apenas porque a participação é voluntária. O que exatamente foi enviado e como corrigimos a rota para os próximos contatos?\n\nPedro"
+    },
+    "document": {
+      "title": "Preferências e registro do envio",
+      "intro": "O registro distingue finalidade do canal e consentimento para participar.",
+      "facts": [
+        {
+          "id": "PTC215F1",
+          "time": "Cadastro",
+          "text": "Os destinatários aceitaram receber avisos relacionados às consultas."
+        },
+        {
+          "id": "PTC215F2",
+          "time": "Envio",
+          "text": "O convite para uma entrevista de pesquisa foi enviado a 60 contas pelo canal de avisos."
+        },
+        {
+          "id": "PTC215F3",
+          "time": "Mensagem",
+          "text": "O texto dizia que a participação era opcional e não inscrevia ninguém automaticamente."
+        },
+        {
+          "id": "PTC215F4",
+          "time": "Procedimento",
+          "text": "Convites de pesquisa seguem uma checagem de preferências e um canal específico antes do envio."
+        },
+        {
+          "id": "PTC215F5",
+          "time": "Atual",
+          "text": "Essa checagem não foi registrada para o lote de 60 contas."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "pesquisa-servico-ou-estudo-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual preferência estava registrada?",
+        "evidenceIds": [
+          "PTC215F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Avisos relacionados às consultas.",
+            "feedback": "A finalidade não abrange automaticamente estudos."
+          },
+          {
+            "id": "b",
+            "text": "Participação obrigatória em entrevistas.",
+            "feedback": "A mensagem dizia que era opcional."
+          },
+          {
+            "id": "c",
+            "text": "Todo convite de pesquisa.",
+            "feedback": "O cadastro não registra essa escolha."
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-servico-ou-estudo-scope",
+        "axis": "Scope",
+        "prompt": "O que a voluntariedade da participação não resolve?",
+        "evidenceIds": [
+          "PTC215F2",
+          "PTC215F3",
+          "PTC215F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A existência do envio.",
+            "feedback": "O registro confirma 60 contas."
+          },
+          {
+            "id": "b",
+            "text": "A possibilidade de recusar a entrevista.",
+            "feedback": "Ela foi informada."
+          },
+          {
+            "id": "c",
+            "text": "A escolha do canal e a checagem prévia de contato.",
+            "feedback": "São passos anteriores ao aceite do estudo."
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-servico-ou-estudo-intent",
+        "axis": "Intent",
+        "prompt": "Que postura Pedro sugere?",
+        "evidenceIds": [
+          "PTC215F3",
+          "PTC215F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignorar a pergunta do paciente.",
+            "feedback": "Ele pede correção."
+          },
+          {
+            "id": "b",
+            "text": "Reconhecer o envio sem confundir convite opcional com contato previamente autorizado.",
+            "feedback": "Ele questiona essa equivalência."
+          },
+          {
+            "id": "c",
+            "text": "Tratar as 60 pessoas como participantes.",
+            "feedback": "Ninguém foi inscrito automaticamente."
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-servico-ou-estudo-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual correção é proporcional?",
+        "evidenceIds": [
+          "PTC215F2",
+          "PTC215F4",
+          "PTC215F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Enviar lembrete pelo mesmo canal a todos.",
+            "feedback": "A finalidade continua inadequada."
+          },
+          {
+            "id": "b",
+            "text": "Responder ao paciente, registrar a falha de canal e usar a checagem específica antes de novos convites.",
+            "feedback": "O processo deve ser corrigido."
+          },
+          {
+            "id": "c",
+            "text": "Afirmar que o paciente consentiu com pesquisa.",
+            "feedback": "A preferência registrada é outra."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Pedro com uma mensagem ao paciente e uma medida para o próximo envio. Separe convite, participação e autorização de contato.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Definir preferência registrada",
+        "Reconhecer envio a 60 contas",
+        "Não confundir convite com adesão",
+        "Corrigir canal e checagem"
+      ]
+    },
+    "model": {
+      "subject": "Re: Convite enviado aos pacientes",
+      "body": "Oi, Pedro,\n\nos 60 destinatários tinham preferência registrada para avisos relacionados às consultas. O convite de pesquisa foi enviado por esse canal sem registro da checagem específica prevista para contatos de estudo. A mensagem deixava a participação opcional e não inscreveu ninguém automaticamente, mas isso não corrige a escolha do canal de envio. Devemos reconhecer a diferença e impedir que o mesmo lote seja usado novamente sem revisão.\n\nAo paciente eu diria: «Recebemos sua pergunta sobre o convite de pesquisa. Ele foi enviado pelo canal utilizado para avisos de consultas, embora os convites de estudo tenham uma verificação de contato própria. Pedimos desculpas por essa comunicação fora da finalidade esperada. O convite não significa que você foi incluído no estudo; participar dependeria de uma escolha sua. Estamos revendo o processo de seleção dos destinatários para futuras mensagens.»\n\nVou registrar o lote enviado, revisar com a equipe de pesquisa as preferências aplicáveis e interromper novos disparos até confirmar o canal correto. Também verificarei se outras respostas de pacientes precisam de acompanhamento individual. A utilidade do estudo não elimina a preferência de contato registrada.\n\nMônica",
+      "annotations": [
+        {
+          "label": "Define preferência",
+          "excerpt": "avisos relacionados às consultas",
+          "evidenceIds": [
+            "PTC215F1"
+          ]
+        },
+        {
+          "label": "Quantifica envio",
+          "excerpt": "60 destinatários",
+          "evidenceIds": [
+            "PTC215F2"
+          ]
+        },
+        {
+          "label": "Preserva voluntariedade",
+          "excerpt": "não inscreveu ninguém automaticamente",
+          "evidenceIds": [
+            "PTC215F3"
+          ]
+        },
+        {
+          "label": "Corrige fluxo",
+          "excerpt": "interromper novos disparos",
+          "evidenceIds": [
+            "PTC215F4",
+            "PTC215F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "laudo-emenda",
+    "title": "O laudo com uma emenda posterior",
+    "area": "Health administration × documentos",
+    "areaLabel": "Administração em saúde · documentos",
+    "role": "Nara · gestão de prontuários",
+    "teaser": "Uma versão anterior de um laudo foi entregue; uma emenda posterior ainda não chegou ao destinatário.",
+    "misunderstanding": "A entrega da primeira versão é tratada como garantia de que o destinatário possui o documento atual.",
+    "email": {
+      "from": "Clara · recepção",
+      "to": "Nara · prontuários",
+      "sent": "Sexta-feira, 11h45",
+      "subject": "Qual versão do laudo foi entregue?",
+      "body": "Oi, Nara,\n\no paciente diz que seu médico externo recebeu o laudo ontem, mas o sistema mostra uma emenda assinada hoje. Não sei se a primeira versão continua útil, e não cabe a mim interpretar o conteúdo. Pode esclarecer qual versão foi transmitida e como avisar o médico externo sem afirmar que a emenda muda o cuidado?\n\nClara"
+    },
+    "document": {
+      "title": "Histórico de versões e transmissão",
+      "intro": "O histórico confirma a sequência documental, não o efeito clínico da emenda.",
+      "facts": [
+        {
+          "id": "PTC216F1",
+          "time": "Quinta-feira",
+          "text": "A versão 1 do laudo foi enviada ao médico externo."
+        },
+        {
+          "id": "PTC216F2",
+          "time": "Sexta-feira",
+          "text": "O profissional responsável assinou uma emenda e gerou a versão 2."
+        },
+        {
+          "id": "PTC216F3",
+          "time": "Atual",
+          "text": "Não há registro de envio ou recebimento da versão 2 pelo médico externo."
+        },
+        {
+          "id": "PTC216F4",
+          "time": "Procedimento",
+          "text": "Uma emenda deve ser enviada pelo canal seguro, identificando a versão substituída; o profissional responsável avalia sua relevância clínica."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "laudo-emenda-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual versão o registro confirma como enviada?",
+        "evidenceIds": [
+          "PTC216F1",
+          "PTC216F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A versão 1.",
+            "feedback": "A versão 2 ainda não consta como transmitida."
+          },
+          {
+            "id": "b",
+            "text": "A versão 2.",
+            "feedback": "Não há registro desse envio."
+          },
+          {
+            "id": "c",
+            "text": "Nenhuma versão.",
+            "feedback": "O envio de quinta está documentado."
+          }
+        ]
+      },
+      {
+        "id": "laudo-emenda-scope",
+        "axis": "Scope",
+        "prompt": "O que Clara não deve concluir?",
+        "evidenceIds": [
+          "PTC216F2",
+          "PTC216F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Que há versão 2.",
+            "feedback": "Ela foi gerada."
+          },
+          {
+            "id": "b",
+            "text": "Que a emenda é clinicamente irrelevante ou altera necessariamente o cuidado.",
+            "feedback": "Essa avaliação cabe ao profissional responsável."
+          },
+          {
+            "id": "c",
+            "text": "Que houve uma emenda.",
+            "feedback": "Ela foi assinada."
+          }
+        ]
+      },
+      {
+        "id": "laudo-emenda-intent",
+        "axis": "Intent",
+        "prompt": "Que problema administrativo existe?",
+        "evidenceIds": [
+          "PTC216F1",
+          "PTC216F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "O paciente nunca teve laudo.",
+            "feedback": "Uma versão foi entregue ao médico."
+          },
+          {
+            "id": "b",
+            "text": "O destinatário externo pode estar com a versão anterior sem a emenda.",
+            "feedback": "A transmissão atual falta no registro."
+          },
+          {
+            "id": "c",
+            "text": "A emenda foi certamente lida.",
+            "feedback": "Não há comprovante de recebimento."
+          }
+        ]
+      },
+      {
+        "id": "laudo-emenda-purpose",
+        "axis": "Purpose",
+        "prompt": "Que ação é adequada?",
+        "evidenceIds": [
+          "PTC216F2",
+          "PTC216F3",
+          "PTC216F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Substituir silenciosamente o arquivo antigo.",
+            "feedback": "A emenda deve ser identificada."
+          },
+          {
+            "id": "b",
+            "text": "Enviar a versão 2 pelo canal seguro, identificar a versão 1 e pedir confirmação de recebimento.",
+            "feedback": "É o procedimento documental."
+          },
+          {
+            "id": "c",
+            "text": "Explicar ao médico o efeito clínico sem consultar o responsável.",
+            "feedback": "A clínica deve avaliar."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Clara com uma nota para o médico externo. Rastreie versões, peça confirmação de recebimento e reserve a interpretação clínica ao profissional responsável.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Nomear versões e datas",
+        "Usar canal seguro",
+        "Não antecipar efeito clínico",
+        "Confirmar recebimento"
+      ]
+    },
+    "model": {
+      "subject": "Re: Qual versão do laudo foi entregue?",
+      "body": "Oi, Clara,\n\no histórico confirma que a versão 1 foi enviada ao médico externo ontem. Hoje o profissional responsável assinou uma emenda e gerou a versão 2. Não encontramos registro de que essa nova versão tenha sido enviada ou recebida. Precisamos corrigir a distribuição documental, mas não cabe à recepção decidir se a emenda altera uma orientação clínica.\n\nEu enviaria pelo canal seguro: «Encaminhamos a versão 2 do laudo, assinada hoje, que inclui uma emenda à versão 1 transmitida ontem. Pedimos que a versão atual seja associada ao prontuário do paciente e que confirmem o recebimento. Caso seja necessário discutir a relevância clínica da emenda, colocaremos o profissional responsável em contato com sua equipe.»\n\nVou registrar o envio, acompanhar a confirmação e informar o profissional que assinou a emenda sobre o destinatário da primeira versão. Ao paciente, podemos dizer que estamos garantindo que o médico externo receba o documento atualizado, sem interpretar por conta própria o conteúdo alterado. Se a confirmação não chegar no prazo acordado, farei uma nova verificação pelo canal aprovado.\n\nNara",
+      "annotations": [
+        {
+          "label": "Rastreia primeira versão",
+          "excerpt": "versão 1 foi enviada ao médico externo ontem",
+          "evidenceIds": [
+            "PTC216F1"
+          ]
+        },
+        {
+          "label": "Nomeia emenda",
+          "excerpt": "assinou uma emenda e gerou a versão 2",
+          "evidenceIds": [
+            "PTC216F2"
+          ]
+        },
+        {
+          "label": "Identifica lacuna",
+          "excerpt": "Não encontramos registro de que essa nova versão tenha sido enviada",
+          "evidenceIds": [
+            "PTC216F3"
+          ]
+        },
+        {
+          "label": "Reserva clínica",
+          "excerpt": "não cabe à recepção decidir",
+          "evidenceIds": [
+            "PTC216F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "lacuna-temperatura",
+    "title": "As duas horas sem medição",
+    "area": "Operations × cadeia fria",
+    "areaLabel": "Operações · cadeia fria",
+    "role": "Vitor · qualidade logística",
+    "teaser": "A carga chegou dentro da faixa de temperatura, mas o registrador tem uma lacuna no trajeto.",
+    "misunderstanding": "Uma temperatura adequada na chegada é usada como prova de conservação adequada durante todo o transporte.",
+    "email": {
+      "from": "Patrícia · atendimento corporativo",
+      "to": "Vitor · qualidade",
+      "sent": "Quarta-feira, 10h25",
+      "subject": "Podemos liberar a carga?",
+      "body": "Oi, Vitor,\n\no cliente quer saber se a carga pode ser recebida hoje. O termômetro na chegada marcou a faixa correta, mas o registrador ficou sem dados por duas horas na estrada. Não quero dizer que houve uma excursão de temperatura sem prova, nem garantir que não houve. Como responder enquanto a qualidade verifica os outros registros?\n\nPatrícia"
+    },
+    "document": {
+      "title": "Trajeto e registradores da carga",
+      "intro": "O ponto de chegada e o histórico contínuo são evidências distintas.",
+      "facts": [
+        {
+          "id": "PTC217F1",
+          "time": "Chegada",
+          "text": "A leitura pontual da carga no recebimento estava dentro da faixa prevista."
+        },
+        {
+          "id": "PTC217F2",
+          "time": "Trajeto",
+          "text": "O registrador principal não contém dados entre 3h e 5h."
+        },
+        {
+          "id": "PTC217F3",
+          "time": "Veículo",
+          "text": "Há um registrador secundário, ainda não descarregado para análise."
+        },
+        {
+          "id": "PTC217F4",
+          "time": "Atual",
+          "text": "A qualidade ainda não decidiu a liberação da carga."
+        },
+        {
+          "id": "PTC217F5",
+          "time": "Procedimento",
+          "text": "A decisão de uso depende da avaliação dos registros disponíveis e do risco da lacuna."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "lacuna-temperatura-evidence",
+        "axis": "Evidence",
+        "prompt": "O que a leitura de chegada comprova?",
+        "evidenceIds": [
+          "PTC217F1"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A temperatura adequada durante toda a viagem.",
+            "feedback": "O histórico principal tem uma lacuna."
+          },
+          {
+            "id": "b",
+            "text": "Uma excursão confirmada às 4h.",
+            "feedback": "Não há medida nesse horário."
+          },
+          {
+            "id": "c",
+            "text": "A condição naquele momento de recebimento.",
+            "feedback": "Não reconstrói as duas horas ausentes."
+          }
+        ]
+      },
+      {
+        "id": "lacuna-temperatura-scope",
+        "axis": "Scope",
+        "prompt": "O que permanece desconhecido?",
+        "evidenceIds": [
+          "PTC217F2",
+          "PTC217F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A condição no intervalo sem dados, até análise do registro secundário.",
+            "feedback": "Existe outra fonte a consultar."
+          },
+          {
+            "id": "b",
+            "text": "Se há um segundo registrador.",
+            "feedback": "Ele consta no veículo."
+          },
+          {
+            "id": "c",
+            "text": "A leitura de chegada.",
+            "feedback": "Ela foi feita."
+          }
+        ]
+      },
+      {
+        "id": "lacuna-temperatura-intent",
+        "axis": "Intent",
+        "prompt": "Qual cuidado Patrícia pede?",
+        "evidenceIds": [
+          "PTC217F1",
+          "PTC217F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Culpar o motorista.",
+            "feedback": "Nenhuma causa foi apurada."
+          },
+          {
+            "id": "b",
+            "text": "Não converter ausência de dados em desvio nem em garantia.",
+            "feedback": "A liberação ainda está em análise."
+          },
+          {
+            "id": "c",
+            "text": "Liberar a carga por conta própria.",
+            "feedback": "A decisão cabe à qualidade."
+          }
+        ]
+      },
+      {
+        "id": "lacuna-temperatura-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual resposta é apropriada?",
+        "evidenceIds": [
+          "PTC217F3",
+          "PTC217F4",
+          "PTC217F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Informar a leitura adequada na chegada, a lacuna e a avaliação de qualidade antes de decidir o uso.",
+            "feedback": "Separa fatos e decisão."
+          },
+          {
+            "id": "b",
+            "text": "Garantir conservação integral.",
+            "feedback": "Faltam duas horas de dados."
+          },
+          {
+            "id": "c",
+            "text": "Afirmar perda total da carga.",
+            "feedback": "Não há tal conclusão."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Patrícia com uma nota ao cliente. Distingua ponto de chegada e histórico, explique a fonte secundária e mantenha a liberação sob decisão da qualidade.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Delimitar leitura pontual",
+        "Nomear lacuna",
+        "Não presumir desvio",
+        "Aguardar decisão de qualidade"
+      ]
+    },
+    "model": {
+      "subject": "Re: Podemos liberar a carga?",
+      "body": "Oi, Patrícia,\n\na leitura feita na chegada estava dentro da faixa prevista. Ela descreve aquele momento, mas não preenche a lacuna de dados entre 3h e 5h no registrador principal. Existe um registrador secundário no veículo que ainda precisa ser descarregado e analisado. Por enquanto, não temos base para afirmar que a temperatura saiu da faixa nem para garantir que permaneceu adequada durante todo o trajeto. A qualidade ainda não liberou a carga.\n\nAo cliente eu diria: «A medição no recebimento ficou na faixa prevista. Identificamos, porém, um intervalo sem leitura no registrador principal e estamos analisando a fonte secundária antes de concluir a avaliação do transporte. A decisão sobre a liberação será comunicada assim que a equipe de qualidade concluir essa verificação. Até lá, não podemos confirmar a liberação nem a adequação de todo o trajeto.»\n\nVou pedir a descarga do segundo registrador agora e conferir se há outros registros de parada ou abertura do veículo. Encaminharei a análise à qualidade com o intervalo claramente identificado. Se os dados adicionais não resolverem a lacuna, será a equipe responsável que definirá as medidas adequadas e a comunicação seguinte.\n\nVitor",
+      "annotations": [
+        {
+          "label": "Delimita chegada",
+          "excerpt": "descreve aquele momento",
+          "evidenceIds": [
+            "PTC217F1"
+          ]
+        },
+        {
+          "label": "Nomeia intervalo",
+          "excerpt": "entre 3h e 5h",
+          "evidenceIds": [
+            "PTC217F2"
+          ]
+        },
+        {
+          "label": "Usa fonte secundária",
+          "excerpt": "registrador secundário",
+          "evidenceIds": [
+            "PTC217F3"
+          ]
+        },
+        {
+          "label": "Reserva liberação",
+          "excerpt": "A qualidade ainda não liberou a carga",
+          "evidenceIds": [
+            "PTC217F4",
+            "PTC217F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "valor-declarado",
+    "title": "Declarado não é segurado",
+    "area": "Operations × transporte",
+    "areaLabel": "Operações · transporte",
+    "role": "Mauro · gestão de fretes",
+    "teaser": "O valor da mercadoria consta no conhecimento de transporte, mas a cobertura adicional depende de uma opção não marcada.",
+    "misunderstanding": "Declarar o valor da carga é tomado como contratação automática de seguro complementar.",
+    "email": {
+      "from": "Camila · contas",
+      "to": "Mauro · fretes",
+      "sent": "Terça-feira, 13h35",
+      "subject": "Cobertura da remessa danificada",
+      "body": "Oi, Mauro,\n\na remessa chegou danificada e o cliente viu o valor integral declarado no documento de transporte. Ele pergunta se o seguro já cobre esse total. O campo de cobertura adicional parece vazio. Quero reconhecer o dano e abrir a análise sem fazer uma promessa sobre indenização que a documentação ainda não sustenta. Como formular isso?\n\nCamila"
+    },
+    "document": {
+      "title": "Conhecimento de transporte e escolha de cobertura",
+      "intro": "Valor declarado e opção de cobertura são campos distintos.",
+      "facts": [
+        {
+          "id": "PTC218F1",
+          "time": "Documento",
+          "text": "O valor da mercadoria foi declarado em 80 mil reais para identificação da carga."
+        },
+        {
+          "id": "PTC218F2",
+          "time": "Documento",
+          "text": "O campo de cobertura adicional está sem marcação."
+        },
+        {
+          "id": "PTC218F3",
+          "time": "Contrato",
+          "text": "A cobertura padrão possui limites próprios; a contratação de cobertura adicional exige confirmação separada."
+        },
+        {
+          "id": "PTC218F4",
+          "time": "Atual",
+          "text": "A transportadora recebeu aviso do dano, mas não concluiu a análise de responsabilidade e cobertura."
+        },
+        {
+          "id": "PTC218F5",
+          "time": "Atual",
+          "text": "A extensão do dano ainda está sendo documentada com fotos e conferência."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "valor-declarado-evidence",
+        "axis": "Evidence",
+        "prompt": "O que demonstra o valor de 80 mil?",
+        "evidenceIds": [
+          "PTC218F1",
+          "PTC218F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uma apólice complementar de 80 mil.",
+            "feedback": "O campo está vazio."
+          },
+          {
+            "id": "b",
+            "text": "O valor declarado da carga, não a cobertura adicional.",
+            "feedback": "Os campos são separados."
+          },
+          {
+            "id": "c",
+            "text": "O valor final do dano.",
+            "feedback": "A extensão ainda é apurada."
+          }
+        ]
+      },
+      {
+        "id": "valor-declarado-scope",
+        "axis": "Scope",
+        "prompt": "Qual conclusão sobre indenização é prematura?",
+        "evidenceIds": [
+          "PTC218F3",
+          "PTC218F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Que existe um contrato de transporte.",
+            "feedback": "O contrato é citado."
+          },
+          {
+            "id": "b",
+            "text": "Que o total declarado será pago ou que não haverá qualquer cobertura.",
+            "feedback": "A análise de limites e responsabilidade está aberta."
+          },
+          {
+            "id": "c",
+            "text": "Que a transportadora foi avisada.",
+            "feedback": "O aviso foi recebido."
+          }
+        ]
+      },
+      {
+        "id": "valor-declarado-intent",
+        "axis": "Intent",
+        "prompt": "O que Camila precisa preservar?",
+        "evidenceIds": [
+          "PTC218F4",
+          "PTC218F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A resposta ao dano sem prometer resultado financeiro não apurado.",
+            "feedback": "Ela pede abertura de análise."
+          },
+          {
+            "id": "b",
+            "text": "Uma negativa definitiva ao cliente.",
+            "feedback": "A cobertura não foi decidida."
+          },
+          {
+            "id": "c",
+            "text": "A ideia de que não houve dano.",
+            "feedback": "As fotos estão sendo reunidas."
+          }
+        ]
+      },
+      {
+        "id": "valor-declarado-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual próximo passo é defensável?",
+        "evidenceIds": [
+          "PTC218F3",
+          "PTC218F4",
+          "PTC218F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignorar o dano por causa do campo vazio.",
+            "feedback": "A análise de responsabilidade ainda importa."
+          },
+          {
+            "id": "b",
+            "text": "Garantir pagamento integral agora.",
+            "feedback": "O campo adicional está vazio."
+          },
+          {
+            "id": "c",
+            "text": "Documentar dano, pedir análise da transportadora e explicar os limites contratuais após verificação.",
+            "feedback": "Separa processo e conclusão."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Camila com texto ao cliente. Separe declaração de valor, opção de cobertura e análise do dano, sem antecipar uma decisão financeira.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Distinguir campos do documento",
+        "Reconhecer o dano",
+        "Não prometer indenização",
+        "Descrever a apuração"
+      ]
+    },
+    "model": {
+      "subject": "Re: Cobertura da remessa danificada",
+      "body": "Oi, Camila,\n\no documento registra 80 mil reais como valor declarado da mercadoria. Isso identifica a carga, mas não comprova a contratação de cobertura adicional: o campo correspondente está sem marcação e o contrato prevê uma confirmação separada. Também não significa que o cliente esteja sem cobertura, pois existem limites padrão a examinar. A transportadora recebeu o aviso, mas ainda não concluiu a análise de responsabilidade e cobertura. A extensão do dano está sendo documentada.\n\nEu responderia: «Lamentamos que a remessa tenha chegado danificada. O valor indicado no documento é o valor declarado da carga; estamos verificando separadamente as condições de cobertura aplicáveis e a extensão do dano. Já comunicamos a ocorrência à transportadora e estamos reunindo os registros e fotos para a análise. Informaremos as conclusões documentadas e os próximos passos quando essa verificação terminar, sem antecipar um valor de indenização.»\n\nVou conferir a opção registrada no sistema de contratação e solicitar à transportadora os limites aplicáveis por escrito. Peça ao cliente as imagens e a relação dos itens afetados pelo canal habitual. Assim tratamos o prejuízo sem prometer pagamento.\n\nMauro",
+      "annotations": [
+        {
+          "label": "Define valor",
+          "excerpt": "valor declarado da mercadoria",
+          "evidenceIds": [
+            "PTC218F1"
+          ]
+        },
+        {
+          "label": "Nomeia campo",
+          "excerpt": "sem marcação",
+          "evidenceIds": [
+            "PTC218F2"
+          ]
+        },
+        {
+          "label": "Preserva cobertura padrão",
+          "excerpt": "existem limites padrão a examinar",
+          "evidenceIds": [
+            "PTC218F3"
+          ]
+        },
+        {
+          "label": "Abre análise",
+          "excerpt": "ainda não concluiu a análise",
+          "evidenceIds": [
+            "PTC218F4",
+            "PTC218F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "plano-corretivo-verificado",
+    "title": "Enviado não é verificado",
+    "area": "Operations × fornecedores",
+    "areaLabel": "Operações · fornecedores",
+    "role": "Fernanda · auditoria de fornecedores",
+    "teaser": "Um fornecedor anexou um plano de correção e o portal marcou a pendência como concluída.",
+    "misunderstanding": "O envio do plano é apresentado como prova de que a correção foi implementada e testada.",
+    "email": {
+      "from": "Rogério · compras",
+      "to": "Fernanda · auditoria",
+      "sent": "Quinta-feira, 9h15",
+      "subject": "Fornecedor liberado após plano?",
+      "body": "Oi, Fernanda,\n\no portal mostra a pendência do fornecedor como «concluída» depois que ele anexou o plano corretivo. A equipe quer liberar um novo pedido hoje. Eu só encontrei o plano, sem evidência de execução. Podemos manter o andamento comercial enquanto verificamos, ou precisamos descrever o status de outro modo? Quero evitar uma acusação de descumprimento que também não está provada.\n\nRogério"
+    },
+    "document": {
+      "title": "Não conformidade e fluxo de verificação",
+      "intro": "O recebimento do plano e a validação da ação são marcos separados.",
+      "facts": [
+        {
+          "id": "PTC219F1",
+          "time": "Segunda-feira",
+          "text": "O fornecedor enviou um plano com medidas e datas propostas."
+        },
+        {
+          "id": "PTC219F2",
+          "time": "Portal",
+          "text": "O status «concluída» foi gerado automaticamente pelo upload do arquivo."
+        },
+        {
+          "id": "PTC219F3",
+          "time": "Atual",
+          "text": "Não há registros de implementação nem teste de eficácia recebidos."
+        },
+        {
+          "id": "PTC219F4",
+          "time": "Procedimento",
+          "text": "A liberação de novos pedidos depende de verificação da execução e da eficácia da correção."
+        },
+        {
+          "id": "PTC219F5",
+          "time": "Atual",
+          "text": "O fornecedor ainda está dentro do prazo previsto para executar o plano."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "plano-corretivo-verificado-evidence",
+        "axis": "Evidence",
+        "prompt": "O que o portal confirma?",
+        "evidenceIds": [
+          "PTC219F1",
+          "PTC219F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A eficácia da correção.",
+            "feedback": "Nenhum teste foi recebido."
+          },
+          {
+            "id": "b",
+            "text": "O descumprimento do fornecedor.",
+            "feedback": "O prazo ainda está aberto."
+          },
+          {
+            "id": "c",
+            "text": "O recebimento do plano.",
+            "feedback": "O status foi acionado pelo upload."
+          }
+        ]
+      },
+      {
+        "id": "plano-corretivo-verificado-scope",
+        "axis": "Scope",
+        "prompt": "Por que o pedido não deve ser liberado ainda?",
+        "evidenceIds": [
+          "PTC219F3",
+          "PTC219F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Porque o plano foi rejeitado.",
+            "feedback": "Ele foi recebido."
+          },
+          {
+            "id": "b",
+            "text": "A verificação exigida de execução e eficácia não ocorreu.",
+            "feedback": "A regra condiciona a liberação."
+          },
+          {
+            "id": "c",
+            "text": "Porque o prazo do fornecedor expirou.",
+            "feedback": "Ainda não expirou."
+          }
+        ]
+      },
+      {
+        "id": "plano-corretivo-verificado-intent",
+        "axis": "Intent",
+        "prompt": "Que equilíbrio Rogério procura?",
+        "evidenceIds": [
+          "PTC219F1",
+          "PTC219F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Não perder o andamento comercial nem declarar uma falha antes da hora.",
+            "feedback": "O plano e o prazo existem."
+          },
+          {
+            "id": "b",
+            "text": "Eliminar a verificação.",
+            "feedback": "Ele pergunta pelo status correto."
+          },
+          {
+            "id": "c",
+            "text": "Acusar o fornecedor de fraude.",
+            "feedback": "Não há prova disso."
+          }
+        ]
+      },
+      {
+        "id": "plano-corretivo-verificado-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual comunicação é correta?",
+        "evidenceIds": [
+          "PTC219F2",
+          "PTC219F3",
+          "PTC219F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dizer que a correção já foi validada.",
+            "feedback": "Faltam registros e teste."
+          },
+          {
+            "id": "b",
+            "text": "Dizer que o plano foi recebido e que a pendência segue em verificação até evidências de execução.",
+            "feedback": "Reflete o marco real."
+          },
+          {
+            "id": "c",
+            "text": "Dizer que o fornecedor perdeu o prazo.",
+            "feedback": "Ainda está dentro dele."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Rogério com um texto interno e um pedido ao fornecedor. Corrija o status automatizado e defina as evidências necessárias antes de liberar pedidos.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Separar upload e execução",
+        "Não acusar antes do prazo",
+        "Aplicar o gate de liberação",
+        "Solicitar evidências concretas"
+      ]
+    },
+    "model": {
+      "subject": "Re: Fornecedor liberado após plano?",
+      "body": "Oi, Rogério,\n\no portal marcou «concluída» quando o fornecedor anexou o plano. Esse evento confirma o recebimento do documento, não a execução das medidas nem sua eficácia. Ainda não recebemos registros de implementação ou teste. O fornecedor está dentro do prazo combinado, portanto também não cabe descrevê-lo como inadimplente. Pelo procedimento, a liberação de novos pedidos depende da verificação dessas duas etapas.\n\nSugiro registrar internamente: «Plano corretivo recebido; implementação e eficácia pendentes de comprovação. Status comercial: liberação aguardando verificação.» Ao fornecedor, podemos pedir: «Obrigado pelo plano enviado. Para concluir a pendência, encaminhe as evidências de execução de cada medida e o resultado do teste de eficácia nas datas previstas. Após a análise, comunicaremos formalmente o resultado da verificação.»\n\nVou solicitar a correção do rótulo automático do portal, para que o simples upload não feche a pendência. Se houver urgência comercial, podemos planejar o pedido e preparar os documentos, mas não enviá-lo como liberado antes do controle exigido. Atualizarei você quando as evidências chegarem e forem avaliadas.\n\nFernanda",
+      "annotations": [
+        {
+          "label": "Define upload",
+          "excerpt": "confirma o recebimento do documento",
+          "evidenceIds": [
+            "PTC219F1",
+            "PTC219F2"
+          ]
+        },
+        {
+          "label": "Nomeia faltas",
+          "excerpt": "registros de implementação ou teste",
+          "evidenceIds": [
+            "PTC219F3"
+          ]
+        },
+        {
+          "label": "Respeita prazo",
+          "excerpt": "dentro do prazo combinado",
+          "evidenceIds": [
+            "PTC219F5"
+          ]
+        },
+        {
+          "label": "Aplica gate",
+          "excerpt": "liberação de novos pedidos depende da verificação",
+          "evidenceIds": [
+            "PTC219F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "aviso-pagamento",
+    "title": "O comprovante antes da compensação",
+    "area": "Operations × cobrança",
+    "areaLabel": "Operações · cobrança",
+    "role": "Sílvia · contas a receber",
+    "teaser": "Um comprovante de transferência foi enviado, mas o crédito bancário ainda não apareceu.",
+    "misunderstanding": "A ordem de pagamento emitida pelo cliente é tratada como quitação já confirmada.",
+    "email": {
+      "from": "Paulo · atendimento empresarial",
+      "to": "Sílvia · cobrança",
+      "sent": "Sexta-feira, 15h05",
+      "subject": "Fatura quitada?",
+      "body": "Oi, Sílvia,\n\no cliente enviou um comprovante de transferência e pediu que marcássemos a fatura como paga hoje. O banco ainda não mostra o crédito, mas não quero insinuar que ele não pagou. Há uma entrega vinculada ao status da fatura. Como reconhecer o comprovante e explicar a verificação sem prometer liberação antes da compensação?\n\nPaulo"
+    },
+    "document": {
+      "title": "Fatura e conciliação bancária",
+      "intro": "A ordem de transferência e o crédito confirmado têm registros diferentes.",
+      "facts": [
+        {
+          "id": "PTC220F1",
+          "time": "Cliente",
+          "text": "O comprovante mostra uma ordem de transferência no valor da fatura."
+        },
+        {
+          "id": "PTC220F2",
+          "time": "Banco",
+          "text": "Até as 14h30 não há crédito correspondente na conta da empresa."
+        },
+        {
+          "id": "PTC220F3",
+          "time": "Sistema",
+          "text": "A fatura continua «aguardando conciliação»; não há baixa financeira."
+        },
+        {
+          "id": "PTC220F4",
+          "time": "Procedimento",
+          "text": "A entrega vinculada é liberada após crédito identificado ou decisão excepcional registrada pela gestão."
+        },
+        {
+          "id": "PTC220F5",
+          "time": "Atual",
+          "text": "Nenhuma decisão excepcional foi registrada."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "aviso-pagamento-evidence",
+        "axis": "Evidence",
+        "prompt": "O que o comprovante sustenta?",
+        "evidenceIds": [
+          "PTC220F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Que o cliente enviou valor diferente.",
+            "feedback": "O valor corresponde à fatura."
+          },
+          {
+            "id": "b",
+            "text": "Que uma ordem de transferência foi emitida.",
+            "feedback": "Não comprova o crédito na conta."
+          },
+          {
+            "id": "c",
+            "text": "Que a fatura já foi baixada.",
+            "feedback": "Ela segue aguardando conciliação."
+          }
+        ]
+      },
+      {
+        "id": "aviso-pagamento-scope",
+        "axis": "Scope",
+        "prompt": "O que falta para a liberação regular?",
+        "evidenceIds": [
+          "PTC220F2",
+          "PTC220F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Crédito identificado na conta.",
+            "feedback": "A regra liga a entrega à conciliação."
+          },
+          {
+            "id": "b",
+            "text": "Um novo comprovante com a mesma ordem.",
+            "feedback": "Isso não mudaria o extrato."
+          },
+          {
+            "id": "c",
+            "text": "Uma reclamação do cliente.",
+            "feedback": "A solicitação já existe."
+          }
+        ]
+      },
+      {
+        "id": "aviso-pagamento-intent",
+        "axis": "Intent",
+        "prompt": "Que tom Paulo precisa adotar?",
+        "evidenceIds": [
+          "PTC220F1",
+          "PTC220F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acusar o cliente de não pagar.",
+            "feedback": "A ordem está documentada."
+          },
+          {
+            "id": "b",
+            "text": "Prometer entrega imediata.",
+            "feedback": "A liberação depende de outra etapa."
+          },
+          {
+            "id": "c",
+            "text": "Reconhecer a ação do cliente sem chamar a fatura de quitada.",
+            "feedback": "O sistema ainda não deu baixa."
+          }
+        ]
+      },
+      {
+        "id": "aviso-pagamento-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual resposta é precisa?",
+        "evidenceIds": [
+          "PTC220F2",
+          "PTC220F3",
+          "PTC220F4",
+          "PTC220F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dizer que o comprovante não tem valor algum.",
+            "feedback": "Ele mostra a ordem emitida."
+          },
+          {
+            "id": "b",
+            "text": "Confirmar recebimento do comprovante, manter conciliação aberta e atualizar o cliente após crédito ou decisão formal.",
+            "feedback": "Distingue os dois caminhos."
+          },
+          {
+            "id": "c",
+            "text": "Marcar paga agora e liberar a entrega.",
+            "feedback": "Falta crédito e exceção registrada."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Responda a Paulo com uma mensagem ao cliente. Separe ordem, crédito e baixa da fatura; esclareça a condição de liberação da entrega sem desqualificar o comprovante.",
+      "wordGuide": "Cerca de 110–190 palavras",
+      "criteria": [
+        "Reconhecer a ordem emitida",
+        "Não declarar quitação",
+        "Explicar conciliação",
+        "Não liberar sem condição verificada"
+      ]
+    },
+    "model": {
+      "subject": "Re: Fatura quitada?",
+      "body": "Oi, Paulo,\n\no comprovante indica que o cliente emitiu uma ordem de transferência pelo valor da fatura. Reconheçamos isso. Até a consulta das 14h30, porém, o crédito ainda não aparecia em nossa conta, e a fatura segue aguardando conciliação. Isso não significa que a ordem seja inválida; significa que ainda não podemos registrar a quitação. A entrega vinculada depende de crédito identificado ou de uma decisão excepcional formal, ainda inexistente.\n\nEu responderia ao cliente: «Recebemos o comprovante da transferência e agradecemos o envio. Estamos acompanhando a compensação bancária para identificar o crédito e concluir a baixa da fatura. Assim que houver confirmação, atualizaremos o status e a liberação da entrega correspondente. Caso a compensação não apareça no prazo esperado, entraremos em contato para verificar os dados da operação com você.»\n\nVou acompanhar o extrato e conferir as referências da transferência com o banco. Combinarei com você a próxima atualização ao cliente, mesmo que o crédito ainda esteja pendente. Se a gestão considerar uma liberação excepcional, ela precisará ser decidida e registrada separadamente; não devemos sugerir que já foi autorizada.\n\nSílvia",
+      "annotations": [
+        {
+          "label": "Reconhece ordem",
+          "excerpt": "emitiu uma ordem de transferência",
+          "evidenceIds": [
+            "PTC220F1"
+          ]
+        },
+        {
+          "label": "Nomeia crédito ausente",
+          "excerpt": "o crédito ainda não aparecia",
+          "evidenceIds": [
+            "PTC220F2"
+          ]
+        },
+        {
+          "label": "Define status",
+          "excerpt": "aguardando conciliação",
+          "evidenceIds": [
+            "PTC220F3"
+          ]
+        },
+        {
+          "label": "Condiciona entrega",
+          "excerpt": "depende de crédito identificado ou de uma decisão excepcional formal",
+          "evidenceIds": [
+            "PTC220F4",
+            "PTC220F5"
+          ]
+        }
+      ]
+    }
+  }
+]

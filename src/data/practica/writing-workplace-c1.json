@@ -1,0 +1,4115 @@
+[
+  {
+    "id": "the-drop-in-conversions",
+    "title": "The drop that might not be a drop",
+    "area": "Marketing × Analytics",
+    "role": "Priya · Analytics",
+    "teaser": "A campaign dashboard shows fewer conversions just before a board update.",
+    "misunderstanding": "A tag migration left one channel unreported; the dashboard decline is real as a measurement, not yet a verified decline in sign-ups.",
+    "email": {
+      "from": "Elena Brooks · Marketing",
+      "to": "Priya · Analytics",
+      "sent": "Thursday, 09:10",
+      "subject": "Did the campaign lose half its sign-ups?",
+      "body": "Hi Priya,\n\nThe dashboard shows paid social conversions down 48% since Monday. I am presenting to the board at noon, and the agency says the new creative cannot be the problem because click-through is up. Can I say the landing page is failing? Please send me a short explanation and the number we should use.\n\nElena"
+    },
+    "document": {
+      "title": "Campaign measurement note",
+      "intro": "This note records what the team can verify before the board update.",
+      "facts": [
+        {
+          "id": "C01-F1",
+          "time": "Mon 08:00",
+          "text": "The agency switched paid social traffic to a new campaign URL with a different tracking parameter."
+        },
+        {
+          "id": "C01-F2",
+          "time": "Mon 09:15",
+          "text": "The analytics tag was updated for the old URL pattern but not the new one."
+        },
+        {
+          "id": "C01-F3",
+          "time": "Wed 17:00",
+          "text": "The dashboard showed 48% fewer tracked paid social conversions than the prior three days."
+        },
+        {
+          "id": "C01-F4",
+          "time": "Thu 08:30",
+          "text": "The registration database showed overall sign-ups within its usual daily range; channel attribution for the new URL is incomplete."
+        },
+        {
+          "id": "C01-F5",
+          "time": "Current",
+          "text": "The team has not yet reconciled individual registrations with campaign clicks. The creative and landing page have not been ruled in or out as causes."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "the-drop-in-conversions-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the 48% figure establish?",
+        "evidenceIds": [
+          "C01-F2",
+          "C01-F3",
+          "C01-F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Total sign-ups fell by 48%.",
+            "feedback": "The database does not show that overall decline."
+          },
+          {
+            "id": "b",
+            "text": "Tracked paid social conversions fell in the dashboard.",
+            "feedback": "That is the measured change, with a known tagging gap."
+          },
+          {
+            "id": "c",
+            "text": "The landing page caused a 48% loss.",
+            "feedback": "The source of the decline has not been established."
+          }
+        ]
+      },
+      {
+        "id": "the-drop-in-conversions-scope",
+        "axis": "Scope",
+        "prompt": "Which part of the measurement is incomplete?",
+        "evidenceIds": [
+          "C01-F1",
+          "C01-F2",
+          "C01-F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The agency click-through report.",
+            "feedback": "The note does not identify a click-through tracking gap."
+          },
+          {
+            "id": "b",
+            "text": "Every registration in the database.",
+            "feedback": "The database still records overall registrations."
+          },
+          {
+            "id": "c",
+            "text": "Attribution for traffic using the new URL.",
+            "feedback": "The tag still expects the old URL pattern."
+          }
+        ]
+      },
+      {
+        "id": "the-drop-in-conversions-intent",
+        "axis": "Intent",
+        "prompt": "What does Elena most need before noon?",
+        "evidenceIds": [
+          "C01-F3",
+          "C01-F4",
+          "C01-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confident claim that the agency is right.",
+            "feedback": "The agency view is one possibility, not a verified conclusion."
+          },
+          {
+            "id": "b",
+            "text": "A new creative concept.",
+            "feedback": "Her immediate request concerns the figures and explanation."
+          },
+          {
+            "id": "c",
+            "text": "A defensible statement for the board and a plan to verify the channel count.",
+            "feedback": "She has a deadline, but the channel total is not yet reconciled."
+          }
+        ]
+      },
+      {
+        "id": "the-drop-in-conversions-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Priya respond?",
+        "evidenceIds": [
+          "C01-F2",
+          "C01-F4",
+          "C01-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Give the 48% figure as the business outcome.",
+            "feedback": "That would conflate tracking and registrations."
+          },
+          {
+            "id": "b",
+            "text": "Declare the landing page healthy because overall sign-ups look normal.",
+            "feedback": "Normal overall volume does not establish channel performance."
+          },
+          {
+            "id": "c",
+            "text": "Distinguish the dashboard figure from actual sign-ups and promise a reconciliation update.",
+            "feedback": "This gives Elena usable language without false precision."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Elena. Give her wording she can safely use at noon, explain the measurement gap without hiding the dashboard result, and name the next check.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Separate dashboard tracking from business outcome",
+        "State the uncertainty about cause and channel attribution",
+        "Provide board-ready wording without inventing a corrected number",
+        "Commit to a concrete reconciliation step"
+      ]
+    },
+    "model": {
+      "subject": "Re: Did the campaign lose half its sign-ups?",
+      "body": "Hi Elena,\n\nI would not describe this as a confirmed 48% loss of sign-ups or as a landing-page failure. The dashboard does show 48% fewer tracked paid social conversions, so we should acknowledge that number. However, Monday’s new campaign URL was not included in the tag update, and registrations from that URL are not yet fully attributed to paid social. Overall registrations remain within their usual daily range, although that does not tell us how this particular channel performed.\n\nFor the board, I suggest: “Tracked paid social conversions are down 48% in the current dashboard. We have identified an attribution gap following the URL change and are reconciling the channel figures before drawing a conclusion about sign-ups or campaign performance.”\n\nI will match the new-URL visits against registrations with the web team and send you a revised channel view as soon as it is checked. I cannot responsibly give you a corrected total before that reconciliation.\n\nPriya",
+      "annotations": [
+        {
+          "label": "Distinguishes measurement",
+          "excerpt": "The dashboard does show 48% fewer tracked paid social conversions",
+          "evidenceIds": [
+            "C01-F3"
+          ]
+        },
+        {
+          "label": "Explains the gap",
+          "excerpt": "Monday’s new campaign URL was not included in the tag update",
+          "evidenceIds": [
+            "C01-F1",
+            "C01-F2"
+          ]
+        },
+        {
+          "label": "Preserves uncertainty",
+          "excerpt": "that does not tell us how this particular channel performed",
+          "evidenceIds": [
+            "C01-F4",
+            "C01-F5"
+          ]
+        },
+        {
+          "label": "Gives usable wording",
+          "excerpt": "Tracked paid social conversions are down 48% in the current dashboard",
+          "evidenceIds": [
+            "C01-F3",
+            "C01-F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "segment-change-after-send",
+    "title": "The audience changed after approval",
+    "area": "Marketing × Lifecycle",
+    "role": "Rhea · Lifecycle marketing",
+    "teaser": "A retention email reached customers the team had intended to exclude.",
+    "misunderstanding": "The final audience exclusion was agreed after the campaign list had been approved, but the scheduled send was not rebuilt.",
+    "email": {
+      "from": "Hector Vale · Customer director",
+      "to": "Rhea · Lifecycle marketing",
+      "sent": "Thursday, 10:18",
+      "subject": "Why did paused accounts receive the offer?",
+      "body": "Hi Rhea,\n\nSeveral customers on a service pause have received the renewal offer. We agreed that group should not get a sales message until their account issues were resolved. The campaign list was signed off on Tuesday, so I need to understand whether Marketing ignored the exclusion or whether the audience changed later. I also need a position for the account managers who are getting replies today.\n\nHector"
+    },
+    "document": {
+      "title": "Renewal audience change record",
+      "intro": "The approved list and the later exclusion were not applied to the same send.",
+      "facts": [
+        {
+          "id": "C02-F1",
+          "time": "Tue 15:00",
+          "text": "Hector approved a campaign list that included all renewal-eligible accounts."
+        },
+        {
+          "id": "C02-F2",
+          "time": "Wed 11:00",
+          "text": "Customer Success identified 37 renewal-eligible accounts with active service pauses."
+        },
+        {
+          "id": "C02-F3",
+          "time": "Wed 12:20",
+          "text": "Hector and Rhea agreed to exclude those 37 accounts from the Thursday send until their issues were resolved."
+        },
+        {
+          "id": "C02-F4",
+          "time": "Wed 16:00",
+          "text": "The scheduled send still used Tuesday’s exported list. Rhea updated the campaign brief but did not rebuild the audience."
+        },
+        {
+          "id": "C02-F5",
+          "time": "Thu 09:00",
+          "text": "The message was sent. Delivery is confirmed to 31 of the 37 accounts; whether any placed an order is still being checked."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "segment-change-after-send-evidence",
+        "axis": "Evidence",
+        "prompt": "What explains the unintended delivery?",
+        "evidenceIds": [
+          "C02-F1",
+          "C02-F3",
+          "C02-F4",
+          "C02-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A later exclusion was agreed but never applied to the scheduled audience.",
+            "feedback": "The export predated the decision and remained attached."
+          },
+          {
+            "id": "b",
+            "text": "The service pause list was unavailable.",
+            "feedback": "The 37 accounts had been identified."
+          },
+          {
+            "id": "c",
+            "text": "Hector approved sending to paused accounts on Thursday.",
+            "feedback": "His Tuesday approval was superseded by Wednesday’s agreement."
+          }
+        ]
+      },
+      {
+        "id": "segment-change-after-send-scope",
+        "axis": "Scope",
+        "prompt": "What did Tuesday’s sign-off cover?",
+        "evidenceIds": [
+          "C02-F1",
+          "C02-F2",
+          "C02-F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every future audience change.",
+            "feedback": "The Wednesday agreement changed the intended audience."
+          },
+          {
+            "id": "b",
+            "text": "A special renewal message for paused accounts.",
+            "feedback": "No such message was approved."
+          },
+          {
+            "id": "c",
+            "text": "The list as it stood before the service-pause exclusion.",
+            "feedback": "It did not settle a later decision about those accounts."
+          }
+        ]
+      },
+      {
+        "id": "segment-change-after-send-intent",
+        "axis": "Intent",
+        "prompt": "What does Hector need for account managers?",
+        "evidenceIds": [
+          "C02-F3",
+          "C02-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clear admission of the send error and a coordinated response for affected accounts.",
+            "feedback": "They are already receiving replies and need consistent wording."
+          },
+          {
+            "id": "b",
+            "text": "A promise that all 37 received the email.",
+            "feedback": "Only 31 deliveries are confirmed."
+          },
+          {
+            "id": "c",
+            "text": "A claim that no orders resulted.",
+            "feedback": "That check is pending."
+          }
+        ]
+      },
+      {
+        "id": "segment-change-after-send-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Rhea prioritise?",
+        "evidenceIds": [
+          "C02-F4",
+          "C02-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Own the unrevised audience, stop follow-up automation, and agree a service-first response with Customer Success.",
+            "feedback": "The affected customers need account support before another sales message."
+          },
+          {
+            "id": "b",
+            "text": "Offer a discount to everyone immediately.",
+            "feedback": "No remedy or order impact has been established."
+          },
+          {
+            "id": "c",
+            "text": "Defend the send using Tuesday’s approval.",
+            "feedback": "Wednesday’s exclusion changed the plan."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Hector. Reconcile the two approvals, own the audience error, and propose a customer-first response for the confirmed recipients while the order impact is checked.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Distinguish Tuesday sign-off from Wednesday exclusion",
+        "Own the failed audience rebuild",
+        "Separate 31 confirmed deliveries from 37 intended exclusions",
+        "Coordinate a service-first response and order check"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why did paused accounts receive the offer?",
+      "body": "Hi Hector,\n\nTuesday’s sign-off covered the renewal list before Customer Success identified the 37 paused accounts. We agreed on Wednesday to exclude them, and I updated the brief but failed to rebuild the audience attached to Thursday’s send. This was a Marketing execution error, not a decision to override the exclusion, and I am sorry it put account managers in a difficult position.\n\nDelivery is confirmed to 31 of those accounts; I do not yet know whether any order resulted. I am stopping the campaign’s automated follow-up to that group now and will send Customer Success the confirmed recipient list. For replies today, I suggest we acknowledge that the renewal message was sent in error while their service issue remains open, and direct the conversation back to resolving that issue. We should agree the exact wording with the account leads before sending a broad correction.\n\nI will check the remaining delivery records and any resulting orders, then send you a verified impact summary and a proposed follow-up plan this afternoon.\n\nRhea",
+      "annotations": [
+        {
+          "label": "Reconciles decisions",
+          "excerpt": "Tuesday’s sign-off covered the renewal list before Customer Success identified the 37 paused accounts",
+          "evidenceIds": [
+            "C02-F1",
+            "C02-F2"
+          ]
+        },
+        {
+          "label": "Owns execution",
+          "excerpt": "failed to rebuild the audience",
+          "evidenceIds": [
+            "C02-F3",
+            "C02-F4"
+          ]
+        },
+        {
+          "label": "Limits impact claim",
+          "excerpt": "Delivery is confirmed to 31 of those accounts",
+          "evidenceIds": [
+            "C02-F5"
+          ]
+        },
+        {
+          "label": "Prioritises relationship",
+          "excerpt": "direct the conversation back to resolving that issue",
+          "evidenceIds": [
+            "C02-F3",
+            "C02-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "tagline-lost-its-context",
+    "title": "The line that travelled badly",
+    "area": "Marketing × Regional team",
+    "role": "Camila · Brand",
+    "teaser": "A translated campaign line sounds dismissive to the local audience.",
+    "misunderstanding": "Head office approved the original line, while regional reviewers flagged a local reading that did not reach the final asset owner.",
+    "email": {
+      "from": "Eli Ward · Regional lead",
+      "to": "Camila · Brand",
+      "sent": "Friday, 08:54",
+      "subject": "Can we pull the headline today?",
+      "body": "Hi Camila,\n\nOur launch headline is being criticised locally for making light of people who need support. The English line was warm, but the published version sounds sarcastic in this market. I warned the agency on Tuesday, and they say Brand approved the copy. Please tell me whether we can pause the asset and how we should explain the change without blaming the local team.\n\nEli"
+    },
+    "document": {
+      "title": "Regional copy review trail",
+      "intro": "The review chain separates approval of the original idea from approval of the local wording.",
+      "facts": [
+        {
+          "id": "C03-F1",
+          "time": "Mon 14:00",
+          "text": "Brand approved the English concept “Help is closer than you think” for the campaign."
+        },
+        {
+          "id": "C03-F2",
+          "time": "Tue 10:00",
+          "text": "The agency supplied a local-language headline that could also be read as “You only think you need help”."
+        },
+        {
+          "id": "C03-F3",
+          "time": "Tue 15:00",
+          "text": "Eli flagged that reading to the agency and asked for an alternative. The agency marked the comment “resolved” without changing the line."
+        },
+        {
+          "id": "C03-F4",
+          "time": "Thu 17:00",
+          "text": "Camila approved the final asset using a review sheet that showed the English concept but not Eli’s unresolved comment."
+        },
+        {
+          "id": "C03-F5",
+          "time": "Fri 08:30",
+          "text": "The local headline went live. The regional team has documented four complaints; broader reach and interpretation are unknown."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "tagline-lost-its-context-evidence",
+        "axis": "Evidence",
+        "prompt": "What is established about the local reaction?",
+        "evidenceIds": [
+          "C03-F2",
+          "C03-F3",
+          "C03-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Everyone interpreted the line sarcastically.",
+            "feedback": "No broad audience finding exists."
+          },
+          {
+            "id": "b",
+            "text": "Four complaints are documented; the wider audience response is unknown.",
+            "feedback": "The complaints are real but do not represent every viewer."
+          },
+          {
+            "id": "c",
+            "text": "The local team approved the final wording.",
+            "feedback": "Eli requested a change."
+          }
+        ]
+      },
+      {
+        "id": "tagline-lost-its-context-scope",
+        "axis": "Scope",
+        "prompt": "What did Brand’s Monday approval cover?",
+        "evidenceIds": [
+          "C03-F1",
+          "C03-F2",
+          "C03-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The English concept, not the final local-language headline.",
+            "feedback": "The final sheet obscured the disputed wording."
+          },
+          {
+            "id": "b",
+            "text": "All possible translations.",
+            "feedback": "A separate local review was needed."
+          },
+          {
+            "id": "c",
+            "text": "Eli’s proposed alternative.",
+            "feedback": "No alternative was approved."
+          }
+        ]
+      },
+      {
+        "id": "tagline-lost-its-context-intent",
+        "axis": "Intent",
+        "prompt": "What does Eli need today?",
+        "evidenceIds": [
+          "C03-F3",
+          "C03-F4",
+          "C03-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Proof that no customer was offended.",
+            "feedback": "Four complaints are documented."
+          },
+          {
+            "id": "b",
+            "text": "Authority to pause the asset, recognition of the review failure, and a joint correction plan.",
+            "feedback": "The team needs to act on a live audience concern."
+          },
+          {
+            "id": "c",
+            "text": "A statement that the region caused the problem.",
+            "feedback": "Eli raised the risk before launch."
+          }
+        ]
+      },
+      {
+        "id": "tagline-lost-its-context-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Camila frame the correction?",
+        "evidenceIds": [
+          "C03-F1",
+          "C03-F3",
+          "C03-F4",
+          "C03-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pause the headline, explain that the local wording missed the intended meaning, and involve regional reviewers in replacement copy.",
+            "feedback": "This owns the process gap without public blame."
+          },
+          {
+            "id": "b",
+            "text": "Defend the line because the English idea was approved.",
+            "feedback": "That approval did not settle the local reading."
+          },
+          {
+            "id": "c",
+            "text": "Accuse the agency publicly of mistranslating.",
+            "feedback": "The immediate goal is a responsible correction, not a blame statement."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Eli. Respond to the regional concern, distinguish English concept approval from local copy approval, and set out how the live asset and replacement wording will be handled.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Treat documented complaints seriously without generalising",
+        "Own the missing review comment",
+        "Pause and verify the live asset",
+        "Include regional judgement in the replacement"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we pull the headline today?",
+      "body": "Hi Eli,\n\nYes, I am asking the campaign team to pause the local headline now. Brand approved the English concept on Monday, but that approval should not have been treated as approval of every local wording. Your Tuesday concern was marked resolved by the agency without a replacement, and the final sheet I saw did not show it. I approved the asset without that context; I am sorry your warning did not reach the final decision.\n\nThe four complaints you have documented are enough to warrant a prompt correction. We do not yet know how widely the line was seen or interpreted, so I would not describe the reaction as universal. If asked, we can say the local wording did not convey the intended supportive message and that we have paused it while working with the regional team on a clearer version.\n\nCould you nominate a reviewer to assess two alternatives with us today? I will make sure the disputed wording and your comments are visible in the approval record before anything goes live again.\n\nCamila",
+      "annotations": [
+        {
+          "label": "Limits original approval",
+          "excerpt": "Brand approved the English concept on Monday",
+          "evidenceIds": [
+            "C03-F1"
+          ]
+        },
+        {
+          "label": "Owns lost feedback",
+          "excerpt": "I approved the asset without that context",
+          "evidenceIds": [
+            "C03-F3",
+            "C03-F4"
+          ]
+        },
+        {
+          "label": "Calibrates audience impact",
+          "excerpt": "The four complaints you have documented are enough",
+          "evidenceIds": [
+            "C03-F5"
+          ]
+        },
+        {
+          "label": "Changes process",
+          "excerpt": "your comments are visible in the approval record",
+          "evidenceIds": [
+            "C03-F3",
+            "C03-F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "discount-in-the-small-print",
+    "title": "The discount that did not travel",
+    "area": "Marketing × Sales",
+    "role": "Isaac · Campaigns",
+    "teaser": "Sales says a promotion has promised the wrong price.",
+    "misunderstanding": "The approved offer covered new annual plans, but a shortened social asset omitted both conditions.",
+    "email": {
+      "from": "Laila Mensah · Sales lead",
+      "to": "Isaac · Campaigns",
+      "sent": "Tuesday, 16:25",
+      "subject": "What price have we promised?",
+      "body": "Hi Isaac,\n\nThree customers have sent Sales the “20% off” post and asked for the discount on their current monthly plans. The landing page says new annual subscriptions only. We cannot keep explaining two different offers. Was the social post approved as a general discount, and should I honour those requests? I need an answer before tomorrow’s sales huddle.\n\nLaila"
+    },
+    "document": {
+      "title": "Offer and asset log",
+      "intro": "The record separates approval of the offer from approval of each final asset.",
+      "facts": [
+        {
+          "id": "C04-F1",
+          "time": "Mon 11:00",
+          "text": "Finance approved 20% off the first year of a new annual subscription; renewals and existing monthly plans were excluded."
+        },
+        {
+          "id": "C04-F2",
+          "time": "Mon 14:00",
+          "text": "The landing page displayed those conditions beside the discount."
+        },
+        {
+          "id": "C04-F3",
+          "time": "Tue 09:15",
+          "text": "The social team shortened the approved headline to “20% off” for a square image. Isaac approved the image without rechecking the conditions."
+        },
+        {
+          "id": "C04-F4",
+          "time": "Tue 12:00",
+          "text": "The image went live with a link to the landing page. The image itself did not mention new annual subscriptions."
+        },
+        {
+          "id": "C04-F5",
+          "time": "Tue 16:00",
+          "text": "Sales forwarded three customer messages. No decision has been made about exceptions or individual remedies."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "discount-in-the-small-print-evidence",
+        "axis": "Evidence",
+        "prompt": "Which customer expectation is explained by the record?",
+        "evidenceIds": [
+          "C04-F1",
+          "C04-F3",
+          "C04-F4",
+          "C04-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The annual offer was cancelled.",
+            "feedback": "The record does not cancel the annual offer."
+          },
+          {
+            "id": "b",
+            "text": "All monthly customers were promised an automatic discount.",
+            "feedback": "The image was misleading, but the approved offer did not cover monthly plans."
+          },
+          {
+            "id": "c",
+            "text": "The image could reasonably look like a general 20% offer.",
+            "feedback": "It omitted the approved conditions."
+          }
+        ]
+      },
+      {
+        "id": "discount-in-the-small-print-scope",
+        "axis": "Scope",
+        "prompt": "What did Finance approve?",
+        "evidenceIds": [
+          "C04-F1"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "An exception process for disappointed customers.",
+            "feedback": "No remedy has been decided."
+          },
+          {
+            "id": "b",
+            "text": "A discount for all current subscriptions.",
+            "feedback": "Existing monthly plans were excluded."
+          },
+          {
+            "id": "c",
+            "text": "A first-year discount for new annual subscriptions.",
+            "feedback": "Both new and annual are material conditions."
+          }
+        ]
+      },
+      {
+        "id": "discount-in-the-small-print-intent",
+        "axis": "Intent",
+        "prompt": "What does Laila need from Isaac?",
+        "evidenceIds": [
+          "C04-F3",
+          "C04-F4",
+          "C04-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "An instruction to deny every request without review.",
+            "feedback": "No exception decision exists."
+          },
+          {
+            "id": "b",
+            "text": "A clear account of the mismatch and a coordinated decision on how Sales should respond.",
+            "feedback": "She faces real customer messages and needs a usable position."
+          },
+          {
+            "id": "c",
+            "text": "A statement that the landing page cancels the image.",
+            "feedback": "Customers saw the image first; the inconsistency still needs handling."
+          }
+        ]
+      },
+      {
+        "id": "discount-in-the-small-print-purpose",
+        "axis": "Purpose",
+        "prompt": "What response avoids inventing commercial authority?",
+        "evidenceIds": [
+          "C04-F1",
+          "C04-F3",
+          "C04-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Promise all three customers the discount now.",
+            "feedback": "No exception has been approved."
+          },
+          {
+            "id": "b",
+            "text": "Acknowledge the misleading asset, correct or pause it, and agree a response with Sales and Finance.",
+            "feedback": "Isaac can fix the communication but cannot unilaterally grant exceptions."
+          },
+          {
+            "id": "c",
+            "text": "Blame Sales for not reading the landing page aloud.",
+            "feedback": "Sales did not approve the shortened asset."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Laila. Explain the approved offer and how the post diverged, own Isaac's approval of the shortened image, and propose both an asset fix and a decision path for the three customers.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "State the actual eligibility conditions",
+        "Recognise the reasonable confusion caused by the image",
+        "Own the asset approval gap",
+        "Avoid promising unapproved exceptions"
+      ]
+    },
+    "model": {
+      "subject": "Re: What price have we promised?",
+      "body": "Hi Laila,\n\nFinance approved 20% off the first year for new annual subscriptions. It did not approve a general discount for existing monthly plans. The landing page states that, but the square social image says only “20% off”. I approved that shortened image without checking that the conditions remained visible, so I understand why those customers read it as a broader offer.\n\nI will ask Social to pause or replace the image today and make the eligibility clear in the replacement. That addresses future confusion, but it does not resolve the three conversations Sales already has. I cannot authorise an exception myself, and no remedy has been agreed. Could we review the messages with Finance tomorrow morning and decide on one response that treats the customers consistently?\n\nFor now, I suggest telling them we are checking the discrepancy between the post and the offer terms and will follow up after that review, rather than promising or refusing the discount before we have a decision.\n\nIsaac",
+      "annotations": [
+        {
+          "label": "Sets precise scope",
+          "excerpt": "Finance approved 20% off the first year for new annual subscriptions",
+          "evidenceIds": [
+            "C04-F1"
+          ]
+        },
+        {
+          "label": "Owns misleading asset",
+          "excerpt": "I approved that shortened image without checking",
+          "evidenceIds": [
+            "C04-F3",
+            "C04-F4"
+          ]
+        },
+        {
+          "label": "Respects decision rights",
+          "excerpt": "I cannot authorise an exception myself",
+          "evidenceIds": [
+            "C04-F5"
+          ]
+        },
+        {
+          "label": "Creates a response path",
+          "excerpt": "review the messages with Finance tomorrow morning",
+          "evidenceIds": [
+            "C04-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "optional-field-not-optional",
+    "title": "Optional in the guide, required by the server",
+    "area": "Software × Partner integrations",
+    "role": "Devon · API team",
+    "teaser": "A partner integration fails after following the published API guide.",
+    "misunderstanding": "The guide marked a field optional while the new server validation required it; the partner followed the guide correctly.",
+    "email": {
+      "from": "Suri Shah · Partner support",
+      "to": "Devon · API team",
+      "sent": "Tuesday, 11:26",
+      "subject": "Is Alder using the API incorrectly?",
+      "body": "Hi Devon,\n\nAlder’s integration started receiving validation errors this morning. Their developer points to our guide, where `regionCode` is optional, while the response now says it is required. Engineering mentioned a stricter validation release. Should I tell Alder to update their request, or do we need to treat this as our compatibility issue? They have a processing deadline at 4pm.\n\nSuri"
+    },
+    "document": {
+      "title": "API contract and release record",
+      "intro": "The published contract and runtime validation diverged after release.",
+      "facts": [
+        {
+          "id": "C05-F1",
+          "time": "Published guide",
+          "text": "`regionCode` is described as optional for partner requests; omitting it was previously accepted."
+        },
+        {
+          "id": "C05-F2",
+          "time": "Mon 16:00",
+          "text": "A server validation change made `regionCode` mandatory for all requests."
+        },
+        {
+          "id": "C05-F3",
+          "time": "Mon 17:00",
+          "text": "The release passed tests using requests that all included `regionCode`; omission was not tested."
+        },
+        {
+          "id": "C05-F4",
+          "time": "Tue 09:00",
+          "text": "Alder’s requests without the field began failing. The partner’s request matches the published guide."
+        },
+        {
+          "id": "C05-F5",
+          "time": "Current",
+          "text": "A server-side compatibility rollback is under review. No rollback time is approved; Alder has not confirmed whether it can supply a valid region code safely."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "optional-field-not-optional-evidence",
+        "axis": "Evidence",
+        "prompt": "What does Alder’s failing request demonstrate?",
+        "evidenceIds": [
+          "C05-F1",
+          "C05-F2",
+          "C05-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The runtime contract now conflicts with the published guide.",
+            "feedback": "The partner followed the documentation and hit new validation."
+          },
+          {
+            "id": "b",
+            "text": "The processing deadline has already been missed.",
+            "feedback": "The deadline is later today."
+          },
+          {
+            "id": "c",
+            "text": "Alder ignored a required field in the guide.",
+            "feedback": "The guide labels it optional."
+          }
+        ]
+      },
+      {
+        "id": "optional-field-not-optional-scope",
+        "axis": "Scope",
+        "prompt": "What did the release tests fail to cover?",
+        "evidenceIds": [
+          "C05-F1",
+          "C05-F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Requests with a valid region code.",
+            "feedback": "Those were the tested requests."
+          },
+          {
+            "id": "b",
+            "text": "Requests that omit `regionCode`, which the guide permits.",
+            "feedback": "Every test supplied the field."
+          },
+          {
+            "id": "c",
+            "text": "The partner’s deadline.",
+            "feedback": "A deadline is not a test case."
+          }
+        ]
+      },
+      {
+        "id": "optional-field-not-optional-intent",
+        "axis": "Intent",
+        "prompt": "What does Suri need before speaking to Alder?",
+        "evidenceIds": [
+          "C05-F4",
+          "C05-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A clear ownership statement, a safe short-term option, and an update time.",
+            "feedback": "The partner should not be blamed or told to invent a field value."
+          },
+          {
+            "id": "b",
+            "text": "An instruction to tell Alder its integration is wrong.",
+            "feedback": "Its request follows the published guide."
+          },
+          {
+            "id": "c",
+            "text": "A promised rollback by 4pm.",
+            "feedback": "No rollback time is approved."
+          }
+        ]
+      },
+      {
+        "id": "optional-field-not-optional-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Devon recommend?",
+        "evidenceIds": [
+          "C05-F1",
+          "C05-F2",
+          "C05-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rewrite the guide to say required and close the issue.",
+            "feedback": "A documentation change alone would not restore compatibility."
+          },
+          {
+            "id": "b",
+            "text": "Tell Alder to send a dummy region code.",
+            "feedback": "That could corrupt request meaning."
+          },
+          {
+            "id": "c",
+            "text": "Treat this as a compatibility defect, pursue rollback, and ask whether Alder has a legitimate value before suggesting a request change.",
+            "feedback": "That preserves data meaning while pursuing service recovery."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Suri. Own the contract mismatch, explain why the release tests missed it, and give partner-safe wording and a timed update without promising a rollback.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Name the published-versus-runtime mismatch",
+        "Avoid blaming Alder",
+        "Do not suggest an invented region code",
+        "Give a verification and update path before the deadline"
+      ]
+    },
+    "model": {
+      "subject": "Re: Is Alder using the API incorrectly?",
+      "body": "Hi Suri,\n\nAlder is following our published guide. It says `regionCode` is optional, and their requests were accepted without it before yesterday’s validation change. The server now requires the field, so this is a compatibility defect on our side. The release tests all included a value and missed the omission case; I will add that case to the release check.\n\nPlease tell Alder we have identified a mismatch between the API behaviour and the documented contract, are investigating a server-side rollback, and will update them before their 4pm processing deadline. I cannot give a rollback time yet. I would not ask them to send a placeholder value. If they already have a valid region code for the affected requests, we can assess that as a temporary option with them, but we should not make a data choice on their behalf.\n\nI will escalate the rollback review now, test the omission case against the proposed change, and send you a verified status by 2pm so you have time to coordinate with Alder.\n\nDevon",
+      "annotations": [
+        {
+          "label": "Assigns ownership",
+          "excerpt": "this is a compatibility defect on our side",
+          "evidenceIds": [
+            "C05-F1",
+            "C05-F2",
+            "C05-F4"
+          ]
+        },
+        {
+          "label": "Explains test gap",
+          "excerpt": "The release tests all included a value",
+          "evidenceIds": [
+            "C05-F3"
+          ]
+        },
+        {
+          "label": "Protects data quality",
+          "excerpt": "I would not ask them to send a placeholder value",
+          "evidenceIds": [
+            "C05-F5"
+          ]
+        },
+        {
+          "label": "Gives a timed status",
+          "excerpt": "send you a verified status by 2pm",
+          "evidenceIds": [
+            "C05-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dates-crossed-midnight",
+    "title": "One timestamp, two dates",
+    "area": "Software × Reporting",
+    "role": "Ari · Data engineering",
+    "teaser": "A client thinks overnight transactions vanished from an export.",
+    "misunderstanding": "The report groups transactions by UTC date while the client’s operations team works by local business date; the export label never stated the timezone.",
+    "email": {
+      "from": "Jess Okafor · Client reporting",
+      "to": "Ari · Data engineering",
+      "sent": "Monday, 13:22",
+      "subject": "Why is Sunday missing 84 orders?",
+      "body": "Hi Ari,\n\nHartwell says our Sunday export is missing 84 late orders, yet its Monday file seems unusually high. Their finance lead uses the daily totals to close the weekend and is asking whether data was delayed or lost. Can you check the records and tell me what definition of “Sunday” the export actually uses before I answer?\n\nJess"
+    },
+    "document": {
+      "title": "Daily export reconciliation",
+      "intro": "The records are present, but the report and client use different day boundaries.",
+      "facts": [
+        {
+          "id": "C06-F1",
+          "time": "Export setting",
+          "text": "The current daily CSV groups transactions from 00:00 to 23:59 UTC; its header says only “Daily orders”."
+        },
+        {
+          "id": "C06-F2",
+          "time": "Client setting",
+          "text": "Hartwell closes business days at midnight in its local timezone, UTC−5 for this reporting period."
+        },
+        {
+          "id": "C06-F3",
+          "time": "Sample check",
+          "text": "All 84 disputed orders occurred between 19:00 and 23:59 local Sunday, which is 00:00–04:59 UTC Monday."
+        },
+        {
+          "id": "C06-F4",
+          "time": "Reconciliation",
+          "text": "Those 84 orders appear in the Monday UTC export. No missing order is found in the sampled group."
+        },
+        {
+          "id": "C06-F5",
+          "time": "Current",
+          "text": "The team has not yet checked whether other days or earlier client reports were affected by the unlabeled timezone distinction."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "dates-crossed-midnight-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the sample check establish?",
+        "evidenceIds": [
+          "C06-F3",
+          "C06-F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every historical export is correct for Hartwell’s business day.",
+            "feedback": "The broader review is pending."
+          },
+          {
+            "id": "b",
+            "text": "The orders arrived late in the database.",
+            "feedback": "The source evidence points to grouping, not ingestion delay."
+          },
+          {
+            "id": "c",
+            "text": "The 84 sampled orders were recorded in Monday’s UTC export.",
+            "feedback": "They moved across a date boundary, not out of the sampled data."
+          }
+        ]
+      },
+      {
+        "id": "dates-crossed-midnight-scope",
+        "axis": "Scope",
+        "prompt": "What does “Sunday” mean in the current CSV?",
+        "evidenceIds": [
+          "C06-F1",
+          "C06-F2",
+          "C06-F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hartwell’s local day.",
+            "feedback": "That is the client expectation, not the export setting."
+          },
+          {
+            "id": "b",
+            "text": "A UTC calendar day, not Hartwell’s local business day.",
+            "feedback": "The header fails to name that basis."
+          },
+          {
+            "id": "c",
+            "text": "Any 24-hour period chosen by the reader.",
+            "feedback": "The export uses a fixed UTC boundary."
+          }
+        ]
+      },
+      {
+        "id": "dates-crossed-midnight-intent",
+        "axis": "Intent",
+        "prompt": "What does Jess need for Finance?",
+        "evidenceIds": [
+          "C06-F4",
+          "C06-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A guarantee that no previous day was affected.",
+            "feedback": "Historical comparison is unfinished."
+          },
+          {
+            "id": "b",
+            "text": "A statement that the client counted incorrectly.",
+            "feedback": "Their local-day definition is reasonable."
+          },
+          {
+            "id": "c",
+            "text": "A reconciled explanation for the 84 orders and a plan for a local-day report.",
+            "feedback": "The client needs a usable closing figure, not just a technical timezone label."
+          }
+        ]
+      },
+      {
+        "id": "dates-crossed-midnight-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Ari respond?",
+        "evidenceIds": [
+          "C06-F1",
+          "C06-F4",
+          "C06-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Move the 84 rows manually into Sunday without documenting a rule.",
+            "feedback": "That would make the export inconsistent."
+          },
+          {
+            "id": "b",
+            "text": "Tell Hartwell to use UTC because it is technically standard.",
+            "feedback": "Their close uses a different legitimate boundary."
+          },
+          {
+            "id": "c",
+            "text": "Own the ambiguous header, share the cross-date reconciliation, and agree the required business-day definition before changing the export.",
+            "feedback": "Changing a reporting definition requires client alignment."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Jess. Explain where the 84 orders went, distinguish UTC from local business date, and offer a path to a correctly labelled report while keeping historical impact open.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Reconcile the sampled orders",
+        "Recognise the client’s business-day definition",
+        "Own the unlabeled timezone",
+        "Avoid claiming all historical reports are unaffected"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why is Sunday missing 84 orders?",
+      "body": "Hi Jess,\n\nI found the 84 orders in the Monday CSV. They were placed late on Sunday in Hartwell’s local time, which was already Monday in UTC. Our current export groups by UTC calendar day, while Hartwell closes by local midnight. The header says only “Daily orders”, so we did not make that distinction visible; I understand why Finance read the file as a local-day report.\n\nFor the weekend close, I can give you a reconciliation listing those 84 orders and their local and UTC dates, so Hartwell can verify the Sunday total. I would describe this as a day-boundary mismatch for the sampled orders, not as missing transactions. Before we change the regular export, please confirm with Hartwell which timezone and cutoff their business-day report should use. We can then label the file clearly and test the revised grouping with them.\n\nI have not reviewed earlier days yet, so I cannot say whether the same mismatch affected previous close reports. I will check that separately and give you a verified scope.\n\nAri",
+      "annotations": [
+        {
+          "label": "Locates records",
+          "excerpt": "I found the 84 orders in the Monday CSV",
+          "evidenceIds": [
+            "C06-F3",
+            "C06-F4"
+          ]
+        },
+        {
+          "label": "Explains definitions",
+          "excerpt": "Our current export groups by UTC calendar day",
+          "evidenceIds": [
+            "C06-F1",
+            "C06-F2"
+          ]
+        },
+        {
+          "label": "Owns ambiguity",
+          "excerpt": "we did not make that distinction visible",
+          "evidenceIds": [
+            "C06-F1"
+          ]
+        },
+        {
+          "label": "Opens historical check",
+          "excerpt": "I have not reviewed earlier days yet",
+          "evidenceIds": [
+            "C06-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "outage-after-deploy",
+    "title": "After the deploy is not because of the deploy",
+    "area": "Software × Incident response",
+    "role": "Sofia · Reliability",
+    "teaser": "An outage began minutes after a release and everyone assumes causation.",
+    "misunderstanding": "The timing points toward the release, but current evidence implicates a separate routing change; root cause remains under investigation.",
+    "email": {
+      "from": "Caleb Moore · Service lead",
+      "to": "Sofia · Reliability",
+      "sent": "Friday, 11:32",
+      "subject": "Can we say the release caused the outage?",
+      "body": "Hi Sofia,\n\nOur checkout service slowed down right after the 11am deployment. The commercial team wants us to say we rolled back the faulty release and the issue is resolved. I saw a routing alert too, but I do not know whether it matters. What can I put in the client update due at noon?\n\nCaleb"
+    },
+    "document": {
+      "title": "Incident timeline · checkout latency",
+      "intro": "Use the timeline without turning temporal proximity into a root-cause finding.",
+      "facts": [
+        {
+          "id": "C07-F1",
+          "time": "10:58",
+          "text": "The application release completed. Error rates remained within the normal range for the next 12 minutes."
+        },
+        {
+          "id": "C07-F2",
+          "time": "11:07",
+          "text": "A network routing rule was changed by a separate infrastructure process."
+        },
+        {
+          "id": "C07-F3",
+          "time": "11:11",
+          "text": "Checkout latency rose across both the new and prior application versions."
+        },
+        {
+          "id": "C07-F4",
+          "time": "11:18",
+          "text": "Infrastructure reverted the routing rule. Latency returned toward normal by 11:24."
+        },
+        {
+          "id": "C07-F5",
+          "time": "11:25",
+          "text": "The application release was also rolled back as a precaution. No controlled test has isolated the exact cause."
+        },
+        {
+          "id": "C07-F6",
+          "time": "Current",
+          "text": "Monitoring remains active. The team has not yet confirmed whether all client requests between 11:11 and 11:24 completed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "outage-after-deploy-evidence",
+        "axis": "Evidence",
+        "prompt": "Which conclusion is supported by the timeline?",
+        "evidenceIds": [
+          "C07-F1",
+          "C07-F2",
+          "C07-F3",
+          "C07-F4",
+          "C07-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The routing change is a plausible contributor, but root cause is not confirmed.",
+            "feedback": "Two changes and an uncontrolled recovery prevent certainty."
+          },
+          {
+            "id": "b",
+            "text": "The application release caused the latency.",
+            "feedback": "Latency also affected the prior version."
+          },
+          {
+            "id": "c",
+            "text": "Rollback of the application alone resolved the issue.",
+            "feedback": "Latency was already improving after the routing reversal."
+          }
+        ]
+      },
+      {
+        "id": "outage-after-deploy-scope",
+        "axis": "Scope",
+        "prompt": "What does “resolved” risk overstating at noon?",
+        "evidenceIds": [
+          "C07-F4",
+          "C07-F6"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Latency improved, but affected requests and continued stability are still being checked.",
+            "feedback": "Service recovery and full impact assessment are different."
+          },
+          {
+            "id": "b",
+            "text": "No client saw a problem.",
+            "feedback": "Completion of affected requests is unknown."
+          },
+          {
+            "id": "c",
+            "text": "The application was never released.",
+            "feedback": "It was released and then rolled back."
+          }
+        ]
+      },
+      {
+        "id": "outage-after-deploy-intent",
+        "axis": "Intent",
+        "prompt": "What does Caleb need for the client update?",
+        "evidenceIds": [
+          "C07-F3",
+          "C07-F4",
+          "C07-F5",
+          "C07-F6"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "An internal debate about which team is to blame.",
+            "feedback": "Clients need service and impact information."
+          },
+          {
+            "id": "b",
+            "text": "A definitive technical cause.",
+            "feedback": "The record does not establish one."
+          },
+          {
+            "id": "c",
+            "text": "A factual status, the mitigation taken, and a promise of a later cause and impact update.",
+            "feedback": "He needs transparent language that survives later findings."
+          }
+        ]
+      },
+      {
+        "id": "outage-after-deploy-purpose",
+        "axis": "Purpose",
+        "prompt": "Which update wording is defensible?",
+        "evidenceIds": [
+          "C07-F4",
+          "C07-F5",
+          "C07-F6"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "We reversed a routing change and rolled back the release as precautions; performance improved while impact checks continue.",
+            "feedback": "It states actions and observed results without a false causal claim."
+          },
+          {
+            "id": "b",
+            "text": "A faulty release was rolled back and all requests succeeded.",
+            "feedback": "Neither claim is verified."
+          },
+          {
+            "id": "c",
+            "text": "There was no outage because the system recovered.",
+            "feedback": "Recovery does not erase the incident."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Caleb with wording for a client update. Separate observed timing, mitigation, current status, and unresolved cause and impact.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Avoid claiming causation from timing",
+        "Report both mitigations accurately",
+        "Describe recovery without declaring total resolution",
+        "Identify pending impact checks"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we say the release caused the outage?",
+      "body": "Hi Caleb,\n\nI would avoid calling this a faulty-release incident at this stage. The application deployment finished at 10:58, but checkout errors stayed within their normal range for about 12 minutes. A separate routing rule changed at 11:07, and the latency then affected both the new and prior application versions. Reversing that rule was followed by an improvement; we also rolled back the application release as a precaution. We have not isolated the root cause.\n\nFor clients, I suggest: “We saw elevated checkout latency from approximately 11:11 to 11:24. We reversed a routing change and rolled back an application release while investigating. Performance has improved, and we are monitoring it closely. We are checking whether requests in that window completed and will provide a further update.”\n\nThat wording tells them what we observed and did without assigning a cause we may later have to retract. I will send you the latest verified request-impact and monitoring status before the noon message, even if the check remains open.\n\nSofia",
+      "annotations": [
+        {
+          "label": "Avoids false causation",
+          "excerpt": "I would avoid calling this a faulty-release incident",
+          "evidenceIds": [
+            "C07-F1",
+            "C07-F3",
+            "C07-F5"
+          ]
+        },
+        {
+          "label": "Shows competing evidence",
+          "excerpt": "latency then affected both the new and prior application versions",
+          "evidenceIds": [
+            "C07-F2",
+            "C07-F3"
+          ]
+        },
+        {
+          "label": "States mitigations",
+          "excerpt": "We reversed a routing change and rolled back an application release",
+          "evidenceIds": [
+            "C07-F4",
+            "C07-F5"
+          ]
+        },
+        {
+          "label": "Preserves impact uncertainty",
+          "excerpt": "We are checking whether requests in that window completed",
+          "evidenceIds": [
+            "C07-F6"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "two-legitimate-revenue-totals",
+    "title": "Two totals, two definitions",
+    "area": "Software × Business intelligence",
+    "role": "Kiran · BI",
+    "teaser": "Two dashboards report different revenue for the same month.",
+    "misunderstanding": "One dashboard reports gross orders and another net revenue after refunds; both are internally consistent, but neither label makes the definition explicit.",
+    "email": {
+      "from": "Mei Santos · Finance partner",
+      "to": "Kiran · BI",
+      "sent": "Thursday, 11:02",
+      "subject": "Which revenue number goes to the board?",
+      "body": "Hi Kiran,\n\nThe Sales dashboard says October revenue was £1.24m, while Finance shows £1.17m. The board paper is due this afternoon, and both teams insist their report is correct. I need a number I can defend and a way to stop this argument recurring. Are we looking at a data error or two definitions?\n\nMei"
+    },
+    "document": {
+      "title": "Revenue metric definitions",
+      "intro": "The dashboards aggregate the same orders under different rules.",
+      "facts": [
+        {
+          "id": "C08-F1",
+          "time": "Sales dashboard",
+          "text": "October “revenue” includes £1.24m in gross completed orders before refunds."
+        },
+        {
+          "id": "C08-F2",
+          "time": "Finance dashboard",
+          "text": "October “revenue” includes £1.17m after £70,000 in posted refunds."
+        },
+        {
+          "id": "C08-F3",
+          "time": "Reconciliation",
+          "text": "The refund ledger records £70,000 for October; gross minus posted refunds equals the Finance total."
+        },
+        {
+          "id": "C08-F4",
+          "time": "Labels",
+          "text": "Both dashboards currently display the headline simply as “Revenue”. Neither names the gross/net definition."
+        },
+        {
+          "id": "C08-F5",
+          "time": "Current",
+          "text": "The board pack has historically used net revenue, but Mei has not confirmed whether this meeting requires the same definition."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "two-legitimate-revenue-totals-evidence",
+        "axis": "Evidence",
+        "prompt": "What explains the £70,000 difference?",
+        "evidenceIds": [
+          "C08-F1",
+          "C08-F2",
+          "C08-F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A currency-conversion error.",
+            "feedback": "Both figures use the same currency."
+          },
+          {
+            "id": "b",
+            "text": "Posted refunds are subtracted in Finance but not in Sales.",
+            "feedback": "The figures reconcile under different definitions."
+          },
+          {
+            "id": "c",
+            "text": "One dashboard lost £70,000 of orders.",
+            "feedback": "No missing orders are established."
+          }
+        ]
+      },
+      {
+        "id": "two-legitimate-revenue-totals-scope",
+        "axis": "Scope",
+        "prompt": "Why can both teams claim their report is correct?",
+        "evidenceIds": [
+          "C08-F1",
+          "C08-F2",
+          "C08-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Each report consistently applies a different, poorly labelled metric.",
+            "feedback": "Correct calculation does not make the label adequate."
+          },
+          {
+            "id": "b",
+            "text": "The same metric always has two equally interchangeable values.",
+            "feedback": "The definitions differ and must be named."
+          },
+          {
+            "id": "c",
+            "text": "Sales has approval to set the board definition.",
+            "feedback": "No such authority is recorded."
+          }
+        ]
+      },
+      {
+        "id": "two-legitimate-revenue-totals-intent",
+        "axis": "Intent",
+        "prompt": "What does Mei need for today’s pack?",
+        "evidenceIds": [
+          "C08-F3",
+          "C08-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "An explicit metric choice with a reconciliation, based on the board’s intended definition.",
+            "feedback": "The prior convention is useful but should be confirmed."
+          },
+          {
+            "id": "b",
+            "text": "A statement that Sales fabricated its number.",
+            "feedback": "The Sales gross total is supported."
+          },
+          {
+            "id": "c",
+            "text": "An average of the two dashboard totals.",
+            "feedback": "That would represent neither definition."
+          }
+        ]
+      },
+      {
+        "id": "two-legitimate-revenue-totals-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Kiran resolve the recurring dispute?",
+        "evidenceIds": [
+          "C08-F4",
+          "C08-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Name gross orders and net revenue in both products and document the board-pack definition with Finance.",
+            "feedback": "Clear labels and governance address the cause."
+          },
+          {
+            "id": "b",
+            "text": "Make both dashboards display £1.17m without explanation.",
+            "feedback": "That would hide the gross metric Sales needs."
+          },
+          {
+            "id": "c",
+            "text": "Delete the Sales dashboard.",
+            "feedback": "It serves a distinct purpose."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Mei. Reconcile the figures, help her select a board-ready metric without assuming authority, and propose a durable naming and governance fix.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Explain both legitimate calculations",
+        "Distinguish gross from net in board language",
+        "Confirm the chosen board definition with Finance",
+        "Fix labels and documented ownership"
+      ]
+    },
+    "model": {
+      "subject": "Re: Which revenue number goes to the board?",
+      "body": "Hi Mei,\n\nThe £70,000 difference reconciles exactly to posted October refunds. Sales reports £1.24m in gross completed orders; Finance reports £1.17m after those refunds. I do not see a missing-order error in this comparison. The problem is that both dashboard headlines say “Revenue” without stating which definition they use, so the figures appear to disagree about the same measure.\n\nThe board pack has previously used the net figure. If that is still the intended definition for this meeting, £1.17m is the figure to present, with a note that gross orders were £1.24m and posted refunds £70,000. Please confirm the definition with the pack owner before submission; I should not choose a reporting convention on the board’s behalf. I can give you the reconciliation today.\n\nAfter the pack, I will work with Sales and Finance to relabel the dashboards “Gross completed orders” and “Net revenue after posted refunds” and document which measure belongs in each recurring report.\n\nKiran",
+      "annotations": [
+        {
+          "label": "Reconciles figures",
+          "excerpt": "The £70,000 difference reconciles exactly to posted October refunds",
+          "evidenceIds": [
+            "C08-F1",
+            "C08-F2",
+            "C08-F3"
+          ]
+        },
+        {
+          "label": "Names ambiguity",
+          "excerpt": "both dashboard headlines say “Revenue”",
+          "evidenceIds": [
+            "C08-F4"
+          ]
+        },
+        {
+          "label": "Respects metric ownership",
+          "excerpt": "Please confirm the definition with the pack owner",
+          "evidenceIds": [
+            "C08-F5"
+          ]
+        },
+        {
+          "label": "Fixes recurrence",
+          "excerpt": "relabel the dashboards “Gross completed orders” and “Net revenue after posted refunds”",
+          "evidenceIds": [
+            "C08-F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "review-meeting-is-not-approval",
+    "title": "A meeting labelled final",
+    "area": "People × Performance",
+    "role": "Jules · People team",
+    "teaser": "A manager thinks a review is complete because the calendar said “final”.",
+    "misunderstanding": "The meeting was the final discussion, while the written evaluation still awaited the employee response and sign-off.",
+    "email": {
+      "from": "Marco Bell · Department head",
+      "to": "Jules · People team",
+      "sent": "Thursday, 10:05",
+      "subject": "Why is Sam's review still open?",
+      "body": "Hi Jules,\n\nI need the final ratings for next week’s talent discussion. Sam’s calendar shows a “final review” meeting on Tuesday, yet the system still says Pending. Was the meeting not completed, or is People holding up the rating? Please tell me what I can use and when this will close.\n\nMarco"
+    },
+    "document": {
+      "title": "Review workflow · Sam",
+      "intro": "The calendar title and the system status describe different steps.",
+      "facts": [
+        {
+          "id": "C09-F1",
+          "time": "Mon",
+          "text": "The manager submitted a draft evaluation and scheduled Tuesday’s final discussion."
+        },
+        {
+          "id": "C09-F2",
+          "time": "Tue 14:00",
+          "text": "The discussion took place. Sam asked for a correction to one project date in the written record."
+        },
+        {
+          "id": "C09-F3",
+          "time": "Wed 09:00",
+          "text": "The manager updated the date and sent the revised document to Sam for comment."
+        },
+        {
+          "id": "C09-F4",
+          "time": "Thu 10:00",
+          "text": "Sam has not yet acknowledged the revised document. Policy allows three working days for comment before final sign-off."
+        },
+        {
+          "id": "C09-F5",
+          "time": "Current",
+          "text": "The draft rating is visible to the manager and People, but it is not a final rating for the talent pack."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "review-meeting-is-not-approval-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the calendar entry prove?",
+        "evidenceIds": [
+          "C09-F1",
+          "C09-F2",
+          "C09-F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sam approved the revised rating.",
+            "feedback": "No acknowledgement is recorded."
+          },
+          {
+            "id": "b",
+            "text": "The discussion took place, not that the written process finished.",
+            "feedback": "The revised document is still open for comment."
+          },
+          {
+            "id": "c",
+            "text": "People cancelled the meeting.",
+            "feedback": "The discussion occurred."
+          }
+        ]
+      },
+      {
+        "id": "review-meeting-is-not-approval-scope",
+        "axis": "Scope",
+        "prompt": "What does Pending mean here?",
+        "evidenceIds": [
+          "C09-F3",
+          "C09-F4",
+          "C09-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The manager never submitted an evaluation.",
+            "feedback": "A draft exists."
+          },
+          {
+            "id": "b",
+            "text": "The revised written evaluation awaits comment and sign-off.",
+            "feedback": "It is a workflow status, not evidence that the conversation failed."
+          },
+          {
+            "id": "c",
+            "text": "The rating has been removed from the system.",
+            "feedback": "The draft remains visible internally."
+          }
+        ]
+      },
+      {
+        "id": "review-meeting-is-not-approval-intent",
+        "axis": "Intent",
+        "prompt": "What can Marco responsibly use for the talent discussion?",
+        "evidenceIds": [
+          "C09-F4",
+          "C09-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sam's requested date change as proof of a rating dispute.",
+            "feedback": "The record describes a factual correction, not a challenge to the rating."
+          },
+          {
+            "id": "b",
+            "text": "The draft rating as a confirmed outcome.",
+            "feedback": "Policy has not completed the sign-off."
+          },
+          {
+            "id": "c",
+            "text": "The fact that the review is in progress, while holding the rating as provisional.",
+            "feedback": "He cannot present the draft as final."
+          }
+        ]
+      },
+      {
+        "id": "review-meeting-is-not-approval-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Jules' reply do?",
+        "evidenceIds": [
+          "C09-F2",
+          "C09-F3",
+          "C09-F4",
+          "C09-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask Sam to waive the comment period for the pack.",
+            "feedback": "The record gives no basis to pressure Sam."
+          },
+          {
+            "id": "b",
+            "text": "Blame People for a delay that has not occurred.",
+            "feedback": "The allowed period is still running."
+          },
+          {
+            "id": "c",
+            "text": "Clarify the workflow, protect the comment window, and give a realistic next status check.",
+            "feedback": "This informs Marco without pre-empting Sam."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Marco. Clarify the meaning of “final review”, distinguish a draft from a final rating, and give an appropriate plan for the talent discussion without pre-empting Sam's response.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Separate meeting from written sign-off",
+        "Protect the employee comment window",
+        "State the rating's provisional status",
+        "Offer a concrete follow-up point"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why is Sam's review still open?",
+      "body": "Hi Marco,\n\nThe “final review” calendar title referred to Tuesday’s discussion, which did take place. The written review remains Pending because Sam asked for a correction to a project date, the manager made that correction on Wednesday, and the revised document is now with Sam for comment. Sam has not yet acknowledged it. The three-working-day comment period is still open, so this is not a People hold on a completed rating.\n\nThe draft rating is available to the manager and People for preparation, but it should not be presented as a final outcome in next week’s talent discussion. I suggest marking Sam’s review as awaiting sign-off in the pack and leaving the final rating field open until the workflow closes.\n\nI will check the status after the comment window and let you know when the signed version is available. If Sam raises a substantive point rather than acknowledging the date correction, we will follow the normal review process and update your timeline.\n\nJules",
+      "annotations": [
+        {
+          "label": "Clarifies terminology",
+          "excerpt": "The “final review” calendar title referred to Tuesday’s discussion",
+          "evidenceIds": [
+            "C09-F1",
+            "C09-F2"
+          ]
+        },
+        {
+          "label": "Explains status",
+          "excerpt": "the revised document is now with Sam for comment",
+          "evidenceIds": [
+            "C09-F3",
+            "C09-F4"
+          ]
+        },
+        {
+          "label": "Preserves provisionality",
+          "excerpt": "it should not be presented as a final outcome",
+          "evidenceIds": [
+            "C09-F5"
+          ]
+        },
+        {
+          "label": "Protects fair process",
+          "excerpt": "I will check the status after the comment window",
+          "evidenceIds": [
+            "C09-F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "offer-before-budget",
+    "title": "The offer before the approval",
+    "area": "People × Hiring",
+    "role": "Leah · Recruiting",
+    "teaser": "A candidate believes an offer is final, while the hiring budget is still pending.",
+    "misunderstanding": "A hiring manager called a proposed package “approved” in conversation before Finance had authorised it.",
+    "email": {
+      "from": "Tom Reyes · Hiring manager",
+      "to": "Leah · Recruiting",
+      "sent": "Monday, 09:36",
+      "subject": "What can we tell Amara now?",
+      "body": "Hi Leah,\n\nAmara emailed to accept the salary we discussed on Friday and says she is preparing to give notice. I told her the package was approved because my director supported it, but Finance has not signed off the new headcount. I do not want her to make an irreversible decision based on my wording. What should I say today without sounding as if we are withdrawing an offer?\n\nTom"
+    },
+    "document": {
+      "title": "Hiring approval record",
+      "intro": "The conversation and internal approvals are at different stages.",
+      "facts": [
+        {
+          "id": "C10-F1",
+          "time": "Thu",
+          "text": "The director supported the proposed role and salary in principle."
+        },
+        {
+          "id": "C10-F2",
+          "time": "Fri 12:00",
+          "text": "Tom told Amara by phone that the package was “approved” and that Recruiting would send paperwork."
+        },
+        {
+          "id": "C10-F3",
+          "time": "Fri 16:00",
+          "text": "Leah submitted the headcount and salary for Finance approval."
+        },
+        {
+          "id": "C10-F4",
+          "time": "Mon 09:00",
+          "text": "Finance requested a revised business case and has not approved the headcount or salary."
+        },
+        {
+          "id": "C10-F5",
+          "time": "Current",
+          "text": "No written offer has been issued. Amara has not said she has already given notice; she says she is preparing to do so."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "offer-before-budget-evidence",
+        "axis": "Evidence",
+        "prompt": "What has Amara actually been told?",
+        "evidenceIds": [
+          "C10-F1",
+          "C10-F2",
+          "C10-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Finance has formally approved her salary.",
+            "feedback": "Finance has not approved it."
+          },
+          {
+            "id": "b",
+            "text": "Amara has already resigned.",
+            "feedback": "She says she is preparing to give notice."
+          },
+          {
+            "id": "c",
+            "text": "Tom said the package was approved, although no written offer followed.",
+            "feedback": "His wording created a reasonable expectation."
+          }
+        ]
+      },
+      {
+        "id": "offer-before-budget-scope",
+        "axis": "Scope",
+        "prompt": "What did the director’s support cover?",
+        "evidenceIds": [
+          "C10-F1",
+          "C10-F3",
+          "C10-F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Permission to ask her to resign immediately.",
+            "feedback": "Nothing in the record supports that."
+          },
+          {
+            "id": "b",
+            "text": "Support in principle, not Finance authorisation to issue an offer.",
+            "feedback": "Two approval steps were conflated."
+          },
+          {
+            "id": "c",
+            "text": "A signed contract for Amara.",
+            "feedback": "No written offer exists."
+          }
+        ]
+      },
+      {
+        "id": "offer-before-budget-intent",
+        "axis": "Intent",
+        "prompt": "What does Tom need to prevent today?",
+        "evidenceIds": [
+          "C10-F2",
+          "C10-F4",
+          "C10-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Amara acting on an assurance the company cannot yet confirm.",
+            "feedback": "The timing matters because she may give notice."
+          },
+          {
+            "id": "b",
+            "text": "Amara seeing any acknowledgement of the mistake.",
+            "feedback": "A clear correction is necessary."
+          },
+          {
+            "id": "c",
+            "text": "Finance reviewing the business case.",
+            "feedback": "That review is still required."
+          }
+        ]
+      },
+      {
+        "id": "offer-before-budget-purpose",
+        "axis": "Purpose",
+        "prompt": "Which response is most responsible?",
+        "evidenceIds": [
+          "C10-F2",
+          "C10-F4",
+          "C10-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Wait until Finance decides and hope she delays notice.",
+            "feedback": "That leaves a known misleading assurance uncorrected."
+          },
+          {
+            "id": "b",
+            "text": "Contact Amara promptly, own the premature wording, state the approval is pending, and advise her not to rely on a final offer yet.",
+            "feedback": "It corrects the expectation before she acts."
+          },
+          {
+            "id": "c",
+            "text": "Send an offer letter to match Tom’s words.",
+            "feedback": "The required approval has not been given."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Tom with a candidate-safe correction. Recognise the effect of his words, explain the pending approval, and prioritise contacting Amara before she gives notice.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Separate support in principle from final approval",
+        "Own the premature assurance",
+        "Avoid saying she has already resigned",
+        "Give a prompt direct communication plan"
+      ]
+    },
+    "model": {
+      "subject": "Re: What can we tell Amara now?",
+      "body": "Hi Tom,\n\nWe should contact Amara today, before she acts on Friday’s conversation. Your director supported the proposed package in principle, but Finance has not approved the headcount or salary, and no written offer has been issued. Saying the package was “approved” created a reasonable expectation, particularly when you said paperwork would follow. We need to correct that clearly and take responsibility for the wording.\n\nI suggest that you call her with me present, acknowledge that you spoke too soon, and explain that the proposal is still subject to Finance approval. We should say we value her interest but cannot yet confirm an offer or a date for one. Please ask her not to give notice in reliance on the conversation while that decision remains open. We should not imply she has already resigned; she has only said she is preparing to.\n\nI will take the revised business case back to Finance today and agree a date for the next update. Whatever Finance decides, we owe Amara a direct, timely answer rather than silence.\n\nLeah",
+      "annotations": [
+        {
+          "label": "Names approval gap",
+          "excerpt": "Finance has not approved the headcount or salary",
+          "evidenceIds": [
+            "C10-F3",
+            "C10-F4"
+          ]
+        },
+        {
+          "label": "Owns expectation",
+          "excerpt": "Saying the package was “approved” created a reasonable expectation",
+          "evidenceIds": [
+            "C10-F2"
+          ]
+        },
+        {
+          "label": "Prevents harm",
+          "excerpt": "before she acts on Friday’s conversation",
+          "evidenceIds": [
+            "C10-F5"
+          ]
+        },
+        {
+          "label": "Sets follow-up",
+          "excerpt": "agree a date for the next update",
+          "evidenceIds": [
+            "C10-F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "range-without-a-person",
+    "title": "A salary band without a salary",
+    "area": "People × Compensation",
+    "role": "Mina · People team",
+    "teaser": "A screenshot of a pay band prompts a question about an individual colleague.",
+    "misunderstanding": "A published hiring range was mistaken for evidence of one employee's current pay.",
+    "email": {
+      "from": "Owen Blake · Team manager",
+      "to": "Mina · People team",
+      "sent": "Wednesday, 09:45",
+      "subject": "What do I tell the team about this range?",
+      "body": "Hi Mina,\n\nSomeone shared a screenshot of the new Senior Designer advert in our team chat. The range starts above what some team members expected, and they are asking whether Casey, who already holds that title, is being paid less than a new hire would be. I do not have access to anyone’s salary details. What can I clarify in the team meeting without evading a fair question?\n\nOwen"
+    },
+    "document": {
+      "title": "Senior Designer advert and compensation note",
+      "intro": "The public range and individual salaries are different kinds of information.",
+      "facts": [
+        {
+          "id": "C11-F1",
+          "time": "Advert",
+          "text": "The approved external range for new Senior Designer hires is £54,000–£68,000."
+        },
+        {
+          "id": "C11-F2",
+          "time": "Pay note",
+          "text": "The range varies with location, experience, and role scope; an advert does not state any current employee's salary."
+        },
+        {
+          "id": "C11-F3",
+          "time": "Current",
+          "text": "Casey's pay is confidential and is not in the material Owen has been authorised to discuss."
+        },
+        {
+          "id": "C11-F4",
+          "time": "Wed 08:30",
+          "text": "Two team members asked whether the advert means current staff are below the hiring floor."
+        },
+        {
+          "id": "C11-F5",
+          "time": "Process",
+          "text": "People can arrange private pay-range discussions and review any individual concern through the established compensation process."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "range-without-a-person-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the screenshot establish?",
+        "evidenceIds": [
+          "C11-F1",
+          "C11-F2",
+          "C11-F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every new hire will earn £68,000.",
+            "feedback": "The range depends on role circumstances."
+          },
+          {
+            "id": "b",
+            "text": "Casey earns less than £54,000.",
+            "feedback": "No individual pay figure is disclosed."
+          },
+          {
+            "id": "c",
+            "text": "The public hiring range, not Casey's pay.",
+            "feedback": "An advert cannot reveal an individual salary."
+          }
+        ]
+      },
+      {
+        "id": "range-without-a-person-scope",
+        "axis": "Scope",
+        "prompt": "What can Owen discuss in a team meeting?",
+        "evidenceIds": [
+          "C11-F1",
+          "C11-F2",
+          "C11-F3",
+          "C11-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Casey's current salary.",
+            "feedback": "That information is confidential."
+          },
+          {
+            "id": "b",
+            "text": "A promise that all salaries will immediately match the advert.",
+            "feedback": "No such decision is documented."
+          },
+          {
+            "id": "c",
+            "text": "The published range and the route for individual questions.",
+            "feedback": "He can be transparent about public information without disclosing private pay."
+          }
+        ]
+      },
+      {
+        "id": "range-without-a-person-intent",
+        "axis": "Intent",
+        "prompt": "What is the fair concern behind the team's question?",
+        "evidenceIds": [
+          "C11-F1",
+          "C11-F4",
+          "C11-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether Casey should be named in the meeting.",
+            "feedback": "Naming a colleague is not needed to address the concern."
+          },
+          {
+            "id": "b",
+            "text": "Whether existing staff are treated consistently with the new hiring range.",
+            "feedback": "The screenshot raises a genuine process question even though it proves no individual disparity."
+          },
+          {
+            "id": "c",
+            "text": "Whether the advert should be deleted.",
+            "feedback": "Deleting public information would not answer the pay question."
+          }
+        ]
+      },
+      {
+        "id": "range-without-a-person-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Mina advise Owen?",
+        "evidenceIds": [
+          "C11-F2",
+          "C11-F3",
+          "C11-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confirm that Casey is paid fairly.",
+            "feedback": "Mina cannot make that case-specific claim from this record."
+          },
+          {
+            "id": "b",
+            "text": "Refuse to discuss the advert at all.",
+            "feedback": "The public range can be discussed."
+          },
+          {
+            "id": "c",
+            "text": "Acknowledge the concern, explain what the range does and does not show, and direct personal cases to private review.",
+            "feedback": "This is transparent without turning private pay into team gossip."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Owen with meeting-ready language. Address the fairness concern without confirming or implying Casey's salary, and offer a meaningful private route for individual questions.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Separate published range from individual pay",
+        "Recognise the fairness concern",
+        "Protect Casey's confidentiality",
+        "Give a private review route"
+      ]
+    },
+    "model": {
+      "subject": "Re: What do I tell the team about this range?",
+      "body": "Hi Owen,\n\nYou can discuss the published Senior Designer range openly: it is £54,000–£68,000 for new hires, with placement depending on location, experience, and the scope of the role. The screenshot does not tell us Casey’s pay, and I would not confirm, deny, or imply anything about an individual colleague in a team meeting.\n\nI would acknowledge the underlying question rather than dismiss it. You could say: “It is reasonable to ask how our hiring range relates to existing roles. The advert shows a range for new hires, not what any current employee earns. If you have a question about your own position in the range, People can review it with you privately.”\n\nWe have an established compensation process for individual concerns, and I can join or follow up after the meeting to explain how to use it. Please avoid promising an immediate pay change; no such decision has been made. If several people raise the same process question, we can prepare a wider explanation without discussing anyone’s salary.\n\nMina",
+      "annotations": [
+        {
+          "label": "Explains public information",
+          "excerpt": "it is £54,000–£68,000 for new hires",
+          "evidenceIds": [
+            "C11-F1",
+            "C11-F2"
+          ]
+        },
+        {
+          "label": "Protects individual privacy",
+          "excerpt": "I would not confirm, deny, or imply anything about an individual colleague",
+          "evidenceIds": [
+            "C11-F3"
+          ]
+        },
+        {
+          "label": "Acknowledges concern",
+          "excerpt": "It is reasonable to ask how our hiring range relates to existing roles",
+          "evidenceIds": [
+            "C11-F4"
+          ]
+        },
+        {
+          "label": "Offers a route",
+          "excerpt": "People can review it with you privately",
+          "evidenceIds": [
+            "C11-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "exit-interview-not-a-quote",
+    "title": "What the exit interview can tell the team",
+    "area": "People × Employee relations",
+    "role": "Yasmin · People team",
+    "teaser": "A manager wants to share an employee’s exit interview to prove a staffing concern.",
+    "misunderstanding": "The interview can inform a theme, but it was given in confidence and does not authorise quoting or identifying the employee.",
+    "email": {
+      "from": "Felix Moore · Service manager",
+      "to": "Yasmin · People team",
+      "sent": "Wednesday, 15:40",
+      "subject": "Can I use Morgan’s comments?",
+      "body": "Hi Yasmin,\n\nI want to argue for another support role at Friday’s planning meeting. Morgan’s exit interview explains exactly why the team is stretched, and a direct quote would make the case stronger. I know the interview was confidential, but I am not naming Morgan in my slides. Can I use a few lines? If not, how can I make a credible case from what we have?\n\nFelix"
+    },
+    "document": {
+      "title": "Exit feedback and staffing evidence",
+      "intro": "The record separates confidential testimony from aggregate operational evidence.",
+      "facts": [
+        {
+          "id": "C12-F1",
+          "time": "Interview notice",
+          "text": "Employees were told their exit interview would be used for People analysis, not quoted in management presentations."
+        },
+        {
+          "id": "C12-F2",
+          "time": "Morgan’s interview",
+          "text": "Morgan described repeated weekend cover and a slow response to urgent tickets. The phrasing includes details that colleagues could recognise."
+        },
+        {
+          "id": "C12-F3",
+          "time": "Team data",
+          "text": "Weekend cover hours increased 22% last quarter; median urgent-ticket response time also rose."
+        },
+        {
+          "id": "C12-F4",
+          "time": "Current",
+          "text": "People has two other exit interviews that mention workload, but the group is too small to attribute individual remarks safely."
+        },
+        {
+          "id": "C12-F5",
+          "time": "Process",
+          "text": "People may summarise themes without identifying speakers and may help Felix use operational metrics in a staffing proposal."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "exit-interview-not-a-quote-evidence",
+        "axis": "Evidence",
+        "prompt": "What supports a staffing discussion without a direct quote?",
+        "evidenceIds": [
+          "C12-F3",
+          "C12-F4",
+          "C12-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Morgan’s exact phrasing on a slide.",
+            "feedback": "The distinctive details could identify Morgan."
+          },
+          {
+            "id": "b",
+            "text": "Operational measures and a carefully anonymised workload theme.",
+            "feedback": "The metrics and broader theme can be used without exposing the source."
+          },
+          {
+            "id": "c",
+            "text": "A claim that every leaver cited workload.",
+            "feedback": "Only a small group is described."
+          }
+        ]
+      },
+      {
+        "id": "exit-interview-not-a-quote-scope",
+        "axis": "Scope",
+        "prompt": "What did the interview notice permit?",
+        "evidenceIds": [
+          "C12-F1",
+          "C12-F2",
+          "C12-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Any quote without a name.",
+            "feedback": "The notice did not grant that permission."
+          },
+          {
+            "id": "b",
+            "text": "No use of the interview for learning at all.",
+            "feedback": "People can analyse themes."
+          },
+          {
+            "id": "c",
+            "text": "Use in People analysis, not verbatim management presentation.",
+            "feedback": "Removing a name does not erase the stated boundary."
+          }
+        ]
+      },
+      {
+        "id": "exit-interview-not-a-quote-intent",
+        "axis": "Intent",
+        "prompt": "What is Felix trying to achieve?",
+        "evidenceIds": [
+          "C12-F3",
+          "C12-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A credible case for staffing at Friday’s meeting.",
+            "feedback": "That legitimate goal can be met with safer evidence."
+          },
+          {
+            "id": "b",
+            "text": "Publish confidential interviews.",
+            "feedback": "He is asking whether use is allowed."
+          },
+          {
+            "id": "c",
+            "text": "Publicly blame Morgan for leaving.",
+            "feedback": "He asks for a persuasive staffing case."
+          }
+        ]
+      },
+      {
+        "id": "exit-interview-not-a-quote-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Yasmin advise him?",
+        "evidenceIds": [
+          "C12-F1",
+          "C12-F2",
+          "C12-F3",
+          "C12-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Decline the quote, explain the identification risk, and help build the case from metrics and themes.",
+            "feedback": "This respects confidentiality while supporting the decision."
+          },
+          {
+            "id": "b",
+            "text": "Allow the quote if Morgan’s name is removed.",
+            "feedback": "The wording itself may identify Morgan."
+          },
+          {
+            "id": "c",
+            "text": "Tell him staffing cannot be discussed.",
+            "feedback": "The metrics provide a basis for it."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Felix. Set a clear boundary on the interview, show how to make the staffing case with available evidence, and avoid overstating how many employees share the concern.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Protect the interview commitment",
+        "Explain why anonymity by name is insufficient",
+        "Use operational metrics precisely",
+        "Offer a credible alternative for Friday"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can I use Morgan’s comments?",
+      "body": "Hi Felix,\n\nPlease do not put Morgan’s words in the planning slides, even without a name. The interview notice said the comments would be used for People analysis, not quoted in management presentations, and the details about weekend cover could make the speaker recognisable to colleagues. I understand why the quote is compelling, but we should not turn a confidential conversation into an identifiable example.\n\nYou do have a solid staffing argument without it. Weekend cover hours rose 22% last quarter, and median response time for urgent tickets also increased. People can add a carefully phrased theme that workload appeared in several recent exit conversations, without attributing lines to anyone or claiming every leaver said the same thing. I can review that wording with you before Friday.\n\nI suggest building the proposal around those measures, the operational consequences, and what one additional role would change. That gives leaders evidence they can examine while respecting the commitments made to employees who spoke candidly.\n\nYasmin",
+      "annotations": [
+        {
+          "label": "Sets boundary",
+          "excerpt": "Please do not put Morgan’s words in the planning slides",
+          "evidenceIds": [
+            "C12-F1"
+          ]
+        },
+        {
+          "label": "Explains identification risk",
+          "excerpt": "could make the speaker recognisable to colleagues",
+          "evidenceIds": [
+            "C12-F2"
+          ]
+        },
+        {
+          "label": "Uses measurable evidence",
+          "excerpt": "Weekend cover hours rose 22% last quarter",
+          "evidenceIds": [
+            "C12-F3"
+          ]
+        },
+        {
+          "label": "Calibrates theme",
+          "excerpt": "without attributing lines to anyone or claiming every leaver said the same thing",
+          "evidenceIds": [
+            "C12-F4",
+            "C12-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "two-addresses-one-visit",
+    "title": "Two addresses for one visit",
+    "area": "Health administration × Location",
+    "role": "Owen · Appointment communications",
+    "teaser": "A patient received two different building addresses for the same clinic visit.",
+    "misunderstanding": "The appointment was moved to a satellite building, but an old template inserted the main-site address into a later reminder.",
+    "email": {
+      "from": "Priya · Clinic reception",
+      "to": "Owen · Appointment communications",
+      "sent": "Monday, 14:15",
+      "subject": "Which address should the patient use?",
+      "body": "Hi Owen,\n\nA patient called because their confirmation says the Riverside clinic, while today’s reminder says Main Street. They have arranged accessible transport for tomorrow. The schedule here shows Riverside, but I need to be certain before asking them to change anything. Can you confirm the correct site and help me explain why the messages differ?\n\nPriya"
+    },
+    "document": {
+      "title": "Clinic location and message log",
+      "intro": "The location decision and outbound templates were updated at different times.",
+      "facts": [
+        {
+          "id": "C13-F1",
+          "time": "Last Thu",
+          "text": "The clinic moved Tuesday’s appointment session to the Riverside satellite building."
+        },
+        {
+          "id": "C13-F2",
+          "time": "Last Thu",
+          "text": "The scheduling system was updated to Riverside and the patient’s first confirmation named that building."
+        },
+        {
+          "id": "C13-F3",
+          "time": "Mon 08:00",
+          "text": "A reminder batch used an older Main Street address template for this clinic type."
+        },
+        {
+          "id": "C13-F4",
+          "time": "Mon 13:45",
+          "text": "The clinic lead confirmed tomorrow’s session remains at Riverside; the appointment time has not changed."
+        },
+        {
+          "id": "C13-F5",
+          "time": "Current",
+          "text": "The patient’s transport provider has not yet confirmed whether its booking uses Riverside or Main Street. No broad assessment of other affected reminders has been completed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "two-addresses-one-visit-evidence",
+        "axis": "Evidence",
+        "prompt": "Which location is confirmed for tomorrow?",
+        "evidenceIds": [
+          "C13-F1",
+          "C13-F2",
+          "C13-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Riverside; the later Main Street reminder used an old template.",
+            "feedback": "The clinic lead and current schedule agree."
+          },
+          {
+            "id": "b",
+            "text": "Main Street because it was the most recent message.",
+            "feedback": "Recency does not make an outdated template correct."
+          },
+          {
+            "id": "c",
+            "text": "The site is still undecided.",
+            "feedback": "The clinic lead confirmed Riverside."
+          }
+        ]
+      },
+      {
+        "id": "two-addresses-one-visit-scope",
+        "axis": "Scope",
+        "prompt": "What changed and what did not?",
+        "evidenceIds": [
+          "C13-F1",
+          "C13-F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The appointment itself was cancelled.",
+            "feedback": "It is scheduled for Riverside."
+          },
+          {
+            "id": "b",
+            "text": "Both building and time changed today.",
+            "feedback": "The time remained the same."
+          },
+          {
+            "id": "c",
+            "text": "The building changed; the appointment time did not.",
+            "feedback": "The patient needs a location correction, not a new time."
+          }
+        ]
+      },
+      {
+        "id": "two-addresses-one-visit-intent",
+        "axis": "Intent",
+        "prompt": "What does Priya need to protect?",
+        "evidenceIds": [
+          "C13-F4",
+          "C13-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A claim that transport is already arranged for Riverside.",
+            "feedback": "The provider’s booking is unverified."
+          },
+          {
+            "id": "b",
+            "text": "The patient’s transport plan and a clear correction before tomorrow.",
+            "feedback": "The wrong address could disrupt access even though the appointment is valid."
+          },
+          {
+            "id": "c",
+            "text": "An explanation of the patient’s clinical need.",
+            "feedback": "The record is administrative."
+          }
+        ]
+      },
+      {
+        "id": "two-addresses-one-visit-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Owen propose?",
+        "evidenceIds": [
+          "C13-F3",
+          "C13-F4",
+          "C13-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask the patient to choose whichever site is easier.",
+            "feedback": "The clinic session is at Riverside."
+          },
+          {
+            "id": "b",
+            "text": "Ignore the template because the first confirmation was correct.",
+            "feedback": "The contradictory reminder creates a real risk."
+          },
+          {
+            "id": "c",
+            "text": "Confirm Riverside in a corrected message, check transport details with the patient, and audit the reminder batch.",
+            "feedback": "This fixes the individual case and investigates wider scope."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Priya with a verified location, patient-safe correction and transport check. Address the template error without claiming other patients were unaffected.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Confirm the correct building and unchanged time",
+        "Own the contradictory reminder",
+        "Check the transport booking before giving reassurance",
+        "Commit to reviewing wider reminder scope"
+      ]
+    },
+    "model": {
+      "subject": "Re: Which address should the patient use?",
+      "body": "Hi Priya,\n\nThe clinic lead has confirmed that tomorrow’s session is at Riverside, at the original appointment time. The first confirmation and the scheduling record are correct. Today’s Main Street reminder came from an older address template that was not updated when the session moved. I am sorry we sent conflicting directions, especially when the patient has arranged accessible transport.\n\nPlease call the patient with the confirmed Riverside address and offer to send a corrected written reminder. Could you also ask which address their transport provider has on the booking? We do not yet know that, so I would avoid assuring them the journey is already set for Riverside. If the provider needs a correction, the clinic can help coordinate it through its normal process.\n\nI am fixing the template for this clinic and checking the rest of the reminder batch for the same address error. I will send you the result of that check rather than assume this was the only patient affected.\n\nOwen",
+      "annotations": [
+        {
+          "label": "Confirms location",
+          "excerpt": "tomorrow’s session is at Riverside",
+          "evidenceIds": [
+            "C13-F1",
+            "C13-F2",
+            "C13-F4"
+          ]
+        },
+        {
+          "label": "Owns message error",
+          "excerpt": "Today’s Main Street reminder came from an older address template",
+          "evidenceIds": [
+            "C13-F3"
+          ]
+        },
+        {
+          "label": "Protects transport",
+          "excerpt": "ask which address their transport provider has on the booking",
+          "evidenceIds": [
+            "C13-F5"
+          ]
+        },
+        {
+          "label": "Checks wider scope",
+          "excerpt": "checking the rest of the reminder batch",
+          "evidenceIds": [
+            "C13-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "two-accounts-one-intake",
+    "title": "The form that belonged to another account",
+    "area": "Health administration × Registration",
+    "role": "Mila · Patient registration",
+    "teaser": "A patient is asked to repeat intake paperwork they submitted last week.",
+    "misunderstanding": "The paperwork is attached to a duplicate portal account; reception can see it exists but must verify identity before linking records.",
+    "email": {
+      "from": "Andre · Clinic reception",
+      "to": "Mila · Patient registration",
+      "sent": "Wednesday, 11:08",
+      "subject": "Did we lose the intake form?",
+      "body": "Hi Mila,\n\nA patient says they completed their intake form last Thursday, but our appointment view shows nothing. They are frustrated at being asked to do it again. I found a similar portal account with the form attached, but I cannot tell whether it is safely linked to this appointment. Can I tell them we have it, and what should we do before tomorrow’s visit?\n\nAndre"
+    },
+    "document": {
+      "title": "Registration reconciliation note",
+      "intro": "The form exists; account ownership and linkage need verification.",
+      "facts": [
+        {
+          "id": "C14-F1",
+          "time": "Last Thu",
+          "text": "An intake form was submitted through a portal account using an older email address."
+        },
+        {
+          "id": "C14-F2",
+          "time": "Last Fri",
+          "text": "The appointment was booked under a newer portal account with the same name and date of birth."
+        },
+        {
+          "id": "C14-F3",
+          "time": "Wed 10:30",
+          "text": "The two accounts are flagged as potential duplicates; the intake form is visible only under the older account."
+        },
+        {
+          "id": "C14-F4",
+          "time": "Identity rule",
+          "text": "Registration must verify the patient through the approved process before linking or sharing information across accounts."
+        },
+        {
+          "id": "C14-F5",
+          "time": "Current",
+          "text": "No account merge or form transfer has been completed. The clinic can provide an approved alternative intake route if the linkage is not resolved before the visit."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "two-accounts-one-intake-evidence",
+        "axis": "Evidence",
+        "prompt": "What can Mila say about the paperwork?",
+        "evidenceIds": [
+          "C14-F1",
+          "C14-F2",
+          "C14-F3",
+          "C14-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A form exists in a potentially related account, but its link to this appointment is unverified.",
+            "feedback": "Existence and correct ownership are separate."
+          },
+          {
+            "id": "b",
+            "text": "The form is already linked to tomorrow’s appointment.",
+            "feedback": "No transfer has happened."
+          },
+          {
+            "id": "c",
+            "text": "The form was lost.",
+            "feedback": "It is visible in the older account."
+          }
+        ]
+      },
+      {
+        "id": "two-accounts-one-intake-scope",
+        "axis": "Scope",
+        "prompt": "Why can’t registration simply move the form?",
+        "evidenceIds": [
+          "C14-F3",
+          "C14-F4",
+          "C14-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Identity must be verified before connecting the two accounts.",
+            "feedback": "Matching basic details alone is not enough under the rule."
+          },
+          {
+            "id": "b",
+            "text": "The form is clinically invalid.",
+            "feedback": "No clinical assessment is in the record."
+          },
+          {
+            "id": "c",
+            "text": "The appointment must be cancelled.",
+            "feedback": "An alternative intake route exists."
+          }
+        ]
+      },
+      {
+        "id": "two-accounts-one-intake-intent",
+        "axis": "Intent",
+        "prompt": "What does Andre need for the patient?",
+        "evidenceIds": [
+          "C14-F1",
+          "C14-F4",
+          "C14-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A promise that the accounts are definitely the same person.",
+            "feedback": "Verification is still needed."
+          },
+          {
+            "id": "b",
+            "text": "A respectful explanation, a verification step, and a fallback before the visit.",
+            "feedback": "The patient should not be asked to repeat work without checking the existing submission."
+          },
+          {
+            "id": "c",
+            "text": "A request for clinical details by email.",
+            "feedback": "That is unnecessary to resolve registration."
+          }
+        ]
+      },
+      {
+        "id": "two-accounts-one-intake-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply repairs the experience?",
+        "evidenceIds": [
+          "C14-F3",
+          "C14-F4",
+          "C14-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Merge the accounts on name and birth date alone.",
+            "feedback": "The approved verification step has not occurred."
+          },
+          {
+            "id": "b",
+            "text": "Acknowledge the form, verify the account link urgently, and prepare the approved fallback if needed.",
+            "feedback": "This balances access and identity safety."
+          },
+          {
+            "id": "c",
+            "text": "Tell the patient the system deleted their form.",
+            "feedback": "It still exists."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Andre. Acknowledge the patient’s work, distinguish form existence from verified ownership, and arrange an identity check plus fallback for tomorrow.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Avoid claiming the form is lost",
+        "Avoid asserting the two accounts are already linked",
+        "Use approved identity verification",
+        "Prevent unnecessary repeat work where possible"
+      ]
+    },
+    "model": {
+      "subject": "Re: Did we lose the intake form?",
+      "body": "Hi Andre,\n\nWe can see an intake form submitted last Thursday in an older portal account, so I would not tell the patient it was lost. The appointment is under a newer account with matching basic details, but the two are only flagged as possible duplicates. We have not verified that the form belongs to the same account holder or linked it to tomorrow’s visit.\n\nPlease apologise for asking the patient to repeat paperwork before we checked the existing submission. Registration can contact them through the approved identity-verification process today and, if the match is confirmed, link the accounts and make the form available to the clinic. Until that check is complete, please avoid sharing information from the older account or saying the form is ready for the appointment.\n\nIf we cannot complete the linkage in time, the clinic has an approved alternative intake route. I will coordinate with you before close of business so the patient receives one clear instruction for tomorrow, rather than another unexplained request.\n\nMila",
+      "annotations": [
+        {
+          "label": "Confirms existence",
+          "excerpt": "We can see an intake form submitted last Thursday",
+          "evidenceIds": [
+            "C14-F1"
+          ]
+        },
+        {
+          "label": "Keeps ownership open",
+          "excerpt": "only flagged as possible duplicates",
+          "evidenceIds": [
+            "C14-F2",
+            "C14-F3"
+          ]
+        },
+        {
+          "label": "Uses verification",
+          "excerpt": "approved identity-verification process today",
+          "evidenceIds": [
+            "C14-F4"
+          ]
+        },
+        {
+          "label": "Prepares fallback",
+          "excerpt": "the clinic has an approved alternative intake route",
+          "evidenceIds": [
+            "C14-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "proxy-access-beyond-consent",
+    "title": "Who can see the appointment?",
+    "area": "Health administration × Proxy access",
+    "role": "Nina · Patient services",
+    "teaser": "A family member asks for records after helping arrange a patient’s appointment.",
+    "misunderstanding": "The patient authorised scheduling help, not access to their portal documents; a prior staff note used the vague word “proxy”.",
+    "email": {
+      "from": "Caleb · Front desk",
+      "to": "Nina · Patient services",
+      "sent": "Friday, 10:52",
+      "subject": "What can we share with the family member?",
+      "body": "Hi Nina,\n\nA family member called asking for the patient’s portal documents. They say they are the patient’s proxy because they booked the appointment last month. The desk note does say “proxy to assist”, but I cannot find a records-access permission. I do not want to refuse help unnecessarily or disclose something we should not. What can I say now?\n\nCaleb"
+    },
+    "document": {
+      "title": "Assistance permission record",
+      "intro": "The consent record names an activity, not blanket access.",
+      "facts": [
+        {
+          "id": "C15-F1",
+          "time": "Last month",
+          "text": "The patient authorised a named family member to help schedule and reschedule appointments by phone."
+        },
+        {
+          "id": "C15-F2",
+          "time": "Desk note",
+          "text": "A staff member summarised the arrangement as “proxy to assist” without naming its limits."
+        },
+        {
+          "id": "C15-F3",
+          "time": "Portal record",
+          "text": "No permission for the family member to view portal documents is recorded."
+        },
+        {
+          "id": "C15-F4",
+          "time": "Current call",
+          "text": "The family member asked for documents, not a scheduling change. The patient has not been contacted about this request."
+        },
+        {
+          "id": "C15-F5",
+          "time": "Process",
+          "text": "Patient services can explain the existing scheduling permission and guide the patient through the approved process if they want to grant additional access."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "proxy-access-beyond-consent-evidence",
+        "axis": "Evidence",
+        "prompt": "What permission is documented?",
+        "evidenceIds": [
+          "C15-F1",
+          "C15-F2",
+          "C15-F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Help with scheduling by phone, not access to portal documents.",
+            "feedback": "The detailed consent record is narrower than the desk note."
+          },
+          {
+            "id": "b",
+            "text": "Full access to the portal.",
+            "feedback": "No document-access permission is recorded."
+          },
+          {
+            "id": "c",
+            "text": "No permission of any kind.",
+            "feedback": "Scheduling assistance is authorised."
+          }
+        ]
+      },
+      {
+        "id": "proxy-access-beyond-consent-scope",
+        "axis": "Scope",
+        "prompt": "How should the word “proxy” in the desk note be read?",
+        "evidenceIds": [
+          "C15-F1",
+          "C15-F2",
+          "C15-F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Against the specific consent record, not as blanket authority.",
+            "feedback": "The summary omitted the limits."
+          },
+          {
+            "id": "b",
+            "text": "As automatic permission to view all records.",
+            "feedback": "That exceeds the documented scope."
+          },
+          {
+            "id": "c",
+            "text": "As cancellation of the scheduling permission.",
+            "feedback": "The underlying consent remains."
+          }
+        ]
+      },
+      {
+        "id": "proxy-access-beyond-consent-intent",
+        "axis": "Intent",
+        "prompt": "What does Caleb need on the call?",
+        "evidenceIds": [
+          "C15-F4",
+          "C15-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A claim that the family member acted improperly.",
+            "feedback": "They may have relied on the vague note."
+          },
+          {
+            "id": "b",
+            "text": "A clear boundary and a helpful route if the patient wants to expand access.",
+            "feedback": "He can assist without disclosing documents now."
+          },
+          {
+            "id": "c",
+            "text": "The content of the patient’s documents.",
+            "feedback": "The question is about permission, not content."
+          }
+        ]
+      },
+      {
+        "id": "proxy-access-beyond-consent-purpose",
+        "axis": "Purpose",
+        "prompt": "Which response is appropriate?",
+        "evidenceIds": [
+          "C15-F1",
+          "C15-F3",
+          "C15-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send the documents because the caller booked the visit.",
+            "feedback": "Booking does not grant records access."
+          },
+          {
+            "id": "b",
+            "text": "Refuse all future contact with the family member.",
+            "feedback": "The scheduling permission remains valid."
+          },
+          {
+            "id": "c",
+            "text": "Explain that scheduling help is authorised, document access is not recorded, and the patient can request it through the approved process.",
+            "feedback": "It respects the stated consent and remains helpful."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Caleb with call-ready language. Respect the existing scheduling permission, set a firm boundary on document access, and explain how the patient can choose to grant more.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Name the precise authorised activity",
+        "Do not treat a vague note as blanket access",
+        "Avoid sharing document contents",
+        "Offer the patient-controlled permission route"
+      ]
+    },
+    "model": {
+      "subject": "Re: What can we share with the family member?",
+      "body": "Hi Caleb,\n\nThe patient authorised this family member to help schedule and reschedule appointments by phone. The desk note’s “proxy to assist” shorthand is too broad: the detailed record does not include permission to view portal documents. Please do not share or describe those documents on this call. At the same time, we should not tell the caller they have no role at all, because their scheduling assistance is documented.\n\nYou can say: “We can help you with appointment scheduling under the permission we have. Access to portal documents requires a separate authorisation from the patient, and we do not have that recorded. If the patient wants to add it, Patient Services can explain the approved process.” That gives a clear boundary without accusing the caller of doing anything wrong.\n\nI will ask the desk team to replace the vague note with a precise summary of the authorised activity. If the patient contacts us, we can guide them through the access choice; we should not seek or assume consent through the family member alone.\n\nNina",
+      "annotations": [
+        {
+          "label": "Names existing permission",
+          "excerpt": "help schedule and reschedule appointments by phone",
+          "evidenceIds": [
+            "C15-F1"
+          ]
+        },
+        {
+          "label": "Corrects broad shorthand",
+          "excerpt": "the detailed record does not include permission to view portal documents",
+          "evidenceIds": [
+            "C15-F2",
+            "C15-F3"
+          ]
+        },
+        {
+          "label": "Provides call wording",
+          "excerpt": "Access to portal documents requires a separate authorisation",
+          "evidenceIds": [
+            "C15-F3",
+            "C15-F5"
+          ]
+        },
+        {
+          "label": "Prevents recurrence",
+          "excerpt": "replace the vague note with a precise summary",
+          "evidenceIds": [
+            "C15-F2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "reminder-after-cancellation",
+    "title": "The reminder after the cancellation",
+    "area": "Health administration × Notifications",
+    "role": "Hugo · Appointments",
+    "teaser": "A patient receives a reminder for an appointment they cancelled.",
+    "misunderstanding": "A cancellation request was logged before the reminder batch, but the appointment system had not yet confirmed the cancellation.",
+    "email": {
+      "from": "Leah Ford · Reception",
+      "to": "Hugo · Appointments",
+      "sent": "Monday, 12:18",
+      "subject": "Is tomorrow's appointment cancelled?",
+      "body": "Hi Hugo,\n\nA patient says they cancelled tomorrow’s appointment by phone on Friday, but they received a reminder this morning and are worried they will be marked as a no-show. I can see a cancellation request, yet the appointment screen still says Booked. I do not want to give the wrong reassurance. What happened, and what can I tell them before close of business?\n\nLeah"
+    },
+    "document": {
+      "title": "Appointment status trail",
+      "intro": "This record describes administrative status, not the reason for the visit.",
+      "facts": [
+        {
+          "id": "C16-F1",
+          "time": "Fri 15:20",
+          "text": "The patient called reception and requested cancellation of Tuesday’s appointment."
+        },
+        {
+          "id": "C16-F2",
+          "time": "Fri 15:24",
+          "text": "Reception logged the request in a callback queue; the appointment status did not change at that point."
+        },
+        {
+          "id": "C16-F3",
+          "time": "Mon 08:00",
+          "text": "The reminder batch selected appointments still marked Booked and sent a reminder to this patient."
+        },
+        {
+          "id": "C16-F4",
+          "time": "Mon 12:00",
+          "text": "The appointment remains Booked. The cancellation team has not yet processed the request."
+        },
+        {
+          "id": "C16-F5",
+          "time": "Policy",
+          "text": "Reception can escalate the pending request and confirm the final status after the cancellation team updates it. No no-show outcome can be determined from this record."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "reminder-after-cancellation-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the reminder prove?",
+        "evidenceIds": [
+          "C16-F1",
+          "C16-F2",
+          "C16-F3",
+          "C16-F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The patient never called.",
+            "feedback": "The request is logged."
+          },
+          {
+            "id": "b",
+            "text": "The patient will be marked as a no-show.",
+            "feedback": "No such outcome has been determined."
+          },
+          {
+            "id": "c",
+            "text": "The system still listed the appointment as Booked when the batch ran.",
+            "feedback": "It does not erase the earlier cancellation request."
+          }
+        ]
+      },
+      {
+        "id": "reminder-after-cancellation-scope",
+        "axis": "Scope",
+        "prompt": "What is the status right now?",
+        "evidenceIds": [
+          "C16-F2",
+          "C16-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A cancellation request is recorded, but the appointment is still marked Booked.",
+            "feedback": "The two records have not been reconciled."
+          },
+          {
+            "id": "b",
+            "text": "The appointment was rescheduled.",
+            "feedback": "No new date is in the record."
+          },
+          {
+            "id": "c",
+            "text": "The cancellation is fully confirmed.",
+            "feedback": "The cancellation team has not processed it."
+          }
+        ]
+      },
+      {
+        "id": "reminder-after-cancellation-intent",
+        "axis": "Intent",
+        "prompt": "What does Leah need to tell the patient?",
+        "evidenceIds": [
+          "C16-F1",
+          "C16-F3",
+          "C16-F4",
+          "C16-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "They must attend because the reminder arrived.",
+            "feedback": "The patient had already requested cancellation."
+          },
+          {
+            "id": "b",
+            "text": "The request was received, the status is being corrected, and a confirmed update will follow.",
+            "feedback": "This avoids false reassurance and recognises the confusing reminder."
+          },
+          {
+            "id": "c",
+            "text": "They have already been penalised.",
+            "feedback": "No no-show outcome exists."
+          }
+        ]
+      },
+      {
+        "id": "reminder-after-cancellation-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Hugo do before close of business?",
+        "evidenceIds": [
+          "C16-F2",
+          "C16-F4",
+          "C16-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Delete the reminder without changing the appointment.",
+            "feedback": "The underlying status would remain wrong."
+          },
+          {
+            "id": "b",
+            "text": "Escalate the request, verify the updated status, and let Leah give the patient a confirmed answer.",
+            "feedback": "The process must close the gap between request and system status."
+          },
+          {
+            "id": "c",
+            "text": "Promise there can never be a no-show issue.",
+            "feedback": "That cannot be concluded from the current record."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Leah. Explain why the reminder was sent, distinguish a logged request from a completed cancellation, and give a specific path to a confirmed status today.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Acknowledge the patient's original request",
+        "Explain the reminder batch without blaming the patient",
+        "Avoid claiming cancellation is already complete",
+        "Escalate and confirm the final status"
+      ]
+    },
+    "model": {
+      "subject": "Re: Is tomorrow's appointment cancelled?",
+      "body": "Hi Leah,\n\nThe patient did call on Friday to request cancellation, and reception logged that request at 15:24. It was placed in the callback queue rather than applied to the appointment immediately. Because the appointment still showed as Booked when today’s reminder batch ran, the system sent a reminder. That reminder reflects the unresolved system status; it does not mean the patient’s call was ignored or that they must attend.\n\nPlease tell the patient we have their cancellation request and apologise for the confusing reminder. I would not yet say the appointment is formally cancelled or promise an outcome about no-show recording while the screen still says Booked. I am escalating the queued request to the cancellation team now and will verify the updated appointment status with them today.\n\nOnce it is changed, I will send you the confirmation so you can give the patient a definite answer before close of business. If the team finds any obstacle, I will tell you what is confirmed rather than leave the patient waiting without an update.\n\nHugo",
+      "annotations": [
+        {
+          "label": "Acknowledges request",
+          "excerpt": "The patient did call on Friday to request cancellation",
+          "evidenceIds": [
+            "C16-F1",
+            "C16-F2"
+          ]
+        },
+        {
+          "label": "Explains reminder",
+          "excerpt": "the system sent a reminder",
+          "evidenceIds": [
+            "C16-F3",
+            "C16-F4"
+          ]
+        },
+        {
+          "label": "Preserves status uncertainty",
+          "excerpt": "I would not yet say the appointment is formally cancelled",
+          "evidenceIds": [
+            "C16-F4"
+          ]
+        },
+        {
+          "label": "Closes loop",
+          "excerpt": "will verify the updated appointment status with them today",
+          "evidenceIds": [
+            "C16-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "labels-swapped-on-pallets",
+    "title": "Two pallets, swapped labels",
+    "area": "Operations × Warehouse",
+    "role": "Isabel · Warehouse operations",
+    "teaser": "A client has received tracking for the wrong equipment.",
+    "misunderstanding": "The shipping labels were swapped between two packed pallets; barcode scans show dispatch, but contents at each destination are not verified.",
+    "email": {
+      "from": "Rowan Hale · Account delivery",
+      "to": "Isabel · Warehouse operations",
+      "sent": "Thursday, 13:16",
+      "subject": "Did we send Vega the wrong equipment?",
+      "body": "Hi Isabel,\n\nVega received a tracking email describing the equipment ordered by another client. Their installation crew is due tomorrow, and the warehouse dashboard says both pallets shipped. Can I tell Vega the tracking description is just a display mistake, or do we need to stop the deliveries? Please give me an answer I can use before their 3pm planning call.\n\nRowan"
+    },
+    "document": {
+      "title": "Two-pallet dispatch review",
+      "intro": "The warehouse record supports a label swap but not yet the contents of either arriving pallet.",
+      "facts": [
+        {
+          "id": "C17-F1",
+          "time": "Wed 16:00",
+          "text": "Pallet A was packed for Vega with four display units; Pallet B was packed for Orison with six sensor units."
+        },
+        {
+          "id": "C17-F2",
+          "time": "Thu 08:30",
+          "text": "A packing photo shows the printed destination labels beside the wrong pallet IDs before pickup."
+        },
+        {
+          "id": "C17-F3",
+          "time": "Thu 09:00",
+          "text": "Both pallets were collected and scanned under their printed labels."
+        },
+        {
+          "id": "C17-F4",
+          "time": "Thu 12:00",
+          "text": "Carrier tracking shows both shipments in transit. Neither has reached a destination or been opened for content verification."
+        },
+        {
+          "id": "C17-F5",
+          "time": "Current",
+          "text": "The carrier can hold both pallets at its depot pending a destination check. The hold request has not yet been confirmed; delivery tomorrow is therefore uncertain."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "labels-swapped-on-pallets-evidence",
+        "axis": "Evidence",
+        "prompt": "What can Isabel conclude from the photo and scans?",
+        "evidenceIds": [
+          "C17-F1",
+          "C17-F2",
+          "C17-F3",
+          "C17-F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Only a tracking display field is wrong.",
+            "feedback": "The photo suggests physical labels were swapped."
+          },
+          {
+            "id": "b",
+            "text": "Vega has definitely received Orison’s equipment.",
+            "feedback": "Neither pallet has arrived."
+          },
+          {
+            "id": "c",
+            "text": "A label swap is likely, but the contents reaching each client are not yet verified.",
+            "feedback": "Packing and carrier handoff data do not prove final delivery contents."
+          }
+        ]
+      },
+      {
+        "id": "labels-swapped-on-pallets-scope",
+        "axis": "Scope",
+        "prompt": "What is the immediate operational risk?",
+        "evidenceIds": [
+          "C17-F2",
+          "C17-F3",
+          "C17-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The display units were never packed.",
+            "feedback": "The packing record lists them."
+          },
+          {
+            "id": "b",
+            "text": "The carrier has already corrected the destinations.",
+            "feedback": "The hold and check are not confirmed."
+          },
+          {
+            "id": "c",
+            "text": "The pallets may follow the wrong destination labels unless the carrier holds and checks them.",
+            "feedback": "The labels guide delivery routing."
+          }
+        ]
+      },
+      {
+        "id": "labels-swapped-on-pallets-intent",
+        "axis": "Intent",
+        "prompt": "What does Rowan need before 3pm?",
+        "evidenceIds": [
+          "C17-F4",
+          "C17-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A candid risk statement and a carrier decision point for Vega’s installation plan.",
+            "feedback": "The client must not plan on a guaranteed delivery."
+          },
+          {
+            "id": "b",
+            "text": "Assurance that this is only a cosmetic tracking error.",
+            "feedback": "The photo undermines that claim."
+          },
+          {
+            "id": "c",
+            "text": "A promise that both shipments arrive tomorrow.",
+            "feedback": "The potential hold makes that uncertain."
+          }
+        ]
+      },
+      {
+        "id": "labels-swapped-on-pallets-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply best manages the situation?",
+        "evidenceIds": [
+          "C17-F2",
+          "C17-F4",
+          "C17-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tell Rowan to ignore the tracking description.",
+            "feedback": "The physical label evidence needs action."
+          },
+          {
+            "id": "b",
+            "text": "Wait for Vega to open its pallet tomorrow.",
+            "feedback": "That risks an avoidable wrong delivery."
+          },
+          {
+            "id": "c",
+            "text": "Request a hold and content check, tell Rowan what is known, and update Vega before the planning call.",
+            "feedback": "This acts before the wrong delivery while preserving uncertainty."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Rowan. Separate likely label swap from verified contents, explain the carrier hold request, and give a client-safe update without promising tomorrow’s delivery.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "State what is likely and what remains unverified",
+        "Act on the in-transit risk",
+        "Avoid dismissing the issue as cosmetic",
+        "Support Vega’s installation decision"
+      ]
+    },
+    "model": {
+      "subject": "Re: Did we send Vega the wrong equipment?",
+      "body": "Hi Rowan,\n\nThe packing record shows Vega’s four display units and Orison’s six sensor units were prepared on separate pallets. A photo taken before pickup suggests their destination labels were swapped, and both pallets were scanned under those labels. Neither pallet has arrived or been opened, so I cannot yet confirm what equipment each client will receive. This is more than a tracking-display issue, and I am sorry our dispatch check missed it.\n\nI have asked the carrier to hold both pallets at its depot and verify the pallet IDs against the packing record before onward delivery. The hold is not yet confirmed, which means I cannot promise Vega a delivery tomorrow. I will follow up directly with the carrier and send you a verified status before the 3pm planning call.\n\nPlease tell Vega we found a possible label mismatch during transit and are checking the shipments before they reach the wrong destination. They may need a contingency for the installation crew; I will give you the carrier’s confirmed options as soon as I have them.\n\nIsabel",
+      "annotations": [
+        {
+          "label": "Separates inference and fact",
+          "excerpt": "A photo taken before pickup suggests their destination labels were swapped",
+          "evidenceIds": [
+            "C17-F1",
+            "C17-F2"
+          ]
+        },
+        {
+          "label": "Identifies verification gap",
+          "excerpt": "I cannot yet confirm what equipment each client will receive",
+          "evidenceIds": [
+            "C17-F4"
+          ]
+        },
+        {
+          "label": "Acts before delivery",
+          "excerpt": "asked the carrier to hold both pallets at its depot",
+          "evidenceIds": [
+            "C17-F5"
+          ]
+        },
+        {
+          "label": "Protects client planning",
+          "excerpt": "They may need a contingency for the installation crew",
+          "evidenceIds": [
+            "C17-F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "headcount-counted-twice",
+    "title": "Fifty guests, seventy meals",
+    "area": "Operations × Catering",
+    "role": "Mateo · Event operations",
+    "teaser": "A catering order is larger than the event guest list.",
+    "misunderstanding": "Dietary selections were added to the base headcount rather than counted within it; the final vendor order may already be locked.",
+    "email": {
+      "from": "Piper James · Event lead",
+      "to": "Mateo · Event operations",
+      "sent": "Tuesday, 10:38",
+      "subject": "Why did we order seventy meals?",
+      "body": "Hi Mateo,\n\nThe guest list has 50 confirmed attendees, but the caterer’s order says 70 meals. Finance is asking whether we invited more people without approval. I see 20 dietary selections in the form, so I suspect the totals were added together. The vendor cutoff was yesterday. Can you confirm what happened and whether we can correct the order without losing those dietary meals?\n\nPiper"
+    },
+    "document": {
+      "title": "Catering order reconciliation",
+      "intro": "The guest list, meal selections and vendor acceptance need to be reconciled separately.",
+      "facts": [
+        {
+          "id": "C18-F1",
+          "time": "Guest list",
+          "text": "There are 50 confirmed attendees; 20 of those 50 selected a dietary meal."
+        },
+        {
+          "id": "C18-F2",
+          "time": "Order export",
+          "text": "The catering spreadsheet summed 50 standard meals and 20 dietary meals, creating an order of 70."
+        },
+        {
+          "id": "C18-F3",
+          "time": "Mon 17:00",
+          "text": "The vendor received the order before its stated cutoff and sent an automated receipt, not a final acceptance."
+        },
+        {
+          "id": "C18-F4",
+          "time": "Tue 09:30",
+          "text": "The vendor had not yet confirmed whether it could amend the order or how charges would change."
+        },
+        {
+          "id": "C18-F5",
+          "time": "Current",
+          "text": "No additional attendees were invited. Operations has not approved a revised order or a change to dietary quantities."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "headcount-counted-twice-evidence",
+        "axis": "Evidence",
+        "prompt": "What caused the 70-meal figure?",
+        "evidenceIds": [
+          "C18-F1",
+          "C18-F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Twenty extra guests were invited.",
+            "feedback": "The guest list remains at 50."
+          },
+          {
+            "id": "b",
+            "text": "Twenty dietary meals were double-counted on top of the 50 guests.",
+            "feedback": "Those 20 are part of the confirmed guest count."
+          },
+          {
+            "id": "c",
+            "text": "The vendor changed the order unilaterally.",
+            "feedback": "The spreadsheet export created the total."
+          }
+        ]
+      },
+      {
+        "id": "headcount-counted-twice-scope",
+        "axis": "Scope",
+        "prompt": "What does the vendor receipt confirm?",
+        "evidenceIds": [
+          "C18-F3",
+          "C18-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Receipt of the order, not final acceptance or an amendment decision.",
+            "feedback": "The vendor has not answered the correction request."
+          },
+          {
+            "id": "b",
+            "text": "The vendor has already cooked 70 meals.",
+            "feedback": "No preparation status is documented."
+          },
+          {
+            "id": "c",
+            "text": "A free reduction to 50 meals.",
+            "feedback": "Charges and amendment remain unknown."
+          }
+        ]
+      },
+      {
+        "id": "headcount-counted-twice-intent",
+        "axis": "Intent",
+        "prompt": "What does Piper need for Finance and the event?",
+        "evidenceIds": [
+          "C18-F1",
+          "C18-F4",
+          "C18-F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A precise error account and a correction plan that preserves 20 dietary meals.",
+            "feedback": "The financial and guest-service questions must both be handled."
+          },
+          {
+            "id": "b",
+            "text": "Permission to delete all dietary meals.",
+            "feedback": "Those meals are needed by confirmed attendees."
+          },
+          {
+            "id": "c",
+            "text": "A claim that 20 new people registered.",
+            "feedback": "No extra attendees exist."
+          }
+        ]
+      },
+      {
+        "id": "headcount-counted-twice-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Mateo do?",
+        "evidenceIds": [
+          "C18-F2",
+          "C18-F3",
+          "C18-F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leave the 70-meal order unchanged without asking.",
+            "feedback": "An amendment may still be possible."
+          },
+          {
+            "id": "b",
+            "text": "Own the spreadsheet error, ask the vendor to amend to 30 standard plus 20 dietary, and report any cost before approval.",
+            "feedback": "This matches the 50 guests while preserving choices."
+          },
+          {
+            "id": "c",
+            "text": "Change the order to 50 standard meals.",
+            "feedback": "That would remove dietary selections."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Piper. Reconcile guest and meal counts, describe the vendor’s actual status, and propose a correction that preserves dietary needs without promising a free change.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Explain the double count",
+        "Retain all 20 dietary selections",
+        "Separate receipt from acceptance",
+        "Seek cost and approval before final amendment"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why did we order seventy meals?",
+      "body": "Hi Piper,\n\nYou are right about the arithmetic. We have 50 confirmed guests, and 20 of them selected dietary meals. The export added those 20 to a base of 50 standard meals, so we sent an order for 70. We did not invite extra attendees. I should have checked that the meal categories summed to the guest list before the order went out.\n\nThe vendor’s automated receipt confirms it received the file before the cutoff; it does not tell us whether the order is final or what an amendment would cost. I am contacting the vendor now to request 30 standard meals and 20 dietary meals. I will verify the dietary breakdown with the registration list before approving any amended order, and I will bring any charge change to you and Finance first.\n\nFor the event plan, please keep the guest count at 50. I will send you the vendor’s confirmed response today so we can decide whether a correction is possible and what, if anything, needs to change in the budget.\n\nMateo",
+      "annotations": [
+        {
+          "label": "Reconciles counts",
+          "excerpt": "20 of them selected dietary meals",
+          "evidenceIds": [
+            "C18-F1"
+          ]
+        },
+        {
+          "label": "Owns export error",
+          "excerpt": "The export added those 20 to a base of 50 standard meals",
+          "evidenceIds": [
+            "C18-F2"
+          ]
+        },
+        {
+          "label": "Limits vendor claim",
+          "excerpt": "it does not tell us whether the order is final",
+          "evidenceIds": [
+            "C18-F3",
+            "C18-F4"
+          ]
+        },
+        {
+          "label": "Protects guest needs",
+          "excerpt": "request 30 standard meals and 20 dietary meals",
+          "evidenceIds": [
+            "C18-F1",
+            "C18-F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "renewal-email-without-approval",
+    "title": "Renewed by an email template",
+    "area": "Operations × Contracts",
+    "role": "Irene · Account operations",
+    "teaser": "A client receives a renewal confirmation before the contract has been signed.",
+    "misunderstanding": "A billing workflow sent a renewal notice after an internal quote was generated, while the contract required countersignature.",
+    "email": {
+      "from": "Ravi Singh · Account director",
+      "to": "Irene · Account operations",
+      "sent": "Monday, 14:04",
+      "subject": "Is Eastbrook renewed or not?",
+      "body": "Hi Irene,\n\nEastbrook has forwarded an email saying its service renewed for another year. Their procurement team has not signed the amendment and is asking why we claim they committed. Sales created a renewal quote last week, but I thought service would continue only once both sides signed. I need a precise status and a correction before their procurement call tomorrow.\n\nRavi"
+    },
+    "document": {
+      "title": "Eastbrook renewal workflow",
+      "intro": "The quote, automatic notice and contract approval have different meanings.",
+      "facts": [
+        {
+          "id": "C19-F1",
+          "time": "Contract",
+          "text": "The current term ends next month. An annual renewal requires an amendment signed by both parties."
+        },
+        {
+          "id": "C19-F2",
+          "time": "Last Thu",
+          "text": "Sales generated a renewal quote for internal review; it was not sent as an accepted offer."
+        },
+        {
+          "id": "C19-F3",
+          "time": "Last Fri",
+          "text": "A billing automation treated quote generation as a renewal trigger and emailed “Your service has renewed” to Eastbrook."
+        },
+        {
+          "id": "C19-F4",
+          "time": "Mon 13:00",
+          "text": "No signed amendment exists. The current service remains active under the existing term."
+        },
+        {
+          "id": "C19-F5",
+          "time": "Current",
+          "text": "The automation is paused for this account. Procurement has not confirmed whether the erroneous notice affected its review of the proposed amendment."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "renewal-email-without-approval-evidence",
+        "axis": "Evidence",
+        "prompt": "What is Eastbrook’s contract status?",
+        "evidenceIds": [
+          "C19-F1",
+          "C19-F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The current term is active; the proposed annual renewal is unsigned.",
+            "feedback": "The notice cannot substitute for the required amendment."
+          },
+          {
+            "id": "b",
+            "text": "The annual renewal is final because an email was sent.",
+            "feedback": "No countersignature exists."
+          },
+          {
+            "id": "c",
+            "text": "Service ended when procurement questioned the notice.",
+            "feedback": "The current term is still active."
+          }
+        ]
+      },
+      {
+        "id": "renewal-email-without-approval-scope",
+        "axis": "Scope",
+        "prompt": "What did quote generation authorise?",
+        "evidenceIds": [
+          "C19-F2",
+          "C19-F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Termination of the current service.",
+            "feedback": "It did not affect the current term."
+          },
+          {
+            "id": "b",
+            "text": "Internal review of proposed terms, not a renewal notice.",
+            "feedback": "The automation treated a preliminary step as a commitment."
+          },
+          {
+            "id": "c",
+            "text": "Immediate binding renewal.",
+            "feedback": "The contract requires signatures."
+          }
+        ]
+      },
+      {
+        "id": "renewal-email-without-approval-intent",
+        "axis": "Intent",
+        "prompt": "What does Ravi need before the call?",
+        "evidenceIds": [
+          "C19-F3",
+          "C19-F4",
+          "C19-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A claim that procurement already accepted the quote.",
+            "feedback": "No acceptance is recorded."
+          },
+          {
+            "id": "b",
+            "text": "A correction of the false notice and a clear path for the unsigned amendment.",
+            "feedback": "Procurement needs confidence that its decision is still open."
+          },
+          {
+            "id": "c",
+            "text": "A promise of unchanged pricing regardless of negotiation.",
+            "feedback": "The proposed terms are not final."
+          }
+        ]
+      },
+      {
+        "id": "renewal-email-without-approval-purpose",
+        "axis": "Purpose",
+        "prompt": "How should Irene respond?",
+        "evidenceIds": [
+          "C19-F1",
+          "C19-F3",
+          "C19-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask Eastbrook to ignore the email without explanation.",
+            "feedback": "The notice explicitly claimed a commitment."
+          },
+          {
+            "id": "b",
+            "text": "Own the automation error, correct the notice, and keep the procurement decision separate from current service.",
+            "feedback": "This repairs the trust issue without inventing a contract outcome."
+          },
+          {
+            "id": "c",
+            "text": "Send the same renewal message again after the call.",
+            "feedback": "The trigger is wrong and has been paused."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Ravi with a client-safe correction. Distinguish current service from unsigned renewal, own the automated notice, and propose how to reset procurement’s understanding.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "State the unsigned renewal status",
+        "Acknowledge the incorrect notice",
+        "Clarify that the existing term remains active",
+        "Keep procurement’s decision open"
+      ]
+    },
+    "model": {
+      "subject": "Re: Is Eastbrook renewed or not?",
+      "body": "Hi Ravi,\n\nEastbrook’s current service remains active under the existing term, which ends next month. The proposed annual renewal has not been completed: the amendment requires signatures from both sides, and none is on file. Sales generated a quote for internal review, but a billing automation incorrectly treated that step as a renewal trigger and sent the confirmation. I am sorry we presented an unsigned proposal as a decision Eastbrook had made.\n\nI have paused that automation for the account. Before tomorrow’s call, I suggest sending procurement a direct correction: the renewal email was issued in error, it does not record their acceptance, and their review of the proposed amendment is still open. We should also confirm that the existing service continues through its current term so the correction does not sound like a termination notice.\n\nI will prepare the corrected email and a short status chronology for you to review today. I am also checking whether the false notice appeared anywhere else in the account workflow, then we can address any remaining record with procurement transparently.\n\nIrene",
+      "annotations": [
+        {
+          "label": "Distinguishes contract states",
+          "excerpt": "The proposed annual renewal has not been completed",
+          "evidenceIds": [
+            "C19-F1",
+            "C19-F4"
+          ]
+        },
+        {
+          "label": "Owns automation error",
+          "excerpt": "a billing automation incorrectly treated that step as a renewal trigger",
+          "evidenceIds": [
+            "C19-F2",
+            "C19-F3"
+          ]
+        },
+        {
+          "label": "Protects procurement choice",
+          "excerpt": "their review of the proposed amendment is still open",
+          "evidenceIds": [
+            "C19-F5"
+          ]
+        },
+        {
+          "label": "Clarifies continuity",
+          "excerpt": "the existing service continues through its current term",
+          "evidenceIds": [
+            "C19-F1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "speaker-flight-tight-transfer",
+    "title": "Landing before speaking is not a plan",
+    "area": "Operations × Speaker travel",
+    "role": "Wren · Event logistics",
+    "teaser": "An invited speaker’s flight lands on the event day, but the schedule has no transfer margin.",
+    "misunderstanding": "A travel itinerary marked “arrives Wednesday” was treated as adequate for a Wednesday session, ignoring airport transfer and check-in time.",
+    "email": {
+      "from": "Noel Grant · Programme lead",
+      "to": "Wren · Event logistics",
+      "sent": "Monday, 16:12",
+      "subject": "Can we still keep the keynote?",
+      "body": "Hi Wren,\n\nThe speaker itinerary says she lands on Wednesday, so the programme team marked her 11am keynote as confirmed. I have now noticed the flight is due at 09:45, and the airport is not next to the venue. The speaker has already agreed to the schedule and attendees have seen it. Is the plan feasible, and what should I tell her today?\n\nNoel"
+    },
+    "document": {
+      "title": "Speaker travel and session plan",
+      "intro": "The itinerary confirms a scheduled arrival, not arrival at the venue.",
+      "facts": [
+        {
+          "id": "C20-F1",
+          "time": "Itinerary",
+          "text": "The flight is scheduled to land Wednesday at 09:45. It has not yet departed and arrival time is not guaranteed."
+        },
+        {
+          "id": "C20-F2",
+          "time": "Transfer",
+          "text": "The usual airport-to-venue drive is 45–70 minutes after exiting the airport; security, bags and traffic are variable."
+        },
+        {
+          "id": "C20-F3",
+          "time": "Programme",
+          "text": "The keynote begins at 11:00. The speaker needs an on-site sound check before taking the stage."
+        },
+        {
+          "id": "C20-F4",
+          "time": "Current",
+          "text": "No earlier flight, remote connection test, or substitute speaker is confirmed."
+        },
+        {
+          "id": "C20-F5",
+          "time": "Decision",
+          "text": "The programme lead can change the session order after consulting the speaker; Logistics can check travel options and technical feasibility, not commit the speaker to a new format."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "speaker-flight-tight-transfer-evidence",
+        "axis": "Evidence",
+        "prompt": "What does “lands Wednesday” establish?",
+        "evidenceIds": [
+          "C20-F1",
+          "C20-F2",
+          "C20-F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The flight has already arrived.",
+            "feedback": "It has not departed."
+          },
+          {
+            "id": "b",
+            "text": "The speaker will reach the stage by 11:00.",
+            "feedback": "Even an on-time landing leaves very little margin."
+          },
+          {
+            "id": "c",
+            "text": "Only a scheduled airport arrival, not timely arrival for sound check and keynote.",
+            "feedback": "The transfer and preparation time are separate."
+          }
+        ]
+      },
+      {
+        "id": "speaker-flight-tight-transfer-scope",
+        "axis": "Scope",
+        "prompt": "What can Logistics decide on its own?",
+        "evidenceIds": [
+          "C20-F4",
+          "C20-F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Move the speaker to a remote keynote without asking.",
+            "feedback": "The speaker and programme lead have not agreed."
+          },
+          {
+            "id": "b",
+            "text": "Promise a substitute speaker.",
+            "feedback": "None is confirmed."
+          },
+          {
+            "id": "c",
+            "text": "Check earlier travel and remote feasibility, then offer options to the programme lead and speaker.",
+            "feedback": "A programme change needs their agreement."
+          }
+        ]
+      },
+      {
+        "id": "speaker-flight-tight-transfer-intent",
+        "axis": "Intent",
+        "prompt": "What does Noel need to tell the speaker?",
+        "evidenceIds": [
+          "C20-F1",
+          "C20-F3",
+          "C20-F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the keynote has been cancelled.",
+            "feedback": "No such decision has been made."
+          },
+          {
+            "id": "b",
+            "text": "That she caused the problem by choosing the flight.",
+            "feedback": "The programme team treated the itinerary as sufficient."
+          },
+          {
+            "id": "c",
+            "text": "That the transfer makes the current plan fragile and alternatives are being checked with her.",
+            "feedback": "She should not be surprised on event day."
+          }
+        ]
+      },
+      {
+        "id": "speaker-flight-tight-transfer-purpose",
+        "axis": "Purpose",
+        "prompt": "What is the best immediate reply?",
+        "evidenceIds": [
+          "C20-F2",
+          "C20-F3",
+          "C20-F4",
+          "C20-F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Assure attendees the schedule will hold.",
+            "feedback": "Feasibility is not established."
+          },
+          {
+            "id": "b",
+            "text": "Name the risk, check earlier and remote options, and propose a decision point with the speaker today.",
+            "feedback": "This protects the event while respecting her role."
+          },
+          {
+            "id": "c",
+            "text": "Wait for the flight to land on Wednesday.",
+            "feedback": "That leaves no recovery time."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Noel. Explain why the itinerary is not a confirmed arrival plan, set out options to check, and protect the speaker’s agency while preparing a programme decision.",
+      "wordGuide": "About 120–220 words",
+      "criteria": [
+        "Account for transfer and sound-check time",
+        "Do not assert a delay or cancellation prematurely",
+        "Check feasible alternatives before promising them",
+        "Agree a decision with the programme lead and speaker"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we still keep the keynote?",
+      "body": "Hi Noel,\n\nI would not treat the current itinerary as a reliable plan for an 11am keynote. The flight is scheduled to land at 09:45, and the usual drive alone takes 45–70 minutes after the speaker exits the airport. She also needs a sound check. Even if the flight is on time, the margin is too narrow to confirm that she can be on stage at 11:00. This is a planning gap on our side, not a failure by the speaker.\n\nI will check whether an earlier flight is available and whether a remote connection can be tested in time. Neither option is confirmed yet. Could we contact her today, explain the timing honestly, and ask which alternatives she would consider? You can then decide whether to change the session order or format after speaking with her.\n\nI will send you verified travel and technical options by tomorrow morning. Until we have agreed a workable plan, I suggest we keep the keynote on the programme provisionally but stop describing its timing as confirmed in new communications.\n\nWren",
+      "annotations": [
+        {
+          "label": "Quantifies risk",
+          "excerpt": "the usual drive alone takes 45–70 minutes",
+          "evidenceIds": [
+            "C20-F2"
+          ]
+        },
+        {
+          "label": "Keeps status conditional",
+          "excerpt": "Neither option is confirmed yet",
+          "evidenceIds": [
+            "C20-F4"
+          ]
+        },
+        {
+          "label": "Respects speaker agency",
+          "excerpt": "ask which alternatives she would consider",
+          "evidenceIds": [
+            "C20-F5"
+          ]
+        },
+        {
+          "label": "Protects programme accuracy",
+          "excerpt": "stop describing its timing as confirmed",
+          "evidenceIds": [
+            "C20-F3",
+            "C20-F5"
+          ]
+        }
+      ]
+    }
+  }
+]

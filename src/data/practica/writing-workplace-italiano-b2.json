@@ -1,0 +1,3986 @@
+[
+  {
+    "id": "foto-evento-citta-errata",
+    "title": "La foto è giusta, la città no",
+    "area": "Marketing × Eventi",
+    "areaLabel": "Marketing · Eventi",
+    "role": "Elena · comunicazione eventi",
+    "teaser": "Una collega teme che il post annunci una tappa mai organizzata.",
+    "misunderstanding": "La bozza riporta la città del prossimo evento accanto a una foto dell’evento passato.",
+    "email": {
+      "from": "Marta · social media",
+      "to": "Elena · comunicazione eventi",
+      "sent": "martedì, 9:20",
+      "subject": "Post sulla tappa di Firenze",
+      "body": "Ciao Elena, ho visto la bozza del post per Firenze con la foto del pubblico di sabato. Pensavo avessimo fatto già una tappa lì, ma il calendario dice Bologna. Se pubblico così, qualcuno potrebbe chiedere dove si sia svolto l’incontro. Puoi confermarmi quale città dobbiamo indicare e se la foto va tolta? Vorrei chiudere il post prima di pranzo."
+    },
+    "document": {
+      "title": "Calendario e cartella fotografica",
+      "intro": "La bozza è stata assemblata con due materiali di settimane diverse.",
+      "facts": [
+        {
+          "id": "IT1F1",
+          "time": "Sabato",
+          "text": "L’incontro fotografato si è svolto a Bologna; la cartella contiene immagini autorizzate per raccontare quella tappa."
+        },
+        {
+          "id": "IT1F2",
+          "time": "Bozza",
+          "text": "La didascalia dice “Grazie, Firenze” e usa una foto della platea di Bologna."
+        },
+        {
+          "id": "IT1F3",
+          "time": "Calendario",
+          "text": "La tappa di Firenze è prevista per il prossimo venerdì e non si è ancora svolta."
+        },
+        {
+          "id": "IT1F4",
+          "time": "Oggi",
+          "text": "Marta può modificare didascalia e data prima che il post venga programmato."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "foto-evento-citta-errata-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa mostra la fotografia?",
+        "evidenceIds": [
+          "IT1F1",
+          "IT1F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una riunione interna senza uso pubblico.",
+            "feedback": "La cartella autorizza l’uso della foto per raccontare Bologna."
+          },
+          {
+            "id": "b",
+            "text": "Il pubblico di Firenze.",
+            "feedback": "Firenze è la prossima tappa: non esiste ancora una foto di quel pubblico."
+          },
+          {
+            "id": "c",
+            "text": "La platea dell’incontro di Bologna.",
+            "feedback": "La cartella collega la foto alla tappa già svolta a Bologna."
+          }
+        ]
+      },
+      {
+        "id": "foto-evento-citta-errata-scope",
+        "axis": "Scope",
+        "prompt": "Quale parte del post è fuori contesto?",
+        "evidenceIds": [
+          "IT1F2",
+          "IT1F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’intero calendario degli eventi.",
+            "feedback": "Il calendario distingue chiaramente Bologna da Firenze."
+          },
+          {
+            "id": "b",
+            "text": "La didascalia che ringrazia Firenze.",
+            "feedback": "Quella città non corrisponde all’evento fotografato."
+          },
+          {
+            "id": "c",
+            "text": "L’autorizzazione della fotografia.",
+            "feedback": "Il problema documentato è la città indicata, non l’uso della foto."
+          }
+        ]
+      },
+      {
+        "id": "foto-evento-citta-errata-intent",
+        "axis": "Intent",
+        "prompt": "Perché Marta scrive a Elena?",
+        "evidenceIds": [
+          "IT1F2",
+          "IT1F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole cancellare l’evento di Firenze.",
+            "feedback": "Chiede come descrivere la foto, non di modificare il calendario."
+          },
+          {
+            "id": "b",
+            "text": "Vuole correggere il post prima di programmarlo.",
+            "feedback": "La bozza è ancora modificabile e Marta chiede una conferma."
+          },
+          {
+            "id": "c",
+            "text": "Vuole attribuire l’errore al fotografo.",
+            "feedback": "La sua mail non discute chi abbia scattato l’immagine."
+          }
+        ]
+      },
+      {
+        "id": "foto-evento-citta-errata-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual è la risposta utile adesso?",
+        "evidenceIds": [
+          "IT1F1",
+          "IT1F3",
+          "IT1F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pubblicare la bozza e correggerla dopo.",
+            "feedback": "Il post non è ancora programmato e l’errore è già noto."
+          },
+          {
+            "id": "b",
+            "text": "Indicare Bologna per la foto e tenere separato l’annuncio di Firenze.",
+            "feedback": "Così immagine, città e tempistica tornano coerenti."
+          },
+          {
+            "id": "c",
+            "text": "Sostituire il calendario con la didascalia.",
+            "feedback": "Il calendario conferma che Firenze deve ancora arrivare."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Marta. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: La platea dell’incontro di Bologna.",
+        "Delimita l’ambito: La didascalia che ringrazia Firenze.",
+        "Riconosci la richiesta: Vuole correggere il post prima di programmarlo.",
+        "Indica il passo: Indicare Bologna per la foto e tenere separato l’annuncio di Firenze."
+      ]
+    },
+    "model": {
+      "subject": "R: Post sulla tappa di Firenze",
+      "body": "Ciao Marta,\n\nHai ragione a fermarti: la foto ritrae la platea dell’incontro di Bologna di sabato, come indica la cartella fotografica. La didascalia della bozza ha unito per errore quell’immagine al nome della prossima tappa.\n\nPer questo non presenterei la foto come se fosse stata scattata a Firenze. L’incontro fiorentino è previsto per venerdì prossimo; possiamo annunciarlo in un post distinto, usando una grafica senza pubblico già presente.\n\nCapisco la tua preoccupazione per le domande dei partecipanti e per la scadenza di oggi. Hai fatto bene a chiedere conferma prima della programmazione, quando la correzione è ancora semplice per tutti.\n\nTi propongo di cambiare ora la didascalia in un ringraziamento a Bologna e di verificare insieme l’anteprima. Poi preparo una riga separata con data e luogo di Firenze, così puoi programmare entrambi i messaggi con sicurezza.\n\nUn saluto,\nElena",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Hai ragione a fermarti: la foto ritrae la platea dell’incontro di Bologna di sabato, come indica la cartella fotografica.",
+          "evidenceIds": [
+            "IT1F1",
+            "IT1F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Per questo non presenterei la foto come se fosse stata scattata a Firenze.",
+          "evidenceIds": [
+            "IT1F2",
+            "IT1F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco la tua preoccupazione per le domande dei partecipanti e per la scadenza di oggi.",
+          "evidenceIds": [
+            "IT1F2",
+            "IT1F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Ti propongo di cambiare ora la didascalia in un ringraziamento a Bologna e di verificare insieme l’anteprima.",
+          "evidenceIds": [
+            "IT1F1",
+            "IT1F3",
+            "IT1F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sondaggio-clienti-misto",
+    "title": "Chi ha risposto al sondaggio?",
+    "area": "Marketing × Ricerca",
+    "areaLabel": "Marketing · Ricerca",
+    "role": "Paolo · ricerca clienti",
+    "teaser": "Una sintesi attribuisce a tutti gli acquirenti una preferenza emersa da un campione misto.",
+    "misunderstanding": "Le 48 risposte includono visitatori e clienti, ma la slide le chiama “clienti”.",
+    "email": {
+      "from": "Sara · prodotto",
+      "to": "Paolo · ricerca clienti",
+      "sent": "mercoledì, 11:05",
+      "subject": "Dato sul nuovo packaging",
+      "body": "Ciao Paolo, sto preparando la riunione di prodotto e ho letto la tua slide: “Il 70% dei clienti preferisce la confezione piccola”. È un’indicazione forte, quindi vorrei inserirla nella decisione di oggi. Mi dici quanti clienti hanno risposto e se possiamo parlare davvero di preferenza degli acquirenti? Se la frase è precisa, la lascio così."
+    },
+    "document": {
+      "title": "Esportazione del questionario",
+      "intro": "La stessa domanda è stata aperta a due gruppi di persone.",
+      "facts": [
+        {
+          "id": "IT2F1",
+          "time": "Lunedì",
+          "text": "Il link al questionario è stato inviato sia agli acquirenti sia ai visitatori del sito."
+        },
+        {
+          "id": "IT2F2",
+          "time": "Risposte",
+          "text": "Sono arrivate 48 risposte: 20 da acquirenti identificati e 28 da visitatori non acquirenti."
+        },
+        {
+          "id": "IT2F3",
+          "time": "Risultato",
+          "text": "34 persone su 48 hanno selezionato la confezione piccola; il file non contiene una percentuale separata per i 20 acquirenti."
+        },
+        {
+          "id": "IT2F4",
+          "time": "Bozza",
+          "text": "La slide usa la frase “Il 70% dei clienti preferisce la confezione piccola”; Sara può ancora cambiarla prima della riunione."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sondaggio-clienti-misto-evidence",
+        "axis": "Evidence",
+        "prompt": "Da chi provengono le 48 risposte?",
+        "evidenceIds": [
+          "IT2F1",
+          "IT2F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Da acquirenti e visitatori del sito.",
+            "feedback": "Il file distingue 20 acquirenti da 28 visitatori."
+          },
+          {
+            "id": "b",
+            "text": "Solo dagli acquirenti abituali.",
+            "feedback": "Gli acquirenti identificati sono 20, non 48."
+          },
+          {
+            "id": "c",
+            "text": "Solo dai visitatori non acquirenti.",
+            "feedback": "Nel totale figurano anche 20 persone che hanno comprato."
+          }
+        ]
+      },
+      {
+        "id": "sondaggio-clienti-misto-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa si può dire del 70% circa?",
+        "evidenceIds": [
+          "IT2F2",
+          "IT2F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Descrive esattamente i 20 acquirenti.",
+            "feedback": "Il file non separa la loro scelta sulla confezione."
+          },
+          {
+            "id": "b",
+            "text": "Descrive il gruppo misto dei 48 rispondenti.",
+            "feedback": "34 su 48 è circa il 71%, ma non è una quota dei soli acquirenti."
+          },
+          {
+            "id": "c",
+            "text": "Descrive tutti i clienti dell’azienda.",
+            "feedback": "Il dato riguarda soltanto chi ha risposto al link."
+          }
+        ]
+      },
+      {
+        "id": "sondaggio-clienti-misto-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Sara?",
+        "evidenceIds": [
+          "IT2F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una formulazione affidabile per la riunione di oggi.",
+            "feedback": "Chiede quanti clienti hanno risposto prima di conservare la frase."
+          },
+          {
+            "id": "b",
+            "text": "Un modo per eliminare le risposte dei visitatori.",
+            "feedback": "Non chiede di cancellare dati, ma di interpretarli correttamente."
+          },
+          {
+            "id": "c",
+            "text": "Una prova che il packaging piccolo è già approvato.",
+            "feedback": "La decisione deve ancora essere discussa."
+          }
+        ]
+      },
+      {
+        "id": "sondaggio-clienti-misto-purpose",
+        "axis": "Purpose",
+        "prompt": "Come dovrebbe rispondere Paolo?",
+        "evidenceIds": [
+          "IT2F2",
+          "IT2F3",
+          "IT2F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Correggere la frase e proporre una lettura separata dei clienti.",
+            "feedback": "La slide può descrivere i 48 rispondenti mentre si analizzano i 20 acquirenti."
+          },
+          {
+            "id": "b",
+            "text": "Lasciare “clienti” perché la percentuale è vicina a 70.",
+            "feedback": "La vicinanza numerica non risolve la composizione del campione."
+          },
+          {
+            "id": "c",
+            "text": "Dire che nessun risultato del sondaggio è utilizzabile.",
+            "feedback": "La preferenza del gruppo misto resta un dato, se etichettato bene."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Sara. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Da acquirenti e visitatori del sito.",
+        "Delimita l’ambito: Descrive il gruppo misto dei 48 rispondenti.",
+        "Riconosci la richiesta: Una formulazione affidabile per la riunione di oggi.",
+        "Indica il passo: Correggere la frase e proporre una lettura separata dei clienti."
+      ]
+    },
+    "model": {
+      "subject": "R: Dato sul nuovo packaging",
+      "body": "Ciao Sara,\n\nLa tua domanda è giusta: il questionario ha raccolto 48 risposte, ma soltanto 20 provengono da acquirenti identificati. Le altre 28 sono di visitatori del sito, perché il link era aperto a entrambi i gruppi.\n\nI 34 voti per la confezione piccola rappresentano circa il 71% di tutti i rispondenti. Nel file che abbiamo oggi non è indicata la quota dei soli acquirenti, quindi la frase della slide attribuisce il risultato a un gruppo più ristretto del campione reale.\n\nCapisco perché vuoi un dato chiaro prima della riunione: quella frase potrebbe pesare sulla scelta del packaging. Grazie per aver controllato il denominatore; correggerlo ora aiuta il gruppo a discutere lo stesso risultato con un significato preciso.\n\nAggiorno subito la slide in “34 rispondenti su 48 preferiscono la confezione piccola” e aggiungo una nota sulla composizione del campione. Dopo la riunione posso analizzare separatamente i 20 acquirenti e mandarti la tabella, senza presentare oggi una percentuale che non abbiamo.\n\nUn saluto,\nPaolo",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "La tua domanda è giusta: il questionario ha raccolto 48 risposte, ma soltanto 20 provengono da acquirenti identificati.",
+          "evidenceIds": [
+            "IT2F1",
+            "IT2F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "I 34 voti per la confezione piccola rappresentano circa il 71% di tutti i rispondenti.",
+          "evidenceIds": [
+            "IT2F2",
+            "IT2F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco perché vuoi un dato chiaro prima della riunione: quella frase potrebbe pesare sulla scelta del packaging.",
+          "evidenceIds": [
+            "IT2F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Aggiorno subito la slide in “34 rispondenti su 48 preferiscono la confezione piccola” e aggiungo una nota sulla composizione del campione.",
+          "evidenceIds": [
+            "IT2F2",
+            "IT2F3",
+            "IT2F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "spazio-pubblicitario-non-confermato",
+    "title": "Lo spazio è prenotato, la campagna no",
+    "area": "Marketing × Media",
+    "areaLabel": "Marketing · Media",
+    "role": "Giada · pianificazione media",
+    "teaser": "Il reparto vendite annuncia una campagna che aspetta ancora la creatività finale.",
+    "misunderstanding": "La prenotazione dello spazio è stata scambiata per una conferma di pubblicazione.",
+    "email": {
+      "from": "Luca · vendite",
+      "to": "Giada · pianificazione media",
+      "sent": "giovedì, 8:40",
+      "subject": "Campagna di lunedì",
+      "body": "Ciao Giada, ho detto al cliente che il banner partirà lunedì perché abbiamo bloccato lo spazio sul portale. Ora mi chiede uno screenshot da mostrare al suo direttore. Puoi mandarmi la conferma della pubblicazione e l’anteprima definitiva entro oggi? Vorrei evitare di dargli informazioni diverse da quelle già comunicate."
+    },
+    "document": {
+      "title": "Scheda di prenotazione media",
+      "intro": "La scheda distingue la disponibilità dello spazio dai materiali pronti per la messa online.",
+      "facts": [
+        {
+          "id": "IT3F1",
+          "time": "Martedì",
+          "text": "Il portale ha riservato lo spazio per lunedì, con scadenza per inviare il banner definitivo venerdì alle 12."
+        },
+        {
+          "id": "IT3F2",
+          "time": "Mercoledì",
+          "text": "Il cliente ha approvato il testo, ma ha chiesto una modifica al logo nel file grafico."
+        },
+        {
+          "id": "IT3F3",
+          "time": "Stato attuale",
+          "text": "Il file grafico modificato non è ancora arrivato; il portale non ha ricevuto alcun banner definitivo."
+        },
+        {
+          "id": "IT3F4",
+          "time": "Oggi",
+          "text": "Giada può ottenere un’anteprima solo dopo il caricamento del file finale e la conferma del portale."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "spazio-pubblicitario-non-confermato-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è stato confermato finora?",
+        "evidenceIds": [
+          "IT3F1",
+          "IT3F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La disponibilità dello spazio per lunedì.",
+            "feedback": "La prenotazione riguarda lo spazio; il banner finale manca."
+          },
+          {
+            "id": "b",
+            "text": "La pubblicazione del banner.",
+            "feedback": "Il portale non ha ancora ricevuto il materiale definitivo."
+          },
+          {
+            "id": "c",
+            "text": "La modifica del logo completata.",
+            "feedback": "La richiesta è registrata, ma il file aggiornato non è arrivato."
+          }
+        ]
+      },
+      {
+        "id": "spazio-pubblicitario-non-confermato-scope",
+        "axis": "Scope",
+        "prompt": "Quale condizione manca per l’anteprima definitiva?",
+        "evidenceIds": [
+          "IT3F2",
+          "IT3F3",
+          "IT3F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una nuova prenotazione dello spazio.",
+            "feedback": "Lo spazio di lunedì è già riservato."
+          },
+          {
+            "id": "b",
+            "text": "Una nuova approvazione del testo.",
+            "feedback": "Il testo è già stato approvato mercoledì."
+          },
+          {
+            "id": "c",
+            "text": "Il file grafico corretto e caricato.",
+            "feedback": "Senza il file finale il portale non può confermare l’anteprima."
+          }
+        ]
+      },
+      {
+        "id": "spazio-pubblicitario-non-confermato-intent",
+        "axis": "Intent",
+        "prompt": "Perché Luca chiede una conferma oggi?",
+        "evidenceIds": [
+          "IT3F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole dare al cliente un aggiornamento coerente con quanto gli ha detto.",
+            "feedback": "La mail cita la promessa già fatta e la richiesta del direttore."
+          },
+          {
+            "id": "b",
+            "text": "Vuole annullare la campagna.",
+            "feedback": "Non propone alcuna cancellazione della prenotazione."
+          },
+          {
+            "id": "c",
+            "text": "Vuole cambiare portale senza avvisare il cliente.",
+            "feedback": "Chiede informazioni sullo spazio già bloccato."
+          }
+        ]
+      },
+      {
+        "id": "spazio-pubblicitario-non-confermato-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual è il passo più utile?",
+        "evidenceIds": [
+          "IT3F1",
+          "IT3F3",
+          "IT3F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Promettere la messa online senza altre verifiche.",
+            "feedback": "La scheda non documenta il caricamento né la conferma finale."
+          },
+          {
+            "id": "b",
+            "text": "Inviare uno screenshot di una campagna precedente.",
+            "feedback": "Uno screenshot vecchio farebbe sembrare confermato un banner ancora assente."
+          },
+          {
+            "id": "c",
+            "text": "Distinguere la prenotazione dalla pubblicazione e chiedere il file entro la scadenza.",
+            "feedback": "Questa è la condizione concreta per poter ottenere la conferma del portale."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Luca. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: La disponibilità dello spazio per lunedì.",
+        "Delimita l’ambito: Il file grafico corretto e caricato.",
+        "Riconosci la richiesta: Vuole dare al cliente un aggiornamento coerente con quanto gli ha detto.",
+        "Indica il passo: Distinguere la prenotazione dalla pubblicazione e chiedere il file entro la scadenza."
+      ]
+    },
+    "model": {
+      "subject": "R: Campagna di lunedì",
+      "body": "Ciao Luca,\n\nLo spazio per lunedì è stato effettivamente riservato, quindi quella parte del tuo aggiornamento al cliente è corretta. La prenotazione, però, non equivale ancora alla conferma che il banner sarà pubblicato.\n\nIl testo è approvato, mentre il file grafico con il logo modificato non ci è ancora arrivato. Il portale aspetta il banner definitivo entro venerdì alle 12; prima del caricamento non può produrre un’anteprima finale o confermare la pubblicazione.\n\nCapisco il disagio di dover aggiornare il cliente dopo la conversazione di ieri. Possiamo spiegare la situazione come un passaggio operativo ancora aperto, senza suggerire che la prenotazione sia saltata o che ci sia già un problema tecnico.\n\nTi mando subito la scheda che conferma lo spazio riservato. Se puoi sollecitare al cliente il file corretto entro domani mattina, lo carico appena arriva e ti inoltro l’anteprima e l’eventuale conferma del portale; fino ad allora userei “spazio riservato, materiale finale in attesa”.\n\nUn saluto,\nGiada",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Lo spazio per lunedì è stato effettivamente riservato, quindi quella parte del tuo aggiornamento al cliente è corretta.",
+          "evidenceIds": [
+            "IT3F1",
+            "IT3F3"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Il testo è approvato, mentre il file grafico con il logo modificato non ci è ancora arrivato.",
+          "evidenceIds": [
+            "IT3F2",
+            "IT3F3",
+            "IT3F4"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco il disagio di dover aggiornare il cliente dopo la conversazione di ieri.",
+          "evidenceIds": [
+            "IT3F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Ti mando subito la scheda che conferma lo spazio riservato.",
+          "evidenceIds": [
+            "IT3F1",
+            "IT3F3",
+            "IT3F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "logo-sponsor-posizione",
+    "title": "Il logo dove era stato promesso?",
+    "area": "Marketing × Sponsorizzazioni",
+    "areaLabel": "Marketing · Sponsorizzazioni",
+    "role": "Nadia · partnership",
+    "teaser": "Uno sponsor trova il proprio logo in fondo alla pagina, benché la bozza lo mostrasse in alto.",
+    "misunderstanding": "Il mockup iniziale è stato letto come posizione concordata, mentre l’accordo firmato indica il piè di pagina.",
+    "email": {
+      "from": "Franco · relazioni sponsor",
+      "to": "Nadia · partnership",
+      "sent": "venerdì, 10:10",
+      "subject": "Posizione del logo di Aurora",
+      "body": "Ciao Nadia, Aurora mi ha scritto perché il suo logo compare in fondo alla pagina dell’evento. Ricordavo di averlo visto vicino al titolo nel mockup che abbiamo mostrato a marzo. Prima di rispondere vorrei capire se abbiamo spostato il logo senza avvisarli o se la posizione finale era diversa. Puoi controllare l’accordo e dirmi cosa posso offrire?"
+    },
+    "document": {
+      "title": "Mockup e accordo firmato",
+      "intro": "I due file sono stati prodotti in momenti diversi della trattativa.",
+      "facts": [
+        {
+          "id": "IT4F1",
+          "time": "Marzo",
+          "text": "Il mockup preliminare mostrava il logo Aurora vicino al titolo, con la dicitura “posizioni indicative”."
+        },
+        {
+          "id": "IT4F2",
+          "time": "Aprile",
+          "text": "L’accordo firmato assegna ad Aurora il logo nel piè di pagina dell’evento e una menzione nella newsletter."
+        },
+        {
+          "id": "IT4F3",
+          "time": "Pagina online",
+          "text": "Il logo è nel piè di pagina; la newsletter non è ancora stata inviata."
+        },
+        {
+          "id": "IT4F4",
+          "time": "Oggi",
+          "text": "Nadia può proporre una verifica di leggibilità del logo e confermare la data della menzione prevista."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "logo-sponsor-posizione-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale documento fissa la posizione finale?",
+        "evidenceIds": [
+          "IT4F1",
+          "IT4F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’accordo firmato di aprile.",
+            "feedback": "La posizione nel piè di pagina è scritta nell’accordo."
+          },
+          {
+            "id": "b",
+            "text": "Il mockup preliminare di marzo.",
+            "feedback": "Quel file dichiara espressamente indicative le posizioni."
+          },
+          {
+            "id": "c",
+            "text": "La pagina online da sola.",
+            "feedback": "La pagina mostra l’esecuzione, ma l’accordo definisce l’impegno."
+          }
+        ]
+      },
+      {
+        "id": "logo-sponsor-posizione-scope",
+        "axis": "Scope",
+        "prompt": "Quali impegni risultano per Aurora?",
+        "evidenceIds": [
+          "IT4F2",
+          "IT4F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Logo nel piè di pagina e menzione nella newsletter.",
+            "feedback": "Entrambi sono elencati nell’accordo; la menzione deve ancora uscire."
+          },
+          {
+            "id": "b",
+            "text": "Logo vicino al titolo e nessuna newsletter.",
+            "feedback": "La posizione alta appartiene al mockup, non all’accordo."
+          },
+          {
+            "id": "c",
+            "text": "Solo una menzione orale durante l’evento.",
+            "feedback": "L’accordo parla di pagina e newsletter, non di un annuncio orale."
+          }
+        ]
+      },
+      {
+        "id": "logo-sponsor-posizione-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole capire Franco?",
+        "evidenceIds": [
+          "IT4F1",
+          "IT4F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Se il mockup è stato disegnato da un fornitore esterno.",
+            "feedback": "Non cerca l’autore del file, ma il significato della posizione."
+          },
+          {
+            "id": "b",
+            "text": "Se può togliere Aurora dall’elenco sponsor.",
+            "feedback": "La mail non propone di rimuovere il logo."
+          },
+          {
+            "id": "c",
+            "text": "Se la pagina rispetta l’accordo e come rispondere allo sponsor.",
+            "feedback": "Chiede un confronto tra mockup e accordo prima di scrivere ad Aurora."
+          }
+        ]
+      },
+      {
+        "id": "logo-sponsor-posizione-purpose",
+        "axis": "Purpose",
+        "prompt": "Come può intervenire Nadia senza creare nuove promesse?",
+        "evidenceIds": [
+          "IT4F2",
+          "IT4F3",
+          "IT4F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confermare il piè di pagina, controllarne la leggibilità e dare data della newsletter.",
+            "feedback": "Sono azioni coerenti con l’accordo e con lo stato attuale."
+          },
+          {
+            "id": "b",
+            "text": "Promettere subito il logo accanto al titolo.",
+            "feedback": "L’accordo firmato non prevede quella posizione."
+          },
+          {
+            "id": "c",
+            "text": "Dire che la newsletter è già partita.",
+            "feedback": "Il registro indica che il messaggio non è ancora stato inviato."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Franco. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: L’accordo firmato di aprile.",
+        "Delimita l’ambito: Logo nel piè di pagina e menzione nella newsletter.",
+        "Riconosci la richiesta: Se la pagina rispetta l’accordo e come rispondere allo sponsor.",
+        "Indica il passo: Confermare il piè di pagina, controllarne la leggibilità e dare data della newsletter."
+      ]
+    },
+    "model": {
+      "subject": "R: Posizione del logo di Aurora",
+      "body": "Ciao Franco,\n\nHo confrontato i due file: il mockup di marzo mostrava Aurora vicino al titolo, ma riportava “posizioni indicative”. La posizione concordata è quella dell’accordo firmato ad aprile, che indica il piè di pagina.\n\nLa pagina online segue questa indicazione. L’accordo prevede inoltre una menzione nella newsletter, che non è ancora stata inviata; possiamo quindi comunicare allo sponsor sia ciò che è già visibile sia ciò che resta da pubblicare.\n\nCapisco perché tu e Aurora abbiate ricordato l’immagine iniziale: in un mockup il logo in alto colpisce molto. Nella risposta eviterei di presentare la differenza come uno spostamento deciso dopo la firma, perché i documenti non lo mostrano.\n\nControllo oggi dimensioni e leggibilità del logo sul telefono e ti mando uno screenshot aggiornato. Ti confermo anche la data prevista per la newsletter, così puoi rispondere ad Aurora con due elementi concreti e, se necessario, raccogliere un’osservazione sulla resa grafica.\n\nUn saluto,\nNadia",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ho confrontato i due file: il mockup di marzo mostrava Aurora vicino al titolo, ma riportava “posizioni indicative”.",
+          "evidenceIds": [
+            "IT4F1",
+            "IT4F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "La pagina online segue questa indicazione.",
+          "evidenceIds": [
+            "IT4F2",
+            "IT4F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco perché tu e Aurora abbiate ricordato l’immagine iniziale: in un mockup il logo in alto colpisce molto.",
+          "evidenceIds": [
+            "IT4F1",
+            "IT4F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Controllo oggi dimensioni e leggibilità del logo sul telefono e ti mando uno screenshot aggiornato.",
+          "evidenceIds": [
+            "IT4F2",
+            "IT4F3",
+            "IT4F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "flag-test-non-produzione",
+    "title": "Il pulsante che vede solo il team",
+    "area": "Software × Rilasci",
+    "areaLabel": "Software · Rilasci",
+    "role": "Riccardo · prodotto",
+    "teaser": "Una collega pensa che il nuovo pulsante sia già disponibile per tutti.",
+    "misunderstanding": "Uno screenshot dell’ambiente di prova è stato letto come prova del rilascio pubblico.",
+    "email": {
+      "from": "Irene · assistenza clienti",
+      "to": "Riccardo · prodotto",
+      "sent": "lunedì, 14:25",
+      "subject": "Nuovo pulsante nelle impostazioni",
+      "body": "Ciao Riccardo, nel canale del team ho visto lo screenshot del pulsante “Esporta”. Ho già detto a un cliente che può usarlo da oggi, ma non lo trova nel suo account. È un problema del suo profilo oppure la funzione non è ancora attiva? Mi serve una risposta chiara prima di richiamarlo alle 16."
+    },
+    "document": {
+      "title": "Scheda di rilascio",
+      "intro": "Lo screenshot è stato catturato in un ambiente non accessibile ai clienti.",
+      "facts": [
+        {
+          "id": "IT5F1",
+          "time": "Venerdì",
+          "text": "Il pulsante “Esporta” è stato attivato nell’ambiente di prova per il team interno."
+        },
+        {
+          "id": "IT5F2",
+          "time": "Lunedì",
+          "text": "Lo screenshot condiviso nel canale mostra quell’ambiente di prova, riconoscibile dall’etichetta “TEST” in alto."
+        },
+        {
+          "id": "IT5F3",
+          "time": "Piano",
+          "text": "L’attivazione per i clienti è prevista dopo l’ultimo controllo di accessibilità di mercoledì; non è stata ancora confermata."
+        },
+        {
+          "id": "IT5F4",
+          "time": "Adesso",
+          "text": "Il profilo del cliente funziona normalmente e non mostra il pulsante perché la funzione pubblica non è attiva."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "flag-test-non-produzione-evidence",
+        "axis": "Evidence",
+        "prompt": "Dove è disponibile il pulsante oggi?",
+        "evidenceIds": [
+          "IT5F1",
+          "IT5F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nell’ambiente di prova interno.",
+            "feedback": "La scheda e l’etichetta TEST collocano lì lo screenshot."
+          },
+          {
+            "id": "b",
+            "text": "In tutti gli account cliente.",
+            "feedback": "La funzione pubblica non è stata attivata."
+          },
+          {
+            "id": "c",
+            "text": "Solo nel profilo del cliente chiamato da Irene.",
+            "feedback": "Quel profilo non ha il pulsante e funziona normalmente."
+          }
+        ]
+      },
+      {
+        "id": "flag-test-non-produzione-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa si sa della data pubblica?",
+        "evidenceIds": [
+          "IT5F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "È prevista dopo il controllo di mercoledì, senza conferma finale.",
+            "feedback": "La scheda presenta una previsione condizionata al controllo."
+          },
+          {
+            "id": "b",
+            "text": "È stata fissata definitivamente per oggi.",
+            "feedback": "Oggi riguarda solo lo screenshot interno."
+          },
+          {
+            "id": "c",
+            "text": "È stata rinviata a una data ignota per un guasto.",
+            "feedback": "Non è registrato alcun guasto né un rinvio deciso."
+          }
+        ]
+      },
+      {
+        "id": "flag-test-non-produzione-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole risolvere Irene?",
+        "evidenceIds": [
+          "IT5F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La scelta del nome del pulsante.",
+            "feedback": "Non discute l’etichetta “Esporta”."
+          },
+          {
+            "id": "b",
+            "text": "Una promessa fatta al cliente prima della chiamata delle 16.",
+            "feedback": "Chiede se il problema sia nel profilo o nella disponibilità della funzione."
+          },
+          {
+            "id": "c",
+            "text": "Un errore di accesso del team di prova.",
+            "feedback": "Il team interno vede già il pulsante."
+          }
+        ]
+      },
+      {
+        "id": "flag-test-non-produzione-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale messaggio può dare Riccardo?",
+        "evidenceIds": [
+          "IT5F3",
+          "IT5F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiedere al cliente di ricreare il profilo.",
+            "feedback": "Non c’è un problema del profilo da correggere."
+          },
+          {
+            "id": "b",
+            "text": "Il profilo è regolare; il rilascio pubblico attende il controllo finale.",
+            "feedback": "Questa spiegazione distingue la prova dalla disponibilità per clienti."
+          },
+          {
+            "id": "c",
+            "text": "Garantire che la funzione apparirà mercoledì mattina.",
+            "feedback": "Il controllo di mercoledì precede una conferma ancora assente."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Irene. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Nell’ambiente di prova interno.",
+        "Delimita l’ambito: È prevista dopo il controllo di mercoledì, senza conferma finale.",
+        "Riconosci la richiesta: Una promessa fatta al cliente prima della chiamata delle 16.",
+        "Indica il passo: Il profilo è regolare; il rilascio pubblico attende il controllo finale."
+      ]
+    },
+    "model": {
+      "subject": "R: Nuovo pulsante nelle impostazioni",
+      "body": "Ciao Irene,\n\nIl pulsante dello screenshot è reale, ma si trova nell’ambiente di prova del team, indicato dall’etichetta TEST. Non è ancora presente negli account dei clienti, perciò l’assenza nel profilo che hai controllato è prevista.\n\nPer il rilascio pubblico abbiamo in calendario l’ultimo controllo di accessibilità di mercoledì. Solo dopo quel passaggio potremo confermare quando la funzione sarà attiva per i clienti; oggi non abbiamo una data definitiva da promettere.\n\nCapisco che sia scomodo richiamare una persona dopo averle dato un’indicazione diversa. Puoi dirle che l’informazione proveniva da una prova interna e che il suo account funziona normalmente, senza farle perdere tempo con tentativi sul profilo.\n\nTi mando entro le 15 una breve frase per la chiamata e aggiungo un’etichetta più visibile ai prossimi screenshot interni. Dopo il controllo di mercoledì aggiornerò l’assistenza con la data confermata e con le istruzioni da inviare ai clienti.\n\nUn saluto,\nRiccardo",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Il pulsante dello screenshot è reale, ma si trova nell’ambiente di prova del team, indicato dall’etichetta TEST.",
+          "evidenceIds": [
+            "IT5F1",
+            "IT5F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Per il rilascio pubblico abbiamo in calendario l’ultimo controllo di accessibilità di mercoledì.",
+          "evidenceIds": [
+            "IT5F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che sia scomodo richiamare una persona dopo averle dato un’indicazione diversa.",
+          "evidenceIds": [
+            "IT5F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Ti mando entro le 15 una breve frase per la chiamata e aggiungo un’etichetta più visibile ai prossimi screenshot interni.",
+          "evidenceIds": [
+            "IT5F3",
+            "IT5F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "export-fuso-orario",
+    "title": "Un ordine apparentemente scomparso",
+    "area": "Software × Dati",
+    "areaLabel": "Software · Dati",
+    "role": "Alessia · analisi dati",
+    "teaser": "Un ordine del lunedì compare nell’esportazione della domenica.",
+    "misunderstanding": "L’export usa UTC e il cruscotto mostra l’ora italiana.",
+    "email": {
+      "from": "Marco · operations",
+      "to": "Alessia · analisi dati",
+      "sent": "martedì, 10:30",
+      "subject": "Ordine 784 nel file di domenica",
+      "body": "Ciao Alessia, il cliente dice di aver fatto l’ordine 784 lunedì alle 00:20, e nel cruscotto io vedo lo stesso orario. Nel CSV, però, compare tra gli ordini di domenica alle 22:20. Sembra che il sistema abbia spostato l’ordine al giorno prima. Puoi verificare se il file è sbagliato prima che invii i numeri settimanali?"
+    },
+    "document": {
+      "title": "Specifiche dell’esportazione",
+      "intro": "Cruscotto e file mostrano lo stesso istante in due fusi orari.",
+      "facts": [
+        {
+          "id": "IT6F1",
+          "time": "Ordine",
+          "text": "L’ordine 784 è stato registrato una sola volta, lunedì alle 00:20 nell’ora italiana estiva."
+        },
+        {
+          "id": "IT6F2",
+          "time": "CSV",
+          "text": "La colonna temporale del file usa UTC; per lo stesso ordine indica domenica alle 22:20 UTC."
+        },
+        {
+          "id": "IT6F3",
+          "time": "Cruscotto",
+          "text": "L’interfaccia converte il valore UTC nell’ora italiana per chi consulta la pagina."
+        },
+        {
+          "id": "IT6F4",
+          "time": "Report",
+          "text": "Marco raggruppa il CSV per data senza convertire l’orario; il file originale è ancora disponibile."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "export-fuso-orario-evidence",
+        "axis": "Evidence",
+        "prompt": "Quante volte è stato registrato l’ordine 784?",
+        "evidenceIds": [
+          "IT6F1",
+          "IT6F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una volta sola, con due rappresentazioni dell’ora.",
+            "feedback": "I due orari descrivono il medesimo ordine."
+          },
+          {
+            "id": "b",
+            "text": "Due volte, una domenica e una lunedì.",
+            "feedback": "Il registro indica un’unica registrazione."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna: il cruscotto mostra una simulazione.",
+            "feedback": "Il documento conferma la registrazione reale."
+          }
+        ]
+      },
+      {
+        "id": "export-fuso-orario-scope",
+        "axis": "Scope",
+        "prompt": "Perché l’ordine cade in due date diverse?",
+        "evidenceIds": [
+          "IT6F1",
+          "IT6F2",
+          "IT6F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il CSV ha cancellato due ore di dati.",
+            "feedback": "Le due ore sono la differenza di fuso, non dati mancanti."
+          },
+          {
+            "id": "b",
+            "text": "Il cliente ha cambiato la data dell’ordine.",
+            "feedback": "Non risulta una modifica della registrazione."
+          },
+          {
+            "id": "c",
+            "text": "Il CSV usa UTC e il cruscotto l’ora italiana estiva.",
+            "feedback": "La conversione di due ore attraversa la mezzanotte."
+          }
+        ]
+      },
+      {
+        "id": "export-fuso-orario-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa teme Marco?",
+        "evidenceIds": [
+          "IT6F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Di inviare un riepilogo settimanale con il giorno sbagliato.",
+            "feedback": "La sua mail chiede verifica prima di spedire i numeri."
+          },
+          {
+            "id": "b",
+            "text": "Di dover rimborsare un ordine duplicato.",
+            "feedback": "Non parla di addebiti doppi e la registrazione è unica."
+          },
+          {
+            "id": "c",
+            "text": "Di perdere il file originale.",
+            "feedback": "La specifica conferma che il CSV è ancora disponibile."
+          }
+        ]
+      },
+      {
+        "id": "export-fuso-orario-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale correzione serve al report?",
+        "evidenceIds": [
+          "IT6F2",
+          "IT6F3",
+          "IT6F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Eliminare l’ordine 784 dal file.",
+            "feedback": "L’ordine è valido e compare una sola volta."
+          },
+          {
+            "id": "b",
+            "text": "Convertire la colonna UTC in ora italiana prima di raggruppare per data.",
+            "feedback": "Il raggruppamento attuale usa il giorno UTC."
+          },
+          {
+            "id": "c",
+            "text": "Chiedere al cliente di cambiare la ricevuta.",
+            "feedback": "Il problema nasce dalla lettura del CSV, non dalla ricevuta."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Marco. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Una volta sola, con due rappresentazioni dell’ora.",
+        "Delimita l’ambito: Il CSV usa UTC e il cruscotto l’ora italiana estiva.",
+        "Riconosci la richiesta: Di inviare un riepilogo settimanale con il giorno sbagliato.",
+        "Indica il passo: Convertire la colonna UTC in ora italiana prima di raggruppare per data."
+      ]
+    },
+    "model": {
+      "subject": "R: Ordine 784 nel file di domenica",
+      "body": "Ciao Marco,\n\nHo controllato l’ordine 784: è stato registrato una sola volta e l’orario indicato dal cliente coincide con quello del cruscotto. Il file non ha spostato né duplicato l’ordine; mostra lo stesso istante in UTC.\n\nNel CSV la registrazione è domenica alle 22:20 UTC, che corrisponde a lunedì alle 00:20 nell’ora italiana estiva. Il cruscotto effettua questa conversione automaticamente; il riepilogo che stai preparando, invece, raggruppa ancora la data scritta nel file.\n\nCapisco la tua preoccupazione per i numeri settimanali: un ordine vicino alla mezzanotte può finire nella settimana sbagliata se usiamo il giorno UTC. Grazie per aver fermato l’invio e aver indicato un caso preciso da controllare.\n\nConverto ora la colonna temporale in ora italiana e ricreo il riepilogo prima che tu lo mandi. Ti inoltro anche il confronto delle due righe, così potrai spiegare la differenza al cliente senza attribuirla a un ordine mancante.\n\nUn saluto,\nAlessia",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ho controllato l’ordine 784: è stato registrato una sola volta e l’orario indicato dal cliente coincide con quello del cruscotto.",
+          "evidenceIds": [
+            "IT6F1",
+            "IT6F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Nel CSV la registrazione è domenica alle 22:20 UTC, che corrisponde a lunedì alle 00:20 nell’ora italiana estiva.",
+          "evidenceIds": [
+            "IT6F1",
+            "IT6F2",
+            "IT6F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco la tua preoccupazione per i numeri settimanali: un ordine vicino alla mezzanotte può finire nella settimana sbagliata se usiamo il giorno UTC.",
+          "evidenceIds": [
+            "IT6F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Converto ora la colonna temporale in ora italiana e ricreo il riepilogo prima che tu lo mandi.",
+          "evidenceIds": [
+            "IT6F2",
+            "IT6F3",
+            "IT6F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ticket-doppio-stesso-errore",
+    "title": "Due ticket, un solo incidente",
+    "area": "Software × Assistenza",
+    "areaLabel": "Software · Assistenza",
+    "role": "Davide · supporto tecnico",
+    "teaser": "Due segnalazioni sembrano due guasti separati nello stesso pomeriggio.",
+    "misunderstanding": "I due ticket descrivono lo stesso errore da account diversi.",
+    "email": {
+      "from": "Chiara · referente clienti",
+      "to": "Davide · supporto tecnico",
+      "sent": "mercoledì, 16:05",
+      "subject": "Secondo guasto sul pagamento?",
+      "body": "Ciao Davide, ho visto i ticket 251 e 258 aperti oggi per un pagamento non riuscito. Ho già aggiornato il primo cliente, ma se c’è un secondo guasto devo avvisare anche il responsabile di turno. Mi confermi se abbiamo due problemi distinti e quale aggiornamento posso dare a chi ha aperto il ticket 258?"
+    },
+    "document": {
+      "title": "Registro incidenti",
+      "intro": "Il confronto tra i ticket è già stato annotato dal tecnico di turno.",
+      "facts": [
+        {
+          "id": "IT7F1",
+          "time": "14:10",
+          "text": "Il ticket 251 segnala il codice E42 dopo il clic su “Paga”."
+        },
+        {
+          "id": "IT7F2",
+          "time": "14:18",
+          "text": "Il ticket 258 segnala lo stesso codice E42 sulla stessa versione del servizio; riguarda un altro account."
+        },
+        {
+          "id": "IT7F3",
+          "time": "15:00",
+          "text": "Il tecnico collega entrambi i ticket all’incidente INC-19 e registra una sola causa in indagine."
+        },
+        {
+          "id": "IT7F4",
+          "time": "16:00",
+          "text": "Non è ancora disponibile una soluzione; il prossimo aggiornamento dell’incidente è previsto alle 17."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "ticket-doppio-stesso-errore-evidence",
+        "axis": "Evidence",
+        "prompt": "Che relazione c’è tra i ticket?",
+        "evidenceIds": [
+          "IT7F1",
+          "IT7F2",
+          "IT7F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sono duplicati inviati dallo stesso cliente.",
+            "feedback": "Gli account sono diversi, pur condividendo l’errore."
+          },
+          {
+            "id": "b",
+            "text": "Sono collegati allo stesso incidente INC-19.",
+            "feedback": "Il tecnico ha registrato un unico incidente per entrambe le segnalazioni."
+          },
+          {
+            "id": "c",
+            "text": "Sono due guasti con cause già diverse.",
+            "feedback": "La causa è ancora in indagine e i ticket sono stati collegati."
+          }
+        ]
+      },
+      {
+        "id": "ticket-doppio-stesso-errore-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa è noto sulla soluzione?",
+        "evidenceIds": [
+          "IT7F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Riguarda soltanto il ticket 251.",
+            "feedback": "Entrambi i ticket appartengono allo stesso incidente aperto."
+          },
+          {
+            "id": "b",
+            "text": "È già stata applicata alle 15.",
+            "feedback": "Alle 15 il tecnico ha collegato i ticket, non risolto il problema."
+          },
+          {
+            "id": "c",
+            "text": "Non è ancora disponibile; è previsto un aggiornamento alle 17.",
+            "feedback": "Il registro distingue l’aggiornamento dalla soluzione."
+          }
+        ]
+      },
+      {
+        "id": "ticket-doppio-stesso-errore-intent",
+        "axis": "Intent",
+        "prompt": "Perché Chiara chiede conferma?",
+        "evidenceIds": [
+          "IT7F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole cambiare il codice E42.",
+            "feedback": "Il codice è un dato della segnalazione, non una proposta di modifica."
+          },
+          {
+            "id": "b",
+            "text": "Vuole chiudere i ticket senza risposta.",
+            "feedback": "Chiede proprio quale aggiornamento dare al ticket 258."
+          },
+          {
+            "id": "c",
+            "text": "Deve capire se avvisare di un nuovo guasto e rispondere al secondo cliente.",
+            "feedback": "La mail collega la decisione al numero di incidenti."
+          }
+        ]
+      },
+      {
+        "id": "ticket-doppio-stesso-errore-purpose",
+        "axis": "Purpose",
+        "prompt": "Che cosa dovrebbe comunicare Davide?",
+        "evidenceIds": [
+          "IT7F3",
+          "IT7F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Due incidenti risolti e nessun ulteriore contatto.",
+            "feedback": "Il registro non indica né due incidenti né una soluzione."
+          },
+          {
+            "id": "b",
+            "text": "Un solo incidente aperto, entrambi i clienti coinvolti e aggiornamento alle 17.",
+            "feedback": "È il quadro documentato senza inventare una soluzione."
+          },
+          {
+            "id": "c",
+            "text": "Solo il primo cliente deve essere informato.",
+            "feedback": "Anche il ticket 258 appartiene all’incidente e richiede risposta."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Chiara. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Sono collegati allo stesso incidente INC-19.",
+        "Delimita l’ambito: Non è ancora disponibile; è previsto un aggiornamento alle 17.",
+        "Riconosci la richiesta: Deve capire se avvisare di un nuovo guasto e rispondere al secondo cliente.",
+        "Indica il passo: Un solo incidente aperto, entrambi i clienti coinvolti e aggiornamento alle 17."
+      ]
+    },
+    "model": {
+      "subject": "R: Secondo guasto sul pagamento?",
+      "body": "Ciao Chiara,\n\nI ticket 251 e 258 arrivano da due account diversi, ma riportano lo stesso codice E42 sulla stessa versione del servizio. Il tecnico li ha collegati a un unico incidente, INC-19, quindi non abbiamo registrato un secondo guasto distinto.\n\nL’indagine sulla causa è ancora aperta e alle 16 non c’è una soluzione da comunicare. Nel registro è previsto un aggiornamento alle 17, che potrà contenere nuovi elementi ma non va presentato adesso come orario di ripristino.\n\nCapisco perché i due numeri di ticket facciano pensare a due problemi separati, soprattutto mentre devi decidere chi avvisare. Hai fatto bene a verificarlo prima di allargare l’allarme o di dare al secondo cliente una versione diversa.\n\nPuoi rispondere al ticket 258 che la sua segnalazione è inclusa in INC-19 e che riceverà il prossimo aggiornamento alle 17. Ti mando io il testo comune per entrambi i clienti e controllo il registro a quell’ora, così aggiorniamo le risposte insieme.\n\nUn saluto,\nDavide",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "I ticket 251 e 258 arrivano da due account diversi, ma riportano lo stesso codice E42 sulla stessa versione del servizio.",
+          "evidenceIds": [
+            "IT7F1",
+            "IT7F2",
+            "IT7F3"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "L’indagine sulla causa è ancora aperta e alle 16 non c’è una soluzione da comunicare.",
+          "evidenceIds": [
+            "IT7F4"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco perché i due numeri di ticket facciano pensare a due problemi separati, soprattutto mentre devi decidere chi avvisare.",
+          "evidenceIds": [
+            "IT7F3"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Puoi rispondere al ticket 258 che la sua segnalazione è inclusa in INC-19 e che riceverà il prossimo aggiornamento alle 17.",
+          "evidenceIds": [
+            "IT7F3",
+            "IT7F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "build-pronta-traduzione-no",
+    "title": "La versione compilata non è ancora pronta per tutti",
+    "area": "Software × Prodotto",
+    "areaLabel": "Software · Prodotto",
+    "role": "Lorenzo · coordinamento prodotto",
+    "teaser": "Il team commerciale vuole annunciare la nuova schermata mentre manca la revisione italiana.",
+    "misunderstanding": "Il messaggio “build pronta” indica il pacchetto tecnico, non il rilascio comunicabile.",
+    "email": {
+      "from": "Beatrice · commerciale",
+      "to": "Lorenzo · coordinamento prodotto",
+      "sent": "giovedì, 9:00",
+      "subject": "Annuncio nuova schermata",
+      "body": "Ciao Lorenzo, ieri nel canale di sviluppo ho letto “build pronta”. Vorrei quindi scrivere ai clienti italiani che la nuova schermata arriverà domani. Nel video dimostrativo alcuni pulsanti sono ancora in inglese: è solo una registrazione vecchia oppure dobbiamo aspettare? Mi serve sapere quale messaggio posso inviare oggi."
+    },
+    "document": {
+      "title": "Checklist del rilascio",
+      "intro": "La compilazione tecnica è solo una delle condizioni per il messaggio ai clienti.",
+      "facts": [
+        {
+          "id": "IT8F1",
+          "time": "Mercoledì",
+          "text": "Il team tecnico ha completato la build candidata e l’ha messa nell’ambiente interno."
+        },
+        {
+          "id": "IT8F2",
+          "time": "Giovedì",
+          "text": "La revisione dei testi italiani dei pulsanti è ancora in corso; il video mostra la build candidata attuale."
+        },
+        {
+          "id": "IT8F3",
+          "time": "Checklist",
+          "text": "La comunicazione esterna parte dopo la revisione linguistica e una verifica finale, non ancora eseguita."
+        },
+        {
+          "id": "IT8F4",
+          "time": "Oggi",
+          "text": "Lorenzo può inviare a Beatrice un aggiornamento interno dopo la revisione, ma non una data pubblica confermata."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "build-pronta-traduzione-no-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa significa “build pronta” qui?",
+        "evidenceIds": [
+          "IT8F1",
+          "IT8F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La nuova schermata è già per tutti i clienti.",
+            "feedback": "È nell’ambiente interno e manca la verifica finale."
+          },
+          {
+            "id": "b",
+            "text": "Il pacchetto tecnico candidato è disponibile internamente.",
+            "feedback": "La compilazione è completa, ma la checklist ha altri passaggi."
+          },
+          {
+            "id": "c",
+            "text": "Il video dimostrativo è obsoleto.",
+            "feedback": "Il video mostra proprio la build candidata attuale."
+          }
+        ]
+      },
+      {
+        "id": "build-pronta-traduzione-no-scope",
+        "axis": "Scope",
+        "prompt": "Quale parte resta aperta?",
+        "evidenceIds": [
+          "IT8F2",
+          "IT8F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Revisione dei testi italiani e verifica finale.",
+            "feedback": "Entrambe precedono la comunicazione esterna."
+          },
+          {
+            "id": "b",
+            "text": "Compilazione della build candidata.",
+            "feedback": "Il team tecnico l’ha già completata mercoledì."
+          },
+          {
+            "id": "c",
+            "text": "Scelta del pubblico italiano.",
+            "feedback": "La richiesta riguarda i clienti italiani, non la definizione del pubblico."
+          }
+        ]
+      },
+      {
+        "id": "build-pronta-traduzione-no-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vorrebbe fare Beatrice?",
+        "evidenceIds": [
+          "IT8F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pubblicare il video senza revisione.",
+            "feedback": "Usa il video per verificare la traduzione, non ne chiede la pubblicazione."
+          },
+          {
+            "id": "b",
+            "text": "Mandare oggi un annuncio ai clienti con una data.",
+            "feedback": "Chiede quale messaggio può inviare oggi dopo aver letto il canale tecnico."
+          },
+          {
+            "id": "c",
+            "text": "Fermare lo sviluppo della schermata.",
+            "feedback": "Vuole sapere quando comunicarla, non cancellarla."
+          }
+        ]
+      },
+      {
+        "id": "build-pronta-traduzione-no-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta evita una promessa prematura?",
+        "evidenceIds": [
+          "IT8F2",
+          "IT8F3",
+          "IT8F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire che non esiste alcuna build.",
+            "feedback": "La build candidata esiste ed è nell’ambiente interno."
+          },
+          {
+            "id": "b",
+            "text": "Confermare domani come data pubblica.",
+            "feedback": "La checklist non ha ancora superato la revisione né la verifica."
+          },
+          {
+            "id": "c",
+            "text": "Spiegare i controlli aperti e promettere un aggiornamento interno dopo la revisione.",
+            "feedback": "È l’impegno che Lorenzo può mantenere oggi."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Beatrice. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Il pacchetto tecnico candidato è disponibile internamente.",
+        "Delimita l’ambito: Revisione dei testi italiani e verifica finale.",
+        "Riconosci la richiesta: Mandare oggi un annuncio ai clienti con una data.",
+        "Indica il passo: Spiegare i controlli aperti e promettere un aggiornamento interno dopo la revisione."
+      ]
+    },
+    "model": {
+      "subject": "R: Annuncio nuova schermata",
+      "body": "Ciao Beatrice,\n\nLa frase nel canale si riferisce alla build candidata completata ieri e disponibile al team interno. È un progresso reale, ma non significa ancora che la nuova schermata sia pronta per l’annuncio ai clienti.\n\nIl video mostra la versione attuale della build: alcuni pulsanti sono ancora in inglese perché la revisione italiana è in corso. Dopo quella revisione dobbiamo fare anche la verifica finale prevista dalla checklist, prima di confermare una data di rilascio pubblico.\n\nCapisco che tu voglia preparare per tempo il messaggio commerciale e che “build pronta” suoni come un via libera. Mi assumo il compito di usare termini più precisi nei prossimi aggiornamenti, così il team non deve indovinare quale fase abbiamo concluso.\n\nOggi ti chiederei di non inviare ancora una data ai clienti. Appena termina la revisione ti mando uno stato interno con il passaggio successivo; dopo la verifica finale preparo con te l’annuncio e una data che possiamo sostenere.\n\nUn saluto,\nLorenzo",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "La frase nel canale si riferisce alla build candidata completata ieri e disponibile al team interno.",
+          "evidenceIds": [
+            "IT8F1",
+            "IT8F3"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Il video mostra la versione attuale della build: alcuni pulsanti sono ancora in inglese perché la revisione italiana è in corso.",
+          "evidenceIds": [
+            "IT8F2",
+            "IT8F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che tu voglia preparare per tempo il messaggio commerciale e che “build pronta” suoni come un via libera.",
+          "evidenceIds": [
+            "IT8F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Oggi ti chiederei di non inviare ancora una data ai clienti.",
+          "evidenceIds": [
+            "IT8F2",
+            "IT8F3",
+            "IT8F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "scambio-turni-non-approvato",
+    "title": "Lo scambio del turno non è ancora registrato",
+    "area": "People × Turni",
+    "areaLabel": "Personale · Turni",
+    "role": "Valeria · coordinamento turni",
+    "teaser": "Due colleghi si sono accordati tra loro, ma il calendario ufficiale mostra ancora i turni originali.",
+    "misunderstanding": "L’accordo privato è stato interpretato come modifica approvata del turno.",
+    "email": {
+      "from": "Simone · team assistenza",
+      "to": "Valeria · coordinamento turni",
+      "sent": "lunedì, 11:15",
+      "subject": "Turno di sabato",
+      "body": "Ciao Valeria, io e Giulia ci siamo messi d’accordo per scambiarci il turno di sabato: lei coprirebbe la mattina e io il pomeriggio. Nel calendario vedo ancora il contrario e Giulia teme che risulti assente. Pensavo bastasse il nostro accordo. Puoi correggere il calendario e confermarmi chi deve presentarsi alle 9?"
+    },
+    "document": {
+      "title": "Registro dei turni",
+      "intro": "Gli scambi diventano effettivi dopo la verifica del coordinamento.",
+      "facts": [
+        {
+          "id": "IT9F1",
+          "time": "Venerdì",
+          "text": "Simone ha scritto a Giulia in chat proponendo lo scambio e Giulia ha accettato."
+        },
+        {
+          "id": "IT9F2",
+          "time": "Procedura interna",
+          "text": "Il coordinamento verifica la copertura e registra ogni scambio prima che il calendario sia valido."
+        },
+        {
+          "id": "IT9F3",
+          "time": "Calendario",
+          "text": "Per sabato sono ancora registrati Simone al mattino e Giulia al pomeriggio; Valeria non ha ricevuto richiesta nel registro."
+        },
+        {
+          "id": "IT9F4",
+          "time": "Oggi",
+          "text": "Valeria può verificare la copertura entro le 15 e comunicare a entrambi l’esito aggiornando il calendario."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "scambio-turni-non-approvato-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa hanno concordato i due colleghi?",
+        "evidenceIds": [
+          "IT9F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una sostituzione totale di Giulia per sabato.",
+            "feedback": "La proposta riguarda due fasce, non l’intera giornata."
+          },
+          {
+            "id": "b",
+            "text": "Uno scambio tra mattina e pomeriggio.",
+            "feedback": "La chat registra la proposta di Simone e l’accettazione di Giulia."
+          },
+          {
+            "id": "c",
+            "text": "Un giorno di ferie per entrambi.",
+            "feedback": "Non compare alcuna richiesta di ferie."
+          }
+        ]
+      },
+      {
+        "id": "scambio-turni-non-approvato-scope",
+        "axis": "Scope",
+        "prompt": "Quale turno vale finché il registro non cambia?",
+        "evidenceIds": [
+          "IT9F2",
+          "IT9F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Giulia al mattino, Simone al pomeriggio.",
+            "feedback": "È il loro accordo privato, non ancora registrato."
+          },
+          {
+            "id": "b",
+            "text": "Simone al mattino, Giulia al pomeriggio.",
+            "feedback": "Il calendario ufficiale contiene ancora questa assegnazione."
+          },
+          {
+            "id": "c",
+            "text": "Nessun turno per sabato.",
+            "feedback": "Il calendario contiene entrambe le coperture."
+          }
+        ]
+      },
+      {
+        "id": "scambio-turni-non-approvato-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa preoccupa Simone?",
+        "evidenceIds": [
+          "IT9F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che Valeria assegni un turno a un terzo collega.",
+            "feedback": "Non chiede una nuova persona per la copertura."
+          },
+          {
+            "id": "b",
+            "text": "Che il sabato venga cancellato.",
+            "feedback": "La giornata è regolarmente coperta nel calendario."
+          },
+          {
+            "id": "c",
+            "text": "Che Giulia risulti assente e nessuno sappia chi arriva alle 9.",
+            "feedback": "La sua mail lega il dubbio al calendario non aggiornato."
+          }
+        ]
+      },
+      {
+        "id": "scambio-turni-non-approvato-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta può dare Valeria ora?",
+        "evidenceIds": [
+          "IT9F2",
+          "IT9F3",
+          "IT9F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire che la chat ha già cambiato il calendario.",
+            "feedback": "Il registro non contiene ancora la modifica."
+          },
+          {
+            "id": "b",
+            "text": "Spiegare il turno attuale, verificare lo scambio e confermare l’esito entro le 15.",
+            "feedback": "La procedura e la scadenza permettono una risposta verificabile."
+          },
+          {
+            "id": "c",
+            "text": "Promettere che Giulia dovrà arrivare alle 9 senza verifica.",
+            "feedback": "La nuova assegnazione dipende ancora dal controllo della copertura."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Simone. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Uno scambio tra mattina e pomeriggio.",
+        "Delimita l’ambito: Simone al mattino, Giulia al pomeriggio.",
+        "Riconosci la richiesta: Che Giulia risulti assente e nessuno sappia chi arriva alle 9.",
+        "Indica il passo: Spiegare il turno attuale, verificare lo scambio e confermare l’esito entro le 15."
+      ]
+    },
+    "model": {
+      "subject": "R: Turno di sabato",
+      "body": "Ciao Simone,\n\nHo visto la vostra chat: tu e Giulia avete concordato lo scambio tra mattina e pomeriggio di sabato. Grazie per avermelo segnalato prima del turno; l’accordo tra voi è chiaro.\n\nNel calendario, però, risultano ancora tu al mattino e Giulia al pomeriggio. Perché lo scambio diventi effettivo devo prima verificare la copertura e registrarlo; fino a quel momento l’orario ufficiale non è cambiato.\n\nCapisco la preoccupazione di Giulia di risultare assente se si presenta nell’orario concordato in chat. È proprio per evitare due versioni del turno che confermiamo ogni modifica nel registro e la comunichiamo a entrambe le persone.\n\nControllo la copertura entro le 15 e poi aggiorno il calendario o vi spiego che cosa manca. Ti scriverò insieme a Giulia con un’unica conferma: per ora, se dovete organizzarvi, considerate valido il turno che compare nel calendario attuale.\n\nUn saluto,\nValeria",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ho visto la vostra chat: tu e Giulia avete concordato lo scambio tra mattina e pomeriggio di sabato.",
+          "evidenceIds": [
+            "IT9F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Nel calendario, però, risultano ancora tu al mattino e Giulia al pomeriggio.",
+          "evidenceIds": [
+            "IT9F2",
+            "IT9F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco la preoccupazione di Giulia di risultare assente se si presenta nell’orario concordato in chat.",
+          "evidenceIds": [
+            "IT9F3"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Controllo la copertura entro le 15 e poi aggiorno il calendario o vi spiego che cosa manca.",
+          "evidenceIds": [
+            "IT9F2",
+            "IT9F3",
+            "IT9F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "osservatrice-non-valutatrice",
+    "title": "Chi osserva il colloquio?",
+    "area": "People × Selezione",
+    "areaLabel": "Personale · Selezione",
+    "role": "Camilla · selezione",
+    "teaser": "Una collega invitata per osservare teme di dover valutare la candidata.",
+    "misunderstanding": "Un invito al colloquio non equivale a un ruolo nel punteggio finale.",
+    "email": {
+      "from": "Rosa · team prodotto",
+      "to": "Camilla · selezione",
+      "sent": "martedì, 12:00",
+      "subject": "Ruolo nel colloquio di domani",
+      "body": "Ciao Camilla, ho ricevuto l’invito al colloquio con la candidata di domani. Nel calendario compaio accanto ai due valutatori e non trovo alcuna griglia da compilare. Devo preparare domande e dare un punteggio? Vorrei capire bene il mio ruolo, perché non ho seguito le prime fasi della selezione."
+    },
+    "document": {
+      "title": "Piano dei colloqui",
+      "intro": "L’elenco degli invitati include anche persone che assistono per imparare il processo.",
+      "facts": [
+        {
+          "id": "IT10F1",
+          "time": "Lunedì",
+          "text": "Camilla ha invitato Rosa su richiesta del suo responsabile, perché osservi il colloquio e conosca il formato."
+        },
+        {
+          "id": "IT10F2",
+          "time": "Ruoli",
+          "text": "I due valutatori designati sono Camilla e Pietro; solo loro compilano la griglia e decidono il punteggio."
+        },
+        {
+          "id": "IT10F3",
+          "time": "Calendario",
+          "text": "L’invito mostra tutti i presenti senza distinguere visivamente i ruoli."
+        },
+        {
+          "id": "IT10F4",
+          "time": "Domani",
+          "text": "Rosa può porre una domanda di chiarimento concordata prima, ma non è richiesta una preparazione valutativa."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "osservatrice-non-valutatrice-evidence",
+        "axis": "Evidence",
+        "prompt": "Perché Rosa è stata invitata?",
+        "evidenceIds": [
+          "IT10F1"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Per condurre da sola il colloquio.",
+            "feedback": "Il piano assegna la valutazione a Camilla e Pietro."
+          },
+          {
+            "id": "b",
+            "text": "Per sostituire Pietro come valutatrice.",
+            "feedback": "Pietro resta uno dei due valutatori designati."
+          },
+          {
+            "id": "c",
+            "text": "Per osservare il formato del colloquio.",
+            "feedback": "La richiesta del responsabile riguarda l’osservazione."
+          }
+        ]
+      },
+      {
+        "id": "osservatrice-non-valutatrice-scope",
+        "axis": "Scope",
+        "prompt": "Chi attribuisce il punteggio?",
+        "evidenceIds": [
+          "IT10F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rosa e il suo responsabile.",
+            "feedback": "Nessuno dei due è indicato come valutatore."
+          },
+          {
+            "id": "b",
+            "text": "Tutti gli invitati al calendario.",
+            "feedback": "L’invito elenca i presenti ma non assegna ruoli."
+          },
+          {
+            "id": "c",
+            "text": "Camilla e Pietro.",
+            "feedback": "Il piano nomina solo loro per la griglia e la decisione."
+          }
+        ]
+      },
+      {
+        "id": "osservatrice-non-valutatrice-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa sta cercando di evitare Rosa?",
+        "evidenceIds": [
+          "IT10F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leggere la griglia di Pietro.",
+            "feedback": "Non chiede accesso al punteggio altrui."
+          },
+          {
+            "id": "b",
+            "text": "Partecipare a qualunque colloquio.",
+            "feedback": "Non rifiuta la presenza, vuole capire come contribuire."
+          },
+          {
+            "id": "c",
+            "text": "Arrivare impreparata a un compito che crede assegnato.",
+            "feedback": "La mail chiede se servano domande e punteggio."
+          }
+        ]
+      },
+      {
+        "id": "osservatrice-non-valutatrice-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual è una risposta utile?",
+        "evidenceIds": [
+          "IT10F1",
+          "IT10F2",
+          "IT10F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiarire l’osservazione e offrire di concordare una domanda breve.",
+            "feedback": "Rispetta il piano e permette a Rosa di partecipare con sicurezza."
+          },
+          {
+            "id": "b",
+            "text": "Mandarle la griglia da compilare.",
+            "feedback": "La griglia è riservata ai due valutatori nominati."
+          },
+          {
+            "id": "c",
+            "text": "Toglierla dall’invito senza spiegarle nulla.",
+            "feedback": "La sua presenza è prevista e il dubbio nasce dalla visualizzazione del calendario."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Rosa. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Per osservare il formato del colloquio.",
+        "Delimita l’ambito: Camilla e Pietro.",
+        "Riconosci la richiesta: Arrivare impreparata a un compito che crede assegnato.",
+        "Indica il passo: Chiarire l’osservazione e offrire di concordare una domanda breve."
+      ]
+    },
+    "model": {
+      "subject": "R: Ruolo nel colloquio di domani",
+      "body": "Ciao Rosa,\n\nTi ho invitata perché il tuo responsabile ha chiesto che tu osservi un colloquio e conosca il formato. La presenza nel calendario non ti assegna automaticamente un ruolo di valutazione.\n\nPer questa candidata i valutatori sono Pietro e io: soltanto noi compileremo la griglia e attribuiremo il punteggio. L’invito mostra tutti i partecipanti nello stesso modo, quindi capisco perché il tuo ruolo non fosse evidente.\n\nApprezzo che tu abbia chiesto prima di preparare domande o una valutazione senza avere seguito le prime fasi. Puoi partecipare ascoltando il colloquio; non ti chiederemo un giudizio sulla candidata né una griglia compilata dopo.\n\nSe ti fa piacere porre una breve domanda di chiarimento, scrivimela oggi e concordiamo insieme il momento adatto. Aggiorno inoltre la descrizione dell’invito con i ruoli, così domani tutti sapremo chi conduce, chi valuta e chi osserva.\n\nUn saluto,\nCamilla",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ti ho invitata perché il tuo responsabile ha chiesto che tu osservi un colloquio e conosca il formato.",
+          "evidenceIds": [
+            "IT10F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Per questa candidata i valutatori sono Pietro e io: soltanto noi compileremo la griglia e attribuiremo il punteggio.",
+          "evidenceIds": [
+            "IT10F2"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Apprezzo che tu abbia chiesto prima di preparare domande o una valutazione senza avere seguito le prime fasi.",
+          "evidenceIds": [
+            "IT10F3"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Se ti fa piacere porre una breve domanda di chiarimento, scrivimela oggi e concordiamo insieme il momento adatto.",
+          "evidenceIds": [
+            "IT10F1",
+            "IT10F2",
+            "IT10F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "due-giorni-remoto-non-fissi",
+    "title": "Due giorni possibili, non prenotati",
+    "area": "People × Organizzazione",
+    "areaLabel": "Personale · Organizzazione",
+    "role": "Federica · risorse umane",
+    "teaser": "Una nuova collega ha organizzato la settimana contando su due giorni fissi da casa.",
+    "misunderstanding": "L’espressione “fino a due giorni” è stata letta come due giorni garantiti ogni settimana.",
+    "email": {
+      "from": "Laura · nuova collega",
+      "to": "Federica · risorse umane",
+      "sent": "mercoledì, 8:50",
+      "subject": "Giorni da remoto nella prima settimana",
+      "body": "Ciao Federica, nella descrizione del ruolo ho letto che si lavora da remoto fino a due giorni a settimana. Ho quindi prenotato un appuntamento personale martedì e pensavo di lavorare da casa anche giovedì. Il calendario di inserimento, però, mi mette in sede entrambi i giorni. Posso considerare validi i due giorni da remoto o devo cambiare i miei piani?"
+    },
+    "document": {
+      "title": "Descrizione del ruolo e piano di inserimento",
+      "intro": "La flessibilità ordinaria non sostituisce gli incontri programmati nella prima settimana.",
+      "facts": [
+        {
+          "id": "IT11F1",
+          "time": "Offerta",
+          "text": "La descrizione del ruolo prevede lavoro da remoto fino a due giorni per settimana, concordati con il responsabile."
+        },
+        {
+          "id": "IT11F2",
+          "time": "Prima settimana",
+          "text": "Il piano di inserimento fissa incontri in presenza martedì e giovedì; è stato inviato a Laura lunedì."
+        },
+        {
+          "id": "IT11F3",
+          "time": "Registro",
+          "text": "Laura non ha ancora concordato giorni da remoto con il responsabile."
+        },
+        {
+          "id": "IT11F4",
+          "time": "Oggi",
+          "text": "Il responsabile può valutare uno spostamento dell’incontro di martedì se Laura indica l’orario dell’appuntamento."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "due-giorni-remoto-non-fissi-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa dice la descrizione del ruolo?",
+        "evidenceIds": [
+          "IT11F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fino a due giorni da remoto, concordati con il responsabile.",
+            "feedback": "La formula pone un limite massimo e richiede un accordo."
+          },
+          {
+            "id": "b",
+            "text": "Due giorni fissi ogni settimana.",
+            "feedback": "Nell’offerta non compaiono giorni garantiti né assegnati."
+          },
+          {
+            "id": "c",
+            "text": "Nessun lavoro da remoto nei mesi iniziali.",
+            "feedback": "La descrizione prevede la possibilità anche se va concordata."
+          }
+        ]
+      },
+      {
+        "id": "due-giorni-remoto-non-fissi-scope",
+        "axis": "Scope",
+        "prompt": "Quali giorni sono oggi previsti in sede?",
+        "evidenceIds": [
+          "IT11F2",
+          "IT11F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nessuno dei due giorni.",
+            "feedback": "Il piano di inserimento richiede la presenza in entrambi."
+          },
+          {
+            "id": "b",
+            "text": "Solo giovedì, perché martedì è già remoto.",
+            "feedback": "Non c’è alcun accordo registrato per martedì."
+          },
+          {
+            "id": "c",
+            "text": "Martedì e giovedì della prima settimana.",
+            "feedback": "Sono gli incontri fissati nel piano inviato a Laura."
+          }
+        ]
+      },
+      {
+        "id": "due-giorni-remoto-non-fissi-intent",
+        "axis": "Intent",
+        "prompt": "Perché Laura scrive?",
+        "evidenceIds": [
+          "IT11F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole annullare l’intero inserimento.",
+            "feedback": "La mail riguarda martedì e giovedì, non il percorso completo."
+          },
+          {
+            "id": "b",
+            "text": "Vuole rinunciare al lavoro da remoto per sempre.",
+            "feedback": "Chiede di due giorni concreti, non di eliminare la flessibilità."
+          },
+          {
+            "id": "c",
+            "text": "Deve capire se può mantenere un appuntamento personale senza mancare agli incontri.",
+            "feedback": "Chiede quale piano usare per organizzare la settimana."
+          }
+        ]
+      },
+      {
+        "id": "due-giorni-remoto-non-fissi-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è proporzionata?",
+        "evidenceIds": [
+          "IT11F1",
+          "IT11F2",
+          "IT11F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire che l’appuntamento personale non conta e chiudere il caso.",
+            "feedback": "La verifica dello spostamento è ancora possibile."
+          },
+          {
+            "id": "b",
+            "text": "Garantire martedì e giovedì da remoto senza consultare nessuno.",
+            "feedback": "Il piano e la regola richiedono un accordo con il responsabile."
+          },
+          {
+            "id": "c",
+            "text": "Spiegare la regola e verificare se l’incontro di martedì si può spostare.",
+            "feedback": "Il responsabile può valutare una soluzione circoscritta."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Laura. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Fino a due giorni da remoto, concordati con il responsabile.",
+        "Delimita l’ambito: Martedì e giovedì della prima settimana.",
+        "Riconosci la richiesta: Deve capire se può mantenere un appuntamento personale senza mancare agli incontri.",
+        "Indica il passo: Spiegare la regola e verificare se l’incontro di martedì si può spostare."
+      ]
+    },
+    "model": {
+      "subject": "R: Giorni da remoto nella prima settimana",
+      "body": "Ciao Laura,\n\nLa frase nell’offerta prevede la possibilità di lavorare da remoto fino a due giorni a settimana, da concordare con il responsabile. Capisco che tu l’abbia letta pensando a due giorni disponibili già dalla prima settimana.\n\nNel piano di inserimento, però, martedì e giovedì sono previsti incontri in sede. Al momento non risultano giorni da remoto concordati per quella settimana, quindi il calendario che hai ricevuto resta la versione valida finché non cambiamo insieme gli appuntamenti.\n\nMi spiace che questa differenza emerga dopo che hai prenotato un impegno personale. È utile che tu me l’abbia scritto subito: possiamo verificare una soluzione per martedì senza far saltare le occasioni di incontro con il team.\n\nSe mi dici a che ora hai l’appuntamento, chiedo oggi al responsabile se possiamo spostare l’incontro di martedì o organizzarlo in modo diverso. Ti confermeremo poi per iscritto gli orari della prima settimana e concorderemo i futuri giorni da remoto con più anticipo.\n\nUn saluto,\nFederica",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "La frase nell’offerta prevede la possibilità di lavorare da remoto fino a due giorni a settimana, da concordare con il responsabile.",
+          "evidenceIds": [
+            "IT11F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Nel piano di inserimento, però, martedì e giovedì sono previsti incontri in sede.",
+          "evidenceIds": [
+            "IT11F2",
+            "IT11F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Mi spiace che questa differenza emerga dopo che hai prenotato un impegno personale.",
+          "evidenceIds": [
+            "IT11F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Se mi dici a che ora hai l’appuntamento, chiedo oggi al responsabile se possiamo spostare l’incontro di martedì o organizzarlo in modo diverso.",
+          "evidenceIds": [
+            "IT11F1",
+            "IT11F2",
+            "IT11F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sondaggio-anonimo-risposte-singole",
+    "title": "Il sondaggio non mostra chi ha scritto cosa",
+    "area": "People × Clima",
+    "areaLabel": "Personale · Clima",
+    "role": "Michele · risorse umane",
+    "teaser": "Un responsabile chiede di parlare con chi ha lasciato un commento critico nel sondaggio.",
+    "misunderstanding": "Il riepilogo del sondaggio è aggregato e anonimo; non identifica l’autore del commento.",
+    "email": {
+      "from": "Claudia · responsabile team",
+      "to": "Michele · risorse umane",
+      "sent": "giovedì, 15:10",
+      "subject": "Commento sul carico di lavoro",
+      "body": "Ciao Michele, nel riepilogo del sondaggio vedo il commento “le priorità cambiano troppo spesso”. Vorrei capire meglio il caso e parlare direttamente con la persona che l’ha scritto, così posso risolvere la situazione. Mi puoi dire a chi appartiene la risposta oppure mandarmi il file con i nomi? Non voglio ignorare il problema."
+    },
+    "document": {
+      "title": "Impostazioni del sondaggio",
+      "intro": "La raccolta è stata progettata per ricevere osservazioni senza associare nomi.",
+      "facts": [
+        {
+          "id": "IT12F1",
+          "time": "Configurazione",
+          "text": "Il modulo non ha chiesto nome, indirizzo email o identificativo del dipendente."
+        },
+        {
+          "id": "IT12F2",
+          "time": "Riepilogo",
+          "text": "I commenti sono stati esportati senza dati di origine; il file mostra solo testo e reparto."
+        },
+        {
+          "id": "IT12F3",
+          "time": "Risultato",
+          "text": "Nel reparto di Claudia sono presenti tre commenti sul cambiamento delle priorità, compreso quello citato."
+        },
+        {
+          "id": "IT12F4",
+          "time": "Prossimo passo",
+          "text": "Michele può organizzare un confronto aperto sulle priorità e invitare chi desidera a parlarne volontariamente."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sondaggio-anonimo-risposte-singole-evidence",
+        "axis": "Evidence",
+        "prompt": "Il file consente di identificare l’autore?",
+        "evidenceIds": [
+          "IT12F1",
+          "IT12F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sì, basta chiedere il file originale.",
+            "feedback": "Anche il file esportato manca di dati di origine."
+          },
+          {
+            "id": "b",
+            "text": "No, contiene testo e reparto ma nessun identificativo.",
+            "feedback": "La configurazione e l’esportazione non raccolgono nomi."
+          },
+          {
+            "id": "c",
+            "text": "Sì, il responsabile vede il nome nel riepilogo.",
+            "feedback": "Il riepilogo mostra commenti aggregati senza nomi."
+          }
+        ]
+      },
+      {
+        "id": "sondaggio-anonimo-risposte-singole-scope",
+        "axis": "Scope",
+        "prompt": "Quanto è ampio il segnale nel reparto?",
+        "evidenceIds": [
+          "IT12F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un solo commento è stato ricevuto.",
+            "feedback": "Il commento citato è uno di tre sullo stesso punto."
+          },
+          {
+            "id": "b",
+            "text": "Tre commenti parlano del cambiamento delle priorità.",
+            "feedback": "Il documento conta tre osservazioni sul tema."
+          },
+          {
+            "id": "c",
+            "text": "Tutto il reparto ha scritto la stessa frase.",
+            "feedback": "Non è registrata una risposta di ogni persona del reparto."
+          }
+        ]
+      },
+      {
+        "id": "sondaggio-anonimo-risposte-singole-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Claudia?",
+        "evidenceIds": [
+          "IT12F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Capire il problema e affrontarlo con chi lo vive.",
+            "feedback": "La mail chiede un contatto diretto perché non vuole ignorare il tema."
+          },
+          {
+            "id": "b",
+            "text": "Eliminare il commento dal riepilogo.",
+            "feedback": "Chiede di capirlo, non di rimuoverlo."
+          },
+          {
+            "id": "c",
+            "text": "Punire chi ha compilato il sondaggio.",
+            "feedback": "Non formula una richiesta disciplinare."
+          }
+        ]
+      },
+      {
+        "id": "sondaggio-anonimo-risposte-singole-purpose",
+        "axis": "Purpose",
+        "prompt": "Come può aiutarla Michele?",
+        "evidenceIds": [
+          "IT12F1",
+          "IT12F3",
+          "IT12F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Condividere il tema aggregato e proporre un confronto aperto.",
+            "feedback": "La discussione può partire dai tre commenti senza fingere di conoscere gli autori."
+          },
+          {
+            "id": "b",
+            "text": "Inventare un nome probabile sulla base del reparto.",
+            "feedback": "Il file non contiene elementi per attribuire il testo a una persona."
+          },
+          {
+            "id": "c",
+            "text": "Ignorare il tema perché non si sa chi ha scritto.",
+            "feedback": "Tre commenti offrono un motivo concreto per discuterne."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Claudia. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: No, contiene testo e reparto ma nessun identificativo.",
+        "Delimita l’ambito: Tre commenti parlano del cambiamento delle priorità.",
+        "Riconosci la richiesta: Capire il problema e affrontarlo con chi lo vive.",
+        "Indica il passo: Condividere il tema aggregato e proporre un confronto aperto."
+      ]
+    },
+    "model": {
+      "subject": "R: Commento sul carico di lavoro",
+      "body": "Ciao Claudia,\n\nCapisco il desiderio di parlare con la persona che ha scritto quel commento. Il modulo, però, non ha raccolto nomi o indirizzi email, e il riepilogo contiene soltanto il testo e il reparto: non possiamo identificare l’autore.\n\nNel tuo reparto il tema non emerge da una sola risposta: tre commenti parlano di priorità che cambiano spesso. Possiamo quindi trattarlo come un segnale del gruppo, senza attribuire una frase specifica a qualcuno che non sappiamo riconoscere.\n\nApprezzo che tu voglia approfondire invece di lasciare il commento senza seguito. Un colloquio individuale avrebbe senso se una persona scegliesse spontaneamente di raccontare il proprio caso, ma non sarebbe corretto presentare un nome come risultato del sondaggio.\n\nTi propongo di dedicare quindici minuti della prossima riunione a come vengono comunicate le priorità e di raccogliere esempi concreti. Preparo io due domande aperte; chi desidera parlare in privato potrà farlo, mentre il gruppo avrà comunque una risposta visibile al tema emerso.\n\nUn saluto,\nMichele",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Capisco il desiderio di parlare con la persona che ha scritto quel commento.",
+          "evidenceIds": [
+            "IT12F1",
+            "IT12F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Nel tuo reparto il tema non emerge da una sola risposta: tre commenti parlano di priorità che cambiano spesso.",
+          "evidenceIds": [
+            "IT12F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Apprezzo che tu voglia approfondire invece di lasciare il commento senza seguito.",
+          "evidenceIds": [
+            "IT12F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Ti propongo di dedicare quindici minuti della prossima riunione a come vengono comunicate le priorità e di raccogliere esempi concreti.",
+          "evidenceIds": [
+            "IT12F1",
+            "IT12F3",
+            "IT12F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "impegnativa-ricevuta-non-prenotata",
+    "title": "Documento ricevuto, appuntamento da fissare",
+    "area": "Health administration × Prenotazioni",
+    "areaLabel": "Amministrazione sanitaria · Prenotazioni",
+    "role": "Silvia · segreteria ambulatoriale",
+    "teaser": "Un paziente crede che l’invio dell’impegnativa abbia riservato una visita.",
+    "misunderstanding": "La ricezione del documento è un passaggio amministrativo precedente alla scelta di data e orario.",
+    "email": {
+      "from": "Andrea · sportello",
+      "to": "Silvia · segreteria ambulatoriale",
+      "sent": "lunedì, 9:30",
+      "subject": "Visita del signor Riva",
+      "body": "Ciao Silvia, il signor Riva ha chiamato dicendo di aver inviato venerdì l’impegnativa e di presentarsi domani mattina per la visita. Nel sistema io vedo il documento ma nessun orario. Gli ho chiesto di attendere una conferma, ma è convinto che l’invio basti. Puoi controllare che cosa risulta e dirmi cosa comunicargli oggi?"
+    },
+    "document": {
+      "title": "Registro delle prenotazioni",
+      "intro": "Il registro separa la ricezione dei documenti dall’assegnazione dello slot.",
+      "facts": [
+        {
+          "id": "IT13F1",
+          "time": "Venerdì",
+          "text": "L’impegnativa del signor Riva è arrivata ed è stata associata alla sua scheda."
+        },
+        {
+          "id": "IT13F2",
+          "time": "Registro",
+          "text": "Nella scheda non compare ancora alcuna data o fascia oraria di visita."
+        },
+        {
+          "id": "IT13F3",
+          "time": "Procedura",
+          "text": "Dopo la verifica del documento, la segreteria propone uno slot e lo conferma al paziente per telefono o messaggio."
+        },
+        {
+          "id": "IT13F4",
+          "time": "Oggi",
+          "text": "Silvia può richiamare il paziente e offrirgli due slot disponibili per la settimana successiva."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "impegnativa-ricevuta-non-prenotata-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è avvenuto venerdì?",
+        "evidenceIds": [
+          "IT13F1"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "È stata svolta la visita.",
+            "feedback": "La richiesta è ancora in fase di prenotazione."
+          },
+          {
+            "id": "b",
+            "text": "È stata confermata la visita di domani.",
+            "feedback": "Il registro non contiene un orario per domani."
+          },
+          {
+            "id": "c",
+            "text": "È stata ricevuta l’impegnativa.",
+            "feedback": "Il documento è associato alla scheda del paziente."
+          }
+        ]
+      },
+      {
+        "id": "impegnativa-ricevuta-non-prenotata-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa manca per avere un appuntamento?",
+        "evidenceIds": [
+          "IT13F2",
+          "IT13F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una seconda copia dello stesso documento.",
+            "feedback": "Il documento è già presente nella scheda."
+          },
+          {
+            "id": "b",
+            "text": "La scelta e la conferma di uno slot.",
+            "feedback": "La procedura richiede un orario comunicato al paziente."
+          },
+          {
+            "id": "c",
+            "text": "La cancellazione della scheda esistente.",
+            "feedback": "La scheda è il luogo in cui registrare lo slot, non un ostacolo."
+          }
+        ]
+      },
+      {
+        "id": "impegnativa-ricevuta-non-prenotata-intent",
+        "axis": "Intent",
+        "prompt": "Perché Andrea scrive?",
+        "evidenceIds": [
+          "IT13F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole cambiare la data di una visita già fissata.",
+            "feedback": "Nessuna data compare nel sistema."
+          },
+          {
+            "id": "b",
+            "text": "Vuole rifiutare definitivamente il paziente.",
+            "feedback": "Chiede che cosa comunicare, non di chiudere la richiesta."
+          },
+          {
+            "id": "c",
+            "text": "Vuole evitare che il paziente si presenti senza un orario confermato.",
+            "feedback": "La chiamata di oggi nasce dal contrasto tra convinzione e registro."
+          }
+        ]
+      },
+      {
+        "id": "impegnativa-ricevuta-non-prenotata-purpose",
+        "axis": "Purpose",
+        "prompt": "Qual è una risposta utile?",
+        "evidenceIds": [
+          "IT13F1",
+          "IT13F2",
+          "IT13F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiedere ad Andrea di non rispondere.",
+            "feedback": "Il paziente aspetta una conferma e Silvia può richiamarlo oggi."
+          },
+          {
+            "id": "b",
+            "text": "Dire che domani mattina va bene comunque.",
+            "feedback": "Non c’è uno slot registrato per domani."
+          },
+          {
+            "id": "c",
+            "text": "Spiegare che il documento è arrivato e proporre i due slot disponibili.",
+            "feedback": "Silvia può trasformare la richiesta ricevuta in una prenotazione concreta."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Andrea. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: È stata ricevuta l’impegnativa.",
+        "Delimita l’ambito: La scelta e la conferma di uno slot.",
+        "Riconosci la richiesta: Vuole evitare che il paziente si presenti senza un orario confermato.",
+        "Indica il passo: Spiegare che il documento è arrivato e proporre i due slot disponibili."
+      ]
+    },
+    "model": {
+      "subject": "R: Visita del signor Riva",
+      "body": "Ciao Andrea,\n\nHo controllato la scheda del signor Riva: l’impegnativa inviata venerdì è arrivata correttamente. Possiamo rassicurarlo su questo punto, perché non deve inviare di nuovo lo stesso documento.\n\nNella scheda non risulta però alcuna data né una fascia oraria confermata. La ricezione dell’impegnativa ci permette di procedere con la prenotazione, ma non riserva da sola una visita per domani mattina.\n\nCapisco perché il paziente abbia pensato che l’invio fosse sufficiente e perché tu gli abbia chiesto di attendere. È meglio dargli oggi una spiegazione chiara e una proposta concreta, così non farà un viaggio inutile domani.\n\nLo richiamo io entro mezzogiorno e gli offro i due slot disponibili per la settimana prossima. Dopo che avrà scelto, inserirò la data nel registro e gli invierò la conferma; ti aggiornerò, così allo sportello avrete la stessa informazione.\n\nUn saluto,\nSilvia",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ho controllato la scheda del signor Riva: l’impegnativa inviata venerdì è arrivata correttamente.",
+          "evidenceIds": [
+            "IT13F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Nella scheda non risulta però alcuna data né una fascia oraria confermata.",
+          "evidenceIds": [
+            "IT13F2",
+            "IT13F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco perché il paziente abbia pensato che l’invio fosse sufficiente e perché tu gli abbia chiesto di attendere.",
+          "evidenceIds": [
+            "IT13F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Lo richiamo io entro mezzogiorno e gli offro i due slot disponibili per la settimana prossima.",
+          "evidenceIds": [
+            "IT13F1",
+            "IT13F2",
+            "IT13F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "campione-prelevato-referto-no",
+    "title": "Il prelievo non è il referto",
+    "area": "Health administration × Referti",
+    "areaLabel": "Amministrazione sanitaria · Referti",
+    "role": "Teresa · segreteria laboratorio",
+    "teaser": "Un paziente aspetta il referto il giorno stesso del prelievo.",
+    "misunderstanding": "La ricevuta conferma il prelievo, non la disponibilità del risultato.",
+    "email": {
+      "from": "Nico · accettazione",
+      "to": "Teresa · segreteria laboratorio",
+      "sent": "martedì, 13:40",
+      "subject": "Referto della signora Conti",
+      "body": "Ciao Teresa, la signora Conti mostra una ricevuta con la data di stamattina e dice che il referto dovrebbe essere già nel portale. Non lo vede e teme che il campione sia andato perso. Io trovo il prelievo registrato, ma non so quando verrà pubblicato il risultato. Puoi verificare lo stato e darmi una frase precisa per richiamarla?"
+    },
+    "document": {
+      "title": "Tracciamento del campione",
+      "intro": "La ricevuta e il portale riportano fasi diverse del processo.",
+      "facts": [
+        {
+          "id": "IT14F1",
+          "time": "8:15",
+          "text": "Il campione della signora Conti è stato prelevato e registrato con codice C-94."
+        },
+        {
+          "id": "IT14F2",
+          "time": "12:30",
+          "text": "Il laboratorio ha segnato il campione C-94 come “in lavorazione”."
+        },
+        {
+          "id": "IT14F3",
+          "time": "Ricevuta",
+          "text": "La ricevuta consegnata alla paziente indica “prelievo effettuato” e disponibilità prevista del referto giovedì dopo le 16."
+        },
+        {
+          "id": "IT14F4",
+          "time": "Portale",
+          "text": "Il referto compare nel portale dopo la validazione del laboratorio; al momento non è presente."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "campione-prelevato-referto-no-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa prova la ricevuta di stamattina?",
+        "evidenceIds": [
+          "IT14F1",
+          "IT14F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il campione è stato perso.",
+            "feedback": "Il laboratorio lo registra in lavorazione alle 12:30."
+          },
+          {
+            "id": "b",
+            "text": "Che il referto è stato validato.",
+            "feedback": "La validazione non risulta ancora nel tracciamento."
+          },
+          {
+            "id": "c",
+            "text": "Che il prelievo è stato effettuato.",
+            "feedback": "La dicitura della ricevuta riguarda la raccolta del campione."
+          }
+        ]
+      },
+      {
+        "id": "campione-prelevato-referto-no-scope",
+        "axis": "Scope",
+        "prompt": "Quale disponibilità è indicata?",
+        "evidenceIds": [
+          "IT14F3",
+          "IT14F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Giovedì dopo le 16, come previsione sulla ricevuta.",
+            "feedback": "È una previsione; il portale si aggiorna dopo validazione."
+          },
+          {
+            "id": "b",
+            "text": "Oggi alle 16 in modo garantito.",
+            "feedback": "La ricevuta indica giovedì, non oggi."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna, perché il campione non è in lavorazione.",
+            "feedback": "Lo stato “in lavorazione” è stato registrato."
+          }
+        ]
+      },
+      {
+        "id": "campione-prelevato-referto-no-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa teme la paziente secondo Nico?",
+        "evidenceIds": [
+          "IT14F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il prelievo debba essere ripetuto per scelta sua.",
+            "feedback": "Non chiede un nuovo prelievo."
+          },
+          {
+            "id": "b",
+            "text": "Che il campione sia perso perché il referto non appare.",
+            "feedback": "La mail collega l’assenza nel portale a quella preoccupazione."
+          },
+          {
+            "id": "c",
+            "text": "Che il portale mostri un referto di un’altra persona.",
+            "feedback": "La segnalazione riguarda l’assenza del proprio risultato."
+          }
+        ]
+      },
+      {
+        "id": "campione-prelevato-referto-no-purpose",
+        "axis": "Purpose",
+        "prompt": "Che risposta può dare Teresa?",
+        "evidenceIds": [
+          "IT14F1",
+          "IT14F2",
+          "IT14F3",
+          "IT14F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confermare il campione in lavorazione e indicare quando controllare il portale.",
+            "feedback": "Sono fatti verificati senza anticipare un risultato non validato."
+          },
+          {
+            "id": "b",
+            "text": "Dire che il referto è già disponibile ma nascosto.",
+            "feedback": "Il portale non contiene ancora un referto."
+          },
+          {
+            "id": "c",
+            "text": "Garantire che tutto sarà pubblicato oggi.",
+            "feedback": "La previsione scritta è per giovedì dopo le 16."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Nico. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Che il prelievo è stato effettuato.",
+        "Delimita l’ambito: Giovedì dopo le 16, come previsione sulla ricevuta.",
+        "Riconosci la richiesta: Che il campione sia perso perché il referto non appare.",
+        "Indica il passo: Confermare il campione in lavorazione e indicare quando controllare il portale."
+      ]
+    },
+    "model": {
+      "subject": "R: Referto della signora Conti",
+      "body": "Ciao Nico,\n\nHo verificato il codice C-94 della signora Conti: il prelievo è stato registrato stamattina e il laboratorio ha segnato il campione come “in lavorazione” alle 12:30. Quindi il campione compare nel tracciamento.\n\nLa ricevuta conferma il prelievo, non la pubblicazione del referto. Sullo stesso foglio è indicata una disponibilità prevista per giovedì dopo le 16; il portale mostrerà il risultato soltanto dopo la validazione del laboratorio.\n\nCapisco che non vedere nulla nel portale possa far pensare a un problema, soprattutto se si legge la data di oggi sulla ricevuta. Possiamo rassicurare la paziente sullo stato del campione, senza anticipare un risultato o promettere un orario diverso da quello comunicato.\n\nPuoi richiamarla dicendo che il campione è in lavorazione e suggerendole di controllare il portale giovedì dopo le 16. Se allora il referto non compare, ci ricontatti con il codice C-94 e verificheremo subito l’avanzamento con il laboratorio.\n\nUn saluto,\nTeresa",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ho verificato il codice C-94 della signora Conti: il prelievo è stato registrato stamattina e il laboratorio ha segnato il campione come “in lavorazione” alle 12:30.",
+          "evidenceIds": [
+            "IT14F1",
+            "IT14F3"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "La ricevuta conferma il prelievo, non la pubblicazione del referto.",
+          "evidenceIds": [
+            "IT14F3",
+            "IT14F4"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che non vedere nulla nel portale possa far pensare a un problema, soprattutto se si legge la data di oggi sulla ricevuta.",
+          "evidenceIds": [
+            "IT14F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Puoi richiamarla dicendo che il campione è in lavorazione e suggerendole di controllare il portale giovedì dopo le 16.",
+          "evidenceIds": [
+            "IT14F1",
+            "IT14F2",
+            "IT14F3",
+            "IT14F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "fisioterapia-prima-seduta",
+    "title": "Una seduta fissata, le altre da concordare",
+    "area": "Health administration × Terapie",
+    "areaLabel": "Amministrazione sanitaria · Terapie",
+    "role": "Arianna · prenotazioni terapie",
+    "teaser": "Una paziente crede che la prima conferma copra l’intero ciclo di fisioterapia.",
+    "misunderstanding": "Il promemoria contiene solo la prima seduta, anche se il piano prevede più incontri.",
+    "email": {
+      "from": "Pietro · accettazione terapie",
+      "to": "Arianna · prenotazioni terapie",
+      "sent": "mercoledì, 10:05",
+      "subject": "Sedute della signora Ferri",
+      "body": "Ciao Arianna, la signora Ferri ha ricevuto un promemoria per lunedì alle 15 e pensa di avere lo stesso orario per tutte le sei sedute di fisioterapia. Nel calendario vedo solo lunedì. Mi chiede se deve prendere ferie anche per i cinque lunedì successivi. Puoi verificare cosa abbiamo prenotato e come conviene organizzarci?"
+    },
+    "document": {
+      "title": "Piano e calendario terapie",
+      "intro": "Il numero di sedute indicate non corrisponde al numero di appuntamenti già assegnati.",
+      "facts": [
+        {
+          "id": "IT15F1",
+          "time": "Piano",
+          "text": "Il piano consegnato alla signora Ferri indica sei sedute di fisioterapia."
+        },
+        {
+          "id": "IT15F2",
+          "time": "Calendario",
+          "text": "È prenotata solo la prima seduta, lunedì alle 15; non esistono altre cinque prenotazioni."
+        },
+        {
+          "id": "IT15F3",
+          "time": "Procedura",
+          "text": "Alla prima seduta il terapista propone la frequenza e la segreteria concorda con la paziente le date restanti."
+        },
+        {
+          "id": "IT15F4",
+          "time": "Oggi",
+          "text": "Arianna può confermare il primo appuntamento e annotare la richiesta della paziente di mantenere, se possibile, il lunedì."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "fisioterapia-prima-seduta-evidence",
+        "axis": "Evidence",
+        "prompt": "Quanti appuntamenti sono oggi in calendario?",
+        "evidenceIds": [
+          "IT15F1",
+          "IT15F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nessuno, perché manca il piano.",
+            "feedback": "Il piano esiste e la prima seduta è fissata."
+          },
+          {
+            "id": "b",
+            "text": "Sei, tutti di lunedì.",
+            "feedback": "Le altre cinque date non sono state ancora prenotate."
+          },
+          {
+            "id": "c",
+            "text": "Uno, lunedì alle 15.",
+            "feedback": "Il piano conta sei sedute, ma il calendario ne registra una."
+          }
+        ]
+      },
+      {
+        "id": "fisioterapia-prima-seduta-scope",
+        "axis": "Scope",
+        "prompt": "Quando si definiranno le altre date?",
+        "evidenceIds": [
+          "IT15F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dopo la prima seduta, con proposta del terapista e accordo con la paziente.",
+            "feedback": "La procedura descrive esattamente quel passaggio."
+          },
+          {
+            "id": "b",
+            "text": "Automaticamente ogni lunedì alle 15.",
+            "feedback": "Il calendario non genera prenotazioni ricorrenti."
+          },
+          {
+            "id": "c",
+            "text": "Solo dopo la sesta seduta.",
+            "feedback": "Le date restanti vanno concordate all’inizio del percorso."
+          }
+        ]
+      },
+      {
+        "id": "fisioterapia-prima-seduta-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole evitare la signora Ferri?",
+        "evidenceIds": [
+          "IT15F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cambiare il numero di sedute nel piano.",
+            "feedback": "Chiede gli orari, non il contenuto del piano."
+          },
+          {
+            "id": "b",
+            "text": "Presentarsi alla prima seduta.",
+            "feedback": "Il primo appuntamento è chiaro e non viene contestato."
+          },
+          {
+            "id": "c",
+            "text": "Chiedere ferie per cinque date non ancora confermate.",
+            "feedback": "La sua domanda riguarda l’organizzazione del lavoro."
+          }
+        ]
+      },
+      {
+        "id": "fisioterapia-prima-seduta-purpose",
+        "axis": "Purpose",
+        "prompt": "Come può rispondere Arianna?",
+        "evidenceIds": [
+          "IT15F2",
+          "IT15F3",
+          "IT15F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire che il ciclo non può iniziare senza sei date già fissate.",
+            "feedback": "La procedura prevede di concordarle dopo la prima seduta."
+          },
+          {
+            "id": "b",
+            "text": "Confermare tutti i sei lunedì alle 15.",
+            "feedback": "Solo la prima data è prenotata."
+          },
+          {
+            "id": "c",
+            "text": "Confermare lunedì e registrare la preferenza per i lunedì successivi.",
+            "feedback": "La preferenza può guidare la proposta senza trasformarsi in promessa."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Pietro. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Uno, lunedì alle 15.",
+        "Delimita l’ambito: Dopo la prima seduta, con proposta del terapista e accordo con la paziente.",
+        "Riconosci la richiesta: Chiedere ferie per cinque date non ancora confermate.",
+        "Indica il passo: Confermare lunedì e registrare la preferenza per i lunedì successivi."
+      ]
+    },
+    "model": {
+      "subject": "R: Sedute della signora Ferri",
+      "body": "Ciao Pietro,\n\nNel calendario della signora Ferri è confermata la prima seduta di lunedì alle 15. Il piano prevede sei incontri in totale, ma al momento non sono state assegnate le date degli altri cinque.\n\nLa procedura è di definire la frequenza con il terapista durante la prima seduta e poi concordare con la paziente gli appuntamenti restanti. Il promemoria che ha ricevuto riguarda quindi soltanto lunedì prossimo, non un orario ricorrente.\n\nCapisco che abbia bisogno di organizzare le ferie e che sei sedute scritte sul piano possano sembrare sei prenotazioni già fatte. Evitiamo di chiederle di bloccare cinque pomeriggi senza una conferma, perché quegli orari potrebbero non essere quelli finali.\n\nPuoi confermarle la seduta di lunedì e dirle che ho annotato la sua preferenza per i lunedì successivi. Dopo il primo incontro le proporremo le date disponibili e le invieremo un riepilogo unico, così potrà chiedere ferie solo per appuntamenti effettivamente concordati.\n\nUn saluto,\nArianna",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Nel calendario della signora Ferri è confermata la prima seduta di lunedì alle 15.",
+          "evidenceIds": [
+            "IT15F1",
+            "IT15F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "La procedura è di definire la frequenza con il terapista durante la prima seduta e poi concordare con la paziente gli appuntamenti restanti.",
+          "evidenceIds": [
+            "IT15F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che abbia bisogno di organizzare le ferie e che sei sedute scritte sul piano possano sembrare sei prenotazioni già fatte.",
+          "evidenceIds": [
+            "IT15F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Puoi confermarle la seduta di lunedì e dirle che ho annotato la sua preferenza per i lunedì successivi.",
+          "evidenceIds": [
+            "IT15F2",
+            "IT15F3",
+            "IT15F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "richiamata-non-autorizza-dettagli",
+    "title": "Un numero per richiamare, non per spiegare tutto",
+    "area": "Health administration × Contatti",
+    "areaLabel": "Amministrazione sanitaria · Contatti",
+    "role": "Elisa · segreteria clinica",
+    "teaser": "Una collega vorrebbe spiegare a un familiare il motivo di una chiamata rimasta senza risposta.",
+    "misunderstanding": "Il numero del familiare è registrato per lasciare un messaggio di richiamata, non per discutere dettagli della visita.",
+    "email": {
+      "from": "Giorgio · sportello",
+      "to": "Elisa · segreteria clinica",
+      "sent": "giovedì, 11:30",
+      "subject": "Messaggio al figlio della signora Neri",
+      "body": "Ciao Elisa, non riusciamo a raggiungere la signora Neri per spostare l’orario della visita di martedì. Nella scheda c’è il numero del figlio e pensavo di spiegargli il nuovo orario, così può organizzare il trasporto. Però la nota accanto al numero parla solo di richiamata. Mi dici che cosa possiamo comunicargli senza creare confusione?"
+    },
+    "document": {
+      "title": "Scheda contatti e agenda",
+      "intro": "La scheda descrive espressamente l’uso del numero secondario.",
+      "facts": [
+        {
+          "id": "IT16F1",
+          "time": "Scheda",
+          "text": "La signora Neri ha indicato il numero del figlio per ricevere, se necessario, una richiesta di richiamare la segreteria."
+        },
+        {
+          "id": "IT16F2",
+          "time": "Nota",
+          "text": "Non è registrata alcuna indicazione a comunicare al figlio il motivo della visita o modifiche dell’appuntamento."
+        },
+        {
+          "id": "IT16F3",
+          "time": "Agenda",
+          "text": "La visita resta fissata martedì alle 10 finché la signora Neri non conferma una proposta di spostamento."
+        },
+        {
+          "id": "IT16F4",
+          "time": "Oggi",
+          "text": "Elisa può lasciare al figlio un messaggio neutro con il numero della segreteria e provare di nuovo a chiamare direttamente la signora Neri."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "richiamata-non-autorizza-dettagli-evidence",
+        "axis": "Evidence",
+        "prompt": "Per quale uso è registrato il numero del figlio?",
+        "evidenceIds": [
+          "IT16F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Per chiedere alla signora Neri di richiamare la segreteria.",
+            "feedback": "La scheda specifica questa funzione del contatto secondario."
+          },
+          {
+            "id": "b",
+            "text": "Per comunicargli ogni dettaglio della visita.",
+            "feedback": "La scheda non registra un uso così ampio del numero."
+          },
+          {
+            "id": "c",
+            "text": "Per fissare da solo nuovi appuntamenti.",
+            "feedback": "Lo spostamento richiede la conferma della signora Neri."
+          }
+        ]
+      },
+      {
+        "id": "richiamata-non-autorizza-dettagli-scope",
+        "axis": "Scope",
+        "prompt": "Quale orario è valido ora?",
+        "evidenceIds": [
+          "IT16F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il nuovo orario proposto ma non comunicato.",
+            "feedback": "Una proposta non confermata non sostituisce l’appuntamento registrato."
+          },
+          {
+            "id": "b",
+            "text": "Martedì alle 10.",
+            "feedback": "L’agenda mantiene quell’orario finché non arriva una conferma."
+          },
+          {
+            "id": "c",
+            "text": "Nessun orario, perché la visita è cancellata.",
+            "feedback": "L’agenda mostra ancora la visita di martedì."
+          }
+        ]
+      },
+      {
+        "id": "richiamata-non-autorizza-dettagli-intent",
+        "axis": "Intent",
+        "prompt": "Perché Giorgio pensa di chiamare il figlio?",
+        "evidenceIds": [
+          "IT16F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole chiedergli il motivo della visita.",
+            "feedback": "Non ha bisogno di chiedere quale sia la prestazione."
+          },
+          {
+            "id": "b",
+            "text": "Vuole far arrivare in tempo l’informazione sul possibile spostamento.",
+            "feedback": "La mail cita anche l’organizzazione del trasporto."
+          },
+          {
+            "id": "c",
+            "text": "Vuole annullare il contatto diretto con la paziente.",
+            "feedback": "Chiede un modo di comunicare senza confusione."
+          }
+        ]
+      },
+      {
+        "id": "richiamata-non-autorizza-dettagli-purpose",
+        "axis": "Purpose",
+        "prompt": "Che cosa può fare Elisa adesso?",
+        "evidenceIds": [
+          "IT16F1",
+          "IT16F2",
+          "IT16F3",
+          "IT16F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cancellare la visita perché non risponde al telefono.",
+            "feedback": "La mancata risposta non equivale a una cancellazione."
+          },
+          {
+            "id": "b",
+            "text": "Spiegare al figlio i dettagli e cambiare subito l’agenda.",
+            "feedback": "Non c’è indicazione per quei dettagli né conferma dello spostamento."
+          },
+          {
+            "id": "c",
+            "text": "Lasciare un messaggio neutro e cercare una conferma diretta dalla paziente.",
+            "feedback": "La scheda consente la richiamata; l’agenda resta invariata fino alla conferma."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Giorgio. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Per chiedere alla signora Neri di richiamare la segreteria.",
+        "Delimita l’ambito: Martedì alle 10.",
+        "Riconosci la richiesta: Vuole far arrivare in tempo l’informazione sul possibile spostamento.",
+        "Indica il passo: Lasciare un messaggio neutro e cercare una conferma diretta dalla paziente."
+      ]
+    },
+    "model": {
+      "subject": "R: Messaggio al figlio della signora Neri",
+      "body": "Ciao Giorgio,\n\nLa scheda indica il numero del figlio per far arrivare alla signora Neri una richiesta di richiamare la segreteria. Possiamo usare quel contatto per un messaggio breve, senza spiegare il motivo della chiamata o i dettagli della visita.\n\nPer ora in agenda resta martedì alle 10. Stiamo cercando di proporre uno spostamento, ma non abbiamo ancora parlato con la signora Neri e quindi non possiamo registrare un nuovo orario come se fosse confermato.\n\nCapisco che tu voglia aiutarla a organizzare il trasporto e che il numero del figlio sembri la strada più rapida. La nota in scheda, però, delimita che cosa possiamo chiedergli: una richiamata, non una decisione al posto della paziente.\n\nSe vuoi, lascia questo messaggio: “La segreteria chiede alla signora Neri di richiamarci al numero indicato”. Nel frattempo riprovo il suo numero diretto oggi pomeriggio; quando parleremo con lei, aggiornerò l’agenda e ti confermerò l’orario valido.\n\nUn saluto,\nElisa",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "La scheda indica il numero del figlio per far arrivare alla signora Neri una richiesta di richiamare la segreteria.",
+          "evidenceIds": [
+            "IT16F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Per ora in agenda resta martedì alle 10.",
+          "evidenceIds": [
+            "IT16F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che tu voglia aiutarla a organizzare il trasporto e che il numero del figlio sembri la strada più rapida.",
+          "evidenceIds": [
+            "IT16F1"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Se vuoi, lascia questo messaggio: “La segreteria chiede alla signora Neri di richiamarci al numero indicato”.",
+          "evidenceIds": [
+            "IT16F1",
+            "IT16F2",
+            "IT16F3",
+            "IT16F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "capienza-sedie-relatori",
+    "title": "Sessanta posti, ma per chi?",
+    "area": "Operations × Eventi",
+    "areaLabel": "Operazioni · Eventi",
+    "role": "Tommaso · logistica eventi",
+    "teaser": "La squadra ha preparato 60 sedie e il team iscrizioni vuole ammettere 60 partecipanti.",
+    "misunderstanding": "La capienza di 60 include anche relatori e personale presente in sala.",
+    "email": {
+      "from": "Bianca · iscrizioni",
+      "to": "Tommaso · logistica eventi",
+      "sent": "lunedì, 12:20",
+      "subject": "Lista d’attesa per la sala A",
+      "body": "Ciao Tommaso, il piano della sala A indica 60 posti. Abbiamo 54 partecipanti confermati e sei persone in lista d’attesa: pensavo di liberare subito tutti e sei i posti. Però nell’evento ci sono anche quattro relatori e due addetti in sala. Sono conteggiati a parte oppure nel limite di 60? Vorrei dare una risposta alla lista oggi."
+    },
+    "document": {
+      "title": "Scheda della sala A",
+      "intro": "La scheda conta tutte le persone che occuperanno una sedia durante la sessione.",
+      "facts": [
+        {
+          "id": "IT17F1",
+          "time": "Sala",
+          "text": "Sono disponibili 60 sedie complessive, senza posti aggiuntivi riservati a relatori o staff."
+        },
+        {
+          "id": "IT17F2",
+          "time": "Iscrizioni",
+          "text": "Risultano 54 partecipanti confermati e sei in lista d’attesa."
+        },
+        {
+          "id": "IT17F3",
+          "time": "Programma",
+          "text": "Quattro relatori e due addetti resteranno seduti in sala per la sessione."
+        },
+        {
+          "id": "IT17F4",
+          "time": "Oggi",
+          "text": "Tommaso può verificare un’altra sala o un diverso assetto, ma non ha ancora conferma di posti supplementari."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "capienza-sedie-relatori-evidence",
+        "axis": "Evidence",
+        "prompt": "Quante sedie ci sono in totale?",
+        "evidenceIds": [
+          "IT17F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sessanta per i soli partecipanti.",
+            "feedback": "Anche relatori e addetti usano le sedie della stessa sala."
+          },
+          {
+            "id": "b",
+            "text": "Sessanta, per tutte le persone presenti.",
+            "feedback": "La scheda non prevede sedie extra per relatori o staff."
+          },
+          {
+            "id": "c",
+            "text": "Sessantasei, contando la lista d’attesa.",
+            "feedback": "La lista non aumenta la capienza fisica."
+          }
+        ]
+      },
+      {
+        "id": "capienza-sedie-relatori-scope",
+        "axis": "Scope",
+        "prompt": "Quanti posti restano con la disposizione attuale?",
+        "evidenceIds": [
+          "IT17F1",
+          "IT17F2",
+          "IT17F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sei per la lista d’attesa.",
+            "feedback": "Quei sei posti sono occupati da relatori e addetti."
+          },
+          {
+            "id": "b",
+            "text": "Nessuno: 54 partecipanti più sei persone del programma.",
+            "feedback": "La somma raggiunge le 60 sedie disponibili."
+          },
+          {
+            "id": "c",
+            "text": "Dodici perché lo staff non conta.",
+            "feedback": "La scheda include chi siede in sala, anche lo staff."
+          }
+        ]
+      },
+      {
+        "id": "capienza-sedie-relatori-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole fare Bianca?",
+        "evidenceIds": [
+          "IT17F2",
+          "IT17F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cambiare il numero di sedie sul piano.",
+            "feedback": "Cerca una decisione per la lista, non un dato inventato."
+          },
+          {
+            "id": "b",
+            "text": "Togliere i relatori dal programma.",
+            "feedback": "Li menziona per capire la capienza, non per escluderli."
+          },
+          {
+            "id": "c",
+            "text": "Rispondere oggi alle sei persone in attesa.",
+            "feedback": "La mail chiede se può liberare i posti oppure no."
+          }
+        ]
+      },
+      {
+        "id": "capienza-sedie-relatori-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta sostiene i fatti?",
+        "evidenceIds": [
+          "IT17F1",
+          "IT17F3",
+          "IT17F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Annullare sei iscrizioni già confermate.",
+            "feedback": "Non è una necessità documentata; si può cercare una sala alternativa."
+          },
+          {
+            "id": "b",
+            "text": "Confermare subito tutte e sei le persone.",
+            "feedback": "La sala arriverebbe a 66 persone per 60 sedie."
+          },
+          {
+            "id": "c",
+            "text": "Tenere la lista in attesa mentre si verifica un’altra soluzione di sala.",
+            "feedback": "Non risultano posti liberi né una nuova configurazione confermata."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Bianca. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Sessanta, per tutte le persone presenti.",
+        "Delimita l’ambito: Nessuno: 54 partecipanti più sei persone del programma.",
+        "Riconosci la richiesta: Rispondere oggi alle sei persone in attesa.",
+        "Indica il passo: Tenere la lista in attesa mentre si verifica un’altra soluzione di sala."
+      ]
+    },
+    "model": {
+      "subject": "R: Lista d’attesa per la sala A",
+      "body": "Ciao Bianca,\n\nLa scheda della sala A indica 60 sedie in totale, senza una quota separata per relatori o addetti. Con la disposizione prevista, le quattro persone sul palco e i due addetti occupano posti nella stessa capienza.\n\nAbbiamo 54 partecipanti confermati, quindi le altre sei sedie sono già necessarie al programma. Le sei persone in lista d’attesa non hanno per ora un posto libero in sala A; il numero 60 non può essere letto come limite per i soli iscritti.\n\nCapisco che vorresti dare loro una risposta oggi e che vedere sei posti rispetto ai 54 iscritti faccia pensare a un margine esatto. La domanda sulla presenza dello staff evita di promettere ingressi che poi non riusciremmo a sistemare.\n\nVerifico entro le 16 se possiamo usare un’altra sala o un assetto approvato con più posti, e ti mando un aggiornamento. Nel frattempo manterrei la lista d’attesa senza confermare nuovi ingressi; se troviamo una soluzione, potrai scrivere a tutti e sei con informazioni uguali.\n\nUn saluto,\nTommaso",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "La scheda della sala A indica 60 sedie in totale, senza una quota separata per relatori o addetti.",
+          "evidenceIds": [
+            "IT17F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Abbiamo 54 partecipanti confermati, quindi le altre sei sedie sono già necessarie al programma.",
+          "evidenceIds": [
+            "IT17F1",
+            "IT17F2",
+            "IT17F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che vorresti dare loro una risposta oggi e che vedere sei posti rispetto ai 54 iscritti faccia pensare a un margine esatto.",
+          "evidenceIds": [
+            "IT17F2",
+            "IT17F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Verifico entro le 16 se possiamo usare un’altra sala o un assetto approvato con più posti, e ti mando un aggiornamento.",
+          "evidenceIds": [
+            "IT17F1",
+            "IT17F3",
+            "IT17F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "consegna-freddo-registrazione",
+    "title": "Arrivato freddo, controllo da completare",
+    "area": "Operations × Magazzino",
+    "areaLabel": "Operazioni · Magazzino",
+    "role": "Dario · ricevimento merci",
+    "teaser": "Il responsabile cucina crede che una consegna refrigerata sia già pronta all’uso.",
+    "misunderstanding": "L’arrivo del furgone è stato confuso con il controllo di temperatura e l’accettazione della merce.",
+    "email": {
+      "from": "Lina · cucina",
+      "to": "Dario · ricevimento merci",
+      "sent": "martedì, 7:50",
+      "subject": "Latticini per il servizio di oggi",
+      "body": "Ciao Dario, il corriere mi ha detto che i latticini sono arrivati alle 7:20. Devo prepararli per il servizio delle 10, ma nel sistema vedo ancora “in verifica”. Se la consegna è già qui, posso farli portare in cucina o manca qualcosa? Vorrei evitare di spostare merce che poi dovete controllare."
+    },
+    "document": {
+      "title": "Registro di ricevimento",
+      "intro": "L’arrivo fisico precede l’accettazione della consegna refrigerata.",
+      "facts": [
+        {
+          "id": "IT18F1",
+          "time": "7:20",
+          "text": "Il furgone ha consegnato quattro casse di latticini al magazzino refrigerato."
+        },
+        {
+          "id": "IT18F2",
+          "time": "7:35",
+          "text": "Le casse sono state poste nell’area di attesa; il registro di temperatura non è ancora compilato."
+        },
+        {
+          "id": "IT18F3",
+          "time": "Procedura",
+          "text": "La merce può passare alla cucina dopo misura della temperatura e conferma di accettazione nel sistema."
+        },
+        {
+          "id": "IT18F4",
+          "time": "8:00",
+          "text": "Dario può completare il controllo entro le 8:30 e comunicare l’esito a Lina."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "consegna-freddo-registrazione-evidence",
+        "axis": "Evidence",
+        "prompt": "Dove sono ora le quattro casse?",
+        "evidenceIds": [
+          "IT18F1",
+          "IT18F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ancora sul furgone del corriere.",
+            "feedback": "La consegna fisica è avvenuta alle 7:20."
+          },
+          {
+            "id": "b",
+            "text": "Già nella cucina di Lina.",
+            "feedback": "La mail chiede proprio se possono essere portate lì."
+          },
+          {
+            "id": "c",
+            "text": "Nell’area di attesa del magazzino refrigerato.",
+            "feedback": "Sono arrivate ma non sono state ancora trasferite alla cucina."
+          }
+        ]
+      },
+      {
+        "id": "consegna-freddo-registrazione-scope",
+        "axis": "Scope",
+        "prompt": "Quale condizione manca per l’uso in cucina?",
+        "evidenceIds": [
+          "IT18F2",
+          "IT18F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una richiesta scritta del corriere.",
+            "feedback": "Il controllo dipende dal magazzino, non da un nuovo messaggio del corriere."
+          },
+          {
+            "id": "b",
+            "text": "Un secondo ordine dei latticini.",
+            "feedback": "Le quattro casse sono già state consegnate."
+          },
+          {
+            "id": "c",
+            "text": "Misurare la temperatura e registrare l’accettazione.",
+            "feedback": "La procedura richiede entrambi i passaggi."
+          }
+        ]
+      },
+      {
+        "id": "consegna-freddo-registrazione-intent",
+        "axis": "Intent",
+        "prompt": "Perché Lina chiede prima di spostare le casse?",
+        "evidenceIds": [
+          "IT18F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole preparare il servizio senza interrompere il controllo.",
+            "feedback": "La mail cita le 10 e lo stato “in verifica”."
+          },
+          {
+            "id": "b",
+            "text": "Vuole contestare il numero delle casse.",
+            "feedback": "Non mette in dubbio la quantità arrivata."
+          },
+          {
+            "id": "c",
+            "text": "Vuole cambiare la temperatura del magazzino.",
+            "feedback": "Chiede se la merce è utilizzabile, non di regolare l’impianto."
+          }
+        ]
+      },
+      {
+        "id": "consegna-freddo-registrazione-purpose",
+        "axis": "Purpose",
+        "prompt": "Che cosa può promettere Dario?",
+        "evidenceIds": [
+          "IT18F3",
+          "IT18F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Completare la verifica entro le 8:30 e comunicare l’esito.",
+            "feedback": "È un impegno sul controllo, senza anticipare l’accettazione."
+          },
+          {
+            "id": "b",
+            "text": "Che la merce è già pronta per la cucina.",
+            "feedback": "Il registro non contiene ancora la temperatura né l’accettazione."
+          },
+          {
+            "id": "c",
+            "text": "Che il corriere tornerà con altra merce.",
+            "feedback": "Non c’è una nuova consegna prevista."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Lina. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Nell’area di attesa del magazzino refrigerato.",
+        "Delimita l’ambito: Misurare la temperatura e registrare l’accettazione.",
+        "Riconosci la richiesta: Vuole preparare il servizio senza interrompere il controllo.",
+        "Indica il passo: Completare la verifica entro le 8:30 e comunicare l’esito."
+      ]
+    },
+    "model": {
+      "subject": "R: Latticini per il servizio di oggi",
+      "body": "Ciao Lina,\n\nLe quattro casse di latticini sono arrivate alle 7:20 e sono nell’area di attesa del magazzino refrigerato. Per questo il corriere ti ha detto correttamente che la consegna è qui.\n\nLo stato “in verifica” indica però che non abbiamo ancora misurato e registrato la temperatura delle casse. Secondo la procedura, il passaggio alla cucina avviene solo dopo quel controllo e la conferma di accettazione nel sistema.\n\nCapisco la necessità di organizzare il servizio delle 10 e apprezzo che tu abbia chiesto prima di spostare la merce. La distinzione tra arrivo e accettazione è poco evidente nel messaggio del corriere, quindi ti darò io un aggiornamento diretto.\n\nCompleto la misura entro le 8:30 e ti comunico subito l’esito. Se la consegna viene accettata, faccio portare le casse in cucina; se emerge un problema, ti avviso nello stesso momento per permetterti di scegliere un’alternativa per il servizio.\n\nUn saluto,\nDario",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Le quattro casse di latticini sono arrivate alle 7:20 e sono nell’area di attesa del magazzino refrigerato.",
+          "evidenceIds": [
+            "IT18F1",
+            "IT18F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Lo stato “in verifica” indica però che non abbiamo ancora misurato e registrato la temperatura delle casse.",
+          "evidenceIds": [
+            "IT18F2",
+            "IT18F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco la necessità di organizzare il servizio delle 10 e apprezzo che tu abbia chiesto prima di spostare la merce.",
+          "evidenceIds": [
+            "IT18F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Completo la misura entro le 8:30 e ti comunico subito l’esito.",
+          "evidenceIds": [
+            "IT18F3",
+            "IT18F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pulizia-scrivanie-non-schermi",
+    "title": "La pulizia delle scrivanie non include gli schermi",
+    "area": "Operations × Servizi",
+    "areaLabel": "Operazioni · Servizi",
+    "role": "Gianni · gestione sede",
+    "teaser": "Un team presume che il servizio serale pulirà anche gli schermi dei computer.",
+    "misunderstanding": "La richiesta confermata riguarda superfici e cestini, mentre le apparecchiature restano escluse.",
+    "email": {
+      "from": "Monica · coordinamento ufficio",
+      "to": "Gianni · gestione sede",
+      "sent": "mercoledì, 15:25",
+      "subject": "Pulizia straordinaria di stasera",
+      "body": "Ciao Gianni, ho avvisato il team che domani troverà scrivanie e monitor puliti dopo l’intervento straordinario di stasera. Una collega mi ha chiesto se deve lasciare acceso il computer e ora mi è venuto un dubbio: gli addetti puliranno anche schermi e tastiere oppure solo le postazioni? Vorrei correggere l’avviso se serve."
+    },
+    "document": {
+      "title": "Ordine del servizio serale",
+      "intro": "L’ordine elenca le superfici comprese nell’intervento straordinario.",
+      "facts": [
+        {
+          "id": "IT19F1",
+          "time": "Ordine",
+          "text": "Il servizio comprende piani delle scrivanie, superfici comuni e svuotamento dei cestini."
+        },
+        {
+          "id": "IT19F2",
+          "time": "Esclusioni",
+          "text": "L’ordine esclude monitor, tastiere e altre apparecchiature elettroniche."
+        },
+        {
+          "id": "IT19F3",
+          "time": "Orario",
+          "text": "Gli addetti interverranno stasera dalle 19 alle 21, dopo l’uscita del team."
+        },
+        {
+          "id": "IT19F4",
+          "time": "Oggi",
+          "text": "Monica può inviare una correzione prima che i colleghi lascino l’ufficio; Gianni può richiedere un servizio separato per gli schermi."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "pulizia-scrivanie-non-schermi-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa puliranno gli addetti?",
+        "evidenceIds": [
+          "IT19F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Scrivanie, superfici comuni e cestini.",
+            "feedback": "Sono le voci comprese nell’ordine."
+          },
+          {
+            "id": "b",
+            "text": "Monitor e tastiere di ogni postazione.",
+            "feedback": "Le apparecchiature elettroniche sono escluse."
+          },
+          {
+            "id": "c",
+            "text": "Solo il pavimento dei corridoi.",
+            "feedback": "L’ordine elenca piani, superfici comuni e cestini."
+          }
+        ]
+      },
+      {
+        "id": "pulizia-scrivanie-non-schermi-scope",
+        "axis": "Scope",
+        "prompt": "Quale parte dell’avviso di Monica va corretta?",
+        "evidenceIds": [
+          "IT19F1",
+          "IT19F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La data di domani.",
+            "feedback": "L’intervento di stasera può lasciare pulite le scrivanie per domani."
+          },
+          {
+            "id": "b",
+            "text": "La promessa dei monitor puliti.",
+            "feedback": "Gli schermi non fanno parte del servizio confermato."
+          },
+          {
+            "id": "c",
+            "text": "La presenza di un intervento serale.",
+            "feedback": "L’ordine conferma l’orario 19–21."
+          }
+        ]
+      },
+      {
+        "id": "pulizia-scrivanie-non-schermi-intent",
+        "axis": "Intent",
+        "prompt": "Perché Monica scrive?",
+        "evidenceIds": [
+          "IT19F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Vuole chiedere ai colleghi di pulire i cestini.",
+            "feedback": "Lo svuotamento è già compreso nell’ordine."
+          },
+          {
+            "id": "b",
+            "text": "Vuole annullare tutta la pulizia.",
+            "feedback": "Chiede l’ambito del servizio, non la cancellazione."
+          },
+          {
+            "id": "c",
+            "text": "Vuole dare al team istruzioni corrette prima che esca.",
+            "feedback": "Può ancora modificare l’avviso prima della sera."
+          }
+        ]
+      },
+      {
+        "id": "pulizia-scrivanie-non-schermi-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta aiuta il team?",
+        "evidenceIds": [
+          "IT19F2",
+          "IT19F3",
+          "IT19F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire di lasciare i computer accesi per gli addetti.",
+            "feedback": "Nessuna apparecchiatura sarà pulita nel servizio di stasera."
+          },
+          {
+            "id": "b",
+            "text": "Precisare cosa è incluso e valutare un servizio separato per gli schermi.",
+            "feedback": "Così l’avviso riflette l’ordine e lascia aperta una soluzione."
+          },
+          {
+            "id": "c",
+            "text": "Confermare monitor puliti senza cambiare l’ordine.",
+            "feedback": "La promessa non è coperta dal servizio prenotato."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Monica. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Scrivanie, superfici comuni e cestini.",
+        "Delimita l’ambito: La promessa dei monitor puliti.",
+        "Riconosci la richiesta: Vuole dare al team istruzioni corrette prima che esca.",
+        "Indica il passo: Precisare cosa è incluso e valutare un servizio separato per gli schermi."
+      ]
+    },
+    "model": {
+      "subject": "R: Pulizia straordinaria di stasera",
+      "body": "Ciao Monica,\n\nHo controllato l’ordine di stasera: gli addetti puliranno i piani delle scrivanie, le superfici comuni e svuoteranno i cestini. L’intervento è confermato dalle 19 alle 21, dopo che il team sarà uscito.\n\nMonitor, tastiere e altre apparecchiature elettroniche sono invece esclusi dall’ordine. La frase dell’avviso sui monitor puliti va quindi corretta, mentre la parte relativa alle scrivanie resta valida; non serve lasciare accesi i computer per questa attività.\n\nCapisco il dubbio nato dalla domanda della collega: “postazioni pulite” può far pensare anche agli schermi. È utile chiarirlo oggi, prima che qualcuno si aspetti domani un lavoro che il servizio non prevede.\n\nTi propongo di inviare una breve correzione al team entro le 17, indicando le superfici comprese. Se desiderate pulire anche monitor e tastiere, posso chiedere un preventivo e una data per un intervento separato, con istruzioni adatte alle apparecchiature.\n\nUn saluto,\nGianni",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Ho controllato l’ordine di stasera: gli addetti puliranno i piani delle scrivanie, le superfici comuni e svuoteranno i cestini.",
+          "evidenceIds": [
+            "IT19F1"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "Monitor, tastiere e altre apparecchiature elettroniche sono invece esclusi dall’ordine.",
+          "evidenceIds": [
+            "IT19F1",
+            "IT19F2"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco il dubbio nato dalla domanda della collega: “postazioni pulite” può far pensare anche agli schermi.",
+          "evidenceIds": [
+            "IT19F4"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Ti propongo di inviare una breve correzione al team entro le 17, indicando le superfici comprese.",
+          "evidenceIds": [
+            "IT19F2",
+            "IT19F3",
+            "IT19F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ritiro-corriere-prenotato",
+    "title": "Prenotazione del ritiro, non ritiro avvenuto",
+    "area": "Operations × Spedizioni",
+    "areaLabel": "Operazioni · Spedizioni",
+    "role": "Sofia · spedizioni",
+    "teaser": "Un collega ha comunicato al cliente che il pacco è già partito.",
+    "misunderstanding": "La prenotazione del ritiro è stata letta come scansione di presa in carico.",
+    "email": {
+      "from": "Enrico · assistenza ordini",
+      "to": "Sofia · spedizioni",
+      "sent": "giovedì, 14:15",
+      "subject": "Pacco per Bellini già partito?",
+      "body": "Ciao Sofia, stamattina ho visto nel sistema “ritiro prenotato” e ho scritto al signor Bellini che il pacco era partito. Ora mi chiede il codice di tracciamento, ma la pagina del corriere dice solo “ritiro previsto”. Puoi dirmi se il pacco è ancora da noi e quando potrò dargli un aggiornamento affidabile?"
+    },
+    "document": {
+      "title": "Registro spedizioni e corriere",
+      "intro": "La prenotazione e la presa in carico sono eventi separati.",
+      "facts": [
+        {
+          "id": "IT20F1",
+          "time": "9:00",
+          "text": "Sofia ha prenotato il ritiro del pacco Bellini per oggi nella finestra 16–18."
+        },
+        {
+          "id": "IT20F2",
+          "time": "13:30",
+          "text": "Il pacco è etichettato e si trova ancora nell’area spedizioni."
+        },
+        {
+          "id": "IT20F3",
+          "time": "Corriere",
+          "text": "Il codice di tracciamento diventa attivo dopo la scansione del pacco al ritiro; per ora compare “ritiro previsto”."
+        },
+        {
+          "id": "IT20F4",
+          "time": "Oggi",
+          "text": "Sofia può controllare l’avvenuto ritiro alle 18 e inviare a Enrico il codice attivo o una segnalazione se il corriere non passa."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "ritiro-corriere-prenotato-evidence",
+        "axis": "Evidence",
+        "prompt": "Dove si trova il pacco alle 13:30?",
+        "evidenceIds": [
+          "IT20F1",
+          "IT20F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nell’area spedizioni.",
+            "feedback": "Il registro lo indica etichettato ma ancora in sede."
+          },
+          {
+            "id": "b",
+            "text": "Già sul mezzo del corriere.",
+            "feedback": "Il ritiro è previsto più tardi, tra le 16 e le 18."
+          },
+          {
+            "id": "c",
+            "text": "Consegnato al signor Bellini.",
+            "feedback": "Non è stato ancora preso in carico dal corriere."
+          }
+        ]
+      },
+      {
+        "id": "ritiro-corriere-prenotato-scope",
+        "axis": "Scope",
+        "prompt": "Quando si attiva il tracciamento?",
+        "evidenceIds": [
+          "IT20F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dopo la scansione al ritiro.",
+            "feedback": "La pagina del corriere mostra solo la prenotazione finché manca la scansione."
+          },
+          {
+            "id": "b",
+            "text": "Quando si prenota la finestra.",
+            "feedback": "La prenotazione non è la presa in carico."
+          },
+          {
+            "id": "c",
+            "text": "Quando Enrico risponde al cliente.",
+            "feedback": "Il tracciamento dipende dalla scansione fisica del corriere."
+          }
+        ]
+      },
+      {
+        "id": "ritiro-corriere-prenotato-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve correggere Enrico?",
+        "evidenceIds": [
+          "IT20F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’informazione che il pacco fosse già partito.",
+            "feedback": "Alle 13:30 il pacco è ancora nell’area spedizioni."
+          },
+          {
+            "id": "b",
+            "text": "L’indirizzo del signor Bellini.",
+            "feedback": "Non emerge alcun errore di indirizzo."
+          },
+          {
+            "id": "c",
+            "text": "La prenotazione della finestra 16–18.",
+            "feedback": "La prenotazione è corretta e non viene contestata."
+          }
+        ]
+      },
+      {
+        "id": "ritiro-corriere-prenotato-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale aggiornamento può dare Sofia?",
+        "evidenceIds": [
+          "IT20F1",
+          "IT20F3",
+          "IT20F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il pacco è già in viaggio e il codice arriverà a breve.",
+            "feedback": "Manca ancora la presa in carico."
+          },
+          {
+            "id": "b",
+            "text": "Il ritiro è previsto 16–18; confermerà la partenza dopo la scansione.",
+            "feedback": "La promessa riguarda una verifica concreta alle 18."
+          },
+          {
+            "id": "c",
+            "text": "Il corriere ha saltato il ritiro.",
+            "feedback": "La finestra non è ancora trascorsa."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Enrico. Chiarisci il punto contestato usando i documenti, riconosci la preoccupazione dell’altra persona e proponi un passo concreto senza attribuire colpe.",
+      "wordGuide": "Circa 110–180 parole",
+      "criteria": [
+        "Distingui il fatto: Nell’area spedizioni.",
+        "Delimita l’ambito: Dopo la scansione al ritiro.",
+        "Riconosci la richiesta: L’informazione che il pacco fosse già partito.",
+        "Indica il passo: Il ritiro è previsto 16–18; confermerà la partenza dopo la scansione."
+      ]
+    },
+    "model": {
+      "subject": "R: Pacco per Bellini già partito?",
+      "body": "Ciao Enrico,\n\nIl pacco del signor Bellini è pronto, etichettato e ancora nella nostra area spedizioni. Stamattina abbiamo prenotato il ritiro, ma il corriere non lo ha ancora preso in carico.\n\nLa finestra prevista è oggi dalle 16 alle 18. Il codice di tracciamento diventerà attivo dopo la scansione al ritiro; la dicitura “ritiro previsto” sulla pagina del corriere descrive correttamente lo stato attuale.\n\nCapisco che tu abbia letto la prenotazione come un’indicazione di partenza e che ora debba chiarire al cliente la differenza. Possiamo farlo con un messaggio semplice, senza inventare un movimento che non compare ancora nel registro.\n\nTi suggerisco di dirgli che il pacco è pronto e che il ritiro è programmato per oggi pomeriggio. Alle 18 controllerò la scansione: se il corriere sarà passato, ti mando il codice attivo; altrimenti apro subito una segnalazione e ti comunico il nuovo stato verificato.\n\nUn saluto,\nSofia",
+      "annotations": [
+        {
+          "label": "Fatto verificato",
+          "excerpt": "Il pacco del signor Bellini è pronto, etichettato e ancora nella nostra area spedizioni.",
+          "evidenceIds": [
+            "IT20F1",
+            "IT20F2"
+          ]
+        },
+        {
+          "label": "Ambito preciso",
+          "excerpt": "La finestra prevista è oggi dalle 16 alle 18.",
+          "evidenceIds": [
+            "IT20F3"
+          ]
+        },
+        {
+          "label": "Intenzione riconosciuta",
+          "excerpt": "Capisco che tu abbia letto la prenotazione come un’indicazione di partenza e che ora debba chiarire al cliente la differenza.",
+          "evidenceIds": [
+            "IT20F2"
+          ]
+        },
+        {
+          "label": "Passo successivo",
+          "excerpt": "Ti suggerisco di dirgli che il pacco è pronto e che il ritiro è programmato per oggi pomeriggio.",
+          "evidenceIds": [
+            "IT20F1",
+            "IT20F3",
+            "IT20F4"
+          ]
+        }
+      ]
+    }
+  }
+]

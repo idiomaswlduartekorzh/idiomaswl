@@ -1,0 +1,4039 @@
+[
+  {
+    "id": "device-identifier",
+    "title": "Anonymous in which sense?",
+    "area": "Software",
+    "role": "Eli · Privacy engineering",
+    "teaser": "A dashboard is described as anonymous although a persistent identifier remains in the export.",
+    "misunderstanding": "Removing names is being presented as irreversible anonymity.",
+    "email": {
+      "from": "Morgan · Product director",
+      "to": "Eli · Privacy engineering",
+      "sent": "Tuesday, 10:06",
+      "subject": "Can we call the export anonymous?",
+      "body": "Hi Eli,\n\nThe client wants the dashboard export for its quarterly review. We removed names and email addresses, so I told them it was anonymous. Legal has now asked about the device ID column. They are expecting the file today. Can you give me a way to explain the limitation without making it sound as if we have suddenly discovered a breach?\n\nMorgan"
+    },
+    "document": {
+      "title": "Export design and access note",
+      "intro": "The note records the dataset and the current review status; it does not assess an incident.",
+      "facts": [
+        {
+          "id": "D1",
+          "time": "Current",
+          "text": "Names and email addresses are excluded from the export."
+        },
+        {
+          "id": "D2",
+          "time": "Current",
+          "text": "The same device ID appears across sessions and can be joined to an internal account table by authorized staff."
+        },
+        {
+          "id": "D3",
+          "time": "Current",
+          "text": "The client has not received the export."
+        },
+        {
+          "id": "D4",
+          "time": "Policy",
+          "text": "The privacy review must approve external claims about anonymization and data sharing."
+        },
+        {
+          "id": "D5",
+          "time": "Today",
+          "text": "The review has not decided whether a revised export can be shared."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "1-evidence",
+        "axis": "Evidence",
+        "prompt": "Which fact limits the anonymity claim?",
+        "evidenceIds": [
+          "D1",
+          "D2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Names were removed.",
+            "feedback": "True but insufficient."
+          },
+          {
+            "id": "b",
+            "text": "A persistent ID remains linkable to an account.",
+            "feedback": "This defeats an unqualified anonymity claim."
+          },
+          {
+            "id": "c",
+            "text": "The client requested a dashboard.",
+            "feedback": "The request does not describe the data."
+          }
+        ]
+      },
+      {
+        "id": "1-scope",
+        "axis": "Scope",
+        "prompt": "What may Eli say about the release decision?",
+        "evidenceIds": [
+          "D3",
+          "D5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The revised export is approved.",
+            "feedback": "Approval is pending."
+          },
+          {
+            "id": "b",
+            "text": "The file has already caused a disclosure.",
+            "feedback": "The file has not been sent."
+          },
+          {
+            "id": "c",
+            "text": "No export has been sent; review of sharing is open.",
+            "feedback": "This reflects the record."
+          }
+        ]
+      },
+      {
+        "id": "1-intent",
+        "axis": "Intent",
+        "prompt": "What is Morgan seeking to protect?",
+        "evidenceIds": [
+          "D3",
+          "D4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The device IDs from internal review.",
+            "feedback": "The review is required."
+          },
+          {
+            "id": "b",
+            "text": "A promise that no privacy review is necessary.",
+            "feedback": "The policy requires review."
+          },
+          {
+            "id": "c",
+            "text": "The client timeline and confidence while correcting an overbroad description.",
+            "feedback": "The deadline and prior claim explain the pressure."
+          }
+        ]
+      },
+      {
+        "id": "1-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply is most defensible?",
+        "evidenceIds": [
+          "D2",
+          "D4",
+          "D5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "We have had a confirmed breach.",
+            "feedback": "No disclosure or breach finding is recorded."
+          },
+          {
+            "id": "b",
+            "text": "The file omits direct contact details but retains linkable IDs; sharing and wording await review.",
+            "feedback": "It distinguishes a limitation from an incident finding."
+          },
+          {
+            "id": "c",
+            "text": "It is anonymous because names are absent.",
+            "feedback": "This ignores the linkable ID."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Morgan with client-ready wording that corrects the anonymity claim, explains the linkable identifier in plain English, and gives a credible next step without asserting a breach or promising approval today.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Distinguish de-identification from anonymity",
+        "State that no export has been sent",
+        "Attribute the sharing decision to review",
+        "Offer a bounded client update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we call the export anonymous?",
+      "body": "Hi Morgan,\n\nI would correct “anonymous” before the file is shared. The export excludes names and email addresses, but the device ID persists across sessions and can be linked to an internal account record by authorized staff. That is a material qualification to the claim we made, even though it does not by itself establish that any data has been disclosed improperly. No export has gone to the client.\n\nI suggest telling them: “The proposed dashboard file removes direct contact details. Our final review identified a persistent device identifier, so we should not describe this version as anonymous. We are checking the appropriate form of the export and the terms on which it can be shared. We will update you on the review outcome and delivery timing once those checks are complete.”\n\nI will ask the privacy reviewer to consider whether the identifier should be removed or transformed and what description of the resulting file is supportable. Until that decision is recorded, please hold the transfer and avoid promising a replacement today. We can still meet the client’s immediate planning need by explaining which aggregate figures are already validated, if the reviewer confirms those may be shared separately.\n\nEli",
+      "annotations": [
+        {
+          "label": "Corrects the claim",
+          "excerpt": "I would correct “anonymous”",
+          "evidenceIds": [
+            "D1",
+            "D2"
+          ]
+        },
+        {
+          "label": "Explains linkability",
+          "excerpt": "can be linked to an internal account record",
+          "evidenceIds": [
+            "D2"
+          ]
+        },
+        {
+          "label": "Limits incident inference",
+          "excerpt": "No export has gone to the client",
+          "evidenceIds": [
+            "D3"
+          ]
+        },
+        {
+          "label": "Attributes decision",
+          "excerpt": "ask the privacy reviewer",
+          "evidenceIds": [
+            "D4",
+            "D5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "apology-draft",
+    "title": "The apology that escaped",
+    "area": "Marketing",
+    "role": "Ari · Communications",
+    "teaser": "A leaked draft apologizes for a product defect that the investigation has not established.",
+    "misunderstanding": "A compassionate draft is being treated as a confirmed technical admission.",
+    "email": {
+      "from": "Nadia · Brand director",
+      "to": "Ari · Communications",
+      "sent": "Wednesday, 15:20",
+      "subject": "Can we stand by the leaked apology?",
+      "body": "Hi Ari,\n\nA draft response to customer complaints has been forwarded outside the team. It says “we caused the failures through the new coating.” A reporter is asking whether that is our position. I want to acknowledge the customers' experience, but I cannot withdraw an apology in a way that sounds dismissive. What should we say today?\n\nNadia"
+    },
+    "document": {
+      "title": "Complaint review, interim record",
+      "intro": "The investigation is active; the record distinguishes customer reports from causal findings.",
+      "facts": [
+        {
+          "id": "A1",
+          "time": "Current",
+          "text": "Twenty-three customers reported peeling within two weeks of purchase."
+        },
+        {
+          "id": "A2",
+          "time": "Current",
+          "text": "The draft apology was prepared before laboratory testing."
+        },
+        {
+          "id": "A3",
+          "time": "Today",
+          "text": "Testing has reproduced peeling in two samples but has not isolated a cause or assessed all batches."
+        },
+        {
+          "id": "A4",
+          "time": "Today",
+          "text": "The draft was shared externally without approval."
+        },
+        {
+          "id": "A5",
+          "time": "Current",
+          "text": "Customer support is offering inspection and remedy options case by case."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "2-evidence",
+        "axis": "Evidence",
+        "prompt": "What is established about the coating?",
+        "evidenceIds": [
+          "A2",
+          "A3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "It caused every failure.",
+            "feedback": "The draft predates testing."
+          },
+          {
+            "id": "b",
+            "text": "It has been cleared as a cause.",
+            "feedback": "Testing has not cleared it."
+          },
+          {
+            "id": "c",
+            "text": "Peeling was reproduced, but its cause is unresolved.",
+            "feedback": "This is the interim result."
+          }
+        ]
+      },
+      {
+        "id": "2-scope",
+        "axis": "Scope",
+        "prompt": "What may be acknowledged without adopting the draft conclusion?",
+        "evidenceIds": [
+          "A1",
+          "A3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A defect in all batches.",
+            "feedback": "Not all batches were assessed."
+          },
+          {
+            "id": "b",
+            "text": "The reported peeling and its effect on customers.",
+            "feedback": "The reports are documented."
+          },
+          {
+            "id": "c",
+            "text": "A proven coating mechanism.",
+            "feedback": "The mechanism is still under review."
+          }
+        ]
+      },
+      {
+        "id": "2-intent",
+        "axis": "Intent",
+        "prompt": "Why does Nadia resist a simple retraction?",
+        "evidenceIds": [
+          "A1",
+          "A4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "She wants to suppress complaints.",
+            "feedback": "She explicitly wants acknowledgement."
+          },
+          {
+            "id": "b",
+            "text": "She wants to correct the leaked claim without denying customer experience.",
+            "feedback": "The draft has circulated; both needs matter."
+          },
+          {
+            "id": "c",
+            "text": "She wants to release the lab report.",
+            "feedback": "The lab work is incomplete."
+          }
+        ]
+      },
+      {
+        "id": "2-purpose",
+        "axis": "Purpose",
+        "prompt": "Which public line best handles the leak?",
+        "evidenceIds": [
+          "A2",
+          "A3",
+          "A5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The draft stated a cause prematurely; we take reports seriously and are investigating while offering support.",
+            "feedback": "This corrects the record and explains present action."
+          },
+          {
+            "id": "b",
+            "text": "There is no problem until the lab confirms one.",
+            "feedback": "The complaints and reproduced peeling are real."
+          },
+          {
+            "id": "c",
+            "text": "The leaked draft proves our coating is defective.",
+            "feedback": "Causation is unconfirmed."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Draft an internal reply to Nadia with a concise public statement. Acknowledge the customer reports, correct the unsupported causal sentence in the leaked draft, and explain the investigation and available customer support.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Avoid an unproved causal admission",
+        "Do not minimize documented complaints",
+        "Explain why the draft cannot stand as a finding",
+        "Provide usable public wording and follow-up"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we stand by the leaked apology?",
+      "body": "Hi Nadia,\n\nWe should acknowledge the complaints without adopting the draft's conclusion about the coating. The draft was written before laboratory testing. Testing has reproduced peeling in two samples, which makes the reports concrete, but it has not isolated a cause or covered every batch. We should be equally clear that the circulated draft was not an approved technical finding.\n\nFor the reporter, I suggest: “Customers have reported peeling, and we are sorry for the frustration this has caused. An early draft response referred to a cause before our investigation had established one; that sentence should not have been presented as a finding. We have reproduced peeling in a limited number of samples and are continuing to examine the cause and scope. Customers who have experienced the issue can contact our support team for an inspection and available remedies. We will update our account when we have verified results.”\n\nI would also give support the same factual line today so customers do not receive conflicting explanations. Please do not describe the draft as merely a formatting error: the factual claim is the problem. We can own that mistake while keeping the technical question open and maintaining the remedy process for affected customers.\n\nAri",
+      "annotations": [
+        {
+          "label": "Separates draft from finding",
+          "excerpt": "written before laboratory testing",
+          "evidenceIds": [
+            "A2"
+          ]
+        },
+        {
+          "label": "Acknowledges reports",
+          "excerpt": "Customers have reported peeling",
+          "evidenceIds": [
+            "A1"
+          ]
+        },
+        {
+          "label": "Attributes uncertainty",
+          "excerpt": "has not isolated a cause",
+          "evidenceIds": [
+            "A3"
+          ]
+        },
+        {
+          "label": "Maintains remedy",
+          "excerpt": "available remedies",
+          "evidenceIds": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "promotion-shortlist",
+    "title": "The shortlist was not a promise",
+    "area": "People",
+    "role": "Leila · People partner",
+    "teaser": "A manager told an employee they were “on track.” The final panel chose someone else, and the employee feels misled.",
+    "misunderstanding": "A developmental assessment was communicated as though it guaranteed a promotion decision.",
+    "email": {
+      "from": "Ruth Kim · Department head",
+      "to": "Leila · People",
+      "sent": "Thursday, 08:35",
+      "subject": "How do we answer Sam?",
+      "body": "Hi Leila,\n\nSam says the promotion decision contradicts what I told them in March. I said they were on track, and I still think their work is strong. The panel chose another candidate, but I do not want our reply to sound like I gave Sam a promise I never intended to make. Could you help me explain this without making the panel look arbitrary? Sam has asked for the criteria and specific feedback by Friday.\n\nRuth"
+    },
+    "document": {
+      "title": "Promotion process · record extract",
+      "intro": "The record distinguishes coaching language, panel criteria and information the panel has not released.",
+      "facts": [
+        {
+          "id": "H1",
+          "time": "Mar 12",
+          "text": "Ruth told Sam they were “on track for consideration” and should lead a cross-team project before the next panel."
+        },
+        {
+          "id": "H2",
+          "time": "Apr 30",
+          "text": "Sam led the project and submitted an application."
+        },
+        {
+          "id": "H3",
+          "time": "Policy",
+          "text": "Promotion is decided by a panel against published role criteria; manager encouragement is not a decision."
+        },
+        {
+          "id": "H4",
+          "time": "Wed",
+          "text": "The panel selected another candidate. Its recorded feedback notes strong delivery by Sam and a gap in strategic planning examples."
+        },
+        {
+          "id": "H5",
+          "time": "Current",
+          "text": "The panel has not approved sharing comparisons with other candidates."
+        },
+        {
+          "id": "H6",
+          "time": "Current",
+          "text": "Ruth has not yet discussed the outcome or the March wording directly with Sam."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "3-evidence",
+        "axis": "Evidence",
+        "prompt": "Which part of Sam’s account is supported by the record?",
+        "evidenceIds": [
+          "H1",
+          "H2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The panel promised Sam a place before interviews.",
+            "feedback": "No panel promise appears."
+          },
+          {
+            "id": "b",
+            "text": "Ruth encouraged consideration, and Sam completed the suggested project.",
+            "feedback": "Both the coaching statement and completed project are documented."
+          },
+          {
+            "id": "c",
+            "text": "Ruth guaranteed promotion if Sam led the project.",
+            "feedback": "“On track for consideration” was not a guarantee."
+          }
+        ]
+      },
+      {
+        "id": "3-scope",
+        "axis": "Scope",
+        "prompt": "What feedback can be shared without exceeding the record?",
+        "evidenceIds": [
+          "H4",
+          "H5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A claim that Sam lacked leadership generally.",
+            "feedback": "The record describes a narrower gap."
+          },
+          {
+            "id": "b",
+            "text": "A comparison with the successful candidate.",
+            "feedback": "Candidate comparisons have not been cleared."
+          },
+          {
+            "id": "c",
+            "text": "Sam’s strong delivery and the specific strategic-planning gap.",
+            "feedback": "This reflects Sam’s own recorded feedback."
+          }
+        ]
+      },
+      {
+        "id": "3-intent",
+        "axis": "Intent",
+        "prompt": "Why does Ruth resist the word “promise”?",
+        "evidenceIds": [
+          "H1",
+          "H6"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "She wants to preserve the distinction between encouragement and a formal decision while addressing how Sam heard it.",
+            "feedback": "Her email acknowledges encouragement but rejects a guarantee."
+          },
+          {
+            "id": "b",
+            "text": "She wants to deny that she discussed promotion at all.",
+            "feedback": "The March conversation is recorded."
+          },
+          {
+            "id": "c",
+            "text": "She wants Leila to reverse the panel decision.",
+            "feedback": "She asks for an explanation, not reversal."
+          }
+        ]
+      },
+      {
+        "id": "3-purpose",
+        "axis": "Purpose",
+        "prompt": "What response best respects Sam’s request?",
+        "evidenceIds": [
+          "H3",
+          "H4",
+          "H5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acknowledge the misleading impression, explain the criteria and share Sam-specific feedback.",
+            "feedback": "It separates process from the manager’s wording and gives usable information."
+          },
+          {
+            "id": "b",
+            "text": "Say the panel was free to decide anything and offer no detail.",
+            "feedback": "This evades the documented feedback."
+          },
+          {
+            "id": "c",
+            "text": "Explain why the chosen candidate was better in every respect.",
+            "feedback": "Comparative information is outside the approved scope."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Ruth with a suggested message to Sam. Recognise the difference between what Ruth meant and what Sam reasonably heard; give Sam-specific feedback and a path for discussion without sharing another candidate’s information.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Acknowledge the effect of “on track”",
+        "Explain the panel’s authority without sounding evasive",
+        "Share only approved Sam-specific feedback",
+        "Offer a substantive follow-up conversation"
+      ]
+    },
+    "model": {
+      "subject": "Re: How do we answer Sam?",
+      "body": "Hi Ruth,\n\nWe should distinguish your intention from the impression the March conversation may have created. “On track for consideration” was not a promotion promise under the process, but Sam took the suggested project seriously and completed it. A reply that only says “the panel decides” would be technically accurate and still leave that effort unrecognised.\n\nI suggest telling Sam: “When I said you were on track for consideration, I meant that you had a strong basis to apply and that leading the cross-team project would strengthen your case. I should have been clearer that it could not determine the panel's decision. I recognise that my wording may have led you to expect more certainty. The panel assessed applications against the published role criteria. It recorded your delivery as a strength and asked for stronger examples of strategic planning. I would like to discuss that feedback with you and agree what evidence would make your next application stronger.”\n\nWe can share the criteria and Sam's own feedback by Friday. We should not compare Sam with another candidate until the panel has approved what may be disclosed. I can join the conversation if that would help keep the explanation candid and useful.\n\nLeila",
+      "annotations": [
+        {
+          "label": "Honours the effort",
+          "excerpt": "Sam took the suggested project seriously",
+          "evidenceIds": [
+            "H1",
+            "H2"
+          ]
+        },
+        {
+          "label": "Separates intent and effect",
+          "excerpt": "my wording may have led you to expect more certainty",
+          "evidenceIds": [
+            "H1",
+            "H6"
+          ]
+        },
+        {
+          "label": "Uses approved feedback",
+          "excerpt": "delivery as a strength",
+          "evidenceIds": [
+            "H4"
+          ]
+        },
+        {
+          "label": "Protects comparison boundary",
+          "excerpt": "should not compare Sam with another candidate",
+          "evidenceIds": [
+            "H5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "translated-records",
+    "title": "Translated, but which record?",
+    "area": "Health administration",
+    "role": "Mina · Records coordinator",
+    "teaser": "A translated cover summary accompanies an untranslated clinical report.",
+    "misunderstanding": "Translation of an administrative summary is being treated as translation of the full clinical record.",
+    "email": {
+      "from": "Eva · Patient liaison",
+      "to": "Mina · Records",
+      "sent": "Friday, 08:30",
+      "subject": "Patient says the report is untranslated",
+      "body": "Hi Mina,\n\nI told the patient yesterday that the records packet was translated, and now they say the clinical report is still in English. The packet has a translated page at the front. Can I explain that this is the translation we promised, or should we arrange more? They need the records for an appointment next week.\n\nEva"
+    },
+    "document": {
+      "title": "Records request and packet log",
+      "intro": "This administrative log does not interpret the clinical contents.",
+      "facts": [
+        {
+          "id": "R1",
+          "time": "Monday",
+          "text": "The patient requested a translation of the full clinical report for use at an external appointment."
+        },
+        {
+          "id": "R2",
+          "time": "Thursday",
+          "text": "A translated administrative cover summary was added to the packet."
+        },
+        {
+          "id": "R3",
+          "time": "Thursday",
+          "text": "The clinical report itself remained in English."
+        },
+        {
+          "id": "R4",
+          "time": "Policy",
+          "text": "Full clinical translations require an approved medical translator; records staff may not translate clinical conclusions."
+        },
+        {
+          "id": "R5",
+          "time": "Current",
+          "text": "A translator has not yet been booked, and the external appointment is next Wednesday."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "4-evidence",
+        "axis": "Evidence",
+        "prompt": "What was translated?",
+        "evidenceIds": [
+          "R2",
+          "R3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The administrative cover summary only.",
+            "feedback": "This is the packet log."
+          },
+          {
+            "id": "b",
+            "text": "Nothing in the packet.",
+            "feedback": "The cover page was translated."
+          },
+          {
+            "id": "c",
+            "text": "The entire clinical report.",
+            "feedback": "Only the administrative cover was translated; the clinical report itself remains in English."
+          }
+        ]
+      },
+      {
+        "id": "4-scope",
+        "axis": "Scope",
+        "prompt": "What can records staff offer directly?",
+        "evidenceIds": [
+          "R3",
+          "R4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "An assurance that the English report is sufficient.",
+            "feedback": "The external need is not for staff to decide."
+          },
+          {
+            "id": "b",
+            "text": "An informal clinical translation by phone.",
+            "feedback": "Clinical conclusions require an approved translator."
+          },
+          {
+            "id": "c",
+            "text": "The existing packet and a request for an approved medical translation.",
+            "feedback": "This respects the process and the request."
+          }
+        ]
+      },
+      {
+        "id": "4-intent",
+        "axis": "Intent",
+        "prompt": "What problem does Eva need to repair?",
+        "evidenceIds": [
+          "R1",
+          "R2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The patient never requested a translation.",
+            "feedback": "The request is documented."
+          },
+          {
+            "id": "b",
+            "text": "Her broad assurance did not match the patient’s specific request.",
+            "feedback": "The request was for the full report."
+          },
+          {
+            "id": "c",
+            "text": "The report was lost.",
+            "feedback": "The report is present in English."
+          }
+        ]
+      },
+      {
+        "id": "4-purpose",
+        "axis": "Purpose",
+        "prompt": "What should the next message make explicit?",
+        "evidenceIds": [
+          "R3",
+          "R5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the appointment should be cancelled.",
+            "feedback": "Records staff cannot determine that outcome."
+          },
+          {
+            "id": "b",
+            "text": "That the full report was translated.",
+            "feedback": "That would misdescribe the packet and could give the recipient false confidence about the clinical pages."
+          },
+          {
+            "id": "c",
+            "text": "That the summary was translated, the report was not, and timing must be checked.",
+            "feedback": "The translator is not booked and the appointment is near."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Eva with patient-facing wording that corrects the earlier assurance, identifies exactly what is in the packet, and coordinates an approved translation without promising completion before the external appointment.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Name the exact translated component",
+        "Correct the prior assurance respectfully",
+        "Avoid clinical interpretation",
+        "Offer a time-sensitive but conditional next step"
+      ]
+    },
+    "model": {
+      "subject": "Re: Patient says the report is untranslated",
+      "body": "Hi Eva,\n\nThe patient is right about the distinction. We translated the administrative cover summary, while the clinical report in the packet remains in English. Their Monday request specifically asked for the full clinical report to be translated for the external appointment, so our description of the packet as “translated” was too broad. I would correct that plainly rather than ask them to treat the cover page as the requested report.\n\nYou could say: “I am sorry I described the records packet as translated. The front summary is translated, but the clinical report itself is still in English. We have not completed the translation you requested. I am asking our records team to arrange an approved medical translator and to check the earliest possible delivery date. We will update you on timing as soon as it is confirmed, including whether it can be ready before your appointment next Wednesday.”\n\nI will submit the translation request now and flag the appointment date. Until the translator confirms a schedule, we cannot promise delivery by Wednesday. We can also provide the existing English report promptly if the patient wants it sent to their external team through the usual authorized route. We should leave any explanation of its clinical findings to qualified clinicians and translators.\n\nMina",
+      "annotations": [
+        {
+          "label": "Corrects scope",
+          "excerpt": "clinical report in the packet remains in English",
+          "evidenceIds": [
+            "R3"
+          ]
+        },
+        {
+          "label": "Honours request",
+          "excerpt": "full clinical report to be translated",
+          "evidenceIds": [
+            "R1"
+          ]
+        },
+        {
+          "label": "Uses approved process",
+          "excerpt": "approved medical translator",
+          "evidenceIds": [
+            "R4"
+          ]
+        },
+        {
+          "label": "Qualifies timing",
+          "excerpt": "cannot promise delivery by Wednesday",
+          "evidenceIds": [
+            "R5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "conditional-supplier",
+    "title": "Approved, subject to testing",
+    "area": "Operations",
+    "role": "Jon · Procurement",
+    "teaser": "Sales announced a replacement supplier as approved. The actual decision included a test condition.",
+    "misunderstanding": "A conditional procurement sign-off is being presented as final supplier approval.",
+    "email": {
+      "from": "Bea Solis · Sales lead",
+      "to": "Jon · Procurement",
+      "sent": "Friday, 09:30",
+      "subject": "Supplier approval for the client update",
+      "body": "Hi Jon,\n\nWe told the client yesterday that the replacement supplier had been approved, based on the sign-off in the procurement tracker. They are now asking when the first units can ship. I need an answer that stands behind our message; walking it back without a reason will make us look disorganised. Can I say the supplier is approved and we are just waiting for a routine test?\n\nBea"
+    },
+    "document": {
+      "title": "Procurement tracker · decision note",
+      "intro": "The tracker separates commercial clearance from release of units.",
+      "facts": [
+        {
+          "id": "O1",
+          "time": "Thu 11:00",
+          "text": "Procurement approved the supplier’s commercial terms, subject to a sample passing the standard quality test."
+        },
+        {
+          "id": "O2",
+          "time": "Thu 14:00",
+          "text": "The tracker displayed a green “commercially approved” status; the test condition was in its notes."
+        },
+        {
+          "id": "O3",
+          "time": "Thu 16:00",
+          "text": "Sales told the client “the supplier is approved” without the condition."
+        },
+        {
+          "id": "O4",
+          "time": "Fri 09:00",
+          "text": "The sample arrived. Quality has not completed the test."
+        },
+        {
+          "id": "O5",
+          "time": "Current",
+          "text": "No first-unit shipment date is confirmed, and the supplier cannot release units before quality clearance."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "5-evidence",
+        "axis": "Evidence",
+        "prompt": "What can Jon verify from the tracker?",
+        "evidenceIds": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The sample passed all tests.",
+            "feedback": "Testing has not finished."
+          },
+          {
+            "id": "b",
+            "text": "Commercial terms passed; quality release is still pending.",
+            "feedback": "The status and notes separate the two decisions."
+          },
+          {
+            "id": "c",
+            "text": "The supplier has begun shipping units.",
+            "feedback": "No shipment is recorded."
+          }
+        ]
+      },
+      {
+        "id": "5-scope",
+        "axis": "Scope",
+        "prompt": "Why is “routine test” an inadequate description?",
+        "evidenceIds": [
+          "O1",
+          "O5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The test is a condition that controls whether units may be released.",
+            "feedback": "Routine does not mean optional or already passed."
+          },
+          {
+            "id": "b",
+            "text": "The test belongs entirely to Sales.",
+            "feedback": "Quality clearance is explicit."
+          },
+          {
+            "id": "c",
+            "text": "The test is unusual for this supplier.",
+            "feedback": "The document calls it standard."
+          }
+        ]
+      },
+      {
+        "id": "5-intent",
+        "axis": "Intent",
+        "prompt": "What is Bea balancing?",
+        "evidenceIds": [
+          "O3",
+          "O5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A wish to cancel the supplier.",
+            "feedback": "Nothing says Bea wants cancellation."
+          },
+          {
+            "id": "b",
+            "text": "Credibility with the client and a lack of a defensible ship date.",
+            "feedback": "Her email asks to stand behind the update and answer shipment timing."
+          },
+          {
+            "id": "c",
+            "text": "A request for an internal audit.",
+            "feedback": "No audit is requested."
+          }
+        ]
+      },
+      {
+        "id": "5-purpose",
+        "axis": "Purpose",
+        "prompt": "What should the client update do?",
+        "evidenceIds": [
+          "O1",
+          "O4",
+          "O5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Keep saying approved and omit the condition unless asked.",
+            "feedback": "Omission would perpetuate the misunderstanding."
+          },
+          {
+            "id": "b",
+            "text": "Correct the scope of approval and commit to a status update after testing.",
+            "feedback": "This distinguishes a real commercial milestone from pending quality clearance."
+          },
+          {
+            "id": "c",
+            "text": "Offer a first shipment date based on the sample arrival.",
+            "feedback": "Sample arrival is not quality release."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Bea with client-ready wording. Preserve the genuine commercial progress, correct the impression of final approval, and say how the team will update shipment timing after quality testing without inventing a date.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Distinguish commercial sign-off from quality release",
+        "Correct the earlier message without attacking Sales",
+        "Avoid a shipment promise",
+        "Give the client a useful next update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Supplier approval for the client update",
+      "body": "Hi Bea,\n\nThe supplier has cleared the commercial review, which is genuine progress. The tracker did not give final clearance for units: its note makes approval conditional on the sample passing Quality's standard test. The sample arrived this morning, but the test is not complete, so we cannot yet confirm a first shipment date. Calling it “just a routine test” could suggest that release is automatic; the test is standard, but its result still matters.\n\nI suggest we tell the client: “We have agreed the commercial terms with the replacement supplier. The sample is now with our quality team for the required release test. Once that test is complete, we can confirm whether the supplier is cleared to ship and provide a reliable timing update.” We can acknowledge that yesterday's wording compressed two different approvals without implying that nothing had been agreed.\n\nI will ask Quality when it expects to report its result and pass that timing to you today. If the result changes the plan, we should tell the client directly rather than let the earlier statement stand. That gives them a reason for the uncertainty and a clear next point of contact.\n\nJon",
+      "annotations": [
+        {
+          "label": "Preserves real progress",
+          "excerpt": "cleared the commercial review",
+          "evidenceIds": [
+            "O1"
+          ]
+        },
+        {
+          "label": "Clarifies conditionality",
+          "excerpt": "approval conditional on the sample passing",
+          "evidenceIds": [
+            "O1",
+            "O2"
+          ]
+        },
+        {
+          "label": "Avoids a date claim",
+          "excerpt": "cannot yet confirm a first shipment date",
+          "evidenceIds": [
+            "O5"
+          ]
+        },
+        {
+          "label": "Gives useful wording",
+          "excerpt": "The sample is now with our quality team",
+          "evidenceIds": [
+            "O4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "deprecation-reach",
+    "title": "Who still calls the old endpoint?",
+    "area": "Software",
+    "role": "Iris · API lead",
+    "teaser": "The team wants to say a legacy endpoint is unused, but telemetry covers only direct calls.",
+    "misunderstanding": "Absence from one dashboard is being treated as proof that no client depends on the endpoint.",
+    "email": {
+      "from": "Sam · Product operations",
+      "to": "Iris · API engineering",
+      "sent": "Monday, 09:15",
+      "subject": "Can we retire the endpoint quietly?",
+      "body": "Hi Iris,\n\nThe direct-call chart shows zero traffic for the legacy endpoint. I would like to tell customers the retirement has no impact and take it down at the end of the month. The partner team says some integrations may route through the gateway, but they cannot name them. How should we frame the notice without creating unnecessary alarm?\n\nSam"
+    },
+    "document": {
+      "title": "Endpoint telemetry and retirement plan",
+      "intro": "The measurement boundary and unresolved dependencies are recorded separately.",
+      "facts": [
+        {
+          "id": "P1",
+          "time": "Past 30 days",
+          "text": "Direct calls to the legacy endpoint recorded by the application dashboard: zero."
+        },
+        {
+          "id": "P2",
+          "time": "Current",
+          "text": "Gateway traffic is aggregated; the dashboard does not attribute legacy-path calls to individual clients."
+        },
+        {
+          "id": "P3",
+          "time": "Current",
+          "text": "Two partner integrations previously used the gateway route; their present configuration is unverified."
+        },
+        {
+          "id": "P4",
+          "time": "Plan",
+          "text": "Retirement is proposed for month-end, pending dependency review."
+        },
+        {
+          "id": "P5",
+          "time": "Policy",
+          "text": "A customer notice must state the planned change and a way to report an affected integration."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "6-evidence",
+        "axis": "Evidence",
+        "prompt": "What does zero on the chart establish?",
+        "evidenceIds": [
+          "P1",
+          "P2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "No use through any route.",
+            "feedback": "Gateway calls are not resolved."
+          },
+          {
+            "id": "b",
+            "text": "No partner dependency exists.",
+            "feedback": "Partner settings are unverified."
+          },
+          {
+            "id": "c",
+            "text": "No observed direct calls in that dashboard period.",
+            "feedback": "The chart measures direct calls only."
+          }
+        ]
+      },
+      {
+        "id": "6-scope",
+        "axis": "Scope",
+        "prompt": "What remains unknown?",
+        "evidenceIds": [
+          "P2",
+          "P3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether direct calls were logged.",
+            "feedback": "The dashboard captured direct calls."
+          },
+          {
+            "id": "b",
+            "text": "Whether gateway-mediated integrations still rely on it.",
+            "feedback": "Current partner configuration is unverified."
+          },
+          {
+            "id": "c",
+            "text": "Whether the endpoint ever existed.",
+            "feedback": "The route is documented."
+          }
+        ]
+      },
+      {
+        "id": "6-intent",
+        "axis": "Intent",
+        "prompt": "Why does Sam want restrained wording?",
+        "evidenceIds": [
+          "P4",
+          "P5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "To hide a completed retirement.",
+            "feedback": "The change is proposed."
+          },
+          {
+            "id": "b",
+            "text": "To avoid the required customer notice.",
+            "feedback": "Policy explicitly requires notice."
+          },
+          {
+            "id": "c",
+            "text": "To give notice without implying an outage or a guaranteed zero-impact change.",
+            "feedback": "The email asks how to frame the notice."
+          }
+        ]
+      },
+      {
+        "id": "6-purpose",
+        "axis": "Purpose",
+        "prompt": "Which notice is appropriate?",
+        "evidenceIds": [
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "State the proposed date, ask clients to check integrations, and give a reporting path while review continues.",
+            "feedback": "It is actionable and respects uncertainty."
+          },
+          {
+            "id": "b",
+            "text": "Switch off the endpoint first and investigate complaints afterward.",
+            "feedback": "Review and notice precede retirement."
+          },
+          {
+            "id": "c",
+            "text": "Say retirement cannot affect anyone because direct traffic is zero.",
+            "feedback": "The chart does not cover the gateway."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Sam with a defensible customer notice and an internal dependency check. Explain the telemetry limit, the proposed retirement, and how partners should surface possible reliance without claiming no impact.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Define the measurement boundary",
+        "Treat partner reliance as unresolved",
+        "Use a clear conditional retirement notice",
+        "Provide an actionable check and response route"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we retire the endpoint quietly?",
+      "body": "Hi Sam,\n\nThe chart supports a narrow statement: we saw no direct calls to the legacy endpoint in the past 30 days. It cannot establish that no customer uses it. The gateway groups traffic, and we have not verified the current setup of the two partner integrations that previously used that route. I would keep the retirement date provisional until those dependencies are checked.\n\nFor customers, I suggest: “We plan to retire the legacy endpoint at the end of this month, subject to a final dependency review. If your integration calls it directly or through a gateway or partner connection, please contact the API support team by [date] with the connection details. We can help confirm the route and migration steps. We will confirm the retirement date after completing that review.”\n\nInternally, I will ask the gateway team to inspect route-level logs where available and the partner team to confirm the two known integrations. We should document the limits of each check. If we cannot resolve a material dependency before month-end, we should revisit the date rather than describe the change as impact-free. This gives customers a useful notice while keeping our claims aligned with what the telemetry actually measures.\n\nIris",
+      "annotations": [
+        {
+          "label": "Defines measured traffic",
+          "excerpt": "no direct calls to the legacy endpoint",
+          "evidenceIds": [
+            "P1"
+          ]
+        },
+        {
+          "label": "Names blind spot",
+          "excerpt": "gateway groups traffic",
+          "evidenceIds": [
+            "P2"
+          ]
+        },
+        {
+          "label": "Qualifies plan",
+          "excerpt": "subject to a final dependency review",
+          "evidenceIds": [
+            "P4"
+          ]
+        },
+        {
+          "label": "Creates response path",
+          "excerpt": "contact the API support team",
+          "evidenceIds": [
+            "P5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "campaign-lift-attribution",
+    "title": "The number without a cause",
+    "area": "Marketing",
+    "role": "Rae · Analytics",
+    "teaser": "A dashboard shows a 24% increase. Leadership wants to credit the campaign, but the comparison changed.",
+    "misunderstanding": "A measured increase is being presented as proof that one campaign caused it.",
+    "email": {
+      "from": "Joel Park · Growth director",
+      "to": "Rae · Analytics",
+      "sent": "Tuesday, 11:30",
+      "subject": "Need the 24% campaign claim today",
+      "body": "Hi Rae,\n\nThe leadership deck goes out at four. The dashboard shows sign-ups up 24% during the launch, and the campaign was the largest thing we did that week. I would like to say it drove a 24% increase. Please confirm that wording or give me a version that still conveys the result. We need a clear success story, not a lecture on measurement.\n\nJoel"
+    },
+    "document": {
+      "title": "Sign-up dashboard · methodology note",
+      "intro": "The note explains what the 24% compares and what it cannot isolate.",
+      "facts": [
+        {
+          "id": "A1",
+          "time": "Dashboard",
+          "text": "Sign-ups were 24% higher in launch week than in the preceding week."
+        },
+        {
+          "id": "A2",
+          "time": "Before launch",
+          "text": "The previous week included a two-day checkout outage, which depressed sign-ups."
+        },
+        {
+          "id": "A3",
+          "time": "Launch week",
+          "text": "A partner referral programme also began during the campaign week."
+        },
+        {
+          "id": "A4",
+          "time": "Method",
+          "text": "No controlled comparison separated campaign traffic from partner referrals or outage recovery."
+        },
+        {
+          "id": "A5",
+          "time": "Current",
+          "text": "The campaign generated identifiable visits and some sign-ups, but its incremental contribution is not quantified."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "7-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the 24% figure measure?",
+        "evidenceIds": [
+          "A1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The campaign’s incremental effect.",
+            "feedback": "No controlled analysis identifies the increment."
+          },
+          {
+            "id": "b",
+            "text": "A week-on-week difference in sign-ups.",
+            "feedback": "That is the dashboard comparison."
+          },
+          {
+            "id": "c",
+            "text": "The share of sign-ups from campaign traffic.",
+            "feedback": "The 24% is not a channel share."
+          }
+        ]
+      },
+      {
+        "id": "7-scope",
+        "axis": "Scope",
+        "prompt": "Why can the rise not be assigned entirely to the campaign?",
+        "evidenceIds": [
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Outage recovery and partner referrals also changed during the period.",
+            "feedback": "These concurrent factors prevent a single-cause claim."
+          },
+          {
+            "id": "b",
+            "text": "The dashboard calculation is necessarily wrong.",
+            "feedback": "The difference may be real; attribution is the uncertain part."
+          },
+          {
+            "id": "c",
+            "text": "The campaign produced no visits.",
+            "feedback": "Campaign visits are documented."
+          }
+        ]
+      },
+      {
+        "id": "7-intent",
+        "axis": "Intent",
+        "prompt": "What does Joel need from Rae?",
+        "evidenceIds": [
+          "A1",
+          "A5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A usable, positive statement that does not misstate causation.",
+            "feedback": "He wants to communicate a result while preserving a success story."
+          },
+          {
+            "id": "b",
+            "text": "A new dashboard by four o’clock.",
+            "feedback": "No dashboard rebuild is requested."
+          },
+          {
+            "id": "c",
+            "text": "A promise that the figure will not appear.",
+            "feedback": "He asks for alternative wording if his preferred claim is unsupported."
+          }
+        ]
+      },
+      {
+        "id": "7-purpose",
+        "axis": "Purpose",
+        "prompt": "Which deck sentence is defensible?",
+        "evidenceIds": [
+          "A1",
+          "A4",
+          "A5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The campaign drove all of the 24% increase.",
+            "feedback": "The causal claim is unsupported."
+          },
+          {
+            "id": "b",
+            "text": "The 24% increase proves the partner programme had no effect.",
+            "feedback": "The partner contribution has not been separated either."
+          },
+          {
+            "id": "c",
+            "text": "Sign-ups rose 24% week on week during the launch; campaign traffic contributed, but its incremental effect is not yet isolated.",
+            "feedback": "It reports the result and the limit on attribution."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Joel with a leadership-deck sentence and a brief explanation of why “drove a 24% increase” overstates the evidence. Keep the result legible and positive while naming the comparison limits and a proportionate next analysis.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Preserve the real 24% comparison",
+        "Separate association from causation",
+        "Use language leadership can actually publish",
+        "Suggest a focused attribution follow-up"
+      ]
+    },
+    "model": {
+      "subject": "Re: Need the 24% campaign claim today",
+      "body": "Hi Joel,\n\nThe 24% increase is a real week-on-week comparison, and we should show it. I would not say the campaign “drove” that full increase. The prior week included a checkout outage, and the partner referral programme started during launch week. We have not separated those effects from campaign traffic. The dashboard is therefore strong evidence of a better week, but it is not an estimate of the campaign's incremental lift.\n\nFor the deck, I suggest: “Sign-ups rose 24% week on week during the launch period. The campaign brought identifiable visits and sign-ups, although the share of the overall increase attributable to the campaign has not yet been isolated.” If that is too long for the slide, the headline can be “Sign-ups up 24% during launch week,” with the attribution limit in the speaker note.\n\nThat still gives leadership a concrete result without turning a timing relationship into a causal finding. After the deck, I can segment sign-ups by source and examine the outage-recovery baseline. That analysis may narrow the estimate, though it will not produce a clean experiment retrospectively. I can send the exact slide wording by two so the design team has time to use it.\n\nRae",
+      "annotations": [
+        {
+          "label": "Preserves the measured result",
+          "excerpt": "The 24% increase is a real week-on-week comparison",
+          "evidenceIds": [
+            "A1"
+          ]
+        },
+        {
+          "label": "Names confounders",
+          "excerpt": "prior week included a checkout outage",
+          "evidenceIds": [
+            "A2"
+          ]
+        },
+        {
+          "label": "Avoids causal overreach",
+          "excerpt": "not an estimate of the campaign's incremental lift",
+          "evidenceIds": [
+            "A4"
+          ]
+        },
+        {
+          "label": "Provides publishable wording",
+          "excerpt": "Sign-ups up 24% during launch week",
+          "evidenceIds": [
+            "A1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "anonymous-comment",
+    "title": "The anonymous comment",
+    "area": "People",
+    "role": "Noor · People partner",
+    "teaser": "A manager wants to respond personally to a survey comment. The survey promised anonymity.",
+    "misunderstanding": "A wish to resolve a concern directly is being treated as permission to identify its author.",
+    "email": {
+      "from": "Daniel Cho · Team manager",
+      "to": "Noor · People",
+      "sent": "Friday, 13:15",
+      "subject": "Who wrote the handover comment?",
+      "body": "Hi Noor,\n\nThe survey comment about handovers sounds like it came from one person on my team. I would rather speak to them privately than address a vague criticism in front of everyone. Can you tell me who wrote it, or at least confirm whether my guess is right? I want to solve the problem, not challenge the person. Please keep this between us.\n\nDaniel"
+    },
+    "document": {
+      "title": "Survey rules and response record",
+      "intro": "The record shows the promise made to staff and the level at which results may be used.",
+      "facts": [
+        {
+          "id": "P1",
+          "time": "Survey invitation",
+          "text": "Staff were told individual responses would remain anonymous and only aggregated themes would be shared with managers."
+        },
+        {
+          "id": "P2",
+          "time": "Survey record",
+          "text": "The comment mentions a handover on a specific Friday; that detail could make its author identifiable within a small team."
+        },
+        {
+          "id": "P3",
+          "time": "Policy",
+          "text": "People may redact identifying details before sharing a theme. Managers cannot receive raw responses or identity confirmations."
+        },
+        {
+          "id": "P4",
+          "time": "Current",
+          "text": "Several respondents raised handover timing, though in different words."
+        },
+        {
+          "id": "P5",
+          "time": "Current",
+          "text": "No individual has agreed to a direct conversation about their own response."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "8-evidence",
+        "axis": "Evidence",
+        "prompt": "What can Noor safely say about the pattern?",
+        "evidenceIds": [
+          "P4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Handover timing appeared in several responses.",
+            "feedback": "The aggregated theme is supported."
+          },
+          {
+            "id": "b",
+            "text": "Every respondent described the same incident.",
+            "feedback": "The responses used different wording; sameness is not shown."
+          },
+          {
+            "id": "c",
+            "text": "The comment came from a particular employee.",
+            "feedback": "The author is not disclosed."
+          }
+        ]
+      },
+      {
+        "id": "8-scope",
+        "axis": "Scope",
+        "prompt": "Why is confirming Daniel’s guess still a disclosure?",
+        "evidenceIds": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "It would identify an individual response despite the anonymity promise.",
+            "feedback": "The policy bars identity confirmations, not just names in print."
+          },
+          {
+            "id": "b",
+            "text": "Confirmation is allowed if no raw comment is forwarded.",
+            "feedback": "Identity confirmation itself breaches the boundary."
+          },
+          {
+            "id": "c",
+            "text": "The survey was anonymous only to other employees.",
+            "feedback": "The promise also applies to managers."
+          }
+        ]
+      },
+      {
+        "id": "8-intent",
+        "axis": "Intent",
+        "prompt": "How should Noor read Daniel’s request?",
+        "evidenceIds": [
+          "P4",
+          "P5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "As proof that Daniel plans retaliation.",
+            "feedback": "The email does not establish retaliatory intent."
+          },
+          {
+            "id": "b",
+            "text": "As consent from the author for a private meeting.",
+            "feedback": "No individual consent exists."
+          },
+          {
+            "id": "c",
+            "text": "As a genuine wish to address a problem that still cannot override the survey commitment.",
+            "feedback": "His motive can be constructive while the requested disclosure remains inappropriate."
+          }
+        ]
+      },
+      {
+        "id": "8-purpose",
+        "axis": "Purpose",
+        "prompt": "What is the most useful alternative?",
+        "evidenceIds": [
+          "P3",
+          "P4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Share a redacted theme and invite the team to discuss the handover process.",
+            "feedback": "This acts on the pattern without exposing a respondent."
+          },
+          {
+            "id": "b",
+            "text": "Forward the raw comment with its date removed.",
+            "feedback": "The specific incident may still identify the author."
+          },
+          {
+            "id": "c",
+            "text": "Confirm the author privately and ask Daniel not to repeat it.",
+            "feedback": "Private confirmation still violates the promise."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Daniel firmly and respectfully. Decline to identify or confirm the author, recognise his wish to solve the issue, and offer a concrete way to address the handover problem using aggregated information.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Protect anonymity without implying bad intent",
+        "Explain why a private confirmation is still disclosure",
+        "Use the aggregate evidence",
+        "Give Daniel a practical action"
+      ]
+    },
+    "model": {
+      "subject": "Re: Who wrote the handover comment?",
+      "body": "Hi Daniel,\n\nI understand why you would prefer a direct conversation; it can feel more useful than responding to a general survey theme. I cannot tell you who wrote the comment or confirm a guess, even privately. The invitation promised individual anonymity, and confirming an identity would cross that line just as clearly as forwarding a name. The detail about a particular Friday also makes the raw comment more identifying than it first appears.\n\nThere is a wider issue we can act on. Several respondents mentioned handover timing, though they described it differently. I can share a redacted summary of that theme and help you ask the team which parts of the handover process create avoidable delays. You could then agree one change, such as a clearer cut-off for updates, and report back on whether it helped. That gives people a response to the concern without making anyone defend their survey answer.\n\nIf someone chooses to raise their own experience directly, we can support that conversation separately. Until then, I would keep the survey response at the aggregate level we promised. I can prepare the summary for your next team meeting.\n\nNoor",
+      "annotations": [
+        {
+          "label": "Rejects identity confirmation",
+          "excerpt": "I cannot tell you who wrote the comment or confirm a guess",
+          "evidenceIds": [
+            "P1",
+            "P3"
+          ]
+        },
+        {
+          "label": "Explains indirect identification",
+          "excerpt": "detail about a particular Friday",
+          "evidenceIds": [
+            "P2"
+          ]
+        },
+        {
+          "label": "Uses the pattern",
+          "excerpt": "Several respondents mentioned handover timing",
+          "evidenceIds": [
+            "P4"
+          ]
+        },
+        {
+          "label": "Offers a workable alternative",
+          "excerpt": "prepare the summary for your next team meeting",
+          "evidenceIds": [
+            "P3",
+            "P4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "wrong-recipient",
+    "title": "The shared surname",
+    "area": "Health administration",
+    "role": "Evan · Patient services",
+    "teaser": "A portal message may have reached the wrong person with the same surname.",
+    "misunderstanding": "A successful send receipt is being taken as evidence that the intended patient received the message.",
+    "email": {
+      "from": "Luca · Clinic manager",
+      "to": "Evan · Patient services",
+      "sent": "Tuesday, 11:20",
+      "subject": "Can we reassure the patient?",
+      "body": "Hi Evan,\n\nA patient says they did not receive yesterday's portal message and asks whether it may have gone to someone else. The system shows “sent”, and two patients in the list share a surname. I would like to reassure them that no one else saw their information. Can we say that? Please draft something we can send today.\n\nLuca"
+    },
+    "document": {
+      "title": "Message audit, preliminary",
+      "intro": "The audit is incomplete and contains no clinical message content.",
+      "facts": [
+        {
+          "id": "W1",
+          "time": "Monday 16:10",
+          "text": "A message was sent from the clinic queue."
+        },
+        {
+          "id": "W2",
+          "time": "Monday 16:10",
+          "text": "The queue displays two patient records with the same surname and different account IDs."
+        },
+        {
+          "id": "W3",
+          "time": "Current",
+          "text": "The send receipt confirms delivery to an account, but the recipient account ID has not yet been reconciled with the intended patient."
+        },
+        {
+          "id": "W4",
+          "time": "Current",
+          "text": "There is no verified open or read record."
+        },
+        {
+          "id": "W5",
+          "time": "Procedure",
+          "text": "A possible misdirection must be escalated to the privacy team; patient services may give a factual status update without declaring the investigation closed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "9-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the receipt prove?",
+        "evidenceIds": [
+          "W1",
+          "W3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The intended patient opened the message.",
+            "feedback": "No read or identity verification exists."
+          },
+          {
+            "id": "b",
+            "text": "The other patient received it.",
+            "feedback": "Misdirection is possible, not confirmed."
+          },
+          {
+            "id": "c",
+            "text": "A portal account received the message; its identity is still being checked.",
+            "feedback": "This is the audit limit."
+          }
+        ]
+      },
+      {
+        "id": "9-scope",
+        "axis": "Scope",
+        "prompt": "What can Evan reassure the patient about?",
+        "evidenceIds": [
+          "W3",
+          "W4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The concern is being investigated and a verified update will follow.",
+            "feedback": "It is true and useful."
+          },
+          {
+            "id": "b",
+            "text": "No one else saw the information.",
+            "feedback": "Recipient and read status are unknown."
+          },
+          {
+            "id": "c",
+            "text": "The message went to the wrong person.",
+            "feedback": "Recipient reconciliation is incomplete."
+          }
+        ]
+      },
+      {
+        "id": "9-intent",
+        "axis": "Intent",
+        "prompt": "What is Luca trying to manage?",
+        "evidenceIds": [
+          "W2",
+          "W5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confirmed clinical error.",
+            "feedback": "No clinical error is recorded."
+          },
+          {
+            "id": "b",
+            "text": "A request to publish the message content.",
+            "feedback": "No publication is requested."
+          },
+          {
+            "id": "c",
+            "text": "The patient’s concern while avoiding an unsupported disclosure claim.",
+            "feedback": "The email asks for reassurance; the audit is incomplete."
+          }
+        ]
+      },
+      {
+        "id": "9-purpose",
+        "axis": "Purpose",
+        "prompt": "What is the responsible next action?",
+        "evidenceIds": [
+          "W3",
+          "W5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Close the ticket because the system says “sent”.",
+            "feedback": "A send receipt does not resolve identity."
+          },
+          {
+            "id": "b",
+            "text": "Tell both patients to ignore all portal messages.",
+            "feedback": "The scope of any issue is not established."
+          },
+          {
+            "id": "c",
+            "text": "Escalate, verify the account ID, and update the patient without guessing the outcome.",
+            "feedback": "This follows the procedure and evidence."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Luca with patient-facing wording. Recognize the concern, explain exactly what the send status does and does not show, and set out a privacy escalation and verified update without disclosing another patient’s details.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Avoid unsupported reassurance or confirmed-disclosure claims",
+        "Explain the receipt’s limit",
+        "Escalate through the correct process",
+        "Protect both patients’ privacy in the response"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we reassure the patient?",
+      "body": "Hi Luca,\n\nWe should not tell the patient that no one else saw the message. The receipt confirms that it was sent to a portal account, but the recipient account ID has not yet been checked against the intended patient’s record. We also have no verified open or read status. The shared surname makes a routing error worth investigating, but it does not establish that one occurred.\n\nI suggest: “Thank you for raising this. Our system shows that a portal message was sent yesterday, but we are checking whether it reached the correct account. We cannot yet confirm who received or viewed it. We have escalated the concern to the team responsible for reviewing message delivery and privacy. We will contact you with a verified update once the account check is complete. In the meantime, please let us know if you need the information from your care team through another approved channel.”\n\nI will send the message identifiers, without the clinical content, to the privacy team and ask the portal administrator to reconcile the recipient account. We should keep the patient informed about the review and any necessary follow-up once the facts are confirmed. We must also avoid identifying the other patient in our reply.\n\nEvan",
+      "annotations": [
+        {
+          "label": "Limits receipt",
+          "excerpt": "sent to a portal account",
+          "evidenceIds": [
+            "W3"
+          ]
+        },
+        {
+          "label": "Preserves read uncertainty",
+          "excerpt": "no verified open or read status",
+          "evidenceIds": [
+            "W4"
+          ]
+        },
+        {
+          "label": "Escalates",
+          "excerpt": "escalated the concern",
+          "evidenceIds": [
+            "W5"
+          ]
+        },
+        {
+          "label": "Protects third party",
+          "excerpt": "avoid identifying the other patient",
+          "evidenceIds": [
+            "W2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "mixed-batches",
+    "title": "Whose batch failed?",
+    "area": "Operations",
+    "role": "Ada · Quality operations",
+    "teaser": "A customer asks which supplier caused damaged units, but the affected shipment contains two batches.",
+    "misunderstanding": "A supplier name on the outer carton is being treated as proof of which batch failed.",
+    "email": {
+      "from": "Jon · Procurement",
+      "to": "Ada · Quality operations",
+      "sent": "Thursday, 13:05",
+      "subject": "Can we name the supplier?",
+      "body": "Hi Ada,\n\nThe customer photographed damaged units next to a carton labelled Northline. They want us to confirm Northline supplied all defective items and to refund the full shipment. We need a reply today. If we cannot identify the supplier yet, how can we sound accountable rather than evasive?\n\nJon"
+    },
+    "document": {
+      "title": "Shipment and inspection extract",
+      "intro": "The affected units have not all been traced to a production batch.",
+      "facts": [
+        {
+          "id": "B1",
+          "time": "Shipment",
+          "text": "The outer carton carried a Northline label but contained units from Northline and Eastbridge batches after consolidation."
+        },
+        {
+          "id": "B2",
+          "time": "Today",
+          "text": "Five damaged units were photographed; their individual batch codes are unreadable in the images."
+        },
+        {
+          "id": "B3",
+          "time": "Today",
+          "text": "Eight units from the same shipment were inspected; three were damaged, but batch attribution is pending."
+        },
+        {
+          "id": "B4",
+          "time": "Policy",
+          "text": "Customer remedies are assessed against affected units; supplier recovery is handled separately after traceability review."
+        },
+        {
+          "id": "B5",
+          "time": "Current",
+          "text": "The customer has offered to send batch codes from the remaining units."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "10-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the carton label establish?",
+        "evidenceIds": [
+          "B1",
+          "B2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The carton identity, not the provenance of every damaged unit.",
+            "feedback": "Consolidation mixed the batches."
+          },
+          {
+            "id": "b",
+            "text": "Northline made every unit.",
+            "feedback": "Both suppliers are represented."
+          },
+          {
+            "id": "c",
+            "text": "Eastbridge made the damaged units.",
+            "feedback": "The codes cannot yet be read."
+          }
+        ]
+      },
+      {
+        "id": "10-scope",
+        "axis": "Scope",
+        "prompt": "What can Ada offer now?",
+        "evidenceIds": [
+          "B3",
+          "B4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "An inspection and remedy path for affected units.",
+            "feedback": "This separates customer remedy from supplier attribution."
+          },
+          {
+            "id": "b",
+            "text": "A supplier fault finding.",
+            "feedback": "Traceability is pending."
+          },
+          {
+            "id": "c",
+            "text": "A refund determination for every unit.",
+            "feedback": "Policy assesses affected units."
+          }
+        ]
+      },
+      {
+        "id": "10-intent",
+        "axis": "Intent",
+        "prompt": "What is Jon trying to avoid?",
+        "evidenceIds": [
+          "B2",
+          "B5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Receiving any more evidence.",
+            "feedback": "Codes would help."
+          },
+          {
+            "id": "b",
+            "text": "Sounding evasive while refusing to invent an attribution.",
+            "feedback": "The email asks explicitly about accountability."
+          },
+          {
+            "id": "c",
+            "text": "Offering any remedy.",
+            "feedback": "A remedy process exists."
+          }
+        ]
+      },
+      {
+        "id": "10-purpose",
+        "axis": "Purpose",
+        "prompt": "Which reply moves the case forward?",
+        "evidenceIds": [
+          "B1",
+          "B4",
+          "B5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Blame Northline because the carton says so.",
+            "feedback": "The carton contained mixed batches."
+          },
+          {
+            "id": "b",
+            "text": "Wait silently until the supplier dispute is complete.",
+            "feedback": "Customer remedy need not await supplier recovery."
+          },
+          {
+            "id": "c",
+            "text": "Acknowledge damage, request codes, explain assessment and avoid naming a responsible supplier yet.",
+            "feedback": "It addresses the customer now and preserves evidential accuracy."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Draft a reply to Jon with customer-facing language that owns the damaged shipment, separates remedy from supplier attribution, and requests the batch evidence needed for a defensible finding.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Avoid unsupported supplier blame",
+        "Acknowledge observed damage",
+        "Separate customer remedy from recovery",
+        "Specify useful evidence and next update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we name the supplier?",
+      "body": "Hi Jon,\n\nWe can be accountable for the damaged shipment without naming a responsible supplier yet. The carton label identifies the outer package, but the carton contained units from two batches. The photographs show damage; they do not show readable codes for the damaged units. Our inspection also found three damaged units among eight checked, with batch attribution still open.\n\nI suggest: “We are sorry that units in your shipment arrived damaged. We have confirmed damage in the units inspected and are assessing the affected items for the appropriate remedy. The outer carton label does not establish which production batch each damaged item came from, because this shipment combined two batches. Could you send the batch codes from the remaining units, together with any photos of the codes on damaged items? We will use those details to complete the traceability review and update you on the remedy and our findings.”\n\nPlease make clear that the customer does not have to wait for us to settle a supplier recovery claim before we assess their affected units. I will coordinate the inspection record and ask Quality to report what can be attributed once the codes arrive. Until then, calling Northline the cause would be a conclusion our current evidence cannot support.\n\nAda",
+      "annotations": [
+        {
+          "label": "Limits attribution",
+          "excerpt": "carton contained units from two batches",
+          "evidenceIds": [
+            "B1"
+          ]
+        },
+        {
+          "label": "Uses inspection",
+          "excerpt": "three damaged units among eight checked",
+          "evidenceIds": [
+            "B3"
+          ]
+        },
+        {
+          "label": "Separates remedy",
+          "excerpt": "does not have to wait for us to settle a supplier recovery claim",
+          "evidenceIds": [
+            "B4"
+          ]
+        },
+        {
+          "label": "Requests evidence",
+          "excerpt": "send the batch codes",
+          "evidenceIds": [
+            "B5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "redacted-incident-log",
+    "title": "Transparency with another client in view",
+    "area": "Software",
+    "role": "Sam · Incident manager",
+    "teaser": "A client requests the full incident log, which contains another client’s identifiers.",
+    "misunderstanding": "Transparency is being equated with sending an unredacted operational log.",
+    "email": {
+      "from": "Iris · Account engineering",
+      "to": "Sam · Incident response",
+      "sent": "Monday, 14:40",
+      "subject": "Full log request from Arbor",
+      "body": "Hi Sam,\n\nArbor says a summary will not be enough and asks for the complete incident log to verify our timeline. I agree they deserve evidence, but the raw log includes entries from another customer. Can we redact it and still call the account complete? I need to answer their security lead today.\n\nIris"
+    },
+    "document": {
+      "title": "Disclosure review",
+      "intro": "The incident timeline is verified; the raw log includes records beyond Arbor’s tenancy.",
+      "facts": [
+        {
+          "id": "L1",
+          "time": "Review",
+          "text": "Arbor’s affected request window is 10:14–10:47."
+        },
+        {
+          "id": "L2",
+          "time": "Review",
+          "text": "The raw log includes timestamps, trace IDs and another customer’s account identifiers."
+        },
+        {
+          "id": "L3",
+          "time": "Review",
+          "text": "The timeline of detection, containment and recovery has been checked against monitoring records."
+        },
+        {
+          "id": "L4",
+          "time": "Policy",
+          "text": "Other customers’ identifiers must not be disclosed; a redacted extract may be shared after security review."
+        },
+        {
+          "id": "L5",
+          "time": "Current",
+          "text": "The redacted extract has not completed security review."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "11-evidence",
+        "axis": "Evidence",
+        "prompt": "What supports a substantive account for Arbor?",
+        "evidenceIds": [
+          "L1",
+          "L3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The complete raw file alone.",
+            "feedback": "Raw data also contains unrelated identifiers."
+          },
+          {
+            "id": "b",
+            "text": "A guess about all tenant activity.",
+            "feedback": "The timeline was checked."
+          },
+          {
+            "id": "c",
+            "text": "A verified timeline and the affected request window.",
+            "feedback": "These are verified."
+          }
+        ]
+      },
+      {
+        "id": "11-scope",
+        "axis": "Scope",
+        "prompt": "Why can the full raw log not simply be sent?",
+        "evidenceIds": [
+          "L2",
+          "L4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The event has no log.",
+            "feedback": "A raw log exists."
+          },
+          {
+            "id": "b",
+            "text": "Arbor was not affected.",
+            "feedback": "Arbor’s affected window is recorded."
+          },
+          {
+            "id": "c",
+            "text": "It includes another customer’s identifiers.",
+            "feedback": "Those identifiers require protection."
+          }
+        ]
+      },
+      {
+        "id": "11-intent",
+        "axis": "Intent",
+        "prompt": "What concern does Iris need to address?",
+        "evidenceIds": [
+          "L3",
+          "L5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether a redacted account will be credible and timely.",
+            "feedback": "The email asks about completeness and a same-day answer."
+          },
+          {
+            "id": "b",
+            "text": "Whether the log can be deleted.",
+            "feedback": "Iris asks how to give a credible account while protecting another client, not whether records can be erased."
+          },
+          {
+            "id": "c",
+            "text": "Whether Arbor wants a refund.",
+            "feedback": "No refund request appears."
+          }
+        ]
+      },
+      {
+        "id": "11-purpose",
+        "axis": "Purpose",
+        "prompt": "Which offer is defensible today?",
+        "evidenceIds": [
+          "L3",
+          "L4",
+          "L5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Provide the verified timeline now and offer a reviewed redacted extract when cleared, explaining the boundary.",
+            "feedback": "This gives evidence and a transparent limit."
+          },
+          {
+            "id": "b",
+            "text": "Send the raw log with identifiers intact.",
+            "feedback": "Policy forbids disclosing other identifiers."
+          },
+          {
+            "id": "c",
+            "text": "Promise the reviewed extract by close of business.",
+            "feedback": "Review is not complete."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Iris with a concise security-lead response. Explain the disclosure boundary without claiming the redacted extract is complete or approved; give the verified timeline now and a review path for the extract.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Protect third-party identifiers",
+        "Offer the verified incident account",
+        "Describe redaction honestly",
+        "Avoid an unsupported delivery promise"
+      ]
+    },
+    "model": {
+      "subject": "Re: Full log request from Arbor",
+      "body": "Hi Iris,\n\nArbor needs a useful, testable account of the incident. We have verified the detection, containment and recovery timeline against monitoring records, and we can state the affected request window as 10:14–10:47. The raw log, however, contains another customer’s account identifiers. Sending it unredacted would disclose information unrelated to Arbor.\n\nI would tell their security lead: “We can share the verified incident timeline and the request window relevant to your tenant now. We are also preparing a log extract for security review. The extract will remove identifiers belonging to other customers, and we will describe any redactions so you can understand the limits of the material. We will send it once that review is complete, or explain any further constraint that the review identifies.”\n\nA redacted extract can support a complete account of Arbor’s relevant events, but we should not call it a complete copy of the raw log. Nor should we say it is ready: security has not approved it yet. I can send you the verified timeline today and coordinate the extract review. If Arbor has specific trace IDs or disputed timestamps, ask them to identify those so the review can address their questions directly.\n\nSam",
+      "annotations": [
+        {
+          "label": "Offers verified evidence",
+          "excerpt": "verified the detection, containment and recovery timeline",
+          "evidenceIds": [
+            "L3"
+          ]
+        },
+        {
+          "label": "Names disclosure boundary",
+          "excerpt": "another customer’s account identifiers",
+          "evidenceIds": [
+            "L2",
+            "L4"
+          ]
+        },
+        {
+          "label": "Accurate scope",
+          "excerpt": "not call it a complete copy of the raw log",
+          "evidenceIds": [
+            "L2"
+          ]
+        },
+        {
+          "label": "Qualifies availability",
+          "excerpt": "security has not approved it yet",
+          "evidenceIds": [
+            "L5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "embargo-preview",
+    "title": "Before the announcement",
+    "area": "Marketing",
+    "role": "Theo · Partner communications",
+    "teaser": "A partner posted a teaser before the joint launch. The agreement is clear about the full announcement, less clear about teasers.",
+    "misunderstanding": "A teaser is being labelled a clear breach of an embargo that only defines the full announcement.",
+    "email": {
+      "from": "Clara Duval · Communications chief",
+      "to": "Theo · Partnerships",
+      "sent": "Wednesday, 08:15",
+      "subject": "Partner broke the embargo?",
+      "body": "Hi Theo,\n\nThe partner posted a preview last night, one day before our joint announcement. I want to tell them they breached the embargo and ask for an immediate public correction. The timing is frustrating after the work we put into the launch. Please check the agreement and draft a firm note; I do not want a technical reading of the contract to make us sound indifferent.\n\nClara"
+    },
+    "document": {
+      "title": "Launch agreement and publication record",
+      "intro": "The written terms and actual post leave room for a narrower claim than “clear breach.”",
+      "facts": [
+        {
+          "id": "E1",
+          "time": "Agreement",
+          "text": "The signed plan sets the full product announcement for Thursday at 09:00 and says neither party may publish the complete announcement earlier."
+        },
+        {
+          "id": "E2",
+          "time": "Agreement",
+          "text": "The plan permits “preview content” before Thursday but does not define the permitted detail or approval process for a teaser."
+        },
+        {
+          "id": "E3",
+          "time": "Tue 20:00",
+          "text": "The partner posted a short teaser naming the partnership and showing a cropped product image; it did not include pricing or the full feature list."
+        },
+        {
+          "id": "E4",
+          "time": "Wed 07:30",
+          "text": "The post remained live. No one has asked the partner why it was posted or whether they thought it met the preview clause."
+        },
+        {
+          "id": "E5",
+          "time": "Current",
+          "text": "The joint announcement is scheduled for tomorrow; the parties have not agreed on a public correction."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "12-evidence",
+        "axis": "Evidence",
+        "prompt": "What is established about the partner post?",
+        "evidenceIds": [
+          "E2",
+          "E3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "It was early and contained some launch detail, while the preview clause remains ambiguous.",
+            "feedback": "That reflects both the post and the unresolved clause."
+          },
+          {
+            "id": "b",
+            "text": "It reproduced the complete announcement.",
+            "feedback": "The post omitted major announcement details."
+          },
+          {
+            "id": "c",
+            "text": "It was approved by both parties.",
+            "feedback": "No approval is recorded."
+          }
+        ]
+      },
+      {
+        "id": "12-scope",
+        "axis": "Scope",
+        "prompt": "What would “clear breach” overstate?",
+        "evidenceIds": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The post appeared before Thursday.",
+            "feedback": "The timing is documented."
+          },
+          {
+            "id": "b",
+            "text": "The agreement’s meaning for teasers has not been settled.",
+            "feedback": "The preview permission complicates an absolute breach claim."
+          },
+          {
+            "id": "c",
+            "text": "The partnership name appeared.",
+            "feedback": "The name was in the teaser."
+          }
+        ]
+      },
+      {
+        "id": "12-intent",
+        "axis": "Intent",
+        "prompt": "What does Clara need besides a clause analysis?",
+        "evidenceIds": [
+          "E4",
+          "E5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "A response that protects launch coordination and takes the early post seriously.",
+            "feedback": "Her email expresses frustration about timing and asks for a firm note."
+          },
+          {
+            "id": "b",
+            "text": "A demand to cancel the launch.",
+            "feedback": "The scheduled launch remains."
+          },
+          {
+            "id": "c",
+            "text": "A public accusation before contacting the partner.",
+            "feedback": "The record does not justify that leap."
+          }
+        ]
+      },
+      {
+        "id": "12-purpose",
+        "axis": "Purpose",
+        "prompt": "Which first contact best preserves options?",
+        "evidenceIds": [
+          "E2",
+          "E4",
+          "E5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignore the post because previews are permitted.",
+            "feedback": "Permitted preview content still needs coordination."
+          },
+          {
+            "id": "b",
+            "text": "Declare a breach and order a public apology immediately.",
+            "feedback": "The clause and response have not been clarified."
+          },
+          {
+            "id": "c",
+            "text": "Describe the concern, ask how the partner read the preview clause, and request a coordinated next step.",
+            "feedback": "It is firm about the impact without prejudging the disputed interpretation."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Clara with a proposed note to the partner. Recognise the impact of the early post, avoid a legal conclusion the record does not establish, and ask for a timely coordinated remedy before the scheduled announcement.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Distinguish early posting from a proven breach",
+        "Treat Clara’s concern as legitimate",
+        "Seek the partner’s reading without sounding weak",
+        "Protect tomorrow’s coordinated launch"
+      ]
+    },
+    "model": {
+      "subject": "Re: Partner broke the embargo?",
+      "body": "Hi Clara,\n\nThe timing is a real problem, and I would address it today. I would be careful about calling the post a clear embargo breach before we speak with the partner. The agreement bars an early full announcement, but it also permits preview content without defining how much detail a teaser may include. Their post names the partnership and uses an image, yet it does not carry the complete announcement. That leaves a genuine question about how each side understood the preview clause.\n\nI suggest this note: “We saw last night's preview and are concerned that it disclosed the partnership before the coordinated announcement we scheduled for Thursday. The agreement allows preview content, but we had not aligned on this post or its level of detail. Please tell us how your team understood that provision and who approved the timing. We would like to agree today whether the post should be adjusted and how both teams will handle tomorrow's announcement.”\n\nThat is firm about the impact without prejudging the contractual issue or demanding a public correction neither side has discussed. I can call their communications lead after sending it, then return with a proposed joint course of action by midday. If they understood the clause differently, we will still need a practical fix for the launch.\n\nTheo",
+      "annotations": [
+        {
+          "label": "Keeps the clause open",
+          "excerpt": "permits preview content without defining how much detail",
+          "evidenceIds": [
+            "E2"
+          ]
+        },
+        {
+          "label": "Names the impact",
+          "excerpt": "disclosed the partnership before the coordinated announcement",
+          "evidenceIds": [
+            "E3",
+            "E5"
+          ]
+        },
+        {
+          "label": "Seeks interpretation",
+          "excerpt": "how your team understood that provision",
+          "evidenceIds": [
+            "E4"
+          ]
+        },
+        {
+          "label": "Protects coordination",
+          "excerpt": "a proposed joint course of action by midday",
+          "evidenceIds": [
+            "E5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "reference-wording",
+    "title": "A reference with an invented ending",
+    "area": "People",
+    "role": "Viv · People operations",
+    "teaser": "A manager wants to call a departure mutual though the employee’s own account is still disputed.",
+    "misunderstanding": "A tactful phrase is being used as if it were an agreed description of an unresolved departure.",
+    "email": {
+      "from": "Ruth · Department head",
+      "to": "Viv · People operations",
+      "sent": "Wednesday, 09:10",
+      "subject": "Reference wording for Jo",
+      "body": "Hi Viv,\n\nJo asked for a reference by Friday. I was going to write that we “mutually agreed it was time for a new chapter.” It sounds constructive, and I do not want to recount a difficult final month. Can I use that phrase? Jo has also asked that we mention their project leadership.\n\nRuth"
+    },
+    "document": {
+      "title": "Employment record and reference request",
+      "intro": "The record does not include an agreed narrative of the departure.",
+      "facts": [
+        {
+          "id": "F1",
+          "time": "Record",
+          "text": "Jo’s employment ended on June 30; the formal letter gives the end date and role but no jointly agreed reason."
+        },
+        {
+          "id": "F2",
+          "time": "Record",
+          "text": "Jo’s final meeting note disputes the manager’s account of why the role ended."
+        },
+        {
+          "id": "F3",
+          "time": "Record",
+          "text": "Jo led the Atlas project; the final review documents strong delivery and a missed reporting milestone."
+        },
+        {
+          "id": "F4",
+          "time": "Policy",
+          "text": "References must be accurate, supportable and consistent with the approved reference process."
+        },
+        {
+          "id": "F5",
+          "time": "Current",
+          "text": "Jo has asked for project leadership to be mentioned but has not approved the proposed “mutual” phrase."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "13-evidence",
+        "axis": "Evidence",
+        "prompt": "What is documented about the departure reason?",
+        "evidenceIds": [
+          "F1",
+          "F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The end date is recorded; the reason remains disputed.",
+            "feedback": "This is the evidence boundary."
+          },
+          {
+            "id": "b",
+            "text": "Both sides agreed on a new chapter.",
+            "feedback": "No such agreement is recorded."
+          },
+          {
+            "id": "c",
+            "text": "Jo resigned voluntarily.",
+            "feedback": "No resignation is stated."
+          }
+        ]
+      },
+      {
+        "id": "13-scope",
+        "axis": "Scope",
+        "prompt": "How may project work be described?",
+        "evidenceIds": [
+          "F3",
+          "F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "As flawless performance.",
+            "feedback": "The review also records a missed milestone."
+          },
+          {
+            "id": "b",
+            "text": "Only by repeating the manager’s opinion.",
+            "feedback": "The approved process applies."
+          },
+          {
+            "id": "c",
+            "text": "Accurately, including leadership, with wording checked against the record.",
+            "feedback": "Leadership is documented; precision matters."
+          }
+        ]
+      },
+      {
+        "id": "13-intent",
+        "axis": "Intent",
+        "prompt": "Why does Ruth prefer “mutual”?",
+        "evidenceIds": [
+          "F2",
+          "F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "She wants a constructive tone without revisiting a disputed ending.",
+            "feedback": "Her email makes the motive clear."
+          },
+          {
+            "id": "b",
+            "text": "Jo requested it.",
+            "feedback": "Jo has not approved the phrase."
+          },
+          {
+            "id": "c",
+            "text": "The policy requires it.",
+            "feedback": "Policy requires accuracy, not this phrase."
+          }
+        ]
+      },
+      {
+        "id": "13-purpose",
+        "axis": "Purpose",
+        "prompt": "What should Viv recommend?",
+        "evidenceIds": [
+          "F1",
+          "F3",
+          "F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Use “mutual” to avoid discomfort.",
+            "feedback": "The phrase is unsupported."
+          },
+          {
+            "id": "b",
+            "text": "Use verified role, dates and project contributions; route the draft through the approved process.",
+            "feedback": "This gives a useful, accurate reference."
+          },
+          {
+            "id": "c",
+            "text": "Refuse to mention any work.",
+            "feedback": "The project leadership is documented."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Ruth with a tactful way to decline the “mutual” phrase and a draft reference paragraph that credits Jo’s documented work without inventing agreement about the departure or flattening the performance record.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Avoid an invented departure account",
+        "Use documented positive work precisely",
+        "Keep a professional, humane tone",
+        "Follow the reference review process"
+      ]
+    },
+    "model": {
+      "subject": "Re: Reference wording for Jo",
+      "body": "Hi Ruth,\n\nI understand why you want the reference to be constructive. I would avoid “mutually agreed it was time for a new chapter.” Our file records the end date and role, but it does not record an agreed explanation for the departure. Jo’s final meeting note also disputes the manager’s account. Using “mutual” would present agreement as fact when the record does not support it. We do not need to revisit that dispute in a reference.\n\nWe can instead focus on work we can substantiate. For example: “Jo worked with us as [role] until June 30 and led the Atlas project. Their final review recognised strong delivery on that project. The review also recorded a reporting milestone that was not met.” Whether the last sentence belongs in a particular reference will depend on the questions asked and our approved process; I would not add broad claims such as “flawless performance.”\n\nPlease send me the proposed reference and the recipient's request before Friday, and I will route it through the reference review. We can make the language warm and specific while keeping it consistent with the record. Jo asked us to mention project leadership, and that is a contribution we can acknowledge accurately without asserting anything about how the departure was agreed.\n\nViv",
+      "annotations": [
+        {
+          "label": "Rejects invented agreement",
+          "excerpt": "does not record an agreed explanation",
+          "evidenceIds": [
+            "F1",
+            "F2"
+          ]
+        },
+        {
+          "label": "Credits work",
+          "excerpt": "led the Atlas project",
+          "evidenceIds": [
+            "F3"
+          ]
+        },
+        {
+          "label": "Keeps balanced record",
+          "excerpt": "reporting milestone that was not met",
+          "evidenceIds": [
+            "F3"
+          ]
+        },
+        {
+          "label": "Uses process",
+          "excerpt": "route it through the reference review",
+          "evidenceIds": [
+            "F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "corrected-demographics",
+    "title": "Which version did the practice receive?",
+    "area": "Health administration",
+    "role": "Owen · Records liaison",
+    "teaser": "A referring practice received an old summary before a demographic correction was issued.",
+    "misunderstanding": "Updating the local record is being treated as if every recipient has the corrected version.",
+    "email": {
+      "from": "Mina · Clinic operations",
+      "to": "Owen · Records liaison",
+      "sent": "Thursday, 14:15",
+      "subject": "Do we need to contact the practice?",
+      "body": "Hi Owen,\n\nWe corrected the patient’s date of birth in our system this morning. The referring practice received a summary yesterday. I would rather not alarm them if the update has already flowed through automatically. Can we say their copy is current? Please propose a message if we need one.\n\nMina"
+    },
+    "document": {
+      "title": "Record distribution audit",
+      "intro": "This audit confirms versions and delivery, not the clinical effect of the error.",
+      "facts": [
+        {
+          "id": "C1",
+          "time": "Wednesday",
+          "text": "Version 1 of the summary, with the incorrect date of birth, was sent to the referring practice."
+        },
+        {
+          "id": "C2",
+          "time": "Thursday 09:10",
+          "text": "The local record and Version 2 summary were corrected."
+        },
+        {
+          "id": "C3",
+          "time": "Thursday 11:00",
+          "text": "No outbound delivery of Version 2 to the practice is recorded."
+        },
+        {
+          "id": "C4",
+          "time": "Current",
+          "text": "The practice has not confirmed which version it is using."
+        },
+        {
+          "id": "C5",
+          "time": "Procedure",
+          "text": "A corrected copy must be sent through the approved records channel with clear version identification; clinicians assess any clinical implication."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "14-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the audit establish about Version 2?",
+        "evidenceIds": [
+          "C2",
+          "C3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The practice has opened it.",
+            "feedback": "No acknowledgement exists."
+          },
+          {
+            "id": "b",
+            "text": "It exists locally, with no recorded outbound delivery.",
+            "feedback": "This is the recorded status."
+          },
+          {
+            "id": "c",
+            "text": "It replaced Version 1 automatically.",
+            "feedback": "A local Version 2 does not show that the practice received it or that Version 1 was replaced."
+          }
+        ]
+      },
+      {
+        "id": "14-scope",
+        "axis": "Scope",
+        "prompt": "What should Owen avoid claiming?",
+        "evidenceIds": [
+          "C4",
+          "C5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the local date of birth was corrected.",
+            "feedback": "The local correction is documented."
+          },
+          {
+            "id": "b",
+            "text": "That the practice has the current copy or that the correction had no clinical effect.",
+            "feedback": "Neither claim is established by this audit."
+          },
+          {
+            "id": "c",
+            "text": "That Version 1 was sent.",
+            "feedback": "Version 1 delivery is recorded."
+          }
+        ]
+      },
+      {
+        "id": "14-intent",
+        "axis": "Intent",
+        "prompt": "Why is Mina hesitant?",
+        "evidenceIds": [
+          "C1",
+          "C4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "She has proof the practice has Version 2.",
+            "feedback": "Delivery is unconfirmed."
+          },
+          {
+            "id": "b",
+            "text": "She wants to delete the old summary.",
+            "feedback": "Mina is trying to establish what reached the practice before describing the correction, not erase the earlier record."
+          },
+          {
+            "id": "c",
+            "text": "She wants to avoid unnecessary alarm while resolving an uncertain downstream status.",
+            "feedback": "Her email explicitly mentions concern about alarm."
+          }
+        ]
+      },
+      {
+        "id": "14-purpose",
+        "axis": "Purpose",
+        "prompt": "What is the next responsible step?",
+        "evidenceIds": [
+          "C3",
+          "C5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send a clearly marked corrected summary through the approved channel and request acknowledgement.",
+            "feedback": "This repairs the distribution gap."
+          },
+          {
+            "id": "b",
+            "text": "Assume sync occurred and close the issue.",
+            "feedback": "Closing the issue on an assumed sync would leave the practice without a confirmed corrected summary."
+          },
+          {
+            "id": "c",
+            "text": "Ask records staff to judge the clinical implications.",
+            "feedback": "Clinical assessment belongs with clinicians."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Mina with a brief message to the practice. Distinguish local correction from distribution, identify the superseded version, request acknowledgement, and leave any clinical interpretation to the responsible clinician.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Track document versions accurately",
+        "Avoid an unsupported automatic-sync claim",
+        "Use the approved correction channel",
+        "Separate administrative and clinical judgments"
+      ]
+    },
+    "model": {
+      "subject": "Re: Do we need to contact the practice?",
+      "body": "Hi Mina,\n\nWe should contact the practice. The audit shows that Version 1, containing the incorrect date of birth, was sent yesterday. We corrected the local record and created Version 2 this morning, but there is no recorded delivery of Version 2 to the practice. We therefore cannot say its copy is current or assume an automatic update occurred. We also do not yet know which version they are using.\n\nI suggest sending the corrected summary through the approved records channel with a clear version label and this note: “We are sending Version 2 of the patient summary, dated today. It corrects the date of birth in Version 1 sent yesterday. Please use Version 2 in place of the earlier copy and confirm receipt. If the earlier version has already been used in a care decision, please alert the appropriate clinician so any implications can be assessed.”\n\nI will record the delivery and follow up if acknowledgement is not received. We can keep the message factual and proportionate; notifying the practice of a corrected document is necessary even though the clinical significance of the earlier error has not been established. Records staff should not declare that it had no effect. I will also ask the responsible clinician whether any additional review is warranted.\n\nOwen",
+      "annotations": [
+        {
+          "label": "Tracks version",
+          "excerpt": "Version 1, containing the incorrect date of birth",
+          "evidenceIds": [
+            "C1"
+          ]
+        },
+        {
+          "label": "Names distribution gap",
+          "excerpt": "no recorded delivery of Version 2",
+          "evidenceIds": [
+            "C3"
+          ]
+        },
+        {
+          "label": "Uses approved channel",
+          "excerpt": "approved records channel",
+          "evidenceIds": [
+            "C5"
+          ]
+        },
+        {
+          "label": "Reserves clinical assessment",
+          "excerpt": "ask the responsible clinician",
+          "evidenceIds": [
+            "C5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "duplicate-invoice-or-hold",
+    "title": "Two lines, one uncertainty",
+    "area": "Operations",
+    "role": "Mara · Billing operations",
+    "teaser": "A customer sees two card entries and calls them duplicate charges. The team has evidence for only one settled payment.",
+    "misunderstanding": "A temporary card authorisation and a settled charge are being treated as two confirmed payments.",
+    "email": {
+      "from": "Ben Lee · Customer care",
+      "to": "Mara · Billing",
+      "sent": "Monday, 09:05",
+      "subject": "Customer says we charged twice",
+      "body": "Hi Mara,\n\nThe customer has sent a screenshot of two card entries for the same amount. Our billing system shows one invoice paid. I am tempted to tell them the second line is only a hold and will disappear, but I cannot see their bank account. They are angry and want a refund today. What can we say that takes the concern seriously without asserting what their bank will do?\n\nBen"
+    },
+    "document": {
+      "title": "Billing and payment events",
+      "intro": "The internal ledger and the customer’s bank display are different sources of information.",
+      "facts": [
+        {
+          "id": "B1",
+          "time": "Fri 11:00",
+          "text": "The payment gateway requested a card authorisation for the invoice amount."
+        },
+        {
+          "id": "B2",
+          "time": "Fri 11:02",
+          "text": "One payment was captured and the invoice was marked paid in the internal ledger."
+        },
+        {
+          "id": "B3",
+          "time": "Mon 08:50",
+          "text": "The customer’s screenshot shows two entries; one is labelled “pending” by the bank and one is posted."
+        },
+        {
+          "id": "B4",
+          "time": "Current",
+          "text": "The gateway record shows no second capture. The bank’s release timing for the pending entry is unknown."
+        },
+        {
+          "id": "B5",
+          "time": "Policy",
+          "text": "Billing can investigate a suspected duplicate capture and issue a refund only for a confirmed extra capture."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "15-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the internal record support?",
+        "evidenceIds": [
+          "B2",
+          "B4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "One captured payment and no recorded second capture.",
+            "feedback": "This is the strongest supported statement."
+          },
+          {
+            "id": "b",
+            "text": "No customer-visible second entry.",
+            "feedback": "The screenshot shows a second pending entry."
+          },
+          {
+            "id": "c",
+            "text": "Two settled payments.",
+            "feedback": "The ledger shows one capture."
+          }
+        ]
+      },
+      {
+        "id": "15-scope",
+        "axis": "Scope",
+        "prompt": "What cannot Mara promise?",
+        "evidenceIds": [
+          "B3",
+          "B4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "That billing will investigate.",
+            "feedback": "Investigation is within billing’s role."
+          },
+          {
+            "id": "b",
+            "text": "That the ledger shows one paid invoice.",
+            "feedback": "The internal ledger documents that status."
+          },
+          {
+            "id": "c",
+            "text": "When the pending bank entry will disappear.",
+            "feedback": "The bank controls that timing and it is not known."
+          }
+        ]
+      },
+      {
+        "id": "15-intent",
+        "axis": "Intent",
+        "prompt": "What does Ben need from Billing?",
+        "evidenceIds": [
+          "B3",
+          "B5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A way to dismiss the screenshot.",
+            "feedback": "The screenshot shows a real concern."
+          },
+          {
+            "id": "b",
+            "text": "A response that recognises the customer’s visible concern and explains the verification path.",
+            "feedback": "His email asks how to respond responsibly."
+          },
+          {
+            "id": "c",
+            "text": "A refund without checking the gateway.",
+            "feedback": "Policy requires confirmation of an extra capture first."
+          }
+        ]
+      },
+      {
+        "id": "15-purpose",
+        "axis": "Purpose",
+        "prompt": "What is the best next step?",
+        "evidenceIds": [
+          "B4",
+          "B5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Issue a duplicate refund immediately.",
+            "feedback": "There is no confirmed extra capture to refund."
+          },
+          {
+            "id": "b",
+            "text": "Explain the one-capture record, investigate the pending entry, and update the customer without predicting the bank’s timing.",
+            "feedback": "This balances the two records and acts on the uncertainty."
+          },
+          {
+            "id": "c",
+            "text": "Assure the customer the second line is harmless and will clear tonight.",
+            "feedback": "The release timing is unknown."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Ben with customer-ready wording. Explain the distinction between the internal capture and the pending bank entry, avoid dismissing the screenshot, and state when Billing would investigate or refund without promising the bank’s release date.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "State the one-capture evidence accurately",
+        "Acknowledge the customer’s visible second entry",
+        "Avoid an unverified bank-timing claim",
+        "Offer investigation and a bounded update"
+      ]
+    },
+    "model": {
+      "subject": "Re: Customer says we charged twice",
+      "body": "Hi Ben,\n\nThe customer’s screenshot deserves a careful response. Our ledger shows one captured payment for the invoice, and the gateway has no record of a second capture. The other line in the screenshot is marked pending by the bank, which is consistent with an authorisation, but we should not tell the customer exactly when it will disappear or say with certainty what their bank will do. We can explain what our records show while treating their display as a real concern.\n\nYou could write: “I can see why two entries for the same amount are worrying. We have checked our payment record and can confirm one completed charge; we do not see a second captured payment. The other entry appears as pending in the screenshot. We are checking that authorisation with our payment provider and will update you with what we can verify. If we find a second captured payment, we will arrange the appropriate correction.”\n\nI will request the provider’s transaction detail today and send you a status by 3 p.m. I will use the transaction references already in our systems to reconcile the entries with the provider. Please avoid asking the customer to send card details by email.\n\nMara",
+      "annotations": [
+        {
+          "label": "States the ledger limit",
+          "excerpt": "one captured payment",
+          "evidenceIds": [
+            "B2",
+            "B4"
+          ]
+        },
+        {
+          "label": "Acknowledges the screenshot",
+          "excerpt": "two entries for the same amount are worrying",
+          "evidenceIds": [
+            "B3"
+          ]
+        },
+        {
+          "label": "Avoids bank prediction",
+          "excerpt": "should not tell the customer exactly when it will disappear",
+          "evidenceIds": [
+            "B4"
+          ]
+        },
+        {
+          "label": "Conditions a correction",
+          "excerpt": "If we find a second captured payment",
+          "evidenceIds": [
+            "B5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "prototype-dependency",
+    "title": "Approved for the prototype",
+    "area": "Software",
+    "role": "Nico · Engineering governance",
+    "teaser": "A library cleared for a prototype is now in a production build without the promised review.",
+    "misunderstanding": "Prototype permission is being treated as production approval.",
+    "email": {
+      "from": "Sam · Delivery lead",
+      "to": "Nico · Engineering governance",
+      "sent": "Friday, 10:25",
+      "subject": "Can we say the dependency was approved?",
+      "body": "Hi Nico,\n\nA customer reviewer noticed a third-party library in our production build. We did get approval to use it during the prototype, and I do not want to imply the team ignored process. Could we tell them the dependency was approved and that paperwork is catching up? The release is live, so I need a careful answer today.\n\nSam"
+    },
+    "document": {
+      "title": "Dependency decision record",
+      "intro": "The record distinguishes a limited prototype decision from production review.",
+      "facts": [
+        {
+          "id": "O1",
+          "time": "March",
+          "text": "The library was approved for an internal prototype only."
+        },
+        {
+          "id": "O2",
+          "time": "March",
+          "text": "The approval note required security and licensing review before production use."
+        },
+        {
+          "id": "O3",
+          "time": "Thursday",
+          "text": "The library appeared in a production build."
+        },
+        {
+          "id": "O4",
+          "time": "Current",
+          "text": "No completed production review is recorded; assessment of the current build is underway."
+        },
+        {
+          "id": "O5",
+          "time": "Current",
+          "text": "No finding about license noncompliance or exploitable vulnerability has been made."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "16-evidence",
+        "axis": "Evidence",
+        "prompt": "What approval exists?",
+        "evidenceIds": [
+          "O1",
+          "O2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Internal prototype use, with further review required.",
+            "feedback": "This states both the grant and condition."
+          },
+          {
+            "id": "b",
+            "text": "Unrestricted production use.",
+            "feedback": "The note limits scope."
+          },
+          {
+            "id": "c",
+            "text": "No permission of any kind.",
+            "feedback": "Prototype use was approved."
+          }
+        ]
+      },
+      {
+        "id": "16-scope",
+        "axis": "Scope",
+        "prompt": "What can be said about risk now?",
+        "evidenceIds": [
+          "O4",
+          "O5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confirmed violation has occurred.",
+            "feedback": "No such finding exists."
+          },
+          {
+            "id": "b",
+            "text": "Production review is incomplete; no specific violation finding has been made.",
+            "feedback": "This is the recorded status."
+          },
+          {
+            "id": "c",
+            "text": "The build is fully cleared.",
+            "feedback": "Review is unfinished."
+          }
+        ]
+      },
+      {
+        "id": "16-intent",
+        "axis": "Intent",
+        "prompt": "What concern is Sam balancing?",
+        "evidenceIds": [
+          "O1",
+          "O3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Concealing that the library is in production.",
+            "feedback": "The question openly acknowledges production use."
+          },
+          {
+            "id": "b",
+            "text": "Acknowledging a process gap without making a premature technical or legal conclusion.",
+            "feedback": "The email names the prior approval and current release."
+          },
+          {
+            "id": "c",
+            "text": "Cancelling the prototype retrospectively.",
+            "feedback": "No cancellation is proposed."
+          }
+        ]
+      },
+      {
+        "id": "16-purpose",
+        "axis": "Purpose",
+        "prompt": "Which customer response is supportable?",
+        "evidenceIds": [
+          "O2",
+          "O4",
+          "O5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The library was approved for production; only paperwork is late.",
+            "feedback": "The production review is missing."
+          },
+          {
+            "id": "b",
+            "text": "Prototype use was approved, production review was required and is now underway; we will share verified findings and action.",
+            "feedback": "This distinguishes status and commitment."
+          },
+          {
+            "id": "c",
+            "text": "The library is illegal and unsafe.",
+            "feedback": "No such findings have been made."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Sam with customer-ready wording that acknowledges the gap between prototype approval and production use, describes the ongoing assessment without predicting findings, and commits to a verifiable follow-up.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "State the approval boundary",
+        "Own the process gap",
+        "Avoid premature licensing or security conclusions",
+        "Give a concrete assessment and update path"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we say the dependency was approved?",
+      "body": "Hi Sam,\n\nI would not say the dependency was approved without qualification. The March decision permitted its use in an internal prototype and explicitly required security and licensing review before production. The library is now in a production build, and we do not have a completed production review on record. Calling that “paperwork catching up” would understate the decision that remains open. At the same time, the current record does not establish a license violation or an exploitable vulnerability.\n\nFor the customer, I suggest: “This library was approved for use in our internal prototype. Our process required additional review before production use, and we have identified that the production review was not completed before the library appeared in the live build. We are assessing the dependency and the current release now. We will share the verified findings, any required remediation and the resulting timeline once the assessment is complete.”\n\nI will coordinate the security and licensing reviewers today and record the build versions in scope. We should agree on a date for the next status update after those reviewers confirm what they can check and when. If an immediate containment step is warranted, we will communicate it as an action, with its reason, rather than imply that a particular risk has already been proven.\n\nNico",
+      "annotations": [
+        {
+          "label": "Defines approval",
+          "excerpt": "internal prototype",
+          "evidenceIds": [
+            "O1"
+          ]
+        },
+        {
+          "label": "Owns gap",
+          "excerpt": "production review was not completed",
+          "evidenceIds": [
+            "O2",
+            "O4"
+          ]
+        },
+        {
+          "label": "Limits risk claim",
+          "excerpt": "does not establish a license violation or an exploitable vulnerability",
+          "evidenceIds": [
+            "O5"
+          ]
+        },
+        {
+          "label": "Commits follow-up",
+          "excerpt": "share the verified findings",
+          "evidenceIds": [
+            "O4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "accessibility-claim",
+    "title": "What did the audit cover?",
+    "area": "Marketing",
+    "role": "Lena · Content strategy",
+    "teaser": "A launch page calls the service fully accessible. The audit reviewed only one user journey.",
+    "misunderstanding": "A passing audit of checkout is being used as a guarantee about the whole service.",
+    "email": {
+      "from": "Owen Price · Brand lead",
+      "to": "Lena · Content",
+      "sent": "Thursday, 13:05",
+      "subject": "Can we keep “fully accessible”?",
+      "body": "Hi Lena,\n\nThe launch page says the service is fully accessible. I know the accessibility team gave checkout a pass, and removing the line just before launch could undermine confidence. Can we keep it with a footnote, or replace it with something equally clear? The design team needs final copy by four. Please tell me what the audit actually allows us to claim.\n\nOwen"
+    },
+    "document": {
+      "title": "Accessibility review · scope note",
+      "intro": "The review assessed a defined journey and recorded work still open elsewhere.",
+      "facts": [
+        {
+          "id": "X1",
+          "time": "Review scope",
+          "text": "The external audit covered account creation and checkout on desktop and mobile."
+        },
+        {
+          "id": "X2",
+          "time": "Review result",
+          "text": "The audited journey met the agreed review criteria after fixes were verified."
+        },
+        {
+          "id": "X3",
+          "time": "Excluded scope",
+          "text": "Search, account settings and support pages were not included in the audit."
+        },
+        {
+          "id": "X4",
+          "time": "Open work",
+          "text": "The internal team has logged accessibility issues on account settings; their severity and remediation dates are under review."
+        },
+        {
+          "id": "X5",
+          "time": "Current",
+          "text": "No whole-service assessment has been completed."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "17-evidence",
+        "axis": "Evidence",
+        "prompt": "What can the team substantiate?",
+        "evidenceIds": [
+          "X1",
+          "X2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every page in the service was audited and passed.",
+            "feedback": "Several pages were excluded."
+          },
+          {
+            "id": "b",
+            "text": "Account settings has no accessibility issues.",
+            "feedback": "Open issues are logged there."
+          },
+          {
+            "id": "c",
+            "text": "The audited sign-up and checkout journey met the review criteria.",
+            "feedback": "This is the verified result within the review scope."
+          }
+        ]
+      },
+      {
+        "id": "17-scope",
+        "axis": "Scope",
+        "prompt": "Why is a footnote unlikely to repair “fully accessible”?",
+        "evidenceIds": [
+          "X3",
+          "X4",
+          "X5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "The headline makes a whole-service claim that the evidence does not support.",
+            "feedback": "A narrow qualification cannot make a broad guarantee true."
+          },
+          {
+            "id": "b",
+            "text": "The checkout audit has no value.",
+            "feedback": "The audit is valuable within its defined scope."
+          },
+          {
+            "id": "c",
+            "text": "Footnotes are forbidden in launch copy.",
+            "feedback": "No such rule appears."
+          }
+        ]
+      },
+      {
+        "id": "17-intent",
+        "axis": "Intent",
+        "prompt": "What is Owen trying to protect?",
+        "evidenceIds": [
+          "X2",
+          "X5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "An unapproved remediation date.",
+            "feedback": "He asks about claim wording, not a date."
+          },
+          {
+            "id": "b",
+            "text": "Launch confidence while keeping a clear statement of progress.",
+            "feedback": "His request balances confidence and evidence."
+          },
+          {
+            "id": "c",
+            "text": "A claim that the service has never been tested.",
+            "feedback": "He acknowledges the checkout pass."
+          }
+        ]
+      },
+      {
+        "id": "17-purpose",
+        "axis": "Purpose",
+        "prompt": "Which replacement is strongest?",
+        "evidenceIds": [
+          "X1",
+          "X2",
+          "X4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Our account creation and checkout journey passed an independent accessibility review; we continue to improve other parts of the service.",
+            "feedback": "It describes verified scope and ongoing work."
+          },
+          {
+            "id": "b",
+            "text": "Our entire service is fully accessible, with exceptions noted below.",
+            "feedback": "The whole-service claim remains unsupported."
+          },
+          {
+            "id": "c",
+            "text": "We guarantee every user will encounter no accessibility barrier.",
+            "feedback": "No review can guarantee all user experiences."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Owen with replacement launch copy and a concise rationale. Keep the verified achievement visible while avoiding a whole-service guarantee or an unapproved promise about the open issues.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Name the audited journey and result",
+        "Reject overbroad whole-service wording",
+        "Treat open work accurately",
+        "Provide copy ready for the design team"
+      ]
+    },
+    "model": {
+      "subject": "Re: Can we keep “fully accessible”?",
+      "body": "Hi Owen,\n\nI would change the headline rather than try to rescue “fully accessible” with a footnote. The independent review covered account creation and checkout on desktop and mobile, and that journey met the agreed criteria after fixes. It did not assess search, settings or support. We also have open issues in account settings whose severity and dates are still being reviewed. A reader would reasonably understand “fully accessible” to describe the whole service, which we cannot currently substantiate.\n\nHere is copy the design team can use: “Our account creation and checkout journey has passed an independent accessibility review. We are continuing to improve accessibility across the rest of the service.” If the layout allows a second line, we can link to a page that explains the review scope and how users can report a barrier. That preserves a real achievement without suggesting the work is complete.\n\nI can send the exact approved wording and scope note to design before four. I would not attach a remediation date to the settings issues until the team has confirmed their severity and plan. If Brand needs a shorter headline, “Independently reviewed sign-up and checkout” is accurate; I can check it with the accessibility team before it goes live.\n\nLena",
+      "annotations": [
+        {
+          "label": "Rejects the broad claim",
+          "excerpt": "would change the headline",
+          "evidenceIds": [
+            "X5"
+          ]
+        },
+        {
+          "label": "States the verified achievement",
+          "excerpt": "passed an independent accessibility review",
+          "evidenceIds": [
+            "X1",
+            "X2"
+          ]
+        },
+        {
+          "label": "Names excluded scope",
+          "excerpt": "did not assess search, settings or support",
+          "evidenceIds": [
+            "X3"
+          ]
+        },
+        {
+          "label": "Avoids an invented date",
+          "excerpt": "until the team has confirmed their severity and plan",
+          "evidenceIds": [
+            "X4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "restructure-rumour",
+    "title": "A draft is not a decision",
+    "area": "People",
+    "role": "Mika · People director",
+    "teaser": "A draft planning slide leaks. Staff ask whether jobs are safe, and leadership wants a categorical denial.",
+    "misunderstanding": "The draft is being treated either as a final redundancy plan or as evidence that no change is under consideration.",
+    "email": {
+      "from": "Helen Moore · Managing director",
+      "to": "Mika · People",
+      "sent": "Monday, 08:20",
+      "subject": "Message to staff about the slide",
+      "body": "Hi Mika,\n\nA screenshot of the planning slide is circulating. I want to tell everyone there are no layoffs planned, because no decision has been made and the slide is being read as a final list. At the same time, I do not want to mislead people if the review leads to change. Could you draft a message that answers the concern without turning a draft into an announcement? Staff need to hear from us today.\n\nHelen"
+    },
+    "document": {
+      "title": "Planning review · status note",
+      "intro": "The note identifies the status of the slide and the decision process. It does not predict the outcome.",
+      "facts": [
+        {
+          "id": "N1",
+          "time": "Slide",
+          "text": "The circulated screenshot is from an early scenario document comparing three possible team structures."
+        },
+        {
+          "id": "N2",
+          "time": "Current",
+          "text": "Leadership has not selected a structure or approved staffing changes."
+        },
+        {
+          "id": "N3",
+          "time": "Current",
+          "text": "The review remains active; one scenario could reduce roles, while another would redistribute work without reductions."
+        },
+        {
+          "id": "N4",
+          "time": "Process",
+          "text": "Any proposal affecting roles would require consultation and individual communication before implementation."
+        },
+        {
+          "id": "N5",
+          "time": "Current",
+          "text": "The origin of the screenshot is unknown; no investigation into who shared it has begun."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "18-evidence",
+        "axis": "Evidence",
+        "prompt": "What does the screenshot establish?",
+        "evidenceIds": [
+          "N1",
+          "N2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "A final list of affected employees.",
+            "feedback": "No structure is selected."
+          },
+          {
+            "id": "b",
+            "text": "An early scenario was considered, not selected.",
+            "feedback": "The document is exploratory."
+          },
+          {
+            "id": "c",
+            "text": "A guarantee that staffing will not change.",
+            "feedback": "The review remains active."
+          }
+        ]
+      },
+      {
+        "id": "18-scope",
+        "axis": "Scope",
+        "prompt": "Why is “there are no layoffs planned” risky without qualification?",
+        "evidenceIds": [
+          "N2",
+          "N3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The scenario document is irrelevant.",
+            "feedback": "The scenarios are part of an active review."
+          },
+          {
+            "id": "b",
+            "text": "It could imply that reductions are not under consideration at all.",
+            "feedback": "One live scenario includes possible role reduction."
+          },
+          {
+            "id": "c",
+            "text": "A staffing decision has already been approved.",
+            "feedback": "The record says no decision."
+          }
+        ]
+      },
+      {
+        "id": "18-intent",
+        "axis": "Intent",
+        "prompt": "What does Helen need to accomplish today?",
+        "evidenceIds": [
+          "N2",
+          "N3",
+          "N4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acknowledge uncertainty and explain the decision process without confirming an outcome.",
+            "feedback": "That responds to staff concern and the available facts."
+          },
+          {
+            "id": "b",
+            "text": "Identify who shared the slide.",
+            "feedback": "No source investigation has begun."
+          },
+          {
+            "id": "c",
+            "text": "Announce the preferred structure.",
+            "feedback": "No preferred structure is selected."
+          }
+        ]
+      },
+      {
+        "id": "18-purpose",
+        "axis": "Purpose",
+        "prompt": "Which message is most defensible?",
+        "evidenceIds": [
+          "N1",
+          "N2",
+          "N3",
+          "N4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The slide is the final plan, but details are confidential.",
+            "feedback": "No final plan exists."
+          },
+          {
+            "id": "b",
+            "text": "The slide is false; no roles will change.",
+            "feedback": "The slide is genuine and the future remains open."
+          },
+          {
+            "id": "c",
+            "text": "The slide is an early scenario, no decision has been made, and any proposal affecting roles will be discussed through the stated process.",
+            "feedback": "It separates document status, current decision and next process."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Helen with staff-facing wording. Address the anxiety without investigating the leak or promising that no staffing changes will occur. Make the difference between a live scenario and an approved decision explicit, then state how staff will hear about any proposal.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Acknowledge the concern without amplifying rumour",
+        "Distinguish scenario, review and decision",
+        "Avoid a categorical no-change promise",
+        "Explain the process for future proposals"
+      ]
+    },
+    "model": {
+      "subject": "Re: Message to staff about the slide",
+      "body": "Hi Helen,\n\nI agree that staff should hear from us today. We can say clearly that the screenshot is from an early scenario document and that no team structure or staffing change has been approved. I would avoid an unqualified “no layoffs are planned.” One scenario under active review could reduce roles, and that sentence may later sound like a denial of a possibility we knew existed. We also should not treat the screenshot as a final list or turn this message into a search for its source.\n\nI suggest: “We know a planning slide is circulating and understand why it has caused concern. It shows one of several early scenarios being considered as part of a wider review; it is not an approved decision or a list of people whose roles will change. No structure has been selected. If a proposal that affects roles emerges, we will discuss it through the appropriate consultation process and communicate directly with those involved before any change is implemented. We will share a further update on the review when there is a substantive decision to report.”\n\nWe should make a route available for questions today and give managers the same wording. I can review responses to recurring questions this afternoon so we do not let silence create a second, conflicting account.\n\nMika",
+      "annotations": [
+        {
+          "label": "Defines the document",
+          "excerpt": "an early scenario document",
+          "evidenceIds": [
+            "N1"
+          ]
+        },
+        {
+          "label": "States current decision status",
+          "excerpt": "No structure has been selected",
+          "evidenceIds": [
+            "N2"
+          ]
+        },
+        {
+          "label": "Preserves future uncertainty",
+          "excerpt": "One scenario under active review could reduce roles",
+          "evidenceIds": [
+            "N3"
+          ]
+        },
+        {
+          "label": "Explains process",
+          "excerpt": "appropriate consultation process",
+          "evidenceIds": [
+            "N4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "complaint-closed",
+    "title": "Closed in the queue, open to the patient",
+    "area": "Health administration",
+    "role": "Tara · Patient relations",
+    "teaser": "A complaint ticket closed after acknowledgement, while the requested investigation is unfinished.",
+    "misunderstanding": "An administrative closed status is being used as evidence that the patient’s concern was resolved.",
+    "email": {
+      "from": "Luca · Clinic manager",
+      "to": "Tara · Patient relations",
+      "sent": "Monday, 16:00",
+      "subject": "Why does the patient say we ignored them?",
+      "body": "Hi Tara,\n\nThe patient says their complaint about a delayed callback is unresolved, but the dashboard shows the ticket closed last week. I do not want to say we failed to respond if we sent an acknowledgement. Could you draft a reply that explains the status and gives them a real next step? They have asked who is reviewing the delay.\n\nLuca"
+    },
+    "document": {
+      "title": "Complaint workflow history",
+      "intro": "The workflow status and the substantive review have separate owners.",
+      "facts": [
+        {
+          "id": "Q1",
+          "time": "Last Tuesday",
+          "text": "Patient complained that a promised callback did not occur within the stated window."
+        },
+        {
+          "id": "Q2",
+          "time": "Last Wednesday",
+          "text": "Patient relations sent an acknowledgement and routed the matter to the clinic manager."
+        },
+        {
+          "id": "Q3",
+          "time": "Last Wednesday",
+          "text": "The intake ticket auto-closed when the acknowledgement was sent."
+        },
+        {
+          "id": "Q4",
+          "time": "Current",
+          "text": "The clinic manager has not completed a review of callback records or given a finding."
+        },
+        {
+          "id": "Q5",
+          "time": "Procedure",
+          "text": "Patient relations owns status communication; the clinic manager owns the factual review."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "19-evidence",
+        "axis": "Evidence",
+        "prompt": "What does “closed” mean in this workflow?",
+        "evidenceIds": [
+          "Q2",
+          "Q3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The patient accepted a resolution.",
+            "feedback": "No acceptance is recorded."
+          },
+          {
+            "id": "b",
+            "text": "The callback delay was investigated.",
+            "feedback": "Review is still open."
+          },
+          {
+            "id": "c",
+            "text": "The intake acknowledgement triggered automatic closure.",
+            "feedback": "This is the workflow event."
+          }
+        ]
+      },
+      {
+        "id": "19-scope",
+        "axis": "Scope",
+        "prompt": "What may Tara claim about the concern?",
+        "evidenceIds": [
+          "Q1",
+          "Q4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "The callback met the promised window.",
+            "feedback": "The records have not been reviewed."
+          },
+          {
+            "id": "b",
+            "text": "It was acknowledged, but the underlying delay remains under review.",
+            "feedback": "This separates response from resolution."
+          },
+          {
+            "id": "c",
+            "text": "No response was ever sent.",
+            "feedback": "An acknowledgement was sent."
+          }
+        ]
+      },
+      {
+        "id": "19-intent",
+        "axis": "Intent",
+        "prompt": "What does Luca want the reply to achieve?",
+        "evidenceIds": [
+          "Q2",
+          "Q5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Recognize the acknowledgement while restoring clear review ownership and a next update.",
+            "feedback": "This matches the request."
+          },
+          {
+            "id": "b",
+            "text": "Transfer all ownership to the patient.",
+            "feedback": "The procedure assigns internal owners."
+          },
+          {
+            "id": "c",
+            "text": "Defend the dashboard status as a clinical judgment.",
+            "feedback": "The status was an intake automation."
+          }
+        ]
+      },
+      {
+        "id": "19-purpose",
+        "axis": "Purpose",
+        "prompt": "What should happen now?",
+        "evidenceIds": [
+          "Q4",
+          "Q5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Promise the delay was harmless.",
+            "feedback": "The impact is not assessed."
+          },
+          {
+            "id": "b",
+            "text": "Name the clinic manager as reviewer and give a timed status update without preempting the finding.",
+            "feedback": "This provides accountable follow-up."
+          },
+          {
+            "id": "c",
+            "text": "Tell the patient the issue is closed.",
+            "feedback": "The substantive review is unfinished."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Luca with patient-facing wording that explains acknowledgement versus resolution, names the review owner, and gives a realistic status-update commitment without prejudging the callback review.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Clarify the administrative status",
+        "Acknowledge the patient’s unresolved concern",
+        "Assign substantive and communication owners",
+        "Set a bounded update without inventing findings"
+      ]
+    },
+    "model": {
+      "subject": "Re: Why does the patient say we ignored them?",
+      "body": "Hi Luca,\n\nThe dashboard status is misleading if we use it to describe the complaint as resolved. Patient relations acknowledged the message last Wednesday, which automatically closed the intake ticket. That confirms we responded to the initial contact. It does not mean anyone has completed the review of the missed callback. The clinic manager still needs to examine the callback records and give a finding.\n\nI suggest: “Thank you for following up. We acknowledged your complaint last week, but I am sorry we did not make clear that the concern itself remains under review. The closed status applied to the intake acknowledgement, not to a completed investigation. Our clinic manager is reviewing the callback record and the promised response window. Patient relations will keep you informed and will send you a status update by [agreed date], even if the review is still underway. We will then explain the verified outcome and any next steps.”\n\nPlease confirm a date with the clinic manager before we send that message, so the commitment is realistic. I will own the status communication and keep the patient informed if the review takes longer. We should also correct the internal case note so the open review is visible to anyone answering future enquiries.\n\nTara",
+      "annotations": [
+        {
+          "label": "Clarifies closure",
+          "excerpt": "automatically closed the intake ticket",
+          "evidenceIds": [
+            "Q3"
+          ]
+        },
+        {
+          "label": "Separates response and resolution",
+          "excerpt": "does not mean anyone has completed the review",
+          "evidenceIds": [
+            "Q4"
+          ]
+        },
+        {
+          "label": "Names owner",
+          "excerpt": "clinic manager is reviewing",
+          "evidenceIds": [
+            "Q5"
+          ]
+        },
+        {
+          "label": "Conditions timing",
+          "excerpt": "confirm a date with the clinic manager",
+          "evidenceIds": [
+            "Q5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "renewal-not-accepted",
+    "title": "Accepted in principle",
+    "area": "Operations",
+    "role": "Cleo · Account operations",
+    "teaser": "A client praised renewal terms in email. Sales called the renewal accepted; procurement has not approved it.",
+    "misunderstanding": "Positive commercial feedback is being treated as a final acceptance of terms.",
+    "email": {
+      "from": "Jules Hart · Sales director",
+      "to": "Cleo · Account operations",
+      "sent": "Friday, 09:20",
+      "subject": "Renewal accepted?",
+      "body": "Hi Cleo,\n\nThe client wrote that the revised renewal terms “look good” and that they intend to proceed. I told Finance we had the renewal accepted, but their procurement team is asking for a different payment schedule. I need to know whether we can hold the agreed price and describe the account as renewed in the forecast. Please help me answer without making the client feel we are retracting an agreement.\n\nJules"
+    },
+    "document": {
+      "title": "Renewal correspondence · status summary",
+      "intro": "The account record separates favourable intent, approval and executed terms.",
+      "facts": [
+        {
+          "id": "K1",
+          "time": "Wed email",
+          "text": "The client sponsor wrote: “The revised terms look good. We intend to proceed subject to procurement approval.”"
+        },
+        {
+          "id": "K2",
+          "time": "Thu email",
+          "text": "Client procurement requested a different payment schedule and has not approved the current document."
+        },
+        {
+          "id": "K3",
+          "time": "Current",
+          "text": "No renewal document has been signed or executed. The agreed price proposal expires next Friday unless extended."
+        },
+        {
+          "id": "K4",
+          "time": "Internal",
+          "text": "Finance forecast guidance records renewals as committed only after required customer approval; intent is tracked separately."
+        },
+        {
+          "id": "K5",
+          "time": "Current",
+          "text": "Jules has not yet asked whether the client wants to keep the price while negotiating payment timing."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "20-evidence",
+        "axis": "Evidence",
+        "prompt": "What has the client actually said?",
+        "evidenceIds": [
+          "K1",
+          "K2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "It rejected the price.",
+            "feedback": "Procurement raised payment timing, not a price rejection."
+          },
+          {
+            "id": "b",
+            "text": "It intends to proceed subject to procurement approval.",
+            "feedback": "This is the sponsor’s exact qualification."
+          },
+          {
+            "id": "c",
+            "text": "It accepted every renewal term without condition.",
+            "feedback": "The current document is not approved."
+          }
+        ]
+      },
+      {
+        "id": "20-scope",
+        "axis": "Scope",
+        "prompt": "How should the forecast classify the renewal now?",
+        "evidenceIds": [
+          "K3",
+          "K4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Intent to proceed, not yet committed.",
+            "feedback": "The required approval and execution remain outstanding."
+          },
+          {
+            "id": "b",
+            "text": "Fully renewed because the sponsor said “look good.”",
+            "feedback": "That ignores the forecast rule."
+          },
+          {
+            "id": "c",
+            "text": "Lost because procurement requested a change.",
+            "feedback": "Negotiation is still active."
+          }
+        ]
+      },
+      {
+        "id": "20-intent",
+        "axis": "Intent",
+        "prompt": "What is Jules trying to preserve?",
+        "evidenceIds": [
+          "K3",
+          "K5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "The ability to ignore procurement.",
+            "feedback": "Procurement approval is required."
+          },
+          {
+            "id": "b",
+            "text": "A guarantee that price never expires.",
+            "feedback": "The proposal expires next Friday unless extended."
+          },
+          {
+            "id": "c",
+            "text": "Commercial momentum while clarifying open terms and the price deadline.",
+            "feedback": "His email asks about price and client relationship."
+          }
+        ]
+      },
+      {
+        "id": "20-purpose",
+        "axis": "Purpose",
+        "prompt": "What reply best advances the renewal?",
+        "evidenceIds": [
+          "K2",
+          "K3",
+          "K5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Record the deal as closed and avoid mentioning procurement.",
+            "feedback": "The forecast and document status would be inaccurate."
+          },
+          {
+            "id": "b",
+            "text": "Acknowledge intent, discuss payment timing, and confirm whether the price proposal needs an extension.",
+            "feedback": "This keeps momentum without asserting final agreement."
+          },
+          {
+            "id": "c",
+            "text": "Tell the client it already accepted all terms and must sign.",
+            "feedback": "The client reserved approval and proposed a change."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Reply to Jules with an internal status recommendation and client-facing wording. Preserve the sponsor’s positive signal without calling the renewal final, address procurement’s payment schedule, and manage the price-proposal expiry openly.",
+      "wordGuide": "About 160–230 words",
+      "criteria": [
+        "Distinguish intent from approval and execution",
+        "Classify forecast status accurately",
+        "Preserve negotiation momentum without invented agreement",
+        "Address payment timing and proposal expiry"
+      ]
+    },
+    "model": {
+      "subject": "Re: Renewal accepted?",
+      "body": "Hi Jules,\n\nThe sponsor’s message is a positive signal, and we should build on it. It was not an unconditional acceptance: they said they intended to proceed subject to procurement approval. Procurement has now proposed a different payment schedule, and the renewal document has not been executed. Under the forecast guidance, I would record this as intent to proceed rather than a committed renewal until the required approval is in place. That is a status distinction, not a judgment that the opportunity has weakened.\n\nFor the client, I suggest: “We are pleased the revised commercial terms are moving in the right direction. We understand procurement would like to discuss the payment schedule. Could we review that point together and confirm the approval steps still outstanding? The current price proposal runs through next Friday; if the schedule discussion needs longer, we can discuss an extension rather than assume the proposal remains open indefinitely.”\n\nThis keeps the price and timing transparent without claiming the customer has already signed off. I can update the account record today and prepare an extension request if the client indicates it needs one. We should also correct Finance’s forecast description so it reflects the qualified sponsor signal and the open procurement step.\n\nCleo",
+      "annotations": [
+        {
+          "label": "Keeps the positive signal",
+          "excerpt": "a positive signal",
+          "evidenceIds": [
+            "K1"
+          ]
+        },
+        {
+          "label": "Names the condition",
+          "excerpt": "subject to procurement approval",
+          "evidenceIds": [
+            "K1"
+          ]
+        },
+        {
+          "label": "Uses forecast rule",
+          "excerpt": "intent to proceed rather than a committed renewal",
+          "evidenceIds": [
+            "K4"
+          ]
+        },
+        {
+          "label": "Handles expiry",
+          "excerpt": "current price proposal runs through next Friday",
+          "evidenceIds": [
+            "K3"
+          ]
+        }
+      ]
+    }
+  }
+]

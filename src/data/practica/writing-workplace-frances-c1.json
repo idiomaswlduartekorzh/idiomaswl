@@ -1,0 +1,4114 @@
+[
+  {
+    "id": "sondage-qui-represente-mal",
+    "title": "La majorité de qui ?",
+    "area": "Marketing × Études",
+    "areaLabel": "Marketing · études",
+    "role": "Claire · chargée d’études",
+    "teaser": "Une enquête flatteuse devient un argument commercial trop large.",
+    "misunderstanding": "Les répondants sont surtout des clients fidèles ; le résultat ne décrit pas forcément l’ensemble des utilisateurs.",
+    "email": {
+      "from": "Marc · directeur marketing",
+      "to": "Claire · études",
+      "sent": "Lundi, 9 h 20",
+      "subject": "Peut-on annoncer que 82 % nous recommandent ?",
+      "body": "Bonjour Claire,\n\nLa présentation de mercredi reprend le chiffre de 82 % de recommandations. Notre agence propose d’en faire le titre de la campagne : « 82 % de nos utilisateurs nous recommandent ». J’ai cru comprendre que l’enquête était terminée et validée. Peux-tu me dire si cette formulation tient, et quelle version je peux transmettre aujourd’hui sans ralentir la création ?\n\nMarc"
+    },
+    "document": {
+      "title": "Note méthodologique de l’enquête",
+      "intro": "La note précise qui a été interrogé et ce qui reste inconnu.",
+      "facts": [
+        {
+          "id": "FRC11F1",
+          "time": "Jeudi",
+          "text": "Le questionnaire a été envoyé à 600 clients abonnés depuis plus d’un an."
+        },
+        {
+          "id": "FRC11F2",
+          "time": "Vendredi",
+          "text": "Cent cinquante personnes ont répondu ; 123 ont choisi une réponse positive à la question de recommandation."
+        },
+        {
+          "id": "FRC11F3",
+          "time": "Vendredi",
+          "text": "Les nouveaux clients et les anciens clients ayant quitté le service n’ont pas été interrogés."
+        },
+        {
+          "id": "FRC11F4",
+          "time": "Lundi",
+          "text": "L’équipe d’études a validé le calcul de 82 % parmi les répondants, sans valider une extrapolation à tous les utilisateurs."
+        },
+        {
+          "id": "FRC11F5",
+          "time": "À ce jour",
+          "text": "Aucune analyse ne montre si les répondants sont représentatifs de la clientèle entière."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sondage-qui-represente-mal-evidence",
+        "axis": "Evidence",
+        "prompt": "Que mesure précisément le chiffre de 82 % ?",
+        "evidenceIds": [
+          "FRC11F1",
+          "FRC11F2",
+          "FRC11F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La part de tous les utilisateurs qui recommandent la marque.",
+            "feedback": "Le panel ne couvre pas toute la clientèle."
+          },
+          {
+            "id": "b",
+            "text": "La part de réponses positives parmi les 150 répondants.",
+            "feedback": "Le calcul porte sur les répondants, pas sur tous les utilisateurs."
+          },
+          {
+            "id": "c",
+            "text": "La progression des recommandations depuis l’an dernier.",
+            "feedback": "Aucune comparaison temporelle n’est fournie."
+          }
+        ]
+      },
+      {
+        "id": "sondage-qui-represente-mal-scope",
+        "axis": "Scope",
+        "prompt": "Quelle limite interdit le titre proposé ?",
+        "evidenceIds": [
+          "FRC11F1",
+          "FRC11F3",
+          "FRC11F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le nombre de réponses positives est inconnu.",
+            "feedback": "Il est connu : 123."
+          },
+          {
+            "id": "b",
+            "text": "La question portait sur les prix.",
+            "feedback": "Elle portait sur la recommandation."
+          },
+          {
+            "id": "c",
+            "text": "Le groupe interrogé exclut plusieurs catégories de clients.",
+            "feedback": "Le résultat ne peut pas être généralisé sans vérification."
+          }
+        ]
+      },
+      {
+        "id": "sondage-qui-represente-mal-intent",
+        "axis": "Intent",
+        "prompt": "De quoi Marc a-t-il besoin aujourd’hui ?",
+        "evidenceIds": [
+          "FRC11F4",
+          "FRC11F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "D’une garantie que la campagne fera augmenter les ventes.",
+            "feedback": "L’enquête ne prédit pas les ventes."
+          },
+          {
+            "id": "b",
+            "text": "D’une liste nominative des répondants.",
+            "feedback": "Elle n’aiderait pas à choisir un titre juste."
+          },
+          {
+            "id": "c",
+            "text": "D’une formulation utilisable qui garde la portée exacte du résultat.",
+            "feedback": "Il doit faire avancer la création sans transformer une mesure limitée en promesse générale."
+          }
+        ]
+      },
+      {
+        "id": "sondage-qui-represente-mal-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse protège le mieux la campagne ?",
+        "evidenceIds": [
+          "FRC11F2",
+          "FRC11F4",
+          "FRC11F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Conserver « nos utilisateurs » parce que le calcul est exact.",
+            "feedback": "Un calcul exact peut être présenté de manière trompeuse."
+          },
+          {
+            "id": "b",
+            "text": "Supprimer tout usage du sondage sans proposer d’alternative.",
+            "feedback": "Une formulation délimitée reste possible."
+          },
+          {
+            "id": "c",
+            "text": "Proposer une formule attribuée aux répondants et demander une validation avant diffusion.",
+            "feedback": "Elle conserve la force du résultat et sa limite."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Marc en distinguant calcul validé et généralisation. Proposez une formulation exploitable et une étape de validation.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Délimiter la population interrogée",
+        "Ne pas présenter les 82 % comme une opinion de tous",
+        "Proposer une formulation précise",
+        "Prévoir une validation avant diffusion"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Peut-on annoncer que 82 % nous recommandent ?",
+      "body": "Bonjour Marc,\n\nLe calcul est juste : 123 des 150 personnes qui ont répondu ont choisi une réponse positive, soit 82 %. En revanche, l’enquête a été adressée uniquement à des abonnés présents depuis plus d’un an. Elle ne permet pas d’affirmer que 82 % de l’ensemble de nos utilisateurs nous recommandent, puisque les nouveaux clients et ceux qui ont quitté le service n’y figurent pas. Nous n’avons pas non plus établi que les répondants représentent toute la clientèle.\n\nPour que l’agence avance aujourd’hui, je proposerais : « 82 % des répondants à notre enquête auprès de clients abonnés depuis plus d’un an déclarent nous recommander ». C’est moins bref, mais la portée est défendable. Nous pouvons chercher avec elle une version plus fluide qui conserve cette précision, puis la relire avant publication.\n\nJe t’enverrai la note méthodologique et la formulation retenue cet après-midi. La validation du chiffre ne doit pas être comprise comme une validation de n’importe quel titre.\n\nClaire",
+      "annotations": [
+        {
+          "label": "Distingue le calcul",
+          "excerpt": "123 des 150 personnes qui ont répondu",
+          "evidenceIds": [
+            "FRC11F2"
+          ]
+        },
+        {
+          "label": "Délimite la population",
+          "excerpt": "uniquement à des abonnés présents depuis plus d’un an",
+          "evidenceIds": [
+            "FRC11F1",
+            "FRC11F3"
+          ]
+        },
+        {
+          "label": "Préserve l’incertitude",
+          "excerpt": "Nous n’avons pas non plus établi que les répondants représentent toute la clientèle",
+          "evidenceIds": [
+            "FRC11F5"
+          ]
+        },
+        {
+          "label": "Propose une formulation",
+          "excerpt": "82 % des répondants à notre enquête",
+          "evidenceIds": [
+            "FRC11F2",
+            "FRC11F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "fonction-annoncee-comme-certaine",
+    "title": "Une fonctionnalité encore au conditionnel",
+    "area": "Marketing × Relations presse",
+    "areaLabel": "Marketing · relations presse",
+    "role": "Nadia · relations presse",
+    "teaser": "Un journaliste cite une fonction envisagée comme si sa sortie était décidée.",
+    "misunderstanding": "Une démonstration interne présentait un prototype ; la date et le périmètre publics n’ont jamais été confirmés.",
+    "email": {
+      "from": "Éloi · responsable produit",
+      "to": "Nadia · relations presse",
+      "sent": "Mardi, 11 h 10",
+      "subject": "L’article annonce une sortie en juin",
+      "body": "Bonjour Nadia,\n\nLe journaliste que nous avons reçu hier écrit que la nouvelle recherche sera disponible pour tous en juin. Il dit tenir cette information de notre démonstration. Nous avions pourtant parlé d’un prototype. L’article doit partir à 16 h. Peux-tu lui demander une correction sans donner l’impression que nous cachons un retard ou que nous revenons sur une promesse ?\n\nÉloi"
+    },
+    "document": {
+      "title": "Compte rendu de la démonstration",
+      "intro": "Les formulations utilisées pendant la visite n’avaient pas le même statut.",
+      "facts": [
+        {
+          "id": "FRC12F1",
+          "time": "Lundi, 14 h",
+          "text": "L’équipe a présenté une version expérimentale de la recherche à un groupe restreint."
+        },
+        {
+          "id": "FRC12F2",
+          "time": "Lundi, 14 h 20",
+          "text": "Une diapositive portait la mention « objectif interne : juin, sous réserve des tests ». Elle n’était pas destinée à la publication."
+        },
+        {
+          "id": "FRC12F3",
+          "time": "Lundi, 14 h 30",
+          "text": "Un porte-parole a dit : « Nous espérons élargir l’accès si les essais sont concluants. »"
+        },
+        {
+          "id": "FRC12F4",
+          "time": "Mardi, 9 h",
+          "text": "Aucune date publique ni ouverture à tous les utilisateurs n’a été approuvée."
+        },
+        {
+          "id": "FRC12F5",
+          "time": "À ce jour",
+          "text": "Le journaliste a transmis un brouillon pour vérification des faits ; la rédaction garde la décision éditoriale finale."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "fonction-annoncee-comme-certaine-evidence",
+        "axis": "Evidence",
+        "prompt": "Qu’est-ce que la démonstration permet de confirmer ?",
+        "evidenceIds": [
+          "FRC12F1",
+          "FRC12F3",
+          "FRC12F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un prototype testé par un groupe restreint, sans lancement général confirmé.",
+            "feedback": "L’accès élargi reste conditionnel."
+          },
+          {
+            "id": "b",
+            "text": "Une mise à disposition pour tous en juin.",
+            "feedback": "Ni le public ni la date ne sont approuvés."
+          },
+          {
+            "id": "c",
+            "text": "L’abandon de la fonctionnalité.",
+            "feedback": "Le projet existe toujours."
+          }
+        ]
+      },
+      {
+        "id": "fonction-annoncee-comme-certaine-scope",
+        "axis": "Scope",
+        "prompt": "Que signifie « juin » dans la diapositive ?",
+        "evidenceIds": [
+          "FRC12F2",
+          "FRC12F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une date contractuelle communiquée aux clients.",
+            "feedback": "Le document n’était pas destiné au public."
+          },
+          {
+            "id": "b",
+            "text": "Le début de la visite du journaliste.",
+            "feedback": "La mention concerne le projet."
+          },
+          {
+            "id": "c",
+            "text": "Un objectif interne soumis aux tests.",
+            "feedback": "Ce n’est pas une annonce de sortie."
+          }
+        ]
+      },
+      {
+        "id": "fonction-annoncee-comme-certaine-intent",
+        "axis": "Intent",
+        "prompt": "Quel résultat Éloi attend-il de Nadia ?",
+        "evidenceIds": [
+          "FRC12F4",
+          "FRC12F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une rectification factuelle courtoise avant publication.",
+            "feedback": "Il veut corriger la portée de l’affirmation sans contrôler l’article."
+          },
+          {
+            "id": "b",
+            "text": "La suppression de tout l’article.",
+            "feedback": "Ce n’est pas sa demande."
+          },
+          {
+            "id": "c",
+            "text": "Une garantie de sortie en juin.",
+            "feedback": "Il demande précisément de ne pas promettre cela."
+          }
+        ]
+      },
+      {
+        "id": "fonction-annoncee-comme-certaine-purpose",
+        "axis": "Purpose",
+        "prompt": "Quel message adresser au journaliste ?",
+        "evidenceIds": [
+          "FRC12F2",
+          "FRC12F3",
+          "FRC12F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Préciser ce qui a été montré et proposer une formulation conditionnelle.",
+            "feedback": "La rédaction peut alors corriger les faits avec exactitude."
+          },
+          {
+            "id": "b",
+            "text": "L’accuser d’avoir inventé une date.",
+            "feedback": "La diapositive pouvait prêter à confusion."
+          },
+          {
+            "id": "c",
+            "text": "Confirmer juin pour éviter une mauvaise impression.",
+            "feedback": "Cela transformerait un objectif interne en promesse."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Éloi avec une formulation à transmettre au journaliste. Reconnaissez la possible ambiguïté de la démonstration sans confirmer une date publique.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Différencier prototype et lancement",
+        "Expliquer la portée de l’objectif de juin",
+        "Respecter l’autonomie éditoriale",
+        "Fournir une correction factuelle utilisable"
+      ]
+    },
+    "model": {
+      "subject": "Ré : L’article annonce une sortie en juin",
+      "body": "Bonjour Éloi,\n\nL’article va au-delà de ce que nous avons confirmé. La démonstration concernait un prototype accessible à un groupe restreint ; la mention de juin figurait sur une diapositive d’objectif interne, expressément soumise aux résultats des tests. Aucune ouverture générale ni date publique n’a été approuvée. Je reconnais toutefois que cette diapositive, montrée pendant la visite, a pu être comprise autrement.\n\nJe vais répondre au journaliste avant son échéance en lui proposant une précision factuelle : « L’entreprise expérimente une nouvelle recherche auprès d’un groupe limité et envisage d’élargir l’accès si les essais sont concluants ; aucune date de lancement général n’est annoncée. » Je lui signalerai que juin était un objectif de travail, pas un engagement. Il restera libre de sa rédaction, mais disposera d’une correction claire.\n\nJe te mettrai en copie du message et vérifierai ensuite la version publiée. Nous éviterons ainsi de laisser s’installer une promesse que le produit n’a pas faite.\n\nNadia",
+      "annotations": [
+        {
+          "label": "Corrige la portée",
+          "excerpt": "La démonstration concernait un prototype accessible à un groupe restreint",
+          "evidenceIds": [
+            "FRC12F1"
+          ]
+        },
+        {
+          "label": "Explique la date",
+          "excerpt": "juin était un objectif de travail, pas un engagement",
+          "evidenceIds": [
+            "FRC12F2"
+          ]
+        },
+        {
+          "label": "Reconnaît l’ambiguïté",
+          "excerpt": "a pu être comprise autrement",
+          "evidenceIds": [
+            "FRC12F2",
+            "FRC12F3"
+          ]
+        },
+        {
+          "label": "Respecte la rédaction",
+          "excerpt": "Il restera libre de sa rédaction",
+          "evidenceIds": [
+            "FRC12F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "don-annonce-avant-versement",
+    "title": "Promis, mais pas encore versé",
+    "area": "Marketing × Partenariats solidaires",
+    "areaLabel": "Marketing · partenariats solidaires",
+    "role": "Inès · partenariats",
+    "teaser": "Une campagne annonce un don déjà effectué alors qu’il dépend encore des ventes.",
+    "misunderstanding": "Un engagement de don conditionnel a été transformé en bilan de don réalisé.",
+    "email": {
+      "from": "Sami · association partenaire",
+      "to": "Inès · partenariats",
+      "sent": "Jeudi, 15 h 05",
+      "subject": "Le don est-il réellement arrivé ?",
+      "body": "Bonjour Inès,\n\nNotre équipe a vu votre publication : « 40 000 € reversés à l’association ». Nous n’avons reçu aucun versement et plusieurs personnes nous félicitent déjà pour cette somme. Je pensais que le montant dépendait des ventes de la fin du mois. Pourrais-tu me préciser ce qui est acquis, ce qui reste à calculer et la manière dont nous allons corriger le message ?\n\nSami"
+    },
+    "document": {
+      "title": "Convention de campagne et calendrier",
+      "intro": "Le document distingue plafond, montant acquis et versement.",
+      "facts": [
+        {
+          "id": "FRC13F1",
+          "time": "Convention",
+          "text": "L’entreprise s’est engagée à reverser 2 € par produit vendu pendant la campagne, dans la limite de 40 000 €."
+        },
+        {
+          "id": "FRC13F2",
+          "time": "Mercredi",
+          "text": "Le tableau provisoire comptait 11 200 ventes éligibles, sous réserve de contrôle des retours."
+        },
+        {
+          "id": "FRC13F3",
+          "time": "Jeudi, 9 h",
+          "text": "La publication a annoncé « 40 000 € reversés » en reprenant le plafond prévu par la convention."
+        },
+        {
+          "id": "FRC13F4",
+          "time": "Jeudi, 14 h",
+          "text": "Aucun virement n’a encore été effectué ; le montant final sera établi après la clôture et les vérifications."
+        },
+        {
+          "id": "FRC13F5",
+          "time": "À ce jour",
+          "text": "La publication a été mise en pause. L’association n’a pas validé de texte correctif."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "don-annonce-avant-versement-evidence",
+        "axis": "Evidence",
+        "prompt": "Quel montant peut-on considérer comme définitivement versé ?",
+        "evidenceIds": [
+          "FRC13F1",
+          "FRC13F2",
+          "FRC13F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "40 000 €, puisque ce chiffre figure dans la convention.",
+            "feedback": "Il s’agit d’un maximum."
+          },
+          {
+            "id": "b",
+            "text": "Aucun : le versement et le calcul final restent à faire.",
+            "feedback": "Le plafond ne correspond pas à une somme déjà reçue."
+          },
+          {
+            "id": "c",
+            "text": "22 400 € définitivement.",
+            "feedback": "Les ventes provisoires restent à contrôler."
+          }
+        ]
+      },
+      {
+        "id": "don-annonce-avant-versement-scope",
+        "axis": "Scope",
+        "prompt": "Que représente exactement 40 000 € ?",
+        "evidenceIds": [
+          "FRC13F1",
+          "FRC13F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le plafond possible du don.",
+            "feedback": "Ce n’est ni le total acquis ni un virement."
+          },
+          {
+            "id": "b",
+            "text": "La somme confirmée par la banque.",
+            "feedback": "Aucun virement n’est effectué."
+          },
+          {
+            "id": "c",
+            "text": "Le montant des ventes éligibles.",
+            "feedback": "Le don est calculé à 2 € par produit."
+          }
+        ]
+      },
+      {
+        "id": "don-annonce-avant-versement-intent",
+        "axis": "Intent",
+        "prompt": "Que demande Sami au-delà d’une explication comptable ?",
+        "evidenceIds": [
+          "FRC13F3",
+          "FRC13F4",
+          "FRC13F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une promesse d’atteindre le plafond.",
+            "feedback": "Les ventes finales sont inconnues."
+          },
+          {
+            "id": "b",
+            "text": "Une correction coordonnée qui n’attribue pas à l’association une somme non reçue.",
+            "feedback": "Sa crédibilité publique est engagée."
+          },
+          {
+            "id": "c",
+            "text": "L’annulation de la convention.",
+            "feedback": "Il demande un état exact et une correction."
+          }
+        ]
+      },
+      {
+        "id": "don-annonce-avant-versement-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle première réponse convient ?",
+        "evidenceIds": [
+          "FRC13F1",
+          "FRC13F4",
+          "FRC13F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Reconnaître l’annonce prématurée, préciser le calcul conditionnel et proposer un correctif à valider ensemble.",
+            "feedback": "Elle rétablit les faits sans parler au nom du partenaire."
+          },
+          {
+            "id": "b",
+            "text": "Dire que le don a été fait « en principe ».",
+            "feedback": "Cette formule prolongerait la confusion."
+          },
+          {
+            "id": "c",
+            "text": "Publier aussitôt un nouveau chiffre provisoire sans l’association.",
+            "feedback": "Le montant final et le correctif ne sont pas validés."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Sami en distinguant l’engagement, le plafond et le versement. Proposez une correction concertée sans annoncer un montant final.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Reconnaître le libellé erroné",
+        "Définir le plafond et le calcul",
+        "Ne pas traiter le provisoire comme acquis",
+        "Associer l’association au correctif"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Le don est-il réellement arrivé ?",
+      "body": "Bonjour Sami,\n\nTu as raison de nous alerter : la formule « 40 000 € reversés » est inexacte. Ce montant est le plafond prévu par notre convention, pas une somme déjà versée. L’engagement est de 2 € par vente éligible, jusqu’à ce plafond ; le total provisoire doit encore être ajusté après la clôture et le contrôle des retours. Aucun virement n’a été effectué à ce stade. Je suis désolée que notre publication ait placé l’association dans une situation embarrassante.\n\nNous avons mis le message en pause. Je te propose de relire ensemble un correctif qui explique l’engagement et son caractère conditionnel, sans annoncer un montant final ni te faire confirmer une somme que vous n’avez pas reçue. Nous pourrons ensuite convenir du moment où communiquer le chiffre vérifié et le versement.\n\nJe t’enverrai un projet de texte aujourd’hui avec les étapes de calcul et de paiement prévues. Rien ne sera publié au nom de ce partenariat avant que nous ayons vérifié les faits avec vous.\n\nInès",
+      "annotations": [
+        {
+          "label": "Corrige le fait",
+          "excerpt": "Ce montant est le plafond prévu par notre convention",
+          "evidenceIds": [
+            "FRC13F1"
+          ]
+        },
+        {
+          "label": "Préserve le provisoire",
+          "excerpt": "le total provisoire doit encore être ajusté",
+          "evidenceIds": [
+            "FRC13F2",
+            "FRC13F4"
+          ]
+        },
+        {
+          "label": "Reconnaît l’impact",
+          "excerpt": "ait placé l’association dans une situation embarrassante",
+          "evidenceIds": [
+            "FRC13F3"
+          ]
+        },
+        {
+          "label": "Associe le destinataire",
+          "excerpt": "relire ensemble un correctif",
+          "evidenceIds": [
+            "FRC13F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "promesse-de-delai-impossible",
+    "title": "La livraison promise trop vite",
+    "area": "Marketing × Acquisition",
+    "areaLabel": "Marketing · acquisition",
+    "role": "Paul · acquisition",
+    "teaser": "Une annonce promet une mise en service sous 24 heures, mais cette promesse ne couvre qu’un cas limité.",
+    "misunderstanding": "Le délai opérationnel dépend d’une vérification préalable absente de la publicité.",
+    "email": {
+      "from": "Nora · responsable des ventes",
+      "to": "Paul · acquisition",
+      "sent": "Vendredi, 10 h 40",
+      "subject": "Que signifie vraiment « actif en 24 heures » ?",
+      "body": "Bonjour Paul,\n\nDeux prospects ont répondu à notre publicité « Votre compte actif en 24 heures » et veulent commencer lundi. L’équipe d’ouverture de comptes me dit que ce délai ne vaut que pour les dossiers déjà vérifiés. Je ne veux pas leur vendre une exception qui n’existe pas. Qui a validé cette promesse et que puis-je leur répondre avant mon appel de midi ?\n\nNora"
+    },
+    "document": {
+      "title": "Validation de l’offre et parcours d’ouverture",
+      "intro": "Les étapes de vérification précèdent le délai de mise en service.",
+      "facts": [
+        {
+          "id": "FRC14F1",
+          "time": "Lundi",
+          "text": "L’équipe opérationnelle a validé un délai de 24 heures après réception d’un dossier complet et vérifié."
+        },
+        {
+          "id": "FRC14F2",
+          "time": "Mardi",
+          "text": "La version finale de la publicité a supprimé la condition « après vérification » pour gagner de la place."
+        },
+        {
+          "id": "FRC14F3",
+          "time": "Mercredi",
+          "text": "Paul a approuvé le visuel réduit sans consulter à nouveau l’équipe d’ouverture."
+        },
+        {
+          "id": "FRC14F4",
+          "time": "Vendredi",
+          "text": "Les deux prospects ont commencé leur dossier, mais aucun n’a terminé la vérification."
+        },
+        {
+          "id": "FRC14F5",
+          "time": "À ce jour",
+          "text": "L’équipe opérationnelle ne peut pas confirmer une activation lundi pour ces dossiers ; aucune dérogation n’est prévue."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "promesse-de-delai-impossible-evidence",
+        "axis": "Evidence",
+        "prompt": "Que peut-on confirmer au sujet des deux prospects ?",
+        "evidenceIds": [
+          "FRC14F1",
+          "FRC14F4",
+          "FRC14F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ils seront activés lundi.",
+            "feedback": "Aucune date ne peut être confirmée."
+          },
+          {
+            "id": "b",
+            "text": "Ils sont inéligibles au service.",
+            "feedback": "Le dossier est en cours, pas refusé."
+          },
+          {
+            "id": "c",
+            "text": "Leur vérification n’est pas terminée et l’activation de lundi n’est pas confirmée.",
+            "feedback": "Le délai de 24 heures n’a pas encore commencé selon la règle."
+          }
+        ]
+      },
+      {
+        "id": "promesse-de-delai-impossible-scope",
+        "axis": "Scope",
+        "prompt": "À partir de quand court le délai validé ?",
+        "evidenceIds": [
+          "FRC14F1",
+          "FRC14F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dès le premier clic sur l’annonce.",
+            "feedback": "Ce n’est pas la règle opérationnelle."
+          },
+          {
+            "id": "b",
+            "text": "Après l’appel de Nora.",
+            "feedback": "L’appel ne remplace pas la vérification."
+          },
+          {
+            "id": "c",
+            "text": "Après réception et vérification du dossier complet.",
+            "feedback": "La publicité a supprimé cette condition."
+          }
+        ]
+      },
+      {
+        "id": "promesse-de-delai-impossible-intent",
+        "axis": "Intent",
+        "prompt": "De quoi Nora a-t-elle besoin pour son appel ?",
+        "evidenceIds": [
+          "FRC14F4",
+          "FRC14F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "D’une dérogation immédiate.",
+            "feedback": "Aucune n’est prévue."
+          },
+          {
+            "id": "b",
+            "text": "D’une explication honnête et d’un calendrier conditionnel pour chaque dossier.",
+            "feedback": "Elle doit corriger une attente sans promettre l’impossible."
+          },
+          {
+            "id": "c",
+            "text": "D’un argument pour reprocher aux prospects leur lenteur.",
+            "feedback": "L’annonce a omis la condition."
+          }
+        ]
+      },
+      {
+        "id": "promesse-de-delai-impossible-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse doit primer ?",
+        "evidenceIds": [
+          "FRC14F2",
+          "FRC14F3",
+          "FRC14F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Maintenir la promesse de lundi pour préserver la conversion.",
+            "feedback": "L’activation n’est pas confirmée."
+          },
+          {
+            "id": "b",
+            "text": "Assumer le raccourci publicitaire, corriger le visuel et donner à Nora les étapes à expliquer.",
+            "feedback": "Cela évite de répéter la promesse trompeuse."
+          },
+          {
+            "id": "c",
+            "text": "Dire que les prospects ont mal lu l’annonce.",
+            "feedback": "La condition n’y figurait pas."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Nora avec une explication utilisable pour les prospects. Assumez la validation du visuel et évitez toute date non confirmée.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Définir le point de départ du délai",
+        "Reconnaître l’omission publicitaire",
+        "Proposer une réponse commerciale honnête",
+        "Corriger le visuel et vérifier les dossiers"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Que signifie vraiment « actif en 24 heures » ?",
+      "body": "Bonjour Nora,\n\nLe délai validé par l’équipe d’ouverture est de 24 heures après réception d’un dossier complet et vérifié. Notre publicité a supprimé cette condition, et j’ai approuvé le visuel réduit sans demander une nouvelle validation opérationnelle. C’est une erreur de ma part ; les deux prospects ont donc pu comprendre que le délai commençait dès leur premier contact.\n\nÀ ce stade, aucun des deux dossiers n’a terminé la vérification. Nous ne pouvons pas leur confirmer une activation lundi ni proposer une dérogation qui n’existe pas. Pour ton appel, je te suggère d’expliquer clairement les pièces et vérifications encore nécessaires, puis de donner un point d’étape propre à chaque dossier plutôt qu’une date de mise en service. Si la vérification se termine, l’équipe pourra alors appliquer le délai de 24 heures prévu.\n\nJe fais retirer la formule actuelle du visuel et soumets aujourd’hui une version qui précise la condition. Je reste disponible pour relire ton message aux prospects avant midi.\n\nPaul",
+      "annotations": [
+        {
+          "label": "Définit le délai",
+          "excerpt": "après réception d’un dossier complet et vérifié",
+          "evidenceIds": [
+            "FRC14F1"
+          ]
+        },
+        {
+          "label": "Assume sa part",
+          "excerpt": "j’ai approuvé le visuel réduit",
+          "evidenceIds": [
+            "FRC14F2",
+            "FRC14F3"
+          ]
+        },
+        {
+          "label": "Protège les prospects",
+          "excerpt": "Nous ne pouvons pas leur confirmer une activation lundi",
+          "evidenceIds": [
+            "FRC14F4",
+            "FRC14F5"
+          ]
+        },
+        {
+          "label": "Répare la publicité",
+          "excerpt": "Je fais retirer la formule actuelle du visuel",
+          "evidenceIds": [
+            "FRC14F2",
+            "FRC14F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "journal-systeme-attribution",
+    "title": "« Supprimé par système » ne désigne personne",
+    "area": "Software × Traçabilité",
+    "areaLabel": "Logiciel · traçabilité",
+    "role": "Yanis · ingénieur données",
+    "teaser": "Un journal technique laisse croire qu’un collègue a effacé un dossier client.",
+    "misunderstanding": "Une migration a retiré une copie d’affichage ; l’entrée source existe, et le journal ne permet pas d’attribuer l’action à une personne.",
+    "email": {
+      "from": "Lucie · responsable de compte",
+      "to": "Yanis · données",
+      "sent": "Mercredi, 11 h 25",
+      "subject": "Qui a supprimé le dossier Albar ?",
+      "body": "Bonjour Yanis,\n\nLe client ne voit plus une fiche dans son tableau et le journal affiche « deleted by system ». Mon équipe pense qu’une personne l’a supprimée pendant la migration. Le client demande qui a fait l’opération et si son dossier peut être récupéré. J’ai besoin d’une réponse précise avant sa réunion de 14 h, sans accuser quelqu’un à tort.\n\nLucie"
+    },
+    "document": {
+      "title": "Journal de migration et vérification",
+      "intro": "Les différentes copies de la fiche n’ont pas le même usage.",
+      "facts": [
+        {
+          "id": "FRC15F1",
+          "time": "Mardi, 22 h",
+          "text": "La migration a retiré l’ancienne copie d’affichage de la fiche Albar ; l’opération automatique porte l’étiquette « deleted by system »."
+        },
+        {
+          "id": "FRC15F2",
+          "time": "Mercredi, 9 h",
+          "text": "La fiche source est toujours présente dans le registre principal, avec son historique."
+        },
+        {
+          "id": "FRC15F3",
+          "time": "Mercredi, 10 h",
+          "text": "La nouvelle vue n’affiche pas la fiche à cause d’un index non reconstruit pour ce compte."
+        },
+        {
+          "id": "FRC15F4",
+          "time": "Mercredi, 11 h",
+          "text": "Une reconstruction de l’index est en test ; elle n’a pas encore été appliquée au compte du client."
+        },
+        {
+          "id": "FRC15F5",
+          "time": "À ce jour",
+          "text": "Aucune trace n’attribue la suppression de la copie à un employé ; l’heure du rétablissement de l’affichage reste inconnue."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "journal-systeme-attribution-evidence",
+        "axis": "Evidence",
+        "prompt": "Que démontre l’entrée « deleted by system » ?",
+        "evidenceIds": [
+          "FRC15F1",
+          "FRC15F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le retrait automatique d’une copie d’affichage.",
+            "feedback": "Elle n’identifie pas un auteur humain."
+          },
+          {
+            "id": "b",
+            "text": "La suppression définitive de la fiche source.",
+            "feedback": "La source existe encore."
+          },
+          {
+            "id": "c",
+            "text": "L’intervention d’un collègue précis.",
+            "feedback": "Le journal ne l’attribue à personne."
+          }
+        ]
+      },
+      {
+        "id": "journal-systeme-attribution-scope",
+        "axis": "Scope",
+        "prompt": "Qu’est-ce qui manque actuellement au client ?",
+        "evidenceIds": [
+          "FRC15F2",
+          "FRC15F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’ensemble de son historique.",
+            "feedback": "Le registre principal le conserve."
+          },
+          {
+            "id": "b",
+            "text": "L’affichage de la fiche dans la nouvelle vue, pas son enregistrement source.",
+            "feedback": "L’index bloque la visibilité."
+          },
+          {
+            "id": "c",
+            "text": "La permission de consulter tous les comptes.",
+            "feedback": "Aucun problème de rôle n’est indiqué."
+          }
+        ]
+      },
+      {
+        "id": "journal-systeme-attribution-intent",
+        "axis": "Intent",
+        "prompt": "Que doit pouvoir dire Lucie en réunion ?",
+        "evidenceIds": [
+          "FRC15F2",
+          "FRC15F4",
+          "FRC15F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Que le dossier existe, que son affichage est en cours de correction et qu’aucun délai n’est encore confirmé.",
+            "feedback": "Elle doit rassurer sur les données sans promettre la réparation."
+          },
+          {
+            "id": "b",
+            "text": "Que le problème est déjà réglé.",
+            "feedback": "Le correctif n’est pas appliqué."
+          },
+          {
+            "id": "c",
+            "text": "Que la faute revient à un employé.",
+            "feedback": "Rien ne le démontre."
+          }
+        ]
+      },
+      {
+        "id": "journal-systeme-attribution-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse de Yanis est responsable ?",
+        "evidenceIds": [
+          "FRC15F1",
+          "FRC15F3",
+          "FRC15F4",
+          "FRC15F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Fournir le nom d’un collègue probable.",
+            "feedback": "Ce serait une accusation sans preuve."
+          },
+          {
+            "id": "b",
+            "text": "Dire simplement que le journal se trompe.",
+            "feedback": "Le journal décrit bien le retrait de la copie."
+          },
+          {
+            "id": "c",
+            "text": "Rectifier l’accusation, expliquer l’index et donner une prochaine vérification.",
+            "feedback": "Cela distingue fait technique, impact et action."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Lucie en distinguant source, copie et affichage. Évitez toute attribution personnelle et donnez une étape vérifiable.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Ne pas confondre retrait de copie et perte de source",
+        "Éviter une accusation non étayée",
+        "Nommer l’index comme problème confirmé",
+        "Ne pas annoncer de délai non testé"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Qui a supprimé le dossier Albar ?",
+      "body": "Bonjour Lucie,\n\nLa fiche Albar n’a pas disparu du registre principal : nous y retrouvons la fiche et son historique. La ligne « deleted by system » correspond au retrait automatique de l’ancienne copie d’affichage pendant la migration. Elle ne désigne pas un employé, et nous n’avons aucun élément permettant d’attribuer cette opération à une personne.\n\nLe problème confirmé se situe dans la nouvelle vue : son index n’a pas été reconstruit pour ce compte, ce qui empêche la fiche d’y apparaître. Une reconstruction est en test, mais elle n’a pas encore été appliquée au client ; je ne peux donc pas annoncer une heure de rétablissement. Pour la réunion, tu peux expliquer que les données source sont conservées et que leur affichage est en cours de correction, sans parler de suppression définitive ni de faute individuelle.\n\nJe vérifierai le résultat du test et te donnerai un point d’étape avant 14 h, même si l’application au compte reste à programmer. Nous suivrons ensuite la visibilité de la fiche avec le client.\n\nYanis",
+      "annotations": [
+        {
+          "label": "Distingue les copies",
+          "excerpt": "La fiche Albar n’a pas disparu du registre principal",
+          "evidenceIds": [
+            "FRC15F2"
+          ]
+        },
+        {
+          "label": "Écarte une attribution",
+          "excerpt": "Elle ne désigne pas un employé",
+          "evidenceIds": [
+            "FRC15F1",
+            "FRC15F5"
+          ]
+        },
+        {
+          "label": "Identifie le problème",
+          "excerpt": "son index n’a pas été reconstruit",
+          "evidenceIds": [
+            "FRC15F3"
+          ]
+        },
+        {
+          "label": "Respecte l’incertitude",
+          "excerpt": "je ne peux donc pas annoncer une heure de rétablissement",
+          "evidenceIds": [
+            "FRC15F4",
+            "FRC15F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "test-charge-vraies-demandes",
+    "title": "La file d’attente gonflée par un test",
+    "area": "Software × Exploitation",
+    "areaLabel": "Logiciel · exploitation",
+    "role": "Salomé · responsable technique",
+    "teaser": "Une hausse spectaculaire des demandes ressemble à une crise client.",
+    "misunderstanding": "Une campagne de charge a injecté des demandes de test dans la file réelle ; il faut isoler ces demandes sans ignorer les vrais clients.",
+    "email": {
+      "from": "Bastien · responsable assistance",
+      "to": "Salomé · technique",
+      "sent": "Jeudi, 10 h 12",
+      "subject": "Avons-nous cinq cents clients en attente ?",
+      "body": "Bonjour Salomé,\n\nLa file de traitement affiche plus de cinq cents nouvelles demandes depuis 9 h. Les agents commencent à appeler des clients en pensant à un incident majeur, mais plusieurs entrées ont des noms étranges. Je ne veux ni annoncer une crise inexistante ni laisser de vraies demandes sans réponse. Peux-tu m’aider à établir l’ampleur réelle avant notre point de 11 h ?\n\nBastien"
+    },
+    "document": {
+      "title": "Exécution du test et file de traitement",
+      "intro": "Le test a traversé une limite qui devait séparer les données simulées.",
+      "facts": [
+        {
+          "id": "FRC16F1",
+          "time": "Jeudi, 8 h 50",
+          "text": "Un test de charge prévu sur une file isolée a été lancé avec la configuration de la file de production."
+        },
+        {
+          "id": "FRC16F2",
+          "time": "Jeudi, 9 h–9 h 12",
+          "text": "Le test a créé 480 demandes marquées par un identifiant commençant par « SIM- »."
+        },
+        {
+          "id": "FRC16F3",
+          "time": "Jeudi, 9 h–10 h",
+          "text": "La file de production compte aussi 46 demandes sans ce marqueur ; leur origine et leur état restent à vérifier."
+        },
+        {
+          "id": "FRC16F4",
+          "time": "Jeudi, 10 h 05",
+          "text": "Le test est arrêté. Aucun message automatique n’a encore été envoyé aux entrées marquées « SIM- »."
+        },
+        {
+          "id": "FRC16F5",
+          "time": "À ce jour",
+          "text": "L’équipe ne sait pas si les demandes réelles ont subi un retard ; une extraction séparant les deux groupes est en préparation."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "test-charge-vraies-demandes-evidence",
+        "axis": "Evidence",
+        "prompt": "Que signifie le total supérieur à cinq cents ?",
+        "evidenceIds": [
+          "FRC16F2",
+          "FRC16F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Plus de cinq cents vrais clients ont écrit.",
+            "feedback": "Le marqueur identifie 480 entrées simulées."
+          },
+          {
+            "id": "b",
+            "text": "Aucun client réel n’est concerné.",
+            "feedback": "Quarante-six entrées restent à qualifier."
+          },
+          {
+            "id": "c",
+            "text": "Il mélange au moins 480 demandes simulées et des demandes à examiner.",
+            "feedback": "Le total brut ne mesure pas le nombre de clients touchés."
+          }
+        ]
+      },
+      {
+        "id": "test-charge-vraies-demandes-scope",
+        "axis": "Scope",
+        "prompt": "Que permet le marqueur « SIM- » ?",
+        "evidenceIds": [
+          "FRC16F2",
+          "FRC16F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Prouver que toutes les autres demandes sont urgentes.",
+            "feedback": "Leur état n’est pas établi."
+          },
+          {
+            "id": "b",
+            "text": "Isoler les entrées créées par le test, pas juger les autres.",
+            "feedback": "Les demandes sans marqueur nécessitent encore une vérification."
+          },
+          {
+            "id": "c",
+            "text": "Envoyer un message automatique à tous.",
+            "feedback": "Aucun envoi ne doit être déduit du marqueur."
+          }
+        ]
+      },
+      {
+        "id": "test-charge-vraies-demandes-intent",
+        "axis": "Intent",
+        "prompt": "Quel résultat Bastien attend-il à 11 h ?",
+        "evidenceIds": [
+          "FRC16F3",
+          "FRC16F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un communiqué affirmant une crise de cinq cents clients.",
+            "feedback": "Le total est contaminé par le test."
+          },
+          {
+            "id": "b",
+            "text": "La suppression immédiate de toute la file.",
+            "feedback": "Des demandes réelles s’y trouvent."
+          },
+          {
+            "id": "c",
+            "text": "Une estimation séparée et un plan pour traiter les demandes authentiques.",
+            "feedback": "Il doit organiser ses agents sans chiffre trompeur."
+          }
+        ]
+      },
+      {
+        "id": "test-charge-vraies-demandes-purpose",
+        "axis": "Purpose",
+        "prompt": "Que doit proposer Salomé ?",
+        "evidenceIds": [
+          "FRC16F1",
+          "FRC16F3",
+          "FRC16F4",
+          "FRC16F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire qu’aucun client n’a attendu puisque le test est arrêté.",
+            "feedback": "L’effet sur les demandes réelles est inconnu."
+          },
+          {
+            "id": "b",
+            "text": "Laisser l’assistance appeler les entrées SIM-.",
+            "feedback": "Ce sont des demandes simulées."
+          },
+          {
+            "id": "c",
+            "text": "Isoler le test, vérifier les 46 autres entrées et mesurer leur délai avant toute annonce.",
+            "feedback": "La priorité est de protéger les vrais dossiers."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Bastien avec une lecture prudente du compteur et un plan d’extraction utile pour son équipe.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Identifier le test sans minimiser l’impact possible",
+        "Distinguer demandes simulées et non qualifiées",
+        "Éviter un chiffre de clients touchés non vérifié",
+        "Prioriser les vraies demandes et leur délai"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Avons-nous cinq cents clients en attente ?",
+      "body": "Bonjour Bastien,\n\nNon, le compteur brut ne signifie pas que cinq cents clients attendent. Nous avons identifié 480 entrées « SIM- » créées par un test de charge lancé par erreur sur la file de production. Le test est arrêté et ces entrées n’ont pas déclenché de message automatique. Il reste cependant 46 demandes sans ce marqueur : nous devons vérifier leur origine et leur traitement avant de conclure que les clients n’ont subi aucun retard.\n\nJe prépare une extraction séparée des deux groupes et je demanderai à l’équipe de contrôler en priorité les demandes non marquées, avec leur heure d’arrivée et leur état. Pour ton point de 11 h, tu peux dire que la hausse est largement due à un test mal configuré, tout en précisant que nous vérifions l’effet éventuel sur les vrais dossiers.\n\nJe t’enverrai le décompte vérifié dès qu’il sera prêt. Nous corrigerons ensuite la configuration de test pour empêcher qu’elle écrive de nouveau dans la file réelle.\n\nSalomé",
+      "annotations": [
+        {
+          "label": "Interprète le total",
+          "excerpt": "le compteur brut ne signifie pas que cinq cents clients attendent",
+          "evidenceIds": [
+            "FRC16F2",
+            "FRC16F3"
+          ]
+        },
+        {
+          "label": "Nomme le test",
+          "excerpt": "480 entrées « SIM- »",
+          "evidenceIds": [
+            "FRC16F1",
+            "FRC16F2"
+          ]
+        },
+        {
+          "label": "Préserve le doute",
+          "excerpt": "nous devons vérifier leur origine et leur traitement",
+          "evidenceIds": [
+            "FRC16F3",
+            "FRC16F5"
+          ]
+        },
+        {
+          "label": "Priorise l’action",
+          "excerpt": "contrôler en priorité les demandes non marquées",
+          "evidenceIds": [
+            "FRC16F3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "deux-modifications-hors-ligne",
+    "title": "Deux versions d’une même note",
+    "area": "Software × Synchronisation",
+    "areaLabel": "Logiciel · synchronisation",
+    "role": "Malik · produit",
+    "teaser": "Une modification faite hors ligne semble avoir effacé le travail d’une collègue.",
+    "misunderstanding": "Deux versions ont été créées séparément ; l’historique conserve les deux, mais la dernière synchronisation n’a affiché qu’une version.",
+    "email": {
+      "from": "Julie · responsable de projet",
+      "to": "Malik · produit",
+      "sent": "Mardi, 15 h 32",
+      "subject": "La note de Camille a-t-elle été écrasée ?",
+      "body": "Bonjour Malik,\n\nCamille a rédigé hier une note détaillée dans le train. Ce matin, après la synchronisation, elle ne voit plus que la version courte que Thomas a modifiée au bureau. Thomas pense avoir perdu le travail de Camille et les deux équipes commencent à se reprocher la modification. Est-ce récupérable ? J’ai besoin d’une explication qui ne désigne pas un coupable avant notre réunion de 17 h.\n\nJulie"
+    },
+    "document": {
+      "title": "Historique des versions",
+      "intro": "L’historique montre deux contributions, mais pas encore un texte fusionné.",
+      "facts": [
+        {
+          "id": "FRC17F1",
+          "time": "Lundi, 16 h",
+          "text": "Camille a modifié la note hors ligne et enregistré la version C sur son appareil."
+        },
+        {
+          "id": "FRC17F2",
+          "time": "Lundi, 16 h 20",
+          "text": "Thomas a modifié la version en ligne et enregistré la version T."
+        },
+        {
+          "id": "FRC17F3",
+          "time": "Mardi, 9 h",
+          "text": "L’appareil de Camille s’est synchronisé ; l’écran principal a affiché T, la dernière version en ligne."
+        },
+        {
+          "id": "FRC17F4",
+          "time": "Mardi, 14 h",
+          "text": "L’historique conserve C et T avec leurs contenus et leurs auteurs."
+        },
+        {
+          "id": "FRC17F5",
+          "time": "À ce jour",
+          "text": "Aucune fusion automatique n’a été faite. L’équipe doit comparer les deux textes avant de choisir une version commune."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "deux-modifications-hors-ligne-evidence",
+        "axis": "Evidence",
+        "prompt": "Que peut-on dire du travail de Camille ?",
+        "evidenceIds": [
+          "FRC17F1",
+          "FRC17F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sa version est conservée dans l’historique.",
+            "feedback": "Elle n’apparaît pas à l’écran principal, mais elle existe."
+          },
+          {
+            "id": "b",
+            "text": "Thomas l’a supprimé définitivement.",
+            "feedback": "L’historique conserve C."
+          },
+          {
+            "id": "c",
+            "text": "La note commune est déjà reconstituée.",
+            "feedback": "Aucune fusion n’a été faite."
+          }
+        ]
+      },
+      {
+        "id": "deux-modifications-hors-ligne-scope",
+        "axis": "Scope",
+        "prompt": "Que signifie l’affichage de T ?",
+        "evidenceIds": [
+          "FRC17F2",
+          "FRC17F3",
+          "FRC17F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La dernière version en ligne s’affiche ; elle ne remplace pas automatiquement C dans l’historique.",
+            "feedback": "Visibilité et existence sont distinctes."
+          },
+          {
+            "id": "b",
+            "text": "T est forcément la version validée par les deux auteurs.",
+            "feedback": "Ils n’ont pas comparé leurs textes."
+          },
+          {
+            "id": "c",
+            "text": "Camille n’a jamais enregistré son travail.",
+            "feedback": "Elle a enregistré C hors ligne."
+          }
+        ]
+      },
+      {
+        "id": "deux-modifications-hors-ligne-intent",
+        "axis": "Intent",
+        "prompt": "Que cherche Julie avant 17 h ?",
+        "evidenceIds": [
+          "FRC17F4",
+          "FRC17F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le nom de la personne à sanctionner.",
+            "feedback": "Le mécanisme ne démontre pas une faute individuelle."
+          },
+          {
+            "id": "b",
+            "text": "Un choix arbitraire entre C et T.",
+            "feedback": "Les textes doivent être comparés."
+          },
+          {
+            "id": "c",
+            "text": "Une manière de récupérer les deux contributions et d’organiser une fusion sans accusation.",
+            "feedback": "Elle veut éviter que le conflit humain précède l’analyse."
+          }
+        ]
+      },
+      {
+        "id": "deux-modifications-hors-ligne-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse est la plus utile ?",
+        "evidenceIds": [
+          "FRC17F3",
+          "FRC17F4",
+          "FRC17F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Partager les deux versions, expliquer la synchronisation et proposer une revue commune.",
+            "feedback": "Elle transforme une accusation en travail de consolidation."
+          },
+          {
+            "id": "b",
+            "text": "Restaurer C en écrasant T immédiatement.",
+            "feedback": "Cela risquerait de masquer la contribution de Thomas."
+          },
+          {
+            "id": "c",
+            "text": "Dire que le système a fusionné les contenus.",
+            "feedback": "Il ne l’a pas fait."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Julie en distinguant affichage et conservation. Préparez une réunion de fusion sans attribuer de faute aux auteurs.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Confirmer l’existence des deux versions",
+        "Expliquer l’affichage actuel",
+        "Éviter de désigner un responsable sans preuve",
+        "Proposer une fusion vérifiable"
+      ]
+    },
+    "model": {
+      "subject": "Ré : La note de Camille a-t-elle été écrasée ?",
+      "body": "Bonjour Julie,\n\nLe texte de Camille n’est pas perdu : sa version C, enregistrée hors ligne, figure dans l’historique avec son contenu. La version T de Thomas y figure également. Lors de la synchronisation, l’écran principal a affiché la dernière version en ligne, ce qui a donné l’impression que la contribution de Camille avait été effacée. Ce comportement explique l’affichage, mais il ne permet pas d’accuser Thomas d’avoir supprimé son travail.\n\nJe vais vous transmettre les deux versions avant 17 h, avec leurs dates, pour que Camille et Thomas puissent repérer ce qui doit être conservé dans un texte commun. Je déconseille de restaurer l’une en écrasant l’autre avant cette comparaison. Aucune fusion automatique n’a encore été faite, et c’est justement cette décision éditoriale qui manque.\n\nJe serai disponible pendant la réunion pour expliquer l’historique et enregistrer la version commune une fois validée par les deux auteurs. Nous regarderons ensuite comment mieux signaler un conflit de synchronisation dans l’interface.\n\nMalik",
+      "annotations": [
+        {
+          "label": "Confirme la conservation",
+          "excerpt": "sa version C, enregistrée hors ligne, figure dans l’historique",
+          "evidenceIds": [
+            "FRC17F1",
+            "FRC17F4"
+          ]
+        },
+        {
+          "label": "Explique l’affichage",
+          "excerpt": "l’écran principal a affiché la dernière version en ligne",
+          "evidenceIds": [
+            "FRC17F3"
+          ]
+        },
+        {
+          "label": "Évite le blâme",
+          "excerpt": "il ne permet pas d’accuser Thomas",
+          "evidenceIds": [
+            "FRC17F2",
+            "FRC17F4"
+          ]
+        },
+        {
+          "label": "Organise la fusion",
+          "excerpt": "repérer ce qui doit être conservé dans un texte commun",
+          "evidenceIds": [
+            "FRC17F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "blocage-clavier-classe-cosmetique",
+    "title": "Un défaut « cosmétique » qui bloque l’accès",
+    "area": "Software × Accessibilité",
+    "areaLabel": "Logiciel · accessibilité",
+    "role": "Anaïs · qualité produit",
+    "teaser": "Un problème classé mineur empêche une cliente d’utiliser le parcours au clavier.",
+    "misunderstanding": "Le ticket décrit une gêne visuelle, mais les nouvelles preuves montrent un blocage fonctionnel pour l’usage au clavier.",
+    "email": {
+      "from": "Rémi · assistance",
+      "to": "Anaïs · qualité produit",
+      "sent": "Vendredi, 10 h 05",
+      "subject": "Peut-on vraiment dire que ce défaut est mineur ?",
+      "body": "Bonjour Anaïs,\n\nUne cliente ne peut pas terminer son inscription au clavier : le focus reste bloqué dans la fenêtre de consentement. Le ticket porte encore la priorité « cosmétique », et l’équipe commerciale lui a dit que l’inscription restait possible. Elle utilise le clavier pour ce parcours et demande une solution aujourd’hui. Peux-tu vérifier la gravité et me donner un message utile, sans promettre un correctif immédiat ?\n\nRémi"
+    },
+    "document": {
+      "title": "Ticket qualité et nouvelle reproduction",
+      "intro": "La classification initiale reposait sur un autre test.",
+      "facts": [
+        {
+          "id": "FRC18F1",
+          "time": "Mercredi",
+          "text": "Le ticket a été ouvert après un test à la souris ; le défaut visible était un contour de focus mal aligné."
+        },
+        {
+          "id": "FRC18F2",
+          "time": "Jeudi, 16 h",
+          "text": "La cliente a envoyé une vidéo montrant que la touche Tab ne permet pas de sortir de la fenêtre de consentement."
+        },
+        {
+          "id": "FRC18F3",
+          "time": "Vendredi, 9 h",
+          "text": "L’équipe qualité a reproduit ce blocage au clavier sur la version en ligne."
+        },
+        {
+          "id": "FRC18F4",
+          "time": "Vendredi, 9 h 30",
+          "text": "Le formulaire fonctionne à la souris, mais cela ne permet pas à cette cliente de terminer son parcours au clavier."
+        },
+        {
+          "id": "FRC18F5",
+          "time": "À ce jour",
+          "text": "Le correctif est en investigation. L’assistance peut proposer un accompagnement par un canal accessible approuvé ; aucun délai de mise en ligne n’est confirmé."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "blocage-clavier-classe-cosmetique-evidence",
+        "axis": "Evidence",
+        "prompt": "Que montrent les nouveaux tests ?",
+        "evidenceIds": [
+          "FRC18F2",
+          "FRC18F3",
+          "FRC18F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un simple décalage visuel sans conséquence.",
+            "feedback": "La touche Tab reste bloquée."
+          },
+          {
+            "id": "b",
+            "text": "Un blocage fonctionnel du parcours au clavier.",
+            "feedback": "Le défaut ne se limite plus à l’apparence du focus."
+          },
+          {
+            "id": "c",
+            "text": "L’impossibilité de s’inscrire par tous les moyens.",
+            "feedback": "Le formulaire fonctionne à la souris."
+          }
+        ]
+      },
+      {
+        "id": "blocage-clavier-classe-cosmetique-scope",
+        "axis": "Scope",
+        "prompt": "Pourquoi la priorité « cosmétique » n’est-elle plus adaptée ?",
+        "evidenceIds": [
+          "FRC18F1",
+          "FRC18F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Elle reflétait un test à la souris avant la preuve du blocage au clavier.",
+            "feedback": "La portée du défaut a changé avec les nouveaux éléments."
+          },
+          {
+            "id": "b",
+            "text": "Elle a été attribuée par la cliente.",
+            "feedback": "Le ticket initial vient du test qualité."
+          },
+          {
+            "id": "c",
+            "text": "Elle signifie qu’aucun correctif n’est nécessaire.",
+            "feedback": "La classification doit être revue."
+          }
+        ]
+      },
+      {
+        "id": "blocage-clavier-classe-cosmetique-intent",
+        "axis": "Intent",
+        "prompt": "De quoi Rémi a-t-il besoin pour répondre à la cliente ?",
+        "evidenceIds": [
+          "FRC18F3",
+          "FRC18F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "D’une reconnaissance du blocage et d’un parcours accessible approuvé pendant l’enquête.",
+            "feedback": "Elle a besoin de pouvoir avancer sans promesse irréaliste."
+          },
+          {
+            "id": "b",
+            "text": "D’un conseil d’utiliser la souris malgré sa demande.",
+            "feedback": "Cela ne répond pas à son besoin."
+          },
+          {
+            "id": "c",
+            "text": "D’une date certaine de correctif.",
+            "feedback": "Aucune date n’est confirmée."
+          }
+        ]
+      },
+      {
+        "id": "blocage-clavier-classe-cosmetique-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse d’Anaïs est juste ?",
+        "evidenceIds": [
+          "FRC18F2",
+          "FRC18F3",
+          "FRC18F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Requalifier le ticket, proposer le canal accessible et annoncer une mise à jour vérifiée.",
+            "feedback": "Elle traite l’impact réel sans inventer un délai."
+          },
+          {
+            "id": "b",
+            "text": "Maintenir « cosmétique » parce que la souris marche.",
+            "feedback": "Cela ignore le blocage au clavier."
+          },
+          {
+            "id": "c",
+            "text": "Déclarer le correctif déjà disponible.",
+            "feedback": "Il est encore en investigation."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Rémi en requalifiant la portée du défaut, sans réduire le besoin de la cliente à une préférence de saisie.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Distinguer constat initial et nouvelle preuve",
+        "Nommer le blocage au clavier",
+        "Proposer une voie accessible approuvée",
+        "Éviter une date de correctif non confirmée"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Peut-on vraiment dire que ce défaut est mineur ?",
+      "body": "Bonjour Rémi,\n\nTu as raison de contester la priorité actuelle. Le ticket « cosmétique » provenait d’un test à la souris où seul le contour du focus semblait décalé. Depuis, la vidéo de la cliente et notre reproduction sur la version en ligne montrent que le focus reste bloqué dans la fenêtre de consentement au clavier. Pour son parcours, c’est un obstacle fonctionnel, même si le formulaire fonctionne à la souris. Je requalifie donc le ticket et joins ces éléments à l’enquête.\n\nTu peux lui répondre que nous avons reproduit le blocage, que nous sommes désolés de lui avoir présenté l’inscription comme normalement accessible, et que nous proposons l’accompagnement prévu par notre canal accessible approuvé. Il faut vérifier avec elle que cette solution lui convient, plutôt que la renvoyer vers la souris.\n\nLe correctif est encore à l’étude ; je ne peux pas donner de date de mise en ligne. Je te communiquerai le prochain résultat de test vérifié pour que tu puisses la tenir informée.\n\nAnaïs",
+      "annotations": [
+        {
+          "label": "Reclasse le problème",
+          "excerpt": "Pour son parcours, c’est un obstacle fonctionnel",
+          "evidenceIds": [
+            "FRC18F2",
+            "FRC18F3",
+            "FRC18F4"
+          ]
+        },
+        {
+          "label": "Corrige la classification",
+          "excerpt": "Je requalifie donc le ticket",
+          "evidenceIds": [
+            "FRC18F1",
+            "FRC18F3"
+          ]
+        },
+        {
+          "label": "Respecte la cliente",
+          "excerpt": "plutôt que la renvoyer vers la souris",
+          "evidenceIds": [
+            "FRC18F4",
+            "FRC18F5"
+          ]
+        },
+        {
+          "label": "Évite la promesse",
+          "excerpt": "je ne peux pas donner de date de mise en ligne",
+          "evidenceIds": [
+            "FRC18F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "frais-avant-nouvelle-regle",
+    "title": "Une dépense entre deux règles",
+    "area": "People × Déplacements",
+    "areaLabel": "Ressources humaines · déplacements",
+    "role": "Mélanie · ressources humaines",
+    "teaser": "Une salariée a réservé un déplacement selon une règle qui a changé avant son départ.",
+    "misunderstanding": "La nouvelle règle prend effet après la réservation ; l’équipe confond date d’achat et date du voyage.",
+    "email": {
+      "from": "Nicolas · manager",
+      "to": "Mélanie · ressources humaines",
+      "sent": "Mardi, 13 h 15",
+      "subject": "Faut-il refuser la note de frais de Salomé ?",
+      "body": "Bonjour Mélanie,\n\nSalomé a réservé son train en septembre dans la catégorie alors autorisée. Elle a voyagé en octobre, après l’entrée en vigueur de notre nouvelle politique, et la comptabilité rejette maintenant la différence de prix. Elle dit avoir suivi la règle disponible au moment de l’achat. Je ne veux pas lui promettre un remboursement non validé, mais un refus sec me semblerait injuste. Peux-tu clarifier le dossier ?\n\nNicolas"
+    },
+    "document": {
+      "title": "Politique de déplacement et réservation",
+      "intro": "Les dates de réservation et de trajet doivent être lues avec la clause de transition.",
+      "facts": [
+        {
+          "id": "FRC19F1",
+          "time": "1er septembre",
+          "text": "L’ancienne politique autorisait cette catégorie de train pour les trajets de plus de trois heures."
+        },
+        {
+          "id": "FRC19F2",
+          "time": "18 septembre",
+          "text": "Salomé a réservé son billet pour le 10 octobre ; le trajet durait quatre heures."
+        },
+        {
+          "id": "FRC19F3",
+          "time": "25 septembre",
+          "text": "La nouvelle politique a été annoncée, avec entrée en vigueur le 1er octobre."
+        },
+        {
+          "id": "FRC19F4",
+          "time": "Clause transitoire",
+          "text": "Les réservations confirmées avant le 1er octobre restent examinées selon la politique applicable au moment de l’achat, sous réserve du justificatif."
+        },
+        {
+          "id": "FRC19F5",
+          "time": "À ce jour",
+          "text": "Le billet et la confirmation figurent au dossier, mais la comptabilité n’a pas encore réexaminé la note avec la clause transitoire."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "frais-avant-nouvelle-regle-evidence",
+        "axis": "Evidence",
+        "prompt": "Qu’est-ce qui étaye la demande de Salomé ?",
+        "evidenceIds": [
+          "FRC19F1",
+          "FRC19F2",
+          "FRC19F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La nouvelle politique autorise toujours cette catégorie.",
+            "feedback": "Elle a changé la règle."
+          },
+          {
+            "id": "b",
+            "text": "Le billet a été acheté sous l’ancienne politique et entre dans la clause transitoire.",
+            "feedback": "Les dates et la durée du trajet correspondent aux conditions."
+          },
+          {
+            "id": "c",
+            "text": "La comptabilité a déjà approuvé la différence.",
+            "feedback": "Le réexamen n’a pas eu lieu."
+          }
+        ]
+      },
+      {
+        "id": "frais-avant-nouvelle-regle-scope",
+        "axis": "Scope",
+        "prompt": "Quelle date la clause transitoire rend-elle déterminante ?",
+        "evidenceIds": [
+          "FRC19F2",
+          "FRC19F3",
+          "FRC19F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uniquement la date du trajet.",
+            "feedback": "La clause parle de l’achat."
+          },
+          {
+            "id": "b",
+            "text": "La date de réservation confirmée, sous réserve du justificatif.",
+            "feedback": "Le voyage d’octobre ne suffit pas à appliquer la nouvelle règle."
+          },
+          {
+            "id": "c",
+            "text": "La date du message de Nicolas.",
+            "feedback": "Elle n’a pas d’effet sur la règle applicable."
+          }
+        ]
+      },
+      {
+        "id": "frais-avant-nouvelle-regle-intent",
+        "axis": "Intent",
+        "prompt": "Que demande Nicolas à Mélanie ?",
+        "evidenceIds": [
+          "FRC19F4",
+          "FRC19F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une exception personnelle sans justificatif.",
+            "feedback": "Le dossier contient des pièces et une clause."
+          },
+          {
+            "id": "b",
+            "text": "Une sanction de la comptabilité.",
+            "feedback": "Il demande une clarification de la note."
+          },
+          {
+            "id": "c",
+            "text": "Une lecture fondée de la règle et un réexamen avant de répondre à Salomé.",
+            "feedback": "Il veut éviter un refus injustifié comme une promesse prématurée."
+          }
+        ]
+      },
+      {
+        "id": "frais-avant-nouvelle-regle-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse est la plus utile ?",
+        "evidenceIds": [
+          "FRC19F2",
+          "FRC19F4",
+          "FRC19F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Garantir immédiatement le versement.",
+            "feedback": "La note n’est pas encore validée."
+          },
+          {
+            "id": "b",
+            "text": "Refuser parce que le voyage a eu lieu en octobre.",
+            "feedback": "Cette lecture ignore la transition."
+          },
+          {
+            "id": "c",
+            "text": "Faire vérifier la note avec la clause, puis communiquer une décision motivée.",
+            "feedback": "Le principe semble favorable, mais la validation appartient encore à la comptabilité."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Nicolas en interprétant la clause sans vous substituer à la validation comptable. Proposez une réponse loyale à Salomé.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Distinguer achat et trajet",
+        "Citer la clause transitoire",
+        "Éviter une promesse de versement avant validation",
+        "Organiser un réexamen motivé"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Faut-il refuser la note de frais de Salomé ?",
+      "body": "Bonjour Nicolas,\n\nLe simple fait que Salomé ait voyagé en octobre ne suffit pas à appliquer la nouvelle politique à son billet. Elle l’a réservé le 18 septembre pour un trajet de quatre heures, alors que l’ancienne règle autorisait encore cette catégorie. La clause transitoire prévoit justement l’examen des réservations confirmées avant le 1er octobre selon la règle en vigueur à l’achat, sous réserve du justificatif ; les pièces semblent présentes au dossier.\n\nJe vais demander à la comptabilité de reprendre la note en tenant compte de cette clause. Je préfère ne pas annoncer un remboursement définitif avant qu’elle ait validé le calcul et les justificatifs, mais je ne laisserais pas le refus actuel sans réexamen. Tu peux dire à Salomé que son argument est fondé sur la clause de transition et que nous lui communiquerons une décision motivée après vérification.\n\nJe suivrai le dossier avec la comptabilité aujourd’hui et te confirmerai le résultat, ainsi que la manière de corriger la réponse qui lui a déjà été faite si nécessaire.\n\nMélanie",
+      "annotations": [
+        {
+          "label": "Relit la chronologie",
+          "excerpt": "Elle l’a réservé le 18 septembre",
+          "evidenceIds": [
+            "FRC19F2"
+          ]
+        },
+        {
+          "label": "Applique la portée",
+          "excerpt": "La clause transitoire prévoit justement l’examen",
+          "evidenceIds": [
+            "FRC19F4"
+          ]
+        },
+        {
+          "label": "Évite la promesse",
+          "excerpt": "Je préfère ne pas annoncer un remboursement définitif",
+          "evidenceIds": [
+            "FRC19F5"
+          ]
+        },
+        {
+          "label": "Prévoit la réparation",
+          "excerpt": "une décision motivée après vérification",
+          "evidenceIds": [
+            "FRC19F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "prenom-affiche-deux-systemes",
+    "title": "Le prénom corrigé à moitié",
+    "area": "People × Identité interne",
+    "areaLabel": "Ressources humaines · identité interne",
+    "role": "Aurore · administration du personnel",
+    "teaser": "Une collègue a demandé une correction de son prénom, mais seule une partie des outils a été mise à jour.",
+    "misunderstanding": "La fiche RH a été corrigée ; l’annuaire et les badges utilisent encore un ancien import, ce qui rend la correction invisible au travail.",
+    "email": {
+      "from": "Sébastien · chef d’équipe",
+      "to": "Aurore · administration du personnel",
+      "sent": "Jeudi, 9 h 45",
+      "subject": "Pourquoi l’ancien prénom apparaît-il encore ?",
+      "body": "Bonjour Aurore,\n\nNoa m’a dit que son prénom a été corrigé dans son dossier RH, mais l’annuaire et son badge affichent toujours l’ancien. Des collègues ont repris le badge comme référence, alors qu’elle leur a déjà demandé d’utiliser Noa. Je voudrais l’aider sans lui demander encore de justifier sa demande. Sais-tu ce qui bloque et ce que je peux dire à l’équipe ?\n\nSébastien"
+    },
+    "document": {
+      "title": "Suivi de la mise à jour",
+      "intro": "Le statut « corrigé » du dossier RH ne couvre pas tous les outils.",
+      "facts": [
+        {
+          "id": "FRC110F1",
+          "time": "Lundi",
+          "text": "Noa a demandé que son prénom d’usage soit affiché dans les outils internes."
+        },
+        {
+          "id": "FRC110F2",
+          "time": "Mardi",
+          "text": "La fiche RH a été mise à jour et la demande a été marquée « traitée » dans ce système."
+        },
+        {
+          "id": "FRC110F3",
+          "time": "Mercredi",
+          "text": "L’annuaire et le système des badges ont importé une ancienne version de la fiche."
+        },
+        {
+          "id": "FRC110F4",
+          "time": "Jeudi, 9 h",
+          "text": "L’équipe informatique a confirmé qu’un nouvel import manuel est nécessaire ; il n’a pas encore été exécuté."
+        },
+        {
+          "id": "FRC110F5",
+          "time": "À ce jour",
+          "text": "Noa souhaite que les outils et les collègues utilisent Noa. Elle n’a pas demandé que la raison de cette correction soit expliquée à l’équipe."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "prenom-affiche-deux-systemes-evidence",
+        "axis": "Evidence",
+        "prompt": "Qu’est-ce qui a effectivement été corrigé ?",
+        "evidenceIds": [
+          "FRC110F2",
+          "FRC110F3",
+          "FRC110F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tous les outils internes.",
+            "feedback": "Deux affichages restent anciens."
+          },
+          {
+            "id": "b",
+            "text": "Aucun système.",
+            "feedback": "La fiche RH a été actualisée."
+          },
+          {
+            "id": "c",
+            "text": "La fiche RH, mais pas encore l’annuaire ni le badge.",
+            "feedback": "Le statut « traitée » est propre au système RH."
+          }
+        ]
+      },
+      {
+        "id": "prenom-affiche-deux-systemes-scope",
+        "axis": "Scope",
+        "prompt": "Que peut dire Sébastien à son équipe ?",
+        "evidenceIds": [
+          "FRC110F1",
+          "FRC110F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La raison de la correction pour éviter les questions.",
+            "feedback": "Noa ne l’a pas autorisé."
+          },
+          {
+            "id": "b",
+            "text": "Que le prénom à utiliser est Noa, sans expliquer les raisons personnelles.",
+            "feedback": "L’usage demandé suffit à guider les collègues."
+          },
+          {
+            "id": "c",
+            "text": "Que l’ancien badge doit faire foi jusqu’au nouvel import.",
+            "feedback": "Le badge est précisément en retard."
+          }
+        ]
+      },
+      {
+        "id": "prenom-affiche-deux-systemes-intent",
+        "axis": "Intent",
+        "prompt": "Que cherche Sébastien ?",
+        "evidenceIds": [
+          "FRC110F3",
+          "FRC110F4",
+          "FRC110F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une correction concrète des outils et une consigne respectueuse pour l’équipe.",
+            "feedback": "Il ne veut pas remettre la charge de l’explication sur Noa."
+          },
+          {
+            "id": "b",
+            "text": "Une justification personnelle de Noa.",
+            "feedback": "Il demande l’inverse."
+          },
+          {
+            "id": "c",
+            "text": "Une excuse pour garder l’ancien prénom.",
+            "feedback": "Il veut résoudre l’écart."
+          }
+        ]
+      },
+      {
+        "id": "prenom-affiche-deux-systemes-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse d’Aurore convient ?",
+        "evidenceIds": [
+          "FRC110F2",
+          "FRC110F4",
+          "FRC110F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire à Noa de patienter sans agir.",
+            "feedback": "L’import manuel est identifié."
+          },
+          {
+            "id": "b",
+            "text": "Faire exécuter l’import, signaler le délai vérifié et recommander d’utiliser Noa dès maintenant.",
+            "feedback": "L’usage correct ne dépend pas de la mise à jour technique."
+          },
+          {
+            "id": "c",
+            "text": "Demander à l’équipe de voter sur le prénom.",
+            "feedback": "La demande de Noa est explicite."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Sébastien en distinguant statut RH et affichage réel. Protégez la vie privée de Noa et donnez une consigne simple.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Décrire précisément les systèmes mis à jour",
+        "Faire corriger les outils restants",
+        "Ne pas exposer la raison personnelle",
+        "Recommander l’usage demandé dès maintenant"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Pourquoi l’ancien prénom apparaît-il encore ?",
+      "body": "Bonjour Sébastien,\n\nLa demande de Noa a bien été appliquée dans la fiche RH mardi, mais le statut « traitée » ne signifiait pas que tous les outils étaient à jour. L’annuaire et les badges ont repris une ancienne version lors de leur import mercredi. L’équipe informatique a identifié le nouvel import manuel nécessaire ; je vais le faire programmer et vérifier le résultat dans les deux outils avant de te donner une date confirmée.\n\nEn attendant, l’indication à l’équipe peut rester très simple : le prénom à utiliser est Noa, même si certains affichages techniques sont encore en retard. Il n’y a aucune raison de demander à Noa de réexpliquer sa demande ni d’en discuter les motifs avec les collègues. Si quelqu’un se réfère au badge, tu peux préciser que sa mise à jour est en cours et que l’usage demandé par Noa fait foi dans les échanges.\n\nJe contacterai Noa directement pour lui dire ce qui a été corrigé, ce qui reste ouvert et quand nous aurons vérifié l’affichage final.\n\nAurore",
+      "annotations": [
+        {
+          "label": "Distingue les systèmes",
+          "excerpt": "le statut « traitée » ne signifiait pas que tous les outils étaient à jour",
+          "evidenceIds": [
+            "FRC110F2",
+            "FRC110F3"
+          ]
+        },
+        {
+          "label": "Engage une vérification",
+          "excerpt": "vérifier le résultat dans les deux outils",
+          "evidenceIds": [
+            "FRC110F4"
+          ]
+        },
+        {
+          "label": "Protège la vie privée",
+          "excerpt": "d’en discuter les motifs avec les collègues",
+          "evidenceIds": [
+            "FRC110F5"
+          ]
+        },
+        {
+          "label": "Donne la consigne",
+          "excerpt": "le prénom à utiliser est Noa",
+          "evidenceIds": [
+            "FRC110F1",
+            "FRC110F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "candidature-interne-trop-visible",
+    "title": "La candidature devenue publique",
+    "area": "People × Mobilité interne",
+    "areaLabel": "Ressources humaines · mobilité interne",
+    "role": "Émilie · mobilité",
+    "teaser": "Une candidature interne a été copiée à des personnes qui ne devaient pas encore en être informées.",
+    "misunderstanding": "La candidature était confidentielle jusqu’à l’entretien initial ; une liste de diffusion automatique a inclus le manager actuel.",
+    "email": {
+      "from": "Lina · responsable de recrutement",
+      "to": "Émilie · mobilité",
+      "sent": "Mardi, 14 h 06",
+      "subject": "Qui a vu la candidature de Farid ?",
+      "body": "Bonjour Émilie,\n\nFarid vient de me dire que son manager actuel l’a interrogé sur sa candidature avant même notre premier entretien. Il pensait sa démarche confidentielle à ce stade. J’ai vu un mail automatique envoyé hier, mais je ne sais pas qui l’a reçu ni si le manager a lu la pièce jointe. Comment répondre à Farid sans minimiser ce qui s’est passé ni affirmer plus que nous ne savons ?\n\nLina"
+    },
+    "document": {
+      "title": "Notification de mobilité interne",
+      "intro": "Le journal indique les destinataires, mais pas la lecture effective du message.",
+      "facts": [
+        {
+          "id": "FRC111F1",
+          "time": "Règle de mobilité",
+          "text": "La candidature reste confidentielle jusqu’à l’entretien initial, sauf accord explicite de la personne candidate."
+        },
+        {
+          "id": "FRC111F2",
+          "time": "Lundi, 16 h",
+          "text": "Une notification automatique a été envoyée à Lina, à Émilie et au manager actuel de Farid."
+        },
+        {
+          "id": "FRC111F3",
+          "time": "Lundi, 16 h",
+          "text": "Le message contenait le nom de Farid et le poste visé ; aucune pièce jointe n’était incluse."
+        },
+        {
+          "id": "FRC111F4",
+          "time": "Mardi, 9 h",
+          "text": "Le manager a questionné Farid sur sa candidature. Le journal ne montre pas si le mail a été ouvert."
+        },
+        {
+          "id": "FRC111F5",
+          "time": "À ce jour",
+          "text": "La règle de notification a été suspendue pour les candidatures en cours. Farid n’a pas encore donné son accord pour que d’autres personnes soient informées."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "candidature-interne-trop-visible-evidence",
+        "axis": "Evidence",
+        "prompt": "Que peut-on confirmer sur la divulgation ?",
+        "evidenceIds": [
+          "FRC111F2",
+          "FRC111F3",
+          "FRC111F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le manager a lu un dossier complet en pièce jointe.",
+            "feedback": "Aucune pièce jointe n’a été envoyée."
+          },
+          {
+            "id": "b",
+            "text": "Personne hors recrutement n’a été informé.",
+            "feedback": "Le manager était destinataire."
+          },
+          {
+            "id": "c",
+            "text": "Le manager a reçu un message mentionnant la candidature, sans pièce jointe.",
+            "feedback": "Le journal d’envoi établit cela, pas l’ouverture du message."
+          }
+        ]
+      },
+      {
+        "id": "candidature-interne-trop-visible-scope",
+        "axis": "Scope",
+        "prompt": "Quelle règle n’a pas été respectée ?",
+        "evidenceIds": [
+          "FRC111F1",
+          "FRC111F2",
+          "FRC111F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’obligation de prévenir tous les managers.",
+            "feedback": "La règle dit l’inverse à ce stade."
+          },
+          {
+            "id": "b",
+            "text": "Le droit de Farid à obtenir immédiatement le poste.",
+            "feedback": "La question porte sur la diffusion de sa candidature."
+          },
+          {
+            "id": "c",
+            "text": "La confidentialité avant l’entretien initial, faute d’accord de Farid.",
+            "feedback": "La notification a inclus son manager trop tôt."
+          }
+        ]
+      },
+      {
+        "id": "candidature-interne-trop-visible-intent",
+        "axis": "Intent",
+        "prompt": "Que doit recevoir Farid de l’équipe ?",
+        "evidenceIds": [
+          "FRC111F2",
+          "FRC111F3",
+          "FRC111F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une garantie que le manager n’a rien vu.",
+            "feedback": "Il a été destinataire et a questionné Farid."
+          },
+          {
+            "id": "b",
+            "text": "Une explication factuelle, une reconnaissance de l’erreur et la maîtrise des prochains échanges.",
+            "feedback": "Il doit savoir ce qui a été partagé et avec qui."
+          },
+          {
+            "id": "c",
+            "text": "Un récit inventé sur la pièce jointe.",
+            "feedback": "Aucune pièce jointe n’existait."
+          }
+        ]
+      },
+      {
+        "id": "candidature-interne-trop-visible-purpose",
+        "axis": "Purpose",
+        "prompt": "Que doit conseiller Émilie à Lina ?",
+        "evidenceIds": [
+          "FRC111F3",
+          "FRC111F4",
+          "FRC111F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire que le manager a sûrement ouvert le mail.",
+            "feedback": "Le journal ne le démontre pas."
+          },
+          {
+            "id": "b",
+            "text": "Informer tous les collègues pour éviter les rumeurs.",
+            "feedback": "Cela aggraverait la divulgation."
+          },
+          {
+            "id": "c",
+            "text": "Reconnaître la notification inappropriée, préciser son contenu et demander à Farid comment organiser la suite.",
+            "feedback": "Cela rétablit de l’information et de l’autonomie."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Lina avec des faits vérifiés, une reconnaissance claire et une manière de redonner à Farid prise sur la suite.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Dire qui était destinataire",
+        "Ne pas inventer une lecture ou une pièce jointe",
+        "Reconnaître la rupture de confidentialité",
+        "Suspendre la diffusion et consulter Farid"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Qui a vu la candidature de Farid ?",
+      "body": "Bonjour Lina,\n\nLe journal confirme qu’une notification automatique a été adressée hier au manager actuel de Farid, ainsi qu’à nous deux. Elle indiquait son nom et le poste visé, mais ne contenait pas de pièce jointe. Nous ne savons pas si le manager a ouvert ce message ; le fait qu’il ait interrogé Farid montre toutefois que sa démarche ne lui est plus inconnue. La notification a enfreint notre règle de confidentialité avant le premier entretien, et nous devons le reconnaître sans détour.\n\nJe te propose d’expliquer à Farid exactement ce qui a été envoyé et à qui, de lui présenter nos excuses, puis de lui demander comment il souhaite que nous organisions les échanges à partir de maintenant. Nous avons suspendu cette notification pour les candidatures en cours ; aucune diffusion supplémentaire ne doit partir sans vérifier son accord.\n\nJe peux participer à cet échange avec toi et préparer un suivi écrit. Il importe de ne lui promettre ni que le message n’a pas été lu ni que son manager n’a conservé aucune information.\n\nÉmilie",
+      "annotations": [
+        {
+          "label": "Délimite la diffusion",
+          "excerpt": "son nom et le poste visé, mais ne contenait pas de pièce jointe",
+          "evidenceIds": [
+            "FRC111F2",
+            "FRC111F3"
+          ]
+        },
+        {
+          "label": "Préserve l’inconnu",
+          "excerpt": "Nous ne savons pas si le manager a ouvert ce message",
+          "evidenceIds": [
+            "FRC111F4"
+          ]
+        },
+        {
+          "label": "Reconnaît la règle",
+          "excerpt": "La notification a enfreint notre règle de confidentialité",
+          "evidenceIds": [
+            "FRC111F1",
+            "FRC111F2"
+          ]
+        },
+        {
+          "label": "Rend de l’autonomie",
+          "excerpt": "lui demander comment il souhaite que nous organisions les échanges",
+          "evidenceIds": [
+            "FRC111F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "silence-pris-pour-accord",
+    "title": "L’accord que personne n’a donné",
+    "area": "People × Organisation du travail",
+    "areaLabel": "Ressources humaines · organisation du travail",
+    "role": "Sonia · partenaire RH",
+    "teaser": "Un manager annonce un nouveau roulement en affirmant que toute l’équipe l’a accepté.",
+    "misunderstanding": "Le document a été partagé pour commentaires ; l’absence de réponse a été traitée comme un accord, malgré deux objections exprimées ailleurs.",
+    "email": {
+      "from": "David · responsable d’équipe",
+      "to": "Sonia · partenaire RH",
+      "sent": "Jeudi, 10 h 50",
+      "subject": "Le roulement est-il vraiment validé ?",
+      "body": "Bonjour Sonia,\n\nJ’ai annoncé lundi notre nouveau roulement du samedi en disant que l’équipe l’avait accepté. Deux personnes me disent maintenant qu’elles avaient signalé un problème à leur chef de projet, sans l’écrire dans le document partagé. Je ne veux pas retirer le planning au dernier moment, mais je ne peux plus prétendre que tout le monde était d’accord. Comment reprendre la discussion avant l’envoi définitif de demain ?\n\nDavid"
+    },
+    "document": {
+      "title": "Consultation sur le roulement",
+      "intro": "Le suivi distingue consultation, absence de commentaire et validation.",
+      "facts": [
+        {
+          "id": "FRC112F1",
+          "time": "Vendredi dernier",
+          "text": "Le projet de roulement a été partagé avec l’équipe pour recueillir des commentaires, sans demander une approbation formelle."
+        },
+        {
+          "id": "FRC112F2",
+          "time": "Lundi matin",
+          "text": "Aucun commentaire n’apparaissait dans le document partagé ; David a annoncé un accord de toute l’équipe."
+        },
+        {
+          "id": "FRC112F3",
+          "time": "Lundi après-midi",
+          "text": "Deux collègues ont indiqué au chef de projet que leurs contraintes de garde rendaient certains samedis impossibles."
+        },
+        {
+          "id": "FRC112F4",
+          "time": "Mercredi",
+          "text": "Le chef de projet a transmis ces objections à David. Aucun ajustement n’a encore été examiné."
+        },
+        {
+          "id": "FRC112F5",
+          "time": "À ce jour",
+          "text": "Le planning final n’a pas été envoyé. Le service du samedi doit néanmoins rester couvert selon l’organisation prévue."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "silence-pris-pour-accord-evidence",
+        "axis": "Evidence",
+        "prompt": "Que peut-on dire de l’accord de l’équipe ?",
+        "evidenceIds": [
+          "FRC112F1",
+          "FRC112F2",
+          "FRC112F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Toute l’équipe a formellement approuvé le roulement.",
+            "feedback": "Aucune approbation n’était demandée."
+          },
+          {
+            "id": "b",
+            "text": "Aucun accord collectif n’a été recueilli ; l’absence de commentaire ne suffit pas.",
+            "feedback": "Le document servait à consulter, pas à valider."
+          },
+          {
+            "id": "c",
+            "text": "Personne n’a exprimé de difficulté.",
+            "feedback": "Deux objections existent."
+          }
+        ]
+      },
+      {
+        "id": "silence-pris-pour-accord-scope",
+        "axis": "Scope",
+        "prompt": "Quelle contrainte reste réelle malgré la reprise de la discussion ?",
+        "evidenceIds": [
+          "FRC112F4",
+          "FRC112F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le projet doit être abandonné entièrement.",
+            "feedback": "La couverture demeure nécessaire."
+          },
+          {
+            "id": "b",
+            "text": "Les deux collègues doivent obligatoirement travailler ces samedis.",
+            "feedback": "Aucune solution n’a encore été étudiée."
+          },
+          {
+            "id": "c",
+            "text": "Le service du samedi doit être couvert.",
+            "feedback": "Il faut chercher des ajustements dans cette limite."
+          }
+        ]
+      },
+      {
+        "id": "silence-pris-pour-accord-intent",
+        "axis": "Intent",
+        "prompt": "Que cherche David avant demain ?",
+        "evidenceIds": [
+          "FRC112F3",
+          "FRC112F4",
+          "FRC112F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Corriger son annonce et trouver un roulement praticable sans feindre un accord.",
+            "feedback": "Il a encore le temps d’examiner les objections."
+          },
+          {
+            "id": "b",
+            "text": "Faire taire les deux collègues.",
+            "feedback": "Il demande comment reprendre l’échange."
+          },
+          {
+            "id": "c",
+            "text": "Éviter toute couverture le samedi.",
+            "feedback": "Le besoin de service reste."
+          }
+        ]
+      },
+      {
+        "id": "silence-pris-pour-accord-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse de Sonia aide vraiment ?",
+        "evidenceIds": [
+          "FRC112F1",
+          "FRC112F3",
+          "FRC112F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Revenir sur la formule « accepté », entendre les contraintes et proposer des ajustements avant publication.",
+            "feedback": "Cela protège la confiance et le besoin opérationnel."
+          },
+          {
+            "id": "b",
+            "text": "Maintenir le planning en disant que les objections sont tardives.",
+            "feedback": "Elles ont été exprimées avant l’envoi final."
+          },
+          {
+            "id": "c",
+            "text": "Annoncer que les deux collègues sont exemptés sans étude.",
+            "feedback": "La couverture et les alternatives doivent être examinées."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à David en séparant consultation et accord. Proposez une discussion qui reconnaît les objections tout en gardant la couverture du samedi.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Rectifier l’affirmation d’accord collectif",
+        "Reconnaître les objections déjà signalées",
+        "Préserver le besoin de couverture",
+        "Prévoir une décision après échange"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Le roulement est-il vraiment validé ?",
+      "body": "Bonjour David,\n\nTu as raison de revenir sur la formule employée lundi. Le document avait été partagé pour recueillir des commentaires, pas pour obtenir un accord formel. L’absence de réponse dans ce fichier ne permet donc pas de dire que toute l’équipe avait accepté le roulement ; deux contraintes ont d’ailleurs été signalées au chef de projet avant l’envoi final. Il vaut mieux le reconnaître maintenant que défendre une validation qui n’a pas eu lieu.\n\nJe te conseille d’indiquer à l’équipe que le projet reste ouvert jusqu’à demain. Échange avec les deux collègues sur les samedis problématiques, puis examine avec le chef de projet des permutations ou d’autres répartitions compatibles avec la couverture nécessaire. Nous ne pouvons pas promettre une exemption avant d’avoir testé ces options, mais nous pouvons promettre que les contraintes seront réellement examinées.\n\nAprès cet échange, envoie un planning final accompagné des choix retenus et de leur raison. Je peux t’aider à reformuler le message initial pour que la correction soit claire sans transformer les objections en reproche.\n\nSonia",
+      "annotations": [
+        {
+          "label": "Rectifie l’accord",
+          "excerpt": "pas pour obtenir un accord formel",
+          "evidenceIds": [
+            "FRC112F1"
+          ]
+        },
+        {
+          "label": "Reconnaît les objections",
+          "excerpt": "deux contraintes ont d’ailleurs été signalées",
+          "evidenceIds": [
+            "FRC112F3",
+            "FRC112F4"
+          ]
+        },
+        {
+          "label": "Préserve la couverture",
+          "excerpt": "compatibles avec la couverture nécessaire",
+          "evidenceIds": [
+            "FRC112F5"
+          ]
+        },
+        {
+          "label": "Propose une décision",
+          "excerpt": "envoie un planning final accompagné des choix retenus",
+          "evidenceIds": [
+            "FRC112F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "courrier-ancienne-adresse",
+    "title": "Un courrier parti à l’ancienne adresse",
+    "area": "Health administration × Correspondance",
+    "areaLabel": "Santé administrative · correspondance",
+    "role": "Élodie · gestion du courrier",
+    "teaser": "Une patiente découvre qu’un courrier administratif est parti après son changement d’adresse.",
+    "misunderstanding": "Le dossier central était à jour, mais la liste d’envoi avait été exportée avant la correction ; on ignore si le courrier a été reçu.",
+    "email": {
+      "from": "Romain · accueil de la clinique",
+      "to": "Élodie · gestion du courrier",
+      "sent": "Mardi, 11 h 18",
+      "subject": "Quel courrier est parti chez l’ancienne adresse ?",
+      "body": "Bonjour Élodie,\n\nUne patiente nous dit avoir changé d’adresse la semaine dernière. Elle vient de recevoir une notification indiquant qu’un courrier de la clinique est parti à son ancien domicile. Son dossier affiche bien sa nouvelle adresse, donc elle ne comprend pas. Avant de la rappeler, peux-tu vérifier ce qui a été expédié, si le courrier est revenu et ce que nous pouvons lui dire sans supposer qu’un tiers l’a lu ?\n\nRomain"
+    },
+    "document": {
+      "title": "Journal de l’envoi postal",
+      "intro": "Le journal distingue donnée actuelle, liste exportée et résultat postal.",
+      "facts": [
+        {
+          "id": "FRC113F1",
+          "time": "Jeudi, 10 h",
+          "text": "La patiente a fait modifier son adresse dans le dossier central ; la nouvelle adresse y apparaît."
+        },
+        {
+          "id": "FRC113F2",
+          "time": "Jeudi, 8 h",
+          "text": "La liste destinée au prochain envoi de courrier administratif a été exportée deux heures avant cette modification."
+        },
+        {
+          "id": "FRC113F3",
+          "time": "Lundi, 16 h",
+          "text": "Un rappel administratif sous enveloppe fermée a été remis au service postal avec l’ancienne adresse."
+        },
+        {
+          "id": "FRC113F4",
+          "time": "Mardi, 10 h",
+          "text": "Aucun retour postal n’est enregistré. Le suivi ne permet pas de savoir qui, le cas échéant, a reçu ou ouvert l’enveloppe."
+        },
+        {
+          "id": "FRC113F5",
+          "time": "À ce jour",
+          "text": "Le service courrier peut demander une vérification postale et envoyer un nouveau courrier à l’adresse confirmée, selon la procédure de la clinique."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "courrier-ancienne-adresse-evidence",
+        "axis": "Evidence",
+        "prompt": "Qu’est-ce qui est établi concernant l’enveloppe ?",
+        "evidenceIds": [
+          "FRC113F2",
+          "FRC113F3",
+          "FRC113F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Elle a été expédiée à l’ancienne adresse, mais sa réception et son ouverture sont inconnues.",
+            "feedback": "Le suivi s’arrête à la remise au service postal."
+          },
+          {
+            "id": "b",
+            "text": "Un voisin l’a ouverte.",
+            "feedback": "Aucune réception n’est connue."
+          },
+          {
+            "id": "c",
+            "text": "Elle a été envoyée à la nouvelle adresse.",
+            "feedback": "La liste exportée était antérieure au changement."
+          }
+        ]
+      },
+      {
+        "id": "courrier-ancienne-adresse-scope",
+        "axis": "Scope",
+        "prompt": "Pourquoi le dossier actuel et l’envoi diffèrent-ils ?",
+        "evidenceIds": [
+          "FRC113F1",
+          "FRC113F2",
+          "FRC113F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "La patiente n’a jamais signalé son déménagement.",
+            "feedback": "Elle l’a fait jeudi."
+          },
+          {
+            "id": "b",
+            "text": "Le service postal a changé l’adresse.",
+            "feedback": "La liste contenait déjà l’ancienne adresse."
+          },
+          {
+            "id": "c",
+            "text": "La liste d’envoi a été figée avant la correction du dossier central.",
+            "feedback": "La modification n’a pas été répercutée dans cet export."
+          }
+        ]
+      },
+      {
+        "id": "courrier-ancienne-adresse-intent",
+        "axis": "Intent",
+        "prompt": "De quoi Romain a-t-il besoin pour rappeler la patiente ?",
+        "evidenceIds": [
+          "FRC113F3",
+          "FRC113F4",
+          "FRC113F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "D’une assurance que personne n’a vu le courrier.",
+            "feedback": "Le suivi ne le permet pas."
+          },
+          {
+            "id": "b",
+            "text": "D’un récit exact, d’une vérification en cours et d’un nouvel envoi sûr.",
+            "feedback": "Il doit reconnaître l’erreur sans inventer une lecture par un tiers."
+          },
+          {
+            "id": "c",
+            "text": "Du contenu médical détaillé du dossier.",
+            "feedback": "Le courrier concerné est administratif."
+          }
+        ]
+      },
+      {
+        "id": "courrier-ancienne-adresse-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse d’Élodie convient ?",
+        "evidenceIds": [
+          "FRC113F1",
+          "FRC113F4",
+          "FRC113F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire que la mise à jour du dossier annule l’envoi.",
+            "feedback": "Le courrier est déjà parti."
+          },
+          {
+            "id": "b",
+            "text": "Affirmer une divulgation certaine à un tiers.",
+            "feedback": "La réception et l’ouverture ne sont pas établies."
+          },
+          {
+            "id": "c",
+            "text": "Reconnaître l’export obsolète, vérifier le parcours postal et suivre la procédure de réexpédition.",
+            "feedback": "Cela répond à la préoccupation concrète avec prudence."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Romain avec une chronologie claire et des propos utilisables auprès de la patiente. Ne concluez ni à une lecture par un tiers ni à son impossibilité.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Expliquer l’écart entre dossier et export",
+        "Décrire le contenu administratif sans détail inutile",
+        "Préserver l’incertitude sur la réception",
+        "Déclencher les vérifications et le bon nouvel envoi"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Quel courrier est parti chez l’ancienne adresse ?",
+      "body": "Bonjour Romain,\n\nLa nouvelle adresse figure bien dans le dossier central depuis jeudi à 10 h. Malheureusement, la liste utilisée pour l’envoi de lundi avait été exportée deux heures avant la modification : elle contenait encore l’ancienne adresse. Un rappel administratif sous enveloppe fermée a été confié au service postal lundi. Nous n’avons pas de retour enregistré, mais ce suivi ne permet pas de savoir si l’enveloppe a été remise à quelqu’un ni, a fortiori, ouverte.\n\nTu peux dire à la patiente que nous avons identifié un décalage entre la mise à jour de son dossier et la liste d’envoi, et lui présenter nos excuses. Il serait inexact de lui garantir que personne n’a reçu le courrier, comme d’affirmer qu’un tiers l’a lu. Je lance la vérification postale prévue et confirme avec elle l’adresse à utiliser avant tout nouvel envoi.\n\nJe te transmettrai le résultat de la vérification et la suite donnée selon notre procédure. Si la patiente souhaite parler directement au service concerné, nous organiserons ce contact sans lui faire répéter inutilement son signalement.\n\nÉlodie",
+      "annotations": [
+        {
+          "label": "Explique l’export",
+          "excerpt": "la liste utilisée pour l’envoi de lundi avait été exportée deux heures avant la modification",
+          "evidenceIds": [
+            "FRC113F1",
+            "FRC113F2"
+          ]
+        },
+        {
+          "label": "Délimite le courrier",
+          "excerpt": "Un rappel administratif sous enveloppe fermée",
+          "evidenceIds": [
+            "FRC113F3"
+          ]
+        },
+        {
+          "label": "Préserve l’inconnu",
+          "excerpt": "ne permet pas de savoir si l’enveloppe a été remise à quelqu’un",
+          "evidenceIds": [
+            "FRC113F4"
+          ]
+        },
+        {
+          "label": "Déclenche le suivi",
+          "excerpt": "Je lance la vérification postale prévue",
+          "evidenceIds": [
+            "FRC113F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dossier-remis-seulement-index",
+    "title": "« Dossier transmis » : seulement la liste",
+    "area": "Health administration × Accès aux documents",
+    "areaLabel": "Santé administrative · accès aux documents",
+    "role": "Benoît · gestion des dossiers",
+    "teaser": "Une patiente attend ses documents, mais reçoit seulement une liste de pièces.",
+    "misunderstanding": "L’agent a clôturé la demande après l’envoi d’un index ; les copies demandées n’ont pas encore été préparées.",
+    "email": {
+      "from": "Sophie · service des demandes",
+      "to": "Benoît · gestion des dossiers",
+      "sent": "Vendredi, 9 h 32",
+      "subject": "Qu’avons-nous réellement transmis ?",
+      "body": "Bonjour Benoît,\n\nLa patiente dit n’avoir reçu qu’une page avec la liste de ses documents. Notre outil indique pourtant « demande traitée », et le service d’accueil lui a répondu que son dossier était déjà transmis. Elle avait demandé des copies, pas un inventaire. Peux-tu me confirmer ce qui a été envoyé, ce qui manque et comment reprendre la demande sans lui faire tout recommencer ?\n\nSophie"
+    },
+    "document": {
+      "title": "Journal de traitement de la demande",
+      "intro": "L’état de l’outil ne reflète pas l’ensemble du travail demandé.",
+      "facts": [
+        {
+          "id": "FRC114F1",
+          "time": "Lundi",
+          "text": "La patiente a demandé des copies de documents précis par le canal sécurisé prévu."
+        },
+        {
+          "id": "FRC114F2",
+          "time": "Mercredi",
+          "text": "Benoît a généré un index des pièces disponibles pour préparer l’extraction."
+        },
+        {
+          "id": "FRC114F3",
+          "time": "Jeudi",
+          "text": "L’index seul a été envoyé ; la tâche a été marquée « traitée » par erreur."
+        },
+        {
+          "id": "FRC114F4",
+          "time": "Vendredi, 8 h",
+          "text": "Aucune copie des documents demandés n’est enregistrée comme préparée ou transmise."
+        },
+        {
+          "id": "FRC114F5",
+          "time": "À ce jour",
+          "text": "La demande initiale et l’identité vérifiée restent au dossier ; le service peut rouvrir la tâche sans nouvelle demande de la patiente."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "dossier-remis-seulement-index-evidence",
+        "axis": "Evidence",
+        "prompt": "Qu’a reçu la patiente ?",
+        "evidenceIds": [
+          "FRC114F2",
+          "FRC114F3",
+          "FRC114F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un index des pièces, pas les copies demandées.",
+            "feedback": "La transmission des copies n’est pas enregistrée."
+          },
+          {
+            "id": "b",
+            "text": "Toutes les copies demandées.",
+            "feedback": "Aucune préparation des copies n’apparaît."
+          },
+          {
+            "id": "c",
+            "text": "Aucun document du tout.",
+            "feedback": "L’index a été envoyé."
+          }
+        ]
+      },
+      {
+        "id": "dossier-remis-seulement-index-scope",
+        "axis": "Scope",
+        "prompt": "Que signifie ici « demande traitée » ?",
+        "evidenceIds": [
+          "FRC114F3",
+          "FRC114F4",
+          "FRC114F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un statut clôturé à tort après l’index, pas une transmission complète.",
+            "feedback": "L’outil et la tâche réelle divergent."
+          },
+          {
+            "id": "b",
+            "text": "Une preuve que la patiente a reçu toutes les pièces.",
+            "feedback": "Le statut ne démontre pas l’envoi des copies."
+          },
+          {
+            "id": "c",
+            "text": "Une nouvelle vérification d’identité obligatoire.",
+            "feedback": "La vérification initiale demeure au dossier."
+          }
+        ]
+      },
+      {
+        "id": "dossier-remis-seulement-index-intent",
+        "axis": "Intent",
+        "prompt": "Que cherche Sophie à éviter ?",
+        "evidenceIds": [
+          "FRC114F1",
+          "FRC114F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Toute communication avec la patiente.",
+            "feedback": "Elle veut corriger la réponse."
+          },
+          {
+            "id": "b",
+            "text": "Imposer une nouvelle demande alors que l’originale est exploitable.",
+            "feedback": "Le service peut reprendre le traitement."
+          },
+          {
+            "id": "c",
+            "text": "La préparation des copies.",
+            "feedback": "C’est précisément ce qui reste à faire."
+          }
+        ]
+      },
+      {
+        "id": "dossier-remis-seulement-index-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse répare le service ?",
+        "evidenceIds": [
+          "FRC114F3",
+          "FRC114F4",
+          "FRC114F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Renvoyer le même index avec un nouveau nom.",
+            "feedback": "Les copies manquent toujours."
+          },
+          {
+            "id": "b",
+            "text": "Reconnaître l’envoi incomplet, rouvrir la tâche et donner un suivi sur la préparation sécurisée.",
+            "feedback": "Cela évite de faire porter l’erreur à la patiente."
+          },
+          {
+            "id": "c",
+            "text": "Dire que la patiente a mal compris « dossier ».",
+            "feedback": "Sa demande était explicite."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Sophie en distinguant index et copies. Préparez une correction auprès de la patiente sans lui demander de recommencer les démarches déjà faites.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Nommer l’envoi réel",
+        "Reconnaître la clôture erronée",
+        "Réutiliser la demande et la vérification existantes",
+        "Organiser une transmission sécurisée vérifiable"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Qu’avons-nous réellement transmis ?",
+      "body": "Bonjour Sophie,\n\nAprès vérification, nous avons envoyé à la patiente l’index des pièces disponibles, pas les copies qu’elle avait demandées. J’avais généré cet index pour préparer l’extraction, puis la tâche a été clôturée à tort au moment de son envoi. Aucune copie n’est enregistrée comme préparée ou transmise. La réponse de l’accueil, fondée sur le seul statut « traitée », était donc inexacte.\n\nJe vais rouvrir la demande initiale aujourd’hui et préparer les documents désignés par la patiente par le canal sécurisé prévu. Son identité a déjà été vérifiée dans ce dossier ; nous n’avons pas à lui demander de recommencer la procédure pour réparer notre erreur. Tu peux lui présenter nos excuses, lui dire précisément qu’elle n’a reçu qu’un inventaire et lui donner un prochain point d’étape sur les copies, sans prétendre qu’elles sont déjà prêtes.\n\nJe vérifierai la liste des pièces avant l’envoi et te confirmerai ensuite la transmission effective, afin que le statut de l’outil corresponde enfin au service rendu.\n\nBenoît",
+      "annotations": [
+        {
+          "label": "Reconnaît l’envoi",
+          "excerpt": "l’index des pièces disponibles, pas les copies",
+          "evidenceIds": [
+            "FRC114F2",
+            "FRC114F3",
+            "FRC114F4"
+          ]
+        },
+        {
+          "label": "Assume l’erreur",
+          "excerpt": "la tâche a été clôturée à tort",
+          "evidenceIds": [
+            "FRC114F3"
+          ]
+        },
+        {
+          "label": "Évite une nouvelle démarche",
+          "excerpt": "nous n’avons pas à lui demander de recommencer la procédure",
+          "evidenceIds": [
+            "FRC114F1",
+            "FRC114F5"
+          ]
+        },
+        {
+          "label": "Vérifie la fin",
+          "excerpt": "te confirmerai ensuite la transmission effective",
+          "evidenceIds": [
+            "FRC114F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "attente-transfert-de-site",
+    "title": "Le transfert qui change le compteur",
+    "area": "Health administration × Liste d’attente",
+    "areaLabel": "Santé administrative · liste d’attente",
+    "role": "Samira · coordination",
+    "teaser": "Une personne croit avoir perdu son ancienneté après avoir demandé un autre site.",
+    "misunderstanding": "Le nouveau logiciel affiche la date d’entrée sur le site, tandis que la date de demande initiale reste conservée pour l’examen du dossier.",
+    "email": {
+      "from": "Luc · accueil",
+      "to": "Samira · coordination",
+      "sent": "Mercredi, 14 h 24",
+      "subject": "A-t-on remis cette personne en fin de liste ?",
+      "body": "Bonjour Samira,\n\nUne personne suivie par nos services a demandé en avril à être orientée vers le site Nord. Son espace affiche maintenant une entrée sur liste en avril, alors qu’elle attend depuis janvier. Elle pense avoir perdu trois mois et souhaite savoir si sa place a changé. Je ne veux pas lui répondre que tout est inchangé si les deux sites n’utilisent pas la même règle. Que pouvons-nous confirmer ?\n\nLuc"
+    },
+    "document": {
+      "title": "Historique du transfert",
+      "intro": "Deux dates sont conservées, mais le rang final dépend d’une vérification par l’équipe du site.",
+      "facts": [
+        {
+          "id": "FRC115F1",
+          "time": "Janvier",
+          "text": "La demande initiale a été enregistrée sur le site Centre."
+        },
+        {
+          "id": "FRC115F2",
+          "time": "Avril",
+          "text": "La personne a demandé le transfert vers le site Nord ; l’historique conserve la date de janvier."
+        },
+        {
+          "id": "FRC115F3",
+          "time": "Interface",
+          "text": "L’espace en ligne affiche la date d’entrée sur la liste du site Nord, soit avril."
+        },
+        {
+          "id": "FRC115F4",
+          "time": "Règle de coordination",
+          "text": "La date initiale doit être transmise au site Nord pour l’examen du dossier ; elle ne détermine pas seule un rang ou une date de rendez-vous."
+        },
+        {
+          "id": "FRC115F5",
+          "time": "À ce jour",
+          "text": "Le site Nord a reçu le dossier, mais n’a pas encore confirmé comment les dates ont été prises en compte pour sa liste."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "attente-transfert-de-site-evidence",
+        "axis": "Evidence",
+        "prompt": "Quelles dates sont effectivement connues ?",
+        "evidenceIds": [
+          "FRC115F1",
+          "FRC115F2",
+          "FRC115F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La demande initiale en janvier et l’entrée sur la liste Nord en avril.",
+            "feedback": "L’interface n’affiche qu’une des deux."
+          },
+          {
+            "id": "b",
+            "text": "Une nouvelle demande créée pour la première fois en avril.",
+            "feedback": "L’historique conserve janvier."
+          },
+          {
+            "id": "c",
+            "text": "Une date de rendez-vous au site Nord.",
+            "feedback": "Aucune date n’est fixée."
+          }
+        ]
+      },
+      {
+        "id": "attente-transfert-de-site-scope",
+        "axis": "Scope",
+        "prompt": "Que garantit la règle de coordination ?",
+        "evidenceIds": [
+          "FRC115F2",
+          "FRC115F4",
+          "FRC115F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La transmission de la date initiale pour examen, pas un rang automatique.",
+            "feedback": "Le site Nord doit encore confirmer son traitement."
+          },
+          {
+            "id": "b",
+            "text": "La première place sur la liste Nord.",
+            "feedback": "Aucun rang n’est garanti."
+          },
+          {
+            "id": "c",
+            "text": "La suppression de la date d’avril.",
+            "feedback": "Elle reste la date d’entrée locale."
+          }
+        ]
+      },
+      {
+        "id": "attente-transfert-de-site-intent",
+        "axis": "Intent",
+        "prompt": "Que cherche Luc pour sa réponse ?",
+        "evidenceIds": [
+          "FRC115F3",
+          "FRC115F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une raison d’ignorer l’inquiétude.",
+            "feedback": "L’affichage est réellement ambigu."
+          },
+          {
+            "id": "b",
+            "text": "Une explication des deux dates et une vérification du traitement réel par le site Nord.",
+            "feedback": "Il doit éviter une fausse assurance de rang inchangé."
+          },
+          {
+            "id": "c",
+            "text": "Une date de rendez-vous inventée.",
+            "feedback": "Le site n’en a pas confirmé."
+          }
+        ]
+      },
+      {
+        "id": "attente-transfert-de-site-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle action de Samira est pertinente ?",
+        "evidenceIds": [
+          "FRC115F2",
+          "FRC115F4",
+          "FRC115F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire que trois mois ont forcément été perdus.",
+            "feedback": "Le traitement du site reste à vérifier."
+          },
+          {
+            "id": "b",
+            "text": "Promettre que rien n’a changé.",
+            "feedback": "La liste locale et son rang ne sont pas confirmés."
+          },
+          {
+            "id": "c",
+            "text": "Demander au site Nord de confirmer la prise en compte de janvier et expliquer l’affichage à la personne.",
+            "feedback": "Cela relie l’écran à la décision réelle."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Luc en expliquant les deux dates et la limite de ce que l’on sait du rang. Organisez une vérification utile auprès du site Nord.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Séparer date d’origine et date locale",
+        "Ne pas conclure sur le rang sans confirmation",
+        "Reconnaître l’ambiguïté de l’affichage",
+        "Demander une réponse au site Nord"
+      ]
+    },
+    "model": {
+      "subject": "Ré : A-t-on remis cette personne en fin de liste ?",
+      "body": "Bonjour Luc,\n\nLa demande initiale de janvier n’a pas été effacée : elle figure toujours dans l’historique du dossier. L’espace en ligne affiche toutefois la date d’entrée sur la liste du site Nord, en avril. Ces deux dates répondent à des questions différentes, et l’affichage actuel ne suffit pas à déterminer la place de la personne dans cette liste.\n\nLa règle prévoit que le site Nord examine le dossier avec la date initiale, mais elle ne garantit pas à elle seule un rang ou une date de rendez-vous. Comme le site n’a pas encore confirmé son traitement, je ne dirais ni que trois mois ont été perdus ni que rien n’a changé. Je vais lui demander explicitement comment la date de janvier a été prise en compte et quelle information nous pouvons communiquer sur l’état de la demande.\n\nTu peux déjà expliquer à la personne pourquoi avril apparaît à l’écran et reconnaître que cette présentation prête à confusion. Je te transmettrai la réponse vérifiée du site Nord pour que tu puisses lui faire un retour précis.\n\nSamira",
+      "annotations": [
+        {
+          "label": "Conserve la date",
+          "excerpt": "La demande initiale de janvier n’a pas été effacée",
+          "evidenceIds": [
+            "FRC115F1",
+            "FRC115F2"
+          ]
+        },
+        {
+          "label": "Explique l’interface",
+          "excerpt": "affiche toutefois la date d’entrée sur la liste du site Nord",
+          "evidenceIds": [
+            "FRC115F3"
+          ]
+        },
+        {
+          "label": "Limite la conclusion",
+          "excerpt": "ne garantit pas à elle seule un rang",
+          "evidenceIds": [
+            "FRC115F4"
+          ]
+        },
+        {
+          "label": "Demande vérification",
+          "excerpt": "comment la date de janvier a été prise en compte",
+          "evidenceIds": [
+            "FRC115F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "contact-prefere-non-respecte",
+    "title": "Le numéro à ne plus appeler",
+    "area": "Health administration × Préférences de contact",
+    "areaLabel": "Santé administrative · préférences de contact",
+    "role": "Florence · relation patients",
+    "teaser": "Une patiente avait modifié sa préférence de contact, mais un rappel est parti vers son ancien numéro professionnel.",
+    "misunderstanding": "La préférence centrale a changé ; un fichier d’appels exporté la veille a continué à utiliser l’ancien numéro.",
+    "email": {
+      "from": "Ahmed · accueil",
+      "to": "Florence · relation patients",
+      "sent": "Jeudi, 12 h 02",
+      "subject": "Pourquoi l’avons-nous appelée au travail ?",
+      "body": "Bonjour Florence,\n\nUne patiente nous reproche un appel de rappel sur son ancien numéro professionnel, qu’elle nous avait demandé de ne plus utiliser. Son dossier actuel indique bien son mobile personnel. Elle veut savoir pourquoi l’appel a eu lieu et comment éviter une nouvelle tentative au travail. Je ne veux pas lui dire que c’est réglé tant que la liste d’appels existe encore. Peux-tu vérifier ?\n\nAhmed"
+    },
+    "document": {
+      "title": "Préférence de contact et liste d’appels",
+      "intro": "La fiche active et le fichier exporté ne portent pas la même information.",
+      "facts": [
+        {
+          "id": "FRC116F1",
+          "time": "Mardi, 15 h",
+          "text": "La patiente a demandé que le numéro professionnel ne soit plus utilisé ; son mobile personnel a été confirmé."
+        },
+        {
+          "id": "FRC116F2",
+          "time": "Mardi, 16 h",
+          "text": "La préférence a été modifiée dans le dossier central."
+        },
+        {
+          "id": "FRC116F3",
+          "time": "Mardi, 10 h",
+          "text": "La liste des rappels de jeudi avait été exportée avant cette modification."
+        },
+        {
+          "id": "FRC116F4",
+          "time": "Jeudi, 9 h",
+          "text": "Un agent a tenté un appel vers l’ancien numéro professionnel à partir de la liste ; personne n’a répondu et aucun message n’a été laissé."
+        },
+        {
+          "id": "FRC116F5",
+          "time": "À ce jour",
+          "text": "La liste contient encore l’ancien numéro. L’équipe peut supprimer l’entrée de cette campagne et régénérer la liste à partir des préférences actuelles."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "contact-prefere-non-respecte-evidence",
+        "axis": "Evidence",
+        "prompt": "Que sait-on de l’appel ?",
+        "evidenceIds": [
+          "FRC116F3",
+          "FRC116F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "La patiente a reçu un message détaillé au travail.",
+            "feedback": "Aucun message n’a été laissé."
+          },
+          {
+            "id": "b",
+            "text": "Aucun appel n’a été effectué.",
+            "feedback": "La tentative est enregistrée."
+          },
+          {
+            "id": "c",
+            "text": "Un appel a été tenté au travail sans réponse ni message laissé.",
+            "feedback": "On ne peut pas dire qu’une conversation a eu lieu."
+          }
+        ]
+      },
+      {
+        "id": "contact-prefere-non-respecte-scope",
+        "axis": "Scope",
+        "prompt": "Pourquoi l’ancien numéro était-il encore utilisé ?",
+        "evidenceIds": [
+          "FRC116F1",
+          "FRC116F2",
+          "FRC116F3",
+          "FRC116F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La liste de campagne avait été exportée avant la mise à jour du dossier central.",
+            "feedback": "La correction active n’a pas modifié le fichier déjà produit."
+          },
+          {
+            "id": "b",
+            "text": "La patiente n’avait pas confirmé son nouveau numéro.",
+            "feedback": "Son mobile était confirmé."
+          },
+          {
+            "id": "c",
+            "text": "Le dossier central a été rétabli à l’ancien numéro.",
+            "feedback": "Il affiche le mobile personnel."
+          }
+        ]
+      },
+      {
+        "id": "contact-prefere-non-respecte-intent",
+        "axis": "Intent",
+        "prompt": "Que souhaite Ahmed avant de rappeler la patiente ?",
+        "evidenceIds": [
+          "FRC116F4",
+          "FRC116F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une garantie que personne au travail n’a vu l’appel.",
+            "feedback": "L’absence de réponse ne permet pas de tout savoir."
+          },
+          {
+            "id": "b",
+            "text": "Une explication et la preuve que la liste à risque a été corrigée.",
+            "feedback": "Il veut éviter de répéter l’erreur."
+          },
+          {
+            "id": "c",
+            "text": "Un rappel au numéro professionnel pour vérifier.",
+            "feedback": "Ce numéro ne doit plus être utilisé."
+          }
+        ]
+      },
+      {
+        "id": "contact-prefere-non-respecte-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse de Florence convient ?",
+        "evidenceIds": [
+          "FRC116F2",
+          "FRC116F4",
+          "FRC116F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire que la fiche centrale suffit à elle seule.",
+            "feedback": "La liste exportée demeure obsolète."
+          },
+          {
+            "id": "b",
+            "text": "Retirer l’entrée obsolète, régénérer la liste et confirmer le bon canal avant de répondre.",
+            "feedback": "La réparation doit porter sur le fichier réellement utilisé."
+          },
+          {
+            "id": "c",
+            "text": "Affirmer qu’aucun incident n’a eu lieu.",
+            "feedback": "La tentative d’appel est réelle."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Ahmed avec une explication prudente de l’appel et une vérification des listes avant tout nouveau contact.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Reconnaître la préférence exprimée",
+        "Décrire exactement la tentative d’appel",
+        "Ne pas prétendre connaître ses conséquences au travail",
+        "Éliminer la source du prochain mauvais appel"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Pourquoi l’avons-nous appelée au travail ?",
+      "body": "Bonjour Ahmed,\n\nLa patiente avait bien demandé mardi que son numéro professionnel ne soit plus utilisé, et son mobile personnel figure depuis dans le dossier central. La liste des rappels de jeudi avait malheureusement été exportée avant cette modification. C’est à partir de ce fichier qu’un agent a tenté l’appel ce matin. La trace indique qu’il n’a obtenu aucune réponse et n’a laissé aucun message ; nous ne pouvons pas en déduire davantage sur ce qui a été vu au travail.\n\nJe retire immédiatement l’entrée obsolète de cette campagne et fais régénérer la liste à partir des préférences actuelles. Je vérifierai aussi qu’aucune autre tentative n’est programmée vers l’ancien numéro. Une fois ce contrôle fait, tu pourras présenter nos excuses à la patiente, expliquer l’origine de l’erreur et lui confirmer le canal désormais utilisé.\n\nJe t’enverrai le résultat de la vérification avant que tu la rappelles. Une fiche centrale corrigée ne suffisait pas tant que le fichier d’appels restait inchangé ; nous devons corriger les deux.\n\nFlorence",
+      "annotations": [
+        {
+          "label": "Reconnaît la préférence",
+          "excerpt": "son mobile personnel figure depuis dans le dossier central",
+          "evidenceIds": [
+            "FRC116F1",
+            "FRC116F2"
+          ]
+        },
+        {
+          "label": "Décrit la tentative",
+          "excerpt": "n’a obtenu aucune réponse et n’a laissé aucun message",
+          "evidenceIds": [
+            "FRC116F4"
+          ]
+        },
+        {
+          "label": "Corrige la source",
+          "excerpt": "Je retire immédiatement l’entrée obsolète de cette campagne",
+          "evidenceIds": [
+            "FRC116F5"
+          ]
+        },
+        {
+          "label": "Conditionne la réponse",
+          "excerpt": "Une fois ce contrôle fait",
+          "evidenceIds": [
+            "FRC116F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "certificat-fournisseur-expire",
+    "title": "Le certificat joint n’est plus valide",
+    "area": "Operations × Achats",
+    "areaLabel": "Opérations · achats",
+    "role": "Victor · achats",
+    "teaser": "Un client demande une preuve de conformité pour un lot déjà prêt à partir.",
+    "misunderstanding": "Le fournisseur a joint un ancien certificat et affirme que le renouvellement est en cours ; le lot n’est pas pour autant déclaré non conforme.",
+    "email": {
+      "from": "Héloïse · responsable client",
+      "to": "Victor · achats",
+      "sent": "Lundi, 11 h 40",
+      "subject": "Peut-on envoyer le lot avec ce certificat ?",
+      "body": "Bonjour Victor,\n\nNotre client attend le lot demain et demande le certificat fournisseur avant l’expédition. Celui du dossier a expiré la semaine dernière. Le fournisseur me dit que le nouveau est « en cours », tandis que l’entrepôt pense que cela ne change rien au produit. Puis-je envoyer le certificat actuel avec une explication, ou devons-nous attendre ? J’ai besoin d’une position avant 15 h.\n\nHéloïse"
+    },
+    "document": {
+      "title": "Contrôle documentaire du lot",
+      "intro": "La situation du document ne suffit pas à juger la qualité du produit.",
+      "facts": [
+        {
+          "id": "FRC117F1",
+          "time": "Vendredi précédent",
+          "text": "Le certificat couvrant le fournisseur est arrivé à expiration."
+        },
+        {
+          "id": "FRC117F2",
+          "time": "Lundi, 9 h",
+          "text": "Le fournisseur a indiqué avoir demandé son renouvellement, sans fournir d’attestation ni de date."
+        },
+        {
+          "id": "FRC117F3",
+          "time": "Lundi, 10 h",
+          "text": "Le lot est préparé à l’entrepôt, mais la vérification documentaire exigée par le client n’est pas terminée."
+        },
+        {
+          "id": "FRC117F4",
+          "time": "Contrat client",
+          "text": "Le certificat valide doit être fourni avant l’expédition du lot."
+        },
+        {
+          "id": "FRC117F5",
+          "time": "À ce jour",
+          "text": "L’équipe qualité n’a ni accepté le document expiré ni conclu que le produit est non conforme. Elle doit examiner les pièces reçues avant la libération du lot."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "certificat-fournisseur-expire-evidence",
+        "axis": "Evidence",
+        "prompt": "Que permet d’affirmer le dossier ?",
+        "evidenceIds": [
+          "FRC117F1",
+          "FRC117F2",
+          "FRC117F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le produit est nécessairement non conforme.",
+            "feedback": "L’équipe qualité ne l’a pas conclu."
+          },
+          {
+            "id": "b",
+            "text": "Le nouveau certificat a été délivré.",
+            "feedback": "Seule une demande de renouvellement est annoncée."
+          },
+          {
+            "id": "c",
+            "text": "Le document disponible est expiré et son remplacement n’est pas encore justifié.",
+            "feedback": "Cela ne prouve pas un défaut du produit."
+          }
+        ]
+      },
+      {
+        "id": "certificat-fournisseur-expire-scope",
+        "axis": "Scope",
+        "prompt": "Quelle exigence bloque l’expédition annoncée ?",
+        "evidenceIds": [
+          "FRC117F3",
+          "FRC117F4",
+          "FRC117F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’absence de place dans l’entrepôt.",
+            "feedback": "Le lot est préparé."
+          },
+          {
+            "id": "b",
+            "text": "Une décision du client de supprimer la commande.",
+            "feedback": "Aucune annulation n’est mentionnée."
+          },
+          {
+            "id": "c",
+            "text": "La remise d’un certificat valide avant le départ du lot.",
+            "feedback": "Un lot préparé n’est pas libéré si la pièce exigée manque."
+          }
+        ]
+      },
+      {
+        "id": "certificat-fournisseur-expire-intent",
+        "axis": "Intent",
+        "prompt": "Que doit pouvoir communiquer Héloïse avant 15 h ?",
+        "evidenceIds": [
+          "FRC117F2",
+          "FRC117F4",
+          "FRC117F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un état honnête des pièces et un point de décision avec la qualité.",
+            "feedback": "Le client a besoin d’un calendrier fiable, pas d’une assurance improvisée."
+          },
+          {
+            "id": "b",
+            "text": "Une promesse d’envoi demain quoi qu’il arrive.",
+            "feedback": "Le document valide n’est pas disponible."
+          },
+          {
+            "id": "c",
+            "text": "Une accusation publique contre le fournisseur.",
+            "feedback": "Le renouvellement doit d’abord être vérifié."
+          }
+        ]
+      },
+      {
+        "id": "certificat-fournisseur-expire-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse de Victor convient ?",
+        "evidenceIds": [
+          "FRC117F1",
+          "FRC117F4",
+          "FRC117F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Joindre le document expiré en le présentant comme valide.",
+            "feedback": "Sa date est dépassée."
+          },
+          {
+            "id": "b",
+            "text": "Affirmer que le lot est défectueux.",
+            "feedback": "Aucune analyse qualité ne l’établit."
+          },
+          {
+            "id": "c",
+            "text": "Demander la preuve de renouvellement, saisir la qualité et prévenir d’un risque de délai.",
+            "feedback": "Elle respecte la clause sans conclure sur le produit."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Héloïse en distinguant validité documentaire et état du produit. Proposez une décision coordonnée avec la qualité avant tout engagement envers le client.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Nommer l’expiration du certificat",
+        "Ne pas qualifier le produit sans preuve",
+        "Respecter la condition contractuelle",
+        "Organiser la décision et l’information au client"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Peut-on envoyer le lot avec ce certificat ?",
+      "body": "Bonjour Héloïse,\n\nLe certificat que nous avons au dossier a expiré la semaine dernière. Le fournisseur dit avoir demandé un renouvellement, mais il ne nous a transmis ni nouvelle pièce ni attestation permettant de vérifier cette démarche. Cela ne prouve pas que le lot soit non conforme ; cela signifie que nous ne disposons pas aujourd’hui du document valide exigé par le contrat avant expédition. Le fait que le lot soit prêt à l’entrepôt ne règle pas ce point.\n\nJe relance le fournisseur immédiatement pour obtenir les pièces disponibles et je les soumets à l’équipe qualité. C’est elle qui doit confirmer si la condition documentaire est remplie et si le lot peut être libéré. Jusqu’à cette décision, je te déconseille de présenter l’ancien certificat comme valide ou de garantir un départ demain.\n\nJe te donnerai un état vérifié avant 15 h. Tu pourras alors informer le client de la vérification en cours et, si nécessaire, d’un risque de décalage, sans lui annoncer prématurément un défaut du produit.\n\nVictor",
+      "annotations": [
+        {
+          "label": "Sépare document et produit",
+          "excerpt": "Cela ne prouve pas que le lot soit non conforme",
+          "evidenceIds": [
+            "FRC117F1",
+            "FRC117F5"
+          ]
+        },
+        {
+          "label": "Rappelle la clause",
+          "excerpt": "document valide exigé par le contrat avant expédition",
+          "evidenceIds": [
+            "FRC117F4"
+          ]
+        },
+        {
+          "label": "Saisit la qualité",
+          "excerpt": "je les soumets à l’équipe qualité",
+          "evidenceIds": [
+            "FRC117F5"
+          ]
+        },
+        {
+          "label": "Évite la promesse",
+          "excerpt": "je te déconseille de présenter l’ancien certificat comme valide",
+          "evidenceIds": [
+            "FRC117F1",
+            "FRC117F2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "prestation-nettoyage-hors-perimetre",
+    "title": "Un supplément pour quelle prestation ?",
+    "area": "Operations × Prestataires",
+    "areaLabel": "Opérations · prestataires",
+    "role": "Karim · gestion des prestataires",
+    "teaser": "Un prestataire facture un nettoyage supplémentaire après un événement.",
+    "misunderstanding": "Le contrat comprend la remise en état ordinaire, mais une intervention exceptionnelle a été demandée oralement sans ordre écrit.",
+    "email": {
+      "from": "Maëlle · responsable du site",
+      "to": "Karim · prestataires",
+      "sent": "Mardi, 14 h 22",
+      "subject": "Devons-nous accepter le supplément ?",
+      "body": "Bonjour Karim,\n\nLe prestataire nous facture quatre heures supplémentaires après l’événement de samedi. Le contrat comprend pourtant le nettoyage après chaque manifestation. J’ai demandé une intervention rapide à son équipe lorsqu’un liquide s’est répandu dans le hall, mais je n’ai signé aucun ordre supplémentaire. Je veux contester ce qui est excessif sans nier le travail réalisé. Peux-tu vérifier le périmètre et préparer une réponse ?\n\nMaëlle"
+    },
+    "document": {
+      "title": "Contrat et compte rendu d’intervention",
+      "intro": "La facture doit être séparée entre service ordinaire et demande exceptionnelle.",
+      "facts": [
+        {
+          "id": "FRC118F1",
+          "time": "Contrat",
+          "text": "Le forfait couvre deux heures de remise en état ordinaire après un événement."
+        },
+        {
+          "id": "FRC118F2",
+          "time": "Samedi, 19 h",
+          "text": "Un liquide s’est répandu dans le hall ; Maëlle a demandé oralement une intervention immédiate distincte du nettoyage final."
+        },
+        {
+          "id": "FRC118F3",
+          "time": "Samedi, 19 h–21 h",
+          "text": "Le journal du prestataire indique deux heures d’intervention dans le hall, avec photos avant et après."
+        },
+        {
+          "id": "FRC118F4",
+          "time": "Samedi, 23 h–dimanche, 1 h",
+          "text": "Le journal indique aussi deux heures de remise en état ordinaire."
+        },
+        {
+          "id": "FRC118F5",
+          "time": "À ce jour",
+          "text": "La facture ajoute quatre heures au forfait. Aucun tarif ni ordre écrit pour l’intervention exceptionnelle n’a été confirmé entre les équipes."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "prestation-nettoyage-hors-perimetre-evidence",
+        "axis": "Evidence",
+        "prompt": "Quelles heures correspondent au service ordinaire ?",
+        "evidenceIds": [
+          "FRC118F1",
+          "FRC118F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Les quatre heures ajoutées sur la facture.",
+            "feedback": "Le journal distingue deux interventions."
+          },
+          {
+            "id": "b",
+            "text": "Les deux heures de remise en état après l’événement.",
+            "feedback": "Elles relèvent du forfait prévu."
+          },
+          {
+            "id": "c",
+            "text": "Les deux heures d’urgence dans le hall.",
+            "feedback": "Elles sont séparées du nettoyage final."
+          }
+        ]
+      },
+      {
+        "id": "prestation-nettoyage-hors-perimetre-scope",
+        "axis": "Scope",
+        "prompt": "Pourquoi la facture ne peut-elle pas être acceptée telle quelle ?",
+        "evidenceIds": [
+          "FRC118F1",
+          "FRC118F3",
+          "FRC118F4",
+          "FRC118F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Elle ajoute quatre heures alors que deux relèvent du forfait et que le prix des deux autres n’est pas confirmé.",
+            "feedback": "La ventilation et le tarif doivent être clarifiés."
+          },
+          {
+            "id": "b",
+            "text": "Aucun travail supplémentaire n’a eu lieu.",
+            "feedback": "Le journal et les photos documentent une intervention."
+          },
+          {
+            "id": "c",
+            "text": "Le contrat interdit toute intervention urgente.",
+            "feedback": "Le dossier ne dit pas cela."
+          }
+        ]
+      },
+      {
+        "id": "prestation-nettoyage-hors-perimetre-intent",
+        "axis": "Intent",
+        "prompt": "Que veut Maëlle dans sa réponse ?",
+        "evidenceIds": [
+          "FRC118F2",
+          "FRC118F3",
+          "FRC118F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Reconnaître l’intervention réelle tout en contestant le calcul non justifié.",
+            "feedback": "Elle demande une réponse équitable et précise."
+          },
+          {
+            "id": "b",
+            "text": "Refuser toute facture du prestataire.",
+            "feedback": "Elle ne nie pas le travail."
+          },
+          {
+            "id": "c",
+            "text": "Payer immédiatement quatre heures sans détail.",
+            "feedback": "Le périmètre reste à établir."
+          }
+        ]
+      },
+      {
+        "id": "prestation-nettoyage-hors-perimetre-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle démarche de Karim est utile ?",
+        "evidenceIds": [
+          "FRC118F1",
+          "FRC118F3",
+          "FRC118F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accuser le prestataire de fraude.",
+            "feedback": "Les pièces ne justifient pas cette accusation."
+          },
+          {
+            "id": "b",
+            "text": "Demander une facture ventilée et la base du tarif exceptionnel avant validation.",
+            "feedback": "Elle permet de séparer forfait et supplément possible."
+          },
+          {
+            "id": "c",
+            "text": "Ignorer les photos et le journal.",
+            "feedback": "Ils établissent au moins une intervention distincte."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Maëlle en reconnaissant la prestation d’urgence, mais en distinguant les heures comprises dans le forfait et le tarif à vérifier.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Ventiler les deux interventions",
+        "Reconnaître les faits documentés",
+        "Éviter un accord sur un prix non confirmé",
+        "Demander une facture et une base tarifaire claires"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Devons-nous accepter le supplément ?",
+      "body": "Bonjour Maëlle,\n\nLe contrat couvre deux heures de remise en état ordinaire après l’événement, et le journal du prestataire situe précisément deux heures de ce type entre 23 h et 1 h. Ces heures ne devraient pas être ajoutées au forfait. Il y a aussi, séparément, deux heures d’intervention dans le hall après ta demande urgente ; le journal et les photos montrent qu’un travail distinct a bien été effectué. Je ne proposerais donc pas de rejeter toute la demande sans examen.\n\nLa facture actuelle ajoute quatre heures sans distinguer ces deux prestations. Aucun ordre écrit ni tarif convenu pour l’intervention exceptionnelle n’apparaît dans notre dossier. Je vais demander au prestataire une facture ventilée, la description des travaux et la base du prix proposé pour les deux heures d’urgence. Nous pourrons ensuite décider ce qui est dû, sans accepter d’avance un montant qui n’a pas été justifié.\n\nJe te soumettrai le rapprochement avec le contrat et le journal avant de répondre définitivement au prestataire.\n\nKarim",
+      "annotations": [
+        {
+          "label": "Reconnaît le forfait",
+          "excerpt": "Le contrat couvre deux heures de remise en état ordinaire",
+          "evidenceIds": [
+            "FRC118F1",
+            "FRC118F4"
+          ]
+        },
+        {
+          "label": "Reconnaît l’urgence",
+          "excerpt": "un travail distinct a bien été effectué",
+          "evidenceIds": [
+            "FRC118F2",
+            "FRC118F3"
+          ]
+        },
+        {
+          "label": "Identifie la lacune",
+          "excerpt": "Aucun ordre écrit ni tarif convenu",
+          "evidenceIds": [
+            "FRC118F5"
+          ]
+        },
+        {
+          "label": "Demande des pièces",
+          "excerpt": "une facture ventilée",
+          "evidenceIds": [
+            "FRC118F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "retour-numero-serie-different",
+    "title": "Le retour au numéro de série inattendu",
+    "area": "Operations × Retours",
+    "areaLabel": "Opérations · retours",
+    "role": "Lola · service des retours",
+    "teaser": "Un client attend un échange, mais le colis retourné porte un autre numéro de série.",
+    "misunderstanding": "Le numéro photographié à l’arrivée ne correspond pas à la commande ; l’étiquette de retour pourrait avoir été réutilisée, sans preuve d’erreur du client.",
+    "email": {
+      "from": "Étienne · responsable client",
+      "to": "Lola · retours",
+      "sent": "Jeudi, 11 h 08",
+      "subject": "Peut-on dire que le client a renvoyé le mauvais appareil ?",
+      "body": "Bonjour Lola,\n\nLe client demande pourquoi son appareil de remplacement n’est pas parti. Le service retours a reçu un colis sous son étiquette, mais le numéro de série photographié ne correspond pas à celui de son achat. Je ne veux pas l’accuser d’avoir envoyé un autre appareil avant d’avoir vérifié la chaîne de retour. Que sait-on exactement et quelle étape peut débloquer le dossier ?\n\nÉtienne"
+    },
+    "document": {
+      "title": "Réception du retour et traçabilité",
+      "intro": "L’étiquette, le colis et l’appareil doivent être rapprochés.",
+      "facts": [
+        {
+          "id": "FRC119F1",
+          "time": "Commande",
+          "text": "La commande du client porte le numéro de série A-184."
+        },
+        {
+          "id": "FRC119F2",
+          "time": "Étiquette",
+          "text": "Une étiquette de retour a été créée pour cette commande et scannée lors de la réception du colis."
+        },
+        {
+          "id": "FRC119F3",
+          "time": "Réception",
+          "text": "La photo de l’appareil présent dans le colis montre le numéro B-271."
+        },
+        {
+          "id": "FRC119F4",
+          "time": "Contrôle",
+          "text": "Deux colis ont été traités sur le même poste ce matin ; la vidéo de tri et les photos d’ouverture ne sont pas encore examinées."
+        },
+        {
+          "id": "FRC119F5",
+          "time": "À ce jour",
+          "text": "L’échange automatique est suspendu jusqu’à identification de l’appareil reçu. Le service retours peut vérifier le tri et demander au client la photo du numéro de son appareil, sans conclure à sa faute."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "retour-numero-serie-different-evidence",
+        "axis": "Evidence",
+        "prompt": "Quelle discordance est vérifiée ?",
+        "evidenceIds": [
+          "FRC119F1",
+          "FRC119F2",
+          "FRC119F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’étiquette correspond à la commande A-184, mais la photo montre B-271 dans le colis.",
+            "feedback": "La cause de cette discordance reste ouverte."
+          },
+          {
+            "id": "b",
+            "text": "Le client a reconnu avoir envoyé B-271.",
+            "feedback": "Aucun aveu n’est enregistré."
+          },
+          {
+            "id": "c",
+            "text": "Aucun colis n’a été reçu.",
+            "feedback": "L’étiquette a été scannée."
+          }
+        ]
+      },
+      {
+        "id": "retour-numero-serie-different-scope",
+        "axis": "Scope",
+        "prompt": "Pourquoi ne peut-on pas attribuer l’erreur au client ?",
+        "evidenceIds": [
+          "FRC119F4",
+          "FRC119F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Les numéros de série ne servent à rien.",
+            "feedback": "Ils identifient les appareils."
+          },
+          {
+            "id": "b",
+            "text": "Le tri et l’ouverture de deux colis restent à contrôler.",
+            "feedback": "Une confusion interne reste possible."
+          },
+          {
+            "id": "c",
+            "text": "La photo est déjà invalidée.",
+            "feedback": "Elle montre bien B-271."
+          }
+        ]
+      },
+      {
+        "id": "retour-numero-serie-different-intent",
+        "axis": "Intent",
+        "prompt": "Que veut Étienne pour la relation client ?",
+        "evidenceIds": [
+          "FRC119F3",
+          "FRC119F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une confirmation que l’échange part aujourd’hui.",
+            "feedback": "Il est suspendu pour contrôle."
+          },
+          {
+            "id": "b",
+            "text": "Une explication neutre et un chemin de vérification pour l’échange.",
+            "feedback": "Il veut éviter une accusation prématurée."
+          },
+          {
+            "id": "c",
+            "text": "Une facture pour un nouvel appareil.",
+            "feedback": "Ce n’est pas demandé."
+          }
+        ]
+      },
+      {
+        "id": "retour-numero-serie-different-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse de Lola est appropriée ?",
+        "evidenceIds": [
+          "FRC119F2",
+          "FRC119F4",
+          "FRC119F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dire que le client a renvoyé un autre modèle volontairement.",
+            "feedback": "La volonté et l’origine de l’écart sont inconnues."
+          },
+          {
+            "id": "b",
+            "text": "Vérifier les preuves de tri, puis demander au client un élément utile sans suggérer une faute.",
+            "feedback": "Les deux sources peuvent aider à identifier l’appareil."
+          },
+          {
+            "id": "c",
+            "text": "Expédier automatiquement sans identifier l’appareil.",
+            "feedback": "Le processus est suspendu pour un contrôle justifié."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Étienne avec la discordance exacte, les vérifications prévues et une formulation respectueuse pour demander l’aide du client.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Distinguer discordance et responsabilité",
+        "Vérifier le tri interne",
+        "Demander un élément au client sans l’accuser",
+        "Ne pas promettre l’échange avant identification"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Peut-on dire que le client a renvoyé le mauvais appareil ?",
+      "body": "Bonjour Étienne,\n\nNous avons bien reçu un colis scanné sous l’étiquette créée pour la commande A-184. Toutefois, la photo de l’appareil à l’intérieur montre le numéro B-271. C’est une discordance à expliquer, pas une preuve que le client a envoyé volontairement un autre appareil. Deux colis ont été traités au même poste ce matin et nous n’avons pas encore revu les images de tri ni les photos d’ouverture.\n\nJe fais vérifier cette chaîne de réception en priorité. En parallèle, tu peux demander au client, de façon neutre, une photo du numéro de série de l’appareil qu’il a préparé pour le retour : elle nous aidera à rapprocher les pièces sans lui attribuer l’écart. L’échange automatique reste suspendu jusqu’à ce que nous ayons identifié l’appareil reçu ; je préfère le dire clairement plutôt que promettre un départ aujourd’hui.\n\nJe te transmettrai le résultat de la vérification interne et la prochaine décision dès que les images auront été examinées.\n\nLola",
+      "annotations": [
+        {
+          "label": "Nomme la discordance",
+          "excerpt": "la photo de l’appareil à l’intérieur montre le numéro B-271",
+          "evidenceIds": [
+            "FRC119F1",
+            "FRC119F2",
+            "FRC119F3"
+          ]
+        },
+        {
+          "label": "Évite l’accusation",
+          "excerpt": "pas une preuve que le client a envoyé volontairement un autre appareil",
+          "evidenceIds": [
+            "FRC119F4"
+          ]
+        },
+        {
+          "label": "Vérifie en interne",
+          "excerpt": "nous n’avons pas encore revu les images de tri",
+          "evidenceIds": [
+            "FRC119F4"
+          ]
+        },
+        {
+          "label": "Demande une preuve neutre",
+          "excerpt": "une photo du numéro de série de l’appareil",
+          "evidenceIds": [
+            "FRC119F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "stand-partenaire-deplace",
+    "title": "Le stand promis à l’entrée",
+    "area": "Operations × Événementiel",
+    "areaLabel": "Opérations · événementiel",
+    "role": "Éva · coordination événementielle",
+    "teaser": "Un partenaire découvre que son stand n’est plus à l’entrée du salon.",
+    "misunderstanding": "Le plan commercial indiquait un emplacement sous réserve du plan final ; une modification de circulation l’a déplacé, mais le partenaire n’a pas été prévenu.",
+    "email": {
+      "from": "Mathis · responsable des partenariats",
+      "to": "Éva · événementiel",
+      "sent": "Lundi, 16 h 35",
+      "subject": "Que peut-on offrir à notre partenaire ?",
+      "body": "Bonjour Éva,\n\nNotre partenaire a reçu vendredi le plan définitif et a vu que son stand n’était plus près de l’entrée, alors que sa proposition commerciale montrait cet endroit. Il estime avoir perdu la visibilité promise. L’équipe du site évoque un nouveau cheminement du public. Peux-tu préciser ce qui était ferme, pourquoi l’emplacement a changé et quelles options réalistes nous pouvons discuter avant son appel de demain ?\n\nMathis"
+    },
+    "document": {
+      "title": "Proposition et plans du salon",
+      "intro": "La proposition initiale et le plan final ne donnent pas le même emplacement.",
+      "facts": [
+        {
+          "id": "FRC120F1",
+          "time": "Proposition",
+          "text": "Le dessin commercial plaçait le stand près de l’entrée avec la mention « emplacement indicatif, sous réserve du plan final »."
+        },
+        {
+          "id": "FRC120F2",
+          "time": "Jeudi",
+          "text": "Le site a modifié le cheminement pour maintenir un passage accessible et a déplacé trois stands, dont celui du partenaire."
+        },
+        {
+          "id": "FRC120F3",
+          "time": "Vendredi",
+          "text": "Le plan final a été envoyé au partenaire sans message personnel expliquant le déplacement."
+        },
+        {
+          "id": "FRC120F4",
+          "time": "Lundi",
+          "text": "Le nouvel emplacement est proche de l’espace de démonstration ; sa fréquentation prévue n’a pas été mesurée."
+        },
+        {
+          "id": "FRC120F5",
+          "time": "À ce jour",
+          "text": "Une signalétique supplémentaire ou un créneau de démonstration peuvent être proposés, sous réserve de disponibilité et d’accord du partenaire."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "stand-partenaire-deplace-evidence",
+        "axis": "Evidence",
+        "prompt": "Quel engagement sur l’emplacement est documenté ?",
+        "evidenceIds": [
+          "FRC120F1",
+          "FRC120F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un stand garanti à l’entrée.",
+            "feedback": "La mention de réserve limite ce dessin."
+          },
+          {
+            "id": "b",
+            "text": "Aucun emplacement proposé.",
+            "feedback": "Un dessin indicatif existait."
+          },
+          {
+            "id": "c",
+            "text": "Un emplacement indicatif soumis au plan final.",
+            "feedback": "La proposition ne garantissait pas le point exact près de l’entrée."
+          }
+        ]
+      },
+      {
+        "id": "stand-partenaire-deplace-scope",
+        "axis": "Scope",
+        "prompt": "Que sait-on de la visibilité du nouvel emplacement ?",
+        "evidenceIds": [
+          "FRC120F4",
+          "FRC120F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il est certainement meilleur que l’entrée.",
+            "feedback": "Aucune mesure ne l’établit."
+          },
+          {
+            "id": "b",
+            "text": "Il sera totalement invisible.",
+            "feedback": "La proximité des démonstrations est connue."
+          },
+          {
+            "id": "c",
+            "text": "Il est proche des démonstrations, mais sa fréquentation n’est pas mesurée.",
+            "feedback": "On ne peut pas affirmer qu’il offre une visibilité équivalente."
+          }
+        ]
+      },
+      {
+        "id": "stand-partenaire-deplace-intent",
+        "axis": "Intent",
+        "prompt": "Que cherche Mathis avant l’appel ?",
+        "evidenceIds": [
+          "FRC120F2",
+          "FRC120F3",
+          "FRC120F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Une raison de dire que le partenaire se trompe entièrement.",
+            "feedback": "Son attente était compréhensible."
+          },
+          {
+            "id": "b",
+            "text": "Une compensation déjà approuvée.",
+            "feedback": "Les options restent conditionnelles."
+          },
+          {
+            "id": "c",
+            "text": "Une explication honnête et des options à examiner avec le partenaire.",
+            "feedback": "La relation a souffert de l’absence de préavis."
+          }
+        ]
+      },
+      {
+        "id": "stand-partenaire-deplace-purpose",
+        "axis": "Purpose",
+        "prompt": "Quelle réponse d’Éva convient ?",
+        "evidenceIds": [
+          "FRC120F1",
+          "FRC120F3",
+          "FRC120F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Invoquer la petite mention pour clore la discussion.",
+            "feedback": "Elle ne répare pas l’absence d’explication."
+          },
+          {
+            "id": "b",
+            "text": "Expliquer la réserve et le changement de circulation, reconnaître le défaut d’information et vérifier des options avant de les offrir.",
+            "feedback": "Elle respecte le cadre sans déprécier la gêne du partenaire."
+          },
+          {
+            "id": "c",
+            "text": "Promettre une signalétique et un créneau immédiatement.",
+            "feedback": "Leur disponibilité n’est pas confirmée."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Répondez à Mathis en distinguant emplacement indicatif et attente légitime. Proposez des options à vérifier, sans annoncer une visibilité équivalente non mesurée.",
+      "wordGuide": "Environ 120–210 mots",
+      "criteria": [
+        "Expliquer la réserve contractuelle",
+        "Reconnaître le défaut de préavis",
+        "Ne pas inventer une équivalence de visibilité",
+        "Vérifier les options avec le partenaire"
+      ]
+    },
+    "model": {
+      "subject": "Ré : Que peut-on offrir à notre partenaire ?",
+      "body": "Bonjour Mathis,\n\nLa proposition commerciale montrait un stand près de l’entrée, mais précisait que cet emplacement était indicatif et dépendait du plan final. Le site a ensuite modifié la circulation afin de maintenir un passage accessible, ce qui a déplacé trois stands. Ce changement était donc possible dans le cadre annoncé. En revanche, nous avons envoyé le plan final sans expliquer personnellement son effet au partenaire ; je comprends qu’il ait découvert le déplacement comme une mauvaise surprise.\n\nLe nouvel emplacement se trouve près de l’espace de démonstration, mais nous n’avons pas mesuré sa fréquentation. Je ne prétendrais pas qu’il offre une visibilité identique. Je vais vérifier aujourd’hui si une signalétique supplémentaire et un créneau de démonstration sont disponibles. Tu pourras présenter ces pistes comme des options à discuter, pas comme une compensation déjà décidée.\n\nPour l’appel, je te suggère de reconnaître le manque de préavis, d’expliquer la contrainte du plan et de demander au partenaire ce qui lui importe le plus en matière de visibilité. Je t’enverrai les possibilités confirmées avant votre échange.\n\nÉva",
+      "annotations": [
+        {
+          "label": "Délimite l’engagement",
+          "excerpt": "cet emplacement était indicatif et dépendait du plan final",
+          "evidenceIds": [
+            "FRC120F1"
+          ]
+        },
+        {
+          "label": "Reconnaît le préavis",
+          "excerpt": "nous avons envoyé le plan final sans expliquer personnellement",
+          "evidenceIds": [
+            "FRC120F3"
+          ]
+        },
+        {
+          "label": "Évite l’équivalence",
+          "excerpt": "nous n’avons pas mesuré sa fréquentation",
+          "evidenceIds": [
+            "FRC120F4"
+          ]
+        },
+        {
+          "label": "Conditionne les options",
+          "excerpt": "Je vais vérifier aujourd’hui si une signalétique supplémentaire",
+          "evidenceIds": [
+            "FRC120F5"
+          ]
+        }
+      ]
+    }
+  }
+]

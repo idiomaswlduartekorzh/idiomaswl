@@ -39,6 +39,43 @@ Fecha de corte: 25 de agosto de 2026.
   deployment y smoke: pendientes. El objetivo es mejorar relevancia y claridad
   local; no hay garantía de una posición concreta en Google.
 
+## Escritura laboral B2–C2 multilingüe — 11 de noviembre de 2026
+
+Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
+`origin/main@fb2989af`. [PR #57](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/57)
+abierto. Estado: `EN_VALIDACION`, sin integración ni despliegue.
+El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
+recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
+nivel B2, C1 y C2 de inglés, francés, alemán, italiano, portugués, ruso, japonés
+y coreano: 480 casos y 24 rutas. El harness exige cuatro casos por cada una de
+cinco áreas, evidencia referenciada y claves variadas. Las rutas ya se enlazan
+desde los niveles B2–C2 y se incluyen en el sitemap; se retiró el `noindex`
+temporal de preview.
+
+Pasaron el harness de los 480 casos, las 13 pruebas de sus reglas, el catálogo
+protegido, ESLint, TypeScript global con 4 GB de heap y toda la batería `prebuild`.
+El guardián comprueba las 24 rutas, enlaces desde hubs, sitemap, metadatos e
+imágenes OG nativas. Tres informes enumeran y documentan la lectura completa de
+los 480 casos; se cruzaron independientemente otros 157 que habían sido revisados
+por su autor. Se corrigieron cronología, evidencia, registro, originalidad,
+traducción de cifras y promesas no respaldadas. Los nueve pares semejantes entre
+japonés/coreano C1 quedan registrados como riesgo de repetición para estudiantes
+multilingües; cada banco mantiene variedad interna. Se recorrieron en navegador
+inglés B2–C2, francés B2, alemán B2 y japonés B2, además del foco y ancho móvil.
+
+El primer build local con Webpack agotó el límite de 2 GB de Node. Un segundo
+intento con 4 GB se detuvo durante la optimización para preservar espacio en
+el portátil. La vista previa remota de Vercel compiló `8ac448a8` y sirvió las
+24 rutas de escritura con GET/HEAD HTTP 200 y metadatos nativos. La prueba de los
+24 hubs encontró que italiano B2 usaba una página especial y carecía del enlace
+a escritura. Se corrigió esa página y el guardián para revisar el hub real; un
+nuevo build remoto y smoke del commit corregido son obligatorios antes de
+integrar. Después siguen la integración en `main` y el smoke de producción. El fallo
+previo de `check:reading-grammar-index` provenía de dos auxiliares existentes de
+inglés A1/A2; se distinguieron de las lecciones y se actualizó el índice, sin
+reducir los controles de temas. Contrato y estado:
+[`writing-workplace-agent-harness.md`](writing-workplace-agent-harness.md).
+
 ## IELTS Academic Set 1 gratuito y Writing OpenAI — 31 de octubre de 2026
 
 Rama `codex/aleman-a1-ai-feedback`, actualizada desde `origin/main@e6c9a1448`.

@@ -32,6 +32,14 @@ export default function AdvancedEnglishLevelHub({ level }: { level: keyof typeof
         count: '4 temas · 24 niveles de práctica',
         href: `/practica/ingles/${level}/gramatica`,
         available: true,
+      }, {
+        id: 'escritura',
+        name: 'Writing',
+        eng: 'Workplace correspondence',
+        desc: 'Read the email and evidence, test your interpretation, then write and revise a careful reply.',
+        count: '20 workplace cases',
+        href: `/practica/ingles/${level}/escritura`,
+        available: true,
       }]}
       tip={<><strong>Piloto B2–C2:</strong> esta fase incluye páginas, práctica, infografías y PDF verificables para cada tema.</>}
     />

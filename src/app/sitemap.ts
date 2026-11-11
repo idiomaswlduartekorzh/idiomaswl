@@ -220,12 +220,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Practice — skill pages ────────────────────────────────────────────────
     // `escucha` existe para los 8 idiomas × 3 niveles (24 páginas verificadas en disco).
-    // `vocabulario` entra más abajo, y solo por los niveles escritos: sale del registro,
-    // no de esta lista. Las otras tres destrezas (escritura, habla, lectura) también tienen
-    // página y siguen fuera del sitemap: es una decisión aparte, no un olvido de este cambio.
+    // `vocabulario` entra más abajo. La escritura laboral B2–C2 tiene 24 páginas
+    // publicadas; las otras destrezas se incluyen mediante sus registros propios.
     ...PRACTICE_LANGUAGES.flatMap((lang) =>
       Object.keys(grammarRegistry[lang]).flatMap((level) => [
         { lang, level, skill: 'gramatica' },
+        ...(['b2', 'c1', 'c2'].includes(level) ? [{ lang, level, skill: 'escritura' }] : []),
         ...(['a1', 'a2', 'b1'].includes(level) ? [{ lang, level, skill: 'escucha' }] : []),
       ])
     ).map(({ lang, level, skill }) => ({

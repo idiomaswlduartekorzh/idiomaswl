@@ -1,0 +1,4082 @@
+[
+  {
+    "id": "sponsor-non-patrocinio",
+    "title": "Uno sponsor non è un patrocinio",
+    "area": "Marketing × Eventi",
+    "areaLabel": "Marketing · Eventi",
+    "role": "Giulia · Comunicazione",
+    "teaser": "Il logo di un ente appare nella bozza dell’evento sotto la dicitura «patrocinato da».",
+    "misunderstanding": "L’ente ha acquistato uno spazio espositivo, ma non ha concesso il patrocinio istituzionale.",
+    "email": {
+      "from": "Luca · Direzione eventi",
+      "to": "Giulia · Comunicazione",
+      "sent": "Lunedì, ore 09:20",
+      "subject": "Possiamo parlare di patrocinio?",
+      "body": "Ciao Giulia,\n\nnella locandina compare il logo dell’ente regionale con la frase «con il patrocinio di». Il loro referente parteciperà all’evento e avrà uno stand, quindi pensavo che la formula fosse corretta. La stampa parte domani. Puoi verificare che cosa abbiamo davvero concordato e propormi una dicitura che non sminuisca la collaborazione?\n\nGrazie, Luca"
+    },
+    "document": {
+      "title": "Accordi per l’evento",
+      "intro": "La presenza commerciale non coincide con un riconoscimento istituzionale.",
+      "facts": [
+        {
+          "id": "ITC11F1",
+          "time": "Contratto",
+          "text": "L’ente ha acquistato uno stand e la visibilità del logo nella sezione partner."
+        },
+        {
+          "id": "ITC11F2",
+          "time": "Corrispondenza",
+          "text": "Il referente ha confermato la presenza, senza autorizzare la parola «patrocinio»."
+        },
+        {
+          "id": "ITC11F3",
+          "time": "Procedura",
+          "text": "Il patrocinio richiede una delibera formale; nessuna delibera è stata comunicata."
+        },
+        {
+          "id": "ITC11F4",
+          "time": "Bozza",
+          "text": "La locandina usa «con il patrocinio di» accanto al logo dell’ente."
+        },
+        {
+          "id": "ITC11F5",
+          "time": "Scadenza",
+          "text": "Il file per la stampa può essere corretto entro le 17 di oggi."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sponsor-non-patrocinio-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale rapporto è documentato?",
+        "evidenceIds": [
+          "ITC11F1",
+          "ITC11F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Un patrocinio istituzionale già deliberato.",
+            "feedback": "Manca la delibera."
+          },
+          {
+            "id": "b",
+            "text": "Nessun rapporto con l’ente.",
+            "feedback": "Stand e logo sono previsti."
+          },
+          {
+            "id": "c",
+            "text": "Una partecipazione come partner con stand e logo.",
+            "feedback": "Il contratto definisce questa visibilità."
+          }
+        ]
+      },
+      {
+        "id": "sponsor-non-patrocinio-scope",
+        "axis": "Scope",
+        "prompt": "Perché la presenza del referente non basta?",
+        "evidenceIds": [
+          "ITC11F2",
+          "ITC11F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché il referente non verrà.",
+            "feedback": "La presenza è confermata."
+          },
+          {
+            "id": "b",
+            "text": "Perché il logo è vietato.",
+            "feedback": "Il contratto lo consente come partner."
+          },
+          {
+            "id": "c",
+            "text": "Non sostituisce l’atto formale richiesto per il patrocinio.",
+            "feedback": "Partecipare e patrocinare sono ruoli diversi."
+          }
+        ]
+      },
+      {
+        "id": "sponsor-non-patrocinio-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole Luca preservare?",
+        "evidenceIds": [
+          "ITC11F1",
+          "ITC11F4",
+          "ITC11F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La visibilità della collaborazione senza attribuire un ruolo non autorizzato.",
+            "feedback": "La correzione deve restare positiva."
+          },
+          {
+            "id": "b",
+            "text": "Nascondere il rapporto con l’ente.",
+            "feedback": "Chiede una dicitura alternativa."
+          },
+          {
+            "id": "c",
+            "text": "Rinviare la stampa senza motivo.",
+            "feedback": "C’è una scadenza oggi."
+          }
+        ]
+      },
+      {
+        "id": "sponsor-non-patrocinio-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale modifica è sostenibile?",
+        "evidenceIds": [
+          "ITC11F1",
+          "ITC11F3",
+          "ITC11F4",
+          "ITC11F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lasciare «patrocinio» perché suona meglio.",
+            "feedback": "Il riconoscimento non è stato concesso."
+          },
+          {
+            "id": "b",
+            "text": "Spostare il logo tra i partner e usare «partner dell’evento».",
+            "feedback": "La formula corrisponde al contratto."
+          },
+          {
+            "id": "c",
+            "text": "Eliminare ogni riferimento allo stand.",
+            "feedback": "La partecipazione è reale."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Luca con una dicitura pronta per la locandina e un’azione prima della stampa.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Distinguere partner e patrocinio",
+        "Riconoscere la collaborazione",
+        "Proporre testo approvabile",
+        "Rispettare la scadenza"
+      ]
+    },
+    "model": {
+      "subject": "R: Possiamo parlare di patrocinio?",
+      "body": "Ciao Luca,\n\nho controllato il contratto e la corrispondenza. L’ente partecipa come partner: ha uno stand e la visibilità del logo nella sezione dedicata. La presenza del referente è confermata, ma non risulta una delibera di patrocinio né un’autorizzazione a usare quella parola. La frase attuale attribuirebbe quindi all’ente un ruolo istituzionale che non ci è stato concesso.\n\nTi propongo di inserire il logo sotto «Partner dell’evento» e, nel testo, di scrivere: «Con la partecipazione dell’ente regionale». È una formulazione positiva e coerente con ciò che è stato concordato. Prima di inviare il file in stampa, manderei al referente la sezione modificata per una verifica rapida dell’uso del logo; possiamo farlo oggi entro le 17.\n\nSe la direzione desidera davvero un patrocinio, servirà una richiesta separata e non possiamo presumerne l’esito per questa locandina. Preparo subito la versione corretta e ti mando il confronto con la bozza attuale, così puoi approvarla in tempo.\n\nA presto, Giulia",
+      "annotations": [
+        {
+          "label": "Definisce il rapporto",
+          "excerpt": "partecipa come partner",
+          "evidenceIds": [
+            "ITC11F1"
+          ]
+        },
+        {
+          "label": "Limita la formula",
+          "excerpt": "non risulta una delibera di patrocinio",
+          "evidenceIds": [
+            "ITC11F3"
+          ]
+        },
+        {
+          "label": "Propone dicitura",
+          "excerpt": "Partner dell’evento",
+          "evidenceIds": [
+            "ITC11F1",
+            "ITC11F4"
+          ]
+        },
+        {
+          "label": "Protegge la scadenza",
+          "excerpt": "oggi entro le 17",
+          "evidenceIds": [
+            "ITC11F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "attribuzione-vendite-campagna",
+    "title": "Trentadue ordini, ma da quale canale?",
+    "area": "Marketing × Analisi",
+    "areaLabel": "Marketing · Analisi",
+    "role": "Alessio · Analisi campagne",
+    "teaser": "Una presentazione attribuisce tutte le vendite a una campagna che compare solo nel percorso di acquisto.",
+    "misunderstanding": "La presenza di un annuncio nel percorso di 32 ordini viene presentata come prova che la campagna li abbia causati da sola.",
+    "email": {
+      "from": "Giada · Partnership",
+      "to": "Alessio · Analisi campagne",
+      "sent": "Giovedì, ore 11:20",
+      "subject": "Risultato da condividere con il partner",
+      "body": "Ciao Alessio,\n\nnella bozza per il partner ho scritto che la campagna ha generato 32 vendite. Il report mostra proprio 32 ordini associati agli annunci, ma ho notato che alcuni clienti sono arrivati anche dalla nostra newsletter. Il partner vorrebbe citare il risultato domani. Possiamo attribuire tutti gli ordini alla campagna, oppure serve una formula più precisa? Vorrei correggere la slide senza cancellare il contributo che il report documenta.\n\nGiada"
+    },
+    "document": {
+      "title": "Nota metodologica e percorsi d’acquisto",
+      "intro": "L’associazione nel report non misura un effetto causale esclusivo.",
+      "facts": [
+        {
+          "id": "ITC12F1",
+          "time": "Report",
+          "text": "Trentadue ordini sono associati alla campagna perché l’annuncio è stato mostrato almeno una volta nei sette giorni precedenti l’acquisto."
+        },
+        {
+          "id": "ITC12F2",
+          "time": "Percorsi",
+          "text": "Per nove di quei 32 ordini, l’ultimo accesso al sito prima dell’acquisto proveniva dalla newsletter."
+        },
+        {
+          "id": "ITC12F3",
+          "time": "Metodo",
+          "text": "Lo stesso ordine può comparire in più canali del report; non è stato svolto un confronto con un gruppo non esposto agli annunci."
+        },
+        {
+          "id": "ITC12F4",
+          "time": "Bozza",
+          "text": "La slide dice «La campagna ha generato da sola 32 vendite»; non è ancora stata inviata al partner."
+        },
+        {
+          "id": "ITC12F5",
+          "time": "Verifica",
+          "text": "Alessio può preparare entro domani l’elenco degli ordini unici e dei canali registrati in ciascun percorso."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "attribuzione-vendite-campagna-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa conta il numero 32 nel report?",
+        "evidenceIds": [
+          "ITC12F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Trentadue clienti che hanno acquistato solo dopo un clic sull’annuncio.",
+            "feedback": "Il criterio è almeno una visualizzazione nei sette giorni precedenti, non un clic esclusivo."
+          },
+          {
+            "id": "b",
+            "text": "Ordini preceduti da almeno una visualizzazione dell’annuncio entro sette giorni.",
+            "feedback": "Il report associa così gli ordini alla campagna senza isolare la causa dell’acquisto."
+          },
+          {
+            "id": "c",
+            "text": "Trentadue acquisti prodotti dalla newsletter.",
+            "feedback": "La newsletter è l’ultimo accesso registrato per nove dei 32 ordini, non per tutti."
+          }
+        ]
+      },
+      {
+        "id": "attribuzione-vendite-campagna-scope",
+        "axis": "Scope",
+        "prompt": "Perché «generati da sola» supera i dati?",
+        "evidenceIds": [
+          "ITC12F2",
+          "ITC12F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché nessuno degli ordini ha visto l’annuncio.",
+            "feedback": "Tutti e 32 soddisfano il criterio di esposizione del report."
+          },
+          {
+            "id": "b",
+            "text": "Perché i nove ordini della newsletter vanno eliminati dal totale delle vendite.",
+            "feedback": "Sono vendite reali; il problema è attribuire loro una causa esclusiva."
+          },
+          {
+            "id": "c",
+            "text": "Perché i canali si sovrappongono e manca un confronto che isoli l’effetto della campagna.",
+            "feedback": "Nove percorsi includono la newsletter e il report non stima acquisti aggiuntivi causati dagli annunci."
+          }
+        ]
+      },
+      {
+        "id": "attribuzione-vendite-campagna-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Giada prima di parlare al partner?",
+        "evidenceIds": [
+          "ITC12F4",
+          "ITC12F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una frase verificabile che riconosca l’associazione senza promettere causalità esclusiva.",
+            "feedback": "La slide è ancora modificabile e la verifica dei percorsi può precisarla."
+          },
+          {
+            "id": "b",
+            "text": "Una giustificazione per nascondere gli ordini con accesso dalla newsletter.",
+            "feedback": "Giada segnala proprio quei percorsi per descrivere il dato con più accuratezza."
+          },
+          {
+            "id": "c",
+            "text": "Un motivo per dire che la campagna non ha avuto alcun ruolo.",
+            "feedback": "Il report documenta esposizione agli annunci, anche se non ne misura l’effetto isolato."
+          }
+        ]
+      },
+      {
+        "id": "attribuzione-vendite-campagna-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale sintesi è difendibile domani?",
+        "evidenceIds": [
+          "ITC12F1",
+          "ITC12F2",
+          "ITC12F3",
+          "ITC12F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "«Gli annunci hanno causato 32 acquisti che altrimenti non sarebbero avvenuti».",
+            "feedback": "Senza confronto con un gruppo non esposto non si conoscono gli acquisti aggiuntivi."
+          },
+          {
+            "id": "b",
+            "text": "«Trentadue ordini hanno incluso un’esposizione agli annunci nel percorso di sette giorni; altri canali possono aver contribuito».",
+            "feedback": "Definisce il criterio del report e lascia aperta l’attribuzione causale."
+          },
+          {
+            "id": "c",
+            "text": "«Solo nove ordini appartengono alla campagna».",
+            "feedback": "Nove è il sottoinsieme con ultimo accesso dalla newsletter, non il totale associato agli annunci."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Giada con una formulazione pronta per il partner. Distingui l’associazione osservata dall’effetto causale, riconosci l’esigenza commerciale e proponi una verifica concreta dei percorsi.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Definire che cosa misura il report",
+        "Non rivendicare vendite causate esclusivamente",
+        "Riconoscere l’esigenza di una slide utilizzabile",
+        "Proporre verifica degli ordini unici e dei canali"
+      ]
+    },
+    "model": {
+      "subject": "R: Risultato da condividere con il partner",
+      "body": "Ciao Giada,\n\nil numero 32 è reale, ma descrive gli ordini per i quali l’annuncio è stato mostrato almeno una volta nei sette giorni precedenti l’acquisto. Non misura 32 vendite causate esclusivamente dalla campagna. In nove di quei percorsi l’ultimo accesso è arrivato dalla newsletter, e il report può associare lo stesso ordine a più canali. Senza un confronto con clienti non esposti non sappiamo quanti acquisti aggiuntivi siano dovuti agli annunci.\n\nCapisco che il partner voglia un risultato concreto domani. Proporrei di sostituire la frase della slide con: «Trentadue ordini hanno incluso un’esposizione agli annunci nei sette giorni precedenti l’acquisto; il percorso può comprendere anche altri canali». È un dato utile e verificabile, senza assegnare alla campagna un merito esclusivo che non abbiamo misurato.\n\nOggi preparo l’elenco degli ordini unici e dei canali registrati per ciascuno, così potrai rispondere se il partner chiede come si compone il totale. Possiamo discutere separatamente un metodo per stimare l’effetto incrementale in una campagna futura. Per questa presentazione correggerei anche il titolo del grafico, affinché la slide non ripeta l’attribuzione troppo forte.\n\nAlessio",
+      "annotations": [
+        {
+          "label": "Definisce la misura",
+          "excerpt": "l’annuncio è stato mostrato almeno una volta nei sette giorni precedenti l’acquisto",
+          "evidenceIds": [
+            "ITC12F1"
+          ]
+        },
+        {
+          "label": "Delimita la causalità",
+          "excerpt": "Senza un confronto con clienti non esposti non sappiamo quanti acquisti aggiuntivi siano dovuti agli annunci",
+          "evidenceIds": [
+            "ITC12F3"
+          ]
+        },
+        {
+          "label": "Riconosce l’esigenza",
+          "excerpt": "Capisco che il partner voglia un risultato concreto domani",
+          "evidenceIds": [
+            "ITC12F4"
+          ]
+        },
+        {
+          "label": "Indica la verifica",
+          "excerpt": "preparo l’elenco degli ordini unici e dei canali registrati per ciascuno",
+          "evidenceIds": [
+            "ITC12F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sconto-nuovi-abbonati",
+    "title": "Uno sconto per nuovi clienti arriva ai vecchi",
+    "area": "Marketing × Promozioni",
+    "areaLabel": "Marketing · Promozioni",
+    "role": "Sara · Campagne",
+    "teaser": "Una promozione destinata ai nuovi abbonati viene mostrata anche a chi ha un contratto attivo.",
+    "misunderstanding": "La pagina pubblica non specifica l’idoneità; il regolamento approvato la limita alle nuove attivazioni.",
+    "email": {
+      "from": "Michele · Assistenza clienti",
+      "to": "Sara · Campagne",
+      "sent": "Mercoledì, ore 08:45",
+      "subject": "Lo sconto vale anche per chi è già cliente?",
+      "body": "Ciao Sara,\n\nuna cliente con abbonamento attivo ha visto la nostra pagina «20% per il primo anno» e chiede che lo sconto venga applicato al rinnovo. La pagina non menziona i nuovi iscritti, mentre il mio sistema lo rifiuta. Come spiego la differenza senza farle credere che la colpa sia sua? Serve anche una correzione della campagna oggi.\n\nGrazie, Michele"
+    },
+    "document": {
+      "title": "Scheda della promozione",
+      "intro": "Regolamento e pagina mostrano ambiti diversi.",
+      "facts": [
+        {
+          "id": "ITC13F1",
+          "time": "Regolamento",
+          "text": "Lo sconto del 20% vale per nuove attivazioni effettuate entro fine mese."
+        },
+        {
+          "id": "ITC13F2",
+          "time": "Pagina",
+          "text": "Il titolo pubblico dice soltanto «20% per il primo anno»."
+        },
+        {
+          "id": "ITC13F3",
+          "time": "Account",
+          "text": "La cliente ha un abbonamento attivo da due anni; sta per rinnovarlo."
+        },
+        {
+          "id": "ITC13F4",
+          "time": "Sistema",
+          "text": "Il codice rifiuta il rinnovo in base al regolamento approvato."
+        },
+        {
+          "id": "ITC13F5",
+          "time": "Oggi",
+          "text": "La pagina e le creatività possono essere corrette; eventuali eccezioni richiedono una decisione commerciale separata."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sconto-nuovi-abbonati-evidence",
+        "axis": "Evidence",
+        "prompt": "Perché il sistema rifiuta lo sconto?",
+        "evidenceIds": [
+          "ITC13F1",
+          "ITC13F3",
+          "ITC13F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il codice è scaduto per tutti.",
+            "feedback": "La scadenza è a fine mese."
+          },
+          {
+            "id": "b",
+            "text": "Il rinnovo non è una nuova attivazione prevista dal regolamento.",
+            "feedback": "Il sistema applica il perimetro approvato."
+          },
+          {
+            "id": "c",
+            "text": "La cliente non ha visto la pagina.",
+            "feedback": "L’ha vista e ha chiesto chiarimenti."
+          }
+        ]
+      },
+      {
+        "id": "sconto-nuovi-abbonati-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa rende plausibile la richiesta della cliente?",
+        "evidenceIds": [
+          "ITC13F2",
+          "ITC13F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il regolamento cita i rinnovi.",
+            "feedback": "Li esclude implicitamente limitandosi alle nuove attivazioni."
+          },
+          {
+            "id": "b",
+            "text": "La pagina non limita l’offerta ai nuovi abbonati.",
+            "feedback": "Il messaggio pubblico è incompleto."
+          },
+          {
+            "id": "c",
+            "text": "Il sistema ha applicato il 20%.",
+            "feedback": "Ha rifiutato il codice."
+          }
+        ]
+      },
+      {
+        "id": "sconto-nuovi-abbonati-intent",
+        "axis": "Intent",
+        "prompt": "Come dovrebbe Michele risponderle?",
+        "evidenceIds": [
+          "ITC13F2",
+          "ITC13F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accusarla di non aver letto il regolamento.",
+            "feedback": "La pagina non chiariva il limite."
+          },
+          {
+            "id": "b",
+            "text": "Riconoscere l’ambiguità, spiegare la regola e non promettere un’eccezione non approvata.",
+            "feedback": "La cliente non ha causato l’errore."
+          },
+          {
+            "id": "c",
+            "text": "Garantire lo sconto sul rinnovo.",
+            "feedback": "Serve una decisione commerciale distinta."
+          }
+        ]
+      },
+      {
+        "id": "sconto-nuovi-abbonati-purpose",
+        "axis": "Purpose",
+        "prompt": "Che cosa va fatto oggi?",
+        "evidenceIds": [
+          "ITC13F1",
+          "ITC13F2",
+          "ITC13F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Correggere la pagina e valutare separatamente il caso già esposto al messaggio ambiguo.",
+            "feedback": "Si evita nuova confusione senza inventare una regola."
+          },
+          {
+            "id": "b",
+            "text": "Disattivare il codice per i nuovi clienti.",
+            "feedback": "La promozione resta valida per loro."
+          },
+          {
+            "id": "c",
+            "text": "Lasciare il titolo invariato.",
+            "feedback": "Continuerebbe a creare la stessa aspettativa."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Michele con testo per la cliente e un intervento sulla campagna.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Riconoscere l’ambiguità",
+        "Chiarire nuove attivazioni",
+        "Non promettere eccezioni",
+        "Correggere la pagina"
+      ]
+    },
+    "model": {
+      "subject": "R: Lo sconto vale anche per chi è già cliente?",
+      "body": "Ciao Michele,\n\nla cliente ha ragione a trovare la pagina ambigua. Il titolo «20% per il primo anno» non dice che l’offerta è riservata alle nuove attivazioni, mentre questa condizione compare nel regolamento approvato. Il suo abbonamento è già attivo e la richiesta riguarda un rinnovo; per questo il sistema non applica il codice. La differenza tra pagina e regola è una nostra responsabilità comunicativa.\n\nLe risponderei riconoscendo il punto: «Ci scusiamo: la pagina non chiariva che lo sconto riguarda i nuovi abbonamenti. Il rinnovo del suo contratto non rientra nell’offerta pubblicata nel regolamento. Stiamo correggendo il messaggio e verifichiamo se esistono opzioni commerciali adatte al suo caso». Non promettere però il 20% finché non riceviamo un’autorizzazione specifica.\n\nAggiorno oggi pagina e creatività con la dicitura «per nuove attivazioni» accanto al prezzo, non soltanto nelle condizioni. Inoltro anche la richiesta della cliente alla direzione commerciale, indicando che ha visto il messaggio incompleto prima della correzione. Ti comunico la decisione appena arriva.\n\nA presto, Sara",
+      "annotations": [
+        {
+          "label": "Riconosce fonte",
+          "excerpt": "la pagina ambigua",
+          "evidenceIds": [
+            "ITC13F2"
+          ]
+        },
+        {
+          "label": "Delimita regola",
+          "excerpt": "riservata alle nuove attivazioni",
+          "evidenceIds": [
+            "ITC13F1"
+          ]
+        },
+        {
+          "label": "Evita promessa",
+          "excerpt": "Non promettere però il 20%",
+          "evidenceIds": [
+            "ITC13F5"
+          ]
+        },
+        {
+          "label": "Corregge comunicazione",
+          "excerpt": "accanto al prezzo, non soltanto nelle condizioni",
+          "evidenceIds": [
+            "ITC13F2",
+            "ITC13F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "anticipazione-prima-embargo",
+    "title": "L’anteprima pubblicata troppo presto",
+    "area": "Marketing × Relazioni esterne",
+    "areaLabel": "Marketing · Relazioni esterne",
+    "role": "Davide · Ufficio stampa",
+    "teaser": "Un creator pubblica una foto del prodotto prima del lancio concordato.",
+    "misunderstanding": "L’embargo era nel brief, ma la versione ricevuta dal creator riportava un orario diverso.",
+    "email": {
+      "from": "Chiara · Responsabile lancio",
+      "to": "Davide · Ufficio stampa",
+      "sent": "Giovedì, ore 09:05",
+      "subject": "Ha violato l’embargo?",
+      "body": "Ciao Davide,\n\nil creator ha pubblicato una foto questa mattina, mentre il lancio pubblico è previsto per le 12. Il team vuole chiedergli di cancellarla e accusarlo di aver violato il brief. Prima di scrivergli, controlla quale versione gli abbiamo inviato e che cosa possiamo chiedere senza peggiorare il rapporto.\n\nGrazie, Chiara"
+    },
+    "document": {
+      "title": "Cronologia del brief",
+      "intro": "Le due versioni non riportano lo stesso orario.",
+      "facts": [
+        {
+          "id": "ITC14F1",
+          "time": "Versione interna",
+          "text": "Il brief approvato indica pubblicazione dalle 12 di giovedì."
+        },
+        {
+          "id": "ITC14F2",
+          "time": "Invio",
+          "text": "Al creator fu allegata una bozza precedente che indicava le 09 di giovedì."
+        },
+        {
+          "id": "ITC14F3",
+          "time": "Conferma",
+          "text": "Il creator rispose di aver ricevuto il brief, senza discutere l’orario."
+        },
+        {
+          "id": "ITC14F4",
+          "time": "Post",
+          "text": "La foto è uscita alle 09:02; non contiene prezzo né dettagli tecnici riservati."
+        },
+        {
+          "id": "ITC14F5",
+          "time": "Oggi",
+          "text": "Il post può essere aggiornato con il link ufficiale dopo le 12; la rimozione richiede una richiesta al creator."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "anticipazione-prima-embargo-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale istruzione ricevette il creator?",
+        "evidenceIds": [
+          "ITC14F2",
+          "ITC14F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il brief finale delle 12.",
+            "feedback": "Non risulta nell’invio."
+          },
+          {
+            "id": "b",
+            "text": "Nessuna indicazione temporale.",
+            "feedback": "La bozza conteneva un orario."
+          },
+          {
+            "id": "c",
+            "text": "La bozza con pubblicazione dalle 09.",
+            "feedback": "La versione interna delle 12 non fu allegata."
+          }
+        ]
+      },
+      {
+        "id": "anticipazione-prima-embargo-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa non possiamo attribuirgli con certezza?",
+        "evidenceIds": [
+          "ITC14F1",
+          "ITC14F2",
+          "ITC14F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La pubblicazione di una foto alle 09:02.",
+            "feedback": "Il post è visibile."
+          },
+          {
+            "id": "b",
+            "text": "La violazione consapevole dell’embargo delle 12.",
+            "feedback": "Ha seguito l’orario del file ricevuto."
+          },
+          {
+            "id": "c",
+            "text": "La ricezione del brief.",
+            "feedback": "L’ha confermata."
+          }
+        ]
+      },
+      {
+        "id": "anticipazione-prima-embargo-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa dovrebbe ottenere Chiara?",
+        "evidenceIds": [
+          "ITC14F4",
+          "ITC14F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Punire pubblicamente il creator.",
+            "feedback": "L’errore nell’allegato è nostro."
+          },
+          {
+            "id": "b",
+            "text": "Coordinare il messaggio del lancio senza aprire un’accusa infondata.",
+            "feedback": "Il post può essere integrato dopo le 12."
+          },
+          {
+            "id": "c",
+            "text": "Anticipare tutti i dettagli riservati.",
+            "feedback": "Il lancio resta previsto alle 12."
+          }
+        ]
+      },
+      {
+        "id": "anticipazione-prima-embargo-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale contatto è più adatto?",
+        "evidenceIds": [
+          "ITC14F2",
+          "ITC14F4",
+          "ITC14F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Minacciare una sanzione per embargo.",
+            "feedback": "Non abbiamo inviato l’orario corretto."
+          },
+          {
+            "id": "b",
+            "text": "Ignorare il post e non coordinare il link.",
+            "feedback": "L’aggiornamento è utile."
+          },
+          {
+            "id": "c",
+            "text": "Riconoscere l’orario ricevuto e chiedere collaborazione per aggiornare il post al lancio.",
+            "feedback": "Preserva i fatti e la relazione."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Chiara con una proposta di messaggio al creator e il modo di correggere il processo interno.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Verificare la versione inviata",
+        "Non accusare senza base",
+        "Proporre aggiornamento coordinato",
+        "Correggere il controllo degli allegati"
+      ]
+    },
+    "model": {
+      "subject": "R: Ha violato l’embargo?",
+      "body": "Ciao Chiara,\n\nho verificato l’invio: al creator è arrivata una bozza che indicava la pubblicazione dalle 09, non il brief interno definitivo con le 12. Il post è uscito alle 09:02 e non contiene prezzo o dettagli tecnici riservati. Non abbiamo quindi una base solida per accusarlo di aver violato l’orario che conosciamo noi; la discrepanza nasce dal nostro allegato.\n\nGli scriverei in modo collaborativo: «Abbiamo riscontrato una differenza tra la versione del brief inviata a te e il programma finale. Grazie per l’anteprima; il lancio ufficiale è alle 12. Ti va di aggiungere allora il link e la dicitura concordata al post?» Se il team ritiene necessaria la rimozione, possiamo chiederla, ma come favore motivato dalla nostra correzione, non come contestazione.\n\nPer il resto della campagna blocco gli invii finché non abbiamo confrontato tutti gli allegati con la versione finale. Ti mando anche un elenco dei destinatari che potrebbero aver ricevuto la bozza, così evitiamo messaggi incoerenti nelle prossime ore.\n\nA presto, Davide",
+      "annotations": [
+        {
+          "label": "Verifica invio",
+          "excerpt": "una bozza che indicava la pubblicazione dalle 09",
+          "evidenceIds": [
+            "ITC14F2"
+          ]
+        },
+        {
+          "label": "Evita accusa",
+          "excerpt": "Non abbiamo quindi una base solida per accusarlo",
+          "evidenceIds": [
+            "ITC14F1",
+            "ITC14F2"
+          ]
+        },
+        {
+          "label": "Propone coordinamento",
+          "excerpt": "aggiungere allora il link",
+          "evidenceIds": [
+            "ITC14F5"
+          ]
+        },
+        {
+          "label": "Corregge processo",
+          "excerpt": "confrontato tutti gli allegati con la versione finale",
+          "evidenceIds": [
+            "ITC14F1",
+            "ITC14F2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bozza-locale-senza-invio",
+    "title": "La richiesta sembra inviata solo sul telefono",
+    "area": "Software × Applicazioni",
+    "areaLabel": "Software · Applicazioni",
+    "role": "Marco · Assistenza tecnica",
+    "teaser": "Un’app mostra una richiesta come completata, ma l’ufficio non la trova.",
+    "misunderstanding": "Il segno di spunta appartiene al salvataggio locale; la trasmissione era fallita per assenza di rete.",
+    "email": {
+      "from": "Irene · Servizio utenti",
+      "to": "Marco · Assistenza tecnica",
+      "sent": "Venerdì, ore 10:10",
+      "subject": "La domanda è arrivata oppure no?",
+      "body": "Ciao Marco,\n\nuna persona mostra sul telefono la domanda con una spunta verde e sostiene di averla inviata ieri. Nel nostro sistema non compare nulla. Il termine scade oggi. Vorrei spiegarle il problema senza insinuare che abbia sbagliato e capire se possiamo recuperare il testo invece di farle ricominciare tutto.\n\nGrazie, Irene"
+    },
+    "document": {
+      "title": "Diagnostica della richiesta",
+      "intro": "L’app distingue salvataggio locale e ricevuta server, ma usa icone simili.",
+      "facts": [
+        {
+          "id": "ITC15F1",
+          "time": "Giovedì, ore 17:40",
+          "text": "Il testo è stato salvato nella memoria locale del telefono."
+        },
+        {
+          "id": "ITC15F2",
+          "time": "Giovedì, ore 17:41",
+          "text": "Il tentativo di invio è fallito per assenza di rete; non è stata generata una ricevuta server."
+        },
+        {
+          "id": "ITC15F3",
+          "time": "Schermata",
+          "text": "La spunta verde indica il salvataggio della bozza, non la trasmissione."
+        },
+        {
+          "id": "ITC15F4",
+          "time": "Oggi",
+          "text": "La bozza è ancora visibile e può essere inviata dopo il ripristino della connessione."
+        },
+        {
+          "id": "ITC15F5",
+          "time": "Scadenza",
+          "text": "L’ufficio accetta la domanda entro le 18 di oggi; il supporto può assistere l’utente nell’invio."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "bozza-locale-senza-invio-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è avvenuto ieri?",
+        "evidenceIds": [
+          "ITC15F1",
+          "ITC15F2",
+          "ITC15F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La domanda è stata protocollata.",
+            "feedback": "Manca la ricevuta server."
+          },
+          {
+            "id": "b",
+            "text": "Il testo è stato salvato sul telefono ma non ricevuto dal server.",
+            "feedback": "La spunta riguarda la bozza."
+          },
+          {
+            "id": "c",
+            "text": "Il testo è stato cancellato.",
+            "feedback": "La bozza è ancora visibile."
+          }
+        ]
+      },
+      {
+        "id": "bozza-locale-senza-invio-scope",
+        "axis": "Scope",
+        "prompt": "Quale problema crea l’interfaccia?",
+        "evidenceIds": [
+          "ITC15F2",
+          "ITC15F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Impedisce ogni salvataggio.",
+            "feedback": "La bozza è salvata."
+          },
+          {
+            "id": "b",
+            "text": "Fa sembrare completato un invio che non è riuscito.",
+            "feedback": "Due stati diversi appaiono troppo simili."
+          },
+          {
+            "id": "c",
+            "text": "Mostra una ricevuta ufficiale falsa.",
+            "feedback": "Non c’è una ricevuta."
+          }
+        ]
+      },
+      {
+        "id": "bozza-locale-senza-invio-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa serve alla persona oggi?",
+        "evidenceIds": [
+          "ITC15F4",
+          "ITC15F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una lezione sull’uso della rete.",
+            "feedback": "L’interfaccia contribuisce all’equivoco."
+          },
+          {
+            "id": "b",
+            "text": "La promessa che ieri sia stato protocollato.",
+            "feedback": "Non è vero."
+          },
+          {
+            "id": "c",
+            "text": "Assistenza per inviare la bozza prima delle 18 e ottenere la ricevuta.",
+            "feedback": "La scadenza rende urgente il passo concreto."
+          }
+        ]
+      },
+      {
+        "id": "bozza-locale-senza-invio-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è appropriata?",
+        "evidenceIds": [
+          "ITC15F1",
+          "ITC15F2",
+          "ITC15F4",
+          "ITC15F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiedere di riscrivere tutto.",
+            "feedback": "La bozza esiste."
+          },
+          {
+            "id": "b",
+            "text": "Considerare il salvataggio come domanda presentata.",
+            "feedback": "Il server non l’ha ricevuta."
+          },
+          {
+            "id": "c",
+            "text": "Riconoscere la spunta ambigua, guidare il reinvio e verificare la ricevuta.",
+            "feedback": "Si salva il contenuto e si conclude il processo."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Irene con istruzioni per il caso e una correzione da proporre al prodotto.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Distinguere bozza e invio",
+        "Non colpevolizzare",
+        "Usare la bozza esistente",
+        "Verificare la ricevuta prima della scadenza"
+      ]
+    },
+    "model": {
+      "subject": "R: La domanda è arrivata oppure no?",
+      "body": "Ciao Irene,\n\nla persona vede davvero una spunta verde, ma in questa schermata la spunta conferma soltanto che il testo è stato salvato sul telefono. Il tentativo di trasmissione di ieri è fallito per mancanza di rete e non è stata emessa una ricevuta dal server. La domanda quindi non risulta ancora presentata, anche se la bozza non è andata persa. Capisco perché la schermata abbia creato l’aspettativa opposta.\n\nPoiché il termine è oggi alle 18, propongo di contattarla subito e assisterla nell’apertura della bozza, nel nuovo invio e nella verifica della ricevuta. Solo quando il numero di protocollo compare possiamo confermare la presentazione. Non chiediamole di riscrivere il testo: è ancora sul dispositivo.\n\nPer la risposta userei un tono chiaro e non accusatorio: «La sua bozza è stata salvata; l’invio non si è completato. Possiamo aiutarla a trasmetterla ora e controllare insieme la ricevuta». Segnalo al team di prodotto che l’icona del salvataggio deve distinguersi nettamente da quella dell’invio riuscito.\n\nA presto, Marco",
+      "annotations": [
+        {
+          "label": "Distingue stati",
+          "excerpt": "conferma soltanto che il testo è stato salvato",
+          "evidenceIds": [
+            "ITC15F1",
+            "ITC15F3"
+          ]
+        },
+        {
+          "label": "Riconosce ambiguità",
+          "excerpt": "la schermata abbia creato l’aspettativa opposta",
+          "evidenceIds": [
+            "ITC15F3"
+          ]
+        },
+        {
+          "label": "Agisce entro termine",
+          "excerpt": "oggi alle 18",
+          "evidenceIds": [
+            "ITC15F5"
+          ]
+        },
+        {
+          "label": "Verifica esito",
+          "excerpt": "verifica della ricevuta",
+          "evidenceIds": [
+            "ITC15F2",
+            "ITC15F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "scadenza-fuso-orario",
+    "title": "Un giorno di ritardo creato dal fuso orario",
+    "area": "Software × Dati",
+    "areaLabel": "Software · Dati",
+    "role": "Lucia · Integrazioni",
+    "teaser": "Un portale segnala come tardive pratiche inviate entro la scadenza locale.",
+    "misunderstanding": "L’importazione applica due volte la conversione da UTC a ora italiana e sposta la data visualizzata.",
+    "email": {
+      "from": "Andrea · Operazioni",
+      "to": "Lucia · Integrazioni",
+      "sent": "Lunedì, ore 08:30",
+      "subject": "Dobbiamo applicare le penali?",
+      "body": "Ciao Lucia,\n\ntre pratiche inviate venerdì sera risultano in ritardo nel portale. I clienti hanno ricevute con orario precedente alla mezzanotte, ma la dashboard le mostra al sabato. Il reparto amministrativo sta per applicare le penali. Puoi ricostruire il problema e dirmi che cosa fermare oggi, prima di attribuire il ritardo ai clienti?\n\nGrazie, Andrea"
+    },
+    "document": {
+      "title": "Confronto dei timestamp",
+      "intro": "Ricevuta e dashboard usano conversioni diverse.",
+      "facts": [
+        {
+          "id": "ITC16F1",
+          "time": "Ricevute",
+          "text": "Le tre pratiche hanno conferma venerdì alle 23:10, 23:22 e 23:40, ora italiana."
+        },
+        {
+          "id": "ITC16F2",
+          "time": "Archivio",
+          "text": "Il sistema memorizza gli stessi eventi in UTC con il fuso esplicitato."
+        },
+        {
+          "id": "ITC16F3",
+          "time": "Importazione",
+          "text": "La dashboard applica due volte la conversione da UTC a ora italiana ai timestamp archiviati."
+        },
+        {
+          "id": "ITC16F4",
+          "time": "Regola",
+          "text": "La scadenza è venerdì alle 23:59, ora italiana, e fa fede la ricevuta di invio."
+        },
+        {
+          "id": "ITC16F5",
+          "time": "Oggi",
+          "text": "Le penali per le tre pratiche non sono ancora state comunicate né addebitate."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "scadenza-fuso-orario-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa attestano le ricevute?",
+        "evidenceIds": [
+          "ITC16F1",
+          "ITC16F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Invii prima della scadenza locale di venerdì.",
+            "feedback": "Sono la fonte prevista dalla regola."
+          },
+          {
+            "id": "b",
+            "text": "Invii effettuati sabato.",
+            "feedback": "Il sabato appare solo nella dashboard."
+          },
+          {
+            "id": "c",
+            "text": "Nessun invio.",
+            "feedback": "Tre ricevute esistono."
+          }
+        ]
+      },
+      {
+        "id": "scadenza-fuso-orario-scope",
+        "axis": "Scope",
+        "prompt": "Dove nasce lo scarto?",
+        "evidenceIds": [
+          "ITC16F2",
+          "ITC16F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nell’assenza delle ricevute.",
+            "feedback": "Le ricevute sono presenti."
+          },
+          {
+            "id": "b",
+            "text": "In un cambio della scadenza contrattuale.",
+            "feedback": "La regola non è cambiata."
+          },
+          {
+            "id": "c",
+            "text": "In una doppia interpretazione del fuso nella dashboard.",
+            "feedback": "Il dato originario conserva il fuso corretto."
+          }
+        ]
+      },
+      {
+        "id": "scadenza-fuso-orario-intent",
+        "axis": "Intent",
+        "prompt": "Quale decisione urgente chiede Andrea?",
+        "evidenceIds": [
+          "ITC16F4",
+          "ITC16F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sospendere penali non ancora applicate mentre si corregge la visualizzazione.",
+            "feedback": "È ancora possibile evitare un addebito errato."
+          },
+          {
+            "id": "b",
+            "text": "Cancellare tutte le pratiche del mese.",
+            "feedback": "Il problema è circoscritto."
+          },
+          {
+            "id": "c",
+            "text": "Chiedere ai clienti di pagare e poi reclamare.",
+            "feedback": "Le ricevute già chiariscono il caso."
+          }
+        ]
+      },
+      {
+        "id": "scadenza-fuso-orario-purpose",
+        "axis": "Purpose",
+        "prompt": "Che cosa va comunicato all’amministrazione?",
+        "evidenceIds": [
+          "ITC16F1",
+          "ITC16F3",
+          "ITC16F4",
+          "ITC16F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Applicare le penali in base alla dashboard.",
+            "feedback": "La dashboard interpreta male il fuso."
+          },
+          {
+            "id": "b",
+            "text": "Dire che nessuna pratica può mai essere tardiva.",
+            "feedback": "Il difetto riguarda questi eventi."
+          },
+          {
+            "id": "c",
+            "text": "Usare le ricevute, bloccare le tre penali e correggere l’importazione.",
+            "feedback": "La fonte normativa e la correzione tecnica convergono."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi ad Andrea con una decisione operativa immediata e il limite dell’analisi.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Usare la fonte valida",
+        "Bloccare le tre penali",
+        "Spiegare lo scarto tecnico",
+        "Prevedere correzione e verifica"
+      ]
+    },
+    "model": {
+      "subject": "R: Dobbiamo applicare le penali?",
+      "body": "Ciao Andrea,\n\nper le tre pratiche indicate, le ricevute attestano invii effettuati venerdì alle 23:10, 23:22 e 23:40, ora italiana. La scadenza è alle 23:59 dello stesso giorno e la regola attribuisce valore alla ricevuta. Su questi dati, non c’è una base per applicare le penali. Ti chiedo quindi di sospendere subito i tre addebiti, che non sono ancora stati comunicati.\n\nLa dashboard mostra il sabato perché, durante l’importazione, applica due volte la conversione da UTC a ora italiana. Il dato originario conserva il fuso; l’errore riguarda la visualizzazione e il calcolo derivato. Correggeremo la trasformazione e confronteremo nuovamente i tre record con le ricevute prima di riaprire il flusso amministrativo.\n\nNon estenderei automaticamente questa conclusione a tutte le pratiche: verificheremo il periodo interessato e segnaleremo eventuali altri casi vicini alla mezzanotte. Per i tre clienti possiamo dire che le ricevute sono state riconosciute e che la segnalazione di ritardo era dovuta a un errore del portale. Ti mando oggi il controllo documentato.\n\nA presto, Lucia",
+      "annotations": [
+        {
+          "label": "Usa ricevute",
+          "excerpt": "le ricevute attestano invii effettuati venerdì",
+          "evidenceIds": [
+            "ITC16F1"
+          ]
+        },
+        {
+          "label": "Blocca addebito",
+          "excerpt": "sospendere subito i tre addebiti",
+          "evidenceIds": [
+            "ITC16F5"
+          ]
+        },
+        {
+          "label": "Spiega fuso",
+          "excerpt": "applica due volte la conversione da UTC a ora italiana",
+          "evidenceIds": [
+            "ITC16F3"
+          ]
+        },
+        {
+          "label": "Limita inferenza",
+          "excerpt": "Non estenderei automaticamente questa conclusione a tutte le pratiche",
+          "evidenceIds": [
+            "ITC16F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "test-pannello-tastiera",
+    "title": "Test superati, percorso da tastiera aperto",
+    "area": "Software × Qualità",
+    "areaLabel": "Software · Qualità",
+    "role": "Riccardo · Qualità prodotto",
+    "teaser": "La demo funziona con il mouse, ma il filtro principale non è utilizzabile da tastiera.",
+    "misunderstanding": "«Test completati» viene letto come copertura di tutti i modi d’uso del pannello, benché il percorso da tastiera abbia un difetto aperto.",
+    "email": {
+      "from": "Arianna · Relazione clienti",
+      "to": "Riccardo · Qualità prodotto",
+      "sent": "Martedì, ore 09:50",
+      "subject": "Demo del pannello per il cliente",
+      "body": "Ciao Riccardo,\n\nho detto al cliente che il pannello ha superato i test. Nella demo con il mouse non ho visto problemi, ma lui usa la tastiera per scegliere il periodo e mi ha scritto che non riesce a raggiungere il filtro delle date. Abbiamo una sessione con il suo gruppo la prossima settimana. Puoi chiarire quali prove sono state superate, che cosa resta aperto e quale alternativa concreta possiamo offrirgli nel frattempo?\n\nGrazie, Arianna"
+    },
+    "document": {
+      "title": "Risultati delle prove del pannello",
+      "intro": "Le verifiche coprono percorsi diversi e non hanno tutte lo stesso esito.",
+      "facts": [
+        {
+          "id": "ITC17F1",
+          "time": "Prove automatiche",
+          "text": "Diciotto test di visualizzazione dei dati sono passati nel browser con interazione tramite mouse."
+        },
+        {
+          "id": "ITC17F2",
+          "time": "Prova manuale",
+          "text": "Nel filtro delle date, il focus da tastiera salta il pulsante di conferma; la selezione non può essere completata senza mouse."
+        },
+        {
+          "id": "ITC17F3",
+          "time": "Copertura",
+          "text": "La verifica con lettore di schermo non è ancora stata eseguita; non esiste un risultato su quel percorso."
+        },
+        {
+          "id": "ITC17F4",
+          "time": "Cliente",
+          "text": "Il cliente usa la tastiera per scegliere il periodo e ha una sessione con il gruppo la prossima settimana."
+        },
+        {
+          "id": "ITC17F5",
+          "time": "Alternativa",
+          "text": "L’esportazione CSV del periodo richiesto funziona nel percorso già verificato; il team può preparare il file con il cliente. Non è stata confermata una data di correzione del filtro."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "test-pannello-tastiera-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa attestano i diciotto test superati?",
+        "evidenceIds": [
+          "ITC17F1"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La visualizzazione dei dati nel percorso provato con il mouse.",
+            "feedback": "L’esito riguarda quelle prove automatiche, non ogni modalità di interazione."
+          },
+          {
+            "id": "b",
+            "text": "L’uso completo del filtro da tastiera.",
+            "feedback": "La prova manuale ha trovato un blocco nel pulsante di conferma."
+          },
+          {
+            "id": "c",
+            "text": "La compatibilità con il lettore di schermo.",
+            "feedback": "Quel percorso non è ancora stato verificato."
+          }
+        ]
+      },
+      {
+        "id": "test-pannello-tastiera-scope",
+        "axis": "Scope",
+        "prompt": "Quale limite va spiegato al cliente?",
+        "evidenceIds": [
+          "ITC17F2",
+          "ITC17F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La scelta del periodo da tastiera si blocca e l’esito con lettore di schermo resta sconosciuto.",
+            "feedback": "Distingue il difetto osservato dalla prova ancora mancante."
+          },
+          {
+            "id": "b",
+            "text": "Il lettore di schermo è sicuramente incompatibile.",
+            "feedback": "La verifica non è stata eseguita, quindi non c’è un esito da comunicare."
+          },
+          {
+            "id": "c",
+            "text": "Il pannello non mostra alcun dato.",
+            "feedback": "Le prove di visualizzazione sono passate; il problema documentato riguarda il filtro da tastiera."
+          }
+        ]
+      },
+      {
+        "id": "test-pannello-tastiera-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve riparare Arianna nella comunicazione?",
+        "evidenceIds": [
+          "ITC17F1",
+          "ITC17F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La data della sessione, già annullata.",
+            "feedback": "La sessione è prevista per la prossima settimana e non risulta annullata."
+          },
+          {
+            "id": "b",
+            "text": "L’impressione che «test superati» coprisse anche il modo d’uso del cliente.",
+            "feedback": "Il cliente dipende dalla tastiera, mentre i test superati usavano il mouse."
+          },
+          {
+            "id": "c",
+            "text": "Il numero dei test, che in realtà non sono mai stati eseguiti.",
+            "feedback": "Diciotto prove sono state eseguite e superate nel percorso indicato."
+          }
+        ]
+      },
+      {
+        "id": "test-pannello-tastiera-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale proposta è sostenibile per la prossima sessione?",
+        "evidenceIds": [
+          "ITC17F2",
+          "ITC17F4",
+          "ITC17F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Promettere il filtro corretto entro la sessione.",
+            "feedback": "Non è stata approvata una data di correzione."
+          },
+          {
+            "id": "b",
+            "text": "Chiedere al cliente di usare il mouse senza menzionare il blocco.",
+            "feedback": "Il suo modo d’uso è noto e il difetto va riconosciuto."
+          },
+          {
+            "id": "c",
+            "text": "Spiegare il limite, preparare il CSV del periodo e aggiornare il cliente dopo la verifica della correzione.",
+            "feedback": "L’esportazione è disponibile come alternativa, senza inventare una data di ripristino."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi ad Arianna con un chiarimento pronto per il cliente. Delimita le prove superate, riconosci il problema d’uso del cliente, proponi una soluzione per la sessione e calibra l’impegno sulla correzione.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Delimitare i test superati al percorso con mouse",
+        "Riconoscere il difetto da tastiera e la verifica non svolta",
+        "Offrire il CSV del periodo come alternativa",
+        "Non promettere una data di correzione"
+      ]
+    },
+    "model": {
+      "subject": "R: Demo del pannello per il cliente",
+      "body": "Ciao Arianna,\n\ni diciotto test superati riguardano la visualizzazione dei dati nel percorso provato con il mouse. Non certificano ogni modalità d’uso del pannello. La prova manuale ha individuato un blocco nel filtro delle date: usando la tastiera, il focus salta il pulsante di conferma. Non abbiamo ancora eseguito la verifica con lettore di schermo, quindi non attribuirei nemmeno a quel percorso un esito positivo o negativo.\n\nIl cliente ha ragione a segnalarlo, soprattutto perché la scelta del periodo gli serve nella sessione della prossima settimana. Gli direi: «Abbiamo descritto i test in modo troppo ampio. La visualizzazione dei dati è stata verificata, ma il filtro delle date presenta un problema per chi usa la tastiera. Ci scusiamo. Per la prossima sessione possiamo preparare insieme un’esportazione CSV del periodo che desiderate, mentre lavoriamo alla correzione del filtro».\n\nTi aiuto a concordare il periodo e a verificare il file prima della riunione. Aprirò una verifica specifica sul percorso da tastiera e su quello con lettore di schermo; ti aggiornerò quando avremo risultati e un piano confermato. Per ora eviterei di promettere una data di correzione.\n\nRiccardo",
+      "annotations": [
+        {
+          "label": "Delimita la prova",
+          "excerpt": "i diciotto test superati riguardano la visualizzazione dei dati nel percorso provato con il mouse",
+          "evidenceIds": [
+            "ITC17F1"
+          ]
+        },
+        {
+          "label": "Distingue esiti",
+          "excerpt": "Non abbiamo ancora eseguito la verifica con lettore di schermo",
+          "evidenceIds": [
+            "ITC17F3"
+          ]
+        },
+        {
+          "label": "Riconosce l’uso reale",
+          "excerpt": "la scelta del periodo gli serve nella sessione della prossima settimana",
+          "evidenceIds": [
+            "ITC17F4"
+          ]
+        },
+        {
+          "label": "Offre un’alternativa",
+          "excerpt": "possiamo preparare insieme un’esportazione CSV del periodo che desiderate",
+          "evidenceIds": [
+            "ITC17F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "registro-service-account",
+    "title": "Il registro dice «admin», ma chi ha agito?",
+    "area": "Software × Tracciabilità",
+    "areaLabel": "Software · Tracciabilità",
+    "role": "Valentina · Sicurezza",
+    "teaser": "Un registro attribuisce una modifica all’amministratore; il responsabile chiede chi l’ha fatta.",
+    "misunderstanding": "L’etichetta identifica un account tecnico condiviso, non una persona; occorre correlare altre tracce.",
+    "email": {
+      "from": "Fabio · Responsabile dati",
+      "to": "Valentina · Sicurezza",
+      "sent": "Mercoledì, ore 14:40",
+      "subject": "Possiamo attribuire la modifica a Matteo?",
+      "body": "Ciao Valentina,\n\nnel registro una regola di accesso risulta modificata da «admin». Matteo era di turno e il team pensa che sia stato lui. Devo rispondere alla direzione oggi, ma non voglio indicare una persona senza prova. Puoi spiegarmi che cosa significa quel nome nel registro e come risalire al contesto dell’operazione?\n\nGrazie, Fabio"
+    },
+    "document": {
+      "title": "Tracce disponibili",
+      "intro": "L’account registrato non coincide necessariamente con l’operatore.",
+      "facts": [
+        {
+          "id": "ITC18F1",
+          "time": "Registro",
+          "text": "La modifica delle 13:14 è attribuita al service account «admin-sync»."
+        },
+        {
+          "id": "ITC18F2",
+          "time": "Configurazione",
+          "text": "Il service account è usato da due processi automatici e può essere avviato manualmente da tre operatori."
+        },
+        {
+          "id": "ITC18F3",
+          "time": "Turno",
+          "text": "Matteo era di turno, ma anche un processo automatico era pianificato alle 13:10."
+        },
+        {
+          "id": "ITC18F4",
+          "time": "Controllo",
+          "text": "I log di avvio e la richiesta collegata non sono ancora stati correlati."
+        },
+        {
+          "id": "ITC18F5",
+          "time": "Stato",
+          "text": "La regola è stata ripristinata; la verifica dell’origine continua."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "registro-service-account-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa identifica il registro?",
+        "evidenceIds": [
+          "ITC18F1",
+          "ITC18F2"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Matteo come autore certo.",
+            "feedback": "Il turno non dimostra l’azione."
+          },
+          {
+            "id": "b",
+            "text": "Un account tecnico usato da più possibili origini.",
+            "feedback": "Il nome non identifica Matteo."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna modifica.",
+            "feedback": "La modifica è registrata."
+          }
+        ]
+      },
+      {
+        "id": "registro-service-account-scope",
+        "axis": "Scope",
+        "prompt": "Perché il turno non basta per attribuire l’azione?",
+        "evidenceIds": [
+          "ITC18F2",
+          "ITC18F3",
+          "ITC18F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché Matteo non era al lavoro.",
+            "feedback": "Era di turno."
+          },
+          {
+            "id": "b",
+            "text": "Perché il registro contiene già il nome completo.",
+            "feedback": "Contiene un account tecnico."
+          },
+          {
+            "id": "c",
+            "text": "Erano possibili anche un processo automatico e altri operatori.",
+            "feedback": "Serve correlare le tracce."
+          }
+        ]
+      },
+      {
+        "id": "registro-service-account-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve comunicare Fabio alla direzione?",
+        "evidenceIds": [
+          "ITC18F1",
+          "ITC18F4",
+          "ITC18F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La modifica e il ripristino, distinguendo l’origine ancora da accertare.",
+            "feedback": "Può dare un quadro utile senza accusare."
+          },
+          {
+            "id": "b",
+            "text": "Il nome di Matteo come ipotesi certa.",
+            "feedback": "Sarebbe un’attribuzione prematura."
+          },
+          {
+            "id": "c",
+            "text": "Che i log sono stati cancellati.",
+            "feedback": "Sono da correlare, non assenti."
+          }
+        ]
+      },
+      {
+        "id": "registro-service-account-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale verifica è decisiva?",
+        "evidenceIds": [
+          "ITC18F2",
+          "ITC18F3",
+          "ITC18F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiedere soltanto a Matteo se ricorda.",
+            "feedback": "La memoria non sostituisce le tracce."
+          },
+          {
+            "id": "b",
+            "text": "Confrontare log di avvio, processo pianificato e richiesta collegata.",
+            "feedback": "Permette di individuare il percorso dell’operazione."
+          },
+          {
+            "id": "c",
+            "text": "Rinominare l’account «Matteo».",
+            "feedback": "Cambierebbe l’etichetta, non la prova."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Fabio con una formula per la direzione e un piano di verifica dell’attribuzione.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Non attribuire a una persona",
+        "Spiegare l’account tecnico",
+        "Distinguere ripristino e causa",
+        "Correlare i log"
+      ]
+    },
+    "model": {
+      "subject": "R: Possiamo attribuire la modifica a Matteo?",
+      "body": "Ciao Fabio,\n\nnon attribuirei la modifica a Matteo sulla base del registro attuale. La voce delle 13:14 indica il service account «admin-sync», che può essere usato da due processi automatici e avviato manualmente da tre operatori. Il fatto che Matteo fosse di turno è un elemento di contesto, ma alle 13:10 era pianificato anche un processo automatico. Il nome nel registro non corrisponde quindi a una persona identificata.\n\nAlla direzione puoi comunicare che la regola è stata modificata e poi ripristinata; stiamo accertando l’origine dell’operazione. Per farlo confronteremo il log di avvio del servizio, il processo pianificato e la richiesta associata alla modifica. Solo dopo questa correlazione potremo dire se si è trattato di un’azione automatica o manuale e, nel secondo caso, chi l’ha avviata.\n\nTi mando oggi una prima cronologia con i dati confermati e i punti ancora aperti. Eviterei di citare nomi in una comunicazione più ampia finché non abbiamo una traccia verificabile. La regola ripristinata limita l’effetto operativo, ma non chiude la verifica della causa.\n\nA presto, Valentina",
+      "annotations": [
+        {
+          "label": "Spiega etichetta",
+          "excerpt": "service account «admin-sync»",
+          "evidenceIds": [
+            "ITC18F1"
+          ]
+        },
+        {
+          "label": "Limita il valore del turno",
+          "excerpt": "è un elemento di contesto",
+          "evidenceIds": [
+            "ITC18F3"
+          ]
+        },
+        {
+          "label": "Separa esito",
+          "excerpt": "la regola è stata modificata e poi ripristinata",
+          "evidenceIds": [
+            "ITC18F5"
+          ]
+        },
+        {
+          "label": "Definisce verifica",
+          "excerpt": "confronteremo il log di avvio",
+          "evidenceIds": [
+            "ITC18F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pilota-ibrido-non-permanente",
+    "title": "La sperimentazione che sembrava una nuova regola",
+    "area": "People × Organizzazione",
+    "areaLabel": "Persone · Organizzazione",
+    "role": "Federica · Risorse umane",
+    "teaser": "Un progetto di lavoro ibrido viene comunicato come se fosse una policy permanente.",
+    "misunderstanding": "Il periodo di prova dura otto settimane; criteri e prosecuzione non sono ancora decisi.",
+    "email": {
+      "from": "Stefano · Direzione",
+      "to": "Federica · Risorse umane",
+      "sent": "Lunedì, ore 08:55",
+      "subject": "Ho promesso due giorni da casa per sempre?",
+      "body": "Ciao Federica,\n\nnel messaggio al team ho scritto che «da settembre lavoreremo due giorni da casa». Alcuni colleghi hanno già organizzato la cura dei figli per tutto l’anno. Il documento approvato parla invece di una prova di otto settimane. Come correggo il messaggio senza sminuire le esigenze che ho creato?\n\nGrazie, Stefano"
+    },
+    "document": {
+      "title": "Accordo per la sperimentazione",
+      "intro": "La prova non definisce ancora una regola permanente.",
+      "facts": [
+        {
+          "id": "ITC19F1",
+          "time": "Delibera",
+          "text": "È approvato un pilota di otto settimane con massimo due giorni a distanza."
+        },
+        {
+          "id": "ITC19F2",
+          "time": "Messaggio",
+          "text": "Stefano ha scritto «da settembre lavoreremo due giorni da casa» senza indicare la durata."
+        },
+        {
+          "id": "ITC19F3",
+          "time": "Valutazione",
+          "text": "La prosecuzione dipenderà da copertura del servizio e feedback del team."
+        },
+        {
+          "id": "ITC19F4",
+          "time": "Stato",
+          "text": "Non esiste una policy annuale approvata."
+        },
+        {
+          "id": "ITC19F5",
+          "time": "Oggi",
+          "text": "Le esigenze di cura già comunicate possono essere raccolte per organizzare il periodo successivo, senza promettere l’esito."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "pilota-ibrido-non-permanente-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è stato approvato?",
+        "evidenceIds": [
+          "ITC19F1",
+          "ITC19F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Due giorni a distanza per tutto l’anno.",
+            "feedback": "Non c’è una policy annuale."
+          },
+          {
+            "id": "b",
+            "text": "La cancellazione del lavoro ibrido.",
+            "feedback": "Il pilota parte."
+          },
+          {
+            "id": "c",
+            "text": "Un pilota di otto settimane, da valutare.",
+            "feedback": "La durata è definita, la prosecuzione no."
+          }
+        ]
+      },
+      {
+        "id": "pilota-ibrido-non-permanente-scope",
+        "axis": "Scope",
+        "prompt": "Perché il messaggio ha generato un’aspettativa più ampia?",
+        "evidenceIds": [
+          "ITC19F1",
+          "ITC19F2",
+          "ITC19F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ometteva la durata e sembrava descrivere una regola stabile.",
+            "feedback": "La formulazione non rifletteva la delibera."
+          },
+          {
+            "id": "b",
+            "text": "Perché tutti hanno letto la delibera.",
+            "feedback": "Il messaggio era la fonte diretta."
+          },
+          {
+            "id": "c",
+            "text": "Perché il pilota dura un anno.",
+            "feedback": "Dura otto settimane."
+          }
+        ]
+      },
+      {
+        "id": "pilota-ibrido-non-permanente-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve riconoscere Stefano?",
+        "evidenceIds": [
+          "ITC19F2",
+          "ITC19F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che i colleghi hanno inventato la regola.",
+            "feedback": "Il messaggio era ambiguo."
+          },
+          {
+            "id": "b",
+            "text": "Che la sua formulazione ha influenzato piani personali reali.",
+            "feedback": "La rettifica richiede attenzione, non solo un tecnicismo."
+          },
+          {
+            "id": "c",
+            "text": "Che la prosecuzione è garantita.",
+            "feedback": "Dipende dalla valutazione."
+          }
+        ]
+      },
+      {
+        "id": "pilota-ibrido-non-permanente-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale correzione è responsabile?",
+        "evidenceIds": [
+          "ITC19F1",
+          "ITC19F3",
+          "ITC19F4",
+          "ITC19F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Lasciare il messaggio invariato.",
+            "feedback": "Continuerebbe a creare affidamento."
+          },
+          {
+            "id": "b",
+            "text": "Chiudere il pilota subito.",
+            "feedback": "È già approvato."
+          },
+          {
+            "id": "c",
+            "text": "Precisare il pilota, raccogliere esigenze e dare una data per l’esito della valutazione.",
+            "feedback": "Offre chiarezza e un processo."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Stefano con un testo per il team che corregga la durata e ascolti gli effetti pratici.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Assumere la responsabilità della frase",
+        "Definire le otto settimane",
+        "Non promettere la prosecuzione",
+        "Raccogliere esigenze concrete"
+      ]
+    },
+    "model": {
+      "subject": "R: Ho promesso due giorni da casa per sempre?",
+      "body": "Ciao Stefano,\n\nil messaggio al team non riflette il perimetro approvato: la delibera prevede una sperimentazione di otto settimane, con un massimo di due giorni a distanza. La prosecuzione sarà valutata in base alla copertura del servizio e al feedback del gruppo. Non esiste ancora una policy per l’intero anno. È comprensibile che alcune persone abbiano letto la tua frase come una nuova regola e organizzato impegni familiari di conseguenza.\n\nTi suggerisco una rettifica personale: «Nel mio messaggio non ho indicato che i due giorni a distanza riguardano un pilota di otto settimane. Mi scuso per aver creato un’aspettativa più ampia. La possibilità di proseguire sarà decisa dopo la valutazione; vi comunicheremo la data della decisione appena definita». Aggiungerei un invito riservato a segnalare esigenze di cura già pianificate, così possiamo considerarle nell’organizzazione del periodo successivo.\n\nNon prometterei eccezioni prima di conoscere la copertura necessaria. Possiamo però raccogliere i casi e rispondere individualmente, invece di lasciare che ognuno interpreti da solo il silenzio. Preparo la versione finale con te oggi.\n\nA presto, Federica",
+      "annotations": [
+        {
+          "label": "Precisa durata",
+          "excerpt": "sperimentazione di otto settimane",
+          "evidenceIds": [
+            "ITC19F1"
+          ]
+        },
+        {
+          "label": "Riconosce effetto",
+          "excerpt": "organizzato impegni familiari",
+          "evidenceIds": [
+            "ITC19F2"
+          ]
+        },
+        {
+          "label": "Lascia esito aperto",
+          "excerpt": "sarà decisa dopo la valutazione",
+          "evidenceIds": [
+            "ITC19F3",
+            "ITC19F4"
+          ]
+        },
+        {
+          "label": "Raccoglie esigenze",
+          "excerpt": "segnalare esigenze di cura già pianificate",
+          "evidenceIds": [
+            "ITC19F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "aumento-lordo-netto",
+    "title": "La cifra della lettera non è quella in busta",
+    "area": "People × Retribuzione",
+    "areaLabel": "Persone · Retribuzione",
+    "role": "Giorgio · Amministrazione personale",
+    "teaser": "Una persona interpreta l’aumento indicato nella lettera come importo netto mensile.",
+    "misunderstanding": "La cifra è lorda annua; la lettera usa una tabella poco chiara e manca una simulazione individuale.",
+    "email": {
+      "from": "Maria · HR business partner",
+      "to": "Giorgio · Amministrazione personale",
+      "sent": "Martedì, ore 15:10",
+      "subject": "Perché l’aumento sembra più basso?",
+      "body": "Ciao Giorgio,\n\nElisa ha ricevuto la lettera sull’aumento e si aspettava 3.600 euro in più netti all’anno. Nella prima busta vede un incremento molto inferiore e pensa che l’accordo non sia stato rispettato. Vorrei capire la cifra approvata, spiegare la differenza con tatto e verificare anche che la busta sia corretta.\n\nGrazie, Maria"
+    },
+    "document": {
+      "title": "Lettera e cedolino",
+      "intro": "L’importo approvato e l’importo ricevuto sono misure diverse.",
+      "facts": [
+        {
+          "id": "ITC110F1",
+          "time": "Delibera",
+          "text": "L’aumento approvato è di 3.600 euro lordi annui, ripartiti su dodici mensilità."
+        },
+        {
+          "id": "ITC110F2",
+          "time": "Lettera",
+          "text": "La tabella riporta «incremento annuo 3.600 €»; la parola «lordo» compare solo nella nota finale."
+        },
+        {
+          "id": "ITC110F3",
+          "time": "Cedolino",
+          "text": "Il nuovo lordo mensile include 300 euro in più rispetto al mese precedente."
+        },
+        {
+          "id": "ITC110F4",
+          "time": "Verifica",
+          "text": "Il netto dipende da trattenute individuali; la verifica completa del cedolino è ancora in corso."
+        },
+        {
+          "id": "ITC110F5",
+          "time": "Oggi",
+          "text": "L’amministrazione può offrire a Elisa un confronto riservato delle voci e correggere il modello di lettera."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "aumento-lordo-netto-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale aumento lordo mensile risulta dal cedolino?",
+        "evidenceIds": [
+          "ITC110F1",
+          "ITC110F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "3.600 euro.",
+            "feedback": "Quello è l’importo annuo."
+          },
+          {
+            "id": "b",
+            "text": "Nessun aumento.",
+            "feedback": "Il lordo mensile è salito."
+          },
+          {
+            "id": "c",
+            "text": "300 euro.",
+            "feedback": "È la ripartizione della cifra annua approvata."
+          }
+        ]
+      },
+      {
+        "id": "aumento-lordo-netto-scope",
+        "axis": "Scope",
+        "prompt": "Perché non si può promettere un netto di 3.600 euro?",
+        "evidenceIds": [
+          "ITC110F1",
+          "ITC110F2",
+          "ITC110F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché l’aumento non era approvato.",
+            "feedback": "La delibera esiste."
+          },
+          {
+            "id": "b",
+            "text": "La cifra è lorda e le trattenute individuali incidono sul netto.",
+            "feedback": "La lettera rendeva poco visibile questa distinzione."
+          },
+          {
+            "id": "c",
+            "text": "Perché la busta è certamente errata.",
+            "feedback": "La verifica è aperta."
+          }
+        ]
+      },
+      {
+        "id": "aumento-lordo-netto-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve ottenere Maria nel colloquio?",
+        "evidenceIds": [
+          "ITC110F2",
+          "ITC110F4",
+          "ITC110F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dimostrare che Elisa non ha letto bene.",
+            "feedback": "La nota era poco visibile."
+          },
+          {
+            "id": "b",
+            "text": "Garantire un netto specifico.",
+            "feedback": "Serve una verifica individuale."
+          },
+          {
+            "id": "c",
+            "text": "Spiegare il significato della cifra e ascoltare il dubbio, mantenendo aperto il controllo del cedolino.",
+            "feedback": "L’equivoco non esclude un possibile errore di calcolo."
+          }
+        ]
+      },
+      {
+        "id": "aumento-lordo-netto-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale azione è equilibrata?",
+        "evidenceIds": [
+          "ITC110F2",
+          "ITC110F3",
+          "ITC110F4",
+          "ITC110F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rinviare Elisa senza spiegazioni.",
+            "feedback": "La cifra approvata è già chiara."
+          },
+          {
+            "id": "b",
+            "text": "Pubblicare il suo netto al team.",
+            "feedback": "La verifica è personale."
+          },
+          {
+            "id": "c",
+            "text": "Confrontare in privato lettera e cedolino, poi correggere la tabella futura.",
+            "feedback": "Affronta il caso e la causa comunicativa."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Maria con una spiegazione per Elisa e un controllo ancora da completare.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Chiarire lordo annuo e mensile",
+        "Riconoscere la lettera ambigua",
+        "Verificare il cedolino",
+        "Proporre colloquio riservato"
+      ]
+    },
+    "model": {
+      "subject": "R: Perché l’aumento sembra più basso?",
+      "body": "Ciao Maria,\n\nla delibera approva un aumento di 3.600 euro lordi all’anno, distribuiti su dodici mensilità. Nel cedolino il lordo mensile risulta infatti maggiore di 300 euro. La lettera riportava la cifra annua in primo piano e relegava «lordo» a una nota: capisco perché Elisa abbia pensato a un importo netto. Dovremmo riconoscere che la presentazione non era sufficientemente chiara.\n\nNon possiamo però dedurre il netto dalla sola cifra approvata, perché incidono le trattenute individuali. Sto controllando tutte le voci del primo cedolino; il fatto che il lordo sia corretto non chiude ancora la verifica. Proporrei a Elisa un incontro riservato per confrontare lettera, nuovo lordo e trattenute, rispondendo alle sue domande con i dati davanti.\n\nPuoi anticiparle: «L’aumento approvato è espresso al lordo. La lettera non lo metteva abbastanza in evidenza e ci scusiamo per la confusione. Verifichiamo insieme che il cedolino rifletta correttamente l’accordo». Dopo il controllo le invieremo un riepilogo scritto. Modifico anche il modello della lettera perché la distinzione sia visibile nella tabella principale.\n\nA presto, Giorgio",
+      "annotations": [
+        {
+          "label": "Spiega importo",
+          "excerpt": "3.600 euro lordi all’anno",
+          "evidenceIds": [
+            "ITC110F1"
+          ]
+        },
+        {
+          "label": "Riconosce ambiguità",
+          "excerpt": "relegava «lordo» a una nota",
+          "evidenceIds": [
+            "ITC110F2"
+          ]
+        },
+        {
+          "label": "Non chiude verifica",
+          "excerpt": "non chiude ancora la verifica",
+          "evidenceIds": [
+            "ITC110F4"
+          ]
+        },
+        {
+          "label": "Protegge riservatezza",
+          "excerpt": "un incontro riservato",
+          "evidenceIds": [
+            "ITC110F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "mediazione-non-verbale-integrale",
+    "title": "La mediazione non è un verbale da distribuire",
+    "area": "People × Relazioni interne",
+    "areaLabel": "Persone · Relazioni interne",
+    "role": "Teresa · Relazioni del personale",
+    "teaser": "Un responsabile chiede la trascrizione di una mediazione fra colleghi.",
+    "misunderstanding": "L’accordo prevede una sintesi delle azioni comuni, non la diffusione di dichiarazioni personali.",
+    "email": {
+      "from": "Roberto · Responsabile reparto",
+      "to": "Teresa · Relazioni del personale",
+      "sent": "Mercoledì, ore 10:40",
+      "subject": "Mi mandi tutto quello che hanno detto?",
+      "body": "Ciao Teresa,\n\nso che hai facilitato il confronto tra Alessia e Karim. Per organizzare i turni, vorrei leggere esattamente che cosa si sono detti e capire chi ha ammesso l’errore. Mi è stato detto che esiste un verbale. Puoi inviarmelo e indicarmi quali decisioni devo applicare al reparto?\n\nGrazie, Roberto"
+    },
+    "document": {
+      "title": "Accordo di mediazione",
+      "intro": "Il confronto distingue confidenze e impegni operativi.",
+      "facts": [
+        {
+          "id": "ITC111F1",
+          "time": "Incontro",
+          "text": "Le due persone hanno condiviso percezioni personali in uno spazio riservato."
+        },
+        {
+          "id": "ITC111F2",
+          "time": "Consenso",
+          "text": "Hanno autorizzato una sintesi delle misure organizzative, non la diffusione di citazioni attribuite."
+        },
+        {
+          "id": "ITC111F3",
+          "time": "Misura 1",
+          "text": "Le consegne di turno saranno registrate in un modulo comune per quattro settimane."
+        },
+        {
+          "id": "ITC111F4",
+          "time": "Misura 2",
+          "text": "Roberto verificherà settimanalmente i passaggi rimasti aperti senza attribuire colpe pregresse."
+        },
+        {
+          "id": "ITC111F5",
+          "time": "Documento",
+          "text": "Esiste una nota riservata dell’incontro; la sintesi operativa è pronta per il responsabile."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "mediazione-non-verbale-integrale-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa Roberto può ricevere?",
+        "evidenceIds": [
+          "ITC111F2",
+          "ITC111F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le citazioni attribuite di tutta la mediazione.",
+            "feedback": "Non sono autorizzate."
+          },
+          {
+            "id": "b",
+            "text": "La sintesi delle misure organizzative autorizzata dai partecipanti.",
+            "feedback": "Il consenso ha questo perimetro."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna indicazione per i turni.",
+            "feedback": "Le misure sono definite."
+          }
+        ]
+      },
+      {
+        "id": "mediazione-non-verbale-integrale-scope",
+        "axis": "Scope",
+        "prompt": "Perché la nota riservata non equivale a un verbale distribuibile?",
+        "evidenceIds": [
+          "ITC111F1",
+          "ITC111F2",
+          "ITC111F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Contiene percezioni personali fuori dal consenso di condivisione.",
+            "feedback": "L’esistenza del file non ne allarga i destinatari."
+          },
+          {
+            "id": "b",
+            "text": "Perché non è stata scritta.",
+            "feedback": "La nota esiste."
+          },
+          {
+            "id": "c",
+            "text": "Perché Roberto non lavora nel reparto.",
+            "feedback": "È il responsabile operativo."
+          }
+        ]
+      },
+      {
+        "id": "mediazione-non-verbale-integrale-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa serve davvero a Roberto?",
+        "evidenceIds": [
+          "ITC111F3",
+          "ITC111F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Istruzioni per organizzare e verificare le consegne future.",
+            "feedback": "La ricerca di ammissioni non è necessaria per applicarle."
+          },
+          {
+            "id": "b",
+            "text": "Stabilire pubblicamente un colpevole.",
+            "feedback": "L’accordo evita attribuzioni pregresse."
+          },
+          {
+            "id": "c",
+            "text": "Annullare l’incontro.",
+            "feedback": "Le misure sono già concordate."
+          }
+        ]
+      },
+      {
+        "id": "mediazione-non-verbale-integrale-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta rispetta l’accordo?",
+        "evidenceIds": [
+          "ITC111F2",
+          "ITC111F3",
+          "ITC111F4",
+          "ITC111F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Inviare solo la sintesi operativa e chiarire la verifica settimanale.",
+            "feedback": "Dà a Roberto ciò che deve fare."
+          },
+          {
+            "id": "b",
+            "text": "Allegare la nota personale completa.",
+            "feedback": "Supererebbe il consenso."
+          },
+          {
+            "id": "c",
+            "text": "Rifiutare anche le misure organizzative.",
+            "feedback": "Sono state autorizzate."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Roberto con le azioni applicabili e un limite chiaro sui contenuti riservati.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Limitare la condivisione",
+        "Descrivere le misure",
+        "Non cercare ammissioni",
+        "Fissare la verifica"
+      ]
+    },
+    "model": {
+      "subject": "R: Mi mandi tutto quello che hanno detto?",
+      "body": "Ciao Roberto,\n\nposso inviarti la sintesi delle misure organizzative concordate, ma non la nota integrale dell’incontro. Alessia e Karim hanno autorizzato la condivisione delle azioni per i turni; non hanno autorizzato la diffusione delle loro parole o delle percezioni personali. L’esistenza di una nota riservata non cambia il perimetro del consenso.\n\nPer il reparto, le decisioni sono queste: per quattro settimane le consegne saranno registrate in un modulo comune e tu controllerai ogni settimana quali passaggi restano aperti. Ti invierò il modello e la data di avvio oggi. La verifica deve riguardare la qualità del passaggio di informazioni, non la ricerca di un’ammissione su quanto avvenuto prima della mediazione.\n\nSe durante l’applicazione emerge un problema concreto, raccogliamo il fatto e lo affrontiamo con le persone interessate nel canale appropriato. Ti propongo un breve confronto venerdì per definire come leggere il modulo e quando fare il primo controllo. Così hai istruzioni chiare senza esporre confidenze che non servono alla gestione dei turni.\n\nA presto, Teresa",
+      "annotations": [
+        {
+          "label": "Limita accesso",
+          "excerpt": "non la nota integrale dell’incontro",
+          "evidenceIds": [
+            "ITC111F1",
+            "ITC111F2"
+          ]
+        },
+        {
+          "label": "Nomina consenso",
+          "excerpt": "hanno autorizzato la condivisione delle azioni",
+          "evidenceIds": [
+            "ITC111F2"
+          ]
+        },
+        {
+          "label": "Indica misure",
+          "excerpt": "le consegne saranno registrate in un modulo comune",
+          "evidenceIds": [
+            "ITC111F3"
+          ]
+        },
+        {
+          "label": "Evita colpe",
+          "excerpt": "non la ricerca di un’ammissione",
+          "evidenceIds": [
+            "ITC111F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "inizio-lavoro-senza-portatile",
+    "title": "Il primo giorno c’è, il portatile no",
+    "area": "People × Inserimento",
+    "areaLabel": "Persone · Inserimento",
+    "role": "Bianca · Inserimento",
+    "teaser": "Una nuova collega riceve la conferma della data d’inizio ma il dispositivo arriverà tardi.",
+    "misunderstanding": "Il contratto e l’accesso al sito sono pronti; le attività riservate devono attendere un dispositivo aziendale.",
+    "email": {
+      "from": "Pietro · Responsabile team",
+      "to": "Bianca · Inserimento",
+      "sent": "Giovedì, ore 16:05",
+      "subject": "Dobbiamo spostare l’inizio di Nora?",
+      "body": "Ciao Bianca,\n\nNora comincia lunedì, ma il portatile aziendale arriverà mercoledì. Il team propone di farle usare il computer personale per accedere ai progetti. Non vorrei cambiare la data all’ultimo momento, né lasciarla senza nulla da fare. Puoi indicarmi un programma realistico e un messaggio chiaro per lei?\n\nGrazie, Pietro"
+    },
+    "document": {
+      "title": "Piano di inserimento",
+      "intro": "La data d’inizio e l’accesso ai dati richiedono condizioni diverse.",
+      "facts": [
+        {
+          "id": "ITC112F1",
+          "time": "Contratto",
+          "text": "L’inizio di Nora è confermato per lunedì; badge e postazione in sede sono pronti."
+        },
+        {
+          "id": "ITC112F2",
+          "time": "Dispositivo",
+          "text": "Il portatile gestito arriverà mercoledì mattina."
+        },
+        {
+          "id": "ITC112F3",
+          "time": "Regola",
+          "text": "I progetti riservati si aprono soltanto da dispositivi aziendali gestiti."
+        },
+        {
+          "id": "ITC112F4",
+          "time": "Agenda",
+          "text": "Lunedì e martedì sono disponibili orientamento, incontro con il team e formazione senza dati riservati."
+        },
+        {
+          "id": "ITC112F5",
+          "time": "Oggi",
+          "text": "Il team può comunicare a Nora il programma e preparare il dispositivo per mercoledì."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "inizio-lavoro-senza-portatile-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è pronto per lunedì?",
+        "evidenceIds": [
+          "ITC112F1",
+          "ITC112F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "L’inizio in sede e attività di orientamento.",
+            "feedback": "Il dispositivo non serve per ogni attività."
+          },
+          {
+            "id": "b",
+            "text": "L’accesso completo ai progetti riservati.",
+            "feedback": "Il portatile arriverà mercoledì."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna attività utile.",
+            "feedback": "L’agenda ne prevede diverse."
+          }
+        ]
+      },
+      {
+        "id": "inizio-lavoro-senza-portatile-scope",
+        "axis": "Scope",
+        "prompt": "Perché il computer personale non è una soluzione?",
+        "evidenceIds": [
+          "ITC112F2",
+          "ITC112F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La regola limita i progetti riservati a dispositivi aziendali gestiti.",
+            "feedback": "La comodità non modifica il requisito."
+          },
+          {
+            "id": "b",
+            "text": "Perché Nora non possiede un computer.",
+            "feedback": "Non è questo il punto documentato."
+          },
+          {
+            "id": "c",
+            "text": "Perché il contratto non è firmato.",
+            "feedback": "L’inizio è confermato."
+          }
+        ]
+      },
+      {
+        "id": "inizio-lavoro-senza-portatile-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole evitare Pietro?",
+        "evidenceIds": [
+          "ITC112F1",
+          "ITC112F4",
+          "ITC112F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Qualsiasi formazione iniziale.",
+            "feedback": "L’orientamento è disponibile."
+          },
+          {
+            "id": "b",
+            "text": "Ogni incontro in presenza.",
+            "feedback": "La sede è pronta."
+          },
+          {
+            "id": "c",
+            "text": "Una sorpresa all’ultimo minuto e un primo giorno vuoto.",
+            "feedback": "Serve un programma credibile."
+          }
+        ]
+      },
+      {
+        "id": "inizio-lavoro-senza-portatile-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale piano è appropriato?",
+        "evidenceIds": [
+          "ITC112F1",
+          "ITC112F2",
+          "ITC112F3",
+          "ITC112F4"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mantenere l’inizio, programmare attività non riservate e rinviare l’accesso ai progetti a mercoledì.",
+            "feedback": "Rispetta tempi e regola."
+          },
+          {
+            "id": "b",
+            "text": "Usare subito il computer personale.",
+            "feedback": "Violerebbe il requisito."
+          },
+          {
+            "id": "c",
+            "text": "Cambiare unilateralmente la data d’inizio.",
+            "feedback": "Il contratto e la sede sono pronti."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Pietro con un piano per i primi tre giorni e un messaggio per Nora.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Confermare la data",
+        "Evitare dispositivi personali",
+        "Organizzare attività utili",
+        "Spiegare il ritardo senza allarme"
+      ]
+    },
+    "model": {
+      "subject": "R: Dobbiamo spostare l’inizio di Nora?",
+      "body": "Ciao Pietro,\n\nnon vedo motivo di spostare la data d’inizio di Nora: il contratto, il badge e la postazione in sede sono pronti per lunedì. Il portatile gestito arriverà mercoledì mattina. Fino ad allora non possiamo darle accesso ai progetti riservati tramite un computer personale, perché la regola richiede un dispositivo aziendale.\n\nPer lunedì propongo accoglienza, presentazione del team, panoramica dei progetti senza dati riservati e incontro con la persona che la seguirà. Martedì può svolgere la formazione prevista e partecipare a riunioni introduttive che non richiedono accesso ai sistemi protetti. Mercoledì consegniamo il portatile, verifichiamo le credenziali e iniziamo le attività operative. Preparo con te gli orari, così non resta in attesa senza sapere cosa fare.\n\nA Nora scriverei oggi: «Ti aspettiamo lunedì come previsto. Il dispositivo aziendale sarà pronto mercoledì; i primi due giorni sono dedicati a conoscere il team e il lavoro, con un programma già organizzato». È una spiegazione trasparente e rassicurante, senza scaricare su di lei il ritardo logistico.\n\nA presto, Bianca",
+      "annotations": [
+        {
+          "label": "Conferma data",
+          "excerpt": "pronti per lunedì",
+          "evidenceIds": [
+            "ITC112F1"
+          ]
+        },
+        {
+          "label": "Rispetta regola",
+          "excerpt": "non possiamo darle accesso ai progetti riservati tramite un computer personale",
+          "evidenceIds": [
+            "ITC112F3"
+          ]
+        },
+        {
+          "label": "Pianifica tempo",
+          "excerpt": "Martedì può svolgere la formazione prevista",
+          "evidenceIds": [
+            "ITC112F4"
+          ]
+        },
+        {
+          "label": "Comunica presto",
+          "excerpt": "A Nora scriverei oggi",
+          "evidenceIds": [
+            "ITC112F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "campione-etichetta-discordante",
+    "title": "Un’etichetta non basta per assegnare il campione",
+    "area": "Health administration × Laboratorio",
+    "areaLabel": "Amministrazione sanitaria · Laboratorio",
+    "role": "Silvia · Accettazione campioni",
+    "teaser": "Un referto è atteso oggi, ma due identificativi sul campione non coincidono.",
+    "misunderstanding": "Il nome corrisponde alla richiesta; il codice sulla provetta appartiene a un’altra pratica e la provenienza va verificata.",
+    "email": {
+      "from": "Dario · Coordinamento ambulatorio",
+      "to": "Silvia · Accettazione campioni",
+      "sent": "Lunedì, ore 08:40",
+      "subject": "Possiamo sbloccare il referto?",
+      "body": "Ciao Silvia,\n\nil paziente attende il referto oggi. Il laboratorio ha fermato il campione perché il nome è corretto ma il codice sulla provetta non coincide con la richiesta. La segreteria propone di correggere il codice a mano: sembra solo un errore di stampa. Puoi spiegare che cosa sappiamo e quale verifica serve prima di dare una risposta al paziente?\n\nGrazie, Dario"
+    },
+    "document": {
+      "title": "Registro dei campioni",
+      "intro": "La concordanza del nome non prova da sola la provenienza.",
+      "facts": [
+        {
+          "id": "ITC113F1",
+          "time": "Richiesta",
+          "text": "La richiesta del paziente porta il codice pratica 417."
+        },
+        {
+          "id": "ITC113F2",
+          "time": "Provetta",
+          "text": "Il nome coincide, ma l’etichetta riporta il codice pratica 471, assegnato a un’altra richiesta."
+        },
+        {
+          "id": "ITC113F3",
+          "time": "Laboratorio",
+          "text": "Il campione è stato messo in sospeso e non è stato associato a un referto."
+        },
+        {
+          "id": "ITC113F4",
+          "time": "Procedura",
+          "text": "La provenienza deve essere ricostruita con il punto di prelievo; non si corregge l’etichetta senza verifica."
+        },
+        {
+          "id": "ITC113F5",
+          "time": "Oggi",
+          "text": "Il punto di prelievo può controllare registro, orario e operatore; il paziente va informato del ritardo possibile."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "campione-etichetta-discordante-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale incongruenza è confermata?",
+        "evidenceIds": [
+          "ITC113F1",
+          "ITC113F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il nome è di un’altra persona.",
+            "feedback": "Il nome coincide."
+          },
+          {
+            "id": "b",
+            "text": "Il referto è già stato emesso.",
+            "feedback": "Il campione è sospeso."
+          },
+          {
+            "id": "c",
+            "text": "Il nome coincide, ma i codici pratica differiscono.",
+            "feedback": "La discordanza riguarda un identificativo essenziale."
+          }
+        ]
+      },
+      {
+        "id": "campione-etichetta-discordante-scope",
+        "axis": "Scope",
+        "prompt": "Perché non basta correggere il codice a mano?",
+        "evidenceIds": [
+          "ITC113F2",
+          "ITC113F3",
+          "ITC113F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché la stampante è sicuramente rotta.",
+            "feedback": "La causa non è nota."
+          },
+          {
+            "id": "b",
+            "text": "Perché il paziente non ha una richiesta.",
+            "feedback": "La richiesta 417 esiste."
+          },
+          {
+            "id": "c",
+            "text": "Non è ancora verificata la provenienza del campione.",
+            "feedback": "Una correzione potrebbe nascondere uno scambio."
+          }
+        ]
+      },
+      {
+        "id": "campione-etichetta-discordante-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa serve a Dario per parlare al paziente?",
+        "evidenceIds": [
+          "ITC113F3",
+          "ITC113F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Una spiegazione del controllo e del possibile ritardo, senza presentare una diagnosi.",
+            "feedback": "Il referto non è disponibile."
+          },
+          {
+            "id": "b",
+            "text": "Un risultato inventato per rispettare l’orario.",
+            "feedback": "Il campione non è stato validato."
+          },
+          {
+            "id": "c",
+            "text": "Il nome dell’altra persona.",
+            "feedback": "Non è necessario né appropriato."
+          }
+        ]
+      },
+      {
+        "id": "campione-etichetta-discordante-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale passo è corretto?",
+        "evidenceIds": [
+          "ITC113F3",
+          "ITC113F4",
+          "ITC113F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rilasciare il referto basandosi sul nome.",
+            "feedback": "Il codice è discordante."
+          },
+          {
+            "id": "b",
+            "text": "Cancellare entrambe le pratiche.",
+            "feedback": "Prima serve l’indagine."
+          },
+          {
+            "id": "c",
+            "text": "Mantenere la sospensione, ricostruire la provenienza e aggiornare il paziente sui tempi.",
+            "feedback": "La verifica precede l’associazione del campione."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Dario con un percorso di verifica e un messaggio prudente al paziente.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Descrivere la discordanza",
+        "Non correggere senza verifica",
+        "Proteggere l’identità altrui",
+        "Comunicare il ritardo"
+      ]
+    },
+    "model": {
+      "subject": "R: Possiamo sbloccare il referto?",
+      "body": "Ciao Dario,\n\nil laboratorio ha fermato correttamente il campione. Sulla provetta il nome coincide con la richiesta del paziente, ma il codice pratica è 471 invece di 417; il primo è associato a un’altra richiesta. Il campione non è stato collegato a un referto. Non possiamo assumere che sia soltanto un errore di stampa né correggere l’etichetta a mano prima di ricostruirne la provenienza.\n\nContatto oggi il punto di prelievo per confrontare registro, orario e operatore. Solo dopo il controllo il laboratorio potrà decidere come procedere secondo la procedura. Nel frattempo, al paziente possiamo dire che è emersa una discrepanza amministrativa nell’identificazione del campione e che, per garantire l’affidabilità del referto, la verifica può ritardarne la consegna. Non darei dettagli su altre pratiche né anticiperei un risultato.\n\nTi aggiorno non appena il punto di prelievo risponde. Se il controllo non chiarisce l’identità del campione, concorderemo con l’ambulatorio il passo successivo e un nuovo tempo di risposta al paziente. È meglio spiegare il ritardo ora che trasmettere un referto non attribuito con certezza.\n\nA presto, Silvia",
+      "annotations": [
+        {
+          "label": "Descrive discordanza",
+          "excerpt": "codice pratica è 471 invece di 417",
+          "evidenceIds": [
+            "ITC113F1",
+            "ITC113F2"
+          ]
+        },
+        {
+          "label": "Mantiene sospensione",
+          "excerpt": "Non possiamo assumere che sia soltanto un errore di stampa",
+          "evidenceIds": [
+            "ITC113F4"
+          ]
+        },
+        {
+          "label": "Evita dati terzi",
+          "excerpt": "Non darei dettagli su altre pratiche",
+          "evidenceIds": [
+            "ITC113F2"
+          ]
+        },
+        {
+          "label": "Avvisa ritardo",
+          "excerpt": "la verifica può ritardarne la consegna",
+          "evidenceIds": [
+            "ITC113F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "nota-credito-non-rimborso",
+    "title": "Una nota di credito non è ancora un rimborso",
+    "area": "Health administration × Fatturazione",
+    "areaLabel": "Amministrazione sanitaria · Fatturazione",
+    "role": "Alessandro · Fatturazione",
+    "teaser": "Una paziente vede una nota di credito e si aspetta subito il denaro sul conto.",
+    "misunderstanding": "La voce duplicata è stata stornata, ma il pagamento era già avvenuto e il rimborso richiede una disposizione separata.",
+    "email": {
+      "from": "Marta · Front office",
+      "to": "Alessandro · Fatturazione",
+      "sent": "Martedì, ore 10:35",
+      "subject": "Quando riceverà il denaro?",
+      "body": "Ciao Alessandro,\n\nla signora Bassi ci ha segnalato una prestazione fatturata due volte. Ora nel portale compare una nota di credito e le avevamo detto che il problema era risolto. Lei però non vede alcun accredito. Puoi chiarire lo stato effettivo e darmi una risposta con tempi verificabili, senza farle ripetere tutta la storia?\n\nGrazie, Marta"
+    },
+    "document": {
+      "title": "Stato contabile",
+      "intro": "Storno documentale e movimento di denaro sono due passaggi.",
+      "facts": [
+        {
+          "id": "ITC114F1",
+          "time": "Fattura",
+          "text": "Una prestazione da 85 euro è stata addebitata due volte."
+        },
+        {
+          "id": "ITC114F2",
+          "time": "Pagamento",
+          "text": "La paziente ha pagato entrambi gli importi con carta."
+        },
+        {
+          "id": "ITC114F3",
+          "time": "Lunedì",
+          "text": "È stata emessa una nota di credito di 85 euro per la voce duplicata."
+        },
+        {
+          "id": "ITC114F4",
+          "time": "Martedì",
+          "text": "La disposizione di rimborso non è ancora stata inviata al circuito della carta."
+        },
+        {
+          "id": "ITC114F5",
+          "time": "Procedura",
+          "text": "Dopo la disposizione, il circuito comunica una finestra di accredito; oggi possiamo confermare soltanto l’avvio previsto entro domani."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "nota-credito-non-rimborso-evidence",
+        "axis": "Evidence",
+        "prompt": "Quale correzione è già avvenuta?",
+        "evidenceIds": [
+          "ITC114F1",
+          "ITC114F3"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il rimborso è già arrivato sulla carta.",
+            "feedback": "La disposizione non è partita."
+          },
+          {
+            "id": "b",
+            "text": "La seconda fattura non esiste.",
+            "feedback": "L’addebito doppio è documentato."
+          },
+          {
+            "id": "c",
+            "text": "È stata emessa una nota di credito per 85 euro.",
+            "feedback": "La nota riconosce contabilmente la voce duplicata."
+          }
+        ]
+      },
+      {
+        "id": "nota-credito-non-rimborso-scope",
+        "axis": "Scope",
+        "prompt": "Che cosa non prova la nota di credito?",
+        "evidenceIds": [
+          "ITC114F2",
+          "ITC114F3",
+          "ITC114F4"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che ci fosse un importo duplicato.",
+            "feedback": "Lo storno lo riconosce."
+          },
+          {
+            "id": "b",
+            "text": "Che la paziente abbia pagato.",
+            "feedback": "Il pagamento è registrato a parte."
+          },
+          {
+            "id": "c",
+            "text": "Che il denaro sia già stato riaccreditato.",
+            "feedback": "Il movimento di rimborso è separato."
+          }
+        ]
+      },
+      {
+        "id": "nota-credito-non-rimborso-intent",
+        "axis": "Intent",
+        "prompt": "Come dovrebbe Marta riprendere il contatto?",
+        "evidenceIds": [
+          "ITC114F1",
+          "ITC114F4",
+          "ITC114F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiederle di pagare di nuovo.",
+            "feedback": "Ha già pagato due volte."
+          },
+          {
+            "id": "b",
+            "text": "Riconoscere l’attesa dopo la promessa di soluzione e spiegare i due passaggi.",
+            "feedback": "La paziente non deve ricostruire il caso."
+          },
+          {
+            "id": "c",
+            "text": "Garantire un accredito oggi.",
+            "feedback": "Senza una disposizione di rimborso, un accredito oggi non è confermabile."
+          }
+        ]
+      },
+      {
+        "id": "nota-credito-non-rimborso-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale aggiornamento è affidabile?",
+        "evidenceIds": [
+          "ITC114F3",
+          "ITC114F4",
+          "ITC114F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Storno emesso, disposizione prevista entro domani, finestra bancaria da comunicare dopo l’invio.",
+            "feedback": "Ogni stato ha il suo tempo verificabile."
+          },
+          {
+            "id": "b",
+            "text": "Rimborso completato ieri.",
+            "feedback": "È stata emessa soltanto la nota."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna azione necessaria.",
+            "feedback": "Il rimborso resta da disporre."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Marta con un messaggio alla paziente e una promessa di aggiornamento verificabile.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Riconoscere il doppio addebito",
+        "Separare storno e accredito",
+        "Non inventare la data bancaria",
+        "Confermare il prossimo controllo"
+      ]
+    },
+    "model": {
+      "subject": "R: Quando riceverà il denaro?",
+      "body": "Ciao Marta,\n\nla segnalazione della signora Bassi è fondata: la prestazione da 85 euro è stata addebitata due volte e lei ha pagato entrambi gli importi. Lunedì abbiamo emesso la nota di credito per la voce duplicata. Questo corregge la posizione contabile, ma non produce da solo un accredito sulla carta. La disposizione di rimborso non è ancora stata inviata.\n\nTi suggerisco di scusarti per aver definito il caso «risolto» troppo presto. Possiamo dirle che lo storno è completato e che prevediamo di inviare la disposizione entro domani. Dopo l’invio, comunicheremo il riferimento dell’operazione e la finestra di accredito indicata dal circuito; oggi non abbiamo una data bancaria da promettere. La contatto io quando la disposizione sarà effettivamente registrata.\n\nNon le chiederei di ripresentare fatture o ricevute: il caso e i due pagamenti sono già nei nostri sistemi. Aggiorno il fascicolo in modo che chiunque risponda possa vedere chiaramente i due stati, senza confondere la nota di credito con il rimborso ricevuto.\n\nA presto, Alessandro",
+      "annotations": [
+        {
+          "label": "Riconosce addebito",
+          "excerpt": "addebitata due volte",
+          "evidenceIds": [
+            "ITC114F1",
+            "ITC114F2"
+          ]
+        },
+        {
+          "label": "Distingue storno",
+          "excerpt": "non produce da solo un accredito sulla carta",
+          "evidenceIds": [
+            "ITC114F3",
+            "ITC114F4"
+          ]
+        },
+        {
+          "label": "Evita falsa data",
+          "excerpt": "non abbiamo una data bancaria da promettere",
+          "evidenceIds": [
+            "ITC114F5"
+          ]
+        },
+        {
+          "label": "Evita ripetizione",
+          "excerpt": "il caso e i due pagamenti sono già nei nostri sistemi",
+          "evidenceIds": [
+            "ITC114F1",
+            "ITC114F2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "promemoria-dopo-disdetta",
+    "title": "Un promemoria arrivato dopo la disdetta",
+    "area": "Health administration × Appuntamenti",
+    "areaLabel": "Amministrazione sanitaria · Appuntamenti",
+    "role": "Noemi · Agenda",
+    "teaser": "Una paziente riceve un promemoria per una visita annullata e teme di essere addebitata.",
+    "misunderstanding": "La cancellazione è registrata; il messaggio era già in coda e non riflette lo stato aggiornato.",
+    "email": {
+      "from": "Carlo · Accoglienza",
+      "to": "Noemi · Agenda",
+      "sent": "Mercoledì, ore 08:50",
+      "subject": "La visita è stata davvero cancellata?",
+      "body": "Ciao Noemi,\n\nla signora Greco ha disdetto ieri, ma stamattina le è arrivato il promemoria della visita di domani. Si chiede se la disdetta sia valida e se pagherà una penale per non presentarsi. Nel gestionale vedo «annullato». Puoi ricostruire i tempi e preparare una risposta che le dia certezza senza confondere altri appuntamenti?\n\nGrazie, Carlo"
+    },
+    "document": {
+      "title": "Cronologia appuntamento",
+      "intro": "La coda dei messaggi non si è aggiornata dopo la cancellazione.",
+      "facts": [
+        {
+          "id": "ITC115F1",
+          "time": "Martedì, ore 15:02",
+          "text": "La signora Greco ha cancellato la visita di giovedì tramite telefono."
+        },
+        {
+          "id": "ITC115F2",
+          "time": "Martedì, ore 15:05",
+          "text": "L’operatore ha registrato l’annullamento e il posto è stato liberato."
+        },
+        {
+          "id": "ITC115F3",
+          "time": "Martedì, ore 14:30",
+          "text": "Il promemoria era già stato preparato nella coda di invio."
+        },
+        {
+          "id": "ITC115F4",
+          "time": "Mercoledì, ore 07:00",
+          "text": "La coda ha inviato il messaggio senza ricontrollare lo stato della visita."
+        },
+        {
+          "id": "ITC115F5",
+          "time": "Regola",
+          "text": "Per questa disdetta tempestiva non è prevista penale; un’altra visita della paziente resta confermata per il mese prossimo."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "promemoria-dopo-disdetta-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual è lo stato della visita di giovedì?",
+        "evidenceIds": [
+          "ITC115F1",
+          "ITC115F2"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confermata dal messaggio.",
+            "feedback": "Il messaggio era in coda."
+          },
+          {
+            "id": "b",
+            "text": "Spostata al mese prossimo.",
+            "feedback": "L’altra visita è distinta."
+          },
+          {
+            "id": "c",
+            "text": "Annullata e con posto liberato.",
+            "feedback": "Il promemoria non cambia la registrazione."
+          }
+        ]
+      },
+      {
+        "id": "promemoria-dopo-disdetta-scope",
+        "axis": "Scope",
+        "prompt": "Perché è arrivato il promemoria?",
+        "evidenceIds": [
+          "ITC115F3",
+          "ITC115F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "La paziente ha richiamato per confermare.",
+            "feedback": "La cronologia mostra la disdetta, non una nuova conferma della paziente."
+          },
+          {
+            "id": "b",
+            "text": "Era già in coda e non ha ricontrollato la cancellazione.",
+            "feedback": "L’invio è rimasto scollegato dallo stato aggiornato."
+          },
+          {
+            "id": "c",
+            "text": "L’operatore non ha registrato la disdetta.",
+            "feedback": "L’ha registrata alle 15:05."
+          }
+        ]
+      },
+      {
+        "id": "promemoria-dopo-disdetta-intent",
+        "axis": "Intent",
+        "prompt": "Quale preoccupazione va affrontata per prima?",
+        "evidenceIds": [
+          "ITC115F1",
+          "ITC115F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La validità della disdetta e l’assenza di penale.",
+            "feedback": "È ciò che la paziente teme."
+          },
+          {
+            "id": "b",
+            "text": "Il funzionamento tecnico della coda in dettaglio.",
+            "feedback": "Basta spiegare l’errore in modo semplice."
+          },
+          {
+            "id": "c",
+            "text": "La visita del mese prossimo come se fosse annullata.",
+            "feedback": "È ancora confermata."
+          }
+        ]
+      },
+      {
+        "id": "promemoria-dopo-disdetta-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è corretta?",
+        "evidenceIds": [
+          "ITC115F2",
+          "ITC115F4",
+          "ITC115F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Confermare l’annullamento di giovedì, escludere la penale e distinguere l’altra visita.",
+            "feedback": "Dà certezza senza creare un nuovo equivoco."
+          },
+          {
+            "id": "b",
+            "text": "Chiedere alla paziente di disdire di nuovo.",
+            "feedback": "La disdetta è già valida."
+          },
+          {
+            "id": "c",
+            "text": "Dire che tutte le sue visite sono annullate.",
+            "feedback": "Quella del mese prossimo resta."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Carlo con una formulazione per la paziente e una correzione del flusso dei promemoria.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Confermare la disdetta",
+        "Escludere la penale",
+        "Spiegare il messaggio errato",
+        "Distinguere l’altra visita"
+      ]
+    },
+    "model": {
+      "subject": "R: La visita è stata davvero cancellata?",
+      "body": "Ciao Carlo,\n\nla visita di giovedì della signora Greco è stata annullata correttamente ieri alle 15:05 e il posto è stato liberato. Il promemoria ricevuto stamattina non indica una nuova prenotazione: era già stato preparato prima della telefonata e la coda lo ha inviato senza ricontrollare lo stato. La disdetta è tempestiva, quindi per quella visita non è prevista alcuna penale.\n\nPuoi risponderle così: «Ci scusiamo per il promemoria inviato dopo la sua disdetta. Confermiamo che la visita di giovedì è annullata e che non le sarà applicata una penale. L’altra visita fissata per il mese prossimo resta invece confermata». Vorrei indicare chiaramente le due date nella risposta, così non nasce un secondo dubbio.\n\nSegnalo al team che gestisce i messaggi la necessità di controllare lo stato immediatamente prima dell’invio. Intanto aggiungo una nota alla pratica e verifico che non partano ulteriori promemoria per l’appuntamento annullato. Ti mando il testo finale con le date esatte da copiare nella risposta.\n\nA presto, Noemi",
+      "annotations": [
+        {
+          "label": "Conferma stato",
+          "excerpt": "annullata correttamente ieri alle 15:05",
+          "evidenceIds": [
+            "ITC115F2"
+          ]
+        },
+        {
+          "label": "Spiega coda",
+          "excerpt": "senza ricontrollare lo stato",
+          "evidenceIds": [
+            "ITC115F3",
+            "ITC115F4"
+          ]
+        },
+        {
+          "label": "Esclude costo",
+          "excerpt": "non è prevista alcuna penale",
+          "evidenceIds": [
+            "ITC115F5"
+          ]
+        },
+        {
+          "label": "Distingue visita",
+          "excerpt": "resta invece confermata",
+          "evidenceIds": [
+            "ITC115F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "interprete-richiesto-non-confermato",
+    "title": "L’interprete è richiesto, non ancora prenotato",
+    "area": "Health administration × Accessibilità",
+    "areaLabel": "Amministrazione sanitaria · Accessibilità",
+    "role": "Rita · Coordinamento visite",
+    "teaser": "Una paziente crede che un interprete sarà presente alla visita di domani.",
+    "misunderstanding": "La richiesta è stata registrata ma il servizio esterno non ha confermato la disponibilità.",
+    "email": {
+      "from": "Francesca · Ambulatorio",
+      "to": "Rita · Coordinamento visite",
+      "sent": "Giovedì, ore 09:25",
+      "subject": "Posso confermare l’interprete?",
+      "body": "Ciao Rita,\n\nla paziente ha ricevuto una nostra mail che dice «abbiamo richiesto un interprete» e ora pensa che il servizio sia garantito. La visita è domani mattina e il medico deve discutere un consenso informato. Non voglio farla arrivare senza un supporto adeguato. Puoi verificare lo stato e indicarmi quando dobbiamo decidere un’alternativa?\n\nGrazie, Francesca"
+    },
+    "document": {
+      "title": "Richiesta di supporto linguistico",
+      "intro": "Una richiesta al fornitore non è una conferma del servizio.",
+      "facts": [
+        {
+          "id": "ITC116F1",
+          "time": "Mercoledì",
+          "text": "L’ambulatorio ha richiesto un interprete per venerdì alle 10."
+        },
+        {
+          "id": "ITC116F2",
+          "time": "Giovedì, ore 09:00",
+          "text": "Il fornitore ha ricevuto la richiesta, ma non ha ancora assegnato una persona."
+        },
+        {
+          "id": "ITC116F3",
+          "time": "Comunicazione",
+          "text": "La mail alla paziente dice «abbiamo richiesto un interprete», senza spiegare che manca conferma."
+        },
+        {
+          "id": "ITC116F4",
+          "time": "Visita",
+          "text": "È previsto un colloquio che richiede comprensione adeguata prima del consenso."
+        },
+        {
+          "id": "ITC116F5",
+          "time": "Oggi",
+          "text": "Il fornitore darà risposta entro le 13; se non disponibile, l’ambulatorio può valutare un nuovo orario con supporto confermato."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "interprete-richiesto-non-confermato-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual è lo stato del servizio?",
+        "evidenceIds": [
+          "ITC116F1",
+          "ITC116F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Richiesto e ricevuto dal fornitore, ma non assegnato.",
+            "feedback": "La conferma della persona manca."
+          },
+          {
+            "id": "b",
+            "text": "Interprete già nominato.",
+            "feedback": "Nessuna assegnazione risulta."
+          },
+          {
+            "id": "c",
+            "text": "Nessuna richiesta inviata.",
+            "feedback": "Il fornitore l’ha ricevuta."
+          }
+        ]
+      },
+      {
+        "id": "interprete-richiesto-non-confermato-scope",
+        "axis": "Scope",
+        "prompt": "Perché la mail può creare un’aspettativa errata?",
+        "evidenceIds": [
+          "ITC116F2",
+          "ITC116F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Non rende evidente la differenza tra richiesta e disponibilità confermata.",
+            "feedback": "La paziente può leggere la richiesta come garanzia."
+          },
+          {
+            "id": "b",
+            "text": "Perché la visita è stata cancellata.",
+            "feedback": "È ancora fissata."
+          },
+          {
+            "id": "c",
+            "text": "Perché il fornitore ha rifiutato.",
+            "feedback": "La risposta non è arrivata."
+          }
+        ]
+      },
+      {
+        "id": "interprete-richiesto-non-confermato-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve tutelare Francesca?",
+        "evidenceIds": [
+          "ITC116F4",
+          "ITC116F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Solo la puntualità dell’agenda.",
+            "feedback": "La comprensione è centrale."
+          },
+          {
+            "id": "b",
+            "text": "Un colloquio comprensibile e una decisione tempestiva sulla visita.",
+            "feedback": "Il consenso richiede un supporto effettivo."
+          },
+          {
+            "id": "c",
+            "text": "Una promessa di interprete senza conferma.",
+            "feedback": "Sarebbe ingannevole."
+          }
+        ]
+      },
+      {
+        "id": "interprete-richiesto-non-confermato-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale piano è prudente?",
+        "evidenceIds": [
+          "ITC116F2",
+          "ITC116F4",
+          "ITC116F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Attendere la risposta entro le 13, avvisare la paziente dello stato e preparare un nuovo orario se necessario.",
+            "feedback": "Evita una sorpresa domani."
+          },
+          {
+            "id": "b",
+            "text": "Confermare subito la presenza.",
+            "feedback": "Il fornitore non ha assegnato nessuno."
+          },
+          {
+            "id": "c",
+            "text": "Procedere comunque senza supporto linguistico.",
+            "feedback": "Il colloquio richiede comprensione adeguata."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Francesca con una comunicazione alla paziente e una soglia temporale per l’alternativa.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Distinguere richiesta e conferma",
+        "Non dare garanzie premature",
+        "Fissare controllo alle 13",
+        "Preparare appuntamento con supporto"
+      ]
+    },
+    "model": {
+      "subject": "R: Posso confermare l’interprete?",
+      "body": "Ciao Francesca,\n\nnon possiamo ancora confermare la presenza dell’interprete. La richiesta per domani alle 10 è arrivata al fornitore, ma alle 09 di oggi non era stata assegnata una persona. La nostra mail diceva solo che avevamo richiesto il servizio; capisco però che la paziente possa averla interpretata come una conferma. È importante chiarirlo prima che organizzi il viaggio.\n\nIl fornitore si è impegnato a rispondere entro le 13. A quell’ora controllo l’assegnazione e ti aggiorno subito. Nel frattempo, avviserei la paziente che stiamo verificando la disponibilità e che le daremo una risposta certa oggi. Se l’interprete non sarà disponibile, proponiamo un nuovo orario con supporto confermato, invece di lasciare la decisione a domani in ambulatorio.\n\nPoiché il colloquio comprende il consenso informato, non tratterei il supporto linguistico come un dettaglio logistico. Sentiamo il medico prima di confermare qualsiasi modifica della visita, così la paziente riceve un programma chiaro e può partecipare con piena comprensione. Ti mando l’esito appena arriva.\n\nA presto, Rita",
+      "annotations": [
+        {
+          "label": "Segna stato",
+          "excerpt": "non possiamo ancora confermare la presenza",
+          "evidenceIds": [
+            "ITC116F2"
+          ]
+        },
+        {
+          "label": "Riconosce equivoco",
+          "excerpt": "possa averla interpretata come una conferma",
+          "evidenceIds": [
+            "ITC116F3"
+          ]
+        },
+        {
+          "label": "Fissa soglia",
+          "excerpt": "entro le 13",
+          "evidenceIds": [
+            "ITC116F5"
+          ]
+        },
+        {
+          "label": "Tutela comprensione",
+          "excerpt": "con piena comprensione",
+          "evidenceIds": [
+            "ITC116F4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sala-capienza-inviti",
+    "title": "Cinquantacinque invitati, cinquanta posti consentiti",
+    "area": "Operations × Eventi",
+    "areaLabel": "Operazioni · Eventi",
+    "role": "Alberto · Gestione spazi",
+    "teaser": "Un evento ha più conferme della capienza autorizzata della sala.",
+    "misunderstanding": "I cinque posti degli sponsor non sono aggiuntivi; erano già inclusi nel limite complessivo.",
+    "email": {
+      "from": "Laura · Organizzazione",
+      "to": "Alberto · Gestione spazi",
+      "sent": "Lunedì, ore 10:20",
+      "subject": "Possiamo aggiungere le sedie degli sponsor?",
+      "body": "Ciao Alberto,\n\nabbiamo 55 conferme per la presentazione di giovedì. La sala ha 50 sedie e pensavo di aggiungerne cinque per gli sponsor, che nella lista sono segnati a parte. Il personale della struttura dice che il limite resta 50. Mi aiuti a capire il vincolo e a proporre una soluzione senza disdire all’ultimo?\n\nGrazie, Laura"
+    },
+    "document": {
+      "title": "Piano della sala",
+      "intro": "La capienza autorizzata comprende tutti i presenti.",
+      "facts": [
+        {
+          "id": "ITC117F1",
+          "time": "Autorizzazione",
+          "text": "La sala è omologata per un massimo di 50 persone, compresi ospiti, sponsor e relatori."
+        },
+        {
+          "id": "ITC117F2",
+          "time": "Lista",
+          "text": "Sono state confermate 55 presenze; cinque sponsor compaiono in una colonna separata."
+        },
+        {
+          "id": "ITC117F3",
+          "time": "Allestimento",
+          "text": "Aggiungere sedie non modifica la capienza autorizzata."
+        },
+        {
+          "id": "ITC117F4",
+          "time": "Alternativa",
+          "text": "La sala grande è libera giovedì e accoglie 80 persone, ma richiede una conferma entro le 16."
+        },
+        {
+          "id": "ITC117F5",
+          "time": "Oggi",
+          "text": "La lista può essere aggiornata con il nuovo indirizzo della sala e inviata agli ospiti."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sala-capienza-inviti-evidence",
+        "axis": "Evidence",
+        "prompt": "Qual è il limite effettivo?",
+        "evidenceIds": [
+          "ITC117F1",
+          "ITC117F2"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "50 persone in totale, inclusi sponsor e relatori.",
+            "feedback": "La colonna separata non crea posti extra."
+          },
+          {
+            "id": "b",
+            "text": "55 persone perché cinque sono sponsor.",
+            "feedback": "La capienza li comprende."
+          },
+          {
+            "id": "c",
+            "text": "80 nella sala attuale.",
+            "feedback": "Ottanta è la capienza dell’alternativa."
+          }
+        ]
+      },
+      {
+        "id": "sala-capienza-inviti-scope",
+        "axis": "Scope",
+        "prompt": "Perché aggiungere sedie non risolve?",
+        "evidenceIds": [
+          "ITC117F1",
+          "ITC117F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché non ci sono sedie disponibili.",
+            "feedback": "Il problema non è la disponibilità."
+          },
+          {
+            "id": "b",
+            "text": "Il vincolo è la capienza autorizzata, non il numero di sedie.",
+            "feedback": "L’allestimento non cambia il limite."
+          },
+          {
+            "id": "c",
+            "text": "Perché gli sponsor non vogliono sedersi.",
+            "feedback": "Non risulta."
+          }
+        ]
+      },
+      {
+        "id": "sala-capienza-inviti-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa vuole Laura evitare?",
+        "evidenceIds": [
+          "ITC117F2",
+          "ITC117F4",
+          "ITC117F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il cambio di sala in ogni caso.",
+            "feedback": "Chiede una soluzione."
+          },
+          {
+            "id": "b",
+            "text": "Una cancellazione tardiva mantenendo la partecipazione confermata.",
+            "feedback": "La sala grande offre una via praticabile."
+          },
+          {
+            "id": "c",
+            "text": "La presenza degli sponsor.",
+            "feedback": "Li considera invitati."
+          }
+        ]
+      },
+      {
+        "id": "sala-capienza-inviti-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale decisione è più solida?",
+        "evidenceIds": [
+          "ITC117F1",
+          "ITC117F2",
+          "ITC117F4",
+          "ITC117F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tenere la sala e superare il limite.",
+            "feedback": "Non è consentito."
+          },
+          {
+            "id": "b",
+            "text": "Lasciare cinque persone in piedi fuori sala.",
+            "feedback": "Non risolve il numero dei presenti."
+          },
+          {
+            "id": "c",
+            "text": "Bloccare la sala grande entro le 16 e comunicare tempestivamente il cambio.",
+            "feedback": "Rispetta capienza e conferme."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Laura con una decisione oggi e un messaggio breve agli invitati.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Contare tutti i presenti",
+        "Non confondere sedie e capienza",
+        "Confermare la sala alternativa",
+        "Avvisare gli ospiti"
+      ]
+    },
+    "model": {
+      "subject": "R: Possiamo aggiungere le sedie degli sponsor?",
+      "body": "Ciao Laura,\n\nil limite della sala attuale è di 50 persone complessive, non di 50 ospiti più cinque sponsor. L’autorizzazione comprende anche sponsor e relatori; la colonna separata nella lista serve solo a classificarli. Aggiungere sedie non cambia la capienza consentita, quindi con 55 conferme non possiamo usare la sala prevista.\n\nLa soluzione più semplice è confermare entro le 16 la sala grande, che può accogliere 80 persone giovedì. Ti suggerisco di bloccarla subito e di aggiornare l’elenco con la nuova sede. Possiamo inviare oggi una comunicazione agli ospiti: «La presentazione si terrà nello stesso giorno e alla stessa ora nella sala grande, all’indirizzo indicato qui sotto». Aggiungerei una piantina o un riferimento all’ingresso, così il cambio non crea confusione.\n\nPrima dell’invio controllerò con te che tutti i 55 abbiano un contatto valido e che la segnaletica in sede sia pronta. In questo modo manteniamo le conferme senza forzare un limite che la struttura non può modificare con un diverso allestimento.\n\nA presto, Alberto",
+      "annotations": [
+        {
+          "label": "Conta tutti",
+          "excerpt": "comprende anche sponsor e relatori",
+          "evidenceIds": [
+            "ITC117F1"
+          ]
+        },
+        {
+          "label": "Distingue vincolo",
+          "excerpt": "Aggiungere sedie non cambia la capienza",
+          "evidenceIds": [
+            "ITC117F3"
+          ]
+        },
+        {
+          "label": "Usa scadenza",
+          "excerpt": "entro le 16 la sala grande",
+          "evidenceIds": [
+            "ITC117F4"
+          ]
+        },
+        {
+          "label": "Avvisa ospiti",
+          "excerpt": "Possiamo inviare oggi una comunicazione",
+          "evidenceIds": [
+            "ITC117F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "certificato-scaduto-consegna",
+    "title": "Il certificato vale oggi, ma non alla consegna",
+    "area": "Operations × Fornitori",
+    "areaLabel": "Operazioni · Fornitori",
+    "role": "Franco · Acquisti",
+    "teaser": "Un fornitore presenta un certificato valido al momento dell’ordine.",
+    "misunderstanding": "Il certificato scade prima della consegna prevista e il contratto richiede validità alla consegna.",
+    "email": {
+      "from": "Beatrice · Responsabile progetto",
+      "to": "Franco · Acquisti",
+      "sent": "Martedì, ore 11:15",
+      "subject": "Possiamo confermare l’ordine?",
+      "body": "Ciao Franco,\n\nil fornitore ha inviato il certificato richiesto e il team vorrebbe confermare oggi. Ho notato però che scade venerdì, mentre la consegna è martedì prossimo. Il fornitore dice che il rinnovo è in corso. Qual è il rischio contrattuale e come manteniamo la consegna possibile senza far finta che il rinnovo sia già arrivato?\n\nGrazie, Beatrice"
+    },
+    "document": {
+      "title": "Requisito di fornitura",
+      "intro": "La validità va verificata nel momento previsto dal contratto.",
+      "facts": [
+        {
+          "id": "ITC118F1",
+          "time": "Contratto",
+          "text": "Il certificato deve risultare valido alla data della consegna."
+        },
+        {
+          "id": "ITC118F2",
+          "time": "Documento",
+          "text": "Il certificato attuale scade venerdì alle 24."
+        },
+        {
+          "id": "ITC118F3",
+          "time": "Programma",
+          "text": "La merce è prevista martedì successivo."
+        },
+        {
+          "id": "ITC118F4",
+          "time": "Fornitore",
+          "text": "Il rinnovo è stato richiesto, ma non è ancora stato rilasciato."
+        },
+        {
+          "id": "ITC118F5",
+          "time": "Opzione",
+          "text": "L’ordine può essere condizionato alla consegna del certificato rinnovato prima della spedizione; è disponibile un secondo fornitore con tempi più lunghi."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "certificato-scaduto-consegna-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa è verificabile oggi?",
+        "evidenceIds": [
+          "ITC118F2",
+          "ITC118F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Il certificato copre sicuramente martedì.",
+            "feedback": "Scade venerdì."
+          },
+          {
+            "id": "b",
+            "text": "Il certificato è valido ora e il rinnovo non è ancora rilasciato.",
+            "feedback": "Una domanda di rinnovo non equivale al documento."
+          },
+          {
+            "id": "c",
+            "text": "Il fornitore non ha mai avuto certificazione.",
+            "feedback": "Quella attuale esiste."
+          }
+        ]
+      },
+      {
+        "id": "certificato-scaduto-consegna-scope",
+        "axis": "Scope",
+        "prompt": "Perché la validità odierna non basta?",
+        "evidenceIds": [
+          "ITC118F1",
+          "ITC118F2",
+          "ITC118F3"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché la consegna è oggi.",
+            "feedback": "È prevista martedì."
+          },
+          {
+            "id": "b",
+            "text": "Il contratto richiede un certificato valido alla consegna di martedì.",
+            "feedback": "Le due date non coincidono."
+          },
+          {
+            "id": "c",
+            "text": "Perché il documento è falso.",
+            "feedback": "Non c’è tale evidenza."
+          }
+        ]
+      },
+      {
+        "id": "certificato-scaduto-consegna-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa cerca Beatrice?",
+        "evidenceIds": [
+          "ITC118F4",
+          "ITC118F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Escludere il fornitore senza valutarlo.",
+            "feedback": "Chiede come mantenere l’opzione."
+          },
+          {
+            "id": "b",
+            "text": "Accettare una promessa orale come certificato.",
+            "feedback": "Chiede il rischio del rinnovo mancante."
+          },
+          {
+            "id": "c",
+            "text": "Conservare una possibilità di consegna, dichiarando la condizione ancora aperta.",
+            "feedback": "Vuole una scelta praticabile, non una finzione."
+          }
+        ]
+      },
+      {
+        "id": "certificato-scaduto-consegna-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale proposta è sostenibile?",
+        "evidenceIds": [
+          "ITC118F1",
+          "ITC118F4",
+          "ITC118F5"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "Conferma condizionata al nuovo certificato prima della spedizione e piano alternativo.",
+            "feedback": "La decisione resta verificabile prima della consegna."
+          },
+          {
+            "id": "b",
+            "text": "Conferma incondizionata perché il rinnovo è stato chiesto.",
+            "feedback": "Il rilascio è incerto."
+          },
+          {
+            "id": "c",
+            "text": "Ignorare il contratto.",
+            "feedback": "Il requisito è esplicito."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Beatrice con una condizione documentale e un piano se il rinnovo tarda.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Riferire la data contrattuale",
+        "Distinguere richiesta e rilascio",
+        "Proporre condizione scritta",
+        "Mantenere alternativa"
+      ]
+    },
+    "model": {
+      "subject": "R: Possiamo confermare l’ordine?",
+      "body": "Ciao Beatrice,\n\nil certificato inviato è valido oggi, ma scade venerdì. La consegna è prevista martedì e il contratto richiede che il documento sia valido proprio alla data della consegna. Il fornitore ha chiesto il rinnovo, ma non risulta ancora rilasciato: non possiamo trattare la richiesta come se fosse il nuovo certificato.\n\nPer non perdere subito la possibilità di consegna, proporrei una conferma scritta condizionata: il fornitore deve inviare il certificato rinnovato prima della spedizione, e noi ne verificheremo validità e ambito. Chiederei oggi una data realistica di rilascio e fisserei una verifica interna venerdì. Se il documento non arriva, non autorizzeremo la spedizione come conforme e valuteremo il secondo fornitore, pur sapendo che i suoi tempi sono più lunghi.\n\nNel messaggio al progetto distinguiamo quindi «ordine condizionato» da «fornitura pienamente approvata». Ti mando la clausola proposta e il confronto dei tempi entro oggi, così la direzione può decidere conoscendo sia la possibilità sia l’incertezza.\n\nA presto, Franco",
+      "annotations": [
+        {
+          "label": "Applica data",
+          "excerpt": "alla data della consegna",
+          "evidenceIds": [
+            "ITC118F1"
+          ]
+        },
+        {
+          "label": "Limita rinnovo",
+          "excerpt": "non risulta ancora rilasciato",
+          "evidenceIds": [
+            "ITC118F4"
+          ]
+        },
+        {
+          "label": "Impone condizione",
+          "excerpt": "prima della spedizione",
+          "evidenceIds": [
+            "ITC118F5"
+          ]
+        },
+        {
+          "label": "Mantiene piano",
+          "excerpt": "valuteremo il secondo fornitore",
+          "evidenceIds": [
+            "ITC118F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sensore-frigo-e-merce",
+    "title": "Un allarme non decide da solo la qualità della merce",
+    "area": "Operations × Logistica",
+    "areaLabel": "Operazioni · Logistica",
+    "role": "Marta · Qualità logistica",
+    "teaser": "Un sensore segnala temperatura alta durante il trasporto di prodotti freschi.",
+    "misunderstanding": "L’allarme riguarda l’aria del vano; la temperatura dei prodotti e la durata effettiva sono ancora da verificare.",
+    "email": {
+      "from": "Enrico · Responsabile consegne",
+      "to": "Marta · Qualità logistica",
+      "sent": "Mercoledì, ore 07:55",
+      "subject": "Dobbiamo buttare tutta la merce?",
+      "body": "Ciao Marta,\n\nun cliente aspetta i prodotti freschi per il servizio di oggi. Il sensore del furgone ha registrato un picco sopra soglia e l’autista dice che la porta era aperta durante lo scarico precedente. Il magazzino vuole decidere subito se consegnare o scartare. Quale decisione è giustificata dai dati e che cosa possiamo dire al cliente ora?\n\nGrazie, Enrico"
+    },
+    "document": {
+      "title": "Controllo del trasporto",
+      "intro": "L’allarme del vano non misura direttamente ogni prodotto.",
+      "facts": [
+        {
+          "id": "ITC119F1",
+          "time": "Sensore",
+          "text": "L’aria del vano è salita sopra soglia per nove minuti."
+        },
+        {
+          "id": "ITC119F2",
+          "time": "Autista",
+          "text": "La porta è rimasta aperta durante uno scarico; l’orario coincide con il picco."
+        },
+        {
+          "id": "ITC119F3",
+          "time": "Merce",
+          "text": "La temperatura interna dei colli interessati non è ancora stata misurata."
+        },
+        {
+          "id": "ITC119F4",
+          "time": "Procedura",
+          "text": "Il lotto va trattenuto finché qualità non confronta registrazione, durata e misure dei colli."
+        },
+        {
+          "id": "ITC119F5",
+          "time": "Cliente",
+          "text": "La consegna promessa è per oggi; il cliente può essere avvisato di una verifica e di un orario aggiornato."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "sensore-frigo-e-merce-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa misura il picco?",
+        "evidenceIds": [
+          "ITC119F1",
+          "ITC119F3"
+        ],
+        "correctOptionId": "a",
+        "options": [
+          {
+            "id": "a",
+            "text": "La temperatura dell’aria del vano, non quella dei prodotti.",
+            "feedback": "Le misure dei colli mancano."
+          },
+          {
+            "id": "b",
+            "text": "Il deterioramento certo di ogni collo.",
+            "feedback": "Non è stato accertato."
+          },
+          {
+            "id": "c",
+            "text": "L’assenza di qualsiasi anomalia.",
+            "feedback": "Un allarme c’è stato."
+          }
+        ]
+      },
+      {
+        "id": "sensore-frigo-e-merce-scope",
+        "axis": "Scope",
+        "prompt": "Perché non si può scegliere subito fra consegna e scarto?",
+        "evidenceIds": [
+          "ITC119F1",
+          "ITC119F3",
+          "ITC119F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché non esiste una procedura.",
+            "feedback": "La procedura prevede il trattenimento."
+          },
+          {
+            "id": "b",
+            "text": "Servono durata contestualizzata e misure dei colli.",
+            "feedback": "L’allarme da solo non conclude la valutazione."
+          },
+          {
+            "id": "c",
+            "text": "Perché il cliente non aspetta la merce.",
+            "feedback": "La aspetta oggi."
+          }
+        ]
+      },
+      {
+        "id": "sensore-frigo-e-merce-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa va comunicato al cliente ora?",
+        "evidenceIds": [
+          "ITC119F4",
+          "ITC119F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che ogni prodotto è sicuramente sicuro.",
+            "feedback": "Le misure mancano."
+          },
+          {
+            "id": "b",
+            "text": "Che l’intera consegna è definitivamente annullata.",
+            "feedback": "La valutazione è ancora aperta."
+          },
+          {
+            "id": "c",
+            "text": "Che il lotto è in verifica e seguirà un orario aggiornato.",
+            "feedback": "Trasparenza senza giudizio prematuro."
+          }
+        ]
+      },
+      {
+        "id": "sensore-frigo-e-merce-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale azione rispetta i dati?",
+        "evidenceIds": [
+          "ITC119F1",
+          "ITC119F2",
+          "ITC119F3",
+          "ITC119F4"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Consegnare perché l’autista ha una spiegazione.",
+            "feedback": "La temperatura della merce è ignota."
+          },
+          {
+            "id": "b",
+            "text": "Trattenere il lotto, misurare i colli e decidere dopo il controllo qualità.",
+            "feedback": "L’ipotesi della porta aperta aiuta a indagare, non a chiudere il caso."
+          },
+          {
+            "id": "c",
+            "text": "Scartare ogni collo senza verifica.",
+            "feedback": "Non c’è ancora una valutazione completa."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Enrico con una decisione temporanea, la verifica e un testo per il cliente.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Trattenere il lotto",
+        "Distinguere aria e merce",
+        "Non anticipare l’esito",
+        "Aggiornare il cliente"
+      ]
+    },
+    "model": {
+      "subject": "R: Dobbiamo buttare tutta la merce?",
+      "body": "Ciao Enrico,\n\nper il momento trattieni il lotto e non autorizzare né la consegna né lo scarto. Il sensore ha registrato nove minuti sopra soglia nell’aria del vano; questo è un dato da prendere sul serio, ma non misura direttamente la temperatura dei prodotti. L’apertura della porta durante lo scarico coincide con il picco e può spiegarlo, senza però dimostrare che i colli siano rimasti nelle condizioni richieste.\n\nLa squadra qualità confronterà il tracciato e la durata con le misure dei colli interessati, come prevede la procedura. Solo dopo potremo decidere se il lotto è utilizzabile o richiede un’altra gestione. Ti comunico il risultato appena il controllo è documentato.\n\nAl cliente direi subito: «Stiamo verificando una segnalazione del trasporto prima di completare la consegna dei prodotti freschi. Le confermeremo appena possibile l’esito e un orario aggiornato». Eviterei di parlare ora di merce deteriorata o certamente idonea. Nel frattempo verifica con il magazzino se esiste un’alternativa disponibile per il servizio di oggi, senza presentarla come già confermata.\n\nA presto, Marta",
+      "annotations": [
+        {
+          "label": "Decide attesa",
+          "excerpt": "trattieni il lotto",
+          "evidenceIds": [
+            "ITC119F4"
+          ]
+        },
+        {
+          "label": "Distingue misura",
+          "excerpt": "non misura direttamente la temperatura dei prodotti",
+          "evidenceIds": [
+            "ITC119F1",
+            "ITC119F3"
+          ]
+        },
+        {
+          "label": "Tratta ipotesi",
+          "excerpt": "può spiegarlo, senza però dimostrare",
+          "evidenceIds": [
+            "ITC119F2"
+          ]
+        },
+        {
+          "label": "Aggiorna cliente",
+          "excerpt": "un orario aggiornato",
+          "evidenceIds": [
+            "ITC119F5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "firma-ritiro-non-accettazione",
+    "title": "La firma sul ritiro non chiude il reclamo",
+    "area": "Operations × Riparazioni",
+    "areaLabel": "Operazioni · Riparazioni",
+    "role": "Claudia · Gestione interventi",
+    "teaser": "Un cliente firma il ritiro di un macchinario riparato e poi segnala lo stesso difetto.",
+    "misunderstanding": "La firma conferma la consegna; il collaudo concordato avviene dopo l’installazione e non è ancora completato.",
+    "email": {
+      "from": "Simone · Assistenza",
+      "to": "Claudia · Gestione interventi",
+      "sent": "Giovedì, ore 09:30",
+      "subject": "La firma significa che ha accettato la riparazione?",
+      "body": "Ciao Claudia,\n\nil cliente ha firmato ieri il modulo di ritiro del macchinario, ma dopo averlo installato dice che il guasto si ripresenta. Il tecnico sostiene che con quella firma il caso è chiuso. Vorrei rispondere senza scartare il reclamo e capire che cosa doveva essere verificato dopo la consegna. Puoi controllare i documenti?\n\nGrazie, Simone"
+    },
+    "document": {
+      "title": "Documenti dell’intervento",
+      "intro": "Ricezione, installazione e collaudo sono passaggi distinti.",
+      "facts": [
+        {
+          "id": "ITC120F1",
+          "time": "Modulo",
+          "text": "La firma del cliente attesta il ritiro del macchinario e l’integrità dell’imballo."
+        },
+        {
+          "id": "ITC120F2",
+          "time": "Ordine",
+          "text": "Il collaudo funzionale è previsto dopo l’installazione presso il cliente."
+        },
+        {
+          "id": "ITC120F3",
+          "time": "Ieri",
+          "text": "Il tecnico ha verificato l’accensione in laboratorio, non il funzionamento nelle condizioni d’uso del cliente."
+        },
+        {
+          "id": "ITC120F4",
+          "time": "Oggi",
+          "text": "Il cliente ha segnalato la ricomparsa dello stesso difetto dopo l’installazione."
+        },
+        {
+          "id": "ITC120F5",
+          "time": "Stato",
+          "text": "Non esiste un verbale di collaudo presso il cliente; una nuova verifica può essere programmata."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "id": "firma-ritiro-non-accettazione-evidence",
+        "axis": "Evidence",
+        "prompt": "Che cosa attesta la firma?",
+        "evidenceIds": [
+          "ITC120F1"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Accettazione definitiva della riparazione.",
+            "feedback": "Il collaudo è successivo."
+          },
+          {
+            "id": "b",
+            "text": "Ritiro e integrità dell’imballo.",
+            "feedback": "Il modulo non certifica il collaudo funzionale."
+          },
+          {
+            "id": "c",
+            "text": "Che il macchinario non sia mai stato consegnato.",
+            "feedback": "Il ritiro è attestato."
+          }
+        ]
+      },
+      {
+        "id": "firma-ritiro-non-accettazione-scope",
+        "axis": "Scope",
+        "prompt": "Perché la prova in laboratorio non chiude il caso?",
+        "evidenceIds": [
+          "ITC120F2",
+          "ITC120F3",
+          "ITC120F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Perché nessuno ha acceso il macchinario.",
+            "feedback": "L’accensione è stata verificata."
+          },
+          {
+            "id": "b",
+            "text": "Perché il cliente ha rifiutato il ritiro.",
+            "feedback": "Ha firmato il ritiro."
+          },
+          {
+            "id": "c",
+            "text": "Non sostituisce il collaudo nelle condizioni d’uso concordate.",
+            "feedback": "Manca la verifica presso il cliente."
+          }
+        ]
+      },
+      {
+        "id": "firma-ritiro-non-accettazione-intent",
+        "axis": "Intent",
+        "prompt": "Che cosa deve mostrare Simone al cliente?",
+        "evidenceIds": [
+          "ITC120F4",
+          "ITC120F5"
+        ],
+        "correctOptionId": "c",
+        "options": [
+          {
+            "id": "a",
+            "text": "Che il cliente ha perso ogni diritto di parlare.",
+            "feedback": "Il modulo non dice questo."
+          },
+          {
+            "id": "b",
+            "text": "Che il tecnico è già stato sanzionato.",
+            "feedback": "Non c’è una decisione del genere."
+          },
+          {
+            "id": "c",
+            "text": "Che la segnalazione viene presa sul serio e verificata nel contesto d’uso.",
+            "feedback": "La firma non rende irrilevante il difetto."
+          }
+        ]
+      },
+      {
+        "id": "firma-ritiro-non-accettazione-purpose",
+        "axis": "Purpose",
+        "prompt": "Quale risposta è corretta?",
+        "evidenceIds": [
+          "ITC120F1",
+          "ITC120F2",
+          "ITC120F4",
+          "ITC120F5"
+        ],
+        "correctOptionId": "b",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chiudere il reclamo citando la firma.",
+            "feedback": "La firma riguarda solo il ritiro."
+          },
+          {
+            "id": "b",
+            "text": "Aprire una verifica in sede e distinguere la firma dal collaudo.",
+            "feedback": "La documentazione sostiene questo passo."
+          },
+          {
+            "id": "c",
+            "text": "Promettere un rimborso immediato.",
+            "feedback": "Prima va verificato il difetto."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "prompt": "Rispondi a Simone con un testo per il cliente e un prossimo passo tecnico.",
+      "wordGuide": "Circa 130–210 parole",
+      "criteria": [
+        "Definire il valore della firma",
+        "Riconoscere il guasto segnalato",
+        "Programmare il collaudo in sede",
+        "Non anticipare l’esito"
+      ]
+    },
+    "model": {
+      "subject": "R: La firma significa che ha accettato la riparazione?",
+      "body": "Ciao Simone,\n\nla firma di ieri conferma che il cliente ha ritirato il macchinario con l’imballo integro. Non equivale all’accettazione definitiva della riparazione: l’ordine prevede un collaudo funzionale dopo l’installazione presso il cliente e non esiste ancora un verbale di quel controllo. In laboratorio è stata verificata l’accensione, ma non il comportamento nelle condizioni d’uso segnalate oggi.\n\nRisponderei al cliente ringraziandolo per averci avvisato e confermando che apriamo una nuova verifica sullo stesso difetto. Chiediamogli quando il tecnico può eseguire il collaudo in sede e quali circostanze hanno accompagnato la ricomparsa del problema. Questo ci aiuterà a riprodurlo senza attribuirgli una causa prima dell’esame.\n\nEvitiamo di citare la firma come motivo per chiudere il reclamo; sarebbe una lettura sbagliata del modulo. Allo stesso tempo non promettiamo ancora una sostituzione o un rimborso: dipenderà dal risultato della verifica e dalle condizioni dell’ordine. Coordino oggi il tecnico e ti mando una proposta di appuntamento da condividere con il cliente.\n\nA presto, Claudia",
+      "annotations": [
+        {
+          "label": "Interpreta firma",
+          "excerpt": "conferma che il cliente ha ritirato il macchinario",
+          "evidenceIds": [
+            "ITC120F1"
+          ]
+        },
+        {
+          "label": "Ricorda collaudo",
+          "excerpt": "dopo l’installazione presso il cliente",
+          "evidenceIds": [
+            "ITC120F2"
+          ]
+        },
+        {
+          "label": "Prende reclamo",
+          "excerpt": "apriamo una nuova verifica sullo stesso difetto",
+          "evidenceIds": [
+            "ITC120F4"
+          ]
+        },
+        {
+          "label": "Evita esito anticipato",
+          "excerpt": "non promettiamo ancora una sostituzione o un rimborso",
+          "evidenceIds": [
+            "ITC120F5"
+          ]
+        }
+      ]
+    }
+  }
+]
