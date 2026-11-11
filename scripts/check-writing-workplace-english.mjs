@@ -13,7 +13,7 @@ for (const level of levels) {
     continue
   }
   const cases = JSON.parse(fs.readFileSync(path, 'utf8'))
-  const issues = validateWritingWorkplaceCases(cases, 20)
+  const issues = validateWritingWorkplaceCases(cases, 20, { subjectPrefix: 'Re:' })
   for (const item of cases) {
     const previous = titles.get(item.title)
     if (previous) issues.push(`${item.id}: title repeats a ${previous} case.`)

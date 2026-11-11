@@ -3,6 +3,10 @@ import { validateWritingWorkplaceCases } from './lib/writing-workplace-harness.m
 
 const slug = process.argv[2]
 const validSlugs = ['frances', 'aleman', 'italiano', 'portugues', 'ruso', 'japones', 'coreano']
+const subjectPrefixes = {
+  frances: 'Ré :', aleman: 'AW:', italiano: 'R:', portugues: 'Re:', ruso: 'Ответ:',
+  japones: '返信:', coreano: '답장:',
+}
 if (!validSlugs.includes(slug)) {
   console.error(`Choose a language: ${validSlugs.join(', ')}.`)
   process.exit(1)
@@ -21,6 +25,7 @@ for (const level of ['b2', 'c1', 'c2']) {
   const issues = validateWritingWorkplaceCases(cases, 20, {
     requireAreaLabel: true,
     lengthUnit: slug === 'japones' || slug === 'coreano' ? 'characters' : 'words',
+    subjectPrefix: subjectPrefixes[slug],
   })
   for (const item of cases) {
     if (titles.has(item.title)) issues.push(`${item.id}: title repeats within ${slug}.`)

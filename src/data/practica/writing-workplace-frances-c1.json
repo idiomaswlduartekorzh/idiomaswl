@@ -169,7 +169,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Peut-on annoncer que 82 % nous recommandent ?",
+      "subject": "Ré : Peut-on annoncer que 82 % nous recommandent ?",
       "body": "Bonjour Marc,\n\nLe calcul est juste : 123 des 150 personnes qui ont répondu ont choisi une réponse positive, soit 82 %. En revanche, l’enquête a été adressée uniquement à des abonnés présents depuis plus d’un an. Elle ne permet pas d’affirmer que 82 % de l’ensemble de nos utilisateurs nous recommandent, puisque les nouveaux clients et ceux qui ont quitté le service n’y figurent pas. Nous n’avons pas non plus établi que les répondants représentent toute la clientèle.\n\nPour que l’agence avance aujourd’hui, je proposerais : « 82 % des répondants à notre enquête auprès de clients abonnés depuis plus d’un an déclarent nous recommander ». C’est moins bref, mais la portée est défendable. Nous pouvons chercher avec elle une version plus fluide qui conserve cette précision, puis la relire avant publication.\n\nJe t’enverrai la note méthodologique et la formulation retenue cet après-midi. La validation du chiffre ne doit pas être comprise comme une validation de n’importe quel titre.\n\nClaire",
       "annotations": [
         {
@@ -374,7 +374,7 @@
       ]
     },
     "model": {
-      "subject": "Re : L’article annonce une sortie en juin",
+      "subject": "Ré : L’article annonce une sortie en juin",
       "body": "Bonjour Éloi,\n\nL’article va au-delà de ce que nous avons confirmé. La démonstration concernait un prototype accessible à un groupe restreint ; la mention de juin figurait sur une diapositive d’objectif interne, expressément soumise aux résultats des tests. Aucune ouverture générale ni date publique n’a été approuvée. Je reconnais toutefois que cette diapositive, montrée pendant la visite, a pu être comprise autrement.\n\nJe vais répondre au journaliste avant son échéance en lui proposant une précision factuelle : « L’entreprise expérimente une nouvelle recherche auprès d’un groupe limité et envisage d’élargir l’accès si les essais sont concluants ; aucune date de lancement général n’est annoncée. » Je lui signalerai que juin était un objectif de travail, pas un engagement. Il restera libre de sa rédaction, mais disposera d’une correction claire.\n\nJe te mettrai en copie du message et vérifierai ensuite la version publiée. Nous éviterons ainsi de laisser s’installer une promesse que le produit n’a pas faite.\n\nNadia",
       "annotations": [
         {
@@ -579,7 +579,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le don est-il réellement arrivé ?",
+      "subject": "Ré : Le don est-il réellement arrivé ?",
       "body": "Bonjour Sami,\n\nTu as raison de nous alerter : la formule « 40 000 € reversés » est inexacte. Ce montant est le plafond prévu par notre convention, pas une somme déjà versée. L’engagement est de 2 € par vente éligible, jusqu’à ce plafond ; le total provisoire doit encore être ajusté après la clôture et le contrôle des retours. Aucun virement n’a été effectué à ce stade. Je suis désolée que notre publication ait placé l’association dans une situation embarrassante.\n\nNous avons mis le message en pause. Je te propose de relire ensemble un correctif qui explique l’engagement et son caractère conditionnel, sans annoncer un montant final ni te faire confirmer une somme que vous n’avez pas reçue. Nous pourrons ensuite convenir du moment où communiquer le chiffre vérifié et le versement.\n\nJe t’enverrai un projet de texte aujourd’hui avec les étapes de calcul et de paiement prévues. Rien ne sera publié au nom de ce partenariat avant que nous ayons vérifié les faits avec vous.\n\nInès",
       "annotations": [
         {
@@ -783,7 +783,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Que signifie vraiment « actif en 24 heures » ?",
+      "subject": "Ré : Que signifie vraiment « actif en 24 heures » ?",
       "body": "Bonjour Nora,\n\nLe délai validé par l’équipe d’ouverture est de 24 heures après réception d’un dossier complet et vérifié. Notre publicité a supprimé cette condition, et j’ai approuvé le visuel réduit sans demander une nouvelle validation opérationnelle. C’est une erreur de ma part ; les deux prospects ont donc pu comprendre que le délai commençait dès leur premier contact.\n\nÀ ce stade, aucun des deux dossiers n’a terminé la vérification. Nous ne pouvons pas leur confirmer une activation lundi ni proposer une dérogation qui n’existe pas. Pour ton appel, je te suggère d’expliquer clairement les pièces et vérifications encore nécessaires, puis de donner un point d’étape propre à chaque dossier plutôt qu’une date de mise en service. Si la vérification se termine, l’équipe pourra alors appliquer le délai de 24 heures prévu.\n\nJe fais retirer la formule actuelle du visuel et soumets aujourd’hui une version qui précise la condition. Je reste disponible pour relire ton message aux prospects avant midi.\n\nPaul",
       "annotations": [
         {
@@ -990,7 +990,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Qui a supprimé le dossier Albar ?",
+      "subject": "Ré : Qui a supprimé le dossier Albar ?",
       "body": "Bonjour Lucie,\n\nLa fiche Albar n’a pas disparu du registre principal : nous y retrouvons la fiche et son historique. La ligne « deleted by system » correspond au retrait automatique de l’ancienne copie d’affichage pendant la migration. Elle ne désigne pas un employé, et nous n’avons aucun élément permettant d’attribuer cette opération à une personne.\n\nLe problème confirmé se situe dans la nouvelle vue : son index n’a pas été reconstruit pour ce compte, ce qui empêche la fiche d’y apparaître. Une reconstruction est en test, mais elle n’a pas encore été appliquée au client ; je ne peux donc pas annoncer une heure de rétablissement. Pour la réunion, tu peux expliquer que les données source sont conservées et que leur affichage est en cours de correction, sans parler de suppression définitive ni de faute individuelle.\n\nJe vérifierai le résultat du test et te donnerai un point d’étape avant 14 h, même si l’application au compte reste à programmer. Nous suivrons ensuite la visibilité de la fiche avec le client.\n\nYanis",
       "annotations": [
         {
@@ -1195,7 +1195,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Avons-nous cinq cents clients en attente ?",
+      "subject": "Ré : Avons-nous cinq cents clients en attente ?",
       "body": "Bonjour Bastien,\n\nNon, le compteur brut ne signifie pas que cinq cents clients attendent. Nous avons identifié 480 entrées « SIM- » créées par un test de charge lancé par erreur sur la file de production. Le test est arrêté et ces entrées n’ont pas déclenché de message automatique. Il reste cependant 46 demandes sans ce marqueur : nous devons vérifier leur origine et leur traitement avant de conclure que les clients n’ont subi aucun retard.\n\nJe prépare une extraction séparée des deux groupes et je demanderai à l’équipe de contrôler en priorité les demandes non marquées, avec leur heure d’arrivée et leur état. Pour ton point de 11 h, tu peux dire que la hausse est largement due à un test mal configuré, tout en précisant que nous vérifions l’effet éventuel sur les vrais dossiers.\n\nJe t’enverrai le décompte vérifié dès qu’il sera prêt. Nous corrigerons ensuite la configuration de test pour empêcher qu’elle écrive de nouveau dans la file réelle.\n\nSalomé",
       "annotations": [
         {
@@ -1401,7 +1401,7 @@
       ]
     },
     "model": {
-      "subject": "Re : La note de Camille a-t-elle été écrasée ?",
+      "subject": "Ré : La note de Camille a-t-elle été écrasée ?",
       "body": "Bonjour Julie,\n\nLe texte de Camille n’est pas perdu : sa version C, enregistrée hors ligne, figure dans l’historique avec son contenu. La version T de Thomas y figure également. Lors de la synchronisation, l’écran principal a affiché la dernière version en ligne, ce qui a donné l’impression que la contribution de Camille avait été effacée. Ce comportement explique l’affichage, mais il ne permet pas d’accuser Thomas d’avoir supprimé son travail.\n\nJe vais vous transmettre les deux versions avant 17 h, avec leurs dates, pour que Camille et Thomas puissent repérer ce qui doit être conservé dans un texte commun. Je déconseille de restaurer l’une en écrasant l’autre avant cette comparaison. Aucune fusion automatique n’a encore été faite, et c’est justement cette décision éditoriale qui manque.\n\nJe serai disponible pendant la réunion pour expliquer l’historique et enregistrer la version commune une fois validée par les deux auteurs. Nous regarderons ensuite comment mieux signaler un conflit de synchronisation dans l’interface.\n\nMalik",
       "annotations": [
         {
@@ -1606,7 +1606,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Peut-on vraiment dire que ce défaut est mineur ?",
+      "subject": "Ré : Peut-on vraiment dire que ce défaut est mineur ?",
       "body": "Bonjour Rémi,\n\nTu as raison de contester la priorité actuelle. Le ticket « cosmétique » provenait d’un test à la souris où seul le contour du focus semblait décalé. Depuis, la vidéo de la cliente et notre reproduction sur la version en ligne montrent que le focus reste bloqué dans la fenêtre de consentement au clavier. Pour son parcours, c’est un obstacle fonctionnel, même si le formulaire fonctionne à la souris. Je requalifie donc le ticket et joins ces éléments à l’enquête.\n\nTu peux lui répondre que nous avons reproduit le blocage, que nous sommes désolés de lui avoir présenté l’inscription comme normalement accessible, et que nous proposons l’accompagnement prévu par notre canal accessible approuvé. Il faut vérifier avec elle que cette solution lui convient, plutôt que la renvoyer vers la souris.\n\nLe correctif est encore à l’étude ; je ne peux pas donner de date de mise en ligne. Je te communiquerai le prochain résultat de test vérifié pour que tu puisses la tenir informée.\n\nAnaïs",
       "annotations": [
         {
@@ -1814,7 +1814,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Faut-il refuser la note de frais de Salomé ?",
+      "subject": "Ré : Faut-il refuser la note de frais de Salomé ?",
       "body": "Bonjour Nicolas,\n\nLe simple fait que Salomé ait voyagé en octobre ne suffit pas à appliquer la nouvelle politique à son billet. Elle l’a réservé le 18 septembre pour un trajet de quatre heures, alors que l’ancienne règle autorisait encore cette catégorie. La clause transitoire prévoit justement l’examen des réservations confirmées avant le 1er octobre selon la règle en vigueur à l’achat, sous réserve du justificatif ; les pièces semblent présentes au dossier.\n\nJe vais demander à la comptabilité de reprendre la note en tenant compte de cette clause. Je préfère ne pas annoncer un remboursement définitif avant qu’elle ait validé le calcul et les justificatifs, mais je ne laisserais pas le refus actuel sans réexamen. Tu peux dire à Salomé que son argument est fondé sur la clause de transition et que nous lui communiquerons une décision motivée après vérification.\n\nJe suivrai le dossier avec la comptabilité aujourd’hui et te confirmerai le résultat, ainsi que la manière de corriger la réponse qui lui a déjà été faite si nécessaire.\n\nMélanie",
       "annotations": [
         {
@@ -2018,7 +2018,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Pourquoi l’ancien prénom apparaît-il encore ?",
+      "subject": "Ré : Pourquoi l’ancien prénom apparaît-il encore ?",
       "body": "Bonjour Sébastien,\n\nLa demande de Noa a bien été appliquée dans la fiche RH mardi, mais le statut « traitée » ne signifiait pas que tous les outils étaient à jour. L’annuaire et les badges ont repris une ancienne version lors de leur import mercredi. L’équipe informatique a identifié le nouvel import manuel nécessaire ; je vais le faire programmer et vérifier le résultat dans les deux outils avant de te donner une date confirmée.\n\nEn attendant, l’indication à l’équipe peut rester très simple : le prénom à utiliser est Noa, même si certains affichages techniques sont encore en retard. Il n’y a aucune raison de demander à Noa de réexpliquer sa demande ni d’en discuter les motifs avec les collègues. Si quelqu’un se réfère au badge, tu peux préciser que sa mise à jour est en cours et que l’usage demandé par Noa fait foi dans les échanges.\n\nJe contacterai Noa directement pour lui dire ce qui a été corrigé, ce qui reste ouvert et quand nous aurons vérifié l’affichage final.\n\nAurore",
       "annotations": [
         {
@@ -2225,7 +2225,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Qui a vu la candidature de Farid ?",
+      "subject": "Ré : Qui a vu la candidature de Farid ?",
       "body": "Bonjour Lina,\n\nLe journal confirme qu’une notification automatique a été adressée hier au manager actuel de Farid, ainsi qu’à nous deux. Elle indiquait son nom et le poste visé, mais ne contenait pas de pièce jointe. Nous ne savons pas si le manager a ouvert ce message ; le fait qu’il ait interrogé Farid montre toutefois que sa démarche ne lui est plus inconnue. La notification a enfreint notre règle de confidentialité avant le premier entretien, et nous devons le reconnaître sans détour.\n\nJe te propose d’expliquer à Farid exactement ce qui a été envoyé et à qui, de lui présenter nos excuses, puis de lui demander comment il souhaite que nous organisions les échanges à partir de maintenant. Nous avons suspendu cette notification pour les candidatures en cours ; aucune diffusion supplémentaire ne doit partir sans vérifier son accord.\n\nJe peux participer à cet échange avec toi et préparer un suivi écrit. Il importe de ne lui promettre ni que le message n’a pas été lu ni que son manager n’a conservé aucune information.\n\nÉmilie",
       "annotations": [
         {
@@ -2431,7 +2431,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le roulement est-il vraiment validé ?",
+      "subject": "Ré : Le roulement est-il vraiment validé ?",
       "body": "Bonjour David,\n\nTu as raison de revenir sur la formule employée lundi. Le document avait été partagé pour recueillir des commentaires, pas pour obtenir un accord formel. L’absence de réponse dans ce fichier ne permet donc pas de dire que toute l’équipe avait accepté le roulement ; deux contraintes ont d’ailleurs été signalées au chef de projet avant l’envoi final. Il vaut mieux le reconnaître maintenant que défendre une validation qui n’a pas eu lieu.\n\nJe te conseille d’indiquer à l’équipe que le projet reste ouvert jusqu’à demain. Échange avec les deux collègues sur les samedis problématiques, puis examine avec le chef de projet des permutations ou d’autres répartitions compatibles avec la couverture nécessaire. Nous ne pouvons pas promettre une exemption avant d’avoir testé ces options, mais nous pouvons promettre que les contraintes seront réellement examinées.\n\nAprès cet échange, envoie un planning final accompagné des choix retenus et de leur raison. Je peux t’aider à reformuler le message initial pour que la correction soit claire sans transformer les objections en reproche.\n\nSonia",
       "annotations": [
         {
@@ -2637,7 +2637,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Quel courrier est parti chez l’ancienne adresse ?",
+      "subject": "Ré : Quel courrier est parti chez l’ancienne adresse ?",
       "body": "Bonjour Romain,\n\nLa nouvelle adresse figure bien dans le dossier central depuis jeudi à 10 h. Malheureusement, la liste utilisée pour l’envoi de mardi avait été exportée deux heures auparavant : elle contenait encore l’ancienne adresse. Un rappel administratif sous enveloppe fermée a été confié au service postal lundi. Nous n’avons pas de retour enregistré, mais ce suivi ne permet pas de savoir si l’enveloppe a été remise à quelqu’un ni, a fortiori, ouverte.\n\nTu peux dire à la patiente que nous avons identifié un décalage entre la mise à jour de son dossier et la liste d’envoi, et lui présenter nos excuses. Il serait inexact de lui garantir que personne n’a reçu le courrier, comme d’affirmer qu’un tiers l’a lu. Je lance la vérification postale prévue et confirme avec elle l’adresse à utiliser avant tout nouvel envoi.\n\nJe te transmettrai le résultat de la vérification et la suite donnée selon notre procédure. Si la patiente souhaite parler directement au service concerné, nous organiserons ce contact sans lui faire répéter inutilement son signalement.\n\nÉlodie",
       "annotations": [
         {
@@ -2842,7 +2842,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Qu’avons-nous réellement transmis ?",
+      "subject": "Ré : Qu’avons-nous réellement transmis ?",
       "body": "Bonjour Sophie,\n\nAprès vérification, nous avons envoyé à la patiente l’index des pièces disponibles, pas les copies qu’elle avait demandées. J’avais généré cet index pour préparer l’extraction, puis la tâche a été clôturée à tort au moment de son envoi. Aucune copie n’est enregistrée comme préparée ou transmise. La réponse de l’accueil, fondée sur le seul statut « traitée », était donc inexacte.\n\nJe vais rouvrir la demande initiale aujourd’hui et préparer les documents désignés par la patiente par le canal sécurisé prévu. Son identité a déjà été vérifiée dans ce dossier ; nous n’avons pas à lui demander de recommencer la procédure pour réparer notre erreur. Tu peux lui présenter nos excuses, lui dire précisément qu’elle n’a reçu qu’un inventaire et lui donner un prochain point d’étape sur les copies, sans prétendre qu’elles sont déjà prêtes.\n\nJe vérifierai la liste des pièces avant l’envoi et te confirmerai ensuite la transmission effective, afin que le statut de l’outil corresponde enfin au service rendu.\n\nBenoît",
       "annotations": [
         {
@@ -3049,7 +3049,7 @@
       ]
     },
     "model": {
-      "subject": "Re : A-t-on remis cette personne en fin de liste ?",
+      "subject": "Ré : A-t-on remis cette personne en fin de liste ?",
       "body": "Bonjour Luc,\n\nLa demande initiale de janvier n’a pas été effacée : elle figure toujours dans l’historique transmis lors du transfert. L’espace en ligne affiche toutefois la date d’entrée sur la liste du site Nord, en avril. Ces deux dates répondent à des questions différentes, et l’affichage actuel ne suffit pas à déterminer la place de la personne dans cette liste.\n\nLa règle prévoit que le site Nord examine le dossier avec la date initiale, mais elle ne garantit pas à elle seule un rang ou une date de rendez-vous. Comme le site n’a pas encore confirmé son traitement, je ne dirais ni que trois mois ont été perdus ni que rien n’a changé. Je vais lui demander explicitement comment la date de janvier a été prise en compte et quelle information nous pouvons communiquer sur l’état de la demande.\n\nTu peux déjà expliquer à la personne pourquoi avril apparaît à l’écran et reconnaître que cette présentation prête à confusion. Je te transmettrai la réponse vérifiée du site Nord pour que tu puisses lui faire un retour précis.\n\nSamira",
       "annotations": [
         {
@@ -3254,7 +3254,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Pourquoi l’avons-nous appelée au travail ?",
+      "subject": "Ré : Pourquoi l’avons-nous appelée au travail ?",
       "body": "Bonjour Ahmed,\n\nLa patiente avait bien demandé mardi que son numéro professionnel ne soit plus utilisé, et son mobile personnel figure depuis dans le dossier central. La liste des rappels de jeudi avait malheureusement été exportée avant cette modification. C’est à partir de ce fichier qu’un agent a tenté l’appel ce matin. La trace indique qu’il n’a obtenu aucune réponse et n’a laissé aucun message ; nous ne pouvons pas en déduire davantage sur ce qui a été vu au travail.\n\nJe retire immédiatement l’entrée obsolète de cette campagne et fais régénérer la liste à partir des préférences actuelles. Je vérifierai aussi qu’aucune autre tentative n’est programmée vers l’ancien numéro. Une fois ce contrôle fait, tu pourras présenter nos excuses à la patiente, expliquer l’origine de l’erreur et lui confirmer le canal désormais utilisé.\n\nJe t’enverrai le résultat de la vérification avant que tu la rappelles. Une fiche centrale corrigée ne suffisait pas tant que le fichier d’appels restait inchangé ; nous devons corriger les deux.\n\nFlorence",
       "annotations": [
         {
@@ -3460,7 +3460,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Peut-on envoyer le lot avec ce certificat ?",
+      "subject": "Ré : Peut-on envoyer le lot avec ce certificat ?",
       "body": "Bonjour Héloïse,\n\nLe certificat que nous avons au dossier a expiré la semaine dernière. Le fournisseur dit avoir demandé un renouvellement, mais il ne nous a transmis ni nouvelle pièce ni attestation permettant de vérifier cette démarche. Cela ne prouve pas que le lot soit non conforme ; cela signifie que nous ne disposons pas aujourd’hui du document valide exigé par le contrat avant expédition. Le fait que le lot soit prêt à l’entrepôt ne règle pas ce point.\n\nJe relance le fournisseur immédiatement pour obtenir les pièces disponibles et je les soumets à l’équipe qualité. C’est elle qui doit confirmer si la condition documentaire est remplie et si le lot peut être libéré. Jusqu’à cette décision, je te déconseille de présenter l’ancien certificat comme valide ou de garantir un départ demain.\n\nJe te donnerai un état vérifié avant 15 h. Tu pourras alors informer le client de la vérification en cours et, si nécessaire, d’un risque de décalage, sans lui annoncer prématurément un défaut du produit.\n\nVictor",
       "annotations": [
         {
@@ -3667,7 +3667,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Devons-nous accepter le supplément ?",
+      "subject": "Ré : Devons-nous accepter le supplément ?",
       "body": "Bonjour Maëlle,\n\nLe contrat couvre deux heures de remise en état ordinaire après l’événement, et le journal du prestataire situe précisément deux heures de ce type entre 23 h et 1 h. Ces heures ne devraient pas être ajoutées au forfait. Il y a aussi, séparément, deux heures d’intervention dans le hall après ta demande urgente ; le journal et les photos montrent qu’un travail distinct a bien été effectué. Je ne proposerais donc pas de rejeter toute la demande sans examen.\n\nLa facture actuelle ajoute quatre heures sans distinguer ces deux prestations. Aucun ordre écrit ni tarif convenu pour l’intervention exceptionnelle n’apparaît dans notre dossier. Je vais demander au prestataire une facture ventilée, la description des travaux et la base du prix proposé pour les deux heures d’urgence. Nous pourrons ensuite décider ce qui est dû, sans accepter d’avance un montant qui n’a pas été justifié.\n\nJe te soumettrai le rapprochement avec le contrat et le journal avant de répondre définitivement au prestataire.\n\nKarim",
       "annotations": [
         {
@@ -3872,7 +3872,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Peut-on dire que le client a renvoyé le mauvais appareil ?",
+      "subject": "Ré : Peut-on dire que le client a renvoyé le mauvais appareil ?",
       "body": "Bonjour Étienne,\n\nNous avons bien reçu un colis scanné sous l’étiquette créée pour la commande A-184. Toutefois, la photo de l’appareil à l’intérieur montre le numéro B-271. C’est une discordance à expliquer, pas une preuve que le client a envoyé volontairement un autre appareil. Deux colis ont été traités au même poste ce matin et nous n’avons pas encore revu les images de tri ni les photos d’ouverture.\n\nJe fais vérifier cette chaîne de réception en priorité. En parallèle, tu peux demander au client, de façon neutre, une photo du numéro de série de l’appareil qu’il a préparé pour le retour : elle nous aidera à rapprocher les pièces sans lui attribuer l’écart. L’échange automatique reste suspendu jusqu’à ce que nous ayons identifié l’appareil reçu ; je préfère le dire clairement plutôt que promettre un départ aujourd’hui.\n\nJe te transmettrai le résultat de la vérification interne et la prochaine décision dès que les images auront été examinées.\n\nLola",
       "annotations": [
         {
@@ -4077,7 +4077,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Que peut-on offrir à notre partenaire ?",
+      "subject": "Ré : Que peut-on offrir à notre partenaire ?",
       "body": "Bonjour Mathis,\n\nLa proposition commerciale montrait un stand près de l’entrée, mais précisait que cet emplacement était indicatif et dépendait du plan final. Le site a ensuite modifié la circulation afin de maintenir un passage accessible, ce qui a déplacé trois stands. Ce changement était donc possible dans le cadre annoncé. En revanche, nous avons envoyé le plan final sans expliquer personnellement son effet au partenaire ; je comprends qu’il ait découvert le déplacement comme une mauvaise surprise.\n\nLe nouvel emplacement se trouve près de l’espace de démonstration, mais nous n’avons pas mesuré sa fréquentation. Je ne prétendrais pas qu’il offre une visibilité identique. Je vais vérifier aujourd’hui si une signalétique supplémentaire et un créneau de démonstration sont disponibles. Tu pourras présenter ces pistes comme des options à discuter, pas comme une compensation déjà décidée.\n\nPour l’appel, je te suggère de reconnaître le manque de préavis, d’expliquer la contrainte du plan et de demander au partenaire ce qui lui importe le plus en matière de visibilité. Je t’enverrai les possibilités confirmées avant votre échange.\n\nÉva",
       "annotations": [
         {

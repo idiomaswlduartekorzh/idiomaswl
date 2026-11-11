@@ -161,7 +161,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le QR code de la brochure",
+      "subject": "Ré : Le QR code de la brochure",
       "body": "Bonjour Hugo,\n\nTu as validé vendredi les textes et les visuels de la brochure, mais la destination du QR code n’apparaissait pas dans le bon à tirer. J’ai repris le lien de la campagne précédente lorsque j’ai créé le code et je n’ai pas testé son ouverture sur téléphone. C’est une vérification qui m’incombait, et je suis désolée de la confusion causée au prospect.\n\nLe lien mène encore vers l’ancienne offre. Je vais voir immédiatement si sa destination peut être corrigée sans réimprimer le code. En attendant, je demande à l’accueil d’arrêter de distribuer les exemplaires restants. Le registre indique que vingt brochures ont déjà été remises, mais nous ignorons combien de personnes ont scanné le code. Je te proposerai un court message de clarification pour ces visiteurs si nous pouvons les identifier, puis je t’enverrai le résultat du test du lien avant toute reprise de la distribution.\n\nLéa",
       "annotations": [
         {
@@ -357,7 +357,7 @@
       ]
     },
     "model": {
-      "subject": "Re : La newsletter est-elle partie ?",
+      "subject": "Ré : La newsletter est-elle partie ?",
       "body": "Bonjour Claire,\n\nLa version que tu as reçue ce matin était un test envoyé à cinq adresses internes. L’ancien objet y figurait encore, mais la campagne destinée aux abonnés est toujours en brouillon : aucun envoi général n’a été effectué. Il n’y a donc pas de correction à adresser aux clients à ce stade.\n\nJe comprends ton inquiétude, car la mention « test interne » se trouvait seulement en bas du message. J’aurais dû la rendre visible dès l’objet du courriel. Je vais modifier ce point pour les prochains essais afin que leur statut soit clair dès l’ouverture. Pour la campagne actuelle, je prépare maintenant la version avec le nouvel objet et te l’enverrai pour validation. Je ne programmerai pas l’envoi public avant ton accord et je te confirmerai ensuite l’horaire retenu. Si tu préfères revoir également le texte avant cette étape, je peux te transmettre l’aperçu complet.\n\nNicolas",
       "annotations": [
         {
@@ -551,7 +551,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Photo de Sophie dans la publicité",
+      "subject": "Ré : Photo de Sophie dans la publicité",
       "body": "Bonjour Farah,\n\nL’accord de Sophie couvre son portrait sur la page du programme, avec sa biographie. Il ne mentionne pas la publicité payante. J’ai interprété cet accord trop largement lorsque le plan média a repris la photo, et j’aurais dû demander une validation distincte avant d’activer la campagne. Je comprends sa réaction et je suis désolée de t’avoir laissée gérer cet appel sans réponse précise.\n\nJe demande immédiatement la suspension de la publicité et je vérifierai avec l’équipe média qu’elle n’est plus diffusée. Je te transmettrai alors son statut exact ainsi que les chiffres de diffusion disponibles ; nous ne les connaissons pas encore. Pour le moment, tu peux dire à Sophie que son accord initial concernait uniquement la page du programme, que nous avons pris sa demande au sérieux et que nous vérifions la suspension. Je reviendrai vers toi dès que l’équipe média aura confirmé l’action, afin que nous puissions lui répondre sans supposition.\n\nCamille",
       "annotations": [
         {
@@ -747,7 +747,7 @@
       ]
     },
     "model": {
-      "subject": "Re : La newsletter a-t-elle fait fuir 430 abonnés ?",
+      "subject": "Ré : La newsletter a-t-elle fait fuir 430 abonnés ?",
       "body": "Bonjour Bastien,\n\nLe chiffre 430 ne correspond pas à des désinscriptions. Il compte les ouvertures de la page « Préférences », où une personne peut consulter ou modifier ses choix sans quitter la liste. Le rapport de confirmation indique 17 désinscriptions après l’envoi à 8 000 abonnés. La colonne actuelle prête à confusion, et j’aurais dû préciser sa définition dans le tableau transmis ce matin.\n\nJe vais renommer cette colonne « visites de la page de préférences » et placer le nombre de désinscriptions confirmées juste à côté. Nous pouvons examiner les 17 cas et comparer ce résultat aux campagnes précédentes avant de modifier la prochaine newsletter. Le rapport ne donne pas la raison de ces départs ; il serait donc prématuré de les attribuer tous au contenu du message. Je t’enverrai un tableau corrigé aujourd’hui. Une fois les chiffres relus ensemble, nous pourrons décider ce qu’il convient de communiquer à l’équipe commerciale.\n\nFanny",
       "annotations": [
         {
@@ -941,7 +941,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le nouveau formulaire n’apparaît pas",
+      "subject": "Ré : Le nouveau formulaire n’apparaît pas",
       "body": "Bonjour Maëlle,\n\nJ’ai consulté l’historique du formulaire. Tes modifications ont bien été enregistrées hier dans la version 7, mais cette version est encore un brouillon. Le message « Modifications enregistrées » confirme la sauvegarde, pas la publication. La version 6 reste donc celle que voit l’équipe terrain, et le journal ne montre aucune mise en ligne de la version 7. À ce stade, rien n’indique un bug de publication.\n\nJe comprends que ce soit gênant à la veille de l’atelier : la différence entre enregistrer et publier n’est pas assez visible dans le message. Je te propose de revoir ensemble l’aperçu de la version 7 aujourd’hui, puis de vérifier si le contenu a reçu la validation requise. Une fois ce point confirmé, nous pourrons la publier et tester le formulaire comme le fera un participant. Je te confirmerai ensuite par écrit quelle version sera disponible demain.\n\nThomas",
       "annotations": [
         {
@@ -1138,7 +1138,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Où est le fichier exporté ?",
+      "subject": "Ré : Où est le fichier exporté ?",
       "body": "Bonjour Julie,\n\nLe message « demande acceptée » confirme que le système a reçu l’export EX-73 et l’a placé dans la file de traitement. Il ne confirme pas encore la création du fichier. À 14 h 20, la tâche était toujours en attente ; le journal ne montre ni erreur ni notification indiquant qu’un téléchargement est prêt. Je comprends que cette formule ait pu te faire penser que l’export était terminé. Elle devrait distinguer plus clairement les deux étapes.\n\nJe vais vérifier la file maintenant et suivre EX-73 jusqu’à son prochain changement de statut. Si la tâche reste bloquée, je transmettrai le dossier à l’équipe qui gère le traitement. Tu peux dire à la cliente que sa demande a bien été reçue, mais que le fichier n’est pas encore disponible. Je te préviendrai dès que nous aurons un état confirmé ; je préfère ne pas promettre une heure de livraison que le système ne garantit pas.\n\nYanis",
       "annotations": [
         {
@@ -1335,7 +1335,7 @@
       ]
     },
     "model": {
-      "subject": "Re : L’alerte de 9 h est arrivée à 10 h",
+      "subject": "Ré : L’alerte de 9 h est arrivée à 10 h",
       "body": "Bonjour Paul,\n\nJ’ai vérifié le journal : l’alerte est partie à 9 h UTC, l’heure enregistrée dans sa configuration. Ce mardi, cela correspondait à 10 h à Paris, ce qui explique la réception à l’heure que ton équipe a constatée. Aucun retard d’envoi n’apparaît dans le journal. En revanche, le tableau de bord affiche simplement « 9 h » sans préciser le fuseau ; je comprends que vous ayez interprété cette heure comme une heure locale. Ce libellé est insuffisant et je vais demander qu’il soit corrigé.\n\nSi le point quotidien doit commencer à 9 h à Paris, nous pouvons revoir la configuration de l’alerte. Peux-tu me confirmer l’heure locale que vous souhaitez, y compris lors des changements saisonniers ? Je préparerai ensuite le réglage et te soumettrai un aperçu avant toute modification. Pour l’instant, il est plus exact de parler d’un décalage d’affichage que d’un incident de livraison.\n\nInès",
       "annotations": [
         {
@@ -1532,7 +1532,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le bouton Analyse a disparu",
+      "subject": "Ré : Le bouton Analyse a disparu",
       "body": "Bonjour Salomé,\n\nLe bouton Analyse était activé pour l’essai pilote d’une journée organisé avec Solstice. La fiche prévoyait une désactivation automatique à minuit, et le journal montre que celle-ci a eu lieu comme prévu. Nous n’avons pas d’incident technique enregistré sur cette fonction. Je comprends cependant que, pendant une démonstration, un bouton disponible puisse sembler prêt à être utilisé au quotidien. Nous aurions dû rappeler clairement la durée de l’essai dans notre message de suivi.\n\nPour la réunion de 11 heures, tu peux expliquer que l’accès de jeudi était temporaire et que l’équipe étudie la suite. Si Solstice souhaite poursuivre, demande-leur quel usage ils envisagent et pour combien de personnes. Je transmettrai ces éléments au responsable de l’activation afin qu’il examine une éventuelle prolongation. Je te confirmerai sa décision dès qu’elle sera prise, mais je ne voudrais pas annoncer un accès permanent avant sa validation.\n\nAdrien",
       "annotations": [
         {
@@ -1727,7 +1727,7 @@
       ]
     },
     "model": {
-      "subject": "Re : La candidate pense avoir le poste",
+      "subject": "Ré : La candidate pense avoir le poste",
       "body": "Bonjour Louis,\n\nLe comité a invité Inès, avec deux autres candidates, au dernier entretien. Il n’a pas encore pris de décision finale et aucune offre n’a été approuvée. Mon courriel disait que sa candidature était « retenue » ; même si je mentionnais l’entretien dans le corps du message, cette formule pouvait laisser croire que le poste lui était attribué. Je suis désolée de cette ambiguïté, surtout si elle commence à organiser sa disponibilité en conséquence.\n\nJe vais lui écrire aujourd’hui pour la féliciter de sa sélection à l’étape finale, puis préciser clairement qu’il reste un entretien et qu’aucune offre d’emploi n’a encore été faite. Je répondrai aussi à sa question sur la date d’arrivée en expliquant qu’elle ne peut pas être fixée à ce stade. Je te transmettrai le message avant l’envoi afin que nous soyons cohérents, puis je modifierai notre modèle pour éviter la même confusion avec d’autres candidats.\n\nNoémie",
       "annotations": [
         {
@@ -1924,7 +1924,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Qui travaille samedi ?",
+      "subject": "Ré : Qui travaille samedi ?",
       "body": "Bonjour Mélanie,\n\nJe vois bien ton accord avec Karim pour échanger samedi contre mardi. Cependant, la demande apparaît encore « en attente de validation » et le planning officiel te maintient sur le service de samedi. L’accord entre collègues est une première étape ; je dois aussi vérifier que la personne qui prend chaque service possède les compétences requises. Je comprends que mon absence de réponse soit particulièrement gênante puisque tu as déjà organisé ta garde d’enfant.\n\nJe vais vérifier ce soir l’habilitation nécessaire pour samedi et je te répondrai dès que le contrôle sera terminé. Si tout est conforme, je validerai l’échange et je vous enverrai à tous les deux le planning mis à jour. Si un obstacle apparaît, je te l’expliquerai immédiatement afin que nous cherchions une autre solution. Pour l’instant, je ne veux pas te dire que l’échange est confirmé alors que cette vérification manque encore.\n\nBenoît",
       "annotations": [
         {
@@ -2122,7 +2122,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Citation du bilan d’équipe",
+      "subject": "Ré : Citation du bilan d’équipe",
       "body": "Bonjour Romain,\n\nLes réponses du questionnaire ne comportaient ni nom ni adresse personnelle. J’ai toutefois repris mot pour mot une phrase sur « les réunions du jeudi avec trois personnes ». Dans une petite équipe, ce détail peut permettre de reconnaître l’auteur même si son nom n’apparaît pas. J’aurais dû vérifier ce risque avant la présentation de ce matin, et je comprends que la personne concernée se sente exposée.\n\nLe bilan n’a pas encore été envoyé aux autres équipes. Je vais remplacer cette citation par une reformulation qui conserve le problème soulevé sans reprendre la situation précise, puis relire les autres extraits sous le même angle. Nous ne savons pas combien de collègues ont fait le rapprochement ; je ne voudrais donc ni minimiser la crainte ni affirmer que tout le monde a identifié la personne. Je te transmettrai la version révisée avant tout nouvel envoi et je suis disponible pour répondre à son inquiétude avec toi.\n\nAïcha",
       "annotations": [
         {
@@ -2319,7 +2319,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Ma place pour la formation de vendredi",
+      "subject": "Ré : Ma place pour la formation de vendredi",
       "body": "Bonjour Chloé,\n\nLe message de lundi confirmait que nous avions reçu ta demande, mais il ne confirmait pas une place pour vendredi. Les douze places avaient déjà été attribuées à des demandes arrivées plus tôt, et tu es actuellement première sur la liste d’attente. Aucun désistement n’a été enregistré pour le moment. Je suis désolé que le message automatique n’ait pas précisé cette distinction ; je comprends que tu aies organisé ton service en pensant être inscrite.\n\nJe te conseille de prévenir ton équipe qu’aucune place n’est encore confirmée, afin qu’elle puisse préparer le planning de vendredi. Je surveillerai les éventuels désistements et te contacterai immédiatement si une place se libère. Je vais aussi vérifier aujourd’hui s’il existe une autre session et je t’enverrai son statut, sans t’annoncer une date avant de l’avoir confirmée. Enfin, je demanderai que notre accusé de réception indique plus clairement quand une demande reste en attente.\n\nÉmilien",
       "annotations": [
         {
@@ -2516,7 +2516,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Patiente attendue au bâtiment B",
+      "subject": "Ré : Patiente attendue au bâtiment B",
       "body": "Bonjour Karim,\n\nLe rendez-vous est bien maintenu à 9 heures, mais il a été déplacé vendredi du bâtiment A au bâtiment B. Le SMS reçu par la patiente indiquait encore le bâtiment A : je ne trouve aucun nouvel envoi ni appel l’informant du changement. Elle s’est donc présentée à l’adresse qui lui avait été communiquée, et je suis désolée que notre suivi ne l’ait pas corrigée à temps.\n\nJe contacte immédiatement l’accueil du bâtiment B pour expliquer où elle se trouve et éviter qu’on considère sa présence au bâtiment A comme une absence. Peux-tu lui indiquer le trajet vérifié vers le bâtiment B et, si nécessaire, demander une aide d’orientation sur place ? Je confirmerai directement au service qu’elle est en route. Je vais également signaler l’absence de notification afin que les futurs changements d’adresse déclenchent un message clair. Restons sur la coordination du rendez-vous ; le service prendra toute décision concernant la consultation.\n\nLucie",
       "annotations": [
         {
@@ -2713,7 +2713,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le dossier est-il confirmé ?",
+      "subject": "Ré : Le dossier est-il confirmé ?",
       "body": "Bonjour Marc,\n\nLe statut « dossier complet » signifie que toutes les pièces administratives demandées ont été reçues lundi. Il ne confirme pas encore le créneau de jeudi. La procédure prévoit une vérification séparée, suivie d’un message indiquant l’horaire définitif ; aucun message de ce type n’a été envoyé dans ce dossier. Je comprends que cette distinction soit frustrante pour une personne qui a déjà organisé son déplacement. Notre portail devrait la rendre plus visible.\n\nJe vais demander immédiatement à l’équipe admissions où en est la vérification du créneau et je te transmettrai sa réponse dès qu’elle sera confirmée. Tu peux expliquer pour l’instant que les pièces sont bien arrivées, mais qu’il faut attendre la confirmation distincte avant de considérer l’horaire comme fixé. Je ne lui conseillerais pas de se présenter jeudi à une heure supposée. Si le créneau change, nous devrons l’en informer clairement afin qu’elle puisse adapter son déplacement.\n\nNadia",
       "annotations": [
         {
@@ -2910,7 +2910,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Transport pour demain matin",
+      "subject": "Ré : Transport pour demain matin",
       "body": "Bonjour Sonia,\n\nJ’ai bien envoyé une demande de transport pour vendredi matin, et la centrale en a accusé réception. Elle n’a toutefois attribué ni véhicule ni heure de passage. La mention « transport demandé » sur notre fiche décrit donc une démarche en cours, pas un trajet réservé. J’aurais dû ajouter « en attente de confirmation » pour éviter que le service et le patient comprennent le contraire. Je suis désolé de cette confusion à la veille du déplacement.\n\nJe rappelle la centrale maintenant pour obtenir une réponse ferme. Si elle ne peut pas assurer le trajet, je chercherai avec le service les autres possibilités prévues dans notre organisation. Je te transmettrai uniquement un horaire confirmé ; à ce stade, je ne peux pas dire au patient qu’une voiture passera demain à une heure donnée. Peux-tu lui expliquer que nous vérifions la réservation et que nous reviendrons vers lui dès que le statut sera établi ? Je mettrai aussi la fiche à jour.\n\nOlivier",
       "annotations": [
         {
@@ -3106,7 +3106,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le rendez-vous est-il à distance ?",
+      "subject": "Ré : Le rendez-vous est-il à distance ?",
       "body": "Bonjour Lina,\n\nJ’ai vérifié la fiche : le rendez-vous de jeudi est toujours prévu sur place, au cabinet 3. Aucun changement vers une consultation vidéo n’a été enregistré, et la salle reste réservée. Le lien reçu par la patiente vient d’un rappel automatique qui a utilisé le mauvais modèle. Je comprends qu’elle hésite à se déplacer après deux messages contradictoires ; nous aurions dû repérer cette erreur avant l’envoi.\n\nJe vais lui adresser immédiatement une confirmation corrigée qui indique clairement le lieu et l’horaire figurant dans sa fiche, ainsi qu’une phrase précisant que le lien vidéo précédent ne s’applique pas à ce rendez-vous. Je demanderai également à l’accueil téléphonique de vérifier qu’elle a bien reçu cette correction, car ce point n’est pas encore confirmé. Tu peux lui expliquer dès maintenant le format administratif prévu, sans interpréter le contenu de la consultation. Je te préviendrai lorsque le nouveau message aura été envoyé et reçu.\n\nCécile",
       "annotations": [
         {
@@ -3302,7 +3302,7 @@
       ]
     },
     "model": {
-      "subject": "Re : La commande 741 est-elle partie ?",
+      "subject": "Ré : La commande 741 est-elle partie ?",
       "body": "Bonjour Eva,\n\nLa commande 741 a bien été emballée et étiquetée mardi, ce qui explique le statut « préparée ». Ce statut ne signifie toutefois pas qu’elle a été remise au transporteur. Le quai de cette zone était fermé mercredi et la collecte n’a pas eu lieu. À 11 heures ce matin, le colis se trouvait encore dans l’entrepôt ; il n’existe donc pas de scan de prise en charge ni de numéro de suivi transporteur.\n\nJe suis désolé que notre statut ne rende pas cette différence évidente, surtout après la réponse que tu as donnée à la cliente. Nous avons demandé une collecte de remplacement pour vendredi, mais le transporteur ne l’a pas encore confirmée. Je vais relancer cette demande et te transmettre son accord dès réception. En attendant, tu peux expliquer à la cliente que son colis est prêt mais toujours chez nous, et que nous confirmerons la date d’expédition dès qu’elle sera vérifiée.\n\nMathis",
       "annotations": [
         {
@@ -3499,7 +3499,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Le chauffage est-il réparé ?",
+      "subject": "Ré : Le chauffage est-il réparé ?",
       "body": "Bonjour Damien,\n\nLe ticket M-31 apparaît « clos » parce que le technicien a terminé le diagnostic jeudi. Cette clôture ne signifie pas que le chauffage fonctionne de nouveau. Une pièce doit être remplacée dans le cadre du ticket M-44, et elle n’a pas encore été livrée. Aucun test final n’a donc été réalisé ; la salle 2 reste froide ce matin. Je comprends que le statut unique « clos » ait donné à ton équipe l’impression que la salle était prête pour la formation.\n\nJe vais vérifier tout de suite les autres salles disponibles, leur capacité et le matériel nécessaire pour votre groupe. Je te communiquerai une solution uniquement après avoir confirmé ces points, idéalement avant l’arrivée des participants. En parallèle, je demanderai au prestataire une mise à jour sur la livraison de la pièce, sans annoncer de date de réparation avant sa réponse. Je vais aussi faire apparaître M-44 dans le suivi partagé afin que le travail restant soit visible.\n\nPauline",
       "annotations": [
         {
@@ -3695,7 +3695,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Remboursement du dossier 52",
+      "subject": "Ré : Remboursement du dossier 52",
       "body": "Bonjour Jérôme,\n\nLe statut « remboursement approuvé » signifie que le responsable a accepté le principe et le montant vendredi. Il ne signifie pas que l’argent a été envoyé. J’ai vérifié ce matin : le service paiements n’a pas encore reçu l’ordre de versement et aucun numéro de transaction n’existe pour le dossier 52. Je comprends pourquoi le tableau a pu laisser penser que le remboursement était déjà en route, et je suis désolée que cette formulation t’ait conduit à donner cette information au client.\n\nJe vais transmettre l’ordre au service paiements maintenant, puis vérifier qu’il a été pris en charge. Je te communiquerai le statut confirmé et, s’il existe ensuite, la référence de transaction. Pour le client, il faut corriger notre message : le remboursement est autorisé, mais le versement n’a pas encore été lancé. Nous ne pouvons pas annoncer de date de réception sur son compte avant d’avoir une information vérifiée du service paiements. Je proposerai aussi un libellé plus précis dans le tableau.\n\nSabrina",
       "annotations": [
         {
@@ -3892,7 +3892,7 @@
       ]
     },
     "model": {
-      "subject": "Re : Pourquoi le devis compte 66 repas ?",
+      "subject": "Ré : Pourquoi le devis compte 66 repas ?",
       "body": "Bonjour Anaïs,\n\nTu as raison : le brief prévoit 60 participants au total, dont six végétariens. Il faut donc 54 repas standards et six repas végétariens, pas 66 repas. J’ai envoyé au traiteur la formule abrégée « 60 repas + 6 végé », qui pouvait raisonnablement se lire comme six repas supplémentaires. C’est mon message qui a créé l’écart, et je suis désolé de ne pas avoir repris la répartition du brief.\n\nLe devis n’a pas encore été validé et le traiteur n’a pas lancé la préparation, ce qui nous permet de corriger la quantité maintenant. Je vais lui écrire en indiquant explicitement le total de 60 et les deux catégories, puis demander un nouveau devis. Je vérifierai les chiffres avec toi avant de confirmer la commande. Pour éviter la même erreur dans la fiche de l’événement, je remplacerai également le signe « + » par « dont six repas végétariens ». Je t’enverrai la version corrigée dès réception.\n\nÉric",
       "annotations": [
         {

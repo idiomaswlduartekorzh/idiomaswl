@@ -93,6 +93,9 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3, options 
     if (!present(item?.task?.prompt) || !present(item?.task?.wordGuide)) issues.push(`${id}: incomplete reply task.`)
     if (item?.task?.criteria?.length !== 4 || item.task.criteria.some(value => !present(value))) issues.push(`${id}: reply task needs four concrete criteria.`)
     if (!present(item?.model?.subject) || !present(item?.model?.body)) issues.push(`${id}: incomplete model reply.`)
+    if (options.subjectPrefix && !item?.model?.subject?.startsWith(options.subjectPrefix)) {
+      issues.push(`${id}: model subject must use the target-language reply prefix ${options.subjectPrefix}.`)
+    }
     if (countLength(item?.model?.body) < modelRange[0] || countLength(item?.model?.body) > modelRange[1]) issues.push(`${id}: model reply should contain ${modelRange[0]}–${modelRange[1]} ${unit}.`)
     const guide = item?.task?.wordGuide?.match(/(\d+)[–-](\d+)/u)
     if (guide && (countLength(item?.model?.body) < Number(guide[1]) || countLength(item?.model?.body) > Number(guide[2]))) {

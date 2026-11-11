@@ -162,7 +162,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Post sulla tappa di Firenze",
+      "subject": "R: Post sulla tappa di Firenze",
       "body": "Ciao Marta,\n\nHai ragione a fermarti: la foto ritrae la platea dell’incontro di Bologna di sabato, come indica la cartella fotografica. La didascalia della bozza ha unito per errore quell’immagine al nome della prossima tappa.\n\nPer questo non presenterei la foto come se fosse stata scattata a Firenze. L’incontro fiorentino è previsto per venerdì prossimo; possiamo annunciarlo in un post distinto, usando una grafica senza pubblico già presente.\n\nCapisco la tua preoccupazione per le domande dei partecipanti e per la scadenza di oggi. Hai fatto bene a chiedere conferma prima della programmazione, quando la correzione è ancora semplice per tutti.\n\nTi propongo di cambiare ora la didascalia in un ringraziamento a Bologna e di verificare insieme l’anteprima. Poi preparo una riga separata con data e luogo di Firenze, così puoi programmare entrambi i messaggi con sicurezza.\n\nUn saluto,\nElena",
       "annotations": [
         {
@@ -363,7 +363,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Dato sul nuovo packaging",
+      "subject": "R: Dato sul nuovo packaging",
       "body": "Ciao Sara,\n\nLa tua domanda è giusta: il questionario ha raccolto 48 risposte, ma soltanto 20 provengono da acquirenti identificati. Le altre 28 sono di visitatori del sito, perché il link era aperto a entrambi i gruppi.\n\nI 34 voti per la confezione piccola rappresentano circa il 71% di tutti i rispondenti. Nel file che abbiamo oggi non è indicata la quota dei soli acquirenti, quindi la frase della slide attribuisce il risultato a un gruppo più ristretto del campione reale.\n\nCapisco perché vuoi un dato chiaro prima della riunione: quella frase potrebbe pesare sulla scelta del packaging. Grazie per aver controllato il denominatore; correggerlo ora aiuta il gruppo a discutere lo stesso risultato con un significato preciso.\n\nAggiorno subito la slide in “34 rispondenti su 48 preferiscono la confezione piccola” e aggiungo una nota sulla composizione del campione. Dopo la riunione posso analizzare separatamente i 20 acquirenti e mandarti la tabella, senza presentare oggi una percentuale che non abbiamo.\n\nUn saluto,\nPaolo",
       "annotations": [
         {
@@ -564,7 +564,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Campagna di lunedì",
+      "subject": "R: Campagna di lunedì",
       "body": "Ciao Luca,\n\nLo spazio per lunedì è stato effettivamente riservato, quindi quella parte del tuo aggiornamento al cliente è corretta. La prenotazione, però, non equivale ancora alla conferma che il banner sarà pubblicato.\n\nIl testo è approvato, mentre il file grafico con il logo modificato non ci è ancora arrivato. Il portale aspetta il banner definitivo entro venerdì alle 12; prima del caricamento non può produrre un’anteprima finale o confermare la pubblicazione.\n\nCapisco il disagio di dover aggiornare il cliente dopo la conversazione di ieri. Possiamo spiegare la situazione come un passaggio operativo ancora aperto, senza suggerire che la prenotazione sia saltata o che ci sia già un problema tecnico.\n\nTi mando subito la scheda che conferma lo spazio riservato. Se puoi sollecitare al cliente il file corretto entro domani mattina, lo carico appena arriva e ti inoltro l’anteprima e l’eventuale conferma del portale; fino ad allora userei “spazio riservato, materiale finale in attesa”.\n\nUn saluto,\nGiada",
       "annotations": [
         {
@@ -766,7 +766,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Posizione del logo di Aurora",
+      "subject": "R: Posizione del logo di Aurora",
       "body": "Ciao Franco,\n\nHo confrontato i due file: il mockup di marzo mostrava Aurora vicino al titolo, ma riportava “posizioni indicative”. La posizione concordata è quella dell’accordo firmato ad aprile, che indica il piè di pagina.\n\nLa pagina online segue questa indicazione. L’accordo prevede inoltre una menzione nella newsletter, che non è ancora stata inviata; possiamo quindi comunicare allo sponsor sia ciò che è già visibile sia ciò che resta da pubblicare.\n\nCapisco perché tu e Aurora abbiate ricordato l’immagine iniziale: in un mockup il logo in alto colpisce molto. Nella risposta eviterei di presentare la differenza come uno spostamento deciso dopo la firma, perché i documenti non lo mostrano.\n\nControllo oggi dimensioni e leggibilità del logo sul telefono e ti mando uno screenshot aggiornato. Ti confermo anche la data prevista per la newsletter, così puoi rispondere ad Aurora con due elementi concreti e, se necessario, raccogliere un’osservazione sulla resa grafica.\n\nUn saluto,\nNadia",
       "annotations": [
         {
@@ -965,7 +965,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Nuovo pulsante nelle impostazioni",
+      "subject": "R: Nuovo pulsante nelle impostazioni",
       "body": "Ciao Irene,\n\nIl pulsante dello screenshot è reale, ma si trova nell’ambiente di prova del team, indicato dall’etichetta TEST. Non è ancora presente negli account dei clienti, perciò l’assenza nel profilo che hai controllato è prevista.\n\nPer il rilascio pubblico abbiamo in calendario l’ultimo controllo di accessibilità di mercoledì. Solo dopo quel passaggio potremo confermare quando la funzione sarà attiva per i clienti; oggi non abbiamo una data definitiva da promettere.\n\nCapisco che sia scomodo richiamare una persona dopo averle dato un’indicazione diversa. Puoi dirle che l’informazione proveniva da una prova interna e che il suo account funziona normalmente, senza farle perdere tempo con tentativi sul profilo.\n\nTi mando entro le 15 una breve frase per la chiamata e aggiungo un’etichetta più visibile ai prossimi screenshot interni. Dopo il controllo di mercoledì aggiornerò l’assistenza con la data confermata e con le istruzioni da inviare ai clienti.\n\nUn saluto,\nRiccardo",
       "annotations": [
         {
@@ -1164,7 +1164,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Ordine 784 nel file di domenica",
+      "subject": "R: Ordine 784 nel file di domenica",
       "body": "Ciao Marco,\n\nHo controllato l’ordine 784: è stato registrato una sola volta e l’orario indicato dal cliente coincide con quello del cruscotto. Il file non ha spostato né duplicato l’ordine; mostra lo stesso istante in UTC.\n\nNel CSV la registrazione è domenica alle 22:20 UTC, che corrisponde a lunedì alle 00:20 nell’ora italiana estiva. Il cruscotto effettua questa conversione automaticamente; il riepilogo che stai preparando, invece, raggruppa ancora la data scritta nel file.\n\nCapisco la tua preoccupazione per i numeri settimanali: un ordine vicino alla mezzanotte può finire nella settimana sbagliata se usiamo il giorno UTC. Grazie per aver fermato l’invio e aver indicato un caso preciso da controllare.\n\nConverto ora la colonna temporale in ora italiana e ricreo il riepilogo prima che tu lo mandi. Ti inoltro anche il confronto delle due righe, così potrai spiegare la differenza al cliente senza attribuirla a un ordine mancante.\n\nUn saluto,\nAlessia",
       "annotations": [
         {
@@ -1364,7 +1364,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Secondo guasto sul pagamento?",
+      "subject": "R: Secondo guasto sul pagamento?",
       "body": "Ciao Chiara,\n\nI ticket 251 e 258 arrivano da due account diversi, ma riportano lo stesso codice E42 sulla stessa versione del servizio. Il tecnico li ha collegati a un unico incidente, INC-19, quindi non abbiamo registrato un secondo guasto distinto.\n\nL’indagine sulla causa è ancora aperta e alle 16 non c’è una soluzione da comunicare. Nel registro è previsto un aggiornamento alle 17, che potrà contenere nuovi elementi ma non va presentato adesso come orario di ripristino.\n\nCapisco perché i due numeri di ticket facciano pensare a due problemi separati, soprattutto mentre devi decidere chi avvisare. Hai fatto bene a verificarlo prima di allargare l’allarme o di dare al secondo cliente una versione diversa.\n\nPuoi rispondere al ticket 258 che la sua segnalazione è inclusa in INC-19 e che riceverà il prossimo aggiornamento alle 17. Ti mando io il testo comune per entrambi i clienti e controllo il registro a quell’ora, così aggiorniamo le risposte insieme.\n\nUn saluto,\nDavide",
       "annotations": [
         {
@@ -1563,7 +1563,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Annuncio nuova schermata",
+      "subject": "R: Annuncio nuova schermata",
       "body": "Ciao Beatrice,\n\nLa frase nel canale si riferisce alla build candidata completata ieri e disponibile al team interno. È un progresso reale, ma non significa ancora che la nuova schermata sia pronta per l’annuncio ai clienti.\n\nIl video mostra la versione attuale della build: alcuni pulsanti sono ancora in inglese perché la revisione italiana è in corso. Dopo quella revisione dobbiamo fare anche la verifica finale prevista dalla checklist, prima di confermare una data di rilascio pubblico.\n\nCapisco che tu voglia preparare per tempo il messaggio commerciale e che “build pronta” suoni come un via libera. Mi assumo il compito di usare termini più precisi nei prossimi aggiornamenti, così il team non deve indovinare quale fase abbiamo concluso.\n\nOggi ti chiederei di non inviare ancora una data ai clienti. Appena termina la revisione ti mando uno stato interno con il passaggio successivo; dopo la verifica finale preparo con te l’annuncio e una data che possiamo sostenere.\n\nUn saluto,\nLorenzo",
       "annotations": [
         {
@@ -1762,7 +1762,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Turno di sabato",
+      "subject": "R: Turno di sabato",
       "body": "Ciao Simone,\n\nHo visto la vostra chat: tu e Giulia avete concordato lo scambio tra mattina e pomeriggio di sabato. Grazie per avermelo segnalato prima del turno; l’accordo tra voi è chiaro.\n\nNel calendario, però, risultano ancora tu al mattino e Giulia al pomeriggio. Perché lo scambio diventi effettivo devo prima verificare la copertura e registrarlo; fino a quel momento l’orario ufficiale non è cambiato.\n\nCapisco la preoccupazione di Giulia di risultare assente se si presenta nell’orario concordato in chat. È proprio per evitare due versioni del turno che confermiamo ogni modifica nel registro e la comunichiamo a entrambe le persone.\n\nControllo la copertura entro le 15 e poi aggiorno il calendario o vi spiego che cosa manca. Ti scriverò insieme a Giulia con un’unica conferma: per ora, se dovete organizzarvi, considerate valido il turno che compare nel calendario attuale.\n\nUn saluto,\nValeria",
       "annotations": [
         {
@@ -1959,7 +1959,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Ruolo nel colloquio di domani",
+      "subject": "R: Ruolo nel colloquio di domani",
       "body": "Ciao Rosa,\n\nTi ho invitata perché il tuo responsabile ha chiesto che tu osservi un colloquio e conosca il formato. La presenza nel calendario non ti assegna automaticamente un ruolo di valutazione.\n\nPer questa candidata i valutatori sono Pietro e io: soltanto noi compileremo la griglia e attribuiremo il punteggio. L’invito mostra tutti i partecipanti nello stesso modo, quindi capisco perché il tuo ruolo non fosse evidente.\n\nApprezzo che tu abbia chiesto prima di preparare domande o una valutazione senza avere seguito le prime fasi. Puoi partecipare ascoltando il colloquio; non ti chiederemo un giudizio sulla candidata né una griglia compilata dopo.\n\nSe ti fa piacere porre una breve domanda di chiarimento, scrivimela oggi e concordiamo insieme il momento adatto. Aggiorno inoltre la descrizione dell’invito con i ruoli, così domani tutti sapremo chi conduce, chi valuta e chi osserva.\n\nUn saluto,\nCamilla",
       "annotations": [
         {
@@ -2156,7 +2156,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Giorni da remoto nella prima settimana",
+      "subject": "R: Giorni da remoto nella prima settimana",
       "body": "Ciao Laura,\n\nLa frase nell’offerta prevede la possibilità di lavorare da remoto fino a due giorni a settimana, da concordare con il responsabile. Capisco che tu l’abbia letta pensando a due giorni disponibili già dalla prima settimana.\n\nNel piano di inserimento, però, martedì e giovedì sono previsti incontri in sede. Al momento non risultano giorni da remoto concordati per quella settimana, quindi il calendario che hai ricevuto resta la versione valida finché non cambiamo insieme gli appuntamenti.\n\nMi spiace che questa differenza emerga dopo che hai prenotato un impegno personale. È utile che tu me l’abbia scritto subito: possiamo verificare una soluzione per martedì senza far saltare le occasioni di incontro con il team.\n\nSe mi dici a che ora hai l’appuntamento, chiedo oggi al responsabile se possiamo spostare l’incontro di martedì o organizzarlo in modo diverso. Ti confermeremo poi per iscritto gli orari della prima settimana e concorderemo i futuri giorni da remoto con più anticipo.\n\nUn saluto,\nFederica",
       "annotations": [
         {
@@ -2354,7 +2354,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Commento sul carico di lavoro",
+      "subject": "R: Commento sul carico di lavoro",
       "body": "Ciao Claudia,\n\nCapisco il desiderio di parlare con la persona che ha scritto quel commento. Il modulo, però, non ha raccolto nomi o indirizzi email, e il riepilogo contiene soltanto il testo e il reparto: non possiamo identificare l’autore.\n\nNel tuo reparto il tema non emerge da una sola risposta: tre commenti parlano di priorità che cambiano spesso. Possiamo quindi trattarlo come un segnale del gruppo, senza attribuire una frase specifica a qualcuno che non sappiamo riconoscere.\n\nApprezzo che tu voglia approfondire invece di lasciare il commento senza seguito. Un colloquio individuale avrebbe senso se una persona scegliesse spontaneamente di raccontare il proprio caso, ma non sarebbe corretto presentare un nome come risultato del sondaggio.\n\nTi propongo di dedicare quindici minuti della prossima riunione a come vengono comunicate le priorità e di raccogliere esempi concreti. Preparo io due domande aperte; chi desidera parlare in privato potrà farlo, mentre il gruppo avrà comunque una risposta visibile al tema emerso.\n\nUn saluto,\nMichele",
       "annotations": [
         {
@@ -2552,7 +2552,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Visita del signor Riva",
+      "subject": "R: Visita del signor Riva",
       "body": "Ciao Andrea,\n\nHo controllato la scheda del signor Riva: l’impegnativa inviata venerdì è arrivata correttamente. Possiamo rassicurarlo su questo punto, perché non deve inviare di nuovo lo stesso documento.\n\nNella scheda non risulta però alcuna data né una fascia oraria confermata. La ricezione dell’impegnativa ci permette di procedere con la prenotazione, ma non riserva da sola una visita per domani mattina.\n\nCapisco perché il paziente abbia pensato che l’invio fosse sufficiente e perché tu gli abbia chiesto di attendere. È meglio dargli oggi una spiegazione chiara e una proposta concreta, così non farà un viaggio inutile domani.\n\nLo richiamo io entro mezzogiorno e gli offro i due slot disponibili per la settimana prossima. Dopo che avrà scelto, inserirò la data nel registro e gli invierò la conferma; ti aggiornerò, così allo sportello avrete la stessa informazione.\n\nUn saluto,\nSilvia",
       "annotations": [
         {
@@ -2752,7 +2752,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Referto della signora Conti",
+      "subject": "R: Referto della signora Conti",
       "body": "Ciao Nico,\n\nHo verificato il codice C-94 della signora Conti: il prelievo è stato registrato stamattina e il laboratorio ha segnato il campione come “in lavorazione” alle 12:30. Quindi il campione compare nel tracciamento.\n\nLa ricevuta conferma il prelievo, non la pubblicazione del referto. Sullo stesso foglio è indicata una disponibilità prevista per giovedì dopo le 16; il portale mostrerà il risultato soltanto dopo la validazione del laboratorio.\n\nCapisco che non vedere nulla nel portale possa far pensare a un problema, soprattutto se si legge la data di oggi sulla ricevuta. Possiamo rassicurare la paziente sullo stato del campione, senza anticipare un risultato o promettere un orario diverso da quello comunicato.\n\nPuoi richiamarla dicendo che il campione è in lavorazione e suggerendole di controllare il portale giovedì dopo le 16. Se allora il referto non compare, ci ricontatti con il codice C-94 e verificheremo subito l’avanzamento con il laboratorio.\n\nUn saluto,\nTeresa",
       "annotations": [
         {
@@ -2952,7 +2952,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Sedute della signora Ferri",
+      "subject": "R: Sedute della signora Ferri",
       "body": "Ciao Pietro,\n\nNel calendario della signora Ferri è confermata la prima seduta di lunedì alle 15. Il piano prevede sei incontri in totale, ma al momento non sono state assegnate le date degli altri cinque.\n\nLa procedura è di definire la frequenza con il terapista durante la prima seduta e poi concordare con la paziente gli appuntamenti restanti. Il promemoria che ha ricevuto riguarda quindi soltanto lunedì prossimo, non un orario ricorrente.\n\nCapisco che abbia bisogno di organizzare le ferie e che sei sedute scritte sul piano possano sembrare sei prenotazioni già fatte. Evitiamo di chiederle di bloccare cinque pomeriggi senza una conferma, perché quegli orari potrebbero non essere quelli finali.\n\nPuoi confermarle la seduta di lunedì e dirle che ho annotato la sua preferenza per i lunedì successivi. Dopo il primo incontro le proporremo le date disponibili e le invieremo un riepilogo unico, così potrà chiedere ferie solo per appuntamenti effettivamente concordati.\n\nUn saluto,\nArianna",
       "annotations": [
         {
@@ -3150,7 +3150,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Messaggio al figlio della signora Neri",
+      "subject": "R: Messaggio al figlio della signora Neri",
       "body": "Ciao Giorgio,\n\nLa scheda indica il numero del figlio per far arrivare alla signora Neri una richiesta di richiamare la segreteria. Possiamo usare quel contatto per un messaggio breve, senza spiegare il motivo della chiamata o i dettagli della visita.\n\nPer ora in agenda resta martedì alle 10. Stiamo cercando di proporre uno spostamento, ma non abbiamo ancora parlato con la signora Neri e quindi non possiamo registrare un nuovo orario come se fosse confermato.\n\nCapisco che tu voglia aiutarla a organizzare il trasporto e che il numero del figlio sembri la strada più rapida. La nota in scheda, però, delimita che cosa possiamo chiedergli: una richiamata, non una decisione al posto della paziente.\n\nSe vuoi, lascia questo messaggio: “La segreteria chiede alla signora Neri di richiamarci al numero indicato”. Nel frattempo riprovo il suo numero diretto oggi pomeriggio; quando parleremo con lei, aggiornerò l’agenda e ti confermerò l’orario valido.\n\nUn saluto,\nElisa",
       "annotations": [
         {
@@ -3350,7 +3350,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Lista d’attesa per la sala A",
+      "subject": "R: Lista d’attesa per la sala A",
       "body": "Ciao Bianca,\n\nLa scheda della sala A indica 60 sedie in totale, senza una quota separata per relatori o addetti. Con la disposizione prevista, le quattro persone sul palco e i due addetti occupano posti nella stessa capienza.\n\nAbbiamo 54 partecipanti confermati, quindi le altre sei sedie sono già necessarie al programma. Le sei persone in lista d’attesa non hanno per ora un posto libero in sala A; il numero 60 non può essere letto come limite per i soli iscritti.\n\nCapisco che vorresti dare loro una risposta oggi e che vedere sei posti rispetto ai 54 iscritti faccia pensare a un margine esatto. La domanda sulla presenza dello staff evita di promettere ingressi che poi non riusciremmo a sistemare.\n\nVerifico entro le 16 se possiamo usare un’altra sala o un assetto approvato con più posti, e ti mando un aggiornamento. Nel frattempo manterrei la lista d’attesa senza confermare nuovi ingressi; se troviamo una soluzione, potrai scrivere a tutti e sei con informazioni uguali.\n\nUn saluto,\nTommaso",
       "annotations": [
         {
@@ -3550,7 +3550,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Latticini per il servizio di oggi",
+      "subject": "R: Latticini per il servizio di oggi",
       "body": "Ciao Lina,\n\nLe quattro casse di latticini sono arrivate alle 7:20 e sono nell’area di attesa del magazzino refrigerato. Per questo il corriere ti ha detto correttamente che la consegna è qui.\n\nLo stato “in verifica” indica però che non abbiamo ancora misurato e registrato la temperatura delle casse. Secondo la procedura, il passaggio alla cucina avviene solo dopo quel controllo e la conferma di accettazione nel sistema.\n\nCapisco la necessità di organizzare il servizio delle 10 e apprezzo che tu abbia chiesto prima di spostare la merce. La distinzione tra arrivo e accettazione è poco evidente nel messaggio del corriere, quindi ti darò io un aggiornamento diretto.\n\nCompleto la misura entro le 8:30 e ti comunico subito l’esito. Se la consegna viene accettata, faccio portare le casse in cucina; se emerge un problema, ti avviso nello stesso momento per permetterti di scegliere un’alternativa per il servizio.\n\nUn saluto,\nDario",
       "annotations": [
         {
@@ -3748,7 +3748,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Pulizia straordinaria di stasera",
+      "subject": "R: Pulizia straordinaria di stasera",
       "body": "Ciao Monica,\n\nHo controllato l’ordine di stasera: gli addetti puliranno i piani delle scrivanie, le superfici comuni e svuoteranno i cestini. L’intervento è confermato dalle 19 alle 21, dopo che il team sarà uscito.\n\nMonitor, tastiere e altre apparecchiature elettroniche sono invece esclusi dall’ordine. La frase dell’avviso sui monitor puliti va quindi corretta, mentre la parte relativa alle scrivanie resta valida; non serve lasciare accesi i computer per questa attività.\n\nCapisco il dubbio nato dalla domanda della collega: “postazioni pulite” può far pensare anche agli schermi. È utile chiarirlo oggi, prima che qualcuno si aspetti domani un lavoro che il servizio non prevede.\n\nTi propongo di inviare una breve correzione al team entro le 17, indicando le superfici comprese. Se desiderate pulire anche monitor e tastiere, posso chiedere un preventivo e una data per un intervento separato, con istruzioni adatte alle apparecchiature.\n\nUn saluto,\nGianni",
       "annotations": [
         {
@@ -3946,7 +3946,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Pacco per Bellini già partito?",
+      "subject": "R: Pacco per Bellini già partito?",
       "body": "Ciao Enrico,\n\nIl pacco del signor Bellini è pronto, etichettato e ancora nella nostra area spedizioni. Stamattina abbiamo prenotato il ritiro, ma il corriere non lo ha ancora preso in carico.\n\nLa finestra prevista è oggi dalle 16 alle 18. Il codice di tracciamento diventerà attivo dopo la scansione al ritiro; la dicitura “ritiro previsto” sulla pagina del corriere descrive correttamente lo stato attuale.\n\nCapisco che tu abbia letto la prenotazione come un’indicazione di partenza e che ora debba chiarire al cliente la differenza. Possiamo farlo con un messaggio semplice, senza inventare un movimento che non compare ancora nel registro.\n\nTi suggerisco di dirgli che il pacco è pronto e che il ritiro è programmato per oggi pomeriggio. Alle 18 controllerò la scansione: se il corriere sarà passato, ti mando il codice attivo; altrimenti apro subito una segnalazione e ti comunico il nuovo stato verificato.\n\nUn saluto,\nSofia",
       "annotations": [
         {

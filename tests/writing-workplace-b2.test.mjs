@@ -93,3 +93,9 @@ test('a case cannot reuse feedback or annotation labels', () => {
   assert.ok(issues.some(issue => issue.includes('options need distinct feedback')))
   assert.ok(issues.some(issue => issue.includes('annotation labels must differ')))
 })
+
+test('model subject must use the locale reply prefix', () => {
+  const altered = copy()
+  altered[0].model.subject = 'Respuesta: a mixed-language subject'
+  assert.ok(validateWritingWorkplaceCases(altered, 20, { subjectPrefix: 'Re:' }).some(issue => issue.includes('target-language reply prefix')))
+})

@@ -160,7 +160,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Avviso sulla scadenza dei punti",
+      "subject": "R: Avviso sulla scadenza dei punti",
       "body": "Ciao Luca,\n\nla scadenza anticipata riguarda soltanto i 300 partecipanti che hanno aderito al programma pilota. Il cliente che ci ha scritto non è in quel gruppo: per il suo saldo valgono le condizioni ordinarie attuali. La bozza con la formula «tutti i punti» è stata caricata nella cartella del servizio clienti, ma il registro non mostra l’invio di una campagna generale. Dobbiamo comunque ritirarla dalla cartella, perché può generare risposte errate.\n\nProporrei al cliente: «Abbiamo verificato la sua posizione: la nuova scadenza citata nella bozza riguarda un programma pilota al quale lei non partecipa. Il suo saldo resta soggetto alle condizioni attualmente in vigore. Ci scusiamo per il messaggio ambiguo che ha visto. Se in futuro le condizioni del programma dovessero cambiare, riceverà una comunicazione specifica secondo la procedura prevista.»\n\nOggi sostituirò la bozza con una nota che identifica chiaramente il gruppo pilota e informerò il servizio clienti della distinzione. Controllerò anche se il testo sia stato usato in risposte individuali, senza presupporre che ciò sia avvenuto.\n\nGiulia",
       "annotations": [
         {
@@ -356,7 +356,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Citazione tradotta sul sito",
+      "subject": "R: Citazione tradotta sul sito",
       "body": "Ciao Marco,\n\nla versione sul sito attribuisce al cliente una certezza che non ha espresso. L’originale dice che il servizio «potrebbe aiutare in alcuni casi» e limita il giudizio alla sua esperienza. La frase italiana «risolve sempre» elimina entrambe le riserve. La revisione ha approvato leggibilità e tono, ma non ha verificato l’aderenza al testo di partenza; dobbiamo riconoscere questo limite del nostro controllo.\n\nToglierei subito la frase pubblicata. Al cliente scriverei: «Ha ragione a segnalarci che la nostra versione italiana modifica il senso della sua recensione. Abbiamo sospeso la citazione e ci scusiamo per averle attribuito un’affermazione più netta della sua. Se desidera che la recensione resti sul sito, le invieremo una proposta fedele all’originale per la sua conferma; altrimenti non la riutilizzeremo.»\n\nPer la nuova formulazione proporrei «Secondo la mia esperienza, il servizio potrebbe aiutare in alcuni casi», ma la userei solo dopo il suo riscontro. Controllo oggi le altre citazioni tradotte con lo stesso flusso editoriale, partendo da quelle in evidenza.\n\nElena",
       "annotations": [
         {
@@ -552,7 +552,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Messaggio del partner sulla fiera",
+      "subject": "R: Messaggio del partner sulla fiera",
       "body": "Ciao Pietro,\n\nla decisione registrata dal partner riguarda il panel di venerdì, cancellato per l’indisponibilità di due relatori. La direzione della fiera ha confermato che la manifestazione principale resta programmata. Il post «evento cancellato» non distingue questi due livelli e può indurre i partecipanti a credere che l’intera fiera non si terrà. La pagina del programma completo deve ancora essere aggiornata, quindi eviterei di garantire che ogni altra sessione resti identica.\n\nProporrei: «Il panel di venerdì organizzato dal nostro partner è stato cancellato. La fiera principale resta in programma, come confermato dalla sua direzione. Il programma dettagliato è in aggiornamento: consultate la pagina ufficiale per le informazioni sulle singole sessioni prima di modificare i vostri piani di viaggio.»\n\nChiederò oggi al partner di correggere il post e di rimandare alla pagina ufficiale della fiera. Verificherò con la direzione quando la pagina aggiornata sarà disponibile e ti invierò il link da usare nelle risposte individuali. Così correggiamo l’equivoco senza parlare a nome dell’organizzatore su dettagli non ancora pubblicati.\n\nSara",
       "annotations": [
         {
@@ -748,7 +748,7 @@
       ]
     },
     "model": {
-      "subject": "Re: L’80% dei clienti è contrario?",
+      "subject": "R: L’80% dei clienti è contrario?",
       "body": "Ciao Marta,\n\nla percentuale dell’80% riguarda 250 commenti pubblici classificati, non l’80% dei nostri clienti. Uno stesso account può comparire più volte e non sappiamo se tutti gli autori siano clienti. Il riepilogo per la direzione cambia quindi la popolazione a cui si riferisce il dato; va corretto. Non dobbiamo però scartare il segnale: anche l’assistenza registra più richieste sullo stesso tema, pur senza un tasso complessivo.\n\nProporrei questa sintesi: «Nell’ascolto di 250 commenti pubblici che citano la marca, l’80% dei contenuti classificati esprime una valutazione negativa. Il campione non consente di stimare la quota di clienti con questa opinione. L’aumento delle richieste all’assistenza conferma che il tema richiede un approfondimento.»\n\nPer il seguito distinguerei gli autori unici dai commenti, analizzerei le richieste dell’assistenza per categoria e periodo e valuterei una rilevazione su un campione di clienti definito. Ti invierò domani una proposta di metodo con le domande a cui ciascuna fonte può rispondere. Così diamo al problema il peso che merita senza trasformare una misura social in un sondaggio sulla clientela.\n\nDavide",
       "annotations": [
         {
@@ -949,7 +949,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Prezzo diverso nella pagina prodotto",
+      "subject": "R: Prezzo diverso nella pagina prodotto",
       "body": "Ciao Laura,\n\nil nuovo prezzo è stato salvato nel catalogo alle 10, ma questo non significa che tutte le pagine lo mostrassero già. La schermata delle 10:40 documenta il vecchio importo e il controllo successivo ha individuato due nodi cache non aggiornati. Abbiamo avviato l’invalidazione; non abbiamo ancora ricostruito quali utenti o ordini siano passati da quei nodi.\n\nAl cliente proporrei: «Grazie per la schermata. Abbiamo verificato che una parte delle pagine prodotto mostrava ancora il prezzo precedente dopo l’aggiornamento del catalogo. Stiamo correggendo la distribuzione del prezzo e controllando gli ordini del periodo per stabilire quali siano stati effettivamente interessati. Le daremo una risposta sul suo caso dopo aver verificato il prezzo visualizzato e quello applicato al suo ordine.»\n\nIo controllerò i log dei nodi coinvolti e l’esito dell’invalidazione prima di dichiarare l’anomalia risolta. Ti invierò un primo elenco degli ordini da esaminare oggi pomeriggio. Eviterei sia di dire che tutti i clienti hanno visto il prezzo vecchio sia di negare il problema perché il database era aggiornato.\n\nRiccardo",
       "annotations": [
         {
@@ -1150,7 +1150,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Ticket tradotto in modo opposto",
+      "subject": "R: Ticket tradotto in modo opposto",
       "body": "Ciao Chiara,\n\nil cliente aveva scritto di non riavviare il servizio prima delle 18. La traduzione automatica ha eliminato la negazione, inducendo l’operatore a pianificare un riavvio alle 17:30. Il piano è stato sospeso prima dell’esecuzione: possiamo quindi parlare di un’istruzione letta in modo errato e di una pianificazione da correggere, non di un’interruzione già causata.\n\nAl cliente scriverei: «Abbiamo rilevato che la traduzione automatica del suo messaggio non riportava correttamente il divieto di riavvio prima delle 18. Un riavvio anticipato era stato pianificato, ma non è stato eseguito; il piano è stato sospeso. Ci scusiamo per l’errore e le chiederemo conferma dell’orario prima di qualsiasi intervento.»\n\nOggi verificherò se altri ticket con istruzioni temporali siano stati gestiti usando soltanto la traduzione. Ricorderò al team che ogni indicazione operativa deve essere confrontata con il testo originale prima di diventare un’azione. Ti comunicherò i risultati della verifica e le eventuali correzioni necessarie, senza dare per scontato che altri casi abbiano prodotto effetti.\n\nMichele",
       "annotations": [
         {
@@ -1353,7 +1353,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Pannello aggiornato ieri",
+      "subject": "R: Pannello aggiornato ieri",
       "body": "Ciao Roberto,\n\nla dicitura «aggiornato ieri» descrive la ricostruzione dell’indice di ricerca, non l’importazione completa dei record. Quest’ultima risale a quattro giorni fa. Le tre operazioni segnalate dal cliente sono presenti nel sistema sorgente, ma non ancora nel pannello. Non abbiamo evidenza che siano state cancellate; stiamo cercando la causa del ritardo nel passaggio dei dati. La risposta data finora dal team è quindi troppo ampia.\n\nProporrei al cliente: «Abbiamo verificato le tre operazioni: risultano nel sistema sorgente, ma non sono ancora visibili nel pannello. L’indicazione “aggiornato ieri” si riferiva all’indice di ricerca e non alla completezza dei record operativi. Ci scusiamo per questa formulazione poco chiara. Stiamo analizzando l’importazione e la informeremo appena avremo verificato il ripristino della visualizzazione.»\n\nFarò modificare l’etichetta affinché distingua l’ultima indicizzazione dall’ultima importazione riuscita. Ti invierò un aggiornamento sul controllo delle tre operazioni entro oggi pomeriggio, anche se la causa tecnica fosse ancora aperta. Prima di dichiarare il pannello allineato, confronteremo i record con il sistema sorgente.\n\nAlessia",
       "annotations": [
         {
@@ -1555,7 +1555,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Interruzione e SLA del cliente",
+      "subject": "R: Interruzione e SLA del cliente",
       "body": "Ciao Irene,\n\nla finestra era stata pianificata internamente, ma questo da solo non basta a escludere i 48 minuti dal calcolo SLA. Il contratto richiede un avviso al cliente con almeno 72 ore di anticipo. Nell’archivio principale non lo troviamo; stiamo ancora controllando i canali secondari. Non possiamo quindi dire oggi che l’esclusione sia applicabile, né stabilire già l’eventuale accredito senza completare il calcolo.\n\nAl cliente scriverei: «Riconosciamo l’indisponibilità di 48 minuti di sabato. La finestra era prevista nel nostro calendario tecnico. Stiamo verificando se la comunicazione preventiva richiesta dalle condizioni di servizio sia stata effettivamente inviata e come l’interruzione debba essere considerata nel calcolo SLA. Le forniremo l’esito documentato di questa verifica e, se dovuto, il relativo trattamento economico.»\n\nOggi controllerò con il team comunicazioni tutti i canali usati per gli avvisi e farò ricostruire il calcolo. Ti darò un primo riscontro domani mattina con le prove disponibili e i punti ancora aperti. Nel frattempo eviterei di descrivere la manutenzione come automaticamente esclusa solo perché programmata.\n\nFabio",
       "annotations": [
         {
@@ -1757,7 +1757,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Classifica candidati da confermare",
+      "subject": "R: Classifica candidati da confermare",
       "body": "Ciao Andrea,\n\nla media attuale è aritmeticamente calcolabile, ma non costituisce ancora un confronto equo. Le due versioni della griglia assegnano pesi diversi all’esperienza tecnica e alla collaborazione. Due valutatori hanno usato la prima e uno la seconda sugli stessi candidati. Il primo posto di Elisa potrebbe rimanere invariato, ma non possiamo darlo per acquisito prima di rivedere le schede su criteri comuni. Non abbiamo elementi per attribuire ai valutatori un intento di favorire qualcuno.\n\nPropongo di sospendere la comunicazione dell’esito, scegliere la griglia prevista per questa selezione e far riesaminare tutte le candidature secondo gli stessi criteri. Documenteremo le modifiche e verificheremo se la classifica cambia. Ai candidati possiamo dire: «Stiamo completando una verifica di coerenza del metodo di valutazione. Vi comunicheremo l’esito dopo questa verifica, entro la data che confermeremo a breve.»\n\nOggi raccolgo le schede e il testo della procedura applicabile. Ti darò domani una stima credibile dei tempi. È preferibile un rinvio spiegato a una decisione rapida che non possiamo ancora motivare in modo uniforme.\n\nTeresa",
       "annotations": [
         {
@@ -1959,7 +1959,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Condivisione della nota di Chiara",
+      "subject": "R: Condivisione della nota di Chiara",
       "body": "Ciao Marta,\n\nla richiesta di Chiara autorizzava il contatto necessario a organizzare un incontro, non l’invio integrale della sua nota. Il registro mostra che il documento è stato inoltrato al responsabile e a un assistente amministrativo. Non possiamo ancora dire se l’allegato sia stato aperto o copiato. Dobbiamo riferire la condivisione con precisione e verificare gli accessi, senza usare l’incertezza sulla lettura per ridurre la gravità dell’errore.\n\nA Chiara proporrei: «La sua nota è stata inoltrata a due destinatari nell’organizzazione dell’incontro, oltre l’ambito che aveva autorizzato. Ci scusiamo. Stiamo verificando chi abbia avuto accesso all’allegato e quali misure servano per limitarne ulteriormente la circolazione. Le comunicheremo quanto potremo accertare. La decisione se e come proseguire con la mediazione resta sua; possiamo anche discutere un percorso alternativo.»\n\nSegnalo oggi il caso alla funzione HR competente e chiedo ai destinatari di non diffondere la nota. Prima di proporre un nuovo incontro, ascolterei Chiara su ciò di cui ha bisogno per sentirsi in condizione di scegliere liberamente.\n\nValeria",
       "annotations": [
         {
@@ -2161,7 +2161,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Bonus mostrato a Davide",
+      "subject": "R: Bonus mostrato a Davide",
       "body": "Ciao Elisa,\n\ni 2.400 euro visualizzati da Davide provengono da una simulazione che usa obiettivi non ancora verificati. Il portale ha mostrato la parola «approvato», ma nel dato sorgente lo stato è «simulazione». Dobbiamo riconoscere questo errore di visualizzazione. Non abbiamo ancora una delibera individuale né un ordine di pagamento; allo stesso tempo non possiamo dire che il bonus sia stato escluso.\n\nProporrei a Davide: «Il portale ha mostrato erroneamente come approvato un importo di 2.400 euro. Si tratta di una simulazione preliminare, non di una decisione sul suo bonus. Ci scusiamo per l’indicazione fuorviante. La verifica degli obiettivi e la delibera finale sono ancora in corso. Riceverà una comunicazione individuale sull’importo eventualmente riconosciuto dopo la conclusione di queste fasi.»\n\nFarò correggere l’etichetta e verificherò se lo stesso problema riguarda altri profili. Ti invierò il calendario aggiornato della delibera appena confermato, così potremo dare a Davide un riferimento temporale realistico. Evitiamo di usare la simulazione come promessa o come smentita definitiva.\n\nPaolo",
       "annotations": [
         {
@@ -2363,7 +2363,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Orario di Chiara comunicato al team",
+      "subject": "R: Orario di Chiara comunicato al team",
       "body": "Ciao Giorgio,\n\nChiara ti ha chiesto di valutare un possibile orario ridotto da settembre. Non ha ancora presentato una domanda formale né è stato concordato un nuovo orario. L’annuncio al team ha trasformato una conversazione individuale in una decisione organizzativa già presa. Dobbiamo correggerlo, ma senza dare l’impressione che la richiesta venga accantonata. Le ragioni personali di Chiara non devono entrare nella comunicazione collettiva.\n\nAl team direi: «La comunicazione sui turni era prematura. Stiamo esaminando alcune possibili esigenze organizzative per settembre, ma non è stato approvato alcun nuovo piano. Se e quando sarà necessario modificare i turni, parleremo prima con le persone interessate e comunicheremo il calendario concordato.»\n\nA Chiara proporrei una scusa diretta: «Ho parlato troppo presto di un nuovo orario come se fosse già deciso. La tua richiesta resta aperta e la valuteremo con HR, rispettando la riservatezza delle tue motivazioni. Non condividerò ulteriori dettagli personali con il team.»\n\nTi aiuto a definire le prossime fasi del confronto e a separarle dalla pianificazione dei turni.\n\nFrancesca",
       "annotations": [
         {
@@ -2566,7 +2566,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Conflitto sulla stanza 4",
+      "subject": "R: Conflitto sulla stanza 4",
       "body": "Ciao Elisa,\n\nle due visite risultano ancora confermate per le 11; nessuna è stata annullata. Il problema riguarda l’assegnazione della stanza 4, scelta da entrambi i reparti in un sistema che non impedisce il conflitto. La stanza 5 risulta libera, ma dobbiamo far confermare al reparto che sia adatta alla visita prima di indicarla come soluzione. Non possiamo quindi garantire già la stessa sede prevista, né chiedere alla paziente di rinunciare all’appuntamento.\n\nLe direi: «La sua visita delle 11 è ancora in agenda. Abbiamo rilevato un conflitto nell’assegnazione della stanza e stiamo verificando con il reparto uno spazio idoneo. Le confermeremo la stanza e l’eventuale indicazione di accesso entro le 9:30, prima che inizi il viaggio, oppure la contatteremo subito se fosse necessario concordare un’alternativa.»\n\nChiederò ora al reparto di verificare la stanza 5 e terrò aggiornati entrambi i servizi coinvolti. Se non è idonea, sarà il reparto a indicare la soluzione clinicamente appropriata; il nostro compito è comunicarla in modo tempestivo e preciso.\n\nMarta",
       "annotations": [
         {
@@ -2770,7 +2770,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Pagina estranea nella copia",
+      "subject": "R: Pagina estranea nella copia",
       "body": "Ciao Giorgio,\n\nabbiamo verificato che una pagina del file consegnato riporta un identificativo diverso da quello del richiedente. Il registro attesta la consegna all’account, ma non mostra quali pagine siano state aperte o salvate. Abbiamo ritirato il file dal portale; questo non ci permette di escludere una copia già scaricata. Dobbiamo segnalare l’accaduto al referente privacy e preparare una nuova copia controllata pagina per pagina.\n\nAl paziente scriverei: «Grazie per averci avvisato. Nella copia inviata compare una pagina che non appartiene al suo fascicolo. Abbiamo ritirato il file dal portale e stiamo ricostruendo una versione verificata dei suoi documenti. Le comunicheremo tramite il portale sicuro quando la nuova copia sarà pronta e le daremo indicazioni sul file ricevuto in precedenza. Non le chiediamo di inoltrarci la pagina per email.»\n\nIo coordino la verifica con il referente privacy e registro le versioni del file. Prima del nuovo invio farò controllare l’identificativo su ogni pagina da una seconda persona. Ti aggiornerò oggi sul tempo necessario, senza dichiarare già conclusa la verifica degli accessi.\n\nPaola",
       "annotations": [
         {
@@ -2965,7 +2965,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Disponibilità per domani",
+      "subject": "R: Disponibilità per domani",
       "body": "Ciao Anna,\n\nle 24 unità indicate nel gestionale si trovano nel deposito centrale. Il reparto non ne ha al momento e la richiesta di trasferimento non ha ancora una consegna confermata per domani mattina. Non direi quindi alla paziente che tutto è pronto. La farmacia può verificare disponibilità e trasporto; se il trasferimento non sarà possibile nei tempi previsti, sarà il team clinico a valutare l’appuntamento e ogni altra scelta relativa alle cure.\n\nLe proporrei: «Il farmaco risulta disponibile nel nostro deposito centrale. Stiamo confermando il trasferimento al reparto per l’appuntamento di domani. Le daremo un aggiornamento oggi entro le 16. Se emergesse una difficoltà nella consegna, informeremo subito il team clinico, che le comunicherà eventuali indicazioni sul programma della visita.»\n\nIo contatto ora la logistica e chiedo una conferma scritta del trasferimento. Aggiornerò il reparto prima di comunicare l’esito ad Anna. Il dato di magazzino è utile, ma non equivale alla presenza del farmaco nel luogo in cui è previsto l’uso.\n\nLorenzo",
       "annotations": [
         {
@@ -3167,7 +3167,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Indicazioni per visita al secondo piano",
+      "subject": "R: Indicazioni per visita al secondo piano",
       "body": "Ciao Paolo,\n\nla rampa rende accessibile l’ingresso nord, ma oggi non garantisce il tragitto fino all’ambulatorio al secondo piano: l’ascensore nord è fermo. L’ascensore sud risulta funzionante, tuttavia non abbiamo verificato il percorso dalla rampa fino a quell’impianto. Anche la stanza al piano terra è solo una possibilità da confermare con l’ambulatorio. Non dobbiamo far arrivare la paziente a un ingresso per poi scoprire che non può proseguire.\n\nLe scriverei: «L’ascensore vicino all’ingresso nord è temporaneamente fuori servizio. Stiamo verificando un percorso alternativo praticabile per la sua visita o la disponibilità di una stanza al piano terra. La contatteremo entro le 11 con indicazioni precise prima del suo arrivo. Ci scusiamo per il disagio e le chiediamo di non affidarsi alle sole informazioni generali del sito per il percorso di oggi.»\n\nIo controllo subito il tragitto con un collega della sede e chiedo all’ambulatorio la conferma della stanza alternativa. Aggiorneremo anche l’avviso sul sito per la durata del guasto. Se nessuna soluzione è praticabile, sarà l’ambulatorio a concordare con la paziente il passo successivo.\n\nSilvia",
       "annotations": [
         {
@@ -3370,7 +3370,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Lotto bloccato e clienti coinvolti",
+      "subject": "R: Lotto bloccato e clienti coinvolti",
       "body": "Ciao Lucia,\n\nnon possiamo dire che nessuna unità sia uscita: dodici pezzi del lotto L-27 sono stati affidati al vettore alle 9, due ore prima del blocco delle altre 88 unità. Stiamo ancora riconciliando le consegne e i destinatari. Inoltre il risultato che ha motivato il blocco è preliminare; la qualità non ha confermato un difetto del lotto. La comunicazione deve quindi seguire la tracciabilità, non precederla con conclusioni generali.\n\nPer i destinatari che risulteranno coinvolti proporrei, dopo la verifica delle istruzioni qualità: «Stiamo svolgendo un controllo sul lotto L-27, dal quale potrebbe provenire un’unità della sua spedizione. La verifica è ancora in corso e non costituisce, al momento, una conferma di difetto. Le comunicheremo le indicazioni applicabili al suo caso non appena avremo completato il controllo del numero di lotto e dello stato della consegna.»\n\nOggi chiedo al vettore le prove di consegna e confronto i numeri delle unità con gli ordini. Ti passerò l’elenco verificato prima di ogni invio mirato. Se l’analisi qualità richiederà azioni ulteriori, aggiorneremo immediatamente il testo e le istruzioni.\n\nEdoardo",
       "annotations": [
         {
@@ -3573,7 +3573,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Merce pronta per il cliente?",
+      "subject": "R: Merce pronta per il cliente?",
       "body": "Ciao Sofia,\n\nlo stato «svincolato» riguarda il container e la sua uscita dal porto. Il pallet del cliente è stato identificato, ma attende ancora un controllo documentale al deposito. Non abbiamo un orario confermato per la conclusione di quel controllo e il trasporto finale non è prenotato. La previsione di arrivo oggi era quindi troppo anticipata; dobbiamo correggerla senza presentare la dogana o il deposito come responsabili di un ritardo che non abbiamo ancora ricostruito.\n\nAl cliente scriverei: «La merce ha superato il passaggio doganale del container. Il pallet destinato al suo ordine sta completando una verifica documentale al deposito; seguirà la prenotazione del trasporto finale. Ci scusiamo per aver indicato l’arrivo oggi prima che questi passaggi fossero confermati. Le daremo un nuovo aggiornamento domani mattina con lo stato del controllo e una data di consegna solo quando il vettore avrà accettato la prenotazione.»\n\nIo contatto oggi il deposito per conoscere i documenti ancora richiesti e preparo il trasporto non appena il pallet sarà disponibile. Ti informerò di ogni conferma, distinguendola dalle stime operative.\n\nRaffaele",
       "annotations": [
         {
@@ -3776,7 +3776,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Peso degli scarti nel report",
+      "subject": "R: Peso degli scarti nel report",
       "body": "Ciao Enrico,\n\nle 6,2 tonnellate sono un peso lordo registrato alla pesa, non ancora la quantità netta di scarti. I carichi comprendevano bancali riutilizzabili che sono tornati allo stabilimento. Non abbiamo però riconciliato il peso di quei bancali per ciascun ritiro, quindi oggi non posso indicare un netto affidabile né concludere che l’obiettivo sia stato superato. Il report va corretto almeno nell’etichetta, che attualmente presenta il lordo come «scarti prodotti».\n\nProporrei al cliente: «Il valore di 6,2 tonnellate riportato nel documento è il peso lordo dei ritiri e comprende i bancali riutilizzabili. La voce del report non lo specificava e la correggeremo. Stiamo confrontando i formulari di pesa con il registro dei bancali restituiti per determinare la quantità netta di scarti. Le invieremo il valore riconciliato e il confronto con l’obiettivo dopo questa verifica.»\n\nIo raccolgo oggi formulari e resi e chiedo al magazzino le tare disponibili. Se manca un dato, lo segnalerò esplicitamente invece di sostituirlo con una stima non dichiarata. Ti darò domani lo stato della riconciliazione.\n\nBeatrice",
       "annotations": [
         {
@@ -3980,7 +3980,7 @@
       ]
     },
     "model": {
-      "subject": "Re: Richiesta di spiegazioni del fornitore",
+      "subject": "R: Richiesta di spiegazioni del fornitore",
       "body": "Ciao Federica,\n\npossiamo spiegare subito la valutazione del fornitore senza inviare automaticamente l’offerta del concorrente. Il bando attribuiva 60 punti alla qualità e 40 al prezzo; il richiedente ha ottenuto 71 punti rispetto agli 83 del vincitore. Il verbale segnala inoltre due requisiti qualitativi non pienamente soddisfatti. Dobbiamo descriverli con riferimento ai criteri applicati, non limitarci alla differenza numerica.\n\nGli scriverei: «La sua offerta è stata valutata secondo i criteri pubblicati. Ha ottenuto 71 punti; il punteggio più alto è stato 83. In particolare, la valutazione della qualità ha rilevato [i due requisiti, riportati fedelmente dal verbale]. Le inviamo il dettaglio della sua scheda di valutazione. La sua richiesta di accesso all’offerta dell’altro partecipante è stata registrata e sarà esaminata separatamente, perché il documento contiene informazioni di terzi soggette a verifica. Le comunicheremo l’esito di questa richiesta entro la data confermata dall’ufficio competente.»\n\nControllo oggi la formulazione dei due rilievi e chiedo all’ufficio competente il termine per la verifica dell’accesso. Trasparenza sulla nostra decisione e tutela del materiale altrui possono procedere insieme.\n\nNicola",
       "annotations": [
         {
