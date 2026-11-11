@@ -41,7 +41,7 @@ Fecha de corte: 25 de agosto de 2026.
 ## Escritura laboral B2–C2 multilingüe — 11 de noviembre de 2026
 
 Rama aislada `codex/writing-b2-workplace-preview-20261110`, actualizada desde
-`origin/main@79fc4bee`. Estado: `EN_DESARROLLO`, sin integración ni despliegue.
+`origin/main@95e9e9bb`. Estado: `EN_DESARROLLO`, sin integración ni despliegue.
 El propietario aprobó el preview de tres casos B2 inglés y pidió que **todo el
 recorrido visible esté en el idioma estudiado**. Hay 20 casos jugables en cada
 nivel B2, C1 y C2 de inglés, francés, alemán, italiano, portugués, ruso, japonés
