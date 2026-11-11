@@ -4,7 +4,7 @@
 
 El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. Inglés, francés, alemán, italiano, portugués, ruso, japonés y coreano contienen **20 casos jugables por nivel B2, C1 y C2**: 480 casos en 24 bancos. No se alteraron los 480 ejercicios A1–B1.
 
-Las 24 rutas se enlazan desde sus niveles B2–C2 y están incluidas en el sitemap. Se retiró el `noindex` de la fase de preview. La integración en `main` y el despliegue siguen el protocolo de `docs/OPERACION-REPOSITORIO.md`.
+Las 24 rutas se enlazan desde sus niveles B2–C2 y están incluidas en el sitemap. Se retiró el `noindex` de la fase de preview. El [PR #57](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/57) se integró en `main@d4c956a5bc7d33a08a4d50a5f8b087558749c5e4` y Vercel lo publicó en `dpl_Ddf65kmigogECTtsLEPdwQGqCnDa`. El smoke del dominio público pasó 72/72 rutas y 24/24 entradas del sitemap; el smoke general pasó 49 rutas y 17 audios.
 
 La unidad editorial es un malentendido laboral concreto: correo recibido → documento de hechos → análisis de alcance, intención, propósito y evidencia → respuesta al correo → revisión y segunda versión. El estudiante debe poder señalar qué sabe, qué supone otra persona, qué falta por comprobar y qué acción está bajo su control.
 
@@ -52,12 +52,12 @@ npm run build
 
 El checker exige 20 casos por nivel, cuatro por cada una de cinco áreas, variedad de posiciones correctas, hechos, cuatro ejes, tres opciones, claves, referencias y anotaciones. Las pruebas mutan evidencia, claves y distribución para comprobar que el propio guardián detecta defectos. Antes de integrar se recorre en navegador el camino completo, una opción errónea, un borrador revisado y el ancho móvil.
 
-`prebuild` ejecuta el guardián de los 480 casos, 24 rutas, enlaces desde el nivel, sitemap y metadatos e imágenes sociales en la lengua meta. El guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1, sin reducir umbrales. La vista previa remota de Vercel compiló el commit `8ac448a8`, y las 24 rutas de escritura respondieron GET/HEAD HTTP 200 con contenido y metadatos nativos. El smoke de los hubs detectó que italiano B2 tenía una página especial sin enlace a escritura; se corrigió el enlace, se localizó la copia de esa página y el guardián ahora revisa su ruta real. El [PR #57](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/57) requiere un nuevo build y smoke del commit corregido. El build local con Webpack superó el límite predeterminado de 2 GB de Node; la repetición con 4 GB se detuvo por presión de disco. La ausencia de un build local completo se registra, sin confundirla con un fallo de compilación remota.
+`prebuild` ejecuta el guardián de los 480 casos, 24 rutas, enlaces desde el nivel, sitemap y metadatos e imágenes sociales en la lengua meta. El guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1, sin reducir umbrales. La vista previa remota de Vercel compiló el commit final `eebda811`, y el smoke pasó 72/72 rutas: GET/HEAD de las 24 páginas de escritura y GET de los 24 hubs. El smoke detectó que italiano B2 tenía una página especial sin enlace a escritura; se corrigió el enlace, se localizó la copia de esa página y el guardián ahora revisa su ruta real. El build completo pasó en GitHub Actions antes y después de integrar el PR. El build local con Webpack superó el límite predeterminado de 2 GB de Node; la repetición con 4 GB se detuvo por presión de disco. La ausencia de un build local completo se registra, sin confundirla con un fallo de compilación remota.
 
 ## Progresión y escalado
 
 La progresión toma como referencia la sección de [interacción escrita y correspondencia del Companion Volume del Consejo de Europa](https://rm.coe.int/cefr-companion-volume-with-new-descriptors-2020/16809ea0d4): B2 resuelve correspondencia profesional no rutinaria con hechos claros y registro adecuado; C1 pondera versiones e implicaciones con precisión; C2 controla atribución y tono en correspondencia profesional compleja. La carga no aumenta solo por extensión.
 
 1. Los ocho idiomas tienen 60 casos cada uno, interfaz en la lengua meta y 20 casos por nivel. Se probaron recorridos en navegador de inglés B2–C2 y varios B2 de otras lenguas.
-2. La lectura editorial de los 480 y el cruce independiente de 157 están registrados. Los controles del commit final siguen en curso.
-3. Integrar mediante PR después de los controles; registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».
+2. La lectura editorial de los 480 y el cruce independiente de 157 están registrados. Los controles del commit final pasaron.
+3. La integración mediante PR, el SHA de `main`, el deployment y el smoke de producción están registrados arriba.
