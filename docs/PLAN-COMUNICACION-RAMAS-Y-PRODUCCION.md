@@ -9,7 +9,7 @@ Fecha de corte: 25 de agosto de 2026.
 
 - Trabajo: `seo-local-idiomas-20261111`; responsable: Codex.
 - Rama: `codex/seo-local-idiomas-20261111`, base `origin/main@95e9e9bb`;
-  respaldada en `origin`. Estado: `EN_VALIDACION`.
+  respaldada en `origin`. Estado: `LISTO_PARA_INTEGRAR`.
 - Alcance: hero de `/clases-de-frances`, `/clases-de-italiano`,
   `/clases-de-portugues`, `/clases-de-aleman`, `/clases-de-japones`,
   `/clases-de-coreano` y `/clases-de-ruso`; generador e
@@ -31,10 +31,11 @@ Fecha de corte: 25 de agosto de 2026.
   `check:seo-foundation`, `check:seo-snippets`, `check:reading-content` y
   TypeScript global pasaron. Next compiló y verificó tipos; el build local se
   detuvo en prerender por falta de espacio en disco (`ENOSPC`). El build completo
-  pasó en GitHub Actions para el commit `6ba1b23d`; se revisaron visualmente
-  francés, italiano y portugués en la vista previa de Vercel. Faltan CI y
-  revisión visual de los cuatro idiomas añadidos después.
-- Decisión de integración: `MERGE` tras completar esas validaciones; SHA en `main`,
+  pasó en GitHub Actions para el commit `dba80cb0`. Las siete rutas se revisaron
+  en navegador; los cambios del último commit también se comprobaron en la
+  vista previa de Vercel `ENFAEny4qwXiMwtLNVTp23UtcuTh`, en estado `READY`.
+  `origin/main@95e9e9bb` sigue siendo ancestro de la rama.
+- Decisión de integración: `MERGE`; SHA en `main`,
   deployment y smoke: pendientes. El objetivo es mejorar relevancia y claridad
   local; no hay garantía de una posición concreta en Google.
 
