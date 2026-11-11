@@ -7,7 +7,7 @@ import { pathToFileURL } from 'node:url'
 const ROOT = process.cwd()
 const TARGET = path.join(ROOT, 'tmp', 'german-grammar', 'topics.json')
 const topics = []
-const levels = (process.env.GERMAN_GRAMMAR_LEVELS ?? 'b2,c1,c2').split(',').map((level) => level.trim()).filter(Boolean)
+const levels = (process.env.GERMAN_GRAMMAR_LEVELS ?? 'a1,a2,b1,b2,c1,c2').split(',').map((level) => level.trim()).filter(Boolean)
 
 for (const level of levels) {
   const moduleUrl = pathToFileURL(path.join(ROOT, 'src', 'data', 'grammar', 'aleman', level, 'index.ts')).href

@@ -19,21 +19,22 @@ import imperativ from './imperativ'
 import zukunftPrasens from './zukunft-prasens'
 import dativPraepositionen from './dativ-praepositionen'
 import personalpronomenAkkusativ from './personalpronomen-akkusativ'
+import { closeGermanFoundationTopic } from '../quality-closeout'
 
 const topics: GrammarTopic[] = [
   personalpronomen,
   verbSein,
   verbHaben,
   artikel,
-  pluralNomen,
   prasensRegelmaessig,
+  pluralNomen,
   prasensUnregelmaessig,
   verneinung,
   wFragen,
   possessivpronomen,
+  adjektivePradikativ,
   akkusativ,
   praepositonenOrt,
-  adjektivePradikativ,
   modalverben,
   trennbareVerben,
   praepositionenZeit,
@@ -41,6 +42,6 @@ const topics: GrammarTopic[] = [
   zukunftPrasens,
   dativPraepositionen,
   personalpronomenAkkusativ,
-]
+].map((topic) => closeGermanFoundationTopic(topic, 'a1'))
 
 export default topics

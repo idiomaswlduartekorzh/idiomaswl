@@ -263,11 +263,12 @@ const topic: GrammarTopic = {
         tag: 'Análisis',
         intro: 'Explica la diferencia de significado entre las dos frases de cada par.',
         scene: 'Contraste de significados: Partizip I vs. Partizip II',
-        text: 'Par 1: "das kochende Wasser" vs. "das gekochte Wasser" — diferencia: [[0]]. Par 2: "der laufende Motor" vs. "der gestartete Motor" — diferencia: [[1]]. Par 3: "die schlafende Katze" vs. "die aufgewachte Katze" — diferencia: [[2]].',
+        text: 'Par 1: "das kochende Wasser" vs. "das gekochte Wasser" — diferencia: [[0]]. Par 2: "der laufende Motor" vs. "der gestartete Motor" — diferencia: [[1]]. Par 3: "die schlafende Katze" vs. "die aufgewachte Katze" — diferencia: [[2]]. Par 4: "die schreibende Studentin" vs. "der geschriebene Text" — diferencia: [[3]].',
         blanks: [
           { answer: 'kochende = agua hirviendo ahora; gekochte = agua que ya fue hervida', explain: 'Partizip I (kochend) = proceso activo en curso. Partizip II (gekocht) = resultado de la acción.' },
           { answer: 'laufende = motor que está funcionando ahora; gestartete = motor que fue arrancado', explain: 'laufend = en marcha ahora (Partizip I). gestartet = fue arrancado (Partizip II resultado).' },
           { answer: 'schlafende = gato que está durmiendo; aufgewachte = gato que se ha despertado', explain: 'schlafend = Partizip I activo presente. aufgewacht = Partizip II de aufwachen.' },
+          { answer: 'schreibende = estudiante que realiza la acción; geschriebene = texto que resulta de la acción', explain: 'Partizip I describe al agente activo; Partizip II describe el resultado o el objeto afectado.' },
         ],
       },
       {

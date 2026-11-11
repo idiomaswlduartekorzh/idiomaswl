@@ -161,10 +161,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Los niños comenzaron el juego.',
-            lines: [['', 'Die Kinder [[0]] das Spiel. (beginnen)']],
+            lines: [['', 'Die Kinder [[0]] das Spiel [[1]]. (beginnen)']],
             blanks: [
               { options: ['begannen', 'beginnen', 'begann', 'begonnen'], answer: 'begannen', explain: '"beginnen" inseparable, irregular: beginnen → begannen (plural).' },
-              { options: ['—', 'be', 'an', 'gin'], answer: '—', explain: 'Los verbos inseparables no tienen prefijo separado.' },
+              { options: ['sofort', 'an', 'be', 'auf'], answer: 'sofort', explain: '"Sofort" completa el contexto; "beginnen" no separa ningún prefijo.' },
             ],
           },
         ],

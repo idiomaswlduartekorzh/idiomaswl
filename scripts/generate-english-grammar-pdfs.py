@@ -512,7 +512,8 @@ class Workbook(BaseDocTemplate):
         self.edition = edition
         advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
         edition_label = {'complete': l('complete guide', 'cours complet'), 'exercises': l('exercise workbook', "cahier d'exercices"), 'answer-key': l('answer key', 'corrigé')}[edition]
-        subject = f"{l('English grammar', 'Grammaire française')} {edition_label} {topic['level']}" if advanced else f"Cuaderno de gramática inglesa {topic['level']}"
+        lower_subject = 'Cuaderno de gramática alemana' if IS_GERMAN else 'Cuaderno de gramática inglesa'
+        subject = f"{l('English grammar', 'Grammaire française')} {edition_label} {topic['level']}" if advanced else f"{lower_subject} {topic['level']}"
         super().__init__(filename, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=31 * mm, bottomMargin=20 * mm, title=f"Idiomas WeLearn - {topic['title']} - {edition_label}", author='Idiomas WeLearn', subject=subject)
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id='body')
         self.addPageTemplates([PageTemplate(id='welearn', frames=[frame], onPage=self.draw_page)])
@@ -546,7 +547,8 @@ class Workbook(BaseDocTemplate):
         canvas.setFillColor(MUTED)
         canvas.setFont('WeLearnEN', 6.7)
         edition_footer = {'complete': l('Complete guide', 'Cours complet'), 'exercises': l('Exercise workbook', "Cahier d'exercices"), 'answer-key': l('Answer key', 'Corrigé')}[self.edition]
-        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · Inglés {self.topic['level']} · idiomaswl.com"
+        lower_language = 'Alemán' if IS_GERMAN else 'Inglés'
+        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · {lower_language} {self.topic['level']} · idiomaswl.com"
         page_label = l('Page', 'Page') if advanced else 'Página'
         canvas.drawString(18 * mm, 10 * mm, footer)
         canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'{page_label} {doc.page}')
@@ -952,7 +954,7 @@ def build_story(topic):
     if advanced:
         return build_advanced_standard_story(topic)
     labels = {
-        'cover': f"ENGLISH · LEVEL {topic['level']} · PRINTABLE WORKBOOK" if advanced else f"INGLÉS · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE",
+        'cover': f"ENGLISH · LEVEL {topic['level']} · PRINTABLE WORKBOOK" if advanced else f"{'ALEMÁN' if IS_GERMAN else 'INGLÉS'} · NIVEL {topic['level']} · CUADERNO IMPRIMIBLE",
         'goal': 'Lesson goal' if advanced else 'Meta de la lección',
         'model': 'Model' if advanced else 'Modelo',
         'outcomes': 'By the end, you will be able to' if advanced else 'Al terminar podrás',
@@ -974,7 +976,7 @@ def build_story(topic):
     story = [p(labels['cover'], STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box(labels['goal'], topic['guide']['goal']), Spacer(1, 4 * mm), info_box(labels['model'], topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p(labels['outcomes'], STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
     study_copy = (
-        'Lee la explicación, reconstruye el mapa sin mirar, resuelve la práctica y corrige al final. Usa las tres pistas de audio de la lección web para imitar ritmo y entonación.'
+        'Lee la explicación, reconstruye el mapa sin mirar, resuelve las seis etapas y corrige al final. Vuelve al modelo para justificar cada decisión.'
         if topic['level'].lower() in ('a1', 'a2', 'b1')
         else 'Read the explanation, rebuild the infographic from memory, complete the practice, and check the answer key. Return to the visual map to justify each decision.'
     )

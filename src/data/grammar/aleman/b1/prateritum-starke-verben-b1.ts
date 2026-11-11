@@ -120,7 +120,7 @@ const topic: GrammarTopic = {
           {
             scene: "Accidente en la cocina",
             lines: [["", "Das Glas ___ vom Tisch und ___. (fallen / brechen)"]],
-            options: ["fiel / brach", "fiel / brach", "fell / brach", "fiel / brachte"],
+            options: ["fiel / brach", "fallte / brechte", "fell / brach", "fiel / brachte"],
             answer: "fiel / brach",
             explain: "Fallen → fiel (a→ie, 3ª sg sin terminación). Brechen → brach (e→a, 3ª sg sin terminación).",
           },

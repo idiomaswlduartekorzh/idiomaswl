@@ -195,10 +195,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Marco tiene que hacer algo de noche',
-            lines: [['Marco', '[[0]] arbeite ich manchmal. Das ist anstrengend!']],
+            lines: [['Marco', '[[0]] [[1]] arbeite ich manchmal. Das ist anstrengend!']],
             blanks: [
-              { options: ['In der Nacht', 'Am Nacht', 'Im Nacht', 'Nacht'], answer: 'In der Nacht', explain: '¡Excepción! De noche = "in der Nacht", nunca "am Nacht".' },
-              { options: ['—', 'Nacht', 'Abend', 'Morgen'], answer: '—', explain: 'No se necesita otra palabra: "In der Nacht arbeite ich manchmal."' },
+              { options: ['In', 'Am', 'Im', 'Um'], answer: 'In', explain: 'La expresión fija empieza con "in".' },
+              { options: ['der Nacht', 'die Nacht', 'dem Nacht', 'Nacht'], answer: 'der Nacht', explain: '¡Excepción! De noche = "in der Nacht", nunca "am Nacht".' },
             ],
           },
         ],

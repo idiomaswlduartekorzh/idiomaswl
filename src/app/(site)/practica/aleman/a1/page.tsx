@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lesen', desc: '5 Texte A1: Anna in Berlin, die Familie, das Haus, das Essen, die Schule. Jedes Wort klickbar.', count: '5 Texte · 25 Fragen', href: '/practica/aleman/a1/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatik', desc: 'Los 15 temas del A1: artículos (der/die/das), kein, plural, sein/haben, orden de palabras (verbo en 2), acusativo, modales, verbos separables, es gibt y más. Con explicación, tablas y contraste español→alemán.', count: '15 temas · 200+ ejercicios', href: '/practica/aleman/a1/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatik', desc: 'Los 20 temas del A1: artículos, plural, sein/haben, presente, negación, acusativo, modales, verbos separables, preposiciones y más. Cada tema incluye explicación amplia, tablas, mapa visual y tres PDFs.', count: '20 temas · 800 decisiones', href: '/practica/aleman/a1/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Schreiben', desc: '5 geführte Schreibaufgaben: sich vorstellen, Familie, Wohnung, Aktivitäten, Vorlieben.', count: '5 geführte Aufgaben', href: '/practica/aleman/a1/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Sprechen', desc: '15 Überlebensphrasen auf Deutsch mit detaillierter Aussprache für spanischsprachige Lerner.', count: '15 Grundphrasen', href: '/practica/aleman/a1/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vokabular', desc: '6 Themensets: Familie, Farben, Essen, Wochentage, Körper, Zahlen. Lernkarten + 3 Modi.', count: '6 Sets · 60+ Wörter', href: '/practica/aleman/a1/vocabulario' },

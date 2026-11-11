@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const HABILIDADES = [
   { id: 'lectura', emoji: '📖', name: 'Lectura', eng: 'Lesen', desc: '5 Texte A2 (80-120 Wörter) über Reisen, Arbeit, Meinungen. Interaktives Vokabular, 6 Fragen pro Text.', count: '5 Texte · 30 Fragen', href: '/practica/aleman/a2/lectura' },
-  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatik', desc: 'Perfekt, Dativ, Modalverben im Präteritum, trennbare Verben, Komparativ. 10 Übungen pro Thema.', count: '5 Themen · 50+ Übungen', href: '/practica/aleman/a2/gramatica' },
+  { id: 'gramatica', emoji: '📐', name: 'Gramática', eng: 'Grammatik', desc: '20 temas de Perfekt, Dativ, Wechselpräpositionen, Relativsätze, Adjektivdeklination, Passiv y conectores. Explicación amplia, práctica progresiva y tres PDFs por tema.', count: '20 Themen · 900 Entscheidungen', href: '/practica/aleman/a2/gramatica' },
   { id: 'escritura', emoji: '✍️', name: 'Escritura', eng: 'Schreiben', desc: '5 Schreibaufgaben A2 mit integrierter Grammatik, Mustertext und Checkliste.', count: '5 geführte Texte', href: '/practica/aleman/a2/escritura' },
   { id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Sprechen', desc: '20 Redemittel A2 mit situativem Kontext, Aussprache und formellen/informellen Varianten.', count: '20 wichtige Ausdrücke', href: '/practica/aleman/a2/habla' },
   { id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vokabular', desc: '8 Themenbereiche × 10 Wörter. 3 Übungsmodi: Karteikarten, MCQ, Schreiben.', count: '8 Themen · 80+ Wörter', href: '/practica/aleman/a2/vocabulario' },

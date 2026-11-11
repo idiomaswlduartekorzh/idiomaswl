@@ -19,6 +19,7 @@ import zweiteiligKonnektoren from './zweiteilige-konnektoren-a2'
 import trennbareVerbenPraeteritum from './trennbare-verben-praeteritum-a2'
 import daHinHer from './da-hin-her-a2'
 import partizipAlsAdjektiv from './partizip-als-adjektiv-a2'
+import { closeGermanFoundationTopic } from '../quality-closeout'
 
 const topics: GrammarTopic[] = [
   perfektHaben,
@@ -41,6 +42,6 @@ const topics: GrammarTopic[] = [
   trennbareVerbenPraeteritum,
   daHinHer,
   partizipAlsAdjektiv,
-]
+].map((topic) => closeGermanFoundationTopic(topic, 'a2'))
 
 export default topics

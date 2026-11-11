@@ -208,10 +208,11 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Un gran logro',
-            lines: [['', 'Die Impfung [[0]] von Wissenschaftlern entwickelt [[1]], und sie [[2]] bereits an Millionen Menschen getestet worden.']],
+            lines: [['', 'Die Impfung [[0]] von Wissenschaftlern entwickelt, und sie [[1]] bereits an Millionen Menschen getestet [[2]].']],
             blanks: [
               { options: ['wurde', 'wird', 'ist', 'worden'], answer: 'wurde', explain: 'Passiv Präteritum: wurde + Partizip II. Acción completada en el pasado.' },
               { options: ['ist', 'wurde', 'wird', 'hat'], answer: 'ist', explain: 'Perfekt Passiv: ist + Partizip II + worden. Acción con relevancia actual.' },
+              { options: ['worden', 'geworden', 'werden', 'wurde'], answer: 'worden', explain: 'El Perfekt Passiv termina con "worden", no "geworden".' },
             ],
           },
         ],

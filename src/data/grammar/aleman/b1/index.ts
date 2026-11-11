@@ -19,6 +19,7 @@ import partizipAlsAdjektiv from './partizip-als-adjektiv-b1'
 import indirekteRede from './indirekte-rede-b1'
 import reflexiveVerben from './reflexive-verben-b1'
 import wortbildung from './wortbildung-b1'
+import { closeGermanFoundationTopic } from '../quality-closeout'
 
 const topics: GrammarTopic[] = [
   konjunktivII,
@@ -41,6 +42,6 @@ const topics: GrammarTopic[] = [
   indirekteRede,
   reflexiveVerben,
   wortbildung,
-]
+].map((topic) => closeGermanFoundationTopic(topic, 'b1'))
 
 export default topics

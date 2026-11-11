@@ -176,10 +176,10 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Iris predice que Carlos aprobará',
-            lines: [['Iris', 'Du [[0]] das Examen bestehen, Carlos. Ich bin sicher!']],
+            lines: [['Iris', 'Du [[0]] das Examen [[1]], Carlos. Ich bin sicher!']],
             blanks: [
               { options: ['wirst', 'werde', 'wird', 'werden'], answer: 'wirst', explain: '"Du" + werden → "wirst".' },
-              { options: ['—', 'wirst', 'werden', 'wird'], answer: '—', explain: '"Bestehen" ya está en el texto como infinitivo al final.' },
+              { options: ['bestehen', 'bestehst', 'bestanden', 'zu bestehen'], answer: 'bestehen', explain: 'Con "werden", el infinitivo "bestehen" va al final.' },
             ],
           },
           {

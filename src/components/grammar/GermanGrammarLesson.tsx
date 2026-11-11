@@ -33,7 +33,7 @@ export default function GermanGrammarLesson({ topic, level }: { topic: GrammarTo
   }
 
   return <section className={styles.lesson} style={{ '--kr-blue': '#171717', '--kr-red': '#D7A300', '--kr-cream': '#FFF7D6' } as React.CSSProperties} aria-labelledby="german-grammar-title">
-    <div className={styles.previewFlag}><span>Vollständige fortgeschrittene Lektion</span> Visuelle Karte, drei PDFs und vertiefende Übungen</div>
+    <div className={styles.previewFlag}><span>Vollständige Lektion {level.toUpperCase()}</span> Visuelle Karte, drei PDFs und vertiefende Übungen</div>
     <div className={styles.track} aria-label={`Lernweg deutsche Grammatik ${level.toUpperCase()}`}><span>Erkennen</span><b>→</b><strong>Verstehen</strong><b>→</b><span>Umformen</span><b>→</b><span>Anwenden</span></div>
 
     <header className={styles.hero}><div className={styles.heroCopy}>
@@ -60,12 +60,12 @@ export default function GermanGrammarLesson({ topic, level }: { topic: GrammarTo
 
       {active === 'uebungen' ? <section className={styles.practice} aria-labelledby="german-practice-title"><SectionIntro kicker="Progressives Training" title="Vom Erkennen zur freien Anwendung" copy="Erreichen Sie mindestens 65 %, um fortzufahren. Jede Stufe verbindet Kontext, spätere Korrektur und eigene Produktion." titleId="german-practice-title" /><GrammarTopicClient topic={topic} idioma="aleman" nivel={level} relatedWritingExercises={[]} mode="practiceOnly" uiLanguage="de" /></section> : null}
 
-      {active === 'materialien' ? <section className={styles.resources} aria-labelledby="german-resources-title"><SectionIntro kicker="Lernbibliothek" title="Drei Materialien für Unterricht und Selbststudium" copy="Laden Sie den vollständigen Kurs, das Übungsheft und den getrennten Lösungsschlüssel herunter. Audio folgt in einer späteren Phase." titleId="german-resources-title" /><div className={styles.resourceGrid}>
+      {active === 'materialien' ? <section className={styles.resources} aria-labelledby="german-resources-title"><SectionIntro kicker="Lernbibliothek" title="Drei Materialien für Unterricht und Selbststudium" copy="Laden Sie den vollständigen Kurs, das Übungsheft und den getrennten Lösungsschlüssel herunter." titleId="german-resources-title" /><div className={styles.resourceGrid}>
         <ResourceCard code="WEB" title="Interaktive Lektion" copy={`${topic.practice.levels.length} Stufen und ${activityCount} integrierte Aufgaben.`} status="Bereit zum Lernen" />
         <ResourceCard code="PDF" title="Vollständiger Kurs" copy="Ausführliche Erklärung, visuelle Karte, Beispiele, Übungen und Lösungen." status="Kurs herunterladen" href={resource.pdf} />
-        <ResourceCard code="ÜB" title="Übungsheft" copy={`${activityCount} Lernentscheidungen, druckfreundlich geordnet.`} status="Übungen herunterladen" href={resource.exercisesPdf} />
+        <ResourceCard code="ÜB" title="Übungsheft" copy={`${activityCount} Lernentscheidungen in sechs progressiven Stufen.`} status="Übungen herunterladen" href={resource.exercisesPdf} />
         <ResourceCard code="LÖS" title="Lösungsschlüssel" copy="Musterlösungen mit knapper grammatischer Begründung." status="Lösungen herunterladen" href={resource.answerKeyPdf} />
-      </div><div className={styles.studyPlan}><h3>Empfohlener Lernweg</h3><ol><li><b>10 Min.</b> Kommunikative Absicht verstehen.</li><li><b>10 Min.</b> Visuelle Karte rekonstruieren.</li><li><b>25 Min.</b> Vier Übungsstufen bearbeiten.</li><li><b>10 Min.</b> Drei eigene Beispiele schreiben und prüfen.</li></ol></div></section> : null}
+      </div><div className={styles.studyPlan}><h3>Empfohlener Lernweg</h3><ol><li><b>10 Min.</b> Kommunikative Absicht verstehen.</li><li><b>10 Min.</b> Visuelle Karte rekonstruieren.</li><li><b>25 Min.</b> Sechs Übungsstufen bearbeiten.</li><li><b>10 Min.</b> Drei eigene Beispiele schreiben und prüfen.</li></ol></div></section> : null}
     </div>
 
     <aside className="english-conversion" aria-label="Nächster Schritt beim Deutschlernen"><div><span>Sie möchten einen Lernweg für Ihr Niveau?</span><h2>Aus dieser Übung wird messbarer Fortschritt</h2><p>Bestimmen Sie Ihr Niveau und wählen Sie eine Begleitung, die zu Ihren Zielen passt.</p></div><div><Link href="/nivel-radar" data-german-cta="level-test">Niveau bestimmen</Link><Link href="/clases-de-aleman" data-german-cta="classes">Deutschkurse entdecken</Link></div></aside>

@@ -146,26 +146,26 @@ const topic: GrammarTopic = {
         items: [
           {
             scene: 'El libro recién comprado.',
-            lines: [['', 'Das [[0]] Buch ist neu. (kaufen → Partizip II)']],
+            lines: [['', 'Das [[0]][[1]] Buch ist neu. (kaufen → Partizip II)']],
             blanks: [
-              { options: ['gekaufte', 'kaufende', 'gekauft', 'kaufend'], answer: 'gekaufte', explain: 'Partizip II de "kaufen" = "gekauft" + Adjektivendung -e (neutro Nom. mit bestimmtem Artikel).' },
-              { options: ['—', 'zu', 'schon', 'immer'], answer: '—', explain: 'No se necesita palabra adicional aquí.' },
+              { options: ['gekauft', 'kaufend', 'gekaufen', 'kaufte'], answer: 'gekauft', explain: 'Partizip II de "kaufen" = "gekauft".' },
+              { options: ['e', 'en', 'es', 'er'], answer: 'e', explain: 'Con "das" en nominativo neutro, el adjetivo lleva -e: gekaufte.' },
             ],
           },
           {
             scene: 'Los estudiantes que trabajan duro.',
-            lines: [['', 'Die [[0]] Studenten lernen viel. (arbeiten → Partizip I)']],
+            lines: [['', 'Die [[0]][[1]] Studenten lernen viel. (arbeiten → Partizip I)']],
             blanks: [
-              { options: ['arbeitenden', 'gearbeiteten', 'arbeitend', 'gearbeitet'], answer: 'arbeitenden', explain: 'Partizip I de "arbeiten" = "arbeitend" + -en (plural nach bestimmtem Artikel).' },
-              { options: ['—', 'sehr', 'immer', 'auch'], answer: '—', explain: 'No hay segunda palabra necesaria.' },
+              { options: ['arbeitend', 'gearbeitet', 'arbeiten', 'arbeitete'], answer: 'arbeitend', explain: 'Partizip I de "arbeiten" = "arbeitend".' },
+              { options: ['en', 'e', 'er', 'es'], answer: 'en', explain: 'En plural después de "die", el adjetivo lleva -en: arbeitenden.' },
             ],
           },
           {
             scene: 'La puerta cerrada.',
-            lines: [['', 'Die [[0]] Tür öffnete er langsam. (schließen → Partizip II)']],
+            lines: [['', 'Die [[0]][[1]] Tür öffnete er langsam. (schließen → Partizip II)']],
             blanks: [
-              { options: ['geschlossene', 'schließende', 'geschlossen', 'schließend'], answer: 'geschlossene', explain: 'Partizip II de "schließen" = geschlossen + -e (feminin Nom.).' },
-              { options: ['—', 'zu', 'schon', 'weit'], answer: '—', explain: 'No hay segunda palabra.' },
+              { options: ['geschlossen', 'schließend', 'geschließt', 'schloss'], answer: 'geschlossen', explain: 'Partizip II de "schließen" = "geschlossen".' },
+              { options: ['e', 'en', 'er', 'es'], answer: 'e', explain: 'Con "die" en nominativo femenino, el adjetivo lleva -e: geschlossene.' },
             ],
           },
         ],
