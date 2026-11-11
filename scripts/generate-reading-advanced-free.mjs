@@ -74,12 +74,12 @@ async function requestGemini(message) {
   const key = process.env.GEMINI_API_KEY
   if (!key) throw new Error('GEMINI_API_KEY is not configured')
   const model = args.model ?? 'gemini-3.1-flash-lite'
-  if (!['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-3-flash-preview'].includes(model)) throw new Error('Unsupported Gemini model')
+  if (!['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-3-flash-preview', 'gemini-2.5-flash-lite', 'gemini-2.5-flash'].includes(model)) throw new Error('Unsupported Gemini model')
   const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
     body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: message }] }], generationConfig: {
       responseMimeType: 'application/json', temperature: 0.55,
-      thinkingConfig: { thinkingLevel: model === 'gemini-3.8-flash' ? 'low' : 'minimal' },
+      thinkingConfig: model.startsWith('gemini-2.5-') ? { thinkingBudget: 0 } : { thinkingLevel: model === 'gemini-3.8-flash' ? 'low' : 'minimal' },
     } }),
     signal: AbortSignal.timeout(120_000),
   })
@@ -249,7 +249,7 @@ for (const { language, level, brief } of pending) {
     } catch (error) {
       lastError = error
       console.error(`${language}/${level}/${brief.slug} attempt ${attempt + 1}: ${error.message}`)
-      if (/(?:Gemini|Groq) (?:403|404):/.test(error.message)) break
+      if (/(?:Gemini|Groq) (?:400|403|404):|API_KEY is not configured/.test(error.message)) break
       if (/per day|PerDay|daily quota/i.test(error.message)) break
       if (/429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 65_000))
       else if (/503|high demand/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 15_000 * (attempt + 1)))
@@ -258,7 +258,7 @@ for (const { language, level, brief } of pending) {
   if (!item) {
     failedCount++
     console.error(`Skipped ${language}/${level}/${brief.slug}: ${lastError?.message}`)
-    if (/(?:Gemini|Groq) (?:403|404):|429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(lastError?.message ?? '')) break
+    if (/(?:Gemini|Groq) (?:400|403|404):|API_KEY is not configured|429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(lastError?.message ?? '')) break
     providerOutageStreak = /503|high demand/i.test(lastError?.message ?? '') ? providerOutageStreak + 1 : 0
     if (providerOutageStreak >= 2) { console.error('Provider remains unavailable; stop and resume this batch later.'); break }
     continue
