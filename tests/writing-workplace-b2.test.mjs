@@ -84,3 +84,12 @@ test('Japanese and Korean length guides count characters rather than spaces', ()
   altered[0].model.body = '漢'.repeat(200)
   assert.ok(validateWritingWorkplaceCases(altered, 1, { lengthUnit: 'characters' }).some(issue => issue.includes('model reply should contain 250–900 characters')))
 })
+
+test('a case cannot reuse feedback or annotation labels', () => {
+  const altered = copy()
+  altered[0].questions[0].options[1].feedback = altered[0].questions[0].options[0].feedback
+  altered[0].model.annotations[1].label = altered[0].model.annotations[0].label
+  const issues = validateWritingWorkplaceCases(altered, 20)
+  assert.ok(issues.some(issue => issue.includes('options need distinct feedback')))
+  assert.ok(issues.some(issue => issue.includes('annotation labels must differ')))
+})

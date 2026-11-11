@@ -69,12 +69,15 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3, options 
       if (question.options?.length !== 3) issues.push(`${id}/${question.id}: expected three options.`)
       const optionIds = new Set()
       const optionTexts = new Set()
+      const feedbackTexts = new Set()
       for (const option of question.options ?? []) {
         if (!present(option.id) || !present(option.text) || !present(option.feedback)) issues.push(`${id}/${question.id}: incomplete option.`)
         if (optionIds.has(option.id)) issues.push(`${id}/${question.id}: duplicate option id ${option.id}.`)
         if (optionTexts.has(option.text)) issues.push(`${id}/${question.id}: duplicate option text.`)
+        if (feedbackTexts.has(option.feedback)) issues.push(`${id}/${question.id}: options need distinct feedback.`)
         optionIds.add(option.id)
         optionTexts.add(option.text)
+        feedbackTexts.add(option.feedback)
         if (option.id !== question.correctOptionId && present(option.feedback)) {
           if (option.feedback.trim().startsWith(`«${option.text}»`) || option.feedback.trim().startsWith(`“${option.text}”`)) {
             issues.push(`${id}/${question.id}: distractor feedback echoes the option instead of diagnosing its distinct error.`)
@@ -98,8 +101,11 @@ export function validateWritingWorkplaceCases(cases, expectedCount = 3, options 
     if (modelBodies.has(item?.model?.body)) issues.push(`${id}: model reply repeats another case.`)
     modelBodies.add(item?.model?.body)
     if (item?.model?.annotations?.length !== 4) issues.push(`${id}: model needs four annotated decisions.`)
+    const annotationLabels = new Set()
     for (const note of item?.model?.annotations ?? []) {
       if (!present(note.label) || !present(note.excerpt)) issues.push(`${id}: incomplete model annotation.`)
+      if (annotationLabels.has(note.label)) issues.push(`${id}: model annotation labels must differ.`)
+      annotationLabels.add(note.label)
       if (!(item?.model?.body ?? '').includes(note.excerpt)) issues.push(`${id}: model annotation excerpt is absent from reply.`)
       if (!Array.isArray(note.evidenceIds) || !note.evidenceIds.length) issues.push(`${id}: model annotation lacks evidence.`)
       for (const ref of note.evidenceIds ?? []) if (!factIds.has(ref)) issues.push(`${id}: model annotation cites unknown evidence ${ref}.`)

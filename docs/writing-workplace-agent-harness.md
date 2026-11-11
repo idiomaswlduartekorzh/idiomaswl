@@ -1,8 +1,8 @@
-# Writing laboral B2 · agentes, subagentes y harness
+# Writing laboral B2–C2 · agentes, subagentes y harness
 
 ## Estado tras la aprobación del preview
 
-El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. Inglés, francés, alemán e italiano contienen **20 casos jugables por nivel B2, C1 y C2**. Los demás idiomas siguen en elaboración. No se alteraron los 480 ejercicios A1–B1.
+El propietario aprobó los tres casos iniciales con una corrección transversal: **todo el texto visible debe estar en el idioma estudiado**. Inglés, francés, alemán, italiano y portugués contienen **20 casos jugables por nivel B2, C1 y C2**. Los demás idiomas siguen en elaboración. No se alteraron los 480 ejercicios A1–B1.
 
 Las rutas nuevas conservan `noindex` y no se enlazan desde los hubs hasta pasar revisión editorial y las puertas de integración. La aprobación del formato autorizó la expansión; no equivale a una publicación automática.
 
@@ -61,5 +61,6 @@ La progresión toma como referencia la sección de [interacción escrita y corre
 2. Francés: 60 casos redactados y validados por el harness; revisar editorialmente y completar las puertas de integración.
 3. Alemán: 60 casos redactados, interfaz nativa y harness aprobado; revisar editorialmente y completar las puertas de integración.
 4. Italiano: 60 casos redactados, interfaz nativa y harness aprobado; revisar editorialmente y completar las puertas de integración.
-5. Portugués, ruso, japonés y coreano: crear bancos originales y revisar cada lengua con autores y auditores propios. No traducir literalmente la cortesía ni las situaciones laborales.
-6. Publicar por bancos completos de 20 tras pasar el harness, la revisión lingüística y editorial, el catálogo protegido, TypeScript, build y recorrido en navegador. Registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».
+5. Portugués: 60 casos redactados, interfaz nativa y harness aprobado; revisar editorialmente y completar las puertas de integración.
+6. Ruso, japonés y coreano: crear bancos originales y revisar cada lengua con autores y auditores propios. No traducir literalmente la cortesía ni las situaciones laborales.
+7. Publicar por bancos completos de 20 tras pasar el harness, la revisión lingüística y editorial, el catálogo protegido, TypeScript, build y recorrido en navegador. Registrar SHA de `main`, deployment y smoke antes de llamar a un banco «desplegado».
