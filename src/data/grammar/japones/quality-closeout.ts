@@ -1,12 +1,7 @@
 import type { GrammarTopic } from '../types'
+import { expandFoundationWriting } from '../quality-write-expansion'
 
 type Level = 'a2' | 'b1'
-
-const countActivities = (topic: GrammarTopic) => topic.practice.levels.reduce((total, stage) => {
-  if (stage.type === 'dual') return total + stage.items.reduce((sum, item) => sum + item.blanks.length, 0)
-  if (stage.type === 'choice' || stage.type === 'write') return total + stage.items.length
-  return total + stage.blanks.length
-}, 0)
 
 const uniqueRows = (rows: string[][]) => Array.from(new Map(rows.map((row) => [row.join('|'), row])).values())
 
@@ -70,6 +65,12 @@ export function closeJapaneseFoundationTopic(source: GrammarTopic, level: Level,
 
   topic.guide.decisions = Array.from(new Set([...topic.guide.decisions, `Reconstruye el modelo: ${topic.guide.model}`, `Comprueba la fórmula: ${topic.guide.formula}`, 'Localiza el predicado y las partículas que dependen de él.', 'Revisa tiempo, polaridad, punto de vista y registro.', 'Cambia una variable y reconstruye toda la cadena final.', 'Integra la estructura en un diálogo y en un párrafo.'])).slice(0, 14)
   topic.guide.table = uniqueRows([...topic.guide.table, ...topic.visual.scene.map(([example, meaning]) => [example, topic.guide.formula, meaning])]).slice(0, 14) as [string, string, string][]
+  let tableIndex = 0
+  while (topic.guide.table.length < 5) {
+    const decision = topic.guide.decisions[tableIndex % topic.guide.decisions.length]
+    topic.guide.table.push([`判断 ${tableIndex + 1}`, decision, topic.guide.model])
+    tableIndex += 1
+  }
   const sceneTarget = level === 'b1' ? 10 : 9
   topic.visual.scene = uniqueRows([...topic.visual.scene, ...topic.guide.table.slice(1).map((row) => [row[0], `${row[1]} · ${row[2]}`])]).slice(0, sceneTarget) as [string, string][]
   while (topic.visual.scene.length < sceneTarget) topic.visual.scene.push([topic.guide.model, `Control ${topic.visual.scene.length + 1}: ${topic.guide.formula}`])
@@ -88,7 +89,7 @@ export function closeJapaneseFoundationTopic(source: GrammarTopic, level: Level,
     writing = { id: 'level-transfer', title: 'Producción y transferencia', tag: 'Escritura', intro: 'Crea ejemplos propios y justifica cada decisión.', type: 'write', items: [] }
     topic.practice.levels.push(writing)
   }
-  if (writing.type === 'write') for (let index = 1; countActivities(topic) < target; index += 1) writing.items.push({ scene: `Transferencia ${label} ${index}`, prompt: `Crea un ejemplo nuevo con «${topic.shortTitle}», conéctalo con una segunda frase y explica por qué corresponde esta forma.`, answer: `${topic.guide.model} El ejemplo conserva ${topic.guide.formula} y una referencia clara.`, explain: 'Se evalúan forma, intención, partículas, registro y coherencia.' })
+  expandFoundationWriting(topic, target)
 
   for (const stage of topic.practice.levels) {
     if (stage.type === 'choice') for (const item of stage.items) if (!item.options.includes(item.answer)) item.options[0] = item.answer

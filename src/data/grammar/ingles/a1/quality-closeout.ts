@@ -1,4 +1,5 @@
 import type { GrammarTopic } from '../../types'
+import { expandFoundationWriting } from '../../quality-write-expansion'
 
 const uniqueRows = (rows: string[][]) => Array.from(new Map(rows.map((row) => [row.join('\u241f'), row])).values())
 
@@ -78,21 +79,6 @@ export function closeEnglishA1Topic(source: GrammarTopic): GrammarTopic {
     'complete-sentence self-correction',
   ])).slice(0, 8)
 
-  const interactions = topic.practice.levels.reduce((total, level) => {
-    if (level.type === 'dual') return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0)
-    if (level.type === 'choice' || level.type === 'write') return total + level.items.length
-    return total + level.blanks.length
-  }, 0)
-  if (interactions < 35) {
-    const writeLevel = topic.practice.levels.find((level) => level.type === 'write')
-    if (writeLevel?.type === 'write') {
-      writeLevel.items.push({
-        scene: 'Transferencia adicional',
-        prompt: `Escribe dos ejemplos nuevos de ${topic.shortTitle} y explica en una frase qué decisión controla cada uno.`,
-        answer: `${topic.guide.model} Ambos ejemplos conservan la fórmula ${topic.guide.formula}.`,
-        explain: 'La actividad completa la práctica con producción y justificación propias.',
-      })
-    }
-  }
+  expandFoundationWriting(topic, 35)
   return topic
 }

@@ -40,8 +40,8 @@
     "mission": {
       "es": "Averigua qué explicó la violista sobre esos segundos."
     },
-    "targetText": "Il 9 febbraio sono andato a un concerto in una chiesa di Ferrara. Quattro musicisti, cento sedie, undici euro il biglietto. Alla fine dell'ultimo pezzo nessuno ha applaudito. Non per due secondi: per otto o nove.\n\nNon è stato imbarazzo. Lo so perché li ho contati, quei secondi, e perché ho guardato intorno mentre passavano.\n\nIl programma era di musica antica, quattro pezzi di autori che non conoscevo. Mi è piaciuto il terzo più di tutti, e mi sono piaciuti soprattutto i silenzi tra le frasi, che erano lunghi in un modo che oggi non si sente quasi mai.\n\nCredo che quel silenzio finale sia stato la cosa migliore della serata. Mi dispiace che nessuno lo abbia registrato, e allo stesso tempo so che non si può registrare: appena metti un microfono, quel silenzio diventa un file e non è più la stessa cosa.\n\nDopo il concerto ho parlato con la violista. Le ho detto che mi era piaciuto molto e le ho chiesto se quel silenzio le fosse sembrato strano. Ha risposto: a me sembra che sia stato un regalo.\n\nPoi ha spiegato una cosa che non sapevo. Ha detto che quando suoni in una chiesa il suono continua nell'aria per tre o quattro secondi dopo che hai smesso, e che quel tempo appartiene ancora al pezzo, non al pubblico. Chi batte le mani subito, ha detto, non applaude alla musica: applaude alla fine della musica.\n\nHo controllato dopo, a casa: quella chiesa è del Quattrocento, ha una navata unica e non ci sono né tappeti né tende. Non c'è niente che assorba il suono. Quello che i quattro musicisti hanno suonato per un'ora, quella pietra lo restituiva con quattro secondi di ritardo, e nessuno di noi lo aveva chiesto.\n\nQuando avrò dimenticato i quattro pezzi, mi ricorderò di quei nove secondi. In parte è già successo: sono passati sei mesi e dei pezzi mi resta poco.\n\nIl pubblico era di circa novanta persone, quasi tutte sopra i sessant'anni. Tra vent'anni quel pubblico non ci sarà più, e non credo che i concerti di musica antica in chiesa avranno cento sedie occupate. Ne avranno trenta, forse quaranta.\n\nMa non è il numero il problema. Il problema è che quando quelle novanta persone non ci saranno più, nessuno avrà insegnato a nessun altro che si possono aspettare nove secondi prima di battere le mani. E una cosa che nessuno insegna non si perde in un giorno: si perde senza che nessuno se ne accorga.",
-    "wordCount": 414,
+    "targetText": "Il 9 febbraio sono andato a un concerto in una chiesa di Ferrara. Quattro musicisti, cento sedie, undici euro il biglietto. Alla fine dell'ultimo pezzo nessuno ha applaudito. Non per due secondi: per otto o nove.\n\nNon è stato imbarazzo. Lo so perché li ho contati, quei secondi, e perché ho guardato intorno mentre passavano.\n\nIl programma era di musica antica, quattro pezzi di autori che non conoscevo. Mi è piaciuto il terzo più di tutti, e mi sono piaciuti soprattutto i silenzi tra le frasi, che erano lunghi in un modo che oggi non si sente quasi mai.\n\nCredo che quel silenzio finale sia stato la cosa migliore della serata. Mi dispiace che nessuno lo abbia registrato, e allo stesso tempo so che non si può registrare: appena metti un microfono, quel silenzio diventa un file e non è più la stessa cosa.\n\nDopo il concerto ho parlato con la violista. Le ho detto che mi era piaciuto molto e le ho chiesto se quel silenzio le fosse sembrato strano. Ha risposto: a me sembra che sia stato un regalo.\n\nPoi ha spiegato una cosa che non sapevo. Ha detto che quando suoni in una chiesa il suono continua nell'aria per tre o quattro secondi dopo che hai smesso, e che quel tempo appartiene ancora al pezzo, non al pubblico. Chi batte le mani subito, ha detto, non applaude alla musica: applaude alla fine della musica.\n\nHo controllato dopo, a casa: quella chiesa fu costruita nel Quattrocento, ha una navata unica e non ci sono né tappeti né tende. Non c'è niente che assorba il suono. Quello che i quattro musicisti hanno suonato per un'ora, quella pietra lo restituiva con quattro secondi di ritardo, e nessuno di noi lo aveva chiesto.\n\nQuando avrò dimenticato i quattro pezzi, mi ricorderò di quei nove secondi. In parte è già successo: sono passati sei mesi e dei pezzi mi resta poco.\n\nIl pubblico era di circa novanta persone, quasi tutte sopra i sessant'anni. Tra vent'anni quel pubblico non ci sarà più, e non credo che i concerti di musica antica in chiesa avranno cento sedie occupate. Ne avranno trenta, forse quaranta.\n\nMa non è il numero il problema. Il problema è che quando quelle novanta persone non ci saranno più, nessuno avrà insegnato a nessun altro che si possono aspettare nove secondi prima di battere le mani. E una cosa che nessuno insegna non si perde in un giorno: si perde senza che nessuno se ne accorga.",
+    "wordCount": 415,
     "estimatedMinutes": 17,
     "objectives": [
       {
@@ -58,6 +58,7 @@
       "congiuntivo-passato-b1",
       "futuro-anteriore-b1",
       "gerundio-participio-b1",
+      "passato-remoto-b1",
       "piacere-verbi-simili-a2"
     ],
     "vocabulary": [
@@ -197,10 +198,23 @@
       "congiuntivo-presente-b1",
       "futuro-anteriore-b1",
       "periodo-ipotetico-b1",
+      "passato-remoto-b1",
+      "passato-prossimo-imperfetto-b1",
+      "pronomi-combinati-b1",
+      "ci-e-ne-b1",
+      "forma-passiva-b1",
+      "si-impersonale-passivante-b1",
+      "discorso-indiretto-b1",
+      "relativi-cui-il-quale-b1",
+      "gerundio-participio-b1",
+      "accordo-participio-passato-b1",
+      "connettivi-logici-b1",
+      "nominalizzazione-b1",
+      "comparativi-superlativi-avanzati-b1",
+      "imperativo-pronomi-b1",
       "trapassato-prossimo-b1"
     ],
     "disallowedGrammar": [
-      "passato remoto",
       "trapassato remoto",
       "infinito sostantivato letterario",
       "costruzioni participiali estese"
@@ -208,7 +222,7 @@
     "maxOutOfLevelVocabularyPercent": 6,
     "inferenceBand": "moderate",
     "metrics": {
-      "averageSentenceWords": 15.3,
+      "averageSentenceWords": 15.4,
       "maxSentenceWords": 33,
       "outOfLevelVocabularyPercent": 0,
       "glossedOutOfLevelItems": 0
@@ -218,7 +232,7 @@
       "passed": true,
       "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
-      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+      "notes": "Integra los 20 temas B1 del catálogo, incluido passato remoto como reconocimiento narrativo. El congiuntivo imperfetto aparece dentro del periodo ipotetico dell'impossibilità. Sin trapassato remoto ni construcciones participiales literarias extensas."
     }
   },
   "questions": [

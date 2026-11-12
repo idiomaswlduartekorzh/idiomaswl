@@ -81,6 +81,7 @@ function TablePanel({ blueprint, language, dense = false, ui }: { blueprint: Gra
   const firstWidth = columns >= 5 ? 82 : columns === 3 ? 190 : 220
   const rowFont = dense ? 16 : columns >= 3 ? 17 : 19
   const rowPadding = dense ? '5px 9px' : '9px 12px'
+  const rowClip = columns <= 2 ? 100 : columns === 3 ? 60 : 35
 
   const cellStyle = (index: number): CSSProperties => ({
     display: 'flex',
@@ -106,7 +107,7 @@ function TablePanel({ blueprint, language, dense = false, ui }: { blueprint: Gra
       {rows.map((row, rowIndex) => (
         <div key={`${rowIndex}-${row.join('|')}`} style={{ display: 'flex', flex: 1, minHeight: dense ? 30 : 46, background: rowIndex % 2 ? '#f7f9fc' : '#fff', borderTop: `1px solid ${line}` }}>
           {Array.from({ length: columns }, (_, index) => (
-            <span key={index} style={cellStyle(index)}>{clip(row[index] || '—', dense ? 35 : 52)}</span>
+            <span key={index} style={cellStyle(index)}>{clip(row[index] || '—', dense ? rowClip : Math.max(52, rowClip))}</span>
           ))}
         </div>
       ))}
@@ -216,14 +217,13 @@ function UsagePanel({ topic, blueprint, language, ui }: { topic: GrammarTopic; b
       <div style={{ width: 330, display: 'flex', flexDirection: 'column', justifyContent: 'center', borderRadius: 24, background: language.deep, color: '#fff', padding: '24px' }}>
         <span style={{ color: language.accent, fontSize: 13, fontWeight: 700, letterSpacing: 1.2 }}>{ui.coreIdea}</span>
         <strong style={{ marginTop: 12, fontSize: 25, lineHeight: 1.2 }}>{clip(topic.guide.formula, 92)}</strong>
-        <span style={{ marginTop: 15, color: 'rgba(255,255,255,.72)', fontSize: 14, lineHeight: 1.35 }}>{clip(topic.guide.goal, 112)}</span>
       </div>
       <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 8 }}>
         {rows.map((row, index) => (
           <div key={`${index}-${row.join('|')}`} style={{ display: 'flex', flex: 1, alignItems: 'center', border: `1px solid ${line}`, borderRadius: 14, background: index % 2 ? '#f7f9fc' : '#fff', padding: '9px 14px' }}>
             <span style={{ width: 28, height: 28, flex: '0 0 28px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 9, background: language.accent, color: '#fff', fontSize: 13, fontWeight: 700 }}>{index + 1}</span>
             <strong style={{ width: 265, marginLeft: 13, color: language.deep, fontSize: 17 }}>{clip(row[0] || '', 44)}</strong>
-            <span style={{ flex: 1, color: muted, fontSize: 14, lineHeight: 1.2 }}>{clip(row.slice(1).join(' · '), 68)}</span>
+            <span style={{ flex: 1, color: muted, fontSize: 13, lineHeight: 1.25 }}>{clip(row.slice(1).join(' · '), 118)}</span>
           </div>
         ))}
       </div>

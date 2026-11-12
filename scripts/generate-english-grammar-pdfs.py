@@ -8,6 +8,7 @@ import shutil
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+from pypdf import PdfReader, PdfWriter
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import A4
@@ -703,6 +704,27 @@ def practice_decision_count(topic):
     return total
 
 
+def trim_trailing_blank_pages(path):
+    """Remove branded sheets created when a flowable lands exactly on a page edge."""
+    pdf_path = Path(path)
+    reader = PdfReader(pdf_path)
+    keep = [
+        index for index, page in enumerate(reader.pages)
+        if len((page.extract_text() or '').strip()) >= 80
+    ]
+    if len(keep) == len(reader.pages) or not keep:
+        return
+    writer = PdfWriter()
+    for index in keep:
+        writer.add_page(reader.pages[index])
+    if reader.metadata:
+        writer.add_metadata({key: str(value) for key, value in reader.metadata.items() if value is not None})
+    temporary = pdf_path.with_suffix('.trimmed.pdf')
+    with temporary.open('wb') as handle:
+        writer.write(handle)
+    temporary.replace(pdf_path)
+
+
 def build_advanced_editorial_story(topic):
     story = []
     decisions = practice_decision_count(topic)
@@ -834,7 +856,7 @@ def split_pdf_cover(topic, edition, description, decisions):
     edition_title = l('Exercise workbook', "Cahier d'exercices") if edition == 'exercises' else l('Answer key', 'Corrigé raisonné')
     accent = RED if edition == 'exercises' else BLUE
     return [
-        Spacer(1, 32 * mm),
+        Spacer(1, 16 * mm),
         p(f"{l('ENGLISH', 'FRANÇAIS')} {topic['level']} · {edition_title.upper()}", STYLES['eyebrow']),
         p(topic['shortTitle'], STYLES['cover_title']),
         p(description, STYLES['cover_lead']),
@@ -853,6 +875,17 @@ def split_pdf_cover(topic, edition, description, decisions):
         Spacer(1, 8 * mm),
         p(l('WELEARN STUDY SEQUENCE', 'PARCOURS D’ÉTUDE WELEARN'), STYLES['eyebrow']),
         formula_flow(l(['complete guide', 'exercise workbook', 'answer key', 'retrieval review'], ['cours complet', "cahier d'exercices", 'corrigé', 'rappel actif'])),
+        Spacer(1, 7 * mm),
+        editorial_card(
+            l('Stage check', 'Bilan de l’étape'),
+            l('Pause before continuing', 'Faites une pause avant de continuer'),
+            l(
+                'Underline the trigger or decision point, name the rule, and check that the meaning has not changed.',
+                "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé.",
+            ),
+            PALE_GREEN,
+            accent,
+        ),
     ]
 
 
@@ -880,9 +913,47 @@ def build_exercises_only_story(topic):
         if level_index < len(levels) - 1:
             story += [Spacer(1, 5 * mm), editorial_card(l('Stage check', 'Bilan de l’étape'), l('Pause before continuing', 'Faites une pause avant de continuer'), l('Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé."), PALE_GREEN, BLUE)]
     story += [PageBreak(), *section_heading('07', l('Retrieval', 'Rappel actif'), l('Final self-check', 'Autoévaluation finale'), l('Complete these prompts without reopening the guide.', 'Répondez sans rouvrir le cours.'))]
-    prompts = topic.get('visual', {}).get('reviewFocus', []) or ['form', 'meaning', 'register', 'error correction']
-    for index, focus in enumerate(prompts, 1):
-        story += [practice_box(f'R{index}', l('Review focus', 'Point de révision'), l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.'), lines=3, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
+    focus_prompts = [
+        l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.')
+        for focus in topic.get('visual', {}).get('reviewFocus', [])
+    ]
+    decision_prompts = [
+        l(
+            f'Apply this decision to a new example, then justify it: {decision}.',
+            f'Appliquez cette décision à un nouvel exemple, puis justifiez-la : {decision}.',
+        )
+        for decision in topic.get('guide', {}).get('decisions', [])
+    ]
+    fixed_prompts = l([
+        'Write one correct example and one plausible error; annotate the difference.',
+        'Create a two-line dialogue that makes the target structure necessary.',
+        'State the rule from memory in one sentence, without copying the model.',
+        'Rewrite one example for a different subject, time or register.',
+        'Name the cue that tells the reader which form or structure to choose.',
+        'Correct a likely mistake and explain why the correction preserves meaning.',
+    ], [
+        'Écrivez un exemple correct et une erreur plausible ; annotez la différence.',
+        'Créez un dialogue de deux répliques qui rende la structure cible nécessaire.',
+        'Formulez la règle de mémoire en une phrase, sans recopier le modèle.',
+        'Réécrivez un exemple avec un autre sujet, un autre temps ou un autre registre.',
+        'Nommez l’indice qui permet de choisir la forme ou la structure correcte.',
+        'Corrigez une erreur probable et expliquez pourquoi la correction préserve le sens.',
+    ])
+    prompts = []
+    for prompt in [*focus_prompts, *decision_prompts, *fixed_prompts]:
+        if prompt and prompt not in prompts:
+            prompts.append(prompt)
+        if len(prompts) == 6:
+            break
+    for index, prompt in enumerate(prompts, 1):
+        story += [practice_box(f'R{index}', l('Review focus', 'Point de révision'), prompt, lines=2, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 2.5 * mm)]
+    story += [editorial_card(
+        l('Stage check', 'Bilan de l’étape'),
+        l('Pause before continuing', 'Faites une pause avant de continuer'),
+        l('Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé."),
+        PALE_GREEN,
+        BLUE,
+    )]
     return story
 
 
@@ -905,6 +976,13 @@ def build_answer_key_only_story(topic):
     labels = l(['Trigger or context', 'Auxiliary or structural choice', 'Main verb or clause form', 'Meaning and register'], ['Déclencheur ou contexte', 'Choix structurel', 'Forme verbale ou propositionnelle', 'Sens et registre'])
     for label in labels:
         story += [practice_box('CHECK', label, l('What went wrong? What rule will prevent the same error next time?', 'Quelle erreur avez-vous commise ? Quelle règle permettra de l’éviter ?'), lines=3, background=WHITE), Spacer(1, 3 * mm)]
+    story += [p(l('WELEARN STUDY SEQUENCE', 'PARCOURS D’ÉTUDE WELEARN'), STYLES['eyebrow']), formula_flow(l(['complete guide', 'exercise workbook', 'answer key', 'retrieval review'], ['cours complet', "cahier d'exercices", 'corrigé', 'rappel actif'])), Spacer(1, 5 * mm), editorial_card(
+        l('Retrieval', 'Rappel actif'),
+        l('Final self-check', 'Autoévaluation finale'),
+        l('Complete these prompts without reopening the guide.', 'Répondez sans rouvrir le cours.'),
+        PALE_RED,
+        RED,
+    )]
     return story
 
 
@@ -935,7 +1013,11 @@ def build_advanced_standard_story(topic):
     outcome_cells = []
     for index, outcome in enumerate(topic['outcomes'], 1):
         outcome_cells.append([p(l(f'Outcome {index}', f'Objectif {index}'), STYLES['eyebrow']), p(outcome, STYLES['card_body'])])
-    story.append(Table([[outcome_cells[0], outcome_cells[1]], [outcome_cells[2], outcome_cells[3]]], colWidths=[84.5 * mm] * 2, style=TableStyle([
+    outcome_columns = 3 if len(outcome_cells) == 3 else 2
+    outcome_rows = [outcome_cells[index:index + outcome_columns] for index in range(0, len(outcome_cells), outcome_columns)]
+    if outcome_rows and len(outcome_rows[-1]) < outcome_columns:
+        outcome_rows[-1].extend([''] * (outcome_columns - len(outcome_rows[-1])))
+    story.append(Table(outcome_rows, colWidths=[169 * mm / outcome_columns] * outcome_columns, style=TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('BOX', (0, 0), (-1, -1), .6, LINE),
         ('INNERGRID', (0, 0), (-1, -1), .5, LINE), ('ROWBACKGROUNDS', (0, 0), (-1, -1), [WHITE, PALE_RED]),
         ('LEFTPADDING', (0, 0), (-1, -1), 8), ('RIGHTPADDING', (0, 0), (-1, -1), 8),
@@ -1033,7 +1115,23 @@ def build_story(topic):
     if IS_RUSSIAN and not advanced: study_copy='Прочитайте объяснение, восстановите карту по памяти, выполните шесть этапов и только затем проверьте ответы. Обоснуйте каждое решение через модель.'
     if IS_KOREAN and not advanced: study_copy='설명을 읽고, 보지 않고 시각 지도를 다시 만든 뒤, 여섯 단계를 완료하세요. 마지막에만 정답을 확인하고 각 선택을 모델로 설명하세요.'
     if IS_JAPANESE and not advanced: study_copy='解説を読み、見ずに視覚マップを再現し、六段階の練習を終えてから答えを確認します。各判断を中心モデルで説明してください。'
-    story += [Spacer(1, 3 * mm), info_box(labels['study'], study_copy, PALE_RED), PageBreak()]
+    route_steps = l(['complete guide', 'exercise workbook', 'answer key', 'retrieval review'], ['cours complet', "cahier d'exercices", 'corrigé', 'rappel actif'])
+    story += [
+        Spacer(1, 3 * mm),
+        info_box(labels['study'], study_copy, PALE_RED),
+        Spacer(1, 6 * mm),
+        p(l('WELEARN STUDY SEQUENCE', 'PARCOURS D’ÉTUDE WELEARN'), STYLES['eyebrow']),
+        formula_flow(route_steps),
+        Spacer(1, 5 * mm),
+        editorial_card(
+            l('Stage check', 'Bilan de l’étape'),
+            l('Pause before continuing', 'Faites une pause avant de continuer'),
+            l('Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé."),
+            PALE_GREEN,
+            BLUE,
+        ),
+        PageBreak(),
+    ]
     story += [p(labels['understand'], STYLES['eyebrow']), p(labels['essential'], STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
         block = [p(section['heading'], STYLES['h2'])] + [p(paragraph, STYLES['body']) for paragraph in section.get('paragraphs', [])]
@@ -1091,7 +1189,24 @@ def build_story(topic):
     if IS_RUSSIAN and not advanced: closing_copy='Напишите три новых предложения, прочитайте их вслух и вернитесь к визуальной карте через сутки.'
     if IS_KOREAN and not advanced: closing_copy='새 문장 세 개를 쓰고 소리 내어 읽은 뒤, 하루 안에 시각 지도를 다시 확인하세요.'
     if IS_JAPANESE and not advanced: closing_copy='新しい文を三つ書いて声に出して読み、24時間以内に視覚マップをもう一度確認してください。'
-    story += [Spacer(1, 4 * mm), info_box(labels['close'], closing_copy, PALE_BLUE)]
+    review_rows = [[
+        l('Review focus', 'Point de révision'),
+        l('Retrieval', 'Rappel actif'),
+        l('Feedback', 'Rétroaction'),
+    ]]
+    for index, focus in enumerate((topic['visual'].get('reviewFocus') or [topic['guide']['formula']])[:4]):
+        review_rows.append([
+            focus,
+            l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.'),
+            topic['guide']['decisions'][index % len(topic['guide']['decisions'])],
+        ])
+    story += [
+        Spacer(1, 4 * mm),
+        info_box(labels['close'], closing_copy, PALE_BLUE),
+        Spacer(1, 5 * mm),
+        p(l('Retrieval', 'Rappel actif'), STYLES['h1']),
+        data_table(review_rows),
+    ]
     return story
 
 
@@ -1106,6 +1221,7 @@ def main():
         filename = f"idiomaswl-{topic['slug']}.pdf" if topic['slug'].endswith(f'-{level}') else f"idiomaswl-{topic['slug']}-{level}.pdf"
         target = output_dir / filename
         Workbook(str(target), topic).build(build_story(topic))
+        trim_trailing_blank_pages(target)
         shutil.copy2(target, public_dir / filename)
         print(target.relative_to(ROOT))
         if level in ('a1', 'a2', 'b1', 'b2', 'c1', 'c2'):
@@ -1116,6 +1232,8 @@ def main():
             answer_key_target = output_dir / answer_key_filename
             Workbook(str(exercises_target), topic, 'exercises').build(build_exercises_only_story(topic))
             Workbook(str(answer_key_target), topic, 'answer-key').build(build_answer_key_only_story(topic))
+            trim_trailing_blank_pages(exercises_target)
+            trim_trailing_blank_pages(answer_key_target)
             shutil.copy2(exercises_target, public_dir / exercises_filename)
             shutil.copy2(answer_key_target, public_dir / answer_key_filename)
             print(exercises_target.relative_to(ROOT))

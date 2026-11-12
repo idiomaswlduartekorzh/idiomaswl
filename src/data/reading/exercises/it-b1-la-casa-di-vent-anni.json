@@ -57,8 +57,6 @@
     "grammarFocus": [
       "futuro-anteriore-b1",
       "periodo-ipotetico-b1",
-      "passato-remoto-b1",
-      "passato-prossimo-imperfetto-b1",
       "verbi-riflessivi-a2"
     ],
     "vocabulary": [
@@ -198,10 +196,23 @@
       "congiuntivo-presente-b1",
       "futuro-anteriore-b1",
       "periodo-ipotetico-b1",
+      "passato-remoto-b1",
+      "passato-prossimo-imperfetto-b1",
+      "pronomi-combinati-b1",
+      "ci-e-ne-b1",
+      "forma-passiva-b1",
+      "si-impersonale-passivante-b1",
+      "discorso-indiretto-b1",
+      "relativi-cui-il-quale-b1",
+      "gerundio-participio-b1",
+      "accordo-participio-passato-b1",
+      "connettivi-logici-b1",
+      "nominalizzazione-b1",
+      "comparativi-superlativi-avanzati-b1",
+      "imperativo-pronomi-b1",
       "trapassato-prossimo-b1"
     ],
     "disallowedGrammar": [
-      "passato remoto",
       "trapassato remoto",
       "infinito sostantivato letterario",
       "costruzioni participiali estese"
@@ -219,7 +230,7 @@
       "passed": true,
       "assessor": "Zhanna Korzh — revisión de lengua y pedagogía",
       "assessedAt": "2026-08-18T00:00:00-05:00",
-      "notes": "Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell'impossibilità, que es el propio tema del nivel. Sin passato remoto."
+      "notes": "Integra los 20 temas B1 del catálogo, incluido passato remoto como reconocimiento narrativo. El congiuntivo imperfetto aparece dentro del periodo ipotetico dell'impossibilità. Sin trapassato remoto ni construcciones participiales literarias extensas."
     }
   },
   "questions": [

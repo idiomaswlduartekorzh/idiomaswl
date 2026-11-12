@@ -1,14 +1,7 @@
 import type { GrammarTopic } from '../../types'
+import { expandFoundationWriting } from '../../quality-write-expansion'
 
 const uniqueRows = (rows: string[][]) => Array.from(new Map(rows.map((row) => [row.join('\u241f'), row])).values())
-
-function interactionCount(topic: GrammarTopic): number {
-  return topic.practice.levels.reduce((total, level) => {
-    if (level.type === 'dual') return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0)
-    if (level.type === 'choice' || level.type === 'write') return total + level.items.length
-    return total + level.blanks.length
-  }, 0)
-}
 
 export function closeEnglishB1Topic(source: GrammarTopic): GrammarTopic {
   const topic = structuredClone(source)
@@ -112,19 +105,7 @@ export function closeEnglishB1Topic(source: GrammarTopic): GrammarTopic {
     'independent retrieval after 24 hours',
   ])).slice(0, 10)
 
-  const writeLevel = topic.practice.levels.find((level) => level.type === 'write')
-  if (writeLevel?.type === 'write') {
-    let sequence = 1
-    while (interactionCount(topic) < 50) {
-      writeLevel.items.push({
-        scene: `Transferencia B1 ${sequence}`,
-        prompt: `Escribe un párrafo breve que use ${topic.shortTitle}, añade una alternativa cercana y explica qué señal de significado controla la forma elegida.`,
-        answer: `${topic.guide.model} El párrafo conserva ${topic.guide.formula}, mantiene una referencia clara y conecta la estructura con una consecuencia o contraste.`,
-        explain: 'La producción comprueba forma, significado, cohesión y capacidad de justificar la elección dentro de un texto.',
-      })
-      sequence += 1
-    }
-  }
+  expandFoundationWriting(topic, 50)
 
   return topic
 }

@@ -1,14 +1,7 @@
 import type { GrammarTopic } from '../../types'
+import { expandFoundationWriting } from '../../quality-write-expansion'
 
 const uniqueRows = (rows: string[][]) => Array.from(new Map(rows.map((row) => [row.join('\u241f'), row])).values())
-
-function interactionCount(topic: GrammarTopic): number {
-  return topic.practice.levels.reduce((total, level) => {
-    if (level.type === 'dual') return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0)
-    if (level.type === 'choice' || level.type === 'write') return total + level.items.length
-    return total + level.blanks.length
-  }, 0)
-}
 
 export function closeEnglishA2Topic(source: GrammarTopic): GrammarTopic {
   const topic = structuredClone(source)
@@ -96,18 +89,6 @@ export function closeEnglishA2Topic(source: GrammarTopic): GrammarTopic {
     'connected-text self-correction',
   ])).slice(0, 8)
 
-  const writeLevel = topic.practice.levels.find((level) => level.type === 'write')
-  if (writeLevel?.type === 'write') {
-    let sequence = 1
-    while (interactionCount(topic) < 40) {
-      writeLevel.items.push({
-        scene: `Transferencia A2 ${sequence}`,
-        prompt: `Escribe un ejemplo nuevo de ${topic.shortTitle}, intégralo en dos oraciones conectadas y explica qué señal controla la forma elegida.`,
-        answer: `${topic.guide.model} El ejemplo conserva la fórmula ${topic.guide.formula} y la conecta con un contexto claro.`,
-        explain: 'La producción comprueba forma, significado y continuidad del mensaje, no solo una respuesta aislada.',
-      })
-      sequence += 1
-    }
-  }
+  expandFoundationWriting(topic, 40)
   return topic
 }

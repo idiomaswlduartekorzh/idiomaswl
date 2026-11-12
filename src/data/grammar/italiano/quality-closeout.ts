@@ -1,16 +1,9 @@
 import type { GrammarTopic } from '../types'
+import { expandFoundationWriting } from '../quality-write-expansion'
 
 type FoundationLevel = 'a1' | 'a2' | 'b1'
 
 const uniqueRows = (rows: string[][]) => Array.from(new Map(rows.map((row) => [row.join('\u241f'), row])).values())
-
-function interactionCount(topic: GrammarTopic): number {
-  return topic.practice.levels.reduce((total, level) => {
-    if (level.type === 'dual') return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0)
-    if (level.type === 'choice' || level.type === 'write') return total + level.items.length
-    return total + level.blanks.length
-  }, 0)
-}
 
 export function closeItalianFoundationTopic(source: GrammarTopic, level: FoundationLevel, order: number): GrammarTopic {
   const topic = structuredClone(source)
@@ -89,14 +82,6 @@ export function closeItalianFoundationTopic(source: GrammarTopic, level: Foundat
   while (topic.visual.scene.length < sceneTarget) topic.visual.scene.push([topic.guide.model, `Controllo ${topic.visual.scene.length + 1}: ${topic.guide.decisions[topic.visual.scene.length % topic.guide.decisions.length]}`])
   topic.visual.reviewFocus = Array.from(new Set([...(topic.visual.reviewFocus ?? []), topic.guide.formula, 'coniugazione, accordo e riferimento', 'preposizioni, clitici e ordine', 'autocorrezione nel testo'])).slice(0, 10)
 
-  const target = level === 'b1' ? 50 : level === 'a2' ? 45 : 40
-  const writeLevel = topic.practice.levels.find((practice) => practice.type === 'write')
-  if (writeLevel?.type === 'write') {
-    let sequence = 1
-    while (interactionCount(topic) < target) {
-      writeLevel.items.push({ scene: `Trasferimento ${levelLabel} ${sequence}`, prompt: `Scrivi un esempio nuovo con ${topic.shortTitle}, collegalo a una seconda frase e spiega che cosa controlla forma, accordo e ordine.`, answer: `${topic.guide.model} L’esempio conserva ${topic.guide.formula}, un referente chiaro e tutti gli accordi necessari.`, explain: 'La produzione verifica forma, significato, riferimento e continuità testuale.' })
-      sequence += 1
-    }
-  }
+  expandFoundationWriting(topic, level === 'b1' ? 50 : level === 'a2' ? 45 : 40, 'it')
   return topic
 }

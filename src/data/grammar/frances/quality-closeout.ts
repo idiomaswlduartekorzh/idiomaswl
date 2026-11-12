@@ -1,16 +1,9 @@
 import type { GrammarTopic } from '../types'
+import { expandFoundationWriting } from '../quality-write-expansion'
 
 type FoundationLevel = 'a1' | 'a2' | 'b1'
 
 const uniqueRows = (rows: string[][]) => Array.from(new Map(rows.map((row) => [row.join('\u241f'), row])).values())
-
-function interactionCount(topic: GrammarTopic): number {
-  return topic.practice.levels.reduce((total, level) => {
-    if (level.type === 'dual') return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0)
-    if (level.type === 'choice' || level.type === 'write') return total + level.items.length
-    return total + level.blanks.length
-  }, 0)
-}
 
 export function closeFrenchFoundationTopic(source: GrammarTopic, level: FoundationLevel, order: number): GrammarTopic {
   const topic = structuredClone(source)
@@ -117,20 +110,7 @@ export function closeFrenchFoundationTopic(source: GrammarTopic, level: Foundati
     'autocorrección en texto conectado',
   ])).slice(0, 10)
 
-  const minimumInteractions = level === 'b1' ? 50 : level === 'a2' ? 45 : 40
-  const writeLevel = topic.practice.levels.find((practice) => practice.type === 'write')
-  if (writeLevel?.type === 'write') {
-    let sequence = 1
-    while (interactionCount(topic) < minimumInteractions) {
-      writeLevel.items.push({
-        scene: `Transfert ${levelLabel} ${sequence}`,
-        prompt: `Escribe un ejemplo nuevo con ${topic.shortTitle}, intégralo en dos oraciones conectadas y explica qué controla la forma, la concordancia y el orden.`,
-        answer: `${topic.guide.model} El ejemplo conserva ${topic.guide.formula}, una referencia clara y todas las concordancias necesarias.`,
-        explain: 'La producción comprueba forma, sentido, referencia y continuidad, no solamente una frase aislada.',
-      })
-      sequence += 1
-    }
-  }
+  expandFoundationWriting(topic, level === 'b1' ? 50 : level === 'a2' ? 45 : 40)
 
   return topic
 }

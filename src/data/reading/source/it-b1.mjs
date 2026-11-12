@@ -4,11 +4,8 @@
 //
 // Criterio del nivel
 // -----------------
-// AVISO SOBRE EL CURRÍCULO: el B1 de italiano tiene 6 temas de gramática, no 20 como los
-// demás niveles del repositorio. Las diez lecturas cubren los 6 (100 %), pero eso obliga a
-// que cada tema salga en tres o cuatro lecturas en lugar de en una. No es una decisión
-// editorial: es lo que hay en `src/data/grammar/italiano/b1/`. Cuando ese currículo se
-// complete, estas diez admiten temas nuevos sin reescribir el texto, solo el grammarFocus.
+// El currículo B1 ya contiene 20 temas. Las diez lecturas reutilizan esos temas en contexto
+// y cada foco declarado debe pertenecer al catálogo acumulado A1–B1.
 //
 // Banda de 380-450 palabras. A esta longitud una lectura ya sostiene una idea que se
 // desarrolla, cambia de dirección y se cierra.
@@ -39,7 +36,12 @@ const EARLIER = [
 
 const B1_GRAMMAR = [
   'condizionale-passato-b1', 'congiuntivo-passato-b1', 'congiuntivo-presente-b1',
-  'futuro-anteriore-b1', 'periodo-ipotetico-b1', 'trapassato-prossimo-b1',
+  'futuro-anteriore-b1', 'periodo-ipotetico-b1', 'passato-remoto-b1',
+  'passato-prossimo-imperfetto-b1', 'pronomi-combinati-b1', 'ci-e-ne-b1',
+  'forma-passiva-b1', 'si-impersonale-passivante-b1', 'discorso-indiretto-b1',
+  'relativi-cui-il-quale-b1', 'gerundio-participio-b1', 'accordo-participio-passato-b1',
+  'connettivi-logici-b1', 'nominalizzazione-b1', 'comparativi-superlativi-avanzati-b1',
+  'imperativo-pronomi-b1', 'trapassato-prossimo-b1',
 ]
 
 export default {
@@ -51,7 +53,7 @@ export default {
   status: 'published',
   seriesId: 'italiano-b1-lectura-10',
   allowedGrammar: [...EARLIER, ...B1_GRAMMAR],
-  disallowedGrammar: ['passato remoto', 'trapassato remoto', 'infinito sostantivato letterario', 'costruzioni participiali estese'],
+  disallowedGrammar: ['trapassato remoto', 'infinito sostantivato letterario', 'costruzioni participiali estese'],
   maxOutOfLevelVocabularyPercent: 6,
   inferenceBand: 'moderate',
   scriptSupport: { furigana: false, romanization: 'none', stressMarks: false, tokenizationMode: 'space' },
@@ -59,7 +61,7 @@ export default {
     'Puedes seguir un texto italiano largo que desarrolla una idea y cambia de dirección, distinguir el hecho de la opinión por la forma del verbo, y justificar una inferencia cruzando dos pasajes distintos.',
   assessor: 'Zhanna Korzh — revisión de lengua y pedagogía',
   assessedAt: '2026-08-18T00:00:00-05:00',
-  levelNotes: 'Congiuntivo presente y passato, condizionale passato, futuro anteriore, trapassato prossimo y las tres condicionales. El congiuntivo imperfetto aparece solo dentro del periodo ipotetico dell\'impossibilità, que es el propio tema del nivel. Sin passato remoto.',
+  levelNotes: 'Integra los 20 temas B1 del catálogo, incluido passato remoto como reconocimiento narrativo. El congiuntivo imperfetto aparece dentro del periodo ipotetico dell\'impossibilità. Sin trapassato remoto ni construcciones participiales literarias extensas.',
   lastModified: '2026-08-18T00:00:00-05:00',
   review: {
     author: 'José David Duarte Silva',
@@ -86,7 +88,7 @@ export default {
       mission: 'Averigua para qué sirve de verdad un presupuesto escrito, según ella.',
       seoTitle: 'Lectura de italiano B1: el presupuesto que no escribí | WeLearn',
       seoDescription: 'Lee un relato en italiano B1 y practica el periodo ipotetico y el condizionale passato. Con vocabulario glosado y seis preguntas de comprensión.',
-      grammarFocus: ['periodo-ipotetico-b1', 'condizionale-passato-b1', 'passato-prossimo-avere-a2'],
+      grammarFocus: ['periodo-ipotetico-b1', 'condizionale-passato-b1', 'forma-passiva-b1', 'pronomi-combinati-b1', 'passato-prossimo-avere-a2'],
       text: `Faccio l'idraulico da diciannove anni e ho un solo rimpianto professionale. Non è un lavoro fatto male. È un preventivo che non ho scritto.
 
 Nel 2019 la signora Ferri, che abita al piano sotto il mio, mi ha chiesto di rifare i tubi del bagno. Abitiamo nello stesso palazzo da undici anni. Le ho detto una cifra a voce, in ascensore, in dieci secondi: milleduecento euro. Lei ha detto va bene. Non ho scritto niente, perché tra vicini non si scrive.
@@ -223,7 +225,7 @@ Credo che sia la cosa più utile che ho imparato in diciannove anni, e non l'ho 
       mission: 'Averigua por qué votó a favor alguien que no va a usarlo nunca.',
       seoTitle: 'Lectura de italiano B1: seis contra seis | WeLearn',
       seoDescription: 'Lee una crónica de asamblea en italiano B1 y practica el congiuntivo presente y passato. Con vocabulario glosado y seis preguntas de comprensión.',
-      grammarFocus: ['congiuntivo-presente-b1', 'congiuntivo-passato-b1', 'congiunzioni-logiche-a2'],
+      grammarFocus: ['congiuntivo-presente-b1', 'congiuntivo-passato-b1', 'connettivi-logici-b1', 'si-impersonale-passivante-b1', 'congiunzioni-logiche-a2'],
       text: `L'assemblea di condominio del 14 marzo è durata tre ore e venti minuti per decidere una cosa che si decide in cinque: se mettere l'ascensore o no.
 
 Il palazzo ha cinque piani e non ha ascensore. È del 1961. Ci sono dodici appartamenti e dodici voti.
@@ -364,7 +366,7 @@ Dubito che il verbale dell'assemblea contenga questa frase. I verbali registrano
       mission: 'Averigua qué hay en el cajón de abajo a la derecha y por qué no está en el inventario.',
       seoTitle: 'Lectura de italiano B1: cuando hayas leído esta carta | WeLearn',
       seoDescription: 'Lee una carta en italiano B1 y practica el futuro anteriore y el trapassato prossimo. Con vocabulario glosado y seis preguntas de comprensión.',
-      grammarFocus: ['futuro-anteriore-b1', 'trapassato-prossimo-b1', 'da-presente-a2'],
+      grammarFocus: ['futuro-anteriore-b1', 'trapassato-prossimo-b1', 'passato-prossimo-imperfetto-b1', 'discorso-indiretto-b1', 'da-presente-a2'],
       text: `Cara collega, o caro collega,
 
 quando avrai letto questa lettera io sarò già andata via. Lascio la segreteria della scuola media Falcone dopo ventotto anni. Il preside mi ha chiesto di scrivere le istruzioni per chi viene dopo. Ne ho scritte due versioni: quella ufficiale, che troverai nel raccoglitore blu, e questa.
@@ -505,7 +507,7 @@ Buona fortuna. Anna.`,
       mission: 'Averigua por qué no dijo nada inteligente cuando aquel hombre le habló de su mujer.',
       seoTitle: 'Lectura de italiano B1: la farmacia que abre de noche | WeLearn',
       seoDescription: 'Lee un diario de guardia en italiano B1 y practica el congiuntivo presente y el periodo ipotetico. Con vocabulario glosado y seis preguntas.',
-      grammarFocus: ['congiuntivo-presente-b1', 'periodo-ipotetico-b1', 'pronomi-relativi-a2'],
+      grammarFocus: ['congiuntivo-presente-b1', 'periodo-ipotetico-b1', 'relativi-cui-il-quale-b1', 'ci-e-ne-b1', 'pronomi-relativi-a2'],
       text: `Faccio il turno di notte in farmacia due volte al mese, dalle venti alle otto del mattino. La farmacia è in una strada che di giorno è piena di uffici e di notte è completamente vuota.
 
 Chi crede che di notte non venga nessuno si sbaglia. Vengono tra le venti e le due, poi c'è un buco di tre ore, poi ricominciano verso le cinque.
@@ -646,7 +648,7 @@ Questo non è assistenza sanitaria e non è amicizia. È un banco, una luce acce
       mission: 'Averigua cuál de las dos razones para no llamar era la verdadera.',
       seoTitle: 'Lectura de italiano B1: debería haber llamado | WeLearn',
       seoDescription: 'Lee una confesión en italiano B1 y practica el condizionale passato y el trapassato prossimo. Con vocabulario glosado y seis preguntas.',
-      grammarFocus: ['condizionale-passato-b1', 'trapassato-prossimo-b1', 'imperfetto-a2'],
+      grammarFocus: ['condizionale-passato-b1', 'trapassato-prossimo-b1', 'accordo-participio-passato-b1', 'imperfetto-a2'],
       text: `Con Marco eravamo amici da quattordici anni. Poi, nel 2018, abbiamo litigato per una cosa che oggi non riesco a raccontare senza vergognarmi: un prestito di quattrocento euro che gli avevo fatto e che lui aveva restituito in ritardo, con un messaggio che a me è sembrato freddo.
 
 Gli avevo scritto una cosa cattiva. Lui aveva risposto con una cosa peggiore. Poi ci siamo fermati entrambi, che è la cosa più stupida che due adulti possano fare.
@@ -785,7 +787,7 @@ L'unica cosa che ho imparato è che la telefonata non era difficile. Era solo la
       mission: 'Averigua qué explicó la violista sobre esos segundos.',
       seoTitle: 'Lectura de italiano B1: nadie aplaudió | WeLearn',
       seoDescription: 'Lee una crónica en italiano B1 y practica el congiuntivo passato y el futuro anteriore. Con vocabulario glosado y seis preguntas de comprensión.',
-      grammarFocus: ['congiuntivo-passato-b1', 'futuro-anteriore-b1', 'piacere-verbi-simili-a2'],
+      grammarFocus: ['congiuntivo-passato-b1', 'futuro-anteriore-b1', 'gerundio-participio-b1', 'passato-remoto-b1', 'piacere-verbi-simili-a2'],
       text: `Il 9 febbraio sono andato a un concerto in una chiesa di Ferrara. Quattro musicisti, cento sedie, undici euro il biglietto. Alla fine dell'ultimo pezzo nessuno ha applaudito. Non per due secondi: per otto o nove.
 
 Non è stato imbarazzo. Lo so perché li ho contati, quei secondi, e perché ho guardato intorno mentre passavano.
@@ -798,7 +800,7 @@ Dopo il concerto ho parlato con la violista. Le ho detto che mi era piaciuto mol
 
 Poi ha spiegato una cosa che non sapevo. Ha detto che quando suoni in una chiesa il suono continua nell'aria per tre o quattro secondi dopo che hai smesso, e che quel tempo appartiene ancora al pezzo, non al pubblico. Chi batte le mani subito, ha detto, non applaude alla musica: applaude alla fine della musica.
 
-Ho controllato dopo, a casa: quella chiesa è del Quattrocento, ha una navata unica e non ci sono né tappeti né tende. Non c'è niente che assorba il suono. Quello che i quattro musicisti hanno suonato per un'ora, quella pietra lo restituiva con quattro secondi di ritardo, e nessuno di noi lo aveva chiesto.
+Ho controllato dopo, a casa: quella chiesa fu costruita nel Quattrocento, ha una navata unica e non ci sono né tappeti né tende. Non c'è niente che assorba il suono. Quello che i quattro musicisti hanno suonato per un'ora, quella pietra lo restituiva con quattro secondi di ritardo, e nessuno di noi lo aveva chiesto.
 
 Quando avrò dimenticato i quattro pezzi, mi ricorderò di quei nove secondi. In parte è già successo: sono passati sei mesi e dei pezzi mi resta poco.
 
@@ -922,7 +924,7 @@ Ma non è il numero il problema. Il problema è che quando quelle novanta person
       mission: 'Averigua qué escribió Yusuf en el papel del escaparate el último día.',
       seoTitle: 'Lectura de italiano B1: la tienda que abrió demasiado tarde | WeLearn',
       seoDescription: 'Lee un artículo de opinión en italiano B1 y practica el periodo ipotetico y los comparativos. Con vocabulario glosado y seis preguntas.',
-      grammarFocus: ['periodo-ipotetico-b1', 'congiuntivo-presente-b1', 'comparativi-a2'],
+      grammarFocus: ['periodo-ipotetico-b1', 'congiuntivo-presente-b1', 'comparativi-superlativi-avanzati-b1', 'nominalizzazione-b1', 'comparativi-a2'],
       text: `In via Sanzio, al numero 12, c'era un negozio di riparazione di elettrodomestici che ha aperto nel marzo del 2024 e ha chiuso nel maggio del 2025. Quattordici mesi.
 
 Il proprietario si chiama Yusuf, ha quarantatré anni e ha fatto lo stesso lavoro per undici anni come dipendente, in un'azienda più grande e molto meno interessante.
@@ -1200,7 +1202,7 @@ Adesso ho quarantasei anni e ho un dubbio che non riesco a risolvere. Se avessi 
       mission: 'Averigua qué dos preguntas dice el médico que la gente confunde.',
       seoTitle: 'Lectura de italiano B1: dígame usted qué debo hacer | WeLearn',
       seoDescription: 'Lee una escena de consulta en italiano B1 y practica el congiuntivo presente y la forma de cortesía con Lei. Con vocabulario glosado y seis preguntas.',
-      grammarFocus: ['congiuntivo-presente-b1', 'congiuntivo-passato-b1', 'forma-cortesia-a2'],
+      grammarFocus: ['congiuntivo-presente-b1', 'congiuntivo-passato-b1', 'imperativo-pronomi-b1', 'forma-cortesia-a2'],
       text: `Il dottor Ferrante è ortopedico e ha una cosa che nessun altro medico che ho conosciuto ha: un cronometro sul tavolo. Non lo usa per me. Lo usa per sé.
 
 Sono andato da lui per il ginocchio sinistro. Ho quarantanove anni, gioco a calcetto il giovedì e da otto mesi non riesco a scendere le scale senza pensarci prima.

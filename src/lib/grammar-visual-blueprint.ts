@@ -139,9 +139,14 @@ function splitFormula(formula: string): string[] {
 }
 
 function sourceRows(topic: GrammarTopic): { headers: string[]; rows: string[][] } {
-  const candidates = [topic.guide.table, ...topic.seo.flatMap((section) => section.table ? [section.table] : [])]
+  // SEO explanation tables carry explicit header rows. Foundation guide tables
+  // often start directly with an example (for example: I | am | I am ready),
+  // so treating their first row as a header produces a misleading infographic.
+  const candidates = [...topic.seo.flatMap((section) => section.table ? [section.table] : []), topic.guide.table]
     .filter((table) => table.length > 1)
-    .sort((left, right) => right.length - left.length)
+  // Prefer the first authored explanatory table. Later quality-closeout tables
+  // are useful on the page, but they are generic transfer/review aids rather
+  // than the clearest visual identity for the topic.
   const [header = [], ...body] = candidates[0] ?? topic.guide.table
   if (body.length) return { headers: header.map(compact), rows: body.map((row) => row.map(compact)) }
   return {
@@ -153,6 +158,21 @@ function sourceRows(topic: GrammarTopic): { headers: string[]; rows: string[][] 
 function tableRows(table: string[][]): { headers: string[]; rows: string[][] } {
   const [header = [], ...body] = table
   return { headers: header.map(compact), rows: body.map((row) => row.map(compact)) }
+}
+
+function contrastRows(topic: GrammarTopic): { headers: string[]; rows: string[][] } {
+  const candidates = [...topic.seo.flatMap((section) => section.table ? [section.table] : []), topic.guide.table]
+    .filter((table) => table.length > 1)
+  const stopWords = new Set(['and', 'con', 'e', 'et', 'oder', 'o', 'ou', 'vs', 'y'])
+  const titleTerms = topic.shortTitle.toLowerCase().split(/[^\p{L}\p{N}]+/u)
+    .filter((term) => term.length > 1 && !stopWords.has(term))
+  const scored = candidates.map((table, index) => ({
+    table,
+    index,
+    score: titleTerms.filter((term) => table[0].some((cell) => compact(cell).toLowerCase().includes(term))).length,
+  }))
+  scored.sort((left, right) => right.score - left.score || left.index - right.index)
+  return tableRows(scored[0]?.table ?? topic.guide.table)
 }
 
 const EYEBROWS: Record<GrammarVisualKind, string> = {
@@ -169,7 +189,7 @@ export function buildGrammarVisualBlueprint(topic: GrammarTopic): GrammarVisualB
   const kind = getGrammarVisualKind(topic)
   const scripted = SCRIPT_GRIDS[topic.slug]
   const special = SPECIAL_TABLES[topic.slug]
-  const source = scripted ?? special ?? (kind === 'contrast' ? tableRows(topic.guide.table) : sourceRows(topic))
+  const source = scripted ?? special ?? (kind === 'contrast' ? contrastRows(topic) : sourceRows(topic))
   const fallbackRows = topic.visual.scene.slice(0, 6).map(([form, use]) => [compact(form), compact(use)])
   const rows = source.rows.length ? source.rows : fallbackRows
 

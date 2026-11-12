@@ -1,7 +1,7 @@
 import type { GrammarTopic } from '../types'
+import { expandFoundationWriting } from '../quality-write-expansion'
 
 type Level = 'a1' | 'a2' | 'b1'
-const count = (topic: GrammarTopic) => topic.practice.levels.reduce((sum, stage) => stage.type === 'dual' ? sum + stage.items.reduce((n, item) => n + item.blanks.length, 0) : stage.type === 'choice' || stage.type === 'write' ? sum + stage.items.length : sum + stage.blanks.length, 0)
 const unique = <T extends string[]>(rows: T[]): T[] => Array.from(new Map(rows.map((row) => [row.join('|'), row])).values())
 
 export function closePortugueseFoundationTopic(source: GrammarTopic, level: Level, order: number): GrammarTopic {
@@ -25,8 +25,6 @@ export function closePortugueseFoundationTopic(source: GrammarTopic, level: Leve
   topic.visual.scene = unique([...topic.visual.scene, ...topic.guide.table.slice(1).map((row) => [row[2], `${row[0]} · ${row[1]}`])]).slice(0, sceneTarget) as [string,string][]
   while (topic.visual.scene.length < sceneTarget) topic.visual.scene.push([topic.guide.model, `Controle ${topic.visual.scene.length + 1}: ${topic.guide.formula}`])
   topic.visual.reviewFocus = Array.from(new Set([...(topic.visual.reviewFocus ?? []), topic.guide.formula, 'conjugação, concordância e referência', 'contrações, clíticos e ordem', 'autocorreção no texto'])).slice(0, 10)
-  const target = level === 'b1' ? 50 : level === 'a2' ? 45 : 40
-  const writing = topic.practice.levels.find((stage) => stage.type === 'write')
-  if (writing?.type === 'write') for (let i = 1; count(topic) < target; i++) writing.items.push({ scene: `Transferência ${label} ${i}`, prompt: `Crie um exemplo novo com ${topic.shortTitle}, conecte-o a outra frase e explique o que controla forma, concordância e ordem.`, answer: `${topic.guide.model} O exemplo conserva ${topic.guide.formula} e uma referência clara.`, explain: 'A produção verifica forma, sentido, referência e continuidade textual.' })
+  expandFoundationWriting(topic, level === 'b1' ? 50 : level === 'a2' ? 45 : 40, 'pt')
   return topic
 }

@@ -1,6 +1,6 @@
 import type { GrammarTopic } from '../types'
+import { expandFoundationWriting } from '../quality-write-expansion'
 type Level='a1'|'a2'|'b1'
-const count=(t:GrammarTopic)=>t.practice.levels.reduce((n,s)=>s.type==='dual'?n+s.items.reduce((m,i)=>m+i.blanks.length,0):s.type==='choice'||s.type==='write'?n+s.items.length:n+s.blanks.length,0)
 const uniq=<T extends string[]>(rows:T[]):T[]=>Array.from(new Map(rows.map(r=>[r.join('|'),r])).values())
 export function closeRussianFoundationTopic(source:GrammarTopic,level:Level,order:number):GrammarTopic{
  const t=structuredClone(source),label=level.toUpperCase();t.order=String(order).padStart(2,'0');const refs=t.guide.table.slice(1),scenes=t.visual.scene
@@ -20,6 +20,6 @@ export function closeRussianFoundationTopic(source:GrammarTopic,level:Level,orde
   t.practice.levels.push({id:'level-5',title:'Восстановление грамматической карты',tag:'Таблица без подсказок',intro:`Восстановите ключевые связи темы «${t.shortTitle}» и объясните, что управляет каждой формой.`,type:'dual',items:tableRows.slice(0,3).map((r,i)=>({scene:`Связь ${i+1}: форма и функция`,lines:[['',`[[0]] → [[1]]`]],blanks:[{options:firstColumn,answer:r[0],explain:`Эта форма или функция принадлежит модели «${t.guide.model}».`},{options:lastColumn,answer:r.at(-1)??r[1],explain:`Связь проверяется по схеме: ${t.guide.formula}.`}]}))})
   t.practice.levels.push({id:'level-6',title:'Контекст и точная интерпретация',tag:'Диагностика',intro:'Сопоставьте живой пример с его точным значением, затем проговорите грамматический сигнал.',type:'choice',items:t.visual.scene.slice(0,4).map(([example,meaning],i)=>{const options=Array.from(new Set([meaning,...t.visual.scene.filter((_,j)=>j!==i).map(row=>row[1])])).slice(0,4);return{scene:`Контекст ${i+1}`,lines:[['',example]],options,answer:meaning,explain:`Форма читается через значение «${meaning}» и модель ${t.guide.formula}.`}})})
  }
- const target=level==='b1'?50:level==='a2'?45:40,writing=t.practice.levels.find(s=>s.type==='write');if(writing?.type==='write')for(let i=1;count(t)<target;i++)writing.items.push({scene:`Перенос ${label} ${i}`,prompt:`Создайте новый пример с темой «${t.shortTitle}», свяжите его со второй фразой и объясните выбор формы.`,answer:`${t.guide.model} Пример сохраняет ${t.guide.formula} и ясную референцию.`,explain:'Ответ проверяет форму, значение, управление и связность.'})
+ expandFoundationWriting(t,level==='b1'?50:level==='a2'?45:40,'ru')
  return t
 }
