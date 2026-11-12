@@ -142,7 +142,7 @@ const topic: GrammarTopic = {
           {
             scene: 'Futuro (mesoclítica)',
             lines: [['', "Vou___ ajudar."]],
-            options: ['me', '-me', 'a mim', 'm'],
+            options: ['-te', 'te', 'a ti', 't'],
             answer: '-te',
             explain: 'En futuro con pronombre → mesoclítica (dentro del verbo: Vou-te ajudar).',
           },

@@ -305,7 +305,7 @@ const topic: GrammarTopic = {
           },
           {
             scene: 'Describe tu escuela',
-            prompt: '[[nombre]] escola de português está ___ [lugar]. ___ professores são ___.',
+            prompt: 'A escola de português está ___ [lugar]. Os professores são ___.',
             answer: 'A WeLearn escola de português está no Brasil. Os professores são muito bons.',
             accepted: ['a welearn escola de português está no brasil os professores são muito bons'],
             explain: 'No Brasil (em+o). Os professores (masculino plural).',

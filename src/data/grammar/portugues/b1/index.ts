@@ -19,8 +19,9 @@ import verbosReflexos from './verbos-reflexos-b1'
 import regenciaVerbal from './regencia-verbal-b1'
 import comparativosuperlativos from './comparativos-superlativos-b1'
 import preposicoes from './preposicoes-b1'
+import { closePortugueseFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   conjuntivoImperfeito,
   futuroConjuntivo,
   condicional,
@@ -42,5 +43,7 @@ const topics: GrammarTopic[] = [
   comparativosuperlativos,
   preposicoes,
 ]
+
+const topics = sourceTopics.map((topic, index) => closePortugueseFoundationTopic(topic, 'b1', index + 1))
 
 export default topics

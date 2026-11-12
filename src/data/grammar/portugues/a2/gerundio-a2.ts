@@ -201,6 +201,7 @@ const topic: GrammarTopic = {
           { options: ['Estou assistindo', 'Assisto', 'Assistia', 'Vou assistir'], answer: 'Estou assistindo', explain: '"Estou assistindo" = estoy viendo (ahora).' },
           { options: ['assistindo', 'assistir', 'assistido', 'assisto'], answer: 'assistindo', explain: '"fico assistindo" = acción continua/habitual.' },
           { options: ['está estudando', 'estuda', 'estudava', 'vai estudar'], answer: 'está estudando', explain: '"ela está estudando" = ella está estudiando (ahora).' },
+          { options: ['está estudando', 'estuda', 'estudou', 'estudava'], answer: 'está estudando', explain: 'A resposta mantém a ação em progresso no momento da ligação.' },
         ],
       },
       {

@@ -229,7 +229,7 @@ def portugueseize(value):
         return value
     if value in PORTUGUESE_TEXT:
         return PORTUGUESE_TEXT[value]
-    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    match = re.fullmatch(r'(\d+) learning decisions arranged in (?:six )?progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
     if match:
         return f"{match.group(1)} decisões de aprendizagem em seis etapas progressivas. Escreva diretamente na página e consulte o gabarito separado somente depois de concluir uma etapa."
     match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
@@ -1003,6 +1003,16 @@ def build_story(topic):
             'practice': '03 · PRATICA', 'production': 'Dal riconoscimento alla produzione',
             'answers': '04 · SOLUZIONI', 'correct': 'Correggi e spiega la regola', 'close': 'Compito finale',
         })
+    if IS_PORTUGUESE and not advanced:
+        labels.update({
+            'cover': f"PORTUGUÊS · NÍVEL {topic['level']} · CADERNO PARA IMPRESSÃO",
+            'goal': 'Objetivo da aula', 'model': 'Modelo', 'outcomes': 'Ao final, você saberá',
+            'study': 'Como estudar', 'understand': '01 · COMPREENDER', 'essential': 'A ideia essencial',
+            'map': '02 · MAPA VISUAL', 'glance': 'A regra em um só olhar', 'formula': 'Fórmula',
+            'order': 'Decida nesta ordem', 'errors': 'Erros frequentes', 'examples': 'Exemplos de referência',
+            'practice': '03 · PRÁTICA', 'production': 'Do reconhecimento à produção',
+            'answers': '04 · GABARITO', 'correct': 'Corrija e explique a regra', 'close': 'Tarefa final',
+        })
     story = [p(labels['cover'], STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box(labels['goal'], topic['guide']['goal']), Spacer(1, 4 * mm), info_box(labels['model'], topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p(labels['outcomes'], STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
     study_copy = (
@@ -1012,6 +1022,8 @@ def build_story(topic):
     )
     if IS_ITALIAN and not advanced:
         study_copy = 'Leggi la spiegazione, ricostruisci la mappa senza guardare, completa le sei fasi e correggi solo alla fine. Torna al modello per motivare ogni decisione.'
+    if IS_PORTUGUESE and not advanced:
+        study_copy = 'Leia a explicação, reconstrua o mapa sem olhar, complete as seis etapas e confira apenas no final. Volte ao modelo para justificar cada decisão.'
     story += [Spacer(1, 3 * mm), info_box(labels['study'], study_copy, PALE_RED), PageBreak()]
     story += [p(labels['understand'], STYLES['eyebrow']), p(labels['essential'], STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
@@ -1029,11 +1041,15 @@ def build_story(topic):
     examples_copy = 'Cover the second column, reconstruct the pattern, and explain why the inversion is required.' if advanced else 'Tapa la columna en español, explica el sentido y lee el ejemplo en voz alta.'
     if IS_ITALIAN and not advanced:
         examples_copy = 'Copri la seconda colonna, ricostruisci lo schema e spiega ad alta voce quale scelta controlla la forma.'
+    if IS_PORTUGUESE and not advanced:
+        examples_copy = 'Cubra a segunda coluna, reconstrua o padrão e explique em voz alta qual decisão controla a forma.'
     story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']), p(examples_copy, STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
     exercises, answers = exercises_for(topic)
     exercise_copy = f'{len(exercises)} printable exercises. Work without checking the answer key.' if advanced else f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.'
     if IS_ITALIAN and not advanced:
         exercise_copy = f'{len(exercises)} esercizi stampabili. Lavora senza consultare le soluzioni.'
+    if IS_PORTUGUESE and not advanced:
+        exercise_copy = f'{len(exercises)} exercícios para impressão. Trabalhe sem consultar o gabarito.'
     story += [p(labels['practice'], STYLES['eyebrow']), p(labels['production'], STYLES['title']), p(exercise_copy, STYLES['lead'])]
     current = None
     for number, level, prompt in exercises:
@@ -1044,12 +1060,16 @@ def build_story(topic):
     answer_copy = 'For open responses, compare the target structure first and the vocabulary second.' if advanced else 'En respuestas abiertas, compara primero la estructura objetivo y después el vocabulario.'
     if IS_ITALIAN and not advanced:
         answer_copy = 'Nelle risposte aperte, confronta prima la struttura obiettivo e poi il lessico.'
+    if IS_PORTUGUESE and not advanced:
+        answer_copy = 'Nas respostas abertas, compare primeiro a estrutura-alvo e depois o vocabulário.'
     story += [PageBreak(), p(labels['answers'], STYLES['eyebrow']), p(labels['correct'], STYLES['title']), p(answer_copy, STYLES['lead'])]
     for number, answer, explanation in answers:
         story.append(p(f'{number}. {answer} — {explanation}', STYLES['answer']))
     closing_copy = 'Write three original sentences and return to the visual map within 24 hours.' if advanced else 'Escribe tres frases nuevas, léelas en voz alta y vuelve al mapa visual dentro de 24 horas.'
     if IS_ITALIAN and not advanced:
         closing_copy = 'Scrivi tre frasi originali, leggile ad alta voce e torna alla mappa visiva entro ventiquattro ore.'
+    if IS_PORTUGUESE and not advanced:
+        closing_copy = 'Escreva três frases originais, leia-as em voz alta e volte ao mapa visual dentro de vinte e quatro horas.'
     story += [Spacer(1, 4 * mm), info_box(labels['close'], closing_copy, PALE_BLUE)]
     return story
 

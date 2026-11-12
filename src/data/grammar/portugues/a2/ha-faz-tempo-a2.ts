@@ -209,6 +209,7 @@ const topic: GrammarTopic = {
             blanks: [
               { options: ['Há', 'Faz', 'Tem'], answer: 'Há', explain: '"Há + tiempo + que + presente" para acción continua.' },
               { options: ['morava', 'morei', 'moro'], answer: 'morava', explain: 'En pasado: "morava em outro bairro" (vivía en otro barrio).' },
+              { options: ['há', 'faz', 'desde'], answer: 'há', explain: 'A duração concluída do período no bairro é introduzida por «há».' },
             ],
           },
           {

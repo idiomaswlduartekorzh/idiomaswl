@@ -2759,6 +2759,18 @@
           "file": "src/data/grammar/portugues/a1/ser-e-estar.ts"
         },
         {
+          "slug": "demonstrativos-a1",
+          "title": "Demonstrativos",
+          "category": "Referência e determinação",
+          "file": "src/data/grammar/portugues/a1/supplement-topics.ts"
+        },
+        {
+          "slug": "imperativo-afirmativo-a1",
+          "title": "Imperativo afirmativo",
+          "category": "Interação e instruções",
+          "file": "src/data/grammar/portugues/a1/supplement-topics.ts"
+        },
+        {
           "slug": "verbo-ter",
           "title": "Ter (tener)",
           "category": "Verbos",

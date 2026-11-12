@@ -253,6 +253,7 @@ const topic: GrammarTopic = {
           { answer: 'Ficarei', explain: 'Ficar (-ar), eu: ficarei.' },
           { answer: 'virá', explain: 'Vir es irregular en futuro: virá (ela/Ana).' },
           { answer: 'visitaremos', explain: 'Visitar (-ar), nós: visitaremos.' },
+          { answer: 'iremos', explain: 'Ir no futuro, nós: iremos.' },
         ],
       },
       {

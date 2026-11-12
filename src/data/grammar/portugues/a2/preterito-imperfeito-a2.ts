@@ -254,6 +254,7 @@ const topic: GrammarTopic = {
           { answer: 'acordava', explain: 'Acordar (-ar), eu: acordava.' },
           { answer: 'era', explain: 'Ser, descripción: era.' },
           { answer: 'tinha', explain: 'Ter, posesión habitual: tinha.' },
+          { answer: 'passávamos', explain: 'Passar (-ar), nós no imperfeito: passávamos.' },
         ],
       },
       {

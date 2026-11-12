@@ -4,6 +4,9 @@ import type { PortugueseGrammarLevel } from '@/data/portuguese-grammar-resources
 import styles from './GrammarCollection.module.css'
 
 const COPY: Record<PortugueseGrammarLevel, { label: string; lead: string; outcome: string }> = {
+  a1: { label: 'Fundamentos essenciais', lead: 'Construa frases claras com artigos, concordância, presente, perguntas, negação, contrações e referências.', outcome: 'Compreender e produzir frases cotidianas completas controlando forma, ordem e referência.' },
+  a2: { label: 'Expansão cotidiana', lead: 'Conecte passado, futuro, pronomes, comparação e locuções para relatar experiências e agir em situações reais.', outcome: 'Passar da frase isolada a diálogos e textos breves com referências claras.' },
+  b1: { label: 'Independência textual', lead: 'Gerencie tempos narrativos, modos, voz, pronomes e coesão por meio de decisões gramaticais motivadas.', outcome: 'Narrar, explicar e argumentar em textos conectados controlando perspectiva e registro.' },
   b2: { label: 'Autonomia comunicativa', lead: 'Consolide tempos, modos, pronomes, formas reduzidas e organização textual por meio de decisões reais de sentido.', outcome: 'Administrar o sistema gramatical B2 em conversas, relatos, argumentações e provas de proficiência.' },
   c1: { label: 'Controle avançado', lead: 'Domine densidade sintática, modalidade, coesão e gestão da informação em textos acadêmicos e profissionais.', outcome: 'Usar as estruturas C1 como escolhas discursivas precisas, adequadas ao registro e ao interlocutor.' },
   c2: { label: 'Domínio estilístico', lead: 'Refine perspectiva, referência, escopo, ritmo e arquitetura do período para reformular sem perder nuances.', outcome: 'Remodelar o mesmo conteúdo para gêneros, efeitos e graus de comprometimento diferentes.' },

@@ -9,7 +9,7 @@ const minimumTopics = {
   frances: { a1: 20, a2: 20, b1: 20 },
   aleman: { a1: 20, a2: 20, b1: 20 },
   italiano: { a1: 20, a2: 20, b1: 20 },
-  portugues: { a1: 18, a2: 20, b1: 20 },
+  portugues: { a1: 20, a2: 20, b1: 20 },
   ruso: { a1: 20, a2: 20, b1: 20 },
   coreano: { a1: 20, a2: 20, b1: 20 },
   japones: { a1: 20, a2: 20, b1: 20 },

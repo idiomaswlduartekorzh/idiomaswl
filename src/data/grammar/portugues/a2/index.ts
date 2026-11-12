@@ -19,8 +19,9 @@ import gerundio from './gerundio-a2'
 import expressoesTempo from './expressoes-tempo-a2'
 import verbosModais from './verbos-modais-a2'
 import expressoesFazer from './expressoes-com-fazer-a2'
+import { closePortugueseFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   preteritoPerfeito,
   preteritoImperfeito,
   futuroDoPresente,
@@ -42,5 +43,7 @@ const topics: GrammarTopic[] = [
   verbosModais,
   expressoesFazer,
 ]
+
+const topics = sourceTopics.map((topic, index) => closePortugueseFoundationTopic(topic, 'a2', index + 1))
 
 export default topics

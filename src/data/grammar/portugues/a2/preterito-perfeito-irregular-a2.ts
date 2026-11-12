@@ -270,6 +270,7 @@ const topic: GrammarTopic = {
           { answer: 'foi', explain: 'Ser, 3ª sg (um dia): foi.' },
           { answer: 'veio', explain: 'Vir, 3ª sg (minha amiga): veio.' },
           { answer: 'trouxe', explain: 'Trazer en pretérito perfeito, 3ª sg: trouxe (verbo adicional frecuente).' },
+          { answer: 'soube', explain: 'Saber no pretérito perfeito, 1ª sg: soube.' },
         ],
       },
       {
