@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Where the Cup Ends",
+      "en": "Where the Cup Ends"
+    },
+    "intro": {
+      "es": "A town celebrates the success of a reusable cup scheme. Its figures become less certain when a volunteer asks what lies beyond the return counter.",
+      "en": "A town celebrates the success of a reusable cup scheme. Its figures become less certain when a volunteer asks what lies beyond the return counter."
+    },
+    "mission": {
+      "es": "Trace how changing the boundary of a measurement changes the meaning of an environmental success.",
+      "en": "Trace how changing the boundary of a measurement changes the meaning of an environmental success."
+    },
+    "targetText": "The town's returnable cup scheme began with an admirably modest ambition: reduce the paper cups left around the market after Saturday lunch. A small deposit brought the new cups back to a counter beside the fountain, and the organisers counted each return with a satisfying click. At the end of the first summer, they announced that the scheme had prevented thousands of disposable cups from entering the bins. The number appeared on posters, then on the mayor's speech, and finally on a mural beside the station. I helped paint that mural. At the time I thought the neat row of cups we drew was a fair symbol of what we had done. The square was cleaner; vendors spent less on rubbish bags; children had learned to carry their empty cups back. None of those gains was imaginary. The mural became less comfortable to look at only after someone asked where the returned cups went next.\n\nEvery evening a driver took them to a washing facility beyond the town. Its machines were efficient, according to the contractor, but efficiency described the water and energy used per wash, not the distance of a journey made for a half-full van. The cups themselves were durable when treated as the supplier intended. At the market, however, the handles met stone steps, the lids were lost, and a cup with a hairline crack could no longer be served. The contractor's report classified such cups as recycled. We later learned that this meant they were delivered to a broker; the report did not follow what the broker managed to sell. To call the original count false would be too easy. Each click at the fountain marked a cup that really had returned. What the count could not show was whether returning had made that cup more useful than the resources required to receive, wash and move it. The scheme had measured a visible substitution and allowed that measure to stand for the entire journey.\n\nAt a public meeting, Lila, who ran the smallest coffee stall, asked whether the council had considered the cups' effect on her staff. People returned them at closing time, when her two assistants were already cleaning the counter. A larger cafe had space to stack the cups until morning; Lila kept a crate in the narrow passage to her sink. The scheme had not created this difference in floor space, but its rules treated all vendors as if they operated from interchangeable rooms. The mayor replied that adjustments could be made once the environmental benefit was established. His sequence sounded prudent: prove a benefit, then distribute its costs more fairly. Yet Lila's cramped passage was part of the cost of obtaining the benefit, not an unrelated grievance to be considered afterward. Her question altered the unit of account. We were no longer weighing a cup against a paper cup, but an arrangement of work against another arrangement of work.\n\nThe council commissioned a broader study. I expected it to settle the argument, and was initially disappointed when it produced three conclusions rather than one. If a cup was used often and the washing van was full, the returnable scheme performed well by the study's chosen environmental measures. If a cup broke early or travelled in an almost empty van, the advantage narrowed and sometimes reversed. The third conclusion was the least photogenic: a better loading schedule could matter more than persuading another hundred customers to pay a deposit. Several councillors called these findings inconclusive. They were conditional, which is different. A condition can tell a manager what to change; a single triumphant total cannot. But the new study also had a boundary. It priced fuel and water with more care than it represented the inconvenience of a crowded passage or the time a visitor spent finding a return counter. To include everything would have made the study unfinishable. To include only what was easy to count would have made it deceptively complete.\n\nWe repainted the mural the following spring. The neat row of cups stayed, but the number was replaced with a small diagram showing a loop from stall to counter to washer and back. It had no space for Lila's passage, the broker's warehouse or the question of who carried a cup home when the counter had closed. A mural is a poor substitute for an audit; perhaps it need not be one. I still use a returnable cup at the market, and I still return it. I have become wary, though, of describing that gesture as a completed act of environmental repair. It is a contribution to a system whose results depend on maintenance, transport and the work assigned to people with unequal room to absorb it. The scheme improved when the town admitted that its celebrated number was a partial account. Some residents took the admission as a retreat. For me it made the claim more credible: a success willing to specify its conditions is more useful than one that demands deference to its own headline.",
+    "wordCount": 837,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "deposit",
+        "lemma": "deposit",
+        "glosses": {
+          "es": "money paid temporarily and returned when an item is brought back",
+          "en": "money paid temporarily and returned when an item is brought back"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contractor",
+        "lemma": "contractor",
+        "glosses": {
+          "es": "a person or company hired to perform a particular service",
+          "en": "a person or company hired to perform a particular service"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "broker",
+        "lemma": "broker",
+        "glosses": {
+          "es": "an intermediary who arranges a sale or transfer",
+          "en": "an intermediary who arranges a sale or transfer"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "substitution",
+        "lemma": "substitution",
+        "glosses": {
+          "es": "the replacement of one thing by another",
+          "en": "the replacement of one thing by another"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "conditional",
+        "lemma": "conditional",
+        "glosses": {
+          "es": "dependent on particular circumstances",
+          "en": "dependent on particular circumstances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "deference",
+        "lemma": "deference",
+        "glosses": {
+          "es": "respectful acceptance of another person’s authority or claim",
+          "en": "respectful acceptance of another person’s authority or claim"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.7,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:09:49.687Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the central argument of the essay?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A return count is useful but incomplete."
+        },
+        {
+          "id": "a2",
+          "text": "Returnable cups are always worse than disposable cups in environmental terms."
+        },
+        {
+          "id": "a3",
+          "text": "Public art should never present a town project before an independent audit is finished."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The scheme improved when the town admitted that its celebrated number was a partial account.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "What did the contractor’s report mean when it called damaged cups “recycled”?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "They had been washed again."
+        },
+        {
+          "id": "a2",
+          "text": "They had been delivered to a broker."
+        },
+        {
+          "id": "a3",
+          "text": "They had been sold and remade into useful products by a confirmed buyer."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The contractor's report classified such cups as recycled. We later learned that this meant they were delivered to a broker; the report did not follow what the broker managed to sell.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Why does the narrator resist treating Lila’s complaint as a separate issue?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Lila was the only vendor to participate in the scheme."
+        },
+        {
+          "id": "a2",
+          "text": "The mayor had personally promised to enlarge her stall."
+        },
+        {
+          "id": "a3",
+          "text": "The work and space demanded of vendors form part of what makes the environmental benefit possible."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Yet Lila's cramped passage was part of the cost of obtaining the benefit, not an unrelated grievance to be considered afterward.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the narrator contrast “conditional” and “inconclusive”?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To show that conditions can guide action."
+        },
+        {
+          "id": "a2",
+          "text": "To argue that every environmental study should avoid a final conclusion."
+        },
+        {
+          "id": "a3",
+          "text": "To suggest that councillors deliberately changed the study’s numerical results."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Several councillors called these findings inconclusive. They were conditional, which is different. A condition can tell a manager what to change; a single triumphant total cannot.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "What attitude does the narrator take toward the returnable cup scheme at the end?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Unqualified pride in the original mural and its headline number."
+        },
+        {
+          "id": "a2",
+          "text": "Continued support, accompanied by greater caution about what can be claimed."
+        },
+        {
+          "id": "a3",
+          "text": "Disappointment so complete that the narrator refuses to use the cups ever again."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I still use a returnable cup at the market, and I still return it. I have become wary, though, of describing that gesture as a completed act of environmental repair.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does “deference” mean in the final sentence?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A formal payment made to the company that washes the cups."
+        },
+        {
+          "id": "a2",
+          "text": "A postponement of the council’s decision until the next summer."
+        },
+        {
+          "id": "a3",
+          "text": "Respectful acceptance of the headline without asking what its claim leaves out."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a success willing to specify its conditions is more useful than one that demands deference to its own headline.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a recommendation to the council about the next year of the cup scheme. Use one benefit and one limitation from the text, and explain which condition you would measure before making a public claim.",
+      "en": "Write a recommendation to the council about the next year of the cup scheme. Use one benefit and one limitation from the text, and explain which condition you would measure before making a public claim."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Trace how changing the boundary of a measurement changes the meaning of an environmental success.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:09:49.687Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Where the Cup Ends | C2 Reading | WeLearn",
+      "en": "Where the Cup Ends | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A town celebrates the success of a reusable cup scheme. Its figures become less certain when a volunteer asks what lies beyond the return counter.",
+      "en": "A town celebrates the success of a reusable cup scheme. Its figures become less certain when a volunteer asks what lies beyond the return counter."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:09:49.687Z"
+  }
+}

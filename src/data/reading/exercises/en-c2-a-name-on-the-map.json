@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Name Beneath the Name",
+      "en": "The Name Beneath the Name"
+    },
+    "intro": {
+      "es": "A cartographer helps restore old place names to a town map and discovers that preservation still requires a choice about whose memory becomes official.",
+      "en": "A cartographer helps restore old place names to a town map and discovers that preservation still requires a choice about whose memory becomes official."
+    },
+    "mission": {
+      "es": "Consider how a map can preserve local history while also narrowing the range of histories it represents.",
+      "en": "Consider how a map can preserve local history while also narrowing the range of histories it represents."
+    },
+    "targetText": "The council invited me to help restore older place names to its digital map. The proposal followed a familiar complaint: new street signs honoured developers and distant benefactors, while names used by residents for generations survived only in conversation. I liked the purpose of the project. I had spent my childhood hearing my grandmother call the eastern footbridge the Washer's Crossing, although the sign beside it said New Mill Link. When I opened the archive, I expected to find the old names waiting there like misplaced keys. Instead I found competing spellings, uncertain boundaries and explanations that contradicted one another. The archive held three versions of the crossing's name. One referred to laundry carried to the river; another to a woman called Washburn who had once rented nearby rooms; the third seemed to have been invented by a journalist who thought the first version sounded picturesque. A map could show only a short label at that scale. Choosing one would make the others harder to find.\n\nAt our first meeting, the heritage committee wanted the name that appeared most often in its records. That seemed an impartial rule until we asked why some accounts had been recorded and others had not. The town's early clerks wrote down what property owners called a place. People who rented rooms, crossed the river to work or used the bank for washing appeared in the records mainly when someone else complained about them. Their words had not been counted with the same care as their presence. A frequency test would therefore reproduce the archive's uneven attention while presenting the result as a neutral fact. I suggested we invite residents to contribute names and stories. The committee agreed, but its invitation still went through the council website and a paper notice in the library. The people most likely to answer were already practised at making themselves legible to official institutions. Our broader consultation might diversify the record without escaping its old gatekeepers.\n\nOne response complicated the crossing further. A retired nurse sent a photograph of a faded sign reading Mercy Steps, taken before the footbridge had been rebuilt. She wrote that patients had once crossed there on their way to the small hospital. Another resident disputed her account: the sign, he said, had belonged to a path thirty metres downstream, and the photograph's angle concealed the difference. Both accounts were plausible. The nurse had kept an object; the other resident remembered the geography. The committee asked me to mark the sign's location as uncertain and keep the two stories in a note. The digital map could accommodate that uncertainty in a panel opened by a click. The sign installed on the street could not. We were designing two maps at once: one that admitted ambiguity, and another whose authority depended on appearing to have resolved it.\n\nI visited my grandmother before we chose the label. She laughed when I asked about the washer, because she had always thought the name referred to the river's rough sound after rain, not to people cleaning clothes. She could offer no source beyond the fact that her mother had said it that way. I wanted to treat her account with deference, partly because I loved her and partly because I had made her crossing the emblem of our project. But affection could not settle the word's origin, any more than a clerk's handwriting could. She asked me why the map had to decide. People, she said, had managed to cross the bridge while calling it different things. I answered that emergency services, visitors and delivery drivers needed a stable reference. She agreed, then asked whether stability required pretending that the reference was the whole story. I had no easy answer. A label helps people find a place; it can also teach them which past they are expected to find there.\n\nWe eventually printed Washer's Crossing on the new sign, with a small mark directing readers to the digital note. The note described the alternate names and the limits of our evidence. It did not give each account equal space: the committee insisted on a principal story, and I wrote it. At the unveiling, a councillor said we had returned the bridge to its true identity. I did not correct him in front of the cameras. Later I wondered whether my silence had made the note's careful qualifications irrelevant. A passer-by might see the sign every day and never open the note. Yet removing the sign would have left the old developer's name in place, carrying its own unexamined claim to permanence. The project had preserved something real, though it could not preserve every relation people had with the river. I now think the most honest map is not one without choices. It is one that makes its choices traceable, so that a name beneath the name remains possible to recover.",
+    "wordCount": 811,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "archive",
+        "lemma": "archive",
+        "glosses": {
+          "es": "a collection of historical records",
+          "en": "a collection of historical records"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impartial",
+        "lemma": "impartial",
+        "glosses": {
+          "es": "not favouring one side or group",
+          "en": "not favouring one side or group"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "legible",
+        "lemma": "legible",
+        "glosses": {
+          "es": "easy to read or recognise within a system",
+          "en": "easy to read or recognise within a system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "plausible",
+        "lemma": "plausible",
+        "glosses": {
+          "es": "seeming reasonable or possible",
+          "en": "seeming reasonable or possible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ambiguity",
+        "lemma": "ambiguity",
+        "glosses": {
+          "es": "the presence of more than one possible meaning",
+          "en": "the presence of more than one possible meaning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "traceable",
+        "lemma": "traceable",
+        "glosses": {
+          "es": "able to be followed back to its source or decision",
+          "en": "able to be followed back to its source or decision"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.6,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:10:58.096Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What problem does the narrator find in restoring historical names?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Preservation still requires choices."
+        },
+        {
+          "id": "a2",
+          "text": "The council has no surviving records of any local name at all."
+        },
+        {
+          "id": "a3",
+          "text": "Residents are universally opposed to changing the developer’s street signs."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A map could show only a short label at that scale. Choosing one would make the others harder to find.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why might choosing the most frequently recorded name be misleading?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The early records were destroyed before anyone could count them."
+        },
+        {
+          "id": "a2",
+          "text": "Clerks recorded property owners more readily than other residents."
+        },
+        {
+          "id": "a3",
+          "text": "Every surviving record was written by the same journalist who preferred picturesque names."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The town's early clerks wrote down what property owners called a place. People who rented rooms, crossed the river to work or used the bank for washing appeared in the records mainly when someone else complained about them.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What is implied by the contrast between the digital map and the street sign?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A physical sign lasts longer than any digital record."
+        },
+        {
+          "id": "a2",
+          "text": "The nurse’s photograph conclusively proves the crossing’s first name."
+        },
+        {
+          "id": "a3",
+          "text": "A note can display unresolved accounts while a short public label tends to look definitive."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "We were designing two maps at once: one that admitted ambiguity, and another whose authority depended on appearing to have resolved it.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the narrator include the conversation with the grandmother?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To test the value and limits of personal memory."
+        },
+        {
+          "id": "a2",
+          "text": "To establish that the grandmother invented the name for the bridge."
+        },
+        {
+          "id": "a3",
+          "text": "To show that stable names have no practical use for visitors or emergency services."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "But affection could not settle the word's origin, any more than a clerk's handwriting could.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How does the narrator regard the final naming decision?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As a failed decision to reverse at once."
+        },
+        {
+          "id": "a2",
+          "text": "As a meaningful but incomplete act of preservation."
+        },
+        {
+          "id": "a3",
+          "text": "As proof that a council can recover a place’s single true identity without qualification."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The project had preserved something real, though it could not preserve every relation people had with the river.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does “traceable” suggest in the final sentence?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The name can be followed as a walking route along the river."
+        },
+        {
+          "id": "a2",
+          "text": "The name has been selected by an automatic mapping program."
+        },
+        {
+          "id": "a3",
+          "text": "The reasons for choosing a label can be examined and challenged later."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It is one that makes its choices traceable, so that a name beneath the name remains possible to recover.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a note for the map committee. Recommend how the street sign and digital map should represent the crossing, using two conflicting pieces of evidence from the passage and explaining what your proposal cannot settle.",
+      "en": "Write a note for the map committee. Recommend how the street sign and digital map should represent the crossing, using two conflicting pieces of evidence from the passage and explaining what your proposal cannot settle."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Consider how a map can preserve local history while also narrowing the range of histories it represents.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:10:58.096Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Name Beneath the Name | C2 Reading | WeLearn",
+      "en": "The Name Beneath the Name | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A cartographer helps restore old place names to a town map and discovers that preservation still requires a choice about whose memory becomes official.",
+      "en": "A cartographer helps restore old place names to a town map and discovers that preservation still requires a choice about whose memory becomes official."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:10:58.096Z"
+  }
+}

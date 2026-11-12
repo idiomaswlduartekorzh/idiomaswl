@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-a-place-to-wait",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Queue Beyond the Door",
+      "en": "The Queue Beyond the Door"
+    },
+    "intro": {
+      "es": "A clinic reports that waiting has almost disappeared. A volunteer follows the people who no longer appear in its figures.",
+      "en": "A clinic reports that waiting has almost disappeared. A volunteer follows the people who no longer appear in its figures."
+    },
+    "mission": {
+      "es": "Examine where the institution draws the boundary of its queue, and whose experience that boundary excludes.",
+      "en": "Examine where the institution draws the boundary of its queue, and whose experience that boundary excludes."
+    },
+    "targetText": "At the clinic where I volunteered, the old waiting room had been reduced to a corridor with six chairs. The rest of the space was now a consultation suite, its glass wall displaying a graph of what the director called recovered time. Patients received a number on their phones and were told to arrive only when it turned green. A poster beside the entrance promised that nobody would have to sit for hours beneath fluorescent lights again. It was a persuasive promise. I remembered the previous room: damp coats, a television with no sound, and the small humiliations of asking whether a number had been missed. I did not wish it back. Yet the first morning the new system opened, I found a dozen people standing under the awning across the street. Their phones were dark; their appointments, according to the graph, had not begun. Rain made the pavement shine like a second, less comfortable waiting room. A woman said she had come early because the bus from her village came only twice a day. She was neither late nor, by the clinic's definition, waiting.\n\nThe director's ledger counted the interval between a green notification and a consultation. By that measure the average wait had fallen sharply. The figure was accurate within its chosen jurisdiction, and the staff were justified in celebrating one real improvement: no one now sat inside wondering whether a paper ticket had been lost. But the number also conferred a kind of invisibility. Travel, uncertainty and the effort of remaining close enough to answer a summons had moved beyond the ledger's edge. The director called this freedom: patients could spend that time wherever they wished. In principle, they could. In practice, a person who left the neighbourhood risked missing the alert, while someone without mobile data had to borrow certainty from a stranger. The system had not abolished the queue. It had made the queue conditional, scattered and harder to see. I wrote that sentence in my notebook, then crossed out “made” and wrote “allowed.” The distinction mattered to me. A software change could not be held responsible for the bus timetable; neither could a clinic claim a victory over waiting while refusing to ask what its timetable demanded of people.\n\nMiriam, the porter, kept a private list of the people sheltering outside. She did not call it a second queue, because she feared the word might become a reason for management to move them on. Instead, she noted practical things: a man who could not hear his phone above the traffic; a woman whose battery had failed; a teenager translating the notifications for his grandfather. Miriam's care was quiet, but it carried an awkward cost. Her list preserved people who would otherwise vanish from the official account, while also making their access depend on one employee's unpaid attention. The director praised her initiative at a staff meeting, an ostensible compliment that left the policy untouched. When I suggested that the clinic provide a sheltered place to wait without requiring a green number, he asked whether I wanted to restore the crowded room we had worked so hard to empty. His question was not cynical. Space really was scarce, and extra chairs would displace a consultation desk. But it offered only two pictures of care: the old room or the new graph. The wet pavement, where the decision's consequences had settled, appeared in neither.\n\nAt the next committee meeting I proposed a different measurement. The clinic could ask patients when they first had to organise their day around the appointment, and record the time they spent within reach of a possible alert. The director objected that such an interval could not be attributed to the clinic alone. He was right. It would include buses, employers, relatives, batteries and the ordinary disorder of a life. I said that this was precisely why we should record it, though I knew the answer sounded too neat. A number broad enough to include every inconvenience might cease to guide any particular decision. A number narrow enough to guide a decision might conceal the people affected by it. The committee agreed to trial an optional question at check-in, but it declined to change the published graph. The graph remained useful for scheduling rooms; it was merely being asked to stand for a larger truth than it could bear. We had not resolved how to measure that truth, and I was uneasy with my own readiness to put other people's uncertainty into another spreadsheet.\n\nWeeks later the awning was empty when I arrived. The director pointed to it as evidence that the new arrangement had finally worked. Miriam said the people from the village had learned to wait in the supermarket cafe, where they bought the cheapest tea and watched their screens. I went there once. The tables offered warmth and a socket, but their welcome was provisional: a cup purchased at nine did not guarantee a place at noon. One of the patients asked whether I had come to take a survey. I said no, although I had brought a notebook. I closed it. His question made me aware that observation, too, could turn a person's afternoon into evidence for somebody else's argument. The clinic had improved the part of waiting it could see, and that improvement deserved its name. The hours outside its frame had not disappeared. Whether they belonged to the clinic's responsibility was still contested; whether they belonged to the patients' day was not. When my own phone finally lit green, I found that I had been waiting for an answer the graph could never provide.",
+    "wordCount": 938,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "jurisdiction",
+        "lemma": "jurisdiction",
+        "glosses": {
+          "es": "the area within which a rule or measure is treated as applying",
+          "en": "the area within which a rule or measure is treated as applying"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ledger",
+        "lemma": "ledger",
+        "glosses": {
+          "es": "a record used to keep account of events or figures",
+          "en": "a record used to keep account of events or figures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ostensible",
+        "lemma": "ostensible",
+        "glosses": {
+          "es": "appearing to be one thing while possibly serving another purpose",
+          "en": "appearing to be one thing while possibly serving another purpose"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "attributed",
+        "lemma": "attributed",
+        "glosses": {
+          "es": "assigned to a particular cause or source",
+          "en": "assigned to a particular cause or source"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "provisional",
+        "lemma": "provisional",
+        "glosses": {
+          "es": "temporary or dependent on conditions",
+          "en": "temporary or dependent on conditions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "invisibility",
+        "lemma": "invisibility",
+        "glosses": {
+          "es": "the condition of being left out of what is noticed or counted",
+          "en": "the condition of being left out of what is noticed or counted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.6,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:07:31.442Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What tension governs the narrator’s account of the clinic’s new queue?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A useful improvement hides another kind of waiting."
+        },
+        {
+          "id": "a2",
+          "text": "A failed software installation forces the clinic to restore paper tickets."
+        },
+        {
+          "id": "a3",
+          "text": "A dispute between staff members prevents patients from receiving care at all."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The clinic had improved the part of waiting it could see, and that improvement deserved its name. The hours outside its frame had not disappeared.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why had the woman from the village arrived before her phone turned green?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She wanted to meet Miriam."
+        },
+        {
+          "id": "a2",
+          "text": "Her bus offered only two journeys a day."
+        },
+        {
+          "id": "a3",
+          "text": "The consultation desk had asked her to come early for a survey."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A woman said she had come early because the bus from her village came only twice a day.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does Miriam’s private list reveal about the new system?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It proves that the official waiting time is fabricated."
+        },
+        {
+          "id": "a2",
+          "text": "It allows management to remove patients from the pavement."
+        },
+        {
+          "id": "a3",
+          "text": "It compensates for an exclusion in the official system while making help depend on her personal effort."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Her list preserved people who would otherwise vanish from the official account, while also making their access depend on one employee's unpaid attention.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the narrator include the director’s objection to the broader measurement?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To show that his objection has force."
+        },
+        {
+          "id": "a2",
+          "text": "To demonstrate that the director has falsified every published figure."
+        },
+        {
+          "id": "a3",
+          "text": "To argue that public transport should be managed by the clinic itself."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The director objected that such an interval could not be attributed to the clinic alone. He was right.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How does the narrator regard the clinic’s reported improvement at the end?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "With disdain for the entire system."
+        },
+        {
+          "id": "a2",
+          "text": "With qualified recognition alongside unresolved concern."
+        },
+        {
+          "id": "a3",
+          "text": "With relief that the supermarket has permanently solved the problem."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "The clinic had improved the part of waiting it could see, and that improvement deserved its name. The hours outside its frame had not disappeared.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does “provisional” suggest about the cafe’s welcome?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "It is legally guaranteed for anyone with a medical appointment."
+        },
+        {
+          "id": "a2",
+          "text": "It is based on an official agreement between the clinic and the cafe."
+        },
+        {
+          "id": "a3",
+          "text": "It lasts only while a customer’s purchase is enough to justify occupying a table."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The tables offered warmth and a socket, but their welcome was provisional: a cup purchased at nine did not guarantee a place at noon.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short recommendation to the clinic committee. Acknowledge one genuine benefit of the new system, explain one hidden cost, and propose a way to test your recommendation without treating patients as mere data points.",
+      "en": "Write a short recommendation to the clinic committee. Acknowledge one genuine benefit of the new system, explain one hidden cost, and propose a way to test your recommendation without treating patients as mere data points."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Examine where the institution draws the boundary of its queue, and whose experience that boundary excludes.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:07:31.442Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Queue Beyond the Door | C2 Reading | WeLearn",
+      "en": "The Queue Beyond the Door | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A clinic reports that waiting has almost disappeared. A volunteer follows the people who no longer appear in its figures.",
+      "en": "A clinic reports that waiting has almost disappeared. A volunteer follows the people who no longer appear in its figures."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:07:31.442Z"
+  }
+}

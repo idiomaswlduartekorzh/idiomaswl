@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "en-c2-the-open-schedule",
+  "status": "draft",
+  "language": "en",
+  "variant": "en-global",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "english C2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "en",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "The Hours We Were Given",
+      "en": "The Hours We Were Given"
+    },
+    "intro": {
+      "es": "A school offers students more choice over their timetable, but a teacher notices that choice depends on who controls the rest of the day.",
+      "en": "A school offers students more choice over their timetable, but a teacher notices that choice depends on who controls the rest of the day."
+    },
+    "mission": {
+      "es": "Assess whether equal access to flexible hours can produce fair outcomes when students have unequal control over their time.",
+      "en": "Assess whether equal access to flexible hours can produce fair outcomes when students have unequal control over their time."
+    },
+    "targetText": "The school called its new timetable open because every student could choose when to complete two hours of independent study. The old arrangement had placed those hours immediately after lunch, when classrooms were noisy and teachers were tired. Under the new one, students could reserve a desk before lessons, remain after school or study at home and record the hours online. The headteacher presented the change as a transfer of trust. Students would learn to organise their own time, and the school would stop pretending that concentration arrived at the same hour for everyone. I taught history and welcomed the experiment. Some of my students worked best in the early quiet; others needed to finish a difficult lesson before they knew what to study. The first survey was encouraging. Most students reported that they preferred having a choice, and the school published their approval as evidence that the policy was fair.\n\nThe survey did not ask how each student had made that choice. When I asked in class, Noor said she had selected the first morning slot because it was the only one her father could drive her to. He started work early, and the bus that would have brought her later was unreliable. Elliot had selected home study because his family had a desk in a room that could be closed. Priya also selected home study, though the room she shared with two younger brothers had no door. She completed the hours at the kitchen table while preparing their dinner. All three had used the same form; the form had recorded three preferences. It could not show that one preference was constrained by a bus, another enabled by space, and the third folded into unpaid care. The policy offered identical permission to choose. It did not provide identical control over the hours from which a choice could be made.\n\nWhen I raised this with the headteacher, she warned against turning every difference into evidence of institutional failure. A school could not change family homes or bus routes. She had a point, and I disliked how quickly my criticism risked becoming an argument for restoring the rigid timetable. The previous rule had disadvantages of its own: it kept students on site after a draining morning and made some miss the only practical route home. A uniform hour did not guarantee equal opportunity. Yet the headteacher's defence treated the school's limited power as if it settled the question of responsibility. We could not redesign Priya's kitchen, but we had chosen to make time at that kitchen count as equivalent to time at Elliot's desk. That equivalence was a decision, not a fact about learning. Its convenience for the timetable did not make it harmless.\n\nWe examined the records more carefully. Students who chose early sessions completed them reliably, while the home group showed wider variation. One governor suggested making early sessions the default. The data could support that decision if completion were the only aim. But early sessions favoured students who could reach school before the first bell, and the records did not show whether completion meant sustained thought or simply a signed box. Another governor proposed giving Priya an after-school desk. Priya thanked us but explained that she collected her brothers then; the desk would be empty at the hour she could not use it. I realised that our offers of help often preserved the timetable's categories. We could provide a slot, a room or a reminder. We struggled to recognise the time students spent arranging everything else so that a slot became possible.\n\nThe school eventually added a weekly supervised study period during the ordinary day. It was available to anyone, with no requirement to disclose a difficult home. Students could still choose the earlier, later or home sessions. The change cost a classroom and a teacher's preparation period, so it was neither free nor an elegant solution to every conflict. The next survey asked about available spaces, travel and responsibilities, but it also included a blank line for circumstances we had failed to imagine. I had argued for that line. Later I worried that asking students to describe private burdens might make them feel obliged to justify every choice. We kept the questions optional and told students what would happen to their answers. The survey became less tidy, which was part of its value.\n\nAt the end of term, the headteacher asked whether I now considered the timetable fair. I said it was fairer, and she smiled at the cautious word. I meant it. The supervised period had allowed Priya to work without buying that time by neglecting her brothers. But the school still counted completed hours more easily than it counted the effort required to complete them. I did not want a permanent ledger of students' private lives, nor did I want the absence of such a ledger to certify equality. Fairness, in this case, was not a property we could attach once to the timetable. It was a question we had to keep asking whenever our categories made one student's hour look interchangeable with another's. The schedule remained open. What mattered was whether we could bear to see how unevenly the surrounding day had been distributed.",
+    "wordCount": 870,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "constrained",
+        "lemma": "constrained",
+        "glosses": {
+          "es": "limited by circumstances or rules",
+          "en": "limited by circumstances or rules"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "equivalence",
+        "lemma": "equivalence",
+        "glosses": {
+          "es": "the treatment of two things as equal in value or meaning",
+          "en": "the treatment of two things as equal in value or meaning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sustained",
+        "lemma": "sustained",
+        "glosses": {
+          "es": "maintained over a period of time",
+          "en": "maintained over a period of time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "disclose",
+        "lemma": "disclose",
+        "glosses": {
+          "es": "to reveal information that may be private",
+          "en": "to reveal information that may be private"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "interchangeable",
+        "lemma": "interchangeable",
+        "glosses": {
+          "es": "able to be exchanged without an important difference",
+          "en": "able to be exchanged without an important difference"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ledger",
+        "lemma": "ledger",
+        "glosses": {
+          "es": "a systematic record or account",
+          "en": "a systematic record or account"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.3,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:11:58.391Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "What is the essay’s main concern about the open timetable?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Equal choices can conceal unequal control of time."
+        },
+        {
+          "id": "a2",
+          "text": "Students are unable to organise any part of their learning without a fixed timetable."
+        },
+        {
+          "id": "a3",
+          "text": "The school should replace every independent study period with an additional history lesson."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The policy offered identical permission to choose. It did not provide identical control over the hours from which a choice could be made.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Why could Priya not use the after-school desk offered by a governor?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "She disliked the room."
+        },
+        {
+          "id": "a2",
+          "text": "She collected her younger brothers at that time."
+        },
+        {
+          "id": "a3",
+          "text": "The school had already given the desk to another student for the entire term."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Priya thanked us but explained that she collected her brothers then; the desk would be empty at the hour she could not use it.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "What does the narrator imply about using completion rates alone to set a default slot?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Completion is irrelevant to every decision a school makes."
+        },
+        {
+          "id": "a2",
+          "text": "The governors already know that all signed boxes are dishonest."
+        },
+        {
+          "id": "a3",
+          "text": "The rates may privilege easily counted outcomes while overlooking access and the quality of study."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "The data could support that decision if completion were the only aim. But early sessions favoured students who could reach school before the first bell, and the records did not show whether completion meant sustained thought or simply a signed box.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Why does the narrator acknowledge faults in the old fixed timetable?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "To avoid presenting rigidity as a simple cure."
+        },
+        {
+          "id": "a2",
+          "text": "To establish that the previous school timetable was illegal."
+        },
+        {
+          "id": "a3",
+          "text": "To prove that the new policy has already solved every transport problem."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "The previous rule had disadvantages of its own: it kept students on site after a draining morning and made some miss the only practical route home.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "How does the narrator describe the revised timetable at the end?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "As beyond further criticism."
+        },
+        {
+          "id": "a2",
+          "text": "As an improvement that still needs scrutiny."
+        },
+        {
+          "id": "a3",
+          "text": "As a failed experiment that should be abandoned before another term begins."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "I said it was fairer, and she smiled at the cautious word. I meant it.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "What does “interchangeable” suggest about the way the school counts study hours?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "The hours can be traded between students as an official school reward."
+        },
+        {
+          "id": "a2",
+          "text": "The hours can be moved between days only with written permission."
+        },
+        {
+          "id": "a3",
+          "text": "The hours are treated as equivalent even when students reach them under very different conditions."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "It was a question we had to keep asking whenever our categories made one student's hour look interchangeable with another's.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Write a short policy note to the school. Evaluate the supervised period using two details from the passage, and propose one safeguard that respects students’ privacy while making unequal access visible.",
+      "en": "Write a short policy note to the school. Evaluate the supervised period using two details from the passage, and propose one safeguard that respects students’ privacy while making unequal access visible."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Assess whether equal access to flexible hours can produce fair outcomes when students have unequal control over their time.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:11:58.391Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "The Hours We Were Given | C2 Reading | WeLearn",
+      "en": "The Hours We Were Given | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "A school offers students more choice over their timetable, but a teacher notices that choice depends on who controls the rest of the day.",
+      "en": "A school offers students more choice over their timetable, but a teacher notices that choice depends on who controls the rest of the day."
+    },
+    "canonicalPath": "/en/practice/english/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:11:58.391Z"
+  }
+}
