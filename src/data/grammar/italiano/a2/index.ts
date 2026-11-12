@@ -19,8 +19,9 @@ import avverbi from './avverbi-frequenza-modo-a2'
 import futuroProbabilita from './futuro-probabilita-a2'
 import periodoIpotetico from './periodo-ipotetico-reale-a2'
 import trapassatoProssimo from './trapassato-prossimo-a2'
+import { closeItalianFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   passatoProssimoAvere,
   passatoProssimoEssere,
   imperfetto,
@@ -42,5 +43,7 @@ const topics: GrammarTopic[] = [
   periodoIpotetico,
   trapassatoProssimo,
 ]
+
+const topics = sourceTopics.map((topic, index) => closeItalianFoundationTopic(topic, 'a2', index + 1))
 
 export default topics

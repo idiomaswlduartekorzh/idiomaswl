@@ -95,7 +95,7 @@ def germanize(value):
         return value
     if value in GERMAN_TEXT:
         return GERMAN_TEXT[value]
-    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    match = re.fullmatch(r'(\d+) learning decisions arranged in (?:six )?progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
     if match:
         return f"{match.group(1)} Lernentscheidungen in sechs progressiven Stufen. Schreiben Sie direkt auf die Seite und nutzen Sie den getrennten Lösungsschlüssel erst nach Abschluss einer Stufe."
     match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
@@ -162,7 +162,7 @@ def italianize(value):
         return value
     if value in ITALIAN_TEXT:
         return ITALIAN_TEXT[value]
-    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    match = re.fullmatch(r'(\d+) learning decisions arranged in (?:six )?progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
     if match:
         return f"{match.group(1)} decisioni di apprendimento in sei fasi progressive. Scrivi direttamente sulla pagina e consulta le soluzioni separate solo dopo aver completato una fase."
     match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
@@ -568,8 +568,8 @@ class Workbook(BaseDocTemplate):
         canvas.setFillColor(MUTED)
         canvas.setFont('WeLearnEN', 6.7)
         edition_footer = {'complete': l('Complete guide', 'Cours complet'), 'exercises': l('Exercise workbook', "Cahier d'exercices"), 'answer-key': l('Answer key', 'Corrigé')}[self.edition]
-        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced else f"Material original · {lower_language_es()} {self.topic['level']} · idiomaswl.com"
-        page_label = l('Page', 'Page') if advanced else 'Página'
+        footer = f"{l('Original material · English', 'Ressource originale · Français')} {self.topic['level']} · {edition_footer} · idiomaswl.com" if advanced or IS_ITALIAN or IS_PORTUGUESE or IS_GERMAN or IS_KOREAN or IS_JAPANESE or IS_RUSSIAN else f"Material original · {lower_language_es()} {self.topic['level']} · idiomaswl.com"
+        page_label = l('Page', 'Page') if advanced or IS_ITALIAN or IS_PORTUGUESE or IS_GERMAN or IS_KOREAN or IS_JAPANESE or IS_RUSSIAN else 'Página'
         canvas.drawString(18 * mm, 10 * mm, footer)
         canvas.drawRightString(PAGE_W - 18 * mm, 10 * mm, f'{page_label} {doc.page}')
         canvas.restoreState()
@@ -993,6 +993,16 @@ def build_story(topic):
         'correct': 'Correct and explain the rule' if advanced else 'Corrige y explica la regla',
         'close': 'Final task' if advanced else 'Cierre',
     }
+    if IS_ITALIAN and not advanced:
+        labels.update({
+            'cover': f"ITALIANO · LIVELLO {topic['level']} · QUADERNO STAMPABILE",
+            'goal': 'Obiettivo della lezione', 'model': 'Modello', 'outcomes': 'Al termine saprai',
+            'study': 'Come studiare', 'understand': '01 · CAPIRE', 'essential': 'L’idea essenziale',
+            'map': '02 · MAPPA VISIVA', 'glance': 'La regola in un colpo d’occhio', 'formula': 'Formula',
+            'order': 'Decidi in questo ordine', 'errors': 'Errori frequenti', 'examples': 'Esempi di riferimento',
+            'practice': '03 · PRATICA', 'production': 'Dal riconoscimento alla produzione',
+            'answers': '04 · SOLUZIONI', 'correct': 'Correggi e spiega la regola', 'close': 'Compito finale',
+        })
     story = [p(labels['cover'], STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box(labels['goal'], topic['guide']['goal']), Spacer(1, 4 * mm), info_box(labels['model'], topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p(labels['outcomes'], STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
     study_copy = (
@@ -1000,6 +1010,8 @@ def build_story(topic):
         if topic['level'].lower() in ('a1', 'a2', 'b1')
         else 'Read the explanation, rebuild the infographic from memory, complete the practice, and check the answer key. Return to the visual map to justify each decision.'
     )
+    if IS_ITALIAN and not advanced:
+        study_copy = 'Leggi la spiegazione, ricostruisci la mappa senza guardare, completa le sei fasi e correggi solo alla fine. Torna al modello per motivare ogni decisione.'
     story += [Spacer(1, 3 * mm), info_box(labels['study'], study_copy, PALE_RED), PageBreak()]
     story += [p(labels['understand'], STYLES['eyebrow']), p(labels['essential'], STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
@@ -1015,9 +1027,13 @@ def build_story(topic):
     story += [Spacer(1, 2 * mm), data_table(topic['guide']['table']), Spacer(1, 3 * mm), p(labels['errors'], STYLES['h2'])]
     story.extend(p(f'× {mistake}', STYLES['body']) for mistake in topic['guide']['mistakes'])
     examples_copy = 'Cover the second column, reconstruct the pattern, and explain why the inversion is required.' if advanced else 'Tapa la columna en español, explica el sentido y lee el ejemplo en voz alta.'
+    if IS_ITALIAN and not advanced:
+        examples_copy = 'Copri la seconda colonna, ricostruisci lo schema e spiega ad alta voce quale scelta controlla la forma.'
     story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']), p(examples_copy, STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
     exercises, answers = exercises_for(topic)
     exercise_copy = f'{len(exercises)} printable exercises. Work without checking the answer key.' if advanced else f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.'
+    if IS_ITALIAN and not advanced:
+        exercise_copy = f'{len(exercises)} esercizi stampabili. Lavora senza consultare le soluzioni.'
     story += [p(labels['practice'], STYLES['eyebrow']), p(labels['production'], STYLES['title']), p(exercise_copy, STYLES['lead'])]
     current = None
     for number, level, prompt in exercises:
@@ -1026,10 +1042,14 @@ def build_story(topic):
             current = level
         story.append(p(f'{number}. {prompt}', STYLES['exercise']))
     answer_copy = 'For open responses, compare the target structure first and the vocabulary second.' if advanced else 'En respuestas abiertas, compara primero la estructura objetivo y después el vocabulario.'
+    if IS_ITALIAN and not advanced:
+        answer_copy = 'Nelle risposte aperte, confronta prima la struttura obiettivo e poi il lessico.'
     story += [PageBreak(), p(labels['answers'], STYLES['eyebrow']), p(labels['correct'], STYLES['title']), p(answer_copy, STYLES['lead'])]
     for number, answer, explanation in answers:
         story.append(p(f'{number}. {answer} — {explanation}', STYLES['answer']))
     closing_copy = 'Write three original sentences and return to the visual map within 24 hours.' if advanced else 'Escribe tres frases nuevas, léelas en voz alta y vuelve al mapa visual dentro de 24 horas.'
+    if IS_ITALIAN and not advanced:
+        closing_copy = 'Scrivi tre frasi originali, leggile ad alta voce e torna alla mappa visiva entro ventiquattro ore.'
     story += [Spacer(1, 4 * mm), info_box(labels['close'], closing_copy, PALE_BLUE)]
     return story
 

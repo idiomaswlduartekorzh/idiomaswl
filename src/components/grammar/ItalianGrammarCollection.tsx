@@ -4,6 +4,9 @@ import type { ItalianGrammarLevel } from '@/data/italian-grammar-resources'
 import styles from './GrammarCollection.module.css'
 
 const COPY: Record<ItalianGrammarLevel,{label:string;lead:string;outcome:string}> = {
+  a1:{label:'Fondamenta essenziali',lead:'Costruisci frasi chiare con articoli, accordo, presente, domande, negazione, preposizioni e primi strumenti per raccontare.',outcome:'Comprendere e produrre frasi quotidiane complete controllando forma, ordine e riferimento.'},
+  a2:{label:'Espansione quotidiana',lead:'Collega passato, futuro, pronomi, comparazione e perifrasi per raccontare esperienze e gestire situazioni reali.',outcome:'Passare dalla frase isolata a dialoghi e brevi testi coerenti con riferimenti chiari.'},
+  b1:{label:'Indipendenza testuale',lead:'Gestisci tempi narrativi, modi, voce, pronomi combinati e coesione attraverso decisioni grammaticali motivate.',outcome:'Raccontare, spiegare e argomentare in testi connessi controllando prospettiva e registro.'},
   b2:{label:'Autonomia comunicativa',lead:'Consolida tempi, modi, pronomi, forme implicite e organizzazione del testo attraverso vere decisioni di significato.',outcome:'Gestire il sistema grammaticale B2 in conversazioni, relazioni, argomentazioni e prove d’esame.'},
   c1:{label:'Controllo avanzato',lead:'Padroneggia densità sintattica, modalità, coesione e gestione dell’informazione nei testi accademici e professionali.',outcome:'Usare le strutture C1 come scelte discorsive precise, adatte al registro e al destinatario.'},
   c2:{label:'Padronanza stilistica',lead:'Affina prospettiva, riferimento, portata, ritmo e architettura del periodo per riformulare senza perdere sfumature.',outcome:'Rimodellare lo stesso contenuto per generi, effetti e gradi di impegno diversi.'},

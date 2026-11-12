@@ -8,7 +8,7 @@ const minimumTopics = {
   ingles: { a1: 25, a2: 20, b1: 20 },
   frances: { a1: 20, a2: 20, b1: 20 },
   aleman: { a1: 20, a2: 20, b1: 20 },
-  italiano: { a1: 18, a2: 20, b1: 6 },
+  italiano: { a1: 20, a2: 20, b1: 20 },
   portugues: { a1: 18, a2: 20, b1: 20 },
   ruso: { a1: 20, a2: 20, b1: 20 },
   coreano: { a1: 20, a2: 20, b1: 20 },
@@ -37,7 +37,11 @@ for (const language of languages) {
   for (const [level, minimum] of Object.entries(minimumTopics[language])) {
     const indexPath = `src/data/grammar/${language}/${level}/index.ts`;
     const source = read(indexPath);
-    const topicCount = (source.match(/^import (?!type\b)/gm) ?? []).length;
+    let topicCount = (source.match(/^import (?!type\b)/gm) ?? []).length;
+    const supplementPath = `src/data/grammar/${language}/${level}/supplement-topics.ts`;
+    if (source.includes("from './supplement-topics'") && fs.existsSync(path.join(root, supplementPath))) {
+      topicCount += (read(supplementPath).match(/^export const /gm) ?? []).length - 1;
+    }
 
     if (topicCount < minimum) {
       failures.push(`${language}/${level} tiene ${topicCount} temas; el catálogo protegido exige al menos ${minimum}.`);

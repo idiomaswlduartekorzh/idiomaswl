@@ -901,6 +901,18 @@
           "file": "src/data/grammar/italiano/a1/stare-gerundio.ts"
         },
         {
+          "slug": "articoli-partitivi",
+          "title": "Articoli partitivi",
+          "category": "Determinanti e quantità",
+          "file": "src/data/grammar/italiano/a1/supplement-topics.ts"
+        },
+        {
+          "slug": "dimostrativi-presentativi",
+          "title": "Dimostrativi ed ecco",
+          "category": "Riferimento e presentazione",
+          "file": "src/data/grammar/italiano/a1/supplement-topics.ts"
+        },
+        {
           "slug": "verbi-irregolari",
           "title": "Verbos irregulares",
           "category": "Verbos",
@@ -1071,6 +1083,90 @@
           "title": "Periodo Ipotetico",
           "category": "Struttura",
           "file": "src/data/grammar/italiano/b1/periodo-ipotetico-b1.ts"
+        },
+        {
+          "slug": "passato-remoto-b1",
+          "title": "Passato remoto",
+          "category": "Tempi del passato",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "passato-prossimo-imperfetto-b1",
+          "title": "Passato prossimo o imperfetto",
+          "category": "Tempi del passato",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "pronomi-combinati-b1",
+          "title": "Pronomi combinati",
+          "category": "Pronomi e riferimenti",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "ci-e-ne-b1",
+          "title": "Ci e ne",
+          "category": "Pronomi e riferimenti",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "forma-passiva-b1",
+          "title": "Forma passiva",
+          "category": "Voce e prospettiva",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "si-impersonale-passivante-b1",
+          "title": "Si impersonale e passivante",
+          "category": "Voce e prospettiva",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "discorso-indiretto-b1",
+          "title": "Discorso indiretto",
+          "category": "Discorso e coesione",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "relativi-cui-il-quale-b1",
+          "title": "Cui e il quale",
+          "category": "Pronomi e riferimenti",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "gerundio-participio-b1",
+          "title": "Gerundio e participio",
+          "category": "Forme implicite",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "accordo-participio-passato-b1",
+          "title": "Accordo del participio",
+          "category": "Accordo e morfologia",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "connettivi-logici-b1",
+          "title": "Connettivi logici",
+          "category": "Discorso e coesione",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "nominalizzazione-b1",
+          "title": "Nominalizzazione",
+          "category": "Stile e costruzione",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "comparativi-superlativi-avanzati-b1",
+          "title": "Comparazione avanzata",
+          "category": "Comparazione e intensità",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
+        },
+        {
+          "slug": "imperativo-pronomi-b1",
+          "title": "Imperativo con pronomi",
+          "category": "Modo e interazione",
+          "file": "src/data/grammar/italiano/b1/supplement-topics.ts"
         },
         {
           "slug": "trapassato-prossimo-b1",

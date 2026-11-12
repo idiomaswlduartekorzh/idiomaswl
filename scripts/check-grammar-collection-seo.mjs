@@ -10,7 +10,7 @@ const routes = [
   ['japones', 'b1'],
 ]
 const errors = []
-const specialized = { aleman: 'German', frances: 'French' }
+const specialized = { aleman: 'German', frances: 'French', italiano: 'Italian' }
 
 function source(relativePath) {
   return readFileSync(join(root, relativePath), 'utf8')
@@ -114,6 +114,14 @@ for (const marker of [
 if (frenchCollection.startsWith("'use client'") || frenchTopic.startsWith("'use client'")) {
   errors.push('fachada francesa: colección y lección deben renderizar datos estructurados en servidor')
 }
+
+const italianCollection = source('src/components/grammar/ItalianGrammarCollection.tsx')
+for (const marker of ["'@type':'CollectionPage'", "'@type':'ItemList'", 'topics.map', 'topic.slug']) expect(italianCollection, marker, 'facciata italiana della raccolta')
+const italianTopic = source('src/components/grammar/ItalianGrammarTopicPage.tsx')
+for (const marker of ["'@type':'LearningResource'", 'isAccessibleForFree:true', 'grammarVisualImageObject', '<ItalianGrammarLesson', '<TopicNav', 'resource.exercisesPdf', 'resource.answerKeyPdf']) expect(italianTopic, marker, 'facciata italiana della lezione')
+const italianLesson = source('src/components/grammar/ItalianGrammarLesson.tsx')
+for (const marker of ['<GrammarTopicVisual', 'topic.seo.map', '<ReferenceTable']) expect(italianLesson, marker, 'contenuto italiano indicizzabile')
+if (italianCollection.startsWith("'use client'") || italianTopic.startsWith("'use client'")) errors.push('facciata italiana: raccolta e lezione devono essere renderizzate sul server')
 
 if (errors.length) {
   console.error(`La protección SEO de gramática falló (${errors.length}):`)

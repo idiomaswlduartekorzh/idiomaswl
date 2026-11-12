@@ -17,8 +17,10 @@ import verbiIrregolari from './verbi-irregolari'
 import stareGerundio from './stare-gerundio'
 import imperativo from './imperativo'
 import avverbiFrequenza from './avverbi-frequenza'
+import supplementTopics from './supplement-topics'
+import { closeItalianFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   pronomiSoggetto,
   verboEssere,
   verboAvere,
@@ -37,6 +39,9 @@ const topics: GrammarTopic[] = [
   stareGerundio,
   imperativo,
   avverbiFrequenza,
+  ...supplementTopics,
 ]
+
+const topics = sourceTopics.map((topic, index) => closeItalianFoundationTopic(topic, 'a1', index + 1))
 
 export default topics

@@ -56,6 +56,19 @@ async function readTopics(languageDir, level) {
   // lecciones públicas y no deben entrar en el catálogo de lectura.
   for (const entry of entries.filter((name) => name.endsWith('.ts') && name !== 'index.ts' && !name.endsWith('quality-closeout.ts') && !name.endsWith('-factory.ts')).sort()) {
     const source = await readFile(path.join(dir, entry), 'utf8')
+    if (entry === 'supplement-topics.ts') {
+      const matches = [...source.matchAll(/slug:\s*['"]([^'"]+)['"][\s\S]*?shortTitle:\s*['"]([^'"]+)['"]/g)]
+      if (!matches.length) throw new Error(`${languageDir}/${level}/${entry}: no se pudieron leer los temas suplementarios`)
+      for (const match of matches) {
+        topics.push({
+          slug: match[1],
+          title: match[2],
+          category: match[0].match(/category:\s*['"]([^'"]+)['"]/)?.[1] ?? null,
+          file: `src/data/grammar/${languageDir}/${level}/${entry}`,
+        })
+      }
+      continue
+    }
     const slug = extractField(source, 'slug')
     if (!slug) {
       throw new Error(`${languageDir}/${level}/${entry}: no se pudo leer el slug del tema`)
