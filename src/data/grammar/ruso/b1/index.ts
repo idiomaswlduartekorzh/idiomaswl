@@ -19,8 +19,9 @@ import futuroPerf from './futuro-perfectivo-b1'
 import adverbiosCircunstanciales from './adverbios-circunstanciales-b1'
 import diminutivosAumentativos from './diminutivos-aumentativos-b1'
 import participiosAdjetivales from './participios-adjetivales-b1'
+import { closeRussianFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   verbosMovimiento,
   participiosActivos,
   participiosPasivos,
@@ -42,5 +43,6 @@ const topics: GrammarTopic[] = [
   diminutivosAumentativos,
   participiosAdjetivales,
 ]
+const topics=sourceTopics.map((topic,index)=>closeRussianFoundationTopic(topic,'b1',index+1))
 
 export default topics

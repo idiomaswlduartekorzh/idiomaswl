@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { GrammarCollectionTopicPage } from '@/components/grammar/GrammarCollection'
+import RussianAdvancedGrammarTopicPage from '@/components/grammar/RussianAdvancedGrammarTopicPage'
 import { getTopicsByLevel, getTopicBySlug } from '@/data/grammar/registry'
-import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrated'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 
 const IDIOMA = 'ruso' as const
@@ -25,12 +24,5 @@ export default async function GrammarTopicPage({ params }: Props) {
   const topic = getTopicBySlug(IDIOMA, NIVEL, slug)
   if (!topic) notFound()
 
-  return (
-    <GrammarCollectionTopicPage
-      topic={topic}
-      idioma={IDIOMA}
-      nivel={NIVEL}
-      relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)}
-    />
-  )
+  return <RussianAdvancedGrammarTopicPage topic={topic} level={NIVEL} />
 }

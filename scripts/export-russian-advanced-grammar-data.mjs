@@ -4,7 +4,7 @@ import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
 const ROOT = process.cwd(), TARGET = path.join(ROOT, 'tmp', 'russian-advanced-grammar', 'topics.json'), topics = []
-const levels = (process.env.RUSSIAN_ADVANCED_GRAMMAR_LEVELS ?? 'b2,c1,c2').split(',').map((level) => level.trim()).filter(Boolean)
+const levels = (process.env.RUSSIAN_ADVANCED_GRAMMAR_LEVELS ?? 'a1,a2,b1,b2,c1,c2').split(',').map((level) => level.trim()).filter(Boolean)
 for (const level of levels) {
   const moduleUrl = pathToFileURL(path.join(ROOT, 'src', 'data', 'grammar', 'ruso', level, 'index.ts')).href
   const { default: levelTopics } = await import(`${moduleUrl}?export=${Date.now()}`)

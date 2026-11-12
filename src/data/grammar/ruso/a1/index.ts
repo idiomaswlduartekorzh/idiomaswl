@@ -19,8 +19,9 @@ import futuroByt from './futuro-byt'
 import verbosIrregularesBasicos from './verbos-irregulares-basicos'
 import imperativo from './imperativo'
 import casoDativoBasico from './caso-dativo-basico'
+import { closeRussianFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   alfabetoCirilico,
   pronombresPersonales,
   generoSustantivos,
@@ -42,5 +43,6 @@ const topics: GrammarTopic[] = [
   imperativo,
   casoDativoBasico,
 ]
+const topics=sourceTopics.map((topic,index)=>closeRussianFoundationTopic(topic,'a1',index+1))
 
 export default topics

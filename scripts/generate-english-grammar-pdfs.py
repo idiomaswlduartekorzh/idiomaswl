@@ -430,7 +430,7 @@ def russianize(value):
         return value
     if value in RUSSIAN_TEXT:
         return RUSSIAN_TEXT[value]
-    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    match = re.fullmatch(r'(\d+) learning decisions arranged in (?:six )?progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
     if match:
         return f"{match.group(1)} учебных решений в шести последовательных этапах. Пишите прямо на странице и открывайте отдельные ответы только после завершения этапа."
     match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
@@ -1013,6 +1013,8 @@ def build_story(topic):
             'practice': '03 · PRÁTICA', 'production': 'Do reconhecimento à produção',
             'answers': '04 · GABARITO', 'correct': 'Corrija e explique a regra', 'close': 'Tarefa final',
         })
+    if IS_RUSSIAN and not advanced:
+        labels.update({'cover':f"РУССКИЙ ЯЗЫК · УРОВЕНЬ {topic['level']} · МАТЕРИАЛ ДЛЯ ПЕЧАТИ",'goal':'Цель урока','model':'Модель','outcomes':'После урока вы сможете','study':'Как работать','understand':'01 · ПОНЯТЬ','essential':'Главная идея','map':'02 · ВИЗУАЛЬНАЯ КАРТА','glance':'Правило одним взглядом','formula':'Формула','order':'Принимайте решения в этом порядке','errors':'Типичные ошибки','examples':'Опорные примеры','practice':'03 · ПРАКТИКА','production':'От распознавания к созданию','answers':'04 · ОТВЕТЫ','correct':'Проверьте и объясните правило','close':'Итоговое задание'})
     story = [p(labels['cover'], STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box(labels['goal'], topic['guide']['goal']), Spacer(1, 4 * mm), info_box(labels['model'], topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p(labels['outcomes'], STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
     study_copy = (
@@ -1024,6 +1026,7 @@ def build_story(topic):
         study_copy = 'Leggi la spiegazione, ricostruisci la mappa senza guardare, completa le sei fasi e correggi solo alla fine. Torna al modello per motivare ogni decisione.'
     if IS_PORTUGUESE and not advanced:
         study_copy = 'Leia a explicação, reconstrua o mapa sem olhar, complete as seis etapas e confira apenas no final. Volte ao modelo para justificar cada decisão.'
+    if IS_RUSSIAN and not advanced: study_copy='Прочитайте объяснение, восстановите карту по памяти, выполните шесть этапов и только затем проверьте ответы. Обоснуйте каждое решение через модель.'
     story += [Spacer(1, 3 * mm), info_box(labels['study'], study_copy, PALE_RED), PageBreak()]
     story += [p(labels['understand'], STYLES['eyebrow']), p(labels['essential'], STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
@@ -1043,6 +1046,7 @@ def build_story(topic):
         examples_copy = 'Copri la seconda colonna, ricostruisci lo schema e spiega ad alta voce quale scelta controlla la forma.'
     if IS_PORTUGUESE and not advanced:
         examples_copy = 'Cubra a segunda coluna, reconstrua o padrão e explique em voz alta qual decisão controla a forma.'
+    if IS_RUSSIAN and not advanced: examples_copy='Закройте второй столбец, восстановите модель и вслух объясните, какое решение управляет формой.'
     story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']), p(examples_copy, STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
     exercises, answers = exercises_for(topic)
     exercise_copy = f'{len(exercises)} printable exercises. Work without checking the answer key.' if advanced else f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.'
@@ -1050,6 +1054,7 @@ def build_story(topic):
         exercise_copy = f'{len(exercises)} esercizi stampabili. Lavora senza consultare le soluzioni.'
     if IS_PORTUGUESE and not advanced:
         exercise_copy = f'{len(exercises)} exercícios para impressão. Trabalhe sem consultar o gabarito.'
+    if IS_RUSSIAN and not advanced: exercise_copy=f'{len(exercises)} заданий для печати. Работайте, не заглядывая в ответы.'
     story += [p(labels['practice'], STYLES['eyebrow']), p(labels['production'], STYLES['title']), p(exercise_copy, STYLES['lead'])]
     current = None
     for number, level, prompt in exercises:
@@ -1062,6 +1067,7 @@ def build_story(topic):
         answer_copy = 'Nelle risposte aperte, confronta prima la struttura obiettivo e poi il lessico.'
     if IS_PORTUGUESE and not advanced:
         answer_copy = 'Nas respostas abertas, compare primeiro a estrutura-alvo e depois o vocabulário.'
+    if IS_RUSSIAN and not advanced: answer_copy='В открытых ответах сначала сравните целевую структуру, а затем лексику.'
     story += [PageBreak(), p(labels['answers'], STYLES['eyebrow']), p(labels['correct'], STYLES['title']), p(answer_copy, STYLES['lead'])]
     for number, answer, explanation in answers:
         story.append(p(f'{number}. {answer} — {explanation}', STYLES['answer']))
@@ -1070,6 +1076,7 @@ def build_story(topic):
         closing_copy = 'Scrivi tre frasi originali, leggile ad alta voce e torna alla mappa visiva entro ventiquattro ore.'
     if IS_PORTUGUESE and not advanced:
         closing_copy = 'Escreva três frases originais, leia-as em voz alta e volte ao mapa visual dentro de vinte e quatro horas.'
+    if IS_RUSSIAN and not advanced: closing_copy='Напишите три новых предложения, прочитайте их вслух и вернитесь к визуальной карте через сутки.'
     story += [Spacer(1, 4 * mm), info_box(labels['close'], closing_copy, PALE_BLUE)]
     return story
 

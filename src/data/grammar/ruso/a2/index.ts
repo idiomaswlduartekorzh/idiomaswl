@@ -19,8 +19,9 @@ import oracionesSubordinadas from './oraciones-subordinadas'
 import pronombreRelativo from './pronombres-relativos'
 import adverbiosTiempo from './adverbios-tiempo'
 import pluralesIrregulares from './plurales-irregulares'
+import { closeRussianFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   pasadoVerbos,
   aspectoVerbal,
   futuroImperfectivo,
@@ -42,5 +43,6 @@ const topics: GrammarTopic[] = [
   adverbiosTiempo,
   pluralesIrregulares,
 ]
+const topics=sourceTopics.map((topic,index)=>closeRussianFoundationTopic(topic,'a2',index+1))
 
 export default topics
