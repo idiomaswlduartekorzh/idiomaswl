@@ -33,7 +33,7 @@ export default function KoreanGrammarLesson({
   const [active, setActive] = useState<SectionId>('comprender')
   const formulaParts = splitFormula(topic.guide.formula)
   const model = splitModel(topic.guide.model)
-  const hasFinalResources = Boolean(resource.pdf && resource.audioTracks?.length)
+  const hasFinalResources = Boolean(resource.pdf && resource.exercisesPdf && resource.answerKeyPdf)
   const practiceActivityCount = countPracticeActivities(topic)
 
   function selectSection(id: SectionId) {
@@ -153,9 +153,11 @@ export default function KoreanGrammarLesson({
 
         {active === 'recursos' ? (
           <section className={styles.resources} aria-labelledby="resources-title">
-            <SectionIntro kicker="Biblioteca de estudio" title={hasFinalResources ? 'Material listo para estudiar' : 'Recursos de cierre'} copy={hasFinalResources ? `Descarga el cuaderno y usa las ${resource.audioTracks?.length ?? 0} pistas nativas dentro de la lección o fuera de línea.` : 'El contenido y la práctica ya están listos. Los audios nativos y archivos descargables se producirán juntos en la fase final.'} titleId="resources-title" />
+            <SectionIntro kicker="Biblioteca de estudio" title="Material listo para estudiar" copy={`Descarga la guía completa, el cuaderno de ejercicios y las respuestas. ${resource.audioTracks?.length ? `También tienes ${resource.audioTracks.length} pistas nativas.` : 'El espacio de audio queda reservado para la siguiente fase.'}`} titleId="resources-title" />
             <div className={styles.resourceGrid}>
-              <ResourceCard code="PDF" title="Guía y cuaderno" copy={`Explicación, mapa visual, ${practiceActivityCount} actividades y soluciones.`} href={resource.pdf} />
+              <ResourceCard code="PDF" title="Guía completa" copy="Explicación amplia, tablas, mapa visual, práctica y repaso." href={resource.pdf} label="Descargar guía" />
+              <ResourceCard code="연습" title="Cuaderno de ejercicios" copy={`${practiceActivityCount} decisiones de aprendizaje sin respuestas intercaladas.`} href={resource.exercisesPdf} label="Descargar ejercicios" />
+              <ResourceCard code="해설" title="Respuestas y explicaciones" copy="Soluciones modelo y motivo gramatical de cada decisión." href={resource.answerKeyPdf} label="Descargar respuestas" />
               <ResourceCard code="PNG" title="Mapa visual" copy="Fórmula, modelo y errores clave." />
               <ResourceCard code="음성" title="Audio coreano nativo" copy={resource.audioTracks ? `${resource.audioTracks.length} pistas Chatterbox con voz y ritmo aprobados.` : 'Chatterbox con la voz y el ritmo ya aprobados.'} final={!resource.audioTracks} />
             </div>
@@ -180,8 +182,8 @@ function ReferenceTable({ rows }: { rows: string[][] }) {
   return <div className={styles.tableWrap} role="region" aria-label="Tabla de referencia" tabIndex={0}><table><thead><tr>{rows[0].map((cell, index) => <th key={`${index}-${cell}`}>{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <td key={`${cellIndex}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table></div>
 }
 
-function ResourceCard({ code, title, copy, final = false, href }: { code: string; title: string; copy: string; final?: boolean; href?: string }) {
-  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={protectedMaterialHref(href)} download>Descargar PDF</a> : <em>{final ? 'Se produce al final' : 'Incluido en la lección'}</em>}</div></div>
+function ResourceCard({ code, title, copy, final = false, href, label = 'Descargar PDF' }: { code: string; title: string; copy: string; final?: boolean; href?: string; label?: string }) {
+  return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={protectedMaterialHref(href)} download>{label}</a> : <em>{final ? 'Se produce al final' : 'Incluido en la lección'}</em>}</div></div>
 }
 
 function AudioShelf({ tracks }: { tracks: NonNullable<ReturnType<typeof getKoreanGrammarResource>['audioTracks']> }) {

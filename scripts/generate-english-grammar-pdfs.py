@@ -296,7 +296,7 @@ def koreanize(value):
         return value
     if value in KOREAN_TEXT:
         return KOREAN_TEXT[value]
-    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    match = re.fullmatch(r'(\d+) learning decisions arranged in (?:six )?progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
     if match:
         return f"6단계로 구성된 {match.group(1)}개의 학습 판단입니다. 페이지에 직접 답하고 한 단계를 마친 뒤에만 별도 해설을 확인하세요."
     match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
@@ -363,7 +363,7 @@ def japaneseize(value):
         return value
     if value in JAPANESE_TEXT:
         return JAPANESE_TEXT[value]
-    match = re.fullmatch(r'(\d+) learning decisions arranged in six progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
+    match = re.fullmatch(r'(\d+) learning decisions arranged in (?:six )?progressive stages\. Write directly on the page and consult the separate answer key only after completing a stage\.', value)
     if match:
         return f"6段階に整理した{match.group(1)}の学習判断です。ページに直接答えを書き、一段階を終えてから別冊の解答を確認してください。"
     match = re.fullmatch(r'Printable practice for (.+)\. No explanations or solutions interrupt the work pages\.', value)
@@ -1015,6 +1015,10 @@ def build_story(topic):
         })
     if IS_RUSSIAN and not advanced:
         labels.update({'cover':f"РУССКИЙ ЯЗЫК · УРОВЕНЬ {topic['level']} · МАТЕРИАЛ ДЛЯ ПЕЧАТИ",'goal':'Цель урока','model':'Модель','outcomes':'После урока вы сможете','study':'Как работать','understand':'01 · ПОНЯТЬ','essential':'Главная идея','map':'02 · ВИЗУАЛЬНАЯ КАРТА','glance':'Правило одним взглядом','formula':'Формула','order':'Принимайте решения в этом порядке','errors':'Типичные ошибки','examples':'Опорные примеры','practice':'03 · ПРАКТИКА','production':'От распознавания к созданию','answers':'04 · ОТВЕТЫ','correct':'Проверьте и объясните правило','close':'Итоговое задание'})
+    if IS_KOREAN and not advanced:
+        labels.update({'cover':f"한국어 · {topic['level']} · 인쇄용 학습 자료",'goal':'학습 목표','model':'핵심 모델','outcomes':'학습 후 할 수 있는 것','study':'학습 방법','understand':'01 · 이해하기','essential':'핵심 개념','map':'02 · 시각 지도','glance':'한눈에 보는 규칙','formula':'구조','order':'이 순서로 판단하세요','errors':'자주 하는 오류','examples':'기준 예문','practice':'03 · 연습하기','production':'형태 인식에서 실제 사용까지','answers':'04 · 정답과 해설','correct':'고치고 규칙을 설명하세요','close':'마무리 과제'})
+    if IS_JAPANESE and not advanced:
+        labels.update({'cover':f"日本語 · {topic['level']} · 印刷用学習資料",'goal':'学習目標','model':'中心モデル','outcomes':'学習後にできること','study':'学習方法','understand':'01 · 理解する','essential':'中心となる考え','map':'02 · 視覚マップ','glance':'規則を一目で確認','formula':'公式','order':'この順序で判断する','errors':'よくある誤り','examples':'参考例文','practice':'03 · 練習する','production':'形式の識別から自分の表現へ','answers':'04 · 解答と解説','correct':'修正して規則を説明する','close':'まとめの課題'})
     story = [p(labels['cover'], STYLES['eyebrow']), p(topic['title'], STYLES['title']), p(topic['lead'], STYLES['lead']), info_box(labels['goal'], topic['guide']['goal']), Spacer(1, 4 * mm), info_box(labels['model'], topic['guide']['model'], NAVY, 'model'), Spacer(1, 4 * mm), p(labels['outcomes'], STYLES['h1'])]
     story.extend(p(f'{index}. {outcome}', STYLES['body']) for index, outcome in enumerate(topic['outcomes'], 1))
     study_copy = (
@@ -1027,6 +1031,8 @@ def build_story(topic):
     if IS_PORTUGUESE and not advanced:
         study_copy = 'Leia a explicação, reconstrua o mapa sem olhar, complete as seis etapas e confira apenas no final. Volte ao modelo para justificar cada decisão.'
     if IS_RUSSIAN and not advanced: study_copy='Прочитайте объяснение, восстановите карту по памяти, выполните шесть этапов и только затем проверьте ответы. Обоснуйте каждое решение через модель.'
+    if IS_KOREAN and not advanced: study_copy='설명을 읽고, 보지 않고 시각 지도를 다시 만든 뒤, 여섯 단계를 완료하세요. 마지막에만 정답을 확인하고 각 선택을 모델로 설명하세요.'
+    if IS_JAPANESE and not advanced: study_copy='解説を読み、見ずに視覚マップを再現し、六段階の練習を終えてから答えを確認します。各判断を中心モデルで説明してください。'
     story += [Spacer(1, 3 * mm), info_box(labels['study'], study_copy, PALE_RED), PageBreak()]
     story += [p(labels['understand'], STYLES['eyebrow']), p(labels['essential'], STYLES['title']), p(topic['description'], STYLES['lead'])]
     for section in topic['seo']:
@@ -1047,6 +1053,8 @@ def build_story(topic):
     if IS_PORTUGUESE and not advanced:
         examples_copy = 'Cubra a segunda coluna, reconstrua o padrão e explique em voz alta qual decisão controla a forma.'
     if IS_RUSSIAN and not advanced: examples_copy='Закройте второй столбец, восстановите модель и вслух объясните, какое решение управляет формой.'
+    if IS_KOREAN and not advanced: examples_copy='두 번째 열을 가리고 구조를 복원한 뒤, 어떤 판단이 형태를 결정하는지 소리 내어 설명하세요.'
+    if IS_JAPANESE and not advanced: examples_copy='二列目を隠して型を再現し、どの判断が形を決めるのか声に出して説明してください。'
     story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']), p(examples_copy, STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
     exercises, answers = exercises_for(topic)
     exercise_copy = f'{len(exercises)} printable exercises. Work without checking the answer key.' if advanced else f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.'
@@ -1055,6 +1063,8 @@ def build_story(topic):
     if IS_PORTUGUESE and not advanced:
         exercise_copy = f'{len(exercises)} exercícios para impressão. Trabalhe sem consultar o gabarito.'
     if IS_RUSSIAN and not advanced: exercise_copy=f'{len(exercises)} заданий для печати. Работайте, не заглядывая в ответы.'
+    if IS_KOREAN and not advanced: exercise_copy=f'인쇄용 연습 {len(exercises)}문항입니다. 정답을 보지 않고 풀어 보세요.'
+    if IS_JAPANESE and not advanced: exercise_copy=f'印刷用練習{len(exercises)}問です。解答を見ずに取り組んでください。'
     story += [p(labels['practice'], STYLES['eyebrow']), p(labels['production'], STYLES['title']), p(exercise_copy, STYLES['lead'])]
     current = None
     for number, level, prompt in exercises:
@@ -1068,6 +1078,8 @@ def build_story(topic):
     if IS_PORTUGUESE and not advanced:
         answer_copy = 'Nas respostas abertas, compare primeiro a estrutura-alvo e depois o vocabulário.'
     if IS_RUSSIAN and not advanced: answer_copy='В открытых ответах сначала сравните целевую структуру, а затем лексику.'
+    if IS_KOREAN and not advanced: answer_copy='서술형 답에서는 목표 구조를 먼저 비교하고, 그다음 어휘를 확인하세요.'
+    if IS_JAPANESE and not advanced: answer_copy='自由記述では、まず目標構造を比べ、その後で語彙を確認してください。'
     story += [PageBreak(), p(labels['answers'], STYLES['eyebrow']), p(labels['correct'], STYLES['title']), p(answer_copy, STYLES['lead'])]
     for number, answer, explanation in answers:
         story.append(p(f'{number}. {answer} — {explanation}', STYLES['answer']))
@@ -1077,6 +1089,8 @@ def build_story(topic):
     if IS_PORTUGUESE and not advanced:
         closing_copy = 'Escreva três frases originais, leia-as em voz alta e volte ao mapa visual dentro de vinte e quatro horas.'
     if IS_RUSSIAN and not advanced: closing_copy='Напишите три новых предложения, прочитайте их вслух и вернитесь к визуальной карте через сутки.'
+    if IS_KOREAN and not advanced: closing_copy='새 문장 세 개를 쓰고 소리 내어 읽은 뒤, 하루 안에 시각 지도를 다시 확인하세요.'
+    if IS_JAPANESE and not advanced: closing_copy='新しい文を三つ書いて声に出して読み、24時間以内に視覚マップをもう一度確認してください。'
     story += [Spacer(1, 4 * mm), info_box(labels['close'], closing_copy, PALE_BLUE)]
     return story
 

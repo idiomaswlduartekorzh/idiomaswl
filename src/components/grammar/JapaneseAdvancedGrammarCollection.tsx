@@ -4,6 +4,8 @@ import type { JapaneseAdvancedGrammarLevel } from '@/data/japanese-advanced-gram
 import styles from './GrammarCollection.module.css'
 
 const COPY: Record<JapaneseAdvancedGrammarLevel, { label: string; lead: string; outcome: string }> = {
+  a2: { label: '基礎から運用へ', lead: 'て形、アスペクト、条件、授受、比較を、単独の形ではなく会話と短い文章の選択として学びます。', outcome: '身近な出来事を時間順に結び、許可・義務・推量・条件を自然に表現します。' },
+  b1: { label: '自分の言葉で説明する', lead: '変化、使役、受身、判断、推量、複文を、視点と文脈を意識して運用します。', outcome: '経験、理由、評価をまとまりのある文章で伝え、似た文型の違いを説明します。' },
   b2: { label: '自立した運用', lead: 'N2相当の時制、モダリティ、条件、待遇表現、文章構成を、意味の選択として体系的に学びます。', outcome: '会話、記事、報告、試験でB2文法を文脈に合わせて選び、その理由を説明します。' },
   c1: { label: '高度な言語運用', lead: 'N1相当の高度な文型、情報構造、証拠性、敬語、論証を、学術・職業場面で精密に扱います。', outcome: 'C1構文を話者態度、焦点、ジャンル、発言責任に合わせた談話選択として運用します。' },
   c2: { label: '文体と談話の熟達', lead: '視点、作用域、複数の声、含意、ジャンル変換、校閲を通して、自然で責任ある日本語を磨きます。', outcome: '同じ内容を目的・読者・媒体に応じて再構成し、微細な意味差まで説明して推敲します。' },

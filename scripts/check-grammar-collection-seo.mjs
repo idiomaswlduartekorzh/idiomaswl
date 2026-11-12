@@ -10,7 +10,7 @@ const routes = [
   ['japones', 'b1'],
 ]
 const errors = []
-const specialized = { aleman: 'German', frances: 'French', italiano: 'Italian', portugues: 'Portuguese', ruso: 'RussianAdvanced' }
+const specialized = { aleman: 'German', frances: 'French', italiano: 'Italian', portugues: 'Portuguese', ruso: 'RussianAdvanced', japones: 'JapaneseAdvanced' }
 
 function source(relativePath) {
   return readFileSync(join(root, relativePath), 'utf8')

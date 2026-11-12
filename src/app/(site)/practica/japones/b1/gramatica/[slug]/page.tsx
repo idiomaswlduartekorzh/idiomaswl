@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { GrammarCollectionTopicPage } from '@/components/grammar/GrammarCollection'
+import JapaneseAdvancedGrammarTopicPage from '@/components/grammar/JapaneseAdvancedGrammarTopicPage'
 import { getTopicBySlug, getTopicsByLevel } from '@/data/grammar/registry'
-import { getWritingExercisesForGrammar } from '@/data/practica/writing-integrated'
 import { generateGrammarMetadata } from '@/lib/grammar-metadata'
 
 const IDIOMA = 'japones'
@@ -22,5 +21,5 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function GrammarTopicPage({ params }: Props) {
   const topic = getTopicBySlug(IDIOMA, NIVEL, (await params).slug)
   if (!topic) notFound()
-  return <GrammarCollectionTopicPage topic={topic} idioma={IDIOMA} nivel={NIVEL} relatedWritingExercises={getWritingExercisesForGrammar(IDIOMA, NIVEL, topic.slug)} />
+  return <JapaneseAdvancedGrammarTopicPage topic={topic} level={NIVEL} />
 }

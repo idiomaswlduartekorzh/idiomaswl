@@ -1,4 +1,5 @@
 import type { GrammarTopic } from '../../types'
+import { closeJapaneseFoundationTopic } from '../quality-closeout'
 
 import teFormSequence from './te-form-sequence-a2'
 import teIru from './te-iru-a2'
@@ -21,7 +22,7 @@ import maeNiAtoDe from './mae-ni-ato-de-a2'
 import ageruMorauKureru from './ageru-morau-kureru-a2'
 import hikaku from './hikaku-a2'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   teFormSequence,
   teIru,
   taKotoGaAru,
@@ -43,5 +44,7 @@ const topics: GrammarTopic[] = [
   ageruMorauKureru,
   hikaku,
 ]
+
+const topics = sourceTopics.map((topic, index) => closeJapaneseFoundationTopic(topic, 'a2', index + 1))
 
 export default topics

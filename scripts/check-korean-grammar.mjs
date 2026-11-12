@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict'
-import { existsSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync, statSync } from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL, fileURLToPath } from 'node:url'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const requestedLevel = process.argv.find((arg) => /^--level=(a1|a2|b1)$/.test(arg))?.split('=')[1]
 const levels = requestedLevel ? [requestedLevel] : ['a1', 'a2', 'b1']
+const withAssets = process.argv.includes('--assets')
 const { ensureKoreanPracticeDepth } = await import(
   `${pathToFileURL(path.join(ROOT, 'src', 'data', 'grammar', 'coreano', 'ensure-practice-depth.ts')).href}?audit=${Date.now()}`
 )
@@ -114,6 +115,14 @@ for (const level of levels) {
     }
 
     assert.ok(interactions >= 28, `${label}: solo tiene ${interactions} interacciones; mínimo 28`)
+    if (withAssets) {
+      const stem = topic.slug.endsWith(`-${level}`) ? `idiomaswl-${topic.slug}` : `idiomaswl-${topic.slug}-${level}`
+      const materials = path.join(ROOT, 'private', 'site-materials', `coreano-${level}`, 'grammar')
+      for (const suffix of ['', '-yeonseup', '-haeseol']) {
+        const file = path.join(materials, `${stem}${suffix}.pdf`)
+        assert.ok(existsSync(file) && statSync(file).size > 50_000, `${label}: falta PDF ${suffix || 'guía'}`)
+      }
+    }
     levelInteractions += interactions
   }
 
@@ -122,4 +131,4 @@ for (const level of levels) {
   console.log(`✓ Coreano ${level.toUpperCase()}: ${topics.length} lecciones y ${levelInteractions} interacciones verificadas.`)
 }
 
-console.log(`✓ Total auditado: ${totalTopics} lecciones y ${totalInteractions} interacciones.`)
+console.log(`✓ Total auditado: ${totalTopics} lecciones y ${totalInteractions} interacciones${withAssets ? ', con 180 PDF' : ''}.`)

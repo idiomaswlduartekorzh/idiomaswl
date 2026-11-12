@@ -30,7 +30,9 @@ type KoreanGrammarResource = {
   imageAlt: string
   glyph: string
   studyMinutes: number
-  pdf?: string
+  pdf: string
+  exercisesPdf: string
+  answerKeyPdf: string
   audioTracks?: KoreanGrammarAudioTrack[]
 }
 
@@ -55,7 +57,7 @@ const LEVEL_IMAGES: Record<KoreanGrammarLevel, string[]> = {
   ],
 }
 
-const PREVIEW_RESOURCES: Record<string, Omit<KoreanGrammarResource, 'studyMinutes'>> = {
+const PREVIEW_RESOURCES: Record<string, Partial<Omit<KoreanGrammarResource, 'studyMinutes'>> & Pick<KoreanGrammarResource, 'image' | 'imageAlt' | 'glyph'>> = {
   'hangul-basico': {
     image: '/assets/korean/step002/kr_step002_geulja_signs_v1.png',
     imageAlt: 'Letreros coreanos para reconocer bloques silábicos del hangeúl',
@@ -113,19 +115,26 @@ export function getKoreanGrammarResource(topic: GrammarTopic, level: KoreanGramm
   const preview = PREVIEW_RESOURCES[topic.slug]
   const imageIndex = Math.max(0, Number.parseInt(topic.order, 10) - 1) % LEVEL_IMAGES[level].length
 
+  const pdf = preview?.pdf ?? koreanGrammarPdf(topic.slug, level)
+  const stem = koreanGrammarPdfStem(topic.slug, level)
   return {
     image: preview?.image ?? LEVEL_IMAGES[level][imageIndex],
     imageAlt: preview?.imageAlt ?? `Escena cotidiana coreana para estudiar ${topic.shortTitle}`,
     glyph: preview?.glyph ?? koreanGlyph(topic.shortTitle),
     studyMinutes: level === 'b1' ? 50 : level === 'a2' ? 40 : 35,
-    pdf: preview?.pdf ?? koreanGrammarPdf(topic.slug, level),
+    pdf,
+    exercisesPdf: `/api/site-materials/coreano-${level}/grammar/${stem}-yeonseup.pdf`,
+    answerKeyPdf: `/api/site-materials/coreano-${level}/grammar/${stem}-haeseol.pdf`,
     audioTracks: preview?.audioTracks ?? koreanGrammarAudio(topic, level),
   }
 }
 
 function koreanGrammarPdf(slug: string, level: KoreanGrammarLevel): string {
-  const filename = slug.endsWith(`-${level}`) ? `idiomaswl-${slug}.pdf` : `idiomaswl-${slug}-${level}.pdf`
-  return `/api/site-materials/coreano-${level}/grammar/${filename}`
+  return `/api/site-materials/coreano-${level}/grammar/${koreanGrammarPdfStem(slug, level)}.pdf`
+}
+
+function koreanGrammarPdfStem(slug: string, level: KoreanGrammarLevel): string {
+  return slug.endsWith(`-${level}`) ? `idiomaswl-${slug}` : `idiomaswl-${slug}-${level}`
 }
 
 function koreanGrammarAudio(topic: GrammarTopic, level: KoreanGrammarLevel): KoreanGrammarAudioTrack[] {

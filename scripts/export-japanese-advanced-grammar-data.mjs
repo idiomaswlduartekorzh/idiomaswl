@@ -3,7 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 const ROOT = process.cwd(), TARGET = path.join(ROOT, 'tmp', 'japanese-advanced-grammar', 'topics.json'), topics = []
-const levels = (process.env.JAPANESE_ADVANCED_GRAMMAR_LEVELS ?? 'b2,c1,c2').split(',').map((level) => level.trim()).filter(Boolean)
+const levels = (process.env.JAPANESE_ADVANCED_GRAMMAR_LEVELS ?? 'a2,b1,b2,c1,c2').split(',').map((level) => level.trim()).filter(Boolean)
 for (const level of levels) {
   const moduleUrl = pathToFileURL(path.join(ROOT, 'src', 'data', 'grammar', 'japones', level, 'index.ts')).href
   const { default: levelTopics } = await import(`${moduleUrl}?export=${Date.now()}`)

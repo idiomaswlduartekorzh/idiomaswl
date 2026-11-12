@@ -1,4 +1,5 @@
 import type { GrammarTopic } from '../../types'
+import { closeJapaneseFoundationTopic } from '../quality-closeout'
 import youNiNaru from './you-ni-naru-b1'
 import kotoNiSuruNaru from './koto-ni-suru-naru-b1'
 import shiekiSaseru from './shieki-saseru-b1'
@@ -20,7 +21,7 @@ import noni from './noni-b1'
 import yooni from './yooni-b1'
 import kamo from './kamo-b1'
 
-const topics: GrammarTopic[] = [
+const sourceTopics: GrammarTopic[] = [
   youNiNaru,
   kotoNiSuruNaru,
   shiekiSaseru,
@@ -42,5 +43,7 @@ const topics: GrammarTopic[] = [
   yooni,
   kamo,
 ]
+
+const topics = sourceTopics.map((topic, index) => closeJapaneseFoundationTopic(topic, 'b1', index + 1))
 
 export default topics
