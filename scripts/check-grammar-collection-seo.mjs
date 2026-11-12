@@ -123,6 +123,10 @@ const italianLesson = source('src/components/grammar/ItalianGrammarLesson.tsx')
 for (const marker of ['<GrammarTopicVisual', 'topic.seo.map', '<ReferenceTable']) expect(italianLesson, marker, 'contenuto italiano indicizzabile')
 if (italianCollection.startsWith("'use client'") || italianTopic.startsWith("'use client'")) errors.push('facciata italiana: raccolta e lezione devono essere renderizzate sul server')
 
+const koreanTopic = source('src/components/grammar/KoreanGrammarTopicPage.tsx')
+for (const marker of ["'@type': 'LearningResource'", 'isAccessibleForFree: true', 'grammarVisualImageObject', 'resource.pdf', 'resource.exercisesPdf', 'resource.answerKeyPdf', '<KoreanGrammarLesson', '<TopicNav']) expect(koreanTopic, marker, 'fachada coreana de lección')
+if (koreanTopic.startsWith("'use client'")) errors.push('fachada coreana: los datos estructurados deben renderizarse en servidor')
+
 if (errors.length) {
   console.error(`La protección SEO de gramática falló (${errors.length}):`)
   errors.forEach((error) => console.error(`- ${error}`))

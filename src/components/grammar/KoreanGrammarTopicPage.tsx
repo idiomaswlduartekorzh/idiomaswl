@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
-import type { KoreanGrammarLevel } from '@/data/korean-grammar-preview'
+import { getKoreanGrammarResource, type KoreanGrammarLevel } from '@/data/korean-grammar-preview'
 import KoreanGrammarLesson from '@/components/grammar/KoreanGrammarLesson'
 import KoreanHangulLesson from '@/components/grammar/KoreanHangulLesson'
 import TopicNav from '@/components/grammar/TopicNav'
@@ -13,10 +13,15 @@ export default function KoreanGrammarTopicPage({ topic, level, relatedWritingExe
   const levelLabel = level.toUpperCase()
   const canonical = `https://www.idiomaswl.com/practica/coreano/${level}/gramatica/${topic.slug}`
   const indexUrl = `https://www.idiomaswl.com/practica/coreano/${level}/gramatica`
+  const resource = getKoreanGrammarResource(topic, level)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'ko'], teaches: topic.shortTitle, image: grammarVisualUrl('coreano', level, topic.slug), learningResourceType: 'Lección interactiva', provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
+      { '@type': 'LearningResource', name: topic.title, description: topic.description, url: canonical, educationalLevel: topic.level, inLanguage: ['es', 'ko'], teaches: topic.shortTitle, image: grammarVisualUrl('coreano', level, topic.slug), learningResourceType: ['Lección interactiva', 'Guía de gramática', 'Cuaderno de ejercicios', 'Solucionario'], isAccessibleForFree: true, hasPart: [
+        { '@type': 'MediaObject', name: 'Guía completa PDF', contentUrl: `https://www.idiomaswl.com${resource.pdf}`, encodingFormat: 'application/pdf', inLanguage: ['es', 'ko'] },
+        { '@type': 'MediaObject', name: 'Cuaderno de ejercicios PDF', contentUrl: `https://www.idiomaswl.com${resource.exercisesPdf}`, encodingFormat: 'application/pdf', inLanguage: ['es', 'ko'] },
+        { '@type': 'MediaObject', name: 'Respuestas y explicaciones PDF', contentUrl: `https://www.idiomaswl.com${resource.answerKeyPdf}`, encodingFormat: 'application/pdf', inLanguage: ['es', 'ko'] },
+      ], provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' } },
       grammarVisualImageObject(topic, 'coreano', level),
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },
