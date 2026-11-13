@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Cartografia do Esquecimento",
+      "en": "A Cartografia do Esquecimento"
+    },
+    "intro": {
+      "es": "Neste exercício, exploramos a natureza política da cartografia através de uma narrativa sobre a preservação da memória e a exclusão deliberada na nomeação de lugares.",
+      "en": "Neste exercício, exploramos a natureza política da cartografia através de uma narrativa sobre a preservação da memória e a exclusão deliberada na nomeação de lugares."
+    },
+    "mission": {
+      "es": "Analise como a escolha de nomes geográficos reflete tensões entre a preservação histórica e a imposição de novas identidades territoriais.",
+      "en": "Analise como a escolha de nomes geográficos reflete tensões entre a preservação histórica e a imposição de novas identidades territoriais."
+    },
+    "targetText": "Elias detinha a responsabilidade de atualizar o Atlas das Terras Altas, um documento que, mais do que uma representação física, servia como o testamento oficial da memória coletiva da província. Naquela noite, sentado diante de uma mesa de carvalho que rangia sob o peso de pergaminhos seculares, ele ponderava sobre a vila de Pedra Furada. O nome, cunhado por gerações de pastores que viam na geologia local um espelho de suas próprias vidas, estava sob revisão. O comitê de desenvolvimento urbano, em um movimento que eles chamavam de modernização, insistia na substituição por Vale das Brisas. Elias sabia que a toponímia não era um ato neutro; era um exercício de poder que moldava a percepção do habitante sobre o seu próprio chão. Ao riscar o nome antigo com uma pena seca, sentiu o peso de uma supressão que ele mesmo ajudava a perpetuar. A resistência dos anciãos, que ainda insistiam em chamar o lugar pelo nome que lhes fora legado, parecia um eco distante contra a tinta fresca que ele depositava no papel oficial.\n\nA tensão se intensificou quando a prefeita, Dona Helena, entrou no escritório com uma pasta de documentos que ignoravam a existência de qualquer assentamento anterior à fundação da nova colônia industrial. Ela não via o mapa como uma crônica, mas como uma ferramenta de marketing para atrair investimentos. Para ela, Pedra Furada evocava uma precariedade que afastava o capital, enquanto Vale das Brisas sugeria uma serenidade comercialmente viável. Elias argumentou que apagar o nome era amputar a história daquelas famílias, mas a prefeita foi categórica: o mapa deveria servir ao futuro, não ao luto. A discussão revelou uma clivagem irreconciliável: de um lado, a memória como um organismo vivo, enraizado em cada fissura daquelas rochas; do outro, a cartografia como um artefato maleável, pronto para ser moldado conforme as conveniências do presente. A sala ficou em silêncio, preenchida apenas pelo som do relógio de parede, um compasso que parecia marcar a contagem regressiva para a morte de um legado.\n\nMais tarde, Elias caminhou pelas ruas da vila, observando as placas de metal que já começavam a ser instaladas pelos operários. O contraste entre a solidez das pedras que davam nome ao lugar e a fragilidade das novas placas de alumínio era gritante. Ele encontrou um dos anciãos, o senhor Bento, sentado em sua varanda. Bento não olhou para o mapa que Elias carregava sob o braço; ele olhou para o horizonte, onde as montanhas ainda desenhavam o perfil que justificava o nome original. O velho riu, um som seco e desprovido de amargura, e disse que nomes são como sombras: podem ser ignorados, mas nunca verdadeiramente removidos enquanto a luz incidir sobre o objeto. Elias sentiu um nó na garganta. Ele percebeu que, por mais que a burocracia tentasse reescrever a realidade, a memória física do lugar possuía uma resiliência que a tinta oficial jamais alcançaria.\n\nO conflito atingiu o ápice quando o mapa final foi enviado para a impressão central. Elias, em um ato de desobediência silenciosa, inseriu uma marca d'água quase imperceptível, uma pequena inscrição em latim que traduzia o significado original de Pedra Furada no canto inferior da página. Era um gesto fútil, ele sabia, mas necessário para manter sua integridade diante do que considerava uma falsificação histórica. Ao assinar o documento, ele não sentiu o alívio que esperava, mas uma estranha melancolia. Ele havia cumprido sua função técnica, mas falhado em sua missão ética. A cartografia, naquele momento, revelou-se como um espelho quebrado; por mais que se tentasse reconstruir a imagem, as rachaduras eram parte integrante da nova composição.\n\nAo amanhecer, a cidade acordou sob a nova nomenclatura. O Vale das Brisas era, no papel, um sucesso de planejamento urbano. No entanto, nas conversas de café e nos sussurros das praças, o nome antigo persistia como uma resistência subterrânea. Elias observou a cena da janela de seu escritório, compreendendo que a verdadeira cartografia não residia nos arquivos do Estado, mas na memória dos que habitam o espaço. O mapa oficial era apenas uma camada, uma pele que cobria a verdadeira face do território. A tensão entre o nome imposto e o nome vivido permaneceria, um conflito sem resolução definitiva, onde a história continuaria a ser escrita não apenas com tinta, mas com a teimosia daqueles que se recusam a esquecer o que a terra, em sua imobilidade, insiste em lembrar.\n\nContudo, a persistência do nome original gerou uma consequência inesperada para a administração municipal: o Vale das Brisas tornou-se um destino paradoxal. Turistas, atraídos pela promessa de uma serenidade bucólica, frustravam-se ao encontrar uma realidade geológica que desafiava o marketing, enquanto os investidores, percebendo a desconexão entre a identidade oficial e a cultura local, hesitavam diante da instabilidade social latente. Essa dualidade criou uma economia de sombras, onde guias locais cobravam para revelar a localização de Pedra Furada, transformando a resistência histórica em um produto comercial que a prefeitura não conseguia controlar. Elias, observando esse fenômeno, percebeu que a tentativa de apagar o passado apenas o tornara mais valioso e enigmático. A marca d'água que ele inserira, longe de ser um segredo esquecido, começou a circular como um mito entre os jovens, que viam na inscrição latina um símbolo de rebeldia contra a modernização forçada. Assim, a cartografia oficial, em vez de consolidar o futuro, acabou por cristalizar um presente dividido, onde o mapa servia menos como guia de navegação e mais como um lembrete constante da fragilidade de qualquer poder que tente subjugar a memória coletiva à conveniência da tinta.",
+    "wordCount": 919,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "toponímia",
+        "lemma": "toponímia",
+        "glosses": {
+          "es": "The study of place names",
+          "en": "The study of place names"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "clivagem",
+        "lemma": "clivagem",
+        "glosses": {
+          "es": "A division or split",
+          "en": "A division or split"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amputar",
+        "lemma": "amputar",
+        "glosses": {
+          "es": "To cut off or remove a part",
+          "en": "To cut off or remove a part"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "resiliência",
+        "lemma": "resiliência",
+        "glosses": {
+          "es": "The ability to recover or persist",
+          "en": "The ability to recover or persist"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "nomenclatura",
+        "lemma": "nomenclatura",
+        "glosses": {
+          "es": "A system of names",
+          "en": "A system of names"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fútil",
+        "lemma": "fútil",
+        "glosses": {
+          "es": "Pointless or ineffective",
+          "en": "Pointless or ineffective"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.2,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A disputa pela memória."
+        },
+        {
+          "id": "a2",
+          "text": "A modernização urbana."
+        },
+        {
+          "id": "a3",
+          "text": "A falha da cartografia."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elias sabia que a toponímia não era um ato neutro; era um exercício de poder que moldava a percepção do habitante sobre o seu próprio chão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que a prefeita deseja mudar o nome da vila?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para apagar a história."
+        },
+        {
+          "id": "a2",
+          "text": "Para atrair investimentos."
+        },
+        {
+          "id": "a3",
+          "text": "Por exigência legal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Para ela, Pedra Furada evocava uma precariedade que afastava o capital, enquanto Vale das Brisas sugeria uma serenidade comercialmente viável.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como o senhor Bento encara a mudança de nomes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Com conformismo."
+        },
+        {
+          "id": "a2",
+          "text": "Com indiferença."
+        },
+        {
+          "id": "a3",
+          "text": "Com ceticismo."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O velho riu, um som seco e desprovido de amargura, e disse que nomes são como sombras: podem ser ignorados, mas nunca verdadeiramente removidos enquanto a luz incidir sobre o objeto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o intuito de Elias ao inserir a marca d'água?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Preservar a verdade."
+        },
+        {
+          "id": "a2",
+          "text": "Desafiar a prefeita."
+        },
+        {
+          "id": "a3",
+          "text": "Protestar contra o Estado."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elias, em um ato de desobediência silenciosa, inseriu uma marca d'água quase imperceptível, uma pequena inscrição em latim que traduzia o significado original de Pedra Furada no canto inferior da página.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante do desfecho do conto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico."
+        },
+        {
+          "id": "a3",
+          "text": "Indignado."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ao assinar o documento, ele não sentiu o alívio que esperava, mas uma estranha melancolia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa 'clivagem' no contexto da discussão entre Elias e a prefeita?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma união."
+        },
+        {
+          "id": "a2",
+          "text": "Uma confusão."
+        },
+        {
+          "id": "a3",
+          "text": "Uma divisão."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A discussão revelou uma clivagem irreconciliável: de um lado, a memória como um organismo vivo, enraizado em cada fissura daquelas rochas; do outro, a cartografia como um artefato maleável, pronto para ser moldado conforme as conveniências do presente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo analisando se a alteração de nomes geográficos pode ser considerada uma forma legítima de gestão pública ou uma violência simbólica contra a identidade local.",
+      "en": "Escreva um parágrafo argumentativo analisando se a alteração de nomes geográficos pode ser considerada uma forma legítima de gestão pública ou uma violência simbólica contra a identidade local."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analise como a escolha de nomes geográficos reflete tensões entre a preservação histórica e a imposição de novas identidades territoriais.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Cartografia do Esquecimento | C2 Reading | WeLearn",
+      "en": "A Cartografia do Esquecimento | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Neste exercício, exploramos a natureza política da cartografia através de uma narrativa sobre a preservação da memória e a exclusão deliberada na nomeação de lugares.",
+      "en": "Neste exercício, exploramos a natureza política da cartografia através de uma narrativa sobre a preservação da memória e a exclusão deliberada na nomeação de lugares."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-shared-desks",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Autonomia no Espaço Compartilhado",
+      "en": "A Ilusão da Autonomia no Espaço Compartilhado"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a dinâmica de poder e as escolhas ocultas em ambientes de trabalho colaborativo, através de uma correspondência tensa entre um gestor e um locatário.",
+      "en": "Uma análise crítica sobre a dinâmica de poder e as escolhas ocultas em ambientes de trabalho colaborativo, através de uma correspondência tensa entre um gestor e um locatário."
+    },
+    "mission": {
+      "es": "Examinar a natureza da escolha em contextos de custo variável e refletir sobre como a liberdade individual é frequentemente subordinada a estruturas de incentivos invisíveis.",
+      "en": "Examinar a natureza da escolha em contextos de custo variável e refletir sobre como a liberdade individual é frequentemente subordinada a estruturas de incentivos invisíveis."
+    },
+    "targetText": "Prezado Sr. Arantes, escrevo-lhe em resposta à sua notificação de rescisão antecipada do contrato de locação de sua estação de trabalho no Hub Convergência. Compreendo sua frustração quanto ao recente reajuste na estrutura de tarifas para o uso de salas de reunião, contudo, é imperativo esclarecer que a autonomia que o senhor alega ter perdido nunca foi, na verdade, um direito absoluto, mas sim uma variável dependente de sua alocação de recursos. Quando o senhor optou por migrar para o plano 'Flexibilidade Total', a premissa era justamente a de que a liberdade de escolha — seja de espaço, de horário ou de infraestrutura tecnológica — estaria intrinsecamente vinculada a um custo marginal que flutua conforme a demanda coletiva. Ao questionar a legitimidade de tais encargos, o senhor desconsidera que, em um ecossistema compartilhado, a escassez não é uma falha de gestão, mas um mecanismo de regulação. O senhor argumenta que a necessidade de pagar um sobrepreço por uma sala de conferências privativa, em momentos de alta ocupação, inviabiliza o seu modelo de negócio. No entanto, essa barreira econômica não é um obstáculo arbitrário; é a manifestação tangível da priorização de recursos. Se a escolha de reservar uma sala em um horário nobre fosse desvinculada de um custo proibitivo, o sistema colapsaria sob o peso da demanda simultânea. O senhor possui a liberdade de reservar o espaço, mas essa liberdade é, por definição, onerosa. A sua percepção de que a escolha perde o sentido quando o custo é elevado revela uma incompreensão fundamental sobre a natureza da alocação de bens comuns. O valor de uma opção não reside na sua disponibilidade gratuita, mas na capacidade do agente de internalizar o custo de sua preferência. Ao optar por não pagar a taxa, o senhor não está sendo privado de uma escolha, mas sim exercendo uma escolha alternativa: a de priorizar o capital em detrimento da conveniência imediata. A infraestrutura do Hub Convergência não é um serviço público, mas um mercado de conveniências onde a escassez é monetizada para garantir a eficiência operacional. O senhor sugere que a equidade deveria prevalecer sobre a eficiência, mas a equidade, neste contexto, é um conceito abstrato que ignora a realidade da infraestrutura física. Se todos tivessem acesso irrestrito às salas de reunião sem o ônus financeiro adequado, a disponibilidade seria nula para todos. Portanto, a sua decisão de sair não é uma reação a uma injustiça, mas uma resposta racional a uma estrutura de incentivos que o senhor já não considera vantajosa. É curioso notar que, enquanto o senhor critica a rigidez do nosso modelo, outros locatários têm utilizado exatamente essa mesma estrutura para otimizar seus próprios custos, ajustando suas reuniões para horários de menor demanda. A flexibilidade que o senhor busca não é a liberdade de agir sem restrições, mas o desejo de que o custo de suas ações seja subsidiado por outros. Ao encerrar seu contrato, o senhor valida, ainda que involuntariamente, a eficácia do nosso sistema: o mercado sinalizou que o seu modelo de negócio não comporta a volatilidade dos custos operacionais, e o senhor, agindo de forma pragmática, está se retirando. Não há, portanto, uma perda de autonomia, mas uma clarificação de limites. O Hub Convergência continuará a operar sob a premissa de que a escolha é significativa justamente porque possui um preço, e a eficácia dessa escolha é medida pela disposição do locatário em arcar com as consequências financeiras de suas preferências. Desejo-lhe sucesso em sua próxima empreitada, ainda que esta, inevitavelmente, venha a ser regida por restrições de natureza análoga.\n\nContudo, convém ponderar que essa visão estritamente utilitarista, embora logicamente sólida sob a ótica da teoria econômica, ignora o impacto intangível que a previsibilidade exerce sobre a criatividade e a cultura colaborativa de um ambiente corporativo. Ao transformar cada interação física em uma transação de mercado, o Hub Convergência corre o risco de erodir o capital social que sustenta a própria atratividade do espaço. Quando a colaboração espontânea é desencorajada pelo custo marginal, a inovação, que muitas vezes floresce na serendipidade de encontros não planejados, tende a ser sacrificada em prol de uma eficiência operacional fria e estéril. A longo prazo, a migração de locatários que valorizam a sinergia em detrimento da mera otimização de custos pode resultar em um ambiente homogêneo, onde apenas empresas com margens elevadas ou modelos de negócio puramente transacionais permanecem, descaracterizando a diversidade que, ironicamente, foi o pilar original da marca. Se a estratégia de monetizar a escassez for levada ao extremo, o ecossistema corre o risco de se tornar um reduto de isolamento individualista, onde a rede de contatos perde sua fluidez e o valor agregado da comunidade se dissipa. A gestão deve considerar se a rentabilidade imediata, obtida através da punição tarifária por picos de ocupação, compensa a possível perda de relevância estratégica de um espaço que deixa de ser um hub de conexões para se transformar em um mero provedor de infraestrutura fria. A autonomia que o senhor, Sr. Arantes, buscava, talvez fosse a liberdade de operar em um ambiente onde o valor da colaboração fosse maior do que a soma das taxas individuais de cada sala. Ao insistir que a precificação é a única forma de regulação, o Hub Convergência pode estar subestimando o custo invisível de uma cultura organizacional que prioriza a contabilidade sobre a criatividade, um erro que, embora não se manifeste nos balanços imediatos, certamente ditará a longevidade e o prestígio da instituição no mercado a longo prazo.",
+    "wordCount": 910,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "imperativo",
+        "lemma": "imperativo",
+        "glosses": {
+          "es": "crucial or essential",
+          "en": "crucial or essential"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intrinsecamente",
+        "lemma": "intrinsecamente",
+        "glosses": {
+          "es": "inherently",
+          "en": "inherently"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "escassez",
+        "lemma": "escassez",
+        "glosses": {
+          "es": "shortage or scarcity",
+          "en": "shortage or scarcity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "onerosa",
+        "lemma": "onerosa",
+        "glosses": {
+          "es": "burdensome or costly",
+          "en": "burdensome or costly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "subsidiado",
+        "lemma": "subsidiado",
+        "glosses": {
+          "es": "financially supported or subsidized",
+          "en": "financially supported or subsidized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "análoga",
+        "lemma": "análoga",
+        "glosses": {
+          "es": "similar or comparable",
+          "en": "similar or comparable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.4,
+      "maxSentenceWords": 55,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central defendida pelo autor da carta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Custos altos garantem a eficiência."
+        },
+        {
+          "id": "a2",
+          "text": "A autonomia é uma ilusão."
+        },
+        {
+          "id": "a3",
+          "text": "O sistema de taxas é injusto."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a escassez não é uma falha de gestão, mas um mecanismo de regulação.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o autor justifica o custo das salas de reunião?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para gerar lucro extra."
+        },
+        {
+          "id": "a2",
+          "text": "Para evitar o colapso."
+        },
+        {
+          "id": "a3",
+          "text": "Para punir locatários."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Se a escolha de reservar uma sala em um horário nobre fosse desvinculada de um custo proibitivo, o sistema colapsaria sob o peso da demanda simultânea.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o autor sugere sobre a saída do Sr. Arantes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Foi uma decisão irracional."
+        },
+        {
+          "id": "a2",
+          "text": "Foi um erro de gestão."
+        },
+        {
+          "id": "a3",
+          "text": "É uma resposta ao mercado."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "o senhor, agindo de forma pragmática, está se retirando.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao escrever esta correspondência?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Justificar a estrutura de preços."
+        },
+        {
+          "id": "a2",
+          "text": "Pedir desculpas ao locatário."
+        },
+        {
+          "id": "a3",
+          "text": "Negociar uma nova tarifa."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "é imperativo esclarecer que a autonomia que o senhor alega ter perdido nunca foi, na verdade, um direito absoluto, mas sim uma variável dependente de sua alocação de recursos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na comunicação do gestor?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Acolhedor e empático."
+        },
+        {
+          "id": "a2",
+          "text": "Frio e tecnocrático."
+        },
+        {
+          "id": "a3",
+          "text": "Agressivo e pessoal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O senhor possui a liberdade de reservar o espaço, mas essa liberdade é, por definição, onerosa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que o autor quer dizer com 'onerosa'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Livre."
+        },
+        {
+          "id": "a2",
+          "text": "Simples."
+        },
+        {
+          "id": "a3",
+          "text": "Cara."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O senhor possui a liberdade de reservar o espaço, mas essa liberdade é, por definição, onerosa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva uma resposta de 300 palavras do ponto de vista do Sr. Arantes, refutando a ideia de que a 'escolha onerosa' é uma forma legítima de autonomia e argumentando que espaços de trabalho devem focar em colaboração, não em monetização da escassez.",
+      "en": "Escreva uma resposta de 300 palavras do ponto de vista do Sr. Arantes, refutando a ideia de que a 'escolha onerosa' é uma forma legítima de autonomia e argumentando que espaços de trabalho devem focar em colaboração, não em monetização da escassez."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Examinar a natureza da escolha em contextos de custo variável e refletir sobre como a liberdade individual é frequentemente subordinada a estruturas de incentivos invisíveis.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Autonomia no Espaço Compartilhado | C2 Reading | WeLearn",
+      "en": "A Ilusão da Autonomia no Espaço Compartilhado | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a dinâmica de poder e as escolhas ocultas em ambientes de trabalho colaborativo, através de uma correspondência tensa entre um gestor e um locatário.",
+      "en": "Uma análise crítica sobre a dinâmica de poder e as escolhas ocultas em ambientes de trabalho colaborativo, através de uma correspondência tensa entre um gestor e um locatário."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

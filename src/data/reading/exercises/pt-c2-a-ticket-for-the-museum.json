@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Ilusão da Gratuidade: O Custo Invisível do Acesso Cultural",
+      "en": "A Ilusão da Gratuidade: O Custo Invisível do Acesso Cultural"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre como a retórica da 'entrada gratuita' em instituições culturais pode mascarar barreiras sistêmicas à participação democrática.",
+      "en": "Uma análise crítica sobre como a retórica da 'entrada gratuita' em instituições culturais pode mascarar barreiras sistêmicas à participação democrática."
+    },
+    "mission": {
+      "es": "Analisar as nuances semânticas e os impactos sociopolíticos da gratuidade museológica, identificando como a eliminação do preço do ingresso pode, ironicamente, estreitar o debate sobre acessibilidade.",
+      "en": "Analisar as nuances semânticas e os impactos sociopolíticos da gratuidade museológica, identificando como a eliminação do preço do ingresso pode, ironicamente, estreitar o debate sobre acessibilidade."
+    },
+    "targetText": "A recente inauguração da Galeria Lume-Sombra, sob a curadoria de Helena Viana, foi celebrada pela imprensa local como um triunfo da democratização do acesso. O anúncio de 'entrada gratuita' para todas as exposições permanentes serviu como a pedra angular de uma campanha publicitária agressiva, que prometia romper com o elitismo histórico dos espaços de arte. Contudo, ao observar o fluxo de visitantes durante a primeira semana, torna-se evidente que a gratuidade, enquanto conceito, funciona como uma cortina de fumaça semântica. O debate público, sequestrado pela celebração do bilhete zero, ignora deliberadamente a complexidade do custo da chegada, transformando o acesso em um privilégio daqueles que já possuem o capital temporal e geográfico para transpor as barreiras invisíveis que cercam a instituição. A gratuidade, portanto, não é um fim, mas uma estratégia de marketing que silencia questões estruturais de exclusão.\n\nO conflito emergiu durante o colóquio inaugural, quando o sociólogo Ricardo Mendes questionou a diretoria sobre a localização periférica da galeria em relação aos centros de transporte público. Enquanto Helena Viana defendia o projeto como um ato de generosidade cívica, Mendes apontou que a ausência de uma taxa de entrada era irrelevante para o trabalhador que gastaria três horas em deslocamentos precários e o custo de um dia de trabalho perdido para visitar a exposição. A resposta da curadoria foi um silêncio eloquente, seguido por uma digressão sobre a importância do 'valor simbólico' da arte. Essa desconexão revela um abismo entre a intenção declarada da instituição e a realidade material de seu público-alvo. Ao focar exclusivamente no preço do ingresso, a galeria exime-se da responsabilidade de criar um ecossistema que viabilize a presença real da classe trabalhadora, mantendo o espaço como um santuário para quem não precisa calcular o custo da oportunidade.\n\nÉ fundamental reconhecer que a gratuidade possui um mérito inegável: ela remove a barreira monetária imediata para o estudante ou o entusiasta que, embora possua tempo, carece de recursos financeiros. No entanto, a concessão de que o acesso é facilitado por essa política não pode obscurecer o fato de que a gratuidade é, muitas vezes, uma ferramenta de gentrificação simbólica. Quando uma instituição proclama sua gratuidade, ela frequentemente atrai um público que já é familiarizado com os códigos culturais do museu, enquanto o público que ela alega querer incluir permanece ausente. O custo da chegada, que envolve a logística de transporte, a segurança do trajeto e a disponibilidade de tempo livre, é sistematicamente ignorado em favor de uma narrativa simplista sobre a benevolência da instituição. A gratuidade, assim, torna-se um fetiche que substitui a verdadeira inclusão.\n\nO desfecho dessa tensão tornou-se visível quando, após o encerramento da exposição de estreia, os relatórios de visitação revelaram que a demografia do público não se alterou significativamente em comparação com as instituições privadas pagas da cidade. A Galeria Lume-Sombra, apesar de sua fachada de abertura, permaneceu um enclave para uma elite intelectual que valoriza a gratuidade como uma forma de distinção cultural, enquanto a população dos bairros vizinhos continuou a enxergar o edifício como um corpo estranho no território. A falha não reside na ausência de cobrança, mas na crença de que o preço é o único entrave à democratização. Ao reduzir a complexidade do acesso a um valor numérico, a galeria perpetuou o mesmo sistema que jurou desmantelar, provando que a gratuidade pode ser, paradoxalmente, o mecanismo mais eficaz de exclusão.\n\nO problema, em última análise, é que a gratuidade despolitiza o museu. Ao tratar o visitante como um consumidor cujo único obstáculo é o preço do bilhete, a instituição evita engajar-se com as demandas por uma infraestrutura urbana que realmente conecte a periferia ao centro. A gratuidade torna-se, então, uma esmola simbólica que desobriga a instituição de realizar mudanças estruturais, como a abertura em horários noturnos, a descentralização de acervos ou a criação de programas de mediação que dialoguem com a realidade local. Enquanto o discurso da gratuidade for o único parâmetro de sucesso, o museu continuará a ser um espaço de contemplação passiva, incapaz de reconhecer que o acesso é um direito que vai muito além da porta giratória. A verdadeira democratização exigiria, talvez, não a gratuidade do ingresso, mas o investimento no custo da chegada, tornando o museu um organismo vivo e acessível em todos os seus sentidos.\n\nAlém disso, a perpetuação desse modelo de gestão acentua a marginalização estética, onde a arte é consumida como um adorno de status, e não como uma ferramenta de transformação social. Ao ignorar a necessidade de um diálogo horizontal, a Galeria Lume-Sombra reforça a ideia de que a periferia deve se adaptar à instituição, e não o contrário. Essa postura paternalista mascara o fato de que a ausência de cobrança, desacompanhada de uma política de acolhimento e de uma infraestrutura que contemple as particularidades do cotidiano trabalhador, funciona apenas como um selo de virtude para o mercado cultural. A longo prazo, essa estratégia pode gerar um efeito de saturação, onde o público local, percebendo a ineficácia da proposta, passa a ver o espaço com um cinismo ainda mais profundo, consolidando a galeria como um monumento ao isolamento. A democratização real exigiria, portanto, o abandono dessa narrativa de benevolência em favor de uma gestão que assuma o custo da mobilidade e a responsabilidade pelo impacto territorial. Se o museu não se tornar um agente ativo na superação das distâncias físicas e simbólicas, a gratuidade continuará sendo um exercício de marketing que, sob a aparência de generosidade, apenas reafirma as fronteiras invisíveis que separam a elite cultural do restante da sociedade urbana.",
+    "wordCount": 919,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cortina de fumaça",
+        "lemma": "cortina de fumaça",
+        "glosses": {
+          "es": "a diversionary tactic used to hide the truth",
+          "en": "a diversionary tactic used to hide the truth"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "digressão",
+        "lemma": "digressão",
+        "glosses": {
+          "es": "a temporary departure from the main subject",
+          "en": "a temporary departure from the main subject"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gentrificação",
+        "lemma": "gentrificação",
+        "glosses": {
+          "es": "the process of transforming an area to appeal to a wealthier demographic",
+          "en": "the process of transforming an area to appeal to a wealthier demographic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "enclave",
+        "lemma": "enclave",
+        "glosses": {
+          "es": "a territory or group that is distinct from its surroundings",
+          "en": "a territory or group that is distinct from its surroundings"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "despolitiza",
+        "lemma": "despolitiza",
+        "glosses": {
+          "es": "the act of removing political or social significance from a subject",
+          "en": "the act of removing political or social significance from a subject"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esmola",
+        "lemma": "esmola",
+        "glosses": {
+          "es": "charity or a small, condescending gift",
+          "en": "charity or a small, condescending gift"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 30.6,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central do texto sobre a política de gratuidade da Galeria Lume-Sombra?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A gratuidade mascara barreiras estruturais de exclusão."
+        },
+        {
+          "id": "a2",
+          "text": "A gratuidade é uma estratégia de marketing ineficaz."
+        },
+        {
+          "id": "a3",
+          "text": "A gratuidade é um direito essencial de todos os cidadãos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A gratuidade, portanto, não é um fim, mas uma estratégia de marketing que silencia questões estruturais de exclusão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o sociólogo Ricardo Mendes critica a localização da galeria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pela falta de estacionamento."
+        },
+        {
+          "id": "a2",
+          "text": "Pela distância do transporte público."
+        },
+        {
+          "id": "a3",
+          "text": "Pelo alto custo do aluguel local."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Mendes apontou que a ausência de uma taxa de entrada era irrelevante para o trabalhador que gastaria três horas em deslocamentos precários",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o texto sugere sobre a demografia do público da galeria após a inauguração?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que ela se tornou mais diversa e inclusiva."
+        },
+        {
+          "id": "a2",
+          "text": "Que a galeria passou a atrair majoritariamente estudantes locais."
+        },
+        {
+          "id": "a3",
+          "text": "Que o público permaneceu semelhante ao das instituições pagas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "os relatórios de visitação revelaram que a demografia do público não se alterou significativamente em comparação com as instituições privadas pagas da cidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo do autor ao mencionar a 'digressão' da curadora Helena Viana?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenciar a desconexão entre o discurso institucional e a realidade."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que ela possui um vasto conhecimento acadêmico."
+        },
+        {
+          "id": "a3",
+          "text": "Ilustrar como a curadora tentou resolver o conflito com o sociólogo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Essa desconexão revela um abismo entre a intenção declarada da instituição e a realidade material de seu público-alvo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante do autor ao descrever a política de gratuidade da galeria?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasmado e otimista."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e técnico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A gratuidade, assim, torna-se um fetiche que substitui a verdadeira inclusão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a expressão 'cortina de fumaça semântica'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um recurso estético."
+        },
+        {
+          "id": "a2",
+          "text": "Uma ferramenta de gestão."
+        },
+        {
+          "id": "a3",
+          "text": "Uma distração linguística."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "ao observar o fluxo de visitantes durante a primeira semana, torna-se evidente que a gratuidade, enquanto conceito, funciona como uma cortina de fumaça semântica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 400 palavras discutindo se a eliminação de taxas de entrada em museus pode ser considerada uma forma de 'gentrificação simbólica', conforme sugerido no texto, ou se tal visão ignora o papel educacional da gratuidade como um primeiro passo para a democratização cultural.",
+      "en": "Escreva um ensaio argumentativo de 400 palavras discutindo se a eliminação de taxas de entrada em museus pode ser considerada uma forma de 'gentrificação simbólica', conforme sugerido no texto, ou se tal visão ignora o papel educacional da gratuidade como um primeiro passo para a democratização cultural."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar as nuances semânticas e os impactos sociopolíticos da gratuidade museológica, identificando como a eliminação do preço do ingresso pode, ironicamente, estreitar o debate sobre acessibilidade.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Ilusão da Gratuidade: O Custo Invisível do Acesso Cultural | C2 Reading | WeLearn",
+      "en": "A Ilusão da Gratuidade: O Custo Invisível do Acesso Cultural | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre como a retórica da 'entrada gratuita' em instituições culturais pode mascarar barreiras sistêmicas à participação democrática.",
+      "en": "Uma análise crítica sobre como a retórica da 'entrada gratuita' em instituições culturais pode mascarar barreiras sistêmicas à participação democrática."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

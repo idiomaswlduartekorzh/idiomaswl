@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Mito da Autonomia no Atelier de Reparos",
+      "en": "O Mito da Autonomia no Atelier de Reparos"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a romantização da cultura 'faça você mesmo' e a invisibilidade do trabalho de suporte em espaços comunitários.",
+      "en": "Uma análise crítica sobre a romantização da cultura 'faça você mesmo' e a invisibilidade do trabalho de suporte em espaços comunitários."
+    },
+    "mission": {
+      "es": "Analisar a tensão entre a retórica da autossuficiência e a dependência estrutural de cuidados não remunerados em oficinas de conserto.",
+      "en": "Analisar a tensão entre a retórica da autossuficiência e a dependência estrutural de cuidados não remunerados em oficinas de conserto."
+    },
+    "targetText": "A oficina 'Reanima', situada em um porão úmido de um bairro periférico, tornou-se o epicentro de uma retórica contemporânea: a celebração da autossuficiência técnica como um ato de resistência política. Na última terça-feira, observei Elias, um entusiasta da eletrônica, desmontar um rádio antigo com uma destreza que beirava a performance. Para os espectadores, a cena era um triunfo da autonomia individual sobre a obsolescência programada. No entanto, a narrativa de Elias ignorava solenemente a figura de Dona Cleide, a proprietária do espaço, que passava a noite inteira organizando as ferramentas, limpando o óleo derramado e garantindo que o café estivesse sempre quente para que Elias pudesse brilhar em seu pedestal de autodidata. A autonomia, neste contexto, não era uma conquista solitária, mas um privilégio sustentado pelo trabalho invisível e não remunerado de outrem.\n\nO conflito emergiu quando um jovem frequentador, inspirado pela retórica de Elias, tentou consertar uma cafeteira complexa sem consultar os manuais que Cleide meticulosamente catalogou durante anos. O resultado foi um curto-circuito que danificou a fiação principal do atelier, interrompendo o funcionamento de todos os outros equipamentos. Elias, em vez de assumir a falha pedagógica de seu discurso, criticou a 'falta de iniciativa' do rapaz. Cleide, em silêncio, recolheu os cacos e começou a religar os fios, enquanto o grupo debatia sobre a importância da 'liberdade de errar'. O contraste era flagrante: enquanto a retórica da autonomia ocupava o espaço sonoro, a realidade da infraestrutura dependia inteiramente da manutenção silenciosa de Cleide.\n\nÉ fundamental questionar por que a cultura do reparo insiste em glorificar o momento do conserto final, ignorando a logística de cuidado que o viabiliza. A retórica da autossuficiência funciona como um verniz que oculta a precariedade das relações de dependência. Ao rotular o conserto como um ato puramente individual, desvaloriza-se o papel daqueles que mantêm o ambiente, as ferramentas e o conhecimento acessíveis. O atelier, sob a égide da 'independência', acaba por reproduzir hierarquias de gênero e classe, onde o trabalho técnico de prestígio é exaltado enquanto o trabalho de manutenção é naturalizado como um suporte passivo e invisível.\n\nO desfecho desta noite foi emblemático. Após Cleide restaurar a energia, Elias sugeriu que o próximo encontro deveria focar em 'técnicas avançadas de reparo individual'. Cleide, pela primeira vez, interveio, declarando que o atelier fecharia para manutenção técnica, sem data para reabrir. A reação de Elias foi de indignação, tratando a decisão como uma obstrução ao seu progresso pessoal. Ele não conseguia conceber que o espaço, para continuar a existir, exigia algo além da sua própria volição de consertar. A autonomia que ele tanto almejava era, ironicamente, dependente da vontade de Cleide de continuar a prover o suporte que ele julgava desnecessário.\n\nAo final, a tensão permanece sem resolução clara. O atelier 'Reanima' não é um templo de independência, mas um ecossistema de interdependência mal compreendido. Se a cultura do reparo deseja ser genuinamente transformadora, ela deve abandonar o mito do indivíduo autossuficiente e reconhecer que o conserto de um objeto é, invariavelmente, um ato coletivo. O reparo não termina no objeto consertado; ele começa no cuidado com o espaço e com as pessoas que, longe dos holofotes, garantem que a reparação seja possível. Sem essa consciência, o atelier continuará sendo apenas um palco para o narcisismo técnico, onde a manutenção é confundida com o nada.\n\nEssa miopia conceitual, todavia, transcende as paredes do porão e reflete uma crise mais profunda na ética do fazer contemporâneo, onde a técnica é fetichizada em detrimento da sustentabilidade social. Ao ignorar que a infraestrutura é, em última instância, uma construção humana, os entusiastas do 'Reanima' acabam por converter a oficina em um microcosmo de uma sociedade que consome recursos e talentos alheios como se fossem inesgotáveis fontes naturais. A resistência política que Elias proclama torna-se, portanto, um simulacro vazio; ao desdenhar da logística de Cleide, ele não apenas invisibiliza o trabalho de cuidado, mas perpetua a mesma lógica extrativista que a obsolescência programada impõe às grandes corporações. Se a verdadeira soberania técnica reside na capacidade de manter o ciclo de vida dos objetos, a falha de Elias em reconhecer o papel de Cleide revela uma incompetência fundamental: a incapacidade de compreender que qualquer sistema complexo, seja uma máquina ou uma comunidade, colapsa sem a manutenção contínua de suas bases. A indignação do jovem entusiasta diante do fechamento do atelier é o sintoma de uma geração que confunde o acesso ao conhecimento com a posse absoluta do ambiente, esquecendo que o aprendizado é um processo dialógico e não uma conquista de mérito isolado. Enquanto a retórica da autonomia for utilizada como um escudo para evitar a responsabilidade coletiva, o 'Reanima' permanecerá estagnado em um ciclo de destruição e reparo superficial, incapaz de evoluir para uma verdadeira cultura de resiliência. O fechamento imposto por Cleide não é apenas uma medida prática, mas um ato pedagógico radical que expõe a fragilidade da soberba técnica. Somente quando Elias e seus pares compreenderem que o seu 'progresso' é, na verdade, uma dívida impagável para com o suporte invisível, o atelier poderá aspirar a ser um espaço de criação genuína. Sem essa mudança de paradigma, a oficina continuará a ser apenas um cenário de encenação narcísica, onde a habilidade técnica é celebrada enquanto a humanidade que a sustenta é, ironicamente, descartada como um componente obsoleto.",
+    "wordCount": 881,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "obsolescência",
+        "lemma": "obsolescência",
+        "glosses": {
+          "es": "The state of being outdated or no longer produced.",
+          "en": "The state of being outdated or no longer produced."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pedestal",
+        "lemma": "pedestal",
+        "glosses": {
+          "es": "A base or support on which something stands, often implying elevation.",
+          "en": "A base or support on which something stands, often implying elevation."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "flagrante",
+        "lemma": "flagrante",
+        "glosses": {
+          "es": "Obvious, conspicuous, or glaring.",
+          "en": "Obvious, conspicuous, or glaring."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "verniz",
+        "lemma": "verniz",
+        "glosses": {
+          "es": "A thin, deceptive covering or outward show.",
+          "en": "A thin, deceptive covering or outward show."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "égide",
+        "lemma": "égide",
+        "glosses": {
+          "es": "Under the protection or authority of.",
+          "en": "Under the protection or authority of."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "volição",
+        "lemma": "volição",
+        "glosses": {
+          "es": "The faculty or power of using one's will.",
+          "en": "The faculty or power of using one's will."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.9,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central do texto sobre o ambiente do atelier?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A autonomia é uma ilusão dependente."
+        },
+        {
+          "id": "a2",
+          "text": "O atelier é um espaço de resistência."
+        },
+        {
+          "id": "a3",
+          "text": "O reparo técnico é um ato individual."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O atelier 'Reanima' não é um templo de independência, mas um ecossistema de interdependência mal compreendido.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que causou a interrupção das atividades no atelier?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A quebra da cafeteira."
+        },
+        {
+          "id": "a2",
+          "text": "Um curto-circuito elétrico."
+        },
+        {
+          "id": "a3",
+          "text": "A falha na manutenção técnica."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O resultado foi um curto-circuito que danificou a fiação principal do atelier, interrompendo o funcionamento de todos os outros equipamentos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Como Elias reage à decisão de Cleide de fechar o atelier?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Com total compreensão."
+        },
+        {
+          "id": "a2",
+          "text": "Com indiferença absoluta."
+        },
+        {
+          "id": "a3",
+          "text": "Com indignação e egoísmo."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A reação de Elias foi de indignação, tratando a decisão como uma obstrução ao seu progresso pessoal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo do autor ao descrever o trabalho de Cleide?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Destacar a importância do suporte invisível."
+        },
+        {
+          "id": "a2",
+          "text": "Elogiar a organização técnica da oficina."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar a falta de habilidade de Elias."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A autonomia, neste contexto, não era uma conquista solitária, mas um privilégio sustentado pelo trabalho invisível e não remunerado de outrem.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na análise do autor sobre a retórica de Elias?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Admirado e entusiasta."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e irônico."
+        },
+        {
+          "id": "a3",
+          "text": "Neutro e informativo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elias, em vez de assumir a falha pedagógica de seu discurso, criticou a 'falta de iniciativa' do rapaz.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que o termo 'verniz' implica no contexto do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma proteção real e sólida."
+        },
+        {
+          "id": "a2",
+          "text": "Um acabamento estético necessário."
+        },
+        {
+          "id": "a3",
+          "text": "Uma camada superficial enganosa."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A retórica da autossuficiência funciona como um verniz que oculta a precariedade das relações de dependência.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo, de 150 a 200 palavras, discutindo se a tecnologia moderna facilita ou dificulta a verdadeira autonomia dos indivíduos, utilizando o conceito de 'trabalho invisível' apresentado no texto.",
+      "en": "Escreva um parágrafo argumentativo, de 150 a 200 palavras, discutindo se a tecnologia moderna facilita ou dificulta a verdadeira autonomia dos indivíduos, utilizando o conceito de 'trabalho invisível' apresentado no texto."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar a tensão entre a retórica da autossuficiência e a dependência estrutural de cuidados não remunerados em oficinas de conserto.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Mito da Autonomia no Atelier de Reparos | C2 Reading | WeLearn",
+      "en": "O Mito da Autonomia no Atelier de Reparos | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a romantização da cultura 'faça você mesmo' e a invisibilidade do trabalho de suporte em espaços comunitários.",
+      "en": "Uma análise crítica sobre a romantização da cultura 'faça você mesmo' e a invisibilidade do trabalho de suporte em espaços comunitários."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

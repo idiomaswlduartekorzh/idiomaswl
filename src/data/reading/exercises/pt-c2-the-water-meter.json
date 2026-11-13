@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-water-meter",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Geometria do Desperdício: O Relato de Elias e a Torneira de Bronze",
+      "en": "A Geometria do Desperdício: O Relato de Elias e a Torneira de Bronze"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre como a falha mecânica em um sistema hidráulico doméstico revela dilemas éticos profundos sobre a responsabilidade individual na preservação de recursos hídricos.",
+      "en": "Uma análise crítica sobre como a falha mecânica em um sistema hidráulico doméstico revela dilemas éticos profundos sobre a responsabilidade individual na preservação de recursos hídricos."
+    },
+    "mission": {
+      "es": "Analisar a narrativa de Elias sob a ótica da responsabilidade cívica e da gestão de crises, identificando as nuances entre o reparo técnico e o compromisso moral.",
+      "en": "Analisar a narrativa de Elias sob a ótica da responsabilidade cívica e da gestão de crises, identificando as nuances entre o reparo técnico e o compromisso moral."
+    },
+    "targetText": "A narrativa de Elias, um arquiteto cujas mãos, habituadas a projetar estruturas de vidro e aço, encontraram seu limite diante de uma simples torneira de bronze na cozinha de seu apartamento, tornou-se um estudo de caso sobre a fragilidade da infraestrutura urbana. Naquela terça-feira, o gotejamento rítmico, que inicialmente parecia um ruído de fundo inofensivo, transmutou-se em uma obsessão sonora, um marcador de tempo que contava não apenas os segundos, mas cada mililitro de água potável que se perdia pelo ralo. Elias, ao tentar realizar o reparo por conta própria, descobriu que o problema não residia apenas na vedação desgastada, mas em uma falha estrutural na tubulação interna, um vício oculto que exigia uma intervenção muito mais profunda do que a simples troca de uma borracha. A situação escalou quando a tentativa de ajuste causou um rompimento maior, forçando-o a fechar o registro geral de todo o andar, o que, por sua vez, impactou a rotina de seus vizinhos e transformou um problema privado em um evento coletivo de escassez.\n\nEste incidente, aparentemente trivial, levanta questões fundamentais sobre a nossa negligência cotidiana com a manutenção preventiva. Elias, ao se deparar com o fluxo incontrolável, percebeu que sua hesitação em contratar um profissional qualificado semanas antes, baseada em uma falsa percepção de autossuficiência, foi o catalisador da crise. A água, elemento vital que tomamos como garantido, revelou sua natureza escassa quando o fornecimento foi interrompido, forçando os moradores a racionar o uso até que o reparo fosse concluído. A tensão entre o desejo de resolver tudo individualmente e a necessidade de colaboração técnica tornou-se o eixo central da experiência, sublinhando a falácia de que a responsabilidade pela conservação hídrica é um fardo apenas das grandes corporações ou do Estado, quando, na verdade, ela se infiltra nas paredes de nossas próprias residências.\n\nO desenrolar dos fatos trouxe à tona uma reflexão sobre a ética do consumo. Enquanto os vizinhos aguardavam a solução, as conversas no corredor deixaram de ser sobre o inconveniente do corte e passaram a abordar a fragilidade do sistema que nos sustenta. Elias, sentindo o peso do olhar comunitário, assumiu a responsabilidade não apenas pelo custo do encanador de emergência, mas pela gestão da crise, organizando um sistema de rodízio para o uso de galões de água reserva que ele mesmo providenciou. O que era um erro técnico transformou-se em um exercício de cidadania, onde a falha expôs a interdependência dos habitantes. O reparo, embora técnico, serviu como um espelho para a falta de cuidado que, muitas vezes, ignoramos até que o recurso se torne indisponível.\n\nContudo, resta um dilema persistente: até que ponto a reparação individual é suficiente diante da degradação sistêmica? Elias conseguiu estancar o vazamento, mas a angústia de ter desperdiçado litros preciosos durante o processo de tentativa e erro permaneceu. A sensação de culpa não se dissipou com o fechamento da válvula. Este ponto de inflexão na trajetória do personagem sugere que a conscientização ambiental é um processo doloroso, marcado por falhas reais e consequências tangíveis. A tragédia do desperdício doméstico não reside apenas na perda do recurso, mas na nossa resistência em reconhecer que somos guardiões temporários de um bem comum, cuja gestão exige mais do que apenas habilidade manual; exige uma mudança de mentalidade sobre o custo real do conforto.\n\nAo final da semana, a normalidade foi restaurada, mas o silêncio após o conserto da torneira não era mais o mesmo. Elias agora observa cada detalhe de seu apartamento com uma vigilância quase paranoica, um resultado direto do trauma de ter sido o causador do desabastecimento. A lição aprendida não foi sobre encanamento, mas sobre a responsabilidade intrínseca à posse e ao uso. O episódio de Elias nos convida a questionar se estamos esperando por um vazamento catastrófico para valorizar o que flui silenciosamente por nossas vidas, ou se somos capazes de agir preventivamente antes que a escassez se torne a única linguagem que compreendemos. A água, em sua fluidez, nos ensina que a responsabilidade é um fluxo contínuo, e que ignorar um pequeno gotejamento é aceitar, silenciosamente, o esgotamento do futuro.\n\nEntretanto, é imperativo notar que a vigilância exacerbada de Elias, embora louvável em sua gênese, corre o risco de converter-se em uma nova forma de alienação. Ao focar obsessivamente na manutenção de sua unidade, ele corre o risco de negligenciar a infraestrutura obsoleta do edifício, que permanece como uma bomba-relógio invisível sob o reboco das paredes comuns. A falácia da autossuficiência, que antes o levara ao erro, agora se manifesta como uma hiper-responsabilização individualista, ignorando que o problema real reside na arquitetura coletiva e no descaso sistêmico que precede a ocupação dos moradores. Se cada habitante decidir, isoladamente, atuar como fiscal de seu próprio metro quadrado, a fragmentação do cuidado impedirá uma reforma estrutural necessária, perpetuando o ciclo de remendos paliativos em vez de uma renovação profunda dos sistemas de distribuição. O perigo reside, portanto, na ilusão de que a virtude cívica se esgota na esfera privada; sem uma pressão organizada para a modernização das redes urbanas, a vigilância de Elias torna-se apenas um mecanismo de defesa psicológico, um consolo para a culpa que não resolve a precariedade do todo. A verdadeira cidadania, portanto, exige transpor a fronteira do apartamento e confrontar a obsolescência das infraestruturas compartilhadas, sob pena de transformarmos nossa consciência ambiental em um mero exercício de vigilância doméstica, enquanto as fundações do sistema continuam a sofrer com a erosão silenciosa do tempo e da indiferença, à espera de uma falha muito maior do que aquela que, inicialmente, despertou o arquiteto.",
+    "wordCount": 922,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "transmutou-se",
+        "lemma": "transmutou-se",
+        "glosses": {
+          "es": "transformed itself",
+          "en": "transformed itself"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vício oculto",
+        "lemma": "vício oculto",
+        "glosses": {
+          "es": "hidden defect",
+          "en": "hidden defect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "catalisador",
+        "lemma": "catalisador",
+        "glosses": {
+          "es": "catalyst",
+          "en": "catalyst"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "interdependência",
+        "lemma": "interdependência",
+        "glosses": {
+          "es": "interdependence",
+          "en": "interdependence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "degradação",
+        "lemma": "degradação",
+        "glosses": {
+          "es": "degradation",
+          "en": "degradation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intrínseca",
+        "lemma": "intrínseca",
+        "glosses": {
+          "es": "intrinsic",
+          "en": "intrinsic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.8,
+      "maxSentenceWords": 63,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central da reflexão proposta pelo texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A intersecção entre responsabilidade individual e conservação."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade urgente de reforma na infraestrutura urbana."
+        },
+        {
+          "id": "a3",
+          "text": "A dificuldade técnica de realizar reparos hidráulicos em prédios."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "a responsabilidade pela conservação hídrica é um fardo apenas das grandes corporações ou do Estado, quando, na verdade, ela se infiltra nas paredes de nossas próprias residências.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que causou o agravamento da situação no apartamento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A falta de ferramentas adequadas."
+        },
+        {
+          "id": "a2",
+          "text": "Uma falha na tubulação interna."
+        },
+        {
+          "id": "a3",
+          "text": "A negligência do síndico do prédio."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "descobriu que o problema não residia apenas na vedação desgastada, mas em uma falha estrutural na tubulação interna",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que Elias sentiu a necessidade de organizar um sistema de rodízio de água?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para reduzir o custo do encanador de emergência."
+        },
+        {
+          "id": "a2",
+          "text": "Porque o prédio não possuía reserva técnica de água."
+        },
+        {
+          "id": "a3",
+          "text": "Para mitigar o impacto de sua falha na vida dos vizinhos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elias, sentindo o peso do olhar comunitário, assumiu a responsabilidade não apenas pelo custo do encanador de emergência, mas pela gestão da crise, organizando um sistema de rodízio",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo do autor ao descrever o silêncio após o conserto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Destacar a mudança na percepção de Elias sobre o uso dos recursos."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar que o problema foi resolvido e a vida voltou ao normal."
+        },
+        {
+          "id": "a3",
+          "text": "Enfatizar que o custo do reparo foi elevado demais para o arquiteto."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elias agora observa cada detalhe de seu apartamento com uma vigilância quase paranoica, um resultado direto do trauma de ter sido o causador do desabastecimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no último parágrafo do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Didático e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e incisivo."
+        },
+        {
+          "id": "a3",
+          "text": "Cético e provocativo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O episódio de Elias nos convida a questionar se estamos esperando por um vazamento catastrófico para valorizar o que flui silenciosamente por nossas vidas",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a expressão 'vício oculto'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um hábito ruim que o personagem tentava esconder."
+        },
+        {
+          "id": "a2",
+          "text": "Uma peça de metal que estava instalada incorretamente."
+        },
+        {
+          "id": "a3",
+          "text": "Um defeito não aparente que compromete a estrutura."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "um vício oculto que exigia uma intervenção muito mais profunda do que a simples troca de uma borracha.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo de 150 palavras discutindo se a falha de Elias pode ser considerada um exemplo de negligência cívica ou apenas um infortúnio doméstico comum.",
+      "en": "Escreva um parágrafo argumentativo de 150 palavras discutindo se a falha de Elias pode ser considerada um exemplo de negligência cívica ou apenas um infortúnio doméstico comum."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar a narrativa de Elias sob a ótica da responsabilidade cívica e da gestão de crises, identificando as nuances entre o reparo técnico e o compromisso moral.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Geometria do Desperdício: O Relato de Elias e a Torneira de Bronze | C2 Reading | WeLearn",
+      "en": "A Geometria do Desperdício: O Relato de Elias e a Torneira de Bronze | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre como a falha mecânica em um sistema hidráulico doméstico revela dilemas éticos profundos sobre a responsabilidade individual na preservação de recursos hídricos.",
+      "en": "Uma análise crítica sobre como a falha mecânica em um sistema hidráulico doméstico revela dilemas éticos profundos sobre a responsabilidade individual na preservação de recursos hídricos."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

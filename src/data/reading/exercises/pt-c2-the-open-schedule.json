@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-open-schedule",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Paradoxo da Flexibilidade: Um Memorando Interno",
+      "en": "O Paradoxo da Flexibilidade: Um Memorando Interno"
+    },
+    "intro": {
+      "es": "Neste exercício, analisamos um e-mail corporativo enviado por uma coordenadora pedagógica que propõe uma mudança radical na estrutura de horários de uma escola, gerando um debate sobre equidade e autonomia.",
+      "en": "Neste exercício, analisamos um e-mail corporativo enviado por uma coordenadora pedagógica que propõe uma mudança radical na estrutura de horários de uma escola, gerando um debate sobre equidade e autonomia."
+    },
+    "mission": {
+      "es": "Leia o e-mail abaixo e analise como a autora utiliza a retórica para justificar uma política que, embora pareça inclusiva, mascara desigualdades estruturais profundas entre o corpo docente.",
+      "en": "Leia o e-mail abaixo e analise como a autora utiliza a retórica para justificar uma política que, embora pareça inclusiva, mascara desigualdades estruturais profundas entre o corpo docente."
+    },
+    "targetText": "De: Helena Viana, Coordenadora Pedagógica\nPara: Corpo Docente do Colégio Horizonte\nAssunto: Proposta de Reestruturação do Quadro de Horários para o Próximo Semestre\n\nPrezados colegas, escrevo para compartilhar uma reflexão que tem ocupado minhas noites de planejamento. Ao analisarmos a exaustão crescente de nossa equipe, percebi que o modelo atual de grade fixa, embora democrático em sua rigidez, ignora as idiossincrasias de nossas vidas privadas. A proposta que submeto à apreciação de vocês é a implementação de um sistema de 'Horário Modular Flexível', onde cada docente poderá, em tese, negociar seus blocos de aula conforme suas necessidades pessoais. A premissa é simples: se a escola oferece a liberdade de escolha, a responsabilidade pelo equilíbrio entre vida profissional e pessoal torna-se um exercício de autonomia individual. No entanto, ao desenhar os cenários possíveis, deparei-me com uma tensão inquietante. O que chamamos de 'escolha' é, na verdade, um reflexo direto do capital social e da estabilidade doméstica de cada um. Professores com redes de apoio robustas ou maior senioridade certamente ocuparão os horários nobres, enquanto os mais jovens, ou aqueles que dependem de transporte público precário, serão empurrados para as janelas marginais do dia letivo. A flexibilidade, quando desprovida de uma análise de equidade, corre o risco de institucionalizar o privilégio sob o pretexto de liberdade.\n\nOntem, durante a reunião do conselho, o professor Ricardo, nosso coordenador de exatas, argumentou fervorosamente que a meritocracia na escolha dos horários seria a única forma de garantir a eficiência pedagógica. Ele sustenta que, se um professor escolhe trabalhar apenas no período vespertino por conveniência, ele deve arcar com as consequências de uma grade fragmentada. Contudo, essa visão ignora que a 'conveniência' muitas vezes é um eufemismo para a necessidade de cuidar de parentes idosos ou conciliar um segundo emprego. Ao tratar o tempo como uma mercadoria negociável, a escola deixa de ser um espaço de colaboração para se tornar uma arena de competição por janelas de descanso. A pergunta que não quer calar é: podemos realmente chamar de 'justo' um sistema que trata a desigualdade de acesso ao tempo como uma mera preferência pessoal, nivelando por baixo as condições de trabalho sob a égide da escolha individual?\n\nO caso concreto que ilustra esse impasse ocorreu na última semana, quando a professora Camila solicitou a alteração de seu turno para acompanhar o tratamento médico de sua filha. Sob a nova política, seu pedido foi negado por 'incompatibilidade com a grade de senioridade', uma vez que o horário solicitado já havia sido preenchido por um colega que, sem responsabilidades familiares, optou por aquele turno apenas por preferência pessoal de lazer. A justificativa técnica foi que o sistema de escolha é neutro. Todavia, a neutralidade aqui é uma falácia. A escola, ao se eximir de mediar tais conflitos, está, na verdade, tomando uma decisão política silenciosa: a de que a produtividade técnica prevalece sobre a humanização das relações de trabalho. O sistema não é neutro; ele é seletivo.\n\nNão pretendo, com este e-mail, encerrar o debate, mas sim expor as entranhas da nossa gestão. A flexibilidade, sem mecanismos de compensação, é apenas um mecanismo de exclusão disfarçado de modernidade. Se permitirmos que o horário seja decidido puramente por critérios de preferência, estaremos validando a ideia de que o tempo de vida dos nossos professores possui valores distintos no mercado interno. A equidade não é o mesmo que igualdade de tratamento; é a capacidade de reconhecer que as demandas da vida privada não são escolhas, mas realidades que exigem uma estrutura institucional acolhedora. Precisamos discutir não apenas quem escolhe primeiro, mas quem tem a real capacidade de escolher.\n\nConcluo este comunicado solicitando que, antes da votação na próxima assembleia, reflitam sobre o custo invisível da liberdade que estamos prestes a institucionalizar. Se a flexibilidade for apenas uma forma de privatizar o estresse, então falhamos em nossa missão educativa. O convite é para que busquemos um modelo onde a autonomia não seja um privilégio de poucos, mas um direito garantido pela sensibilidade coletiva. Aguardo suas contribuições, ciente de que a harmonia da nossa escola depende, em última análise, de como valorizamos o tempo daqueles que dedicam suas vidas ao ensino. A decisão é nossa, mas a responsabilidade pelas consequências recai sobre todos nós.\n\nEntretanto, é imperativo considerar que a resistência à implementação desse modelo modular não advém apenas da preocupação com a equidade, mas também do risco latente de fragmentação da nossa cultura organizacional. Ao permitir que a grade horária se torne um mosaico de conveniências individuais, corremos o perigo de diluir o espírito de corpo que sustenta o Colégio Horizonte, transformando a sala dos professores em um espaço de passagem, onde o encontro fortuito e a troca pedagógica espontânea perdem o lugar para uma logística de horários desencontrados. Se cada docente opera em uma bolha de tempo autogerida, a colaboração interdisciplinar, que tanto prezamos para o desenvolvimento de nossos alunos, pode ser sacrificada em nome de uma logística eficiente. A desarticulação dos turnos dificulta o planejamento conjunto, isolando os educadores em suas próprias ilhas de responsabilidade e enfraquecendo a coesão institucional necessária para enfrentar os desafios educacionais que exigem uma atuação unificada. Portanto, a busca por um equilíbrio entre a flexibilidade necessária e a manutenção de uma identidade coletiva é o verdadeiro desafio que se nos apresenta. Devemos projetar um sistema que não apenas acomode as realidades humanas, mas que também preserve os espaços de convivência, garantindo que a autonomia individual não se torne um catalisador para o isolamento profissional e a erosão dos nossos laços comunitários fundamentais.",
+    "wordCount": 919,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "idiossincrasias",
+        "lemma": "idiossincrasias",
+        "glosses": {
+          "es": "peculiarities or individual characteristics",
+          "en": "peculiarities or individual characteristics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eufemismo",
+        "lemma": "eufemismo",
+        "glosses": {
+          "es": "a mild or indirect expression substituted for one considered too harsh",
+          "en": "a mild or indirect expression substituted for one considered too harsh"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "falácia",
+        "lemma": "falácia",
+        "glosses": {
+          "es": "a mistaken belief or a deceptive argument",
+          "en": "a mistaken belief or a deceptive argument"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "égide",
+        "lemma": "égide",
+        "glosses": {
+          "es": "under the protection or backing of an authority",
+          "en": "under the protection or backing of an authority"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "eximir",
+        "lemma": "eximir",
+        "glosses": {
+          "es": "to exempt or free from an obligation",
+          "en": "to exempt or free from an obligation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "entranhas",
+        "lemma": "entranhas",
+        "glosses": {
+          "es": "the innermost parts or deep workings of something",
+          "en": "the innermost parts or deep workings of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.3,
+      "maxSentenceWords": 55,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o objetivo principal da autora ao enviar este e-mail ao corpo docente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticar a flexibilidade sem equidade."
+        },
+        {
+          "id": "a2",
+          "text": "Implementar uma grade rígida."
+        },
+        {
+          "id": "a3",
+          "text": "Defender a senioridade como critério."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A flexibilidade, sem mecanismos de compensação, é apenas um mecanismo de exclusão disfarçado de modernidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o pedido da professora Camila foi negado pelo sistema escolar?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Por falta de vagas no turno."
+        },
+        {
+          "id": "a2",
+          "text": "Por conflito de senioridade."
+        },
+        {
+          "id": "a3",
+          "text": "Por erro na solicitação formal."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Sob a nova política, seu pedido foi negado por 'incompatibilidade com a grade de senioridade'",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a autora sugere sobre a meritocracia defendida pelo professor Ricardo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que ela é o melhor modelo para a escola."
+        },
+        {
+          "id": "a2",
+          "text": "Que ela é ineficaz para o ensino de exatas."
+        },
+        {
+          "id": "a3",
+          "text": "Que ela ignora as desigualdades sociais dos docentes."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Contudo, essa visão ignora que a 'conveniência' muitas vezes é um eufemismo para a necessidade de cuidar de parentes idosos ou conciliar um segundo emprego.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a intenção retórica da autora ao mencionar o caso da professora Camila?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar que o sistema atual é falho e injusto."
+        },
+        {
+          "id": "a2",
+          "text": "Relatar um incidente isolado para punir o colega."
+        },
+        {
+          "id": "a3",
+          "text": "Propor uma solução imediata para o caso específico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O caso concreto que ilustra esse impasse ocorreu na última semana, quando a professora Camila solicitou a alteração de seu turno para acompanhar o tratamento médico de sua filha.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser caracterizado o tom do e-mail de Helena Viana?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indiferente e técnico."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Agressivo e impositivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Não pretendo, com este e-mail, encerrar o debate, mas sim expor as entranhas da nossa gestão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'falácia'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma verdade absoluta."
+        },
+        {
+          "id": "a2",
+          "text": "Uma regra institucional."
+        },
+        {
+          "id": "a3",
+          "text": "Um argumento enganoso."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Todavia, a neutralidade aqui é uma falácia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um e-mail de resposta (200-300 palavras) na perspectiva do professor Ricardo, defendendo a meritocracia na gestão de horários e refutando os argumentos de Helena sobre a necessidade de compensação social.",
+      "en": "Escreva um e-mail de resposta (200-300 palavras) na perspectiva do professor Ricardo, defendendo a meritocracia na gestão de horários e refutando os argumentos de Helena sobre a necessidade de compensação social."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Leia o e-mail abaixo e analise como a autora utiliza a retórica para justificar uma política que, embora pareça inclusiva, mascara desigualdades estruturais profundas entre o corpo docente.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Paradoxo da Flexibilidade: Um Memorando Interno | C2 Reading | WeLearn",
+      "en": "O Paradoxo da Flexibilidade: Um Memorando Interno | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Neste exercício, analisamos um e-mail corporativo enviado por uma coordenadora pedagógica que propõe uma mudança radical na estrutura de horários de uma escola, gerando um debate sobre equidade e autonomia.",
+      "en": "Neste exercício, analisamos um e-mail corporativo enviado por uma coordenadora pedagógica que propõe uma mudança radical na estrutura de horários de uma escola, gerando um debate sobre equidade e autonomia."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

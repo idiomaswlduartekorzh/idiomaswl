@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Paradoxo do Polímero: A Ilusão da Sustentabilidade em Eventos Urbanos",
+      "en": "O Paradoxo do Polímero: A Ilusão da Sustentabilidade em Eventos Urbanos"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre como a substituição de descartáveis por copos reutilizáveis em festivais de música pode ocultar impactos ambientais sistêmicos quando a métrica de sucesso é ampliada.",
+      "en": "Uma análise crítica sobre como a substituição de descartáveis por copos reutilizáveis em festivais de música pode ocultar impactos ambientais sistêmicos quando a métrica de sucesso é ampliada."
+    },
+    "mission": {
+      "es": "Analisar as contradições entre a percepção de sustentabilidade e a realidade logística de sistemas de copos reutilizáveis, desafiando o leitor a considerar o ciclo de vida completo em vez de apenas o ponto de consumo.",
+      "en": "Analisar as contradições entre a percepção de sustentabilidade e a realidade logística de sistemas de copos reutilizáveis, desafiando o leitor a considerar o ciclo de vida completo em vez de apenas o ponto de consumo."
+    },
+    "targetText": "O festival 'EcoVibes', idealizado pela curadora Helena Bastos, foi aclamado como um marco na gestão de resíduos urbanos. A premissa era simples: eliminar o plástico de uso único substituindo-o por copos de polipropileno rígido, exigindo um depósito caução dos participantes. Durante a edição de estreia, a praça central, habitualmente soterrada por uma camada de descartáveis após o encerramento, permanecia impecavelmente limpa. Bastos, em suas entrevistas, enfatizava a redução drástica na geração de lixo imediato como o indicador definitivo de sucesso. Contudo, essa métrica, embora visualmente convincente, é uma abstração que ignora a complexidade da logística reversa e a intensidade energética inerente à produção desses novos itens, que demandam uma pegada de carbono centenas de vezes superior à de um copo descartável comum.\n\nO conflito emergiu quando o gestor de operações, Tiago Mendes, começou a auditar o destino final dos copos que não retornavam aos pontos de coleta. Ao final de cada noite de evento, centenas de unidades eram esquecidas em gramados, levadas como lembranças ou simplesmente descartadas em lixeiras comuns por exaustão dos usuários. Mendes observou que, para que o sistema de reutilização fosse ambientalmente superior ao descarte, cada unidade precisaria ser utilizada pelo menos cinquenta vezes. A realidade, porém, mostrava uma taxa de rotatividade que mal atingia o décimo ciclo de vida. O que era apresentado como uma solução de economia circular transformava-se, na prática, em uma fonte de poluição de alto impacto, visto que o polipropileno rígido, quando enviado para aterros sanitários comuns, possui uma decomposição ainda mais nefasta que o plástico fino tradicional.\n\nA tensão entre a estética da limpeza e a realidade do ciclo de vida criou uma cisão na equipe organizadora. Enquanto Bastos continuava a promover o festival como um modelo de sustentabilidade, baseando-se no volume de resíduos evitados na saída do evento, Mendes insistia na necessidade de contabilizar a energia gasta no transporte, na higienização industrial e no descarte prematuro dos copos perdidos. A métrica de sucesso, quando expandida para incluir a cadeia de suprimentos e o comportamento do consumidor, revelava uma verdade inconveniente: o evento estava apenas transferindo o impacto ambiental da visibilidade imediata para uma escala global e invisível. A gestão da percepção pública, nesse contexto, tornou-se mais valiosa do que a própria eficiência ecológica, criando um dilema ético sobre a transparência das métricas de impacto.\n\nO ponto crucial desta controvérsia reside na falácia da substituição simplista. O público, ao pagar o depósito, sente-se absolvido da responsabilidade ambiental, criando um fenômeno psicológico onde o consumo de bebidas aumenta, pois a consciência do descarte é mitigada pelo objeto reutilizável. Mendes notou que o consumo per capita de cerveja e refrigerantes subiu significativamente após a implementação do sistema, uma vez que o copo, agora visto como um bem durável, reduzia a barreira psicológica contra o desperdício. O que deveria ser uma ferramenta de conscientização acabou por incentivar um padrão de consumo mais desenfreado, mascarado sob a égide da sustentabilidade. A solução, portanto, não reside no material do copo, mas na desconstrução da cultura do consumo de conveniência, algo que o festival, em sua busca por ser um evento de massa, evita abordar.\n\nAo fim da temporada, a conclusão é um impasse que desafia as políticas públicas de gestão de resíduos. Se a métrica de sucesso for a limpeza imediata do espaço, o modelo de Bastos é um triunfo incontestável. Se, contudo, a métrica for a redução efetiva da pegada de carbono e do impacto geológico a longo prazo, o projeto revela-se um exercício de marketing verde. A permanência do 'EcoVibes' como referência aponta para a nossa preferência coletiva por soluções que ofereçam conforto moral imediato, mesmo que às custas de um passivo ambiental acumulado em silêncio. A sustentabilidade, quando reduzida a métricas de conveniência, deixa de ser um objetivo prático para se tornar uma narrativa, um palco onde a aparência de responsabilidade é mais lucrativa do que a própria responsabilidade.\n\nEssa dicotomia entre a eficácia performática e a realidade material levanta um questionamento inevitável sobre o papel das futuras regulações em eventos de grande escala. Se a narrativa do 'EcoVibes' persistir como paradigma, corre-se o risco de institucionalizar um ciclo de retroalimentação onde a inovação é medida apenas pelo brilho da superfície, negligenciando a exaustão dos recursos finitos necessários para manter a ilusão de sustentabilidade. A solução, portanto, exigiria uma transição radical para infraestruturas de logística reversa que fossem, de fato, integradas à economia local, em vez de dependerem de uma produção centralizada e de transporte intermunicipal de alto custo. Além disso, a falha em educar o público sobre o custo real do ciclo de vida dos materiais perpetua a ignorância do consumidor, transformando o ato de participar de um festival em um exercício de alienação ambiental. Quando a transparência é substituída pela conveniência, a sustentabilidade torna-se um acessório estético desprovido de substância, servindo apenas para aplacar a culpa de uma sociedade que se recusa a confrontar seus próprios padrões de excesso. O desafio, portanto, transcende a escolha do polímero ou a eficiência da coleta; ele reside na necessidade urgente de reformular o valor da experiência coletiva, deslocando o foco da posse de objetos duráveis para a redução do consumo absoluto. Sem essa mudança de paradigma, qualquer tentativa de mitigar o impacto ambiental será apenas um paliativo, condenado a ser engolido pela própria inércia de um sistema que valoriza a imagem da virtude muito mais do que a complexa e silenciosa tarefa de preservar o equilíbrio ecológico a longo prazo.",
+    "wordCount": 906,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "logística reversa",
+        "lemma": "logística reversa",
+        "glosses": {
+          "es": "The process of moving goods from their typical final destination for the purpose of capturing value or proper disposal.",
+          "en": "The process of moving goods from their typical final destination for the purpose of capturing value or proper disposal."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pegada de carbono",
+        "lemma": "pegada de carbono",
+        "glosses": {
+          "es": "The total amount of greenhouse gases generated by our actions.",
+          "en": "The total amount of greenhouse gases generated by our actions."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cisão",
+        "lemma": "cisão",
+        "glosses": {
+          "es": "A split or division between people or groups.",
+          "en": "A split or division between people or groups."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "falácia",
+        "lemma": "falácia",
+        "glosses": {
+          "es": "A mistaken belief, especially one based on an unsound argument.",
+          "en": "A mistaken belief, especially one based on an unsound argument."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "égide",
+        "lemma": "égide",
+        "glosses": {
+          "es": "Under the protection, backing, or support of something.",
+          "en": "Under the protection, backing, or support of something."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "passivo ambiental",
+        "lemma": "passivo ambiental",
+        "glosses": {
+          "es": "The environmental debt or damage caused by an entity that must be addressed.",
+          "en": "The environmental debt or damage caused by an entity that must be addressed."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.2,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A falha das métricas de sustentabilidade."
+        },
+        {
+          "id": "a2",
+          "text": "A ineficiência da reciclagem."
+        },
+        {
+          "id": "a3",
+          "text": "O sucesso do festival EcoVibes na gestão de resíduos."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A tensão entre a estética da limpeza e a realidade do ciclo de vida criou uma cisão na equipe organizadora.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quantas vezes, em média, um copo precisaria ser usado para superar o descarte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dez vezes."
+        },
+        {
+          "id": "a2",
+          "text": "Cinquenta vezes."
+        },
+        {
+          "id": "a3",
+          "text": "Cem vezes."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Mendes observou que, para que o sistema de reutilização fosse ambientalmente superior ao descarte, cada unidade precisaria ser utilizada pelo menos cinquenta vezes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que o consumo de bebidas aumentou no festival?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pela redução no preço das bebidas."
+        },
+        {
+          "id": "a2",
+          "text": "Por causa da qualidade do material."
+        },
+        {
+          "id": "a3",
+          "text": "Devido ao conforto moral do sistema."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O público, ao pagar o depósito, sente-se absolvido da responsabilidade ambiental, criando um fenômeno psicológico onde o consumo de bebidas aumenta",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao descrever o conflito entre Bastos e Mendes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar a divergência entre a percepção pública e a realidade técnica."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar a importância da gestão de resíduos em eventos."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar a falta de organização logística do festival EcoVibes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A métrica de sucesso, quando expandida para incluir a cadeia de suprimentos e o comportamento do consumidor, revelava uma verdade inconveniente: o evento estava apenas transferindo o impacto ambiental da visibilidade imediata para uma escala global e invisível.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Analítico e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e técnico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A sustentabilidade, quando reduzida a métricas de conveniência, deixa de ser um objetivo prático para se tornar uma narrativa, um palco onde a aparência de responsabilidade é mais lucrativa do que a própria responsabilidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que o autor quer dizer com 'passivo ambiental'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O custo de compra dos copos."
+        },
+        {
+          "id": "a2",
+          "text": "A limpeza da praça central."
+        },
+        {
+          "id": "a3",
+          "text": "Uma dívida ecológica acumulada."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A permanência do 'EcoVibes' como referência aponta para a nossa preferência coletiva por soluções que ofereçam conforto moral imediato, mesmo que às custas de um passivo ambiental acumulado em silêncio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio de 300 palavras discutindo se a conveniência do consumidor deve ser um fator determinante na implementação de políticas de sustentabilidade em larga escala, utilizando o conceito de 'passivo ambiental' apresentado no texto.",
+      "en": "Escreva um ensaio de 300 palavras discutindo se a conveniência do consumidor deve ser um fator determinante na implementação de políticas de sustentabilidade em larga escala, utilizando o conceito de 'passivo ambiental' apresentado no texto."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar as contradições entre a percepção de sustentabilidade e a realidade logística de sistemas de copos reutilizáveis, desafiando o leitor a considerar o ciclo de vida completo em vez de apenas o ponto de consumo.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Paradoxo do Polímero: A Ilusão da Sustentabilidade em Eventos Urbanos | C2 Reading | WeLearn",
+      "en": "O Paradoxo do Polímero: A Ilusão da Sustentabilidade em Eventos Urbanos | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre como a substituição de descartáveis por copos reutilizáveis em festivais de música pode ocultar impactos ambientais sistêmicos quando a métrica de sucesso é ampliada.",
+      "en": "Uma análise crítica sobre como a substituição de descartáveis por copos reutilizáveis em festivais de música pode ocultar impactos ambientais sistêmicos quando a métrica de sucesso é ampliada."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

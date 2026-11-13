@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-last-bus",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Silêncio dos Horários: A Geometria da Exclusão",
+      "en": "O Silêncio dos Horários: A Geometria da Exclusão"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre como a otimização de serviços de transporte rural pode mascarar realidades sociais através da manipulação de dados de demanda.",
+      "en": "Uma análise crítica sobre como a otimização de serviços de transporte rural pode mascarar realidades sociais através da manipulação de dados de demanda."
+    },
+    "mission": {
+      "es": "Analise o texto para compreender como a eficiência estatística pode atuar como uma ferramenta de invisibilidade social no contexto rural.",
+      "en": "Analise o texto para compreender como a eficiência estatística pode atuar como uma ferramenta de invisibilidade social no contexto rural."
+    },
+    "targetText": "A recente reestruturação da linha de ônibus que conecta o vilarejo de Vale das Brumas à sede do município de Horizonte foi celebrada pela gestão da empresa Viação Planalto como um triunfo da eficiência algorítmica. O Diretor de Operações, Roberto Mendes, argumentou em nota oficial que a supressão dos horários de baixa ocupação, especificamente os trajetos das dez da manhã e das três da tarde, era uma medida imperativa para a sustentabilidade financeira da rota. Segundo a empresa, os dados de bilhetagem eletrônica indicavam uma ociosidade crônica nesses períodos, tornando a manutenção de tais veículos um dreno injustificável de recursos. A lógica parecia irrefutável: se o assento permanece vazio, a oferta é desnecessária. Contudo, essa métrica ignora a natureza da exclusão que precede a contagem, criando um ciclo de invisibilidade onde a ausência de passageiros é confundida com a ausência de necessidade.\n\nO caso de Dona Alzira, uma artesã que reside na zona rural, ilustra a falácia dessa métrica de eficiência. Antes da alteração, ela utilizava o ônibus das dez da manhã para entregar seus produtos na feira central. Com a supressão do horário, a alternativa seria aguardar até o final da tarde, o que inviabiliza a venda de seus bens perecíveis e a logística de retorno antes do anoitecer. Ao deixar de utilizar o serviço, Dona Alzira não se tornou um passageiro desinteressado, mas sim um dado omitido. A empresa, ao analisar os relatórios de venda, interpreta a ausência de Dona Alzira como um sinal de que a demanda nunca existiu, ignorando que a própria restrição de oferta foi o mecanismo que silenciou sua presença no sistema. A eficiência, portanto, torna-se uma profecia autorrealizável: corta-se o serviço, a demanda desaparece e a estatística valida a exclusão.\n\nO debate ganha contornos mais complexos quando consideramos que a viabilidade de uma comunidade rural depende da interconectividade com o centro urbano para serviços básicos. O representante da associação de moradores, Sr. Tadeu, tentou dialogar com a Viação Planalto, apresentando petições que detalhavam as dificuldades de estudantes e pacientes que necessitavam dos horários suprimidos. A resposta da empresa foi técnica e impessoal, reiterando que a gestão de frotas não pode ser pautada por exceções individuais, mas por tendências de mercado. Para a empresa, a eficiência é uma entidade matemática isolada de qualquer contexto social; para os moradores, é uma barreira física que restringe o direito de ir e vir. A tensão entre a gestão empresarial e a realidade social revela que a otimização de dados é frequentemente uma forma de negligência institucionalizada.\n\nÉ fundamental questionar a validade de uma métrica que se autovalida ao excluir a variável humana de sua equação. Quando a Viação Planalto afirma que a otimização trouxe um aumento na taxa de ocupação por veículo, ela está tecnicamente correta, mas moralmente incompleta. A taxa de ocupação subiu justamente porque as opções de mobilidade foram reduzidas, forçando todos os usuários a se concentrarem nos poucos horários remanescentes, muitas vezes em condições de superlotação. A eficiência, neste cenário, é uma ilusão estatística que mascara o custo social da precarização. O sucesso financeiro da empresa é, em última instância, financiado pela erosão da autonomia dos moradores de Vale das Brumas, que agora dependem de caronas informais ou transportes privados custosos para realizar tarefas que antes eram rotineiras.\n\nO encerramento dessa discussão aponta para um impasse ético que transcende o transporte público. Vivemos em uma era onde a gestão de dados é frequentemente confundida com a gestão da realidade. Se os dados não registram uma demanda, presume-se que ela não existe, ignorando que o sistema de coleta é, por definição, um filtro que exclui o que ele não consegue ou não deseja capturar. A história de Vale das Brumas é apenas um microcosmo de um fenômeno global: o uso da eficiência como um escudo contra a responsabilidade social. Enquanto as decisões forem tomadas apenas com base no que está visível nas planilhas, aqueles que foram excluídos pela própria ineficiência do sistema continuarão a ser invisibilizados, transformando o transporte rural não em um serviço público, mas em um privilégio de quem ainda consegue se encaixar nas janelas de tempo permitidas pelo algoritmo.\n\nA persistência desse modelo gerencial, pautado estritamente na lógica algorítmica, sinaliza um retrocesso nas políticas de integração regional, transformando o transporte em um mecanismo de segregação geográfica. Ao tratar a mobilidade como uma mercadoria sujeita apenas às leis da oferta e procura, a Viação Planalto desconsidera seu papel como prestadora de um serviço essencial, cuja finalidade pública deveria sobrepor-se ao lucro imediato. O impacto dessa desintegração não se limita à perda de renda dos artesãos ou ao atraso escolar, mas reverbera na própria coesão do tecido social de Vale das Brumas, que vê sua vitalidade drenada pela impossibilidade de circulação. A longo prazo, essa estratégia de otimização pode gerar um efeito bumerangue: o esvaziamento econômico e demográfico dessas zonas rurais, provocado pela falta de acesso, resultará na redução definitiva do mercado consumidor que a empresa tanto almeja proteger. Se a gestão continuar a priorizar a eficiência matemática em detrimento da função social, o resultado será o isolamento forçado de populações inteiras, criando desertos de mobilidade onde a cidadania é sacrificada no altar da planilha. Portanto, a verdadeira inovação exigiria que a empresa incorporasse indicadores de impacto social e equidade na sua análise de viabilidade, reconhecendo que a sustentabilidade de uma rede de transporte não se mede apenas pela ocupação dos assentos, mas pela capacidade de manter as comunidades conectadas, produtivas e, acima de tudo, integradas ao desenvolvimento regional que o transporte público deve, por definição, fomentar e garantir a todos os cidadãos.",
+    "wordCount": 929,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "imperativa",
+        "lemma": "imperativa",
+        "glosses": {
+          "es": "essential or unavoidable",
+          "en": "essential or unavoidable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ociosidade",
+        "lemma": "ociosidade",
+        "glosses": {
+          "es": "idleness or lack of use",
+          "en": "idleness or lack of use"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "falácia",
+        "lemma": "falácia",
+        "glosses": {
+          "es": "a mistaken belief or deceptive argument",
+          "en": "a mistaken belief or deceptive argument"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "perecíveis",
+        "lemma": "perecíveis",
+        "glosses": {
+          "es": "goods likely to decay or spoil quickly",
+          "en": "goods likely to decay or spoil quickly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "microcosmo",
+        "lemma": "microcosmo",
+        "glosses": {
+          "es": "a community or place viewed as a miniature version of the world",
+          "en": "a community or place viewed as a miniature version of the world"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erosão",
+        "lemma": "erosão",
+        "glosses": {
+          "es": "the gradual destruction or diminution of something",
+          "en": "the gradual destruction or diminution of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.2,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o argumento central do texto sobre a gestão de transporte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A eficiência de dados pode ocultar necessidades sociais reais."
+        },
+        {
+          "id": "a2",
+          "text": "O transporte rural é inviável sem subsídios governamentais."
+        },
+        {
+          "id": "a3",
+          "text": "A Viação Planalto opera com prejuízo técnico constante."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A eficiência, portanto, torna-se uma profecia autorrealizável: corta-se o serviço, a demanda desaparece e a estatística valida a exclusão.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que Dona Alzira parou de utilizar o ônibus?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela mudou de residência."
+        },
+        {
+          "id": "a2",
+          "text": "O horário foi cancelado."
+        },
+        {
+          "id": "a3",
+          "text": "O preço ficou caro."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Com a supressão do horário, a alternativa seria aguardar até o final da tarde, o que inviabiliza a venda de seus bens perecíveis",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o autor sugere sobre a 'taxa de ocupação' mencionada pela empresa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela aumentou devido à melhoria da qualidade do serviço."
+        },
+        {
+          "id": "a2",
+          "text": "Ela reflete um aumento populacional no Vale das Brumas."
+        },
+        {
+          "id": "a3",
+          "text": "Ela é um indicador enganoso que ignora a superlotação."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A taxa de ocupação subiu justamente porque as opções de mobilidade foram reduzidas, forçando todos os usuários a se concentrarem nos poucos horários remanescentes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo do autor ao citar o caso da associação de moradores?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar que a empresa ignorou as necessidades humanas em prol de critérios técnicos."
+        },
+        {
+          "id": "a2",
+          "text": "Provar que a associação não tinha argumentos válidos para contestar a empresa."
+        },
+        {
+          "id": "a3",
+          "text": "Sugerir que a empresa deveria ter aumentado o preço das passagens."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A resposta da empresa foi técnica e impessoal, reiterando que a gestão de frotas não pode ser pautada por exceções individuais, mas por tendências de mercado.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e celebratório."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e técnico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A eficiência, neste cenário, é uma ilusão estatística que mascara o custo social da precarização.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'imperativa'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Opcional."
+        },
+        {
+          "id": "a2",
+          "text": "Insignificante."
+        },
+        {
+          "id": "a3",
+          "text": "Inevitável."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a supressão dos horários de baixa ocupação, especificamente os trajetos das dez da manhã e das três da tarde, era uma medida imperativa para a sustentabilidade financeira da rota.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a tecnologia de coleta de dados deve ser o único critério para a tomada de decisões em serviços públicos essenciais.",
+      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a tecnologia de coleta de dados deve ser o único critério para a tomada de decisões em serviços públicos essenciais."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analise o texto para compreender como a eficiência estatística pode atuar como uma ferramenta de invisibilidade social no contexto rural.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Silêncio dos Horários: A Geometria da Exclusão | C2 Reading | WeLearn",
+      "en": "O Silêncio dos Horários: A Geometria da Exclusão | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre como a otimização de serviços de transporte rural pode mascarar realidades sociais através da manipulação de dados de demanda.",
+      "en": "Uma análise crítica sobre como a otimização de serviços de transporte rural pode mascarar realidades sociais através da manipulação de dados de demanda."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

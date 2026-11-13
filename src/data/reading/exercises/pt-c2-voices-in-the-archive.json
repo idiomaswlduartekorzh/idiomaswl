@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Eco de Silêncio no Arquivo",
+      "en": "O Eco de Silêncio no Arquivo"
+    },
+    "intro": {
+      "es": "Uma reflexão curatorial sobre a natureza mutável da memória oral e os dilemas éticos de cristalizar a voz humana em um registro permanente.",
+      "en": "Uma reflexão curatorial sobre a natureza mutável da memória oral e os dilemas éticos de cristalizar a voz humana em um registro permanente."
+    },
+    "mission": {
+      "es": "Analisar a tensão entre a preservação técnica e a autonomia do sujeito narrador através de uma narrativa sobre o Arquivo de Vozes Esquecidas.",
+      "en": "Analisar a tensão entre a preservação técnica e a autonomia do sujeito narrador através de uma narrativa sobre o Arquivo de Vozes Esquecidas."
+    },
+    "targetText": "O curador Elias Vane observava as bobinas de fita magnética girarem no Arquivo de Vozes Esquecidas, um mausoléu de frequências que ele mesmo ajudara a edificar. Naquela penumbra, o som de uma senhora chamada Dona Alzira, falecida há décadas, preenchia a sala com o relato de uma colheita de café que nunca existira nos registros oficiais. Elias sentia um aperto no peito: ao catalogar aquele depoimento, ele não estava apenas salvando uma memória, estava petrificando uma versão da verdade que Alzira, se estivesse viva, talvez quisesse retificar ou mesmo apagar. A tecnologia de preservação, em sua busca obsessiva pela fidelidade absoluta, tornava-se uma gaiola para o espírito da narrativa, que, por definição, deveria ser fluida e adaptável ao tempo.\n\nA assistente, Marina, entrou com uma nova demanda: a digitalização de uma série de relatos de ex-operários da extinta Fábrica de Tecidos do Vale. O conflito era evidente. Enquanto Marina via na digitalização a democratização do acesso, Elias via a descontextualização do sujeito. Ele recordava-se de quando entrevistara o Sr. Bento, um homem cuja memória era um mosaico de fatos e invenções poéticas. Bento alterava detalhes de sua vida a cada encontro, como se a realidade fosse uma argila moldada pela necessidade emocional do momento. Ao fixar essas histórias em arquivos digitais imutáveis, o Arquivo não estava preservando Bento, mas sim uma caricatura estática de sua identidade. A curadoria, portanto, deixava de ser um ato de acolhimento para tornar-se um exercício de taxidermia histórica.\n\nA tensão atingiu seu ápice quando o conselho do museu exigiu que todos os arquivos fossem editados para remover 'inconsistências factuais' e 'ruídos de hesitação'. Elias recusou-se veementemente. Para ele, a hesitação de Bento — aquele suspiro longo antes de descrever o incêndio na fábrica — era onde residia a verdade mais profunda, a marca da dor que o fato bruto não conseguia abarcar. A ordem do conselho era um apagamento da humanidade em favor de uma clareza asséptica. Ele compreendia que, ao recusar, colocava em risco a continuidade do projeto, mas a preservação sem a essência da dúvida seria apenas uma mentira organizada, um monumento ao silêncio que ele jurara proteger.\n\nNaquela noite, sob a luz fraca de um abajur, Elias revisou a transcrição do último depoimento de Bento. O texto, despojado da entonação, parecia um documento burocrático, sem alma. Ele percebeu que o paradoxo era insolúvel: a preservação exige fixidez, mas a vida exige movimento. O curador não era um guardião, mas um carcereiro de fantasmas. Ele começou a deletar os metadados de 'correção' impostos pelo conselho, restaurando as pausas, os erros de concordância e as repetições que tornavam o relato de Bento um ser vivo. Ele sabia que, ao fazer isso, estava condenando o arquivo à marginalidade, mas salvando a integridade da voz humana contra a tirania da precisão técnica.\n\nO desfecho daquela jornada não foi uma vitória triunfal, mas uma aceitação melancólica. Elias deixou o arquivo antes do amanhecer, sabendo que as fitas continuariam girando, alheias à sua intervenção. O que ele preservara não era a história da fábrica, mas o direito de um homem de ser contraditório. A memória é um rio que não aceita ser represado sem perder sua força vital. Ele caminhou pelas ruas desertas da cidade, sentindo que, ao libertar as vozes da rigidez do museu, ele finalmente encontrara a paz necessária para permitir que o esquecimento, o verdadeiro guardião da história, também tivesse seu lugar.\n\nEntretanto, ao caminhar sob o manto da madrugada, Elias compreendeu que sua rebeldia carregava uma ironia amarga: ao lutar contra a taxidermia, ele inadvertidamente criara um novo tipo de relíquia. Se a memória é um rio, como ele acreditava, ao remover as correções do conselho, ele não estava apenas devolvendo a fluidez às vozes, mas também isolando-as em um tempo estagnado, longe do escrutínio público que poderia, de fato, conferir-lhes novos significados. A marginalidade que ele escolhera para o arquivo não era uma libertação, mas um exílio. Enquanto o mundo exterior avançava, ávido por uma clareza técnica que ele tanto desprezara, as vozes de Bento e Alzira tornavam-se ecos cada vez mais distantes, audíveis apenas para quem estivesse disposto a buscar as sombras. A verdade, em sua forma bruta e hesitante, corria o risco de ser esquecida não por falta de registro, mas por falta de relevância em uma sociedade que confundia informação com sabedoria. Elias percebeu, com um aperto final no peito, que o esquecimento, o qual ele julgava ser um guardião benevolente, era na verdade um predador voraz. Ao proteger a integridade da hesitação humana contra a tirania da precisão, ele acabara por acelerar o processo de obsolescência dessas memórias. O paradoxo se fechava: a vida, em sua ânsia por se manter viva, muitas vezes precisa ser traduzida para linguagens que ela mesma despreza, sob pena de se tornar um segredo guardado em um mausoléu vazio. Ele olhou para trás, para o prédio do Arquivo, e viu as luzes se apagarem definitivamente. A luta de Elias não fora contra o conselho, mas contra a própria natureza da existência humana, que insiste em ser preservada enquanto, simultaneamente, anseia por ser transformada pelo tempo. Ele aceitou que, ao salvar a humanidade da voz, ele a condenara ao silêncio eterno, tornando-se, ironicamente, o último espectador de um teatro de sombras que ninguém mais, além dele, teria a coragem de testemunhar.",
+    "wordCount": 886,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mausoléu",
+        "lemma": "mausoléu",
+        "glosses": {
+          "es": "A building or structure that houses the remains of the dead, here used metaphorically.",
+          "en": "A building or structure that houses the remains of the dead, here used metaphorically."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "petrificando",
+        "lemma": "petrificando",
+        "glosses": {
+          "es": "Turning into stone or making something static and unchangeable.",
+          "en": "Turning into stone or making something static and unchangeable."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "taxidermia",
+        "lemma": "taxidermia",
+        "glosses": {
+          "es": "The art of preserving an animal's body via mounting or stuffing, used here to describe lifeless preservation.",
+          "en": "The art of preserving an animal's body via mounting or stuffing, used here to describe lifeless preservation."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asséptica",
+        "lemma": "asséptica",
+        "glosses": {
+          "es": "Sterile, free from contamination, or lacking emotional depth.",
+          "en": "Sterile, free from contamination, or lacking emotional depth."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "metadados",
+        "lemma": "metadados",
+        "glosses": {
+          "es": "Data that provides information about other data.",
+          "en": "Data that provides information about other data."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "represado",
+        "lemma": "represado",
+        "glosses": {
+          "es": "Dammed or held back by a barrier.",
+          "en": "Dammed or held back by a barrier."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.7,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o dilema central enfrentado pelo curador Elias Vane na narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A ética de fixar vozes humanas em registros imutáveis."
+        },
+        {
+          "id": "a2",
+          "text": "A falta de verbas para a digitalização."
+        },
+        {
+          "id": "a3",
+          "text": "A dificuldade técnica em restaurar fitas magnéticas antigas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A tecnologia de preservação, em sua busca obsessiva pela fidelidade absoluta, tornava-se uma gaiola para o espírito da narrativa",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que Elias se recusa a editar os relatos conforme a ordem do conselho?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque as correções exigidas eram tecnicamente impossíveis de realizar."
+        },
+        {
+          "id": "a2",
+          "text": "Porque ele valoriza as hesitações e contradições como parte da verdade humana."
+        },
+        {
+          "id": "a3",
+          "text": "Porque ele queria proteger a reputação dos ex-operários da fábrica."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Para ele, a hesitação de Bento — aquele suspiro longo antes de descrever o incêndio na fábrica — era onde residia a verdade mais profunda",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a metáfora da 'taxidermia histórica' sugere sobre o trabalho de arquivamento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que o arquivo é um local de vida vibrante."
+        },
+        {
+          "id": "a2",
+          "text": "Que o arquivo preserva a essência das pessoas."
+        },
+        {
+          "id": "a3",
+          "text": "Que o arquivo torna as histórias artificiais e inertes."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ao fixar essas histórias em arquivos digitais imutáveis, o Arquivo não estava preservando Bento, mas sim uma caricatura estática de sua identidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a intenção do autor ao descrever o relato de Bento como um 'mosaico de fatos e invenções'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar que a memória humana é imprecisa e subjetiva."
+        },
+        {
+          "id": "a2",
+          "text": "Provar que Bento era um mentiroso convicto."
+        },
+        {
+          "id": "a3",
+          "text": "Justificar a necessidade de edições técnicas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Bento alterava detalhes de sua vida a cada encontro, como se a realidade fosse uma argila moldada pela necessidade emocional do momento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser descrito o tom do parágrafo final da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Triunfante e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e reflexivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indignado e agressivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O desfecho daquela jornada não foi uma vitória triunfal, mas uma aceitação melancólica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'asséptica' ao descrever a clareza exigida pelo conselho?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Limpa e organizada."
+        },
+        {
+          "id": "a2",
+          "text": "Complexa e detalhada."
+        },
+        {
+          "id": "a3",
+          "text": "Fria e desprovida de humanidade."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A ordem do conselho era um apagamento da humanidade em favor de uma clareza asséptica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a preservação digital de memórias pessoais deve priorizar a precisão factual ou a autenticidade emocional do narrador.",
+      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a preservação digital de memórias pessoais deve priorizar a precisão factual ou a autenticidade emocional do narrador."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar a tensão entre a preservação técnica e a autonomia do sujeito narrador através de uma narrativa sobre o Arquivo de Vozes Esquecidas.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Eco de Silêncio no Arquivo | C2 Reading | WeLearn",
+      "en": "O Eco de Silêncio no Arquivo | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma reflexão curatorial sobre a natureza mutável da memória oral e os dilemas éticos de cristalizar a voz humana em um registro permanente.",
+      "en": "Uma reflexão curatorial sobre a natureza mutável da memória oral e os dilemas éticos de cristalizar a voz humana em um registro permanente."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-food-label",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Semântica da Culpa: O Rótulo como Escudo",
+      "en": "A Semântica da Culpa: O Rótulo como Escudo"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a evolução das rotulagens de validade e a transferência de responsabilidade ética do produtor para o consumidor.",
+      "en": "Uma análise crítica sobre a evolução das rotulagens de validade e a transferência de responsabilidade ética do produtor para o consumidor."
+    },
+    "mission": {
+      "es": "Analisar as nuances semânticas e as implicações éticas da linguagem utilizada em embalagens de alimentos, focando na distinção entre informação técnica e manipulação comportamental.",
+      "en": "Analisar as nuances semânticas e as implicações éticas da linguagem utilizada em embalagens de alimentos, focando na distinção entre informação técnica e manipulação comportamental."
+    },
+    "targetText": "A recente controvérsia envolvendo a rede de empórios gourmet 'Sabor & Origem' não se trata apenas de uma questão de segurança alimentar, mas de uma sofisticada manobra linguística. Durante o evento de degustação de vinhos da última sexta-feira, a diretora de operações, Helena Viana, defendeu a mudança nos rótulos de seus produtos artesanais, que passaram de 'Consumir até' para 'Melhor se consumido antes de'. A alteração, segundo Helena, visa reduzir o desperdício, permitindo que o cliente decida, por conta própria, a viabilidade do produto após a data estipulada. Contudo, essa transição semântica revela um abismo ético: a transferência da responsabilidade pelo risco do produtor para o consumidor, sob o pretexto de uma consciência ambiental que, na prática, desonera a marca de qualquer falha na cadeia de conservação.\n\nO cerne do conflito emergiu quando o chef renomado, Ricardo Alencar, denunciou publicamente que a nova rotulagem estava sendo utilizada para escoar estoques de queijos maturados cujas propriedades organolépticas já haviam se degradado significativamente. Para Alencar, o rótulo não é um convite à autonomia do consumidor, mas um véu que oculta a negligência logística. A empresa, por sua vez, sustenta que a interpretação do termo 'melhor se consumido' é subjetiva e cabe ao paladar do cliente avaliar a integridade do item. Essa postura cria um paradoxo: ao mesmo tempo em que a marca se posiciona como defensora da sustentabilidade, ela se exime de garantir a qualidade do que vende, transformando o consumidor em um fiscal de qualidade não remunerado e sem treinamento técnico.\n\nHistoricamente, a rotulagem serviu como uma ponte de confiança entre a indústria e o público. Quando um fabricante estampa uma data de validade, ele assume um compromisso com a integridade química do alimento. Ao substituir essa precisão por expressões vagas, a 'Sabor & Origem' não está apenas educando o público sobre o desperdício, mas está erodindo a base contratual da compra. O consumidor, seduzido pelo discurso de 'evitar o descarte desnecessário', sente-se moralmente compelido a ingerir produtos que, em outros tempos, seriam descartados pela própria empresa. É uma forma de manipulação que utiliza a virtude do cliente contra ele mesmo, tornando-o cúmplice de uma ineficiência que deveria ser estritamente gerencial.\n\nO caso ganha contornos dramáticos quando observamos que a mudança não foi acompanhada de um manual de instruções ou de uma consultoria que auxiliasse o cliente a identificar sinais reais de deterioração. A empresa simplesmente delegou o julgamento sensorial a um público leigo. O episódio culminou com a recusa de diversos fornecedores locais em continuar a parceria com a rede, alegando que tal prática denigre a reputação dos artesãos. A tensão é palpável: de um lado, a narrativa corporativa de que o consumidor moderno é 'empoderado' para decidir; do outro, a realidade de que essa autonomia é, na verdade, um fardo que esconde a incapacidade da rede em gerir seu próprio inventário de forma eficiente e segura.\n\nAo fim, resta um impasse insolúvel. Se, por um lado, o combate ao desperdício é uma pauta urgente e necessária, por outro, a forma como essa pauta é instrumentalizada pelo mercado pode ser perversa. A linguagem, que deveria elucidar, torna-se um instrumento de obscurecimento. O consumidor, agora, não apenas compra o produto; ele assume o risco da sua própria decepção ou, pior, da sua própria intoxicação. A 'Sabor & Origem' pode ter reduzido seus índices de descarte, mas o custo dessa métrica foi a quebra de um pacto silencioso de confiança. A pergunta que permanece, sem resposta, é até que ponto a sustentabilidade pode ser usada como justificativa para a precarização da segurança do consumidor em um mercado que, cada vez mais, prefere a ambiguidade à clareza.\n\nEssa desconstrução da responsabilidade corporativa reverbera, contudo, em uma esfera ainda mais insidiosa: a erosão da soberania regulatória. Ao normalizar a ambiguidade semântica como uma estratégia de mercado legítima, a 'Sabor & Origem' não apenas desafia as normas sanitárias vigentes, mas força o Estado a um papel de espectador inerte diante da fragilização dos direitos do consumidor. Se a subjetividade do paladar passa a sobrepor-se aos parâmetros técnicos, o arcabouço legal que sustenta a vigilância sanitária perde sua eficácia, transformando legislações protetivas em meras sugestões burocráticas. Esse precedente, se consolidado, abre uma perigosa avenida para que outros setores da indústria alimentícia adotem o mesmo artifício, diluindo a transparência em um mar de eufemismos mercadológicos. O resultado é a criação de um ecossistema de consumo onde a informação clara — pilar fundamental da cidadania — é substituída pela incerteza deliberada. Mais do que uma falha de gestão, assistimos à institucionalização da desinformação como ferramenta de lucro, onde o risco biológico é camuflado sob a égide da escolha individual. O consumidor, desprovido de ferramentas analíticas para discernir entre um produto em declínio natural e um item verdadeiramente perigoso, torna-se refém de um sistema que monetiza a dúvida. Portanto, a controvérsia transcende os limites dos empórios gourmet, revelando uma tendência preocupante de privatização do risco sanitário. Enquanto a empresa celebra a redução de seus prejuízos operacionais, a sociedade enfrenta o custo invisível dessa flexibilização: a perda da garantia de segurança básica. A sustentabilidade, quando desprovida de responsabilidade técnica, degenera em um pretexto vazio que, em última análise, sacrifica a integridade pública no altar da eficiência contábil, deixando claro que, sem critérios objetivos, a liberdade de escolha é apenas uma ilusão que mascara a negligência sistêmica e a progressiva desvalorização do bem-estar coletivo em favor de uma margem de lucro protegida pela ambiguidade.",
+    "wordCount": 903,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "organolépticas",
+        "lemma": "organolépticas",
+        "glosses": {
+          "es": "relating to the sensory properties of a product, such as taste, smell, and texture.",
+          "en": "relating to the sensory properties of a product, such as taste, smell, and texture."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "desonera",
+        "lemma": "desonera",
+        "glosses": {
+          "es": "to relieve of a burden, responsibility, or duty.",
+          "en": "to relieve of a burden, responsibility, or duty."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cerne",
+        "lemma": "cerne",
+        "glosses": {
+          "es": "the core, essence, or central part of an issue.",
+          "en": "the core, essence, or central part of an issue."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exime",
+        "lemma": "exime",
+        "glosses": {
+          "es": "to excuse or release someone from an obligation or blame.",
+          "en": "to excuse or release someone from an obligation or blame."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "instrumentalizada",
+        "lemma": "instrumentalizada",
+        "glosses": {
+          "es": "used as a tool or means to achieve a specific, often hidden, end.",
+          "en": "used as a tool or means to achieve a specific, often hidden, end."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "precarização",
+        "lemma": "precarização",
+        "glosses": {
+          "es": "the process of making something less stable, secure, or reliable.",
+          "en": "the process of making something less stable, secure, or reliable."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.4,
+      "maxSentenceWords": 61,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o argumento central do texto sobre a mudança na rotulagem da empresa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A empresa transfere riscos ao cliente."
+        },
+        {
+          "id": "a2",
+          "text": "A empresa busca a sustentabilidade."
+        },
+        {
+          "id": "a3",
+          "text": "A empresa melhora a qualidade técnica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "essa transição semântica revela um abismo ético: a transferência da responsabilidade pelo risco do produtor para o consumidor",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o chef Ricardo Alencar criticou a nova postura da empresa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pela falta de treinamento do pessoal."
+        },
+        {
+          "id": "a2",
+          "text": "Pelo uso de rótulos para vender queijos velhos."
+        },
+        {
+          "id": "a3",
+          "text": "Pela mudança na data de validade dos queijos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "a nova rotulagem estava sendo utilizada para escoar estoques de queijos maturados cujas propriedades organolépticas já haviam se degradado significativamente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o autor sugere sobre a autonomia do consumidor promovida pela marca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "É um avanço na liberdade individual."
+        },
+        {
+          "id": "a2",
+          "text": "É uma forma de educar o público."
+        },
+        {
+          "id": "a3",
+          "text": "É uma estratégia de marketing ilusória."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "ao mesmo tempo em que a marca se posiciona como defensora da sustentabilidade, ela se exime de garantir a qualidade do que vende, transformando o consumidor em um fiscal de qualidade não remunerado",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao descrever a mudança semântica dos rótulos?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticar a manipulação da linguagem para ocultar falhas logísticas."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstrar como a sustentabilidade pode ser aplicada ao mercado."
+        },
+        {
+          "id": "a3",
+          "text": "Explicar a importância da rotulagem técnica para o consumidor."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A linguagem, que deveria elucidar, torna-se um instrumento de obscurecimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na análise do autor sobre a 'Sabor & Origem'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indiferente e técnico."
+        },
+        {
+          "id": "a2",
+          "text": "Cético e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Otimista e esperançoso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Essa postura cria um paradoxo: ao mesmo tempo em que a marca se posiciona como defensora da sustentabilidade, ela se exime de garantir a qualidade do que vende",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'precarização'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aumento da segurança."
+        },
+        {
+          "id": "a2",
+          "text": "Melhoria da qualidade."
+        },
+        {
+          "id": "a3",
+          "text": "Redução da estabilidade."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "o custo dessa métrica foi a quebra de um pacto silencioso de confiança. A pergunta que permanece, sem resposta, é até que ponto a sustentabilidade pode ser usada como justificativa para a precarização da segurança do consumidor",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a responsabilidade pela segurança alimentar deve ser compartilhada ou se deve recair exclusivamente sobre o produtor, utilizando o conceito de 'abismo ético' mencionado no texto.",
+      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a responsabilidade pela segurança alimentar deve ser compartilhada ou se deve recair exclusivamente sobre o produtor, utilizando o conceito de 'abismo ético' mencionado no texto."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar as nuances semânticas e as implicações éticas da linguagem utilizada em embalagens de alimentos, focando na distinção entre informação técnica e manipulação comportamental.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Semântica da Culpa: O Rótulo como Escudo | C2 Reading | WeLearn",
+      "en": "A Semântica da Culpa: O Rótulo como Escudo | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a evolução das rotulagens de validade e a transferência de responsabilidade ética do produtor para o consumidor.",
+      "en": "Uma análise crítica sobre a evolução das rotulagens de validade e a transferência de responsabilidade ética do produtor para o consumidor."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

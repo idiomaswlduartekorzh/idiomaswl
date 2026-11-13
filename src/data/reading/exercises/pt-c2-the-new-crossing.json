@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-new-crossing",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Silêncio da Travessia: A Ontologia do Acidente Evitado",
+      "en": "O Silêncio da Travessia: A Ontologia do Acidente Evitado"
+    },
+    "intro": {
+      "es": "Um ensaio reflexivo sobre a natureza da evidência em eventos que não deixaram rastros, focando na experiência de um pedestre e um motorista em uma interseção urbana.",
+      "en": "Um ensaio reflexivo sobre a natureza da evidência em eventos que não deixaram rastros, focando na experiência de um pedestre e um motorista em uma interseção urbana."
+    },
+    "mission": {
+      "es": "Analise o texto para compreender como a ausência de consequências físicas desafia nossa percepção de realidade e responsabilidade ética.",
+      "en": "Analise o texto para compreender como a ausência de consequências físicas desafia nossa percepção de realidade e responsabilidade ética."
+    },
+    "targetText": "A esquina da Rua das Bromélias com a Avenida dos Ventos é, por definição, um não-lugar. Às dezoito horas de uma terça-feira comum, o fluxo de veículos que desce a ladeira em direção ao centro da metrópole atinge um paroxismo de urgência. Elias, um arquiteto de meia-idade acostumado a observar o espaço urbano, esperava o sinal abrir. Do outro lado, um sedã prateado, conduzido por uma mulher chamada Helena, aproximava-se com uma velocidade que, aos olhos de qualquer espectador, parecia incompatível com a sinalização intermitente de alerta. O que se seguiu foi uma coreografia de milissegundos: Elias deu um passo à frente, distraído pelo brilho do pôr do sol refletido no asfalto, enquanto Helena, ao avistar a silhueta do pedestre, não freou bruscamente, mas realizou uma manobra de desvio tão precisa quanto silenciosa. Não houve guinada de pneus, não houve o som metálico de uma colisão, nem o grito de testemunhas que, aliás, sequer existiam. O carro deslizou como um espectro, contornando Elias a centímetros de distância, e seguiu seu curso sem que o motorista ou o pedestre trocassem um olhar. O evento, em sua totalidade, evaporou-se no instante em que o veículo desapareceu na curva seguinte, deixando Elias parado na calçada, com o coração em descompasso, mas com o corpo intacto.\n\nO problema surge quando tentamos catalogar tal ocorrência na nossa gramática da experiência. Se a evidência de um desastre é medida pela sua materialidade — o vidro estilhaçado, o hematoma, o relatório policial —, o que resta de um desastre que não aconteceu? Elias, ao retornar para casa, sentiu uma inquietude crescente. Ele não era uma vítima, pois nada lhe fora subtraído; Helena não era uma infratora, pois nenhuma lei fora, tecnicamente, violada sob a ótica de um observador externo. Contudo, a ausência de vestígios não apaga a realidade da ameaça. A literatura sobre acidentes urbanos costuma ignorar o 'quase-acidente', tratando-o como um ruído estatístico, um erro de percurso que não compõe a história. No entanto, para o arquiteto, aquela fração de segundo tornou-se o centro de gravidade de sua semana. Ele começou a questionar se a segurança pública deveria ser mensurada apenas pela ausência de fatalidades ou se deveríamos contabilizar a qualidade da tensão que sustenta o cotidiano. A invisibilidade do perigo é, ironicamente, o que permite que a cidade continue funcionando, mas é também o que nos aliena da precariedade de nossas vidas coletivas.\n\nHelena, por sua vez, vivenciou o evento sob uma lente distinta. Ao chegar em casa, o incidente já havia sido relegado ao limbo da memória imediata. Para ela, a manobra não foi um ato heroico ou uma decisão consciente, mas uma extensão automática de seus reflexos, refinados por anos de condução em vias caóticas. Ela não sentiu o peso da mortalidade que Elias carregou consigo por horas. Aqui reside o hiato ontológico: o mesmo evento possui pesos existenciais díspares dependendo da posição ocupada na cena. Para o pedestre, a vida foi um fio suspenso; para o motorista, foi apenas uma correção de trajetória. A falta de um diálogo, de um reconhecimento mútuo do que quase ocorreu, impede que o evento se transforme em uma experiência compartilhada. Fica apenas o silêncio. A ausência de um impacto físico atua como um manto que encobre a responsabilidade ética, tornando o quase-acidente uma entidade fantasmagórica que assombra apenas um dos lados, enquanto o outro segue imune à própria agência.\n\nÉ legítimo, portanto, indagar se a ausência de rastro é, de fato, a ausência de prova. Na filosofia da ciência, a ausência de evidência não é evidência de ausência, mas, na vida urbana, operamos sob a premissa contrária. Se não há dano, não há registro; se não há registro, o evento não possui realidade social. Elias, em seu escritório, desenhava plantas de edifícios que visavam a segurança e o conforto, mas percebeu que suas construções eram insensíveis a esses momentos de suspensão. Ele se viu incapaz de traduzir o susto em arquitetura. Como projetar um espaço que reconheça o perigo que não se materializa? A dificuldade reside em dar forma ao que é efêmero. A cidade é um organismo que se alimenta de nossas negligências e de nossa pressa, e o quase-acidente é o seu combustível oculto, uma energia dissipada que não move engrenagens, mas que desgasta o espírito daqueles que, por um instante, olharam o abismo e viram que ele, por sorte, estava vazio.\n\nAo final da semana, a esquina da Rua das Bromélias continuava a ser apenas uma esquina. O fluxo de veículos seguia, a sinalização intermitente ainda piscava com a mesma indiferença, e os pedestres cruzavam a via com a mesma confiança cega. Elias, observando o movimento da janela de seu escritório, concluiu que a invisibilidade do quase-acidente é necessária para a manutenção da ordem. Se estivéssemos plenamente conscientes de cada colisão evitada por um milímetro, a paralisia seria inevitável. A sociedade exige que esqueçamos o perigo para que possamos circular. O silêncio da travessia não é uma falha, mas uma função. O evento que não deixou rastros é, talvez, a prova mais contundente da fragilidade do contrato social: ele existe apenas enquanto for esquecido. A vida urbana, portanto, não é construída sobre a solidez de nossas certezas, mas sobre a areia movediça de eventos que quase nos destruíram, mas que, por um capricho do acaso, optaram por não deixar qualquer rastro.",
+    "wordCount": 888,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "paroxismo",
+        "lemma": "paroxismo",
+        "glosses": {
+          "es": "A sudden outburst or peak of intensity",
+          "en": "A sudden outburst or peak of intensity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "espectro",
+        "lemma": "espectro",
+        "glosses": {
+          "es": "A ghost or phantom-like appearance",
+          "en": "A ghost or phantom-like appearance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontológico",
+        "lemma": "ontológico",
+        "glosses": {
+          "es": "Relating to the nature of being or existence",
+          "en": "Relating to the nature of being or existence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "limbo",
+        "lemma": "limbo",
+        "glosses": {
+          "es": "An intermediate state of neglect or oblivion",
+          "en": "An intermediate state of neglect or oblivion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "agência",
+        "lemma": "agência",
+        "glosses": {
+          "es": "The capacity of an actor to act in a given environment",
+          "en": "The capacity of an actor to act in a given environment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "efêmero",
+        "lemma": "efêmero",
+        "glosses": {
+          "es": "Lasting for a very short time",
+          "en": "Lasting for a very short time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central do ensaio sobre o evento descrito?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A invisibilidade de acidentes evitados sustenta a fluidez social."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade de reformar a sinalização urbana."
+        },
+        {
+          "id": "a3",
+          "text": "O trauma psicológico de pedestres exige novas leis de trânsito."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O evento que não deixou rastros é, talvez, a prova mais contundente da fragilidade do contrato social: ele existe apenas enquanto for esquecido.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Como Helena reagiu ao ver Elias na travessia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Freou bruscamente."
+        },
+        {
+          "id": "a2",
+          "text": "Realizou um desvio preciso."
+        },
+        {
+          "id": "a3",
+          "text": "Ignorou completamente o pedestre."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Helena, ao avistar a silhueta do pedestre, não freou bruscamente, mas realizou uma manobra de desvio tão precisa quanto silenciosa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que o evento afetou Elias de forma tão diferente de Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elias era um arquiteto sensível."
+        },
+        {
+          "id": "a2",
+          "text": "Helena não percebeu a gravidade do risco."
+        },
+        {
+          "id": "a3",
+          "text": "Elias sentiu a ameaça à sua existência."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Para o pedestre, a vida foi um fio suspenso; para o motorista, foi apenas uma correção de trajetória.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é o objetivo do autor ao mencionar a 'filosofia da ciência' no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Refletir sobre a relação entre dano e registro social."
+        },
+        {
+          "id": "a2",
+          "text": "Validar a necessidade de relatórios policiais."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar a falta de evidências físicas em crimes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "É legítimo, portanto, indagar se a ausência de rastro é, de fato, a ausência de prova. Na filosofia da ciência, a ausência de evidência não é evidência de ausência, mas, na vida urbana, operamos sob a premissa contrária.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na reflexão final do autor?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indignado e punitivo."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e filosófico."
+        },
+        {
+          "id": "a3",
+          "text": "Otimista e prático."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A vida urbana, portanto, não é construída sobre a solidez de nossas certezas, mas sobre a areia movediça de eventos que quase nos destruíram, mas que, por um capricho do acaso, optaram por não deixar qualquer rastro.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'agência'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma empresa de seguros."
+        },
+        {
+          "id": "a2",
+          "text": "Um órgão de fiscalização de trânsito."
+        },
+        {
+          "id": "a3",
+          "text": "A capacidade de agir e influenciar."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A ausência de um impacto físico atua como um manto que encobre a responsabilidade ética, tornando o quase-acidente uma entidade fantasmagórica que assombra apenas um dos lados, enquanto o outro segue imune à própria agência.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo explorando a ideia de que a 'invisibilidade' de certos eventos urbanos é uma forma de mecanismo de defesa coletivo, utilizando o conceito de 'contrato social' mencionado no texto.",
+      "en": "Escreva um parágrafo argumentativo explorando a ideia de que a 'invisibilidade' de certos eventos urbanos é uma forma de mecanismo de defesa coletivo, utilizando o conceito de 'contrato social' mencionado no texto."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analise o texto para compreender como a ausência de consequências físicas desafia nossa percepção de realidade e responsabilidade ética.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Silêncio da Travessia: A Ontologia do Acidente Evitado | C2 Reading | WeLearn",
+      "en": "O Silêncio da Travessia: A Ontologia do Acidente Evitado | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um ensaio reflexivo sobre a natureza da evidência em eventos que não deixaram rastros, focando na experiência de um pedestre e um motorista em uma interseção urbana.",
+      "en": "Um ensaio reflexivo sobre a natureza da evidência em eventos que não deixaram rastros, focando na experiência de um pedestre e um motorista em uma interseção urbana."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

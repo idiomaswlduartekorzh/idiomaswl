@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-river-map",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Cartografia da Incerteza: O Dilema de Rio Manso",
+      "en": "A Cartografia da Incerteza: O Dilema de Rio Manso"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre as implicações éticas e sociais da delimitação cartográfica em zonas de risco hidrológico.",
+      "en": "Uma análise crítica sobre as implicações éticas e sociais da delimitação cartográfica em zonas de risco hidrológico."
+    },
+    "mission": {
+      "es": "Analise o texto para compreender como a precisão técnica pode colidir com a realidade vivida, focando em nuances retóricas e dilemas morais.",
+      "en": "Analise o texto para compreender como a precisão técnica pode colidir com a realidade vivida, focando em nuances retóricas e dilemas morais."
+    },
+    "targetText": "A pequena vila de Rio Manso, situada às margens sinuosas do rio homônimo, viveu décadas sob a égide da imprevisibilidade. Para os moradores, o rio nunca foi uma linha divisória estática, mas um organismo pulsante que expandia e contraía seu leito conforme as estações. Contudo, a recente implementação do 'Mapa de Risco de Inundação' pelo engenheiro-chefe Elias Viana trouxe uma rigidez geométrica que a natureza desconhece. O mapa, uma peça de engenharia cartográfica impecável, traçava uma linha vermelha contínua através da vila. Aqueles que residiam a poucos centímetros da marca estavam seguros; os que viviam do outro lado, desamparados. A precisão matemática daquele traço não apenas definiu a zona de evacuação, mas criou uma fratura social profunda, onde a incerteza geológica foi substituída por uma certeza burocrática atroz.\n\nO conflito emergiu quando a prefeita Helena Siqueira, pressionada pela necessidade de alocar verbas de emergência, exigiu que Elias definisse o limite exato onde a água chegaria em um cenário de cheia severa. Elias, ciente de que a hidrologia é uma ciência de probabilidades e não de absolutos, tentou argumentar que qualquer linha desenhada seria, por definição, uma ficção geométrica. No entanto, a burocracia exigia um binário: zona de risco ou zona de segurança. A decisão de Elias de traçar a linha ao longo da Rua das Pedras não foi baseada em uma mudança súbita no terreno, mas na conveniência de um marco geográfico visível. Ao fazê-lo, ele condenou juridicamente as propriedades do lado sul à desvalorização imobiliária imediata e à exclusão de seguros, enquanto o lado norte mantinha sua estabilidade nominal, apesar de ambos compartilharem a mesma topografia vulnerável.\n\nNa noite em que a tempestade finalmente atingiu a vila, a falácia do mapa tornou-se evidente. A água não respeitou a Rua das Pedras; ela serpenteou por vielas, contornou muros e inundou casas que, conforme o mapa de Elias, deveriam estar secas. O desespero dos residentes do lado norte, que confiaram na segurança prometida pela linha cartográfica, foi acompanhado pela revolta dos moradores do lado sul, que viram suas casas serem destruídas sem que houvesse qualquer auxílio estatal, já que o mapa os havia classificado como 'zona de risco' sem, contudo, prever a extensão real do desastre. A linha, que deveria ser um instrumento de proteção, tornou-se o próprio instrumento da negligência, ao criar uma falsa sensação de segurança que impediu preparações adequadas em áreas supostamente protegidas.\n\nO dilema ético que se impõe após o desastre é profundo e sem solução simples. Elias Viana, ao tentar traduzir a complexidade do rio em uma linguagem cartográfica compreensível para os gestores públicos, acabou por trair a própria natureza do fenômeno que tentava descrever. A busca por uma precisão que satisfizesse as exigências administrativas resultou em uma distorção da realidade que custou caro à comunidade. A crítica não se dirige à incompetência técnica de Elias, mas à própria natureza da governança moderna, que exige que a complexidade do mundo natural seja reduzida a categorias binárias para que possa ser administrada, ignorando que, ao fazê-lo, a administração frequentemente cria novos riscos.\n\nAo final, a vila de Rio Manso permanece como um monumento à arrogância da cartografia. O mapa ainda existe, guardado nas gavetas da prefeitura, mas ninguém mais o consulta com a mesma fé cega de outrora. A lição, porém, permanece não aprendida pela administração pública. Enquanto o sistema exigir que a incerteza seja eliminada por decreto, a tragédia continuará a ser uma consequência inevitável da nossa tentativa de controlar o incontrolável. A linha vermelha, que deveria ter sido uma fronteira de cuidado, permanece como um lembrete de que, quando tentamos aprisionar um rio em um mapa, acabamos por nos afogar em nossas próprias construções conceituais, perdendo de vista a fluidez necessária para lidar com a imprevisibilidade da vida.\n\nEntretanto, a persistência desse paradigma burocrático revela uma face ainda mais insidiosa: a institucionalização da culpa técnica como mecanismo de defesa estatal. Ao tratar a falha do mapa não como um erro de premissa, mas como uma anomalia estatística isolada, a prefeitura de Rio Manso iniciou um processo de auditoria que visa, ironicamente, refinar a precisão da linha vermelha em vez de questionar a validade de sua existência. Essa reação demonstra que a governança contemporânea é incapaz de absorver o conceito de resiliência, preferindo a reiteração do erro sob o pretexto de aprimoramento metodológico. O custo dessa insistência transcende a reconstrução física da vila; ele corrói o tecido cívico, transformando a relação entre cidadão e Estado em um contrato de desconfiança mútua. Enquanto os engenheiros buscam algoritmos mais sofisticados para prever o imprevisível, os moradores, agora cientes da fragilidade dessas promessas, começam a erguer suas próprias defesas informais, ignorando as diretrizes oficiais e restabelecendo práticas ancestrais de convivência com o rio. Essa resistência silenciosa, longe de ser um ato de rebeldia, é uma estratégia de sobrevivência frente a um sistema que, ao tentar domar a natureza, acaba por alienar as pessoas de seu próprio território. A tragédia de Rio Manso não reside apenas na destruição material, mas na criação de um abismo cognitivo onde a verdade técnica é sistematicamente separada da experiência vivida. Se o mapa continua a ser o norte da administração, então a próxima enchente não será apenas um evento climático, mas o colapso definitivo de uma forma de gestão que, ao descartar a sabedoria da observação direta em favor da abstração cartográfica, condena a comunidade a repetir um ciclo de desastres onde a única certeza é a falibilidade humana.",
+    "wordCount": 905,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "égide",
+        "lemma": "égide",
+        "glosses": {
+          "es": "protection or sponsorship",
+          "en": "protection or sponsorship"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atroz",
+        "lemma": "atroz",
+        "glosses": {
+          "es": "cruel or monstrous",
+          "en": "cruel or monstrous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "binário",
+        "lemma": "binário",
+        "glosses": {
+          "es": "composed of two parts or states",
+          "en": "composed of two parts or states"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "falácia",
+        "lemma": "falácia",
+        "glosses": {
+          "es": "a mistaken belief or deceptive argument",
+          "en": "a mistaken belief or deceptive argument"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "negligência",
+        "lemma": "negligência",
+        "glosses": {
+          "es": "failure to take proper care",
+          "en": "failure to take proper care"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arrogância",
+        "lemma": "arrogância",
+        "glosses": {
+          "es": "the quality of being overbearing or proud",
+          "en": "the quality of being overbearing or proud"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.3,
+      "maxSentenceWords": 59,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é a tese central do texto sobre a implementação do mapa de risco?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A burocracia distorce a realidade natural."
+        },
+        {
+          "id": "a2",
+          "text": "A cartografia é uma ferramenta falha por natureza."
+        },
+        {
+          "id": "a3",
+          "text": "O engenheiro agiu com má-fé deliberada."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A busca por uma precisão que satisfizesse as exigências administrativas resultou em uma distorção da realidade que custou caro à comunidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que a Rua das Pedras foi escolhida como limite?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Por ser um ponto alto."
+        },
+        {
+          "id": "a2",
+          "text": "Por ser um marco visível."
+        },
+        {
+          "id": "a3",
+          "text": "Por ser o limite do rio."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A decisão de Elias de traçar a linha ao longo da Rua das Pedras não foi baseada em uma mudança súbita no terreno, mas na conveniência de um marco geográfico visível.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual foi a consequência social imediata da criação da linha cartográfica?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A valorização imobiliária do lado sul."
+        },
+        {
+          "id": "a2",
+          "text": "A evacuação obrigatória da vila inteira."
+        },
+        {
+          "id": "a3",
+          "text": "A exclusão de seguros para o lado sul."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ao fazê-lo, ele condenou juridicamente as propriedades do lado sul à desvalorização imobiliária imediata e à exclusão de seguros",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao descrever o comportamento da água durante a tempestade?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Demonstrar a falha do mapa."
+        },
+        {
+          "id": "a2",
+          "text": "Relatar um evento climático."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar o engenheiro Elias."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Na noite em que a tempestade finalmente atingiu a vila, a falácia do mapa tornou-se evidente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como o autor descreve a tentativa de gerir a natureza através de mapas?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como um avanço necessário."
+        },
+        {
+          "id": "a2",
+          "text": "Como uma arrogância humana."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma solução técnica."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ao final, a vila de Rio Manso permanece como um monumento à arrogância da cartografia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que significa o termo 'égide' no contexto do primeiro parágrafo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sob um regime de medo."
+        },
+        {
+          "id": "a2",
+          "text": "Sob uma lei rigorosa."
+        },
+        {
+          "id": "a3",
+          "text": "Sob proteção ou influência."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A pequena vila de Rio Manso, situada às margens sinuosas do rio homônimo, viveu décadas sob a égide da imprevisibilidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo discutindo se a tecnologia de mapeamento deve priorizar a precisão absoluta ou a flexibilidade interpretativa em contextos de desastres naturais.",
+      "en": "Escreva um ensaio argumentativo discutindo se a tecnologia de mapeamento deve priorizar a precisão absoluta ou a flexibilidade interpretativa em contextos de desastres naturais."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analise o texto para compreender como a precisão técnica pode colidir com a realidade vivida, focando em nuances retóricas e dilemas morais.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Cartografia da Incerteza: O Dilema de Rio Manso | C2 Reading | WeLearn",
+      "en": "A Cartografia da Incerteza: O Dilema de Rio Manso | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre as implicações éticas e sociais da delimitação cartográfica em zonas de risco hidrológico.",
+      "en": "Uma análise crítica sobre as implicações éticas e sociais da delimitação cartográfica em zonas de risco hidrológico."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-school-garden",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Cultivo da Coerção: A Horta Comunitária do Colégio Horizonte",
+      "en": "O Cultivo da Coerção: A Horta Comunitária do Colégio Horizonte"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a dinâmica de participação voluntária e as pressões sociais implícitas na gestão de projetos escolares.",
+      "en": "Uma análise crítica sobre a dinâmica de participação voluntária e as pressões sociais implícitas na gestão de projetos escolares."
+    },
+    "mission": {
+      "es": "Examinar a tensão entre a liberdade de escolha e a conformidade social em ambientes educacionais, utilizando o caso da Horta Comunitária do Colégio Horizonte.",
+      "en": "Examinar a tensão entre a liberdade de escolha e a conformidade social em ambientes educacionais, utilizando o caso da Horta Comunitária do Colégio Horizonte."
+    },
+    "targetText": "A Horta Comunitária do Colégio Horizonte, um projeto idealizado pela diretora Helena Antunes, foi apresentada à comunidade acadêmica como um bastião de sustentabilidade e pedagogia ativa. Sob o pretexto de promover a integração, a iniciativa exigia que pais e alunos dedicassem sábados alternados ao plantio e à manutenção das espécies. O discurso oficial, meticulosamente articulado, enfatizava a voluntariedade: ninguém seria punido por não participar, e o engajamento deveria emanar de um senso genuíno de pertencimento. No entanto, a realidade operacional do projeto revelou uma arquitetura de incentivos que tornava a recusa uma manobra socialmente dispendiosa. O sistema de 'créditos de cidadania', embora nominalmente opcional, passou a ser um critério tácito para a concessão de bolsas de mérito e recomendações acadêmicas, transformando o que deveria ser um ato de altruísmo em uma obrigação performática disfarçada de virtude cívica.\n\nO conflito emergiu quando o grupo liderado pelo professor de biologia, Ricardo Mendes, questionou a eficácia pedagógica de tal imposição. Mendes argumentava que a obrigatoriedade velada corrompia o propósito educativo do cultivo, transformando a horta em um cenário de ressentimento. Em uma reunião acalorada no auditório, a diretora Helena reiterou que a participação era livre, contudo, observou que 'a ausência de compromisso com o coletivo reflete a falta de alinhamento com os valores do Horizonte'. Esta declaração, proferida com uma suavidade gélida, funcionou como um lembrete de que a liberdade de não participar existia apenas em teoria, enquanto a exclusão dos círculos de influência da escola era a consequência prática, porém não declarada, para aqueles que optassem pela abstenção. A tensão entre o discurso da autonomia e a realidade da coerção sistêmica tornou-se o eixo central da vida escolar.\n\nDurante o semestre, a dinâmica intensificou-se. Famílias que não podiam comparecer aos sábados devido a compromissos laborais ou religiosos foram gradualmente marginalizadas das decisões do conselho escolar. O projeto, que deveria ser um espaço de diálogo, tornou-se um mecanismo de triagem social. A manutenção da horta exigia um nível de dedicação que, para muitos, era insustentável. A resistência, embora silenciosa, manifestava-se através da negligência proposital nas tarefas designadas, um ato de sabotagem passiva contra uma estrutura que exigia lealdade incondicional sob a égide da liberdade. Enquanto a diretoria celebrava a exuberância das colheitas em relatórios de impacto, a base da comunidade sentia o peso de uma vigilância constante que punia a autonomia com a invisibilidade.\n\nO clímax ocorreu quando a família de um aluno bolsista, incapaz de cumprir as horas de cultivo exigidas, foi formalmente advertida sobre a 'incompatibilidade de valores' com a instituição. Este evento escancarou a falácia da voluntariedade. O que antes era uma pressão sutil tornou-se uma política de exclusão explícita, dissimulada sob o vernáculo da responsabilidade comunitária. A diretora Helena, ao ser confrontada, manteve sua posição de que a adesão era um critério de excelência, não uma imposição, ignorando a assimetria de poder que tornava a recusa uma sentença de ostracismo acadêmico. A horta, outrora um símbolo de crescimento, transformou-se em um monumento ao autoritarismo burocrático, onde a terra cultivada era o único elemento que prosperava, enquanto o tecido social da escola se desintegrava.\n\nO desfecho desta narrativa permanece inconclusivo, refletindo a natureza perene do dilema entre a liberdade individual e a conformidade coletiva. O Colégio Horizonte continua a operar sob o mesmo paradigma, onde a participação é celebrada como uma escolha, enquanto o custo da dissidência é cuidadosamente ocultado nas entrelinhas dos regulamentos internos. O projeto da horta sobrevive, mas a um custo ético que a instituição se recusa a quantificar. A lição que os alunos extraem dessa experiência não é sobre o ciclo das plantas ou o valor do trabalho manual, mas sobre a fragilidade da autonomia em sistemas que confundem a obediência com o engajamento. A horta, com suas fileiras impecáveis, serve como uma metáfora cruel para uma comunidade onde a liberdade de escolha é apenas uma ilusão de ótica, mantida pela necessidade de sobrevivência social.\n\nEntretanto, a perpetuação desse modelo de vigilância sutil começou a gerar um efeito colateral imprevisto que ameaçava a própria estabilidade da instituição: a erosão da confiança institucional. À medida que a fachada de virtude se desgastava, os alunos, outrora meros executores de tarefas, passaram a desenvolver uma consciência crítica aguçada, percebendo que a horta não era um fim em si mesma, mas um instrumento de controle disciplinar. Esse despertar coletivo não se manifestou através de protestos ruidosos, mas sim por meio de um distanciamento emocional profundo, onde a excelência acadêmica passou a ser dissociada da identidade do colégio. A ironia residia no fato de que, ao forçar a conformidade, Helena Antunes inadvertidamente cultivou uma geração de estudantes mestres na simulação, capazes de reproduzir os comportamentos esperados com precisão técnica enquanto nutriam um desprezo crescente pela autoridade. A horta, embora impecável em sua estética, tornou-se um terreno de alienação, onde o solo, rico em nutrientes, contrastava com a esterilidade do debate intelectual. A longo prazo, a estratégia de coerção revelou-se contraproducente; o prestígio da escola, antes alicerçado na integridade, começou a sofrer com o esvaziamento do sentido de comunidade que ela mesma alegava proteger. O resultado foi a formação de um ambiente de trabalho e estudo onde a lealdade era puramente transacional, desprovida de qualquer compromisso real com os valores apregoados. Assim, a busca pela homogeneidade social, ao sufocar a divergência, acabou por destruir a própria vitalidade que a diversidade de pensamento poderia ter proporcionado, deixando o Horizonte como uma estrutura oca, onde o sucesso é medido apenas pela ausência de conflitos abertos.",
+    "wordCount": 911,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "bastião",
+        "lemma": "bastião",
+        "glosses": {
+          "es": "a stronghold or defender of a principle",
+          "en": "a stronghold or defender of a principle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tácito",
+        "lemma": "tácito",
+        "glosses": {
+          "es": "implied or understood without being stated",
+          "en": "implied or understood without being stated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "égide",
+        "lemma": "égide",
+        "glosses": {
+          "es": "under the protection or sponsorship of",
+          "en": "under the protection or sponsorship of"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ostracismo",
+        "lemma": "ostracismo",
+        "glosses": {
+          "es": "exclusion from a society or group",
+          "en": "exclusion from a society or group"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissidência",
+        "lemma": "dissidência",
+        "glosses": {
+          "es": "disagreement with an established system",
+          "en": "disagreement with an established system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vernáculo",
+        "lemma": "vernáculo",
+        "glosses": {
+          "es": "the language or jargon used by a specific group",
+          "en": "the language or jargon used by a specific group"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.8,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto sobre a horta do Colégio Horizonte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A contradição entre voluntariado e coerção social."
+        },
+        {
+          "id": "a2",
+          "text": "A importância do ensino da agricultura."
+        },
+        {
+          "id": "a3",
+          "text": "A gestão financeira de projetos escolares sustentáveis."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A tensão entre o discurso da autonomia e a realidade da coerção sistêmica tornou-se o eixo central da vida escolar.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que acontecia com as famílias que não podiam participar das atividades aos sábados?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Recebiam multas pesadas."
+        },
+        {
+          "id": "a2",
+          "text": "Eram marginalizadas."
+        },
+        {
+          "id": "a3",
+          "text": "Eram convidadas a sair."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Famílias que não podiam comparecer aos sábados devido a compromissos laborais ou religiosos foram gradualmente marginalizadas das decisões do conselho escolar.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que a diretora Helena insistia que a participação era voluntária?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para evitar processos judiciais por trabalho forçado."
+        },
+        {
+          "id": "a2",
+          "text": "Porque ela acreditava que o voluntariado real era o único caminho."
+        },
+        {
+          "id": "a3",
+          "text": "Para manter a fachada de uma instituição democrática e virtuosa."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O discurso oficial, meticulosamente articulado, enfatizava a voluntariedade: ninguém seria punido por não participar, e o engajamento deveria emanar de um senso genuíno de pertencimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao descrever a horta como um 'monumento ao autoritarismo burocrático'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticar a gestão autoritária."
+        },
+        {
+          "id": "a2",
+          "text": "Destacar a beleza da horta."
+        },
+        {
+          "id": "a3",
+          "text": "Elogiar o sucesso pedagógico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A horta, outrora um símbolo de crescimento, transformou-se em um monumento ao autoritarismo burocrático, onde a terra cultivada era o único elemento que prosperava, enquanto o tecido social da escola se desintegrava.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no texto em relação às ações da administração escolar?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutro e informativo."
+        },
+        {
+          "id": "a2",
+          "text": "Crítico e irônico."
+        },
+        {
+          "id": "a3",
+          "text": "Admirado e esperançoso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A diretora Helena, ao ser confrontada, manteve sua posição de que a adesão era um critério de excelência, não uma imposição, ignorando a assimetria de poder que tornava a recusa uma sentença de ostracismo acadêmico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'tácito'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Formalmente escrito."
+        },
+        {
+          "id": "a2",
+          "text": "Rejeitado pela maioria."
+        },
+        {
+          "id": "a3",
+          "text": "Implícito ou subentendido."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "O sistema de 'créditos de cidadania', embora nominalmente opcional, passou a ser um critério tácito para a concessão de bolsas de mérito e recomendações acadêmicas",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a criação de incentivos, mesmo que indiretos, anula a natureza voluntária de uma atividade comunitária, utilizando exemplos hipotéticos de sua escolha.",
+      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a criação de incentivos, mesmo que indiretos, anula a natureza voluntária de uma atividade comunitária, utilizando exemplos hipotéticos de sua escolha."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Examinar a tensão entre a liberdade de escolha e a conformidade social em ambientes educacionais, utilizando o caso da Horta Comunitária do Colégio Horizonte.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Cultivo da Coerção: A Horta Comunitária do Colégio Horizonte | C2 Reading | WeLearn",
+      "en": "O Cultivo da Coerção: A Horta Comunitária do Colégio Horizonte | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a dinâmica de participação voluntária e as pressões sociais implícitas na gestão de projetos escolares.",
+      "en": "Uma análise crítica sobre a dinâmica de participação voluntária e as pressões sociais implícitas na gestão de projetos escolares."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

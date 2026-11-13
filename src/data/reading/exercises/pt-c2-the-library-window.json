@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-library-window",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Silêncio dos Arquivistas",
+      "en": "O Silêncio dos Arquivistas"
+    },
+    "intro": {
+      "es": "Um conto reflexivo sobre a dissonância entre a promessa de acesso público e a invisibilidade do trabalho humano.",
+      "en": "Um conto reflexivo sobre a dissonância entre a promessa de acesso público e a invisibilidade do trabalho humano."
+    },
+    "mission": {
+      "es": "Analisar a tensão ética entre a disponibilidade institucional e a exploração laboral oculta.",
+      "en": "Analisar a tensão ética entre a disponibilidade institucional e a exploração laboral oculta."
+    },
+    "targetText": "A Biblioteca Municipal de Vila Serena ostentava, em letras douradas sobre o granito da fachada, o lema 'Sempre Aberta ao Conhecimento'. Para o diretor, Dr. Arnaldo, essa frase não era apenas uma estratégia de marketing, mas a espinha dorsal de uma política pública que ele defendia com fervor em conselhos municipais. No entanto, para Helena, a arquivista-chefe, o lema soava como uma promessa vazia, um espectro que pairava sobre os corredores mal iluminados após o expediente. Enquanto os leitores desfrutavam do conforto do ar-condicionado e da luz difusa das luminárias de leitura, Helena percorria as estantes do subsolo, onde a umidade teimava em corroer o papel dos periódicos antigos, carregando pilhas de livros que pareciam pesar mais a cada ano. A instituição vendia a ideia de uma disponibilidade onisciente, uma porta que nunca se fechava, ignorando deliberadamente que cada hora de acesso público exigia o sacrifício de horas de manutenção invisível, um ciclo de exaustão que raramente encontrava eco nas atas das reuniões administrativas.\n\nNaquela terça-feira, o conflito tornou-se tangível. O conselho decidira, sem consultar a equipe técnica, estender o horário de funcionamento até a meia-noite para atender aos estudantes universitários que pleiteavam um espaço de estudo noturno. Arnaldo anunciou a medida com um sorriso triunfante, ignorando o olhar gélido de Helena. Ele falava de democratização, de inclusão e de servir à comunidade, enquanto Helena calculava o custo humano daquela decisão. Não havia orçamento para contratar pessoal extra; a carga horária recairia sobre os mesmos ombros que já suportavam o peso da catalogação e da restauração. A biblioteca, em sua ânsia de ser um farol de luz ininterrupta, estava, na verdade, cegando aqueles que mantinham a chama acesa. Helena via os estagiários, jovens entusiasmados, perderem o brilho nos olhos ao serem designados para turnos que se estendiam madrugada adentro, desprovidos de qualquer reconhecimento ou remuneração adequada pela jornada estendida.\n\nO ápice da tensão ocorreu durante a inauguração do novo horário. O saguão estava lotado, e o burburinho dos estudantes ecoava pelas galerias, um som que, para Arnaldo, era música, mas para Helena, era o ruído de uma engrenagem sendo forçada além do limite. Enquanto o diretor discursava sobre a generosidade da instituição, Helena encontrou um volume raro de poesias, esquecido sobre uma mesa no setor de referência, com as bordas manchadas por café. Aquele livro, um testemunho da negligência que a pressa pelo acesso indiscriminado trazia, era a prova material de que a disponibilidade sem cuidado é, em última análise, um ato de destruição. Ela não o recolheu imediatamente; deixou-o ali, como uma cicatriz exposta, um convite silencioso para que alguém notasse a fragilidade do que estava sendo oferecido. A biblioteca era um organismo vivo que, ao tentar alimentar a todos simultaneamente, começava a devorar suas próprias entranhas.\n\nAo final da noite, enquanto os últimos estudantes se retiravam, deixando para trás o rastro habitual de papéis e copos descartáveis, Helena permaneceu sozinha no saguão. Arnaldo aproximou-se, ainda radiante, perguntando se ela não se sentia orgulhosa de ver o espaço finalmente cumprindo seu propósito social. Helena olhou para as luzes que ainda iluminavam as estantes, sentindo o peso de uma exaustão que ia além do físico. Ela percebeu que o problema não era o horário, nem os estudantes, nem mesmo a ambição de Arnaldo. O problema era a narrativa de que o conhecimento é um bem gratuito, um fluxo que brota espontaneamente da arquitetura institucional, sem que haja uma mão que o regue ou um corpo que o sustente. A promessa de 'Sempre Aberta' era uma mentira necessária para a manutenção do mito, uma fachada que ocultava o custo real da cultura.\n\nHelena fechou a porta principal, sentindo o clique da tranca como uma sentença. Ela não respondeu a Arnaldo. Em vez disso, caminhou até o subsolo, onde o ar era denso e o silêncio, absoluto. Ali, entre as estantes que mal suportavam o peso do tempo, ela entendeu que a sua resistência não seria um grito, mas uma ausência. Se a instituição insistia em ignorar o trabalho que a tornava possível, ela deixaria que a própria estrutura começasse a falhar, não por sabotagem, mas por exaustão natural. A biblioteca continuaria aberta, mas o conhecimento, esse, começaria a se tornar inacessível, não por falta de vontade, mas por falta de cuidado. O lema na fachada permaneceria, mas seria, cada vez mais, apenas um eco de uma verdade que ninguém mais estava disposto a sustentar.\n\nA consequência dessa inércia deliberada manifestou-se semanas depois, quando o acervo, outrora o orgulho de Vila Serena, começou a revelar sinais de uma degradação irreversível. Com a ausência do zelo meticuloso de Helena, a umidade do subsolo avançou sobre os manuscritos, enquanto a desorganização nas estantes superiores transformou o catálogo em um labirinto indecifrável para os próprios usuários. Arnaldo, inicialmente cego pela euforia das estatísticas de frequência, viu-se subitamente confrontado por uma realidade irônica: a biblioteca estava, de fato, aberta, mas o conhecimento que ela deveria preservar tornara-se um espectro inalcançável. Os estudantes, frustrados pela crescente dificuldade em localizar obras íntegras, começaram a buscar alternativas digitais, abandonando o espaço que o diretor tanto se esforçara para manter disponível. A fachada, com suas letras douradas reluzindo sob o sol da tarde, tornou-se um monumento à hipocrisia administrativa. O lema 'Sempre Aberta ao Conhecimento' passou a soar como uma ironia cruel, pois, ao ignorar a necessidade de manutenção humana, a instituição não apenas exauriu seus guardiões, mas também permitiu que o próprio saber se perdesse no esquecimento, provando que a disponibilidade sem preservação é apenas a antecâmara do vazio.",
+    "wordCount": 920,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "estratégia",
+        "lemma": "estratégia",
+        "glosses": {
+          "es": "a plan or policy designed to achieve a major or overall aim",
+          "en": "a plan or policy designed to achieve a major or overall aim"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "onisciente",
+        "lemma": "onisciente",
+        "glosses": {
+          "es": "knowing everything",
+          "en": "knowing everything"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pleiteavam",
+        "lemma": "pleiteavam",
+        "glosses": {
+          "es": "requested or demanded something formally",
+          "en": "requested or demanded something formally"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inauguração",
+        "lemma": "inauguração",
+        "glosses": {
+          "es": "the formal opening of an institution or event",
+          "en": "the formal opening of an institution or event"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "negligência",
+        "lemma": "negligência",
+        "glosses": {
+          "es": "failure to take proper care in doing something",
+          "en": "failure to take proper care in doing something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sabotagem",
+        "lemma": "sabotagem",
+        "glosses": {
+          "es": "deliberately destroying or damaging something",
+          "en": "deliberately destroying or damaging something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.2,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central que permeia a narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A tensão entre a disponibilidade pública e o custo humano."
+        },
+        {
+          "id": "a2",
+          "text": "A falta de verbas para a reforma do prédio."
+        },
+        {
+          "id": "a3",
+          "text": "A disputa política entre o diretor e os estudantes universitários."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A instituição vendia a ideia de uma disponibilidade onisciente, uma porta que nunca se fechava, ignorando deliberadamente que cada hora de acesso público exigia o sacrifício de horas de manutenção invisível",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o horário da biblioteca foi estendido?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Para aumentar a receita."
+        },
+        {
+          "id": "a2",
+          "text": "Para atender estudantes."
+        },
+        {
+          "id": "a3",
+          "text": "Para realizar eventos culturais."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O conselho decidira, sem consultar a equipe técnica, estender o horário de funcionamento até a meia-noite para atender aos estudantes universitários que pleiteavam um espaço de estudo noturno.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o livro manchado de café representa para Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um erro administrativo."
+        },
+        {
+          "id": "a2",
+          "text": "Um sinal de desrespeito dos estudantes."
+        },
+        {
+          "id": "a3",
+          "text": "A prova da negligência institucional."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Aquele livro, um testemunho da negligência que a pressa pelo acesso indiscriminado trazia, era a prova material de que a disponibilidade sem cuidado é, em última análise, um ato de destruição.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do autor ao descrever a cena final no subsolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar a falha inevitável de um sistema sem cuidado."
+        },
+        {
+          "id": "a2",
+          "text": "Mostrar a exaustão física da protagonista."
+        },
+        {
+          "id": "a3",
+          "text": "Sugerir que a biblioteca será fechada definitivamente pelo conselho."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ali, entre as estantes que mal suportavam o peso do tempo, ela entendeu que a sua resistência não seria um grito, mas uma ausência.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante na reflexão de Helena sobre o lema da biblioteca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cínico e revoltado."
+        },
+        {
+          "id": "a2",
+          "text": "Melancólico e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Otimista e esperançoso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "para Helena, a arquivista-chefe, o lema soava como uma promessa vazia, um espectro que pairava sobre os corredores mal iluminados após o expediente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'onisciente'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Que é muito antigo."
+        },
+        {
+          "id": "a2",
+          "text": "Que é extremamente rigoroso."
+        },
+        {
+          "id": "a3",
+          "text": "Que tudo sabe."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A instituição vendia a ideia de uma disponibilidade onisciente, uma porta que nunca se fechava",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio crítico de 300 palavras discutindo se instituições públicas podem legitimamente promover serviços sem revelar os custos humanos subjacentes.",
+      "en": "Escreva um ensaio crítico de 300 palavras discutindo se instituições públicas podem legitimamente promover serviços sem revelar os custos humanos subjacentes."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar a tensão ética entre a disponibilidade institucional e a exploração laboral oculta.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Silêncio dos Arquivistas | C2 Reading | WeLearn",
+      "en": "O Silêncio dos Arquivistas | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Um conto reflexivo sobre a dissonância entre a promessa de acesso público e a invisibilidade do trabalho humano.",
+      "en": "Um conto reflexivo sobre a dissonância entre a promessa de acesso público e a invisibilidade do trabalho humano."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

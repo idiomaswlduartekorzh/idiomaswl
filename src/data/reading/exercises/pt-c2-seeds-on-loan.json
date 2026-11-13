@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Inventário das Raízes Silenciadas",
+      "en": "O Inventário das Raízes Silenciadas"
+    },
+    "intro": {
+      "es": "Uma narrativa sobre o conflito entre a burocracia institucional e a preservação da memória agrícola em uma pequena comunidade rural brasileira.",
+      "en": "Uma narrativa sobre o conflito entre a burocracia institucional e a preservação da memória agrícola em uma pequena comunidade rural brasileira."
+    },
+    "mission": {
+      "es": "Analisar a tensão entre a preservação cultural e a conformidade legal em contextos de conservação de sementes.",
+      "en": "Analisar a tensão entre a preservação cultural e a conformidade legal em contextos de conservação de sementes."
+    },
+    "targetText": "O sol declinava sobre a Cooperativa de Sementes Crioulas de Vale Verde, tingindo de âmbar os potes de vidro que alinhavam as prateleiras. Dona Alzira, a guardiã octogenária daquele acervo, observava com apreensão a chegada de Dr. Heitor, um auditor enviado pela recém-criada Agência Nacional de Biodiversidade. Ele portava uma pasta de couro impecável, destoando da rusticidade das vigas de madeira e do cheiro de terra úmida que impregnava o recinto. A missão de Heitor era clara: catalogar e certificar o estoque para que a cooperativa pudesse manter seu registro oficial. Contudo, para Alzira, cada semente ali continha uma linhagem que não se resumia a números de lote ou procedência geográfica documentada. Ela trazia consigo o legado de gerações, sementes que atravessaram secas e migrações, mantidas vivas pela memória oral de famílias que, há décadas, trocavam mudas e saberes sem nunca sentir a necessidade de um selo de autenticidade.\n\nA tensão se instalou quando Heitor solicitou os certificados de origem da linhagem de feijão 'Preto-do-Sertão'. Alzira explicou, com a paciência de quem ensina a um aprendiz, que aquele feijão fora trazido por seu bisavô em um alforje de couro, atravessando montanhas quando a região ainda era um vazio cartográfico. Para o auditor, a história era um relato pitoresco, mas juridicamente inócuo. Ele insistia que, sem a documentação de rastreabilidade exigida pela nova legislação, o material deveria ser considerado 'não qualificado' e, portanto, excluído do inventário oficial da cooperativa. A exigência de Heitor não era apenas um entrave técnico; era uma tentativa de traduzir a cultura imaterial para uma linguagem de conformidade técnica que, por definição, não possuía tradução possível. O silêncio na sala tornou-se denso, interrompido apenas pelo tique-taque do relógio de parede e pelo farfalhar das folhas de papel que Heitor manuseava com rigor mecânico.\n\nAlzira, percebendo que a burocracia não cederia à lógica da ancestralidade, tentou uma última cartada. Ela argumentou que a biodiversidade local era, em si, o resultado da ausência de controle industrial, e que a imposição de registros formais sobre práticas comunitárias acabaria por extinguir a diversidade que o Estado pretendia, ironicamente, proteger. Heitor, embora reconhecesse a importância cultural do acervo, mantinha-se irredutível quanto ao seu mandato. Ele argumentava que a ausência de registros impedia a proteção legal contra a biopirataria e a contaminação por sementes transgênicas, um risco que a cooperativa, em sua ingenuidade, subestimava. A discussão revelava um abismo epistemológico: de um lado, a proteção pela posse documental; do outro, a preservação pelo uso contínuo e pela transmissão oral. A tensão não era apenas sobre sementes, mas sobre quem detinha a autoridade de definir o que constitui um patrimônio legítimo.\n\nÀ medida que a noite caía, o impasse se consolidou. Heitor, finalizando suas anotações, informou que, na ausência dos documentos, os lotes não certificados seriam lacrados e retirados da circulação pública até que uma perícia técnica pudesse ser realizada. Alzira sentiu um frio na espinha ao compreender que o lacre significaria a morte daquelas sementes; sem o plantio e a troca, elas perderiam sua vitalidade e sua história. A burocracia, agindo sob o pretexto de salvaguardar o futuro, condenava o passado ao esquecimento. Ela percebeu que o sistema não buscava entender a lógica da comunidade, mas sim assimilá-la ou extingui-la. A resistência de Alzira, antes focada na preservação, transformou-se em uma desobediência silenciosa. Ela sabia que, se entregasse as sementes, elas se tornariam peças de museu, estéreis e desprovidas de seu propósito original.\n\nAo sair, Heitor deixou o ambiente com a promessa de retornar em breve para a coleta dos materiais. Alzira, sozinha na penumbra, começou a retirar os potes das prateleiras, não para escondê-los, mas para distribuí-los entre os agricultores da região antes que o lacre fosse imposto. A cooperativa, como estrutura física e oficial, estava condenada, mas a rede de trocas informais, forjada na oralidade, provou ser mais resiliente que qualquer decreto. O desfecho daquele dia marcou o fim da cooperativa como entidade reconhecida pelo Estado, mas, paradoxalmente, foi o momento em que a semente da resistência se espalhou pelo Vale Verde, garantindo que o patrimônio, embora agora clandestino, permanecesse vivo nas mãos de quem realmente o cultivava.\n\nEntretanto, a dispersão estratégica das sementes trouxe consequências imprevistas que transcendiam a mera sobrevivência biológica dos grãos. Ao serem redistribuídas entre pequenas propriedades rurais, as linhagens ancestrais passaram a ser cultivadas em microclimas variados, o que, ironicamente, conferiu às plantas uma adaptabilidade genética superior à que teriam se estivessem confinadas em um único banco de germoplasma institucional. Essa descentralização forçada rompeu a dependência da cooperativa como único elo de preservação, transformando cada agricultor em um guardião autônomo e vigilante. O Estado, ao tentar catalogar a biodiversidade para protegê-la, acabou por catalisar um movimento de descentralização que tornou a fiscalização praticamente impossível. A burocracia de Heitor, focada em rastreabilidade e controle, encontrou um labirinto de cultivos dispersos cujas origens eram agora impossíveis de serem mapeadas com precisão técnica. Enquanto os gabinetes da agência se perdiam em relatórios de conformidade sobre um acervo que já não existia mais no local original, a rede de troca informal florescia com vigor renovado. A tentativa de institucionalizar o patrimônio gerou, por reação, uma forma de resistência molecular, onde a própria existência das sementes tornou-se um ato político difuso. O conhecimento sobre o manejo, antes restrito aos arquivos da cooperativa, agora circulava livremente, fortalecendo a autonomia comunitária frente às pressões externas. Assim, a busca por uma segurança jurídica rígida resultou na democratização de um saber que, longe de ser extinto, encontrou nos quintais alheios o solo fértil para uma perenidade que nenhum selo oficial seria capaz de assegurar.",
+    "wordCount": 929,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "octogenária",
+        "lemma": "octogenária",
+        "glosses": {
+          "es": "A person who is between 80 and 89 years old.",
+          "en": "A person who is between 80 and 89 years old."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inócuo",
+        "lemma": "inócuo",
+        "glosses": {
+          "es": "Harmless or having no effect.",
+          "en": "Harmless or having no effect."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abismo epistemológico",
+        "lemma": "abismo epistemológico",
+        "glosses": {
+          "es": "A deep divide in ways of knowing or understanding truth.",
+          "en": "A deep divide in ways of knowing or understanding truth."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "biopirataria",
+        "lemma": "biopirataria",
+        "glosses": {
+          "es": "The unauthorized appropriation of biological resources.",
+          "en": "The unauthorized appropriation of biological resources."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "estéreis",
+        "lemma": "estéreis",
+        "glosses": {
+          "es": "Unable to produce offspring or growth.",
+          "en": "Unable to produce offspring or growth."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "clandestino",
+        "lemma": "clandestino",
+        "glosses": {
+          "es": "Kept secret or done secretively, often because it is illicit.",
+          "en": "Kept secret or done secretively, often because it is illicit."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.8,
+      "maxSentenceWords": 46,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central da narrativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "O choque entre a burocracia estatal e a tradição oral comunitária."
+        },
+        {
+          "id": "a2",
+          "text": "A dificuldade de Alzira em aceitar novas tecnologias agrícolas."
+        },
+        {
+          "id": "a3",
+          "text": "A competição comercial entre a cooperativa e empresas de biotecnologia."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A discussão revelava um abismo epistemológico: de um lado, a proteção pela posse documental; do outro, a preservação pelo uso contínuo e pela transmissão oral.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o auditor Heitor deseja lacrar as sementes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque elas estão contaminadas."
+        },
+        {
+          "id": "a2",
+          "text": "Porque não possuem certificação."
+        },
+        {
+          "id": "a3",
+          "text": "Porque a cooperativa faliu."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ele insistia que, sem a documentação de rastreabilidade exigida pela nova legislação, o material deveria ser considerado 'não qualificado' e, portanto, excluído do inventário oficial da cooperativa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que a ação final de Alzira sugere sobre sua visão da lei?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ela pretende colaborar com o Estado após distribuir as sementes aos vizinhos."
+        },
+        {
+          "id": "a2",
+          "text": "Ela espera que a distribuição das sementes force o governo a mudar as regras."
+        },
+        {
+          "id": "a3",
+          "text": "Ela acredita que a lei é injusta e deve ser ignorada para salvar o patrimônio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A resistência de Alzira, antes focada na preservação, transformou-se em uma desobediência silenciosa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o propósito do autor ao descrever a cena como um 'abismo epistemológico'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Destacar que as partes envolvidas possuem visões de mundo inconciliáveis."
+        },
+        {
+          "id": "a2",
+          "text": "Enfatizar a falta de preparo técnico da personagem Alzira."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar a falta de infraestrutura tecnológica disponível na cooperativa rural."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A discussão revelava um abismo epistemológico: de um lado, a proteção pela posse documental; do outro, a preservação pelo uso contínuo e pela transmissão oral.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como se pode descrever o tom do autor em relação à burocracia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutro e informativo."
+        },
+        {
+          "id": "a2",
+          "text": "Cético e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta e otimista."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A burocracia, agindo sob o pretexto de salvaguardar o futuro, condenava o passado ao esquecimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'inócuo'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Algo que é extremamente perigoso."
+        },
+        {
+          "id": "a2",
+          "text": "Algo que é muito antigo e valioso."
+        },
+        {
+          "id": "a3",
+          "text": "Algo que não possui valor ou efeito real."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Para o auditor, a história era um relato pitoresco, mas juridicamente inócuo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a formalização estatal de saberes tradicionais ajuda ou prejudica a preservação da biodiversidade, utilizando exemplos da narrativa para fundamentar seu ponto de vista.",
+      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a formalização estatal de saberes tradicionais ajuda ou prejudica a preservação da biodiversidade, utilizando exemplos da narrativa para fundamentar seu ponto de vista."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar a tensão entre a preservação cultural e a conformidade legal em contextos de conservação de sementes.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Inventário das Raízes Silenciadas | C2 Reading | WeLearn",
+      "en": "O Inventário das Raízes Silenciadas | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma narrativa sobre o conflito entre a burocracia institucional e a preservação da memória agrícola em uma pequena comunidade rural brasileira.",
+      "en": "Uma narrativa sobre o conflito entre a burocracia institucional e a preservação da memória agrícola em uma pequena comunidade rural brasileira."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

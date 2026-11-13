@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-local-stage",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "O Efeito de Palco: Quando a Metrificação Substitui a Catarse",
+      "en": "O Efeito de Palco: Quando a Metrificação Substitui a Catarse"
+    },
+    "intro": {
+      "es": "Uma análise crítica sobre a mercantilização do teatro comunitário e o dilema entre a relevância cultural e os indicadores de desempenho.",
+      "en": "Uma análise crítica sobre a mercantilização do teatro comunitário e o dilema entre a relevância cultural e os indicadores de desempenho."
+    },
+    "mission": {
+      "es": "Examinar as tensões entre a gestão orientada por dados e a integridade artística no contexto de uma companhia teatral local.",
+      "en": "Examinar as tensões entre a gestão orientada por dados e a integridade artística no contexto de uma companhia teatral local."
+    },
+    "targetText": "O Teatro da Vila, uma instituição que durante décadas serviu como o epicentro cultural do bairro de Santa Cecília, encontra-se hoje em uma encruzilhada existencial. Sob a nova direção de Sílvia Mendes, a companhia abandonou sua tradição de peças experimentais de pequeno porte para adotar um modelo de gestão focado quase exclusivamente em indicadores de desempenho. O argumento de Mendes é pragmático: em um cenário onde o financiamento depende de métricas de visibilidade, o sucesso não pode mais ser medido pela profundidade do impacto artístico, mas sim pelo volume de ingressos vendidos e pelo alcance nas redes sociais. Essa guinada, contudo, gerou um cisma profundo entre a diretoria e os membros fundadores, liderados pelo dramaturgo veterano Heitor Viana, que vê na obsessão pelos números a erosão da própria alma do teatro comunitário.\n\nNa última terça-feira, a tensão atingiu seu ápice durante a estreia da adaptação de 'O Crepúsculo das Sombras'. A peça, desenhada por Mendes para atrair um público jovem através de efeitos visuais dispendiosos e uma campanha agressiva de marketing digital, alcançou a lotação máxima da sala. Contudo, ao final da apresentação, o silêncio que se seguiu não foi o de uma catarse coletiva, mas de uma desconexão evidente. Enquanto a equipe de marketing celebrava o recorde de bilheteria como um triunfo absoluto de gestão, Viana observava o esvaziamento rápido do foyer, notando que a maioria dos espectadores, embora numerosa, não demonstrou qualquer desejo de interagir com o elenco ou discutir os temas da obra. Para Mendes, a lotação era o fim em si mesmo; para Viana, era apenas uma casca vazia que mascarava a irrelevância do conteúdo.\n\nO cerne do conflito reside na definição de 'valor'. Mendes sustenta que a sobrevivência da instituição é o bem maior, e que a sustentabilidade financeira, alcançada através do crescimento constante da audiência, é a única garantia de que o teatro continuará existindo. Ela argumenta que o elitismo artístico, ao ignorar as preferências do público de massa, é o verdadeiro responsável pelo isolamento cultural. Viana, por outro lado, contesta essa visão, argumentando que ao transformar o teatro em um produto de consumo rápido, a companhia perde seu papel de provocadora social. Para ele, o teatro comunitário não deve servir para confirmar o que o público já consome, mas para desafiá-lo, mesmo que isso signifique, temporariamente, salas menos cheias e uma audiência mais restrita, porém engajada.\n\nO desfecho dessa noite foi melancólico. Após o espetáculo, uma reunião de emergência foi convocada para discutir os próximos passos da temporada. Mendes apresentou gráficos coloridos que projetavam um aumento de trinta por cento na receita para o próximo trimestre, prevendo que a fórmula de 'O Crepúsculo das Sombras' seria o padrão para as produções futuras. Viana, em um gesto de protesto silencioso, entregou sua carta de renúncia, alegando que não poderia ser cúmplice da transformação de um espaço de pensamento crítico em um mero centro de entretenimento de massa. A saída de Viana não provocou uma mudança de rota na diretoria; pelo contrário, foi interpretada por Mendes como uma necessária modernização da equipe, um corte de laços com um passado que, segundo ela, impedia o crescimento.\n\nO Teatro da Vila continua a crescer em números, mas a comunidade que o fundou parece cada vez mais distante. A questão que permanece não é apenas sobre o futuro daquela companhia específica, mas sobre o destino de todas as instituições que, ao buscarem a validação através da métrica, acabam por esvaziar o sentido de sua própria existência. Quando o sucesso é medido apenas pelo crescimento, a arte deixa de ser um diálogo para se tornar um monólogo de estatísticas. A sala está cheia, as luzes brilham, os ingressos se esgotam, mas, nas poltronas, o silêncio é a prova de que algo fundamental foi perdido no processo de otimização.\n\nEntretanto, a ironia dessa trajetória reside na natureza efêmera da fidelidade baseada apenas no espetáculo. Ao priorizar a gratificação instantânea e o consumo passivo, o Teatro da Vila inadvertidamente pavimentou o caminho para sua própria obsolescência a longo prazo. O público atraído por campanhas de marketing agressivas e efeitos visuais é, por definição, volátil; ele migra para a próxima tendência com a mesma rapidez com que esgotou os ingressos daquela temporada, desprovido de qualquer vínculo afetivo ou intelectual com a instituição. Enquanto Mendes celebra a curva ascendente das métricas, ela ignora que a ausência de um núcleo crítico de espectadores fiéis — aqueles que Viana cultivou por décadas — retira do teatro sua rede de segurança e sua relevância social em momentos de crise. Sem o lastro da tradição e a profundidade de um repertório que desafia, o teatro torna-se um produto genérico, facilmente substituível por qualquer outra forma de entretenimento digital que ofereça estímulos similares com menor custo. A busca pela sobrevivência através da massificação, portanto, revela-se um paradoxo fatal: ao tentar garantir a longevidade através de indicadores, a gestão sacrificou a identidade que tornava o espaço insubstituível. Quando a novidade da fórmula se desgastar e os algoritmos direcionarem o público para novos horizontes, a instituição perceberá, tarde demais, que o sucesso quantitativo não cria legados. O vazio deixado pela partida de Viana não era apenas uma lacuna artística, mas o anúncio da desintegração de uma comunidade que, uma vez despojada de seu propósito, restará apenas como um prédio iluminado, desprovido da alma que, outrora, transformava o simples ato de assistir a uma peça em um evento transformador e inesquecível para a vida daquela vizinhança.",
+    "wordCount": 905,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cisma",
+        "lemma": "cisma",
+        "glosses": {
+          "es": "A division or split, especially within a group or organization.",
+          "en": "A division or split, especially within a group or organization."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "catarse",
+        "lemma": "catarse",
+        "glosses": {
+          "es": "The process of releasing, and thereby providing relief from, strong or repressed emotions.",
+          "en": "The process of releasing, and thereby providing relief from, strong or repressed emotions."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "foyer",
+        "lemma": "foyer",
+        "glosses": {
+          "es": "An entrance hall or open area in a public building like a theater.",
+          "en": "An entrance hall or open area in a public building like a theater."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cúmplice",
+        "lemma": "cúmplice",
+        "glosses": {
+          "es": "A person who helps another commit a crime or do something wrong.",
+          "en": "A person who helps another commit a crime or do something wrong."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "otimização",
+        "lemma": "otimização",
+        "glosses": {
+          "es": "The action of making the best or most effective use of a situation or resource.",
+          "en": "The action of making the best or most effective use of a situation or resource."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmático",
+        "lemma": "pragmático",
+        "glosses": {
+          "es": "Dealing with things sensibly and realistically in a way that is based on practical considerations.",
+          "en": "Dealing with things sensibly and realistically in a way that is based on practical considerations."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.2,
+      "maxSentenceWords": 59,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o conflito central apresentado no texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A divergência sobre a finalidade do teatro comunitário."
+        },
+        {
+          "id": "a2",
+          "text": "A disputa financeira entre o governo e o teatro."
+        },
+        {
+          "id": "a3",
+          "text": "A dificuldade de encontrar atores para peças modernas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Essa guinada, contudo, gerou um cisma profundo entre a diretoria e os membros fundadores, liderados pelo dramaturgo veterano Heitor Viana, que vê na obsessão pelos números a erosão da própria alma do teatro comunitário.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Como a diretora Sílvia Mendes reagiu à saída de Heitor Viana?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Como uma perda irreparável."
+        },
+        {
+          "id": "a2",
+          "text": "Como uma modernização."
+        },
+        {
+          "id": "a3",
+          "text": "Como uma falha na gestão."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A saída de Viana não provocou uma mudança de rota na diretoria; pelo contrário, foi interpretada por Mendes como uma necessária modernização da equipe",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que o silêncio no foyer após a peça é considerado relevante?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Reflete o respeito pela obra apresentada."
+        },
+        {
+          "id": "a2",
+          "text": "Demonstra a timidez dos jovens espectadores."
+        },
+        {
+          "id": "a3",
+          "text": "Indica a falta de engajamento do público."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Viana observava o esvaziamento rápido do foyer, notando que a maioria dos espectadores, embora numerosa, não demonstrou qualquer desejo de interagir com o elenco ou discutir os temas da obra.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual é a intenção do autor ao descrever os gráficos de Mendes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ilustrar o foco em métricas frias."
+        },
+        {
+          "id": "a2",
+          "text": "Mostrar a eficiência da gestão."
+        },
+        {
+          "id": "a3",
+          "text": "Provar o sucesso financeiro do teatro."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Mendes apresentou gráficos coloridos que projetavam um aumento de trinta por cento na receita para o próximo trimestre, prevendo que a fórmula de 'O Crepúsculo das Sombras' seria o padrão para as produções futuras.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante no encerramento do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Otimista e esperançoso."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e melancólico."
+        },
+        {
+          "id": "a3",
+          "text": "Indiferente e técnico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A sala está cheia, as luzes brilham, os ingressos se esgotam, mas, nas poltronas, o silêncio é a prova de que algo fundamental foi perdido no processo de otimização.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'cisma'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Uma união."
+        },
+        {
+          "id": "a2",
+          "text": "Uma falência."
+        },
+        {
+          "id": "a3",
+          "text": "Uma divisão."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Essa guinada, contudo, gerou um cisma profundo entre a diretoria e os membros fundadores",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um ensaio de 300 palavras discutindo se a arte deve priorizar a democratização do acesso através de métricas de audiência ou manter a integridade artística, mesmo que isso limite o alcance público.",
+      "en": "Escreva um ensaio de 300 palavras discutindo se a arte deve priorizar a democratização do acesso através de métricas de audiência ou manter a integridade artística, mesmo que isso limite o alcance público."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Examinar as tensões entre a gestão orientada por dados e a integridade artística no contexto de uma companhia teatral local.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "O Efeito de Palco: Quando a Metrificação Substitui a Catarse | C2 Reading | WeLearn",
+      "en": "O Efeito de Palco: Quando a Metrificação Substitui a Catarse | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise crítica sobre a mercantilização do teatro comunitário e o dilema entre a relevância cultural e os indicadores de desempenho.",
+      "en": "Uma análise crítica sobre a mercantilização do teatro comunitário e o dilema entre a relevância cultural e os indicadores de desempenho."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}

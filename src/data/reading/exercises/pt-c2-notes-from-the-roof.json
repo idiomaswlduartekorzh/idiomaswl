@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-notes-from-the-roof",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Geometria do Telhado: Conflito no Condomínio Solar",
+      "en": "A Geometria do Telhado: Conflito no Condomínio Solar"
+    },
+    "intro": {
+      "es": "Uma análise sobre a tensão entre a longevidade patrimonial e a conveniência imediata em uma assembleia de condomínio.",
+      "en": "Uma análise sobre a tensão entre a longevidade patrimonial e a conveniência imediata em uma assembleia de condomínio."
+    },
+    "mission": {
+      "es": "Analise o e-mail abaixo e identifique como a neutralidade aparente de uma votação oculta assimetrias de risco entre proprietários e inquilinos.",
+      "en": "Analise o e-mail abaixo e identifique como a neutralidade aparente de uma votação oculta assimetrias de risco entre proprietários e inquilinos."
+    },
+    "targetText": "Prezados membros do conselho e moradores do Edifício Horizonte, escrevo este comunicado na qualidade de síndico para formalizar os desdobramentos da última assembleia extraordinária. A pauta, como é de conhecimento geral, versou sobre a viabilidade técnica e financeira da instalação de um sistema de painéis fotovoltaicos no telhado do nosso edifício. O projeto, apresentado pela empresa SolarTech, promete uma redução imediata na conta de luz das áreas comuns, além de uma cota de energia excedente para as unidades autônomas. Contudo, a votação, embora tenha alcançado o quórum necessário para a aprovação, revelou um abismo de percepções entre aqueles que detêm a propriedade dos imóveis e os inquilinos que, temporariamente, chamam este edifício de lar. A neutralidade do voto, que em teoria deveria refletir um interesse comum, funcionou, na verdade, como um véu que ocultou horizontes de risco diametralmente opostos. Para o proprietário, a instalação é um investimento de capital que, a longo prazo, valoriza o ativo imobiliário e mitiga a obsolescência do edifício frente às novas exigências de sustentabilidade urbana. É uma visão de patrimônio que se projeta para além do ciclo de vida dos componentes eletrônicos. Por outro lado, para o inquilino, a questão não é a valorização do imóvel, mas a solvência do custo operacional durante o seu contrato de locação. O inquilino, ao votar favoravelmente, assume o ônus de uma taxa extra que, embora compensada pela economia na conta de luz, imobiliza seu fluxo de caixa imediato em um ativo que ele não levará consigo ao se mudar. O conflito emergiu quando a Sra. Helena, proprietária da unidade 402, defendeu que o custo da instalação deveria ser amortizado em dez anos, ignorando que o Sr. Lucas, locatário da unidade 201, possui um contrato com término previsto para o próximo semestre. O Sr. Lucas, com razão, questionou a equidade dessa divisão, argumentando que o benefício marginal da energia solar só se tornaria tangível após o período em que ele terá desocupado o imóvel. A proposta de Helena, ao ser aprovada pela maioria dos proprietários, impôs uma lógica de investimento de longo prazo sobre quem vive a urgência do curto prazo. O resultado dessa votação não foi um consenso, mas a cristalização de uma assimetria: os proprietários decidiram sobre o futuro do telhado, enquanto os locatários arcarão com os custos de uma transição energética cujos dividendos, em última análise, ficarão retidos nas paredes do edifício. A tensão é palpável. Notamos que, na última semana, três unidades de locação solicitaram rescisão antecipada, citando o aumento do condomínio como fator determinante. O síndico, portanto, encontra-se em uma posição precária: deve executar a obra aprovada democraticamente, ciente de que a democracia condominial, neste caso, serviu apenas para salvaguardar o valor venal do imóvel em detrimento da estabilidade dos contratos de aluguel. O telhado, que deveria ser um símbolo de eficiência coletiva, tornou-se o palco de uma disputa onde a neutralidade do voto mascarou a desigualdade das posições contratuais. Não há, até o momento, uma solução que apazigue os ânimos, pois o conflito não reside na tecnologia dos painéis, mas na divergência fundamental entre o tempo do proprietário e o tempo do inquilino. A obra terá início no próximo mês, mas o Edifício Horizonte enfrentará, nos próximos meses, uma rotatividade de moradores que poderá impactar a própria dinâmica social do condomínio. A neutralidade do voto, ao ignorar essa temporalidade, acabou por acelerar a desestabilização da nossa comunidade.\n\nDiante deste cenário, torna-se imperativo refletir sobre a fragilidade do tecido social que sustenta a convivência em nosso edifício, agora ameaçado por uma gestão que prioriza a infraestrutura em detrimento da harmonia entre seus ocupantes. A evasão registrada não é apenas um dado estatístico, mas um sintoma de um descompasso estrutural que ignora a natureza transitória da moradia moderna, transformando um projeto de modernização em um vetor de gentrificação interna. Se por um lado a eficiência energética é um imperativo ético inegável, a forma como o encargo financeiro foi diluído desconsidera a capacidade contributiva imediata de quem não detém o patrimônio, gerando uma exclusão econômica silenciosa. O custo de oportunidade para o inquilino, ao ser compelido a financiar uma melhoria que se traduzirá em valorização imobiliária para o locador, configura uma transferência de riqueza que o sistema condominial atual não possui mecanismos para compensar ou equilibrar. Consequentemente, o Edifício Horizonte corre o risco de se tornar um ambiente de rotatividade constante, onde o sentido de vizinhança é substituído pela frieza de transações contratuais de curto prazo, esvaziando a identidade coletiva que antes nos definia. A desestabilização mencionada não se limita à perda de receitas ou à vacância de unidades, mas alcança a própria essência da nossa convivência, pois a confiança, pilar de qualquer comunidade, foi abalada pela percepção de uma injustiça institucionalizada. Ao ignorar as vozes daqueles que, embora temporários, compõem a vida diária do condomínio, o conselho inadvertidamente criou um precedente onde a maioria numérica se sobrepõe à equidade distributiva. O desafio futuro, portanto, não será apenas a instalação física dos painéis, mas a reconstrução de um pacto de convivência que reconheça a pluralidade de interesses e a disparidade de horizontes temporais. Caso não busquemos um mecanismo de compensação ou uma revisão na política de cobrança para contratos vigentes, corremos o risco de transformar o nosso telhado em um monumento à eficiência energética, erguido sobre as ruínas da coesão social que, outrora, fazia deste edifício um verdadeiro lar para todos os seus habitantes.",
+    "wordCount": 898,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "desdobramentos",
+        "lemma": "desdobramentos",
+        "glosses": {
+          "es": "consequences or developments",
+          "en": "consequences or developments"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolescência",
+        "lemma": "obsolescência",
+        "glosses": {
+          "es": "the state of being outdated or no longer used",
+          "en": "the state of being outdated or no longer used"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "solvência",
+        "lemma": "solvência",
+        "glosses": {
+          "es": "the ability to pay one's debts",
+          "en": "the ability to pay one's debts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "equidade",
+        "lemma": "equidade",
+        "glosses": {
+          "es": "fairness or impartiality",
+          "en": "fairness or impartiality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristalização",
+        "lemma": "cristalização",
+        "glosses": {
+          "es": "the process of becoming fixed or definite",
+          "en": "the process of becoming fixed or definite"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "venal",
+        "lemma": "venal",
+        "glosses": {
+          "es": "related to the market value of an asset",
+          "en": "related to the market value of an asset"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.1,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:32:44.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado pelo síndico no e-mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A divergência de interesses entre donos e locatários na votação."
+        },
+        {
+          "id": "a2",
+          "text": "A dificuldade técnica da SolarTech."
+        },
+        {
+          "id": "a3",
+          "text": "A necessidade urgente de reforma no telhado do edifício."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "A neutralidade do voto, que em teoria deveria refletir um interesse comum, funcionou, na verdade, como um véu que ocultou horizontes de risco diametralmente opostos.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Por que o Sr. Lucas se opôs à proposta de Helena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ele não acredita na eficiência solar."
+        },
+        {
+          "id": "a2",
+          "text": "O benefício não compensaria seu curto contrato."
+        },
+        {
+          "id": "a3",
+          "text": "Ele prefere pagar contas de luz mais altas."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O Sr. Lucas, com razão, questionou a equidade dessa divisão, argumentando que o benefício marginal da energia solar só se tornaria tangível após o período em que ele terá desocupado o imóvel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "O que o texto sugere sobre o impacto da votação na comunidade?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Unificou os moradores em torno de um projeto sustentável."
+        },
+        {
+          "id": "a2",
+          "text": "Aumentou o valor de mercado de todos os apartamentos."
+        },
+        {
+          "id": "a3",
+          "text": "Gerou instabilidade devido à saída de inquilinos."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Notamos que, na última semana, três unidades de locação solicitaram rescisão antecipada, citando o aumento do condomínio como fator determinante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual o objetivo do síndico ao escrever este e-mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Informar sobre o início da obra e alertar sobre as tensões contratuais geradas."
+        },
+        {
+          "id": "a2",
+          "text": "Convocar uma nova assembleia para reverter a decisão anterior."
+        },
+        {
+          "id": "a3",
+          "text": "Defender a empresa SolarTech das críticas dos moradores."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O síndico, portanto, encontra-se em uma posição precária: deve executar a obra aprovada democraticamente, ciente de que a democracia condominial, neste caso, serviu apenas para salvaguardar o valor venal do imóvel em detrimento da estabilidade dos contratos de aluguel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Como pode ser caracterizado o tom do autor do e-mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e otimista."
+        },
+        {
+          "id": "a2",
+          "text": "Reflexivo e preocupado."
+        },
+        {
+          "id": "a3",
+          "text": "Hostil e agressivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "A neutralidade do voto, ao ignorar essa temporalidade, acabou por acelerar a desestabilização da nossa comunidade.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "O que o autor quer dizer com 'valor venal' no contexto do texto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Custo de manutenção."
+        },
+        {
+          "id": "a2",
+          "text": "Valor sentimental."
+        },
+        {
+          "id": "a3",
+          "text": "Preço de venda."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "a democracia condominial, neste caso, serviu apenas para salvaguardar o valor venal do imóvel em detrimento da estabilidade dos contratos de aluguel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo, de 150 a 200 palavras, defendendo ou refutando a ideia de que decisões de longo prazo em condomínios deveriam exigir quóruns diferenciados para inquilinos e proprietários.",
+      "en": "Escreva um parágrafo argumentativo, de 150 a 200 palavras, defendendo ou refutando a ideia de que decisões de longo prazo em condomínios deveriam exigir quóruns diferenciados para inquilinos e proprietários."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analise o e-mail abaixo e identifique como a neutralidade aparente de uma votação oculta assimetrias de risco entre proprietários e inquilinos.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:32:44.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Geometria do Telhado: Conflito no Condomínio Solar | C2 Reading | WeLearn",
+      "en": "A Geometria do Telhado: Conflito no Condomínio Solar | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Uma análise sobre a tensão entre a longevidade patrimonial e a conveniência imediata em uma assembleia de condomínio.",
+      "en": "Uma análise sobre a tensão entre a longevidade patrimonial e a conveniência imediata em uma assembleia de condomínio."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:32:44.188Z"
+  }
+}
