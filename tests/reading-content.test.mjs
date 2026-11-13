@@ -24,6 +24,21 @@ test('publication is blocked while requested human changes await final approval'
   assert.match(validateReadingExercise(published).join('\n'), /approved language and pedagogy decisions/)
 })
 
+test('advanced drafts do not claim reviews or copyright and culture checks that have not happened', () => {
+  assert.deepEqual(validateReadingExercise(advancedDraft), [])
+  assert.equal(advancedDraft.review.reviewedAt, null)
+  assert.equal(advancedDraft.leveling.independentAssessment.assessedAt, null)
+  assert.equal(advancedDraft.review.copyrightChecked, false)
+  assert.equal(advancedDraft.review.cultureChecked, false)
+
+  const published = structuredClone(advancedDraft)
+  published.status = 'published'
+  published.seo.indexable = true
+  const errors = validateReadingExercise(published).join('\n')
+  assert.match(errors, /copyright and culture checks/)
+  assert.match(errors, /actual review and assessment dates/)
+})
+
 test('publication still requires identified human reviewers after approval', () => {
   const published = structuredClone(advancedDraft)
   published.status = 'published'

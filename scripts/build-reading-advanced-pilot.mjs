@@ -57,7 +57,7 @@ function build(item) {
       targetCanDo: uiText(item.displayCopy.canDo), allowedGrammar: [({ B2: 'argument and concession', C1: 'implications and writer stance', C2: 'rhetorical nuance and controlled ambiguity' })[level]], disallowedGrammar: [], maxOutOfLevelVocabularyPercent: 12,
       inferenceBand: levels[level].band,
       metrics: { averageSentenceWords: Number((wordCount / Math.max(sentenceLengths.length, 1)).toFixed(1)), maxSentenceWords: Math.max(...sentenceLengths), outOfLevelVocabularyPercent: 0, glossedOutOfLevelItems: 0 },
-      independentAssessment: { estimatedLevel: level, passed: false, assessor: 'Pending independent assessment', assessedAt: date, notes: 'Draft; difficulty and naturalness require human review.' },
+      independentAssessment: { estimatedLevel: level, passed: false, assessor: 'Pending independent assessment', assessedAt: null, notes: 'Draft; difficulty and naturalness require human review.' },
     },
     questions: questions.map(([skill, prompt, options, correct, evidence], index) => ({
       id: `q-${index + 1}`, type: skill === 'global' ? 'main-idea' : skill === 'vocabulary' ? 'vocabulary-in-context' : skill,
@@ -68,7 +68,7 @@ function build(item) {
       maxAttempts: 2,
     })),
     production: { prompt: uiText(production), minWords: level === 'B2' ? 60 : level === 'C1' ? 90 : 120, maxWords: level === 'B2' ? 130 : level === 'C1' ? 180 : 220, hints: [item.displayCopy.mission, 'Quote one phrase from the text and explain why it matters.'], scored: false },
-    review: { author: 'Equipo editorial WeLearn — borrador asistido por IA', languageReviewer: 'Pendiente', pedagogyReviewer: 'Pendiente', reviewedAt: date, copyrightChecked: true, cultureChecked: true, aiAssisted: true, aiUseNote: 'Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.', languageDecision: 'pending', pedagogyDecision: 'pending' },
+    review: { author: 'Equipo editorial WeLearn — borrador asistido por IA', languageReviewer: 'Pendiente', pedagogyReviewer: 'Pendiente', reviewedAt: null, copyrightChecked: false, cultureChecked: false, aiAssisted: true, aiUseNote: 'Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.', languageDecision: 'pending', pedagogyDecision: 'pending' },
     seo: { title: uiText(`${item.displayTitle} | ${level} Reading | WeLearn`), description: uiText(item.displayCopy.intro), canonicalPath: pathName, indexable: false, lastModified: date },
   }
 }

@@ -12,7 +12,7 @@ export function validateReadingExercise(exercise) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(exercise.slug ?? '')) errors.push('slug has an invalid format')
   if (!Array.isArray(exercise.tutorLocales) || exercise.tutorLocales.length === 0) errors.push('at least one tutor locale is required')
   if (!Array.isArray(exercise.questions) || exercise.questions.length < 3) errors.push('at least three questions are required')
-  if (!exercise.review?.copyrightChecked || !exercise.review?.cultureChecked) errors.push('copyright and culture checks must pass')
+  if ((exercise.status === 'approved' || exercise.status === 'published') && (!exercise.review?.copyrightChecked || !exercise.review?.cultureChecked)) errors.push('copyright and culture checks must pass before approval or publication')
 
   const limits = WORD_LIMITS[exercise.level?.cefr]
   if (!limits) errors.push('CEFR level is invalid')
@@ -30,6 +30,7 @@ export function validateReadingExercise(exercise) {
 
   if (exercise.leveling?.metrics?.outOfLevelVocabularyPercent > exercise.leveling?.maxOutOfLevelVocabularyPercent) errors.push('out-of-level vocabulary exceeds the configured limit')
   if ((exercise.status === 'approved' || exercise.status === 'published') && !exercise.leveling?.independentAssessment?.passed) errors.push('independent level assessment must pass before approval or publication')
+  if ((exercise.status === 'approved' || exercise.status === 'published') && (!exercise.review?.reviewedAt || !exercise.leveling?.independentAssessment?.assessedAt)) errors.push('actual review and assessment dates are required before approval or publication')
   if (exercise.leveling?.independentAssessment?.estimatedLevel !== exercise.level?.cefr) errors.push('independent level assessment must match the declared CEFR level')
   if (exercise.language === 'ja' && (!exercise.level?.jlpt || !exercise.level?.mappingDisclaimer)) errors.push('Japanese exercises require JLPT and a mapping disclaimer')
   if (exercise.language === 'ko' && (!exercise.level?.topik || !exercise.level?.mappingDisclaimer)) errors.push('Korean exercises require TOPIK and a mapping disclaimer')

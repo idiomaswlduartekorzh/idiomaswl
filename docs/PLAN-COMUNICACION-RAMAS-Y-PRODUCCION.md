@@ -11,6 +11,7 @@ Fecha de corte: 25 de agosto de 2026.
 - Inventario: 480/480 borradores (20 por nivel B2/C1/C2 e idioma en ocho lenguas), 2.880 preguntas. El guardián de cantidad, variedad y longitud mínima pasa en las 24 combinaciones; la distribución de extensión de las respuestas falla en 16. En 20 lecturas la respuesta correcta es la única más larga en las seis preguntas.
 - Las 480 fichas carecen de revisión lingüística, pedagógica y nivelación independiente aprobadas. La guía de lectura impide publicarlas como `published` o indexables sin esas evaluaciones reales.
 - Auditoría y plan de salida: [`reading-advanced-quality-audit-2026-11-12.md`](reading-advanced-quality-audit-2026-11-12.md). El guardián de escala fue reforzado para detectar la pista de longitud por lectura. Pendiente corregir opciones con criterio semántico, recibir revisores competentes, pasar todos los controles y build, integrar en `main` y verificar el deployment de Vercel.
+- Actualización del 13 de noviembre: se corrigieron fechas de revisión y comprobaciones declaradas prematuramente en los 480 borradores; el validador exige datos reales para publicar. Una segunda lectura asistida de 24 combinaciones confirmó tres fallos de clave, opciones o texto, corregidos en su fuente. Continúan pendientes el sesgo de longitud en 16 combinaciones y la revisión humana completa. La rama sigue `EN_VALIDACION`.
 
 ## Visibilidad local de clases por idioma — 11 de noviembre de 2026
 

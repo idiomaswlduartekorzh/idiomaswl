@@ -21,7 +21,7 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
   if (!exercise.tutorLocales?.length) errors.push('at least one tutor locale is required')
   if (!exercise.content?.targetText) errors.push('targetText is required')
   if (!exercise.questions?.length || exercise.questions.length < 3) errors.push('at least three questions are required')
-  if (!exercise.review?.copyrightChecked || !exercise.review?.cultureChecked) errors.push('copyright and culture checks must pass')
+  if ((exercise.status === 'approved' || exercise.status === 'published') && (!exercise.review?.copyrightChecked || !exercise.review?.cultureChecked)) errors.push('copyright and culture checks must pass before approval or publication')
 
   // Estas bandas están pensadas para palabras de una lengua europea y no valen para todos los
   // idiomas: el coreano se mide en eojeol y el japonés en caracteres, así que un A1 japonés de
@@ -45,6 +45,7 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
     errors.push('out-of-level vocabulary exceeds the configured limit')
   }
   if ((exercise.status === 'approved' || exercise.status === 'published') && !exercise.leveling?.independentAssessment?.passed) errors.push('independent level assessment must pass before approval or publication')
+  if ((exercise.status === 'approved' || exercise.status === 'published') && (!exercise.review?.reviewedAt || !exercise.leveling?.independentAssessment?.assessedAt)) errors.push('actual review and assessment dates are required before approval or publication')
   if (exercise.leveling?.independentAssessment?.estimatedLevel !== exercise.level?.cefr) errors.push('independent level assessment must match the declared CEFR level')
   if (exercise.language === 'ja' && (!exercise.level.jlpt || !exercise.level.mappingDisclaimer)) errors.push('Japanese exercises require JLPT and a mapping disclaimer')
   if (exercise.language === 'ko' && (!exercise.level.topik || !exercise.level.mappingDisclaimer)) errors.push('Korean exercises require TOPIK and a mapping disclaimer')

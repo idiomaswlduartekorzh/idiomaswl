@@ -141,7 +141,7 @@
       "estimatedLevel": "C2",
       "passed": false,
       "assessor": "Pending independent assessment",
-      "assessedAt": "2026-11-11T14:15:04.597Z",
+      "assessedAt": null,
       "notes": "Difficulty and naturalness require human review."
     }
   },
@@ -386,9 +386,9 @@
     "author": "WeLearn editorial draft assisted by AI",
     "languageReviewer": "Pending",
     "pedagogyReviewer": "Pending",
-    "reviewedAt": "2026-11-11T14:15:04.597Z",
-    "copyrightChecked": true,
-    "cultureChecked": true,
+    "reviewedAt": null,
+    "copyrightChecked": false,
+    "cultureChecked": false,
     "aiAssisted": true,
     "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
     "languageDecision": "pending",

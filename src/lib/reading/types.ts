@@ -125,7 +125,7 @@ export type ReadingExercise = {
       estimatedLevel: CefrLevel
       passed: boolean
       assessor?: string
-      assessedAt: string
+      assessedAt: string | null
       notes?: string
     }
   }
@@ -141,9 +141,9 @@ export type ReadingExercise = {
     author: string
     languageReviewer: string
     pedagogyReviewer: string
-    reviewedAt: string
-    copyrightChecked: true
-    cultureChecked: true
+    reviewedAt: string | null
+    copyrightChecked: boolean
+    cultureChecked: boolean
     aiAssisted?: boolean
     aiUseNote?: string
     languageDecision: ReadingReviewDecision

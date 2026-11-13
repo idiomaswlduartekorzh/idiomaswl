@@ -151,7 +151,7 @@
             "estimatedLevel": {"enum": ["A0", "A1", "A2", "B1", "B2", "C1", "C2"]},
             "passed": {"type": "boolean"},
             "assessor": {"type": "string", "maxLength": 100},
-            "assessedAt": {"type": "string", "format": "date-time"},
+            "assessedAt": {"type": ["string", "null"], "format": "date-time"},
             "notes": {"type": "string", "maxLength": 1000}
           }
         }
@@ -183,9 +183,9 @@
         "author": {"type": "string", "minLength": 2, "maxLength": 120},
         "languageReviewer": {"type": "string", "minLength": 2, "maxLength": 120},
         "pedagogyReviewer": {"type": "string", "minLength": 2, "maxLength": 120},
-        "reviewedAt": {"type": "string", "format": "date-time"},
-        "copyrightChecked": {"const": true},
-        "cultureChecked": {"const": true},
+        "reviewedAt": {"type": ["string", "null"], "format": "date-time"},
+        "copyrightChecked": {"type": "boolean"},
+        "cultureChecked": {"type": "boolean"},
         "aiAssisted": {"type": "boolean"},
         "aiUseNote": {"type": "string", "maxLength": 500},
         "languageDecision": {"enum": ["pending", "changes-requested", "approved"]},
