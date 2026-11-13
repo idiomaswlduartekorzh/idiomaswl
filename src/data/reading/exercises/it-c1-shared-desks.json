@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "L'introduzione del lavoro ibrido e la modifica dei rimborsi"
+          "text": "La nuova formula ibrida e la revisione dei rimborsi."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Con l'erogazione di un'indennità forfettaria annuale fissa"
+          "text": "Un'indennità annua fissa per le spese di casa."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "I dipendenti assumono il rischio finanziario delle fluttuazioni dei costi energetici domestici."
+          "text": "Il rischio dei rincari energetici passa ai lavoratori che stanno a casa."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Per presentare il trasferimento dei costi operativi come un'opportunità di autonomia e crescita"
+          "text": "Presentare i costi trasferiti come maggiore autonomia."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Paternalistico, rassicurante e orientato a mascherare i costi nascosti"
+          "text": "Rassicurante, ma nasconde costi per i lavoratori."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Una somma di denaro fissa stabilita in anticipo, slegata dalle spese reali documentate"
+          "text": "Una somma annua fissa, svincolata dal rendiconto delle spese reali sostenute."
         }
       ],
       "answer": "a3",

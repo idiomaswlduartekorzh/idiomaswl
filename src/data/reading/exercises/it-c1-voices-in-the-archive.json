@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Il limite tra fedeltà filologica e manipolazione espressiva della voce orale."
+          "text": "Fedeltà alle voci originali o adattamento per la scena."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Serve a liberare il nucleo emotivo del racconto ed evitare che appaia grottesco sulla scena."
+          "text": "Per liberare il nucleo emotivo senza far sembrare il racconto grottesco."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Un fallimento comunicativo che impoverisce entrambe le dimensioni della memoria."
+          "text": "La divisione impoverisce entrambe le forme di memoria."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Preservare l'autenticità antropologica e il DNA irripetibile del parlante."
+          "text": "Conservare le esitazioni che rendono unica ogni voce."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Intellettuale, teso e disilluso."
+          "text": "Teso e disilluso."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Gli elementi di disturbo e le irregolarità di un'oralità disordinata."
+          "text": "Le irregolarità e le esitazioni del parlato spontaneo."
         }
       ],
       "answer": "a3",

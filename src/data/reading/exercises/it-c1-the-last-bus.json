@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Il contrasto tra l'efficienza contabile sbandierata da un'azienda di trasporti e l'effettivo peggioramento della mobilità rurale."
+          "text": "Il contrasto tra risparmi aziendali e mobilità rurale."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Il taglio delle corse intermedie e festive, con la concentrazione dell'utenza su poche partenze fisse."
+          "text": "Taglio delle corse intermedie e festive, con passeggeri concentrati su poche partenze."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Che esso è il risultato artificiale di una riduzione forzata dell'offerta che ha concentrato tutti i passeggeri sugli stessi orari."
+          "text": "L'aumento dipende dal taglio delle corse, che concentra i viaggiatori sugli stessi autobus."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Per sostenere che, in un contesto di risorse scarse, i fondi pubblici debbano premiare i collegamenti economicamente sostenibili."
+          "text": "I sussidi devono favorire le linee economicamente sostenibili."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Critico e disincantato, volto a smascherare l'inganno retorico di una modernizzazione amministrativa vuota di contenuti umani."
+          "text": "Tono critico verso i bilanci che mascherano il peggioramento quotidiano della mobilità rurale."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Una discrepanza insanabile tra la teoria burocratica dei documenti e la frustrazione concreta vissuta sul territorio."
+          "text": "La distanza fra bilanci e vita dei residenti."
         }
       ],
       "answer": "a3",

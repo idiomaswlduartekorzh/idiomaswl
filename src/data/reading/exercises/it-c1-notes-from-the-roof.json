@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "La disputa legale e tecnica sorta in merito all'installazione di un impianto fotovoltaico condiviso sul tetto condominiale."
+          "text": "La disputa sull'impianto fotovoltaico condominiale."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Sulla falda che sovrasta il vano scala e le proprietà centrali, lasciando libera la mansarda."
+          "text": "Sulla falda sopra il vano scala, lontano dalla mansarda."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Le interpreta come una visione proprietaria complessa che merita un'attenta analisi dei limiti di godimento."
+          "text": "Ritiene che le pretese del proprietario siano complesse e richiedano un esame giuridico."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Perché una causa giudiziaria richiederebbe troppi anni, facendo perdere i contributi europei e danneggiando economicamente il condominio."
+          "text": "Una causa troppo lunga farebbe perdere i contributi europei e danneggerebbe anche il condominio."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Professionale, giuridicamente argomentato ma aperto alla mediazione strategica."
+          "text": "Professionale, argomentato e aperto alla mediazione strategica."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Che non possono essere fatte valere o produrre effetti giuridici nei confronti dei terzi o del condominio."
+          "text": "Non efficaci verso terzi o il condominio."
         }
       ],
       "answer": "a3",
