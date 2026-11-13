@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Paradoxon der Kreislaufwirtschaft: Wenn die Bilanz die Grenzen sprengt",
+      "en": "Das Paradoxon der Kreislaufwirtschaft: Wenn die Bilanz die Grenzen sprengt"
+    },
+    "intro": {
+      "es": "Ein analytischer Essay über die Tücken der ökologischen Erfolgsmessung am Beispiel eines lokalen Mehrwegsystems.",
+      "en": "Ein analytischer Essay über die Tücken der ökologischen Erfolgsmessung am Beispiel eines lokalen Mehrwegsystems."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam durch und analysieren Sie die Diskrepanz zwischen lokaler Effizienz und systemischer Auswirkung.",
+      "en": "Lesen Sie den Text aufmerksam durch und analysieren Sie die Diskrepanz zwischen lokaler Effizienz und systemischer Auswirkung."
+    },
+    "targetText": "Als die Stadtverwaltung von Aethelgard das Pilotprojekt für ein flächendeckendes Mehrwegbechersystem in der Altstadt initiierte, feierte man dies als ökologischen Triumph. Die Projektleiterin, Dr. Elena Vesper, präsentierte stolz die Daten des ersten Quartals: Durch den Einsatz der robusten Polypropylen-Becher konnten in den angeschlossenen Cafés täglich tausende Einwegbecher eingespart werden. Die Logistik war simpel – ein Pfandsystem, das die Rückgabe an zentralen Stationen ermöglichte, und ein lokaler Spülservice, der die Becher innerhalb weniger Stunden wieder in den Kreislauf zurückführte. Die Bilanz schien makellos, zumindest solange man den Fokus strikt auf die Müllvermeidung innerhalb der Stadtgrenzen legte. Doch die Euphorie begann zu bröckeln, als der Stadtrat beschloss, die Reichweite des Systems auf die umliegenden Vororte und den öffentlichen Nahverkehr auszuweiten.\n\nDas Kernproblem offenbarte sich nicht in der Funktionalität, sondern in der physikalischen Ausdehnung des Systems. Während die Becher in der kompakten Altstadt kurze Wege zurücklegten, führte die Ausweitung zu einem logistischen Albtraum. Die Rücklaufquoten sanken rapide, da die Pendler die Becher in ihren Taschen vergaßen oder in weit entfernten Bahnhöfen deponierten. Um den Mangel in den Cafés auszugleichen, musste Dr. Vesper zusätzliche Lieferungen von Bechern aus dem Zentrallager anfordern, was wiederum den CO2-Fußabdruck der Transportfahrzeuge in die Höhe trieb. Die ökologische Bilanz, die einst durch die Einsparung von Plastikmüll glänzte, wurde nun von den Emissionen der LKW-Flotte überschattet, die kreuz und quer durch die Region fuhr, um die verstreuten Behältnisse einzusammeln.\n\nEin weiterer, oft übersehener Faktor war die Intensität der Reinigung. In der Anfangsphase reichte eine einfache Heißwasserreinigung aus. Doch mit der Ausweitung des Einzugsgebiets stieg der Grad der Verschmutzung durch längere Standzeiten der Becher in öffentlichen Verkehrsmitteln. Die Betreiber mussten auf aggressivere chemische Reinigungsmittel und längere Trocknungszyklen umsteigen, um den hygienischen Standards gerecht zu werden. Hier stießen die ökonomischen und ökologischen Interessen frontal aufeinander. Die Kosten für die Wasseraufbereitung und die chemischen Zusätze stiegen exponentiell, während der Nutzen des Mehrwegsystems durch den erhöhten Ressourcenverbrauch pro Becher zunehmend in Frage gestellt wurde. Es entstand ein paradoxer Zustand, in dem die ökologische Bilanz pro Becher bei einer größeren Reichweite des Systems schlechter ausfiel als bei der ursprünglichen Einweglösung.\n\nDie Auseinandersetzung zwischen Dr. Vesper und dem Stadtrat erreichte ihren Höhepunkt, als eine unabhängige Studie die gesamte Lebenszyklusanalyse präsentierte. Die Forscher zeigten auf, dass das System nur dann vorteilhaft war, wenn die Becher mindestens fünfzig Mal genutzt wurden, bevor sie ersetzt werden mussten. Durch den Schwund in den Vororten lag die tatsächliche durchschnittliche Nutzungsdauer jedoch nur bei etwa zwölf Zyklen. Die Idee der Nachhaltigkeit war somit zu einer bloßen Fassade verkommen, die lediglich die Verlagerung von Umweltbelastungen von einer Kategorie – dem Abfall – in eine andere – dem Energie- und Wasserverbrauch – kaschierte. Das Scheitern des Projekts war nicht auf mangelnde Disziplin der Nutzer zurückzuführen, sondern auf die naive Annahme, dass ein lokales Modell beliebig skalierbar sei, ohne die physikalischen Randbedingungen grundlegend zu verändern.\n\nAm Ende des Jahres wurde das Projekt in seiner erweiterten Form eingestellt. Zurück blieb die bittere Erkenntnis, dass ökologische Erfolge oft nur lokale Artefakte sind, die bei einer ganzheitlichen Betrachtung ihre Daseinsberechtigung verlieren. Das Scheitern von Aethelgard dient nun als warnendes Beispiel für politische Entscheidungsträger, die dazu neigen, komplexe ökologische Systeme durch lineare Metriken zu vereinfachen. Die Herausforderung besteht nicht darin, das richtige Produkt zu wählen, sondern die systemischen Grenzen so zu definieren, dass die ökologische Bilanz nicht durch ihre eigene Skalierung erstickt wird. Die Geschichte von Dr. Vesper und ihren Bechern bleibt ein Mahnmal für die Komplexität einer Welt, in der jede Lösung bereits den Keim ihres eigenen Scheiterns in sich trägt, sobald man den Horizont der Messung nur weit genug verschiebt.\n\nDie Debatte um das Scheitern in Aethelgard entfachte jedoch eine tiefergehende, gesellschaftliche Kontroverse über die grundsätzliche Definition von Fortschritt, die weit über das Schicksal der Polypropylen-Becher hinausreichte. Während Kritiker das Projekt als mahnendes Beispiel für das Scheitern zentralistischer Planung nutzten, argumentierten Befürworter einer zirkulären Ökonomie, dass nicht die Skalierung an sich das Problem darstellte, sondern die mangelnde technologische Adaption innerhalb der Infrastruktur. Sie wiesen darauf hin, dass die ökologische Bilanz nur deshalb kollabierte, weil man versuchte, ein analoges Pfandsystem in eine hochgradig mobile, digitale Gesellschaft zu pressen, ohne die notwendige Vernetzung der Rückgabeprozesse zu etablieren. Hätte man auf intelligente, sensorgestützte Sammelbehälter und dezentrale, energieeffiziente Reinigungseinheiten in den Bahnhöfen gesetzt, wären die Transportwege drastisch reduziert worden. Die wahre Lehre aus Aethelgard liegt somit nicht in der Kapitulation vor der Komplexität, sondern in der Erkenntnis, dass ökologische Transformationen eine synergetische Verzahnung von Hardware und Logistik erfordern. Es ist ein Trugschluss zu glauben, dass man durch bloße Substitution von Materialien – also den Austausch von Einweg gegen Mehrweg – eine nachhaltige Wende einleiten kann, solange die zugrunde liegenden systemischen Prozesse starr und ineffizient bleiben. Die Geschichte lehrt uns, dass wir die Grenzen unseres Handelns nicht nur räumlich, sondern auch methodisch definieren müssen. Wer versucht, den ökologischen Fußabdruck zu verringern, darf nicht in die Falle tappen, die Effizienzsteigerung lediglich als technisches Optimierungsproblem zu betrachten. Vielmehr erfordert eine echte Kreislaufwirtschaft eine radikale Abkehr vom linearen Denken, indem man das Produkt nicht als isoliertes Objekt, sondern als Teil eines dynamischen, sich ständig anpassenden Netzwerks begreift. Aethelgard zeigt uns, dass der Versuch, ökologische Ideale gewaltsam auf eine Infrastruktur zu übertragen, die noch im 20. Jahrhundert verhaftet ist, zwangsläufig zur ökologischen Subventionierung von Ineffizienz führt. Nur wenn wir bereit sind, unsere städtischen Räume und deren logistische Adern grundlegend umzugestalten, wird die Vision einer echten Nachhaltigkeit über das Stadium eines gescheiterten Pilotprojekts hinauswachsen können.",
+    "wordCount": 898,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "makellos",
+        "lemma": "makellos",
+        "glosses": {
+          "es": "Flawless",
+          "en": "Flawless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Euphorie",
+        "lemma": "Euphorie",
+        "glosses": {
+          "es": "Euphoria",
+          "en": "Euphoria"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "logistisch",
+        "lemma": "logistisch",
+        "glosses": {
+          "es": "Logistical",
+          "en": "Logistical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exponentiell",
+        "lemma": "exponentiell",
+        "glosses": {
+          "es": "Exponentially",
+          "en": "Exponentially"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fassade",
+        "lemma": "Fassade",
+        "glosses": {
+          "es": "Facade",
+          "en": "Facade"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "skalierbar",
+        "lemma": "skalierbar",
+        "glosses": {
+          "es": "Scalable",
+          "en": "Scalable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches Hauptthema behandelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Problematik der Skalierung ökologischer Projekte."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Verbesserung von Mehrwegbechern."
+        },
+        {
+          "id": "a3",
+          "text": "Die politische Korruption bei städtischen Umweltprojekten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Scheitern von Aethelgard dient nun als warnendes Beispiel für politische Entscheidungsträger, die dazu neigen, komplexe ökologische Systeme durch lineare Metriken zu vereinfachen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum stiegen die Reinigungskosten für die Becher?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Wegen neuer EU-Hygienevorschriften."
+        },
+        {
+          "id": "a2",
+          "text": "Wegen der höheren Verschmutzung."
+        },
+        {
+          "id": "a3",
+          "text": "Wegen der gestiegenen Becheranzahl."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Betreiber mussten auf aggressivere chemische Reinigungsmittel und längere Trocknungszyklen umsteigen, um den hygienischen Standards gerecht zu werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Was lässt sich über die ökologische Bilanz des Projekts sagen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie war bei einer größeren Reichweite am besten."
+        },
+        {
+          "id": "a2",
+          "text": "Sie verbesserte sich durch die Nutzung von Polypropylen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie war bei einer größeren Reichweite schlechter als Einweg."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Es entstand ein paradoxer Zustand, in dem die ökologische Bilanz pro Becher bei einer größeren Reichweite des Systems schlechter ausfiel als bei der ursprünglichen Einweglösung.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Autor mit der Darstellung der Lebenszyklusanalyse?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Unhaltbarkeit des Modells bei hoher Fluktuation zu belegen."
+        },
+        {
+          "id": "a2",
+          "text": "Die Nutzer zu mehr Disziplin aufzufordern."
+        },
+        {
+          "id": "a3",
+          "text": "Den Stadtrat zu einer höheren Investition zu bewegen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Forscher zeigten auf, dass das System nur dann vorteilhaft war, wenn die Becher mindestens fünfzig Mal genutzt wurden, bevor sie ersetzt werden mussten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Textes beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und belehrend."
+        },
+        {
+          "id": "a2",
+          "text": "Analytisch und desillusioniert."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressiv und provokativ."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Zurück blieb die bittere Erkenntnis, dass ökologische Erfolge oft nur lokale Artefakte sind, die bei einer ganzheitlichen Betrachtung ihre Daseinsberechtigung verlieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Skalierbar' im Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dass ein System nur lokal funktioniert."
+        },
+        {
+          "id": "a2",
+          "text": "Dass ein System sofort ersetzt werden muss."
+        },
+        {
+          "id": "a3",
+          "text": "Dass ein System in der Größe anpassbar ist."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Idee der Nachhaltigkeit war somit zu einer bloßen Fassade verkommen, die lediglich die Verlagerung von Umweltbelastungen von einer Kategorie – dem Abfall – in eine andere – dem Energie- und Wasserverbrauch – kaschierte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Erörtern Sie in einem kurzen Text, ob ökologische Maßnahmen Ihrer Meinung nach grundsätzlich lokal begrenzt bleiben sollten, um ihre Wirksamkeit nicht zu gefährden.",
+      "en": "Erörtern Sie in einem kurzen Text, ob ökologische Maßnahmen Ihrer Meinung nach grundsätzlich lokal begrenzt bleiben sollten, um ihre Wirksamkeit nicht zu gefährden."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lesen Sie den Text aufmerksam durch und analysieren Sie die Diskrepanz zwischen lokaler Effizienz und systemischer Auswirkung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Paradoxon der Kreislaufwirtschaft: Wenn die Bilanz die Grenzen sprengt | C2 Reading | WeLearn",
+      "en": "Das Paradoxon der Kreislaufwirtschaft: Wenn die Bilanz die Grenzen sprengt | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein analytischer Essay über die Tücken der ökologischen Erfolgsmessung am Beispiel eines lokalen Mehrwegsystems.",
+      "en": "Ein analytischer Essay über die Tücken der ökologischen Erfolgsmessung am Beispiel eines lokalen Mehrwegsystems."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

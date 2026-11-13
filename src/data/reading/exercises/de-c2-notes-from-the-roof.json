@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-notes-from-the-roof",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Photovoltaik-Dissonanz: Eine Korrespondenz über das Dach",
+      "en": "Die Photovoltaik-Dissonanz: Eine Korrespondenz über das Dach"
+    },
+    "intro": {
+      "es": "Ein E-Mail-Austausch zwischen einer Wohnungseigentümerin und einem Mieter über die Installation einer gemeinschaftlichen Solaranlage.",
+      "en": "Ein E-Mail-Austausch zwischen einer Wohnungseigentümerin und einem Mieter über die Installation einer gemeinschaftlichen Solaranlage."
+    },
+    "mission": {
+      "es": "Analysieren Sie die rhetorischen Strategien und die zugrunde liegenden Interessenkonflikte in dieser Korrespondenz.",
+      "en": "Analysieren Sie die rhetorischen Strategien und die zugrunde liegenden Interessenkonflikte in dieser Korrespondenz."
+    },
+    "targetText": "Betreff: Dringende Rückmeldung zur geplanten PV-Anlage auf dem Dach der Wohnanlage Residenz am Park\n\nSehr geehrte Frau Dr. von Arnim,\n\nals Sprecherin der Eigentümergemeinschaft habe ich Ihre jüngste E-Mail mit einer Mischung aus Besorgnis und Befremden gelesen. Dass Sie als Mieter der Penthouse-Wohnung nunmehr die Initiative ergreifen und eine Abstimmung über die Installation einer großflächigen Photovoltaikanlage auf dem gesamten Dachbereich fordern, ist ein Schritt, der die gewohnten Strukturen unserer Verwaltung nicht nur infrage stellt, sondern diese geradezu untergräbt. Während Sie in Ihrem Schreiben die ökologische Notwendigkeit und die langfristige Senkung der Stromkosten betonen, verkennen Sie dabei völlig die spezifische Risikostruktur, der wir Eigentümer gegenüberstehen. Für Sie ist die Solaranlage eine bloße Betriebskostenoptimierung, die sich in Ihrem monatlichen Budget niederschlägt; für uns hingegen stellt sie eine massive bauliche Veränderung dar, die mit komplexen Haftungsfragen, Instandhaltungsrücklagen und einer langfristigen Belastung der Bausubstanz einhergeht. Die Neutralität einer solchen Abstimmung ist eine Illusion, da unsere Horizonte des Risikos fundamental divergieren. Sie kalkulieren mit einer Mietdauer von vielleicht fünf bis zehn Jahren, während wir die Verantwortung für die nächsten Jahrzehnte tragen. Die von Ihnen vorgeschlagene Investitionssumme, die Sie als marginal bezeichnen, ist für uns eine signifikante Kapitalbindung, die an anderer Stelle, etwa bei der notwendigen Fassadensanierung, schmerzlich fehlen wird. Es ist daher bezeichnend, dass Sie die Dringlichkeit Ihres Anliegens mit dem globalen Klimawandel begründen, während Sie die lokalen, materiellen Realitäten der Eigentümergemeinschaft konsequent ausblenden. Ich möchte Sie daher bitten, von weiteren Alleingängen abzusehen und die nächste ordentliche Eigentümerversammlung abzuwarten.\n\nSehr geehrte Frau Bergmann,\n\nich danke Ihnen für Ihre ausführliche und in ihrem Tonfall bemerkenswert deutliche Rückmeldung. Dass Sie mein Anliegen als Untergrabung der Verwaltungsstrukturen interpretieren, bedauere ich sehr, war es doch keineswegs meine Absicht, die Souveränität der Eigentümergemeinschaft infrage zu stellen. Vielmehr ging es mir darum, einen Diskurs über die energetische Zukunft unseres Gebäudes anzustoßen, der über die rein fiskalische Perspektive hinausgeht. Sie führen vollkommen richtig aus, dass unsere Risikohorizonte unterschiedlich sind. Doch genau hier liegt meines Erachtens der Kern der Dissonanz: Während Sie die Solaranlage als Belastung der Bausubstanz wahrnehmen, sehe ich in ihr eine notwendige Modernisierung, die den Wert der Immobilie langfristig sichert – auch für Sie als Eigentümerin. Die Vorstellung, dass eine solche Installation lediglich eine kurzfristige Kostenersparnis für mich als Mieter darstellt, greift zu kurz. Ein energieeffizientes Gebäude ist ein zukunftssicheres Gebäude. Dass Sie die Instandhaltungsrücklagen als statisches Budget betrachten, das gegen die Solaranlage ausgespielt werden muss, halte ich für eine verpasste Chance. Wenn wir die energetische Sanierung als Investition und nicht als Kostenfaktor begreifen, verschieben sich die Prioritäten. Ich verstehe, dass Sie als Eigentümerin die Letztverantwortung tragen, doch die Weigerung, den Dialog über neue Finanzierungsmodelle wie etwa ein Contracting-Modell zu öffnen, wirkt auf mich wie eine bewusste Blockadehaltung. Ich werde daher meinen Antrag nicht zurückziehen, sondern ihn für die nächste Versammlung formalisieren, in der Hoffnung, dass wir über die bloße Konfrontation hinaus zu einer sachlichen Abwägung der langfristigen Chancen gelangen können. Dass Sie mich auffordern, von Alleingängen abzusehen, nehme ich zur Kenntnis, doch sehe ich in meinem Engagement lediglich die Wahrnehmung eines legitimen Interesses an einem nachhaltigen Wohnumfeld. Ich bin überzeugt, dass die Mehrheit der Bewohner die Notwendigkeit dieses Wandels erkennt, ungeachtet der rechtlichen Eigentumsverhältnisse. Wir stehen vor einer Entscheidung, die weit über das Dach hinausreicht.\n\nIndes offenbart Ihre Beharrlichkeit eine fundamentale Diskrepanz in der Auffassung von Mitbestimmung, die weit über die energetische Debatte hinausreicht. Indem Sie das Eigentümer-Mieter-Verhältnis zugunsten einer vermeintlichen ökologischen Dringlichkeit neu definieren, riskieren Sie eine Erosion des sozialen Friedens innerhalb der Residenz am Park. Sollte Ihr Antrag formalisiert werden, zwingen Sie die Eigentümergemeinschaft in eine rechtliche Defensive, in der wir nicht mehr über ökologische Synergien, sondern über die Grenzen der Einflussnahme von Mietern auf das Gemeinschaftseigentum debattieren müssen. Diese Konfrontation könnte eine gefährliche Präzedenzwirkung entfalten, die das Vertrauensverhältnis zwischen den Parteien nachhaltig zersetzt. Wenn Sie die Eigentümerstruktur als bloßes Hindernis für eine von Ihnen definierte 'zukunftssichere' Immobilie betrachten, verkennen Sie, dass die Stabilität unserer Gemeinschaft auf dem Respekt vor diesen rechtlichen Rahmenbedingungen fußt. Ein Contracting-Modell mag auf dem Papier ökonomisch rational erscheinen, doch es impliziert eine langfristige vertragliche Bindung der Eigentümer an externe Dienstleister, die unsere eigene Entscheidungsgewalt über das Gebäude einschränkt. Sie fordern eine Modernisierung, doch der Preis hierfür wäre eine schleichende Enteignung unserer Gestaltungshoheit. Wir sind nicht bloße Verwalter eines statischen Kapitals, sondern Hüter einer komplexen Struktur, deren Integrität durch voreilige, technokratische Eingriffe gefährdet wird. Ihre Überzeugung, dass die Mehrheit der Bewohner Ihre Sichtweise teilt, entbehrt der Grundlage, da sie die spezifische Verantwortung derjenigen ignoriert, die im Falle von Bauschäden oder finanziellen Engpässen die volle Haftung tragen. Ein solches Vorgehen provoziert eine Polarisierung, die gerade jene Kooperation verhindert, die für eine nachhaltige Entwicklung unabdingbar wäre. Wenn Sie das Dach als Bühne für eine ideologische Auseinandersetzung nutzen, verwandeln Sie ein technisches Projekt in einen Zankapfel, der die Gemeinschaft lähmt, anstatt sie zu einen. Wir werden uns daher nicht durch den Druck Ihrer formalisierten Anträge zu einer Entscheidung drängen lassen, die unsere langfristige Handlungsfreiheit untergräbt. Vielmehr werden wir die notwendige Sachlichkeit einfordern, die Ihre einseitige Perspektive bisher vermissen lässt. Die Versammlung wird zeigen, ob wir zu einem konstruktiven Dialog fähig sind oder ob wir uns in einer rechtlichen Auseinandersetzung verlieren, die am Ende niemandem dient und den dringend notwendigen energetischen Fortschritt weiter verzögert.",
+    "wordCount": 867,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Dissonanz",
+        "lemma": "Dissonanz",
+        "glosses": {
+          "es": "a lack of harmony or tension",
+          "en": "a lack of harmony or tension"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fiskalische",
+        "lemma": "fiskalische",
+        "glosses": {
+          "es": "relating to government revenue or financial matters",
+          "en": "relating to government revenue or financial matters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Souveränität",
+        "lemma": "Souveränität",
+        "glosses": {
+          "es": "supreme power or authority",
+          "en": "supreme power or authority"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Instandhaltungsrücklagen",
+        "lemma": "Instandhaltungsrücklagen",
+        "glosses": {
+          "es": "funds set aside for building maintenance",
+          "en": "funds set aside for building maintenance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Contracting-Modell",
+        "lemma": "Contracting-Modell",
+        "glosses": {
+          "es": "an energy service performance contract",
+          "en": "an energy service performance contract"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "marginal",
+        "lemma": "marginal",
+        "glosses": {
+          "es": "minor or insignificant",
+          "en": "minor or insignificant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.8,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptthema des E-Mail-Austauschs?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Installation einer PV-Anlage"
+        },
+        {
+          "id": "a2",
+          "text": "Die Sanierung der Fassade"
+        },
+        {
+          "id": "a3",
+          "text": "Die Erhöhung der Miete"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Dass Sie als Mieter der Penthouse-Wohnung nunmehr die Initiative ergreifen und eine Abstimmung über die Installation einer großflächigen Photovoltaikanlage auf dem gesamten Dachbereich fordern",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum lehnt Frau Bergmann den Vorschlag zunächst ab?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie mag den Mieter nicht"
+        },
+        {
+          "id": "a2",
+          "text": "Sie fürchtet Haftungsrisiken"
+        },
+        {
+          "id": "a3",
+          "text": "Sie plant einen Verkauf"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "für uns hingegen stellt sie eine massive bauliche Veränderung dar, die mit komplexen Haftungsfragen, Instandhaltungsrücklagen und einer langfristigen Belastung der Bausubstanz einhergeht.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung nimmt der Mieter gegenüber den Eigentümern ein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er ist unterwürfig"
+        },
+        {
+          "id": "a2",
+          "text": "Er ist gleichgültig"
+        },
+        {
+          "id": "a3",
+          "text": "Er ist konfrontativ"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ich werde daher meinen Antrag nicht zurückziehen, sondern ihn für die nächste Versammlung formalisieren",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Was ist das Ziel des Mieters mit seiner zweiten E-Mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Eigentümerin zu einem Kompromiss zu bewegen"
+        },
+        {
+          "id": "a2",
+          "text": "Die Eigentümerin öffentlich zu demütigen"
+        },
+        {
+          "id": "a3",
+          "text": "Den Auszug aus der Wohnung anzukündigen"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ich bin überzeugt, dass die Mehrheit der Bewohner die Notwendigkeit dieses Wandels erkennt, ungeachtet der rechtlichen Eigentumsverhältnisse.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Tonfall von Frau Bergmann beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Versöhnlich und offen"
+        },
+        {
+          "id": "a2",
+          "text": "Patronisierend und defensiv"
+        },
+        {
+          "id": "a3",
+          "text": "Begeistert und optimistisch"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Dass Sie als Mieter der Penthouse-Wohnung nunmehr die Initiative ergreifen und eine Abstimmung über die Installation einer großflächigen Photovoltaikanlage auf dem gesamten Dachbereich fordern, ist ein Schritt, der die gewohnten Strukturen unserer Verwaltung nicht nur infrage stellt, sondern diese geradezu untergräbt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'marginal' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr teuer"
+        },
+        {
+          "id": "a2",
+          "text": "Sehr komplex"
+        },
+        {
+          "id": "a3",
+          "text": "Unbedeutend"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die von Ihnen vorgeschlagene Investitionssumme, die Sie als marginal bezeichnen, ist für uns eine signifikante Kapitalbindung",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine Antwort aus der Sicht des Hausverwalters, der versucht, zwischen der Eigentümergemeinschaft und dem Mieter zu vermitteln, indem er ein konkretes Finanzierungsmodell vorschlägt.",
+      "en": "Schreiben Sie eine Antwort aus der Sicht des Hausverwalters, der versucht, zwischen der Eigentümergemeinschaft und dem Mieter zu vermitteln, indem er ein konkretes Finanzierungsmodell vorschlägt."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie die rhetorischen Strategien und die zugrunde liegenden Interessenkonflikte in dieser Korrespondenz.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Photovoltaik-Dissonanz: Eine Korrespondenz über das Dach | C2 Reading | WeLearn",
+      "en": "Die Photovoltaik-Dissonanz: Eine Korrespondenz über das Dach | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein E-Mail-Austausch zwischen einer Wohnungseigentümerin und einem Mieter über die Installation einer gemeinschaftlichen Solaranlage.",
+      "en": "Ein E-Mail-Austausch zwischen einer Wohnungseigentümerin und einem Mieter über die Installation einer gemeinschaftlichen Solaranlage."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

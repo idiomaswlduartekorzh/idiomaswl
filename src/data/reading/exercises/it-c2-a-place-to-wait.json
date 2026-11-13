@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-a-place-to-wait",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'invisibilità dell'attesa",
+      "en": "L'invisibilità dell'attesa"
+    },
+    "intro": {
+      "es": "Un'analisi narrativa sulla natura dell'attesa in un contesto clinico, dove il confine tra il paziente e l'istituzione si dissolve nell'oblio burocratico.",
+      "en": "Un'analisi narrativa sulla natura dell'attesa in un contesto clinico, dove il confine tra il paziente e l'istituzione si dissolve nell'oblio burocratico."
+    },
+    "mission": {
+      "es": "Esaminare la tensione esistenziale tra l'individuo che attende e l'istituzione che smette di riconoscere tale presenza.",
+      "en": "Esaminare la tensione esistenziale tra l'individuo che attende e l'istituzione che smette di riconoscere tale presenza."
+    },
+    "targetText": "La sala d'attesa del Policlinico di San Giuda non possedeva finestre, solo pareti color avorio che sembravano assorbire il tempo anziché delimitarlo. Elia sedeva sulla sedia di plastica rigida numero quarantadue, osservando la lancetta dei secondi dell'orologio a muro, un meccanismo che procedeva a scatti convulsi, come se ogni ticchettio fosse un piccolo fallimento del sistema. Accanto a lui, una donna anziana, la signora Valli, stringeva una cartella clinica logora, i bordi ingialliti dal contatto prolungato con mani ansiose. Erano lì dalle prime luci dell'alba, quando il portiere aveva aperto le porte con un gesto di stanca routine, ma il flusso dei pazienti era mutato nel corso delle ore. Verso il crepuscolo, il personale amministrativo, guidato dal solerte dottor Valenti, aveva iniziato a spegnere le luci dei corridoi laterali, ignorando deliberatamente la sala d'attesa principale. Elia si chiese se l'attesa potesse dirsi conclusa nel momento esatto in cui l'istituzione smetteva di percepire coloro che stavano attendendo, rendendoli, di fatto, invisibili agli occhi di chi deteneva il potere di cura. La tensione crebbe quando il dottor Valenti attraversò la stanza senza voltarsi, il suo sguardo fisso su un tablet luminoso, come se il mondo fisico fosse diventato un ostacolo trascurabile rispetto ai dati digitali. La signora Valli si alzò, le ginocchia che scricchiolavano nel silenzio, e tentò di chiamarlo, ma la sua voce, fioca e incrinata, si perse contro le pareti asettiche prima ancora di raggiungere le orecchie del medico. Non fu un atto di cattiveria, ma di pura, inesorabile indifferenza burocratica che Elia trovò più devastante di qualsiasi rifiuto esplicito. Il conflitto non era tra il paziente e il medico, ma tra la realtà umana dell'attesa e la virtualità algoritmica che governava l'accesso alle prestazioni. Elia comprese in quel momento che la loro permanenza non era più registrata su alcun registro ufficiale; erano diventati i fantasmi di un sistema che aveva aggiornato le proprie priorità, dimenticando di chiudere il ciclo delle chiamate. La signora Valli tornò a sedersi, non con rassegnazione, ma con una sorta di stordimento lucido, consapevole che il loro tempo non aveva più valore di scambio all'interno di quelle mura. Il dottor Valenti scomparve dietro una porta blindata, lasciando dietro di sé solo l'eco dei suoi passi e il ronzio dei neon che, in un ultimo spasmo di energia, iniziarono a tremolare. Elia guardò di nuovo l'orologio: la lancetta si era fermata, bloccata in una posizione che non indicava più un'ora, ma uno stato permanente di sospensione. Si alzò, sentendo il peso di un'attesa che non avrebbe mai avuto una risposta, poiché l'interlocutore era svanito nel flusso dei dati. Uscì nel corridoio buio, lasciando la signora Valli immobile, una statua di carne e ossa in una sala che non ospitava più nessuno. La porta principale era chiusa a chiave, non per proteggere chi era dentro, ma per sigillare l'irrilevanza di chi restava fuori dalle statistiche di efficienza. La conclusione dell'attesa non era giunta tramite una diagnosi o una cura, ma attraverso la cancellazione dell'esistenza stessa del paziente dall'orizzonte visivo dell'istituzione. Mentre camminava verso l'uscita di sicurezza, Elia si domandò se, una volta fuori, sarebbe stato ancora in grado di riconoscersi come individuo, o se l'invisibilità patita in quella stanza fosse ormai una condizione permanente, una macchia indelebile che avrebbe portato con sé nel mondo esterno, dove ogni attesa, in fondo, è solo un'illusione di essere attesi.\n\nTuttavia, riflettendo sulla propria condizione, Elia intuì che quell'invisibilità non rappresentava soltanto un'esclusione subita, ma paradossalmente una forma estrema di liberazione dal giogo dell'aspettativa sociale. Se l'istituzione aveva smesso di riconoscerli, allora essi non erano più soggetti alle sue rigide tassonomie, né alle sue diagnosi spesso riduttive che incasellavano il dolore umano entro parametri puramente statistici. Uscire da quel circuito, seppur traumatico, significava riappropriarsi di un tempo non più misurato dal ticchettio meccanico di un orologio difettoso, ma scandito dal ritmo autentico della propria esistenza, finalmente sottratta alla sorveglianza algoritmica. La signora Valli, rimasta sola, incarnava ora una resistenza silenziosa contro l'oblio burocratico: la sua immobilità non era più il segno di un'attesa vana, bensì il rifiuto di convalidare l'autorità di un sistema che aveva abdicato alla propria missione etica. Elia comprese che, varcando la soglia di emergenza, avrebbe potuto reclamare la propria identità non come paziente, ma come individuo capace di definire autonomamente il proprio valore, al di fuori dei database del dottor Valenti. La vera prigione non risiedeva nelle pareti color avorio, ma nell'illusione che la cura potesse essere mediata esclusivamente da una gerarchia digitale. Questa consapevolezza agì come un catalizzatore, trasformando il senso di smarrimento iniziale in una lucida determinazione a non cercare più convalide esterne. Il mondo esterno, spesso percepito come un luogo di attese infinite, apparve improvvisamente meno opprimente, poiché il riconoscimento di sé non dipendeva più dallo sguardo di un'istituzione indifferente. La macchia dell'invisibilità, temuta poco prima, si rivelò essere un mantello protettivo, una zona franca dove il sé poteva finalmente rigenerarsi, lontano dagli sguardi clinici che riducevano le persone a meri flussi di dati. In quel silenzio notturno, Elia percepì la possibilità di un'esistenza autentica, dove il tempo non è più un debito da saldare davanti a uno sportello, ma una risorsa preziosa da custodire gelosamente, libera dalle catene di un'efficienza che, nel tentativo di ottimizzare la vita, ne aveva inavvertitamente smarrito l'essenza più profonda e irriducibile.",
+    "wordCount": 883,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "convulsi",
+        "lemma": "convulsi",
+        "glosses": {
+          "es": "convulsive",
+          "en": "convulsive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asettiche",
+        "lemma": "asettiche",
+        "glosses": {
+          "es": "aseptic/sterile",
+          "en": "aseptic/sterile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inesorabile",
+        "lemma": "inesorabile",
+        "glosses": {
+          "es": "inexorable",
+          "en": "inexorable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stordimento",
+        "lemma": "stordimento",
+        "glosses": {
+          "es": "bewilderment",
+          "en": "bewilderment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "spasmo",
+        "lemma": "spasmo",
+        "glosses": {
+          "es": "spasm",
+          "en": "spasm"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "irrilevanza",
+        "lemma": "irrilevanza",
+        "glosses": {
+          "es": "irrelevance",
+          "en": "irrelevance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 30.4,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'invisibilità del paziente nell'istituzione."
+        },
+        {
+          "id": "a2",
+          "text": "Il malfunzionamento tecnico del Policlinico."
+        },
+        {
+          "id": "a3",
+          "text": "La negligenza medica del dottor Valenti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elia si chiese se l'attesa potesse dirsi conclusa nel momento esatto in cui l'istituzione smetteva di percepire coloro che stavano attendendo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa fa la signora Valli quando il dottor Valenti attraversa la stanza?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Si alza e lo insegue."
+        },
+        {
+          "id": "a2",
+          "text": "Tenta di parlargli."
+        },
+        {
+          "id": "a3",
+          "text": "Resta seduta in silenzio."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La signora Valli si alzò, le ginocchia che scricchiolavano nel silenzio, e tentò di chiamarlo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché il dottor Valenti ignora i pazienti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Non li ritiene meritevoli di cure."
+        },
+        {
+          "id": "a2",
+          "text": "Ha finito il suo turno di lavoro."
+        },
+        {
+          "id": "a3",
+          "text": "È troppo concentrato sul suo tablet."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "il suo sguardo fisso su un tablet luminoso, come se il mondo fisico fosse diventato un ostacolo trascurabile rispetto ai dati digitali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo dell'autore nel descrivere l'orologio fermo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sottolineare che il tempo dell'attesa è diventato un'illusione."
+        },
+        {
+          "id": "a2",
+          "text": "Indicare che è arrivata l'ora della chiusura della clinica."
+        },
+        {
+          "id": "a3",
+          "text": "Mostrare la scarsa manutenzione del Policlinico di San Giuda."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la lancetta si era fermata, bloccata in una posizione che non indicava più un'ora, ma uno stato permanente di sospensione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale aggettivo descrive meglio il tono del narratore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indignato."
+        },
+        {
+          "id": "a2",
+          "text": "Malinconico."
+        },
+        {
+          "id": "a3",
+          "text": "Distaccato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elia si domandò se, una volta fuori, sarebbe stato ancora in grado di riconoscersi come individuo, o se l'invisibilità patita in quella stanza fosse ormai una condizione permanente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'asettiche' nel contesto del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pieno di batteri pericolosi."
+        },
+        {
+          "id": "a2",
+          "text": "Molto pulito e accogliente."
+        },
+        {
+          "id": "a3",
+          "text": "Privo di calore umano e sterile."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la sua voce, fioca e incrinata, si perse contro le pareti asettiche",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio critico in cui discuti se l'uso della tecnologia digitale nelle istituzioni pubbliche stia effettivamente migliorando l'efficienza o se stia alienando il rapporto umano tra professionista e utente, prendendo spunto dalla metafora dell'invisibilità presentata nel testo.",
+      "en": "Scrivi un breve saggio critico in cui discuti se l'uso della tecnologia digitale nelle istituzioni pubbliche stia effettivamente migliorando l'efficienza o se stia alienando il rapporto umano tra professionista e utente, prendendo spunto dalla metafora dell'invisibilità presentata nel testo."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Esaminare la tensione esistenziale tra l'individuo che attende e l'istituzione che smette di riconoscere tale presenza.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'invisibilità dell'attesa | C2 Reading | WeLearn",
+      "en": "L'invisibilità dell'attesa | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi narrativa sulla natura dell'attesa in un contesto clinico, dove il confine tra il paziente e l'istituzione si dissolve nell'oblio burocratico.",
+      "en": "Un'analisi narrativa sulla natura dell'attesa in un contesto clinico, dove il confine tra il paziente e l'istituzione si dissolve nell'oblio burocratico."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

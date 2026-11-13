@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'eco cristallizzata: Il paradosso di Elara",
+      "en": "L'eco cristallizzata: Il paradosso di Elara"
+    },
+    "intro": {
+      "es": "Un curatore d'archivio riflette sulla natura effimera della memoria orale quando viene trasformata in un reperto statico, esplorando il conflitto etico tra conservazione e tradimento della voce originale.",
+      "en": "Un curatore d'archivio riflette sulla natura effimera della memoria orale quando viene trasformata in un reperto statico, esplorando il conflitto etico tra conservazione e tradimento della voce originale."
+    },
+    "mission": {
+      "es": "Analizzare la tensione filosofica tra la preservazione di una testimonianza orale e la perdita di vitalità che ne consegue, valutando le implicazioni morali del curatore nel manipolare il contesto narrativo.",
+      "en": "Analizzare la tensione filosofica tra la preservazione di una testimonianza orale e la perdita di vitalità che ne consegue, valutando le implicazioni morali del curatore nel manipolare il contesto narrativo."
+    },
+    "targetText": "Il silenzio della sala di consultazione dell'Archivio Voci Perdute non era mai assoluto; era una densità vibrante, composta dai sospiri di migliaia di vite intrappolate in bobine magnetiche e formati digitali. Elara, curatrice capo, sedeva davanti a una console, osservando l'oscilloscopio che disegnava il profilo vocale di un anziano pescatore di un borgo ormai sommerso. La sua missione era chiara: preservare l'integrità del racconto. Eppure, mentre puliva il segnale dai fruscii di fondo, si sentiva come un tassidermista che, nel tentativo di immortalare la maestosità di una fiera, finisce per privarla di ogni scintilla vitale. La voce di quell'uomo, una volta fluida e carica di intonazioni dialettali che sfidavano la grammatica standard, stava diventando un oggetto di studio asettico, una reliquia che, pur essendo tecnicamente perfetta, perdeva la sua capacità di trasmettere il calore del momento in cui era stata originariamente pronunciata. Elara sapeva che ogni intervento di restauro sonoro era, in ultima analisi, un atto di riscrittura, un'imposizione di ordine sul caos umano che definiva l'identità del narratore.\n\nIl conflitto si palesò in una serata piovosa, quando ricevette la visita di Julian, il nipote del pescatore. L'uomo non cercava la perfezione tecnica; voleva sentire le esitazioni di suo nonno, le risate che interrompevano il racconto, persino il rumore lontano di una sedia che strisciava sul pavimento. Elara gli mostrò la versione 'pulita', dove ogni rumore parassita era stato rimosso per favorire la chiarezza del testo. Julian ascoltò in silenzio, ma il suo sguardo, inizialmente colmo di aspettativa, si spense rapidamente. 'Questa non è la sua voce,' mormorò, 'è una simulazione elegante. Avete rimosso il mondo in cui viveva per lasciare solo le sue parole, ma le parole, senza il mondo, sono gusci vuoti.' In quel momento, Elara comprese la portata del suo tradimento professionale. Aveva dato priorità alla leggibilità dell'archivio rispetto alla verità dell'esperienza vissuta, trasformando una testimonianza viva in un documento di consultazione che, pur essendo accessibile, risultava profondamente estraneo a chi quella voce l'aveva amata.\n\nQuesta consapevolezza innescò una crisi metodologica che la spinse a riconsiderare l'intera filosofia dell'istituzione. L'archivio si vantava di essere un baluardo contro l'oblio, ma forse, rifletteva Elara, il vero oblio non era la scomparsa dei suoni, bensì la loro fossilizzazione in una forma che non permetteva più alcuna risonanza emotiva. Se il compito dell'archivista è quello di mediare tra il passato e il futuro, Elara si chiedeva se tale mediazione non fosse intrinsecamente distruttiva. Ogni volta che una traccia audio veniva catalogata, indicizzata e normalizzata, essa veniva isolata dal flusso temporale che le conferiva significato. Il paradosso era brutale: per rendere la voce eterna, Elara doveva ucciderne l'immediatezza, rendendola un reperto da museo che, per quanto curato, rimaneva irrimediabilmente muto riguardo alla realtà pulsante che lo aveva generato.\n\nLa tensione tra la necessità di conservazione e il rispetto per l'integrità dell'esperienza divenne il fulcro delle sue notti insonni. Iniziò a sperimentare un approccio diverso, lasciando intatte le imperfezioni, i silenzi imbarazzanti e le interruzioni ambientali, convinta che solo attraverso il rumore di fondo si potesse percepire la presenza reale del narratore. Tuttavia, i vertici dell'archivio non accolsero con favore questa svolta. Sostenevano che l'accessibilità e la chiarezza fossero i pilastri della loro missione istituzionale e che la fedeltà al 'rumore' fosse un capriccio estetico che minava la scientificità della raccolta. Elara si trovò isolata, sospesa tra il dovere verso l'istituzione che le garantiva i mezzi per operare e la responsabilità etica verso le voci che, in un certo senso, le erano state affidate in custodia. Sapeva che, insistendo su questa strada, rischiava il licenziamento, ma l'idea di continuare a produrre 'fantasmi digitali' le appariva ormai insopportabile.\n\nIl finale giunse con una decisione silenziosa ma definitiva: Elara caricò nel database pubblico una selezione di registrazioni non filtrate, accompagnandole con un manifesto che contestava la prassi archivistica corrente. Sapeva che, una volta pubblicato, il suo operato sarebbe stato rimosso e lei stessa allontanata dall'incarico. Mentre il cursore del mouse si posizionava sul tasto 'pubblica', Elara non sentì il peso della sconfitta, ma una strana leggerezza. Aveva restituito alle voci la loro imperfezione, il loro rumore, la loro umanità. Il costo era la fine della sua carriera, ma il guadagno era la preservazione di una verità che non poteva essere ridotta a un semplice file audio. Uscendo dall'edificio, l'aria notturna le sembrò, per la prima volta dopo anni, ricca di suoni non filtrati, di un caos vitale che nessuna tecnologia avrebbe mai potuto, o dovuto, domare.\n\nTuttavia, la reazione del pubblico fu tutt'altro che univoca, rivelando una frattura profonda nella ricezione della memoria collettiva. Mentre una parte degli utenti, guidata dal desiderio di autenticità, lodava la scelta di Elara come un atto di liberazione, molti ricercatori accademici espressero un netto dissenso, sostenendo che tale approccio compromettesse la fruibilità scientifica del patrimonio. Senza una normalizzazione rigorosa, le registrazioni diventavano labirinti inaccessibili, dove il rumore di fondo oscurava il contenuto informativo, rendendo impossibile l'analisi comparativa e la catalogazione sistematica necessaria per le generazioni future. Questo sollevò un interrogativo inquietante: se la perfezione tecnica è una forma di oblio, il caos non rischia di diventare una barriera insormontabile che condanna le voci all'irrilevanza? Elara aveva forse scambiato la necessità di una mediazione critica con un tradimento, dimenticando che ogni archivio è, per sua natura, una costruzione artificiale. La sua sfida aveva restituito dignità al frammento, ma aveva anche privato la comunità di uno strumento di ricerca coerente, lasciando in sospeso il dilemma se sia più crudele silenziare un ricordo o renderlo incomprensibile nel suo disordine.",
+    "wordCount": 917,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tassidermista",
+        "lemma": "tassidermista",
+        "glosses": {
+          "es": "A person who prepares, stuffs, and mounts the skins of animals.",
+          "en": "A person who prepares, stuffs, and mounts the skins of animals."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asettico",
+        "lemma": "asettico",
+        "glosses": {
+          "es": "Lacking emotion, warmth, or individual character.",
+          "en": "Lacking emotion, warmth, or individual character."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fossilizzazione",
+        "lemma": "fossilizzazione",
+        "glosses": {
+          "es": "The process of becoming static, rigid, or unchanging.",
+          "en": "The process of becoming static, rigid, or unchanging."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "baluardo",
+        "lemma": "baluardo",
+        "glosses": {
+          "es": "A defensive wall or a metaphorical protector.",
+          "en": "A defensive wall or a metaphorical protector."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intrinsecamente",
+        "lemma": "intrinsecamente",
+        "glosses": {
+          "es": "By its very nature; essentially.",
+          "en": "By its very nature; essentially."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "domare",
+        "lemma": "domare",
+        "glosses": {
+          "es": "To tame or bring under control.",
+          "en": "To tame or bring under control."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.8,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto etico tra la conservazione tecnica e l'autenticità di una testimonianza."
+        },
+        {
+          "id": "a2",
+          "text": "La superiorità della tecnologia digitale sulla memoria analogica."
+        },
+        {
+          "id": "a3",
+          "text": "La storia dell'Archivio Voci Perdute e la sua evoluzione burocratica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il conflitto si palesò in una serata piovosa, quando ricevette la visita di Julian, il nipote del pescatore.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché Julian è insoddisfatto della versione restaurata della voce di suo nonno?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché la qualità audio è troppo bassa."
+        },
+        {
+          "id": "a2",
+          "text": "Perché mancano i suoni ambientali e le imperfezioni naturali."
+        },
+        {
+          "id": "a3",
+          "text": "Perché il volume del parlato è troppo alto."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "voleva sentire le esitazioni di suo nonno, le risate che interrompevano il racconto, persino il rumore lontano di una sedia che strisciava sul pavimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autrice riguardo alla prassi di indicizzazione dell'archivio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che essa sia un metodo necessario per garantire la longevità delle registrazioni."
+        },
+        {
+          "id": "a2",
+          "text": "Che essa sia troppo costosa per essere mantenuta a lungo termine."
+        },
+        {
+          "id": "a3",
+          "text": "Che essa agisca come un filtro che distorce la verità dell'esperienza vissuta."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ogni volta che una traccia audio veniva catalogata, indicizzata e normalizzata, essa veniva isolata dal flusso temporale che le conferiva significato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del gesto finale di Elara?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Restituire l'umanità e l'imperfezione originale alle registrazioni."
+        },
+        {
+          "id": "a2",
+          "text": "Dimostrare la superiorità tecnica del suo metodo di restauro."
+        },
+        {
+          "id": "a3",
+          "text": "Ottenere una promozione all'interno dell'istituzione archivistica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Aveva restituito alle voci la loro imperfezione, il loro rumore, la loro umanità.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono pervade la riflessione di Elara durante il racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e fiducioso."
+        },
+        {
+          "id": "a2",
+          "text": "Malinconico e critico."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e distaccato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il paradosso era brutale: per rendere la voce eterna, Elara doveva ucciderne l'immediatezza, rendendola un reperto da museo che, per quanto curato, rimaneva irrimediabilmente muto riguardo alla realtà pulsante che lo aveva generato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autrice con il termine 'asettico' riferito alla voce?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una voce priva di difetti tecnici."
+        },
+        {
+          "id": "a2",
+          "text": "Una voce che è stata digitalizzata correttamente."
+        },
+        {
+          "id": "a3",
+          "text": "Una voce che manca di calore e vitalità."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La voce di quell'uomo, una volta fluida e carica di intonazioni dialettali che sfidavano la grammatica standard, stava diventando un oggetto di studio asettico",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio critico (250 parole) in cui discuti se la conservazione digitale debba privilegiare la fedeltà tecnica o l'integrità emotiva del contenuto, giustificando la tua posizione con riferimenti al paradosso espresso nel testo.",
+      "en": "Scrivi un breve saggio critico (250 parole) in cui discuti se la conservazione digitale debba privilegiare la fedeltà tecnica o l'integrità emotiva del contenuto, giustificando la tua posizione con riferimenti al paradosso espresso nel testo."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare la tensione filosofica tra la preservazione di una testimonianza orale e la perdita di vitalità che ne consegue, valutando le implicazioni morali del curatore nel manipolare il contesto narrativo.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'eco cristallizzata: Il paradosso di Elara | C2 Reading | WeLearn",
+      "en": "L'eco cristallizzata: Il paradosso di Elara | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un curatore d'archivio riflette sulla natura effimera della memoria orale quando viene trasformata in un reperto statico, esplorando il conflitto etico tra conservazione e tradimento della voce originale.",
+      "en": "Un curatore d'archivio riflette sulla natura effimera della memoria orale quando viene trasformata in un reperto statico, esplorando il conflitto etico tra conservazione e tradimento della voce originale."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

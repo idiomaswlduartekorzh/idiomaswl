@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-library-window",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Hinter der Glasfassade",
+      "en": "Hinter der Glasfassade"
+    },
+    "intro": {
+      "es": "Eine Reflexion über die verborgene Arbeit hinter der Fassade öffentlicher Institutionen.",
+      "en": "Eine Reflexion über die verborgene Arbeit hinter der Fassade öffentlicher Institutionen."
+    },
+    "mission": {
+      "es": "Analysieren Sie die subtile Spannung zwischen dem Anspruch auf ständige Verfügbarkeit und der menschlichen Realität der Dienstleistung.",
+      "en": "Analysieren Sie die subtile Spannung zwischen dem Anspruch auf ständige Verfügbarkeit und der menschlichen Realität der Dienstleistung."
+    },
+    "targetText": "Die Stadtbibliothek von Aethelgard war ein Gebäude aus Glas und Versprechen. An der Frontfassade prangte in goldenen Lettern der Slogan: 'Geöffnet für den Geist, jederzeit für Sie bereit'. Frau Dr. Hannes, die leitende Bibliothekarin, betrachtete das Schild oft mit einer Mischung aus Bewunderung und tiefem Groll. Für die Bürger war das Gebäude ein monolithischer Hort des Wissens, ein Ort, der wie von Geisterhand funktionierte. Sie sahen die Bücher, die in Reih und Glied in den Regalen standen, die sauberen Lesetische und die stets aktualisierten Kataloge. Sie sahen jedoch nicht die nächtliche Arbeit von Elias, dem Archivar, der in den dunklen Katakomben des Untergeschosses die Bestände katalogisierte, während die Stadt schlief. Elias war ein Schatten, ein notwendiges Korrektiv zur glänzenden Fassade, dessen Arbeit erst dann existierte, wenn sie in den Morgenstunden als nahtloser Service präsentiert wurde. Die Diskrepanz zwischen der versprochenen Verfügbarkeit und der physischen Erschöpfung derer, die sie ermöglichten, war das ungeschriebene Gesetz dieses Hauses.\n\nEines Abends, kurz vor der Schließung, trat ein junger Student an den Schalter. Er beschwerte sich lautstark darüber, dass ein bestimmtes historisches Manuskript nicht sofort auffindbar gewesen sei. 'Es ist doch alles digitalisiert', behauptete er mit einer Selbstverständlichkeit, die Frau Dr. Hannes den Atem raubte. Er verstand nicht, dass die Digitalisierung kein automatischer Prozess war, sondern das Ergebnis von Elias' stundenlanger, mühsamer Arbeit unter flackerndem Licht. Die Bibliothek versprach eine Welt ohne Reibung, eine Welt, in der Information ein Naturrecht war, das keine menschliche Anstrengung erforderte. Frau Dr. Hannes wollte ihm widersprechen, wollte ihm von den staubigen Händen des Archivars erzählen, von den Fehlern, die korrigiert werden mussten, und von der Einsamkeit der Nachtschichten. Doch sie schwieg. Das Schweigen war Teil ihres Vertrages; sie war die Kuratorin des Mythos, nicht die Enthüllerin der Realität.\n\nDie Spannung eskalierte, als die Stadtverwaltung beschloss, die Öffnungszeiten aufgrund der hohen Nachfrage noch weiter auszudehnen. Man feierte dies als Sieg der Bildungsgerechtigkeit. Niemand fragte, wer die Last dieser zusätzlichen Stunden tragen würde. Elias war bereits am Rande seiner Kräfte. Sein Rücken war gekrümmt, seine Augen gerötet von der ständigen Arbeit an den Mikrofilmen. Als Frau Dr. Hannes ihm die Nachricht überbrachte, sah er sie nicht an. Er legte lediglich eine weitere Akte auf den Stapel. In diesem Moment begriff sie, dass die Bibliothek nicht nur ein Ort des Wissens war, sondern ein Ort der Ausbeutung, getarnt als kultureller Dienst. Die Institution fraß ihre Arbeiter auf, um die Illusion der Unendlichkeit aufrechtzuerhalten. Die Stille im Archiv war nicht friedlich; sie war das Geräusch eines Systems, das den Menschen als bloßes Zahnrad im Getriebe der Verfügbarkeit betrachtete.\n\nDie Konsequenz ließ nicht lange auf sich warten. In einer regnerischen Dienstagnacht brach Elias zusammen. Er wurde nicht im Lesesaal gefunden, sondern in der hintersten Ecke des Archivs, umgeben von Dokumenten, die er noch hätte ordnen müssen. Die Nachricht verbreitete sich schnell, doch die offizielle Stellungnahme der Stadtverwaltung war bezeichnend: Man sprach von einem bedauerlichen Einzelfall und betonte, dass der Betrieb der Bibliothek davon unberührt bleibe. Die Bücher würden weiterhin am nächsten Morgen an ihrem Platz stehen, die Kataloge würden weiterhin funktionieren. Die Institution hatte ihre Immunität bewiesen. Sie war größer als das Individuum, das ihr Leben für sie gelassen hatte. Frau Dr. Hannes stand am nächsten Morgen vor dem goldenen Schild und las den Slogan erneut. Er wirkte nun wie eine Drohung.\n\nSie verstand nun, dass ihre eigene Rolle darin bestand, die Fassade zu bewahren, selbst wenn das Fundament längst bröckelte. Sie trat zurück, nicht aus Protest, sondern aus einer tiefen Erschöpfung heraus, die sie mit Elias teilte. Sie hinterließ keine Kündigung, nur einen leeren Schreibtisch. Die Bibliothek würde weiter funktionieren, wie sie es immer tat. Die Stadt würde weiterhin ihre Verfügbarkeit genießen, ohne jemals zu erfahren, dass das Licht, das die Regale erhellte, auf Kosten derer brannte, die im Dunkeln arbeiteten. Die Geschichte der Bibliothek war eine Geschichte der Auslöschung des Individuums zugunsten eines abstrakten Ideals, das niemals wirklich existiert hatte. Und während sie das Gebäude verließ, spürte sie zum ersten Mal die wahre Bedeutung der Stille, die sie so lange bewacht hatte: Es war das Echo einer Arbeit, die niemals gewürdigt wurde.\n\nDoch der wahre Preis dieser institutionellen Gleichgültigkeit manifestierte sich erst in den Wochen nach ihrem Verschwinden. Da niemand die verborgenen, manuellen Korrekturen vornahm, die Elias einst akribisch in die digitalen Metadaten eingepflegt hatte, begannen die Algorithmen des Systems schleichend zu korrumpieren. Zuerst waren es nur vereinzelte Fehlverweise, doch bald führten die Suchanfragen in ein Labyrinth aus logischen Sackgassen und inhaltlichen Anachronismen. Die Stadtverwaltung, gefangen in ihrer eigenen Rhetorik der Automatisierung, reagierte mit noch komplexeren Software-Updates, die den Mangel an menschlicher Intuition jedoch nur weiter verschleierten, anstatt ihn zu beheben. Die Bürger, die einst die mühelose Verfügbarkeit als gottgegebenes Recht betrachtet hatten, begannen nun, die Bibliothek als unzuverlässig zu meiden; das Gebäude blieb physisch intakt, verlor aber schleichend seine geistige Relevanz. Es zeigte sich, dass die Bibliothek nicht an der physischen Abwesenheit ihrer Arbeiter zugrunde ging, sondern an der Hybris, Wissen als reines Datenprodukt ohne menschliche Kuratierung zu definieren. Die glänzende Fassade aus Glas und Versprechen blieb bestehen, doch im Inneren herrschte nun eine Leere, die weit schwerwiegender war als die Erschöpfung eines Einzelnen. Der Mythos der unendlichen Verfügbarkeit war an seiner eigenen Entmenschlichung erstickt, und die Stadt Aethelgard musste erkennen, dass ein Wissensspeicher ohne die stille, aufopferungsvolle Arbeit des Archivars lediglich ein leeres Monument für eine Wahrheit war, die niemand mehr zu ordnen vermochte. Die Stille, die einst das Echo der Arbeit war, verwandelte sich nun in das Schweigen eines vergessenen Ortes, der seine Seele längst verloren hatte.",
+    "wordCount": 918,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "monolithischer",
+        "lemma": "monolithischer",
+        "glosses": {
+          "es": "massive, uniform, and imposing",
+          "en": "massive, uniform, and imposing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Korrektiv",
+        "lemma": "Korrektiv",
+        "glosses": {
+          "es": "a means of correcting or counterbalancing",
+          "en": "a means of correcting or counterbalancing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Diskrepanz",
+        "lemma": "Diskrepanz",
+        "glosses": {
+          "es": "a lack of compatibility or similarity between two things",
+          "en": "a lack of compatibility or similarity between two things"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mühsamer",
+        "lemma": "mühsamer",
+        "glosses": {
+          "es": "requiring great effort and labor",
+          "en": "requiring great effort and labor"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Immunität",
+        "lemma": "Immunität",
+        "glosses": {
+          "es": "the state of being unaffected by something",
+          "en": "the state of being unaffected by something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Auslöschung",
+        "lemma": "Auslöschung",
+        "glosses": {
+          "es": "the process of destroying or removing something completely",
+          "en": "the process of destroying or removing something completely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.4,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es in der Erzählung im Kern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Kosten der Verfügbarkeit."
+        },
+        {
+          "id": "a2",
+          "text": "Um den Erfolg der Digitalisierung."
+        },
+        {
+          "id": "a3",
+          "text": "Um die Zukunft der Archive."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Diskrepanz zwischen der versprochenen Verfügbarkeit und der physischen Erschöpfung derer, die sie ermöglichten, war das ungeschriebene Gesetz dieses Hauses.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was geschieht mit Elias am Ende?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er kündigt."
+        },
+        {
+          "id": "a2",
+          "text": "Er bricht zusammen."
+        },
+        {
+          "id": "a3",
+          "text": "Er geht in Rente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "In einer regnerischen Dienstagnacht brach Elias zusammen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht die Stadtverwaltung zum Vorfall?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie zeigt Reue."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ignoriert ihn."
+        },
+        {
+          "id": "a3",
+          "text": "Sie bagatellisiert ihn."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Man sprach von einem bedauerlichen Einzelfall und betonte, dass der Betrieb der Bibliothek davon unberührt bleibe.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum schweigt Frau Dr. Hannes gegenüber dem Studenten?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil sie den Mythos der Bibliothek als Kuratorin schützen muss."
+        },
+        {
+          "id": "a2",
+          "text": "Weil sie den Studenten nicht belehren möchte."
+        },
+        {
+          "id": "a3",
+          "text": "Weil sie selbst von der Digitalisierung überzeugt ist."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "sie war die Kuratorin des Mythos, nicht die Enthüllerin der Realität.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton der Erzählung beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und zukunftsorientiert."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und melancholisch."
+        },
+        {
+          "id": "a3",
+          "text": "Sachlich und distanziert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Stille im Archiv war nicht friedlich; sie war das Geräusch eines Systems, das den Menschen als bloßes Zahnrad im Getriebe der Verfügbarkeit betrachtete.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet 'monolithischer' in diesem Kontext?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sehr groß und prächtig."
+        },
+        {
+          "id": "a2",
+          "text": "Modern und transparent."
+        },
+        {
+          "id": "a3",
+          "text": "Einförmig und unnachgiebig."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Für die Bürger war das Gebäude ein monolithischer Hort des Wissens, ein Ort, der wie von Geisterhand funktionierte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine kritische Analyse (ca. 250 Wörter), in der Sie erörtern, inwiefern die Bibliothek als Metapher für moderne Dienstleistungsgesellschaften fungiert. Gehen Sie dabei auf die Spannung zwischen Nutzererwartung und Arbeitsrealität ein.",
+      "en": "Schreiben Sie eine kritische Analyse (ca. 250 Wörter), in der Sie erörtern, inwiefern die Bibliothek als Metapher für moderne Dienstleistungsgesellschaften fungiert. Gehen Sie dabei auf die Spannung zwischen Nutzererwartung und Arbeitsrealität ein."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie die subtile Spannung zwischen dem Anspruch auf ständige Verfügbarkeit und der menschlichen Realität der Dienstleistung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Hinter der Glasfassade | C2 Reading | WeLearn",
+      "en": "Hinter der Glasfassade | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine Reflexion über die verborgene Arbeit hinter der Fassade öffentlicher Institutionen.",
+      "en": "Eine Reflexion über die verborgene Arbeit hinter der Fassade öffentlicher Institutionen."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

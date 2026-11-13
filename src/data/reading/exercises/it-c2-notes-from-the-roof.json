@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-notes-from-the-roof",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'orizzonte divergente del tetto solare",
+      "en": "L'orizzonte divergente del tetto solare"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla dinamica di potere in un condominio alle prese con la transizione energetica.",
+      "en": "Un'analisi critica sulla dinamica di potere in un condominio alle prese con la transizione energetica."
+    },
+    "mission": {
+      "es": "Analizzare le implicazioni socio-economiche di una delibera assembleare riguardante l'installazione di pannelli fotovoltaici condivisi.",
+      "en": "Analizzare le implicazioni socio-economiche di una delibera assembleare riguardante l'installazione di pannelli fotovoltaici condivisi."
+    },
+    "targetText": "Alla cortese attenzione dell'amministratore e dei condomini del complesso 'Le Terrazze di Eolo'. Gentili tutti, scrivo in merito all'imminente votazione sull'installazione dell'impianto fotovoltaico centralizzato sul tetto comune, un progetto che, sebbene presentato come un'avanguardia di sostenibilità, cela una disparità di interessi che non possiamo ignorare. Come proprietario dell'unità 4B, riconosco il valore intrinseco della transizione energetica, tuttavia, la proposta attuale sembra ignorare le asimmetrie temporali tra chi detiene la proprietà a lungo termine e chi, come il signor Valerio, vive in affitto con un contratto in scadenza tra pochi mesi. La neutralità del voto nasconde orizzonti di rischio radicalmente diversi. Per noi proprietari, l'investimento si configura come un ammortamento pluriennale, un incremento del valore dell'immobile che si spalmerà su decenni. Per l'inquilino, l'esborso immediato richiesto per la quota di partecipazione si traduce in una perdita secca, poiché il beneficio economico derivante dal risparmio in bolletta non riuscirà mai a compensare l'investimento iniziale prima del suo trasferimento. È una questione di giustizia distributiva che va oltre la semplice conta dei voti a maggioranza. Il signor Valerio ha sollevato obiezioni legittime durante l'assemblea preliminare, sottolineando come la ripartizione dei costi, basata sui millesimi di proprietà, ignori totalmente la durata effettiva dell'occupazione dell'immobile. La sua proposta di un fondo di compensazione gestito dal proprietario è stata liquidata con una sufficienza che trovo preoccupante per la coesione del nostro vivere comune. Se procediamo con questa votazione senza emendamenti, rischiamo di creare un precedente di esclusione economica che trasforma un bene comune, come il tetto, in uno strumento di pressione finanziaria. La mia posizione non è di ostruzionismo, ma di cautela etica. Un sistema che impone un costo pro-quota senza garantire un ritorno proporzionale al tempo di permanenza non è equo, è coercitivo. La delibera, così come formulata, ignora che il tetto è una risorsa finita e che il suo sfruttamento deve rispondere a criteri di equità intergenerazionale e temporale. Se il proprietario dell'unità 4C insiste nel voler votare a favore senza considerare la posizione dell'inquilino, sta implicitamente dichiarando che il vantaggio del singolo prevale sulla stabilità del tessuto sociale del condominio. Mi chiedo se siamo pronti ad accettare una tale frammentazione. La transizione energetica non deve essere un pretesto per una gentrificazione energetica in cui chi ha più capitale consolida la propria posizione a scapito di chi occupa temporaneamente lo spazio. L'assemblea di martedì prossimo non deve essere solo un esercizio di aritmetica condominiale, ma un momento di riflessione sulla natura stessa del nostro abitare. Propongo formalmente di sospendere la votazione per integrare nel regolamento una clausola di rimborso pro-quota per gli inquilini in uscita, garantendo che l'investimento sia sostenibile per tutti, non solo per chi possiede i muri. Senza questa tutela, il mio voto sarà contrario, non per mancanza di fede nel solare, ma per preservare l'integrità dei rapporti che rendono questo complesso una comunità e non solo un insieme di investimenti immobiliari. Resto in attesa di un confronto costruttivo prima della convocazione ufficiale, sperando che la ragione prevalga sulla fretta di chi vede nel tetto solo un moltiplicatore di valore anziché una risorsa collettiva.\n\nTuttavia, è necessario considerare un contrappunto fondamentale: la natura stessa del condominio, inteso come organismo giuridico unitario, mal si concilia con la frammentazione delle responsabilità in base alla durata del contratto di locazione. Se dovessimo accogliere il principio della compensazione pro-quota, apriremmo un pericoloso precedente che trasformerebbe l'amministratore in un arbitro di rapporti contrattuali privati tra proprietari e inquilini, esulando dalle sue competenze istituzionali. La gestione delle spese straordinarie, per legge e consuetudine, ricade sulla proprietà, la quale ha il diritto e l'onere di decidere le migliorie strutturali atte a valorizzare l'immobile nel suo complesso. Vincolare il progresso tecnologico dell'edificio alla precarietà dei contratti di affitto significherebbe, di fatto, paralizzare ogni innovazione, poiché esisterà sempre un inquilino in procinto di lasciare l'unità immobiliare. La sostenibilità energetica non può attendere il ciclo di vita dei contratti di locazione, pena l'obsolescenza tecnologica dell'intero complesso 'Le Terrazze di Eolo'. Inoltre, l'idea che l'inquilino sia un soggetto passivo che subisce una 'perdita secca' ignora il beneficio immediato di una bolletta ridotta, che rappresenta un risparmio netto fin dal primo mese di operatività dell'impianto. Se il canone di locazione è stato pattuito in un contesto di mercato che non prevedeva tale efficientamento, il risparmio energetico si configura come un vantaggio economico diretto per l'occupante, che potrebbe persino superare l'esborso iniziale entro il termine del contratto. Impedire l'installazione in nome di una presunta equità temporale rischia di trasformarsi in un atto di egoismo collettivo, dove la tutela di un singolo contratto di breve durata blocca il beneficio ambientale e finanziario di decine di famiglie residenti. La vera giustizia distributiva non risiede nel calcolo millesimale del tempo di permanenza, ma nella capacità di una comunità di elevare i propri standard abitativi, sapendo che l'efficienza energetica è un valore aggiunto che si riflette sulla qualità della vita di chiunque, in quel momento, abiti lo spazio. Pertanto, la proposta di sospensione, pur mossa da nobili intenti, finirebbe per cristallizzare una staticità dannosa, preferendo la conservazione di un equilibrio precario all'evoluzione necessaria verso un modello di abitare più responsabile, consapevole e, in ultima analisi, realmente sostenibile per l'intera collettività condominiale.",
+    "wordCount": 862,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ammortamento",
+        "lemma": "ammortamento",
+        "glosses": {
+          "es": "depreciation or amortization of an asset",
+          "en": "depreciation or amortization of an asset"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asimmetrie",
+        "lemma": "asimmetrie",
+        "glosses": {
+          "es": "imbalances or lack of symmetry",
+          "en": "imbalances or lack of symmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esborso",
+        "lemma": "esborso",
+        "glosses": {
+          "es": "outlay or expenditure of money",
+          "en": "outlay or expenditure of money"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ostruzionismo",
+        "lemma": "ostruzionismo",
+        "glosses": {
+          "es": "deliberate obstruction or delay",
+          "en": "deliberate obstruction or delay"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "gentrificazione",
+        "lemma": "gentrificazione",
+        "glosses": {
+          "es": "gentrification",
+          "en": "gentrification"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coercitivo",
+        "lemma": "coercitivo",
+        "glosses": {
+          "es": "coercive",
+          "en": "coercive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 28.7,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale della comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La necessità di una gestione equa dei costi dell'impianto solare tra proprietari e inquilini."
+        },
+        {
+          "id": "a2",
+          "text": "Il rifiuto categorico di installare pannelli fotovoltaici sul tetto del condominio."
+        },
+        {
+          "id": "a3",
+          "text": "La richiesta di aumentare le quote millesimali per i proprietari di appartamenti grandi."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La mia posizione non è di ostruzionismo, ma di cautela etica. Un sistema che impone un costo pro-quota senza garantire un ritorno proporzionale al tempo di permanenza non è equo, è coercitivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale soluzione propone l'autore per risolvere il conflitto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'annullamento definitivo del progetto."
+        },
+        {
+          "id": "a2",
+          "text": "L'inserimento di una clausola di rimborso per gli inquilini."
+        },
+        {
+          "id": "a3",
+          "text": "La vendita del tetto a una società esterna."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Propongo formalmente di sospendere la votazione per integrare nel regolamento una clausola di rimborso pro-quota per gli inquilini in uscita",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa si deduce riguardo alla posizione del signor Valerio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È un proprietario che vuole massimizzare il profitto."
+        },
+        {
+          "id": "a2",
+          "text": "È un amministratore che cerca di mediare tra le parti."
+        },
+        {
+          "id": "a3",
+          "text": "È un inquilino che teme un investimento non recuperabile."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Per l'inquilino, l'esborso immediato richiesto per la quota di partecipazione si traduce in una perdita secca, poiché il beneficio economico derivante dal risparmio in bolletta non riuscirà mai a compensare l'investimento iniziale prima del suo trasferimento.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sollecitare una riflessione etica sulla ripartizione dei costi dell'impianto fotovoltaico."
+        },
+        {
+          "id": "a2",
+          "text": "Informare i condomini sulle caratteristiche tecniche dei pannelli solari."
+        },
+        {
+          "id": "a3",
+          "text": "Denunciare l'illegalità della votazione prevista per martedì prossimo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'assemblea di martedì prossimo non deve essere solo un esercizio di aritmetica condominiale, ma un momento di riflessione sulla natura stessa del nostro abitare.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel rivolgersi ai condomini?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aggressivo e privo di spirito di collaborazione."
+        },
+        {
+          "id": "a2",
+          "text": "Rispettoso ma fermo nel difendere l'equità."
+        },
+        {
+          "id": "a3",
+          "text": "Distaccato e puramente burocratico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Resto in attesa di un confronto costruttivo prima della convocazione ufficiale, sperando che la ragione prevalga sulla fretta di chi vede nel tetto solo un moltiplicatore di valore anziché una risorsa collettiva.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'gentrificazione energetica'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il miglioramento estetico dell'edificio tramite l'installazione di tecnologie moderne."
+        },
+        {
+          "id": "a2",
+          "text": "La trasformazione del tetto in un'area riservata esclusivamente ai proprietari più ricchi del condominio."
+        },
+        {
+          "id": "a3",
+          "text": "Un processo in cui il capitale consolida posizioni di vantaggio a scapito di chi vive temporaneamente nello spazio."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La transizione energetica non deve essere un pretesto per una gentrificazione energetica in cui chi ha più capitale consolida la propria posizione a scapito di chi occupa temporaneamente lo spazio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi una risposta formale da parte dell'amministratore del condominio, in cui si tenta di mediare tra le istanze di equità sollevate dall'autore e l'urgenza di approvare l'impianto solare entro l'anno fiscale.",
+      "en": "Scrivi una risposta formale da parte dell'amministratore del condominio, in cui si tenta di mediare tra le istanze di equità sollevate dall'autore e l'urgenza di approvare l'impianto solare entro l'anno fiscale."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare le implicazioni socio-economiche di una delibera assembleare riguardante l'installazione di pannelli fotovoltaici condivisi.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'orizzonte divergente del tetto solare | C2 Reading | WeLearn",
+      "en": "L'orizzonte divergente del tetto solare | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla dinamica di potere in un condominio alle prese con la transizione energetica.",
+      "en": "Un'analisi critica sulla dinamica di potere in un condominio alle prese con la transizione energetica."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

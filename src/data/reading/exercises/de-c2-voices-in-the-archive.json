@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Echo der Stille",
+      "en": "Das Echo der Stille"
+    },
+    "intro": {
+      "es": "Eine Erzählung über die ethischen Dilemmata der Archivierung menschlicher Stimmen.",
+      "en": "Eine Erzählung über die ethischen Dilemmata der Archivierung menschlicher Stimmen."
+    },
+    "mission": {
+      "es": "Analysieren Sie die philosophische Spannung zwischen der Bewahrung einer Stimme und dem Verlust ihrer lebendigen Autonomie.",
+      "en": "Analysieren Sie die philosophische Spannung zwischen der Bewahrung einer Stimme und dem Verlust ihrer lebendigen Autonomie."
+    },
+    "targetText": "Kurator Elias Thorne betrachtete die gläserne Vitrine im Zentrum des Archivs, in der ein einzelnes, altes Magnetband ruhte. Es enthielt die Aufzeichnungen von Clara Vane, einer Dichterin, deren Stimme in den Archiven als heiliger Gral der oralen Überlieferung galt. Elias war für die Digitalisierung dieses Erbes verantwortlich, doch heute Abend, während der Regen gegen die hohen Fenster des Archivs peitschte, zögerte er. Die Aufgabe schien ihm plötzlich wie ein Akt der Grabschändung. Indem er Claras Worte in ein unveränderliches, digitales Format überführte, entzog er ihnen die Flüchtigkeit, die sie einst so lebendig gemacht hatte. Er erinnerte sich an das Gespräch mit seiner Assistentin, Sarah, die die Archivierung als Triumph über die Zeit feierte. Für Sarah war das Band ein Objekt, das vor dem Verfall gerettet werden musste. Für Elias jedoch war die Stimme Claras kein Objekt, sondern ein Prozess, eine ständige Neuinterpretation ihrer selbst, die nun in einem statischen Zustand erstarren sollte. Er fragte sich, ob die Bewahrung einer Stimme nicht zwangsläufig deren Tod bedeutete, da sie nun nicht mehr auf die Welt reagieren konnte, sondern nur noch als Echo in einem technologischen Vakuum existierte.\n\nDie Spannung zwischen der physischen Konservierung und der ontologischen Integrität der Stimme war das zentrale Thema seiner Arbeit. Er dachte an die zahlreichen Besucher, die täglich in das Archiv strömten, um diese Fragmente der Vergangenheit zu hören. Sie suchten nach einer Authentizität, die Elias als Kurator zwar garantierte, deren Preis er jedoch immer stärker in Frage stellte. Wenn er die Frequenz des Bandes glättete und das Rauschen entfernte, löschte er damit nicht nur technische Unreinheiten, sondern auch die Spuren des Atems, die Pausen des Zögerns und die kleinen Brüche in Claras Stimme, die ihre Menschlichkeit ausmachten. Er betrachtete das Band als einen Käfig. Die Stimme war gefangen in einer Form, die sie nicht mehr kontrollieren konnte, und er, als Kurator, war der Wärter, der den Schlüssel hielt. Die Ironie war ihm schmerzlich bewusst: Er schützte das Vermächtnis, indem er es in ein Korsett presste, das jede zukünftige Entwicklung der Bedeutung verhinderte.\n\nSarah trat in den Raum und unterbrach seine Gedanken. Sie wollte wissen, ob die Digitalisierung des Vane-Bandes nach Plan verlief. Elias antwortete ausweichend. Er sprach von technischen Schwierigkeiten, von der Notwendigkeit, den Prozess zu verlangsamen. Sarah sah ihn verständnislos an. Für sie war die Effizienz des Archivs das höchste Gut. Sie argumentierte, dass eine Stimme, die man nicht hören könne, de facto nicht existiere. Elias widersprach ihr innerlich: Eine Stimme, die nur noch als perfektes, digitales Artefakt existiere, sei vielleicht noch weniger präsent als eine, die im Gedächtnis verblasste. Er sah in Sarahs Augen den blinden Glauben an die technologische Erlösung, eine Haltung, die er selbst einst geteilt hatte. Doch je mehr er sich mit den Aufzeichnungen beschäftigte, desto deutlicher wurde ihm die Kluft zwischen der archivierten Wahrheit und der gelebten Erfahrung. Er fragte sich, ob die Archivierung nicht eine Form der Enteignung war, bei der die Sprecherin ihre eigene Geschichte an eine Institution abtrat, die sie nun nach eigenem Gutdünken verwaltete.\n\nAls Sarah den Raum wieder verlassen hatte, setzte sich Elias an das Mischpult. Er hatte die Wahl: Er konnte die Aufnahme so bearbeiten, dass sie makellos klang, oder er konnte die störenden Nebengeräusche belassen, die das Alter des Bandes verrieten. Er wusste, dass die Leitung des Archivs makellose Ergebnisse forderte. Doch er fühlte sich Clara gegenüber verpflichtet, deren Stimme er in seiner Vorstellung als lebendiges Wesen begriff. Er begann, eine Kopie zu erstellen, die nicht den Standards entsprach, sondern die das Rauschen und die Pausen betonte. Es war ein Akt des Widerstands gegen die sterile Perfektion der modernen Archivierung. Er wusste, dass dies seine letzte Arbeit in diesem Archiv sein könnte. Die Entscheidung, die Integrität des Originals über die Anforderungen der Institution zu stellen, war ein Bruch mit allem, was er bisher gelernt hatte. Er verstand nun, dass die wahre Bewahrung nicht darin bestand, alles festzuhalten, sondern das Wesentliche durch das Zulassen von Vergänglichkeit zu ehren.\n\nIn der Stille des Archivs, nachdem er die Aufnahme abgeschlossen hatte, fühlte er eine seltsame Erleichterung. Er hatte das Band nicht in einen Käfig gesperrt, sondern es in seiner Zerbrechlichkeit belassen. Er wusste, dass dieses Vorgehen bei der Archivleitung auf Unverständnis stoßen würde. Doch für ihn war es die einzige Möglichkeit, der Stimme Claras gerecht zu werden. Er verließ das Gebäude, während die Stadt draußen in einer anderen Zeit lebte, einer Zeit, die sich nicht archivieren ließ, sondern in jedem Moment neu entstand. Er hatte verstanden, dass seine Rolle als Kurator nicht darin bestand, die Zeit anzuhalten, sondern ihr den Raum zu geben, sich zu entfalten, auch wenn dies bedeutete, dass am Ende nur das Schweigen übrig blieb. Das Echo von Claras Stimme würde in seinem Gedächtnis weiterleben, nicht als digitales Signal, sondern als ein Moment der menschlichen Begegnung, der sich jeder Konservierung entzog.\n\nDennoch blieb die Frage, ob Elias mit diesem Akt der Bewahrung nicht eine gefährliche Illusion schuf. Indem er das Rauschen als authentisches Merkmal konservierte, erhob er den Verfall selbst zu einer ästhetischen Kategorie, die ebenso konstruiert wirkte wie die angestrebte digitale Makellosigkeit. Vielleicht war das Festhalten an der Unvollkommenheit lediglich eine neue, subtilere Form der Romantisierung, die den eigentlichen Kern von Claras Werk hinter einer nostalgischen Fassade verbarg. Der Widerstand gegen die Technik änderte nichts an der Tatsache, dass das Medium, ob analog oder digital, stets zwischen dem Hörer und der Stimme stand. Elias hatte das Band zwar vor der Sterilität bewahrt, doch er hatte es gleichzeitig in eine neue, persönliche Interpretation gezwungen, die Claras ursprüngliche Intention womöglich ebenso verfälschte wie jede algorithmische Glättung.",
+    "wordCount": 922,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Grabschändung",
+        "lemma": "Grabschändung",
+        "glosses": {
+          "es": "desecration of a grave",
+          "en": "desecration of a grave"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontologischen",
+        "lemma": "ontologischen",
+        "glosses": {
+          "es": "ontological",
+          "en": "ontological"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Enteignung",
+        "lemma": "Enteignung",
+        "glosses": {
+          "es": "expropriation",
+          "en": "expropriation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Artefakt",
+        "lemma": "Artefakt",
+        "glosses": {
+          "es": "artifact",
+          "en": "artifact"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Korsett",
+        "lemma": "Korsett",
+        "glosses": {
+          "es": "corset/tight constraint",
+          "en": "corset/tight constraint"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Vergänglichkeit",
+        "lemma": "Vergänglichkeit",
+        "glosses": {
+          "es": "transience",
+          "en": "transience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19.2,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptanliegen des Kurators im Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die ethische Reflexion über die Archivierung von Stimmen."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Perfektionierung alter Tonbänder."
+        },
+        {
+          "id": "a3",
+          "text": "Der Schutz von Archivbeständen vor physischer Zerstörung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Spannung zwischen der physischen Konservierung und der ontologischen Integrität der Stimme war das zentrale Thema seiner Arbeit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welche Entscheidung trifft Elias am Ende?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er löscht die Aufnahme."
+        },
+        {
+          "id": "a2",
+          "text": "Er erstellt eine ungeschönte Kopie."
+        },
+        {
+          "id": "a3",
+          "text": "Er folgt den Anweisungen der Leitung."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Er begann, eine Kopie zu erstellen, die nicht den Standards entsprach, sondern die das Rauschen und die Pausen betonte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie steht Elias zu seiner Assistentin Sarah?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er bewundert ihre technische Präzision und Effizienz."
+        },
+        {
+          "id": "a2",
+          "text": "Er fühlt sich ihr intellektuell unterlegen."
+        },
+        {
+          "id": "a3",
+          "text": "Er lehnt ihren technokratischen Ansatz ab."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er sah in Sarahs Augen den blinden Glauben an die technologische Erlösung, eine Haltung, die er selbst einst geteilt hatte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum zögert Elias, das Band zu digitalisieren?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er fürchtet den Verlust der Flüchtigkeit und Menschlichkeit der Stimme."
+        },
+        {
+          "id": "a2",
+          "text": "Er hat Angst, dass die digitale Datei durch Viren zerstört wird."
+        },
+        {
+          "id": "a3",
+          "text": "Er glaubt, dass die Archivleitung die Daten für kommerzielle Zwecke nutzt."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Indem er Claras Worte in ein unveränderliches, digitales Format überführte, entzog er ihnen die Flüchtigkeit, die sie einst so lebendig gemacht hatte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welche Grundstimmung vermittelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine optimistische Sicht auf den technischen Fortschritt."
+        },
+        {
+          "id": "a2",
+          "text": "Eine melancholische und kritische Auseinandersetzung mit der Bewahrung."
+        },
+        {
+          "id": "a3",
+          "text": "Eine distanzierte und rein sachliche Analyse der Archivierungsprozesse."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Ironie war ihm schmerzlich bewusst: Er schützte das Vermächtnis, indem er es in ein Korsett presste, das jede zukünftige Entwicklung der Bedeutung verhinderte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Enteignung' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der physische Diebstahl von wertvollen historischen Objekten."
+        },
+        {
+          "id": "a2",
+          "text": "Die rechtliche Übertragung von Grundbesitz an den Staat."
+        },
+        {
+          "id": "a3",
+          "text": "Der Entzug des geistigen Eigentums durch eine Institution."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er fragte sich, ob die Archivierung nicht eine Form der Enteignung war, bei der die Sprecherin ihre eigene Geschichte an eine Institution abtrat, die sie nun nach eigenem Gutdünken verwaltete.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine kritische Stellungnahme zur Frage, ob die Bewahrung menschlicher Stimmen in Archiven eher eine kulturelle Bereicherung oder eine gewaltsame Fixierung darstellt.",
+      "en": "Schreiben Sie eine kritische Stellungnahme zur Frage, ob die Bewahrung menschlicher Stimmen in Archiven eher eine kulturelle Bereicherung oder eine gewaltsame Fixierung darstellt."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie die philosophische Spannung zwischen der Bewahrung einer Stimme und dem Verlust ihrer lebendigen Autonomie.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Echo der Stille | C2 Reading | WeLearn",
+      "en": "Das Echo der Stille | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine Erzählung über die ethischen Dilemmata der Archivierung menschlicher Stimmen.",
+      "en": "Eine Erzählung über die ethischen Dilemmata der Archivierung menschlicher Stimmen."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-local-stage",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il paradosso del sipario: tra numeri e sostanza",
+      "en": "Il paradosso del sipario: tra numeri e sostanza"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla trasformazione dei teatri comunitari in entità guidate esclusivamente dalle metriche di performance.",
+      "en": "Un'analisi critica sulla trasformazione dei teatri comunitari in entità guidate esclusivamente dalle metriche di performance."
+    },
+    "mission": {
+      "es": "Esplorare la tensione tra il valore intrinseco dell'arte teatrale e le pressioni burocratiche per la crescita quantitativa degli spettatori.",
+      "en": "Esplorare la tensione tra il valore intrinseco dell'arte teatrale e le pressioni burocratiche per la crescita quantitativa degli spettatori."
+    },
+    "targetText": "Il Teatro del Borgo Antico, un tempo fulcro di una sperimentazione drammaturgica che sfidava le convenzioni, si trova oggi al centro di una tempesta burocratica. La direttrice artistica, Elena Valenti, ha trascorso l'ultimo decennio coltivando un repertorio di teatro sociale che, pur non richiamando folle oceaniche, ha trasformato la percezione del quartiere tra i residenti. Tuttavia, la recente delibera del consiglio direttivo, presieduto dall'imprenditore immobiliare Marco Sordi, ha imposto un cambio di rotta radicale: il finanziamento futuro sarà vincolato esclusivamente all'incremento del volume di biglietti venduti. Sordi sostiene che un teatro che non riempie la sala è un teatro che fallisce la sua funzione pubblica, una tesi che riduce l'arte a una mera commodity di consumo rapido. Questa imposizione ha creato una spaccatura insanabile tra chi vede nel numero un indicatore di vitalità e chi, come Valenti, vi scorge la morte dell'anima sperimentale del luogo.\n\nLa situazione è precipitata durante la messa in scena de 'L'eco del vuoto', un'opera complessa che esplorava la solitudine urbana. Nonostante la qualità eccelsa della recitazione, la sala presentava ampi spazi vuoti. Sordi, presente in platea, ha interpretato il silenzio della sala non come un momento di riflessione catartica, ma come un fallimento gestionale. Il giorno seguente, ha recapitato a Valenti una notifica formale: i fondi per la stagione successiva sarebbero stati decurtati del trenta percento, a meno che il cartellone non venisse sostituito da produzioni di intrattenimento leggero, orientate al grande pubblico. La tensione è palpabile: il personale tecnico, fedele alla visione di Valenti, teme che l'abbandono della ricerca artistica porti a un esodo del pubblico più intellettualmente esigente, trasformando il teatro in un contenitore vuoto di significato.\n\nIl conflitto non è puramente economico, ma filosofico. Valenti sostiene che l'efficacia di un'opera non si misuri in termini di occupazione dei posti, quanto piuttosto nell'impatto duraturo che essa esercita sui singoli spettatori. Per Sordi, invece, il teatro è un servizio pubblico che deve giustificare la propria esistenza attraverso la massa critica. In questo scontro, la figura del mediatore, l'assessore alla cultura locale, si è rivelata inefficace, preferendo mantenere una posizione di neutralità che di fatto avalla la visione quantitativa di Sordi. La comunità teatrale si interroga: è possibile mantenere l'integrità artistica quando il successo viene definito esclusivamente da algoritmi di partecipazione e non dalla profondità dell'esperienza?\n\nLa vicenda ha raggiunto il culmine quando Valenti, in un gesto di sfida, ha organizzato una maratona di teatro di strada, portando le scene fuori dalle mura del teatro per incontrare i cittadini nei luoghi di aggregazione informale. Questa iniziativa, pur avendo riscosso un interesse genuino, è stata liquidata da Sordi come una distrazione inutile, un costo operativo non giustificato dal ritorno economico immediato. La separazione tra i due è ormai definitiva: da una parte, una gestione che vede il teatro come un'azienda che deve produrre utili sociali misurabili; dall'altra, un'artista che difende il diritto all'oscurità, alla complessità e alla fallibilità del teatro d'avanguardia.\n\nIl finale rimane sospeso. Il Teatro del Borgo Antico non ha ancora chiuso, ma la sua identità è in uno stato di decomposizione. La scelta di Sordi di privilegiare il numero ha innescato una reazione a catena: gli attori storici hanno rassegnato le dimissioni, rifiutandosi di diventare meri esecutori di un intrattenimento seriale. Il teatro è ora un guscio in cui si alternano produzioni di scarso valore artistico, mentre la comunità, privata del suo punto di riferimento critico, si è dispersa. Chi ha vinto in questa contesa? Se il successo si misura in biglietti staccati, Sordi ha trionfato. Se si misura nella capacità di un'istituzione di nutrire il pensiero critico di una collettività, la sconfitta è totale e irreparabile.\n\nTuttavia, analizzando la questione sotto una lente sociologica più ampia, emerge una conseguenza inaspettata che trascende la dicotomia tra profitto e ricerca artistica. L'abbandono del rigore intellettuale in favore di una programmazione commerciale ha innescato un fenomeno di gentrificazione culturale che va ben oltre le mura del Borgo Antico. Privata di un presidio di riflessione critica, la zona ha iniziato a subire una metamorfosi accelerata: i negozi di quartiere, un tempo frequentati da un pubblico eterogeneo attratto dalla vitalità intellettuale del teatro, sono stati progressivamente sostituiti da esercizi commerciali standardizzati, pensati per un consumatore di passaggio privo di legami identitari con il territorio. La perdita dell'anima sperimentale del teatro non ha semplicemente svuotato una sala, ma ha reciso il cordone ombelicale che teneva unita la comunità attorno a un valore condiviso non monetizzabile. Paradossalmente, il successo numerico sbandierato da Sordi si è rivelato un'illusione statistica: sebbene i biglietti vengano venduti, il pubblico che oggi affolla le poltrone è composto da spettatori occasionali, privi di quel senso di appartenenza che rendeva il Borgo Antico un organismo vivente. La vittoria di Sordi appare dunque come una conquista di Pirro, una gestione che, nel tentativo di massimizzare l'efficienza, ha eroso il capitale sociale necessario alla sopravvivenza stessa del luogo. Il teatro, trasformato in una mera vetrina, ha perso la sua capacità di generare quel dibattito pubblico che, in ultima analisi, è l'unico vero garante della longevità di un'istituzione culturale. Si delinea così un futuro in cui l'edificio resta in piedi, ma la sua funzione di catalizzatore sociale è definitivamente evaporata, lasciando il quartiere in un deserto relazionale dove la quantità ha trionfato sulla sostanza, condannando l'intera area a una mediocrità che, nel lungo periodo, non sarà sostenibile nemmeno dal punto di vista puramente economico, sancendo il fallimento ultimo di una visione miope e puramente quantitativa.",
+    "wordCount": 906,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "fulcro",
+        "lemma": "fulcro",
+        "glosses": {
+          "es": "center or pivot point",
+          "en": "center or pivot point"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "commodity",
+        "lemma": "commodity",
+        "glosses": {
+          "es": "a raw material or primary agricultural product that can be bought and sold",
+          "en": "a raw material or primary agricultural product that can be bought and sold"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "catartica",
+        "lemma": "catartica",
+        "glosses": {
+          "es": "relating to the purging of emotions",
+          "en": "relating to the purging of emotions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decurtati",
+        "lemma": "decurtati",
+        "glosses": {
+          "es": "reduced or docked",
+          "en": "reduced or docked"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "avalla",
+        "lemma": "avalla",
+        "glosses": {
+          "es": "endorses or supports",
+          "en": "endorses or supports"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "decomposizione",
+        "lemma": "decomposizione",
+        "glosses": {
+          "es": "the state of breaking down or decay",
+          "en": "the state of breaking down or decay"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.5,
+      "maxSentenceWords": 66,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del brano?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La crisi d'identità del teatro tra arte e numeri."
+        },
+        {
+          "id": "a2",
+          "text": "Il fallimento finanziario del teatro."
+        },
+        {
+          "id": "a3",
+          "text": "La gestione burocratica dei teatri pubblici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il conflitto non è puramente economico, ma filosofico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa ha causato il taglio dei fondi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'insoddisfazione dell'assessore."
+        },
+        {
+          "id": "a2",
+          "text": "La scarsa affluenza di pubblico."
+        },
+        {
+          "id": "a3",
+          "text": "Le dimissioni degli attori."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "i fondi per la stagione successiva sarebbero stati decurtati del trenta percento, a meno che il cartellone non venisse sostituito da produzioni di intrattenimento leggero",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Qual è la posizione dell'assessore alla cultura?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sostiene apertamente Elena Valenti."
+        },
+        {
+          "id": "a2",
+          "text": "Si schiera con la visione di Marco Sordi."
+        },
+        {
+          "id": "a3",
+          "text": "Evita di prendere una posizione netta."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'assessore alla cultura locale, si è rivelata inefficace, preferendo mantenere una posizione di neutralità che di fatto avalla la visione quantitativa di Sordi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual era l'obiettivo di Valenti con la maratona di teatro di strada?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dimostrare che il teatro può esistere fuori dagli schemi imposti."
+        },
+        {
+          "id": "a2",
+          "text": "Aumentare i profitti immediati del teatro per placare Sordi."
+        },
+        {
+          "id": "a3",
+          "text": "Cercare nuovi finanziamenti privati per la stagione successiva."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Valenti, in un gesto di sfida, ha organizzato una maratona di teatro di strada, portando le scene fuori dalle mura del teatro per incontrare i cittadini nei luoghi di aggregazione informale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono utilizza l'autore nel descrivere il finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e speranzoso."
+        },
+        {
+          "id": "a2",
+          "text": "Malinconico e critico."
+        },
+        {
+          "id": "a3",
+          "text": "Distaccato e analitico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il teatro è ora un guscio in cui si alternano produzioni di scarso valore artistico, mentre la comunità, privata del suo punto di riferimento critico, si è dispersa.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'fulcro' nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il limite massimo."
+        },
+        {
+          "id": "a2",
+          "text": "L'ostacolo principale."
+        },
+        {
+          "id": "a3",
+          "text": "Il centro vitale."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Il Teatro del Borgo Antico, un tempo fulcro di una sperimentazione drammaturgica che sfidava le convenzioni",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio critico in cui discuti se, secondo la tua opinione, le istituzioni culturali debbano essere valutate in base al loro impatto sociale misurabile o alla loro autonomia artistica, portando esempi concreti a supporto della tua tesi.",
+      "en": "Scrivi un breve saggio critico in cui discuti se, secondo la tua opinione, le istituzioni culturali debbano essere valutate in base al loro impatto sociale misurabile o alla loro autonomia artistica, portando esempi concreti a supporto della tua tesi."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Esplorare la tensione tra il valore intrinseco dell'arte teatrale e le pressioni burocratiche per la crescita quantitativa degli spettatori.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il paradosso del sipario: tra numeri e sostanza | C2 Reading | WeLearn",
+      "en": "Il paradosso del sipario: tra numeri e sostanza | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla trasformazione dei teatri comunitari in entità guidate esclusivamente dalle metriche di performance.",
+      "en": "Un'analisi critica sulla trasformazione dei teatri comunitari in entità guidate esclusivamente dalle metriche di performance."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

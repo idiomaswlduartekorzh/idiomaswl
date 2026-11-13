@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-open-schedule",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della flessibilità: una corrispondenza critica",
+      "en": "L'illusione della flessibilità: una corrispondenza critica"
+    },
+    "intro": {
+      "es": "Un'analisi epistolare sulla gestione del tempo scolastico e le sue implicazioni etiche.",
+      "en": "Un'analisi epistolare sulla gestione del tempo scolastico e le sue implicazioni etiche."
+    },
+    "mission": {
+      "es": "Analizzare le dinamiche di potere sottese alla flessibilità oraria nel contesto accademico.",
+      "en": "Analizzare le dinamiche di potere sottese alla flessibilità oraria nel contesto accademico."
+    },
+    "targetText": "Alla cortese attenzione della Preside Valeria Monti, scrivo in risposta alla sua recente proposta di implementare un 'orario modulare autogestito' per il corpo docente del Liceo Aethelgard. Sebbene l'iniziativa si presenti sotto l'egida di una modernizzazione democratica, volta a favorire la conciliazione tra vita privata e obblighi professionali, ritengo doveroso sollevare alcune riserve sostanziali. La proposta suggerisce che la scelta di quando erogare le lezioni sia una mera questione di preferenza individuale, un'opzione che il docente può esercitare in base alle proprie necessità contingenti. Tuttavia, questa visione ignora deliberatamente l'asimmetria strutturale che definisce il nostro ambiente di lavoro. Trattare il tempo come una risorsa equamente distribuita, la cui gestione dipende esclusivamente dalla volontà del singolo, significa obliterare le disparità materiali che condizionano la vita di ciascuno di noi. Chi possiede un caregiver a carico o chi deve far fronte a oneri domestici non negoziabili non sta 'scegliendo' un orario: sta subendo una costrizione camuffata da autonomia. La flessibilità, in questo contesto, rischia di trasformarsi in una trappola meritocratica dove chi ha meno vincoli esterni può dedicare più tempo alla ricerca e alla progettazione, accumulando un capitale di visibilità che i colleghi più gravati non potranno mai eguagliare. Non si tratta di una questione di efficienza pedagogica, bensì di una distribuzione del carico cognitivo che viene privatizzata invece di essere istituzionalmente sostenuta. La mia esperienza diretta durante il semestre passato, quando ho dovuto gestire le lezioni in fasce orarie serali per compensare l'assenza di un collega, ha chiarito come tale frammentazione oraria eroda il senso di comunità. La scuola non è un aggregato di liberi professionisti che convergono in un hub digitale, ma un ecosistema che necessita di una coesione temporale per funzionare. Quando la sincronicità viene sacrificata sull'altare di una flessibilità individualizzata, a pagarne le spese sono gli studenti, che si ritrovano con un percorso frammentato e privo di una visione d'insieme, e i docenti, sempre più isolati nelle proprie bolle temporali. È sintomatico che la proposta non preveda alcun meccanismo di compensazione per chi, suo malgrado, si trova a coprire le fasce orarie meno appetibili, quelle che la retorica aziendalistica definisce 'marginali'. La sua comunicazione omette di considerare che la disponibilità temporale non è un dato neutro, ma il riflesso di una condizione sociale preesistente. Chiedere a un docente di 'ottimizzare' il proprio orario significa, di fatto, chiedergli di rendere conto della propria vita privata, trasformando la sfera intima in un parametro di valutazione professionale. La richiesta di una maggiore flessibilità si traduce quindi in un'intrusione normativa che limita, anziché espandere, la nostra libertà. Le scrivo per chiederle di riconsiderare l'impianto stesso del progetto. Non possiamo accettare che la gestione del tempo diventi un esercizio di negoziazione individuale, che finisce inevitabilmente per premiare chi ha già meno ostacoli. Una vera equità richiederebbe, al contrario, una pianificazione collettiva che tenga conto delle necessità reali, non delle presunte preferenze dei singoli. La mia posizione non è un rifiuto aprioristico del cambiamento, ma un monito contro la mercificazione del tempo docente. Se il Liceo Aethelgard desidera realmente supportare il proprio personale, dovrebbe investire in risorse che riducano il carico di lavoro complessivo, non in strumenti che ci costringono a competere per le ore migliori. Resto in attesa di un suo riscontro, sperando che questa riflessione possa innescare un dibattito più profondo sulle fondamenta etiche del nostro operato, ben oltre le logiche di mera organizzazione logistica.\n\nInoltre, è fondamentale considerare l'effetto domino che tale frammentazione eserciterebbe sulla qualità della didattica interdisciplinare, pilastro del nostro progetto formativo. Se ogni docente dovesse calibrare la propria presenza in base a contingenze personali, la possibilità di coordinamento collegiale – già precaria a causa dei ritmi serrati – diverrebbe un miraggio irraggiungibile. La scuola, nel suo valore più alto, si fonda sull'incontro fortuito, sul confronto informale nei corridoi e sulla sincronia di intenti che solo una presenza condivisa può garantire. Sostituire questo tessuto con una serie di moduli asincroni significherebbe ridurre l'esperienza scolastica a una mera erogazione di contenuti, privando gli studenti di quel clima di scambio costante che è il vero motore dell'apprendimento critico. Inoltre, l'implementazione di un simile sistema finirebbe per alimentare una competizione strisciante tra i dipartimenti, dove la gestione degli spazi fisici diventerebbe oggetto di negoziazioni estenuanti, sottraendo preziose energie mentali alla ricerca pedagogica. Non possiamo ignorare che, in un'istituzione educativa, il tempo non è solo una variabile logistica, ma una risorsa pedagogica collettiva che appartiene alla comunità scolastica nel suo insieme. Frammentare questo tempo significa frammentare l'identità stessa del Liceo Aethelgard, trasformando un ambiente di crescita intellettuale in un insieme di uffici isolati dove l'individualismo trionfa sulla visione d'insieme. La mia preoccupazione, Preside, è che questa deriva verso l'autonomia gestionale nasconda una progressiva dismissione del ruolo pubblico dell'insegnante, sempre più spinto a gestire in solitudine le inefficienze del sistema. Se davvero vogliamo innovare, dobbiamo farlo potenziando i momenti di incontro, non incoraggiando una dispersione che ci rende meno coesi e, di conseguenza, meno efficaci. La flessibilità, se interpretata come isolamento, non è progresso, bensì una regressione verso un modello atomizzato che nega la natura intrinsecamente relazionale del nostro mestiere. La invito pertanto a riflettere su come la salvaguardia di un tempo comune sia, in ultima analisi, l'unica vera forma di tutela per la dignità professionale di ciascuno di noi e per la qualità dell'istruzione che offriamo quotidianamente alle nuove generazioni.",
+    "wordCount": 887,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "obliterare",
+        "lemma": "obliterare",
+        "glosses": {
+          "es": "to erase or destroy completely",
+          "en": "to erase or destroy completely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "contingenti",
+        "lemma": "contingenti",
+        "glosses": {
+          "es": "dependent on circumstances",
+          "en": "dependent on circumstances"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sintomatico",
+        "lemma": "sintomatico",
+        "glosses": {
+          "es": "indicative of a deeper problem",
+          "en": "indicative of a deeper problem"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aprioristico",
+        "lemma": "aprioristico",
+        "glosses": {
+          "es": "based on theoretical deduction rather than experience",
+          "en": "based on theoretical deduction rather than experience"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mercificazione",
+        "lemma": "mercificazione",
+        "glosses": {
+          "es": "the act of treating something as a commodity",
+          "en": "the act of treating something as a commodity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "egida",
+        "lemma": "egida",
+        "glosses": {
+          "es": "protection or support",
+          "en": "protection or support"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.7,
+      "maxSentenceWords": 41,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è l'argomento centrale della critica mossa dalla docente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'iniquità insita nella flessibilità oraria."
+        },
+        {
+          "id": "a2",
+          "text": "La mancanza di fondi per il personale."
+        },
+        {
+          "id": "a3",
+          "text": "La scarsa qualità dei software di gestione."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Trattare il tempo come una risorsa equamente distribuita, la cui gestione dipende esclusivamente dalla volontà del singolo, significa obliterare le disparità materiali che condizionano la vita di ciascuno di noi.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa accade agli studenti a causa della flessibilità proposta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ricevono voti più bassi."
+        },
+        {
+          "id": "a2",
+          "text": "Perdono la coesione didattica."
+        },
+        {
+          "id": "a3",
+          "text": "Devono studiare di sera."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Quando la sincronicità viene sacrificata sull'altare di una flessibilità individualizzata, a pagarne le spese sono gli studenti, che si ritrovano con un percorso frammentato e privo di una visione d'insieme",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché la docente ritiene che la proposta sia una 'trappola meritocratica'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché premia solo chi ha più titoli di studio."
+        },
+        {
+          "id": "a2",
+          "text": "Perché aumenta il lavoro burocratico."
+        },
+        {
+          "id": "a3",
+          "text": "Perché favorisce chi ha meno vincoli personali."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La flessibilità, in questo contesto, rischia di trasformarsi in una trappola meritocratica dove chi ha meno vincoli esterni può dedicare più tempo alla ricerca e alla progettazione, accumulando un capitale di visibilità che i colleghi più gravati non potranno mai eguagliare.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'intento ultimo dell'autrice della lettera?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Proporre una revisione etica dell'organizzazione."
+        },
+        {
+          "id": "a2",
+          "text": "Chiedere le dimissioni della Preside Monti."
+        },
+        {
+          "id": "a3",
+          "text": "Dimostrare di essere più competente dei colleghi."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le scrivo per chiederle di riconsiderare l'impianto stesso del progetto. Non possiamo accettare che la gestione del tempo diventi un esercizio di negoziazione individuale",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono caratterizza la missiva?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sarcastico e sprezzante."
+        },
+        {
+          "id": "a2",
+          "text": "Analitico e assertivo."
+        },
+        {
+          "id": "a3",
+          "text": "Timoroso e sottomesso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La mia posizione non è un rifiuto aprioristico del cambiamento, ma un monito contro la mercificazione del tempo docente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autrice con il termine 'obliterare'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Rafforzare una teoria."
+        },
+        {
+          "id": "a2",
+          "text": "Ignorare parzialmente."
+        },
+        {
+          "id": "a3",
+          "text": "Cancellare sistematicamente."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Trattare il tempo come una risorsa equamente distribuita, la cui gestione dipende esclusivamente dalla volontà del singolo, significa obliterare le disparità materiali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Redigi una breve risposta formale da parte della Preside Valeria Monti, in cui si tenta di mediare tra la necessità di flessibilità gestionale e le preoccupazioni etiche sollevate dalla docente, proponendo un incontro di confronto.",
+      "en": "Redigi una breve risposta formale da parte della Preside Valeria Monti, in cui si tenta di mediare tra la necessità di flessibilità gestionale e le preoccupazioni etiche sollevate dalla docente, proponendo un incontro di confronto."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare le dinamiche di potere sottese alla flessibilità oraria nel contesto accademico.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della flessibilità: una corrispondenza critica | C2 Reading | WeLearn",
+      "en": "L'illusione della flessibilità: una corrispondenza critica | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi epistolare sulla gestione del tempo scolastico e le sue implicazioni etiche.",
+      "en": "Un'analisi epistolare sulla gestione del tempo scolastico e le sue implicazioni etiche."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il Custode dei Silenzi",
+      "en": "Il Custode dei Silenzi"
+    },
+    "intro": {
+      "es": "Un racconto che esplora la tensione tra la conservazione burocratica delle sementi e la memoria orale delle comunità rurali.",
+      "en": "Un racconto che esplora la tensione tra la conservazione burocratica delle sementi e la memoria orale delle comunità rurali."
+    },
+    "mission": {
+      "es": "Analizzare le dinamiche di potere insite nella catalogazione del patrimonio botanico e le conseguenze dell'esclusione delle tradizioni orali.",
+      "en": "Analizzare le dinamiche di potere insite nella catalogazione del patrimonio botanico e le conseguenze dell'esclusione delle tradizioni orali."
+    },
+    "targetText": "Il crepuscolo scendeva su Valchiara come un sudario di nebbia, avvolgendo l'antico granaio comunale dove Elia, l'ultimo custode della memoria agricola del borgo, attendeva la delegazione della Fondazione Germogli. Sul tavolo di rovere, una dozzina di sacchetti di lino, riempiti con semi di grani antichi e legumi dimenticati, attendevano di essere ufficialmente censiti. Per Elia, quei semi non erano semplici unità botaniche, ma reliquie viventi, testimoni di generazioni di contadini che avevano selezionato le varietà basandosi non su grafici di resa, ma sul sapore della terra e sulla resistenza alle gelate improvvise. La Fondazione, tuttavia, non cercava storie; cercava titoli di proprietà. La direttrice, la dottoressa Valli, una donna dal portamento rigido quanto i protocolli che rappresentava, estrasse un registro digitale. \"Elia,\" esordì senza guardarlo negli occhi, \"per integrare questi campioni nella Banca del Germoplasma, abbiamo bisogno della documentazione di tracciabilità. Senza una catena di custodia documentata, questi semi sono, tecnicamente, orfani. Non possiamo includere materiale genetico di cui non sia possibile certificare l'origine legale.\" Il silenzio che seguì fu rotto solo dal ticchettio dell'orologio a pendolo. Elia sentì il peso di secoli di tramando orale infrangersi contro l'ineluttabilità di un database.\n\nIl conflitto si manifestò quando Elia tentò di spiegare la provenienza del 'Fagiolo di Mezzanotte'. Non c'erano contratti di vendita, né atti notarili; c'era solo la memoria di sua nonna, che lo aveva ricevuto in dote da una vicina, la quale a sua volta lo aveva salvato durante una carestia dimenticata dai libri di storia. Per la dottoressa Valli, questa narrazione era irrilevante. Il suo sguardo, fisso sullo schermo del tablet, cercava campi vuoti da riempire. \"La legge è chiara, Elia. La biodiversità è un bene comune, ma la sua tutela richiede trasparenza amministrativa. Se non possiamo provare chi possiede il diritto di proprietà intellettuale su queste varietà, la Fondazione non può assumersi la responsabilità della loro conservazione. Senza la documentazione, questi semi verranno esclusi dal progetto di salvaguardia.\" La rigidità della dottoressa non era malizia, ma una forma di cecità burocratica che riduceva l'agricoltura a una serie di transazioni legali, ignorando che la vera tracciabilità risiedeva nel modo in cui il seme si adattava al microclima specifico della valle, un dato che nessun modulo poteva catturare.\n\nElia osservò le mani della donna, prive di calli, che digitavano freneticamente. Si chiese come fosse possibile che la protezione della vita potesse trasformarsi in un atto di esclusione. La Fondazione offriva protezione, sì, ma al costo dell'oblio di ciò che non era quantificabile. La tensione nella stanza divenne palpabile. Elia si rese conto che cedere i semi significava condannarli a una prigione di vetro dove sarebbero stati catalogati come 'proprietà ignota' e infine scartati. La burocrazia, nel suo zelo di preservare, stava attivamente distruggendo l'essenza stessa di ciò che intendeva salvare. Non era una questione di conservazione, ma di controllo. La dottoressa Valli, intanto, continuava a sollecitare firme su documenti che Elia non poteva sottoscrivere senza rinnegare l'eredità che custodiva. La sua reticenza veniva interpretata come ostinazione, mentre era, in realtà, un disperato tentativo di mantenere viva una cultura che si rifiutava di essere ridotta a un codice alfanumerico.\n\nLa situazione raggiunse il suo apice quando la dottoressa Valli chiuse il tablet con un gesto secco. \"Se non firma l'autocertificazione di possesso, domani mattina non potremo procedere con l'archiviazione. Sarà una perdita irreparabile per la comunità, Elia. Si assuma la responsabilità delle sue scelte.\" Elia guardò i sacchetti di lino, le cui fibre sembravano vibrare di una vita che sfuggiva alla comprensione della donna. Sapeva che se avesse firmato, avrebbe tradito la memoria di chi lo aveva preceduto, trasformando un atto di amore in un atto di proprietà legale. Se avesse rifiutato, i semi sarebbero rimasti nel granaio, destinati a essere dimenticati dal mondo moderno, ma liberi dalla mercificazione. La scelta non era tra conservare o perdere, ma tra la memoria viva e la documentazione morta. Elia scelse il silenzio. Non firmò nulla. La dottoressa Valli se ne andò, lasciando il granaio nell'oscurità, convinta di aver incontrato solo un vecchio ostinato che non capiva il valore della scienza.\n\nL'esito fu definitivo. Il giorno seguente, i corridoi della Fondazione rimasero privi di quei semi. Elia tornò a piantare il Fagiolo di Mezzanotte nel suo orto, lontano dagli sguardi dei burocrati. I semi, non censiti dalla Fondazione, continuarono a crescere, adattandosi alla terra e al clima, ignorando completamente le leggi che avrebbero dovuto proteggerli. La comunità di Valchiara continuò a scambiarsi i semi come aveva sempre fatto, attraverso il passaparola e la fiducia reciproca, un sistema informale che la Fondazione non avrebbe mai potuto comprendere né regolare. La perdita, per la Fondazione, era un dato statistico; per Elia, era la vittoria della vita sulla burocrazia. La tensione tra l'archivio e la memoria rimaneva irrisolta, un abisso incolmabile che separava chi cercava di possedere la natura da chi, semplicemente, la viveva. Il granaio tornò a essere un luogo di vita, non di catalogazione, e il ciclo delle stagioni continuò a dettare le regole, incurante dei registri digitali che non avrebbero mai conosciuto il sapore di quel fagiolo.",
+    "wordCount": 844,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sudario",
+        "lemma": "sudario",
+        "glosses": {
+          "es": "shroud",
+          "en": "shroud"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tracciabilità",
+        "lemma": "tracciabilità",
+        "glosses": {
+          "es": "traceability",
+          "en": "traceability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ineluttabilità",
+        "lemma": "ineluttabilità",
+        "glosses": {
+          "es": "inevitability",
+          "en": "inevitability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "reticenza",
+        "lemma": "reticenza",
+        "glosses": {
+          "es": "reluctance",
+          "en": "reluctance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mercificazione",
+        "lemma": "mercificazione",
+        "glosses": {
+          "es": "commodification",
+          "en": "commodification"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "incurante",
+        "lemma": "incurante",
+        "glosses": {
+          "es": "heedless",
+          "en": "heedless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 18,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra conservazione burocratica e memoria orale."
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di modernizzare l'agricoltura locale."
+        },
+        {
+          "id": "a3",
+          "text": "Il fallimento economico della Fondazione Germogli."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La tensione tra l'archivio e la memoria rimaneva irrisolta, un abisso incolmabile che separava chi cercava di possedere la natura da chi, semplicemente, la viveva.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché la dottoressa Valli rifiuta i semi di Elia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sono geneticamente compromessi."
+        },
+        {
+          "id": "a2",
+          "text": "Mancano di documentazione legale."
+        },
+        {
+          "id": "a3",
+          "text": "Sono di una varietà vietata."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Senza una catena di custodia documentata, questi semi sono, tecnicamente, orfani.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa rappresenta il rifiuto di Elia di firmare i documenti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una mancanza di fiducia nelle capacità tecniche della Fondazione."
+        },
+        {
+          "id": "a2",
+          "text": "Il desiderio di vendere i semi a un prezzo più alto in futuro."
+        },
+        {
+          "id": "a3",
+          "text": "Un atto di resistenza contro la mercificazione della memoria."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "se avesse firmato, avrebbe tradito la memoria di chi lo aveva preceduto, trasformando un atto di amore in un atto di proprietà legale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del dialogo tra Elia e la dottoressa Valli?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Mostrare l'incompatibilità tra due visioni del mondo."
+        },
+        {
+          "id": "a2",
+          "text": "Dimostrare che la scienza agricola è superiore alla tradizione."
+        },
+        {
+          "id": "a3",
+          "text": "Spiegare le procedure tecniche per la conservazione dei semi."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La rigidità della dottoressa non era malizia, ma una forma di cecità burocratica che riduceva l'agricoltura a una serie di transazioni legali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono pervade la narrazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e celebrativo."
+        },
+        {
+          "id": "a2",
+          "text": "Malinconico e critico."
+        },
+        {
+          "id": "a3",
+          "text": "Distaccato e puramente informativo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La burocrazia, nel suo zelo di preservare, stava attivamente distruggendo l'essenza stessa di ciò che intendeva salvare.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'mercificazione'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La distruzione intenzionale di risorse agricole rare."
+        },
+        {
+          "id": "a2",
+          "text": "La creazione di un mercato libero per i contadini."
+        },
+        {
+          "id": "a3",
+          "text": "Il processo di trasformare un bene in un prodotto commerciale."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "trasformando un atto di amore in un atto di proprietà legale. Se avesse rifiutato, i semi sarebbero rimasti nel granaio, destinati a essere dimenticati dal mondo moderno, ma liberi dalla mercificazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve (300 parole) in cui discuti se la conservazione del patrimonio culturale debba essere affidata a istituzioni formali o se la trasmissione orale sia un metodo più autentico e resiliente.",
+      "en": "Scrivi un saggio breve (300 parole) in cui discuti se la conservazione del patrimonio culturale debba essere affidata a istituzioni formali o se la trasmissione orale sia un metodo più autentico e resiliente."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare le dinamiche di potere insite nella catalogazione del patrimonio botanico e le conseguenze dell'esclusione delle tradizioni orali.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il Custode dei Silenzi | C2 Reading | WeLearn",
+      "en": "Il Custode dei Silenzi | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un racconto che esplora la tensione tra la conservazione burocratica delle sementi e la memoria orale delle comunità rurali.",
+      "en": "Un racconto che esplora la tensione tra la conservazione burocratica delle sementi e la memoria orale delle comunità rurali."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-river-map",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il confine dell'incertezza: etica e cartografia fluviale",
+      "en": "Il confine dell'incertezza: etica e cartografia fluviale"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla responsabilità morale che deriva dal tracciare linee di demarcazione su territori soggetti a inondazioni fluviali.",
+      "en": "Un'analisi critica sulla responsabilità morale che deriva dal tracciare linee di demarcazione su territori soggetti a inondazioni fluviali."
+    },
+    "mission": {
+      "es": "Analizzare il dilemma etico sollevato dalla creazione di mappe di rischio in contesti di incertezza ambientale, valutando le ripercussioni socio-economiche e deontologiche.",
+      "en": "Analizzare il dilemma etico sollevato dalla creazione di mappe di rischio in contesti di incertezza ambientale, valutando le ripercussioni socio-economiche e deontologiche."
+    },
+    "targetText": "L’atto di tracciare una linea su una mappa non è mai un’operazione meramente tecnica; è, intrinsecamente, un atto di creazione di realtà. Quando l’ingegnere idraulico Elia Varni e il funzionario municipale Sofia Rinaldi si trovarono a dover definire il perimetro del rischio esondazione per il fiume Acheronte, non stavano semplicemente interpretando dati geologici. Stavano, in effetti, decidendo il destino economico di centinaia di famiglie. La mappa, concepita come uno strumento di prevenzione, si trasformò rapidamente in un verdetto. La linea blu, che segnava il confine tra la zona sicura e quella a rischio, divenne una cicatrice che divideva la comunità di Borgo Fluviale. Chi si trovava appena all'interno della zona segnata vide il valore della propria proprietà crollare in poche ore, mentre chi si trovava appena fuori beneficiò di un’ingiustificata stabilità. La tensione tra la precisione algoritmica richiesta dalla protezione civile e la fluidità intrinseca del fiume creò un paradosso morale che Varni non aveva previsto: la mappa, nata per proteggere, finì per escludere.\n\nIl conflitto esplose durante l'assemblea pubblica convocata per presentare il piano di zonizzazione. I residenti, guidati da un comitato locale, contestarono la rigidità del tracciato, sostenendo che il fiume, nella sua memoria storica, non aveva mai seguito i rigidi modelli matematici impiegati da Varni. Rinaldi, dal canto suo, difendeva la necessità di una demarcazione netta, sostenendo che l'indeterminazione avrebbe paralizzato ogni politica assicurativa. Eppure, l'argomentazione di Rinaldi celava un'inquietante verità: la mappa serviva più a sollevare l'amministrazione da responsabilità legali future che a garantire la sicurezza reale degli abitanti. La linea non era un confine fisico naturale, ma un confine burocratico che trasformava l'incertezza in un dato certo, ignorando deliberatamente le zone grigie dove il rischio era distribuito in modo non lineare. In questo scenario, la precisione divenne una forma di violenza amministrativa, poiché imponeva una verità assoluta su un fenomeno che, per sua natura, rifiuta la staticità.\n\nLa discussione si inasprì quando emersero prove che Varni aveva arrotondato i margini di errore per facilitare la stesura del piano, temendo che una rappresentazione più sfumata avrebbe causato il blocco dei fondi regionali. Questa scelta, dettata da un pragmatismo che si voleva virtuoso, scatenò una crisi di fiducia. La comunità si sentì tradita da un esperto che aveva preferito la comodità della linea netta all'onestà della complessità. Varni, tormentato dai dubbi, si rese conto che ogni tentativo di ridurre la complessità del mondo in un modello bidimensionale comporta una perdita di umanità. La mappa, lungi dall'essere un riflesso neutro del territorio, si era rivelata una narrazione parziale, capace di distorcere la realtà materiale in funzione di obiettivi politici e amministrativi. La linea, tracciata con l'intento di mitigare il disastro, divenne essa stessa l'agente di un disastro sociale, privando i cittadini della loro sicurezza economica senza offrire in cambio una reale protezione fisica.\n\nIl paradosso si risolse, tragicamente, non con una revisione del piano, ma con l'accettazione passiva della mappa da parte della cittadinanza, ormai esausta. Le banche iniziarono a rifiutare mutui per le case incluse nel perimetro, e le compagnie assicurative elevarono i premi a livelli insostenibili, rendendo di fatto la zona una landa economica desolata. La linea di Varni era diventata una profezia che si autoavvera: le case, pur non essendo state toccate dal fiume, morirono sotto il peso della classificazione catastale. Rinaldi, nel frattempo, ottenne la promozione sperata, celebrando il successo dell'implementazione del piano come un modello di efficienza burocratica. Il fiume Acheronte, indifferente a tali manovre, continuava a scorrere, esondando periodicamente in zone non previste, dimostrando l'inutilità epistemologica di quella linea che aveva causato tanta sofferenza.\n\nIn ultima analisi, il caso di Borgo Fluviale ci costringe a interrogarci sul limite etico della rappresentazione scientifica. Possiamo noi, in nome della gestione del rischio, permetterci di ignorare la natura probabilistica della realtà? La risposta rimane sospesa in un'inquietante tensione tra l'esigenza di ordine e il rispetto per la complessità. La mappa, nella sua pretesa di onniscienza, ha fallito nel suo compito primario, rivelando che la vera catastrofe non è l'acqua che straripa, ma la rigidità con cui cerchiamo di contenere l'imprevedibile. La linea di demarcazione, una volta tracciata, non può essere facilmente cancellata, poiché le sue conseguenze si sedimentano nel tessuto sociale, creando ferite che nessun dato tecnico potrà mai rimarginare. La lezione di Varni e Rinaldi è amara: quando la scienza si piega alla necessità burocratica, la verità diventa un'opinione, e la giustizia, una vittima collaterale della cartografia.\n\nTuttavia, tale esito non segna la fine del conflitto, bensì l'inizio di una mutazione sociale ancor più insidiosa. La stratificazione della popolazione in due classi distinte — i protetti dalla norma e gli esiliati dal catasto — ha innescato un processo di gentrificazione forzata che ha svuotato Borgo Fluviale della sua memoria storica. Le famiglie che hanno abbandonato le zone 'a rischio', pur non avendo mai subito danni materiali, hanno lasciato spazio a investitori speculativi che, incuranti della minaccia idraulica, hanno riqualificato gli immobili a prezzi irrisori, trasformando l'area in un quartiere dormitorio privo di identità. Questa dinamica dimostra che la mappa, lungi dal limitarsi a descrivere un pericolo, ha agito come un catalizzatore di disuguaglianze strutturali, ridefinendo il valore dell'abitare non più sulla base della sicurezza, ma sulla conformità burocratica. La scienza, privata della sua funzione di tutela, è diventata lo strumento privilegiato di una nuova forma di segregazione urbana, in cui la realtà materiale del fiume è stata definitivamente sostituita dalla finzione giuridica della linea, condannando la comunità a una paralisi perpetua in cui l'incertezza è stata istituzionalizzata come norma di controllo.",
+    "wordCount": 917,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "intrinsecamente",
+        "lemma": "intrinsecamente",
+        "glosses": {
+          "es": "inherently",
+          "en": "inherently"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zonizzazione",
+        "lemma": "zonizzazione",
+        "glosses": {
+          "es": "zoning",
+          "en": "zoning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pragmatismo",
+        "lemma": "pragmatismo",
+        "glosses": {
+          "es": "pragmatism",
+          "en": "pragmatism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemologica",
+        "lemma": "epistemologica",
+        "glosses": {
+          "es": "epistemological",
+          "en": "epistemological"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sedimentano",
+        "lemma": "sedimentano",
+        "glosses": {
+          "es": "settle/accumulate",
+          "en": "settle/accumulate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "collaterale",
+        "lemma": "collaterale",
+        "glosses": {
+          "es": "collateral",
+          "en": "collateral"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.2,
+      "maxSentenceWords": 53,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del brano?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'etica della cartografia di rischio."
+        },
+        {
+          "id": "a2",
+          "text": "La gestione tecnica delle piene."
+        },
+        {
+          "id": "a3",
+          "text": "La corruzione degli ingegneri."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L’atto di tracciare una linea su una mappa non è mai un’operazione meramente tecnica; è, intrinsecamente, un atto di creazione di realtà.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa accadde alle proprietà nella zona delimitata come a rischio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sono state espropriate dallo Stato."
+        },
+        {
+          "id": "a2",
+          "text": "Il loro valore è diminuito drasticamente."
+        },
+        {
+          "id": "a3",
+          "text": "Sono state protette dalle inondazioni."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Chi si trovava appena all'interno della zona segnata vide il valore della propria proprietà crollare in poche ore",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Per quale motivo Varni ha alterato i margini di errore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per errore di calcolo."
+        },
+        {
+          "id": "a2",
+          "text": "Per proteggere i residenti."
+        },
+        {
+          "id": "a3",
+          "text": "Per ottenere fondi regionali."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Varni aveva arrotondato i margini di errore per facilitare la stesura del piano, temendo che una rappresentazione più sfumata avrebbe causato il blocco dei fondi regionali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo dell'autore nel descrivere la promozione di Rinaldi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenziare il cinismo del sistema."
+        },
+        {
+          "id": "a2",
+          "text": "Sottolineare l'efficienza burocratica."
+        },
+        {
+          "id": "a3",
+          "text": "Contrastare l'operato di Varni."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Rinaldi, nel frattempo, ottenne la promozione sperata, celebrando il successo dell'implementazione del piano come un modello di efficienza burocratica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale termine descrive meglio il tono dell'autore verso la fine?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista."
+        },
+        {
+          "id": "a2",
+          "text": "Disilluso."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La lezione di Varni e Rinaldi è amara: quando la scienza si piega alla necessità burocratica, la verità diventa un'opinione, e la giustizia, una vittima collaterale della cartografia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa si intende nel testo con il termine 'epistemologica'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Relativa alla fisica."
+        },
+        {
+          "id": "a2",
+          "text": "Relativa alla politica."
+        },
+        {
+          "id": "a3",
+          "text": "Relativa alla conoscenza."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "dimostrando l'inutilità epistemologica di quella linea che aveva causato tanta sofferenza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve in cui discuti se sia preferibile un modello di gestione del rischio basato su dati certi, seppur approssimativi, o un modello basato su una complessità incerta ma più aderente alla realtà, citando le implicazioni etiche per le autorità locali.",
+      "en": "Scrivi un saggio breve in cui discuti se sia preferibile un modello di gestione del rischio basato su dati certi, seppur approssimativi, o un modello basato su una complessità incerta ma più aderente alla realtà, citando le implicazioni etiche per le autorità locali."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare il dilemma etico sollevato dalla creazione di mappe di rischio in contesti di incertezza ambientale, valutando le ripercussioni socio-economiche e deontologiche.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il confine dell'incertezza: etica e cartografia fluviale | C2 Reading | WeLearn",
+      "en": "Il confine dell'incertezza: etica e cartografia fluviale | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla responsabilità morale che deriva dal tracciare linee di demarcazione su territori soggetti a inondazioni fluviali.",
+      "en": "Un'analisi critica sulla responsabilità morale che deriva dal tracciare linee di demarcazione su territori soggetti a inondazioni fluviali."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

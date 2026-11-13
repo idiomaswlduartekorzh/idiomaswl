@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-shared-desks",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della libera scelta nel Coworking Aethelgard",
+      "en": "L'illusione della libera scelta nel Coworking Aethelgard"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla dinamica del potere in uno spazio di lavoro condiviso, esplorando come le opzioni apparentemente democratiche nascondano costi asimmetrici.",
+      "en": "Un'analisi critica sulla dinamica del potere in uno spazio di lavoro condiviso, esplorando come le opzioni apparentemente democratiche nascondano costi asimmetrici."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere le sfumature retoriche e le implicazioni etiche della gestione degli spazi lavorativi condivisi.",
+      "en": "Analizzare il testo per comprendere le sfumature retoriche e le implicazioni etiche della gestione degli spazi lavorativi condivisi."
+    },
+    "targetText": "Oggetto: Riconsiderazione dell'assegnazione delle postazioni nel settore 'Lumen'. Gentile Direttore Valli, le scrivo in merito alla recente ristrutturazione delle politiche di accesso allo spazio Aethelgard. Sebbene la direzione abbia presentato il nuovo sistema di prenotazione come un trionfo della flessibilità individuale, la realtà operativa che stiamo vivendo nel settore 'Lumen' racconta una narrazione profondamente divergente. La possibilità di scegliere tra la postazione 'Zenith' e quella 'Focus' è stata venduta come un atto di emancipazione del lavoratore, eppure, analizzando i costi occulti associati a tale scelta, emerge un meccanismo di controllo coercitivo mascherato da autonomia. Chi opta per la postazione Zenith, situata nell'area comune, deve accettare una costante esposizione a interruzioni sonore, il che si traduce inevitabilmente in una riduzione della produttività misurabile in termini di ore supplementari non retribuite necessarie per completare i task. Al contrario, la postazione Focus, pur garantendo isolamento acustico, comporta una 'tassa di isolamento' sotto forma di esclusione dai briefing informali che si svolgono nelle aree comuni. In sostanza, il lavoratore non sta scegliendo un luogo, ma sta negoziando la propria marginalizzazione sociale contro la propria efficienza tecnica. È un gioco a somma zero dove ogni opzione è intrinsecamente viziata da una perdita di capitale umano. La direzione sostiene che tale configurazione promuova la meritocrazia, ma mi chiedo come possa definirsi meritocratico un sistema che impone una rinuncia sistematica a una componente essenziale della vita lavorativa, sia essa la concentrazione o la rete relazionale. La scelta, in questo contesto, perde il suo valore ontologico per trasformarsi in una mera gestione del danno. Quando la libertà di movimento è vincolata a una sottrazione di risorse personali, la libertà stessa cessa di essere un diritto e diviene un onere gestionale. Mi preme sottolineare che questo non è un appello alla standardizzazione, ma una denuncia dell'asimmetria informativa che accompagna queste opzioni. Molti dei nostri collaboratori, specialmente i più giovani, scelgono la postazione Zenith ignari del fatto che la loro visibilità sociale si tradurrà in un sovraccarico lavorativo notturno. Allo stesso modo, chi sceglie la postazione Focus si ritrova isolato professionalmente, perdendo opportunità di crescita che non vengono formalizzate nei processi aziendali. La trasparenza non dovrebbe limitarsi alla disponibilità dei posti, ma estendersi alla chiara esplicitazione dei costi umani associati a ciascuna configurazione. Se l'intento di Aethelgard è quello di favorire un ambiente dinamico, allora la dinamicità non può essere imposta attraverso la frammentazione della coesione lavorativa. Le chiedo, pertanto, di rivedere la struttura di queste assegnazioni, introducendo un sistema di rotazione obbligatoria che annulli la necessità di una scelta individuale gravosa. Non possiamo permettere che l'illusione della scelta diventi lo strumento di una nuova forma di alienazione, dove il lavoratore si sente responsabile del proprio disagio perché 'ha scelto' consapevolmente la propria postazione. La responsabilità di un ambiente di lavoro sano ricade sull'istituzione, non sull'individuo che cerca di navigare tra opzioni egualmente penalizzanti. Resto in attesa di un riscontro che vada oltre la retorica dell'ottimizzazione degli spazi, sperando in un approccio che riconosca la dignità del tempo e delle relazioni umane come valori non negoziabili nel nostro ecosistema lavorativo. Cordiali saluti, Elena Rinaldi, Responsabile di Progetto.\n\nTuttavia, è necessario considerare una conseguenza sistemica ancor più insidiosa: l'erosione del senso di appartenenza collettiva all'identità aziendale di Aethelgard. Se la struttura attuale spinge il lavoratore verso una solitudine tecnica o una frammentazione sociale, il risultato finale non è solo un calo della produttività individuale, ma una progressiva disintegrazione del tessuto culturale che ha storicamente sostenuto il nostro successo. Quando il dipendente percepisce che ogni sua decisione spaziale è intrinsecamente punitiva, il legame empatico con l'istituzione si incrina, lasciando spazio a un cinismo professionale che mina la lealtà a lungo termine. In questo scenario, la retorica della flessibilità si trasforma in un boomerang: anziché incentivare l'impegno, essa alimenta un distacco emotivo dove il lavoratore, sentendosi estraneo al proprio ambiente, smette di investire in quel capitale relazionale che, paradossalmente, la direzione dichiara di voler preservare. Non si tratta soltanto di una questione di efficienza operativa, ma di una crisi di legittimazione dell'autorità direttiva. Se il sistema impone un compromesso costante tra la propria integrità professionale e la propria sopravvivenza sociale, il lavoratore finirà per adottare strategie di difesa che privilegiano il mero adempimento formale a scapito dell'innovazione e della creatività spontanea. L'alienazione non deriva dalla mancanza di opzioni, ma dall'impossibilità di trovare un equilibrio che non richieda il sacrificio di una parte fondamentale della propria professionalità. Una gestione che ignora questo aspetto rischia di trasformare Aethelgard in un aggregato di individui isolati, in cui la competizione interna sostituisce la collaborazione sinergica. È fondamentale comprendere che la coesione non è una variabile accessoria, ma il prerequisito stesso per ogni forma di eccellenza. La proposta di una rotazione obbligatoria, pur essendo un primo passo necessario, deve essere accompagnata da una riflessione più profonda sulla cultura organizzativa che intendiamo promuovere. Senza un ripensamento radicale che ponga il benessere relazionale al centro della pianificazione spaziale, continueremo a navigare in un ecosistema dove il successo è misurato solo attraverso la riduzione dei costi, ignorando il valore inestimabile di una comunità lavorativa unita e consapevole. La dignità del lavoro non può essere sacrificata sull'altare di un'ottimizzazione che, in ultima analisi, svuota di significato l'impegno profuso da ciascuno di noi. Confido che la direzione sappia cogliere l'urgenza di questa istanza, trasformando la critica in un'opportunità di reale rinnovamento etico e strutturale per il bene di tutti i collaboratori.",
+    "wordCount": 898,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "coercitivo",
+        "lemma": "coercitivo",
+        "glosses": {
+          "es": "Relating to the use of force or threats to compel someone to do something.",
+          "en": "Relating to the use of force or threats to compel someone to do something."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontologico",
+        "lemma": "ontologico",
+        "glosses": {
+          "es": "Relating to the branch of metaphysics dealing with the nature of being.",
+          "en": "Relating to the branch of metaphysics dealing with the nature of being."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asimmetria",
+        "lemma": "asimmetria",
+        "glosses": {
+          "es": "Lack of equality or equivalence between parts or aspects of something.",
+          "en": "Lack of equality or equivalence between parts or aspects of something."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alienazione",
+        "lemma": "alienazione",
+        "glosses": {
+          "es": "A state of isolation or detachment from one's work or social environment.",
+          "en": "A state of isolation or detachment from one's work or social environment."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esplicitazione",
+        "lemma": "esplicitazione",
+        "glosses": {
+          "es": "The act of stating something clearly and in detail.",
+          "en": "The act of stating something clearly and in detail."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "meritocratico",
+        "lemma": "meritocratico",
+        "glosses": {
+          "es": "Relating to a system where advancement is based on individual ability or achievement.",
+          "en": "Relating to a system where advancement is based on individual ability or achievement."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.4,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale sollevato da Elena Rinaldi nella sua comunicazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La critica alla gestione delle postazioni"
+        },
+        {
+          "id": "a2",
+          "text": "La necessità di ampliare gli spazi"
+        },
+        {
+          "id": "a3",
+          "text": "La richiesta di migliori strumenti tecnici"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la realtà operativa che stiamo vivendo nel settore 'Lumen' racconta una narrazione profondamente divergente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale svantaggio specifico comporta la scelta della postazione Focus?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il rumore costante dell'area comune"
+        },
+        {
+          "id": "a2",
+          "text": "L'esclusione dai briefing informali"
+        },
+        {
+          "id": "a3",
+          "text": "Una riduzione della produttività tecnica"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la postazione Focus, pur garantendo isolamento acustico, comporta una 'tassa di isolamento' sotto forma di esclusione dai briefing informali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autrice riguardo alla percezione che i lavoratori hanno della loro scelta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che siano pienamente consapevoli dei costi"
+        },
+        {
+          "id": "a2",
+          "text": "Che preferiscano la flessibilità alla carriera"
+        },
+        {
+          "id": "a3",
+          "text": "Che si sentano responsabili del proprio disagio"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "il lavoratore si sente responsabile del proprio disagio perché 'ha scelto' consapevolmente la propria postazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo finale della richiesta rivolta al Direttore Valli?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'istituzione di un sistema di rotazione obbligatoria"
+        },
+        {
+          "id": "a2",
+          "text": "L'aumento della retribuzione per gli straordinari"
+        },
+        {
+          "id": "a3",
+          "text": "La chiusura definitiva del settore Lumen"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le chiedo, pertanto, di rivedere la struttura di queste assegnazioni, introducendo un sistema di rotazione obbligatoria",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale aggettivo descrive meglio il tono dell'autrice?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifferente"
+        },
+        {
+          "id": "a2",
+          "text": "Analitico"
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "eppure, analizzando i costi occulti associati a tale scelta, emerge un meccanismo di controllo coercitivo mascherato da autonomia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autrice con il termine 'ontologico' nel contesto della scelta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La natura tecnica della postazione"
+        },
+        {
+          "id": "a2",
+          "text": "La convenienza economica immediata"
+        },
+        {
+          "id": "a3",
+          "text": "Il valore intrinseco della scelta"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La scelta, in questo contesto, perde il suo valore ontologico per trasformarsi in una mera gestione del danno.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Redigi una risposta formale da parte del Direttore Valli, in cui si tenta di giustificare la politica aziendale mantenendo una posizione di fermezza, pur riconoscendo le preoccupazioni sollevate da Elena Rinaldi.",
+      "en": "Redigi una risposta formale da parte del Direttore Valli, in cui si tenta di giustificare la politica aziendale mantenendo una posizione di fermezza, pur riconoscendo le preoccupazioni sollevate da Elena Rinaldi."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare il testo per comprendere le sfumature retoriche e le implicazioni etiche della gestione degli spazi lavorativi condivisi.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della libera scelta nel Coworking Aethelgard | C2 Reading | WeLearn",
+      "en": "L'illusione della libera scelta nel Coworking Aethelgard | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla dinamica del potere in uno spazio di lavoro condiviso, esplorando come le opzioni apparentemente democratiche nascondano costi asimmetrici.",
+      "en": "Un'analisi critica sulla dinamica del potere in uno spazio di lavoro condiviso, esplorando come le opzioni apparentemente democratiche nascondano costi asimmetrici."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

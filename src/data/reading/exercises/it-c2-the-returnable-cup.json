@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione del riutilizzo: un paradosso sistemico",
+      "en": "L'illusione del riutilizzo: un paradosso sistemico"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla transizione verso i contenitori riutilizzabili nel contesto della gestione degli eventi urbani, esplorando le discrepanze tra l'intento ecologico e l'impatto logistico reale.",
+      "en": "Un'analisi critica sulla transizione verso i contenitori riutilizzabili nel contesto della gestione degli eventi urbani, esplorando le discrepanze tra l'intento ecologico e l'impatto logistico reale."
+    },
+    "mission": {
+      "es": "Analizzare le complessità intrinseche alla sostenibilità, valutando come la scala di misurazione influenzi la percezione del successo ambientale.",
+      "en": "Analizzare le complessità intrinseche alla sostenibilità, valutando come la scala di misurazione influenzi la percezione del successo ambientale."
+    },
+    "targetText": "L'adozione di contenitori riutilizzabili durante il festival 'VerdeNotte' a Valchiara era stata salutata come un trionfo della gestione circolare. L'assessore all'ambiente, Elena Varni, aveva inaugurato l'iniziativa con l'obiettivo dichiarato di eradicare il monouso, sostituendo i bicchieri in plastica con eleganti recipienti in polipropilene rigido. La logica appariva inoppugnabile: eliminare il rifiuto alla fonte. Tuttavia, l'analisi retrospettiva condotta dal consulente logistico Marco D'Amico ha rivelato una realtà assai più sfumata. Mentre il volume di plastica inviato in discarica era effettivamente diminuito, il bilancio energetico complessivo dell'evento aveva subito un'impennata inaspettata. Il sistema richiedeva infatti una flotta di autocarri per il trasporto dei recipienti verso un impianto di lavaggio industriale situato a trecento chilometri di distanza. La visione idilliaca di una chiusura del ciclo locale si scontrava con la cruda necessità di una logistica centralizzata, trasformando un risparmio di materiali in un debito di carbonio. Non si trattava di un fallimento tecnologico, bensì di un'errata calibrazione del perimetro di analisi. Se ci si limita a osservare il perimetro del festival, il successo è indiscutibile; se si estende lo sguardo alla catena di approvvigionamento e alla gestione del fine vita, il quadro si capovolge. Il paradosso si è manifestato in tutta la sua gravità quando la gestione dei bicchieri smarriti o accumulati nelle abitazioni private ha iniziato a erodere i margini di efficienza del sistema. La logica del riutilizzo presuppone una costanza di ritorno che il comportamento umano, intrinsecamente caotico, tende a sabotare. Durante la chiusura della manifestazione, il personale ha constatato che oltre un terzo dei contenitori non era rientrato nei punti di raccolta, costringendo l'organizzazione a produrre nuove scorte per l'anno successivo. Questa dinamica trasforma il bene riutilizzabile in un oggetto di consumo differito, la cui produzione iniziale, più energivora rispetto a quella di un bicchiere monouso, richiede un numero di cicli di utilizzo che, in questo caso, non è mai stato raggiunto. La tensione tra l'ideale ecologico e la realtà operativa pone una domanda scomoda: stiamo effettivamente riducendo l'impatto, o stiamo semplicemente spostando il problema in un'altra dimensione temporale e spaziale? La convinzione che la sostituzione del materiale sia sufficiente a garantire la sostenibilità ignora la complessità dei flussi logistici. L'evento di Valchiara non è un caso isolato, ma un sintomo di una tendenza più ampia in cui la misurazione parziale funge da velo per l'inefficienza sistemica. La retorica del riutilizzo, pur nobile nelle intenzioni, rischia di cristallizzarsi in un dogma che impedisce una valutazione olistica delle alternative. La questione non è più se il riutilizzo sia intrinsecamente superiore, ma a quali condizioni e entro quali confini geografici esso smetta di essere una soluzione e diventi, esso stesso, una fonte di inquinamento. La sfida consiste nel superare la miopia della singola iniziativa per abbracciare una visione che integri l'intero ciclo di vita, accettando che, talvolta, il rifiuto minore sia preferibile a un riutilizzo mal pianificato. In ultima analisi, il festival di Valchiara dimostra che la sostenibilità non è una proprietà intrinseca di un oggetto, ma una funzione della sua integrazione in un ecosistema logistico coerente. Senza questa visione d'insieme, il riutilizzo rimane un esercizio di stile, una forma di ecologismo estetico che soddisfa la coscienza collettiva senza però modificare la traiettoria del degrado ambientale. L'illusione di aver risolto il problema attraverso un semplice cambio di materiale è forse l'ostacolo maggiore verso una vera transizione ecologica.\n\nTuttavia, considerare il fallimento del modello di Valchiara come una condanna definitiva del riutilizzo sarebbe un errore analitico altrettanto grave quanto l'ottimismo ingenuo che lo ha preceduto. La lezione appresa non risiede nell'inutilità del sistema, bensì nell'urgente necessità di una decentralizzazione radicale delle infrastrutture di servizio. Se il trasporto su lunga distanza è il principale responsabile dell'impronta di carbonio, la soluzione non è il ritorno al monouso, ma lo sviluppo di micro-impianti di lavaggio a chilometro zero, integrati nel tessuto urbano o direttamente all'interno delle aree destinate ai grandi eventi. L'inefficienza logistica osservata non è una proprietà intrinseca del materiale, ma il risultato di una pianificazione che ha ignorato le variabili spaziali, trattando la sostenibilità come un prodotto acquistabile e non come un processo da costruire. Inoltre, la dispersione dei contenitori nelle abitazioni private, lungi dall'essere solo un atto di sabotaggio involontario, potrebbe essere interpretata come una transizione culturale ancora incompleta; se il cittadino percepisse il contenitore non come un oggetto usa-e-getta di lusso, ma come un bene comune di valore, la percentuale di restituzione aumenterebbe drasticamente. La sfida, pertanto, si sposta dal piano meramente tecnico a quello pedagogico e gestionale. È necessario implementare sistemi di cauzione più incisivi e una semplificazione del design dei recipienti che ne faciliti la logistica inversa, rendendo il gesto del riutilizzo non solo un imperativo morale, ma un'abitudine quotidiana semplificata. L'ecologismo estetico, pur criticabile, ha avuto il merito innegabile di scuotere l'opinione pubblica, portando al centro del dibattito la finitezza delle risorse. Il superamento di questa fase richiede ora una maturità politica capace di investire in infrastrutture stabili piuttosto che in soluzioni temporanee e frammentate. Solo integrando la logistica inversa nel design urbano, il riutilizzo cesserà di essere un esercizio di stile per trasformarsi in un pilastro solido dell'economia circolare. Il caso di Valchiara non segna la fine dell'esperimento, ma l'inizio di una fase di ingegnerizzazione più rigorosa, dove la sostenibilità viene misurata non dalle intenzioni, ma dalla resilienza operativa di un sistema che impara dai propri errori per ridefinire i confini della propria efficacia.",
+    "wordCount": 896,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "eradicare",
+        "lemma": "eradicare",
+        "glosses": {
+          "es": "To root out or eliminate completely.",
+          "en": "To root out or eliminate completely."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inoppugnabile",
+        "lemma": "inoppugnabile",
+        "glosses": {
+          "es": "Indisputable or unassailable.",
+          "en": "Indisputable or unassailable."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "retrospettiva",
+        "lemma": "retrospettiva",
+        "glosses": {
+          "es": "Looking back at past events.",
+          "en": "Looking back at past events."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "energivora",
+        "lemma": "energivora",
+        "glosses": {
+          "es": "Energy-intensive.",
+          "en": "Energy-intensive."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristallizzarsi",
+        "lemma": "cristallizzarsi",
+        "glosses": {
+          "es": "To become fixed or rigid in a specific form.",
+          "en": "To become fixed or rigid in a specific form."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miopia",
+        "lemma": "miopia",
+        "glosses": {
+          "es": "Short-sightedness or lack of foresight.",
+          "en": "Short-sightedness or lack of foresight."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.2,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La complessità dei sistemi di riutilizzo."
+        },
+        {
+          "id": "a2",
+          "text": "L'inefficacia totale dei bicchieri in plastica."
+        },
+        {
+          "id": "a3",
+          "text": "Il successo del festival di Valchiara."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La tensione tra l'ideale ecologico e la realtà operativa pone una domanda scomoda: stiamo effettivamente riducendo l'impatto, o stiamo semplicemente spostando il problema in un'altra dimensione temporale e spaziale?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché il sistema di riutilizzo ha causato un aumento dell'impatto ambientale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A causa dei costi elevati."
+        },
+        {
+          "id": "a2",
+          "text": "Per i trasporti necessari."
+        },
+        {
+          "id": "a3",
+          "text": "Per la scarsa igiene."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il sistema richiedeva infatti una flotta di autocarri per il trasporto dei recipienti verso un impianto di lavaggio industriale situato a trecento chilometri di distanza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa accade quando i contenitori non vengono restituiti dal pubblico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'evento perde prestigio."
+        },
+        {
+          "id": "a2",
+          "text": "Il festival viene annullato."
+        },
+        {
+          "id": "a3",
+          "text": "Si generano nuovi sprechi."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "costringendo l'organizzazione a produrre nuove scorte per l'anno successivo. Questa dinamica trasforma il bene riutilizzabile in un oggetto di consumo differito",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale dell'autore nell'esporre il caso di Valchiara?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenziare i limiti di una visione parziale della sostenibilità."
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere l'uso del monouso."
+        },
+        {
+          "id": "a3",
+          "text": "Criticare la gestione logistica del festival."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'evento di Valchiara non è un caso isolato, ma un sintomo di una tendenza più ampia in cui la misurazione parziale funge da velo per l'inefficienza sistemica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono caratterizza la riflessione dell'autore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta."
+        },
+        {
+          "id": "a2",
+          "text": "Analitico."
+        },
+        {
+          "id": "a3",
+          "text": "Indignato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "l'analisi retrospettiva condotta dal consulente logistico Marco D'Amico ha rivelato una realtà assai più sfumata.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'energivora' riferito alla produzione dei contenitori?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che è poco durevole."
+        },
+        {
+          "id": "a2",
+          "text": "Che è costosa."
+        },
+        {
+          "id": "a3",
+          "text": "Che richiede molta energia."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la cui produzione iniziale, più energivora rispetto a quella di un bicchiere monouso, richiede un numero di cicli di utilizzo che, in questo caso, non è mai stato raggiunto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio (200 parole) in cui discuti se la responsabilità della sostenibilità debba ricadere maggiormente sull'individuo o sulle infrastrutture logistiche, basandoti sulle riflessioni emerse dal testo.",
+      "en": "Scrivi un breve saggio (200 parole) in cui discuti se la responsabilità della sostenibilità debba ricadere maggiormente sull'individuo o sulle infrastrutture logistiche, basandoti sulle riflessioni emerse dal testo."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare le complessità intrinseche alla sostenibilità, valutando come la scala di misurazione influenzi la percezione del successo ambientale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione del riutilizzo: un paradosso sistemico | C2 Reading | WeLearn",
+      "en": "L'illusione del riutilizzo: un paradosso sistemico | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla transizione verso i contenitori riutilizzabili nel contesto della gestione degli eventi urbani, esplorando le discrepanze tra l'intento ecologico e l'impatto logistico reale.",
+      "en": "Un'analisi critica sulla transizione verso i contenitori riutilizzabili nel contesto della gestione degli eventi urbani, esplorando le discrepanze tra l'intento ecologico e l'impatto logistico reale."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Archiv der vergessenen Keime",
+      "en": "Das Archiv der vergessenen Keime"
+    },
+    "intro": {
+      "es": "Eine Erzählung über den Zusammenprall von bürokratischer Archivierung und mündlicher Überlieferung in einer Gemeinschaftssamenbibliothek.",
+      "en": "Eine Erzählung über den Zusammenprall von bürokratischer Archivierung und mündlicher Überlieferung in einer Gemeinschaftssamenbibliothek."
+    },
+    "mission": {
+      "es": "Untersuchen Sie die Spannung zwischen institutionalisierter Bewahrung und dem lebendigen Erbe, das durch mündliche Traditionen definiert wird.",
+      "en": "Untersuchen Sie die Spannung zwischen institutionalisierter Bewahrung und dem lebendigen Erbe, das durch mündliche Traditionen definiert wird."
+    },
+    "targetText": "Als Elara die schwere Eisentür des städtischen Saatgutarchivs aufstieß, roch es nach konservierter Zeit und staubigem Papier. In den Regalen standen keine Gläser, sondern nummerierte Metallkassetten, die wie kleine Särge für die Zukunft wirkten. Elara, die seit Jahrzehnten die 'Saat der Ahnen' in ihrem Dorf hütete, war gekommen, um die letzte Charge der 'Sonnenwende-Erbse' zu hinterlegen, eine Sorte, die nur unter dem Licht des Vollmonds gedieh, wie ihre Großmutter stets betonte. Doch der Archivar, ein junger Mann namens Julian, der die Welt in Datenbanken unterteilte, schüttelte den Kopf. Für ihn war die Erbse ohne lückenlose Herkunftsnachweise, ohne zertifizierte Anbauprotokolle und ohne botanische Klassifizierung lediglich ein biologisches Artefakt ohne Wert. Er verlangte die 'Provenienz', ein Wort, das in Julians Mund wie ein Fallbeil klang. Elara versuchte ihm zu erklären, dass die Geschichte dieser Erbse in den Liedern der Erntehelfer geschrieben stand, in den Rhythmen der Aussaat, die über Generationen hinweg mündlich weitergegeben wurden. Doch Julian tippte ungerührt auf seine Tastatur. Das Archiv, so argumentierte er, müsse neutral und überprüfbar sein; eine Erzählung sei keine wissenschaftliche Evidenz. Die Spannung zwischen den beiden füllte den Raum wie eine aufziehende Gewitterfront. Elara sah auf die Kassetten, die das Erbe ganzer Landstriche in sterile Ordnung zwangen, und begriff, dass das Archiv nicht bewahrte, sondern einlud, das Lebendige in ein Museum zu verwandeln. Sie erzählte ihm von dem Jahr der großen Dürre, als nur diese Erbsen überlebten, weil die Ahnen wussten, wann der Boden den Tau am besten hielt. Julian hörte zu, doch seine Augen blieben auf dem Bildschirm fixiert, wo die Spalten für 'Zertifizierung' leer blieben. Er bot ihr an, die Samen als 'anonymes Saatgut' aufzunehmen, doch das wäre der Verrat an allem gewesen, was die Erbse ausmachte. Für Elara war ein Saatgut ohne seine Geschichte nur eine leere Hülle, ein biologischer Code ohne Seele. Sie erkannte, dass die Institutionalisierung der Natur ein Preis war, den sie nicht zu zahlen bereit war. Während sie die Metallkassette wieder in ihren Beutel gleiten ließ, spürte sie die Schwere der Verantwortung. Das Archiv verlangte Unterwerfung unter das Protokoll, doch die Gemeinschaft verlangte Treue zum Ursprung. Als sie das Gebäude verließ, war die Luft draußen klarer, doch der Sieg fühlte sich wie eine Niederlage an. Sie hatte die Samen gerettet, aber das Archiv würde weiterhin wachsen, während das Wissen der Ahnen in den Schatten der Bürokratie verblasste. Die Stille zwischen den Regalen, die sie zurückließ, war das Echo einer Welt, die sich selbst in Daten auflöste, während die echten Wurzeln, die sie in ihren Händen hielt, nun in der Isolation weiterleben mussten, fernab von der offiziellen Anerkennung, die sie vielleicht nie erhalten würden, aber die sie auch nicht mehr brauchte, um zu gedeihen.\n\nDoch während Elara den staubigen Vorplatz überquerte, wurde ihr die bittere Ironie ihrer Entscheidung in ihrer vollen Tragweite bewusst. Indem sie die Erbse dem Zugriff des Archivs entzog, hatte sie zwar deren ideellen Kern bewahrt, sie jedoch gleichzeitig in eine gefährliche Unsichtbarkeit verbannt. Julian hatte Recht mit seiner kühlen, technokratischen Prognose: Ein Saatgut, das nicht in den offiziellen Registern existierte, war in den Augen der modernen Agrarpolitik faktisch nicht existent. Sollte eine neue Dürre über das Land hereinbrechen, würden die staatlich subventionierten Monokulturen, die auf Julians zertifizierten Datenbanken basierten, als erste versagen, während die 'Sonnenwende-Erbse' in ihrer isolierten Nische zwar überlebte, aber für die hungernde Allgemeinheit unerreichbar blieb. Elara erkannte nun, dass der Schutz des Erbes durch Rückzug in die private Obskurität eine Form der elitären Selbstgenügsamkeit darstellte, die den eigentlichen Zweck der Ahnen – die Sicherung des Lebens für alle – konterkarierte. Die Bürokratie, so erkannte sie, war nicht nur ein Instrument der Entfremdung, sondern auch das einzige verbliebene Vehikel für eine breite gesellschaftliche Teilhabe. Indem sie die Zertifizierung verweigerte, hatte sie die Erbse vor der Entseelung gerettet, sie aber gleichzeitig der demokratischen Verfügbarkeit entzogen. Es entstand ein paradoxer Kreislauf: Die Institutionen, die das Leben durch Standardisierung erstickten, waren zugleich die einzigen, die das Überleben in großem Maßstab garantieren konnten. Elara begriff, dass die wahre Herausforderung nicht darin bestand, die Samen vor der Archivierung zu bewahren, sondern die Sprache der Archivare mit der Weisheit der Lieder zu versöhnen. Ihr Stolz, das Erbe rein zu halten, wirkte plötzlich wie eine Form der Kapitulation vor der Komplexität der Welt. Sie hatte die Erbse in die Freiheit entlassen, doch diese Freiheit war nun gleichbedeutend mit der Bedeutungslosigkeit. Wenn das Wissen der Ahnen nicht in der Lage war, die Barrieren der Moderne zu durchdringen, würde es zwangsläufig mit der letzten Generation der Bewahrer aussterben. Die Stille, die sie nun umgab, war keine friedliche Isolation, sondern ein mahnendes Schweigen, das die dringende Notwendigkeit einer neuen Synthese zwischen dem Messbaren und dem Erlebten unterstrich. Während sie den Beutel fester umklammerte, ahnte sie, dass sie den Kampf um die Identität des Saatguts gewonnen hatte, aber möglicherweise den Krieg um dessen Fortbestand verlor. Die Zukunft verlangte nicht nach der Wahl zwischen Seele und System, sondern nach einer mutigen Übersetzung des Unaussprechlichen in die kalte Logik der Datenbanken, um das Überleben zu sichern, ohne die Wurzeln zu kappen. Elara sah zurück auf den massiven Betonbau des Archivs und erkannte, dass ihre Reise hier nicht endete, sondern erst in eine neue, noch schwierigere Phase eintrat: die Aufgabe, die Geschichte der Erbse so zu erzählen, dass sie selbst in Julians starren Spalten als lebendige Wahrheit anerkannt werden musste.",
+    "wordCount": 882,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Provenienz",
+        "lemma": "Provenienz",
+        "glosses": {
+          "es": "origin or source of an object",
+          "en": "origin or source of an object"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Artefakt",
+        "lemma": "Artefakt",
+        "glosses": {
+          "es": "an object made by a human being",
+          "en": "an object made by a human being"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fallbeil",
+        "lemma": "Fallbeil",
+        "glosses": {
+          "es": "guillotine or metaphorical instrument of finality",
+          "en": "guillotine or metaphorical instrument of finality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Evidenz",
+        "lemma": "Evidenz",
+        "glosses": {
+          "es": "evidence or proof",
+          "en": "evidence or proof"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Institutionalisierung",
+        "lemma": "Institutionalisierung",
+        "glosses": {
+          "es": "the process of establishing something as an institution",
+          "en": "the process of establishing something as an institution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Isolation",
+        "lemma": "Isolation",
+        "glosses": {
+          "es": "the state of being separated from others",
+          "en": "the state of being separated from others"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.8,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Worum geht es im Kern der Erzählung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der Konflikt zwischen Archiv und Tradition."
+        },
+        {
+          "id": "a2",
+          "text": "Die Digitalisierung der Landwirtschaft."
+        },
+        {
+          "id": "a3",
+          "text": "Die Suche nach neuen Erbsensorten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Spannung zwischen den beiden füllte den Raum wie eine aufziehende Gewitterfront.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum lehnt Julian die Samen von Elara ab?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie sind biologisch tot."
+        },
+        {
+          "id": "a2",
+          "text": "Sie fehlen Herkunftsnachweise."
+        },
+        {
+          "id": "a3",
+          "text": "Sie sind nicht botanisch rein."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Für ihn war die Erbse ohne lückenlose Herkunftsnachweise, ohne zertifizierte Anbauprotokolle und ohne botanische Klassifizierung lediglich ein biologisches Artefakt ohne Wert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Was impliziert die Autorin über die Arbeit im Archiv?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie ist effizient und notwendig."
+        },
+        {
+          "id": "a2",
+          "text": "Sie rettet die Kultur vor dem Vergessen."
+        },
+        {
+          "id": "a3",
+          "text": "Sie entfremdet das Wissen vom Leben."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elara sah auf die Kassetten, die das Erbe ganzer Landstriche in sterile Ordnung zwangen, und begriff, dass das Archiv nicht bewahrte, sondern einlud, das Lebendige in ein Museum zu verwandeln.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt die Schilderung der Dürre-Geschichte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Den Wert des Wissens gegenüber Daten zu verdeutlichen."
+        },
+        {
+          "id": "a2",
+          "text": "Die Überlegenheit der Tradition zu beweisen."
+        },
+        {
+          "id": "a3",
+          "text": "Den Archivar von der Qualität zu überzeugen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sie erzählte ihm von dem Jahr der großen Dürre, als nur diese Erbsen überlebten, weil die Ahnen wussten, wann der Boden den Tau am besten hielt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton der Passage beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und sachlich."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholisch und kritisch."
+        },
+        {
+          "id": "a3",
+          "text": "Zornig und konfrontativ."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Als sie das Gebäude verließ, war die Luft draußen klarer, doch der Sieg fühlte sich wie eine Niederlage an.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Provenienz' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Botanische Reinheit."
+        },
+        {
+          "id": "a2",
+          "text": "Die mündliche Überlieferung."
+        },
+        {
+          "id": "a3",
+          "text": "Der dokumentierte Ursprung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er verlangte die 'Provenienz', ein Wort, das in Julians Mund wie ein Fallbeil klang.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Diskutieren Sie in einem kurzen Essay, ob kulturelles Erbe, das nicht in ein modernes Datenformat passt, zwangsläufig an Bedeutung verliert oder ob es gerade durch seine Unverifizierbarkeit an Wert gewinnt.",
+      "en": "Diskutieren Sie in einem kurzen Essay, ob kulturelles Erbe, das nicht in ein modernes Datenformat passt, zwangsläufig an Bedeutung verliert oder ob es gerade durch seine Unverifizierbarkeit an Wert gewinnt."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Untersuchen Sie die Spannung zwischen institutionalisierter Bewahrung und dem lebendigen Erbe, das durch mündliche Traditionen definiert wird.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Archiv der vergessenen Keime | C2 Reading | WeLearn",
+      "en": "Das Archiv der vergessenen Keime | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine Erzählung über den Zusammenprall von bürokratischer Archivierung und mündlicher Überlieferung in einer Gemeinschaftssamenbibliothek.",
+      "en": "Eine Erzählung über den Zusammenprall von bürokratischer Archivierung und mündlicher Überlieferung in einer Gemeinschaftssamenbibliothek."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

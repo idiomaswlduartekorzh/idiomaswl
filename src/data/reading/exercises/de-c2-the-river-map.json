@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-river-map",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Arbitrarität der Ufer: Eine ethische Kartografie der Flut",
+      "en": "Die Arbitrarität der Ufer: Eine ethische Kartografie der Flut"
+    },
+    "intro": {
+      "es": "Dieser Text analysiert die philosophischen und moralischen Implikationen, die entstehen, wenn Experten eine künstliche Grenze in einem fließenden, unberechenbaren Gewässer ziehen.",
+      "en": "Dieser Text analysiert die philosophischen und moralischen Implikationen, die entstehen, wenn Experten eine künstliche Grenze in einem fließenden, unberechenbaren Gewässer ziehen."
+    },
+    "mission": {
+      "es": "Lesen Sie den Essay und reflektieren Sie über die Macht der kartografischen Definition und deren Auswirkungen auf die menschliche Verantwortung.",
+      "en": "Lesen Sie den Essay und reflektieren Sie über die Macht der kartografischen Definition und deren Auswirkungen auf die menschliche Verantwortung."
+    },
+    "targetText": "Als der Hydrologe Dr. Aris Thorne am späten Nachmittag die endgültige Fassung der Gefahrenkarte für das Tal der Aethel vorlegte, herrschte in den Büros der lokalen Verwaltung eine bedrückende Stille. Die Karte, ein komplexes Geflecht aus blauen Linien und schattierten Zonen, sollte das Schicksal von hunderten Anwohnern besiegeln. Thorne hatte eine scharfe, fast aggressive Grenzlinie um den mäandrierenden Fluss gezogen, die den Unterschied zwischen einer sicheren Zone und einem Katastrophengebiet markierte. Doch der Fluss, ein launisches Gewässer, das sich seit Jahrhunderten durch das Sediment grub, kannte keine solchen Linien. Die Entscheidung, das Wasser in eine mathematische Formel zu pressen, war nicht bloß ein technischer Akt, sondern eine moralische Anmaßung, die das unvorhersehbare Wesen der Natur in ein binäres System aus Existenz und Vernichtung zwang. Die Anwohner, deren Häuser nun auf der falschen Seite der Linie lagen, sahen sich plötzlich mit einer existenziellen Entwertung konfrontiert, die weit über den bloßen materiellen Verlust hinausging. Die Karte wurde zum Schicksalsbuch, das den Wert ihres Lebensraums per Dekret festlegte. Thorne wusste um die Unschärfe seiner Daten, doch er rechtfertigte die Präzision der Linie mit der Notwendigkeit einer klaren Kommunikation. Er argumentierte, dass Ambiguität in einer Krisensituation tödlich sei. Doch genau hier lag der ethische Abgrund: Indem er die Unsicherheit tilgte, schuf er eine neue, künstliche Form der Gefahr. Die Menschen, die sich in der sogenannten sicheren Zone wähnten, vernachlässigten notwendige Vorsichtsmaßnahmen, während diejenigen außerhalb der Linie in eine Lähmung verfielen, da ihre Immobilien über Nacht ihre ökonomische Existenzberechtigung verloren hatten. Die Karte war kein Abbild der Realität mehr, sondern ein performativer Akt, der die Realität erst erschuf. Der Bürgermeister, Elias Vane, stand vor der unlösbaren Aufgabe, diese Karte zu autorisieren. Er sah in den Augen der Betroffenen nicht nur Angst vor dem Wasser, sondern den Zorn über die Willkür der Grenzziehung. Ein älterer Landwirt, dessen Vorfahren den Fluss seit Generationen beobachteten, konfrontierte Vane bei einer öffentlichen Anhörung. Er warf dem Bürgermeister vor, den Geist des Flusses durch eine bürokratische Fiktion ersetzt zu haben. Vane erkannte, dass die Karte eine unauflösbare Spannung zwischen technokratischer Notwendigkeit und menschlicher Erfahrung erzeugte. Die Grenzlinie, die eigentlich Schutz versprechen sollte, wurde zum Instrument einer sozialen Spaltung. Als die ersten Regenfälle der Saison einsetzten, schwoll der Fluss an, wie er es jedes Jahr tat. Doch diesmal war die Wahrnehmung eine andere. Die Bewohner starrten nicht mehr auf das Wasser, sondern auf die Karte an ihren Wänden. Sie warteten darauf, dass die Natur sich an die Linien hielt, die Thorne gezeichnet hatte. Als das Wasser schließlich die künstliche Grenze überschritt und in die als sicher deklarierte Zone eindrang, brach nicht nur das Ufer, sondern auch das Vertrauen in die wissenschaftliche Autorität zusammen. Die Katastrophe war nicht nur hydrologischer Natur, sondern eine epistemologische. Thorne hatte versucht, die Unberechenbarkeit des Flusses zu domestizieren, doch er hatte lediglich die Illusion von Kontrolle verkauft. Die moralische Konsequenz seines Handelns blieb ein offenes Trauma für das Tal. Die Menschen lernten auf die schmerzhafteste Weise, dass eine Linie auf Papier niemals die Gewalt eines ungebändigten Stroms bändigen kann. Am Ende blieb das Tal mit einer Karte zurück, die nun als historisches Dokument des Scheiterns diente. Die Grenze war verschwunden, weggespült von dem Wasser, das sich weigerte, sich den menschlichen Kategorien zu unterwerfen. Die Bewohner begannen, ihre Häuser wieder aufzubauen, diesmal jedoch ohne den falschen Trost einer kartografischen Sicherheit. Sie hatten die Lektion gelernt, dass wahre Vorsicht in der Anerkennung der eigenen Grenzen liegt, nicht in der Zeichnung von Linien auf einer Karte. Der Fluss floss weiter, unbeeindruckt von den Debatten, die in den klimatisierten Büros über sein Schicksal geführt worden waren. Die Geschichte des Tals der Aethel wurde zu einer Mahnung für alle, die glauben, die Welt durch Definitionen beherrschen zu können. Die moralische Last der Entscheidung lastete schwer auf Thorne, der sich aus der Öffentlichkeit zurückzog. Er verstand nun, dass die größte Gefahr nicht im Wasser lag, sondern in der Hybris derer, die meinten, es in eine Formel zwingen zu können. Die Aethel blieb ein wilder Fluss, und die Menschen, die an seinen Ufern lebten, waren nun klüger durch den Verlust ihrer Illusionen. Sie wussten, dass das Leben am Strom immer ein Wagnis bleibt, ein Tanz mit dem Unvorhersehbaren, den keine Karte jemals vollständig einfangen kann. Die Grenze war eine Fiktion, der Fluss die einzige Wahrheit.\n\nDoch die Abkehr von der kartografischen Hybris barg neue, subtile Gefahren, die das Tal in ein ethisches Vakuum stießen. Ohne den normativen Rahmen der Gefahrenkarte schwand nicht nur die falsche Sicherheit, sondern auch die kollektive Handlungsfähigkeit der Gemeinschaft. Während die Bewohner den Fluss nun als unberechenbare Naturgewalt respektierten, fehlte es an einer koordinierten Strategie, um den kommenden saisonalen Bedrohungen wirksam zu begegnen. Die Ablehnung jeder wissenschaftlichen Modellierung führte zu einem gefährlichen Fatalismus, bei dem der Respekt vor der Wildheit des Wassers in eine resignative Passivität umschlug. Investitionen in den Hochwasserschutz wurden als sinnlose Eingriffe in den natürlichen Lauf der Aethel diskreditiert, wodurch die Infrastruktur des Tals zusehends verfiel. Die epistemologische Demut, die durch das Scheitern Thornes gewonnen wurde, drohte somit in eine technophobe Verweigerungshaltung zu kippen, die das Tal erneut verwundbar machte. Es entwickelte sich ein gefährlicher Konsens: Die Vorstellung, dass jede Form der Planung eine Anmaßung darstelle, verhinderte notwendige Vorsorgemaßnahmen. Die Bewohner verwechselten die Unzulänglichkeit der Karte mit der Unmöglichkeit der Prävention. So entstand ein neues, paradoxes Risiko: Die Freiheit von der bürokratischen Fiktion mündete in eine schutzlose Ausgeliefertheit. Das Tal, nun befreit von den Linien auf dem Papier, stand vor der Herausforderung, eine neue Balance zu finden – zwischen der Anerkennung der unbändigen Natur und der Notwendigkeit, durch rationales Handeln das Überleben in einem Lebensraum zu sichern, der keine Garantien bietet.",
+    "wordCount": 933,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "mäandrierenden",
+        "lemma": "mäandrierenden",
+        "glosses": {
+          "es": "winding or curving in a sinuous way",
+          "en": "winding or curving in a sinuous way"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Anmaßung",
+        "lemma": "Anmaßung",
+        "glosses": {
+          "es": "arrogance or presumption",
+          "en": "arrogance or presumption"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ambiguität",
+        "lemma": "Ambiguität",
+        "glosses": {
+          "es": "ambiguity or uncertainty of meaning",
+          "en": "ambiguity or uncertainty of meaning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "performativer",
+        "lemma": "performativer",
+        "glosses": {
+          "es": "having the effect of creating or changing reality by the act of expression",
+          "en": "having the effect of creating or changing reality by the act of expression"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemologische",
+        "lemma": "epistemologische",
+        "glosses": {
+          "es": "relating to the theory of knowledge or how we understand reality",
+          "en": "relating to the theory of knowledge or how we understand reality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Hybris",
+        "lemma": "Hybris",
+        "glosses": {
+          "es": "excessive pride or dangerous overconfidence",
+          "en": "excessive pride or dangerous overconfidence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:30:10.129Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das zentrale Thema des Essays über die Gefahrenkarte von Dr. Thorne?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die moralische Problematik der künstlichen Grenzziehung."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Unzulänglichkeit der modernen Hydrologie."
+        },
+        {
+          "id": "a3",
+          "text": "Die Auswirkungen von Hochwasser auf die lokale Landwirtschaft."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Entscheidung, das Wasser in eine mathematische Formel zu pressen, war nicht bloß ein technischer Akt, sondern eine moralische Anmaßung, die das unvorhersehbare Wesen der Natur in ein binäres System aus Existenz und Vernichtung zwang.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum entschied sich Thorne für eine scharfe Grenzlinie auf der Karte?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um den Immobilienwert zu stabilisieren."
+        },
+        {
+          "id": "a2",
+          "text": "Um eine klare Kommunikation zu gewährleisten."
+        },
+        {
+          "id": "a3",
+          "text": "Weil die Anwohner dies ausdrücklich forderten."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Er argumentierte, dass Ambiguität in einer Krisensituation tödlich sei.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie veränderte die Karte das Verhalten der Bewohner vor der tatsächlichen Flut?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie fühlten sich durch die wissenschaftliche Präzision sicher und handelten rational."
+        },
+        {
+          "id": "a2",
+          "text": "Sie ignorierten die Karte und vertrauten weiterhin auf ihre eigene Beobachtung."
+        },
+        {
+          "id": "a3",
+          "text": "Die Karte erzeugte eine falsche Sicherheit oder eine lähmende Existenzangst."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Menschen, die sich in der sogenannten sicheren Zone wähnten, vernachlässigten notwendige Vorsichtsmaßnahmen, während diejenigen außerhalb der Linie in eine Lähmung verfielen, da ihre Immobilien über Nacht ihre ökonomische Existenzberechtigung verloren hatten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Autor mit der Schilderung des Landwirts, der den Bürgermeister konfrontiert?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Verdeutlichung des Konflikts zwischen technokratischer Fiktion und menschlicher Erfahrung."
+        },
+        {
+          "id": "a2",
+          "text": "Die Darstellung der bürokratischen Ineffizienz."
+        },
+        {
+          "id": "a3",
+          "text": "Die Erklärung der historischen Ursprünge des Flusses Aethel für die Leser."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Vane erkannte, dass die Karte eine unauflösbare Spannung zwischen technokratischer Notwendigkeit und menschlicher Erfahrung erzeugte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welchen Ton schlägt der Autor gegenüber Thornes wissenschaftlichem Ansatz an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Einen bewundernden Ton."
+        },
+        {
+          "id": "a2",
+          "text": "Einen kritisch-distanzierten Ton."
+        },
+        {
+          "id": "a3",
+          "text": "Einen rein deskriptiven, neutralen Ton."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Thorne hatte versucht, die Unberechenbarkeit des Flusses zu domestizieren, doch er hatte lediglich die Illusion von Kontrolle verkauft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Hybris' im Kontext des letzten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Bescheidenheit der Experten."
+        },
+        {
+          "id": "a2",
+          "text": "Die wissenschaftliche Genauigkeit."
+        },
+        {
+          "id": "a3",
+          "text": "Die gefährliche Selbstüberschätzung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er verstand nun, dass die größte Gefahr nicht im Wasser lag, sondern in der Hybris derer, die meinten, es in eine Formel zwingen zu können.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 200 Wörter), in dem Sie erörtern, ob wissenschaftliche Modelle in der Politikgestaltung eher als Orientierungshilfe oder als gefährliche Vereinfachung der Realität betrachtet werden sollten. Beziehen Sie sich dabei auf das Konzept der 'künstlichen Grenze'.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 200 Wörter), in dem Sie erörtern, ob wissenschaftliche Modelle in der Politikgestaltung eher als Orientierungshilfe oder als gefährliche Vereinfachung der Realität betrachtet werden sollten. Beziehen Sie sich dabei auf das Konzept der 'künstlichen Grenze'."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lesen Sie den Essay und reflektieren Sie über die Macht der kartografischen Definition und deren Auswirkungen auf die menschliche Verantwortung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:30:10.129Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Arbitrarität der Ufer: Eine ethische Kartografie der Flut | C2 Reading | WeLearn",
+      "en": "Die Arbitrarität der Ufer: Eine ethische Kartografie der Flut | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dieser Text analysiert die philosophischen und moralischen Implikationen, die entstehen, wenn Experten eine künstliche Grenze in einem fließenden, unberechenbaren Gewässer ziehen.",
+      "en": "Dieser Text analysiert die philosophischen und moralischen Implikationen, die entstehen, wenn Experten eine künstliche Grenze in einem fließenden, unberechenbaren Gewässer ziehen."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:30:10.129Z"
+  }
+}

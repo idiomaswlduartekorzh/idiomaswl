@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Kartografie des Vergessens",
+      "en": "Die Kartografie des Vergessens"
+    },
+    "intro": {
+      "es": "Eine philosophische Erzählung über die Macht der Benennung und die ethische Last der kartografischen Darstellung.",
+      "en": "Eine philosophische Erzählung über die Macht der Benennung und die ethische Last der kartografischen Darstellung."
+    },
+    "mission": {
+      "es": "Analysieren Sie die subtilen Machtstrukturen, die in der Auswahl topografischer Bezeichnungen verborgen liegen, und bewerten Sie die Verantwortung des Kartografen.",
+      "en": "Analysieren Sie die subtilen Machtstrukturen, die in der Auswahl topografischer Bezeichnungen verborgen liegen, und bewerten Sie die Verantwortung des Kartografen."
+    },
+    "targetText": "Elias saß in seinem Atelier, die Fingerkuppen leicht verfärbt von der Tusche, die er für die neuen Karten des Archipels von Oros verwendete. Vor ihm breitete sich ein Pergament aus, das nicht nur Küstenlinien und Tiefenlinien darstellte, sondern eine ganze Geschichte der Verdrängung. Sein Auftraggeber, der Rat der Sieben, hatte ihn angewiesen, die alten Namen der Inseln – Namen, die in der Sprache der Ureinwohner noch von den Geistern der Ahnen kündeten – durch eine Nomenklatur zu ersetzen, die den neuen Handelsrouten entsprach. Elias betrachtete den Stift in seiner Hand wie ein chirurgisches Instrument. Jede Tinte, die er auf das Papier brachte, war ein Akt der Auslöschung. Er erinnerte sich an den alten Fischer Kael, der ihm einst erzählte, dass der Felsen 'Schatten des Wals' nicht deshalb so hieß, weil er einem Tier glich, sondern weil dort die Zeit für einen Moment stillstand, wenn die Gezeiten den Stein umspülten. Nun sollte dieser Ort 'Handelsstation Alpha' heißen. Die Spannung in seinem Nacken nahm zu, während er die Feder ansetzte. Er wusste, dass eine Karte niemals neutral war; sie war ein Manifest derer, die sie zeichneten. Die Entscheidung, was benannt wurde und was im namenlosen Schatten verblieb, war ein Akt der kulturellen Hegemonie, getarnt als bürokratische Notwendigkeit. Er fragte sich, ob die Bewohner der Inseln jemals erfahren würden, dass ihre Identität in den Archiven des Rates bereits als obsolet markiert worden war. Während er arbeitete, drang das ferne Rauschen des Hafens durch das offene Fenster, ein Geräusch von Fortschritt und Kommerz, das die Stille seiner moralischen Krise nur noch deutlicher hervorhob. Er fühlte die Last der Verantwortung, die auf seinen Schultern wog. Sollte er den Befehl verweigern und damit seine Karriere riskieren, oder sollte er das Spiel mitspielen, in der Hoffnung, zumindest einige der ursprünglichen Namen in einer geheimen Legende zu bewahren? Er entschied sich für einen Mittelweg, eine subtile Subversion: Er zeichnete die offiziellen Namen in fetter, schwarzer Tinte, doch in den winzigen Zwischenräumen der topografischen Zeichen setzte er die alten Bezeichnungen in einer fast unsichtbaren, blassen Sepia-Tönung. Es war ein Versuch, die Erinnerung zu retten, ohne die Autorität des Rates unmittelbar herauszufordern. Doch als die Sonne hinter den Klippen versank, überkam ihn eine bittere Erkenntnis. Diese versteckten Namen waren keine Rettung; sie waren lediglich ein privates Eingeständnis seiner eigenen Feigheit. Er betrachtete das Werk, das nun vor ihm lag – ein hybrides Dokument, das weder die Wahrheit der Inseln noch die Macht des Rates vollends repräsentierte. Die Karte war nun ein Zeugnis seiner inneren Zerrissenheit, eine stumme Anklage gegen die Willkür der Geschichte. Er verstand, dass er nicht die Welt kartografierte, sondern seine eigene Unfähigkeit, der Macht mit Aufrichtigkeit zu begegnen. Die Stille im Raum war nun schwerer als zuvor, und die Tinte auf dem Papier wirkte wie getrocknetes Blut einer Kultur, die er mit seinen eigenen Händen besiegelt hatte. Er löschte die Kerze, doch das Bild der Karte blieb in seinem Geist eingebrannt – ein Netz aus Lügen und verlorenen Wahrheiten, das die Zukunft des Archipels für immer verändern würde.\n\nDoch die Bitterkeit dieser Erkenntnis wandelte sich in den darauffolgenden Tagen in eine beklemmende Gewissheit, die weit über das bloße persönliche Versagen hinausging. Elias begriff, dass seine gut gemeinte Subversion – diese flüchtigen, blassen Zeichen in Sepia – nicht bloß ein Ausdruck seiner Feigheit war, sondern eine gefährliche Illusion von Widerstand. Indem er die alten Namen in den Schatten der offiziellen Nomenklatur verbarg, hatte er sie nicht gerettet; er hatte sie vielmehr in den Status einer bloßen Kuriosität degradiert, einer Fußnote in einer Geschichte, die nun unwiderruflich dem Diktat des Rates unterworfen war. Er erkannte, dass Macht nicht nur durch das Auslöschen von Namen konsolidiert wird, sondern vor allem durch die Kooptierung des Dissenses. Sollten jemals Gelehrte oder spätere Entdecker auf diese geheimen Markierungen stoßen, würden sie diese vermutlich nicht als Akt des Gedenkens interpretieren, sondern als ästhetische Spielerei eines Kartografen, der die topografische Präzision zugunsten einer nostalgischen Ornamentik vernachlässigte. Sein Versuch, die Identität des Archipels zu bewahren, hatte die kulturelle Auslöschung durch den Rat sogar legitimiert, da er die alten Namen nun in ein System integriert hatte, das sie als zweitrangig, als bloßes Echo der Vergangenheit, definierte. Die Karte war somit zu einem Instrument der endgültigen Domestizierung geworden. Jedes Mal, wenn er den Blick auf das Pergament richtete, sah er nicht mehr die Rettung, sondern die vollständige Vereinnahmung des Widerstands durch die bürokratische Ordnung. Er hatte der Hegemonie unbeabsichtigt ein Werkzeug geliefert, mit dem sie den Verlust der Kultur als eine harmonische, wenn auch melancholische Transformation darstellen konnte. Die Stille seines Ateliers, die einst den Raum für seine moralische Reflexion geboten hatte, fühlte sich nun wie das Vakuum einer bereits vollzogenen Auslöschung an. Er hatte nicht die Geschichte bewahrt, sondern ihren Untergang ästhetisiert und damit jene, die er zu schützen glaubte, ihrer letzten, wirksamen Waffe beraubt: der Unkenntnis über ihre eigene Marginalisierung. Während das Licht des neuen Tages durch die Fenster brach und die Handelsrouten auf dem Papier in ihrer unerbittlichen Klarheit hervorhob, begriff Elias, dass jede Form der Anpassung, so subtil sie auch sein mochte, nur dazu diente, das Fundament der Macht zu festigen. Er hatte den Archipel nicht auf das Papier gezeichnet, sondern ihn in ein Gefängnis aus Tinte und Konventionen gesperrt, aus dem es kein Entkommen mehr gab, da er selbst die Mauern mit entworfen hatte.",
+    "wordCount": 881,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Nomenklatur",
+        "lemma": "Nomenklatur",
+        "glosses": {
+          "es": "A system of names or terms used in a particular field.",
+          "en": "A system of names or terms used in a particular field."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Hegemonie",
+        "lemma": "Hegemonie",
+        "glosses": {
+          "es": "Dominance or leadership, especially by one group over others.",
+          "en": "Dominance or leadership, especially by one group over others."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolet",
+        "lemma": "obsolet",
+        "glosses": {
+          "es": "No longer produced or used; out of date.",
+          "en": "No longer produced or used; out of date."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Subversion",
+        "lemma": "Subversion",
+        "glosses": {
+          "es": "The undermining of the power and authority of an established system.",
+          "en": "The undermining of the power and authority of an established system."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "hybrides",
+        "lemma": "hybrides",
+        "glosses": {
+          "es": "Something made by combining two different elements.",
+          "en": "Something made by combining two different elements."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Zerrissenheit",
+        "lemma": "Zerrissenheit",
+        "glosses": {
+          "es": "A state of inner conflict or being torn between two states.",
+          "en": "A state of inner conflict or being torn between two states."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.5,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das zentrale Thema der Erzählung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Der ethische Konflikt bei der Umbenennung von Orten."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Präzision der Kartografie."
+        },
+        {
+          "id": "a3",
+          "text": "Die wirtschaftliche Bedeutung neuer Handelsrouten für den Archipel."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Entscheidung, was benannt wurde und was im namenlosen Schatten verblieb, war ein Akt der kulturellen Hegemonie, getarnt als bürokratische Notwendigkeit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Wie versucht Elias, die alten Namen der Inseln zu bewahren?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er schreibt sie in den Rand der Karte."
+        },
+        {
+          "id": "a2",
+          "text": "Er zeichnet sie in blasser Sepia-Tönung zwischen die Zeichen."
+        },
+        {
+          "id": "a3",
+          "text": "Er weigert sich strikt, die neuen Namen auf die Karte zu schreiben."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Er zeichnete die offiziellen Namen in fetter, schwarzer Tinte, doch in den winzigen Zwischenräumen der topografischen Zeichen setzte er die alten Bezeichnungen in einer fast unsichtbaren, blassen Sepia-Tönung.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewertet der Protagonist am Ende sein eigenes Handeln?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er sieht sich als mutigen Widerstandskämpfer."
+        },
+        {
+          "id": "a2",
+          "text": "Er glaubt, dass seine Karte den Archipel vor dem Untergang bewahrt hat."
+        },
+        {
+          "id": "a3",
+          "text": "Er erkennt sein Handeln als Ausdruck seiner Feigheit."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Diese versteckten Namen waren keine Rettung; sie waren lediglich ein privates Eingeständnis seiner eigenen Feigheit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum wählt der Rat der Sieben neue Namen für die Inseln?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um die Handelsrouten besser zu organisieren."
+        },
+        {
+          "id": "a2",
+          "text": "Um die alten Geister der Inseln zu ehren und zu schützen."
+        },
+        {
+          "id": "a3",
+          "text": "Um die kulturelle Identität der Ureinwohner besser zu dokumentieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Sein Auftraggeber, der Rat der Sieben, hatte ihn angewiesen, die alten Namen der Inseln – Namen, die in der Sprache der Ureinwohner noch von den Geistern der Ahnen kündeten – durch eine Nomenklatur zu ersetzen, die den neuen Handelsrouten entsprach.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Tonfall dominiert den Text gegen Ende?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimistisch und hoffnungsvoll."
+        },
+        {
+          "id": "a2",
+          "text": "Melancholisch und selbstkritisch."
+        },
+        {
+          "id": "a3",
+          "text": "Sachlich und distanziert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Er verstand, dass er nicht die Welt kartografierte, sondern seine eigene Unfähigkeit, der Macht mit Aufrichtigkeit zu begegnen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Hegemonie' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die künstlerische Freiheit bei der Gestaltung von Karten."
+        },
+        {
+          "id": "a2",
+          "text": "Die bürokratische Ordnung in den Archiven des Rates."
+        },
+        {
+          "id": "a3",
+          "text": "Die Vorherrschaft einer Gruppe über eine andere."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Entscheidung, was benannt wurde und was im namenlosen Schatten verblieb, war ein Akt der kulturellen Hegemonie, getarnt als bürokratische Notwendigkeit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Erörtern Sie in einem kurzen Aufsatz, ob das Festhalten an ursprünglichen Ortsnamen eine wirksame Form des kulturellen Widerstands gegen koloniale Strukturen darstellt oder ob es lediglich eine nostalgische Geste ohne politische Wirkung bleibt.",
+      "en": "Erörtern Sie in einem kurzen Aufsatz, ob das Festhalten an ursprünglichen Ortsnamen eine wirksame Form des kulturellen Widerstands gegen koloniale Strukturen darstellt oder ob es lediglich eine nostalgische Geste ohne politische Wirkung bleibt."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie die subtilen Machtstrukturen, die in der Auswahl topografischer Bezeichnungen verborgen liegen, und bewerten Sie die Verantwortung des Kartografen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Kartografie des Vergessens | C2 Reading | WeLearn",
+      "en": "Die Kartografie des Vergessens | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine philosophische Erzählung über die Macht der Benennung und die ethische Last der kartografischen Darstellung.",
+      "en": "Eine philosophische Erzählung über die Macht der Benennung und die ethische Last der kartografischen Darstellung."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

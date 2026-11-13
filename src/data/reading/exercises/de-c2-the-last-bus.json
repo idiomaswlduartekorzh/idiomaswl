@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-last-bus",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Paradoxon der leeren Haltestelle",
+      "en": "Das Paradoxon der leeren Haltestelle"
+    },
+    "intro": {
+      "es": "Ein Leitartikel über die Tücken der datengestützten Effizienzmessung im öffentlichen Nahverkehr.",
+      "en": "Ein Leitartikel über die Tücken der datengestützten Effizienzmessung im öffentlichen Nahverkehr."
+    },
+    "mission": {
+      "es": "Analysieren Sie den Text im Hinblick auf die methodischen Schwächen bei der Bewertung von Infrastrukturmaßnahmen.",
+      "en": "Analysieren Sie den Text im Hinblick auf die methodischen Schwächen bei der Bewertung von Infrastrukturmaßnahmen."
+    },
+    "targetText": "In der abgelegenen Region Hinterwald wurde kürzlich eine drastische Umstrukturierung des Busverkehrs vollzogen. Die Regionalverwaltung, angeführt von dem Verkehrsplaner Dr. Arndt von Zitzewitz, hatte sich zum Ziel gesetzt, die Effizienz des Netzes durch eine strikte Orientierung an den Fahrgastzahlen zu maximieren. Das Credo war simpel: Linien, die über einen Zeitraum von drei Monaten eine durchschnittliche Auslastung von weniger als zehn Personen pro Fahrt aufwiesen, wurden gestrichen oder durch ein bedarfsorientiertes Anrufsammeltaxi ersetzt. Dr. von Zitzewitz präsentierte stolz eine Grafik, die einen Anstieg der durchschnittlichen Effizienz pro gefahrenem Kilometer um zwanzig Prozent auswies. Er nannte dies eine notwendige Modernisierung, um den Haushalt zu entlasten und Ressourcen dort zu bündeln, wo sie tatsächlich von der Bevölkerung genutzt würden. Doch hinter diesen glänzenden Kennzahlen verbirgt sich eine methodische Blindheit, die das soziale Gefüge der Region nachhaltig erschüttert hat.\n\nDie Bewohner der entlegenen Weiler, darunter die betagte Landwirtin Frau Hannele, die seit Jahrzehnten auf die Linie 402 angewiesen war, berichten von einer anderen Realität. Frau Hannele schildert, wie die vorzeitige Streichung der Vormittagsverbindung dazu führte, dass sie ihre wöchentlichen Arztbesuche in der Kreisstadt nicht mehr wahrnehmen konnte. Als die Linie 402 offiziell aufgrund mangelnder Nachfrage eingestellt wurde, war die Nachfrage bereits Monate zuvor eingebrochen – nicht, weil die Menschen kein Bedürfnis mehr nach Mobilität hatten, sondern weil die Zuverlässigkeit des Busses bereits durch eine schleichende Ausdünnung des Fahrplans untergraben worden war. Die Daten, die Dr. von Zitzewitz als Grundlage für seine Entscheidung heranzog, waren somit das Ergebnis einer selbsterfüllenden Prophezeiung: Durch die Reduktion der Frequenz sank die Nutzbarkeit, was wiederum die Fahrgastzahlen drückte, bis der statistische Schwellenwert für die endgültige Einstellung erreicht war.\n\nDieses Phänomen der ‚verschwundenen Nachfrage‘ wirft ein kritisches Licht auf die moderne Verwaltungspraxis, die versucht, komplexe soziale Bedürfnisse auf binäre Datensätze zu reduzieren. Wenn eine Infrastrukturmaßnahme ausschließlich nach ihrer aktuellen Rentabilität bewertet wird, ignoriert sie die präventive Funktion öffentlicher Daseinsvorsorge. Ein Bus, der leer durch ein Tal fährt, ist in der betriebswirtschaftlichen Logik ein Verlustgeschäft; in der soziopolitischen Logik ist er jedoch das einzige Band, das einen Ort vor der sozialen Isolation bewahrt. Die Entscheidungsträger im Hinterwald haben die Menschen, die durch das Raster ihrer Tabellen fielen, schlichtweg aus der Gleichung gestrichen. Sie existieren in der Statistik nicht mehr, weil sie nicht mehr in den Bus steigen können, was wiederum die Rechtfertigung liefert, den Bus gar nicht mehr fahren zu lassen.\n\nDer Konflikt erreichte seinen Höhepunkt, als der Gemeinderat von Hinterwald eine Petition einreichte, um den alten Fahrplan wiederherzustellen. Dr. von Zitzewitz blieb unnachgiebig. Er argumentierte, dass eine Rückkehr zum alten System eine Verschwendung öffentlicher Gelder darstelle, die an anderer Stelle, etwa bei der Digitalisierung der Schulen, dringender benötigt würden. Er warf den Kritikern eine nostalgische Verklärung der Vergangenheit vor, die den Blick auf die technologische Notwendigkeit verstelle. Doch diese Argumentation übersieht den Kern des Problems: Die Effizienzmessung ist kein neutrales Instrument, sondern ein politisches Steuerungswerkzeug. Indem man den Erfolg einer Dienstleistung nur an der unmittelbaren Frequenz misst, delegitimiert man den Anspruch derer, deren Mobilität nicht in das Raster der Optimierung passt.\n\nAm Ende steht die Region vor einem Scherbenhaufen. Die Mobilitätsgarantie, die einst als Pfeiler des ländlichen Lebens galt, ist einer kalten Logik der Auslastungsquoten gewichen. Während die Bilanzen der Verkehrsbetriebe nun eine erfreuliche Stabilität aufweisen, ist die soziale Mobilität in Hinterwald zum Erliegen gekommen. Die Menschen, die nicht mehr mobil sind, sind nicht einfach verschwunden; sie sind in die Unsichtbarkeit abgewandert. Die Ironie besteht darin, dass die Effizienzsteigerung genau jene Basis zerstört hat, die sie eigentlich bedienen sollte. Wenn die Daten die Realität nicht mehr abbilden, sondern sie aktiv gestalten, wird aus einer objektiven Messung eine subjektive Ausgrenzung. Die Frage bleibt, ob eine Gesellschaft bereit ist, den Preis für eine solche Effizienz zu zahlen, wenn der Preis die systematische Entmündigung ihrer schwächsten Mitglieder ist.\n\nDie langfristigen Konsequenzen dieser technokratischen Umgestaltung offenbaren nun eine schleichende sozioökonomische Erosion, die weit über das bloße Ausbleiben von Busfahrten hinausgeht. Während Dr. von Zitzewitz den Erfolg seiner Bilanz feiert, zeigt sich in den umliegenden Dörfern eine besorgniserregende Abwärtsspirale: Lokale Gewerbetreibende, die einst vom Pendlerstrom profitierten, verzeichnen drastische Umsatzeinbußen, was zu einer Kettenreaktion aus Geschäftsaufgaben und sinkender Attraktivität für junge Familien führt. Die Abwanderung in urbane Zentren hat sich spürbar beschleunigt, da die infrastrukturelle Anbindung als Grundvoraussetzung für eine zukunftssichere Lebensplanung in Hinterwald entfallen ist. Diese Entwicklung entlarvt die vermeintliche Effizienz als kurzsichtige Sparmaßnahme, die den Wert der regionalen Wertschöpfungskette vollständig ignoriert. Indem man die Mobilität als reinen Kostenfaktor betrachtet, hat die Verwaltung die fundamentale Bedeutung des öffentlichen Verkehrs als Teilhabegarantie und wirtschaftliches Bindeglied unterschätzt. Die dadurch entstehenden Folgekosten – etwa durch steigende Aufwendungen für soziale Pflegedienste, die nun die isolierten Senioren in ihren abgelegenen Häusern aufsuchen müssen – übersteigen die erzielten Einsparungen bei weitem. Es zeigt sich, dass eine rein betriebswirtschaftliche Optimierung der öffentlichen Daseinsvorsorge ein gefährliches Paradoxon schafft: Man spart zwar an der Infrastruktur, provoziert jedoch eine strukturelle Verödung, die das Gemeinwesen als Ganzes finanziell und moralisch belastet. Letztlich hat die Verwaltung durch ihre dogmatische Fixierung auf Kennzahlen nicht nur die Mobilität der Bürger eingeschränkt, sondern das Vertrauen in staatliche Institutionen nachhaltig zerrüttet. Die Region Hinterwald steht somit exemplarisch für ein administratives Versagen, bei dem die mathematische Korrektheit der Tabellen die menschliche und ökonomische Realität verdrängt hat. Wahre Modernisierung hätte nicht in der Reduktion, sondern in der kreativen Vernetzung bestehen müssen, um die Identität des ländlichen Raums als lebenswerten Standort zu bewahren, anstatt ihn als bloßes Defizitmodell zu verwalten.",
+    "wordCount": 896,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "schleichende",
+        "lemma": "schleichende",
+        "glosses": {
+          "es": "insidious or gradual",
+          "en": "insidious or gradual"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "selbsterfüllenden",
+        "lemma": "selbsterfüllenden",
+        "glosses": {
+          "es": "self-fulfilling",
+          "en": "self-fulfilling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Daseinsvorsorge",
+        "lemma": "Daseinsvorsorge",
+        "glosses": {
+          "es": "provision of public services",
+          "en": "provision of public services"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "delegitimiert",
+        "lemma": "delegitimiert",
+        "glosses": {
+          "es": "to delegitimize",
+          "en": "to delegitimize"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Scherbenhaufen",
+        "lemma": "Scherbenhaufen",
+        "glosses": {
+          "es": "a pile of shards, here: a total failure",
+          "en": "a pile of shards, here: a total failure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Entmündigung",
+        "lemma": "Entmündigung",
+        "glosses": {
+          "es": "disenfranchisement or loss of autonomy",
+          "en": "disenfranchisement or loss of autonomy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.8,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches Kernproblem adressiert der Text hinsichtlich der Verkehrsplanung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die methodische Verzerrung durch einseitige Daten."
+        },
+        {
+          "id": "a2",
+          "text": "Die mangelnde Finanzierung durch den Staat."
+        },
+        {
+          "id": "a3",
+          "text": "Die technische Unzuverlässigkeit der neuen Busse."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Doch hinter diesen glänzenden Kennzahlen verbirgt sich eine methodische Blindheit, die das soziale Gefüge der Region nachhaltig erschüttert hat.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum sank die Nachfrage nach der Linie 402 laut Text tatsächlich?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Bevölkerung wuchs nicht mehr."
+        },
+        {
+          "id": "a2",
+          "text": "Die Zuverlässigkeit war bereits vorher gesunken."
+        },
+        {
+          "id": "a3",
+          "text": "Die Preise für die Tickets wurden zu hoch."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Als die Linie 402 offiziell aufgrund mangelnder Nachfrage eingestellt wurde, war die Nachfrage bereits Monate zuvor eingebrochen – nicht, weil die Menschen kein Bedürfnis mehr nach Mobilität hatten, sondern weil die Zuverlässigkeit des Busses bereits durch eine schleichende Ausdünnung des Fahrplans untergraben worden war.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewertet der Autor die Haltung von Dr. von Zitzewitz?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Als notwendige Sparmaßnahme."
+        },
+        {
+          "id": "a2",
+          "text": "Als kluge politische Weitsicht."
+        },
+        {
+          "id": "a3",
+          "text": "Als technokratische Ignoranz."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Er warf den Kritikern eine nostalgische Verklärung der Vergangenheit vor, die den Blick auf die technologische Notwendigkeit verstelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Autor mit der Erwähnung von Frau Hannele?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die emotionale Wirkung der statistischen Entscheidung zu verdeutlichen."
+        },
+        {
+          "id": "a2",
+          "text": "Den persönlichen Konflikt zwischen ihr und dem Planer zu betonen."
+        },
+        {
+          "id": "a3",
+          "text": "Zu zeigen, dass alte Menschen den Bus nicht mehr nutzen können."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Frau Hannele schildert, wie die vorzeitige Streichung der Vormittagsverbindung dazu führte, dass sie ihre wöchentlichen Arztbesuche in der Kreisstadt nicht mehr wahrnehmen konnte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welchen Ton schlägt der Autor gegenüber der aktuellen Verwaltungspraxis an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutral und beobachtend."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und warnend."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistisch und hoffnungsvoll."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Frage bleibt, ob eine Gesellschaft bereit ist, den Preis für eine solche Effizienz zu zahlen, wenn der Preis die systematische Entmündigung ihrer schwächsten Mitglieder ist.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Daseinsvorsorge' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die private Altersvorsorge der Bürger."
+        },
+        {
+          "id": "a2",
+          "text": "Die Planung für zukünftige Infrastruktur."
+        },
+        {
+          "id": "a3",
+          "text": "Die staatliche Pflicht zur Grundversorgung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wenn eine Infrastrukturmaßnahme ausschließlich nach ihrer aktuellen Rentabilität bewertet wird, ignoriert sie die präventive Funktion öffentlicher Daseinsvorsorge.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar, in dem Sie erörtern, ob eine rein datenbasierte Entscheidung im öffentlichen Sektor jemals als 'fair' bezeichnet werden kann, unter Berücksichtigung der im Text genannten Argumente.",
+      "en": "Schreiben Sie einen kurzen Kommentar, in dem Sie erörtern, ob eine rein datenbasierte Entscheidung im öffentlichen Sektor jemals als 'fair' bezeichnet werden kann, unter Berücksichtigung der im Text genannten Argumente."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie den Text im Hinblick auf die methodischen Schwächen bei der Bewertung von Infrastrukturmaßnahmen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Paradoxon der leeren Haltestelle | C2 Reading | WeLearn",
+      "en": "Das Paradoxon der leeren Haltestelle | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein Leitartikel über die Tücken der datengestützten Effizienzmessung im öffentlichen Nahverkehr.",
+      "en": "Ein Leitartikel über die Tücken der datengestützten Effizienzmessung im öffentlichen Nahverkehr."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

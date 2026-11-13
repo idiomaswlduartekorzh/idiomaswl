@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione dell'autonomia: il paradosso del riparo",
+      "en": "L'illusione dell'autonomia: il paradosso del riparo"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla retorica dell'autosufficienza durante un seminario di riparazione domestica.",
+      "en": "Un'analisi critica sulla retorica dell'autosufficienza durante un seminario di riparazione domestica."
+    },
+    "mission": {
+      "es": "Esaminare la tensione tra l'ideale di indipendenza tecnica e la realtà del lavoro di cura invisibile.",
+      "en": "Esaminare la tensione tra l'ideale di indipendenza tecnica e la realtà del lavoro di cura invisibile."
+    },
+    "targetText": "Il laboratorio di riparazione tenutosi martedì presso il centro polifunzionale 'Ars Restitutio' si presentava come un santuario della modernità consapevole. Sotto la guida di Elio, un tecnico che ostenta una competenza quasi ascetica, i partecipanti erano invitati a smontare piccoli elettrodomestici, trasformando il guasto in un atto di sovranità personale. La retorica di Elio era chiara: riparare non è solo una necessità economica, ma un esercizio di resistenza contro l'obsolescenza programmata e la dipendenza dal consumismo. Eppure, osservando la dinamica della serata, emergeva una contraddizione stridente. Mentre i partecipanti si vantavano di aver ripristinato il funzionamento di un tostapane o di una lampada, il retroscena era dominato da Clara, la coordinatrice logistica. Clara non riparava circuiti; puliva le superfici unte, riordinava gli attrezzi lasciati sparsi, gestiva le frustrazioni dei meno abili e assicurava che lo spazio fosse pronto per il giorno successivo. La sua presenza, costante e silenziosa, era la condizione necessaria affinché l'illusione dell'autosufficienza potesse persistere.\n\nIl nucleo del problema risiede nella celebrazione dell'atto tecnico come momento di emancipazione individuale. Quando un partecipante, trionfante per aver saldato un contatto, dichiarava di sentirsi finalmente 'libero' dal mercato, ignorava deliberatamente la rete di supporto che rendeva possibile quell'istante di gloria. La narrazione dell'autosufficienza è intrinsecamente incompleta perché omette il lavoro di riproduzione sociale, ovvero quell'insieme di attività che mantengono l'ambiente di lavoro operativo e accogliente. Senza il lavoro di Clara, il laboratorio sarebbe degenerato rapidamente in un caos di componenti elettriche e frustrazione collettiva, rendendo impossibile qualsiasi atto di riparazione. L'autonomia, in questo contesto, emerge non come una conquista solitaria, ma come un privilegio concesso da chi si occupa delle incombenze invisibili. È una forma di cecità selettiva che trasforma il riparatore in un eroe solitario, oscurando la dimensione relazionale e collettiva del fare tecnico.\n\nNon si vuole negare il valore intrinseco della riparazione, né sminuire la soddisfazione che deriva dal recupero di un oggetto. Tuttavia, la retorica che circonda tali eventi tende a feticizzare l'oggetto riparato, isolandolo dal contesto umano e spaziale. Durante la serata, ho assistito a una discussione accesa tra un partecipante e un neofita riguardo alla procedura corretta per sostituire un condensatore. Il confronto era aspro, intriso di un desiderio di superiorità intellettuale che poco aveva a che fare con la sostenibilità ambientale. In quel momento, la riparazione era diventata un terreno di gioco per l'ego, un modo per riaffermare una gerarchia di competenze. Clara è intervenuta con calma, offrendo un caffè e un suggerimento tecnico che ha sbloccato la situazione, riportando l'armonia nel gruppo. Il suo gesto non è stato nemmeno notato dai presenti, troppo presi dal loro fervore tecnico per accorgersi di chi stava effettivamente gestendo la coesione del gruppo.\n\nLa tensione tra la narrazione dell'indipendenza e la realtà della dipendenza reciproca è diventata palpabile verso la fine dell'evento. Mentre i partecipanti riponevano i loro strumenti con un senso di appagamento, Elio ha tenuto un breve discorso conclusivo sulla necessità di diffondere questa cultura della riparazione per 'liberarsi dai vincoli del capitale'. Le sue parole, sebbene altisonanti, risuonavano vuote in un ambiente che stava per essere ripulito non da lui, ma da Clara. La discrepanza tra l'ideologia espressa e la prassi quotidiana del laboratorio solleva interrogativi fondamentali sulla natura del lavoro di cura. Se l'autosufficienza richiede, per definizione, la presenza di qualcuno che si occupi del contesto, allora l'autosufficienza stessa è un costrutto ideologico che maschera una profonda asimmetria di potere. Non può esserci riparazione autentica se essa si basa sull'invisibilizzazione del lavoro altrui.\n\nIn conclusione, l'esperienza presso 'Ars Restitutio' ci costringe a riconsiderare il significato di autonomia in un mondo interconnesso. La riparazione non deve essere intesa come un atto di isolamento, ma come una pratica che riconosce la dipendenza reciproca. Finché continueremo a celebrare il riparatore solitario ignorando chi sostiene le fondamenta del suo fare, la nostra critica al consumismo rimarrà superficiale. L'evento si è concluso con Clara che spegneva le luci in una stanza ordinata, mentre i partecipanti se ne andavano, convinti di aver conquistato la propria libertà. La vera sfida non è solo aggiustare gli oggetti, ma aggiustare il modo in cui concepiamo il valore del lavoro, rendendo visibile ciò che, per troppo tempo, abbiamo scelto di ignorare.\n\nTuttavia, la prospettiva di un'inversione di tendenza appare remota se non si mette in discussione la struttura stessa della partecipazione. Se il laboratorio volesse davvero sfidare la logica del capitale, dovrebbe integrare la cura dello spazio e la gestione relazionale nel processo tecnico, anziché delegarle a una figura marginalizzata. Immaginare una riparazione collettiva significherebbe abolire la distinzione tra chi esegue l'intervento e chi mantiene le condizioni di possibilità, trasformando l'atto in una responsabilità condivisa e circolare. Invece di un eroe che trionfa sull'oggetto, si dovrebbe promuovere un'ecologia del fare in cui il tempo dedicato a pulire, organizzare e mediare sia considerato prezioso quanto la saldatura di un circuito. Senza questa trasformazione radicale, il laboratorio rischia di riprodurre inconsapevolmente le medesime gerarchie di potere che intende combattere, relegando il lavoro di cura a una mera funzione ancillare. La vera emancipazione non risiede nel possesso di una competenza tecnica, ma nella capacità di riconoscere che ogni gesto di riparazione è inserito in una rete di interdipendenze che richiede cura costante. Solo quando la manutenzione del contesto sarà elevata a dignità di pratica politica, il laboratorio potrà smettere di essere una vetrina di individualismo mascherato e diventare un autentico laboratorio di resistenza sociale, dove la solidarietà non è un'ombra silenziosa, ma il pilastro visibile su cui poggia l'intera architettura della nostra autonomia condivisa.",
+    "wordCount": 917,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "obsolescenza",
+        "lemma": "obsolescenza",
+        "glosses": {
+          "es": "the process of becoming outdated or no longer used",
+          "en": "the process of becoming outdated or no longer used"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stridente",
+        "lemma": "stridente",
+        "glosses": {
+          "es": "jarring or clashing",
+          "en": "jarring or clashing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "feticizzare",
+        "lemma": "feticizzare",
+        "glosses": {
+          "es": "to treat something as an object of excessive or irrational devotion",
+          "en": "to treat something as an object of excessive or irrational devotion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "altisonanti",
+        "lemma": "altisonanti",
+        "glosses": {
+          "es": "pompous or grandiose in sound",
+          "en": "pompous or grandiose in sound"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "invisibilizzazione",
+        "lemma": "invisibilizzazione",
+        "glosses": {
+          "es": "the act of making something or someone unseen or ignored",
+          "en": "the act of making something or someone unseen or ignored"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asimmetria",
+        "lemma": "asimmetria",
+        "glosses": {
+          "es": "lack of equality or equivalence between parts",
+          "en": "lack of equality or equivalence between parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.1,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è la tesi centrale dell'autore riguardo al seminario di riparazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La riparazione tecnica maschera una dipendenza dal lavoro di cura invisibile."
+        },
+        {
+          "id": "a2",
+          "text": "Il seminario promuove efficacemente l'indipendenza economica dei partecipanti."
+        },
+        {
+          "id": "a3",
+          "text": "L'evento è un fallimento totale a causa della mancanza di competenza tecnica."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La sua presenza, costante e silenziosa, era la condizione necessaria affinché l'illusione dell'autosufficienza potesse persistere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale ruolo svolge Clara nel contesto del laboratorio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Insegna ai partecipanti le tecniche avanzate di saldatura elettronica."
+        },
+        {
+          "id": "a2",
+          "text": "Gestisce la logistica e mantiene l'ordine necessario per le riparazioni."
+        },
+        {
+          "id": "a3",
+          "text": "Si occupa esclusivamente della promozione dell'evento sui social media."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Clara non riparava circuiti; puliva le superfici unte, riordinava gli attrezzi lasciati sparsi, gestiva le frustrazioni dei meno abili e assicurava che lo spazio fosse pronto per il giorno successivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autore riguardo al comportamento dei partecipanti durante la discussione tecnica?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Erano guidati da un sincero desiderio di collaborare per il bene comune."
+        },
+        {
+          "id": "a2",
+          "text": "Erano profondamente preoccupati per l'impatto ambientale delle loro riparazioni."
+        },
+        {
+          "id": "a3",
+          "text": "Il loro comportamento era influenzato da un desiderio di affermazione dell'ego."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "In quel momento, la riparazione era diventata un terreno di gioco per l'ego, un modo per riaffermare una gerarchia di competenze.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale dell'autore nel descrivere il discorso conclusivo di Elio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sottolineare la vacuità della retorica di Elio rispetto alla realtà del lavoro di cura."
+        },
+        {
+          "id": "a2",
+          "text": "Evidenziare la coerenza tra la filosofia di Elio e la gestione pratica del laboratorio."
+        },
+        {
+          "id": "a3",
+          "text": "Celebrare la capacità di Elio di ispirare i partecipanti verso un futuro senza consumismo."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le sue parole, sebbene altisonanti, risuonavano vuote in un ambiente che stava per essere ripulito non da lui, ma da Clara.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere il concetto di 'autosufficienza' all'interno del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ammirato e celebrativo."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e disincantato."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e neutrale."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Se l'autosufficienza richiede, per definizione, la presenza di qualcuno che si occupi del contesto, allora l'autosufficienza stessa è un costrutto ideologico che maschera una profonda asimmetria di potere.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'feticizzare' riferito agli oggetti riparati?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ripararli con estrema cura e attenzione ai dettagli tecnici."
+        },
+        {
+          "id": "a2",
+          "text": "Distruggerli deliberatamente per dimostrare la propria superiorità tecnica."
+        },
+        {
+          "id": "a3",
+          "text": "Attribuzione di un valore simbolico eccessivo che isola l'oggetto dal contesto."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la retorica che circonda tali eventi tende a feticizzare l'oggetto riparato, isolandolo dal contesto umano e spaziale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio critico in cui analizzi come il concetto di 'lavoro invisibile' possa essere applicato ad altri ambiti della vita quotidiana o professionale, riflettendo sulle conseguenze etiche della sua mancata valorizzazione.",
+      "en": "Scrivi un breve saggio critico in cui analizzi come il concetto di 'lavoro invisibile' possa essere applicato ad altri ambiti della vita quotidiana o professionale, riflettendo sulle conseguenze etiche della sua mancata valorizzazione."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Esaminare la tensione tra l'ideale di indipendenza tecnica e la realtà del lavoro di cura invisibile.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione dell'autonomia: il paradosso del riparo | C2 Reading | WeLearn",
+      "en": "L'illusione dell'autonomia: il paradosso del riparo | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla retorica dell'autosufficienza durante un seminario di riparazione domestica.",
+      "en": "Un'analisi critica sulla retorica dell'autosufficienza durante un seminario di riparazione domestica."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

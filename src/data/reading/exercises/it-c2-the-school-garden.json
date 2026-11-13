@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-school-garden",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il paradosso del verde: l'orto scolastico come obbligo mascherato",
+      "en": "Il paradosso del verde: l'orto scolastico come obbligo mascherato"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla natura ambivalente della partecipazione volontaria all'interno dell'istituzione scolastica, osservata attraverso la lente di un progetto di orticoltura didattica.",
+      "en": "Un'analisi critica sulla natura ambivalente della partecipazione volontaria all'interno dell'istituzione scolastica, osservata attraverso la lente di un progetto di orticoltura didattica."
+    },
+    "mission": {
+      "es": "Esplorare le tensioni etiche tra la libera adesione e le pressioni sociali invisibili che regolano la vita scolastica.",
+      "en": "Esplorare le tensioni etiche tra la libera adesione e le pressioni sociali invisibili che regolano la vita scolastica."
+    },
+    "targetText": "L'orto didattico del Liceo Orizzonti non è mai stato soltanto un appezzamento di terra coltivato a pomodori e basilico; è diventato, nel corso degli anni, un laboratorio sociale dove la retorica del volontariato si scontra con le dure leggi dell'appartenenza. Quando la professoressa Elena Valli, coordinatrice del progetto 'Radici Comuni', annunciò la necessità di turni di manutenzione pomeridiani per salvare il raccolto estivo, la sua richiesta fu formulata con la consueta enfasi sulla libertà di scelta. 'Chi desidera contribuire alla crescita del nostro ecosistema è invitato a firmare il registro', dichiarò con un sorriso benevolo. Tuttavia, dietro questa facciata di democratico spontaneismo, si celava una struttura di aspettative implicite che rendeva il rifiuto non solo difficile, ma socialmente costoso. Gli studenti che sceglievano di non aderire si ritrovavano in una zona d'ombra, etichettati tacitamente come meno dediti al bene comune o, peggio, come elementi disgreganti di una comunità che faceva della collaborazione il proprio vessillo identitario. Il caso di Matteo, uno studente del quarto anno, è emblematico di questa tensione. Matteo, pur essendo un appassionato di botanica, decise di declinare l'invito per dedicarsi alla preparazione di un concorso di matematica. La sua scelta, sebbene legittima sul piano formale, scatenò una serie di reazioni a catena: sguardi eloquenti durante le assemblee, l'esclusione informale dalle conversazioni di gruppo nei corridoi e, infine, un commento tagliente del rappresentante d'istituto che, durante la pausa pranzo, sottolineò come 'alcuni preferiscano il calcolo astratto alla cura concreta della nostra terra'. Questa pressione non era esercitata attraverso sanzioni disciplinari, ma tramite un meccanismo di controllo sociale molto più pervasivo e difficile da contrastare. Il paradosso risiede proprio qui: la partecipazione è lodata come gesto di generosità gratuita, eppure la sua assenza viene interpretata come una violazione di un contratto sociale non scritto. La scuola, nel promuovere l'orto, ha involontariamente creato un sistema in cui l'autonomia individuale è subordinata alla coesione del gruppo, trasformando l'atto del 'volontariato' in un dovere morale da cui è quasi impossibile sottrarsi senza subire un'emarginazione strisciante. La narrazione dell'orto come spazio di libertà si sgretola di fronte alla realtà di un conformismo che punisce la divergenza. Quando la professoressa Valli organizzò la cerimonia di chiusura, ringraziò sentitamente chi aveva dedicato il proprio tempo, riservando un silenzio gelido a chi, come Matteo, era rimasto ai margini. Quel silenzio non era un vuoto, ma un peso, una forma di coercizione che non necessitava di parole per essere efficace. La domanda che rimane sospesa, come il profumo delle erbe aromatiche che ancora aleggia nei corridoi, è se sia possibile una partecipazione autentica in un contesto in cui il rifiuto comporta una sanzione sociale. L'orto di Orizzonti, pur rigoglioso nei suoi frutti, ha finito per coltivare, oltre alle piante, una cultura dell'obbligo camuffato da entusiasmo, dove la libertà di dire no è diventata un lusso che pochi studenti osano permettersi. La tensione tra l'individuo e la comunità rimane irrisolta, lasciando gli studenti in bilico tra il desiderio di autodeterminazione e la paura di perdere il proprio posto nel tessuto sociale dell'istituto. In questo microcosmo, l'orto non è più solo un luogo di apprendimento, ma un teatro di dinamiche di potere sottili e pervasive, dove la partecipazione è, in ultima analisi, una forma di sopravvivenza sociale. Nonostante le rassicurazioni iniziali, il progetto ha dimostrato che quando la partecipazione viene elevata a valore supremo, il dissenso non viene tollerato, ma silenziosamente espurgato dal corpo collettivo. La libertà, in questo scenario, non è che un'illusione ottica, un miraggio che svanisce non appena si cerca di afferrarlo per fare una scelta divergente. La scuola, invece di proteggere l'autonomia dello studente, finisce per trasformarsi in un ambiente in cui il conformismo è la moneta di scambio per l'accettazione. Il raccolto è stato abbondante, ma il costo umano di questa operazione rimane un interrogativo inquietante che la scuola preferisce ignorare, preferendo celebrare il successo del progetto piuttosto che analizzare le ferite lasciate dal suo sistema di gestione. La vera sfida, dunque, non è coltivare piante, ma coltivare la capacità di accettare il rifiuto senza trasformarlo in uno strumento di esclusione.\n\nTuttavia, l'analisi del fenomeno non può limitarsi alla denuncia dell'esclusione, poiché essa trascura una prospettiva sociologica fondamentale: la funzione pedagogica, seppur distorta, di tale meccanismo. Difendere l'autonomia individuale a ogni costo rischia di ignorare la necessità, altrettanto vitale, di forgiare un senso di responsabilità collettiva in un'epoca segnata dall'atomizzazione dei rapporti umani. Se il rifiuto di Matteo viene percepito come un atto di rottura, ciò accade perché il progetto 'Radici Comuni' ha inavvertitamente sollevato una questione etica di portata superiore: può una comunità educante permettersi il lusso dell'indifferenza in nome della libertà individuale? Il conformismo osservato non è forse il riflesso di un'ansia sistemica, quella di non riuscire a garantire la continuità di un bene pubblico senza ricorrere a leve emotive? Sostenere che il dissenso sia puramente vittima di una coercizione strisciante significa negare la complessità del compromesso necessario alla convivenza civile. Forse, il vero fallimento del Liceo Orizzonti non risiede nell'aver creato una pressione sociale, ma nell'aver fallito nel rendere trasparente il contratto tra individuo e collettività, trasformando un'opportunità di crescita condivisa in un tribunale morale. La sfida futura non consiste nel rimuovere l'aspettativa di partecipazione, che è linfa vitale di ogni istituzione, bensì nel riconfigurare il concetto di 'contributo' affinché includa la legittimità del distacco. Solo quando la divergenza sarà integrata come parte integrante della vita scolastica, l'orto potrà smettere di essere un campo di battaglia ideologico per tornare a essere, finalmente, un semplice spazio di terra, libero da ogni zavorra di giudizio.",
+    "wordCount": 922,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "spontaneismo",
+        "lemma": "spontaneismo",
+        "glosses": {
+          "es": "a tendency to act spontaneously without planning",
+          "en": "a tendency to act spontaneously without planning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "emblematico",
+        "lemma": "emblematico",
+        "glosses": {
+          "es": "serving as a typical example of something",
+          "en": "serving as a typical example of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pervasivo",
+        "lemma": "pervasivo",
+        "glosses": {
+          "es": "spreading widely throughout an area or a group of people",
+          "en": "spreading widely throughout an area or a group of people"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "strisciante",
+        "lemma": "strisciante",
+        "glosses": {
+          "es": "creeping or insidious in nature",
+          "en": "creeping or insidious in nature"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autodeterminazione",
+        "lemma": "autodeterminazione",
+        "glosses": {
+          "es": "the process by which a person controls their own life",
+          "en": "the process by which a person controls their own life"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "espurgato",
+        "lemma": "espurgato",
+        "glosses": {
+          "es": "removed or purged from a system",
+          "en": "removed or purged from a system"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.7,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale trattato nel testo riguardo all'orto scolastico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto sociale"
+        },
+        {
+          "id": "a2",
+          "text": "La gestione agricola"
+        },
+        {
+          "id": "a3",
+          "text": "La botanica applicata"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "è diventato, nel corso degli anni, un laboratorio sociale dove la retorica del volontariato si scontra con le dure leggi dell'appartenenza.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Per quale motivo Matteo è stato escluso dal gruppo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché non ha saputo curare le piante"
+        },
+        {
+          "id": "a2",
+          "text": "Perché ha scelto di non partecipare al progetto"
+        },
+        {
+          "id": "a3",
+          "text": "Perché ha criticato le scelte della professoressa"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Matteo, pur essendo un appassionato di botanica, decise di declinare l'invito per dedicarsi alla preparazione di un concorso di matematica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa si deduce riguardo alla natura della partecipazione richiesta?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È un obbligo formale con sanzioni"
+        },
+        {
+          "id": "a2",
+          "text": "È una scelta libera senza conseguenze"
+        },
+        {
+          "id": "a3",
+          "text": "È una pressione sociale mascherata da scelta"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "dietro questa facciata di democratico spontaneismo, si celava una struttura di aspettative implicite che rendeva il rifiuto non solo difficile, ma socialmente costoso.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale dell'autore nel descrivere il caso di Matteo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenziare la natura coercitiva dell'esclusione sociale"
+        },
+        {
+          "id": "a2",
+          "text": "Illustrare il funzionamento dell'orto"
+        },
+        {
+          "id": "a3",
+          "text": "Promuovere la partecipazione alle attività scolastiche"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il caso di Matteo, uno studente del quarto anno, è emblematico di questa tensione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono utilizza l'autore per descrivere la situazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Entusiasta e propositivo"
+        },
+        {
+          "id": "a2",
+          "text": "Critico e analitico"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e distaccato"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il paradosso risiede proprio qui: la partecipazione è lodata come gesto di generosità gratuita, eppure la sua assenza viene interpretata come una violazione di un contratto sociale non scritto.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con l'espressione 'emarginazione strisciante'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Una punizione fisica severa"
+        },
+        {
+          "id": "a2",
+          "text": "Un allontanamento immediato e palese"
+        },
+        {
+          "id": "a3",
+          "text": "Un'esclusione lenta e insidiosa"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'esclusione informale dalle conversazioni di gruppo nei corridoi e, infine, un commento tagliente del rappresentante d'istituto",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio argomentativo in cui discuti se le istituzioni debbano incoraggiare il volontariato o se tale pratica rischi inevitabilmente di diventare una forma di pressione sociale.",
+      "en": "Scrivi un breve saggio argomentativo in cui discuti se le istituzioni debbano incoraggiare il volontariato o se tale pratica rischi inevitabilmente di diventare una forma di pressione sociale."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Esplorare le tensioni etiche tra la libera adesione e le pressioni sociali invisibili che regolano la vita scolastica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il paradosso del verde: l'orto scolastico come obbligo mascherato | C2 Reading | WeLearn",
+      "en": "Il paradosso del verde: l'orto scolastico come obbligo mascherato | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla natura ambivalente della partecipazione volontaria all'interno dell'istituzione scolastica, osservata attraverso la lente di un progetto di orticoltura didattica.",
+      "en": "Un'analisi critica sulla natura ambivalente della partecipazione volontaria all'interno dell'istituzione scolastica, osservata attraverso la lente di un progetto di orticoltura didattica."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

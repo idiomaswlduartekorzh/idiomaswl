@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der Nullsumme: Eintritt als Barriere",
+      "en": "Die Illusion der Nullsumme: Eintritt als Barriere"
+    },
+    "intro": {
+      "es": "Eine kritische Auseinandersetzung mit der Ökonomie des Zugangs im Kontext der zeitgenössischen Museumskultur.",
+      "en": "Eine kritische Auseinandersetzung mit der Ökonomie des Zugangs im Kontext der zeitgenössischen Museumskultur."
+    },
+    "mission": {
+      "es": "Analysieren Sie den Text hinsichtlich seiner Argumentationsstruktur und reflektieren Sie über die soziopolitische Implikation des Begriffs 'kostenlos'.",
+      "en": "Analysieren Sie den Text hinsichtlich seiner Argumentationsstruktur und reflektieren Sie über die soziopolitische Implikation des Begriffs 'kostenlos'."
+    },
+    "targetText": "Als Dr. Aris Thorne, Kurator der renommierten Galerie für Visuelle Anthropologie, das neue Konzept der 'offenen Pforten' für die Herbstausstellung ankündigte, war der Applaus in der Presse fast ohrenbetäubend. Die Prämisse schien bestechend einfach: Durch den Wegfall der Eintrittsgebühr sollte die Hemmschwelle für bildungsferne Schichten fallen, das Museum als demokratischer Raum neu definiert werden. Doch während die Besucherzahlen in der ersten Woche in die Höhe schnellten, blieb eine kritische Analyse der verborgenen Kosten aus. Als Kritikerin, die die institutionelle Praxis seit Jahren beobachtet, drängt sich mir der Verdacht auf, dass das Adjektiv 'kostenlos' hier nicht als Befreiung, sondern als semantische Falle fungiert. Es verengt die öffentliche Debatte auf das bloße Ticket, während die tatsächlichen Kosten der Ankunft – die Zeitressourcen, die sozioökonomische Mobilität und die kulturelle Vorprägung – systematisch ausgeblendet werden. Die Freiheit, den Raum zu betreten, ist nicht gleichbedeutend mit der Freiheit, den Raum zu bewohnen.\n\nDer Vorfall am vergangenen Dienstagabend verdeutlichte diese Diskrepanz in erschreckender Deutlichkeit. Eine Gruppe von Jugendlichen aus dem benachbarten Industrieviertel, die durch die kostenlose Werbung angelockt worden war, fand sich inmitten einer exklusiven Vernissage wieder, die zwar keinen Eintritt kostete, aber durch ihre Atmosphäre der elitären Exklusion eine unsichtbare Mauer errichtete. Die Sicherheitskräfte, angewiesen auf eine diskrete Überwachung, sahen sich gezwungen, die Gruppe aufgrund ihrer 'unpassenden Verhaltensweise' – ein Euphemismus für das bloße Nicht-Einhalten ungeschriebener Etikette-Regeln – zu entfernen. Hier zeigt sich die Perfidie des Konzepts: Das Museum verkauft den Zugang als Akt der Großzügigkeit, während es gleichzeitig die sozialen Codes verschärft, die den Zugang erst sinnvoll machen würden. Wer das Ticket besitzt, hat noch lange nicht den Schlüssel zum Diskurs.\n\nMan könnte einwenden, dass der bloße physische Zugang ein notwendiger erster Schritt ist, ein unverzichtbares Fundament für jede weitere Inklusion. Diese Sichtweise ist jedoch gefährlich verkürzt. Indem wir den Fokus ausschließlich auf das Fehlen einer monetären Transaktion legen, legitimieren wir eine Form der Philanthropie, die sich ihrer eigenen strukturellen Gewalt nicht bewusst ist. Die Institution entledigt sich der Verantwortung, indem sie den Besuch als 'Geschenk' rahmt. Wer ein Geschenk erhält, darf keine Forderungen stellen. Wer jedoch einen Eintritt zahlt, tritt als Kunde auf, der ein Recht auf Teilhabe und Repräsentation geltend machen kann. Die 'kostenlose' Ausstellung entmündigt das Publikum, indem sie es vom Bürger zum Bittsteller degradiert, der für die bloße Duldung dankbar sein soll.\n\nDie Kuratoren argumentieren, dass die Finanzierung durch staatliche Subventionen und private Stiftungen den freien Eintritt erst möglich mache. Doch diese Stiftungen haben ihre eigenen Agenden, die oft in krassem Gegensatz zur vermeintlichen Offenheit stehen. Die Ankunft im Museum ist für viele Besucher mit einer psychologischen Hürde verbunden, die durch den Wegfall des Tickets nicht abgebaut, sondern oft noch verstärkt wird. Wenn der Raum als 'frei' deklariert wird, das Personal aber weiterhin nach den alten Regeln der Distinktion agiert, entsteht eine Dissonanz, die den Besucher schneller wieder vertreibt, als es eine Eintrittskarte je könnte. Die Kosten der Ankunft sind also nicht nur ökonomischer, sondern vor allem symbolischer Natur: Es ist der Preis der Selbstverleugnung, den man zahlt, um sich in einem Raum zu bewegen, der einen eigentlich nicht als Subjekt, sondern als Statist der eigenen kulturellen Inszenierung sieht.\n\nAm Ende steht ein ungelöstes Spannungsfeld. Die Galerie für Visuelle Anthropologie hat zwar ihre Statistiken optimiert, aber den öffentlichen Diskurs über die Natur des Museumserlebnisses verengt. Die Debatte dreht sich nun nur noch um die Frage, ob der Eintritt frei sein sollte, anstatt zu fragen, wem das Museum gehört und welche Bedingungen der Teilhabe es jenseits der Kasse stellt. Die Institutionalisierung des 'Kostenlosen' verhindert eine radikale Demokratisierung, da sie die Machtstrukturen hinter der Fassade unangetastet lässt. Solange wir den Wert einer kulturellen Einrichtung allein am Preis des Tickets messen, bleiben wir Gefangene einer ökonomischen Logik, die den wahren Preis der Exklusion niemals benennen wird. Das Museum bleibt ein Ort der Ankunft, an dem man zwar eintreten darf, aber niemals wirklich ankommt.\n\nDie Konsequenz dieser Entwicklung ist eine schleichende Entpolitisierung des musealen Raums, die weit über die Mauern der Galerie hinausreicht. Indem das Museum als Ort der unverbindlichen Zerstreuung inszeniert wird, verliert es seine Funktion als Arena für gesellschaftliche Auseinandersetzungen. Die vermeintliche Großzügigkeit entpuppt sich als ein Instrument der Befriedung, das den Besucher in eine passive Rolle drängt. Wenn wir akzeptieren, dass der Zugang zur Kultur ein Akt der Gnade ist, geben wir den Anspruch auf, das Museum als einen öffentlichen Raum zu begreifen, der uns als Bürger und nicht als bloße Konsumenten kultureller Güter anspricht. Diese Entwicklung ist fatal, denn sie zementiert eine hierarchische Ordnung, in der die Deutungshoheit über das, was als wertvoll oder angemessen gilt, weiterhin in den Händen einer privilegierten Minderheit liegt. Die 'offenen Pforten' fungieren somit als ein ästhetisiertes Alibi, das den Blick auf die tieferliegenden Gräben der sozialen Ungleichheit verstellt. Ein Museum, das sich als demokratisch bezeichnet, müsste jedoch die Konfrontation suchen, anstatt sie durch eine wohlwollende Geste zu neutralisieren. Wahre Inklusion würde bedeuten, den Raum für jene Stimmen zu öffnen, die den bestehenden Kanon infrage stellen, anstatt sie in das vorgefertigte Korsett einer elitären Etikette zu zwingen. Solange die institutionelle Struktur an ihren starren Konventionen festhält, bleibt die Öffnung der Türen lediglich eine ästhetische Geste ohne substanzielle Wirkung. Die demokratische Herausforderung besteht nicht darin, den Eintritt zu erlassen, sondern die Barrieren in den Köpfen derer abzubauen, die über den Zugang zum kulturellen Gedächtnis entscheiden. Nur wenn das Museum den Mut aufbringt, seine eigene Exklusivität radikal infrage zu stellen, kann es zu jenem Ort werden, den es vorgibt zu sein.",
+    "wordCount": 904,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Prämisse",
+        "lemma": "Prämisse",
+        "glosses": {
+          "es": "A premise or initial assumption.",
+          "en": "A premise or initial assumption."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Euphemismus",
+        "lemma": "Euphemismus",
+        "glosses": {
+          "es": "A mild or indirect expression substituted for one considered too harsh.",
+          "en": "A mild or indirect expression substituted for one considered too harsh."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Perfidie",
+        "lemma": "Perfidie",
+        "glosses": {
+          "es": "Treachery or deceitfulness.",
+          "en": "Treachery or deceitfulness."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Philanthropie",
+        "lemma": "Philanthropie",
+        "glosses": {
+          "es": "The desire to promote the welfare of others, often through donations.",
+          "en": "The desire to promote the welfare of others, often through donations."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Distinktion",
+        "lemma": "Distinktion",
+        "glosses": {
+          "es": "The act of distinguishing oneself through social or cultural markers.",
+          "en": "The act of distinguishing oneself through social or cultural markers."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dissonanz",
+        "lemma": "Dissonanz",
+        "glosses": {
+          "es": "A lack of harmony or tension between elements.",
+          "en": "A lack of harmony or tension between elements."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptanliegen der Autorin in diesem Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Infragestellung der vermeintlichen Demokratisierung durch kostenlosen Eintritt."
+        },
+        {
+          "id": "a2",
+          "text": "Die Kritik an der mangelnden Finanzierung von Museen."
+        },
+        {
+          "id": "a3",
+          "text": "Die Dokumentation des Vorfalls mit den Jugendlichen im Museum."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es verengt die öffentliche Debatte auf das bloße Ticket, während die tatsächlichen Kosten der Ankunft – die Zeitressourcen, die sozioökonomische Mobilität und die kulturelle Vorprägung – systematisch ausgeblendet werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum wurden die Jugendlichen aus dem Museum entfernt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie hatten keine gültigen Eintrittskarten für die Vernissage."
+        },
+        {
+          "id": "a2",
+          "text": "Sie entsprachen nicht den ungeschriebenen Verhaltensregeln der Institution."
+        },
+        {
+          "id": "a3",
+          "text": "Sie störten die Rede des Kurators Dr. Aris Thorne."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Sicherheitskräfte, angewiesen auf eine diskrete Überwachung, sahen sich gezwungen, die Gruppe aufgrund ihrer 'unpassenden Verhaltensweise' – ein Euphemismus für das bloße Nicht-Einhalten ungeschriebener Etikette-Regeln – zu entfernen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung nimmt die Autorin gegenüber der 'kostenlosen' Kultur ein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie sieht darin eine notwendige, aber noch unvollständige Maßnahme."
+        },
+        {
+          "id": "a2",
+          "text": "Sie hält es für eine großzügige Geste, die mehr Anerkennung verdient."
+        },
+        {
+          "id": "a3",
+          "text": "Sie betrachtet es als eine Form der subtilen sozialen Kontrolle."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die 'kostenlose' Ausstellung entmündigt das Publikum, indem sie es vom Bürger zum Bittsteller degradiert, der für die bloße Duldung dankbar sein soll.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Was bezweckt die Autorin mit dem Vergleich zwischen 'Kunde' und 'Bittsteller'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie will aufzeigen, dass zahlende Besucher mehr Rechte einfordern können als Besucher, die als Empfänger eines Geschenks gelten."
+        },
+        {
+          "id": "a2",
+          "text": "Sie möchte betonen, dass Museen ihre Einnahmen durch den Ticketverkauf dringend benötigen, um ihre Unabhängigkeit zu wahren."
+        },
+        {
+          "id": "a3",
+          "text": "Sie will verdeutlichen, dass Jugendliche sich im Museum wie Kunden fühlen sollten, um ihre soziale Integration zu fördern."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Wer ein Geschenk erhält, darf keine Forderungen stellen. Wer jedoch einen Eintritt zahlt, tritt als Kunde auf, der ein Recht auf Teilhabe und Repräsentation geltend machen kann.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welchen Ton schlägt die Autorin bei der Beschreibung der kuratorischen Praxis an?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Einen sachlich-neutralen und rein deskriptiven Ton."
+        },
+        {
+          "id": "a2",
+          "text": "Einen kritisch-analytischen Ton mit einer Note von Skepsis."
+        },
+        {
+          "id": "a3",
+          "text": "Einen leidenschaftlich-apologetischen Ton zur Unterstützung der Museen."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Als Kritikerin, die die institutionelle Praxis seit Jahren beobachtet, drängt sich mir der Verdacht auf, dass das Adjektiv 'kostenlos' hier nicht als Befreiung, sondern als semantische Falle fungiert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Distinktion' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die klare Unterscheidung zwischen verschiedenen Kunststilen."
+        },
+        {
+          "id": "a2",
+          "text": "Die exakte Trennung von staatlichen und privaten Geldern."
+        },
+        {
+          "id": "a3",
+          "text": "Das soziale Abgrenzungsverhalten durch kulturelle Codes."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wenn der Raum als 'frei' deklariert wird, das Personal aber weiterhin nach den alten Regeln der Distinktion agiert, entsteht eine Dissonanz, die den Besucher schneller wieder vertreibt, als es eine Eintrittskarte je könnte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie eine kurze Stellungnahme (ca. 200 Wörter), in der Sie die These der Autorin diskutieren: Ist der Begriff 'kostenlos' im kulturellen Kontext tatsächlich eine Barriere für echte Teilhabe, oder ist er eine notwendige Bedingung für den Zugang? Argumentieren Sie unter Berücksichtigung der im Text genannten soziokulturellen Kosten.",
+      "en": "Verfassen Sie eine kurze Stellungnahme (ca. 200 Wörter), in der Sie die These der Autorin diskutieren: Ist der Begriff 'kostenlos' im kulturellen Kontext tatsächlich eine Barriere für echte Teilhabe, oder ist er eine notwendige Bedingung für den Zugang? Argumentieren Sie unter Berücksichtigung der im Text genannten soziokulturellen Kosten."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie den Text hinsichtlich seiner Argumentationsstruktur und reflektieren Sie über die soziopolitische Implikation des Begriffs 'kostenlos'.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der Nullsumme: Eintritt als Barriere | C2 Reading | WeLearn",
+      "en": "Die Illusion der Nullsumme: Eintritt als Barriere | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine kritische Auseinandersetzung mit der Ökonomie des Zugangs im Kontext der zeitgenössischen Museumskultur.",
+      "en": "Eine kritische Auseinandersetzung mit der Ökonomie des Zugangs im Kontext der zeitgenössischen Museumskultur."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

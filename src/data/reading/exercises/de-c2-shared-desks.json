@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-shared-desks",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der Wahl im Coworking-Kosmos",
+      "en": "Die Illusion der Wahl im Coworking-Kosmos"
+    },
+    "intro": {
+      "es": "In dieser E-Mail-Korrespondenz reflektiert ein Nutzer über die versteckten Kosten und die psychologische Belastung innerhalb eines geteilten Arbeitsumfelds.",
+      "en": "In dieser E-Mail-Korrespondenz reflektiert ein Nutzer über die versteckten Kosten und die psychologische Belastung innerhalb eines geteilten Arbeitsumfelds."
+    },
+    "mission": {
+      "es": "Analysieren Sie die Argumentationsstruktur und die zugrunde liegende philosophische Spannung bezüglich der Entscheidungsfreiheit.",
+      "en": "Analysieren Sie die Argumentationsstruktur und die zugrunde liegende philosophische Spannung bezüglich der Entscheidungsfreiheit."
+    },
+    "targetText": "Sehr geehrte Frau Dr. Aris, ich schreibe Ihnen heute in einer Angelegenheit, die weit über das bloße Management unseres Coworking-Spaces hinausgeht. Seit der Einführung des neuen 'Flex-Tarifs' in unserem Zentrum für Innovation und Synergie beobachte ich eine beunruhigende Dynamik unter den Mietern. Ursprünglich wurde uns versprochen, dass die Wahlfreiheit – sei es zwischen dem ruhigen Lesebereich, der interaktiven Kaffee-Lounge oder den isolierten Telefonkabinen – unsere Produktivität steigern würde. Doch ich muss konstatieren, dass diese Freiheit eine bloße Fassade darstellt. Jede dieser Optionen ist mit einer unsichtbaren, privaten Steuer belegt, die sich nicht in Euro oder Cent manifestiert, sondern in sozialem Kapital und kognitiver Erschöpfung. Wenn ich mich für die Kaffee-Lounge entscheide, um von der kreativen Energie zu profitieren, zahle ich den Preis der ständigen Unterbrechung und der Notwendigkeit, mein Image der steten Verfügbarkeit zu pflegen. Wähle ich hingegen die Abgeschiedenheit der Kabine, so werde ich als jemand wahrgenommen, der sich der Gemeinschaft entzieht, was meine informelle Vernetzung innerhalb des Hauses nachhaltig schwächt. Es ist eine Wahl zwischen der Erschöpfung durch Überstimulation und der Isolation durch soziale Abwertung. Wir befinden uns in einer Architektur der erzwungenen Selbstoptimierung, in der jede Entscheidung bereits das Scheitern in einer anderen Dimension impliziert. Die Freiheit, den Arbeitsplatz zu wechseln, ist in Wahrheit die Freiheit, zu wählen, an welcher Front man seine Ressourcen zuerst verbraucht. Ich habe in den letzten Wochen beobachtet, wie Kollegen, die einst lebhaft und engagiert waren, zunehmend in eine defensive Haltung verfallen, nur um den impliziten Erwartungen der jeweiligen Zonen gerecht zu werden. Dies ist kein Raum für Synergien, sondern ein Labor für die Beobachtung menschlicher Erschöpfung unter dem Deckmantel der Flexibilität. Die Entscheidung, die uns als Privileg verkauft wurde, entpuppt sich als ein komplexes Geflecht aus sozialen Verpflichtungen, die wir uns selbst auferlegen, sobald wir den Raum betreten. Ich fordere daher eine grundlegende Überarbeitung der Zonenkonzepte, da das derzeitige Modell die Autonomie des Einzelnen nicht fördert, sondern systematisch untergräbt. Die Konsequenz meines Unbehagens ist endgültig: Sollte sich die Struktur nicht ändern, werde ich meinen Mietvertrag zum Ende des nächsten Quartals nicht verlängern. Es ist mir unmöglich, in einem Umfeld zu arbeiten, das jede Entscheidung mit einem derartigen psychologischen Preis belegt, der meine berufliche Integrität untergräbt. Ich erwarte eine Stellungnahme zu meiner Einschätzung, da ich nicht glaube, der Einzige zu sein, der diese subtile, aber zerstörerische Architektur der Wahlfreiheit als solche durchschaut hat. Mit freundlichen Grüßen, Julian Vesper.\n\nBetrachtet man jedoch die soziologische Kehrseite dieser architektonischen Falle, so offenbart sich eine noch tiefgreifendere Problematik, die über das individuelle Wohlbefinden hinausgeht und die gesamte Unternehmenskultur unseres Zentrums korrumpiert. Während Sie, geschätzte Frau Dr. Aris, in der Flexibilität ein Instrument zur Effizienzsteigerung sehen, hat sich in Wahrheit eine Kultur der permanenten performativen Selbstdarstellung etabliert, die jegliche authentische Zusammenarbeit im Keim erstickt. Die ständige Notwendigkeit, sich durch die Wahl des Arbeitsplatzes zu positionieren, führt dazu, dass wir nicht mehr miteinander arbeiten, sondern uns gegenseitig in einem subtilen, unausgesprochenen Wettbewerb um die Deutungshoheit über den Raum befinden. Wer in der Lounge sitzt, inszeniert Fleiß durch Sichtbarkeit; wer sich in die Kabinen zurückzieht, signalisiert eine exklusive, fast elitäre Form der Konzentration, die jedoch oft nur als Schutzschild gegen die soziale Überforderung dient. Diese Fragmentierung der Belegschaft in verschiedene, visuell definierte Identitätsgruppen verhindert den so notwendigen informellen Austausch, der einst das Herzstück unserer Innovationskraft bildete. Anstatt Synergien zu fördern, haben wir ein System geschaffen, in dem das Vertrauen in die Integrität der anderen schwindet, da jede Interaktion unter dem Verdacht steht, strategisch motiviert zu sein. Man fragt sich unwillkürlich, ob der Kollege gerade wirklich an einem Projekt arbeitet oder ob er lediglich die Rolle des produktiven Arbeiters in der gewählten Kulisse spielt, um den sozialen Druck der Umgebung zu neutralisieren. Diese Erosion des Vertrauens ist die eigentliche, schleichende Katastrophe unseres Modells. Es ist ein Paradoxon: Je mehr wir die Freiheit zur räumlichen Gestaltung unserer Arbeit betonen, desto weniger Raum bleibt für die menschliche Unzulänglichkeit, das spontane Scheitern oder den ehrlichen, ungeschönten Dialog. Wir sind zu Akteuren in einem Theaterstück geworden, in dem das Skript von der Architektur diktiert wird und jede Abweichung von der erwarteten Performance als Mangel an Professionalität gewertet wird. Die Konsequenz ist eine schleichende Entfremdung, die nicht nur die individuelle psychische Gesundheit gefährdet, sondern das gesamte soziale Gefüge unseres Coworking-Spaces zersetzt. Wenn wir nicht bald zu einer Form der räumlichen Neutralität zurückkehren, die den Menschen wieder als Individuum und nicht als Teil eines optimierbaren Prozesses begreift, wird das Zentrum zwangsläufig zu einem Ort der hohlen Fassaden verkommen. Die Innovationskraft, die Sie durch das Flex-Konzept zu kanalisieren hofften, wird durch den enormen energetischen Aufwand, den wir für die Aufrechterhaltung unserer jeweiligen Fassaden aufbringen müssen, vollständig absorbiert. Wir verwalten nur noch unsere eigene Erschöpfung, anstatt echte Lösungen zu entwickeln. Es ist an der Zeit, dass wir uns eingestehen, dass die Architektur der Wahlfreiheit in ihrer jetzigen Form nichts weiter als ein hochkomplexer Mechanismus zur Selbstausbeutung ist, der die kreative Substanz des Einzelnen systematisch aushöhlt, bis am Ende nur noch die leere Hülle eines hochoptimierten, aber vollkommen erschöpften Arbeitnehmers übrig bleibt, der zwar jeden Tag den perfekten Platz wählt, aber längst den Sinn für das Wesentliche verloren hat.",
+    "wordCount": 850,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Fassade",
+        "lemma": "Fassade",
+        "glosses": {
+          "es": "a deceptive outward appearance",
+          "en": "a deceptive outward appearance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "kognitiver",
+        "lemma": "kognitiver",
+        "glosses": {
+          "es": "relating to mental processes",
+          "en": "relating to mental processes"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Überstimulation",
+        "lemma": "Überstimulation",
+        "glosses": {
+          "es": "excessive sensory or mental input",
+          "en": "excessive sensory or mental input"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Selbstoptimierung",
+        "lemma": "Selbstoptimierung",
+        "glosses": {
+          "es": "the process of improving oneself",
+          "en": "the process of improving oneself"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Synergien",
+        "lemma": "Synergien",
+        "glosses": {
+          "es": "combined effects greater than the sum of individual parts",
+          "en": "combined effects greater than the sum of individual parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Integrität",
+        "lemma": "Integrität",
+        "glosses": {
+          "es": "the quality of being honest and having strong moral principles",
+          "en": "the quality of being honest and having strong moral principles"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.3,
+      "maxSentenceWords": 68,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptanliegen von Julian Vesper in diesem Schreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er kritisiert das Konzept der Wahlfreiheit im Coworking-Space."
+        },
+        {
+          "id": "a2",
+          "text": "Er fordert eine Senkung der Mietpreise."
+        },
+        {
+          "id": "a3",
+          "text": "Er möchte eine neue Kaffeemaschine für die Lounge beantragen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ich fordere daher eine grundlegende Überarbeitung der Zonenkonzepte, da das derzeitige Modell die Autonomie des Einzelnen nicht fördert, sondern systematisch untergräbt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Welchen Preis zahlt man laut Vesper für die Nutzung der Kaffee-Lounge?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Man verliert seine Privatsphäre."
+        },
+        {
+          "id": "a2",
+          "text": "Man muss soziale Erwartungen erfüllen."
+        },
+        {
+          "id": "a3",
+          "text": "Man zahlt eine zusätzliche Gebühr."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Wenn ich mich für die Kaffee-Lounge entscheide, um von der kreativen Energie zu profitieren, zahle ich den Preis der ständigen Unterbrechung und der Notwendigkeit, mein Image der steten Verfügbarkeit zu pflegen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie beurteilt Vesper die Auswirkungen der derzeitigen Arbeitsumgebung auf seine Kollegen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie werden produktiver."
+        },
+        {
+          "id": "a2",
+          "text": "Sie fühlen sich sehr wohl."
+        },
+        {
+          "id": "a3",
+          "text": "Sie werden zunehmend defensiv."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ich habe in den letzten Wochen beobachtet, wie Kollegen, die einst lebhaft und engagiert waren, zunehmend in eine defensive Haltung verfallen, nur um den impliziten Erwartungen der jeweiligen Zonen gerecht zu werden.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welchen Zweck verfolgt der Autor mit der Androhung seiner Kündigung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er möchte den Druck auf die Leitung erhöhen."
+        },
+        {
+          "id": "a2",
+          "text": "Er will seinen Vertrag sofort beenden."
+        },
+        {
+          "id": "a3",
+          "text": "Er sucht nach einer Gehaltserhöhung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Konsequenz meines Unbehagens ist endgültig: Sollte sich die Struktur nicht ändern, werde ich meinen Mietvertrag zum Ende des nächsten Quartals nicht verlängern.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Tonfall prägt die E-Mail?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Fröhlich und optimistisch."
+        },
+        {
+          "id": "a2",
+          "text": "Analytisch und kritisch."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressiv und beleidigend."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Wir befinden uns in einer Architektur der erzwungenen Selbstoptimierung, in der jede Entscheidung bereits das Scheitern in einer anderen Dimension impliziert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Fassade' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine äußere Wand eines Gebäudes."
+        },
+        {
+          "id": "a2",
+          "text": "Eine notwendige Struktur."
+        },
+        {
+          "id": "a3",
+          "text": "Ein trügerischer Schein."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Doch ich muss konstatieren, dass diese Freiheit eine bloße Fassade darstellt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine Antwort von Dr. Aris, in der sie die Vorwürfe von Julian Vesper entkräftet, ohne dabei die Professionalität zu verlieren. Gehen Sie auf den Vorwurf der 'erzwungenen Selbstoptimierung' ein und verteidigen Sie das Konzept des Coworking-Spaces als Ort der individuellen Entscheidung.",
+      "en": "Schreiben Sie eine Antwort von Dr. Aris, in der sie die Vorwürfe von Julian Vesper entkräftet, ohne dabei die Professionalität zu verlieren. Gehen Sie auf den Vorwurf der 'erzwungenen Selbstoptimierung' ein und verteidigen Sie das Konzept des Coworking-Spaces als Ort der individuellen Entscheidung."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie die Argumentationsstruktur und die zugrunde liegende philosophische Spannung bezüglich der Entscheidungsfreiheit.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der Wahl im Coworking-Kosmos | C2 Reading | WeLearn",
+      "en": "Die Illusion der Wahl im Coworking-Kosmos | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In dieser E-Mail-Korrespondenz reflektiert ein Nutzer über die versteckten Kosten und die psychologische Belastung innerhalb eines geteilten Arbeitsumfelds.",
+      "en": "In dieser E-Mail-Korrespondenz reflektiert ein Nutzer über die versteckten Kosten und die psychologische Belastung innerhalb eines geteilten Arbeitsumfelds."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

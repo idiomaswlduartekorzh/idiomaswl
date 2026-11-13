@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Illusion der Autarkie: Ein Abend im Reparatur-Kollektiv",
+      "en": "Die Illusion der Autarkie: Ein Abend im Reparatur-Kollektiv"
+    },
+    "intro": {
+      "es": "Eine kritische Analyse der Rhetorik des Selbermachens im Kontext verborgener Sorgearbeit.",
+      "en": "Eine kritische Analyse der Rhetorik des Selbermachens im Kontext verborgener Sorgearbeit."
+    },
+    "mission": {
+      "es": "Analysieren Sie die Nuancen der im Text beschriebenen sozialen Dynamik und reflektieren Sie über die ethischen Implikationen von Reparaturkulturen.",
+      "en": "Analysieren Sie die Nuancen der im Text beschriebenen sozialen Dynamik und reflektieren Sie über die ethischen Implikationen von Reparaturkulturen."
+    },
+    "targetText": "Der Abend im 'Werkraum Echo' beginnt mit dem vertrauten Klirren von Metall auf Beton, einem Geräusch, das in der heutigen Wegwerfgesellschaft fast schon sakral wirkt. Hier, in einer umgebauten Lagerhalle am Stadtrand, versammeln sich Menschen, um ihre defekten Apparate zu heilen. An der Spitze steht Elias, ein charismatischer Bastler, der das Narrativ der 'Reparatur-Autarkie' predigt. Er hält einen Vortrag über die Befreiung von der industriellen Bevormundung, während er geschickt eine Kaffeemaschine zerlegt. Doch während Elias das Publikum mit seiner Rhetorik der Unabhängigkeit fesselt, bleibt eine andere Realität verborgen: Die Tische, an denen gearbeitet wird, sind sauber, die Werkzeuge geölt und die Ersatzteile sortiert – ein Zustand, der nicht durch die Magie der Autarkie entsteht, sondern durch die unermüdliche, unsichtbare Arbeit von Clara. Clara ist diejenige, die im Hintergrund agiert, die Bestände inventarisiert und die emotionale Atmosphäre glättet, wenn die Frustration der Teilnehmer über ihre eigene Unfähigkeit überkocht. Die Diskrepanz zwischen Elias’ heroischem Individualismus und Claras kollektiver Sorgearbeit bildet den Kern eines tieferliegenden Konflikts, der das Fundament dieses Kollektivs erschüttert.\n\nDie Rhetorik der Reparatur wird oft als Akt des Widerstands gegen den globalen Kapitalismus gefeiert. Man betont die eigene Handfertigkeit, das Verständnis für komplexe Schaltkreise und den Stolz, nicht auf den Neukauf angewiesen zu sein. Doch dieser Stolz ist oft exklusiv. Er setzt Zeit, kognitive Kapazität und eine gewisse soziale Immunität voraus, die nicht allen zur Verfügung steht. Während Elias die 'Demokratisierung der Technik' proklamiert, ignoriert er die strukturellen Barrieren, die Clara täglich durch ihre unterstützende Präsenz überbrückt. Die Teilnehmer kommen, reparieren ihr Gerät und gehen mit einem Gefühl der Selbstwirksamkeit nach Hause. Sie feiern ihren Triumph über den defekten Toaster, ohne zu bemerken, dass ihre Fähigkeit zum Reparieren erst durch die Vorleistung einer Person ermöglicht wurde, deren Arbeit als bloße 'Infrastruktur' abgetan wird. Es ist eine Form der intellektuellen Aneignung, bei der das Ergebnis – die funktionierende Maschine – den Prozess der sozialen Ermöglichung verdeckt.\n\nDer Konflikt bricht an jenem Dienstagabend offen aus, als ein Teilnehmer, ein stolzer Ingenieur namens Markus, sich weigert, die Aufräumarbeiten zu unterstützen, mit der Begründung, seine Zeit sei zu kostbar für solch banale Tätigkeiten. Er sieht sich als Teil der 'Reparatur-Elite', die über den Dingen steht. Elias, der sonst so eloquent über Gemeinschaft spricht, schweigt in diesem Moment. Es ist Clara, die interveniert. Sie weist darauf hin, dass die Werkstatt kein rechtsfreier Raum für den individuellen Narzissmus ist, sondern ein soziales Gefüge, das auf Reziprozität basiert. Doch ihre Worte verhallen in der Begeisterung über den Erfolg der reparierten Geräte. Die Szene verdeutlicht die Unauflöslichkeit der Spannung: Kann eine Kultur der Reparatur existieren, ohne die Sorgearbeit, die sie erst ermöglicht, zu instrumentalisieren? Oder ist das Ideal der Autarkie notwendigerweise auf die Ausbeutung des 'Hintergrunds' angewiesen?\n\nDie philosophische Implikation ist beunruhigend. Wenn wir Reparatur als individuellen Akt des Widerstands definieren, laufen wir Gefahr, die kollektive Abhängigkeit zu negieren. Wir schaffen eine neue Hierarchie, in der derjenige, der den Schraubenzieher hält, als Akteur gilt, während diejenige, die den Raum für dieses Handeln schafft, zur Randfigur degradiert wird. Die Rhetorik der Autarkie dient hier als Schutzschild gegen die Anerkennung der eigenen Bedürftigkeit. Man möchte sich als autonomes Subjekt begreifen, das die Welt durch eigene Kraft korrigiert, und blendet dabei aus, dass das Werkzeug, der Platz und die Ruhe, die man genießt, das Resultat einer Arbeit sind, die man selbst nicht leisten möchte. Diese Verleugnung ist kein bloßes Versehen, sondern ein wesentlicher Bestandteil des modernen Selbstbildes, das sich über die Abgrenzung von der 'niederen' Arbeit definiert.\n\nAm Ende des Abends bleibt eine bittere Stille zurück. Markus hat sein Gerät repariert und ist gegangen, ohne sich zu verabschieden. Clara steht allein zwischen den verwaisten Tischen, während Elias seine Werkzeuge verstaut und über die nächste Veranstaltung philosophiert. Es gibt keine Lösung für diesen Konflikt, solange der Begriff der 'Reparatur' weiterhin so eng mit dem männlich konnotierten Bild des Bastlers verknüpft bleibt, der die Welt repariert, während er die sozialen Bedingungen seiner eigenen Existenz ignoriert. Die Werkstatt ist kein Ort der Befreiung, sondern ein Spiegelbild der gesellschaftlichen Arbeitsteilung, in der die Sorgearbeit zwar das Fundament bildet, aber niemals als solche gewürdigt wird. Die Spannung bleibt bestehen: Ein Riss in der Fassade der Autarkie, der sich nicht mit einem einfachen Schraubendreher kitten lässt, sondern eine radikale Neubewertung dessen erfordert, was wir als 'Arbeit' und was wir als 'Erfolg' definieren.\n\nDiese Erkenntnis führt jedoch zu einer noch tiefergehenden Problematik, die weit über die Grenzen des 'Werkraum Echo' hinausreicht. Wenn die Reparaturkultur tatsächlich als bloßes Vehikel dient, um den Mythos des autarken Individuums zu zementieren, stellt sich die Frage, ob eine echte Transformation unserer Konsumgesellschaft überhaupt möglich ist. Solange der Fokus auf der technischen Wiederherstellung eines Objekts verharrt, bleibt die zugrunde liegende soziale Asymmetrie unangetastet. Ein wahrhaft subversiver Ansatz müsste daher die Reparatur von ihrer rein instrumentellen Ebene lösen und sie stattdessen als kollektiven Akt der Sorge begreifen, bei dem die Instandhaltung der Gemeinschaft genauso viel Gewicht erhält wie das Funktionieren der Maschine. Wenn wir das Reparieren weiterhin als heroische Einzelleistung glorifizieren, reproduzieren wir lediglich die Strukturen, die wir zu überwinden vorgeben. Die Gefahr liegt darin, dass wir uns in einer Ästhetik des Widerstands verlieren, während die unsichtbaren Fäden, die uns miteinander verbinden, weiter ausfransen. Wahre Autarkie wäre nicht die Unabhängigkeit des Einzelnen von der Gemeinschaft, sondern die Anerkennung unserer gegenseitigen Angewiesenheit. Ohne eine solche fundamentale Neuausrichtung bleibt jede Reparatur lediglich ein kosmetischer Eingriff in ein System, das sich selbst durch die stetige Entwertung jener Arbeit erhält, die den Raum für Veränderung erst öffnet.",
+    "wordCount": 908,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Autarkie",
+        "lemma": "Autarkie",
+        "glosses": {
+          "es": "self-sufficiency",
+          "en": "self-sufficiency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Reziprozität",
+        "lemma": "Reziprozität",
+        "glosses": {
+          "es": "reciprocity",
+          "en": "reciprocity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Sorgearbeit",
+        "lemma": "Sorgearbeit",
+        "glosses": {
+          "es": "care work",
+          "en": "care work"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Diskrepanz",
+        "lemma": "Diskrepanz",
+        "glosses": {
+          "es": "discrepancy",
+          "en": "discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "instrumentalisieren",
+        "lemma": "instrumentalisieren",
+        "glosses": {
+          "es": "exploitation/instrumentalization",
+          "en": "exploitation/instrumentalization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sakral",
+        "lemma": "sakral",
+        "glosses": {
+          "es": "sacred",
+          "en": "sacred"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 50,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches zentrale Thema behandelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die unterschätzte Bedeutung von Sorgearbeit in Reparatur-Kollektiven."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Anleitung zur Reparatur von Haushaltsgeräten."
+        },
+        {
+          "id": "a3",
+          "text": "Die ökonomische Notwendigkeit, defekte Gegenstände selbst zu reparieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Diskrepanz zwischen Elias’ heroischem Individualismus und Claras kollektiver Sorgearbeit bildet den Kern eines tieferliegenden Konflikts",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum weigert sich Markus, bei den Aufräumarbeiten zu helfen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hat keine Erfahrung mit der Reinigung von Werkzeugen."
+        },
+        {
+          "id": "a2",
+          "text": "Er hält seine Zeit für zu wertvoll für einfache Arbeiten."
+        },
+        {
+          "id": "a3",
+          "text": "Er ist mit Elias über die Reparaturmethode zerstritten."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ein Teilnehmer, ein stolzer Ingenieur namens Markus, sich weigert, die Aufräumarbeiten zu unterstützen, mit der Begründung, seine Zeit sei zu kostbar für solch banale Tätigkeiten.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Was lässt sich über die Dynamik zwischen Elias und Clara schlussfolgern?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sie arbeiten als gleichberechtigte Partner an einem gemeinsamen Ziel."
+        },
+        {
+          "id": "a2",
+          "text": "Clara ist die eigentliche Leiterin, während Elias nur die Werkzeuge verwaltet."
+        },
+        {
+          "id": "a3",
+          "text": "Elias nutzt Claras Arbeit, um sein Image als unabhängiger Bastler zu pflegen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie feiern ihren Triumph über den defekten Toaster, ohne zu bemerken, dass ihre Fähigkeit zum Reparieren erst durch die Vorleistung einer Person ermöglicht wurde, deren Arbeit als bloße 'Infrastruktur' abgetan wird.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Autor mit der Schilderung des Abends?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die verborgenen sozialen Abhängigkeiten hinter der Rhetorik des Selbermachens kritisch zu hinterfragen."
+        },
+        {
+          "id": "a2",
+          "text": "Den Leser zur Gründung eigener Reparatur-Werkstätten zu motivieren."
+        },
+        {
+          "id": "a3",
+          "text": "Die moralische Überlegenheit der Bastler gegenüber den Konsumenten hervorzuheben."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Werkstatt ist kein Ort der Befreiung, sondern ein Spiegelbild der gesellschaftlichen Arbeitsteilung, in der die Sorgearbeit zwar das Fundament bildet, aber niemals als solche gewürdigt wird.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Tonfall des Autors gegenüber der 'Reparatur-Autarkie' beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Bewundernd und enthusiastisch."
+        },
+        {
+          "id": "a2",
+          "text": "Skeptisch und dekonstruierend."
+        },
+        {
+          "id": "a3",
+          "text": "Neutral und sachlich distanziert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Rhetorik der Autarkie dient hier als Schutzschild gegen die Anerkennung der eigenen Bedürftigkeit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Reziprozität' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die strikte Trennung von handwerklicher und administrativer Arbeit."
+        },
+        {
+          "id": "a2",
+          "text": "Die individuelle Verantwortung für die eigene technische Ausstattung."
+        },
+        {
+          "id": "a3",
+          "text": "Die gegenseitige Abhängigkeit und das Geben und Nehmen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie weist darauf hin, dass die Werkstatt kein rechtsfreier Raum für den individuellen Narzissmus ist, sondern ein soziales Gefüge, das auf Reziprozität basiert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Erörtern Sie in einem kurzen Essay, ob das Ideal der Autarkie in modernen sozialen Projekten zwangsläufig auf Kosten anderer realisiert wird.",
+      "en": "Erörtern Sie in einem kurzen Essay, ob das Ideal der Autarkie in modernen sozialen Projekten zwangsläufig auf Kosten anderer realisiert wird."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie die Nuancen der im Text beschriebenen sozialen Dynamik und reflektieren Sie über die ethischen Implikationen von Reparaturkulturen.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Illusion der Autarkie: Ein Abend im Reparatur-Kollektiv | C2 Reading | WeLearn",
+      "en": "Die Illusion der Autarkie: Ein Abend im Reparatur-Kollektiv | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine kritische Analyse der Rhetorik des Selbermachens im Kontext verborgener Sorgearbeit.",
+      "en": "Eine kritische Analyse der Rhetorik des Selbermachens im Kontext verborgener Sorgearbeit."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

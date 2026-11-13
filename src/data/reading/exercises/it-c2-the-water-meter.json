@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-water-meter",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il numero del dissidio: la crepa invisibile",
+      "en": "Il numero del dissidio: la crepa invisibile"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla responsabilità individuale di fronte alla gestione delle risorse idriche in un contesto di degrado urbano.",
+      "en": "Un'analisi critica sulla responsabilità individuale di fronte alla gestione delle risorse idriche in un contesto di degrado urbano."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere come la percezione di un singolo dato quantitativo possa trasformare un obbligo tecnico in un dilemma etico.",
+      "en": "Analizzare il testo per comprendere come la percezione di un singolo dato quantitativo possa trasformare un obbligo tecnico in un dilemma etico."
+    },
+    "targetText": "L'edificio residenziale situato in Via dei Platani non era mai stato un esempio di virtù architettonica, ma la sua facciata, segnata dal tempo, nascondeva una falla che andava ben oltre il semplice deterioramento dei materiali. Il custode, il signor Valerio, aveva notato da mesi una macchia di umidità che si allargava lentamente nel seminterrato, un fenomeno che inizialmente aveva archiviato come una banale infiltrazione meteorologica. Tuttavia, la situazione prese una piega inaspettata quando un tecnico idraulico, incaricato di una manutenzione ordinaria, lasciò sul tavolo della portineria un foglio sgualcito con un numero scritto a mano: 450. Non era una cifra casuale, né una stima di costo, bensì il numero di litri d'acqua che, secondo i sensori installati nel condotto principale, venivano dispersi ogni ora a causa di una micro-frattura silente situata dietro la colonna portante. Quel numero divenne, nelle settimane successive, il convitato di pietra delle assemblee condominiali, trasformando una questione tecnica in un campo di battaglia morale dove la responsabilità individuale si scontrava con l'indifferenza collettiva.\n\nLa reazione dei condomini fu un catalogo di dinieghi e proiezioni psicologiche. Mentre la signora Elena, che viveva all'ultimo piano, sosteneva che la riparazione fosse un onere a carico esclusivo dell'amministrazione, il giovane architetto residente al secondo piano vedeva in quel numero un monito sulla fragilità delle infrastrutture urbane moderne. Il conflitto si acuì quando emerse che la riparazione avrebbe richiesto l'interruzione dell'erogazione idrica per diversi giorni, un disagio che molti consideravano inaccettabile. Si creò una frattura insanabile tra chi invocava un intervento immediato per fermare lo spreco e chi, al contrario, preferiva ignorare il dato, etichettandolo come un errore di misurazione o un'esagerazione tecnica. La verità, tuttavia, era che il numero non era più un semplice dato statistico, ma una misura tangibile dell'apatia che regnava sovrana tra le mura del palazzo.\n\nValerio, nel suo ruolo di mediatore involontario, si trovava intrappolato tra l'evidenza fisica del danno e l'ostruzionismo burocratico. Egli osservava come i vicini, solitamente solerti nel lamentarsi per rumori molesti, diventassero improvvisamente ciechi davanti allo spreco di una risorsa vitale. La tensione raggiunse il culmine quando il tecnico, stanco di attendere una decisione, minacciò di segnalare la situazione alle autorità comunali, il che avrebbe comportato sanzioni pesanti per tutti i residenti. In quel momento, il numero 450 smise di essere una cifra astratta per diventare il catalizzatore di una crisi identitaria: il palazzo non stava solo perdendo acqua, stava perdendo la propria integrità civile. La responsabilità, inizialmente frammentata, si era concentrata in un unico punto di pressione, rendendo impossibile continuare a fingere che il problema non esistesse.\n\nNonostante le accese discussioni, la risoluzione del conflitto non arrivò attraverso una presa di coscienza collettiva, bensì per una necessità pragmatica dettata dalla paura della sanzione. Quando finalmente l'impresa arrivò per eseguire i lavori, lo scavo rivelò che la crepa era causata da una radice di albero che, negli anni, aveva esercitato una pressione costante sulla tubatura. La scoperta sollevò i condomini da ogni senso di colpa, permettendo loro di attribuire la causa a un evento naturale, quasi inevitabile, piuttosto che alla loro prolungata inazione. Tuttavia, la riparazione non cancellò l'eco di quel numero. Per Valerio, il silenzio che seguì la chiusura della falla non fu di sollievo, ma di inquietudine: la consapevolezza che, in assenza di un controllo esterno, la comunità aveva scelto deliberatamente di non agire fino a quando non è stata costretta dal timore di una punizione.\n\nAlla fine, la vicenda di Via dei Platani rimane un monito sulla natura ambivalente della responsabilità. Sebbene il danno sia stato riparato, il clima di sospetto e di cinismo che si è instaurato tra i condomini è rimasto intatto, una ferita invisibile che continua a influenzare i rapporti quotidiani. Il numero 450, ormai rimosso dai registri, continua a risuonare nella memoria di chi, come Valerio, ha compreso che la gestione delle risorse comuni non è solo un fatto tecnico, ma un test di maturità civile. La sfida non era la riparazione del tubo, ma la capacità di riconoscere il valore di ciò che si perde prima che diventi un'emergenza. In questo senso, il palazzo non è mai tornato alla normalità, poiché la consapevolezza di aver atteso il limite estremo per agire ha lasciato un segno indelebile, dimostrando che la vera falla non risiedeva nelle tubature, ma nella coesione di chi le abitava.\n\nQuesta consapevolezza tardiva ha innescato un processo di erosione sociale ben più profondo della corrosione metallica che aveva minacciato le fondamenta. Ogni volta che i residenti si incrociano nell'atrio, il peso di quella passività condivisa aleggia come un fantasma, trasformando ogni saluto in un esercizio di cortesia forzata che maschera un disprezzo reciproco ormai radicato. Il signor Valerio, osservando i vicini, nota come la loro apparente serenità sia in realtà una corazza fragile, costruita per celare il timore di essere nuovamente giudicati l'uno dall'altro. La riparazione tecnica ha eliminato la dispersione idrica, ma ha paradossalmente cristallizzato l'isolamento individuale, rendendo il palazzo un alveare di solitudini che si tollerano solo per inerzia. Si è consolidata la convinzione che, in futuro, nessuno interverrà per il bene comune a meno che non vi sia una minaccia esterna imminente, sancendo così il trionfo dell'egoismo sul senso di appartenenza. L'edificio, pur integro nella sua struttura, appare ora come un organismo svuotato di spirito collettivo, dove ogni abitante vive in una bolla di diffidenza, consapevole che il prossimo cedimento non troverà una comunità pronta a reagire, ma solo una schiera di individui pronti a cercare un nuovo colpevole esterno a cui delegare, ancora una volta, l'onere della propria coscienza.",
+    "wordCount": 921,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "convitato di pietra",
+        "lemma": "convitato di pietra",
+        "glosses": {
+          "es": "An uninvited or unwelcome presence that creates discomfort.",
+          "en": "An uninvited or unwelcome presence that creates discomfort."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dinieghi",
+        "lemma": "dinieghi",
+        "glosses": {
+          "es": "Refusals or denials.",
+          "en": "Refusals or denials."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "acuì",
+        "lemma": "acuì",
+        "glosses": {
+          "es": "Intensified or sharpened.",
+          "en": "Intensified or sharpened."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "solerti",
+        "lemma": "solerti",
+        "glosses": {
+          "es": "Diligent or prompt.",
+          "en": "Diligent or prompt."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "catalizzatore",
+        "lemma": "catalizzatore",
+        "glosses": {
+          "es": "A substance or factor that accelerates a process.",
+          "en": "A substance or factor that accelerates a process."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ambivalente",
+        "lemma": "ambivalente",
+        "glosses": {
+          "es": "Having mixed feelings or contradictory meanings.",
+          "en": "Having mixed feelings or contradictory meanings."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.7,
+      "maxSentenceWords": 59,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto etico sulla responsabilità civile."
+        },
+        {
+          "id": "a2",
+          "text": "La riparazione di un guasto idraulico."
+        },
+        {
+          "id": "a3",
+          "text": "La gestione burocratica di un palazzo antico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "il numero 450 smise di essere una cifra astratta per diventare il catalizzatore di una crisi identitaria",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Qual era la causa reale della perdita d'acqua?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'usura dei tubi."
+        },
+        {
+          "id": "a2",
+          "text": "Una radice di albero."
+        },
+        {
+          "id": "a3",
+          "text": "Un errore di posa."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "lo scavo rivelò che la crepa era causata da una radice di albero che, negli anni, aveva esercitato una pressione costante sulla tubatura.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché i condomini hanno accettato di riparare il danno solo alla fine?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per senso del dovere."
+        },
+        {
+          "id": "a2",
+          "text": "Per solidarietà verso Valerio."
+        },
+        {
+          "id": "a3",
+          "text": "Per timore di sanzioni."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la risoluzione del conflitto non arrivò attraverso una presa di coscienza collettiva, bensì per una necessità pragmatica dettata dalla paura della sanzione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo dell'autore nel descrivere il numero 450?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dimostrare come i dati quantitativi possano rivelare l'apatia umana."
+        },
+        {
+          "id": "a2",
+          "text": "Evidenziare l'inefficienza dei sensori moderni."
+        },
+        {
+          "id": "a3",
+          "text": "Illustrare le difficoltà tecniche incontrate durante il lavoro di riparazione."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Quel numero divenne, nelle settimane successive, il convitato di pietra delle assemblee condominiali, trasformando una questione tecnica in un campo di battaglia morale",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono pervade la conclusione del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e risolutivo."
+        },
+        {
+          "id": "a2",
+          "text": "Cinico e profondamente riflessivo."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e puramente descrittivo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la consapevolezza di aver atteso il limite estremo per agire ha lasciato un segno indelebile, dimostrando che la vera falla non risiedeva nelle tubature, ma nella coesione di chi le abitava.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con l'espressione 'convitato di pietra'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un elemento architettonico rigido."
+        },
+        {
+          "id": "a2",
+          "text": "Una scultura decorativa situata nel cortile del palazzo."
+        },
+        {
+          "id": "a3",
+          "text": "Un problema che crea disagio e non può essere ignorato."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Quel numero divenne, nelle settimane successive, il convitato di pietra delle assemblee condominiali",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve in cui discuti se la responsabilità ambientale debba essere guidata dalla coscienza individuale o da incentivi economici esterni, facendo riferimento alle dinamiche di gruppo descritte nel testo.",
+      "en": "Scrivi un saggio breve in cui discuti se la responsabilità ambientale debba essere guidata dalla coscienza individuale o da incentivi economici esterni, facendo riferimento alle dinamiche di gruppo descritte nel testo."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare il testo per comprendere come la percezione di un singolo dato quantitativo possa trasformare un obbligo tecnico in un dilemma etico.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il numero del dissidio: la crepa invisibile | C2 Reading | WeLearn",
+      "en": "Il numero del dissidio: la crepa invisibile | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla responsabilità individuale di fronte alla gestione delle risorse idriche in un contesto di degrado urbano.",
+      "en": "Un'analisi critica sulla responsabilità individuale di fronte alla gestione delle risorse idriche in un contesto di degrado urbano."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

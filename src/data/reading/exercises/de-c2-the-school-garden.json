@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-school-garden",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Paradoxon der Freiwilligkeit: Der Schulgarten als Mikrokosmos",
+      "en": "Das Paradoxon der Freiwilligkeit: Der Schulgarten als Mikrokosmos"
+    },
+    "intro": {
+      "es": "Ein analytischer Essay über die subtilen Mechanismen des sozialen Drucks im Kontext eines vermeintlich freiwilligen Gemeinschaftsprojekts an einer Bildungseinrichtung.",
+      "en": "Ein analytischer Essay über die subtilen Mechanismen des sozialen Drucks im Kontext eines vermeintlich freiwilligen Gemeinschaftsprojekts an einer Bildungseinrichtung."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam und analysieren Sie die Ambivalenz zwischen individueller Autonomie und kollektiver Erwartungshaltung.",
+      "en": "Lesen Sie den Text aufmerksam und analysieren Sie die Ambivalenz zwischen individueller Autonomie und kollektiver Erwartungshaltung."
+    },
+    "targetText": "Als die Schulleitung des Lyceums am Hain beschloss, den brachliegenden Nordhang in einen ökologischen Lehrgarten zu verwandeln, wurde das Projekt als Paradebeispiel für bürgerschaftliches Engagement deklariert. Lehrerin Dr. Elena Vesper, die das Vorhaben als ökologisches Prestigeprojekt leitete, betonte bei der Auftaktveranstaltung, dass die Teilnahme rein auf Freiwilligkeit basiere. Dennoch kristallisierte sich schnell eine unausgesprochene Erwartungshaltung heraus, die den Gartenbau zu einer moralischen Pflichtübung erhob. Wer seine Samstage nicht mit dem Jäten von Unkraut oder dem Anlegen von Hochbeeten verbrachte, sah sich mit einer subtilen sozialen Ächtung konfrontiert, die weit über das bloße Fernbleiben hinausging. Die Teilnahme wurde zu einer Währung, mit der man sich die Zugehörigkeit zur progressiven Gemeinschaft erkaufte, während die Verweigerung als Mangel an kollektiver Verantwortung gebrandmarkt wurde. Dieser Mechanismus der erzwungenen Freiwilligkeit bildet das Fundament für eine tiefgreifende Entfremdung innerhalb der Schülerschaft.\n\nDer Konflikt entbrannte an einem regnerischen Dienstagnachmittag, als der Schüler Julian, ein begabter, aber in sozialen Belangen reservierter Zehntklässler, seine Mitarbeit für das anstehende Erntefest verweigerte. Während seine Mitschüler die Vorbereitungen als notwendiges Opfer für das Gemeinschaftswohl verklärten, beharrte Julian darauf, dass seine Zeit anderweitig besser investiert sei. Dr. Vesper, die den Garten als Spiegelbild ihrer pädagogischen Ideale betrachtete, reagierte mit einer Mischung aus Enttäuschung und taktischer Ausgrenzung. Sie entzog ihm die Empfehlung für das naturwissenschaftliche Stipendium, wohl wissend, dass dies Julian in eine prekäre Lage brachte. Die offizielle Begründung lautete, es fehle ihm an der für das Stipendium erforderlichen sozialen Kompetenz, die sich im gemeinsamen Engagement für den Schulgarten widerspiegle. Hier wurde die Grenze zwischen pädagogischer Förderung und ideologischer Disziplinierung vollends verwischt.\n\nDie restliche Schülerschaft, gefangen in einer Dynamik der Konformität, übernahm die Rolle der moralischen Instanz. In den Fluren wurde über Julians mangelnde Solidarität gemunkelt, und bei den regelmäßigen Treffen im Garten wurde sein Name als Synonym für Egoismus verwendet. Es ist ein faszinierendes, wenn auch beunruhigendes Phänomen, wie schnell eine Gruppe dazu neigt, die Autonomie des Einzelnen zu opfern, um die eigene Gruppenidentität zu festigen. Die Freiheit, Nein zu sagen, existierte nur noch auf dem Papier; in der sozialen Realität war das Nein gleichbedeutend mit einer Exklusion, die schmerzhafter war als die physische Anstrengung der Gartenarbeit. Das Erntefest selbst wurde zu einer Farce, bei der die Freude am Erfolg durch die bittere Erkenntnis überschattet wurde, dass die Gemeinschaft nicht durch Begeisterung, sondern durch den Ausschluss der Abweichler zusammengehalten wurde.\n\nBetrachtet man die Situation aus einer distanzierten Perspektive, so offenbart sich das tieferliegende Dilemma: Die Konstruktion des Schulgartens als Ort der Freiheit war von Anfang an eine Fiktion. Institutionen tendieren dazu, Partizipation als freiwillig zu framen, um die Verantwortung für die Aufrechterhaltung der Strukturen auf das Individuum zu übertragen. Wenn die Teilnahme jedoch mit sozialen Privilegien verknüpft ist, hört sie auf, ein Akt des freien Willens zu sein. Dr. Vesper handelte im Glauben, das Richtige zu tun, indem sie Gemeinschaftssinn erzwingen wollte, doch sie zerstörte dabei genau die Integrität, die sie zu fördern vorgab. Die Schüler lernten keine ökologische Verantwortung, sondern die bittere Lektion, dass Anpassung die sicherste Strategie für den eigenen Fortbestand in einem hierarchischen System ist.\n\nAm Ende blieb der Garten zwar ertragreich, doch der soziale Boden war vergiftet. Julian verließ die Schule nach dem Abschluss, ohne sich jemals wieder in das Projekt eingebracht zu haben. Seine Weigerung blieb ein isolierter Akt des Widerstands, der keine Bewegung auslöste, sondern lediglich die bestehenden Machtstrukturen zementierte. Das Erntefest, das als Symbol für den Erfolg des Projekts dienen sollte, wurde für die Beteiligten zu einem Moment der Reflexion über den Preis ihrer Konformität. Die Stille, die nach den Feierlichkeiten über dem Garten lag, war kein Ausdruck von Zufriedenheit, sondern das Schweigen derer, die erkannt hatten, dass ihre Freiwilligkeit lediglich eine Inszenierung war. Die Frage, ob eine Gemeinschaft auf Kosten der individuellen Freiheit bestehen kann, blieb unbeantwortet, während der Wind durch die leeren Hochbeete pfiff und die Spuren derer verwischte, die sich für ein System entschieden hatten, das sie eigentlich nicht wollten.\n\nIndes stellt sich die Frage, ob diese Entwicklung nicht eine notwendige, wenn auch schmerzhafte Reifeprüfung für das institutionelle Gefüge darstellt. Die Erosion des kollektiven Ethos, die durch den Ausschluss Julians provoziert wurde, könnte paradoxerweise den Keim für eine kritische Gegenbewegung legen, die weit über das Lyceum hinausreicht. Während die Schulleitung den Garten weiterhin als Aushängeschild für pädagogische Erfolge nutzt, beginnen erste Schülergruppen, die Kausalität zwischen Partizipation und Privilegierung öffentlich zu hinterfragen. Diese schleichende Desillusionierung fungiert als Katalysator: Anstatt die Konformität als alternativlos zu akzeptieren, formiert sich ein Bewusstsein, das den Wert der individuellen Autonomie gegen die utilitaristische Logik des Systems stellt. Es ist keineswegs ausgemacht, dass die Zementierung der Machtstrukturen von Dauer ist; vielmehr könnte der vergiftete soziale Boden die Grundlage für eine fundamentale Systemkritik bilden, die den Garten als das entlarvt, was er ist: ein Labor der Disziplinierung. Sollte die Schülerschaft erkennen, dass ihre erzwungene Solidarität lediglich eine Form der Selbstentfremdung darstellt, könnte die Inszenierung der Freiwilligkeit in sich zusammenbrechen. Der Widerstand, der mit Julian begann, wandelt sich so von einem isolierten Akt zu einem intellektuellen Nährboden. Die Leere nach dem Erntefest markiert somit nicht das Ende des Diskurses, sondern den Beginn einer dialektischen Auseinandersetzung, in der die Schüler lernen, dass echte Gemeinschaft erst dort entsteht, wo das Nein des Einzelnen nicht als Verrat, sondern als notwendige Bedingung für eine authentische, nicht-erzwungene Partizipation begriffen wird. Die Stille im Garten ist somit kein endgültiges Urteil, sondern ein Moment des Innehaltens vor einer möglichen, notwendigen Neudefinition des sozialen Miteinanders innerhalb der Mauern des Lyceums.",
+    "wordCount": 900,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "brachliegenden",
+        "lemma": "brachliegenden",
+        "glosses": {
+          "es": "fallow or unused",
+          "en": "fallow or unused"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ächtung",
+        "lemma": "Ächtung",
+        "glosses": {
+          "es": "ostracism or social banishment",
+          "en": "ostracism or social banishment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prekäre",
+        "lemma": "prekäre",
+        "glosses": {
+          "es": "precarious or unstable",
+          "en": "precarious or unstable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Konformität",
+        "lemma": "Konformität",
+        "glosses": {
+          "es": "conformity",
+          "en": "conformity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Fiktion",
+        "lemma": "Fiktion",
+        "glosses": {
+          "es": "fiction or illusion",
+          "en": "fiction or illusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "zementierte",
+        "lemma": "zementierte",
+        "glosses": {
+          "es": "cemented or solidified",
+          "en": "cemented or solidified"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.5,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches zentrale Thema behandelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Ambivalenz zwischen Freiwilligkeit und sozialem Druck."
+        },
+        {
+          "id": "a2",
+          "text": "Die ökologische Bedeutung von Schulgärten."
+        },
+        {
+          "id": "a3",
+          "text": "Die pädagogische Notwendigkeit von Gartenarbeit zur Charakterbildung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Dieser Mechanismus der erzwungenen Freiwilligkeit bildet das Fundament für eine tiefgreifende Entfremdung innerhalb der Schülerschaft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum verweigerte Julian die Mitarbeit?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hatte keine Zeit."
+        },
+        {
+          "id": "a2",
+          "text": "Er wollte seine Zeit anderweitig nutzen."
+        },
+        {
+          "id": "a3",
+          "text": "Er mochte Dr. Vesper nicht."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Julian, ein begabter, aber in sozialen Belangen reservierter Zehntklässler, seine Mitarbeit für das anstehende Erntefest verweigerte. Während seine Mitschüler die Vorbereitungen als notwendiges Opfer für das Gemeinschaftswohl verklärten, beharrte Julian darauf, dass seine Zeit anderweitig besser investiert sei.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Konsequenz hatte Julians Weigerung für seine schulische Laufbahn?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er wurde von der Schule verwiesen."
+        },
+        {
+          "id": "a2",
+          "text": "Er musste zur Nacharbeit im Garten erscheinen."
+        },
+        {
+          "id": "a3",
+          "text": "Er verlor die Empfehlung für ein Stipendium."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sie entzog ihm die Empfehlung für das naturwissenschaftliche Stipendium, wohl wissend, dass dies Julian in eine prekäre Lage brachte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Was ist die Absicht des Autors bei der Beschreibung des Erntefestes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Heuchelei und die soziale Kälte der Veranstaltung zu entlarven."
+        },
+        {
+          "id": "a2",
+          "text": "Die Freude der Schüler hervorzuheben."
+        },
+        {
+          "id": "a3",
+          "text": "Den Erfolg des ökologischen Projekts zu feiern."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Das Erntefest selbst wurde zu einer Farce, bei der die Freude am Erfolg durch die bittere Erkenntnis überschattet wurde, dass die Gemeinschaft nicht durch Begeisterung, sondern durch den Ausschluss der Abweichler zusammengehalten wurde.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Autors gegenüber der Schulleitung charakterisieren?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Lobend und unterstützend."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und analytisch."
+        },
+        {
+          "id": "a3",
+          "text": "Gleichgültig und distanziert."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Institutionen tendieren dazu, Partizipation als freiwillig zu framen, um die Verantwortung für die Aufrechterhaltung der Strukturen auf das Individuum zu übertragen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'brachliegend' im Kontext des ersten Absatzes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Vollständig kultiviert."
+        },
+        {
+          "id": "a2",
+          "text": "Besonders fruchtbar und gepflegt."
+        },
+        {
+          "id": "a3",
+          "text": "Unbenutzt und verwildert."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Als die Schulleitung des Lyceums am Hain beschloss, den brachliegenden Nordhang in einen ökologischen Lehrgarten zu verwandeln",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Diskutieren Sie in einem kurzen Aufsatz, ob soziale Partizipation an Bildungseinrichtungen jemals wirklich freiwillig sein kann, wenn sie in ein System von Belohnungen und Sanktionen eingebettet ist.",
+      "en": "Diskutieren Sie in einem kurzen Aufsatz, ob soziale Partizipation an Bildungseinrichtungen jemals wirklich freiwillig sein kann, wenn sie in ein System von Belohnungen und Sanktionen eingebettet ist."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lesen Sie den Text aufmerksam und analysieren Sie die Ambivalenz zwischen individueller Autonomie und kollektiver Erwartungshaltung.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Paradoxon der Freiwilligkeit: Der Schulgarten als Mikrokosmos | C2 Reading | WeLearn",
+      "en": "Das Paradoxon der Freiwilligkeit: Der Schulgarten als Mikrokosmos | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein analytischer Essay über die subtilen Mechanismen des sozialen Drucks im Kontext eines vermeintlich freiwilligen Gemeinschaftsprojekts an einer Bildungseinrichtung.",
+      "en": "Ein analytischer Essay über die subtilen Mechanismen des sozialen Drucks im Kontext eines vermeintlich freiwilligen Gemeinschaftsprojekts an einer Bildungseinrichtung."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

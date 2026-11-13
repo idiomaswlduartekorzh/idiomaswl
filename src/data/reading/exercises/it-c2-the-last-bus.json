@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-last-bus",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'invisibilità del tragitto: il paradosso dell'efficienza",
+      "en": "L'invisibilità del tragitto: il paradosso dell'efficienza"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla gestione dei trasporti rurali, dove la logica dei numeri ignora chi non riesce a salire a bordo.",
+      "en": "Un'analisi critica sulla gestione dei trasporti rurali, dove la logica dei numeri ignora chi non riesce a salire a bordo."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere le implicazioni etiche della misurazione dell'efficienza nei servizi pubblici.",
+      "en": "Analizzare il testo per comprendere le implicazioni etiche della misurazione dell'efficienza nei servizi pubblici."
+    },
+    "targetText": "La recente ristrutturazione della rete di trasporti nella Valle di Selva ha sollevato un polverone non tanto per le modifiche ai percorsi, quanto per la logica algoritmica che le ha generate. Il direttore operativo, l'ingegner Valerio Masi, ha presentato con orgoglio il nuovo piano, sostenendo che l'ottimizzazione delle corse serali verso i borghi montani rispondesse a una necessità di sostenibilità economica. Secondo i dati di Masi, le corse dopo le venti erano frequentate da una media di soli due passeggeri, rendendo il mantenimento del servizio un lusso insostenibile. La narrazione ufficiale è chiara: la razionalizzazione è un atto di responsabilità verso l'intera collettività, che non può permettersi di sovvenzionare tratte fantasma. Eppure, questa visione omette un dettaglio cruciale: la scomparsa di tali passeggeri dai radar statistici non è il riflesso di una mancanza di domanda, ma l'esito di una selezione naturale indotta dalla scarsità stessa.\n\nLa signora Elena, che gestisce l'unica bottega alimentare a Poggio Alto, rappresenta l'eccezione che smentisce la regola del foglio Excel. Prima della soppressione delle corse, Elena utilizzava l'autobus delle ventuno e trenta per rientrare dopo aver rifornito il negozio in centro. Con la cancellazione, Elena è stata costretta a chiudere l'attività un'ora prima per riuscire a prendere l'ultima corsa utile. La riduzione dell'orario ha inevitabilmente causato un calo del suo fatturato, portando la signora a rinunciare del tutto al trasporto pubblico. Il caso di Elena illustra perfettamente come la soppressione di una corsa non sia un evento neutro, ma un atto performativo che crea l'invisibilità che pretende di misurare. Masi guarda il dato finale – l'autobus vuoto – senza interrogarsi sul perché quel vuoto si sia generato, ignorando che l'utente è sparito proprio a causa della contrazione del servizio.\n\nIl conflitto tra l'approccio dell'ingegnere e la realtà vissuta dai residenti rivela una frattura epistemologica profonda. Per l'amministrazione, l'efficienza è una grandezza scalare, un valore assoluto che si misura in termini di costo-opportunità. Per la comunità di Poggio Alto, l'efficienza è un concetto relativo, strettamente legato alla possibilità di mantenere un tessuto sociale attivo. Quando Masi afferma che il sistema è ora più efficiente, sta operando una rimozione selettiva: considera solo i passeggeri che sono riusciti a sopravvivere alla selezione del nuovo orario. Chi è stato espulso dal sistema non viene conteggiato come 'utente insoddisfatto' o 'cittadino penalizzato', ma semplicemente svanisce, lasciando il posto a una statistica di perfezione burocratica che non riflette la realtà del territorio.\n\nLa questione si complica quando si osserva la dinamica temporale delle scelte amministrative. Il rapporto di Masi è stato redatto sulla base dei dati raccolti nel trimestre precedente, periodo in cui erano già stati attuati tagli parziali. È una profezia che si autoavvera: meno corse portano a meno utenti, il che giustifica ulteriori tagli. Questa spirale discendente non viene mai messa in discussione nelle riunioni di consiglio, dove il linguaggio tecnico funge da scudo contro le critiche umane. Si parla di 'ottimizzazione delle risorse' come se si trattasse di un'equazione matematica priva di variabili sociali. Tuttavia, la chiusura della bottega di Elena non è un dato che appare nei report di Masi; è un'esternalità negativa che viene scaricata interamente sulla comunità, mentre l'amministrazione celebra il pareggio di bilancio.\n\nIn definitiva, la vicenda della Valle di Selva ci pone di fronte a un dilemma etico irrisolto. Possiamo davvero definire efficiente un sistema che, per quadrare i conti, finisce per erodere le fondamenta della vita quotidiana di chi dovrebbe servire? Se l'efficienza viene misurata solo sulla base di chi rimane, avremo sempre un sistema perfetto, ma saremo sempre più soli. Il paradosso è che, nel tentativo di rendere il trasporto pubblico una macchina impeccabile, abbiamo trasformato i cittadini in variabili trascurabili. La vera sfida non è far quadrare i bilanci, ma riconoscere che il valore di un servizio pubblico risiede proprio in quelle corse che, pur essendo poco frequentate, garantiscono la sopravvivenza di una comunità. Finché l'ingegnere Masi non comprenderà che il vuoto non è sempre assenza di bisogno, ma spesso assenza di opportunità, la valle continuerà a svuotarsi, in un silenzio statistico assordante.\n\nTuttavia, la cecità algoritmica di Masi non si limita a innescare un declino demografico, ma innesca una trasformazione strutturale dell'intero ecosistema socio-economico della valle. Sostituendo la capillarità del servizio pubblico con una logica di profitto immediato, l'amministrazione ha inavvertitamente incentivato una dipendenza forzata dal trasporto privato, che paradossalmente incrementa i costi sociali complessivi in termini di manutenzione stradale e impatto ambientale. Questa transizione non è solo un errore di calcolo logistico, ma un vero e proprio smantellamento del contratto sociale che legava le periferie al centro decisionale. Quando il cittadino, privato del mezzo pubblico, è costretto a dotarsi di un veicolo privato, l'intera struttura dei consumi locali subisce una contrazione drastica, poiché il reddito disponibile viene drenato dai costi fissi di gestione dell'auto, sottraendo risorse preziose agli esercizi di prossimità come quello di Elena. Si crea così un circolo vizioso in cui la desertificazione commerciale giustifica, agli occhi di un osservatore superficiale, la definitiva chiusura di ogni presidio di servizio, validando retroattivamente la tesi dell'ingegnere sulla scarsa domanda. La Valle di Selva smette di essere un organismo vivente per diventare un mero corridoio di transito, dove la mobilità non è più un diritto di cittadinanza, ma un lusso discriminante. In ultima analisi, l'ottimizzazione perseguita da Masi si rivela un paradosso distruttivo: nel tentativo di salvare il bilancio, egli ha sacrificato la vitalità del territorio, trasformando una comunità resiliente in un insieme di individui isolati, le cui necessità sono state sacrificate sull'altare di una precisione numerica che ignora, colpevolmente, il costo umano del progresso.",
+    "wordCount": 926,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "razionalizzazione",
+        "lemma": "razionalizzazione",
+        "glosses": {
+          "es": "The process of making a system more efficient or logical, often through reduction.",
+          "en": "The process of making a system more efficient or logical, often through reduction."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemologica",
+        "lemma": "epistemologica",
+        "glosses": {
+          "es": "Relating to the theory of knowledge and how we understand or categorize reality.",
+          "en": "Relating to the theory of knowledge and how we understand or categorize reality."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "esternalità",
+        "lemma": "esternalità",
+        "glosses": {
+          "es": "A side effect or consequence of an industrial or commercial activity that affects other parties.",
+          "en": "A side effect or consequence of an industrial or commercial activity that affects other parties."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "profezia",
+        "lemma": "profezia",
+        "glosses": {
+          "es": "A prediction, specifically one that influences behavior in a way that makes it come true.",
+          "en": "A prediction, specifically one that influences behavior in a way that makes it come true."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erodere",
+        "lemma": "erodere",
+        "glosses": {
+          "es": "To gradually wear away or destroy something, such as rights or foundations.",
+          "en": "To gradually wear away or destroy something, such as rights or foundations."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "assordante",
+        "lemma": "assordante",
+        "glosses": {
+          "es": "Deafening, often used metaphorically to describe a silence that is very noticeable.",
+          "en": "Deafening, often used metaphorically to describe a silence that is very noticeable."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.5,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema principale discusso nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il fallimento della logica algoritmica applicata ai servizi pubblici."
+        },
+        {
+          "id": "a2",
+          "text": "La gestione dei trasporti."
+        },
+        {
+          "id": "a3",
+          "text": "La crisi economica dei piccoli borghi montani nella Valle di Selva."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la logica algoritmica che le ha generate",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché la signora Elena ha smesso di usare l'autobus?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché le corse erano troppo care."
+        },
+        {
+          "id": "a2",
+          "text": "Perché la riduzione dell'orario ha reso impossibile il rientro."
+        },
+        {
+          "id": "a3",
+          "text": "Perché ha deciso di chiudere definitivamente la sua bottega a Poggio Alto."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La riduzione dell'orario ha inevitabilmente causato un calo del suo fatturato, portando la signora a rinunciare del tutto al trasporto pubblico.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autore riguardo al rapporto tra dati e realtà?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "I dati sono sempre oggettivi."
+        },
+        {
+          "id": "a2",
+          "text": "I dati sono manipolati intenzionalmente da Masi."
+        },
+        {
+          "id": "a3",
+          "text": "I dati possono nascondere le cause sociali."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Masi guarda il dato finale – l'autobus vuoto – senza interrogarsi sul perché quel vuoto si sia generato",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'intento dell'autore nel citare il caso di Elena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Illustrare come la soppressione di una corsa crei invisibilità."
+        },
+        {
+          "id": "a2",
+          "text": "Denunciare la chiusura di un'attività."
+        },
+        {
+          "id": "a3",
+          "text": "Dimostrare che l'ingegner Masi ha agito con malizia verso i residenti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il caso di Elena illustra perfettamente come la soppressione di una corsa non sia un evento neutro, ma un atto performativo che crea l'invisibilità che pretende di misurare.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Come si può definire il tono dell'autore nei confronti dell'amministrazione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifferente e neutrale."
+        },
+        {
+          "id": "a2",
+          "text": "Critico e analitico."
+        },
+        {
+          "id": "a3",
+          "text": "Sarcastico e puramente ostile."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Questa spirale discendente non viene mai messa in discussione nelle riunioni di consiglio, dove il linguaggio tecnico funge da scudo contro le critiche umane.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con l'espressione 'profezia che si autoavvera'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un piano ben riuscito."
+        },
+        {
+          "id": "a2",
+          "text": "Un errore di calcolo nelle statistiche ufficiali."
+        },
+        {
+          "id": "a3",
+          "text": "Una previsione che causa il suo esito."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "È una profezia che si autoavvera: meno corse portano a meno utenti, il che giustifica ulteriori tagli.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio argomentativo (200 parole) in cui discuti se sia possibile bilanciare l'efficienza economica con la necessità di mantenere servizi essenziali in aree geograficamente isolate, portando un esempio concreto di come la tecnologia possa aiutare o ostacolare tale equilibrio.",
+      "en": "Scrivi un breve saggio argomentativo (200 parole) in cui discuti se sia possibile bilanciare l'efficienza economica con la necessità di mantenere servizi essenziali in aree geograficamente isolate, portando un esempio concreto di come la tecnologia possa aiutare o ostacolare tale equilibrio."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare il testo per comprendere le implicazioni etiche della misurazione dell'efficienza nei servizi pubblici.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'invisibilità del tragitto: il paradosso dell'efficienza | C2 Reading | WeLearn",
+      "en": "L'invisibilità del tragitto: il paradosso dell'efficienza | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla gestione dei trasporti rurali, dove la logica dei numeri ignora chi non riesce a salire a bordo.",
+      "en": "Un'analisi critica sulla gestione dei trasporti rurali, dove la logica dei numeri ignora chi non riesce a salire a bordo."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-food-label",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della responsabilità: l'etichetta come alibi",
+      "en": "L'illusione della responsabilità: l'etichetta come alibi"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla retorica delle etichette alimentari e sullo slittamento semantico che trasforma l'informazione in una delega di responsabilità verso il consumatore.",
+      "en": "Un'analisi critica sulla retorica delle etichette alimentari e sullo slittamento semantico che trasforma l'informazione in una delega di responsabilità verso il consumatore."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere come le scelte lessicali nelle etichette alimentari possano alterare la percezione della responsabilità etica tra produttore e acquirente.",
+      "en": "Analizzare il testo per comprendere come le scelte lessicali nelle etichette alimentari possano alterare la percezione della responsabilità etica tra produttore e acquirente."
+    },
+    "targetText": "Durante la serata di gala organizzata dalla Fondazione Aethelgard, il curatore Elio Vanni ha sollevato una questione che ha turbato la quiete dei commensali: la natura ambigua del linguaggio sulle confezioni alimentari moderne. Il caso emblematico è quello della 'Linea Equa', un marchio di prodotti biologici che, sotto la guida della direttrice marketing Sofia Rinaldi, ha adottato etichette che recitano 'Consumare preferibilmente entro, per preservare l'integrità del tuo impegno ambientale'. Questa frase, apparentemente innocua, nasconde una manovra retorica sottile. Non si tratta più di un semplice avviso di freschezza, ma di una traslazione di responsabilità: se il prodotto viene gettato prematuramente, la colpa non è più del sistema di distribuzione che ha spinto all'acquisto, né della conservazione industriale, ma del consumatore stesso, il cui 'impegno ambientale' è stato infranto. Vanni ha descritto questo fenomeno come una 'semantica dell'alibi', dove il linguaggio non informa, ma assolve il produttore dal peso dello spreco.\n\nIl conflitto è esploso quando Rinaldi, presente alla serata, ha replicato sostenendo che l'etichetta serve a educare. Secondo la sua visione, il consumatore moderno deve essere consapevole che la scadenza è un concetto fluido, legato alla qualità sensoriale piuttosto che alla sicurezza biologica. Tuttavia, Vanni ha ribattuto che questa fluidità è un'arma a doppio taglio. Quando l'etichetta dice 'per preservare l'integrità del tuo impegno', sta trasformando un atto tecnico — la gestione di un bene deperibile — in un imperativo morale. Il consumatore si trova intrappolato in un paradosso: se mangia il prodotto scaduto, rischia la salute; se lo getta, tradisce il proprio impegno etico. È una forma di coercizione psicologica che sposta l'intero onere della sostenibilità sulle spalle dell'individuo, lasciando intatte le inefficienze della filiera produttiva che, ironicamente, sono spesso la causa primaria del deterioramento precoce dei beni.\n\nLa tensione è culminata in un episodio concreto verificatosi poche ore prima dell'evento. Un fornitore locale, incaricato di rifornire la cucina della Fondazione, ha consegnato un lotto di ortaggi etichettati con la nuova dicitura. Lo chef, osservando la dicitura, ha rifiutato di utilizzare i prodotti, temendo che la responsabilità di un eventuale malessere dei commensali ricadesse sulla sua brigata. Il fornitore, dal canto suo, ha insistito sul fatto che l'etichetta fosse una garanzia di qualità superiore, quasi un sigillo di virtù. Questo stallo ha reso evidente che il linguaggio, lungi dall'essere neutrale, agisce come una barriera legale e psicologica. L'etichetta, anziché chiarire, ha oscurato il dato oggettivo, creando una zona grigia dove la responsabilità si dissolve nel nulla, lasciando il consumatore in uno stato di perenne incertezza decisionale.\n\nNonostante le obiezioni di Rinaldi, che insiste sulla necessità di un approccio olistico alla spesa, la critica di Vanni rimane un monito necessario. È innegabile che la trasparenza sia un valore, ma quando la trasparenza viene usata per costruire una narrazione che colpevolizza l'utente, essa cessa di essere un servizio e diventa una strategia di marketing difensivo. La pretesa di 'educare' il consumatore attraverso messaggi moraleggianti è, in ultima analisi, un modo per evitare di affrontare il problema strutturale dello spreco alimentare. Se l'etichetta non è in grado di fornire dati certi, ma solo suggerimenti etici vaghi, allora il suo scopo primario non è più la sicurezza, ma la protezione legale del marchio contro le critiche legate all'impatto ambientale.\n\nIn conclusione, la vicenda della Linea Equa ci insegna che il linguaggio sulle confezioni non è mai innocente. La distanza tra un'informazione tecnica e una delega di responsabilità è colmata da una retorica che sfrutta i sensi di colpa del cittadino. La sfida per il futuro non risiede solo nel migliorare la qualità dei prodotti, ma nel pretendere un linguaggio che sia onesto, privo di sovrastrutture morali e focalizzato sulla realtà dei fatti. Fino a quando le etichette continueranno a essere strumenti di retorica anziché di informazione, il consumatore rimarrà un arbitro impotente, costretto a navigare in un mare di ambiguità in cui la responsabilità viene sempre trasferita altrove, lasciando il problema dello spreco irrisolto e, paradossalmente, più profondo di prima.\n\nTuttavia, occorre considerare che l'impatto di tale retorica trascende il singolo atto di acquisto, innescando una pericolosa erosione della fiducia sistemica tra industria e cittadinanza. Quando il linguaggio normativo viene piegato a fini persuasivi, si assiste a una metamorfosi del concetto di 'scelta consapevole', che da strumento di emancipazione individuale si trasforma in un carico cognitivo insostenibile. Il consumatore, costantemente esposto a questo fuoco incrociato di imperativi etici e vaghezze tecniche, finisce per sviluppare una forma di apatia decisionale. Questa paralisi non è affatto casuale, bensì il risultato di una strategia che, rendendo ogni opzione potenzialmente fallimentare, finisce per deresponsabilizzare l'intero sistema produttivo. Se ogni scelta appare come un tradimento di un valore — sia esso la salute personale o l'integrità dell'ecosistema — il cittadino smette di interrogarsi sulle inefficienze strutturali della filiera, concentrandosi unicamente sulla gestione del proprio senso di colpa. Di conseguenza, la narrazione di Rinaldi non solo occulta le lacune logistiche, ma disinnesca attivamente la critica sociale, trasformando il consumatore da attore politico a mero esecutore di direttive morali ambigue. In questo scenario, la trasparenza viene sacrificata sull'altare di una protezione corporativa che non mira alla qualità, ma alla neutralizzazione del dissenso. La vera minaccia, dunque, non risiede nel prodotto deperibile in sé, quanto nel consolidamento di un modello comunicativo che, svuotando di significato i termini della sostenibilità, rende impossibile qualsiasi reale progresso verso una gestione etica e razionale delle risorse, lasciando che il problema dello spreco continui a proliferare sotto una coltre di retorica rassicurante quanto vacua.",
+    "wordCount": 909,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "semantica",
+        "lemma": "semantica",
+        "glosses": {
+          "es": "The branch of linguistics and logic concerned with meaning.",
+          "en": "The branch of linguistics and logic concerned with meaning."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "alibi",
+        "lemma": "alibi",
+        "glosses": {
+          "es": "An excuse or pretext used to avoid blame.",
+          "en": "An excuse or pretext used to avoid blame."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coercizione",
+        "lemma": "coercizione",
+        "glosses": {
+          "es": "The practice of persuading someone to do something by using force or threats.",
+          "en": "The practice of persuading someone to do something by using force or threats."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "onere",
+        "lemma": "onere",
+        "glosses": {
+          "es": "A burden or responsibility.",
+          "en": "A burden or responsibility."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "olistico",
+        "lemma": "olistico",
+        "glosses": {
+          "es": "Characterized by the belief that the parts of something are intimately interconnected.",
+          "en": "Characterized by the belief that the parts of something are intimately interconnected."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sovrastrutture",
+        "lemma": "sovrastrutture",
+        "glosses": {
+          "es": "Superstructures or secondary, often unnecessary, layers added to a base.",
+          "en": "Superstructures or secondary, often unnecessary, layers added to a base."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.5,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale dell'analisi di Vanni?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'uso retorico delle etichette"
+        },
+        {
+          "id": "a2",
+          "text": "Il costo dei prodotti"
+        },
+        {
+          "id": "a3",
+          "text": "La qualità del cibo"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Vanni ha descritto questo fenomeno come una 'semantica dell'alibi', dove il linguaggio non informa, ma assolve il produttore dal peso dello spreco.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Perché lo chef ha rifiutato i prodotti consegnati?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché erano costosi"
+        },
+        {
+          "id": "a2",
+          "text": "Per paura di responsabilità"
+        },
+        {
+          "id": "a3",
+          "text": "Per la cattiva qualità"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Lo chef, osservando la dicitura, ha rifiutato di utilizzare i prodotti, temendo che la responsabilità di un eventuale malessere dei commensali ricadesse sulla sua brigata.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autore riguardo al marketing della Linea Equa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È un progetto ecologico"
+        },
+        {
+          "id": "a2",
+          "text": "È un metodo educativo"
+        },
+        {
+          "id": "a3",
+          "text": "È una strategia difensiva"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "essa cessa di essere un servizio e diventa una strategia di marketing difensivo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticare l'ambiguità linguistica nelle etichette alimentari"
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere le nuove tecniche di conservazione biologica"
+        },
+        {
+          "id": "a3",
+          "text": "Spiegare come leggere correttamente le scadenze"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la natura ambigua del linguaggio sulle confezioni alimentari moderne.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono adotta l'autore nel descrivere le azioni di Sofia Rinaldi?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ammirato e solidale"
+        },
+        {
+          "id": "a2",
+          "text": "Scettico e analitico"
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e neutrale"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La pretesa di 'educare' il consumatore attraverso messaggi moraleggianti è, in ultima analisi, un modo per evitare di affrontare il problema strutturale dello spreco alimentare.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'semantica' nel contesto del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La scienza del linguaggio"
+        },
+        {
+          "id": "a2",
+          "text": "La struttura grammaticale"
+        },
+        {
+          "id": "a3",
+          "text": "Il significato delle parole"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Vanni ha descritto questo fenomeno come una 'semantica dell'alibi', dove il linguaggio non informa, ma assolve il produttore dal peso dello spreco.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio argomentativo (200 parole) in cui discuti se le aziende debbano essere legalmente obbligate a utilizzare un linguaggio neutro e privo di implicazioni morali sulle etichette dei prodotti alimentari.",
+      "en": "Scrivi un breve saggio argomentativo (200 parole) in cui discuti se le aziende debbano essere legalmente obbligate a utilizzare un linguaggio neutro e privo di implicazioni morali sulle etichette dei prodotti alimentari."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare il testo per comprendere come le scelte lessicali nelle etichette alimentari possano alterare la percezione della responsabilità etica tra produttore e acquirente.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della responsabilità: l'etichetta come alibi | C2 Reading | WeLearn",
+      "en": "L'illusione della responsabilità: l'etichetta come alibi | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla retorica delle etichette alimentari e sullo slittamento semantico che trasforma l'informazione in una delega di responsabilità verso il consumatore.",
+      "en": "Un'analisi critica sulla retorica delle etichette alimentari e sullo slittamento semantico che trasforma l'informazione in una delega di responsabilità verso il consumatore."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

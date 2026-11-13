@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-open-schedule",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Paradoxon der zeitlichen Autonomie",
+      "en": "Das Paradoxon der zeitlichen Autonomie"
+    },
+    "intro": {
+      "es": "Eine kritische Korrespondenz zwischen der Schulleitung und einer Lehrkraft über die ethischen Implikationen flexibler Stundenpläne.",
+      "en": "Eine kritische Korrespondenz zwischen der Schulleitung und einer Lehrkraft über die ethischen Implikationen flexibler Stundenpläne."
+    },
+    "mission": {
+      "es": "Analysieren Sie den Text hinsichtlich der zugrunde liegenden Machtdynamik und der philosophischen Auseinandersetzung mit dem Begriff der Gerechtigkeit im Kontext schulischer Organisation.",
+      "en": "Analysieren Sie den Text hinsichtlich der zugrunde liegenden Machtdynamik und der philosophischen Auseinandersetzung mit dem Begriff der Gerechtigkeit im Kontext schulischer Organisation."
+    },
+    "targetText": "Sehr geehrte Frau Direktorin Dr. Aris, ich schreibe Ihnen heute Abend, nachdem ich erneut die Entwürfe für das kommende Schuljahr gesichtet habe. Es ist mir ein Anliegen, das subtile, aber tiefgreifende Problem der sogenannten 'flexiblen Stundenplangestaltung' anzusprechen, die wir an unserem Gymnasium implementiert haben. Auf den ersten Blick wirkt das System, das uns erlaubt, unsere Unterrichtszeiten innerhalb eines gewissen Rahmens selbst zu wählen, wie ein Fortschritt an Autonomie. Doch bei näherer Betrachtung offenbart sich eine strukturelle Ungerechtigkeit, die das Individuum für systemische Disparitäten verantwortlich macht. Wenn wir die Kontrolle über die Zeit als bloße persönliche Präferenz deklarieren, ignorieren wir die prekären Lebensrealitäten, die hinter diesen Entscheidungen stehen. Ein Kollege, der aufgrund familiärer Verpflichtungen oder pflegebedürftiger Angehöriger gezwungen ist, seine Stunden in die Randzeiten zu legen, tut dies nicht aus einer freien Wahl heraus, sondern aus einer Notwendigkeit, die das System als 'Vorliebe' umdeutet. Diese semantische Verschiebung ist gefährlich, da sie die Institution von ihrer Verantwortung entbindet, ein gerechtes Umfeld für alle zu schaffen, unabhängig von deren privater Belastungssituation. Die Flexibilität wird hier zur Falle, in der diejenige Person, die weniger Zeitressourcen besitzt, das Nachsehen hat, während diejenigen mit größerer zeitlicher Freiheit die 'bevorzugten' Kernzeiten besetzen können. Dies erzeugt eine Atmosphäre, in der Effizienz über Empathie gestellt wird und die soziale Kohärenz unseres Kollegiums schleichend erodiert. Ich habe dies am eigenen Leib erfahren, als mein Antrag auf eine Anpassung meines Stundenplans aufgrund meiner Betreuungssituation abgelehnt wurde, mit dem Hinweis, ich hätte ja die Möglichkeit, meine Prioritäten anders zu setzen. Diese Antwort ist nicht nur zynisch, sie verkennt die fundamentale Asymmetrie unserer Arbeitsbedingungen. Wenn wir das Zeitmanagement als individuelles Spiel betrachten, legitimieren wir eine Ungleichheit, die wir eigentlich durch pädagogische Exzellenz überwinden sollten. Die aktuelle Praxis führt dazu, dass die Belastung innerhalb des Kollegiums ungleich verteilt wird, wobei die 'flexiblen' Stundenpläne jene bestrafen, die ohnehin schon unter Druck stehen. Es ist ein Trugschluss zu glauben, dass ein Markt der Zeitpräferenzen zu einer fairen Verteilung führt, wenn die Ausgangsbedingungen der Akteure diametral entgegengesetzt sind. Ich fordere Sie daher auf, das aktuelle Modell zu überdenken und eine Struktur zu etablieren, die nicht auf der vermeintlichen Freiheit des Einzelnen basiert, sondern auf der Anerkennung der unterschiedlichen Belastungsgrade. Wir können nicht länger so tun, als sei die Zeit eine neutrale Ressource, die jeder nach Belieben formen kann. Wahre Gerechtigkeit erfordert, dass wir die strukturellen Barrieren anerkennen, anstatt sie hinter dem Schleier der individuellen Entscheidung zu verbergen. Ich erwarte keine sofortige Umgestaltung des gesamten Plans, aber ich erwarte eine offene Debatte über die ethischen Grundlagen unseres Handelns. Sollten wir an diesem Kurs festhalten, befürchte ich, dass die Entfremdung zwischen Schulleitung und Kollegium weiter zunehmen wird, was letztlich die Qualität unserer Bildungsarbeit gefährdet. Ich stehe für ein persönliches Gespräch zur Verfügung, um diese Bedenken zu erörtern, hoffe jedoch, dass meine schriftliche Darlegung bereits einen ersten Anstoß zur Reflexion bietet. Mit besorgten Grüßen, Ihr Kollege, Dr. Hannes Weber.\n\nIndes darf bei dieser kritischen Betrachtung nicht übersehen werden, dass die Einführung einer starren, zentralistischen Stundenplanvorgabe, die jegliche Flexibilität eliminiert, eine ebenso problematische Gegenreaktion provozieren könnte. Während das aktuelle Modell zweifellos die von mir dargelegten Disparitäten verschärft, dient die individuelle Wahlfreiheit paradoxerweise auch als notwendiges Ventil in einem Berufsalltag, der durch zunehmende bürokratische Überlastung und die stetig steigenden Anforderungen an die pädagogische Qualität ohnehin an die Grenzen der Belastbarkeit stößt. Sollten wir die Flexibilität nun als bloßes Instrument der Ausbeutung verwerfen und durch ein rigides, von oben verordnetes Korsett ersetzen, riskieren wir, die verbliebenen Spielräume für eine individuelle Lebensgestaltung vollends zu zertrümmern. Eine solche Rückkehr zu einer starren Taktung würde zwar die formale Gleichheit der Arbeitszeiten wiederherstellen, jedoch die spezifischen Bedürfnisse derjenigen, die sich in komplexen, nicht-normativen Lebensphasen befinden, vollständig ignorieren. Die Gefahr besteht darin, dass wir durch den Ruf nach einer vermeintlich gerechteren, weil uniformen Struktur, die Autonomie der Lehrkräfte weiter beschneiden und das Gymnasium in eine Verwaltungseinheit transformieren, in der die pädagogische Freiheit hinter einer algorithmischen Effizienz zurücktritt. Wir müssen daher den schmalen Grat zwischen der notwendigen strukturellen Unterstützung und dem Erhalt eines gewissen Maßes an Selbstbestimmung finden, ohne dabei in die Falle der neoliberalen Selbstoptimierung zu tappen. Es wäre fatal, die Flexibilität als solche zu verdammen, anstatt sie als ein Werkzeug zu begreifen, das erst durch eine solidarische, kollegiale Aushandlung und eine unterstützende Schulleitung seine destruktive Kraft verliert. Eine bloße Rückabwicklung des Modells würde lediglich die Symptome bekämpfen, während die zugrunde liegende Asymmetrie der Belastungen unangetastet bliebe. Stattdessen bedarf es eines transparenten Mechanismus, der soziale Härten explizit priorisiert, anstatt sie dem freien Spiel der Kräfte zu überlassen. Wenn wir die Flexibilität nicht durch eine ethisch fundierte Priorisierung ergänzen, wird jede noch so gut gemeinte Reform lediglich zu einer neuen Form der Entfremdung führen. Wir stehen somit vor der Herausforderung, ein System zu entwickeln, das zwar den Rahmen vorgibt, aber die menschliche Dimension nicht aus den Augen verliert. Die Lösung liegt nicht in der Aufhebung der Wahlmöglichkeit, sondern in deren Einbettung in eine Kultur der kollektiven Verantwortung, in der die Zeit eben nicht als Ware, sondern als gemeinsames Gut begriffen wird, das denjenigen, die sie am dringendsten benötigen, durch eine aktive Solidarität zugesichert wird, anstatt sie durch einen anonymen Wettbewerb um die besten Zeitfenster zu benachteiligen.",
+    "wordCount": 857,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Disparitäten",
+        "lemma": "Disparitäten",
+        "glosses": {
+          "es": "disparities or inequalities",
+          "en": "disparities or inequalities"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "semantische",
+        "lemma": "semantische",
+        "glosses": {
+          "es": "relating to meaning or language",
+          "en": "relating to meaning or language"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "erodiert",
+        "lemma": "erodiert",
+        "glosses": {
+          "es": "erodes or wears away",
+          "en": "erodes or wears away"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Asymmetrie",
+        "lemma": "Asymmetrie",
+        "glosses": {
+          "es": "lack of equality or balance",
+          "en": "lack of equality or balance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Trugschluss",
+        "lemma": "Trugschluss",
+        "glosses": {
+          "es": "fallacy or misconception",
+          "en": "fallacy or misconception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "diametral",
+        "lemma": "diametral",
+        "glosses": {
+          "es": "diametrically or completely",
+          "en": "diametrically or completely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.5,
+      "maxSentenceWords": 58,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das Hauptanliegen von Dr. Weber in seinem Schreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er kritisiert die ethische Grundlage der Stundenplanflexibilität."
+        },
+        {
+          "id": "a2",
+          "text": "Er fordert eine Entschädigung für geleistete Überstunden."
+        },
+        {
+          "id": "a3",
+          "text": "Er schlägt eine neue Software für die Unterrichtsplanung vor."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es ist mir ein Anliegen, das subtile, aber tiefgreifende Problem der sogenannten 'flexiblen Stundenplangestaltung' anzusprechen, die wir an unserem Gymnasium implementiert haben.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum wurde der Antrag von Dr. Weber auf Stundenplananpassung abgelehnt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Wegen mangelnder fachlicher Eignung."
+        },
+        {
+          "id": "a2",
+          "text": "Wegen seiner privaten Prioritätensetzung."
+        },
+        {
+          "id": "a3",
+          "text": "Wegen eines generellen Einstellungsstopps."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ich habe dies am eigenen Leib erfahren, als mein Antrag auf eine Anpassung meines Stundenplans aufgrund meiner Betreuungssituation abgelehnt wurde, mit dem Hinweis, ich hätte ja die Möglichkeit, meine Prioritäten anders zu setzen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Wirkung hat das aktuelle System laut Dr. Weber auf das Kollegium?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Es fördert einen gesunden Wettbewerb unter den Lehrkräften."
+        },
+        {
+          "id": "a2",
+          "text": "Es stärkt die Zusammenarbeit durch mehr zeitliche Transparenz."
+        },
+        {
+          "id": "a3",
+          "text": "Es führt zu einer schleichenden Entfremdung im Kollegium."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Sollten wir an diesem Kurs festhalten, befürchte ich, dass die Entfremdung zwischen Schulleitung und Kollegium weiter zunehmen wird, was letztlich die Qualität unserer Bildungsarbeit gefährdet.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Warum bezeichnet Dr. Weber die Flexibilität als eine Art Falle?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Weil sie die Verantwortung für strukturelle Probleme auf das Individuum abwälzt."
+        },
+        {
+          "id": "a2",
+          "text": "Weil die Lehrkräfte durch die Wahlmöglichkeiten ihre pädagogischen Ziele aus den Augen verlieren."
+        },
+        {
+          "id": "a3",
+          "text": "Weil das System technisch zu komplex ist, um eine faire Verteilung der Arbeitsstunden zu garantieren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Flexibilität wird hier zur Falle, in der diejenige Person, die weniger Zeitressourcen besitzt, das Nachsehen hat, während diejenigen mit größerer zeitlicher Freiheit die 'bevorzugten' Kernzeiten besetzen können.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Tonfall von Dr. Webers Schreiben am besten beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sarkastisch und provokant."
+        },
+        {
+          "id": "a2",
+          "text": "Analytisch und besorgt."
+        },
+        {
+          "id": "a3",
+          "text": "Unterwürfig und hoffnungslos."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Mit besorgten Grüßen, Ihr Kollege, Dr. Hannes Weber.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Trugschluss' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Eine bewusste Täuschung der Schulleitung."
+        },
+        {
+          "id": "a2",
+          "text": "Ein logischer Fehler in der Stundenplanungslogik."
+        },
+        {
+          "id": "a3",
+          "text": "Eine falsche Schlussfolgerung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Es ist ein Trugschluss zu glauben, dass ein Markt der Zeitpräferenzen zu einer fairen Verteilung führt, wenn die Ausgangsbedingungen der Akteure diametral entgegengesetzt sind.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Verfassen Sie eine Antwort der Schulleitung, in der die Notwendigkeit der Flexibilität verteidigt wird, ohne die Bedenken von Dr. Weber vollständig zu ignorieren. Gehen Sie dabei auf das Spannungsfeld zwischen individueller Freiheit und institutioneller Gerechtigkeit ein.",
+      "en": "Verfassen Sie eine Antwort der Schulleitung, in der die Notwendigkeit der Flexibilität verteidigt wird, ohne die Bedenken von Dr. Weber vollständig zu ignorieren. Gehen Sie dabei auf das Spannungsfeld zwischen individueller Freiheit und institutioneller Gerechtigkeit ein."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysieren Sie den Text hinsichtlich der zugrunde liegenden Machtdynamik und der philosophischen Auseinandersetzung mit dem Begriff der Gerechtigkeit im Kontext schulischer Organisation.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Paradoxon der zeitlichen Autonomie | C2 Reading | WeLearn",
+      "en": "Das Paradoxon der zeitlichen Autonomie | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine kritische Korrespondenz zwischen der Schulleitung und einer Lehrkraft über die ethischen Implikationen flexibler Stundenpläne.",
+      "en": "Eine kritische Korrespondenz zwischen der Schulleitung und einer Lehrkraft über die ethischen Implikationen flexibler Stundenpläne."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

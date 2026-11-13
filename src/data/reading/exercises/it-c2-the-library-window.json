@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-library-window",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusione della soglia aperta",
+      "en": "L'illusione della soglia aperta"
+    },
+    "intro": {
+      "es": "Un racconto riflessivo sull'etica del lavoro invisibile dietro le istituzioni culturali.",
+      "en": "Un racconto riflessivo sull'etica del lavoro invisibile dietro le istituzioni culturali."
+    },
+    "mission": {
+      "es": "Analizzare le dinamiche di potere e la percezione del servizio pubblico attraverso una narrazione critica.",
+      "en": "Analizzare le dinamiche di potere e la percezione del servizio pubblico attraverso una narrazione critica."
+    },
+    "targetText": "Il crepuscolo si adagiava pesantemente sulla facciata neoclassica della Biblioteca Civica di Valchiusa, un edificio che, nel mio immaginario di bambino, era sempre apparso come un tempio dell'immortalità, immune al logorio del tempo. Adesso, osservando la luce fioca che filtrava dalle finestre alte, percepivo una dissonanza stridente tra la promessa di accoglienza perpetua e la realtà granulare del suo funzionamento. Ero lì per incontrare il Direttore, un uomo di nome Elio, la cui dedizione rasentava l'ascetismo, ma la cui visione mi appariva sempre più come una forma di negazione. Mentre varcavo la soglia, il silenzio non mi sembrò più una forma di rispetto, bensì il risultato di una soppressione sistematica. Elio mi attendeva nel suo ufficio, circondato da pile di volumi che sembravano minacciare di seppellirlo vivo. La sua voce, monocorde e priva di inflessioni, espose il nuovo piano di estensione dell'orario di apertura: la biblioteca sarebbe rimasta operativa fino a mezzanotte, sette giorni su sette. Non c'era traccia di entusiasmo nella sua enunciazione, solo una rassegnata adesione a un imperativo di efficienza che ignorava completamente la componente umana. La domanda mi morì sulle labbra: chi avrebbe pagato il prezzo di questa disponibilità infinita? La biblioteca, nella sua pretesa di essere un bene comune, stava trasformando il tempo dei suoi dipendenti in una risorsa estraibile, quasi fosse un giacimento minerario. Osservai una giovane archivista, Clara, intenta a riordinare gli scaffali con una lentezza che tradiva una stanchezza ancestrale. Lei non era un'istituzione, era un corpo che rispondeva a ritmi biologici, eppure il sistema la voleva trasparente, un ingranaggio che non doveva mai incepparsi. Il conflitto tra la missione di democratizzazione della cultura e lo sfruttamento del lavoro necessario per sostenerla si manifestava in quella penombra, dove le ombre si allungavano sui pavimenti di marmo consunto. Elio parlava di 'accessibilità democratica', ma le sue parole suonavano come un'astrazione burocratica che occultava la fatica di Clara. Non si trattava di un semplice problema di turni o di bilancio; era una questione ontologica. La biblioteca prometteva un accesso illimitato perché fingeva che il lavoro necessario a mantenerla fosse un'entità inerte, priva di bisogni. Questa negazione del lavoro era il pilastro su cui poggiava l'intera impalcatura del servizio pubblico. La tensione tra la mia ammirazione per lo spazio e il mio disgusto per la sua gestione divenne insopportabile. Quando chiesi a Elio come avrebbero gestito il benessere del personale, egli rispose con un sorriso vago, citando la missione dell'istituzione come se essa fosse un'entità superiore capace di assorbire ogni sofferenza individuale. Uscendo, incrociai lo sguardo di Clara; non c'era risentimento, solo una rassegnazione che mi colpì più di qualsiasi protesta. Quella notte, la biblioteca rimase accesa, un faro di conoscenza che brillava nel buio, ma per me non era più un tempio. Era un monumento alla nostra capacità di consumare l'esistenza altrui in nome di un ideale che, privato della sua base umana, non era altro che una facciata vuota. La porta si chiuse alle mie spalle con un clic metallico e definitivo, lasciandomi solo con la consapevolezza che ogni nostra conquista intellettuale è, in ultima istanza, il risultato di un sacrificio che ci ostiniamo a non voler vedere, preferendo l'illusione di una disponibilità eterna alla verità di una presenza umana, finita e fragile.\n\nTuttavia, riflettendo sulla strada del ritorno, mi resi conto che la mia indignazione rischiava di scivolare in un solipsismo sterile, una reazione emotiva che ignorava la complessità sistemica della questione. Se la biblioteca fosse rimasta chiusa per preservare il benessere dei suoi custodi, avrei forse contribuito a erigere barriere ancora più insormontabili, condannando chi non possiede alcuno spazio privato alla privazione intellettuale. La vera contraddizione non risiedeva nell'estensione dell'orario, bensì nella nostra incapacità collettiva di concepire un modello di servizio pubblico che non richiedesse il sacrificio del singolo come combustibile. Il paradosso si faceva atroce: rifiutare l'efficienza di Elio significava negare l'accesso alla cultura a chi, proprio in quegli orari marginali, cercava un riscatto sociale, ma accettarla implicava la complicità in un sistema estrattivo che consumava Clara. Questa tensione dialettica rivelava che la biblioteca non era un'istituzione neutrale, ma un campo di battaglia dove si scontravano diritti fondamentali apparentemente inconciliabili. Forse, la soluzione non era la chiusura, ma una radicale riconfigurazione del valore che attribuiamo al tempo di chi rende possibile la trasmissione del sapere. Finché continueremo a considerare il lavoro di cura e di archiviazione come un'infrastruttura invisibile, destinata a scomparire dietro l'oggetto culturale, la biblioteca rimarrà un simulacro di progresso. La sfida, dunque, non è scegliere tra il diritto allo studio e il diritto al riposo, ma pretendere una società in cui l'accesso alla conoscenza non sia subordinato alla mercificazione del tempo umano. Osservando le finestre illuminate che si allontanavano nel buio, compresi che il mio disgusto era solo l'inizio di una presa di coscienza necessaria: la cultura non è un bene che si consuma in solitudine, ma una rete di relazioni che deve proteggere chiunque vi partecipi. Se la biblioteca vuole essere davvero un tempio, deve smettere di essere un luogo di sacrificio e diventare uno spazio di reciprocità, dove il benessere di Clara sia considerato parte integrante del patrimonio che l'istituzione stessa dichiara di voler preservare per le generazioni future.",
+    "wordCount": 864,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "dissonanza",
+        "lemma": "dissonanza",
+        "glosses": {
+          "es": "A lack of harmony or agreement.",
+          "en": "A lack of harmony or agreement."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ascetismo",
+        "lemma": "ascetismo",
+        "glosses": {
+          "es": "Severe self-discipline and avoidance of all forms of indulgence.",
+          "en": "Severe self-discipline and avoidance of all forms of indulgence."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "estraibile",
+        "lemma": "estraibile",
+        "glosses": {
+          "es": "Capable of being extracted or removed.",
+          "en": "Capable of being extracted or removed."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontologica",
+        "lemma": "ontologica",
+        "glosses": {
+          "es": "Relating to the branch of metaphysics dealing with the nature of being.",
+          "en": "Relating to the branch of metaphysics dealing with the nature of being."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "impalcatura",
+        "lemma": "impalcatura",
+        "glosses": {
+          "es": "A structure or framework.",
+          "en": "A structure or framework."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inerte",
+        "lemma": "inerte",
+        "glosses": {
+          "es": "Lacking the ability or strength to move.",
+          "en": "Lacking the ability or strength to move."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto etico tra servizio pubblico e sfruttamento del lavoro."
+        },
+        {
+          "id": "a2",
+          "text": "La gestione burocratica delle biblioteche."
+        },
+        {
+          "id": "a3",
+          "text": "La necessità di modernizzare le istituzioni culturali."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il conflitto tra la missione di democratizzazione della cultura e lo sfruttamento del lavoro necessario per sostenerla si manifestava in quella penombra",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quale decisione ha preso Elio riguardo alla biblioteca?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Chiudere la struttura per lavori di restauro."
+        },
+        {
+          "id": "a2",
+          "text": "Estendere l'orario fino a mezzanotte ogni giorno."
+        },
+        {
+          "id": "a3",
+          "text": "Assumere nuovo personale per il turno notturno."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la biblioteca sarebbe rimasta operativa fino a mezzanotte, sette giorni su sette.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Cosa suggerisce l'autore riguardo alla percezione del lavoro da parte dell'istituzione?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il lavoro viene valorizzato come pilastro dell'istituzione."
+        },
+        {
+          "id": "a2",
+          "text": "Il lavoro è visto come un ostacolo alla modernizzazione."
+        },
+        {
+          "id": "a3",
+          "text": "Il lavoro è considerato una risorsa infinita e inerte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La biblioteca prometteva un accesso illimitato perché fingeva che il lavoro necessario a mantenerla fosse un'entità inerte, priva di bisogni.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'obiettivo principale del narratore nel descrivere l'incontro con Elio?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Denunciare l'ipocrisia di un'istituzione che ignora l'umanità dei suoi lavoratori in nome di un ideale astratto."
+        },
+        {
+          "id": "a2",
+          "text": "Proporre soluzioni pratiche per migliorare le condizioni di lavoro all'interno della biblioteca civica."
+        },
+        {
+          "id": "a3",
+          "text": "Analizzare le difficoltà tecniche incontrate dai direttori nel mantenere aperti gli edifici pubblici."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elio parlava di 'accessibilità democratica', ma le sue parole suonavano come un'astrazione burocratica che occultava la fatica di Clara.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono caratterizza la riflessione finale del narratore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e propositivo."
+        },
+        {
+          "id": "a2",
+          "text": "Malinconico e disilluso."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente e distaccato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "lasciandomi solo con la consapevolezza che ogni nostra conquista intellettuale è, in ultima istanza, il risultato di un sacrificio che ci ostiniamo a non voler vedere",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'ontologica' nel contesto del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Che riguarda esclusivamente le questioni economiche."
+        },
+        {
+          "id": "a2",
+          "text": "Che si riferisce a un errore di organizzazione interna."
+        },
+        {
+          "id": "a3",
+          "text": "Relativo alla natura stessa e all'essenza del problema."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Non si trattava di un semplice problema di turni o di bilancio; era una questione ontologica.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un saggio breve (300 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità dell'utente o al benessere del lavoratore, giustificando la tua posizione.",
+      "en": "Scrivi un saggio breve (300 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità dell'utente o al benessere del lavoratore, giustificando la tua posizione."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare le dinamiche di potere e la percezione del servizio pubblico attraverso una narrazione critica.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusione della soglia aperta | C2 Reading | WeLearn",
+      "en": "L'illusione della soglia aperta | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un racconto riflessivo sull'etica del lavoro invisibile dietro le istituzioni culturali.",
+      "en": "Un racconto riflessivo sull'etica del lavoro invisibile dietro le istituzioni culturali."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-local-stage",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Das Diktat der Kennzahlen: Wenn das Scheinwerferlicht erlischt",
+      "en": "Das Diktat der Kennzahlen: Wenn das Scheinwerferlicht erlischt"
+    },
+    "intro": {
+      "es": "Eine kritische Auseinandersetzung mit der Ökonomisierung des Gemeinschaftstheaters am Beispiel der fiktiven Spielstätte 'Bühne am Weidenbach'.",
+      "en": "Eine kritische Auseinandersetzung mit der Ökonomisierung des Gemeinschaftstheaters am Beispiel der fiktiven Spielstätte 'Bühne am Weidenbach'."
+    },
+    "mission": {
+      "es": "Analyse der Spannung zwischen künstlerischer Integrität und quantitativen Erfolgsmetriken im Kulturbetrieb.",
+      "en": "Analyse der Spannung zwischen künstlerischer Integrität und quantitativen Erfolgsmetriken im Kulturbetrieb."
+    },
+    "targetText": "In der beschaulichen Gemeinde Weidenbach galt die 'Bühne am Weidenbach' über Jahrzehnte als kulturelles Epizentrum, ein Ort, an dem das Unvollkommene zelebriert wurde. Als jedoch die neue Intendantin Dr. Elena Vesper ihr Amt antrat, änderte sich der Fokus drastisch. Ihr Credo war simpel: Relevanz bemisst sich an der Auslastungsquote. Der Bühnenmeister Hannes, ein Mann, der die Bretter der Bühne noch mit dem Hobel bearbeitet hatte, beobachtete mit Sorge, wie die subtile Dramaturgie anspruchsvoller Stücke zunehmend durch publikumswirksame Inszenierungen ersetzt wurde. Das Ensemble, einst ein Kollektiv aus Amateuren und lokalen Enthusiasten, sah sich plötzlich einem straffen Zeitplan und strengen Performance-Vorgaben gegenüber, die kaum Raum für das Experimentelle ließen. Die Spannung gipfelte in der Inszenierung von 'Der letzte Vorhang', einem Stück, das Vesper als Kassenschlager konzipiert hatte, während das Ensemble um die Hauptdarstellerin Clara eine radikale, minimalistische Interpretation anstrebte. Es war ein offener Konflikt zwischen der Vision einer Gemeinschaft, die sich in der Kunst spiegelt, und einer Führungskraft, die den Erfolg als statistisches Konstrukt begriff. Der Abend der Premiere verlief technisch makellos, doch die Atmosphäre im Saal war seltsam steril. Während Vesper die hohen Ticketverkäufe als Triumph der Professionalisierung feierte, saß das Ensemble in der Garderobe und spürte die Leere eines Sieges, der keine Resonanz im Inneren hinterließ. Das Publikum hatte zwar applaudiert, doch der Applaus klang wie eine höfliche Quittung für ein konsumiertes Produkt. Für Hannes war es der Moment, in dem er erkannte, dass die Bühne zwar ihre finanzielle Existenz gesichert hatte, aber ihre Seele in den Tabellen der Verwaltung verloren gegangen war. Die Konsequenz folgte prompt: Clara kündigte noch in derselben Nacht. Sie hinterließ eine Notiz, die besagte, dass eine Bühne ohne Risiko lediglich ein Schaufenster für Eitelkeiten sei. Vesper hingegen sah die Kündigung lediglich als eine Personalfluktuation, die durch neue Talente aus dem Umland kompensiert werden könne. Doch die Weidenbacher blieben aus. Nicht, weil das Stück schlecht gewesen wäre, sondern weil die Identifikation mit dem Ort erloschen war. Das Theater war zu einem funktionalen Raum geworden, in dem die Zuschauer zwar ihren Platz fanden, aber keine Heimat mehr. Die Leere in den Rängen der folgenden Wochen war das Resultat einer Entfremdung, die sich nicht durch Marketingkampagnen beheben ließ. Man hatte die Kunst auf das Maß des Messbaren reduziert und dabei übersehen, dass das Wesen des Gemeinschaftstheaters gerade in dem liegt, was sich jeder Statistik entzieht: das flüchtige, unberechenbare Moment der echten Begegnung zwischen Akteur und Publikum. Die 'Bühne am Weidenbach' existiert heute noch, doch sie ist eine Hülle, ein Ort, der zwar funktioniert, aber nicht mehr berührt. Die Zahlen stimmen, doch das Schweigen im Foyer ist ohrenbetäubend. Es ist ein mahnendes Beispiel für eine Kulturpolitik, die den Wert einer Institution nur noch in der Frequenz der Besuche und nicht in der Tiefe der Erfahrung misst. Am Ende bleibt die Erkenntnis, dass eine Bühne, die nur noch auf die Quantität schielt, zwangsläufig ihre Daseinsberechtigung verliert, sobald das Publikum spürt, dass es nur noch als statistische Größe in einem Kalkulationsmodell dient.\n\nDoch diese Entwicklung provozierte eine unerwartete Gegenbewegung, die weit über die Grenzen von Weidenbach hinausstrahlte und eine Debatte über die Kommerzialisierung lokaler Kultur entfachte. Während Dr. Vesper in ihrer nüchternen Logik verharrte, begannen die ehemaligen Ensemblemitglieder und die treuesten Stammgäste, in den Kellern und alten Scheunen der Gemeinde eine alternative Bühne zu etablieren, die sich bewusst jedem Effizienzdruck entzog. Dieser als 'Weidenbacher Untergrund' titulierte Zusammenschluss wurde zur Keimzelle eines radikalen künstlerischen Widerstands. Hier wurde nicht mehr für den Ticketverkauf geprobt, sondern für die Intensität des Augenblicks, wobei das Unperfekte und das Experimentelle wieder ins Zentrum rückten. Die Ironie der Geschichte wollte es, dass genau jene 'unprofessionelle' Leidenschaft, die Vesper aus ihrem Haus verbannt hatte, nun eine magnetische Anziehungskraft entwickelte, die weit über das ursprüngliche Publikum hinausreichte. Die Menschen sehnten sich nach der Authentizität, die in der sterilen Atmosphäre des offiziellen Theaters verloren gegangen war, und fanden sie in den improvisierten, rauen Aufführungen wieder. Es entstand eine paradoxe Situation: Während das offizielle Haus mit seinen makellosen, aber seelenlosen Inszenierungen um jede verkaufte Karte kämpfen musste, war der 'Untergrund' regelmäßig überbucht, obwohl es dort weder bequeme Sitze noch eine funktionierende Heizung gab. Diese Gegenbewegung bewies eindrucksvoll, dass Kultur kein Produkt ist, das man durch Optimierung der Prozesse beliebig skalieren kann, sondern ein lebendiger Organismus, der auf Vertrauen und gemeinsamer Teilhabe basiert. Die Bewohner Weidenbachs hatten intuitiv begriffen, dass ein Theater, das seine Risikobereitschaft verliert, seine gesellschaftliche Funktion einbüßt. Die Leere in der offiziellen 'Bühne am Weidenbach' wurde so zu einem Spiegelbild der verfehlten Strategie, während das neue, improvisierte Ensemble zum eigentlichen kulturellen Herzschlag der Gemeinde wurde. Es war ein Triumph des Unmessbaren über die nackte Statistik. Die Geschichte lehrte die Region, dass eine Institution, die nur noch als Dienstleister agiert, ihre moralische und künstlerische Autorität verwirkt. Letztlich blieb das offizielle Theater ein mahnendes Denkmal für eine Ära, in der man den Preis von allem und den Wert von nichts verstanden hatte. Die wahre Kunst hatte sich längst in die Schatten zurückgezogen, dorthin, wo das Risiko noch als notwendige Bedingung für die Wahrheit galt und wo das Publikum nicht als Konsument, sondern als Teil eines gemeinsamen, menschlichen Wagnisses begriffen wurde, das sich jeder ökonomischen Bilanzierung erfolgreich entzog.",
+    "wordCount": 855,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Epizentrum",
+        "lemma": "Epizentrum",
+        "glosses": {
+          "es": "center or focal point",
+          "en": "center or focal point"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Dramaturgie",
+        "lemma": "Dramaturgie",
+        "glosses": {
+          "es": "dramaturgy or narrative structure",
+          "en": "dramaturgy or narrative structure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "steril",
+        "lemma": "steril",
+        "glosses": {
+          "es": "sterile or lacking character",
+          "en": "sterile or lacking character"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Personalfluktuation",
+        "lemma": "Personalfluktuation",
+        "glosses": {
+          "es": "staff turnover",
+          "en": "staff turnover"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Entfremdung",
+        "lemma": "Entfremdung",
+        "glosses": {
+          "es": "alienation",
+          "en": "alienation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Daseinsberechtigung",
+        "lemma": "Daseinsberechtigung",
+        "glosses": {
+          "es": "justification for existence",
+          "en": "justification for existence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.9,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches zentrale Thema behandelt der Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Den Konflikt zwischen Kunst und Ökonomie."
+        },
+        {
+          "id": "a2",
+          "text": "Die technische Modernisierung von Bühnen."
+        },
+        {
+          "id": "a3",
+          "text": "Die Schwierigkeiten bei der Besetzung von Rollen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es war ein offener Konflikt zwischen der Vision einer Gemeinschaft, die sich in der Kunst spiegelt, und einer Führungskraft, die den Erfolg als statistisches Konstrukt begriff.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Was geschah nach der Premiere von 'Der letzte Vorhang'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Zuschauer protestierten lautstark."
+        },
+        {
+          "id": "a2",
+          "text": "Clara kündigte ihren Vertrag."
+        },
+        {
+          "id": "a3",
+          "text": "Die Intendantin trat von ihrem Amt zurück."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Clara kündigte noch in derselben Nacht.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Warum blieben die Zuschauer nach der Premiere aus?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Wegen der hohen Ticketpreise."
+        },
+        {
+          "id": "a2",
+          "text": "Wegen der mangelnden Qualität der Technik."
+        },
+        {
+          "id": "a3",
+          "text": "Wegen der fehlenden Identifikation."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Nicht, weil das Stück schlecht gewesen wäre, sondern weil die Identifikation mit dem Ort erloschen war.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Autor mit dieser Erzählung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er möchte vor den negativen Folgen einer rein quantitativen Erfolgsmessung in der Kultur warnen."
+        },
+        {
+          "id": "a2",
+          "text": "Er möchte die Notwendigkeit von Marketingstrategien für lokale Theaterhäuser unterstreichen."
+        },
+        {
+          "id": "a3",
+          "text": "Er möchte eine Anleitung geben, wie man ein Gemeinschaftstheater trotz sinkender Besucherzahlen rettet."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es ist ein mahnendes Beispiel für eine Kulturpolitik, die den Wert einer Institution nur noch in der Frequenz der Besuche und nicht in der Tiefe der Erfahrung misst.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Textes am besten beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sachlich und neutral."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und melancholisch."
+        },
+        {
+          "id": "a3",
+          "text": "Optimistisch und freudig."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Zahlen stimmen, doch das Schweigen im Foyer ist ohrenbetäubend.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Daseinsberechtigung' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die offizielle Erlaubnis, ein Gebäude zu nutzen."
+        },
+        {
+          "id": "a2",
+          "text": "Die finanzielle Absicherung durch staatliche Fördergelder für die Zukunft."
+        },
+        {
+          "id": "a3",
+          "text": "Die moralische oder funktionale Rechtfertigung für das Bestehen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Am Ende bleibt die Erkenntnis, dass eine Bühne, die nur noch auf die Quantität schielt, zwangsläufig ihre Daseinsberechtigung verliert",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Erörtern Sie in einem kurzen Essay, ob Kunstinstitutionen verpflichtet sind, sich an ökonomischen Erfolgsmetriken zu orientieren, oder ob dieser Ansatz zwangsläufig zum Verlust ihrer kulturellen Identität führt.",
+      "en": "Erörtern Sie in einem kurzen Essay, ob Kunstinstitutionen verpflichtet sind, sich an ökonomischen Erfolgsmetriken zu orientieren, oder ob dieser Ansatz zwangsläufig zum Verlust ihrer kulturellen Identität führt."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyse der Spannung zwischen künstlerischer Integrität und quantitativen Erfolgsmetriken im Kulturbetrieb.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Das Diktat der Kennzahlen: Wenn das Scheinwerferlicht erlischt | C2 Reading | WeLearn",
+      "en": "Das Diktat der Kennzahlen: Wenn das Scheinwerferlicht erlischt | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Eine kritische Auseinandersetzung mit der Ökonomisierung des Gemeinschaftstheaters am Beispiel der fiktiven Spielstätte 'Bühne am Weidenbach'.",
+      "en": "Eine kritische Auseinandersetzung mit der Ökonomisierung des Gemeinschaftstheaters am Beispiel der fiktiven Spielstätte 'Bühne am Weidenbach'."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

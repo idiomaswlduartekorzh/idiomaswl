@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "pt-c2-the-quiet-street",
+  "status": "draft",
+  "language": "pt",
+  "variant": "pt-BR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "portuguese C2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "pt",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "A Geometria do Silêncio: Ruído e Desigualdade na Metrópole",
+      "en": "A Geometria do Silêncio: Ruído e Desigualdade na Metrópole"
+    },
+    "intro": {
+      "es": "Este artigo explora a relação entre o planejamento urbano, o controle de ruído noturno e a marginalização silenciosa de bairros periféricos em uma metrópole fictícia.",
+      "en": "Este artigo explora a relação entre o planejamento urbano, o controle de ruído noturno e a marginalização silenciosa de bairros periféricos em uma metrópole fictícia."
+    },
+    "mission": {
+      "es": "Analisar as sutilezas retóricas do urbanismo contemporâneo e identificar como a gestão do tráfego noturno pode perpetuar desigualdades sociais sob o pretexto de harmonia urbana.",
+      "en": "Analisar as sutilezas retóricas do urbanismo contemporâneo e identificar como a gestão do tráfego noturno pode perpetuar desigualdades sociais sob o pretexto de harmonia urbana."
+    },
+    "targetText": "A calmaria que desce sobre o centro histórico de Vila Serena ao cair da noite não é um fenômeno natural, mas uma construção arquitetônica de intenções. Quando o prefeito, Heitor Valente, inaugurou o projeto 'Noites de Paz', a promessa era límpida: redirecionar o fluxo de carga pesada para contornar as áreas residenciais nobres, devolvendo aos moradores o direito ao sono ininterrupto. A retórica oficial, impregnada de um humanismo tecnocrático, celebrava a redução dos decibéis como uma vitória da civilização sobre a barbárie mecânica. No entanto, ao observar os mapas de calor sonoro que a arquiteta urbanista, Lívia Montenegro, compilou clandestinamente, percebe-se que o silêncio não foi eliminado, mas apenas transladado. O que se desenhou foi uma coreografia de exclusão, onde o ronco dos motores foi empurrado para as artérias periféricas do Bairro dos Operários, onde o asfalto é precário e a resistência política é, por definição, exausta.\n\nO conflito emergiu de forma silenciosa, quase imperceptível. Enquanto as elites de Vila Serena desfrutavam de jantares sob uma atmosfera quase monástica, os moradores do Bairro dos Operários começaram a notar uma vibração constante nas janelas durante a madrugada. A logística, antes distribuída de forma caótica e democrática pela cidade, tornou-se um feixe concentrado de ruído que atravessa as vias secundárias, onde a infraestrutura não foi projetada para suportar o peso de carretas de longo curso. A consequência foi uma degradação acelerada do pavimento e um aumento drástico nos índices de insônia e estresse crônico entre os trabalhadores que, por ironia, são os mesmos que mantêm a engrenagem da cidade em funcionamento durante o dia. A 'paz' de uns é, portanto, o custo operacional de outros, uma equação que o gabinete do prefeito insiste em ocultar sob a égide da eficiência logística.\n\nLívia Montenegro, ao confrontar Valente em uma audiência pública, utilizou a metáfora da 'geometria do silêncio'. Ela argumentou que o planejamento urbano atual não busca o bem-estar coletivo, mas a otimização da experiência sensorial das classes dominantes. O prefeito, por sua vez, defendeu-se alegando que a redistribuição era uma necessidade técnica, ditada pela fragilidade das ruas históricas do centro. Contudo, a falha lógica em sua argumentação reside na ausência de medidas mitigadoras para o Bairro dos Operários. Se a tecnologia permite o controle do tráfego, por que a inovação não foi aplicada para blindar acusticamente as novas rotas? A resposta é deliberadamente omitida: a invisibilidade sonora dos menos influentes é um subproduto conveniente da gestão da cidade.\n\nO desfecho desta política tornou-se evidente na última semana, quando o pavimento da Rua das Indústrias cedeu sob o peso de um comboio noturno, isolando o bairro por mais de doze horas. O incidente não foi apenas uma falha estrutural, mas o colapso simbólico do pacto de silêncio. A tensão atingiu um nível crítico: os moradores, antes divididos por questões laborais, uniram-se em um protesto que bloqueou a entrada principal da zona nobre. O paradoxo é absoluto: para reivindicar o direito ao silêncio, os habitantes da periferia precisaram gerar o maior ruído político que a cidade já presenciou. A gestão de Valente, acuada pela repercussão, viu-se obrigada a suspender o projeto, mas a semente da desconfiança foi plantada. A cidade descobriu que o silêncio, quando imposto, é apenas uma forma de violência que aguarda o momento de se tornar audível.\n\nAo final, a questão que permanece não é sobre a acústica, mas sobre a ética do espaço. A metrópole moderna opera sob uma lógica de transferência de ônus, onde o conforto é mercadoria de luxo e o ruído é o resíduo descartado nos quintais dos invisíveis. O projeto 'Noites de Paz' fracassou não por falta de técnica, mas por excesso de cinismo. Enquanto a política urbana tratar o território como uma folha de papel onde se movem peças de um jogo, sem considerar o peso humano que cada decisão carrega, a paz será sempre uma ilusão efêmera. A verdadeira harmonia urbana não reside no silenciamento de um setor, mas na distribuição equitativa das cargas que a vida moderna impõe. Vila Serena agora enfrenta o desafio de reconstruir não apenas o asfalto, mas a confiança em um pacto social que, por muito tempo, foi apenas uma fachada para a negligência.\n\nEsta reconfiguração forçada do tecido social em Vila Serena revela uma falha estrutural que transcende o urbanismo, expondo a fragilidade de uma democracia que delega a gestão do bem-estar a algoritmos de segregação. Ao tentar mitigar o impacto do ruído através da transferência de danos, a administração Valente não apenas exacerbou a desigualdade, mas também legitimou a percepção de que a infraestrutura urbana é um instrumento de estratificação, onde a qualidade de vida é definida pela localização geográfica. A resistência emergente dos moradores do Bairro dos Operários não é um evento isolado, mas o despertar de uma consciência coletiva que compreendeu, finalmente, que a ausência de som no centro histórico era a trilha sonora de sua própria marginalização. Este movimento, ao forçar a interrupção da rotina da elite, desafia a premissa de que a eficiência técnica deve prevalecer sobre a dignidade humana. O futuro da cidade depende agora da capacidade de seus gestores em transitar de uma lógica de otimização de espaços para uma ética de corresponsabilidade, onde o ruído da vida produtiva não seja visto como um estorvo a ser ocultado, mas como um elemento intrínseco da vitalidade urbana. A reconstrução do pacto social exigirá, inevitavelmente, que o silêncio deixe de ser um privilégio de poucos para se tornar um direito coletivo, garantido através de investimentos equitativos e de um diálogo que, ao contrário do projeto anterior, não tema a cacofonia das vozes antes silenciadas.",
+    "wordCount": 931,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "tecnocrático",
+        "lemma": "tecnocrático",
+        "glosses": {
+          "es": "Relating to a system governed by technical experts.",
+          "en": "Relating to a system governed by technical experts."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "transladado",
+        "lemma": "transladado",
+        "glosses": {
+          "es": "Moved from one place to another.",
+          "en": "Moved from one place to another."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "monástica",
+        "lemma": "monástica",
+        "glosses": {
+          "es": "Resembling the quiet or secluded life of a monastery.",
+          "en": "Resembling the quiet or secluded life of a monastery."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mitigadoras",
+        "lemma": "mitigadoras",
+        "glosses": {
+          "es": "Measures that reduce the severity or impact of something.",
+          "en": "Measures that reduce the severity or impact of something."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ônus",
+        "lemma": "ônus",
+        "glosses": {
+          "es": "A burden, responsibility, or heavy load.",
+          "en": "A burden, responsibility, or heavy load."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "efêmera",
+        "lemma": "efêmera",
+        "glosses": {
+          "es": "Lasting for a very short time.",
+          "en": "Lasting for a very short time."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 27.4,
+      "maxSentenceWords": 48,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:30:46.542Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual é o tema central abordado no texto sobre a gestão urbana de Vila Serena?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "A desigualdade na distribuição do ruído urbano."
+        },
+        {
+          "id": "a2",
+          "text": "A necessidade de modernizar as ruas históricas."
+        },
+        {
+          "id": "a3",
+          "text": "O sucesso do projeto Noites de Paz na cidade."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "O que se desenhou foi uma coreografia de exclusão, onde o ronco dos motores foi empurrado para as artérias periféricas do Bairro dos Operários",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "O que aconteceu na Rua das Indústrias que marcou o colapso do projeto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um protesto violento."
+        },
+        {
+          "id": "a2",
+          "text": "O asfalto cedeu."
+        },
+        {
+          "id": "a3",
+          "text": "O tráfego foi bloqueado."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "o pavimento da Rua das Indústrias cedeu sob o peso de um comboio noturno",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Por que a autora afirma que a paz em Vila Serena é uma ilusão?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Porque o prefeito não possui competência técnica para gerir o tráfego."
+        },
+        {
+          "id": "a2",
+          "text": "Porque a população não deseja o silêncio prometido pelo projeto."
+        },
+        {
+          "id": "a3",
+          "text": "Porque ela é baseada na transferência do sofrimento para áreas periféricas."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A 'paz' de uns é, portanto, o custo operacional de outros",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual foi o objetivo principal de Lívia Montenegro ao confrontar o prefeito?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Expor a injustiça espacial."
+        },
+        {
+          "id": "a2",
+          "text": "Propor novas rotas de tráfego."
+        },
+        {
+          "id": "a3",
+          "text": "Criticar o design das carretas."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ela argumentou que o planejamento urbano atual não busca o bem-estar coletivo, mas a otimização da experiência sensorial das classes dominantes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Qual é o tom predominante do autor ao descrever as ações da administração pública?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutro e analítico."
+        },
+        {
+          "id": "a2",
+          "text": "Cínico e crítico."
+        },
+        {
+          "id": "a3",
+          "text": "Otimista e esperançoso."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "O projeto 'Noites de Paz' fracassou não por falta de técnica, mas por excesso de cinismo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "No contexto do texto, o que significa a palavra 'ônus'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Um benefício financeiro direto."
+        },
+        {
+          "id": "a2",
+          "text": "Um plano de desenvolvimento urbano."
+        },
+        {
+          "id": "a3",
+          "text": "Uma carga ou responsabilidade."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "A metrópole moderna opera sob uma lógica de transferência de ônus",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Escreva um parágrafo argumentativo de 150 palavras discutindo se a tecnologia pode realmente resolver conflitos de desigualdade social ou se ela apenas mascara as raízes do problema, utilizando o exemplo da gestão de ruído como ponto de partida.",
+      "en": "Escreva um parágrafo argumentativo de 150 palavras discutindo se a tecnologia pode realmente resolver conflitos de desigualdade social ou se ela apenas mascara as raízes do problema, utilizando o exemplo da gestão de ruído como ponto de partida."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analisar as sutilezas retóricas do urbanismo contemporâneo e identificar como a gestão do tráfego noturno pode perpetuar desigualdades sociais sob o pretexto de harmonia urbana.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:30:46.542Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "A Geometria do Silêncio: Ruído e Desigualdade na Metrópole | C2 Reading | WeLearn",
+      "en": "A Geometria do Silêncio: Ruído e Desigualdade na Metrópole | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Este artigo explora a relação entre o planejamento urbano, o controle de ruído noturno e a marginalização silenciosa de bairros periféricos em uma metrópole fictícia.",
+      "en": "Este artigo explora a relação entre o planejamento urbano, o controle de ruído noturno e a marginalização silenciosa de bairros periféricos em uma metrópole fictícia."
+    },
+    "canonicalPath": "/en/practice/portuguese/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:30:46.542Z"
+  }
+}

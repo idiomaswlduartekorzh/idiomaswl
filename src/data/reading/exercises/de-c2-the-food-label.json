@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-food-label",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Semantik der Verschwendung: Eine Kritik der moralischen Auslagerung",
+      "en": "Die Semantik der Verschwendung: Eine Kritik der moralischen Auslagerung"
+    },
+    "intro": {
+      "es": "In diesem Text analysiert ein Kritiker die subtile Verschiebung der Verantwortung durch Kennzeichnungspraktiken in der Lebensmittelindustrie anhand eines spezifischen Vorfalls bei einer exklusiven Abendveranstaltung.",
+      "en": "In diesem Text analysiert ein Kritiker die subtile Verschiebung der Verantwortung durch Kennzeichnungspraktiken in der Lebensmittelindustrie anhand eines spezifischen Vorfalls bei einer exklusiven Abendveranstaltung."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam und analysieren Sie, wie die sprachliche Gestaltung von Etiketten nicht nur Information vermittelt, sondern moralische Zuständigkeiten neu definiert.",
+      "en": "Lesen Sie den Text aufmerksam und analysieren Sie, wie die sprachliche Gestaltung von Etiketten nicht nur Information vermittelt, sondern moralische Zuständigkeiten neu definiert."
+    },
+    "targetText": "Der Abend in der Galerie ‚Lumen‘ sollte eine glanzvolle Hommage an die lokale Kulinarik werden, doch er endete in einer stillen, fast greifbaren Spannung zwischen den Gastgebern und den geladenen Gästen. Im Zentrum des Konflikts stand nicht etwa die Qualität der Speisen, sondern das diskrete, fast unsichtbare Etikett auf den servierten Delikatessen. Die Kuratorin Elena Vossen hatte, in einem Anflug von modernem Bewusstsein, darauf bestanden, dass jede Speisekarte mit dem Vermerk ‚Verzehr in Eigenverantwortung nach Ablauf des optimalen Frischefensters‘ versehen wurde. Dieser Passus, der auf den ersten Blick wie eine transparente Information wirkte, entpuppte sich bei näherer Betrachtung als ein präzises Instrument der moralischen Auslagerung. Während die Gäste ihre Häppchen betrachteten, wurde die Atmosphäre schwer; man fühlte sich nicht mehr als Gast, sondern als Akteur in einem bürokratischen Risikomanagement-Prozess. Der Anspruch, durch Transparenz Verantwortung zu fördern, kippte in eine subtile Form der Entmündigung, bei der das Etikett die Last der Entscheidung vom Produzenten auf den Konsumenten verlagerte.\n\nDer Konflikt erreichte seinen Höhepunkt, als der renommierte Gastronom Marc Hoven das Wort ergriff. Er sah in dieser Kennzeichnung nicht den Fortschritt, sondern eine Bankrotterklärung der kulinarischen Sorgfalt. Hoven argumentierte, dass die Semantik der Frische durch solche Warnhinweise entwertet werde. Wenn ein Lebensmittelunternehmen oder ein Veranstalter die Verantwortung für den Zustand eines Produkts hinter einem juristisch abgesicherten Etikett verstecke, verliere das Vertrauensverhältnis zwischen demjenigen, der serviert, und demjenigen, der konsumiert, seine essenzielle Basis. Die Debatte spiegelte eine tieferliegende gesellschaftliche Entwicklung wider: Die Sprache der Information wird zunehmend genutzt, um Haftung zu minimieren, während der Schein von Aufklärung gewahrt bleibt. Vossen hingegen beharrte darauf, dass in einer komplexen Welt die Autonomie des Individuums gestärkt werden müsse. Sie sah in ihrer Kennzeichnung eine notwendige Aufklärung, die den Gast in die Lage versetze, informierte Entscheidungen zu treffen, anstatt sich auf die implizite Garantie des Gastgebers zu verlassen.\n\nDie rhetorische Finesse des Etiketts liegt in seiner scheinbaren Neutralität. Es ist ein klassisches Beispiel für eine ‚informative Entlastung‘, bei der die sprachliche Präzision die moralische Ambivalenz maskiert. Indem Vossen das ‚Frischefenster‘ definierte, schuf sie einen künstlichen Raum der Unsicherheit, in dem der Gast plötzlich zum Qualitätsprüfer degradiert wurde. Die Ironie dabei war offensichtlich: In dem Moment, in dem die Gäste über die Sicherheit der Speisen debattierten, verloren sie das Interesse am Genuss. Das Etikett fungierte als ein Filter, der die sinnliche Erfahrung durch eine analytische Distanz ersetzte. Die ursprüngliche Intention, Lebensmittelverschwendung durch Bewusstseinsbildung zu vermeiden, bewirkte das genaue Gegenteil: Die Gäste ließen die Speisen unberührt, aus einer vagen Furcht heraus, die durch das Etikett erst künstlich induziert worden war. Die moralische Verantwortung wurde so nicht geteilt, sondern in eine Sackgasse manövriert, in der niemand mehr die Entscheidung treffen wollte, die Speisen tatsächlich zu verzehren.\n\nMan muss sich fragen, ob wir uns in einer Ära befinden, in der die Sprache der Transparenz zur Verschleierung von Verantwortungsflucht instrumentalisiert wird. Die Kennzeichnung, die eigentlich Sicherheit suggerieren soll, erzeugt eine Atmosphäre der Vorsicht, die den sozialen Austausch erstickt. Wenn jede Geste des Konsums mit einem Disclaimer versehen wird, büßt die Gesellschaft ihre Fähigkeit zum impliziten Vertrauen ein. Hoven hatte recht, als er feststellte, dass ein Lebensmittel nicht nur aus chemischen Parametern besteht, sondern aus einem sozialen Versprechen. Dieses Versprechen wurde in der Galerie ‚Lumen‘ durch einen bürokratischen Akt ersetzt, der die Verantwortungslosigkeit hinter dem Deckmantel der informierten Wahl verbarg. Die Konsequenz war eine bittere: Am Ende des Abends landete ein Großteil der hochwertigen Speisen im Müll, exakt das Szenario, das Vossen durch ihre Kennzeichnung eigentlich verhindern wollte.\n\nDie Lehre aus diesem Abend ist ernüchternd. Die Verschiebung der moralischen Last durch sprachliche Konstrukte ist kein Akt der Befreiung, sondern ein Akt der Entfremdung. Wenn wir die Verantwortung für unsere Entscheidungen in die Hände von Etiketten legen, verlieren wir die Verbindung zu dem, was wir konsumieren. Die Debatte zwischen Vossen und Hoven war nicht nur ein Streit über die Haltbarkeit von Speisen, sondern ein Disput über die Integrität des sozialen Miteinanders. Solange wir die Sprache als Schutzschild gegen die eigene Verantwortung missbrauchen, werden wir die Probleme der Verschwendung nicht lösen, sondern sie lediglich in die Sphäre des individuellen Zweifels verlagern. Die Lösung liegt nicht in einer noch präziseren Kennzeichnung, sondern in der Wiederherstellung eines Vertrauens, das keine Etiketten benötigt, um Bestand zu haben.\n\nDie paradoxe Konsequenz dieses Abends offenbart ein tieferliegendes strukturelles Dilemma unserer modernen Konsumkultur, in der die Quantifizierung von Sicherheit das eigentliche Ziel der Qualitätssicherung konterkariert. Indem Vossen das Konzept der Eigenverantwortung isolierte, übersah sie, dass Vertrauen kein statischer Zustand ist, sondern ein dynamischer Prozess, der durch den expliziten Ausschluss von Haftung systematisch untergraben wird. Die Debatte verdeutlicht, dass der Versuch, ethische Dilemmata durch bürokratische Präzision zu lösen, unweigerlich zu einer Paralyse des Handelns führt. Wenn jede kulinarische Geste mit einem juristischen Vorbehalt belegt wird, verliert der Akt des Genießens seine soziale Unbeschwertheit und transformiert sich in eine risikobewusste Entscheidungssituation, die den Gast überfordert. Diese Entwicklung ist symptomatisch für eine Gesellschaft, die den Glauben an die intuitive Urteilskraft zugunsten einer scheinbar objektiven, jedoch entfremdenden Datenbasis aufgegeben hat. Statt einer echten Aufklärung über den Zustand der Ressourcen entstand eine Atmosphäre des Misstrauens, die das ursprüngliche Anliegen der Nachhaltigkeit ad absurdum führte. Letztlich zeigt sich, dass eine rein sprachliche Lösung für komplexe moralische Herausforderungen scheitern muss, sofern sie den zwischenmenschlichen Aspekt des Vertrauens ignoriert. Die Galerie ‚Lumen‘ wurde so zum Schauplatz einer entlarvenden Erkenntnis: Wahre Verantwortung lässt sich nicht delegieren, sondern muss in einem gemeinsamen Verständnis von Qualität und gegenseitiger Verpflichtung gelebt werden, anstatt sie hinter der vermeintlichen Neutralität technokratischer Etiketten zu verstecken, die den menschlichen Austausch in einer Welt voller Unsicherheiten eher behindern als fördern.",
+    "wordCount": 922,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Auslagerung",
+        "lemma": "Auslagerung",
+        "glosses": {
+          "es": "outsourcing",
+          "en": "outsourcing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Entmündigung",
+        "lemma": "Entmündigung",
+        "glosses": {
+          "es": "deprivation of legal capacity or autonomy",
+          "en": "deprivation of legal capacity or autonomy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Semantik",
+        "lemma": "Semantik",
+        "glosses": {
+          "es": "the study of meaning in language",
+          "en": "the study of meaning in language"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Ambivalenz",
+        "lemma": "Ambivalenz",
+        "glosses": {
+          "es": "the state of having mixed feelings or contradictory ideas",
+          "en": "the state of having mixed feelings or contradictory ideas"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "instrumentalisiert",
+        "lemma": "instrumentalisiert",
+        "glosses": {
+          "es": "exploited or used as a tool for a specific purpose",
+          "en": "exploited or used as a tool for a specific purpose"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Integrität",
+        "lemma": "Integrität",
+        "glosses": {
+          "es": "the quality of being honest and having strong moral principles",
+          "en": "the quality of being honest and having strong moral principles"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.1,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Was ist das zentrale Thema des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die problematische Verschiebung moralischer Verantwortung durch Etiketten."
+        },
+        {
+          "id": "a2",
+          "text": "Die Notwendigkeit strengerer Gesetze für Lebensmittel."
+        },
+        {
+          "id": "a3",
+          "text": "Der kulinarische Erfolg der Galerie Lumen bei der Abendveranstaltung."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Dieser Passus, der auf den ersten Blick wie eine transparente Information wirkte, entpuppte sich bei näherer Betrachtung als ein präzises Instrument der moralischen Auslagerung.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum blieben die Speisen am Ende des Abends unberührt?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Gäste waren zu satt."
+        },
+        {
+          "id": "a2",
+          "text": "Die Gäste hatten Angst vor dem Verzehr."
+        },
+        {
+          "id": "a3",
+          "text": "Die Speisen waren verdorben."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die Gäste ließen die Speisen unberührt, aus einer vagen Furcht heraus, die durch das Etikett erst künstlich induziert worden war.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Wie bewertet der Autor die Haltung von Elena Vossen?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er hält sie für eine notwendige Pionierin der Transparenz."
+        },
+        {
+          "id": "a2",
+          "text": "Er bewundert ihre juristische Präzision in der Kennzeichnung."
+        },
+        {
+          "id": "a3",
+          "text": "Er sieht in ihrem Handeln eine unfreiwillige Förderung der Verschwendung."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die ursprüngliche Intention, Lebensmittelverschwendung durch Bewusstseinsbildung zu vermeiden, bewirkte das genaue Gegenteil: Die Gäste ließen die Speisen unberührt",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Welches Ziel verfolgt der Autor mit der Darstellung des Konflikts zwischen Vossen und Hoven?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er will die philosophische Dimension der Verantwortungsübertragung im sozialen Kontext aufzeigen."
+        },
+        {
+          "id": "a2",
+          "text": "Er möchte den Leser von der Notwendigkeit einer neuen Kennzeichnungsverordnung überzeugen."
+        },
+        {
+          "id": "a3",
+          "text": "Er versucht, den Leser davon zu überzeugen, dass Gastronomen immer die volle Verantwortung tragen sollten."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Die Debatte zwischen Vossen und Hoven war nicht nur ein Streit über die Haltbarkeit von Speisen, sondern ein Disput über die Integrität des sozialen Miteinanders.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Wie lässt sich der Ton des Autors beschreiben?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sachlich und neutral."
+        },
+        {
+          "id": "a2",
+          "text": "Kritisch und reflektiert."
+        },
+        {
+          "id": "a3",
+          "text": "Aggressiv und polemisch."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Man muss sich fragen, ob wir uns in einer Ära befinden, in der die Sprache der Transparenz zur Verschleierung von Verantwortungsflucht instrumentalisiert wird.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'Entmündigung' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Stärkung der persönlichen Wahlfreiheit."
+        },
+        {
+          "id": "a2",
+          "text": "Die rechtliche Befreiung von jeglicher Haftung."
+        },
+        {
+          "id": "a3",
+          "text": "Der Verlust der eigenen Entscheidungskompetenz."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Der Anspruch, durch Transparenz Verantwortung zu fördern, kippte in eine subtile Form der Entmündigung, bei der das Etikett die Last der Entscheidung vom Produzenten auf den Konsumenten verlagerte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie eine argumentative Stellungnahme (ca. 250 Wörter), in der Sie erörtern, ob die zunehmende Kennzeichnungspflicht in der modernen Gesellschaft die Autonomie des Einzelnen stärkt oder lediglich eine Form der bürokratischen Absicherung darstellt.",
+      "en": "Schreiben Sie eine argumentative Stellungnahme (ca. 250 Wörter), in der Sie erörtern, ob die zunehmende Kennzeichnungspflicht in der modernen Gesellschaft die Autonomie des Einzelnen stärkt oder lediglich eine Form der bürokratischen Absicherung darstellt."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lesen Sie den Text aufmerksam und analysieren Sie, wie die sprachliche Gestaltung von Etiketten nicht nur Information vermittelt, sondern moralische Zuständigkeiten neu definiert.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Semantik der Verschwendung: Eine Kritik der moralischen Auslagerung | C2 Reading | WeLearn",
+      "en": "Die Semantik der Verschwendung: Eine Kritik der moralischen Auslagerung | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "In diesem Text analysiert ein Kritiker die subtile Verschiebung der Verantwortung durch Kennzeichnungspraktiken in der Lebensmittelindustrie anhand eines spezifischen Vorfalls bei einer exklusiven Abendveranstaltung.",
+      "en": "In diesem Text analysiert ein Kritiker die subtile Verschiebung der Verantwortung durch Kennzeichnungspraktiken in der Lebensmittelindustrie anhand eines spezifischen Vorfalls bei einer exklusiven Abendveranstaltung."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Il miraggio della gratuità: la soglia invisibile del Museo Aethelgard",
+      "en": "Il miraggio della gratuità: la soglia invisibile del Museo Aethelgard"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla retorica dell'accesso gratuito e le sue implicazioni socio-economiche nel contesto museale contemporaneo.",
+      "en": "Un'analisi critica sulla retorica dell'accesso gratuito e le sue implicazioni socio-economiche nel contesto museale contemporaneo."
+    },
+    "mission": {
+      "es": "Analizzare come il concetto di 'gratuito' possa celare barriere d'ingresso non monetarie, influenzando la composizione sociale dei visitatori.",
+      "en": "Analizzare come il concetto di 'gratuito' possa celare barriere d'ingresso non monetarie, influenzando la composizione sociale dei visitatori."
+    },
+    "targetText": "La recente inaugurazione della mostra 'Silenzi di Pietra' presso il Museo Aethelgard è stata salutata dal direttore, il dottor Valerius Thorne, come un trionfo della democrazia culturale. Thorne ha insistito, in ogni comunicato stampa e intervista, sulla natura radicalmente gratuita dell'iniziativa, presentandola come una rottura definitiva con le politiche di elitarismo che hanno storicamente caratterizzato le istituzioni museali cittadine. Tuttavia, osservando il flusso dei visitatori durante la serata di apertura, emerge una discrepanza stridente tra la retorica dell'accessibilità e la realtà sociologica dell'evento. Mentre il prezzo del biglietto è stato effettivamente azzerato, il costo dell'arrivo — inteso non solo come onere economico del trasporto, ma come capitale sociale e culturale richiesto per sentirsi legittimati a varcare quella soglia — rimane una barriera insormontabile. La gratuità si rivela, in questo contesto, un significante vuoto: un'etichetta che assolve l'istituzione dal peso di interrogarsi su chi sia realmente escluso e perché.\n\nLa curatrice della sezione contemporanea, Elena Vance, ha difeso strenuamente la decisione di mantenere l'evento in orari serali, sostenendo che ciò favorirebbe la partecipazione dei lavoratori. Eppure, la logistica dell'evento ha tradito questa intenzione. La mancanza di trasporti pubblici efficienti dopo le ventidue e la necessità di una prenotazione digitale complessa hanno agito come filtri selettivi, favorendo esclusivamente coloro che possiedono mezzi di trasporto privati e una dimestichezza tecnologica consolidata. Durante il mio sopralluogo, ho notato come il pubblico fosse composto quasi interamente da un'élite intellettuale urbana, perfettamente a suo agio negli spazi asettici del museo. La gratuità del biglietto, lungi dal democratizzare lo spazio, ha semplicemente spostato il costo dell'accesso su altri livelli, rendendo la partecipazione un privilegio mascherato da bene pubblico.\n\nIl conflitto è esploso quando un gruppo di attivisti locali ha tentato di distribuire volantini all'ingresso, contestando la natura 'esclusiva' della gratuità. Thorne ha reagito con una freddezza burocratica, definendo l'azione come un disturbo alla quiete estetica del museo. In quel momento, la maschera è caduta: la gratuità non era un invito al dialogo, ma un dispositivo di controllo. Il museo si è trasformato in un santuario protetto, dove l'assenza di un prezzo d'entrata serviva a validare moralmente l'istituzione, rendendo ogni critica esterna non solo sgradita, ma percepita come un'aggressione ingiustificata contro un atto di presunta generosità. La tensione tra l'apertura formale e la chiusura sostanziale ha trasformato l'evento in una rappresentazione di potere, dove il visitatore è ospite solo se rispetta i codici comportamentali imposti dall'élite curatoriale.\n\nLa questione fondamentale che il Museo Aethelgard solleva è se il concetto di 'gratuito' possa davvero esistere in un sistema che valorizza il tempo e lo spazio in base allo status. Se l'accesso è gratuito, ma il costo dell'arrivo — inteso come la somma di tempo, mobilità, preparazione culturale e senso di appartenenza — è proibitivo, allora la gratuità diventa un'arma retorica. Serve a tacitare le coscienze dei gestori culturali e a creare una narrazione in cui l'esclusione non è più colpa dell'istituzione, ma una scelta del cittadino che 'non ha saputo cogliere l'opportunità'. Questa è la perversione ultima della gratuità: trasformare un diritto di accesso in un favore concesso, dove il beneficiario deve dimostrare di meritare lo spazio anche quando non paga per entrarvi.\n\nIn conclusione, l'esperienza del Museo Aethelgard dimostra come la gratuità, se non accompagnata da una politica di inclusione radicale e da una riflessione profonda sui costi impliciti dell'accesso, finisca per consolidare le gerarchie esistenti. La serata si è chiusa con un silenzio imbarazzante, rotto solo dal brusio di chi, soddisfatto della propria esclusività, celebrava il successo di una mostra che, pur essendo aperta a tutti, non era pensata per nessuno. L'amarezza di questa constatazione risiede nell'evidenza che, finché il museo rimarrà uno spazio di validazione dello status, la gratuità non sarà altro che un velo di Maya, un inganno estetico che nasconde le mura invisibili che ancora separano la cultura istituzionale dalla vita reale delle persone.\n\nTuttavia, ipotizzare che il superamento di tali barriere logistiche possa, di per sé, risolvere la frattura tra istituzione e cittadinanza sarebbe un'ulteriore semplificazione, quasi un'illusione tecnocratica. Anche qualora il Museo Aethelgard implementasse navette gratuite o interfacce di prenotazione semplificate, il nodo gordiano rimarrebbe l'invisibile semantica dello spazio museale, che continua a imporre un'estetica del silenzio e della contemplazione distaccata, aliena a molte forme di espressione popolare. La vera sfida non risiede dunque nella rimozione degli ostacoli materiali, quanto nella decostruzione dei codici di comportamento che il museo esige dai propri frequentatori. Se l'istituzione non è disposta a cedere la propria autorità curatoriale, permettendo che le comunità esterne non solo visitino, ma co-creino il significato stesso delle opere esposte, la gratuità resterà una concessione paternalistica. Si rischia, paradossalmente, di trasformare il museo in un presidio di gentrificazione culturale, dove l'accesso è formalmente garantito ma sostanzialmente svuotato di senso per chi non possiede il lessico necessario per decodificare le 'pietre' del dottor Thorne. Il rischio è che, eliminando le barriere economiche senza scardinare quelle simboliche, si finisca per validare un modello di fruizione che premia esclusivamente chi ha già interiorizzato il valore del museo come tempio sacro del sapere. In ultima analisi, la gratuità senza una reale democratizzazione del potere decisionale si rivela un atto di conservazione dello status quo, un'operazione di facciata che, lungi dal riconciliare il museo con la periferia, ne sancisce la definitiva, seppur elegante, irrilevanza sociale rispetto ai bisogni e alle urgenze di una cittadinanza che non cerca più un santuario, ma un luogo di confronto autentico, vivo e, soprattutto, paritario.",
+    "wordCount": 903,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "stridente",
+        "lemma": "stridente",
+        "glosses": {
+          "es": "jarring or clashing",
+          "en": "jarring or clashing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "significante",
+        "lemma": "significante",
+        "glosses": {
+          "es": "signifier",
+          "en": "signifier"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dimestichezza",
+        "lemma": "dimestichezza",
+        "glosses": {
+          "es": "familiarity or proficiency",
+          "en": "familiarity or proficiency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dispositivo",
+        "lemma": "dispositivo",
+        "glosses": {
+          "es": "mechanism or device",
+          "en": "mechanism or device"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tacitare",
+        "lemma": "tacitare",
+        "glosses": {
+          "es": "to silence or appease",
+          "en": "to silence or appease"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "perversione",
+        "lemma": "perversione",
+        "glosses": {
+          "es": "perversion or corruption",
+          "en": "perversion or corruption"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 31.1,
+      "maxSentenceWords": 66,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è la tesi centrale dell'autore riguardo alla gratuità museale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È un mezzo per nascondere barriere reali."
+        },
+        {
+          "id": "a2",
+          "text": "La gratuità è un fallimento totale."
+        },
+        {
+          "id": "a3",
+          "text": "Favorisce solo le classi meno abbienti."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La gratuità si rivela, in questo contesto, un significante vuoto: un'etichetta che assolve l'istituzione dal peso di interrogarsi su chi sia realmente escluso e perché.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quali elementi hanno limitato l'accesso ai lavoratori?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il costo elevato dei biglietti serali."
+        },
+        {
+          "id": "a2",
+          "text": "La mancanza di trasporti e la complessità digitale."
+        },
+        {
+          "id": "a3",
+          "text": "La chiusura anticipata del museo."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La mancanza di trasporti pubblici efficienti dopo le ventidue e la necessità di una prenotazione digitale complessa hanno agito come filtri selettivi",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Come percepisce il dottor Thorne le proteste degli attivisti?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Come un contributo necessario al dibattito."
+        },
+        {
+          "id": "a2",
+          "text": "Come una richiesta di fondi aggiuntivi."
+        },
+        {
+          "id": "a3",
+          "text": "Come una minaccia alla quiete estetica."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Thorne ha reagito con una freddezza burocratica, definendo l'azione come un disturbo alla quiete estetica del museo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è il fine ultimo dell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Criticare la retorica della gratuità."
+        },
+        {
+          "id": "a2",
+          "text": "Promuovere il Museo Aethelgard."
+        },
+        {
+          "id": "a3",
+          "text": "Analizzare l'architettura dei musei."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La questione fondamentale che il Museo Aethelgard solleva è se il concetto di 'gratuito' possa davvero esistere in un sistema che valorizza il tempo e lo spazio in base allo status.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale termine descrive meglio il tono del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indignato e sarcastico."
+        },
+        {
+          "id": "a2",
+          "text": "Analitico e disilluso."
+        },
+        {
+          "id": "a3",
+          "text": "Entusiasta e ottimista."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'amarezza di questa constatazione risiede nell'evidenza che, finché il museo rimarrà uno spazio di validazione dello status, la gratuità non sarà altro che un velo di Maya",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con 'tacitare le coscienze'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Aumentare il profitto."
+        },
+        {
+          "id": "a2",
+          "text": "Appacificare il pubblico."
+        },
+        {
+          "id": "a3",
+          "text": "Silenziare le critiche."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Serve a tacitare le coscienze dei gestori culturali e a creare una narrazione in cui l'esclusione non è più colpa dell'istituzione",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Redigi un breve saggio critico in cui discuti se, secondo la tua opinione, la gratuità dei servizi pubblici (musei, trasporti, istruzione) sia sempre sinonimo di uguaglianza, o se essa possa talvolta nascondere forme di elitarismo strutturale, citando esempi tratti dalla tua esperienza personale.",
+      "en": "Redigi un breve saggio critico in cui discuti se, secondo la tua opinione, la gratuità dei servizi pubblici (musei, trasporti, istruzione) sia sempre sinonimo di uguaglianza, o se essa possa talvolta nascondere forme di elitarismo strutturale, citando esempi tratti dalla tua esperienza personale."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare come il concetto di 'gratuito' possa celare barriere d'ingresso non monetarie, influenzando la composizione sociale dei visitatori.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Il miraggio della gratuità: la soglia invisibile del Museo Aethelgard | C2 Reading | WeLearn",
+      "en": "Il miraggio della gratuità: la soglia invisibile del Museo Aethelgard | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla retorica dell'accesso gratuito e le sue implicazioni socio-economiche nel contesto museale contemporaneo.",
+      "en": "Un'analisi critica sulla retorica dell'accesso gratuito e le sue implicazioni socio-economiche nel contesto museale contemporaneo."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

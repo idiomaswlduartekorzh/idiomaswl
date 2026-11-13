@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'Eredità dell'Inchiostro",
+      "en": "L'Eredità dell'Inchiostro"
+    },
+    "intro": {
+      "es": "Un'esplorazione narrativa sul potere cartografico di nominare e cancellare la memoria collettiva di un territorio.",
+      "en": "Un'esplorazione narrativa sul potere cartografico di nominare e cancellare la memoria collettiva di un territorio."
+    },
+    "mission": {
+      "es": "Analizzare come la cartografia non sia mai neutra, ma un atto di selezione culturale che definisce l'identità di un luogo.",
+      "en": "Analizzare come la cartografia non sia mai neutra, ma un atto di selezione culturale che definisce l'identità di un luogo."
+    },
+    "targetText": "Elias Thorne sedeva nel suo studio polveroso, circondato da pergamene ingiallite che sussurravano storie di confini mai tracciati. Il suo compito, commissionato dal comitato di conservazione della valle di Oltremonte, era quello di redigere la nuova mappa ufficiale del distretto. Tuttavia, Elias non era un semplice geometra; era un custode di memorie. Mentre la sua penna d'oca sfiorava la carta fatta a mano, si soffermò sul nome di un piccolo valico montano: 'Passo del Silenzio'. Per i locali, quel luogo era noto come 'Gola dei Ribelli', un appellativo che portava con sé l'eco di una rivolta contadina dimenticata dai libri di storia ufficiali. Elias sapeva che il comitato esigeva nomi che evocassero stabilità e armonia, termini che potessero attirare investitori e turisti, non certo il ricordo di conflitti sociali. La tensione tra la precisione topografica e la verità storica si manifestava in ogni tratto di inchiostro, rendendo la mappa una sorta di palinsesto dove il passato veniva stratificato e, inevitabilmente, edulcorato.\n\nLa controversia emerse durante una cena formale con il sindaco Valerius, un uomo che vedeva la geografia solo come una risorsa economica. Valerius sosteneva che la toponomastica fosse uno strumento di branding, capace di trasformare un luogo selvaggio in una destinazione accogliente. Elias, al contrario, sosteneva che rinominare un luogo significasse amputare una parte dell'anima di chi lo abita. Il sindaco insisteva affinché ogni riferimento a battaglie o discordie venisse rimosso, temendo che la memoria potesse inibire la crescita. Elias notò come il sindaco parlasse con una sicurezza quasi feroce, come se potesse cancellare secoli di storia con un semplice decreto amministrativo. Questa divergenza non era solo estetica, ma etica: si trattava di decidere se una mappa dovesse essere un documento di verità o un manifesto di propaganda per il futuro.\n\nIl conflitto raggiunse il culmine quando Elias scoprì che il comitato aveva già preparato una lista di nomi sostitutivi per ogni sentiero e ruscello della valle. 'Valle dei Fiori' al posto di 'Valle delle Ossa', 'Ponte Sereno' per sostituire il 'Ponte degli Esiliati'. Elias si sentì come un traditore della sua stessa professione. La sua mano tremava mentre tracciava le linee di demarcazione. Sapeva che, una volta stampata, la mappa sarebbe diventata la realtà percepita dalle generazioni future. La sua sfida non era più solo tecnica, ma filosofica: poteva lui, un uomo solo, opporsi a una narrazione collettiva imposta dall'alto? La tentazione di inserire nomi criptici, quasi invisibili, che solo chi conosceva la storia avrebbe potuto decifrare, divenne il suo unico rifugio contro la censura istituzionale.\n\nUna notte, mentre la pioggia batteva contro le finestre, Elias prese una decisione drastica. Invece di cedere completamente, decise di inserire dei micro-toponimi, quasi impercettibili, che richiamavano le antiche denominazioni. Erano segni grafici così sottili da sembrare imperfezioni della carta o venature del terreno. Era un atto di resistenza silenziosa, un modo per preservare la memoria senza sfidare apertamente l'autorità del sindaco. Sapeva che, se scoperti, la sua carriera sarebbe finita, ma sentiva che la sua integrità professionale dipendeva da quel gesto. La mappa, così concepita, non era più solo uno strumento di orientamento, ma una testimonianza di una lotta sotterranea tra il potere e il ricordo.\n\nIl mattino seguente, quando consegnò il lavoro finito, il sindaco Valerius esaminò la mappa con meticolosa attenzione. Non notò nulla di insolito; i nomi erano quelli approvati, l'estetica era impeccabile. Elias osservò il sindaco mentre approvava il documento, sentendo un misto di sollievo e malinconia. La sua piccola ribellione era rimasta sepolta tra le pieghe dell'inchiostro, un segreto che solo lui e la terra potevano comprendere. La mappa era ora ufficiale, un documento che prometteva ordine ma che nascondeva, sotto la superficie, la verità di un passato che non voleva essere dimenticato. La tensione rimaneva irrisolta, sospesa tra la menzogna stampata e la realtà vissuta, in un equilibrio precario che solo il tempo avrebbe potuto eventualmente scardinare.\n\nTuttavia, col passare dei mesi, l'effetto paradossale di tale inganno divenne evidente: la mappa, pur essendo formalmente conforme alle direttive del sindaco, iniziò a generare un senso di inquietudine inspiegabile tra i nuovi visitatori. Molti turisti, consultando le linee eleganti e i nomi rassicuranti, riferivano di percepire una strana dissonanza cognitiva, come se il paesaggio reale non corrispondesse affatto a quello descritto, creando un disorientamento che andava ben oltre la semplice topografia. La terra stessa sembrava rifiutare l'imposizione nominale, rendendo i sentieri più impervi e le valli più mutevoli di quanto i calcoli di Valerius avessero previsto. La memoria storica, lungi dall'essere stata cancellata, si era trasformata in una forza tellurica che influenzava la percezione collettiva, alimentando leggende metropolitane su luoghi che, pur chiamati 'sereni', emanavano un'aura di solenne malinconia. Elias, osservando da lontano le conseguenze del suo atto, comprese che la realtà non è un oggetto malleabile che si lascia definire da un decreto, ma un organismo vivente che conserva le proprie cicatrici. Il tentativo di edulcorare la geografia aveva prodotto un'alienazione profonda: i residenti, sentendosi estranei ai nomi imposti, iniziarono a riscoprire le antiche leggende, rendendo la mappa ufficiale un mero oggetto da esposizione, privo di utilità pratica. La vittoria di Valerius si rivelò dunque una sconfitta strategica, poiché la negazione del passato non aveva creato ordine, ma un vuoto semantico che la popolazione riempiva con le storie proibite, trasformando ogni escursionista in un esploratore di un passato che, nonostante la censura, continuava a pulsare con una vitalità inaspettata sotto la superficie patinata del presente.",
+    "wordCount": 899,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "palinsesto",
+        "lemma": "palinsesto",
+        "glosses": {
+          "es": "a manuscript or piece of writing material on which the original writing has been effaced to make room for later writing",
+          "en": "a manuscript or piece of writing material on which the original writing has been effaced to make room for later writing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "toponomastica",
+        "lemma": "toponomastica",
+        "glosses": {
+          "es": "the study of place names",
+          "en": "the study of place names"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "amputare",
+        "lemma": "amputare",
+        "glosses": {
+          "es": "to cut off or remove a part",
+          "en": "to cut off or remove a part"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "edulcorato",
+        "lemma": "edulcorato",
+        "glosses": {
+          "es": "sweetened or softened to make something more palatable",
+          "en": "sweetened or softened to make something more palatable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "micro-toponimi",
+        "lemma": "micro-toponimi",
+        "glosses": {
+          "es": "small-scale or minor place names",
+          "en": "small-scale or minor place names"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scardinare",
+        "lemma": "scardinare",
+        "glosses": {
+          "es": "to unhinge, dismantle, or disrupt",
+          "en": "to unhinge, dismantle, or disrupt"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.1,
+      "maxSentenceWords": 57,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale del racconto?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il conflitto tra cartografia e memoria."
+        },
+        {
+          "id": "a2",
+          "text": "La creazione di una nuova città."
+        },
+        {
+          "id": "a3",
+          "text": "La storia della valle di Oltremonte."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La tensione tra la precisione topografica e la verità storica si manifestava in ogni tratto di inchiostro, rendendo la mappa una sorta di palinsesto dove il passato veniva stratificato e, inevitabilmente, edulcorato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa intende fare il sindaco Valerius con la mappa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Usarla per scopi militari."
+        },
+        {
+          "id": "a2",
+          "text": "Usarla come strumento di branding."
+        },
+        {
+          "id": "a3",
+          "text": "Distruggerla per nascondere il passato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Valerius sosteneva che la toponomastica fosse uno strumento di branding, capace di trasformare un luogo selvaggio in una destinazione accogliente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché Elias decide di inserire dei nomi quasi invisibili?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Per errore tecnico."
+        },
+        {
+          "id": "a2",
+          "text": "Per decorazione grafica."
+        },
+        {
+          "id": "a3",
+          "text": "Per sfida alla censura."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Era un atto di resistenza silenziosa, un modo per preservare la memoria senza sfidare apertamente l'autorità del sindaco.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del narratore nel descrivere l'atto di Elias?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenziare la natura politica della cartografia."
+        },
+        {
+          "id": "a2",
+          "text": "Mostrare la fragilità umana."
+        },
+        {
+          "id": "a3",
+          "text": "Descrivere una tecnica di disegno antico."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La mappa, così concepita, non era più solo uno strumento di orientamento, ma una testimonianza di una lotta sotterranea tra il potere e il ricordo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono pervade la narrazione finale?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Trionfante."
+        },
+        {
+          "id": "a2",
+          "text": "Malinconico."
+        },
+        {
+          "id": "a3",
+          "text": "Indifferente."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elias osservò il sindaco mentre approvava il documento, sentendo un misto di sollievo e malinconia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa significa il termine 'edulcorato' nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Reso più complesso e difficile."
+        },
+        {
+          "id": "a2",
+          "text": "Reso più preciso e scientifico."
+        },
+        {
+          "id": "a3",
+          "text": "Reso più dolce o attenuato."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "la mappa una sorta di palinsesto dove il passato veniva stratificato e, inevitabilmente, edulcorato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio critico (200 parole) in cui discuti se la scelta di Elias di inserire micro-toponimi sia un atto di integrità etica o una forma di disonestà professionale verso il suo committente.",
+      "en": "Scrivi un breve saggio critico (200 parole) in cui discuti se la scelta di Elias di inserire micro-toponimi sia un atto di integrità etica o una forma di disonestà professionale verso il suo committente."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare come la cartografia non sia mai neutra, ma un atto di selezione culturale che definisce l'identità di un luogo.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'Eredità dell'Inchiostro | C2 Reading | WeLearn",
+      "en": "L'Eredità dell'Inchiostro | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'esplorazione narrativa sul potere cartografico di nominare e cancellare la memoria collettiva di un territorio.",
+      "en": "Un'esplorazione narrativa sul potere cartografico di nominare e cancellare la memoria collettiva di un territorio."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

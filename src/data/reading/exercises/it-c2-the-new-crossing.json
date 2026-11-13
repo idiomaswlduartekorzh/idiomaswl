@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-new-crossing",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'invisibilità dell'assenza: l'ontologia del pericolo sventato",
+      "en": "L'invisibilità dell'assenza: l'ontologia del pericolo sventato"
+    },
+    "intro": {
+      "es": "Un'analisi filosofica e narrativa sulla natura dell'evidenza quando un evento catastrofico viene evitato per un soffio, lasciando il mondo privo di cicatrici tangibili.",
+      "en": "Un'analisi filosofica e narrativa sulla natura dell'evidenza quando un evento catastrofico viene evitato per un soffio, lasciando il mondo privo di cicatrici tangibili."
+    },
+    "mission": {
+      "es": "Analizzare la tensione tra la realtà empirica di un pericolo evitato e la difficoltà di testimoniare l'inesistente, riflettendo sulla percezione umana del rischio.",
+      "en": "Analizzare la tensione tra la realtà empirica di un pericolo evitato e la difficoltà di testimoniare l'inesistente, riflettendo sulla percezione umana del rischio."
+    },
+    "targetText": "La sera in cui il semaforo pedonale di via dei Platani smise di funzionare, il destino di tre individui si intrecciò in un nodo invisibile. Elia, un cronista di nera ormai disilluso, stava osservando il flusso del traffico dal tavolino di un caffè, intento a scrivere un editoriale sulla vacuità del concetto di 'prova' nel giornalismo moderno. Accanto a lui, la signora Valli, un'anziana insegnante di logica in pensione, sorseggiava il suo tè, con lo sguardo fisso sulla striscia pedonale dove, pochi istanti prima, un ragazzino in bicicletta aveva quasi centrato un furgone lanciato a velocità sostenuta. Il conducente del mezzo, un corriere di nome Marco, aveva sterzato bruscamente, evitando l'impatto per una frazione di millimetro. Non ci fu stridore di gomme, né urla, né l'inevitabile frastuono di un incidente; solo un silenzio sospeso, un vuoto pneumatico che si richiuse istantaneamente su se stesso. Il ragazzino proseguì la sua corsa, ignaro di aver sfiorato la fine, mentre Marco, pallido, accostò il furgone qualche metro più avanti, tremando visibilmente. Elia, che aveva assistito alla scena, si chiese immediatamente quale fosse la natura dell'evidenza in un caso del genere: come si può documentare un disastro che non è avvenuto? La signora Valli, leggendo il dubbio negli occhi del giornalista, mormorò che la realtà non è fatta solo di ciò che accade, ma anche di ciò che, per un soffio, non ha avuto luogo, rendendo il non-accaduto un peso ontologico gravoso quanto una tragedia consumata. Il conflitto sorse quando Elia decise di voler scrivere un pezzo su quell'evento. Si scontrò con la resistenza del suo caporedattore, che pretendeva prove tangibili: foto, testimonianze di terzi, un verbale di polizia. Ma come fornire prove di un evento che non ha lasciato traccia? Per la redazione, se non c'è sangue, se non c'è rottame, non c'è storia. Elia sosteneva che l'assenza di un evento fosse, in sé, un fatto di cronaca, una testimonianza della fragilità del quotidiano, ma il caporedattore ribatteva che il giornalismo si nutre di fatti, non di speculazioni metafisiche su ciò che avrebbe potuto essere. La discussione si fece accesa, trasformandosi in una disputa sulla validità epistemologica dell'osservazione diretta. Elia si sentiva frustrato dalla miopia di un sistema che richiede il disastro per convalidare l'esistenza del pericolo. Nel frattempo, Marco, il corriere, era sceso dal furgone e si era avvicinato al tavolino. Non cercava gratitudine, né voleva essere un eroe; voleva solo qualcuno a cui raccontare il momento in cui il tempo si era dilatato. Raccontò di aver visto il ragazzo, di aver percepito il calore del motore e poi il gelo improvviso della morte mancata. Per lui, quell'istante era diventato il centro di gravità della sua intera esistenza. Elia prese appunti freneticamente, convinto di aver trovato il cuore della sua inchiesta: non l'incidente, ma la consapevolezza del rischio. Tuttavia, la tensione rimaneva irrisolta. La signora Valli osservava i due uomini, consapevole che la verità di quell'evento sarebbe svanita non appena i testimoni si fossero allontanati. Senza una prova materiale, l'evento era destinato a diventare un ricordo privato, una narrazione soggettiva priva di valore probatorio per la società. Questa è la tragedia dell'invisibile: il mondo procede come se nulla fosse accaduto, ignorando che la nostra stessa esistenza è intessuta di pericoli sventati che non lasciano traccia. Elia comprese che scrivere quell'articolo non avrebbe cambiato la percezione del pubblico, ma era un atto di resistenza contro l'oblio. La sua inchiesta, sebbene priva di prove fisiche, divenne un manifesto sull'ontologia dell'assenza, una sfida alla necessità di vedere per credere. Il furgone ripartì, il ragazzino tornò a casa, e la strada riprese il suo ritmo consueto, come se il vuoto pneumatico di pochi minuti prima non fosse mai esistito. Eppure, per Elia, la realtà era cambiata per sempre; aveva visto l'invisibile e, per questo, non poteva più tornare a scrivere di cronaca come se il mondo fosse un luogo privo di ombre e di silenzi carichi di conseguenze non manifestate.\n\nTuttavia, l'ostinazione di Elia nel voler cristallizzare l'ineffabile produsse un effetto collaterale inaspettato: la proliferazione di narrazioni spurie che minavano proprio la credibilità che egli intendeva difendere. Quando il suo articolo apparve, privo di riscontri oggettivi ma pregno di una prosa quasi esoterica, il pubblico non reagì con la riflessione esistenziale sperata, bensì con una sorta di cinismo collettivo, interpretando il racconto come un artificio retorico o una mera invenzione giornalistica finalizzata a riempire le colonne vuote di un quotidiano in crisi. La signora Valli, osservando la reazione dei lettori, comprese che la verità non solo necessita di testimoni, ma richiede un linguaggio condiviso che l'epoca contemporanea aveva ormai smarrito. Il tentativo di dare dignità ontologica al 'non-accaduto' finì per alimentare un pericoloso relativismo, dove ogni mancato disastro veniva mitizzato o, al contrario, deriso come una fantasia paranoica. Marco, leggendo le parole di Elia, si sentì improvvisamente estraneo al proprio vissuto; la sua esperienza intima, una volta trascritta e mercificata in un editoriale, perse quella sacralità silenziosa che l'aveva protetta, trasformandosi in un oggetto di dibattito sterile. Si creò così un paradosso epistemologico: l'atto stesso di testimoniare l'invisibile ne sancì la definitiva scomparsa dal dominio della realtà condivisa. Elia aveva cercato di svelare l'ombra, ma finì per dissolverla sotto la luce cruda e deformante della pubblica opinione, lasciando che il mondo tornasse a scivolare nell'indifferenza, convinto che ciò che non può essere provato non meriti nemmeno di essere ricordato, condannando per sempre l'umanità a ignorare i miracoli quotidiani della propria sopravvivenza.",
+    "wordCount": 905,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vacuità",
+        "lemma": "vacuità",
+        "glosses": {
+          "es": "emptiness or lack of substance",
+          "en": "emptiness or lack of substance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontologico",
+        "lemma": "ontologico",
+        "glosses": {
+          "es": "relating to the nature of being or existence",
+          "en": "relating to the nature of being or existence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "epistemologica",
+        "lemma": "epistemologica",
+        "glosses": {
+          "es": "relating to the theory of knowledge",
+          "en": "relating to the theory of knowledge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "miopia",
+        "lemma": "miopia",
+        "glosses": {
+          "es": "nearsightedness or lack of foresight",
+          "en": "nearsightedness or lack of foresight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "probatorio",
+        "lemma": "probatorio",
+        "glosses": {
+          "es": "serving as evidence or proof",
+          "en": "serving as evidence or proof"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "oblio",
+        "lemma": "oblio",
+        "glosses": {
+          "es": "a state of being forgotten",
+          "en": "a state of being forgotten"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.9,
+      "maxSentenceWords": 55,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:00:40.305Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale che il testo esplora attraverso l'episodio del mancato incidente?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La difficoltà di documentare eventi che non lasciano tracce fisiche."
+        },
+        {
+          "id": "a2",
+          "text": "La pericolosità del traffico urbano."
+        },
+        {
+          "id": "a3",
+          "text": "Il conflitto tra un giornalista e il suo caporedattore in una redazione."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "come si può documentare un disastro che non è avvenuto?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa desidera il corriere Marco dopo aver evitato l'impatto con il ragazzo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Chiedere un risarcimento."
+        },
+        {
+          "id": "a2",
+          "text": "Condividere la sua esperienza."
+        },
+        {
+          "id": "a3",
+          "text": "Denunciare il ragazzino alla polizia."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "voleva solo qualcuno a cui raccontare il momento in cui il tempo si era dilatato.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché il caporedattore rifiuta l'articolo di Elia?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Perché non crede alla versione dei fatti raccontata da Elia."
+        },
+        {
+          "id": "a2",
+          "text": "Perché il giornale non pubblica storie riguardanti incidenti stradali."
+        },
+        {
+          "id": "a3",
+          "text": "Perché non considera il mancato incidente una notizia valida."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Per la redazione, se non c'è sangue, se non c'è rottame, non c'è storia.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è lo scopo principale del monologo della signora Valli nel testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Sottolineare la gravità filosofica di ciò che non accade."
+        },
+        {
+          "id": "a2",
+          "text": "Spiegare le leggi della fisica che hanno evitato l'impatto."
+        },
+        {
+          "id": "a3",
+          "text": "Convincere Elia a smettere di scrivere articoli di cronaca nera."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la realtà non è fatta solo di ciò che accade, ma anche di ciò che, per un soffio, non ha avuto luogo",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono pervade la riflessione finale di Elia sull'evento?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Cinico e distaccato."
+        },
+        {
+          "id": "a2",
+          "text": "Riflessivo e di resistenza intellettuale."
+        },
+        {
+          "id": "a3",
+          "text": "Rassegnato e malinconico."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elia comprese che scrivere quell'articolo non avrebbe cambiato la percezione del pubblico, ma era un atto di resistenza contro l'oblio.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'miopia' applicato al sistema giornalistico?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un problema di vista dei redattori."
+        },
+        {
+          "id": "a2",
+          "text": "La tendenza a pubblicare solo notizie di cronaca nera."
+        },
+        {
+          "id": "a3",
+          "text": "L'incapacità di vedere oltre i fatti tangibili."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elia si sentiva frustrato dalla miopia di un sistema che richiede il disastro per convalidare l'esistenza del pericolo.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio critico in cui discuti se, secondo la tua opinione, la narrazione di un evento mancato possa avere lo stesso valore sociale di un evento documentato da prove materiali.",
+      "en": "Scrivi un breve saggio critico in cui discuti se, secondo la tua opinione, la narrazione di un evento mancato possa avere lo stesso valore sociale di un evento documentato da prove materiali."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare la tensione tra la realtà empirica di un pericolo evitato e la difficoltà di testimoniare l'inesistente, riflettendo sulla percezione umana del rischio.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:00:40.305Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'invisibilità dell'assenza: l'ontologia del pericolo sventato | C2 Reading | WeLearn",
+      "en": "L'invisibilità dell'assenza: l'ontologia del pericolo sventato | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi filosofica e narrativa sulla natura dell'evidenza quando un evento catastrofico viene evitato per un soffio, lasciando il mondo privo di cicatrici tangibili.",
+      "en": "Un'analisi filosofica e narrativa sulla natura dell'evidenza quando un evento catastrofico viene evitato per un soffio, lasciando il mondo privo di cicatrici tangibili."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:00:40.305Z"
+  }
+}

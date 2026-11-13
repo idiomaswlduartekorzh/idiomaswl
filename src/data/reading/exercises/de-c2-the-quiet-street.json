@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "de-c2-the-quiet-street",
+  "status": "draft",
+  "language": "de",
+  "variant": "de-DE",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "german C2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "de",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Die Architektur der Stille: Eine Umverteilung des Lärms",
+      "en": "Die Architektur der Stille: Eine Umverteilung des Lärms"
+    },
+    "intro": {
+      "es": "Ein analytischer Essay über die urbane Klanglandschaft, der die ethischen Implikationen nächtlicher Verkehrsplanung hinterfragt.",
+      "en": "Ein analytischer Essay über die urbane Klanglandschaft, der die ethischen Implikationen nächtlicher Verkehrsplanung hinterfragt."
+    },
+    "mission": {
+      "es": "Lesen Sie den Text aufmerksam und analysieren Sie die subtile Kritik an der städtischen Lärmpolitik.",
+      "en": "Lesen Sie den Text aufmerksam und analysieren Sie die subtile Kritik an der städtischen Lärmpolitik."
+    },
+    "targetText": "Wenn die Dämmerung über das Quartier ‚Ammerfeld‘ hereinbricht, vollzieht sich ein ritueller Akt, den die Stadtverwaltung als ‚Harmonisierung des akustischen Raums‘ bezeichnet. Stadträtin Elena Vesper, eine Verfechterin der sogenannten ‚Sanften Verkehrsführung‘, preist dieses Unterfangen als Triumph der zivilen Rücksichtnahme. Die Hauptadern, jene prächtigen Boulevards, die einst unter dem unaufhörlichen Pulsieren schwerer Lastwagen ächzten, sind nun in eine fast sakrale Stille gehüllt. Die Anwohner dort atmen auf, ihre Fenster, nunmehr von einer akustischen Decke geschützt, erlauben einen Schlaf, der in den letzten Jahrzehnten nur ein Privileg der Vorstädte war. Doch hinter dieser Fassade der Ruhe verbirgt sich eine logistische Verschiebung, die weniger eine Lösung als vielmehr eine räumliche Umverteilung der Belastung darstellt. Während die Eliten in den sanierten Zentren die Vorzüge der neuen Stille genießen, werden die nächtlichen Güterströme in die Peripherie abgedrängt, in jene schmalen Gassen, in denen die Schallreflexionen an den unverputzten Ziegelwänden der Arbeiterhäuser eine zerstörerische Resonanz erzeugen. Der Lärm ist nicht verschwunden; er hat lediglich die Adresse gewechselt.\n\nDer Konflikt manifestierte sich am vergangenen Dienstag, als der Logistikunternehmer Markus Hauer versuchte, eine nächtliche Lieferkette durch die Gasse ‚Hinterm Graben‘ zu etablieren. Anwohner, angeführt von der Rentnerin Frau Kuhlmann, blockierten die Zufahrt, nicht aus purer Renitenz, sondern aus der schieren Notwendigkeit, ihre fragile Gesundheit vor der akustischen Dauerberieselung zu schützen. Hauer argumentierte mit der Effizienz der neuen Routen, die ihm von der Stadtverwaltung als ‚alternativlos‘ schmackhaft gemacht wurden. Die Stadtverwaltung wiederum hielt sich bedeckt. In einem internen Schreiben, das mir zugespielt wurde, heißt es, man müsse die ‚Akzeptanz der städtischen Lebensqualität durch eine gerechte Verteilung der Lärmemissionen‘ wahren. Doch was bedeutet Gerechtigkeit, wenn sie nur die Geografie des Leidens verschiebt? Die Sprache des Friedens, mit der die Stadt ihre neuen Verkehrsregeln schmückt, fungiert hier als rhetorisches Opium, das den Blick auf die strukturelle Ungleichheit vernebelt. Es ist ein perfides Spiel mit der Wahrnehmung: Man verkauft die Stille als Gemeingut, während man sie in Wahrheit nur für jene kauft, die den lautesten Protest oder den größten politischen Einfluss vorweisen können.\n\nDie architektonische Beschaffenheit der Gassen in der Peripherie ist für den Schwerlastverkehr denkbar ungeeignet. Die engen Kurvenradien zwingen die Fahrer zu abrupten Brems- und Beschleunigungsmanövern, was die Lärmspitzen in den späten Nachtstunden potenziert. Wenn Hauer seine tonnenschweren Gefährte durch das eng bebaute Viertel manövriert, erzittern nicht nur die Gläser in den Schränken, sondern auch das soziale Gefüge. Frau Kuhlmanns Widerstand ist ein Symptom einer tieferliegenden Entfremdung zwischen den Bürgern und einer Verwaltung, die den öffentlichen Raum wie ein mathematisches Optimierungsproblem behandelt. Wenn man den Lärm als eine Art ‚akustische Währung‘ betrachtet, wird deutlich, dass die Stadtverwaltung eine Währungsabwertung in den ärmeren Vierteln betreibt, um den Wert der Immobilien in den Zentren zu stabilisieren. Die Rhetorik der ‚Harmonisierung‘ ist nichts weiter als ein Euphemismus für eine soziale Segregation, die sich nun auch in Dezibel ausdrückt. Es ist ein zynischer Prozess, bei dem die Stille als Statussymbol fungiert, das man sich durch den Export des Lärms in die Randgebiete erkauft.\n\nDie Konsequenz dieser Politik ist ein schleichender Zerfall des gesellschaftlichen Zusammenhalts. Wenn die Bewohner der Peripherie das Gefühl haben, dass ihre Lebensqualität als notwendiges Opfer für die Ruhe der Privilegierten betrachtet wird, schwindet das Vertrauen in die kommunalen Institutionen. Die Stadtverwaltung hat hier eine bürokratische Mauer errichtet, die ebenso undurchdringlich ist wie die Lärmschutzwände, die sie in den wohlhabenden Vierteln so großzügig aufstellt. Es stellt sich die Frage, ob eine Stadt überhaupt als Ganzes existieren kann, wenn ihre Bewohner in unterschiedlichen akustischen Realitäten leben. Die Stille, die wir heute genießen, ist eine geliehene Stille, erkauft auf Kosten derer, die keine Stimme haben, um sich gegen das nächtliche Grollen zu wehren. Die Stadt als Ganzes ist zu einem Ort geworden, an dem der Lärm nicht mehr als gemeinsames Problem verstanden wird, sondern als ein Gut, das man dem Nachbarn zuschieben kann.\n\nAm Ende steht ein ungelöstes Paradoxon. Die Stadtverwaltung feiert ihre Erfolgsbilanz, während die Gassen im Schatten der neuen Verkehrsführung in einem permanenten Zustand der akustischen Belagerung verharren. Hauer hat seine Lieferungen vorerst eingestellt, doch die städtische Planung sieht keine Revision der Routen vor. Man wartet auf eine Gewöhnung, auf eine Abstumpfung der Sinne, die den Lärm irgendwann als Hintergrundrauschen akzeptiert. Doch Frau Kuhlmann und ihre Nachbarn werden nicht schweigen. Der Konflikt zwischen der ästhetisierten Ruhe und der gelebten Realität ist ein Riss, der sich durch den Asphalt zieht. Solange die Sprache der Politik die Umverteilung des Lärms als Fortschritt verkauft, wird die Stadt ein Ort bleiben, an dem die Stille nur die Abwesenheit von Empathie markiert. Die Stille ist kein neutraler Zustand; sie ist ein politisches Instrument, das entscheidet, wer in dieser Stadt schlafen darf und wer den Preis für das Träumen der anderen zahlt.\n\nDiese systematische Verdrängung der Geräuschkulisse könnte jedoch eine ungeahnte Gegenbewegung provozieren, die weit über den lokalen Protest hinausgeht. Wenn die akustische Belastung zur zentralen Identifikationsmarke der vernachlässigten Viertel avanciert, droht eine Solidarisierung, die das bisherige Machtgefüge ins Wanken bringt. Die betroffenen Anwohner beginnen bereits, die Lärmspitzen akribisch zu protokollieren und als Beweisstücke einer institutionalisierten Vernachlässigung zu sammeln. Es entsteht ein digitales Archiv des Widerstands, das die Diskrepanz zwischen der offiziellen Statistik und der physischen Realität unumstößlich dokumentiert. Sollte dieser zivile Ungehorsam in eine koordinierte Blockade münden, könnte das gesamte logistische Kartenhaus der Stadtverwaltung in sich zusammenbrechen. Letztlich offenbart das Streben nach einer exklusiven Ruhe eine fatale Kurzsichtigkeit: Eine Stadt, die ihre inneren Spannungen bloß in die Randgebiete verlagert, statt sie durch eine gerechte Infrastrukturplanung zu lösen, gefährdet ihren eigenen sozialen Frieden und provoziert eine Konfrontation, die keine akustische Dämmung mehr zu ersticken vermag.",
+    "wordCount": 917,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "Harmonisierung",
+        "lemma": "Harmonisierung",
+        "glosses": {
+          "es": "The process of bringing things into agreement or balance.",
+          "en": "The process of bringing things into agreement or balance."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Renitenz",
+        "lemma": "Renitenz",
+        "glosses": {
+          "es": "Stubborn resistance or defiance against authority.",
+          "en": "Stubborn resistance or defiance against authority."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Euphemismus",
+        "lemma": "Euphemismus",
+        "glosses": {
+          "es": "A mild or indirect word substituted for one considered too harsh.",
+          "en": "A mild or indirect word substituted for one considered too harsh."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Segregation",
+        "lemma": "Segregation",
+        "glosses": {
+          "es": "The enforced separation of different groups of people.",
+          "en": "The enforced separation of different groups of people."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Paradoxon",
+        "lemma": "Paradoxon",
+        "glosses": {
+          "es": "A seemingly absurd or self-contradictory statement.",
+          "en": "A seemingly absurd or self-contradictory statement."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "Abstumpfung",
+        "lemma": "Abstumpfung",
+        "glosses": {
+          "es": "The process of becoming dull or less sensitive.",
+          "en": "The process of becoming dull or less sensitive."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.8,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:17:38.636Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Welches zentrale Thema behandelt der Artikel in Bezug auf die städtische Verkehrsplanung?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die soziale Ungerechtigkeit der Lärmverteilung."
+        },
+        {
+          "id": "a2",
+          "text": "Die Notwendigkeit neuer Logistikzentren."
+        },
+        {
+          "id": "a3",
+          "text": "Die technische Verbesserung der Motoren."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Während die Eliten in den sanierten Zentren die Vorzüge der neuen Stille genießen, werden die nächtlichen Güterströme in die Peripherie abgedrängt, in jene schmalen Gassen, in denen die Schallreflexionen an den unverputzten Ziegelwänden der Arbeiterhäuser eine zerstörerische Resonanz erzeugen.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Warum ist die Gasse 'Hinterm Graben' für den LKW-Verkehr problematisch?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Wegen der schlechten Beleuchtung."
+        },
+        {
+          "id": "a2",
+          "text": "Wegen der engen Kurvenradien."
+        },
+        {
+          "id": "a3",
+          "text": "Wegen der hohen Parkgebühren."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Die engen Kurvenradien zwingen die Fahrer zu abrupten Brems- und Beschleunigungsmanövern, was die Lärmspitzen in den späten Nachtstunden potenziert.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Welche Haltung nimmt der Autor gegenüber der Stadtverwaltung ein?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Er ist von ihrer Effizienz beeindruckt."
+        },
+        {
+          "id": "a2",
+          "text": "Er unterstützt ihre langfristige Vision."
+        },
+        {
+          "id": "a3",
+          "text": "Er misstraut ihren rhetorischen Versprechen."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Die Sprache des Friedens, mit der die Stadt ihre neuen Verkehrsregeln schmückt, fungiert hier als rhetorisches Opium, das den Blick auf die strukturelle Ungleichheit vernebelt.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Was ist das Hauptziel des Autors mit diesem Text?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Das Bewusstsein für die Ungleichheit der akustischen Lebensqualität zu schärfen."
+        },
+        {
+          "id": "a2",
+          "text": "Den Logistikunternehmer Markus Hauer öffentlich zu diskreditieren."
+        },
+        {
+          "id": "a3",
+          "text": "Die Anwohner zu einer friedlichen Demonstration aufzurufen."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Es stellt sich die Frage, ob eine Stadt überhaupt als Ganzes existieren kann, wenn ihre Bewohner in unterschiedlichen akustischen Realitäten leben.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Welcher Tonfall prägt die Argumentation des Autors?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ein nüchterner und rein sachlicher Bericht."
+        },
+        {
+          "id": "a2",
+          "text": "Ein kritischer und leicht zynischer Unterton."
+        },
+        {
+          "id": "a3",
+          "text": "Ein optimistischer und hoffnungsvoller Ausblick."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Es ist ein zynischer Prozess, bei dem die Stille als Statussymbol fungiert, das man sich durch den Export des Lärms in die Randgebiete erkauft.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Was bedeutet der Begriff 'akustische Währung' im Kontext des Textes?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Die Kosten für Lärmschutzwände."
+        },
+        {
+          "id": "a2",
+          "text": "Die Gebühren für den nächtlichen Verkehr."
+        },
+        {
+          "id": "a3",
+          "text": "Der Wert von Ruhe als verteiltes Gut."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Wenn man den Lärm als eine Art ‚akustische Währung‘ betrachtet, wird deutlich, dass die Stadtverwaltung eine Währungsabwertung in den ärmeren Vierteln betreibt, um den Wert der Immobilien in den Zentren zu stabilisieren.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 150 Wörter), in dem Sie erörtern, ob eine Stadtverwaltung moralisch verpflichtet ist, Lärmbelastungen gleichmäßig über alle Stadtviertel zu verteilen, oder ob Effizienz bei der Verkehrsplanung Vorrang haben sollte.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 150 Wörter), in dem Sie erörtern, ob eine Stadtverwaltung moralisch verpflichtet ist, Lärmbelastungen gleichmäßig über alle Stadtviertel zu verteilen, oder ob Effizienz bei der Verkehrsplanung Vorrang haben sollte."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lesen Sie den Text aufmerksam und analysieren Sie die subtile Kritik an der städtischen Lärmpolitik.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:17:38.636Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Die Architektur der Stille: Eine Umverteilung des Lärms | C2 Reading | WeLearn",
+      "en": "Die Architektur der Stille: Eine Umverteilung des Lärms | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Ein analytischer Essay über die urbane Klanglandschaft, der die ethischen Implikationen nächtlicher Verkehrsplanung hinterfragt.",
+      "en": "Ein analytischer Essay über die urbane Klanglandschaft, der die ethischen Implikationen nächtlicher Verkehrsplanung hinterfragt."
+    },
+    "canonicalPath": "/en/practice/german/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:17:38.636Z"
+  }
+}
