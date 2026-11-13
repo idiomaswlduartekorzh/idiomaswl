@@ -154,15 +154,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Le contraste entre la performance statistique des transports et l'exclusion des usagers ruraux."
+          "text": "Le succès statistique masque l'exclusion rurale."
         },
         {
           "id": "a2",
-          "text": "La transformation écologique des flottes de bus en zone urbaine."
+          "text": "La hausse de fréquentation prouve l'efficacité d'une transition écologique."
         },
         {
           "id": "a3",
-          "text": "Le financement participatif des infrastructures routières par les collectivités."
+          "text": "L'article compare plusieurs modèles de financement des transports locaux."
         }
       ],
       "answer": "a1",
@@ -191,15 +191,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Par la volonté de décourager l'usage de la voiture individuelle."
+          "text": "Pour réduire la pollution."
         },
         {
           "id": "a2",
-          "text": "Par la nécessité d'équilibrer les budgets et d'optimiser les investissements publics."
+          "text": "Pour équilibrer le budget public."
         },
         {
           "id": "a3",
-          "text": "Par le manque de conducteurs qualifiés sur l'ensemble du territoire."
+          "text": "Pour pallier une pénurie de conducteurs qualifiés dans toute la vallée."
         }
       ],
       "answer": "a2",
@@ -228,15 +228,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Qu'un plus grand nombre de citoyens choisissent désormais spontanément les transports en commun."
+          "text": "Elle prouve que les habitants délaissent la voiture."
         },
         {
           "id": "a2",
-          "text": "Que la population de la vallée de l'Orne a considérablement augmenté au cours du trimestre."
+          "text": "Elle reflète une croissance démographique récente."
         },
         {
           "id": "a3",
-          "text": "Qu'elle résulte d'une concentration forcée des voyageurs sur un nombre restreint de trajets restants."
+          "text": "Elle résulte d'une concentration forcée sur les seules liaisons encore assurées."
         }
       ],
       "answer": "a3",
@@ -265,15 +265,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Dénoncer un indicateur trompeur qui occulte l'exclusion des usagers les plus vulnérables."
+          "text": "Dénoncer un indicateur trompeur."
         },
         {
           "id": "a2",
-          "text": "Proposer un nouveau plan de financement pour l'achat de véhicules électriques."
+          "text": "Demander la réouverture des liaisons uniquement pour les étudiants."
         },
         {
           "id": "a3",
-          "text": "Négocier de nouveaux tarifs pour les abonnements scolaires de la vallée."
+          "text": "Négocier des tarifs scolaires réduits pour accroître la fréquentation."
         }
       ],
       "answer": "a1",
@@ -302,15 +302,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Un ton résolument optimiste face aux innovations architecturales."
+          "text": "Une fierté technique."
         },
         {
           "id": "a2",
-          "text": "Un ton critique soulignant l'absurdité d'un contraste entre modernité technique et carence de service."
+          "text": "Une critique de l'écart entre vitrine technique et service réel."
         },
         {
           "id": "a3",
-          "text": "Un ton neutre et purement descriptif sans critique sous-jacente."
+          "text": "Un optimisme prudent devant une modernisation qui résout l'isolement rural."
         }
       ],
       "answer": "a2",
@@ -339,15 +339,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Moderne, connecté et doté des dernières technologies."
+          "text": "Moderne et efficace."
         },
         {
           "id": "a2",
-          "text": "Financièrement excédentaire et rentable."
+          "text": "Sur le point de connaître une hausse de fréquentation."
         },
         {
           "id": "a3",
-          "text": "Affaibli, vidé de sa substance vitale ou de ses moyens."
+          "text": "Privé de ressources et affaibli au point de ne presque plus fonctionner."
         }
       ],
       "answer": "a3",

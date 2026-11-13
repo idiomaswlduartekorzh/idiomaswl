@@ -302,7 +302,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Un registre purement neutre et technique."
+          "text": "Un registre neutre et technique."
         },
         {
           "id": "a2",
@@ -310,7 +310,7 @@
         },
         {
           "id": "a3",
-          "text": "Une posture agressive et péremptoire."
+          "text": "Une posture agressive et ouvertement péremptoire."
         }
       ],
       "answer": "a2",

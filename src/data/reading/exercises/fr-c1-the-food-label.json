@@ -154,15 +154,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "L'évaluation critique de deux étiquettes de péremption aux effets opposés."
+          "text": "La critique de deux politiques d'étiquetage."
         },
         {
           "id": "a2",
-          "text": "L'obligation légale de détruire les denrées périmées."
+          "text": "L'échec d'une campagne visant à uniformiser les contrôles sanitaires."
         },
         {
           "id": "a3",
-          "text": "La supériorité incontestable des méthodes nordiques de distribution."
+          "text": "La comparaison des bénéfices logistiques obtenus par deux enseignes."
         }
       ],
       "answer": "a1",
@@ -191,7 +191,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Une faillite immédiate de l'établissement."
+          "text": "Une chute des ventes."
         },
         {
           "id": "a2",
@@ -199,7 +199,7 @@
         },
         {
           "id": "a3",
-          "text": "Une inspection sanitaire menée par le ministère."
+          "text": "Une inspection sanitaire ouverte à la suite de plaintes de clients."
         }
       ],
       "answer": "a2",
@@ -232,7 +232,7 @@
         },
         {
           "id": "a2",
-          "text": "Obtenir une certification écologique internationale."
+          "text": "Obtenir une certification écologique internationale reconnue."
         },
         {
           "id": "a3",
@@ -265,15 +265,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Laisser le lecteur face à une interrogation irrésolue sur l'autonomie du consommateur."
+          "text": "Laisser ouverte la question de l'autonomie du consommateur."
         },
         {
           "id": "a2",
-          "text": "Résoudre définitivement le débat sur les dates de péremption."
+          "text": "Défendre explicitement la suppression de toutes les dates de péremption."
         },
         {
           "id": "a3",
-          "text": "Démontrer la supériorité absolue du chiffre rouge."
+          "text": "Imposer une solution réglementaire unique aux deux enseignes étudiées."
         }
       ],
       "answer": "a1",
@@ -302,7 +302,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Un enthousiasme naïf et laudatif envers le progrès."
+          "text": "Une adhésion prudente à l'innovation sensorielle."
         },
         {
           "id": "a2",
@@ -310,7 +310,7 @@
         },
         {
           "id": "a3",
-          "text": "Une sévérité manichéenne rejetant tout compromis."
+          "text": "Une condamnation sans réserve des deux modes d'étiquetage et de leurs promoteurs."
         }
       ],
       "answer": "a2",
@@ -339,15 +339,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Une stratégie commerciale hautement rentable."
+          "text": "Une contradiction passagère que résoudra un meilleur étiquetage."
         },
         {
           "id": "a2",
-          "text": "Une solution évidente validée par l'expérience."
+          "text": "Une erreur technique commise dans le calcul des dates de péremption."
         },
         {
           "id": "a3",
-          "text": "Une impasse intellectuelle sans solution apparente."
+          "text": "Une contradiction logique constituant une impasse intellectuelle sans solution apparente."
         }
       ],
       "answer": "a3",

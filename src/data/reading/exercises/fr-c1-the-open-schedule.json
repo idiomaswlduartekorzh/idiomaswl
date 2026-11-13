@@ -154,15 +154,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "L'évaluation critique des effets contrastés d'un emploi du temps flexible sur les différents niveaux du lycée."
+          "text": "Les effets inégaux d'un horaire scolaire flexible."
         },
         {
           "id": "a2",
-          "text": ","
+          "text": "La suppression des cours optionnels pour les élèves de terminale."
         },
         {
           "id": "a3",
-          "text": "La nécessité absolue de supprimer toutes les heures d'accompagnement personnalisé pour les élèves de terminale."
+          "text": "Les difficultés de recrutement des enseignants contractuels après la réforme."
         }
       ],
       "answer": "a1",
@@ -191,15 +191,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Le manque de manuels scolaires lors des ateliers de tutorat facultatif du mardi après-midi."
+          "text": "Des manuels manquants."
         },
         {
           "id": "a2",
-          "text": "L'annulation inopinée de la permanence de première heure qui a laissé des élèves sans encadrement."
+          "text": "Une permanence annulée a laissé des élèves sans encadrement."
         },
         {
           "id": "a3",
-          "text": "La suppression définitive des cours de sciences politiques pour l'ensemble des classes de seconde."
+          "text": "Un atelier supprimé faute de personnel, malgré des salles ouvertes aux secondes."
         }
       ],
       "answer": "a2",
@@ -228,15 +228,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Ils constatent un échec unanime et immédiat de la réforme auprès de l'ensemble des enseignants et des élèves."
+          "text": "Un rejet unanime de la réforme."
         },
         {
           "id": "a2",
-          "text": "Ils partagent un enthousiasme inébranlable et considèrent que les problèmes logistiques sont totalement inexistants."
+          "text": "Une réussite générale sans coût pour les secondes."
         },
         {
           "id": "a3",
-          "text": "Ils reconnaissent des bénéfices pour un groupe précis tout en s'inquiétant des répercussions déstabilisantes pour d'autres."
+          "text": "Des bénéfices pour les terminales, mais des risques pour les secondes."
         }
       ],
       "answer": "a3",
@@ -265,15 +265,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Pour synthétiser les dysfonctionnements constatés et exiger le retour à des plages horaires fixes pour le premier cycle."
+          "text": "Réclamer des plages fixes."
         },
         {
           "id": "a2",
-          "text": ","
+          "text": "Préparer une extension du tutorat facultatif aux classes de seconde."
         },
         {
           "id": "a3",
-          "text": "Afin de rédiger un communiqué officiel destiné à rassurer immédiatement les parents d'élèves de seconde."
+          "text": "Rédiger un communiqué de soutien à la réforme avant la réunion."
         }
       ],
       "answer": "a1",
@@ -302,15 +302,15 @@
       "options": [
         {
           "id": "a1",
-          "text": ",,,"
+          "text": "Enthousiaste et confiant."
         },
         {
           "id": "a2",
-          "text": "Critique, lucide et alarmiste face aux inégalités générées par une flexibilité mal maîtrisée."
+          "text": "Critique et inquiet des inégalités créées."
         },
         {
           "id": "a3",
-          "text": ",,"
+          "text": "Neutre et uniquement descriptif, sans jugement sur les effets du dispositif."
         }
       ],
       "answer": "a2",
@@ -339,15 +339,15 @@
       "options": [
         {
           "id": "a1",
-          "text": ","
+          "text": "Une simple pause."
         },
         {
           "id": "a2",
-          "text": "Un renforcement spectaculaire et une consolidation."
+          "text": "Un renforcement du lien."
         },
         {
           "id": "a3",
-          "text": "Une dégradation progressive et une perte de cohésion."
+          "text": "Une dégradation progressive du lien de confiance."
         }
       ],
       "answer": "a3",

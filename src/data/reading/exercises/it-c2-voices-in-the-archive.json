@@ -191,15 +191,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Perché la qualità audio è troppo bassa."
+          "text": "Perché la conversione ha reso la voce metallica e quasi incomprensibile."
         },
         {
           "id": "a2",
-          "text": "Perché mancano i suoni ambientali e le imperfezioni naturali."
+          "text": "Perché il restauro cancella esitazioni e rumori."
         },
         {
           "id": "a3",
-          "text": "Perché il volume del parlato è troppo alto."
+          "text": "Perché il volume è troppo alto."
         }
       ],
       "answer": "a2",

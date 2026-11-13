@@ -69,5 +69,9 @@ export function validateReadingExercise(candidate: unknown): asserts candidate i
     if (exercise.language === 'ko' && exercise.schemaVersion !== '1.2.0' && !item.reading) errors.push(`Korean vocabulary requires an optional-support reading: ${item.surface}`)
   }
 
+  for (const question of exercise.questions ?? []) {
+    if (question.options?.some((option) => typeof option.text !== 'string' || !/[\p{L}\p{N}]/u.test(option.text))) errors.push(`${question.id} option must contain a letter or number`)
+  }
+
   if (errors.length) throw new Error(`${exercise.id || 'unknown exercise'}: ${errors.join('; ')}`)
 }

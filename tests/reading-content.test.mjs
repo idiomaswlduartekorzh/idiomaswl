@@ -39,6 +39,12 @@ test('advanced drafts do not claim reviews or copyright and culture checks that 
   assert.match(errors, /actual review and assessment dates/)
 })
 
+test('punctuation-only answer options are rejected', () => {
+  const invalid = structuredClone(advancedDraft)
+  invalid.questions[0].options[1].text = ',,, '
+  assert.match(validateReadingExercise(invalid).join('\n'), /option must contain a letter or number/)
+})
+
 test('publication still requires identified human reviewers after approval', () => {
   const published = structuredClone(advancedDraft)
   published.status = 'published'

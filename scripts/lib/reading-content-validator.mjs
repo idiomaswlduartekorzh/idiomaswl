@@ -64,6 +64,7 @@ export function validateReadingExercise(exercise) {
     if (questionIds.has(question.id)) errors.push(`duplicate question id: ${question.id}`)
     questionIds.add(question.id)
     const optionIds = new Set(question.options?.map((option) => option.id) ?? [])
+    if (question.options?.some((option) => typeof option.text !== 'string' || !/[\p{L}\p{N}]/u.test(option.text))) errors.push(`${question.id} option must contain a letter or number`)
     if (typeof question.answer === 'string' && question.options?.length && !optionIds.has(question.answer)) errors.push(`${question.id} answer does not match an option`)
     if (Array.isArray(question.answer) && question.answer.some((answer) => !optionIds.has(answer))) errors.push(`${question.id} ordering answer does not match its options`)
   }

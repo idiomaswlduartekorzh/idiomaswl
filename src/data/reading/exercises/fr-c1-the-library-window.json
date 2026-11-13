@@ -154,15 +154,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Le décalage entre l'extension des horaires et l'accessibilité réelle des publics fragiles."
+          "text": "Horaires élargis, accès toujours inégal."
         },
         {
           "id": "a2",
-          "text": "La diminution drastique des budgets culturels municipaux."
+          "text": "La réduction du budget culturel explique la fermeture des bibliothèques."
         },
         {
           "id": "a3",
-          "text": "La transition numérique réussie des bibliothèques publiques."
+          "text": "La modernisation numérique assure enfin l'accès de tous les publics."
         }
       ],
       "answer": "a1",
@@ -191,15 +191,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "La panne des portes automatiques un mardi soir."
+          "text": "Une panne des portes."
         },
         {
           "id": "a2",
-          "text": "Le refus d'entrée opposé à une grand-mère et sa petite-fille peu avant la fermeture."
+          "text": "Le refus d'entrée à une grand-mère et sa petite-fille."
         },
         {
           "id": "a3",
-          "text": "La protestation violente d'étudiants privés de connexion Internet."
+          "text": "Une protestation d'étudiants privés d'accès aux salles et au réseau."
         }
       ],
       "answer": "a2",
@@ -228,15 +228,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Comme de nouveaux citoyens issus des quartiers défavorisés."
+          "text": "Des personnes en manque d'autres lieux publics."
         },
         {
           "id": "a2",
-          "text": "Comme des professionnels du livre venus aider le personnel épuisé."
+          "text": "De nouveaux lecteurs issus des quartiers périphériques."
         },
         {
           "id": "a3",
-          "text": "Comme des personnes privilégiées qui utilisaient l'espace tel un salon secondaire."
+          "text": "Des usagers déjà favorisés qui utilisent les nocturnes comme un second salon."
         }
       ],
       "answer": "a3",
@@ -265,15 +265,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Pour adapter l'infrastructure publique aux modes de vie fragmentés et promouvoir l'égalité culturelle."
+          "text": "Adapter les horaires aux vies fragmentées et favoriser l'égalité."
         },
         {
           "id": "a2",
-          "text": "Pour réduire les coûts salariaux en concentrant le personnel sur une seule plage horaire."
+          "text": "Réduire les dépenses de personnel en concentrant les équipes sur les nocturnes."
         },
         {
           "id": "a3",
-          "text": "Pour répondre à une pétition signée par l'ensemble des habitants de la commune."
+          "text": "Répondre à une demande unanime des habitants pour un accès de nuit."
         }
       ],
       "answer": "a1",
@@ -302,15 +302,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Un enthousiasme béat face à la modernisation des services."
+          "text": "Une admiration enthousiaste."
         },
         {
           "id": "a2",
-          "text": "Une lucidité caustique teintée de désillusion face aux décisions politiques."
+          "text": "Une lucidité caustique et désabusée."
         },
         {
           "id": "a3",
-          "text": "Une neutralité scientifique dépourvue de tout engagement personnel."
+          "text": "Une hostilité sans nuance envers les usagers de nuit."
         }
       ],
       "answer": "a2",
@@ -339,15 +339,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Les usagers réguliers de la bibliothèque."
+          "text": "Les lecteurs réguliers."
         },
         {
           "id": "a2",
-          "text": "Les agents d'entretien de l'établissement."
+          "text": "Les agents chargés de l'entretien des locaux."
         },
         {
           "id": "a3",
-          "text": "Les représentants municipaux ou dirigeants locaux."
+          "text": "Les responsables municipaux qui ont décidé de la réforme des horaires."
         }
       ],
       "answer": "a3",
