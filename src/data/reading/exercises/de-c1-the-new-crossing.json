@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Um die Kritik an einer Behördenbilanz, die den Erfolg eines neuen Zebrastreifens fälschlicherweise feiert und dabei eine gleichzeitige Tempolimitierung verschweigt."
+          "text": "Der Bericht lobt den Überweg und verschweigt das gleichzeitig gesenkte Tempolimit."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Der Verkehrsplaner Jörg Behrens"
+          "text": "Der Planer Jörg Behrens"
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Weil sichtbare Markierungen sich für die Behörde besser vermarkten lassen als unpopuläre geschwindigkeitsbegrenzende Maßnahmen."
+          "text": "Markierungen lassen sich besser verkaufen als ein Tempolimit."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Er will belegen, dass nicht die optische Markierung, sondern die reduzierte Bremsweglänge und Aufprallwucht den Unfallrückgang verursachten."
+          "text": "Er zeigt, dass geringere Geschwindigkeit Bremsweg und Aufprallwucht verkürzt."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Ein skeptisch-analytischer Ton, der die bürokratische Schönfärberei und selektive Argumentation entlarvt."
+          "text": "Skeptisch gegenüber geschönten Behördenzahlen."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Dass sie ihre Argumente monoton und unermüdlich immer wieder wiederholte."
+          "text": "Sie wiederholt dieselben Argumente immer wieder."
         }
       ],
       "answer": "a3",

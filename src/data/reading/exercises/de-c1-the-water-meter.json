@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Um die Diskrepanz zwischen amtlichen Durchschnittswerten beim Wasserverbrauch und der Realität in Gebäuden mit Gemeinschaftszählern."
+          "text": "Fehlerhafte Wasserstatistiken bei Gemeinschaftszählern."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Das Fehlen von individuellen Wasserzählern durch einen zentralen Hauptzähler."
+          "text": "Ein Hauptzähler statt einzelner Wohnungszähler."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Mieter, die bereits Wasser sparen, könnten finanziell benachteiligt werden."
+          "text": "Sparsame Mieter in großen Anlagen werden finanziell benachteiligt."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Sie will beweisen, dass die tatsächlichen Verbräuche in Gemeinschaftsobjekten viel höher sind als offiziell dargestellt."
+          "text": "Den höheren Verbrauch in Gebäuden mit Gemeinschaftszählern gegenüber der Stadt belegen."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Er kritisiert sie als technokratisch und wirft ihr vor, eine Scheinlösung zu verwalten."
+          "text": "Technokratisch und an einer Scheinlösung festhaltend."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Eine Maßnahme, die das Problem nicht wirklich löst, sondern nur den Anschein erweckt."
+          "text": "Eine Maßnahme, die nur den Eindruck einer echten Lösung erzeugt."
         }
       ],
       "answer": "a3",

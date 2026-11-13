@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Um den Streit zweier Familien über die Urheberschaft bei der Rettung einer lokalen Bohnensorte für die Saatgutbibliothek."
+          "text": "Der Streit zweier Familien darüber, wer die lokale Bohnensorte für die Saatgutbibliothek tatsächlich gerettet hat."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Sie evakuierte sie aus dem Keller und stabilisierte sie im Labor."
+          "text": "Sie brachte die Keimlinge aus dem Keller ins Labor."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Er zeigt auf, dass beide Seiten valide Beiträge leisteten, deren gegensätzliche Ansprüche jedoch unvereinbar scheinen."
+          "text": "Beide Seiten trugen zur Rettung bei, doch ihre Ansprüche auf Anerkennung bleiben weiter unvereinbar."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Weil das bevorstehende Dorffest und die damit verbundene offizielle Zertifizierung eine genaue Gewichtung der Beiträge erfordern."
+          "text": "Das Dorffest und die Zertifizierung verlangen eine eindeutige Zuordnung der Verdienste."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Eine bedrückende und ungelöste Erstarrung, die das Gemeinschaftsgefühl gefährdet."
+          "text": "Bedrückte, ungelöste Spannung im Dorf."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Die vorherrschende Macht, die historische Bedeutung eines Ereignisses verbindlich zu definieren."
+          "text": "Die Macht, die Geschichte der Bohnensorte für alle verbindlich zu deuten."
         }
       ],
       "answer": "a3",

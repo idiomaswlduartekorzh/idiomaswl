@@ -228,11 +228,11 @@
       "options": [
         {
           "id": "a1",
-          "text": "Arbeiter"
+          "text": "Arbeiter aus Stadtteilen mit geringerem Einkommen"
         },
         {
           "id": "a2",
-          "text": "Familien"
+          "text": "Familien mit langen Anfahrtswegen"
         },
         {
           "id": "a3",

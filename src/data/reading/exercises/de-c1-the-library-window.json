@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Die technische Modernisierung führt zu höheren Besucherzahlen, schließt aber gleichzeitig traditionelle Nutzergruppen aus."
+          "text": "Die moderne Technik erhöht Besuche, verdrängt aber manche bisherigen Nutzergruppen im Haus."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Die technischen Schranken und das fehlende Personal machten ihm Angst und gaben ihm das Gefühl permanenter Beobachtung."
+          "text": "Technik und fehlendes Personal ließen ihn sich überwacht fühlen."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Sie erkennt in ihnen eine trügerische Fassade, die über den tatsächlichen sozialen Ausschluss hinwegtäuscht."
+          "text": "Sie erkennt hinter hohen Besucherzahlen den Ausschluss vieler bisheriger Stammgäste."
         }
       ],
       "answer": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Sie verdeutlicht den Konflikt zwischen rein quantitativen politischen Erfolgskriterien und der realen sozialen Verantwortung der Einrichtung."
+          "text": "Der Konflikt zwischen politischen Kennzahlen und der sozialen Aufgabe der Bibliothek."
         },
         {
           "id": "a2",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Selbstkritisch und reflektiert"
+          "text": "Selbstkritisch"
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Das unbemerkte Verdrängen von bestimmten Bevölkerungsgruppen, die sich im neuen Umfeld nicht mehr willkommen fühlen."
+          "text": "Das stille Zurückdrängen von Menschen, die sich dort nicht mehr willkommen fühlen."
         }
       ],
       "answer": "a3",
