@@ -600,7 +600,8 @@ def examples_table(scene):
 
 
 def blank_text(text):
-    return re.sub(r'\[\[\d+\]\]', '________', str(text))
+    expanded = re.sub(r'\[\[\d+\]\]', '________________', str(text))
+    return re.sub(r'_{3,}', '________________', expanded)
 
 
 def exercises_for(topic):
@@ -612,14 +613,13 @@ def exercises_for(topic):
         if kind == 'choice':
             for item in level['items']:
                 prompt = ' '.join(line[1] for line in item['lines'])
-                exercises.append((number, title, f"{prompt}   {options_label}: {' · '.join(item['options'])}"))
+                exercises.append((number, title, blank_text(prompt)))
                 answers.append((number, item['answer'], item['explain']))
                 number += 1
         elif kind == 'dual':
             for item in level['items']:
                 prompt = blank_text(' '.join(line[1] for line in item['lines']))
-                options = ' / '.join(' · '.join(blank.get('options', [])) for blank in item['blanks'])
-                exercises.append((number, title, f'{prompt}   {options_label}: {options}'))
+                exercises.append((number, title, prompt))
                 answers.append((number, ' / '.join(blank['answer'] for blank in item['blanks']), ' '.join(blank['explain'] for blank in item['blanks'])))
                 number += 1
         elif kind in ('guidedText', 'freeText'):
@@ -690,6 +690,115 @@ def practice_box(code, scene, prompt, options=None, lines=0, background=WHITE):
         ('TOPPADDING', (0, 0), (-1, -1), 8), ('BOTTOMPADDING', (0, 0), (-1, -1), 8),
     ]))
     return table
+
+
+def worksheet_item(code, prompt, lines=0):
+    """A quiet worksheet row: one task, ample writing room, no embedded hints."""
+    code_style = ParagraphStyle(
+        f'worksheet_code_{code}', parent=STYLES['eyebrow'], fontSize=8,
+        leading=11, spaceAfter=0, textColor=RED,
+    )
+    prompt_style = ParagraphStyle(
+        f'worksheet_prompt_{code}', parent=STYLES['exercise_large'], fontSize=10.2,
+        leading=15.5, spaceAfter=0,
+    )
+    content = [p(blank_text(prompt), prompt_style)]
+    for _ in range(lines):
+        content.append(Spacer(1, 3.8 * mm))
+        content.append(p('____________________________________________________________________', STYLES['small']))
+    table = Table([[p(code, code_style), content]], colWidths=[15 * mm, 154 * mm], hAlign='LEFT')
+    table.setStyle(TableStyle([
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ('LINEBELOW', (0, 0), (-1, -1), .55, LINE),
+        ('LEFTPADDING', (0, 0), (0, -1), 2), ('RIGHTPADDING', (0, 0), (0, -1), 5),
+        ('LEFTPADDING', (1, 0), (1, -1), 2), ('RIGHTPADDING', (1, 0), (1, -1), 2),
+        ('TOPPADDING', (0, 0), (-1, -1), 14), ('BOTTOMPADDING', (0, 0), (-1, -1), 15),
+    ]))
+    return table
+
+
+def compact_exercise_cover(topic):
+    decisions = practice_decision_count(topic)
+    copy = {
+        'english': {
+            'language': 'ENGLISH', 'edition': 'EXERCISE WORKBOOK',
+            'lead': 'Independent practice: complete every blank without options or solutions on the work pages.',
+            'label': 'PRACTICE FORMAT', 'title': f'{decisions} decisions in progressive stages',
+            'body': 'Write directly on the page. Check the separate answer key only after completing a full stage.',
+            'rule': 'WORK RULE',
+            'rule_body': 'One instruction per stage. No word banks, option lists, mini-explanations or answers interrupt the exercises.',
+        },
+        'french': {
+            'language': 'FRANÇAIS', 'edition': "CAHIER D'EXERCICES",
+            'lead': 'Pratique autonome : complétez chaque espace sans choix ni solutions sur les pages de travail.',
+            'label': 'FORMAT DE PRATIQUE', 'title': f'{decisions} décisions en étapes progressives',
+            'body': 'Écrivez directement sur la page. Consultez le corrigé séparé seulement après avoir terminé une étape complète.',
+            'rule': 'RÈGLE DE TRAVAIL',
+            'rule_body': "Une consigne par étape. Aucune banque de mots, liste de choix, mini-explication ou solution n'interrompt les exercices.",
+        },
+        'german': {
+            'language': 'DEUTSCH', 'edition': 'ÜBUNGSHEFT',
+            'lead': 'Selbstständige Praxis: Ergänzen Sie jede Lücke ohne Auswahlmöglichkeiten oder Lösungen auf den Arbeitsseiten.',
+            'label': 'ÜBUNGSFORMAT', 'title': f'{decisions} Entscheidungen in progressiven Stufen',
+            'body': 'Schreiben Sie direkt auf die Seite. Prüfen Sie den getrennten Lösungsschlüssel erst nach einer vollständigen Stufe.',
+            'rule': 'ARBEITSREGEL',
+            'rule_body': 'Eine Anweisung pro Stufe. Keine Formenbank, Auswahlliste, Mini-Erklärung oder Lösung unterbricht die Übungen.',
+        },
+        'italian': {
+            'language': 'ITALIANO', 'edition': 'QUADERNO DI ESERCIZI',
+            'lead': 'Pratica autonoma: completa ogni spazio senza opzioni o soluzioni nelle pagine di lavoro.',
+            'label': 'FORMATO DI PRATICA', 'title': f'{decisions} decisioni in fasi progressive',
+            'body': 'Scrivi direttamente sulla pagina. Controlla le soluzioni separate solo dopo aver completato una fase.',
+            'rule': 'REGOLA DI LAVORO',
+            'rule_body': 'Una consegna per fase. Nessuna lista di opzioni, mini-spiegazione o soluzione interrompe gli esercizi.',
+        },
+        'portuguese': {
+            'language': 'PORTUGUÊS', 'edition': 'CADERNO DE EXERCÍCIOS',
+            'lead': 'Prática autônoma: complete cada espaço sem opções ou respostas nas páginas de trabalho.',
+            'label': 'FORMATO DA PRÁTICA', 'title': f'{decisions} decisões em etapas progressivas',
+            'body': 'Escreva diretamente na página. Consulte o gabarito separado somente após concluir uma etapa inteira.',
+            'rule': 'REGRA DE TRABALHO',
+            'rule_body': 'Uma instrução por etapa. Nenhum banco de palavras, lista de opções, mini-explicação ou resposta interrompe os exercícios.',
+        },
+        'korean': {
+            'language': '한국어', 'edition': '연습 문제집',
+            'lead': '독립 연습: 작업 페이지의 선택지나 정답 없이 모든 빈칸을 완성하세요.',
+            'label': '연습 형식', 'title': f'점진적 단계의 {decisions}개 판단',
+            'body': '페이지에 직접 쓰고, 한 단계를 모두 끝낸 뒤 별도 정답지를 확인하세요.',
+            'rule': '학습 규칙',
+            'rule_body': '단계마다 지시는 하나뿐입니다. 단어 목록, 선택지, 미니 해설, 정답은 연습을 방해하지 않습니다.',
+        },
+        'japanese': {
+            'language': '日本語', 'edition': '練習問題集',
+            'lead': '自立練習：作業ページの選択肢や解答を見ずに、すべての空欄を完成させます。',
+            'label': '練習形式', 'title': f'段階的な{decisions}の判断',
+            'body': 'ページに直接書き、ひとつの段階を終えてから別冊の解答を確認します。',
+            'rule': '作業ルール',
+            'rule_body': '各段階の指示は一つです。語群、選択肢、短い解説、解答は練習ページに置きません。',
+        },
+        'russian': {
+            'language': 'РУССКИЙ ЯЗЫК', 'edition': 'ТЕТРАДЬ УПРАЖНЕНИЙ',
+            'lead': 'Самостоятельная практика: заполните все пропуски без вариантов и ответов на рабочих страницах.',
+            'label': 'ФОРМАТ ПРАКТИКИ', 'title': f'{decisions} решений по нарастающей сложности',
+            'body': 'Пишите прямо на странице. Сверяйтесь с отдельными ответами только после завершения всего этапа.',
+            'rule': 'ПРАВИЛО РАБОТЫ',
+            'rule_body': 'Одна инструкция на этап. Списки вариантов, мини-пояснения и ответы не прерывают упражнения.',
+        },
+    }.get(PDF_LANGUAGE, {})
+    return [
+        Spacer(1, 20 * mm),
+        p(f"{copy['language']} {topic['level']} · {copy['edition']}", STYLES['eyebrow']),
+        p(topic['shortTitle'], STYLES['cover_title']),
+        p(copy['lead'], STYLES['cover_lead']),
+        Spacer(1, 7 * mm),
+        editorial_card(
+            copy['label'], copy['title'], copy['body'],
+            PALE_RED, RED,
+        ),
+        Spacer(1, 11 * mm),
+        p(copy['rule'], STYLES['eyebrow']),
+        p(copy['rule_body'], STYLES['section_lead']),
+    ]
 
 
 def practice_decision_count(topic):
@@ -890,28 +999,32 @@ def split_pdf_cover(topic, edition, description, decisions):
 
 
 def build_exercises_only_story(topic):
-    story = split_pdf_cover(topic, 'exercises', l(f"Printable practice for {topic['title']}. No explanations or solutions interrupt the work pages.", f"Pratique imprimable pour {topic['title']}. Aucune explication ni solution n’interrompt les pages de travail."), practice_decision_count(topic))
+    story = compact_exercise_cover(topic)
     levels = topic['practice']['levels']
     for level_index, level in enumerate(levels):
         story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'), level['title'], level['intro'])]
         prefix = chr(ord('A') + level_index) if level_index < 26 else f'S{level_index + 1}'
         if level['type'] == 'choice':
             for index, item in enumerate(level['items'], 1):
-                story += [practice_box(f'{prefix}{index}', item['scene'], ' '.join(line[1] for line in item['lines']), item['options'], background=WHITE if index % 2 else SOFT_BG), Spacer(1, 2.5 * mm)]
+                if index > 1 and (index - 1) % 6 == 0:
+                    story += [PageBreak(), *section_heading(
+                        f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'),
+                        level['title'], level['intro'],
+                    )]
+                story += [worksheet_item(f'{prefix}{index}', ' '.join(line[1] for line in item['lines']))]
         elif level['type'] == 'dual':
             for index, item in enumerate(level['items'], 1):
-                options = [f"{l('Gap', 'Espace')} {blank_index + 1}: {' / '.join(blank.get('options', []))}" for blank_index, blank in enumerate(item['blanks'])]
-                story += [practice_box(f'{prefix}{index}', item['scene'], ' '.join(line[1] for line in item['lines']), options, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
+                if index > 1 and (index - 1) % 6 == 0:
+                    story += [PageBreak(), *section_heading(
+                        f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'),
+                        level['title'], level['intro'],
+                    )]
+                story += [worksheet_item(f'{prefix}{index}', ' '.join(line[1] for line in item['lines']))]
         elif level['type'] in ('guidedText', 'freeText'):
-            story += [practice_box(f'{prefix}1', level['scene'], level['text'], lines=4 if level['type'] == 'freeText' else 2, background=WHITE)]
-            if level['type'] == 'guidedText':
-                word_bank = sorted(set(option for blank in level['blanks'] for option in blank.get('options', [])))
-                story += [Spacer(1, 4 * mm), editorial_card(l('Word bank', 'Banque de formes'), l('Available forms', 'Formes disponibles'), ' · '.join(word_bank), PALE_BLUE, BLUE)]
+            story += [worksheet_item(f'{prefix}1', level['text'], lines=3 if level['type'] == 'freeText' else 1)]
         else:
             for index, item in enumerate(level['items'], 1):
-                story += [practice_box(f'{prefix}{index}', item['scene'], item['prompt'], lines=3 if level_index == 5 else 2, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 3 * mm)]
-        if level_index < len(levels) - 1:
-            story += [Spacer(1, 5 * mm), editorial_card(l('Stage check', 'Bilan de l’étape'), l('Pause before continuing', 'Faites une pause avant de continuer'), l('Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé."), PALE_GREEN, BLUE)]
+                story += [worksheet_item(f'{prefix}{index}', item['prompt'], lines=3 if level_index == 5 else 2)]
     story += [PageBreak(), *section_heading('07', l('Retrieval', 'Rappel actif'), l('Final self-check', 'Autoévaluation finale'), l('Complete these prompts without reopening the guide.', 'Répondez sans rouvrir le cours.'))]
     focus_prompts = [
         l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.')
@@ -945,15 +1058,8 @@ def build_exercises_only_story(topic):
             prompts.append(prompt)
         if len(prompts) == 6:
             break
-    for index, prompt in enumerate(prompts, 1):
-        story += [practice_box(f'R{index}', l('Review focus', 'Point de révision'), prompt, lines=2, background=WHITE if index % 2 else SOFT_BG), Spacer(1, 2.5 * mm)]
-    story += [editorial_card(
-        l('Stage check', 'Bilan de l’étape'),
-        l('Pause before continuing', 'Faites une pause avant de continuer'),
-        l('Underline the trigger or decision point, name the rule, and check that the meaning has not changed.', "Soulignez le déclencheur ou le point de décision, nommez la règle et vérifiez que le sens n’a pas changé."),
-        PALE_GREEN,
-        BLUE,
-    )]
+    for index, prompt in enumerate(prompts[:4], 1):
+        story += [worksheet_item(f'R{index}', prompt, lines=2)]
     return story
 
 
@@ -1212,6 +1318,11 @@ def build_story(topic):
 
 def main():
     topics = json.loads(DATA.read_text(encoding='utf-8'))
+    editions = {
+        value.strip()
+        for value in os.environ.get('GRAMMAR_PDF_EDITIONS', 'complete,exercises,answer-key').split(',')
+        if value.strip()
+    }
     for topic in topics:
         level = topic['level'].lower()
         output_dir = OUTPUT / level
@@ -1219,25 +1330,28 @@ def main():
         output_dir.mkdir(parents=True, exist_ok=True)
         public_dir.mkdir(parents=True, exist_ok=True)
         filename = f"idiomaswl-{topic['slug']}.pdf" if topic['slug'].endswith(f'-{level}') else f"idiomaswl-{topic['slug']}-{level}.pdf"
-        target = output_dir / filename
-        Workbook(str(target), topic).build(build_story(topic))
-        trim_trailing_blank_pages(target)
-        shutil.copy2(target, public_dir / filename)
-        print(target.relative_to(ROOT))
-        if level in ('a1', 'a2', 'b1', 'b2', 'c1', 'c2'):
+        if 'complete' in editions:
+            target = output_dir / filename
+            Workbook(str(target), topic).build(build_story(topic))
+            trim_trailing_blank_pages(target)
+            shutil.copy2(target, public_dir / filename)
+            print(target.relative_to(ROOT))
+        if level in ('a1', 'a2', 'b1', 'b2', 'c1', 'c2') and {'exercises', 'answer-key'} & editions:
             stem = filename[:-4]
             exercises_filename = f"{stem}-{l('exercises', 'exercices')}.pdf"
             answer_key_filename = f"{stem}-{l('answer-key', 'corrige')}.pdf"
             exercises_target = output_dir / exercises_filename
             answer_key_target = output_dir / answer_key_filename
-            Workbook(str(exercises_target), topic, 'exercises').build(build_exercises_only_story(topic))
-            Workbook(str(answer_key_target), topic, 'answer-key').build(build_answer_key_only_story(topic))
-            trim_trailing_blank_pages(exercises_target)
-            trim_trailing_blank_pages(answer_key_target)
-            shutil.copy2(exercises_target, public_dir / exercises_filename)
-            shutil.copy2(answer_key_target, public_dir / answer_key_filename)
-            print(exercises_target.relative_to(ROOT))
-            print(answer_key_target.relative_to(ROOT))
+            if 'exercises' in editions:
+                Workbook(str(exercises_target), topic, 'exercises').build(build_exercises_only_story(topic))
+                trim_trailing_blank_pages(exercises_target)
+                shutil.copy2(exercises_target, public_dir / exercises_filename)
+                print(exercises_target.relative_to(ROOT))
+            if 'answer-key' in editions:
+                Workbook(str(answer_key_target), topic, 'answer-key').build(build_answer_key_only_story(topic))
+                trim_trailing_blank_pages(answer_key_target)
+                shutil.copy2(answer_key_target, public_dir / answer_key_filename)
+                print(answer_key_target.relative_to(ROOT))
     print(f"Fertig: {len(topics)} deutsche Grammatikkurse mit getrennten Ausgaben." if IS_GERMAN else f"Pronti: {len(topics)} corsi di grammatica italiana con edizioni separate." if IS_ITALIAN else f"Prontos: {len(topics)} cursos de gramática portuguesa com edições separadas." if IS_PORTUGUESE else f"완료: 한국어 문법 {len(topics)}개 강의와 분리형 자료를 생성했습니다." if IS_KOREAN else f"完了：日本語文法{len(topics)}レッスンと別冊資料を生成しました。" if IS_JAPANESE else f"Готово: создано {len(topics)} уроков русской грамматики и отдельные материалы." if IS_RUSSIAN else l(f"Ready: {len(topics)} English grammar PDF workbooks.", f"Prêt : {len(topics)} cours de grammaire française et leurs éditions séparées."))
 
 

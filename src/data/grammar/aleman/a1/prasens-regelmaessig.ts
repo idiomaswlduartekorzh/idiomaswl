@@ -169,7 +169,7 @@ const topic: GrammarTopic = {
         id: 'level-1',
         title: 'Nivel 1 — Erkennen',
         tag: 'Opción múltiple',
-        intro: 'Wähle die richtige Verbform (elige la forma verbal correcta).',
+        intro: 'Schreibe die richtige Verbform (escribe la forma verbal correcta).',
         type: 'choice',
         items: [
           { scene: 'Hablando de dónde vives', lines: [['', 'Ich ___ in Hamburg. (wohnen)']], options: ['wohne', 'wohnst', 'wohnt', 'wohnen'], answer: 'wohne', explain: '"Ich" → terminación -e: "wohne".' },
