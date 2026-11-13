@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "다회용기의 역설: 측정 범위의 확장이 가져온 성찰",
+      "en": "다회용기의 역설: 측정 범위의 확장이 가져온 성찰"
+    },
+    "intro": {
+      "es": "환경 보호를 위한 다회용기 도입이 오히려 생태계에 부정적 영향을 미칠 수 있다는 역설적인 분석을 통해, 정책 수립 시 고려해야 할 복합적인 측정 기준의 중요성을 탐구합니다.",
+      "en": "환경 보호를 위한 다회용기 도입이 오히려 생태계에 부정적 영향을 미칠 수 있다는 역설적인 분석을 통해, 정책 수립 시 고려해야 할 복합적인 측정 기준의 중요성을 탐구합니다."
+    },
+    "mission": {
+      "es": "환경 정책의 성공을 평가할 때 측정 범위를 어디까지 설정해야 하는지에 대한 비판적 사고력을 기르고, 텍스트에 나타난 인과관계와 잠재적 모순을 분석합니다.",
+      "en": "환경 정책의 성공을 평가할 때 측정 범위를 어디까지 설정해야 하는지에 대한 비판적 사고력을 기르고, 텍스트에 나타난 인과관계와 잠재적 모순을 분석합니다."
+    },
+    "targetText": "도시의 환경 정책을 총괄하는 서윤은 최근 시청 내 카페에서 시행한 다회용기 순환 시스템을 성공 사례로 보고했다. 초기 데이터는 고무적이었다. 일회용 플라스틱 컵의 사용량은 급감했고, 회수된 컵들은 세척 센터를 거쳐 다시 카페로 공급되는 선순환 구조를 보였다. 서윤은 이를 탄소 발자국을 줄이기 위한 혁신적인 모델로 자평하며, 시 전체로의 확대를 주장했다. 그러나 이 성과는 측정의 경계가 좁게 설정되었을 때만 유효했다. 현장 실무자인 민준은 세척 센터의 운영 데이터를 분석한 뒤 당혹감을 감출 수 없었다. 컵을 세척하기 위해 사용되는 막대한 양의 온수와 화학 세제, 그리고 컵을 수거하기 위해 매일 도심을 누비는 전기 트럭의 운행 거리는 초기 비용 산정에서 완전히 누락되어 있었다. 민준은 서윤에게 이 데이터를 제시하며 시스템의 전면 재검토를 요구했다. 세척 센터의 에너지 소비량은 일회용 컵을 폐기하는 과정에서 발생하는 환경 부하를 상회할 가능성이 컸다. 더욱이 다회용기의 내구성이 다하는 시점에 발생하는 폐기물 처리 문제는 고려조차 되지 않았다. 서윤은 이러한 지적이 시스템의 본질적인 가치를 훼손한다고 반박했다. 그녀에게 다회용기 도입은 단순히 탄소 배출량을 수치화하는 문제가 아니라, 시민들에게 일회용품 없는 삶이라는 문화를 정착시키는 상징적 행위였기 때문이다. 반면 민준은 환경 정책이 감성적 상징에 머물러서는 안 되며, 전 과정 평가를 통한 엄밀한 과학적 근거가 뒷받침되어야 한다고 맞섰다. 두 사람의 대립은 환경 보호라는 공동의 목표가 어떻게 상충하는 가치들 사이에서 길을 잃을 수 있는지를 극명하게 보여준다. 시스템의 경계를 카페 내부로 한정하면 환경의 구원자가 되지만, 물류와 세척 공정, 그리고 폐기 단계까지 그 범위를 넓히는 순간 다회용기는 또 다른 환경 오염의 주범으로 변모한다. 결국 이 갈등은 해결되지 않은 채 남았다. 시스템은 유지되었지만, 그 효용성에 대한 의문은 지워지지 않았다. 서윤은 시민들의 참여를 이끌어냈다는 만족감에 젖어 있었고, 민준은 데이터가 가리키는 불편한 진실을 홀로 응시하며 보고서의 여백에 의문부호를 남겼다. 우리는 환경을 구하기 위해 무엇을 측정하고, 무엇을 외면하고 있는가. 이 질문은 다회용기 순환 시스템이 우리에게 남긴 가장 무거운 과제다. 측정의 기준을 어디에 두느냐에 따라 환경 정책의 성패는 완전히 뒤바뀔 수 있다. 진정한 지속 가능성은 눈에 보이는 성과를 넘어, 보이지 않는 곳의 비용까지 책임지려는 태도에서 시작된다. 하지만 현실의 정책은 종종 가장 화려한 지표만을 선택적으로 취한다. 서윤과 민준의 사례는 우리가 환경을 보호한다는 명목으로 또 다른 부채를 미래 세대에 떠넘기고 있는 것은 아닌지 끊임없이 자문해야 함을 시사한다.\n\n이러한 논쟁은 비단 특정 정책의 효율성을 따지는 문제를 넘어 환경 정책이 지향해야 할 근본적인 철학적 토대를 다시금 고민하게 만든다. 만약 우리가 성급하게 눈앞의 가시적인 수치만을 쫓아 시스템을 설계한다면, 정작 해결해야 할 본질적인 생태계의 문제는 뒷전으로 밀려나고 말 것이다. 민준의 우려처럼 전 과정 평가를 생략한 채 상징성만을 앞세우는 정책은 결국 환경 보호라는 숭고한 이름 뒤에 숨겨진 또 다른 형태의 자원 낭비일 위험이 크다. 반대로 서윤이 주장하는 문화적 전환의 가치 역시 무시할 수 없는 측면인데, 이는 시민들의 인식 변화가 환경 정책의 실효성을 담보하는 가장 강력한 동력이기 때문이다. 결국 지속 가능한 도시를 구현하기 위해서는 정밀한 데이터 분석을 통한 과학적 엄밀함과 시민들의 자발적인 참여를 유도하는 상징적 가치가 긴밀하게 결합되어야 한다. 우리는 어느 한쪽의 논리에 치우치기보다 상반된 두 시각을 통합하여 더 넓은 시야에서 환경의 총체적인 비용과 편익을 재설계해야 하는 과제를 안고 있다. 정책의 성공 여부는 단순히 일회용품의 감소량에 있지 않으며, 그 시스템을 유지하기 위해 소모되는 보이지 않는 자원들까지 포괄적으로 관리할 수 있는 시스템의 유연성에 달려 있다. 이제는 환경 정책의 성패를 단기적인 지표로 판단하는 관행에서 벗어나, 미래 세대가 짊어져야 할 환경적 부채를 최소화하기 위한 장기적이고 통합적인 로드맵을 수립해야 할 시점이다. 서윤과 민준의 대립이 단순한 갈등을 넘어 보다 성숙한 환경 거버넌스를 구축하기 위한 생산적인 토론으로 이어질 때, 비로소 우리는 진정한 의미의 지속 가능한 발전을 향해 한 걸음 더 나아갈 수 있을 것이다.",
+    "wordCount": 530,
+    "estimatedMinutes": 22,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "고무적",
+        "lemma": "고무적",
+        "glosses": {
+          "es": "encouraging",
+          "en": "encouraging"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "누락",
+        "lemma": "누락",
+        "glosses": {
+          "es": "omission",
+          "en": "omission"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상회",
+        "lemma": "상회",
+        "glosses": {
+          "es": "exceeding",
+          "en": "exceeding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상충",
+        "lemma": "상충",
+        "glosses": {
+          "es": "conflict",
+          "en": "conflict"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "변모",
+        "lemma": "변모",
+        "glosses": {
+          "es": "transformation",
+          "en": "transformation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지속 가능성",
+        "lemma": "지속 가능성",
+        "glosses": {
+          "es": "sustainability",
+          "en": "sustainability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "환경 정책 측정 범위의 중요성"
+        },
+        {
+          "id": "a2",
+          "text": "다회용기 도입의 경제성"
+        },
+        {
+          "id": "a3",
+          "text": "세척 센터 운영의 효율적 개선 방안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "측정의 기준을 어디에 두느냐에 따라 환경 정책의 성패는 완전히 뒤바뀔 수 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "민준이 시스템 재검토를 요구한 구체적인 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "컵 회수율이 낮아서"
+        },
+        {
+          "id": "a2",
+          "text": "세척 센터의 에너지 소비가 과도해서"
+        },
+        {
+          "id": "a3",
+          "text": "시민들의 참여도가 저조해서"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "세척 센터의 에너지 소비량은 일회용 컵을 폐기하는 과정에서 발생하는 환경 부하를 상회할 가능성이 컸다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "서윤이 민준의 지적을 반박한 근거는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "데이터의 오류"
+        },
+        {
+          "id": "a2",
+          "text": "비용 절감 효과"
+        },
+        {
+          "id": "a3",
+          "text": "문화적 상징성"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그녀에게 다회용기 도입은 단순히 탄소 배출량을 수치화하는 문제가 아니라, 시민들에게 일회용품 없는 삶이라는 문화를 정착시키는 상징적 행위였기 때문이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 쓴 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "환경 정책 평가의 복합성을 경고하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "다회용기 사용을 독려하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "서윤과 민준의 갈등을 중재하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "우리는 환경을 구하기 위해 무엇을 측정하고, 무엇을 외면하고 있는가. 이 질문은 다회용기 순환 시스템이 우리에게 남긴 가장 무거운 과제다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적이다"
+        },
+        {
+          "id": "a3",
+          "text": "단호하고 명령조이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "진정한 지속 가능성은 눈에 보이는 성과를 넘어, 보이지 않는 곳의 비용까지 책임지려는 태도에서 시작된다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'상회'의 문맥적 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "더 낮음"
+        },
+        {
+          "id": "a2",
+          "text": "동일함"
+        },
+        {
+          "id": "a3",
+          "text": "더 높음"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "세척 센터의 에너지 소비량은 일회용 컵을 폐기하는 과정에서 발생하는 환경 부하를 상회할 가능성이 컸다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "환경 정책을 수립할 때 '측정 범위'를 설정하는 것이 왜 중요한지, 본문의 내용을 바탕으로 자신의 견해를 300자 내외의 한국어로 서술하시오.",
+      "en": "환경 정책을 수립할 때 '측정 범위'를 설정하는 것이 왜 중요한지, 본문의 내용을 바탕으로 자신의 견해를 300자 내외의 한국어로 서술하시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "환경 정책의 성공을 평가할 때 측정 범위를 어디까지 설정해야 하는지에 대한 비판적 사고력을 기르고, 텍스트에 나타난 인과관계와 잠재적 모순을 분석합니다.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "다회용기의 역설: 측정 범위의 확장이 가져온 성찰 | C2 Reading | WeLearn",
+      "en": "다회용기의 역설: 측정 범위의 확장이 가져온 성찰 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "환경 보호를 위한 다회용기 도입이 오히려 생태계에 부정적 영향을 미칠 수 있다는 역설적인 분석을 통해, 정책 수립 시 고려해야 할 복합적인 측정 기준의 중요성을 탐구합니다.",
+      "en": "환경 보호를 위한 다회용기 도입이 오히려 생태계에 부정적 영향을 미칠 수 있다는 역설적인 분석을 통해, 정책 수립 시 고려해야 할 복합적인 측정 기준의 중요성을 탐구합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

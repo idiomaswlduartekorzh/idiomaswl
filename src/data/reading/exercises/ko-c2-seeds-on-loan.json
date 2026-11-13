@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "종자의 기억과 박제된 유산",
+      "en": "종자의 기억과 박제된 유산"
+    },
+    "intro": {
+      "es": "구전되어 온 토종 종자를 보존하려는 공동체와 서류 중심의 아카이브 시스템이 충돌하는 상황을 다룬 이야기입니다.",
+      "en": "구전되어 온 토종 종자를 보존하려는 공동체와 서류 중심의 아카이브 시스템이 충돌하는 상황을 다룬 이야기입니다."
+    },
+    "mission": {
+      "es": "이 텍스트를 읽고 종자 보존의 가치와 제도적 한계에 대한 비판적 시각을 형성하세요.",
+      "en": "이 텍스트를 읽고 종자 보존의 가치와 제도적 한계에 대한 비판적 시각을 형성하세요."
+    },
+    "targetText": "산골 마을의 노인들은 대대로 이어져 온 토종 씨앗을 '살아있는 기억'이라 불렀다. 봄이 오면 그들은 흙의 온기를 살피며 조상에게 물려받은 씨앗을 심었고, 가을이면 가장 실한 열매를 골라 다음 해를 기약했다. 그러나 마을의 오랜 전통은 외부에서 온 '토종 종자 아카이브'라는 거대한 프로젝트와 마주하며 뜻밖의 난관에 봉착했다. 아카이브의 관리자인 박 연구원은 마을을 방문하여, 이 씨앗들이 국가 유산으로 등재되기 위해서는 엄격한 혈통 기록과 소유권 증빙 서류가 필수적이라고 강조했다. 그는 종자가 단순한 작물이 아니라 체계적으로 관리되어야 할 데이터라고 믿었다. 마을의 대표인 김 노인은 쓴웃음을 지으며 대답했다. \"이 씨앗들은 우리 할머니가 며느리에게, 또 그 며느리가 딸에게 건네준 손때 묻은 역사입니다. 서류에 적힌 숫자와 이름이 어떻게 이 씨앗에 담긴 땀과 눈물을 증명할 수 있겠습니까?\" 박 연구원은 규정의 중요성을 역설하며, 기록되지 않은 유산은 결국 소멸할 수밖에 없다는 논리를 펼쳤다. 그는 씨앗을 분자 단위로 분석하고, 그 기원을 명확히 밝혀야만 보호받을 자격이 있다고 주장했다. 하지만 김 노인에게 씨앗은 분석 대상이 아닌, 함께 살아온 동반자였다. 마을 사람들은 자신들의 씨앗을 '기증'이라는 이름으로 아카이브에 넘기는 것을 거부했다. 기증하는 순간, 씨앗은 박제된 전시품이 되어 마을의 밭에서 영원히 사라질 것이라는 공포 때문이었다. 아카이브는 마을의 구전 전통을 비과학적이라고 치부하며, 소유권 증빙이 없는 종자는 공공 자산으로 편입할 수 없다는 입장을 고수했다. 결국 아카이브는 마을의 씨앗을 목록에서 배제했고, 마을은 공식적인 보호망 밖에서 고립되었다. 박 연구원은 자신의 업무를 완수했다고 믿었지만, 마을의 뒷마당에서는 여전히 이름 없는 씨앗들이 싹을 틔우고 있었다. 하지만 그 싹들은 이제 제도적 지원을 기대할 수 없는, 철저히 고립된 생명체로 남게 되었다. 아카이브의 엄격한 잣대는 종자를 보존하겠다는 명분 아래, 오히려 그 종자가 생명력을 유지하는 방식인 '공유와 전승'의 맥락을 완전히 단절시켜 버린 것이다. 박 연구원이 떠난 뒤, 김 노인은 흙을 만지며 생각했다. 기록되지 않은 것은 정말 존재하지 않는 것일까? 서류 속에 갇힌 유산이 과연 진정한 유산이라 부를 수 있는가? 마을의 토종 씨앗은 이제 법적 보호라는 옷을 입지 못한 채, 오직 마을 사람들의 기억 속에서만 위태롭게 숨을 쉬고 있었다. 이 갈등은 유산이라는 이름으로 무엇을 남기고 무엇을 버릴 것인가에 대한 근원적인 질문을 남긴 채, 차가운 저녁 공기 속으로 흩어졌다.\n\n시간이 흐를수록 마을의 고립은 역설적인 결과를 낳았다. 제도적 보호망에서 벗어난 씨앗들은 박 연구원의 데이터베이스에는 존재하지 않는 유령 같은 작물이 되었지만, 오히려 외부의 간섭 없이 고유한 형질을 유지하며 척박한 환경에 더욱 강인하게 적응해 나갔다. 기록되지 않았기에 통제받지 않았고, 규격화되지 않았기에 오히려 종의 다양성을 스스로 증식하며 생태적 자생력을 확보한 것이다. 김 노인은 마을의 담장 너머로 번져가는 낯선 싹들을 보며 깨달았다. 서류상의 증명은 박제된 과거를 지키는 수단일 뿐, 살아있는 생명의 미래를 담보하지는 못한다는 사실을 말이다. 아카이브가 구축한 거대한 정보 체계는 효율적인 분류를 가능하게 했지만, 그 과정에서 종자가 수천 년간 흙과 대화하며 쌓아온 미묘한 변이와 적응의 역사는 철저히 배제되었다. 결국 제도화된 유산은 안전할지 모르나 성장을 멈춘 화석과 같았고, 마을의 이름 없는 씨앗들은 비록 법적 보호를 받지 못해 위태로웠으나 매년 새로운 계절을 맞이하며 진화의 길을 걷고 있었다. 이는 기록의 힘을 맹신하는 현대 사회에 던지는 묵직한 경종이었다. 진정한 보존이란 박제된 기록의 축적이 아니라, 그 생명이 숨 쉬는 현장에서의 지속적인 관계 맺음과 전승에 있다는 사실을 증명하고 있었다. 마을의 뒷마당에서 피어난 작은 꽃들은 아카이브의 차가운 보고서보다 훨씬 더 생생한 역사의 증거로서, 고립 속에서도 묵묵히 자신들만의 생명력을 증명하며 흙의 기억을 이어가고 있었다.",
+    "wordCount": 481,
+    "estimatedMinutes": 20,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "박제된",
+        "lemma": "박제된",
+        "glosses": {
+          "es": "stuffed or preserved as a specimen",
+          "en": "stuffed or preserved as a specimen"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "봉착했다",
+        "lemma": "봉착했다",
+        "glosses": {
+          "es": "encountered a difficulty",
+          "en": "encountered a difficulty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역설하며",
+        "lemma": "역설하며",
+        "glosses": {
+          "es": "emphasizing or stressing",
+          "en": "emphasizing or stressing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치부하며",
+        "lemma": "치부하며",
+        "glosses": {
+          "es": "considering or dismissing as",
+          "en": "considering or dismissing as"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "편입할",
+        "lemma": "편입할",
+        "glosses": {
+          "es": "incorporating or including",
+          "en": "incorporating or including"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "단절시켜",
+        "lemma": "단절시켜",
+        "glosses": {
+          "es": "severing or cutting off",
+          "en": "severing or cutting off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 14.6,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제도적 보존과 구전 전통의 충돌"
+        },
+        {
+          "id": "a2",
+          "text": "종자 보존의 기술적 방법론"
+        },
+        {
+          "id": "a3",
+          "text": "아카이브 구축을 위한 재정 지원"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "마을의 오랜 전통은 외부에서 온 '토종 종자 아카이브'라는 거대한 프로젝트와 마주하며 뜻밖의 난관에 봉착했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박 연구원이 마을 씨앗을 아카이브에 등재하기 위해 요구한 조건은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "마을 주민들의 공동체 서약서"
+        },
+        {
+          "id": "a2",
+          "text": "엄격한 혈통 기록과 소유권 증빙"
+        },
+        {
+          "id": "a3",
+          "text": "씨앗의 맛과 영양 성분 분석표"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "아카이브의 관리자인 박 연구원은 마을을 방문하여, 이 씨앗들이 국가 유산으로 등재되기 위해서는 엄격한 혈통 기록과 소유권 증빙 서류가 필수적이라고 강조했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "마을 사람들이 씨앗을 아카이브에 기증하기를 거부한 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "아카이브의 보상금이 적어서"
+        },
+        {
+          "id": "a2",
+          "text": "다른 마을과 경쟁해야 해서"
+        },
+        {
+          "id": "a3",
+          "text": "씨앗이 박제된 전시품이 될까 봐"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "기증하는 순간, 씨앗은 박제된 전시품이 되어 마을의 밭에서 영원히 사라질 것이라는 공포 때문이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 통해 전달하고자 하는 의도는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제도적 보존의 한계와 모순을 지적하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "아카이브의 관리 체계를 홍보하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "기록 문화의 중요성을 강조하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "아카이브의 엄격한 잣대는 종자를 보존하겠다는 명분 아래, 오히려 그 종자가 생명력을 유지하는 방식인 '공유와 전승'의 맥락을 완전히 단절시켜 버린 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글의 전반적인 분위기와 어조로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "희망차고 낙관적인 분위기"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적인 분위기"
+        },
+        {
+          "id": "a3",
+          "text": "냉소적이고 공격적인 분위기"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "기록되지 않은 것은 정말 존재하지 않는 것일까? 서류 속에 갇힌 유산이 과연 진정한 유산이라 부를 수 있는가?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'편입할'의 문맥적 의미와 가장 가까운 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "외부의 것을 밖으로 배제함"
+        },
+        {
+          "id": "a2",
+          "text": "새로운 기술을 도입하여 변경함"
+        },
+        {
+          "id": "a3",
+          "text": "기존의 체제 안으로 포함함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "소유권 증빙이 없는 종자는 공공 자산으로 편입할 수 없다는 입장을 고수했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "당신이 만약 마을의 대표라면, 박 연구원에게 종자의 가치를 증명하기 위해 서류 외에 어떤 대안을 제시할 수 있을지 논리적으로 서술하십시오.",
+      "en": "당신이 만약 마을의 대표라면, 박 연구원에게 종자의 가치를 증명하기 위해 서류 외에 어떤 대안을 제시할 수 있을지 논리적으로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "이 텍스트를 읽고 종자 보존의 가치와 제도적 한계에 대한 비판적 시각을 형성하세요.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "종자의 기억과 박제된 유산 | C2 Reading | WeLearn",
+      "en": "종자의 기억과 박제된 유산 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "구전되어 온 토종 종자를 보존하려는 공동체와 서류 중심의 아카이브 시스템이 충돌하는 상황을 다룬 이야기입니다.",
+      "en": "구전되어 온 토종 종자를 보존하려는 공동체와 서류 중심의 아카이브 시스템이 충돌하는 상황을 다룬 이야기입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

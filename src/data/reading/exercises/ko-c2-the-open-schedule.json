@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-open-schedule",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "유연한 시간표의 역설: 공정성에 관한 제언",
+      "en": "유연한 시간표의 역설: 공정성에 관한 제언"
+    },
+    "intro": {
+      "es": "학교 시간표의 자율 선택제가 과연 학생들에게 평등한 기회를 제공하는지에 대해 비판적으로 고찰하는 이메일 형식의 글입니다.",
+      "en": "학교 시간표의 자율 선택제가 과연 학생들에게 평등한 기회를 제공하는지에 대해 비판적으로 고찰하는 이메일 형식의 글입니다."
+    },
+    "mission": {
+      "es": "글의 논지를 파악하고, 시간의 불평등이 어떻게 구조적 차별로 이어지는지 분석하십시오.",
+      "en": "글의 논지를 파악하고, 시간의 불평등이 어떻게 구조적 차별로 이어지는지 분석하십시오."
+    },
+    "targetText": "수신: 교무처장 김민준 선생님, 발신: 교육과정 연구위원 박현우. 김 선생님, 지난주 학부모 운영위원회에서 논의된 '선택형 시간표 도입안'에 대해 심도 있는 고민을 거듭한 끝에 우려의 목소리를 전합니다. 현재 우리 학교가 추진 중인 유연한 시간표는 학생 개개인의 선호와 학습 리듬을 존중한다는 명분 아래 설계되었습니다. 그러나 이러한 자율성이 과연 모든 학생에게 동일한 출발선을 보장하는지에 대해서는 회의적입니다. 시간의 활용은 단순히 개인의 의지 문제가 아니라, 그 학생이 처한 가정 환경과 가용 자원의 격차를 고스란히 반영하기 때문입니다. 특정 학생들은 방과 후 사교육이나 가정 내 학습 지원을 통해 시간의 밀도를 높일 수 있는 반면, 그렇지 못한 학생들은 시간표 선택의 자유를 누릴 여력조차 없습니다. 결국 학교가 제공하는 선택권은 오히려 불평등을 심화시키는 기제로 작용할 위험이 큽니다. 우리는 시간표를 짜는 행위를 학생의 개인적 취향을 반영하는 사소한 절차로 치부하고 있습니다. 하지만 이는 학생들이 가진 시간의 통제권이 얼마나 불평등하게 분배되어 있는지를 간과한 처사입니다. 어떤 학생에게는 오후 4시 이후의 시간이 자기 계발의 기회지만, 다른 학생에게는 가사 노동이나 동생 돌봄의 시간입니다. 학교가 이러한 현실적 제약을 '개인의 선호'라는 틀로 재단하는 순간, 우리는 구조적 불평등을 개인의 선택 실패로 치환하는 오류를 범하게 됩니다. 제가 제안하는 바는 명확합니다. 선택형 시간표의 도입을 전면 재검토하거나, 최소한 취약 계층 학생들을 위한 시간 보전 대책을 병행해야 한다는 점입니다. 지난번 논의에서 선생님께서는 학생들의 자율성을 극대화하는 것이 현대 교육의 지향점이라고 강조하셨습니다. 하지만 자율성은 그 기반이 되는 조건이 평등할 때만 진정한 가치를 발휘합니다. 기초적인 시간 자산마저 차등적인 상황에서 선택권만을 강조하는 것은, 마치 낡은 닻을 단 배에게 항로를 스스로 결정하라는 무책임한 처사와 다름없습니다. 어제 저녁, 방과 후 학교 도서관에서 마감 직전까지 공부하던 한 학생을 보았습니다. 그 아이는 시간표를 선택할 여유가 없어 남은 수업을 억지로 끼워 넣어야만 했습니다. 그 아이의 고단한 얼굴에서 저는 우리가 추구하는 유연함의 이면을 보았습니다. 부디 이 제도가 누군가에게는 또 다른 족쇄가 되지 않도록, 제안드린 대책을 차기 회의 안건으로 상정해 주시길 간곡히 부탁드립니다. 교육의 공정성은 선택의 폭이 아니라, 선택할 수 없는 이들을 향한 배려에서 시작되어야 합니다.\n\n나아가 이러한 선택형 시간표가 가져올 파생적 부작용은 단순히 학생 개인의 학습권 침해에 그치지 않고 학교라는 공동체의 응집력을 근본적으로 약화할 가능성이 다분합니다. 학생들이 각자의 시간표를 따라 뿔뿔이 흩어지는 구조 속에서 교실은 더 이상 공통의 경험을 공유하고 서로의 다름을 이해하는 사회적 장으로 기능하기 어렵기 때문입니다. 우리가 교육을 통해 길러내고자 하는 가치는 단순히 지식의 습득을 넘어 타인과 조화를 이루고 공동체의 일원으로서 책임감을 배우는 과정에 있습니다. 그러나 선택권이라는 미명 아래 학생들을 개별화된 시간의 파편으로 분리한다면 우리는 결국 연대라는 소중한 가치를 잃어버린 채 각자도생의 길을 걷는 개인들만을 양산하게 될 것입니다. 교실 안에서 이루어지는 우연한 만남과 예기치 못한 토론은 정해진 교과 과정 이상의 성장을 이끌어내는 핵심 동력이었으나 파편화된 시간표는 이러한 우연의 미학마저 거세하고 맙니다. 따라서 우리는 선택의 자유가 가져올 효율성이라는 달콤한 환상 뒤에 숨겨진 공동체적 결속력의 붕괴를 직시해야 하며 이를 방지하기 위한 제도적 보완책을 마련하는 데 지혜를 모아야 할 시점입니다. 단순히 학생들의 선호를 반영하는 것을 넘어 모두가 함께 호흡할 수 있는 공통 시간을 확보하고 소외되는 이들이 없도록 배려하는 안전망을 구축하는 것이야말로 진정한 교육의 본질을 회복하는 길이라 확신합니다. 부디 이번 안건을 심의함에 있어 개인의 자율성이라는 가치와 공동체의 공존이라는 가치가 어떻게 조화를 이룰 수 있을지 깊이 있게 숙고해 주시기를 다시 한번 요청드립니다. 시간표는 단순한 행정적 도구가 아니라 우리 학교가 지향하는 교육 철학을 투영하는 거울임을 기억해 주십시오.",
+    "wordCount": 490,
+    "estimatedMinutes": 20,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "명분",
+        "lemma": "명분",
+        "glosses": {
+          "es": "justification or pretext",
+          "en": "justification or pretext"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치부하고",
+        "lemma": "치부하고",
+        "glosses": {
+          "es": "to consider or regard as",
+          "en": "to consider or regard as"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치환하는",
+        "lemma": "치환하는",
+        "glosses": {
+          "es": "to substitute or replace",
+          "en": "to substitute or replace"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "보전",
+        "lemma": "보전",
+        "glosses": {
+          "es": "preservation or compensation",
+          "en": "preservation or compensation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지향점",
+        "lemma": "지향점",
+        "glosses": {
+          "es": "point of orientation or goal",
+          "en": "point of orientation or goal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "족쇄",
+        "lemma": "족쇄",
+        "glosses": {
+          "es": "shackles or fetters",
+          "en": "shackles or fetters"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.3,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주장으로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "시간표 자율성이 불평등을 심화시킬 수 있다."
+        },
+        {
+          "id": "a2",
+          "text": "선택형 시간표의 도입을 전면 찬성한다."
+        },
+        {
+          "id": "a3",
+          "text": "학생들의 학습 리듬을 고려한 시간표가 필요하다."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "결국 학교가 제공하는 선택권은 오히려 불평등을 심화시키는 기제로 작용할 위험이 큽니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박현우 위원이 지적한 시간표 선택의 현실적 제약은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학생들의 사교육 참여율 저조"
+        },
+        {
+          "id": "a2",
+          "text": "가정 내 학습 지원의 불균형"
+        },
+        {
+          "id": "a3",
+          "text": "교사들의 시간표 편성 업무 과중"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "특정 학생들은 방과 후 사교육이나 가정 내 학습 지원을 통해 시간의 밀도를 높일 수 있는 반면, 그렇지 못한 학생들은 시간표 선택의 자유를 누릴 여력조차 없습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "박현우 위원이 '낡은 닻을 단 배'라는 비유를 사용한 의도는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학교의 행정적인 무능함을 비판하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "학생들의 자율적 항로 개척을 독려하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "평등한 조건 없는 선택권의 무의미함을 강조하기 위해"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "기초적인 시간 자산마저 차등적인 상황에서 선택권만을 강조하는 것은, 마치 낡은 닻을 단 배에게 항로를 스스로 결정하라는 무책임한 처사와 다름없습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "이 이메일을 작성한 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "선택형 시간표 도입의 문제점을 알리고 대책 마련을 요구하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "학교 운영위원회 회의 결과에 대한 감사를 표하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "학생들의 방과 후 학습 환경 개선을 위한 예산 지원을 요청하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "부디 이 제도가 누군가에게는 또 다른 족쇄가 되지 않도록, 제안드린 대책을 차기 회의 안건으로 상정해 주시길 간곡히 부탁드립니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글쓴이의 어조로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적인 어조"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 우려 섞인 어조"
+        },
+        {
+          "id": "a3",
+          "text": "냉소적이고 무관심한 어조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "현재 우리 학교가 추진 중인 유연한 시간표는 학생 개개인의 선호와 학습 리듬을 존중한다는 명분 아래 설계되었습니다. 그러나 이러한 자율성이 과연 모든 학생에게 동일한 출발선을 보장하는지에 대해서는 회의적입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'치환하는'의 문맥적 의미와 가장 유사한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "시간표 선택의 자유를 보장하기 위해 기존의 제도를 폐지하는 것"
+        },
+        {
+          "id": "a2",
+          "text": "학생들의 학습 리듬을 존중하기 위해 새로운 교육 과정을 도입하는 것"
+        },
+        {
+          "id": "a3",
+          "text": "구조적 불평등을 개인의 선택 실패라는 문제로 바꾸어 해석하는 것"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "우리는 구조적 불평등을 개인의 선택 실패로 치환하는 오류를 범하게 됩니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "학교 시간표의 자율성이 학생들에게 미치는 영향에 대해, 본인의 생각을 포함하여 300자 내외로 논술하십시오.",
+      "en": "학교 시간표의 자율성이 학생들에게 미치는 영향에 대해, 본인의 생각을 포함하여 300자 내외로 논술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "글의 논지를 파악하고, 시간의 불평등이 어떻게 구조적 차별로 이어지는지 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "유연한 시간표의 역설: 공정성에 관한 제언 | C2 Reading | WeLearn",
+      "en": "유연한 시간표의 역설: 공정성에 관한 제언 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "학교 시간표의 자율 선택제가 과연 학생들에게 평등한 기회를 제공하는지에 대해 비판적으로 고찰하는 이메일 형식의 글입니다.",
+      "en": "학교 시간표의 자율 선택제가 과연 학생들에게 평등한 기회를 제공하는지에 대해 비판적으로 고찰하는 이메일 형식의 글입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

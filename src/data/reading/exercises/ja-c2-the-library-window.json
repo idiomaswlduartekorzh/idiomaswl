@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-library-window",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "静寂の代償",
+      "en": "静寂の代償"
+    },
+    "intro": {
+      "es": "公共図書館の開館時間を巡り、労働の不可視化と制度の傲慢さを問う物語。",
+      "en": "公共図書館の開館時間を巡り、労働の不可視化と制度の傲慢さを問う物語。"
+    },
+    "mission": {
+      "es": "物語を読み、制度が提供する「利便性」の背後にある労働の倫理と、その矛盾について深く考察せよ。",
+      "en": "物語を読み、制度が提供する「利便性」の背後にある労働の倫理と、その矛盾について深く考察せよ。"
+    },
+    "targetText": "街の北端に位置する市立中央図書館の重厚な扉が閉ざされるのは、いつも夜の十時である。館長の佐伯は、この「夜間開館」こそが市民に対する公共サービスの極致であると自負していた。しかし、その扉の向こう側で、閉館後の静寂を維持するために奔走する司書の高橋の視界は、常に疲労で歪んでいた。高橋にとっての十時は、安らぎの始まりではなく、膨大な返却本の整理と書架の乱れを正すという、終わりの見えない肉体労働の号砲に過ぎなかった。佐伯は「市民の知る権利」を盾に、予算を削りながらも開館時間の延長を強行したが、その決定の過程で、現場の人間がどれほどの代償を払っているのかを顧みることは一度もなかった。\n\nある雨の夜、一人の利用者が閉館時間ギリギリまで閲覧室に居座り、高橋が何度も退館を促しても無視を決め込んだ。その利用者は「図書館はいつでも開いているべきだ」と、公僕である高橋に対して当然のように言い放った。その言葉は、まるで図書館という空間が魔法のように自律的に機能しているという幻想を体現していた。高橋は、自分が単なる管理の駒として消費されているという感覚に襲われ、その場に立ち尽くした。図書館という神聖な知の殿堂が、実は誰かの犠牲の上に成り立っているという事実は、利用者の想像力を遥かに超えた場所にあるようだった。\n\n翌朝、佐伯は高橋を呼び出し、昨夜の閉館作業が遅れたことを叱責した。佐伯は「市民の利便性を損なうことは、図書館の存在意義を否定することと同義だ」と説教を繰り返した。高橋は、開館を維持するための人員配置や、深夜の帰宅に伴う安全確保といった具体的な問題点を指摘しようとしたが、佐伯の言葉は、それらすべてを「個人の努力不足」という矮小な枠組みへと回収していった。高橋は、制度という巨大な歯車が、個人の苦痛を潤滑油として飲み込んでいく様を、ただ冷ややかに眺めていた。\n\nその日の午後、高橋は館内の掲示板に、深夜開館の維持が困難であるという旨の内部メモを貼り出した。それは、佐伯の掲げる「市民第一」という美辞麗句に対する、静かな反乱であった。高橋は、図書館が提供する知識の光が、裏側で働く人々の影を濃くしているという矛盾を、誰かに突きつけなければならないと感じていた。メモには、開館時間の短縮を求める署名活動の開始が記されていた。それは、単なる労働条件の改善要求ではなく、公共という概念の再定義を迫る挑戦状でもあった。\n\n夕刻、署名簿を手に取った高橋の元に、佐伯が激昂して現れた。佐伯は署名簿を奪い去り、破り捨てようとしたが、その手は震えていた。高橋は、佐伯が守ろうとしているものが、もはや市民の利益ではなく、自身の管理職としての権威と、制度の維持という虚構であることを見抜いていた。高橋は、図書館の扉を内側から施錠し、佐伯の叫び声が響く中で、静かにその場を去った。翌日、図書館は開館しなかった。それは、沈黙を強いられてきた労働が、初めてその重みを持って空間を支配した瞬間であった。\n\n図書館が沈黙を守り続けたその日、街には奇妙な動揺が広がった。普段、知の恩恵を当然のように享受していた市民たちは、扉が閉ざされたという事実に直面し、初めてその空間が維持されるためのコストを意識せざるを得なくなった。SNS上では、開館を求める声と、労働環境の改善を支持する声が激しく交錯し、公共サービスとは誰のために、どのような犠牲の上に成り立つべきなのかという問いが、街の至る所で議論の的となった。佐伯の権威は、高橋が突きつけた沈黙という名の抗議によって根底から揺らぎ、彼が掲げていた「市民第一」というスローガンは、空虚な響きを伴って剥がれ落ちていった。一方で、高橋が示したのは、単なる労働の放棄ではなく、サービスという名の搾取に対する明確な境界線の提示であった。この出来事は、図書館という聖域が、管理者の独善と利用者の無関心によっていかに脆く崩れ去るかという教訓を、市民の心に深く刻み込んだ。閉ざされた扉は、単なる物理的な遮断を超え、公共の在り方を問い直すための巨大な鏡として、街の真ん中に立ち尽くしていたのである。やがて、事態を重く見た自治体の上層部が介入し、佐伯の独断的な運営方針は見直されることとなったが、高橋が残した爪痕は消えることはなかった。図書館という場所が、誰の犠牲も必要としない真の知の共有地へと再生されるためには、まず、その裏側にある労働の尊厳を、社会全体が等しく認識しなければならないという事実が、重い沈黙と共に街を支配し続けていた。この小さな反乱は、形を変えて公共の未来を形作る礎となり、かつて高橋が感じていた疲労の歪みは、ようやく正当な評価という光の下で、その輪郭を取り戻し始めたのである。",
+    "wordCount": 1798,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "極致",
+        "lemma": "極致",
+        "glosses": {
+          "es": "the ultimate point or zenith",
+          "en": "the ultimate point or zenith"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "自律的",
+        "lemma": "自律的",
+        "glosses": {
+          "es": "autonomous",
+          "en": "autonomous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "矮小",
+        "lemma": "矮小",
+        "glosses": {
+          "es": "miniscule or trivialized",
+          "en": "miniscule or trivialized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "潤滑油",
+        "lemma": "潤滑油",
+        "glosses": {
+          "es": "lubricant",
+          "en": "lubricant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "美辞麗句",
+        "lemma": "美辞麗句",
+        "glosses": {
+          "es": "flowery language or empty rhetoric",
+          "en": "flowery language or empty rhetoric"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "虚構",
+        "lemma": "虚構",
+        "glosses": {
+          "es": "fiction or fabrication",
+          "en": "fiction or fabrication"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 51.4,
+      "maxSentenceWords": 95,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主題として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "公共サービスの労働倫理"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の運営効率化"
+        },
+        {
+          "id": "a3",
+          "text": "市民と図書館の信頼関係"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "図書館という神聖な知の殿堂が、実は誰かの犠牲の上に成り立っているという事実は、利用者の想像力を遥かに超えた場所にあるようだった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "高橋が署名活動を始めた直接的なきっかけは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "利用者の言動"
+        },
+        {
+          "id": "a2",
+          "text": "佐伯の叱責"
+        },
+        {
+          "id": "a3",
+          "text": "深夜開館の強行"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "佐伯は「市民の利便性を損なうことは、図書館の存在意義を否定することと同義だ」と説教を繰り返した。高橋は、開館を維持するための人員配置や、深夜の帰宅に伴う安全確保といった具体的な問題点を指摘しようとしたが、佐伯の言葉は、それらすべてを「個人の努力不足」という矮小な枠組みへと回収していった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐伯が署名簿を破ろうとした際、手が震えていた理由として考えられることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "高橋に対する個人的な怒り"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の経営が破綻する不安"
+        },
+        {
+          "id": "a3",
+          "text": "自身の権威が揺らぐ恐怖"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "高橋は、佐伯が守ろうとしているものが、もはや市民の利益ではなく、自身の管理職としての権威と、制度の維持という虚構であることを見抜いていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "高橋が最後に図書館を施錠した行為の意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "労働の重みを可視化するため"
+        },
+        {
+          "id": "a2",
+          "text": "佐伯を部屋に閉じ込めるため"
+        },
+        {
+          "id": "a3",
+          "text": "図書館の備品を守るため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "それは、沈黙を強いられてきた労働が、初めてその重みを持って空間を支配した瞬間であった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語全体を通して、語り手が佐伯に対して抱いている感情はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "中立的"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "同情的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "高橋は、制度という巨大な歯車が、個人の苦痛を潤滑油として飲み込んでいく様を、ただ冷ややかに眺めていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「矮小」という言葉が持つニュアンスと最も近いものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "物理的に小さくする"
+        },
+        {
+          "id": "a2",
+          "text": "重要性を認めないこと"
+        },
+        {
+          "id": "a3",
+          "text": "価値を過小評価する"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "佐伯の言葉は、それらすべてを「個人の努力不足」という矮小な枠組みへと回収していった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「公共サービス」という言葉が、しばしば現場の労働者の犠牲を正当化する道具として使われることについて、あなたの考えを800字程度で論じなさい。",
+      "en": "「公共サービス」という言葉が、しばしば現場の労働者の犠牲を正当化する道具として使われることについて、あなたの考えを800字程度で論じなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "物語を読み、制度が提供する「利便性」の背後にある労働の倫理と、その矛盾について深く考察せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "静寂の代償 | C2 Reading | WeLearn",
+      "en": "静寂の代償 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "公共図書館の開館時間を巡り、労働の不可視化と制度の傲慢さを問う物語。",
+      "en": "公共図書館の開館時間を巡り、労働の不可視化と制度の傲慢さを問う物語。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

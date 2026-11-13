@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-local-stage",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "무대 위의 수치: 지역 극단의 딜레마",
+      "en": "무대 위의 수치: 지역 극단의 딜레마"
+    },
+    "intro": {
+      "es": "지역 문화 예술의 가치를 단순히 관객 수라는 정량적 지표로만 측정할 때 발생하는 예술적, 윤리적 갈등을 다룬 비평적 기사입니다.",
+      "en": "지역 문화 예술의 가치를 단순히 관객 수라는 정량적 지표로만 측정할 때 발생하는 예술적, 윤리적 갈등을 다룬 비평적 기사입니다."
+    },
+    "mission": {
+      "es": "예술의 본질적 가치와 효율성 중심의 평가 기준 사이의 긴장을 분석하고, 지역 사회 내 극단의 역할을 비판적으로 고찰하십시오.",
+      "en": "예술의 본질적 가치와 효율성 중심의 평가 기준 사이의 긴장을 분석하고, 지역 사회 내 극단의 역할을 비판적으로 고찰하십시오."
+    },
+    "targetText": "최근 소규모 지역 극단인 '늘푸른터'는 연말 정기 공연을 앞두고 극심한 내홍을 겪었다. 극단 대표인 박진우 연출가는 예술적 실험성을 강조하며 대중성이 낮은 고전 비극을 무대에 올리려 했으나, 운영위원장인 최수현은 지자체 지원금 수급을 위해 관객 동원력을 증명해야 한다며 현대적인 로맨틱 코미디로의 변경을 강력히 주장했다. 결국 타협점 없이 강행된 공연은 좌석 점유율이라는 차가운 수치 앞에 처참한 성적표를 받아들었다. 이번 사태는 예술을 단순히 숫자로 치환하려는 현대 사회의 관료적 시각이 지역 문화의 생태계를 어떻게 질식시키는지를 적나라하게 보여주는 사례로 남았다. 지자체는 매년 지원금의 규모를 결정할 때 전년도 관객 수와 티켓 판매액을 가장 중요한 평가지표로 활용한다. 이러한 성과주의적 접근은 예술가들에게 창작의 자유보다는 생존을 위한 타협을 강요한다. 박 연출가는 고전의 현대적 재해석을 통해 지역민들에게 철학적 사유의 기회를 제공하고자 했으나, 결과적으로는 지원금 삭감이라는 현실적 파국을 맞이했다. 반면 최 위원장은 대중의 취향을 반영하는 것이야말로 극단이 지역 사회에 봉사하는 길이라며 자신의 정당성을 피력했다. 그러나 과연 예술의 가치가 오직 다수의 선택을 받는 것에만 있는가라는 근본적인 질문은 여전히 해결되지 않은 채 남았다. 공연이 끝난 직후 극단은 재정난을 이유로 해체 위기에 직면했다. 이 과정에서 관객들은 단순히 소비자로 전락했고, 예술은 그저 통계 자료의 일부가 되었다. 지역 극단이 추구해야 할 진정한 공동체적 가치는 숫자로 환산할 수 없는 무대와 객석 사이의 미묘한 정서적 교감에 있다. 그럼에도 불구하고 효율성만을 잣대로 들이대는 평가 시스템은 예술가들에게 끊임없이 대중적 성공을 입증하라고 압박한다. 이러한 환경 속에서 실험적인 시도는 사치로 치부되며, 결국 극단들은 획일화된 콘텐츠만을 양산하게 된다. 이번 '늘푸른터'의 사례는 단순히 한 극단의 몰락을 넘어, 우리 사회가 예술을 대하는 방식에 대한 뼈아픈 성찰을 요구한다. 관객 수라는 지표가 예술의 질을 담보할 수 없다는 것은 자명한 사실이다. 그럼에도 불구하고 우리는 여전히 수치화된 성과에 매몰되어 예술의 본질적 가치를 훼손하고 있다. 예술은 효율성을 극대화하는 산업이 아니라, 인간의 삶을 풍요롭게 하는 정신적 지향점이어야 한다. 이제는 예술을 평가하는 새로운 기준이 필요하다. 단순히 관객의 숫자를 세는 것을 넘어, 그들이 공연을 통해 어떤 변화를 경험했는지, 극단이 지역 사회와 어떤 깊은 유대감을 형성했는지를 살피는 정성적 평가 체계가 시급하다. 그렇지 않다면 우리는 앞으로도 수많은 '늘푸른터'가 숫자의 무게에 짓눌려 사라지는 것을 무력하게 지켜볼 수밖에 없을 것이다. 예술의 가치를 숫자로 환산하려는 시도는 결국 예술의 생명력을 거세하는 행위와 다름없음을 우리는 직시해야 한다.\n\n물론 이러한 정성적 평가의 도입이 현실적인 대안이 될 수 있다는 점에는 동의하지만 일각에서는 이를 두고 또 다른 형태의 관료주의적 통제가 될 수 있다는 우려를 제기하기도 한다. 공연의 감동이나 유대감과 같은 주관적 영역을 객관화하려는 시도 자체가 예술의 자율성을 침해할 위험이 크기 때문이다. 만약 평가의 잣대가 정량에서 정성으로 옮겨간다면 그 기준을 누가 어떤 방식으로 설정할 것인가라는 새로운 난제가 발생한다. 이는 결국 예술가들이 심사위원의 입맛에 맞춘 감성적인 서사를 의도적으로 창작하게 만드는 또 다른 규격화의 굴레가 될 수도 있다. 진정한 예술적 독립성은 외부의 평가 체계가 바뀌는 것에서 오는 것이 아니라 예술가 스스로가 시장의 논리로부터 자유로워지려는 태도에서 시작되어야 할지도 모른다. 따라서 단순히 평가 지표의 변화를 요구하는 것을 넘어 예술가들이 자생할 수 있는 구조적 토대를 마련하는 것이 더욱 시급한 과제다. 지역 사회가 예술을 지원하는 방식이 시혜적인 보조금 형태가 아니라 예술가와 시민이 함께 호흡하며 지속 가능한 생태계를 구축하는 협력적 모델로 전환되어야 한다. 결국 예술의 가치를 지키는 것은 수치도 평가도 아닌 예술을 향한 시민들의 능동적인 참여와 그 가치를 존중하는 사회적 성숙도에 달려 있다. 우리가 진정으로 고민해야 할 지점은 예술을 어떻게 평가할 것인가가 아니라 어떻게 예술이 그 본연의 생명력을 잃지 않고 지역 사회의 일상 속에 자연스럽게 스며들게 할 것인가 하는 문제일 것이다.",
+    "wordCount": 509,
+    "estimatedMinutes": 21,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "내홍",
+        "lemma": "내홍",
+        "glosses": {
+          "es": "internal strife",
+          "en": "internal strife"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치환",
+        "lemma": "치환",
+        "glosses": {
+          "es": "substitution",
+          "en": "substitution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "질식",
+        "lemma": "질식",
+        "glosses": {
+          "es": "suffocation",
+          "en": "suffocation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "피력",
+        "lemma": "피력",
+        "glosses": {
+          "es": "expressing one's opinion",
+          "en": "expressing one's opinion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "담보",
+        "lemma": "담보",
+        "glosses": {
+          "es": "guarantee",
+          "en": "guarantee"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "거세",
+        "lemma": "거세",
+        "glosses": {
+          "es": "castration or removal of vitality",
+          "en": "castration or removal of vitality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.4,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문이 다루는 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "예술의 정량적 평가 방식에 대한 비판"
+        },
+        {
+          "id": "a2",
+          "text": "지역 극단 늘푸른터의 성공적인 운영 전략"
+        },
+        {
+          "id": "a3",
+          "text": "지자체 지원금의 투명성 확보를 위한 방안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 사태는 예술을 단순히 숫자로 치환하려는 현대 사회의 관료적 시각이 지역 문화의 생태계를 어떻게 질식시키는지를 적나라하게 보여주는 사례로 남았다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박진우 연출가가 무대에 올리고자 했던 작품의 장르는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "현대 로맨틱 코미디"
+        },
+        {
+          "id": "a2",
+          "text": "고전 비극"
+        },
+        {
+          "id": "a3",
+          "text": "창작 뮤지컬"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "박진우 연출가는 예술적 실험성을 강조하며 대중성이 낮은 고전 비극을 무대에 올리려 했으나",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "본문에서 언급된 극단의 해체 위기를 통해 알 수 있는 사실은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지자체는 극단의 예술성을 높이 평가하여 지원금을 늘렸다"
+        },
+        {
+          "id": "a2",
+          "text": "최수현 위원장의 로맨틱 코미디 기획은 큰 상업적 성공을 거두었다"
+        },
+        {
+          "id": "a3",
+          "text": "관객 수 중심의 평가가 예술적 다양성을 저해한다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이러한 성과주의적 접근은 예술가들에게 창작의 자유보다는 생존을 위한 타협을 강요한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 정성적 평가 체계의 도입을 주장하는 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "예술의 본질적 가치와 지역 사회와의 유대감을 측정하기 위해서"
+        },
+        {
+          "id": "a2",
+          "text": "관객 수 데이터를 더욱 정밀하게 분석하여 효율성을 증대하기 위해서"
+        },
+        {
+          "id": "a3",
+          "text": "지자체의 행정 편의를 돕고 지원금 배분의 공정성을 높이기 위해서"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "단순히 관객의 숫자를 세는 것을 넘어, 그들이 공연을 통해 어떤 변화를 경험했는지, 극단이 지역 사회와 어떤 깊은 유대감을 형성했는지를 살피는 정성적 평가 체계가 시급하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "본문의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "중립적이고 객관적임"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적임"
+        },
+        {
+          "id": "a3",
+          "text": "낙관적이고 희망적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "이번 '늘푸른터'의 사례는 단순히 한 극단의 몰락을 넘어, 우리 사회가 예술을 대하는 방식에 대한 뼈아픈 성찰을 요구한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'담보'라는 단어의 문맥적 의미로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제공"
+        },
+        {
+          "id": "a2",
+          "text": "수집"
+        },
+        {
+          "id": "a3",
+          "text": "보장"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "관객 수라는 지표가 예술의 질을 담보할 수 없다는 것은 자명한 사실이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "예술의 가치를 숫자로 측정하는 현행 평가 시스템이 지역 문화 예술의 미래에 미치는 부정적 영향에 대해 본문의 논지를 활용하여 서술하십시오.",
+      "en": "예술의 가치를 숫자로 측정하는 현행 평가 시스템이 지역 문화 예술의 미래에 미치는 부정적 영향에 대해 본문의 논지를 활용하여 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "예술의 본질적 가치와 효율성 중심의 평가 기준 사이의 긴장을 분석하고, 지역 사회 내 극단의 역할을 비판적으로 고찰하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "무대 위의 수치: 지역 극단의 딜레마 | C2 Reading | WeLearn",
+      "en": "무대 위의 수치: 지역 극단의 딜레마 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "지역 문화 예술의 가치를 단순히 관객 수라는 정량적 지표로만 측정할 때 발생하는 예술적, 윤리적 갈등을 다룬 비평적 기사입니다.",
+      "en": "지역 문화 예술의 가치를 단순히 관객 수라는 정량적 지표로만 측정할 때 발생하는 예술적, 윤리적 갈등을 다룬 비평적 기사입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

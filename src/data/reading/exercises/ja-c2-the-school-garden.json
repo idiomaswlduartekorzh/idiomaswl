@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-school-garden",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「自発的」なる強制の庭園：学校菜園における暗黙の義務",
+      "en": "「自発的」なる強制の庭園：学校菜園における暗黙の義務"
+    },
+    "intro": {
+      "es": "学校菜園の維持管理という一見牧歌的な活動の裏に潜む、社会的な強制力と個人の意思の葛藤を考察する。",
+      "en": "学校菜園の維持管理という一見牧歌的な活動の裏に潜む、社会的な強制力と個人の意思の葛藤を考察する。"
+    },
+    "mission": {
+      "es": "学校菜園の活動を題材に、表向きの自由意志と実質的な社会的圧力の乖離について深く洞察し、批判的思考を養う。",
+      "en": "学校菜園の活動を題材に、表向きの自由意志と実質的な社会的圧力の乖離について深く洞察し、批判的思考を養う。"
+    },
+    "targetText": "閑静な住宅街に隣接する私立清風学園の敷地内には、かつて実習農園として整備された広大な菜園が存在する。現在、この菜園の管理は生徒会と園芸部、そして有志の保護者によって運営されているが、その実態は「ボランティア」という美名に覆われた、拒絶困難な義務の温床と化している。学園側は「自然との共生」や「地域貢献」という理念を掲げ、生徒や保護者に対して参加を募るが、実際には不参加が個人の評価や人間関係に直接的な影響を及ぼす構造が構築されている。この菜園は、単なる植物の育成場所ではなく、集団の調和を乱さないという社会的同調圧力を可視化する装置として機能しているのである。\n\n今年度、菜園の運営責任者に就任した生徒会長の佐藤は、秋の収穫祭に向けた土壌改良を全生徒に義務付けようと画策した。佐藤の論理は、菜園の維持は学園の伝統であり、その維持に関与することは学園の一員としての責務であるというものだ。しかし、この方針に対し、二年生の田中は「自発的な参加こそがボランティアの本質である」と反論を試みた。田中は、強制的な労働は教育的価値を損なうだけでなく、菜園に対する生徒の嫌悪感を助長すると主張した。この対立は、単なる作業の分担の問題を超え、学園における「自由」の定義を巡る深刻な亀裂を露呈させることとなった。\n\n会議の場では、佐藤の強硬姿勢に対し、教職員たちは沈黙を守った。彼らにとって、菜園の管理は生徒の自主性に任せるべき「美徳」であり、介入することは管理職としての権限を逸脱する行為と見なされていたからだ。しかし、この不作為こそが、佐藤のような熱心な生徒による独裁的な運営を許容する土壌となっていた。菜園の維持という目的が正当化されることで、手段の強制性は不問に付され、反対意見は「協調性の欠如」というレッテルを貼られることで封じ込められていく。結果として、生徒たちは自らの意思で参加していると錯覚させられながら、実際には社会的なコストを回避するために労働を強いられるという、歪な構造が固定化されていった。\n\n収穫祭の前夜、菜園には多くの生徒が集まった。彼らの多くは、土をいじることへの喜びではなく、翌日の式典での冷ややかな視線を回避するために、渋々とスコップを握っていた。田中もまた、その場にいた。彼は最後まで抵抗を示していたが、最終的には「参加しないことによる社会的孤立」というコストを天秤にかけ、屈服したのである。この光景は、菜園という牧歌的な空間が、いかにして個人の自律性を奪い、集団の論理に回収していくかを象徴的に示していた。彼らが耕していたのは土ではなく、自分たちを縛り付けるための見えない鎖であった。\n\n結局、収穫祭は表面上、大成功を収めた。学園長は祝辞の中で「生徒たちの自発的な献身」を称賛し、菜園の美しさを強調した。しかし、その裏で、参加を拒んだ少数の生徒たちは、クラス内での疎外感を深めていた。菜園の維持という「善」が、個人の多様な選択肢を排除し、画一的な行動を強いる道具へと変貌した瞬間であった。この経験は、生徒たちに「自由」とは何かという問いを突きつけながらも、その答えを曖昧なままに残した。菜園は今後も清風学園の象徴として残り続けるだろうが、そこにあるのは、自発性という名の仮面を被った、静かなる強制の歴史である。\n\nこの菜園がもたらした歪な同調圧力は、皮肉にも学園の卒業生たちが社会へ出た後の行動様式にまで影を落としている。かつて菜園の土を耕すことで「集団の調和」を学んだと信じ込まされた元生徒たちは、職場においても自発性を装いながら、組織の無言の期待を過剰に忖度する傾向を見せているのだ。彼らは、個人の意思を表明することが組織の安定を損なうリスクであると内面化しており、菜園での経験が「空気を読む」という日本社会特有の生存戦略を強化する訓練の場として機能していた事実に気づいていない。つまり、菜園での労働は単なる学園の伝統維持に留まらず、権威に従順な市民を再生産するための隠れたカリキュラムとして完成されていたのである。田中が抱いた違和感は、卒業後も彼らの胸中で燻り続けているが、それを言語化し、あるいは批判的に再構築する機会は、学園という閉鎖的な空間の中で見事に摘み取られてしまった。菜園の美しい景観が維持されるたびに、生徒たちは自らの思考を停止させる術を学び、その結果として、真の自由を希求する心さえも、土の中に深く埋め込まれてしまったと言えるだろう。清風学園の菜園は、今後も変わらぬ緑を湛え、そこを訪れる次なる世代に対し、従順さこそが最も安全な生き方であるという無言の教訓を、静かに、そして確実に語り継いでいくはずである。",
+    "wordCount": 1781,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "温床",
+        "lemma": "温床",
+        "glosses": {
+          "es": "hotbed",
+          "en": "hotbed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "同調圧力",
+        "lemma": "同調圧力",
+        "glosses": {
+          "es": "peer pressure",
+          "en": "peer pressure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不作為",
+        "lemma": "不作為",
+        "glosses": {
+          "es": "omission",
+          "en": "omission"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不問に付され",
+        "lemma": "不問に付され",
+        "glosses": {
+          "es": "to be ignored or left unquestioned",
+          "en": "to be ignored or left unquestioned"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "自律性",
+        "lemma": "自律性",
+        "glosses": {
+          "es": "autonomy",
+          "en": "autonomy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "画一的",
+        "lemma": "画一的",
+        "glosses": {
+          "es": "uniform or standardized",
+          "en": "uniform or standardized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 54,
+      "maxSentenceWords": 93,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本稿が提示する、学校菜園を巡る中心的な問題意識は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "ボランティアの美名の下で行われる強制的な同調圧力"
+        },
+        {
+          "id": "a2",
+          "text": "菜園の維持が学園の経済に与える影響"
+        },
+        {
+          "id": "a3",
+          "text": "生徒の自主性を尊重する新しい園芸プログラムの提案"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この菜園は、単なる植物の育成場所ではなく、集団の調和を乱さないという社会的同調圧力を可視化する装置として機能しているのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐藤会長が土壌改良を義務付けようとした論理的根拠は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "教職員からの強い指示があったから"
+        },
+        {
+          "id": "a2",
+          "text": "菜園の維持は学園の伝統であり責務だから"
+        },
+        {
+          "id": "a3",
+          "text": "収穫祭の予算を確保するためだから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "佐藤の論理は、菜園の維持は学園の伝統であり、その維持に関与することは学園の一員としての責務であるというものだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ教職員たちは佐藤の強硬姿勢に対して沈黙を守ったのか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤の計画が学園の利益になると判断したから"
+        },
+        {
+          "id": "a2",
+          "text": "菜園の管理に関する知識が全くなかったから"
+        },
+        {
+          "id": "a3",
+          "text": "生徒の自主性を重んじるあまり、介入を避けたから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼らにとって、菜園の管理は生徒の自主性に任せるべき「美徳」であり、介入することは管理職としての権限を逸脱する行為と見なされていたからだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "田中が最終的に菜園での作業に参加した理由として、最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "社会的孤立というコストを避けるため"
+        },
+        {
+          "id": "a2",
+          "text": "菜園の重要性を理解したから"
+        },
+        {
+          "id": "a3",
+          "text": "佐藤との関係を修復したかったから"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "田中もまた、その場にいた。彼は最後まで抵抗を示していたが、最終的には「参加しないことによる社会的孤立」というコストを天秤にかけ、屈服したのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者が本稿全体を通じて示している菜園に対する態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "菜園の教育的価値を高く評価している"
+        },
+        {
+          "id": "a2",
+          "text": "菜園が抱える構造的な矛盾を冷徹に批判している"
+        },
+        {
+          "id": "a3",
+          "text": "菜園の運営が改善されることを楽観的に期待している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "菜園は今後も清風学園の象徴として残り続けるだろうが、そこにあるのは、自発性という名の仮面を被った、静かなる強制の歴史である。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「不作為」という言葉が持つ、本文中での意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "過激な行動"
+        },
+        {
+          "id": "a2",
+          "text": "意図的な無視"
+        },
+        {
+          "id": "a3",
+          "text": "何もしないこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "しかし、この不作為こそが、佐藤のような熱心な生徒による独裁的な運営を許容する土壌となっていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「ボランティア」という言葉が、組織の中でどのように個人の行動を制限する道具として利用され得るか、あなたの経験や考察を交えて800字程度で論じなさい。",
+      "en": "「ボランティア」という言葉が、組織の中でどのように個人の行動を制限する道具として利用され得るか、あなたの経験や考察を交えて800字程度で論じなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "学校菜園の活動を題材に、表向きの自由意志と実質的な社会的圧力の乖離について深く洞察し、批判的思考を養う。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「自発的」なる強制の庭園：学校菜園における暗黙の義務 | C2 Reading | WeLearn",
+      "en": "「自発的」なる強制の庭園：学校菜園における暗黙の義務 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "学校菜園の維持管理という一見牧歌的な活動の裏に潜む、社会的な強制力と個人の意思の葛藤を考察する。",
+      "en": "学校菜園の維持管理という一見牧歌的な活動の裏に潜む、社会的な強制力と個人の意思の葛藤を考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

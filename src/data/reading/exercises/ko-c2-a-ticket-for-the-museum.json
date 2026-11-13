@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "무료라는 이름의 장벽: 박물관의 입장료와 그 이면",
+      "en": "무료라는 이름의 장벽: 박물관의 입장료와 그 이면"
+    },
+    "intro": {
+      "es": "박물관의 무료 입장이 공공의 접근성을 높인다는 통념을 비판적으로 고찰하는 평론입니다.",
+      "en": "박물관의 무료 입장이 공공의 접근성을 높인다는 통념을 비판적으로 고찰하는 평론입니다."
+    },
+    "mission": {
+      "es": "지문을 읽고 담론의 한계와 숨겨진 비용에 관한 저자의 논지를 파악하십시오.",
+      "en": "지문을 읽고 담론의 한계와 숨겨진 비용에 관한 저자의 논지를 파악하십시오."
+    },
+    "targetText": "최근 루미나 예술 센터의 관장 엘리나 보스는 대대적인 입장료 무료화를 선언하며 이를 민주적 접근성의 승리라고 자평했다. 그녀의 발표는 지역 사회의 환호를 받았고, 주말마다 입구는 인산인해를 이루었다. 그러나 이러한 현상을 비판적 시각에서 관찰해 온 평론가 마르쿠스 테인은 전혀 다른 양상을 지적한다. 그는 무료라는 단어가 공공의 담론을 지나치게 단순화하여, 실제로 관람객이 지불해야 하는 보이지 않는 비용을 은폐하고 있다고 주장한다. 마르쿠스는 엘리나의 정책이 단순히 티켓 가격을 0으로 만드는 데 그쳤을 뿐, 관람객이 박물관에 도달하기까지 치러야 하는 시간적, 물리적 비용은 전혀 고려하지 않았음을 꼬집는다. 특히 외곽 지역에 거주하는 노동자 계층에게는 박물관까지의 교통비와 이동 시간 자체가 거대한 장벽으로 작용함에도 불구하고, 박물관 측은 입장료 면제라는 명분 뒤에 숨어 이러한 불평등을 방관하고 있다.\n\n마르쿠스는 자신의 칼럼에서 이를 '선택적 관용'이라 명명했다. 그는 박물관이 무료 입장을 마케팅 수단으로 활용하여 방문객 수를 부풀리는 동안, 정작 전시의 질적 고민이나 접근성 확대에 대한 근본적인 논의는 실종되었다고 비판한다. 엘리나는 이에 대해 대중의 관심을 환기하는 것이 첫 번째 단계라고 반박하지만, 마르쿠스는 그 첫 번째 단계가 마지막 단계가 되어버린 현실을 경계한다. 박물관 내부의 전시 큐레이션은 여전히 엘리트주의적 시각에 머물러 있으며, 무료 입장을 통해 유입된 새로운 관람객들은 정작 전시의 맥락을 이해하는 데 필요한 교육적 지원을 받지 못하고 있다. 이는 단순히 문턱을 낮추는 행위가 실질적인 포용성을 보장하지 않음을 보여주는 명확한 사례다.\n\n이러한 갈등은 지난주 열린 특별 전시회 '침묵의 대화'에서 정점에 달했다. 마르쿠스는 현장을 방문하여 관람객들의 반응을 살폈다. 많은 이들이 입장료가 없다는 사실에 만족하며 전시장을 찾았지만, 정작 전시물 앞에서 무엇을 보아야 할지 몰라 당황하는 모습이 역력했다. 마르쿠스는 이를 두고 '공짜 표가 주는 안도감은 지적 갈증을 해소해주지 못한다'고 일갈했다. 그는 엘리나에게 입장료 무료화라는 가시적인 성과에 매몰되지 말고, 관람객이 박물관에 도착한 이후의 경험을 어떻게 설계할 것인지에 대한 구체적인 대안을 요구했다. 그러나 엘리나는 여전히 숫자로 증명되는 관람객 수에만 집착하며 마르쿠스의 제언을 예산 부족이라는 핑계로 일축했다.\n\n결국 무료 입장은 박물관의 공공성을 증진하는 도구가 아니라, 담론의 범위를 티켓 가격이라는 협소한 영역으로 제한하는 족쇄가 되었다. 마르쿠스는 박물관이 진정한 의미의 공공기관으로 거듭나기 위해서는 입장료의 유무를 넘어, 관람객이 박물관이라는 공간에서 겪는 소외와 지적 격차를 해소하는 데 자원을 집중해야 한다고 강조한다. 그는 박물관이 티켓 가격이라는 가벼운 짐을 내려놓는 대신, 전시 내용이라는 무거운 책임을 회피하고 있다는 점을 지속적으로 지적할 예정이다. 이 논쟁은 단순한 행정적 사안을 넘어, 문화 시설이 대중에게 어떤 방식으로 다가가야 하는지에 대한 근본적인 질문을 던진다.\n\n박물관의 문턱을 낮추는 것은 중요하다. 그러나 그 문턱을 넘은 이후의 풍경이 여전히 낯설고 차갑다면, 무료라는 이름은 공허한 수사에 불과하다. 엘리나의 정책은 박물관의 물리적 공간을 개방했을지 모르나, 문화적 공간으로서의 개방성은 오히려 좁아지고 있다. 마르쿠스는 앞으로도 이 모순된 상황을 추적하며, 박물관이 공공의 가치를 실현하기 위해 무엇을 포기하고 무엇을 쟁취해야 하는지 질문을 멈추지 않을 것이다. 담론은 계속되어야 하며, 그 중심에는 무료라는 단어 뒤에 가려진 진실이 놓여 있어야 한다.\n\n결국 입장료 무료화라는 화려한 포장지는 박물관이 지향해야 할 본질적인 교육적 책무를 가리는 장막으로 전락하고 말았다. 엘리나의 성급한 결정은 단기적인 통계적 성과를 달성하는 데에는 성공했을지 몰라도, 장기적으로는 박물관을 단순한 휴식처로 전락시켜 지적 탐구의 장이라는 고유한 정체성을 훼손하고 있다. 마르쿠스의 날카로운 지적처럼 진정한 민주적 접근성은 단순히 비용을 면제하는 행위에서 시작되는 것이 아니라, 누구나 전시의 맥락을 깊이 있게 이해할 수 있도록 돕는 세심한 안내와 체계적인 교육 프로그램이 뒷받침될 때 비로소 완성될 수 있다. 박물관이 시민들에게 진정으로 열린 공간이 되기 위해서는 눈에 보이는 티켓 가격이라는 허상을 걷어내고, 그 안에 담긴 지식의 문턱을 낮추는 실질적인 노력과 관람객과의 깊이 있는 소통을 위한 예산 배분의 우선순위를 근본적으로 재검토해야만 한다. 그렇지 않으면 지금의 무료 정책은 대중을 향한 진심 어린 초대장이 아니라, 문화적 소외를 방치한 채 숫자만을 좇는 공허한 전시 행정의 전형으로 역사에 기록될 위험이 매우 크다.",
+    "wordCount": 542,
+    "estimatedMinutes": 23,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "자평했다",
+        "lemma": "자평했다",
+        "glosses": {
+          "es": "evaluated oneself",
+          "en": "evaluated oneself"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "은폐하고",
+        "lemma": "은폐하고",
+        "glosses": {
+          "es": "concealing",
+          "en": "concealing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "방관하고",
+        "lemma": "방관하고",
+        "glosses": {
+          "es": "looking on indifferently",
+          "en": "looking on indifferently"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "큐레이션",
+        "lemma": "큐레이션",
+        "glosses": {
+          "es": "curation",
+          "en": "curation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "매몰되지",
+        "lemma": "매몰되지",
+        "glosses": {
+          "es": "not being buried/absorbed",
+          "en": "not being buried/absorbed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "수사",
+        "lemma": "수사",
+        "glosses": {
+          "es": "rhetoric",
+          "en": "rhetoric"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.5,
+      "maxSentenceWords": 33,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "무료 입장 정책의 한계"
+        },
+        {
+          "id": "a2",
+          "text": "박물관 운영 예산의 부족"
+        },
+        {
+          "id": "a3",
+          "text": "엘리나 관장의 경영 철학"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "무료라는 단어가 공공의 담론을 지나치게 단순화하여, 실제로 관람객이 지불해야 하는 보이지 않는 비용을 은폐하고 있다고 주장한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "마르쿠스가 지적하는 노동자 계층의 실질적 장벽은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "전시물의 난해함"
+        },
+        {
+          "id": "a2",
+          "text": "이동 비용과 시간"
+        },
+        {
+          "id": "a3",
+          "text": "박물관의 관람 시간"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "외곽 지역에 거주하는 노동자 계층에게는 박물관까지의 교통비와 이동 시간 자체가 거대한 장벽으로 작용함에도 불구하고",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "마르쿠스가 전시회 '침묵의 대화'를 방문한 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "엘리나와 토론을 하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "무료 입장의 성과를 기록하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "정책의 효과를 확인하기 위해"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "마르쿠스는 현장을 방문하여 관람객들의 반응을 살폈다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 작성한 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "박물관의 공공성에 대한 담론을 확장하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "무료 입장 정책을 옹호하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "엘리나 보스의 경영 능력을 칭찬하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이 논쟁은 단순한 행정적 사안을 넘어, 문화 시설이 대중에게 어떤 방식으로 다가가야 하는지에 대한 근본적인 질문을 던진다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 분석적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "무료라는 이름은 공허한 수사에 불과하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'은폐하고'의 문맥적 의미와 가장 유사한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "드러내다"
+        },
+        {
+          "id": "a2",
+          "text": "확장하다"
+        },
+        {
+          "id": "a3",
+          "text": "감추다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "실제로 관람객이 지불해야 하는 보이지 않는 비용을 은폐하고 있다고 주장한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "박물관의 무료 입장이 가져오는 긍정적 측면과 부정적 측면을 균형 있게 논술하십시오.",
+      "en": "박물관의 무료 입장이 가져오는 긍정적 측면과 부정적 측면을 균형 있게 논술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "지문을 읽고 담론의 한계와 숨겨진 비용에 관한 저자의 논지를 파악하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "무료라는 이름의 장벽: 박물관의 입장료와 그 이면 | C2 Reading | WeLearn",
+      "en": "무료라는 이름의 장벽: 박물관의 입장료와 그 이면 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "박물관의 무료 입장이 공공의 접근성을 높인다는 통념을 비판적으로 고찰하는 평론입니다.",
+      "en": "박물관의 무료 입장이 공공의 접근성을 높인다는 통념을 비판적으로 고찰하는 평론입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

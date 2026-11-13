@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-notes-from-the-roof",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "屋上太陽光発電設備の設置に関する合意形成の顛末",
+      "en": "屋上太陽光発電設備の設置に関する合意形成の顛末"
+    },
+    "intro": {
+      "es": "マンション管理組合の理事長である佐藤氏は、屋上への太陽光発電パネル設置を巡り、賃貸居住者と分譲所有者の間で生じた利害の対立を調整しようと試みています。本演習では、このメールのやり取りを通じて、所有権と居住権が交差する現代的な合意形成の難しさを考察します。",
+      "en": "マンション管理組合の理事長である佐藤氏は、屋上への太陽光発電パネル設置を巡り、賃貸居住者と分譲所有者の間で生じた利害の対立を調整しようと試みています。本演習では、このメールのやり取りを通じて、所有権と居住権が交差する現代的な合意形成の難しさを考察します。"
+    },
+    "mission": {
+      "es": "以下のメール文を精読し、所有者と賃貸人の間で生じているリスク認識の乖離を特定し、組織運営における合意形成の限界について考察してください。",
+      "en": "以下のメール文を精読し、所有者と賃貸人の間で生じているリスク認識の乖離を特定し、組織運営における合意形成の限界について考察してください。"
+    },
+    "targetText": "拝啓　管理組合の皆様、ならびに賃貸借契約にて入居中の皆様へ。屋上太陽光発電設備の設置計画について、理事会より改めてご報告申し上げます。本計画は、共用部のエネルギー効率向上を目的とし、長期的な修繕積立金の軽減を目指すものです。しかしながら、先日の住民説明会にて、所有者と賃貸人の間で、この計画に対するリスクの捉え方に決定的な断絶があることが露呈しました。所有者側は、不動産価値の向上という資産的側面を強調し、設置費用を修繕積立金から捻出することに前向きですが、一方の賃貸人は、工事期間中の騒音や振動、また将来的な屋上防水層のメンテナンス費用が賃料に転嫁されるのではないかという懸念を拭えておりません。この対立は、単なる費用の多寡ではなく、居住の「持続可能性」をどの時間軸で測るかという、根本的な価値観の相違に起因するものです。\n\n所有者にとって、屋上設備は資産価値を底上げする投資対象です。彼らは、設置後の売電収入が将来の管理費負担を軽減し、結果として資産価値の維持に寄与すると主張します。対照的に、賃貸人は数年単位での転居を前提としており、現在進行形の工事による不利益のみが切実な問題となります。所有者が描く「十年後の利益」は、賃貸人にとって「今現在の生活環境の悪化」というリスクと等価であり、この時間軸の非対称性が合意形成を極めて困難にしています。理事会としては、所有者の投資意欲を削ぐことなく、賃貸人の生活権をいかに保護するかが最大の焦点となります。\n\n先日の理事会にて、賃貸人代表の田中様より、工事期間中の賃料減額措置の検討を求める強い要望が提示されました。これは、所有者側にとっては自身の収益を削る要求であり、即座に拒絶反応が示されました。所有者側は、共用設備の向上は全居住者の利益であると主張しますが、賃貸人側は、その利益を享受する期間が限定的であることを指摘し、受益者負担の原則の再定義を求めています。この議論は、マンションという共同体が、所有と賃貸という異なる法的な立場を内包しながら、いかにして共通の利益を見出すかという難題を突きつけています。\n\n議論の膠着状態を打破するため、理事会は一時的に計画の凍結を決定いたしました。この決断は、所有者側からは消極的な姿勢として批判を浴びる一方で、賃貸人側からは一定の評価を得ています。しかし、この凍結措置そのものが、将来的な設備の老朽化やエネルギーコストの高騰に対する備えを先送りするリスクを孕んでいます。我々は今、短期的な平穏を維持するために、長期的な資産価値の毀損を許容するという、危うい均衡の上に立たされています。この状況を打開するには、単なる多数決による合意ではなく、所有と賃貸の双方に配分されるリスクの可視化と、それに対する補償のあり方を再設計する必要があります。\n\n結びに、今後の進め方について提案いたします。理事会は、所有者と賃貸人の双方の代表者による小委員会を設置し、リスクの共有化に関する具体的なガイドラインを策定する予定です。この委員会では、工事期間の短縮案や、売電収入の一部を賃貸人の共益費補助に充てるスキームを検討します。これは、法的な所有権の壁を越え、マンションという共同生活の場を維持するための、苦渋の妥協点を探る試みです。皆様のご理解とご協力をお願い申し上げます。本計画の成否は、我々が他者の立場をどこまで想像できるかにかかっています。\n\nしかしながら、この小委員会の設置は、新たな火種を生む可能性も否定できません。所有者側が提案した売電収入の還元策は、実質的な利回りの低下を意味し、投資判断の根拠を揺るがす恐れがあるからです。一方で、賃貸人側が求める共益費補助が恒久的な減額と見なされれば、将来の修繕計画に不可欠な資金源が枯渇する懸念も浮上します。結局のところ、所有と賃貸という立場の違いを埋める試みは、双方にとっての「譲歩の限界点」を露呈させる行為に他なりません。もし妥協案が提示されたとしても、それが特定の層に有利な偏った配分であると判断されれば、共同体内の不信感は決定的なものとなるでしょう。我々が直面しているのは、単なる設備の導入是非を超えた、コミュニティの再定義という重い課題です。この小委員会が、対立を解消する場となるか、あるいは分断を加速させる引き金となるか、その帰結は予断を許しません。いずれにせよ、我々は「所有する者」と「借りる者」が同じ屋根の下で共生するという、現代の都市生活が抱える矛盾を、今ここで突きつけられているのです。この対話の過程こそが、マンションの未来を形作る真の試練となるでしょう。",
+    "wordCount": 1771,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "断絶",
+        "lemma": "断絶",
+        "glosses": {
+          "es": "a break or gap in continuity or relationship",
+          "en": "a break or gap in continuity or relationship"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "転嫁",
+        "lemma": "転嫁",
+        "glosses": {
+          "es": "shifting a burden or responsibility onto another",
+          "en": "shifting a burden or responsibility onto another"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "非対称性",
+        "lemma": "非対称性",
+        "glosses": {
+          "es": "asymmetry",
+          "en": "asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "膠着状態",
+        "lemma": "膠着状態",
+        "glosses": {
+          "es": "a deadlock or stalemate",
+          "en": "a deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "毀損",
+        "lemma": "毀損",
+        "glosses": {
+          "es": "damage or impairment",
+          "en": "damage or impairment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "スキーム",
+        "lemma": "スキーム",
+        "glosses": {
+          "es": "a scheme or plan",
+          "en": "a scheme or plan"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 50.6,
+      "maxSentenceWords": 117,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:00:52.409Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本メールの主な目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "合意形成の困難さと今後の対応策の提示"
+        },
+        {
+          "id": "a2",
+          "text": "設置計画への反対を表明すること"
+        },
+        {
+          "id": "a3",
+          "text": "所有者と賃貸人の対立を法的に解決すること"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "理事会としては、所有者の投資意欲を削ぐことなく、賃貸人の生活権をいかに保護するかが最大の焦点となります。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "賃貸人が工事に対して懸念していることは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "売電収入の配分"
+        },
+        {
+          "id": "a2",
+          "text": "メンテナンス費用の賃料への転嫁"
+        },
+        {
+          "id": "a3",
+          "text": "屋上の使用制限"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "将来的な屋上防水層のメンテナンス費用が賃料に転嫁されるのではないかという懸念を拭えておりません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "所有者と賃貸人の間で合意が難しい根本的な理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "所有者が賃貸人を軽視しているため"
+        },
+        {
+          "id": "a2",
+          "text": "費用の負担割合で揉めているため"
+        },
+        {
+          "id": "a3",
+          "text": "価値観の時間軸が異なるため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この対立は、単なる費用の多寡ではなく、居住の「持続可能性」をどの時間軸で測るかという、根本的な価値観の相違に起因するものです。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "理事会が計画を一時凍結した意図は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "議論の膠着状態を打破し、対話を継続するため"
+        },
+        {
+          "id": "a2",
+          "text": "所有者側の批判を避けるため"
+        },
+        {
+          "id": "a3",
+          "text": "全住民の同意が完全に得られたため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "議論の膠着状態を打破するため、理事会は一時的に計画の凍結を決定いたしました。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "このメール全体から読み取れる理事長の姿勢はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "断固とした指揮官"
+        },
+        {
+          "id": "a2",
+          "text": "慎重かつ調整を図る仲裁者"
+        },
+        {
+          "id": "a3",
+          "text": "所有者寄りの支配的な態度"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "法的な所有権の壁を越え、マンションという共同生活の場を維持するための、苦渋の妥協点を探る試みです。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「毀損」という言葉が文中で意味していることは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "建物の物理的破壊"
+        },
+        {
+          "id": "a2",
+          "text": "人間関係の悪化"
+        },
+        {
+          "id": "a3",
+          "text": "資産価値の低下"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "短期的な平穏を維持するために、長期的な資産価値の毀損を許容するという、危うい均衡の上に立たされています。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "本稿で示された「所有者」と「賃貸人」の対立構造を参考に、マンション管理における合意形成の難しさを、別の例（例：ペット飼育のルール変更、共用廊下の私物撤去など）を用いて、C2レベルの論理構成で論じてください。",
+      "en": "本稿で示された「所有者」と「賃貸人」の対立構造を参考に、マンション管理における合意形成の難しさを、別の例（例：ペット飼育のルール変更、共用廊下の私物撤去など）を用いて、C2レベルの論理構成で論じてください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "以下のメール文を精読し、所有者と賃貸人の間で生じているリスク認識の乖離を特定し、組織運営における合意形成の限界について考察してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:00:52.409Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "屋上太陽光発電設備の設置に関する合意形成の顛末 | C2 Reading | WeLearn",
+      "en": "屋上太陽光発電設備の設置に関する合意形成の顛末 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "マンション管理組合の理事長である佐藤氏は、屋上への太陽光発電パネル設置を巡り、賃貸居住者と分譲所有者の間で生じた利害の対立を調整しようと試みています。本演習では、このメールのやり取りを通じて、所有権と居住権が交差する現代的な合意形成の難しさを考察します。",
+      "en": "マンション管理組合の理事長である佐藤氏は、屋上への太陽光発電パネル設置を巡り、賃貸居住者と分譲所有者の間で生じた利害の対立を調整しようと試みています。本演習では、このメールのやり取りを通じて、所有権と居住権が交差する現代的な合意形成の難しさを考察します。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:00:52.409Z"
+  }
+}

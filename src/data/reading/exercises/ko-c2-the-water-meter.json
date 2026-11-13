@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-water-meter",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "수치라는 이름의 윤리: 누수와 책임의 미학",
+      "en": "수치라는 이름의 윤리: 누수와 책임의 미학"
+    },
+    "intro": {
+      "es": "이 글은 단순한 수도관 수리 사건을 통해 개인의 도덕적 책임과 환경적 자각이 어떻게 충돌하고 조화를 이루는지 분석하는 논평입니다.",
+      "en": "이 글은 단순한 수도관 수리 사건을 통해 개인의 도덕적 책임과 환경적 자각이 어떻게 충돌하고 조화를 이루는지 분석하는 논평입니다."
+    },
+    "mission": {
+      "es": "본문을 읽고 수치화된 데이터가 인간의 행동 양식에 미치는 심리적 기제와 책임 소재에 관한 철학적 함의를 파악하십시오.",
+      "en": "본문을 읽고 수치화된 데이터가 인간의 행동 양식에 미치는 심리적 기제와 책임 소재에 관한 철학적 함의를 파악하십시오."
+    },
+    "targetText": "어느 화요일 저녁, 서촌의 작은 공방을 운영하는 김민준 씨는 수도 계량기의 비정상적인 회전 속도를 목격했다. 평소보다 세 배 빠르게 돌아가는 숫자는 단순한 기계적 결함을 넘어선 일종의 경고문처럼 다가왔다. 그는 즉시 배관공 박철호 씨를 불렀고, 지하 매립관에서 미세한 균열을 발견했다. 박 씨는 대수롭지 않게 실리콘으로 틈을 메우면 그만이라고 말했지만, 김 씨는 그 숫자가 지난 몇 주간 자신이 무심코 흘려보낸 물의 총량임을 직감했다. 이 사건은 단순한 수리 문제를 넘어, 우리 사회가 물을 소비하는 방식에 대한 근본적인 성찰을 요구하는 계기가 되었다. 김 씨는 수리비보다 더 큰 무게감을 느꼈는데, 그것은 자신이 환경에 가한 부채 의식이었다. 그는 공방 앞마당에 빗물 저금통을 설치하고, 매일 아침 계량기 숫자를 기록하는 일기를 쓰기 시작했다. 누군가는 이를 유난스러운 결벽이라 비웃을지 모르나, 김 씨에게 숫자는 이제 단순한 계측값이 아니라 윤리적 척도가 되었다. 그는 자신의 일상을 수치로 가시화함으로써 보이지 않는 자원의 소중함을 실감하고 있었다. 하지만 문제는 이러한 개인의 자각이 구조적인 변화로 이어질 수 있는가 하는 점이다. 김 씨의 노력은 공방이라는 폐쇄적 공간 안에서만 작동할 뿐, 건물 전체의 노후된 배관 시스템을 개선하기에는 역부족이었다. 건물주인 이명희 씨는 효율성을 이유로 근본적인 배관 교체를 거부했고, 김 씨의 노력은 점차 고립된 저항으로 변질되어 갔다. 김 씨는 수치에 집착할수록 주변과의 괴리감을 느꼈다. 환경 보호라는 거창한 명분 뒤에 숨은 개인의 고독은 때로 무력감을 동반했다. 그럼에도 불구하고 그는 기록을 멈추지 않았다. 숫자는 그가 세상과 맺은 유일한 약속이었기 때문이다. 결국, 누수는 단순한 물리적 결함이 아니라 우리 공동체가 직면한 책임의 단면을 보여주는 거울이었다. 김 씨의 경험은 개인의 책임감이 구조적 한계와 부딪힐 때 발생하는 긴장감을 극명하게 드러낸다. 우리는 흔히 환경 문제를 거대 담론으로 치부하지만, 사실 그것은 수도꼭지 끝에서 떨어지는 물방울처럼 지극히 개인적이고 구체적인 사건이다. 김 씨의 사례는 우리가 숫자를 통해 무엇을 보고자 하는지, 그리고 그 숫자가 가리키는 책임의 무게를 어디까지 감당할 수 있는지 묻고 있다. 수리는 끝났지만, 김 씨의 기록은 여전히 현재 진행형이다. 그는 오늘도 계량기 앞을 서성이며, 숫자가 말해주는 침묵의 언어를 해석하고 있다. 이 작은 공방에서 시작된 숫자의 기록은 환경이라는 거대한 벽 앞에서 좌절하면서도, 개인의 도덕적 실천이 어떻게 삶의 질서를 재편할 수 있는지 보여주는 하나의 증거가 되었다. 비록 구조는 변하지 않았으나, 김 씨의 내면은 이미 다른 차원의 책임감을 받아들이고 있었다. 이것은 물을 아끼는 행위를 넘어, 자신의 삶을 숫자의 윤리로 재정의하려는 한 개인의 고군분투기이다.\n\n그러나 이러한 개인적 실천이 사회적 파장을 일으키기 위해서는 단순히 숫자를 기록하는 행위를 넘어선 연대의 확장이 필수적이라는 사실을 간과할 수 없다. 김 씨가 마주한 구조적 한계는 사실 수많은 개인이 각자의 공간에서 겪고 있는 보이지 않는 장벽과 맞닿아 있으며, 개별적인 절약이 모여 거대한 흐름을 만들기 위해서는 고립된 기록이 공론화된 데이터로 전환되어야 하는 과제를 안고 있다. 만약 김 씨가 자신의 일기장을 건물 내 다른 세입자들과 공유하고 공동의 관리 방안을 모색하는 방향으로 나아갔다면, 비효율적인 배관 시스템을 교체하라는 정당한 요구는 건물주를 압박할 수 있는 강력한 근거가 되었을지도 모른다. 결국 환경에 대한 책임은 개인의 도덕적 성찰이라는 내밀한 영역을 넘어, 공동체의 이해관계를 조정하고 시스템의 개선을 이끌어내는 정치적 행위로 확장될 때 비로소 그 진정한 가치를 발휘할 수 있기 때문이다. 김 씨의 고독한 기록이 단순히 개인의 결벽으로 남지 않고 타인의 공감을 얻는 서사로 변모할 때, 비로소 물방울은 모여 강물이 되고 낡은 배관을 뚫고 흐르는 변화의 물결이 되어 우리 사회가 마주한 구조적 모순을 근본적으로 해결하는 동력이 될 수 있을 것이다.",
+    "wordCount": 491,
+    "estimatedMinutes": 20,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "비정상적인",
+        "lemma": "비정상적인",
+        "glosses": {
+          "es": "abnormal",
+          "en": "abnormal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "직감했다",
+        "lemma": "직감했다",
+        "glosses": {
+          "es": "intuited",
+          "en": "intuited"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "결벽",
+        "lemma": "결벽",
+        "glosses": {
+          "es": "mysophobia",
+          "en": "mysophobia"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가시화함으로써",
+        "lemma": "가시화함으로써",
+        "glosses": {
+          "es": "by visualizing",
+          "en": "by visualizing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "거창한",
+        "lemma": "거창한",
+        "glosses": {
+          "es": "grandiose",
+          "en": "grandiose"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고군분투기",
+        "lemma": "고군분투기",
+        "glosses": {
+          "es": "struggle story",
+          "en": "struggle story"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.4,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 전달하고자 하는 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "개인적 책임과 구조적 한계의 긴장"
+        },
+        {
+          "id": "a2",
+          "text": "수도관 수리의 기술적 과정"
+        },
+        {
+          "id": "a3",
+          "text": "환경 보호를 위한 효과적인 정책 제언"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "김 씨의 경험은 개인의 책임감이 구조적 한계와 부딪힐 때 발생하는 긴장감을 극명하게 드러낸다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "김 씨가 계량기 기록을 시작한 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "수리 비용을 절감하기 위해서"
+        },
+        {
+          "id": "a2",
+          "text": "환경에 대한 부채 의식 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "건물주의 강요로 인하여"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그는 공방 앞마당에 빗물 저금통을 설치하고, 매일 아침 계량기 숫자를 기록하는 일기를 쓰기 시작했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "건물주 이명희 씨의 태도를 통해 알 수 있는 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "김 씨의 환경 보호 활동을 적극적으로 지원함"
+        },
+        {
+          "id": "a2",
+          "text": "노후된 배관을 즉시 교체하여 문제를 해결함"
+        },
+        {
+          "id": "a3",
+          "text": "비용 효율성을 중시하여 근본적 개선을 회피함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "건물주인 이명희 씨는 효율성을 이유로 근본적인 배관 교체를 거부했고, 김 씨의 노력은 점차 고립된 저항으로 변질되어 갔다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 김 씨의 사례를 통해 독자에게 던지는 질문은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "우리는 숫자가 가리키는 책임의 무게를 어디까지 감당할 수 있는가?"
+        },
+        {
+          "id": "a2",
+          "text": "수도 요금을 줄이는 방법이 무엇인가?"
+        },
+        {
+          "id": "a3",
+          "text": "개인의 도덕적 실천이 사회적 변화를 이끌어내는 가장 빠른 길은 무엇인가?"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "김 씨의 사례는 우리가 숫자를 통해 무엇을 보고자 하는지, 그리고 그 숫자가 가리키는 책임의 무게를 어디까지 감당할 수 있는지 묻고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글 전반에 흐르는 저자의 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "비판적이고 냉소적임"
+        },
+        {
+          "id": "a2",
+          "text": "성찰적이고 관조적임"
+        },
+        {
+          "id": "a3",
+          "text": "낙관적이고 선동적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "이 사건은 단순한 수리 문제를 넘어, 우리 사회가 물을 소비하는 방식에 대한 근본적인 성찰을 요구하는 계기가 되었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'가시화'의 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기억을 되살림"
+        },
+        {
+          "id": "a2",
+          "text": "비판을 수용함"
+        },
+        {
+          "id": "a3",
+          "text": "눈에 보이게 함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그는 자신의 일상을 수치로 가시화함으로써 보이지 않는 자원의 소중함을 실감하고 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "본문에 등장하는 김민준 씨의 사례를 참고하여, 일상 속에서 마주하는 작은 불편함이 어떻게 개인의 윤리적 가치관을 변화시킬 수 있는지 200자 내외로 서술하십시오.",
+      "en": "본문에 등장하는 김민준 씨의 사례를 참고하여, 일상 속에서 마주하는 작은 불편함이 어떻게 개인의 윤리적 가치관을 변화시킬 수 있는지 200자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "본문을 읽고 수치화된 데이터가 인간의 행동 양식에 미치는 심리적 기제와 책임 소재에 관한 철학적 함의를 파악하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "수치라는 이름의 윤리: 누수와 책임의 미학 | C2 Reading | WeLearn",
+      "en": "수치라는 이름의 윤리: 누수와 책임의 미학 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "이 글은 단순한 수도관 수리 사건을 통해 개인의 도덕적 책임과 환경적 자각이 어떻게 충돌하고 조화를 이루는지 분석하는 논평입니다.",
+      "en": "이 글은 단순한 수도관 수리 사건을 통해 개인의 도덕적 책임과 환경적 자각이 어떻게 충돌하고 조화를 이루는지 분석하는 논평입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

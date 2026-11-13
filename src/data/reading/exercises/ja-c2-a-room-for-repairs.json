@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「自己修復」の神話と見えない献身――『修理カフェ・エフェメラ』評",
+      "en": "「自己修復」の神話と見えない献身――『修理カフェ・エフェメラ』評"
+    },
+    "intro": {
+      "es": "修理文化の再興という美名の下で、誰がその負荷を負っているのか。ある夜のワークショップを舞台に、自立という概念の危うさを鋭く解剖する。",
+      "en": "修理文化の再興という美名の下で、誰がその負荷を負っているのか。ある夜のワークショップを舞台に、自立という概念の危うさを鋭く解剖する。"
+    },
+    "mission": {
+      "es": "読解を通じて、修復という行為に付随する倫理的ジレンマと、隠されたケア労働の構造を批判的に考察する。",
+      "en": "読解を通じて、修復という行為に付随する倫理的ジレンマと、隠されたケア労働の構造を批判的に考察する。"
+    },
+    "targetText": "街の片隅にひっそりと佇む『修理カフェ・エフェメラ』。そこは、壊れた家電や古びた家具を住民自らが持ち寄り、専門家の助言を得て修復する場として、近隣の住民から一種の聖域のように崇められている。先日の夜、私はそこで繰り広げられる光景を観察する機会を得た。主催者の佐藤氏は「自らの手で直すことこそが、消費社会からの脱却である」と説く。確かに、使い捨ての文化に抗い、道具に愛着を抱く姿勢は称賛に値する。しかし、その夜、私はある決定的な違和感を抱かざるを得なかった。会場の隅で、佐藤氏のパートナーである美咲氏が、参加者が散らかした工具を黙々と整理し、油汚れを拭き取り、さらには修理が終わった後の複雑なゴミの分別を一人でこなしていたからである。彼女の献身は、まるで空気のように当然のものとして扱われ、誰もその労苦に目を留めることはない。\n\nこのワークショップの根底にあるのは、極めて男性的な「自己完結」の美学である。参加者は、目の前の機械を分解し、再び動くようにすることで、あたかも自分自身が世界をコントロールしているかのような万能感を味わう。しかし、その「自立」は、周囲の環境を整える「見えないケア」があって初めて成立する虚構に過ぎない。美咲氏が黙々と拭き取る油汚れは、修理という創造的な行為の裏側に潜む、泥臭い維持管理の象徴である。佐藤氏が説く「自立」とは、他者のケアを前提としながら、その存在を不可視化することで完成する、ある種の特権的な状態ではないだろうか。\n\n議論は、ある参加者が持ち込んだ古いラジオの修復を巡って紛糾した。そのラジオは、複雑な回路が損傷しており、佐藤氏の助言だけでは手に負えないものだった。佐藤氏は「諦めるな、自分で考えろ」と繰り返すが、その横で美咲氏がさりげなく回路図を調べ、必要な部品の調達先をメモして手渡した。佐藤氏はそれを自分の手柄のように受け取り、参加者に指示を飛ばす。美咲氏の介入がなければ、そのラジオが再び音を奏でることはなかっただろう。しかし、佐藤氏は「君の粘り勝ちだ」と参加者を称賛し、美咲氏の貢献を完全に無視した。この瞬間、修理という行為が、他者の労働を搾取することで成り立つ「自己満足の儀式」へと変貌したように感じられた。\n\nこの場における最大の問題は、修復の成功という結果が、そのプロセスを支えたケアの労働を抹消してしまう点にある。修理カフェというシステムは、住民の自立を促すと謳いながら、実際には「ケアを担う者」と「ケアを享受する者」という非対称な関係を再生産している。美咲氏が夜遅くまで会場を片付け、翌朝の準備を整える間、参加者たちは「自分の力で直した」という満足感と共に帰路に就く。この構造的な不均衡は、修理という行為に付随する倫理的な重みを、個人の努力という言葉で覆い隠してしまう。私たちは、物を直すことの喜びを語る前に、その喜びを誰が支えているのかを問わねばならない。\n\n結局、その夜のワークショップは、一つのラジオが直ったという小さな達成感と共に幕を閉じた。しかし、会場を後にする人々の中に、美咲氏の疲弊した表情に気づいた者は一人もいなかった。私は帰り道、自分の手元にある壊れた時計のことを考えた。自分で直せば、それは自立の証となるのだろうか。それとも、誰かの見えない労働を前提とした傲慢な振る舞いになるのだろうか。修理という行為は、物質的な再生であると同時に、人間関係の再編でもある。その再編が、ケアを不可視化する方向へ向かうのであれば、私たちは真の意味で物を直す資格などないのかもしれない。エフェメラの夜は、私にそんな重苦しい問いを突きつけて終わった。\n\nさらに深刻なのは、この場所が提供する「自立」の物語が、地域社会における真の連帯を阻害しているという点だ。佐藤氏が掲げる「消費社会からの脱却」という理想は、本来であれば他者との相互扶助や依存を認め合う関係性へと昇華されるべきものだろう。しかし、エフェメラでは、ケアという他者への配慮が排除され、個人の成功体験のみが称揚される。結果として、参加者は「自分一人で完結できる」という錯覚を強化し、他者の支えなしには成り立たないという人間本来の脆さから目を背けてしまう。もし修理カフェが、美咲氏のようなケアの労働を「共同体の維持」として正当に評価し、それを分かち合う場に変容しない限り、そこは単なる自己満足の温床にとどまる。真の修復とは、壊れた機械を直すことではなく、ケアを担う者と享受する者の境界を溶かし、相互に依存し合う関係を再構築することにあるのではないか。エフェメラのシステムがこのまま維持されるのであれば、そこから生まれるのは持続可能な社会の姿ではなく、他者の献身を食い物にして成り立つ、極めて閉鎖的で歪な自己完結の島に過ぎないだろう。",
+    "wordCount": 1814,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "聖域",
+        "lemma": "聖域",
+        "glosses": {
+          "es": "a sanctuary or sacred place",
+          "en": "a sanctuary or sacred place"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "虚構",
+        "lemma": "虚構",
+        "glosses": {
+          "es": "a fiction or fabrication",
+          "en": "a fiction or fabrication"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "紛糾",
+        "lemma": "紛糾",
+        "glosses": {
+          "es": "complication or entanglement",
+          "en": "complication or entanglement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "非対称",
+        "lemma": "非対称",
+        "glosses": {
+          "es": "asymmetry",
+          "en": "asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "抹消",
+        "lemma": "抹消",
+        "glosses": {
+          "es": "erasure or deletion",
+          "en": "erasure or deletion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疲弊",
+        "lemma": "疲弊",
+        "glosses": {
+          "es": "exhaustion or depletion",
+          "en": "exhaustion or depletion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 45.4,
+      "maxSentenceWords": 87,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:57:19.420Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が本稿を通じて最も強く主張したいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "自己修復の美学はケア労働の搾取で成立している"
+        },
+        {
+          "id": "a2",
+          "text": "修理カフェは技術継承の場として不可欠だ"
+        },
+        {
+          "id": "a3",
+          "text": "修理カフェの運営にはより多くの資金が必要だ"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "その「自立」は、周囲の環境を整える「見えないケア」があって初めて成立する虚構に過ぎない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "ラジオの修復過程で何が起きたか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤氏が自力で回路を直した"
+        },
+        {
+          "id": "a2",
+          "text": "美咲氏が密かに手助けをした"
+        },
+        {
+          "id": "a3",
+          "text": "参加者が自力で回路を特定した"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "その横で美咲氏がさりげなく回路図を調べ、必要な部品の調達先をメモして手渡した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ筆者は修理カフェの「自立」を批判的に捉えているのか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "道具の修理に価値を感じていないから"
+        },
+        {
+          "id": "a2",
+          "text": "佐藤氏の技術が未熟であるから"
+        },
+        {
+          "id": "a3",
+          "text": "他者のケアを不可視化しているから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "佐藤氏が説く「自立」とは、他者のケアを前提としながら、その存在を不可視化することで完成する、ある種の特権的な状態ではないだろうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が美咲氏の行動を詳細に描写する目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "ケア労働の不均衡を可視化するため"
+        },
+        {
+          "id": "a2",
+          "text": "修理の難しさを強調するため"
+        },
+        {
+          "id": "a3",
+          "text": "佐藤氏の指導力を称賛するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "美咲氏が黙々と拭き取る油汚れは、修理という創造的な行為の裏側に潜む、泥臭い維持管理の象徴である。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者の修理カフェに対する態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "協力的で肯定的"
+        },
+        {
+          "id": "a2",
+          "text": "懐疑的で批判的"
+        },
+        {
+          "id": "a3",
+          "text": "中立的で客観的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この構造的な不均衡は、修理という行為に付随する倫理的な重みを、個人の努力という言葉で覆い隠してしまう。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「抹消」という言葉の意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "価値を認めること"
+        },
+        {
+          "id": "a2",
+          "text": "新しく作り直すこと"
+        },
+        {
+          "id": "a3",
+          "text": "存在を消し去ること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "修復の成功という結果が、そのプロセスを支えたケアの労働を抹消してしまう点にある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたがもし『修理カフェ・エフェメラ』の運営者であるなら、美咲氏のようなケア労働をどのように組織の仕組みの中に組み込み、可視化しますか。また、それは「自立」の定義をどのように変えると考えますか。論理的に記述してください。",
+      "en": "あなたがもし『修理カフェ・エフェメラ』の運営者であるなら、美咲氏のようなケア労働をどのように組織の仕組みの中に組み込み、可視化しますか。また、それは「自立」の定義をどのように変えると考えますか。論理的に記述してください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "読解を通じて、修復という行為に付随する倫理的ジレンマと、隠されたケア労働の構造を批判的に考察する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:57:19.420Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「自己修復」の神話と見えない献身――『修理カフェ・エフェメラ』評 | C2 Reading | WeLearn",
+      "en": "「自己修復」の神話と見えない献身――『修理カフェ・エフェメラ』評 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "修理文化の再興という美名の下で、誰がその負荷を負っているのか。ある夜のワークショップを舞台に、自立という概念の危うさを鋭く解剖する。",
+      "en": "修理文化の再興という美名の下で、誰がその負荷を負っているのか。ある夜のワークショップを舞台に、自立という概念の危うさを鋭く解剖する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:57:19.420Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-local-stage",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "観客数という名の物差し――地域劇場の陥穽",
+      "en": "観客数という名の物差し――地域劇場の陥穽"
+    },
+    "intro": {
+      "es": "地域文化の灯火を守る小劇場が、行政からの補助金要件として「動員数」を課される現状を問う。",
+      "en": "地域文化の灯火を守る小劇場が、行政からの補助金要件として「動員数」を課される現状を問う。"
+    },
+    "mission": {
+      "es": "数値化できない芸術の価値と、生存のための戦略が衝突する現場の葛藤を読み解く。",
+      "en": "数値化できない芸術の価値と、生存のための戦略が衝突する現場の葛藤を読み解く。"
+    },
+    "targetText": "地方都市の閑静な一角で三十年にわたり活動を続けてきた「銀河座」は、今、存続の岐路に立たされている。芸術監督の佐伯清美は、市から提示された新たな助成金支給要件を前に、苦渋の決断を迫られていた。それは、年間動員数を昨対比で二割増加させるという、芸術的質を度外視した数値目標であった。かつて銀河座は、実験的な前衛演劇や地域住民との対話型ワークショップを主軸に据え、少人数ながらも深い共鳴を生む場として愛されてきた。しかし、文化政策の潮流は、効率性と波及効果を重視する「文化の経済的価値」の測定へと大きく舵を切っている。佐伯にとって、この要件は単なる目標ではなく、劇場の魂を切り売りせよという通告に他ならなかった。\n\n事態を複雑にしているのは、劇団の看板俳優である若手実力派、高山蓮の存在だ。高山は、SNSでの発信力を駆使して若年層の観客を劇場の外から呼び込むことに成功しており、彼の出演する公演は常に満席に近い。佐伯は、高山の人気に頼った大衆娯楽路線への転換を強く拒絶してきた。劇場の理念は、観客を消費者に変えることではなく、芸術を通じて人間としての思索を深める場を提供することにあると信じていたからだ。しかし、事務局長の村上は、現実的な経営赤字を盾に、高山を主役にした古典の現代風アレンジ公演を強硬に主張した。村上の論理は、まずは劇場を存続させなければ、どんな崇高な理念も無に帰すという、冷徹なまでの生存本能に基づくものだった。\n\n議論は平行線をたどった。佐伯は、数値目標を達成した先に待っているのは、芸術の多様性が均質化され、結局は地域文化が枯渇する未来であると警告した。対して村上は、多様性を守るための「生存のコスト」を誰が負担するのかと問い返した。この対立は、単なる運営方針の不一致を超え、芸術の公共性とは何かという根源的な問いを突きつけていた。行政が求める「成果」とは、果たして観客の数なのか、それともその劇場が地域社会に与えた目に見えない精神的な豊かさなのか。佐伯は、この問いに対する答えを、誰にも理解されないまま自分の中に抱え込み続けていた。劇場の廊下には、かつての上演記録が色褪せたポスターとして並び、そこには今よりもずっと自由で、不器用な情熱が刻まれていた。\n\n事態は一転、公演初日の前夜に予期せぬ形で決着を見た。佐伯は、高山の人気を逆手に取り、あえて彼のファンを困惑させるような、極めて難解で沈黙の長い現代劇を上演するという賭けに出た。観客を増やすという行政の要件を満たしつつ、芸術的な妥協を一切許さないという、極めて危うい挑戦であった。幕が開くと、劇場は静寂に包まれた。高山のファンたちは、期待していた娯楽とは異なる重苦しい空間に困惑しながらも、その圧倒的な表現力に吸い寄せられるようにして、終演まで席を立たなかった。観客数は目標を達成したが、終演後のロビーには、かつてのような熱狂的な賞賛の声ではなく、重苦しい沈黙が漂っていた。\n\n佐伯の賭けは、成功だったのか、それとも破滅の始まりだったのか。翌朝、行政から届いたのは、動員数達成を祝う事務的な通知と、次回以降のさらなる数値目標の提示であった。佐伯は、劇場の帳簿を閉じたまま、窓の外を眺めた。観客数は増えた。しかし、銀河座がかつて持っていた、地域住民がふらりと立ち寄り、互いの人生を語り合うような「居場所」としての機能は、完全に失われていた。数値の達成は、芸術の勝利を意味するのではなく、芸術が行政の管理下に完全に組み込まれたことを証明する結果となった。佐伯は、自分が守りたかったものが、皮肉にも自らの手によって変質してしまったことを悟り、静かにペンを置いた。\n\nしかし、この変質は銀河座の終焉を意味するものではなかった。高山の演技に触れた若者たちの中から、従来の観客とは異なる層が、劇場のあり方に疑問を抱き始めたのだ。彼らはSNSを通じて、かつての銀河座が大切にしていた「対話」をデジタル空間で再現し、劇場という物理的な枠組みを超えた新たなコミュニティを形成し始めた。佐伯が守ろうとした「芸術を通じた思索」は、劇場という箱から溢れ出し、より広範な社会へと拡散する予兆を見せていたのである。皮肉にも、行政が求めた数値目標の達成が、意図せぬ形で芸術の公共性を再定義する契機となった。佐伯は、かつての理想をそのまま維持することへの執着が、実は芸術を硬直化させていた可能性に気づく。管理された数値の中に、かろうじて残された芸術の火種は、もはや劇場の存続という矮小な議論を越え、地域社会の精神的基盤を根底から揺さぶる新たな運動へと昇華しようとしていた。彼がペンを置いたのは敗北の証ではなく、古い銀河座の幕引きと、未知なる形態への変容を受け入れるための静かな決意だったのかもしれない。",
+    "wordCount": 1818,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "岐路",
+        "lemma": "岐路",
+        "glosses": {
+          "es": "crossroads or a critical juncture",
+          "en": "crossroads or a critical juncture"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "度外視",
+        "lemma": "度外視",
+        "glosses": {
+          "es": "disregarding or ignoring",
+          "en": "disregarding or ignoring"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "潮流",
+        "lemma": "潮流",
+        "glosses": {
+          "es": "tide or trend",
+          "en": "tide or trend"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "均質化",
+        "lemma": "均質化",
+        "glosses": {
+          "es": "homogenization",
+          "en": "homogenization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "根源的",
+        "lemma": "根源的",
+        "glosses": {
+          "es": "fundamental or radical",
+          "en": "fundamental or radical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "変質",
+        "lemma": "変質",
+        "glosses": {
+          "es": "alteration or degradation in quality",
+          "en": "alteration or degradation in quality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 45.5,
+      "maxSentenceWords": 80,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主要なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "芸術の価値と数値目標の対立"
+        },
+        {
+          "id": "a2",
+          "text": "劇場経営の成功談"
+        },
+        {
+          "id": "a3",
+          "text": "SNSを使った集客の有効性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "数値目標を達成した先に待っているのは、芸術の多様性が均質化され、結局は地域文化が枯渇する未来であると警告した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "村上が主張した劇場の運営方針は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "前衛演劇の継続"
+        },
+        {
+          "id": "a2",
+          "text": "古典の現代風アレンジ"
+        },
+        {
+          "id": "a3",
+          "text": "ワークショップの拡充"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "事務局長の村上は、現実的な経営赤字を盾に、高山を主役にした古典の現代風アレンジ公演を強硬に主張した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐伯が最後に行った「賭け」の意図は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "高山のファンを増やすこと"
+        },
+        {
+          "id": "a2",
+          "text": "行政に反抗して閉館すること"
+        },
+        {
+          "id": "a3",
+          "text": "芸術性を維持しつつ動員数を満たすこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "観客を増やすという行政の要件を満たしつつ、芸術的な妥協を一切許さないという、極めて危うい挑戦であった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がこの物語を通じて読者に問いかけていることは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "文化の経済的価値の是非"
+        },
+        {
+          "id": "a2",
+          "text": "補助金の重要性"
+        },
+        {
+          "id": "a3",
+          "text": "地域劇場の将来的な存続策"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "行政が求める「成果」とは、果たして観客の数なのか、それともその劇場が地域社会に与えた目に見えない精神的な豊かさなのか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語全体の結末に対する筆者の態度はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "冷笑的"
+        },
+        {
+          "id": "a2",
+          "text": "悲観的"
+        },
+        {
+          "id": "a3",
+          "text": "中立的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "佐伯は、自分が守りたかったものが、皮肉にも自らの手によって変質してしまったことを悟り、静かにペンを置いた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「度外視」の意味として適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "注意深く観察すること"
+        },
+        {
+          "id": "a2",
+          "text": "過大に評価しすぎること"
+        },
+        {
+          "id": "a3",
+          "text": "考慮に入れないこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは、年間動員数を昨対比で二割増加させるという、芸術的質を度外視した数値目標であった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「数値化できない価値」を維持するために、小規模な芸術団体はどのような戦略をとるべきか、あるいは、そのような価値は現代社会において維持不可能であるか、自身の見解を1000文字程度で論じてください。",
+      "en": "「数値化できない価値」を維持するために、小規模な芸術団体はどのような戦略をとるべきか、あるいは、そのような価値は現代社会において維持不可能であるか、自身の見解を1000文字程度で論じてください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "数値化できない芸術の価値と、生存のための戦略が衝突する現場の葛藤を読み解く。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "観客数という名の物差し――地域劇場の陥穽 | C2 Reading | WeLearn",
+      "en": "観客数という名の物差し――地域劇場の陥穽 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "地域文化の灯火を守る小劇場が、行政からの補助金要件として「動員数」を課される現状を問う。",
+      "en": "地域文化の灯火を守る小劇場が、行政からの補助金要件として「動員数」を課される現状を問う。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-library-window",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "침묵의 연장선",
+      "en": "침묵의 연장선"
+    },
+    "intro": {
+      "es": "도서관의 운영 시간을 둘러싼 제도적 약속과 그 이면의 노동 현실을 성찰하는 단편 소설입니다.",
+      "en": "도서관의 운영 시간을 둘러싼 제도적 약속과 그 이면의 노동 현실을 성찰하는 단편 소설입니다."
+    },
+    "mission": {
+      "es": "이 글을 읽고 기관의 서비스 제공과 그에 따르는 보이지 않는 노동 사이의 긴장 관계를 분석하십시오.",
+      "en": "이 글을 읽고 기관의 서비스 제공과 그에 따르는 보이지 않는 노동 사이의 긴장 관계를 분석하십시오."
+    },
+    "targetText": "서가 사이로 스며드는 노란 조명은 평온해 보이지만, 그 빛을 유지하기 위해 치러야 하는 대가는 종종 어둠 속에 가려진다. 나는 중앙 도서관의 야간 사서로서, 폐관 시간을 알리는 종소리가 울리기 직전까지 책장을 정리하며 생각에 잠기곤 한다. 우리 도서관은 시민들에게 언제나 열려 있는 지식의 성소라는 슬로건을 내걸고 있다. 그러나 그 '언제나'라는 단어는 누군가의 밤잠을 담보로 맺어진 계약과 다름없다. 오늘 저녁, 한 이용자가 닫힌 열람실 문을 두드리며 연장 운영을 요구했다. 그는 세금으로 운영되는 공공시설이 시민의 편의를 위해 마땅히 밤늦게까지 문을 열어야 한다고 주장했다. 그의 논리는 명쾌했다. 공공 서비스는 수요자의 필요에 즉각적으로 반응해야 한다는 것이다. 나는 그에게 정중히 사과하며 문을 닫았지만, 마음 한구석에는 씁쓸함이 남았다. 과연 서비스의 가용성은 노동자의 삶을 희생시킬 권리를 정당화할 수 있는가. 도서관의 운영 시간은 단순히 시계 바늘이 가리키는 숫자가 아니라, 누군가의 노동 시간이 켜켜이 쌓여 만들어진 결과물이다. 낮 동안 쏟아지는 대출 요청을 처리하고, 훼손된 책을 보수하며, 서가를 재배치하는 과정은 보이지 않는 곳에서 묵묵히 이루어진다. 이용자들은 책이 제자리에 꽂혀 있는 것을 당연하게 여기지만, 그 질서는 누군가의 땀방울이 맺힌 결과다. 야간 연장 운영이 확정되던 날, 관리직들은 예산 증액 없이 인력 효율성만을 강조했다. 그들은 서비스의 질적 향상을 외쳤지만, 정작 그 질을 유지할 주체인 사서들의 피로도는 고려 대상이 아니었다. 나는 낡은 책 한 권을 집어 들고 서가 깊숙한 곳에 꽂아 넣었다. 책의 무게만큼이나 무거운 책임감이 어깨를 짓눌렀다. 서비스의 문턱을 낮추는 것은 민주주의의 진보일지 모르나, 그 문턱을 지키는 사람들의 삶을 벼랑 끝으로 내모는 것이라면 그것은 진정한 의미의 공공성인가. 늦은 밤, 도서관을 나서며 나는 가로등 아래 긴 그림자를 보았다. 그 그림자는 마치 내가 수행한 노동의 잔상처럼 길게 늘어져 있었다. 내일 아침이면 다시 문이 열릴 것이고, 사람들은 다시 지식을 탐닉할 것이다. 그러나 그 지식의 향연 뒤편에는 언제나 누군가의 희생이 묵묵히 자리 잡고 있을 것이다. 나는 공공의 이름으로 자행되는 이 침묵의 연장선을 끊어낼 수 있을까. 어쩌면 내가 할 수 있는 것은, 그저 이 어두운 서가 사이에서 묵묵히 책을 닦으며, 서비스라는 이름의 신기루를 조금씩 걷어내는 것뿐일지도 모른다. 계절이 바뀌어도 도서관의 공기는 변함없지만, 내 마음의 온도는 조금씩 식어간다. 결국 우리는 모두 각자의 자리에서 누군가의 시간을 빌려 살아가고 있는 셈이다.\n\n이러한 공공 서비스의 딜레마는 단순히 도서관이라는 공간에 국한된 문제가 아니라 현대 사회가 지향하는 효율성이라는 가치가 인간의 존엄성과 어떻게 충돌하는지를 극명하게 보여주는 사례라 할 수 있다. 만약 우리가 모든 공공 시설을 이십사 시간 개방하는 것이 진정한 복지라고 믿는다면 그 이면에 숨겨진 노동의 가치를 재평가하는 사회적 합의가 반드시 선행되어야만 한다. 단순히 이용자의 편의를 극대화하는 것이 국가의 의무라고 단정 짓기보다는 노동자가 정당한 대가를 받으며 휴식을 취할 권리 또한 공공성의 핵심 가치로 인정받아야 하기 때문이다. 만약 이러한 균형이 무너진다면 결국 도서관은 지식의 성소가 아닌 누군가의 고통을 착취하는 거대한 기계 장치로 전락할 위험이 있다. 진정한 공공성은 서비스를 제공하는 주체와 이용하는 주체가 서로의 삶을 존중하는 토대 위에서만 비로소 완성될 수 있다. 내가 오늘 밤 서가 사이를 거닐며 느꼈던 무력감은 어쩌면 시스템이 강요하는 희생을 당연하게 여기지 않겠다는 내면의 저항일지도 모른다. 앞으로 다가올 시간 속에서 누군가 다시 연장 운영을 요구한다면 나는 시스템의 논리 뒤에 숨지 않고 노동의 가치를 당당하게 대변할 수 있는 용기를 가질 수 있을까. 지식의 빛을 밝히기 위해 자신의 삶을 어둠 속에 두어야 하는 사서들의 고충이 더 이상 침묵 속에 묻히지 않기를 바라는 마음으로 나는 다시 한번 낡은 책장을 매만진다. 결국 우리가 지켜야 할 것은 책이라는 물건이 아니라 그 책을 통해 서로의 삶을 이해하고 존중하려는 인간적인 태도 그 자체여야 한다. 도서관의 문이 닫히는 순간 비로소 시작되는 사서들의 진정한 노동이 정당한 가치로 인정받는 날이 오기를 간절히 소망한다.",
+    "wordCount": 528,
+    "estimatedMinutes": 22,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "가용성",
+        "lemma": "가용성",
+        "glosses": {
+          "es": "availability",
+          "en": "availability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "담보",
+        "lemma": "담보",
+        "glosses": {
+          "es": "collateral",
+          "en": "collateral"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "신기루",
+        "lemma": "신기루",
+        "glosses": {
+          "es": "mirage",
+          "en": "mirage"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "묵묵히",
+        "lemma": "묵묵히",
+        "glosses": {
+          "es": "silently",
+          "en": "silently"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "성소",
+        "lemma": "성소",
+        "glosses": {
+          "es": "sanctuary",
+          "en": "sanctuary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "잔상",
+        "lemma": "잔상",
+        "glosses": {
+          "es": "afterimage",
+          "en": "afterimage"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 14.7,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 전달하고자 하는 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공공 서비스의 이면"
+        },
+        {
+          "id": "a2",
+          "text": "지식의 중요성"
+        },
+        {
+          "id": "a3",
+          "text": "도서관 운영 효율화"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "서비스의 가용성은 노동자의 삶을 희생시킬 권리를 정당화할 수 있는가.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "이용자가 야간 연장 운영을 요구하며 내세운 근거는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공공시설의 의무"
+        },
+        {
+          "id": "a2",
+          "text": "세금을 내므로"
+        },
+        {
+          "id": "a3",
+          "text": "지식의 접근성"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그는 세금으로 운영되는 공공시설이 시민의 편의를 위해 마땅히 밤늦게까지 문을 열어야 한다고 주장했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "화자가 야간 연장 운영 결정에 대해 느끼는 감정은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "자부심"
+        },
+        {
+          "id": "a2",
+          "text": "분노"
+        },
+        {
+          "id": "a3",
+          "text": "회의감"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그들은 서비스의 질적 향상을 외쳤지만, 정작 그 질을 유지할 주체인 사서들의 피로도는 고려 대상이 아니었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "마지막 문장에서 화자가 타인의 시간을 빌려 산다고 표현한 의도는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "상호 의존적 노동 구조를 암시함"
+        },
+        {
+          "id": "a2",
+          "text": "시간의 유한함을 강조함"
+        },
+        {
+          "id": "a3",
+          "text": "도서관의 역사를 비판함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "결국 우리는 모두 각자의 자리에서 누군가의 시간을 빌려 살아가고 있는 셈이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글 전반에 나타나는 화자의 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "냉소적이고 비판적임"
+        },
+        {
+          "id": "a2",
+          "text": "성찰적이고 회의적임"
+        },
+        {
+          "id": "a3",
+          "text": "열정적이고 비판적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "나는 공공의 이름으로 자행되는 이 침묵의 연장선을 끊어낼 수 있을까.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "본문에서 '신기루'라는 단어가 의미하는 바는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "노동의 실체"
+        },
+        {
+          "id": "a2",
+          "text": "도서관의 예산"
+        },
+        {
+          "id": "a3",
+          "text": "이상적인 서비스"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "서비스라는 이름의 신기루를 조금씩 걷어내는 것뿐일지도 모른다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "도서관의 연장 운영이 노동자의 삶에 미치는 영향에 대해 자신의 견해를 500자 내외로 서술하십시오.",
+      "en": "도서관의 연장 운영이 노동자의 삶에 미치는 영향에 대해 자신의 견해를 500자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "이 글을 읽고 기관의 서비스 제공과 그에 따르는 보이지 않는 노동 사이의 긴장 관계를 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "침묵의 연장선 | C2 Reading | WeLearn",
+      "en": "침묵의 연장선 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "도서관의 운영 시간을 둘러싼 제도적 약속과 그 이면의 노동 현실을 성찰하는 단편 소설입니다.",
+      "en": "도서관의 운영 시간을 둘러싼 제도적 약속과 그 이면의 노동 현실을 성찰하는 단편 소설입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

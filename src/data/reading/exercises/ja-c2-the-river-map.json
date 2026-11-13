@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-river-map",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "境界の不確実性：氾濫予測図が突きつける倫理的断絶",
+      "en": "境界の不確実性：氾濫予測図が突きつける倫理的断絶"
+    },
+    "intro": {
+      "es": "河川の氾濫を予測する地図作成において、専門家が引く「境界線」が、地域社会の運命をいかに左右し、どのような倫理的葛藤を引き起こすのかを考察する。",
+      "en": "河川の氾濫を予測する地図作成において、専門家が引く「境界線」が、地域社会の運命をいかに左右し、どのような倫理的葛藤を引き起こすのかを考察する。"
+    },
+    "mission": {
+      "es": "本演習では、C2レベルの読解力を養うため、地図上の線が持つ政治的・倫理的意味合いを読み解き、論理的矛盾や暗黙の前提を批判的に分析する。",
+      "en": "本演習では、C2レベルの読解力を養うため、地図上の線が持つ政治的・倫理的意味合いを読み解き、論理的矛盾や暗黙の前提を批判的に分析する。"
+    },
+    "targetText": "河川の氾濫予測図は、単なる地理的データではない。それは、ある地点を「安全」とし、別の地点を「危険」と断定する、極めて政治的な境界線である。地図作成技師の佐藤は、長年、氾濫の可能性を計算し、予測図を作成してきた。しかし、彼が引く一本の線が、川沿いの小さな町・水無瀬の住民たちの間に、見えない亀裂を生んでいる。佐藤は、最新の気象モデルに基づき、浸水想定区域を厳密に定義した。この境界線は、堤防のわずか十メートル外側をなぞるように引かれている。この線より内側にある家々は、公的な避難勧告の対象となるが、十メートル外側の家々は、制度上の「安全圏」に留まる。この恣意的な境界線が、町の生活を分断した。公的な支援が届く家と、自助努力を強いられる家。境界線上のわずかな距離が、経済的な価値と生存の権利を決定づけてしまうのである。\n\n町の有力者である村田は、この地図が発表された翌日、佐藤の事務所を訪れた。村田は、地図が地域経済に与える打撃を訴えた。「この線一本で、私の経営する旅館は『危険区域』となり、保険料は高騰し、宿泊客は激減した。一方で、目と鼻の先の隣人の店は、安全区域として恩恵を受けている。この境界線は、自然の摂理ではなく、君の計算機が作り出した人災だ」と彼は憤る。佐藤は、計算上の不確実性を説明しようと試みたが、村田の言葉は論理を超えた切実さを帯びていた。自然現象は本来、連続的で曖昧なものだ。しかし、行政という装置は、その曖昧さを許容せず、二値的な判断を要求する。佐藤は、地図の精度を上げるほど、かえって境界線が持つ暴力的な側面が際立つことに気づき始めていた。\n\n水無瀬の住民たちは、この地図を巡って二分された。安全区域に住む者は、地図の正当性を主張し、危険区域に住む者は、地図の撤回を求めてデモを行った。佐藤は、この対立の根源が、地図そのものではなく、地図が提供する「安心」という名の幻想にあると理解していた。専門家として、彼は確率を提示する義務がある。しかし、その確率は、個人の生活という文脈に置かれた瞬間、絶対的な予言へと変貌する。彼は、線を引き直すことで、誰かを救い、誰かを切り捨てるという権力を行使しているのだ。この事実は、彼を深く苦しめた。境界線を引くという行為は、自然の不確実性を管理しようとする人間の傲慢さの表れであり、その傲慢さが、地域社会の連帯を破壊していく。\n\nある夜、激しい豪雨が町を襲った。佐藤が引いた境界線は、皮肉にも、その夜の浸水域とほぼ完全に一致した。しかし、境界線の外側にあるはずだった村田の旅館も、浸水の被害を免れなかった。佐藤の計算は、小規模な局地的な氾濫には対応できていなかったのだ。この事態は、境界線の無意味さを露呈させた。安全圏にいたはずの者も、危険区域にいた者も、等しく水に浸かった。佐藤は、翌朝、地図を前にして呆然としていた。彼が引いた線は、現実を説明するどころか、現実を歪め、分断を深めただけであった。地図上の線は、現実の複雑さを切り捨てるための道具に過ぎなかったのだ。\n\n結局、佐藤は辞表を書いた。彼は、境界線を引くことが、いかに無責任な行為であるかを痛感したからだ。しかし、彼が去った後も、地図は残り続ける。次の技師がまた新たな線を引く。水無瀬の住民たちは、地図の線に振り回されながらも、境界線を越えて助け合う術を模索し始めた。彼らは、地図が提示する「安全」と「危険」という二分法を捨て、自然の脅威を共有する存在として再び歩み寄った。佐藤が引いた線は、人々の心の中にあった境界線をも可視化し、それを破壊するきっかけとなったのである。地図が消えた時、初めて、彼らは真の共同体としての姿を取り戻したのかもしれない。\n\nしかし、地図がもたらした亀裂が完全に消え去ったわけではない。佐藤が去った後も、行政は依然として数値に基づく管理を正義と信じ、新たな地図作成の準備を進めている。皮肉なことに、かつて分断に苦しんだ住民たちは、地図を否定しつつも、心のどこかで『公的な保証』という名の免罪符を求めてしまう自己矛盾を抱えていた。自然の脅威を共有し、互いに助け合うという新たな連帯は、極めて脆弱な基盤の上に成り立っている。一度は崩壊した信頼関係は、地図という人工的な指標なしには、日常の些細な利害衝突によって容易に瓦解する脆さを孕んでいるからだ。人々は、地図に頼らぬ共生を目指しながらも、その不確実な未来に耐えきれず、再び誰かが引くであろう『正解』の線を待ち望むという、果てしない依存の輪廻から抜け出せずにいる。佐藤が残した教訓は、地図の無効性を証明したこと以上に、人間がいかにして『責任ある判断』を他者に委ね、その結果として生じる分断を甘受してしまうかという、根深い精神的隷属の構造を浮き彫りにしたのである。真の共同体とは、地図を捨てることではなく、地図が引く線を自らの責任において無効化し続ける、たゆまぬ対話の継続にこそ宿るのかもしれない。",
+    "wordCount": 1854,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "恣意的な",
+        "lemma": "恣意的な",
+        "glosses": {
+          "es": "arbitrary",
+          "en": "arbitrary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "摂理",
+        "lemma": "摂理",
+        "glosses": {
+          "es": "providence",
+          "en": "providence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "二値的",
+        "lemma": "二値的",
+        "glosses": {
+          "es": "binary",
+          "en": "binary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "傲慢さ",
+        "lemma": "傲慢さ",
+        "glosses": {
+          "es": "arrogance",
+          "en": "arrogance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "露呈させた",
+        "lemma": "露呈させた",
+        "glosses": {
+          "es": "revealed",
+          "en": "revealed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "模索し",
+        "lemma": "模索し",
+        "glosses": {
+          "es": "groped for",
+          "en": "groped for"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 35.7,
+      "maxSentenceWords": 92,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が提示する氾濫予測図に関する中心的な主張は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "境界線は人為的であり、社会の分断と不公平を助長する。"
+        },
+        {
+          "id": "a2",
+          "text": "地図は自然災害の被害を最小限に抑えるための唯一の手段である。"
+        },
+        {
+          "id": "a3",
+          "text": "専門家は地図の精度を上げることで住民の信頼を回復すべきだ。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この恣意的な境界線が、町の生活を分断した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "村田が佐藤に対して強い不満を抱いた直接的な理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤が地図の作成過程で住民に相談しなかったため。"
+        },
+        {
+          "id": "a2",
+          "text": "境界線によって経営する旅館が危険区域とされ、経済的打撃を受けたため。"
+        },
+        {
+          "id": "a3",
+          "text": "佐藤が気象モデルの誤りを認めようとしなかったため。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この線一本で、私の経営する旅館は『危険区域』となり、保険料は高騰し、宿泊客は激減した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤が辞表を書いた真の動機として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "自身の計算ミスによって住民に被害を与えたから。"
+        },
+        {
+          "id": "a2",
+          "text": "住民からの激しい抗議に耐えきれなくなったから。"
+        },
+        {
+          "id": "a3",
+          "text": "境界線を引く行為そのものが、社会の連帯を破壊する傲慢な権力行使だと悟ったから。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "境界線を引くという行為は、自然の不確実性を管理しようとする人間の傲慢さの表れであり、その傲慢さが、地域社会の連帯を破壊していく。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "物語の結末において、住民たちが「地図が提示する二分法を捨てた」ことの意義は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地図への依存を止め、住民同士が連帯して自然災害に向き合う関係性を再構築したこと。"
+        },
+        {
+          "id": "a2",
+          "text": "地図の誤りを証明するために、自ら独自の調査を行うようになったこと。"
+        },
+        {
+          "id": "a3",
+          "text": "行政に対して新たな地図の作成を求めるための署名活動を始めたこと。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "彼らは、地図が提示する「安全」と「危険」という二分法を捨て、自然の脅威を共有する存在として再び歩み寄った。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本稿全体を通じて流れる筆者のトーンを最もよく表しているものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "専門的な知見に対する絶対的な信頼と、技術革新を称賛する楽観的なトーン。"
+        },
+        {
+          "id": "a2",
+          "text": "人為的な境界線が引き起こす倫理的矛盾に対する、批判的かつ思索的なトーン。"
+        },
+        {
+          "id": "a3",
+          "text": "地域社会の対立を煽るような、扇情的で攻撃的なトーン。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "佐藤は、地図の精度を上げるほど、かえって境界線が持つ暴力的な側面が際立つことに気づき始めていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「恣意的な」という言葉が持つニュアンスとして最も近いものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "客観的な論理に基づいている様子。"
+        },
+        {
+          "id": "a2",
+          "text": "自然の法則に厳密に従っている様子。"
+        },
+        {
+          "id": "a3",
+          "text": "個人の判断で自由に決められている様子。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この恣意的な境界線が、町の生活を分断した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「境界線」が社会に与える影響について、技術的な正確さと人道的な配慮のバランスという観点から、800字程度の小論文を書きなさい。",
+      "en": "「境界線」が社会に与える影響について、技術的な正確さと人道的な配慮のバランスという観点から、800字程度の小論文を書きなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "本演習では、C2レベルの読解力を養うため、地図上の線が持つ政治的・倫理的意味合いを読み解き、論理的矛盾や暗黙の前提を批判的に分析する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "境界の不確実性：氾濫予測図が突きつける倫理的断絶 | C2 Reading | WeLearn",
+      "en": "境界の不確実性：氾濫予測図が突きつける倫理的断絶 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "河川の氾濫を予測する地図作成において、専門家が引く「境界線」が、地域社会の運命をいかに左右し、どのような倫理的葛藤を引き起こすのかを考察する。",
+      "en": "河川の氾濫を予測する地図作成において、専門家が引く「境界線」が、地域社会の運命をいかに左右し、どのような倫理的葛藤を引き起こすのかを考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

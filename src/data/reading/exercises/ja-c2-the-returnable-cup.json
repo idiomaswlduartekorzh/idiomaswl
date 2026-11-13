@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "循環の欺瞞：再利用容器が突きつける静かなるパラドックス",
+      "en": "循環の欺瞞：再利用容器が突きつける静かなるパラドックス"
+    },
+    "intro": {
+      "es": "再利用可能な容器の導入は、環境負荷低減の象徴として称賛されてきた。しかし、その評価軸を広げたとき、私たちはどのような「見えざるコスト」に直面するのか。本稿では、ある学術都市のカフェ街で起きた事例を通じ、持続可能性の定義を再考する。",
+      "en": "再利用可能な容器の導入は、環境負荷低減の象徴として称賛されてきた。しかし、その評価軸を広げたとき、私たちはどのような「見えざるコスト」に直面するのか。本稿では、ある学術都市のカフェ街で起きた事例を通じ、持続可能性の定義を再考する。"
+    },
+    "mission": {
+      "es": "この文章を読み、環境政策の評価における測定範囲の拡大がもたらす哲学的および実務的なジレンマを理解し、批判的思考を養う。",
+      "en": "この文章を読み、環境政策の評価における測定範囲の拡大がもたらす哲学的および実務的なジレンマを理解し、批判的思考を養う。"
+    },
+    "targetText": "北方の学術都市ヴェルトハイムにおいて、学生街のカフェ連合が主導した「グリーン・カップ・イニシアチブ」は、当初、循環型経済の金字塔として全国的な注目を集めた。店主のマルクスと学生代表のエレーナは、使い捨てプラスチックを完全に排除し、耐久性の高いポリプロピレン製カップを貸し出すシステムを構築した。彼らの論理は単純明快であった。使い捨ての廃棄物をゼロにすれば、環境負荷は必然的に低下するというものだ。実際、導入から半年間、街のゴミ箱からプラスチックカップが消滅した光景は、視覚的な成功を物語っていた。しかし、この成果は、システムの境界を「店内の廃棄物」という狭い枠内に限定していたからこそ成立していたのである。\n\n事態が急変したのは、都市計画家のソフィアが、カップの洗浄と配送に関わるエネルギー消費を全行程で追跡し始めてからであった。彼女の調査によれば、カップを清潔に保つための高温洗浄と、各店舗を巡回する電気トラックの走行距離が、従来の使い捨てカップを製造・輸送する過程で生じる炭素排出量を、累積的に上回っていることが判明した。さらに、カップの耐久性を維持するための特殊な洗浄剤が下水に流出することで、近隣の河川の生態系に微妙な変化が生じていることも指摘された。マルクスたちは、廃棄物削減という一点において勝利を収めたが、その勝利の代償として、より広範で目に見えにくい環境負荷を背負い込んでいたのである。この事実は、彼らが掲げた「循環」の定義が、いかに恣意的な境界線によって守られていたかを露呈させた。\n\nこのパラドックスは、環境政策における「測定の罠」を浮き彫りにする。私たちは往々にして、目の前のゴミが消えるという直感的な成果に満足し、その背後にある複雑なサプライチェーンの全体像を無視してしまう。エレーナは、この指摘に対し、カップの再利用回数を増やせば解決できると反論したが、現実には、学生たちがカップを返却せずに持ち帰るという「流出」が止まらず、新たなカップを補充し続けるという悪循環に陥っていた。結局、システムを維持するための追加生産が、皮肉にも使い捨て時代よりも多くの資源を消費するという、本末転倒な状況が常態化してしまったのだ。\n\n議論は、単なる効率性の問題を超え、倫理的な問いへと発展した。マルクスとソフィアの対立は、環境保護が「善意のパフォーマンス」に留まるべきか、それとも「冷徹な数値計算」に基づくべきかという二項対立を強いた。エレーナは、数値には表れない「環境意識の変容」こそが真の価値であると主張したが、ソフィアは、意識の変容が物理的な環境破壊を正当化する免罪符になってはならないと断じた。この対立は、ヴェルトハイムのカフェ街という閉じた空間において、持続可能性という概念がいかに脆い砂上の楼閣であるかを、住民たちに突きつけることとなった。\n\n現在、ヴェルトハイムのカフェ連合は、システムの全面的な見直しを迫られている。彼らは、再利用カップの利便性を追求するあまり、それが引き起こす負の外部性を過小評価していたことを認めた。今、彼らが直面しているのは、環境保護という旗印の下で、自らの行動がどのような帰結を招くのかを、より広い時間軸と空間軸で捉え直すという困難な作業である。この物語は、単なる一過性の失敗談ではない。私たちが「環境に良い」と信じて疑わない営みが、実は別の場所で別の負荷を生み出しているという、現代社会の構造的な盲点を突く教訓なのである。\n\nこの教訓は、ヴェルトハイムの境界を越え、現代の消費社会が抱える構造的な脆弱性を鋭く射抜いている。善意に基づく環境対策が、かえって資源の浪費を招くという事態は、部分最適化の限界を如実に示している。真の持続可能性とは、単に特定の廃棄物を削減することではなく、サプライチェーン全体を通じたエネルギー収支と生態系への影響を、冷徹なまでに包括的に評価する視座に他ならない。エレーナたちが直面した挫折は、環境保護が個人の道徳的満足やイメージ戦略の道具へと矮小化されることへの警鐘であり、システム設計における科学的妥当性の欠如が、いかに容易に本末転倒な結果を招くかを物語っている。今後、ヴェルトハイムがどのような解を導き出すにせよ、彼らが経験したこの痛みを伴うプロセスは、持続可能な未来を構想するすべての社会にとって、避けては通れない試金石となるだろう。目に見えるゴミの消失という安易な達成感から脱却し、見えない負荷を直視する勇気こそが、次なる循環型社会の礎となるはずである。",
+    "wordCount": 1740,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "金字塔",
+        "lemma": "金字塔",
+        "glosses": {
+          "es": "a monumental achievement",
+          "en": "a monumental achievement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "恣意的な",
+        "lemma": "恣意的な",
+        "glosses": {
+          "es": "arbitrary",
+          "en": "arbitrary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "本末転倒",
+        "lemma": "本末転倒",
+        "glosses": {
+          "es": "putting the cart before the horse",
+          "en": "putting the cart before the horse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "免罪符",
+        "lemma": "免罪符",
+        "glosses": {
+          "es": "an indulgence or excuse",
+          "en": "an indulgence or excuse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "砂上の楼閣",
+        "lemma": "砂上の楼閣",
+        "glosses": {
+          "es": "a castle in the air; something unstable",
+          "en": "a castle in the air; something unstable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "外部性",
+        "lemma": "外部性",
+        "glosses": {
+          "es": "externality",
+          "en": "externality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 58,
+      "maxSentenceWords": 98,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本稿の主眼は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "環境政策の評価範囲の限界を論じる。"
+        },
+        {
+          "id": "a2",
+          "text": "再利用カップの普及を推進する。"
+        },
+        {
+          "id": "a3",
+          "text": "カフェ経営の成功事例を検証する。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この事実は、彼らが掲げた「循環」の定義が、いかに恣意的な境界線によって守られていたかを露呈させた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "なぜ再利用システムが環境負荷を増やしたのか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "カップの素材が有害だったため。"
+        },
+        {
+          "id": "a2",
+          "text": "洗浄と配送の負荷が大きいため。"
+        },
+        {
+          "id": "a3",
+          "text": "学生がカップを盗んだため。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "カップを清潔に保つための高温洗浄と、各店舗を巡回する電気トラックの走行距離が、従来の使い捨てカップを製造・輸送する過程で生じる炭素排出量を、累積的に上回っていることが判明した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "エレーナの主張に対するソフィアの立場は？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "意識の変容を高く評価する。"
+        },
+        {
+          "id": "a2",
+          "text": "数値計算よりも善意を優先する。"
+        },
+        {
+          "id": "a3",
+          "text": "意識の変容を免罪符と見なす。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "ソフィアは、意識の変容が物理的な環境破壊を正当化する免罪符になってはならないと断じた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がヴェルトハイムの事例を持ち出した目的は？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "持続可能性の盲点を指摘するため。"
+        },
+        {
+          "id": "a2",
+          "text": "特定のカフェを批判するため。"
+        },
+        {
+          "id": "a3",
+          "text": "学生街の環境政策を称賛するため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この物語は、単なる一過性の失敗談ではない。私たちが「環境に良い」と信じて疑わない営みが、実は別の場所で別の負荷を生み出しているという、現代社会の構造的な盲点を突く教訓なのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本稿の論調を最も適切に表すものは？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちている。"
+        },
+        {
+          "id": "a2",
+          "text": "皮肉を交えた批判的分析。"
+        },
+        {
+          "id": "a3",
+          "text": "感情的で主観的な抗議。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "結局、システムを維持するための追加生産が、皮肉にも使い捨て時代よりも多くの資源を消費するという、本末転倒な状況が常態化してしまったのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「砂上の楼閣」が意味する文脈は？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "強固な基盤を持つこと。"
+        },
+        {
+          "id": "a2",
+          "text": "美しい建築物があること。"
+        },
+        {
+          "id": "a3",
+          "text": "脆く崩れやすい状態。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この対立は、ヴェルトハイムのカフェ街という閉じた空間において、持続可能性という概念がいかに脆い砂上の楼閣であるかを、住民たちに突きつけることとなった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「環境保護」を目的とした取り組みが、かえって環境破壊を招くというパラドックスについて、あなたの意見を400字程度で論じなさい。",
+      "en": "「環境保護」を目的とした取り組みが、かえって環境破壊を招くというパラドックスについて、あなたの意見を400字程度で論じなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "この文章を読み、環境政策の評価における測定範囲の拡大がもたらす哲学的および実務的なジレンマを理解し、批判的思考を養う。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "循環の欺瞞：再利用容器が突きつける静かなるパラドックス | C2 Reading | WeLearn",
+      "en": "循環の欺瞞：再利用容器が突きつける静かなるパラドックス | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "再利用可能な容器の導入は、環境負荷低減の象徴として称賛されてきた。しかし、その評価軸を広げたとき、私たちはどのような「見えざるコスト」に直面するのか。本稿では、ある学術都市のカフェ街で起きた事例を通じ、持続可能性の定義を再考する。",
+      "en": "再利用可能な容器の導入は、環境負荷低減の象徴として称賛されてきた。しかし、その評価軸を広げたとき、私たちはどのような「見えざるコスト」に直面するのか。本稿では、ある学術都市のカフェ街で起きた事例を通じ、持続可能性の定義を再考する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

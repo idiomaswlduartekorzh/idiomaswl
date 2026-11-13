@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-quiet-street",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "침묵의 재분배: 밤의 도시가 숨기는 소음의 역학",
+      "en": "침묵의 재분배: 밤의 도시가 숨기는 소음의 역학"
+    },
+    "intro": {
+      "es": "이 글은 도시 계획의 이면에 숨겨진 소음 관리의 정치적 함의를 탐구하는 C2 수준의 읽기 지문입니다.",
+      "en": "이 글은 도시 계획의 이면에 숨겨진 소음 관리의 정치적 함의를 탐구하는 C2 수준의 읽기 지문입니다."
+    },
+    "mission": {
+      "es": "글을 읽고 도시의 밤 소음이 어떻게 사회적 계층에 따라 재배치되는지 분석하십시오.",
+      "en": "글을 읽고 도시의 밤 소음이 어떻게 사회적 계층에 따라 재배치되는지 분석하십시오."
+    },
+    "targetText": "도시의 밤은 흔히 평화의 상징으로 묘사되곤 한다. 하지만 우리가 누리는 이 고요함이 과연 진정한 평화인가, 아니면 단지 소음의 위치를 이동시킨 결과인가에 대해 의문을 제기할 필요가 있다. 최근 동부 지구의 재개발 프로젝트인 '루미나 광장' 조성 사업은 이러한 의구심을 증폭시킨다. 도시 계획가 서준호는 중심가 도로의 소음을 차단하기 위해 거대한 방음벽을 설치하고 차량 흐름을 우회시키는 전략을 택했다. 그는 이를 두고 '도시의 휴식권을 보장하는 평화의 설계'라고 자평했다. 그러나 이 평화는 누군가의 희생을 담보로 한다. 중심가에서 밀려난 야간 물류 차량들은 방음벽이 없는 가난한 외곽 주거지인 '달빛 마을'의 좁은 골목으로 쏟아져 들어갔다. 그곳의 주민인 김영희 씨는 밤마다 창문을 흔드는 진동과 매연에 시달리며, 중심가의 정적 뒤에 숨겨진 소음의 재분배를 온몸으로 체감하고 있다. 서준호의 설계는 소음을 제거한 것이 아니라, 단지 소음의 수용 능력이 낮은 계층의 거주지로 이를 전이시킨 것에 불과했다. 이러한 현상은 도시 공간이 가진 권력 구조를 여실히 드러낸다. 중심가의 고요함은 그곳에 거주하는 경제적 상류층의 특권이며, 그 대가로 외곽 지역은 소음의 저장고가 된다. 이러한 구조적 모순은 도시가 평등한 공공재라는 신화를 무너뜨린다. 소음은 단순히 물리적 파동이 아니라 사회적 지위를 반영하는 지표이다. 방음벽 너머의 평화는 누군가에게는 안식처가 되지만, 그 벽의 뒤편에 사는 이들에게는 일상의 파괴를 의미한다. 소음의 재분배가 정교해질수록, 도시의 불평등은 더욱 은밀하고 견고해진다. 우리는 도시의 소음을 관리하는 기술적 성취를 찬양하기에 앞서, 그 기술이 누구의 삶을 보호하고 누구의 삶을 소외시키는지 물어야 한다. 소음이 사라진 것처럼 보이는 거리 뒤편에서, 쉼 없이 엔진을 돌려야 하는 트럭들의 굉음은 도시의 평화가 얼마나 취약한 기반 위에 서 있는지 증명한다. 결국, 도시의 밤은 평화로운 안식처가 아니라, 소음이라는 부산물을 통해 계층 간의 거리를 확정 짓는 거대한 실험실이다. 서준호의 전략적 침묵은 중심가의 가치를 높였을지 모르나, 그 대가로 외곽의 밤은 이전보다 더 깊은 소음의 늪에 빠져들었다. 이러한 공간적 불균형은 단순히 소음의 문제가 아니라, 도시가 지향해야 할 정의에 관한 근본적인 질문을 던진다. 우리가 진정으로 평화로운 도시를 원한다면, 소음을 감추는 벽을 세우는 대신 소음의 근원을 함께 나누고 해결하는 방식을 고민해야 할 것이다. 하지만 현재의 도시 계획은 여전히 벽을 높이는 데 급급하며, 그 뒤에 숨겨진 소음의 이동을 외면하고 있다.\n\n이러한 불평등한 공간 배치는 단순히 물리적 소음의 이동을 넘어 도시 공동체의 해체라는 더 심각한 결과를 초래하고 있다. 서준호의 방음벽이 상징하는 것은 도시 내부의 보이지 않는 선이며, 이 선은 시민들 사이의 연대감을 단절시키고 물리적 거리를 넘어 정서적 격차를 심화시킨다. 중심가의 고요함에 안주하는 이들은 외곽의 고통을 타자화하며, 소음의 늪에 빠진 이들은 도시의 시스템이 자신들을 배제하고 있다는 박탈감을 내면화하게 된다. 결국 도시라는 거대한 유기체는 소통의 기능을 상실한 채 파편화된 섬들로 전락할 위험에 처해 있다. 만약 우리가 기술적 효율성만을 맹신하여 사회적 합의 없는 공간 재편을 계속한다면, 도시의 평화는 영원히 도달할 수 없는 신기루가 될 것이다. 진정한 도시의 평화는 소음을 차단하는 벽의 높이가 아니라, 도시의 모든 구성원이 소음의 고통을 분담하고 그 이익을 공정하게 향유하는 사회적 신뢰의 두께에서 비롯된다. 우리는 이제 방음벽을 허물고 그 자리에 소통의 통로를 마련해야 한다. 소음의 근원을 외면하는 도시 계획은 결국 그 소음의 파동에 의해 스스로 붕괴할 운명을 지니고 있다. 이제는 소음의 재분배가 아닌 삶의 질을 재분배하는 정의로운 도시를 향한 담론이 필요하다. 소음이 사라진 거리 뒤편에서 울리는 트럭의 굉음은 단순히 엔진 소리가 아니라, 우리 사회가 외면해온 불평등이라는 거대한 비명임을 기억해야 한다. 도시의 밤이 진정으로 평화로워지기 위해서는 중심가와 외곽이 서로의 소음을 이해하고 공존할 수 있는 새로운 공간적 윤리가 절실히 요구되는 시점이다. 벽을 높이는 대신 서로의 삶을 연결하는 포용적 도시 설계만이 우리가 지향해야 할 유일한 해답이 될 것이다.",
+    "wordCount": 511,
+    "estimatedMinutes": 21,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "담보",
+        "lemma": "담보",
+        "glosses": {
+          "es": "security or collateral",
+          "en": "security or collateral"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전이",
+        "lemma": "전이",
+        "glosses": {
+          "es": "transfer or metastasis",
+          "en": "transfer or metastasis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "물리적",
+        "lemma": "물리적",
+        "glosses": {
+          "es": "physical",
+          "en": "physical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "견고",
+        "lemma": "견고",
+        "glosses": {
+          "es": "solid or firm",
+          "en": "solid or firm"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "취약",
+        "lemma": "취약",
+        "glosses": {
+          "es": "vulnerable",
+          "en": "vulnerable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "부산물",
+        "lemma": "부산물",
+        "glosses": {
+          "es": "by-product",
+          "en": "by-product"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15,
+      "maxSentenceWords": 22,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "소음 관리가 드러내는 사회적 불평등"
+        },
+        {
+          "id": "a2",
+          "text": "도시 소음의 기술적 해결책"
+        },
+        {
+          "id": "a3",
+          "text": "야간 물류 차량의 효율적인 경로 설정"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "소음의 재분배가 정교해질수록, 도시의 불평등은 더욱 은밀하고 견고해진다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "서준호의 도시 계획이 초래한 구체적인 결과는?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도시 전체의 소음 수준이 획기적으로 낮아짐"
+        },
+        {
+          "id": "a2",
+          "text": "중심가의 소음 감소와 외곽 지역의 소음 증가"
+        },
+        {
+          "id": "a3",
+          "text": "달빛 마을의 경제적 가치가 급격히 상승함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "중심가에서 밀려난 야간 물류 차량들은 방음벽이 없는 가난한 외곽 주거지인 '달빛 마을'의 좁은 골목으로 쏟아져 들어갔다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "글쓴이가 '평화의 설계'라는 표현을 사용한 의도는?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도시 계획의 성공을 진심으로 축하하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "방음벽 설치 기술의 우수성을 강조하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "표면적인 평화 뒤에 숨겨진 불평등을 비판하기 위해"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "서준호의 설계는 소음을 제거한 것이 아니라, 단지 소음의 수용 능력이 낮은 계층의 거주지로 이를 전이시킨 것에 불과했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "이 글을 쓴 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도시의 소음 분배 정책이 가진 윤리적 모순을 폭로하고 비판하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "독자에게 도시 계획의 중요성을 알리고 전문가 양성을 장려하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "야간 물류 시스템의 개선을 위한 구체적인 대안을 제시하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "우리는 도시의 소음을 관리하는 기술적 성취를 찬양하기에 앞서, 그 기술이 누구의 삶을 보호하고 누구의 삶을 소외시키는지 물어야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전체적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "냉소적이고 비판적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "결국, 도시의 밤은 평화로운 안식처가 아니라, 소음이라는 부산물을 통해 계층 간의 거리를 확정 짓는 거대한 실험실이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'담보'의 문맥적 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "사회적 지위를 보장하는 법적 권리"
+        },
+        {
+          "id": "a2",
+          "text": "도시 계획의 성공을 위한 경제적 자산"
+        },
+        {
+          "id": "a3",
+          "text": "어떤 결과를 얻기 위해 내놓는 희생"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그러나 이 평화는 누군가의 희생을 담보로 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "도시 계획에서 '평화'와 '정의'가 충돌할 때, 어떤 가치를 우선시해야 하는지 본인의 견해를 300자 내외로 서술하십시오.",
+      "en": "도시 계획에서 '평화'와 '정의'가 충돌할 때, 어떤 가치를 우선시해야 하는지 본인의 견해를 300자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "글을 읽고 도시의 밤 소음이 어떻게 사회적 계층에 따라 재배치되는지 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "침묵의 재분배: 밤의 도시가 숨기는 소음의 역학 | C2 Reading | WeLearn",
+      "en": "침묵의 재분배: 밤의 도시가 숨기는 소음의 역학 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "이 글은 도시 계획의 이면에 숨겨진 소음 관리의 정치적 함의를 탐구하는 C2 수준의 읽기 지문입니다.",
+      "en": "이 글은 도시 계획의 이면에 숨겨진 소음 관리의 정치적 함의를 탐구하는 C2 수준의 읽기 지문입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

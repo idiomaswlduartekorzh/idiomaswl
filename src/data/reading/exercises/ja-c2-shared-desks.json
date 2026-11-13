@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-shared-desks",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "共有空間の代償：選択の虚構性について",
+      "en": "共有空間の代償：選択の虚構性について"
+    },
+    "intro": {
+      "es": "本教材は、現代の共有オフィス環境における「選択の自由」という概念を、個人的なコストという観点から批判的に考察する読解演習です。",
+      "en": "本教材は、現代の共有オフィス環境における「選択の自由」という概念を、個人的なコストという観点から批判的に考察する読解演習です。"
+    },
+    "mission": {
+      "es": "以下のメール文を読み、筆者が提示する「選択」のパラドックスを理解し、その背後にある組織的な力学を分析してください。",
+      "en": "以下のメール文を読み、筆者が提示する「選択」のパラドックスを理解し、その背後にある組織的な力学を分析してください。"
+    },
+    "targetText": "拝啓　佐藤様\n\n先日の共有オフィス「結」におけるレイアウト再編に関するご提案、拝読いたしました。佐藤様が提示された「フリーアドレス制の導入」および「集中ブースの利用料別払い制」という二つの選択肢は、一見すると個々の従業員の自律性を尊重する民主的なアプローチのように見受けられます。しかし、私はこの提案が内包する「選択の不可避的コスト」という側面について、強い懸念を抱かざるを得ません。佐藤様は、業務の性質に応じて場所を選ぶ自由を強調されますが、その選択肢の背後には、常に異なる私的な対価が潜んでいます。例えば、静寂を求めて集中ブースを選択する者は、追加の賃金負担を強いられ、結果としてその日の実質的な報酬を削ることになります。これは、選択の自由を謳いながら、実際には経済的格差を可視化し、それを個人の責任に帰結させるシステムではないでしょうか。\n\n共有オフィスという空間は、本来、相互の偶発的な交流やリソースの共有を通じて、組織全体の創造性を高めるための場所であるはずです。しかし、佐藤様の提案が導入されれば、従業員は「コストを支払って集中する」か「コストを回避して雑音の中で妥協する」という二者択一の心理的重圧に常に晒されることになります。この状況下で、果たして真の意味での「選択」が可能なのでしょうか。選択肢が存在するからこそ、人は自身の経済的状況や健康状態を天秤にかけ、常に「より安価な、あるいはより我慢の必要な」環境を強いられることになります。これは、選択肢が多ければ多いほど、個人の自由が制約されるという逆説的な状況を招いています。\n\nさらに深刻なのは、このシステムが組織内のコミュニケーションを分断する可能性です。経済的な余裕がある者だけが快適な集中環境を享受し、そうでない者は共有スペースで妥協を強いられる。この構造は、単なる物理的環境の差を超え、組織内における階層化を加速させるでしょう。佐藤様は「生産性の向上」を目的として掲げられていますが、その生産性とは、個人の心理的な疲弊や、同僚に対する潜在的な疎外感の上に成り立つものなのでしょうか。私たちは、生産性の名の下に、人間らしい労働環境の根幹を切り売りしているのではないかという疑念を拭えません。\n\nもちろん、佐藤様が組織運営の効率化を目指されている点は理解しております。共有リソースの適正配分は、現代の企業経営において避けて通れない課題です。しかし、効率化という大義名分を盾に、従業員に過度な自己選択という名の重荷を課すことは、組織の長期的持続可能性を損なう行為です。真の自由とは、選択肢の多さではなく、選択を強要されない環境の質にこそ宿るべきではないでしょうか。私は、今回の提案がもたらすであろう、従業員間の心理的な亀裂と、それに伴う組織文化の変質を非常に危惧しております。\n\n結論として、私は本提案の再考を強く求めます。個別の利用料徴収という経済的フィルタを導入するのではなく、むしろ共有空間のあり方を根本から問い直し、誰もが追加コストを意識することなく、等しく高い品質の環境を享受できる仕組みを模索すべきです。佐藤様と私との間には、効率性と公平性という二つの価値観において埋めがたい溝があるようです。このまま提案が強行されるのであれば、私はこの共有オフィスプロジェクトからの撤退を検討せざるを得ません。本件に関する佐藤様の真摯な回答を、早急にお待ちしております。\n\n敬具\n\n田中\n\n加えて、この提案が招くのは単なる心理的な分断に留まりません。組織の生産性を支えるのは、非効率に見える雑談や偶然の出会いから生まれるイノベーションです。コストを意識して集中ブースに籠もる者が増えれば、オフィスは機能的な箱の集合体へと変貌し、組織としての有機的な繋がりは希薄化するでしょう。佐藤様が目指す効率的な環境は、皮肉にも、組織が本来持つ創造的な火種を摘み取ってしまう危険性を孕んでいます。私たちが守るべきは、個人の選択を金銭で切り売りする冷徹な管理体制ではなく、誰もが等しく知的な刺激を享受できる寛容な空間の維持です。もし効率化という名目で、この共有オフィスが単なる作業場へと成り下がるのであれば、それは組織の未来を閉ざす選択に他なりません。私は、目先の利益や効率性よりも、組織の長期的な健康と人間的な豊かさを優先すべきだと確信しております。佐藤様には、改めてこの提案がもたらす本質的な損失について、深い洞察を求めたいと存じます。このまま経済的な合理性のみを追求する姿勢が変わらないのであれば、私にとってこの場所は、もはや創造的な協働の場としての価値を失ったと判断せざるを得ません。本件が、単なるコスト削減の議論に終始することなく、組織のあり方を根本から見直す契機となることを切に願っております。",
+    "wordCount": 1840,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "不可避的",
+        "lemma": "不可避的",
+        "glosses": {
+          "es": "inevitable",
+          "en": "inevitable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "帰結",
+        "lemma": "帰結",
+        "glosses": {
+          "es": "consequence",
+          "en": "consequence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "偶発的",
+        "lemma": "偶発的",
+        "glosses": {
+          "es": "accidental",
+          "en": "accidental"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疎外感",
+        "lemma": "疎外感",
+        "glosses": {
+          "es": "feeling of alienation",
+          "en": "feeling of alienation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "大義名分",
+        "lemma": "大義名分",
+        "glosses": {
+          "es": "pretext",
+          "en": "pretext"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "亀裂",
+        "lemma": "亀裂",
+        "glosses": {
+          "es": "fissure",
+          "en": "fissure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 51.1,
+      "maxSentenceWords": 92,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が佐藤の提案に対して抱いている根本的な批判は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "選択の自由が経済的格差を固定化させること"
+        },
+        {
+          "id": "a2",
+          "text": "コスト負担が公平ではないこと"
+        },
+        {
+          "id": "a3",
+          "text": "集中ブースの数が不足していること"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "選択の自由を謳いながら、実際には経済的格差を可視化し、それを個人の責任に帰結させるシステムではないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "集中ブースを利用することの直接的な影響として述べられていることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "生産性の低下"
+        },
+        {
+          "id": "a2",
+          "text": "追加の賃金負担"
+        },
+        {
+          "id": "a3",
+          "text": "同僚との対立"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "静寂を求めて集中ブースを選択する者は、追加の賃金負担を強いられ、結果としてその日の実質的な報酬を削ることになります。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "筆者が考える「真の自由」とはどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "多くの選択肢から自由に選べること"
+        },
+        {
+          "id": "a2",
+          "text": "すべての設備を無料で利用できること"
+        },
+        {
+          "id": "a3",
+          "text": "選択を強要されない環境の質が保証されていること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "真の自由とは、選択肢の多さではなく、選択を強要されない環境の質にこそ宿るべきではないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が本メールの最後でプロジェクトからの撤退を示唆した目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤の提案を阻止するための強い警告"
+        },
+        {
+          "id": "a2",
+          "text": "自身の経済的余裕を誇示するため"
+        },
+        {
+          "id": "a3",
+          "text": "オフィスを移転する準備のため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "このまま提案が強行されるのであれば、私はこの共有オフィスプロジェクトからの撤退を検討せざるを得ません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "このメール全体を通じて一貫している筆者の態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "感情的で攻撃的"
+        },
+        {
+          "id": "a2",
+          "text": "論理的で懐疑的"
+        },
+        {
+          "id": "a3",
+          "text": "協調的で柔軟"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私は、今回の提案がもたらすであろう、従業員間の心理的な亀裂と、それに伴う組織文化の変質を非常に危惧しております。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「疎外感」という言葉が指し示している状況はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい環境に馴染めないこと"
+        },
+        {
+          "id": "a2",
+          "text": "物理的に距離を置くこと"
+        },
+        {
+          "id": "a3",
+          "text": "組織内で孤立を感じる心理状態"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "個人の心理的な疲弊や、同僚に対する潜在的な疎外感の上に成り立つものなのでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「選択肢があること」が必ずしも幸福や自由を意味しないという筆者の主張をふまえ、現代社会における「自己責任」と「環境設計」のバランスについて、あなたの考えを800字程度で論じなさい。",
+      "en": "「選択肢があること」が必ずしも幸福や自由を意味しないという筆者の主張をふまえ、現代社会における「自己責任」と「環境設計」のバランスについて、あなたの考えを800字程度で論じなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "以下のメール文を読み、筆者が提示する「選択」のパラドックスを理解し、その背後にある組織的な力学を分析してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "共有空間の代償：選択の虚構性について | C2 Reading | WeLearn",
+      "en": "共有空間の代償：選択の虚構性について | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "本教材は、現代の共有オフィス環境における「選択の自由」という概念を、個人的なコストという観点から批判的に考察する読解演習です。",
+      "en": "本教材は、現代の共有オフィス環境における「選択の自由」という概念を、個人的なコストという観点から批判的に考察する読解演習です。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

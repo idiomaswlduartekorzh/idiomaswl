@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-last-bus",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "사라진 승객의 무게: 효율성의 역설",
+      "en": "사라진 승객의 무게: 효율성의 역설"
+    },
+    "intro": {
+      "es": "농어촌 버스 노선 개편을 둘러싼 데이터의 함정과 보이지 않는 시민들의 권리에 대해 고찰합니다.",
+      "en": "농어촌 버스 노선 개편을 둘러싼 데이터의 함정과 보이지 않는 시민들의 권리에 대해 고찰합니다."
+    },
+    "mission": {
+      "es": "지문 속 논리적 모순과 저자의 비판적 시각을 파악하고, 효율성이라는 이름 아래 은폐되는 사회적 비용을 분석하십시오.",
+      "en": "지문 속 논리적 모순과 저자의 비판적 시각을 파악하고, 효율성이라는 이름 아래 은폐되는 사회적 비용을 분석하십시오."
+    },
+    "targetText": "강원도 산간 지역의 작은 마을인 은빛 마을에는 하루 세 번 버스가 들어온다. 최근 군청은 노선 효율화라는 명목으로 이용객이 저조한 저녁 시간대 운행을 전면 폐지하겠다고 발표했다. 데이터상으로 이 시간대 승객은 평균 0.3명에 불과했기 때문이다. 군청 교통과장 박철수는 수치로 증명된 비효율을 개선하는 것이 행정의 책무라고 강조했다. 그러나 이 수치는 철저히 기만적이다. 데이터는 버스를 이용한 사람만을 기록할 뿐, 버스가 없어 이동을 포기한 사람들은 집계하지 않는다. 버스 기사 김 씨는 매일 저녁 정류장에서 누군가를 기다리던 노인들의 굽은 등을 기억한다. 그들은 버스가 끊긴 후 병원 진료를 포기하거나 장을 보는 일을 멈추었다. 데이터는 존재하지 않는 이들의 공백을 효율이라는 이름으로 미화하고 있다. 행정의 논리는 명쾌하다. 비용 대비 수익이 낮으면 투자를 줄이는 것이 시장의 원리다. 박 과장은 버스 운행을 줄여 확보한 예산으로 스마트 모빌리티 시범 사업을 추진하겠다고 밝혔다. 하지만 은빛 마을의 노인들에게 스마트폰 앱으로 호출하는 공유 차량은 외계의 언어와 다름없다. 기술적 진보가 오히려 정보 소외 계층을 고립시키는 역설이 발생한 것이다. 군청은 효율성을 측정하는 지표를 고도화했다고 자부하지만, 그 지표는 오직 시스템 내부의 흐름만을 반영할 뿐이다. 정작 시스템 밖으로 밀려난 이들의 삶은 데이터의 사각지대에서 소리 없이 증발하고 있다. 우리는 효율성이라는 잣대가 누구의 편의를 대변하는지 물어야 한다. 버스 노선 폐지는 단순히 운행 횟수를 줄이는 행위가 아니다. 그것은 특정 집단의 이동권을 사회적 비용이라는 이름으로 삭제하는 행위다. 데이터는 객관적이라는 믿음은 위험하다. 데이터는 수집자의 의도에 따라 선택적으로 구성되기 때문이다. 저녁 버스를 기다리던 노인들이 사라진 자리에 효율성이라는 이름의 통계적 승리만이 남았다. 군청은 성공적인 예산 절감을 자축하겠지만, 마을의 활력은 이미 식어버렸다. 효율성을 추구하는 과정에서 우리는 무엇을 잃고 있는가. 측정되지 않는 가치는 가치가 없는 것인가. 은빛 마을의 버스 정류장은 오늘도 텅 비어 있다. 누군가는 이를 성공적인 노선 최적화 사례라고 부르겠지만, 정류장에 남겨진 낡은 시간표는 그곳에 살았던 사람들의 일상이 강제로 거세되었음을 증언하고 있다. 데이터의 정교함이 인간의 존엄성을 압도할 때, 우리는 과연 진보하고 있는 것인지 의문이 든다. 효율성의 그늘은 생각보다 깊고 차갑다. 이제는 숫자가 말하지 않는 진실에 귀를 기울여야 할 때다. 사라진 승객들의 무게를 데이터가 계산할 수 없다면, 그 데이터는 불완전한 도구에 불과하다. 운행이 중단된 버스 노선은 마을의 혈관을 끊어놓았고, 그 결과는 통계에 잡히지 않는 일상의 붕괴로 나타나고 있다.\n\n이러한 행정적 결정이 가져온 파장은 단순히 이동 수단의 부재에 그치지 않고 마을 공동체 전체의 해체라는 비극적 결과로 이어지고 있다. 노인들이 정류장에서 나누던 사소한 대화와 서로의 안부를 묻던 일상은 버스라는 매개체가 사라짐과 동시에 자취를 감추었으며 이는 마을의 사회적 자본이 급격히 고갈되는 원인이 되었다. 군청이 추진한 스마트 모빌리티 사업은 디지털 격차를 고려하지 않은 채 공급자 중심의 기술적 낙관론에 매몰되어 있어 실제 주민들에게는 아무런 실질적 혜택을 제공하지 못하고 있다. 오히려 이러한 기술적 대안은 기존의 대중교통망을 대체하기보다는 오히려 소외 계층을 더욱 깊은 고립의 늪으로 밀어 넣는 결과를 초래하고 있다. 우리는 수치화된 지표를 맹신하는 현대 사회의 병폐를 직시해야 하며 효율성이라는 이름으로 포장된 배제의 논리가 어떻게 평범한 이들의 삶을 파괴하는지 목격하고 있다. 만약 정책 입안자들이 현장의 목소리를 데이터의 변수로 편입시키지 않는다면 앞으로도 유사한 행정적 폭력은 반복될 수밖에 없다. 진정한 의미의 공공성은 숫자의 크기가 아니라 가장 취약한 구성원이 사회적 관계망 속에서 얼마나 안전하게 연결되어 있는지에 의해 판가름 나야 한다. 이제는 효율성이라는 잣대를 버리고 인간의 존엄성과 공동체의 회복이라는 가치를 행정의 최우선 순위에 두어야 할 시점이다. 그렇지 않으면 은빛 마을처럼 소리 없이 무너져가는 공동체는 우리 주변 어디에서나 계속해서 발견될 것이며 그 책임은 오롯이 데이터의 이면을 보지 못한 우리 모두의 몫으로 남게 될 것이다.",
+    "wordCount": 504,
+    "estimatedMinutes": 21,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "효율화",
+        "lemma": "효율화",
+        "glosses": {
+          "es": "optimization",
+          "en": "optimization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "기만적",
+        "lemma": "기만적",
+        "glosses": {
+          "es": "deceptive",
+          "en": "deceptive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모빌리티",
+        "lemma": "모빌리티",
+        "glosses": {
+          "es": "mobility",
+          "en": "mobility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사각지대",
+        "lemma": "사각지대",
+        "glosses": {
+          "es": "blind spot",
+          "en": "blind spot"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "거세되었음을",
+        "lemma": "거세되었음을",
+        "glosses": {
+          "es": "having been castrated/removed",
+          "en": "having been castrated/removed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "불완전한",
+        "lemma": "불완전한",
+        "glosses": {
+          "es": "incomplete",
+          "en": "incomplete"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 12,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "효율성 지표의 한계와 소외"
+        },
+        {
+          "id": "a2",
+          "text": "데이터 기반 행정의 우수성"
+        },
+        {
+          "id": "a3",
+          "text": "농어촌 대중교통의 미래 기술"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "데이터는 존재하지 않는 이들의 공백을 효율이라는 이름으로 미화하고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박철수 과장이 추진하려는 새로운 사업은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "마을 순환 버스"
+        },
+        {
+          "id": "a2",
+          "text": "스마트 모빌리티"
+        },
+        {
+          "id": "a3",
+          "text": "노인 복지 센터"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "박 과장은 버스 운행을 줄여 확보한 예산으로 스마트 모빌리티 시범 사업을 추진하겠다고 밝혔다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "본문에서 언급된 '데이터의 사각지대'가 의미하는 바는?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "시스템의 기술적 오류"
+        },
+        {
+          "id": "a2",
+          "text": "버스 기사의 기억력 부족"
+        },
+        {
+          "id": "a3",
+          "text": "이동권을 박탈당한 이들"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "정작 시스템 밖으로 밀려난 이들의 삶은 데이터의 사각지대에서 소리 없이 증발하고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 버스 기사 김 씨의 기억을 언급한 주된 이유는?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "데이터가 포착하지 못하는 인간적 고통을 드러내기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "버스 기사의 근무 환경이 얼마나 열악한지 강조하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "마을의 인구 구조가 어떻게 변화했는지 설명하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "버스 기사 김 씨는 매일 저녁 정류장에서 누군가를 기다리던 노인들의 굽은 등을 기억한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적"
+        },
+        {
+          "id": "a2",
+          "text": "비판적"
+        },
+        {
+          "id": "a3",
+          "text": "중립적"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "데이터는 객관적이라는 믿음은 위험하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'기만적'의 문맥적 의미와 가장 가까운 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "매우 정교하고 치밀한"
+        },
+        {
+          "id": "a2",
+          "text": "변화 가능성이 농후한"
+        },
+        {
+          "id": "a3",
+          "text": "속이는 성질이 있는"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그러나 이 수치는 철저히 기만적이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "데이터 기반의 정책 결정 과정에서 '측정되지 않는 가치'를 어떻게 보호할 수 있을지 본인의 견해를 300자 내외로 서술하십시오.",
+      "en": "데이터 기반의 정책 결정 과정에서 '측정되지 않는 가치'를 어떻게 보호할 수 있을지 본인의 견해를 300자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "지문 속 논리적 모순과 저자의 비판적 시각을 파악하고, 효율성이라는 이름 아래 은폐되는 사회적 비용을 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "사라진 승객의 무게: 효율성의 역설 | C2 Reading | WeLearn",
+      "en": "사라진 승객의 무게: 효율성의 역설 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "농어촌 버스 노선 개편을 둘러싼 데이터의 함정과 보이지 않는 시민들의 권리에 대해 고찰합니다.",
+      "en": "농어촌 버스 노선 개편을 둘러싼 데이터의 함정과 보이지 않는 시민들의 권리에 대해 고찰합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

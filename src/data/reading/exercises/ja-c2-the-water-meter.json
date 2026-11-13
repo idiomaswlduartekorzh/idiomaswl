@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-water-meter",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "滴る責任：老朽化した貯水槽が問いかけるもの",
+      "en": "滴る責任：老朽化した貯水槽が問いかけるもの"
+    },
+    "intro": {
+      "es": "都市のインフラ維持という冷徹な現実が、個人の道徳的義務と衝突する瞬間を考察する。",
+      "en": "都市のインフラ維持という冷徹な現実が、個人の道徳的義務と衝突する瞬間を考察する。"
+    },
+    "mission": {
+      "es": "以下の論説を読み、筆者が提示する「責任の所在」に関する複雑な議論を理解し、その背後にある倫理的ジレンマを分析してください。",
+      "en": "以下の論説を読み、筆者が提示する「責任の所在」に関する複雑な議論を理解し、その背後にある倫理的ジレンマを分析してください。"
+    },
+    "targetText": "閑静な住宅街の一角に建つ「銀杏荘」は、築半世紀を経た集合住宅である。ある火曜日の午後、管理人の佐藤氏は、屋上の貯水槽から微かな漏水を確認した。当初は単なる経年劣化によるパッキンの緩みと推測されたが、詳細な調査の結果、槽内の腐食が深刻であり、大規模な修繕が必要であることが判明した。修理費用は膨大で、居住者たちの積立金だけでは到底賄えない。佐藤氏は直ちに全戸へ緊急通知を配布し、修繕費の分担を求めたが、この瞬間、単なる物理的な修繕問題は、住人たちの生活信条と責任観を揺さぶる社会的な火種へと変貌した。\n\nこの問題の核心には、水という公共財をどう管理するかという問いがある。佐藤氏は、漏水が近隣の地盤に与える影響を危惧し、早急な工事を主張したが、退職後の年金暮らしを余儀なくされている住人の多くは、目に見えない「予防的修繕」に大金を投じることに難色を示した。彼らにとって、水漏れは「まだ使える」範囲内の些細な瑕疵であり、今すぐ支払うべき「責任」とは見なされなかったのである。この認識の乖離は、単なる経済的な利害対立を超え、個々人が社会の持続可能性に対してどの程度の当事者意識を持っているかという、より深い倫理的問いを浮き彫りにした。\n\n修繕を巡る議論が紛糾する中、佐藤氏は自らの役割を再定義せざるを得なくなった。彼は単なる管理業務の代行者ではなく、住人たちの無関心という壁を崩す媒介者としての役割を担うことになったのである。彼は近隣の土壌調査データを提示し、放置が将来的にさらなる莫大な賠償責任を招く可能性を説いた。しかし、論理的な説得は必ずしも共感を生むわけではない。むしろ、彼の熱心な説明は、住人たちの間に「自分たちが被害者である」という被害者意識を強め、責任を外部化する傾向を助長させる結果となった。この状況は、現代社会における合意形成の脆さを象徴している。\n\n事態は、一人の住人が自室の蛇口から出る水の異臭を訴えたことで急展開を迎えた。腐食が進行し、水質にまで影響が出始めたのである。もはや「先送り」という選択肢は消滅した。佐藤氏が強硬な姿勢で業者を手配し、修繕が開始されたのは、最初の漏水発見から三週間後のことだった。工事費用は結局、住人たちが折半する形で決着したが、その過程で失われた信頼関係は修復困難なものとなった。物理的な水漏れは止まったが、コミュニティの間に生じた亀裂は、修繕不能なまま放置されることとなったのである。\n\nこの出来事は、インフラの老朽化が単なる技術的課題ではなく、個人の責任の境界線を問う試練であることを物語っている。私たちは、目に見える不利益が生じるまで責任を回避し、問題が顕在化した瞬間にのみ、渋々ながら共同体としての義務を履行する。しかし、その履行はしばしば他者への非難を伴い、真の連帯を阻害する。銀杏荘の事例は、持続可能な未来を築くためには、物理的な配管の交換以上に、私たち自身の内面にある「当事者意識」という名の錆を落とす必要があることを示唆している。責任とは、誰かに押し付けるものではなく、水のように静かに、しかし確実に共有されるべきものなのだ。\n\nしかし、この修繕の結末は、銀杏荘に新たな冷戦の火種を落とすことにもなった。工事完了後、住人たちの間には、誰が最も責任を負うべきかという犯人探しのような空気が漂い始めた。特に、最後まで修繕に反対していた高層階の住人と、いち早く危機を訴えた低層階の住人との間では、挨拶すら交わされないほどの溝が生まれたのである。佐藤氏は、物理的なインフラを修復したことで自らの責務を果たしたと信じていたが、皮肉にもその強引な執行が、住人たちの独立した生活圏を侵食したという反発を招いてしまった。彼らにとって、水質という生命線が守られたことよりも、個人の経済的自由が侵害されたという不満の方が、はるかに深刻な問題として記憶に刻まれてしまったのだ。この現象は、現代の都市生活における共同体の脆さを如実に表している。かつては共有の価値観で結ばれていたはずの隣人たちが、一度の利害対立によって、互いを尊重すべき他者から、警戒すべき監視対象へと変貌してしまったのである。佐藤氏は、屋上の貯水槽を見上げるたびに、そこにあるのはただの金属の塊ではなく、住民たちの不信感が結晶化した重苦しい沈黙であると感じざるを得ない。結局のところ、配管の錆は物理的な処置で除去できても、人間の心に生じた不信の錆は、どれほど年月を重ねても決して拭い去ることはできないのかもしれない。銀杏荘という小さな社会は、機能的には再生を果たしたが、その精神的な基盤は、あの日を境に静かに、しかし決定的に崩壊してしまったのである。私たちは、効率的な合意形成を急ぐあまり、その過程でこぼれ落ちる個々の感情や、積み上げられた信頼の重みを軽視してはいないだろうか。この物語の教訓は、インフラの維持管理以上に、その場所で共に生きる人々の心のつながりこそが、何よりも脆く、かつ保護されるべき貴重な資産であるという点にこそあるはずだ。",
+    "wordCount": 1928,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "経年劣化",
+        "lemma": "経年劣化",
+        "glosses": {
+          "es": "deterioration over time",
+          "en": "deterioration over time"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "瑕疵",
+        "lemma": "瑕疵",
+        "glosses": {
+          "es": "defect or flaw",
+          "en": "defect or flaw"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "乖離",
+        "lemma": "乖離",
+        "glosses": {
+          "es": "divergence or gap",
+          "en": "divergence or gap"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "媒介者",
+        "lemma": "媒介者",
+        "glosses": {
+          "es": "mediator",
+          "en": "mediator"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "顕在化",
+        "lemma": "顕在化",
+        "glosses": {
+          "es": "becoming manifest or visible",
+          "en": "becoming manifest or visible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "連帯",
+        "lemma": "連帯",
+        "glosses": {
+          "es": "solidarity",
+          "en": "solidarity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 50.7,
+      "maxSentenceWords": 85,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこの事例を通じて最も主張したいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "社会の持続可能性には、個人の当事者意識が不可欠である。"
+        },
+        {
+          "id": "a2",
+          "text": "老朽化した設備の修繕には多額の費用が必要である。"
+        },
+        {
+          "id": "a3",
+          "text": "管理人の佐藤氏は住人との対話をもっと丁寧に行うべきだった。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "銀杏荘の事例は、持続可能な未来を築くためには、物理的な配管の交換以上に、私たち自身の内面にある「当事者意識」という名の錆を落とす必要があることを示唆している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "修繕が開始される決定的な契機となった出来事は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤氏が業者を強引に呼んだこと。"
+        },
+        {
+          "id": "a2",
+          "text": "住人が水質の異変を訴えたこと。"
+        },
+        {
+          "id": "a3",
+          "text": "積立金が底をついたこと。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "事態は、一人の住人が自室の蛇口から出る水の異臭を訴えたことで急展開を迎えた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "住人たちが佐藤氏の説得に対して反発した理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "佐藤氏が業者と結託していると疑ったから。"
+        },
+        {
+          "id": "a2",
+          "text": "修繕の必要性を全く理解していなかったから。"
+        },
+        {
+          "id": "a3",
+          "text": "彼らが自分たちを被害者だと感じたから。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼の熱心な説明は、住人たちの間に「自分たちが被害者である」という被害者意識を強め、責任を外部化する傾向を助長させる結果となった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「水漏れは止まったが、コミュニティの間に生じた亀裂は、修繕不能なまま放置されることとなった」と記した意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "物理的な修繕と人間関係の修復が必ずしも両立しないことを強調するため。"
+        },
+        {
+          "id": "a2",
+          "text": "住人たちの協力体制が最終的には成功したことを肯定的に表現するため。"
+        },
+        {
+          "id": "a3",
+          "text": "佐藤氏の管理能力の低さがコミュニティを崩壊させたことを批判するため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "物理的な水漏れは止まったが、コミュニティの間に生じた亀裂は、修繕不能なまま放置されることとなったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本稿全体の筆者の論調として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちている。"
+        },
+        {
+          "id": "a2",
+          "text": "冷徹で分析的かつ思索的である。"
+        },
+        {
+          "id": "a3",
+          "text": "怒りに満ちて住人を告発している。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この問題の核心には、水という公共財をどう管理するかという問いがある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「瑕疵」という言葉が文中で意味する内容はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "修繕の計画。"
+        },
+        {
+          "id": "a2",
+          "text": "住人の個人的な不満。"
+        },
+        {
+          "id": "a3",
+          "text": "物理的な欠陥。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼らにとって、水漏れは「まだ使える」範囲内の些細な瑕疵であり、今すぐ支払うべき「責任」とは見なされなかったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「責任を外部化する」という心理的傾向が、現代の環境問題やインフラ維持においてどのような弊害をもたらしているか、具体例を挙げて800字程度で論じなさい。",
+      "en": "「責任を外部化する」という心理的傾向が、現代の環境問題やインフラ維持においてどのような弊害をもたらしているか、具体例を挙げて800字程度で論じなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "以下の論説を読み、筆者が提示する「責任の所在」に関する複雑な議論を理解し、その背後にある倫理的ジレンマを分析してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "滴る責任：老朽化した貯水槽が問いかけるもの | C2 Reading | WeLearn",
+      "en": "滴る責任：老朽化した貯水槽が問いかけるもの | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "都市のインフラ維持という冷徹な現実が、個人の道徳的義務と衝突する瞬間を考察する。",
+      "en": "都市のインフラ維持という冷徹な現実が、個人の道徳的義務と衝突する瞬間を考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

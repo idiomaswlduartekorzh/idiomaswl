@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "沈黙の種子：記憶のアーカイブと所有の論理",
+      "en": "沈黙の種子：記憶のアーカイブと所有の論理"
+    },
+    "intro": {
+      "es": "あるコミュニティ・シードライブラリーを舞台に、口承の知恵と現代的なアーカイブ管理の対立を描く物語。",
+      "en": "あるコミュニティ・シードライブラリーを舞台に、口承の知恵と現代的なアーカイブ管理の対立を描く物語。"
+    },
+    "mission": {
+      "es": "物語を通じ、知識の継承における「所有」の概念と、制度化がもたらす排除のメカニズムについて考察する。",
+      "en": "物語を通じ、知識の継承における「所有」の概念と、制度化がもたらす排除のメカニズムについて考察する。"
+    },
+    "targetText": "山あいの村に位置する「継承の蔵」は、かつて村人が持ち寄った種を保管する、ささやかな共有地であった。この場所の管理人である老女・サヨは、数十年もの間、どの種がどの家系で育てられ、どのような気候に適応してきたかを、すべて口伝の物語として記憶してきた。しかし、国立種子保存機構の職員である若き研究者・レンが訪れたことで、この場所の静寂は破られた。レンは、この蔵を公的な「遺伝資源アーカイブ」として登録し、その管理を標準化することを提案した。彼は、種子の真正性を担保するために、各品種の起源と所有権を証明する書面記録を求めたのである。サヨは、種は誰のものでもなく、土地と対話する者の手に委ねられるべきだと説いたが、レンは近代的な分類学の論理を崩さなかった。\n\nレンが持ち込んだのは、精巧に設計されたデータベースと、厳格な登録プロトコルであった。彼は、口承の物語を「不確かな伝聞」として切り捨て、書面による系譜の欠如を、科学的な価値の欠如と見なした。サヨにとって、種子は単なる遺伝情報ではなく、先祖の苦労や、特定の雨の日に交わされた会話の断片が織り込まれた「記憶の器」であった。レンは、アーカイブの目的は「保存」にあると主張し、そのためには誰がその種を所有し、誰が権利を保持しているかを明確にしなければ、将来的な利用における法的紛争を避けられないと論じた。サヨは、所有を明確にすることは、その種をコミュニティの共有物から、排他的な商品へと変質させる行為であると反論したが、レンの背後には行政の確固たる方針があった。\n\n事態が深刻化したのは、ある希少な「夜明けの豆」を巡る調査の際であった。この豆は、特定の家系の畑でしか育たず、その栽培法は口伝でしか継承されていなかった。レンは、この豆の所有権を証明する公的な書類がないため、アーカイブへの登録を見送ると通告した。サヨは、この豆が何世代にもわたって村の飢えを救ってきた歴史を語ったが、レンは「歴史は証拠にはならない」と冷淡に突き放した。この決定は、村人たちにとって、自分たちのアイデンティティの一部が公的な記録から抹消されることを意味していた。レンの論理は、効率的で透明性が高いように見えたが、それは同時に、書かれた記録を持たない者たちの存在を無効化する暴力性を孕んでいた。\n\n議論は平行線を辿り、ついにサヨは蔵の鍵をレンに手渡すことを拒絶した。彼女は、記録に残らない知恵こそが真の遺産であると信じていたが、レンはそれを「無秩序な保管」と呼び、法的措置をちらつかせた。この対立は、単なる管理手法の相違ではなく、世界をどのように認識し、何を価値あるものとして認めるかという、根源的な断絶であった。レンは、アーカイブという枠組みが、いかにして多様な知のあり方を均質化し、特定の権力構造に従属させるかを理解していなかった。サヨは、この蔵が制度の支配下に置かれた瞬間、種子は魂を失い、ただの乾燥した殻になると直感していた。\n\n結局、レンはプロジェクトを一時停止し、村を去った。しかし、彼が残したデータベースの空欄は、村人たちの心に深い影を落とした。自分たちの物語が、公的な記録の海では「存在しないもの」として扱われるという事実は、抗いがたい疎外感をもたらした。サヨは、再び種を土に埋めながら、記録という名の沈黙が、いかにして記憶を侵食していくかを痛感していた。アーカイブは、過去を保存するために作られたはずが、結果として、その文脈を剥ぎ取り、未来への繋がりを断ち切る装置へと変貌していたのである。彼女は、誰にも知られず、ただ静かに、記憶の系譜を次世代へと繋ぐための孤独な作業を続けていくしかなかった。\n\n皮肉にも、レンが去った後に残されたのは、管理された秩序ではなく、村人たちの間に芽生えた「記録への不信」という新たな分断であった。一部の若者は、公的なアーカイブの利便性と、サヨが守る口承の不確実性の間で揺れ動き、種子の価値を巡る対話は急速に失われていった。彼らにとって、外部の評価軸に組み込まれないことは、現代社会における社会的死を意味するようになり、種の栽培は単なる農業から、自分たちの存在を証明するための政治的な闘争へと変質してしまったのである。サヨが守り抜こうとした「物語」は、もはや村の共有財産ではなく、一部の保守的な人間だけが抱え込む重荷となってしまった。かつて種を分け合うことで結ばれていた村の絆は、記録という名の透明な壁によって細分化され、かつての調和を取り戻すことは二度と叶わなくなった。レンが持ち帰ったはずのデータベースの空欄は、村人たちの心の中に、自分たちの文化が外の世界から理解されることは永遠にないという、拭い去ることのできない諦念を植え付けた。サヨの孤独な作業は、種を未来へ繋ぐ行為であると同時に、滅びゆく記憶を誰にも看取られることなく弔う、静かな葬列のようでもあった。彼女が土に触れるたび、そこにはかつてあったはずの豊かな対話の残響が、虚しくこだましている。",
+    "wordCount": 1896,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "真正性",
+        "lemma": "真正性",
+        "glosses": {
+          "es": "authenticity",
+          "en": "authenticity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "プロトコル",
+        "lemma": "プロトコル",
+        "glosses": {
+          "es": "protocol",
+          "en": "protocol"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "排他的",
+        "lemma": "排他的",
+        "glosses": {
+          "es": "exclusive",
+          "en": "exclusive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "変質",
+        "lemma": "変質",
+        "glosses": {
+          "es": "alteration or degeneration",
+          "en": "alteration or degeneration"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "均質化",
+        "lemma": "均質化",
+        "glosses": {
+          "es": "homogenization",
+          "en": "homogenization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疎外感",
+        "lemma": "疎外感",
+        "glosses": {
+          "es": "feeling of alienation",
+          "en": "feeling of alienation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 52.7,
+      "maxSentenceWords": 92,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:57:19.420Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主要なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "所有の論理と口承の記憶の対立"
+        },
+        {
+          "id": "a2",
+          "text": "種子の保存技術の進化"
+        },
+        {
+          "id": "a3",
+          "text": "行政による農業支援の重要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "サヨは、種は誰のものでもなく、土地と対話する者の手に委ねられるべきだと説いたが、レンは近代的な分類学の論理を崩さなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "レンが「夜明けの豆」の登録を見送った理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "栽培法が不明だったから"
+        },
+        {
+          "id": "a2",
+          "text": "所有権を証明する書類がなかったから"
+        },
+        {
+          "id": "a3",
+          "text": "希少価値が低かったから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "レンは、この豆の所有権を証明する公的な書類がないため、アーカイブへの登録を見送ると通告した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "サヨが蔵の鍵を渡すことを拒んだ真の意図は何だと考えられますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "種子の管理権を独占したかったから"
+        },
+        {
+          "id": "a2",
+          "text": "レンの知識不足を軽蔑していたから"
+        },
+        {
+          "id": "a3",
+          "text": "制度化が種子の本来の価値を損なうと懸念したから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "サヨは、この蔵が制度の支配下に置かれた瞬間、種子は魂を失い、ただの乾燥した殻になると直感していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がレンというキャラクターを通じて示唆しようとしたことは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "記録文化の持つ排除と暴力性"
+        },
+        {
+          "id": "a2",
+          "text": "科学的アプローチの無意味さ"
+        },
+        {
+          "id": "a3",
+          "text": "若手研究者の未熟な倫理観"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "レンの論理は、効率的で透明性が高いように見えたが、それは同時に、書かれた記録を持たない者たちの存在を無効化する暴力性を孕んでいた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語の結末における筆者の視点はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政と市民の協力への期待"
+        },
+        {
+          "id": "a2",
+          "text": "記憶の断絶に対する深い憂慮"
+        },
+        {
+          "id": "a3",
+          "text": "科学と伝統の調和への希望"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "アーカイブは、過去を保存するために作られたはずが、結果として、その文脈を剥ぎ取り、未来への繋がりを断ち切る装置へと変貌していたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「均質化」という言葉が文脈の中で意味していることは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "すべての種子を同じ土壌で育てること"
+        },
+        {
+          "id": "a2",
+          "text": "権力構造を平等に再構築すること"
+        },
+        {
+          "id": "a3",
+          "text": "多様な知を単一の基準に合わせること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "レンは、アーカイブという枠組みが、いかにして多様な知のあり方を均質化し、特定の権力構造に従属させるかを理解していなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "もしあなたがこの村の住民であれば、レンのデータベース化に対してどのような代替案を提示しますか。口承の知恵を現代の記録媒体とどのように融合させることができるか、論理的に記述してください。",
+      "en": "もしあなたがこの村の住民であれば、レンのデータベース化に対してどのような代替案を提示しますか。口承の知恵を現代の記録媒体とどのように融合させることができるか、論理的に記述してください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "物語を通じ、知識の継承における「所有」の概念と、制度化がもたらす排除のメカニズムについて考察する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:57:19.420Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "沈黙の種子：記憶のアーカイブと所有の論理 | C2 Reading | WeLearn",
+      "en": "沈黙の種子：記憶のアーカイブと所有の論理 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "あるコミュニティ・シードライブラリーを舞台に、口承の知恵と現代的なアーカイブ管理の対立を描く物語。",
+      "en": "あるコミュニティ・シードライブラリーを舞台に、口承の知恵と現代的なアーカイブ管理の対立を描く物語。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:57:19.420Z"
+  }
+}

@@ -270,6 +270,11 @@ for (const { language, level, brief } of pending) {
       console.error(`${language}/${level}/${brief.slug} attempt ${attempt + 1}: ${error.message}`)
       if (/(?:Gemini|Groq) (?:400|403|404):|API_KEY is not configured/.test(error.message)) break
       if (/per day|PerDay|daily quota/i.test(error.message)) break
+      if (/fetch failed|network error/i.test(error.message)) {
+        if (attempt > 0) break
+        await new Promise((resolve) => setTimeout(resolve, 5_000))
+        continue
+      }
       if (/429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 65_000))
       else if (/503|high demand/i.test(error.message)) await new Promise((resolve) => setTimeout(resolve, 15_000 * (attempt + 1)))
     }
@@ -277,7 +282,7 @@ for (const { language, level, brief } of pending) {
   if (!item) {
     failedCount++
     console.error(`Skipped ${language}/${level}/${brief.slug}: ${lastError?.message}`)
-    if (/(?:Gemini|Groq) (?:400|403|404):|API_KEY is not configured|429|quota|RESOURCE_EXHAUSTED|rate.limit/i.test(lastError?.message ?? '')) break
+    if (/(?:Gemini|Groq) (?:400|403|404):|API_KEY is not configured|429|quota|RESOURCE_EXHAUSTED|rate.limit|fetch failed|network error/i.test(lastError?.message ?? '')) break
     providerOutageStreak = /503|high demand/i.test(lastError?.message ?? '') ? providerOutageStreak + 1 : 0
     if (providerOutageStreak >= 2) { console.error('Provider remains unavailable; stop and resume this batch later.'); break }
     continue

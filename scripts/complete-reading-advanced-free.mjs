@@ -52,6 +52,7 @@ for (const level of levels) {
       const after = await countGroup(language, level)
       if (/Less than 1 GB of free disk space/.test(result.tail)) throw new Error('Generation paused because the disk has less than 1 GB free.')
       if (/(?:Gemini|Groq) (?:400|403|404):|API_KEY is not configured/.test(result.tail)) throw new Error(`Provider access failed for ${language}/${level}; ${result.tail.slice(-250)}`)
+      if (/fetch failed|network error/i.test(result.tail) && after === before) throw new Error(`Network unavailable at ${language}/${level}; resume when connectivity returns.`)
       if (/per day limit exceeded|PerDay|requests per day limit/i.test(result.tail)) throw new Error(`Daily free API quota exhausted at ${language}/${level}; resume after its reset.`)
       if (after > before) {
         completed += after - before

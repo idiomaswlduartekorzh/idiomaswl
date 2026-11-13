@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-a-place-to-wait",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "透明な待合室の黄昏",
+      "en": "透明な待合室の黄昏"
+    },
+    "intro": {
+      "es": "病院の待合室という、本来であれば「通過点」であるはずの場所が、目的を喪失した時に何が起きるのか。C2レベルの読解力と、行間に潜む不穏な緊張感を読み解く練習です。",
+      "en": "病院の待合室という、本来であれば「通過点」であるはずの場所が、目的を喪失した時に何が起きるのか。C2レベルの読解力と、行間に潜む不穏な緊張感を読み解く練習です。"
+    },
+    "mission": {
+      "es": "物語の構造、語り手の心理的な変遷、そして「不在」がもたらす哲学的帰結について分析しなさい。",
+      "en": "物語の構造、語り手の心理的な変遷、そして「不在」がもたらす哲学的帰結について分析しなさい。"
+    },
+    "targetText": "薄暗い待合室の隅で、私はただ時計の針が刻む無機質な音を聞いていた。壁に掛けられた古びた時計は、時折、重苦しい唸りを上げては、また沈黙に戻る。受付の窓口は既にシャッターが下ろされ、そこには「本日の受付は終了しました」という冷徹な掲示が貼り付けられている。かつては患者たちの咳や苛立ち、あるいは安堵の溜息で満たされていたこの空間が、今はまるで深い水底のような静寂に支配されている。私は、この場所で誰かを待っている。あるいは、待っているという行為そのものを待っているのかもしれない。看護師の佐藤さんは、最後の一人が帰った後、私の存在を完全に忘却の彼方へと追いやったようだ。彼女の視線は、私の輪郭を通り越し、背後の壁に飾られた色褪せたポスターへと注がれていた。その瞬間、私は確信した。私がこの場所に座り続けているという事実は、もはや誰の認識にも触れることができない幽霊のような現象へと昇華したのだと。待つという行為は、待たれる対象が存在し、かつ待たれる側が認識されることで初めて成立する。しかし、病院という機関が私を不可視の存在として確定させた今、私は「待っている」のか、それとも単に「そこに留まっている」のか。その境界線は、極めて曖昧で、かつ決定的な亀裂を孕んでいる。\n\n窓の外では、夕闇が急速に街を飲み込もうとしていた。遠くで救急車のサイレンが鳴り響くが、それはこの閉鎖された空間には届かない異界の音のように感じられる。私はポケットから手帳を取り出し、今日という日の記録を書き留めようとしたが、ペン先は紙の上で虚しく滑るだけだった。記憶の断片が、まるで剥がれ落ちる壁紙のように脳裏をよぎる。私がここに来たのは、果たして何のためだったのか。診察券の感触さえも、今や遠い過去の遺物のように思える。待合室の空調は既に停止しており、淀んだ空気が私の肺を圧迫する。この状況における私の孤独は、誰かに共有されるべき性質のものではなく、むしろ誰にも観測されないという特権的な虚無に近い。もし、私がこのまま夜通し座り続けたとして、翌朝の清掃員が私を見つけることはあるのだろうか。それとも、私はこの病院の建材の一部として、永遠にこの空間に溶け込んでいくのだろうか。\n\n佐藤さんが再び現れたのは、時計が八時を回った頃だった。彼女は手元の書類を整理しながら、私の座る椅子のすぐ横を通り過ぎた。その時、彼女の肩が私の肩に触れたような錯覚を覚えたが、彼女は一切の動揺を見せることなく、そのまま出口へと向かった。彼女にとって、私はそこに存在しない。あるいは、存在していたとしても、それは彼女の日常の視界にノイズとしてさえ映らないのだ。この時、私は「待つ」という行為の終焉を悟った。待つことの前提条件は、待つ主体と待たれる対象の間に、認識という名の架け橋が存在することだ。しかし、この病院において私は既に、認識の対象外へと追いやられている。私が待っているのは、もはや診察の順番でも、誰かの呼びかけでもない。私は、私自身の存在がこの空間から完全に消滅する瞬間を待っているのかもしれない。\n\n出口の鍵が重々しい音を立てて閉まる。私は立ち上がることもせず、ただ暗闇の中で呼吸を繰り返す。この空間は、もはや病院としての機能を失い、単なる「待つための場所」という概念の残骸と化した。かつて人々が希望や不安を抱えて集ったこの場所で、私は今、何者でもない自分自身と対峙している。待つという行為が、誰の視線にも触れられなくなった時、それは祈りに似た静寂へと変貌する。私は、自分が何者であるかを証明する術を失った。しかし、不思議なことに、その喪失感は私に奇妙な解放感をもたらしていた。誰からも認識されないということは、誰からも束縛されないということと同義なのだ。この閉ざされた空間で、私は初めて自分自身を所有しているという感覚を得た。\n\n夜が深まるにつれ、待合室の輪郭はさらに曖昧になっていく。私は、明日という日が訪れるのかどうかさえ確信が持てない。もし明日、病院の扉が開かれ、再び日常が戻ってきたとしても、私はこの椅子から立ち上がることができるだろうか。待つことの正当性を失った人間にとって、立ち上がるという行為は、新たな物語の始まりを意味する。しかし、私は物語を終わらせるためにここに来たのではなかったのか。窓から差し込む月光が、床に長い影を落とす。その影は、私の体から切り離され、独立した意志を持っているかのように揺らめいている。私は、この影を見つめながら、静かに目を閉じた。待つことが終わった後には、何が残るのか。それは、誰にも語られることのない、透明な物語の断片だけである。",
+    "wordCount": 1766,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "忘却",
+        "lemma": "忘却",
+        "glosses": {
+          "es": "forgetfulness or oblivion",
+          "en": "forgetfulness or oblivion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "昇華",
+        "lemma": "昇華",
+        "glosses": {
+          "es": "sublimation or elevation",
+          "en": "sublimation or elevation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "亀裂",
+        "lemma": "亀裂",
+        "glosses": {
+          "es": "a crack or rift",
+          "en": "a crack or rift"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "淀んだ",
+        "lemma": "淀んだ",
+        "glosses": {
+          "es": "stagnant",
+          "en": "stagnant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "残骸",
+        "lemma": "残骸",
+        "glosses": {
+          "es": "remains or wreckage",
+          "en": "remains or wreckage"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "束縛",
+        "lemma": "束縛",
+        "glosses": {
+          "es": "restraint or binding",
+          "en": "restraint or binding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 34,
+      "maxSentenceWords": 59,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "物語の全体的なテーマとして最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "待つという行為の変容と自己の存在"
+        },
+        {
+          "id": "a2",
+          "text": "病院の管理体制の不備"
+        },
+        {
+          "id": "a3",
+          "text": "過去の記憶を整理する重要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "待つという行為は、待たれる対象が存在し、かつ待たれる側が認識されることで初めて成立する。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "看護師の佐藤さんが部屋を通り過ぎた際、彼女はどのような反応を示したか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "驚いて書類を落とした"
+        },
+        {
+          "id": "a2",
+          "text": "一切の動揺を見せず、通り過ぎた"
+        },
+        {
+          "id": "a3",
+          "text": "無視して挨拶をした"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼女は一切の動揺を見せることなく、そのまま出口へと向かった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "語り手が「解放感」を感じている理由は何だと示唆されているか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "病院から解放されるため"
+        },
+        {
+          "id": "a2",
+          "text": "夜が明けるのを待つ必要がなくなったため"
+        },
+        {
+          "id": "a3",
+          "text": "他者からの認識や束縛から切り離されたため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "誰からも認識されないということは、誰からも束縛されないということと同義なのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「誰からも認識されない」という状況を強調する目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "待つという行為の定義が崩壊する過程を描くため"
+        },
+        {
+          "id": "a2",
+          "text": "社会的な孤立を批判するため"
+        },
+        {
+          "id": "a3",
+          "text": "病院のスタッフの無関心さを告発するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "待つという行為が、誰の視線にも触れられなくなった時、それは祈りに似た静寂へと変貌する。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この物語全体のトーンを最もよく表しているものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "冷徹で客観的"
+        },
+        {
+          "id": "a2",
+          "text": "静謐で内省的"
+        },
+        {
+          "id": "a3",
+          "text": "憤怒に満ちた批判的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私は、この影を見つめながら、静かに目を閉じた。待つことが終わった後には、何が残るのか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「昇華」という言葉が文中で意味していることはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "高い地位へ引き上げること"
+        },
+        {
+          "id": "a2",
+          "text": "物理的に蒸発すること"
+        },
+        {
+          "id": "a3",
+          "text": "別の質のものへと高められること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "私がこの場所に座り続けているという事実は、もはや誰の認識にも触れることができない幽霊のような現象へと昇華したのだと。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「待つ」という行為が、他者からの認識を失った時、それはどのような意味を持つのか。本文の論理を踏まえ、自己の存在証明という観点から400字程度で論じなさい。",
+      "en": "「待つ」という行為が、他者からの認識を失った時、それはどのような意味を持つのか。本文の論理を踏まえ、自己の存在証明という観点から400字程度で論じなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "物語の構造、語り手の心理的な変遷、そして「不在」がもたらす哲学的帰結について分析しなさい。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "透明な待合室の黄昏 | C2 Reading | WeLearn",
+      "en": "透明な待合室の黄昏 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "病院の待合室という、本来であれば「通過点」であるはずの場所が、目的を喪失した時に何が起きるのか。C2レベルの読解力と、行間に潜む不穏な緊張感を読み解く練習です。",
+      "en": "病院の待合室という、本来であれば「通過点」であるはずの場所が、目的を喪失した時に何が起きるのか。C2レベルの読解力と、行間に潜む不穏な緊張感を読み解く練習です。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

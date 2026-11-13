@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "沈黙の標本：声の墓標",
+      "en": "沈黙の標本：声の墓標"
+    },
+    "intro": {
+      "es": "口承伝承の保存という行為が孕む、本質的な矛盾と倫理的葛藤を描いた短編。",
+      "en": "口承伝承の保存という行為が孕む、本質的な矛盾と倫理的葛藤を描いた短編。"
+    },
+    "mission": {
+      "es": "物語を読み、保存される側の主権と記録者側の意図の乖離について考察せよ。",
+      "en": "物語を読み、保存される側の主権と記録者側の意図の乖離について考察せよ。"
+    },
+    "targetText": "薄暗い地下のアーカイブ室で、館長の瀬戸は、亡き詩人・久世の未公開録音テープを整理していた。彼が求めたのは、久世の生前の熱狂的な語り口そのものであり、単なる情報の記録ではなかった。しかし、デジタル化の過程で、瀬戸は戦慄する。ノイズを除去し、音声を鮮明にするほどに、久世の声から「人間らしさ」が削ぎ落とされていくのだ。かつて久世は、自身の詩について「聞き手との共犯関係の中でしか成立しない」と語っていた。しかし、今、瀬戸の手元にあるのは、誰との関係性も持たない、無菌室に閉じ込められた剥製の声である。瀬戸にとって、この作業は文化の継承という名の正義だったが、それは同時に、久世という生身の人間が最も恐れていた「固定化」という名の暴力でもあった。\n\n深夜、アーカイブ室に一人の老婦人が現れた。彼女は久世の最後の恋人であり、録音の現場に立ち会った唯一の証人だった。彼女は瀬戸の作業を静かに見つめ、こう呟いた。「あなたは彼の声を救い出しているつもりでしょうが、実際には、彼が死ぬ間際まで懸命に守ろうとした『曖昧さ』を殺しているのです」。瀬戸は反論しようとしたが、喉に言葉が詰まった。老婦人の指摘は、保存という行為が必然的に伴う、対象の変容という残酷な側面を突いていた。記録されることは、その瞬間から成長を止め、過去の亡霊として固定されることを意味する。瀬戸が完璧な音質を追求すればするほど、久世の詩が持っていた、聴衆の解釈を許す余白は消滅していく。\n\n瀬戸は、かつて久世が語った「声とは、風のように消え去るからこそ美しく、記録された瞬間に死ぬ」という言葉を思い出した。彼は、自分が守ろうとしていたものが、実は久世が最も否定していた「永遠の不在」であることに気づかされた。デジタル化されたクリアな音源は、確かに後世に情報を伝えるだろう。しかし、それは久世の魂の残響ではなく、瀬戸が都合よく解釈した「久世という概念」の残骸に過ぎない。瀬戸の手は震え、再生ボタンを押すことを躊躇った。このまま作業を続ければ、久世は二度目の死を迎えることになる。しかし、作業を止めれば、彼の声は永遠に闇へと消え去る。どちらを選んでも、瀬戸は歴史の冒涜者となるのだ。\n\n窓の外では、夜明け前の静寂が街を包んでいた。瀬戸は、録音機にセットされたテープを凝視した。彼は、完璧なアーカイブを目指すという使命感と、対象を破壊しているという罪悪感の間で引き裂かれていた。もし、久世の声を「完全な形」で残すことが最大の敬意であるならば、その代償として「生きた声の揺らぎ」を犠牲にすることは許されるのか。瀬戸は、自身の存在意義そのものが、この矛盾によって成り立っていることを悟った。アーカイブとは、死者を蘇らせるための装置ではなく、死者を安全な距離に隔離するための檻なのかもしれない。\n\n結局、瀬戸はノイズ除去のフィルターをすべて解除し、録音当時の不完全な、雑音混じりの音源をそのまま保存することを選んだ。それは、情報の正確性を放棄する行為であり、専門家としては失格の烙印を押される選択だった。しかし、スピーカーから流れてくる、かすかな呼吸音と、言葉に詰まる久世の震える声を聞いた時、瀬戸は確信した。これこそが、彼が守るべき「生」の断片なのだと。彼は、記録という名の暴力に抗うため、あえて不完全なままの声を未来へ託すことにした。沈黙に満ちたアーカイブ室で、瀬戸は独り、久世の最後の詩を聴き続けた。\n\nしかし、この選択がもたらす結末は、瀬戸が想像したような救済ではなかった。不完全なまま保存された音源は、後世の聴衆にとって「解釈の余地」ではなく、単なる「技術的な欠陥」として処理される運命にあったからだ。未来のデジタル解析技術は、瀬戸が意図的に残した雑音を、歴史的な遺物ではなく、除去し忘れたノイズとして自動的に排除するだろう。瀬戸が守ろうとした「生きた揺らぎ」は、時代が進むごとに、より強力な補正アルゴリズムによって塗り潰されていく。皮肉なことに、瀬戸の抵抗は、久世の声をより効率的に「無菌化」するための準備作業に成り下がっていたのである。彼は記録を放棄したのではなく、未来の技術による不可避的な改竄を、より鮮明な形で招き入れてしまったのだ。結局、保存しようとする意志そのものが、対象を時代の暴力へと差し出す道標に過ぎなかった。瀬戸が最後に聴いた詩の断片は、彼がどれほど抗おうとも、時の奔流の中で確実に摩耗し、形を変えていく。彼が残した「不完全な声」は、やがて誰にも顧みられることのない、静かな砂塵となってアーカイブの深淵に埋没していくことだろう。瀬戸は、自らの行為が歴史の冒涜者という汚名を免れるための、単なる自己満足に過ぎなかったことを、誰よりも深く理解していた。",
+    "wordCount": 1784,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "共犯関係",
+        "lemma": "共犯関係",
+        "glosses": {
+          "es": "complicity; a relationship where parties share responsibility for an act",
+          "en": "complicity; a relationship where parties share responsibility for an act"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "剥製",
+        "lemma": "剥製",
+        "glosses": {
+          "es": "stuffed animal; something preserved but lifeless",
+          "en": "stuffed animal; something preserved but lifeless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "変容",
+        "lemma": "変容",
+        "glosses": {
+          "es": "transformation; a change in form or nature",
+          "en": "transformation; a change in form or nature"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "残骸",
+        "lemma": "残骸",
+        "glosses": {
+          "es": "remains; wreckage; debris",
+          "en": "remains; wreckage; debris"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "冒涜者",
+        "lemma": "冒涜者",
+        "glosses": {
+          "es": "blasphemer; one who treats something sacred with disrespect",
+          "en": "blasphemer; one who treats something sacred with disrespect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "烙印",
+        "lemma": "烙印",
+        "glosses": {
+          "es": "brand; stigma; mark of disgrace",
+          "en": "brand; stigma; mark of disgrace"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 39.6,
+      "maxSentenceWords": 66,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主要なテーマとして最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "保存という行為が孕む対象への倫理的暴力"
+        },
+        {
+          "id": "a2",
+          "text": "デジタル技術による歴史記録の重要性"
+        },
+        {
+          "id": "a3",
+          "text": "死者の言葉を解釈する際の歴史学的手法"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "瀬戸にとって、この作業は文化の継承という名の正義だったが、それは同時に、久世という生身の人間が最も恐れていた「固定化」という名の暴力でもあった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "老婦人が瀬戸の作業に対して抱いた懸念は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "音質が劣化していること"
+        },
+        {
+          "id": "a2",
+          "text": "曖昧さが殺されていること"
+        },
+        {
+          "id": "a3",
+          "text": "記録が公開されること"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "実際には、彼が死ぬ間際まで懸命に守ろうとした『曖昧さ』を殺しているのです",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "物語の結末で、瀬戸がノイズを除去しなかった理由として推測されることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "技術的な限界により除去が不可能だったから"
+        },
+        {
+          "id": "a2",
+          "text": "専門家としての評価を維持するためにあえて手を抜いたから"
+        },
+        {
+          "id": "a3",
+          "text": "不完全な音源こそが対象の本質を伝えると判断したから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "これこそが、彼が守るべき「生」の断片なのだと。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者がこの物語を通じて、アーカイブという行為にどのような視点を提示しているか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "記録という行為は、対象の生きた証を奪い、死者を隔離する装置になり得るという批判的な視点"
+        },
+        {
+          "id": "a2",
+          "text": "未来の世代のために、過去の情報を可能な限り正確に残すべきであるという肯定的な視点"
+        },
+        {
+          "id": "a3",
+          "text": "デジタル技術の進歩によって、過去の芸術作品はより多くの人々に正しく理解されるようになるという楽観的な視点"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "アーカイブとは、死者を蘇らせるための装置ではなく、死者を安全な距離に隔離するための檻なのかもしれない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語全体を貫くトーンとして最もふさわしいものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "情熱的で高揚感に満ちた語り口"
+        },
+        {
+          "id": "a2",
+          "text": "内省的で葛藤を孕んだ思索的な語り口"
+        },
+        {
+          "id": "a3",
+          "text": "客観的で冷徹な事実の羅列"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼は、完璧なアーカイブを目指すという使命感と、対象を破壊しているという罪悪感の間で引き裂かれていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「烙印」という言葉が文中で意味していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "専門家としての名誉ある称号"
+        },
+        {
+          "id": "a2",
+          "text": "アーカイブ作業における技術的な証明書"
+        },
+        {
+          "id": "a3",
+          "text": "専門家として不適格であるという否定的な評価"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは、情報の正確性を放棄する行為であり、専門家としては失格の烙印を押される選択だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「記録すること」と「忘却すること」のどちらが、死者に対する真の敬意であるか、あなた自身の見解を1000字程度で述べよ。",
+      "en": "「記録すること」と「忘却すること」のどちらが、死者に対する真の敬意であるか、あなた自身の見解を1000字程度で述べよ。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "物語を読み、保存される側の主権と記録者側の意図の乖離について考察せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "沈黙の標本：声の墓標 | C2 Reading | WeLearn",
+      "en": "沈黙の標本：声の墓標 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "口承伝承の保存という行為が孕む、本質的な矛盾と倫理的葛藤を描いた短編。",
+      "en": "口承伝承の保存という行為が孕む、本質的な矛盾と倫理的葛藤を描いた短編。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

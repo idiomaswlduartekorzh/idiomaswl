@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-open-schedule",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「公平な時間割」という名の幻想について",
+      "en": "「公平な時間割」という名の幻想について"
+    },
+    "intro": {
+      "es": "本稿は、教育現場における柔軟な時間割の導入が、個人の選択という美名の下でいかに構造的な不平等を隠蔽し得るかを問う、ある教員から校長へのメールである。",
+      "en": "本稿は、教育現場における柔軟な時間割の導入が、個人の選択という美名の下でいかに構造的な不平等を隠蔽し得るかを問う、ある教員から校長へのメールである。"
+    },
+    "mission": {
+      "es": "柔軟な時間割がもたらす「自己責任論」の罠を読み解き、制度設計における見えざる権力構造を考察せよ。",
+      "en": "柔軟な時間割がもたらす「自己責任論」の罠を読み解き、制度設計における見えざる権力構造を考察せよ。"
+    },
+    "targetText": "拝啓　校長先生、先日の教職員会議での「選択制時間割」の導入に関する議論を振り返り、筆を執りました。私はこの制度が、個人の学習の最適化という美辞麗句の裏で、生徒の家庭環境に根ざした「時間の支配力」の格差を不可視化しているのではないかと危惧しております。制度上、生徒は自身のライフスタイルに合わせて登校時間や授業枠を選択できることになっていますが、これはあくまで「自律的な時間管理」が可能であるという特権的な前提に立脚しています。親の労働形態や家庭内でのケア責任に縛られず、自分の意志で時間を配分できる生徒と、そうでない生徒の間には、最初から埋めがたい溝が存在するのです。\n\n具体例を挙げましょう。放課後の補習枠をオンラインで提供するという案ですが、これは通信環境や静穏な学習場所を確保できる層には恩恵となります。しかし、家事手伝いや兄弟の世話を担う生徒にとって、その時間は物理的にアクセス不可能な「空白」となります。彼らにとっての「選択」は、単なる機会の喪失に過ぎません。学校側が「選ばなかったのは本人の意思だ」と結論づける時、私たちは構造的な制約を個人の怠慢へとすり替える共犯関係に陥ります。公平性とは、単に選択肢を並べることではなく、その選択を妨げる障壁そのものを解体することにあるはずです。\n\n先週、私が担当する生徒の一人が、早朝の選択授業に出席できず、単位取得の危機に瀕しました。彼が早朝の授業を選べなかったのは、夜間のアルバイトで家計を支える必要があったからです。学校側は「個人のライフスタイルに合わせた時間割」という理念を盾に、彼の事情を「自己管理の失敗」として処理しようとしました。私はその対応に強い憤りを感じます。制度が個人の生活の現実を捨象し、抽象的な「自由」のみを称揚する時、それは教育機関としての責務を放棄しているに等しいのではないでしょうか。\n\n私たちが目指すべきは、時間割の柔軟性という名の「自己責任の押し付け」ではなく、生徒が置かれた生活基盤の差異を前提とした支援体制の構築です。例えば、早朝や夜間に偏った学習機会を強制するのではなく、生活の不確実性が高い生徒に対しては、より安定した対面授業の枠を優先的に確保するような、非対称な配慮こそが真の公平性ではないでしょうか。形式的な平等は、往々にして強者の論理を正当化する道具となります。制度設計にあたっては、この「見えざる制約」をいかに可視化し、制度の隙間に落ちる生徒を救い上げるかを最優先課題とすべきです。\n\n今回の提案が、単なる効率化の手段としてではなく、教育の公正さを問い直す契機となることを切に願います。もし現状のまま制度を強行すれば、学校は個人の自由を尊重する場所ではなく、恵まれた環境にある生徒のみを優遇する選別装置と化すでしょう。私は次回の会議で、この懸念を改めて提起する所存です。校長先生におかれましても、制度が誰にとっての自由を保障し、誰を切り捨てているのか、今一度ご再考いただければ幸いです。敬具\n\nさらに懸念すべきは、この制度が将来的に学校教育の公共性を根底から変質させてしまうリスクです。もし時間割の選択が個人の市場価値を左右する技能習得の手段としてのみ機能し始めれば、学校は知識を共有する共同体から、自己の利益を最大化する利己的な個人の集積地へと変貌を遂げるでしょう。対面授業を通じて育まれる偶発的な対話や、他者の多様な背景に触れることで得られる共感の機会は、効率化の波の中で真っ先に削ぎ落とされる対象となります。効率のみを追求した教育の果てには、他者への想像力を欠いた、極めて狭量な能力主義の信奉者ばかりが量産される未来が見えます。私たちは、教育という営みが持つ本来の意義、すなわち異なる背景を持つ者同士が同じ時空間を共有し、互いの存在を認め合うことで社会の基盤を築くという役割を忘れてはなりません。特定の時間枠を選択できるという自由は、他者と交わる自由を奪うことと引き換えであってはならないのです。制度設計において、個人の利便性を追求することと、教育が本来担うべき公共性を維持することの間に存在する緊張関係を、私たちは決して軽視すべきではありません。この「選択」という名の制度が、結果として生徒同士の連帯を分断し、孤立を深める装置として機能してしまえば、教育現場はもはや学びの場としての機能を喪失するでしょう。今一度、私たちは「何のための教育か」という根源的な問いに立ち返り、個人の自由を尊重しつつも、社会的なつながりを担保する仕組みを模索し続けなければならないのです。このまま無批判に制度を導入すれば、後に残るのは、自己の選択の結果に押し潰され、他者への関心を失った空虚な若者たちの姿であると確信しています。教育の本質は、効率的な時間配分ではなく、生徒一人ひとりが自身の置かれた環境を乗り越え、他者と共に生きる力を育むことにこそあるという信念を、私は決して曲げるつもりはありません。",
+    "wordCount": 1906,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "美辞麗句",
+        "lemma": "美辞麗句",
+        "glosses": {
+          "es": "flowery words, fine-sounding phrases",
+          "en": "flowery words, fine-sounding phrases"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "立脚",
+        "lemma": "立脚",
+        "glosses": {
+          "es": "based on, founded on",
+          "en": "based on, founded on"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "捨象",
+        "lemma": "捨象",
+        "glosses": {
+          "es": "abstraction, ignoring details",
+          "en": "abstraction, ignoring details"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "称揚",
+        "lemma": "称揚",
+        "glosses": {
+          "es": "praise, extolling",
+          "en": "praise, extolling"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "非対称",
+        "lemma": "非対称",
+        "glosses": {
+          "es": "asymmetric",
+          "en": "asymmetric"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "選別装置",
+        "lemma": "選別装置",
+        "glosses": {
+          "es": "screening device",
+          "en": "screening device"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 56.1,
+      "maxSentenceWords": 90,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "このメールの主な目的は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "現在の時間割制度が抱える構造的な問題点と公平性の欠如を指摘すること。"
+        },
+        {
+          "id": "a2",
+          "text": "時間割の柔軟性を高めるための具体的な改善案を提案すること。"
+        },
+        {
+          "id": "a3",
+          "text": "特定の生徒の単位問題を解決するために校長に特例を求めること。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "私はこの制度が、個人の学習の最適化という美辞麗句の裏で、生徒の家庭環境に根ざした「時間の支配力」の格差を不可視化しているのではないかと危惧しております。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "筆者が懸念する「選択制時間割」の最大の欠点は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "オンライン授業の通信環境が整っていない点。"
+        },
+        {
+          "id": "a2",
+          "text": "家庭環境による時間の支配力の格差を無視している点。"
+        },
+        {
+          "id": "a3",
+          "text": "教員の業務負担が増大する点。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "制度上、生徒は自身のライフスタイルに合わせて登校時間や授業枠を選択できることになっていますが、これはあくまで「自律的な時間管理」が可能であるという特権的な前提に立脚しています。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "筆者が提唱する「真の公平性」とはどのようなものか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "すべての生徒に同じ時間枠で授業を提供すること。"
+        },
+        {
+          "id": "a2",
+          "text": "生徒が自由に時間割を組めるように選択肢を増やすこと。"
+        },
+        {
+          "id": "a3",
+          "text": "個人の生活基盤の差異を前提とした非対称な配慮。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "生活の不確実性が高い生徒に対しては、より安定した対面授業の枠を優先的に確保するような、非対称な配慮こそが真の公平性ではないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がアルバイトをしている生徒の事例を挙げた理由は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "制度が個人の生活現実を無視し、自己責任論に陥る危険性を示すため。"
+        },
+        {
+          "id": "a2",
+          "text": "アルバイトを禁止すべきだと主張するため。"
+        },
+        {
+          "id": "a3",
+          "text": "その生徒の単位取得を救済するための具体的な交渉材料とするため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "制度が個人の生活の現実を捨象し、抽象的な「自由」のみを称揚する時、それは教育機関としての責務を放棄しているに等しいのではないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "このメール全体を通じて筆者が示している態度はどのようなものか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "校長への服従を前提とした控えめな意見の提示。"
+        },
+        {
+          "id": "a2",
+          "text": "制度に対する深い憤りと、教育の本質を問い直す真摯な姿勢。"
+        },
+        {
+          "id": "a3",
+          "text": "新しい制度を全面的に否定する攻撃的な姿勢。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私はその対応に強い憤りを感じます。制度が個人の生活の現実を捨象し、抽象的な「自由」のみを称揚する時、それは教育機関としての責務を放棄しているに等しいのではないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「捨象」という言葉が持つニュアンスはどれか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "詳細を省いて本質を捉えること。"
+        },
+        {
+          "id": "a2",
+          "text": "不要なものを排除して整理すること。"
+        },
+        {
+          "id": "a3",
+          "text": "個別の事情を無視して抽象化すること。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "制度が個人の生活の現実を捨象し、抽象的な「自由」のみを称揚する時、それは教育機関としての責務を放棄しているに等しいのではないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「個人の選択」を尊重することが、結果として社会的な弱者を排除する構造を生むという筆者の論理に対し、あなたが教務主任の立場であれば、どのような代替案を提示して反論するか。800字程度で述べよ。",
+      "en": "「個人の選択」を尊重することが、結果として社会的な弱者を排除する構造を生むという筆者の論理に対し、あなたが教務主任の立場であれば、どのような代替案を提示して反論するか。800字程度で述べよ。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "柔軟な時間割がもたらす「自己責任論」の罠を読み解き、制度設計における見えざる権力構造を考察せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「公平な時間割」という名の幻想について | C2 Reading | WeLearn",
+      "en": "「公平な時間割」という名の幻想について | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "本稿は、教育現場における柔軟な時間割の導入が、個人の選択という美名の下でいかに構造的な不平等を隠蔽し得るかを問う、ある教員から校長へのメールである。",
+      "en": "本稿は、教育現場における柔軟な時間割の導入が、個人の選択という美名の下でいかに構造的な不平等を隠蔽し得るかを問う、ある教員から校長へのメールである。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

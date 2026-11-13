@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "박제된 메아리",
+      "en": "박제된 메아리"
+    },
+    "intro": {
+      "es": "구술사 아카이브의 큐레이터가 목소리의 본질과 기록의 한계 사이에서 겪는 철학적 갈등을 다룬 단편입니다.",
+      "en": "구술사 아카이브의 큐레이터가 목소리의 본질과 기록의 한계 사이에서 겪는 철학적 갈등을 다룬 단편입니다."
+    },
+    "mission": {
+      "es": "기록 보존의 윤리와 주체성 상실에 관한 텍스트를 읽고, 화자의 의도와 기록 사이의 간극을 분석하십시오.",
+      "en": "기록 보존의 윤리와 주체성 상실에 관한 텍스트를 읽고, 화자의 의도와 기록 사이의 간극을 분석하십시오."
+    },
+    "targetText": "큐레이터 서윤은 어스름이 깔린 보관실에서 노학자 박 교수의 육성이 담긴 릴 테이프를 매만졌다. 수십 년 전, 그는 자신의 생애를 증언하며 이 기록이 후대에게 진실의 파편으로 남길 바란다고 했다. 그러나 서윤의 손끝에 닿은 테이프는 이미 박 교수가 의도했던 맥락에서 완전히 거세된 채, 차가운 자기장에 갇힌 유령에 불과했다. 박 교수는 생전에 자신의 발언이 편집되거나 박제되는 것을 극도로 경계했으나, 이제 그의 목소리는 큐레이터의 손에 의해 디지털로 변환되어 영원히 고정될 운명이었다. 서윤은 기계의 회전 소리를 들으며, 누군가의 생생한 경험을 보존한다는 명목으로 그를 박제하고 있는 것은 아닌지 스스로에게 물었다. 보존은 곧 죽음이라는 역설이 그녀의 머릿속을 맴돌았다. 서윤은 기록의 영속성을 믿었지만, 동시에 그 영속성이 화자의 살아있는 의지를 말살한다는 사실을 부정할 수 없었다. 그녀는 박 교수의 목소리가 담긴 파일을 열어보았다. 그 안에는 그가 경멸했던 학술적 권위가 덧씌워진 주석들이 가득했다. 이것은 기록인가, 아니면 박 교수의 목소리를 빌린 또 다른 형태의 억압인가. 서윤은 마우스 커서를 한참 동안 삭제 버튼 위에 올려두었다. 삭제는 그를 자유롭게 하는 행위일까, 아니면 역사의 한 페이지를 지우는 오만일까. 그녀는 갈등 끝에 결국 파일을 저장하고 창을 닫았다. 박 교수의 목소리는 이제 완벽하게 박제되어, 누구도 수정할 수 없는 고독한 진실로 남게 되었다. 서윤은 보관실의 불을 끄며, 자신이 보존한 것이 과연 무엇인지 끝내 정의하지 못했다. 어둠 속에서 다시 재생된 테이프의 잡음은 마치 박 교수의 비명처럼 공허하게 울려 퍼졌다. 기록은 살아있는 자의 전유물이며, 죽은 자의 목소리는 오직 해석하는 자의 욕망에 따라 변주될 뿐이었다. 서윤은 자신이 큐레이터가 아니라, 타인의 삶을 전시하는 집행관임을 깨달았다. 그녀는 문을 잠그고 복도를 걸어 나오며, 박 교수가 생전에 남겼던 마지막 문장을 떠올렸다. 진실은 말해지는 순간 사라지며, 기록되는 순간 왜곡된다는 그 경고는 이제 방대한 아카이브의 침묵 속에서 비로소 완성되고 있었다. 서윤의 발걸음 소리만이 빈 복도를 채웠고, 그녀는 다시는 그 보관실을 열지 않기로 마음먹었다. 그것은 박 교수를 위한 최후의 예우이자, 자신의 오만을 멈추는 유일한 방법이었다. 기록은 그렇게 박제된 채, 영원히 닫힌 문 뒤에서 썩어갈 준비를 마쳤다.\n\n그러나 서윤의 결심은 역설적으로 또 다른 기록의 부재라는 거대한 공백을 창조하며 박 교수의 의도를 완전히 배반하는 결과를 낳고 말았다. 그녀가 문을 닫아걸고 방치한 그 보관실은 이제 외부의 시선으로부터 박 교수를 보호하는 성역이 아니라, 그가 그토록 경계했던 망각이라는 이름의 또 다른 고립된 무덤으로 변질되었기 때문이다. 만약 진실이 말해지는 순간 사라지고 기록되는 순간 왜곡된다면, 아무것도 기록하지 않고 침묵으로 일관하는 행위야말로 진실을 영원히 매장해 버리는 가장 잔혹한 형태의 왜곡이 아닐까 하는 의구심이 서윤의 등 뒤를 서늘하게 훑고 지나갔다. 보존을 포기함으로써 박 교수의 의지를 지키려 했던 그녀의 예우는, 결국 그의 생애가 역사의 흐름 속에서 어떤 흔적도 남기지 못한 채 무의미한 소음으로 사라지게 만드는 방관의 다른 이름에 불과했다. 어쩌면 박 교수가 진정으로 두려워했던 것은 자신의 목소리가 편집되거나 주석이 달리는 것이 아니라, 자신의 삶이 세상의 기억에서 완전히 지워져 아무런 영향력도 미치지 못하는 상태로 방치되는 것이었을지도 모른다. 서윤은 복도 끝에 서서 다시 보관실을 향해 뒤를 돌아보았지만, 굳게 닫힌 문은 이제 그녀의 오만을 비웃기라도 하듯 차가운 금속성 광택만을 내뿜고 있었다. 기록을 거부함으로써 스스로를 정당화하려 했던 그녀의 선택은, 결국 죽은 자의 목소리를 빌려 자신의 도덕적 우월감을 전시하려던 또 다른 오만한 집행의 정점이었다. 이제 그 방 안에서 썩어가는 것은 박 교수의 목소리뿐만이 아니라, 역사의 진실을 마주하기를 두려워하며 도피를 선택한 서윤 자신의 비겁한 양심이기도 했다. 진실은 박제된 기록 속에 갇혀 있는 것이 아니라, 끊임없이 해석되고 왜곡되더라도 누군가에 의해 다시 호명될 때 비로소 생명력을 얻는다는 사실을 그녀는 깨닫지 못했다. 보관실의 침묵은 박 교수를 위한 최후의 안식처가 아니라, 살아있는 자들이 죽은 자의 역사를 어떻게 사유해야 하는지에 대한 무거운 질문을 던지며 영원히 닫힌 채로 남을 것이다.",
+    "wordCount": 530,
+    "estimatedMinutes": 22,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "박제된",
+        "lemma": "박제된",
+        "glosses": {
+          "es": "stuffed/preserved",
+          "en": "stuffed/preserved"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "거세된",
+        "lemma": "거세된",
+        "glosses": {
+          "es": "castrated/stripped of essence",
+          "en": "castrated/stripped of essence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "영속성",
+        "lemma": "영속성",
+        "glosses": {
+          "es": "permanence",
+          "en": "permanence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "말살한다는",
+        "lemma": "말살한다는",
+        "glosses": {
+          "es": "to obliterate/erase",
+          "en": "to obliterate/erase"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전유물",
+        "lemma": "전유물",
+        "glosses": {
+          "es": "exclusive property",
+          "en": "exclusive property"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "예우",
+        "lemma": "예우",
+        "glosses": {
+          "es": "courtesy/respect",
+          "en": "courtesy/respect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 31,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심적인 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "타인의 경험을 기록하는 행위의 윤리적 딜레마"
+        },
+        {
+          "id": "a2",
+          "text": "기록의 보존이 가지는 가치와 기술적 발전"
+        },
+        {
+          "id": "a3",
+          "text": "구술사 아카이브 구축을 위한 구체적인 방법론"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "누군가의 생생한 경험을 보존한다는 명목으로 그를 박제하고 있는 것은 아닌지 스스로에게 물었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "서윤이 박 교수의 기록을 보며 느낀 가장 큰 불만은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "음질이 너무 나빠서 들을 수 없다"
+        },
+        {
+          "id": "a2",
+          "text": "그가 원하지 않는 주석이 덧붙여졌다"
+        },
+        {
+          "id": "a3",
+          "text": "파일의 용량이 너무 커서 저장하기 힘들다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그 안에는 그가 경멸했던 학술적 권위가 덧씌워진 주석들이 가득했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "서윤이 마지막에 보관실을 다시 열지 않기로 결심한 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기록의 가치가 없음을 깨달았기 때문이다"
+        },
+        {
+          "id": "a2",
+          "text": "더 이상 아카이브 관리를 할 시간이 없기 때문이다"
+        },
+        {
+          "id": "a3",
+          "text": "자신의 행위가 박 교수의 의지에 반한다는 것을 인정했기 때문이다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그것은 박 교수를 위한 최후의 예우이자, 자신의 오만을 멈추는 유일한 방법이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 이 글을 통해 독자에게 전달하고자 하는 바는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기록 행위의 본질적 모순을 성찰하게 하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "기록의 중요성을 강조하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "큐레이터의 직업적 고충을 알리기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "기록은 살아있는 자의 전유물이며, 죽은 자의 목소리는 오직 해석하는 자의 욕망에 따라 변주될 뿐이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글 전반에 흐르는 서술자의 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "비판적이고 냉소적인 태도"
+        },
+        {
+          "id": "a2",
+          "text": "성찰적이고 회의적인 태도"
+        },
+        {
+          "id": "a3",
+          "text": "낙관적이고 희망적인 태도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "서윤은 보관실의 불을 끄며, 자신이 보존한 것이 과연 무엇인지 끝내 정의하지 못했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "문맥상 '전유물'과 의미가 가장 가까운 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공공의 자산"
+        },
+        {
+          "id": "a2",
+          "text": "버려진 물건"
+        },
+        {
+          "id": "a3",
+          "text": "독점적 소유물"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "기록은 살아있는 자의 전유물이며, 죽은 자의 목소리는 오직 해석하는 자의 욕망에 따라 변주될 뿐이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "기록의 보존이 화자의 의도를 왜곡할 수 있다는 서윤의 고민을 바탕으로, 디지털 시대에 개인의 기억을 보존하는 올바른 방식에 대해 자신의 견해를 300자 내외로 서술하십시오.",
+      "en": "기록의 보존이 화자의 의도를 왜곡할 수 있다는 서윤의 고민을 바탕으로, 디지털 시대에 개인의 기억을 보존하는 올바른 방식에 대해 자신의 견해를 300자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "기록 보존의 윤리와 주체성 상실에 관한 텍스트를 읽고, 화자의 의도와 기록 사이의 간극을 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "박제된 메아리 | C2 Reading | WeLearn",
+      "en": "박제된 메아리 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "구술사 아카이브의 큐레이터가 목소리의 본질과 기록의 한계 사이에서 겪는 철학적 갈등을 다룬 단편입니다.",
+      "en": "구술사 아카이브의 큐레이터가 목소리의 본질과 기록의 한계 사이에서 겪는 철학적 갈등을 다룬 단편입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

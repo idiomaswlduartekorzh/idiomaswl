@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-new-crossing",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "透明な危機の証跡：横断歩道の哲学",
+      "en": "透明な危機の証跡：横断歩道の哲学"
+    },
+    "intro": {
+      "es": "ある作家が、事故が未然に防がれた際、そこに残るはずの「証拠」の不在について考察するエッセイ。",
+      "en": "ある作家が、事故が未然に防がれた際、そこに残るはずの「証拠」の不在について考察するエッセイ。"
+    },
+    "mission": {
+      "es": "横断歩道で起きたある出来事を題材に、不可視の事象が社会的な記憶や記録に与える影響を読み解いてください。",
+      "en": "横断歩道で起きたある出来事を題材に、不可視の事象が社会的な記憶や記録に与える影響を読み解いてください。"
+    },
+    "targetText": "夕暮れ時の交差点で、作家の佐伯は、一台の大型トラックが信号を無視して横断歩道に突っ込む光景を目の当たりにした。その瞬間、青信号で渡り始めたばかりの初老の男性が、まるで何かに導かれるように足を止めた。トラックは轟音を響かせ、男性の鼻先を掠めて走り去った。男性は呆然と立ち尽くし、周囲の通行人もまた、何が起きたのかを理解できぬまま足を止めた。数秒後、日常が戻り、男性は何もなかったかのように歩き出した。佐伯は手帳を取り出し、この「無」の出来事を記録しようと試みたが、筆が止まった。事故は起きず、死傷者もいない。警察を呼ぶべきか、それともこの光景を個人の幻視として処理すべきか。彼は、証拠が存在しないという事実に、強烈な違和感を覚えた。\n\n翌日、佐伯は知人の法哲学者である高橋を訪ね、この件を相談した。高橋は、法的な観点から「損害の不在」がもたらす不可視性を指摘した。社会システムは、結果として生じた損害を測定することで初めて事象を認識する。トラックの運転手がどれほど危険な運転をしようとも、誰かが傷つき、あるいは物体が破壊されない限り、その行為は社会の記録に刻まれることはない。高橋の言葉は、佐伯が抱いていた「証拠の不在」という概念を補強した。社会は、防がれた災厄を「存在しなかったこと」として処理し、その空白の上に平穏を積み上げているのだ。佐伯は、この無言の平穏が、実は極めて脆い基盤の上に成り立っていることに戦慄した。\n\n佐伯は再び現場を訪れ、通行人たちを観察した。誰もが昨日と同じように横断歩道を渡り、信号が変わるたびに機械的に足を動かしている。彼らにとって、昨日の出来事は記憶の片隅にも残っていないか、あるいは最初から存在しなかったのだ。佐伯は、この「集団的な忘却」が、社会の円滑な運営に不可欠な潤滑油であると同時に、潜在的な脅威を隠蔽する装置であると推測した。もし、起きたはずの危機が記録されず、共有もされないのであれば、私たちは常に未知の災厄に対して無防備なままなのではないか。この問いは、作家としての彼の執筆意欲を刺激したが、同時に、言葉によって形を与えようとする行為そのものが、現実の「無」を歪めてしまうのではないかという疑念も生じさせた。\n\n作家としての葛藤は深まるばかりであった。彼は、トラックの運転手の無謀な行動と、男性の奇跡的な回避という二つの事象を、どのような言葉で記述すべきか苦悩した。もし詳細に描写すれば、それは単なるスリラーの断片となり、事実の重みを失う。かといって、抽象化すれば、それは観念的な思索に過ぎなくなり、現場の緊迫感は消え失せる。佐伯は、証拠の不在を証拠として提示する手法を模索した。それは、語り得ぬものを語るための試行錯誤であり、不在を記述することによって、逆にその存在を際立たせるという矛盾した作業であった。彼は、この横断歩道を、社会の境界線として捉え直すことにした。\n\n結局、佐伯は一冊のノートを書き上げたが、それを公表することはなかった。ノートには、トラックの速度や男性の反応といった事実は一切記されておらず、ただ「何かが起こり、そして何も起こらなかった」という一文が、数百ページにわたって繰り返されていた。この極端な記述は、彼にとっての唯一の真実であった。佐伯は、このノートを机の奥深くにしまい込み、再び街へ出た。交差点に立つ彼は、信号が変わるのを待ちながら、自分自身もまた、いつか誰かの記憶から消え去る「不在の証人」になることを予感していた。社会は、今日も無傷のまま、何事もなかったかのように動き続けているのである。\n\nしかし、佐伯がその交差点で抱いた予感は、単なる個人の感傷に留まらない社会的な逆説を孕んでいた。もし無数の「無」が積み重なって平穏が維持されているならば、記録されなかった危機の総量は、いずれ社会の許容量を超えて綻びを見せるはずである。佐伯が執筆を放棄し、空白を繰り返すことで真実を封印した行為は、皮肉にも社会が潜在的な危機を忘却する装置を強化する一助となってしまった。不在を記述しようとする試みが、結果としてその不在を不可視のまま固定し、災厄の予兆を社会の深層へと沈殿させてしまったのである。私たちは、起きていない事故の記憶を共有できない以上、いつか必ず訪れる「記録されるべき惨事」を、防ぐ術もなくただ受け入れるしかないのかもしれない。佐伯がノートを閉じたその瞬間、彼自身もまた、この脆い平穏を維持するための沈黙の共犯者へと変貌を遂げたのだ。街の喧騒は、今日もその沈黙を塗りつぶし、何事もなかったかのような日常を無慈悲に更新し続けている。",
+    "wordCount": 1748,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "轟音",
+        "lemma": "轟音",
+        "glosses": {
+          "es": "a deep, loud roar",
+          "en": "a deep, loud roar"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "戦慄",
+        "lemma": "戦慄",
+        "glosses": {
+          "es": "shuddering with fear or awe",
+          "en": "shuddering with fear or awe"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "潤滑油",
+        "lemma": "潤滑油",
+        "glosses": {
+          "es": "lubricant, metaphorically something that makes things run smoothly",
+          "en": "lubricant, metaphorically something that makes things run smoothly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "隠蔽",
+        "lemma": "隠蔽",
+        "glosses": {
+          "es": "concealment or cover-up",
+          "en": "concealment or cover-up"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疑念",
+        "lemma": "疑念",
+        "glosses": {
+          "es": "doubt or suspicion",
+          "en": "doubt or suspicion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "模索",
+        "lemma": "模索",
+        "glosses": {
+          "es": "groping for, searching for a solution",
+          "en": "groping for, searching for a solution"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 41.6,
+      "maxSentenceWords": 78,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本稿の主題として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "不可視の事象と社会の記録の関係"
+        },
+        {
+          "id": "a2",
+          "text": "交通事故の防止策について"
+        },
+        {
+          "id": "a3",
+          "text": "作家の日常的な創作手法"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "社会システムは、結果として生じた損害を測定することで初めて事象を認識する。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐伯が書いたノートの内容はどのようなものだったか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "事件の詳細な記録"
+        },
+        {
+          "id": "a2",
+          "text": "一文の繰り返し"
+        },
+        {
+          "id": "a3",
+          "text": "法哲学的な考察"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ただ「何かが起こり、そして何も起こらなかった」という一文が、数百ページにわたって繰り返されていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ通行人たちは昨日の出来事を忘れているのか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "実際に何も起きていなかったから"
+        },
+        {
+          "id": "a2",
+          "text": "記憶力が極めて低いから"
+        },
+        {
+          "id": "a3",
+          "text": "社会の円滑な運営のために、無意識に忘却しているから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "佐伯は、この「集団的な忘却」が、社会の円滑な運営に不可欠な潤滑油であると同時に、潜在的な脅威を隠蔽する装置であると推測した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "佐伯が自身のノートを公表しなかった意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "事実を歪めることを恐れたから"
+        },
+        {
+          "id": "a2",
+          "text": "書くことに満足したから"
+        },
+        {
+          "id": "a3",
+          "text": "社会の平穏を乱したくなかったから"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "言葉によって形を与えようとする行為そのものが、現実の「無」を歪めてしまうのではないかという疑念も生じさせた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本稿全体に漂う筆者の態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちたもの"
+        },
+        {
+          "id": "a2",
+          "text": "社会の脆さに対する不安と哲学的思索"
+        },
+        {
+          "id": "a3",
+          "text": "冷徹で客観的な分析に徹するもの"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "佐伯は、この無言の平穏が、実は極めて脆い基盤の上に成り立っていることに戦慄した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「潤滑油」が文脈上で意味するものは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "機械をスムーズに動かす油"
+        },
+        {
+          "id": "a2",
+          "text": "対人関係を円滑にする技術"
+        },
+        {
+          "id": "a3",
+          "text": "社会の秩序を保つための機能"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "佐伯は、この「集団的な忘却」が、社会の円滑な運営に不可欠な潤滑油であると同時に、潜在的な脅威を隠蔽する装置であると推測した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「証拠が残らない出来事」を記録することの是非について、あなたの考えを800字程度で論じてください。",
+      "en": "「証拠が残らない出来事」を記録することの是非について、あなたの考えを800字程度で論じてください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "横断歩道で起きたある出来事を題材に、不可視の事象が社会的な記憶や記録に与える影響を読み解いてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "透明な危機の証跡：横断歩道の哲学 | C2 Reading | WeLearn",
+      "en": "透明な危機の証跡：横断歩道の哲学 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "ある作家が、事故が未然に防がれた際、そこに残るはずの「証拠」の不在について考察するエッセイ。",
+      "en": "ある作家が、事故が未然に防がれた際、そこに残るはずの「証拠」の不在について考察するエッセイ。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

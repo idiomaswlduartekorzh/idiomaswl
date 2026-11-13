@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "地図の余白に刻まれる沈黙",
+      "en": "地図の余白に刻まれる沈黙"
+    },
+    "intro": {
+      "es": "地図作成者が直面する、記憶の選別と地名の重みに関する考察。",
+      "en": "地図作成者が直面する、記憶の選別と地名の重みに関する考察。"
+    },
+    "mission": {
+      "es": "地図というメディアが持つ権力と、それが個人の記憶をどのように変容させるかを考察し、筆者の意図を読み解いてください。",
+      "en": "地図というメディアが持つ権力と、それが個人の記憶をどのように変容させるかを考察し、筆者の意図を読み解いてください。"
+    },
+    "targetText": "古びた書斎の隅で、私は祖父が遺した未完成の地図を広げていた。そこには、山間の小さな集落「風鳴谷」が描かれている。しかし、私が幼い頃に駆け回ったはずの「名もなき小川」や、村の長老たちが語り継いできた「精霊の宿る大岩」の名は、どこにも記されていない。地図作成を生業としていた祖父は、この土地の地理的正確さを追求するあまり、人々の生活に密着した固有の名称を、単なる「地形」という抽象的な記号へと切り捨ててしまったのだ。私は、地図というものが、ある場所を保存するための装置であると同時に、何を記憶し、何を忘却すべきかを決定する権力的な選別機であることに戦慄を覚えた。地図の線一本一本が、誰かの記憶を抹消する刃となり得るという事実に、私は言葉を失った。\n\nある夕暮れ、村の歴史を記録する活動を続けている郷土史家の佐藤氏を訪ねた。彼は、祖父の地図を指さしながら、「ここには谷の鼓動が欠けている」と静かに呟いた。彼によれば、地名とは単なる位置情報ではなく、その場所で起きた悲喜こもごもの出来事に対する、住民たちの敬意の表明なのだという。祖父が地図から排除した「精霊の宿る大岩」は、かつて村を土砂災害から守ったという伝承があり、住民にとっては単なる地質学的な対象を超えた存在であった。しかし、祖父の地図上では、その大岩は「標高六百メートルの岩塊」という冷徹な記述に置き換えられている。佐藤氏の言葉は、地図という客観的な記録が、いかにして土地の魂を去勢してしまうかという残酷な真実を浮き彫りにしていた。\n\n私は、祖父の遺品の中にあった日記を紐解いた。そこには、効率的な測量のために、住民たちの曖昧な記憶を排除せざるを得なかった苦悩が綴られていた。祖父は、地図が「公的な記録」として機能するためには、個人の主観的な記憶を削ぎ落とす必要があると信じていたのだ。彼は、地図を完成させることで、この土地を永遠に保存しようとした。だが、皮肉なことに、完成した地図は、土地の歴史を語るための言葉を奪い去り、ただの無機質な空間へと変貌させてしまった。祖父の意図とは裏腹に、地図は土地を保存するのではなく、その土地が持つ物語を殺すための装置として機能していたのである。\n\n私は、祖父の未完成の地図に、あえて書き込みを始めることにした。それは、地理的な正確さを損なう行為であり、地図作成者としての祖父の矜持を裏切るものかもしれない。しかし、私は「精霊の宿る大岩」という言葉を、地図の余白に丁寧に書き加えた。それは、地図という権力的な枠組みに対する、私なりの抵抗であった。地図が何を記憶し、何を忘却するかを選択する権利を、地図作成者という特権階級から、その土地で生きる名もなき人々の手に取り戻すこと。それが、私がこの地図を継承する意味であると考えたからだ。\n\n結局、地図とは完成することのない未完の対話であるのかもしれない。私が書き加えた地名は、次の世代の地図作成者によって、再び「不要な情報」として消去されるかもしれない。あるいは、別の誰かがその余白に、また新しい物語を書き加えるかもしれない。地図というメディアが抱えるこの終わりのない葛藤こそが、私たちが場所と関わり続けるための唯一の希望なのだ。私は、祖父が遺した無機質な地図を眺めながら、そこには記されていない数多の物語が、今もなおこの土地のどこかで息づいていることを信じている。地図の余白に刻まれる沈黙は、決して無ではなく、語られることを待っている無数の記憶の集積なのだ。\n\nしかし、地図に書き込まれた言葉が、かえって土地の記憶を固定化し、新たな解釈の可能性を閉ざしてしまうという逆説もまた無視できない。私が「精霊の宿る大岩」と書き記した瞬間、その場所は「伝承の地」という枠組みに縛られ、別の角度からその岩を見つめる人々の多様な物語を排除しているのではないか。記録を刻む行為は、ある意味で土地の流動的な時間を凍結させ、特定の物語を特権化する新たな権力の行使ともなり得る。真に場所を保存するとは、地図という媒体そのものを手放し、語り継がれる声の揺らぎの中にこそ、その土地の真実を委ねることなのかもしれない。結局のところ、私たちが地図に何を書き加えようと、土地は常に私たちの理解を超えた沈黙を保ち続ける。その沈黙こそが、地図という装置が決して捉えきれない、土地が持つ本来の深淵な生命力なのだろう。私はペンを置き、地図の余白に広がる広大な空白を見つめた。そこには、言葉によって定義されることを拒む、名もなき土地の鼓動が確かに響いていた。地図を完成させることではなく、その未完の余白を尊重することこそが、この地と共に生きる者が最後に辿り着くべき誠実な姿勢なのだと、ようやく理解できたような気がした。",
+    "wordCount": 1800,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "選別機",
+        "lemma": "選別機",
+        "glosses": {
+          "es": "a sorting machine",
+          "en": "a sorting machine"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "去勢",
+        "lemma": "去勢",
+        "glosses": {
+          "es": "castration (metaphorically, weakening or stripping of power)",
+          "en": "castration (metaphorically, weakening or stripping of power)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "矜持",
+        "lemma": "矜持",
+        "glosses": {
+          "es": "pride or dignity",
+          "en": "pride or dignity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "無機質",
+        "lemma": "無機質",
+        "glosses": {
+          "es": "inorganic or lifeless",
+          "en": "inorganic or lifeless"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "集積",
+        "lemma": "集積",
+        "glosses": {
+          "es": "accumulation",
+          "en": "accumulation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "戦慄",
+        "lemma": "戦慄",
+        "glosses": {
+          "es": "shudder or tremor from fear",
+          "en": "shudder or tremor from fear"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 46.2,
+      "maxSentenceWords": 77,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこの物語を通して伝えようとしている中心的なメッセージは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地図作成には個人の物語を排除する権力性が伴う。"
+        },
+        {
+          "id": "a2",
+          "text": "地図は土地を正確に記録する唯一の手段である。"
+        },
+        {
+          "id": "a3",
+          "text": "地図は過去の記憶を完全に保存するために存在する。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "地図というものが、ある場所を保存するための装置であると同時に、何を記憶し、何を忘却すべきかを決定する権力的な選別機であることに戦慄を覚えた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "祖父が地図から「精霊の宿る大岩」という名称を排除した理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地質学的に重要ではないから。"
+        },
+        {
+          "id": "a2",
+          "text": "効率的な測量のため。"
+        },
+        {
+          "id": "a3",
+          "text": "住民からの要望があったから。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "効率的な測量のために、住民たちの曖昧な記憶を排除せざるを得なかった苦悩が綴られていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "筆者が地図の余白に地名を書き加えた動機は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "祖父の地図を完成させるため。"
+        },
+        {
+          "id": "a2",
+          "text": "地理的な正確さを修正するため。"
+        },
+        {
+          "id": "a3",
+          "text": "土地の物語を奪還しようとする抵抗。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは、地図という権力的な枠組みに対する、私なりの抵抗であった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "佐藤氏が筆者に語った言葉の真の目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地図が土地の歴史を消去する危険性を指摘すること。"
+        },
+        {
+          "id": "a2",
+          "text": "地図の誤りを指摘し、修正を促すこと。"
+        },
+        {
+          "id": "a3",
+          "text": "祖父の地図作成技術を高く評価すること。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "佐藤氏の言葉は、地図という客観的な記録が、いかにして土地の魂を去勢してしまうかという残酷な真実を浮き彫りにしていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者が地図に対して抱いている感情の変遷を最も適切に表しているのはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "無関心から深い敬意へ。"
+        },
+        {
+          "id": "a2",
+          "text": "恐怖から受容と対話へ。"
+        },
+        {
+          "id": "a3",
+          "text": "憧れから失望と拒絶へ。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "地図というメディアが抱えるこの終わりのない葛藤こそが、私たちが場所と関わり続けるための唯一の希望なのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「去勢」という言葉が持つ、この文脈における意味はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "生物学的な機能の喪失。"
+        },
+        {
+          "id": "a2",
+          "text": "地図を物理的に切り刻んで破壊すること。"
+        },
+        {
+          "id": "a3",
+          "text": "土地の歴史や物語が持つ活力を奪うこと。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "地図という客観的な記録が、いかにして土地の魂を去勢してしまうかという残酷な真実を浮き彫りにしていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "あなたは地図作成の歴史を専門とする研究者です。地図が持つ客観性という仮面が、どのように地域の文化的多様性を抑圧してきたのか、具体的な事例を挙げて論じてください。",
+      "en": "あなたは地図作成の歴史を専門とする研究者です。地図が持つ客観性という仮面が、どのように地域の文化的多様性を抑圧してきたのか、具体的な事例を挙げて論じてください。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "地図というメディアが持つ権力と、それが個人の記憶をどのように変容させるかを考察し、筆者の意図を読み解いてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "地図の余白に刻まれる沈黙 | C2 Reading | WeLearn",
+      "en": "地図の余白に刻まれる沈黙 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "地図作成者が直面する、記憶の選別と地名の重みに関する考察。",
+      "en": "地図作成者が直面する、記憶の選別と地名の重みに関する考察。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

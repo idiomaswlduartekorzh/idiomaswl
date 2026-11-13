@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-last-bus",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "空白の時刻表：効率性の欺瞞",
+      "en": "空白の時刻表：効率性の欺瞞"
+    },
+    "intro": {
+      "es": "過疎地の公共交通機関におけるデータ駆動型の意思決定が、いかにして実態を見失うかを考察するコラム。",
+      "en": "過疎地の公共交通機関におけるデータ駆動型の意思決定が、いかにして実態を見失うかを考察するコラム。"
+    },
+    "mission": {
+      "es": "効率化の指標からこぼれ落ちる人々の存在を認識し、統計の背後にある倫理的問いを読み解く。",
+      "en": "効率化の指標からこぼれ落ちる人々の存在を認識し、統計の背後にある倫理的問いを読み解く。"
+    },
+    "targetText": "山間部に位置する霧ヶ峰村のバス運行において、村営交通課の佐藤課長が打ち出した「乗車率に基づく減便計画」は、一見すると合理的な経営判断であった。佐藤は、主要な停留所である「中央広場」での乗降客数が過去数年で著しく減少しているというデータを根拠に、早朝と深夜の便を廃止し、日中の巡回頻度を上げる方針を固めた。この計画に対し、村の古参住民である高橋は、長年の経験から強い懸念を表明した。高橋の主張によれば、早朝の便を利用していたのは、遠方の病院へ通う高齢者や、隣町の工場へ向かう若年層であった。彼らは、バスが減便されることを察知し、既に自家用車を所有するか、あるいは村外への転居を余儀なくされていた。つまり、データ上の乗客減少は、効率化の成果ではなく、サービス低下による住民の流出の結果だったのである。\n\n佐藤は、この指摘を「感情的な反論」として退けた。彼のデスクの上には、乗客数の推移を示すグラフが整然と並んでおり、そこには「乗客がいない」という事実のみが客観的な数値として刻まれていた。佐藤にとって、統計は嘘をつかない絶対的な基準であった。しかし、高橋が指摘する「消えた住民」の存在は、統計の枠組みから完全に脱落している。バスがないから乗らないのか、乗らないからバスがなくなるのか。この鶏と卵の議論において、行政は常に後者の論理を正当化する。データは過去の行動を記録するものであり、将来のニーズを予測するものではないという本質的な欠陥を、佐藤は認識していなかった。彼が最適化しようとしていたのは、村の公共交通網ではなく、単なる「運行コストの削減」という数字のパズルに過ぎなかったのである。\n\n事態は、村の主要産業である観光業にも波及した。減便の影響で、村の入り口にある「渓谷温泉」へのアクセスが困難になり、宿泊客が激減した。温泉旅館の経営者たちは、交通の便が悪いことを理由に予約をキャンセルされる事態が相次いでいると訴えた。佐藤はこれに対し、温泉街への直行バスを臨時で増やすという対症療法的な解決策を提示したが、それは既存の住民たちの足を守るという本来の目的からは大きく逸脱していた。住民の生活基盤を切り崩した後に、観光客向けの便だけを維持することは、村の公共性を歪める行為に他ならない。高橋は、この分断を「村の死を加速させる選択」と断じ、村議会での公開討論を強く求めた。\n\n議会での議論は、数字の優位性を信じる佐藤と、生活の質を重視する高橋の間の平行線に終わった。佐藤は、財政再建という大義名分を掲げ、限られた予算の中での効率化が住民全体の利益に繋がると説いた。一方、高橋は、効率化によって排除された人々の存在を無視することは、民主主義の根幹を揺るがす行為であると反論した。この対立は、単なる路線の是非を超え、現代社会における「管理」と「共生」のあり方を問うものとなった。佐藤の提示した時刻表は、確かに計算上は無駄を削ぎ落とした美しい曲線を描いていたが、その背後には、誰の姿も映し出されていない冷徹な空白が広がっていた。\n\n最終的に、佐藤の計画は強行された。しかし、その結果、村の人口減少は加速し、数年後には「効率的」であったはずのバス路線そのものが、利用者不在という理由で全廃されることとなった。佐藤は、自身の決定が招いた結末を前にしてもなお、データが正しかったと信じ続けている。彼にとって、村というコミュニティは、個々の生活が織りなす営みではなく、単なる数値の集積地に過ぎなかったからである。高橋は、静まり返った停留所のベンチで、かつて賑わっていた朝の風景を思い出しながら、効率という名の暴力が村をいかに変貌させたかを静かに見つめていた。データは、語らない人々の声を奪い去り、ただ静かな沈黙だけを残したのである。\n\nこの静寂は、単にバスが消えたことによる物理的な孤立を意味するものではない。高橋が目撃したのは、かつての共同体が共有していた「互助」という名の見えないネットワークが、統計的な合理主義によって根底から破壊された姿であった。かつて早朝のバス車内で交わされた挨拶や、体調を気遣う言葉の端々にこそ、村を支える公的サービスの真の価値が宿っていたのである。佐藤が追求したコスト削減という名の最適化は、効率という指標に変換できない「住民の繋がり」という資産を、計算対象外のノイズとして切り捨てたに等しい。結果として村に残されたのは、機能不全に陥ったインフラの残骸と、相互不信に沈む住民たちの冷え切った関係性である。データという名のレンズ越しにしか世界を見ることができなかった佐藤の過ちは、行政が提供すべきものが単なる移動手段ではなく、社会的な信頼という基盤そのものであるという事実を看過した点にある。かつて活気に満ちていた停留所は、今やかつてこの村に生活があったことを証明するだけの墓標となり、効率を追い求めた果てには、守るべき対象そのものが消滅するという皮肉な結末が刻まれている。この村の衰退は、数字が現実を支配しようとする現代社会に対する、静かながらも痛烈な警告として、霧ヶ峰の山間にいつまでも重く立ち込めているのである。",
+    "wordCount": 1958,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "著しく",
+        "lemma": "著しく",
+        "glosses": {
+          "es": "remarkably or significantly",
+          "en": "remarkably or significantly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "余儀なくされていた",
+        "lemma": "余儀なくされていた",
+        "glosses": {
+          "es": "forced to do something",
+          "en": "forced to do something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "脱落",
+        "lemma": "脱落",
+        "glosses": {
+          "es": "falling out or omission",
+          "en": "falling out or omission"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "波及",
+        "lemma": "波及",
+        "glosses": {
+          "es": "spread or ripple effect",
+          "en": "spread or ripple effect"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "対症療法",
+        "lemma": "対症療法",
+        "glosses": {
+          "es": "symptomatic treatment",
+          "en": "symptomatic treatment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "大義名分",
+        "lemma": "大義名分",
+        "glosses": {
+          "es": "justifiable reason or pretext",
+          "en": "justifiable reason or pretext"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 50.2,
+      "maxSentenceWords": 90,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:57:19.420Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が本稿を通じて最も批判したいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "データを絶対視し生活の実態を無視する行政の姿勢"
+        },
+        {
+          "id": "a2",
+          "text": "バスの減便が観光業に与える悪影響"
+        },
+        {
+          "id": "a3",
+          "text": "高齢者の移動手段を奪う村の無策な予算配分"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "データは過去の行動を記録するものであり、将来のニーズを予測するものではないという本質的な欠陥を、佐藤は認識していなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "高橋が主張する、乗客減少の真の理由とは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "自家用車の普及により公共交通が不要になったため"
+        },
+        {
+          "id": "a2",
+          "text": "サービス低下により住民が流出したため"
+        },
+        {
+          "id": "a3",
+          "text": "高齢化により外出する住民自体が激減したため"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "つまり、データ上の乗客減少は、効率化の成果ではなく、サービス低下による住民の流出の結果だったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤が温泉街への直行バスを増便したことの真意は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "宿泊客の満足度を高めるための長期的な戦略"
+        },
+        {
+          "id": "a2",
+          "text": "観光業の衰退を食い止めるための抜本的改革"
+        },
+        {
+          "id": "a3",
+          "text": "住民の不満を逸らすための場当たり的な対応"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "佐藤はこれに対し、温泉街への直行バスを臨時で増やすという対症療法的な解決策を提示したが、それは既存の住民たちの足を守るという本来の目的からは大きく逸脱していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が最後に「静かな沈黙だけを残した」と結んだ意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "効率化の結果としてコミュニティが消滅した虚無感を示すため"
+        },
+        {
+          "id": "a2",
+          "text": "村の静かな環境を強調するため"
+        },
+        {
+          "id": "a3",
+          "text": "佐藤が自身の誤りに気づき静かに反省している様子を描写するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "データは、語らない人々の声を奪い去り、ただ静かな沈黙だけを残したのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本作の筆者の佐藤に対する態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "中立的"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "同情的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼が最適化しようとしていたのは、村の公共交通網ではなく、単なる「運行コストの削減」という数字のパズルに過ぎなかったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「著しく」の文脈的な意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "少しずつ着実に"
+        },
+        {
+          "id": "a2",
+          "text": "予期せぬ形で"
+        },
+        {
+          "id": "a3",
+          "text": "非常に目立つほど"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "主要な停留所である「中央広場」での乗降客数が過去数年で著しく減少しているというデータを根拠に",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「効率化」が優先される現代社会において、数値化できない価値をどのように守り、行政の意思決定に反映させるべきか、あなたの考えを800字程度で述べなさい。",
+      "en": "「効率化」が優先される現代社会において、数値化できない価値をどのように守り、行政の意思決定に反映させるべきか、あなたの考えを800字程度で述べなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "効率化の指標からこぼれ落ちる人々の存在を認識し、統計の背後にある倫理的問いを読み解く。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:57:19.420Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "空白の時刻表：効率性の欺瞞 | C2 Reading | WeLearn",
+      "en": "空白の時刻表：効率性の欺瞞 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "過疎地の公共交通機関におけるデータ駆動型の意思決定が、いかにして実態を見失うかを考察するコラム。",
+      "en": "過疎地の公共交通機関におけるデータ駆動型の意思決定が、いかにして実態を見失うかを考察するコラム。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:57:19.420Z"
+  }
+}

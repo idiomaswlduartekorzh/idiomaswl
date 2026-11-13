@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-shared-desks",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "공유 오피스의 역설: 선택의 비용과 자유",
+      "en": "공유 오피스의 역설: 선택의 비용과 자유"
+    },
+    "intro": {
+      "es": "공유 오피스 운영자와 입주사 대표 사이의 이메일 교환을 통해, 선택의 자유 뒤에 숨겨진 보이지 않는 비용과 그로 인한 갈등을 분석합니다.",
+      "en": "공유 오피스 운영자와 입주사 대표 사이의 이메일 교환을 통해, 선택의 자유 뒤에 숨겨진 보이지 않는 비용과 그로 인한 갈등을 분석합니다."
+    },
+    "mission": {
+      "es": "이메일 내용을 읽고, 개인적 비용이 선택의 의미를 어떻게 퇴색시키는지 논리적으로 추론하십시오.",
+      "en": "이메일 내용을 읽고, 개인적 비용이 선택의 의미를 어떻게 퇴색시키는지 논리적으로 추론하십시오."
+    },
+    "targetText": "수신: 김지훈 대표님, 발신: 박서연 매니저. 안녕하세요, 김 대표님. 어제 진행된 공유 오피스 입주사 간담회 이후, 대표님께서 보내주신 '선택권 보장 요구서'를 신중히 검토했습니다. 대표님께서는 저희 센터가 제공하는 세 가지 공간 옵션, 즉 오픈 데스크, 지정석, 그리고 독립 오피스 사이의 자유로운 이동을 보장해 달라고 하셨지요. 표면적으로는 합리적인 요구처럼 보입니다. 하지만 저희가 운영하는 시스템은 단순한 공간 대여를 넘어, 각 옵션마다 부과되는 보이지 않는 운영 비용과 자원 배분의 우선순위가 얽혀 있습니다. 대표님께서 원하시는 유연성이 사실은 다른 입주사들의 안정적인 환경을 침해하는 결과를 낳고 있다는 점을 간과해서는 안 됩니다. 저희 센터가 공간 이동 시 발생하는 관리 비용을 개별 입주사에게 전가하는 이유는, 그것이 선택의 무게를 실질적으로 체감하게 하는 유일한 장치이기 때문입니다. 선택에는 항상 대가가 따릅니다. 만약 모든 선택이 무료라면, 그것은 더 이상 선택이 아니라 무질서한 점유에 불과할 것입니다. 대표님께서 주장하시는 '자유로운 이동'은 결국 센터 전체의 효율성을 저해하는 요소가 되며, 이는 다른 입주사들이 지불하는 비용의 가치를 훼손하는 행위입니다. 저희는 대표님께 독립 오피스로의 고정 계약을 권장하며, 이를 통해 공간 점유에 대한 책임감을 명확히 하시길 바랍니다. 만약 유연성을 고집하신다면, 그에 상응하는 추가적인 비용 부담은 피할 수 없는 현실임을 이해해 주십시오. 저는 대표님의 사업 성공을 진심으로 응원하지만, 운영의 원칙을 훼손하면서까지 특정 입주사의 편의를 봐드릴 수는 없습니다. 이번 주 금요일까지 최종 결정을 내려주십시오. 만약 별도의 답변이 없으시다면, 기존 계약 조건이 유지되는 것으로 간주하겠습니다. 선택은 대표님의 몫이지만, 그 선택이 가져올 결과 또한 오롯이 대표님의 책임입니다. 부디 저희 센터의 입장을 깊이 헤아려 주시기를 부탁드립니다. 공간은 한정되어 있고, 그 공간을 사용하는 방식은 곧 입주사의 철학을 반영합니다. 대표님께서 추구하시는 유연함이 과연 공동체 전체의 이익과 부합하는지 다시 한번 고민해 주셨으면 합니다. 저희는 단순히 공간을 제공하는 것을 넘어, 질서 있는 업무 환경을 유지할 의무가 있습니다. 대표님의 현명한 판단을 기다리겠습니다. 박서연 매니저 드림. 이 서신은 향후 계약 분쟁 시 중요한 참고 자료로 활용될 수 있음을 알려드립니다. 본 메일의 내용은 외부로 유출되지 않도록 각별히 유의해 주시기 바랍니다. 공유 오피스의 본질은 효율적 자원 활용에 있습니다. 대표님의 사업이 번창하시길 기원합니다.\n\n물론 대표님께서 강조하시는 유연한 업무 환경의 가치를 완전히 부정하는 것은 아니며 오히려 그 필요성에는 깊이 공감하는 바입니다. 하지만 공유 오피스라는 공간이 가진 태생적 한계와 다수의 입주사가 공존해야 하는 현실적인 제약을 고려할 때 무분별한 이동의 자유는 필연적으로 자원 배분의 불균형을 야기할 수밖에 없습니다. 만약 대표님의 요구대로 모든 입주사가 자신의 편의에 따라 수시로 공간을 변경한다면 센터 내의 질서는 순식간에 붕괴할 것이고 이는 곧 전체 입주사의 업무 효율성을 심각하게 저해하는 결과로 이어질 것입니다. 운영진으로서 저희는 특정 기업의 일시적인 편의보다는 전체 입주사의 안정적인 업무 환경을 우선적으로 보호해야 할 막중한 책임이 있습니다. 따라서 선택의 자유에는 반드시 그에 상응하는 비용과 책임이 수반되어야 한다는 저희의 운영 원칙은 결코 양보할 수 없는 마지노선입니다. 대표님께서 추구하시는 유연함이 공동체 전체의 이익과 조화를 이루기 위해서는 개인의 편의를 넘어선 더 넓은 시각에서의 이해와 배려가 선행되어야 할 것입니다. 이번 결정이 대표님의 사업 방향성에 미칠 영향을 충분히 숙고하시어 합리적인 결론을 내려주시기를 간곡히 부탁드립니다. 저희는 언제나 입주사들과의 상생을 최우선 가치로 삼고 있으며 대표님의 사업이 저희 센터 안에서 더욱 견고하게 성장할 수 있도록 최선의 지원을 다할 것입니다. 결국 공간의 효율적 활용은 입주사와 운영진이 함께 만들어가는 신뢰의 영역이며 이는 서로의 원칙을 존중할 때 비로소 완성될 수 있습니다. 부디 이번 사안을 단순한 비용의 문제를 넘어 공동체 의식을 함양하는 계기로 삼아주시길 바라며 대표님의 현명하고도 미래지향적인 판단을 진심으로 기다리고 있겠습니다. 저희의 입장이 대표님의 경영 철학과 충돌하는 면이 있더라도 그것이 더 나은 환경을 조성하기 위한 필수적인 과정임을 이해해 주시리라 믿습니다. 이번 논의가 향후 더욱 발전적인 협력 관계를 구축하는 밑거름이 되기를 희망하며 다시 한번 대표님의 깊은 통찰과 혜안을 기대합니다.",
+    "wordCount": 536,
+    "estimatedMinutes": 22,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "간과",
+        "lemma": "간과",
+        "glosses": {
+          "es": "overlooking or neglecting",
+          "en": "overlooking or neglecting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전가",
+        "lemma": "전가",
+        "glosses": {
+          "es": "shifting responsibility or burden",
+          "en": "shifting responsibility or burden"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "점유",
+        "lemma": "점유",
+        "glosses": {
+          "es": "occupation or possession",
+          "en": "occupation or possession"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "훼손",
+        "lemma": "훼손",
+        "glosses": {
+          "es": "damage or impairment",
+          "en": "damage or impairment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상응",
+        "lemma": "상응",
+        "glosses": {
+          "es": "corresponding or equivalent",
+          "en": "corresponding or equivalent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "오롯이",
+        "lemma": "오롯이",
+        "glosses": {
+          "es": "entirely or solely",
+          "en": "entirely or solely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.7,
+      "maxSentenceWords": 28,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 이메일의 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공간 선택과 책임의 관계"
+        },
+        {
+          "id": "a2",
+          "text": "입주사 간의 갈등 해결"
+        },
+        {
+          "id": "a3",
+          "text": "시설 이용료 인상에 대한 통보"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "선택에는 항상 대가가 따릅니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박서연 매니저가 제안한 해결책은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "오픈 데스크 이용료 인하"
+        },
+        {
+          "id": "a2",
+          "text": "독립 오피스 고정 계약"
+        },
+        {
+          "id": "a3",
+          "text": "추가 공간 무상 지원"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "저희는 대표님께 독립 오피스로의 고정 계약을 권장하며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "운영자가 '무질서한 점유'라는 표현을 사용한 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공간 사용료를 받지 않기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "입주사 간의 친목 도모를 방해하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "모든 선택이 무료일 때 발생하는 혼란을 경고하기 위해"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "만약 모든 선택이 무료라면, 그것은 더 이상 선택이 아니라 무질서한 점유에 불과할 것입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "운영자가 이 이메일을 작성한 주된 의도는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "입주사의 요구가 센터 전체의 운영 원칙과 충돌함을 명확히 하려는 목적"
+        },
+        {
+          "id": "a2",
+          "text": "입주사의 불만을 수용하여 새로운 유연한 시스템을 도입하려는 목적"
+        },
+        {
+          "id": "a3",
+          "text": "계약 만료를 앞두고 새로운 공간으로의 이전을 정중하게 권유하려는 목적"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "대표님께서 주장하시는 '자유로운 이동'은 결국 센터 전체의 효율성을 저해하는 요소가 되며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 이메일의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "매우 공손하고 사과하는 어조"
+        },
+        {
+          "id": "a2",
+          "text": "단호하고 원칙적인 어조"
+        },
+        {
+          "id": "a3",
+          "text": "감정적이고 비판적인 어조"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "운영의 원칙을 훼손하면서까지 특정 입주사의 편의를 봐드릴 수는 없습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'상응하는'의 문맥적 의미로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "비슷한 수준의"
+        },
+        {
+          "id": "a2",
+          "text": "반대되는 성격의"
+        },
+        {
+          "id": "a3",
+          "text": "동등한 가치를 지닌"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "만약 유연성을 고집하신다면, 그에 상응하는 추가적인 비용 부담은 피할 수 없는 현실임을 이해해 주십시오.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "공유 오피스에서 '선택의 자유'가 입주사 간의 갈등을 유발하는 상황을 구체적인 사례를 들어 200자 내외로 서술하십시오.",
+      "en": "공유 오피스에서 '선택의 자유'가 입주사 간의 갈등을 유발하는 상황을 구체적인 사례를 들어 200자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "이메일 내용을 읽고, 개인적 비용이 선택의 의미를 어떻게 퇴색시키는지 논리적으로 추론하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "공유 오피스의 역설: 선택의 비용과 자유 | C2 Reading | WeLearn",
+      "en": "공유 오피스의 역설: 선택의 비용과 자유 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "공유 오피스 운영자와 입주사 대표 사이의 이메일 교환을 통해, 선택의 자유 뒤에 숨겨진 보이지 않는 비용과 그로 인한 갈등을 분석합니다.",
+      "en": "공유 오피스 운영자와 입주사 대표 사이의 이메일 교환을 통해, 선택의 자유 뒤에 숨겨진 보이지 않는 비용과 그로 인한 갈등을 분석합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

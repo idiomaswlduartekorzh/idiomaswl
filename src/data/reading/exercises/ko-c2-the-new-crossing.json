@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-the-new-crossing",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "보이지 않는 증거: 횡단보도 위의 정적",
+      "en": "보이지 않는 증거: 횡단보도 위의 정적"
+    },
+    "intro": {
+      "es": "재난이 발생하지 않았을 때, 우리는 그것을 어떻게 증명할 수 있을까? 본 지문은 사소한 일상의 횡단보도에서 벌어진 아슬아슬한 순간을 통해 부재한 증거의 역설을 탐구한다.",
+      "en": "재난이 발생하지 않았을 때, 우리는 그것을 어떻게 증명할 수 있을까? 본 지문은 사소한 일상의 횡단보도에서 벌어진 아슬아슬한 순간을 통해 부재한 증거의 역설을 탐구한다."
+    },
+    "mission": {
+      "es": "지문을 읽고 재난이 발생하지 않은 상황에서 증거가 가지는 철학적 의미와 작가의 관점을 파악하십시오.",
+      "en": "지문을 읽고 재난이 발생하지 않은 상황에서 증거가 가지는 철학적 의미와 작가의 관점을 파악하십시오."
+    },
+    "targetText": "황혼이 짙게 깔린 퇴근 시간, 시내 중심가의 횡단보도는 수많은 발걸음으로 북적였다. 교통법규 담당관인 박준우는 신호등의 점멸 주기를 관찰하며 인파의 흐름을 기록하고 있었다. 그때, 짙은 회색 세단 한 대가 정지선을 무시한 채 굉음을 내며 돌진했다. 횡단보도 중앙에는 이어폰을 낀 채 스마트폰에 몰두하던 대학생 김민지가 서 있었다. 박준우는 본능적으로 호루라기를 불며 달려 나갔고, 민지의 어깨를 낚아채 인도로 끌어당겼다. 차는 찰나의 차이로 그녀의 발끝을 스치며 지나갔고, 주위 사람들은 비명조차 지르지 못한 채 굳어버렸다. 사고는 일어나지 않았고, 타이어 자국 하나 남지 않은 아스팔트는 그저 평온할 뿐이었다. 박준우는 떨리는 손으로 자신의 수첩에 '특이사항 없음'이라고 적었다. 그는 사고가 발생하지 않았기에 기록할 증거가 없다는 사실에 깊은 회의감을 느꼈다. 만약 그가 그곳에 없었더라면, 혹은 민지가 한 걸음만 더 나아갔더라면 그곳은 비극의 현장이 되었을 것이다. 그러나 그 찰나의 비극은 존재하지 않는 사건으로 치부되었다. 박준우는 사무실로 돌아와 보고서를 작성하며 고민에 빠졌다. 재난이 완전히 회피되었을 때, 그 위험의 무게는 어디에 기록되어야 하는가? 그는 사고가 발생하지 않은 사건을 '미수'라는 단어로 규정하는 것이 과연 적절한지 의문을 품었다. 미수는 결과가 발생하지 않았음을 의미하지만, 그 과정에 존재했던 물리적 위협은 엄연한 실체이기 때문이다. 사람들은 눈에 보이는 파편과 핏자국만을 증거로 인정하려 한다. 하지만 박준우가 목격한 것은 존재하지 않는 비극의 압도적인 무게였다. 그는 횡단보도 위의 정적이 사실은 수많은 잠재적 재난이 소멸한 결과물임을 깨달았다. 우리가 평화롭다고 믿는 일상은 사실 수많은 '없음'으로 지탱되고 있는지도 모른다. 만약 어떤 일이 일어나지 않음으로써만 증명되는 안전이 있다면, 그 안전을 지키기 위해 투입된 에너지는 어떻게 가시화될 수 있을까? 박준우는 수첩을 덮으며 생각했다. 증거는 파괴된 물체에만 깃드는 것이 아니라, 파괴되지 않은 순간의 긴장 속에도 존재한다. 그러나 사회는 그 긴장을 측정할 도구를 가지고 있지 않았다. 결국 그는 보고서의 비고란에 '잠재적 충돌 1건 해소'라고 적어 넣었다. 이것은 그가 할 수 있는 최선의 기록이자, 보이지 않는 재난에 대한 유일한 증언이었다. 그날 밤, 도시는 여전히 평온했고, 아무도 그 횡단보도에서 무슨 일이 있었는지 알지 못했다. 오직 박준우만이 그 정적 속에 숨겨진 비극의 부재를 기억하고 있었다. 그는 자신이 목격한 것은 사고가 아니라, 사고라는 가능성이 소멸한 찰나의 역사임을 직시했다. 이 기록은 누군가에게는 무의미한 숫자에 불과하겠지만, 박준우에게는 무너질 뻔했던 일상을 지탱한 가장 무거운 증거였다.\n\n하지만 이러한 박준우의 개인적인 기록은 행정 체계 안에서 곧바로 벽에 부딪히고 말았다. 다음 날 제출된 보고서를 검토한 상급자는 '잠재적 충돌'이라는 모호한 표현이 객관적인 통계 데이터로 환산될 수 없다는 이유를 들어 해당 문구를 삭제할 것을 지시했다. 그들에게 안전이란 오직 사고 발생 건수라는 수치로만 증명되는 결과론적인 지표였으며, 사고가 발생하지 않은 상황에서 그 위험의 무게를 논하는 것은 행정력의 낭비이자 주관적인 감상에 불과했다. 박준우는 자신이 지켜낸 일상이 통계의 여백 속으로 허무하게 사라지는 과정을 목격하며 깊은 무력감을 느꼈다. 만약 우리가 예방된 위협을 기록할 언어를 갖지 못한다면, 결국 사회는 더 큰 비극이 실제로 발생한 뒤에야 비로소 그 안전망의 부재를 뒤늦게 깨닫게 될 것이다. 그는 정해진 양식에 따라 보고서를 수정하면서도, 자신의 수첩 귀퉁이에 아주 작은 글씨로 그날의 긴박했던 공기의 밀도와 타이어의 마찰음이 남기지 못한 파장을 다시금 적어 내려갔다. 비록 시스템은 그가 증언한 보이지 않는 재난을 부정할지라도, 박준우는 자신이 횡단보도 위에서 마주했던 그 찰나의 무게가 결코 무의미한 환상이 아니었음을 스스로 확신했다. 그는 이제 안전이 단순히 사고가 없는 상태를 의미하는 것이 아니라, 누군가의 치열한 감시와 보이지 않는 노력이 겹겹이 쌓여 만들어진 능동적인 결과물임을 명확히 인지하게 되었다. 비록 세상은 그가 기록한 '잠재적 충돌'을 공식적인 역사로 인정하지 않았지만, 박준우는 그날 이후로도 묵묵히 거리를 지키며 아무도 알아주지 않는 평온을 유지하기 위해 자신의 수첩을 채워 나갔다. 그에게 있어 기록은 단순히 과거를 정리하는 행위가 아니라, 비극이 침범하지 못하도록 촘촘하게 엮어가는 일상의 방어선이자, 무너질 뻔했던 세계를 다시금 세우는 유일한 의식이었다. 도시의 밤은 여전히 고요했고, 사람들은 자신이 누리는 평화가 얼마나 위태로운 경계 위에 서 있는지 알지 못한 채 각자의 집으로 향했다. 박준우는 그 무지마저도 자신이 지켜야 할 일상의 일부라고 생각하며, 오늘도 어둠 속에서 조용히 신호등의 점멸을 응시했다.",
+    "wordCount": 571,
+    "estimatedMinutes": 24,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "점멸",
+        "lemma": "점멸",
+        "glosses": {
+          "es": "flickering",
+          "en": "flickering"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "찰나",
+        "lemma": "찰나",
+        "glosses": {
+          "es": "instant",
+          "en": "instant"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치부",
+        "lemma": "치부",
+        "glosses": {
+          "es": "to regard as",
+          "en": "to regard as"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "엄연한",
+        "lemma": "엄연한",
+        "glosses": {
+          "es": "undeniable",
+          "en": "undeniable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가시화",
+        "lemma": "가시화",
+        "glosses": {
+          "es": "visualization",
+          "en": "visualization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "비고란",
+        "lemma": "비고란",
+        "glosses": {
+          "es": "remarks column",
+          "en": "remarks column"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.9,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "재난 부재의 증거 기록에 대한 고찰"
+        },
+        {
+          "id": "a2",
+          "text": "교통사고 예방의 중요성"
+        },
+        {
+          "id": "a3",
+          "text": "횡단보도 안전 시스템의 기술적 한계"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "재난이 완전히 회피되었을 때, 그 위험의 무게는 어디에 기록되어야 하는가?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박준우가 처음 수첩에 기록한 내용은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "잠재적 충돌 1건"
+        },
+        {
+          "id": "a2",
+          "text": "특이사항 없음"
+        },
+        {
+          "id": "a3",
+          "text": "교통법규 위반 차량"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "박준우는 떨리는 손으로 자신의 수첩에 '특이사항 없음'이라고 적었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "박준우가 '미수'라는 용어에 대해 회의적인 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "법적 처벌이 불가능하기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "보고서 작성 절차가 복잡하기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "물리적 위협의 실체를 반영하지 못해서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "미수는 결과가 발생하지 않았음을 의미하지만, 그 과정에 존재했던 물리적 위협은 엄연한 실체이기 때문이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 이 글을 통해 독자에게 전달하고자 하는 바는?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "일상의 안전이 수많은 위기 극복의 결과임을 환기함"
+        },
+        {
+          "id": "a2",
+          "text": "사고 예방을 위한 시민들의 적극적인 협조를 당부함"
+        },
+        {
+          "id": "a3",
+          "text": "교통 담당관의 업무 환경 개선 필요성을 강조함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "우리가 평화롭다고 믿는 일상은 사실 수많은 '없음'으로 지탱되고 있는지도 모른다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 분위기는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "비판적이고 냉소적임"
+        },
+        {
+          "id": "a2",
+          "text": "성찰적이고 사유적임"
+        },
+        {
+          "id": "a3",
+          "text": "긴박하고 현장 중심적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "증거는 파괴된 물체에만 깃드는 것이 아니라, 파괴되지 않은 순간의 긴장 속에도 존재한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'치부'의 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "잘못을 덮어 숨김"
+        },
+        {
+          "id": "a2",
+          "text": "재산을 모아 늘림"
+        },
+        {
+          "id": "a3",
+          "text": "어떠한 것으로 간주함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그는 사고가 발생하지 않은 사건을 '미수'라는 단어로 규정하는 것이 과연 적절한지 의문을 품었다. 미수는 결과가 발생하지 않았음을 의미하지만, 그 과정에 존재했던 물리적 위협은 엄연한 실체이기 때문이다. 사람들은 눈에 보이는 파편과 핏자국만을 증거로 인정하려 한다. 하지만 박준우가 목격한 것은 존재하지 않는 비극의 압도적인 무게였다. 그는 횡단보도 위의 정적이 사실은 수많은 잠재적 재난이 소멸한 결과물임을 깨달았다. 우리가 평화롭다고 믿는 일상은 사실 수많은 '없음'으로 지탱되고 있는지도 모른다. 만약 어떤 일이 일어나지 않음으로써만 증명되는 안전이 있다면, 그 안전을 지키기 위해 투입된 에너지는 어떻게 가시화될 수 있을까? 박준우는 수첩을 덮으며 생각했다. 증거는 파괴된 물체에만 깃드는 것이 아니라, 파괴되지 않은 순간의 긴장 속에도 존재한다. 그러나 사회는 그 긴장을 측정할 도구를 가지고 있지 않았다. 결국 그는 보고서의 비고란에 '잠재적 충돌 1건 해소'라고 적어 넣었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "재난이 발생하지 않은 상황을 '사건'으로 기록해야 한다는 박준우의 주장에 대해, 당신은 찬성하는지 반대하는지 논리적 근거를 들어 서술하십시오.",
+      "en": "재난이 발생하지 않은 상황을 '사건'으로 기록해야 한다는 박준우의 주장에 대해, 당신은 찬성하는지 반대하는지 논리적 근거를 들어 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "지문을 읽고 재난이 발생하지 않은 상황에서 증거가 가지는 철학적 의미와 작가의 관점을 파악하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "보이지 않는 증거: 횡단보도 위의 정적 | C2 Reading | WeLearn",
+      "en": "보이지 않는 증거: 횡단보도 위의 정적 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "재난이 발생하지 않았을 때, 우리는 그것을 어떻게 증명할 수 있을까? 본 지문은 사소한 일상의 횡단보도에서 벌어진 아슬아슬한 순간을 통해 부재한 증거의 역설을 탐구한다.",
+      "en": "재난이 발생하지 않았을 때, 우리는 그것을 어떻게 증명할 수 있을까? 본 지문은 사소한 일상의 횡단보도에서 벌어진 아슬아슬한 순간을 통해 부재한 증거의 역설을 탐구한다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

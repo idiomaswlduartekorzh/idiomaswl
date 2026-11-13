@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「無料」の檻：美術館の門戸開放が隠蔽する代償",
+      "en": "「無料」の檻：美術館の門戸開放が隠蔽する代償"
+    },
+    "intro": {
+      "es": "本稿は、美術館の入館料無料化という政策が、公共の議論をどのように矮小化し、真のアクセシビリティを阻害しているかを批評的に考察する。",
+      "en": "本稿は、美術館の入館料無料化という政策が、公共の議論をどのように矮小化し、真のアクセシビリティを阻害しているかを批評的に考察する。"
+    },
+    "mission": {
+      "es": "テキストを精読し、筆者が「無料」という言葉に込めた皮肉と、美術館を取り巻く構造的な排他性について理解を深めなさい。",
+      "en": "テキストを精読し、筆者が「無料」という言葉に込めた皮肉と、美術館を取り巻く構造的な排他性について理解を深めなさい。"
+    },
+    "targetText": "夕闇が迫る中、私は「国立文化回廊」の重厚な大理石の階段を登っていた。今夜は特別展の無料開放日であり、長蛇の列がその歴史的なファサードを蛇のように取り巻いている。館長であるエレーナ・ヴァルガスは、この試みを「文化の民主化」と高らかに謳ったが、その言葉の裏には、ある種の欺瞞が潜んでいるように思えてならない。無料という響きは、一見すると門戸を広げているかのように聞こえるが、実際には、美術館に到達するために必要な膨大なコストを不可視化する装置として機能している。都市の周縁部に住む労働者にとって、深夜の交通費や、貴重な余暇時間を割いてまでこの場所に辿り着くための「見えない入場料」は、チケット代の免除などという薄っぺらな施策よりもはるかに重くのしかかっているのだ。\n\n展示室に入ると、そこには均質化された群衆がいた。ヴァルガス館長が掲げる「誰もがアクセスできる空間」という理念は、皮肉にも、美術館という装置が本来持っている権威主義を強化する結果を招いている。無料化によってチケットの障壁を取り払うことは、単なる数字上の来館者数を増やす手段に過ぎず、展示の文脈や解説の難解さは何ら改善されていない。むしろ、来館者の出自や社会的背景に配慮しないまま「無料」の看板を掲げることで、美術館は「教養ある者だけが享受できる聖域」という特権性を、より巧妙に隠蔽しているのである。私は、展示ケースの前に立ち尽くす一人の若者が、解説文の専門用語に困惑し、早々に退散する姿を目の当たりにした。彼にとっての障壁は入場料ではなく、この空間が発する「ここはあなたたちの場所ではない」という沈黙のメッセージだったのだ。\n\nこの問題の本質は、美術館側が提供する「無料」という言葉が、公共の議論を「入館できるか否か」という極めて狭い領域に限定させている点にある。議論の焦点がチケットの価格に固定されることで、本来問われるべき「誰のための展示なのか」「どのような物語が語られているのか」といった根源的な問いは、議論のテーブルから巧妙に排除されていく。ヴァルガス館長は、昨夜の閉館間際のインタビューで「経済的な障壁を撤廃したことで、我々は真の公共性を獲得した」と断言したが、それはあまりにも短絡的な自己満足に過ぎない。彼女が語る公共性とは、物理的な空間への侵入を許可することに過ぎず、知的・文化的な所有権を市民に委譲することとは決定的に異なる。\n\n議論の対極には、入館料を徴収することで運営資金を確保し、その収益を教育普及活動に再投資すべきだという保守的な意見も存在する。しかし、この二項対立自体が、美術館という制度が抱える病理を覆い隠すための煙幕である。無料か有料かという二者択一の枠組みに囚われている限り、美術館は自らの出自を問い直す機会を永遠に失うことになるだろう。真のアクセシビリティとは、単に扉を開け放つことではない。それは、美術館が自らの権威を解体し、市民の日常的な生活圏の中に、対等な対話の場を構築しようとする不断の意志に他ならない。しかし、現在の「国立文化回廊」において、そのような気配は微塵も感じられない。\n\n結局のところ、無料という甘い果実は、美術館が自らの存在意義を問う必要性を麻痺させる鎮痛剤として機能している。来館者数の増加という指標に酔いしれる館側と、無料で文化を消費したという充足感に浸る観客。この共犯関係の中で、美術館はますます孤立し、社会の周縁から切り離されていく。私は美術館を後にし、帰路の地下鉄に揺られながら、あの若者の困惑した表情を思い出していた。彼が求めていたのは無料のチケットではなく、自分の人生と接続可能な物語だったはずだ。美術館がその物語を紡ぐことを放棄し、単なる展示品の陳列棚に成り下がったとき、そこにはもはや「公共」の居場所など存在しないのである。\n\nさらに深刻なのは、この「無料」という免罪符が、美術館を社会の批評から守る不可侵の盾へと変貌させている現実である。批判を試みる者は、無償の恩恵に浴しながら贅沢な不満を述べる「無礼な受益者」というレッテルを貼られる恐怖に直面する。この構造的な抑圧は、文化施設が本来持つべき批判的公共性を完全に無効化し、展示内容に対する市民の正当な異議申し立てを封じ込めてしまう。結果として、美術館は社会の鏡であることをやめ、権力の正当性を再生産するための無菌室と化した。我々が真に求めるべきは、無料という名の施しではなく、市民一人ひとりが文化の生産者として参画し、展示の文脈そのものを更新し続けるための対等な権利の行使である。もし美術館がこの硬直した聖域としての立場を死守し続けるならば、それはやがて社会の記憶を保存する場所ではなく、過去の亡霊を崇拝するだけの巨大な墓標へと成り果てるだろう。その時、我々が目にするのは、誰にも開かれていない、しかし誰でも入れるという空虚な箱庭の成れの果てに他ならない。",
+    "wordCount": 1879,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "欺瞞",
+        "lemma": "欺瞞",
+        "glosses": {
+          "es": "deception",
+          "en": "deception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不可視化",
+        "lemma": "不可視化",
+        "glosses": {
+          "es": "making invisible",
+          "en": "making invisible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "均質化",
+        "lemma": "均質化",
+        "glosses": {
+          "es": "homogenization",
+          "en": "homogenization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "短絡的",
+        "lemma": "短絡的",
+        "glosses": {
+          "es": "short-sighted",
+          "en": "short-sighted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "煙幕",
+        "lemma": "煙幕",
+        "glosses": {
+          "es": "smokescreen",
+          "en": "smokescreen"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "共犯関係",
+        "lemma": "共犯関係",
+        "glosses": {
+          "es": "complicit relationship",
+          "en": "complicit relationship"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 55.3,
+      "maxSentenceWords": 95,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が本稿を通じて最も主張したいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "入場料の無料化は本質的な問題を隠蔽している"
+        },
+        {
+          "id": "a2",
+          "text": "美術館の無料化は文化の普及に不可欠である"
+        },
+        {
+          "id": "a3",
+          "text": "美術館は有料化することで質を維持すべきだ"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "無料という響きは、一見すると門戸を広げているかのように聞こえるが、実際には、美術館に到達するために必要な膨大なコストを不可視化する装置として機能している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "ヴァルガス館長が考える公共性とはどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "市民の知的背景を考慮した展示の構築"
+        },
+        {
+          "id": "a2",
+          "text": "物理的な空間への侵入を許可すること"
+        },
+        {
+          "id": "a3",
+          "text": "入館料の全廃による来館者の多様化"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼女が語る公共性とは、物理的な空間への侵入を許可することに過ぎず、知的・文化的な所有権を市民に委譲することとは決定的に異なる。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "展示室で若者が感じた「障壁」の正体は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "高額な入館料"
+        },
+        {
+          "id": "a2",
+          "text": "展示解説の難解さ"
+        },
+        {
+          "id": "a3",
+          "text": "心理的な疎外感"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼にとっての障壁は入場料ではなく、この空間が発する「ここはあなたたちの場所ではない」という沈黙のメッセージだったのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「国立文化回廊」を訪れた若者のエピソードを挿入した目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "館長の方針が現場で機能していないことを示すため"
+        },
+        {
+          "id": "a2",
+          "text": "美術館の展示内容が非常に専門的であることを説明するため"
+        },
+        {
+          "id": "a3",
+          "text": "若者が美術館に対して抱く期待の大きさを強調するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "私は、展示ケースの前に立ち尽くす一人の若者が、解説文の専門用語に困惑し、早々に退散する姿を目の当たりにした。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本稿全体に流れる筆者の態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "美術館の現状に対する冷笑的な批判"
+        },
+        {
+          "id": "a2",
+          "text": "制度の欠陥を指摘する冷静な分析"
+        },
+        {
+          "id": "a3",
+          "text": "改革を求める情熱的な提言"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "議論の対極には、入館料を徴収することで運営資金を確保し、その収益を教育普及活動に再投資すべきだという保守的な意見も存在する。しかし、この二項対立自体が、美術館という制度が抱える病理を覆い隠すための煙幕である。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「共犯関係」という言葉が指し示す対象は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "美術館と政府"
+        },
+        {
+          "id": "a2",
+          "text": "展示者と批評家"
+        },
+        {
+          "id": "a3",
+          "text": "館側と観客"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "来館者数の増加という指標に酔いしれる館側と、無料で文化を消費したという充足感に浸る観客。この共犯関係の中で、美術館はますます孤立し、社会の周縁から切り離されていく。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「無料」という言葉が持つ公共的な力と、それがもたらす弊害について、あなたの考えを800字程度で述べなさい。",
+      "en": "「無料」という言葉が持つ公共的な力と、それがもたらす弊害について、あなたの考えを800字程度で述べなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "テキストを精読し、筆者が「無料」という言葉に込めた皮肉と、美術館を取り巻く構造的な排他性について理解を深めなさい。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「無料」の檻：美術館の門戸開放が隠蔽する代償 | C2 Reading | WeLearn",
+      "en": "「無料」の檻：美術館の門戸開放が隠蔽する代償 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "本稿は、美術館の入館料無料化という政策が、公共の議論をどのように矮小化し、真のアクセシビリティを阻害しているかを批評的に考察する。",
+      "en": "本稿は、美術館の入館料無料化という政策が、公共の議論をどのように矮小化し、真のアクセシビリティを阻害しているかを批評的に考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}

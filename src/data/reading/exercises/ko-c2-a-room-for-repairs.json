@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "korean C2",
+    "topik": 6,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "수선의 윤리학: 은폐된 노동과 자급의 신화",
+      "en": "수선의 윤리학: 은폐된 노동과 자급의 신화"
+    },
+    "intro": {
+      "es": "수리 공동체와 자급자족 담론의 이면에 숨겨진 돌봄 노동의 불균형을 비판적으로 고찰하는 평론입니다.",
+      "en": "수리 공동체와 자급자족 담론의 이면에 숨겨진 돌봄 노동의 불균형을 비판적으로 고찰하는 평론입니다."
+    },
+    "mission": {
+      "es": "기술적 자립이라는 이상이 어떻게 특정 계층의 희생을 전제로 성립하는지 분석하고, 그 구조적 모순을 파악하십시오.",
+      "en": "기술적 자립이라는 이상이 어떻게 특정 계층의 희생을 전제로 성립하는지 분석하고, 그 구조적 모순을 파악하십시오."
+    },
+    "targetText": "지난 토요일 저녁, '녹색 공구함'이라는 이름의 수리 워크숍에 참여했다. 이 행사는 소비주의를 탈피하고 스스로 물건을 고쳐 쓰는 자급자족의 가치를 설파하는 자리였다. 주최자인 박진우 씨는 고장 난 라디오와 낡은 토스터를 분해하며, 현대인이 잃어버린 기술적 주체성을 회복해야 한다고 열변을 토했다. 그의 논리는 명쾌했다. 물건을 버리는 대신 고치는 행위는 자본주의의 소모적 굴레에서 벗어나는 정치적 저항이라는 것이다. 하지만 그 화려한 수사 뒤에는 불편한 진실이 숨어 있었다. 워크숍이 진행되는 동안, 박 씨의 아내인 이수현 씨는 참가자들이 어지럽힌 공구들을 정리하고, 기름때 묻은 작업대를 닦으며, 쏟아진 커피를 치우느라 단 한 순간도 쉬지 못했다. 수리라는 창조적 행위가 박 씨의 '자립'이라는 이름으로 포장되는 동안, 그 뒤편의 유지 보수 노동은 이수현 씨의 '돌봄'이라는 이름으로 은밀히 흡수되고 있었다. 나는 이 광경을 보며 수리 공동체가 강조하는 자급자족이 과연 누구의 시간을 담보로 하는지 의문을 갖지 않을 수 없었다. 박 씨가 나사를 조이는 동안 이수현 씨가 닦아낸 것은 단순히 공구의 기름때가 아니라, 남성 중심적 수리 문화가 지워버린 돌봄의 흔적들이었다. 수리 워크숍은 기술적 성취를 전시하는 무대였지만, 그 무대를 유지하는 무대 뒤의 노동은 철저히 가시화되지 않았다. 행사 막바지에 이르러 박 씨는 청중의 박수를 받으며 자신이 고친 라디오를 자랑스럽게 들어 보였다. 그러나 그 라디오가 다시 작동하기까지 필요한 부품을 구하고, 작업 환경을 조성하며, 참가자들의 뒤처리를 감당한 이수현 씨의 노동은 '보조적'이라는 낙인 아래 잊혔다. 나는 행사장을 나서며 수리 담론이 가진 치명적인 결함을 목격했다. 진정한 의미의 자립은 타인의 노동을 착취하여 얻어지는 것이 아니라, 그 노동의 가치를 인정하는 것에서 시작되어야 한다. 하지만 이곳에서 목격한 자립은 타인의 희생을 투명하게 만드는 기술에 불과했다. 결국 수리 워크숍은 소비를 줄이자는 거창한 명분 아래, 가사 노동의 비대칭성을 강화하는 재현의 장이 되고 말았다. 박 씨는 라디오를 고쳤지만, 그가 망가뜨린 것은 공동체 내의 평등한 돌봄 관계였다. 나는 집으로 돌아오는 길에, 스스로 고칠 수 있다는 오만한 자신감이 타인의 노동을 지우는 폭력이 될 수 있음을 뼈저리게 실감했다. 수선은 물건을 고치는 행위이지만, 때로는 그 행위 자체가 관계의 균열을 더욱 깊게 만드는 역설을 품고 있다. 우리는 더 이상 낡은 부품을 갈아 끼우는 것만으로 충분한 시대를 살고 있지 않다. 이제는 그 수리 행위를 가능케 했던 돌봄의 노동까지도 함께 복구해야 할 때이다.\n\n이러한 관점에서 볼 때 우리가 지향해야 할 진정한 수리의 가치는 단순히 물리적 사물의 기능을 복원하는 기술적 숙련도에 머물러서는 안 된다. 만약 우리가 고장 난 기계만을 바라보며 그것을 다루는 사람의 노동과 그 주변을 맴도는 돌봄의 가치를 철저히 외면한다면, 결국 우리는 또 다른 형태의 소외를 양산하는 기계적 기능주의에 매몰될 수밖에 없을 것이다. 박진우 씨가 보여준 기술적 자립의 서사는 분명 매력적인 대안처럼 보이지만, 그 이면에서 누군가의 희생을 당연시하는 구조적 모순을 직시하지 않는다면 이는 결코 지속 가능한 대안이 될 수 없다. 진정한 의미의 자립은 타인의 노동을 지우는 방식이 아니라, 수리라는 행위가 이루어지는 모든 과정에 참여하는 구성원들의 노동을 동등하게 가시화하고 그 가치를 투명하게 공유하는 연대에서 시작된다. 우리가 물건을 고치기 위해 도구를 집어 들 때, 그 행위가 누군가에게는 보이지 않는 짐이 되고 있지는 않은지 성찰하는 태도가 선행되어야 한다. 결국 수리의 완성은 기계의 작동 여부가 아니라, 그 과정을 함께하는 이들 사이의 관계가 얼마나 평등하고 상호 존중적인 토대 위에 놓여 있는지에 달려 있다. 이러한 인식의 전환이 없다면 수리 워크숍은 그저 자본주의의 소모적 굴레를 또 다른 형태의 젠더적 불평등으로 치환하는 무대에 불과할 것이다. 이제 우리는 낡은 라디오를 고치는 손길만큼이나 그 손길이 닿지 않는 곳에서 묵묵히 헌신하는 돌봄의 손길을 귀하게 여길 줄 아는 새로운 공동체의 윤리를 정립해야 할 시점에 와 있다. 그것이야말로 우리가 진정으로 회복해야 할 기술적 주체성의 본질이자, 파편화된 현대 사회를 치유할 수 있는 유일한 길임을 잊지 말아야 한다.",
+    "wordCount": 528,
+    "estimatedMinutes": 22,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "자급자족",
+        "lemma": "자급자족",
+        "glosses": {
+          "es": "Self-sufficiency",
+          "en": "Self-sufficiency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "소모적",
+        "lemma": "소모적",
+        "glosses": {
+          "es": "Consumptive or wasteful",
+          "en": "Consumptive or wasteful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "담보",
+        "lemma": "담보",
+        "glosses": {
+          "es": "Collateral or guarantee",
+          "en": "Collateral or guarantee"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "가시화",
+        "lemma": "가시화",
+        "glosses": {
+          "es": "Making visible",
+          "en": "Making visible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "비대칭성",
+        "lemma": "비대칭성",
+        "glosses": {
+          "es": "Asymmetry",
+          "en": "Asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "역설",
+        "lemma": "역설",
+        "glosses": {
+          "es": "Paradox",
+          "en": "Paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:29:46.160Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심적인 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "자급자족의 이면과 노동의 불평등"
+        },
+        {
+          "id": "a2",
+          "text": "수리 기술의 중요성"
+        },
+        {
+          "id": "a3",
+          "text": "워크숍 운영 방식의 개선 방안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "수리 공동체가 강조하는 자급자족이 과연 누구의 시간을 담보로 하는지 의문을 갖지 않을 수 없었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "워크숍 현장에서 이수현 씨가 수행한 역할은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "라디오 수리 시연"
+        },
+        {
+          "id": "a2",
+          "text": "참가자들의 뒤처리 및 환경 정리"
+        },
+        {
+          "id": "a3",
+          "text": "행사 운영 계획 수립"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "참가자들이 어지럽힌 공구들을 정리하고, 기름때 묻은 작업대를 닦으며, 쏟아진 커피를 치우느라 단 한 순간도 쉬지 못했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "글쓴이가 박진우 씨의 행위를 비판적으로 보는 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "수리 기술이 부족해서"
+        },
+        {
+          "id": "a2",
+          "text": "참가비가 너무 비싸서"
+        },
+        {
+          "id": "a3",
+          "text": "타인의 노동을 착취하여 자신의 성취로 포장했기 때문에"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "수리라는 창조적 행위가 박 씨의 '자립'이라는 이름으로 포장되는 동안, 그 뒤편의 유지 보수 노동은 이수현 씨의 '돌봄'이라는 이름으로 은밀히 흡수되고 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "글쓴이가 마지막 문단에서 '돌봄의 노동까지도 함께 복구해야 할 때'라고 언급한 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기술적 자립보다 돌봄의 가치를 인정하는 사회적 인식 전환을 강조하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "가전제품 수리 서비스의 확대를 촉구하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "워크숍 주최자에게 사과를 요구하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "진정한 의미의 자립은 타인의 노동을 착취하여 얻어지는 것이 아니라, 그 노동의 가치를 인정하는 것에서 시작되어야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적임"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적임"
+        },
+        {
+          "id": "a3",
+          "text": "냉소적이고 공격적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "스스로 고칠 수 있다는 오만한 자신감이 타인의 노동을 지우는 폭력이 될 수 있음을 뼈저리게 실감했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'비대칭성'의 의미와 가장 가까운 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "균형 잡힌 상태"
+        },
+        {
+          "id": "a2",
+          "text": "수리 기술의 고도화"
+        },
+        {
+          "id": "a3",
+          "text": "노동력의 불균형적 분배"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "수리 워크숍은 소비를 줄이자는 거창한 명분 아래, 가사 노동의 비대칭성을 강화하는 재현의 장이 되고 말았다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "당신이 만약 '녹색 공구함' 워크숍의 기획자라면, 이 글에서 지적된 노동의 불평등 문제를 해결하기 위해 어떤 구체적인 운영 방식을 도입하겠습니까? 300자 내외로 서술하십시오.",
+      "en": "당신이 만약 '녹색 공구함' 워크숍의 기획자라면, 이 글에서 지적된 노동의 불평등 문제를 해결하기 위해 어떤 구체적인 운영 방식을 도입하겠습니까? 300자 내외로 서술하십시오."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "기술적 자립이라는 이상이 어떻게 특정 계층의 희생을 전제로 성립하는지 분석하고, 그 구조적 모순을 파악하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:29:46.160Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "수선의 윤리학: 은폐된 노동과 자급의 신화 | C2 Reading | WeLearn",
+      "en": "수선의 윤리학: 은폐된 노동과 자급의 신화 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "수리 공동체와 자급자족 담론의 이면에 숨겨진 돌봄 노동의 불균형을 비판적으로 고찰하는 평론입니다.",
+      "en": "수리 공동체와 자급자족 담론의 이면에 숨겨진 돌봄 노동의 불균형을 비판적으로 고찰하는 평론입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:29:46.160Z"
+  }
+}

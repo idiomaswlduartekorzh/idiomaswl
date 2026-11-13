@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c2-the-food-label",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "japanese C2",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "免責のラベル：食の倫理を問う批評",
+      "en": "免責のラベル：食の倫理を問う批評"
+    },
+    "intro": {
+      "es": "食品廃棄を巡る「消費期限」と「責任の所在」について、ある架空のレストランでの出来事を軸に論じる批評文。",
+      "en": "食品廃棄を巡る「消費期限」と「責任の所在」について、ある架空のレストランでの出来事を軸に論じる批評文。"
+    },
+    "mission": {
+      "es": "食品表示が持つ隠れた機能と、それが消費者の倫理的判断にどのような影響を与えるかを考察する。",
+      "en": "食品表示が持つ隠れた機能と、それが消費者の倫理的判断にどのような影響を与えるかを考察する。"
+    },
+    "targetText": "昨夜、都内の隠れ家的なビストロ『エトワール』で供された一皿は、私の食に対する認識を根底から揺さぶるものだった。店主の佐伯氏は、地産地消を掲げつつも、廃棄ゼロを謳うことはない。彼がテーブルに置いたのは、見た目には完璧だが、ラベル上は「消費期限」を数時間過ぎた食材を使用した料理だった。佐伯氏は、これを「責任の共有」と呼ぶ。彼が提示したラベルは、単なる情報伝達の手段ではなく、法的責任を回避しつつ、その判断を客という消費者に転嫁する巧妙な装置として機能していた。このラベルが私に突きつけたのは、情報の透明性という美名の下で、誰がリスクを負うべきかという冷徹な問いであった。\n\nこの状況は、現代の食品流通における「免責」の構造を象徴している。かつてラベルは、消費者の安全を保障するための「守護者」であった。しかし、エトワールで目にしたラベルは、情報を開示することで、むしろ消費者を共犯者に仕立て上げる「契約書」に近い。佐伯氏が「自己判断」を強調する時、そこには食の安全性に対する専門的な担保が欠落している。消費者は、ラベルに記された客観的な数字を信じることで、自らの判断が合理的であると錯覚する。しかし、その数字が何を意味し、どのような文脈で付与されたのかを問う余地は、ラベルという形式によって封じられているのである。\n\n批評家として私が抱いた違和感は、この「責任の転嫁」が倫理的な美徳として包装されている点にある。佐伯氏は、廃棄を減らすという大義名分を掲げ、客に「選ぶ権利」を与えたと主張する。だが、それは真の選択ではなく、情報の非対称性を利用した心理的な誘導に過ぎない。客は、廃棄を避けるという道徳的優越感と、期限切れの食材を口にするというリスクの間で揺れ動く。この葛藤こそが、ラベルが隠蔽してきた本質である。ラベルが示す「期限」は、絶対的な真理ではなく、あくまで企業や店側が自らの身を守るための境界線に過ぎないのだ。\n\n店内の静寂の中で、私はその一皿を前にして、ラベルが持つ両義性に思いを馳せた。ラベルは、私たちが世界を理解するための地図であると同時に、思考を停止させるための檻でもある。佐伯氏の試みは、既存の食品表示制度の矛盾を浮き彫りにする一方で、新たな責任の所在を曖昧にしている。もし、この料理によって健康被害が生じた場合、ラベルを読み解き、自らの意思で選択した客は、果たして店側を糾弾できるのだろうか。この問いに対する答えは、ラベルという形式の中に埋没し、決して表層には現れない。消費者は、ラベルという名の盾を掲げながら、実は自らの判断の脆弱性に晒されているのである。\n\n結局のところ、エトワールでの体験は、私の中に未解決の緊張を残した。食の倫理とは、ラベルに書かれた情報を鵜呑みにすることではなく、その情報の背後にある沈黙を読み解くことにあるのかもしれない。佐伯氏が提供した料理は、美味であったが、同時に苦い後味を残した。それは、ラベルという記号が、私たちの責任を肩代わりしてくれるという幻想を打ち砕いたからだろう。私たちは、ラベルに依存する限り、食の真の責任を負うことはできない。この帰結は、現代社会における消費のあり方を鋭く問いかけている。ラベルは、私たちの知性を試すための試験紙であり、その結果は、私たちがどのような責任の持ち主であるかを示し続けているのだ。\n\nさらに考察を深めれば、この現象は食の安全を巡る「科学的根拠」と「個人的信念」の間の危うい境界線を露呈させている。佐伯氏の試みは、画一的な期限設定に対する挑戦として一定の評価を得るかもしれないが、それは同時に、長年積み上げられてきた食品衛生学の知見を個人の直感や哲学で代替するという危険な賭けでもある。もし我々がラベルの数値を単なる目安として解釈し、自らの感覚を絶対視するようになれば、科学が担保してきた公衆衛生の基盤は容易に崩壊するだろう。皮肉なことに、廃棄を減らすという倫理的な動機が、結果として社会全体の安全基準を相対化し、リスク管理を個人の裁量という名の無法地帯へと追いやる結果を招いている。ラベルを否定することは、現代社会が築き上げた客観的信頼関係の放棄に他ならない。私たちは、便利で安全な食の恩恵を享受しながら、その根底にある厳格な制度を疎ましく思うという矛盾を抱えている。このエトワールの料理は、まさにその矛盾の結晶であり、消費者が自らの知性で責任を負うべきという理想論が、いかにして無防備な脆弱性に変貌するかを如実に物語っている。結局のところ、ラベルという記号から解放されたいと願う我々の欲望こそが、新たな支配の構造を生み出し、食の安全という最も基本的な権利を、自己責任という名の過酷な重圧へと変えてしまったのではないだろうか。",
+    "wordCount": 1807,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "転嫁",
+        "lemma": "転嫁",
+        "glosses": {
+          "es": "shifting responsibility onto others",
+          "en": "shifting responsibility onto others"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "共犯者",
+        "lemma": "共犯者",
+        "glosses": {
+          "es": "accomplice",
+          "en": "accomplice"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "欠落",
+        "lemma": "欠落",
+        "glosses": {
+          "es": "lack or deficiency",
+          "en": "lack or deficiency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "非対称性",
+        "lemma": "非対称性",
+        "glosses": {
+          "es": "asymmetry",
+          "en": "asymmetry"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "両義性",
+        "lemma": "両義性",
+        "glosses": {
+          "es": "ambiguity or dual meaning",
+          "en": "ambiguity or dual meaning"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "埋没",
+        "lemma": "埋没",
+        "glosses": {
+          "es": "being buried or lost",
+          "en": "being buried or lost"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 46.3,
+      "maxSentenceWords": 94,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T01:20:30.196Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者が『エトワール』の体験を通じて最終的に主張していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "ラベルは責任の所在を曖昧にする"
+        },
+        {
+          "id": "a2",
+          "text": "ラベルを信じることの危険性"
+        },
+        {
+          "id": "a3",
+          "text": "食の責任は消費者にあること"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ラベルは、私たちの知性を試すための試験紙であり、その結果は、私たちがどのような責任の持ち主であるかを示し続けているのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐伯氏が客に提供した料理のラベルの特徴は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "廃棄ゼロを明記する"
+        },
+        {
+          "id": "a2",
+          "text": "期限切れを示唆する"
+        },
+        {
+          "id": "a3",
+          "text": "法的責任を負う内容"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ラベル上は「消費期限」を数時間過ぎた食材を使用した料理だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "なぜ筆者は消費者が「共犯者」に仕立て上げられると述べるのか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "店側と利益を共有するから"
+        },
+        {
+          "id": "a2",
+          "text": "法的な契約に同意するから"
+        },
+        {
+          "id": "a3",
+          "text": "リスクを判断する主体とされるから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "情報を開示することで、むしろ消費者を共犯者に仕立て上げる「契約書」に近い。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がこの批評文で「ラベル」という言葉を多用する意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "制度の限界を象徴させるため"
+        },
+        {
+          "id": "a2",
+          "text": "情報の透明性を称賛するため"
+        },
+        {
+          "id": "a3",
+          "text": "消費者の利便性を強調するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ラベルは、私たちが世界を理解するための地図であると同時に、思考を停止させるための檻でもある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この批評文全体のトーンとして適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的かつ批判的"
+        },
+        {
+          "id": "a2",
+          "text": "懐疑的かつ内省的"
+        },
+        {
+          "id": "a3",
+          "text": "断定的かつ攻撃的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "この問いに対する答えは、ラベルという形式の中に埋没し、決して表層には現れない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「非対称性」という言葉が文中で意味していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "味のバランスの悪さ"
+        },
+        {
+          "id": "a2",
+          "text": "店側と客の対立関係"
+        },
+        {
+          "id": "a3",
+          "text": "情報の量や質の偏り"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは真の選択ではなく、情報の非対称性を利用した心理的な誘導に過ぎない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "食品表示制度が消費者の判断に与える影響について、あなたの考えを800字程度で述べなさい。",
+      "en": "食品表示制度が消費者の判断に与える影響について、あなたの考えを800字程度で述べなさい。"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "食品表示が持つ隠れた機能と、それが消費者の倫理的判断にどのような影響を与えるかを考察する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T01:20:30.196Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "免責のラベル：食の倫理を問う批評 | C2 Reading | WeLearn",
+      "en": "免責のラベル：食の倫理を問う批評 | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "食品廃棄を巡る「消費期限」と「責任の所在」について、ある架空のレストランでの出来事を軸に論じる批評文。",
+      "en": "食品廃棄を巡る「消費期限」と「責任の所在」について、ある架空のレストランでの出来事を軸に論じる批評文。"
+    },
+    "canonicalPath": "/en/practice/japanese/c2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-13T01:20:30.196Z"
+  }
+}
