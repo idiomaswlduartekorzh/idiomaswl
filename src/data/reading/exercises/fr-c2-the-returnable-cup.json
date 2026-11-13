@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-returnable-cup",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de la circularité : le paradoxe du gobelet consigné",
+      "en": "L'illusion de la circularité : le paradoxe du gobelet consigné"
+    },
+    "intro": {
+      "es": "Cet exercice examine les limites de l'analyse environnementale à travers l'étude de cas d'un festival local confronté à la gestion des déchets.",
+      "en": "Cet exercice examine les limites de l'analyse environnementale à travers l'étude de cas d'un festival local confronté à la gestion des déchets."
+    },
+    "mission": {
+      "es": "Analysez les tensions entre les mesures de durabilité à court terme et les impacts écologiques globaux dans ce texte argumentatif.",
+      "en": "Analysez les tensions entre les mesures de durabilité à court terme et les impacts écologiques globaux dans ce texte argumentatif."
+    },
+    "targetText": "Lors de la dernière édition du festival 'Écho-Symphonie', une initiative ambitieuse a été déployée par la directrice logistique, Élise Vaneau : l'abandon total des contenants jetables au profit d'un système de gobelets en polypropylène rigide, consignés et lavables. L'optimisme était palpable. Sur le papier, le calcul semblait imparable. En éliminant des milliers de gobelets en carton paraffiné, le festival affichait une réduction spectaculaire de ses déchets résiduels immédiats. Le succès fut célébré comme une victoire écologique exemplaire, relayée par les médias locaux qui vantaient la vertu d'une économie circulaire enfin appliquée à grande échelle. Pourtant, cette lecture linéaire occulte une réalité systémique bien plus complexe, où la réussite locale se mue paradoxalement en une charge environnementale délocalisée.\n\nLe conflit a émergé lorsque Marc-André Lefebvre, consultant en cycle de vie, a entrepris d'élargir le périmètre d'analyse au-delà des clôtures du festival. Il a découvert que, pour garantir l'hygiène requise, les gobelets devaient être transportés par camions vers une centrale de lavage située à deux cents kilomètres. L'empreinte carbone liée à ce ballet logistique, combinée à la consommation énergétique des cycles de lavage industriels et à l'utilisation de détergents chimiques, a rapidement annulé le bénéfice initial de la suppression du plastique jetable. Le paradoxe est cruel : le festivalier, en déposant fièrement son gobelet dans le bac de consigne, participait à une illusion de propreté, tandis que, dans l'ombre, une chaîne d'approvisionnement énergivore se mettait en branle pour maintenir ce simulacre de vertu.\n\nLa situation s'est envenimée lors de la réunion de bilan. Élise Vaneau défendait la visibilité de l'action, arguant que l'impact psychologique sur le public justifiait les coûts logistiques, une forme de pédagogie par le geste. Marc-André Lefebvre, quant à lui, insistait sur la nécessité d'une comptabilité carbone rigoureuse, soulignant que l'illusion de durabilité était, à terme, plus délétère que la réalité des déchets. Cette confrontation illustre une fracture épistémologique majeure : doit-on privilégier l'engagement symbolique, moteur de changement social, ou la précision technique, seule garante d'une réduction réelle des impacts ? Le festival s'est retrouvé piégé entre la nécessité de maintenir une image écoresponsable et la découverte inconfortable que son remède était, dans sa configuration actuelle, aussi polluant que le mal qu'il prétendait guérir.\n\nLa conséquence de cette impasse fut une stagnation décisionnelle. Le festival a maintenu le système, non par conviction écologique, mais par inertie communicationnelle. Le coût financier de la logistique a fini par impacter la programmation artistique, réduisant la diversité des concerts proposés. Ainsi, la quête de la vertu environnementale a fini par sacrifier l'essence même de l'événement. Le public, ignorant ces coulisses, continuait de louer l'initiative, ignorant que le prix de sa bonne conscience était payé par la dégradation de la qualité culturelle du festival. Cette situation démontre que l'élargissement du périmètre d'analyse ne permet pas seulement de mieux mesurer, il force à redéfinir les priorités, souvent au détriment de nos certitudes les plus confortables.\n\nEn définitive, le cas du festival 'Écho-Symphonie' nous place face à une vérité dérangeante : la transition écologique est souvent entravée par notre besoin de solutions tangibles, immédiatement visibles, au détriment de mesures moins spectaculaires mais structurellement plus efficaces. En se focalisant sur le gobelet, objet totem de la lutte contre le plastique, les organisateurs ont négligé l'infrastructure invisible qui le soutient. Tant que nous ne serons pas prêts à interroger la globalité des flux, nous resterons prisonniers de cette circularité de façade, où le geste symbolique tient lieu de politique environnementale. Le véritable défi ne réside pas dans le choix du contenant, mais dans notre capacité à accepter que la durabilité réelle exige une remise en question de nos modes d'organisation, et non simplement le remplacement d'un déchet par un autre.\n\nToutefois, cette impasse soulève une question fondamentale sur la place de l'expérimentation dans les politiques publiques : faut-il condamner l'imperfection au nom de la rigueur scientifique ? Si l'analyse de Lefebvre est incontestable sur le plan thermodynamique, elle omet la dimension heuristique de l'échec. En érigeant le gobelet consigné en symbole, le festival a involontairement créé un laboratoire à ciel ouvert, révélant les limites infrastructurelles de notre société. Loin d'être une simple erreur de gestion, cette expérience a agi comme un révélateur des failles logistiques régionales, forçant les acteurs locaux à envisager, pour les éditions futures, des solutions de lavage décentralisées et des circuits courts de proximité. L'échec apparent devient alors le catalyseur d'une mutation nécessaire. La véritable vertu écologique ne réside peut-être pas dans la perfection immédiate d'un bilan carbone, mais dans cette capacité itérative à transformer une illusion initiale en une exigence de transformation structurelle profonde. En persistant dans cette voie, le festival ne se contente plus de gérer des déchets, il participe à l'émergence d'une nouvelle conscience collective qui, par-delà les chiffres, exige des infrastructures adaptées à la transition. Ainsi, le sacrifice de la programmation artistique, bien que regrettable, pourrait être interprété comme un investissement immatériel dans une culture de la responsabilité partagée. Si le remède fut initialement plus polluant que le mal, il a eu le mérite de briser l'inertie du statu quo, prouvant que la transition est un processus dynamique, souvent chaotique, où la confrontation entre l'idéalisme symbolique et la froideur technique finit par engendrer une compréhension plus fine des enjeux. Le succès de demain ne se mesurera plus à la visibilité d'un geste, mais à la résilience d'un système capable d'intégrer ses propres contradictions pour évoluer vers une sobriété enfin cohérente, systémique et durable.",
+    "wordCount": 902,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "imparable",
+        "lemma": "imparable",
+        "glosses": {
+          "es": "Unstoppable or irrefutable",
+          "en": "Unstoppable or irrefutable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "occulte",
+        "lemma": "occulte",
+        "glosses": {
+          "es": "Conceals or hides",
+          "en": "Conceals or hides"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "détergents",
+        "lemma": "détergents",
+        "glosses": {
+          "es": "Cleaning agents",
+          "en": "Cleaning agents"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "délétère",
+        "lemma": "délétère",
+        "glosses": {
+          "es": "Harmful or toxic",
+          "en": "Harmful or toxic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inertie",
+        "lemma": "inertie",
+        "glosses": {
+          "es": "Stagnation or lack of movement",
+          "en": "Stagnation or lack of movement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "totem",
+        "lemma": "totem",
+        "glosses": {
+          "es": "Symbolic object",
+          "en": "Symbolic object"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.8,
+      "maxSentenceWords": 50,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le message central de ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La mesure est complexe."
+        },
+        {
+          "id": "a2",
+          "text": "Le tri est inutile."
+        },
+        {
+          "id": "a3",
+          "text": "Le festival doit cesser."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "cette lecture linéaire occulte une réalité systémique bien plus complexe, où la réussite locale se mue paradoxalement en une charge environnementale délocalisée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi le système de gobelets est-il critiqué ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il coûte trop cher."
+        },
+        {
+          "id": "a2",
+          "text": "Il est polluant."
+        },
+        {
+          "id": "a3",
+          "text": "Il est inefficace."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "L'empreinte carbone liée à ce ballet logistique, combinée à la consommation énergétique des cycles de lavage industriels et à l'utilisation de détergents chimiques, a rapidement annulé le bénéfice initial",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la conséquence sur le festival lui-même ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une faillite financière totale."
+        },
+        {
+          "id": "a2",
+          "text": "Une augmentation des spectateurs."
+        },
+        {
+          "id": "a3",
+          "text": "Une perte de qualité artistique."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le coût financier de la logistique a fini par impacter la programmation artistique, réduisant la diversité des concerts proposés.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Dans quel but l'auteur utilise-t-il l'exemple du festival ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour illustrer les limites des solutions visibles."
+        },
+        {
+          "id": "a2",
+          "text": "Pour critiquer les organisateurs."
+        },
+        {
+          "id": "a3",
+          "text": "Pour promouvoir les gobelets réutilisables."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "la transition écologique est souvent entravée par notre besoin de solutions tangibles, immédiatement visibles, au détriment de mesures moins spectaculaires mais structurellement plus efficaces.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine dans l'analyse de l'auteur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste."
+        },
+        {
+          "id": "a2",
+          "text": "Critique."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le paradoxe est cruel : le festivalier, en déposant fièrement son gobelet dans le bac de consigne, participait à une illusion de propreté",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'délétère' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Bénéfique."
+        },
+        {
+          "id": "a2",
+          "text": "Inutile."
+        },
+        {
+          "id": "a3",
+          "text": "Nocif."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'illusion de durabilité était, à terme, plus délétère que la réalité des déchets.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai (200 mots) discutant si les actions symboliques en faveur de l'environnement peuvent être considérées comme des étapes nécessaires vers un changement plus profond, ou si elles constituent un frein à une réelle transformation structurelle.",
+      "en": "Rédigez un court essai (200 mots) discutant si les actions symboliques en faveur de l'environnement peuvent être considérées comme des étapes nécessaires vers un changement plus profond, ou si elles constituent un frein à une réelle transformation structurelle."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez les tensions entre les mesures de durabilité à court terme et les impacts écologiques globaux dans ce texte argumentatif.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de la circularité : le paradoxe du gobelet consigné | C2 Reading | WeLearn",
+      "en": "L'illusion de la circularité : le paradoxe du gobelet consigné | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Cet exercice examine les limites de l'analyse environnementale à travers l'étude de cas d'un festival local confronté à la gestion des déchets.",
+      "en": "Cet exercice examine les limites de l'analyse environnementale à travers l'étude de cas d'un festival local confronté à la gestion des déchets."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

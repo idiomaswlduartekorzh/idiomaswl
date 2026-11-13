@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "善意の解体と手弁当の倫理",
+      "en": "善意の解体と手弁当の倫理"
+    },
+    "intro": {
+      "es": "コミュニティ修理カフェの裏側にある、無償労働と技術的隠蔽の構造を批評的に読み解く読解演習。",
+      "en": "コミュニティ修理カフェの裏側にある、無償労働と技術的隠蔽の構造を批評的に読み解く読解演習。"
+    },
+    "mission": {
+      "es": "以下のC1レベルのテクストを熟読し、ボランティア活動の美徳化と実際の不均衡に関する筆者の視点を分析せよ。",
+      "en": "以下のC1レベルのテクストを熟読し、ボランティア活動の美徳化と実際の不均衡に関する筆者の視点を分析せよ。"
+    },
+    "targetText": "土曜日の午下がり、かつて市内の産業を支えた旧織物工場の倉庫を改装したコミュニティスペースでは、地域住民が持ち寄った壊れた家電や家具の修理作業が賑やかに行われていた。この「市民修理工房」は、大量消費社会への批判と、地域社会の結びつきを再構築するという高潔な理念を掲げて発足した。主催者である代表の佐伯は、来場者が自らの手で物を直すプロセスそのものを重視し、参加者全員が主体的に関与するフラットな空間作りを標榜している。会場のあちこちで、見知らぬ同士が工具の使い方の手ほどきを受けながら、笑顔で作業を進める光景が見受けられた。一見すると、そこには現代社会が忘却しつつある相互扶助の温かな理想が完璧に具現化されているかのように映る。しかし、その和やかな表舞台の裏側には、美辞麗学だけでは覆い隠せない構造的な亀裂が静かに進行していた。\n\n工房の隅に設置された特設の電子機器修理ブースでは、元電気技師である村田が、周囲の喧騒から隔絶されたかのように黙々とハンダごてを握り続けていた。村田は、持ち込まれる複雑な基板の故障のほとんどを一人で診断し、メーカーが部品供給を停止した古いアンプから、量販店で門前払いされた最新のデジタルミキサーに至るまで、次々と息を吹き返していかた。彼の手際の良い作業は一種の職人芸であり、その場に居合わせた人々は感嘆の声を漏らし、佐伯もまたマイクを握って彼の献身的な貢献を大々的に称賛した。だが、その称賛の言葉が響くほど、村田の表情には疲労の色が濃くなり、どこか冷ややかな諦めが滲んでいくのを知る者は少なかった。誰もが「参加の喜び」を謳歌する一方で、実質的な難作業の処理は、その卓越した技術を持つ一人の老いた専門家の無償の労働力に全面的に依存していたのである。\n\nこの状況が孕む本質的な矛盾は、運営側が推進する「誰でも参加できる民主的な修理」というテーゼと、実際の現場における「属人化した高度な技術的負荷」との深刻な乖離にある。佐伯が掲げる理念では、すべての参加者が対等な主役であり、専門家と素人の境界線は存在しないことになっている。しかし、現実は非情であった。素人が手を出して完全に破壊しかけた精密機器の数々は、結局のところ村田のような熟練者のテーブルに密かに回され、彼が自身の休息時間を削って修復することで辛うじて成立していたのだ。参加者たちは「自分で直せた」という達成感を持ち帰り、主催者は「コミュニティの連帯が深まった」という成果を誇る。その華やかな循環の基盤として、村田の個人的な善意と無給の労働が不可欠なコストとして一方的に吸収されているという事実は、巧みに不可視化されていた。\n\nさらに厄介なのは、このシステムが一種の道徳的強制力を伴っている点である。村田が作業の負担を理由に特定の修理依頼を断ろうとすると、周囲からは「せっかくの善意の場なのだから」「みんなで助け合おう」という無言のプレッシャーが投げかけられた。技術を持つ者がその力を提供することは、この空間においては義務であり、報酬を要求することは連帯を裏切る行為であるかのような空気が醸成されていたのである。結果として、労働の対価が金銭ではなく抽象的な「感謝」や「賞賛」で支払われる構造が固定化され、スキルを持つ者ほど搾取されるというアイロニカルな事態が生まれていた。佐伯の善意に満ちたスピーチは、この不均衡な関係を覆い隠すための潤滑油として機能し、誰もが搾取の加害者に気づかないまま、心地よい共同体の幻想を共有し続けていた。\n\n夕暮れ時に閉会のアナウンスが流れると、参加者たちは満足げな表情でそれぞれの戦利品を抱えて帰路についた。村田は片付けを手伝うこともなく、黙々と自分の工具箱を閉じ、誰にも引き止められることなく倉庫の重い鉄扉を後にした。彼の背中は、この美しき市民参加の祝祭が、特定の個人の犠牲という歪な土台の上に辛うじて成り立っているという現実を沈黙のまま告発しているようであった。私たちは、安易な共同体主義や参加の美化が、時として労働の価値を貶め、見えざる搾取を再生産する危険性について、もっと真剣に向き合わなければならない。修理されるべきは壊れた家電製品だけではなく、その善意の美名の下で歪められた、労働と報酬を巡る私たちの社会的な倫理そのものであるはずだ。",
+    "wordCount": 1668,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "美辞麗学",
+        "lemma": "美辞麗学",
+        "glosses": {
+          "es": "flowery language",
+          "en": "flowery language"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "属人化した",
+        "lemma": "属人化した",
+        "glosses": {
+          "es": "becoming dependent on a specific individual's skills",
+          "en": "becoming dependent on a specific individual's skills"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "テーゼ",
+        "lemma": "テーゼ",
+        "glosses": {
+          "es": "thesis",
+          "en": "thesis"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不可視化されていた",
+        "lemma": "不可視化されていた",
+        "glosses": {
+          "es": "had been rendered invisible",
+          "en": "had been rendered invisible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "アイロニカルな",
+        "lemma": "アイロニカルな",
+        "glosses": {
+          "es": "ironical",
+          "en": "ironical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "告発している",
+        "lemma": "告発している",
+        "glosses": {
+          "es": "accusing / exposing",
+          "en": "accusing / exposing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 61.8,
+      "maxSentenceWords": 90,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:26:22.698Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "このテクスト全体が主に問題提起していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "市民修理カフェにおける参加の美化と無償労働の不均衡"
+        },
+        {
+          "id": "a2",
+          "text": "古い家電製品を修理することの経済的な難しさ"
+        },
+        {
+          "id": "a3",
+          "text": "地域住民の交流を深めるためのイベント運営の成功法則"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "誰もが「参加の喜び」を謳歌する一方で、実質的な難作業の処理は、その卓越した技術を持つ一人の老いた専門家の無償の労働力に全面的に依存していたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "村田の作業に関して、現場でどのような現実が生じていたか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "村田は主催者から十分な報酬を受け取り納得していた"
+        },
+        {
+          "id": "a2",
+          "text": "素人が壊した機器が村田のところに回され負担が集中していた"
+        },
+        {
+          "id": "a3",
+          "text": "村田は参加者たちから技術指導の対価として金銭を要求した"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "素人が手を出して完全に破壊しかけた精密機器の数々は、結局のところ村田のような熟練者のテーブルに密かに回され、彼が自身の休息時間を削って修復することで辛うじて成立していたのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "村田が疲労の色を濃くし諦めを滲ませた理由として最も妥当なのはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "最新のデジタルミキサーの構造があまりにも複雑で修理方法が理解できないから"
+        },
+        {
+          "id": "a2",
+          "text": "参加者たちから自分の修理スピードが遅いと直接批判されてしまったから"
+        },
+        {
+          "id": "a3",
+          "text": "自分の技術に対する正当な金銭的評価や労いが得られないまま負担を強いられているから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "労働の対価が金銭ではなく抽象的な「感謝」や「賞賛」で支払われる構造が固定化され、スキルを持つ者ほど搾取されるというアイロニカルな事態が生まれていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が佐伯代表のスピーチや工房の理念について言及している意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "表向きの素晴らしい理想が実際には不均衡な構造を覆い隠す役割を果たしていることを示すため"
+        },
+        {
+          "id": "a2",
+          "text": "地域社会の連帯が生み出す素晴らしい経済効果を読者に証明するため"
+        },
+        {
+          "id": "a3",
+          "text": "主催者の優れたリーダーシップとイベントの円滑な運営手順を賞賛するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "佐伯の善意に満ちたスピーチは、この不均衡な関係を覆い隠すための潤滑油として機能し、誰もが搾取の加害者に気づかないまま、心地よい共同体の幻想を共有し続けていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "このテクストにおける筆者の態度やトーンを最もよく表しているものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "称賛"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "楽観的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私たちは、安易な共同体主義や参加の美化が、時として労働の価値を貶め、見えざる搾取を再生産する危険性について、もっと真剣に向き合わなければならない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "テクスト内で使われている「美辞麗学」という言葉の文脈上の意味に最も近いものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "真実を正確に伝えるための具体的な報告書"
+        },
+        {
+          "id": "a2",
+          "text": "厳密な科学的根拠に基づいた論理的な分析手法"
+        },
+        {
+          "id": "a3",
+          "text": "実際の実態とは裏腹に聞こえの良い飾られた言葉や理念"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "その和やかな表舞台の裏側には、美辞麗学だけでは覆い隠せない構造的な亀裂が静かに進行していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "ボランティア活動やコミュニティイベントにおいて、「善意」や「無償の参加」が美化されることで、特定の個人に過剰な負担や搾取が集中する構造について、あなたの意見を400字程度で述べよ。",
+      "en": "ボランティア活動やコミュニティイベントにおいて、「善意」や「無償の参加」が美化されることで、特定の個人に過剰な負担や搾取が集中する構造について、あなたの意見を400字程度で述べよ。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "以下のC1レベルのテクストを熟読し、ボランティア活動の美徳化と実際の不均衡に関する筆者の視点を分析せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:26:22.698Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "善意の解体と手弁当の倫理 | C1 Reading | WeLearn",
+      "en": "善意の解体と手弁当の倫理 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "コミュニティ修理カフェの裏側にある、無償労働と技術的隠蔽の構造を批評的に読み解く読解演習。",
+      "en": "コミュニティ修理カフェの裏側にある、無償労働と技術的隠蔽の構造を批評的に読み解く読解演習。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:26:22.698Z"
+  }
+}

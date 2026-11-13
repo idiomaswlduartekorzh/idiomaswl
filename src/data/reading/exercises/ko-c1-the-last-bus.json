@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-last-bus",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "빈 좌석의 역설: 운송국의 자화자찬과 사라진 승객들",
+      "en": "빈 좌석의 역설: 운송국의 자화자찬과 사라진 승객들"
+    },
+    "intro": {
+      "es": "이 글은 한 지방 운송국의 통계적 오류와 그로 인해 소외된 지역 주민들의 현실을 다룬 기사 형식의 읽기 지문입니다.",
+      "en": "이 글은 한 지방 운송국의 통계적 오류와 그로 인해 소외된 지역 주민들의 현실을 다룬 기사 형식의 읽기 지문입니다."
+    },
+    "mission": {
+      "es": "지문의 내용을 파악하고, 운송국의 통계 해석 방식과 실제 주민들의 이동권 사이의 괴리를 분석하십시오.",
+      "en": "지문의 내용을 파악하고, 운송국의 통계 해석 방식과 실제 주민들의 이동권 사이의 괴리를 분석하십시오."
+    },
+    "targetText": "최근 서부 운송국은 관할 농어촌 버스 노선의 효율성이 눈에 띄게 개선되었다는 보도자료를 발표했다. 국장 김철수는 지난 분기 대비 버스 내 빈 좌석 점유율이 현저히 낮아졌음을 강조하며, 이는 노선 최적화 전략이 성공적으로 안착했음을 보여주는 지표라고 자평했다. 그는 버스에 탑승한 승객들이 이전보다 밀도 있게 좌석을 채우고 있다는 점을 들어, 예산 삭감과 운행 횟수 축소가 오히려 자원 배분의 효율성을 높였다는 논리를 펼쳤다. 운송국은 이러한 수치가 주민들의 이동 수요를 정확히 반영하고 있다고 주장하며, 향후 더 공격적인 노선 통폐합을 예고했다. 그러나 이러한 낙관적인 수치 뒤에는 이동권의 사각지대에 놓인 주민들의 뼈아픈 현실이 숨겨져 있다. 실제로 많은 지역 주민들은 버스 운행 횟수가 급격히 줄어든 이후, 아예 대중교통 이용을 포기한 상태다. 버스를 기다려도 오지 않는 상황이 반복되자, 주민들은 자차를 마련하거나 이웃의 차를 얻어 타는 등 자구책을 강구해야 했다. 즉, 빈 좌석이 줄어든 것은 효율적인 배차 때문이 아니라, 버스를 이용할 수밖에 없는 필수적인 이동조차 차단당한 사람들이 늘어났기 때문이라는 해석이 가능하다. 운송국은 이용객이 줄어든 노선을 폐쇄하는 것을 합리적 결정이라 명명하지만, 이는 결과적으로 대중교통의 공공성을 스스로 부정하는 행위와 다름없다. 노인 인구 비율이 높은 마을의 경우, 버스 노선은 단순한 이동 수단을 넘어 생존과 직결된 연결 고리다. 하지만 운송국은 이러한 정성적 가치를 철저히 배제한 채, 오직 버스에 탑승한 사람들의 수치만을 근거로 삼아 성공을 자축하고 있다. 결국 통계는 현실을 반영하는 거울이 아니라, 운송국의 정책 실패를 은폐하는 도구로 전락했다. 주민들은 여전히 버스를 기다리지만, 운송국은 이미 정류장을 떠난 사람들을 통계에서 삭제함으로써 자신들의 성과를 조작하고 있는 셈이다. 이러한 상황에서 운송국이 말하는 효율성이 과연 누구를 위한 것인지에 대한 근본적인 의문이 제기된다. 이동의 권리는 수치로 환산할 수 없는 가치임에도 불구하고, 운송국은 이를 비용 절감이라는 잣대로만 재단하고 있다. 정책의 수혜자가 누구인지보다 정책의 결과가 얼마나 깔끔하게 지표로 나타나는지에만 몰두하는 행정 편의주의적 사고가 지역 사회의 고립을 심화시키고 있다. 결국 주민들의 일상은 운송국의 서류 속에서 서서히 지워지고 있으며, 이들의 고립은 더욱 깊어질 전망이다. 효율성이라는 미명 하에 자행되는 이러한 행정적 폭력은, 대중교통이 지향해야 할 본연의 가치를 망각하게 만든다.\n\n결과적으로 이러한 행정적 접근은 지역 공동체의 근간을 흔드는 결과를 초래할 위험이 크다. 버스 노선이 사라진 공간에는 적막만이 남았고, 이동의 자유를 박탈당한 주민들은 사회적 관계망으로부터 점차 소외되고 있다. 운송국이 자랑하는 효율성은 결국 누군가의 일상을 단절시키는 대가로 얻어진 허상에 불과하다. 만약 이러한 노선 통폐합이 지속된다면, 대중교통은 더 이상 보편적인 복지 서비스로서의 기능을 수행할 수 없게 될 것이다. 정책 입안자들은 수치 너머의 사람들을 바라보아야 하며, 비용 절감이라는 명분 뒤에 숨겨진 지역 사회의 고통을 직시해야 한다. 진정한 효율성이란 단순히 예산을 아끼는 것이 아니라, 모든 주민이 소외되지 않고 이동할 수 있는 권리를 보장하는 데서 시작되어야 하기 때문이다. 지금이라도 운송국은 통계에 매몰된 시각에서 벗어나, 주민들의 목소리에 귀를 기울이는 전향적인 정책 변화를 모색해야 할 시점이다. 그렇지 않는다면, 그들이 내세운 성과는 결국 지역 사회를 고립시키는 비극적인 이정표로 기록될 것이며, 주민들의 신뢰를 영원히 잃게 될 것이다.",
+    "wordCount": 421,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "자평했다",
+        "lemma": "자평했다",
+        "glosses": {
+          "es": "to evaluate oneself",
+          "en": "to evaluate oneself"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "통폐합",
+        "lemma": "통폐합",
+        "glosses": {
+          "es": "merger and abolition",
+          "en": "merger and abolition"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "사각지대",
+        "lemma": "사각지대",
+        "glosses": {
+          "es": "blind spot",
+          "en": "blind spot"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "자구책",
+        "lemma": "자구책",
+        "glosses": {
+          "es": "self-rescue measure",
+          "en": "self-rescue measure"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "정성적",
+        "lemma": "정성적",
+        "glosses": {
+          "es": "qualitative",
+          "en": "qualitative"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "미명",
+        "lemma": "미명",
+        "glosses": {
+          "es": "false name or pretext",
+          "en": "false name or pretext"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.2,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "통계 수치와 실제 이동권의 괴리"
+        },
+        {
+          "id": "a2",
+          "text": "운송국의 효율적 노선 개편 성과"
+        },
+        {
+          "id": "a3",
+          "text": "농어촌 지역의 대중교통 인프라 확충"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "빈 좌석이 줄어든 것은 효율적인 배차 때문이 아니라, 버스를 이용할 수밖에 없는 필수적인 이동조차 차단당한 사람들이 늘어났기 때문이라는 해석이 가능하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "운송국이 버스 노선 최적화의 성공 근거로 제시한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민 만족도 조사 결과"
+        },
+        {
+          "id": "a2",
+          "text": "빈 좌석 점유율 감소"
+        },
+        {
+          "id": "a3",
+          "text": "운행 비용의 획기적 절감"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "국장 김철수는 지난 분기 대비 버스 내 빈 좌석 점유율이 현저히 낮아졌음을 강조하며, 이는 노선 최적화 전략이 성공적으로 안착했음을 보여주는 지표라고 자평했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "주민들이 자구책을 강구하게 된 근본적인 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "버스 요금이 너무 비싸서"
+        },
+        {
+          "id": "a2",
+          "text": "노선이 너무 복잡하게 변경되어서"
+        },
+        {
+          "id": "a3",
+          "text": "버스가 제시간에 오지 않아서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "버스를 기다려도 오지 않는 상황이 반복되자, 주민들은 자차를 마련하거나 이웃의 차를 얻어 타는 등 자구책을 강구해야 했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 운송국의 정책을 비판하는 의도는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "행정 편의주의적 사고가 지역 사회의 고립을 심화시킨다는 점을 지적하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "운송국 국장 김철수의 개인적인 무능함을 폭로하고 책임을 묻기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "버스 노선 폐쇄를 막기 위한 구체적인 대안을 제시하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "정책의 수혜자가 누구인지보다 정책의 결과가 얼마나 깔끔하게 지표로 나타나는지에만 몰두하는 행정 편의주의적 사고가 지역 사회의 고립을 심화시키고 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 냉소적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "결국 통계는 현실을 반영하는 거울이 아니라, 운송국의 정책 실패를 은폐하는 도구로 전락했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'자평했다'의 문맥적 의미와 가장 유사한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "남을 비판하다"
+        },
+        {
+          "id": "a2",
+          "text": "기록을 남기다"
+        },
+        {
+          "id": "a3",
+          "text": "스스로 평가하다"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이는 노선 최적화 전략이 성공적으로 안착했음을 보여주는 지표라고 자평했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "운송국의 통계적 성과가 지역 주민의 이동권을 어떻게 침해하고 있는지, 본인의 생각을 논리적으로 서술하십시오.",
+      "en": "운송국의 통계적 성과가 지역 주민의 이동권을 어떻게 침해하고 있는지, 본인의 생각을 논리적으로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "지문의 내용을 파악하고, 운송국의 통계 해석 방식과 실제 주민들의 이동권 사이의 괴리를 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "빈 좌석의 역설: 운송국의 자화자찬과 사라진 승객들 | C1 Reading | WeLearn",
+      "en": "빈 좌석의 역설: 운송국의 자화자찬과 사라진 승객들 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "이 글은 한 지방 운송국의 통계적 오류와 그로 인해 소외된 지역 주민들의 현실을 다룬 기사 형식의 읽기 지문입니다.",
+      "en": "이 글은 한 지방 운송국의 통계적 오류와 그로 인해 소외된 지역 주민들의 현실을 다룬 기사 형식의 읽기 지문입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

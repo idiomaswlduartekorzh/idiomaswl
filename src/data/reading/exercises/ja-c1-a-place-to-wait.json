@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "待合室の蜃気楼",
+      "en": "待合室の蜃気楼"
+    },
+    "intro": {
+      "es": "デジタル化されたクリニックの受付で、患者の心理と管理システムの乖離を観察する日記形式の物語です。",
+      "en": "デジタル化されたクリニックの受付で、患者の心理と管理システムの乖離を観察する日記形式の物語です。"
+    },
+    "mission": {
+      "es": "クリニックの待合室における「待ち時間」の概念的矛盾を考察し、デジタル管理がもたらす新たな不安について分析してください。",
+      "en": "クリニックの待合室における「待ち時間」の概念的矛盾を考察し、デジタル管理がもたらす新たな不安について分析してください。"
+    },
+    "targetText": "午前八時、クリニックの扉が開くと同時に、予約管理システムが淡々と稼働を始める。私の仕事は、受付カウンターの向こう側で、デジタル化された「待ち時間」という名の幻想を管理することだ。待合室のモニターには、各患者の診察状況がリアルタイムで表示される。システム上、待ち人数は常に三人から四人に保たれるよう調整されている。しかし、これはあくまで画面上の数字に過ぎない。実際には、診察室の奥で予期せぬ処置が長引き、廊下には予約時間を過ぎた患者が溢れ始めている。デジタル上の「スムーズな流れ」と、物理的な空間で膨れ上がる「停滞」の間に、埋めようのない亀裂が生じているのだ。私はモニターの数字を更新するたびに、画面の向こう側の平穏と、目の前の現実との間で奇妙な罪悪感を覚える。\n\n十時を過ぎると、待合室の空気は重苦しい沈黙に支配される。ある患者は、モニターに表示された「待ち時間五分」という数字を信じ、スマートフォンを眺めながら静かに待っている。しかし、その五分は十数分経っても一向に減る気配がない。デジタル上の予測は、あくまで過去の平均値に基づいた統計に過ぎず、個別の診察内容という不確定要素を排除しているからだ。このシステムは、患者に安心感を与えるための道具であるはずが、実際には期待と現実の乖離を増幅させる装置と化している。私はカウンター越しに、苛立ちを隠そうと努める患者たちの視線を感じる。彼らにとって、モニターの数字はもはや信頼の指標ではなく、裏切りのカウントダウンなのだ。\n\n正午、一人の高齢男性が受付に歩み寄り、モニターを指差して静かに尋ねた。「この数字は、何を示しているのですか」。彼の問いは鋭く、私の管理するシステムの脆弱性を突いていた。私は「あくまで目安です」と繰り返すしかない。この言葉は、デジタル管理の限界を認める敗北宣言のようなものだ。男性は何も言わず、再び椅子に戻った。彼の背中には、システムに対する諦念と、それでも診察を受けなければならないという切実な事情が混在している。待合室という空間は、効率化という名の下で、個人の尊厳や時間を軽視する場所へと変貌を遂げているのかもしれない。私は、効率的な診察を実現するためのシステムが、逆に患者の精神的な消耗を招いているというパラドックスを突きつけられた。\n\n午後の診察が始まると、待合室の外で奇妙な光景が見られるようになった。診察を終えた患者たちが、出口で足止めを食らっているのだ。会計システムが連動して停止し、処方箋の発行が滞っている。モニター上では依然として「診察順調」と表示されているが、クリニックの外には、帰ることもできず、かといって待合室にも戻れない患者たちが、不確かな不安を抱えて立ち尽くしている。デジタル化された世界では、トラブルは常に「見えない場所」へ押し出される。待合室の中は一見整然としているが、その外側には、制御不能な混沌が渦巻いているのだ。私は受付の端末を操作しながら、この透明な壁の向こう側で何が起きているのかを想像し、戦慄を覚える。\n\n夕暮れが近づき、最後の一人がクリニックを去った。モニターの電源を落とすと、待合室は本来の静寂を取り戻した。今日一日、私は何を守り、何を切り捨ててきたのだろうか。デジタル管理は、確かに事務的な効率を向上させたかもしれない。しかし、それは同時に、人と人との間で共有されるはずの「待ち時間」の質を奪い去った。待合室は、単なる診察を待つ場所ではなく、不確実な未来に対する不安を共有する場所であったはずだ。効率化という名のフィルターを通すことで、私たちは最も大切な「生の不確かさ」を見失っている。明日の朝、再びモニターが点灯すれば、私はまた同じ幻想を管理し続けるのだろう。出口のない迷路の中で、私はただ、デジタルな数字を並べ替えるだけの守衛に過ぎないのだ。",
+    "wordCount": 1453,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "乖離",
+        "lemma": "乖離",
+        "glosses": {
+          "es": "divergence or discrepancy",
+          "en": "divergence or discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "停滞",
+        "lemma": "停滞",
+        "glosses": {
+          "es": "stagnation",
+          "en": "stagnation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不確定要素",
+        "lemma": "不確定要素",
+        "glosses": {
+          "es": "uncertain factor",
+          "en": "uncertain factor"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "諦念",
+        "lemma": "諦念",
+        "glosses": {
+          "es": "resignation",
+          "en": "resignation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "パラドックス",
+        "lemma": "パラドックス",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "戦慄",
+        "lemma": "戦慄",
+        "glosses": {
+          "es": "shudder or trembling with fear",
+          "en": "shudder or trembling with fear"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 36.3,
+      "maxSentenceWords": 79,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主要なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "クリニックにおけるデジタル管理の功罪"
+        },
+        {
+          "id": "a2",
+          "text": "受付スタッフの日常的な業務内容"
+        },
+        {
+          "id": "a3",
+          "text": "最新の医療システムの導入プロセス"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "効率化という名のフィルターを通すことで、私たちは最も大切な「生の不確かさ」を見失っている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "モニター上の「待ち時間」が正確ではない主な理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "スタッフが数値を意図的に操作しているから"
+        },
+        {
+          "id": "a2",
+          "text": "個別の診察内容という不確定要素を排除しているから"
+        },
+        {
+          "id": "a3",
+          "text": "システムが古いデータに基づいているから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "デジタル上の予測は、あくまで過去の平均値に基づいた統計に過ぎず、個別の診察内容という不確定要素を排除しているからだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "高齢男性が受付に尋ねた際の「諦念」は何を指していますか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "診察が受けられないことへの怒り"
+        },
+        {
+          "id": "a2",
+          "text": "自分の病状が重いことへの自覚"
+        },
+        {
+          "id": "a3",
+          "text": "システムの改善に対する期待の欠如"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼の背中には、システムに対する諦念と、それでも診察を受けなければならないという切実な事情が混在している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が「デジタル化された世界では、トラブルは常に『見えない場所』へ押し出される」と述べた意図は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "クリニックの外で発生する問題の深刻さを示すため"
+        },
+        {
+          "id": "a2",
+          "text": "待合室の内部管理が完璧であることを強調するため"
+        },
+        {
+          "id": "a3",
+          "text": "デジタルシステムの利便性を称賛するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "待合室の中は一見整然としているが、その外側には、制御不能な混沌が渦巻いているのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語全体を通じた筆者の心情として最も適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "冷徹な観察者としての客観性"
+        },
+        {
+          "id": "a2",
+          "text": "管理と現実の狭間での葛藤と不安"
+        },
+        {
+          "id": "a3",
+          "text": "システム管理に対する強い誇り"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私はモニターの数字を更新するたびに、画面の向こう側の平穏と、目の前の現実との間で奇妙な罪悪感を覚える。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「パラドックス」という言葉が指し示している状況はどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "システムが患者の待ち時間を短縮していること"
+        },
+        {
+          "id": "a2",
+          "text": "受付スタッフが患者の不満を解消していること"
+        },
+        {
+          "id": "a3",
+          "text": "診察の効率化が患者の精神的負担を増やしていること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "私は、効率的な診察を実現するためのシステムが、逆に患者の精神的な消耗を招いているというパラドックスを突きつけられた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "デジタル化されたサービスが、本来の目的である「効率化」を達成しながらも、人間的なコミュニケーションを阻害してしまう現象について、自身の経験や観察を交えて論じてください。",
+      "en": "デジタル化されたサービスが、本来の目的である「効率化」を達成しながらも、人間的なコミュニケーションを阻害してしまう現象について、自身の経験や観察を交えて論じてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "クリニックの待合室における「待ち時間」の概念的矛盾を考察し、デジタル管理がもたらす新たな不安について分析してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "待合室の蜃気楼 | C1 Reading | WeLearn",
+      "en": "待合室の蜃気楼 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "デジタル化されたクリニックの受付で、患者の心理と管理システムの乖離を観察する日記形式の物語です。",
+      "en": "デジタル化されたクリニックの受付で、患者の心理と管理システムの乖離を観察する日記形式の物語です。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

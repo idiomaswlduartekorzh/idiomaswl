@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'érosion des toponymes",
+      "en": "L'érosion des toponymes"
+    },
+    "intro": {
+      "es": "Une exploration narrative sur la cartographie, la mémoire collective et le poids politique des noms de lieux dans une vallée oubliée.",
+      "en": "Une exploration narrative sur la cartographie, la mémoire collective et le poids politique des noms de lieux dans une vallée oubliée."
+    },
+    "mission": {
+      "es": "Analysez comment le narrateur perçoit la transformation du paysage à travers la nomenclature officielle et les cicatrices de l'histoire locale.",
+      "en": "Analysez comment le narrateur perçoit la transformation du paysage à travers la nomenclature officielle et les cicatrices de l'histoire locale."
+    },
+    "targetText": "Dans la vallée de l'Ombrie-Haute, le silence n'est jamais vide. Il est saturé par les strates de noms que les générations ont déposés sur les rochers, les ruisseaux et les cols. Je me suis installé dans l'ancien bureau du cartographe municipal, un homme nommé Elias Thorne, dont les archives témoignent d'une obsession méthodique pour la précision. Thorne ne se contentait pas de mesurer les distances ; il traquait les appellations vernaculaires pour les remplacer par des termes normalisés, dépouillés de toute aspérité émotionnelle. En feuilletant ses registres, je découvris que le « Ravin des Soupirs », ainsi nommé par les bergers pour évoquer les courants d'air sifflants dans les failles calcaires, était devenu, sous sa plume, le « Secteur 4-B ». Ce n'était pas une simple erreur administrative, mais une entreprise délibérée de neutralisation. En effaçant le nom, il effaçait la peur, la superstition, et finalement, la spécificité même de ce lieu. La carte, censée être le miroir fidèle du territoire, devenait ainsi le masque sous lequel le réel se décomposait lentement. Je passais mes soirées à confronter ses cartes aux récits des anciens du village de Val-Perdu. Pour eux, chaque pierre possédait une identité, une signature mémorielle qui ancrait leur existence dans une continuité tangible. Lorsqu'ils parlaient du « Champ des Veuves », ils ne décrivaient pas une parcelle agricole, mais une tragédie enfouie dans le sol, une mémoire collective qui refusait de se laisser domestiquer par la géométrie froide des arpenteurs. Thorne, de son côté, voyait dans ces noms des résidus archaïques, des obstacles à la compréhension rationnelle de l'espace. Il croyait sincèrement qu'en purifiant la nomenclature, il offrait aux citoyens une vision plus claire, plus accessible et, par extension, plus moderne. C'était là le cœur de notre friction intellectuelle : la carte était-elle un outil de préservation ou un instrument d'effacement ? Je me souviens d'une après-midi où, observant une carte de 1920, je remarquai que le « Torrent des Murmures » avait été rebaptisé « Canal de Drainage » suite à une crue dévastatrice. Le changement de nom visait à exorciser le traumatisme, à transformer une force indomptable en une infrastructure utilitaire. Pourtant, les habitants continuaient d'appeler le torrent par son nom d'origine, comme si le langage était une forme de résistance contre la standardisation imposée. Cette dualité entre le nom officiel et le nom vécu créait une tension permanente. La carte, dans sa volonté de tout figer, finissait par ignorer la vie même du lieu. J'ai fini par comprendre que la cartographie n'est jamais neutre ; elle est l'exercice d'un pouvoir qui choisit ce qui mérite de survivre dans la mémoire collective. En renommant, on hiérarchise les souvenirs, on valide certaines histoires tout en condamnant d'autres à l'oubli. Le projet de Thorne, bien que techniquement irréprochable, était une forme de violence symbolique. Il cherchait à créer un espace lisse, sans aspérités, où l'histoire ne serait plus qu'une donnée consultable. Ce soir-là, en refermant le dernier registre, je réalisai que la vallée ne m'appartenait plus, ni à Thorne. Elle appartenait à ces noms que nous avions tenté de domestiquer. J'ai pris une plume et, sur une carte vierge, j'ai commencé à réinscrire les noms interdits, non pas pour corriger le passé, mais pour reconnaître que le paysage est une conversation inachevée. Le silence de la vallée, désormais, me semblait moins vide ; il était peuplé de ces échos que nous avions cru éteindre. La carte ne serait plus jamais pour moi un document fini, mais un palimpseste où chaque strate de mémoire luttait pour ne pas être recouverte par la suivante. L'autorité du cartographe s'effritait face à l'obstination des noms vernaculaires, ces fantômes qui hantaient encore les sentiers escarpés, refusant de se laisser réduire à des coordonnées géographiques. La cartographie est un acte de foi, et la mienne était désormais tournée vers ces mémoires que la rationalité ne saurait jamais totalement contenir. Le travail de Thorne n'était qu'une parenthèse, une tentative vaine de figer l'ineffable, alors que la vallée, elle, continuait de murmurer ses secrets à ceux qui savaient encore écouter.\n\nToutefois, cette entreprise de réhabilitation toponymique soulève un paradoxe troublant : en cherchant à restaurer la vérité des lieux, ne risque-t-on pas de figer, à notre tour, une version arbitraire de l'histoire ? Si le « Ravin des Soupirs » possède une charge émotionnelle indéniable, sa pérennité dépend paradoxalement de cette même fragilité que Thorne cherchait à occulter. La résistance des anciens, bien qu'admirable, transforme ces noms en reliques, risquant de les isoler du présent au profit d'un passé sacralisé. En réinscrivant ces appellations, je ne fais peut-être que substituer une forme de nostalgie à la froide rationalité du cartographe, créant ainsi une nouvelle strate, tout aussi sélective, sur le palimpseste de la vallée. Le danger réside dans l'illusion que le langage pourrait capturer l'essence d'un territoire sans jamais le trahir. Chaque nom, qu'il soit administratif ou vernaculaire, agit comme un filtre déformant, une interprétation subjective qui occulte inévitablement d'autres strates de réalité. En voulant libérer la vallée du joug de la nomenclature normalisée, je m'expose au risque de devenir le gardien d'un musée imaginaire où chaque pierre est sommée de raconter une histoire précise. La véritable liberté du paysage réside peut-être dans son indifférence totale à nos étiquettes, qu'elles soient techniques ou poétiques. La vallée, dans son mutisme souverain, continue de se transformer, indifférente aux querelles des hommes qui tentent, par le verbe, de s'approprier son devenir. Mon geste de réécriture, bien que nécessaire pour honorer la mémoire, n'est qu'une humble tentative de dialogue avec une entité qui, par nature, échappe à toute définition définitive et à toute tentative de cartographie totale.",
+    "wordCount": 938,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "vernaculaires",
+        "lemma": "vernaculaires",
+        "glosses": {
+          "es": "native or indigenous terms",
+          "en": "native or indigenous terms"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aspérité",
+        "lemma": "aspérité",
+        "glosses": {
+          "es": "roughness or complexity",
+          "en": "roughness or complexity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arpenteurs",
+        "lemma": "arpenteurs",
+        "glosses": {
+          "es": "land surveyors",
+          "en": "land surveyors"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exorciser",
+        "lemma": "exorciser",
+        "glosses": {
+          "es": "to drive out or banish a trauma",
+          "en": "to drive out or banish a trauma"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "palimpseste",
+        "lemma": "palimpseste",
+        "glosses": {
+          "es": "a manuscript where layers of text are written over each other",
+          "en": "a manuscript where layers of text are written over each other"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ineffable",
+        "lemma": "ineffable",
+        "glosses": {
+          "es": "too great or extreme to be expressed in words",
+          "en": "too great or extreme to be expressed in words"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.9,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La lutte entre mémoire et normalisation."
+        },
+        {
+          "id": "a2",
+          "text": "La technique cartographique."
+        },
+        {
+          "id": "a3",
+          "text": "L'histoire oubliée d'une vallée isolée."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La carte, dans sa volonté de tout figer, finissait par ignorer la vie même du lieu.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Elias Thorne a-t-il renommé les lieux ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour moderniser."
+        },
+        {
+          "id": "a2",
+          "text": "Pour effacer les émotions."
+        },
+        {
+          "id": "a3",
+          "text": "Par souci administratif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ce n'était pas une simple erreur administrative, mais une entreprise délibérée de neutralisation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position du narrateur vis-à-vis des habitants ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il les juge archaïques."
+        },
+        {
+          "id": "a2",
+          "text": "Il se sent supérieur à eux."
+        },
+        {
+          "id": "a3",
+          "text": "Il admire leur résistance."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "les habitants continuaient d'appeler le torrent par son nom d'origine, comme si le langage était une forme de résistance contre la standardisation imposée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but du narrateur à la fin du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Réécrire la carte avec les noms interdits."
+        },
+        {
+          "id": "a2",
+          "text": "Publier les archives de Thorne."
+        },
+        {
+          "id": "a3",
+          "text": "Quitter définitivement la vallée."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "J'ai pris une plume et, sur une carte vierge, j'ai commencé à réinscrire les noms interdits",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Colérique et revendicateur."
+        },
+        {
+          "id": "a2",
+          "text": "Mélancolique et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et objectif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le travail de Thorne n'était qu'une parenthèse, une tentative vaine de figer l'ineffable, alors que la vallée, elle, continuait de murmurer ses secrets",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'palimpseste' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un document officiel falsifié."
+        },
+        {
+          "id": "a2",
+          "text": "Une carte géographique très ancienne."
+        },
+        {
+          "id": "a3",
+          "text": "Un territoire aux strates mémorielles."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La carte ne serait plus jamais pour moi un document fini, mais un palimpseste où chaque strate de mémoire luttait pour ne pas être recouverte par la suivante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif (200 mots) sur la manière dont les noms de lieux influencent notre perception de l'identité culturelle dans un monde globalisé.",
+      "en": "Rédigez un court essai argumentatif (200 mots) sur la manière dont les noms de lieux influencent notre perception de l'identité culturelle dans un monde globalisé."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez comment le narrateur perçoit la transformation du paysage à travers la nomenclature officielle et les cicatrices de l'histoire locale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'érosion des toponymes | C2 Reading | WeLearn",
+      "en": "L'érosion des toponymes | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une exploration narrative sur la cartographie, la mémoire collective et le poids politique des noms de lieux dans une vallée oubliée.",
+      "en": "Une exploration narrative sur la cartographie, la mémoire collective et le poids politique des noms de lieux dans une vallée oubliée."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

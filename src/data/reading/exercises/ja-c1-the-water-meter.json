@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-water-meter",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "共有メーターの陥穽：水道消費統計の虚像",
+      "en": "共有メーターの陥穽：水道消費統計の虚像"
+    },
+    "intro": {
+      "es": "ある地方自治体が発表した水道消費量の統計が、住民の生活実態を反映していないという疑念が浮上しています。本稿では、共有メーターがもたらす統計の歪みと、それに翻弄される住民の葛藤を読み解きます。",
+      "en": "ある地方自治体が発表した水道消費量の統計が、住民の生活実態を反映していないという疑念が浮上しています。本稿では、共有メーターがもたらす統計の歪みと、それに翻弄される住民の葛藤を読み解きます。"
+    },
+    "mission": {
+      "es": "統計データの背後にある構造的な問題を特定し、筆者が提示する隠れた論点について考察してください。",
+      "en": "統計データの背後にある構造的な問題を特定し、筆者が提示する隠れた論点について考察してください。"
+    },
+    "targetText": "北丘市の水道局が半期ごとに公表する「世帯平均消費量」は、市内全域の節水意識を測る指標として重宝されてきた。しかし、市議会議員の佐藤健一氏は、このデータが実態を乖離していると強く指摘する。問題の核心は、老朽化した集合住宅に設置された「一括検針用メーター」の存在だ。複数の世帯が一本の配管を共有するこれらの建物では、個別の使用量が測定されず、建物全体の使用量を戸数で割った平均値が各世帯の消費量として計上される。この仕組みが、個々の努力を無効化する「統計の虚像」を生んでいるのである。\n\nこの歪みが顕在化したのは、先月のことだった。市内の古いアパート「ひだまり荘」の住人である田中美咲氏は、極端な節水生活を徹底していた。彼女は洗濯の回数を減らし、風呂の残り湯を庭の散水に転用するなど、目に見える努力を重ねていた。ところが、水道局から届いた請求書には、前年と変わらぬ消費量が記載されていた。困惑した田中氏が管理組合に問い合わせると、同じ建物内で大規模な漏水や、節水を怠る世帯が存在していても、全戸の平均値として均等に費用が請求されるという不条理な実態が明らかになった。彼女の献身は、共有メーターという名の「平均化の檻」に閉じ込められていたのだ。\n\n佐藤議員は、この状況を「努力の無力化」と断じる。彼が市議会で提出した調査資料によれば、共有メーターを使用する世帯は、個別メーター世帯に比べて節水への動機付けが著しく低いことが示唆されている。市側は「個別の検針コストを抑えるための合理的な措置」と弁明するが、これは市民の自律的な節水行動を阻害する要因となっている。統計上は平均値が維持されているため、市は「節水啓発は成功している」と公言するが、その裏では、真面目に節水に取り組む住民が、無関心な隣人の浪費分を肩代わりするという不公平が常態化しているのである。\n\nこの問題には、行政側の論理と市民の生活防衛という二つの側面がある。確かに、古い配管をすべて個別メーターへ切り替えるには膨大なコストがかかり、その負担は最終的に住民に跳ね返る。自治体としては、一括検針を維持することが、水道料金の低廉化という大義名分に繋がっているという主張も理解できる。しかし、個人の消費行動が正確に可視化されない現状では、節水へのインセンティブが機能しないばかりか、水資源の浪費を助長する結果を招いている。行政が掲げる「環境配慮都市」という看板と、共有メーターという旧態依然としたインフラの乖離は、もはや看過できないレベルに達している。\n\n事態は、田中氏が近隣住民を巻き込んで「節水改善委員会」を立ち上げたことで、新たな局面を迎えた。彼女らは、簡易的な流量計を各蛇口に設置し、建物全体の使用量との差異を可視化する独自の調査を始めた。この草の根の行動は、市議会を動かし、ようやく個別メーター導入への補助金検討が議題に上るようになった。しかし、予算の制約から、すべての建物が対象になるわけではない。統計の数字が示す「平均」という名の平穏は、個人の切実な叫びを覆い隠し続けている。共有メーターがもたらす不平等の解消には、まだ長い道のりが残されているのである。",
+    "wordCount": 1209,
+    "estimatedMinutes": 10,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "乖離",
+        "lemma": "乖離",
+        "glosses": {
+          "es": "divergence or separation",
+          "en": "divergence or separation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "顕在化",
+        "lemma": "顕在化",
+        "glosses": {
+          "es": "becoming manifest or visible",
+          "en": "becoming manifest or visible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不条理",
+        "lemma": "不条理",
+        "glosses": {
+          "es": "absurdity or irrationality",
+          "en": "absurdity or irrationality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "示唆",
+        "lemma": "示唆",
+        "glosses": {
+          "es": "suggestion or implication",
+          "en": "suggestion or implication"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "インセンティブ",
+        "lemma": "インセンティブ",
+        "glosses": {
+          "es": "incentive",
+          "en": "incentive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "看過",
+        "lemma": "看過",
+        "glosses": {
+          "es": "overlooking or ignoring",
+          "en": "overlooking or ignoring"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 46.5,
+      "maxSentenceWords": 90,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:31:33.594Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本稿が指摘する水道消費統計の最大の問題点は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "共有メーターにより個別の節水努力が反映されないこと"
+        },
+        {
+          "id": "a2",
+          "text": "水道料金の値上げが市民の生活を圧迫していること"
+        },
+        {
+          "id": "a3",
+          "text": "行政が節水啓発活動を完全に放棄していること"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "複数の世帯が一本の配管を共有するこれらの建物では、個別の使用量が測定されず、建物全体の使用量を戸数で割った平均値が各世帯の消費量として計上される。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "田中氏が自身の努力が反映されていないと気づいたきっかけは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "近隣住民との対話"
+        },
+        {
+          "id": "a2",
+          "text": "水道局からの請求書"
+        },
+        {
+          "id": "a3",
+          "text": "市議会での調査結果"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ところが、水道局から届いた請求書には、前年と変わらぬ消費量が記載されていた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "市側が共有メーターを維持する主な理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "住民の節水意識の向上を期待するため"
+        },
+        {
+          "id": "a2",
+          "text": "漏水調査を容易にするための技術的措置"
+        },
+        {
+          "id": "a3",
+          "text": "検針コストの削減と料金の低廉化"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "市側は「個別の検針コストを抑えるための合理的な措置」と弁明するが、これは市民の自律的な節水行動を阻害する要因となっている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "田中氏らが「節水改善委員会」を立ち上げた目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "各家庭の消費量を可視化し状況を改善するため"
+        },
+        {
+          "id": "a2",
+          "text": "行政に対する直接的な抗議活動を行うため"
+        },
+        {
+          "id": "a3",
+          "text": "水道料金の全額免除を求める署名を集めるため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "彼女らは、簡易的な流量計を各蛇口に設置し、建物全体の使用量との差異を可視化する独自の調査を始めた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者は、現在の市の方針と実態の乖離についてどのような姿勢をとっているか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政の苦渋の決断を全面的に擁護している"
+        },
+        {
+          "id": "a2",
+          "text": "客観的なデータに基づき問題を鋭く批判している"
+        },
+        {
+          "id": "a3",
+          "text": "感情に任せて行政の無策を激しく糾弾している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "行政が掲げる「環境配慮都市」という看板と、共有メーターという旧態依然としたインフラの乖離は、もはや看過できないレベルに達している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「乖離」という言葉が持つニュアンスとして、文脈上最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "統計データが急激に減少していること"
+        },
+        {
+          "id": "a2",
+          "text": "住民と行政が協力して問題を解決すること"
+        },
+        {
+          "id": "a3",
+          "text": "二つのものが互いに離れて食い違っている状態"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "しかし、市議会議員の佐藤健一氏は、このデータが実態を乖離していると強く指摘する。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "共有メーターによる統計の歪みという具体的な問題を例に、技術的合理性と個人の公平性が衝突する状況について、あなたの考えを800字程度で述べてください。",
+      "en": "共有メーターによる統計の歪みという具体的な問題を例に、技術的合理性と個人の公平性が衝突する状況について、あなたの考えを800字程度で述べてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "統計データの背後にある構造的な問題を特定し、筆者が提示する隠れた論点について考察してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:31:33.594Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "共有メーターの陥穽：水道消費統計の虚像 | C1 Reading | WeLearn",
+      "en": "共有メーターの陥穽：水道消費統計の虚像 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "ある地方自治体が発表した水道消費量の統計が、住民の生活実態を反映していないという疑念が浮上しています。本稿では、共有メーターがもたらす統計の歪みと、それに翻弄される住民の葛藤を読み解きます。",
+      "en": "ある地方自治体が発表した水道消費量の統計が、住民の生活実態を反映していないという疑念が浮上しています。本稿では、共有メーターがもたらす統計の歪みと、それに翻弄される住民の葛藤を読み解きます。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:31:33.594Z"
+  }
+}

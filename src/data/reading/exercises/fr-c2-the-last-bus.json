@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-last-bus",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-last-bus",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "rural bus timetable",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'angle mort de la mobilité",
+      "en": "L'angle mort de la mobilité"
+    },
+    "intro": {
+      "es": "Une chronique incisive sur les limites des indicateurs de performance dans le transport rural, où l'absence de données devient une forme d'invisibilité sociale.",
+      "en": "Une chronique incisive sur les limites des indicateurs de performance dans le transport rural, où l'absence de données devient une forme d'invisibilité sociale."
+    },
+    "mission": {
+      "es": "Analysez la tension entre la rationalisation comptable et la réalité vécue des usagers oubliés par les algorithmes de planification.",
+      "en": "Analysez la tension entre la rationalisation comptable et la réalité vécue des usagers oubliés par les algorithmes de planification."
+    },
+    "targetText": "Dans la vallée de la Haute-Vienne, le conseil régional a récemment célébré le succès éclatant de la ligne 402, une desserte interurbaine reliant le bourg de Saint-Sulpice à la gare TGV. Selon les rapports d'activité présentés par le directeur des opérations, Monsieur Valéry Morel, la ligne affiche un taux de remplissage optimal, justifiant ainsi la suppression des arrêts secondaires jugés sous-utilisés. Pour Morel, la logique est implacable : chaque siège vide est une perte sèche pour le contribuable, et la concentration des flux sur les pôles majeurs permet de garantir la rentabilité du service. Pourtant, derrière cette apparente efficacité se cache une réalité plus sombre. Madame Élise Mercier, une retraitée habitant le hameau des Quatre-Vents, témoigne d'une situation bien différente. Depuis la suppression de l'arrêt de son village, elle doit parcourir quatre kilomètres à pied sur une route départementale dangereuse pour rejoindre le point de ramassage le plus proche. Pour elle, la ligne 402 n'est plus un service public, mais une infrastructure inaccessible. Son cas n'est pas isolé ; il illustre une fracture invisible où les usagers les plus fragiles, incapables de s'adapter aux nouvelles exigences de mobilité, disparaissent tout simplement des statistiques de fréquentation. L'argument de Morel repose sur une tautologie statistique : les gens ne prennent plus le bus parce que l'arrêt n'existe plus, et l'arrêt n'existe plus parce que les gens ne le prennent plus. Cette boucle de rétroaction négative, que les technocrates qualifient pudiquement d'optimisation de réseau, occulte la détresse des populations rurales. En se focalisant sur le rendement immédiat, l'administration oublie que la mobilité est un droit fondamental dont l'exercice ne saurait être conditionné par une rentabilité comptable. Le conflit a atteint son paroxysme lors de la dernière réunion publique, où les élus locaux, pris en étau entre les impératifs budgétaires et la grogne des citoyens, ont peiné à justifier la dégradation du service. Monsieur Morel a réitéré son attachement à la rigueur, arguant qu'il n'est pas du ressort de son service de pallier les carences de l'aménagement du territoire. Cette posture, bien que cohérente avec les directives administratives, révèle une déconnexion profonde entre les chiffres et le terrain. La question qui demeure est celle de la mesure : comment peut-on évaluer la performance d'un réseau si l'on ne comptabilise que les usagers qui ont déjà réussi à y accéder ? Si l'on ne prend en compte que les passagers présents à bord, on ignore par définition ceux qui ont été exclus par la restructuration. Cette omission n'est pas seulement une erreur méthodologique ; c'est un choix politique qui entérine l'abandon des zones périphériques. La tension entre les chiffres et l'humain reste irrésolue, laissant les habitants de Saint-Sulpice dans une incertitude durable. Alors que les rapports continuent de vanter l'efficacité du nouveau maillage, la réalité des chemins de traverse raconte une tout autre histoire, celle d'un territoire qui s'effiloche sous les coups de boutoir d'une gestion comptable aveugle. En fin de compte, la réussite de la ligne 402 ne mesure pas le succès d'un service public, mais le degré d'exclusion que nous sommes prêts à accepter au nom de l'efficacité administrative. L'absence de données sur les exclus ne signifie pas leur absence de besoins, mais souligne au contraire l'échec d'une gouvernance qui confond la gestion des flux avec la gestion des citoyens.\n\nToutefois, une perspective plus nuancée suggère que cette rationalisation, bien que brutale, pourrait paradoxalement constituer un levier de transformation nécessaire pour les territoires enclavés. En concentrant les ressources sur des axes à haute fréquence, la direction espère dégager des marges de manœuvre budgétaires pour financer des solutions alternatives, telles que le transport à la demande ou le covoiturage solidaire, des dispositifs plus agiles et mieux adaptés aux besoins spécifiques des hameaux isolés. Cette mutation, si elle est pilotée avec une réelle volonté politique, ne signifierait pas l'abandon des zones rurales, mais une transition vers une mobilité sur mesure, moins coûteuse et plus réactive que les lignes fixes sous-utilisées. Certes, la période de transition actuelle impose des sacrifices douloureux aux résidents comme Madame Mercier, et la frustration est légitime face à une rupture de service qui précède souvent la mise en œuvre de ces nouvelles solutions. Néanmoins, persister à maintenir un réseau rigide et dispendieux, hérité d'une époque où la démographie rurale était plus dense, reviendrait à épuiser des finances publiques dont la rareté contraint à des choix cornéliens. Le débat ne doit donc pas se limiter à une opposition binaire entre rentabilité et humanisme, mais s'orienter vers une refonte globale de la mobilité rurale, où la technologie numérique permettrait de connecter les besoins individuels sans l'inertie des grands bus vides. Si l'administration parvient à démontrer que ces économies d'échelle réinvesties permettent de déployer des navettes légères, alors le succès de la ligne 402 ne serait plus seulement un indicateur d'exclusion, mais le catalyseur d'un modèle de desserte plus équitable. La véritable épreuve pour la collectivité réside désormais dans la capacité des élus à transformer cette rigueur comptable en une politique d'aménagement innovante. Sans cette vision prospective, la restructuration risque effectivement de n'être qu'une simple cure d'austérité, mais avec une planification rigoureuse, elle pourrait marquer le début d'une ère où le service public ne se mesure plus à la taille des véhicules, mais à la capacité réelle de désenclaver chaque citoyen, quel que soit son lieu de résidence, dans une vallée en pleine mutation.",
+    "wordCount": 890,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "implacable",
+        "lemma": "implacable",
+        "glosses": {
+          "es": "relentless or unyielding",
+          "en": "relentless or unyielding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tautologie",
+        "lemma": "tautologie",
+        "glosses": {
+          "es": "a circular statement",
+          "en": "a circular statement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pudiquement",
+        "lemma": "pudiquement",
+        "glosses": {
+          "es": "modestly or euphemistically",
+          "en": "modestly or euphemistically"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "étau",
+        "lemma": "étau",
+        "glosses": {
+          "es": "a vice or a difficult position",
+          "en": "a vice or a difficult position"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "entérine",
+        "lemma": "entérine",
+        "glosses": {
+          "es": "confirms or ratifies",
+          "en": "confirms or ratifies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "effiloche",
+        "lemma": "effiloche",
+        "glosses": {
+          "es": "frays or unravels",
+          "en": "frays or unravels"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.7,
+      "maxSentenceWords": 61,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le problème central soulevé par l'auteur concernant la gestion des transports ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'exclusion des usagers ruraux par une logique comptable."
+        },
+        {
+          "id": "a2",
+          "text": "La baisse du prix des billets."
+        },
+        {
+          "id": "a3",
+          "text": "Le manque de bus neufs."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "L'argument de Morel repose sur une tautologie statistique : les gens ne prennent plus le bus parce que l'arrêt n'existe plus, et l'arrêt n'existe plus parce que les gens ne le prennent plus.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Madame Mercier ne peut-elle plus utiliser la ligne 402 ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle a déménagé."
+        },
+        {
+          "id": "a2",
+          "text": "L'arrêt a été supprimé."
+        },
+        {
+          "id": "a3",
+          "text": "Le bus est toujours complet."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Depuis la suppression de l'arrêt de son village, elle doit parcourir quatre kilomètres à pied sur une route départementale dangereuse pour rejoindre le point de ramassage le plus proche.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position de Monsieur Morel face à la situation ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il souhaite améliorer l'accès pour tous les citoyens."
+        },
+        {
+          "id": "a2",
+          "text": "Il pense que le service est déjà trop coûteux pour la région."
+        },
+        {
+          "id": "a3",
+          "text": "Il estime que la rentabilité prime sur l'aménagement du territoire."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Monsieur Morel a réitéré son attachement à la rigueur, arguant qu'il n'est pas du ressort de son service de pallier les carences de l'aménagement du territoire.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de ce texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Critiquer l'utilisation des statistiques pour justifier l'exclusion sociale."
+        },
+        {
+          "id": "a2",
+          "text": "Proposer une nouvelle carte des bus pour la région de la Haute-Vienne."
+        },
+        {
+          "id": "a3",
+          "text": "Défendre les méthodes de gestion de Monsieur Valéry Morel."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Si l'on ne prend en compte que les passagers présents à bord, on ignore par définition ceux qui ont été exclus par la restructuration.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton adopté par l'auteur dans cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifférent et neutre."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Optimiste et enthousiaste."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Cette omission n'est pas seulement une erreur méthodologique ; c'est un choix politique qui entérine l'abandon des zones périphériques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'implacable' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Qui est très facile à comprendre."
+        },
+        {
+          "id": "a2",
+          "text": "Qui est totalement illogique."
+        },
+        {
+          "id": "a3",
+          "text": "Qui ne peut être adouci ou évité."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Selon les rapports d'activité présentés par le directeur des opérations, Monsieur Valéry Morel, la ligne affiche un taux de remplissage optimal, justifiant ainsi la suppression des arrêts secondaires jugés sous-utilisés. Pour Morel, la logique est implacable",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une lettre ouverte au conseil régional dans laquelle vous proposez une alternative à la simple rentabilité comptable pour évaluer l'utilité d'une ligne de transport rural.",
+      "en": "Rédigez une lettre ouverte au conseil régional dans laquelle vous proposez une alternative à la simple rentabilité comptable pour évaluer l'utilité d'une ligne de transport rural."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez la tension entre la rationalisation comptable et la réalité vécue des usagers oubliés par les algorithmes de planification.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'angle mort de la mobilité | C2 Reading | WeLearn",
+      "en": "L'angle mort de la mobilité | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une chronique incisive sur les limites des indicateurs de performance dans le transport rural, où l'absence de données devient une forme d'invisibilité sociale.",
+      "en": "Une chronique incisive sur les limites des indicateurs de performance dans le transport rural, où l'absence de données devient une forme d'invisibilité sociale."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-last-bus",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

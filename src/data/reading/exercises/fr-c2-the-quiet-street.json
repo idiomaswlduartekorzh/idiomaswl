@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-quiet-street",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La chorégraphie du silence : une redistribution acoustique",
+      "en": "La chorégraphie du silence : une redistribution acoustique"
+    },
+    "intro": {
+      "es": "Dans cet article, nous explorons les implications éthiques de la gestion du trafic nocturne dans les zones urbaines, en interrogeant la manière dont le calme des quartiers privilégiés est souvent acquis au prix d'une nuisance accrue ailleurs.",
+      "en": "Dans cet article, nous explorons les implications éthiques de la gestion du trafic nocturne dans les zones urbaines, en interrogeant la manière dont le calme des quartiers privilégiés est souvent acquis au prix d'une nuisance accrue ailleurs."
+    },
+    "mission": {
+      "es": "Analysez le texte pour identifier la tension entre la planification urbaine et l'équité sociale, en prêtant une attention particulière aux nuances rhétoriques de l'auteur.",
+      "en": "Analysez le texte pour identifier la tension entre la planification urbaine et l'équité sociale, en prêtant une attention particulière aux nuances rhétoriques de l'auteur."
+    },
+    "targetText": "Le crépuscule descend sur la métropole de Valmont avec une régularité métronomique, signalant non pas le repos, mais une mutation invisible de ses artères. Alors que les derniers rayons s'estompent, le maire adjoint, Étienne Vaugirard, déploie son plan de « pacification sonore » : un dispositif complexe de déviation des flux logistiques nocturnes. L'objectif affiché est noble, presque poétique : rendre aux quartiers résidentiels du centre historique le silence qui leur est dû. Pourtant, derrière cette promesse de sérénité, se dessine une réalité plus prosaïque et, pour tout dire, moins équitable. En observant les cartes de flux, on réalise que le silence n'est jamais une ressource créée, mais simplement déplacée. Le calme octroyé aux avenues arborées du centre est le fruit d'une redistribution acoustique vers les périphéries industrielles, où résident les employés de nuit, ceux-là mêmes dont le travail permet à la ville de fonctionner sans entraves. La notion de paix urbaine devient alors une monnaie d'échange, un luxe que l'on déplace comme on déplacerait des pièces sur un échiquier, au détriment des zones les moins influentes.\n\nPrenez le cas de la rue des Forgerons, une artère modeste située dans la zone de transit nouvellement créée. Depuis l'entrée en vigueur de la directive Vaugirard, le ronronnement incessant des camions de livraison a transformé les nuits des habitants en une épreuve d'endurance. Madame Solange, résidente de longue date, décrit une vibration constante qui fait trembler les vitraux de son modeste foyer. Il ne s'agit pas ici d'une simple gêne passagère, mais d'une restructuration de la vie quotidienne. Le contraste est saisissant : à quelques kilomètres de là, dans le quartier des Ambassadeurs, le silence est devenu une marque de fabrique, un argument de vente pour les agences immobilières. La ville a réussi à sanctuariser le sommeil des uns, tout en exposant les autres à une pollution sonore structurelle. Cette dichotomie, loin d'être un accident de parcours, semble être le moteur même de la gestion urbaine moderne, où la tranquillité est privatisée par le truchement de décisions administratives.\n\nLes partisans de cette politique, parmi lesquels figurent plusieurs urbanistes de renom, soutiennent que la centralisation des flux est une nécessité technique pour réduire les émissions de carbone et optimiser les temps de trajet. Ils arguent que le regroupement des nuisances permet un meilleur contrôle des infrastructures, facilitant l'installation de murs antibruit plus performants. C'est un argument rationnel, empreint de pragmatisme, qui cherche à masquer le coût humain derrière le voile de l'efficacité environnementale. Cependant, cette rationalité occulte une vérité fondamentale : la résilience acoustique n'est pas répartie de manière égale. Les quartiers périphériques, souvent dépourvus des ressources financières nécessaires pour contester ces décisions, subissent de plein fouet le contrecoup de cette centralisation. L'efficacité technique devient alors le paravent d'une injustice sociale, où le bien-être des populations est hiérarchisé selon leur poids politique et leur capacité à se faire entendre dans les salons de la mairie.\n\nIl est fascinant d'observer comment le langage de la « pacification » parvient à occulter cette redistribution des nuisances. En utilisant des termes comme « optimisation des flux » ou « harmonisation urbaine », les autorités transforment une décision arbitraire en une nécessité technique incontestable. La rhétorique devient un outil de neutralisation du débat. Si le silence est une vertu, alors ceux qui le réclament sont dans leur bon droit ; mais si ce silence est volé à d'autres, il perd sa noblesse pour devenir un privilège acquis par l'oppression acoustique. La question qui se pose, et qui reste obstinément sans réponse dans les rapports officiels, est celle de la légitimité d'une telle planification. Peut-on réellement parler de progrès urbain quand celui-ci repose sur une fracture sonore aussi profonde ? La ville, en cherchant à se pacifier, a fini par se diviser davantage, créant des zones de silence et des zones de bruit, comme si le contrat social ne s'appliquait plus aux heures où le soleil est absent.\n\nLa situation a atteint un point de rupture lorsque le collectif des riverains de la rue des Forgerons a tenté de bloquer l'accès aux dépôts logistiques, provoquant une paralysie temporaire des services de livraison. Cet acte de résistance, bien que symbolique, a mis en lumière l'échec du dialogue entre les autorités et les citoyens des zones périphériques. Vaugirard a qualifié cette action d'irresponsable, arguant que le bien commun devait primer sur les intérêts locaux. Cette déclaration, empreinte d'une condescendance manifeste, illustre parfaitement le fossé qui sépare ceux qui décident de la forme de la ville et ceux qui en subissent les contours. La tension demeure, non résolue, suspendue dans l'air nocturne de Valmont. Le silence, tel qu'il est administré, n'est pas une paix, mais une forme d'oubli imposé. Tant que la ville traitera le bruit comme une variable ajustable plutôt que comme un droit fondamental, elle continuera de produire, sous couvert de sérénité, une cacophonie sociale qui ne demande qu'à s'exprimer.",
+    "wordCount": 811,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "métronomique",
+        "lemma": "métronomique",
+        "glosses": {
+          "es": "Regular and precise, like the beat of a metronome.",
+          "en": "Regular and precise, like the beat of a metronome."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prosaïque",
+        "lemma": "prosaïque",
+        "glosses": {
+          "es": "Commonplace, unimaginative, or dull.",
+          "en": "Commonplace, unimaginative, or dull."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanctuariser",
+        "lemma": "sanctuariser",
+        "glosses": {
+          "es": "To protect or treat as untouchable or sacred.",
+          "en": "To protect or treat as untouchable or sacred."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dichotomie",
+        "lemma": "dichotomie",
+        "glosses": {
+          "es": "A division or contrast between two things that are represented as being opposed.",
+          "en": "A division or contrast between two things that are represented as being opposed."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "truchement",
+        "lemma": "truchement",
+        "glosses": {
+          "es": "The means or agency through which something is achieved.",
+          "en": "The means or agency through which something is achieved."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cacophonie",
+        "lemma": "cacophonie",
+        "glosses": {
+          "es": "A harsh, discordant mixture of sounds.",
+          "en": "A harsh, discordant mixture of sounds."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.9,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est l'argument central de l'auteur concernant la politique de gestion sonore de Valmont ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle déplace les nuisances vers des zones vulnérables."
+        },
+        {
+          "id": "a2",
+          "text": "Elle favorise une meilleure efficacité logistique."
+        },
+        {
+          "id": "a3",
+          "text": "Elle cherche à instaurer une égalité acoustique totale."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le calme octroyé aux avenues arborées du centre est le fruit d'une redistribution acoustique vers les périphéries industrielles",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle est la conséquence directe de la directive Vaugirard pour les habitants de la rue des Forgerons ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une réduction du trafic routier."
+        },
+        {
+          "id": "a2",
+          "text": "Une augmentation des vibrations nocturnes."
+        },
+        {
+          "id": "a3",
+          "text": "Une amélioration de la qualité du sommeil."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "le ronronnement incessant des camions de livraison a transformé les nuits des habitants en une épreuve d'endurance.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi l'auteur affirme-t-il que le silence est devenu une « marque de fabrique » dans certains quartiers ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Parce que ces quartiers sont naturellement isolés du bruit."
+        },
+        {
+          "id": "a2",
+          "text": "Parce que les habitants y exigent un silence absolu."
+        },
+        {
+          "id": "a3",
+          "text": "Parce qu'il sert d'argument commercial pour l'immobilier."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "le silence est devenu une marque de fabrique, un argument de vente pour les agences immobilières.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Dans quel but l'auteur mentionne-t-il les urbanistes qui soutiennent la politique de Vaugirard ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour démontrer comment la rationalité masque l'injustice."
+        },
+        {
+          "id": "a2",
+          "text": "Pour valider la nécessité technique de la centralisation."
+        },
+        {
+          "id": "a3",
+          "text": "Pour souligner l'importance de la réduction des émissions."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "C'est un argument rationnel, empreint de pragmatisme, qui cherche à masquer le coût humain derrière le voile de l'efficacité environnementale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton employé par l'auteur pour décrire la réponse de Vaugirard aux protestations ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutre et informatif."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Admiratif et solidaire."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Cette déclaration, empreinte d'une condescendance manifeste, illustre parfaitement le fossé qui sépare ceux qui décident de la forme de la ville",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie l'expression « sous couvert de » dans le contexte du dernier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "En protégeant activement."
+        },
+        {
+          "id": "a2",
+          "text": "En cachant délibérément."
+        },
+        {
+          "id": "a3",
+          "text": "En utilisant comme prétexte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "elle continuera de produire, sous couvert de sérénité, une cacophonie sociale qui ne demande qu'à s'exprimer.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif (200 mots) dans lequel vous proposez une alternative à la gestion sonore urbaine qui ne reposerait pas sur le déplacement des nuisances vers les périphéries.",
+      "en": "Rédigez un court essai argumentatif (200 mots) dans lequel vous proposez une alternative à la gestion sonore urbaine qui ne reposerait pas sur le déplacement des nuisances vers les périphéries."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez le texte pour identifier la tension entre la planification urbaine et l'équité sociale, en prêtant une attention particulière aux nuances rhétoriques de l'auteur.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La chorégraphie du silence : une redistribution acoustique | C2 Reading | WeLearn",
+      "en": "La chorégraphie du silence : une redistribution acoustique | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans cet article, nous explorons les implications éthiques de la gestion du trafic nocturne dans les zones urbaines, en interrogeant la manière dont le calme des quartiers privilégiés est souvent acquis au prix d'une nuisance accrue ailleurs.",
+      "en": "Dans cet article, nous explorons les implications éthiques de la gestion du trafic nocturne dans les zones urbaines, en interrogeant la manière dont le calme des quartiers privilégiés est souvent acquis au prix d'une nuisance accrue ailleurs."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

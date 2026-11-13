@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-school-garden",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "학교 정원 프로젝트와 보이지 않는 장벽",
+      "en": "학교 정원 프로젝트와 보이지 않는 장벽"
+    },
+    "intro": {
+      "es": "학교가 야심 차게 추진한 '공동체 정원' 사업이 오히려 학부모들 사이의 보이지 않는 갈등을 유발하는 과정을 다룬 글입니다.",
+      "en": "학교가 야심 차게 추진한 '공동체 정원' 사업이 오히려 학부모들 사이의 보이지 않는 갈등을 유발하는 과정을 다룬 글입니다."
+    },
+    "mission": {
+      "es": "글의 내용을 파악하고, 학교 측의 이상주의적 접근이 현실적인 불평등을 어떻게 간과했는지 분석하십시오.",
+      "en": "글의 내용을 파악하고, 학교 측의 이상주의적 접근이 현실적인 불평등을 어떻게 간과했는지 분석하십시오."
+    },
+    "targetText": "한빛초등학교의 김 교장은 지난달 학교 뒤편 유휴 부지를 활용한 '모두의 정원' 프로젝트를 야심 차게 발표했다. 그는 이 공간이 학생들에게는 생태 교육의 장을, 학부모들에게는 소통의 창구를 제공할 것이라며 포부를 밝혔다. 학교 측은 정원 조성과 관리의 핵심 동력으로 학부모 자원봉사단을 지목했다. 주말마다 정기적인 잡초 제거와 묘목 관리를 담당할 인력을 모집한다는 공고문에는 '누구나 참여 가능한 열린 공간'이라는 문구가 강조되었다. 그러나 이 프로젝트는 시작부터 미묘한 불협화음을 낳았다. 맞벌이 부부인 박 씨는 학교가 보낸 가정통신문을 보고 깊은 한숨을 내쉬었다. 토요일 오전마다 진행되는 봉사 활동은 주말에도 근무해야 하는 그들에게는 물리적으로 불가능한 과제였다. 김 교장은 정원을 가꾸는 일이 공동체 의식을 고취하는 숭고한 노동이라고 주장했지만, 그 숭고함의 대가는 오직 시간적 여유가 있는 가정만이 지불할 수 있는 특권처럼 보였다. 정원 한구석에는 학부모들이 기증한 화분들이 줄지어 놓였는데, 이는 봉사에 참여할 수 없는 가정에게는 무언의 압박으로 다가왔다. 봉사단에 이름을 올리지 못한 학부모들은 학교 행사에 소극적이라는 낙인이 찍힐까 봐 전전긍긍했다. 결국 정원은 평등을 지향한다는 명분 아래, 정작 참여의 기회조차 균등하게 배분하지 못하는 폐쇄적인 공간으로 변질되고 말았다. 어느 날, 학교 측은 정원 관리 미흡을 이유로 다시 한번 학부모들의 적극적인 협조를 당부하는 메시지를 보냈다. 이를 접한 박 씨는 정원 입구에 놓인 '누구에게나 열려 있습니다'라는 팻말을 응시하며 씁쓸한 미소를 지었다. 학교는 정원의 꽃들이 자라나는 속도에는 세심한 관심을 기울였지만, 그 꽃들을 가꾸기 위해 필요한 시간조차 평등하게 분배되지 않는다는 사실에는 무관심했다. 정원은 화려하게 피어났으나, 그 이면에는 소외된 학부모들의 침묵이 두껍게 쌓여갔다. 학교가 지향하는 공동체는 과연 누구를 위한 것인가. 물리적인 공간의 개방이 곧 구성원의 포용을 의미하는 것은 아니다. 김 교장이 꿈꾸던 화합의 정원은 결국 현실의 벽에 부딪혀 그 본래의 의미를 잃어버린 채, 오늘도 묵묵히 자리를 지키고 있을 뿐이다. 정원의 꽃은 아름답지만, 그 꽃을 바라보는 학부모들의 시선은 이전보다 훨씬 더 차갑고 냉담해졌다.\n\n이러한 갈등은 단순히 정원 관리의 문제를 넘어 학교와 학부모 사이의 신뢰 관계가 어떻게 균열될 수 있는지를 여실히 보여주는 사례가 되었다. 김 교장이 추진한 프로젝트는 표면적으로는 교육적 가치와 생태적 감수성을 강조했지만, 그 내면에는 경제적 시간적 여유를 가진 계층의 가치관만이 정당성을 획득하는 구조적 편향성이 자리 잡고 있었다. 정원의 화려한 꽃들이 만개할수록 봉사 활동에 참여하지 못한 학부모들의 소외감은 더욱 깊어졌고, 이는 학교 행사에 대한 무관심이나 냉소적인 태도로 이어지며 학교 공동체의 결속력을 약화하는 결과를 초래했다. 결국 학교 측이 강조했던 자발적인 참여와 공동체 의식은 오히려 학부모들에게는 감당하기 어려운 숙제이자 보이지 않는 계급의 척도로 작용하게 된 것이다. 진정한 의미의 교육적 공간은 물리적인 환경 조성보다 구성원 개개인의 상황을 배려하고 포용하는 유연한 운영 철학에서 시작되어야 함을 이 사례는 역설적으로 증명하고 있다. 만약 학교가 진정으로 모두를 위한 정원을 꿈꿨다면 봉사 활동의 방식을 다양화하거나 시간적 제약이 있는 가정을 위한 대안을 마련했어야 했다. 그렇지 못한 채 일방적인 참여만을 요구하는 현재의 방식은 결국 정원을 소통의 공간이 아닌 단절과 갈등의 상징물로 고착화할 뿐이다. 정원을 가꾸는 노동이 누군가에게는 즐거움이 되고 누군가에게는 마음의 짐이 되는 현실 속에서, 학교가 지향해야 할 가치는 과연 무엇인지 근본적인 질문을 던져야 할 시점이다.",
+    "wordCount": 436,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "유휴",
+        "lemma": "유휴",
+        "glosses": {
+          "es": "idle or unused",
+          "en": "idle or unused"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "불협화음",
+        "lemma": "불협화음",
+        "glosses": {
+          "es": "dissonance or discord",
+          "en": "dissonance or discord"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "숭고한",
+        "lemma": "숭고한",
+        "glosses": {
+          "es": "sublime or noble",
+          "en": "sublime or noble"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전전긍긍",
+        "lemma": "전전긍긍",
+        "glosses": {
+          "es": "trembling with fear",
+          "en": "trembling with fear"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "변질",
+        "lemma": "변질",
+        "glosses": {
+          "es": "degeneration or corruption",
+          "en": "degeneration or corruption"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "냉담해졌다",
+        "lemma": "냉담해졌다",
+        "glosses": {
+          "es": "became cold or indifferent",
+          "en": "became cold or indifferent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.1,
+      "maxSentenceWords": 26,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 전달하고자 하는 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공동체 사업의 불평등한 구조"
+        },
+        {
+          "id": "a2",
+          "text": "학교 정원의 교육적 가치"
+        },
+        {
+          "id": "a3",
+          "text": "학부모 참여의 중요성"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "정원은 평등을 지향한다는 명분 아래, 정작 참여의 기회조차 균등하게 배분하지 못하는 폐쇄적인 공간으로 변질되고 말았다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박 씨가 학교의 정원 프로젝트를 부정적으로 느낀 주된 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "정원 관리가 너무 힘들어서"
+        },
+        {
+          "id": "a2",
+          "text": "봉사 시간이 맞벌이 가구에 부적합해서"
+        },
+        {
+          "id": "a3",
+          "text": "화분 기증 비용이 너무 비싸서"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "토요일 오전마다 진행되는 봉사 활동은 주말에도 근무해야 하는 그들에게는 물리적으로 불가능한 과제였다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "정원 입구의 팻말을 보고 박 씨가 씁쓸한 미소를 지은 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "정원의 꽃이 시들어 있었기 때문에"
+        },
+        {
+          "id": "a2",
+          "text": "학교가 보낸 메시지가 너무 길어서"
+        },
+        {
+          "id": "a3",
+          "text": "팻말의 문구와 현실의 괴리 때문"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "정원 입구에 놓인 '누구에게나 열려 있습니다'라는 팻말을 응시하며 씁쓸한 미소를 지었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 통해 비판하고자 하는 대상은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학교의 일방적인 행정"
+        },
+        {
+          "id": "a2",
+          "text": "학부모들의 이기주의"
+        },
+        {
+          "id": "a3",
+          "text": "정원 가꾸기의 비효율성"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "학교는 정원의 꽃들이 자라나는 속도에는 세심한 관심을 기울였지만, 그 꽃들을 가꾸기 위해 필요한 시간조차 평등하게 분배되지 않는다는 사실에는 무관심했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글 전반에 흐르는 저자의 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적임"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적임"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "학교가 지향하는 공동체는 과연 누구를 위한 것인가.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'숭고한'의 의미와 가장 가까운 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "매우 가치 있고 중요함"
+        },
+        {
+          "id": "a2",
+          "text": "매우 힘들고 어려운 노동"
+        },
+        {
+          "id": "a3",
+          "text": "매우 고귀하고 거룩함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "김 교장은 정원을 가꾸는 일이 공동체 의식을 고취하는 숭고한 노동이라고 주장했지만",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "학교 정원 프로젝트와 같은 공동체 사업이 모든 구성원을 진정으로 포용하기 위해 학교 측이 고려해야 할 구체적인 대안을 세 가지 이상 제시하여 서술하십시오.",
+      "en": "학교 정원 프로젝트와 같은 공동체 사업이 모든 구성원을 진정으로 포용하기 위해 학교 측이 고려해야 할 구체적인 대안을 세 가지 이상 제시하여 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "글의 내용을 파악하고, 학교 측의 이상주의적 접근이 현실적인 불평등을 어떻게 간과했는지 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "학교 정원 프로젝트와 보이지 않는 장벽 | C1 Reading | WeLearn",
+      "en": "학교 정원 프로젝트와 보이지 않는 장벽 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "학교가 야심 차게 추진한 '공동체 정원' 사업이 오히려 학부모들 사이의 보이지 않는 갈등을 유발하는 과정을 다룬 글입니다.",
+      "en": "학교가 야심 차게 추진한 '공동체 정원' 사업이 오히려 학부모들 사이의 보이지 않는 갈등을 유발하는 과정을 다룬 글입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

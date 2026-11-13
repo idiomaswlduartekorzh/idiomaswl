@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-a-room-for-repairs",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de l'autonomie : le paradoxe du Repair Café de Saint-Sulpice",
+      "en": "L'illusion de l'autonomie : le paradoxe du Repair Café de Saint-Sulpice"
+    },
+    "intro": {
+      "es": "Une analyse critique de la culture de la réparation, explorant les dynamiques invisibles qui sous-tendent nos efforts pour prolonger la durée de vie des objets.",
+      "en": "Une analyse critique de la culture de la réparation, explorant les dynamiques invisibles qui sous-tendent nos efforts pour prolonger la durée de vie des objets."
+    },
+    "mission": {
+      "es": "Analyser la tension entre l'idéal d'autosuffisance et la dépendance structurelle au travail de soin non rémunéré au sein d'un atelier de réparation communautaire.",
+      "en": "Analyser la tension entre l'idéal d'autosuffisance et la dépendance structurelle au travail de soin non rémunéré au sein d'un atelier de réparation communautaire."
+    },
+    "targetText": "Le Repair Café de Saint-Sulpice, niché dans une ancienne menuiserie reconvertie, se présente comme un bastion de la résistance contre l'obsolescence programmée. Sous les néons vacillants, une dizaine de bénévoles, armés de tournevis et de multimètres, s'activent pour redonner vie à des grille-pains moribonds et des lampes défaillantes. L'ambiance y est studieuse, presque monacale, teintée de cette satisfaction puritaine propre à ceux qui réparent plutôt que de remplacer. Pourtant, derrière cette façade de vertu écologique et d'autonomie retrouvée, une réalité plus complexe se dessine. L'invité d'honneur de la soirée, Monsieur Morel, un ingénieur à la retraite dont la rigueur technique est légendaire dans le quartier, s'acharnait sur un amplificateur des années soixante-dix. À ses côtés, Madame Valérie, une habituée, tentait de recoudre la doublure d'un manteau de laine. C'est ici que le bât blesse : le succès de l'atelier ne repose pas sur une compétence universellement partagée, mais sur la concentration de savoir-faire techniques entre les mains d'une élite locale, créant une asymétrie flagrante entre ceux qui possèdent l'outil et ceux qui attendent, passifs, la délivrance de leur objet. La rhétorique de l'autonomie, si chère aux organisateurs, masque mal une dépendance nouvelle : celle du profane envers l'expert bienveillant. La tension est devenue palpable lorsqu'un jeune étudiant, venu avec un ordinateur portable récalcitrant, a été gentiment éconduit par Monsieur Morel, faute de pièces de rechange spécifiques. Cet incident a révélé la fragilité du modèle : sans un accès constant à des ressources matérielles et à une main-d'œuvre spécialisée, l'autonomie vantée n'est qu'une illusion temporaire. Le travail de Monsieur Morel n'est pas seulement technique ; il est un travail de soin, une forme de labeur invisible qui absorbe les frustrations des usagers tout en maintenant une hiérarchie tacite. Ce n'est pas un transfert de compétences qui s'opère, mais une prestation de service déguisée en éducation populaire. Le dénouement de la soirée fut marqué par le départ précipité de Madame Valérie, son manteau à peine réparé, laissant derrière elle une traînée de fils et de poussière. Elle n'avait pas appris à recoudre ; elle avait simplement bénéficié de la patience d'une bénévole, une autre retraitée nommée Élise, dont le travail n'a jamais été mentionné dans le bilan de la soirée. Élise, penchée sur sa machine à coudre depuis trois heures, n'a reçu aucun remerciement formel, son effort étant perçu comme le prolongement naturel de sa présence. Ce silence institutionnel sur le travail de care est le véritable angle mort du Repair Café. En valorisant l'objet réparé au détriment de la dynamique humaine qui le permet, l'atelier reproduit les structures qu'il prétend combattre. L'autonomie promise est en réalité une forme de délégation de la responsabilité de la maintenance vers des individus dont le temps est considéré comme disponible, donc dénué de valeur marchande. En fin de compte, le Repair Café de Saint-Sulpice ne répare pas seulement des objets ; il répare une conscience collective en mal de sens, tout en occultant les coûts humains, invisibles et non compensés, qui permettent à cette petite utopie de perdurer. Si l'intention est louable, l'exécution trahit une nostalgie pour une société de la débrouille qui, historiquement, a toujours reposé sur le travail domestique non reconnu des femmes. La question demeure : peut-on réellement parler d'émancipation quand la réparation d'un grille-pain exige le sacrifice du temps d'autrui ?\n\nCette dynamique interroge fondamentalement la pérennité d'un modèle qui, sous couvert de sobriété, institutionnalise une forme de précarité relationnelle. En érigeant le bénévolat en pilier structurel, le Repair Café de Saint-Sulpice finit par naturaliser l'exploitation d'une main-d'œuvre invisible, majoritairement féminine, dont le dévouement est perçu comme une ressource inépuisable et gratuite. Cette invisibilisation des mécanismes de soin, essentiels à la survie de l'atelier, occulte une fracture sociétale plus profonde : celle qui sépare les détenteurs de savoirs techniques — souvent valorisés par une culture héritée de l'ingénierie masculine — des praticiens du quotidien, dont les compétences, bien que vitales, sont reléguées au rang de tâches domestiques subalternes. Dès lors, l'utopie de la réparation se mue en un théâtre de reproduction sociale où les hiérarchies de genre et de classe se cristallisent, loin des discours égalitaires affichés. L'objet sauvé de la décharge devient alors le trophée d'une méritocratie tronquée, tandis que le processus de réparation, au lieu de favoriser une véritable appropriation des savoirs, renforce une passivité consumériste chez l'usager, désormais simple bénéficiaire d'une charité technique. Si l'on pousse cette logique jusqu'à son terme, le Repair Café risque de devenir le miroir d'une société incapable de repenser la valeur du travail humain dans sa globalité, préférant le fétichisme de la matière à la reconnaissance de l'effort. En négligeant de rémunérer ou de valoriser explicitement ces heures de labeur, l'organisation fragilise son propre socle éthique, transformant la solidarité en un service de dépannage ponctuel qui, paradoxalement, ne remet jamais en cause les chaînes de production industrielle mondialisées. Cette impasse souligne une contradiction majeure : comment prétendre à une transition écologique durable si celle-ci repose sur l'épuisement silencieux de ceux qui en sont les petites mains ? L'émancipation réelle exigerait une refonte radicale des rapports de force au sein même de ces espaces, passant par une reconnaissance formelle des compétences de chacun, sous peine de voir ces lieux de résistance se transformer en simples rustines sur le tissu déchiré d'un système qui, lui, continue de prospérer sur l'obsolescence, qu'elle soit matérielle ou humaine.",
+    "wordCount": 890,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "obsolescence",
+        "lemma": "obsolescence",
+        "glosses": {
+          "es": "the process of becoming outdated or no longer used",
+          "en": "the process of becoming outdated or no longer used"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "monacale",
+        "lemma": "monacale",
+        "glosses": {
+          "es": "resembling the austere lifestyle of monks",
+          "en": "resembling the austere lifestyle of monks"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asymétrie",
+        "lemma": "asymétrie",
+        "glosses": {
+          "es": "a lack of equality or equivalence between parts",
+          "en": "a lack of equality or equivalence between parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "profane",
+        "lemma": "profane",
+        "glosses": {
+          "es": "a person who is not initiated or lacks specialized knowledge",
+          "en": "a person who is not initiated or lacks specialized knowledge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "labeur",
+        "lemma": "labeur",
+        "glosses": {
+          "es": "hard, tiring work",
+          "en": "hard, tiring work"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "occultant",
+        "lemma": "occultant",
+        "glosses": {
+          "es": "hiding or concealing from view",
+          "en": "hiding or concealing from view"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 29.7,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le message central de cet article concernant le Repair Café ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il dissimule une dépendance au travail invisible."
+        },
+        {
+          "id": "a2",
+          "text": "C'est une initiative essentielle pour l'écologie."
+        },
+        {
+          "id": "a3",
+          "text": "Il favorise l'autonomie technique de tous les participants."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En valorisant l'objet réparé au détriment de la dynamique humaine qui le permet, l'atelier reproduit les structures qu'il prétend combattre.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi l'étudiant avec son ordinateur n'a-t-il pas été aidé ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il n'avait pas pris rendez-vous."
+        },
+        {
+          "id": "a2",
+          "text": "Il manquait des pièces spécifiques."
+        },
+        {
+          "id": "a3",
+          "text": "Monsieur Morel était trop fatigué."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "un jeune étudiant, venu avec un ordinateur portable récalcitrant, a été gentiment éconduit par Monsieur Morel, faute de pièces de rechange spécifiques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère l'auteur sur le rôle d'Élise ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle souhaite devenir une professionnelle de la couture."
+        },
+        {
+          "id": "a2",
+          "text": "Elle est la véritable organisatrice de l'événement."
+        },
+        {
+          "id": "a3",
+          "text": "Son travail est sous-estimé et non reconnu."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Élise, penchée sur sa machine à coudre depuis trois heures, n'a reçu aucun remerciement formel, son effort étant perçu comme le prolongement naturel de sa présence.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quelle est l'intention de l'auteur en mentionnant le passé historique du travail domestique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour souligner que le travail des femmes est souvent ignoré."
+        },
+        {
+          "id": "a2",
+          "text": "Pour critiquer la nostalgie de la débrouille."
+        },
+        {
+          "id": "a3",
+          "text": "Pour démontrer que la réparation est une activité purement féminine."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "l'exécution trahit une nostalgie pour une société de la débrouille qui, historiquement, a toujours reposé sur le travail domestique non reconnu des femmes.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de l'auteur tout au long du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Enthousiaste et encourageant."
+        },
+        {
+          "id": "a2",
+          "text": "Sceptique et analytique."
+        },
+        {
+          "id": "a3",
+          "text": "Colérique et accusateur."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Pourtant, derrière cette façade de vertu écologique et d'autonomie retrouvée, une réalité plus complexe se dessine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'profane' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une personne malpolie."
+        },
+        {
+          "id": "a2",
+          "text": "Un bénévole qui travaille gratuitement."
+        },
+        {
+          "id": "a3",
+          "text": "Un individu sans expertise technique."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La rhétorique de l'autonomie, si chère aux organisateurs, masque mal une dépendance nouvelle : celle du profane envers l'expert bienveillant.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 200 mots dans laquelle vous défendez ou contredisez la thèse de l'auteur selon laquelle les Repair Cafés ne sont que des services déguisés, en utilisant des exemples concrets de votre propre expérience ou observation.",
+      "en": "Rédigez une réponse de 200 mots dans laquelle vous défendez ou contredisez la thèse de l'auteur selon laquelle les Repair Cafés ne sont que des services déguisés, en utilisant des exemples concrets de votre propre expérience ou observation."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser la tension entre l'idéal d'autosuffisance et la dépendance structurelle au travail de soin non rémunéré au sein d'un atelier de réparation communautaire.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de l'autonomie : le paradoxe du Repair Café de Saint-Sulpice | C2 Reading | WeLearn",
+      "en": "L'illusion de l'autonomie : le paradoxe du Repair Café de Saint-Sulpice | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une analyse critique de la culture de la réparation, explorant les dynamiques invisibles qui sous-tendent nos efforts pour prolonger la durée de vie des objets.",
+      "en": "Une analyse critique de la culture de la réparation, explorant les dynamiques invisibles qui sous-tendent nos efforts pour prolonger la durée de vie des objets."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

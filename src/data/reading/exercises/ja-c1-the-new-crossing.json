@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-new-crossing",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「安全」の欺瞞：北条交差点の不可解な報告書",
+      "en": "「安全」の欺瞞：北条交差点の不可解な報告書"
+    },
+    "intro": {
+      "es": "交通安全対策の功績を巡る公式報告書の裏側に潜む、統計的作為と行政の論理についての分析的読解演習。",
+      "en": "交通安全対策の功績を巡る公式報告書の裏側に潜む、統計的作為と行政の論理についての分析的読解演習。"
+    },
+    "mission": {
+      "es": "この文章を読み、報告書の記述と現実の乖離、そして行政が意図的に隠蔽した変数について考察せよ。",
+      "en": "この文章を読み、報告書の記述と現実の乖離、そして行政が意図的に隠蔽した変数について考察せよ。"
+    },
+    "targetText": "北条市交通局が先月発表した「歩行者横断安全向上に関する中間報告」は、市内北条交差点に新設された信号機付き横断歩道が、歩行者の事故件数を劇的に減少させたと結論づけている。報告書によれば、このインフラ整備は地域住民の安全意識の向上と相まって、過去数年間の負の連鎖を断ち切る決定的な要因となったとされる。交通局の広報官である佐山氏は、記者会見で「物理的な障壁の設置こそが、無謀な運転を抑制する唯一の鍵である」と強調し、今回の成功を市全体の交通政策のモデルケースとして喧伝した。しかし、この報告書には重要な変数が意図的に欠落していることが、独立系交通研究グループの調査で明らかになった。実は、新信号機の稼働と同時に、当該エリアの制限速度が時速四十キロから三十キロへと大幅に引き下げられていたのである。交通局側は、この制限速度の変更を「信号機の設置に伴う付随的な調整」と片付け、事故減少の主因をあくまでインフラの更新に帰結させようとしている。この姿勢は、単なる行政の怠慢なのか、それとも特定の政策的成果を強調するための作為的な情報操作なのかという議論を巻き起こしている。実際、現場のタクシー運転手である高橋氏は、「信号機が設置される以前から、制限速度の変更によって車の流れは既に緩やかになっていた」と証言しており、報告書の論理的整合性に疑念を呈している。交通局のデータは、速度規制という介入を無視することで、インフラ整備の費用対効果を過大に見積もるという、行政特有の「成功の演出」を行っている疑いが強い。この問題の核心は、単に事故が減ったという結果の正当性ではなく、その因果関係をどのように定義し、市民に対してどの情報を開示するかという透明性の欠如にある。当局が提示する「安全」という価値は、都合の良い統計的解釈によって構築された虚構である可能性を否定できない。住民側は、制限速度の厳格化という実質的な介入なしに、信号機単体で同様の抑止効果が得られたのかという根本的な問いを突きつけている。しかし、交通局は依然として、自らの報告書が「客観的な事実」に基づいていると主張し、速度規制の影響を詳細に分析した追加調査の実施を拒否し続けている。この膠着状態は、行政と市民の間の信頼関係を損なうだけでなく、今後の交通政策における科学的な意思決定プロセスそのものをも危うくしている。結局のところ、北条交差点の事例は、政策の成功を誇示するために、複雑な現実を単純な因果関係に還元しようとする権力側の傲慢さを露呈させているのである。真の安全とは、統計上の数字を並べることではなく、その数字がどのような条件下で導き出されたのかというプロセスを誠実に語ることから始まるはずである。当局が沈黙を守り続ける限り、この交差点は安全な場所であると同時に、行政の欺瞞が交差する場所として、住民の記憶に刻まれ続けることになるだろう。\n\nさらに懸念すべきは、この成功体験が市全域の交通施策に安易に横展開されようとしている点である。当局は、今回の教訓を検証することなく、同様の信号機設置を主要幹線道路へ拡大する計画を既に公表した。もし速度規制という重要な変数を無視したままインフラ投資が強行されるならば、期待された事故抑止効果は得られず、かえって慢性的な交通渋滞を招き、経済的損失を増大させる恐れがある。科学的根拠を欠いた政策決定は、市民の安全を担保するどころか、行政への不信感を深め、将来的な交通安全運動の足並みを乱す結果を招きかねない。真に持続可能な都市環境を構築するためには、都合のよい成功の物語を再生産するのではなく、複雑な現実を直視し、多角的な視点から政策を再評価する姿勢が不可欠である。北条市の事例は、行政が自らの過ちを認め、透明性を確保することの重みを、皮肉にも最も痛烈な形で社会に問いかけている。",
+    "wordCount": 1488,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "喧伝",
+        "lemma": "喧伝",
+        "glosses": {
+          "es": "publicizing or trumpeting",
+          "en": "publicizing or trumpeting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "欠落",
+        "lemma": "欠落",
+        "glosses": {
+          "es": "omission or lack",
+          "en": "omission or lack"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "帰結",
+        "lemma": "帰結",
+        "glosses": {
+          "es": "consequence or conclusion",
+          "en": "consequence or conclusion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疑念",
+        "lemma": "疑念",
+        "glosses": {
+          "es": "doubt or suspicion",
+          "en": "doubt or suspicion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "膠着状態",
+        "lemma": "膠着状態",
+        "glosses": {
+          "es": "deadlock or stalemate",
+          "en": "deadlock or stalemate"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "欺瞞",
+        "lemma": "欺瞞",
+        "glosses": {
+          "es": "deception or trickery",
+          "en": "deception or trickery"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 64.7,
+      "maxSentenceWords": 85,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:31:33.594Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本記事が最も強く批判しているのは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "交通局の報告書における不誠実な情報操作"
+        },
+        {
+          "id": "a2",
+          "text": "信号機の設置が不十分であること"
+        },
+        {
+          "id": "a3",
+          "text": "制限速度の引き下げに対する市民の不満"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "交通局のデータは、速度規制という介入を無視することで、インフラ整備の費用対効果を過大に見積もるという、行政特有の「成功の演出」を行っている疑いが強い。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "交通局が報告書で意図的に隠蔽した事実は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "信号機の設置費用"
+        },
+        {
+          "id": "a2",
+          "text": "制限速度の変更"
+        },
+        {
+          "id": "a3",
+          "text": "事故の発生件数"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "実は、新信号機の稼働と同時に、当該エリアの制限速度が時速四十キロから三十キロへと大幅に引き下げられていたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "高橋氏の証言が示唆する内容は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "信号機が設置されたことで交通渋滞が悪化したこと"
+        },
+        {
+          "id": "a2",
+          "text": "タクシー運転手は制限速度の変更に反対していること"
+        },
+        {
+          "id": "a3",
+          "text": "信号機よりも速度規制が事故減少に寄与した可能性"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "「信号機が設置される以前から、制限速度の変更によって車の流れは既に緩やかになっていた」と証言しており、報告書の論理的整合性に疑念を呈している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者が「真の安全」について言及した目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "統計の透明性を重視する姿勢を示すため"
+        },
+        {
+          "id": "a2",
+          "text": "信号機の完全な廃止を求めて"
+        },
+        {
+          "id": "a3",
+          "text": "新たな交通ルールの策定を促すため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "真の安全とは、統計上の数字を並べることではなく、その数字がどのような条件下で導き出されたのかというプロセスを誠実に語ることから始まるはずである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本記事の全体的な筆致として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政の功績を称える賞賛のトーン"
+        },
+        {
+          "id": "a2",
+          "text": "行政の姿勢を厳しく問い質す批判的なトーン"
+        },
+        {
+          "id": "a3",
+          "text": "客観的事実を淡々と並べる中立的なトーン"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "結局のところ、北条交差点の事例は、政策の成功を誇示するために、複雑な現実を単純な因果関係に還元しようとする権力側の傲慢さを露呈させているのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「膠着状態」という言葉が文脈の中で意味するものとして正しいものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "交通渋滞が激しく動かない状態"
+        },
+        {
+          "id": "a2",
+          "text": "信号機が故障して作動しない状態"
+        },
+        {
+          "id": "a3",
+          "text": "議論が停滞し、解決策が見出せない状況"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この膠着状態は、行政と市民の間の信頼関係を損なうだけでなく、今後の交通政策における科学的な意思決定プロセスそのものをも危うくしている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "北条市交通局の広報担当者になりきり、独立系研究グループの指摘に対する反論声明を四百字以内で作成せよ。その際、報告書の正当性を主張しつつ、制限速度の変更についてはどのような論理で正当化するかを明確にすること。",
+      "en": "北条市交通局の広報担当者になりきり、独立系研究グループの指摘に対する反論声明を四百字以内で作成せよ。その際、報告書の正当性を主張しつつ、制限速度の変更についてはどのような論理で正当化するかを明確にすること。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "この文章を読み、報告書の記述と現実の乖離、そして行政が意図的に隠蔽した変数について考察せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:31:33.594Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「安全」の欺瞞：北条交差点の不可解な報告書 | C1 Reading | WeLearn",
+      "en": "「安全」の欺瞞：北条交差点の不可解な報告書 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "交通安全対策の功績を巡る公式報告書の裏側に潜む、統計的作為と行政の論理についての分析的読解演習。",
+      "en": "交通安全対策の功績を巡る公式報告書の裏側に潜む、統計的作為と行政の論理についての分析的読解演習。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:31:33.594Z"
+  }
+}

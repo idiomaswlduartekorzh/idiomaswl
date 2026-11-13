@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-food-label",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "식품 라벨의 미학: 소비자의 죄책감과 실용성 사이",
+      "en": "식품 라벨의 미학: 소비자의 죄책감과 실용성 사이"
+    },
+    "intro": {
+      "es": "두 가지 상반된 식품 라벨링 방식을 비교하며, 소비자의 행동 변화를 유도하는 언어적 전략과 그 이면에 숨겨진 윤리적 딜레마를 분석하는 비평문입니다.",
+      "en": "두 가지 상반된 식품 라벨링 방식을 비교하며, 소비자의 행동 변화를 유도하는 언어적 전략과 그 이면에 숨겨진 윤리적 딜레마를 분석하는 비평문입니다."
+    },
+    "mission": {
+      "es": "본문을 읽고 라벨링 언어가 소비자의 심리에 미치는 영향과 그에 따른 사회적 책임에 대해 논의하시오.",
+      "en": "본문을 읽고 라벨링 언어가 소비자의 심리에 미치는 영향과 그에 따른 사회적 책임에 대해 논의하시오."
+    },
+    "targetText": "최근 식료품점의 진열대에는 '최상의 맛을 위한 기한'과 '지구 보호를 위한 권장 소비 기한'이라는 두 가지 라벨이 공존하며 소비자들의 선택을 기다리고 있다. 미식가이자 환경 활동가인 김민준 씨는 최근 자신의 블로그를 통해 이 두 라벨이 동일한 물리적 상태를 지칭함에도 불구하고 소비자의 심리에 정반대의 파장을 일으킨다는 점을 날카롭게 지적했다. 첫 번째 라벨은 개인의 미각적 만족을 우선시하며, 소비자가 제품을 폐기할 때 느끼는 주관적인 죄책감을 완화해 주는 역할을 한다. 반면, 두 번째 라벨은 환경적 책임을 강조하며 소비자로 하여금 자신의 선택이 지구의 지속 가능성에 직접적인 영향을 미친다는 압박을 느끼게 만든다. 김민준 씨는 이러한 언어적 선택이 단순히 정보 전달을 넘어 소비자의 도덕적 정체성을 규정하려 한다고 분석한다. 그는 특정 브랜드가 후자의 라벨을 도입한 이후, 폐기율이 감소했음에도 불구하고 고객들의 재방문율이 유의미하게 하락했다는 점을 주목했다. 즉, 소비자는 자신의 식탁에서 도덕적 훈계를 듣기보다는 편안한 소비 경험을 선호한다는 사실이 드러난 것이다. 흥미로운 지점은 이 두 라벨이 서로 다른 타겟층을 공략하고 있다는 점이다. 전자는 효율성을 중시하는 현대인에게 심리적 면죄부를 제공하며, 후자는 가치 소비를 지향하는 집단에게 연대감을 부여한다. 그러나 김민준 씨는 이러한 이분법적 접근이 결국 소비자의 자율성을 제한하고, 기업이 환경 문제를 개인의 실천 영역으로만 전가하는 전략적 도구로 악용될 수 있음을 경고한다. 그는 라벨이 단순히 정보를 전달하는 도구인지, 아니면 특정 행동을 강제하는 심리적 기제인지에 대한 근본적인 질문을 던진다. 리뷰의 결론부에서 그는 라벨의 문구가 소비자의 행동을 변화시키는 강력한 힘을 가지고 있음을 인정하면서도, 그 변화가 자발적인 성찰에서 비롯된 것인지 아니면 언어적 조작에 의한 반응인지에 대해 의문을 제기한다. 결국 우리가 마주한 것은 식품의 신선도가 아닌, 라벨 뒤에 숨겨진 기업의 언어적 전략이다. 소비자는 오늘도 진열대 앞에서 자신의 취향과 윤리 사이에서 위태로운 줄타기를 계속하고 있다. 이러한 상황 속에서 진정한 의미의 소비 주체는 누구인가 하는 의문은 여전히 해소되지 않은 채 남겨져 있다.\n\n더욱이 이러한 언어적 이분법은 소비자의 일상적인 구매 행위를 단순한 상품 선택에서 복잡한 윤리적 시험대로 변질시키고 있으며 이는 결과적으로 소비자들로 하여금 기업이 설정한 프레임 안에서만 사고하도록 강요하는 부작용을 낳고 있다. 만약 환경 보호라는 숭고한 가치가 마케팅의 수단으로 전락한다면 소비자는 진정한 생태적 실천의 본질을 망각한 채 단지 죄책감을 덜어내기 위한 수단으로 라벨을 소비하게 될 위험이 크다. 결국 기업은 라벨을 통해 소비자의 도덕적 우월감을 자극하여 충성도를 확보하려 하지만 이는 장기적으로 소비자의 피로감을 누적시켜 환경 문제에 대한 무관심이나 반발심을 초래할 가능성을 배제할 수 없다. 진정한 지속 가능성은 소비자의 심리를 교묘하게 파고드는 언어적 조작이 아니라 제품 생산 과정에서의 투명한 정보 공개와 근본적인 유통 구조의 개선을 통해 실현되어야 한다. 소비자가 진열대 앞에서 느끼는 심리적 갈등은 기업이 스스로의 책임을 개인에게 교묘하게 전가하고 있다는 명백한 증거이며 우리는 이러한 라벨의 유혹에서 벗어나 기업의 진정성을 냉철하게 평가할 수 있는 비판적 시각을 견지해야 한다. 결론적으로 식품 라벨은 소비자의 도덕적 정체성을 시험하는 도구가 아니라 있는 그대로의 정보를 제공하는 정직한 창이 되어야 하며 소비자는 그 창을 통해 기업의 실체를 직시하고 자신의 주체성을 회복해야 하는 어려운 과제를 안고 있다.",
+    "wordCount": 426,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "공존하며",
+        "lemma": "공존하며",
+        "glosses": {
+          "es": "coexisting",
+          "en": "coexisting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "파장",
+        "lemma": "파장",
+        "glosses": {
+          "es": "repercussion",
+          "en": "repercussion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "면죄부",
+        "lemma": "면죄부",
+        "glosses": {
+          "es": "indulgence",
+          "en": "indulgence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지향하는",
+        "lemma": "지향하는",
+        "glosses": {
+          "es": "aiming for",
+          "en": "aiming for"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "이분법적",
+        "lemma": "이분법적",
+        "glosses": {
+          "es": "dichotomous",
+          "en": "dichotomous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전가하는",
+        "lemma": "전가하는",
+        "glosses": {
+          "es": "shifting (responsibility)",
+          "en": "shifting (responsibility)"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.3,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "식품 라벨의 언어적 전략이 소비 심리에 미치는 영향"
+        },
+        {
+          "id": "a2",
+          "text": "환경 보호를 위한 새로운 식품 폐기 라벨링 제도의 도입"
+        },
+        {
+          "id": "a3",
+          "text": "식품의 신선도 유지를 위한 기업의 기술적 노력과 한계"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "라벨의 문구가 소비자의 행동을 변화시키는 강력한 힘을 가지고 있음을 인정하면서도, 그 변화가 자발적인 성찰에서 비롯된 것인지 아니면 언어적 조작에 의한 반응인지에 대해 의문을 제기한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "김민준 씨가 분석한 두 번째 라벨의 부작용은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "식품 폐기율 증가"
+        },
+        {
+          "id": "a2",
+          "text": "고객 재방문율 하락"
+        },
+        {
+          "id": "a3",
+          "text": "제품 가격의 상승"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "특정 브랜드가 후자의 라벨을 도입한 이후, 폐기율이 감소했음에도 불구하고 고객들의 재방문율이 유의미하게 하락했다는 점을 주목했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "소비자들이 왜 두 번째 라벨이 붙은 제품을 선호하지 않는가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "라벨의 문구가 너무 복잡하고 어려워서"
+        },
+        {
+          "id": "a2",
+          "text": "환경 문제에 관심이 없는 사람들이라서"
+        },
+        {
+          "id": "a3",
+          "text": "식사 시 도덕적 압박을 느끼기 싫어서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "소비자는 자신의 식탁에서 도덕적 훈계를 듣기보다는 편안한 소비 경험을 선호한다는 사실이 드러난 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 쓴 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "식품 라벨의 이면을 비판적으로 성찰하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "소비자들에게 더 나은 식품 구매 방법을 알리기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "환경 보호를 위한 라벨링 개선안을 제시하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "결국 우리가 마주한 것은 식품의 신선도가 아닌, 라벨 뒤에 숨겨진 기업의 언어적 전략이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 분석적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그는 라벨이 단순히 정보를 전달하는 도구인지, 아니면 특정 행동을 강제하는 심리적 기제인지에 대한 근본적인 질문을 던진다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'면죄부'의 본문 내 의미와 가장 가까운 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "법적인 처벌을 면하게 해주는 문서"
+        },
+        {
+          "id": "a2",
+          "text": "잘못을 정당화하는 논리적 근거"
+        },
+        {
+          "id": "a3",
+          "text": "심리적 부담을 덜어주는 수단"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "전자는 효율성을 중시하는 현대인에게 심리적 면죄부를 제공하며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "식품 라벨이 소비자의 도덕적 정체성에 개입하는 방식에 대해 본인의 견해를 300자 내외로 서술하시오.",
+      "en": "식품 라벨이 소비자의 도덕적 정체성에 개입하는 방식에 대해 본인의 견해를 300자 내외로 서술하시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "본문을 읽고 라벨링 언어가 소비자의 심리에 미치는 영향과 그에 따른 사회적 책임에 대해 논의하시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "식품 라벨의 미학: 소비자의 죄책감과 실용성 사이 | C1 Reading | WeLearn",
+      "en": "식품 라벨의 미학: 소비자의 죄책감과 실용성 사이 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "두 가지 상반된 식품 라벨링 방식을 비교하며, 소비자의 행동 변화를 유도하는 언어적 전략과 그 이면에 숨겨진 윤리적 딜레마를 분석하는 비평문입니다.",
+      "en": "두 가지 상반된 식품 라벨링 방식을 비교하며, 소비자의 행동 변화를 유도하는 언어적 전략과 그 이면에 숨겨진 윤리적 딜레마를 분석하는 비평문입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

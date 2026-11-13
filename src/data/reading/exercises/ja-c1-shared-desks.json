@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-shared-desks",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「ハイブリッド・ワーク」の再定義に関する通達",
+      "en": "「ハイブリッド・ワーク」の再定義に関する通達"
+    },
+    "intro": {
+      "es": "本教材は、企業の管理職が送った「柔軟な働き方」を推奨するメールを読み解き、その裏にある意図や組織の力学を考察するC1レベルの読解演習です。",
+      "en": "本教材は、企業の管理職が送った「柔軟な働き方」を推奨するメールを読み解き、その裏にある意図や組織の力学を考察するC1レベルの読解演習です。"
+    },
+    "mission": {
+      "es": "メールの表面的な文言と、その背後にある経営側のコスト削減の論理を分析し、組織内における権力構造を読み取る。",
+      "en": "メールの表面的な文言と、その背後にある経営側のコスト削減の論理を分析し、組織内における権力構造を読み取る。"
+    },
+    "targetText": "社員の皆様へ。昨今の市場環境の変化を受け、我が社では「個人の自律性を尊重した働き方」を正式に導入することとなりました。これまでオフィスという物理的な空間に縛られていた業務プロセスを見直し、今後は自宅を主要な拠点とするハイブリッド・ワークを標準とします。会社は皆様の創造性を最大限に引き出すため、オフィスという枠組みから解放し、各自が最も生産性を発揮できる環境を自律的に構築することを強く推奨します。この変革により、通勤時間の短縮やワークライフバランスの向上が期待できることは言うまでもありません。しかしながら、この柔軟性を維持するためには、各自が自宅の執務環境を「プロフェッショナルな水準」に保つ必要があります。これには、人間工学に基づいたチェアの導入や、高速かつ安定した通信インフラの整備、さらには適切な照明環境の確保が含まれます。これら個々の環境構築に要する経費については、会社が提供する「自律支援手当」の範囲内で賄うものとします。もちろん、この手当はあくまで支援金であり、不足分については個人の自己投資と位置付けております。本来、オフィス環境の維持に費やされていた固定費を、社員一人ひとりの裁量に委ねることで、組織全体の最適化を図るという経営判断です。この方針は、皆様に更なる自由を与える一方で、同時にプロフェッショナルとしての責任を問うものでもあります。先月、一部の部署で試験的に導入した際、自宅の通信環境が不十分であることを理由に会議への参加が滞ったケースが見受けられました。今後は、そのような物理的インフラの不備を理由にした業務停滞は、個人の能力不足とみなされる可能性が高いことを申し添えます。会社は皆様の働き方を尊重しますが、その働き方を支える土台そのものまでを無制限に保証するわけではありません。皆様がこの新しい制度をどのように活用し、自身のキャリアと生産性を高めていくのか、その真価が問われています。今回の決定は、単なる場所の変更ではなく、組織のあり方を根本から問う試みです。皆様のプロフェッショナルとしての自覚ある対応を期待しております。ご不明な点があれば、各部署のマネージャーまでお問い合わせください。なお、本件に関する個別の経費精算の再検討は受け付けておりません。最後に、この制度の目的はあくまで組織の効率化であり、皆様の利便性向上はそれに付随する副次的効果であることを改めて強調しておきます。この方針に賛同できない場合は、早急に人事部との面談を希望してください。以上、よろしくお願いいたします。\n\nしかし、この急進的な制度移行がもたらす長期的かつ構造的な懸念を看過することはできません。物理的な共有空間が消失することで、偶発的な対話から生まれる創造的な摩擦や、組織文化の継承といった非定型的な価値が希薄化するリスクが顕在化しています。デジタルツールを通じた意思疎通には限界があり、暗黙知の共有が困難になることで、部署間の連携が断片化し、結果として組織全体の結束力が低下する恐れがあるからです。また、個人の自律性に過度に依存する体制は、業務の可視性を低下させ、成果主義の極端な先鋭化を招きかねません。それは、本来であればチームで補完し合うべき負荷が個人の肩に重くのしかかり、心身の健康を損なう要因ともなり得ます。会社が掲げる効率化の追求は、短期的には固定費の削減に寄与するでしょうが、組織の帰属意識を希薄化させ、人材の流動性を高めるという逆説的な結果を招く可能性も否定できません。私たちは、利便性の裏側に潜む「組織の空洞化」という課題に対し、個人のプロフェッショナリズムだけでなく、会社側も新たな連帯の形を模索し続ける責任があるはずです。効率という尺度だけでは測れない組織の有機的な繋がりを、いかにして維持し、発展させていくのか。この制度の真の成否は、物理的な制約から解放された私たちが、どれほど意識的に「繋がりの質」を再構築できるかにかかっていると言えるでしょう。この変革は、単なる業務形態の変更を超え、私たちが組織という共同体とどう向き合うかを問う、極めて重い試金石なのです。",
+    "wordCount": 1601,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "自律性",
+        "lemma": "自律性",
+        "glosses": {
+          "es": "autonomy",
+          "en": "autonomy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "人間工学",
+        "lemma": "人間工学",
+        "glosses": {
+          "es": "ergonomics",
+          "en": "ergonomics"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "裁量",
+        "lemma": "裁量",
+        "glosses": {
+          "es": "discretion",
+          "en": "discretion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "停滞",
+        "lemma": "停滞",
+        "glosses": {
+          "es": "stagnation",
+          "en": "stagnation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "副次的",
+        "lemma": "副次的",
+        "glosses": {
+          "es": "secondary",
+          "en": "secondary"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "付随する",
+        "lemma": "付随する",
+        "glosses": {
+          "es": "accompanying",
+          "en": "accompanying"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 50,
+      "maxSentenceWords": 80,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "このメールの主な目的は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "コスト転嫁の正当化"
+        },
+        {
+          "id": "a2",
+          "text": "福利厚生の拡充"
+        },
+        {
+          "id": "a3",
+          "text": "業務効率の改善報告"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "本来、オフィス環境の維持に費やされていた固定費を、社員一人ひとりの裁量に委ねることで、組織全体の最適化を図るという経営判断です。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "執務環境の整備費用について、会社側はどう述べていますか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "全額を会社が負担する"
+        },
+        {
+          "id": "a2",
+          "text": "手当で足りない分は自己負担"
+        },
+        {
+          "id": "a3",
+          "text": "個人の貯蓄から捻出を命じる"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "これら個々の環境構築に要する経費については、会社が提供する「自律支援手当」の範囲内で賄うものとします。もちろん、この手当はあくまで支援金であり、不足分については個人の自己投資と位置付けております。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "著者が「プロフェッショナルとしての責任」を強調する背景には何がありますか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "社員の自発的な努力を促すため"
+        },
+        {
+          "id": "a2",
+          "text": "オフィス維持費を削減する正当な理由を作るため"
+        },
+        {
+          "id": "a3",
+          "text": "インフラ不備による業務中断を未然に防ぐため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "今後は、そのような物理的インフラの不備を理由にした業務停滞は、個人の能力不足とみなされる可能性が高いことを申し添えます。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "「この制度の目的はあくまで組織の効率化」と最後に述べた意図は何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "社員の反論の余地を完全に封じるため"
+        },
+        {
+          "id": "a2",
+          "text": "社員への配慮を示すため"
+        },
+        {
+          "id": "a3",
+          "text": "制度の優先順位を明確にするため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "最後に、この制度の目的はあくまで組織の効率化であり、皆様の利便性向上はそれに付随する副次的効果であることを改めて強調しておきます。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "このメール全体から読み取れるマネージャーの態度はどのようなものですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "協調的かつ柔軟"
+        },
+        {
+          "id": "a2",
+          "text": "威圧的かつ断定的"
+        },
+        {
+          "id": "a3",
+          "text": "懐疑的かつ慎重"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "なお、本件に関する個別の経費精算の再検討は受け付けておりません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「裁量」という言葉が持つニュアンスとして、本文の文脈で最も適切なものはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "会社からの特別な命令"
+        },
+        {
+          "id": "a2",
+          "text": "上司による厳しい管理"
+        },
+        {
+          "id": "a3",
+          "text": "個人の自由な判断と責任"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "本来、オフィス環境の維持に費やされていた固定費を、社員一人ひとりの裁量に委ねることで、組織全体の最適化を図るという経営判断です。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "このメールを受け取った社員の立場になり、会社の方針に対する懸念や疑問を、礼儀正しさを装いながらも論理的に反論する返信メールを400字程度で作成してください。",
+      "en": "このメールを受け取った社員の立場になり、会社の方針に対する懸念や疑問を、礼儀正しさを装いながらも論理的に反論する返信メールを400字程度で作成してください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "メールの表面的な文言と、その背後にある経営側のコスト削減の論理を分析し、組織内における権力構造を読み取る。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「ハイブリッド・ワーク」の再定義に関する通達 | C1 Reading | WeLearn",
+      "en": "「ハイブリッド・ワーク」の再定義に関する通達 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "本教材は、企業の管理職が送った「柔軟な働き方」を推奨するメールを読み解き、その裏にある意図や組織の力学を考察するC1レベルの読解演習です。",
+      "en": "本教材は、企業の管理職が送った「柔軟な働き方」を推奨するメールを読み解き、その裏にある意図や組織の力学を考察するC1レベルの読解演習です。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

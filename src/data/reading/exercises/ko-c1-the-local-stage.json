@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-local-stage",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "무대 뒤의 그림자: 예술 지원금의 역설",
+      "en": "무대 뒤의 그림자: 예술 지원금의 역설"
+    },
+    "intro": {
+      "es": "지역 극단의 보조금 정산 보고서와 실제 활동 사이의 괴리를 다룬 기획 기사입니다.",
+      "en": "지역 극단의 보조금 정산 보고서와 실제 활동 사이의 괴리를 다룬 기획 기사입니다."
+    },
+    "mission": {
+      "es": "예술 현장의 성과 지표가 포괄하지 못하는 비가시적 노동의 가치를 분석하십시오.",
+      "en": "예술 현장의 성과 지표가 포괄하지 못하는 비가시적 노동의 가치를 분석하십시오."
+    },
+    "targetText": "지역 예술 재단이 발행한 이번 분기 성과 보고서는 화려한 수치로 가득하다. 정기 공연의 티켓 판매량과 객석 점유율은 목표치를 상회했고, 이를 근거로 재단은 차기 연도 예산 증액을 자신하고 있다. 그러나 이러한 성과 지표는 '푸른 언덕 극단'의 실질적인 운영 방식을 철저히 외면하고 있다. 극단의 예술 감독인 박민수 씨는 재단이 요구하는 정량적 평가가 현장의 본질을 왜곡한다고 지적한다. 사실 극단의 가장 중요한 활동은 무대 위에서 펼쳐지는 화려한 공연이 아니라, 사회적 고립을 겪는 청소년들을 대상으로 진행하는 주간 워크숍에 있다. 이 워크숍은 단 한 번도 관객 앞에 서지 않지만, 참여자들의 정서적 회복과 사회적 유대감 형성에 결정적인 기여를 한다. 재단은 오직 무대에 오르는 공연만을 예술적 성취로 간주하며, 무대 뒤에서 묵묵히 이어지는 치유의 과정을 단순한 부대 행사로 치부한다. 지난달, 박 감독은 워크숍의 가치를 증명하기 위해 참여자들의 변화 과정을 담은 상세한 보고서를 재단에 제출했다. 하지만 재단 실무자는 이를 '성과 측정 불가'라는 이유로 반려했다. 재단은 티켓 판매 수익을 통한 자립 가능성을 최우선 과제로 삼고 있으며, 수익 창출과 무관한 교육 프로그램은 예산 삭감의 우선순위가 된다. 이러한 관점은 예술의 사회적 책무를 경제적 효용성으로 환원하려는 위험한 시도이다. 결과적으로 극단은 재단의 지원을 유지하기 위해 워크숍의 규모를 줄이고, 대신 수익성이 높은 상업적 공연을 기획해야 하는 모순에 직면했다. 박 감독은 재단의 지원금을 받기 위해 예술적 지향점을 포기해야 하는 상황을 '영혼 없는 숫자 놀음'이라 비판했다. 재단은 여전히 자신들의 평가 체계가 객관적이라고 주장하지만, 그 객관성 뒤에는 수많은 참여자의 목소리가 소거되어 있다. 예술이 단순히 판매되는 상품이 아니라 공동체를 지탱하는 힘이라면, 현재의 성과 지표는 근본적으로 수정되어야 한다. 무대 위에서 박수를 받는 배우들만큼이나, 무대 뒤에서 스스로를 치유해가는 참여자들의 침묵 또한 예술의 중요한 일부이기 때문이다. 재단과 극단 사이의 갈등은 단순히 예산의 문제가 아니라, 우리가 예술을 어떤 가치로 정의할 것인가에 대한 근본적인 질문을 던지고 있다. 이 갈등이 해결되지 않는 한, 지역 예술은 화려한 무대 뒤에서 점차 그 빛을 잃어갈 것이다.\n\n이러한 상황은 단순히 개별 극단의 존폐를 넘어 지역 문화 생태계 전반이 직면한 구조적 위기를 단적으로 보여준다. 재단의 경직된 평가 방식이 지속될 경우, 예술가들은 관객의 환호를 끌어내기 위한 자극적인 콘텐츠 생산에만 몰두하게 될 것이며, 이는 결국 지역 예술의 다양성을 고사시키는 결과를 초래할 것이다. 경제적 가치만을 앞세운 정책은 당장의 예산 절감에는 효과적일지 모르나, 장기적으로는 예술이 가진 본연의 사회적 치유 기능과 공동체 결속력을 완전히 거세해 버리는 치명적인 독이 된다. 진정한 예술적 성취는 눈에 보이는 수치로 환산할 수 없는 무형의 가치에서 비롯되기에, 재단은 평가 지표의 다원화를 통해 보이지 않는 노력을 가시화할 수 있는 새로운 대안을 모색해야 한다. 만약 예술의 사회적 책무를 외면한 채 효율성만을 쫓는 현재의 행태가 개선되지 않는다면, 지역 사회는 문화적 허기를 채우지 못한 채 메마른 공허함만을 남기게 될 것이며, 결국 예술은 시민들의 삶으로부터 완전히 유리된 채 박제된 전시물로 전락할 위험이 크다. 이제는 예술의 가치를 숫자가 아닌 사람의 변화와 공동체의 회복이라는 척도로 재편하려는 용기 있는 결단이 절실히 필요한 시점이다.",
+    "wordCount": 423,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "상회했고",
+        "lemma": "상회했고",
+        "glosses": {
+          "es": "exceeded",
+          "en": "exceeded"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "외면하고",
+        "lemma": "외면하고",
+        "glosses": {
+          "es": "ignored",
+          "en": "ignored"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치부한다",
+        "lemma": "치부한다",
+        "glosses": {
+          "es": "considered as",
+          "en": "considered as"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "환원하려는",
+        "lemma": "환원하려는",
+        "glosses": {
+          "es": "reducing to",
+          "en": "reducing to"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순",
+        "lemma": "모순",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "소거되어",
+        "lemma": "소거되어",
+        "glosses": {
+          "es": "erased",
+          "en": "erased"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.6,
+      "maxSentenceWords": 36,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "예술 성과 지표의 한계"
+        },
+        {
+          "id": "a2",
+          "text": "티켓 판매의 중요성"
+        },
+        {
+          "id": "a3",
+          "text": "지역 극단의 예산 확보 방안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "재단은 오직 무대에 오르는 공연만을 예술적 성취로 간주하며, 무대 뒤에서 묵묵히 이어지는 치유의 과정을 단순한 부대 행사로 치부한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "재단이 워크숍 보고서를 반려한 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "예산 부족 때문"
+        },
+        {
+          "id": "a2",
+          "text": "성과 측정 불가"
+        },
+        {
+          "id": "a3",
+          "text": "내용의 부실함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "하지만 재단 실무자는 이를 '성과 측정 불가'라는 이유로 반려했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "박 감독이 처한 현재 상황을 가장 잘 설명한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "워크숍 참여자들과의 심각한 마찰"
+        },
+        {
+          "id": "a2",
+          "text": "상업적 공연의 성공적인 정착"
+        },
+        {
+          "id": "a3",
+          "text": "예술적 지향과 재정적 지원 사이의 갈등"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "박 감독은 재단의 지원금을 받기 위해 예술적 지향점을 포기해야 하는 상황을 '영혼 없는 숫자 놀음'이라 비판했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 쓴 주된 목적은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "예술의 사회적 가치를 재정의하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "재단의 성과를 홍보하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "지역 극단의 공연을 광고하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "예술이 단순히 판매되는 상품이 아니라 공동체를 지탱하는 힘이라면, 현재의 성과 지표는 근본적으로 수정되어야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글 전체에 나타난 저자의 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "재단은 여전히 자신들의 평가 체계가 객관적이라고 주장하지만, 그 객관성 뒤에는 수많은 참여자의 목소리가 소거되어 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'환원하려는'의 문맥적 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "본래의 상태로 돌려놓으려는"
+        },
+        {
+          "id": "a2",
+          "text": "전체적인 가치를 증대시키려는"
+        },
+        {
+          "id": "a3",
+          "text": "경제적 가치로만 축소하려는"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이러한 관점은 예술의 사회적 책무를 경제적 효용성으로 환원하려는 위험한 시도이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "예술 지원금의 평가 기준에 '비가시적 사회 기여도'를 포함해야 한다는 주장에 대한 찬반 의견을 논리적으로 서술하십시오.",
+      "en": "예술 지원금의 평가 기준에 '비가시적 사회 기여도'를 포함해야 한다는 주장에 대한 찬반 의견을 논리적으로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "예술 현장의 성과 지표가 포괄하지 못하는 비가시적 노동의 가치를 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "무대 뒤의 그림자: 예술 지원금의 역설 | C1 Reading | WeLearn",
+      "en": "무대 뒤의 그림자: 예술 지원금의 역설 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "지역 극단의 보조금 정산 보고서와 실제 활동 사이의 괴리를 다룬 기획 기사입니다.",
+      "en": "지역 극단의 보조금 정산 보고서와 실제 활동 사이의 괴리를 다룬 기획 기사입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-a-name-on-the-map",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "地図の裏側の沈黙",
+      "en": "地図の裏側の沈黙"
+    },
+    "intro": {
+      "es": "公式な記録と口伝の記憶が衝突する時、真実の所在はどこにあるのか。ある地図職人の発見を巡る物語。",
+      "en": "公式な記録と口伝の記憶が衝突する時、真実の所在はどこにあるのか。ある地図職人の発見を巡る物語。"
+    },
+    "mission": {
+      "es": "この物語を読み、地図が持つ政治的側面と、土地の記憶を守ろうとする人々の葛藤について考察しなさい。",
+      "en": "この物語を読み、地図が持つ政治的側面と、土地の記憶を守ろうとする人々の葛藤について考察しなさい。"
+    },
+    "targetText": "古都の北端、霧深い山あいに位置する「白鷺村」は、公式地図上では「千鳥村」と記されている。地図職人の佐伯は、旧家の蔵から見つかった江戸時代の古地図を修復する過程で、この村の呼称が意図的に書き換えられた痕跡を発見した。当時の役人が、村の古い伝承に宿る「不吉な響き」を忌避し、行政上の体裁を整えるために改竄を強いたのだ。佐伯は、村の長老である老女・タキにその経緯を問い質した。しかし、タキは驚くような反応を見せなかった。彼女にとって、役人が何を書き記そうとも、村の石碑や谷の呼び名は、自分たちの祖先が刻んだ記憶のままだったからだ。「名前というのは、役所の印鑑で決まるものではないよ。私たちが毎日、その場所を何と呼んで呼びかけるか。ただそれだけのことが、地図よりも重い真実なのさ」と彼女は静かに語った。佐伯は、手元の古地図と、窓の外に広がる村の風景を交互に見つめた。公式記録という名の虚構が、いかにして人々の生活の細部を塗り替えていくのか。あるいは、記録が塗り替えられるほどに、人々の記憶は逆説的に強固なものへと変貌するのか。佐伯は、修復作業の報告書に、この村の真の名前を追記するかどうかで激しく葛藤した。真実を公にすることは、村の平穏な日常を行政の監視下に晒すことと同義かもしれない。一方で、このまま沈黙を守ることは、歴史を偽り続ける共犯者になることを意味していた。夕闇が迫る中、佐伯はペンを置いた。彼は報告書に「千鳥村」という公式名称を書き写しながら、その余白に、村の小川のせせらぎを模した小さな図形を書き加えた。それは、地図からは決して読み取れない、土地の記憶を繋ぎ止めるためのささやかな抵抗だった。歴史とは、誰が書いたかではなく、誰が語り継ぎ、誰が沈黙を守るかによって形作られるものなのだ。佐伯が去った後、村の入り口にある古い道標には、風雨に晒されながらも、今もなお「白鷺」という文字が薄く浮かび上がっていた。それは、地図という権力がどれほど精緻に編み上げられようとも、土地そのものが持つ固有の魂を完全に抹消することは不可能であるという、歴史の皮肉な証明のように見えた。佐伯の胸には、正解のない問いが残り続けた。記録という名の支配と、記憶という名の抵抗。その狭間で揺れ動く地図職人の背中を、山からの風が冷たく吹き抜けていった。地図は完成したが、そこに描かれた世界の真実は、誰の目にも触れることなく、ただ村の静寂の中に埋もれ続けている。\n\nしかし、佐伯が持ち帰った地図の写しが、皮肉にも新たな波紋を呼ぶことになる。数年後、その写しは古物商の手に渡り、学術的な調査の過程で公の目に触れることとなった。研究者たちは、地図の余白に記された謎の図形を、かつてこの地で信仰されていた独自の神格を指し示す暗号であると誤認し、村を歴史的遺産として再評価する運動を巻き起こしたのだ。結果として、静かな山里は観光地化され、かつてタキが守り抜いた「白鷺」という名は、土産物屋の看板やガイドブックのキャッチコピーとして消費される運命を辿った。佐伯が沈黙を守ることで村の平穏を守ろうとしたその行為は、皮肉にも、記録という名の暴力が最も避けようとしていた「日常の解体」を招き寄せる引き金となってしまったのである。土地の記憶は、誰かが守ろうとすればするほど、外部からの視線に晒され、その純粋さを失っていく。地図職人が最後に書き残したあの小さな図形は、村の魂を繋ぎ止めるための抵抗であったはずが、皮肉にも、その魂を世俗へと引きずり出すための地図記号へと変貌を遂げてしまったのだ。歴史の真実を刻むことは、時にその場所の静寂を永遠に奪い去るという、残酷な代償を伴うのであった。",
+    "wordCount": 1405,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "改竄",
+        "lemma": "改竄",
+        "glosses": {
+          "es": "falsification or alteration of documents",
+          "en": "falsification or alteration of documents"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "忌避",
+        "lemma": "忌避",
+        "glosses": {
+          "es": "avoidance or aversion",
+          "en": "avoidance or aversion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "虚構",
+        "lemma": "虚構",
+        "glosses": {
+          "es": "fiction or fabrication",
+          "en": "fiction or fabrication"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "共犯者",
+        "lemma": "共犯者",
+        "glosses": {
+          "es": "accomplice",
+          "en": "accomplice"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "道標",
+        "lemma": "道標",
+        "glosses": {
+          "es": "signpost",
+          "en": "signpost"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "精緻",
+        "lemma": "精緻",
+        "glosses": {
+          "es": "elaborate or precise",
+          "en": "elaborate or precise"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 42.6,
+      "maxSentenceWords": 81,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主題として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "記憶と記録の対立"
+        },
+        {
+          "id": "a2",
+          "text": "地図の歴史的意義"
+        },
+        {
+          "id": "a3",
+          "text": "村の名称改変の是非"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "記録という名の支配と、記憶という名の抵抗。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐伯が報告書に加えた「小さな図形」の目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "村の場所を示すため"
+        },
+        {
+          "id": "a2",
+          "text": "土地の記憶を繋ぎ止めるため"
+        },
+        {
+          "id": "a3",
+          "text": "地図の誤りを指摘するため"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "それは、地図からは決して読み取れない、土地の記憶を繋ぎ止めるためのささやかな抵抗だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "タキが役人の改竄に対して冷静だった理由として推測されることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "役人の権力を恐れていたから"
+        },
+        {
+          "id": "a2",
+          "text": "地図の名称に価値を感じていなかったから"
+        },
+        {
+          "id": "a3",
+          "text": "村の記憶は住民の営みの中にあったから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "私たちが毎日、その場所を何と呼んで呼びかけるか。ただそれだけのことが、地図よりも重い真実なのさ",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者がこの物語を通じて読者に伝えようとしていることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "公式記録が必ずしも真実ではないという視点"
+        },
+        {
+          "id": "a2",
+          "text": "古い地図の修復技術の大切さ"
+        },
+        {
+          "id": "a3",
+          "text": "行政による地名管理の重要性とその利便性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "歴史とは、誰が書いたかではなく、誰が語り継ぎ、誰が沈黙を守るかによって形作られるものなのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語の結末における筆者の態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちている"
+        },
+        {
+          "id": "a2",
+          "text": "歴史の皮肉を静観している"
+        },
+        {
+          "id": "a3",
+          "text": "行政の不正を強く批判している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "それは、地図という権力がどれほど精緻に編み上げられようとも、土地そのものが持つ固有の魂を完全に抹消することは不可能であるという、歴史の皮肉な証明のように見えた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中の「改竄」の意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "古いものを新しく作り直すこと"
+        },
+        {
+          "id": "a2",
+          "text": "事実をそのまま記録に残すこと"
+        },
+        {
+          "id": "a3",
+          "text": "文書を不正に書き換えること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "行政上の体裁を整えるために改竄を強いたのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "地図が持つ「権力」と、個人の「記憶」が対立した際、どちらを優先すべきか、自身の考えを800字以内で論じなさい。",
+      "en": "地図が持つ「権力」と、個人の「記憶」が対立した際、どちらを優先すべきか、自身の考えを800字以内で論じなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "この物語を読み、地図が持つ政治的側面と、土地の記憶を守ろうとする人々の葛藤について考察しなさい。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "地図の裏側の沈黙 | C1 Reading | WeLearn",
+      "en": "地図の裏側の沈黙 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "公式な記録と口伝の記憶が衝突する時、真実の所在はどこにあるのか。ある地図職人の発見を巡る物語。",
+      "en": "公式な記録と口伝の記憶が衝突する時、真実の所在はどこにあるのか。ある地図職人の発見を巡る物語。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

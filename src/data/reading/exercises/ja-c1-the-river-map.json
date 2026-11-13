@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-river-map",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "境界線の不確実性：水害ハザードマップが突きつける二つの現実",
+      "en": "境界線の不確実性：水害ハザードマップが突きつける二つの現実"
+    },
+    "intro": {
+      "es": "ある架空の自治体で発生したハザードマップ改訂を巡る対立を通じ、行政の定義が住民の生活に与える影響と、その背後にある論理的ジレンマを考察する。",
+      "en": "ある架空の自治体で発生したハザードマップ改訂を巡る対立を通じ、行政の定義が住民の生活に与える影響と、その背後にある論理的ジレンマを考察する。"
+    },
+    "mission": {
+      "es": "ハザードマップの作成基準が異なることで生じる社会的摩擦を理解し、行政の判断が個人の権利にどう関与するかを論理的に分析せよ。",
+      "en": "ハザードマップの作成基準が異なることで生じる社会的摩擦を理解し、行政の判断が個人の権利にどう関与するかを論理的に分析せよ。"
+    },
+    "targetText": "静かなる河川が流れる緑豊かな街、青葉区。この自治体では現在、新たな水害ハザードマップの策定を巡り、住民と行政の間に深刻な亀裂が生じている。事の発端は、区役所が従来の「過去の浸水実績」に基づく算出法を廃止し、新たに「予測される最大規模の豪雨」を基準としたシミュレーションを導入したことだった。この変更により、これまで安全圏と見なされていた住宅街の多くが、突如として警戒区域に指定されることになったのだ。区の防災課長である佐藤氏は、気候変動という不可避な現実を前に、旧来の基準はもはや機能しないと主張する。彼の論理は、最悪の事態を想定して備えることが行政の責務であるという、極めて合理的な防災観に基づいている。しかし、この方針転換は、単なる地図の塗り替え以上の意味を持っていた。\n\n長年この地で不動産業を営む高橋氏は、今回の改訂を「行政による一方的な資産価値の切り捨て」と激しく非難している。彼が管理する物件の多くが、新マップでは浸水想定区域に該当し、火災保険料の高騰や売却時の価格下落が避けられない状況となったからだ。高橋氏の懸念は、行政が提示する「リスク」という概念が、科学的な予測という衣を纏いながらも、実質的には住民の経済的基盤を揺るがす強力な権力として作用しているという点にある。彼は、過去のデータに固執するわけではないが、予測モデルの不確実性が、なぜ特定の住民にのみ不利益を強いるのかという点について、納得のいく説明を求めている。行政側が提示する「安全」という価値が、個人の財産権をどこまで侵害してよいのかという問いは、この街で解決の糸口を見出せずにいる。\n\n自治体は折衷案として、一部の区域を「条件付き警戒区域」に指定する案を提示したが、これは事態をさらに複雑化させた。この枠組みでは、特定の防潮設備を備えた住宅のみが支援の対象となり、設備投資が難しい高齢世帯は、実質的に切り捨てられる形となったからだ。佐藤課長はこれを「公平な資源配分」と呼ぶが、高橋氏ら住民側は「経済力による生存の選別」と受け取っている。同じ街に住みながら、地図上の線一本で命の重みが差別化されるという現実に、住民たちは強い不信感を抱いている。科学的根拠を絶対視する行政と、生活の連続性を重視する住民。この両者の間には、リスクをどう分担すべきかという倫理的な合意が欠けているのだ。\n\nさらに事態を悪化させているのは、このマップが周辺自治体と連携しておらず、区境を跨ぐ河川の管理において矛盾が生じていることである。隣接する紅葉市では依然として旧基準が採用されており、青葉区の住民からは「同じ川沿いなのに、市境を越えただけでリスクが変わるのはなぜか」という当然の疑問が噴出している。行政の論理が地域を細分化し、本来共有すべき危機意識を分断しているのである。佐藤課長は「自治体ごとの判断」と繰り返すが、住民にとって、地図は生活の基盤であり、行政の都合で恣意的に書き換えられるものではない。この状況は、現代社会における行政の透明性と、その判断に対する住民の監視機能がいかに脆弱であるかを露呈している。\n\n結局のところ、このハザードマップ問題は、単なる防災技術のアップデートではなく、現代社会が抱える「リスクとの共生」という終わりのない問いを象徴している。佐藤氏が守ろうとする未来の安全と、高橋氏が守ろうとする現在の生活。双方が自らの正当性を主張する中で、街の分断は深まるばかりである。行政は「納得」を求めて説明会を開くが、そこでは科学的データが提示されるだけで、住民の不安を解消する対話は成立していない。リスクを数値化し、地図上に線を描くことは、行政にとっては効率的な管理手法かもしれないが、その線が住民の生活を切り裂く刃となることを、彼らはどこまで自覚しているのだろうか。この街の静かな川は、今日も何も語らずに流れ続けている。",
+    "wordCount": 1482,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "不可避",
+        "lemma": "不可避",
+        "glosses": {
+          "es": "inevitable",
+          "en": "inevitable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "合理的な",
+        "lemma": "合理的な",
+        "glosses": {
+          "es": "rational",
+          "en": "rational"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "不確実性",
+        "lemma": "不確実性",
+        "glosses": {
+          "es": "uncertainty",
+          "en": "uncertainty"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "折衷案",
+        "lemma": "折衷案",
+        "glosses": {
+          "es": "compromise proposal",
+          "en": "compromise proposal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "恣意的に",
+        "lemma": "恣意的に",
+        "glosses": {
+          "es": "arbitrarily",
+          "en": "arbitrarily"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "脆弱",
+        "lemma": "脆弱",
+        "glosses": {
+          "es": "fragile",
+          "en": "fragile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 51.1,
+      "maxSentenceWords": 80,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本稿が最も強調している点は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "ハザードマップを巡る行政と住民の対立"
+        },
+        {
+          "id": "a2",
+          "text": "行政の防災対策の遅れ"
+        },
+        {
+          "id": "a3",
+          "text": "科学的予測の正確性の重要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この自治体では現在、新たな水害ハザードマップの策定を巡り、住民と行政の間に深刻な亀裂が生じている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "高橋氏が新マップに対して抱く具体的な懸念は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "防潮設備の設置義務化"
+        },
+        {
+          "id": "a2",
+          "text": "保険料の上昇と資産価値の低下"
+        },
+        {
+          "id": "a3",
+          "text": "区境の管理体制の不備"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "彼が管理する物件の多くが、新マップでは浸水想定区域に該当し、火災保険料の高騰や売却時の価格下落が避けられない状況となったからだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "「条件付き警戒区域」という折衷案が住民の反発を招いた理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "指定範囲が広すぎたため"
+        },
+        {
+          "id": "a2",
+          "text": "説明会が一度も開かれなかったため"
+        },
+        {
+          "id": "a3",
+          "text": "支援の対象が経済力に依存するため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "設備投資が難しい高齢世帯は、実質的に切り捨てられる形となったからだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者が周辺自治体との基準の不一致について言及した目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "行政の論理が地域を分断していることを批判するため"
+        },
+        {
+          "id": "a2",
+          "text": "隣接自治体の防災意識の低さを指摘するため"
+        },
+        {
+          "id": "a3",
+          "text": "河川管理の統一の重要性を強調するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "行政の論理が地域を細分化し、本来共有すべき危機意識を分断しているのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "結末における著者の態度はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "中立的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "その線が住民の生活を切り裂く刃となることを、彼らはどこまで自覚しているのだろうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「恣意的に」の文脈における意味はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "多くの専門家の意見を統合して決定する様子"
+        },
+        {
+          "id": "a2",
+          "text": "過去の膨大なデータに基づいて慎重に選ぶ様子"
+        },
+        {
+          "id": "a3",
+          "text": "論理的な根拠を欠いて、勝手に決める様子"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "行政の都合で恣意的に書き換えられるものではない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "ハザードマップの改訂が住民生活に与える影響について、行政の「防災上の合理性」と住民の「生活の安定」という二つの観点から、自身の考えを800字程度で述べよ。",
+      "en": "ハザードマップの改訂が住民生活に与える影響について、行政の「防災上の合理性」と住民の「生活の安定」という二つの観点から、自身の考えを800字程度で述べよ。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "ハザードマップの作成基準が異なることで生じる社会的摩擦を理解し、行政の判断が個人の権利にどう関与するかを論理的に分析せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "境界線の不確実性：水害ハザードマップが突きつける二つの現実 | C1 Reading | WeLearn",
+      "en": "境界線の不確実性：水害ハザードマップが突きつける二つの現実 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "ある架空の自治体で発生したハザードマップ改訂を巡る対立を通じ、行政の定義が住民の生活に与える影響と、その背後にある論理的ジレンマを考察する。",
+      "en": "ある架空の自治体で発生したハザードマップ改訂を巡る対立を通じ、行政の定義が住民の生活に与える影響と、その背後にある論理的ジレンマを考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

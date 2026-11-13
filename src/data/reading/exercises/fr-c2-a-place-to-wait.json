@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-a-place-to-wait",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'éclipse de l'attente",
+      "en": "L'éclipse de l'attente"
+    },
+    "intro": {
+      "es": "Une réflexion narrative sur la dissolution de l'identité dans les espaces liminaux des institutions médicales.",
+      "en": "Une réflexion narrative sur la dissolution de l'identité dans les espaces liminaux des institutions médicales."
+    },
+    "mission": {
+      "es": "Analyser la tension entre la visibilité institutionnelle et l'effacement existentiel dans un environnement clinique.",
+      "en": "Analyser la tension entre la visibilité institutionnelle et l'effacement existentiel dans un environnement clinique."
+    },
+    "targetText": "Le néon grésille avec une régularité métronomique, un battement de cœur artificiel qui scande l'agonie des heures dans cette salle d'attente aux murs couleur mastic. Monsieur Valéry, assis sur une chaise en plastique moulé, observe le ballet silencieux des autres patients. Il y a là Madame Hélène, dont le regard fixe semble traverser les cloisons, et le jeune Elias, qui feuillette frénétiquement un magazine dont les pages sont jaunies par une décennie d'indifférence. Ils attendent. Ils attendent que le système, cette entité abstraite et bureaucratique, daigne reconnaître leur présence par le biais d'un appel nominal ou d'un signal lumineux. Cependant, une question obsédante taraude Valéry : l'attente prend-elle fin lorsque l'institution, par une défaillance de son propre dispositif de surveillance, cesse littéralement de voir ceux qui attendent ? Il se demande si, dans cet interstice, ils ne sont pas devenus des spectres, des résidus statistiques que le logiciel de gestion des flux a purement et simplement omis de traiter.\n\nLe conflit éclate lorsqu'une infirmière, le regard vitreux, traverse la salle sans un mot, ignorant les mains levées et les murmures interrogateurs. Elle ne les voit pas. Pour elle, ils ne sont que des obstacles cinétiques dans un couloir qu'elle parcourt mécaniquement. Elias, exaspéré, se lève pour l'interpeller, mais sa voix semble se perdre dans l'acoustique feutrée de la pièce, comme si l'air lui-même refusait de porter le poids de sa requête. Valéry comprend alors que la visibilité est une construction administrative. Si l'écran de contrôle à l'accueil n'affiche plus leurs noms, ils n'existent plus dans le champ de vision du personnel. C'est une éclipse de la reconnaissance où le patient devient invisible non par manque de lumière, mais par défaut de signalement numérique. Cette dépossession de soi est totale : ils sont là, physiquement, mais leur essence est évaporée dans les circuits logiques de l'institution.\n\nLa tension monte d'un cran quand la lumière du plafonnier vacille, plongeant la salle dans une pénombre crépusculaire. Le silence devient pesant, presque tangible. Madame Hélène se lève à son tour, non pour protester, mais pour constater l'absence de reflets sur les vitres du guichet. Elle murmure que le temps s'est arrêté de compter, que les horloges murales ne sont plus que des décorations obsolètes. Valéry ressent une angoisse sourde. Il réalise que leur attente n'est plus une quête de soin, mais une errance dans un purgatoire technocratique. Ils sont les naufragés d'un système qui a oublié de les inclure dans ses calculs de priorité. La frustration initiale se mue en une résignation glacée, une acceptation du fait qu'ils ne seront jamais appelés, car le système ne peut plus les convoquer s'il a perdu la trace de leur existence même.\n\nLe dénouement survient lorsque la porte principale se verrouille d'elle-même, marquant la fin du service de nuit. Personne n'est sorti, personne n'est entré, et pourtant, le hall est désormais vide de toute interaction humaine. Les trois protagonistes se retrouvent seuls, face à une borne interactive qui affiche un message d'erreur laconique : « Aucune donnée disponible ». Ils ne sont plus des patients, ils sont des erreurs système. Valéry regarde ses mains, se demandant si elles sont encore réelles ou si elles ne sont que des projections de cette attente prolongée. Il n'y a plus de colère, seulement la certitude que l'institution a gagné en les effaçant de son registre. Ils sont devenus des variables inutiles dans une équation qui a déjà été résolue sans eux.\n\nFinalement, ils s'assoient de nouveau, non plus dans l'espoir d'être appelés, mais par pur réflexe de survie dans cet espace qui les a absorbés. L'attente, désormais dénuée d'objet, devient une condition permanente, une manière d'être au monde sans pour autant appartenir à la réalité institutionnelle. Monsieur Valéry ferme les yeux, écoutant le grésillement du néon qui, lui, continue de fonctionner, indifférent à leur disparition. Ils ne sont plus que des fantômes dans une machine qui ne tourne plus que pour elle-même. La boucle est bouclée : l'attente n'a pas pris fin par une résolution, mais par une dissolution. Ils attendent encore, mais ils attendent le néant, car le système, dans sa toute-puissance aveugle, a fini par les rendre aussi transparents que les murs qui les enferment.\n\nPourtant, cette dissolution n'est peut-être qu'une illusion perceptive, une faille cognitive née de leur isolement prolongé au sein de cette architecture déshumanisée. Si l'institution les a rayés de ses registres, cette absence même pourrait paradoxalement constituer leur ultime forme de liberté. En cessant d'être des variables numériques, ils échappent désormais à la logique coercitive qui dictait leurs mouvements et leurs besoins. Cette invisibilité, loin d'être une simple négation, s'apparente à une émancipation radicale : n'étant plus soumis à l'appel, ils ne sont plus tenus de répondre. Le système, en les omettant, a involontairement brisé le contrat tacite qui les asservissait à ses impératifs de productivité et de flux. Ils ne sont plus des erreurs, mais des anomalies autonomes, des entités hors-champ dont l'existence échappe à la surveillance algorithmique. Dans ce silence retrouvé, Valéry perçoit une étrange plénitude ; il réalise que l'institution n'a pas gagné, elle s'est simplement rendue obsolète à leurs yeux. Ils ne sont plus des spectres attendant une validation, mais les seuls témoins d'une réalité qui s'est affranchie de sa propre bureaucratie. En acceptant cette transparence, ils ne disparaissent pas, ils se retirent dans un espace invisible où l'attente devient une présence pure, une conscience qui n'a plus besoin du regard de la machine pour valider sa propre persistance dans le réel.",
+    "wordCount": 912,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "métronomique",
+        "lemma": "métronomique",
+        "glosses": {
+          "es": "resembling the steady, rhythmic beat of a metronome",
+          "en": "resembling the steady, rhythmic beat of a metronome"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "taraude",
+        "lemma": "taraude",
+        "glosses": {
+          "es": "torments or preoccupies persistently",
+          "en": "torments or preoccupies persistently"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "interstice",
+        "lemma": "interstice",
+        "glosses": {
+          "es": "a small space or interval between things",
+          "en": "a small space or interval between things"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cinétiques",
+        "lemma": "cinétiques",
+        "glosses": {
+          "es": "relating to movement or motion",
+          "en": "relating to movement or motion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolètes",
+        "lemma": "obsolètes",
+        "glosses": {
+          "es": "outdated or no longer produced",
+          "en": "outdated or no longer produced"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "laconique",
+        "lemma": "laconique",
+        "glosses": {
+          "es": "brief and to the point, often to the point of seeming rude",
+          "en": "brief and to the point, often to the point of seeming rude"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.3,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "L'effacement des individus par l'institution."
+        },
+        {
+          "id": "a2",
+          "text": "La défaillance technique d'un hôpital."
+        },
+        {
+          "id": "a3",
+          "text": "La révolte des patients contre le personnel."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Valéry comprend alors que la visibilité est une construction administrative.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Que se passe-t-il lorsque la porte se verrouille ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le système redémarre."
+        },
+        {
+          "id": "a2",
+          "text": "Le hall est vide d'interactions."
+        },
+        {
+          "id": "a3",
+          "text": "Les patients s'enfuient."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Personne n'est sorti, personne n'est entré, et pourtant, le hall est désormais vide de toute interaction humaine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi l'infirmière ignore-t-elle les patients ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle est trop fatiguée."
+        },
+        {
+          "id": "a2",
+          "text": "Elle ne les considère pas malades."
+        },
+        {
+          "id": "a3",
+          "text": "Ils sont invisibles au système."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Si l'écran de contrôle à l'accueil n'affiche plus leurs noms, ils n'existent plus dans le champ de vision du personnel.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quelle est la fonction du grésillement du néon ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Marquer le rythme de l'attente vaine."
+        },
+        {
+          "id": "a2",
+          "text": "Souligner l'indifférence du décor."
+        },
+        {
+          "id": "a3",
+          "text": "Indiquer une panne électrique majeure."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le néon grésille avec une régularité métronomique, un battement de cœur artificiel qui scande l'agonie des heures dans cette salle d'attente",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de la fin du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une colère violente contre la bureaucratie."
+        },
+        {
+          "id": "a2",
+          "text": "Une résignation mélancolique et absurde."
+        },
+        {
+          "id": "a3",
+          "text": "Un espoir persistant malgré les difficultés."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il n'y a plus de colère, seulement la certitude que l'institution a gagné en les effaçant de son registre.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'métronomique' dans le premier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Qui est très bruyant."
+        },
+        {
+          "id": "a2",
+          "text": "Qui est lié à une mesure de temps."
+        },
+        {
+          "id": "a3",
+          "text": "Qui est répétitif et régulier."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Le néon grésille avec une régularité métronomique, un battement de cœur artificiel",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai (200 mots) explorant la distinction entre être 'vu' par une administration et être 'reconnu' en tant qu'individu dans une société numérisée.",
+      "en": "Rédigez un court essai (200 mots) explorant la distinction entre être 'vu' par une administration et être 'reconnu' en tant qu'individu dans une société numérisée."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser la tension entre la visibilité institutionnelle et l'effacement existentiel dans un environnement clinique.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'éclipse de l'attente | C2 Reading | WeLearn",
+      "en": "L'éclipse de l'attente | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une réflexion narrative sur la dissolution de l'identité dans les espaces liminaux des institutions médicales.",
+      "en": "Une réflexion narrative sur la dissolution de l'identité dans les espaces liminaux des institutions médicales."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

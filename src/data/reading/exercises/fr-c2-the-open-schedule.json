@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-open-schedule",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de l'autonomie temporelle : une correspondance interne",
+      "en": "L'illusion de l'autonomie temporelle : une correspondance interne"
+    },
+    "intro": {
+      "es": "Une analyse critique d'une proposition de flexibilité horaire au sein d'une institution académique, mettant en lumière le conflit entre l'équité structurelle et le choix individuel.",
+      "en": "Une analyse critique d'une proposition de flexibilité horaire au sein d'une institution académique, mettant en lumière le conflit entre l'équité structurelle et le choix individuel."
+    },
+    "mission": {
+      "es": "Analysez les nuances rhétoriques de cette correspondance pour identifier le dilemme éthique sous-jacent concernant la gestion du temps.",
+      "en": "Analysez les nuances rhétoriques de cette correspondance pour identifier le dilemme éthique sous-jacent concernant la gestion du temps."
+    },
+    "targetText": "De : Marc-Aurèle Vasseur, Directeur des Études\nÀ : Éléonore Vance, Responsable de la Planification\nObjet : Réflexion sur le projet d'horaires modulables\n\nChère Éléonore,\n\nJe reviens vers vous suite à la présentation de votre projet de « flexibilité pédagogique » que nous avons discuté lors du dernier conseil de direction. Bien que j'admire la sophistication technique de votre algorithme de répartition, je me sens contraint d'exprimer une réserve fondamentale quant à la philosophie sous-jacente de ce modèle. Vous proposez de laisser les enseignants choisir leurs plages de cours en fonction de leurs contraintes personnelles, arguant que cette autonomie accrue renforcerait la satisfaction au travail. Cependant, cette vision omet une réalité systémique : la liberté de choisir son emploi du temps est un privilège qui ne se répartit pas équitablement. En traitant le contrôle du temps comme une simple préférence individuelle, vous risquez de cristalliser une hiérarchie invisible où ceux qui possèdent déjà une stabilité domestique accaparent les créneaux les plus favorables, reléguant les autres, souvent les plus précaires ou les plus jeunes, aux marges de la journée scolaire.\n\nLe conflit qui émerge de votre proposition n'est pas seulement logistique, il est éthique. Prenons l'exemple de la situation de notre collègue, Monsieur Arnault, qui, en raison de ses responsabilités familiales, a été contraint d'accepter des cours en fin de journée pour compenser le départ anticipé de ses pairs ayant opté pour des matinées libres. Votre système, en se voulant neutre, valide en réalité une asymétrie de pouvoir. Il postule que chaque enseignant dispose d'une marge de manœuvre égale pour négocier son temps, ce qui est une fiction. En réalité, le temps est une ressource finie dont la disponibilité est conditionnée par des facteurs socio-économiques que votre modèle ignore délibérément. En transformant le temps en une variable d'ajustement individuelle, vous dépolitisez la question de la charge de travail et de l'équilibre vie privée-vie professionnelle, en faisant porter la responsabilité de cette répartition sur les épaules de l'individu plutôt que sur l'institution.\n\nIl est impératif de souligner que la flexibilité, lorsqu'elle est déconnectée d'une analyse des rapports de force, devient un vecteur d'injustice. Si nous permettons à certains de privilégier leurs convenances personnelles au détriment de la cohésion globale, nous brisons le contrat tacite qui lie notre communauté éducative. L'argument selon lequel cette modularité permettrait une meilleure conciliation est séduisant, certes, mais il occulte le fait que le temps libéré par les uns est nécessairement pris sur le temps subi par les autres. L'absence de contraintes collectives ne signifie pas la liberté pour tous ; elle signifie souvent la liberté pour les dominants et la contrainte pour les dominés. La neutralité de votre algorithme est, en somme, une forme de cécité volontaire face aux inégalités structurelles qui traversent notre corps enseignant.\n\nJe crains que l'implémentation de ce projet ne conduise à une atomisation de notre équipe. Si chacun s'enferme dans son propre créneau, dicté par ses impératifs privés, quel espace restera-t-il pour la collaboration, pour l'échange informel, pour cette vie d'établissement qui est pourtant le socle de notre réussite pédagogique ? Vous me répondrez sans doute que la technologie permet désormais de pallier ces absences physiques par des outils de communication asynchrone. Mais la communication n'est pas la communauté. Je crains que, sous couvert d'efficacité et de bien-être, nous ne soyons en train de démanteler ce qui fait la spécificité de notre métier : la présence partagée. La flexibilité, si elle n'est pas encadrée par une éthique de la solidarité, n'est qu'un paravent pour l'individualisme.\n\nEn conséquence, je ne peux valider votre projet en l'état. Il nous faut repenser les paramètres de votre modèle pour intégrer des garde-fous qui garantissent une équité réelle. Je propose que nous formions un groupe de travail paritaire afin d'examiner comment moduler ces horaires sans sacrifier la justice sociale. Il ne s'agit pas de rejeter la modernité, mais de refuser que celle-ci se fasse au prix d'une fragmentation de notre corps social. Le temps est le bien le plus précieux dont nous disposons ; le gérer de manière équitable exige plus qu'une prouesse mathématique, cela exige une vision politique de notre institution. J'attends votre retour sur cette proposition de groupe de travail, car il en va, à mon sens, de la pérennité de notre cohésion interne.\n\nPar ailleurs, cette fragmentation temporelle menace de fragiliser le dialogue pédagogique indispensable à la continuité des apprentissages pour nos élèves. Si les enseignants ne se croisent plus que par le biais de plateformes numériques, le partage informel des pratiques, ce terreau fertile où s'élaborent les solutions aux difficultés scolaires, risque de se tarir irrémédiablement. La salle des professeurs, loin d'être un simple espace de repos, constitue le lieu névralgique de la régulation collective où les tensions s'apaisent et où les projets interdisciplinaires germent. En privilégiant une optimisation algorithmique, nous risquons d'effacer cette culture commune, transformant notre établissement en une simple juxtaposition de prestations individuelles. L'efficacité technique, bien que séduisante sur le papier, pourrait paradoxalement engendrer une dégradation de la qualité de l'enseignement, faute de cette synergie humaine qui transcende les simples heures de cours. Il est donc crucial de réévaluer l'impact de votre modèle non seulement sur le bien-être des enseignants, mais surtout sur la cohérence de notre projet éducatif global. La technologie doit rester un outil au service de nos ambitions pédagogiques et non le moteur d'une restructuration qui, sous l'apparence de la modernité, risque de désagréger le tissu même de notre institution. Je vous invite donc à considérer ces enjeux humains avec autant de rigueur que vous avez apportée à la conception de votre algorithme.",
+    "wordCount": 926,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "cristalliser",
+        "lemma": "cristalliser",
+        "glosses": {
+          "es": "to solidify or make permanent",
+          "en": "to solidify or make permanent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asymétrie",
+        "lemma": "asymétrie",
+        "glosses": {
+          "es": "lack of equality or balance",
+          "en": "lack of equality or balance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dépolitisez",
+        "lemma": "dépolitisez",
+        "glosses": {
+          "es": "to remove the political dimension from something",
+          "en": "to remove the political dimension from something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atomisation",
+        "lemma": "atomisation",
+        "glosses": {
+          "es": "the process of breaking something into small, isolated units",
+          "en": "the process of breaking something into small, isolated units"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paravent",
+        "lemma": "paravent",
+        "glosses": {
+          "es": "a screen or facade used to hide something",
+          "en": "a screen or facade used to hide something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérennité",
+        "lemma": "pérennité",
+        "glosses": {
+          "es": "long-term sustainability or durability",
+          "en": "long-term sustainability or durability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 25.7,
+      "maxSentenceWords": 51,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est l'argument principal de Marc-Aurèle Vasseur concernant le projet de flexibilité ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il favorise une inégalité systémique."
+        },
+        {
+          "id": "a2",
+          "text": "Le projet est trop coûteux."
+        },
+        {
+          "id": "a3",
+          "text": "La technologie utilisée est obsolète."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "cette vision omet une réalité systémique : la liberté de choisir son emploi du temps est un privilège qui ne se répartit pas équitablement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Monsieur Arnault est-il mentionné dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il a démissionné."
+        },
+        {
+          "id": "a2",
+          "text": "Il subit les horaires imposés."
+        },
+        {
+          "id": "a3",
+          "text": "Il a conçu l'algorithme."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Monsieur Arnault, qui, en raison de ses responsabilités familiales, a été contraint d'accepter des cours en fin de journée",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la vision de l'auteur sur la communication asynchrone ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle est la solution idéale aux conflits d'horaires."
+        },
+        {
+          "id": "a2",
+          "text": "Elle est trop complexe pour les enseignants âgés."
+        },
+        {
+          "id": "a3",
+          "text": "Elle est insuffisante pour maintenir la cohésion."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Mais la communication n'est pas la communauté.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de la lettre de Marc-Aurèle Vasseur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Refuser le projet et proposer une alternative."
+        },
+        {
+          "id": "a2",
+          "text": "Féliciter Éléonore pour son travail."
+        },
+        {
+          "id": "a3",
+          "text": "Demander une augmentation de salaire immédiate."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En conséquence, je ne peux valider votre projet en l'état. Il nous faut repenser les paramètres de votre modèle",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton employé par l'auteur tout au long de sa correspondance ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indigné et agressif."
+        },
+        {
+          "id": "a2",
+          "text": "Analytique et préoccupé."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et nonchalant."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Bien que j'admire la sophistication technique de votre algorithme de répartition, je me sens contraint d'exprimer une réserve fondamentale",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'atomisation' dans le contexte du quatrième paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une meilleure organisation."
+        },
+        {
+          "id": "a2",
+          "text": "La fusion des départements."
+        },
+        {
+          "id": "a3",
+          "text": "La fragmentation du groupe."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Je crains que l'implémentation de ce projet ne conduise à une atomisation de notre équipe.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 200 mots de la part d'Éléonore Vance, défendant l'aspect démocratique de son projet tout en répondant aux craintes de Marc-Aurèle Vasseur concernant la cohésion sociale.",
+      "en": "Rédigez une réponse de 200 mots de la part d'Éléonore Vance, défendant l'aspect démocratique de son projet tout en répondant aux craintes de Marc-Aurèle Vasseur concernant la cohésion sociale."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez les nuances rhétoriques de cette correspondance pour identifier le dilemme éthique sous-jacent concernant la gestion du temps.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de l'autonomie temporelle : une correspondance interne | C2 Reading | WeLearn",
+      "en": "L'illusion de l'autonomie temporelle : une correspondance interne | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une analyse critique d'une proposition de flexibilité horaire au sein d'une institution académique, mettant en lumière le conflit entre l'équité structurelle et le choix individuel.",
+      "en": "Une analyse critique d'une proposition de flexibilité horaire au sein d'une institution académique, mettant en lumière le conflit entre l'équité structurelle et le choix individuel."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

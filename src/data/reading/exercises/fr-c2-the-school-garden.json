@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-school-garden",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion du volontariat : le jardin communautaire de la discorde",
+      "en": "L'illusion du volontariat : le jardin communautaire de la discorde"
+    },
+    "intro": {
+      "es": "Analyse critique d'une dynamique de pouvoir au sein d'un projet scolaire participatif où la contrainte sociale se dissimule derrière le masque de l'engagement citoyen.",
+      "en": "Analyse critique d'une dynamique de pouvoir au sein d'un projet scolaire participatif où la contrainte sociale se dissimule derrière le masque de l'engagement citoyen."
+    },
+    "mission": {
+      "es": "Analyser les mécanismes de pression sociale implicite au sein d'une structure éducative et évaluer la validité du concept de participation volontaire.",
+      "en": "Analyser les mécanismes de pression sociale implicite au sein d'une structure éducative et évaluer la validité du concept de participation volontaire."
+    },
+    "targetText": "Au sein de l'établissement scolaire des Hauts-Plateaux, le projet du « Jardin des Savoirs » était présenté comme une ode à l'engagement citoyen et à la pédagogie active. Madame Valérie, directrice visionnaire, insistait lors de chaque conseil d'administration sur le caractère intrinsèquement libre de l'implication des familles. Pourtant, une tension feutrée, presque imperceptible, imprégnait les réunions préparatoires. Le jardin, conçu comme une extension du curriculum, exigeait une main-d'œuvre constante pour l'entretien des parcelles de permaculture. Si l'inscription sur les listes de corvées dominicales était théoriquement facultative, l'absence de certains noms, notamment ceux des parents les plus influents du quartier, déclenchait une série de commentaires acerbes en salle des professeurs, répercutés ensuite par un système de messagerie informel qui érigeait la participation en étalon de la moralité parentale. Cette architecture de la culpabilité transformait le volontariat en une obligation déguisée, où le refus devenait synonyme d'un désintérêt manifeste pour la réussite scolaire de l'enfant.\n\nLe conflit éclata lors de la préparation de la fête des récoltes. Monsieur Morel, un architecte renommé dont la fille fréquentait l'établissement, refusa poliment de participer aux travaux de terrassement, invoquant une surcharge professionnelle chronique. Sa décision, bien que légitime sur le plan contractuel, fut perçue par le comité de pilotage, mené par une dynamique présidente d'association de parents, comme une défection inacceptable. Dans les jours qui suivirent, le nom de Monsieur Morel fut progressivement omis des invitations aux comités restreints, et sa fille fut écartée de la représentation théâtrale prévue pour le soir de la fête, sous prétexte d'un manque de disponibilité aux répétitions, pourtant fixées à des heures où le père travaillait. La sanction sociale était immédiate, systémique et, surtout, parfaitement niable, puisque chaque exclusion pouvait être justifiée par des critères techniques ou logistiques.\n\nCette situation met en exergue une aporie fondamentale de nos structures participatives : l'instrumentalisation du lien social à des fins de régulation comportementale. Lorsque le cadre scolaire s'immisce dans la sphère privée sous couvert de bien commun, il crée une zone grise où le consentement est vicié par la peur du déclassement symbolique. Le jardin, initialement pensé comme un espace de convivialité, devenait le théâtre d'une surveillance horizontale où les pairs se surveillaient mutuellement. Le volontariat, dans ce contexte, ne désigne plus l'acte libre d'un sujet autonome, mais la soumission tacite à une norme de groupe qui punit toute velléité d'indépendance. La rhétorique de la bienveillance, omniprésente dans les discours officiels, servait de paravent à une forme de coercition douce, rendant toute contestation non seulement difficile, mais socialement suicidaire.\n\nLa fin du projet fut marquée par une désertion massive après que la direction eut tenté d'officialiser le caractère obligatoire des permanences. En voulant transformer l'implicite en explicite, l'institution a brisé le pacte hypocrite qui maintenait l'illusion de la liberté. Le jardin, autrefois luxuriant, ne fut bientôt plus qu'une friche, témoin silencieux de l'effondrement d'un modèle fondé sur le faux-semblant. Les parents, libérés du poids de la contrainte, ne cherchèrent pas à restaurer le site, marquant ainsi leur refus d'une participation qui ne leur laissait aucune prise sur la finalité du projet. Cet épilogue souligne l'échec d'une gouvernance qui, en confondant adhésion et soumission, a fini par détruire l'objet même de son ambition pédagogique.\n\nEn dernière analyse, il convient de s'interroger sur la pérennité de ces initiatives qui, tout en prônant l'ouverture, se replient sur des logiques d'entre-soi excluantes. Le cas du jardin scolaire ne constitue pas une exception, mais le symptôme d'une érosion des espaces de liberté réelle au profit d'une injonction à la participation. Si l'engagement ne peut être refusé sans conséquences, alors il n'est plus un acte citoyen, mais une taxe sociale prélevée sur le temps et l'énergie des individus. La véritable éducation à la citoyenneté ne réside sans doute pas dans la fréquentation assidue d'un potager sous surveillance, mais dans la reconnaissance du droit au désengagement, condition sine qua non de la liberté individuelle et de la sincérité des relations humaines.\n\nToutefois, cette déchéance du Jardin des Savoirs soulève une question paradoxale : le vide laissé par cette friche ne constitue-t-il pas, en soi, une forme de victoire pour la communauté ? En délaissant ces parcelles, les parents ont, par un acte de résistance passive, réaffirmé une frontière nécessaire entre l'institution scolaire et leur sphère privée. Ce renoncement collectif n'est pas le signe d'une apathie citoyenne, mais plutôt l'émergence d'une conscience critique face aux mécanismes de contrôle social. En refusant de maintenir l'illusion d'une harmonie forcée, les familles ont mis en lumière la fragilité des projets participatifs qui négligent la diversité des rythmes de vie au profit d'une uniformité idéalisée. Dès lors, l'échec du potager devient une leçon pédagogique bien plus puissante que les récoltes qu'il aurait pu produire. Il enseigne aux élèves que l'autorité, lorsqu'elle s'égare dans la gestion des temps libres, finit par fragiliser sa propre légitimité. Cette désertion, loin d'être un simple abandon, agit comme un miroir tendu à l'établissement, révélant la vacuité d'un engagement qui ne serait qu'une allégeance déguisée. Pour que le lien social puisse prospérer, il doit être libéré de cette injonction permanente à la performance communautaire. Le silence qui règne désormais sur les terres en friche n'est pas le glas de la citoyenneté, mais le prélude nécessaire à une reconstruction fondée sur le respect mutuel et la libre adhésion. C'est dans ce terreau, débarrassé des mauvaises herbes de la contrainte, que pourrait, peut-être, germer une forme de coopération authentique, dénuée de tout calcul de prestige ou de peur du jugement social.",
+    "wordCount": 910,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "acerbes",
+        "lemma": "acerbes",
+        "glosses": {
+          "es": "harsh, biting, or critical",
+          "en": "harsh, biting, or critical"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aporie",
+        "lemma": "aporie",
+        "glosses": {
+          "es": "a logical impasse or contradiction",
+          "en": "a logical impasse or contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "velléité",
+        "lemma": "velléité",
+        "glosses": {
+          "es": "a faint or half-hearted wish or intention",
+          "en": "a faint or half-hearted wish or intention"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "coercition",
+        "lemma": "coercition",
+        "glosses": {
+          "es": "the practice of persuading someone to do something by using force or threats",
+          "en": "the practice of persuading someone to do something by using force or threats"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "friche",
+        "lemma": "friche",
+        "glosses": {
+          "es": "uncultivated or fallow land",
+          "en": "uncultivated or fallow land"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sine qua non",
+        "lemma": "sine qua non",
+        "glosses": {
+          "es": "an essential condition",
+          "en": "an essential condition"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La pression sociale derrière le volontariat."
+        },
+        {
+          "id": "a2",
+          "text": "L'importance de la permaculture scolaire."
+        },
+        {
+          "id": "a3",
+          "text": "La gestion administrative d'un jardin."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette situation met en exergue une aporie fondamentale de nos structures participatives : l'instrumentalisation du lien social à des fins de régulation comportementale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Monsieur Morel a-t-il été sanctionné ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il a dégradé le jardin."
+        },
+        {
+          "id": "a2",
+          "text": "Il a refusé de participer."
+        },
+        {
+          "id": "a3",
+          "text": "Il a critiqué la directrice."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Monsieur Morel, un architecte renommé dont la fille fréquentait l'établissement, refusa poliment de participer aux travaux de terrassement, invoquant une surcharge professionnelle chronique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que révèle l'exclusion de la fille de Monsieur Morel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un manque de talent."
+        },
+        {
+          "id": "a2",
+          "text": "Un problème technique."
+        },
+        {
+          "id": "a3",
+          "text": "Une punition indirecte."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La sanction sociale était immédiate, systémique et, surtout, parfaitement niable, puisque chaque exclusion pouvait être justifiée par des critères techniques ou logistiques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de l'auteur en décrivant la fin du projet ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Démontrer l'échec de la contrainte."
+        },
+        {
+          "id": "a2",
+          "text": "Souligner le manque de budget."
+        },
+        {
+          "id": "a3",
+          "text": "Valoriser le travail bénévole."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En voulant transformer l'implicite en explicite, l'institution a brisé le pacte hypocrite qui maintenait l'illusion de la liberté.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il pour analyser le projet ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et joyeux."
+        },
+        {
+          "id": "a2",
+          "text": "Analytique et critique."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre et descriptif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le volontariat, dans ce contexte, ne désigne plus l'acte libre d'un sujet autonome, mais la soumission tacite à une norme de groupe qui punit toute velléité d'indépendance.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'aporie' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un succès total."
+        },
+        {
+          "id": "a2",
+          "text": "Une étape simple."
+        },
+        {
+          "id": "a3",
+          "text": "Une impasse logique."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Cette situation met en exergue une aporie fondamentale de nos structures participatives : l'instrumentalisation du lien social à des fins de régulation comportementale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif (200 mots) dans lequel vous proposez une alternative au modèle participatif décrit dans le texte, en expliquant comment instaurer un véritable volontariat au sein d'une institution scolaire sans pour autant sacrifier la réalisation de projets collectifs.",
+      "en": "Rédigez un court essai argumentatif (200 mots) dans lequel vous proposez une alternative au modèle participatif décrit dans le texte, en expliquant comment instaurer un véritable volontariat au sein d'une institution scolaire sans pour autant sacrifier la réalisation de projets collectifs."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser les mécanismes de pression sociale implicite au sein d'une structure éducative et évaluer la validité du concept de participation volontaire.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion du volontariat : le jardin communautaire de la discorde | C2 Reading | WeLearn",
+      "en": "L'illusion du volontariat : le jardin communautaire de la discorde | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analyse critique d'une dynamique de pouvoir au sein d'un projet scolaire participatif où la contrainte sociale se dissimule derrière le masque de l'engagement citoyen.",
+      "en": "Analyse critique d'une dynamique de pouvoir au sein d'un projet scolaire participatif où la contrainte sociale se dissimule derrière le masque de l'engagement citoyen."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

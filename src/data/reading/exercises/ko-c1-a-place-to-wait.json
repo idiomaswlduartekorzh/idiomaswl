@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-a-place-to-wait",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "디지털 대기실의 역설",
+      "en": "디지털 대기실의 역설"
+    },
+    "intro": {
+      "es": "진료실 접수처의 기록을 통해 효율성을 추구하는 시스템이 어떻게 환자들의 심리적 불안을 외부로 전이시키는지 탐구합니다.",
+      "en": "진료실 접수처의 기록을 통해 효율성을 추구하는 시스템이 어떻게 환자들의 심리적 불안을 외부로 전이시키는지 탐구합니다."
+    },
+    "mission": {
+      "es": "이 글을 읽고 기술적 효율성과 인간적 경험 사이의 긴장 관계를 분석하십시오.",
+      "en": "이 글을 읽고 기술적 효율성과 인간적 경험 사이의 긴장 관계를 분석하십시오."
+    },
+    "targetText": "오후 세 시, 접수처의 모니터는 평온했다. 대기 인원은 고작 세 명. 하지만 로비의 공기는 팽팽하게 당겨진 활시위 같았다. 나는 키오스크의 인터페이스를 조정하며 대기 시간을 실시간으로 갱신했다. 시스템은 알고리즘에 따라 대기 시간을 십 분 단위로 줄여 표기했다. 숫자가 줄어들수록 환자들의 표정은 굳어졌다. 그들은 화면 속 숫자가 자신의 진료 순서가 아닌, 자신을 밀어내는 카운트다운처럼 느껴지는 듯했다. 접수처 너머의 디지털 대기실은 완벽하게 효율적이었으나, 그 안의 인간들은 자신의 차례가 언제 올지 모른다는 막연한 공포를 안고 있었다. 김 씨는 세 번째로 호출을 받았지만, 정작 진료실 앞 의자에는 앉지 않았다. 그는 복도 끝 창가에 서서 바깥을 응시했다. 화면 속 대기 번호는 0으로 수렴하고 있었지만, 김 씨의 불안은 오히려 정점을 향해 치닫고 있었다. 나는 그에게 다가가 순서가 임박했음을 알렸다. 그는 나를 보며 웃었지만, 그 눈은 웃고 있지 않았다. 그는 시스템이 제공하는 예측 가능성이 오히려 자신의 존재를 지워버리는 것 같다고 토로했다. 시스템은 환자를 숫자로 치환하여 대기실의 밀도를 관리했지만, 그 결과 환자들은 로비라는 물리적 공간에서 소외되었다. 창밖에는 비가 내리기 시작했다. 로비 안은 정적만이 감돌았지만, 유리창 너머로 보이는 거리의 사람들은 각자의 속도로 움직이고 있었다. 나는 다시 모니터를 보았다. 대기 인원은 여전히 세 명이었다. 하지만 환자들의 불안은 이미 로비의 경계를 넘어 외부로 흩어지고 있었다. 시스템은 대기 시간을 줄이는 데 성공했을지 모르나, 환자들이 겪는 심리적 대기 시간은 오히려 길어지고 있었다. 진료가 끝난 후에도 환자들은 쉽게 자리를 뜨지 못했다. 그들은 디지털 숫자가 지시하는 세계와 자신의 감각이 느끼는 세계 사이에서 길을 잃은 듯했다. 나는 퇴근을 준비하며 다시 한번 모니터를 확인했다. 모든 수치는 정상이었다. 그러나 그 수치가 담아내지 못한 침묵의 무게가 로비 가득 고여 있었다. 시스템이 효율을 증명할수록, 이곳을 찾는 이들의 불안은 더욱 정교하게 파편화되었다. 나는 조용히 전원을 껐다. 화면이 꺼지자 로비는 어둠 속으로 침잠했다. 외부의 비는 그치지 않았고, 나는 그 정적 속에서 시스템이 해결하지 못한 인간의 고독을 마주했다.\n\n결국 시스템이 지향하는 극단적인 효율성은 인간의 고유한 서사를 산술적인 데이터로 치환하며 오히려 진료실 문턱을 더 높게 만드는 역설을 낳았다. 환자들은 이제 자신의 고통을 수치화된 대기 시간의 틀 안에 가두어야만 하는 상황에 직면했고, 그 과정에서 질병이라는 개인적인 경험은 시스템의 관리 대상이라는 건조한 정보로 전락하고 말았다. 이러한 기술적 최적화가 가져온 단절은 단순히 대기 시간의 지연을 넘어 환자와 의료진 사이의 신뢰라는 근본적인 연결 고리마저 느슨하게 만들었다. 모니터 속의 숫자가 0을 가리키며 완벽한 통제력을 과시할 때, 정작 그 이면에서 소외된 이들의 불안은 시스템의 연산 범위를 벗어나 걷잡을 수 없이 증폭되는 양상을 보였다. 효율이라는 이름으로 포장된 디지털 환경은 환자들에게 심리적 안정을 제공하기는커녕 오히려 자신을 숫자로만 정의해야 한다는 강박을 심어주어 치유의 첫걸음인 공감의 가능성을 스스로 차단하고 있었다. 이제 로비의 정적은 단순히 기다림의 시간이 아니라 시스템의 논리로부터 소외된 이들이 각자의 고독을 견디며 스스로를 지우는 침묵의 의례가 되었다. 어둠 속에서 나는 비로소 깨달았다. 우리가 구축한 이 정교한 시스템이 정작 보살펴야 할 인간의 마음은 헤아리지 못한 채 오직 데이터의 흐름만을 최적화하는 데 매몰되어 있었다는 사실을 말이다. 퇴근길에 마주한 차가운 빗줄기는 시스템이 해결하지 못한 채 방치해 둔 인간의 파편화된 불안을 씻어내기에는 너무나도 무력해 보였고, 나는 시스템의 오류보다 더 깊은 인간적 결핍을 마주하며 무거운 발걸음을 옮겨야 했다.",
+    "wordCount": 460,
+    "estimatedMinutes": 19,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "팽팽하게",
+        "lemma": "팽팽하게",
+        "glosses": {
+          "es": "tautly",
+          "en": "tautly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "수렴하고",
+        "lemma": "수렴하고",
+        "glosses": {
+          "es": "converging",
+          "en": "converging"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "치환하여",
+        "lemma": "치환하여",
+        "glosses": {
+          "es": "substituted",
+          "en": "substituted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "소외되었다",
+        "lemma": "소외되었다",
+        "glosses": {
+          "es": "alienated",
+          "en": "alienated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "파편화되었다",
+        "lemma": "파편화되었다",
+        "glosses": {
+          "es": "fragmented",
+          "en": "fragmented"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "침잠했다",
+        "lemma": "침잠했다",
+        "glosses": {
+          "es": "submerged",
+          "en": "submerged"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 11.8,
+      "maxSentenceWords": 29,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심적인 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "효율적 시스템이 초래하는 심리적 소외"
+        },
+        {
+          "id": "a2",
+          "text": "디지털 대기 시스템의 도입 효과"
+        },
+        {
+          "id": "a3",
+          "text": "접수처 직원이 겪는 업무적 고충과 해결 방안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "시스템은 환자를 숫자로 치환하여 대기실의 밀도를 관리했지만, 그 결과 환자들은 로비라는 물리적 공간에서 소외되었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "김 씨가 진료실 앞 의자에 앉지 않은 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "진료 순서를 기다리기 싫어서"
+        },
+        {
+          "id": "a2",
+          "text": "시스템의 예측 가능성에 거부감을 느껴서"
+        },
+        {
+          "id": "a3",
+          "text": "창밖의 비를 구경하고 싶어서"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "그는 시스템이 제공하는 예측 가능성이 오히려 자신의 존재를 지워버리는 것 같다고 토로했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "작가가 묘사하는 '디지털 대기실의 역설'이란 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "기계가 인간보다 더 정확하다는 점"
+        },
+        {
+          "id": "a2",
+          "text": "시스템이 효율적일수록 병원의 수익이 줄어든다는 점"
+        },
+        {
+          "id": "a3",
+          "text": "대기 시간이 짧아질수록 환자의 불안은 커진다는 점"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "숫자가 줄어들수록 환자들의 표정은 굳어졌다. 그들은 화면 속 숫자가 자신의 진료 순서가 아닌, 자신을 밀어내는 카운트다운처럼 느껴지는 듯했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 마지막에 모니터 전원을 끄는 행위의 의도는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "디지털 시스템의 한계를 인정하며"
+        },
+        {
+          "id": "a2",
+          "text": "퇴근 시간을 알리기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "환자들의 불안을 잠재우기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "나는 그 정적 속에서 시스템이 해결하지 못한 인간의 고독을 마주했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글 전반에 흐르는 서술자의 태도는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "비판적이다"
+        },
+        {
+          "id": "a2",
+          "text": "성찰적이다"
+        },
+        {
+          "id": "a3",
+          "text": "냉소적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "나는 퇴근을 준비하며 다시 한번 모니터를 확인했다. 모든 수치는 정상이었다. 그러나 그 수치가 담아내지 못한 침묵의 무게가 로비 가득 고여 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'치환하여'와 문맥적 의미가 가장 유사한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "대신하여"
+        },
+        {
+          "id": "a2",
+          "text": "대체하여"
+        },
+        {
+          "id": "a3",
+          "text": "바꾸어"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "시스템은 환자를 숫자로 치환하여 대기실의 밀도를 관리했지만",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "디지털 기술이 인간의 감정을 수치화할 때 발생하는 부작용에 대해 자신의 견해를 300자 내외로 서술하십시오.",
+      "en": "디지털 기술이 인간의 감정을 수치화할 때 발생하는 부작용에 대해 자신의 견해를 300자 내외로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "이 글을 읽고 기술적 효율성과 인간적 경험 사이의 긴장 관계를 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "디지털 대기실의 역설 | C1 Reading | WeLearn",
+      "en": "디지털 대기실의 역설 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "진료실 접수처의 기록을 통해 효율성을 추구하는 시스템이 어떻게 환자들의 심리적 불안을 외부로 전이시키는지 탐구합니다.",
+      "en": "진료실 접수처의 기록을 통해 효율성을 추구하는 시스템이 어떻게 환자들의 심리적 불안을 외부로 전이시키는지 탐구합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

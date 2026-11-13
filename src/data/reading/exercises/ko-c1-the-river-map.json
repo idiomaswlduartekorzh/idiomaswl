@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-river-map",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "홍수 지도의 딜레마: 경계선 위의 침묵",
+      "en": "홍수 지도의 딜레마: 경계선 위의 침묵"
+    },
+    "intro": {
+      "es": "두 가지 홍수 위험 지도가 충돌하며 마을의 운명을 가르는 상황을 통해, 데이터 해석의 주관성과 정책적 모호함에 대해 고찰합니다.",
+      "en": "두 가지 홍수 위험 지도가 충돌하며 마을의 운명을 가르는 상황을 통해, 데이터 해석의 주관성과 정책적 모호함에 대해 고찰합니다."
+    },
+    "mission": {
+      "es": "제시된 글을 읽고 홍수 지도 해석 방식의 차이가 주민들에게 미치는 실질적인 영향과 그로 인한 사회적 갈등을 분석하십시오.",
+      "en": "제시된 글을 읽고 홍수 지도 해석 방식의 차이가 주민들에게 미치는 실질적인 영향과 그로 인한 사회적 갈등을 분석하십시오."
+    },
+    "targetText": "해안가 마을인 '청운리'는 최근 두 개의 상반된 홍수 위험 지도를 마주하며 깊은 혼란에 빠졌다. 국토안전연구소가 발표한 제1지도는 과거 50년간의 누적 강수량을 토대로 하천 범람 가능성을 예측했고, 민간 환경 컨설팅 업체인 '에코시큐어'가 내놓은 제2지도는 최근의 지반 침하와 해수면 상승 속도를 변수로 삼았다. 이 두 지도의 경계선은 미묘하게 달랐는데, 특히 마을 중심부의 상업 지구를 가로지르는 선이 문제였다. 제1지도에 따르면 이 구역은 안전지대였지만, 제2지도에서는 고위험군으로 분류되어 보험 가입이 불가능해졌다. 마을 이장인 김철수 씨는 에코시큐어의 지도를 근거로 방재 시설 확충을 요구했으나, 관할 구청은 법적 효력이 있는 제1지도를 고수하며 예산 지원을 거부했다. 주민들은 이 모순된 정보 사이에서 재산권 행사에 제약을 받기 시작했다. 상가 주인들은 제2지도를 신뢰하여 건물을 보강하려 했지만, 정작 구청의 지원 없이는 막대한 비용을 감당할 수 없었다. 반대로 제1지도를 믿는 이들은 변화를 거부하며 현상 유지를 주장했다. 이러한 갈등은 단순한 데이터의 차이를 넘어, 누구의 삶을 우선적으로 보호할 것인가라는 윤리적 질문으로 번졌다. 결국, 지난 폭우 때 제2지도가 경고했던 저지대 주택들이 침수되면서 상황은 걷잡을 수 없이 악화되었다. 구청은 여전히 제1지도의 통계적 유의성을 주장하며 책임을 회피했고, 주민들은 데이터라는 이름의 장벽 뒤에 숨은 행정의 무능을 뼈저리게 체감했다. 지도는 단순한 지형 정보가 아니라, 권력의 해석이 투영된 정치적 도구였다. 마을 사람들은 이제 지도의 선을 긋는 자가 누구인지, 그 선이 누구의 삶을 지우고 있는지 묻기 시작했다. 침수 피해를 입은 김 씨는 자신의 집이 안전지대라는 제1지도의 문구를 찢어버리며, 숫자가 현실의 고통을 대변하지 못하는 현실에 절망했다. 데이터의 객관성이라는 신화는 무너졌고, 마을에는 차가운 불신만이 남았다. 이제 청운리에는 두 개의 지도 대신, 서로 다른 고통의 크기를 잰 상처만이 기록되고 있다. 행정 당국은 여전히 기술적 오류를 운운하며 사태를 수습하려 하지만, 이미 무너진 신뢰의 둑은 그 어떤 통계로도 다시 쌓을 수 없는 지경에 이르렀다. 주민들은 이제 지도가 아닌, 서로의 눈을 보며 생존을 도모해야 하는 처지에 놓였다.\n\n이러한 불신은 단순히 행정에 대한 원망을 넘어 청운리 공동체 내부의 결속력을 근본적으로 흔드는 결과를 초래하고 말았다. 제1지도를 맹신하며 방재 시설 확충을 반대했던 주민들과 제2지도의 경고를 토대로 현실적인 대응을 촉구했던 상인들 사이에는 씻을 수 없는 감정의 골이 깊게 패였다. 이제 마을 회관에 모인 사람들은 공통의 안전을 논의하기보다 서로의 정치적 성향과 정보의 출처를 의심하며 날 선 공방을 이어가고 있다. 데이터가 주민들을 보호하기 위한 도구가 아니라 오히려 이웃을 편 가르는 분열의 씨앗이 된 셈이다. 전문가들이 제시한 과학적 수치는 결국 인간의 삶을 규정하는 잣대가 되었고, 그 과정에서 소외된 이들은 각자의 고립된 성채 안으로 숨어버렸다. 행정 당국이 뒤늦게 통합 지도를 제작하겠다고 공언했지만 이미 상처 입은 주민들에게 그것은 또 다른 기만일 뿐이다. 이제 청운리의 미래는 그 어떤 정밀한 지도 위에도 그려질 수 없는 불확실성의 영역으로 접어들었다. 사람들은 이제 숫자가 아닌 서로의 아픔을 공유하며 무너진 신뢰를 복구하기 위한 지난한 여정을 시작해야만 하는 운명에 처했다. 지도의 선이 그어놓은 경계보다 더 무서운 것은 바로 사람들의 마음속에 자리 잡은 차가운 단절의 벽일지도 모른다.",
+    "wordCount": 421,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "상반된",
+        "lemma": "상반된",
+        "glosses": {
+          "es": "conflicting",
+          "en": "conflicting"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "지반 침하",
+        "lemma": "지반 침하",
+        "glosses": {
+          "es": "ground subsidence",
+          "en": "ground subsidence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고수하며",
+        "lemma": "고수하며",
+        "glosses": {
+          "es": "sticking to",
+          "en": "sticking to"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순된",
+        "lemma": "모순된",
+        "glosses": {
+          "es": "contradictory",
+          "en": "contradictory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "투영된",
+        "lemma": "투영된",
+        "glosses": {
+          "es": "projected",
+          "en": "projected"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "유의성",
+        "lemma": "유의성",
+        "glosses": {
+          "es": "significance",
+          "en": "significance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.6,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "데이터 해석의 차이가 초래한 사회적 갈등과 행정의 한계"
+        },
+        {
+          "id": "a2",
+          "text": "홍수 예방 기술의 발전"
+        },
+        {
+          "id": "a3",
+          "text": "지반 침하가 해안가 마을에 미치는 환경적 영향에 대한 심층 분석"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이 두 지도의 경계선은 미묘하게 달랐는데, 특히 마을 중심부의 상업 지구를 가로지르는 선이 문제였다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "구청이 방재 시설 확충 지원을 거부한 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "예산이 부족해서"
+        },
+        {
+          "id": "a2",
+          "text": "제1지도를 신뢰해서"
+        },
+        {
+          "id": "a3",
+          "text": "제2지도의 오류를 발견해서"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "관할 구청은 법적 효력이 있는 제1지도를 고수하며 예산 지원을 거부했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "주민들이 겪는 실질적인 어려움은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지도의 오류로 인한 마을 공동체 해체"
+        },
+        {
+          "id": "a2",
+          "text": "지반 침하로 인한 주택의 물리적 붕괴"
+        },
+        {
+          "id": "a3",
+          "text": "보험 가입 제한과 재산권 행사 제약"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "주민들은 이 모순된 정보 사이에서 재산권 행사에 제약을 받기 시작했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 '지도는 정치적 도구'라고 표현한 의도는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지도 제작자의 주관이 정책 결정에 개입될 수 있음을 시사하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "지도가 지형을 정밀하게 묘사하지 못함을 비판하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "지도 제작 과정에서 정치인들의 부당한 압력이 있었음을 폭로하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "지도는 단순한 지형 정보가 아니라, 권력의 해석이 투영된 정치적 도구였다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 회의적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "구청은 여전히 제1지도의 통계적 유의성을 주장하며 책임을 회피했고, 주민들은 데이터라는 이름의 장벽 뒤에 숨은 행정의 무능을 뼈저리게 체감했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'고수하며'와 문맥상 가장 유사한 의미로 쓰인 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "지키며"
+        },
+        {
+          "id": "a2",
+          "text": "유지하며"
+        },
+        {
+          "id": "a3",
+          "text": "고집하며"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "관할 구청은 법적 효력이 있는 제1지도를 고수하며 예산 지원을 거부했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "홍수 위험 지도의 불일치가 주민들의 삶에 미치는 구체적인 영향과, 이러한 상황에서 공공기관이 가져야 할 태도에 대해 본인의 견해를 300자 내외로 서술하십시오.",
+      "en": "홍수 위험 지도의 불일치가 주민들의 삶에 미치는 구체적인 영향과, 이러한 상황에서 공공기관이 가져야 할 태도에 대해 본인의 견해를 300자 내외로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "제시된 글을 읽고 홍수 지도 해석 방식의 차이가 주민들에게 미치는 실질적인 영향과 그로 인한 사회적 갈등을 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "홍수 지도의 딜레마: 경계선 위의 침묵 | C1 Reading | WeLearn",
+      "en": "홍수 지도의 딜레마: 경계선 위의 침묵 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "두 가지 홍수 위험 지도가 충돌하며 마을의 운명을 가르는 상황을 통해, 데이터 해석의 주관성과 정책적 모호함에 대해 고찰합니다.",
+      "en": "두 가지 홍수 위험 지도가 충돌하며 마을의 운명을 가르는 상황을 통해, 데이터 해석의 주관성과 정책적 모호함에 대해 고찰합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

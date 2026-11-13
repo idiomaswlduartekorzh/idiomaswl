@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-shared-desks",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion du libre arbitre au sein de l'Atelier Convergent",
+      "en": "L'illusion du libre arbitre au sein de l'Atelier Convergent"
+    },
+    "intro": {
+      "es": "Dans cet échange épistolaire, deux collègues débattent de la structure tarifaire d'un espace de coworking. Analysez comment la liberté de choix s'efface devant des contraintes économiques invisibles.",
+      "en": "Dans cet échange épistolaire, deux collègues débattent de la structure tarifaire d'un espace de coworking. Analysez comment la liberté de choix s'efface devant des contraintes économiques invisibles."
+    },
+    "mission": {
+      "es": "Lisez attentivement cet échange courriel entre Marc, gestionnaire de l'espace, et Élise, une locataire régulière, pour comprendre la tension entre autonomie individuelle et déterminisme financier.",
+      "en": "Lisez attentivement cet échange courriel entre Marc, gestionnaire de l'espace, et Élise, une locataire régulière, pour comprendre la tension entre autonomie individuelle et déterminisme financier."
+    },
+    "targetText": "Objet : Réflexion sur la nouvelle tarification des espaces de travail\n\nCher Marc,\n\nJe t'écris suite à l'annonce de la refonte tarifaire de l'Atelier Convergent. Si l'idée d'une modularité accrue semblait séduisante de prime abord, l'analyse approfondie des modalités me laisse perplexe. Tu présentes cette flexibilité comme un vecteur d'émancipation pour les travailleurs indépendants, mais il me semble que nous assistons à une subtile atomisation de nos droits. En nous offrant le choix entre des plages horaires fragmentées, des accès restreints aux zones de silence ou des forfaits incluant des services de conciergerie, tu ne fais que déplacer le curseur de la contrainte. Chaque option, bien que présentée comme une opportunité de personnalisation, porte en elle le sceau d'un coût privé différencié, transformant notre environnement de travail en un marché où la productivité est indexée sur notre capacité à sacrifier notre confort. Est-ce réellement une liberté que de choisir entre l'isolement dans une alcôve exiguë ou la cacophonie d'un espace ouvert sous prétexte de rentabilité ?\n\nChère Élise,\n\nTa lecture de la situation, bien que nourrie par une méfiance intellectuelle stimulante, occulte la réalité pragmatique de notre gestion. L'Atelier Convergent n'est pas une entité philanthropique. La diversité des options que tu décries comme une « atomisation » est en réalité une réponse directe à la demande hétérogène de nos membres. Certains, comme les développeurs en phase de déploiement, exigent une isolation acoustique totale, tandis que d'autres, comme les créatifs, privilégient l'échange spontané. En proposant ces paliers, nous permettons à chacun d'ajuster son investissement à ses besoins réels. La liberté, dans ce contexte, ne réside pas dans l'absence de contrainte, mais dans la possibilité de choisir la contrainte qui sied le mieux à son activité. N'est-il pas préférable de payer pour ce que l'on consomme réellement plutôt que de subir une mutualisation des coûts qui pénaliserait ceux dont les besoins sont plus modestes ?\n\nMarc, ton argumentaire repose sur une vision comptable qui méconnaît la dimension sociale du travail. En segmentant l'espace selon des critères purement financiers, tu brises le ciment communautaire qui faisait la force de notre atelier. Lorsque le choix devient un exercice de calcul permanent, la camaraderie s'étiole. Nous ne sommes plus des collègues partageant une vision, mais des agents économiques optimisant leurs ressources. Le risque est de voir émerger une stratification sociale au sein même de nos locaux, où la qualité de l'environnement de travail devient le marqueur d'une réussite financière immédiate. Choisir son espace, c'est choisir son statut, et je crains que cette hiérarchisation ne soit irréversible. Ce n'est pas la mutualisation qui est injuste, c'est l'individualisation forcée de nos conditions d'existence.\n\nJe comprends ton inquiétude, Élise, mais je crains que tu ne romantises une époque révolue. La solidarité ne peut être imposée par une structure rigide. Les membres qui s'estiment lésés par les nouveaux tarifs ont la liberté de migrer vers des espaces plus conformes à leurs attentes. Le marché, bien que froid, reste le seul arbitre neutre. Si la communauté s'étiole, c'est peut-être qu'elle ne reposait que sur une illusion de gratuité. Notre rôle est de garantir la pérennité de l'infrastructure, non de dicter les relations humaines. La liberté de choisir, même si elle est contrainte par le budget, reste supérieure à l'imposition d'un modèle unique qui ne satisfait personne pleinement.\n\nLa réponse est là, dans ton aveu final : la pérennité de l'infrastructure prime sur la vitalité de l'échange. En érigeant le marché en arbitre, tu renonces à toute responsabilité éthique. Nous voilà donc réduits à naviguer dans un espace où chaque mètre carré est une transaction. Tu appelles cela de la liberté, j'y vois une servitude volontaire où le choix n'est qu'une illusion masquant une soumission accrue aux impératifs de rentabilité. Nous ne sommes plus des usagers, nous sommes des clients captifs d'un système qui nous persuade que notre mal-être est le résultat d'un mauvais choix personnel. Je reste, malgré tout, dans l'attente de voir si cette atomisation portera ses fruits ou si elle ne fera que vider l'Atelier de sa substance humaine.\n\nPourtant, au-delà de ce constat amer, il convient d'analyser l'impact systémique de cette mutation sur la créativité elle-même. En transformant chaque interaction en une dépense potentielle, l'Atelier Convergent risque d'étouffer les sérendipités qui naissaient autrefois de la gratuité des échanges informels. Si la rentabilité guide désormais chaque mètre carré, le coût d'opportunité d'une simple discussion devient prohibitif pour le travailleur précarisé par ces nouveaux tarifs. Cette logique marchande, en valorisant exclusivement l'efficacité mesurable, évacue les temps morts, ces zones de latence nécessaires à l'éclosion des idées les plus audacieuses. Nous assistons à une standardisation cognitive où l'espace ne sert plus de catalyseur d'innovation, mais de simple conteneur logistique pour une main-d'œuvre atomisée. À terme, cette spécialisation extrême des lieux pourrait paradoxalement nuire à la viabilité économique que tu défends, car un espace de travail sans âme ni porosité entre les disciplines perd son avantage concurrentiel face aux plateformes numériques dématérialisées. En cherchant à optimiser le rendement immédiat de chaque alcôve, tu sacrifies le terreau fertile qui permettait à notre communauté de se distinguer par sa richesse intellectuelle. La pérennité de l'infrastructure, telle que tu la conçois, s'avère être une coquille vide si elle ne parvient plus à susciter cette émulation collective qui justifiait, à l'origine, notre présence physique en ces lieux. Nous ne sommes plus dans une dynamique de collaboration, mais dans une gestion patrimoniale où la valeur d'usage s'efface devant une comptabilité analytique froide, transformant notre lieu de vie en une simple vitrine d'optimisation.",
+    "wordCount": 916,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "atomisation",
+        "lemma": "atomisation",
+        "glosses": {
+          "es": "The process of breaking something down into small, isolated units.",
+          "en": "The process of breaking something down into small, isolated units."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "exiguë",
+        "lemma": "exiguë",
+        "glosses": {
+          "es": "Very small, cramped, or narrow.",
+          "en": "Very small, cramped, or narrow."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "philanthropique",
+        "lemma": "philanthropique",
+        "glosses": {
+          "es": "Relating to charitable actions or the desire to promote the welfare of others.",
+          "en": "Relating to charitable actions or the desire to promote the welfare of others."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sied",
+        "lemma": "sied",
+        "glosses": {
+          "es": "Suits, fits, or is appropriate for.",
+          "en": "Suits, fits, or is appropriate for."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "étiole",
+        "lemma": "étiole",
+        "glosses": {
+          "es": "Wither, fade, or lose vitality.",
+          "en": "Wither, fade, or lose vitality."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérennité",
+        "lemma": "pérennité",
+        "glosses": {
+          "es": "Durability, long-lasting nature, or sustainability.",
+          "en": "Durability, long-lasting nature, or sustainability."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.8,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le cœur du désaccord entre Marc et Élise ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La légitimité morale de la tarification."
+        },
+        {
+          "id": "a2",
+          "text": "La gestion technique des locaux."
+        },
+        {
+          "id": "a3",
+          "text": "Le coût réel des services proposés."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En nous offrant le choix entre des plages horaires fragmentées, des accès restreints aux zones de silence ou des forfaits incluant des services de conciergerie, tu ne fais que déplacer le curseur de la contrainte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Marc soutient-il la nouvelle segmentation tarifaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour maximiser les profits."
+        },
+        {
+          "id": "a2",
+          "text": "Pour répondre à la diversité des besoins."
+        },
+        {
+          "id": "a3",
+          "text": "Pour réduire la taille de l'atelier."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La diversité des options que tu décries comme une « atomisation » est en réalité une réponse directe à la demande hétérogène de nos membres.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère Élise concernant les conséquences sociales de ce changement ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une augmentation de la productivité."
+        },
+        {
+          "id": "a2",
+          "text": "Une meilleure relation entre collègues."
+        },
+        {
+          "id": "a3",
+          "text": "Une perte de cohésion communautaire."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Lorsque le choix devient un exercice de calcul permanent, la camaraderie s'étiole.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal d'Élise dans son dernier message ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dénoncer la vision purement transactionnelle de la gestion."
+        },
+        {
+          "id": "a2",
+          "text": "Négocier une réduction de tarif pour les membres."
+        },
+        {
+          "id": "a3",
+          "text": "Proposer une alternative concrète à la structure actuelle."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "En érigeant le marché en arbitre, tu renonces à toute responsabilité éthique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel qualificatif décrit le mieux le ton d'Élise ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Indifférent et détaché."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et désabusé."
+        },
+        {
+          "id": "a3",
+          "text": "Optimiste et constructif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Je reste, malgré tout, dans l'attente de voir si cette atomisation portera ses fruits ou si elle ne fera que vider l'Atelier de sa substance humaine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « exiguë » dans le contexte du premier message ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Spacieuse."
+        },
+        {
+          "id": "a2",
+          "text": "Inconfortable."
+        },
+        {
+          "id": "a3",
+          "text": "Très étroite."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Est-ce réellement une liberté que de choisir entre l'isolement dans une alcôve exiguë ou la cacophonie d'un espace ouvert sous prétexte de rentabilité ?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 200 mots dans laquelle Marc tente de réconcilier sa vision managériale avec les préoccupations éthiques d'Élise, tout en maintenant sa position sur la nécessité économique.",
+      "en": "Rédigez une réponse de 200 mots dans laquelle Marc tente de réconcilier sa vision managériale avec les préoccupations éthiques d'Élise, tout en maintenant sa position sur la nécessité économique."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lisez attentivement cet échange courriel entre Marc, gestionnaire de l'espace, et Élise, une locataire régulière, pour comprendre la tension entre autonomie individuelle et déterminisme financier.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion du libre arbitre au sein de l'Atelier Convergent | C2 Reading | WeLearn",
+      "en": "L'illusion du libre arbitre au sein de l'Atelier Convergent | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans cet échange épistolaire, deux collègues débattent de la structure tarifaire d'un espace de coworking. Analysez comment la liberté de choix s'efface devant des contraintes économiques invisibles.",
+      "en": "Dans cet échange épistolaire, deux collègues débattent de la structure tarifaire d'un espace de coworking. Analysez comment la liberté de choix s'efface devant des contraintes économiques invisibles."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

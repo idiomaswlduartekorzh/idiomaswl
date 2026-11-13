@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-a-room-for-repairs",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-room-for-repairs",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "repair workshop",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "수리 공동체의 명암: '재생의 밤'을 다녀와서",
+      "en": "수리 공동체의 명암: '재생의 밤'을 다녀와서"
+    },
+    "intro": {
+      "es": "지역 수리 워크숍에서 벌어진 자원봉사자와 운영진 간의 갈등을 다룬 비평문입니다. 공동체 의식과 기술적 전문성 사이의 간극을 분석합니다.",
+      "en": "지역 수리 워크숍에서 벌어진 자원봉사자와 운영진 간의 갈등을 다룬 비평문입니다. 공동체 의식과 기술적 전문성 사이의 간극을 분석합니다."
+    },
+    "mission": {
+      "es": "본문을 읽고 수리 워크숍의 운영 방식과 그 이면에 숨겨진 갈등의 본질을 파악하십시오.",
+      "en": "본문을 읽고 수리 워크숍의 운영 방식과 그 이면에 숨겨진 갈등의 본질을 파악하십시오."
+    },
+    "targetText": "지난 금요일, 우리 동네 '다시 살림' 워크숍에서 열린 '재생의 밤' 행사는 겉보기에 완벽한 공동체 축제였다. 수십 명의 주민이 고장 난 가전제품을 들고 모여들었고, 운영진은 이들이 직접 수리 과정에 참여하도록 독려하며 '함께하는 가치'를 끊임없이 강조했다. 행사장 곳곳에는 서툰 솜씨로 나사를 조이는 주민들의 웃음소리가 가득했고, 주최 측은 이를 두고 자원순환의 민주화라는 거창한 수식어를 붙였다. 하지만 그 활기찬 풍경 뒤에는 묵묵히 자신의 기술을 소진하고 있는 소수의 숙련공들이 있었다. \n\n행사의 핵심은 참여형 수리였지만, 실제로는 고난도의 기술적 난관에 봉착할 때마다 운영진은 구석에서 대기하던 김 씨와 박 씨를 호출했다. 이들은 수십 년간 엔지니어로 일해온 전문가들이지만, 이번 행사에 참여하는 동안 어떠한 보상도 받지 못한 채 그저 '공동체 기여'라는 명목 아래 착취당하고 있었다. 주민들은 자신의 물건이 고쳐지는 과정에서 즐거움을 느꼈을지 모르나, 그 과정에서 소모된 전문가들의 시간과 노동력은 철저히 투명 인간 취급을 받았다. 운영진이 강조한 참여의 가치는 사실상 이들의 무임금 노동을 은폐하기 위한 수사에 불과했다. \n\n갈등은 행사가 끝날 무렵, 한 주민이 고가의 오디오 수리를 요구하며 발생했다. 김 씨는 부품 수급의 어려움을 이유로 정중히 거절했으나, 운영진은 '모두가 함께 배우는 자리'라며 그의 전문성을 묵살하고 강제로 수리를 종용했다. 결국 김 씨는 분노하며 자리를 떠났고, 남겨진 기기는 반쯤 분해된 채 방치되었다. 운영진은 이를 두고 '실패도 과정의 일부'라며 상황을 무마하려 했지만, 그 자리에 있던 사람들은 모두 알고 있었다. 이것은 학습의 실패가 아니라, 존중의 실패였다는 사실을 말이다. \n\n이 사건은 단순한 해프닝으로 치부될 수 없다. 공동체라는 이름으로 개인의 전문성을 당연하게 요구하는 행태는 지속 가능한 수리 문화의 근간을 흔든다. 기술을 가진 이들에게 정당한 대우를 하지 않으면서 공동체의 참여만을 강조하는 것은, 결국 숙련된 인력을 외부로 내몰고 워크숍의 질적 저하를 초래할 뿐이다. 진정한 의미의 재생은 물건뿐만 아니라, 그 물건을 고치는 사람의 노동 가치를 재발견하는 데서 시작되어야 한다. \n\n결국 이번 행사는 공동체 의식의 화려한 외피 속에 전문가의 희생을 강요하는 구조적 모순을 그대로 드러냈다. 주민들의 참여는 즐거웠을지 모르나, 그 즐거움이 누군가의 헌신을 당연시하는 데서 기인했다면 그것은 지속 가능할 수 없다. '다시 살림'이 진정으로 재생을 원한다면, 이제는 화려한 수식어 뒤에 숨은 노동의 가치를 정면으로 마주해야 할 것이다. 그렇지 않다면 이 워크숍은 결국 기술의 전수가 아닌, 단순한 노동력 착취의 장으로 전락하고 말 것이다.\n\n더 나아가 이러한 방식은 기술 전수를 가로막는 폐쇄적인 결과를 초래할 위험이 크다. 숙련공들이 자신의 지식을 공유할 동기를 잃어버린다면 미래 세대는 체계적인 교육을 받을 기회조차 박탈당하게 될 것이다. 공동체라는 이름으로 개인의 희생을 미화하는 관행이 계속되는 한 기술의 맥은 끊길 것이며 이는 결국 지역 사회의 자생력을 근본적으로 약화시키는 치명적인 악순환이 될 것이 자명하다. 진정한 재생은 타인의 재능을 착취하는 것이 아니라 그 전문성을 존중하고 그에 걸맞은 대가를 지불하는 성숙한 시민 의식에서부터 비로소 시작될 수 있을 것이다.",
+    "wordCount": 393,
+    "estimatedMinutes": 16,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "수식어",
+        "lemma": "수식어",
+        "glosses": {
+          "es": "modifier or flowery words",
+          "en": "modifier or flowery words"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "숙련공",
+        "lemma": "숙련공",
+        "glosses": {
+          "es": "skilled worker",
+          "en": "skilled worker"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "묵살",
+        "lemma": "묵살",
+        "glosses": {
+          "es": "ignoring or disregarding",
+          "en": "ignoring or disregarding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "종용",
+        "lemma": "종용",
+        "glosses": {
+          "es": "urging or pressing",
+          "en": "urging or pressing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "해프닝",
+        "lemma": "해프닝",
+        "glosses": {
+          "es": "happening or incident",
+          "en": "happening or incident"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전락",
+        "lemma": "전락",
+        "glosses": {
+          "es": "degradation or fall",
+          "en": "degradation or fall"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 15.7,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공동체 행사의 운영상 모순"
+        },
+        {
+          "id": "a2",
+          "text": "수리 기술 전수의 중요성"
+        },
+        {
+          "id": "a3",
+          "text": "주민 참여형 수리의 장점"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "공동체라는 이름으로 개인의 전문성을 당연하게 요구하는 행태는 지속 가능한 수리 문화의 근간을 흔든다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "김 씨가 행사를 떠나게 된 직접적인 원인은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민들의 비협조적인 태도"
+        },
+        {
+          "id": "a2",
+          "text": "운영진의 무리한 수리 강요"
+        },
+        {
+          "id": "a3",
+          "text": "부품 수급의 기술적 한계"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "운영진은 '모두가 함께 배우는 자리'라며 그의 전문성을 묵살하고 강제로 수리를 종용했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "필자가 생각하는 '진정한 재생'의 의미는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "더 많은 주민의 기술 참여"
+        },
+        {
+          "id": "a2",
+          "text": "전문가의 무임금 봉사 확대"
+        },
+        {
+          "id": "a3",
+          "text": "물건과 노동 가치의 재발견"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "진정한 의미의 재생은 물건뿐만 아니라, 그 물건을 고치는 사람의 노동 가치를 재발견하는 데서 시작되어야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 이 글을 쓴 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "행사의 문제점을 비판하고 개선 방향을 제시하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "다시 살림 워크숍의 성공 사례를 홍보하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "주민들의 자발적인 참여를 독려하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "그렇지 않다면 이 워크숍은 결국 기술의 전수가 아닌, 단순한 노동력 착취의 장으로 전락하고 말 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적임"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적임"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적임"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "결국 이번 행사는 공동체 의식의 화려한 외피 속에 전문가의 희생을 강요하는 구조적 모순을 그대로 드러냈다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'묵살'의 문맥적 의미와 가장 가까운 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "강하게 반대함"
+        },
+        {
+          "id": "a2",
+          "text": "깊이 고민함"
+        },
+        {
+          "id": "a3",
+          "text": "의견을 무시함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "운영진은 '모두가 함께 배우는 자리'라며 그의 전문성을 묵살하고 강제로 수리를 종용했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "본문에 제시된 '다시 살림' 워크숍의 사례를 바탕으로, 전문가의 재능 기부와 공동체 활동 사이의 균형을 맞추기 위한 구체적인 운영 방안을 제안하는 글을 200자 내외로 작성하십시오.",
+      "en": "본문에 제시된 '다시 살림' 워크숍의 사례를 바탕으로, 전문가의 재능 기부와 공동체 활동 사이의 균형을 맞추기 위한 구체적인 운영 방안을 제안하는 글을 200자 내외로 작성하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "본문을 읽고 수리 워크숍의 운영 방식과 그 이면에 숨겨진 갈등의 본질을 파악하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "수리 공동체의 명암: '재생의 밤'을 다녀와서 | C1 Reading | WeLearn",
+      "en": "수리 공동체의 명암: '재생의 밤'을 다녀와서 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "지역 수리 워크숍에서 벌어진 자원봉사자와 운영진 간의 갈등을 다룬 비평문입니다. 공동체 의식과 기술적 전문성 사이의 간극을 분석합니다.",
+      "en": "지역 수리 워크숍에서 벌어진 자원봉사자와 운영진 간의 갈등을 다룬 비평문입니다. 공동체 의식과 기술적 전문성 사이의 간극을 분석합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/a-room-for-repairs",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

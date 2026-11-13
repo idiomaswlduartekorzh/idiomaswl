@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-open-schedule",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "유연한 시간표의 역설: 학사 운영의 딜레마",
+      "en": "유연한 시간표의 역설: 학사 운영의 딜레마"
+    },
+    "intro": {
+      "es": "학교 시간표의 유연성을 둘러싼 교사 간의 갈등을 다룬 이메일 교환을 읽고, 교육적 형평성과 운영적 불확실성 사이의 긴장을 분석하십시오.",
+      "en": "학교 시간표의 유연성을 둘러싼 교사 간의 갈등을 다룬 이메일 교환을 읽고, 교육적 형평성과 운영적 불확실성 사이의 긴장을 분석하십시오."
+    },
+    "mission": {
+      "es": "두 교사의 이메일 내용을 바탕으로 교육 현장에서의 정책 변화가 구성원들에게 미치는 상반된 영향을 파악하고, 본문의 맥락적 의미를 추론하십시오.",
+      "en": "두 교사의 이메일 내용을 바탕으로 교육 현장에서의 정책 변화가 구성원들에게 미치는 상반된 영향을 파악하고, 본문의 맥락적 의미를 추론하십시오."
+    },
+    "targetText": "수신: 김민준 교사, 발신: 박수진 교무부장. 민준 선생님, 이번 학기부터 도입한 '선택적 등교 시간제'에 대해 논의하고자 합니다. 학생들의 학습 자율성을 존중하자는 취지로 시작된 이 제도가 현장에서 예상치 못한 마찰을 빚고 있습니다. 일부 학생들은 자신의 리듬에 맞춰 등교하며 학습 효율을 높이고 있지만, 다른 한편에서는 수업 시작 시간이 매번 유동적인 탓에 공동 프로젝트 수행에 큰 차질이 생기고 있습니다. 특히 예체능 교과를 담당하는 선생님들 사이에서 수업 준비를 위한 물리적 공간 확보와 기자재 세팅이 늦어진다는 불만이 고조되고 있습니다. 제도의 본질은 유연성이지만, 그 유연함이 누군가에게는 준비의 불확실성으로 전이되고 있는 셈입니다. 수신: 박수진 교무부장, 발신: 김민준 교사. 부장님, 보내주신 메일 잘 읽었습니다. 저 역시 현장의 어려움을 충분히 인지하고 있습니다. 하지만 이 제도를 단순히 '운영의 비효율'로 치부하기엔 섣부른 감이 있습니다. 학생들에게 주어진 선택권은 단순한 시간 조정이 아니라, 자신의 학습 과정을 스스로 설계하는 역량 강화의 기회입니다. 물론 공동 프로젝트의 조율이 어려운 점은 인정합니다. 그러나 이는 제도의 결함이라기보다, 학생들이 서로의 시간을 존중하고 협업하는 방식을 배워가는 과도기적 진통이라고 생각합니다. 만약 우리가 다시 경직된 시간표로 회귀한다면, 학생들은 스스로 시간을 관리하는 법을 배울 기회조차 잃게 될 것입니다. 우리가 지향하는 교육의 가치가 효율적인 관리인지, 아니면 학생의 주체적 성장인지 다시 한번 숙고해주시길 부탁드립니다. 수신: 박수진 교무부장, 발신: 박수진 교무부장. 민준 선생님의 의견은 잘 알겠습니다. 다만, 교육 현장은 이상적인 교육 철학만으로 운영될 수 없습니다. 교사들의 피로도가 임계점에 도달한 상황에서, 학생들의 자율성이라는 명분 아래 교사들에게 일방적인 희생을 강요할 수는 없습니다. 내일 교무회의에서 이 문제를 공식 의제로 상정하겠습니다. 원칙 없는 유연함은 결국 공동체의 해체로 이어질 수 있음을 경계해야 합니다. 제도의 보완책이 마련되지 않는 한, 당분간은 이전의 고정 시간표로 복귀하는 방안을 검토할 수밖에 없을 것 같습니다. 교육의 가치는 모두가 동의할 수 있는 안정적인 토대 위에서만 비로소 실현될 수 있기 때문입니다. 이번 갈등은 단순한 운영 방식의 차이를 넘어, 교육 공동체가 지향해야 할 가치와 현실적 한계 사이의 간극을 명확히 보여주고 있습니다.\n\n이러한 대립은 결국 구성원 간의 신뢰를 바탕으로 한 합의가 교육의 본질을 지탱하는 핵심임을 다시금 일깨워 줍니다. 만약 우리가 교사의 노동 환경과 학생의 자율성이라는 두 가치를 이분법적인 선택의 문제로만 바라본다면, 교육 공동체는 앞으로 나아가지 못한 채 소모적인 논쟁만을 반복하게 될 위험이 큽니다. 따라서 이제는 선택적 등교 시간제의 유연함을 유지하면서도 교사들의 업무 부담을 실질적으로 경감할 수 있는 구체적인 가이드라인을 수립하는 일이 시급합니다. 예를 들어 프로젝트 수업이 있는 날에는 등교 시간을 고정하는 혼합형 모델을 도입하거나, 온라인 협업 플랫폼을 활용하여 시공간의 제약을 최소화하는 방안을 논의할 필요가 있습니다. 결국 제도의 성패는 철학적 가치를 현실적인 운영 체계 속에 얼마나 정교하게 녹여내느냐에 달려 있습니다. 우리는 이번 갈등을 단순한 의견 충돌로 치부할 것이 아니라, 서로의 입장을 존중하며 더 나은 교육 환경을 만들기 위한 생산적인 비판의 과정으로 삼아야 할 것입니다. 안정적인 토대 위에서 피어나는 학생의 주체성과 교사의 헌신이 조화를 이룰 때, 비로소 우리가 지향하는 진정한 의미의 교육 혁신이 완성될 수 있을 것이라 확신합니다.",
+    "wordCount": 425,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "유동적인",
+        "lemma": "유동적인",
+        "glosses": {
+          "es": "fluid or fluctuating",
+          "en": "fluid or fluctuating"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고조되고",
+        "lemma": "고조되고",
+        "glosses": {
+          "es": "heightened or intensified",
+          "en": "heightened or intensified"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전이되고",
+        "lemma": "전이되고",
+        "glosses": {
+          "es": "transferred or shifted",
+          "en": "transferred or shifted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "회귀한다면",
+        "lemma": "회귀한다면",
+        "glosses": {
+          "es": "if returning to a previous state",
+          "en": "if returning to a previous state"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "임계점",
+        "lemma": "임계점",
+        "glosses": {
+          "es": "critical point or threshold",
+          "en": "critical point or threshold"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "간극",
+        "lemma": "간극",
+        "glosses": {
+          "es": "gap or discrepancy",
+          "en": "gap or discrepancy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.7,
+      "maxSentenceWords": 25,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "본문의 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "교육 철학과 운영 현실의 갈등"
+        },
+        {
+          "id": "a2",
+          "text": "유연한 시간표 도입의 성공 사례"
+        },
+        {
+          "id": "a3",
+          "text": "교사들의 복지 향상을 위한 제안"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "이번 갈등은 단순한 운영 방식의 차이를 넘어, 교육 공동체가 지향해야 할 가치와 현실적 한계 사이의 간극을 명확히 보여주고 있습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박수진 부장이 언급한 예체능 교과 교사들의 구체적인 불만 사항은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "학생들의 잦은 지각으로 인한 수업 방해"
+        },
+        {
+          "id": "a2",
+          "text": "수업 공간 확보와 기자재 세팅의 지연"
+        },
+        {
+          "id": "a3",
+          "text": "학생들의 참여 부족으로 인한 프로젝트 실패"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "특히 예체능 교과를 담당하는 선생님들 사이에서 수업 준비를 위한 물리적 공간 확보와 기자재 세팅이 늦어진다는 불만이 고조되고 있습니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "김민준 교사가 생각하는 '과도기적 진통'의 의미는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "제도를 폐지해야 할 명확한 근거"
+        },
+        {
+          "id": "a2",
+          "text": "교사들의 희생을 정당화하려는 변명"
+        },
+        {
+          "id": "a3",
+          "text": "성장을 위해 거쳐야 할 불가피한 과정"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그러나 이는 제도의 결함이라기보다, 학생들이 서로의 시간을 존중하고 협업하는 방식을 배워가는 과도기적 진통이라고 생각합니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "박수진 부장이 마지막 이메일에서 교무회의를 언급한 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "시간표 복귀를 포함한 논의를 공식화하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "제도의 보완책을 마련하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "김민준 교사를 공식적으로 징계하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "내일 교무회의에서 이 문제를 공식 의제로 상정하겠습니다. 원칙 없는 유연함은 결국 공동체의 해체로 이어질 수 있음을 경계해야 합니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "박수진 부장의 태도로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "교육 철학을 우선시하는 이상주의적 태도"
+        },
+        {
+          "id": "a2",
+          "text": "현실적 운영과 안정성을 중시하는 태도"
+        },
+        {
+          "id": "a3",
+          "text": "새로운 변화를 거부하는 보수적인 태도"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "교육의 가치는 모두가 동의할 수 있는 안정적인 토대 위에서만 비로소 실현될 수 있기 때문입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'전이되고'의 문맥적 의미와 가장 유사한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "변화되어"
+        },
+        {
+          "id": "a2",
+          "text": "발전되어"
+        },
+        {
+          "id": "a3",
+          "text": "옮겨져"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "제도의 본질은 유연성이지만, 그 유연함이 누군가에게는 준비의 불확실성으로 전이되고 있는 셈입니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "본문에 나타난 '유연한 시간표'가 초래한 갈등을 바탕으로, 교육 현장에서 자율성과 안정성이라는 두 가치를 어떻게 조화시킬 수 있을지 자신의 견해를 300자 내외로 서술하십시오.",
+      "en": "본문에 나타난 '유연한 시간표'가 초래한 갈등을 바탕으로, 교육 현장에서 자율성과 안정성이라는 두 가치를 어떻게 조화시킬 수 있을지 자신의 견해를 300자 내외로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "두 교사의 이메일 내용을 바탕으로 교육 현장에서의 정책 변화가 구성원들에게 미치는 상반된 영향을 파악하고, 본문의 맥락적 의미를 추론하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "유연한 시간표의 역설: 학사 운영의 딜레마 | C1 Reading | WeLearn",
+      "en": "유연한 시간표의 역설: 학사 운영의 딜레마 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "학교 시간표의 유연성을 둘러싼 교사 간의 갈등을 다룬 이메일 교환을 읽고, 교육적 형평성과 운영적 불확실성 사이의 긴장을 분석하십시오.",
+      "en": "학교 시간표의 유연성을 둘러싼 교사 간의 갈등을 다룬 이메일 교환을 읽고, 교육적 형평성과 운영적 불확실성 사이의 긴장을 분석하십시오."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

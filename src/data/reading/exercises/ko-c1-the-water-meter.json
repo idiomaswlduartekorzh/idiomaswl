@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-water-meter",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "공동 계량기의 딜레마: 숫자에 가려진 진실",
+      "en": "공동 계량기의 딜레마: 숫자에 가려진 진실"
+    },
+    "intro": {
+      "es": "시 당국의 물 소비량 통계가 실제 가정의 절약 노력을 왜곡하고 있다는 비판이 제기되었습니다. 이 글은 익명의 아파트 단지에서 벌어진 갈등을 통해 데이터의 함정을 탐구합니다.",
+      "en": "시 당국의 물 소비량 통계가 실제 가정의 절약 노력을 왜곡하고 있다는 비판이 제기되었습니다. 이 글은 익명의 아파트 단지에서 벌어진 갈등을 통해 데이터의 함정을 탐구합니다."
+    },
+    "mission": {
+      "es": "글을 읽고 통계 데이터가 가진 한계와 그로 인해 발생하는 공동체 내의 갈등을 분석하십시오.",
+      "en": "글을 읽고 통계 데이터가 가진 한계와 그로 인해 발생하는 공동체 내의 갈등을 분석하십시오."
+    },
+    "targetText": "최근 시 당국이 발표한 가구당 평균 물 소비량 보고서는 시민들에게 큰 충격을 안겨주었다. 보고서는 지난 분기 대비 물 사용량이 소폭 감소했음을 강조하며, 시민들의 자발적인 절약 정신을 높게 평가했다. 하지만 이러한 긍정적인 평가 이면에는 심각한 통계적 오류가 숨어 있었다. 바로 대규모 아파트 단지에서 사용하는 '공동 계량기' 방식이 전체 데이터의 분모를 왜곡하고 있었기 때문이다. 개별 가구의 실제 사용량은 계량기가 통합되어 관리되는 탓에 정확한 측정이 불가능했고, 이는 절약하는 가구와 낭비하는 가구가 하나의 수치로 뭉뚱그려지는 결과를 초래했다. 이러한 모순은 '해오름 아파트'의 입주자 대표 박영수 씨와 관리사무소장 김민철 씨 사이의 갈등으로 폭발했다. 박 씨는 일부 가구의 과도한 물 사용으로 인해 공동 관리비가 급증하고 있다며, 전 세대 개별 계량기 설치를 강력히 주장했다. 반면 김 소장은 막대한 설치 비용과 배관 공사의 현실적 어려움을 들어 이를 반대했다. 그는 당국의 보고서를 근거로 전체 단지의 물 소비가 안정적이라고 주장하며, 굳이 예산을 들여 시스템을 바꿀 필요가 없다고 맞섰다. 박 씨는 당국의 데이터가 실제 현장의 낭비를 은폐하는 도구로 악용되고 있다고 반박했다. 그는 매일 새벽마다 지하 주차장의 세차장과 공용 화장실에서 낭비되는 물을 목격했지만, 관리사무소는 이를 '상수도 누수'라는 모호한 항목으로 처리해왔다. 결국 입주자 대표 회의는 파행으로 치달았고, 주민들 사이에서는 절약의 의미를 둘러싼 냉소적인 분위기가 팽배해졌다. 누군가는 굳이 아껴 쓸 이유가 없다는 회의론을 펼쳤고, 누군가는 자신의 노력이 공동체의 평균치에 묻혀버리는 상황에 무력감을 느꼈다. 시 당국은 이러한 현장의 목소리를 외면한 채, 여전히 평균의 함정에 빠진 보고서만을 반복해서 생산하고 있다. 데이터는 객관적인 지표라는 이름으로 포장되어 있지만, 그 속에는 공동체 내의 불평등과 시스템의 비효율이 온전히 감춰져 있다. 기술적 한계라는 명분은 이제 책임 회피의 수단으로 전락했다. 만약 우리가 숫자가 가리키는 평균만을 맹신한다면, 결국 그 평균은 우리 모두의 도덕적 해이를 정당화하는 면죄부가 될 것이다. 진정한 물 절약은 통계의 마술이 아니라, 각자의 사용량을 투명하게 마주하는 것에서 시작되어야 한다. 하지만 지금의 시스템 아래에서 그 투명성은 여전히 요원한 미래의 과제로 남아 있다.\n\n결국 이러한 통계적 착시는 단순히 물 관리의 문제를 넘어 공동체 내부의 신뢰를 근본적으로 무너뜨리는 결과를 낳고 있다. 개별 가구의 노력이 시스템의 허점 속에 매몰되면서 주민들은 절약이라는 가치 자체를 부정하기 시작했으며 이는 공동체 의식의 급격한 약화로 이어졌다. 공정한 분배가 이루어지지 않는 상황에서 절약은 그저 일부 성실한 주민들의 일방적인 희생만을 강요하는 불합리한 행위로 전락하고 말았다. 시 당국이 제시하는 화려한 수치들은 현장의 갈등을 봉합하기는커녕 오히려 불신을 부추기는 불씨가 되고 있으며 문제의 본질을 외면한 정책은 더 큰 사회적 비용을 초래할 뿐이다. 이제는 단순히 데이터를 개선하는 수준을 넘어 공동체 구성원 모두가 납득할 수 있는 투명한 감시 체계와 공정한 비용 분담 구조를 새롭게 설계해야 할 시점이다. 숫자의 함정에 갇혀 현실의 고통을 방치한다면 우리 사회는 지속 가능한 미래를 담보할 수 없으며 결국 공동체는 각자의 이기심만이 남은 삭막한 공간으로 변질될 것이다. 진정한 해결책은 데이터의 왜곡을 바로잡고 각자의 책임과 권리가 명확히 드러나는 투명한 시스템을 구축하여 주민들의 무너진 신뢰를 회복하는 것에서부터 시작되어야 한다.",
+    "wordCount": 422,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "분모",
+        "lemma": "분모",
+        "glosses": {
+          "es": "denominator",
+          "en": "denominator"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "뭉뚱그려지는",
+        "lemma": "뭉뚱그려지는",
+        "glosses": {
+          "es": "lumped together",
+          "en": "lumped together"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "파행",
+        "lemma": "파행",
+        "glosses": {
+          "es": "breakdown/impasse",
+          "en": "breakdown/impasse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "팽배해졌다",
+        "lemma": "팽배해졌다",
+        "glosses": {
+          "es": "became prevalent",
+          "en": "became prevalent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "면죄부",
+        "lemma": "면죄부",
+        "glosses": {
+          "es": "indulgence/excuse",
+          "en": "indulgence/excuse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "요원한",
+        "lemma": "요원한",
+        "glosses": {
+          "es": "distant/far off",
+          "en": "distant/far off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 16.2,
+      "maxSentenceWords": 24,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "통계 데이터의 불완전성과 그로 인한 갈등"
+        },
+        {
+          "id": "a2",
+          "text": "물 절약의 기술적 방안"
+        },
+        {
+          "id": "a3",
+          "text": "아파트 관리비 산정 방식의 법적 문제"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "데이터는 객관적인 지표라는 이름으로 포장되어 있지만, 그 속에는 공동체 내의 불평등과 시스템의 비효율이 온전히 감춰져 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박영수 씨가 개별 계량기 설치를 주장한 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "관리사무소의 횡령을 막기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "일부 가구의 과도한 물 사용으로 인한 관리비 상승"
+        },
+        {
+          "id": "a3",
+          "text": "시 당국의 권고 사항을 준수하기 위해"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "박 씨는 일부 가구의 과도한 물 사용으로 인해 공동 관리비가 급증하고 있다며, 전 세대 개별 계량기 설치를 강력히 주장했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "김민철 소장이 당국의 보고서를 인용한 의도는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민들의 절약 정신을 칭찬하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "상수도 누수 문제를 해결하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "개별 계량기 설치 반대를 정당화하기 위해"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "그는 당국의 보고서를 근거로 전체 단지의 물 소비가 안정적이라고 주장하며, 굳이 예산을 들여 시스템을 바꿀 필요가 없다고 맞섰다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 이 글을 통해 독자에게 전달하고자 하는 바는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "평균치에 의존하는 통계 방식의 위험성을 경고하고 투명한 정보 공개의 필요성을 역설함"
+        },
+        {
+          "id": "a2",
+          "text": "아파트 입주자 대표와 관리사무소 간의 갈등 해결을 위한 중재안을 제시함"
+        },
+        {
+          "id": "a3",
+          "text": "물 절약을 위한 구체적인 생활 습관을 제안함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "진정한 물 절약은 통계의 마술이 아니라, 각자의 사용량을 투명하게 마주하는 것에서 시작되어야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적임"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적임"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 건조함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "만약 우리가 숫자가 가리키는 평균만을 맹신한다면, 결국 그 평균은 우리 모두의 도덕적 해이를 정당화하는 면죄부가 될 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'요원한'의 문맥적 의미와 가장 가까운 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "매우 가까운"
+        },
+        {
+          "id": "a2",
+          "text": "반드시 해결해야 하는"
+        },
+        {
+          "id": "a3",
+          "text": "실현 가능성이 낮은"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "하지만 지금의 시스템 아래에서 그 투명성은 여전히 요원한 미래의 과제로 남아 있다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "당신이 만약 해오름 아파트의 입주민이라면, 공동 계량기 문제와 관련하여 어떤 대안을 제시하겠습니까? 글의 내용을 바탕으로 본인의 입장을 서술하십시오.",
+      "en": "당신이 만약 해오름 아파트의 입주민이라면, 공동 계량기 문제와 관련하여 어떤 대안을 제시하겠습니까? 글의 내용을 바탕으로 본인의 입장을 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "글을 읽고 통계 데이터가 가진 한계와 그로 인해 발생하는 공동체 내의 갈등을 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "공동 계량기의 딜레마: 숫자에 가려진 진실 | C1 Reading | WeLearn",
+      "en": "공동 계량기의 딜레마: 숫자에 가려진 진실 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "시 당국의 물 소비량 통계가 실제 가정의 절약 노력을 왜곡하고 있다는 비판이 제기되었습니다. 이 글은 익명의 아파트 단지에서 벌어진 갈등을 통해 데이터의 함정을 탐구합니다.",
+      "en": "시 당국의 물 소비량 통계가 실제 가정의 절약 노력을 왜곡하고 있다는 비판이 제기되었습니다. 이 글은 익명의 아파트 단지에서 벌어진 갈등을 통해 데이터의 함정을 탐구합니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-new-crossing",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'absence de stigmates : le paradoxe de la trajectoire évitée",
+      "en": "L'absence de stigmates : le paradoxe de la trajectoire évitée"
+    },
+    "intro": {
+      "es": "Une réflexion philosophique sur la nature de la preuve et de la causalité lorsqu'un accident est évité de justesse, explorant la tension entre l'événement matériel et l'expérience subjective.",
+      "en": "Une réflexion philosophique sur la nature de la preuve et de la causalité lorsqu'un accident est évité de justesse, explorant la tension entre l'événement matériel et l'expérience subjective."
+    },
+    "mission": {
+      "es": "Analysez cet article pour comprendre comment l'auteur remet en question la notion de preuve tangible face à des événements qui ne laissent aucune trace physique.",
+      "en": "Analysez cet article pour comprendre comment l'auteur remet en question la notion de preuve tangible face à des événements qui ne laissent aucune trace physique."
+    },
+    "targetText": "Le carrefour de la rue des Ormes, à l'heure où le crépuscule décline, est le théâtre d'une chorégraphie silencieuse. Marc, un piéton pressé, traverse sans regarder, absorbé par le flux numérique de son appareil. Au même instant, Élise, au volant de sa berline, surgit de l'angle mort. Le crissement des pneus est un cri déchirant qui fend l'air, suivi d'une immobilisation brutale à quelques millimètres du corps de Marc. Aucun choc n'a lieu. La tôle reste intacte, le bitume ne porte aucune éraflure, et les deux protagonistes, après un échange de regards chargé d'une sidération muette, reprennent leurs chemins respectifs. Il n'y a pas de blessés, pas de constat à remplir, pas de débris à balayer. Pourtant, cette absence de trace matérielle pose une question épistémologique vertigineuse : que reste-t-il de l'événement ?\n\nDans le cadre d'une enquête rétrospective, l'absence de stigmate est souvent interprétée comme une absence de réalité. Si l'accident n'a pas eu lieu, si la structure atomique des véhicules et des corps n'a pas été altérée, comment valider le récit de ceux qui l'ont vécu ? Marc, en rentrant chez lui, ressent une tachycardie persistante, un écho physiologique de la collision évitée. Élise, quant à elle, est habitée par une culpabilité irrationnelle. Pour le témoin extérieur, le carrefour est resté inchangé ; le flux du trafic a repris son cours normal, ignorant le basculement ontologique qui vient de se produire. La preuve, dans notre système juridique et social, repose sur la trace, sur la modification de l'état du monde. Sans modification, l'événement est relégué au rang de simple potentialité, une hypothèse que l'on peut rejeter par manque de preuves empiriques.\n\nLa tension entre la réalité vécue et la réalité constatée est au cœur de ce dilemme. Marc tente de consigner son expérience dans un journal, cherchant à donner corps à ce qui, par définition, n'en a pas. Il se heurte à l'impossibilité de prouver l'imminence du danger. Si personne n'a été touché, le péril était-il réel ou n'était-ce qu'une illusion perceptive, un sursaut de l'esprit face à une coïncidence temporelle ? Cette interrogation souligne une faille dans notre compréhension de la causalité. Nous avons tendance à n'accorder de poids qu'aux conséquences visibles, négligeant les forces invisibles qui, par un ajustement de quelques millisecondes, ont maintenu l'ordre des choses. L'évitement est une action qui se définit par son résultat négatif : la non-occurrence d'un désastre.\n\nCertes, on pourrait arguer que la sécurité routière repose précisément sur cette capacité à éviter les heurts sans laisser de traces. Les systèmes de freinage automatique et les réflexes humains sont conçus pour que le monde reste, autant que possible, dans un état d'avant-accident. Cependant, cette rationalité technique masque une vérité plus profonde : le monde est tissé de ces quasi-accidents qui ne sont jamais comptabilisés dans les statistiques. Ils constituent une strate invisible de notre existence, une couche de réalité qui échappe à la mesure mais qui façonne durablement la psyché des individus. En niant l'existence de ces événements sous prétexte qu'ils ne laissent pas de cicatrices, nous appauvrissons notre compréhension de la fragilité humaine.\n\nLe dénouement de cette rencontre fortuite ne réside pas dans un rapport de police, mais dans la transformation intérieure de Marc et d'Élise. Le carrefour est devenu, pour eux, un lieu de mémoire, un espace sacré marqué par l'ombre d'un choc qui n'a jamais eu lieu. Cette mémoire est la seule preuve qui subsiste, une preuve subjective, volatile, mais indéniablement réelle pour ceux qui l'ont éprouvée. L'absence de trace physique ne signifie pas l'absence d'événement ; elle signifie seulement que l'événement a trouvé refuge dans la conscience, là où la physique ne peut plus intervenir. La question demeure : une société peut-elle se construire sur des vérités qui ne sont accessibles qu'à ceux qui les ont vécues, sans jamais pouvoir être validées par le regard d'autrui ?\n\nCette problématique soulève une inquiétante dérive : celle de la désincarnation du réel au profit d'une validation purement administrative. Si nous ne reconnaissons que ce qui laisse une empreinte tangible, nous finissons par nier la substance même de la conscience individuelle, reléguant l'expérience vécue au rang d'anomalie statistique. Pour Marc et Élise, ce carrefour n'est plus un simple croisement de voies bitumées, mais un seuil métaphysique où la contingence a révélé sa face cachée. En persistant à ignorer ces « non-événements », notre société s'expose à une forme d'anesthésie émotionnelle, où le danger n'est pris en compte qu'une fois la tragédie accomplie. Cette approche mécaniste, qui privilégie la trace matérielle sur le témoignage sensible, crée une fracture entre le monde des faits et celui des êtres. Si la vérité ne peut être partagée faute de preuves, alors chaque individu devient l'îlot solitaire d'une réalité qu'il est seul à habiter, incapable de transmettre l'intensité du péril évité. Cette solitude ontologique est le prix à payer pour une modernité qui exige, pour chaque phénomène, une preuve irréfutable. Pourtant, la persistance de cette angoisse chez les protagonistes démontre que l'expérience, même dépourvue de conséquences physiques, imprime une marque indélébile sur le psychisme. Ignorer cette dimension, c'est se condamner à une existence en surface, où la profondeur des rencontres fortuites est systématiquement gommée. À terme, cette exigence de preuve risque d'éteindre la capacité même de saisir l'imprévisible, nous enfermant dans une certitude froide et rassurante, mais fondamentalement aveugle aux tremblements invisibles qui, chaque jour, définissent la trame fragile de nos destins.",
+    "wordCount": 897,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "stigmate",
+        "lemma": "stigmate",
+        "glosses": {
+          "es": "visible marks or scars of an event",
+          "en": "visible marks or scars of an event"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sidération",
+        "lemma": "sidération",
+        "glosses": {
+          "es": "a state of shock or stunned disbelief",
+          "en": "a state of shock or stunned disbelief"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "épistémologique",
+        "lemma": "épistémologique",
+        "glosses": {
+          "es": "related to the theory of knowledge",
+          "en": "related to the theory of knowledge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ontologique",
+        "lemma": "ontologique",
+        "glosses": {
+          "es": "related to the nature of being or existence",
+          "en": "related to the nature of being or existence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "potentialité",
+        "lemma": "potentialité",
+        "glosses": {
+          "es": "a possibility that has not yet become reality",
+          "en": "a possibility that has not yet become reality"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "strate",
+        "lemma": "strate",
+        "glosses": {
+          "es": "a layer or level of something",
+          "en": "a layer or level of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.4,
+      "maxSentenceWords": 38,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La nature de la preuve"
+        },
+        {
+          "id": "a2",
+          "text": "La sécurité routière"
+        },
+        {
+          "id": "a3",
+          "text": "La psychologie urbaine"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "cette absence de trace matérielle pose une question épistémologique vertigineuse : que reste-t-il de l'événement ?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi l'accident n'a-t-il pas laissé de traces ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Les freins ont lâché"
+        },
+        {
+          "id": "a2",
+          "text": "Il n'y a pas eu de choc"
+        },
+        {
+          "id": "a3",
+          "text": "La voiture était lente"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Aucun choc n'a lieu. La tôle reste intacte, le bitume ne porte aucune éraflure",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment les protagonistes perçoivent-ils l'événement après coup ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Comme une erreur banale"
+        },
+        {
+          "id": "a2",
+          "text": "Comme une simple coïncidence"
+        },
+        {
+          "id": "a3",
+          "text": "Comme un choc psychologique"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Marc, en rentrant chez lui, ressent une tachycardie persistante, un écho physiologique de la collision évitée. Élise, quant à elle, est habitée par une culpabilité irrationnelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de l'auteur dans le quatrième paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Nuancer l'importance des faits matériels"
+        },
+        {
+          "id": "a2",
+          "text": "Critiquer la technologie"
+        },
+        {
+          "id": "a3",
+          "text": "Proposer une réforme juridique"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cependant, cette rationalité technique masque une vérité plus profonde : le monde est tissé de ces quasi-accidents qui ne sont jamais comptabilisés dans les statistiques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il dans la conclusion ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et résolu"
+        },
+        {
+          "id": "a2",
+          "text": "Analytique et interrogatif"
+        },
+        {
+          "id": "a3",
+          "text": "Sceptique et ironique"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La question demeure : une société peut-elle se construire sur des vérités qui ne sont accessibles qu'à ceux qui les ont vécues, sans jamais pouvoir être validées par le regard d'autrui ?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'stigmates' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Des regrets profonds"
+        },
+        {
+          "id": "a2",
+          "text": "Des souvenirs traumatiques"
+        },
+        {
+          "id": "a3",
+          "text": "Des marques physiques"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "l'absence de stigmate est souvent interprétée comme une absence de réalité.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif dans lequel vous développez votre propre position sur la validité des expériences purement subjectives en tant que preuves dans le débat public.",
+      "en": "Rédigez un court essai argumentatif dans lequel vous développez votre propre position sur la validité des expériences purement subjectives en tant que preuves dans le débat public."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez cet article pour comprendre comment l'auteur remet en question la notion de preuve tangible face à des événements qui ne laissent aucune trace physique.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'absence de stigmates : le paradoxe de la trajectoire évitée | C2 Reading | WeLearn",
+      "en": "L'absence de stigmates : le paradoxe de la trajectoire évitée | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une réflexion philosophique sur la nature de la preuve et de la causalité lorsqu'un accident est évité de justesse, explorant la tension entre l'événement matériel et l'expérience subjective.",
+      "en": "Une réflexion philosophique sur la nature de la preuve et de la causalité lorsqu'un accident est évité de justesse, explorant la tension entre l'événement matériel et l'expérience subjective."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-new-crossing",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "안전의 역설: 서림동 횡단보도 보고서의 이면",
+      "en": "안전의 역설: 서림동 횡단보도 보고서의 이면"
+    },
+    "intro": {
+      "es": "서림동의 새로운 횡단보도 설치 이후 발표된 교통 안전 보고서가 불러온 논란과 그 속에 숨겨진 행정적 모순을 분석하는 글입니다.",
+      "en": "서림동의 새로운 횡단보도 설치 이후 발표된 교통 안전 보고서가 불러온 논란과 그 속에 숨겨진 행정적 모순을 분석하는 글입니다."
+    },
+    "mission": {
+      "es": "보고서의 결론이 가진 논리적 허점을 파악하고, 데이터 해석의 이중성을 비판적으로 분석하십시오.",
+      "en": "보고서의 결론이 가진 논리적 허점을 파악하고, 데이터 해석의 이중성을 비판적으로 분석하십시오."
+    },
+    "targetText": "서림동 교통안전위원회는 최근 발간한 '보행자 안전 개선 성과 보고서'를 통해 관내 새로 설치된 스마트 횡단보도가 사고율을 획기적으로 낮추었다고 발표했다. 위원회는 횡단보도에 도입된 지능형 감지 센서와 투광기가 보행자의 가시성을 확보하여 야간 사고를 방지하는 핵심 기제라고 설명했다. 보고서에 따르면 시설 설치 이후 해당 지점의 보행자 사고 접수 건수는 전년 대비 눈에 띄게 감소했으며, 이는 지자체의 도시 설계 역량을 입증하는 지표로 활용되었다. 그러나 이러한 성과 홍보 이면에는 의도적으로 누락된 결정적 변수가 존재한다. 사실 횡단보도 설치와 동시에 해당 구간의 차량 제한 속도가 기존 시속 50km에서 30km로 대폭 하향 조정되었기 때문이다. 위원회는 속도 제한 강화가 사고 감소에 미친 영향에 대해서는 일절 언급하지 않은 채, 오직 새로운 시설물의 효과만을 부각하는 전략을 취했다. 지역 주민들과 교통 전문가들은 이러한 행정적 선택적 정보 공개가 정책의 투명성을 훼손하고 있다고 지적한다. 실제로 현장에서는 낮은 제한 속도로 인해 차량 흐름이 자연스럽게 완화되었고, 이것이 보행자 안전에 더 직접적인 기여를 했을 가능성이 농후하다. 하지만 위원회는 시설물 예산 집행의 정당성을 확보하기 위해 속도 제한이라는 변수를 의도적으로 배제했다. 이러한 행태는 정책 평가가 객관적 데이터보다는 행정적 성과를 입증하기 위한 도구로 전락했음을 보여준다. 시민단체는 이번 보고서가 공공의 안전을 논하면서도 정작 중요한 정책적 맥락을 은폐함으로써 주민들의 알 권리를 침해했다고 주장한다. 결국, 서림동의 사례는 복합적인 정책 환경에서 단일 요인만을 강조하는 것이 얼마나 위험한 착시를 불러일으킬 수 있는지 보여주는 전형적인 사례가 되었다. 현재 주민들은 위원회에 제한 속도 하향과 사고 감소의 상관관계를 재분석할 것을 요구하고 있으나, 위원회는 기존의 입장을 고수하며 추가적인 자료 공개를 거부하고 있다. 보행자 안전이라는 본질적인 가치는 행정적 성과주의라는 굴레에 갇혀, 진실은 여전히 서림동의 어두운 도로 위를 배회하고 있다. 정책의 성공을 자축하는 화려한 보고서 뒤편에는 여전히 해결되지 않은 논란의 불씨가 타오르고 있으며, 신뢰의 회복은 요원해 보인다.\n\n이러한 행정의 불투명성은 단순히 서림동 내부의 갈등으로 그치지 않고 도시 교통 정책 전반에 대한 시민들의 불신을 심화시키는 기폭제가 되고 있다. 정책 입안자들이 성과를 포장하기 위해 데이터를 선택적으로 취사선택하는 관행은 장기적으로 볼 때 진정한 안전 확보를 위한 과학적 접근을 방해하는 치명적인 걸림돌이 될 수밖에 없다. 전문가들은 이번 사례가 정책 평가의 독립성을 보장하는 제도적 장치가 얼마나 시급한지 역설하고 있으며, 데이터의 객관적 투명성이 담보되지 않는다면 어떠한 스마트 기술도 시민의 삶을 진정으로 개선할 수 없다고 경고한다. 주민들은 이제 단순한 결과 발표를 넘어 정책의 설계 과정과 분석 근거를 투명하게 공개하라는 목소리를 높이고 있으며, 이는 단순히 속도 제한의 효과를 확인하려는 목적을 넘어 행정이 시민의 알 권리를 어떻게 대우해야 하는지에 대한 본질적인 질문을 던지고 있다. 결국 서림동의 사례는 기술적 진보가 행정적 편의주의와 결합했을 때 발생할 수 있는 정책적 왜곡을 적나라하게 보여주며, 앞으로의 도시 설계가 단순히 시설물의 설치에 매몰될 것이 아니라 데이터의 통합적 분석과 시민과의 소통을 기반으로 이루어져야 한다는 뼈아픈 교훈을 남기고 있다. 이러한 신뢰의 위기를 극복하지 못한다면 서림동의 스마트 횡단보도는 안전의 상징이 아닌 행정적 기만의 상징으로 기억될 것이며, 이는 향후 추진될 모든 공공 사업의 정당성을 흔드는 중대한 정책적 실패로 기록될 가능성이 매우 높다.",
+    "wordCount": 432,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "기제",
+        "lemma": "기제",
+        "glosses": {
+          "es": "mechanism",
+          "en": "mechanism"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "누락된",
+        "lemma": "누락된",
+        "glosses": {
+          "es": "omitted",
+          "en": "omitted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "농후하다",
+        "lemma": "농후하다",
+        "glosses": {
+          "es": "highly likely",
+          "en": "highly likely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전락했음을",
+        "lemma": "전락했음을",
+        "glosses": {
+          "es": "degenerated into",
+          "en": "degenerated into"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "굴레",
+        "lemma": "굴레",
+        "glosses": {
+          "es": "shackle",
+          "en": "shackle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "요원해",
+        "lemma": "요원해",
+        "glosses": {
+          "es": "far off",
+          "en": "far off"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.6,
+      "maxSentenceWords": 37,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심적인 논지는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "행정 보고서의 선택적 정보 공개와 그 문제점"
+        },
+        {
+          "id": "a2",
+          "text": "스마트 횡단보도의 기술적 우수성 홍보"
+        },
+        {
+          "id": "a3",
+          "text": "교통 정책 수립을 위한 주민 참여의 중요성 강조"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "위원회는 속도 제한 강화가 사고 감소에 미친 영향에 대해서는 일절 언급하지 않은 채, 오직 새로운 시설물의 효과만을 부각하는 전략을 취했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "보고서에서 누락된 핵심적인 정책 변화는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보행자 전용 신호기 설치"
+        },
+        {
+          "id": "a2",
+          "text": "차량 제한 속도의 하향"
+        },
+        {
+          "id": "a3",
+          "text": "도로 표지판의 전면 교체"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "사실 횡단보도 설치와 동시에 해당 구간의 차량 제한 속도가 기존 시속 50km에서 30km로 대폭 하향 조정되었기 때문이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "위원회는 왜 속도 제한 변수를 의도적으로 배제했습니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "주민들의 혼란을 방지하기 위해서"
+        },
+        {
+          "id": "a2",
+          "text": "데이터가 불충분하여 분석할 수 없었기에"
+        },
+        {
+          "id": "a3",
+          "text": "시설물 예산 집행의 정당성을 확보하려고"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "하지만 위원회는 시설물 예산 집행의 정당성을 확보하기 위해 속도 제한이라는 변수를 의도적으로 배제했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "글쓴이가 이 글을 쓴 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "교통 정책의 투명성을 비판하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "서림동의 새로운 교통 시설을 소개하려고"
+        },
+        {
+          "id": "a3",
+          "text": "사고 예방을 위한 시민들의 주의를 촉구하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "시민단체는 이번 보고서가 공공의 안전을 논하면서도 정작 중요한 정책적 맥락을 은폐함으로써 주민들의 알 권리를 침해했다고 주장한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적임"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 분석적임"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 건조함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "이러한 행태는 정책 평가가 객관적 데이터보다는 행정적 성과를 입증하기 위한 도구로 전락했음을 보여준다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'농후하다'의 문맥적 의미로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "매우 복잡하고 어려움"
+        },
+        {
+          "id": "a2",
+          "text": "정도가 지나치게 강함"
+        },
+        {
+          "id": "a3",
+          "text": "가능성이 매우 높음"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "실제로 현장에서는 낮은 제한 속도로 인해 차량 흐름이 자연스럽게 완화되었고, 이것이 보행자 안전에 더 직접적인 기여를 했을 가능성이 농후하다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "서림동의 사례와 같이 행정 기관이 성과를 부풀리기 위해 정보를 선택적으로 공개하는 경우, 시민들이 공공 정책을 어떻게 감시하고 대응해야 할지 본인의 견해를 서술하십시오.",
+      "en": "서림동의 사례와 같이 행정 기관이 성과를 부풀리기 위해 정보를 선택적으로 공개하는 경우, 시민들이 공공 정책을 어떻게 감시하고 대응해야 할지 본인의 견해를 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "보고서의 결론이 가진 논리적 허점을 파악하고, 데이터 해석의 이중성을 비판적으로 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "안전의 역설: 서림동 횡단보도 보고서의 이면 | C1 Reading | WeLearn",
+      "en": "안전의 역설: 서림동 횡단보도 보고서의 이면 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "서림동의 새로운 횡단보도 설치 이후 발표된 교통 안전 보고서가 불러온 논란과 그 속에 숨겨진 행정적 모순을 분석하는 글입니다.",
+      "en": "서림동의 새로운 횡단보도 설치 이후 발표된 교통 안전 보고서가 불러온 논란과 그 속에 숨겨진 행정적 모순을 분석하는 글입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

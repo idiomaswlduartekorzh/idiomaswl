@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-voices-in-the-archive",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "語りの輪郭：アーカイブの倫理を巡る対立",
+      "en": "語りの輪郭：アーカイブの倫理を巡る対立"
+    },
+    "intro": {
+      "es": "口承記録の保存において、語り手の言葉をどこまで修正すべきかという議論を通じ、言語的正確さと個人のアイデンティティの境界を考察する。",
+      "en": "口承記録の保存において、語り手の言葉をどこまで修正すべきかという議論を通じ、言語的正確さと個人のアイデンティティの境界を考察する。"
+    },
+    "mission": {
+      "es": "以下の物語を読み、アーカイブの専門家と語り手の対立点、およびその結末が示唆する言語の真正性について分析せよ。",
+      "en": "以下の物語を読み、アーカイブの専門家と語り手の対立点、およびその結末が示唆する言語の真正性について分析せよ。"
+    },
+    "targetText": "薄暗い書庫の奥で、アーカイブ担当官の瀬戸は、録音された老漁師の回想録を文字に起こしていた。瀬戸の指先は、方言特有の倒置や、文法的に逸脱した接続詞を、標準的な日本語へと整えていく。彼の信条は、歴史的事実を後世に正確に伝えるためには、可読性が不可欠であるという点にあった。しかし、その背後で、物語作家であるエマが沈黙を破った。彼女は、瀬戸が修正を加えるたびに、語り手の魂が削ぎ落とされていると主張した。エマにとって、その乱れた文法こそが、彼が荒波の中で生きてきた証であり、洗練された文章に置き換えることは、歴史の改竄に等しいというのだ。瀬戸は、読みやすさがなければ記録は誰にも読まれないと反論したが、エマは一歩も引かなかった。彼女は、完璧な文法は死んだ言葉であり、不完全な響きの中にこそ、語り手の体温が宿ると説いた。二人の議論は、単なる編集方針の対立を超え、記録とは何かという根源的な問いへと発展した。瀬戸は、アーカイブの使命は客観性の保持にあると強調し、エマは、主観的な歪みこそが記憶の真実であると対峙した。書庫に響く時計の音だけが、彼らの平行線をなぞるように刻まれていく。瀬戸は、エマの情熱を理解しつつも、無秩序な言葉が将来の学術的利用を妨げる可能性を危惧していた。エマは、瀬戸の几帳面さが、語り手の個性を「標準」という名の檻に閉じ込めていると断じた。この緊張関係は、その夜の公開イベントまで続いた。イベントの壇上で、瀬戸は修正された原稿を読み上げ、エマはあえて生々しい録音を流すことを提案した。観客が耳にしたのは、瀬戸の整然とした記述ではなく、エマが守り抜いた、つっかえながらも力強い老人の声だった。その瞬間、瀬戸は悟った。自分が追い求めていた「正確さ」とは、実は自分自身の安心感に過ぎなかったのではないか、と。エマの勝利は、アーカイブの定義を根本から覆した。しかし、その夜、瀬戸が修正を放棄した原稿の山は、誰にも読まれることなく、静かに書庫の隅で埃を被り始めた。語り手の声は守られたが、その声が社会へと届くための橋渡しは、皮肉にも失われたのである。二人は、沈黙の中で互いの正義が抱える欠落を認めざるを得なかった。記憶は、固定されることで死に、解き放たれることで消えていく。その矛盾を抱えたまま、彼らは再び、終わりのない作業へと戻っていった。\n\nしかし、この皮肉な結末は、新たな問いを彼らに突きつけた。語り手の声が誰にも届かないのであれば、それは果たしてアーカイブとして成立しているのか。瀬戸は、整然とした記述という橋を架ける必要性を再認識し、エマは、その橋が崩れ落ちぬよう、いかにして生々しい魂を載せるべきかという難題に直面した。彼らは、記録の客観性と語り手の主観性が、互いに排除し合う関係ではなく、補完し合うべき二本の柱であることに気づき始めたのだ。修正を拒むことでも、加工を急ぐことでもなく、その両者の間に存在する「解釈」という名の新たな領域を模索する日々が始まった。老漁師のつっかえる言葉をそのままに、しかし、なぜ彼がそこで息を継いだのかという背景を丁寧に添える。そんな折衷案とも言える手法は、効率的とは言い難い。だが、それは過去という名の深淵に対し、彼らができる唯一の誠実な対話であった。書庫の空気は、かつての緊張感を失い、代わりに重厚な思索の静寂が満ちていく。二人は、記憶が固定されることでも消え去ることでもなく、語り継がれるという行為そのものに命が宿るのだと確信した。完璧な記録は存在しない。しかし、不完全なままに手渡された言葉を、次の誰かがまた受け取り、解釈を重ねていく。その果てしない連鎖こそが、歴史という巨大な物語を形作る唯一の手段なのだ。瀬戸とエマは、互いの正義の欠落を埋めるように、今日もまた、埃を被った原稿を手に取り、新たな橋を架けるための言葉を選び続けている。",
+    "wordCount": 1469,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "倒置",
+        "lemma": "倒置",
+        "glosses": {
+          "es": "inversion",
+          "en": "inversion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "改竄",
+        "lemma": "改竄",
+        "glosses": {
+          "es": "falsification",
+          "en": "falsification"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "根源的",
+        "lemma": "根源的",
+        "glosses": {
+          "es": "fundamental",
+          "en": "fundamental"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "対峙",
+        "lemma": "対峙",
+        "glosses": {
+          "es": "confrontation",
+          "en": "confrontation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "几帳面",
+        "lemma": "几帳面",
+        "glosses": {
+          "es": "meticulous",
+          "en": "meticulous"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "欠落",
+        "lemma": "欠落",
+        "glosses": {
+          "es": "deficiency",
+          "en": "deficiency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 38.7,
+      "maxSentenceWords": 67,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:31:33.594Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主要なテーマは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "アーカイブにおける正確性と真正性の対立"
+        },
+        {
+          "id": "a2",
+          "text": "記録の保存と表現の自由"
+        },
+        {
+          "id": "a3",
+          "text": "歴史的資料のデジタル化がもたらす弊害"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "二人の議論は、単なる編集方針の対立を超え、記録とは何かという根源的な問いへと発展した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "エマが瀬戸の修正に反対した理由は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "記録の可読性が低下するから"
+        },
+        {
+          "id": "a2",
+          "text": "文法の乱れが語り手の証だから"
+        },
+        {
+          "id": "a3",
+          "text": "学術的価値が損なわれるから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "エマにとって、その乱れた文法こそが、彼が荒波の中で生きてきた証であり、洗練された文章に置き換えることは、歴史の改竄に等しいというのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "結末において、なぜ瀬戸の修正原稿が埃を被ることになったのですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "瀬戸が作業を放棄したから"
+        },
+        {
+          "id": "a2",
+          "text": "修正原稿が紛失したから"
+        },
+        {
+          "id": "a3",
+          "text": "観客が録音を支持したから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "観客が耳にしたのは、瀬戸の整然とした記述ではなく、エマが守り抜いた、つっかえながらも力強い老人の声だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "著者がこの物語を通じて読者に伝えたかったことは何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "編集の難しさと矛盾"
+        },
+        {
+          "id": "a2",
+          "text": "アーカイブの重要性"
+        },
+        {
+          "id": "a3",
+          "text": "言語の標準化の必要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "記憶は、固定されることで死に、解き放たれることで消えていく。その矛盾を抱えたまま、彼らは再び、終わりのない作業へと戻っていった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語全体のトーンはどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的"
+        },
+        {
+          "id": "a2",
+          "text": "省察的"
+        },
+        {
+          "id": "a3",
+          "text": "批判的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "二人は、沈黙の中で互いの正義が抱える欠落を認めざるを得なかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「几帳面」という言葉が持つニュアンスとして最も適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "非常に大雑把であること"
+        },
+        {
+          "id": "a2",
+          "text": "感情的に振る舞うこと"
+        },
+        {
+          "id": "a3",
+          "text": "細部まで正確に行うこと"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "エマは、瀬戸の几帳面さが、語り手の個性を「標準」という名の檻に閉じ込めていると断じた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「アーカイブの倫理：語り手の声を保存する際、編集者はどのような立場をとるべきか」というテーマで、自身の意見を800字程度の日本語で論じなさい。",
+      "en": "「アーカイブの倫理：語り手の声を保存する際、編集者はどのような立場をとるべきか」というテーマで、自身の意見を800字程度の日本語で論じなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "以下の物語を読み、アーカイブの専門家と語り手の対立点、およびその結末が示唆する言語の真正性について分析せよ。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:31:33.594Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "語りの輪郭：アーカイブの倫理を巡る対立 | C1 Reading | WeLearn",
+      "en": "語りの輪郭：アーカイブの倫理を巡る対立 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "口承記録の保存において、語り手の言葉をどこまで修正すべきかという議論を通じ、言語的正確さと個人のアイデンティティの境界を考察する。",
+      "en": "口承記録の保存において、語り手の言葉をどこまで修正すべきかという議論を通じ、言語的正確さと個人のアイデンティティの境界を考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:31:33.594Z"
+  }
+}

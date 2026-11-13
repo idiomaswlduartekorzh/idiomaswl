@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-open-schedule",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "流動的な時間割の光と影",
+      "en": "流動的な時間割の光と影"
+    },
+    "intro": {
+      "es": "学校の柔軟な運用がもたらす恩恵と、それに伴う予期せぬ混乱をテーマにした二通のメールを読み、組織運営におけるジレンマを考察します。",
+      "en": "学校の柔軟な運用がもたらす恩恵と、それに伴う予期せぬ混乱をテーマにした二通のメールを読み、組織運営におけるジレンマを考察します。"
+    },
+    "mission": {
+      "es": "二通のメールから、時間割の柔軟性が異なる立場にどのような影響を与えているかを分析し、組織の公平性について考えてください。",
+      "en": "二通のメールから、時間割の柔軟性が異なる立場にどのような影響を与えているかを分析し、組織の公平性について考えてください。"
+    },
+    "targetText": "件名：時間割の弾力的な運用に関する試験的導入の報告\n\n佐藤先生、お疲れ様です。先日の職員会議で合意した通り、来月より本校では「流動的学習枠」を試験的に導入します。これは、生徒の探究活動の進捗に応じて、午後の授業時間を最大二時間まで後ろ倒しできる制度です。部活動に打ち込む生徒や、外部の専門家を招いたワークショップを行うクラスにとって、この柔軟性は学習の質を飛躍的に高めるはずです。教員側も、生徒の集中力が途切れないタイミングで講義を延長できるため、深い学びを促す絶好の機会となるでしょう。各担任には、変更の際は前日までに事務室へ通知するよう徹底させます。この試みが、硬直化した従来の学校運営に新たな風を吹き込むことを確信しています。\n\n件名：流動的学習枠の導入に伴う懸念について\n\n佐藤先生、突然のメール失礼いたします。先日の決定事項について、給食調理員および放課後の清掃業務を委託しているスタッフ一同より、深刻な懸念が上がっております。授業時間が流動的になることで、放課後の業務開始時間が毎日不確定となり、最終下校時刻の管理が極めて困難になっています。特に、清掃スタッフの多くは家庭の事情で退勤時間が固定されており、授業の延長が常態化すれば、彼らのシフト管理は崩壊しかねません。また、給食の片付けも授業後の清掃と連動しているため、予期せぬ時間変更は現場の混乱を招くばかりです。教育の質を追求する姿勢は尊重いたしますが、その代償として現場の労働環境が犠牲になることは、組織として看過できない事態ではないでしょうか。\n\n「学習の質」という美名の下で、私たちは見えないところで誰かの犠牲を強いていないでしょうか。教員が授業を延長する際、その背後で誰がどのような調整を強いられているのか、想像力を働かせる必要があります。佐藤先生、この制度は、一部の生徒の学びを最大化する一方で、学校というコミュニティを支える他者の安定を奪うという、極めて非対称な構造を内包しています。制度の柔軟性は、それが及ぶ範囲を限定しない限り、単なる「無秩序」への入り口に過ぎません。私たちは、教育的理想と実務的限界の狭間で、いかにして公平な妥協点を見出すべきなのでしょうか。\n\nこの問題の本質は、時間というリソースの再分配にあります。教員が「生徒のため」という大義名分を掲げるとき、その影響を受ける他部署の労働条件は往々にして軽視されがちです。しかし、学校は教員と生徒だけで成立しているわけではありません。調理員や清掃スタッフの存在があってこそ、教育の基盤が維持されています。制度の柔軟性がもたらす「恩恵」を享受する側と、その「しわ寄せ」を一身に受ける側。この両者の間に横たわる溝を埋めることなしに、真の教育改革は成し遂げられません。私たちは、制度設計の段階で、より包括的な視点を持つべきだったのです。\n\n結局のところ、この試験的導入は、現場の分断を深めるという皮肉な結果を招くことになるでしょう。教員側は「柔軟な対応ができない無理解なスタッフ」と不満を抱き、スタッフ側は「自分たちの生活を軽視する教員」という不信感を募らせる。この対立は、制度が続く限り解消されることはありません。佐藤先生、私たちは今一度、教育現場における「柔軟性」の定義を問い直す必要があります。誰かの自由が誰かの不自由を前提としている限り、その制度は持続不可能です。このまま強行すれば、学校という組織の結束は、遠からず崩壊の危機に瀕することになるでしょう。",
+    "wordCount": 1335,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "硬直化",
+        "lemma": "硬直化",
+        "glosses": {
+          "es": "becoming rigid or inflexible",
+          "en": "becoming rigid or inflexible"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "看過",
+        "lemma": "看過",
+        "glosses": {
+          "es": "overlooking or ignoring",
+          "en": "overlooking or ignoring"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "非対称",
+        "lemma": "非対称",
+        "glosses": {
+          "es": "asymmetric",
+          "en": "asymmetric"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "内包",
+        "lemma": "内包",
+        "glosses": {
+          "es": "containing or implying",
+          "en": "containing or implying"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "しわ寄せ",
+        "lemma": "しわ寄せ",
+        "glosses": {
+          "es": "negative consequences or burden shifted onto others",
+          "en": "negative consequences or burden shifted onto others"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "分断",
+        "lemma": "分断",
+        "glosses": {
+          "es": "division or fragmentation",
+          "en": "division or fragmentation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 43.1,
+      "maxSentenceWords": 69,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この二通のメールが全体として示唆していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "柔軟な制度が組織内の立場によって異なる影響を与える。"
+        },
+        {
+          "id": "a2",
+          "text": "教育の質向上は常に労働環境の改善と両立する。"
+        },
+        {
+          "id": "a3",
+          "text": "教員と外部スタッフの協力体制が既に確立されている。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "制度の柔軟性は、それが及ぶ範囲を限定しない限り、単なる「無秩序」への入り口に過ぎません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "清掃スタッフが懸念している具体的な理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "給食のメニューが変わるから"
+        },
+        {
+          "id": "a2",
+          "text": "退勤時間が固定されているから"
+        },
+        {
+          "id": "a3",
+          "text": "清掃道具が不足しているから"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "清掃スタッフの多くは家庭の事情で退勤時間が固定されており、授業の延長が常態化すれば、彼らのシフト管理は崩壊しかねません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "筆者が「見えないところで誰かの犠牲を強いていないか」と問いかける意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "生徒の学習時間を削ることで教員の負担を減らそうとするため"
+        },
+        {
+          "id": "a2",
+          "text": "調理員や清掃スタッフの給与を増額させるよう要求するため"
+        },
+        {
+          "id": "a3",
+          "text": "教員の判断が他の職種の労働条件に悪影響を及ぼしていることを指摘するため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "教員が授業を延長する際、その背後で誰がどのような調整を強いられているのか、想像力を働かせる必要があります。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "最終段落において筆者がこの制度の導入を批判する目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "学校組織の結束が危うくなることを警告するため"
+        },
+        {
+          "id": "a2",
+          "text": "教員とスタッフの給与格差を是正するため"
+        },
+        {
+          "id": "a3",
+          "text": "試験的導入を即座に中止させるため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "このまま強行すれば、学校という組織の結束は、遠からず崩壊の危機に瀕することになるでしょう。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者の文体から読み取れる心情はどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "中立的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "「学習の質」という美名の下で、私たちは見えないところで誰かの犠牲を強いていないでしょうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「しわ寄せ」という言葉が文脈で意味することは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "新しい制度によって得られる利益を全員で分かち合うこと"
+        },
+        {
+          "id": "a2",
+          "text": "教員が生徒に対して行う学習指導の工夫のこと"
+        },
+        {
+          "id": "a3",
+          "text": "労働環境の悪化という負の影響を他者が引き受けること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "制度の柔軟性がもたらす「恩恵」を享受する側と、その「しわ寄せ」を一身に受ける側。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「柔軟性」と「公平性」が衝突する場面において、組織がどのような意思決定プロセスを経るべきか、あなたの考えを400字程度で述べてください。",
+      "en": "「柔軟性」と「公平性」が衝突する場面において、組織がどのような意思決定プロセスを経るべきか、あなたの考えを400字程度で述べてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "二通のメールから、時間割の柔軟性が異なる立場にどのような影響を与えているかを分析し、組織の公平性について考えてください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "流動的な時間割の光と影 | C1 Reading | WeLearn",
+      "en": "流動的な時間割の光と影 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "学校の柔軟な運用がもたらす恩恵と、それに伴う予期せぬ混乱をテーマにした二通のメールを読み、組織運営におけるジレンマを考察します。",
+      "en": "学校の柔軟な運用がもたらす恩恵と、それに伴う予期せぬ混乱をテーマにした二通のメールを読み、組織運営におけるジレンマを考察します。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

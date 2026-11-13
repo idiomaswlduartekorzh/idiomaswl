@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-library-window",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "도서관의 문턱: 연장 운영의 이면",
+      "en": "도서관의 문턱: 연장 운영의 이면"
+    },
+    "intro": {
+      "es": "공공도서관의 운영 시간 연장이 과연 모든 시민에게 평등한 접근성을 보장하는지에 대한 사서의 일기를 읽고 비판적으로 분석해 봅니다.",
+      "en": "공공도서관의 운영 시간 연장이 과연 모든 시민에게 평등한 접근성을 보장하는지에 대한 사서의 일기를 읽고 비판적으로 분석해 봅니다."
+    },
+    "mission": {
+      "es": "도서관 운영 철학과 현실적 제약 사이의 갈등을 이해하고, 행정적 효율성과 사회적 포용성의 차이를 고찰하십시오.",
+      "en": "도서관 운영 철학과 현실적 제약 사이의 갈등을 이해하고, 행정적 효율성과 사회적 포용성의 차이를 고찰하십시오."
+    },
+    "targetText": "10월의 서늘한 밤, 도서관의 불빛은 어둠 속에서 유난히 도드라졌다. 관장님은 이번 달부터 시행된 야간 개방이 시민들의 문화 향유권을 대폭 확장했다고 자부했다. 나는 데스크에 앉아 텅 빈 열람실을 응시하며 생각에 잠겼다. 겉으로 보기엔 도서관의 문이 더 오래 열려 있는 것이 진보처럼 보이지만, 실상은 달랐다. 연장 운영을 위해 투입된 예산은 정작 낮 시간대 도서관을 이용해야 하는 취약계층을 위한 프로그램 운영비에서 삭감된 것이었다. 밤늦게까지 도서관을 이용할 수 있는 이들은 대개 낮에 업무를 마친 중산층 직장인들이었다. 결국, 운영 시간의 연장은 정보 격차를 해소하기보다 특정 계층의 편의만을 강화하는 결과를 초래했다. 나는 일지에 '접근성은 단순히 문을 여는 물리적 시간의 문제가 아니다'라고 적었다. 그날 밤, 야간 자율학습을 마친 고등학생 서준이가 헐떡이며 들어와 책을 빌리려 했다. 그러나 이미 대출 시스템은 마감되었고, 나는 그에게 미안하다는 말밖에 할 수 없었다. 시스템의 효율을 위해 인간의 필요가 뒤로 밀려나는 순간이었다. 연장 운영이라는 명분 아래, 도서관은 오히려 더 높은 문턱을 세우고 있었다. 낮 시간대 도서관을 가득 채우던 노인들의 말소리는 사라졌고, 그 자리엔 정적만이 감돌았다. 나는 서준이의 뒷모습을 보며 깨달았다. 도서관이 진정으로 열려 있다는 것은 물리적인 시간이 아니라, 누구에게나 평등한 기회가 보장되는 공간의 성격임을 말이다. 관장님은 연장 운영의 성과를 수치로 보고하라고 지시했지만, 나는 그 수치 뒤에 가려진 소외된 이들의 얼굴을 떠올렸다. 진정한 개방은 시간을 늘리는 것이 아니라, 문턱을 낮추는 일이다. 그러나 행정의 논리는 언제나 효율이라는 이름으로 그 문턱을 다시 높게 쌓아 올린다. 나는 다시 일지를 펼쳐 오늘 겪은 모순을 기록했다. 도서관이 밤늦게까지 불을 밝히고 있지만, 정작 그 빛이 닿아야 할 곳은 여전히 어둠 속에 잠겨 있다. 나는 이 공간이 누구를 위한 곳인지, 그리고 무엇을 위해 문을 열고 있는지 끊임없이 자문한다. 연장 운영은 분명 편의를 제공하지만, 그 편의가 누구의 희생 위에서 이루어지는지 묻지 않는다면 그것은 진정한 공공성이 아니다. 오늘도 도서관의 문은 닫히지만, 내 마음의 질문은 열린 채로 남는다.\n\n이러한 불균형은 단순히 도서관 운영의 문제를 넘어 우리 사회가 공공성을 정의하는 방식에 대한 근본적인 의문을 던진다. 효율성을 앞세운 행정적 결단이 보편적 복지의 가치를 잠식할 때, 정작 그 혜택을 누려야 할 취약계층은 도서관이라는 공간에서 점차 소외되고 만다. 야간 개방이라는 화려한 성과 지표 뒤에는 낮 시간대 프로그램이 축소되어 갈 곳을 잃은 노인들과 정보 접근권을 박탈당한 이들의 침묵이 자리하고 있다. 진정한 공공 도서관은 물리적인 시간의 연장이 아니라, 사회적 약자가 배제되지 않는 포용적인 환경을 조성하는 데 그 본질이 있다. 만약 우리가 수치화된 성과에만 매몰되어 이러한 구조적 모순을 외면한다면, 도서관은 지식의 보고가 아닌 특정 계층의 전유물로 전락할 위험이 크다. 결국 도서관의 문턱을 낮추는 일은 예산의 효율적 배분을 넘어, 우리 사회가 지향해야 할 평등의 가치를 실천하는 과정이어야 한다. 나는 오늘도 텅 빈 열람실의 불빛을 바라보며, 시스템이 놓치고 있는 인간적인 가치를 어떻게 회복할 것인지에 대한 고민을 멈추지 않는다. 진정한 개방은 문을 여는 것이 아니라 마음을 여는 것이며, 그 시작은 가장 소외된 이들의 목소리에 귀를 기울이는 것부터일 것이다.",
+    "wordCount": 423,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "도드라졌다",
+        "lemma": "도드라졌다",
+        "glosses": {
+          "es": "stood out",
+          "en": "stood out"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "향유권",
+        "lemma": "향유권",
+        "glosses": {
+          "es": "right to enjoy",
+          "en": "right to enjoy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "삭감된",
+        "lemma": "삭감된",
+        "glosses": {
+          "es": "cut or reduced",
+          "en": "cut or reduced"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "초래했다",
+        "lemma": "초래했다",
+        "glosses": {
+          "es": "brought about",
+          "en": "brought about"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "명분",
+        "lemma": "명분",
+        "glosses": {
+          "es": "justification",
+          "en": "justification"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "모순",
+        "lemma": "모순",
+        "glosses": {
+          "es": "contradiction",
+          "en": "contradiction"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.6,
+      "maxSentenceWords": 21,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 전달하고자 하는 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도서관 운영의 본질적 가치"
+        },
+        {
+          "id": "a2",
+          "text": "야간 개방의 필요성"
+        },
+        {
+          "id": "a3",
+          "text": "행정 효율성을 위한 예산 확보"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "도서관이 진정으로 열려 있다는 것은 물리적인 시간이 아니라, 누구에게나 평등한 기회가 보장되는 공간의 성격임을 말이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "연장 운영을 위한 예산은 어디에서 충당되었는가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "야간 자율학습 지원금"
+        },
+        {
+          "id": "a2",
+          "text": "취약계층 프로그램 운영비"
+        },
+        {
+          "id": "a3",
+          "text": "도서 구입 예산"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "연장 운영을 위해 투입된 예산은 정작 낮 시간대 도서관을 이용해야 하는 취약계층을 위한 프로그램 운영비에서 삭감된 것이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "사서가 서준이를 보며 느낀 감정은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "야간 운영의 실효성에 대한 만족"
+        },
+        {
+          "id": "a2",
+          "text": "학생의 무례함에 대한 실망감"
+        },
+        {
+          "id": "a3",
+          "text": "시스템의 한계에 대한 안타까움"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "시스템의 효율을 위해 인간의 필요가 뒤로 밀려나는 순간이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "글쓴이가 일지에 자신의 생각을 기록하는 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "도서관의 모순적인 현실을 기록하고 성찰하기 위해서"
+        },
+        {
+          "id": "a2",
+          "text": "관장에게 업무 보고를 하기 위해서"
+        },
+        {
+          "id": "a3",
+          "text": "야간 운영의 장점을 홍보하기 위해서"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "나는 다시 일지를 펼쳐 오늘 겪은 모순을 기록했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글을 관통하는 글쓴이의 태도는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적이다"
+        },
+        {
+          "id": "a3",
+          "text": "냉소적이고 무관심하다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "연장 운영은 분명 편의를 제공하지만, 그 편의가 누구의 희생 위에서 이루어지는지 묻지 않는다면 그것은 진정한 공공성이 아니다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'명분'의 의미로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "사회적 지위"
+        },
+        {
+          "id": "a2",
+          "text": "경제적 이익"
+        },
+        {
+          "id": "a3",
+          "text": "내세우는 구실"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "연장 운영이라는 명분 아래, 도서관은 오히려 더 높은 문턱을 세우고 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "도서관의 '물리적 운영 시간'과 '실질적 접근성' 사이의 간극을 좁히기 위해 사서로서 제안할 수 있는 대안적 운영 방식을 논리적으로 서술하십시오.",
+      "en": "도서관의 '물리적 운영 시간'과 '실질적 접근성' 사이의 간극을 좁히기 위해 사서로서 제안할 수 있는 대안적 운영 방식을 논리적으로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "도서관 운영 철학과 현실적 제약 사이의 갈등을 이해하고, 행정적 효율성과 사회적 포용성의 차이를 고찰하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "도서관의 문턱: 연장 운영의 이면 | C1 Reading | WeLearn",
+      "en": "도서관의 문턱: 연장 운영의 이면 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "공공도서관의 운영 시간 연장이 과연 모든 시민에게 평등한 접근성을 보장하는지에 대한 사서의 일기를 읽고 비판적으로 분석해 봅니다.",
+      "en": "공공도서관의 운영 시간 연장이 과연 모든 시민에게 평등한 접근성을 보장하는지에 대한 사서의 일기를 읽고 비판적으로 분석해 봅니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

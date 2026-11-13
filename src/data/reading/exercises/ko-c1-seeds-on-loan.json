@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-seeds-on-loan",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "침묵의 씨앗을 둘러싼 갈등",
+      "en": "침묵의 씨앗을 둘러싼 갈등"
+    },
+    "intro": {
+      "es": "구전으로만 전해 내려온 토종 작물의 기원을 두고 두 가문이 겪는 갈등과 그 이면에 숨겨진 책임의 무게를 다룬 이야기입니다.",
+      "en": "구전으로만 전해 내려온 토종 작물의 기원을 두고 두 가문이 겪는 갈등과 그 이면에 숨겨진 책임의 무게를 다룬 이야기입니다."
+    },
+    "mission": {
+      "es": "이 글을 읽고 등장인물 간의 이해관계와 작물 보존의 역사적 의미를 분석하십시오.",
+      "en": "이 글을 읽고 등장인물 간의 이해관계와 작물 보존의 역사적 의미를 분석하십시오."
+    },
+    "targetText": "해 질 녘, 마을 회관의 씨앗 도서관은 팽팽한 긴장감으로 가득 찼다. 대대로 이 마을에서 농사를 지어 온 박 씨 가문과 최 씨 가문이 한자리에 모인 이유는 단 하나, '은빛 수수'라 불리는 토종 작물의 보존 공로를 누가 독점할 것인가를 결정하기 위해서였다. 박 씨 가문의 장남인 정수는 자신의 조부께서 수십 년 전 흉년이 들었을 때도 이 씨앗을 흙 속에 숨겨 지켜냈다고 주장했다. 그는 씨앗의 보존이 순전히 개인적인 희생과 끈기 덕분이었다고 강조하며, 마을 씨앗 도서관의 명예로운 자리에 자신의 가문 이름을 새겨야 한다고 목소리를 높였다. 반면, 최 씨 가문의 며느리인 미영은 조용히 고개를 저었다. 그녀는 씨앗이 박 씨 가문의 창고에만 머물렀다면 이미 썩어 없어졌을 것이라고 반박했다. 미영은 자신의 시어머니가 매년 가을마다 씨앗을 거두어 마을 곳곳의 밭에 나누어 심고, 그 종자를 다시 모아 보관하는 '교환의 관습'을 주도했기에 종의 다양성이 유지될 수 있었다고 주장했다. 박 씨 가문이 보관의 물리적 형태를 유지했다면, 최 씨 가문은 그 씨앗이 생명력을 잃지 않도록 순환의 고리를 만들었다는 논리였다. 두 가문의 주장은 평행선을 달렸다. 박 씨 가문에게 씨앗은 조상의 땀방울이 서린 가문의 유산이었고, 최 씨 가문에게 씨앗은 마을 공동체가 함께 공유해야 할 생명의 근원이었다. 회관에 모인 마을 사람들은 침묵했다. 그들은 누구의 손을 들어주어야 할지 알 수 없었다. 한쪽은 보존의 역사적 정통성을, 다른 한쪽은 보존의 사회적 가치를 내세우고 있었기 때문이다. 결국, 도서관 운영 위원회는 결론을 내리지 못한 채 회의를 마쳤다. 은빛 수수는 여전히 도서관 유리병 속에 담겨 있었지만, 그것이 누구의 공로로 기록되어야 하는지는 미궁 속으로 빠져들었다. 밤이 깊어질수록 도서관 안의 씨앗들은 마치 자신들을 둘러싼 인간들의 오만을 비웃기라도 하듯 고요하게 잠들어 있었다. 갈등은 해결되지 않았고, 씨앗은 주인을 찾지 못한 채 공동의 소유라는 모호한 정의 속에 갇혀 버렸다. 이 작은 마을에서 씨앗의 역사는 기록되지 못한 채, 누군가의 기억 속에서만 파편화된 진실로 남게 되었다. 보존이라는 행위가 과연 누구의 소유인가에 대한 질문은, 오늘도 텅 빈 회관의 공기 속을 맴돌며 무거운 침묵만을 남기고 있다.\n\n그러나 이러한 갈등의 이면에는 은빛 수수가 지닌 생물학적 특성이 간과되고 있다는 점이 더욱 뼈아픈 역설로 다가온다. 사실 은빛 수수는 특정 가문의 정성이나 마을의 관습적 교환 없이는 스스로 번식하기 어려운 취약한 품종이었기에, 두 가문의 다툼은 결국 자신들의 노력이 없었다면 이미 멸종했을 식물에 대한 인간 중심적 오만에 불과했다. 만약 그들이 씨앗을 소유의 대상으로만 바라보지 않고 생태계의 구성원으로 존중했다면, 보존의 주체를 가리기 위한 소모적인 논쟁 대신 씨앗이 스스로 뿌리내릴 수 있는 자연적인 환경을 조성하는 데 힘을 쏟았을 것이다. 결국 진정한 보존이란 기록의 명예를 독점하는 것이 아니라, 씨앗이 인간의 손길로부터 독립하여 스스로 세대를 이어갈 수 있도록 그 생명의 고리를 다시 자연의 품으로 돌려보내는 과정이어야 한다. 기록되지 못한 역사는 사라지는 것이 아니라 오히려 인간의 좁은 울타리를 벗어나 대지 위에서 더 넓고 자유로운 생명의 서사로 다시 쓰이고 있는지도 모른다. 이제 마을 사람들은 유리병 속의 은빛 수수를 바라보며, 그것이 누군가의 전유물이 아닌 대지 전체가 공유하는 생명의 약속임을 깨달아야 할 시점에 도달했다.",
+    "wordCount": 430,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "팽팽한",
+        "lemma": "팽팽한",
+        "glosses": {
+          "es": "tense or tight",
+          "en": "tense or tight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "독점할",
+        "lemma": "독점할",
+        "glosses": {
+          "es": "to monopolize",
+          "en": "to monopolize"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "흉년",
+        "lemma": "흉년",
+        "glosses": {
+          "es": "a year of poor harvest",
+          "en": "a year of poor harvest"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "순환",
+        "lemma": "순환",
+        "glosses": {
+          "es": "circulation or cycle",
+          "en": "circulation or cycle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "정통성",
+        "lemma": "정통성",
+        "glosses": {
+          "es": "legitimacy",
+          "en": "legitimacy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "파편화된",
+        "lemma": "파편화된",
+        "glosses": {
+          "es": "fragmented",
+          "en": "fragmented"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 17.2,
+      "maxSentenceWords": 30,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 다루는 핵심적인 갈등 양상은 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "씨앗의 보존 방식에 대한 가치관 차이"
+        },
+        {
+          "id": "a2",
+          "text": "토종 작물의 경제적 가치 산정에 대한 논쟁"
+        },
+        {
+          "id": "a3",
+          "text": "마을 씨앗 도서관 운영권을 둔 두 가문의 대립"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "박 씨 가문에게 씨앗은 조상의 땀방울이 서린 가문의 유산이었고, 최 씨 가문에게 씨앗은 마을 공동체가 함께 공유해야 할 생명의 근원이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "최 씨 가문이 주장하는 씨앗 보존의 핵심 기여는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "흉년에도 굴하지 않고 씨앗을 창고에 보관함"
+        },
+        {
+          "id": "a2",
+          "text": "마을 곳곳에 씨앗을 나누어 심어 종의 순환을 주도함"
+        },
+        {
+          "id": "a3",
+          "text": "씨앗 도서관을 설립하여 보존의 물리적 토대를 마련함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "미영은 자신의 시어머니가 매년 가을마다 씨앗을 거두어 마을 곳곳의 밭에 나누어 심고, 그 종자를 다시 모아 보관하는 '교환의 관습'을 주도했기에 종의 다양성이 유지될 수 있었다고 주장했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "마을 사람들이 회의에서 침묵을 지킨 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "두 가문의 영향력이 너무 커서 눈치를 보느라"
+        },
+        {
+          "id": "a2",
+          "text": "씨앗의 기원에 대해 아는 바가 전혀 없어서"
+        },
+        {
+          "id": "a3",
+          "text": "어느 한쪽의 주장이 더 타당한지 판단하기 어려워서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "한쪽은 보존의 역사적 정통성을, 다른 한쪽은 보존의 사회적 가치를 내세우고 있었기 때문이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "작가가 이 글을 통해 전달하고자 하는 메시지는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "공동체 자산의 소유권에 대한 복합적이고 해결하기 어려운 본질을 드러냄"
+        },
+        {
+          "id": "a2",
+          "text": "역사적 기록의 중요성을 강조하고자 함"
+        },
+        {
+          "id": "a3",
+          "text": "씨앗 보존을 위한 구체적인 방법론을 제시함"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "갈등은 해결되지 않았고, 씨앗은 주인을 찾지 못한 채 공동의 소유라는 모호한 정의 속에 갇혀 버렸다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "글 전반에 나타나는 서술자의 태도로 가장 적절한 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "두 가문의 갈등을 중재하려는 의지를 보임"
+        },
+        {
+          "id": "a2",
+          "text": "현상을 관찰하며 다소 냉소적인 시각을 유지함"
+        },
+        {
+          "id": "a3",
+          "text": "박 씨 가문의 주장에 동조하며 안타까워함"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "밤이 깊어질수록 도서관 안의 씨앗들은 마치 자신들을 둘러싼 인간들의 오만을 비웃기라도 하듯 고요하게 잠들어 있었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'파편화된'과 문맥적 의미가 가장 가까운 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "체계적으로 정리된"
+        },
+        {
+          "id": "a2",
+          "text": "완전하게 보존된"
+        },
+        {
+          "id": "a3",
+          "text": "조각나고 흩어진"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "이 작은 마을에서 씨앗의 역사는 기록되지 못한 채, 누군가의 기억 속에서만 파편화된 진실로 남게 되었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "두 가문의 갈등을 해결하기 위해 마을 공동체가 취할 수 있는 제3의 대안을 제시하고, 그 이유를 기술하십시오.",
+      "en": "두 가문의 갈등을 해결하기 위해 마을 공동체가 취할 수 있는 제3의 대안을 제시하고, 그 이유를 기술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "이 글을 읽고 등장인물 간의 이해관계와 작물 보존의 역사적 의미를 분석하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "침묵의 씨앗을 둘러싼 갈등 | C1 Reading | WeLearn",
+      "en": "침묵의 씨앗을 둘러싼 갈등 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "구전으로만 전해 내려온 토종 작물의 기원을 두고 두 가문이 겪는 갈등과 그 이면에 숨겨진 책임의 무게를 다룬 이야기입니다.",
+      "en": "구전으로만 전해 내려온 토종 작물의 기원을 두고 두 가문이 겪는 갈등과 그 이면에 숨겨진 책임의 무게를 다룬 이야기입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

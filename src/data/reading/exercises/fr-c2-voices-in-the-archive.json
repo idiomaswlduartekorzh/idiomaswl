@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'écho figé du conservateur",
+      "en": "L'écho figé du conservateur"
+    },
+    "intro": {
+      "es": "Une réflexion sur l'éthique de l'archivage oral et la dépossession de la parole.",
+      "en": "Une réflexion sur l'éthique de l'archivage oral et la dépossession de la parole."
+    },
+    "mission": {
+      "es": "Analysez la tension entre la préservation historique et l'autonomie du sujet dans le contexte d'une archive sonore.",
+      "en": "Analysez la tension entre la préservation historique et l'autonomie du sujet dans le contexte d'une archive sonore."
+    },
+    "targetText": "Le silence qui régnait dans la salle d'écoute de l'Institut des Mémoires Fugaces était dense, presque palpable. Élias, conservateur en chef depuis deux décennies, ajusta son casque avec une précision chirurgicale. Devant lui, une bobine magnétique, rescapée d'un enregistrement réalisé quarante ans plus tôt par une femme nommée Clara, tournait lentement. Clara n'était plus, mais sa voix, elle, était condamnée à une éternité de répétitions. Élias observait les ondes sonores s'afficher sur son moniteur, une représentation visuelle de l'âme humaine réduite à des fréquences. Le dilemme qui le hantait n'était pas technique, mais ontologique : en fixant cette voix sur un support numérique, il ne la sauvait pas de l'oubli, il la dépossédait de sa fluidité naturelle, la transformant en un artefact immuable que le temps ne pouvait plus altérer, mais que le sujet ne pouvait plus non plus renier. La voix de Clara racontait, avec une hésitation poignante, les événements d'une nuit de grand froid dans un village oublié, une narration que le conservateur connaissait par cœur. Il savait que, dans cette version, elle omettait volontairement le nom de son compagnon de fuite. À l'époque, cette omission était une protection, un choix conscient dicté par la peur ou la loyauté. Aujourd'hui, cette lacune apparaissait aux yeux des chercheurs comme une énigme à résoudre, une faille dans le récit qu'il fallait combler à tout prix. Élias se sentait coupable de cette intrusion. En numérisant ces silences, il les exposait à une dissection académique pour laquelle ils n'avaient jamais été conçus. Il se souvenait de la lettre que Clara lui avait envoyée avant de mourir, une missive où elle exprimait son désir de voir ses paroles s'éteindre avec elle, comme les braises d'un feu de camp. Pourtant, le mandat de l'Institut était clair : préserver l'intégralité du patrimoine oral sans exception. Le conflit entre sa loyauté envers la défunte et son devoir institutionnel créait une dissonance cognitive qu'aucune restauration sonore ne pouvait apaiser. Il regarda le curseur clignoter sur l'écran. Il avait le pouvoir de supprimer ce segment, de respecter ce dernier vœu, mais cela constituerait une altération irréversible de la vérité historique. La tension atteignit son paroxysme lorsqu'il réalisa que, pour les historiens, la valeur de cette archive résidait précisément dans ce qui n'était pas dit. Le silence de Clara était devenu une donnée, un objet d'étude, une pièce à conviction dans un procès posthume. Le conservateur comprit alors que son rôle n'était pas celui d'un gardien, mais celui d'un geôlier. En archivant la parole, il enfermait le sujet dans une version figée de son existence, une identité tronquée qui ne pouvait plus évoluer. Il posa ses mains sur la console, hésitant devant le bouton de sauvegarde. S'il validait l'opération, la voix de Clara rejoindrait les serveurs sécurisés, accessible à tous, dépouillée de son contexte émotionnel et de son droit à l'oubli. S'il annulait, il trahissait sa mission, mais il rendait à Clara une dignité que l'institution ne pouvait comprendre. Le paradoxe était total : la préservation était une forme d'anéantissement. Il prit une profonde inspiration, le poids des décennies de silence accumulé pesant sur ses épaules. Il ne s'agissait plus seulement de Clara, mais de tous ceux dont il avait capturé les confidences. Était-il un complice de la mémoire ou un agent de la désolation ? Il comprit que l'histoire, telle qu'elle est conservée, est souvent le cimetière des intentions humaines. Il ferma les yeux, écoutant une dernière fois la voix de Clara, cette fois sans chercher à analyser le contenu, mais en se concentrant sur la vibration, cette trace humaine qui refusait de se laisser réduire à des données binaires. Il savait que le choix qu'il allait faire définirait non seulement le sort de cet enregistrement, mais aussi sa propre intégrité en tant que conservateur. Dans le calme absolu de la salle, le ronronnement de la machine semblait être le seul témoin de son hésitation. Il finit par effleurer la touche, non pour valider, mais pour arrêter la lecture. Le silence revint, plus lourd qu'avant, mais cette fois, il était vivant, respectueux, et surtout, il appartenait à nouveau à Clara. Il venait de comprendre que la véritable préservation ne réside pas dans l'accumulation, mais dans la capacité à laisser les choses disparaître quand leur heure est venue.\n\nCependant, cette décision, bien que moralement libératrice, engendra une onde de choc inattendue au sein de la communauté scientifique. En privant les historiens de ce témoignage, Élias ne se contentait pas de protéger l'intimité de Clara ; il créait un précédent dangereux qui menaçait l'intégrité même des archives nationales. Ses collègues, loin de saluer cet acte de désobéissance éthique, y virent une forme de censure arbitraire, une appropriation subjective du patrimoine collectif. Ils soutenaient que la vérité historique, si fragmentaire soit-elle, appartient à la postérité et non à celui qui en détient la clé technique. Pour eux, le droit à l'oubli n'était qu'un privilège romantique, une entrave à la compréhension des mécanismes de survie humaine lors des périodes troubles. En effaçant cette trace, Élias avait involontairement transformé une omission volontaire en un mystère insoluble, alimentant des spéculations bien plus dévastatrices que la réalité qu'il avait cherché à dissimuler. Le débat qui s'ensuivit révéla une faille fondamentale dans leur discipline : la tension irréconciliable entre le devoir de mémoire, qui exige une transparence totale, et le respect de l'humain, qui nécessite parfois le voile de l'ombre. Le conservateur, désormais paria, comprit que chaque acte de préservation est une trahison, et que chaque acte d'oubli est une perte irréparable pour la connaissance universelle.",
+    "wordCount": 920,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "ontologique",
+        "lemma": "ontologique",
+        "glosses": {
+          "es": "Relating to the nature of being or existence",
+          "en": "Relating to the nature of being or existence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "immuable",
+        "lemma": "immuable",
+        "glosses": {
+          "es": "Unchangeable or permanent",
+          "en": "Unchangeable or permanent"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dissonance",
+        "lemma": "dissonance",
+        "glosses": {
+          "es": "A lack of agreement or harmony",
+          "en": "A lack of agreement or harmony"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paroxysme",
+        "lemma": "paroxysme",
+        "glosses": {
+          "es": "The highest point or peak of an emotion or event",
+          "en": "The highest point or peak of an emotion or event"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "posthume",
+        "lemma": "posthume",
+        "glosses": {
+          "es": "Occurring or awarded after the death of the person",
+          "en": "Occurring or awarded after the death of the person"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "anéantissement",
+        "lemma": "anéantissement",
+        "glosses": {
+          "es": "The state of being destroyed or reduced to nothing",
+          "en": "The state of being destroyed or reduced to nothing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.4,
+      "maxSentenceWords": 56,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit éthique entre l'archivage et le droit à l'oubli."
+        },
+        {
+          "id": "a2",
+          "text": "La difficulté technique de la restauration audio."
+        },
+        {
+          "id": "a3",
+          "text": "L'importance de l'histoire orale pour les générations futures."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le dilemme qui le hantait n'était pas technique, mais ontologique : en fixant cette voix sur un support numérique, il ne la sauvait pas de l'oubli, il la dépossédait de sa fluidité naturelle",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Que contient l'enregistrement de Clara ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le nom de son compagnon."
+        },
+        {
+          "id": "a2",
+          "text": "Le récit d'une nuit de grand froid."
+        },
+        {
+          "id": "a3",
+          "text": "Une confession sur sa vie."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La voix de Clara racontait, avec une hésitation poignante, les événements d'une nuit de grand froid dans un village oublié",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi Élias se sent-il comme un geôlier ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Parce qu'il travaille dans une prison."
+        },
+        {
+          "id": "a2",
+          "text": "Parce qu'il doit surveiller les archives."
+        },
+        {
+          "id": "a3",
+          "text": "Parce qu'il empêche le sujet d'évoluer."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "En archivant la parole, il enfermait le sujet dans une version figée de son existence, une identité tronquée qui ne pouvait plus évoluer.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quelle est l'intention principale de l'auteur en décrivant le silence à la fin ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Illustrer la victoire de la dignité humaine sur l'institution."
+        },
+        {
+          "id": "a2",
+          "text": "Souligner l'échec de la mission d'Élias."
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer que le silence est une donnée technique importante."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Il venait de comprendre que la véritable préservation ne réside pas dans l'accumulation, mais dans la capacité à laisser les choses disparaître quand leur heure est venue.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Technique et froid."
+        },
+        {
+          "id": "a2",
+          "text": "Mélancolique et introspectif."
+        },
+        {
+          "id": "a3",
+          "text": "Optimiste et léger."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il prit une profonde inspiration, le poids des décennies de silence accumulé pesant sur ses épaules.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'paroxysme' dans le contexte du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un point de calme absolu."
+        },
+        {
+          "id": "a2",
+          "text": "Une erreur technique de la machine."
+        },
+        {
+          "id": "a3",
+          "text": "Le moment de tension maximale."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La tension atteignit son paroxysme lorsqu'il réalisa que, pour les historiens, la valeur de cette archive résidait précisément dans ce qui n'était pas dit.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif examinant si la numérisation systématique du patrimoine oral constitue une forme de violence symbolique envers les sujets archivés.",
+      "en": "Rédigez un court essai argumentatif examinant si la numérisation systématique du patrimoine oral constitue une forme de violence symbolique envers les sujets archivés."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez la tension entre la préservation historique et l'autonomie du sujet dans le contexte d'une archive sonore.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'écho figé du conservateur | C2 Reading | WeLearn",
+      "en": "L'écho figé du conservateur | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une réflexion sur l'éthique de l'archivage oral et la dépossession de la parole.",
+      "en": "Une réflexion sur l'éthique de l'archivage oral et la dépossession de la parole."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

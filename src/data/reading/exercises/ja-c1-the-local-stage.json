@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-local-stage",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "舞台の裏側の沈黙：助成金報告書がこぼれ落としたもの",
+      "en": "舞台の裏側の沈黙：助成金報告書がこぼれ落としたもの"
+    },
+    "intro": {
+      "es": "地域劇団の運営における評価基準の歪みをテーマにした、C1レベルの読解演習です。",
+      "en": "地域劇団の運営における評価基準の歪みをテーマにした、C1レベルの読解演習です。"
+    },
+    "mission": {
+      "es": "助成金受給の論理と、現場のコミュニティ形成という価値観の対立を読み解く。",
+      "en": "助成金受給の論理と、現場のコミュニティ形成という価値観の対立を読み解く。"
+    },
+    "targetText": "地方都市の「あおぞら市民劇場」を率いる演出家の佐藤真由美は、今夜の最終公演を控えた楽屋で、一枚の報告書を前に頭を抱えていた。文化振興財団へ提出する「成果報告書」のドラフトには、チケットの販売枚数と観客動員数という冷徹な数字だけが並んでいる。財団が求めるのは、いかに効率的に公的資金を投資し、文化的な消費を創出したかという「目に見える成果」だ。しかし、佐藤の視線は、舞台には一度も上がることのなかった一人の青年に向けられていた。引きこもり支援プログラムの一環として参加した高橋という青年は、本番の照明を浴びることはなかったが、半年間、毎日欠かさず大道具の製作や舞台裏の片付けを献身的に行い、少しずつ他者との会話を取り戻していた。佐藤にとって、この青年の社会復帰こそが劇団の最大の功績であるはずだった。ところが、報告書のフォーマットには「非出演者」の活動を記録する項目など存在しない。舞台の華やかさだけが評価される仕組みの中で、裏方としての静かな変容は、行政の論理では「無」として扱われてしまうのだ。劇団の運営委員長である田中は、佐藤の懸念を一笑に付した。「真由美さん、我々の使命は芸術の振興であって、福祉活動ではない。助成金を継続させるためには、観客数という客観的な指標を強調するしかないんだよ」。田中が強調するのは、劇団の存続という現実的な生存戦略だ。彼にとって、高橋のような存在は、効率的な運営の邪魔にはならないが、報告書を飾るための「資産」にもなり得ない。佐藤は、田中が差し出した修正案に目を通した。そこには、高橋たちが積み重ねてきた対話の記録が削除され、代わりに、平均的な観客の満足度を強調するグラフが挿入されていた。佐藤は、もしこの報告書を提出すれば、来年度の助成金は確実に確保できることを理解していた。しかし、それは同時に、舞台の裏側で静かに育まれてきたコミュニティの価値を、自らの手で切り捨てることを意味していた。佐藤はペンを握りしめたまま、窓の外に広がる劇場の搬入口を見つめた。そこには、今夜の公演のために機材を運び込む高橋の姿があった。彼は、自分の作業が助成金の対象外であることを知る由もない。ただ、自分の居場所があるという事実に安らぎを感じているようだった。佐藤は、報告書の末尾に「備考」という欄を強引に付け加えることを決意した。それは、財団の規定から逸脱した、ささやかな抵抗だった。しかし、その欄に書かれた一行が、果たして誰かの目に留まるのか。あるいは、システムという巨大な歯車の中で、単なるノイズとして処理されてしまうのか。佐藤には分からなかった。ただ、この劇場の本当の価値は、スポットライトの当たる場所ではなく、その影の中にこそあるという確信だけが、彼女の胸を締め付けていた。今夜、幕が上がれば、観客は華やかな舞台に拍手を送るだろう。しかし、その拍手の音の裏側で、佐藤は報告書には載らない物語を、自らの記憶に刻み込もうとしていた。この葛藤は、芸術と福祉の境界線上で揺れ動く、現代の市民文化の限界を象徴していた。\n\nしかし、佐藤のささやかな抵抗は、皮肉にも劇団の存続を脅かす火種となる可能性を孕んでいた。もし財団がその備考を「不適切な記載」として問題視すれば、効率を重んじる行政の判断により、来年度の助成金そのものが凍結される恐れがあるからだ。田中が恐れたのは、芸術という崇高な名の下に福祉的な活動を混入させることで、劇団が本来の評価軸から外れ、公的支援の対象外へと転落するリスクであった。佐藤の正義感は、高橋の居場所を守るための盾であると同時に、劇団の基盤を揺るがす諸刃の剣ともなり得るのだ。このジレンマに直面した時、彼女は芸術の純粋性を守るために組織の存続を犠牲にするのか、それともシステムに従うことで、守るべき個人の尊厳を再び闇へと葬り去るのか。その選択の重圧は、今夜の幕が下りた後、彼女が一人で背負わねばならない、あまりに過酷で孤独な試練となって劇場を包み込んでいた。",
+    "wordCount": 1524,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "冷徹",
+        "lemma": "冷徹",
+        "glosses": {
+          "es": "cold and objective",
+          "en": "cold and objective"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "献身的",
+        "lemma": "献身的",
+        "glosses": {
+          "es": "devoted",
+          "en": "devoted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "指標",
+        "lemma": "指標",
+        "glosses": {
+          "es": "index or indicator",
+          "en": "index or indicator"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "生存戦略",
+        "lemma": "生存戦略",
+        "glosses": {
+          "es": "survival strategy",
+          "en": "survival strategy"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "逸脱",
+        "lemma": "逸脱",
+        "glosses": {
+          "es": "deviation",
+          "en": "deviation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "葛藤",
+        "lemma": "葛藤",
+        "glosses": {
+          "es": "conflict or struggle",
+          "en": "conflict or struggle"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 42.3,
+      "maxSentenceWords": 95,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語が扱う主要なテーマは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "芸術活動の評価と現場の価値の乖離"
+        },
+        {
+          "id": "a2",
+          "text": "助成金制度の不備"
+        },
+        {
+          "id": "a3",
+          "text": "市民劇団における運営委員の権力争い"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "舞台の華やかさだけが評価される仕組みの中で、裏方としての静かな変容は、行政の論理では「無」として扱われてしまうのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "報告書の内容について、田中は何を主張していますか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "福祉活動の記録を増やすべきだ"
+        },
+        {
+          "id": "a2",
+          "text": "観客数こそが重要である"
+        },
+        {
+          "id": "a3",
+          "text": "修正案には誤りが多い"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "助成金を継続させるためには、観客数という客観的な指標を強調するしかないんだよ",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤が報告書に「備考」欄を追加した真の理由は？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "助成金の額を増やすため"
+        },
+        {
+          "id": "a2",
+          "text": "福祉活動の成果を証明するため"
+        },
+        {
+          "id": "a3",
+          "text": "劇団の存在価値を記録に残すため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "それは、財団の規定から逸脱した、ささやかな抵抗だった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "作者がこの物語を通じて読者に何を問いかけていますか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "芸術は数字で測れるか"
+        },
+        {
+          "id": "a2",
+          "text": "助成金は誰のためにあるべきか"
+        },
+        {
+          "id": "a3",
+          "text": "効率的な劇団運営とはどのようなものか"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この葛藤は、芸術と福祉の境界線上で揺れ動く、現代の市民文化の限界を象徴していた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "物語の結末における佐藤の心情を最もよく表しているのはどれですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "未来への希望に満ちている"
+        },
+        {
+          "id": "a2",
+          "text": "無力感と信念が入り混じっている"
+        },
+        {
+          "id": "a3",
+          "text": "制度に対する激しい怒りを感じている"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "あるいは、システムという巨大な歯車の中で、単なるノイズとして処理されてしまうのか。佐藤には分からなかった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「冷徹」という言葉が文中で意味していることは何ですか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "非常に厳しい"
+        },
+        {
+          "id": "a2",
+          "text": "非常に冷静な"
+        },
+        {
+          "id": "a3",
+          "text": "感情を排した"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "文化振興財団へ提出する「成果報告書」のドラフトには、チケットの販売枚数と観客動員数という冷徹な数字だけが並んでいる。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「成果」という言葉の定義について、行政的視点と現場的視点の両面から、あなたが考える理想的な評価方法を400字程度で論じてください。",
+      "en": "「成果」という言葉の定義について、行政的視点と現場的視点の両面から、あなたが考える理想的な評価方法を400字程度で論じてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "助成金受給の論理と、現場のコミュニティ形成という価値観の対立を読み解く。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "舞台の裏側の沈黙：助成金報告書がこぼれ落としたもの | C1 Reading | WeLearn",
+      "en": "舞台の裏側の沈黙：助成金報告書がこぼれ落としたもの | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "地域劇団の運営における評価基準の歪みをテーマにした、C1レベルの読解演習です。",
+      "en": "地域劇団の運営における評価基準の歪みをテーマにした、C1レベルの読解演習です。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

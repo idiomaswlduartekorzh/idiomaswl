@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-school-garden",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-school-garden",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "school garden",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「共生」の庭という名の排他性",
+      "en": "「共生」の庭という名の排他性"
+    },
+    "intro": {
+      "es": "本稿では、ある小学校の校庭緑化プロジェクトを題材に、善意に基づく計画がどのようにして特定の家庭を疎外する結果を招くのか、その構造的な矛盾を考察する。",
+      "en": "本稿では、ある小学校の校庭緑化プロジェクトを題材に、善意に基づく計画がどのようにして特定の家庭を疎外する結果を招くのか、その構造的な矛盾を考察する。"
+    },
+    "mission": {
+      "es": "学校教育における「インクルーシブ」という言葉が、実態としてどのような選別機能を持っているのかを読み解き、論理的整合性と社会的背景を分析する。",
+      "en": "学校教育における「インクルーシブ」という言葉が、実態としてどのような選別機能を持っているのかを読み解き、論理的整合性と社会的背景を分析する。"
+    },
+    "targetText": "私立星見台小学校の校長、高瀬氏は、今年度の目玉として「共生の庭」プロジェクトを掲げた。これは、校舎裏の荒地を地域住民と保護者が共同で耕し、四季折々の作物を育てるという壮大な試みである。高瀬氏は全校集会で「この庭は、家庭の垣根を越え、誰もが等しく土に触れられる開かれた場所である」と高らかに宣言した。校門には「多様性と共生」を謳う看板が掲げられ、一見すると、この学校が目指す教育理念の結晶のように思われた。しかし、その実態は、特定のライフスタイルを前提とした排他的な設計図の上に成り立っていたのである。\n\nプロジェクトの運営は、保護者会から選出された「庭づくり委員会」に一任された。委員会が策定した計画書には、平日の午前中に定期的な水やりや除草作業を行うという項目が盛り込まれていた。共働き家庭が過半数を占めるこの地域において、平日の日中に時間を割ける保護者は限定的だ。専業主婦や自営業者でなければ、この「共生の庭」の維持管理に参加することは物理的に不可能に近い。高瀬氏は「ボランティアベースである以上、無理強いはしない」と繰り返すが、実際には、作業に参加できない家庭の子供たちが、収穫祭の準備から遠ざけられるという暗黙の序列が形成され始めていた。\n\n事態が深刻化したのは、秋の収穫を控えた十月のことだった。委員会は、収穫祭の運営費用を捻出するために、参加家庭による野菜の直売会を企画した。しかし、直売会の準備や販売には、前日からの仕込みや当日の早朝からの搬入が必要となる。高瀬氏はこれを「地域交流の好機」と称賛したが、平日に作業に参加できない家庭には、準備の手伝いという名の「貢献」が求められたのだ。貢献できない家庭は、収穫された野菜の分配において後回しにされるという、目に見えないペナルティが課されるようになった。\n\nある保護者から「共生とは、全員が同じ土俵に立てることを指すのではないか」という指摘がなされた。しかし、高瀬氏は「共生とは、各々が持てるリソースを出し合い、補完し合うことだ」と論理をすり替えた。この主張は、一見すると協力の精神を説いているように聞こえるが、その実、リソースを持たない家庭を「貢献不足」として排除する正当化の論理に他ならない。インクルーシブという美辞麗句は、いつしか、特定の価値観を共有できる者だけを囲い込むための防壁へと変貌を遂げていたのである。\n\n結局、収穫祭は盛況のうちに幕を閉じたが、庭の隅には誰にも手入れされず枯れ果てた一画が残された。それは、計画の恩恵からこぼれ落ちた家庭の象徴のように見えた。高瀬氏は「来年度はさらに改善する」と語るが、その言葉に具体的な解決策が伴うことはないだろう。庭は確かに美しい花を咲かせたかもしれない。しかし、その土壌には、教育現場が抱える「共生」という言葉の空虚さと、排除される者たちの静かな溜息が深く埋め込まれているのである。この庭が教えてくれたのは、善意の計画ほど、無自覚に他者を踏みつける危険性を孕んでいるという冷徹な現実であった。\n\nさらに深刻なのは、この歪な構造が子供たちの人間関係にまで浸透し始めたことだ。収穫祭の成功を境に、家庭の貢献度が子供同士の遊びや役割分担の基準として意識され、親の活動状況がそのまま子供の学校生活における社会的地位を決定づけるという歪んだカーストが定着してしまった。高瀬氏が掲げた「多様性と共生」という理想は、皮肉にも、家庭環境の格差を可視化し、子供たちにまで「選別」の価値観を内面化させる教育の失敗を招いた。本来、誰もが等しく土に触れるはずだった庭は、今や学校という小さな社会の中で、寛容の仮面を被った冷酷な選別装置として機能し続けているのである。",
+    "wordCount": 1407,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "垣根",
+        "lemma": "垣根",
+        "glosses": {
+          "es": "fence or barrier",
+          "en": "fence or barrier"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "一任",
+        "lemma": "一任",
+        "glosses": {
+          "es": "entrusting entirely",
+          "en": "entrusting entirely"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "捻出",
+        "lemma": "捻出",
+        "glosses": {
+          "es": "finding or raising funds",
+          "en": "finding or raising funds"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "美辞麗句",
+        "lemma": "美辞麗句",
+        "glosses": {
+          "es": "fine-sounding words",
+          "en": "fine-sounding words"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "防壁",
+        "lemma": "防壁",
+        "glosses": {
+          "es": "defensive wall",
+          "en": "defensive wall"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "空虚",
+        "lemma": "空虚",
+        "glosses": {
+          "es": "emptiness or hollowness",
+          "en": "emptiness or hollowness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 48.5,
+      "maxSentenceWords": 90,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:31:33.594Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本稿が主張している学校の庭プロジェクトの最大の問題点は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "運営側の独善的な姿勢と排除構造"
+        },
+        {
+          "id": "a2",
+          "text": "管理不足による作物の枯死"
+        },
+        {
+          "id": "a3",
+          "text": "資金調達における保護者の負担過多"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "インクルーシブという美辞麗句は、いつしか、特定の価値観を共有できる者だけを囲い込むための防壁へと変貌を遂げていたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "平日に作業に参加できない家庭が直面した具体的な不利益は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "委員会からの強制的な退会勧告"
+        },
+        {
+          "id": "a2",
+          "text": "野菜の分配における優先順位の低下"
+        },
+        {
+          "id": "a3",
+          "text": "子供の登校拒否の誘発"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "貢献できない家庭は、収穫された野菜の分配において後回しにされるという、目に見えないペナルティが課されるようになった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "高瀬校長が「共生」を再定義した意図として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "多様な意見を取り入れるための柔軟な方針転換"
+        },
+        {
+          "id": "a2",
+          "text": "保護者間の格差を埋めるための具体的な支援策の提示"
+        },
+        {
+          "id": "a3",
+          "text": "特定の層を排除する現状を正当化する論理のすり替え"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "高瀬氏は「共生とは、各々が持てるリソースを出し合い、補完し合うことだ」と論理をすり替えた。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "筆者が最後に「冷徹な現実」という言葉を用いた目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "善意で行われる教育活動が、無自覚に他者を傷つける可能性を指摘するため"
+        },
+        {
+          "id": "a2",
+          "text": "来年度のプロジェクトが失敗に終わることを予言するため"
+        },
+        {
+          "id": "a3",
+          "text": "庭の管理を怠った保護者たちの責任を厳しく追及するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この庭が教えてくれたのは、善意の計画ほど、無自覚に他者を踏みつける危険性を孕んでいるという冷徹な現実であった。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "本稿の全体的なトーンとして最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的"
+        },
+        {
+          "id": "a2",
+          "text": "批判的"
+        },
+        {
+          "id": "a3",
+          "text": "中立的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "インクルーシブという美辞麗句は、いつしか、特定の価値観を共有できる者だけを囲い込むための防壁へと変貌を遂げていたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文中で「特定の価値観を共有できる者だけを囲い込むための防壁」と表現されているものは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "運営委員会"
+        },
+        {
+          "id": "a2",
+          "text": "共生の庭プロジェクト"
+        },
+        {
+          "id": "a3",
+          "text": "美辞麗句"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "インクルーシブという美辞麗句は、いつしか、特定の価値観を共有できる者だけを囲い込むための防壁へと変貌を遂げていたのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「共生の庭」という事例を踏まえ、教育現場における「インクルーシブ」の定義が、実態と乖離してしまう原因について、あなたの考えを400字程度で述べなさい。",
+      "en": "「共生の庭」という事例を踏まえ、教育現場における「インクルーシブ」の定義が、実態と乖離してしまう原因について、あなたの考えを400字程度で述べなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "学校教育における「インクルーシブ」という言葉が、実態としてどのような選別機能を持っているのかを読み解き、論理的整合性と社会的背景を分析する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:31:33.594Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「共生」の庭という名の排他性 | C1 Reading | WeLearn",
+      "en": "「共生」の庭という名の排他性 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "本稿では、ある小学校の校庭緑化プロジェクトを題材に、善意に基づく計画がどのようにして特定の家庭を疎外する結果を招くのか、その構造的な矛盾を考察する。",
+      "en": "本稿では、ある小学校の校庭緑化プロジェクトを題材に、善意に基づく計画がどのようにして特定の家庭を疎外する結果を招くのか、その構造的な矛盾を考察する。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-school-garden",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:31:33.594Z"
+  }
+}

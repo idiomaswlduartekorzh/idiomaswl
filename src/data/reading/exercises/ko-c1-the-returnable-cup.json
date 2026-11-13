@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "다회용 컵 도입의 이면: 지속 가능성의 역설",
+      "en": "다회용 컵 도입의 이면: 지속 가능성의 역설"
+    },
+    "intro": {
+      "es": "이 글은 사내 카페의 일회용 컵 퇴출 정책이 가져온 환경적 성과와 그 뒤에 숨겨진 자원 소모 문제를 다룹니다.",
+      "en": "이 글은 사내 카페의 일회용 컵 퇴출 정책이 가져온 환경적 성과와 그 뒤에 숨겨진 자원 소모 문제를 다룹니다."
+    },
+    "mission": {
+      "es": "글의 내용을 정확히 파악하고, 저자가 지적하는 환경 보호의 모순적 상황에 대해 비판적으로 사고하십시오.",
+      "en": "글의 내용을 정확히 파악하고, 저자가 지적하는 환경 보호의 모순적 상황에 대해 비판적으로 사고하십시오."
+    },
+    "targetText": "최근 '그린 오피스' 프로젝트의 일환으로 사내 카페에서 일회용 컵을 전면 퇴출하는 정책이 시행되었다. 카페 관리자 김민준 씨는 지난달 보고서를 통해 일회용 컵 사용량이 제로에 도달했음을 자랑스럽게 발표했다. 임직원들은 각자의 개인 텀블러를 지참하며 환경 보호에 동참한다는 자부심을 느꼈고, 사내 분위기 또한 한층 고무되었다. 김 씨는 이 성과가 탄소 발자국을 획기적으로 줄였다고 강조하며, 우리 회사가 친환경 경영의 선두 주자로 자리매김했다고 자평했다. 그러나 이러한 낙관적인 보고서에는 정작 중요한 환경 비용이 누락되어 있었다. 일회용 컵이 사라진 자리에는 매일 수백 개의 텀블러를 세척하기 위한 대량의 온수와 세제가 투입되고 있었다. 카페 주방의 상하수도 사용량은 정책 시행 전보다 두 배 가까이 치솟았으며, 이를 처리하기 위한 정수 및 하수 정화 시설의 가동 시간도 비례하여 늘어났다. 더욱이 텀블러 세척을 전담하는 외부 업체 차량이 매일 아침 본사를 왕복하며 내뿜는 매연은 기존 일회용 컵 배송 과정에서 발생하던 탄소 배출량을 상쇄하고도 남을 수준이었다. 김 씨의 보고서는 오직 '컵의 개수'라는 가시적인 수치에만 매몰되어, 그 이면에 숨겨진 보이지 않는 자원 흐름을 간과한 것이다. 결국 환경을 보호하겠다는 명목으로 도입된 정책이 오히려 더 복잡한 환경 오염의 고리를 만들어낸 셈이다. 이 현상은 단순히 일회용품을 다회용품으로 대체하는 것만으로는 진정한 지속 가능성을 달성할 수 없음을 시사한다. 세척 과정의 에너지 소모와 물류 이동이라는 숨겨진 비용을 고려하지 않는다면, 친환경이라는 이름의 정책은 또 다른 형태의 낭비로 전락할 위험이 있다. 김 씨는 자신의 보고서가 완벽한 성공 사례라 믿고 있지만, 냉정한 시선으로 바라본 현장은 자원 절약이 아닌 자원 전환에 불과했다. 우리에게 필요한 것은 눈에 보이는 성과를 포장하는 기술이 아니라, 전체적인 시스템의 효율성을 객관적으로 평가하는 통찰력이다. 지금의 방식이 과연 지구를 위한 것인지, 아니면 단지 죄책감을 덜어내기 위한 심리적 위안인지에 대해 깊은 성찰이 요구되는 시점이다. 정책의 성공 여부는 단순히 일회용 컵을 없애는 것에 있지 않다. 보이지 않는 비용까지 책임질 수 있는 구조를 설계하는 것이야말로 진정한 환경 경영의 시작이다.\n\n이제 경영진은 단순한 수치적 성과에 매몰되지 않고 보다 근본적인 해결책을 모색해야 하는 중대한 기로에 서게 되었다. 단순히 일회용품을 다회용품으로 바꾸는 행위가 오히려 더 큰 자원 소모를 야기할 수 있다는 사실은 우리에게 지속 가능한 경영이 결코 단편적인 정책만으로 이루어질 수 없음을 분명하게 보여준다. 이제는 사내 카페의 운영 방식을 전면적으로 재검토하여 세척 과정의 효율성을 극대화하거나 친환경적인 세척 기술을 도입하는 등 실질적인 대안을 마련해야 한다. 또한 임직원 개개인이 텀블러를 사용하는 과정에서 발생하는 탄소 발자국까지 고려한 통합적인 환경 관리 시스템을 구축하는 것이 무엇보다 시급한 과제이다. 진정한 친환경 기업으로 거듭나기 위해서는 눈에 보이는 가시적인 성과를 자랑하는 것에 그치지 말고, 그 이면에 숨겨진 보이지 않는 비용까지 세밀하게 분석하고 책임지는 투명한 태도가 필요하다. 이러한 성찰이 뒷받침될 때 비로소 일회용 컵 퇴출 정책은 단순한 보여주기식 행정을 넘어 지구 환경을 진정으로 보호하는 지속 가능한 가치 창출의 모델로 자리매김할 수 있을 것이다. 결국 환경 보호라는 거창한 구호는 철저한 데이터 분석과 시스템에 대한 냉철한 비판적 사고가 결합할 때 비로소 그 진정한 의미를 찾을 수 있다는 점을 우리는 잊지 말아야 한다.",
+    "wordCount": 431,
+    "estimatedMinutes": 18,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "퇴출",
+        "lemma": "퇴출",
+        "glosses": {
+          "es": "expulsion or removal",
+          "en": "expulsion or removal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "고무되었다",
+        "lemma": "고무되었다",
+        "glosses": {
+          "es": "encouraged or uplifted",
+          "en": "encouraged or uplifted"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "매몰되어",
+        "lemma": "매몰되어",
+        "glosses": {
+          "es": "buried or obsessed with",
+          "en": "buried or obsessed with"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "간과한",
+        "lemma": "간과한",
+        "glosses": {
+          "es": "overlooked",
+          "en": "overlooked"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전락할",
+        "lemma": "전락할",
+        "glosses": {
+          "es": "degenerated or fallen into",
+          "en": "degenerated or fallen into"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "통찰력",
+        "lemma": "통찰력",
+        "glosses": {
+          "es": "insight",
+          "en": "insight"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 18,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글이 전달하고자 하는 핵심 주제는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "친환경 정책의 이면과 자원 소모"
+        },
+        {
+          "id": "a2",
+          "text": "일회용 컵 사용의 위험성"
+        },
+        {
+          "id": "a3",
+          "text": "사내 카페 관리자 김민준의 성과 평가"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "환경을 보호하겠다는 명목으로 도입된 정책이 오히려 더 복잡한 환경 오염의 고리를 만들어낸 셈이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "정책 시행 후 카페 주방에서 발생한 구체적인 변화는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "일회용 컵 배송 차량의 폐지"
+        },
+        {
+          "id": "a2",
+          "text": "상하수도 사용량의 급증"
+        },
+        {
+          "id": "a3",
+          "text": "임직원들의 텀블러 사용 감소"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "카페 주방의 상하수도 사용량은 정책 시행 전보다 두 배 가까이 치솟았으며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "저자가 김민준의 보고서를 비판적으로 보는 이유는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "보고서의 형식이 부적절해서"
+        },
+        {
+          "id": "a2",
+          "text": "임직원들의 참여를 강요했기 때문에"
+        },
+        {
+          "id": "a3",
+          "text": "보이지 않는 환경 비용을 무시해서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "김 씨의 보고서는 오직 '컵의 개수'라는 가시적인 수치에만 매몰되어, 그 이면에 숨겨진 보이지 않는 자원 흐름을 간과한 것이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "저자가 이 글을 쓴 주된 의도는 무엇인가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "환경 정책의 평가 방식을 개선할 것을 제안하기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "사내 카페의 정책을 칭찬하기 위해"
+        },
+        {
+          "id": "a3",
+          "text": "일회용 컵 사용을 다시 허용하도록 설득하기 위해"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "우리에게 필요한 것은 눈에 보이는 성과를 포장하는 기술이 아니라, 전체적인 시스템의 효율성을 객관적으로 평가하는 통찰력이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠한가?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "희망차고 낙관적이다"
+        },
+        {
+          "id": "a2",
+          "text": "냉철하고 비판적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 사무적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "냉정한 시선으로 바라본 현장은 자원 절약이 아닌 자원 전환에 불과했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'매몰되어'의 문맥적 의미와 가장 가까운 것은?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "깊이 파묻힘"
+        },
+        {
+          "id": "a2",
+          "text": "재산이 사라짐"
+        },
+        {
+          "id": "a3",
+          "text": "한곳에만 몰두함"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "김 씨의 보고서는 오직 '컵의 개수'라는 가시적인 수치에만 매몰되어",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "귀하가 근무하는 회사에서 '친환경 정책'을 도입하려 할 때, 발생할 수 있는 예상치 못한 부작용을 하나 선정하고 이를 해결하기 위한 구체적인 방안을 논리적으로 서술하십시오.",
+      "en": "귀하가 근무하는 회사에서 '친환경 정책'을 도입하려 할 때, 발생할 수 있는 예상치 못한 부작용을 하나 선정하고 이를 해결하기 위한 구체적인 방안을 논리적으로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "글의 내용을 정확히 파악하고, 저자가 지적하는 환경 보호의 모순적 상황에 대해 비판적으로 사고하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "다회용 컵 도입의 이면: 지속 가능성의 역설 | C1 Reading | WeLearn",
+      "en": "다회용 컵 도입의 이면: 지속 가능성의 역설 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "이 글은 사내 카페의 일회용 컵 퇴출 정책이 가져온 환경적 성과와 그 뒤에 숨겨진 자원 소모 문제를 다룹니다.",
+      "en": "이 글은 사내 카페의 일회용 컵 퇴출 정책이 가져온 환경적 성과와 그 뒤에 숨겨진 자원 소모 문제를 다룹니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

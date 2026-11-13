@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「開かれた美術館」の虚像：アクセシビリティという名の障壁",
+      "en": "「開かれた美術館」の虚像：アクセシビリティという名の障壁"
+    },
+    "intro": {
+      "es": "美術館の無料開放を謳うイベントが、実際には誰のためのものなのかを考察する批評文。",
+      "en": "美術館の無料開放を謳うイベントが、実際には誰のためのものなのかを考察する批評文。"
+    },
+    "mission": {
+      "es": "美術館の理念と現実の乖離を分析し、社会的なアクセシビリティについて論理的に記述する。",
+      "en": "美術館の理念と現実の乖離を分析し、社会的なアクセシビリティについて論理的に記述する。"
+    },
+    "targetText": "先日開催された「文化の夜」と銘打たれた特別展は、美術館が掲げる「誰にでも開かれた空間」という理念を再考させる好例であった。主催者は入館料の無料化を前面に押し出し、地域住民への還元を強調していた。しかし、その華やかな宣伝の裏側には、物理的かつ経済的な見えない壁が厳然と立ちはだかっている。私が会場を訪れた際、入り口で目にしたのは、公共交通機関の便が極端に悪いこの立地条件に翻弄される人々の姿だった。車を所有していない層や、移動に制約のある高齢者にとって、この「無料」という甘美な響きは、到達不可能な蜃気楼に過ぎない。\n\nさらに深刻なのは、家族連れに対する冷淡な配慮の欠如である。美術館側は「次世代の育成」を謳いながら、館内には託児施設を一切設けておらず、静粛を求めるあまり子連れの訪問を暗に拒む空気が漂っている。知人のシングルマザーである佐藤さんは、このイベントを楽しみにしていたが、子供を預けるためのシッター代が無料入館料の数倍に達することを知り、結局来館を断念した。公共の利益を掲げる施設が、特定の層にのみ門戸を開き、それ以外の層を経済的・社会的障壁によって排除しているという現実は、皮肉としか言いようがない。\n\n批判的な視点で見れば、このイベントは純粋な文化普及というよりも、美術館のブランド価値を高めるためのマーケティング戦略の一環であったと言わざるを得ない。無料開放という免罪符を使うことで、彼らは「社会貢献を果たしている」という体裁を整え、行政からの補助金を正当化している。一方で、本当に支援が必要な層には届かないコストが放置されている現状は、文化施設が陥りやすい傲慢さの表れである。真のアクセシビリティとは、単に入館料をゼロにすることではなく、利用者が直面する生活上のコストや制約を包括的に解消する努力を指すべきである。\n\nもちろん、美術館側にも予算的な制約があることは理解できる。全ての要求を満たすことは不可能であり、限られたリソースの中で最大限の成果を目指す姿勢は評価されるべきかもしれない。しかし、理念と現実の乖離を直視せず、表面的な数字だけを追い求める姿勢は、かえって文化に対する信頼を損なう結果を招く。今回のような企画が繰り返されることで、美術館は「選ばれた人々のための聖域」という性格をより強固なものにしていくのではないかという懸念が拭えない。\n\n結局のところ、このイベントは、文化の民主化という美辞麗句が、いかにして特権階級の自己満足を隠蔽する道具になり得るかを浮き彫りにした。私たちが目指すべきは、無料という安易な妥協ではなく、誰もが等しく文化にアクセスできるための社会的なインフラ整備である。佐藤さんのような人々が、経済的理由で文化を諦めざるを得ない状況が続く限り、美術館がどれほど「開かれた」と主張しても、そこには越え難い溝が存在し続けるだろう。この溝を埋めるための具体的な対話が始まらない限り、文化の夜は、一部の人々にとっての祝祭であり続け、大多数にとっては無縁の出来事として終わるのである。\n\nこのような分断を是正するためには、美術館単独の努力には限界があり、都市計画や福祉政策との有機的な連携が不可欠である。例えば、周辺地域と連携したシャトルバスの運行や、館内でのコミュニティ保育の導入など、ソフトとハードの両面からアクセスの障壁を取り除く具体的な施策こそが求められている。文化を享受する権利が、個人の経済力や移動手段の有無に左右される現状を放置すれば、芸術は一部の特権層の嗜好品へと先鋭化し、社会全体の文化的な厚みは失われていくだろう。真の意味で開かれた美術館とは、数字上の平等を誇る場所ではなく、多様な背景を持つ人々が互いの存在を認め合い、共に文化を育むための対話の拠点となるべき場所なのだ。この本質的な転換を成し遂げない限り、私たちはいつまでも文化という名の閉鎖的な円環の中を彷徨い続けることになる。",
+    "wordCount": 1517,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "蜃気楼",
+        "lemma": "蜃気楼",
+        "glosses": {
+          "es": "mirage",
+          "en": "mirage"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "免罪符",
+        "lemma": "免罪符",
+        "glosses": {
+          "es": "indulgences / excuse",
+          "en": "indulgences / excuse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "美辞麗句",
+        "lemma": "美辞麗句",
+        "glosses": {
+          "es": "flowery language",
+          "en": "flowery language"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "乖離",
+        "lemma": "乖離",
+        "glosses": {
+          "es": "divergence",
+          "en": "divergence"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "傲慢",
+        "lemma": "傲慢",
+        "glosses": {
+          "es": "arrogance",
+          "en": "arrogance"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "隠蔽",
+        "lemma": "隠蔽",
+        "glosses": {
+          "es": "concealment",
+          "en": "concealment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 58.3,
+      "maxSentenceWords": 79,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこのレビューを通じて最も主張したいことは何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "真のアクセシビリティには表面的な無料化以上の支援が必要である。"
+        },
+        {
+          "id": "a2",
+          "text": "美術館の無料化は文化普及に不可欠である。"
+        },
+        {
+          "id": "a3",
+          "text": "美術館はイベントの収益を託児所に回すべきである。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "真のアクセシビリティとは、単に入館料をゼロにすることではなく、利用者が直面する生活上のコストや制約を包括的に解消する努力を指すべきである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "佐藤さんがイベントへの参加を断念した主な理由は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "美術館までの交通手段がなかったから。"
+        },
+        {
+          "id": "a2",
+          "text": "託児サービスの費用が高額だったから。"
+        },
+        {
+          "id": "a3",
+          "text": "子供がイベントの内容に関心がなかったから。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "子供を預けるためのシッター代が無料入館料の数倍に達することを知り、結局来館を断念した。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "筆者は美術館の無料開放イベントをどのように評価しているか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "地域住民の文化体験を促進する純粋な慈善活動。"
+        },
+        {
+          "id": "a2",
+          "text": "予算不足を補うための苦肉の策。"
+        },
+        {
+          "id": "a3",
+          "text": "行政の支援を正当化するための戦略的パフォーマンス。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "無料開放という免罪符を使うことで、彼らは「社会貢献を果たしている」という体裁を整え、行政からの補助金を正当化している。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "第4段落で筆者が「美術館側にも予算的な制約があることは理解できる」と述べた意図は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "議論の公平性を保ちつつ、批判の説得力を高めるため。"
+        },
+        {
+          "id": "a2",
+          "text": "美術館側の努力を全面的に賞賛するため。"
+        },
+        {
+          "id": "a3",
+          "text": "予算が不足しているという美術館側の言い訳を擁護するため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "もちろん、美術館側にも予算的な制約があることは理解できる。全ての要求を満たすことは不可能であり、限られたリソースの中で最大限の成果を目指す姿勢は評価されるべきかもしれない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体に共通する筆者の態度はどのようなものか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "冷笑的で突き放した態度。"
+        },
+        {
+          "id": "a2",
+          "text": "批判的で鋭い分析的な態度。"
+        },
+        {
+          "id": "a3",
+          "text": "建設的で希望に満ちた態度。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "批判的な視点で見れば、このイベントは純粋な文化普及というよりも、美術館のブランド価値を高めるためのマーケティング戦略の一環であったと言わざるを得ない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「蜃気楼」という言葉が表現している内容は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "美術館の立地条件の悪さ。"
+        },
+        {
+          "id": "a2",
+          "text": "美術館の展示内容の質の低さ。"
+        },
+        {
+          "id": "a3",
+          "text": "無料という言葉が持つ、実際には届かない魅力。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "車を所有していない層や、移動に制約のある高齢者にとって、この「無料」という甘美な響きは、到達不可能な蜃気楼に過ぎない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "美術館が真にアクセシブルであるために、入館料の無料化以外にどのような施策が必要だと考えますか。あなたの考えを400字程度で述べてください。",
+      "en": "美術館が真にアクセシブルであるために、入館料の無料化以外にどのような施策が必要だと考えますか。あなたの考えを400字程度で述べてください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "美術館の理念と現実の乖離を分析し、社会的なアクセシビリティについて論理的に記述する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「開かれた美術館」の虚像：アクセシビリティという名の障壁 | C1 Reading | WeLearn",
+      "en": "「開かれた美術館」の虚像：アクセシビリティという名の障壁 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "美術館の無料開放を謳うイベントが、実際には誰のためのものなのかを考察する批評文。",
+      "en": "美術館の無料開放を謳うイベントが、実際には誰のためのものなのかを考察する批評文。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

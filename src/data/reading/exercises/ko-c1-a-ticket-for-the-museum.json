@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ko-c1-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ko",
+  "variant": "ko-KR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "korean C1",
+    "topik": 5,
+    "mappingDisclaimer": {
+      "es": "The CEFR–TOPIK mapping is approximate and requires human validation.",
+      "en": "The CEFR–TOPIK mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ko",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "공공성의 역설: 국립역사박물관의 닫힌 문",
+      "en": "공공성의 역설: 국립역사박물관의 닫힌 문"
+    },
+    "intro": {
+      "es": "국립역사박물관이 표방하는 '모두를 위한 개방'이라는 슬로건과 실제 관람객이 체감하는 물리적, 경제적 장벽 사이의 간극을 비판적으로 분석하는 리뷰입니다.",
+      "en": "국립역사박물관이 표방하는 '모두를 위한 개방'이라는 슬로건과 실제 관람객이 체감하는 물리적, 경제적 장벽 사이의 간극을 비판적으로 분석하는 리뷰입니다."
+    },
+    "mission": {
+      "es": "박물관의 운영 정책이 사회적 약자의 접근성을 어떻게 제한하는지 파악하고, 필자의 논조와 숨겨진 비판 의도를 추론하십시오.",
+      "en": "박물관의 운영 정책이 사회적 약자의 접근성을 어떻게 제한하는지 파악하고, 필자의 논조와 숨겨진 비판 의도를 추론하십시오."
+    },
+    "targetText": "국립역사박물관은 최근 '문턱 없는 문화 향유'를 기치로 내걸고 입장료 전면 무료화를 단행했다. 박물관 측은 이를 두고 누구나 자유롭게 역사의 숨결을 느낄 수 있는 민주적 공간으로의 탈바꿈이라 자평한다. 그러나 정작 현장을 찾은 시민들의 목소리는 사뭇 다르다. 지난 주말, 나는 세 명의 아이를 동반한 채 박물관을 찾았다가 씁쓸한 경험을 했다. 박물관은 분명 입장료를 받지 않았지만, 그곳에 도달하기 위한 여정은 철저히 자본의 논리로 설계되어 있었다. 대중교통이 닿지 않는 외곽에 위치한 탓에 자차 이동이 강제되었고, 주차비는 일반적인 전시 관람료를 상회하는 수준이었다. 무료라는 이름의 화려한 간판 뒤에 숨겨진 진입 장벽은 생각보다 견고했다. 박물관 내부의 상황도 크게 다르지 않았다. 아이들을 위한 교육 프로그램은 사전 예약제로 운영되었는데, 평일 낮 시간에만 신청이 가능했다. 맞벌이 부부나 저소득층 노동자들에게는 사실상 원천 봉쇄된 기회였다. 박물관 관계자는 효율적인 운영을 위한 불가피한 조치라고 해명했지만, 이는 결국 여유로운 계층만을 위한 배타적인 공간을 공고히 하는 결과로 이어졌다. 육아를 전담하는 부모가 아이를 맡길 곳을 찾지 못해 발길을 돌리는 모습은 흔한 풍경이었다. 박물관은 공공재인가, 아니면 특정 계층의 전유물인가. 누군가에게는 당연한 일상이 누군가에게는 넘을 수 없는 벽이 되는 현실을 보며, 나는 박물관이 말하는 '개방'의 의미를 다시 묻게 된다. 단순히 입장료를 받지 않는다고 해서 모든 이에게 문이 열려 있는 것은 아니다. 물리적 거리와 시간적 제약은 경제적 비용보다 훨씬 더 가혹한 차별을 만들어낸다. 박물관이 진정한 공공성을 회복하려면, 단순히 문을 여는 행위를 넘어 그 문턱을 넘기 위해 필요한 사회적 비용을 고민해야 한다. 박물관의 정책은 시민들의 삶을 배려하지 않은 채, 자신들의 성과를 홍보하는 데 급급한 모습이다. 결국 그들이 말하는 개방은 허울 좋은 구호에 불과했다. 오늘 박물관을 떠나며 나는 깨달았다. 우리가 진정으로 갈망하는 것은 무료입장이 아니라, 누구도 소외되지 않는 평등한 접근권이라는 사실을 말이다. 박물관은 지금 당장 자신들의 폐쇄적인 운영 방식을 전면 재검토해야 한다. 그렇지 않으면 그들이 지키고자 하는 역사는 결국 박제된 기록으로 남아, 대중의 삶과는 영원히 괴리될 것이다.\n\n이러한 현상은 단순히 박물관 운영의 문제를 넘어 우리 사회가 공공성을 어떻게 정의하고 실천해야 하는지에 대한 근본적인 질문을 던진다. 진정한 의미의 문화 민주주의는 단순히 물리적인 공간을 개방하는 것에서 시작되지 않는다. 그것은 시민들이 처한 각기 다른 삶의 궤적을 세심하게 살피고 그들이 겪는 구조적인 제약을 제거하려는 적극적인 의지에서 비롯된다. 만약 박물관이 지금처럼 효율성이라는 미명 아래 시민들의 실질적인 접근권을 외면한다면, 그곳은 역사를 보존하는 공간이 아니라 특권층의 교양을 과시하는 상징적인 장소로 전락할 위험이 크다. 결국 공공의 가치는 박물관이 스스로의 성벽을 허무는 데서 완성되는 것이 아니라, 그 성벽 너머에 있는 다양한 시민들의 일상 속으로 직접 다가갈 때 비로소 빛을 발할 수 있다. 박물관은 이제라도 전시실이라는 좁은 틀을 벗어나 지역 사회와 긴밀히 소통하며, 모두가 차별 없이 문화적 자산을 향유할 수 있는 실질적인 대안을 마련해야 한다. 그래야만 박물관이 지향하는 역사의 대중화가 공허한 메아리가 아닌, 시민들의 삶을 풍요롭게 만드는 살아있는 실천으로 자리 잡을 수 있을 것이다.",
+    "wordCount": 412,
+    "estimatedMinutes": 17,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "기치",
+        "lemma": "기치",
+        "glosses": {
+          "es": "banner or slogan",
+          "en": "banner or slogan"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "상회하는",
+        "lemma": "상회하는",
+        "glosses": {
+          "es": "exceeding",
+          "en": "exceeding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "원천",
+        "lemma": "원천",
+        "glosses": {
+          "es": "source or root",
+          "en": "source or root"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "배타적인",
+        "lemma": "배타적인",
+        "glosses": {
+          "es": "exclusive",
+          "en": "exclusive"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "전유물",
+        "lemma": "전유물",
+        "glosses": {
+          "es": "exclusive possession",
+          "en": "exclusive possession"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "괴리될",
+        "lemma": "괴리될",
+        "glosses": {
+          "es": "to be estranged or separated",
+          "en": "to be estranged or separated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "custom"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 13.7,
+      "maxSentenceWords": 27,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:39:46.994Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "이 글의 핵심 주제는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "박물관 접근성의 한계"
+        },
+        {
+          "id": "a2",
+          "text": "무료입장의 효과"
+        },
+        {
+          "id": "a3",
+          "text": "전시 운영의 효율성 제고"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "박물관이 말하는 '개방'의 의미를 다시 묻게 된다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "박물관 교육 프로그램의 문제점은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "참가비가 비싸다"
+        },
+        {
+          "id": "a2",
+          "text": "평일에만 신청 가능"
+        },
+        {
+          "id": "a3",
+          "text": "사전 예약이 불가능하다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "아이들을 위한 교육 프로그램은 사전 예약제로 운영되었는데, 평일 낮 시간에만 신청이 가능했다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "필자가 박물관의 정책을 비판하는 이유는 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "전시 내용이 부실해서"
+        },
+        {
+          "id": "a2",
+          "text": "주차장이 너무 좁아서"
+        },
+        {
+          "id": "a3",
+          "text": "사회적 약자를 배려하지 않아서"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "누군가에게는 당연한 일상이 누군가에게는 넘을 수 없는 벽이 되는 현실을 보며",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "필자가 이 글을 쓴 주된 목적은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "박물관 개방 정책의 문제점을 알리기 위해"
+        },
+        {
+          "id": "a2",
+          "text": "아이들과 함께 방문할 좋은 장소를 추천하려고"
+        },
+        {
+          "id": "a3",
+          "text": "무료 입장권의 혜택을 시민들에게 홍보하려고"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "박물관이 진정한 공공성을 회복하려면, 단순히 문을 여는 행위를 넘어 그 문턱을 넘기 위해 필요한 사회적 비용을 고민해야 한다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "이 글의 전반적인 어조는 어떠합니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낙관적이고 희망적이다"
+        },
+        {
+          "id": "a2",
+          "text": "비판적이고 성찰적이다"
+        },
+        {
+          "id": "a3",
+          "text": "중립적이고 객관적이다"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "박물관의 정책은 시민들의 삶을 배려하지 않은 채, 자신들의 성과를 홍보하는 데 급급한 모습이다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "'상회하는'의 의미로 가장 적절한 것은 무엇입니까?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "낮은 수준"
+        },
+        {
+          "id": "a2",
+          "text": "비슷한 정도"
+        },
+        {
+          "id": "a3",
+          "text": "기준을 넘어서는"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "주차비는 일반적인 전시 관람료를 상회하는 수준이었다.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "박물관의 공공성을 높이기 위해 구체적으로 어떤 정책적 변화가 필요한지 본인의 견해를 150자 내외로 서술하십시오.",
+      "en": "박물관의 공공성을 높이기 위해 구체적으로 어떤 정책적 변화가 필요한지 본인의 견해를 150자 내외로 서술하십시오."
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "박물관의 운영 정책이 사회적 약자의 접근성을 어떻게 제한하는지 파악하고, 필자의 논조와 숨겨진 비판 의도를 추론하십시오.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:39:46.994Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "공공성의 역설: 국립역사박물관의 닫힌 문 | C1 Reading | WeLearn",
+      "en": "공공성의 역설: 국립역사박물관의 닫힌 문 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "국립역사박물관이 표방하는 '모두를 위한 개방'이라는 슬로건과 실제 관람객이 체감하는 물리적, 경제적 장벽 사이의 간극을 비판적으로 분석하는 리뷰입니다.",
+      "en": "국립역사박물관이 표방하는 '모두를 위한 개방'이라는 슬로건과 실제 관람객이 체감하는 물리적, 경제적 장벽 사이의 간극을 비판적으로 분석하는 리뷰입니다."
+    },
+    "canonicalPath": "/en/practice/korean/c1/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:39:46.994Z"
+  }
+}

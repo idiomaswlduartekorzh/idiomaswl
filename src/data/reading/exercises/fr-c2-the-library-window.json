@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-library-window",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de la permanence",
+      "en": "L'illusion de la permanence"
+    },
+    "intro": {
+      "es": "Une réflexion sur les coulisses invisibles de nos institutions culturelles et le coût humain de l'accessibilité totale.",
+      "en": "Une réflexion sur les coulisses invisibles de nos institutions culturelles et le coût humain de l'accessibilité totale."
+    },
+    "mission": {
+      "es": "Analyser la tension entre l'idéal de disponibilité publique et la réalité du travail invisible au sein d'une bibliothèque municipale.",
+      "en": "Analyser la tension entre l'idéal de disponibilité publique et la réalité du travail invisible au sein d'une bibliothèque municipale."
+    },
+    "targetText": "La bibliothèque municipale de Val-des-Brumes se targuait d'être un sanctuaire de la connaissance, un espace dont les portes, selon la rhétorique officielle, restaient ouvertes à quiconque cherchait l'illumination. Monsieur Vasseur, le conservateur en chef, aimait souligner lors des conseils municipaux que l'institution ne fermait jamais réellement ses portes, même après le départ des derniers usagers, car l'esprit du savoir, lui, demeurait accessible. Pourtant, derrière cette façade de générosité inconditionnelle, une réalité bien plus prosaïque se jouait dans les sous-sols et les recoins sombres des rayonnages. Élodie, l'une des archivistes les plus dévouées, observait ce décalage avec une amertume croissante. Pour elle, chaque heure de prolongation nocturne, chaque service dominical instauré sous la pression des élus, n'était pas une victoire pour la culture, mais une érosion silencieuse des conditions de ceux qui maintenaient l'édifice debout. Le contrat social de la bibliothèque reposait sur une illusion : celle que le savoir est une ressource naturelle, gratuite et inépuisable, comme l'air, alors qu'il est en vérité le produit d'un labeur acharné, souvent effectué dans l'ombre, loin des regards des lecteurs satisfaits.\n\nLe conflit éclata lors de la mise en place du projet « Horizon 24 », une initiative visant à automatiser le tri des ouvrages tout en maintenant une présence humaine constante pour répondre aux exigences de « convivialité » prônées par la mairie. Monsieur Vasseur voyait en cette automatisation la promesse d'une bibliothèque libérée des contraintes physiques, capable de fonctionner en autarcie. Élodie, en revanche, y décelait une déshumanisation rampante. Elle se souvenait des soirées passées à classer manuellement les manuscrits, un travail de fourmi qui permettait une compréhension intime du fonds documentaire. En remplaçant ces gestes par des machines, la direction ne faisait pas qu'optimiser les flux ; elle effaçait la trace de la main humaine, transformant la bibliothèque en un simple entrepôt de données. Ce soir-là, alors que les lumières de la salle de lecture scintillaient encore, Élodie se tint devant le nouveau automate de tri, une machine imposante qui, dans un vrombissement mécanique, rejetait un livre dont la reliure était endommagée. Le silence qui suivit fut lourd de sens : l'institution avait gagné en efficacité, mais elle avait perdu sa capacité à reconnaître la fragilité des objets qu'elle prétendait protéger.\n\nLa tension monta d'un cran lorsque la mairie exigea l'ouverture des salles d'étude jusqu'à minuit, sous prétexte d'aider les étudiants en période d'examens. Pour Élodie, cette décision était le point de rupture. Elle tenta d'expliquer au conseil que la maintenance des systèmes de sécurité et la gestion des flux de lecteurs à des heures indues nécessitaient un personnel de garde, une ressource que la mairie refusait de financer, préférant investir dans des bornes interactives. Monsieur Vasseur, fidèle à sa posture de diplomate, esquiva le débat en invoquant la mission sacrée de l'institution. Il affirmait que la bibliothèque devait se plier aux besoins de la cité, quitte à sacrifier le confort de ses employés. Cette rhétorique, bien que séduisante pour les électeurs, masquait une exploitation insidieuse. Élodie comprit alors que le dialogue était devenu impossible : la direction ne voyait plus les employés comme des médiateurs, mais comme des variables d'ajustement dans une équation budgétaire où la disponibilité était devenue une marchandise.\n\nLe soir du lancement officiel de l'extension des horaires, une panne électrique majeure plongea la bibliothèque dans une obscurité totale. Les usagers, habitués à une disponibilité sans faille, se retrouvèrent désemparés, errant dans les couloirs comme des spectres. Élodie, munie d'une simple lampe torche, dut guider les derniers étudiants vers la sortie, un exercice périlleux dans un bâtiment conçu désormais pour fonctionner par capteurs et automatismes. Dans ce chaos, les masques tombèrent. Monsieur Vasseur, incapable de gérer la situation sans ses outils numériques, perdit pied, révélant son ignorance totale des rouages internes de son propre établissement. Ce fut Élodie qui, par sa connaissance empirique des lieux, parvint à sécuriser les collections et à évacuer le public sans encombre. Pourtant, au lieu de la remercier, le lendemain, la direction lui reprocha son manque de « réactivité » face aux protocoles d'urgence, soulignant que son intervention n'était pas conforme aux procédures automatisées.\n\nCe fut le coup de grâce pour Élodie. Elle réalisa que l'institution ne cherchait pas la compétence, mais la docilité. La bibliothèque de Val-des-Brumes, sous son vernis de modernité, n'était plus qu'une coquille vide, une structure incapable de soutenir le poids de ses propres promesses. Elle rendit son badge, non pas par lassitude, mais par refus de participer à cette mascarade. En quittant les lieux, elle croisa Monsieur Vasseur qui s'apprêtait à annoncer, devant les caméras, le succès de la réorganisation. Elle ne dit rien, se contentant d'observer la scène avec un détachement nouveau. Elle savait désormais que le véritable savoir, celui qui demande du temps, de la patience et une présence humaine, ne pouvait survivre dans une institution qui confondait la disponibilité avec l'accessibilité. La bibliothèque resterait ouverte, ses lumières brilleraient encore longtemps dans la nuit, mais derrière ces murs, le silence des livres ne serait plus jamais troublé par le souffle d'une main attentive.",
+    "wordCount": 838,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sanctuaire",
+        "lemma": "sanctuaire",
+        "glosses": {
+          "es": "a place of refuge or safety",
+          "en": "a place of refuge or safety"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "prosaïque",
+        "lemma": "prosaïque",
+        "glosses": {
+          "es": "commonplace or unromantic",
+          "en": "commonplace or unromantic"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "autarcie",
+        "lemma": "autarcie",
+        "glosses": {
+          "es": "self-sufficiency",
+          "en": "self-sufficiency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "insidieuse",
+        "lemma": "insidieuse",
+        "glosses": {
+          "es": "proceeding in a gradual, subtle way, but with harmful effects",
+          "en": "proceeding in a gradual, subtle way, but with harmful effects"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "empirique",
+        "lemma": "empirique",
+        "glosses": {
+          "es": "based on observation or experience rather than theory",
+          "en": "based on observation or experience rather than theory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mascarade",
+        "lemma": "mascarade",
+        "glosses": {
+          "es": "a deceptive show or pretense",
+          "en": "a deceptive show or pretense"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.9,
+      "maxSentenceWords": 44,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La critique de l'accessibilité au détriment du travail humain."
+        },
+        {
+          "id": "a2",
+          "text": "L'automatisation des bibliothèques."
+        },
+        {
+          "id": "a3",
+          "text": "Le conflit entre la direction et le personnel."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le contrat social de la bibliothèque reposait sur une illusion : celle que le savoir est une ressource naturelle, gratuite et inépuisable, comme l'air, alors qu'il est en vérité le produit d'un labeur acharné, souvent effectué dans l'ombre, loin des regards des lecteurs satisfaits.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Élodie s'oppose-t-elle au projet « Horizon 24 » ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle craint la perte de son emploi."
+        },
+        {
+          "id": "a2",
+          "text": "Elle voit une déshumanisation rampante."
+        },
+        {
+          "id": "a3",
+          "text": "Elle juge le coût des machines excessif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Élodie, en revanche, y décelait une déshumanisation rampante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère la réaction de la direction après la panne électrique ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une volonté de moderniser les procédures."
+        },
+        {
+          "id": "a2",
+          "text": "Une volonté de punir Élodie pour son incompétence."
+        },
+        {
+          "id": "a3",
+          "text": "Une méconnaissance des réalités du terrain."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Monsieur Vasseur, incapable de gérer la situation sans ses outils numériques, perdit pied, révélant son ignorance totale des rouages internes de son propre établissement.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif de l'auteur en décrivant la scène finale ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dénoncer la vacuité d'une institution déconnectée."
+        },
+        {
+          "id": "a2",
+          "text": "Montrer que la technologie peut parfois échouer."
+        },
+        {
+          "id": "a3",
+          "text": "Souligner le courage d'Élodie face aux caméras."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "La bibliothèque de Val-des-Brumes, sous son vernis de modernité, n'était plus qu'une coquille vide, une structure incapable de soutenir le poids de ses propres promesses.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de la narration ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et réformateur."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et désabusé."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre et journalistique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elle savait désormais que le véritable savoir, celui qui demande du temps, de la patience et une présence humaine, ne pouvait survivre dans une institution qui confondait la disponibilité avec l'accessibilité.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « prosaïque » dans le contexte du premier paragraphe ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Poétique."
+        },
+        {
+          "id": "a2",
+          "text": "Inspirationnel."
+        },
+        {
+          "id": "a3",
+          "text": "Ordinaire."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Pourtant, derrière cette façade de générosité inconditionnelle, une réalité bien plus prosaïque se jouait dans les sous-sols et les recoins sombres des rayonnages.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 200 mots analysant comment le personnage d'Élodie incarne la tension entre la tradition archivistique et la modernité technologique au sein de la bibliothèque.",
+      "en": "Rédigez une réponse de 200 mots analysant comment le personnage d'Élodie incarne la tension entre la tradition archivistique et la modernité technologique au sein de la bibliothèque."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser la tension entre l'idéal de disponibilité publique et la réalité du travail invisible au sein d'une bibliothèque municipale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de la permanence | C2 Reading | WeLearn",
+      "en": "L'illusion de la permanence | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une réflexion sur les coulisses invisibles de nos institutions culturelles et le coût humain de l'accessibilité totale.",
+      "en": "Une réflexion sur les coulisses invisibles de nos institutions culturelles et le coût humain de l'accessibilité totale."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

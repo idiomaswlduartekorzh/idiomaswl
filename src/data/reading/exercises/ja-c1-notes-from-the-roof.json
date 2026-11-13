@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-notes-from-the-roof",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "屋上太陽光発電を巡る合意のジレンマ",
+      "en": "屋上太陽光発電を巡る合意のジレンマ"
+    },
+    "intro": {
+      "es": "マンション管理組合の理事長と、反対派の住民によるメールのやり取りを通じて、共同住宅における意思決定の複雑さを読み解きます。",
+      "en": "マンション管理組合の理事長と、反対派の住民によるメールのやり取りを通じて、共同住宅における意思決定の複雑さを読み解きます。"
+    },
+    "mission": {
+      "es": "以下のメールのやり取りを読み、管理組合の運営における合意形成のあり方と、その背後にある利害の対立について考察してください。",
+      "en": "以下のメールのやり取りを読み、管理組合の運営における合意形成のあり方と、その背後にある利害の対立について考察してください。"
+    },
+    "targetText": "件名：屋上太陽光発電設備の設置に関する再考のお願い\n\n佐藤理事長様、先日の管理組合総会での議決結果について、改めて慎重な再考を求めます。屋上への太陽光パネル設置計画は、全戸の共有財産である屋上の使用権を一部の利益のために供するものです。私は、この計画が長期的な修繕計画に及ぼす影響、特に防水層の劣化リスクについて、十分な説明がなされていないと判断しています。総会では賛成多数で可決されましたが、これはあくまで出席者の過半数であり、不在者や棄権者を含めた全住民の総意とは言い難い状況です。特に、将来的なメンテナンスコストの増大を懸念する層の声を無視した決定は、管理規約が定める公平性の原則に抵触する恐れがあります。\n\n件名：Re: 屋上太陽光発電設備の設置に関する再考のお願い\n\n鈴木様、ご意見ありがとうございます。防水層への影響については、専門業者による事前の構造調査を完了しており、設置後も定期的な点検を義務付ける契約を締結済みです。確かに、全住民の満場一致を得ることは困難ですが、管理規約第十二条に基づき、総会での議決は全住民を拘束する法的効力を持ちます。エネルギーコストの高騰が続く中、共用部の電気代削減は全住民の利益に直結する喫緊の課題です。個別の懸念をすべて解消するまで計画を凍結すれば、好機を逸し、結果として組合全体の損失を招くことになります。民主的な意思決定プロセスにおいては、少数意見を尊重しつつも、組織全体の存続と利益を優先せざるを得ない局面があることをご理解ください。\n\n件名：Re: Re: 屋上太陽光発電設備の設置に関する再考のお願い\n\n佐藤様、ご回答ありがとうございます。しかし、貴殿が主張する「組織全体の利益」という概念が、あまりに抽象的であることに違和感を覚えます。電気代削減という短期的なメリットと、数十年単位で続く修繕費用の増大リスクを天秤にかけた際、どちらが真に住民の利益に資するのか、その判断基準が不透明です。また、総会の議決が拘束力を持つことは理解していますが、それは手続き上の正当性を保証するに過ぎず、住民間の信頼関係を維持するための道義的な責任を免除するものではありません。このまま強行すれば、管理組合に対する不信感は決定的なものとなり、今後の円滑な運営に支障をきたすでしょう。\n\n件名：Re: Re: Re: 屋上太陽光発電設備の設置に関する再考のお願い\n\n鈴木様、道義的な責任についてのご指摘、重く受け止めます。しかし、理事会として、一部の住民の不信感を理由に、組合全体で合意した計画を覆すことは、かえって他の賛成派住民からの信頼を損なう行為となります。私たちは、現行の規約と法的手続きの範囲内で、最も合理的な選択をしたと確信しています。もちろん、懸念されている修繕費用の増加分については、売電収入の一部を積み立てることで相殺する計画を修正案として理事会に諮る予定です。これが、私たちが提示できる最大限の譲歩であり、これ以上の議論は生産的ではないと考えます。\n\n件名：最終通知：屋上太陽光発電設備の設置に関する再考のお願い\n\n佐藤様、売電収入による相殺案は、あくまで予測値に基づく机上の空論に過ぎません。天候や設備の経年劣化を考慮すれば、収支が赤字に転じるリスクは排除できないはずです。貴殿の提示した「譲歩」は、結局のところ、反対派を黙らせるための妥協案に過ぎず、根本的な問題である「合意の質」については何ら解決されていません。本件については、弁護士を交えた法的解釈の確認を求める所存です。管理組合の運営が、単なる多数決の論理に支配されるべきではないという私の信念は揺るぎません。もはや対話による解決は不可能と判断し、これをもって本件に関する理事会への直接的な交渉を打ち切ります。",
+    "wordCount": 1430,
+    "estimatedMinutes": 12,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "供する",
+        "lemma": "供する",
+        "glosses": {
+          "es": "to offer or provide",
+          "en": "to offer or provide"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "抵触",
+        "lemma": "抵触",
+        "glosses": {
+          "es": "to conflict or infringe",
+          "en": "to conflict or infringe"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "喫緊",
+        "lemma": "喫緊",
+        "glosses": {
+          "es": "urgent or pressing",
+          "en": "urgent or pressing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "天秤にかけた",
+        "lemma": "天秤にかけた",
+        "glosses": {
+          "es": "weighed against each other",
+          "en": "weighed against each other"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "相殺",
+        "lemma": "相殺",
+        "glosses": {
+          "es": "offset or cancel out",
+          "en": "offset or cancel out"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "机上の空論",
+        "lemma": "机上の空論",
+        "glosses": {
+          "es": "theoretical argument with no practical value",
+          "en": "theoretical argument with no practical value"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 53,
+      "maxSentenceWords": 81,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:31:33.594Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "本メールのやり取りが示唆する、マンション管理組合の抱える根本的な問題とは何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "多数決による意思決定の限界"
+        },
+        {
+          "id": "a2",
+          "text": "太陽光パネルの技術的な欠陥"
+        },
+        {
+          "id": "a3",
+          "text": "理事長の独断による運営"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "民主的な意思決定プロセスにおいては、少数意見を尊重しつつも、組織全体の存続と利益を優先せざるを得ない局面があることをご理解ください。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "理事長が提示した、修繕費用の懸念に対する具体的な対策は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "修繕費の全額免除"
+        },
+        {
+          "id": "a2",
+          "text": "売電収入による積み立て"
+        },
+        {
+          "id": "a3",
+          "text": "設置計画の無期限凍結"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "懸念されている修繕費用の増加分については、売電収入の一部を積み立てることで相殺する計画を修正案として理事会に諮る予定です。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "鈴木氏が最終的に法的な手段を検討している理由は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "設置工事が既に開始されたため"
+        },
+        {
+          "id": "a2",
+          "text": "理事長が規約を改定したため"
+        },
+        {
+          "id": "a3",
+          "text": "対話による解決が不可能と判断したため"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "もはや対話による解決は不可能と判断し、これをもって本件に関する理事会への直接的な交渉を打ち切ります。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "理事長が「組織全体の利益」という言葉を用いた目的は何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "反対派を説得し、計画の正当性を主張するため"
+        },
+        {
+          "id": "a2",
+          "text": "個別の住民との対話を拒否するため"
+        },
+        {
+          "id": "a3",
+          "text": "管理規約を書き換えるため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "エネルギーコストの高騰が続く中、共用部の電気代削減は全住民の利益に直結する喫緊の課題です。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "鈴木氏の最後のメールに見られる感情や態度はどのようなものか？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "妥協的で友好的"
+        },
+        {
+          "id": "a2",
+          "text": "諦念と強い不信感"
+        },
+        {
+          "id": "a3",
+          "text": "高圧的で攻撃的"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "貴殿の提示した「譲歩」は、結局のところ、反対派を黙らせるための妥協案に過ぎず、根本的な問題である「合意の質」については何ら解決されていません。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「抵触」という言葉が文中で意味していることは何か？",
+      "options": [
+        {
+          "id": "a1",
+          "text": "維持すること"
+        },
+        {
+          "id": "a2",
+          "text": "協力すること"
+        },
+        {
+          "id": "a3",
+          "text": "違反すること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "特に、将来的なメンテナンスコストの増大を懸念する層の声を無視した決定は、管理規約が定める公平性の原則に抵触する恐れがあります。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「管理組合における合意形成において、手続き上の正当性と住民間の道義的納得のどちらが優先されるべきか、あなたの意見を800字程度で論じてください。」",
+      "en": "「管理組合における合意形成において、手続き上の正当性と住民間の道義的納得のどちらが優先されるべきか、あなたの意見を800字程度で論じてください。」"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "以下のメールのやり取りを読み、管理組合の運営における合意形成のあり方と、その背後にある利害の対立について考察してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:31:33.594Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "屋上太陽光発電を巡る合意のジレンマ | C1 Reading | WeLearn",
+      "en": "屋上太陽光発電を巡る合意のジレンマ | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "マンション管理組合の理事長と、反対派の住民によるメールのやり取りを通じて、共同住宅における意思決定の複雑さを読み解きます。",
+      "en": "マンション管理組合の理事長と、反対派の住民によるメールのやり取りを通じて、共同住宅における意思決定の複雑さを読み解きます。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:31:33.594Z"
+  }
+}

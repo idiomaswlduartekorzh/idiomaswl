@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-returnable-cup",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-returnable-cup",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "reusable cups",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "「持続可能性」の死角：緑の祝祭の裏側",
+      "en": "「持続可能性」の死角：緑の祝祭の裏側"
+    },
+    "intro": {
+      "es": "使い捨てカップの削減という華々しい成果の裏に潜む、見過ごされた環境コストと組織の隠蔽体質を考察する読解課題です。",
+      "en": "使い捨てカップの削減という華々しい成果の裏に潜む、見過ごされた環境コストと組織の隠蔽体質を考察する読解課題です。"
+    },
+    "mission": {
+      "es": "本記事を精読し、表面的な成果報告がいかにして本質的な環境負荷を隠蔽しているか、その論理的矛盾を特定してください。",
+      "en": "本記事を精読し、表面的な成果報告がいかにして本質的な環境負荷を隠蔽しているか、その論理的矛盾を特定してください。"
+    },
+    "targetText": "先週開催された「都市の夜明けフェスティバル」において、運営責任者の佐藤氏は、使い捨てカップの排出量を前年比で劇的に削減したと高らかに宣言した。会場に導入されたのは、硬質プラスチック製の返却式カップシステムである。佐藤氏の報告書によれば、この試みは環境負荷低減の模範として高く評価され、地元のメディアもこぞってその成功を称賛した。確かに、会場のゴミ箱から溢れ出るプラスチック容器の山は姿を消し、視覚的な達成感は明白であった。しかし、この輝かしい統計の背後には、計算から意図的に除外された「影のコスト」が存在している。カップを再利用するためには、会場から遠く離れた専門の洗浄施設へ輸送し、大量の温水と化学洗剤を用いて洗浄・乾燥させる必要がある。この一連のプロセスで消費されるエネルギーと、洗浄施設から排出される汚水は、使い捨てカップを製造・廃棄する負荷を上回る可能性があるという試算を、運営側は黙殺し続けているのである。さらに、洗浄施設までの往復輸送に関わるトラックの排気ガスは、イベントのカーボンフットプリントを確実に押し上げている。佐藤氏の報告書は、カップ自体の「使い捨て」という側面のみを切り取り、循環型経済の美名のもとに、システム全体が抱える非効率性を隠蔽していると言わざるを得ない。環境保護という大義名分が、かえって資源の浪費を助長するという皮肉な構造がここにある。洗浄施設を運営する業者の選定プロセスも不透明であり、運営側が「持続可能」という言葉を、単なるマーケティングのツールとして消費している疑念は拭えない。真の環境負荷を測るには、カップの製造から廃棄までではなく、洗浄・輸送を含めたライフサイクル全体を評価しなければならないはずだ。佐藤氏が誇らしげに掲げた「削減」という数字は、全体像を欠いた断片的な事実に過ぎない。フェスティバルが閉幕し、静寂が戻った会場には、使い捨てカップのゴミこそないが、洗浄されたカップを運ぶために往復した大型車両の轍だけが、深く刻まれている。この轍こそが、私たちが直面している「環境配慮」の欺瞞を雄弁に物語っているのではないだろうか。持続可能性という名の免罪符は、今日もまた、目に見えるゴミを消し去ることで、目に見えない負荷を増幅させ続けている。私たちは、この「緑の祝祭」の裏側に潜む、語られざるコストと向き合う必要がある。\n\nこの問題の本質は、個別の施策を単体で評価する近視眼的な姿勢にある。もし、この返却式システムが真に持続可能な解決策として機能するならば、それは単なる洗浄プロセスの最適化に留まらず、イベント全体の設計思想そのものを再構築する必要があるはずだ。例えば、輸送距離を極限まで短縮するために会場近隣に仮設の洗浄拠点を設ける、あるいは、使用するカップの素材をより軽量化し、洗浄に必要なエネルギー消費を抑えるといった、多角的なアプローチが不可欠である。しかし、現状の佐藤氏の報告書にはそのような中長期的な改善への意志は一切見当たらない。目先の成功を誇示するために、都合の良いデータだけを並べる姿勢は、かえって環境保護という崇高な概念を矮小化させ、社会全体の信頼を損なう結果を招くだろう。私たちは、単にゴミの量を減らしたという視覚的な満足感に浸るのではなく、その背後にある複雑なサプライチェーンの全体像を冷静に見極めるべきである。持続可能性とは、特定のイベントにおける一時的なパフォーマンスではなく、資源の採取から最終的な廃棄に至るまでの、途切れることのない責任あるプロセスの構築を意味する。もし運営側がこのまま「影のコスト」を無視し続ければ、それは環境保護の皮を被った新たな浪費の温床となり、次世代に対する無責任な負の遺産を積み上げるだけである。真の変革は、都合の良い数字を並べることではなく、不都合な真実を直視し、システム全体を根本から問い直す勇気を持つことから始まる。今こそ、私たちは「緑の祝祭」という名の幻想から醒め、真に持続可能な社会の在り方について、より厳格で透明性の高い議論を交わすべき時なのである。",
+    "wordCount": 1574,
+    "estimatedMinutes": 13,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "黙殺",
+        "lemma": "黙殺",
+        "glosses": {
+          "es": "ignoring or disregarding",
+          "en": "ignoring or disregarding"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "カーボンフットプリント",
+        "lemma": "カーボンフットプリント",
+        "glosses": {
+          "es": "carbon footprint",
+          "en": "carbon footprint"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "隠蔽",
+        "lemma": "隠蔽",
+        "glosses": {
+          "es": "concealment",
+          "en": "concealment"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "欺瞞",
+        "lemma": "欺瞞",
+        "glosses": {
+          "es": "deception",
+          "en": "deception"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "免罪符",
+        "lemma": "免罪符",
+        "glosses": {
+          "es": "indulgence or excuse",
+          "en": "indulgence or excuse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "轍",
+        "lemma": "轍",
+        "glosses": {
+          "es": "rut or wheel track",
+          "en": "rut or wheel track"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 58.3,
+      "maxSentenceWords": 93,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この記事の主な主張は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "環境配慮の報告には欠落がある。"
+        },
+        {
+          "id": "a2",
+          "text": "使い捨てカップの廃止は成功した。"
+        },
+        {
+          "id": "a3",
+          "text": "洗浄施設を増やすべきである。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "佐藤氏が誇らしげに掲げた「削減」という数字は、全体像を欠いた断片的な事実に過ぎない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "カップの再利用において無視されている要素は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "カップの製造費用"
+        },
+        {
+          "id": "a2",
+          "text": "洗浄と輸送の負荷"
+        },
+        {
+          "id": "a3",
+          "text": "観客のゴミの量"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "カップを再利用するためには、会場から遠く離れた専門の洗浄施設へ輸送し、大量の温水と化学洗剤を用いて洗浄・乾燥させる必要がある。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "佐藤氏の報告書に対する筆者の評価はどのようなものですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "非常に正確で信頼できる"
+        },
+        {
+          "id": "a2",
+          "text": "まだ改善の余地がある"
+        },
+        {
+          "id": "a3",
+          "text": "不十分で意図的である"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "佐藤氏の報告書は、カップ自体の「使い捨て」という側面のみを切り取り、循環型経済の美名のもとに、システム全体が抱える非効率性を隠蔽していると言わざるを得ない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "結びの段落で「轍」という言葉が使われている目的は何ですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "環境配慮が招いた隠れた負荷を象徴するため"
+        },
+        {
+          "id": "a2",
+          "text": "会場のゴミが消えたことを強調するため"
+        },
+        {
+          "id": "a3",
+          "text": "フェスティバルの規模の大きさを説明するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "この轍こそが、私たちが直面している「環境配慮」の欺瞞を雄弁に物語っているのではないだろうか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "筆者の文体として適切なものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "楽観的で希望に満ちている"
+        },
+        {
+          "id": "a2",
+          "text": "批判的で皮肉を込めた警告調である"
+        },
+        {
+          "id": "a3",
+          "text": "客観的で冷静な分析に徹している"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "持続可能性という名の免罪符は、今日もまた、目に見えるゴミを消し去ることで、目に見えない負荷を増幅させ続けている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「黙殺」の意味として正しいものはどれですか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "称賛すること"
+        },
+        {
+          "id": "a2",
+          "text": "計算すること"
+        },
+        {
+          "id": "a3",
+          "text": "無視すること"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "この一連のプロセスで消費されるエネルギーと、洗浄施設から排出される汚水は、使い捨てカップを製造・廃棄する負荷を上回る可能性があるという試算を、運営側は黙殺し続けているのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「持続可能性」を掲げる企業や団体が、自らの活動の負の側面を隠蔽していると感じた具体的な事例について、その論理的矛盾を指摘するエッセイを執筆してください。",
+      "en": "「持続可能性」を掲げる企業や団体が、自らの活動の負の側面を隠蔽していると感じた具体的な事例について、その論理的矛盾を指摘するエッセイを執筆してください。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "本記事を精読し、表面的な成果報告がいかにして本質的な環境負荷を隠蔽しているか、その論理的矛盾を特定してください。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "「持続可能性」の死角：緑の祝祭の裏側 | C1 Reading | WeLearn",
+      "en": "「持続可能性」の死角：緑の祝祭の裏側 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "使い捨てカップの削減という華々しい成果の裏に潜む、見過ごされた環境コストと組織の隠蔽体質を考察する読解課題です。",
+      "en": "使い捨てカップの削減という華々しい成果の裏に潜む、見過ごされた環境コストと組織の隠蔽体質を考察する読解課題です。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-returnable-cup",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

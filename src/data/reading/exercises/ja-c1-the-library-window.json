@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-library-window",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "静寂の境界線：図書館員の日誌より",
+      "en": "静寂の境界線：図書館員の日誌より"
+    },
+    "intro": {
+      "es": "公共図書館の開館時間延長がもたらす光と影。単なる「時間の延長」が、誰のための「アクセシビリティ」なのかを問い直す物語。",
+      "en": "公共図書館の開館時間延長がもたらす光と影。単なる「時間の延長」が、誰のための「アクセシビリティ」なのかを問い直す物語。"
+    },
+    "mission": {
+      "es": "図書館の役割と利用者のニーズの乖離について、文脈から推論し考察する。",
+      "en": "図書館の役割と利用者のニーズの乖離について、文脈から推論し考察する。"
+    },
+    "targetText": "四月某日。館長の佐藤は、今期の予算会議で「夜間開館の延長」を声高に主張した。地域住民の利便性を高め、仕事帰りの層を取り込むという論理は、確かに一見すると理にかなっている。しかし、現場で働く私にとって、その決定は静寂を切り売りする行為に他ならなかった。午後八時を過ぎた館内は、昼間の喧騒とは異なる、ある種の緊張感を孕んでいる。自習室で参考書を広げる学生や、孤独を埋めるように雑誌をめくる高齢者たち。彼らにとって、この場所は単なる知識の集積所ではなく、社会との唯一の接続点なのだ。延長された一時間は、彼らにとっての安息を奪うカウントダウンにもなり得る。佐藤は「開館時間の拡大こそがアクセシビリティの向上だ」と断言するが、それは物理的な扉を開くことと、心の門戸を開くことを混同しているのではないか。\n\n翌週、トラブルが発生した。閉館間際の混雑に乗じ、資料の返却期限を無視して居座る利用者と、それを注意する若手司書の加藤が激しく対立したのだ。加藤は「ルールは公平に適用されるべきだ」と主張し、利用者は「この時間まで開けているのだから、最後まで使う権利があるはずだ」と食ってかかった。私はその光景を眺めながら、図書館が本来持つべき「寛容さ」の限界を突きつけられた気がした。延長された時間は、サービスの質を向上させるどころか、利用者の権利意識を過剰に刺激し、職員の精神的な摩耗を加速させている。私たちは、誰のために、何を守るために夜を明かしているのか。その問いに対する答えは、閉館後の冷え切ったカウンターに置き去りにされていた。\n\n木曜日、私は館長室を訪ねた。佐藤は相変わらず数字の羅列された報告書を眺め、利用者の増加傾向に満足げな笑みを浮かべていた。「君の懸念は理解するが、地域全体の利益を考えれば、この方針は揺るがない」と彼は言う。彼の言う「地域全体」とは、おそらく利用者の統計データの中にしか存在しない抽象的な概念なのだろう。実存する一人ひとりの顔、閉館の合図とともに肩を落として帰路につく人々の背中を、彼は見ようとはしない。私たちが提供しているのは、効率的な時間管理ではなく、孤独を許容する場所であるはずだ。効率化の波が押し寄せる中で、図書館は公共という名の市場へと変貌を遂げようとしている。\n\n週末の夜、私は一人で書架の整理を続けた。深夜の図書館は、まるで巨大な船の船底のように静まり返っている。ふと、一冊の古い詩集が目に留まった。そこには、かつてこの場所を愛した老人が書き残したであろう、小さな付箋が挟まれていた。「静けさは、誰かに与えられるものではなく、私たちが共に作り上げるものだ」。この言葉に、私は胸を突かれた。延長された開館時間は、確かに物理的な利便性を高めたかもしれない。しかし、その代償として、私たちは「共に静けさを守る」という、図書館本来のコミュニティ機能を失いつつあるのではないか。利便性とアクセシビリティは、似て非なるものなのだ。\n\n月が沈み、最後の利用者が足早に去っていく。私は重い扉に鍵をかけ、その感触を指先に確かめる。佐藤の掲げる「開館時間の延長」という大義名分は、明日もまた、何食わぬ顔で実行されるだろう。しかし、私の心の中には、消えることのない違和感が灯り続けている。図書館は、単に開いている場所ではない。そこは、人々が互いの存在を尊重し、静寂を共有する場所であるべきだ。もしその本質が損なわれるのなら、どれほど開館時間を延ばしたところで、それはただの「明るい箱」に過ぎない。私は日誌を閉じ、誰もいない館内を後にした。明日の夜もまた、この矛盾した光の中で、私は静寂を守り続けることになる。",
+    "wordCount": 1375,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "喧騒",
+        "lemma": "喧騒",
+        "glosses": {
+          "es": "commotion or noisy atmosphere",
+          "en": "commotion or noisy atmosphere"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "集積所",
+        "lemma": "集積所",
+        "glosses": {
+          "es": "a place where things are gathered or accumulated",
+          "en": "a place where things are gathered or accumulated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "摩耗",
+        "lemma": "摩耗",
+        "glosses": {
+          "es": "wear and tear or exhaustion",
+          "en": "wear and tear or exhaustion"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "抽象的",
+        "lemma": "抽象的",
+        "glosses": {
+          "es": "abstract",
+          "en": "abstract"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "代償",
+        "lemma": "代償",
+        "glosses": {
+          "es": "price or compensation paid for something",
+          "en": "price or compensation paid for something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "矛盾",
+        "lemma": "矛盾",
+        "glosses": {
+          "es": "contradiction or inconsistency",
+          "en": "contradiction or inconsistency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 33.5,
+      "maxSentenceWords": 67,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "この物語の主題として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "利便性の追求と公共的価値の対立"
+        },
+        {
+          "id": "a2",
+          "text": "開館時間の延長がもたらす経済的成功"
+        },
+        {
+          "id": "a3",
+          "text": "図書館職員の労働環境改善の必要性"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "延長された時間は、サービスの質を向上させるどころか、利用者の権利意識を過剰に刺激し、職員の精神的な摩耗を加速させている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "閉館間際に発生したトラブルの原因は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "館長による不公平なルールの適用"
+        },
+        {
+          "id": "a2",
+          "text": "返却期限を無視した利用者の居座り"
+        },
+        {
+          "id": "a3",
+          "text": "若手司書の過剰なサービス提供"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "閉館間際の混雑に乗じ、資料の返却期限を無視して居座る利用者と、それを注意する若手司書の加藤が激しく対立したのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "語り手が館長に対して抱いている不信感の根拠は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "館長が予算を削り、図書館の質を低下させているから"
+        },
+        {
+          "id": "a2",
+          "text": "館長が職員の意見を聞かずに独断で閉館時間を決めたから"
+        },
+        {
+          "id": "a3",
+          "text": "館長が統計データのみを重視し、利用者の実態を無視しているから"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "彼の言う「地域全体」とは、おそらく利用者の統計データの中にしか存在しない抽象的な概念なのだろう。実存する一人ひとりの顔、閉館の合図とともに肩を落として帰路につく人々の背中を、彼は見ようとはしない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "語り手が「静けさは、誰かに与えられるものではなく、私たちが共に作り上げるものだ」という言葉を引用した意図は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "開館時間の延長が、図書館本来のコミュニティとしての機能を阻害していることを指摘するため"
+        },
+        {
+          "id": "a2",
+          "text": "図書館の静寂を守るために、利用者に厳しい罰則を課す必要があると主張するため"
+        },
+        {
+          "id": "a3",
+          "text": "詩集の重要性を読者に伝え、図書館の蔵書を増やすべきだと提案するため"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "延長された開館時間は、確かに物理的な利便性を高めたかもしれない。しかし、その代償として、私たちは「共に静けさを守る」という、図書館本来のコミュニティ機能を失いつつあるのではないか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "この文章全体を通して、語り手の心情として適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "現状に対する強い憤りと改善への期待"
+        },
+        {
+          "id": "a2",
+          "text": "公共性の変質に対する静かな憂慮"
+        },
+        {
+          "id": "a3",
+          "text": "効率化を推進する館長への深い敬意"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私は日誌を閉じ、誰もいない館内を後にした。明日の夜もまた、この矛盾した光の中で、私は静寂を守り続けることになる。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "「摩耗」という言葉が文中で意味していることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "資料が古くなること"
+        },
+        {
+          "id": "a2",
+          "text": "予算が減らされること"
+        },
+        {
+          "id": "a3",
+          "text": "職員の精神的な疲れ"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "延長された時間は、サービスの質を向上させるどころか、利用者の権利意識を過剰に刺激し、職員の精神的な摩耗を加速させている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「利便性の向上」と「公共の質の維持」という二つの価値が衝突する場面において、あなたが考える理想的な公共施設の在り方について、本編の視点を踏まえて論じなさい。",
+      "en": "「利便性の向上」と「公共の質の維持」という二つの価値が衝突する場面において、あなたが考える理想的な公共施設の在り方について、本編の視点を踏まえて論じなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "図書館の役割と利用者のニーズの乖離について、文脈から推論し考察する。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "静寂の境界線：図書館員の日誌より | C1 Reading | WeLearn",
+      "en": "静寂の境界線：図書館員の日誌より | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "公共図書館の開館時間延長がもたらす光と影。単なる「時間の延長」が、誰のための「アクセシビリティ」なのかを問い直す物語。",
+      "en": "公共図書館の開館時間延長がもたらす光と影。単なる「時間の延長」が、誰のための「アクセシビリティ」なのかを問い直す物語。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

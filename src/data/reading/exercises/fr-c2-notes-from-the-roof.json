@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-notes-from-the-roof",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "notes-from-the-roof",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared solar roof",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Dissonance sous les tuiles photovoltaïques",
+      "en": "Dissonance sous les tuiles photovoltaïques"
+    },
+    "intro": {
+      "es": "Dans cet échange de courriels, Mme Valérie Desforges, propriétaire, et M. Marc-Antoine Lemaire, locataire, débattent de l'installation d'un système solaire partagé au sein de leur copropriété, révélant des divergences fondamentales sur la gestion du risque et la valorisation du patrimoine.",
+      "en": "Dans cet échange de courriels, Mme Valérie Desforges, propriétaire, et M. Marc-Antoine Lemaire, locataire, débattent de l'installation d'un système solaire partagé au sein de leur copropriété, révélant des divergences fondamentales sur la gestion du risque et la valorisation du patrimoine."
+    },
+    "mission": {
+      "es": "Analysez les arguments sous-jacents de chaque partie pour comprendre comment une décision collective peut exacerber des tensions socio-économiques préexistantes.",
+      "en": "Analysez les arguments sous-jacents de chaque partie pour comprendre comment une décision collective peut exacerber des tensions socio-économiques préexistantes."
+    },
+    "targetText": "Objet : Délibération concernant le projet d'autoconsommation collective – Immeuble Les Glycines\n\nCher Monsieur Lemaire,\n\nJe reviens vers vous suite à l'assemblée générale extraordinaire de mardi dernier. Bien que le vote ait entériné, à une courte majorité, l'installation de panneaux photovoltaïques sur le toit de notre copropriété, je perçois dans votre abstention une réserve que je souhaiterais lever. En tant que propriétaire, je vois dans ce projet une valorisation tangible de notre actif immobilier. L'investissement initial, bien que substantiel, se traduira par une diminution pérenne des charges communes, une perspective qui, je l'espère, saura vous convaincre de l'intérêt commun de cette transition énergétique. Il est impératif que nous marchions d'un pas assuré vers cette autonomie, surtout à l'heure où les fluctuations des marchés de l'énergie rendent nos factures aussi imprévisibles qu'insupportables. Je conçois que le coût des travaux puisse paraître élevé, mais il s'agit d'une mise de fonds qui s'amortira d'elle-même par la revente du surplus d'électricité au réseau. C'est une vision à long terme, une stratégie de résilience que je souhaite voir partagée par tous les résidents.\n\nChère Madame Desforges,\n\nJe vous remercie de votre courriel. Si mon abstention a pu être interprétée comme une réserve, je vous assure qu'elle relève davantage d'une lecture divergente des risques. Pour vous, propriétaire, cette installation est un investissement patrimonial dont la rentabilité s'inscrit sur une décennie. Pour moi, locataire dont le bail arrive à échéance dans dix-huit mois, la temporalité est radicalement différente. Le coût des travaux, répercuté indirectement sur les charges, constitue une ponction immédiate sur mon pouvoir d'achat, sans aucune garantie de pouvoir bénéficier des retombées économiques futures. Vous parlez de résilience, je perçois une asymétrie de bénéfices. L'autoconsommation collective, telle qu'elle est structurée, semble favoriser ceux qui resteront pour récolter les fruits de l'amortissement, tandis que les occupants temporaires financent une infrastructure dont ils ne verront jamais la pleine capitalisation. Il ne s'agit pas d'un refus de la transition, mais d'une question de justice distributive au sein de notre micro-société.\n\nVotre analyse sur la temporalité est intéressante, mais elle occulte, me semble-t-il, la dimension éthique de notre responsabilité collective. Certes, votre horizon de séjour est limité, mais le bâtiment, lui, demeure. En tant que copropriétaire, je porte le poids du risque financier et de la maintenance technique, des responsabilités que vous n'avez pas à assumer. Si nous attendions que chaque résident puisse bénéficier d'un retour sur investissement immédiat, aucune amélioration structurelle ne serait jamais entreprise. L'immobilier est un organisme vivant qui exige des soins constants, et le coût de ces soins est une charge inhérente à l'occupation, peu importe le statut juridique. Il est regrettable de voir une initiative écologique, pensée pour réduire notre empreinte carbone, réduite à un simple calcul comptable de rentabilité individuelle. La neutralité de votre vote, bien que compréhensible, fragilise la dynamique de notre copropriété.\n\nJe crains, Madame, que nous ne parlions pas le même langage. Vous invoquez l'éthique pour justifier une charge financière que je juge disproportionnée pour un locataire. Vous parlez de « soins constants » pour l'immeuble, mais ces soins se traduisent par une augmentation de mon loyer charges comprises, ce qui, dans le contexte inflationniste actuel, n'est pas une mince affaire. Le risque que vous portez est un choix volontaire lié à votre statut de propriétaire ; le risque que je porte est celui d'une éviction économique si les charges deviennent trop lourdes. Cette asymétrie ne peut être résolue par de simples appels à la solidarité. Si le projet est maintenu, je serai contraint d'envisager mon départ, car je ne peux me permettre de subventionner, par mes charges, une plus-value immobilière dont je serai exclu. C'est une conséquence que je tenais à porter à votre connaissance avant le début des travaux.\n\nCette perspective de départ est regrettable, mais elle met en lumière une faille systémique dans notre gestion. Si chaque décision doit être soumise à l'approbation de ceux dont le passage est éphémère, nous condamnons l'immeuble à une stagnation certaine. La démocratie en copropriété est un exercice périlleux : elle exige de concilier des intérêts divergents sans pour autant sacrifier la pérennité du bien. Je prends note de votre position, bien qu'elle m'attriste. Les travaux débuteront le mois prochain, comme prévu par le vote. Il appartient désormais à chacun de décider si le coût de cette transition est compatible avec ses propres horizons de vie. Je reste toutefois ouverte à une discussion sur une éventuelle révision des modalités de répartition des charges, si le conseil syndical accepte de se pencher sur la question, bien que je doute de la faisabilité juridique d'une telle exception.\n\nCordialement,\n\nValérie Desforges\n\nToutefois, cette impasse souligne une problématique plus vaste : l'inadaptation de nos cadres législatifs actuels face aux défis de la transition énergétique en milieu urbain. Si la loi encourage la rénovation, elle omet souvent de protéger les occupants précaires contre les effets pervers d'une valorisation immobilière subie. En cherchant à verdir notre patrimoine, nous risquons paradoxalement d'accélérer une gentrification énergétique, où seuls les propriétaires aisés peuvent se permettre d'habiter des logements performants. Cette tension entre l'urgence climatique et la réalité économique des locataires démontre que sans un mécanisme de péréquation ou d'aide publique ciblée, le progrès technique risque de creuser davantage les inégalités sociales au sein de nos copropriétés. Il est impératif que les pouvoirs publics interviennent pour encadrer ces investissements, afin que la quête collective de durabilité ne se transforme pas en une exclusion sociale, rendant ainsi la transition non seulement techniquement réalisable, mais surtout humainement acceptable pour chaque résident.",
+    "wordCount": 917,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "pérenne",
+        "lemma": "pérenne",
+        "glosses": {
+          "es": "Long-lasting or sustainable.",
+          "en": "Long-lasting or sustainable."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ponction",
+        "lemma": "ponction",
+        "glosses": {
+          "es": "A deduction or withdrawal of funds.",
+          "en": "A deduction or withdrawal of funds."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "asymétrie",
+        "lemma": "asymétrie",
+        "glosses": {
+          "es": "An imbalance or lack of correspondence.",
+          "en": "An imbalance or lack of correspondence."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "stagnation",
+        "lemma": "stagnation",
+        "glosses": {
+          "es": "A state of inactivity or lack of progress.",
+          "en": "A state of inactivity or lack of progress."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "systémique",
+        "lemma": "systémique",
+        "glosses": {
+          "es": "Relating to the whole system rather than just parts.",
+          "en": "Relating to the whole system rather than just parts."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "éphémère",
+        "lemma": "éphémère",
+        "glosses": {
+          "es": "Short-lived or temporary.",
+          "en": "Short-lived or temporary."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22.4,
+      "maxSentenceWords": 42,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le conflit central de cet échange ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une divergence sur le financement et l'équité."
+        },
+        {
+          "id": "a2",
+          "text": "Un désaccord sur l'esthétique des panneaux."
+        },
+        {
+          "id": "a3",
+          "text": "Un problème technique lié à l'installation solaire."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Pour moi, locataire dont le bail arrive à échéance dans dix-huit mois, la temporalité est radicalement différente.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle est la conséquence immédiate annoncée par M. Lemaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il va contester le vote en justice."
+        },
+        {
+          "id": "a2",
+          "text": "Il envisage de quitter son logement."
+        },
+        {
+          "id": "a3",
+          "text": "Il refuse de payer les charges."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Si le projet est maintenu, je serai contraint d'envisager mon départ, car je ne peux me permettre de subventionner, par mes charges, une plus-value immobilière dont je serai exclu.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Comment Mme Desforges perçoit-elle la position de M. Lemaire ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Comme une demande légitime de réduction."
+        },
+        {
+          "id": "a2",
+          "text": "Comme une preuve de mauvaise foi."
+        },
+        {
+          "id": "a3",
+          "text": "Comme un obstacle au progrès collectif."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Si chaque décision doit être soumise à l'approbation de ceux dont le passage est éphémère, nous condamnons l'immeuble à une stagnation certaine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de la dernière réponse de Mme Desforges ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Réaffirmer la décision collective tout en reconnaissant la difficulté systémique."
+        },
+        {
+          "id": "a2",
+          "text": "S'excuser pour les désagréments causés."
+        },
+        {
+          "id": "a3",
+          "text": "Proposer une médiation pour éviter le départ du locataire."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Les travaux débuteront le mois prochain, comme prévu par le vote. Il appartient désormais à chacun de décider si le coût de cette transition est compatible avec ses propres horizons de vie.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de cet échange ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Polémique et agressif."
+        },
+        {
+          "id": "a2",
+          "text": "Courtois mais tendu."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et distant."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Je vous remercie de votre courriel. Si mon abstention a pu être interprétée comme une réserve, je vous assure qu'elle relève davantage d'une lecture divergente des risques.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « pérenne » utilisé dans le premier courriel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Qui est très coûteux à court terme."
+        },
+        {
+          "id": "a2",
+          "text": "Qui est temporaire et sujet à changement."
+        },
+        {
+          "id": "a3",
+          "text": "Qui est durable et s'inscrit dans la durée."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "L'investissement initial, bien que substantiel, se traduira par une diminution pérenne des charges communes",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 200 mots, du point de vue d'un membre du conseil syndical, proposant une solution de compromis qui pourrait concilier les intérêts des propriétaires et des locataires dans ce projet photovoltaïque.",
+      "en": "Rédigez une réponse de 200 mots, du point de vue d'un membre du conseil syndical, proposant une solution de compromis qui pourrait concilier les intérêts des propriétaires et des locataires dans ce projet photovoltaïque."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez les arguments sous-jacents de chaque partie pour comprendre comment une décision collective peut exacerber des tensions socio-économiques préexistantes.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Dissonance sous les tuiles photovoltaïques | C2 Reading | WeLearn",
+      "en": "Dissonance sous les tuiles photovoltaïques | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Dans cet échange de courriels, Mme Valérie Desforges, propriétaire, et M. Marc-Antoine Lemaire, locataire, débattent de l'installation d'un système solaire partagé au sein de leur copropriété, révélant des divergences fondamentales sur la gestion du risque et la valorisation du patrimoine.",
+      "en": "Dans cet échange de courriels, Mme Valérie Desforges, propriétaire, et M. Marc-Antoine Lemaire, locataire, débattent de l'installation d'un système solaire partagé au sein de leur copropriété, révélant des divergences fondamentales sur la gestion du risque et la valorisation du patrimoine."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/notes-from-the-roof",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

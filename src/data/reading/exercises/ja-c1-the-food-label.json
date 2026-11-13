@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ja-c1-the-food-label",
+  "status": "draft",
+  "language": "ja",
+  "variant": "ja-JP",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C1",
+    "displayLabel": "japanese C1",
+    "jlpt": "N1",
+    "mappingDisclaimer": {
+      "es": "The CEFR–JLPT mapping is approximate and requires human validation.",
+      "en": "The CEFR–JLPT mapping is approximate and requires human validation."
+    }
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "ja",
+      "c1",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "食品表示のジレンマ：ラベルが変える消費者の行動",
+      "en": "食品表示のジレンマ：ラベルが変える消費者の行動"
+    },
+    "intro": {
+      "es": "食品廃棄を減らすためのラベル表示が、かえって消費者の心理にどのような影響を与えるのか。二つの異なるアプローチを比較し、その背後にある行動経済学的な矛盾を考察します。",
+      "en": "食品廃棄を減らすためのラベル表示が、かえって消費者の心理にどのような影響を与えるのか。二つの異なるアプローチを比較し、その背後にある行動経済学的な矛盾を考察します。"
+    },
+    "mission": {
+      "es": "食品表示の形式が消費者の購買行動や廃棄判断に与える影響について、筆者の論理展開を理解し、批判的に読み解く。",
+      "en": "食品表示の形式が消費者の購買行動や廃棄判断に与える影響について、筆者の論理展開を理解し、批判的に読み解く。"
+    },
+    "targetText": "近年の食料品市場において、廃棄削減を目的としたラベル表示のあり方が議論の的となっている。特に注目されるのが、「賞味期限」の解釈を巡る二つの異なるアプローチだ。一つは、品質の低下を警告する「期限厳守型」のラベルであり、もう一つは、期限を過ぎても食べられる可能性を示唆する「品質推奨型」のラベルである。私は先日、地元の食料品店である「アオバ・マーケット」で、この二つのラベルが混在する棚を観察し、興味深い現象を目の当たりにした。店長の佐藤氏は、廃棄を減らすために後者のラベルを試験的に導入したが、その結果は予想外の方向へ転がったのである。\n\n「期限厳守型」のラベルを貼られた商品は、消費者の購入意欲を即座に削ぐ傾向がある。消費者は「期限」という言葉を「絶対的な安全基準」と誤認し、それを過ぎたものをゴミとして扱うことに躊躇がない。これに対し、品質推奨型のラベルを導入した商品群は、一見すると消費者に余裕を与えているように思える。しかし、ここには重大なパラドックスが存在する。消費者は「まだ食べられる」という情報を得たことで、逆に購入後の管理を疎かにし、結果として家庭内での廃棄を加速させてしまうのだ。店内の観察中、私はある客が「これはまだ大丈夫だ」と呟きながら、冷蔵庫の奥深くに商品を押し込む姿を目撃した。この心理的余裕が、かえって記憶の彼方への追いやる原因となっているのである。\n\nアオバ・マーケットの佐藤氏は、当初の目的である「廃棄削減」が達成されていないことに頭を抱えている。彼は、ラベルの文言を工夫することで消費者の意識を変えようとしたが、消費者の行動はラベルの意図を常に先回りして解釈する。ある客は「品質推奨型」のラベルを見て、それを「期限が曖昧で信頼できない商品」と見なし、むしろ購入を避けるという選択をした。一方、別の客は「期限厳守型」の方を「管理が徹底されている」と評価し、積極的に手に取った。このように、ラベルの意図と消費者の受け取り方は、しばしば正反対の結果を招く。この食い違いは、情報の透明性が必ずしも賢明な消費行動を保証するわけではないことを示唆している。\n\nさらに深刻なのは、これらのラベルが消費者の「自己責任」という概念を曖昧にしている点だ。ラベルが消費者に判断を委ねれば委ねるほど、消費者はその判断を放棄し、結果として廃棄という安易な選択に逃げ込む。佐藤氏が導入した「品質推奨型」のラベルは、消費者に教育的な役割を求めたが、多忙な現代人にとって、食料品一つ一つに注意を払う余裕などない。結果的に、ラベルは消費者の行動を矯正するどころか、混乱を助長し、罪悪感を薄める免罪符として機能してしまっている。これは、ラベルの設計者が想定する「合理的な消費者」像と、現実の消費者の間にある埋めがたい溝である。\n\n結局のところ、ラベルの表示形式をいかに洗練させようとも、消費者の生活習慣という土台が変わらなければ、廃棄問題は解決しない。アオバ・マーケットでの実験は、ラベルが単なる情報伝達の手段を超え、消費者の心理的防衛本能を刺激する装置であることを浮き彫りにした。佐藤氏は現在、ラベルの撤廃を含めた根本的な見直しを検討している。ラベルが消費者を導くのではなく、ラベルに依存する社会構造そのものが、食品廃棄を生み出しているのではないか。この問いに対する答えは、まだ誰にも出せていない。私たちは、ラベルという小さな紙切れに、あまりにも多くの期待を背負わせすぎているのかもしれない。",
+    "wordCount": 1322,
+    "estimatedMinutes": 11,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "implications and writer stance"
+    ],
+    "vocabulary": [
+      {
+        "surface": "パラドックス",
+        "lemma": "パラドックス",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "疎かに",
+        "lemma": "疎かに",
+        "glosses": {
+          "es": "neglectful",
+          "en": "neglectful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "免罪符",
+        "lemma": "免罪符",
+        "glosses": {
+          "es": "indulgence or excuse",
+          "en": "indulgence or excuse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "先回り",
+        "lemma": "先回り",
+        "glosses": {
+          "es": "anticipating",
+          "en": "anticipating"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "埋めがたい",
+        "lemma": "埋めがたい",
+        "glosses": {
+          "es": "difficult to bridge",
+          "en": "difficult to bridge"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "洗練",
+        "lemma": "洗練",
+        "glosses": {
+          "es": "refinement",
+          "en": "refinement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "optional",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can interpret implicit positions and explain the role of concessions.",
+      "en": "You can interpret implicit positions and explain the role of concessions."
+    },
+    "allowedGrammar": [
+      "implications and writer stance"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 45.6,
+      "maxSentenceWords": 62,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C1",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:34:04.694Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "筆者がこの文章を通じて最も訴えたいことは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "ラベルと消費者の意識の乖離が問題だ。"
+        },
+        {
+          "id": "a2",
+          "text": "ラベル表示の改善が廃棄を減らす。"
+        },
+        {
+          "id": "a3",
+          "text": "消費者はラベルを無視すべきである。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "ラベルが消費者を導くのではなく、ラベルに依存する社会構造そのものが、食品廃棄を生み出しているのではないか。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "品質推奨型のラベルを見た客の行動として、本文中で指摘されていることは何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "購入を積極的に決めた。"
+        },
+        {
+          "id": "a2",
+          "text": "冷蔵庫の奥に放置した。"
+        },
+        {
+          "id": "a3",
+          "text": "店長に質問を繰り返した。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "消費者は「まだ食べられる」という情報を得たことで、逆に購入後の管理を疎かにし、結果として家庭内での廃棄を加速させてしまうのだ。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "「期限厳守型」のラベルが消費者に好まれる理由は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "安全性が高いと誤解されるから。"
+        },
+        {
+          "id": "a2",
+          "text": "価格が安く設定されているから。"
+        },
+        {
+          "id": "a3",
+          "text": "管理が徹底されていると感じるから。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "別の客は「期限厳守型」の方を「管理が徹底されている」と評価し、積極的に手に取った。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "佐藤氏がラベルの文言を工夫した目的は何か。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "消費者の廃棄意識を変えるため。"
+        },
+        {
+          "id": "a2",
+          "text": "商品の売上を増やすため。"
+        },
+        {
+          "id": "a3",
+          "text": "店内の混乱を収めるため。"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "店長の佐藤氏は、廃棄を減らすために後者のラベルを試験的に導入したが、その結果は予想外の方向へ転がったのである。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "ラベルという存在に対する筆者の評価はどのようなものか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "非常に楽観的である。"
+        },
+        {
+          "id": "a2",
+          "text": "批判的かつ懐疑的である。"
+        },
+        {
+          "id": "a3",
+          "text": "中立的で冷静である。"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "私たちは、ラベルという小さな紙切れに、あまりにも多くの期待を背負わせすぎているのかもしれない。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "本文における「免罪符」の意味として最も適切なものはどれか。",
+      "options": [
+        {
+          "id": "a1",
+          "text": "食品の品質を保証する証明書。"
+        },
+        {
+          "id": "a2",
+          "text": "廃棄を避けるための法的措置。"
+        },
+        {
+          "id": "a3",
+          "text": "自分の過ちを正当化する口実。"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "ラベルは消費者の行動を矯正するどころか、混乱を助長し、罪悪感を薄める免罪符として機能してしまっている。",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "「食品表示が消費者の行動を規定する」という本文の議論を踏まえ、情報の提示方法が人間の意思決定に与える影響について、あなたの考えを400字程度で述べなさい。",
+      "en": "「食品表示が消費者の行動を規定する」という本文の議論を踏まえ、情報の提示方法が人間の意思決定に与える影響について、あなたの考えを400字程度で述べなさい。"
+    },
+    "minWords": 90,
+    "maxWords": 180,
+    "hints": [
+      "食品表示の形式が消費者の購買行動や廃棄判断に与える影響について、筆者の論理展開を理解し、批判的に読み解く。",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:34:04.694Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "食品表示のジレンマ：ラベルが変える消費者の行動 | C1 Reading | WeLearn",
+      "en": "食品表示のジレンマ：ラベルが変える消費者の行動 | C1 Reading | WeLearn"
+    },
+    "description": {
+      "es": "食品廃棄を減らすためのラベル表示が、かえって消費者の心理にどのような影響を与えるのか。二つの異なるアプローチを比較し、その背後にある行動経済学的な矛盾を考察します。",
+      "en": "食品廃棄を減らすためのラベル表示が、かえって消費者の心理にどのような影響を与えるのか。二つの異なるアプローチを比較し、その背後にある行動経済学的な矛盾を考察します。"
+    },
+    "canonicalPath": "/en/practice/japanese/c1/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:34:04.694Z"
+  }
+}

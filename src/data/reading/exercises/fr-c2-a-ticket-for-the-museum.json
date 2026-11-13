@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le mirage de la gratuité : une aporie muséale",
+      "en": "Le mirage de la gratuité : une aporie muséale"
+    },
+    "intro": {
+      "es": "Analyse critique de la rhétorique de l'accès libre dans les institutions culturelles contemporaines.",
+      "en": "Analyse critique de la rhétorique de l'accès libre dans les institutions culturelles contemporaines."
+    },
+    "mission": {
+      "es": "Analyser les implications socio-économiques et symboliques de la gratuité muséale à travers une étude de cas.",
+      "en": "Analyser les implications socio-économiques et symboliques de la gratuité muséale à travers une étude de cas."
+    },
+    "targetText": "L’inauguration récente de la Galerie des Ombres, dirigée par la conservatrice Élise Vaneau, a suscité une ferveur médiatique rare. Vaneau, figure de proue d’une muséologie militante, a imposé un accès intégralement gratuit, arguant que l’art doit s’affranchir des entraves marchandes pour devenir un bien commun. Cependant, derrière cette façade philanthropique, une réalité plus complexe émerge. En observant les flux de visiteurs lors de la soirée vernissage, il devient patent que la gratuité, loin d'être un vecteur d'égalisation, fonctionne comme un écran de fumée. Elle occulte les coûts invisibles — le temps de transport, la disponibilité temporelle, et le capital culturel nécessaire pour franchir le seuil d’une institution qui, bien qu'exempte de ticket d’entrée, n'en demeure pas moins intimidante. Le débat public se cristallise sur la suppression du billet, évacuant par là même la question fondamentale de l'accessibilité réelle des populations les plus éloignées du champ culturel.\n\nLe conflit a éclaté lors d'une table ronde où le sociologue Marc-André Perrin a mis en lumière une contradiction flagrante : alors que la Galerie des Ombres se targue d'accueillir un public diversifié, les statistiques de fréquentation révèlent une homogénéité sociale frappante. Vaneau a rétorqué que la gratuité était un premier pas nécessaire, une condition sine qua non de la démocratisation. Pourtant, l'argument s'effrite dès lors que l'on analyse les profils des visiteurs. La gratuité, en tant que politique publique, tend à subventionner les classes déjà dotées des codes de visite, transformant le musée en un espace de consommation symbolique où le coût du billet est remplacé par le coût de l'opportunité. En rendant l'entrée gratuite, l'institution déplace le curseur de l'exclusion sans pour autant le supprimer.\n\nLa situation a pris une tournure inattendue lorsque le collectif « Temps Libre », composé d'ouvriers du quartier limitrophe, a publié une lettre ouverte dénonçant l'inaccessibilité de fait de la Galerie. Ils pointaient du doigt les horaires d'ouverture, strictement calqués sur les rythmes de bureau, rendant la visite impossible pour ceux dont les horaires sont décalés ou précaires. Pour ces citoyens, la gratuité est une abstraction cruelle : à quoi bon une entrée libre si le temps, ressource plus rare que l'argent, reste un luxe inabordable ? Vaneau, prise au dépourvu, a tenté de justifier le maintien des horaires par des contraintes budgétaires liées à la sécurité des œuvres, révélant ainsi le paradoxe central de sa gestion : le musée gratuit est un musée sous surveillance constante, dont le fonctionnement coûteux nécessite une rigueur administrative qui finit par exclure ceux-là mêmes qu'il prétend inviter.\n\nL'issue de cette confrontation fut une impasse institutionnelle. La direction, refusant d'admettre que la gratuité est un outil de marketing culturel plutôt qu'une politique sociale, a maintenu sa ligne. En revanche, le collectif a cessé toute collaboration, marquant une rupture symbolique forte. Cette séquence démontre que la rhétorique de la gratuité, lorsqu'elle est déconnectée d'une réflexion sur les conditions matérielles de réception, devient une forme de condescendance institutionnelle. Elle offre le spectacle de l'ouverture tout en verrouillant, par des mécanismes subtils, les portes à ceux qui ne disposent pas du capital temporel requis. Le musée, en se voulant gratuit, s'est paradoxalement enfermé dans une tour d'ivoire où la vertu affichée dispense de l'effort d'inclusion véritable.\n\nEn fin de compte, la Galerie des Ombres illustre une aporie moderne. La gratuité est devenue le fétiche d'une politique culturelle qui préfère la visibilité médiatique à la transformation structurelle. En se focalisant sur le prix, on occulte la valeur, et en se focalisant sur l'entrée, on oublie l'accueil. Tant que les institutions ne remettront pas en question leur propre temporalité et les barrières symboliques qu'elles érigent, la gratuité restera un mirage. Elle ne constitue pas une fin en soi, mais un simple déplacement du problème. Le véritable défi, bien plus ardu, serait de repenser le musée non comme un sanctuaire gratuit, mais comme un lieu dont les conditions d'accès sont réellement pensées pour ceux qui, jusqu'ici, n'avaient même pas envisagé d'en franchir le seuil.\n\nToutefois, cette impasse soulève une interrogation plus profonde sur la nature même de la médiation culturelle à l'ère de la dématérialisation. Si la gratuité demeure un leurre, elle révèle surtout une incapacité systémique à concevoir l'art en dehors d'une logique de consommation, fût-elle symbolique. En privilégiant une posture de générosité unilatérale, la Galerie des Ombres a manqué l'opportunité de transformer le musée en un véritable espace de co-construction, où les publics ne seraient plus des visiteurs passifs, mais des acteurs engagés dans la définition du patrimoine. Cette déconnexion entre l'offre institutionnelle et les réalités sociales ne se résorbe pas par une simple extension des horaires ou une politique tarifaire, mais exige une refonte radicale de la gouvernance muséale. Le risque est désormais de voir se creuser un fossé irréparable entre des institutions qui se drapent dans une vertu démocratique de façade et des populations qui, lassées par ces simulacres, se tournent vers des formes d'expression culturelle alternatives, plus horizontales et ancrées dans le quotidien. En persistant dans cette voie, la direction ne fait pas seulement preuve d'une cécité stratégique ; elle fragilise le contrat social qui lie l'institution à la cité. La gratuité, loin d'être le remède à l'exclusion, agit comme un anesthésiant, masquant la nécessité urgente d'une démocratie culturelle participative. Sans une remise en question de cette posture verticale, la Galerie des Ombres risque de devenir le symbole d'une ère où le musée, en voulant tout offrir, finit par ne rien partager, s'enfermant dans une solitude institutionnelle aussi coûteuse pour la société que pour la culture elle-même.",
+    "wordCount": 915,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "aporie",
+        "lemma": "aporie",
+        "glosses": {
+          "es": "A logical contradiction or an insoluble problem.",
+          "en": "A logical contradiction or an insoluble problem."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "patent",
+        "lemma": "patent",
+        "glosses": {
+          "es": "Obvious or clearly evident.",
+          "en": "Obvious or clearly evident."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sine qua non",
+        "lemma": "sine qua non",
+        "glosses": {
+          "es": "An essential condition; something absolutely necessary.",
+          "en": "An essential condition; something absolutely necessary."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fétiche",
+        "lemma": "fétiche",
+        "glosses": {
+          "es": "An object or idea treated with irrational reverence.",
+          "en": "An object or idea treated with irrational reverence."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "sanctuaire",
+        "lemma": "sanctuaire",
+        "glosses": {
+          "es": "A sacred place or a place of refuge.",
+          "en": "A sacred place or a place of refuge."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "condescendance",
+        "lemma": "condescendance",
+        "glosses": {
+          "es": "An attitude of patronizing superiority.",
+          "en": "An attitude of patronizing superiority."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.1,
+      "maxSentenceWords": 57,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le message central de cet article concernant la gratuité muséale ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gratuité masque des barrières sociales et temporelles persistantes."
+        },
+        {
+          "id": "a2",
+          "text": "La gratuité est une solution efficace pour démocratiser l'art."
+        },
+        {
+          "id": "a3",
+          "text": "La gratuité est le seul moyen de garantir l'accès à la culture."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Elle occulte les coûts invisibles — le temps de transport, la disponibilité temporelle, et le capital culturel nécessaire pour franchir le seuil d’une institution qui, bien qu'exempte de ticket d’entrée, n'en demeure pas moins intimidante.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi le collectif « Temps Libre » conteste-t-il la gratuité ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le musée est trop éloigné de leur lieu de résidence."
+        },
+        {
+          "id": "a2",
+          "text": "Les horaires d'ouverture sont inadaptés à leur réalité."
+        },
+        {
+          "id": "a3",
+          "text": "La sécurité des œuvres empêche la libre circulation."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ils pointaient du doigt les horaires d'ouverture, strictement calqués sur les rythmes de bureau, rendant la visite impossible pour ceux dont les horaires sont décalés ou précaires.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère l'auteur sur la gestion d'Élise Vaneau ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle est une administratrice incompétente incapable de gérer un budget."
+        },
+        {
+          "id": "a2",
+          "text": "Elle cherche activement à exclure les classes populaires du musée."
+        },
+        {
+          "id": "a3",
+          "text": "Elle privilégie l'image médiatique au détriment d'une inclusion réelle."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La gratuité est devenue le fétiche d'une politique culturelle qui préfère la visibilité médiatique à la transformation structurelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de l'auteur en critiquant la Galerie des Ombres ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Remettre en question la rhétorique simpliste de la gratuité."
+        },
+        {
+          "id": "a2",
+          "text": "Dénoncer le gaspillage des fonds publics."
+        },
+        {
+          "id": "a3",
+          "text": "Promouvoir une nouvelle méthode de gestion des musées privés."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette séquence démontre que la rhétorique de la gratuité, lorsqu'elle est déconnectée d'une réflexion sur les conditions matérielles de réception, devient une forme de condescendance institutionnelle.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton l'auteur adopte-t-il tout au long de son analyse ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un ton polémique et partisan."
+        },
+        {
+          "id": "a2",
+          "text": "Un ton analytique et critique."
+        },
+        {
+          "id": "a3",
+          "text": "Un ton enthousiaste et laudatif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "En fin de compte, la Galerie des Ombres illustre une aporie moderne.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « patent » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Secret ou dissimulé."
+        },
+        {
+          "id": "a2",
+          "text": "Complexe ou obscur."
+        },
+        {
+          "id": "a3",
+          "text": "Incontestable ou manifeste."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "En observant les flux de visiteurs lors de la soirée vernissage, il devient patent que la gratuité, loin d'être un vecteur d'égalisation, fonctionne comme un écran de fumée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif (300 mots) dans lequel vous proposez une alternative concrète à la gratuité pour favoriser l'accès aux institutions culturelles, en tenant compte des contraintes temporelles et sociales mentionnées dans le texte.",
+      "en": "Rédigez un court essai argumentatif (300 mots) dans lequel vous proposez une alternative concrète à la gratuité pour favoriser l'accès aux institutions culturelles, en tenant compte des contraintes temporelles et sociales mentionnées dans le texte."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser les implications socio-économiques et symboliques de la gratuité muséale à travers une étude de cas.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le mirage de la gratuité : une aporie muséale | C2 Reading | WeLearn",
+      "en": "Le mirage de la gratuité : une aporie muséale | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analyse critique de la rhétorique de l'accès libre dans les institutions culturelles contemporaines.",
+      "en": "Analyse critique de la rhétorique de l'accès libre dans les institutions culturelles contemporaines."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

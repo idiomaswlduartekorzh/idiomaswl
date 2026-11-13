@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "it-c2-the-quiet-street",
+  "status": "draft",
+  "language": "it",
+  "variant": "it-IT",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "italian C2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "it",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L’architettura del silenzio: la redistribuzione del frastuono",
+      "en": "L’architettura del silenzio: la redistribuzione del frastuono"
+    },
+    "intro": {
+      "es": "Un'analisi critica sulla gestione del traffico notturno e le implicazioni socio-economiche del rumore urbano.",
+      "en": "Un'analisi critica sulla gestione del traffico notturno e le implicazioni socio-economiche del rumore urbano."
+    },
+    "mission": {
+      "es": "Analizzare il testo per comprendere le sfumature retoriche e le tensioni sottese alla gestione del silenzio nelle metropoli contemporanee.",
+      "en": "Analizzare il testo per comprendere le sfumature retoriche e le tensioni sottese alla gestione del silenzio nelle metropoli contemporanee."
+    },
+    "targetText": "Il crepuscolo non scende mai come un sipario neutro sulla metropoli di Valeriana; esso porta con sé una coreografia invisibile di flussi veicolari che l'urbanista Elio Vanni definisce, con cinismo quasi poetico, come la redistribuzione del frastuono. Mentre i quartieri residenziali del centro storico godono di una quiete artificiale, ottenuta tramite una sofisticata rete di divieti e barriere fonoassorbenti, le periferie industriali di Borgo Ferro subiscono un'escalation di traffico pesante che si protrae ben oltre la mezzanotte. Vanni sostiene che il silenzio non sia una risorsa democratica, ma un bene di lusso, il cui prezzo viene pagato da chi abita lontano dai centri decisionali. La narrazione ufficiale parla di 'quiete urbana' e 'tutela della salute pubblica', eppure, osservando i flussi notturni, emerge una realtà in cui la pace acustica di pochi è direttamente proporzionale al caos logistico imposto a molti. La signora Clara, residente in via dei Cantieri, descrive il ronzio costante dei tir come una vibrazione che le attraversa le ossa, un battito cardiaco meccanico che le impedisce di distinguere il riposo dalla veglia. La sua testimonianza non è un caso isolato, ma il sintomo di una pianificazione che privilegia l'estetica del centro rispetto alla vivibilità delle zone di transito. L'amministrazione comunale, rappresentata dal delegato Marco Dossi, giustifica tale assetto come una necessità dettata dalla logistica moderna, sostenendo che la fluidità del trasporto merci notturno sia l'unico modo per evitare il collasso viario diurno. Tuttavia, questa tesi ignora deliberatamente l'impatto psicologico sui residenti di Borgo Ferro, trattati come variabili di scarto in un'equazione di efficienza urbana. La tensione tra la retorica del benessere e la realtà del disagio si fa palpabile quando si analizzano le nuove ordinanze che, sotto il pretesto della sostenibilità, dirottano i convogli pesanti verso arterie stradali prive di isolamento acustico. In questo contesto, il linguaggio della pace sociale funge da velo, un paravento retorico che occulta la disparità di trattamento tra i cittadini di serie A e quelli di serie B. Non si tratta semplicemente di inquinamento acustico, ma di una segregazione spaziale mediata dal suono, dove il rumore diventa l'indicatore geografico del valore sociale di un quartiere. Dossi ribatte che l'alternativa sarebbe un blocco totale delle merci, con conseguenze economiche incalcolabili, ma si guarda bene dal menzionare la possibilità di investire in infrastrutture sotterranee che eliminerebbero il problema alla radice, preferendo la via più economica della redistribuzione del carico. La questione sollevata da Vanni rimane sospesa: è possibile costruire una città dove il silenzio non sia il bottino di una conquista territoriale? La risposta sembra sfuggire a ogni tentativo di conciliazione, poiché ogni misura presa per mitigare il rumore in un punto della mappa genera inevitabilmente un'onda d'urto in un altro. La notte a Valeriana non è mai veramente silenziosa; è solo un palcoscenico in cui il rumore si sposta da un lato all'altro, come un fantasma che non trova pace, condannato a peregrinare tra le strade dimenticate dalle mappe turistiche. Mentre la città dorme, le macchine continuano il loro incessante lavoro di scavo nel tessuto sociale, lasciando dietro di sé una scia di risentimento che, prima o poi, pretenderà di essere ascoltata. La logica del profitto e quella della convivenza civile si scontrano in un corto circuito che non ammette mediazioni, lasciando i residenti di Borgo Ferro in una condizione di attesa perenne, sospesi tra la speranza di una riforma e la certezza di un domani identico a ieri. Il silenzio, dunque, si rivela per ciò che è realmente: non l'assenza di rumore, ma la sua sapiente e spietata delocalizzazione.\n\nTuttavia, questa strategia di delocalizzazione acustica rischia di innescare un effetto domino di natura sociopolitica che l'amministrazione sembra sottovalutare con miope arroganza. Se la pace sonora è diventata il privilegio esclusivo di un’élite urbana che abita i salotti del centro, la resistenza che sta germogliando a Borgo Ferro non si limiterà a una sterile lamentela collettiva. È in atto una metamorfosi del malcontento: i residenti, stanchi di essere considerati meri ingranaggi di una macchina logistica, stanno iniziando a organizzare forme di disobbedienza civile che mirano a infrangere proprio quell'equilibrio artificiale tanto decantato da Dossi. Non si tratta più di una semplice richiesta di isolamento acustico, ma di una rivendicazione di cittadinanza integrale che mette in discussione la legittimità stessa del modello di sviluppo di Valeriana. Se il rumore è un indicatore geografico del valore sociale, allora la sua interruzione forzata diventerà l'arma politica per eccellenza. Bloccare i flussi notturni non significa solo reclamare il diritto al sonno, ma significa colpire il sistema nervoso della metropoli, rendendo il centro consapevole della propria dipendenza dai margini che ha sempre cercato di silenziare. La tensione non è più latente; essa vibra nell'aria come una corda tesa pronta a spezzarsi, suggerendo che la stabilità di Valeriana poggia su fondamenta fragili. La pretesa di gestire la città come un algoritmo di efficienza ignora la variabile umana, che per sua natura non accetta di essere confinata in zone di sacrificio. Quando il ronzio dei tir cesserà, forzato da una rivolta silenziosa che bloccherà le arterie vitali della produzione, il silenzio che scenderà su Borgo Ferro non sarà più quello imposto dall'alto, ma quello solenne di una conquista. La città si troverà allora di fronte a un bivio ineludibile: o accettare una redistribuzione equa dei pesi, rinunciando al privilegio del centro, o assistere al collasso di un sistema che ha confuso la gestione del rumore con la gestione della convivenza.",
+    "wordCount": 900,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "frastuono",
+        "lemma": "frastuono",
+        "glosses": {
+          "es": "A loud, confusing, or unpleasant noise.",
+          "en": "A loud, confusing, or unpleasant noise."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "fonoassorbenti",
+        "lemma": "fonoassorbenti",
+        "glosses": {
+          "es": "Materials designed to absorb sound waves.",
+          "en": "Materials designed to absorb sound waves."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paravento",
+        "lemma": "paravento",
+        "glosses": {
+          "es": "A screen or facade used to conceal something.",
+          "en": "A screen or facade used to conceal something."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "delocalizzazione",
+        "lemma": "delocalizzazione",
+        "glosses": {
+          "es": "The act of moving something to a different location.",
+          "en": "The act of moving something to a different location."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arterie",
+        "lemma": "arterie",
+        "glosses": {
+          "es": "Major roads or transport routes.",
+          "en": "Major roads or transport routes."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "scarto",
+        "lemma": "scarto",
+        "glosses": {
+          "es": "Waste or something considered insignificant.",
+          "en": "Waste or something considered insignificant."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 32.1,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:58:52.510Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Qual è il tema centrale dell'articolo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestione disuguale del rumore."
+        },
+        {
+          "id": "a2",
+          "text": "Il miglioramento dei trasporti."
+        },
+        {
+          "id": "a3",
+          "text": "Il declino economico di Borgo Ferro."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "emerge una realtà in cui la pace acustica di pochi è direttamente proporzionale al caos logistico imposto a molti.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Cosa sostiene Marco Dossi riguardo al traffico notturno?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "È una misura temporanea per il centro."
+        },
+        {
+          "id": "a2",
+          "text": "È necessario per evitare il blocco diurno."
+        },
+        {
+          "id": "a3",
+          "text": "È una scelta basata sull'inquinamento."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "la fluidità del trasporto merci notturno sia l'unico modo per evitare il collasso viario diurno.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Perché la testimonianza della signora Clara è significativa?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Suggerisce che i tir sono necessari per l'economia locale."
+        },
+        {
+          "id": "a2",
+          "text": "Conferma che il centro storico è diventato troppo rumoroso."
+        },
+        {
+          "id": "a3",
+          "text": "Dimostra l'impatto fisico del rumore su chi abita nelle periferie."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La sua testimonianza non è un caso isolato, ma il sintomo di una pianificazione che privilegia l'estetica del centro rispetto alla vivibilità delle zone di transito.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Qual è l'intento dell'autore nel descrivere il silenzio come 'bene di lusso'?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Evidenziare come la quiete sia distribuita in base alla posizione sociale."
+        },
+        {
+          "id": "a2",
+          "text": "Sottolineare che il silenzio è un diritto di tutti."
+        },
+        {
+          "id": "a3",
+          "text": "Criticare chi spende troppo per abitare nei quartieri centrali."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Vanni sostiene che il silenzio non sia una risorsa democratica, ma un bene di lusso, il cui prezzo viene pagato da chi abita lontano dai centri decisionali.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quale tono caratterizza la riflessione finale dell'autore?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ottimista e risoluto."
+        },
+        {
+          "id": "a2",
+          "text": "Cinico e disilluso."
+        },
+        {
+          "id": "a3",
+          "text": "Analitico e distaccato."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il silenzio, dunque, si rivela per ciò che è realmente: non l'assenza di rumore, ma la sua sapiente e spietata delocalizzazione.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Cosa intende l'autore con il termine 'paravento' nel contesto del testo?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un riparo fisico contro il vento."
+        },
+        {
+          "id": "a2",
+          "text": "Uno strumento tecnico utilizzato per misurare il rumore."
+        },
+        {
+          "id": "a3",
+          "text": "Una copertura retorica per nascondere la disparità."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "il linguaggio della pace sociale funge da velo, un paravento retorico che occulta la disparità di trattamento tra i cittadini di serie A e quelli di serie B.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Scrivi un breve saggio argomentativo (200-250 parole) in cui discuti se sia eticamente accettabile sacrificare la qualità della vita di una minoranza per garantire l'efficienza logistica di una maggioranza urbana.",
+      "en": "Scrivi un breve saggio argomentativo (200-250 parole) in cui discuti se sia eticamente accettabile sacrificare la qualità della vita di una minoranza per garantire l'efficienza logistica di una maggioranza urbana."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analizzare il testo per comprendere le sfumature retoriche e le tensioni sottese alla gestione del silenzio nelle metropoli contemporanee.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:58:52.510Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L’architettura del silenzio: la redistribuzione del frastuono | C2 Reading | WeLearn",
+      "en": "L’architettura del silenzio: la redistribuzione del frastuono | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Un'analisi critica sulla gestione del traffico notturno e le implicazioni socio-economiche del rumore urbano.",
+      "en": "Un'analisi critica sulla gestione del traffico notturno e le implicazioni socio-economiche del rumore urbano."
+    },
+    "canonicalPath": "/en/practice/italian/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:58:52.510Z"
+  }
+}

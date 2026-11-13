@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le legs des semences silencieuses",
+      "en": "Le legs des semences silencieuses"
+    },
+    "intro": {
+      "es": "Une exploration des tensions entre la bureaucratie archivistique et la transmission orale au sein d'une banque de semences communautaire.",
+      "en": "Une exploration des tensions entre la bureaucratie archivistique et la transmission orale au sein d'une banque de semences communautaire."
+    },
+    "mission": {
+      "es": "Analyser la confrontation entre la légitimité institutionnelle et le savoir ancestral dans un contexte de gestion patrimoniale.",
+      "en": "Analyser la confrontation entre la légitimité institutionnelle et le savoir ancestral dans un contexte de gestion patrimoniale."
+    },
+    "targetText": "La salle voûtée de la bibliothèque des semences de Val-des-Brumes exhalait une odeur de terre sèche et de papier vieilli. Élias, archiviste mandaté par le conservatoire régional, ajustait ses lunettes en observant les petits sachets de toile qui tapissaient les étagères. Pour lui, chaque variété de haricot ou de courge n'était qu'une unité taxonomique en attente de catalogage. En face de lui, Mère Solange, gardienne du savoir local depuis des décennies, serrait contre elle un carnet aux pages jaunies, seule trace écrite d'une lignée de semences transmise par les anciens de la vallée. Le conflit était latent, une fracture sourde entre la rigueur exigée par le protocole d'acquisition et la fluidité organique de la tradition orale. Élias insistait sur la nécessité de fournir des preuves de propriété, des actes notariés ou des factures historiques attestant de la provenance des lots, une exigence qui, aux yeux de Solange, revenait à dépouiller les graines de leur âme. Elle expliquait que ces semences n'appartenaient à personne, qu'elles étaient le fruit d'un pacte tacite avec le sol, un héritage vivant qui se moquait des tampons officiels.\n\nLa tension monta d'un cran lorsque le conseil d'administration exigea une traçabilité rigoureuse pour valider l'intégration de la collection dans le registre national du patrimoine végétal. Élias, bien que sensible à la détresse de la vieille femme, se retranchait derrière les impératifs de pérennité institutionnelle. « Sans une documentation exhaustive, ces semences sont juridiquement inexistantes », martelait-il, sa voix résonnant contre les murs de pierre. Solange, elle, voyait dans cette exigence une forme de dépossession silencieuse. Elle racontait comment, lors des grandes sécheresses, ces graines avaient été partagées de main en main, sans autre garantie que la confiance mutuelle. Pour elle, exiger des preuves écrites était une insulte à la mémoire collective, une tentative de figer dans le marbre ce qui, par essence, devait demeurer fluide et mouvant. Elle refusait de soumettre les noms des variétés à une classification qui, selon elle, trahissait la réalité du terrain.\n\nLe soir du vernissage de l'exposition, alors que les notables locaux déambulaient entre les vitrines, l'incompatibilité des deux visions devint manifeste. Élias présentait des fiches techniques impeccables, détaillant les taux de germination et les caractéristiques botaniques, tandis que, dans un coin, Solange murmurait à l'oreille des visiteurs les histoires liées à chaque variété : la courge qui avait sauvé le village pendant la famine, le haricot qui poussait mieux sous la lune descendante. Les invités, captivés par les récits de Solange, semblaient ignorer les graphiques d'Élias. Ce dernier, frustré par ce qu'il percevait comme une désinvolture scientifique, tenta de reprendre le contrôle en rappelant l'importance de la sécurité juridique pour protéger le patrimoine contre les brevets industriels. Mais Solange, imperturbable, lui rétorqua que la véritable protection ne résidait pas dans les coffres-forts, mais dans la transmission ininterrompue d'une main à l'autre.\n\nLa confrontation atteignit son paroxysme lorsqu'il fut question de l'étiquetage officiel des lots. Élias souhaitait remplacer les noms vernaculaires, jugés trop imprécis, par des codes alphanumériques standardisés. Pour Solange, c'était le coup de grâce. Elle retira symboliquement une poignée de graines d'un sachet, les laissant couler entre ses doigts comme une cascade de sable doré. « Vous voulez archiver la vie, mais vous ne faites qu'en construire le mausolée », déclara-t-elle avec une gravité qui fit taire l'assemblée. Elle expliqua que si ces semences étaient forcées d'entrer dans ce cadre rigide, elles perdraient leur capacité à s'adapter aux changements climatiques, car leur force résidait justement dans cette imprécision, cette capacité à évoluer selon les besoins des cultivateurs. Élias, pour la première fois, parut ébranlé par l'ampleur de son propre dogmatisme, réalisant que son désir de protéger le passé risquait de condamner l'avenir de ces ressources.\n\nLe dénouement fut une impasse mélancolique. Le conseil d'administration maintint ses exigences, refusant d'accorder le statut de patrimoine officiel à des semences sans preuves documentaires. La collection fut partiellement intégrée, mais les lots les plus précieux, ceux que Solange refusait de « dénaturer », furent retirés de la bibliothèque pour retourner dans les jardins privés de la vallée. La bibliothèque des semences devint ainsi un lieu hybride, à la fois sanctuaire de la science et théâtre d'une perte irréparable. Élias resta seul dans la salle voûtée, entouré de ses fiches techniques, contemplant le vide laissé par les sachets disparus. Il comprit alors que le savoir, lorsqu'il est extrait de son contexte vivant, devient une relique stérile. Il ne restait plus qu'un écho, le souvenir d'une sagesse que les archives ne sauraient jamais capturer, une leçon amère sur la vanité de vouloir posséder ce qui appartient, par nature, au flux du monde.\n\nPourtant, cette scission ne marqua pas la fin du dialogue, mais le début d'une mutation nécessaire au sein du conservatoire. En observant les étagères clairsemées, Élias prit conscience que son obsession pour la standardisation avait paradoxalement créé une faille dans la résilience même du système qu'il prétendait sanctuariser. Il comprit que la science, amputée de la sagesse empirique, s'appauvrissait au point de ne plus pouvoir répondre aux défis agronomiques de demain. En réintégrant les récits de Solange, non plus comme des anecdotes folkloriques, mais comme des données qualitatives essentielles, il amorça une refonte des protocoles. Désormais, chaque fiche technique incluait un volet narratif, reconnaissant que la survie d'une espèce dépend autant de son code génétique que de la mémoire humaine qui la cultive. Cette synthèse fragile entre rigueur analytique et héritage vivant devint alors le nouveau paradigme, prouvant que la pérennité du vivant exige une humble alliance entre la mesure et le mystère.",
+    "wordCount": 919,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "taxonomique",
+        "lemma": "taxonomique",
+        "glosses": {
+          "es": "Related to the classification and naming of organisms.",
+          "en": "Related to the classification and naming of organisms."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pacte tacite",
+        "lemma": "pacte tacite",
+        "glosses": {
+          "es": "An unspoken agreement or understanding.",
+          "en": "An unspoken agreement or understanding."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pérennité",
+        "lemma": "pérennité",
+        "glosses": {
+          "es": "The state of lasting for a very long time or indefinitely.",
+          "en": "The state of lasting for a very long time or indefinitely."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vernissage",
+        "lemma": "vernissage",
+        "glosses": {
+          "es": "The opening event or private viewing of an exhibition.",
+          "en": "The opening event or private viewing of an exhibition."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "vernaculaires",
+        "lemma": "vernaculaires",
+        "glosses": {
+          "es": "Common or native names used by local people.",
+          "en": "Common or native names used by local people."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "mausolée",
+        "lemma": "mausolée",
+        "glosses": {
+          "es": "A building housing a tomb, symbolizing a static or dead state.",
+          "en": "A building housing a tomb, symbolizing a static or dead state."
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.6,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le conflit central de ce récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La tension entre la rigueur archivistique et la tradition orale."
+        },
+        {
+          "id": "a2",
+          "text": "Une lutte de pouvoir entre deux archivistes."
+        },
+        {
+          "id": "a3",
+          "text": "Le désaccord sur le financement du conservatoire régional."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le conflit était latent, une fracture sourde entre la rigueur exigée par le protocole d'acquisition et la fluidité organique de la tradition orale.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi le conseil d'administration exige-t-il une traçabilité rigoureuse ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour vendre les semences à des entreprises."
+        },
+        {
+          "id": "a2",
+          "text": "Pour valider l'intégration au registre national."
+        },
+        {
+          "id": "a3",
+          "text": "Pour remplacer les sachets de toile par du plastique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La tension monta d'un cran lorsque le conseil d'administration exigea une traçabilité rigoureuse pour valider l'intégration de la collection dans le registre national du patrimoine végétal.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère le refus de Solange de se plier aux exigences d'Élias ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle ignore les enjeux climatiques."
+        },
+        {
+          "id": "a2",
+          "text": "Elle veut garder les semences pour elle seule."
+        },
+        {
+          "id": "a3",
+          "text": "Elle privilégie la survie vivante à la classification."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Elle expliqua que si ces semences étaient forcées d'entrer dans ce cadre rigide, elles perdraient leur capacité à s'adapter aux changements climatiques",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif de l'auteur en décrivant le geste de Solange laissant couler les graines ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Illustrer la fragilité du vivant face à la rigidité institutionnelle."
+        },
+        {
+          "id": "a2",
+          "text": "Montrer que Solange est une femme colérique et imprévisible."
+        },
+        {
+          "id": "a3",
+          "text": "Souligner que les graines sont de mauvaise qualité."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "« Vous voulez archiver la vie, mais vous ne faites qu'en construire le mausolée », déclara-t-elle avec une gravité qui fit taire l'assemblée.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de la conclusion du récit ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et triomphant."
+        },
+        {
+          "id": "a2",
+          "text": "Mélancolique et réflexif."
+        },
+        {
+          "id": "a3",
+          "text": "Colérique et vindicatif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le dénouement fut une impasse mélancolique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'vernaculaires' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Des noms officiels et scientifiques."
+        },
+        {
+          "id": "a2",
+          "text": "Des noms inventés pour les besoins de l'archivage."
+        },
+        {
+          "id": "a3",
+          "text": "Des noms locaux utilisés par la population."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Élias souhaitait remplacer les noms vernaculaires, jugés trop imprécis, par des codes alphanumériques standardisés.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un paragraphe argumentatif dans lequel vous expliquez si, selon vous, il est possible de concilier la conservation scientifique du patrimoine végétal avec la préservation des savoirs traditionnels oraux. Justifiez votre réponse en vous appuyant sur les tensions observées dans le récit.",
+      "en": "Rédigez un paragraphe argumentatif dans lequel vous expliquez si, selon vous, il est possible de concilier la conservation scientifique du patrimoine végétal avec la préservation des savoirs traditionnels oraux. Justifiez votre réponse en vous appuyant sur les tensions observées dans le récit."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser la confrontation entre la légitimité institutionnelle et le savoir ancestral dans un contexte de gestion patrimoniale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le legs des semences silencieuses | C2 Reading | WeLearn",
+      "en": "Le legs des semences silencieuses | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une exploration des tensions entre la bureaucratie archivistique et la transmission orale au sein d'une banque de semences communautaire.",
+      "en": "Une exploration des tensions entre la bureaucratie archivistique et la transmission orale au sein d'une banque de semences communautaire."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

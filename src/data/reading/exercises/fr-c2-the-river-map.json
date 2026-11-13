@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-river-map",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La Ligne d'Incertitude : L'Éthique de la Cartographie Fluviale",
+      "en": "La Ligne d'Incertitude : L'Éthique de la Cartographie Fluviale"
+    },
+    "intro": {
+      "es": "Cet article examine les dilemmes moraux et techniques posés par la délimitation cartographique des zones inondables, en se concentrant sur le cas fictif de la rivière Aethelgard.",
+      "en": "Cet article examine les dilemmes moraux et techniques posés par la délimitation cartographique des zones inondables, en se concentrant sur le cas fictif de la rivière Aethelgard."
+    },
+    "mission": {
+      "es": "Analysez les implications philosophiques de la cartographie rigide dans un environnement fluide et déterminez si la précision technique peut réellement servir la justice sociale.",
+      "en": "Analysez les implications philosophiques de la cartographie rigide dans un environnement fluide et déterminez si la précision technique peut réellement servir la justice sociale."
+    },
+    "targetText": "La cartographie, loin d'être une simple transcription topographique du réel, agit comme un acte performatif qui façonne autant qu'il décrit. Lorsque le Service Hydrologique d'Aethelgard, sous la direction de l'ingénieur en chef Marc-Aurèle Vane, a décidé de tracer une ligne de démarcation stricte pour la zone inondable de la rivière éponyme, il ne s'agissait pas seulement d'une mesure de sécurité. Il s'agissait d'un arbitrage moral. La rivière, par nature erratique et indomptable, ne connaît pas de frontières. Pourtant, M. Vane a imposé une limite cartographique, transformant une probabilité hydrologique en une sentence administrative. Ce tracé, censé protéger les citoyens, a immédiatement créé une fracture socio-économique : ceux qui se trouvaient du côté « sûr » de la ligne voyaient la valeur de leurs propriétés grimper, tandis que les autres, relégués dans la zone « à risque », voyaient leurs assurances s'envoler et leurs investissements s'effondrer. Cette ligne, bien que techniquement justifiée par des modèles de crue, est devenue une frontière arbitraire, une cicatrice sur le territoire qui a cristallisé les inégalités préexistantes sous le couvert d'une objectivité scientifique.\n\nLe conflit a éclaté lors de la réunion publique organisée dans la commune de Val-sous-Bois, où les résidents, menés par l'activiste locale Elara Vance, ont confronté M. Vane. Mme Vance a soutenu que la rigidité de la carte ignorait la résilience naturelle des terres et les efforts d'adaptation des habitants. Elle a argué que la cartographie ne devait pas être une sentence, mais un outil dynamique. M. Vane, quant à lui, a défendu la nécessité d'une clarté binaire pour la gestion des risques. Pour lui, l'ambiguïté est le terreau de la catastrophe. Cette confrontation a révélé une tension fondamentale : le besoin humain de certitude face à l'imprévisibilité de la nature. La carte, en voulant domestiquer le risque, a fini par le figer dans une structure immuable qui ne permet plus la nuance. La précision technique, dans ce contexte, est devenue une forme de violence bureaucratique, ignorant la complexité des interactions humaines et environnementales.\n\nL'ironie de cette situation réside dans le fait que la rivière, lors des pluies torrentielles qui ont suivi la publication de la carte, n'a pas respecté la ligne. L'eau a débordé dans des zones jugées « sûres », tandis que certaines parcelles « à risque » sont restées sèches. Cet événement, bien que tragique, a invalidé la prétention omnisciente de la carte. Les résidents du secteur « sûr » se sont retrouvés démunis, sans aucune protection, tandis que ceux du secteur « à risque » avaient, par précaution, renforcé leurs infrastructures, rendant la zone paradoxalement plus sécurisée. La carte, loin de servir de guide, est devenue un instrument d'aveuglement. Elle a créé un faux sentiment de sécurité d'un côté et une stigmatisation injustifiée de l'autre, prouvant que la volonté humaine de catégoriser le monde naturel finit souvent par se retourner contre elle-même.\n\nLe dilemme éthique est profond. Si nous acceptons que la carte est imparfaite, devons-nous renoncer à toute délimitation ? Une approche probabiliste, plus nuancée, pourrait offrir une alternative, mais elle se heurte à la complexité administrative. Les institutions, pour fonctionner, exigent des catégories claires. La bureaucratie ne peut gérer l'incertitude. Ainsi, la carte devient un compromis nécessaire, une fiction utile qui, malgré ses failles, permet une forme d'organisation sociale. Cependant, cette organisation se fait au prix d'une perte de réalité. En simplifiant le monde pour le gérer, nous perdons la capacité de comprendre ses dynamiques réelles. La rivière Aethelgard continue de couler, indifférente à nos lignes, rappelant à ceux qui veulent bien l'entendre que la nature ne se plie pas à nos exigences de classification.\n\nEn conclusion, l'affaire de la rivière Aethelgard illustre l'inévitable décalage entre la rigueur cartographique et la fluidité du vivant. La tentation de tracer une ligne pour séparer le danger de la sécurité est humaine, mais elle est intrinsèquement trompeuse. La véritable sagesse ne résiderait-elle pas dans l'acceptation de l'incertitude plutôt que dans sa négation par le trait de plume ? La carte devrait être un dialogue, une suggestion, non un verdict. Tant que nous continuerons à traiter nos représentations du monde comme des vérités absolues, nous resterons vulnérables, non seulement aux caprices de la nature, mais aussi aux erreurs de notre propre jugement. La ligne tracée par M. Vane n'a pas seulement délimité une zone inondable ; elle a délimité les frontières de notre propre compréhension, nous laissant, paradoxalement, plus exposés qu'auparavant.\n\nToutefois, cette remise en question soulève un péril administratif majeur : le vide décisionnel. Si l'on abandonne le dogme de la ligne pour embrasser une fluidité cartographique, le système assurantiel et juridique d'Aethelgard s'effondre, faute de critères opposables. Sans ce cadre rigide, la responsabilité devient diffuse, transformant chaque décision publique en un champ de bataille judiciaire où l'absence de norme claire favoriserait les acteurs les plus influents au détriment des citoyens vulnérables. La bureaucratie, malgré ses travers, constitue un rempart contre l'arbitraire pur ; en cherchant à supprimer la fiction utile de la carte, nous risquons de substituer une injustice technique par une injustice politique encore plus opaque. L'enjeu n'est donc pas de supprimer la représentation, mais de réinventer sa portée. Il s'agirait de concevoir des cartes évolutives, capables d'intégrer des gradients de risque plutôt que des frontières binaires, exigeant une refonte totale de notre gouvernance. Ce passage d'une vision statique à une gestion dynamique nécessite une maturité démocratique rare, où la population accepterait de cohabiter avec une incertitude institutionnalisée. En fin de compte, la survie de nos sociétés modernes dépendra de notre capacité à intégrer le doute au cœur même de nos outils de contrôle.",
+    "wordCount": 927,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "erratique",
+        "lemma": "erratique",
+        "glosses": {
+          "es": "unpredictable or irregular",
+          "en": "unpredictable or irregular"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "arbitrage",
+        "lemma": "arbitrage",
+        "glosses": {
+          "es": "decision-making or mediation",
+          "en": "decision-making or mediation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristallisé",
+        "lemma": "cristallisé",
+        "glosses": {
+          "es": "solidified or made concrete",
+          "en": "solidified or made concrete"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "résilience",
+        "lemma": "résilience",
+        "glosses": {
+          "es": "ability to recover or adapt",
+          "en": "ability to recover or adapt"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "omnisciente",
+        "lemma": "omnisciente",
+        "glosses": {
+          "es": "all-knowing",
+          "en": "all-knowing"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "intrinsèquement",
+        "lemma": "intrinsèquement",
+        "glosses": {
+          "es": "fundamentally or by nature",
+          "en": "fundamentally or by nature"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19.3,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le thème central de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit entre la cartographie rigide et la réalité fluide."
+        },
+        {
+          "id": "a2",
+          "text": "La gestion technique des inondations."
+        },
+        {
+          "id": "a3",
+          "text": "L'histoire de la ville d'Aethelgard et ses problèmes de logement."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "l'inévitable décalage entre la rigueur cartographique et la fluidité du vivant.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi la valeur des propriétés a-t-elle fluctué après la publication de la carte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "À cause d'une taxe sur les zones inondables."
+        },
+        {
+          "id": "a2",
+          "text": "À cause de la classification administrative des terrains."
+        },
+        {
+          "id": "a3",
+          "text": "Parce que les assurances ont baissé leurs tarifs pour tout le monde."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "ceux qui se trouvaient du côté « sûr » de la ligne voyaient la valeur de leurs propriétés grimper, tandis que les autres, relégués dans la zone « à risque », voyaient leurs assurances s'envoler et leurs investissements s'effondrer.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère l'auteur sur la nature de la bureaucratie ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle est capable de gérer l'incertitude."
+        },
+        {
+          "id": "a2",
+          "text": "Elle est le seul moyen de protéger les citoyens."
+        },
+        {
+          "id": "a3",
+          "text": "Elle est incapable de gérer l'incertitude."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La bureaucratie ne peut gérer l'incertitude.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif principal de l'auteur en mentionnant l'inondation réelle ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Prouver que la carte a échoué à prédire la réalité."
+        },
+        {
+          "id": "a2",
+          "text": "Démontrer que les modèles scientifiques sont inutiles."
+        },
+        {
+          "id": "a3",
+          "text": "Souligner l'importance de construire des digues plus hautes."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cet événement, bien que tragique, a invalidé la prétention omnisciente de la carte.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton général de l'article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et technocratique."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et philosophique."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et purement informatif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La précision technique, dans ce contexte, est devenue une forme de violence bureaucratique, ignorant la complexité des interactions humaines et environnementales.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'erratique' dans le texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Statique et prévisible."
+        },
+        {
+          "id": "a2",
+          "text": "Violent et destructeur."
+        },
+        {
+          "id": "a3",
+          "text": "Irrégulier et imprévisible."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La rivière, par nature erratique et indomptable, ne connaît pas de frontières.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse de 200 mots analysant si la technologie moderne peut réellement résoudre le conflit entre la nécessité de classer le monde et sa complexité inhérente.",
+      "en": "Rédigez une réponse de 200 mots analysant si la technologie moderne peut réellement résoudre le conflit entre la nécessité de classer le monde et sa complexité inhérente."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez les implications philosophiques de la cartographie rigide dans un environnement fluide et déterminez si la précision technique peut réellement servir la justice sociale.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La Ligne d'Incertitude : L'Éthique de la Cartographie Fluviale | C2 Reading | WeLearn",
+      "en": "La Ligne d'Incertitude : L'Éthique de la Cartographie Fluviale | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Cet article examine les dilemmes moraux et techniques posés par la délimitation cartographique des zones inondables, en se concentrant sur le cas fictif de la rivière Aethelgard.",
+      "en": "Cet article examine les dilemmes moraux et techniques posés par la délimitation cartographique des zones inondables, en se concentrant sur le cas fictif de la rivière Aethelgard."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

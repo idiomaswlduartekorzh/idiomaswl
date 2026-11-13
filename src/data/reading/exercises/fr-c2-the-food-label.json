@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-food-label",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-food-label",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "food waste labels",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "L'illusion de la diligence : une critique de la sémantique du gaspillage",
+      "en": "L'illusion de la diligence : une critique de la sémantique du gaspillage"
+    },
+    "intro": {
+      "es": "Analyse critique de la rhétorique employée sur les emballages alimentaires et son impact sur la responsabilité éthique du consommateur.",
+      "en": "Analyse critique de la rhétorique employée sur les emballages alimentaires et son impact sur la responsabilité éthique du consommateur."
+    },
+    "mission": {
+      "es": "Analysez les nuances linguistiques et les implications éthiques du transfert de responsabilité dans le discours marketing alimentaire.",
+      "en": "Analysez les nuances linguistiques et les implications éthiques du transfert de responsabilité dans le discours marketing alimentaire."
+    },
+    "targetText": "Lors du vernissage de l'exposition « Obsolescence du quotidien » organisée par la galerie éphémère d'Élise Vaneau, le débat ne portait pas sur l'esthétique des installations, mais sur une étiquette apposée sur les canapés servis aux invités. Le traiteur, un artisan renommé nommé Marc-André, avait substitué les mentions habituelles par une formule sibylline : « Consommez selon votre propre discernement après cette date ». Cette petite étiquette, loin d'être une simple indication de fraîcheur, cristallise une mutation sémantique préoccupante dans notre rapport à la consommation. Ce que Marc-André présentait comme une marque de confiance envers le client n'était, à y regarder de plus près, qu'une manœuvre habile pour se dédouaner de toute responsabilité juridique en cas d'incident sanitaire. Il ne s'agissait plus d'informer, mais de transférer le fardeau de la décision sur celui qui, par définition, manque des outils analytiques nécessaires pour évaluer la salubrité réelle d'un produit périssable.\n\nLa distinction entre une information objective et une injonction à la responsabilité individuelle est au cœur de cette dérive. Historiquement, l'étiquetage servait de pont entre le savoir technique du producteur et l'ignorance légitime du consommateur. En remplaçant la date de péremption par une incitation au discernement, le producteur ne cherche pas à éduquer, mais à créer une zone grise où la faute devient indéterminée. Lors de la soirée, j'ai observé un convive hésiter devant une verrine, scrutant l'étiquette avec une perplexité manifeste. Cette hésitation, loin d'être anodine, est le symptôme d'une société où la clarté est sacrifiée sur l'autel de la protection juridique. Le discours de Marc-André, lors de son allocution, insistait sur la lutte contre le gaspillage alimentaire, prétendant que sa formule permettait de sauver des produits encore comestibles. C'est une rhétorique séduisante, presque humaniste, qui occulte pourtant le déséquilibre de pouvoir inhérent à cette transaction.\n\nCertes, on pourrait concéder que l'excès de zèle normatif a conduit à un gaspillage massif de produits parfaitement sains. La rigidité des dates de péremption est une réalité économique que nul ne saurait nier avec sérieux. Toutefois, le remède proposé par Marc-André ne résout pas le problème structurel ; il déplace simplement le risque. En invitant le consommateur à devenir son propre expert, on ignore la réalité biologique de la dégradation alimentaire, qui ne se laisse pas toujours appréhender par le simple « discernement » humain. Cette stratégie est une forme d'abdication intellectuelle de la part du professionnel. Le producteur, qui possède les connaissances sur les processus de conservation, se retire derrière une neutralité feinte, laissant le consommateur seul face à une incertitude qu'il n'a pas les moyens de quantifier.\n\nLa conséquence de cette pratique est une érosion de la confiance contractuelle. Si l'étiquette devient un espace de spéculation plutôt que de certification, alors le contrat tacite entre celui qui vend et celui qui achète est rompu. Durant la soirée, une altercation a éclaté entre Élise Vaneau et Marc-André. La galeriste, soucieuse de sa responsabilité en tant qu'organisatrice, exigeait des garanties claires, tandis que le traiteur maintenait que sa formule était une avancée progressiste. Cette tension illustre parfaitement le conflit entre l'impératif de sécurité et la volonté de se soustraire aux obligations légales. L'étiquette, au lieu d'être un outil d'information, devient un bouclier rhétorique, un écran de fumée derrière lequel le fournisseur se réfugie pour échapper aux conséquences de ses propres choix de production.\n\nEn fin de compte, cette expérience montre que la transparence est un concept souvent galvaudé. Derrière les discours sur la durabilité et la lutte contre le gaspillage se cachent des logiques de transfert de responsabilité qui méritent une vigilance accrue. L'étiquette de Marc-André n'était pas une invitation à la liberté, mais une démission de sa mission première : garantir la sécurité. La soirée s'est terminée dans une atmosphère glaciale, les invités ayant largement délaissé le buffet. Ce rejet collectif est sans doute la réponse la plus éloquente à cette tentative de manipulation sémantique. Le consommateur, bien qu'il ne puisse pas toujours analyser la salubrité d'un aliment, possède un instinct de préservation qui, face à l'ambiguïté, préfère le retrait à l'acceptation d'un risque mal défini. La leçon est claire : le discernement ne saurait remplacer la responsabilité du professionnel.\n\nToutefois, il convient d'envisager une perspective plus nuancée : cette déresponsabilisation apparente pourrait paradoxalement engendrer une nouvelle forme d'autonomie citoyenne, bien que celle-ci soit semée d'embûches. En forçant l'individu à sortir de sa passivité habituelle, cette pratique, aussi critiquable soit-elle sur le plan juridique, impose une réappropriation du rapport à la matière. Si le consommateur est désormais contraint de solliciter ses sens — l'odorat, la vue, le toucher — pour évaluer l'intégrité d'un aliment, il renoue avec des savoirs empiriques longtemps atrophiés par la standardisation industrielle. Cette nécessité de juger par soi-même, bien qu'imposée sous couvert de protection légale, pourrait constituer le terreau d'une méfiance salutaire, transformant le client docile en un acteur vigilant, capable de rejeter non seulement le produit douteux, mais aussi les structures qui tentent de lui imposer une telle charge cognitive. Ainsi, là où Marc-André voyait une simple astuce de gestion des risques, nous pourrions déceler le catalyseur d'une émancipation forcée. Certes, le risque sanitaire demeure, mais le refus collectif observé lors de cette soirée suggère que la société n'est peut-être pas encore prête à troquer sa sécurité contre une liberté de jugement aussi précaire. En fin de compte, l'échec de cette expérience démontre que le progrès ne saurait se réduire à un simple transfert de responsabilités, et que la confiance, pilier de tout échange, exige une clarté que nulle rhétorique, aussi sophistiquée soit-elle, ne saurait durablement remplacer.",
+    "wordCount": 920,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "sibylline",
+        "lemma": "sibylline",
+        "glosses": {
+          "es": "mysterious and difficult to understand",
+          "en": "mysterious and difficult to understand"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "dédouaner",
+        "lemma": "dédouaner",
+        "glosses": {
+          "es": "to absolve or clear of responsibility",
+          "en": "to absolve or clear of responsibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "salubrité",
+        "lemma": "salubrité",
+        "glosses": {
+          "es": "the state of being healthy or wholesome",
+          "en": "the state of being healthy or wholesome"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "galvaudé",
+        "lemma": "galvaudé",
+        "glosses": {
+          "es": "overused to the point of losing value",
+          "en": "overused to the point of losing value"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "abdication",
+        "lemma": "abdication",
+        "glosses": {
+          "es": "the act of renouncing a duty or responsibility",
+          "en": "the act of renouncing a duty or responsibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tacite",
+        "lemma": "tacite",
+        "glosses": {
+          "es": "implied without being stated explicitly",
+          "en": "implied without being stated explicitly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 24.2,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet principal de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La critique d'une stratégie d'étiquetage."
+        },
+        {
+          "id": "a2",
+          "text": "La gestion des déchets alimentaires."
+        },
+        {
+          "id": "a3",
+          "text": "Le conflit entre une galeriste et un traiteur."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette petite étiquette, loin d'être une simple indication de fraîcheur, cristallise une mutation sémantique préoccupante dans notre rapport à la consommation.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Marc-André utilise-t-il cette nouvelle étiquette ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour augmenter ses prix."
+        },
+        {
+          "id": "a2",
+          "text": "Pour réduire le gaspillage."
+        },
+        {
+          "id": "a3",
+          "text": "Pour tester un nouveau design."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Le discours de Marc-André, lors de son allocution, insistait sur la lutte contre le gaspillage alimentaire, prétendant que sa formule permettait de sauver des produits encore comestibles.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Quelle est la position de l'auteur concernant le 'discernement' du consommateur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il le juge suffisant."
+        },
+        {
+          "id": "a2",
+          "text": "Il le trouve dangereux."
+        },
+        {
+          "id": "a3",
+          "text": "Il le considère inadapté."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "En invitant le consommateur à devenir son propre expert, on ignore la réalité biologique de la dégradation alimentaire, qui ne se laisse pas toujours appréhender par le simple « discernement » humain.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de l'auteur en décrivant l'altercation entre la galeriste et le traiteur ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Illustrer le conflit de responsabilité."
+        },
+        {
+          "id": "a2",
+          "text": "Souligner l'échec de l'événement."
+        },
+        {
+          "id": "a3",
+          "text": "Démontrer l'incompétence du traiteur."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette tension illustre parfaitement le conflit entre l'impératif de sécurité et la volonté de se soustraire aux obligations légales.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de l'article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Neutre et informatif."
+        },
+        {
+          "id": "a2",
+          "text": "Analytique et critique."
+        },
+        {
+          "id": "a3",
+          "text": "Polémique et agressif."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "La distinction entre une information objective et une injonction à la responsabilité individuelle est au cœur de cette dérive.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le mot 'galvaudé' dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Rare et précieux."
+        },
+        {
+          "id": "a2",
+          "text": "Clair et explicite."
+        },
+        {
+          "id": "a3",
+          "text": "Dénaturé ou usé."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "En fin de compte, cette expérience montre que la transparence est un concept souvent galvaudé.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez une réponse argumentée de 300 mots dans laquelle vous défendez ou critiquez l'idée que le consommateur devrait assumer une plus grande part de responsabilité dans l'évaluation de la fraîcheur des produits alimentaires, en vous appuyant sur les arguments soulevés dans le texte.",
+      "en": "Rédigez une réponse argumentée de 300 mots dans laquelle vous défendez ou critiquez l'idée que le consommateur devrait assumer une plus grande part de responsabilité dans l'évaluation de la fraîcheur des produits alimentaires, en vous appuyant sur les arguments soulevés dans le texte."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analysez les nuances linguistiques et les implications éthiques du transfert de responsabilité dans le discours marketing alimentaire.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "L'illusion de la diligence : une critique de la sémantique du gaspillage | C2 Reading | WeLearn",
+      "en": "L'illusion de la diligence : une critique de la sémantique du gaspillage | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Analyse critique de la rhétorique employée sur les emballages alimentaires et son impact sur la responsabilité éthique du consommateur.",
+      "en": "Analyse critique de la rhétorique employée sur les emballages alimentaires et son impact sur la responsabilité éthique du consommateur."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-food-label",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

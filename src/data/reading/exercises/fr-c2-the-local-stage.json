@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-local-stage",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-local-stage",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "community theatre",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Le dilemme de la scène : entre fréquentation et vocation",
+      "en": "Le dilemme de la scène : entre fréquentation et vocation"
+    },
+    "intro": {
+      "es": "Une analyse critique sur les tensions contemporaines au sein d'une compagnie théâtrale régionale confrontée aux pressions de la rentabilité culturelle.",
+      "en": "Une analyse critique sur les tensions contemporaines au sein d'une compagnie théâtrale régionale confrontée aux pressions de la rentabilité culturelle."
+    },
+    "mission": {
+      "es": "Analyser les implications éthiques et artistiques de la quantification de l'audience dans le théâtre communautaire.",
+      "en": "Analyser les implications éthiques et artistiques de la quantification de l'audience dans le théâtre communautaire."
+    },
+    "targetText": "Le Théâtre des Embruns, institution ancrée depuis trois décennies dans la cité portuaire de Val-d'Ocre, traverse une crise identitaire qui dépasse le simple cadre de ses comptes annuels. Sous la direction artistique d'Élise Vaugrenard, la troupe a toujours privilégié une dramaturgie exigeante, explorant les méandres de la condition humaine à travers des textes contemporains peu accessibles. Or, le conseil d'administration, désormais piloté par un cabinet de consultants en gestion culturelle, exige une mutation radicale : le succès ne sera plus mesuré par la profondeur de l'impact émotionnel sur le spectateur, mais exclusivement par la courbe ascendante de la fréquentation. Cette injonction, que Vaugrenard qualifie de « comptabilité de l'âme », soulève une question fondamentale : qui profite réellement d'un art dont la valeur est réduite à son attractivité statistique ?\n\nLa situation s'est cristallisée lors de la production de « L'Écho des marées », une pièce expérimentale traitant de l'érosion des liens sociaux. Alors que la première représentation, devant une salle à moitié pleine, a suscité des débats passionnés et une réflexion durable chez les spectateurs présents, la direction a immédiatement décrété un échec. Le directeur financier, Marc-André Lefebvre, a argué que chaque siège vide représentait une perte d'opportunité, non seulement financière, mais aussi symbolique. Pour lui, une salle clairsemée est un aveu d'impuissance culturelle. Il a donc imposé une refonte complète de la programmation pour la saison suivante, privilégiant des vaudevilles éprouvés et des têtes d'affiche médiatiques, au détriment des auteurs locaux que le théâtre s'était pourtant engagé à soutenir.\n\nCe basculement vers une gestion axée sur le volume a provoqué une fracture irréparable au sein de l'équipe technique et artistique. Les comédiens, habitués à une recherche de vérité scénique, se sentent désormais réduits à de simples agents de remplissage. La tension a atteint son paroxysme lors d'une réunion houleuse où Vaugrenard a tenté de démontrer que la valeur d'une œuvre réside dans sa capacité à transformer le spectateur, et non dans le nombre de billets vendus. Elle a rappelé que l'art, par essence, doit parfois déranger, voire rebuter, pour remplir sa fonction sociale. En réponse, Lefebvre a soutenu que sans une base d'audience massive, le théâtre perd sa légitimité publique, devenant un club privé pour initiés, ce qui justifierait, selon lui, la suppression des subventions municipales.\n\nLa conséquence de cette politique a été immédiate et paradoxale : si les chiffres de fréquentation ont effectivement grimpé avec l'arrivée des nouvelles pièces commerciales, la substance même du Théâtre des Embruns s'est évaporée. Les spectateurs, attirés par la facilité, sont venus, ont applaudi, puis ont oublié la représentation sitôt sortis du hall. L'engagement communautaire, qui était la pierre angulaire de la mission initiale, a laissé place à une consommation passive. Le théâtre est devenu un produit de divertissement comme un autre, interchangeable et sans âme. Ceux qui cherchaient un espace de dialogue se sont détournés, laissant derrière eux une salle remplie d'inconnus qui ne partagent plus rien d'autre qu'une soirée sans relief, vidée de toute portée politique ou philosophique.\n\nÀ l'aube de la nouvelle saison, Vaugrenard a finalement présenté sa démission, refusant de devenir l'architecte de ce déclin qualitatif. Elle laisse derrière elle une institution prospère financièrement, mais dévastée sur le plan artistique. La question demeure : le théâtre a-t-il gagné en survie ce qu'il a perdu en raison d'être ? Ce dilemme, loin d'être clos, résonne comme un avertissement pour toutes les structures culturelles qui cèdent à la tyrannie du chiffre. En cherchant à plaire à tout le monde, le Théâtre des Embruns a fini par ne plus rien dire à personne, prouvant que la démocratisation culturelle, lorsqu'elle est dénuée de vision, devient le plus sûr moyen de vider la culture de sa substance.\n\nToutefois, cette lecture tragique occulte une dynamique sociologique plus complexe : la démocratisation par le divertissement pourrait constituer, paradoxalement, un tremplin nécessaire vers une exigence accrue. En attirant un public novice, étranger aux codes du théâtre d'avant-garde, le Théâtre des Embruns a créé un flux inédit de citoyens dont les attentes, bien que superficielles aujourd'hui, sont susceptibles d'évoluer. Cette masse hétérogène, loin d'être condamnée à la consommation passive, représente un terreau fertile pour une future médiation culturelle ambitieuse. Si l'on considère le théâtre non comme un sanctuaire figé, mais comme un espace dynamique, cette phase de vulgarisation pourrait être interprétée comme une étape de transition indispensable pour légitimer l'existence même de la structure face aux exigences de rentabilité contemporaines. En préservant sa survie financière, l'institution a maintenu ouverts ses murs, évitant ainsi le silence définitif d'une fermeture pure et simple qui aurait privé la cité de tout lieu de rassemblement. La perte de substance artistique, bien que réelle, n'est peut-être qu'une éclipse temporaire, un sacrifice consenti pour maintenir une infrastructure capable d'accueillir, demain, de nouvelles audaces. Il ne s'agit pas ici de valider la tyrannie du chiffre, mais de reconnaître que sans cette base matérielle solide, toute velléité de création, aussi noble soit-elle, est condamnée à l'invisibilité. La survie du bâtiment permet, à long terme, la possibilité d'une reconquête artistique. En somme, le Théâtre des Embruns n'a pas nécessairement perdu sa raison d'être ; il a simplement déplacé son centre de gravité, offrant aux nouveaux venus une porte d'entrée qui, bien que simpliste, demeure une première étape vers une éducation du regard. La véritable défaite ne résiderait pas dans cette transition commerciale, mais dans l'incapacité future des équipes à transformer ce public de passage en une communauté véritablement engagée, capable d'exiger, à son tour, une dramaturgie plus profonde et plus exigeante.",
+    "wordCount": 915,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "méandres",
+        "lemma": "méandres",
+        "glosses": {
+          "es": "complex or winding paths/intricacies",
+          "en": "complex or winding paths/intricacies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "injonction",
+        "lemma": "injonction",
+        "glosses": {
+          "es": "authoritative command or order",
+          "en": "authoritative command or order"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "cristallisée",
+        "lemma": "cristallisée",
+        "glosses": {
+          "es": "solidified or brought to a point of focus",
+          "en": "solidified or brought to a point of focus"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "paroxysme",
+        "lemma": "paroxysme",
+        "glosses": {
+          "es": "peak or highest point of intensity",
+          "en": "peak or highest point of intensity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "pierre angulaire",
+        "lemma": "pierre angulaire",
+        "glosses": {
+          "es": "cornerstone",
+          "en": "cornerstone"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "tyrannie",
+        "lemma": "tyrannie",
+        "glosses": {
+          "es": "cruel and oppressive government or rule",
+          "en": "cruel and oppressive government or rule"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 26.9,
+      "maxSentenceWords": 43,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est le sujet central du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Le conflit entre gestion et création."
+        },
+        {
+          "id": "a2",
+          "text": "La faillite financière du théâtre."
+        },
+        {
+          "id": "a3",
+          "text": "La nécessité de subventions publiques."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ce basculement vers une gestion axée sur le volume a provoqué une fracture irréparable au sein de l'équipe technique et artistique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Quelle décision a été prise par la direction après la pièce « L'Écho des marées » ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Réduire les prix."
+        },
+        {
+          "id": "a2",
+          "text": "Changer le répertoire."
+        },
+        {
+          "id": "a3",
+          "text": "Licencier les acteurs."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Il a donc imposé une refonte complète de la programmation pour la saison suivante, privilégiant des vaudevilles éprouvés et des têtes d'affiche médiatiques",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Pourquoi la démission de Vaugrenard est-elle significative ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Elle marque l'échec de la vision artistique."
+        },
+        {
+          "id": "a2",
+          "text": "Elle prouve que le théâtre est devenu rentable."
+        },
+        {
+          "id": "a3",
+          "text": "Elle illustre le refus de sacrifier l'art au profit du chiffre."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Vaugrenard a finalement présenté sa démission, refusant de devenir l'architecte de ce déclin qualitatif.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est l'objectif de l'auteur en décrivant le changement de public ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Dénoncer la perte de profondeur artistique."
+        },
+        {
+          "id": "a2",
+          "text": "Promouvoir le théâtre de divertissement."
+        },
+        {
+          "id": "a3",
+          "text": "Expliquer comment attirer plus de monde."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Le théâtre est devenu un produit de divertissement comme un autre, interchangeable et sans âme.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel est le ton dominant de cet article ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et léger."
+        },
+        {
+          "id": "a2",
+          "text": "Critique et mélancolique."
+        },
+        {
+          "id": "a3",
+          "text": "Neutre et journalistique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Elle laisse derrière elle une institution prospère financièrement, mais dévastée sur le plan artistique.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme « paroxysme » dans le contexte du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Un début calme."
+        },
+        {
+          "id": "a2",
+          "text": "Une fin heureuse et apaisée."
+        },
+        {
+          "id": "a3",
+          "text": "Un moment de tension intense."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "La tension a atteint son paroxysme lors d'une réunion houleuse où Vaugrenard a tenté de démontrer que la valeur d'une œuvre réside dans sa capacité à transformer le spectateur",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif (300 mots) dans lequel vous défendez ou critiquez l'idée que les institutions culturelles subventionnées doivent rendre des comptes basés sur des métriques de fréquentation.",
+      "en": "Rédigez un court essai argumentatif (300 mots) dans lequel vous défendez ou critiquez l'idée que les institutions culturelles subventionnées doivent rendre des comptes basés sur des métriques de fréquentation."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Analyser les implications éthiques et artistiques de la quantification de l'audience dans le théâtre communautaire.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Le dilemme de la scène : entre fréquentation et vocation | C2 Reading | WeLearn",
+      "en": "Le dilemme de la scène : entre fréquentation et vocation | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une analyse critique sur les tensions contemporaines au sein d'une compagnie théâtrale régionale confrontée aux pressions de la rentabilité culturelle.",
+      "en": "Une analyse critique sur les tensions contemporaines au sein d'une compagnie théâtrale régionale confrontée aux pressions de la rentabilité culturelle."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-local-stage",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}

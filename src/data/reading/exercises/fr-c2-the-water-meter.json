@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "fr-c2-the-water-meter",
+  "status": "draft",
+  "language": "fr",
+  "variant": "fr-FR",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "french C2"
+  },
+  "slug": "the-water-meter",
+  "series": null,
+  "classification": {
+    "genre": "news-adapted",
+    "topic": "water conservation",
+    "intent": "study",
+    "tags": [
+      "fr",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "La fuite de l'éthique : au-delà du mètre cube",
+      "en": "La fuite de l'éthique : au-delà du mètre cube"
+    },
+    "intro": {
+      "es": "Une analyse critique sur la manière dont une simple réparation domestique révèle les tensions entre la responsabilité individuelle et la gestion systémique de l'eau.",
+      "en": "Une analyse critique sur la manière dont une simple réparation domestique révèle les tensions entre la responsabilité individuelle et la gestion systémique de l'eau."
+    },
+    "mission": {
+      "es": "Lisez ce commentaire éditorial pour identifier les nuances rhétoriques et les dilemmes éthiques soulevés par une situation de crise domestique.",
+      "en": "Lisez ce commentaire éditorial pour identifier les nuances rhétoriques et les dilemmes éthiques soulevés par une situation de crise domestique."
+    },
+    "targetText": "Lorsque Julien Vasseur, propriétaire d'un appartement dans le quartier historique de Val-des-Sources, a découvert une infiltration d'eau insidieuse derrière la cloison de sa cuisine, il n'a pas seulement fait face à un problème de plomberie. Il a été confronté à une métaphysique de la ressource. Le goutte-à-goutte, rythmé comme une horloge implacable, ne signalait pas seulement une défaillance technique, mais une rupture dans le contrat tacite qu'il entretenait avec la gestion de l'eau urbaine. Pendant trois jours, Julien a observé le compteur divisionnaire tourner, une danse frénétique de chiffres rouges qui, loin de n'être qu'une simple mesure de consommation, devenait le miroir de son inertie. La municipalité, par le biais de son gestionnaire de réseau, M. Arnault, prônait la sobriété volontaire, exhortant les citoyens à une vigilance accrue. Pourtant, devant l'ampleur des travaux nécessaires pour accéder à la canalisation encastrée, Julien a hésité. Cette hésitation n'était pas le fruit d'une négligence, mais d'une réflexion sur l'injonction contradictoire de la responsabilité individuelle : fallait-il détruire un pan entier de patrimoine architectural pour stopper une fuite mineure, ou accepter ce gaspillage comme une taxe invisible sur la vétusté des infrastructures ?\n\nLe dilemme de Julien s'est cristallisé lors d'une rencontre fortuite avec sa voisine du dessous, Mme Lefebvre, dont le plafond commençait à accuser le coup de cette passivité. Ici, le problème n'était plus une abstraction environnementale, mais une réalité sociale tangible. La fuite, jusque-là une donnée technique, devenait une nuisance interpersonnelle. Mme Lefebvre ne voyait pas en Julien un citoyen écoresponsable en proie à un doute philosophique, mais un voisin dont l'inaction menaçait la pérennité de son propre foyer. Ce conflit souligne une faille majeure dans les discours actuels sur la conservation : ils reposent sur une atomisation des responsabilités. On demande à l'individu de porter le fardeau de la gestion des ressources, tout en l'insérant dans un maillage collectif où les infrastructures, souvent défaillantes, imposent des contraintes lourdes. La pression exercée sur Julien par Mme Lefebvre a agi comme un catalyseur, transformant son dilemme éthique en une urgence pragmatique, occultant la réflexion sur le sens profond de son acte.\n\nLe recours aux services d'un artisan spécialisé, M. Morel, a apporté une résolution technique, mais a laissé en suspens la question de la responsabilité systémique. M. Morel, habitué aux urgences, a rapidement identifié une corrosion prématurée des joints, un défaut de fabrication lié à une série de lots fournis lors de la rénovation globale de l'immeuble dix ans auparavant. Cette révélation a déplacé le curseur de la culpabilité. Si la fuite était le résultat d'une malfaçon structurelle, la responsabilité de Julien s'estompe, laissant place à une interrogation sur la durabilité des matériaux et la responsabilité du constructeur initial. Pourtant, le coût de la réparation, intégralement supporté par Julien en vertu du règlement de copropriété, a maintenu une forme de punition financière. L'ironie est saisissante : l'individu paie pour réparer une défaillance dont il n'est pas l'auteur, renforçant ainsi l'idée que la conservation est une charge privée plutôt qu'un engagement collectif.\n\nCette situation illustre parfaitement l'aporie de la gestion de l'eau dans nos sociétés contemporaines. D'un côté, nous valorisons la conscience citoyenne, encourageant chacun à surveiller ses usages, à traquer la moindre goutte perdue. De l'autre, nous maintenons des structures de propriété et de maintenance qui découragent l'action collective et isolent les problèmes de fuites dans la sphère privée. Julien a fini par réparer la fuite, non par conviction écologique, mais par nécessité sociale pour apaiser sa voisine. Cette victoire apparente de la conservation de l'eau cache une défaite de la réflexion civique. En traitant le symptôme sans interroger les causes structurelles, nous nous condamnons à une gestion parcellisée, où chaque fuite est une tragédie individuelle plutôt qu'une alerte sur l'obsolescence de nos systèmes de distribution.\n\nEn fin de compte, l'histoire de Julien Vasseur ne se termine pas par une leçon de civisme, mais par une interrogation persistante sur notre rapport à l'infrastructure. La fuite est colmatée, le compteur ne tourne plus, et le calme est revenu dans l'appartement de Mme Lefebvre. Cependant, l'amertume demeure chez Julien. Il a compris que son acte, bien que nécessaire, n'était qu'un emplâtre sur une jambe de bois. La responsabilité individuelle, si chère aux discours politiques, se heurte ici à la réalité d'un système qui privilégie la réparation immédiate sur la maintenance préventive. Le silence qui règne désormais dans sa cuisine n'est pas celui de la sérénité, mais celui d'une résignation face à une gestion de l'eau qui, au lieu de nous unir, nous fragmente en propriétaires isolés, chacun guettant, avec une angoisse grandissante, le prochain goutte-à-goutte qui viendra briser le vernis de notre confort domestique.\n\nCette fragmentation des responsabilités engendre une érosion insidieuse de la confiance envers les institutions, lesquelles semblent se dédouaner de leur rôle de garantes du bien commun. En déléguant la gestion de l'obsolescence aux seuls particuliers, la collectivité s'expose à une précarisation de son propre bâti, où la maintenance devient un luxe aléatoire plutôt qu'une norme de sécurité partagée. L'expérience de Julien révèle ainsi une faille systémique : lorsque le citoyen se voit contraint d'assumer seul le poids des défaillances structurelles, l'engagement écologique perd sa dimension solidaire pour se muer en une simple gestion de crise domestique. À terme, cette déresponsabilisation des gestionnaires de réseaux risque de transformer chaque citoyen en un gardien anxieux de son propre périmètre, incapable d'exiger une vision globale, condamnant ainsi nos infrastructures à une lente et inéluctable dégradation sous le poids d'un individualisme imposé par l'inertie administrative.",
+    "wordCount": 911,
+    "estimatedMinutes": 15,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "insidieuse",
+        "lemma": "insidieuse",
+        "glosses": {
+          "es": "Subtle and harmful",
+          "en": "Subtle and harmful"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "inertie",
+        "lemma": "inertie",
+        "glosses": {
+          "es": "Lack of action or movement",
+          "en": "Lack of action or movement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "atomisation",
+        "lemma": "atomisation",
+        "glosses": {
+          "es": "Breaking into small, isolated units",
+          "en": "Breaking into small, isolated units"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "aporie",
+        "lemma": "aporie",
+        "glosses": {
+          "es": "A logical contradiction or impasse",
+          "en": "A logical contradiction or impasse"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "parcellisée",
+        "lemma": "parcellisée",
+        "glosses": {
+          "es": "Divided into small, disconnected parts",
+          "en": "Divided into small, disconnected parts"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "obsolescence",
+        "lemma": "obsolescence",
+        "glosses": {
+          "es": "The process of becoming outdated",
+          "en": "The process of becoming outdated"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.4,
+      "maxSentenceWords": 53,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-12T23:49:10.188Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Quel est l'enjeu principal du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "La gestion de l'eau."
+        },
+        {
+          "id": "a2",
+          "text": "La réparation domestique."
+        },
+        {
+          "id": "a3",
+          "text": "La crise du logement."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Cette situation illustre parfaitement l'aporie de la gestion de l'eau dans nos sociétés contemporaines.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Pourquoi Julien a-t-il finalement réparé la fuite ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Pour réduire ses factures."
+        },
+        {
+          "id": "a2",
+          "text": "Pour calmer sa voisine."
+        },
+        {
+          "id": "a3",
+          "text": "Par conscience écologique."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Julien a fini par réparer la fuite, non par conviction écologique, mais par nécessité sociale pour apaiser sa voisine.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Que suggère l'auteur sur la responsabilité de Julien ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Il est coupable de négligence."
+        },
+        {
+          "id": "a2",
+          "text": "Il doit assumer seul les coûts."
+        },
+        {
+          "id": "a3",
+          "text": "Il est victime d'un système injuste."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "L'ironie est saisissante : l'individu paie pour réparer une défaillance dont il n'est pas l'auteur",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Quel est le but de l'auteur en mentionnant M. Morel ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Démontrer que la fuite était structurelle."
+        },
+        {
+          "id": "a2",
+          "text": "Souligner le coût élevé des artisans."
+        },
+        {
+          "id": "a3",
+          "text": "Critiquer la lenteur des réparations."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "M. Morel, habitué aux urgences, a rapidement identifié une corrosion prématurée des joints, un défaut de fabrication lié à une série de lots fournis lors de la rénovation globale de l'immeuble",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Quel ton domine la conclusion du texte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Optimiste et résolu."
+        },
+        {
+          "id": "a2",
+          "text": "Résigné et amer."
+        },
+        {
+          "id": "a3",
+          "text": "Indifférent et neutre."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Cependant, l'amertume demeure chez Julien. Il a compris que son acte, bien que nécessaire, n'était qu'un emplâtre sur une jambe de bois.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Que signifie le terme 'aporie' dans le contexte ?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Une solution simple."
+        },
+        {
+          "id": "a2",
+          "text": "Un problème technique."
+        },
+        {
+          "id": "a3",
+          "text": "Une impasse logique."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Cette situation illustre parfaitement l'aporie de la gestion de l'eau dans nos sociétés contemporaines.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Rédigez un court essai argumentatif examinant si la responsabilité de la maintenance des infrastructures devrait incomber exclusivement aux propriétaires privés ou si elle doit être transférée vers des entités collectives, en justifiant votre position par des exemples concrets de votre choix.",
+      "en": "Rédigez un court essai argumentatif examinant si la responsabilité de la maintenance des infrastructures devrait incomber exclusivement aux propriétaires privés ou si elle doit être transférée vers des entités collectives, en justifiant votre position par des exemples concrets de votre choix."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Lisez ce commentaire éditorial pour identifier les nuances rhétoriques et les dilemmes éthiques soulevés par une situation de crise domestique.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-12T23:49:10.188Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "La fuite de l'éthique : au-delà du mètre cube | C2 Reading | WeLearn",
+      "en": "La fuite de l'éthique : au-delà du mètre cube | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Une analyse critique sur la manière dont une simple réparation domestique révèle les tensions entre la responsabilité individuelle et la gestion systémique de l'eau.",
+      "en": "Une analyse critique sur la manière dont une simple réparation domestique révèle les tensions entre la responsabilité individuelle et la gestion systémique de l'eau."
+    },
+    "canonicalPath": "/en/practice/french/c2/reading/the-water-meter",
+    "indexable": false,
+    "lastModified": "2026-11-12T23:49:10.188Z"
+  }
+}
