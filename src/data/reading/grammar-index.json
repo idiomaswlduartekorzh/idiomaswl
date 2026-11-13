@@ -1252,7 +1252,7 @@
         },
         {
           "slug": "prasens-regelmaessig",
-          "title": "Präsens regelmäßig",
+          "title": "Präsens: sistema completo",
           "category": "Verben",
           "file": "src/data/grammar/aleman/a1/prasens-regelmaessig.ts"
         },
