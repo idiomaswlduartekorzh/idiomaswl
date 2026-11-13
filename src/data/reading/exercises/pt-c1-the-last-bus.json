@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "A discrepância entre os dados estatísticos de eficiência e a exclusão real de passageiros causada por cortes de horários."
+          "text": "A eficiência dos números oculta a exclusão de passageiros causada por cortes de horários da linha."
         },
         {
           "id": "a2",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Ela utiliza métricas restritas para validar decisões que, na prática, marginalizam parte dos usuários."
+          "text": "Métricas limitadas validam cortes que excluem parte dos passageiros da linha."
         }
       ],
       "answer": "a3",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Crítico e irônico ao expor a falácia de indicadores baseados apenas em dados de catracas."
+          "text": "Crítico e irônico com os indicadores da empresa."
         },
         {
           "id": "a3",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Uma falha na interpretação da realidade gerada por indicadores que ignoram a demanda suprimida."
+          "text": "Indicadores que ocultam a demanda excluída."
         }
       ],
       "answer": "a3",

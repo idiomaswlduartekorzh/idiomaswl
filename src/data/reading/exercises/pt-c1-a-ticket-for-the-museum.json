@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "A extinção do valor do ingresso é insuficiente se as barreiras geográficas e logísticas não forem eliminadas."
+          "text": "Entrada grátis não remove barreiras de acesso."
         },
         {
           "id": "a2",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Uma aparência superficial que encobre problemas estruturais reais sob uma fachada positiva."
+          "text": "A fachada que oculta barreiras reais."
         }
       ],
       "answer": "a3",

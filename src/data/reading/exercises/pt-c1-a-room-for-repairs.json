@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "O projeto explora o trabalho de técnicos especializados enquanto romantiza o voluntariado leigo."
+          "text": "A oficina explora técnicos e idealiza voluntários."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Os novatos cuidavam da limpeza e fotografia, enquanto os veteranos faziam o trabalho técnico pesado."
+          "text": "Novatos limpavam e fotografavam; veteranos assumiam os reparos mais técnicos."
         },
         {
           "id": "a3",
@@ -236,7 +236,7 @@
         },
         {
           "id": "a3",
-          "text": "Que a coordenação confia cegamente em uma retórica inclusiva que falha na hora de resolver crises técnicas complexas."
+          "text": "A retórica inclusiva da gestão falha diante de reparos complexos."
         }
       ],
       "answer": "a3",

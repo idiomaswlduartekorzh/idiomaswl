@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "A contradição entre o discurso inclusivo de um projeto de horta escolar e a realidade excludente de sua exigência de tempo livre."
+          "text": "A horta inclusiva exclui famílias sem tempo livre."
         },
         {
           "id": "a2",
@@ -191,11 +191,11 @@
       "options": [
         {
           "id": "a1",
-          "text": "O corte verba destinado à compra de ferramentas e sementes para a manutenção dos canteiros elevados."
+          "text": "O corte da verba destinada à compra de ferramentas e sementes para a manutenção dos canteiros elevados."
         },
         {
           "id": "a2",
-          "text": "A decisão do conselho de aplicar uma taxa opcional e impor advertências veladas aos alunos cujos responsáveis faltavam aos mutirões."
+          "text": "Taxas e advertências a famílias ausentes dos mutirões."
         },
         {
           "id": "a3",
@@ -306,7 +306,7 @@
         },
         {
           "id": "a2",
-          "text": "Crítico e irônico frente à defensividade institucional."
+          "text": "Crítico e irônico."
         },
         {
           "id": "a3",

@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "A ineficácia das médias estatísticas oficiais em edifícios com medição compartilhada."
+          "text": "Média oculta consumo coletivo."
         },
         {
           "id": "a2",
@@ -195,7 +195,7 @@
         },
         {
           "id": "a2",
-          "text": "Transferiu a responsabilidade financeira e técnica aos prédios."
+          "text": "Atribuiu os custos aos prédios."
         },
         {
           "id": "a3",
@@ -265,7 +265,7 @@
       "options": [
         {
           "id": "a1",
-          "text": "Denunciar que a média divulgada mascarava o desperdício real em prédios da região."
+          "text": "Expor consumo oculto nos prédios."
         },
         {
           "id": "a2",
@@ -347,7 +347,7 @@
         },
         {
           "id": "a3",
-          "text": "Um artifício para ocultar a realidade."
+          "text": "Um disfarce da realidade."
         }
       ],
       "answer": "a3",
