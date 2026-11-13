@@ -9,6 +9,7 @@ import {
   Calendar, Download,
   KeyRound,
   ClipboardCheck,
+  Presentation,
 } from 'lucide-react'
 import type React from 'react'
 import { signOut } from '@/lib/actions/signOut'
@@ -132,6 +133,7 @@ const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; 
   { Icon: DollarSign,      tab: null, href: '/dashboard/admin/pagos', label: 'Pagos y finanzas' },
   { Icon: Globe,           tab: null, href: '/dashboard/admin/contactos', label: 'Origen de contactos' },
   { Icon: BookOpen,        tab: null, href: '/dashboard/admin/live/create', label: 'Live Quiz' },
+  { Icon: Presentation,    tab: null, href: '/dashboard/admin/tablero', label: 'Tablero de clase' },
 ]
 
 export default function JoseDashboard({ data, viewer }: { data: DashboardData; viewer: AdminViewer }) {
