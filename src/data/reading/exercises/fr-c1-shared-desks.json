@@ -154,15 +154,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Transférer les coûts d'aménagement et de fonctionnement du bureau à domicile sur les salariés tout en invoquant la flexibilité."
+          "text": "Transférer la charge du bureau à domicile."
         },
         {
           "id": "a2",
-          "text": "Augmenter le temps de présence obligatoire dans les locaux de l'entreprise."
+          "text": "Réorganiser les jours de présence pour renforcer la coopération entre équipes."
         },
         {
           "id": "a3",
-          "text": "Anoncer la suppression définitive du télétravail pour l'ensemble des équipes."
+          "text": "Réduire les dépenses communes tout en remboursant intégralement les salariés."
         }
       ],
       "answer": "a1",
@@ -191,15 +191,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Par la baisse générale des tarifs de l'électricité constatée sur le marché."
+          "text": "Car l'énergie coûte moins cher."
         },
         {
           "id": "a2",
-          "text": "Par la volonté d'éviter un contrôle jugé intrusif et de privilégier la simplification administrative."
+          "text": "Pour éviter un contrôle intrusif et alléger la gestion."
         },
         {
           "id": "a3",
-          "text": "Par l'impossibilité légale de rembourser des factures domestiques."
+          "text": "Pour respecter une interdiction légale de rembourser les frais domestiques."
         }
       ],
       "answer": "a2",
@@ -228,15 +228,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Une augmentation sensible de leur pouvoir d'achat grâce aux nouvelles primes."
+          "text": "Une hausse automatique et garantie de leur pouvoir d'achat net."
         },
         {
           "id": "a2",
-          "text": "Une compensation intégrale et illimitée de tous leurs investissements futurs."
+          "text": "Un remboursement illimité de toutes les dépenses engagées au quotidien."
         },
         {
           "id": "a3",
-          "text": "Un risque financier accru en raison de forfaits fixes face à l'inflation des coûts."
+          "text": "Un transfert potentiel des charges et des risques d'inflation vers leur sphère privée."
         }
       ],
       "answer": "a3",
@@ -265,15 +265,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Pour légitimer les économies budgétaires réalisées sur l'immobilier et l'équipement."
+          "text": "Légitimer les économies."
         },
         {
           "id": "a2",
-          "text": "Pour annoncer le lancement prochain d'un nouveau produit technologique."
+          "text": "Annoncer un investissement prioritaire dans l'équipement des bureaux."
         },
         {
           "id": "a3",
-          "text": "Pour justifier une baisse générale imminente des salaires de base."
+          "text": "Préparer une nouvelle grille salariale pour répondre à la concurrence."
         }
       ],
       "answer": "a1",
@@ -302,15 +302,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Un ton ouvertement autoritaire et menaçant envers les récalcitrants."
+          "text": "Un registre purement neutre et technique."
         },
         {
           "id": "a2",
-          "text": "Un ton faussement bienveillant qui masque des décisions unilatérales rigides."
+          "text": "Un discours managérial habilement feutré."
         },
         {
           "id": "a3",
-          "text": "Un ton neutre et purement informatif sans parti pris managérial."
+          "text": "Une posture agressive et péremptoire."
         }
       ],
       "answer": "a2",
@@ -339,15 +339,15 @@
       "options": [
         {
           "id": "a1",
-          "text": "Un retard ou un report des échéances administratives."
+          "text": "Un ajournement de la date d'application des nouvelles consignes administratives."
         },
         {
           "id": "a2",
-          "text": "Une augmentation de la durée journalière de travail."
+          "text": "Une rallonge financière accordée exceptionnellement pour l'achat de matériel."
         },
         {
           "id": "a3",
-          "text": "Une extension ou une continuité de la structure organisationnelle au sein du foyer."
+          "text": "Une extension naturelle et une continuité des valeurs de l'entreprise au sein du foyer."
         }
       ],
       "answer": "a3",

@@ -6,7 +6,7 @@ Punto de control del 12 de noviembre: **480/480 borradores** en la rama de traba
 
 Pendiente de calidad: la longitud de las respuestas presenta sesgo en 16 combinaciones. `npm run report:reading-advanced-review` muestra las preguntas con las mayores pistas de longitud para una edición semántica; **no modifica opciones**. `npm run check:reading-advanced-scale` sigue fallando hasta que el catálogo cumpla los umbrales. Hay que repetir el recorte de fuentes PDF cuando se añadan más caracteres japoneses o coreanos.
 
-La auditoría del conjunto completo está en [`reading-advanced-quality-audit-2026-11-12.md`](reading-advanced-quality-audit-2026-11-12.md). Además del sesgo agregado, detectó 20 lecturas donde la respuesta correcta es la única opción más larga en las seis preguntas; el control de escala ahora bloquea también ese caso.
+La auditoría del conjunto completo está en [`reading-advanced-quality-audit-2026-11-12.md`](reading-advanced-quality-audit-2026-11-12.md). Además del sesgo agregado, detectó inicialmente 20 lecturas donde la respuesta correcta era la única opción más larga en las seis preguntas; tras una corrección editorial quedan 19. El control de escala bloquea ese caso.
 
 Los 480 borradores tienen fechas de revisión y evaluación `null`, y las comprobaciones cultural y de copyright en `false` hasta que se realicen. Una lectura asistida de una muestra por combinación detectó tres fallos confirmados y corregidos; sus resultados no constituyen aprobación humana.
 
