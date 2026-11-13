@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-seeds-on-loan",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "seeds-on-loan",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "community seed library",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Архив утраченных всходов",
+      "en": "Архив утраченных всходов"
+    },
+    "intro": {
+      "es": "Рассказ о столкновении бюрократической системы архивации с живой традицией передачи семян в рамках локального сообщества.",
+      "en": "Рассказ о столкновении бюрократической системы архивации с живой традицией передачи семян в рамках локального сообщества."
+    },
+    "mission": {
+      "es": "Проанализировать конфликт между институциональными требованиями к документации и нематериальным культурным наследием.",
+      "en": "Проанализировать конфликт между институциональными требованиями к документации и нематериальным культурным наследием."
+    },
+    "targetText": "Вечер в библиотеке семян «Зеленое наследие» всегда начинался с приглушенного шелеста бумажных пакетиков. Марта, хранительница архива, уже десять лет вела этот реестр, где каждая запись была скреплена подписью и датой сбора. В этот вторник в дверях появился старик Игнат, принесший горсть семян редкого сорта томатов, которые его семья выращивала в долине реки на протяжении трех поколений. Он положил на стол потертый холщовый мешочек, ожидая привычного обмена, но Марта, сверившись с новыми правилами фонда, лишь покачала головой. Согласно протоколу, принятому советом директоров, любой образец, претендующий на статус «наследия», требовал нотариально заверенной истории происхождения и документального подтверждения права собственности на участок земли. Игнат, чьи предки передавали эти семена из рук в руки, минуя любые государственные акты, замер в недоумении. Для него семена были не товаром, а живой нитью, связывающей его с прошлым, тогда как для Марты они превратились в единицы учета, требующие верификации в рамках правового поля.\n\nКонфликт обострился, когда Марта объяснила, что без надлежащей документации семена Игната не могут быть внесены в основной каталог и, следовательно, не подлежат распространению среди членов сообщества. Она искренне верила, что защита биоразнообразия невозможна без строгого контроля, ведь в эпоху гибридов и корпоративных патентов только юридическая чистота могла гарантировать подлинность сорта. Игнат же видел в этом предательство самой сути дела: превращение свободного дара природы в объект права собственности. Он настаивал, что сама живучесть этих томатов, переживших засухи и смену режимов, является лучшим доказательством их ценности. Марта, вынужденная следовать инструкциям, предложила компромисс: передать семена в «неклассифицированный фонд», где они могли бы храниться, но без права на сертификацию. Игнат воспринял это как изгнание, ведь статус «неклассифицированного» означал, что его семейное достояние будет пылиться в углу как биологический мусор, лишенный исторического признания.\n\nВ зале воцарилась тишина, прерываемая лишь гулом системы климат-контроля. Молодые волонтеры, наблюдавшие за спором, разделились на два лагеря. Одни поддерживали Марту, утверждая, что институционализация — единственный способ предотвратить утрату уникальных видов в условиях глобальной стандартизации. Другие видели в действиях архива опасную тенденцию к отчуждению: если традиция не может быть оцифрована и заверена печатью, она объявляется несуществующей. Марта чувствовала тяжесть своей ответственности; она понимала, что бюрократия — это не просто прихоть, а защитный механизм, но в то же время осознавала, что, требуя доказательств, она разрушает доверие, на котором держалось всё сообщество. Игнат, видя её смятение, не стал спорить дальше. Он понял, что архив перестал быть местом сохранения жизни, превратившись в кладбище бумажных справок.\n\nИгнат молча забрал свой мешочек, понимая, что его долг перед предками важнее, чем место в реестре. Он вышел в прохладный вечер, чувствуя, как в кармане тяжелеют семена, несущие в себе память целой долины. Марта осталась стоять у своего стола, глядя на пустую страницу в журнале, предназначенную для записи новых поступлений. Она знала, что завтра придут другие, и каждый из них столкнется с тем же барьером. Система, созданная для спасения семян, начала пожирать саму себя, отсекая тех, кто не владел языком параграфов. Вечер подходил к концу, но в воздухе повисло неразрешимое напряжение, которое не могли снять никакие регламенты. В этом архиве семена остались, но наследие — та самая невидимая связь, которую невозможно задокументировать — покинуло стены библиотеки вместе со стариком.\n\nНа следующее утро Марта обнаружила на пороге библиотеки анонимный сверток с семенами тех самых томатов. К нему была приложена записка, написанная неровным почерком Игната: «То, что не имеет имени в вашем реестре, будет расти в садах тех, кто умеет помнить». Она поняла, что проиграла битву за контроль, но, возможно, выиграла нечто большее. Она не внесла эти семена в каталог, но и не выбросила их. Она спрятала их в ящик своего стола, нарушая все инструкции, которые сама же так рьяно защищала. Это был акт тихого бунта, признание того, что существуют вещи, превосходящие любую систему учета. Архив продолжал функционировать, но в его сердце поселилась тайна, которая делала его живым, несмотря на все попытки превратить его в сухой склад данных.\n\nОднако этот скрытый акт неповиновения породил новую, куда более глубокую проблему, которую Марта не могла предвидеть. Вскоре в сообществе начали циркулировать слухи о «нелегальных» семенах, которые якобы обладают исключительной всхожестью и вкусом, недоступным для сертифицированных сортов из каталога. Это привело к возникновению стихийного, теневого обмена, который полностью игнорировал правила фонда, подрывая доверие к официальной деятельности архива. Люди, вдохновленные примером Игната, перестали приносить свои коллекции в библиотеку, опасаясь бюрократических препон, и начали формировать закрытые, почти сектантские группы садоводов. Марта, пытаясь спасти крупицу живой традиции, невольно спровоцировала распад единого научного пространства, на создание которого ушли годы. Теперь архив, лишенный притока новых образцов и поддержки местных энтузиастов, оказался в изоляции, превратившись в стерильное хранилище безжизненных муляжей. Парадокс заключался в том, что, пытаясь защитить наследие от бюрократического забвения, Марта создала прецедент, при котором ценность семян стала измеряться не их генетическим потенциалом или историей, а степенью их «незаконности». В погоне за аутентичностью люди начали пренебрегать методами селекции, полагаясь исключительно на слепую веру в «дикую» чистоту сортов. В конечном итоге, стремление сохранить связь с прошлым через нарушение правил привело к тому, что само понятие «наследия» окончательно размылось. Архив перестал быть центром знаний, превратившись в декорацию, в то время как истинное биоразнообразие ушло в подполье, став уязвимым перед лицом болезней и климатических изменений, которые раньше успешно купировались благодаря открытому научному обмену. Марта смотрела на пустые стеллажи и понимала: в попытке спасти душу семян, она нечаянно лишила их будущего, оставив потомкам лишь фрагменты разрозненных мифов вместо надежного фундамента для выживания человечества в меняющемся мире.",
+    "wordCount": 867,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "реестр",
+        "lemma": "реестр",
+        "glosses": {
+          "es": "a register or list",
+          "en": "a register or list"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "верификации",
+        "lemma": "верификации",
+        "glosses": {
+          "es": "verification or confirmation",
+          "en": "verification or confirmation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "отчуждению",
+        "lemma": "отчуждению",
+        "glosses": {
+          "es": "alienation or estrangement",
+          "en": "alienation or estrangement"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стандартизации",
+        "lemma": "стандартизации",
+        "glosses": {
+          "es": "standardization",
+          "en": "standardization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "регламенты",
+        "lemma": "регламенты",
+        "glosses": {
+          "es": "regulations or rules",
+          "en": "regulations or rules"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бунт",
+        "lemma": "бунт",
+        "glosses": {
+          "es": "rebellion or revolt",
+          "en": "rebellion or revolt"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19.3,
+      "maxSentenceWords": 34,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема конфликта в рассказе?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Столкновение традиций с бюрократией."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимость цифровизации архивов."
+        },
+        {
+          "id": "a3",
+          "text": "Проблемы экологии в современном мире."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Система, созданная для спасения семян, начала пожирать саму себя, отсекая тех, кто не владел языком параграфов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что именно требовал архив для признания семян наследием?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Фотографии урожая."
+        },
+        {
+          "id": "a2",
+          "text": "Документы на землю."
+        },
+        {
+          "id": "a3",
+          "text": "Справку от соседа."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "любой образец, претендующий на статус «наследия», требовал нотариально заверенной истории происхождения и документального подтверждения права собственности на участок земли.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Марта в конце рассказа спрятала семена в стол?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она хотела продать их позже."
+        },
+        {
+          "id": "a2",
+          "text": "Она испугалась гнева Игната."
+        },
+        {
+          "id": "a3",
+          "text": "Она осознала ценность неформального наследия."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Она спрятала их в ящик своего стола, нарушая все инструкции, которые сама же так рьяно защищала. Это был акт тихого бунта, признание того, что существуют вещи, превосходящие любую систему учета.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Для чего автор вводит образ «неклассифицированного фонда»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подчеркнуть унизительность бюрократических рамок для носителей традиции."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы показать гибкость правил архива."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы продемонстрировать техническую сложность хранения семян."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Игнат воспринял это как изгнание, ведь статус «неклассифицированного» означал, что его семейное достояние будет пылиться в углу как биологический мусор, лишенный исторического признания.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков эмоциональный тон финала произведения?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Торжествующий."
+        },
+        {
+          "id": "a2",
+          "text": "Неоднозначный."
+        },
+        {
+          "id": "a3",
+          "text": "Меланхоличный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Архив продолжал функционировать, но в его сердце поселилась тайна, которая делала его живым, несмотря на все попытки превратить его в сухой склад данных.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает термин «отчуждение» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Передача прав на имущество."
+        },
+        {
+          "id": "a2",
+          "text": "Увеличение объема документации."
+        },
+        {
+          "id": "a3",
+          "text": "Потеря связи с корнями."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Другие видели в действиях архива опасную тенденцию к отчуждению: если традиция не может быть оцифрована и заверена печатью, она объявляется несуществующей.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (200-250 слов), в котором обсудите, может ли институциональный контроль действительно сохранить культурное наследие, или же он неизбежно лишает его жизни, превращая в мертвый архивный экспонат.",
+      "en": "Напишите эссе (200-250 слов), в котором обсудите, может ли институциональный контроль действительно сохранить культурное наследие, или же он неизбежно лишает его жизни, превращая в мертвый архивный экспонат."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализировать конфликт между институциональными требованиями к документации и нематериальным культурным наследием.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Архив утраченных всходов | C2 Reading | WeLearn",
+      "en": "Архив утраченных всходов | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Рассказ о столкновении бюрократической системы архивации с живой традицией передачи семян в рамках локального сообщества.",
+      "en": "Рассказ о столкновении бюрократической системы архивации с живой традицией передачи семян в рамках локального сообщества."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/seeds-on-loan",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

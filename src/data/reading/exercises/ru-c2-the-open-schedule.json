@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-the-open-schedule",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "the-open-schedule",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "flexible school timetable",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Письмо о гибком графике: иллюзия автономии",
+      "en": "Письмо о гибком графике: иллюзия автономии"
+    },
+    "intro": {
+      "es": "В этом упражнении рассматривается электронное письмо директора школы учителю, в котором обсуждается внедрение «гибкого графика» обучения, скрывающего социальное неравенство под маской личного выбора.",
+      "en": "В этом упражнении рассматривается электронное письмо директора школы учителю, в котором обсуждается внедрение «гибкого графика» обучения, скрывающего социальное неравенство под маской личного выбора."
+    },
+    "mission": {
+      "es": "Проанализируйте аргументацию автора, выявите скрытые противоречия в концепции индивидуальной свободы и ответьте на вопросы, проверяющие понимание нюансов текста.",
+      "en": "Проанализируйте аргументацию автора, выявите скрытые противоречия в концепции индивидуальной свободы и ответьте на вопросы, проверяющие понимание нюансов текста."
+    },
+    "targetText": "Уважаемый господин Аркадьев, благодарю вас за откровенный отзыв о проекте «Индивидуальная траектория», который мы планируем запустить в следующем семестре. Выраженное вами беспокойство относительно того, что гибкий график может усугубить разрыв между учениками, заслуживает пристального внимания. Однако, позвольте мне предложить иную перспективу. В основе нашей реформы лежит убеждение, что время — это не объективная константа, а ресурс, которым каждый распоряжается согласно своим приоритетам. Если мы предлагаем ученикам возможность самостоятельно выбирать время начала уроков, мы не просто меняем расписание, мы воспитываем ответственность. Ваши опасения, что дети из менее обеспеченных семей не смогут воспользоваться этим правом из-за необходимости подстраиваться под график родителей или транспортную логистику, кажутся мне попыткой переложить системные социально-экономические проблемы на плечи школьной администрации. В конце концов, школа — это пространство для академического роста, а не социальный арбитр. Если мы начнем адаптировать расписание под каждого, мы превратимся в службу такси, а не в образовательное учреждение. Суть гибкости в том, чтобы предоставить выбор, а воспользуется ли им ученик — это вопрос его личной дисциплины и семейной поддержки. Мы не можем искусственно уравнивать стартовые условия, так как это нарушит принцип меритократии, который мы так старательно культивируем в наших стенах. Конечно, я признаю, что для некоторых семей утренние часы — это время борьбы за выживание, а не время для элитных дополнительных занятий. Но разве не будет дискриминацией лишать возможности учиться по индивидуальному графику тех, кто действительно готов эффективно распорядиться своим временем, только потому, что другие не обладают такой же степенью свободы? Справедливость, в моем понимании, заключается в предоставлении равных прав, а не в гарантии равных результатов. Я настаиваю на том, что наш подход — это шаг к прогрессу. Попытка же сделать расписание «удобным для всех» приведет лишь к усреднению, где наиболее мотивированные ученики будут вынуждены ждать тех, кто не проявляет должного усердия. Мы не можем позволить, чтобы инертность системы стала якорем для талантов. В связи с этим, я прошу вас подготовить список факультативов, которые будут доступны в вечерние часы. Это станет отличным дополнением к нашему новому формату. Понимаю, что для вас это дополнительная нагрузка, но прошу рассматривать это как инвестицию в будущее наших учеников, которые смогут самостоятельно выстраивать свой день. В конечном счете, мы учим их жизни, где успех зависит от умения маневрировать в потоке обстоятельств, а не от того, насколько комфортно составлено расписание. Если мы не сделаем этот шаг сейчас, мы останемся заложниками устаревшей модели, которая игнорирует реалии современного мира. Надеюсь на ваше понимание и поддержку в реализации этого амбициозного проекта, который, я уверен, станет примером для других учебных заведений. Мы меняем парадигму, господин Аркадьев, и я рассчитываю, что вы станете одним из архитекторов этих перемен, а не их критиком. Прошу вас предоставить план к концу недели, чтобы мы могли обсудить детали на общем собрании педагогического состава.\n\nТем не менее, нельзя игнорировать тот факт, что внедрение подобной модели в условиях нашей текущей инфраструктуры неизбежно порождает эффект «отложенного неравенства», который проявится не в академических успехах, а в психологическом выгорании наиболее амбициозных учащихся. Если мы постулируем, что меритократия должна быть абсолютной, мы рискуем превратить образовательный процесс в непрерывную гонку на выживание, где ценность ученика определяется исключительно его способностью игнорировать внешние обстоятельства. Представьте ситуацию, когда талантливый подросток, вынужденный добираться из отдаленного района, каждый день сталкивается с необходимостью выбирать между качественным сном и посещением ключевых лекций, доступных только в определенные часы. В такой системе «гибкость» становится привилегией, доступной лишь тем, чей быт уже оптимизирован финансовым благополучием семьи. Мы рискуем создать касту «академических атлетов», чья продуктивность будет зиждиться на истощении ресурсов организма, в то время как остальные будут восприниматься как балласт, тормозящий общий прогресс. Более того, возлагая всю ответственность на плечи ребенка, мы упускаем из виду педагогическую функцию школы как института, формирующего среду, а не просто оценивающего результат. Если школа отказывается от роли социального арбитра, она автоматически становится инструментом воспроизводства существующего социального расслоения, оправдывая это высокими идеалами индивидуальной свободы. В долгосрочной перспективе это приведет к тому, что интеллектуальный капитал будет концентрироваться в руках тех, кто с детства был приучен к жесткому планированию и имел для этого соответствующие условия, в то время как потенциально одаренные, но менее ресурсные дети окажутся на периферии системы. Ваше утверждение о том, что мы учим их жизни, безусловно, верно, но жизнь — это не только умение маневрировать, но и способность коллективно выстраивать справедливые правила игры. Игнорируя структурные барьеры, мы не просто меняем парадигму, мы легитимизируем отчуждение, при котором успех становится синонимом личного везения, а не качества образования. В конечном итоге, превращая школу в арену для индивидуальных достижений, мы утрачиваем саму суть педагогики как процесса созидания гражданского общества. Если мы не предусмотрим механизмы компенсации для тех, кто объективно ограничен в своих возможностях, мы рискуем получить поколение, которое, достигнув вершин успеха, будет абсолютно лишено эмпатии к тем, кто не смог преодолеть аналогичные препятствия. Таким образом, проект «Индивидуальная траектория» требует не просто административного внедрения, но и глубокой рефлексии о том, какую цену мы готовы платить за эффективность, и не станет ли эта цена непомерно высокой для нашего будущего, где меритократия рискует превратиться в холодную технократическую диктатуру, лишенную человеческого измерения.",
+    "wordCount": 812,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "константа",
+        "lemma": "константа",
+        "glosses": {
+          "es": "a constant value",
+          "en": "a constant value"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "меритократии",
+        "lemma": "меритократии",
+        "glosses": {
+          "es": "a system where advancement is based on individual ability",
+          "en": "a system where advancement is based on individual ability"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дискриминацией",
+        "lemma": "дискриминацией",
+        "glosses": {
+          "es": "unfair treatment of different categories of people",
+          "en": "unfair treatment of different categories of people"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "усреднению",
+        "lemma": "усреднению",
+        "glosses": {
+          "es": "the act of making something average",
+          "en": "the act of making something average"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инертность",
+        "lemma": "инертность",
+        "glosses": {
+          "es": "lack of activity or interest",
+          "en": "lack of activity or interest"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "парадигму",
+        "lemma": "парадигму",
+        "glosses": {
+          "es": "a typical example or pattern of something",
+          "en": "a typical example or pattern of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.9,
+      "maxSentenceWords": 45,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная цель данного письма?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Убедить учителя в необходимости гибкого графика."
+        },
+        {
+          "id": "a2",
+          "text": "Принести извинения за ошибки в планировании."
+        },
+        {
+          "id": "a3",
+          "text": "Отменить все вечерние факультативные занятия."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Я настаиваю на том, что наш подход — это шаг к прогрессу.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что директор считает истинной формой справедливости?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Равные результаты."
+        },
+        {
+          "id": "a2",
+          "text": "Равные права."
+        },
+        {
+          "id": "a3",
+          "text": "Равные условия."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Справедливость, в моем понимании, заключается в предоставлении равных прав, а не в гарантии равных результатов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как автор относится к социально-экономическим проблемам семей?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Он считает их зоной ответственности школы."
+        },
+        {
+          "id": "a2",
+          "text": "Он намерен полностью компенсировать их через гранты."
+        },
+        {
+          "id": "a3",
+          "text": "Он полагает, что они не должны влиять на расписание."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Ваши опасения, что дети из менее обеспеченных семей не смогут воспользоваться этим правом из-за необходимости подстраиваться под график родителей или транспортную логистику, кажутся мне попыткой переложить системные социально-экономические проблемы на плечи школьной администрации.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем директор просит составить список вечерних факультативов?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы дополнить концепцию индивидуального выбора."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы увеличить нагрузку на учителей."
+        },
+        {
+          "id": "a3",
+          "text": "Для проверки дисциплины педагогического состава."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "В связи с этим, я прошу вас подготовить список факультативов, которые будут доступны в вечерние часы. Это станет отличным дополнением к нашему новому формату.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в письме директора?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Сомневающийся и мягкий."
+        },
+        {
+          "id": "a2",
+          "text": "Настойчивый и директивный."
+        },
+        {
+          "id": "a3",
+          "text": "Дружелюбный и неформальный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Мы меняем парадигму, господин Аркадьев, и я рассчитываю, что вы станете одним из архитекторов этих перемен, а не их критиком.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что в контексте письма означает термин «меритократия»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Политику поддержки социально слабых групп."
+        },
+        {
+          "id": "a2",
+          "text": "Процесс автоматического повышения зарплат."
+        },
+        {
+          "id": "a3",
+          "text": "Систему, основанную на личных заслугах."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Мы не можем искусственно уравнивать стартовые условия, так как это нарушит принцип меритократии, который мы так старательно культивируем в наших стенах.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите ответное письмо от лица господина Аркадьева, в котором он аргументированно возражает директору, используя контраргументы о том, что выбор без ресурсов является фикцией.",
+      "en": "Напишите ответное письмо от лица господина Аркадьева, в котором он аргументированно возражает директору, используя контраргументы о том, что выбор без ресурсов является фикцией."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализируйте аргументацию автора, выявите скрытые противоречия в концепции индивидуальной свободы и ответьте на вопросы, проверяющие понимание нюансов текста.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Письмо о гибком графике: иллюзия автономии | C2 Reading | WeLearn",
+      "en": "Письмо о гибком графике: иллюзия автономии | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В этом упражнении рассматривается электронное письмо директора школы учителю, в котором обсуждается внедрение «гибкого графика» обучения, скрывающего социальное неравенство под маской личного выбора.",
+      "en": "В этом упражнении рассматривается электронное письмо директора школы учителю, в котором обсуждается внедрение «гибкого графика» обучения, скрывающего социальное неравенство под маской личного выбора."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/the-open-schedule",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-the-quiet-street",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "the-quiet-street",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "night traffic",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Архитектура ночного гула: перераспределение тишины",
+      "en": "Архитектура ночного гула: перераспределение тишины"
+    },
+    "intro": {
+      "es": "Аналитическая статья о феномене ночного трафика, исследующая скрытые механизмы городского планирования и этику распределения звукового давления в мегаполисе.",
+      "en": "Аналитическая статья о феномене ночного трафика, исследующая скрытые механизмы городского планирования и этику распределения звукового давления в мегаполисе."
+    },
+    "mission": {
+      "es": "Проанализировать текст, выявить скрытые противоречия в действиях городской администрации и оценить риски, связанные с политикой «тихих зон».",
+      "en": "Проанализировать текст, выявить скрытые противоречия в действиях городской администрации и оценить риски, связанные с политикой «тихих зон»."
+    },
+    "targetText": "Когда сумерки опускаются на проспект Веры, городская администрация запускает протокол «Ночной покой». Инженер Игнат Сомов, куратор системы распределения транспортных потоков, наблюдает за тем, как светящиеся артерии мегаполиса меняют свою конфигурацию. Официальная риторика мэрии гласит: мы дарим жителям центра право на тишину. Однако за этим гуманистическим фасадом скрывается математически выверенная несправедливость. Трафик не исчезает, он лишь мигрирует, подобно призрачному зверю, в те переулки, где политический вес жителей недостаточно велик, чтобы требовать комфорта. Сомов знает: каждый децибел, убранный с элитных бульваров, неизбежно оседает в рабочих кварталах на окраине, создавая там зону перманентного акустического стресса.\n\nВ офисе управления движением разгорается конфликт. Коллега Сомова, аналитик Елена Маркова, настаивает на эффективности алгоритма. Она утверждает, что перенаправление фур и ночных служб доставки по периферийным улицам снижает общий уровень жалоб населения на сорок процентов. «Мы оптимизируем городскую среду», — заявляет она, не поднимая глаз от монитора, на котором пульсируют потоки данных. Сомов же видит в этом не оптимизацию, а социальную сегрегацию, замаскированную под заботу об экологии. Он указывает на то, что жители улиц вроде Заречной или Тупиковой, где шум после полуночи стал нормой, лишены рычагов влияния на процесс принятия решений. Для них тишина стала дефицитным товаром, доступным лишь тем, кто живет в «зонах особого контроля». \n\nСитуация обостряется, когда в администрацию поступает петиция от жителей квартала «Северный край». Люди жалуются на то, что вибрация от проходящих всю ночь грузовиков приводит к микротрещинам в фундаментах их домов. Маркова классифицирует это как «незначительные издержки урбанизации», аргументируя это тем, что инфраструктура должна функционировать без перебоев. Сомов, однако, понимает, что это не просто издержки, а прямое следствие их политики. Он пытается доказать, что перенос нагрузки на окраины не решает проблему, а лишь консервирует ее, создавая очаги напряжения, которые рано или поздно приведут к социальному взрыву. Его попытки пересмотреть алгоритм натыкаются на бюрократическую стену: система уже работает, и любые изменения требуют согласования с департаментом экономики, который заинтересован лишь в скорости логистических цепочек.\n\nК полуночи проспект Веры погружается в почти мистическую тишину. Здесь, под окнами элитных апартаментов, слышно даже шуршание листвы, что вызывает у Сомова горькую усмешку. Он осознает, что мир, который они создают, — это мир, где спокойствие одних покупается ценой беспокойного сна других. Конфликт между ним и Марковой переходит в фазу холодного противостояния. Он понимает, что если он продолжит настаивать на перераспределении нагрузки, его просто отстранят от проекта. Но молчать — значит стать соучастником этой тихой экспроприации покоя. Он смотрит на карту города: она похожа на лоскутное одеяло, где одни куски ткани бережно охраняются, а другие — безжалостно изнашиваются под тяжестью бесконечного потока машин.\n\nВ конечном счете, эта история не о дорогах и не о машинах. Она о том, как легко язык мира и заботы скрывает механизмы принуждения. Сомов принимает решение: он тайно вносит коррективы в алгоритм, создавая временные «окна тишины» для окраин, понимая, что это приведет к заторам в центре и неминуемому скандалу. Это акт саботажа, продиктованный не логикой, а совестью. Он знает, что завтра утром, когда город проснется, его действия будут обнаружены, и карьера будет разрушена. Но в эту ночь, впервые за долгое время, жители окраин смогут уснуть в тишине, не подозревая, что их покой — это лишь временная аномалия, созданная человеком, который решил бросить вызов архитектуре ночного гула.\n\nОднако последствия этого акта милосердия выходят далеко за пределы простого дисциплинарного взыскания. Когда утренние лучи коснулись шпилей административных зданий, городская система отчетности зафиксировала аномальный всплеск жалоб от владельцев элитной недвижимости, чьи привычные маршруты оказались парализованы внезапными заторами. Этот инцидент обнажил скрытую хрупкость всей логистической архитектуры: оказалось, что тишина в центре была не просто привилегией, а фундаментом, на котором строилась работоспособность бизнеса и государственных структур. Как только Сомов нарушил баланс, городская экономика мгновенно отреагировала цепной реакцией сбоев, доказав, что любая попытка перераспределения комфорта в системе, построенной на иерархии, неизбежно приводит к коллапсу всей структуры. Маркова, чьи аналитические прогнозы были перечеркнуты этим саботажем, теперь видит в действиях коллеги не просто моральный выбор, а угрозу национальной безопасности, требующую немедленного вмешательства правоохранительных органов. Тем временем жители окраин, проснувшись в непривычной утренней тишине, столкнулись с другой стороной медали: транспортный хаос в центре привел к задержкам поставок товаров первой необходимости, создавая дефицит в местных магазинах. Стало очевидно, что Сомов, пытаясь исправить несправедливость, лишь запустил механизм, который в долгосрочной перспективе может обернуться против тех, кого он пытался защитить. Город превратился в поле битвы, где каждый житель стал заложником алгоритма, который невозможно изменить, не разрушив привычный уклад жизни. Теперь Сомов осознает, что его поступок был лишь кратким моментом иллюзорной справедливости, за которым следует неизбежное ужесточение контроля. Администрация, напуганная уязвимостью системы, готовит внедрение еще более жестких протоколов, которые полностью исключат человеческий фактор из процесса управления потоками. Таким образом, попытка вернуть людям право на сон привела к тому, что город окончательно перестал быть пространством для жизни, превратившись в холодный, саморегулирующийся механизм, где даже случайное проявление эмпатии интерпретируется как системная ошибка. Сомов смотрит на свои руки, осознавая, что он лишь ускорил неизбежное превращение мегаполиса в цифровую тюрьму, где тишина — это не дар, а лишь временная передышка перед новым, еще более безжалостным витком оптимизации, в котором не останется места ни для совести, ни для человеческого тепла, ни для простого права на тихий сон в собственном доме.",
+    "wordCount": 834,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "гуманистическим",
+        "lemma": "гуманистическим",
+        "glosses": {
+          "es": "related to human values and welfare",
+          "en": "related to human values and welfare"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сегрегацию",
+        "lemma": "сегрегацию",
+        "glosses": {
+          "es": "the enforced separation of different groups",
+          "en": "the enforced separation of different groups"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инфраструктура",
+        "lemma": "инфраструктура",
+        "glosses": {
+          "es": "the basic physical systems of a city",
+          "en": "the basic physical systems of a city"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "экспроприации",
+        "lemma": "экспроприации",
+        "glosses": {
+          "es": "the action of taking property from its owner",
+          "en": "the action of taking property from its owner"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "аномалия",
+        "lemma": "аномалия",
+        "glosses": {
+          "es": "something that deviates from what is standard",
+          "en": "something that deviates from what is standard"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "конфигурацию",
+        "lemma": "конфигурацию",
+        "glosses": {
+          "es": "an arrangement of parts or elements",
+          "en": "an arrangement of parts or elements"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19,
+      "maxSentenceWords": 55,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Этика распределения городского шума"
+        },
+        {
+          "id": "a2",
+          "text": "Техническое совершенствование дорог"
+        },
+        {
+          "id": "a3",
+          "text": "История ночного проспекта"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "за этим гуманистическим фасадом скрывается математически выверенная несправедливость",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что стало причиной жалоб жителей квартала «Северный край»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Высокие цены на жилье"
+        },
+        {
+          "id": "a2",
+          "text": "Вибрация от грузовиков"
+        },
+        {
+          "id": "a3",
+          "text": "Отсутствие освещения"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Люди жалуются на то, что вибрация от проходящих всю ночь грузовиков приводит к микротрещинам в фундаментах их домов.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Сомов решается на саботаж алгоритма?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Он хочет отомстить Елене"
+        },
+        {
+          "id": "a2",
+          "text": "Он хочет стать начальником"
+        },
+        {
+          "id": "a3",
+          "text": "Он стремится к справедливости"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Это акт саботажа, продиктованный не логикой, а совестью.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какова цель автора при описании ночной тишины на проспекте Веры?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Подчеркнуть контраст между элитными районами и окраинами"
+        },
+        {
+          "id": "a2",
+          "text": "Показать преимущество современных технологий управления"
+        },
+        {
+          "id": "a3",
+          "text": "Описать красоту ночного города в тишине"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Он осознает, что мир, который они создают, — это мир, где спокойствие одних покупается ценой беспокойного сна других.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в повествовании?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Официально-деловой"
+        },
+        {
+          "id": "a2",
+          "text": "Критический и рефлексивный"
+        },
+        {
+          "id": "a3",
+          "text": "Восторженно-оптимистичный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Он смотрит на карту города: она похожа на лоскутное одеяло, где одни куски ткани бережно охраняются, а другие — безжалостно изнашиваются",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что в тексте подразумевается под «экспроприацией покоя»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Запрет на использование автомобилей в ночное время"
+        },
+        {
+          "id": "a2",
+          "text": "Продажа прав на тишину богатым жителям города"
+        },
+        {
+          "id": "a3",
+          "text": "Принудительное изъятие тишины у одних жителей в пользу других"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "мир, где спокойствие одних покупается ценой беспокойного сна других",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе на тему: «Может ли современный город быть справедливым, если его комфорт основан на неравенстве?». Используйте аргументы из текста и предложите альтернативные пути городского планирования.",
+      "en": "Напишите эссе на тему: «Может ли современный город быть справедливым, если его комфорт основан на неравенстве?». Используйте аргументы из текста и предложите альтернативные пути городского планирования."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализировать текст, выявить скрытые противоречия в действиях городской администрации и оценить риски, связанные с политикой «тихих зон».",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Архитектура ночного гула: перераспределение тишины | C2 Reading | WeLearn",
+      "en": "Архитектура ночного гула: перераспределение тишины | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Аналитическая статья о феномене ночного трафика, исследующая скрытые механизмы городского планирования и этику распределения звукового давления в мегаполисе.",
+      "en": "Аналитическая статья о феномене ночного трафика, исследующая скрытые механизмы городского планирования и этику распределения звукового давления в мегаполисе."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/the-quiet-street",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

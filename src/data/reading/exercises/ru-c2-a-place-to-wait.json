@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-a-place-to-wait",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "a-place-to-wait",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "clinic waiting room",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Слепое ожидание в приемном покое",
+      "en": "Слепое ожидание в приемном покое"
+    },
+    "intro": {
+      "es": "В этом тексте исследуется метафизический аспект ожидания в условиях бюрократической системы, где субъект теряет свою значимость для институции.",
+      "en": "В этом тексте исследуется метафизический аспект ожидания в условиях бюрократической системы, где субъект теряет свою значимость для институции."
+    },
+    "mission": {
+      "es": "Проанализируйте текст, чтобы понять, как автор использует образ «невидимости» пациента для критики безличных административных структур.",
+      "en": "Проанализируйте текст, чтобы понять, как автор использует образ «невидимости» пациента для критики безличных административных структур."
+    },
+    "targetText": "В приемном покое клиники «Эгида» время течет не по часам, а по ритму мерцающих люминесцентных ламп, чей гул давно стал единственной музыкой для тех, кто застрял в этом лиминальном пространстве. Марк, сидящий на жестком пластиковом стуле уже шестой час, наблюдал за регистратором, чье лицо, казалось, было высечено из серого гранита. Администратор, некая госпожа Аркадьева, методично перекладывала стопки бумаг, превращая жизнь пациентов в сухие статистические данные. Марк пришел сюда из-за ноющей боли в плече, но к вечеру, когда тени в углах зала стали длиннее, чем надежды присутствующих, он понял, что его физический недуг отошел на второй план перед осознанием собственной призрачности. Он смотрел на Аркадьеву, но она, казалось, смотрела сквозь него, словно он был лишь частью интерьера, досадным артефактом, оставленным предыдущей сменой. Этот момент деперсонализации стал поворотным: Марк начал задаваться вопросом, существует ли ожидание, если тот, кто его обеспечивает, перестал замечать ожидающего.\n\nСитуация обострилась, когда в зал вошел молодой человек в помятом пиджаке, явно нервничающий и постоянно проверяющий часы. Он подошел к стойке, пытаясь привлечь внимание Аркадьевой, но та продолжала свою монотонную работу, игнорируя его существование с пугающим профессионализмом. Марк наблюдал за этой сценой как за театральной постановкой, где главный герой — не человек, а само отсутствие признания. Конфликт между потребностью в помощи и равнодушием системы достиг апогея, когда Аркадьева внезапно поднялась и закрыла окошко регистратуры, повесив табличку «Технический перерыв». В этот момент Марк осознал, что их ожидание утратило всякий смысл. Если институция перестала видеть их, значит, для нее они перестали существовать. Это была не просто бюрократическая небрежность, а акт онтологического исключения, превращающий живых людей в статистическую погрешность, которая не требует обработки.\n\nМарк поднялся, чувствуя, как затекшие мышцы отзываются острой болью, но теперь эта боль казалась ему чужой, почти нереальной. Он посмотрел на других пациентов: женщина с ребенком, старик, прижимающий к груди папку с анализами — все они застыли в немой позе покорности. Никто не возмущался, никто не пытался прорваться за стойку. Они приняли свою невидимость как данность, как единственный способ взаимодействия с «Эгидой». Марк подошел к выходу, толкнул тяжелую стеклянную дверь и вышел на улицу, где ночной воздух показался ему обжигающе реальным. Он больше не ждал. Он понял, что ожидание — это договор, требующий участия двух сторон, и как только одна сторона перестает признавать другую, договор аннулируется, оставляя лишь пустоту, которую невозможно заполнить никакими медицинскими услугами.\n\nВернувшись в свою квартиру, он долго смотрел на свои руки, пытаясь убедиться в их осязаемости. Опыт в приемном покое оставил глубокий след, заставив его переосмыслить само понятие присутствия. Он осознал, что многие люди проводят жизнь в подобных залах ожидания, надеясь на признание со стороны структур, которые изначально запрограммированы на слепоту. Это была ловушка, в которой человек добровольно отказывается от своей субъектности, ожидая, что его «увидят». Но «Эгида» не видела, она лишь фиксировала потоки, и когда поток иссякал или становился неудобным, она просто закрывала окошко. Марк понял, что его уход был единственным актом свободы, доступным в этой системе: он перестал быть объектом наблюдения и стал субъектом собственного действия.\n\nНа следующее утро, когда солнце залило комнату, Марк почувствовал, что боль в плече почти утихла. Он не пошел в другую клинику, не стал звонить в страховую компанию. Он просто жил, наслаждаясь тем, что его никто не регистрирует, никто не вызывает по номеру и никто не игнорирует его присутствие. Он осознал, что подлинная жизнь начинается там, где заканчивается ожидание в коридорах, предназначенных для «невидимых». Его история в «Эгиде» стала уроком того, как важно вовремя выйти из игры, где правила написаны не для тебя, а против тебя, превращая твое ожидание в бесконечный, бессмысленный процесс, лишенный финала.\n\nОднако, по мере того как дни сменяли друг друга, в сознании Марка начала прорастать тревожная мысль: а не была ли его свобода лишь иллюзией, очередной формой самообмана, порожденной страхом перед институциональным безразличием? Ведь если «Эгида» и подобные ей структуры существуют именно потому, что люди добровольно делегируют им право определять границы их реальности, то его демонстративный уход не разрушил систему, а лишь вывел его из зоны потенциального исцеления. Отрицая необходимость признания со стороны бюрократической машины, он рисковал оказаться в вакууме абсолютной автономии, где отсутствие внешнего подтверждения статуса «пациента» или «гражданина» постепенно стирает саму личность. Возможно, истинный ужас заключался не в том, что его игнорировали, а в том, что он сам стал для себя той самой равнодушной Аркадьевой, переставшей замечать собственные потребности в угоду некой абстрактной независимости. Марк осознал, что отказ от ожидания — это не только акт освобождения, но и опасный шаг к добровольному изгнанию из социума, где даже холодное, обезличенное признание является единственной нитью, связывающей индивида с коллективным бытием. Его боль в плече, притихшая в эйфории свободы, начала возвращаться, напоминая о том, что биологическая уязвимость не считается с философией субъектности. Теперь он смотрел на город не как на поле для самореализации, а как на бесконечную сеть таких же «Эгид», где каждое окно регистратуры — это граница между миром живых и миром статистических единиц. Марк понял, что, уйдя из клиники, он не перестал быть объектом; он просто перестал быть объектом, имеющим право на ремонт. Теперь он был предоставлен сам себе в пространстве, где отсутствие системы означало не свободу, а окончательную, тихую энтропию. Его невидимость, которую он считал своим триумфом, превратилась в его единственную, неумолимую форму существования, в которой никто уже не мог даже подтвердить факт его исчезновения, ведь для мира он перестал существовать еще в тот момент, когда закрылось окошко регистратуры.",
+    "wordCount": 867,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "лиминальном",
+        "lemma": "лиминальном",
+        "glosses": {
+          "es": "liminal",
+          "en": "liminal"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "деперсонализации",
+        "lemma": "деперсонализации",
+        "glosses": {
+          "es": "depersonalization",
+          "en": "depersonalization"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "онтологического",
+        "lemma": "онтологического",
+        "glosses": {
+          "es": "ontological",
+          "en": "ontological"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "погрешность",
+        "lemma": "погрешность",
+        "glosses": {
+          "es": "error/margin",
+          "en": "error/margin"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "субъектности",
+        "lemma": "субъектности",
+        "glosses": {
+          "es": "subjectivity/agency",
+          "en": "subjectivity/agency"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "осязаемости",
+        "lemma": "осязаемости",
+        "glosses": {
+          "es": "tangibility",
+          "en": "tangibility"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.1,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного рассказа?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Обретение свободы через отказ от ожиданий"
+        },
+        {
+          "id": "a2",
+          "text": "Трудности работы регистратуры"
+        },
+        {
+          "id": "a3",
+          "text": "Борьба пациента за качественное медицинское обслуживание"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Марк понял, что его уход был единственным актом свободы, доступным в этой системе: он перестал быть объектом наблюдения и стал субъектом собственного действия.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что стало катализатором осознания Марком бессмысленности его ожидания?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Разговор с молодым человеком"
+        },
+        {
+          "id": "a2",
+          "text": "Закрытие окна регистратуры"
+        },
+        {
+          "id": "a3",
+          "text": "Боль в плече"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Конфликт между потребностью в помощи и равнодушием системы достиг апогея, когда Аркадьева внезапно поднялась и закрыла окошко регистратуры, повесив табличку «Технический перерыв».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему другие пациенты в зале не проявляли возмущения?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Они были слишком больны"
+        },
+        {
+          "id": "a2",
+          "text": "Они надеялись на скорый прием"
+        },
+        {
+          "id": "a3",
+          "text": "Они приняли свою невидимость"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Они приняли свою невидимость как данность, как единственный способ взаимодействия с «Эгидой».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор описывает госпожу Аркадьеву как «высеченную из серого гранита»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы показать её безразличие к людям"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы подчеркнуть её профессионализм"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы создать образ строгого руководителя"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Администратор, некая госпожа Аркадьева, методично перекладывала стопки бумаг, превращая жизнь пациентов в сухие статистические данные.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в описании атмосферы клиники «Эгида»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ироничный и сатирический"
+        },
+        {
+          "id": "a2",
+          "text": "Отстраненно-философский"
+        },
+        {
+          "id": "a3",
+          "text": "Тревожный и агрессивный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "В приемном покое клиники «Эгида» время течет не по часам, а по ритму мерцающих люминесцентных ламп, чей гул давно стал единственной музыкой для тех, кто застрял в этом лиминальном пространстве.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что автор подразумевает под термином «онтологическое исключение»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Физическое удаление из здания"
+        },
+        {
+          "id": "a2",
+          "text": "Административное наказание за нарушение правил"
+        },
+        {
+          "id": "a3",
+          "text": "Отрицание самого факта существования человека"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Если институция перестала видеть их, значит, для нее они перестали существовать. Это была не просто бюрократическая небрежность, а акт онтологического исключения",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (200-250 слов), в котором вы аргументируете, является ли ожидание в бюрократических структурах формой добровольного отказа от личной свободы или вынужденным подчинением обстоятельствам.",
+      "en": "Напишите эссе (200-250 слов), в котором вы аргументируете, является ли ожидание в бюрократических структурах формой добровольного отказа от личной свободы или вынужденным подчинением обстоятельствам."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализируйте текст, чтобы понять, как автор использует образ «невидимости» пациента для критики безличных административных структур.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Слепое ожидание в приемном покое | C2 Reading | WeLearn",
+      "en": "Слепое ожидание в приемном покое | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В этом тексте исследуется метафизический аспект ожидания в условиях бюрократической системы, где субъект теряет свою значимость для институции.",
+      "en": "В этом тексте исследуется метафизический аспект ожидания в условиях бюрократической системы, где субъект теряет свою значимость для институции."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/a-place-to-wait",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

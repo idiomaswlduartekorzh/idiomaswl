@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-shared-desks",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "shared-desks",
+  "series": null,
+  "classification": {
+    "genre": "email",
+    "topic": "shared workspace",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Иллюзия выбора в пространстве «Синтез»",
+      "en": "Иллюзия выбора в пространстве «Синтез»"
+    },
+    "intro": {
+      "es": "Прочитайте электронное письмо от управляющего коворкингом и проанализируйте скрытые экономические и этические противоречия, заложенные в предложенной модели управления.",
+      "en": "Прочитайте электронное письмо от управляющего коворкингом и проанализируйте скрытые экономические и этические противоречия, заложенные в предложенной модели управления."
+    },
+    "mission": {
+      "es": "Оцените аргументацию автора и определите, насколько предложенная «свобода выбора» является инструментом манипуляции.",
+      "en": "Оцените аргументацию автора и определите, насколько предложенная «свобода выбора» является инструментом манипуляции."
+    },
+    "targetText": "Кому: Резидентам коворкинга «Синтез»\nОт: Марка Соловьева, управляющего партнера\n\nУважаемые коллеги, мы подходим к важному этапу трансформации нашего пространства «Синтез». За последние месяцы мы получили множество запросов относительно гибкости использования наших площадей. До сих пор наша модель опиралась на фиксированные тарифы, однако, стремясь к совершенству, мы вводим систему «динамической стоимости присутствия». Суть её проста: каждый резидент теперь волен выбирать между тихой зоной с ограниченным доступом, открытым пространством с высокой интенсивностью коммуникаций и премиальными кабинками для глубокой концентрации. Казалось бы, это торжество автономии, где каждый сам определяет свою рабочую среду. Однако я обязан прояснить, что за кажущейся свободой скрывается математически выверенная система перераспределения внутренних издержек. Мы не просто меняем прайс-лист; мы перекладываем ответственность за поддержание инфраструктуры на плечи тех, кто выбирает определенные условия, превращая комфорт в товар с переменной эластичностью спроса.\n\nВнедрение данной системы обусловлено не столько желанием увеличить прибыль, сколько необходимостью оптимизировать поток резидентов. Мы заметили, что многие из вас склонны занимать переговорные комнаты для одиночной работы, что создает дефицит ресурсов для командных проектов. Теперь же, выбирая уединенный формат, вы будете оплачивать не только аренду квадратных метров, но и «коэффициент упущенной выгоды» для всего сообщества. Это не штраф, а, скорее, компенсаторный механизм. Выбор остается за вами, но каждый клик в приложении бронирования теперь несет за собой финансовый след, который прямо пропорционален степени вашего влияния на общую доступность ресурсов. Мы полагаем, что такая прозрачность позволит каждому осознать истинную стоимость своего комфорта в коллективной экосистеме.\n\nКонечно, я предвижу скепсис. Некоторые из вас назовут это инструментом социального расслоения или скрытым повышением цен под маской демократизации доступа. Я не стану отрицать, что экономические реалии диктуют свои правила, и в мире, где каждый ресурс ограничен, абсолютное равенство — это утопия, ведущая к стагнации. Мы предлагаем не равенство, а справедливость, основанную на рыночном принципе: хочешь приватности — плати за её эксклюзивность. Если вы выбираете шумный опен-спейс, вы получаете скидку, так как ваш вклад в общую атмосферу «Синтеза» признан нами как социально полезный. Таким образом, мы поощряем тех, кто готов жертвовать личным комфортом ради общего блага, и взимаем плату с тех, кто стремится к обособленности.\n\nОднако здесь кроется фундаментальный парадокс, который я хотел бы вынести на ваше обсуждение. Является ли выбор «свободным», если каждый вариант несет за собой не только разную цену, но и разный уровень социального давления? Выбирая премиальный тариф, вы не просто оплачиваете тишину, вы подписываетесь под негласным статусом «индивидуалиста», что в нашей культуре сотрудничества может быть воспринято неоднозначно. С другой стороны, выбирая дешевый тариф, вы вынуждены мириться с постоянным шумом, что снижает вашу продуктивность. Мы создали систему, где любой выбор — это компромисс между вашим кошельком и вашим профессиональным имиджем. Это не столько выбор условий труда, сколько выбор того, какую именно цену вы готовы заплатить за свою репутацию внутри нашего сообщества.\n\nВ конечном итоге, я прошу вас принять эту модель как неизбежное следствие нашего роста. Мы не заставляем вас выбирать, мы лишь делаем последствия любого решения прозрачными. Если кто-то из вас решит покинуть «Синтез» из-за этих изменений, мы воспримем это как естественный отбор — уход тех, чьи ценности не совпадают с нашей новой философией «экономики ответственности». Мы верим, что те, кто останется, поймут: истинная свобода — это не отсутствие ограничений, а способность осознанно нести бремя своих решений. Мы ждем ваших комментариев, но прошу учесть, что архитектура системы уже утверждена и вступление в силу новых тарифов неизбежно наступит в начале следующего месяца. Ваше молчание будет истолковано как полное согласие с новыми правилами игры.\n\nТем не менее, стоит признать, что подобная архитектура выбора неминуемо приведет к формированию скрытых иерархий, которые могут разрушить саму ткань нашего сообщества изнутри. Когда каждый квадратный метр становится маркером финансового статуса, мы рискуем превратить «Синтез» из творческой лаборатории в холодный рынок, где профессиональный диалог подменяется расчетом рентабельности личного присутствия. Возникает закономерный вопрос: не приведет ли эта «экономика ответственности» к вытеснению наиболее креативных, но менее обеспеченных резидентов, чьи идеи часто рождаются именно в спонтанном, шумном взаимодействии, которое мы теперь искусственно субсидируем? Существует опасность, что мы создадим закрытый клуб «успешных одиночек», чей комфорт будет оплачен отсутствием разнообразия мнений, что в долгосрочной перспективе обесценит наш главный капитал — интеллектуальную синергию. Если мы начнем измерять ценность коллеги исключительно его способностью оплатить «коэффициент упущенной выгоды», мы неизбежно утратим ту атмосферу доверия, которая была фундаментом нашего успеха. В конечном счете, любая система, ставящая во главу угла оптимизацию ресурсов через финансовое принуждение, рискует превратить живое взаимодействие в сухую транзакцию. Мы можем обнаружить, что, стремясь к идеальной эффективности, мы лишили наше пространство души, заменив свободу творчества жестким алгоритмом распределения издержек. Возможно, именно сейчас нам следует задуматься, не является ли цена, которую мы платим за этот порядок, непомерно высокой для нашего общего будущего. Ведь если «Синтез» перестанет быть местом, где люди объединяются ради идеи, а станет лишь площадкой для демонстрации финансовой состоятельности, мы потеряем ту уникальную среду, которая когда-то привлекла сюда каждого из нас. Я призываю вас помнить, что никакие математические модели не способны заменить человеческий фактор, и если мы позволим цифрам диктовать правила наших отношений, мы рискуем остаться в идеально организованном, но совершенно пустом пространстве. Мы должны быть готовы к тому, что за прозрачностью тарифов может скрываться непрозрачность наших будущих перспектив, и этот риск лежит на каждом из нас в равной степени, независимо от выбранного тарифа.",
+    "wordCount": 846,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "трансформации",
+        "lemma": "трансформации",
+        "glosses": {
+          "es": "transformations",
+          "en": "transformations"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "эластичностью",
+        "lemma": "эластичностью",
+        "glosses": {
+          "es": "elasticity",
+          "en": "elasticity"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "компенсаторный",
+        "lemma": "компенсаторный",
+        "glosses": {
+          "es": "compensatory",
+          "en": "compensatory"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стагнации",
+        "lemma": "стагнации",
+        "glosses": {
+          "es": "stagnation",
+          "en": "stagnation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "парадокс",
+        "lemma": "парадокс",
+        "glosses": {
+          "es": "paradox",
+          "en": "paradox"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "неизбежное",
+        "lemma": "неизбежное",
+        "glosses": {
+          "es": "inevitable",
+          "en": "inevitable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.1,
+      "maxSentenceWords": 32,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная цель данного сообщения?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Объяснение новой системы тарифов"
+        },
+        {
+          "id": "a2",
+          "text": "Уведомление о повышении цен"
+        },
+        {
+          "id": "a3",
+          "text": "Предложение по улучшению офиса"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "мы вводим систему «динамической стоимости присутствия»",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему резиденты, выбирающие тихие кабинки, будут платить больше?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за высокого спроса на них"
+        },
+        {
+          "id": "a2",
+          "text": "Из-за компенсации упущенной выгоды"
+        },
+        {
+          "id": "a3",
+          "text": "Из-за затрат на звукоизоляцию"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "вы будете оплачивать не только аренду квадратных метров, но и «коэффициент упущенной выгоды» для всего сообщества.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как автор относится к тем, кто не согласен с новой политикой?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Он готов к переговорам"
+        },
+        {
+          "id": "a2",
+          "text": "Он призывает их к диалогу"
+        },
+        {
+          "id": "a3",
+          "text": "Он считает их уход естественным"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Если кто-то из вас решит покинуть «Синтез» из-за этих изменений, мы воспримем это как естественный отбор",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем автор упоминает социальное давление в четвертом абзаце?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подчеркнуть сложность выбора"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы оправдать высокую стоимость тарифов"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы предупредить о возможных конфликтах"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Является ли выбор «свободным», если каждый вариант несет за собой не только разную цену, но и разный уровень социального давления?",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в письме Марка Соловьева?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Дружелюбный и открытый"
+        },
+        {
+          "id": "a2",
+          "text": "Директивный и манипулятивный"
+        },
+        {
+          "id": "a3",
+          "text": "Извиняющийся и мягкий"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Ваше молчание будет истолковано как полное согласие с новыми правилами игры.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что автор подразумевает под «стагнацией» в контексте равенства?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Потерю прибыли"
+        },
+        {
+          "id": "a2",
+          "text": "Снижение спроса"
+        },
+        {
+          "id": "a3",
+          "text": "Отсутствие развития"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "абсолютное равенство — это утопия, ведущая к стагнации.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите ответ от лица одного из резидентов, в котором вы подвергаете сомнению этичность предложенной модели, опираясь на аргументы автора о социальной ответственности и репутации.",
+      "en": "Напишите ответ от лица одного из резидентов, в котором вы подвергаете сомнению этичность предложенной модели, опираясь на аргументы автора о социальной ответственности и репутации."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Оцените аргументацию автора и определите, насколько предложенная «свобода выбора» является инструментом манипуляции.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Иллюзия выбора в пространстве «Синтез» | C2 Reading | WeLearn",
+      "en": "Иллюзия выбора в пространстве «Синтез» | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Прочитайте электронное письмо от управляющего коворкингом и проанализируйте скрытые экономические и этические противоречия, заложенные в предложенной модели управления.",
+      "en": "Прочитайте электронное письмо от управляющего коворкингом и проанализируйте скрытые экономические и этические противоречия, заложенные в предложенной модели управления."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/shared-desks",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

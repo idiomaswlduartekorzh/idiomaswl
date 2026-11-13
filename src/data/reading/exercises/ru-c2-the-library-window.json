@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-the-library-window",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "the-library-window",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "public library hours",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Архитектура невидимого присутствия",
+      "en": "Архитектура невидимого присутствия"
+    },
+    "intro": {
+      "es": "Размышление о скрытых механизмах институциональной доступности на примере одной городской библиотеки.",
+      "en": "Размышление о скрытых механизмах институциональной доступности на примере одной городской библиотеки."
+    },
+    "mission": {
+      "es": "Проанализировать этические аспекты труда в публичных пространствах через призму литературного повествования.",
+      "en": "Проанализировать этические аспекты труда в публичных пространствах через призму литературного повествования."
+    },
+    "targetText": "Когда тяжелые дубовые двери библиотеки «Сириус» с глухим стуком закрывались в десять вечера, я часто оставалась в читальном зале, чтобы дописать отчеты. Директор, господин Аркадьев, всегда настаивал, что двери должны быть открыты для каждого страждущего до последнего удара часов, называя это «демократией пространства». В его представлении библиотека была не просто зданием, а автономным организмом, который дышит знаниями и услужливо предлагает их прохожим. Однако, глядя на то, как уборщица тетя Зоя с трудом волочит тяжелый инвентарь по бесконечным коридорам, я видела иную сторону этой метафоры. Ее труд был тем самым невидимым фундаментом, на котором покоилась величественная иллюзия доступности, созданная Аркадьевым. Мы продавали идею бесконечного просвещения, но при этом намеренно игнорировали тот факт, что за каждой минутой работы в вечернее время стояло чье-то принудительное отсутствие дома, чья-то усталость и чье-то невысказанное молчание. Аркадьев любил повторять, что библиотека — это храм, где время замирает, но он никогда не уточнял, за чей счет оно останавливается. В тот вторник произошел инцидент, который окончательно разрушил мою веру в эту благородную концепцию. Пожилой читатель, задержавшийся в отделе редких книг, случайно разлил чернила на дорогостоящий фолиант. Когда я подошла, чтобы помочь, он даже не обернулся, продолжая бормотать что-то о праве на доступ к информации, пока тетя Зоя, прервав свой ужин в подсобке, уже ползала на коленях, пытаясь спасти ковер от пятен. В этот момент я осознала, что наше «гостеприимство» — это не добродетель, а форма эксплуатации, замаскированная под гражданский долг. Я попыталась заговорить с Аркадьевым на следующий день, указав на то, что график работы персонала не соответствует заявленным идеалам. Он лишь отмахнулся, сославшись на «миссию», которая выше частных интересов сотрудников. Его слова звучали как заученная мантра, лишенная всякого сочувствия. Я поняла, что в этой системе человек — лишь расходный материал, необходимый для поддержания фасада. В тот вечер я впервые не осталась после десяти. Я вышла вместе с тетей Зоей, оставив Аркадьева в пустом зале, где он, вероятно, продолжал наслаждаться своей «демократией пространства». Снаружи город жил своей жизнью, не ведая о тех, кто обеспечивал его интеллектуальный досуг ценой собственного времени. Я чувствовала странное облегчение, хотя знала, что мой поступок не изменит структуру учреждения. Важно было лишь то, что я перестала быть соучастницей этого молчаливого договора. Теперь, проходя мимо библиотеки, я вижу не храм знаний, а декорацию, за которой скрывается тяжелая, неоплаченная работа. Аркадьев все еще верит в свое величие, но для меня библиотека навсегда останется местом, где свет в окнах горит благодаря тьме, в которой вынуждены работать другие. Мы привыкли потреблять комфорт, не задумываясь о его источнике, и пока мы будем называть это доступностью, мы будем оставаться слепы к реальности. Мой уход был не просто актом протеста, а попыткой вернуть себе право видеть мир без фильтров институциональной лжи. Теперь, когда я слышу разговоры о важности «открытых дверей», я вспоминаю не книги, а согбенную спину тети Зои и холодный, равнодушный взгляд директора, который так и не понял, что здание без людей — это лишь груда камней, лишенная души.\n\nОднако, анализируя последствия моего демарша, я отчетливо осознаю, что индивидуальный отказ от соучастия — это лишь полумера, не способная поколебать устои системы, которая питается самим понятием «общественного блага». Мой уход, при всей его эмоциональной значимости, не стал для Аркадьева уроком; напротив, он лишь подсветил его убежденность в том, что текучесть кадров — неизбежное следствие «высокой миссии». Директор быстро нашел мне замену, человека, возможно, менее критичного или более нуждающегося, что лишь подтвердило циничную истину: институциональная машина всегда найдет способ восполнить ресурс, используя человеческую уязвимость как смазочный материал для своих шестеренок. Более того, мой протест породил парадоксальный эффект: в глазах коллег я стала не борцом за справедливость, а дезертиром, оставившим их наедине с возросшей нагрузкой. В этом и заключается коварство подобных структур — они делают эксплуатацию коллективной ответственностью, превращая каждого сотрудника в надзирателя за своим соседом. Теперь, когда я наблюдаю за работой «Сириуса» со стороны, я вижу, что критика, не подкрепленная структурными изменениями, лишь укрепляет фасад, делая его более непроницаемым. Аркадьев, вероятно, даже извлек выгоду из моей позиции, представив мой уход как «естественный отбор» тех, кто не обладает достаточным духом для служения великому. Эта логика превращает любое сопротивление в подтверждение правоты угнетателя. Я осознала, что истинная трагедия заключается не только в эксплуатации труда, но и в том, что само пространство библиотеки стало инструментом легитимизации неравенства. Пока мы продолжаем измерять успех культурных институтов количеством часов работы и доступностью фондов, мы неизбежно будем жертвовать благополучием тех, кто обеспечивает этот комфорт. Мой личный акт освобождения оказался лишь иллюзией, ведь я все еще связана с этим местом невидимыми нитями воспоминаний и чувством вины перед теми, кто остался внутри. Система не просто выжила — она адаптировалась, впитав мой протест и превратив его в еще один аргумент в пользу жесткой дисциплины. Я поняла, что для реальных перемен недостаточно просто выйти за дверь; необходимо пересмотреть саму концепцию того, что мы называем культурой, и признать, что никакое знание не может считаться истинным, если оно построено на фундаменте из чужого истощения. Возможно, единственным способом разрушить этот порочный круг было бы не бегство, а солидарность, но в условиях, где каждый боится за свое место, такая идея кажется утопией, столь же далекой, как и идеалы, которые Аркадьев проповедует в своих пустых залах.",
+    "wordCount": 837,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "страждущего",
+        "lemma": "страждущего",
+        "glosses": {
+          "es": "one who is longing or suffering",
+          "en": "one who is longing or suffering"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инвентарь",
+        "lemma": "инвентарь",
+        "glosses": {
+          "es": "equipment or supplies",
+          "en": "equipment or supplies"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "фолиант",
+        "lemma": "фолиант",
+        "glosses": {
+          "es": "a large, heavy book",
+          "en": "a large, heavy book"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "мантра",
+        "lemma": "мантра",
+        "glosses": {
+          "es": "a repeated phrase or slogan",
+          "en": "a repeated phrase or slogan"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "расходный материал",
+        "lemma": "расходный материал",
+        "glosses": {
+          "es": "expendable item or resource",
+          "en": "expendable item or resource"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "соучастницей",
+        "lemma": "соучастницей",
+        "glosses": {
+          "es": "an accomplice",
+          "en": "an accomplice"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21.5,
+      "maxSentenceWords": 39,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Критика управления библиотекой"
+        },
+        {
+          "id": "a2",
+          "text": "История развития библиотечного дела"
+        },
+        {
+          "id": "a3",
+          "text": "Описание повседневной жизни читателей"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Я попыталась заговорить с Аркадьевым на следующий день, указав на то, что график работы персонала не соответствует заявленным идеалам.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что стало поводом для осознания героиней несправедливости системы?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Поломка оборудования"
+        },
+        {
+          "id": "a2",
+          "text": "Инцидент с чернилами"
+        },
+        {
+          "id": "a3",
+          "text": "Конфликт с директором"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Пожилой читатель, задержавшийся в отделе редких книг, случайно разлил чернила на дорогостоящий фолиант.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему героиня перестала оставаться после десяти вечера?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она решила уволиться"
+        },
+        {
+          "id": "a2",
+          "text": "Ее заставил это сделать господин Аркадьев"
+        },
+        {
+          "id": "a3",
+          "text": "Она не хотела больше поддерживать фасад"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Важно было лишь то, что я перестала быть соучастницей этого молчаливого договора.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор описывает тетю Зою?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подчеркнуть невидимый труд"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы показать важность чистоты"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы описать быт персонала"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Ее труд был тем самым невидимым фундаментом, на котором покоилась величественная иллюзия доступности, созданная Аркадьевым.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон повествования в конце текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оптимистичный и вдохновляющий"
+        },
+        {
+          "id": "a2",
+          "text": "Разочарованный и критический"
+        },
+        {
+          "id": "a3",
+          "text": "Нейтральный и документальный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Аркадьев все еще верит в свое величие, но для меня библиотека навсегда останется местом, где свет в окнах горит благодаря тьме, в которой вынуждены работать другие.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает выражение «расходный материал» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ценный сотрудник"
+        },
+        {
+          "id": "a2",
+          "text": "Необходимый ресурс"
+        },
+        {
+          "id": "a3",
+          "text": "Легко заменяемая единица"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Я поняла, что в этой системе человек — лишь расходный материал, необходимый для поддержания фасада.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе на тему: «Этично ли требовать полной доступности общественных услуг в ущерб условиям труда сотрудников?»",
+      "en": "Напишите эссе на тему: «Этично ли требовать полной доступности общественных услуг в ущерб условиям труда сотрудников?»"
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализировать этические аспекты труда в публичных пространствах через призму литературного повествования.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Архитектура невидимого присутствия | C2 Reading | WeLearn",
+      "en": "Архитектура невидимого присутствия | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Размышление о скрытых механизмах институциональной доступности на примере одной городской библиотеки.",
+      "en": "Размышление о скрытых механизмах институциональной доступности на примере одной городской библиотеки."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/the-library-window",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

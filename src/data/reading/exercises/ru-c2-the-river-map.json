@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-the-river-map",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "the-river-map",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "flood warning map",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Гидрографический фатализм: этика демаркации водной стихии",
+      "en": "Гидрографический фатализм: этика демаркации водной стихии"
+    },
+    "intro": {
+      "es": "Аналитическая статья о моральных дилеммах, возникающих при создании карт зон затопления, где математическая точность сталкивается с человеческой судьбой.",
+      "en": "Аналитическая статья о моральных дилеммах, возникающих при создании карт зон затопления, где математическая точность сталкивается с человеческой судьбой."
+    },
+    "mission": {
+      "es": "Проанализировать текст, чтобы выявить скрытый конфликт между административной необходимостью и этической ответственностью картографа.",
+      "en": "Проанализировать текст, чтобы выявить скрытый конфликт между административной необходимостью и этической ответственностью картографа."
+    },
+    "targetText": "Вечером того вторника инженер-гидролог Марк Левин стоял перед светящимся монитором в штабе управления водными ресурсами провинции Альтаир. На экране разворачивалась карта реки Селена, извивающейся, подобно ртутному слитку, через долину. Задача Марка была предельно ясна: провести черную линию, отделяющую зону «безопасного проживания» от «зоны потенциального затопления». Эта линия, прочерченная виртуальным пером, не была просто графическим элементом; она превращалась в юридический приговор для тысяч владельцев недвижимости. Левин понимал, что река, чье русло менялось под воздействием непредсказуемых осадков, не признает человеческих границ. Однако бюрократическая машина требовала бинарности: либо земля сухая, либо она подлежит эвакуации. Этот выбор стал для него экзистенциальным бременем, ведь любая погрешность в расчетах могла стоить людям их домов, а излишняя осторожность — неоправданно обесценить целые районы.\n\nКонфликт обострился, когда в штаб прибыла делегация из муниципалитета Нижнего Берега во главе с мэром Элиасом Торном. Торн, человек, чья политическая карьера держалась на процветании местных виноградников, настаивал на сдвиге границы на сто метров к востоку. Его аргументация строилась на том, что исторические данные не подтверждают угрозы для этой части долины. Левин, сжимая в руках отчеты о сейсмической активности и эрозии почвы, видел в этом не просто лоббизм, а опасную игру с вероятностями. «Вы пытаетесь укротить реку чернилами», — отрезал Марк, глядя в глаза мэру. Торн же парировал, что подобная «превентивная» демаркация — это акт экономического насилия, который лишит фермеров страховых выплат еще до того, как упадет первая капля дождя. В этот момент стало ясно, что карта перестала быть инструментом безопасности и превратилась в поле битвы интересов.\n\nПо мере того как дискуссия накалялась, Марк осознал, что его работа лишена объективности. Любая попытка зафиксировать изменчивую природу реки в статичной форме неизбежно приводит к искажению реальности. Он вспомнил слова своего наставника о том, что картограф — это не наблюдатель, а творец реальности. Если он проведет линию здесь, жизнь людей изменится навсегда; если там — он станет соучастником катастрофы, если река все же выйдет из берегов. Эта неопределенность мучила его, ведь он искал способ выразить вероятность, а не дихотомию, но система требовала однозначности. Он чувствовал себя демиургом, чьи руки дрожат над картой, понимая, что последствия его решения будут ощущаться десятилетиями, независимо от того, прольется ли дождь.\n\nК полуночи спор зашел в тупик. Марк отказался вносить правки, аргументируя это тем, что математическая модель не учитывает политические желания. Однако он понимал, что его упрямство может привести к тому, что его отстранят от проекта, а на его место придет более податливый специалист, который нарисует линию там, где укажет Торн. Это была ловушка: оставаясь принципиальным, он рисковал тем, что карта станет еще более неточной, но идя на компромисс, он терял право называть себя ученым. В этом заключалась трагедия его профессии — необходимость принимать решения в условиях, когда каждое действие влечет за собой моральный ущерб, а бездействие становится формой соучастия в грядущей беде.\n\nНа следующее утро, когда первые лучи солнца коснулись долины, Марк отправил окончательную версию карты в архив. Он оставил линию там, где она была, но добавил примечание о «зоне высокой неопределенности», понимая, что это лишь юридическая уловка, которая вряд ли спасет кого-то от реального потопа. Торн проиграл битву за виноградники, но Марк почувствовал, что проиграл и он сам. Он осознал, что границы, которые мы проводим на бумаге, никогда не защищают от стихии; они лишь определяют, кто будет нести ответственность, когда река наконец решит вернуть себе свое. В этом и заключался гидрографический фатализм: мы строим стены из слов и линий, надеясь, что вода их уважает, хотя на самом деле мы лишь воздвигаем памятники собственной беспомощности перед лицом хаоса.\n\nОднако последствия этого решения проявились гораздо быстрее, чем предполагал Марк, и они оказались куда более разрушительными, чем просто бюрократический скандал. Вскоре после публикации карты страховые компании, опираясь на ту самую «зону неопределенности», ввели заградительные коэффициенты для всей долины, фактически приравняв любые земли к зоне риска. Это привело к массовому оттоку капитала и заморозке всех инвестиционных проектов, превращая процветающий регион в депрессивную территорию за считанные недели. Жители, чьи дома оказались по обе стороны чернильной границы, объединились не в борьбе против наводнения, а в яростном протесте против самого Левина, чья попытка научной честности стала катализатором экономического коллапса. Марк наблюдал, как его стремление к истине обернулось социальной катастрофой, подтверждая его худшие опасения: в мире, где информация является валютой, любая попытка уточнить реальность лишь увеличивает степень энтропии. Он понял, что его научный метод, лишенный контекста человеческих судеб, оказался не инструментом спасения, а оружием, разрушающим ткань общества. В конечном итоге, река Селена оставалась спокойной, не проявляя признаков агрессии, в то время как люди, подстрекаемые страхом перед гипотетической угрозой, начали разрушать свои жизни самостоятельно. Марк осознал, что его профессиональная драма была лишь прелюдией к более глубокому кризису доверия, где экспертное знание перестало быть авторитетом, превратившись в объект манипуляций и источник всеобщего отчуждения. Он сидел в своем кабинете, глядя на пустой экран, и осознавал, что даже если бы он не провел ту линию, хаос все равно нашел бы способ проявиться, ведь само ожидание катастрофы стало для жителей Альтаира более разрушительным, чем сама вода. Его попытка проявить ответственность оказалась лишь актом высокомерия, показавшим, что человек, пытающийся навязать природе и обществу жесткий порядок, всегда проигрывает, создавая лишь новые формы хаоса, которые невозможно предсказать никакими моделями. Теперь он понимал, что истинная мудрость заключалась не в проведении границ, а в признании того, что некоторые вещи невозможно контролировать, и любая попытка зафиксировать будущее лишь приближает его крах.",
+    "wordCount": 862,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "демаркация",
+        "lemma": "демаркация",
+        "glosses": {
+          "es": "the action of fixing the boundary or limits of something",
+          "en": "the action of fixing the boundary or limits of something"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "бинарности",
+        "lemma": "бинарности",
+        "glosses": {
+          "es": "a state of having two parts or being divided into two options",
+          "en": "a state of having two parts or being divided into two options"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "лоббизм",
+        "lemma": "лоббизм",
+        "glosses": {
+          "es": "the activity of attempting to influence the actions or decisions of officials",
+          "en": "the activity of attempting to influence the actions or decisions of officials"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "дихотомию",
+        "lemma": "дихотомию",
+        "glosses": {
+          "es": "a division or contrast between two things that are represented as being opposed",
+          "en": "a division or contrast between two things that are represented as being opposed"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "демиург",
+        "lemma": "демиург",
+        "glosses": {
+          "es": "a creator or artisan, often implying a god-like power over creation",
+          "en": "a creator or artisan, often implying a god-like power over creation"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "фатализм",
+        "lemma": "фатализм",
+        "glosses": {
+          "es": "the belief that all events are predetermined and therefore inevitable",
+          "en": "the belief that all events are predetermined and therefore inevitable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 21,
+      "maxSentenceWords": 40,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная проблема, описанная в статье?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Моральный конфликт при создании карт"
+        },
+        {
+          "id": "a2",
+          "text": "Техническая сложность прогнозирования наводнений"
+        },
+        {
+          "id": "a3",
+          "text": "Коррупция в муниципальных органах власти"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Этот выбор стал для него экзистенциальным бременем, ведь любая погрешность в расчетах могла стоить людям их домов",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему мэр Торн хотел изменить границы на карте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за личной неприязни к Марку"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы спасти виноградники"
+        },
+        {
+          "id": "a3",
+          "text": "Ради безопасности жителей города"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Торн, человек, чья политическая карьера держалась на процветании местных виноградников, настаивал на сдвиге границы на сто метров к востоку.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Что чувствовал Марк в конце истории?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Торжество справедливости"
+        },
+        {
+          "id": "a2",
+          "text": "Облегчение от завершения проекта"
+        },
+        {
+          "id": "a3",
+          "text": "Глубокую профессиональную неудовлетворенность"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Торн проиграл битву за виноградники, но Марк почувствовал, что проиграл и он сам.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор использует метафору «ртутного слитка»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подчеркнуть непредсказуемость и изменчивость реки"
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы описать химический состав воды в регионе"
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы показать технологическое развитие штаба"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "На экране разворачивалась карта реки Селена, извивающейся, подобно ртутному слитку, через долину.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон повествования в данном тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ироничный и легкий"
+        },
+        {
+          "id": "a2",
+          "text": "Рефлексивный и напряженный"
+        },
+        {
+          "id": "a3",
+          "text": "Сухой и отчетно-документальный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Эта неопределенность мучила его, ведь он искал способ выразить вероятность, а не дихотомию, но система требовала однозначности.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает понятие «демаркация» в контексте данной статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Процесс измерения глубины реки"
+        },
+        {
+          "id": "a2",
+          "text": "Оценка ущерба от наводнения"
+        },
+        {
+          "id": "a3",
+          "text": "Установление границ на карте"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Задача Марка была предельно ясна: провести черную линию, отделяющую зону «безопасного проживания» от «зоны потенциального затопления».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (200-250 слов), в котором вы аргументируете, должен ли инженер-картограф нести персональную ответственность за социальные последствия своих технических решений, или же ответственность должна лежать исключительно на государственных институтах.",
+      "en": "Напишите эссе (200-250 слов), в котором вы аргументируете, должен ли инженер-картограф нести персональную ответственность за социальные последствия своих технических решений, или же ответственность должна лежать исключительно на государственных институтах."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализировать текст, чтобы выявить скрытый конфликт между административной необходимостью и этической ответственностью картографа.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Гидрографический фатализм: этика демаркации водной стихии | C2 Reading | WeLearn",
+      "en": "Гидрографический фатализм: этика демаркации водной стихии | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Аналитическая статья о моральных дилеммах, возникающих при создании карт зон затопления, где математическая точность сталкивается с человеческой судьбой.",
+      "en": "Аналитическая статья о моральных дилеммах, возникающих при создании карт зон затопления, где математическая точность сталкивается с человеческой судьбой."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/the-river-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

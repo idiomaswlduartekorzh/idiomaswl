@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-a-name-on-the-map",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "a-name-on-the-map",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "place names",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Картография забвения",
+      "en": "Картография забвения"
+    },
+    "intro": {
+      "es": "В этом эссе исследуется философский конфликт между объективной фиксацией пространства и субъективным актом исключения памяти при создании географических карт.",
+      "en": "В этом эссе исследуется философский конфликт между объективной фиксацией пространства и субъективным актом исключения памяти при создании географических карт."
+    },
+    "mission": {
+      "es": "Прочитайте текст и проанализируйте, как выбор топонимов влияет на историческую память и восприятие реальности.",
+      "en": "Прочитайте текст и проанализируйте, как выбор топонимов влияет на историческую память и восприятие реальности."
+    },
+    "targetText": "Старый кабинет картографа Элиаса Торна был заполнен запахом пергамента и пыли. Его последняя работа, «Атлас забытых берегов», представляла собой амбициозный проект по восстановлению топонимики северного архипелага до того, как колониальные власти стерли коренные названия с официальных реестров. Элиас сидел за столом, вглядываясь в пожелтевшую кальку, на которой едва проступали контуры бухты, некогда называвшейся «Шепот китов». В официальных документах, изданных десятилетия назад, это место значилось как «Бухта Адмирала». Для Элиаса это не было просто переименованием; это была ампутация памяти. Он понимал, что каждая чернильная линия на его карте — это не только навигационный ориентир, но и акт политического противостояния. Его помощница, молодая исследовательница Клара, вошла в комнату с кипой отчетов, которые подтверждали, что современные власти не намерены признавать старые названия, считая их «исторически неактуальными». Клара настаивала на том, что карта должна отражать современное состояние дел, чтобы быть полезной для навигации, однако Элиас видел в этом капитуляцию перед забвением. Он знал, что если он нанесет на карту только «Бухту Адмирала», он станет соучастником стирания целого пласта культуры, которая когда-то здесь процветала. Конфликт между функциональностью и правдой становился все более острым. Элиас вспоминал рассказы стариков, которые помнили, как «Шепот китов» был местом сбора рыбаков, чьи песни сливались с океанским прибоем. Теперь же, в эпоху цифровых навигаторов, эти песни превратились в статистические данные о глубине фарватера. Он взял перо и твердой рукой вывел на полях карты исконное название, понимая, что это решение может стоить ему репутации в академических кругах. Вечером того же дня, когда последние лучи солнца пробивались сквозь витражные окна, Элиас завершил работу. Он осознавал, что его карта никогда не попадет в государственные архивы, но она станет своего рода манифестом. Клара, взглянув на готовый лист, лишь покачала головой, видя в этом не научный вклад, а упрямый идеализм. Она указала на то, что использование устаревших топонимов лишь запутает будущих мореплавателей, создавая разрыв между картой и реальностью. Элиас же ответил, что реальность — это не только то, что можно измерить эхолотом, но и то, что хранится в коллективном сознании. В этот момент он осознал, что его проект не был попыткой вернуть прошлое, а попыткой предотвратить окончательную потерю идентичности места. Когда он закрыл кабинет, он оставил на столе атлас, где старые названия сосуществовали с новыми, создавая своего рода палимпсест памяти. Он понимал, что его работа останется незавершенной, так как память — это живой процесс, а не статичная линия на бумаге. В тишине пустой комнаты он чувствовал, как карты на стенах словно дышат, храня в себе голоса тех, кого официально уже не существовало. Это было его личное поражение перед лицом прогресса и одновременно его величайшая победа над молчанием истории. Он знал, что завтрашний день принесет новые требования об изменениях, но сегодня он позволил месту быть самим собой, вернув ему право на имя. Его карта стала мостом между тем, что было забыто, и тем, что навязывается как единственно верное. И в этом пространстве между двумя названиями, в этой узкой полоске чернил, он нашел то, что искал — истину, которая не нуждается в одобрении властей, чтобы существовать в вечности.\n\nОднако, по мере того как сумерки окончательно поглощали кабинет, в сознании Элиаса начала прорастать тревожная мысль, бросающая тень на его триумф. Клара, несмотря на свой прагматизм, была права в одном: навигация — это язык безопасности, и создание двуязычного палимпсеста в руках неопытного капитана могло обернуться катастрофой. Если судно, ведомое его картой, сбилось бы с курса в тумане, ориентируясь на «Шепот китов» вместо официальной «Бухты Адмирала», цена этой исторической правды измерялась бы не в академических спорах, а в человеческих жизнях. Элиас осознал, что его акт интеллектуального сопротивления невольно превращался в опасный артефакт, способный дезориентировать тех, кто искал в карте не истину, а спасение от стихии. Этот конфликт между этикой памяти и этикой ответственности за безопасность мореплавателей создавал непреодолимый разрыв. Он понял, что, пытаясь спасти идентичность места, он рисковал стать виновником новой трагедии, которая лишь подтвердила бы аргументы колониальных чиновников о необходимости «упорядочивания» пространства. В этот момент идеализм Элиаса столкнулся с жестокой реальностью прогресса: власть над именами всегда сопряжена с властью над безопасностью. Если он опубликует атлас, он станет изгоем, чьи карты будут изымать из обращения как опасные для мореплавания документы. Если же он спрячет его в стол, то совершит акт самоцензуры, окончательно признав, что голос прошлого не имеет права звучать в современном мире. Этот парадокс преследовал его, заставляя переосмыслить само понятие картографии. Возможно, истинная задача картографа заключается не в том, чтобы навязывать единственно верное название, а в том, чтобы обучить будущие поколения чтению слоев истории, не теряя при этом связи с навигационной точностью. Элиас понял, что его работа была лишь первым шагом в долгой цепи изменений, где каждое последующее поколение должно будет самостоятельно выбирать, какому голосу доверить свою судьбу в открытом море. Его атлас перестал быть просто документом; он превратился в философский манифест, требующий от читателя не слепого доверия, а критического осмысления каждого топонима. В тишине кабинета он осознал, что подлинная победа над забвением лежит не в чернилах на бумаге, а в способности человека осознавать двойственность мира, в котором он живет, принимая на себя бремя выбора между удобством официальной версии и глубиной исторической правды, даже если этот выбор требует от него готовности нести ответственность за последствия своих убеждений.",
+    "wordCount": 837,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "топонимики",
+        "lemma": "топонимики",
+        "glosses": {
+          "es": "the study of place names",
+          "en": "the study of place names"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "ампутация",
+        "lemma": "ампутация",
+        "glosses": {
+          "es": "the act of surgically removing a part of the body, here used metaphorically for removing history",
+          "en": "the act of surgically removing a part of the body, here used metaphorically for removing history"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "капитуляцию",
+        "lemma": "капитуляцию",
+        "glosses": {
+          "es": "surrender",
+          "en": "surrender"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "фарватер",
+        "lemma": "фарватер",
+        "glosses": {
+          "es": "a navigable channel in a body of water",
+          "en": "a navigable channel in a body of water"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "палимпсест",
+        "lemma": "палимпсест",
+        "glosses": {
+          "es": "a manuscript or piece of writing on which the original writing has been effaced to make room for later writing but of which traces remain",
+          "en": "a manuscript or piece of writing on which the original writing has been effaced to make room for later writing but of which traces remain"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "идеализм",
+        "lemma": "идеализм",
+        "glosses": {
+          "es": "the practice of forming or pursuing ideals, especially unrealistically",
+          "en": "the practice of forming or pursuing ideals, especially unrealistically"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 20.9,
+      "maxSentenceWords": 54,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного произведения?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Этический выбор картографа между историей и функциональностью."
+        },
+        {
+          "id": "a2",
+          "text": "Технические аспекты создания морских навигационных карт."
+        },
+        {
+          "id": "a3",
+          "text": "История колонизации северного архипелага властями."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Конфликт между функциональностью и правдой становился все более острым.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему Клара не одобряет решение Элиаса?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Она боится гнева колониальных властей."
+        },
+        {
+          "id": "a2",
+          "text": "Она считает, что карта должна быть полезной для навигации."
+        },
+        {
+          "id": "a3",
+          "text": "Она уверена, что старые названия не имеют исторической ценности."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Клара настаивала на том, что карта должна отражать современное состояние дел, чтобы быть полезной для навигации",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Что символизирует 'палимпсест памяти' в контексте работы Элиаса?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Сложность восстановления древних рукописей."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимость полного удаления современных названий с карт."
+        },
+        {
+          "id": "a3",
+          "text": "Наложение старых названий на новые для сохранения исторической преемственности."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "он оставил на столе атлас, где старые названия сосуществовали с новыми, создавая своего рода палимпсест памяти.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор вводит персонажа Клары в повествование?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы создать конфликт, демонстрирующий столкновение между прошлым и настоящим."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы показать прагматичный взгляд на картографию."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы подчеркнуть, что Элиас одинок в своих убеждениях."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Клара, взглянув на готовый лист, лишь покачала головой, видя в этом не научный вклад, а упрямый идеализм.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в описании деятельности Элиаса?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ироничный и скептический."
+        },
+        {
+          "id": "a2",
+          "text": "Меланхоличный и рефлексивный."
+        },
+        {
+          "id": "a3",
+          "text": "Деловой и документальный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "В тишине пустой комнаты он чувствовал, как карты на стенах словно дышат, храня в себе голоса тех, кого официально уже не существовало.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что подразумевается под словом 'ампутация' в первом абзаце?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Физическое повреждение старых карт."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимое обновление устаревших географических данных."
+        },
+        {
+          "id": "a3",
+          "text": "Насильственное и болезненное удаление культурной памяти."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Для Элиаса это не было просто переименованием; это была ампутация памяти.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (200-250 слов), в котором вы аргументируете, должны ли современные карты отражать только официальные названия или сохранять исторические топонимы, даже если они не используются властями.",
+      "en": "Напишите эссе (200-250 слов), в котором вы аргументируете, должны ли современные карты отражать только официальные названия или сохранять исторические топонимы, даже если они не используются властями."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Прочитайте текст и проанализируйте, как выбор топонимов влияет на историческую память и восприятие реальности.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Картография забвения | C2 Reading | WeLearn",
+      "en": "Картография забвения | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В этом эссе исследуется философский конфликт между объективной фиксацией пространства и субъективным актом исключения памяти при создании географических карт.",
+      "en": "В этом эссе исследуется философский конфликт между объективной фиксацией пространства и субъективным актом исключения памяти при создании географических карт."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/a-name-on-the-map",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

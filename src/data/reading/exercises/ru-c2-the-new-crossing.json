@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-the-new-crossing",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "the-new-crossing",
+  "series": null,
+  "classification": {
+    "genre": "article",
+    "topic": "pedestrian crossing",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Эпистемология неслучившегося: метафизика пешеходного перехода",
+      "en": "Эпистемология неслучившегося: метафизика пешеходного перехода"
+    },
+    "intro": {
+      "es": "В данной статье исследуется парадокс предотвращенной катастрофы, где отсутствие физических следов ставит под сомнение сам факт угрозы.",
+      "en": "В данной статье исследуется парадокс предотвращенной катастрофы, где отсутствие физических следов ставит под сомнение сам факт угрозы."
+    },
+    "mission": {
+      "es": "Проанализируйте философский конфликт между эмпирическим наблюдением и субъективным восприятием риска в контексте городской безопасности.",
+      "en": "Проанализируйте философский конфликт между эмпирическим наблюдением и субъективным восприятием риска в контексте городской безопасности."
+    },
+    "targetText": "Вечерний час пик на перекрестке улиц Вербной и Ольховой всегда напоминает хаотичную симфонию, где каждый участник движения исполняет свою партию с разной степенью ответственности. Инженер-градостроитель Аркадий Петрович стоял на тротуаре, наблюдая за тем, как поток автомобилей, словно пульсирующая артерия, бездумно пересекает зебру. В этот момент он заметил женщину, стоявшую у края бордюра с коляской, и молодого водителя на ярко-синем седане, чей темп движения явно не соответствовал дорожным знакам. Аркадий Петрович, обладая профессиональной деформацией, мгновенно вычислил траекторию: еще секунда, и произойдет столкновение, которое оставит после себя лишь битое стекло и искалеченные судьбы. Он сделал резкий шаг вперед, поднял руку, вынуждая водителя экстренно затормозить, и женщина с коляской благополучно перешла дорогу. Никто не остановился, чтобы поблагодарить его; никто не зафиксировал инцидент. Через минуту перекресток снова жил своей жизнью, а Аркадий Петрович остался стоять, охваченный странным чувством интеллектуальной изоляции.\n\nНа следующее утро в городском департаменте транспорта разгорелся спор, когда Аркадий Петрович попытался внести этот инцидент в отчет о необходимости установки светофора. Начальник отдела, прагматичный чиновник по фамилии Громов, с иронией посмотрел на коллегу. «Аркадий, где доказательства? — спросил он, постукивая пальцами по столу. — В статистике аварийности этот перекресток чист, как слеза младенца. Вы предлагаете нам тратить бюджетные средства на основе вашего субъективного ощущения угрозы, которая, по сути, не материализовалась?». Этот вопрос обнажил фундаментальную проблему: что считать свидетельством в мире, где отсутствие катастрофы стирает следы ее потенциальности. Для Громова истина была тождественна задокументированному ущербу, тогда как для Аркадия Петровича она заключалась в предотвращенном хаосе.\n\nКонфликт между ними стал метафорой более широкого процесса, в котором бюрократическая машина требует осязаемых последствий для принятия решений. Аркадий Петрович понимал, что если он не докажет наличие опасности, то следующий случай может оказаться фатальным. Он начал собирать косвенные улики: записи с камер видеонаблюдения соседних магазинов, свидетельские показания случайных прохожих, даже аналитику тормозного пути на асфальте, который он измерил самостоятельно. Однако Громов оставался непреклонен, аргументируя это тем, что «неслучившееся» не может быть аргументом в пользу инфраструктурных изменений. Он настаивал на том, что любая интерпретация событий, не имеющая материального подтверждения в виде протокола ДТП, является не более чем плодом воображения обеспокоенного инженера.\n\nСитуация достигла своего апогея, когда Аркадий Петрович принес на совещание видеозапись, где запечатлен момент торможения синего седана. На экране было видно, как машина резко останавливается перед самой линией перехода, хотя никакой видимой преграды для водителя не было. Громов, посмотрев запись, лишь усмехнулся: «Это доказывает лишь то, что водитель был внимателен. Вы видите здесь предотвращенную трагедию, я же вижу работу системы в штатном режиме». Аркадий Петрович осознал, что его позиция проигрывает не из-за отсутствия фактов, а из-за разницы в эпистемологических установках. Для одного реальность — это то, что можно измерить постфактум, для другого — то, что нужно предвидеть до момента разрушения.\n\nВ итоге, светофор так и не был установлен. Аркадий Петрович продолжал приходить на перекресток по вечерам, становясь негласным стражем порядка, чьи действия оставались невидимыми для официальной статистики. Он понял, что его борьба — это попытка придать вес тому, чего не существует в архивах. В этой тишине неслучившегося скрывалась самая страшная правда: система безопасности, основанная исключительно на прошлых потерях, всегда будет опаздывать на один шаг. Он смотрел на поток машин, зная, что когда-нибудь его «ощущения» станут частью протокола, но цена этого признания будет измеряться в человеческих жизнях, а не в его гражданской бдительности. И в этом осознании заключалась его личная, неразрешимая трагедия.\n\nОднако спустя несколько месяцев после этих событий городская среда начала меняться, словно отвечая на невысказанный запрос Аркадия Петровича, но совсем не так, как он ожидал. Статистика, на которую опирался Громов, внезапно перестала быть безупречной: на соседних улицах, где светофоры были установлены согласно строгим протоколам, количество мелких аварий резко возросло из-за эффекта «ложного спокойствия». Водители, привыкшие доверять автоматике, утратили бдительность, превратившись в заложников алгоритмов, которые регулировали их жизнь. Аркадий Петрович с горечью осознал, что его личное присутствие на перекрестке Вербной и Ольховой создавало уникальную аномалию: его фигура, маячившая на тротуаре, подсознательно дисциплинировала автомобилистов, заставляя их притормаживать чаще, чем того требовала дорожная разметка. Это был парадокс «наблюдателя», где человеческий фактор, не зафиксированный ни в одной базе данных, выступал единственным сдерживающим механизмом. Когда же он, устав от бесплодной борьбы, однажды вечером не пришел на свое привычное место, поток машин на перекрестке не замедлился, словно почувствовав отсутствие невидимого контроля. Именно в этот момент, когда Аркадий Петрович сидел дома, разглядывая чертежи, на перекрестке случилось то, чего он так опасался — столкновение, ставшее первой официальной записью в журнале происшествий. Громов, получив долгожданный отчет, счел это лишь досадной случайностью, не требующей пересмотра инфраструктуры, и с готовностью подписал распоряжение об установке светофора, который теперь стал обоснованным «результатом». Инженер понял, что система не просто игнорировала его предупреждения, она нуждалась в крови, чтобы оправдать собственное существование и легитимизировать бюджетные траты. Его борьба за безопасность превратилась в зловещий цикл: чтобы предотвратить беду, нужно было сначала допустить её, превратив человеческую трагедию в сухую цифру, пригодную для бюрократического отчета. Аркадий Петрович осознал, что его стремление быть «стражем» лишь отсрочило неизбежное, а сама логика городского управления была устроена так, что истинная превенция была невозможна в принципе, ибо она лишала чиновников главного инструмента их власти — возможности реагировать на уже свершившееся зло, а не предотвращать его до рождения.",
+    "wordCount": 835,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "деформацией",
+        "lemma": "деформацией",
+        "glosses": {
+          "es": "a distortion or alteration, often used metaphorically for professional bias",
+          "en": "a distortion or alteration, often used metaphorically for professional bias"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "эпистемологических",
+        "lemma": "эпистемологических",
+        "glosses": {
+          "es": "relating to the theory of knowledge and how we know what we know",
+          "en": "relating to the theory of knowledge and how we know what we know"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "постукивая",
+        "lemma": "постукивая",
+        "glosses": {
+          "es": "tapping repeatedly",
+          "en": "tapping repeatedly"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "постфактум",
+        "lemma": "постфактум",
+        "glosses": {
+          "es": "after the fact; retrospectively",
+          "en": "after the fact; retrospectively"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "инфраструктурных",
+        "lemma": "инфраструктурных",
+        "glosses": {
+          "es": "related to the basic physical and organizational structures",
+          "en": "related to the basic physical and organizational structures"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "осязаемых",
+        "lemma": "осязаемых",
+        "glosses": {
+          "es": "tangible; able to be touched or clearly perceived",
+          "en": "tangible; able to be touched or clearly perceived"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 19,
+      "maxSentenceWords": 47,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт восприятия риска."
+        },
+        {
+          "id": "a2",
+          "text": "Необходимость светофоров."
+        },
+        {
+          "id": "a3",
+          "text": "Безопасность на дорогах."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Этот вопрос обнажил фундаментальную проблему: что считать свидетельством в мире, где отсутствие катастрофы стирает следы ее потенциальности.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Почему Громов отказался ставить светофор?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Слишком высокая цена."
+        },
+        {
+          "id": "a2",
+          "text": "Нет аварий в статистике."
+        },
+        {
+          "id": "a3",
+          "text": "Мало доказательств."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "В статистике аварийности этот перекресток чист, как слеза младенца.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Как Аркадий Петрович относится к своей роли?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чувствует себя героем."
+        },
+        {
+          "id": "a2",
+          "text": "Считает работу рутиной."
+        },
+        {
+          "id": "a3",
+          "text": "Ощущает себя стражем."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Аркадий Петрович продолжал приходить на перекресток по вечерам, становясь негласным стражем порядка",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Зачем автор описывает видеозапись?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Проиллюстрировать разницу в интерпретации реальности."
+        },
+        {
+          "id": "a2",
+          "text": "Показать упрямство Громова."
+        },
+        {
+          "id": "a3",
+          "text": "Доказать вину водителя седана."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Аркадий Петрович осознал, что его позиция проигрывает не из-за отсутствия фактов, а из-за разницы в эпистемологических установках.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Каков тон финала статьи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оптимистичный."
+        },
+        {
+          "id": "a2",
+          "text": "Меланхоличный."
+        },
+        {
+          "id": "a3",
+          "text": "Критический."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "И в этом осознании заключалась его личная, неразрешимая трагедия.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что означает слово 'осязаемых' в тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Видимых."
+        },
+        {
+          "id": "a2",
+          "text": "Важных."
+        },
+        {
+          "id": "a3",
+          "text": "Материальных."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "бюрократическая машина требует осязаемых последствий для принятия решений",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (200-250 слов), в котором аргументируйте, должна ли государственная система безопасности опираться исключительно на статистику прошлых инцидентов или же на превентивные прогнозы экспертов.",
+      "en": "Напишите эссе (200-250 слов), в котором аргументируйте, должна ли государственная система безопасности опираться исключительно на статистику прошлых инцидентов или же на превентивные прогнозы экспертов."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализируйте философский конфликт между эмпирическим наблюдением и субъективным восприятием риска в контексте городской безопасности.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Эпистемология неслучившегося: метафизика пешеходного перехода | C2 Reading | WeLearn",
+      "en": "Эпистемология неслучившегося: метафизика пешеходного перехода | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В данной статье исследуется парадокс предотвращенной катастрофы, где отсутствие физических следов ставит под сомнение сам факт угрозы.",
+      "en": "В данной статье исследуется парадокс предотвращенной катастрофы, где отсутствие физических следов ставит под сомнение сам факт угрозы."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/the-new-crossing",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-voices-in-the-archive",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "voices-in-the-archive",
+  "series": null,
+  "classification": {
+    "genre": "story",
+    "topic": "oral history archive",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Эхо в янтаре",
+      "en": "Эхо в янтаре"
+    },
+    "intro": {
+      "es": "В этом упражнении рассматривается этическая дилемма куратора архива устной истории, который сталкивается с парадоксом фиксации живой речи в статичном цифровом формате.",
+      "en": "В этом упражнении рассматривается этическая дилемма куратора архива устной истории, который сталкивается с парадоксом фиксации живой речи в статичном цифровом формате."
+    },
+    "mission": {
+      "es": "Проанализируйте текст, чтобы понять философский конфликт между сохранением исторической правды и уважением к изменчивой природе человеческой памяти.",
+      "en": "Проанализируйте текст, чтобы понять философский конфликт между сохранением исторической правды и уважением к изменчивой природе человеческой памяти."
+    },
+    "targetText": "Архивариус Илья Маркович сидел в полумраке фонотеки, слушая хриплый, надтреснутый голос покойного профессора Вершинина. Запись, сделанная тридцать лет назад на катушечный магнитофон, была оцифрована с хирургической точностью, но в этом-то и крылась проблема. Илья Маркович чувствовал, как стерильная чистота звука убивает саму суть рассказа: запинки, тяжелые вздохи и случайные оговорки, которые раньше казались досадными помехами, теперь превратились в памятники ушедшей эпохи. Он понимал, что, превращая живой поток сознания в упорядоченный архивный файл, он совершает своего рода насилие над памятью. Вершинин, человек импульсивный и противоречивый, при жизни постоянно менял свои взгляды, переосмысливал прошлое и часто отказывался от собственных слов. Теперь же его голос был навсегда замурован в цифровой янтарь, лишенный возможности развиваться или быть опровергнутым самим автором.\n\nКонфликт обострился, когда в фонд обратилась дочь профессора, требуя изъять из открытого доступа запись, где её отец в порыве гнева несправедливо обвинял коллегу в плагиате. Она утверждала, что в последние годы жизни Вершинин глубоко раскаивался в этих словах и просил прощения у всех, кого задел. Для неё запись была не историческим документом, а клеймом, которое продолжало жечь репутацию человека, уже не способного защитить себя. Илья Маркович оказался меж двух огней: как профессионал, он был обязан хранить целостность архива, но как человек, он видел, что фиксация голоса в неизменном виде создает ложную картину реальности, где гневная вспышка становится важнее целой жизни, посвященной науке и примирению.\n\nВ архиве царила тишина, нарушаемая лишь гулом серверов. Илья Маркович перебирал описи, пытаясь найти прецедент, но все правила сводились к одному: документ неприкосновенен. Однако он понимал, что «документ» в данном случае — это не просто бумага, а живое свидетельство, которое в отрыве от контекста превращается в инструмент клеветы. Он представил себе, как будущие исследователи будут слушать этот голос, не зная о том, что профессор давно отрекся от этих слов. Ирония судьбы заключалась в том, что, пытаясь спасти голос от забвения, он способствовал его искажению. Он стал смотрителем музея, где экспонаты живут своей жизнью, не имея возможности измениться, даже если это необходимо для правды.\n\nВечером того же дня он встретился с дочерью профессора в пустом читальном зале. Она не просила об удалении всей коллекции, лишь о добавлении комментария к спорной записи. Это казалось разумным компромиссом, но Илья Маркович знал, что любой комментарий лишь добавит новый слой интерпретации, еще дальше уводя слушателя от первоначального опыта. Он предложил альтернативу: создать вторую, «контекстуальную» запись, где были бы отражены поздние взгляды профессора, но это решение выглядело как попытка заштопать дыру на дорогой ткани, которая от этого становилась лишь заметнее. Дочь смотрела на него с надеждой, не понимая, что его отказ — это не бюрократическая черствость, а страх перед тем, что он сам станет соавтором лжи.\n\nВ конечном итоге Илья Маркович оставил запись без изменений, добавив лишь сухую пометку в каталоге о наличии опровергающих свидетельств в других фондах. Он понимал, что это решение не принесло облегчения ни ему, ни семье профессора. Он вышел на улицу, где город жил своей шумной, хаотичной жизнью, в которой слова растворялись в воздухе, не оставляя следа. В архиве же голос Вершинина продолжал звучать в своей неизменной, застывшей форме, напоминая о том, что истина — это всегда процесс, а не результат. Илья Маркович осознал, что его работа — это бесконечная попытка удержать воду в решете, и что в этой борьбе с временем он всегда будет проигравшим, ибо нельзя сохранить жизнь, не превратив её в музейный экспонат.\n\nОднако спустя месяцы Илья Маркович осознал, что его попытка сохранить «чистоту» архива породила феномен, который он не мог предвидеть: запись стала автономным мифом. Студенты и исследователи, привлеченные скандальной репутацией профессора, начали цитировать именно этот фрагмент, игнорируя поздние труды и примирительные жесты Вершинина. Ирония заключалась в том, что сухая пометка в каталоге, призванная служить предохранителем, превратилась в своего рода путеводитель, указывающий на «самое интересное» и «неудобное». Люди искали в архиве не истину, а подтверждение своих предубеждений, находя в застывшем голосе профессора оправдание собственной нетерпимости. Илья Маркович с ужасом наблюдал, как фрагментарная правда, вырванная из контекста и закрепленная цифровым бессмертием, начала обретать собственную волю, вытесняя многогранный образ человека. Эта ситуация вскрыла фундаментальный парадокс архивирования: чем тщательнее мы фиксируем детали прошлого, тем сильнее мы способствуем их деформации в настоящем. Он понял, что его профессиональная верность букве закона стала соучастником искажения духа, превратив архив в инструмент манипуляции общественным мнением. Каждое прослушивание записи теперь не восстанавливало память о Вершинине, а лишь множило вокруг его имени новые слои недопонимания, которые становились всё более непроницаемыми. Илья Маркович осознал, что его страх перед «соавторством лжи» оказался напрасным, ибо ложь уже давно поселилась в самой структуре хранения, где доступность информации не гарантирует понимания, а лишь упрощает путь к ошибке. Он смотрел на бесконечные ряды серверов, чувствуя, как тяжесть этой ответственности давит на него всё сильнее. Теперь он понимал, что истинное предательство памяти заключается не в уничтожении документа, а в его фанатичном сохранении без учета того, как время меняет восприятие слов. В этой цифровой вечности голос профессора, когда-то живой и изменчивый, стал идеальным инструментом для тех, кто не ищет прощения, а жаждет лишь подтверждения своей правоты, превращая архив из хранилища мудрости в зеркало, отражающее только тени наших собственных заблуждений, которые мы так упорно отказываемся признавать, скрываясь за холодной броней объективности и архивного долга.",
+    "wordCount": 837,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "оцифрована",
+        "lemma": "оцифрована",
+        "glosses": {
+          "es": "digitized",
+          "en": "digitized"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "стерильная",
+        "lemma": "стерильная",
+        "glosses": {
+          "es": "sterile",
+          "en": "sterile"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "замурован",
+        "lemma": "замурован",
+        "glosses": {
+          "es": "walled in",
+          "en": "walled in"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "неприкосновенен",
+        "lemma": "неприкосновенен",
+        "glosses": {
+          "es": "inviolable",
+          "en": "inviolable"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "черствость",
+        "lemma": "черствость",
+        "glosses": {
+          "es": "callousness",
+          "en": "callousness"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "решете",
+        "lemma": "решете",
+        "glosses": {
+          "es": "sieve",
+          "en": "sieve"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 22,
+      "maxSentenceWords": 52,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная тема данного рассказа?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Конфликт между сохранением истории и её искажением"
+        },
+        {
+          "id": "a2",
+          "text": "Технические аспекты оцифровки архивов"
+        },
+        {
+          "id": "a3",
+          "text": "Этическая ответственность семьи перед памятью умершего"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Он понимал, что, превращая живой поток сознания в упорядоченный архивный файл, он совершает своего рода насилие над памятью.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что именно требовала дочь профессора от архивариуса?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Добавить комментарий к записи"
+        },
+        {
+          "id": "a2",
+          "text": "Удалить запись из доступа"
+        },
+        {
+          "id": "a3",
+          "text": "Изменить содержание аудиозаписи"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Конфликт обострился, когда в фонд обратилась дочь профессора, требуя изъять из открытого доступа запись, где её отец в порыве гнева несправедливо обвинял коллегу в плагиате.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему Илья Маркович чувствовал себя соавтором лжи?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Из-за подделки архивных данных"
+        },
+        {
+          "id": "a2",
+          "text": "Из-за давления со стороны коллег"
+        },
+        {
+          "id": "a3",
+          "text": "Из-за отказа изменить запись"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Дочь смотрела на него с надеждой, не понимая, что его отказ — это не бюрократическая черствость, а страх перед тем, что он сам станет соавтором лжи.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "Какова цель описания вечерней встречи в читальном зале?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Продемонстрировать тщетность попыток исправить прошлое"
+        },
+        {
+          "id": "a2",
+          "text": "Показать нерешительность героя"
+        },
+        {
+          "id": "a3",
+          "text": "Описать профессиональные сложности работы с документами"
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Он предложил альтернативу: создать вторую, «контекстуальную» запись, где были бы отражены поздние взгляды профессора, но это решение выглядело как попытка заштопать дыру на дорогой ткани, которая от этого становилась лишь заметнее.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Какой тон преобладает в заключительном абзаце текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Оптимистичный"
+        },
+        {
+          "id": "a2",
+          "text": "Философски-меланхоличный"
+        },
+        {
+          "id": "a3",
+          "text": "Критический и обличительный"
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Илья Маркович осознал, что его работа — это бесконечная попытка удержать воду в решете, и что в этой борьбе с временем он всегда будет проигравшим, ибо нельзя сохранить жизнь, не превратив её в музейный экспонат.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что автор подразумевает под метафорой «цифровой янтарь»?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Ценность записи"
+        },
+        {
+          "id": "a2",
+          "text": "Техническую хрупкость"
+        },
+        {
+          "id": "a3",
+          "text": "Неизменность формы"
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Теперь же его голос был навсегда замурован в цифровой янтарь, лишенный возможности развиваться или быть опровергнутым самим автором.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (200-250 слов), в котором аргументируйте, должна ли историческая правда быть статичной или она должна меняться вместе с восприятием общества.",
+      "en": "Напишите эссе (200-250 слов), в котором аргументируйте, должна ли историческая правда быть статичной или она должна меняться вместе с восприятием общества."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализируйте текст, чтобы понять философский конфликт между сохранением исторической правды и уважением к изменчивой природе человеческой памяти.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Эхо в янтаре | C2 Reading | WeLearn",
+      "en": "Эхо в янтаре | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "В этом упражнении рассматривается этическая дилемма куратора архива устной истории, который сталкивается с парадоксом фиксации живой речи в статичном цифровом формате.",
+      "en": "В этом упражнении рассматривается этическая дилемма куратора архива устной истории, который сталкивается с парадоксом фиксации живой речи в статичном цифровом формате."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/voices-in-the-archive",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}

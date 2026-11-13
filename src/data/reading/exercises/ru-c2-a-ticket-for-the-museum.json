@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "1.2.0",
+  "id": "ru-c2-a-ticket-for-the-museum",
+  "status": "draft",
+  "language": "ru",
+  "variant": "ru",
+  "tutorLocales": [
+    "es",
+    "en"
+  ],
+  "level": {
+    "cefr": "C2",
+    "displayLabel": "russian C2"
+  },
+  "slug": "a-ticket-for-the-museum",
+  "series": null,
+  "classification": {
+    "genre": "review",
+    "topic": "museum access",
+    "intent": "study",
+    "tags": [
+      "ru",
+      "c2",
+      "advanced reading"
+    ]
+  },
+  "content": {
+    "title": {
+      "es": "Ловушка безвозмездности: архитектура исключения в галерее «Апейрон»",
+      "en": "Ловушка безвозмездности: архитектура исключения в галерее «Апейрон»"
+    },
+    "intro": {
+      "es": "Критическое эссе, анализирующее скрытые механизмы социального отчуждения в институциях, провозглашающих политику «свободного входа».",
+      "en": "Критическое эссе, анализирующее скрытые механизмы социального отчуждения в институциях, провозглашающих политику «свободного входа»."
+    },
+    "mission": {
+      "es": "Проанализировать, как риторика бесплатного доступа подменяет собой реальную инклюзивность, создавая новые барьеры для публичного дискурса.",
+      "en": "Проанализировать, как риторика бесплатного доступа подменяет собой реальную инклюзивность, создавая новые барьеры для публичного дискурса."
+    },
+    "targetText": "Вечер открытия ретроспективы в галерее «Апейрон» ознаменовался не только триумфом визуального искусства, но и тихим, почти незаметным крахом той самой демократизации, которую дирекция так настойчиво декларировала в своих пресс-релизах. Куратор Марк Леви, стоя в окружении безупречно белых стен, рассуждал о «свободе доступа» как о высшем благе, доступном каждому прохожему с улицы. Однако, наблюдая за тем, как охранники вежливо, но непреклонно фильтровали поток посетителей, отсеивая тех, чей внешний вид не соответствовал негласным стандартам «эстетического потребления», я не мог отделаться от мысли, что наше понимание свободы сузилось до стоимости входного билета. Мы привыкли считать, что отсутствие финансового барьера автоматически открывает двери для всех, но в «Апейроне» стало очевидно: цена билета — это лишь ничтожная часть стоимости «прибытия».\n\nИстинный конфликт развернулся у входа, когда группа молодых художников из пригорода, приехавших на выставку, столкнулась с требованием предъявить подтверждение регистрации, о которой не было ни слова в рекламных кампаниях. Когда они попытались оспорить это, апеллируя к заявленной «открытости», администратор лишь холодно указал на табличку, где мелким шрифтом значилось, что галерея оставляет за собой право ограничивать доступ в целях «сохранения атмосферы». Эта фраза, ставшая эвфемизмом для социальной сегрегации, обнажила глубокий цинизм институциональной политики. Бесплатность здесь функционирует не как инструмент эмансипации, а как маркетинговый щит, позволяющий галерее сохранять ореол добродетели, в то время как само пространство становится закрытым клубом для тех, кто уже обладает «культурным капиталом», позволяющим им чувствовать себя здесь органично.\n\nПроблема заключается в том, что дискурс о доступности в современном обществе патологически сфокусирован на транзакционном аспекте. Мы измеряем инклюзивность количеством бесплатных часов или отсутствием кассовых аппаратов, полностью игнорируя то, что Пьер Бурдье называл «символическим насилием». Чтобы войти в «Апейрон» и не почувствовать себя чужаком, нужно обладать определенным набором кодов: понимать язык кураторских текстов, знать правила поведения в стерильном пространстве, иметь досуг, который позволяет тратить вечер на созерцание концептуального искусства. Те, кто лишен этих привилегий, сталкиваются с барьерами, которые гораздо прочнее любой турникетной системы. Бесплатный вход — это лишь приглашение на порог, но за ним скрывается лабиринт, в котором «свобода» оказывается привилегией тех, кто уже знает правила игры.\n\nВ ходе вечера я стал свидетелем того, как одна из посетительниц, явно не принадлежащая к элитарному кругу, попыталась задать вопрос о социальном контексте представленных работ. Её вопрос, прямой и лишенный академического жаргона, вызвал у присутствующих лишь вежливое недоумение, быстро сменившееся демонстративным игнорированием. В этот момент стало ясно: институция не просто ограничивает вход, она формирует специфический тип «правильного» посетителя. Риторика «свободы» здесь служит инструментом исключения, так как она делает невидимыми все остальные формы неравенства. Если вход бесплатный, то любой, кто не смог «вписаться» или не получил удовольствия, автоматически признается «недостаточно развитым» или «неподготовленным», тем самым снимая с галереи ответственность за отсутствие подлинной инклюзивности.\n\nК финалу вечера, когда огни в галерее начали гаснуть, стало окончательно ясно, что «Апейрон» не стремится к открытости. Напротив, он использует концепцию безвозмездности как способ легитимизации своей закрытости. Когда мы сводим вопрос доступа к нулю на ценнике, мы лишаем общество возможности обсуждать реальные издержки — эмоциональные, интеллектуальные и социальные — которые несет в себе попытка войти в пространство, изначально спроектированное для других. Это не демократизация культуры, а её приватизация под маской благотворительности. И пока мы продолжаем аплодировать «бесплатному» входу, мы лишь укрепляем те самые стены, которые, по идее, должны были быть разрушены. Настоящая цена свободы входа в «Апейрон» оказалась слишком высокой для тех, кто не был готов заплатить её своим отказом от собственной идентичности.\n\nОднако, если смотреть глубже, этот парадокс «Апейрона» порождает куда более опасное следствие: формирование особого класса «культурных суррогатов», чье существование лишь подпитывает институциональную иллюзию. Мы наблюдаем появление поколения посетителей, которые, стремясь соответствовать негласным стандартам, добровольно подвергают себя самоцензуре, имитируя глубокое понимание концептуального искусства ради права на пребывание в этом стерильном пространстве. Это приводит к тому, что подлинный диалог — тот самый, который требует искренности и права на ошибку — полностью вытесняется перформативным поведением. Галерея превращается в театр, где каждый участник играет роль «просвещенного субъекта», опасаясь, что любое проявление естественной реакции будет истолковано как признак интеллектуальной неполноценности. В конечном счете, эта атмосфера создает петлю обратной связи: институция диктует правила, аудитория их усваивает, а затем сама же начинает транслировать их как единственно верные, вытесняя на периферию любых «неудобных» визитеров. Таким образом, «Апейрон» успешно делегирует функцию сегрегации самим посетителям, которые становятся невольными стражами элитарности. Мы оказываемся в ловушке, где свобода доступа превращается в механизм дисциплинирования, а само искусство, лишенное живого, порой хаотичного взаимодействия с публикой, становится герметичным объектом потребления. В этой системе координат даже протест против закрытости институции неизбежно поглощается ею, становясь еще одним экспонатом, ещё одной темой для кураторской рефлексии, которая лишь подтверждает статус-кво. В итоге, цена «бесплатного» входа оказывается не просто отказом от идентичности, а полным растворением индивидуальности в коллективном конформизме. Мы продолжаем верить в доступность, не замечая, что пространство, которое мы так отчаянно пытаемся покорить, давно перестало быть территорией смыслов, превратившись в декорацию для демонстрации собственной принадлежности к «избранным». И пока мы не признаем, что институциональное гостеприимство — это лишь форма контроля, мы будем продолжать добровольно строить стены вокруг себя, искренне полагая, что находимся в эпицентре культурной свободы, в то время как на деле лишь подтверждаем свою готовность быть исключенными ради призрачного права называться частью этого закрытого сообщества.",
+    "wordCount": 835,
+    "estimatedMinutes": 14,
+    "objectives": [
+      {
+        "es": "Distinguish explicit claims from implications and support each answer with textual evidence.",
+        "en": "Distinguish explicit claims from implications and support each answer with textual evidence."
+      }
+    ],
+    "grammarFocus": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "vocabulary": [
+      {
+        "surface": "эвфемизм",
+        "lemma": "эвфемизм",
+        "glosses": {
+          "es": "a mild or indirect word substituted for one considered to be too harsh or blunt",
+          "en": "a mild or indirect word substituted for one considered to be too harsh or blunt"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "эмансипации",
+        "lemma": "эмансипации",
+        "glosses": {
+          "es": "the process of being set free from legal, social, or political restrictions",
+          "en": "the process of being set free from legal, social, or political restrictions"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "символическим насилием",
+        "lemma": "символическим насилием",
+        "glosses": {
+          "es": "a term by Pierre Bourdieu describing the imposition of categories of thought upon dominated social agents",
+          "en": "a term by Pierre Bourdieu describing the imposition of categories of thought upon dominated social agents"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "легитимизации",
+        "lemma": "легитимизации",
+        "glosses": {
+          "es": "the process of making something conform to the law or to rules",
+          "en": "the process of making something conform to the law or to rules"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "безвозмездности",
+        "lemma": "безвозмездности",
+        "glosses": {
+          "es": "the quality of being free of charge or given without expectation of return",
+          "en": "the quality of being free of charge or given without expectation of return"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      },
+      {
+        "surface": "сегрегации",
+        "lemma": "сегрегации",
+        "glosses": {
+          "es": "the action or state of setting someone or something apart from other people or things",
+          "en": "the action or state of setting someone or something apart from other people or things"
+        },
+        "audioRequired": false,
+        "levelStatus": "within-level"
+      }
+    ],
+    "sources": []
+  },
+  "audio": null,
+  "scriptSupport": {
+    "furigana": false,
+    "romanization": "none",
+    "stressMarks": false,
+    "tokenizationMode": "space"
+  },
+  "leveling": {
+    "targetCanDo": {
+      "es": "You can recognise subtle shifts in meaning and justify a critical interpretation.",
+      "en": "You can recognise subtle shifts in meaning and justify a critical interpretation."
+    },
+    "allowedGrammar": [
+      "rhetorical nuance and controlled ambiguity"
+    ],
+    "disallowedGrammar": [],
+    "maxOutOfLevelVocabularyPercent": 12,
+    "inferenceBand": "high",
+    "metrics": {
+      "averageSentenceWords": 23.9,
+      "maxSentenceWords": 49,
+      "outOfLevelVocabularyPercent": 0,
+      "glossedOutOfLevelItems": 0
+    },
+    "independentAssessment": {
+      "estimatedLevel": "C2",
+      "passed": false,
+      "assessor": "Pending independent assessment",
+      "assessedAt": "2026-11-13T00:46:36.214Z",
+      "notes": "Difficulty and naturalness require human review."
+    }
+  },
+  "questions": [
+    {
+      "id": "q-1",
+      "type": "main-idea",
+      "skill": "global",
+      "prompt": "Какова основная цель автора в данном тексте?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Показать, что риторика бесплатности скрывает социальную изоляцию."
+        },
+        {
+          "id": "a2",
+          "text": "Раскритиковать финансовую политику галереи."
+        },
+        {
+          "id": "a3",
+          "text": "Описать процесс организации выставки в «Апейроне»."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "Риторика «свободы» здесь служит инструментом исключения, так как она делает невидимыми все остальные формы неравенства.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Find the claim that organises the whole text, rather than a single detail.",
+          "en": "Find the claim that organises the whole text, rather than a single detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-2",
+      "type": "detail",
+      "skill": "detail",
+      "prompt": "Что стало формальным поводом для отказа группе художников в доступе?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Отсутствие билетов."
+        },
+        {
+          "id": "a2",
+          "text": "Отсутствие предварительной регистрации."
+        },
+        {
+          "id": "a3",
+          "text": "Несоблюдение дресс-кода."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "группа молодых художников из пригорода, приехавших на выставку, столкнулась с требованием предъявить подтверждение регистрации",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Locate the relevant passage and check who does what.",
+          "en": "Locate the relevant passage and check who does what."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-3",
+      "type": "inference",
+      "skill": "inference",
+      "prompt": "Почему, по мнению автора, бесплатный вход в галерею не является признаком демократизации?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Потому что галерея все равно берет плату за дополнительные услуги."
+        },
+        {
+          "id": "a2",
+          "text": "Потому что бесплатные выставки всегда имеют низкое качество экспонатов."
+        },
+        {
+          "id": "a3",
+          "text": "Потому что существуют нефинансовые барьеры, требующие культурного капитала."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Чтобы войти в «Апейрон» и не почувствовать себя чужаком, нужно обладать определенным набором кодов",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Connect the evidence with what the writer leaves implied.",
+          "en": "Connect the evidence with what the writer leaves implied."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-4",
+      "type": "purpose",
+      "skill": "purpose",
+      "prompt": "С какой целью автор упоминает Пьера Бурдье?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Чтобы подтвердить свою мысль о скрытом социальном давлении."
+        },
+        {
+          "id": "a2",
+          "text": "Чтобы подчеркнуть, что галерея нарушает авторские права."
+        },
+        {
+          "id": "a3",
+          "text": "Чтобы прорекламировать социологические труды."
+        }
+      ],
+      "answer": "a1",
+      "evidence": "полностью игнорируя то, что Пьер Бурдье называл «символическим насилием».",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Ask why the writer included this detail.",
+          "en": "Ask why the writer included this detail."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-5",
+      "type": "tone",
+      "skill": "tone",
+      "prompt": "Как можно охарактеризовать тон повествования автора?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Восторженный и похвальный."
+        },
+        {
+          "id": "a2",
+          "text": "Критический и аналитический."
+        },
+        {
+          "id": "a3",
+          "text": "Нейтральный и описательный."
+        }
+      ],
+      "answer": "a2",
+      "evidence": "Эта фраза, ставшая эвфемизмом для социальной сегрегации, обнажила глубокий цинизм институциональной политики.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Notice shades of approval, reservation or criticism.",
+          "en": "Notice shades of approval, reservation or criticism."
+        }
+      },
+      "maxAttempts": 2
+    },
+    {
+      "id": "q-6",
+      "type": "vocabulary-in-context",
+      "skill": "vocabulary",
+      "prompt": "Что автор подразумевает под фразой «сохранение атмосферы» в контексте текста?",
+      "options": [
+        {
+          "id": "a1",
+          "text": "Поддержание чистоты."
+        },
+        {
+          "id": "a2",
+          "text": "Контроль за уровнем освещения в залах."
+        },
+        {
+          "id": "a3",
+          "text": "Фильтрацию публики по социальному признаку."
+        }
+      ],
+      "answer": "a3",
+      "evidence": "Эта фраза, ставшая эвфемизмом для социальной сегрегации, обнажила глубокий цинизм институциональной политики.",
+      "feedback": {
+        "correct": {
+          "es": "Yes. The highlighted evidence supports this answer.",
+          "en": "Yes. The highlighted evidence supports this answer."
+        },
+        "incorrect": {
+          "es": "Read the highlighted passage again and compare the options.",
+          "en": "Read the highlighted passage again and compare the options."
+        },
+        "strategy": {
+          "es": "Choose the meaning the word has in this sentence.",
+          "en": "Choose the meaning the word has in this sentence."
+        }
+      },
+      "maxAttempts": 2
+    }
+  ],
+  "production": {
+    "prompt": {
+      "es": "Напишите эссе (300-400 слов), в котором вы аргументированно соглашаетесь или спорите с тезисом автора о том, что «бесплатность» в культуре часто является инструментом элитарности. Приведите примеры из собственного опыта посещения общественных институций.",
+      "en": "Напишите эссе (300-400 слов), в котором вы аргументированно соглашаетесь или спорите с тезисом автора о том, что «бесплатность» в культуре часто является инструментом элитарности. Приведите примеры из собственного опыта посещения общественных институций."
+    },
+    "minWords": 120,
+    "maxWords": 220,
+    "hints": [
+      "Проанализировать, как риторика бесплатного доступа подменяет собой реальную инклюзивность, создавая новые барьеры для публичного дискурса.",
+      "Quote one phrase from the text and explain why it matters."
+    ],
+    "scored": false
+  },
+  "review": {
+    "author": "WeLearn editorial draft assisted by AI",
+    "languageReviewer": "Pending",
+    "pedagogyReviewer": "Pending",
+    "reviewedAt": "2026-11-13T00:46:36.214Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
+    "aiAssisted": true,
+    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
+    "languageDecision": "pending",
+    "pedagogyDecision": "pending"
+  },
+  "seo": {
+    "title": {
+      "es": "Ловушка безвозмездности: архитектура исключения в галерее «Апейрон» | C2 Reading | WeLearn",
+      "en": "Ловушка безвозмездности: архитектура исключения в галерее «Апейрон» | C2 Reading | WeLearn"
+    },
+    "description": {
+      "es": "Критическое эссе, анализирующее скрытые механизмы социального отчуждения в институциях, провозглашающих политику «свободного входа».",
+      "en": "Критическое эссе, анализирующее скрытые механизмы социального отчуждения в институциях, провозглашающих политику «свободного входа»."
+    },
+    "canonicalPath": "/en/practice/russian/c2/reading/a-ticket-for-the-museum",
+    "indexable": false,
+    "lastModified": "2026-11-13T00:46:36.214Z"
+  }
+}
