@@ -32,6 +32,7 @@ console.log('| Language | Level | Drafts | Missing to 20 | Shortest | Middle | L
 console.log('|---|---|---:|---:|---:|---:|---:|---|')
 
 const groups = []
+const allUniqueLongestCards = []
 for (const language of languages) for (const level of levels) {
   const group = exercises.filter(({ exercise }) => exercise.language === language && exercise.level.cefr === level)
   const ranks = { shortest: 0, middle: 0, longest: 0 }
@@ -41,6 +42,14 @@ for (const language of languages) for (const level of levels) {
     if (rank in ranks) ranks[rank]++
     if (rank === 'longest' && gap > 0) flagged.push({ file, question: question.id, gap })
   }
+  for (const { file, exercise } of group) {
+    const alwaysLongest = exercise.questions.every((question) => {
+      const sizes = question.options.map(({ text }) => Array.from(text).length)
+      const answer = question.options.find(({ id }) => id === question.answer)
+      return answer && Array.from(answer.text).length > Math.max(...sizes.filter((size) => size !== Array.from(answer.text).length)) && sizes.filter((size) => size === Array.from(answer.text).length).length === 1
+    })
+    if (alwaysLongest) allUniqueLongestCards.push(file)
+  }
   const total = Object.values(ranks).reduce((sum, value) => sum + value, 0)
   const balanced = total > 0 && Object.values(ranks).every((value) => value / total >= 0.2 && value / total <= 0.45)
   groups.push({ language, level, group, ranks, flagged, balanced })
@@ -48,6 +57,9 @@ for (const language of languages) for (const level of levels) {
 }
 
 console.log('\n## Largest answer length clues\n')
+console.log(`**Cards where the correct answer is uniquely longest in all six questions: ${allUniqueLongestCards.length}.**\n`)
+for (const file of allUniqueLongestCards) console.log(`- \`${file}\``)
+console.log('')
 console.log('Review the passage, prompt, evidence, correct answer, and all distractors together. Do not pad an answer merely to change its length.\n')
 for (const { language, level, flagged } of groups) {
   const top = flagged.sort((a, b) => b.gap - a.gap || a.file.localeCompare(b.file)).slice(0, 10)

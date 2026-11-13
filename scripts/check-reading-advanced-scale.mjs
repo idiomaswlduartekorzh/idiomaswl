@@ -42,6 +42,7 @@ for (const language of languages) {
     const short = group.filter((exercise) => count(exercise.content.targetText, language) < lengthFloor)
     const miscounted = group.filter((exercise) => exercise.content.wordCount !== count(exercise.content.targetText, language))
     const ranks = { shortest: 0, middle: 0, longest: 0 }
+    const cardsWithOnlyLongAnswers = []
     for (const exercise of group) for (const question of exercise.questions) {
       const sizes = question.options.map((option) => Array.from(option.text).length)
       const answer = question.options.find((option) => option.id === question.answer)
@@ -49,11 +50,21 @@ for (const language of languages) {
       const size = Array.from(answer.text).length
       ranks[size === Math.max(...sizes) ? 'longest' : size === Math.min(...sizes) ? 'shortest' : 'middle']++
     }
+    for (const exercise of group) {
+      const allUniqueLongest = exercise.questions.every((question) => {
+        const sizes = question.options.map((option) => Array.from(option.text).length)
+        const answer = question.options.find((option) => option.id === question.answer)
+        if (!answer) return false
+        const size = Array.from(answer.text).length
+        return size > Math.max(...sizes.filter((other) => other !== size)) && sizes.filter((other) => other === size).length === 1
+      })
+      if (allUniqueLongest) cardsWithOnlyLongAnswers.push(exercise.id)
+    }
     const total = Object.values(ranks).reduce((sum, value) => sum + value, 0)
     const balanced = total > 0 && Object.values(ranks).every((value) => value / total >= 0.2 && value / total <= 0.45)
     const tooSimilar = group.some((first, index) => group.slice(index + 1).some((second) => overlap(first.content.targetText, second.content.targetText) > 0.45))
-    const enough = group.length >= minimum && titles.size === group.length && texts.size === group.length && topics.size === group.length && !short.length && !miscounted.length && balanced && !tooSimilar
-    console.log(`${enough ? '✓' : '✗'} ${language}/${level}: ${group.length}/${minimum} lecturas; ${titles.size} títulos, ${texts.size} textos y ${topics.size} temas distintos; ${short.length} bajo ${lengthFloor} ${language === 'ja' ? 'caracteres' : language === 'ko' ? 'eojeol' : 'palabras'}; ${miscounted.length} conteos incoherentes; sesgo ${JSON.stringify(ranks)}${tooSimilar ? '; textos demasiado parecidos' : ''}`)
+    const enough = group.length >= minimum && titles.size === group.length && texts.size === group.length && topics.size === group.length && !short.length && !miscounted.length && balanced && !tooSimilar && !cardsWithOnlyLongAnswers.length
+    console.log(`${enough ? '✓' : '✗'} ${language}/${level}: ${group.length}/${minimum} lecturas; ${titles.size} títulos, ${texts.size} textos y ${topics.size} temas distintos; ${short.length} bajo ${lengthFloor} ${language === 'ja' ? 'caracteres' : language === 'ko' ? 'eojeol' : 'palabras'}; ${miscounted.length} conteos incoherentes; sesgo ${JSON.stringify(ranks)}; ${cardsWithOnlyLongAnswers.length} lecturas con seis respuestas únicamente más largas${tooSimilar ? '; textos demasiado parecidos' : ''}`)
     if (!enough) failed = true
   }
 }
