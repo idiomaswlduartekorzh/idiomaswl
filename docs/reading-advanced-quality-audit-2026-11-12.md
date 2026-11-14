@@ -7,11 +7,11 @@ Estado al 13 de noviembre de 2026: **480 borradores, 0 aprobados, 0 publicados**
 - 8 idiomas × 3 niveles × 20 lecturas = 480 fichas; todas en `draft` y con `seo.indexable: false`.
 - 2.880 preguntas: seis por lectura. En todas las fichas revisadas por los validadores, cada evidencia aparece literalmente en el pasaje y las tres opciones de una pregunta son distintas.
 - Cada combinación tiene 20 títulos, textos y temas distintos, y todas las lecturas cumplen la longitud mínima definida para su lengua y nivel.
-- El test de lectura (13 pruebas), el índice de gramática y las fuentes PDF pasan. Los controles de sesgo de respuestas siguen fallando.
+- El test de lectura (13 pruebas), el índice de gramática, las fuentes PDF y los controles automáticos de escala pasan. La validación editorial individual sigue pendiente.
 
-## Bloqueos de calidad
+## Riesgos y revisión pendiente
 
-1. **Sesgo de longitud.** Solo 21 de 24 combinaciones pasan el límite agregado de 20–45 % por banda. En el conjunto, la opción correcta se clasifica como la más larga 1.353 veces, la más corta 809 y la intermedia 718. Hay 434 respuestas empatadas en longitud con otra opción; por tanto, esas bandas son una señal de revisión y no una medida exacta de qué pista ve el estudiante. En **2 lecturas**, la respuesta correcta es la única opción más larga en las seis preguntas, una pista que sí afecta directamente cada sesión. El guardián de escala detecta ese caso y el informe de revisión enumera los archivos.
+1. **Longitud de opciones.** Las 24 combinaciones pasan el límite agregado de 20–45 % por banda. En el conjunto, la opción correcta se clasifica como la más larga 1.255 veces, la más corta 873 y la intermedia 752. Hay 442 respuestas empatadas en longitud con otra opción; las bandas son una señal de revisión y no una medida exacta de qué pista ve el estudiante. Ninguna lectura tiene seis respuestas correctas que sean siempre la única opción más larga. La comprobación agregada no sustituye una revisión de naturalidad y plausibilidad de cada pregunta.
 2. **Distractores.** Una muestra concreta: `en-c1-the-water-meter.json`, pregunta `q-6`, propone dos distractores de 22 caracteres aproximadamente y una respuesta correcta de más de 70 caracteres. Se debe reescribir el conjunto de opciones con alternativas plausibles y de extensión comparable, comprobando que solo una se sostenga en el pasaje. Rellenar opciones para alterar el conteo no es una corrección pedagógica.
 3. **Nivelación sin certificar.** Las 480 fichas declaran `independentAssessment.passed: false`; 480 revisiones de lengua y 480 de pedagogía siguen en `pending`. Las cifras de vocabulario fuera de nivel figuran como 0 en todo el conjunto, pero no se han validado con un inventario léxico independiente. Los rótulos B2, C1 y C2 son objetivos de autoría, no certificaciones. Se corrigieron los metadatos para que `reviewedAt` y `assessedAt` sean `null` y las comprobaciones cultural y de copyright figuren pendientes hasta que ocurran. El validador exige esos datos reales antes de aprobar o publicar.
 4. **Revisión cultural y lingüística.** La comprobación automática detecta estructura, longitud, claves y evidencia literal; no puede certificar naturalidad, ambigüedad de claves, adecuación cultural ni copyright en ocho idiomas. La guía exige revisores identificados y una evaluación independiente antes de cambiar a `published`.
@@ -34,14 +34,16 @@ En la siguiente ronda se corrigieron ruso B2 y C1. La lectura `ru-b2-shared-desk
 
 También se editaron italiano C1 y coreano C1/C2. En italiano C1 se reescribieron las seis opciones correctas de cinco lecturas y se distribuyeron entre respuestas cortas e intermedias para evitar que una longitud fija sirviera de pista. En coreano se acortaron respuestas sustentadas por el pasaje y se mejoraron dos distractores del museo. Estas tres combinaciones pasaron el control agregado, sin que ello certifique su nivel ni sustituya la lectura editorial de cada ficha.
 
-Alemán C1 también pasó tras editar las cuatro fichas con seis respuestas correctas sistemáticamente más largas y otras once preguntas. En la lectura del museo, dos distractores de una palabra se sustituyeron por grupos sociales concretos. Persisten cinco combinaciones bloqueadas por el control de longitud.
+Alemán C1 también pasó tras editar las cuatro fichas con seis respuestas correctas sistemáticamente más largas y otras once preguntas. En la lectura del museo, dos distractores de una palabra se sustituyeron por grupos sociales concretos. En ese punto persistían cinco combinaciones bloqueadas por el control de longitud.
 
-Portugués C1 y japonés B2 pasaron después de revisar preguntas contra sus pasajes y equilibrar la longitud de sus opciones. En portugués se corrigió además la gramática de un distractor de la lectura del huerto escolar. Quedan japonés C1/C2 y coreano B2 con sesgo agregado.
+Portugués C1 y japonés B2 pasaron después de revisar preguntas contra sus pasajes y equilibrar la longitud de sus opciones. En portugués se corrigió además la gramática de un distractor de la lectura del huerto escolar. En ese punto quedaban japonés C1/C2 y coreano B2 con sesgo agregado.
+
+Japonés C1/C2 y coreano B2 pasaron después de corregir las últimas opciones. En japonés C1 se sustituyó la errata `美辞麗学` por `美辞麗句` en texto, vocabulario, pregunta y evidencia. En coreano B2 se reescribió una pregunta léxica con distractores de dos y tres caracteres. Con ello el control de escala pasó en **24/24 combinaciones**, sin lecturas de seis respuestas correctas siempre más largas.
 
 La cuota y las respuestas 503 de la API gratuita impidieron una lectura asistida de las 480 fichas. Quedan pendientes la revisión semántica de las demás, la corrección sistemática de distractores y la evaluación humana independiente.
 
 ## Decisión de lanzamiento
 
-**No integrar en `main` ni publicar todavía.** Corregir primero los distractores de los grupos que fallan, volver a pasar los guardianes y hacer revisión humana de cada ficha con nombres, fechas y decisiones reales. Después ejecutar `check:practica-catalog`, TypeScript, `check:reading-content`, `check:reading-advanced-scale`, `test:reading`, fuentes PDF y build completo. Solo un commit de `main` que pase esas puertas puede desplegarse en producción.
+**No integrar en `main` ni publicar todavía.** El control automático de escala pasó, pero falta revisar semántica, lengua, pedagogía, cultura y copyright de cada ficha con nombres, fechas y decisiones reales, además de la nivelación CEFR independiente. Después ejecutar `check:practica-catalog`, TypeScript, `check:reading-content`, `check:reading-advanced-scale`, `test:reading`, fuentes PDF y build completo. Solo un commit de `main` que pase esas puertas puede desplegarse en producción.
 
 Para la cola editable: `npm run report:reading-advanced-review`. Para el estado binario por combinación: `npm run check:reading-advanced-scale`.
