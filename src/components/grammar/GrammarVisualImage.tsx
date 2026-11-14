@@ -78,7 +78,7 @@ function Frame({
 function TablePanel({ blueprint, language, dense = false, ui }: { blueprint: GrammarVisualBlueprint; language: LanguageTheme; dense?: boolean; ui: VisualUi }) {
   const rows = blueprint.rows.slice(0, dense ? 10 : 6)
   const columns = Math.max(blueprint.headers.length, ...rows.map((row) => row.length))
-  const firstWidth = columns >= 5 ? 82 : columns === 3 ? 190 : 220
+  const firstWidth = columns >= 5 ? 120 : columns === 3 ? 190 : 220
   const rowFont = dense ? 16 : columns >= 3 ? 17 : 19
   const rowPadding = dense ? '5px 9px' : '9px 12px'
   const rowClip = columns <= 2 ? 100 : columns === 3 ? 60 : 35
@@ -93,6 +93,7 @@ function TablePanel({ blueprint, language, dense = false, ui }: { blueprint: Gra
     fontSize: rowFont,
     fontWeight: index === 0 ? 700 : 500,
     lineHeight: 1.15,
+    overflow: 'hidden',
   })
 
   return (
@@ -240,7 +241,7 @@ export default function GrammarVisualImage({ topic, idioma, nivel }: { topic: Gr
   switch (blueprint.kind) {
     case 'script': panel = <TablePanel blueprint={blueprint} language={language} dense ui={ui} />; break
     case 'contrast': panel = <ContrastPanel blueprint={blueprint} language={language} ui={ui} />; break
-    case 'reference': panel = <TablePanel blueprint={blueprint} language={language} ui={ui} />; break
+    case 'reference': panel = <TablePanel blueprint={blueprint} language={language} dense={blueprint.rows.length > 6} ui={ui} />; break
     case 'transformation': panel = <TransformationPanel blueprint={blueprint} language={language} ui={ui} />; break
     case 'timeline': panel = <TimelinePanel blueprint={blueprint} language={language} ui={ui} />; break
     case 'structure': panel = <StructurePanel topic={topic} blueprint={blueprint} language={language} ui={ui} />; break

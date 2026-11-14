@@ -20,7 +20,7 @@ export default function ChessPracticePage() {
       </div>
       <iframe
         className={styles.frame}
-        src="/kids/ingles-ajedrez/practica/index.html"
+        src="/kids/ingles-ajedrez/practica/index.html?v=20261113"
         title="Matecraft: práctica interactiva de ajedrez"
         allow="fullscreen"
       />

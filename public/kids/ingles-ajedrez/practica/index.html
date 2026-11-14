@@ -116,6 +116,6 @@
     document.querySelectorAll('[data-route]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-route]').forEach(b=>b.classList.remove('active'));button.classList.add('active');sessionNonce++;load(button.dataset.route,0,'adaptive');toast(`Ruta: ${configs[button.dataset.route].label}`)}));
     boot();
   </script>
-  <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}</script>
+  <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=20261113').catch(()=>{}))}</script>
 </body>
 </html>

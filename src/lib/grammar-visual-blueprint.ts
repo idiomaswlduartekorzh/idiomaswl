@@ -92,6 +92,19 @@ const SCRIPT_GRIDS: Record<string, { headers: string[]; rows: string[][] }> = {
 }
 
 const SPECIAL_TABLES: Record<string, { headers: string[]; rows: string[][] }> = {
+  'prasens-regelmaessig': {
+    headers: ['familia', 'modelo', 'du', 'er/sie/es', 'ihr'],
+    rows: [
+      ['General', 'spielen', 'spielst', 'spielt', 'spielt'],
+      ['T/D', 'reden', 'redest', 'redet', 'redet'],
+      ['M/N', 'atmen', 'atmest', 'atmet', 'atmet'],
+      ['Sibilante', 'heißen', 'heißt', 'heißt', 'heißt'],
+      ['-ern', 'wandern', 'wanderst', 'wandert', 'wandert'],
+      ['a→ä', 'fahren', 'fährst', 'fährt', 'fahrt'],
+      ['e→i', 'brechen', 'brichst', 'bricht', 'brecht'],
+      ['e→ie', 'stehlen', 'stiehlst', 'stiehlt', 'stehlt'],
+    ],
+  },
   'you-ni-naru-b1': {
     headers: ['momento', 'japonés', 'qué cambia'],
     rows: [
