@@ -78,11 +78,22 @@ let drift = 0
 for (const item of readings) {
   const exercise = build(item)
   const file = path.join(root, 'src/data/reading/exercises', `${exercise.id}.json`)
+  const saved = await readFile(file, 'utf8').catch(() => '')
+  if (saved) {
+    const existing = JSON.parse(saved)
+    if (existing.id === exercise.id) {
+      exercise.status = existing.status
+      exercise.review = existing.review
+      exercise.leveling.independentAssessment = existing.leveling.independentAssessment
+      exercise.seo.indexable = existing.seo.indexable
+      exercise.seo.lastModified = existing.seo.lastModified
+    }
+  }
   const serialized = `${JSON.stringify(exercise, null, 2)}\n`
-  if (await readFile(file, 'utf8').catch(() => '') === serialized) continue
+  if (saved === serialized) continue
   drift++
   if (write) await writeFile(file, serialized)
   else console.error(`✗ ${exercise.id}.json no coincide con la fuente editorial`)
 }
 if (drift && !write) process.exitCode = 1
-console.log(`${readings.length} borradores avanzados; ${drift} ${write ? 'regenerados' : 'desincronizados'}.`)
+console.log(`${readings.length} fichas avanzadas; ${drift} ${write ? 'regeneradas' : 'desincronizadas'}.`)
