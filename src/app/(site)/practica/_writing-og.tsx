@@ -17,7 +17,6 @@ const copy: Record<Language, { label: string; title: string; detail: string }> =
 }
 
 const fontFiles: Partial<Record<Language, string>> = {
-  ru: 'welearn-ru-700.ttf',
   ja: 'welearn-ja-700.ttf',
   ko: 'welearn-ko-700.ttf',
 }
