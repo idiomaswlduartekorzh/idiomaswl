@@ -1029,3 +1029,12 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   en estado `READY`, registrado por GitHub como ambiente `Production` y
   asignado a `https://www.idiomaswl.com`.
 - Estado: `DESPLEGADO`.
+
+### 14 de noviembre de 2026 — Reading B2–C2, 480 lecturas
+
+- David Duarte, CEO de WeLearn, aprobó las 480 lecturas y confirmó que revisó lengua, preguntas, cultura, autoría, pedagogía y nivel CEFR. Figura como revisor en cada ficha; no hubo un segundo revisor humano de progresión. El acta y la excepción constan en `docs/reading-advanced-release-2026-11-14.md`.
+- `main` incorporó el contenido, las rutas, el panel privado de producciones escritas y la revisión automática con Gemini. El commit final de contenido es `76376d0bf8ea3539a0d89ea1e17f7b97a487079b`. Las 255 consignas que pedían extensiones incompatibles con el contador se corrigieron mecánicamente y el prebuild comprueba esos límites.
+- La migración `20261114145428_reading_writing_submissions.sql` se aplicó al proyecto Supabase de WeLearn. Se comprobó RLS, lectura propia para estudiantes con sesión y escritura solo desde la ruta de servidor. La API pública devuelve HTTP 401 a una entrega anónima válida; el panel privado redirige a `/login` sin sesión. Queda sin probar una entrega con estudiante real y la vista del administrador autenticado.
+- Pasaron `check:practica-catalog`, `check:reading-content` (721 fichas), `check:reading-advanced-scale` (24/24 grupos de 20), `test:reading` (14/14), `test:writing-feedback` (10/10), TypeScript y el build local completo de 5.367 rutas. El deployment [`dpl_6ZrkmFcenzTbnTWCRdgSYfx69cGq`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/6ZrkmFcenzTbnTWCRdgSYfx69cGq) quedó `READY` desde `main` y asignado a `www.idiomaswl.com`.
+- El smoke público confirmó 24/24 catálogos con 20 tarjetas, una lectura HTTP 200 por combinación, 480 URL distintas en el sitemap y las cifras corregidas en las consignas de inglés C2, japonés B2 y coreano B2. La revisión automática devolvió comentarios B2 y C2 en producción antes del último cambio mecánico de consignas; ese código no cambió.
+- Estado: `DESPLEGADO`.
