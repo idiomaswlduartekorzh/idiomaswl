@@ -14,6 +14,7 @@ import {
   WRITING_REVIEW_MONTHLY_REQUEST_LIMIT,
 } from '../src/lib/writing-feedback.ts'
 import { isIeltsMockOnePilot } from '../src/lib/ielts/mock-one-pilot.ts'
+import { reviewReadingWritingWithGemini } from '../src/lib/reading/free-writing-feedback.ts'
 
 const draft = 'Ich fahre mit der Bus zur Arbeit.'
 const assignment = {
@@ -104,6 +105,27 @@ test('clasifica saldo agotado, errores HTTP, respuestas inválidas y caídas de 
   assert.deepEqual(await reviewWritingWithOpenAi(draft, assignment, 'test', oversized), { ok: false, code: 'invalid_response' })
   const networkFailure = async () => { throw new Error('simulated') }
   assert.deepEqual(await reviewWritingWithOpenAi(draft, assignment, 'test', networkFailure), { ok: false, code: 'provider_error' })
+})
+
+test('Reading pide JSON estructurado y prueba el segundo modelo si el primero no entrega un fragmento exacto', async () => {
+  const calls = []
+  const fetcher = async (url, init) => {
+    calls.push({ url, config: JSON.parse(init.body).generationConfig })
+    const feedback = calls.length === 1
+      ? { ...validFeedback, errores: [{ ...validFeedback.errores[0], fragmento: 'texto que no escribió el alumno' }] }
+      : validFeedback
+    return new Response(JSON.stringify({ candidates: [{ content: { parts: [{ text: JSON.stringify(feedback) }] } }] }), { status: 200 })
+  }
+  const result = await reviewReadingWritingWithGemini(draft, { ...assignment, feedbackLanguage: 'de' }, 'test-key', fetcher)
+  assert.equal(result.ok, true)
+  assert.deepEqual(result.feedback, validFeedback)
+  assert.equal(calls.length, 2)
+  assert.match(calls[0].url, /gemini-3\.1-flash-lite/)
+  assert.match(calls[1].url, /gemini-3\.5-flash-lite/)
+  assert.equal(calls[0].config.responseMimeType, 'application/json')
+  assert.deepEqual(calls[0].config.responseJsonSchema.required, ['errores', 'version_corregida', 'reescribe'])
+  assert.equal(calls[0].config.thinkingConfig.thinkingLevel, 'MINIMAL')
+  assert.ok(calls[0].config.maxOutputTokens >= 3000)
 })
 
 test('limita streams entrantes y respuestas demasiado grandes sin almacenarlos completos', async () => {
