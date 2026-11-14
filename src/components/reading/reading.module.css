@@ -379,6 +379,8 @@
 .premiumRoot .vocabChip:hover { border-color: #95b0d9; background: #f0f5fc; }
 .premiumRoot .vocabChip strong { color: var(--premium-night); font-size: 13px; }
 .premiumRoot .readingText { max-width: 70ch; margin: 3px 0 25px; padding: 27px 30px 29px; border-left: 3px solid var(--premium-red); border-radius: 0 10px 10px 0; background: #fafbfd; color: #25334b; font: 400 clamp(19px, 2.05vw, 23px)/1.85 Georgia, 'Times New Roman', serif; letter-spacing: -.008em; }
+.readingParagraph { margin: 0; }
+.readingParagraph + .readingParagraph { margin-top: 1.35em; }
 .premiumRoot .hangulText { font-family: var(--sans); font-size: clamp(18px, 2vw, 22px); line-height: 1.9; word-break: keep-all; }
 .premiumRoot .glossWord { border-bottom-color: #d55c63; color: #234e91; }
 .premiumRoot .lessonWork :global(.listen-primary) { min-height: 47px; margin-top: 25px; padding: 11px 20px; border-radius: 8px; background: var(--premium-blue); color: #fff; font-size: 13px; box-shadow: 0 7px 16px rgba(38,80,165,.18); transition: transform .18s, background .18s; }

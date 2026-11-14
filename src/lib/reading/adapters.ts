@@ -73,3 +73,24 @@ export function tokenizeReadingText(text: string, language: ReadingLanguage, glo
     return { raw, lookup, isWord: lookup.length > 0 }
   })
 }
+
+/** Keep authored breaks, and give unusually long paragraphs a readable rhythm. */
+export function splitReadingParagraphs(text: string, language: ReadingLanguage): string[] {
+  const limit = language === 'ja' || language === 'ko' ? 230 : 480
+  const segmenter = new Intl.Segmenter(language, { granularity: 'sentence' })
+  return text.split(/\n\s*\n/u).flatMap((block) => {
+    const sentences = [...segmenter.segment(block.trim())].map(({ segment }) => segment).filter((segment) => segment.trim())
+    const paragraphs: string[] = []
+    let current = ''
+    for (const sentence of sentences) {
+      if (current && current.length + sentence.length > limit) {
+        paragraphs.push(current.trim())
+        current = sentence.trimStart()
+      } else {
+        current += sentence
+      }
+    }
+    if (current) paragraphs.push(current.trim())
+    return paragraphs
+  })
+}

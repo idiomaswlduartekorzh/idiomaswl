@@ -11,7 +11,7 @@ import { ReadingAiFeedback } from './ReadingAiFeedback'
 import { ReadingWritingSubmission } from './ReadingWritingSubmission'
 import { ReadingPilotDirectory, type ReadingPilotLink } from './ReadingPilotDirectory'
 import { GERMAN_A1_READING_TASK_ID } from '@/lib/writing-feedback-shared'
-import { normalizeReadingLookup, tokenizeReadingText } from '@/lib/reading/adapters'
+import { normalizeReadingLookup, splitReadingParagraphs, tokenizeReadingText } from '@/lib/reading/adapters'
 import { LANGUAGE_NAMES, readingExercisePath, readingHubPath } from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
@@ -242,11 +242,18 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
   const glossOpenCount = useRef(0)
   const uniqueGlosses = useRef(new Set<string>())
   const glossarySurfaces = useMemo(() => exercise.content.vocabulary.map((item) => item.surface), [exercise])
-  const tokens = useMemo(() => tokenizeReadingText(exercise.content.targetText, exercise.language, glossarySurfaces), [exercise, glossarySurfaces])
+  const paragraphs = useMemo(() => (advanced ? splitReadingParagraphs(exercise.content.targetText, exercise.language) : [exercise.content.targetText])
+    .map((paragraph) => tokenizeReadingText(paragraph, exercise.language, glossarySurfaces)), [advanced, exercise, glossarySurfaces])
   const vocabulary = useMemo(() => new Map(exercise.content.vocabulary.map((item) => [normalizeReadingLookup(item.surface), item])), [exercise])
   const shuffledOptions = useMemo(() => {
     if (shuffleSeed === null) return new Map<string, NonNullable<ReadingQuestion['options']>>()
-    return new Map(exercise.questions.map((question, questionIndex) => {
+    const choiceQuestions = exercise.questions.filter((question) => question.type !== 'ordering' && (question.options?.length ?? 0) > 1)
+    const positionCount = Math.max(1, ...choiceQuestions.map((question) => question.options?.length ?? 0))
+    const balancedPositions = shuffled(choiceQuestions.map((_, index) => index % positionCount), shuffleSeed ^ hashSeed(exercise.id))
+    if (balancedPositions.length === 6 && balancedPositions.slice(0, 3).every((position, index) => position === balancedPositions[index + 3])) {
+      ;[balancedPositions[3], balancedPositions[4]] = [balancedPositions[4], balancedPositions[3]]
+    }
+    return new Map(exercise.questions.map((question) => {
       let options = shuffled(question.options ?? [], shuffleSeed ^ hashSeed(question.id))
       if (question.type === 'ordering' && Array.isArray(question.answer) && options.length > 1) {
         const ids = options.map((option) => option.id)
@@ -256,7 +263,8 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
         const answerIndex = options.findIndex((option) => option.id === answerId)
         if (answerIndex >= 0) {
           const [answerOption] = options.splice(answerIndex, 1)
-          const targetIndex = (shuffleSeed + questionIndex) % (options.length + 1)
+          const choiceIndex = choiceQuestions.indexOf(question)
+          const targetIndex = balancedPositions[choiceIndex] % (options.length + 1)
           options.splice(targetIndex, 0, answerOption)
         }
       }
@@ -417,7 +425,7 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
         <p className="listen-kicker">2 · {copy.stages[1]}</p>
         <h2 id="assisted-reading">{copy.read}</h2>
         <div className={`${styles.readingText} ${exercise.language === 'ko' ? styles.hangulText : ''}`} lang={exercise.variant}>
-          {tokens.map((token, index) => {
+          {paragraphs.map((tokens, paragraphIndex) => <p key={paragraphIndex} className={styles.readingParagraph}>{tokens.map((token, index) => {
             const entry = vocabulary.get(token.lookup)
             if (!entry) return <span key={`${token.raw}-${index}`}>{token.raw}</span>
             const open = activeGloss === entry.surface
@@ -427,7 +435,7 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
                 {open && <span className={styles.glossPopover} role="tooltip"><strong>{localized(entry.glosses, locale)}</strong>{entry.reading && <em>{entry.reading}</em>}</span>}
               </span>
             )
-          })}
+          })}</p>)}
         </div>
         {exercise.audio && (
           <>

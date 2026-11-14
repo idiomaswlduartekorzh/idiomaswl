@@ -6,6 +6,8 @@ Punto de control del 13 de noviembre: **480/480 borradores** en la rama de traba
 
 El control automático de escala pasa en las 24 combinaciones. `npm run report:reading-advanced-review` sigue siendo una cola para la revisión semántica de cada pregunta y distractor; **no modifica opciones**. Hay que repetir el recorte de fuentes PDF cuando se añadan más caracteres japoneses o coreanos.
 
+La revisión visual del 14 de noviembre detectó que el renderer ocultaba los saltos de párrafo y que 37 fichas no tenían ninguna respuesta correcta entre sus opciones más breves. El renderer ahora respeta los párrafos escritos y separa bloques largos entre oraciones, sin modificar el texto fuente; las 480 lecturas muestran al menos cinco párrafos visuales. Se acortó una respuesta correcta por ficha afectada y el control de escala ahora rechaza cualquier ficha sin respuesta corta correcta. La posición visible de las respuestas se distribuye de forma equilibrada y aleatoria por sesión, evitando un ciclo fijo entre las seis preguntas. Estas correcciones de borrador no sustituyen la revisión humana de sentido, lengua y nivel.
+
 La auditoría del conjunto completo está en [`reading-advanced-quality-audit-2026-11-12.md`](reading-advanced-quality-audit-2026-11-12.md). Detectó inicialmente 20 lecturas donde la respuesta correcta era la única opción más larga en las seis preguntas; tras las correcciones editoriales quedan **cero**. El control de escala bloquea ese caso.
 
 Los 480 borradores tienen fechas de revisión y evaluación `null`, y las comprobaciones cultural y de copyright en `false` hasta que se realicen. Una lectura asistida de una muestra por combinación detectó tres fallos confirmados y corregidos; sus resultados no constituyen aprobación humana.
