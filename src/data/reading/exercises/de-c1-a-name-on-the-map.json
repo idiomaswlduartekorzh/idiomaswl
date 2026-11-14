@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob staatliche Behörden bei der Benennung von geografischen Orten stärker auf die lokale Bevölkerung hören sollten oder ob standardisierte Normen unverzichtbar sind.",
-      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob staatliche Behörden bei der Benennung von geografischen Orten stärker auf die lokale Bevölkerung hören sollten oder ob standardisierte Normen unverzichtbar sind."
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) auf Deutsch, in dem Sie erörtern, ob staatliche Behörden bei der Benennung von geografischen Orten stärker auf die lokale Bevölkerung hören sollten oder ob standardisierte Normen unverzichtbar sind.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) auf Deutsch, in dem Sie erörtern, ob staatliche Behörden bei der Benennung von geografischen Orten stärker auf die lokale Bevölkerung hören sollten oder ob standardisierte Normen unverzichtbar sind."
     },
     "minWords": 90,
     "maxWords": 180,

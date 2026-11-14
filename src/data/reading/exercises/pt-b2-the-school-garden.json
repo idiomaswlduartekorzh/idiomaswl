@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um parágrafo (100-150 palavras) argumentando se a escola deve ou não exigir trabalho voluntário dos pais para projetos pedagógicos, considerando os limites entre a educação escolar e a vida privada das famílias.",
-      "en": "Escreva um parágrafo (100-150 palavras) argumentando se a escola deve ou não exigir trabalho voluntário dos pais para projetos pedagógicos, considerando os limites entre a educação escolar e a vida privada das famílias."
+      "es": "Escreva um parágrafo (80-120 palavras) argumentando se a escola deve ou não exigir trabalho voluntário dos pais para projetos pedagógicos, considerando os limites entre a educação escolar e a vida privada das famílias.",
+      "en": "Escreva um parágrafo (80-120 palavras) argumentando se a escola deve ou não exigir trabalho voluntário dos pais para projetos pedagógicos, considerando os limites entre a educação escolar e a vida privada das famílias."
     },
     "minWords": 60,
     "maxWords": 130,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a reflective essay of 300 words discussing whether modern digital services, such as streaming platforms or 24/7 customer support, rely on the same 'invisible labor' described in the text.",
-      "en": "Write a reflective essay of 300 words discussing whether modern digital services, such as streaming platforms or 24/7 customer support, rely on the same 'invisible labor' described in the text."
+      "es": "Write a reflective essay of 180 words discussing whether modern digital services, such as streaming platforms or 24/7 customer support, rely on the same 'invisible labor' described in the text.",
+      "en": "Write a reflective essay of 180 words discussing whether modern digital services, such as streaming platforms or 24/7 customer support, rely on the same 'invisible labor' described in the text."
     },
     "minWords": 120,
     "maxWords": 220,

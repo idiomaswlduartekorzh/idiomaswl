@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a short essay (200 words) discussing whether geographical names should be standardized by central authorities or maintained by local populations, considering the potential impact on cultural preservation.",
-      "en": "Write a short essay (200 words) discussing whether geographical names should be standardized by central authorities or maintained by local populations, considering the potential impact on cultural preservation."
+      "es": "Write a short essay (140 words) discussing whether geographical names should be standardized by central authorities or maintained by local populations, considering the potential impact on cultural preservation.",
+      "en": "Write a short essay (140 words) discussing whether geographical names should be standardized by central authorities or maintained by local populations, considering the potential impact on cultural preservation."
     },
     "minWords": 90,
     "maxWords": 180,

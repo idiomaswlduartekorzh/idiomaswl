@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word response arguing whether urban safety should be based solely on recorded accident data or if 'near-miss' observations should influence policy.",
-      "en": "Write a 300-word response arguing whether urban safety should be based solely on recorded accident data or if 'near-miss' observations should influence policy."
+      "es": "Write a 180-word response arguing whether urban safety should be based solely on recorded accident data or if 'near-miss' observations should influence policy.",
+      "en": "Write a 180-word response arguing whether urban safety should be based solely on recorded accident data or if 'near-miss' observations should influence policy."
     },
     "minWords": 120,
     "maxWords": 220,

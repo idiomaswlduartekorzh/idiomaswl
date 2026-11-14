@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a extensão de horários em espaços públicos culturais realmente promove a inclusão ou se frequentemente serve apenas para atender a interesses de elites privilegiadas.",
-      "en": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a extensão de horários em espaços públicos culturais realmente promove a inclusão ou se frequentemente serve apenas para atender a interesses de elites privilegiadas."
+      "es": "Escreva um texto argumentativo de 120 a 170 palavras discutindo se a extensão de horários em espaços públicos culturais realmente promove a inclusão ou se frequentemente serve apenas para atender a interesses de elites privilegiadas.",
+      "en": "Escreva um texto argumentativo de 120 a 170 palavras discutindo se a extensão de horários em espaços públicos culturais realmente promove a inclusão ou se frequentemente serve apenas para atender a interesses de elites privilegiadas."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio de 300 palavras discutindo se a arte deve priorizar a democratização do acesso através de métricas de audiência ou manter a integridade artística, mesmo que isso limite o alcance público.",
-      "en": "Escreva um ensaio de 300 palavras discutindo se a arte deve priorizar a democratização do acesso através de métricas de audiência ou manter a integridade artística, mesmo que isso limite o alcance público."
+      "es": "Escreva um ensaio de 180 palavras discutindo se a arte deve priorizar a democratização do acesso através de métricas de audiência ou manter a integridade artística, mesmo que isso limite o alcance público.",
+      "en": "Escreva um ensaio de 180 palavras discutindo se a arte deve priorizar a democratização do acesso através de métricas de audiência ou manter a integridade artística, mesmo que isso limite o alcance público."
     },
     "minWords": 120,
     "maxWords": 220,

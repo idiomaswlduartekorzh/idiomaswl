@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word response arguing whether medical facilities should be required by law to provide non-digital alternatives for patients who do not have access to smartphones.",
-      "en": "Write a 150-word response arguing whether medical facilities should be required by law to provide non-digital alternatives for patients who do not have access to smartphones."
+      "es": "Write a 100-word response arguing whether medical facilities should be required by law to provide non-digital alternatives for patients who do not have access to smartphones.",
+      "en": "Write a 100-word response arguing whether medical facilities should be required by law to provide non-digital alternatives for patients who do not have access to smartphones."
     },
     "minWords": 60,
     "maxWords": 130,

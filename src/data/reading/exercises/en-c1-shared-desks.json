@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word response from an employee to Marcus Thorne that addresses the financial implications of the 'Home-Base Empowerment' initiative while maintaining a professional tone.",
-      "en": "Write a 200-word response from an employee to Marcus Thorne that addresses the financial implications of the 'Home-Base Empowerment' initiative while maintaining a professional tone."
+      "es": "Write a 140-word response from an employee to Marcus Thorne that addresses the financial implications of the 'Home-Base Empowerment' initiative while maintaining a professional tone.",
+      "en": "Write a 140-word response from an employee to Marcus Thorne that addresses the financial implications of the 'Home-Base Empowerment' initiative while maintaining a professional tone."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word response to this email from the perspective of an employee who believes the new storage solution is insufficient. Propose an alternative way to handle specialist equipment that does not involve shared lockers.",
-      "en": "Write a 150-word response to this email from the perspective of an employee who believes the new storage solution is insufficient. Propose an alternative way to handle specialist equipment that does not involve shared lockers."
+      "es": "Write a 100-word response to this email from the perspective of an employee who believes the new storage solution is insufficient. Propose an alternative way to handle specialist equipment that does not involve shared lockers.",
+      "en": "Write a 100-word response to this email from the perspective of an employee who believes the new storage solution is insufficient. Propose an alternative way to handle specialist equipment that does not involve shared lockers."
     },
     "minWords": 60,
     "maxWords": 130,

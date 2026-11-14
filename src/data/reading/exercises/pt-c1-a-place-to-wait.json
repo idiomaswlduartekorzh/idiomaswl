@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a otimização digital de serviços públicos e privados realmente melhora a experiência do usuário ou se apenas oculta os problemas estruturais.",
-      "en": "Escreva um texto argumentativo de 250 a 300 palavras discutindo se a otimização digital de serviços públicos e privados realmente melhora a experiência do usuário ou se apenas oculta os problemas estruturais."
+      "es": "Escreva um texto argumentativo de 120 a 170 palavras discutindo se a otimização digital de serviços públicos e privados realmente melhora a experiência do usuário ou se apenas oculta os problemas estruturais.",
+      "en": "Escreva um texto argumentativo de 120 a 170 palavras discutindo se a otimização digital de serviços públicos e privados realmente melhora a experiência do usuário ou se apenas oculta os problemas estruturais."
     },
     "minWords": 90,
     "maxWords": 180,

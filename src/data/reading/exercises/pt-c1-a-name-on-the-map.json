@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto dissertativo-argumentativo, entre 250 e 300 palavras, discutindo de que maneira a preservação de nomes tradicionais em comunidades locais atua como forma de resistência cultural frente à padronização imposta por registros oficiais.",
-      "en": "Escreva um texto dissertativo-argumentativo, entre 250 e 300 palavras, discutindo de que maneira a preservação de nomes tradicionais em comunidades locais atua como forma de resistência cultural frente à padronização imposta por registros oficiais."
+      "es": "Escreva um texto dissertativo-argumentativo, entre 120 e 170 palavras, discutindo de que maneira a preservação de nomes tradicionais em comunidades locais atua como forma de resistência cultural frente à padronização imposta por registros oficiais.",
+      "en": "Escreva um texto dissertativo-argumentativo, entre 120 e 170 palavras, discutindo de que maneira a preservação de nomes tradicionais em comunidades locais atua como forma de resistência cultural frente à padronização imposta por registros oficiais."
     },
     "minWords": 90,
     "maxWords": 180,

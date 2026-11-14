@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un breve saggio argomentativo (150 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità economica o alla qualità artistica delle produzioni.",
-      "en": "Scrivi un breve saggio argomentativo (150 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità economica o alla qualità artistica delle produzioni."
+      "es": "Scrivi un breve saggio argomentativo (100 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità economica o alla qualità artistica delle produzioni.",
+      "en": "Scrivi un breve saggio argomentativo (100 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità economica o alla qualità artistica delle produzioni."
     },
     "minWords": 60,
     "maxWords": 130,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word response evaluating whether the author's critique of 'invisible labor' could be applied to modern digital 'DIY' platforms, such as online coding tutorials or open-source software communities.",
-      "en": "Write a 300-word response evaluating whether the author's critique of 'invisible labor' could be applied to modern digital 'DIY' platforms, such as online coding tutorials or open-source software communities."
+      "es": "Write a 180-word response evaluating whether the author's critique of 'invisible labor' could be applied to modern digital 'DIY' platforms, such as online coding tutorials or open-source software communities.",
+      "en": "Write a 180-word response evaluating whether the author's critique of 'invisible labor' could be applied to modern digital 'DIY' platforms, such as online coding tutorials or open-source software communities."
     },
     "minWords": 120,
     "maxWords": 220,

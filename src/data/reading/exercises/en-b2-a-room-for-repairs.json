@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word proposal for a local council meeting suggesting two specific ways the Fix-It Hub could improve its efficiency without requiring a significant increase in budget.",
-      "en": "Write a 150-word proposal for a local council meeting suggesting two specific ways the Fix-It Hub could improve its efficiency without requiring a significant increase in budget."
+      "es": "Write a 100-word proposal for a local council meeting suggesting two specific ways the Fix-It Hub could improve its efficiency without requiring a significant increase in budget.",
+      "en": "Write a 100-word proposal for a local council meeting suggesting two specific ways the Fix-It Hub could improve its efficiency without requiring a significant increase in budget."
     },
     "minWords": 60,
     "maxWords": 130,

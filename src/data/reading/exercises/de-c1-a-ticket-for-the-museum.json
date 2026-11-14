@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, welche Maßnahmen neben dem freien Eintritt notwendig wären, um den Zugang zu Kultureinrichtungen für alle gesellschaftlichen Gruppen tatsächlich zu erleichtern.",
-      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, welche Maßnahmen neben dem freien Eintritt notwendig wären, um den Zugang zu Kultureinrichtungen für alle gesellschaftlichen Gruppen tatsächlich zu erleichtern."
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) auf Deutsch, in dem Sie erörtern, welche Maßnahmen neben dem freien Eintritt notwendig wären, um den Zugang zu Kultureinrichtungen für alle gesellschaftlichen Gruppen tatsächlich zu erleichtern.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) auf Deutsch, in dem Sie erörtern, welche Maßnahmen neben dem freien Eintritt notwendig wären, um den Zugang zu Kultureinrichtungen für alle gesellschaftlichen Gruppen tatsächlich zu erleichtern."
     },
     "minWords": 90,
     "maxWords": 180,

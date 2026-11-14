@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie eine E-Mail an Herrn Kaden aus der Sicht der Hausverwaltung, in der Sie ihm die geplante technische Modifikation der Solaranlage ohne Dachdurchdringung erläutern und ihn um Einlenken bitten. Schreiben Sie etwa 150 bis 200 Wörter.",
-      "en": "Verfassen Sie eine E-Mail an Herrn Kaden aus der Sicht der Hausverwaltung, in der Sie ihm die geplante technische Modifikation der Solaranlage ohne Dachdurchdringung erläutern und ihn um Einlenken bitten. Schreiben Sie etwa 150 bis 200 Wörter."
+      "es": "Verfassen Sie eine E-Mail an Herrn Kaden aus der Sicht der Hausverwaltung, in der Sie ihm die geplante technische Modifikation der Solaranlage ohne Dachdurchdringung erläutern und ihn um Einlenken bitten. Schreiben Sie etwa 120 bis 170 Wörter.",
+      "en": "Verfassen Sie eine E-Mail an Herrn Kaden aus der Sicht der Hausverwaltung, in der Sie ihm die geplante technische Modifikation der Solaranlage ohne Dachdurchdringung erläutern und ihn um Einlenken bitten. Schreiben Sie etwa 120 bis 170 Wörter."
     },
     "minWords": 90,
     "maxWords": 180,

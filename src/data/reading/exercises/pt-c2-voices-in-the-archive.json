@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a preservação digital de memórias pessoais deve priorizar a precisão factual ou a autenticidade emocional do narrador.",
-      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a preservação digital de memórias pessoais deve priorizar a precisão factual ou a autenticidade emocional do narrador."
+      "es": "Escreva um ensaio argumentativo de 180 palavras discutindo se a preservação digital de memórias pessoais deve priorizar a precisão factual ou a autenticidade emocional do narrador.",
+      "en": "Escreva um ensaio argumentativo de 180 palavras discutindo se a preservação digital de memórias pessoais deve priorizar a precisão factual ou a autenticidade emocional do narrador."
     },
     "minWords": 120,
     "maxWords": 220,

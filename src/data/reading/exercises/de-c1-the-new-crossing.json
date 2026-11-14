@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie einen Kommentar (ca. 200 Wörter) für eine Lokalzeitung, in dem Sie erörtern, warum Verwaltungen dazu neigen, komplexe verkehrspolitische Maßnahmen auf einfache Prestigeprojekte zu reduzieren, und welche Folgen das für das Vertrauen der Bürger hat.",
-      "en": "Verfassen Sie einen Kommentar (ca. 200 Wörter) für eine Lokalzeitung, in dem Sie erörtern, warum Verwaltungen dazu neigen, komplexe verkehrspolitische Maßnahmen auf einfache Prestigeprojekte zu reduzieren, und welche Folgen das für das Vertrauen der Bürger hat."
+      "es": "Verfassen Sie einen Kommentar (ca. 140 Wörter) für eine Lokalzeitung, in dem Sie erörtern, warum Verwaltungen dazu neigen, komplexe verkehrspolitische Maßnahmen auf einfache Prestigeprojekte zu reduzieren, und welche Folgen das für das Vertrauen der Bürger hat.",
+      "en": "Verfassen Sie einen Kommentar (ca. 140 Wörter) für eine Lokalzeitung, in dem Sie erörtern, warum Verwaltungen dazu neigen, komplexe verkehrspolitische Maßnahmen auf einfache Prestigeprojekte zu reduzieren, und welche Folgen das für das Vertrauen der Bürger hat."
     },
     "minWords": 90,
     "maxWords": 180,

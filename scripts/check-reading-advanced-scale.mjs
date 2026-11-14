@@ -17,6 +17,16 @@ const files = (await readdir(directory)).filter((file) => file.endsWith('.json')
 const exercises = (await Promise.all(files.map(async (file) => JSON.parse(await readFile(path.join(directory, file), 'utf8')))))
   .filter((exercise) => exercise.schemaVersion === '1.2.0')
 const count = (text, language) => language === 'ja' ? countJapaneseCharacters(text) : text.trim().split(/\s+/u).filter(Boolean).length
+const lengthUnit = '(?:words?|mots?|Wörter|Worte|Wort|parole|parola|palavras?|palabras?|слов(?:а|о)?|文字|字|자|어절|단어|characters?)'
+const lengthMention = new RegExp(`(\\d{2,4})(\\s*(?:[-–—~〜]|to|à|a|e|bis|and)\\s*(\\d{2,4}))?(\\s*-?\\s*)(${lengthUnit})`, 'giu')
+
+function promptLengthIssues(exercise) {
+  const { minWords, maxWords, prompt } = exercise.production
+  return [...new Set(Object.values(prompt))].flatMap((text) => [...text.matchAll(lengthMention)].filter((match) => {
+    const values = match[3] ? [Number(match[1]), Number(match[3])] : [Number(match[1])]
+    return values.some((value) => value < minWords || value > maxWords) || (exercise.language === 'ko' && match[5] === '자')
+  }).map((match) => match[0]))
+}
 
 function shingles(text) {
   const words = text.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu) ?? []
@@ -41,6 +51,7 @@ for (const language of languages) {
     const lengthFloor = minimumLength[level][language] ?? minimumLength[level].default
     const short = group.filter((exercise) => count(exercise.content.targetText, language) < lengthFloor)
     const miscounted = group.filter((exercise) => exercise.content.wordCount !== count(exercise.content.targetText, language))
+    const promptMismatches = group.filter((exercise) => promptLengthIssues(exercise).length)
     const ranks = { shortest: 0, middle: 0, longest: 0 }
     const cardsWithOnlyLongAnswers = []
     const cardsWithoutShortAnswers = []
@@ -70,8 +81,8 @@ for (const language of languages) {
     const total = Object.values(ranks).reduce((sum, value) => sum + value, 0)
     const balanced = total > 0 && Object.values(ranks).every((value) => value / total >= 0.2 && value / total <= 0.45)
     const tooSimilar = group.some((first, index) => group.slice(index + 1).some((second) => overlap(first.content.targetText, second.content.targetText) > 0.45))
-    const enough = group.length >= minimum && titles.size === group.length && texts.size === group.length && topics.size === group.length && !short.length && !miscounted.length && balanced && !tooSimilar && !cardsWithOnlyLongAnswers.length && !cardsWithoutShortAnswers.length
-    console.log(`${enough ? '✓' : '✗'} ${language}/${level}: ${group.length}/${minimum} lecturas; ${titles.size} títulos, ${texts.size} textos y ${topics.size} temas distintos; ${short.length} bajo ${lengthFloor} ${language === 'ja' ? 'caracteres' : language === 'ko' ? 'eojeol' : 'palabras'}; ${miscounted.length} conteos incoherentes; sesgo ${JSON.stringify(ranks)}; ${cardsWithOnlyLongAnswers.length} lecturas con seis respuestas únicamente más largas; ${cardsWithoutShortAnswers.length} sin respuesta corta correcta${tooSimilar ? '; textos demasiado parecidos' : ''}`)
+    const enough = group.length >= minimum && titles.size === group.length && texts.size === group.length && topics.size === group.length && !short.length && !miscounted.length && !promptMismatches.length && balanced && !tooSimilar && !cardsWithOnlyLongAnswers.length && !cardsWithoutShortAnswers.length
+    console.log(`${enough ? '✓' : '✗'} ${language}/${level}: ${group.length}/${minimum} lecturas; ${titles.size} títulos, ${texts.size} textos y ${topics.size} temas distintos; ${short.length} bajo ${lengthFloor} ${language === 'ja' ? 'caracteres' : language === 'ko' ? 'eojeol' : 'palabras'}; ${miscounted.length} conteos incoherentes; ${promptMismatches.length} consignas con longitud incompatible; sesgo ${JSON.stringify(ranks)}; ${cardsWithOnlyLongAnswers.length} lecturas con seis respuestas únicamente más largas; ${cardsWithoutShortAnswers.length} sin respuesta corta correcta${tooSimilar ? '; textos demasiado parecidos' : ''}`)
     if (!enough) failed = true
   }
 }

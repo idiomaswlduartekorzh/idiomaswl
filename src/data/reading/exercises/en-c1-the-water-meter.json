@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word persuasive letter from the perspective of a resident of Sterling Heights to the Oakhaven Municipal Council, demanding a change in how water usage is measured and billed for high-density buildings.",
-      "en": "Write a 200-word persuasive letter from the perspective of a resident of Sterling Heights to the Oakhaven Municipal Council, demanding a change in how water usage is measured and billed for high-density buildings."
+      "es": "Write a 140-word persuasive letter from the perspective of a resident of Sterling Heights to the Oakhaven Municipal Council, demanding a change in how water usage is measured and billed for high-density buildings.",
+      "en": "Write a 140-word persuasive letter from the perspective of a resident of Sterling Heights to the Oakhaven Municipal Council, demanding a change in how water usage is measured and billed for high-density buildings."
     },
     "minWords": 90,
     "maxWords": 180,

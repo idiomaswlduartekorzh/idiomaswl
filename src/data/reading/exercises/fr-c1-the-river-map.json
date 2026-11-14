@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un commentaire critique de 250 mots analysant comment la redéfinition des zones de risque illustre le conflit entre rationalité économique et protection des citoyens.",
-      "en": "Rédigez un commentaire critique de 250 mots analysant comment la redéfinition des zones de risque illustre le conflit entre rationalité économique et protection des citoyens."
+      "es": "Rédigez un commentaire critique de 140 mots analysant comment la redéfinition des zones de risque illustre le conflit entre rationalité économique et protection des citoyens.",
+      "en": "Rédigez un commentaire critique de 140 mots analysant comment la redéfinition des zones de risque illustre le conflit entre rationalité économique et protection des citoyens."
     },
     "minWords": 90,
     "maxWords": 180,

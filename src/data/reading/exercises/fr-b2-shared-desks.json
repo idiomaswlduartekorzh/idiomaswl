@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez une réponse de 150 mots en tant qu'employé technique, expliquant pourquoi les casiers pourraient ne pas suffire si l'espace de travail reste trop restreint pour manipuler le matériel.",
-      "en": "Rédigez une réponse de 150 mots en tant qu'employé technique, expliquant pourquoi les casiers pourraient ne pas suffire si l'espace de travail reste trop restreint pour manipuler le matériel."
+      "es": "Rédigez une réponse de 100 mots en tant qu'employé technique, expliquant pourquoi les casiers pourraient ne pas suffire si l'espace de travail reste trop restreint pour manipuler le matériel.",
+      "en": "Rédigez une réponse de 100 mots en tant qu'employé technique, expliquant pourquoi les casiers pourraient ne pas suffire si l'espace de travail reste trop restreint pour manipuler le matériel."
     },
     "minWords": 60,
     "maxWords": 130,

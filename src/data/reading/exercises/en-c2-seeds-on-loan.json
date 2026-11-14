@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word persuasive essay arguing whether institutions like the Oakhaven Seed Archive should prioritize legal documentation or cultural preservation when dealing with intangible heritage.",
-      "en": "Write a 300-word persuasive essay arguing whether institutions like the Oakhaven Seed Archive should prioritize legal documentation or cultural preservation when dealing with intangible heritage."
+      "es": "Write a 180-word persuasive essay arguing whether institutions like the Oakhaven Seed Archive should prioritize legal documentation or cultural preservation when dealing with intangible heritage.",
+      "en": "Write a 180-word persuasive essay arguing whether institutions like the Oakhaven Seed Archive should prioritize legal documentation or cultural preservation when dealing with intangible heritage."
     },
     "minWords": 120,
     "maxWords": 220,

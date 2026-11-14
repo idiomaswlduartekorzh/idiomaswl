@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a short essay (300 words) discussing whether an archivist has a moral obligation to protect the privacy of a deceased creator, even when that privacy conflicts with the historical mandate to preserve a complete record.",
-      "en": "Write a short essay (300 words) discussing whether an archivist has a moral obligation to protect the privacy of a deceased creator, even when that privacy conflicts with the historical mandate to preserve a complete record."
+      "es": "Write a short essay (180 words) discussing whether an archivist has a moral obligation to protect the privacy of a deceased creator, even when that privacy conflicts with the historical mandate to preserve a complete record.",
+      "en": "Write a short essay (180 words) discussing whether an archivist has a moral obligation to protect the privacy of a deceased creator, even when that privacy conflicts with the historical mandate to preserve a complete record."
     },
     "minWords": 120,
     "maxWords": 220,

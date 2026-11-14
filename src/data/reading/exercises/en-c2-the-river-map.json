@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a critical essay of 300-450 words examining how bureaucratic tools of categorization can paradoxically exacerbate the very crises they intend to mitigate, referencing the themes of administrative legibility and moral responsibility explored in the reading.",
-      "en": "Write a critical essay of 300-450 words examining how bureaucratic tools of categorization can paradoxically exacerbate the very crises they intend to mitigate, referencing the themes of administrative legibility and moral responsibility explored in the reading."
+      "es": "Write a critical essay of 160-210 words examining how bureaucratic tools of categorization can paradoxically exacerbate the very crises they intend to mitigate, referencing the themes of administrative legibility and moral responsibility explored in the reading.",
+      "en": "Write a critical essay of 160-210 words examining how bureaucratic tools of categorization can paradoxically exacerbate the very crises they intend to mitigate, referencing the themes of administrative legibility and moral responsibility explored in the reading."
     },
     "minWords": 120,
     "maxWords": 220,

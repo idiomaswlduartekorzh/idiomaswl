@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un court essai argumentatif d'environ 200 mots dans lequel vous discutez de la distinction entre l'ouverture prolongée d'un service public et son accessibilité réelle pour l'ensemble des citoyens.",
-      "en": "Rédigez un court essai argumentatif d'environ 200 mots dans lequel vous discutez de la distinction entre l'ouverture prolongée d'un service public et son accessibilité réelle pour l'ensemble des citoyens."
+      "es": "Rédigez un court essai argumentatif d'environ 140 mots dans lequel vous discutez de la distinction entre l'ouverture prolongée d'un service public et son accessibilité réelle pour l'ensemble des citoyens.",
+      "en": "Rédigez un court essai argumentatif d'environ 140 mots dans lequel vous discutez de la distinction entre l'ouverture prolongée d'un service public et son accessibilité réelle pour l'ensemble des citoyens."
     },
     "minWords": 90,
     "maxWords": 180,

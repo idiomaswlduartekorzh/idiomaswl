@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a tecnologia de coleta de dados deve ser o único critério para a tomada de decisões em serviços públicos essenciais.",
-      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a tecnologia de coleta de dados deve ser o único critério para a tomada de decisões em serviços públicos essenciais."
+      "es": "Escreva um ensaio argumentativo de 180 palavras discutindo se a tecnologia de coleta de dados deve ser o único critério para a tomada de decisões em serviços públicos essenciais.",
+      "en": "Escreva um ensaio argumentativo de 180 palavras discutindo se a tecnologia de coleta de dados deve ser o único critério para a tomada de decisões em serviços públicos essenciais."
     },
     "minWords": 120,
     "maxWords": 220,

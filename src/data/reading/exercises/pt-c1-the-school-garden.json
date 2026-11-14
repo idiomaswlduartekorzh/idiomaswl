@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto argumentativo de 250 a 300 palavras discutindo de que maneira iniciativas educacionais bem-intencionadas podem, inadvertidamente, reproduzir desigualdades estruturais ao ignorar as limitações materiais e temporais das famílias de baixa renda.",
-      "en": "Escreva um texto argumentativo de 250 a 300 palavras discutindo de que maneira iniciativas educacionais bem-intencionadas podem, inadvertidamente, reproduzir desigualdades estruturais ao ignorar as limitações materiais e temporais das famílias de baixa renda."
+      "es": "Escreva um texto argumentativo de 120 a 170 palavras discutindo de que maneira iniciativas educacionais bem-intencionadas podem, inadvertidamente, reproduzir desigualdades estruturais ao ignorar as limitações materiais e temporais das famílias de baixa renda.",
+      "en": "Escreva um texto argumentativo de 120 a 170 palavras discutindo de que maneira iniciativas educacionais bem-intencionadas podem, inadvertidamente, reproduzir desigualdades estruturais ao ignorar as limitações materiais e temporais das famílias de baixa renda."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un court essai argumenté en français (250-300 mots) dans lequel vous discutez s'il est préférable de corriger la grammaire d'un témoignage oral pour le rendre accessible ou de conserver la trace brute de sa formulation originale.",
-      "en": "Rédigez un court essai argumenté en français (250-300 mots) dans lequel vous discutez s'il est préférable de corriger la grammaire d'un témoignage oral pour le rendre accessible ou de conserver la trace brute de sa formulation originale."
+      "es": "Rédigez un court essai argumenté en français (120-170 mots) dans lequel vous discutez s'il est préférable de corriger la grammaire d'un témoignage oral pour le rendre accessible ou de conserver la trace brute de sa formulation originale.",
+      "en": "Rédigez un court essai argumenté en français (120-170 mots) dans lequel vous discutez s'il est préférable de corriger la grammaire d'un témoignage oral pour le rendre accessible ou de conserver la trace brute de sa formulation originale."
     },
     "minWords": 90,
     "maxWords": 180,

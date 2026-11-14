@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un breve saggio di 150 parole in cui discuti se sia più importante preservare la verità storica oggettiva o rispettare la volontà di chi ha vissuto gli eventi nel raccontare la propria storia.",
-      "en": "Scrivi un breve saggio di 150 parole in cui discuti se sia più importante preservare la verità storica oggettiva o rispettare la volontà di chi ha vissuto gli eventi nel raccontare la propria storia."
+      "es": "Scrivi un breve saggio di 100 parole in cui discuti se sia più importante preservare la verità storica oggettiva o rispettare la volontà di chi ha vissuto gli eventi nel raccontare la propria storia.",
+      "en": "Scrivi un breve saggio di 100 parole in cui discuti se sia più importante preservare la verità storica oggettiva o rispettare la volontà di chi ha vissuto gli eventi nel raccontare la propria storia."
     },
     "minWords": 60,
     "maxWords": 130,

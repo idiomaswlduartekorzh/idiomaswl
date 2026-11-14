@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word proposal to the city council suggesting how to resolve the conflict between the gallery's hours and the transit schedule.",
-      "en": "Write a 150-word proposal to the city council suggesting how to resolve the conflict between the gallery's hours and the transit schedule."
+      "es": "Write a 100-word proposal to the city council suggesting how to resolve the conflict between the gallery's hours and the transit schedule.",
+      "en": "Write a 100-word proposal to the city council suggesting how to resolve the conflict between the gallery's hours and the transit schedule."
     },
     "minWords": 60,
     "maxWords": 130,

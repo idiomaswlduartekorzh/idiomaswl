@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word letter to the City Council from the perspective of a local business owner who is caught between the interests of the residents and the commuters. Propose a third alternative for the crossing.",
-      "en": "Write a 150-word letter to the City Council from the perspective of a local business owner who is caught between the interests of the residents and the commuters. Propose a third alternative for the crossing."
+      "es": "Write a 100-word letter to the City Council from the perspective of a local business owner who is caught between the interests of the residents and the commuters. Propose a third alternative for the crossing.",
+      "en": "Write a 100-word letter to the City Council from the perspective of a local business owner who is caught between the interests of the residents and the commuters. Propose a third alternative for the crossing."
     },
     "minWords": 60,
     "maxWords": 130,

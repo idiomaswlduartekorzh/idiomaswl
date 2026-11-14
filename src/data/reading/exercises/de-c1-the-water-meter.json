@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive von Stadträtin Elena Rost, in dem Sie die Stadtverwaltung auffordern, die gesetzlichen Grundlagen für die Nachrüstung von Einzelwasserzählern in Altbauten unverzüglich zu reformieren.",
-      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive von Stadträtin Elena Rost, in dem Sie die Stadtverwaltung auffordern, die gesetzlichen Grundlagen für die Nachrüstung von Einzelwasserzählern in Altbauten unverzüglich zu reformieren."
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) aus der Perspektive von Stadträtin Elena Rost, in dem Sie die Stadtverwaltung auffordern, die gesetzlichen Grundlagen für die Nachrüstung von Einzelwasserzählern in Altbauten unverzüglich zu reformieren.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) aus der Perspektive von Stadträtin Elena Rost, in dem Sie die Stadtverwaltung auffordern, die gesetzlichen Grundlagen für die Nachrüstung von Einzelwasserzählern in Altbauten unverzüglich zu reformieren."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 250-word policy proposal for Oakridge Academy that outlines a revised volunteer model. Your proposal must address the equity concerns raised by parents while maintaining the school's goal of student experiential learning. Use formal, persuasive language.",
-      "en": "Write a 250-word policy proposal for Oakridge Academy that outlines a revised volunteer model. Your proposal must address the equity concerns raised by parents while maintaining the school's goal of student experiential learning. Use formal, persuasive language."
+      "es": "Write a 140-word policy proposal for Oakridge Academy that outlines a revised volunteer model. Your proposal must address the equity concerns raised by parents while maintaining the school's goal of student experiential learning. Use formal, persuasive language.",
+      "en": "Write a 140-word policy proposal for Oakridge Academy that outlines a revised volunteer model. Your proposal must address the equity concerns raised by parents while maintaining the school's goal of student experiential learning. Use formal, persuasive language."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto dissertativo argumentativo de 250 a 300 palavras, em português do Brasil, discutindo se as iniciativas de sustentabilidade corporativa muitas vezes priorizam a estética da imagem pública em detrimento de uma verdadeira análise de impacto ambiental. Utilize vocabulário avançado e mantenha um tom formal e analítico.",
-      "en": "Escreva um texto dissertativo argumentativo de 250 a 300 palavras, em português do Brasil, discutindo se as iniciativas de sustentabilidade corporativa muitas vezes priorizam a estética da imagem pública em detrimento de uma verdadeira análise de impacto ambiental. Utilize vocabulário avançado e mantenha um tom formal e analítico."
+      "es": "Escreva um texto dissertativo argumentativo de 120 a 170 palavras, em português do Brasil, discutindo se as iniciativas de sustentabilidade corporativa muitas vezes priorizam a estética da imagem pública em detrimento de uma verdadeira análise de impacto ambiental. Utilize vocabulário avançado e mantenha um tom formal e analítico.",
+      "en": "Escreva um texto dissertativo argumentativo de 120 a 170 palavras, em português do Brasil, discutindo se as iniciativas de sustentabilidade corporativa muitas vezes priorizam a estética da imagem pública em detrimento de uma verdadeira análise de impacto ambiental. Utilize vocabulário avançado e mantenha um tom formal e analítico."
     },
     "minWords": 90,
     "maxWords": 180,

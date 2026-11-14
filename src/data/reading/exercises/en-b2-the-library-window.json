@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a short letter (150 words) from the perspective of a shift worker to the library board, arguing for a compromise that respects both the needs of the community and the staff.",
-      "en": "Write a short letter (150 words) from the perspective of a shift worker to the library board, arguing for a compromise that respects both the needs of the community and the staff."
+      "es": "Write a short letter (100 words) from the perspective of a shift worker to the library board, arguing for a compromise that respects both the needs of the community and the staff.",
+      "en": "Write a short letter (100 words) from the perspective of a shift worker to the library board, arguing for a compromise that respects both the needs of the community and the staff."
     },
     "minWords": 60,
     "maxWords": 130,

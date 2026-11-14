@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word email to the Riverton Emergency Agency proposing a compromise that combines the digital map's real-time accuracy with the accessibility of the printed maps.",
-      "en": "Write a 150-word email to the Riverton Emergency Agency proposing a compromise that combines the digital map's real-time accuracy with the accessibility of the printed maps."
+      "es": "Write a 100-word email to the Riverton Emergency Agency proposing a compromise that combines the digital map's real-time accuracy with the accessibility of the printed maps.",
+      "en": "Write a 100-word email to the Riverton Emergency Agency proposing a compromise that combines the digital map's real-time accuracy with the accessibility of the printed maps."
     },
     "minWords": 60,
     "maxWords": 130,

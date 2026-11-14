@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un essai argumenté de 250 mots en français dans lequel vous discutez s'il est légitime d'évaluer l'efficacité des structures culturelles subventionnées uniquement par des critères quantitatifs.",
-      "en": "Rédigez un essai argumenté de 250 mots en français dans lequel vous discutez s'il est légitime d'évaluer l'efficacité des structures culturelles subventionnées uniquement par des critères quantitatifs."
+      "es": "Rédigez un essai argumenté de 140 mots en français dans lequel vous discutez s'il est légitime d'évaluer l'efficacité des structures culturelles subventionnées uniquement par des critères quantitatifs.",
+      "en": "Rédigez un essai argumenté de 140 mots en français dans lequel vous discutez s'il est légitime d'évaluer l'efficacité des structures culturelles subventionnées uniquement par des critères quantitatifs."
     },
     "minWords": 90,
     "maxWords": 180,

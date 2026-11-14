@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un breve saggio argomentativo (200-250 parole) in cui discuti se sia eticamente accettabile sacrificare la qualità della vita di una minoranza per garantire l'efficienza logistica di una maggioranza urbana.",
-      "en": "Scrivi un breve saggio argomentativo (200-250 parole) in cui discuti se sia eticamente accettabile sacrificare la qualità della vita di una minoranza per garantire l'efficienza logistica di una maggioranza urbana."
+      "es": "Scrivi un breve saggio argomentativo (160-210 parole) in cui discuti se sia eticamente accettabile sacrificare la qualità della vita di una minoranza per garantire l'efficienza logistica di una maggioranza urbana.",
+      "en": "Scrivi un breve saggio argomentativo (160-210 parole) in cui discuti se sia eticamente accettabile sacrificare la qualità della vita di una minoranza per garantire l'efficienza logistica di una maggioranza urbana."
     },
     "minWords": 120,
     "maxWords": 220,

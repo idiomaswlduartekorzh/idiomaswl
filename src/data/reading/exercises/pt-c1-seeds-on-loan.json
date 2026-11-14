@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto argumentativo de 200 a 250 palavras discutindo os dilemas éticos da preservação de patrimônios genéticos tradicionais sem registros formais. Analise como a disputa por reconhecimento pode tanto proteger quanto ameaçar a continuidade de saberes comunitários.",
-      "en": "Escreva um texto argumentativo de 200 a 250 palavras discutindo os dilemas éticos da preservação de patrimônios genéticos tradicionais sem registros formais. Analise como a disputa por reconhecimento pode tanto proteger quanto ameaçar a continuidade de saberes comunitários."
+      "es": "Escreva um texto argumentativo de 120 a 170 palavras discutindo os dilemas éticos da preservação de patrimônios genéticos tradicionais sem registros formais. Analise como a disputa por reconhecimento pode tanto proteger quanto ameaçar a continuidade de saberes comunitários.",
+      "en": "Escreva um texto argumentativo de 120 a 170 palavras discutindo os dilemas éticos da preservação de patrimônios genéticos tradicionais sem registros formais. Analise como a disputa por reconhecimento pode tanto proteger quanto ameaçar a continuidade de saberes comunitários."
     },
     "minWords": 90,
     "maxWords": 180,

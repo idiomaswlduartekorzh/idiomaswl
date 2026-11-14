@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um e-mail de resposta (200-300 palavras) na perspectiva do professor Ricardo, defendendo a meritocracia na gestão de horários e refutando os argumentos de Helena sobre a necessidade de compensação social.",
-      "en": "Escreva um e-mail de resposta (200-300 palavras) na perspectiva do professor Ricardo, defendendo a meritocracia na gestão de horários e refutando os argumentos de Helena sobre a necessidade de compensação social."
+      "es": "Escreva um e-mail de resposta (160-210 palavras) na perspectiva do professor Ricardo, defendendo a meritocracia na gestão de horários e refutando os argumentos de Helena sobre a necessidade de compensação social.",
+      "en": "Escreva um e-mail de resposta (160-210 palavras) na perspectiva do professor Ricardo, defendendo a meritocracia na gestão de horários e refutando os argumentos de Helena sobre a necessidade de compensação social."
     },
     "minWords": 120,
     "maxWords": 220,

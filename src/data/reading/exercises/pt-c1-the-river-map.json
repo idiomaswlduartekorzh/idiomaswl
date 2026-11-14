@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto dissertativo-argumentativo de 250 a 300 palavras discutindo de que maneira a adoção de critérios técnicos e estatísticos na gestão de desastres pode gerar exclusão social. Utilize argumentos consistentes e mantenham um registro formal.",
-      "en": "Escreva um texto dissertativo-argumentativo de 250 a 300 palavras discutindo de que maneira a adoção de critérios técnicos e estatísticos na gestão de desastres pode gerar exclusão social. Utilize argumentos consistentes e mantenham um registro formal."
+      "es": "Escreva um texto dissertativo-argumentativo de 120 a 170 palavras discutindo de que maneira a adoção de critérios técnicos e estatísticos na gestão de desastres pode gerar exclusão social. Utilize argumentos consistentes e mantenham um registro formal.",
+      "en": "Escreva um texto dissertativo-argumentativo de 120 a 170 palavras discutindo de que maneira a adoção de critérios técnicos e estatísticos na gestão de desastres pode gerar exclusão social. Utilize argumentos consistentes e mantenham um registro formal."
     },
     "minWords": 90,
     "maxWords": 180,

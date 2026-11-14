@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a formalização estatal de saberes tradicionais ajuda ou prejudica a preservação da biodiversidade, utilizando exemplos da narrativa para fundamentar seu ponto de vista.",
-      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a formalização estatal de saberes tradicionais ajuda ou prejudica a preservação da biodiversidade, utilizando exemplos da narrativa para fundamentar seu ponto de vista."
+      "es": "Escreva um ensaio argumentativo de 180 palavras discutindo se a formalização estatal de saberes tradicionais ajuda ou prejudica a preservação da biodiversidade, utilizando exemplos da narrativa para fundamentar seu ponto de vista.",
+      "en": "Escreva um ensaio argumentativo de 180 palavras discutindo se a formalização estatal de saberes tradicionais ajuda ou prejudica a preservação da biodiversidade, utilizando exemplos da narrativa para fundamentar seu ponto de vista."
     },
     "minWords": 120,
     "maxWords": 220,

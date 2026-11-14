@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um e-mail formal de 150 palavras, na voz de um membro da diretoria do teatro, para os doadores locais, explicando a nova política de ensaios abertos e solicitando apoio para garantir a sustentabilidade do projeto a longo prazo.",
-      "en": "Escreva um e-mail formal de 150 palavras, na voz de um membro da diretoria do teatro, para os doadores locais, explicando a nova política de ensaios abertos e solicitando apoio para garantir a sustentabilidade do projeto a longo prazo."
+      "es": "Escreva um e-mail formal de 100 palavras, na voz de um membro da diretoria do teatro, para os doadores locais, explicando a nova política de ensaios abertos e solicitando apoio para garantir a sustentabilidade do projeto a longo prazo.",
+      "en": "Escreva um e-mail formal de 100 palavras, na voz de um membro da diretoria do teatro, para os doadores locais, explicando a nova política de ensaios abertos e solicitando apoio para garantir a sustentabilidade do projeto a longo prazo."
     },
     "minWords": 60,
     "maxWords": 130,

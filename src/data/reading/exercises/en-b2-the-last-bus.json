@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word email to the Oakhaven Municipal Council proposing a hybrid solution that balances the needs of tech-savvy workers and residents who struggle with digital-only services.",
-      "en": "Write a 150-word email to the Oakhaven Municipal Council proposing a hybrid solution that balances the needs of tech-savvy workers and residents who struggle with digital-only services."
+      "es": "Write a 100-word email to the Oakhaven Municipal Council proposing a hybrid solution that balances the needs of tech-savvy workers and residents who struggle with digital-only services.",
+      "en": "Write a 100-word email to the Oakhaven Municipal Council proposing a hybrid solution that balances the needs of tech-savvy workers and residents who struggle with digital-only services."
     },
     "minWords": 60,
     "maxWords": 130,

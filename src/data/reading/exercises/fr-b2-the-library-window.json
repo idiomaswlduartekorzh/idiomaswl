@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un court argumentaire (150 mots) proposant une solution de compromis qui pourrait satisfaire à la fois les travailleurs postés et le personnel de la bibliothèque.",
-      "en": "Rédigez un court argumentaire (150 mots) proposant une solution de compromis qui pourrait satisfaire à la fois les travailleurs postés et le personnel de la bibliothèque."
+      "es": "Rédigez un court argumentaire (100 mots) proposant une solution de compromis qui pourrait satisfaire à la fois les travailleurs postés et le personnel de la bibliothèque.",
+      "en": "Rédigez un court argumentaire (100 mots) proposant une solution de compromis qui pourrait satisfaire à la fois les travailleurs postés et le personnel de la bibliothèque."
     },
     "minWords": 60,
     "maxWords": 130,

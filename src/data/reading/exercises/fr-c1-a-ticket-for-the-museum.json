@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un commentaire critique de 200 mots dans lequel vous discutez si la gratuité des lieux culturels suffit à garantir une véritable démocratisation de l'art.",
-      "en": "Rédigez un commentaire critique de 200 mots dans lequel vous discutez si la gratuité des lieux culturels suffit à garantir une véritable démocratisation de l'art."
+      "es": "Rédigez un commentaire critique de 140 mots dans lequel vous discutez si la gratuité des lieux culturels suffit à garantir une véritable démocratisation de l'art.",
+      "en": "Rédigez un commentaire critique de 140 mots dans lequel vous discutez si la gratuité des lieux culturels suffit à garantir une véritable démocratisation de l'art."
     },
     "minWords": 90,
     "maxWords": 180,

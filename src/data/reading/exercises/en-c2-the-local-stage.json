@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a critical commentary of 350 to 500 words examining how institutional pressures on arts organizations threaten unconventional creative work. Consider whether public arts funding should prioritize broad demographic reach or uncompromising artistic innovation.",
-      "en": "Write a critical commentary of 350 to 500 words examining how institutional pressures on arts organizations threaten unconventional creative work. Consider whether public arts funding should prioritize broad demographic reach or uncompromising artistic innovation."
+      "es": "Write a critical commentary of 160 to 210 words examining how institutional pressures on arts organizations threaten unconventional creative work. Consider whether public arts funding should prioritize broad demographic reach or uncompromising artistic innovation.",
+      "en": "Write a critical commentary of 160 to 210 words examining how institutional pressures on arts organizations threaten unconventional creative work. Consider whether public arts funding should prioritize broad demographic reach or uncompromising artistic innovation."
     },
     "minWords": 120,
     "maxWords": 220,

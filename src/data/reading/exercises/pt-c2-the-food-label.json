@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a responsabilidade pela segurança alimentar deve ser compartilhada ou se deve recair exclusivamente sobre o produtor, utilizando o conceito de 'abismo ético' mencionado no texto.",
-      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a responsabilidade pela segurança alimentar deve ser compartilhada ou se deve recair exclusivamente sobre o produtor, utilizando o conceito de 'abismo ético' mencionado no texto."
+      "es": "Escreva um ensaio argumentativo de 180 palavras discutindo se a responsabilidade pela segurança alimentar deve ser compartilhada ou se deve recair exclusivamente sobre o produtor, utilizando o conceito de 'abismo ético' mencionado no texto.",
+      "en": "Escreva um ensaio argumentativo de 180 palavras discutindo se a responsabilidade pela segurança alimentar deve ser compartilhada ou se deve recair exclusivamente sobre o produtor, utilizando o conceito de 'abismo ético' mencionado no texto."
     },
     "minWords": 120,
     "maxWords": 220,

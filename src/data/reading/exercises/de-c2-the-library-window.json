@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Schreiben Sie eine kritische Analyse (ca. 250 Wörter), in der Sie erörtern, inwiefern die Bibliothek als Metapher für moderne Dienstleistungsgesellschaften fungiert. Gehen Sie dabei auf die Spannung zwischen Nutzererwartung und Arbeitsrealität ein.",
-      "en": "Schreiben Sie eine kritische Analyse (ca. 250 Wörter), in der Sie erörtern, inwiefern die Bibliothek als Metapher für moderne Dienstleistungsgesellschaften fungiert. Gehen Sie dabei auf die Spannung zwischen Nutzererwartung und Arbeitsrealität ein."
+      "es": "Schreiben Sie eine kritische Analyse (ca. 180 Wörter), in der Sie erörtern, inwiefern die Bibliothek als Metapher für moderne Dienstleistungsgesellschaften fungiert. Gehen Sie dabei auf die Spannung zwischen Nutzererwartung und Arbeitsrealität ein.",
+      "en": "Schreiben Sie eine kritische Analyse (ca. 180 Wörter), in der Sie erörtern, inwiefern die Bibliothek als Metapher für moderne Dienstleistungsgesellschaften fungiert. Gehen Sie dabei auf die Spannung zwischen Nutzererwartung und Arbeitsrealität ein."
     },
     "minWords": 120,
     "maxWords": 220,

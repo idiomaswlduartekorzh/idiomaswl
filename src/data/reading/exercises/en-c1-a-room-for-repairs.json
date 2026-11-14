@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word response arguing whether a community project should prioritize the quality of the final output or the inclusivity of the learning experience, using examples from the text to support your position.",
-      "en": "Write a 200-word response arguing whether a community project should prioritize the quality of the final output or the inclusivity of the learning experience, using examples from the text to support your position."
+      "es": "Write a 140-word response arguing whether a community project should prioritize the quality of the final output or the inclusivity of the learning experience, using examples from the text to support your position.",
+      "en": "Write a 140-word response arguing whether a community project should prioritize the quality of the final output or the inclusivity of the learning experience, using examples from the text to support your position."
     },
     "minWords": 90,
     "maxWords": 180,

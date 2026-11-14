@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a short essay (200 words) arguing whether oral history archives should prioritize linguistic clarity for future readers or the authentic, unedited voice of the speaker.",
-      "en": "Write a short essay (200 words) arguing whether oral history archives should prioritize linguistic clarity for future readers or the authentic, unedited voice of the speaker."
+      "es": "Write a short essay (140 words) arguing whether oral history archives should prioritize linguistic clarity for future readers or the authentic, unedited voice of the speaker.",
+      "en": "Write a short essay (140 words) arguing whether oral history archives should prioritize linguistic clarity for future readers or the authentic, unedited voice of the speaker."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word persuasive email from Sarah Vance to the board of directors, proposing a comprehensive audit that accounts for the hidden environmental impacts of their sustainability initiatives.",
-      "en": "Write a 200-word persuasive email from Sarah Vance to the board of directors, proposing a comprehensive audit that accounts for the hidden environmental impacts of their sustainability initiatives."
+      "es": "Write a 140-word persuasive email from Sarah Vance to the board of directors, proposing a comprehensive audit that accounts for the hidden environmental impacts of their sustainability initiatives.",
+      "en": "Write a 140-word persuasive email from Sarah Vance to the board of directors, proposing a comprehensive audit that accounts for the hidden environmental impacts of their sustainability initiatives."
     },
     "minWords": 90,
     "maxWords": 180,

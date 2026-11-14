@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word response from the perspective of a neutral third-party mediator who has been invited to resolve the dispute between the residents and the board, proposing a compromise that respects both the board's need for efficiency and the residents' desire for democratic oversight.",
-      "en": "Write a 200-word response from the perspective of a neutral third-party mediator who has been invited to resolve the dispute between the residents and the board, proposing a compromise that respects both the board's need for efficiency and the residents' desire for democratic oversight."
+      "es": "Write a 140-word response from the perspective of a neutral third-party mediator who has been invited to resolve the dispute between the residents and the board, proposing a compromise that respects both the board's need for efficiency and the residents' desire for democratic oversight.",
+      "en": "Write a 140-word response from the perspective of a neutral third-party mediator who has been invited to resolve the dispute between the residents and the board, proposing a compromise that respects both the board's need for efficiency and the residents' desire for democratic oversight."
     },
     "minWords": 90,
     "maxWords": 180,

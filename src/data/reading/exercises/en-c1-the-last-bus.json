@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word response evaluating whether an organization's internal metrics can ever truly capture the social value of a public service. Use examples from the text to support your argument.",
-      "en": "Write a 200-word response evaluating whether an organization's internal metrics can ever truly capture the social value of a public service. Use examples from the text to support your argument."
+      "es": "Write a 140-word response evaluating whether an organization's internal metrics can ever truly capture the social value of a public service. Use examples from the text to support your argument.",
+      "en": "Write a 140-word response evaluating whether an organization's internal metrics can ever truly capture the social value of a public service. Use examples from the text to support your argument."
     },
     "minWords": 90,
     "maxWords": 180,

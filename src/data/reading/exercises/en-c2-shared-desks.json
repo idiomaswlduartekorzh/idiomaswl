@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word response from Julian's perspective defending the workspace policy against the author's accusations of systemic coercion.",
-      "en": "Write a 300-word response from Julian's perspective defending the workspace policy against the author's accusations of systemic coercion."
+      "es": "Write a 180-word response from Julian's perspective defending the workspace policy against the author's accusations of systemic coercion.",
+      "en": "Write a 180-word response from Julian's perspective defending the workspace policy against the author's accusations of systemic coercion."
     },
     "minWords": 120,
     "maxWords": 220,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word argumentative essay debating whether public services should be evaluated solely on quantitative metrics or if qualitative social impact assessments are a necessary component of modern governance.",
-      "en": "Write a 300-word argumentative essay debating whether public services should be evaluated solely on quantitative metrics or if qualitative social impact assessments are a necessary component of modern governance."
+      "es": "Write a 180-word argumentative essay debating whether public services should be evaluated solely on quantitative metrics or if qualitative social impact assessments are a necessary component of modern governance.",
+      "en": "Write a 180-word argumentative essay debating whether public services should be evaluated solely on quantitative metrics or if qualitative social impact assessments are a necessary component of modern governance."
     },
     "minWords": 120,
     "maxWords": 220,

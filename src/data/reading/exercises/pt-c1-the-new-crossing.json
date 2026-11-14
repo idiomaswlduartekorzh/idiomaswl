@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto argumentativo de 250 a 300 palavras avaliando se a omissão de dados por órgãos públicos é justificável quando o resultado final da política implementada é positivo para a segurança da população.",
-      "en": "Escreva um texto argumentativo de 250 a 300 palavras avaliando se a omissão de dados por órgãos públicos é justificável quando o resultado final da política implementada é positivo para a segurança da população."
+      "es": "Escreva um texto argumentativo de 120 a 170 palavras avaliando se a omissão de dados por órgãos públicos é justificável quando o resultado final da política implementada é positivo para a segurança da população.",
+      "en": "Escreva um texto argumentativo de 120 a 170 palavras avaliando se a omissão de dados por órgãos públicos é justificável quando o resultado final da política implementada é positivo para a segurança da população."
     },
     "minWords": 90,
     "maxWords": 180,

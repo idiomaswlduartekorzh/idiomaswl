@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un commentaire critique d'environ 200 mots dans lequel vous examinez comment les indicateurs chiffrés de performance peuvent parfois trahir la réalité sociale d'un service public.",
-      "en": "Rédigez un commentaire critique d'environ 200 mots dans lequel vous examinez comment les indicateurs chiffrés de performance peuvent parfois trahir la réalité sociale d'un service public."
+      "es": "Rédigez un commentaire critique d'environ 140 mots dans lequel vous examinez comment les indicateurs chiffrés de performance peuvent parfois trahir la réalité sociale d'un service public.",
+      "en": "Rédigez un commentaire critique d'environ 140 mots dans lequel vous examinez comment les indicateurs chiffrés de performance peuvent parfois trahir la réalité sociale d'un service public."
     },
     "minWords": 90,
     "maxWords": 180,

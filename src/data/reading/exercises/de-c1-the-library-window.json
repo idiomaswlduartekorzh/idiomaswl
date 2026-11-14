@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Schreiben Sie einen zusammenhängenden Kommentar von ca. 250–300 Wörtern, in dem Sie die These erörtern, ob technische Digitalisierung in öffentlichen Kultur- und Bildungseinrichtungen zwangsläufig zu sozialer Ausgrenzung führt oder ob sie durch gezielte Maßnahmen kompensiert werden kann.",
-      "en": "Schreiben Sie einen zusammenhängenden Kommentar von ca. 250–300 Wörtern, in dem Sie die These erörtern, ob technische Digitalisierung in öffentlichen Kultur- und Bildungseinrichtungen zwangsläufig zu sozialer Ausgrenzung führt oder ob sie durch gezielte Maßnahmen kompensiert werden kann."
+      "es": "Schreiben Sie einen zusammenhängenden Kommentar von ca. 120–170 Wörtern, in dem Sie die These erörtern, ob technische Digitalisierung in öffentlichen Kultur- und Bildungseinrichtungen zwangsläufig zu sozialer Ausgrenzung führt oder ob sie durch gezielte Maßnahmen kompensiert werden kann.",
+      "en": "Schreiben Sie einen zusammenhängenden Kommentar von ca. 120–170 Wörtern, in dem Sie die These erörtern, ob technische Digitalisierung in öffentlichen Kultur- und Bildungseinrichtungen zwangsläufig zu sozialer Ausgrenzung führt oder ob sie durch gezielte Maßnahmen kompensiert werden kann."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un texte argumentatif d'environ 200 mots dans lequel vous discutez s'il est possible de concilier flexibilité administrative et égalité des chances au sein d'un établissement scolaire.",
-      "en": "Rédigez un texte argumentatif d'environ 200 mots dans lequel vous discutez s'il est possible de concilier flexibilité administrative et égalité des chances au sein d'un établissement scolaire."
+      "es": "Rédigez un texte argumentatif d'environ 140 mots dans lequel vous discutez s'il est possible de concilier flexibilité administrative et égalité des chances au sein d'un établissement scolaire.",
+      "en": "Rédigez un texte argumentatif d'environ 140 mots dans lequel vous discutez s'il est possible de concilier flexibilité administrative et égalité des chances au sein d'un établissement scolaire."
     },
     "minWords": 90,
     "maxWords": 180,

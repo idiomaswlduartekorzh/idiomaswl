@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word persuasive response arguing whether food retailers should prioritize consumer safety or waste reduction, referencing the concepts of 'culinary zenith' and 'linguistic rigidity' discussed in the text.",
-      "en": "Write a 200-word persuasive response arguing whether food retailers should prioritize consumer safety or waste reduction, referencing the concepts of 'culinary zenith' and 'linguistic rigidity' discussed in the text."
+      "es": "Write a 140-word persuasive response arguing whether food retailers should prioritize consumer safety or waste reduction, referencing the concepts of 'culinary zenith' and 'linguistic rigidity' discussed in the text.",
+      "en": "Write a 140-word persuasive response arguing whether food retailers should prioritize consumer safety or waste reduction, referencing the concepts of 'culinary zenith' and 'linguistic rigidity' discussed in the text."
     },
     "minWords": 90,
     "maxWords": 180,

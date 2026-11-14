@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 250-word response evaluating whether museums have a moral obligation to provide childcare services, considering the balance between preserving artifacts and serving the public.",
-      "en": "Write a 250-word response evaluating whether museums have a moral obligation to provide childcare services, considering the balance between preserving artifacts and serving the public."
+      "es": "Write a 140-word response evaluating whether museums have a moral obligation to provide childcare services, considering the balance between preserving artifacts and serving the public.",
+      "en": "Write a 140-word response evaluating whether museums have a moral obligation to provide childcare services, considering the balance between preserving artifacts and serving the public."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Schreiben Sie eine argumentative Stellungnahme (ca. 250 Wörter), in der Sie erörtern, ob die zunehmende Kennzeichnungspflicht in der modernen Gesellschaft die Autonomie des Einzelnen stärkt oder lediglich eine Form der bürokratischen Absicherung darstellt.",
-      "en": "Schreiben Sie eine argumentative Stellungnahme (ca. 250 Wörter), in der Sie erörtern, ob die zunehmende Kennzeichnungspflicht in der modernen Gesellschaft die Autonomie des Einzelnen stärkt oder lediglich eine Form der bürokratischen Absicherung darstellt."
+      "es": "Schreiben Sie eine argumentative Stellungnahme (ca. 180 Wörter), in der Sie erörtern, ob die zunehmende Kennzeichnungspflicht in der modernen Gesellschaft die Autonomie des Einzelnen stärkt oder lediglich eine Form der bürokratischen Absicherung darstellt.",
+      "en": "Schreiben Sie eine argumentative Stellungnahme (ca. 180 Wörter), in der Sie erörtern, ob die zunehmende Kennzeichnungspflicht in der modernen Gesellschaft die Autonomie des Einzelnen stärkt oder lediglich eine Form der bürokratischen Absicherung darstellt."
     },
     "minWords": 120,
     "maxWords": 220,

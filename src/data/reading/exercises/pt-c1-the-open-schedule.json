@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um e-mail formal de resposta (cerca de 250 palavras) sob o ponto de vista de Mariana Guedes, ponderando os benefícios pedagógicos já alcançados com propostas concretas para mitigar os problemas operacionais apontados por Beatriz.",
-      "en": "Escreva um e-mail formal de resposta (cerca de 250 palavras) sob o ponto de vista de Mariana Guedes, ponderando os benefícios pedagógicos já alcançados com propostas concretas para mitigar os problemas operacionais apontados por Beatriz."
+      "es": "Escreva um e-mail formal de resposta (cerca de 140 palavras) sob o ponto de vista de Mariana Guedes, ponderando os benefícios pedagógicos já alcançados com propostas concretas para mitigar os problemas operacionais apontados por Beatriz.",
+      "en": "Escreva um e-mail formal de resposta (cerca de 140 palavras) sob o ponto de vista de Mariana Guedes, ponderando os benefícios pedagógicos já alcançados com propostas concretas para mitigar os problemas operacionais apontados por Beatriz."
     },
     "minWords": 90,
     "maxWords": 180,

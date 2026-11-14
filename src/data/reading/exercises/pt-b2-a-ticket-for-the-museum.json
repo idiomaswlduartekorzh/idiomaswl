@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um parágrafo argumentativo, entre 100 e 150 palavras, propondo uma solução viável para o conflito entre o horário de funcionamento do Museu Aurora e o sistema de transporte público, considerando o papel de diferentes atores sociais.",
-      "en": "Escreva um parágrafo argumentativo, entre 100 e 150 palavras, propondo uma solução viável para o conflito entre o horário de funcionamento do Museu Aurora e o sistema de transporte público, considerando o papel de diferentes atores sociais."
+      "es": "Escreva um parágrafo argumentativo, entre 80 e 120 palavras, propondo uma solução viável para o conflito entre o horário de funcionamento do Museu Aurora e o sistema de transporte público, considerando o papel de diferentes atores sociais.",
+      "en": "Escreva um parágrafo argumentativo, entre 80 e 120 palavras, propondo uma solução viável para o conflito entre o horário de funcionamento do Museu Aurora e o sistema de transporte público, considerando o papel de diferentes atores sociais."
     },
     "minWords": 60,
     "maxWords": 130,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie eine formelle Stellungnahme (ca. 200 Wörter) aus der Perspektive der Schulleitung als Antwort auf die Bedenken von Claudia und Markus. Gehen Sie dabei argumentativ auf die Kritikpunkte bezüglich der Planungsunsicherheit und der Arbeitsbelastung ein, ohne das zugrundeliegende Reformkonzept komplett aufzugeben.",
-      "en": "Verfassen Sie eine formelle Stellungnahme (ca. 200 Wörter) aus der Perspektive der Schulleitung als Antwort auf die Bedenken von Claudia und Markus. Gehen Sie dabei argumentativ auf die Kritikpunkte bezüglich der Planungsunsicherheit und der Arbeitsbelastung ein, ohne das zugrundeliegende Reformkonzept komplett aufzugeben."
+      "es": "Verfassen Sie eine formelle Stellungnahme (ca. 140 Wörter) aus der Perspektive der Schulleitung als Antwort auf die Bedenken von Claudia und Markus. Gehen Sie dabei argumentativ auf die Kritikpunkte bezüglich der Planungsunsicherheit und der Arbeitsbelastung ein, ohne das zugrundeliegende Reformkonzept komplett aufzugeben.",
+      "en": "Verfassen Sie eine formelle Stellungnahme (ca. 140 Wörter) aus der Perspektive der Schulleitung als Antwort auf die Bedenken von Claudia und Markus. Gehen Sie dabei argumentativ auf die Kritikpunkte bezüglich der Planungsunsicherheit und der Arbeitsbelastung ein, ohne das zugrundeliegende Reformkonzept komplett aufzugeben."
     },
     "minWords": 90,
     "maxWords": 180,

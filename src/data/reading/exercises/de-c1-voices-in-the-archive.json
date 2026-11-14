@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Schreiben Sie einen kurzen Kommentar (150–200 Wörter) auf Deutsch, in dem Sie Stellung zu dem Dilemma beziehen: Sollten historische Interviews grammatikalisch korrigiert werden oder muss das Original zwingend erhalten bleiben? Begründen Sie Ihre Meinung.",
-      "en": "Schreiben Sie einen kurzen Kommentar (150–200 Wörter) auf Deutsch, in dem Sie Stellung zu dem Dilemma beziehen: Sollten historische Interviews grammatikalisch korrigiert werden oder muss das Original zwingend erhalten bleiben? Begründen Sie Ihre Meinung."
+      "es": "Schreiben Sie einen kurzen Kommentar (120–170 Wörter) auf Deutsch, in dem Sie Stellung zu dem Dilemma beziehen: Sollten historische Interviews grammatikalisch korrigiert werden oder muss das Original zwingend erhalten bleiben? Begründen Sie Ihre Meinung.",
+      "en": "Schreiben Sie einen kurzen Kommentar (120–170 Wörter) auf Deutsch, in dem Sie Stellung zu dem Dilemma beziehen: Sollten historische Interviews grammatikalisch korrigiert werden oder muss das Original zwingend erhalten bleiben? Begründen Sie Ihre Meinung."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi il concetto di successo nella gestione degli spazi urbani, confrontando la prospettiva di un'amministrazione comunale con quella dei residenti delle zone limitrofe.",
-      "en": "Scrivi un testo argomentativo di circa 250 parole in cui analizzi il concetto di successo nella gestione degli spazi urbani, confrontando la prospettiva di un'amministrazione comunale con quella dei residenti delle zone limitrofe."
+      "es": "Scrivi un testo argomentativo di circa 140 parole in cui analizzi il concetto di successo nella gestione degli spazi urbani, confrontando la prospettiva di un'amministrazione comunale con quella dei residenti delle zone limitrofe.",
+      "en": "Scrivi un testo argomentativo di circa 140 parole in cui analizzi il concetto di successo nella gestione degli spazi urbani, confrontando la prospettiva di un'amministrazione comunale con quella dei residenti delle zone limitrofe."
     },
     "minWords": 90,
     "maxWords": 180,

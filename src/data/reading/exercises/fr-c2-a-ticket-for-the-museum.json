@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un court essai argumentatif (300 mots) dans lequel vous proposez une alternative concrète à la gratuité pour favoriser l'accès aux institutions culturelles, en tenant compte des contraintes temporelles et sociales mentionnées dans le texte.",
-      "en": "Rédigez un court essai argumentatif (300 mots) dans lequel vous proposez une alternative concrète à la gratuité pour favoriser l'accès aux institutions culturelles, en tenant compte des contraintes temporelles et sociales mentionnées dans le texte."
+      "es": "Rédigez un court essai argumentatif (180 mots) dans lequel vous proposez une alternative concrète à la gratuité pour favoriser l'accès aux institutions culturelles, en tenant compte des contraintes temporelles et sociales mentionnées dans le texte.",
+      "en": "Rédigez un court essai argumentatif (180 mots) dans lequel vous proposez une alternative concrète à la gratuité pour favoriser l'accès aux institutions culturelles, en tenant compte des contraintes temporelles et sociales mentionnées dans le texte."
     },
     "minWords": 120,
     "maxWords": 220,

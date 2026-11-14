@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un breve paragrafo (100-150 parole) in cui proponi una soluzione alternativa per risolvere il conflitto tra residenti e automobilisti, giustificando la tua scelta.",
-      "en": "Scrivi un breve paragrafo (100-150 parole) in cui proponi una soluzione alternativa per risolvere il conflitto tra residenti e automobilisti, giustificando la tua scelta."
+      "es": "Scrivi un breve paragrafo (80-120 parole) in cui proponi una soluzione alternativa per risolvere il conflitto tra residenti e automobilisti, giustificando la tua scelta.",
+      "en": "Scrivi un breve paragrafo (80-120 parole) in cui proponi una soluzione alternativa per risolvere il conflitto tra residenti e automobilisti, giustificando la tua scelta."
     },
     "minWords": 60,
     "maxWords": 130,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez une réponse de 150 mots au nom de Mme Vasseur, exprimant les doutes des locataires concernant la rentabilité réelle pour eux et proposant une réunion publique pour discuter des modalités de partage des coûts.",
-      "en": "Rédigez une réponse de 150 mots au nom de Mme Vasseur, exprimant les doutes des locataires concernant la rentabilité réelle pour eux et proposant une réunion publique pour discuter des modalités de partage des coûts."
+      "es": "Rédigez une réponse de 100 mots au nom de Mme Vasseur, exprimant les doutes des locataires concernant la rentabilité réelle pour eux et proposant une réunion publique pour discuter des modalités de partage des coûts.",
+      "en": "Rédigez une réponse de 100 mots au nom de Mme Vasseur, exprimant les doutes des locataires concernant la rentabilité réelle pour eux et proposant une réunion publique pour discuter des modalités de partage des coûts."
     },
     "minWords": 60,
     "maxWords": 130,

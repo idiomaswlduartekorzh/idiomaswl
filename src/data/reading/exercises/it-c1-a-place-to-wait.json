@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivete un testo argomentativo di circa 200 parole in italiano in cui discutete se la digitalizzazione dei servizi al pubblico riduca effettivamente lo stress o si limiti a trasformarlo, portando esempi concreti basati sulla vostra esperienza.",
-      "en": "Scrivete un testo argomentativo di circa 200 parole in italiano in cui discutete se la digitalizzazione dei servizi al pubblico riduca effettivamente lo stress o si limiti a trasformarlo, portando esempi concreti basati sulla vostra esperienza."
+      "es": "Scrivete un testo argomentativo di circa 140 parole in italiano in cui discutete se la digitalizzazione dei servizi al pubblico riduca effettivamente lo stress o si limiti a trasformarlo, portando esempi concreti basati sulla vostra esperienza.",
+      "en": "Scrivete un testo argomentativo di circa 140 parole in italiano in cui discutete se la digitalizzazione dei servizi al pubblico riduca effettivamente lo stress o si limiti a trasformarlo, portando esempi concreti basati sulla vostra esperienza."
     },
     "minWords": 90,
     "maxWords": 180,

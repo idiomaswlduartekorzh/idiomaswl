@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie einen Kommentar auf Deutsch (ca. 250 Wörter), in dem Sie die These erörtern, ob ökologische Massnahmen an Institutionen primär messbare Symbolwirkung haben müssen oder ob die systemische Gesamtbilanz wichtiger ist. Beziehen Sie sich argumentativ auf den Konflikt zwischen sichtbarem Müll und unsichtbaren Ressourcenkosten.",
-      "en": "Verfassen Sie einen Kommentar auf Deutsch (ca. 250 Wörter), in dem Sie die These erörtern, ob ökologische Massnahmen an Institutionen primär messbare Symbolwirkung haben müssen oder ob die systemische Gesamtbilanz wichtiger ist. Beziehen Sie sich argumentativ auf den Konflikt zwischen sichtbarem Müll und unsichtbaren Ressourcenkosten."
+      "es": "Verfassen Sie einen Kommentar auf Deutsch (ca. 140 Wörter), in dem Sie die These erörtern, ob ökologische Massnahmen an Institutionen primär messbare Symbolwirkung haben müssen oder ob die systemische Gesamtbilanz wichtiger ist. Beziehen Sie sich argumentativ auf den Konflikt zwischen sichtbarem Müll und unsichtbaren Ressourcenkosten.",
+      "en": "Verfassen Sie einen Kommentar auf Deutsch (ca. 140 Wörter), in dem Sie die These erörtern, ob ökologische Massnahmen an Institutionen primär messbare Symbolwirkung haben müssen oder ob die systemische Gesamtbilanz wichtiger ist. Beziehen Sie sich argumentativ auf den Konflikt zwischen sichtbarem Müll und unsichtbaren Ressourcenkosten."
     },
     "minWords": 90,
     "maxWords": 180,

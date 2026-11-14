@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se a criação de incentivos, mesmo que indiretos, anula a natureza voluntária de uma atividade comunitária, utilizando exemplos hipotéticos de sua escolha.",
-      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se a criação de incentivos, mesmo que indiretos, anula a natureza voluntária de uma atividade comunitária, utilizando exemplos hipotéticos de sua escolha."
+      "es": "Escreva um ensaio argumentativo de 180 palavras discutindo se a criação de incentivos, mesmo que indiretos, anula a natureza voluntária de uma atividade comunitária, utilizando exemplos hipotéticos de sua escolha.",
+      "en": "Escreva um ensaio argumentativo de 180 palavras discutindo se a criação de incentivos, mesmo que indiretos, anula a natureza voluntária de uma atividade comunitária, utilizando exemplos hipotéticos de sua escolha."
     },
     "minWords": 120,
     "maxWords": 220,

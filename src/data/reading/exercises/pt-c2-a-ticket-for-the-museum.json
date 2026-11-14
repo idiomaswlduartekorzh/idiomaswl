@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 400 palavras discutindo se a eliminação de taxas de entrada em museus pode ser considerada uma forma de 'gentrificação simbólica', conforme sugerido no texto, ou se tal visão ignora o papel educacional da gratuidade como um primeiro passo para a democratização cultural.",
-      "en": "Escreva um ensaio argumentativo de 400 palavras discutindo se a eliminação de taxas de entrada em museus pode ser considerada uma forma de 'gentrificação simbólica', conforme sugerido no texto, ou se tal visão ignora o papel educacional da gratuidade como um primeiro passo para a democratização cultural."
+      "es": "Escreva um ensaio argumentativo de 180 palavras discutindo se a eliminação de taxas de entrada em museus pode ser considerada uma forma de 'gentrificação simbólica', conforme sugerido no texto, ou se tal visão ignora o papel educacional da gratuidade como um primeiro passo para a democratização cultural.",
+      "en": "Escreva um ensaio argumentativo de 180 palavras discutindo se a eliminação de taxas de entrada em museus pode ser considerada uma forma de 'gentrificação simbólica', conforme sugerido no texto, ou se tal visão ignora o papel educacional da gratuidade como um primeiro passo para a democratização cultural."
     },
     "minWords": 120,
     "maxWords": 220,

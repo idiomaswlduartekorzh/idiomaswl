@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi una recensione critica di circa 200 parole in italiano, analizzando un'etichetta commerciale fittizia e argomentando se essa favorisca una reale consapevolezza ecologica o se rappresenti solo una strategia di marketing.",
-      "en": "Scrivi una recensione critica di circa 200 parole in italiano, analizzando un'etichetta commerciale fittizia e argomentando se essa favorisca una reale consapevolezza ecologica o se rappresenti solo una strategia di marketing."
+      "es": "Scrivi una recensione critica di circa 140 parole in italiano, analizzando un'etichetta commerciale fittizia e argomentando se essa favorisca una reale consapevolezza ecologica o se rappresenti solo una strategia di marketing.",
+      "en": "Scrivi una recensione critica di circa 140 parole in italiano, analizzando un'etichetta commerciale fittizia e argomentando se essa favorisca una reale consapevolezza ecologica o se rappresenti solo una strategia di marketing."
     },
     "minWords": 90,
     "maxWords": 180,

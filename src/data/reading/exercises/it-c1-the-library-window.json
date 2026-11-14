@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un saggio breve di circa 250 parole in cui analizzi criticamente il concetto di accessibilità nei luoghi della cultura, discutendo se l'estensione degli orari di apertura sia sufficiente a garantire una reale inclusione sociale o se siano necessari interventi strutturali più profondi.",
-      "en": "Scrivi un saggio breve di circa 250 parole in cui analizzi criticamente il concetto di accessibilità nei luoghi della cultura, discutendo se l'estensione degli orari di apertura sia sufficiente a garantire una reale inclusione sociale o se siano necessari interventi strutturali più profondi."
+      "es": "Scrivi un saggio breve di circa 140 parole in cui analizzi criticamente il concetto di accessibilità nei luoghi della cultura, discutendo se l'estensione degli orari di apertura sia sufficiente a garantire una reale inclusione sociale o se siano necessari interventi strutturali più profondi.",
+      "en": "Scrivi un saggio breve di circa 140 parole in cui analizzi criticamente il concetto di accessibilità nei luoghi della cultura, discutendo se l'estensione degli orari di apertura sia sufficiente a garantire una reale inclusione sociale o se siano necessari interventi strutturali più profondi."
     },
     "minWords": 90,
     "maxWords": 180,

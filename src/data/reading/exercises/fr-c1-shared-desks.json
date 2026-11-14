@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez une réponse argumentée d'environ 200 mots, adressée par un représentant du personnel à la direction, pour contester les choix présentés dans cette note de service.",
-      "en": "Rédigez une réponse argumentée d'environ 200 mots, adressée par un représentant du personnel à la direction, pour contester les choix présentés dans cette note de service."
+      "es": "Rédigez une réponse argumentée d'environ 140 mots, adressée par un représentant du personnel à la direction, pour contester les choix présentés dans cette note de service.",
+      "en": "Rédigez une réponse argumentée d'environ 140 mots, adressée par un représentant du personnel à la direction, pour contester les choix présentés dans cette note de service."
     },
     "minWords": 90,
     "maxWords": 180,

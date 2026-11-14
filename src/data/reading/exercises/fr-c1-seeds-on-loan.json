@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez un texte argumentatif de 250 mots dans lequel vous discutez s'il est préférable de confier la conservation du patrimoine vivant à des experts scientifiques ou aux communautés locales.",
-      "en": "Rédigez un texte argumentatif de 250 mots dans lequel vous discutez s'il est préférable de confier la conservation du patrimoine vivant à des experts scientifiques ou aux communautés locales."
+      "es": "Rédigez un texte argumentatif de 140 mots dans lequel vous discutez s'il est préférable de confier la conservation du patrimoine vivant à des experts scientifiques ou aux communautés locales.",
+      "en": "Rédigez un texte argumentatif de 140 mots dans lequel vous discutez s'il est préférable de confier la conservation du patrimoine vivant à des experts scientifiques ou aux communautés locales."
     },
     "minWords": 90,
     "maxWords": 180,

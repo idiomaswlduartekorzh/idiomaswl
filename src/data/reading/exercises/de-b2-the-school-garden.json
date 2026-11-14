@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Schreiben Sie einen kurzen Kommentar (100-150 Wörter), in dem Sie einen Lösungsvorschlag für das Gartenproblem der Linden-Schule unterbreiten. Berücksichtigen Sie dabei die Interessen von Lehrern und Eltern.",
-      "en": "Schreiben Sie einen kurzen Kommentar (100-150 Wörter), in dem Sie einen Lösungsvorschlag für das Gartenproblem der Linden-Schule unterbreiten. Berücksichtigen Sie dabei die Interessen von Lehrern und Eltern."
+      "es": "Schreiben Sie einen kurzen Kommentar (80-120 Wörter), in dem Sie einen Lösungsvorschlag für das Gartenproblem der Linden-Schule unterbreiten. Berücksichtigen Sie dabei die Interessen von Lehrern und Eltern.",
+      "en": "Schreiben Sie einen kurzen Kommentar (80-120 Wörter), in dem Sie einen Lösungsvorschlag für das Gartenproblem der Linden-Schule unterbreiten. Berücksichtigen Sie dabei die Interessen von Lehrern und Eltern."
     },
     "minWords": 60,
     "maxWords": 130,

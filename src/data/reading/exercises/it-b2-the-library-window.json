@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un breve saggio (150 parole) in cui proponi una soluzione per conciliare le esigenze del personale bibliotecario con quelle degli utenti che lavorano su turni, motivando la tua scelta.",
-      "en": "Scrivi un breve saggio (150 parole) in cui proponi una soluzione per conciliare le esigenze del personale bibliotecario con quelle degli utenti che lavorano su turni, motivando la tua scelta."
+      "es": "Scrivi un breve saggio (100 parole) in cui proponi una soluzione per conciliare le esigenze del personale bibliotecario con quelle degli utenti che lavorano su turni, motivando la tua scelta.",
+      "en": "Scrivi un breve saggio (100 parole) in cui proponi una soluzione per conciliare le esigenze del personale bibliotecario con quelle degli utenti che lavorano su turni, motivando la tua scelta."
     },
     "minWords": 60,
     "maxWords": 130,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un saggio breve (300 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità dell'utente o al benessere del lavoratore, giustificando la tua posizione.",
-      "en": "Scrivi un saggio breve (300 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità dell'utente o al benessere del lavoratore, giustificando la tua posizione."
+      "es": "Scrivi un saggio breve (180 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità dell'utente o al benessere del lavoratore, giustificando la tua posizione.",
+      "en": "Scrivi un saggio breve (180 parole) in cui discuti se le istituzioni culturali debbano dare priorità all'accessibilità dell'utente o al benessere del lavoratore, giustificando la tua posizione."
     },
     "minWords": 120,
     "maxWords": 220,

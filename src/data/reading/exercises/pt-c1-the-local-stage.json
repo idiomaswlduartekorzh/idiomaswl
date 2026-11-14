@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio argumentativo de 300 palavras discutindo se as métricas financeiras tradicionais são compatíveis com a avaliação de impacto em projetos sociais e culturais.",
-      "en": "Escreva um ensaio argumentativo de 300 palavras discutindo se as métricas financeiras tradicionais são compatíveis com a avaliação de impacto em projetos sociais e culturais."
+      "es": "Escreva um ensaio argumentativo de 140 palavras discutindo se as métricas financeiras tradicionais são compatíveis com a avaliação de impacto em projetos sociais e culturais.",
+      "en": "Escreva um ensaio argumentativo de 140 palavras discutindo se as métricas financeiras tradicionais são compatíveis com a avaliação de impacto em projetos sociais e culturais."
     },
     "minWords": 90,
     "maxWords": 180,

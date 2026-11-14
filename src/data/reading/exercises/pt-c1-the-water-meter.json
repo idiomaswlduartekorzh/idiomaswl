@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um texto dissertativo-argumentativo, entre 200 e 250 palavras, discutindo se a individualização obrigatória de hidrômetros em condomínios é a solução mais eficaz para a conservação da água ou se medidas coletivas de conscientização seriam suficientes. Utilize argumentos consistentes e vocabulário formal em português.",
-      "en": "Escreva um texto dissertativo-argumentativo, entre 200 e 250 palavras, discutindo se a individualização obrigatória de hidrômetros em condomínios é a solução mais eficaz para a conservação da água ou se medidas coletivas de conscientização seriam suficientes. Utilize argumentos consistentes e vocabulário formal em português."
+      "es": "Escreva um texto dissertativo-argumentativo, entre 120 e 170 palavras, discutindo se a individualização obrigatória de hidrômetros em condomínios é a solução mais eficaz para a conservação da água ou se medidas coletivas de conscientização seriam suficientes. Utilize argumentos consistentes e vocabulário formal em português.",
+      "en": "Escreva um texto dissertativo-argumentativo, entre 120 e 170 palavras, discutindo se a individualização obrigatória de hidrômetros em condomínios é a solução mais eficaz para a conservação da água ou se medidas coletivas de conscientização seriam suficientes. Utilize argumentos consistentes e vocabulário formal em português."
     },
     "minWords": 90,
     "maxWords": 180,

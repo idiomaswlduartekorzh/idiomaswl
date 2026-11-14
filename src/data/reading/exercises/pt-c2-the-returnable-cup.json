@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio de 300 palavras discutindo se a conveniência do consumidor deve ser um fator determinante na implementação de políticas de sustentabilidade em larga escala, utilizando o conceito de 'passivo ambiental' apresentado no texto.",
-      "en": "Escreva um ensaio de 300 palavras discutindo se a conveniência do consumidor deve ser um fator determinante na implementação de políticas de sustentabilidade em larga escala, utilizando o conceito de 'passivo ambiental' apresentado no texto."
+      "es": "Escreva um ensaio de 180 palavras discutindo se a conveniência do consumidor deve ser um fator determinante na implementação de políticas de sustentabilidade em larga escala, utilizando o conceito de 'passivo ambiental' apresentado no texto.",
+      "en": "Escreva um ensaio de 180 palavras discutindo se a conveniência do consumidor deve ser um fator determinante na implementação de políticas de sustentabilidade em larga escala, utilizando o conceito de 'passivo ambiental' apresentado no texto."
     },
     "minWords": 120,
     "maxWords": 220,

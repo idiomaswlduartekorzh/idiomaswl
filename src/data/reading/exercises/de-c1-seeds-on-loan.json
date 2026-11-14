@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Bewahrung von Kulturgut die traditionelle Praxis oder die wissenschaftliche Dokumentation höher zu bewerten ist. Beziehen Sie sich argumentativ auf den Text.",
-      "en": "Verfassen Sie einen kurzen Kommentar (ca. 150–200 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Bewahrung von Kulturgut die traditionelle Praxis oder die wissenschaftliche Dokumentation höher zu bewerten ist. Beziehen Sie sich argumentativ auf den Text."
+      "es": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Bewahrung von Kulturgut die traditionelle Praxis oder die wissenschaftliche Dokumentation höher zu bewerten ist. Beziehen Sie sich argumentativ auf den Text.",
+      "en": "Verfassen Sie einen kurzen Kommentar (ca. 120–170 Wörter) auf Deutsch, in dem Sie erörtern, ob bei der Bewahrung von Kulturgut die traditionelle Praxis oder die wissenschaftliche Dokumentation höher zu bewerten ist. Beziehen Sie sich argumentativ auf den Text."
     },
     "minWords": 90,
     "maxWords": 180,

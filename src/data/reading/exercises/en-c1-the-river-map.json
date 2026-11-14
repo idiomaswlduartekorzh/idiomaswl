@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 250-word policy brief recommending whether the town of Oakhaven should prioritize the HBM or the DPP, justifying your choice by balancing safety and economic stability.",
-      "en": "Write a 250-word policy brief recommending whether the town of Oakhaven should prioritize the HBM or the DPP, justifying your choice by balancing safety and economic stability."
+      "es": "Write a 140-word policy brief recommending whether the town of Oakhaven should prioritize the HBM or the DPP, justifying your choice by balancing safety and economic stability.",
+      "en": "Write a 140-word policy brief recommending whether the town of Oakhaven should prioritize the HBM or the DPP, justifying your choice by balancing safety and economic stability."
     },
     "minWords": 90,
     "maxWords": 180,

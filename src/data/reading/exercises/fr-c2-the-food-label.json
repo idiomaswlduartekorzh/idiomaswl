@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez une réponse argumentée de 300 mots dans laquelle vous défendez ou critiquez l'idée que le consommateur devrait assumer une plus grande part de responsabilité dans l'évaluation de la fraîcheur des produits alimentaires, en vous appuyant sur les arguments soulevés dans le texte.",
-      "en": "Rédigez une réponse argumentée de 300 mots dans laquelle vous défendez ou critiquez l'idée que le consommateur devrait assumer une plus grande part de responsabilité dans l'évaluation de la fraîcheur des produits alimentaires, en vous appuyant sur les arguments soulevés dans le texte."
+      "es": "Rédigez une réponse argumentée de 180 mots dans laquelle vous défendez ou critiquez l'idée que le consommateur devrait assumer une plus grande part de responsabilité dans l'évaluation de la fraîcheur des produits alimentaires, en vous appuyant sur les arguments soulevés dans le texte.",
+      "en": "Rédigez une réponse argumentée de 180 mots dans laquelle vous défendez ou critiquez l'idée que le consommateur devrait assumer une plus grande part de responsabilité dans l'évaluation de la fraîcheur des produits alimentaires, en vous appuyant sur les arguments soulevés dans le texte."
     },
     "minWords": 120,
     "maxWords": 220,

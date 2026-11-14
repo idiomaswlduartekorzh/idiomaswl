@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi una breve recensione (150 parole) di un servizio comunitario che hai utilizzato, analizzandone pregi e difetti in modo critico.",
-      "en": "Scrivi una breve recensione (150 parole) di un servizio comunitario che hai utilizzato, analizzandone pregi e difetti in modo critico."
+      "es": "Scrivi una breve recensione (100 parole) di un servizio comunitario che hai utilizzato, analizzandone pregi e difetti in modo critico.",
+      "en": "Scrivi una breve recensione (100 parole) di un servizio comunitario che hai utilizzato, analizzandone pregi e difetti in modo critico."
     },
     "minWords": 60,
     "maxWords": 130,

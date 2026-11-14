@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word response evaluating whether municipal governments have a moral obligation to disclose all variables when reporting on public safety projects, even if those variables complicate the narrative of success.",
-      "en": "Write a 200-word response evaluating whether municipal governments have a moral obligation to disclose all variables when reporting on public safety projects, even if those variables complicate the narrative of success."
+      "es": "Write a 140-word response evaluating whether municipal governments have a moral obligation to disclose all variables when reporting on public safety projects, even if those variables complicate the narrative of success.",
+      "en": "Write a 140-word response evaluating whether municipal governments have a moral obligation to disclose all variables when reporting on public safety projects, even if those variables complicate the narrative of success."
     },
     "minWords": 90,
     "maxWords": 180,

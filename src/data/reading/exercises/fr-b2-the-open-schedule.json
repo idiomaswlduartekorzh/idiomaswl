@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez une réponse de 150 mots au nom du conseil d'administration, proposant une alternative qui garantit la ponctualité tout en soutenant les familles en difficulté.",
-      "en": "Rédigez une réponse de 150 mots au nom du conseil d'administration, proposant une alternative qui garantit la ponctualité tout en soutenant les familles en difficulté."
+      "es": "Rédigez une réponse de 100 mots au nom du conseil d'administration, proposant une alternative qui garantit la ponctualité tout en soutenant les familles en difficulté.",
+      "en": "Rédigez une réponse de 100 mots au nom du conseil d'administration, proposant une alternative qui garantit la ponctualité tout en soutenant les familles en difficulté."
     },
     "minWords": 60,
     "maxWords": 130,

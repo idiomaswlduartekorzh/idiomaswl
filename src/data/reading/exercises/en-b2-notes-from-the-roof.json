@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 150-word response from the perspective of a tenant, explaining why you support the solar initiative but disagree with the proposed surcharge model.",
-      "en": "Write a 150-word response from the perspective of a tenant, explaining why you support the solar initiative but disagree with the proposed surcharge model."
+      "es": "Write a 100-word response from the perspective of a tenant, explaining why you support the solar initiative but disagree with the proposed surcharge model.",
+      "en": "Write a 100-word response from the perspective of a tenant, explaining why you support the solar initiative but disagree with the proposed surcharge model."
     },
     "minWords": 60,
     "maxWords": 130,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um ensaio crítico de 300 palavras discutindo se instituições públicas podem legitimamente promover serviços sem revelar os custos humanos subjacentes.",
-      "en": "Escreva um ensaio crítico de 300 palavras discutindo se instituições públicas podem legitimamente promover serviços sem revelar os custos humanos subjacentes."
+      "es": "Escreva um ensaio crítico de 180 palavras discutindo se instituições públicas podem legitimamente promover serviços sem revelar os custos humanos subjacentes.",
+      "en": "Escreva um ensaio crítico de 180 palavras discutindo se instituições públicas podem legitimamente promover serviços sem revelar os custos humanos subjacentes."
     },
     "minWords": 120,
     "maxWords": 220,

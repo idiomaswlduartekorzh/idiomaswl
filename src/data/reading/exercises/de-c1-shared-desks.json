@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Verfassen Sie als Betriebsratsmitglied eine kritische, aber professionelle Erwiderung auf diese E-Mail. Gehen Sie auf die verdeckte Kostenverlagerung ein, fordern Sie Transparenz bezüglich der gestrichenen Pauschale und schlagen Sie einen fairen Kompromiss für die mobile Arbeit vor (ca. 180–220 Wörter).",
-      "en": "Verfassen Sie als Betriebsratsmitglied eine kritische, aber professionelle Erwiderung auf diese E-Mail. Gehen Sie auf die verdeckte Kostenverlagerung ein, fordern Sie Transparenz bezüglich der gestrichenen Pauschale und schlagen Sie einen fairen Kompromiss für die mobile Arbeit vor (ca. 180–220 Wörter)."
+      "es": "Verfassen Sie als Betriebsratsmitglied eine kritische, aber professionelle Erwiderung auf diese E-Mail. Gehen Sie auf die verdeckte Kostenverlagerung ein, fordern Sie Transparenz bezüglich der gestrichenen Pauschale und schlagen Sie einen fairen Kompromiss für die mobile Arbeit vor (ca. 120–170 Wörter).",
+      "en": "Verfassen Sie als Betriebsratsmitglied eine kritische, aber professionelle Erwiderung auf diese E-Mail. Gehen Sie auf die verdeckte Kostenverlagerung ein, fordern Sie Transparenz bezüglich der gestrichenen Pauschale und schlagen Sie einen fairen Kompromiss für die mobile Arbeit vor (ca. 120–170 Wörter)."
     },
     "minWords": 90,
     "maxWords": 180,

@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word response arguing whether urban planners have a moral obligation to distribute environmental burdens equally across all socioeconomic districts, even if it compromises the efficiency of city transit.",
-      "en": "Write a 300-word response arguing whether urban planners have a moral obligation to distribute environmental burdens equally across all socioeconomic districts, even if it compromises the efficiency of city transit."
+      "es": "Write a 180-word response arguing whether urban planners have a moral obligation to distribute environmental burdens equally across all socioeconomic districts, even if it compromises the efficiency of city transit.",
+      "en": "Write a 180-word response arguing whether urban planners have a moral obligation to distribute environmental burdens equally across all socioeconomic districts, even if it compromises the efficiency of city transit."
     },
     "minWords": 120,
     "maxWords": 220,

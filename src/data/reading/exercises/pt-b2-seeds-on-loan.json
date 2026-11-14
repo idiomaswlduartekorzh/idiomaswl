@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo se a decisão de Dona Helena foi a mais ética ou se ela deveria ter priorizado a regra original da biblioteca.",
-      "en": "Escreva um parágrafo argumentativo (100-150 palavras) defendendo se a decisão de Dona Helena foi a mais ética ou se ela deveria ter priorizado a regra original da biblioteca."
+      "es": "Escreva um parágrafo argumentativo (80-120 palavras) defendendo se a decisão de Dona Helena foi a mais ética ou se ela deveria ter priorizado a regra original da biblioteca.",
+      "en": "Escreva um parágrafo argumentativo (80-120 palavras) defendendo se a decisão de Dona Helena foi a mais ética ou se ela deveria ter priorizado a regra original da biblioteca."
     },
     "minWords": 60,
     "maxWords": 130,

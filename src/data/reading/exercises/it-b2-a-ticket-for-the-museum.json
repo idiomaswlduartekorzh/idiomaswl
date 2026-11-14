@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un breve articolo di opinione (150 parole) in cui proponi una soluzione concreta per risolvere il conflitto tra gli orari del museo e quelli dei trasporti, considerando le esigenze dei visitatori e le limitazioni del budget comunale.",
-      "en": "Scrivi un breve articolo di opinione (150 parole) in cui proponi una soluzione concreta per risolvere il conflitto tra gli orari del museo e quelli dei trasporti, considerando le esigenze dei visitatori e le limitazioni del budget comunale."
+      "es": "Scrivi un breve articolo di opinione (100 parole) in cui proponi una soluzione concreta per risolvere il conflitto tra gli orari del museo e quelli dei trasporti, considerando le esigenze dei visitatori e le limitazioni del budget comunale.",
+      "en": "Scrivi un breve articolo di opinione (100 parole) in cui proponi una soluzione concreta per risolvere il conflitto tra gli orari del museo e quelli dei trasporti, considerando le esigenze dei visitatori e le limitazioni del budget comunale."
     },
     "minWords": 60,
     "maxWords": 130,

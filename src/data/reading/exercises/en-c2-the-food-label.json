@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word critical essay examining how modern corporations utilize linguistic reframing to shift systemic responsibilities onto individual consumers. Use sophisticated vocabulary and maintain a rigorous, analytical tone throughout your response.",
-      "en": "Write a 300-word critical essay examining how modern corporations utilize linguistic reframing to shift systemic responsibilities onto individual consumers. Use sophisticated vocabulary and maintain a rigorous, analytical tone throughout your response."
+      "es": "Write a 180-word critical essay examining how modern corporations utilize linguistic reframing to shift systemic responsibilities onto individual consumers. Use sophisticated vocabulary and maintain a rigorous, analytical tone throughout your response.",
+      "en": "Write a 180-word critical essay examining how modern corporations utilize linguistic reframing to shift systemic responsibilities onto individual consumers. Use sophisticated vocabulary and maintain a rigorous, analytical tone throughout your response."
     },
     "minWords": 120,
     "maxWords": 220,

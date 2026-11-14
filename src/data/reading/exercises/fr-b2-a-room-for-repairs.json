@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Rédigez une réponse de 150 mots proposant une solution concrète pour améliorer l'efficacité de l'Atelier des Glycines tout en préservant son aspect social.",
-      "en": "Rédigez une réponse de 150 mots proposant une solution concrète pour améliorer l'efficacité de l'Atelier des Glycines tout en préservant son aspect social."
+      "es": "Rédigez une réponse de 100 mots proposant une solution concrète pour améliorer l'efficacité de l'Atelier des Glycines tout en préservant son aspect social.",
+      "en": "Rédigez une réponse de 100 mots proposant une solution concrète pour améliorer l'efficacité de l'Atelier des Glycines tout en préservant son aspect social."
     },
     "minWords": 60,
     "maxWords": 130,

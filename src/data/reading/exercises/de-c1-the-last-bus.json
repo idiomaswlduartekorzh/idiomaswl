@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Schreiben Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive eines betroffenen Gemeindebürgermeisters, der sich gegen die Darstellung des Verkehrsverbunds wehrt und fordert, dass Mobilität als Grundrecht statt als reine Betriebswirtschaft betrachtet wird.",
-      "en": "Schreiben Sie einen kurzen Kommentar (ca. 150–200 Wörter) aus der Perspektive eines betroffenen Gemeindebürgermeisters, der sich gegen die Darstellung des Verkehrsverbunds wehrt und fordert, dass Mobilität als Grundrecht statt als reine Betriebswirtschaft betrachtet wird."
+      "es": "Schreiben Sie einen kurzen Kommentar (ca. 120–170 Wörter) aus der Perspektive eines betroffenen Gemeindebürgermeisters, der sich gegen die Darstellung des Verkehrsverbunds wehrt und fordert, dass Mobilität als Grundrecht statt als reine Betriebswirtschaft betrachtet wird.",
+      "en": "Schreiben Sie einen kurzen Kommentar (ca. 120–170 Wörter) aus der Perspektive eines betroffenen Gemeindebürgermeisters, der sich gegen die Darstellung des Verkehrsverbunds wehrt und fordert, dass Mobilität als Grundrecht statt als reine Betriebswirtschaft betrachtet wird."
     },
     "minWords": 90,
     "maxWords": 180,

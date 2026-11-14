@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 300-word response evaluating whether a cultural institution can ever be truly 'free' in a capitalist society, considering the author's arguments about the 'cost of arrival'.",
-      "en": "Write a 300-word response evaluating whether a cultural institution can ever be truly 'free' in a capitalist society, considering the author's arguments about the 'cost of arrival'."
+      "es": "Write a 180-word response evaluating whether a cultural institution can ever be truly 'free' in a capitalist society, considering the author's arguments about the 'cost of arrival'.",
+      "en": "Write a 180-word response evaluating whether a cultural institution can ever be truly 'free' in a capitalist society, considering the author's arguments about the 'cost of arrival'."
     },
     "minWords": 120,
     "maxWords": 220,

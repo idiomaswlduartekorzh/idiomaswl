@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a short proposal (150 words) for a grocery store manager suggesting one way to improve customer trust while maintaining their new waste-reduction labeling policy.",
-      "en": "Write a short proposal (150 words) for a grocery store manager suggesting one way to improve customer trust while maintaining their new waste-reduction labeling policy."
+      "es": "Write a short proposal (100 words) for a grocery store manager suggesting one way to improve customer trust while maintaining their new waste-reduction labeling policy.",
+      "en": "Write a short proposal (100 words) for a grocery store manager suggesting one way to improve customer trust while maintaining their new waste-reduction labeling policy."
     },
     "minWords": 60,
     "maxWords": 130,

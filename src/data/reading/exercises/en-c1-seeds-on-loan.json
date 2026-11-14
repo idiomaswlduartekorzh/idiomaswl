@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Write a 200-word response evaluating whether the preservation of cultural heritage should be prioritized over the individual rights of those who maintained it.",
-      "en": "Write a 200-word response evaluating whether the preservation of cultural heritage should be prioritized over the individual rights of those who maintained it."
+      "es": "Write a 140-word response evaluating whether the preservation of cultural heritage should be prioritized over the individual rights of those who maintained it.",
+      "en": "Write a 140-word response evaluating whether the preservation of cultural heritage should be prioritized over the individual rights of those who maintained it."
     },
     "minWords": 90,
     "maxWords": 180,

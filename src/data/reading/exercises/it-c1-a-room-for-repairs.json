@@ -371,8 +371,8 @@
   ],
   "production": {
     "prompt": {
-      "es": "Scrivi un saggio breve di circa 250 parole in italiano, analizzando i limiti e le potenzialità dei progetti di volontariato basati su competenze professionali. Discuti se la gratuità del lavoro possa giustificarsi in nome della coesione sociale o se rischi di svalutare la professionalità tecnica.",
-      "en": "Scrivi un saggio breve di circa 250 parole in italiano, analizzando i limiti e le potenzialità dei progetti di volontariato basati su competenze professionali. Discuti se la gratuità del lavoro possa giustificarsi in nome della coesione sociale o se rischi di svalutare la professionalità tecnica."
+      "es": "Scrivi un saggio breve di circa 140 parole in italiano, analizzando i limiti e le potenzialità dei progetti di volontariato basati su competenze professionali. Discuti se la gratuità del lavoro possa giustificarsi in nome della coesione sociale o se rischi di svalutare la professionalità tecnica.",
+      "en": "Scrivi un saggio breve di circa 140 parole in italiano, analizzando i limiti e le potenzialità dei progetti di volontariato basati su competenze professionali. Discuti se la gratuità del lavoro possa giustificarsi in nome della coesione sociale o se rischi di svalutare la professionalità tecnica."
     },
     "minWords": 90,
     "maxWords": 180,
