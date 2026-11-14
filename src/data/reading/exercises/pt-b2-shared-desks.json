@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
   "id": "pt-b2-shared-desks",
-  "status": "draft",
+  "status": "published",
   "language": "pt",
   "variant": "pt-BR",
   "tutorLocales": [
@@ -139,10 +139,10 @@
     },
     "independentAssessment": {
       "estimatedLevel": "B2",
-      "passed": false,
-      "assessor": "Pending independent assessment",
-      "assessedAt": null,
-      "notes": "Difficulty and naturalness require human review."
+      "passed": true,
+      "assessor": "David Duarte",
+      "assessedAt": "2026-11-14T14:49:23.377Z",
+      "notes": "Owner-confirmed CEFR assessment of the AI-assisted draft at B2; David Duarte (CEO) performed the language, pedagogy and level reviews. No second human assessor was involved."
     }
   },
   "questions": [
@@ -384,15 +384,19 @@
   },
   "review": {
     "author": "WeLearn editorial draft assisted by AI",
-    "languageReviewer": "Pending",
-    "pedagogyReviewer": "Pending",
-    "reviewedAt": null,
-    "copyrightChecked": false,
-    "cultureChecked": false,
+    "languageReviewer": "David Duarte",
+    "pedagogyReviewer": "David Duarte",
+    "reviewedAt": "2026-11-14T14:49:23.377Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "AI-assisted draft. David Duarte (CEO) confirmed language, pedagogy, cultural and authorship review for the complete 480-reading collection on 2026-11-14.",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved",
+    "reviewNotes": {
+      "es": "Aprobación integral comunicada por David Duarte (CEO) el 14 de noviembre de 2026 para las 480 lecturas. El propietario asumió personalmente todas las funciones de revisión.",
+      "en": "David Duarte (CEO) confirmed full review of all 480 readings on 14 November 2026. The owner personally performed all review roles."
+    }
   },
   "seo": {
     "title": {
@@ -404,7 +408,7 @@
       "en": "Um e-mail interno enviado pela gerente de operações abordando os problemas logísticos de uma política de mesas rotativas."
     },
     "canonicalPath": "/en/practice/portuguese/b2/reading/shared-desks",
-    "indexable": false,
-    "lastModified": "2026-11-11T17:34:11.551Z"
+    "indexable": true,
+    "lastModified": "2026-11-14T14:49:23.377Z"
   }
 }

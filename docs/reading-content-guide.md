@@ -1,6 +1,6 @@
 # Guía para añadir lecturas al motor WeLearn
 
-Para el piloto avanzado B2–C2, consulta también [`reading-advanced-pilot.md`](reading-advanced-pilot.md). Sus 24 fichas son borradores generados desde una fuente editorial y tienen un control adicional; no se publican sin revisión humana y nivelación independiente.
+Para la colección avanzada B2–C2, consulta [`reading-advanced-pilot.md`](reading-advanced-pilot.md) y su [acta de aprobación de 480 fichas](reading-advanced-release-2026-11-14.md). Las 24 fichas originales proceden de una fuente editorial regenerable. Toda ficha nueva sigue el flujo de revisión antes de publicarse.
 
 ## Flujo seguro
 

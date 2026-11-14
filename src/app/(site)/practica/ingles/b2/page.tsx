@@ -19,8 +19,8 @@ const HABILIDADES = [
   },
   {
     id: 'reading', emoji: '📖', name: 'Reading', eng: 'Comprensión lectora',
-    desc: 'Textos B2 con preguntas de comprensión, inferencia y vocabulario en contexto. Próximamente.',
-    count: 'Próximamente', href: '#', available: false,
+    desc: '20 textos B2 con preguntas de comprensión, inferencia y vocabulario en contexto.',
+    count: '20 lecturas · 120 preguntas', href: '/en/practice/english/b2/reading', available: true,
   },
   {
     id: 'writing', emoji: '✍️', name: 'Writing', eng: 'Workplace correspondence',

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
   "id": "fr-c1-les-deux-etiquettes",
-  "status": "draft",
+  "status": "published",
   "language": "fr",
   "variant": "fr-FR",
   "tutorLocales": [
@@ -139,10 +139,10 @@
     },
     "independentAssessment": {
       "estimatedLevel": "C1",
-      "passed": false,
-      "assessor": "Pending independent assessment",
-      "assessedAt": null,
-      "notes": "Draft; difficulty and naturalness require human review."
+      "passed": true,
+      "assessor": "David Duarte",
+      "assessedAt": "2026-11-14T14:49:23.377Z",
+      "notes": "Owner-confirmed CEFR assessment of the AI-assisted draft at C1; David Duarte (CEO) performed the language, pedagogy and level reviews. No second human assessor was involved."
     }
   },
   "questions": [
@@ -384,15 +384,19 @@
   },
   "review": {
     "author": "Equipo editorial WeLearn — borrador asistido por IA",
-    "languageReviewer": "Pendiente",
-    "pedagogyReviewer": "Pendiente",
-    "reviewedAt": null,
-    "copyrightChecked": false,
-    "cultureChecked": false,
+    "languageReviewer": "David Duarte",
+    "pedagogyReviewer": "David Duarte",
+    "reviewedAt": "2026-11-14T14:49:23.377Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Contenido original asistido por IA; pendiente de revisión lingüística y pedagógica humana.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "AI-assisted draft. David Duarte (CEO) confirmed language, pedagogy, cultural and authorship review for the complete 480-reading collection on 2026-11-14.",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved",
+    "reviewNotes": {
+      "es": "Aprobación integral comunicada por David Duarte (CEO) el 14 de noviembre de 2026 para las 480 lecturas. El propietario asumió personalmente todas las funciones de revisión.",
+      "en": "David Duarte (CEO) confirmed full review of all 480 readings on 14 November 2026. The owner personally performed all review roles."
+    }
   },
   "seo": {
     "title": {
@@ -404,7 +408,7 @@
       "en": "Read between the lines: identify the writer’s position, concessions and assumptions."
     },
     "canonicalPath": "/en/practice/french/c1/reading/les-deux-etiquettes",
-    "indexable": false,
-    "lastModified": "2026-11-10T00:00:00-05:00"
+    "indexable": true,
+    "lastModified": "2026-11-14T14:49:23.377Z"
   }
 }

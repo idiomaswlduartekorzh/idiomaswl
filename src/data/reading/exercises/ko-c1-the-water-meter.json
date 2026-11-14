@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
   "id": "ko-c1-the-water-meter",
-  "status": "draft",
+  "status": "published",
   "language": "ko",
   "variant": "ko-KR",
   "tutorLocales": [
@@ -144,10 +144,10 @@
     },
     "independentAssessment": {
       "estimatedLevel": "C1",
-      "passed": false,
-      "assessor": "Pending independent assessment",
-      "assessedAt": null,
-      "notes": "Difficulty and naturalness require human review."
+      "passed": true,
+      "assessor": "David Duarte",
+      "assessedAt": "2026-11-14T14:49:23.377Z",
+      "notes": "Owner-confirmed CEFR assessment of the AI-assisted draft at C1; David Duarte (CEO) performed the language, pedagogy and level reviews. No second human assessor was involved."
     }
   },
   "questions": [
@@ -389,15 +389,19 @@
   },
   "review": {
     "author": "WeLearn editorial draft assisted by AI",
-    "languageReviewer": "Pending",
-    "pedagogyReviewer": "Pending",
-    "reviewedAt": null,
-    "copyrightChecked": false,
-    "cultureChecked": false,
+    "languageReviewer": "David Duarte",
+    "pedagogyReviewer": "David Duarte",
+    "reviewedAt": "2026-11-14T14:49:23.377Z",
+    "copyrightChecked": true,
+    "cultureChecked": true,
     "aiAssisted": true,
-    "aiUseNote": "Original AI-assisted draft; requires human language and pedagogy review.",
-    "languageDecision": "pending",
-    "pedagogyDecision": "pending"
+    "aiUseNote": "AI-assisted draft. David Duarte (CEO) confirmed language, pedagogy, cultural and authorship review for the complete 480-reading collection on 2026-11-14.",
+    "languageDecision": "approved",
+    "pedagogyDecision": "approved",
+    "reviewNotes": {
+      "es": "Aprobación integral comunicada por David Duarte (CEO) el 14 de noviembre de 2026 para las 480 lecturas. El propietario asumió personalmente todas las funciones de revisión.",
+      "en": "David Duarte (CEO) confirmed full review of all 480 readings on 14 November 2026. The owner personally performed all review roles."
+    }
   },
   "seo": {
     "title": {
@@ -409,7 +413,7 @@
       "en": "시 당국의 물 소비량 통계가 실제 가정의 절약 노력을 왜곡하고 있다는 비판이 제기되었습니다. 이 글은 익명의 아파트 단지에서 벌어진 갈등을 통해 데이터의 함정을 탐구합니다."
     },
     "canonicalPath": "/en/practice/korean/c1/reading/the-water-meter",
-    "indexable": false,
-    "lastModified": "2026-11-12T23:39:46.994Z"
+    "indexable": true,
+    "lastModified": "2026-11-14T14:49:23.377Z"
   }
 }

@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { getAdvancedWritingLocale } from '@/lib/practica/writing-route'
+import { readingHubPath } from '@/lib/reading/routes'
+import type { ReadingLanguage } from '@/lib/reading/types'
 
 /**
  * Navegación lateral entre las destrezas de un nivel y entre los niveles de un idioma.
@@ -45,6 +47,10 @@ const LANG_HUB: Record<string, string> = {
   ingles: '/clases-de-ingles', italiano: '/clases-de-italiano', japones: '/clases-de-japones',
   portugues: '/clases-de-portugues', ruso: '/clases-de-ruso',
 }
+const READING_LANGUAGE: Record<string, ReadingLanguage> = {
+  ingles: 'en', frances: 'fr', italiano: 'it', aleman: 'de',
+  portugues: 'pt', ruso: 'ru', japones: 'ja', coreano: 'ko',
+}
 
 export default function SkillNav({
   lang, level, skills, levels,
@@ -63,6 +69,8 @@ export default function SkillNav({
   const langName = LANG_LABELS[lang] ?? lang
   const lvl = level.toUpperCase()
   const base = `/practica/${lang}/${level}`
+  const advancedReading = ['b2', 'c1', 'c2'].includes(level) && READING_LANGUAGE[lang]
+  const visibleSkills = advancedReading ? [...new Set([...skills, 'lectura'])] : skills
 
   const card: React.CSSProperties = {
     display: 'block', padding: '0.85rem 1rem', borderRadius: 10,
@@ -77,10 +85,13 @@ export default function SkillNav({
           Practica {langName} {lvl} por destreza
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '0.7rem' }}>
-          {skills.map(s => {
+          {visibleSkills.map(s => {
             const meta = SKILL_LABELS[s] ?? { label: s, desc: '' }
+            const href = s === 'lectura' && advancedReading
+              ? readingHubPath('en', advancedReading, lvl as 'B2' | 'C1' | 'C2')
+              : `${base}/${s}`
             return (
-              <Link key={s} href={`${base}/${s}`} style={card}>
+              <Link key={s} href={href} style={card}>
                 <strong style={{ display: 'block', fontSize: '0.93rem', color: 'var(--ink)' }}>{meta.label}</strong>
                 {meta.desc && (
                   <span style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.4 }}>{meta.desc}</span>

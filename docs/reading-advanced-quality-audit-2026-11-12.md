@@ -1,6 +1,6 @@
 # Auditoría de calidad: Reading B2–C2
 
-Estado al 14 de noviembre de 2026: **480 borradores, 0 aprobados, 0 publicados**. Esta auditoría automatizada y de muestras no sustituye las revisiones humanas de las ocho lenguas ni la nivelación CEFR independiente exigida por `docs/reading-content-guide.md`. La progresión se contrastó con los [descriptores de comprensión lectora del Consejo de Europa](https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions); una longitud mayor no certifica por sí sola un nivel.
+Estado de esta auditoría, **antes de la aprobación del propietario**: 480 borradores, 0 aprobados y 0 publicados. El 14 de noviembre David Duarte aprobó las 480 fichas; el alcance y la excepción de revisor único están documentados en [`reading-advanced-release-2026-11-14.md`](reading-advanced-release-2026-11-14.md). Las cifras y pendientes de abajo son el corte histórico de la auditoría automatizada, no el estado editorial actual. La progresión se contrastó con los [descriptores de comprensión lectora del Consejo de Europa](https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions); una longitud mayor no certifica por sí sola un nivel.
 
 ## Inventario y estructura
 

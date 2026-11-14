@@ -5,7 +5,23 @@ import { validateReadingExercise } from '../scripts/lib/reading-content-validato
 
 const fixture = JSON.parse(await readFile(new URL('../src/data/reading/exercises/en-a1-my-morning-at-the-cafe.json', import.meta.url), 'utf8'))
 const koreanFixture = JSON.parse(await readFile(new URL('../src/data/reading/exercises/ko-a1-cafe-order.json', import.meta.url), 'utf8'))
-const advancedDraft = JSON.parse(await readFile(new URL('../src/data/reading/exercises/en-b2-a-library-of-things.json', import.meta.url), 'utf8'))
+const advancedPublished = JSON.parse(await readFile(new URL('../src/data/reading/exercises/en-b2-a-library-of-things.json', import.meta.url), 'utf8'))
+const advancedDraft = structuredClone(advancedPublished)
+advancedDraft.status = 'draft'
+advancedDraft.seo.indexable = false
+advancedDraft.review.languageReviewer = 'Pending'
+advancedDraft.review.pedagogyReviewer = 'Pending'
+advancedDraft.review.reviewedAt = null
+advancedDraft.review.copyrightChecked = false
+advancedDraft.review.cultureChecked = false
+advancedDraft.review.languageDecision = 'pending'
+advancedDraft.review.pedagogyDecision = 'pending'
+advancedDraft.review.aiUseNote = 'AI-assisted draft pending human review.'
+delete advancedDraft.review.reviewNotes
+advancedDraft.leveling.independentAssessment.passed = false
+advancedDraft.leveling.independentAssessment.assessor = 'Pending independent assessment'
+advancedDraft.leveling.independentAssessment.assessedAt = null
+advancedDraft.leveling.independentAssessment.notes = 'Draft pending independent level review.'
 const batchFiles = (await readdir(new URL('../src/data/reading/exercises/', import.meta.url)))
   .filter((filename) => /^en-(a1|a2|b1)-.*\.json$/.test(filename))
   .sort()
@@ -15,6 +31,11 @@ const batchFixtures = await Promise.all(batchFiles.map(async (filename) =>
 
 test('the A1 pilot satisfies structural and leveling preflight checks', () => {
   assert.deepEqual(validateReadingExercise(fixture), [])
+})
+
+test('the owner-approved advanced reading passes its publication contract', () => {
+  assert.equal(advancedPublished.status, 'published')
+  assert.deepEqual(validateReadingExercise(advancedPublished), [])
 })
 
 test('publication is blocked while requested human changes await final approval', () => {
