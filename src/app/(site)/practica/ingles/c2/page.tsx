@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import AdvancedEnglishLevelHub from '@/components/grammar/AdvancedEnglishLevelHub'
 
 export const metadata: Metadata = {
-  title: 'Inglés C2 — Gramática de maestría con ejercicios',
-  description: 'Piloto de gramática inglesa C2 con explicaciones, infografías, ejercicios progresivos y PDF descargables.',
+  title: 'Inglés C2 — Lectura, gramática, escritura y habla',
+  description: 'Practica inglés C2 con 20 lecturas, gramática de nivel experto, escritura profesional y preguntas de expresión oral.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/c2' },
 }
 

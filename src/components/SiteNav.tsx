@@ -166,7 +166,8 @@ function ThemeToggle({ english = false }: { english?: boolean }) {
 export default function SiteNav() {
   const pathname = usePathname();
   const writingLocale = getAdvancedWritingLocale(pathname);
-  const english = pathname.startsWith('/practica/ielts')
+  const english = pathname.startsWith('/en/practice/')
+    || pathname.startsWith('/practica/ielts')
     || pathname.startsWith('/practica/toefl')
     || isAdvancedEnglishWritingPath(pathname)
     || pathname.startsWith('/learn-spanish-colombia')
@@ -235,7 +236,7 @@ export default function SiteNav() {
           {navLinks.map(({ label, href }) => {
             const active =
               href === '/' ? pathname === '/' || pathname === '/home'
-              : href === '/practica' ? pathname.startsWith('/practica') || pathname.startsWith('/aprende-coreano')
+              : href === '/practica' ? pathname.startsWith('/practica') || pathname.startsWith('/en/practice/') || pathname.startsWith('/aprende-coreano')
               : href === '/clases-de-idiomas' ? isIdiomasPath(pathname)
               : pathname.startsWith(href);
 

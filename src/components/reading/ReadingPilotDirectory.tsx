@@ -17,7 +17,7 @@ export function ReadingPilotDirectory({ links, currentLanguage, currentLevel }: 
 
   return <details className={styles.pilotDirectory}>
     <summary>
-      <span><strong>Explore the reading collection</strong><small>{links.length} language and level paths · 20 readings planned in each</small></span>
+      <span><strong>Explore the reading collection</strong><small>{links.length} language and level paths · 20 readings in each</small></span>
       <span aria-hidden="true">Browse all ↗</span>
     </summary>
     <div className={styles.pilotDirectoryGrid}>

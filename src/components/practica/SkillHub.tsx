@@ -94,7 +94,7 @@ export default function SkillHub({
     coreano: { name: 'Expresión oral', desc: '20 preguntas de coreano con seis palabras sorpresa por reto.', count: '20 preguntas' },
   }
   const displayedSkills = skills.map((skill) => skill.id === 'habla' && speakingHref
-    ? { ...skill, desc: '20 preguntas para hablar solo, con seis palabras sorpresa en cada reto.', count: '20 preguntas', href: speakingHref, available: true }
+    ? { ...skill, ...(/^(b2|c1|c2)$/.test(level) ? {} : { desc: '20 preguntas para hablar solo, con seis palabras sorpresa en cada reto.', count: '20 preguntas' }), href: speakingHref, available: true }
     : skill)
   if (speakingHref && /^(b2|c1|c2)$/.test(level) && !displayedSkills.some((skill) => skill.id === 'habla')) {
     const copy = advancedSpeaking[language ?? 'ingles']

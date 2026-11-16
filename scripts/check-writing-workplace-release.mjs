@@ -13,6 +13,7 @@ const languages = [
 ]
 
 const sitemap = fs.readFileSync(new URL('../src/app/sitemap.ts', import.meta.url), 'utf8')
+const sharedHub = fs.readFileSync(new URL('../src/components/practica/AdvancedLevelSkillHub.tsx', import.meta.url), 'utf8')
 if (!sitemap.includes("skill: 'escritura'")) {
   console.error('Advanced writing routes are missing from the sitemap.')
   process.exit(1)
@@ -41,7 +42,12 @@ for (const language of languages) {
     const expectedLink = language.slug === 'italiano' && level === 'b2'
       ? '/practica/italiano/b2/escritura'
       : '/escritura'
-    if (!fs.readFileSync(hubPath, 'utf8').includes(expectedLink) || /robots:\s*\{\s*index:\s*false/u.test(route)) {
+    const hub = fs.readFileSync(hubPath, 'utf8')
+    const linkedFromSharedHub = hub.includes(`<AdvancedLevelSkillHub language="${language.slug}" level={level}`) &&
+      sharedHub.includes(`  ${language.slug}: {`) &&
+      sharedHub.includes('const base = `/practica/${language}/${level}`') &&
+      sharedHub.includes('href: `${base}/escritura`')
+    if ((!hub.includes(expectedLink) && !linkedFromSharedHub) || /robots:\s*\{\s*index:\s*false/u.test(route)) {
       console.error(`${language.slug}/${level}: writing route is hidden from the level hub or search index.`)
       failed = true
       continue

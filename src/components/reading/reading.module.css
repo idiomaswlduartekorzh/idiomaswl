@@ -74,6 +74,7 @@
 
 /* Lección — presentación por etapas, misma estructura visual que /practica/{idioma}/{nivel}/escucha */
 .lessonWork h1 { display: flex; align-items: center; gap: 10px; }
+.mobileCatalogToggle { display: none; }
 /* El enlace global es inline: sin esto la flecha cae en su propia línea. */
 .lessonWork :global(.listen-back) { display: inline-flex; align-items: center; gap: 6px; }
 /* El panel global de escucha usa un degradado claro fijo; aquí lo hacemos sensible al tema. */
@@ -450,4 +451,35 @@
 @media (prefers-reduced-motion: reduce) {
   .premiumRoot .topicRow, .premiumRoot .topicArrow, .premiumRoot .option, .premiumRoot .vocabChip, .premiumRoot .lessonWork :global(.listen-primary) { transition: none; }
   .premiumRoot .topicRow:hover, .premiumRoot .topicRow:hover .topicArrow, .premiumRoot .lessonWork :global(.listen-primary:hover) { transform: none; }
+}
+
+@media (max-width: 900px) {
+  .lessonShell :global(.listen-catalog),
+  .premiumRoot .lessonShell :global(.listen-catalog) { max-height: none; overflow: visible; }
+  .lessonShell .mobileCatalogToggle {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    width: 100%; padding: 13px 15px; border: 1px solid var(--reading-line);
+    border-radius: var(--wlp-r); color: var(--reading-navy); background: var(--surface);
+    text-align: left; cursor: pointer;
+  }
+  .mobileCatalogToggle span { display: grid; gap: 3px; min-width: 0; }
+  .mobileCatalogToggle small { color: var(--reading-muted); font: 700 10px/1.4 var(--mono); letter-spacing: .07em; text-transform: uppercase; }
+  .mobileCatalogToggle strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+  .mobileCatalogToggle svg { flex: none; transition: transform .18s ease; }
+  .catalogOpen .mobileCatalogToggle svg { transform: rotate(180deg); }
+  .lessonShell :global(.listen-catalog__head),
+  .lessonShell :global(.listen-block),
+  .premiumRoot .lessonShell :global(.listen-catalog__head),
+  .premiumRoot .lessonShell :global(.listen-block) { display: none; }
+  .lessonShell .catalogOpen :global(.listen-block),
+  .premiumRoot .lessonShell .catalogOpen :global(.listen-block) {
+    display: grid; gap: 4px; max-height: 42vh; overflow: auto;
+    overscroll-behavior: contain; margin-top: 8px;
+  }
+  .premiumRoot .lessonShell .catalogOpen :global(.listen-card) { width: 100%; }
+  .lessonShell .mobileCatalogToggle:focus-visible { outline: 3px solid var(--reading-blue); outline-offset: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobileCatalogToggle svg { transition: none; }
 }

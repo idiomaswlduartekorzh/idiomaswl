@@ -66,6 +66,10 @@ export default function SkillNav({
   // These exercises keep the complete learner-facing journey in the target language.
   if (getAdvancedWritingLocale(pathname)) return null
 
+  // The level hub already presents the skill cards. Repeating them below the
+  // hub creates a second, inconsistent navigation system on the same page.
+  if (pathname === `/practica/${lang}/${level}`) return null
+
   const langName = LANG_LABELS[lang] ?? lang
   const lvl = level.toUpperCase()
   const base = `/practica/${lang}/${level}`

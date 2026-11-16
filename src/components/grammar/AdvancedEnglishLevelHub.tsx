@@ -3,11 +3,11 @@ import SkillHub from '@/components/practica/SkillHub'
 const LEVEL_COPY = {
   c1: {
     name: 'Avanzado',
-    lead: 'Controla énfasis, postura y densidad en inglés académico y profesional con una ruta piloto de gramática avanzada.',
+    lead: 'Practica lectura, gramática, escritura y expresión oral con tareas académicas y profesionales de nivel C1.',
   },
   c2: {
     name: 'Maestría',
-    lead: 'Perfecciona cohesión, flujo de información, evidencialidad y registro con decisiones gramaticales de nivel experto.',
+    lead: 'Perfecciona la lectura crítica, la precisión gramatical, la escritura y la expresión oral de nivel C2.',
   },
 } as const
 
@@ -21,10 +21,18 @@ export default function AdvancedEnglishLevelHub({ level }: { level: keyof typeof
       langLabel="🇬🇧 Inglés"
       levelLabel={levelLabel}
       eyebrow={`Inglés ${levelLabel} — ${copy.name}`}
-      title="Piloto de gramática avanzada"
+      title="Elige una habilidad"
       lead={copy.lead}
       accent="#0066cc"
       skills={[{
+        id: 'lectura',
+        name: 'Reading',
+        eng: 'Critical reading',
+        desc: 'Read 20 texts, answer evidence-based questions and write a short response.',
+        count: '20 readings · 120 questions',
+        href: `/en/practice/english/${level}/reading`,
+        available: true,
+      }, {
         id: 'gramatica',
         name: 'Gramática',
         eng: 'Advanced Grammar',
@@ -41,7 +49,6 @@ export default function AdvancedEnglishLevelHub({ level }: { level: keyof typeof
         href: `/practica/ingles/${level}/escritura`,
         available: true,
       }]}
-      tip={<><strong>Piloto B2–C2:</strong> esta fase incluye páginas, práctica, infografías y PDF verificables para cada tema.</>}
     />
   )
 }

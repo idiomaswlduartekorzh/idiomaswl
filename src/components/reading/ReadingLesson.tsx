@@ -228,6 +228,7 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
   const locale = advanced ? 'en' : routeLocale
   const copy = COPY[locale]
   const [stage, setStage] = useState(0)
+  const [catalogOpen, setCatalogOpen] = useState(false)
   const [answers, setAnswers] = useState<Record<string, StoredAnswer>>({})
   const [readComplete, setReadComplete] = useState(false)
   const [audioPlaying, setAudioPlaying] = useState(false)
@@ -270,7 +271,7 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
       }
       return [question.id, options]
     }))
-  }, [exercise.questions, shuffleSeed])
+  }, [exercise.id, exercise.questions, shuffleSeed])
   const answeredCount = Object.keys(answers).length
   const score = exercise.questions.filter((question) => {
     const value = answers[question.id]
@@ -350,17 +351,22 @@ export function ReadingLesson({ exercise, locale: routeLocale, siblings = [], pi
 
   return (
     <div className={`listen-shell ${styles.lessonShell} ${advanced && siblings.length === 1 ? styles.singleReading : ''}`}>
-      <aside className="listen-catalog" aria-label={copy.back}>
+      <aside className={`listen-catalog ${catalogOpen ? styles.catalogOpen : ''}`} aria-label={copy.back}>
+        <button type="button" className={styles.mobileCatalogToggle} aria-expanded={catalogOpen} aria-controls="reading-sibling-list" onClick={() => setCatalogOpen((open) => !open)}>
+          <span><small>{copy.catalog} {exercise.level.cefr} · {currentIndex + 1}/{siblings.length || 1}</small><strong>{localized(exercise.content.title, locale)}</strong></span>
+          <ChevronDown aria-hidden="true" size={20} />
+        </button>
         <div className="listen-catalog__head">
           <span>{copy.catalog} {exercise.level.cefr}</span>
           <strong>{currentIndex + 1}/{siblings.length || 1}</strong>
         </div>
-        <section className="listen-block">
+        <section id="reading-sibling-list" className="listen-block">
           {siblings.map((item, index) => (
             <Link
               key={item.id}
               href={readingExercisePath(routeLocale, item.language, item.level.cefr, item.slug)}
               className={`listen-card${item.id === exercise.id ? ' is-active' : ''}`}
+              onClick={() => setCatalogOpen(false)}
               style={{ textDecoration: 'none' }}
             >
               <span>{index + 1}</span>
