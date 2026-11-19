@@ -19,9 +19,10 @@ import imperativ from './imperativ'
 import zukunftPrasens from './zukunft-prasens'
 import dativPraepositionen from './dativ-praepositionen'
 import personalpronomenAkkusativ from './personalpronomen-akkusativ'
+import uhrzeit from './uhrzeit'
 import { closeGermanFoundationTopic } from '../quality-closeout'
 
-const topics: GrammarTopic[] = [
+const foundationTopics: GrammarTopic[] = [
   personalpronomen,
   verbSein,
   verbHaben,
@@ -43,5 +44,9 @@ const topics: GrammarTopic[] = [
   dativPraepositionen,
   personalpronomenAkkusativ,
 ].map((topic) => closeGermanFoundationTopic(topic, 'a1'))
+
+// Die Uhrzeit es una lección comunicativa completa: conserva su secuencia
+// específica de relojes y evita la expansión genérica de morfología y casos.
+const topics: GrammarTopic[] = [...foundationTopics, uhrzeit]
 
 export default topics

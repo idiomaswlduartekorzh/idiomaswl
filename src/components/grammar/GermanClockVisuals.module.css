@@ -1,0 +1,24 @@
+.face { display: block; width: min(100%, 190px); height: auto; flex: none; }
+.rim { fill: #242424; }
+.dial { fill: #fffdf5; }
+.majorTick { stroke: #242424; stroke-width: 2.4; stroke-linecap: round; }
+.minorTick { stroke: #999084; stroke-width: 1; stroke-linecap: round; }
+.numeral { fill: #242424; font-size: 16px; font-weight: 800; font-family: Arial, sans-serif; }
+.hourHand { stroke: #244363; stroke-width: 7; stroke-linecap: round; }
+.minuteHand { stroke: #ba4a32; stroke-width: 4; stroke-linecap: round; }
+.pin { fill: #242424; }
+.gallery { margin: 1.25rem 0 1.5rem; }
+.legend { display: flex; align-items: center; gap: .45rem; flex-wrap: wrap; margin: 0 0 .75rem; color: #342f26; font-size: .95rem; font-weight: 700; }
+.hourKey, .minuteKey { display: inline-block; width: 1.4rem; height: .25rem; border-radius: 1rem; }
+.hourKey { background: #244363; }
+.minuteKey { background: #ba4a32; margin-left: .6rem; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; }
+.card { margin: 0; padding: 1rem; display: flex; align-items: center; gap: .8rem; border: 1px solid #e2d29b; border-radius: 18px; background: #fffdf6; }
+.card .face { width: min(45%, 150px); }
+.card figcaption { display: grid; gap: .25rem; min-width: 0; color: #352d1e; }
+.digital { font: 800 .8rem var(--mono, monospace); color: #765900; }
+.card strong { color: #171717; font-size: 1.05rem; line-height: 1.2; }
+.card small { color: #5c5444; font-size: .82rem; line-height: 1.4; }
+.analogNote { margin: .8rem 0 0; color: #4c4334; font-size: .9rem; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .card .face { width: 40%; } }

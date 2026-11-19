@@ -1,6 +1,19 @@
+export interface ClockTime {
+  hour: number
+  minute: number
+}
+
+export interface ClockExample extends ClockTime {
+  digital: string
+  spoken: string
+  meaning: string
+  note: string
+}
+
 export interface ChoiceItem {
   scene: string
   lines: [string, string][]
+  clock?: ClockTime
   options: string[]
   answer: string
   explain: string
@@ -16,6 +29,7 @@ export interface Blank {
 export interface DualItem {
   scene: string
   lines: [string, string][]
+  clock?: ClockTime
   blanks: Blank[]
 }
 
@@ -25,6 +39,8 @@ export interface WriteItem {
   answer: string
   accepted?: string[]
   explain: string
+  clock?: ClockTime
+  strict?: boolean
 }
 
 export type LevelType = 'choice' | 'dual' | 'guidedText' | 'freeText' | 'write'
@@ -98,6 +114,7 @@ export interface GrammarTopic {
     teacherLens: string
     graphicPrompt: string
     scene: [string, string][]
+    clocks?: ClockExample[]
     learnerModes: string[]
     practiceVerbs?: string[]
     reviewFocus?: string[]

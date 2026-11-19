@@ -649,6 +649,9 @@
   text-transform: uppercase;
 }
 
+.clock-question { display: grid; justify-items: center; gap: 0.35rem; margin: 0.4rem 0 1rem; padding: 1rem; border: 1px solid var(--line-soft); border-radius: var(--wlp-r); background: color-mix(in srgb, var(--surface) 85%, var(--topic-color)); }
+.clock-question p { margin: 0; color: var(--muted); font-size: 0.84rem; font-weight: 700; }
+
 /* ── Dialogue ───────────────────────────────────────────────────────────────── */
 .dialogue { display: grid; gap: 0.72rem; margin: 0; }
 .dialogue-line {

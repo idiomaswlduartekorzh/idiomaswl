@@ -78,7 +78,7 @@ export function grammarVisualImageObject(topic: GrammarTopic, idioma: GrammarVis
     url: contentUrl,
     width: 1200,
     height: 630,
-    encodingFormat: 'image/png',
+    encodingFormat: topic.visual.clocks ? 'image/svg+xml' : 'image/png',
     inLanguage: english ? 'en' : french ? 'fr' : german ? 'de' : italian ? 'it' : portuguese ? 'pt-BR' : korean ? 'ko-KR' : japanese ? 'ja-JP' : russian ? 'ru-RU' : ['es', language.code],
     creditText: 'Idiomas WeLearn',
     creator: { '@type': 'Organization', name: 'Idiomas WeLearn', url: SITE_ORIGIN },

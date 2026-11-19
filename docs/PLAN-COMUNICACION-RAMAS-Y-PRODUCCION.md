@@ -5,6 +5,13 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## La hora en alemán A1 — 19 de noviembre de 2026
+
+- Rama: `codex/german-time-clocks-20261119`, creada desde `origin/main@40395be62` y comprobada de nuevo contra `origin/main` antes de integrar. Estado: `LISTO_PARA_INTEGRAR`, pendiente de acceso de escritura a GitHub; faltan push, PR, CI, deployment de Vercel y smoke público. El push HTTPS carece de credenciales, SSH rechaza la clave y la integración de GitHub responde `403 Resource not accessible by integration` al crear ramas y blobs.
+- Alcance: lección 21 de gramática alemana A1, con seis relojes explicativos, seis niveles y 41 decisiones de aprendizaje; infografía SVG; reloj visible en ejercicios interactivos; curso, cuaderno y soluciones en PDF. Los materiales PDF siguen el acceso de la plataforma.
+- Validación local: batería `prebuild` completa, catálogo protegido, calidad editorial, SEO de colecciones, TypeScript, build de producción con Turbopack, ruta de la lección y SVG con HTTP 200. Se regeneró el índice de gramática de Lectura para añadir solo `uhrzeit`. En navegador se revisaron escritorio y móvil sin desbordamiento horizontal y el primer nivel obtuvo 8/8, desbloqueando el segundo. Los tres PDF se renderizaron y revisaron visualmente.
+- Pendiente para declarar `DESPLEGADO`: commit en `main`, deployment `READY` de ese SHA y comprobación de las rutas públicas. Next.js 16.4.3 emitió un aviso de seguridad durante el build; esta entrega no modifica dependencias.
+
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
 
 - Rama: `codex/reading-b2-c2-pilot-20261110`, actualizada contra `origin/main` antes de la auditoría. Estado: `EN_VALIDACION`; **no integrada ni desplegada**.
