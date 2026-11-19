@@ -186,6 +186,7 @@
     "test:sat-factory": "node --test tests/sat-factory.test.mjs",
     "check:sat-superhub": "node scripts/check-sat-superhub.mjs",
     "audit:writing-curriculum": "node scripts/audit-writing-curriculum.mjs",
+    "audit:writing-workplace-length": "node scripts/audit-writing-workplace-option-length.mjs",
     "check:writing-workplace-b2": "node scripts/check-writing-workplace-b2.mjs",
     "check:writing-workplace-english": "node scripts/check-writing-workplace-english.mjs",
     "check:writing-workplace-release": "node scripts/check-writing-workplace-release.mjs",

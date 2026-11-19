@@ -88,7 +88,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Legal had to approve the privacy wording.",
+            "text": "Legal first had to approve the final privacy wording.",
             "feedback": "Monday's agreement made Legal approval a condition of the 10:00 opening."
           },
           {
@@ -116,17 +116,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A reliable timeline and a plan for checking the impact.",
+            "text": "A timeline and a plan to check the impact.",
             "feedback": "She needs an explanation and a decision about a possible correction."
           },
           {
             "id": "b",
-            "text": "Proof that Marketing caused the problem.",
+            "text": "Proof that Marketing alone caused the launch delay.",
             "feedback": "Blame will not establish the impact or help decide what to tell recipients."
           },
           {
             "id": "c",
-            "text": "A promise that only three people were affected.",
+            "text": "A guarantee that exactly three people were affected by the delay.",
             "feedback": "Three screenshots are reports, not the total number of affected people."
           }
         ]
@@ -149,7 +149,7 @@
           },
           {
             "id": "b",
-            "text": "Explain the condition, own the missed update, and propose an impact check.",
+            "text": "Explain the delay, own his missed update, and check the impact.",
             "feedback": "This addresses the misunderstanding, Daniel's part, and Maya's next decision."
           },
           {
@@ -1648,7 +1648,7 @@
           },
           {
             "id": "b",
-            "text": "It still contains 842 current-period records.",
+            "text": "It still contains all 842 current-period records.",
             "feedback": "The latest check matches yesterday’s count."
           },
           {
@@ -1670,17 +1670,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The database was replaced.",
+            "text": "The database was replaced during the latest update.",
             "feedback": "No replacement is recorded."
           },
           {
             "id": "b",
-            "text": "A saved filter selects a period with no current rows.",
+            "text": "A saved filter hides the current records.",
             "feedback": "The filter can hide the records without deleting them."
           },
           {
             "id": "c",
-            "text": "Theo lost all access.",
+            "text": "Theo no longer has access to the revenue data.",
             "feedback": "He can open the dashboard, but sees no rows."
           }
         ]
@@ -1702,12 +1702,12 @@
           },
           {
             "id": "b",
-            "text": "A reliable view of the current data and a clear status.",
+            "text": "Current figures he can trust at the 2pm meeting.",
             "feedback": "He needs to know whether he can use the dashboard."
           },
           {
             "id": "c",
-            "text": "An explanation of database architecture.",
+            "text": "A detailed explanation of how the database stores records.",
             "feedback": "That does not resolve the meeting need."
           }
         ]
@@ -1725,17 +1725,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Explain the filter, help Theo switch periods, and verify his session.",
+            "text": "Show him the filter and verify his view.",
             "feedback": "That addresses the observed symptom and the remaining check."
           },
           {
             "id": "b",
-            "text": "Tell him the data is gone.",
+            "text": "Tell him the data was deleted during the update.",
             "feedback": "The dataset count is unchanged."
           },
           {
             "id": "c",
-            "text": "Reset everyone’s saved views immediately.",
+            "text": "Reset everyone’s saved settings before checking Theo’s session.",
             "feedback": "Whether a global reset is appropriate is not yet known."
           }
         ]
@@ -3029,7 +3029,7 @@
           },
           {
             "id": "c",
-            "text": "The referral documents entered the queue.",
+            "text": "The referral documents had entered the review queue.",
             "feedback": "The tracker defines it as document receipt."
           }
         ]
@@ -3046,17 +3046,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Document arrival.",
+            "text": "Whether the referral documents reached the tracker on Tuesday.",
             "feedback": "Documents arrived Tuesday."
           },
           {
             "id": "b",
-            "text": "A patient phone call.",
+            "text": "Whether the patient called the clinic for an update.",
             "feedback": "The patient called Friday."
           },
           {
             "id": "c",
-            "text": "The administrative review before scheduling.",
+            "text": "The administrative review required before scheduling can offer a visit.",
             "feedback": "The workflow requires it and the tracker says pending."
           }
         ]
@@ -3073,17 +3073,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A promised appointment tomorrow.",
+            "text": "A guaranteed appointment time for the next day.",
             "feedback": "No slot or completion time is recorded."
           },
           {
             "id": "b",
-            "text": "A clinical explanation of the referral.",
+            "text": "A clinical explanation of why the referral was sent.",
             "feedback": "The record contains administrative states only."
           },
           {
             "id": "c",
-            "text": "A precise status and a plan to request an update.",
+            "text": "An accurate status and a plan to follow up.",
             "feedback": "Ellis explicitly asks to avoid an invented date."
           }
         ]
@@ -3101,17 +3101,17 @@
         "options": [
           {
             "id": "a",
-            "text": "That the referral has been scheduled or accepted as an appointment.",
+            "text": "That the referral is already an accepted, scheduled appointment.",
             "feedback": "Receipt does not imply review completion or booking."
           },
           {
             "id": "b",
-            "text": "That documents arrived Tuesday.",
+            "text": "That the referral documents reached the tracker on Tuesday.",
             "feedback": "That is confirmed."
           },
           {
             "id": "c",
-            "text": "That review is pending.",
+            "text": "That the administrative review is pending before a visit can be offered.",
             "feedback": "That is the tracker’s current state."
           }
         ]

@@ -1045,3 +1045,15 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 - Pasaron `check:site-navigation`, `check:practica-catalog` (485 temas protegidos), `check:writing-workplace-release` (480 casos), TypeScript, ESLint de componentes modificados y el build local completo de 5.367 páginas. En navegador se revisaron escritorio (1440 × 900) y móvil (390 × 844), incluida la apertura del selector.
 - Vercel publicó [`dpl_Fv8KjbFwkKDZnaJbx8QjS7vEXKPi`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/Fv8KjbFwkKDZnaJbx8QjS7vEXKPi) en estado `READY`, construido desde ese commit de `main` y asignado a `www.idiomaswl.com`. El smoke público confirmó HTTP 200 y menú en 24/24 portadas B2–C2 y 24/24 catálogos de Reading, con 20 enlaces de lectura en cada catálogo. También confirmó HTTP 200 y menú en `/en/practice/german/b2/reading/die-bibliothek-der-dinge`, y las cuatro destrezas enlazadas desde `/practica/aleman/b2`.
 - Estado: `DESPLEGADO`.
+
+### 19 de noviembre de 2026 — revisión de claridad en Writing laboral B2–C2
+
+- En `codex/writing-workplace-clarity-20261119` se preparó un preview editorial:
+  tres casos de inglés B2 con opciones más equilibradas y consignas de las tres
+  notas reescritas en inglés para B2, C1 y C2. El diagnóstico de los 24 bancos
+  encontró que la clave es la única opción más larga en 1.563 de 1.920 preguntas
+  (81,4 %); el criterio, los datos y lo pendiente constan en
+  `docs/writing-workplace-clarity-review-2026-11-19.md`.
+- Pasaron el guardián de 480 casos, sus 13 pruebas, el catálogo protegido y
+  TypeScript. Estado: `PREVIEW`; el resto de los bancos y la integración en
+  `main` siguen pendientes. No hay deployment de este cambio.
