@@ -68,7 +68,7 @@
           },
           {
             "id": "c",
-            "text": "Una partecipazione come partner con stand e logo.",
+            "text": "Partner con stand e logo.",
             "feedback": "Il contratto definisce questa visibilità."
           }
         ]
@@ -113,17 +113,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La visibilità della collaborazione senza attribuire un ruolo non autorizzato.",
+            "text": "Collaborazione visibile, senza attribuire patrocinio.",
             "feedback": "La correzione deve restare positiva."
           },
           {
             "id": "b",
-            "text": "Nascondere il rapporto con l’ente.",
+            "text": "Nascondere del tutto il rapporto con l’ente organizzatore.",
             "feedback": "Chiede una dicitura alternativa."
           },
           {
             "id": "c",
-            "text": "Rinviare la stampa senza motivo.",
+            "text": "Rinviare la stampa del materiale senza una ragione operativa.",
             "feedback": "C’è una scadenza oggi."
           }
         ]
@@ -142,12 +142,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Lasciare «patrocinio» perché suona meglio.",
+            "text": "Lasciare la parola «patrocinio» nella locandina solo perché suona meglio.",
             "feedback": "Il riconoscimento non è stato concesso."
           },
           {
             "id": "b",
-            "text": "Spostare il logo tra i partner e usare «partner dell’evento».",
+            "text": "Logo tra i partner; dicitura «partner dell’evento».",
             "feedback": "La formula corrisponde al contratto."
           },
           {
@@ -267,7 +267,7 @@
           },
           {
             "id": "b",
-            "text": "Ordini preceduti da almeno una visualizzazione dell’annuncio entro sette giorni.",
+            "text": "Ordini esposti agli annunci nei sette giorni precedenti.",
             "feedback": "Il report associa così gli ordini alla campagna senza isolare la causa dell’acquisto."
           },
           {
@@ -299,7 +299,7 @@
           },
           {
             "id": "c",
-            "text": "Perché i canali si sovrappongono e manca un confronto che isoli l’effetto della campagna.",
+            "text": "Canali sovrapposti; manca un confronto causale.",
             "feedback": "Nove percorsi includono la newsletter e il report non stima acquisti aggiuntivi causati dagli annunci."
           }
         ]
@@ -316,7 +316,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Una frase verificabile che riconosca l’associazione senza promettere causalità esclusiva.",
+            "text": "Associazione verificabile, non causalità esclusiva.",
             "feedback": "La slide è ancora modificabile e la verifica dei percorsi può precisarla."
           },
           {
@@ -350,7 +350,7 @@
           },
           {
             "id": "b",
-            "text": "«Trentadue ordini hanno incluso un’esposizione agli annunci nel percorso di sette giorni; altri canali possono aver contribuito».",
+            "text": "32 ordini esposti agli annunci; altri canali potrebbero aver contribuito.",
             "feedback": "Definisce il criterio del report e lascia aperta l’attribuzione causale."
           },
           {
@@ -525,7 +525,7 @@
           },
           {
             "id": "b",
-            "text": "Riconoscere l’ambiguità, spiegare la regola e non promettere un’eccezione non approvata.",
+            "text": "Riconoscere l’ambiguità, spiegare la regola senza promettere eccezioni.",
             "feedback": "La cliente non ha causato l’errore."
           },
           {
@@ -548,7 +548,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Correggere la pagina e valutare separatamente il caso già esposto al messaggio ambiguo.",
+            "text": "Correggere la pagina, valutare il caso già esposto.",
             "feedback": "Si evita nuova confusione senza inventare una regola."
           },
           {
@@ -558,7 +558,7 @@
           },
           {
             "id": "c",
-            "text": "Lasciare il titolo invariato.",
+            "text": "Lasciare invariato il titolo ambiguo nonostante le segnalazioni già arrivate.",
             "feedback": "Continuerebbe a creare la stessa aspettativa."
           }
         ]
@@ -679,7 +679,7 @@
           },
           {
             "id": "c",
-            "text": "La bozza con pubblicazione dalle 09.",
+            "text": "Bozza valida dalle 09.",
             "feedback": "La versione interna delle 12 non fu allegata."
           }
         ]
@@ -729,7 +729,7 @@
           },
           {
             "id": "b",
-            "text": "Coordinare il messaggio del lancio senza aprire un’accusa infondata.",
+            "text": "Lancio coordinato, senza accuse.",
             "feedback": "Il post può essere integrato dopo le 12."
           },
           {
@@ -757,12 +757,12 @@
           },
           {
             "id": "b",
-            "text": "Ignorare il post e non coordinare il link.",
+            "text": "Ignorare il post anticipato e non coordinare alcun collegamento al lancio.",
             "feedback": "L’aggiornamento è utile."
           },
           {
             "id": "c",
-            "text": "Riconoscere l’orario ricevuto e chiedere collaborazione per aggiornare il post al lancio.",
+            "text": "Riconoscere l’orario comunicato; aggiornare il post al lancio.",
             "feedback": "Preserva i fatti e la relazione."
           }
         ]
@@ -939,7 +939,7 @@
           },
           {
             "id": "c",
-            "text": "Assistenza per inviare la bozza prima delle 18 e ottenere la ricevuta.",
+            "text": "Aiuto per inviare la bozza entro le 18 e ottenere la ricevuta.",
             "feedback": "La scadenza rende urgente il passo concreto."
           }
         ]
@@ -963,12 +963,12 @@
           },
           {
             "id": "b",
-            "text": "Considerare il salvataggio come domanda presentata.",
+            "text": "Trattare il salvataggio locale come una domanda già presentata al protocollo.",
             "feedback": "Il server non l’ha ricevuta."
           },
           {
             "id": "c",
-            "text": "Riconoscere la spunta ambigua, guidare il reinvio e verificare la ricevuta.",
+            "text": "Chiarire la spunta, guidare l’invio, verificare la ricevuta.",
             "feedback": "Si salva il contenuto e si conclude il processo."
           }
         ]
@@ -1117,7 +1117,7 @@
           },
           {
             "id": "c",
-            "text": "In una doppia interpretazione del fuso nella dashboard.",
+            "text": "Doppia lettura del fuso in dashboard.",
             "feedback": "Il dato originario conserva il fuso corretto."
           }
         ]
@@ -1134,7 +1134,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Sospendere penali non ancora applicate mentre si corregge la visualizzazione.",
+            "text": "Penali sospese; correggere il fuso.",
             "feedback": "È ancora possibile evitare un addebito errato."
           },
           {
@@ -1173,7 +1173,7 @@
           },
           {
             "id": "c",
-            "text": "Usare le ricevute, bloccare le tre penali e correggere l’importazione.",
+            "text": "Ricevute, penali sospese, import corretto.",
             "feedback": "La fonte normativa e la correzione tecnica convergono."
           }
         ]
@@ -1309,7 +1309,7 @@
         "options": [
           {
             "id": "a",
-            "text": "La scelta del periodo da tastiera si blocca e l’esito con lettore di schermo resta sconosciuto.",
+            "text": "Tastiera bloccata; lettore vocale non testato.",
             "feedback": "Distingue il difetto osservato dalla prova ancora mancante."
           },
           {
@@ -1341,7 +1341,7 @@
           },
           {
             "id": "b",
-            "text": "L’impressione che «test superati» coprisse anche il modo d’uso del cliente.",
+            "text": "«Test superati» suggeriva anche l’uso da tastiera.",
             "feedback": "Il cliente dipende dalla tastiera, mentre i test superati usavano il mouse."
           },
           {
@@ -1374,7 +1374,7 @@
           },
           {
             "id": "c",
-            "text": "Spiegare il limite, preparare il CSV del periodo e aggiornare il cliente dopo la verifica della correzione.",
+            "text": "Spiegare il limite, fornire CSV, aggiornare dopo la correzione.",
             "feedback": "L’esportazione è disponibile come alternativa, senza inventare una data di ripristino."
           }
         ]
@@ -1522,7 +1522,7 @@
           },
           {
             "id": "c",
-            "text": "Erano possibili anche un processo automatico e altri operatori.",
+            "text": "Possibili automazione e altri operatori.",
             "feedback": "Serve correlare le tracce."
           }
         ]
@@ -1540,7 +1540,7 @@
         "options": [
           {
             "id": "a",
-            "text": "La modifica e il ripristino, distinguendo l’origine ancora da accertare.",
+            "text": "Modifica ripristinata; origine da accertare.",
             "feedback": "Può dare un quadro utile senza accusare."
           },
           {
@@ -1568,17 +1568,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Chiedere soltanto a Matteo se ricorda.",
+            "text": "Chiedere soltanto a Matteo se ricorda di avere usato l’account.",
             "feedback": "La memoria non sostituisce le tracce."
           },
           {
             "id": "b",
-            "text": "Confrontare log di avvio, processo pianificato e richiesta collegata.",
+            "text": "Confrontare log, processo pianificato e richiesta.",
             "feedback": "Permette di individuare il percorso dell’operazione."
           },
           {
             "id": "c",
-            "text": "Rinominare l’account «Matteo».",
+            "text": "Rinominare l’account di servizio «Matteo» prima di verificare i log.",
             "feedback": "Cambierebbe l’etichetta, non la prova."
           }
         ]
@@ -1716,7 +1716,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ometteva la durata e sembrava descrivere una regola stabile.",
+            "text": "Pilota fatto sembrare stabile.",
             "feedback": "La formulazione non rifletteva la delibera."
           },
           {
@@ -1748,7 +1748,7 @@
           },
           {
             "id": "b",
-            "text": "Che la sua formulazione ha influenzato piani personali reali.",
+            "text": "La promessa ha inciso su piani personali.",
             "feedback": "La rettifica richiede attenzione, non solo un tecnicismo."
           },
           {
@@ -1772,17 +1772,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Lasciare il messaggio invariato.",
+            "text": "Lasciare invariato il messaggio che descrive il pilota come permanente.",
             "feedback": "Continuerebbe a creare affidamento."
           },
           {
             "id": "b",
-            "text": "Chiudere il pilota subito.",
+            "text": "Chiudere il pilota subito senza valutare le esigenze emerse.",
             "feedback": "È già approvato."
           },
           {
             "id": "c",
-            "text": "Precisare il pilota, raccogliere esigenze e dare una data per l’esito della valutazione.",
+            "text": "Chiarire il pilota, raccogliere esigenze, datare la valutazione.",
             "feedback": "Offre chiarezza e un processo."
           }
         ]
@@ -1959,7 +1959,7 @@
           },
           {
             "id": "c",
-            "text": "Spiegare il significato della cifra e ascoltare il dubbio, mantenendo aperto il controllo del cedolino.",
+            "text": "Spiegare il lordo, ascoltare il dubbio e verificare il cedolino.",
             "feedback": "L’equivoco non esclude un possibile errore di calcolo."
           }
         ]
@@ -1978,17 +1978,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Rinviare Elisa senza spiegazioni.",
+            "text": "Rinviare Elisa senza spiegazioni né controllo del cedolino.",
             "feedback": "La cifra approvata è già chiara."
           },
           {
             "id": "b",
-            "text": "Pubblicare il suo netto al team.",
+            "text": "Pubblicare il netto di Elisa al team come spiegazione generale.",
             "feedback": "La verifica è personale."
           },
           {
             "id": "c",
-            "text": "Confrontare in privato lettera e cedolino, poi correggere la tabella futura.",
+            "text": "Lettera e cedolino in privato; tabella da correggere.",
             "feedback": "Affronta il caso e la causa comunicativa."
           }
         ]
@@ -2103,7 +2103,7 @@
           },
           {
             "id": "b",
-            "text": "La sintesi delle misure organizzative autorizzata dai partecipanti.",
+            "text": "Sintesi organizzativa autorizzata.",
             "feedback": "Il consenso ha questo perimetro."
           },
           {
@@ -2126,7 +2126,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Contiene percezioni personali fuori dal consenso di condivisione.",
+            "text": "Note personali fuori consenso.",
             "feedback": "L’esistenza del file non ne allarga i destinatari."
           },
           {
@@ -2153,7 +2153,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Istruzioni per organizzare e verificare le consegne future.",
+            "text": "Istruzioni per le consegne future e la loro verifica.",
             "feedback": "La ricerca di ammissioni non è necessaria per applicarle."
           },
           {
@@ -2163,7 +2163,7 @@
           },
           {
             "id": "c",
-            "text": "Annullare l’incontro.",
+            "text": "Annullare l’incontro programmato senza un’alternativa operativa.",
             "feedback": "Le misure sono già concordate."
           }
         ]
@@ -2182,17 +2182,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Inviare solo la sintesi operativa e chiarire la verifica settimanale.",
+            "text": "Solo sintesi e verifica settimanale.",
             "feedback": "Dà a Roberto ciò che deve fare."
           },
           {
             "id": "b",
-            "text": "Allegare la nota personale completa.",
+            "text": "Allegare la nota personale completa alla comunicazione inviata a tutti.",
             "feedback": "Supererebbe il consenso."
           },
           {
             "id": "c",
-            "text": "Rifiutare anche le misure organizzative.",
+            "text": "Rifiutare anche le misure organizzative concordate durante l’incontro.",
             "feedback": "Sono state autorizzate."
           }
         ]
@@ -2358,17 +2358,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Qualsiasi formazione iniziale.",
+            "text": "Qualsiasi attività di formazione iniziale senza accesso ai progetti.",
             "feedback": "L’orientamento è disponibile."
           },
           {
             "id": "b",
-            "text": "Ogni incontro in presenza.",
+            "text": "Ogni incontro in presenza durante il primo giorno.",
             "feedback": "La sede è pronta."
           },
           {
             "id": "c",
-            "text": "Una sorpresa all’ultimo minuto e un primo giorno vuoto.",
+            "text": "Evitare una sorpresa all’ultimo minuto e un primo giorno senza attività.",
             "feedback": "Serve un programma credibile."
           }
         ]
@@ -2387,17 +2387,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Mantenere l’inizio, programmare attività non riservate e rinviare l’accesso ai progetti a mercoledì.",
+            "text": "Confermare l’inizio, attività non riservate, accesso mercoledì.",
             "feedback": "Rispetta tempi e regola."
           },
           {
             "id": "b",
-            "text": "Usare subito il computer personale.",
+            "text": "Usare subito il computer personale per accedere ai progetti riservati.",
             "feedback": "Violerebbe il requisito."
           },
           {
             "id": "c",
-            "text": "Cambiare unilateralmente la data d’inizio.",
+            "text": "Cambiare unilateralmente la data d’inizio senza consultare il nuovo collega.",
             "feedback": "Il contratto e la sede sono pronti."
           }
         ]
@@ -2517,7 +2517,7 @@
           },
           {
             "id": "c",
-            "text": "Il nome coincide, ma i codici pratica differiscono.",
+            "text": "Nome uguale, codici diversi.",
             "feedback": "La discordanza riguarda un identificativo essenziale."
           }
         ]
@@ -2545,7 +2545,7 @@
           },
           {
             "id": "c",
-            "text": "Non è ancora verificata la provenienza del campione.",
+            "text": "Provenienza non verificata.",
             "feedback": "Una correzione potrebbe nascondere uno scambio."
           }
         ]
@@ -2562,7 +2562,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Una spiegazione del controllo e del possibile ritardo, senza presentare una diagnosi.",
+            "text": "Spiegare verifica e ritardo, senza diagnosi.",
             "feedback": "Il referto non è disponibile."
           },
           {
@@ -2600,7 +2600,7 @@
           },
           {
             "id": "c",
-            "text": "Mantenere la sospensione, ricostruire la provenienza e aggiornare il paziente sui tempi.",
+            "text": "Sospendere referto, verificare provenienza, aggiornare tempi.",
             "feedback": "La verifica precede l’associazione del campione."
           }
         ]
@@ -2721,7 +2721,7 @@
           },
           {
             "id": "c",
-            "text": "È stata emessa una nota di credito per 85 euro.",
+            "text": "Nota di credito da 85 euro emessa.",
             "feedback": "La nota riconosce contabilmente la voce duplicata."
           }
         ]
@@ -2749,7 +2749,7 @@
           },
           {
             "id": "c",
-            "text": "Che il denaro sia già stato riaccreditato.",
+            "text": "Accredito già avvenuto.",
             "feedback": "Il movimento di rimborso è separato."
           }
         ]
@@ -2767,17 +2767,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Chiederle di pagare di nuovo.",
+            "text": "Chiederle di pagare di nuovo mentre il rimborso è ancora in corso.",
             "feedback": "Ha già pagato due volte."
           },
           {
             "id": "b",
-            "text": "Riconoscere l’attesa dopo la promessa di soluzione e spiegare i due passaggi.",
+            "text": "Riconoscere l’attesa e spiegare storno e accredito.",
             "feedback": "La paziente non deve ricostruire il caso."
           },
           {
             "id": "c",
-            "text": "Garantire un accredito oggi.",
+            "text": "Garantire un accredito sul conto entro oggi senza disposizione bancaria.",
             "feedback": "Senza una disposizione di rimborso, un accredito oggi non è confermabile."
           }
         ]
@@ -2795,17 +2795,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Storno emesso, disposizione prevista entro domani, finestra bancaria da comunicare dopo l’invio.",
+            "text": "Storno emesso; disposizione domani; tempi bancari dopo invio.",
             "feedback": "Ogni stato ha il suo tempo verificabile."
           },
           {
             "id": "b",
-            "text": "Rimborso completato ieri.",
+            "text": "Affermare che il rimborso è già stato completato nella giornata di ieri.",
             "feedback": "È stata emessa soltanto la nota."
           },
           {
             "id": "c",
-            "text": "Nessuna azione necessaria.",
+            "text": "Dire che non serve alcuna azione perché la nota di credito basta.",
             "feedback": "Il rimborso resta da disporre."
           }
         ]
@@ -2950,7 +2950,7 @@
           },
           {
             "id": "b",
-            "text": "Era già in coda e non ha ricontrollato la cancellazione.",
+            "text": "Coda del promemoria non aggiornata.",
             "feedback": "L’invio è rimasto scollegato dallo stato aggiornato."
           },
           {
@@ -2972,7 +2972,7 @@
         "options": [
           {
             "id": "a",
-            "text": "La validità della disdetta e l’assenza di penale.",
+            "text": "Disdetta valida, nessuna penale.",
             "feedback": "È ciò che la paziente teme."
           },
           {
@@ -3000,7 +3000,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Confermare l’annullamento di giovedì, escludere la penale e distinguere l’altra visita.",
+            "text": "Disdetta valida; altra visita, no penale.",
             "feedback": "Dà certezza senza creare un nuovo equivoco."
           },
           {
@@ -3121,7 +3121,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Richiesto e ricevuto dal fornitore, ma non assegnato.",
+            "text": "Richiesto, non assegnato.",
             "feedback": "La conferma della persona manca."
           },
           {
@@ -3148,7 +3148,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Non rende evidente la differenza tra richiesta e disponibilità confermata.",
+            "text": "Richiesta non equivale a conferma.",
             "feedback": "La paziente può leggere la richiesta come garanzia."
           },
           {
@@ -3180,7 +3180,7 @@
           },
           {
             "id": "b",
-            "text": "Un colloquio comprensibile e una decisione tempestiva sulla visita.",
+            "text": "Colloquio chiaro e decisione rapida.",
             "feedback": "Il consenso richiede un supporto effettivo."
           },
           {
@@ -3203,17 +3203,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Attendere la risposta entro le 13, avvisare la paziente dello stato e preparare un nuovo orario se necessario.",
+            "text": "Attendere risposta, informare la paziente, predisporre un’alternativa.",
             "feedback": "Evita una sorpresa domani."
           },
           {
             "id": "b",
-            "text": "Confermare subito la presenza.",
+            "text": "Confermare subito la presenza dell’interprete senza avere ricevuto risposta.",
             "feedback": "Il fornitore non ha assegnato nessuno."
           },
           {
             "id": "c",
-            "text": "Procedere comunque senza supporto linguistico.",
+            "text": "Procedere comunque con la visita senza alcun supporto linguistico.",
             "feedback": "Il colloquio richiede comprensione adeguata."
           }
         ]
@@ -3323,7 +3323,7 @@
         "options": [
           {
             "id": "a",
-            "text": "50 persone in totale, inclusi sponsor e relatori.",
+            "text": "Capienza 50, sponsor inclusi.",
             "feedback": "La colonna separata non crea posti extra."
           },
           {
@@ -3355,7 +3355,7 @@
           },
           {
             "id": "b",
-            "text": "Il vincolo è la capienza autorizzata, non il numero di sedie.",
+            "text": "Conta la capienza, non le sedie.",
             "feedback": "L’allestimento non cambia il limite."
           },
           {
@@ -3407,7 +3407,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Tenere la sala e superare il limite.",
+            "text": "Tenere la sala attuale e superare il limite di capienza.",
             "feedback": "Non è consentito."
           },
           {
@@ -3417,7 +3417,7 @@
           },
           {
             "id": "c",
-            "text": "Bloccare la sala grande entro le 16 e comunicare tempestivamente il cambio.",
+            "text": "Bloccare la sala grande entro le 16; avvisare.",
             "feedback": "Rispetta capienza e conferme."
           }
         ]
@@ -3532,8 +3532,8 @@
           },
           {
             "id": "b",
-            "text": "Il certificato è valido ora e il rinnovo non è ancora rilasciato.",
-            "feedback": "Una domanda di rinnovo non equivale al documento."
+            "text": "Il certificato è valido ora, ma scade prima della consegna; rinnovo non ancora rilasciato.",
+            "feedback": "Quello attuale scade venerdì; il rinnovo non è ancora rilasciato."
           },
           {
             "id": "c",
@@ -3592,7 +3592,7 @@
           },
           {
             "id": "c",
-            "text": "Conservare una possibilità di consegna, dichiarando la condizione ancora aperta.",
+            "text": "Consegna condizionata al nuovo certificato.",
             "feedback": "Vuole una scelta praticabile, non una finzione."
           }
         ]
@@ -3610,7 +3610,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Conferma condizionata al nuovo certificato prima della spedizione e piano alternativo.",
+            "text": "Conferma subordinata al certificato; piano alternativo.",
             "feedback": "La decisione resta verificabile prima della consegna."
           },
           {
@@ -3620,7 +3620,7 @@
           },
           {
             "id": "c",
-            "text": "Ignorare il contratto.",
+            "text": "Ignorare il certificato che scadrà prima della consegna.",
             "feedback": "Il requisito è esplicito."
           }
         ]
@@ -3763,7 +3763,7 @@
           },
           {
             "id": "b",
-            "text": "Servono durata contestualizzata e misure dei colli.",
+            "text": "Mancano durata e temperature dei colli.",
             "feedback": "L’allarme da solo non conclude la valutazione."
           },
           {
@@ -3785,17 +3785,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Che ogni prodotto è sicuramente sicuro.",
+            "text": "Che ogni prodotto del lotto è già sicuramente sicuro per la consegna.",
             "feedback": "Le misure mancano."
           },
           {
             "id": "b",
-            "text": "Che l’intera consegna è definitivamente annullata.",
+            "text": "Che l’intera consegna è definitivamente annullata prima della verifica qualità.",
             "feedback": "La valutazione è ancora aperta."
           },
           {
             "id": "c",
-            "text": "Che il lotto è in verifica e seguirà un orario aggiornato.",
+            "text": "Lotto in verifica; orario aggiornato dopo.",
             "feedback": "Trasparenza senza giudizio prematuro."
           }
         ]
@@ -3814,17 +3814,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Consegnare perché l’autista ha una spiegazione.",
+            "text": "Consegnare il lotto perché l’autista offre una spiegazione plausibile.",
             "feedback": "La temperatura della merce è ignota."
           },
           {
             "id": "b",
-            "text": "Trattenere il lotto, misurare i colli e decidere dopo il controllo qualità.",
+            "text": "Trattenere lotto, misurare colli, decidere dopo controllo.",
             "feedback": "L’ipotesi della porta aperta aiuta a indagare, non a chiudere il caso."
           },
           {
             "id": "c",
-            "text": "Scartare ogni collo senza verifica.",
+            "text": "Scartare ogni collo senza misurazioni né verifica del controllo qualità.",
             "feedback": "Non c’è ancora una valutazione completa."
           }
         ]
@@ -3972,7 +3972,7 @@
           },
           {
             "id": "c",
-            "text": "Non sostituisce il collaudo nelle condizioni d’uso concordate.",
+            "text": "Prova in laboratorio, non collaudo in sede.",
             "feedback": "Manca la verifica presso il cliente."
           }
         ]
@@ -3999,7 +3999,7 @@
           },
           {
             "id": "c",
-            "text": "Che la segnalazione viene presa sul serio e verificata nel contesto d’uso.",
+            "text": "Verificare la segnalazione in uso.",
             "feedback": "La firma non rende irrilevante il difetto."
           }
         ]
@@ -4018,17 +4018,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Chiudere il reclamo citando la firma.",
+            "text": "Chiudere il reclamo soltanto perché il cliente ha firmato il ritiro.",
             "feedback": "La firma riguarda solo il ritiro."
           },
           {
             "id": "b",
-            "text": "Aprire una verifica in sede e distinguere la firma dal collaudo.",
+            "text": "Verificare in sede; firma non è collaudo.",
             "feedback": "La documentazione sostiene questo passo."
           },
           {
             "id": "c",
-            "text": "Promettere un rimborso immediato.",
+            "text": "Promettere un rimborso immediato prima di verificare la segnalazione in sede.",
             "feedback": "Prima va verificato il difetto."
           }
         ]

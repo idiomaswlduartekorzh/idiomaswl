@@ -113,12 +113,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Eliminar o envio dos materiais.",
+            "text": "Preservar o vínculo eliminando o envio dos materiais prometidos aos participantes do encontro.",
             "feedback": "Esse envio já foi informado."
           },
           {
             "id": "b",
-            "text": "Obter consentimento retroativo por silêncio.",
+            "text": "Preservar o vínculo criado no evento, tratando o silêncio dos participantes como consentimento para a newsletter.",
             "feedback": "A adesão precisa ser voluntária."
           },
           {
@@ -142,7 +142,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Importar os 430 endereços hoje.",
+            "text": "Enviar o material do evento e importar os 430 endereços para a newsletter sem nova escolha.",
             "feedback": "O formulário não sustenta isso."
           },
           {
@@ -152,7 +152,7 @@
           },
           {
             "id": "c",
-            "text": "Descartar todos os endereços antes do material.",
+            "text": "Descartar os endereços antes de enviar o material prometido.",
             "feedback": "O envio relacionado ao evento permanece válido."
           }
         ]
@@ -318,12 +318,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Publicar e pedir perdão depois.",
+            "text": "Avançar com a campanha publicando a frase cortada e pedindo uma autorização específica à cliente depois.",
             "feedback": "A autorização é limitada."
           },
           {
             "id": "b",
-            "text": "Cancelar o estudo de caso aprovado.",
+            "text": "Avançar com a campanha cancelando também o estudo de caso que a cliente já aprovou.",
             "feedback": "A página continua autorizada."
           },
           {
@@ -348,12 +348,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Usar a frase cortada em mídia paga hoje.",
+            "text": "Manter a página aprovada e usar hoje a frase cortada na mídia paga, deixando a revisão da cliente para depois.",
             "feedback": "Canal e sentido não estão aprovados."
           },
           {
             "id": "b",
-            "text": "Dizer que a cliente prometeu economia total.",
+            "text": "Manter a página e anunciar na peça paga que a cliente prometeu economia total.",
             "feedback": "Ela falou da triagem."
           },
           {
@@ -529,12 +529,12 @@
           },
           {
             "id": "b",
-            "text": "Que foram descuidados ao ler.",
+            "text": "Dizer aos três clientes que a página estava correta e que eles leram o selo beta sem cuidado.",
             "feedback": "O título era enganoso."
           },
           {
             "id": "c",
-            "text": "Um preço aproximado de memória.",
+            "text": "Responder aos três clientes com um preço aproximado e a promessa de acesso geral assim que o piloto terminar.",
             "feedback": "Não existe preço aprovado."
           }
         ]
@@ -553,12 +553,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Manter o título e negar pedidos individualmente.",
+            "text": "Manter o título de contratação imediata e negar os pedidos individualmente durante o piloto.",
             "feedback": "A página seguiria criando expectativas."
           },
           {
             "id": "b",
-            "text": "Prometer acesso aos três sem avaliação.",
+            "text": "Retirar a chamada de contratação imediata e prometer acesso aos três clientes sem avaliar os critérios do piloto.",
             "feedback": "O grupo está delimitado."
           },
           {
@@ -679,12 +679,12 @@
           },
           {
             "id": "b",
-            "text": "Somou 25%.",
+            "text": "Somou os descontos de 10% e 15% e cobrou 25% a menos.",
             "feedback": "A soma não ocorreu."
           },
           {
             "id": "c",
-            "text": "Aplicou só 10%.",
+            "text": "Aplicou apenas o cupom de 10% e ignorou a promoção de 15%.",
             "feedback": "O valor registrado foi 15%."
           }
         ]
@@ -728,7 +728,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Culpar a cliente por não ler a regra interna.",
+            "text": "Reconhecer a falha da comunicação, mas atribuir à cliente a culpa por não conhecer a regra interna.",
             "feedback": "Ela não teve acesso a essa regra."
           },
           {
@@ -738,7 +738,7 @@
           },
           {
             "id": "c",
-            "text": "Garantir automaticamente 25%.",
+            "text": "Assumir que a vitrine autorizava somar os descontos e oferecer 25% neste pedido.",
             "feedback": "Exige decisão comercial."
           }
         ]
@@ -757,7 +757,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Manter a vitrine como está.",
+            "text": "Corrigir as peças futuras, mas manter a vitrine atual enquanto o pedido desta cliente é examinado.",
             "feedback": "Novos clientes teriam o mesmo equívoco."
           },
           {
@@ -767,7 +767,7 @@
           },
           {
             "id": "c",
-            "text": "Desativar todos os descontos.",
+            "text": "Desativar todos os descontos e responder ao pedido desta cliente sem corrigir as peças divulgadas.",
             "feedback": "O problema é a compatibilidade mal comunicada."
           }
         ]
@@ -940,12 +940,12 @@
           },
           {
             "id": "b",
-            "text": "Dizer que tudo está resolvido.",
+            "text": "Explicar a correção do cadastro e afirmar à cliente que tudo está resolvido antes de consolidar os perfis.",
             "feedback": "Os perfis ainda precisam ser consolidados."
           },
           {
             "id": "c",
-            "text": "Pedir que pague novamente.",
+            "text": "Explicar a correção do cadastro e pedir que a cliente pague novamente para eliminar a duplicação.",
             "feedback": "O pedido já foi pago."
           }
         ]
@@ -964,7 +964,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Excluir ambos os perfis.",
+            "text": "Excluir ambos os perfis e refazer o cadastro da cliente.",
             "feedback": "O histórico do pedido precisa permanecer."
           },
           {
@@ -974,7 +974,7 @@
           },
           {
             "id": "c",
-            "text": "Ignorar o painel duplicado.",
+            "text": "Conferir os perfis e ignorar o painel duplicado para não despertar dúvidas sobre a cobrança.",
             "feedback": "A confusão permaneceria."
           }
         ]
@@ -1138,12 +1138,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Que ela baixou o arquivo errado.",
+            "text": "Reconhecer que a gestora viu números divergentes, mas atribuir o problema ao arquivo que ela baixou.",
             "feedback": "O arquivo está correto."
           },
           {
             "id": "b",
-            "text": "Que os números nunca podem divergir.",
+            "text": "Reconhecer que a gestora viu números divergentes e afirmar que eles nunca poderiam divergir.",
             "feedback": "Há uma explicação específica."
           },
           {
@@ -1173,12 +1173,12 @@
           },
           {
             "id": "b",
-            "text": "Pedir que ignore o arquivo atualizado.",
+            "text": "Indicar o valor atual e pedir à gestora que ignore o arquivo atualizado até a tela mudar.",
             "feedback": "Ele lê a fonte atual."
           },
           {
             "id": "c",
-            "text": "Afirmar que ambas as cifras são igualmente atuais.",
+            "text": "Indicar o valor atual e afirmar que as duas cifras são igualmente atuais até o cache ser invalidado.",
             "feedback": "Uma é anterior à correção."
           }
         ]
@@ -1350,12 +1350,12 @@
           },
           {
             "id": "b",
-            "text": "Dizer que todos ignoraram o e-mail.",
+            "text": "Parar de afirmar entrega universal, mas dizer aos clientes afetados que todos simplesmente ignoraram o aviso.",
             "feedback": "Muitos não o receberam."
           },
           {
             "id": "c",
-            "text": "Esconder a mudança de autenticação.",
+            "text": "Reconhecer a falha, mas esconder a mudança de autenticação dos clientes.",
             "feedback": "Ela já está em vigor."
           }
         ]
@@ -1373,12 +1373,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Reenviar a todas sem segmentar.",
+            "text": "Reenviar o aviso a todas as contas sem segmentar e disponibilizar instruções de acesso no suporte.",
             "feedback": "As 780 já têm entrega confirmada."
           },
           {
             "id": "b",
-            "text": "Esperar reclamações individuais.",
+            "text": "Disponibilizar instruções no suporte, mas esperar reclamações individuais antes de reenviar os avisos.",
             "feedback": "O grupo afetado é identificável."
           },
           {
@@ -1493,7 +1493,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Desligamento imediato da produção.",
+            "text": "Desliga amanhã a API antiga em produção, junto com a homologação.",
             "feedback": "Está previsto para seis semanas."
           },
           {
@@ -1503,7 +1503,7 @@
           },
           {
             "id": "c",
-            "text": "Nenhum teste.",
+            "text": "Mantém a API antiga em homologação sem bloqueio nem teste.",
             "feedback": "A homologação será bloqueada."
           }
         ]
@@ -1548,7 +1548,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que o calendário inteiro foi cancelado.",
+            "text": "Pedir atenção ao teste de homologação dizendo ao parceiro que o calendário inteiro foi cancelado.",
             "feedback": "A transição continua."
           },
           {
@@ -1558,7 +1558,7 @@
           },
           {
             "id": "c",
-            "text": "Prometer que a produção nunca mudará.",
+            "text": "Reduzir o alarme sobre produção prometendo ao parceiro que esse ambiente nunca mudará, apesar do calendário.",
             "feedback": "Há desligamento planejado."
           }
         ]
@@ -1582,12 +1582,12 @@
           },
           {
             "id": "b",
-            "text": "Manter o aviso genérico.",
+            "text": "Manter o aviso genérico e explicar o teste de amanhã apenas se o parceiro questionar o prazo.",
             "feedback": "Foi a origem da confusão."
           },
           {
             "id": "c",
-            "text": "Pedir migração de produção hoje.",
+            "text": "Separar o calendário por ambiente e pedir ao parceiro que migre a produção hoje para evitar riscos amanhã.",
             "feedback": "O prazo não é amanhã."
           }
         ]
@@ -1731,8 +1731,8 @@
           },
           {
             "id": "b",
-            "text": "Porque a regra proíbe qualquer troca.",
-            "feedback": "Ela exige aprovação."
+            "text": "Porque o gestor já tinha recusado essa troca no sistema.",
+            "feedback": "O gestor não recusou a troca; o registro mostra apenas a ausência de confirmação no sistema."
           },
           {
             "id": "c",
@@ -1753,12 +1753,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Que o gestor aprovou por silêncio.",
+            "text": "Reconhecer a lacuna do fluxo e tratar o silêncio do gestor como aprovação da troca já solicitada.",
             "feedback": "Não houve confirmação."
           },
           {
             "id": "b",
-            "text": "Que Caio esteve presente desde as 8h.",
+            "text": "Reconhecer a lacuna do fluxo atribuindo a cobertura das 8h a Caio, que não estava presente.",
             "feedback": "Chegou às 9h."
           },
           {
@@ -1783,7 +1783,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Classificar o chat como aprovação retroativa.",
+            "text": "Registrar a hora sem cobertura e classificar o chat como aprovação retroativa para encerrar o caso.",
             "feedback": "O sistema não confirma isso."
           },
           {
@@ -1793,7 +1793,7 @@
           },
           {
             "id": "c",
-            "text": "Ignorar a hora sem cobertura.",
+            "text": "Conversar com os envolvidos, mas ignorar a hora sem cobertura ao registrar a troca.",
             "feedback": "Ela precisa ser tratada."
           }
         ]
@@ -1961,12 +1961,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Afirmar que ela escolheu férias conscientemente.",
+            "text": "Reconhecer a frase ambígua e afirmar que Luiza escolheu férias conscientemente sem conferir o saldo.",
             "feedback": "O portal usou padrão."
           },
           {
             "id": "b",
-            "text": "Prometer compensação integral sem conferir horas.",
+            "text": "Reconhecer a frase ambígua e prometer compensação integral antes de conferir quantas horas Luiza tem de saldo.",
             "feedback": "O saldo está aberto."
           },
           {
@@ -1995,12 +1995,12 @@
           },
           {
             "id": "b",
-            "text": "Manter férias porque o sistema escolheu assim.",
+            "text": "Validar as horas com Luiza, mas manter férias porque o portal já classificou o período assim.",
             "feedback": "O padrão não confirma intenção."
           },
           {
             "id": "c",
-            "text": "Adicionar horas extras arbitrariamente.",
+            "text": "Alinhar a forma de registro com Luiza e adicionar horas extras ao saldo sem validar os apontamentos.",
             "feedback": "O registro deve seguir saldo verificado."
           }
         ]
@@ -2169,12 +2169,12 @@
           },
           {
             "id": "b",
-            "text": "O nome da pessoa para puni-la.",
+            "text": "Pedir os fatos necessários e o nome da pessoa que reclamou para poder puni-la.",
             "feedback": "Ele pediu investigação, mas o canal é anônimo."
           },
           {
             "id": "c",
-            "text": "A cópia literal como única forma de prova.",
+            "text": "Obter fatos para revisar o processo encaminhando a cópia literal da queixa como única forma de prova.",
             "feedback": "Há registros independentes."
           }
         ]
@@ -2199,12 +2199,12 @@
           },
           {
             "id": "b",
-            "text": "Encaminhar o relato bruto.",
+            "text": "Encaminhar o relato bruto a Gilberto e pedir conferência dos registros antes da conversa geral.",
             "feedback": "O detalhe permite identificação."
           },
           {
             "id": "c",
-            "text": "Arquivar a queixa sem verificar nada.",
+            "text": "Enviar uma síntese e arquivar a queixa sem verificar registros.",
             "feedback": "Há caminhos de apuração."
           }
         ]
@@ -2370,7 +2370,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Fazer a direção aprovar por pressão.",
+            "text": "Evitar que Ana saiba por rumores e fazer a direção aprovar o parecer antes de concluir o processo.",
             "feedback": "Ele pede orientação de comunicação."
           },
           {
@@ -2380,7 +2380,7 @@
           },
           {
             "id": "c",
-            "text": "Esconder que houve avaliação positiva.",
+            "text": "Evitar rumores escondendo de Ana que a banca produziu uma avaliação favorável.",
             "feedback": "Quer tratá-la com respeito."
           }
         ]
@@ -2405,12 +2405,12 @@
           },
           {
             "id": "b",
-            "text": "Parabenizar pela promoção efetivada.",
+            "text": "Reconhecer o parecer favorável e parabenizar Ana pela promoção como se a etapa final já tivesse ocorrido.",
             "feedback": "Ainda não há aprovação."
           },
           {
             "id": "c",
-            "text": "Prometer uma data exata para a decisão.",
+            "text": "Reconhecer o parecer favorável e prometer a Ana uma data exata para a decisão da direção.",
             "feedback": "O prazo é previsto, não definitivo."
           }
         ]
@@ -2576,13 +2576,13 @@
         "options": [
           {
             "id": "a",
-            "text": "Qualquer contato com a paciente.",
+            "text": "Evitar uma desmarcação prematura interrompendo qualquer contato com a paciente até a consulta.",
             "feedback": "Ele pede um aviso antecipado."
           },
           {
             "id": "b",
-            "text": "Manter a vaga.",
-            "feedback": "Ela pode permanecer até conferência."
+            "text": "Evitar surpresa no dia da consulta mantendo a vaga, mas sem pedir à paciente um encaminhamento atualizado.",
+            "feedback": "Manter a vaga sem avisar a paciente deixaria o problema do encaminhamento para o dia da consulta."
           },
           {
             "id": "c",
@@ -2604,7 +2604,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Garantir atendimento com documento vencido.",
+            "text": "Manter a reserva e garantir atendimento no dia 14 com o documento vencido, sem consultar a exigência vigente.",
             "feedback": "A regra exige validade."
           },
           {
@@ -2614,7 +2614,7 @@
           },
           {
             "id": "c",
-            "text": "Cancelar a vaga hoje sem oferecer caminho.",
+            "text": "Cancelar a vaga hoje e solicitar à paciente novo encaminhamento antes de oferecer outro caminho.",
             "feedback": "Há tempo para regularizar."
           }
         ]
@@ -2724,12 +2724,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Para o novo telefone.",
+            "text": "Para o novo número informado no cadastro principal antes do envio.",
             "feedback": "A lista usou o antigo."
           },
           {
             "id": "b",
-            "text": "Para nenhum número.",
+            "text": "Para nenhum número, pois os dois cadastros ainda não estavam sincronizados.",
             "feedback": "Houve um envio registrado."
           },
           {
@@ -2778,13 +2778,13 @@
         "options": [
           {
             "id": "a",
-            "text": "Se ela possui um telefone.",
+            "text": "Rever a cobrança investigando apenas se a paciente possui um telefone para receber o convite.",
             "feedback": "O novo número está no cadastro."
           },
           {
             "id": "b",
-            "text": "Se a consulta começou às 8h.",
-            "feedback": "Esse horário é conhecido."
+            "text": "Decidir a cobrança a partir da hora em que o painel marcou o início da consulta, apesar do número errado.",
+            "feedback": "A hora da consulta não resolve a dúvida sobre o convite enviado ao número antigo."
           },
           {
             "id": "c",
@@ -2812,12 +2812,12 @@
           },
           {
             "id": "b",
-            "text": "Cobrar porque o painel diz «enviado».",
+            "text": "Oferecer novo horário à paciente, mas manter a taxa porque o painel registrou o convite como enviado.",
             "feedback": "O destino era antigo."
           },
           {
             "id": "c",
-            "text": "Afirmar que a paciente ignorou o link.",
+            "text": "Oferecer novo horário e afirmar que a paciente ignorou o link enviado ao número errado.",
             "feedback": "Não há prova de recebimento."
           }
         ]
@@ -2988,13 +2988,13 @@
           },
           {
             "id": "b",
-            "text": "O conteúdo do laudo antes da assinatura.",
+            "text": "Corrigir o conteúdo clínico do laudo antes da assinatura em vez da previsão de retirada.",
             "feedback": "Não cabe à recepção antecipá-lo."
           },
           {
             "id": "c",
-            "text": "A data em que o exame ocorreu.",
-            "feedback": "Essa data não está em dúvida."
+            "text": "Corrigir a previsão de retirada hoje e a expectativa sobre o próximo prazo mudando apenas a data registrada no sistema.",
+            "feedback": "Alterar apenas o sistema não corrige a promessa feita ao paciente nem esclarece o próximo prazo."
           }
         ]
       },
@@ -3011,7 +3011,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que o resultado está normal.",
+            "text": "Explicar a pendência e dizer ao paciente que o resultado está normal antes da assinatura.",
             "feedback": "Não há laudo liberado."
           },
           {
@@ -3021,7 +3021,7 @@
           },
           {
             "id": "c",
-            "text": "Repetir que pode buscar hoje.",
+            "text": "Explicar a pendência e repetir que o paciente poderá buscar o laudo hoje, embora falte a assinatura.",
             "feedback": "A assinatura ainda falta."
           }
         ]
@@ -3185,7 +3185,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Conhecer detalhes clínicos por e-mail.",
+            "text": "Ajudar a família a decidir a reserva enviando detalhes clínicos por e-mail antes da avaliação.",
             "feedback": "A pergunta é logística."
           },
           {
@@ -3195,7 +3195,7 @@
           },
           {
             "id": "c",
-            "text": "Receber uma garantia que a equipe não pode dar.",
+            "text": "Ajudar a família a decidir sobre a reserva oferecendo uma garantia de alta que a equipe ainda não pode dar.",
             "feedback": "Eles precisam de status honesto."
           }
         ]
@@ -3219,12 +3219,12 @@
           },
           {
             "id": "b",
-            "text": "Confirmar saída às 11h.",
+            "text": "Explicar que 11h era um horário provisório e confirmar a saída nesse mesmo horário antes da avaliação das 10h.",
             "feedback": "As etapas estão pendentes."
           },
           {
             "id": "c",
-            "text": "Pedir cancelamento imediato sem consultar a equipe.",
+            "text": "Tratar 11h como provisório e pedir cancelamento imediato sem consultar a equipe sobre a saída.",
             "feedback": "A posição chegará às 10h."
           }
         ]
@@ -3389,12 +3389,12 @@
         "options": [
           {
             "id": "a",
-            "text": "A aparência de dez peças livres no painel.",
+            "text": "Preservar a confiança de Serra usando a aparência de dez peças livres no painel como confirmação.",
             "feedback": "O número está mal rotulado."
           },
           {
             "id": "b",
-            "text": "Uma promessa imediata de oito.",
+            "text": "Preservar a confiança de Serra prometendo oito peças imediatamente, sem conferir o compromisso anterior com Vale.",
             "feedback": "Não há base para ela."
           },
           {
@@ -3418,12 +3418,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Oito para quarta sem consultar Vale.",
+            "text": "Oferecer quatro peças agora e prometer as outras quatro para quarta-feira antes de consultar a reserva de Vale.",
             "feedback": "Só quatro estão livres."
           },
           {
             "id": "b",
-            "text": "Retirar unilateralmente a reserva de Vale.",
+            "text": "Oferecer quatro peças agora e retirar unilateralmente a reserva de Vale para completar oito.",
             "feedback": "O pedido anterior foi aprovado."
           },
           {
@@ -3539,7 +3539,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Quatro horas contínuas.",
+            "text": "Quatro horas contínuas de indisponibilidade durante toda a janela anunciada.",
             "feedback": "Não é a duração prevista."
           },
           {
@@ -3549,7 +3549,7 @@
           },
           {
             "id": "c",
-            "text": "Nenhuma possibilidade de interrupção.",
+            "text": "Nenhuma interrupção do serviço durante a janela de preparação e testes.",
             "feedback": "Uma breve troca está prevista."
           }
         ]
@@ -3594,7 +3594,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A decisão clínica dos atendimentos.",
+            "text": "Corrigir a impressão de parada dando ao cliente uma decisão clínica sobre os atendimentos.",
             "feedback": "Trata-se do serviço e do aviso."
           },
           {
@@ -3604,7 +3604,7 @@
           },
           {
             "id": "c",
-            "text": "A data da manutenção para hoje.",
+            "text": "Corrigir a impressão de quatro horas de parada alterando a data da manutenção, sem esclarecer o aviso já enviado.",
             "feedback": "Está marcada para sexta."
           }
         ]
@@ -3623,12 +3623,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que não haverá qualquer impacto.",
+            "text": "Explicar a janela e a interrupção prevista, mas garantir ao cliente que nenhum atendimento terá impacto.",
             "feedback": "Há uma interrupção possível."
           },
           {
             "id": "b",
-            "text": "Repetir apenas «8h às 12h».",
+            "text": "Indicar o painel de status, mas repetir apenas «8h às 12h» como duração da interrupção.",
             "feedback": "Isso causou a interpretação errada."
           },
           {
@@ -3749,12 +3749,12 @@
           },
           {
             "id": "b",
-            "text": "Entrega comprovada ao cliente do número 48.",
+            "text": "A entrega foi concluída no endereço 48 e recebida pelo cliente.",
             "feedback": "O número não coincide."
           },
           {
             "id": "c",
-            "text": "Assinatura do destinatário.",
+            "text": "A assinatura do destinatário e o recebimento no endereço 48.",
             "feedback": "Não há pessoa na foto."
           }
         ]
@@ -3805,12 +3805,12 @@
           },
           {
             "id": "b",
-            "text": "Que o cliente deve procurar sozinho no 43.",
+            "text": "Reconhecer a localização incerta e pedir ao cliente que procure sozinho o pacote no número 43.",
             "feedback": "A transportadora fará a conferência."
           },
           {
             "id": "c",
-            "text": "Que a foto encerra o caso.",
+            "text": "Tomar o status «entregue» e a foto como prova suficiente para encerrar o caso.",
             "feedback": "Ela aponta para outro número."
           }
         ]
@@ -3828,12 +3828,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Marcar como entregue ao 48.",
+            "text": "Abrir investigação com o motorista e marcar o pedido como entregue ao 48 antes de localizar o pacote.",
             "feedback": "A foto contradiz essa conclusão."
           },
           {
             "id": "b",
-            "text": "Acusar o morador do 43 de ter ficado com o pacote.",
+            "text": "Abrir investigação com o motorista e acusar desde já o morador do 43 de ter ficado com o pacote.",
             "feedback": "A localização não foi confirmada."
           },
           {
@@ -4005,7 +4005,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Evitar qualquer decisão da direção.",
+            "text": "Manter a rapidez do projeto e evitar uma nova decisão da direção sobre o custo que excede o limite.",
             "feedback": "Ele pergunta pelo caminho de aprovação."
           },
           {
@@ -4015,7 +4015,7 @@
           },
           {
             "id": "c",
-            "text": "Fazer o fornecedor trabalhar sem pagamento.",
+            "text": "Acelerar o projeto pedindo trabalho ao fornecedor sem autorização e sem pagamento aprovado.",
             "feedback": "Não quer pedir serviço sem respaldo."
           }
         ]
@@ -4034,12 +4034,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Autorizar verbalmente o fornecedor agora.",
+            "text": "Enviar escopo e custo à direção até as 16h, mas autorizar verbalmente o fornecedor a começar agora.",
             "feedback": "A ordem não cobre a etapa."
           },
           {
             "id": "b",
-            "text": "Alterar a ordem original sem aprovação.",
+            "text": "Enviar escopo e custo à direção, mas alterar a ordem original antes de receber aprovação.",
             "feedback": "O total exige outra alçada."
           },
           {

@@ -114,17 +114,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A confident claim that the agency is right.",
+            "text": "A confident claim that the agency's paid social report is wholly correct.",
             "feedback": "The agency view is one possibility, not a verified conclusion."
           },
           {
             "id": "b",
-            "text": "A new creative concept.",
+            "text": "A new creative concept for the paid social campaign before noon.",
             "feedback": "Her immediate request concerns the figures and explanation."
           },
           {
             "id": "c",
-            "text": "A defensible statement for the board and a plan to verify the channel count.",
+            "text": "A defensible board update and a plan to verify channel data.",
             "feedback": "She has a deadline, but the channel total is not yet reconciled."
           }
         ]
@@ -266,7 +266,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A later exclusion was agreed but never applied to the scheduled audience.",
+            "text": "The agreed exclusion was never applied to the scheduled audience.",
             "feedback": "The export predated the decision and remained attached."
           },
           {
@@ -294,12 +294,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Every future audience change.",
+            "text": "Every audience change requested after Tuesday's approval, including the service-pause list.",
             "feedback": "The Wednesday agreement changed the intended audience."
           },
           {
             "id": "b",
-            "text": "A special renewal message for paused accounts.",
+            "text": "A special renewal message for all accounts paused for service reasons.",
             "feedback": "No such message was approved."
           },
           {
@@ -321,17 +321,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A clear admission of the send error and a coordinated response for affected accounts.",
+            "text": "An admission of the error and a coordinated account response.",
             "feedback": "They are already receiving replies and need consistent wording."
           },
           {
             "id": "b",
-            "text": "A promise that all 37 received the email.",
+            "text": "A promise that every one of the 37 paused accounts received the email.",
             "feedback": "Only 31 deliveries are confirmed."
           },
           {
             "id": "c",
-            "text": "A claim that no orders resulted.",
+            "text": "A claim that no orders came from any of the paused accounts.",
             "feedback": "That check is pending."
           }
         ]
@@ -348,17 +348,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Own the unrevised audience, stop follow-up automation, and agree a service-first response with Customer Success.",
+            "text": "Own the send, stop follow-ups, and coordinate a service-first reply.",
             "feedback": "The affected customers need account support before another sales message."
           },
           {
             "id": "b",
-            "text": "Offer a discount to everyone immediately.",
+            "text": "Offer a discount to everyone affected by the incorrect renewal email.",
             "feedback": "No remedy or order impact has been established."
           },
           {
             "id": "c",
-            "text": "Defend the send using Tuesday’s approval.",
+            "text": "Defend the send as covered by Tuesday's approval, despite Wednesday's audience change.",
             "feedback": "Wednesday’s exclusion changed the plan."
           }
         ]
@@ -471,7 +471,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Everyone interpreted the line sarcastically.",
+            "text": "The entire local audience interpreted the headline as sarcastic after publication.",
             "feedback": "No broad audience finding exists."
           },
           {
@@ -504,12 +504,12 @@
           },
           {
             "id": "b",
-            "text": "All possible translations.",
+            "text": "All local-language headlines based on the approved English concept.",
             "feedback": "A separate local review was needed."
           },
           {
             "id": "c",
-            "text": "Eli’s proposed alternative.",
+            "text": "Eli's proposed alternative headline as approved local campaign copy.",
             "feedback": "No alternative was approved."
           }
         ]
@@ -527,17 +527,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Proof that no customer was offended.",
+            "text": "Proof that every customer understood the published local headline as intended.",
             "feedback": "Four complaints are documented."
           },
           {
             "id": "b",
-            "text": "Authority to pause the asset, recognition of the review failure, and a joint correction plan.",
+            "text": "Permission to pause, recognition of the missed local review, and a joint correction plan.",
             "feedback": "The team needs to act on a live audience concern."
           },
           {
             "id": "c",
-            "text": "A statement that the region caused the problem.",
+            "text": "A statement blaming the regional team for an issue Eli raised before publication.",
             "feedback": "Eli raised the risk before launch."
           }
         ]
@@ -556,17 +556,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Pause the headline, explain that the local wording missed the intended meaning, and involve regional reviewers in replacement copy.",
+            "text": "Pause the headline, explain its local misreading, and involve regional reviewers.",
             "feedback": "This owns the process gap without public blame."
           },
           {
             "id": "b",
-            "text": "Defend the line because the English idea was approved.",
+            "text": "Defend the line because Brand approved the English idea on Monday.",
             "feedback": "That approval did not settle the local reading."
           },
           {
             "id": "c",
-            "text": "Accuse the agency publicly of mistranslating.",
+            "text": "Publicly accuse the agency of mistranslating the local headline before review.",
             "feedback": "The immediate goal is a responsible correction, not a blame statement."
           }
         ]
@@ -679,12 +679,12 @@
         "options": [
           {
             "id": "a",
-            "text": "The annual offer was cancelled.",
+            "text": "The annual subscription offer had been cancelled before the campaign launched.",
             "feedback": "The record does not cancel the annual offer."
           },
           {
             "id": "b",
-            "text": "All monthly customers were promised an automatic discount.",
+            "text": "All existing monthly customers were promised an automatic 20% discount in the image.",
             "feedback": "The image was misleading, but the approved offer did not cover monthly plans."
           },
           {
@@ -733,17 +733,17 @@
         "options": [
           {
             "id": "a",
-            "text": "An instruction to deny every request without review.",
+            "text": "Instruct Sales to deny every discount request without reviewing the misleading campaign image.",
             "feedback": "No exception decision exists."
           },
           {
             "id": "b",
-            "text": "A clear account of the mismatch and a coordinated decision on how Sales should respond.",
+            "text": "Explain the image mismatch and agree how Sales should respond.",
             "feedback": "She faces real customer messages and needs a usable position."
           },
           {
             "id": "c",
-            "text": "A statement that the landing page cancels the image.",
+            "text": "A statement that the landing page automatically overrides the misleading campaign image.",
             "feedback": "Customers saw the image first; the inconsistency still needs handling."
           }
         ]
@@ -761,17 +761,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Promise all three customers the discount now.",
+            "text": "Promise all three complaining customers the 20% discount immediately, without checking the offer's approved scope.",
             "feedback": "No exception has been approved."
           },
           {
             "id": "b",
-            "text": "Acknowledge the misleading asset, correct or pause it, and agree a response with Sales and Finance.",
+            "text": "Acknowledge and pause the misleading asset; agree a response with Sales and Finance.",
             "feedback": "Isaac can fix the communication but cannot unilaterally grant exceptions."
           },
           {
             "id": "c",
-            "text": "Blame Sales for not reading the landing page aloud.",
+            "text": "Blame Sales for failing to explain the landing-page terms to each customer.",
             "feedback": "Sales did not approve the shortened asset."
           }
         ]
@@ -909,7 +909,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Requests with a valid region code.",
+            "text": "Requests with a valid region code sent by Alder's integration.",
             "feedback": "Those were the tested requests."
           },
           {
@@ -919,7 +919,7 @@
           },
           {
             "id": "c",
-            "text": "The partner’s deadline.",
+            "text": "The partner's deadline for fixing its own regionCode integration.",
             "feedback": "A deadline is not a test case."
           }
         ]
@@ -936,17 +936,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A clear ownership statement, a safe short-term option, and an update time.",
+            "text": "A clear owner, a safe temporary option, and an update time.",
             "feedback": "The partner should not be blamed or told to invent a field value."
           },
           {
             "id": "b",
-            "text": "An instruction to tell Alder its integration is wrong.",
+            "text": "An instruction to tell Alder its integration is wrong and must send a region code.",
             "feedback": "Its request follows the published guide."
           },
           {
             "id": "c",
-            "text": "A promised rollback by 4pm.",
+            "text": "A firm promise that rollback will be complete for Alder by 4pm.",
             "feedback": "No rollback time is approved."
           }
         ]
@@ -964,17 +964,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Rewrite the guide to say required and close the issue.",
+            "text": "Make regionCode mandatory in the guide, then close Alder's report without restoring service.",
             "feedback": "A documentation change alone would not restore compatibility."
           },
           {
             "id": "b",
-            "text": "Tell Alder to send a dummy region code.",
+            "text": "Tell Alder to submit a placeholder region code to meet today's processing deadline.",
             "feedback": "That could corrupt request meaning."
           },
           {
             "id": "c",
-            "text": "Treat this as a compatibility defect, pursue rollback, and ask whether Alder has a legitimate value before suggesting a request change.",
+            "text": "Treat it as a compatibility defect; seek rollback and ask if Alder has a legitimate region value.",
             "feedback": "That preserves data meaning while pursuing service recovery."
           }
         ]
@@ -1140,17 +1140,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A guarantee that no previous day was affected.",
+            "text": "A guarantee that no orders from the previous local day are involved.",
             "feedback": "Historical comparison is unfinished."
           },
           {
             "id": "b",
-            "text": "A statement that the client counted incorrectly.",
+            "text": "A statement that Hartwell counted the 84 orders incorrectly across local dates.",
             "feedback": "Their local-day definition is reasonable."
           },
           {
             "id": "c",
-            "text": "A reconciled explanation for the 84 orders and a plan for a local-day report.",
+            "text": "A reconciliation of 84 orders and a plan for local-day reporting.",
             "feedback": "The client needs a usable closing figure, not just a technical timezone label."
           }
         ]
@@ -1168,7 +1168,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Move the 84 rows manually into Sunday without documenting a rule.",
+            "text": "Move all 84 rows into Sunday manually, without documenting which business-day rule applies.",
             "feedback": "That would make the export inconsistent."
           },
           {
@@ -1178,7 +1178,7 @@
           },
           {
             "id": "c",
-            "text": "Own the ambiguous header, share the cross-date reconciliation, and agree the required business-day definition before changing the export.",
+            "text": "Own the header, reconcile dates, and agree the business-day rule before changing exports.",
             "feedback": "Changing a reporting definition requires client alignment."
           }
         ]
@@ -1302,12 +1302,12 @@
           },
           {
             "id": "b",
-            "text": "The application release caused the latency.",
+            "text": "The application release caused the latency because it happened around the same time.",
             "feedback": "Latency also affected the prior version."
           },
           {
             "id": "c",
-            "text": "Rollback of the application alone resolved the issue.",
+            "text": "Rollback of the application alone resolved every affected client's latency.",
             "feedback": "Latency was already improving after the routing reversal."
           }
         ]
@@ -1324,7 +1324,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Latency improved, but affected requests and continued stability are still being checked.",
+            "text": "Latency improved; impact and stability remain under review.",
             "feedback": "Service recovery and full impact assessment are different."
           },
           {
@@ -1358,12 +1358,12 @@
           },
           {
             "id": "b",
-            "text": "A definitive technical cause.",
+            "text": "A definitive technical cause for the outage before the investigation ends.",
             "feedback": "The record does not establish one."
           },
           {
             "id": "c",
-            "text": "A factual status, the mitigation taken, and a promise of a later cause and impact update.",
+            "text": "Give status and mitigation; promise a later cause and impact update.",
             "feedback": "He needs transparent language that survives later findings."
           }
         ]
@@ -1381,17 +1381,17 @@
         "options": [
           {
             "id": "a",
-            "text": "We reversed a routing change and rolled back the release as precautions; performance improved while impact checks continue.",
+            "text": "We reversed routing and rolled back as precautions; improvement and impact remain under review.",
             "feedback": "It states actions and observed results without a false causal claim."
           },
           {
             "id": "b",
-            "text": "A faulty release was rolled back and all requests succeeded.",
+            "text": "A faulty application release was rolled back, which resolved the incident and ensured every affected request succeeded.",
             "feedback": "Neither claim is verified."
           },
           {
             "id": "c",
-            "text": "There was no outage because the system recovered.",
+            "text": "There was no outage because service recovered and the affected requests all succeeded.",
             "feedback": "Recovery does not erase the incident."
           }
         ]
@@ -1505,7 +1505,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A currency-conversion error.",
+            "text": "A currency-conversion error in one dashboard's refresh of the order totals.",
             "feedback": "Both figures use the same currency."
           },
           {
@@ -1515,7 +1515,7 @@
           },
           {
             "id": "c",
-            "text": "One dashboard lost £70,000 of orders.",
+            "text": "One dashboard lost £70,000 of genuine orders during the latest refresh.",
             "feedback": "No missing orders are established."
           }
         ]
@@ -1560,17 +1560,17 @@
         "options": [
           {
             "id": "a",
-            "text": "An explicit metric choice with a reconciliation, based on the board’s intended definition.",
+            "text": "A metric choice and reconciliation aligned with the board's definition.",
             "feedback": "The prior convention is useful but should be confirmed."
           },
           {
             "id": "b",
-            "text": "A statement that Sales fabricated its number.",
+            "text": "A statement that Sales fabricated its gross-order number for today's board pack.",
             "feedback": "The Sales gross total is supported."
           },
           {
             "id": "c",
-            "text": "An average of the two dashboard totals.",
+            "text": "An average of the two dashboard totals for the board pack, without choosing a metric.",
             "feedback": "That would represent neither definition."
           }
         ]
@@ -1587,17 +1587,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Name gross orders and net revenue in both products and document the board-pack definition with Finance.",
+            "text": "Label both metrics and agree the board definition with Finance.",
             "feedback": "Clear labels and governance address the cause."
           },
           {
             "id": "b",
-            "text": "Make both dashboards display £1.17m without explanation.",
+            "text": "Make both dashboards display £1.17m without explaining the different accounting definitions.",
             "feedback": "That would hide the gross metric Sales needs."
           },
           {
             "id": "c",
-            "text": "Delete the Sales dashboard.",
+            "text": "Delete the Sales dashboard because its £1.24m figure differs from Finance.",
             "feedback": "It serves a distinct purpose."
           }
         ]
@@ -1709,7 +1709,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Sam approved the revised rating.",
+            "text": "Sam approved the revised rating when the calendar meeting took place.",
             "feedback": "No acknowledgement is recorded."
           },
           {
@@ -1719,7 +1719,7 @@
           },
           {
             "id": "c",
-            "text": "People cancelled the meeting.",
+            "text": "People cancelled the review meeting before Sam could discuss the rating.",
             "feedback": "The discussion occurred."
           }
         ]
@@ -1915,12 +1915,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Finance has formally approved her salary.",
+            "text": "Finance formally approved Amara’s salary package before Tom spoke to her.",
             "feedback": "Finance has not approved it."
           },
           {
             "id": "b",
-            "text": "Amara has already resigned.",
+            "text": "Amara had already resigned from her job after Tom's verbal assurance.",
             "feedback": "She says she is preparing to give notice."
           },
           {
@@ -1943,7 +1943,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Permission to ask her to resign immediately.",
+            "text": "Permission to ask Amara to resign immediately before Finance signs off the salary package.",
             "feedback": "Nothing in the record supports that."
           },
           {
@@ -1953,7 +1953,7 @@
           },
           {
             "id": "c",
-            "text": "A signed contract for Amara.",
+            "text": "A signed contract for Amara at the salary Tom described to her.",
             "feedback": "No written offer exists."
           }
         ]
@@ -1999,17 +1999,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Wait until Finance decides and hope she delays notice.",
+            "text": "Wait for Finance approval before correcting what Amara believes about the offer.",
             "feedback": "That leaves a known misleading assurance uncorrected."
           },
           {
             "id": "b",
-            "text": "Contact Amara promptly, own the premature wording, state the approval is pending, and advise her not to rely on a final offer yet.",
+            "text": "Correct the promise: approval is pending; advise Amara not to resign.",
             "feedback": "It corrects the expectation before she acts."
           },
           {
             "id": "c",
-            "text": "Send an offer letter to match Tom’s words.",
+            "text": "Send Amara a formal offer letter to match Tom's earlier promise.",
             "feedback": "The required approval has not been given."
           }
         ]
@@ -2177,17 +2177,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Whether Casey should be named in the meeting.",
+            "text": "Whether Casey should be named publicly as the employee whose pay falls below the advert range.",
             "feedback": "Naming a colleague is not needed to address the concern."
           },
           {
             "id": "b",
-            "text": "Whether existing staff are treated consistently with the new hiring range.",
+            "text": "Whether staff pay aligns with the new hiring range.",
             "feedback": "The screenshot raises a genuine process question even though it proves no individual disparity."
           },
           {
             "id": "c",
-            "text": "Whether the advert should be deleted.",
+            "text": "Whether the published advert should be deleted before the pay review.",
             "feedback": "Deleting public information would not answer the pay question."
           }
         ]
@@ -2205,7 +2205,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Confirm that Casey is paid fairly.",
+            "text": "Confirm that Casey's salary falls fairly within the published advert range.",
             "feedback": "Mina cannot make that case-specific claim from this record."
           },
           {
@@ -2215,7 +2215,7 @@
           },
           {
             "id": "c",
-            "text": "Acknowledge the concern, explain what the range does and does not show, and direct personal cases to private review.",
+            "text": "Explain the range's limits and direct Casey's concern to private review.",
             "feedback": "This is transparent without turning private pay into team gossip."
           }
         ]
@@ -2386,12 +2386,12 @@
           },
           {
             "id": "b",
-            "text": "Publish confidential interviews.",
+            "text": "Publish confidential interviews as evidence at the Friday staffing meeting.",
             "feedback": "He is asking whether use is allowed."
           },
           {
             "id": "c",
-            "text": "Publicly blame Morgan for leaving.",
+            "text": "Publicly blame Morgan for leaving before the Friday staffing meeting.",
             "feedback": "He asks for a persuasive staffing case."
           }
         ]
@@ -2410,17 +2410,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Decline the quote, explain the identification risk, and help build the case from metrics and themes.",
+            "text": "Decline the identifying quote; use anonymised metrics and themes.",
             "feedback": "This respects confidentiality while supporting the decision."
           },
           {
             "id": "b",
-            "text": "Allow the quote if Morgan’s name is removed.",
+            "text": "Allow the quote once Morgan's name is removed from the staffing case.",
             "feedback": "The wording itself may identify Morgan."
           },
           {
             "id": "c",
-            "text": "Tell him staffing cannot be discussed.",
+            "text": "Tell Felix that staffing cannot be discussed using anonymised evidence.",
             "feedback": "The metrics provide a basis for it."
           }
         ]
@@ -2613,17 +2613,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Ask the patient to choose whichever site is easier.",
+            "text": "Ask the patient to choose whichever site is easier, regardless of the actual booking.",
             "feedback": "The clinic session is at Riverside."
           },
           {
             "id": "b",
-            "text": "Ignore the template because the first confirmation was correct.",
+            "text": "Ignore the old template because the first confirmation listed Riverside correctly.",
             "feedback": "The contradictory reminder creates a real risk."
           },
           {
             "id": "c",
-            "text": "Confirm Riverside in a corrected message, check transport details with the patient, and audit the reminder batch.",
+            "text": "Send the Riverside correction, check transport with the patient, and audit the reminders.",
             "feedback": "This fixes the individual case and investigates wider scope."
           }
         ]
@@ -2736,17 +2736,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A form exists in a potentially related account, but its link to this appointment is unverified.",
+            "text": "A form exists in another account; its link is unverified.",
             "feedback": "Existence and correct ownership are separate."
           },
           {
             "id": "b",
-            "text": "The form is already linked to tomorrow’s appointment.",
+            "text": "The form is already linked to tomorrow's appointment in the patient's current account.",
             "feedback": "No transfer has happened."
           },
           {
             "id": "c",
-            "text": "The form was lost.",
+            "text": "The form was lost when the patient submitted it to the old account.",
             "feedback": "It is visible in the older account."
           }
         ]
@@ -2769,12 +2769,12 @@
           },
           {
             "id": "b",
-            "text": "The form is clinically invalid.",
+            "text": "The form is clinically invalid because it appears under a second account.",
             "feedback": "No clinical assessment is in the record."
           },
           {
             "id": "c",
-            "text": "The appointment must be cancelled.",
+            "text": "The appointment must be cancelled because the form is under a second account.",
             "feedback": "An alternative intake route exists."
           }
         ]
@@ -2820,7 +2820,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Merge the accounts on name and birth date alone.",
+            "text": "Merge the accounts on matching name and birth date without identity verification.",
             "feedback": "The approved verification step has not occurred."
           },
           {
@@ -2830,7 +2830,7 @@
           },
           {
             "id": "c",
-            "text": "Tell the patient the system deleted their form.",
+            "text": "Tell the patient the system deleted their form from both accounts.",
             "feedback": "It still exists."
           }
         ]
@@ -2946,12 +2946,12 @@
           },
           {
             "id": "b",
-            "text": "Full access to the portal.",
+            "text": "Full portal access, including documents, for the family member by phone.",
             "feedback": "No document-access permission is recorded."
           },
           {
             "id": "c",
-            "text": "No permission of any kind.",
+            "text": "No permission of any kind, including help with scheduling by phone.",
             "feedback": "Scheduling assistance is authorised."
           }
         ]
@@ -2996,17 +2996,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A claim that the family member acted improperly.",
+            "text": "Tell Caleb to accuse the family member of acting improperly simply for requesting the documents.",
             "feedback": "They may have relied on the vague note."
           },
           {
             "id": "b",
-            "text": "A clear boundary and a helpful route if the patient wants to expand access.",
+            "text": "Set a clear boundary and explain how the patient can extend access.",
             "feedback": "He can assist without disclosing documents now."
           },
           {
             "id": "c",
-            "text": "The content of the patient’s documents.",
+            "text": "The content of the patient's documents for the family member's call.",
             "feedback": "The question is about permission, not content."
           }
         ]
@@ -3024,7 +3024,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Send the documents because the caller booked the visit.",
+            "text": "Send the documents because the caller was authorised to book the visit.",
             "feedback": "Booking does not grant records access."
           },
           {
@@ -3034,7 +3034,7 @@
           },
           {
             "id": "c",
-            "text": "Explain that scheduling help is authorised, document access is not recorded, and the patient can request it through the approved process.",
+            "text": "Explain scheduling access excludes documents and offer the approved patient-led route.",
             "feedback": "It respects the stated consent and remains helpful."
           }
         ]
@@ -3147,12 +3147,12 @@
         "options": [
           {
             "id": "a",
-            "text": "The patient never called.",
+            "text": "The patient never called the clinic to request cancellation.",
             "feedback": "The request is logged."
           },
           {
             "id": "b",
-            "text": "The patient will be marked as a no-show.",
+            "text": "The patient will be marked as a no-show even though cancellation was requested.",
             "feedback": "No such outcome has been determined."
           },
           {
@@ -3174,7 +3174,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A cancellation request is recorded, but the appointment is still marked Booked.",
+            "text": "Cancellation requested; the appointment remains Booked.",
             "feedback": "The two records have not been reconciled."
           },
           {
@@ -3203,17 +3203,17 @@
         "options": [
           {
             "id": "a",
-            "text": "They must attend because the reminder arrived.",
+            "text": "Tell the patient they must attend because the reminder still shows a booking.",
             "feedback": "The patient had already requested cancellation."
           },
           {
             "id": "b",
-            "text": "The request was received, the status is being corrected, and a confirmed update will follow.",
+            "text": "Explain the request is logged, status pending, and an update will follow.",
             "feedback": "This avoids false reassurance and recognises the confusing reminder."
           },
           {
             "id": "c",
-            "text": "They have already been penalised.",
+            "text": "Tell the patient they have already been penalised for missing the appointment.",
             "feedback": "No no-show outcome exists."
           }
         ]
@@ -3231,12 +3231,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Delete the reminder without changing the appointment.",
+            "text": "Delete the reminder without changing the still-booked appointment or informing the patient.",
             "feedback": "The underlying status would remain wrong."
           },
           {
             "id": "b",
-            "text": "Escalate the request, verify the updated status, and let Leah give the patient a confirmed answer.",
+            "text": "Escalate, verify cancellation, and give Leah a confirmed status for the patient.",
             "feedback": "The process must close the gap between request and system status."
           },
           {
@@ -3359,12 +3359,12 @@
           },
           {
             "id": "b",
-            "text": "Vega has definitely received Orison’s equipment.",
+            "text": "Vega definitely received Orison's equipment in the pallet bearing its label.",
             "feedback": "Neither pallet has arrived."
           },
           {
             "id": "c",
-            "text": "A label swap is likely, but the contents reaching each client are not yet verified.",
+            "text": "The labels likely swapped; actual client deliveries remain unverified.",
             "feedback": "Packing and carrier handoff data do not prove final delivery contents."
           }
         ]
@@ -3382,17 +3382,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The display units were never packed.",
+            "text": "The display units were never packed before the carrier collected the pallets.",
             "feedback": "The packing record lists them."
           },
           {
             "id": "b",
-            "text": "The carrier has already corrected the destinations.",
+            "text": "The carrier has already corrected both destination labels before onward delivery.",
             "feedback": "The hold and check are not confirmed."
           },
           {
             "id": "c",
-            "text": "The pallets may follow the wrong destination labels unless the carrier holds and checks them.",
+            "text": "Wrong labels may misroute pallets unless the carrier checks them.",
             "feedback": "The labels guide delivery routing."
           }
         ]
@@ -3409,17 +3409,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A candid risk statement and a carrier decision point for Vega’s installation plan.",
+            "text": "State the delivery risk and set a carrier decision point.",
             "feedback": "The client must not plan on a guaranteed delivery."
           },
           {
             "id": "b",
-            "text": "Assurance that this is only a cosmetic tracking error.",
+            "text": "Assurance that this is only a cosmetic tracking error with no delivery risk.",
             "feedback": "The photo undermines that claim."
           },
           {
             "id": "c",
-            "text": "A promise that both shipments arrive tomorrow.",
+            "text": "Promise both shipments will reach clients tomorrow without checking the labels.",
             "feedback": "The potential hold makes that uncertain."
           }
         ]
@@ -3437,17 +3437,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Tell Rowan to ignore the tracking description.",
+            "text": "Tell Rowan to ignore the tracking description and proceed with Vega's installation plan.",
             "feedback": "The physical label evidence needs action."
           },
           {
             "id": "b",
-            "text": "Wait for Vega to open its pallet tomorrow.",
+            "text": "Wait until Vega opens its pallet tomorrow before mentioning a possible label swap.",
             "feedback": "That risks an avoidable wrong delivery."
           },
           {
             "id": "c",
-            "text": "Request a hold and content check, tell Rowan what is known, and update Vega before the planning call.",
+            "text": "Hold and check the pallets; update Rowan and Vega before the call.",
             "feedback": "This acts before the wrong delivery while preserving uncertainty."
           }
         ]
@@ -3557,17 +3557,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Twenty extra guests were invited.",
+            "text": "Twenty extra guests were invited after the dietary meal list was finalised.",
             "feedback": "The guest list remains at 50."
           },
           {
             "id": "b",
-            "text": "Twenty dietary meals were double-counted on top of the 50 guests.",
+            "text": "Twenty dietary meals were counted twice among 50 guests.",
             "feedback": "Those 20 are part of the confirmed guest count."
           },
           {
             "id": "c",
-            "text": "The vendor changed the order unilaterally.",
+            "text": "The vendor changed the meal order unilaterally after receiving the spreadsheet.",
             "feedback": "The spreadsheet export created the total."
           }
         ]
@@ -3589,12 +3589,12 @@
           },
           {
             "id": "b",
-            "text": "The vendor has already cooked 70 meals.",
+            "text": "The vendor has already cooked all 70 meals and cannot amend the order.",
             "feedback": "No preparation status is documented."
           },
           {
             "id": "c",
-            "text": "A free reduction to 50 meals.",
+            "text": "The vendor agreed to reduce the order to 50 meals at no charge.",
             "feedback": "Charges and amendment remain unknown."
           }
         ]
@@ -3617,12 +3617,12 @@
           },
           {
             "id": "b",
-            "text": "Permission to delete all dietary meals.",
+            "text": "Permission to remove all dietary meals from the vendor order to correct the count.",
             "feedback": "Those meals are needed by confirmed attendees."
           },
           {
             "id": "c",
-            "text": "A claim that 20 new people registered.",
+            "text": "A claim that 20 new people registered after the original guest count.",
             "feedback": "No extra attendees exist."
           }
         ]
@@ -3640,17 +3640,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Leave the 70-meal order unchanged without asking.",
-            "feedback": "An amendment may still be possible."
+            "text": "Leave the 70-meal order unchanged until the vendor confirms which guests need dietary meals.",
+            "feedback": "Guest preferences are known; amendment terms still need checking."
           },
           {
             "id": "b",
-            "text": "Own the spreadsheet error, ask the vendor to amend to 30 standard plus 20 dietary, and report any cost before approval.",
+            "text": "Own the count error; seek 30 standard and 20 dietary meals, with cost confirmed before approval.",
             "feedback": "This matches the 50 guests while preserving choices."
           },
           {
             "id": "c",
-            "text": "Change the order to 50 standard meals.",
+            "text": "Change the order to 50 standard meals and remove all 20 dietary selections to reduce cost.",
             "feedback": "That would remove dietary selections."
           }
         ]
@@ -3788,7 +3788,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Termination of the current service.",
+            "text": "Termination of Eastbrook's current service before the proposed amendment is signed.",
             "feedback": "It did not affect the current term."
           },
           {
@@ -3798,7 +3798,7 @@
           },
           {
             "id": "c",
-            "text": "Immediate binding renewal.",
+            "text": "Immediate binding renewal of Eastbrook's service on the proposed new terms.",
             "feedback": "The contract requires signatures."
           }
         ]
@@ -3816,12 +3816,12 @@
         "options": [
           {
             "id": "a",
-            "text": "A claim that procurement already accepted the quote.",
+            "text": "Claim that procurement has already accepted the proposed quote and renewal terms.",
             "feedback": "No acceptance is recorded."
           },
           {
             "id": "b",
-            "text": "A correction of the false notice and a clear path for the unsigned amendment.",
+            "text": "Correct the notice and explain the unsigned amendment's path.",
             "feedback": "Procurement needs confidence that its decision is still open."
           },
           {
@@ -3844,17 +3844,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Ask Eastbrook to ignore the email without explanation.",
+            "text": "Ask Eastbrook to ignore the automated renewal email without acknowledging why it was sent.",
             "feedback": "The notice explicitly claimed a commitment."
           },
           {
             "id": "b",
-            "text": "Own the automation error, correct the notice, and keep the procurement decision separate from current service.",
+            "text": "Own the false notice; separate the pending amendment from current service.",
             "feedback": "This repairs the trust issue without inventing a contract outcome."
           },
           {
             "id": "c",
-            "text": "Send the same renewal message again after the call.",
+            "text": "Send the same renewal notice again after the call without correcting it.",
             "feedback": "The trigger is wrong and has been paused."
           }
         ]
@@ -3966,12 +3966,12 @@
         "options": [
           {
             "id": "a",
-            "text": "The flight has already arrived.",
+            "text": "The flight had already arrived before the speaker's sound check.",
             "feedback": "It has not departed."
           },
           {
             "id": "b",
-            "text": "The speaker will reach the stage by 11:00.",
+            "text": "The speaker will reach the stage by 11:00 after the scheduled Wednesday landing.",
             "feedback": "Even an on-time landing leaves very little margin."
           },
           {
@@ -3993,17 +3993,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Move the speaker to a remote keynote without asking.",
+            "text": "Move the speaker to a remote keynote without checking her agreement or connectivity.",
             "feedback": "The speaker and programme lead have not agreed."
           },
           {
             "id": "b",
-            "text": "Promise a substitute speaker.",
+            "text": "Promise a substitute speaker without checking the programme lead's options.",
             "feedback": "None is confirmed."
           },
           {
             "id": "c",
-            "text": "Check earlier travel and remote feasibility, then offer options to the programme lead and speaker.",
+            "text": "Check travel and remote options, then consult the lead and speaker.",
             "feedback": "A programme change needs their agreement."
           }
         ]
@@ -4021,17 +4021,17 @@
         "options": [
           {
             "id": "a",
-            "text": "That the keynote has been cancelled.",
+            "text": "That the keynote has already been cancelled because of the flight.",
             "feedback": "No such decision has been made."
           },
           {
             "id": "b",
-            "text": "That she caused the problem by choosing the flight.",
+            "text": "Tell her that she caused the risk by choosing the late flight.",
             "feedback": "The programme team treated the itinerary as sufficient."
           },
           {
             "id": "c",
-            "text": "That the transfer makes the current plan fragile and alternatives are being checked with her.",
+            "text": "Explain the tight transfer and check alternatives with the speaker.",
             "feedback": "She should not be surprised on event day."
           }
         ]
@@ -4050,17 +4050,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Assure attendees the schedule will hold.",
+            "text": "Assure attendees that the keynote will start on time despite the untested airport transfer.",
             "feedback": "Feasibility is not established."
           },
           {
             "id": "b",
-            "text": "Name the risk, check earlier and remote options, and propose a decision point with the speaker today.",
+            "text": "Name the risk, check travel and remote options, and set a decision time.",
             "feedback": "This protects the event while respecting her role."
           },
           {
             "id": "c",
-            "text": "Wait for the flight to land on Wednesday.",
+            "text": "Wait for the flight to land on Wednesday before checking any alternatives.",
             "feedback": "That leaves no recovery time."
           }
         ]

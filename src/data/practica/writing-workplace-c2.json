@@ -57,7 +57,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Names were removed.",
+            "text": "All names and direct contact fields were removed from the export.",
             "feedback": "True but insufficient."
           },
           {
@@ -67,7 +67,7 @@
           },
           {
             "id": "c",
-            "text": "The client requested a dashboard.",
+            "text": "The client requested a dashboard of account-linked device identifiers.",
             "feedback": "The request does not describe the data."
           }
         ]
@@ -84,17 +84,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The revised export is approved.",
+            "text": "The revised export was approved for client release after review.",
             "feedback": "Approval is pending."
           },
           {
             "id": "b",
-            "text": "The file has already caused a disclosure.",
+            "text": "The file has already caused a disclosure to the client.",
             "feedback": "The file has not been sent."
           },
           {
             "id": "c",
-            "text": "No export has been sent; review of sharing is open.",
+            "text": "No export sent; sharing review still open.",
             "feedback": "This reflects the record."
           }
         ]
@@ -111,17 +111,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The device IDs from internal review.",
+            "text": "Shield the device IDs from the internal privacy review requested for the export.",
             "feedback": "The review is required."
           },
           {
             "id": "b",
-            "text": "A promise that no privacy review is necessary.",
+            "text": "Promise the client that no privacy review is needed before sharing the export.",
             "feedback": "The policy requires review."
           },
           {
             "id": "c",
-            "text": "The client timeline and confidence while correcting an overbroad description.",
+            "text": "Protect the client's timeline and trust while correcting the export description.",
             "feedback": "The deadline and prior claim explain the pressure."
           }
         ]
@@ -139,17 +139,17 @@
         "options": [
           {
             "id": "a",
-            "text": "We have had a confirmed breach.",
+            "text": "We have confirmed a breach from the export already sent to the client.",
             "feedback": "No disclosure or breach finding is recorded."
           },
           {
             "id": "b",
-            "text": "The file omits direct contact details but retains linkable IDs; sharing and wording await review.",
+            "text": "Contact details are absent, but linkable IDs remain; sharing awaits review.",
             "feedback": "It distinguishes a limitation from an incident finding."
           },
           {
             "id": "c",
-            "text": "It is anonymous because names are absent.",
+            "text": "The export is anonymous because names and emails are absent.",
             "feedback": "This ignores the linkable ID."
           }
         ]
@@ -260,17 +260,17 @@
         "options": [
           {
             "id": "a",
-            "text": "It caused every failure.",
+            "text": "The coating caused every reported failure.",
             "feedback": "The draft predates testing."
           },
           {
             "id": "b",
-            "text": "It has been cleared as a cause.",
+            "text": "The coating has already been cleared as a possible cause.",
             "feedback": "Testing has not cleared it."
           },
           {
             "id": "c",
-            "text": "Peeling was reproduced, but its cause is unresolved.",
+            "text": "Peeling occurred; the cause remains unknown.",
             "feedback": "This is the interim result."
           }
         ]
@@ -287,17 +287,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A defect in all batches.",
+            "text": "A defect in every product batch sold to customers.",
             "feedback": "Not all batches were assessed."
           },
           {
             "id": "b",
-            "text": "The reported peeling and its effect on customers.",
+            "text": "Reported peeling and its customer impact.",
             "feedback": "The reports are documented."
           },
           {
             "id": "c",
-            "text": "A proven coating mechanism.",
+            "text": "A proven coating mechanism behind every reported failure.",
             "feedback": "The mechanism is still under review."
           }
         ]
@@ -314,17 +314,17 @@
         "options": [
           {
             "id": "a",
-            "text": "She wants to suppress complaints.",
+            "text": "Suppress customer complaints until the laboratory report is complete.",
             "feedback": "She explicitly wants acknowledgement."
           },
           {
             "id": "b",
-            "text": "She wants to correct the leaked claim without denying customer experience.",
+            "text": "Correct the leaked claim without dismissing customers' reported peeling.",
             "feedback": "The draft has circulated; both needs matter."
           },
           {
             "id": "c",
-            "text": "She wants to release the lab report.",
+            "text": "Publish the laboratory report before an interpretation has been agreed.",
             "feedback": "The lab work is incomplete."
           }
         ]
@@ -342,17 +342,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The draft stated a cause prematurely; we take reports seriously and are investigating while offering support.",
+            "text": "State the draft cause was premature; acknowledge reports, investigate, and offer support.",
             "feedback": "This corrects the record and explains present action."
           },
           {
             "id": "b",
-            "text": "There is no problem until the lab confirms one.",
+            "text": "Say there is no problem until laboratory testing confirms the coating.",
             "feedback": "The complaints and reproduced peeling are real."
           },
           {
             "id": "c",
-            "text": "The leaked draft proves our coating is defective.",
+            "text": "State the leaked draft proves the coating is defective in all batches.",
             "feedback": "Causation is unconfirmed."
           }
         ]
@@ -466,17 +466,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The panel promised Sam a place before interviews.",
+            "text": "The panel promised Sam a shortlist place before interviews began.",
             "feedback": "No panel promise appears."
           },
           {
             "id": "b",
-            "text": "Ruth encouraged consideration, and Sam completed the suggested project.",
+            "text": "Ruth encouraged Sam, who completed the suggested project.",
             "feedback": "Both the coaching statement and completed project are documented."
           },
           {
             "id": "c",
-            "text": "Ruth guaranteed promotion if Sam led the project.",
+            "text": "Ruth guaranteed Sam a promotion.",
             "feedback": "“On track for consideration” was not a guarantee."
           }
         ]
@@ -520,17 +520,17 @@
         "options": [
           {
             "id": "a",
-            "text": "She wants to preserve the distinction between encouragement and a formal decision while addressing how Sam heard it.",
+            "text": "She must distinguish encouragement from a decision and address Sam's impression.",
             "feedback": "Her email acknowledges encouragement but rejects a guarantee."
           },
           {
             "id": "b",
-            "text": "She wants to deny that she discussed promotion at all.",
+            "text": "She wants to deny ever mentioning promotion or the project in conversations with Sam.",
             "feedback": "The March conversation is recorded."
           },
           {
             "id": "c",
-            "text": "She wants Leila to reverse the panel decision.",
+            "text": "She wants Leila to overturn the panel decision and give Sam the promotion now.",
             "feedback": "She asks for an explanation, not reversal."
           }
         ]
@@ -548,17 +548,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Acknowledge the misleading impression, explain the criteria and share Sam-specific feedback.",
+            "text": "Own the impression, explain criteria, and give Sam specific feedback.",
             "feedback": "It separates process from the manager’s wording and gives usable information."
           },
           {
             "id": "b",
-            "text": "Say the panel was free to decide anything and offer no detail.",
+            "text": "Tell Sam the panel could decide freely and need not explain any criterion.",
             "feedback": "This evades the documented feedback."
           },
           {
             "id": "c",
-            "text": "Explain why the chosen candidate was better in every respect.",
+            "text": "Compare Sam with the successful candidate on every criterion.",
             "feedback": "Comparative information is outside the approved scope."
           }
         ]
@@ -723,7 +723,7 @@
         "options": [
           {
             "id": "a",
-            "text": "The patient never requested a translation.",
+            "text": "The patient never asked for a full clinical translation.",
             "feedback": "The request is documented."
           },
           {
@@ -733,7 +733,7 @@
           },
           {
             "id": "c",
-            "text": "The report was lost.",
+            "text": "The clinical report was lost in the records office.",
             "feedback": "The report is present in English."
           }
         ]
@@ -750,17 +750,17 @@
         "options": [
           {
             "id": "a",
-            "text": "That the appointment should be cancelled.",
+            "text": "Cancel the appointment because the translated report is still unavailable.",
             "feedback": "Records staff cannot determine that outcome."
           },
           {
             "id": "b",
-            "text": "That the full report was translated.",
+            "text": "Say the full clinical report was translated and is ready to send.",
             "feedback": "That would misdescribe the packet and could give the recipient false confidence about the clinical pages."
           },
           {
             "id": "c",
-            "text": "That the summary was translated, the report was not, and timing must be checked.",
+            "text": "Clarify what was translated and check the full report's timing.",
             "feedback": "The translator is not booked and the appointment is near."
           }
         ]
@@ -870,17 +870,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The sample passed all tests.",
+            "text": "The sample passed every required quality and release test.",
             "feedback": "Testing has not finished."
           },
           {
             "id": "b",
-            "text": "Commercial terms passed; quality release is still pending.",
+            "text": "Terms passed; quality release remains pending.",
             "feedback": "The status and notes separate the two decisions."
           },
           {
             "id": "c",
-            "text": "The supplier has begun shipping units.",
+            "text": "The supplier has already shipped the units to the client.",
             "feedback": "No shipment is recorded."
           }
         ]
@@ -897,17 +897,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The test is a condition that controls whether units may be released.",
+            "text": "The test determines whether units can be released.",
             "feedback": "Routine does not mean optional or already passed."
           },
           {
             "id": "b",
-            "text": "The test belongs entirely to Sales.",
+            "text": "The test belongs entirely to Sales and cannot affect release.",
             "feedback": "Quality clearance is explicit."
           },
           {
             "id": "c",
-            "text": "The test is unusual for this supplier.",
+            "text": "The test is unusual for this supplier but has no release effect.",
             "feedback": "The document calls it standard."
           }
         ]
@@ -924,17 +924,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A wish to cancel the supplier.",
+            "text": "Cancel the supplier contract before the test outcome arrives.",
             "feedback": "Nothing says Bea wants cancellation."
           },
           {
             "id": "b",
-            "text": "Credibility with the client and a lack of a defensible ship date.",
+            "text": "Client trust and no defensible shipping date.",
             "feedback": "Her email asks to stand behind the update and answer shipment timing."
           },
           {
             "id": "c",
-            "text": "A request for an internal audit.",
+            "text": "Ask for an internal audit instead of answering the client.",
             "feedback": "No audit is requested."
           }
         ]
@@ -1072,17 +1072,17 @@
         "options": [
           {
             "id": "a",
-            "text": "No use through any route.",
+            "text": "No endpoint use through any client or partner route.",
             "feedback": "Gateway calls are not resolved."
           },
           {
             "id": "b",
-            "text": "No partner dependency exists.",
+            "text": "No dependency on the endpoint in any partner integration.",
             "feedback": "Partner settings are unverified."
           },
           {
             "id": "c",
-            "text": "No observed direct calls in that dashboard period.",
+            "text": "No direct calls observed during the selected dashboard period.",
             "feedback": "The chart measures direct calls only."
           }
         ]
@@ -1099,17 +1099,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Whether direct calls were logged.",
+            "text": "Whether direct calls were logged during the dashboard period.",
             "feedback": "The dashboard captured direct calls."
           },
           {
             "id": "b",
-            "text": "Whether gateway-mediated integrations still rely on it.",
+            "text": "Whether gateway-mediated partner integrations still depend on it.",
             "feedback": "Current partner configuration is unverified."
           },
           {
             "id": "c",
-            "text": "Whether the endpoint ever existed.",
+            "text": "Whether the endpoint ever existed outside the public documentation.",
             "feedback": "The route is documented."
           }
         ]
@@ -1126,17 +1126,17 @@
         "options": [
           {
             "id": "a",
-            "text": "To hide a completed retirement.",
+            "text": "Hide the endpoint's retirement until after the change is complete.",
             "feedback": "The change is proposed."
           },
           {
             "id": "b",
-            "text": "To avoid the required customer notice.",
+            "text": "Avoid the customer notice that the contract requires for retirement.",
             "feedback": "Policy explicitly requires notice."
           },
           {
             "id": "c",
-            "text": "To give notice without implying an outage or a guaranteed zero-impact change.",
+            "text": "Give notice without claiming an outage or guaranteed zero impact.",
             "feedback": "The email asks how to frame the notice."
           }
         ]
@@ -1154,17 +1154,17 @@
         "options": [
           {
             "id": "a",
-            "text": "State the proposed date, ask clients to check integrations, and give a reporting path while review continues.",
+            "text": "Propose a date, request checks, invite reports while review continues.",
             "feedback": "It is actionable and respects uncertainty."
           },
           {
             "id": "b",
-            "text": "Switch off the endpoint first and investigate complaints afterward.",
+            "text": "Disable the endpoint first, then investigate complaints from integrated clients.",
             "feedback": "Review and notice precede retirement."
           },
           {
             "id": "c",
-            "text": "Say retirement cannot affect anyone because direct traffic is zero.",
+            "text": "Tell clients retirement cannot affect them because direct traffic currently reads zero.",
             "feedback": "The chart does not cover the gateway."
           }
         ]
@@ -1300,17 +1300,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Outage recovery and partner referrals also changed during the period.",
+            "text": "Outage recovery and partner referrals changed over the same period.",
             "feedback": "These concurrent factors prevent a single-cause claim."
           },
           {
             "id": "b",
-            "text": "The dashboard calculation is necessarily wrong.",
+            "text": "The dashboard calculation is wrong because it counts partner traffic.",
             "feedback": "The difference may be real; attribution is the uncertain part."
           },
           {
             "id": "c",
-            "text": "The campaign produced no visits.",
+            "text": "The campaign produced no visits, so lift came from partners.",
             "feedback": "Campaign visits are documented."
           }
         ]
@@ -1327,17 +1327,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A usable, positive statement that does not misstate causation.",
+            "text": "A positive update that does not overclaim the campaign's impact.",
             "feedback": "He wants to communicate a result while preserving a success story."
           },
           {
             "id": "b",
-            "text": "A new dashboard by four o’clock.",
+            "text": "A new dashboard ready by four o'clock to replace all current figures.",
             "feedback": "No dashboard rebuild is requested."
           },
           {
             "id": "c",
-            "text": "A promise that the figure will not appear.",
+            "text": "A promise that the 24% figure will never appear in the deck.",
             "feedback": "He asks for alternative wording if his preferred claim is unsupported."
           }
         ]
@@ -1355,17 +1355,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The campaign drove all of the 24% increase.",
+            "text": "The campaign alone caused the full 24% week-on-week increase in sign-ups.",
             "feedback": "The causal claim is unsupported."
           },
           {
             "id": "b",
-            "text": "The 24% increase proves the partner programme had no effect.",
+            "text": "The 24% rise proves partner referrals had no measurable effect.",
             "feedback": "The partner contribution has not been separated either."
           },
           {
             "id": "c",
-            "text": "Sign-ups rose 24% week on week during the launch; campaign traffic contributed, but its incremental effect is not yet isolated.",
+            "text": "Sign-ups rose 24%; campaign traffic contributed, but incremental impact is unproven.",
             "feedback": "It reports the result and the limit on attribution."
           }
         ]
@@ -1528,17 +1528,17 @@
         "options": [
           {
             "id": "a",
-            "text": "As proof that Daniel plans retaliation.",
+            "text": "Treat Daniel's request as proof he plans retaliation against the author.",
             "feedback": "The email does not establish retaliatory intent."
           },
           {
             "id": "b",
-            "text": "As consent from the author for a private meeting.",
+            "text": "Treat the request as consent from the survey author for a private meeting.",
             "feedback": "No individual consent exists."
           },
           {
             "id": "c",
-            "text": "As a genuine wish to address a problem that still cannot override the survey commitment.",
+            "text": "Address the concern without breaking the survey commitment.",
             "feedback": "His motive can be constructive while the requested disclosure remains inappropriate."
           }
         ]
@@ -1676,17 +1676,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The intended patient opened the message.",
+            "text": "The intended patient opened the message in their portal account.",
             "feedback": "No read or identity verification exists."
           },
           {
             "id": "b",
-            "text": "The other patient received it.",
+            "text": "The other named patient received and read the message.",
             "feedback": "Misdirection is possible, not confirmed."
           },
           {
             "id": "c",
-            "text": "A portal account received the message; its identity is still being checked.",
+            "text": "A portal account received it; recipient identity remains unverified.",
             "feedback": "This is the audit limit."
           }
         ]
@@ -1703,17 +1703,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The concern is being investigated and a verified update will follow.",
+            "text": "Investigation underway; a verified update will follow.",
             "feedback": "It is true and useful."
           },
           {
             "id": "b",
-            "text": "No one else saw the information.",
+            "text": "No one else viewed the message in any portal account.",
             "feedback": "Recipient and read status are unknown."
           },
           {
             "id": "c",
-            "text": "The message went to the wrong person.",
+            "text": "The message definitely reached the wrong patient and was opened.",
             "feedback": "Recipient reconciliation is incomplete."
           }
         ]
@@ -1730,17 +1730,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A confirmed clinical error.",
+            "text": "A confirmed clinical error requiring immediate correction of the patient's care plan.",
             "feedback": "No clinical error is recorded."
           },
           {
             "id": "b",
-            "text": "A request to publish the message content.",
+            "text": "A request to publish message contents while reviewing the account mismatch.",
             "feedback": "No publication is requested."
           },
           {
             "id": "c",
-            "text": "The patient’s concern while avoiding an unsupported disclosure claim.",
+            "text": "Address concern without claiming a disclosure before verification.",
             "feedback": "The email asks for reassurance; the audit is incomplete."
           }
         ]
@@ -1757,17 +1757,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Close the ticket because the system says “sent”.",
+            "text": "Close the ticket because 'sent' proves the intended patient received the message.",
             "feedback": "A send receipt does not resolve identity."
           },
           {
             "id": "b",
-            "text": "Tell both patients to ignore all portal messages.",
+            "text": "Tell both patients to ignore portal messages until the investigation is closed.",
             "feedback": "The scope of any issue is not established."
           },
           {
             "id": "c",
-            "text": "Escalate, verify the account ID, and update the patient without guessing the outcome.",
+            "text": "Verify the account ID, then update the patient without assuming disclosure.",
             "feedback": "This follows the procedure and evidence."
           }
         ]
@@ -1876,17 +1876,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The carton identity, not the provenance of every damaged unit.",
+            "text": "Carton identity, not each damaged unit's source.",
             "feedback": "Consolidation mixed the batches."
           },
           {
             "id": "b",
-            "text": "Northline made every unit.",
+            "text": "Northline made every unit inside the carton.",
             "feedback": "Both suppliers are represented."
           },
           {
             "id": "c",
-            "text": "Eastbridge made the damaged units.",
+            "text": "Eastbridge made all the units that arrived damaged.",
             "feedback": "The codes cannot yet be read."
           }
         ]
@@ -1930,17 +1930,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Receiving any more evidence.",
+            "text": "Receiving any additional evidence from either supplier.",
             "feedback": "Codes would help."
           },
           {
             "id": "b",
-            "text": "Sounding evasive while refusing to invent an attribution.",
+            "text": "Sounding evasive without inventing attribution.",
             "feedback": "The email asks explicitly about accountability."
           },
           {
             "id": "c",
-            "text": "Offering any remedy.",
+            "text": "Offering any remedy before the damage assessment.",
             "feedback": "A remedy process exists."
           }
         ]
@@ -1958,17 +1958,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Blame Northline because the carton says so.",
+            "text": "Blame Northline based on the carton label.",
             "feedback": "The carton contained mixed batches."
           },
           {
             "id": "b",
-            "text": "Wait silently until the supplier dispute is complete.",
+            "text": "Wait for the supplier dispute to end before answering the customer.",
             "feedback": "Customer remedy need not await supplier recovery."
           },
           {
             "id": "c",
-            "text": "Acknowledge damage, request codes, explain assessment and avoid naming a responsible supplier yet.",
+            "text": "Acknowledge damage, request codes, explain assessment, avoid premature blame.",
             "feedback": "It addresses the customer now and preserves evidential accuracy."
           }
         ]
@@ -2104,17 +2104,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The event has no log.",
+            "text": "The event has no usable incident log for review.",
             "feedback": "A raw log exists."
           },
           {
             "id": "b",
-            "text": "Arbor was not affected.",
+            "text": "Arbor was not affected by the event recorded in the log.",
             "feedback": "Arbor’s affected window is recorded."
           },
           {
             "id": "c",
-            "text": "It includes another customer’s identifiers.",
+            "text": "Another customer's identifiers appear in the log.",
             "feedback": "Those identifiers require protection."
           }
         ]
@@ -2131,17 +2131,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Whether a redacted account will be credible and timely.",
+            "text": "Whether a redacted report will be credible and ready soon.",
             "feedback": "The email asks about completeness and a same-day answer."
           },
           {
             "id": "b",
-            "text": "Whether the log can be deleted.",
+            "text": "Whether the incident log can be deleted before Arbor asks for it.",
             "feedback": "Iris asks how to give a credible account while protecting another client, not whether records can be erased."
           },
           {
             "id": "c",
-            "text": "Whether Arbor wants a refund.",
+            "text": "Whether Arbor wants a refund rather than a timeline or evidence.",
             "feedback": "No refund request appears."
           }
         ]
@@ -2159,17 +2159,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Provide the verified timeline now and offer a reviewed redacted extract when cleared, explaining the boundary.",
+            "text": "Share the verified timeline; offer a cleared redacted extract and explain limits.",
             "feedback": "This gives evidence and a transparent limit."
           },
           {
             "id": "b",
-            "text": "Send the raw log with identifiers intact.",
+            "text": "Send the raw incident log with names and account identifiers intact.",
             "feedback": "Policy forbids disclosing other identifiers."
           },
           {
             "id": "c",
-            "text": "Promise the reviewed extract by close of business.",
+            "text": "Promise the reviewed extract by close of business before it is cleared.",
             "feedback": "Review is not complete."
           }
         ]
@@ -2279,17 +2279,17 @@
         "options": [
           {
             "id": "a",
-            "text": "It was early and contained some launch detail, while the preview clause remains ambiguous.",
+            "text": "It was early and disclosed details; the preview clause remains ambiguous.",
             "feedback": "That reflects both the post and the unresolved clause."
           },
           {
             "id": "b",
-            "text": "It reproduced the complete announcement.",
+            "text": "It reproduced the entire announcement with every launch detail before Thursday.",
             "feedback": "The post omitted major announcement details."
           },
           {
             "id": "c",
-            "text": "It was approved by both parties.",
+            "text": "Both parties approved the early post under the preview clause.",
             "feedback": "No approval is recorded."
           }
         ]
@@ -2307,17 +2307,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The post appeared before Thursday.",
+            "text": "That the partner posted before Thursday's agreed public launch.",
             "feedback": "The timing is documented."
           },
           {
             "id": "b",
-            "text": "The agreement’s meaning for teasers has not been settled.",
+            "text": "Whether teasers breach the agreement remains unresolved.",
             "feedback": "The preview permission complicates an absolute breach claim."
           },
           {
             "id": "c",
-            "text": "The partnership name appeared.",
+            "text": "That the partnership name appeared in the early post.",
             "feedback": "The name was in the teaser."
           }
         ]
@@ -2334,17 +2334,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A response that protects launch coordination and takes the early post seriously.",
+            "text": "Protect launch coordination while addressing the early post.",
             "feedback": "Her email expresses frustration about timing and asks for a firm note."
           },
           {
             "id": "b",
-            "text": "A demand to cancel the launch.",
+            "text": "Demand cancellation of the launch before discussing the clause with the partner.",
             "feedback": "The scheduled launch remains."
           },
           {
             "id": "c",
-            "text": "A public accusation before contacting the partner.",
+            "text": "Publicly accuse the partner of breach before asking how they read the clause.",
             "feedback": "The record does not justify that leap."
           }
         ]
@@ -2362,17 +2362,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Ignore the post because previews are permitted.",
+            "text": "Ignore the early post because the agreement allows some previews.",
             "feedback": "Permitted preview content still needs coordination."
           },
           {
             "id": "b",
-            "text": "Declare a breach and order a public apology immediately.",
+            "text": "Declare a breach and demand a public apology before speaking to the partner.",
             "feedback": "The clause and response have not been clarified."
           },
           {
             "id": "c",
-            "text": "Describe the concern, ask how the partner read the preview clause, and request a coordinated next step.",
+            "text": "Raise the concern, ask about the preview clause, and coordinate next steps.",
             "feedback": "It is firm about the impact without prejudging the disputed interpretation."
           }
         ]
@@ -2482,17 +2482,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The end date is recorded; the reason remains disputed.",
+            "text": "The end date is documented; the departure reason remains disputed.",
             "feedback": "This is the evidence boundary."
           },
           {
             "id": "b",
-            "text": "Both sides agreed on a new chapter.",
+            "text": "Both parties agreed on the phrase 'a new chapter' for departure.",
             "feedback": "No such agreement is recorded."
           },
           {
             "id": "c",
-            "text": "Jo resigned voluntarily.",
+            "text": "Jo resigned voluntarily for a new role with another employer.",
             "feedback": "No resignation is stated."
           }
         ]
@@ -2509,17 +2509,17 @@
         "options": [
           {
             "id": "a",
-            "text": "As flawless performance.",
+            "text": "Describe the project as flawless performance.",
             "feedback": "The review also records a missed milestone."
           },
           {
             "id": "b",
-            "text": "Only by repeating the manager’s opinion.",
+            "text": "Repeat only Ruth's favourable opinion, without checking underlying records.",
             "feedback": "The approved process applies."
           },
           {
             "id": "c",
-            "text": "Accurately, including leadership, with wording checked against the record.",
+            "text": "Describe verified leadership accurately, subject to record review.",
             "feedback": "Leadership is documented; precision matters."
           }
         ]
@@ -2536,17 +2536,17 @@
         "options": [
           {
             "id": "a",
-            "text": "She wants a constructive tone without revisiting a disputed ending.",
+            "text": "A constructive tone without resolving Jo's disputed departure.",
             "feedback": "Her email makes the motive clear."
           },
           {
             "id": "b",
-            "text": "Jo requested it.",
+            "text": "Jo explicitly requested the term in her reference letter.",
             "feedback": "Jo has not approved the phrase."
           },
           {
             "id": "c",
-            "text": "The policy requires it.",
+            "text": "The reference policy requires that word for departures.",
             "feedback": "Policy requires accuracy, not this phrase."
           }
         ]
@@ -2564,17 +2564,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Use “mutual” to avoid discomfort.",
+            "text": "Describe the departure as mutual to make an unresolved employment record sound amicable.",
             "feedback": "The phrase is unsupported."
           },
           {
             "id": "b",
-            "text": "Use verified role, dates and project contributions; route the draft through the approved process.",
+            "text": "Use verified role, dates and project leadership, then submit the reference for formal review.",
             "feedback": "This gives a useful, accurate reference."
           },
           {
             "id": "c",
-            "text": "Refuse to mention any work.",
+            "text": "Exclude Jo's documented project leadership because the reason for departure remains disputed.",
             "feedback": "The project leadership is documented."
           }
         ]
@@ -2711,17 +2711,17 @@
         "options": [
           {
             "id": "a",
-            "text": "That the local date of birth was corrected.",
+            "text": "That the local date of birth was corrected in the register.",
             "feedback": "The local correction is documented."
           },
           {
             "id": "b",
-            "text": "That the practice has the current copy or that the correction had no clinical effect.",
+            "text": "That the practice has the copy or clinical impact is ruled out.",
             "feedback": "Neither claim is established by this audit."
           },
           {
             "id": "c",
-            "text": "That Version 1 was sent.",
+            "text": "That Version 1 was sent to the practice before the correction.",
             "feedback": "Version 1 delivery is recorded."
           }
         ]
@@ -2738,17 +2738,17 @@
         "options": [
           {
             "id": "a",
-            "text": "She has proof the practice has Version 2.",
+            "text": "She has verified proof that the practice received and read Version 2.",
             "feedback": "Delivery is unconfirmed."
           },
           {
             "id": "b",
-            "text": "She wants to delete the old summary.",
+            "text": "She wants to erase the old summary before checking the new copy's arrival.",
             "feedback": "Mina is trying to establish what reached the practice before describing the correction, not erase the earlier record."
           },
           {
             "id": "c",
-            "text": "She wants to avoid unnecessary alarm while resolving an uncertain downstream status.",
+            "text": "She wants to clarify the practice's status without undue alarm.",
             "feedback": "Her email explicitly mentions concern about alarm."
           }
         ]
@@ -2765,17 +2765,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Send a clearly marked corrected summary through the approved channel and request acknowledgement.",
+            "text": "Send corrected summary through the approved channel and request receipt.",
             "feedback": "This repairs the distribution gap."
           },
           {
             "id": "b",
-            "text": "Assume sync occurred and close the issue.",
+            "text": "Assume the practice already received the correction and close the case.",
             "feedback": "Closing the issue on an assumed sync would leave the practice without a confirmed corrected summary."
           },
           {
             "id": "c",
-            "text": "Ask records staff to judge the clinical implications.",
+            "text": "Ask records staff to decide whether the incorrect date had clinical effects.",
             "feedback": "Clinical assessment belongs with clinicians."
           }
         ]
@@ -2884,17 +2884,17 @@
         "options": [
           {
             "id": "a",
-            "text": "One captured payment and no recorded second capture.",
+            "text": "One captured payment; no second capture recorded.",
             "feedback": "This is the strongest supported statement."
           },
           {
             "id": "b",
-            "text": "No customer-visible second entry.",
+            "text": "No second line visible to the customer on their statement.",
             "feedback": "The screenshot shows a second pending entry."
           },
           {
             "id": "c",
-            "text": "Two settled payments.",
+            "text": "Two settled payments captured by the same gateway transaction.",
             "feedback": "The ledger shows one capture."
           }
         ]
@@ -2938,17 +2938,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A way to dismiss the screenshot.",
+            "text": "Dismiss the screenshot because only one capture appears internally.",
             "feedback": "The screenshot shows a real concern."
           },
           {
             "id": "b",
-            "text": "A response that recognises the customer’s visible concern and explains the verification path.",
+            "text": "Recognise the screenshot and explain how Billing will verify it.",
             "feedback": "His email asks how to respond responsibly."
           },
           {
             "id": "c",
-            "text": "A refund without checking the gateway.",
+            "text": "Issue a refund before checking the second entry with the gateway.",
             "feedback": "Policy requires confirmation of an extra capture first."
           }
         ]
@@ -2965,17 +2965,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Issue a duplicate refund immediately.",
+            "text": "Issue a second refund immediately although only one capture is recorded.",
             "feedback": "There is no confirmed extra capture to refund."
           },
           {
             "id": "b",
-            "text": "Explain the one-capture record, investigate the pending entry, and update the customer without predicting the bank’s timing.",
+            "text": "Explain one capture; investigate the pending entry without promising bank timing.",
             "feedback": "This balances the two records and acts on the uncertainty."
           },
           {
             "id": "c",
-            "text": "Assure the customer the second line is harmless and will clear tonight.",
+            "text": "Assure the customer the pending bank entry will clear by tonight.",
             "feedback": "The release timing is unknown."
           }
         ]
@@ -3085,17 +3085,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Internal prototype use, with further review required.",
+            "text": "Prototype use only; production review pending.",
             "feedback": "This states both the grant and condition."
           },
           {
             "id": "b",
-            "text": "Unrestricted production use.",
+            "text": "Unrestricted production use following the prototype approval.",
             "feedback": "The note limits scope."
           },
           {
             "id": "c",
-            "text": "No permission of any kind.",
+            "text": "No permission of any kind to test the library internally.",
             "feedback": "Prototype use was approved."
           }
         ]
@@ -3112,17 +3112,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A confirmed violation has occurred.",
+            "text": "A confirmed licence violation has occurred in the production build.",
             "feedback": "No such finding exists."
           },
           {
             "id": "b",
-            "text": "Production review is incomplete; no specific violation finding has been made.",
+            "text": "Review is incomplete; no violation has been found.",
             "feedback": "This is the recorded status."
           },
           {
             "id": "c",
-            "text": "The build is fully cleared.",
+            "text": "The production build is fully cleared after the prototype approval.",
             "feedback": "Review is unfinished."
           }
         ]
@@ -3139,17 +3139,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Concealing that the library is in production.",
+            "text": "Conceal the production use from the customer until review ends.",
             "feedback": "The question openly acknowledges production use."
           },
           {
             "id": "b",
-            "text": "Acknowledging a process gap without making a premature technical or legal conclusion.",
+            "text": "Acknowledge the gap without premature technical or legal conclusions.",
             "feedback": "The email names the prior approval and current release."
           },
           {
             "id": "c",
-            "text": "Cancelling the prototype retrospectively.",
+            "text": "Cancel the earlier prototype approval as if it never existed.",
             "feedback": "No cancellation is proposed."
           }
         ]
@@ -3167,17 +3167,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The library was approved for production; only paperwork is late.",
+            "text": "The library passed production review, so only final supplier paperwork remains.",
             "feedback": "The production review is missing."
           },
           {
             "id": "b",
-            "text": "Prototype use was approved, production review was required and is now underway; we will share verified findings and action.",
+            "text": "Prototype approval did not cover production; review is underway and verified findings will follow.",
             "feedback": "This distinguishes status and commitment."
           },
           {
             "id": "c",
-            "text": "The library is illegal and unsafe.",
+            "text": "The library is unlawful and unsafe in the production build.",
             "feedback": "No such findings have been made."
           }
         ]
@@ -3315,17 +3315,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The headline makes a whole-service claim that the evidence does not support.",
+            "text": "It makes a whole-service claim beyond the audit's scope.",
             "feedback": "A narrow qualification cannot make a broad guarantee true."
           },
           {
             "id": "b",
-            "text": "The checkout audit has no value.",
+            "text": "The checkout audit has no evidential value for any accessibility claim.",
             "feedback": "The audit is valuable within its defined scope."
           },
           {
             "id": "c",
-            "text": "Footnotes are forbidden in launch copy.",
+            "text": "Footnotes cannot appear in launch copy under the campaign rules.",
             "feedback": "No such rule appears."
           }
         ]
@@ -3370,17 +3370,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Our account creation and checkout journey passed an independent accessibility review; we continue to improve other parts of the service.",
+            "text": "Account creation and checkout passed independent review; we continue improving other areas.",
             "feedback": "It describes verified scope and ongoing work."
           },
           {
             "id": "b",
-            "text": "Our entire service is fully accessible, with exceptions noted below.",
+            "text": "Our entire service is fully accessible if we add exceptions below the headline.",
             "feedback": "The whole-service claim remains unsupported."
           },
           {
             "id": "c",
-            "text": "We guarantee every user will encounter no accessibility barrier.",
+            "text": "We guarantee every user will face no barrier anywhere in the service.",
             "feedback": "No review can guarantee all user experiences."
           }
         ]
@@ -3517,17 +3517,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The scenario document is irrelevant.",
+            "text": "The scenario document is irrelevant because it was only a draft.",
             "feedback": "The scenarios are part of an active review."
           },
           {
             "id": "b",
-            "text": "It could imply that reductions are not under consideration at all.",
+            "text": "It implies reductions are ruled out although still possible.",
             "feedback": "One live scenario includes possible role reduction."
           },
           {
             "id": "c",
-            "text": "A staffing decision has already been approved.",
+            "text": "A staffing decision has already been formally approved by leadership.",
             "feedback": "The record says no decision."
           }
         ]
@@ -3545,17 +3545,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Acknowledge uncertainty and explain the decision process without confirming an outcome.",
+            "text": "Explain the uncertainty and how decisions will be made.",
             "feedback": "That responds to staff concern and the available facts."
           },
           {
             "id": "b",
-            "text": "Identify who shared the slide.",
+            "text": "Identify the employee who shared the confidential slide with staff.",
             "feedback": "No source investigation has begun."
           },
           {
             "id": "c",
-            "text": "Announce the preferred structure.",
+            "text": "Announce leadership's preferred structure as a final decision to staff.",
             "feedback": "No preferred structure is selected."
           }
         ]
@@ -3574,17 +3574,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The slide is the final plan, but details are confidential.",
+            "text": "Call the early slide the final plan but withhold role details until leadership announces them.",
             "feedback": "No final plan exists."
           },
           {
             "id": "b",
-            "text": "The slide is false; no roles will change.",
+            "text": "Call the slide wholly false and promise staff that no jobs or reporting lines will change.",
             "feedback": "The slide is genuine and the future remains open."
           },
           {
             "id": "c",
-            "text": "The slide is an early scenario, no decision has been made, and any proposal affecting roles will be discussed through the stated process.",
+            "text": "Call it an early scenario, with no decision; explain consultation if roles change.",
             "feedback": "It separates document status, current decision and next process."
           }
         ]
@@ -3693,17 +3693,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The patient accepted a resolution.",
+            "text": "The patient accepted a resolution before the record was closed.",
             "feedback": "No acceptance is recorded."
           },
           {
             "id": "b",
-            "text": "The callback delay was investigated.",
+            "text": "The callback delay was fully investigated before the record closed.",
             "feedback": "Review is still open."
           },
           {
             "id": "c",
-            "text": "The intake acknowledgement triggered automatic closure.",
+            "text": "Intake acknowledgement caused automatic closure of the record.",
             "feedback": "This is the workflow event."
           }
         ]
@@ -3720,17 +3720,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The callback met the promised window.",
+            "text": "The callback met the promised window and completed the review.",
             "feedback": "The records have not been reviewed."
           },
           {
             "id": "b",
-            "text": "It was acknowledged, but the underlying delay remains under review.",
+            "text": "Acknowledged, but the delay remains under review.",
             "feedback": "This separates response from resolution."
           },
           {
             "id": "c",
-            "text": "No response was ever sent.",
+            "text": "No response was sent to the patient after the concern.",
             "feedback": "An acknowledgement was sent."
           }
         ]
@@ -3747,17 +3747,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Recognize the acknowledgement while restoring clear review ownership and a next update.",
+            "text": "Name the reviewer and next update while recognising the acknowledgement.",
             "feedback": "This matches the request."
           },
           {
             "id": "b",
-            "text": "Transfer all ownership to the patient.",
+            "text": "Transfer all responsibility for follow-up to the patient after acknowledgement.",
             "feedback": "The procedure assigns internal owners."
           },
           {
             "id": "c",
-            "text": "Defend the dashboard status as a clinical judgment.",
+            "text": "Defend the dashboard's closed status as a final clinical judgment.",
             "feedback": "The status was an intake automation."
           }
         ]
@@ -3774,17 +3774,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Promise the delay was harmless.",
+            "text": "Promise the patient the delay caused no harm before review.",
             "feedback": "The impact is not assessed."
           },
           {
             "id": "b",
-            "text": "Name the clinic manager as reviewer and give a timed status update without preempting the finding.",
+            "text": "Name the reviewer and give a timed update without predicting findings.",
             "feedback": "This provides accountable follow-up."
           },
           {
             "id": "c",
-            "text": "Tell the patient the issue is closed.",
+            "text": "Tell the patient the complaint is closed because it was acknowledged.",
             "feedback": "The substantive review is unfinished."
           }
         ]
@@ -3947,17 +3947,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The ability to ignore procurement.",
+            "text": "Ignore procurement objections to keep renewal moving before deadline.",
             "feedback": "Procurement approval is required."
           },
           {
             "id": "b",
-            "text": "A guarantee that price never expires.",
+            "text": "Guarantee today's price will remain available after the stated expiry.",
             "feedback": "The proposal expires next Friday unless extended."
           },
           {
             "id": "c",
-            "text": "Commercial momentum while clarifying open terms and the price deadline.",
+            "text": "Maintain momentum while clarifying terms and the price deadline.",
             "feedback": "His email asks about price and client relationship."
           }
         ]
@@ -3975,17 +3975,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Record the deal as closed and avoid mentioning procurement.",
+            "text": "Record the deal as closed despite the unsigned amendment and procurement's open questions.",
             "feedback": "The forecast and document status would be inaccurate."
           },
           {
             "id": "b",
-            "text": "Acknowledge intent, discuss payment timing, and confirm whether the price proposal needs an extension.",
+            "text": "Acknowledge intent, settle payment timing, and check the price deadline.",
             "feedback": "This keeps momentum without asserting final agreement."
           },
           {
             "id": "c",
-            "text": "Tell the client it already accepted all terms and must sign.",
+            "text": "Tell the client it accepted every term and must sign before the current price expires.",
             "feedback": "The client reserved approval and proposed a change."
           }
         ]

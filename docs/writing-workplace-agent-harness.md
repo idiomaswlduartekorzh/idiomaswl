@@ -44,6 +44,7 @@ npm run check:writing-workplace-b2
 npm run check:writing-workplace-english
 node scripts/check-writing-workplace-locale.mjs frances
 npm run check:writing-workplace-release  # exige los 480 casos y las 24 rutas
+npm run check:writing-workplace-length   # longitud de opciones en los 24 bancos
 npm run test:writing-workplace-b2
 npx tsc --noEmit
 npm run check:practica-catalog
@@ -51,6 +52,8 @@ npm run build
 ```
 
 El checker exige 20 casos por nivel, cuatro por cada una de cinco áreas, variedad de posiciones correctas, hechos, cuatro ejes, tres opciones, claves, referencias y anotaciones. Las pruebas mutan evidencia, claves y distribución para comprobar que el propio guardián detecta defectos. Antes de integrar se recorre en navegador el camino completo, una opción errónea, un borrador revisado y el ancho móvil.
+
+El guardián de longitud compara palabras en seis idiomas y caracteres en japonés y coreano; en todos los bancos mide además caracteres para detectar opciones visualmente largas. Por banco, la clave debe ser la única más larga en como máximo el 40 % de las preguntas y la única más corta entre el 15 % y el 40 %. En los seis idiomas con espacios, el límite visual es 50 % para la clave más larga y el piso es 10 % para la más corta. El informe también muestra empates, posición intermedia y diferencias grandes entre las tres opciones. La revisión humana comprueba que los distractores siguen siendo plausibles y que el feedback corresponde a su nueva redacción.
 
 `prebuild` ejecuta el guardián de los 480 casos, 24 rutas, enlaces desde el nivel, sitemap y metadatos e imágenes sociales en la lengua meta. El guardián histórico y su baseline de 480 prácticas siguen midiendo A1–B1, sin reducir umbrales. La vista previa remota de Vercel compiló el commit final `eebda811`, y el smoke pasó 72/72 rutas: GET/HEAD de las 24 páginas de escritura y GET de los 24 hubs. El smoke detectó que italiano B2 tenía una página especial sin enlace a escritura; se corrigió el enlace, se localizó la copia de esa página y el guardián ahora revisa su ruta real. El build completo pasó en GitHub Actions antes y después de integrar el PR. El build local con Webpack superó el límite predeterminado de 2 GB de Node; la repetición con 4 GB se detuvo por presión de disco. La ausencia de un build local completo se registra, sin confundirla con un fallo de compilación remota.
 

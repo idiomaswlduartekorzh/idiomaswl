@@ -1,6 +1,6 @@
 # Revisión editorial de Writing laboral · 19 de noviembre de 2026
 
-Estado: **preview en inglés; corrección global pendiente**. Esta revisión responde a dos
+Estado: **corrección completa en rama; integración y publicación pendientes**. Esta revisión responde a dos
 observaciones del propietario: la longitud de las opciones revela la clave y las tres
 casillas de análisis resultan poco naturales. El texto de la experiencia sigue en el
 idioma estudiado; este documento de trabajo está en español.
@@ -55,22 +55,50 @@ placeholders indican qué tipo de respuesta escribir y las instrucciones aclaran
 son notas breves para preparar el correo. C1 pide comparar versiones y reconocer
 incertidumbre; C2 pide delimitar qué puede afirmarse y qué puede prometerse.
 
-## Preview implementado
+## Implementación y resultado
 
-Se reescribieron las tres preguntas de las casillas para inglés B2, C1 y C2, y las
-opciones de tres casos ingleses B2 en marketing, software y administración sanitaria:
-`form-never-opened`, `saved-filter` y `referral-received`. En sus 12 preguntas, la
-clave únicamente más larga pasó de **7/12 a 4/12**; solo en una es la más corta, y
-ninguna clave supera al distractor más largo por más de dos palabras. Se mantuvieron
-las mismas claves, referencias a evidencia y explicaciones.
+El preview inicial cubrió tres casos ingleses B2 de marketing, software y
+administración sanitaria: `form-never-opened`, `saved-filter` y
+`referral-received`. Tras su aprobación se revisaron las opciones de los 24 bancos
+de inglés, francés, alemán, italiano, portugués, ruso, japonés y coreano, en B2,
+C1 y C2. Se reescribieron las tres preguntas, sus ayudas y la consigna de análisis
+de cada nivel en cada idioma estudiado.
+
+| Eje | Clave únicamente más larga antes | Después |
+|---|---:|---:|
+| Evidence | 314/480 (65,4 %) | 189/480 (39,4 %) |
+| Scope | 350/480 (72,9 %) | 219/480 (45,6 %) |
+| Intent | 449/480 (93,5 %) | 101/480 (21,0 %) |
+| Purpose | 450/480 (93,8 %) | 96/480 (20,0 %) |
+| **Total** | **1.563/1.920 (81,4 %)** | **605/1.920 (31,5 %)** |
+
+La clave es ahora la única más corta en **545/1.920 (28,4 %)**, frente a 48
+antes de la revisión. El cociente medio entre longitud de la clave y la media de
+los distractores bajó de **1,69× a 1,11×**. El auditor comprueba tanto palabras
+o caracteres de la lengua como longitud visual, y los 24 bancos pasan sus límites
+individuales. En portugués B2/C2, ruso B2/C2 y japonés C1/C2, la proporción de
+claves más largas quedó exactamente en el máximo de 32/80: una edición futura
+debe volver a ejecutar el control.
+
+La revisión mantuvo identificadores, orden, claves y referencias de evidencia.
+Los editores revisaron matices eliminados al acortar claves y casos donde un
+distractor exponía su propio error; se corrigieron también las explicaciones que
+dejaron de corresponder a la nueva redacción. El harness de 480 casos, sus 13
+pruebas y el auditor de longitud pasaron tras esos ajustes. Una prueba de
+estructura contra la versión de la rama confirmó que no cambiaron datos ajenos
+a las opciones y su feedback.
 
 ## Umbral de aceptación para escalar
 
 Antes de publicar cada banco de 80 preguntas:
 
-1. Reducir «la clave es únicamente la más larga» a **como máximo 40 %**, sin crear
-   una pista inversa por longitud corta. Revisar también la razón de longitud y
-   cada caso con una diferencia marcada; una media global por sí sola oculta fallos.
+1. Reducir «la clave es únicamente la más larga» a **como máximo 40 %** por banco.
+   La clave debe ser únicamente la más corta en **al menos 15 % y como máximo 40 %**:
+   así tampoco se aprende a descartar siempre la opción breve. Revisar la opción
+   intermedia, los empates, la razón de longitud y cada trío con una diferencia
+   marcada; una media global por sí sola oculta fallos. En idiomas con espacios,
+   medir también la longitud visual por caracteres: la clave no debe ser la más
+   larga en más del 50 % ni la más corta en menos del 10 % de cada banco.
 2. Leer las tres opciones sin mirar la clave: las tres deben sonar como decisiones
    que una persona podría tomar en esa situación, y solo una debe respetar todos
    los hechos, límites y responsabilidades.
@@ -79,10 +107,10 @@ Antes de publicar cada banco de 80 preguntas:
 4. Revisar las casillas en el idioma estudiado con un lector humano; adaptar la
    expresión natural de cada lengua, sin traducir literalmente las frases inglesas.
 5. Correr el harness de 480 casos, catálogo, TypeScript, build y recorrido visual
-   antes de integrar. El auditor de longitud será una puerta de release cuando
-   los 24 bancos cumplan el umbral; hoy es solo un informe para evitar bloquear
-   los bancos publicados durante la revisión.
+   antes de integrar. El auditor de longitud ya es una puerta de release en
+   `prebuild`; una regresión de cualquier banco detiene el build.
 
-La prioridad editorial es Intent y Purpose de C1/C2, donde la pista es casi
-universal. Después siguen B2 y las otras dos dimensiones. Ningún cambio de este
-preview debe presentarse como corrección de los 1.920 ítems.
+La revisión corrigió el sesgo de longitud en las 1.920 preguntas y la redacción de
+las tres casillas en los 24 recorridos. El auditor mide pistas de longitud; la
+plausibilidad de cada distractor y la naturalidad de la lengua requieren lectura
+editorial al ampliar o modificar casos.

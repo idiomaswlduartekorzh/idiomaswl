@@ -96,7 +96,7 @@
           },
           {
             "id": "c",
-            "text": "Mehrfachkontakte und unterschiedliche Plattformkennungen wurden nicht bereinigt.",
+            "text": "Dubletten und Plattformkennungen unbereinigt.",
             "feedback": "Eine eindeutige Personenzahl lässt sich daraus nicht ablesen."
           }
         ]
@@ -114,7 +114,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine Garantie für Kampagnenwirkung.",
+            "text": "Eine verbindliche Garantie, dass die Kampagne bestimmte Personen erreicht hat.",
             "feedback": "Dazu enthält der Bericht keine Daten."
           },
           {
@@ -124,7 +124,7 @@
           },
           {
             "id": "c",
-            "text": "Eine starke, aber genau abgegrenzte Aussage und gegebenenfalls eine spätere Schätzung.",
+            "text": "Sichtkontakte belastbar; Personenschätzung offen.",
             "feedback": "Er möchte den Befund nutzbar machen, ohne ihn zu überdehnen."
           }
         ]
@@ -142,17 +142,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Kontakte zu Menschen umbenennen.",
+            "text": "Die gezählten Sichtkontakte ausdrücklich als einzelne erreichte Menschen ausweisen.",
             "feedback": "Das vertauscht zwei verschiedene Maße."
           },
           {
             "id": "b",
-            "text": "Den gesamten Bericht verwerfen.",
+            "text": "Den gesamten Bericht wegen dieser Kennzahl verwerfen.",
             "feedback": "Die Kontaktzahl ist weiterhin verwendbar."
           },
           {
             "id": "c",
-            "text": "Die geprüften Sichtkontakte nennen und eine Personenschätzung ausdrücklich als offen behandeln.",
+            "text": "Sichtkontakte nennen, Personenzahl als offen kennzeichnen.",
             "feedback": "So bleibt der Befund eindrucksvoll und korrekt."
           }
         ]
@@ -302,7 +302,7 @@
           },
           {
             "id": "c",
-            "text": "Sie bleiben bis zur Frist reserviert, sofern keine abgestimmte Änderung erfolgt.",
+            "text": "Partnerplätze bleiben bis zur Frist reserviert, sofern nichts anderes vereinbart wird.",
             "feedback": "Die Warteliste hebt die Vereinbarung nicht auf."
           }
         ]
@@ -320,7 +320,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ob die Formulierung irreführt und ob die Zusage an den Partner Bestand hat.",
+            "text": "Wortlaut und Partnerzusage prüfen.",
             "feedback": "Beides betrifft Vertrauen und Planung."
           },
           {
@@ -348,12 +348,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Seite auf „öffentliche Anmeldung geschlossen“ präzisieren und die Partnerfrist bestätigen.",
+            "text": "Öffentliche Anmeldung schließen; Partnerfrist bestätigen.",
             "feedback": "Das beschreibt den Stand ohne künstliche Knappheit."
           },
           {
             "id": "b",
-            "text": "Alle Reservierungen stillschweigend freigeben.",
+            "text": "Alle reservierten Partnerplätze ohne Prüfung stillschweigend freigeben.",
             "feedback": "Das würde die Partnerzusage verletzen."
           },
           {
@@ -480,7 +480,7 @@
           },
           {
             "id": "c",
-            "text": "Einen Durchschnitt aus Alltagstests.",
+            "text": "Einen Durchschnitt aus abgeschlossenen Alltagstests mit Kunden.",
             "feedback": "Solche Ergebnisse liegen noch nicht vor."
           }
         ]
@@ -525,17 +525,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Den Bericht geheim halten.",
+            "text": "Den Laborbericht bis nach Abschluss aller Alltagstests vollständig zurückhalten.",
             "feedback": "Er will den Wert korrekt nutzen."
           },
           {
             "id": "b",
-            "text": "Den Vorteil zeigen, ohne eine individuelle Ersparnis zu garantieren.",
+            "text": "Vorteil belegen, ohne private Ersparnis zu versprechen.",
             "feedback": "Er sucht eine belastbare Aussage für die Freigabe."
           },
           {
             "id": "c",
-            "text": "Alltagstests als abgeschlossen darstellen.",
+            "text": "Alltagstests schon als abgeschlossene Bestätigung des Kundennutzens darstellen.",
             "feedback": "Sie sind erst geplant."
           }
         ]
@@ -553,7 +553,7 @@
         "options": [
           {
             "id": "a",
-            "text": "„Im definierten Standardzyklus 30 % geringerer Energieverbrauch als das Vergleichsgerät.“",
+            "text": "„Im Standardzyklus 30 % weniger Energie als das Vergleichsgerät.“",
             "feedback": "Sie nennt Vergleich und Bedingung."
           },
           {
@@ -563,7 +563,7 @@
           },
           {
             "id": "c",
-            "text": "„Bis zu 30 % garantiert bei jeder Nutzung.“",
+            "text": "„Bei jeder Nutzung garantiert bis zu 30 % weniger Stromverbrauch.“",
             "feedback": "Das „bis zu“ beseitigt die falsche Garantie nicht."
           }
         ]
@@ -685,7 +685,7 @@
           },
           {
             "id": "c",
-            "text": "Der automatische Linkfilter hat den Beitrag ausgeblendet; eine manuelle Löschung ist nicht dokumentiert.",
+            "text": "Linkfilter blendete aus; manuelle Löschung unbelegt.",
             "feedback": "Die Kundin konnte den Unterschied von außen nicht erkennen."
           }
         ]
@@ -734,12 +734,12 @@
           },
           {
             "id": "b",
-            "text": "Eine nachvollziehbare Erklärung des Filters und einen Weg, die Beschwerde weiterzubearbeiten.",
+            "text": "Filter erklären und Reklamation weiterbearbeiten.",
             "feedback": "Die Kundin soll nicht erneut im Dunkeln bleiben."
           },
           {
             "id": "c",
-            "text": "Eine Zusage zum Ersatzpaket.",
+            "text": "Eine verbindliche Zusage zu einem Ersatzpaket abgeben.",
             "feedback": "Der Schaden ist noch ungeprüft."
           }
         ]
@@ -762,7 +762,7 @@
           },
           {
             "id": "b",
-            "text": "Den Beitrag prüfen, die automatische Ausblendung erklären und die Reklamation separat aufnehmen.",
+            "text": "Beitrag prüfen, Filter erklären und Reklamation gesondert aufnehmen.",
             "feedback": "Sie behandelt Kritik und Sachproblem offen."
           },
           {
@@ -879,7 +879,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Der Suchtreffer blieb sichtbar, ein Test des Inhalts wurde verweigert.",
+            "text": "Suchtreffer sichtbar, Inhaltstest verweigert.",
             "feedback": "Treffer und Dokumentzugriff sind verschiedene Ebenen."
           },
           {
@@ -911,7 +911,7 @@
           },
           {
             "id": "b",
-            "text": "Ob es zwischen Entfernung und Test erfolgreiche Zugriffe gab.",
+            "text": "Zugriffe vor dem Test sind unklar.",
             "feedback": "Dazu braucht es die Protokolle."
           },
           {
@@ -934,7 +934,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine klare Zwischenmeldung mit bestätigtem Befund und offenem Prüfpunkt.",
+            "text": "Befund mitteilen, Prüfpunkt offenhalten.",
             "feedback": "Der Kunde fragt nach tatsächlicher Einsichtnahme."
           },
           {
@@ -963,7 +963,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Den Vorfall als erledigt schließen.",
+            "text": "Den Vorfall nach der Indexbereinigung ohne weitere Protokollprüfung schließen.",
             "feedback": "Die Protokolle stehen noch aus."
           },
           {
@@ -973,7 +973,7 @@
           },
           {
             "id": "c",
-            "text": "Indexbereinigung nennen, Zugriffstest begrenzen und Protokollprüfung zusagen.",
+            "text": "Index bereinigen, Zugriffstest begrenzen, Protokolle weiter prüfen.",
             "feedback": "Das verbindet Handlung mit sauberer Evidenz."
           }
         ]
@@ -1096,7 +1096,7 @@
           },
           {
             "id": "c",
-            "text": "Der Knopf war sichtbar; ein aktueller Testexport wurde serverseitig verweigert.",
+            "text": "Knopf sichtbar, Export blockiert.",
             "feedback": "Sichtbarkeit und Ausführung sind zu trennen."
           }
         ]
@@ -1151,7 +1151,7 @@
           },
           {
             "id": "c",
-            "text": "Er will den sichtbaren Fehler anerkennen, ohne einen unbewiesenen Abfluss zu behaupten.",
+            "text": "Fehler anerkennen, Abfluss offenlassen.",
             "feedback": "Beide Übertreibungen würden die Kundenantwort verzerren."
           }
         ]
@@ -1169,17 +1169,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Sofort bestätigen, dass Daten abgeflossen sind.",
+            "text": "Einen Datenabfluss trotz fehlender Protokollprüfung sofort als bestätigt melden.",
             "feedback": "Dafür gibt es keinen Nachweis."
           },
           {
             "id": "b",
-            "text": "Sämtliche Prüfung als unnötig bezeichnen.",
+            "text": "Weitere Protokollprüfung trotz sichtbarem Fehlersignal als überflüssig bezeichnen.",
             "feedback": "Vergangene Ereignisse sind noch offen."
           },
           {
             "id": "c",
-            "text": "UI-Fehler, serverseitigen Test und offene Protokollprüfung getrennt nennen.",
+            "text": "UI-Fehler, Test und offene Protokollprüfung trennen.",
             "feedback": "Das informiert präzise und kündigt die nächste Klärung an."
           }
         ]
@@ -1353,7 +1353,7 @@
           },
           {
             "id": "c",
-            "text": "Eine überprüfbare Erklärung und eine konkrete Frage an den Partner.",
+            "text": "Erklärung und Partnerregel prüfen.",
             "feedback": "Sie muss den gemeinsamen Abgleich moderieren."
           }
         ]
@@ -1373,7 +1373,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Sequenzen abgleichen und die Partnerregel für verspätete Ereignisse bestätigen.",
+            "text": "Sequenzen und Partnerregel für Spätereignisse abgleichen.",
             "feedback": "Damit wird Ursache und Korrektur gemeinsam überprüfbar."
           },
           {
@@ -1500,7 +1500,7 @@
           },
           {
             "id": "b",
-            "text": "Die Datei ist abrufbar, aber ihre Formularfelder sind nicht zugänglich.",
+            "text": "PDF abrufbar, Formular unzugänglich.",
             "feedback": "Ein Downloadtest prüft keine Screenreader-Nutzung."
           },
           {
@@ -1523,7 +1523,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Er ermöglicht der Nutzerin keine selbstständige fristgerechte Abgabe.",
+            "text": "Abgabe bis Frist nicht selbstständig.",
             "feedback": "Die Zwischenlösung muss zur konkreten Nutzungssituation passen."
           },
           {
@@ -1551,7 +1551,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine Anerkennung der Barriere und einen nutzbaren Weg bis zur Frist.",
+            "text": "Barriere anerkennen und bis zur Frist einen nutzbaren Abgabeweg schaffen.",
             "feedback": "Er braucht eine sofortige Serviceentscheidung."
           },
           {
@@ -1579,12 +1579,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Telefonische Aufnahme und zugängliche Textprüfung anbieten, während die PDF korrigiert wird.",
+            "text": "Telefonische Aufnahme und Textprüfung bis zur PDF-Korrektur anbieten.",
             "feedback": "Das sichert den Termin und wahrt Kontrolle der Nutzerin."
           },
           {
             "id": "b",
-            "text": "Die Einreichung ohne Rücksprache für sie ausfüllen.",
+            "text": "Die Einreichung ohne ihre Zustimmung telefonisch für sie ausfüllen.",
             "feedback": "Sie muss ihre Angaben prüfen können."
           },
           {
@@ -1705,7 +1705,7 @@
           },
           {
             "id": "b",
-            "text": "Sie beschreibt die Leistung gegen ein unpassendes Vollzeit-Monatsziel.",
+            "text": "Rohwert gegen falsches Vollzeitziel.",
             "feedback": "Sie ist ein Rohwert, keine faire Gesamtwertung."
           },
           {
@@ -1760,12 +1760,12 @@
           },
           {
             "id": "b",
-            "text": "Die Dashboardzahl als endgültig verteidigen.",
+            "text": "Die rohe Dashboardzahl trotz falscher Zielbasis als endgültige Bewertung verteidigen.",
             "feedback": "Sie nutzt die falsche Basis."
           },
           {
             "id": "c",
-            "text": "Den Rohwert erklären, die Korrektur zusagen und das Ergebnis offenlassen.",
+            "text": "Rohwert erklären, Korrektur zusagen, Ergebnis offenlassen.",
             "feedback": "So wird das Verfahren transparent."
           }
         ]
@@ -1793,7 +1793,7 @@
           },
           {
             "id": "c",
-            "text": "Quote nicht isoliert übernehmen; Zielbasis und Qualität vor Freitag gemeinsam prüfen.",
+            "text": "Quote nicht isoliert verwenden; Zielbasis und Qualität vor Freitag gemeinsam prüfen.",
             "feedback": "Das schafft eine begründete Entscheidung."
           }
         ]
@@ -1957,7 +1957,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Den Irrtum rechtzeitig erklären, bevor Mitarbeitende private Pläne ändern.",
+            "text": "Irrtum erklären, bevor Mitarbeitende private Pläne ändern.",
             "feedback": "Es geht um Verlässlichkeit und Wahlfreiheit."
           },
           {
@@ -1967,7 +1967,7 @@
           },
           {
             "id": "c",
-            "text": "Die Interessenabfrage rückwirkend löschen.",
+            "text": "Die Interessenabfrage rückwirkend aus allen Unterlagen vollständig löschen.",
             "feedback": "Der Verlauf kann transparent aufgeklärt werden."
           }
         ]
@@ -1991,12 +1991,12 @@
           },
           {
             "id": "b",
-            "text": "Freiwilligkeit bestätigen, fehlerhafte Einträge korrigieren und fünf Personen neu fragen.",
+            "text": "Freiwilligkeit klären, Einträge berichtigen, fünf Personen neu fragen.",
             "feedback": "Sie stellt die ursprüngliche Wahl wieder her."
           },
           {
             "id": "c",
-            "text": "Auch die vier bestätigten Plätze streichen.",
+            "text": "Auch die vier bereits bestätigten Plätze aus Vorsicht wieder streichen.",
             "feedback": "Ihre Anmeldungen bleiben gültig."
           }
         ]
@@ -2119,7 +2119,7 @@
           },
           {
             "id": "c",
-            "text": "Die geplanten Aufgaben sind beschrieben; eine neue Entgeltgruppe ist nicht beschlossen.",
+            "text": "Aufgaben beschrieben, Entgeltgruppe offen.",
             "feedback": "Aufgaben und Vergütung haben getrennte Verfahren."
           }
         ]
@@ -2146,7 +2146,7 @@
           },
           {
             "id": "c",
-            "text": "Der Titel wurde öffentlich ohne Hinweis auf die offene formale Bewertung verwendet.",
+            "text": "Öffentlicher Titel vor formaler Bewertung.",
             "feedback": "So konnte Lena ihn als abgeschlossene Beförderung lesen."
           }
         ]
@@ -2192,7 +2192,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Rückwirkende Höhergruppierung versprechen.",
+            "text": "Eine rückwirkende Höhergruppierung ohne abgeschlossene Aufgabenbewertung fest zusagen.",
             "feedback": "Die Bewertung steht aus."
           },
           {
@@ -2202,7 +2202,7 @@
           },
           {
             "id": "c",
-            "text": "Status erklären, Aufgabenbewertung veranlassen und einen Gesprächstermin nennen.",
+            "text": "Status erklären, Aufgabenbewertung und Gesprächstermin veranlassen.",
             "feedback": "Das ersetzt eine vage Zusage durch einen überprüfbaren Prozess."
           }
         ]
@@ -2352,7 +2352,7 @@
           },
           {
             "id": "c",
-            "text": "Einen thematischen Bericht ohne unveränderte Einzeltexte.",
+            "text": "Themenbericht ohne Einzeltexte.",
             "feedback": "So bleibt die Rückmeldung nutzbar und geschützt."
           }
         ]
@@ -2369,7 +2369,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Übergaben verbessern und dem Team eine Antwort geben.",
+            "text": "Übergaben verbessern und dem Team antworten.",
             "feedback": "Das Ziel lässt sich ohne Identifizierung verfolgen."
           },
           {
@@ -2379,7 +2379,7 @@
           },
           {
             "id": "c",
-            "text": "Die Schichtübergaben unverändert lassen.",
+            "text": "Die Schichtübergaben trotz der Rückmeldungen unverändert weiterlaufen lassen.",
             "feedback": "Er bittet um Rückmeldung."
           }
         ]
@@ -2398,7 +2398,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Aggregierte Themen liefern und eine offene Teamrunde ohne Zuschreibung vorschlagen.",
+            "text": "Themen aggregieren und offene Teamrunde ohne Zuschreibung anbieten.",
             "feedback": "Sie behandelt Kritik, ohne Verfasser zu suchen."
           },
           {
@@ -2580,7 +2580,7 @@
           },
           {
             "id": "b",
-            "text": "Eine informierte Planung ohne falsche Kostensicherheit.",
+            "text": "Planung ohne falsche Kostenzusage.",
             "feedback": "Seine Frage betrifft den Umfang der Zusage."
           },
           {
@@ -2614,7 +2614,7 @@
           },
           {
             "id": "c",
-            "text": "Genehmigte Untersuchung bestätigen und den möglichen Folgeantrag erklären.",
+            "text": "Untersuchung bestätigen, Folgeantrag erklären.",
             "feedback": "Sie beschreibt den nächsten prüfbaren Schritt."
           }
         ]
@@ -2785,7 +2785,7 @@
           },
           {
             "id": "b",
-            "text": "Eine eindeutige Anleitung zum Bestätigen, bevor sie anreist.",
+            "text": "Bestätigung erklären, bevor sie anreist.",
             "feedback": "Der Nachrichtentext kann missverstanden werden."
           },
           {
@@ -2813,7 +2813,7 @@
           },
           {
             "id": "b",
-            "text": "Kontakt aufnehmen, beim Bestätigen helfen und danach den Kalendereintrag prüfen.",
+            "text": "Kontaktieren, bei Bestätigung helfen, dann Kalendereintrag prüfen.",
             "feedback": "So erhält sie vor der Anreise Gewissheit."
           },
           {
@@ -2984,17 +2984,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Ihm einen Regelverstoß unterstellen.",
+            "text": "Ihm ohne Prüfung einen Verstoß gegen Datenschutzregeln vorwerfen.",
             "feedback": "Er fragt lediglich an."
           },
           {
             "id": "b",
-            "text": "Seine Unterstützung anerkennen und Frau Krügers Entscheidung einholen.",
+            "text": "Hilfe anerkennen und Patientin um Freigabe bitten.",
             "feedback": "Das wahrt Hilfe und Selbstbestimmung."
           },
           {
             "id": "c",
-            "text": "Seine Nachfrage ohne Erklärung ignorieren.",
+            "text": "Seine Nachfrage ohne jede Erklärung einfach ignorieren.",
             "feedback": "Eine klare organisatorische Antwort ist möglich."
           }
         ]
@@ -3013,17 +3013,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Brief unverschlüsselt an den Sohn mailen.",
+            "text": "Den Arztbrief direkt und unverschlüsselt an den Sohn mailen.",
             "feedback": "Die Freigabe ist nicht dokumentiert."
           },
           {
             "id": "b",
-            "text": "Die Abholung absagen.",
+            "text": "Die Abholung des Briefes durch Frau Krüger ohne Begründung absagen.",
             "feedback": "Sie ist unabhängig vom Brief möglich."
           },
           {
             "id": "c",
-            "text": "Brief zuerst Frau Krüger geben und sie nach einer möglichen Weitergabe fragen.",
+            "text": "Brief zuerst Patientin geben; über Weitergabe entscheidet sie.",
             "feedback": "Sie bestimmt Empfänger und Weg."
           }
         ]
@@ -3194,12 +3194,12 @@
           },
           {
             "id": "b",
-            "text": "Er möchte, dass beim Termin nichts Relevantes fehlt, ohne Daten falsch zuzuordnen.",
+            "text": "Relevanz für Termin sichern, ohne Akten falsch zuzuordnen.",
             "feedback": "Seine Sorge ist berechtigt, die Methode muss sicher sein."
           },
           {
             "id": "c",
-            "text": "Er kennt die Identität bereits sicher.",
+            "text": "Er kennt die Patientenidentität bereits sicher und kann beide Akten zusammenführen.",
             "feedback": "Er bittet um Prüfung."
           }
         ]
@@ -3223,7 +3223,7 @@
           },
           {
             "id": "b",
-            "text": "Identität anhand unabhängiger Merkmale prüfen und erst danach die Aktenbeziehung klären.",
+            "text": "Identität unabhängig prüfen, erst danach Aktenbeziehung klären.",
             "feedback": "Das schützt beide Personen und den Termin."
           },
           {
@@ -3392,7 +3392,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Erwartung einer vollständigen Lieferung morgen.",
+            "text": "Vollständige Lieferung für morgen erwartet.",
             "feedback": "Ihr Hinweis darf nicht stillschweigend zur Zusage werden."
           },
           {
@@ -3420,17 +3420,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Zehn für morgen fest bestätigen.",
+            "text": "Die Lieferung aller zehn Geräte für morgen ohne Prüfung fest bestätigen.",
             "feedback": "Es fehlen drei versandbereite Geräte."
           },
           {
             "id": "b",
-            "text": "Die Vorführgeräte ohne Prüfung verschicken.",
+            "text": "Die beiden Vorführgeräte ohne Freigabe als reguläre Lieferung verschicken.",
             "feedback": "Das wäre weder verfügbar noch gleichwertig."
           },
           {
             "id": "c",
-            "text": "Sieben morgen anbieten und den Resttermin erst nach Lieferbestätigung abstimmen.",
+            "text": "Sieben morgen anbieten; Rest erst nach Lieferbestätigung zusagen.",
             "feedback": "Das wahrt die Fristfrage offen und gibt eine echte Wahl."
           }
         ]
@@ -3594,7 +3594,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Er muss die Gruppe rechtzeitig über einen verlässlichen Raum informieren.",
+            "text": "Sicheren Raum rechtzeitig nennen.",
             "feedback": "Die Alternative ist schon verfügbar."
           },
           {
@@ -3623,17 +3623,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Raum B vorsorglich öffnen.",
+            "text": "Raum B trotz offener Nachprüfung vorsorglich für die Gruppe öffnen.",
             "feedback": "Der Test ist fehlgeschlagen."
           },
           {
             "id": "b",
-            "text": "Sperre bestätigen und Raum D für morgen empfehlen; Nachprüfung separat melden.",
+            "text": "Sperre bestätigen, Raum D empfehlen, Nachprüfung separat melden.",
             "feedback": "So bleibt die Schulung planbar und die Freigabe korrekt."
           },
           {
             "id": "c",
-            "text": "Bis morgen früh gar nichts mitteilen.",
+            "text": "Bis morgen früh gar keine Auskunft über Raum oder Alternative geben.",
             "feedback": "Die Teilnehmenden brauchen heute Bescheid."
           }
         ]
@@ -3803,7 +3803,7 @@
           },
           {
             "id": "b",
-            "text": "Eine realistische Abwägung zwischen Nachdruck, Kosten und Nutzung der vorhandenen Broschüren.",
+            "text": "Nachdruck und Bestandsnutzung abwägen.",
             "feedback": "Die Frist begrenzt die Optionen."
           },
           {
@@ -3827,12 +3827,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Kostenlosen Neudruck als Anspruch zusagen.",
+            "text": "Einen kostenlosen Neudruck als bereits zugesagten Anspruch gegenüber der Druckerei einfordern.",
             "feedback": "Die Druckerei folgte der Probe."
           },
           {
             "id": "b",
-            "text": "Freigabestand erklären, Eilangebot einholen und die digitale Ergänzung prüfen.",
+            "text": "Freigabestand erklären, Eilangebot und digitale Ergänzung prüfen.",
             "feedback": "Sie macht die Entscheidung vor Montag möglich."
           },
           {
@@ -4013,7 +4013,7 @@
           },
           {
             "id": "c",
-            "text": "Die missverständliche Formulierung anerkennen und den Leihstatus erklären.",
+            "text": "Missverständnis und Leihstatus klären.",
             "feedback": "Ein Vorwurf gegen den Kunden wäre unangebracht."
           }
         ]
@@ -4032,17 +4032,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Das Leihgerät dauerhaft überlassen.",
+            "text": "Das Leihgerät dem Kunden ausdrücklich und dauerhaft als Eigentum überlassen.",
             "feedback": "Ein Austausch ist nicht beschlossen."
           },
           {
             "id": "b",
-            "text": "Nutzung während der Reparatur und spätere Abstimmung der Rückgabe; endgültige Lösung offenlassen.",
+            "text": "Nutzung bis Reparatur bestätigen, Rückgabe abstimmen, Endlösung offenlassen.",
             "feedback": "Das gibt Sicherheit ohne erfundenen Termin."
           },
           {
             "id": "c",
-            "text": "Einen festen Reparaturtag nennen.",
+            "text": "Einen festen Reparaturtag nennen, obwohl die Werkstatt noch keinen bestätigt hat.",
             "feedback": "Ein solcher Termin fehlt."
           }
         ]

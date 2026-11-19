@@ -141,7 +141,7 @@
           },
           {
             "id": "b",
-            "text": "Unterlagen an die Anfragenden und den Newsletter nur an die 28 ausgewählten Kontakte senden.",
+            "text": "Unterlagen an Anfragende; Newsletter nur an die 28 freigegebenen Kontakte senden.",
             "feedback": "Die beiden erlaubten Kommunikationswege lassen sich getrennt vorbereiten."
           },
           {
@@ -306,7 +306,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die geplante Regel und den tatsächlichen Umgang mit dem bereits gewährten Rabatt.",
+            "text": "Regel und bereits gewährten Rabatt klären.",
             "feedback": "Die Frage der Kundin betrifft ihre zweite Bestellung und die Bedeutung von „einmalig“."
           },
           {
@@ -344,7 +344,7 @@
           },
           {
             "id": "c",
-            "text": "Die Konfiguration für künftige Bestellungen prüfen und die Antwort zu bereits rabattierten Bestellungen abstimmen.",
+            "text": "Künftige Konfiguration prüfen, frühere Rabatte abstimmen.",
             "feedback": "Die Aktion läuft noch, und die Abweichung betrifft weitere mögliche Bestellungen."
           }
         ]
@@ -449,7 +449,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Bayern für die erste Kampagnenwoche.",
+            "text": "Bayern in Woche eins.",
             "feedback": "Das Protokoll nennt Bayern und eine Testwoche."
           },
           {
@@ -503,7 +503,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine Reichweite außerhalb der Freigabe und mögliche zusätzliche Kosten.",
+            "text": "Überregionale Reichweite und mögliche Mehrkosten.",
             "feedback": "Er fragt nach dem Zielgebiet und will Kosten vor einer Aktivierung vermeiden."
           },
           {
@@ -537,7 +537,7 @@
           },
           {
             "id": "b",
-            "text": "Die alte Voreinstellung erklären, Bayern einstellen und vor Aktivierung eine Vorschau schicken.",
+            "text": "Alte Einstellung erklären, Bayern wählen, Vorschau schicken.",
             "feedback": "Der Entwurf kann vor dem Start noch passend zur Freigabe eingestellt werden."
           },
           {
@@ -883,7 +883,7 @@
           },
           {
             "id": "c",
-            "text": "Beim Import mit falsch eingestelltem Dezimalzeichen.",
+            "text": "Beim Import mit falschem Dezimalzeichen.",
             "feedback": "Das Programm interpretiert das Komma als Tausendertrennzeichen und entfernt es aus der Zahl."
           }
         ]
@@ -905,12 +905,12 @@
           },
           {
             "id": "b",
-            "text": "Eine verlässliche Importmethode und einen Abgleich für seinen Bericht.",
+            "text": "Importweg und Abgleich für den Bericht.",
             "feedback": "Er muss den Bericht für die Sitzung korrekt öffnen können."
           },
           {
             "id": "c",
-            "text": "Eine neue Monatsbuchung.",
+            "text": "Eine neue Monatsbuchung im Abrechnungssystem anlegen.",
             "feedback": "Der gespeicherte Vorgang selbst muss nicht neu gebucht werden."
           }
         ]
@@ -934,7 +934,7 @@
           },
           {
             "id": "b",
-            "text": "Den Import mit Semikolon als Spaltentrenner testen und den Betrag gegen die Anwendung prüfen.",
+            "text": "Semikolon-Import testen und Betrag mit Anwendung abgleichen.",
             "feedback": "Damit lässt sich die konkrete Anzeige kontrolliert korrigieren."
           },
           {
@@ -1071,7 +1071,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die automatische Sperre läuft unabhängig von der Passwortänderung bis 14 Uhr.",
+            "text": "Sperre unabhängig vom Passwortwechsel bis 14 Uhr.",
             "feedback": "Die Sperrregel trennt beide Vorgänge voneinander."
           },
           {
@@ -1081,7 +1081,7 @@
           },
           {
             "id": "c",
-            "text": "Die Besprechung wurde verschoben.",
+            "text": "Die Besprechung wegen der Kontosperre wurde verschoben.",
             "feedback": "Zur Besprechungszeit gibt es keine Änderung im Protokoll."
           }
         ]
@@ -1137,7 +1137,7 @@
           },
           {
             "id": "c",
-            "text": "Den Sperrzeitpunkt erklären und nach 14 Uhr einen gemeinsamen Test anbieten.",
+            "text": "Sperre erklären, nach 14 Uhr gemeinsam testen.",
             "feedback": "Ein Test nach Ende der Sperre prüft den Zugang ohne falsche Diagnose."
           }
         ]
@@ -1303,7 +1303,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine ehrliche Statuskorrektur und einen konkreten Weg, Tims Zugang zu prüfen.",
+            "text": "Korrekte Statusauskunft und einen Prüfweg für Tims Zugang.",
             "feedback": "Damit kann Jan seine frühere Zusage berichtigen und Tim weiterhelfen."
           },
           {
@@ -1341,7 +1341,7 @@
           },
           {
             "id": "c",
-            "text": "Den offenen Schritt erklären, Tim bei der Annahme helfen und anschließend den Zugriff testen.",
+            "text": "Annahme erklären, Tim unterstützen und danach Zugriff testen.",
             "feedback": "So wird erst nach bestätigter Annahme von einem funktionierenden Zugang gesprochen."
           }
         ]
@@ -1514,7 +1514,7 @@
           },
           {
             "id": "c",
-            "text": "Eine verständliche Erklärung der gemeinsamen Zählung und mögliche nächste Schritte.",
+            "text": "Gemeinsame Zählung und Folgeoptionen.",
             "feedback": "Ihre Mail fragt nach dem Grund der Ablehnung und einer Erklärung für Atlas."
           }
         ]
@@ -1536,7 +1536,7 @@
           },
           {
             "id": "b",
-            "text": "Dass Atlas ab sofort mehr als 1.000 Anfragen pro Tag nutzen darf.",
+            "text": "Dass Atlas das Tageslimit überschreiten darf.",
             "feedback": "Für eine höhere Grenze gibt es noch keine Vereinbarung."
           },
           {
@@ -1702,7 +1702,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ob das Organigramm ganz abgeschafft wird.",
+            "text": "Ob das Organigramm nach dem Missverständnis ganz abgeschafft wird.",
             "feedback": "Eine Abschaffung des Organigramms ist nicht gefragt."
           },
           {
@@ -1712,7 +1712,7 @@
           },
           {
             "id": "c",
-            "text": "Ob es eine dauerhafte Entscheidung gibt und wie das Team informiert werden soll.",
+            "text": "Klärung einer Dauerentscheidung und Information fürs Team.",
             "feedback": "Seine Mail verbindet die falsche Annahme mit einer möglichen Klarstellung."
           }
         ]
@@ -1730,7 +1730,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Vertretung samt Ende benennen und den Eintrag nach Absprache präzisieren.",
+            "text": "Befristete Vertretung erklären und Organigramm danach korrigieren.",
             "feedback": "So werden ihre tatsächlichen Aufgaben anerkannt, ohne eine Stellenentscheidung vorzutäuschen."
           },
           {
@@ -1939,7 +1939,7 @@
           },
           {
             "id": "c",
-            "text": "Die Trennung erklären, die Programminformation schicken und die Einladung präzisieren.",
+            "text": "Mentoring abgrenzen, Programminfo senden, Einladung präzisieren.",
             "feedback": "So kann Selin informiert entscheiden, was sie bespricht."
           }
         ]
@@ -2044,17 +2044,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine Verschiebung des Interviews.",
+            "text": "Eine Verschiebung des Interviews auf einen anderen Termin.",
             "feedback": "Eine Verschiebung wurde nicht angefragt."
           },
           {
             "id": "b",
-            "text": "Deutsch als Gesprächssprache.",
+            "text": "Deutsch als festgelegte Sprache des Gesprächs.",
             "feedback": "Die Sprachfrage blieb in seiner Antwort offen."
           },
           {
             "id": "c",
-            "text": "Den Termin am Donnerstag um 10 Uhr.",
+            "text": "Interview am Donnerstag um 10 Uhr.",
             "feedback": "Seine Antwort nennt nur den Termin."
           }
         ]
@@ -2099,7 +2099,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine klare Sprachabsprache und eine Prüfung der Möglichkeiten des Teams.",
+            "text": "Sprachabsprache und Prüfung im Team.",
             "feedback": "Morgen muss das Gespräch in einer gemeinsamen Sprache stattfinden."
           },
           {
@@ -2137,7 +2137,7 @@
           },
           {
             "id": "c",
-            "text": "Amir um Bestätigung bitten und die englische Gesprächsführung intern prüfen.",
+            "text": "Sprachwunsch bestätigen lassen und Englisch intern prüfen.",
             "feedback": "Die offene Frage lässt sich vor dem Termin gemeinsam klären."
           }
         ]
@@ -2254,7 +2254,7 @@
           },
           {
             "id": "c",
-            "text": "Für sieben Personen mit Budgetfreigabe.",
+            "text": "Sieben Personen mit Budgetfreigabe.",
             "feedback": "Die Zielgruppe ist nach Aufgabe, nicht nach Verteilergröße bestimmt."
           }
         ]
@@ -2271,7 +2271,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Einladung ging an die ganze Teamliste und nannte die Zielrollen nicht.",
+            "text": "Einladung an alle statt nur Zielrollen.",
             "feedback": "Der falsche Verteiler ließ den Pflicht-Hinweis allgemein wirken."
           },
           {
@@ -2281,7 +2281,7 @@
           },
           {
             "id": "c",
-            "text": "Die sieben Personen erhielten keine Nachricht.",
+            "text": "Die sieben eigentlich betroffenen Personen erhielten überhaupt keine Nachricht.",
             "feedback": "Alle 32 Adressen, also auch die sieben, erhielten die Einladung."
           }
         ]
@@ -2308,7 +2308,7 @@
           },
           {
             "id": "c",
-            "text": "Kolleginnen und Kollegen verschieben bereits Kundentermine.",
+            "text": "Teammitglieder verschieben bereits Kundentermine.",
             "feedback": "Die falsche Annahme beeinflusst schon die Arbeitsplanung."
           }
         ]
@@ -2331,7 +2331,7 @@
           },
           {
             "id": "b",
-            "text": "Den ganzen Verteiler korrigieren und die sieben Betroffenen gezielt informieren.",
+            "text": "Verteiler berichtigen und sieben Betroffene einzeln informieren.",
             "feedback": "Die Korrektur muss dieselben Empfänger erreichen wie die missverständliche Einladung."
           },
           {
@@ -2497,7 +2497,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine eindeutige Datumsangabe und eine hilfreiche Antwort für die Patientin.",
+            "text": "Datum klären und Patientin informieren.",
             "feedback": "Ihre Mail fragt nach Datum und verständlicher Mitteilung."
           },
           {
@@ -2525,7 +2525,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Das Datum mit ausgeschriebenem Monat und Uhrzeit bestätigen.",
+            "text": "Datum ausgeschrieben und Uhrzeit bestätigen.",
             "feedback": "Eine ausgeschriebene Datumsangabe beseitigt die Reihenfolge-Unklarheit."
           },
           {
@@ -2673,7 +2673,7 @@
           },
           {
             "id": "b",
-            "text": "Der Empfang hat seine Terminbestätigung noch nicht gescannt.",
+            "text": "Scan am Empfang fehlt.",
             "feedback": "Ohne den Scan wird die tatsächliche Ankunft nicht eingetragen."
           },
           {
@@ -2695,12 +2695,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine neue medizinische Entscheidung.",
+            "text": "Eine neue medizinische Entscheidung zum Termin des Patienten.",
             "feedback": "Der Vorgang betrifft die Aufnahme, nicht die Behandlung."
           },
           {
             "id": "b",
-            "text": "Einen klaren Weg, den wartenden Patienten anzumelden, und eine Erklärung für ihn.",
+            "text": "Anmeldeweg und Erklärung für den wartenden Patienten.",
             "feedback": "Sie kann die Bestätigung prüfen und die Ankunft erfassen."
           },
           {
@@ -2722,7 +2722,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Online-Bestätigung um den Hinweis auf den Empfangsscan ergänzen.",
+            "text": "Empfangsscan in der Online-Bestätigung erwähnen.",
             "feedback": "Der fehlende Hinweis hat die falsche Erwartung begünstigt."
           },
           {
@@ -2903,7 +2903,7 @@
           },
           {
             "id": "c",
-            "text": "Um den Unterschied zwischen Wunsch und Zusage verständlich zu erklären.",
+            "text": "Wunsch von Zusage abgrenzen.",
             "feedback": "Ihre Mail fragt nach dem bestätigten Status und der Erwartung der Patientin."
           }
         ]
@@ -2921,7 +2921,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dass die Verfügbarkeit noch geprüft wird und eine gesonderte Bestätigung folgt.",
+            "text": "Prüfung und spätere Bestätigung ankündigen.",
             "feedback": "Nur so wird kein Ergebnis der noch offenen Belegungsprüfung vorweggenommen."
           },
           {
@@ -3121,12 +3121,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Zwei klar bezeichnete Termine mit jeweiliger Art, Uhrzeit und Ort beziehungsweise Telefon.",
+            "text": "Beide Termine getrennt mit Datum, Uhrzeit und Format (telefonisch oder vor Ort) bestätigen.",
             "feedback": "Die getrennte Bestätigung klärt, was Dienstag und Freitag jeweils bedeuten."
           },
           {
             "id": "b",
-            "text": "Nur die unklare Erinnerung noch einmal.",
+            "text": "Die bisherige unklare Erinnerung ohne Erklärung nochmals verschicken.",
             "feedback": "Der bisherige Wortlaut „Ihr Termin“ hat die Verwechslung gerade ausgelöst."
           },
           {
@@ -3274,7 +3274,7 @@
           },
           {
             "id": "c",
-            "text": "Die Anzeige verschwieg, dass Paletten gemeint waren.",
+            "text": "Palettenbegriff fehlte in der Anzeige.",
             "feedback": "Die fehlende Einheit führte zur falschen Umrechnung."
           }
         ]
@@ -3291,7 +3291,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ob die Menge vorhanden ist und was noch nicht bestätigt wurde.",
+            "text": "Menge bestätigen und offene Punkte benennen.",
             "feedback": "Die Menge ist belegt, ein Versandtermin aber noch offen."
           },
           {
@@ -3318,12 +3318,12 @@
         "options": [
           {
             "id": "a",
-            "text": "120 Kartons sind vorhanden; Rafael reserviert sie, ohne einen Versandtermin zu versprechen.",
+            "text": "120 Kartons verfügbar; Reservierung ohne Versandzusage.",
             "feedback": "Die gezählte Menge reicht, die Kommissionierung hat noch nicht begonnen."
           },
           {
             "id": "b",
-            "text": "Der Auftrag ist bereits verschickt.",
+            "text": "Der Auftrag über 120 Kartons wurde bereits verschickt.",
             "feedback": "Weder Kommissionierung noch Versand sind bestätigt."
           },
           {
@@ -3467,7 +3467,7 @@
           },
           {
             "id": "b",
-            "text": "Er hat keinen verbindlichen Bestellauftrag erhalten.",
+            "text": "Kein verbindlicher Auftrag eingegangen.",
             "feedback": "Das Muster liegt vor, aber der Auftrag wurde nicht übermittelt."
           },
           {
@@ -3500,7 +3500,7 @@
           },
           {
             "id": "c",
-            "text": "Den Unterschied zwischen Muster und Bestellung sowie einen belastbaren nächsten Schritt.",
+            "text": "Klarheit zu Muster, Bestellung und nächstem Schritt.",
             "feedback": "Die Produktion muss wissen, was offen ist, bevor sie mit Kartons plant."
           }
         ]
@@ -3523,7 +3523,7 @@
           },
           {
             "id": "b",
-            "text": "Dass die 2.000 Kartons nächste Woche sicher geliefert werden.",
+            "text": "Dass 2.000 Kartons nächste Woche eintreffen.",
             "feedback": "Ohne Auftrag und bestätigten Termin ist die Lieferwoche nicht gesichert."
           },
           {
@@ -3662,7 +3662,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Der Kunde hat den Raum abgesagt.",
+            "text": "Der Kunde hat Raum 4 selbst für heute abgesagt.",
             "feedback": "Eine Absage durch den Kunden ist nicht dokumentiert."
           },
           {
@@ -3672,7 +3672,7 @@
           },
           {
             "id": "c",
-            "text": "Der Boden trocknet bis 11 Uhr und die Kontrolle steht aus.",
+            "text": "Boden trocknet, Freigabekontrolle steht noch aus.",
             "feedback": "Die Absperrung bleibt bis zur Kontrolle bestehen."
           }
         ]
@@ -3689,7 +3689,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine sichere Aussage zu Raum 4 und eine geprüfte Alternative für 9 Uhr.",
+            "text": "Raumstatus und geprüfte Alternative für 9 Uhr.",
             "feedback": "Sie hat ein Kundengespräch vor Ende der Trocknungszeit geplant."
           },
           {
@@ -3722,7 +3722,7 @@
           },
           {
             "id": "b",
-            "text": "Raum 4 nicht freigeben und sofort einen anderen Raum prüfen.",
+            "text": "Raum sperren, Ersatz prüfen.",
             "feedback": "Die Kontrolle fehlt und eine Alternative muss erst bestätigt werden."
           },
           {
@@ -3859,7 +3859,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Kundenbestätigung erklärte „Ankunft“ nicht.",
+            "text": "„Ankunft“ blieb undefiniert.",
             "feedback": "Der Text zeigte nur die Uhrzeiten ohne den Zweck des Fensters."
           },
           {
@@ -3892,7 +3892,7 @@
           },
           {
             "id": "b",
-            "text": "Dass 12 Uhr kein gesicherter Abschluss ist und sein Team anders planen sollte.",
+            "text": "12 Uhr ist kein gesicherter Abschluss; das Team muss anders planen.",
             "feedback": "Seine angekündigte Wiedereröffnung beruht auf einer falschen Deutung des Fensters."
           },
           {
@@ -3915,7 +3915,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Nach Arbeitsbeginn eine aktualisierte Einschätzung einholen.",
+            "text": "Fortschritt nach Arbeitsbeginn erfragen.",
             "feedback": "Erst der tatsächliche Beginn ermöglicht eine sinnvollere Zeitangabe."
           },
           {

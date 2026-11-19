@@ -269,12 +269,12 @@
           },
           {
             "id": "b",
-            "text": "Mobile export is ready for Brookline.",
+            "text": "The mobile CSV export has also passed QA for Brookline.",
             "feedback": "Mobile export is outside this ticket and still in the backlog."
           },
           {
             "id": "c",
-            "text": "Every export flow is available.",
+            "text": "Both desktop and mobile export flows are available to Brookline.",
             "feedback": "The ticket names only the desktop Reports page."
           }
         ]
@@ -467,12 +467,12 @@
           },
           {
             "id": "b",
-            "text": "Sara's performance had been questioned.",
+            "text": "Sara's performance had recently been questioned by her team lead.",
             "feedback": "The documents say nothing about performance."
           },
           {
             "id": "c",
-            "text": "A company-wide ban on remote work.",
+            "text": "A company-wide ban on remote work for all Fridays.",
             "feedback": "The policy remains available."
           }
         ]
@@ -488,7 +488,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Priya had already declined the request.",
+            "text": "Priya had already rejected Sara's request under the current policy.",
             "feedback": "The record does not say Priya declined anything."
           },
           {
@@ -498,7 +498,7 @@
           },
           {
             "id": "c",
-            "text": "The policy had been suspended.",
+            "text": "The remote-work policy had been suspended for Sara's team.",
             "feedback": "The policy has not been suspended."
           }
         ]
@@ -683,7 +683,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Sales changed the photo after publication.",
+            "text": "Sales changed the product image after the post was published.",
             "feedback": "No such change is documented."
           },
           {
@@ -710,7 +710,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A new product design.",
+            "text": "A redesign of the product to match the older campaign photo.",
             "feedback": "The problem is the campaign image, not the product."
           },
           {
@@ -720,7 +720,7 @@
           },
           {
             "id": "c",
-            "text": "A clear explanation and a plan for the live post.",
+            "text": "An explanation and plan for the live post.",
             "feedback": "Her email asks both why it happened and what to do."
           }
         ]
@@ -739,12 +739,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Say Ruth approved every part of the post.",
+            "text": "Say Ruth approved both the text and the product image before the post went live.",
             "feedback": "Her approval covered copy only."
           },
           {
             "id": "b",
-            "text": "Delete all campaign materials without discussion.",
+            "text": "Delete all campaign materials before checking which assets were affected.",
             "feedback": "The evidence supports correcting this post, not cancelling the campaign."
           },
           {
@@ -1084,12 +1084,12 @@
           },
           {
             "id": "b",
-            "text": "The same quote was used in a public paid campaign.",
+            "text": "The interview quote appeared in a paid advert.",
             "feedback": "The agreed context was internal research."
           },
           {
             "id": "c",
-            "text": "The quote was paraphrased.",
+            "text": "The original quote had been paraphrased for the advert.",
             "feedback": "The issue is use, not paraphrasing."
           }
         ]
@@ -1106,17 +1106,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A promise about impression numbers.",
+            "text": "A confirmed count of impressions from the paid campaign.",
             "feedback": "Those figures have not been checked."
           },
           {
             "id": "b",
-            "text": "The permission scope, advert status, and a safe update for the customer.",
+            "text": "The permission scope, advert status, and a safe customer update.",
             "feedback": "Her email asks about permission, whether it is running, and what to say."
           },
           {
             "id": "c",
-            "text": "A defence of the campaign’s wording.",
+            "text": "A detailed defence of the paid campaign's wording for the customer.",
             "feedback": "The customer is asking for removal, not a copy debate."
           }
         ]
@@ -1249,12 +1249,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Their passwords expired.",
+            "text": "Both users' passwords had expired before they tried the dashboard.",
             "feedback": "The log shows a permission change, not expiry."
           },
           {
             "id": "b",
-            "text": "The dashboard service failed for all accounts.",
+            "text": "The dashboard service failed for every account in the organisation.",
             "feedback": "Service checks passed and no wider reports are recorded."
           },
           {
@@ -1313,7 +1313,7 @@
           },
           {
             "id": "c",
-            "text": "A promise that Evan will restore access immediately.",
+            "text": "A promise that Evan can restore both users' access immediately, without checking permissions.",
             "feedback": "Intent of the permission change is unknown."
           }
         ]
@@ -1505,12 +1505,12 @@
           },
           {
             "id": "b",
-            "text": "A claim that Northgate’s browser is at fault.",
+            "text": "A detailed explanation that Northgate's browser caused the missing feature.",
             "feedback": "The record shows production still has the old screen."
           },
           {
             "id": "c",
-            "text": "An invented release time.",
+            "text": "A precise release time promised to Northgate before approval.",
             "feedback": "No production time has been agreed."
           }
         ]
@@ -1532,12 +1532,12 @@
           },
           {
             "id": "b",
-            "text": "That it is already live in production.",
+            "text": "That Northgate can already use the change in its production account.",
             "feedback": "That contradicts the release record."
           },
           {
             "id": "c",
-            "text": "That Northgate will see it tomorrow morning.",
+            "text": "That Northgate will see it in production tomorrow morning.",
             "feedback": "No production release time is agreed."
           }
         ]
@@ -1643,7 +1643,7 @@
         "options": [
           {
             "id": "a",
-            "text": "The dataset has never contained records.",
+            "text": "The underlying dataset has never contained any current-period records.",
             "feedback": "Yesterday’s count is documented."
           },
           {
@@ -1653,7 +1653,7 @@
           },
           {
             "id": "c",
-            "text": "All 842 records were deleted.",
+            "text": "All 842 current-period records were deleted from the underlying dataset.",
             "feedback": "The latest count contradicts that."
           }
         ]
@@ -1840,7 +1840,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A confirmed Thursday invitation.",
+            "text": "A confirmed Thursday invitation addressed to both Alina and the panel.",
             "feedback": "The new invitation went only to the panel."
           },
           {
@@ -1850,7 +1850,7 @@
           },
           {
             "id": "c",
-            "text": "No scheduling message at all.",
+            "text": "Alina received no scheduling message at all from the hiring team.",
             "feedback": "The old cancellation reached her."
           }
         ]
@@ -1877,7 +1877,7 @@
           },
           {
             "id": "c",
-            "text": "The interview is fully confirmed.",
+            "text": "The interview is fully confirmed with both panel and candidate.",
             "feedback": "Alina has not received the invitation."
           }
         ]
@@ -1894,17 +1894,17 @@
         "options": [
           {
             "id": "a",
-            "text": "That the hiring team has ended the process.",
+            "text": "That the hiring team ended the interview process after seeing her application.",
             "feedback": "No such decision is recorded."
           },
           {
             "id": "b",
-            "text": "That the move was intended, apologise for the missing invite, and ask if Thursday works.",
+            "text": "Explain the move, own the missed invite, and ask about Thursday.",
             "feedback": "This accurately describes the status without pretending she accepted."
           },
           {
             "id": "c",
-            "text": "That she missed her confirmed interview.",
+            "text": "That Alina missed a confirmed Thursday interview with the panel.",
             "feedback": "No Thursday invitation reached her."
           }
         ]
@@ -1922,12 +1922,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Send Alina the proposed slot and seek her confirmation before calling it booked.",
+            "text": "Send Thursday's proposed slot and ask Alina to confirm.",
             "feedback": "The candidate has not accepted Thursday."
           },
           {
             "id": "b",
-            "text": "Reinstate Wednesday without checking anyone.",
+            "text": "Reinstate Wednesday's interview without checking Alina's or the panel's availability.",
             "feedback": "The original event was cancelled; availability is unknown."
           },
           {
@@ -2065,7 +2065,7 @@
         "options": [
           {
             "id": "a",
-            "text": "The knowledge assessment.",
+            "text": "The separate knowledge assessment required for certification.",
             "feedback": "Rina has not started it."
           },
           {
@@ -2075,7 +2075,7 @@
           },
           {
             "id": "c",
-            "text": "Manager approval.",
+            "text": "Manager approval as the only remaining certification requirement.",
             "feedback": "No manager-approval step is documented."
           }
         ]
@@ -2262,17 +2262,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dara as team lead.",
+            "text": "Dara, the team lead, must coordinate coverage.",
             "feedback": "The rota record assigns that responsibility to Dara."
           },
           {
             "id": "b",
-            "text": "Nora alone.",
+            "text": "Nora alone, without support from her team lead.",
             "feedback": "The manager’s message suggested it, but the record says otherwise."
           },
           {
             "id": "c",
-            "text": "The travel provider.",
+            "text": "The travel provider arranging Nora's leave coverage.",
             "feedback": "That has no role in the rota."
           }
         ]
@@ -2322,12 +2322,12 @@
           },
           {
             "id": "b",
-            "text": "Repeat “find cover first” without explanation.",
+            "text": "Repeat 'find cover first' without clarifying whether the request was refused.",
             "feedback": "That caused the misunderstanding."
           },
           {
             "id": "c",
-            "text": "Own the misleading wording, explain pending coverage, and commit to a decision update.",
+            "text": "Own the wording, explain pending cover, and promise an update.",
             "feedback": "This clarifies responsibility without prejudging approval."
           }
         ]
@@ -2513,12 +2513,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Tell the patient the results are normal.",
+            "text": "Tell the patient the results are normal despite not seeing clinical findings.",
             "feedback": "The log contains no findings and Jules cannot interpret them."
           },
           {
             "id": "b",
-            "text": "Say access is already enabled.",
+            "text": "Say portal access is already enabled because the notice was sent.",
             "feedback": "The status says pending."
           },
           {
@@ -2628,12 +2628,12 @@
         "options": [
           {
             "id": "a",
-            "text": "A cancellation.",
+            "text": "A cancellation of a previously booked Monday appointment.",
             "feedback": "The record contains no booked slot to cancel."
           },
           {
             "id": "b",
-            "text": "A booked Monday appointment.",
+            "text": "A confirmed appointment on Monday with a named clinician.",
             "feedback": "No second confirmation or booking exists."
           },
           {
@@ -2682,17 +2682,17 @@
         "options": [
           {
             "id": "a",
-            "text": "A clear explanation for the patient and a route to a real appointment decision.",
+            "text": "A clear status and a way to seek a real appointment.",
             "feedback": "The patient is waiting at reception."
           },
           {
             "id": "b",
-            "text": "A claim that a slot is already available.",
+            "text": "A clear confirmation that a Monday slot is already available for this patient.",
             "feedback": "Availability has not been checked."
           },
           {
             "id": "c",
-            "text": "The patient’s clinical history.",
+            "text": "A summary of the patient's clinical history and referral reasons.",
             "feedback": "The issue is booking status, not clinical content."
           }
         ]
@@ -2824,7 +2824,7 @@
         "options": [
           {
             "id": "a",
-            "text": "An interpreter accepted the job.",
+            "text": "The provider had accepted the interpreter booking for today's appointment.",
             "feedback": "No acceptance appears in the record."
           },
           {
@@ -2834,7 +2834,7 @@
           },
           {
             "id": "c",
-            "text": "The patient declined language support.",
+            "text": "The patient had declined language support before the appointment.",
             "feedback": "No such decision is documented."
           }
         ]
@@ -2851,12 +2851,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Which clinician is on duty.",
+            "text": "Which clinician was on duty for the patient's appointment.",
             "feedback": "The record concerns language access, not staffing."
           },
           {
             "id": "b",
-            "text": "Whether the patient arrived.",
+            "text": "Whether the patient had arrived before the interpreter request was made.",
             "feedback": "The patient’s arrival is reported separately."
           },
           {
@@ -2877,12 +2877,12 @@
         "options": [
           {
             "id": "a",
-            "text": "An explanation of the patient’s condition.",
+            "text": "A clinical explanation of the patient's condition for Samira.",
             "feedback": "Clinical details are outside this record."
           },
           {
             "id": "b",
-            "text": "A promise that an interpreter is five minutes away.",
+            "text": "A firm promise that an interpreter will arrive within the next five minutes.",
             "feedback": "No provider contact or arrival time is confirmed."
           },
           {
@@ -3217,7 +3217,7 @@
         "options": [
           {
             "id": "a",
-            "text": "It was lost after Nadia’s call.",
+            "text": "It was lost from the warehouse after Nadia spoke with Evermont.",
             "feedback": "No loss is recorded."
           },
           {
@@ -3227,7 +3227,7 @@
           },
           {
             "id": "c",
-            "text": "It was shipped to Evermont.",
+            "text": "It had already been shipped to Evermont after Nadia's call.",
             "feedback": "The warehouse says it cannot ship that unit to Evermont."
           }
         ]
@@ -3244,7 +3244,7 @@
         "options": [
           {
             "id": "a",
-            "text": "The unit’s colour.",
+            "text": "That the unit's colour did not match Evermont's request.",
             "feedback": "Colour is not the issue."
           },
           {
@@ -3254,7 +3254,7 @@
           },
           {
             "id": "c",
-            "text": "The customer’s address.",
+            "text": "Whether Evermont's delivery address was correct in the customer order.",
             "feedback": "The dashboard’s missing reservation is the relevant gap."
           }
         ]
@@ -3299,7 +3299,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Transfer the reserved unit to Evermont immediately.",
+            "text": "Take the unit reserved for order 568 and offer it to Evermont immediately.",
             "feedback": "That would ignore order 568."
           },
           {
@@ -3309,7 +3309,7 @@
           },
           {
             "id": "c",
-            "text": "Tell Evermont its unit has already shipped.",
+            "text": "Tell Evermont that its promised unit has already shipped from the warehouse.",
             "feedback": "No shipment to Evermont is recorded."
           }
         ]
@@ -3415,7 +3415,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Reception signed for the package.",
+            "text": "That a named receptionist signed for the parcel at the loading area.",
             "feedback": "No signature appears."
           },
           {
@@ -3425,7 +3425,7 @@
           },
           {
             "id": "c",
-            "text": "The package was lost.",
+            "text": "The package had been lost before reaching Meridian's reception desk.",
             "feedback": "Its current location is not confirmed."
           }
         ]
@@ -3447,12 +3447,12 @@
           },
           {
             "id": "b",
-            "text": "Reception confirmed handover.",
+            "text": "Reception had confirmed that a recipient took the package.",
             "feedback": "Reception says the opposite."
           },
           {
             "id": "c",
-            "text": "The customer changed the status.",
+            "text": "The customer changed the tracking status from 'route complete' to 'Delivered'.",
             "feedback": "No customer status change is recorded."
           }
         ]
@@ -3612,17 +3612,17 @@
         "options": [
           {
             "id": "a",
-            "text": "The team that booked on Wednesday.",
+            "text": "The other team, whose Wednesday request became a confirmed booking.",
             "feedback": "Its booking was confirmed; Amina’s remained provisional."
           },
           {
             "id": "b",
-            "text": "Amina’s workshop team.",
+            "text": "Amina's workshop team, whose meeting still appears on the calendar.",
             "feedback": "Their hold was provisional."
           },
           {
             "id": "c",
-            "text": "Neither team.",
+            "text": "Neither team, because both calendar entries were only provisional holds.",
             "feedback": "Wednesday’s confirmation is recorded."
           }
         ]
@@ -3639,12 +3639,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Facilities had confirmed her hold.",
+            "text": "Facilities had confirmed her provisional hold as a room booking.",
             "feedback": "The record says provisional."
           },
           {
             "id": "b",
-            "text": "The calendar showed her provisional hold without a clear compact-view status.",
+            "text": "The compact calendar hid that her hold was provisional.",
             "feedback": "The display obscured the distinction."
           },
           {
@@ -3699,7 +3699,7 @@
           },
           {
             "id": "b",
-            "text": "Promise a specific room before checking.",
+            "text": "Promise Amina a specific alternative room before Facilities has checked availability.",
             "feedback": "No alternative availability has been verified."
           },
           {
@@ -3868,7 +3868,7 @@
           },
           {
             "id": "b",
-            "text": "A guarantee about every bank transaction.",
+            "text": "A guarantee that every bank transaction was processed correctly today.",
             "feedback": "The internal record cannot establish that."
           },
           {

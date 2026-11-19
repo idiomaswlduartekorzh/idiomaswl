@@ -53,17 +53,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une croissance garantie des nouveaux clients.",
+            "text": "Une croissance garantie du nombre de nouveaux clients sur le marché.",
             "feedback": "L’enquête porte sur des intentions d’essai, pas sur des clients acquis."
           },
           {
             "id": "b",
-            "text": "La borne haute des intentions déclarées par des clients répondants.",
+            "text": "Le haut de la fourchette d'intentions parmi les répondants.",
             "feedback": "La note décrit des réponses, pas des ventes."
           },
           {
             "id": "c",
-            "text": "La part du marché déjà acquise.",
+            "text": "Une part de marché déjà acquise grâce au projet de reprise.",
             "feedback": "L’échantillon de clients existants ne mesure pas une part du marché."
           }
         ]
@@ -80,17 +80,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Un résultat limité aux répondants.",
+            "text": "Un résultat limité aux seuls répondants à l'enquête volontaire.",
             "feedback": "La borne demeure valable pour les répondants, avec cette limite."
           },
           {
             "id": "b",
-            "text": "Une borne de l’enquête volontaire.",
+            "text": "La borne haute des intentions déclarées dans cette enquête.",
             "feedback": "Le chiffre peut toujours décrire les réponses observées."
           },
           {
             "id": "c",
-            "text": "Une prévision de recrutement pour tout le marché.",
+            "text": "Une prévision de recrutement valable pour tout le marché.",
             "feedback": "Aucun modèle de recrutement n’a été validé."
           }
         ]
@@ -256,17 +256,17 @@
         "options": [
           {
             "id": "a",
-            "text": "L’accord sur toute version ultérieure.",
+            "text": "Un accord du créateur sur toutes les versions publiées ultérieurement.",
             "feedback": "L’aperçu approuvé ne couvre pas une voix off ajoutée ensuite."
           },
           {
             "id": "b",
-            "text": "Une étude confirmant le gain annoncé.",
+            "text": "Une étude qui confirme le gain annoncé dans la version finale.",
             "feedback": "Aucune étude de performance n’est mentionnée dans le dossier."
           },
           {
             "id": "c",
-            "text": "L’accord sur un aperçu dépourvu de la promesse chiffrée.",
+            "text": "Un aperçu approuvé sans la promesse chiffrée ajoutée ensuite.",
             "feedback": "Le fichier approuvé ne contenait pas cette phrase."
           }
         ]
@@ -339,17 +339,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Demander la suspension ou correction de la phrase et vérifier l’historique des échanges.",
+            "text": "Demander la suspension ou correction et vérifier les échanges.",
             "feedback": "La nouvelle affirmation exigeait une validation écrite."
           },
           {
             "id": "b",
-            "text": "Laisser la phrase en ligne puisque l’aperçu fut validé.",
+            "text": "Laisser la phrase en ligne parce que l'aperçu a été validé lundi.",
             "feedback": "L’approbation de l’aperçu ne valide pas la nouvelle phrase."
           },
           {
             "id": "c",
-            "text": "Annoncer publiquement que le contrat est résilié.",
+            "text": "Annoncer publiquement la résiliation du contrat avant toute discussion.",
             "feedback": "Aucune résiliation n’est établie ni demandée à ce stade."
           }
         ]
@@ -482,17 +482,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une simple faute de grammaire.",
+            "text": "Une simple faute de grammaire sans conséquence pour le public local.",
             "feedback": "Le problème signalé concerne le sens social, pas la grammaire."
           },
           {
             "id": "b",
-            "text": "La preuve que toute la région est offensée.",
+            "text": "La preuve que toute la région a trouvé le slogan offensant.",
             "feedback": "Deux avis locaux ne démontrent pas une réaction universelle."
           },
           {
             "id": "c",
-            "text": "Une lecture plausible signalée par deux relecteurs, pas une réaction universelle mesurée.",
+            "text": "Deux relecteurs relèvent une lecture plausible, sans mesure universelle.",
             "feedback": "Le signal existe sans étude de réception."
           }
         ]
@@ -537,12 +537,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Suspendre l’impression de cette formule, tester des variantes avec l’équipe locale et fixer une décision datée.",
+            "text": "Suspendre l'impression, tester des variantes locales et fixer une décision datée.",
             "feedback": "La fenêtre d’impression permet encore un arbitrage."
           },
           {
             "id": "b",
-            "text": "Imprimer puisque le siège a validé.",
+            "text": "Imprimer la formule telle quelle puisque le siège l'a déjà validée.",
             "feedback": "La validation centrale ne répond pas à la lecture régionale signalée."
           },
           {
@@ -657,17 +657,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Le compte n’est pas répertorié comme canal géré ; son titulaire reste à confirmer.",
+            "text": "Le compte n'est pas géré; son titulaire reste à confirmer.",
             "feedback": "L’inventaire ne prouve pas l’identité du titulaire."
           },
           {
             "id": "b",
-            "text": "Il appartient avec certitude à un fraudeur.",
+            "text": "Le compte appartient forcément à un fraudeur à cause du lien.",
             "feedback": "La plateforme n’a pas encore identifié le titulaire du compte."
           },
           {
             "id": "c",
-            "text": "La publication vient du service clients.",
+            "text": "Le formulaire externe vient du service clients officiel de la clinique.",
             "feedback": "L’inventaire officiel ne contient pas ce compte."
           }
         ]
@@ -711,17 +711,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Le droit de publier des formulaires externes.",
+            "text": "Préserver le droit de tout compte externe à publier un formulaire.",
             "feedback": "Le formulaire externe ne fait pas partie du parcours officiel."
           },
           {
             "id": "b",
-            "text": "Les clients susceptibles d’avoir utilisé le lien, sans conclure trop tôt sur le compte.",
+            "text": "Protéger les utilisateurs du lien sans attribuer trop vite le compte.",
             "feedback": "Le risque pour les clients est concret mais non quantifié."
           },
           {
             "id": "c",
-            "text": "La réputation du compte inconnu.",
+            "text": "Protéger la réputation du compte inconnu avant de prévenir les clients.",
             "feedback": "Paul s’inquiète des clients, pas de la réputation du compte."
           }
         ]
@@ -739,17 +739,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que toutes les données ont été volées.",
+            "text": "Affirmer que toutes les données des clients ont déjà été volées.",
             "feedback": "Aucun bilan des données transmises n’est disponible."
           },
           {
             "id": "b",
-            "text": "Attendre la plateforme avant de communiquer quoi que ce soit.",
+            "text": "Attendre la décision de la plateforme avant toute communication aux clients.",
             "feedback": "Une consigne de prudence peut être donnée avant la réponse de la plateforme."
           },
           {
             "id": "c",
-            "text": "Orienter vers le portail officiel, déconseiller le lien externe et annoncer la vérification en cours.",
+            "text": "Orienter vers le portail officiel, déconseiller le lien et annoncer l'enquête.",
             "feedback": "La procédure officielle est connue malgré les inconnues."
           }
         ]
@@ -886,17 +886,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Elles exigent un rapprochement avant de compter les commandes créées.",
+            "text": "Rapprocher les six entrées avant de compter les commandes réelles.",
             "feedback": "Le journal d’entrée ne suffit pas à établir l’état final."
           },
           {
             "id": "b",
-            "text": "Elles garantissent qu’aucun doublon n’a été créé.",
+            "text": "Conclure qu'aucun doublon n'a été créé parce que les clés se répètent.",
             "feedback": "Le rapprochement n’est pas terminé ; un doublon reste possible."
           },
           {
             "id": "c",
-            "text": "Elles prouvent six doubles facturations.",
+            "text": "Déduire que six clients ont chacun subi deux facturations.",
             "feedback": "Deux entrées ne démontrent pas deux facturations."
           }
         ]
@@ -940,17 +940,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Informer les clients que les commandes sont toutes annulées.",
+            "text": "Dire aux clients que toutes les commandes rejouées sont annulées.",
             "feedback": "Aucune annulation générale n’est établie."
           },
           {
             "id": "b",
-            "text": "Suspendre le renvoi, transmettre les clés et références, puis attendre une liste rapprochée.",
+            "text": "Suspendre le renvoi, fournir clés et références, attendre le rapprochement.",
             "feedback": "Les clés rendent les tentatives vérifiables."
           },
           {
             "id": "c",
-            "text": "Renvoyer immédiatement le même lot sans clé.",
+            "text": "Renvoyer le même lot immédiatement sans clé de suivi ni contrôle.",
             "feedback": "Une troisième tentative sans clé aggraverait l’incertitude."
           }
         ]
@@ -1081,17 +1081,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une intrusion constatée.",
+            "text": "Une intrusion confirmée par tous les journaux de l'application.",
             "feedback": "Aucun indice confirmé de compromission n’a été trouvé."
           },
           {
             "id": "b",
-            "text": "Aucun indice confirmé dans les journaux déjà examinés, revue encore ouverte.",
+            "text": "Journaux déjà examinés sans indice confirmé; revue encore ouverte.",
             "feedback": "La recherche n’est pas achevée."
           },
           {
             "id": "c",
-            "text": "Aucune compromission possible.",
+            "text": "Aucune compromission possible puisque les premiers journaux sont vides.",
             "feedback": "La revue des journaux se poursuit ; on ne peut exclure tout scénario."
           }
         ]
@@ -1108,17 +1108,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Garantir la sécurité avant examen.",
+            "text": "Garantir la sécurité du système avant l'analyse des journaux.",
             "feedback": "Il refuse de garantir la sécurité avant les vérifications."
           },
           {
             "id": "b",
-            "text": "Éviter de parler au client.",
+            "text": "Éviter tout échange avec le client jusqu'à la mise à jour.",
             "feedback": "Romain demande explicitement une réponse au client."
           },
           {
             "id": "c",
-            "text": "Informer sans transformer une alerte en constat d’exposition.",
+            "text": "Informer sans présenter l'alerte comme une exposition confirmée.",
             "feedback": "Sa demande mentionne les deux excès à éviter."
           }
         ]
@@ -1135,17 +1135,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Préciser les contrôles de configuration et les étapes de mise à jour, puis donner une prochaine mise au point.",
+            "text": "Préciser contrôles et mise à jour; annoncer le prochain point.",
             "feedback": "Ni l’exposition ni le déploiement ne sont établis."
           },
           {
             "id": "b",
-            "text": "Dire que le correctif est déployé partout.",
+            "text": "Dire que le correctif est déjà déployé sur tous les services.",
             "feedback": "La mise à jour est engagée mais pas encore validée partout."
           },
           {
             "id": "c",
-            "text": "Attribuer l’alerte au client.",
+            "text": "Attribuer l'alerte au client sans vérifier sa configuration ni la dépendance.",
             "feedback": "L’alerte n’est pas imputée au client."
           }
         ]
@@ -1277,17 +1277,17 @@
         "options": [
           {
             "id": "a",
-            "text": "L’attribution entre guillemets, tout en gardant le sujet des alertes.",
+            "text": "Corriger la fausse citation sans effacer le sujet des alertes.",
             "feedback": "Le problème tient à la citation inventée, pas au thème."
           },
           {
             "id": "b",
-            "text": "Toute mention des trois alertes.",
+            "text": "Supprimer du compte rendu toute mention des trois alertes.",
             "feedback": "Les trois alertes sont attestées et demandent encore une réponse."
           },
           {
             "id": "c",
-            "text": "Le nom du client uniquement.",
+            "text": "Modifier seulement le nom du client en gardant la fausse citation.",
             "feedback": "Le défaut porte sur l’attribution d’une phrase, pas sur le nom."
           }
         ]
@@ -1479,17 +1479,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Le cycle prévu et une confirmation du dernier délai après vérification.",
+            "text": "Expliquer le cycle et confirmer le dernier délai après vérification.",
             "feedback": "La date exacte n’a pas encore été établie."
           },
           {
             "id": "b",
-            "text": "Une suppression individuelle déjà faite.",
+            "text": "Affirmer qu'une suppression individuelle a déjà été faite dans chaque sauvegarde.",
             "feedback": "Les sauvegardes ne sont pas modifiées individuellement."
           },
           {
             "id": "c",
-            "text": "Une conservation illimitée.",
+            "text": "Promettre une conservation illimitée des données supprimées dans les sauvegardes.",
             "feedback": "Le cycle annoncé est limité à trente jours."
           }
         ]
@@ -1506,17 +1506,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une demande de restauration du client.",
+            "text": "Répondre à une demande du client de restaurer ses données.",
             "feedback": "Le client demande une explication, non une restauration."
           },
           {
             "id": "b",
-            "text": "Une absence totale de suppression.",
+            "text": "Réparer une absence totale de suppression dans le système actif.",
             "feedback": "La suppression active a bien été exécutée."
           },
           {
             "id": "c",
-            "text": "Une formulation trop large par rapport au statut affiché.",
+            "text": "Corriger une formule trop générale au regard du statut réel.",
             "feedback": "L’espace actif et les sauvegardes diffèrent."
           }
         ]
@@ -1534,17 +1534,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Confirmer la suppression active, expliquer le cycle des sauvegardes et le traitement en cas de restauration.",
+            "text": "Confirmer suppression active, cycle des sauvegardes et traitement après restauration.",
             "feedback": "La politique permet une explication précise."
           },
           {
             "id": "b",
-            "text": "Refuser toute précision sur les sauvegardes.",
+            "text": "Refuser toute précision sur les sauvegardes alors que le client questionne le cycle.",
             "feedback": "La politique permet de préciser le cycle et la restauration."
           },
           {
             "id": "c",
-            "text": "Affirmer qu’aucune copie ne subsiste.",
+            "text": "Affirmer qu'aucune copie ne subsiste, même dans les sauvegardes.",
             "feedback": "Les sauvegardes peuvent encore contenir temporairement le compte."
           }
         ]
@@ -1655,17 +1655,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Le responsable connaît déjà avec certitude les auteurs.",
+            "text": "Le responsable connaît déjà l'identité exacte de tous les auteurs.",
             "feedback": "Les détails suggèrent des auteurs possibles, sans les identifier avec certitude."
           },
           {
             "id": "b",
-            "text": "Les commentaires deviennent nécessairement publics.",
+            "text": "Les commentaires deviennent automatiquement publics dès que le filtre est activé.",
             "feedback": "Le rapport n’a pas été publié au public."
           },
           {
             "id": "c",
-            "text": "Les détails peuvent rendre les auteurs reconnaissables malgré l’absence de nom.",
+            "text": "Le filtre peut révéler les auteurs malgré l'absence de noms.",
             "feedback": "Deux verbatims détaillés réduisent la confidentialité."
           }
         ]
@@ -1709,17 +1709,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Supprimer les résultats défavorables.",
+            "text": "Supprimer les résultats défavorables avant de les présenter aux salariés.",
             "feedback": "Il souhaite discuter du fond des retours."
           },
           {
             "id": "b",
-            "text": "Obtenir l’identité des auteurs.",
+            "text": "Obtenir l'identité des auteurs pour discuter chaque commentaire.",
             "feedback": "L’invitation ne lui promet pas l’identité des auteurs."
           },
           {
             "id": "c",
-            "text": "Comprendre le problème soulevé sans exposer des individus.",
+            "text": "Comprendre le problème sans exposer les auteurs.",
             "feedback": "Son objectif de dialogue ne justifie pas une identification."
           }
         ]
@@ -1737,17 +1737,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que personne n’aurait pu reconnaître les auteurs.",
+            "text": "Assurer que personne n'aurait reconnu les auteurs dans une équipe aussi petite.",
             "feedback": "Les détails de projet peuvent rendre les auteurs reconnaissables."
           },
           {
             "id": "b",
-            "text": "Transmettre les verbatims puis demander le pardon.",
+            "text": "Transmettre les verbatims filtrés aux managers puis demander pardon aux salariés.",
             "feedback": "Une diffusion après coup trahirait la promesse initiale."
           },
           {
             "id": "c",
-            "text": "Dire que la vue filtrée ne sera pas diffusée et que les thèmes seront partagés sous forme agrégée.",
+            "text": "Ne pas diffuser la vue filtrée; partager les thèmes sous forme agrégée.",
             "feedback": "La promesse et la règle imposent une limite concrète."
           }
         ]
@@ -1935,17 +1935,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Maintenir « refuse systématiquement ».",
+            "text": "Maintenir que Noé refuse systématiquement les retours malgré deux seuls retards.",
             "feedback": "Le retour non daté ne justifie pas cette généralisation."
           },
           {
             "id": "b",
-            "text": "Supprimer toute possibilité de réponse de Noé.",
+            "text": "Supprimer toute possibilité pour Noé de répondre aux observations du dossier.",
             "feedback": "La procédure permet à Noé de commenter avant signature."
           },
           {
             "id": "c",
-            "text": "Décrire les deux retards et ouvrir une vérification séparée du retour plus large.",
+            "text": "Décrire les deux retards et vérifier séparément le retour plus large.",
             "feedback": "La procédure distingue observation et retour à examiner."
           }
         ]
@@ -2132,17 +2132,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Ouvrir l’examen immédiatement, préciser les pièces et ne pas garantir une décision avant le départ.",
+            "text": "Ouvrir l'examen sans attendre, demander les pièces et ne pas promettre de décision avant le départ.",
             "feedback": "Les contrôles requis et le délai sont encore ouverts."
           },
           {
             "id": "b",
-            "text": "Attendre que Lina soit arrivée pour examiner le dossier.",
+            "text": "Attendre l'arrivée de Lina pour commencer l'examen de son dossier.",
             "feedback": "Le délai court impose de commencer avant le départ."
           },
           {
             "id": "c",
-            "text": "Confirmer le voyage comme déplacement professionnel autorisé.",
+            "text": "Confirmer le voyage comme déplacement professionnel autorisé sans nouvel examen.",
             "feedback": "Les vérifications obligatoires ne sont pas faites."
           }
         ]
@@ -2306,17 +2306,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La continuité du service et la liberté de réponse des salariés.",
+            "text": "Assurer le service tout en laissant les salariés répondre librement.",
             "feedback": "Le besoin demeure, mais l’accord manque."
           },
           {
             "id": "b",
-            "text": "Une réduction du nombre de salariés.",
+            "text": "Réduire le nombre de salariés pour couvrir les horaires du samedi.",
             "feedback": "Hélène veut maintenir le service."
           },
           {
             "id": "c",
-            "text": "Une preuve que personne ne s’est plaint.",
+            "text": "Prouver que personne ne s'est plaint du planning proposé.",
             "feedback": "L’absence de confirmation empêche de parler d’accord."
           }
         ]
@@ -2333,17 +2333,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que le silence de mardi suffit.",
+            "text": "Déduire que le silence de mardi prouve le volontariat de chacun.",
             "feedback": "Le silence n’est pas une confirmation individuelle."
           },
           {
             "id": "b",
-            "text": "Conserver le planning comme preuve d’accord.",
+            "text": "Conserver le planning comme preuve d'accord malgré les réponses manquantes.",
             "feedback": "Le planning a été établi avant tout choix."
           },
           {
             "id": "c",
-            "text": "Retirer l’étiquette de volontariat, solliciter les disponibilités et traiter séparément une éventuelle obligation.",
+            "text": "Retirer « volontaire »; demander les disponibilités et clarifier l'obligation.",
             "feedback": "La procédure distingue les deux voies."
           }
         ]
@@ -2476,17 +2476,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Aucune plainte externe ne peut exister.",
+            "text": "Aucune plainte externe ne peut exister puisque le système interne n'en montre pas.",
             "feedback": "La patiente a pu saisir l’autorité par un autre canal."
           },
           {
             "id": "b",
-            "text": "La clinique a déposé la plainte pour elle.",
+            "text": "La clinique a elle-même déposé la plainte externe pour la patiente.",
             "feedback": "Aucun transfert de la clinique n’est enregistré."
           },
           {
             "id": "c",
-            "text": "Le système ne montre aucun transfert ; un éventuel dépôt direct par la patiente n’est pas vérifié ici.",
+            "text": "Aucun transfert visible; un dépôt direct par la patiente reste non vérifié.",
             "feedback": "Le journal ne couvre que le système de la clinique."
           }
         ]
@@ -2503,17 +2503,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Clarifier les circuits tout en respectant la démarche de la patiente.",
+            "text": "Clarifier les deux circuits en respectant la démarche de Mme A.",
             "feedback": "La demande distingue les deux procédures."
           },
           {
             "id": "b",
-            "text": "Obtenir la décision de cette autorité.",
+            "text": "Obtenir immédiatement la décision de l'autorité avant de répondre à la patiente.",
             "feedback": "La décision externe relève de l’autorité concernée."
           },
           {
             "id": "c",
-            "text": "Empêcher Mme A. de saisir l’autorité.",
+            "text": "Empêcher Mme A. de saisir l'autorité après son signalement interne.",
             "feedback": "Le Dr Morel cherche à clarifier, pas à faire obstacle."
           }
         ]
@@ -2531,17 +2531,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Déclarer la plainte irrecevable.",
+            "text": "Déclarer la plainte irrecevable parce qu'elle a utilisé le mauvais circuit.",
             "feedback": "Le dossier interne a bien été ouvert ; il n’est pas irrecevable."
           },
           {
             "id": "b",
-            "text": "Donner le numéro interne, expliquer ce qu’il couvre et indiquer comment contacter l’autorité séparément.",
+            "text": "Expliquer le numéro interne et la voie distincte vers l'autorité.",
             "feedback": "La clinique peut informer sans se substituer à l’organisme."
           },
           {
             "id": "c",
-            "text": "Présenter CL-418 comme numéro externe.",
+            "text": "Présenter CL-418 comme la référence d'une plainte déposée auprès de l'autorité.",
             "feedback": "La référence interne ne vient pas de l’autorité."
           }
         ]
@@ -2673,17 +2673,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La réservation des consultations.",
+            "text": "La réservation des consultations avant l'envoi des invitations de recherche.",
             "feedback": "Les consultations ne sont pas le recrutement étudié ici."
           },
           {
             "id": "b",
-            "text": "La vérification des préférences selon le protocole de recrutement.",
+            "text": "Le contrôle des préférences prévu par le protocole de recrutement.",
             "feedback": "Le protocole impose un contrôle distinct."
           },
           {
             "id": "c",
-            "text": "La publication des résultats de l’étude.",
+            "text": "La publication des résultats de l'étude avant la sélection des patients.",
             "feedback": "La recherche n’en est pas à publier des résultats."
           }
         ]
@@ -2699,17 +2699,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Inscrire les patients sans leur parler.",
+            "text": "Inscrire automatiquement les patients à l'étude sans leur parler.",
             "feedback": "Le message envisagé resterait une invitation libre."
           },
           {
             "id": "b",
-            "text": "Annuler leurs soins.",
+            "text": "Annuler les soins des patients qui refusent la recherche.",
             "feedback": "Rien n’indique une annulation des soins."
           },
           {
             "id": "c",
-            "text": "Inviter rapidement sans rendre la participation obligatoire.",
+            "text": "Inviter vite sans rendre la participation obligatoire.",
             "feedback": "Sa demande concerne le contact, pas une inscription forcée."
           }
         ]
@@ -2727,17 +2727,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Suspendre l’envoi de cette liste et demander le contrôle prévu par le protocole.",
+            "text": "Suspendre l'envoi et demander le contrôle prévu par le protocole.",
             "feedback": "Le canal de recrutement existe, mais n’a pas été suivi."
           },
           {
             "id": "b",
-            "text": "Dire que la recherche est interdite dans la clinique.",
+            "text": "Affirmer que toute recherche est interdite dans cette clinique.",
             "feedback": "Le protocole prévoit un recrutement, pas son interdiction."
           },
           {
             "id": "c",
-            "text": "Envoyer puisque le message est sobre.",
+            "text": "Envoyer le message parce qu'il est sobre, sans vérifier les préférences.",
             "feedback": "La sobriété du texte ne remplace pas la vérification prévue."
           }
         ]
@@ -2869,17 +2869,17 @@
         "options": [
           {
             "id": "a",
-            "text": "L’identité du clinicien.",
+            "text": "L'identité du clinicien responsable de l'acte au site B.",
             "feedback": "Le clinicien reste le même."
           },
           {
             "id": "b",
-            "text": "La date de création du code.",
+            "text": "La date de création du code de facturation pour ce soin.",
             "feedback": "Le dossier ne discute pas la création du code."
           },
           {
             "id": "c",
-            "text": "La validité de l’autorisation au site B.",
+            "text": "La validité de l'autorisation pour le site B.",
             "feedback": "Le changement de site n’est pas confirmé par l’assureur."
           }
         ]
@@ -2896,17 +2896,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Elle veut annuler l’acte médical.",
+            "text": "Annuler l'acte médical à cause du changement de site.",
             "feedback": "Élise cherche à répondre à la patiente, non à annuler les soins."
           },
           {
             "id": "b",
-            "text": "Elle veut rassurer sans promettre une couverture non confirmée.",
+            "text": "Rassurer sans garantir une couverture non confirmée au site B.",
             "feedback": "Son courriel reconnaît le décalage administratif."
           },
           {
             "id": "c",
-            "text": "Elle conteste le choix du clinicien.",
+            "text": "Contester le choix du clinicien pour éviter de parler de prise en charge.",
             "feedback": "Aucune contestation du clinicien n’est rapportée."
           }
         ]
@@ -2923,17 +2923,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que le soin n’est plus indiqué.",
+            "text": "Dire que le soin n'est plus indiqué depuis le changement de site.",
             "feedback": "La question administrative ne tranche pas l’indication du soin."
           },
           {
             "id": "b",
-            "text": "Expliquer l’autorisation existante, demander confirmation pour B et annoncer un retour avant de garantir le paiement.",
+            "text": "Expliquer la portée de l'autorisation, vérifier B et ne pas promettre la prise en charge.",
             "feedback": "Le contrôle porte sur la prise en charge, pas l’indication clinique."
           },
           {
             "id": "c",
-            "text": "Garantir le remboursement puisque l’acte est le même.",
+            "text": "Garantir le remboursement parce que le soin prévu reste identique.",
             "feedback": "Le même code ne garantit pas la couverture du site B."
           }
         ]
@@ -3043,17 +3043,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La patiente la conteste ; son exactitude reste à examiner.",
+            "text": "La patiente conteste la phrase; son exactitude reste à examiner.",
             "feedback": "La demande est enregistrée, pas tranchée."
           },
           {
             "id": "b",
-            "text": "Elle est certainement correcte.",
+            "text": "La phrase a été vérifiée et jugée correcte par le service.",
             "feedback": "La note n’a pas encore été réévaluée."
           },
           {
             "id": "c",
-            "text": "Elle est certainement fausse.",
+            "text": "La phrase a été démontrée fausse avant l'examen du dossier.",
             "feedback": "La contestation ne prouve pas encore l’inexactitude."
           }
         ]
@@ -3069,17 +3069,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La patiente n’a aucun droit de contestation.",
+            "text": "La patiente n'a aucun droit de contester une note du dossier.",
             "feedback": "La patiente peut demander un examen de la mention."
           },
           {
             "id": "b",
-            "text": "La correction doit être datée et liée à l’entrée d’origine après examen.",
+            "text": "La correction doit être datée et reliée à l'entrée initiale.",
             "feedback": "La procédure préserve la traçabilité."
           },
           {
             "id": "c",
-            "text": "La note a déjà été envoyée.",
+            "text": "La note contestée a déjà été envoyée au nouveau médecin.",
             "feedback": "Le dossier n’a pas encore été transmis."
           }
         ]
@@ -3096,17 +3096,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une demande de nouveau rendez-vous.",
+            "text": "Obtenir un nouveau rendez-vous sans lien avec le dossier contesté.",
             "feedback": "Mme B. ne sollicite pas ici un rendez-vous."
           },
           {
             "id": "b",
-            "text": "La lecture de la mention par le nouveau médecin avant clarification.",
+            "text": "La lecture de la mention contestée avant clarification.",
             "feedback": "L’envoi n’a pas encore eu lieu."
           },
           {
             "id": "c",
-            "text": "Une erreur de facturation.",
+            "text": "Faire corriger une erreur de facturation avant le changement de médecin.",
             "feedback": "Pauline décrit une transmission de dossier, pas une facture."
           }
         ]
@@ -3124,17 +3124,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Transmettre sans signaler la contestation.",
+            "text": "Transmettre la note contestée au nouveau médecin sans signaler le désaccord.",
             "feedback": "La contestation doit être visible avant transmission."
           },
           {
             "id": "b",
-            "text": "Faire examiner la note, joindre sa déclaration si elle le souhaite et clarifier le statut avant transmission.",
+            "text": "Faire examiner la note et joindre la déclaration avant transmission.",
             "feedback": "La procédure prévoit examen et expression de la patiente."
           },
           {
             "id": "c",
-            "text": "Effacer la phrase immédiatement sans trace.",
+            "text": "Effacer la phrase du dossier immédiatement sans trace de correction.",
             "feedback": "La procédure impose une trace de toute correction."
           }
         ]
@@ -3326,17 +3326,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Relancer la preuve ; faute de réponse, remplacer la promesse par une description vérifiable de la distribution.",
+            "text": "Relancer la preuve ; sinon, remplacer la promesse par la seule distribution vérifiable.",
             "feedback": "La règle exige une pièce avant dépôt."
           },
           {
             "id": "b",
-            "text": "Affirmer que l’entrepôt est une usine.",
+            "text": "Présenter l'entrepôt de distribution comme une usine de fabrication locale.",
             "feedback": "Un entrepôt ne se confond pas avec une usine."
           },
           {
             "id": "c",
-            "text": "Déposer la formule puis demander le justificatif.",
+            "text": "Déposer la formule d'origine locale avant d'obtenir le justificatif demandé.",
             "feedback": "La pièce doit précéder le dépôt de la déclaration."
           }
         ]
@@ -3447,17 +3447,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Un chargement entièrement responsable du retard.",
+            "text": "Un seul retard de chargement explique à lui seul toute la livraison tardive.",
             "feedback": "La fermeture de route a bien eu lieu."
           },
           {
             "id": "b",
-            "text": "Un départ tardif, une fermeture de route et une livraison hors créneau.",
+            "text": "Départ tardif, route fermée et livraison hors créneau.",
             "feedback": "Les deux perturbations figurent dans la chronologie."
           },
           {
             "id": "c",
-            "text": "Une météo responsable de chaque minute.",
+            "text": "La météo explique chaque minute perdue, sans rôle du quai.",
             "feedback": "La part respective des événements reste inconnue."
           }
         ]
@@ -3474,17 +3474,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Mentionner la fermeture de route.",
+            "text": "Mentionner la fermeture de route parmi les faits du trajet.",
             "feedback": "La fermeture peut être mentionnée sans lui attribuer tout le retard."
           },
           {
             "id": "b",
-            "text": "Imputer la totalité des cinq heures aux orages.",
+            "text": "Imputer les cinq heures aux seuls orages.",
             "feedback": "La contribution de chaque étape n’est pas calculée."
           },
           {
             "id": "c",
-            "text": "Mentionner le départ tardif.",
+            "text": "Mentionner que le départ du quai a également été tardif.",
             "feedback": "Le départ tardif est inscrit dans la chronologie."
           }
         ]
@@ -3501,17 +3501,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une explication honnête et un créneau nouveau fondé sur une vérification.",
+            "text": "Expliquer honnêtement et proposer un créneau vérifié.",
             "feedback": "Le client attend une réponse opérationnelle."
           },
           {
             "id": "b",
-            "text": "La suspension de toute livraison.",
+            "text": "Suspendre toutes les livraisons jusqu'à l'enquête sur ce retard.",
             "feedback": "Le client attend un nouveau créneau fiable."
           },
           {
             "id": "c",
-            "text": "Une excuse inventée pour défendre le quai.",
+            "text": "Inventer une excuse pour défendre le quai et éviter le transporteur.",
             "feedback": "Léon ne cherche pas à disculper le quai."
           }
         ]
@@ -3529,17 +3529,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Accuser uniquement le transporteur.",
+            "text": "Accuser seulement le transporteur du retard malgré le départ tardif du quai.",
             "feedback": "Le départ tardif empêche d’accuser seulement le transporteur."
           },
           {
             "id": "b",
-            "text": "Dire que les orages n’ont joué aucun rôle.",
+            "text": "Dire que les orages n'ont joué aucun rôle dans la livraison.",
             "feedback": "La fermeture de route constitue aussi un fait du trajet."
           },
           {
             "id": "c",
-            "text": "Décrire les deux perturbations, réserver leur poids causal et confirmer le prochain créneau après contrôle.",
+            "text": "Décrire les deux causes possibles et confirmer le créneau après vérification.",
             "feedback": "Les faits permettent une chronologie, pas un partage chiffré."
           }
         ]
@@ -3706,12 +3706,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Préserver la confiance du client et clarifier si la demande de relevés modifie l’expédition.",
+            "text": "Préserver la confiance et savoir si les relevés demandés changent l'expédition.",
             "feedback": "Il doit corriger sa promesse sans inventer un contrôle supplémentaire ni un nouveau délai."
           },
           {
             "id": "b",
-            "text": "Faire disparaître le rapport des vingt tests.",
+            "text": "Faire disparaître le rapport des vingt essais avant que le client ne le lise.",
             "feedback": "Ce rapport est la preuve du contrôle convenu et peut être communiqué."
           },
           {
@@ -3735,17 +3735,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Produire des relevés individuels pour les 220 pièces non testées.",
+            "text": "Fabriquer des relevés individuels pour 220 pièces qui n'ont pas été testées.",
             "feedback": "Aucun test individuel n’a eu lieu pour ces pièces ; créer des relevés serait trompeur."
           },
           {
             "id": "b",
-            "text": "Corriger la phrase, transmettre le rapport de l’échantillon et clarifier toute demande de contrôle supplémentaire.",
+            "text": "Corriger la formule, transmettre l'échantillon et clarifier toute demande supplémentaire.",
             "feedback": "Le plan convenu reste valable, mais la nouvelle attente du client doit être traitée avant de promettre un contrôle ou un délai."
           },
           {
             "id": "c",
-            "text": "Déclarer tout le lot défectueux et annuler l’expédition.",
+            "text": "Déclarer tout le lot défectueux et annuler le départ sans preuve.",
             "feedback": "Les vingt tests sont conformes et aucun défaut des autres pièces n’est constaté dans le dossier."
           }
         ]
@@ -3885,17 +3885,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Qu’elle est nécessairement exigible ou nécessairement invalide sans examiner le contrat et les réserves.",
+            "text": "Exigibilité ou invalidité certaine sans examen du contrat et des réserves.",
             "feedback": "La portée des réserves reste à déterminer."
           },
           {
             "id": "b",
-            "text": "Que le délai de cinq jours existe.",
+            "text": "L'existence du délai contractuel de cinq jours après la remise.",
             "feedback": "Le contrat prévoit effectivement cinq jours."
           },
           {
             "id": "c",
-            "text": "Que le client a signalé deux réserves.",
+            "text": "Le client a signalé deux réserves dans le délai prévu.",
             "feedback": "Les deux réserves figurent bien au dossier."
           }
         ]
@@ -3912,17 +3912,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Relire les critères du jalon.",
+            "text": "Éviter de relire les critères du jalon avant de répondre au client.",
             "feedback": "Il demande justement une lecture des critères du jalon."
           },
           {
             "id": "b",
-            "text": "Reconnaître que le client a répondu.",
+            "text": "Refuser de reconnaître que le client a exprimé des réserves.",
             "feedback": "Victor reconnaît que le client a répondu."
           },
           {
             "id": "c",
-            "text": "Présenter la remise comme acceptation ou rejeter trop vite la facturation.",
+            "text": "Ne pas traiter la remise comme acceptation ni rejeter trop vite.",
             "feedback": "Son message expose les deux risques."
           }
         ]
@@ -3940,17 +3940,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que « livré » signifie « accepté ».",
+            "text": "Dire que la simple remise signifie acceptation malgré les réserves écrites du client.",
             "feedback": "Le délai d’examen est encore ouvert."
           },
           {
             "id": "b",
-            "text": "Accuser réception des réserves, les examiner selon les critères et corriger le statut communiqué avant de conclure sur la facture.",
+            "text": "Examiner les réserves selon les critères, corriger le statut et différer la conclusion sur la facture.",
             "feedback": "Le processus d’examen est encore ouvert."
           },
           {
             "id": "c",
-            "text": "Annuler toute facturation du projet.",
+            "text": "Annuler toute facturation du projet sans examiner le contrat ni les réserves écrites.",
             "feedback": "Le dossier concerne ce jalon, pas toute la facturation du projet."
           }
         ]

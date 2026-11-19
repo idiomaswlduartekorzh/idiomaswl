@@ -85,7 +85,7 @@
           },
           {
             "id": "b",
-            "text": "La didascalia che ringrazia Firenze.",
+            "text": "La didascalia cita Firenze.",
             "feedback": "Quella città non corrisponde all’evento fotografato."
           },
           {
@@ -107,12 +107,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Vuole cancellare l’evento di Firenze.",
+            "text": "Vuole cancellare l’evento di Firenze per risolvere il post.",
             "feedback": "Chiede come descrivere la foto, non di modificare il calendario."
           },
           {
             "id": "b",
-            "text": "Vuole correggere il post prima di programmarlo.",
+            "text": "Correggere il post prima della programmazione.",
             "feedback": "La bozza è ancora modificabile e Marta chiede una conferma."
           },
           {
@@ -140,7 +140,7 @@
           },
           {
             "id": "b",
-            "text": "Indicare Bologna per la foto e tenere separato l’annuncio di Firenze.",
+            "text": "Indicare Bologna per la foto, distinguendola dall’evento a Firenze.",
             "feedback": "Così immagine, città e tempistica tornano coerenti."
           },
           {
@@ -287,7 +287,7 @@
           },
           {
             "id": "b",
-            "text": "Descrive il gruppo misto dei 48 rispondenti.",
+            "text": "I 48 rispondenti sono un gruppo misto.",
             "feedback": "34 su 48 è circa il 71%, ma non è una quota dei soli acquirenti."
           },
           {
@@ -308,7 +308,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Una formulazione affidabile per la riunione di oggi.",
+            "text": "Formula attendibile per la riunione.",
             "feedback": "Chiede quanti clienti hanno risposto prima di conservare la frase."
           },
           {
@@ -336,7 +336,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Correggere la frase e proporre una lettura separata dei clienti.",
+            "text": "Correggere la frase, distinguendo clienti e visitatori.",
             "feedback": "La slide può descrivere i 48 rispondenti mentre si analizzano i 20 acquirenti."
           },
           {
@@ -455,7 +455,7 @@
         "options": [
           {
             "id": "a",
-            "text": "La disponibilità dello spazio per lunedì.",
+            "text": "Spazio riservato lunedì.",
             "feedback": "La prenotazione riguarda lo spazio; il banner finale manca."
           },
           {
@@ -509,7 +509,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Vuole dare al cliente un aggiornamento coerente con quanto gli ha detto.",
+            "text": "Allineare l’aggiornamento al cliente con i fatti.",
             "feedback": "La mail cita la promessa già fatta e la richiesta del direttore."
           },
           {
@@ -537,7 +537,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Promettere la messa online senza altre verifiche.",
+            "text": "Promettere comunque la messa online prima di ricevere il file.",
             "feedback": "La scheda non documenta il caricamento né la conferma finale."
           },
           {
@@ -547,7 +547,7 @@
           },
           {
             "id": "c",
-            "text": "Distinguere la prenotazione dalla pubblicazione e chiedere il file entro la scadenza.",
+            "text": "Prenotazione non ancora pubblicazione; chiedere file entro scadenza.",
             "feedback": "Questa è la condizione concreta per poter ottenere la conferma del portale."
           }
         ]
@@ -684,7 +684,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Logo nel piè di pagina e menzione nella newsletter.",
+            "text": "Logo a piè pagina, poi newsletter.",
             "feedback": "Entrambi sono elencati nell’accordo; la menzione deve ancora uscire."
           },
           {
@@ -721,7 +721,7 @@
           },
           {
             "id": "c",
-            "text": "Se la pagina rispetta l’accordo e come rispondere allo sponsor.",
+            "text": "Accordo rispettato? Risposta allo sponsor.",
             "feedback": "Chiede un confronto tra mockup e accordo prima di scrivere ad Aurora."
           }
         ]
@@ -739,12 +739,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Confermare il piè di pagina, controllarne la leggibilità e dare data della newsletter.",
+            "text": "Confermare il piè di pagina, verificarne leggibilità e datare la newsletter.",
             "feedback": "Sono azioni coerenti con l’accordo e con lo stato attuale."
           },
           {
             "id": "b",
-            "text": "Promettere subito il logo accanto al titolo.",
+            "text": "Promettere allo sponsor il logo accanto al titolo senza verificarlo.",
             "feedback": "L’accordo firmato non prevede quella posizione."
           },
           {
@@ -885,7 +885,7 @@
         "options": [
           {
             "id": "a",
-            "text": "È prevista dopo il controllo di mercoledì, senza conferma finale.",
+            "text": "Prevista dopo il controllo di mercoledì, ma ancora da confermare.",
             "feedback": "La scheda presenta una previsione condizionata al controllo."
           },
           {
@@ -916,7 +916,7 @@
           },
           {
             "id": "b",
-            "text": "Una promessa fatta al cliente prima della chiamata delle 16.",
+            "text": "Una promessa al cliente prima delle 16.",
             "feedback": "Chiede se il problema sia nel profilo o nella disponibilità della funzione."
           },
           {
@@ -943,12 +943,12 @@
           },
           {
             "id": "b",
-            "text": "Il profilo è regolare; il rilascio pubblico attende il controllo finale.",
+            "text": "Profilo regolare; rilascio pubblico dopo il controllo finale.",
             "feedback": "Questa spiegazione distingue la prova dalla disponibilità per clienti."
           },
           {
             "id": "c",
-            "text": "Garantire che la funzione apparirà mercoledì mattina.",
+            "text": "Garantire al cliente che la funzione apparirà mercoledì mattina.",
             "feedback": "Il controllo di mercoledì precede una conferma ancora assente."
           }
         ]
@@ -1109,7 +1109,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Di inviare un riepilogo settimanale con il giorno sbagliato.",
+            "text": "Riepilogo con giorno errato.",
             "feedback": "La sua mail chiede verifica prima di spedire i numeri."
           },
           {
@@ -1137,17 +1137,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Eliminare l’ordine 784 dal file.",
+            "text": "Eliminare l’ordine 784 dal file prima del riepilogo settimanale.",
             "feedback": "L’ordine è valido e compare una sola volta."
           },
           {
             "id": "b",
-            "text": "Convertire la colonna UTC in ora italiana prima di raggruppare per data.",
+            "text": "Convertire UTC in ora italiana prima del riepilogo.",
             "feedback": "Il raggruppamento attuale usa il giorno UTC."
           },
           {
             "id": "c",
-            "text": "Chiedere al cliente di cambiare la ricevuta.",
+            "text": "Chiedere al cliente di modificare una ricevuta che registra già l’ora corretta.",
             "feedback": "Il problema nasce dalla lettura del CSV, non dalla ricevuta."
           }
         ]
@@ -1294,7 +1294,7 @@
           },
           {
             "id": "c",
-            "text": "Non è ancora disponibile; è previsto un aggiornamento alle 17.",
+            "text": "Soluzione aperta; aggiornamento alle 17.",
             "feedback": "Il registro distingue l’aggiornamento dalla soluzione."
           }
         ]
@@ -1315,12 +1315,12 @@
           },
           {
             "id": "b",
-            "text": "Vuole chiudere i ticket senza risposta.",
+            "text": "Vuole chiudere i due ticket senza rispondere ai clienti coinvolti.",
             "feedback": "Chiede proprio quale aggiornamento dare al ticket 258."
           },
           {
             "id": "c",
-            "text": "Deve capire se avvisare di un nuovo guasto e rispondere al secondo cliente.",
+            "text": "Verificare il guasto, rispondere al secondo cliente.",
             "feedback": "La mail collega la decisione al numero di incidenti."
           }
         ]
@@ -1342,7 +1342,7 @@
           },
           {
             "id": "b",
-            "text": "Un solo incidente aperto, entrambi i clienti coinvolti e aggiornamento alle 17.",
+            "text": "Un incidente, due clienti, aggiornamento alle 17.",
             "feedback": "È il quadro documentato senza inventare una soluzione."
           },
           {
@@ -1460,7 +1460,7 @@
           },
           {
             "id": "b",
-            "text": "Il pacchetto tecnico candidato è disponibile internamente.",
+            "text": "Build candidata interna disponibile.",
             "feedback": "La compilazione è completa, ma la checklist ha altri passaggi."
           },
           {
@@ -1513,7 +1513,7 @@
           },
           {
             "id": "b",
-            "text": "Mandare oggi un annuncio ai clienti con una data.",
+            "text": "Annuncio ai clienti con una data.",
             "feedback": "Chiede quale messaggio può inviare oggi dopo aver letto il canale tecnico."
           },
           {
@@ -1536,17 +1536,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire che non esiste alcuna build.",
+            "text": "Dire al cliente che non esiste alcuna build della schermata.",
             "feedback": "La build candidata esiste ed è nell’ambiente interno."
           },
           {
             "id": "b",
-            "text": "Confermare domani come data pubblica.",
+            "text": "Confermare domani come data pubblica di rilascio, prima dei controlli finali.",
             "feedback": "La checklist non ha ancora superato la revisione né la verifica."
           },
           {
             "id": "c",
-            "text": "Spiegare i controlli aperti e promettere un aggiornamento interno dopo la revisione.",
+            "text": "Controlli aperti; aggiornamento interno dopo la revisione.",
             "feedback": "È l’impegno che Lorenzo può mantenere oggi."
           }
         ]
@@ -1740,7 +1740,7 @@
           },
           {
             "id": "b",
-            "text": "Spiegare il turno attuale, verificare lo scambio e confermare l’esito entro le 15.",
+            "text": "Turno attuale, verifica dello scambio, esito entro le 15.",
             "feedback": "La procedura e la scadenza permettono una risposta verificabile."
           },
           {
@@ -1932,12 +1932,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Chiarire l’osservazione e offrire di concordare una domanda breve.",
+            "text": "Spiegare l’osservazione, concordare una breve domanda.",
             "feedback": "Rispetta il piano e permette a Rosa di partecipare con sicurezza."
           },
           {
             "id": "b",
-            "text": "Mandarle la griglia da compilare.",
+            "text": "Mandarle la griglia di valutazione e chiederle di compilarla.",
             "feedback": "La griglia è riservata ai due valutatori nominati."
           },
           {
@@ -2139,7 +2139,7 @@
           },
           {
             "id": "c",
-            "text": "Spiegare la regola e verificare se l’incontro di martedì si può spostare.",
+            "text": "Chiarire la regola e verificare lo spostamento di martedì.",
             "feedback": "Il responsabile può valutare una soluzione circoscritta."
           }
         ]
@@ -2327,7 +2327,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Condividere il tema aggregato e proporre un confronto aperto.",
+            "text": "Condividere il tema, proporre un confronto aperto.",
             "feedback": "La discussione può partire dai tre commenti senza fingere di conoscere gli autori."
           },
           {
@@ -2535,7 +2535,7 @@
           },
           {
             "id": "c",
-            "text": "Spiegare che il documento è arrivato e proporre i due slot disponibili.",
+            "text": "Documento ricevuto; offrire i due slot disponibili.",
             "feedback": "Silvia può trasformare la richiesta ricevuta in una prenotazione concreta."
           }
         ]
@@ -2725,7 +2725,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Confermare il campione in lavorazione e indicare quando controllare il portale.",
+            "text": "Campione in lavorazione; indicare quando ricontrollare il portale.",
             "feedback": "Sono fatti verificati senza anticipare un risultato non validato."
           },
           {
@@ -2935,7 +2935,7 @@
           },
           {
             "id": "c",
-            "text": "Confermare lunedì e registrare la preferenza per i lunedì successivi.",
+            "text": "Confermare lunedì, registrare le preferenze successive.",
             "feedback": "La preferenza può guidare la proposta senza trasformarsi in promessa."
           }
         ]
@@ -3133,7 +3133,7 @@
           },
           {
             "id": "c",
-            "text": "Lasciare un messaggio neutro e cercare una conferma diretta dalla paziente.",
+            "text": "Messaggio neutro; conferma diretta dalla paziente.",
             "feedback": "La scheda consente la richiamata; l’agenda resta invariata fino alla conferma."
           }
         ]
@@ -3333,7 +3333,7 @@
           },
           {
             "id": "c",
-            "text": "Tenere la lista in attesa mentre si verifica un’altra soluzione di sala.",
+            "text": "Lista in attesa; cercare una sala alternativa.",
             "feedback": "Non risultano posti liberi né una nuova configurazione confermata."
           }
         ]
@@ -3523,7 +3523,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Completare la verifica entro le 8:30 e comunicare l’esito.",
+            "text": "Verificare entro le 8:30 e comunicare l’esito.",
             "feedback": "È un impegno sul controllo, senza anticipare l’accettazione."
           },
           {
@@ -3726,7 +3726,7 @@
           },
           {
             "id": "b",
-            "text": "Precisare cosa è incluso e valutare un servizio separato per gli schermi.",
+            "text": "Chiarire le inclusioni; valutare la pulizia degli schermi separata.",
             "feedback": "Così l’avviso riflette l’ordine e lascia aperta una soluzione."
           },
           {

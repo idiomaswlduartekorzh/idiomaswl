@@ -90,7 +90,7 @@
           },
           {
             "id": "c",
-            "text": "Die Platzierung lässt das Siegel auf das Produkt insgesamt beziehen.",
+            "text": "Siegel wirkt wie Produktzertifikat.",
             "feedback": "Der notwendige Bezug zur Verpackung fehlt."
           }
         ]
@@ -107,7 +107,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Das Prüfsiegel vollständig erfinden.",
+            "text": "Das Prüfsiegel trotz dokumentierter Verpackungsprüfung vollständig als erfunden erklären.",
             "feedback": "Die Prüfung hat tatsächlich stattgefunden."
           },
           {
@@ -117,7 +117,7 @@
           },
           {
             "id": "c",
-            "text": "Die reale Verpackungsprüfung sichtbar halten und den falschen Eindruck korrigieren.",
+            "text": "Reale Prüfung nennen, falschen Eindruck korrigieren.",
             "feedback": "Beides ist vor dem Versand möglich."
           }
         ]
@@ -140,7 +140,7 @@
           },
           {
             "id": "b",
-            "text": "Den Zusatz „Verpackungsmaterial geprüft“ direkt am Siegel ergänzen und die Händler informieren.",
+            "text": "„Verpackungsmaterial geprüft“ ergänzen, Händler informieren.",
             "feedback": "So bleibt die Aussage auf den Bericht begrenzt."
           },
           {
@@ -260,7 +260,7 @@
           },
           {
             "id": "c",
-            "text": "Nein, sie beschreibt den ausgewählten Monatsvergleich.",
+            "text": "Nein, nur Monatsvergleich.",
             "feedback": "Die Berechnung ist korrekt, die Interpretation begrenzt."
           }
         ]
@@ -282,7 +282,7 @@
           },
           {
             "id": "b",
-            "text": "Ein dauerhaftes Wachstum auf vergleichbarer Betriebsbasis.",
+            "text": "Dauerwachstum auf gleicher Basis.",
             "feedback": "Ein bereinigter Vergleich fehlt."
           },
           {
@@ -332,7 +332,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Den Anstieg mit Zeitraum und Schließung nennen und einen bereinigten Vergleich nachreichen.",
+            "text": "Anstieg mit Zeitraum und Schließung nennen; Vergleich nachreichen.",
             "feedback": "So werden Zahl und Einschränkung gemeinsam sichtbar."
           },
           {
@@ -485,7 +485,7 @@
           },
           {
             "id": "c",
-            "text": "Die veröffentlichte Anordnung kann Sponsoring wie eine Empfehlung wirken lassen.",
+            "text": "Sponsoring kann wie eine Empfehlung wirken.",
             "feedback": "Der Satz ist visuell mit den Logos verbunden."
           }
         ]
@@ -502,17 +502,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Zusammenarbeit mit dem Veranstalter bei klarer Trennung von Sponsoring und Empfehlung.",
+            "text": "Zusammenarbeit ohne Empfehlungsanspruch sichtbar machen.",
             "feedback": "Er bittet um eine Änderung ohne Eskalation."
           },
           {
             "id": "b",
-            "text": "Eine nachträgliche fachliche Empfehlung.",
+            "text": "Eine nachträgliche fachliche Empfehlung durch den Veranstalter für das Produkt behaupten.",
             "feedback": "Dafür gibt es keinen Auftrag."
           },
           {
             "id": "c",
-            "text": "Eine öffentliche Schuldzuweisung.",
+            "text": "Eine öffentliche Schuldzuweisung an den Veranstalter veröffentlichen.",
             "feedback": "Er möchte die Kooperation nicht unnötig belasten."
           }
         ]
@@ -530,12 +530,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Logo in den Sponsorenteil verschieben und den Empfehlungssatz davon trennen.",
+            "text": "Logo zum Sponsoring verschieben, Empfehlung trennen.",
             "feedback": "Das stellt den freigegebenen Kontext wieder her."
           },
           {
             "id": "b",
-            "text": "Die aktuelle Seite unverändert bestätigen.",
+            "text": "Die Seite mit Logo und Empfehlungssatz trotz fehlender Freigabe unverändert bestätigen.",
             "feedback": "Die veröffentlichte Anordnung weicht vom Entwurf ab."
           },
           {
@@ -687,7 +687,7 @@
           },
           {
             "id": "c",
-            "text": "Ob und wie die Chat-Antwort für diesen konkreten Vertrag zu behandeln ist.",
+            "text": "Vertragswirkung der Chat-Antwort ist offen.",
             "feedback": "Quelle und Vertrag sind noch offen."
           }
         ]
@@ -709,7 +709,7 @@
           },
           {
             "id": "b",
-            "text": "Den Kunden für eine Aussage des eigenen Systems verantwortlich machen.",
+            "text": "Botfehler dem Kunden anlasten.",
             "feedback": "Sie erkennt den Screenshot ausdrücklich an."
           },
           {
@@ -732,7 +732,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Tarifseite zitieren und den Screenshot ignorieren.",
+            "text": "Nur die Tarifseite zitieren und den dokumentierten Chatverlauf ignorieren.",
             "feedback": "Das System hat die Zusage tatsächlich angezeigt."
           },
           {
@@ -742,7 +742,7 @@
           },
           {
             "id": "c",
-            "text": "Die widersprüchliche Aussage anerkennen, Vertrag und Quelle prüfen und eine schriftliche Rückmeldung zusagen.",
+            "text": "Widerspruch anerkennen, Vertrag und Quelle prüfen, schriftlich antworten.",
             "feedback": "So bleibt der konkrete Anspruch offen und die Verantwortung sichtbar."
           }
         ]
@@ -873,7 +873,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Das Anlegen neuer Vorgänge ist beeinträchtigt; ein Workaround ist noch nicht bestätigt.",
+            "text": "Schreiben gestört; Workaround offen.",
             "feedback": "Die Fehlerrate betrifft den Schreibpfad."
           },
           {
@@ -905,7 +905,7 @@
           },
           {
             "id": "b",
-            "text": "Einen beschönigenden Status ebenso wie eine unbelegte Verlustmeldung.",
+            "text": "Schönfärbung und unbelegte Verlustmeldung.",
             "feedback": "Sie nennt beide Risiken ausdrücklich."
           },
           {
@@ -928,17 +928,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Alle Daten sind unwiederbringlich verloren.",
+            "text": "Alle gespeicherten Daten sind nach dem Schreibstopp unwiederbringlich verloren.",
             "feedback": "Ein Verlust ist nicht bestätigt."
           },
           {
             "id": "b",
-            "text": "Lesezugriffe funktionieren im Test; neue Vorgänge sind beeinträchtigt; Datenintegrität wird geprüft.",
+            "text": "Lesezugriff getestet, Schreibvorgänge gestört, Integrität offen.",
             "feedback": "Sie trennt die gemessenen Funktionen."
           },
           {
             "id": "c",
-            "text": "Der Dienst funktioniert uneingeschränkt.",
+            "text": "Der gesamte Dienst einschließlich neuer Schreibvorgänge funktioniert uneingeschränkt.",
             "feedback": "Der Schreibpfad ist gestört."
           }
         ]
@@ -1080,7 +1080,7 @@
           },
           {
             "id": "b",
-            "text": "Der Befund ist offen; weder Entwarnung noch Bestätigung ist begründet.",
+            "text": "Ohne Protokolle sind weder Entwarnung noch ein bestätigter Abfluss begründet.",
             "feedback": "Die Auswertung läuft noch."
           },
           {
@@ -1102,7 +1102,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Er verlangt eine Schuldzuweisung an den Partner.",
+            "text": "Er verlangt vor jeder Protokollprüfung eine Schuldzuweisung an den Partner.",
             "feedback": "Eine solche Absicht wird nicht genannt."
           },
           {
@@ -1112,7 +1112,7 @@
           },
           {
             "id": "c",
-            "text": "Er will zwischen voreiliger Alarmmeldung und unbegründeter Entwarnung antworten.",
+            "text": "Voreilige Warnung und Entwarnung vermeiden.",
             "feedback": "Seine Nachricht nennt beide Extreme."
           }
         ]
@@ -1130,17 +1130,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Sperrung und Entfernung nennen, Protokolle auswerten und den Partner über bestätigte Ergebnisse informieren.",
+            "text": "Sperrung, Entfernung und Protokollprüfung mit gesicherten Ergebnissen mitteilen.",
             "feedback": "Die Sofortmaßnahmen sind erfolgt, die Analyse folgt."
           },
           {
             "id": "b",
-            "text": "Nur auf Beschwerden warten.",
+            "text": "Nach Entfernung des Videos nur auf konkrete Beschwerden des Partners warten.",
             "feedback": "Die Protokollprüfung ist erforderlich."
           },
           {
             "id": "c",
-            "text": "Einen vollständigen Datenabfluss melden.",
+            "text": "Einen vollständigen Datenabfluss ohne abgeschlossene Protokollprüfung melden.",
             "feedback": "Ein Abfluss ist nicht bestätigt."
           }
         ]
@@ -1273,7 +1273,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Sie bleiben prüfbar; die vollständige Archivprüfung ist noch offen.",
+            "text": "Belege prüfbar, Archivprüfung offen.",
             "feedback": "Die Prüffunktion besteht, der Umfangstest läuft."
           },
           {
@@ -1300,7 +1300,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Neue Ausstellung und Verifikation bestehender Belege.",
+            "text": "Neue Ausstellungen, alte Belege verifizieren.",
             "feedback": "Beides hat unterschiedliche Rollen."
           },
           {
@@ -1338,7 +1338,7 @@
           },
           {
             "id": "c",
-            "text": "Alter Schlüssel signiert nicht mehr neu; bestehende Belege bleiben verifizierbar, Archivprüfung läuft.",
+            "text": "Keine neuen Signaturen; alte Belege verifizierbar, Archivprüfung offen.",
             "feedback": "Sie trennt beide Funktionen samt Prüfstatus."
           }
         ]
@@ -1477,7 +1477,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ob die zwei nicht zugeordneten Vorgänge tatsächlich abgeschlossen wurden.",
+            "text": "Ob die letzten zwei wirklich abgeschlossen wurden.",
             "feedback": "Für diese beiden fehlen noch passende Quellereignisse."
           },
           {
@@ -1515,7 +1515,7 @@
           },
           {
             "id": "c",
-            "text": "Eine Erklärung der drei Zahlen mit getrenntem Stand für die zwei ungeklärten Vorgänge.",
+            "text": "Zahlen trennen, Fälle offenlassen.",
             "feedback": "So kann er die Abweichung anerkennen, ohne den Rest vorwegzunehmen."
           }
         ]
@@ -1534,7 +1534,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Eine neue, datierte Fassung mit 138 bestätigten Abschlüssen erstellen, den ersten Bericht erhalten und zwei Vorgänge weiter prüfen.",
+            "text": "Datierte Neufassung mit 138 Abschlüssen, Erstbericht erhalten, zwei Fälle prüfen.",
             "feedback": "Das trennt den ursprünglichen Datenstand, den Abgleich und die offene Differenz."
           },
           {
@@ -1683,7 +1683,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Der frühere Bewertungsbeitrag kann die Vorauswahl beeinflusst haben.",
+            "text": "Vorauswahl möglicherweise beeinflusst.",
             "feedback": "Dieser Beitrag muss noch überprüft werden."
           },
           {
@@ -1710,7 +1710,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die erneute Prüfung des Verfahrens.",
+            "text": "Eine erneute Prüfung des gesamten Auswahlverfahrens ohne Vorfestlegung anstoßen.",
             "feedback": "Gerade diese Prüfung schützt es."
           },
           {
@@ -1720,7 +1720,7 @@
           },
           {
             "id": "c",
-            "text": "Eine voreilige Entwarnung ebenso wie einen unbelegten Vorwurf.",
+            "text": "Voreilige Entwarnung oder unbelegter Vorwurf.",
             "feedback": "Beides nennt sie in ihrer Anfrage."
           }
         ]
@@ -1748,7 +1748,7 @@
           },
           {
             "id": "c",
-            "text": "Den Ausschluss nennen und die noch offene Prüfung der Vorauswahl erläutern.",
+            "text": "Ausschluss nennen; Vorauswahl bleibt in Prüfung.",
             "feedback": "Das beschreibt Maßnahme und Lücke."
           }
         ]
@@ -1917,7 +1917,7 @@
           },
           {
             "id": "b",
-            "text": "Gerüchte begrenzen, ohne das Ergebnis der Klärung vorwegzunehmen.",
+            "text": "Gerüchte eindämmen, Klärung nicht vorwegnehmen.",
             "feedback": "Er fragt nach einer tragfähigen internen Aussage."
           },
           {
@@ -1945,12 +1945,12 @@
           },
           {
             "id": "b",
-            "text": "Die beschuldigte Person sei überführt.",
+            "text": "Die beschuldigte Person sei durch die vorläufige Maßnahme bereits überführt.",
             "feedback": "Eine Feststellung liegt nicht vor."
           },
           {
             "id": "c",
-            "text": "Es gibt eine vorläufige Planänderung während einer vertraulichen Klärung; daraus folgt kein Urteil.",
+            "text": "Vorläufige Planänderung während vertraulicher Klärung, kein Urteil.",
             "feedback": "Das wahrt Verfahren und Privatsphäre."
           }
         ]
@@ -2070,7 +2070,7 @@
           },
           {
             "id": "c",
-            "text": "Abgeschlossene Fälle, nicht alle zugewiesenen Arbeitsanteile.",
+            "text": "Fälle, nicht gesamte Arbeitszeit.",
             "feedback": "Die Einarbeitung fehlt in der Kennzahl."
           }
         ]
@@ -2114,7 +2114,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ein ehrliches Gespräch über Fallzahlen mit vollständigem Aufgabenkontext.",
+            "text": "Fallzahlen mit Aufgabenrahmen ehrlich besprechen.",
             "feedback": "Er fragt nicht nach dem Streichen der Zahl."
           },
           {
@@ -2142,7 +2142,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Fallzahl nennen, Einarbeitungsauftrag dokumentieren und Vergleich nach verfügbarer Zeit prüfen.",
+            "text": "Fallzahl nennen, Einarbeitung dokumentieren, Zeitbasis prüfen.",
             "feedback": "Das erklärt Messung und Aufgabe gemeinsam."
           },
           {
@@ -2294,7 +2294,7 @@
           },
           {
             "id": "b",
-            "text": "Individuelle Entscheidungen und verfügbare Kapazitäten.",
+            "text": "Wünsche treffen auf Kapazitäten.",
             "feedback": "Beides ist noch nicht abgeschlossen."
           },
           {
@@ -2316,7 +2316,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Wünsche ernst nehmen, ohne sie als fertige Entscheidung auszugeben.",
+            "text": "Wünsche aufnehmen, Entscheidung offenlassen.",
             "feedback": "Sie fragt nach einer ehrlichen Einordnung."
           },
           {
@@ -2349,12 +2349,12 @@
           },
           {
             "id": "b",
-            "text": "Alle Wünsche werden garantiert erfüllt.",
+            "text": "Alle geäußerten Standortwünsche unabhängig von Bedarf und Prüfung garantiert erfüllen.",
             "feedback": "Kapazitäten und Entscheidungen sind offen."
           },
           {
             "id": "c",
-            "text": "Präferenzen fließen ein; Entscheidungen sind offen und Betroffene werden vorher angehört.",
+            "text": "Präferenzen berücksichtigen; Entscheidung offen; Betroffene vorher anhören.",
             "feedback": "Das entspricht Einladung und Plan."
           }
         ]
@@ -2502,7 +2502,7 @@
           },
           {
             "id": "c",
-            "text": "Die Kennungsabweichung lässt die Probenzuordnung offen.",
+            "text": "Zuordnung wegen Kennung offen.",
             "feedback": "Das Labor prüft den Probenweg noch."
           }
         ]
@@ -2519,7 +2519,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Schnelle Information bei noch ungeklärter Zuordnung.",
+            "text": "Informieren, Zuordnung offenhalten.",
             "feedback": "Er fragt nach einem sicheren administrativen Ablauf."
           },
           {
@@ -2547,12 +2547,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Ein Tippfehler sei sicher bestätigt.",
+            "text": "Einen Tippfehler bei der Probenkennung ohne Prüfung als sicher bestätigt darstellen.",
             "feedback": "Das Labor hat die Abweichung noch nicht erklärt."
           },
           {
             "id": "b",
-            "text": "Die Zuordnung wird geprüft; die Ärztin wird nach Bestätigung über den Befund informieren.",
+            "text": "Zuordnung prüfen; Ärztin informiert nach Bestätigung.",
             "feedback": "So bleibt die Unsicherheit sichtbar."
           },
           {
@@ -2673,7 +2673,7 @@
           },
           {
             "id": "b",
-            "text": "Die Versanddatei war vor der Präferenzänderung erstellt worden.",
+            "text": "Versanddatei vor Präferenzänderung erstellt.",
             "feedback": "Die Zeitpunkte erklären die Abweichung."
           },
           {
@@ -2700,7 +2700,7 @@
           },
           {
             "id": "b",
-            "text": "Wer die Nachricht tatsächlich gelesen hat.",
+            "text": "Wer die SMS las.",
             "feedback": "Der Zugriff auf die alte Nummer ist unbekannt."
           },
           {
@@ -2732,7 +2732,7 @@
           },
           {
             "id": "c",
-            "text": "Eine Erklärung des Versands und einen überprüfbaren Schutzschritt.",
+            "text": "Versand erklären, Schutz prüfen.",
             "feedback": "Die Anfrage zielt auf Ursache und Reaktion."
           }
         ]
@@ -2749,12 +2749,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Datenschutzkoordination informieren, vorbereitete Dateien prüfen und Herrn B. sachlich updaten.",
+            "text": "Datenschutz einbeziehen, Dateien prüfen, Herrn B. informieren.",
             "feedback": "Das Verfahren verlangt Meldung und Prüfung."
           },
           {
             "id": "b",
-            "text": "Behaupten, niemand habe die SMS gelesen.",
+            "text": "Behaupten, die SMS sei von niemandem gelesen worden, obwohl das unbekannt ist.",
             "feedback": "Aus der fehlenden Rückmeldung lässt sich nicht ableiten, dass niemand die Nachricht gesehen hat."
           },
           {
@@ -2864,7 +2864,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Die überweisende Praxis hat ihn angebracht.",
+            "text": "Vermerk der überweisenden Praxis.",
             "feedback": "Der Eingang ist dokumentiert."
           },
           {
@@ -2923,7 +2923,7 @@
           },
           {
             "id": "b",
-            "text": "Den Hinweis ernst nehmen, ohne eine Woche zu versprechen.",
+            "text": "Hinweis ernst nehmen, Wochenzusage vermeiden.",
             "feedback": "Der Eingang ist bestätigt, der Termin nicht."
           },
           {
@@ -2946,12 +2946,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Ein Termin diese Woche ist garantiert.",
+            "text": "Einen Termin noch diese Woche als bereits garantiert und bestätigt darstellen.",
             "feedback": "Es gibt noch keinen Vorschlag."
           },
           {
             "id": "b",
-            "text": "Eingang und Weiterleitung sind bestätigt; Priorität und Termin folgen nach Sichtung.",
+            "text": "Eingang bestätigt; Priorität und Termin nach Sichtung.",
             "feedback": "Das trennt gesicherte Schritte und offene Entscheidung."
           },
           {
@@ -3066,7 +3066,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Einen kurzen Anrufversuch, kein bestätigtes Gespräch.",
+            "text": "Anrufversuch, kein Gespräch.",
             "feedback": "Eine erreichte Person ist nicht dokumentiert."
           },
           {
@@ -3126,7 +3126,7 @@
           },
           {
             "id": "b",
-            "text": "Eine ehrliche Entschuldigung mit einem verlässlich zugewiesenen neuen Rückruf.",
+            "text": "Entschuldigung und zugewiesener Rückruf.",
             "feedback": "Ihre Anfrage fordert beides."
           },
           {
@@ -3149,12 +3149,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Das Gespräch als geführt behaupten.",
+            "text": "Das Rückrufgespräch als geführt und dokumentiert behaupten, obwohl kein Eintrag vorliegt.",
             "feedback": "Dafür fehlt ein Vermerk."
           },
           {
             "id": "b",
-            "text": "Den Versuch erwähnen, fehlenden Gesprächsnachweis anerkennen und einen dokumentierten Rückruf vereinbaren.",
+            "text": "Versuch nennen, fehlenden Gesprächsnachweis anerkennen, Rückruf vereinbaren.",
             "feedback": "Das ist nachvollziehbar und überprüfbar."
           },
           {
@@ -3295,7 +3295,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ein gerätebezogener Befund erscheint als Befund der ganzen Retoure.",
+            "text": "Ein Gerät statt gesamte Retoure.",
             "feedback": "Die Nummer bündelt vier Geräte."
           },
           {
@@ -3327,7 +3327,7 @@
           },
           {
             "id": "b",
-            "text": "Einen begrenzten Zwischenstand und eine Einzelprüfung vor der Entscheidung.",
+            "text": "Begrenzten Zwischenstand nennen; jedes Gerät vor einer Entscheidung einzeln prüfen.",
             "feedback": "Der Verfahrensschritt ist noch offen."
           },
           {
@@ -3350,12 +3350,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Alle Geräte einzeln prüfen, den Vermerk richtig zuordnen und die Entscheidung je Gerät erklären.",
+            "text": "Geräte einzeln prüfen, Vermerk zuordnen, Entscheidungen begründen.",
             "feedback": "Das entspricht dem dokumentierten Verfahren."
           },
           {
             "id": "b",
-            "text": "Die Sammelanzeige als abschließende Begründung senden.",
+            "text": "Die Sammelanzeige als abschließende Begründung für alle Geräte und Erstattungen senden.",
             "feedback": "Sie verdeckt die Gerätenummer."
           },
           {
@@ -3502,7 +3502,7 @@
           },
           {
             "id": "b",
-            "text": "Sie ist mit 2.100 verbindlichen Stück noch nicht erreicht.",
+            "text": "2.100 Stück reichen nicht.",
             "feedback": "5.000 Stück sind erforderlich."
           },
           {
@@ -3524,17 +3524,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Einen möglichen Kostenvorteil zeigen, ohne ihn als festen Preis auszugeben.",
+            "text": "Möglichen Kostenvorteil ohne feste Preiszusage zeigen.",
             "feedback": "Der Entwurf ist zu eindeutig formuliert."
           },
           {
             "id": "b",
-            "text": "Einen bereits verhandelten Festpreis verteidigen.",
+            "text": "Den 18-Euro-Wert als festen Einkaufspreis gegenüber dem Kunden verteidigen.",
             "feedback": "Ein solcher Preis fehlt."
           },
           {
             "id": "c",
-            "text": "Die Bonusschwelle verbergen.",
+            "text": "Die vertraglich relevante Bonusschwelle gegenüber dem Kunden vollständig verbergen.",
             "feedback": "Er fragt nach einer Korrektur."
           }
         ]
@@ -3552,17 +3552,17 @@
         "options": [
           {
             "id": "a",
-            "text": "18 Euro vorbehaltlos zusagen.",
+            "text": "Einen Preis von 18 Euro ohne jede Bedingung sofort zusagen.",
             "feedback": "Die Schwelle ist offen."
           },
           {
             "id": "b",
-            "text": "Den Bonus als sofortige Gutschrift bezeichnen.",
+            "text": "Den möglichen Bonus als sofortige Gutschrift auf jeder Rechnung unabhängig von der Menge bezeichnen.",
             "feedback": "Er erfolgt gegebenenfalls nach Jahresende."
           },
           {
             "id": "c",
-            "text": "Ein tragfähiger Preis auf gesicherter Basis; den möglichen Bonus nur mit Bedingung und Zeitpunkt nennen.",
+            "text": "Preis auf gesicherter Basis; Bonus nur bedingt und zeitlich einordnen.",
             "feedback": "So werden Rechnung und Szenario getrennt."
           }
         ]
@@ -3706,7 +3706,7 @@
           },
           {
             "id": "b",
-            "text": "Den Wert als gemeinsamen Verbrauch kennzeichnen und den Aufteilungsschlüssel prüfen.",
+            "text": "Gemeinsamer Wert; Schlüssel offen.",
             "feedback": "Eine genaue Einzelzahl ist noch nicht belegbar."
           },
           {
@@ -3728,17 +3728,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Die Messung pauschal verwerfen, obwohl die Zuordnung das Problem ist.",
+            "text": "Messung pauschal statt Zuordnung verwerfen.",
             "feedback": "Er unterscheidet Wert und Zuschreibung."
           },
           {
             "id": "b",
-            "text": "Die Nachfrage des Mieters beantworten.",
+            "text": "Die Nachfrage des Mieters mit dem geprüften vertraglichen Schlüssel beantworten.",
             "feedback": "Er bittet gerade um eine Antwort."
           },
           {
             "id": "c",
-            "text": "Den vertraglichen Schlüssel prüfen.",
+            "text": "Den vertraglichen Verteilungsschlüssel vor einer Antwort an den Mieter prüfen.",
             "feedback": "Das ist ein notwendiger Schritt."
           }
         ]
@@ -3761,7 +3761,7 @@
           },
           {
             "id": "b",
-            "text": "Gesamtwert bestätigen, Einzelzuordnung zurücknehmen und Aufteilung nach geprüfter Regel nachreichen.",
+            "text": "Gesamtwert bestätigen, Einzelzuordnung korrigieren, Aufteilung nachreichen.",
             "feedback": "So wird nur der unbelegte Teil korrigiert."
           },
           {
@@ -3942,7 +3942,7 @@
           },
           {
             "id": "c",
-            "text": "Sie nannte nur den Lagerort, nicht eine feste Reservierung.",
+            "text": "Lagerort, keine Reservierung.",
             "feedback": "So blieb die offene Freigabe erkennbar."
           }
         ]
@@ -3965,12 +3965,12 @@
           },
           {
             "id": "b",
-            "text": "Den Kundenbedarf aufnehmen und Menge sowie Freigabe prüfen, bevor ein Liefertermin zugesagt wird.",
+            "text": "Bedarf aufnehmen, Menge und Freigabe vor Lieferzusage prüfen.",
             "feedback": "Die Reparaturvormerkung und Freigabe sind zu klären."
           },
           {
             "id": "c",
-            "text": "50 Teile sofort verbindlich zusagen.",
+            "text": "50 Teile sofort verbindlich zusagen, obwohl Menge und Freigabe noch ungeprüft sind.",
             "feedback": "Die Bedingungen sind ungeprüft."
           }
         ]

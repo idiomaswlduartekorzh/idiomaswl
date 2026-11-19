@@ -105,8 +105,8 @@
         "options": [
           {
             "id": "a",
-            "text": "Una risposta al cliente.",
-            "feedback": "La risposta è proprio richiesta."
+            "text": "Una risposta al cliente basata sulle condizioni oggi applicabili.",
+            "feedback": "La risposta è richiesta e può basarsi sulle condizioni attuali."
           },
           {
             "id": "b",
@@ -115,7 +115,7 @@
           },
           {
             "id": "c",
-            "text": "Una falsa perdita del saldo senza garantire regole immutabili per sempre.",
+            "text": "Una perdita inventata e promesse perpetue.",
             "feedback": "Chiede una risposta limitata al presente."
           }
         ]
@@ -138,7 +138,7 @@
           },
           {
             "id": "b",
-            "text": "Dire che il cliente non rientra nel pilota e che valgono le condizioni attuali, correggendo la bozza.",
+            "text": "Fuori pilota: condizioni attuali; correggere la bozza.",
             "feedback": "Tiene distinti stato attuale e cambi futuri."
           },
           {
@@ -279,7 +279,7 @@
           },
           {
             "id": "b",
-            "text": "Non ha verificato la fedeltà della traduzione.",
+            "text": "Traduzione non verificata.",
             "feedback": "Il controllo era stilistico."
           },
           {
@@ -301,12 +301,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Eliminare ogni recensione dal sito.",
+            "text": "Eliminare ogni recensione dal sito invece di correggere quella tradotta.",
             "feedback": "Non propone una rimozione generale."
           },
           {
             "id": "b",
-            "text": "Ripristinare il senso e rispondere senza falsificare la voce del cliente.",
+            "text": "Ripristinare il senso senza falsificare il cliente.",
             "feedback": "Chiede una correzione rispettosa."
           },
           {
@@ -329,12 +329,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Sospendere la frase, proporre una traduzione fedele e chiedere conferma al cliente prima del riuso.",
+            "text": "Sospendere frase, tradurre fedelmente, chiedere conferma prima del riuso.",
             "feedback": "La frase pubblicata è contestata."
           },
           {
             "id": "b",
-            "text": "Lasciare online «sempre» perché il tono era approvato.",
+            "text": "Lasciare online il «sempre» perché il cliente aveva approvato il tono.",
             "feedback": "Il tono non sana il cambio di significato."
           },
           {
@@ -480,7 +480,7 @@
           },
           {
             "id": "c",
-            "text": "Che ogni elemento del programma sia confermato senza modifiche.",
+            "text": "Programma non tutto confermato.",
             "feedback": "La pagina completa non è aggiornata."
           }
         ]
@@ -497,7 +497,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Evitare che una comunicazione del partner faccia annullare viaggi per errore.",
+            "text": "Evitare annullamenti di viaggio per un panel.",
             "feedback": "Le domande dei partecipanti riguardano la fiera."
           },
           {
@@ -507,7 +507,7 @@
           },
           {
             "id": "c",
-            "text": "Promettere il programma definitivo.",
+            "text": "Promettere il programma definitivo prima che gli organizzatori lo abbiano confermato.",
             "feedback": "Vuole prima verificarlo."
           }
         ]
@@ -525,7 +525,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Precisare che è cancellato il panel; la fiera resta in programma e gli aggiornamenti saranno pubblicati.",
+            "text": "Panel cancellato, fiera confermata; aggiornamenti seguiranno.",
             "feedback": "Distingue conferma e programma aperto."
           },
           {
@@ -654,7 +654,7 @@
           },
           {
             "id": "c",
-            "text": "Un esempio volutamente scorretto usato in formazione.",
+            "text": "Esempio scorretto di formazione.",
             "feedback": "La frase compare nell’esercizio SIM-417 come testo da correggere."
           }
         ]
@@ -703,7 +703,7 @@
           },
           {
             "id": "b",
-            "text": "Correggere l’attribuzione dello screenshot e prendere sul serio i ritardi reali.",
+            "text": "Correggere attribuzione, riconoscere ritardi reali.",
             "feedback": "La provenienza didattica non cancella i quattordici ticket con attesa lunga."
           },
           {
@@ -738,7 +738,7 @@
           },
           {
             "id": "c",
-            "text": "«La schermata completa è una simulazione; completiamo le verifiche sui messaggi e affrontiamo separatamente i ritardi documentati».",
+            "text": "Schermata simulata; verificare messaggi e ritardi documentati separatamente.",
             "feedback": "Distingue l’origine accertata, i limiti dei log e il problema di servizio già visibile."
           }
         ]
@@ -874,7 +874,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dimostra un caso di visualizzazione vecchia, non quanti utenti siano coinvolti.",
+            "text": "Prezzo vecchio visibile; portata ignota.",
             "feedback": "La ricostruzione è ancora aperta."
           },
           {
@@ -906,7 +906,7 @@
           },
           {
             "id": "b",
-            "text": "Un resoconto verificabile senza generalizzare il caso.",
+            "text": "Resoconto senza generalizzare.",
             "feedback": "Vuole conoscere la distribuzione effettiva."
           },
           {
@@ -929,12 +929,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Rimborsare tutti gli ordini senza analisi.",
+            "text": "Rimborsare tutti gli ordini senza verificare chi abbia visto il prezzo.",
             "feedback": "La platea non è ricostruita."
           },
           {
             "id": "b",
-            "text": "Riconoscere la pagina non aggiornata, completare l’invalidazione e verificare gli ordini interessati.",
+            "text": "Pagina obsoleta; invalidare cache e verificare ordini.",
             "feedback": "Distingue correzione tecnica e impatto."
           },
           {
@@ -1080,7 +1080,7 @@
           },
           {
             "id": "b",
-            "text": "Un piano errato, sospeso prima dell’esecuzione.",
+            "text": "Riavvio pianificato, mai eseguito.",
             "feedback": "Non risulta alcuna interruzione."
           },
           {
@@ -1107,12 +1107,12 @@
           },
           {
             "id": "b",
-            "text": "Sospendere il piano.",
-            "feedback": "È già stato sospeso."
+            "text": "Confermare che il piano errato è già stato sospeso.",
+            "feedback": "È un fatto già accertato, non un eccesso da evitare."
           },
           {
             "id": "c",
-            "text": "Nascondere la traduzione errata o inventare un disservizio.",
+            "text": "Occultare l’errore o inventare un disservizio.",
             "feedback": "La sua richiesta distingue errore e conseguenza."
           }
         ]
@@ -1130,7 +1130,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Informare il cliente del piano annullato e imporre il confronto con l’originale per istruzioni operative.",
+            "text": "Piano annullato; confrontare l’originale per le istruzioni.",
             "feedback": "Il controllo mancato va corretto."
           },
           {
@@ -1140,7 +1140,7 @@
           },
           {
             "id": "c",
-            "text": "Continuare a usare la traduzione senza verifica.",
+            "text": "Continuare a usare la traduzione errata senza confronto con il testo originale.",
             "feedback": "La procedura richiede il sorgente."
           }
         ]
@@ -1305,7 +1305,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Un timestamp tecnico è stato usato come garanzia di dati correnti.",
+            "text": "Timestamp non prova dati correnti.",
             "feedback": "La sua domanda riguarda la freschezza."
           },
           {
@@ -1333,17 +1333,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dichiarare perse le operazioni.",
+            "text": "Dichiarare perse tutte le operazioni benché il sorgente le conservi.",
             "feedback": "Il sistema sorgente le conserva."
           },
           {
             "id": "b",
-            "text": "Limitarsi a ripetere «aggiornato ieri».",
+            "text": "Limitarsi a ripetere «aggiornato ieri» senza verificare i dati correnti.",
             "feedback": "L’etichetta è ambigua."
           },
           {
             "id": "c",
-            "text": "Correggere l’etichetta, investigare l’importazione e aggiornare il cliente sulla presenza nel sorgente.",
+            "text": "Correggere etichetta, verificare importazione, aggiornare sul sorgente.",
             "feedback": "Affronta interfaccia e dati."
           }
         ]
@@ -1453,7 +1453,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Comunicazione al cliente almeno 72 ore prima.",
+            "text": "Avviso almeno 72 ore prima.",
             "feedback": "La pianificazione interna da sola non basta."
           },
           {
@@ -1480,7 +1480,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Non risulta nell’archivio principale; la ricerca non è finita.",
+            "text": "Archivio incompleto, ricerca aperta.",
             "feedback": "I canali secondari sono ancora da controllare."
           },
           {
@@ -1507,17 +1507,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La comunicazione al cliente.",
+            "text": "Informare il cliente dell’interruzione, mantenendo aperto il calcolo SLA.",
             "feedback": "Irene chiede proprio un messaggio intermedio al cliente mentre si cercano le prove dell’avviso."
           },
           {
             "id": "b",
-            "text": "La verifica della finestra.",
+            "text": "Verificare la finestra di manutenzione prima di calcolare l’accredito.",
             "feedback": "Vuole verificare se il preavviso di 72 ore sia stato inviato prima di decidere sull’accredito."
           },
           {
             "id": "c",
-            "text": "Una decisione prematura su SLA e accredito.",
+            "text": "Decisione su SLA e accredito prematura.",
             "feedback": "Chiede un messaggio intermedio."
           }
         ]
@@ -1535,17 +1535,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Riconoscere i 48 minuti, verificare l’avviso e comunicare l’esito del calcolo prima di decidere sull’accredito.",
+            "text": "Riconoscere 48 minuti, verificare avviso e calcolo prima dell’accredito.",
             "feedback": "Tiene separati fatto e qualificazione contrattuale."
           },
           {
             "id": "b",
-            "text": "Escludere subito la finestra dallo SLA.",
+            "text": "Escludere subito la finestra dallo SLA senza controllare l’avviso previsto.",
             "feedback": "Senza prova dell’avviso al cliente 72 ore prima, la condizione contrattuale per l’esclusione non è accertata."
           },
           {
             "id": "c",
-            "text": "Promettere subito un accredito definitivo.",
+            "text": "Promettere subito un accredito definitivo prima di completare il calcolo.",
             "feedback": "Il calcolo SLA e l’eventuale accredito non sono stati verificati; i 48 minuti da soli non ne fissano l’esito."
           }
         ]
@@ -1719,7 +1719,7 @@
           },
           {
             "id": "c",
-            "text": "Comunicare un esito difendibile senza accusare i valutatori.",
+            "text": "Esito difendibile, senza accusare valutatori.",
             "feedback": "Chiede rapidità e correttezza."
           }
         ]
@@ -1747,7 +1747,7 @@
           },
           {
             "id": "c",
-            "text": "Rivedere le schede con criteri comuni e documentare l’effetto sulla classifica prima di comunicarla.",
+            "text": "Rivedere schede con criteri comuni prima della classifica.",
             "feedback": "La procedura richiede comparabilità."
           }
         ]
@@ -1884,7 +1884,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Due persone hanno ricevuto l’inoltro; l’apertura dell’allegato è da verificare.",
+            "text": "Invio a due; apertura ignota.",
             "feedback": "Il registro non prova la lettura."
           },
           {
@@ -1911,17 +1911,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Un’accusa definitiva a Chiara.",
+            "text": "Attribuire a Chiara la responsabilità definitiva dell’inoltro non verificato.",
             "feedback": "Chiara ha segnalato il problema."
           },
           {
             "id": "b",
-            "text": "Trasparenza sull’errore e libertà di Chiara di decidere il seguito.",
+            "text": "Trasparenza e scelta libera di Chiara.",
             "feedback": "La mediazione resta una sua scelta."
           },
           {
             "id": "c",
-            "text": "L’incontro forzato domani.",
+            "text": "Imporre un incontro con Chiara domani senza chiederle disponibilità.",
             "feedback": "Non ha deciso se procedere."
           }
         ]
@@ -1939,7 +1939,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Promettere che l’allegato non è stato aperto.",
+            "text": "Promettere che l’allegato non è stato aperto senza aver verificato gli accessi.",
             "feedback": "Il registro non lo dimostra."
           },
           {
@@ -1949,7 +1949,7 @@
           },
           {
             "id": "c",
-            "text": "Riconoscere l’inoltro, verificare l’accesso e chiedere a Chiara come desidera procedere.",
+            "text": "Riconoscere inoltro, verificare accessi, lasciare scelta a Chiara.",
             "feedback": "Sono i limiti e le misure del dossier."
           }
         ]
@@ -2069,7 +2069,7 @@
           },
           {
             "id": "c",
-            "text": "Uno scenario calcolato su obiettivi ancora da verificare.",
+            "text": "Scenario su obiettivi incerti.",
             "feedback": "L’etichetta del portale è errata."
           }
         ]
@@ -2141,7 +2141,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Spiegare simulazione ed etichetta errata, indicare le fasi residue e la comunicazione dopo la delibera.",
+            "text": "Spiegare simulazione ed errore; comunicare dopo la delibera.",
             "feedback": "Dà una sequenza verificabile."
           },
           {
@@ -2315,7 +2315,7 @@
         "options": [
           {
             "id": "a",
-            "text": "La serietà della richiesta e la riservatezza delle ragioni.",
+            "text": "Richiesta seria, ragioni personali riservate.",
             "feedback": "Entrambe sono compatibili."
           },
           {
@@ -2343,17 +2343,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Spiegare le ragioni personali di Chiara.",
+            "text": "Spiegare al team le ragioni personali di Chiara senza il suo consenso.",
             "feedback": "La procedura tutela la riservatezza."
           },
           {
             "id": "b",
-            "text": "Confermare l’orario di Chiara come definitivo.",
+            "text": "Confermare l’orario richiesto da Chiara come decisione definitiva già presa.",
             "feedback": "Nessun accordo esiste."
           },
           {
             "id": "c",
-            "text": "Dire che si stanno valutando opzioni di turnazione, senza riferirle a dettagli personali o a una decisione già presa.",
+            "text": "Opzioni di turnazione in esame; dettagli personali riservati, decisione aperta.",
             "feedback": "Il piano non è ancora cambiato."
           }
         ]
@@ -2518,17 +2518,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Una risposta rassicurante ma condizionata alla verifica dello spazio.",
+            "text": "Rassicurare dopo verifica dello spazio.",
             "feedback": "La sua email tiene insieme visita e stanza."
           },
           {
             "id": "b",
-            "text": "Un annullamento automatico.",
+            "text": "Annullare automaticamente la visita senza verificare la stanza alternativa.",
             "feedback": "Vuole evitarlo."
           },
           {
             "id": "c",
-            "text": "Una valutazione clinica da accettazione.",
+            "text": "Fornire dall’accettazione una valutazione clinica della situazione.",
             "feedback": "L’idoneità spetta al reparto."
           }
         ]
@@ -2551,7 +2551,7 @@
           },
           {
             "id": "b",
-            "text": "Far verificare la stanza alternativa e aggiornare i pazienti prima di confermare la sede della visita.",
+            "text": "Verificare stanza alternativa; avvisare prima di confermare.",
             "feedback": "Rispetta la competenza del reparto."
           },
           {
@@ -2722,17 +2722,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La ricostruzione della copia.",
+            "text": "Ricostruire l’origine della copia errata senza diffondere altre pagine.",
             "feedback": "Giorgio vuole una copia corretta, ma chiede prima di non far circolare la pagina di terzi per email."
           },
           {
             "id": "b",
-            "text": "L’informazione al paziente.",
+            "text": "Informare il paziente dell’errore e dell’intervento sul fascicolo.",
             "feedback": "Vuole rispondere al paziente evitando di chiedergli un reinvio della pagina estranea per email."
           },
           {
             "id": "c",
-            "text": "Una nuova diffusione del dato di terzi mentre corregge il fascicolo.",
+            "text": "Nuova diffusione di dati altrui.",
             "feedback": "Chiede un canale sicuro."
           }
         ]
@@ -2750,7 +2750,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Segnalare, verificare la copia pagina per pagina e inviarla tramite portale con un aggiornamento circoscritto.",
+            "text": "Segnalare, verificare copia e inviarla via portale; aggiornare.",
             "feedback": "La procedura definisce i passi."
           },
           {
@@ -2901,7 +2901,7 @@
           },
           {
             "id": "c",
-            "text": "Che il farmaco sarà certamente in reparto domani mattina.",
+            "text": "Consegna al reparto non certa.",
             "feedback": "La consegna non è confermata."
           }
         ]
@@ -2922,7 +2922,7 @@
           },
           {
             "id": "b",
-            "text": "Farmacia per logistica, clinici per eventuali modifiche del piano.",
+            "text": "Logistica alla farmacia, terapia ai clinici.",
             "feedback": "La procedura distingue i ruoli."
           },
           {
@@ -2945,17 +2945,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Garantire l’appuntamento in base allo stock centrale.",
+            "text": "Garantire l’appuntamento solo perché il farmaco risulta nel deposito centrale.",
             "feedback": "Il reparto è senza unità."
           },
           {
             "id": "b",
-            "text": "Dire che il trasferimento è in verifica e che il team clinico sarà avvisato se il termine non è confermato.",
+            "text": "Trasferimento in verifica; avvisare i clinici se tempi non confermati.",
             "feedback": "Non anticipa decisioni mediche."
           },
           {
             "id": "c",
-            "text": "Annullare autonomamente la somministrazione.",
+            "text": "Annullare autonomamente la somministrazione prima di consultare il team clinico.",
             "feedback": "La decisione spetta al team clinico."
           }
         ]
@@ -3119,12 +3119,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Chiedere conferma all’ambulatorio.",
+            "text": "Chiedere conferma all’ambulatorio prima di inviare indicazioni sul percorso.",
             "feedback": "È una possibile soluzione."
           },
           {
             "id": "b",
-            "text": "Indicare un itinerario non controllato a una paziente che ne dipende.",
+            "text": "Indicare percorsi accessibili non verificati.",
             "feedback": "La richiesta è pratica e urgente."
           },
           {
@@ -3147,17 +3147,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire alla paziente di prendere le scale.",
+            "text": "Dire alla paziente di prendere le scale nonostante la richiesta di accessibilità.",
             "feedback": "Non risolve la sua esigenza."
           },
           {
             "id": "b",
-            "text": "Segnalare il guasto e promettere istruzioni solo dopo verifica del percorso o della stanza alternativa.",
+            "text": "Istruzioni solo dopo verifica del percorso o della stanza.",
             "feedback": "La procedura richiede la verifica."
           },
           {
             "id": "c",
-            "text": "Ripetere semplicemente «ingresso accessibile».",
+            "text": "Ripetere «ingresso accessibile» senza verificare il percorso alternativo.",
             "feedback": "Non copre il tragitto fino alla visita."
           }
         ]
@@ -3295,7 +3295,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Un difetto confermato e l’effettiva consegna delle dodici unità.",
+            "text": "Difetto e consegna non confermati.",
             "feedback": "Entrambe le verifiche sono aperte."
           },
           {
@@ -3322,17 +3322,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Nascondere le spedizioni.",
+            "text": "Nascondere le spedizioni potenzialmente interessate fino alla chiusura dell’indagine.",
             "feedback": "Le segnala apertamente."
           },
           {
             "id": "b",
-            "text": "Un contatto tempestivo con clienti potenzialmente coinvolti senza dichiarare un difetto certo.",
+            "text": "Contattare coinvolti senza dichiarare difetto certo.",
             "feedback": "Chiede tracciabilità e tono calibrato."
           },
           {
             "id": "c",
-            "text": "Annunciare un richiamo generale immediato.",
+            "text": "Annunciare un richiamo generale prima di sapere quali lotti siano coinvolti.",
             "feedback": "La decisione qualità non è stata presa."
           }
         ]
@@ -3350,17 +3350,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Ricostruire destinatari e consegne, seguire le istruzioni qualità e comunicare il controllo senza anticiparne l’esito.",
+            "text": "Ricostruire consegne, seguire qualità, comunicare verifica senza esito anticipato.",
             "feedback": "La tracciabilità precede il messaggio mirato."
           },
           {
             "id": "b",
-            "text": "Dire che tutte le unità sono difettose.",
+            "text": "Dire che tutte le unità spedite sono sicuramente difettose prima dei controlli.",
             "feedback": "Nessun difetto è confermato."
           },
           {
             "id": "c",
-            "text": "Dire che tutte le unità sono sicure.",
+            "text": "Dire che tutte le unità spedite sono sicuramente sicure prima dei controlli.",
             "feedback": "L’esame è aperto."
           }
         ]
@@ -3503,7 +3503,7 @@
           },
           {
             "id": "b",
-            "text": "Controllo del pallet e trasporto finale ancora aperti.",
+            "text": "Pallet e trasporto pendenti.",
             "feedback": "Mancano entrambi i passaggi."
           },
           {
@@ -3525,12 +3525,12 @@
         "options": [
           {
             "id": "a",
-            "text": "La promessa di arrivo basata su uno stato troppo ampio.",
+            "text": "Promessa d’arrivo basata su stato generico.",
             "feedback": "Il suo messaggio ha saltato due verifiche."
           },
           {
             "id": "b",
-            "text": "Un annullamento del contratto.",
+            "text": "Un annullamento del contratto prima di completare la verifica doganale.",
             "feedback": "La richiesta riguarda una previsione."
           },
           {
@@ -3563,7 +3563,7 @@
           },
           {
             "id": "c",
-            "text": "Correggere la promessa, spiegare i passaggi mancanti e aggiornare dopo controllo e prenotazione.",
+            "text": "Correggere promessa, spiegare passaggi mancanti, aggiornare dopo prenotazione.",
             "feedback": "La procedura definisce il momento utile."
           }
         ]
@@ -3728,7 +3728,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Correggere un’etichetta troppo netta senza sminuire il dato misurato.",
+            "text": "Correggere l’etichetta troppo netta senza sminuire la misura lorda.",
             "feedback": "Chiede un metodo verificabile."
           },
           {
@@ -3756,17 +3756,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Lasciare «scarti prodotti» senza nota.",
+            "text": "Lasciare «scarti prodotti» come etichetta senza spiegare il peso degli imballi.",
             "feedback": "L’etichetta è fuorviante."
           },
           {
             "id": "b",
-            "text": "Indicare che 6,2 è lordo, sospendere il giudizio sull’obiettivo e pubblicare il netto dopo riconciliazione.",
+            "text": "6,2 è lordo; giudizio sospeso, netto dopo riconciliazione.",
             "feedback": "Separa misura e calcolo aperto."
           },
           {
             "id": "c",
-            "text": "Sottrarre una tara stimata senza dirlo.",
+            "text": "Sottrarre una tara stimata senza dirlo né verificare i pesi.",
             "feedback": "Sarebbe un nuovo numero non verificato."
           }
         ]
@@ -3883,7 +3883,7 @@
           },
           {
             "id": "b",
-            "text": "Criteri, punteggio del richiedente e motivi documentati della valutazione.",
+            "text": "Criteri, punteggio e motivi documentati.",
             "feedback": "Questi elementi sono nel fascicolo."
           },
           {
@@ -3905,7 +3905,7 @@
         "options": [
           {
             "id": "a",
-            "text": "L’accesso all’offerta del concorrente.",
+            "text": "Accesso all’offerta altrui.",
             "feedback": "La procedura lo prevede."
           },
           {
@@ -3942,7 +3942,7 @@
           },
           {
             "id": "c",
-            "text": "Una motivazione comprensibile e la tutela dei dati di terzi.",
+            "text": "Motivazione, dati terzi protetti.",
             "feedback": "La domanda contiene entrambi i bisogni."
           }
         ]
@@ -3960,17 +3960,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Inviare subito l’offerta completa.",
+            "text": "Inviare subito l’offerta completa del concorrente senza aver verificato la riservatezza.",
             "feedback": "Contiene dati riservati non esaminati."
           },
           {
             "id": "b",
-            "text": "Fornire la motivazione propria, indicare che i documenti di terzi sono in verifica e dare una data di risposta su quella richiesta.",
+            "text": "Motivazione propria; documenti terzi in verifica; data di risposta.",
             "feedback": "Distingue i due percorsi."
           },
           {
             "id": "c",
-            "text": "Dire solo «ha perso» senza criteri.",
+            "text": "Dire soltanto «ha perso» senza spiegare i criteri né dare una risposta sui documenti.",
             "feedback": "Il verbale permette una motivazione."
           }
         ]

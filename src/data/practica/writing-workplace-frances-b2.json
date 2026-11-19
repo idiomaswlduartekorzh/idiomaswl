@@ -52,17 +52,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Les textes et les visuels, pas la destination du QR code.",
+            "text": "Les textes et visuels, pas le lien du QR code.",
             "feedback": "Le bon à tirer ne présentait pas la destination du code."
           },
           {
             "id": "b",
-            "text": "Le tarif de l’ancienne page en ligne.",
+            "text": "Le tarif de l'ancienne page en ligne et les conditions associées.",
             "feedback": "Hugo a approuvé la brochure imprimée, pas le tarif affiché sur l’ancienne page après un scan."
           },
           {
             "id": "c",
-            "text": "Chaque lien présent dans la brochure.",
+            "text": "Chaque lien imprimé dans la brochure, testé sur téléphone avant tirage.",
             "feedback": "La destination du QR code ne figurait pas dans le bon à tirer présenté vendredi."
           }
         ]
@@ -79,17 +79,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Hugo a modifié la page après impression.",
+            "text": "Hugo a modifié la page de destination après impression des brochures.",
             "feedback": "Aucune modification de page par Hugo ne figure au suivi ; Léa a repris un lien ancien."
           },
           {
             "id": "b",
-            "text": "Le prospect a choisi volontairement une ancienne offre.",
+            "text": "Le prospect a volontairement choisi une ancienne offre parmi plusieurs.",
             "feedback": "Le prospect a suivi le code imprimé : le renvoi vers l’offre passée vient du lien intégré au code."
           },
           {
             "id": "c",
-            "text": "Le code a été créé avec un ancien lien sans test sur téléphone.",
+            "text": "Un ancien lien dans le QR code, non testé sur téléphone.",
             "feedback": "La fiche indique le lien repris de la campagne précédente."
           }
         ]
@@ -107,17 +107,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Qui a inventé le tarif de l’ancienne offre.",
+            "text": "Qui a décidé d'inventer le tarif de l'ancienne offre.",
             "feedback": "L’identité de la personne qui a fixé l’ancien tarif ne répond ni à la validation de la brochure ni au mauvais renvoi."
           },
           {
             "id": "b",
-            "text": "Combien de prospects ont déjà acheté.",
+            "text": "Combien de prospects ont déjà acheté l'ancienne offre grâce aux brochures.",
             "feedback": "Le registre compte des brochures remises, mais ne dit rien d’éventuels achats."
           },
           {
             "id": "c",
-            "text": "Ce qui a été vérifié et comment traiter les brochures en circulation.",
+            "text": "La vérification faite et le sort des brochures déjà distribuées.",
             "feedback": "Son courriel demande une explication et une action pour les exemplaires distribués."
           }
         ]
@@ -303,17 +303,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Le nombre de clics des abonnés.",
+            "text": "Le nombre de clics des abonnés ayant reçu l'essai.",
             "feedback": "Aucun clic d’abonné ne peut encore être attribué à cette campagne non diffusée."
           },
           {
             "id": "b",
-            "text": "Un statut précis avant de décider si une correction est nécessaire.",
+            "text": "Un statut fiable pour décider si un correctif s'impose.",
             "feedback": "Sa question porte d’abord sur la diffusion réelle."
           },
           {
             "id": "c",
-            "text": "Une justification du choix de l’ancien objet.",
+            "text": "Une justification du choix de l'ancien objet pour l'envoi.",
             "feedback": "Claire demande si l’ancien objet est parti, pas pourquoi Nicolas l’avait mis dans le test."
           }
         ]
@@ -471,17 +471,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Elle modifie la biographie de Sophie.",
+            "text": "La publicité modifie la biographie de Sophie sans son accord.",
             "feedback": "La biographie n’est pas signalée comme modifiée ; le désaccord porte sur le support publicitaire."
           },
           {
             "id": "b",
-            "text": "Elle annonce une autre conférence.",
+            "text": "Elle annonce une autre conférence que celle autorisée au départ.",
             "feedback": "La publicité concerne bien la même conférence ; c’est l’utilisation payante de la photo qui dépasse l’accord."
           },
           {
             "id": "c",
-            "text": "Elle utilise le portrait sur un support payant distinct.",
+            "text": "Le portrait figure sur une publicité payante distincte.",
             "feedback": "Aucun accord supplémentaire pour la publicité n’est enregistré."
           }
         ]
@@ -639,17 +639,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Les désinscriptions confirmées.",
+            "text": "Les 430 désinscriptions confirmées par le rapport de campagne.",
             "feedback": "Les 430 événements sont des visites de page ; seuls 17 départs de la liste sont confirmés."
           },
           {
             "id": "b",
-            "text": "Les courriels non livrés.",
+            "text": "Les 430 courriels rejetés avant leur arrivée aux abonnés.",
             "feedback": "La colonne « Préférences » ne mesure pas les échecs de livraison des courriels."
           },
           {
             "id": "c",
-            "text": "Les ouvertures de la page de préférences.",
+            "text": "Les visites de la page de préférences.",
             "feedback": "La définition de la colonne porte sur les visites de la page."
           }
         ]
@@ -720,17 +720,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Clarifier les deux mesures et examiner les 17 désinscriptions sans leur attribuer une cause inventée.",
+            "text": "Distinguer les mesures ; examiner les 17 désinscriptions sans présumer leur motif.",
             "feedback": "Dix-sept désinscriptions sont connues, mais leur motif ne l’est pas."
           },
           {
             "id": "b",
-            "text": "Affirmer que la newsletter a causé 430 départs.",
+            "text": "Attribuer les 430 prétendus départs directement à la newsletter.",
             "feedback": "Ni 430 départs ni leur cause ne sont établis par la seule colonne de visites."
           },
           {
             "id": "c",
-            "text": "Dire qu’aucune personne ne s’est désinscrite.",
+            "text": "Affirmer qu'aucun abonné ne s'est désinscrit pendant l'envoi.",
             "feedback": "Le rapport compte bien 17 désinscriptions confirmées ; zéro serait aussi inexact que 430."
           }
         ]
@@ -888,17 +888,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Du statut exact et d’un moyen de vérifier la version à utiliser.",
+            "text": "Le statut du document et la version à utiliser.",
             "feedback": "Son courriel porte sur la version que verront les participants."
           },
           {
             "id": "b",
-            "text": "D’une explication sur tous les anciens formulaires.",
+            "text": "Une explication exhaustive de tous les anciens formulaires de l'atelier.",
             "feedback": "L’historique complet des anciens formulaires ne répond pas à la question urgente : quelle version sera utilisée demain ?"
           },
           {
             "id": "c",
-            "text": "D’une promesse que la publication a déjà eu lieu.",
+            "text": "La promesse que la publication a eu lieu avant l'atelier.",
             "feedback": "Le journal ne contient aucune mise en ligne de la version 7 ; Thomas ne peut pas la présenter comme déjà publique."
           }
         ]
@@ -1056,17 +1056,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Il a été téléchargé.",
+            "text": "Le fichier a été téléchargé par Julie à 14 h 20.",
             "feedback": "Le journal ne montre ni téléchargement ni fichier mis à disposition à 14 h 20."
           },
           {
             "id": "b",
-            "text": "Il a échoué définitivement.",
+            "text": "Le traitement a échoué définitivement, sans possibilité de relance.",
             "feedback": "Une tâche encore en attente, sans message d’erreur, ne peut pas être déclarée définitivement échouée."
           },
           {
             "id": "c",
-            "text": "Il n’est pas encore annoncé comme prêt.",
+            "text": "Le fichier n'est pas encore annoncé comme prêt.",
             "feedback": "La tâche est en attente et aucune erreur n’est enregistrée."
           }
         ]
@@ -1111,17 +1111,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Vérifier la file et prévenir Julie lorsque le statut change.",
+            "text": "Vérifier la file et informer Julie d'un changement de statut.",
             "feedback": "Le journal ne montre ni fichier prêt ni erreur générale."
           },
           {
             "id": "b",
-            "text": "Dire que le fichier est déjà prêt.",
+            "text": "Dire à Julie que le fichier est déjà prêt au téléchargement.",
             "feedback": "EX-73 reste en attente et aucune notification de disponibilité n’a été émise."
           },
           {
             "id": "c",
-            "text": "Déclarer une panne générale immédiatement.",
+            "text": "Déclarer une panne générale avant de vérifier la file d'export.",
             "feedback": "Une seule tâche en attente ne prouve pas une panne touchant l’ensemble du service."
           }
         ]
@@ -1228,7 +1228,7 @@
         "options": [
           {
             "id": "a",
-            "text": "À 10 h UTC, soit 11 h à Paris.",
+            "text": "À 10 h UTC, soit 11 h à Paris ce jour-là.",
             "feedback": "Le journal mentionne 9 h UTC, et non 10 h UTC ; cette dernière heure décalerait aussi Paris à 11 h."
           },
           {
@@ -1238,7 +1238,7 @@
           },
           {
             "id": "c",
-            "text": "À 9 h, heure de Paris.",
+            "text": "À 9 h, heure de Paris, selon le journal d'envoi.",
             "feedback": "Le « 9 h » du tableau de bord correspond à UTC ; à Paris, la réception a eu lieu à 10 h ce jour-là."
           }
         ]
@@ -1308,17 +1308,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Déclarer une panne d’une heure.",
+            "text": "Déclarer une panne d'une heure alors que l'envoi est enregistré.",
             "feedback": "Le journal confirme un envoi à l’heure configurée ; l’écart vient du fuseau affiché."
           },
           {
             "id": "b",
-            "text": "Modifier l’alerte sans consulter Paul.",
+            "text": "Modifier l'alerte sans demander à Paul l'heure locale voulue.",
             "feedback": "Paul n’a pas encore validé l’heure locale visée : la modifier sans son accord risquerait un nouvel écart."
           },
           {
             "id": "c",
-            "text": "Expliquer le fuseau et demander quelle heure locale l’équipe souhaite.",
+            "text": "Expliquer le fuseau et confirmer l'heure voulue.",
             "feedback": "Aucun retard n’est visible et le nouvel horaire n’est pas encore validé."
           }
         ]
@@ -1479,17 +1479,17 @@
         "options": [
           {
             "id": "a",
-            "text": "D’un statut exact et d’une option à présenter au client.",
+            "text": "Un statut exact et une solution à présenter au client.",
             "feedback": "Son courriel demande pourquoi le bouton a disparu et ce qui suit."
           },
           {
             "id": "b",
-            "text": "D’une garantie d’accès durable.",
+            "text": "Une garantie d'accès durable malgré la fin de l'essai pilote.",
             "feedback": "Le responsable n’a pas validé d’accès durable ; Salomé ne peut donc pas le garantir avant sa réunion."
           },
           {
             "id": "c",
-            "text": "D’une explication de toutes les fonctions du produit.",
+            "text": "Une explication détaillée de toutes les fonctions du produit avant l'appel.",
             "feedback": "La question urgente porte sur le bouton Analyse de Solstice, pas sur toutes les fonctions du produit."
           }
         ]
@@ -1620,17 +1620,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Inviter Inès au dernier entretien parmi trois candidates.",
+            "text": "Inès a été invitée au dernier entretien.",
             "feedback": "Le comité n’a pas encore choisi la personne recrutée."
           },
           {
             "id": "b",
-            "text": "Lui attribuer le poste.",
+            "text": "Le poste a été attribué officiellement à Inès vendredi.",
             "feedback": "Le comité a retenu Inès pour un entretien final avec deux autres candidates ; il n’a pas attribué le poste."
           },
           {
             "id": "c",
-            "text": "Fixer sa date d’entrée.",
+            "text": "Sa date d'entrée a été fixée après son entretien final.",
             "feedback": "Aucune date d’entrée ne peut être fixée avant la décision finale et une éventuelle offre."
           }
         ]
@@ -1646,17 +1646,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Il contenait une offre signée.",
+            "text": "Le message contenait une offre écrite et signée par l'entreprise.",
             "feedback": "Le courriel ne contenait aucun document d’offre signé, seulement une invitation à la suite du processus."
           },
           {
             "id": "b",
-            "text": "Il annonçait un salaire définitif.",
+            "text": "Il annonçait déjà un salaire définitif et une date d'entrée.",
             "feedback": "Aucun salaire définitif n’est mentionné dans le suivi ; l’ambiguïté vient du mot « retenue »."
           },
           {
             "id": "c",
-            "text": "« Retenue » figurait avant la mention du dernier entretien.",
+            "text": "« Retenue » précédait la mention du dernier entretien.",
             "feedback": "La formulation était large, même si le corps évoquait l’entretien."
           }
         ]
@@ -1673,17 +1673,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une clarification rapide avant qu’Inès agisse sur une fausse certitude.",
+            "text": "Éviter qu'Inès agisse sur une offre qui n'existe pas.",
             "feedback": "Son courriel souligne le risque d’une décision fondée sur le mot « offre »."
           },
           {
             "id": "b",
-            "text": "Une date de début à annoncer aujourd’hui.",
+            "text": "Une date de début à annoncer à Inès dès aujourd'hui.",
             "feedback": "Louis cherche à corriger une impression trompeuse, pas à annoncer une date qui n’existe pas."
           },
           {
             "id": "c",
-            "text": "Une rupture immédiate du processus.",
+            "text": "Une rupture immédiate du processus de recrutement avant l'entretien final.",
             "feedback": "Le recrutement continue avec trois candidates ; rien ne justifie une rupture du processus."
           }
         ]
@@ -1700,17 +1700,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Lui dire qu’elle a obtenu le poste.",
+            "text": "Lui annoncer que le poste lui revient avant l'entretien final.",
             "feedback": "Dire que le poste est acquis transformerait une invitation à l’entretien en offre inexistante."
           },
           {
             "id": "b",
-            "text": "Confirmer son invitation à l’entretien final et préciser qu’aucune offre n’a été faite.",
+            "text": "Confirmer le dernier entretien sans laisser croire à une offre.",
             "feedback": "Le suivi montre une présélection, pas une offre approuvée."
           },
           {
             "id": "c",
-            "text": "Ignorer sa question jusqu’à la fin des entretiens.",
+            "text": "Ignorer sa question jusqu'à la fin des entretiens et du choix final.",
             "feedback": "Inès a posé une question concrète sur sa date d’arrivée ; la laisser sans réponse prolongerait le malentendu."
           }
         ]
@@ -1815,17 +1815,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Mélanie et Karim ont accepté le principe de l’échange.",
+            "text": "Mélanie et Karim ont accepté le principe de l'échange.",
             "feedback": "Seul l’accord entre collègues apparaît dans les messages."
           },
           {
             "id": "b",
-            "text": "Benoît a validé les deux services.",
+            "text": "Benoît a validé l'échange dans le planning officiel.",
             "feedback": "Benoît n’a pas encore effectué le contrôle de compétences nécessaire à sa validation."
           },
           {
             "id": "c",
-            "text": "Le planning officiel a été modifié.",
+            "text": "Le planning officiel a déjà été modifié pour samedi.",
             "feedback": "L’outil montre une demande en attente et le planning officiel maintient Mélanie le samedi."
           }
         ]
@@ -1870,17 +1870,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Elle cherche une sanction pour Karim.",
+            "text": "Elle souhaite faire sanctionner Karim pour sa demande d'échange tardive.",
             "feedback": "Mélanie mentionne sa garde d’enfant, sans demander une mesure contre Karim."
           },
           {
             "id": "b",
-            "text": "Elle veut supprimer le service de mardi.",
+            "text": "Elle veut supprimer entièrement le service de mardi de son planning.",
             "feedback": "Elle propose justement de travailler le mardi à la place ; elle ne demande pas que ce service disparaisse."
           },
           {
             "id": "c",
-            "text": "Elle doit savoir si elle travaille samedi après avoir organisé sa garde d’enfant.",
+            "text": "Elle doit savoir si elle travaille samedi pour organiser sa garde.",
             "feedback": "Son courriel exprime une conséquence concrète du malentendu."
           }
         ]
@@ -1897,17 +1897,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que l’échange est confirmé sans vérification.",
+            "text": "Dire à Mélanie que l'échange est confirmé sans vérifier l'habilitation.",
             "feedback": "L’habilitation de Karim pour le samedi n’a pas encore été vérifiée ; confirmer maintenant serait infondé."
           },
           {
             "id": "b",
-            "text": "Vérifier l’habilitation, puis donner une décision claire ou un statut précis.",
+            "text": "Vérifier l'habilitation, puis annoncer une décision ou un statut précis.",
             "feedback": "L’échange dépend d’un contrôle non encore réalisé."
           },
           {
             "id": "c",
-            "text": "Ignorer la demande jusqu’à samedi.",
+            "text": "Ignorer sa demande jusqu'à samedi malgré son besoin d'organiser la garde.",
             "feedback": "Attendre samedi laisserait Mélanie sans réponse malgré sa contrainte de garde annoncée pour ce soir."
           }
         ]
@@ -2265,17 +2265,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Elle doit corriger le programme pédagogique.",
+            "text": "Corriger le programme pédagogique avant le démarrage de la formation.",
             "feedback": "Chloé n’a pas demandé de modifier le programme de la formation ; elle doit régler son organisation de vendredi."
           },
           {
             "id": "b",
-            "text": "Elle veut annuler la formation pour tous.",
+            "text": "Annuler la formation pour tous les membres de son équipe.",
             "feedback": "Sa demande concerne sa propre place et son service, pas l’annulation de la session entière."
           },
           {
             "id": "c",
-            "text": "Elle doit prévenir son équipe après avoir échangé son service.",
+            "text": "Prévenir son équipe après avoir échangé son service.",
             "feedback": "Son organisation du vendredi dépend de sa place réelle."
           }
         ]
@@ -2292,17 +2292,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire qu’aucune place n’est confirmée et vérifier une autre possibilité.",
+            "text": "Dire qu'aucune place n'est acquise; vérifier une autre option.",
             "feedback": "Aucun désistement ni autre date n’est confirmé."
           },
           {
             "id": "b",
-            "text": "Promettre qu’un désistement aura lieu.",
+            "text": "Promettre qu'un désistement libérera forcément une place pour Chloé.",
             "feedback": "Aucun désistement n’est enregistré ; promettre qu’une place se libérera créerait une nouvelle attente trompeuse."
           },
           {
             "id": "c",
-            "text": "Présenter la liste d’attente comme une inscription.",
+            "text": "Présenter la liste d'attente comme une inscription définitive au programme.",
             "feedback": "Être première sur une liste d’attente ne donne pas encore accès aux douze places attribuées."
           }
         ]
@@ -2461,17 +2461,17 @@
         "options": [
           {
             "id": "a",
-            "text": "D’une adresse vérifiée et d’un soutien pour orienter la patiente.",
+            "text": "Une adresse vérifiée pour orienter la patiente.",
             "feedback": "Aucune nouvelle notification n’a été enregistrée."
           },
           {
             "id": "b",
-            "text": "D’un diagnostic médical.",
+            "text": "Un diagnostic médical sur l'état de la patiente avant l'arrivée.",
             "feedback": "Karim demande une orientation administrative, pas une interprétation de l’état de santé de la patiente."
           },
           {
             "id": "c",
-            "text": "D’une preuve que la patiente a ignoré un SMS.",
+            "text": "La preuve que la patiente a ignoré le SMS du cabinet.",
             "feedback": "Aucun nouvel avis du bâtiment B n’a été envoyé ; la patiente a suivi le SMS initial."
           }
         ]
@@ -2605,12 +2605,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Un résultat de consultation.",
+            "text": "Un résultat de consultation déjà validé dans le dossier.",
             "feedback": "« Dossier complet » décrit les pièces reçues et ne contient aucun résultat de consultation."
           },
           {
             "id": "b",
-            "text": "Un créneau définitivement confirmé.",
+            "text": "Un créneau définitivement confirmé par le service de rendez-vous.",
             "feedback": "L’équipe doit encore vérifier le créneau de jeudi et envoyer une confirmation distincte."
           },
           {
@@ -2632,17 +2632,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La remise des pièces administratives.",
+            "text": "La remise des pièces administratives par la personne concernée.",
             "feedback": "Les pièces ont toutes été reçues lundi ; cette étape n’est plus celle qui bloque."
           },
           {
             "id": "b",
-            "text": "La vérification du créneau et l’envoi d’une confirmation séparée.",
+            "text": "La vérification du créneau et une confirmation distincte.",
             "feedback": "Le suivi indique que le créneau n’est pas encore confirmé."
           },
           {
             "id": "c",
-            "text": "Le paiement de la consultation.",
+            "text": "Le paiement de la consultation avant de fixer le rendez-vous.",
             "feedback": "Le suivi ne mentionne aucun paiement en attente comme cause du délai de confirmation."
           }
         ]
@@ -2659,17 +2659,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une supposition sur un courrier perdu.",
+            "text": "Une hypothèse sur la disparition du courrier envoyé au patient.",
             "feedback": "Le registre montre qu’aucun courrier de confirmation n’a été envoyé, pas qu’il s’est égaré."
           },
           {
             "id": "b",
-            "text": "Une décision médicale.",
+            "text": "Une décision médicale sur le contenu du dossier administratif.",
             "feedback": "La demande porte sur le statut d’un créneau administratif, sans décision médicale dans le dossier."
           },
           {
             "id": "c",
-            "text": "Un statut exact et une indication sur la suite.",
+            "text": "Un statut exact et la suite à annoncer.",
             "feedback": "Il souhaite éviter de présenter comme acquis un horaire absent du dossier."
           }
         ]
@@ -2686,17 +2686,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Conseiller de venir à une heure choisie au hasard.",
+            "text": "Conseiller de venir jeudi à une heure choisie sans validation.",
             "feedback": "Aucun horaire n’est confirmé ; choisir une heure au hasard exposerait la personne à un déplacement inutile."
           },
           {
             "id": "b",
-            "text": "Annoncer que jeudi est définitivement réservé.",
+            "text": "Annoncer que le rendez-vous de jeudi est définitivement réservé.",
             "feedback": "La vérification du créneau reste en cours : jeudi n’est pas encore définitivement réservé."
           },
           {
             "id": "c",
-            "text": "Demander l’état de la vérification et transmettre ensuite une réponse confirmée.",
+            "text": "Vérifier le créneau puis transmettre une réponse confirmée.",
             "feedback": "Aucun horaire confirmé n’est encore enregistré."
           }
         ]
@@ -2802,17 +2802,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Un véhicule pour demain.",
+            "text": "Un véhicule précis pour le rendez-vous de demain.",
             "feedback": "La centrale a accusé réception sans attribuer de véhicule pour vendredi."
           },
           {
             "id": "b",
-            "text": "Une heure de passage.",
+            "text": "Une heure de passage confirmée pour le patient.",
             "feedback": "Aucune heure de passage n’a été fournie dans sa réponse."
           },
           {
             "id": "c",
-            "text": "La réception de la demande seulement.",
+            "text": "La réception de la demande, sans réservation.",
             "feedback": "La centrale n’a attribué ni véhicule ni horaire."
           }
         ]
@@ -2829,17 +2829,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une démarche engagée, pas une réservation acceptée.",
+            "text": "Une demande transmise, sans réservation encore acceptée.",
             "feedback": "Aucune confirmation n’apparaît dans la fiche."
           },
           {
             "id": "b",
-            "text": "Un trajet entièrement confirmé.",
+            "text": "Un trajet entièrement confirmé par la centrale pour demain.",
             "feedback": "« Transport demandé » décrit l’envoi de la requête, pas l’acceptation d’un trajet."
           },
           {
             "id": "c",
-            "text": "Une annulation du rendez-vous.",
+            "text": "Une annulation du rendez-vous en raison d'un manque de véhicule.",
             "feedback": "La fiche ne dit rien d’une annulation de rendez-vous ; elle suit uniquement le transport."
           }
         ]
@@ -2856,17 +2856,17 @@
         "options": [
           {
             "id": "a",
-            "text": "D’un avis médical sur le trajet.",
+            "text": "Un avis médical sur la capacité du patient à voyager.",
             "feedback": "Sonia demande comment organiser l’arrivée, sans solliciter d’avis sur la nécessité médicale du trajet."
           },
           {
             "id": "b",
-            "text": "D’un statut fiable pour informer le patient et organiser l’arrivée.",
+            "text": "Un statut fiable pour organiser l'arrivée du patient.",
             "feedback": "Son courriel demande une information administrative vérifiée."
           },
           {
             "id": "c",
-            "text": "D’une heure choisie pour le rassurer.",
+            "text": "Une heure de passage choisie sans confirmation de la centrale.",
             "feedback": "Inventer une heure pour rassurer le patient le laisserait attendre un véhicule non confirmé."
           }
         ]
@@ -2998,17 +2998,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Une consultation vidéo.",
+            "text": "Une consultation vidéo avec un lien de connexion actif.",
             "feedback": "Le lien vient d’un rappel erroné ; la fiche officielle maintient le rendez-vous au cabinet 3."
           },
           {
             "id": "b",
-            "text": "Un rendez-vous annulé.",
+            "text": "Un rendez-vous annulé avant l'envoi du lien vidéo.",
             "feedback": "Le cabinet 3 reste réservé et aucune annulation ne figure au suivi."
           },
           {
             "id": "c",
-            "text": "Une consultation sur place au cabinet 3.",
+            "text": "Une consultation au cabinet 3, en présentiel.",
             "feedback": "La fiche et la réservation du cabinet confirment le présentiel."
           }
         ]
@@ -3248,17 +3248,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Que le colis est en route.",
+            "text": "Que le colis est déjà en route avec le transporteur.",
             "feedback": "Dire que le colis est en route répéterait la supposition d’Eva malgré sa présence dans l’entrepôt."
           },
           {
             "id": "b",
-            "text": "Le statut réel et la prochaine vérification, sans numéro de suivi inventé.",
+            "text": "Le statut réel et la prochaine vérification, sans suivi inventé.",
             "feedback": "La nouvelle collecte n’est pas encore confirmée."
           },
           {
             "id": "c",
-            "text": "Que la livraison aura lieu vendredi.",
+            "text": "Que la livraison aura lieu vendredi, comme annoncé à la cliente.",
             "feedback": "La collecte demandée pour vendredi n’est pas confirmée, encore moins une livraison ce jour-là."
           }
         ]
@@ -3275,17 +3275,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Affirmer que l’intervention n’a eu aucun effet.",
+            "text": "Affirmer que l'intervention sur la commande n'a retardé aucun départ.",
             "feedback": "La fermeture du quai a précisément empêché la collecte de mercredi."
           },
           {
             "id": "b",
-            "text": "Créer un faux numéro de suivi provisoire.",
+            "text": "Inventer un numéro de suivi pour rassurer Eva avant l'enlèvement.",
             "feedback": "Aucun numéro de suivi transporteur n’existe avant la prise en charge du colis."
           },
           {
             "id": "c",
-            "text": "Obtenir la confirmation du transporteur et mettre à jour Eva avant de promettre une date.",
+            "text": "Vérifier l'enlèvement et informer Eva avant toute date promise.",
             "feedback": "Le quai fermé a empêché la collecte et la nouvelle demande est encore en attente."
           }
         ]
@@ -3472,17 +3472,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que la salle 2 est chauffée.",
+            "text": "Dire à l'équipe que la salle 2 est déjà chauffée.",
             "feedback": "La salle reste froide et aucun test ne permet de la déclarer chauffée."
           },
           {
             "id": "b",
-            "text": "Fermer M-44 pour éviter deux tickets.",
+            "text": "Fermer le ticket M-44 pour ne conserver qu'une demande.",
             "feedback": "M-44 représente le remplacement encore à faire ; le fermer masquerait le travail restant."
           },
           {
             "id": "c",
-            "text": "Vérifier une autre salle et informer l’équipe que la réparation reste en attente.",
+            "text": "Vérifier une autre salle et signaler que la réparation reste en attente.",
             "feedback": "Aucune réparation ni test final n’est enregistré."
           }
         ]
@@ -3641,17 +3641,17 @@
         "options": [
           {
             "id": "a",
-            "text": "D’un statut exact pour corriger sa réponse au client.",
+            "text": "Un statut exact pour rectifier sa réponse au client.",
             "feedback": "Son courriel demande ce que signifie « approuvé » et ce qu’il peut dire."
           },
           {
             "id": "b",
-            "text": "D’une garantie de réception bancaire aujourd’hui.",
+            "text": "Une garantie bancaire que le versement arrivera avant ce soir.",
             "feedback": "Le service paiements n’a même pas reçu l’ordre, donc une réception bancaire aujourd’hui ne peut être garantie."
           },
           {
             "id": "c",
-            "text": "D’une nouvelle décision sur le montant.",
+            "text": "Une nouvelle décision sur le montant remboursable au client.",
             "feedback": "Le montant a déjà été approuvé vendredi ; il manque l’envoi au paiement, pas une nouvelle décision sur le montant."
           }
         ]
@@ -3668,17 +3668,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que la banque a déjà crédité le compte.",
+            "text": "Dire au client que la banque a déjà crédité son compte.",
             "feedback": "Sans numéro de transaction, Sabrina ne peut pas affirmer que la banque a crédité le compte."
           },
           {
             "id": "b",
-            "text": "Transmettre l’ordre et confirmer sa prise en charge avant de parler d’un versement.",
+            "text": "Transmettre l'ordre, confirmer sa prise en charge, puis parler du versement.",
             "feedback": "Le service paiements n’a pas encore reçu l’ordre."
           },
           {
             "id": "c",
-            "text": "Attendre sans informer le client.",
+            "text": "Attendre le versement sans informer le client du statut de l'ordre.",
             "feedback": "Le client attend une rectification du statut ; ne rien lui dire prolongerait l’impression d’un versement déjà lancé."
           }
         ]
@@ -3809,17 +3809,17 @@
         "options": [
           {
             "id": "a",
-            "text": "La note « 60 + 6 » a fait ajouter six repas au total.",
+            "text": "La note « 60 + 6 » a ajouté six repas.",
             "feedback": "Le devis suit la note abrégée plutôt que le brief complet."
           },
           {
             "id": "b",
-            "text": "Le traiteur a changé le nombre sans message.",
+            "text": "Le traiteur a changé seul le nombre de repas après validation.",
             "feedback": "Le traiteur a suivi la note « 60 + 6 » envoyée par Éric ; le surplus ne vient pas d’un changement sans message."
           },
           {
             "id": "c",
-            "text": "Six participants ont annulé.",
+            "text": "Six participants ont annulé et le traiteur a revu le devis.",
             "feedback": "Aucune annulation de participant n’apparaît ; le problème est l’addition des menus végétariens au total."
           }
         ]
@@ -3865,17 +3865,17 @@
         "options": [
           {
             "id": "a",
-            "text": "Dire que les repas supplémentaires sont déjà préparés.",
+            "text": "Dire que les six repas supplémentaires sont déjà préparés par le traiteur.",
             "feedback": "Le traiteur n’a pas lancé la préparation ; annoncer des repas déjà faits serait contraire au suivi."
           },
           {
             "id": "b",
-            "text": "Valider les 66 repas pour éviter un retard.",
+            "text": "Valider les 66 repas sans vérifier si ce total correspond aux participants.",
             "feedback": "Valider 66 repas engagerait six commandes de plus que les 60 participants prévus dans le brief."
           },
           {
             "id": "c",
-            "text": "Préciser 54 repas standards et 6 végétariens, puis demander un devis corrigé.",
+            "text": "Préciser 54 repas standards et 6 végétariens; demander un devis corrigé.",
             "feedback": "La préparation n’a pas commencé et le devis reste non validé."
           }
         ]

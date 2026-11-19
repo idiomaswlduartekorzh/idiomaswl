@@ -85,7 +85,7 @@
           },
           {
             "id": "b",
-            "text": "O prazo até sexta-feira.",
+            "text": "A menção ao prazo até sexta-feira no anúncio.",
             "feedback": "O prazo está no briefing aprovado."
           },
           {
@@ -306,7 +306,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Quer cancelar a parceria com Renata.",
+            "text": "Quer cumprir o prazo cancelando a publicação do vídeo com Renata.",
             "feedback": "A criadora se dispõe a corrigir a tela."
           },
           {
@@ -316,7 +316,7 @@
           },
           {
             "id": "c",
-            "text": "Quer mudar o produto anunciado.",
+            "text": "Quer trocar o produto anunciado e manter o preço mostrado no vídeo.",
             "feedback": "A dúvida é sobre o valor, não sobre o produto."
           }
         ]
@@ -339,13 +339,13 @@
           },
           {
             "id": "b",
-            "text": "Manter R$ 79 no vídeo e explicar apenas na legenda.",
+            "text": "Publicar com R$ 79 no vídeo e corrigir o preço só na legenda.",
             "feedback": "A tela continuaria em conflito com a página do produto."
           },
           {
             "id": "c",
-            "text": "Dizer que o roteiro já autorizou qualquer preço.",
-            "feedback": "A aprovação não trazia valor numérico."
+            "text": "Usar o preço novo no roteiro e deixar a tela antiga no vídeo.",
+            "feedback": "Mudar o roteiro não corrige a tela com R$ 79 que o público verá."
           }
         ]
       }
@@ -546,7 +546,7 @@
           },
           {
             "id": "c",
-            "text": "Manter 180 participantes e citar 112 só se perguntarem.",
+            "text": "Manter 180 como participantes e pôr 112 apenas na nota final.",
             "feedback": "A frase atual atribui presença a quem não entrou."
           }
         ]
@@ -710,7 +710,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Se deve reescrever o depoimento aprovado.",
+            "text": "Se deve reescrever o depoimento já aprovado para evitar nova revisão.",
             "feedback": "O texto já recebeu confirmação do cliente."
           },
           {
@@ -720,7 +720,7 @@
           },
           {
             "id": "c",
-            "text": "Se deve excluir a pasta de imagens.",
+            "text": "Se deve excluir a foto da pasta antes de mostrar o layout.",
             "feedback": "Ele pergunta sobre o uso público, não sobre apagar arquivos."
           }
         ]
@@ -738,12 +738,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Descartar também o depoimento escrito.",
+            "text": "Usar a foto da pasta e descartar o depoimento escrito aprovado.",
             "feedback": "A frase recebeu aprovação explícita."
           },
           {
             "id": "b",
-            "text": "Publicar com a foto porque ela existe na pasta.",
+            "text": "Publicar o depoimento com a foto e pedir autorização depois.",
             "feedback": "O arquivamento interno não confirma esse uso no site."
           },
           {
@@ -910,7 +910,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Trocar o celular da cliente.",
+            "text": "Trocar o celular da cliente antes de procurar o rascunho no notebook.",
             "feedback": "A preocupação é o rascunho, não o aparelho."
           },
           {
@@ -920,7 +920,7 @@
           },
           {
             "id": "c",
-            "text": "Prometer uma restauração pelo servidor.",
+            "text": "Prometer recuperar no servidor o rascunho que não foi sincronizado.",
             "feedback": "Não existe cópia sincronizada confirmada."
           }
         ]
@@ -938,7 +938,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Criar um documento vazio no celular com o mesmo nome.",
+            "text": "Criar no celular um documento igual e esperar que o texto reapareça.",
             "feedback": "Isso não recupera o conteúdo local e pode confundir as versões."
           },
           {
@@ -948,7 +948,7 @@
           },
           {
             "id": "c",
-            "text": "Dizer que o servidor apagou a proposta.",
+            "text": "Dizer que o servidor apagou a proposta antes de verificar o notebook.",
             "feedback": "O registro não sustenta essa afirmação."
           }
         ]
@@ -1090,7 +1090,7 @@
           },
           {
             "id": "b",
-            "text": "Sim, basta esperar até as 11h.",
+            "text": "Sim, o endereço será reativado automaticamente às 11h.",
             "feedback": "O prazo expirou às 8h e não há reativação automática."
           },
           {
@@ -1310,12 +1310,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Se deve publicar o painel externamente.",
+            "text": "Decidir se deve publicar externamente o painel usado na simulação.",
             "feedback": "Não há proposta de comunicação pública."
           },
           {
             "id": "b",
-            "text": "Se deve iniciar outra simulação.",
+            "text": "Decidir se deve repetir a simulação antes de corrigir o aviso.",
             "feedback": "O teste é da engenharia, e a dúvida é operacional."
           },
           {
@@ -1343,12 +1343,12 @@
           },
           {
             "id": "b",
-            "text": "Confirmar um aumento real de clientes.",
+            "text": "Enviar o painel real, mas confirmar que o pico veio de novos clientes.",
             "feedback": "O painel específico não sustenta essa leitura."
           },
           {
             "id": "c",
-            "text": "Apagar o alerta sem falar com Bia.",
+            "text": "Apagar o alerta e deixar Bia concluir sozinha o que ocorreu.",
             "feedback": "Ela já comunicou a equipe e precisa de um esclarecimento."
           }
         ]
@@ -1510,7 +1510,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Retirar o Produto Azul do site.",
+            "text": "Explicar o link e retirar o produto do site até amanhã.",
             "feedback": "Ela quer confirmar acesso, não removê-lo."
           },
           {
@@ -1520,7 +1520,7 @@
           },
           {
             "id": "c",
-            "text": "Mudar o preço do produto.",
+            "text": "Explicar que a busca não funciona porque o preço mudou.",
             "feedback": "Não há preço na discussão."
           }
         ]
@@ -1537,12 +1537,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que o link é provisório até nova aprovação.",
+            "text": "Dizer que o link depende de nova aprovação do produto.",
             "feedback": "A página já está publicada para acesso externo."
           },
           {
             "id": "b",
-            "text": "Garantir que a busca funcionará imediatamente às 17h.",
+            "text": "Verificar depois da atualização e garantir resultado às 17h.",
             "feedback": "A atualização ainda não ocorreu."
           },
           {
@@ -1707,12 +1707,12 @@
         "options": [
           {
             "id": "a",
-            "text": "A exclusão do curso de segurança.",
+            "text": "Decidir se o curso deve ser excluído para quem viu o vídeo.",
             "feedback": "Quer entender a conclusão, não apagar o curso."
           },
           {
             "id": "b",
-            "text": "Uma punição por atraso antes da reunião.",
+            "text": "Reconhecer o vídeo visto e pedir punição antes de verificar o questionário.",
             "feedback": "Não solicita medida disciplinar."
           },
           {
@@ -1740,12 +1740,12 @@
           },
           {
             "id": "b",
-            "text": "Dizer que Paulo não abriu o curso.",
+            "text": "Dizer que Paulo não abriu o curso e pedir que assista novamente.",
             "feedback": "O histórico mostra a visualização completa."
           },
           {
             "id": "c",
-            "text": "Marcar o curso como concluído sem questionário.",
+            "text": "Reconhecer o vídeo e marcar o curso concluído sem questionário.",
             "feedback": "A regra exige o envio para esse status."
           }
         ]
@@ -1911,12 +1911,12 @@
           },
           {
             "id": "b",
-            "text": "Cancelar a conversa de sexta-feira.",
+            "text": "Cancelar a conversa de sexta para evitar dúvidas sobre os dois papéis.",
             "feedback": "Ele pretende mantê-la."
           },
           {
             "id": "c",
-            "text": "Impedir que Davi fale com Lara.",
+            "text": "Impedir Davi de falar com Lara para evitar orientações conflitantes.",
             "feedback": "Não questiona o apoio cotidiano do mentor."
           }
         ]
@@ -1935,7 +1935,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Pedir a Lara que escolha quem será seu gestor.",
+            "text": "Pedir que Lara escolha seu gestor entre as duas pessoas citadas.",
             "feedback": "A gestão formal já está registrada."
           },
           {
@@ -1945,7 +1945,7 @@
           },
           {
             "id": "c",
-            "text": "Transferir a avaliação a Davi por causa da palavra referência.",
+            "text": "Explicar os papéis e transferir a avaliação a Davi.",
             "feedback": "O plano de mentor não altera a responsabilidade formal."
           }
         ]
@@ -2107,7 +2107,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Alterar o valor da viagem.",
+            "text": "Saber quando receberá o dinheiro e pedir mudança do valor aprovado.",
             "feedback": "Não contesta os R$ 420 aprovados."
           },
           {
@@ -2117,7 +2117,7 @@
           },
           {
             "id": "c",
-            "text": "Pedir uma nova viagem a Recife.",
+            "text": "Saber se pode pedir outra viagem antes do pagamento do reembolso.",
             "feedback": "A mensagem se refere ao reembolso anterior."
           }
         ]
@@ -2135,13 +2135,13 @@
         "options": [
           {
             "id": "a",
-            "text": "O banco recusou o pagamento.",
+            "text": "Dizer que o banco recusou o pagamento apesar dos dados completos.",
             "feedback": "Não há envio ou recusa bancária registrada."
           },
           {
             "id": "b",
-            "text": "O dinheiro já está na conta de Nina.",
-            "feedback": "A funcionária informa que não recebeu e o lote ainda não ocorreu."
+            "text": "Confirmar os dados e afirmar que o depósito ocorrerá na sexta-feira.",
+            "feedback": "O lote de sexta é uma previsão de envio, não uma garantia de crédito na conta nesse dia."
           },
           {
             "id": "c",
@@ -2509,12 +2509,12 @@
           },
           {
             "id": "b",
-            "text": "Quer cancelar um pagamento já feito.",
+            "text": "Teme cobrança adicional e quer cancelar um pagamento que não ocorreu.",
             "feedback": "Não há pagamento registrado."
           },
           {
             "id": "c",
-            "text": "Quer mudar o nome da avaliação.",
+            "text": "Teme cobrança adicional porque o nome da avaliação mudou no e-mail.",
             "feedback": "O conflito é financeiro e de escopo."
           }
         ]
@@ -2533,12 +2533,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Garantir que o complemento não terá custo.",
+            "text": "Explicar a estimativa e garantir que o complemento será gratuito.",
             "feedback": "O documento não define a inclusão do complemento."
           },
           {
             "id": "b",
-            "text": "Cobrar R$ 260 agora como valor final.",
+            "text": "Cobrar R$ 260 agora e chamar o orçamento de valor final.",
             "feedback": "Não há cobrança emitida nem escopo final."
           },
           {
@@ -2711,12 +2711,12 @@
           },
           {
             "id": "b",
-            "text": "Cancelar a consulta de sexta.",
+            "text": "Evitar um horário errado cancelando a consulta de sexta-feira.",
             "feedback": "A consulta continua confirmada."
           },
           {
             "id": "c",
-            "text": "Retirar o apoio na recepção.",
+            "text": "Evitar um horário errado retirando o apoio já previsto na recepção.",
             "feedback": "O apoio faz parte do registro de acesso."
           }
         ]
@@ -2735,7 +2735,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Informar um veículo às 8h sem verificar.",
+            "text": "Confirmar o apoio na clínica e anunciar veículo às 8h.",
             "feedback": "Não existe reserva ou horário de busca no sistema."
           },
           {
@@ -2745,7 +2745,7 @@
           },
           {
             "id": "c",
-            "text": "Dizer que não há qualquer apoio para cadeira de rodas.",
+            "text": "Perguntar sobre a chegada e negar o apoio para cadeira de rodas.",
             "feedback": "A entrada e o apoio na recepção estão registrados."
           }
         ]
@@ -2886,7 +2886,7 @@
           },
           {
             "id": "b",
-            "text": "A entrada principal do prédio principal.",
+            "text": "A entrada principal do prédio, indicada no lembrete de consulta.",
             "feedback": "Foi justamente o caminho que levou a paciente ao balcão errado."
           },
           {
@@ -2908,12 +2908,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Uma reclamação contra a paciente.",
+            "text": "Orientar novos pacientes registrando uma reclamação contra quem se perdeu.",
             "feedback": "A mensagem não a orientava sobre o anexo."
           },
           {
             "id": "b",
-            "text": "Uma mudança do horário da coleta.",
+            "text": "Orientar novos pacientes mudando o horário da coleta no lembrete.",
             "feedback": "A coleta das 9h permanece prevista."
           },
           {
@@ -2937,7 +2937,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Trocar o número 120 por outro.",
+            "text": "Trocar o número 120 no lembrete e manter a entrada principal.",
             "feedback": "O número do complexo está correto."
           },
           {
@@ -2947,7 +2947,7 @@
           },
           {
             "id": "c",
-            "text": "Enviar o mesmo lembrete novamente.",
+            "text": "Reenviar o mesmo lembrete e explicar a porta lateral apenas por telefone.",
             "feedback": "Ele continuaria sem a indicação da entrada."
           }
         ]
@@ -3512,7 +3512,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Quer mudar a chegada do palestrante.",
+            "text": "Corrigir o convite mudando a hora de chegada do palestrante.",
             "feedback": "O horário dele está alinhado ao programa."
           },
           {
@@ -3522,7 +3522,7 @@
           },
           {
             "id": "c",
-            "text": "Quer cancelar os testes de som.",
+            "text": "Corrigir o deslocamento cancelando os testes de som previstos.",
             "feedback": "A preparação explica a reserva antecipada."
           }
         ]
@@ -3541,7 +3541,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Manter 8h porque é o início da reserva.",
+            "text": "Manter 8h no convite porque a reserva da sala começa cedo.",
             "feedback": "Esse horário pertence à montagem."
           },
           {
@@ -3551,7 +3551,7 @@
           },
           {
             "id": "c",
-            "text": "Pedir ao palestrante que comece às 8h sem consulta.",
+            "text": "Pedir ao palestrante que comece às 8h, sem rever os convites.",
             "feedback": "O programa marca abertura às 10h e chegada às 9h30."
           }
         ]
@@ -3912,7 +3912,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Quer retirar a aprovação da verba.",
+            "text": "Corrigir a previsão retirando a aprovação de verba já concedida.",
             "feedback": "A pergunta é sobre a etapa de compra."
           },
           {
@@ -3922,7 +3922,7 @@
           },
           {
             "id": "c",
-            "text": "Quer mudar a quantidade de oito suportes.",
+            "text": "Corrigir a previsão mudando a quantidade antes do pedido ao fornecedor.",
             "feedback": "Não contesta a quantidade solicitada."
           }
         ]
@@ -3945,12 +3945,12 @@
           },
           {
             "id": "b",
-            "text": "Garantir entrega na próxima semana.",
+            "text": "Enviar o pedido e garantir entrega na próxima semana sem consultar a disponibilidade do fornecedor.",
             "feedback": "Nenhum pedido foi enviado e não há prazo informado."
           },
           {
             "id": "c",
-            "text": "Dizer que o fornecedor perdeu o pedido.",
+            "text": "Dizer que o fornecedor perdeu um pedido que ainda não foi enviado.",
             "feedback": "O registro mostra que ele ainda está em rascunho."
           }
         ]

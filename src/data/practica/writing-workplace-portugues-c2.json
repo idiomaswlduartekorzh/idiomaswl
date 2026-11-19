@@ -106,12 +106,12 @@
         "options": [
           {
             "id": "a",
-            "text": "A ideia de que Ana aprovou a legenda.",
+            "text": "Preservar a relação com Ana, atribuindo a ela a aprovação da legenda que gerou a promessa contestada.",
             "feedback": "Essa aprovação não está registrada."
           },
           {
             "id": "b",
-            "text": "Uma defesa da promessa de 30 dias.",
+            "text": "Defender a promessa de 30 dias como se Ana tivesse aprovado toda a peça.",
             "feedback": "Ela não é comprovada."
           },
           {
@@ -134,7 +134,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Afirmar que ninguém viu a peça.",
+            "text": "Informar Ana de que ninguém viu a peça e encerrar a apuração do alcance.",
             "feedback": "O alcance ainda é desconhecido."
           },
           {
@@ -144,8 +144,8 @@
           },
           {
             "id": "c",
-            "text": "Reativar com a mesma legenda e uma nota pequena.",
-            "feedback": "A atribuição continuaria falsa."
+            "text": "Retirar apenas a atribuição a Ana, reativar a peça e tratar a legenda como um problema já resolvido.",
+            "feedback": "Retirar a atribuição não corrige a legenda nem autoriza reativar a peça antes de apurar o alcance."
           }
         ]
       }
@@ -303,7 +303,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Uma disputa pública imediata.",
+            "text": "Proteger a parceria atual iniciando uma disputa pública com os outros parceiros da cidade.",
             "feedback": "Ela quer conversar primeiro."
           },
           {
@@ -313,7 +313,7 @@
           },
           {
             "id": "c",
-            "text": "Um direito nacional já concedido.",
+            "text": "Preservar a parceria atual e apresentar aos demais parceiros a exclusividade como um direito nacional já concedido.",
             "feedback": "O acordo não o prevê."
           }
         ]
@@ -336,12 +336,12 @@
           },
           {
             "id": "b",
-            "text": "Cancelar todos os eventos de Recife.",
+            "text": "Cancelar os eventos de Recife e apresentar o cancelamento como limite territorial da parceria.",
             "feedback": "Eles estão cobertos."
           },
           {
             "id": "c",
-            "text": "Manter o post até surgir reclamação formal.",
+            "text": "Manter o post enquanto não houver reclamação formal e esclarecer depois aos outros parceiros o alcance da exclusividade.",
             "feedback": "A dúvida já chegou aos outros parceiros."
           }
         ]
@@ -510,12 +510,12 @@
           },
           {
             "id": "b",
-            "text": "Atribuir o erro exclusivamente à imprensa.",
-            "feedback": "O texto saiu da agência contratada."
+            "text": "Corrigir o material enviado pela equipe, atribuindo a afirmação de vitória exclusivamente aos veículos que o receberam.",
+            "feedback": "A afirmação de vitória já constava no material enviado pela agência contratada, não foi criada pelos veículos."
           },
           {
             "id": "c",
-            "text": "Apagar a notícia da indicação.",
+            "text": "Corrigir o material da equipe apagando também a notícia legítima sobre a indicação ao prêmio.",
             "feedback": "Ele a considera boa notícia."
           }
         ]
@@ -538,12 +538,12 @@
           },
           {
             "id": "b",
-            "text": "Confirmar vitória para evitar constrangimento.",
+            "text": "Confirmar a vitória aos oito veículos e ajustar todos os canais para evitar constrangimento posterior.",
             "feedback": "Não há vencedor anunciado."
           },
           {
             "id": "c",
-            "text": "Aguardar a sexta sem corrigir.",
+            "text": "Aguardar a sexta-feira para confirmar o resultado antes de avisar os oito veículos sobre o erro no material.",
             "feedback": "A afirmação errada já circulou."
           }
         ]
@@ -702,7 +702,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A garantia de que A converte melhor.",
+            "text": "Preservar a métrica favorável e apresentá-la como prova de que a versão A converte melhor.",
             "feedback": "Essa comparação não foi feita."
           },
           {
@@ -712,7 +712,7 @@
           },
           {
             "id": "c",
-            "text": "A necessidade de esconder os cliques.",
+            "text": "Conciliar os cliques e a promessa escondendo da equipe as métricas da versão B.",
             "feedback": "Ela quer nomeá-los corretamente."
           }
         ]
@@ -730,12 +730,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Declarar A vencedora definitiva.",
+            "text": "Declarar a versão A vencedora definitiva e reabrir a campanha com a mesma promessa.",
             "feedback": "O teste e a análise não foram concluídos."
           },
           {
             "id": "b",
-            "text": "Adotar B imediatamente por causa dos cliques.",
+            "text": "Adotar a versão B por causa dos cliques e comunicar a troca como resultado definitivo do teste interrompido.",
             "feedback": "A mensagem gerou reclamações."
           },
           {
@@ -905,7 +905,7 @@
         "options": [
           {
             "id": "a",
-            "text": "A necessidade comprovada de refazer a solicitação.",
+            "text": "Responder à diferença entre o rótulo final e os anexos ausentes, exigindo que o cliente refaça a solicitação.",
             "feedback": "A fila deve ser examinada primeiro."
           },
           {
@@ -915,7 +915,7 @@
           },
           {
             "id": "c",
-            "text": "Uma cobrança adicional pela exportação.",
+            "text": "Explicar o rótulo final como sinal de uma cobrança adicional ainda pendente pela exportação.",
             "feedback": "A pergunta não menciona cobrança."
           }
         ]
@@ -933,7 +933,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Repetir que tudo foi entregue.",
+            "text": "Repetir que a exportação terminou e pedir ao cliente que procure os anexos em outra pasta antes de abrir uma verificação.",
             "feedback": "Os anexos estão pendentes."
           },
           {
@@ -943,7 +943,7 @@
           },
           {
             "id": "c",
-            "text": "Dizer que os anexos nunca existiram.",
+            "text": "Informar ao cliente que os anexos nunca existiram e encerrar a busca iniciada pela equipe.",
             "feedback": "Os originais estão no sistema."
           }
         ]
@@ -1106,12 +1106,12 @@
         "options": [
           {
             "id": "a",
-            "text": "A existência de uma recomendação automática.",
+            "text": "Corrigir a atribuição exclusiva ao algoritmo, descrevendo a recomendação automática como se ela já justificasse toda a decisão humana.",
             "feedback": "Luana não nega a recomendação automática: quer evitar que a tela omita a confirmação humana."
           },
           {
             "id": "b",
-            "text": "A possibilidade de revisar o caso.",
+            "text": "Tratar a revisão do caso como suficiente para justificar a decisão, sem examinar o registro humano.",
             "feedback": "A revisão está prevista no procedimento; a imprecisão apontada por Luana é chamar a decisão de exclusivamente algorítmica."
           },
           {
@@ -1139,12 +1139,12 @@
           },
           {
             "id": "b",
-            "text": "Repetir que foi uma decisão puramente automática.",
+            "text": "Descrever a decisão como puramente automática e oferecer revisão apenas se o paciente contestar.",
             "feedback": "Houve confirmação humana registrada, embora sem justificativa individual detalhada."
           },
           {
             "id": "c",
-            "text": "Inventar a motivação pessoal do analista.",
+            "text": "Descrever a recomendação e a confirmação humana, atribuindo ao analista um motivo pessoal que não ficou registrado.",
             "feedback": "O registro não contém razões pessoais do analista além dos critérios aplicados pelo sistema."
           }
         ]
@@ -1308,12 +1308,12 @@
           },
           {
             "id": "b",
-            "text": "Garantir ausência absoluta de riscos.",
+            "text": "Responder ao prazo comercial garantindo ausência absoluta de riscos na versão atual com base no relatório da versão anterior.",
             "feedback": "Nenhum teste dá essa garantia."
           },
           {
             "id": "c",
-            "text": "Ocultar o relatório antigo.",
+            "text": "Responder ao prazo comercial ocultando do cliente o relatório que contém os limites da versão testada.",
             "feedback": "Ele pode ser compartilhado com contexto."
           }
         ]
@@ -1331,12 +1331,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que a 4.3 contém uma falha crítica.",
+            "text": "Compartilhar o relatório antigo e dizer que a versão 4.3 contém uma falha crítica já comprovada.",
             "feedback": "Nenhum achado desse tipo foi confirmado."
           },
           {
             "id": "b",
-            "text": "Dizer que a 4.3 foi aprovada pelo teste da 4.2.",
+            "text": "Compartilhar o relatório da 4.2 como prova de aprovação da 4.3 e mencionar a mudança posterior apenas se perguntarem.",
             "feedback": "A mudança de autenticação não foi avaliada."
           },
           {
@@ -1500,12 +1500,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Prometer uma data aprovada.",
+            "text": "Valorizar o teste realizado e prometer uma data de conclusão ainda não aprovada para tranquilizar a direção.",
             "feedback": "Não há data aprovada para o ensaio completo; Fernanda pede uma resposta fiel ao teste já feito."
           },
           {
             "id": "b",
-            "text": "Cancelar os testes futuros.",
+            "text": "Valorizar o teste já realizado cancelando as etapas futuras do programa de recuperação.",
             "feedback": "O plano ainda prevê arquivos grandes e três integrações, portanto o pedido não é cancelar as próximas etapas."
           },
           {
@@ -1533,13 +1533,13 @@
           },
           {
             "id": "b",
-            "text": "Repetir «recuperação integral validada».",
+            "text": "Informar o teste bem-sucedido como validação da recuperação integral e deixar as etapas não testadas para uma nota posterior.",
             "feedback": "A apresentação chama de integral um ensaio que deixou arquivos grandes e integrações de fora."
           },
           {
             "id": "c",
-            "text": "Dizer que nunca houve ensaio.",
-            "feedback": "O registro confirma a restauração da amostra de 5 GB e seu acesso após duas horas."
+            "text": "Informar o ensaio realizado e marcar as etapas restantes como concluídas.",
+            "feedback": "O ensaio confirma apenas a amostra de 5 GB; arquivos grandes e integrações ainda não foram testados."
           }
         ]
       }
@@ -1698,13 +1698,13 @@
         "options": [
           {
             "id": "a",
-            "text": "Aplicar punição imediata.",
+            "text": "Encerrar os boatos aplicando punição imediata à pessoa citada na queixa inconclusiva.",
             "feedback": "Não houve conclusão disciplinar."
           },
           {
             "id": "b",
-            "text": "Reabrir a apuração sem motivo.",
-            "feedback": "Ele pergunta sobre comunicação."
+            "text": "Encerrar os boatos declarando que Beatriz mentiu e que a apuração já esclareceu a queixa.",
+            "feedback": "O resultado inconclusivo não permite afirmar publicamente que Beatriz mentiu."
           },
           {
             "id": "c",
@@ -1726,12 +1726,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que a pessoa citada foi considerada culpada.",
+            "text": "Informar individualmente o resultado inconclusivo e dizer à equipe que a pessoa citada foi considerada culpada.",
             "feedback": "Também não houve tal conclusão."
           },
           {
             "id": "b",
-            "text": "Declarar publicamente que Beatriz mentiu.",
+            "text": "Informar individualmente o resultado e declarar publicamente que Beatriz mentiu ao apresentar a queixa.",
             "feedback": "O relatório não sustenta isso."
           },
           {
@@ -1896,7 +1896,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Divulgar a justificativa pessoal.",
+            "text": "Manter a comparabilidade da avaliação divulgando à banca a justificativa pessoal apresentada pela candidata.",
             "feedback": "Ela é restrita a RH."
           },
           {
@@ -1906,7 +1906,7 @@
           },
           {
             "id": "c",
-            "text": "Cancelar a etapa.",
+            "text": "Manter a confidencialidade da candidata cancelando a etapa de entrevista para toda a banca.",
             "feedback": "A etapa ainda pode ocorrer."
           }
         ]
@@ -1924,12 +1924,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Presumir a nota antes da entrevista.",
+            "text": "Informar o tempo aplicável à banca e presumir a nota da candidata antes da entrevista.",
             "feedback": "A avaliação ainda não ocorreu."
           },
           {
             "id": "b",
-            "text": "Criar critérios mais difíceis para a candidata.",
+            "text": "Manter a mesma rubrica, mas criar critérios mais exigentes para compensar o tempo adicional concedido à candidata.",
             "feedback": "As tarefas devem ser as mesmas."
           },
           {
@@ -2103,12 +2103,12 @@
           },
           {
             "id": "b",
-            "text": "Um erro clínico.",
+            "text": "Corrigir a data apresentada como certa atribuindo o problema a um erro clínico já demonstrado.",
             "feedback": "A questão é organizacional."
           },
           {
             "id": "c",
-            "text": "A recusa de Marina em voltar.",
+            "text": "Reparar a data divulgada como certa, tratando a recusa de Marina em voltar como a causa principal do atraso.",
             "feedback": "Nenhuma recusa é registrada."
           }
         ]
@@ -2131,12 +2131,12 @@
           },
           {
             "id": "b",
-            "text": "Confirmar segunda-feira como data final.",
+            "text": "Confirmar segunda-feira como data final e descrever a escala provisória como acordo individual.",
             "feedback": "A data não está acordada."
           },
           {
             "id": "c",
-            "text": "Explicar à equipe as necessidades pessoais de Marina.",
+            "text": "Explicar à equipe as necessidades pessoais de Marina e só então retirar a data provisória da escala.",
             "feedback": "Esses dados são reservados."
           }
         ]
@@ -2300,12 +2300,12 @@
           },
           {
             "id": "b",
-            "text": "A ideia de que não há trabalho pendente.",
+            "text": "Acolher o rumor explicando à equipe que não há trabalho pendente nem sobrecarga a discutir.",
             "feedback": "A carga foi sinalizada."
           },
           {
             "id": "c",
-            "text": "Uma aprovação imediata do financeiro.",
+            "text": "Reconhecer a sobrecarga e anunciar à equipe uma aprovação imediata de novas vagas pelo financeiro.",
             "feedback": "Não existe."
           }
         ]
@@ -2323,12 +2323,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Confirmar que os cargos foram eliminados.",
+            "text": "Confirmar a eliminação dos cargos e propor à equipe uma revisão posterior da cobertura.",
             "feedback": "Não foram."
           },
           {
             "id": "b",
-            "text": "Prometer contratação em data fixa.",
+            "text": "Explicar a pausa e a revisão, mas prometer contratação em data fixa para tranquilizar a equipe sobre a cobertura.",
             "feedback": "A revisão pode mudar o plano."
           },
           {
@@ -2501,13 +2501,13 @@
           },
           {
             "id": "b",
-            "text": "Afirmar que nada aconteceu.",
+            "text": "Verificar a etiqueta e afirmar ao paciente que nada aconteceu antes da revisão clínica.",
             "feedback": "O uso ainda é desconhecido."
           },
           {
             "id": "c",
-            "text": "Pedir ao paciente que ignore o problema.",
-            "feedback": "A divergência é real."
+            "text": "Pedir ao paciente que continue usando a etiqueta até a farmácia verificar o ocorrido.",
+            "feedback": "A etiqueta divergente exige orientação segura da equipe antes de continuar seu uso."
           }
         ]
       },
@@ -2524,7 +2524,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Declarar que o paciente tomou a dose errada.",
+            "text": "Acionar a farmácia e declarar que o paciente tomou a dose errada antes de confirmar o uso.",
             "feedback": "Não há essa confirmação."
           },
           {
@@ -2534,7 +2534,7 @@
           },
           {
             "id": "c",
-            "text": "Confirmar por telefone um novo horário de uso sem revisão.",
+            "text": "Orientar o paciente a não seguir a etiqueta divergente e confirmar por telefone um novo horário de uso sem revisão clínica.",
             "feedback": "A clínica deve orientar após verificar."
           }
         ]
@@ -2698,12 +2698,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Afirmar culpa do paciente.",
+            "text": "Reconhecer que houve presença no local e atribuir ao paciente a culpa pela consulta não concluída antes de revisar os registros.",
             "feedback": "O balcão estava sem atendente."
           },
           {
             "id": "b",
-            "text": "Defender a cobrança automática a qualquer custo.",
+            "text": "Reconhecer a presença possível e defender a cobrança automática sem revisar o desfecho da consulta.",
             "feedback": "Pede suspensão."
           },
           {
@@ -2731,13 +2731,13 @@
           },
           {
             "id": "b",
-            "text": "Confirmar que a consulta ocorreu.",
+            "text": "Revisar os registros e confirmar que a consulta ocorreu apenas porque o recibo foi emitido.",
             "feedback": "Não há registro clínico."
           },
           {
             "id": "c",
-            "text": "Cobrar antes da revisão.",
-            "feedback": "A regra prevê o contrário."
+            "text": "Suspender a cobrança enquanto se revisam os registros e confirmar ao paciente que a consulta ocorreu porque o recibo foi emitido.",
+            "feedback": "O recibo não prova que a consulta ocorreu; a cobrança deve aguardar a revisão dos registros."
           }
         ]
       }
@@ -2901,7 +2901,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Ignorar a pergunta do paciente.",
+            "text": "Reconhecer o envio sem responder à dúvida do paciente sobre o canal usado no convite.",
             "feedback": "Ele pede correção."
           },
           {
@@ -2911,7 +2911,7 @@
           },
           {
             "id": "c",
-            "text": "Tratar as 60 pessoas como participantes.",
+            "text": "Reconhecer o envio e tratar as 60 pessoas contatadas como participantes que já aceitaram o convite opcional.",
             "feedback": "Ninguém foi inscrito automaticamente."
           }
         ]
@@ -2929,7 +2929,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Enviar lembrete pelo mesmo canal a todos.",
+            "text": "Responder ao paciente e enviar um lembrete pelo mesmo canal aos demais antes de concluir a checagem específica de autorização.",
             "feedback": "A finalidade continua inadequada."
           },
           {
@@ -2939,7 +2939,7 @@
           },
           {
             "id": "c",
-            "text": "Afirmar que o paciente consentiu com pesquisa.",
+            "text": "Registrar a falha do canal e afirmar que o paciente já consentiu com a pesquisa.",
             "feedback": "A preferência registrada é outra."
           }
         ]
@@ -3099,7 +3099,7 @@
         "options": [
           {
             "id": "a",
-            "text": "O paciente nunca teve laudo.",
+            "text": "Tratar o problema como ausência de laudo, embora exista uma versão anterior entregue.",
             "feedback": "Uma versão foi entregue ao médico."
           },
           {
@@ -3109,7 +3109,7 @@
           },
           {
             "id": "c",
-            "text": "A emenda foi certamente lida.",
+            "text": "Corrigir a circulação da versão anterior assumindo que o destinatário externo já leu a emenda enviada depois.",
             "feedback": "Não há comprovante de recebimento."
           }
         ]
@@ -3127,7 +3127,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Substituir silenciosamente o arquivo antigo.",
+            "text": "Enviar a versão 2 pelo canal seguro e substituir silenciosamente o arquivo antigo sem identificar a emenda ao destinatário.",
             "feedback": "A emenda deve ser identificada."
           },
           {
@@ -3137,7 +3137,7 @@
           },
           {
             "id": "c",
-            "text": "Explicar ao médico o efeito clínico sem consultar o responsável.",
+            "text": "Enviar a versão 2 e explicar seu efeito clínico ao médico sem consultar o responsável.",
             "feedback": "A clínica deve avaliar."
           }
         ]
@@ -3300,7 +3300,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Culpar o motorista.",
+            "text": "Investigar a lacuna atribuindo desde já a culpa ao motorista do trecho sem dados.",
             "feedback": "Nenhuma causa foi apurada."
           },
           {
@@ -3310,7 +3310,7 @@
           },
           {
             "id": "c",
-            "text": "Liberar a carga por conta própria.",
+            "text": "Reconhecer a lacuna do registro e liberar a carga por conta própria com base na leitura adequada na chegada.",
             "feedback": "A decisão cabe à qualidade."
           }
         ]
@@ -3333,12 +3333,12 @@
           },
           {
             "id": "b",
-            "text": "Garantir conservação integral.",
+            "text": "Informar a leitura adequada na chegada e garantir conservação integral durante o trecho sem dados antes da avaliação de qualidade.",
             "feedback": "Faltam duas horas de dados."
           },
           {
             "id": "c",
-            "text": "Afirmar perda total da carga.",
+            "text": "Informar a lacuna e afirmar perda total da carga antes da avaliação de qualidade.",
             "feedback": "Não há tal conclusão."
           }
         ]
@@ -3508,12 +3508,12 @@
           },
           {
             "id": "b",
-            "text": "Uma negativa definitiva ao cliente.",
+            "text": "Responder ao dano com uma negativa definitiva ao cliente, baseada apenas na ausência do valor declarado no formulário.",
             "feedback": "A cobertura não foi decidida."
           },
           {
             "id": "c",
-            "text": "A ideia de que não houve dano.",
+            "text": "Responder ao cliente como se o formulário sem valor declarado provasse que não houve dano.",
             "feedback": "As fotos estão sendo reunidas."
           }
         ]
@@ -3531,12 +3531,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Ignorar o dano por causa do campo vazio.",
+            "text": "Documentar o campo vazio e ignorar o dano ao apresentar a reclamação à transportadora.",
             "feedback": "A análise de responsabilidade ainda importa."
           },
           {
             "id": "b",
-            "text": "Garantir pagamento integral agora.",
+            "text": "Documentar o dano e garantir pagamento integral agora, deixando a análise contratual da transportadora para depois.",
             "feedback": "O campo adicional está vazio."
           },
           {
@@ -3711,12 +3711,12 @@
           },
           {
             "id": "b",
-            "text": "Eliminar a verificação.",
+            "text": "Manter o andamento comercial eliminando a etapa de verificação do plano corretivo recebido.",
             "feedback": "Ele pergunta pelo status correto."
           },
           {
             "id": "c",
-            "text": "Acusar o fornecedor de fraude.",
+            "text": "Manter o andamento comercial afirmando que o fornecedor cometeu fraude antes de concluir a verificação do plano.",
             "feedback": "Não há prova disso."
           }
         ]
@@ -3734,7 +3734,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que a correção já foi validada.",
+            "text": "Dar a correção por validada apenas com o plano recebido do fornecedor.",
             "feedback": "Faltam registros e teste."
           },
           {
@@ -3744,7 +3744,7 @@
           },
           {
             "id": "c",
-            "text": "Dizer que o fornecedor perdeu o prazo.",
+            "text": "Registrar a pendência e dizer ao parceiro que o fornecedor perdeu o prazo previsto para executar a correção.",
             "feedback": "Ainda está dentro dele."
           }
         ]
@@ -3908,12 +3908,12 @@
         "options": [
           {
             "id": "a",
-            "text": "Acusar o cliente de não pagar.",
+            "text": "Reconhecer o comprovante enviado pelo cliente e ainda assim acusá-lo de não pagar antes da conciliação.",
             "feedback": "A ordem está documentada."
           },
           {
             "id": "b",
-            "text": "Prometer entrega imediata.",
+            "text": "Reconhecer o comprovante e prometer entrega imediata como se a conciliação estivesse encerrada.",
             "feedback": "A liberação depende de outra etapa."
           },
           {
@@ -3937,7 +3937,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dizer que o comprovante não tem valor algum.",
+            "text": "Confirmar o comprovante e dizer que ele não tem valor algum enquanto não houver crédito.",
             "feedback": "Ele mostra a ordem emitida."
           },
           {
@@ -3947,7 +3947,7 @@
           },
           {
             "id": "c",
-            "text": "Marcar paga agora e liberar a entrega.",
+            "text": "Confirmar o recebimento do comprovante e marcar a fatura como paga agora, liberando a entrega antes do crédito.",
             "feedback": "Falta crédito e exceção registrada."
           }
         ]

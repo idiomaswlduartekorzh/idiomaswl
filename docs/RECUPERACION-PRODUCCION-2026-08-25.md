@@ -1048,12 +1048,17 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 
 ### 19 de noviembre de 2026 — revisión de claridad en Writing laboral B2–C2
 
-- En `codex/writing-workplace-clarity-20261119` se preparó un preview editorial:
-  tres casos de inglés B2 con opciones más equilibradas y consignas de las tres
-  notas reescritas en inglés para B2, C1 y C2. El diagnóstico de los 24 bancos
-  encontró que la clave es la única opción más larga en 1.563 de 1.920 preguntas
-  (81,4 %); el criterio, los datos y lo pendiente constan en
+- En `codex/writing-workplace-clarity-20261119` se preparó el preview de tres
+  casos ingleses B2 y consignas de las tres notas en inglés. Tras la aprobación
+  del propietario se revisaron los 24 bancos: ocho idiomas × B2–C2, 480 casos
+  y 1.920 preguntas. La clave como única opción más larga bajó de 1.563/1.920
+  (81,4 %) a 605/1.920 (31,5 %); las tres casillas de análisis se reescribieron
+  de forma natural en cada idioma estudiado. El criterio y los datos están en
   `docs/writing-workplace-clarity-review-2026-11-19.md`.
-- Pasaron el guardián de 480 casos, sus 13 pruebas, el catálogo protegido y
-  TypeScript. Estado: `PREVIEW`; el resto de los bancos y la integración en
-  `main` siguen pendientes. No hay deployment de este cambio.
+- El auditor de longitud quedó incorporado a `prebuild` como guardián por banco.
+  Pasaron el auditor en 24/24 bancos, el harness de 480 casos, 13 pruebas y los
+  validadores de los ocho idiomas, el catálogo protegido (485 temas), TypeScript
+  y todo `prebuild`. Se preservaron claves, referencias y estructura. El build
+  local con Next.js 16.4.3 y Webpack se detuvo durante la compilación por falta
+  de espacio libre en este portátil; falta el build completo de CI y el smoke.
+- Estado: `EN RAMA`; falta integrar en `main` y comprobar el deployment de Vercel.
