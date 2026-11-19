@@ -107,7 +107,7 @@ export async function queueCoursePaymentReconciliation(reference:string,transact
   return typeof data==='string'?data:null;
 }
 
-async function finishPaymentReconciliation(transactionId:string,success:boolean,error?:unknown) {
+export async function finishPaymentReconciliation(transactionId:string,success:boolean,error?:unknown) {
   const config=getWompiServerConfig();
   const message=error instanceof Error?error.message:String(error??'failed');
   const {error:rpcError}=await createAdminClient().rpc('finish_course_payment_reconciliation',{
@@ -152,7 +152,14 @@ export async function recoverCoursePayments(limit=10) {
   if(error)throw new Error('payment_queue_unavailable');
   let paymentsRecovered=0,paymentsPending=0;
   for(const item of queued??[]){
-    try{await reconcileCoursePayment(String(item.provider_id),String(item.order_id));paymentsRecovered+=1;}
+    try{
+      const providerId=String(item.provider_id);
+      if(providerId.startsWith('epayco:')) {
+        const {reconcileEpaycoCoursePayment}=await import('./epayco.server');
+        await reconcileEpaycoCoursePayment(providerId.slice(7),String(item.order_id));
+      } else await reconcileCoursePayment(providerId,String(item.order_id));
+      paymentsRecovered+=1;
+    }
     catch{paymentsPending+=1;}
   }
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
 import { formatCOP, objectiveLabel, LANGUAGES, PLANS, type Selection } from '@/lib/course-pricing/catalog';
 import styles from './course-order.module.css';
 
@@ -22,6 +23,8 @@ type Order = {
 };
 type Result = { order?: Order; status?: string };
 type LegalSection = { title: string; text: string };
+type EpaycoCheckout = { checkout: { configure(options: { sessionId: string; type: 'standard'; test: boolean }): { open(): void } } };
+declare global { interface Window { ePayco?: EpaycoCheckout } }
 
 function acceptedSections(snapshot: string | null): LegalSection[] {
   if (!snapshot) return [];
@@ -38,11 +41,14 @@ function acceptedSections(snapshot: string | null): LegalSection[] {
   }
 }
 
-export default function CourseOrderClient({ orderId, transactionId }: { orderId: string | null; transactionId: string | null }) {
+export default function CourseOrderClient({ orderId, transactionId, epaycoReference, epaycoReturned, epaycoAvailable }: {
+  orderId: string | null; transactionId: string | null; epaycoReference: string | null; epaycoReturned: boolean; epaycoAvailable: boolean;
+}) {
   const [result, setResult] = useState<Result>({});
   const [message, setMessage] = useState('Consultando…');
   const [busy, setBusy] = useState(true);
   const [login, setLogin] = useState(false);
+  const [epaycoReady, setEpaycoReady] = useState(false);
   const [orders, setOrders] = useState<{ id: string; created_at: string; amount_in_cents: number }[]>([]);
   const verified = useRef(false);
 
@@ -61,19 +67,32 @@ export default function CourseOrderClient({ orderId, transactionId }: { orderId:
           return;
         }
       }
+      if (orderId && epaycoReference && !verified.current) {
+        const check = await fetch(`/api/course-orders/${encodeURIComponent(orderId)}/epayco/verify`, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ reference: epaycoReference }),
+        });
+        if (check.ok) verified.current = true;
+        else if (check.status !== 401) {
+          const data = await check.json();
+          setMessage(data.message);
+          return;
+        }
+      }
       const response = await fetch(orderId ? `/api/course-orders/${encodeURIComponent(orderId)}` : '/api/course-orders', { cache: 'no-store' });
       const data = await response.json();
       setLogin(response.status === 401);
       if (!response.ok) throw new Error(data.message || 'No podemos consultar ahora.');
       if (orderId) setResult(data);
       else setOrders(data.orders);
-      setMessage('');
+      setMessage(epaycoReturned && data.status === 'created'
+        ? 'El proveedor aún no confirma este intento de pago. No vuelvas a pagar; actualiza el estado o consulta a WeLearn.' : '');
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'No podemos consultar el pago. No pagues de nuevo.');
     } finally {
       setBusy(false);
     }
-  }, [orderId, transactionId]);
+  }, [orderId, transactionId, epaycoReference, epaycoReturned]);
 
   // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { void load(); }, [load]);
@@ -100,6 +119,30 @@ export default function CourseOrderClient({ orderId, transactionId }: { orderId:
     }
   }
 
+  async function payEpayco() {
+    if (!window.ePayco || !orderId) { setMessage('ePayco todavía no está disponible. Puedes usar Wompi.'); return; }
+    setBusy(true);
+    setMessage('Preparando ePayco…');
+    try {
+      const response = await fetch(`/api/course-orders/${encodeURIComponent(orderId)}/epayco/checkout`, { method: 'POST' });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.message);
+      if (data.status === 'ready' && typeof data.sessionId === 'string') {
+        window.ePayco.checkout.configure({ sessionId: data.sessionId, type: 'standard', test: data.test === true }).open();
+        setMessage('Si completaste el pago, vuelve a esta página y actualiza el estado de la inscripción.');
+        return;
+      }
+      setResult(current => ({ ...current, status: data.status }));
+      setMessage(data.status === 'expired'
+        ? 'La ventana de pago venció. Contacta a WeLearn para revisar la inscripción antes de crear otra.'
+        : 'Consulta el estado de tu inscripción antes de continuar.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'No pudimos preparar ePayco.');
+    } finally {
+      setBusy(false);
+    }
+  }
+
   const labels: Record<string, string> = {
     created: 'Tu inscripción está lista',
     paid: 'Tu pago está confirmado',
@@ -118,6 +161,8 @@ export default function CourseOrderClient({ orderId, transactionId }: { orderId:
     : null;
 
   return <div className={styles.page}>
+    {epaycoAvailable && <Script src="https://checkout.epayco.co/checkout-v2.js" strategy="afterInteractive"
+      onReady={() => setEpaycoReady(!!window.ePayco?.checkout)} onError={() => setEpaycoReady(false)}/>}
     <div className={styles.shell}>
       <header className={styles.heading}>
         <p className={styles.kicker}>WELEARN / INSCRIPCIONES</p>
@@ -149,7 +194,8 @@ export default function CourseOrderClient({ orderId, transactionId }: { orderId:
         <section className={styles.nextStep} aria-label="Siguiente paso">
           {status === 'paid' && <p>Ahora coordinaremos contigo el horario de las clases. El pago está registrado; no necesitas volver a pagar.</p>}
           {(status === 'pending' || status === 'review') && <p>Conservamos tu inscripción. No hagas otro pago mientras revisamos el actual.</p>}
-          {['created', 'not_completed'].includes(status) && <button type="button" className={styles.primary} disabled={busy} onClick={pay}>Pagar con Wompi <span aria-hidden="true">→</span></button>}
+          {['created', 'not_completed'].includes(status) && !(epaycoReturned && status === 'created') && <button type="button" className={styles.primary} disabled={busy} onClick={pay}>Pagar con Wompi <span aria-hidden="true">→</span></button>}
+          {epaycoAvailable && ['created', 'not_completed'].includes(status) && !(epaycoReturned && status === 'created') && <button type="button" className={styles.primary} disabled={busy || !epaycoReady} onClick={payEpayco}>Pagar con ePayco (Apple Pay si está disponible) <span aria-hidden="true">→</span></button>}
           {supportUrl && <a className={styles.support} href={supportUrl} target="_blank" rel="noopener noreferrer">¿Necesitas ayuda? Escríbenos</a>}
         </section>
 
@@ -173,7 +219,7 @@ export default function CourseOrderClient({ orderId, transactionId }: { orderId:
       {message && <p className={styles.message} role="status" aria-live="polite">{message}</p>}
       <nav className={styles.footerActions} aria-label="Opciones de inscripción">
         {login
-          ? <a className={styles.primary} href={'/login?next=' + encodeURIComponent(orderId ? '/inscripcion?orden=' + orderId + (transactionId ? '&id=' + encodeURIComponent(transactionId) : '') : '/inscripcion')}>Iniciar sesión</a>
+          ? <a className={styles.primary} href={'/login?next=' + encodeURIComponent(orderId ? '/inscripcion?orden=' + orderId + (transactionId ? '&id=' + encodeURIComponent(transactionId) : '') + (epaycoReference ? '&ref_payco=' + encodeURIComponent(epaycoReference) : '') + (epaycoReturned ? '&epayco_retorno=1' : '') : '/inscripcion')}>Iniciar sesión</a>
           : <button type="button" disabled={busy} onClick={() => { setBusy(true); setMessage('Consultando…'); void load(); }}>Actualizar estado</button>}
         <a href="/precios">Ver planes</a>
       </nav>

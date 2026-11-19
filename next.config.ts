@@ -23,7 +23,7 @@ const securityHeaders = [
       'microphone=(self)', // microphone only for own origin (audio recording feature)
       'geolocation=()',  // no geolocation
       'interest-cohort=()', // opt out of FLoC/Topics
-      'payment=()',
+      'payment=(self "https://checkout.epayco.co" "https://new-checkout.epayco.co")',
     ].join(', '),
   },
 
@@ -60,23 +60,23 @@ const securityHeaders = [
       // Nota honesta sobre lo que esto protege: si unpkg responde con una redirección, el
       // navegador deja de comparar la ruta y solo mira el host. Así que esto no es una
       // garantía, es reducir mucho la superficie frente a poner `https://unpkg.com` a secas.
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://checkout.wompi.co https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net https://static.cloudflareinsights.com https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js https://cdn.jsdelivr.net",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://checkout.wompi.co https://checkout.epayco.co https://*.epayco.co https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net https://static.cloudflareinsights.com https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js https://cdn.jsdelivr.net",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
       "font-src 'self' https://fonts.gstatic.com data:",
       // Supabase project URL for storage, auth and realtime + GA4 + Meta Pixel + Cloudflare Web Analytics
-      "connect-src 'self' https://api.wompi.co https://api-sandbox.wompi.co https://sandbox.wompi.co https://production.wompi.co https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://cloudflareinsights.com https://cdn.jsdelivr.net",
+      "connect-src 'self' https://api.wompi.co https://api-sandbox.wompi.co https://sandbox.wompi.co https://production.wompi.co https://*.epayco.co https://apiflow.epayco.io https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://cloudflareinsights.com https://cdn.jsdelivr.net",
       // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
-      "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com https://cdn.jsdelivr.net",
+      "img-src 'self' data: blob: https://*.epayco.co https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com https://cdn.jsdelivr.net",
       // GTM noscript iframe
-      "frame-src 'self' https://checkout.wompi.co https://www.googletagmanager.com https://www.youtube.com",
+      "frame-src 'self' https://checkout.wompi.co https://*.epayco.co https://www.googletagmanager.com https://www.youtube.com",
       // Audio/video from own server + Supabase storage + blob (MediaRecorder)
       "media-src 'self' blob: https://*.supabase.co",
       // Worker scripts (Next.js service worker / audio worklets)
       "worker-src 'self' blob:",
       // No <object> or <embed>
       "object-src 'none'",
-      // Forms only submit to own origin
-      "form-action 'self'",
+      // The ePayco checkout may submit its hosted payment form.
+      "form-action 'self' https://*.epayco.co",
       // Prevent third-party framing while allowing same-origin teaching previews
       "frame-ancestors 'self'",
       // Upgrade any accidental http:// requests to https://

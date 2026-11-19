@@ -5,6 +5,13 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Apple Pay para inscripciones de cursos — 19 de noviembre de 2026
+
+- Rama: `codex/apple-pay-epayco-20261119`, creada desde `origin/main@40395be`; estado `EN_VALIDACION`, sin integración ni despliegue.
+- Alcance: SmartCheckout Standard de ePayco para compras únicas de cursos, retorno y webhook firmados, consulta al proveedor, conciliación y recuperación. Wompi permanece como opción existente. Sin migración de base de datos.
+- `EPAYCO_COURSE_ENABLED=false` por defecto. Activación pendiente de cuenta, Apple Pay habilitado por ePayco, credenciales, pruebas Sandbox y revisión comercial. PayU documenta Google Pay web en Colombia; ePayco solo lo anuncia para datáfono presencial. Integrarlo requiere una decisión y un contrato separados.
+- Detalle operativo: [`epayco-apple-pay.md`](epayco-apple-pay.md).
+
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
 
 - Rama: `codex/reading-b2-c2-pilot-20261110`, actualizada contra `origin/main` antes de la auditoría. Estado: `EN_VALIDACION`; **no integrada ni desplegada**.
