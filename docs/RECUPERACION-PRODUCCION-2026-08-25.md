@@ -1060,5 +1060,10 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   validadores de los ocho idiomas, el catálogo protegido (485 temas), TypeScript
   y todo `prebuild`. Se preservaron claves, referencias y estructura. El build
   local con Next.js 16.4.3 y Webpack se detuvo durante la compilación por falta
-  de espacio libre en este portátil; falta el build completo de CI y el smoke.
+  de espacio libre en este portátil. El intento local con Turbopack compiló en
+  108 segundos, pero se detuvo durante TypeScript al quedar 259 MB libres.
+- Vercel construyó el preview `dpl_5SoNnbaHLeozwDqK3biDo1Z6fn6n` desde
+  `1c35945c` con Next.js 16.4.3. Compilación, TypeScript y generación de rutas
+  completadas; estado `READY`. El smoke autenticado del preview devolvió 200 en
+  24/24 rutas de `/practica/<idioma>/<nivel>/escritura`.
 - Estado: `EN RAMA`; falta integrar en `main` y comprobar el deployment de Vercel.
