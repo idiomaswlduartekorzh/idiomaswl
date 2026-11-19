@@ -1,116 +1,36 @@
-'use client';
-
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
+import { BookOpenText, Headphones, Mic2, PenLine } from 'lucide-react';
+import { SKILL_ACCENT } from '@/data/practica/skill-accents';
+import styles from '../IeltsHub.module.css';
 
-const SKILLS = [
-  {
-    id: 'writing',
-    label: 'Writing',
-    icon: '✏️',
-    desc: 'Task 1 (visual data) and Task 2 (argumentative essay). 60 minutes in total.',
-    href: '/practica/ielts/academic/writing',
-    available: true,
-  },
-  {
-    id: 'reading',
-    label: 'Reading',
-    icon: '📖',
-    desc: 'True/False/Not Given · Matching · Multiple Choice. 60 minutes and 40 questions.',
-    href: '/practica/ielts/reading',
-    available: true,
-  },
-  {
-    id: 'listening',
-    label: 'Listening',
-    icon: '🎧',
-    desc: 'Four parts and 40 questions. Replay, pause and rewind the audio, practise without a timer, or download a student PDF.',
-    href: '/practica/ielts/listening',
-    available: true,
-  },
-  {
-    id: 'speaking',
-    label: 'Speaking',
-    icon: '🗣️',
-    desc: 'Face-to-face interview: Part 1 (introduction), Part 2 (long turn) and Part 3 (discussion).',
-    href: '#',
-    available: false,
-  },
-];
+const skills = [
+  { name: 'Listening', icon: Headphones, accent: SKILL_ACCENT.escucha.var, href: '/practica/ielts/listening', detail: 'Learn how to follow the four parts, anticipate an answer form, hear a correction and review the exact audio evidence.' },
+  { name: 'Reading', icon: BookOpenText, accent: SKILL_ACCENT.lectura.var, href: '/practica/ielts/reading', detail: 'Map a passage, locate evidence and compare meaning. Continue into 14 question-format routes and six transferable skills.' },
+  { name: 'Writing', icon: PenLine, accent: SKILL_ACCENT.escritura.var, href: '/practica/ielts/academic/writing', detail: 'Study Task 1 visual reporting and Task 2 essay development in separate, connected courses with worked examples.' },
+  { name: 'Speaking', icon: Mic2, accent: SKILL_ACCENT.habla.var, href: '/practica/ielts/speaking', detail: 'Understand all three parts, develop natural answers, record a response and review it against the four criteria.' },
+] as const;
+
+export const ACADEMIC_FAQS = [
+  { question: 'Are all four IELTS Academic skills available here?', answer: 'Yes. Listening, Reading, Writing and Speaking each have a learning route and focused practice. The 40 assembled Academic sets can also be taken as complete mocks.' },
+  { question: 'What is the difference between a guided set and a focused practice set?', answer: 'The first 20 complete sets have a guided route with question-level Listening and Reading evidence and written reference responses. All 40 sets can be practised one skill at a time without a timer.' },
+] as const;
 
 export default function IELTSAcademicPage() {
-  return (
-    <section className="wl-section">
-      <div className="wrap">
-        <div style={{ maxWidth: 720, margin: '0 auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
-            <Link href="/practica/ielts" className="btn btn-ghost btn-sm" style={{ fontSize: '0.82rem' }}>← IELTS</Link>
-            <span style={{ color: 'var(--muted)', fontSize: '0.82rem', fontFamily: 'var(--mono)' }}>IELTS / Academic</span>
-          </div>
+  return <div className={styles.page} lang="en"><div className={styles.shell}>
+    <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Practice</Link><span>/</span><Link href="/practica/ielts">IELTS</Link><span>/</span><span>Academic</span></nav>
+    <header className={styles.hero}>
+      <p className={styles.eyebrow}>IELTS Academic · Four connected skills</p>
+      <h1>Learn the method. Then practise the whole task.</h1>
+      <p className={styles.heroLead}>Choose the skill that needs your attention today. Each route explains what the test asks, shows the decision behind an answer and connects to original practice. You can work through one skill at your own pace or combine them in a complete mock.</p>
+      <div className={styles.factGrid} aria-label="IELTS Academic at a glance"><div className={styles.fact}><strong>4 skills</strong><span>with separate learning routes</span></div><div className={styles.fact}><strong>40 sets</strong><span>for independent practice</span></div><div className={styles.fact}><strong>20 guided</strong><span>complete sets with evidence</span></div><div className={styles.fact}><strong>1 test</strong><span>when you combine the skills</span></div></div>
+    </header>
 
-          <p className="eyebrow" style={{ marginBottom: '0.5rem' }}><span className="ink-line" />🎓 IELTS Academic</p>
-          <h1 style={{ fontSize: '2rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
-            IELTS Academic
-          </h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1rem', margin: '0 0 2rem', lineHeight: 1.6 }}>
-            The format required by universities, postgraduate programmes and student visas in the UK, Australia and Canada.
-            Choose the skill you want to practise.
-          </p>
-          <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 8, marginBottom: '1.25rem' }}>
-            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Official format versus WeLearn strategy</h2>
-            <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>Official format:</strong> IELTS Academic assesses Listening, Reading, Writing and Speaking. Listening, Reading and Writing now have complete WeLearn practice routes.
-            </p>
-            <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.65 }}>
-              <strong style={{ color: 'var(--ink)' }}>WeLearn strategy:</strong> study is separated by skill: Listening uses replayable audited sets and printable worksheets; Reading combines official question types with skills such as skimming and scanning; Writing separates Task 1, Task 2, the rubric and annotated models.
-            </p>
-          </section>
+    <section className={styles.section} aria-labelledby="academic-skills-title"><div className={styles.sectionHeading}><p className={styles.kicker}>Choose a skill</p><h2 id="academic-skills-title">Start where your next question is.</h2><p>All four routes are available. A learning lesson and an untimed practice set serve different purposes; use both before you judge your exam readiness.</p></div><div className={styles.skillGrid}>
+      {skills.map(({ icon: Icon, ...skill }) => <Link key={skill.name} href={skill.href} className={styles.skillCard} style={{ '--card-accent': skill.accent } as CSSProperties}><div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={23} aria-hidden="true" /></span><span className={styles.skillLabel}>Academic skill</span></div><h3>{skill.name}</h3><p>{skill.detail}</p><strong>Open {skill.name} →</strong></Link>)}
+    </div></section>
 
-          <div className="wl-exams-catalog">
-            {SKILLS.map(sk => (
-              sk.available
-                ? (
-                  <Link key={sk.id} href={sk.href}
-                    className="wl-catalog-card"
-                    style={{ '--exam-color': '#0f3d8c', textAlign: 'left', display: 'flex', flexDirection: 'column', textDecoration: 'none' } as React.CSSProperties}
-                  >
-                    <div className="wl-catalog-card__bar" />
-                    <div className="wl-catalog-card__body">
-                      <div className="wl-catalog-card__top">
-                        <span style={{ fontSize: '1.8rem' }}>{sk.icon}</span>
-                      </div>
-                      <h2 className="wl-catalog-card__name">{sk.label}</h2>
-                      <p className="wl-catalog-card__tagline">{sk.desc}</p>
-                    </div>
-                    <div className="wl-catalog-card__footer">
-                      <span>IELTS Academic</span>
-                  <span className="wl-catalog-card__cta">Practise →</span>
-                    </div>
-                  </Link>
-                )
-                : (
-                  <div key={sk.id}
-                    className="wl-catalog-card wl-catalog-card--soon"
-                    style={{ '--exam-color': '#0f3d8c', textAlign: 'left', display: 'flex', flexDirection: 'column' } as React.CSSProperties}
-                  >
-                    <div className="wl-catalog-card__bar" />
-                    <div className="wl-catalog-card__body">
-                      <div className="wl-catalog-card__top">
-                        <span style={{ fontSize: '1.8rem' }}>{sk.icon}</span>
-                        <span className="wl-catalog-card__badge">Coming soon</span>
-                      </div>
-                      <h2 className="wl-catalog-card__name">{sk.label}</h2>
-                      <p className="wl-catalog-card__tagline">{sk.desc}</p>
-                    </div>
-                    <div className="wl-catalog-card__footer">
-                      <span>IELTS Academic</span>
-                      <span className="wl-catalog-card__cta">Coming soon</span>
-                    </div>
-                  </div>
-                )
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    <section className={styles.section} aria-labelledby="academic-boundary-title"><div className={styles.sectionHeading}><p className={styles.kicker}>Know what you are using</p><h2 id="academic-boundary-title">Official format and WeLearn study method.</h2></div><div className={styles.prose}><p>IELTS Academic assesses Listening, Reading, Writing and Speaking. The test format, task instructions and assessment criteria come from IELTS. WeLearn organises its own lessons around the decisions a learner has to make: where to listen or read, what the prompt requires, how to develop an answer and how to review an error.</p><p>The 40 assembled sets are original WeLearn practice. Listening and Reading results show estimated study bands, while focused Writing and Speaking practice supports drafting and self-review without automatically assigning a band. The first 20 sets also have a guided complete-mock route. Keep a practice estimate separate from an official test result.</p></div><div className={styles.actions}><Link href="/examenes/ielts#practica">Choose a complete mock</Link><Link href="/practica/ielts/writing/simulacros">Practise Writing by set</Link></div></section>
+    <section className={styles.section} aria-labelledby="academic-faq-title"><div className={styles.sectionHeading}><p className={styles.kicker}>Questions before you begin</p><h2 id="academic-faq-title">Choose the right route.</h2></div><div className={styles.articleGrid}>{ACADEMIC_FAQS.map(faq => <details className={styles.editorialCard} key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
+  </div></div>;
 }

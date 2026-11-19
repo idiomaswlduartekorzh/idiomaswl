@@ -9,11 +9,11 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/listening/simulacros';
 
 export const metadata: Metadata = {
   title: 'IELTS Listening Practice Sets with Audio and PDF',
-  description: 'Practise all 20 IELTS Listening sets without a timer. Replay, pause and rewind the audio, navigate freely, and download a printable student PDF.',
+  description: 'Practise all 40 IELTS Listening sets without a timer. Replay, pause and rewind the audio, navigate freely, and download a printable student PDF.',
   alternates: { canonical: URL },
   openGraph: {
     title: 'IELTS Listening Practice Sets',
-    description: 'Twenty untimed Listening sets with full audio control, private scoring and printable PDFs.',
+    description: 'Forty untimed Listening sets with full audio control, private scoring and printable PDFs.',
     url: URL,
     type: 'website',
     locale: 'en_US',
@@ -41,7 +41,7 @@ const sets = IELTS_SECTIONAL_LISTENING_SET_IDS.map((mockId, index) => {
 export default function IELTSListeningLibraryPage() {
   return (
     <>
-      <LearningResourceJsonLd name="IELTS Listening Practice Sets" url={URL} description="Twenty focused IELTS Listening practice sets created by WeLearn." teaches={['IELTS Listening', 'form completion', 'multiple choice', 'matching', 'note completion']} inLanguage="en" isPartOf={{ name: 'IELTS Practice', url: 'https://www.idiomaswl.com/practica/ielts' }} />
+      <LearningResourceJsonLd name="IELTS Listening Practice Sets" url={URL} description="Forty focused IELTS Listening practice sets created by WeLearn." teaches={['IELTS Listening', 'form completion', 'multiple choice', 'matching', 'note completion']} inLanguage="en" isPartOf={{ name: 'IELTS Practice', url: 'https://www.idiomaswl.com/practica/ielts' }} />
       <BreadcrumbJsonLd items={[{ name: 'Practice', url: 'https://www.idiomaswl.com/practica' }, { name: 'IELTS', url: 'https://www.idiomaswl.com/practica/ielts' }, { name: 'Listening', url: 'https://www.idiomaswl.com/practica/ielts/listening' }, { name: 'Listening sets', url: URL }]} />
       <FaqJsonLd faqs={faqs} />
       <ExamSkillSetLibrary product="ielts" skill="listening" description="Use the same audited audio and questions as each complete mock, with no timer and full playback control. Each set also has a printable student worksheet." detail="4 parts · 40 questions · replayable audio" note="Progress stays in this browser. Answer keys remain on the server and are never included in the downloadable student PDF." sets={sets} backHref="/practica/ielts/listening" backLabel="Back to Listening guidance" />

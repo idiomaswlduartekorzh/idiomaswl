@@ -1,15 +1,25 @@
 # IELTS product UI blueprint
 
-This contract keeps IELTS Reading and Writing coherent while preserving the interaction patterns each skill needs. Writing Task 2 is the visual reference; pages may adapt the system, but they must not return to isolated legacy cards or inline one-off layouts.
+This contract keeps IELTS Listening, Reading, Writing and Speaking coherent while preserving the interaction patterns each skill needs. Writing Task 2 is the visual reference; the implemented source of truth is the shared `wlp-` system in `src/styles/practica-ui.css`. The editorial content and inventory live in `docs/ielts-explanations-blueprint.md`.
 
 ## Shared product language
 
-- Use an `1180px` maximum content shell on `#f7f8fc`.
-- Use WeLearn navy for hierarchy, teal for method/evidence, red for primary actions and restrained green/purple accents.
-- Prefer flat white surfaces, `6–8px` radii and crisp borders. Do not use glass panels, decorative gradients or large shadows as the primary content structure.
+- Use the `--wlp-shell` (`1180px`) content shell and semantic `--wl-*` canvas, surface, border and text roles. These adapt to light and dark mode.
+- Read the Listening, Reading, Writing and Speaking accents from `src/data/practica/skill-accents.ts` on both the skill card and destination page.
+- Prefer flat raised surfaces, `--wlp-r` (`6px`) radii and crisp borders. Do not use glass panels, decorative gradients or large shadows as the primary content structure.
 - Use one clear hero, a compact fact rail and sections with an eyebrow, heading and explanatory paragraph.
 - Keep reading prose near `70–78ch`, with visible paragraph spacing and line height around `1.7–1.85`.
 - A lesson or Progress Engine score is practice performance, never an IELTS band prediction.
+- Keep official test rules distinct from WeLearn strategies and from estimated Listening/Reading practice bands.
+
+## Listening and Speaking invariants
+
+- The Listening entry explains all four parts, answer-form prediction, corrections, common formats and replay-based review before a learner starts a set. Practice playback controls are labelled as a study affordance; the official recording is played once.
+- Guided Listening evidence is a time-bounded approved clip. Its explanation names the actual decision and distractor in that clip; a generic warning about similar words is not sufficient feedback.
+- The Speaking entry explains Parts 1–3 and the four official criteria in language a learner can use while listening to a recording.
+- Focused Speaking recordings stay in the open session. A transcript or unreviewed synthetic model cannot demonstrate pronunciation or assign a band.
+- Generated Speaking model audio remains unavailable until human approval marks it ready. Written reference profiles must retain their pedagogical label.
+- Only sets 1–20 expose the guided full-mock route; all 40 expose independent skill practice.
 
 ## Reading invariants
 
@@ -51,7 +61,7 @@ Compact training passages must be labelled as compact. The lesson must explain t
 
 ## Release checklist
 
-1. Verify the IELTS root hub, Writing Task 1, Writing Task 2 and Reading Question Types share the visual contract.
+1. Verify the IELTS root hub, Academic hub, Listening and Speaking guides, Writing Task 1, Writing Task 2 and Reading Question Types share the visual contract.
 2. Verify guided, independent and Progress Engine routes at desktop and mobile widths.
 3. Confirm every question has visible evidence before answer submission.
 4. Confirm compact-passage disclosure and non-band score disclosure.

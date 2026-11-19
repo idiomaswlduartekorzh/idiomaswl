@@ -1,16 +1,16 @@
 .page {
-  --intro-navy: var(--wl-on-panel, #102e6f);
-  --intro-navy-panel: var(--wl-panel-inverse, #102e6f);
-  --intro-red: var(--wl-on-panel-alert, #b42332);
-  --intro-green: var(--wl-on-panel-ok, #18794e);
+  --intro-navy: var(--wl-text);
+  --intro-navy-panel: var(--wl-inverse);
+  --intro-red: var(--wl-accent);
+  --intro-green: var(--wlp-accent-escritura);
   --intro-orange: #a84f08;
-  --intro-purple: var(--wl-on-panel-purple, #6941a5);
-  --intro-link: var(--wl-on-panel-teal, #176b87);
-  --intro-ink: var(--wl-on-panel, #14244f);
-  --intro-muted: var(--wl-on-panel-soft, #5c6680);
-  --intro-line: var(--wl-rule);
-  --intro-surface: var(--wl-surface-card);
-  background: var(--wl-panel-raised, #f7f8fc);
+  --intro-purple: var(--wlp-accent-gramatica);
+  --intro-link: var(--wlp-accent-escucha);
+  --intro-ink: var(--wl-text);
+  --intro-muted: var(--wl-text-soft);
+  --intro-line: var(--wl-border);
+  --intro-surface: var(--wl-surface-raised);
+  background: var(--wl-canvas);
   color: var(--intro-ink);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
@@ -18,7 +18,7 @@
 
 .shell {
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: var(--wlp-shell);
 }
 
 .breadcrumb {
@@ -63,7 +63,7 @@
 
 .eyebrow,
 .kicker {
-  color: var(--intro-red);
+  color: var(--intro-green);
   font-family: var(--mono, ui-monospace, monospace);
   font-size: 0.77rem;
   font-weight: 800;
@@ -74,7 +74,7 @@
 
 .hero h1 {
   color: var(--intro-navy);
-  font-size: clamp(2.25rem, 6vw, 4.6rem);
+  font-size: var(--wlp-h1);
   line-height: 1.02;
   margin: 0;
   max-width: 900px;
@@ -97,7 +97,7 @@
 }
 
 .fact {
-  background: var(--wl-panel-raised, #edf1f9);
+  background: var(--wl-surface-raised);
   min-height: 112px;
   padding: 1.1rem;
 }
@@ -1219,7 +1219,7 @@
   .factGrid,
   .architecture,
   .sequenceGrid { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 2.45rem; }
+  .hero h1 { font-size: var(--wlp-h1-compact); }
   .heroLead { font-size: 1rem; }
   .podcastHeader { grid-template-columns: 1fr; }
   .podcastDuration { justify-self: start; }

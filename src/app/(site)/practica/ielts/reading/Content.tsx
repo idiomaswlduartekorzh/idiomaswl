@@ -23,6 +23,8 @@ import {
   IELTS_READING_TYPES,
 } from '@/data/practica-exams/seo-catalog';
 import readingNotes from '@/data/practica/podcasts/academic-reading-strategies-and-traps';
+import { SKILL_ACCENT } from '@/data/practica/skill-accents';
+import type { CSSProperties } from 'react';
 import EpisodeNotes from '@/components/practica/EpisodeNotes';
 import styles from './page.module.css';
 
@@ -190,7 +192,7 @@ export default function IELTSReadingHub() {
   const publishedSkills = IELTS_READING_SKILLS.filter((item) => item.status === 'published');
 
   return (
-    <div lang="en" className={styles.page}>
+    <div lang="en" className={styles.page} style={{ '--reading-accent': SKILL_ACCENT.lectura.var } as CSSProperties}>
       <div className={styles.shell}>
         <nav className={styles.breadcrumb} aria-label="Breadcrumb">
           <Link href="/practica">Practice</Link>
@@ -209,7 +211,7 @@ export default function IELTSReadingHub() {
             </p>
             <div className={styles.heroActions}>
               <Link href="/practica/ielts/reading/simulacros" className={styles.primaryAction}>
-                Choose one of 20 Reading sets <ArrowRight size={17} aria-hidden="true" />
+                Choose one of 40 Reading sets <ArrowRight size={17} aria-hidden="true" />
               </Link>
               <a href="#choose-your-route" className={styles.secondaryAction}>Study the Reading method</a>
             </div>
@@ -232,6 +234,20 @@ export default function IELTSReadingHub() {
           <div className={styles.fact}><strong>60 min</strong><span>to read, decide and record answers</span></div>
           <div className={styles.fact}><strong>{publishedQuestionTypes.length} + {publishedSkills.length}</strong><span>question routes and skill lessons in this hub</span></div>
         </div>
+
+        <section className={styles.section} aria-labelledby="read-the-passage-heading">
+          <div className={styles.sectionHeading}>
+            <p className={styles.kicker}>Before the question types</p>
+            <h2 id="read-the-passage-heading">How do you actually read an unfamiliar passage?</h2>
+            <p>Use a short first pass to build a map, then read carefully where the question sends you. The two passes have different jobs.</p>
+          </div>
+          <div className={styles.methodProse}>
+            <p>Imagine opening a passage about a city’s water supply. If you try to understand every sentence before looking at a question, you may spend your time on technical history that no question asks about. If you search immediately for a word from the first question, you may find the same word in a paragraph that makes a different point. Start by reading the title, the opening and the beginning of each paragraph. In the margin, give each paragraph a plain job: “old problem,” “new measurement,” “unexpected result,” “possible response.” This is <Link href="/practica/ielts/reading/habilidades/skimming">skimming</Link>: building orientation, not answering from a vague impression.</p>
+            <p>Now read the question and underline what would make an answer correct. Does it ask for a paragraph’s main idea, a named researcher’s finding, the writer’s opinion or an exact word from the text? Those are different searches. <Link href="/practica/ielts/reading/habilidades/scanning">Scanning</Link> helps you return to a likely place using names, numbers and distinctive ideas. It is a way to locate a reading window; it does not replace reading the whole sentence and its neighbour. A question about why a project changed may be answered after the sentence that first names the project, when the passage says “however” or “as a result.”</p>
+            <p>At the evidence, slow down. Compare the meaning, including whose claim it is, whether it refers to all cases or only some, and whether the writer presents it as a fact, a possibility or a rejected idea. The question may say “reduced demand” where the passage says “households used less water”; that is a <Link href="/practica/ielts/reading/habilidades/parafrasis">paraphrase</Link>. It may also repeat “demand” in a sentence about a different city. A repeated word is therefore a useful search clue, never the reason to choose an answer. For statement questions, distinguish what the passage supports, what it directly contradicts and what it leaves unresolved. For completion, check the printed word limit and whether your answer makes the sentence grammatical.</p>
+            <p>When a question stalls, mark the likely paragraph and move forward. You can return with a new clue from a later question. Review a wrong answer by finding the exact sentence that proves the correct one and the exact thought that made your choice attractive. That diagnosis tells you whether to practise locating, comparing meaning, controlling a word limit or managing time. The <Link href="/practica/ielts/reading/tipos-de-preguntas">14 format lessons</Link> teach each decision separately; <Link href="/practica/ielts/reading/mixed-practice">Mixed Practice</Link> asks you to switch between them in one passage.</p>
+          </div>
+        </section>
 
         <section className={`${styles.section} ${styles.podcastSection}`} aria-labelledby="audio-guide-heading">
           <div className={styles.podcastPanel}>
@@ -464,7 +480,7 @@ export default function IELTSReadingHub() {
           </div>
           <div className={styles.faqGrid}>
             <article><h3>¿Por dónde debería empezar?</h3><p>Empieza con Skimming y Scanning si pierdes tu ubicación dentro del pasaje. Empieza con un tipo de pregunta específico si encuentras la evidencia, pero todavía eliges la respuesta incorrecta.</p></article>
-            <article><h3>¿Skimming y scanning son tipos oficiales de pregunta?</h3><p>No. Son habilidades de lectura transferibles. El hub las separa de los formatos oficiales y muestra en qué tipos de pregunta se aplican.</p></article>
+            <article><h3>¿Skimming y scanning son tipos oficiales de pregunta?</h3><p>No. Skimming y scanning son habilidades WeLearn para orientarse y localizar evidencia, no tipos oficiales de pregunta. El hub muestra en qué formatos se aplican.</p></article>
             <article><h3>¿Debo practicar con cronómetro desde el principio?</h3><p>No. Primero construye un proceso preciso y explicable. Añade presión de tiempo cuando puedas localizar y comprobar evidencia de forma consistente.</p></article>
             <article><h3>¿Cuándo debo entrar a Mixed Practice?</h3><p>Después de practicar una habilidad y un tipo de pregunta por separado. Allí tendrás que cambiar de método dentro del mismo pasaje y justificar cada respuesta.</p></article>
           </div>
@@ -473,7 +489,7 @@ export default function IELTSReadingHub() {
         <section className={styles.finalCta} aria-labelledby="next-heading">
           <div><p className={styles.kicker}>Your next session</p><h2 id="next-heading">Build the map before you race the clock.</h2></div>
           <div className={styles.finalActions}>
-            <Link href="/practica/ielts/reading/simulacros">Choose one of 20 Reading sets <ArrowRight size={16} aria-hidden="true" /></Link>
+            <Link href="/practica/ielts/reading/simulacros">Choose one of 40 Reading sets <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link href="/practica/ielts/reading/habilidades/skimming">Start with Skimming <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link href="/practica/ielts/reading/tipos-de-preguntas">Browse question types</Link>
           </div>

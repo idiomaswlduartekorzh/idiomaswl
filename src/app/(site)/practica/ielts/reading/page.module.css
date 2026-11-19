@@ -1,16 +1,16 @@
 .page {
-  --reading-navy: var(--wl-on-panel, #0c2d48);
-  --reading-navy-panel: var(--wl-panel-inverse, #0c2d48);
-  --reading-blue: var(--wl-on-panel-teal, #0f6f8d);
-  --reading-teal: var(--wl-on-panel-teal, #0d7c78);
-  --reading-amber: var(--wl-on-panel-warn, #a45312);
-  --reading-red: var(--wl-on-panel-alert, #a63745);
-  --reading-ink: var(--wl-on-panel, #102a43);
-  --reading-muted: var(--wl-on-panel-soft, #526579);
-  --reading-line: var(--wl-panel-line, #d6e1e8);
-  --reading-soft: var(--wl-panel-raised, #eaf3f6);
-  --reading-surface: var(--wl-surface-card);
-  background: var(--wl-panel-raised, #f5f8fa);
+  --reading-navy: var(--wl-text);
+  --reading-navy-panel: var(--wl-inverse);
+  --reading-blue: var(--reading-accent, var(--wlp-accent-lectura));
+  --reading-teal: var(--wlp-accent-escucha);
+  --reading-amber: var(--wlp-warn);
+  --reading-red: var(--wl-accent);
+  --reading-ink: var(--wl-text);
+  --reading-muted: var(--wl-text-soft);
+  --reading-line: var(--wl-border);
+  --reading-soft: var(--wl-surface-raised);
+  --reading-surface: var(--wl-surface-raised);
+  background: var(--wl-canvas);
   color: var(--reading-ink);
   min-height: 100vh;
   overflow-x: clip;
@@ -19,7 +19,7 @@
 
 .shell {
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: var(--wlp-shell);
 }
 
 .breadcrumb {
@@ -56,7 +56,7 @@
 
 .eyebrow,
 .kicker {
-  color: var(--reading-red);
+  color: var(--reading-blue);
   font-family: var(--mono, ui-monospace, monospace);
   font-size: 0.77rem;
   font-weight: 850;
@@ -67,7 +67,7 @@
 
 .hero h1 {
   color: var(--reading-navy);
-  font-size: clamp(2.6rem, 7vw, 5.4rem);
+  font-size: var(--wlp-h1);
   letter-spacing: -0.055em;
   line-height: 0.98;
   margin: 0;
@@ -110,7 +110,7 @@
 .primaryAction,
 .finalActions a:first-child {
   background: var(--reading-navy-panel);
-  color: #fff;
+  color: var(--wl-on-inverse);
 }
 
 .secondaryAction,
@@ -173,7 +173,7 @@
 }
 
 .fact {
-  background: var(--wl-panel-raised, #e8f0f4);
+  background: var(--wl-surface-raised);
   min-height: 112px;
   padding: 1.1rem;
 }
@@ -408,6 +408,17 @@
   margin: 0;
 }
 
+.methodProse {
+  max-width: 78ch;
+  color: var(--reading-ink);
+  font-size: 1.04rem;
+  line-height: 1.82;
+}
+
+.methodProse p { margin: 0 0 1.2rem; }
+.methodProse a { color: var(--reading-blue); font-weight: 750; text-underline-offset: 0.2em; }
+.methodProse a:focus-visible { outline: 3px solid var(--reading-blue); outline-offset: 3px; }
+
 .pathGrid {
   display: grid;
   gap: 1rem;
@@ -418,6 +429,7 @@
   background: var(--reading-surface);
   border: 1px solid var(--reading-line);
   border-top: 4px solid var(--reading-blue);
+  border-radius: var(--wlp-r);
   display: flex;
   flex-direction: column;
   min-height: 270px;
@@ -501,8 +513,9 @@
 }
 
 .systemCard {
-  background: var(--wl-surface-card);
+  background: var(--reading-surface);
   border: 1px solid var(--reading-line);
+  border-radius: var(--wlp-r);
   color: inherit;
   display: grid;
   gap: 0.7rem;
@@ -569,8 +582,9 @@
 }
 
 .typeFamily {
-  background: var(--wl-surface-card);
+  background: var(--reading-surface);
   border: 1px solid var(--reading-line);
+  border-radius: var(--wlp-r);
   display: grid;
   gap: 1.1rem;
   grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
@@ -640,8 +654,9 @@
 }
 
 .skillCard {
-  background: var(--wl-surface-card);
+  background: var(--reading-surface);
   border: 1px solid var(--reading-line);
+  border-radius: var(--wlp-r);
   color: inherit;
   display: flex;
   flex-direction: column;
@@ -824,8 +839,9 @@
 }
 
 .faqGrid article {
-  background: var(--wl-surface-card);
+  background: var(--reading-surface);
   border: 1px solid var(--reading-line);
+  border-radius: var(--wlp-r);
   padding: 1rem;
 }
 
@@ -869,7 +885,7 @@
 @media (max-width: 680px) {
   .page { padding: 1.2rem 0.9rem 4rem; }
   .hero { padding-top: 0.8rem; }
-  .hero h1 { font-size: clamp(2.4rem, 14vw, 3.7rem); }
+  .hero h1 { font-size: var(--wlp-h1-compact); line-height: 1.04; }
   .heroLead { font-size: 1rem; }
   .factGrid,
   .pathGrid,

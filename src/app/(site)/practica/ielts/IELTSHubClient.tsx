@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { ArrowRight, BookOpenText, Headphones, Mic2, PenLine } from 'lucide-react';
 import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
 import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
+import { SKILL_ACCENT } from '@/data/practica/skill-accents';
 import styles from './IeltsHub.module.css';
 
 const IELTS_PODCASTS = getExamPodcasts('ielts');
@@ -31,6 +33,7 @@ const AVAILABLE_SKILLS = [
     desc: 'Practise all 40 assembled sets with replayable audio, free navigation, private scoring and printable student PDFs.',
     count: '40 sets · 1,600 questions · student PDFs',
     href: '/practica/ielts/listening',
+    accent: SKILL_ACCENT.escucha.var,
     icon: Headphones,
   },
   {
@@ -40,6 +43,7 @@ const AVAILABLE_SKILLS = [
     desc: 'Practise Reading alone with 40 assembled sets, or study 14 question formats and 6 transferable reading skills.',
     count: '40 sets · 40 questions each · method lessons',
     href: '/practica/ielts/reading',
+    accent: SKILL_ACCENT.lectura.var,
     icon: BookOpenText,
   },
   {
@@ -49,6 +53,7 @@ const AVAILABLE_SKILLS = [
     desc: 'Work on Task 1 and Task 2 from any of the 40 assembled sets, with no exam timer, then study the full Writing method.',
     count: '40 sets · Task 1 + Task 2',
     href: '/practica/ielts/writing',
+    accent: SKILL_ACCENT.escritura.var,
     icon: PenLine,
   },
   {
@@ -58,6 +63,7 @@ const AVAILABLE_SKILLS = [
     desc: 'Practise the three Speaking parts independently with prompts from 40 assembled sets and record your responses.',
     count: '40 sets · 3 parts · recording',
     href: '/practica/ielts/speaking',
+    accent: SKILL_ACCENT.habla.var,
     icon: Mic2,
   },
 ];
@@ -92,7 +98,7 @@ export default function IELTSHubClient() {
           <div className={styles.sectionHeading}><p className={styles.kicker}>Four independent skills</p><h2 id="skills-heading">One skill at a time.</h2><p>Each route uses the same audited material as the complete mock. Choose a set, practise freely, then return here to switch skills.</p></div>
           <div className={styles.skillGrid}>
             {AVAILABLE_SKILLS.map(({ icon: Icon, ...skill }) => (
-              <Link key={skill.id} href={skill.href} className={styles.skillCard}>
+              <Link key={skill.id} href={skill.href} className={styles.skillCard} style={{ '--card-accent': skill.accent } as CSSProperties}>
                 <div className={styles.skillTop}><span className={styles.skillIcon}><Icon size={23} aria-hidden="true" /></span><span className={styles.skillLabel}>{skill.label}</span></div>
                 <h3>{skill.name}</h3><p>{skill.desc}</p><strong>{skill.count} <ArrowRight size={16} aria-hidden="true" /></strong>
               </Link>

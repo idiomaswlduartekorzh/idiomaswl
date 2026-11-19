@@ -1,20 +1,20 @@
 .page {
-  --task-navy: var(--wl-on-panel, #102e6f);
-  --task-navy-panel: var(--wl-panel-inverse, #102e6f);
-  --task-red: var(--wl-on-panel-alert, #b42332);
-  --task-teal: var(--wl-on-panel-teal, #176b87);
-  --task-green: var(--wl-on-panel-ok, #18794e);
-  --task-purple: var(--wl-on-panel-purple, #6941a5);
-  --task-ink: var(--wl-on-panel, #14244f);
-  --task-muted: var(--wl-on-panel-soft, #5c6680);
-  --task-line: var(--wl-rule);
+  --task-navy: var(--wl-text);
+  --task-navy-panel: var(--wl-inverse);
+  --task-red: var(--wl-accent);
+  --task-teal: var(--wlp-accent-escucha);
+  --task-green: var(--wlp-accent-escritura);
+  --task-purple: var(--wlp-accent-gramatica);
+  --task-ink: var(--wl-text);
+  --task-muted: var(--wl-text-soft);
+  --task-line: var(--wl-border);
   min-height: 100vh;
   padding: 2rem 1.25rem 5rem;
-  background: var(--wl-panel-raised, #f7f8fc);
+  background: var(--wl-canvas);
   color: var(--task-ink);
 }
 
-.shell { width: min(1180px, 100%); margin: 0 auto; }
+.shell { width: min(var(--wlp-shell), 100%); margin: 0 auto; }
 
 .breadcrumb {
   display: flex;
@@ -34,7 +34,7 @@
 .eyebrow,
 .kicker {
   margin: 0 0 0.65rem;
-  color: var(--task-red);
+  color: var(--task-green);
   font: 800 0.77rem/1.4 var(--mono, ui-monospace, monospace);
   text-transform: uppercase;
 }
@@ -43,7 +43,7 @@
   max-width: 900px;
   margin: 0;
   color: var(--task-navy);
-  font-size: clamp(2.25rem, 6vw, 4.6rem);
+  font-size: var(--wlp-h1);
   line-height: 1.02;
   letter-spacing: -0.05em;
   text-wrap: balance;
@@ -65,7 +65,7 @@
   overflow: hidden;
 }
 
-.fact { min-height: 112px; padding: 1.1rem; background: var(--wl-panel-raised, #edf1f9); }
+.fact { min-height: 112px; padding: 1.1rem; background: var(--wl-surface-raised); }
 .fact strong { display: block; margin-bottom: 0.35rem; color: var(--task-navy); font-size: 1.5rem; }
 .fact span { color: var(--task-muted); font-size: 0.88rem; line-height: 1.45; }
 
@@ -352,7 +352,7 @@
   .pathGrid,
   .sequenceGrid,
   .faqGrid { grid-template-columns: 1fr; }
-  .hero h1 { font-size: clamp(2.15rem, 12vw, 3.4rem); }
+  .hero h1 { font-size: var(--wlp-h1-compact); }
   .podcastHeader { grid-template-columns: 1fr; }
   .podcastDuration { justify-self: start; }
   .playerShell { margin-inline: 0.85rem; }

@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
+import { SKILL_ACCENT } from '@/data/practica/skill-accents';
 import styles from './WritingHub.module.css';
 
 const PRIMARY_TASKS = [
@@ -10,7 +11,7 @@ const PRIMARY_TASKS = [
     time: '20 minutes · 150+ words',
     description: 'Turn graphs, tables, maps and process diagrams into a selective, accurate report. Practise the response structure and every major visual family.',
     href: '/practica/ielts/academic/writing/task1',
-    accent: 'var(--wl-on-panel-teal, #176b87)',
+    accent: SKILL_ACCENT.escritura.var,
   },
   {
     id: 'task2',
@@ -19,7 +20,7 @@ const PRIMARY_TASKS = [
     time: '40 minutes · 250+ words',
     description: 'Build a clear position, develop relevant ideas and answer opinion, discussion, problem-solution, advantages-disadvantages and direct-question prompts.',
     href: '/practica/ielts/academic/writing/task2',
-    accent: 'var(--wl-on-panel-alert, #b42332)',
+    accent: SKILL_ACCENT.escritura.var,
   },
 ];
 
@@ -29,6 +30,11 @@ const CRITERIA = [
   'Lexical Resource',
   'Grammatical Range & Accuracy',
 ];
+
+export const WRITING_FAQS = [
+  { question: 'How are Task 1 and Task 2 different?', answer: 'IELTS Academic Writing has two tasks. Task 1 asks you to report the main features of visual information; Task 2 asks you to develop an essay response to a question or argument.' },
+  { question: 'Is the WeLearn paragraph plan an IELTS rule?', answer: 'No. Official format versus WeLearn strategy matters here: IELTS sets the tasks, minimum lengths and assessment criteria, while our paragraph plans and study targets help you practise a clear response.' },
+] as const;
 
 export default function IELTSWritingPage() {
   return (
@@ -55,10 +61,10 @@ export default function IELTSWritingPage() {
         <section className={styles.formatPanel} aria-label="Official format and WeLearn learning structure">
           <article>
             <h2>Official format</h2>
-            <p>Academic Writing has 2 tasks. Task 1 describes visual information in at least 150 words; Task 2 answers an essay question in at least 250 words.</p>
+            <p>IELTS Academic Writing has two tasks. Task 1 describes visual information in at least 150 words; Task 2 answers an essay question in at least 250 words.</p>
           </article>
           <article>
-            <h2>WeLearn learning structure</h2>
+            <h2>Official format versus WeLearn strategy</h2>
             <p>Each route separates method, worked example, guided practice, independent practice and review. Study targets support learning; they are not additional official IELTS rules.</p>
           </article>
         </section>
@@ -101,7 +107,7 @@ export default function IELTSWritingPage() {
           <Link
             href="/practica/ielts/academic/writing/rubrica"
             className={styles.rubricCard}
-            style={{ '--card-accent': 'var(--wl-on-panel, #102e6f)' } as CSSProperties}
+            style={{ '--card-accent': SKILL_ACCENT.escritura.var } as CSSProperties}
           >
             <div>
               <h3>Writing review rubric</h3>
@@ -113,6 +119,8 @@ export default function IELTSWritingPage() {
             </div>
           </Link>
         </section>
+
+        <section className={styles.faqSection} aria-labelledby="writing-faq-title"><div className={styles.routeHeader}><div><p className={styles.sectionLabel}>Before you choose</p><h2 id="writing-faq-title">Writing questions</h2></div></div><div className={styles.faqGrid}>{WRITING_FAQS.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
       </div>
     </div>
   );

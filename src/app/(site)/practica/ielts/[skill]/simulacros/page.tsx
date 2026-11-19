@@ -66,5 +66,5 @@ export default async function IeltsSkillSetsPage({ params }: Props) {
     };
   });
 
-  return <ExamSkillSetLibrary product="ielts" skill={selectedSkill} description={`Choose one of the 40 assembled IELTS Academic sets and practise only ${config.label}. Navigate freely between its parts without a timer.`} detail={config.detail} note={config.note} sets={sets} backHref="/practica/ielts#destrezas" backLabel="Choose another IELTS skill" />;
+  return <ExamSkillSetLibrary product="ielts" skill={selectedSkill} description={`Choose one of the 40 assembled IELTS Academic sets and practise only ${config.label}. Navigate freely between its parts without a timer.`} detail={config.detail} note={config.note} sets={sets} backHref={`/practica/ielts/${selectedSkill}`} backLabel={`Back to ${config.label} guidance`} />;
 }

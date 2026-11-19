@@ -1289,7 +1289,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill, openAiP
               if (!practiceSkill) trackIeltsEvent('ielts_mock_start', { mock_id: mock.id, resumed: draftRestored });
               setPhase('exam');
             }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>{practiceSkill ? (draftRestored ? 'Continue practice' : 'Start practice') : (draftRestored?'Continuar examen':'Empezar examen')}</button>
-            {!practiceSkill && <Link href={`/examenes/ielts/practica/${mock.id}/guiado`} className="btn btn-ghost" style={{fontSize:'1rem',padding:'0.9rem 1.5rem'}}>Aprender paso a paso</Link>}
+            {!practiceSkill && setNumber >= 1 && setNumber <= 20 && <Link href={`/examenes/ielts/practica/${mock.id}/guiado`} className="btn btn-ghost" style={{fontSize:'1rem',padding:'0.9rem 1.5rem'}}>Aprender paso a paso</Link>}
           </div>
           <Link href={practiceSkill ? `/practica/ielts/${practiceSkill}/simulacros` : `/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>{practiceSkill ? 'Back to skill sets' : 'Volver a IELTS'}</Link>
         </div>

@@ -823,3 +823,38 @@ a.modeCard:focus-visible {
     transform: none;
   }
 }
+
+/* IELTS set libraries share the Práctica visual contract; TOEFL keeps its own hub. */
+.page[data-exam="ielts"] {
+  --toefl-navy: var(--wl-text);
+  --toefl-red: var(--ielts-skill-accent);
+  --toefl-teal: var(--ielts-skill-accent);
+  --toefl-ink: var(--wl-text);
+  --toefl-muted: var(--wl-text-soft);
+  --toefl-line: var(--wl-border);
+  --toefl-paper: var(--wl-canvas);
+}
+.page[data-exam="ielts"] :global(.wrap) { max-width: calc(var(--wlp-shell) + 64px); }
+.page[data-exam="ielts"] .hero { background: var(--wl-canvas); padding-top: 2rem; }
+.page[data-exam="ielts"] .breadcrumb { margin-bottom: 1.5rem; text-transform: none; font-size: 0.82rem; }
+.page[data-exam="ielts"] .hero h1 { font-size: var(--wlp-h1); line-height: 1.02; letter-spacing: -0.04em; }
+.page[data-exam="ielts"] .lead { font-size: 1.1rem; line-height: 1.75; margin-top: 1.15rem; }
+.page[data-exam="ielts"] .skillHeroGrid { gap: 2rem; padding-bottom: 2.25rem; }
+.page[data-exam="ielts"] .skillSummary { min-height: 220px; background: var(--wl-surface-raised); border: 1px solid var(--wl-border); border-top: 4px solid var(--ielts-skill-accent); border-radius: var(--wlp-r); color: var(--wl-text); }
+.page[data-exam="ielts"] .skillSummary svg { color: var(--ielts-skill-accent); }
+.page[data-exam="ielts"] .skillSummary span,
+.page[data-exam="ielts"] .skillSummary small { color: var(--wl-text-soft); }
+.page[data-exam="ielts"] .skillSummary small { border-top-color: var(--wl-border); }
+.page[data-exam="ielts"] .modes { padding: 3.5rem 0 5rem; }
+.page[data-exam="ielts"] .previewHeader h2 { font-size: var(--wlp-h2); line-height: 1.12; }
+.page[data-exam="ielts"] .setCard { min-width: 0; min-height: 100px; background: var(--wl-surface-raised); border-radius: var(--wlp-r); transition: border-color 160ms ease, transform 160ms ease; }
+.page[data-exam="ielts"] .setCard:hover,
+.page[data-exam="ielts"] .setCard:focus-visible { border-color: var(--ielts-skill-accent); box-shadow: none; transform: translateY(-2px); }
+.page[data-exam="ielts"] .setCard:focus-visible,
+.page[data-exam="ielts"] .textLink:focus-visible { outline: 3px solid var(--ielts-skill-accent); outline-offset: 3px; }
+.page[data-exam="ielts"] .setNumber { background: color-mix(in srgb, var(--ielts-skill-accent) 12%, var(--wl-surface)); border-radius: var(--wlp-r); }
+@media (prefers-reduced-motion: reduce) {
+  .page[data-exam="ielts"] .setCard { transition: none; }
+  .page[data-exam="ielts"] .setCard:hover,
+  .page[data-exam="ielts"] .setCard:focus-visible { transform: none; }
+}
