@@ -1,6 +1,6 @@
 # Revisión editorial de Writing laboral · 19 de noviembre de 2026
 
-Estado: **corrección completa en rama; integración y publicación pendientes**. Esta revisión responde a dos
+Estado: **publicado en `main` y producción**. Esta revisión responde a dos
 observaciones del propietario: la longitud de las opciones revela la clave y las tres
 casillas de análisis resultan poco naturales. El texto de la experiencia sigue en el
 idioma estudiado; este documento de trabajo está en español.

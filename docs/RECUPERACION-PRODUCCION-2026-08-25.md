@@ -1066,4 +1066,14 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `1c35945c` con Next.js 16.4.3. Compilación, TypeScript y generación de rutas
   completadas; estado `READY`. El smoke autenticado del preview devolvió 200 en
   24/24 rutas de `/practica/<idioma>/<nivel>/escritura`.
-- Estado: `EN RAMA`; falta integrar en `main` y comprobar el deployment de Vercel.
+- `main` incorporó el commit de contenido `1c35945cce405b6e40ee3b8d3cbe304f1436d616`
+  por fast forward. El workflow [Content integrity](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/44544241970)
+  terminó con `baseline-and-types` y `production-build` en verde.
+- Vercel publicó [`dpl_MiwhNRaxenTv5CujKLMzgwYzfHz5`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/MiwhNRaxenTv5CujKLMzgwYzfHz5)
+  desde `main` y el commit `1c35945c`, en estado `READY` y asignado a
+  `www.idiomaswl.com`. El smoke público confirmó HTTP 200 en las 24/24 rutas
+  B2–C2 de Writing. En navegador se comprobó el flujo correo → documento →
+  análisis y las nuevas casillas en inglés B2 y japonés C2, sin texto en español
+  dentro de los ejercicios.
+- Estado: `DESPLEGADO`. Este asiento de release solo modifica documentación;
+  el contenido publicado corresponde al commit de contenido citado arriba.
