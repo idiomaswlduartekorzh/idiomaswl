@@ -25,3 +25,4 @@ La URL de retorno trae una referencia no confiable. El servidor consulta a ePayc
 - Ejecutar las pruebas de extremo a extremo en Sandbox y revisar la respuesta real de la API de validación, incluido `x_signature` y los estados de aprobación/reversión.
 - Decidir si abrir una cuenta PayU para Google Pay web, pedir su activación y comparar tarifas/conciliación frente a ePayco y Wompi. Hasta integrar PayU no anunciar Google Pay en la interfaz.
 - Revisar el contrato comercial y el flujo de conciliación/reembolsos de dos pasarelas antes de activar la bandera.
+- Resolver el aviso de seguridad de Next.js 16.4.3 y volver a pasar el build normal antes de integrar la rama.

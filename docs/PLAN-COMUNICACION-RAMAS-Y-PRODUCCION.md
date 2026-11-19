@@ -10,6 +10,7 @@ Fecha de corte: 25 de agosto de 2026.
 - Rama: `codex/apple-pay-epayco-20261119`, creada desde `origin/main@40395be`; estado `EN_VALIDACION`, sin integración ni despliegue.
 - Alcance: SmartCheckout Standard de ePayco para compras únicas de cursos, retorno y webhook firmados, consulta al proveedor, conciliación y recuperación. Wompi permanece como opción existente. Sin migración de base de datos.
 - `EPAYCO_COURSE_ENABLED=false` por defecto. Activación pendiente de cuenta, Apple Pay habilitado por ePayco, credenciales, pruebas Sandbox y revisión comercial. PayU documenta Google Pay web en Colombia; ePayco solo lo anuncia para datáfono presencial. Integrarlo requiere una decisión y un contrato separados.
+- Validación local del 19 de noviembre: `npm ci`, toda la batería `prebuild`, TypeScript y 5 pruebas de ePayco pasaron. `next build` compiló y generó 5.368 páginas con salida 0 usando `CI=true __NEXT_AGENT_UPGRADE=security`; el comando habitual `npm run build` llegó al final, pero Next.js 16.4.3 lo cerró con su recordatorio de seguridad. `npm audit --omit=dev` señala dos avisos moderados de Next.js corregidos desde 16.4.5. La rama sigue sin integrar ni desplegar; actualizar Next.js y repetir la validación requiere una tarea separada.
 - Detalle operativo: [`epayco-apple-pay.md`](epayco-apple-pay.md).
 
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
