@@ -158,3 +158,14 @@ Para comprobar este módulo en desarrollo, instalar PGlite 0.6.0 en
 `npm run test:admin-operations` y `npm run test:admin-google-calendar`. Para verificar el despliegue usar una cuenta
 de propietario y una de administración sin permiso sobre el historial, además
 de la verificación general de esta página.
+
+### Revisión de pagos de Numbers
+
+La bandeja `/dashboard/admin/pagos/revision-numbers` está restringida a cuentas
+de propietario. Muestra la referencia de la celda, el valor original, el motivo
+y el estado. La migración `20261124181510_admin_numbers_payment_review.sql` ya se
+aplicó en Supabase. La conciliación de Numbers alimenta la bandeja privada.
+Cada comprobante confirmado agrega un pago con la referencia
+de la celda y la fecha real del recibo. Si hay posible duplicado, se solicita una
+referencia de comprobante distinta. El índice único protege la referencia de la
+fila y evita reutilizar un comprobante activo entre revisiones.
