@@ -5,6 +5,26 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Inglés presencial y francés en Bucaramanga — 24 de noviembre de 2026
+
+- Trabajo `seo-ingles-frances-20261124`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/seo-ingles-frances-20261124@11aa3d8b`, base `origin/main@4237f681`.
+  Integración por squash del [PR #63](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/63).
+- Alcance. Horarios y planes de inglés presencial, tres enlaces del blog local,
+  consulta de francés, práctica A1 y FAQ de precios. Los enlaces existentes de
+  IELTS y TOEFL indican preparación con tutor. Cinco archivos de rutas y estilos.
+  Datos de sede fuera del alcance. Sin migraciones, variables ni dependencias entre ramas.
+- Validación del 24 de noviembre. [Content integrity #662](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45500974077)
+  pasó línea base, catálogo, TypeScript y compilación completa. Los botones y destinos
+  pasaron a 390 y 1440 px en la vista previa y en el sitio público.
+- Producción. `main@ed5db4926335eb3a76195ab736279c16f16e1b2e`, deployment
+  `dpl_EMjW9funnD5iQowSVxQnSsEzUp2Z` en estado `READY` con `www.idiomaswl.com`.
+  El smoke oficial verificó 49 rutas y 17 audios. Otras 17 páginas se compararon
+  con la captura previa para comprobar títulos, H1, canónicas, robots y datos
+  de sede. Las cinco páginas editadas están en el sitemap de 3.839 URLs.
+- La prueba adicional de gramática espera 24 plantillas y encuentra las 48
+  ya presentes en la base. Las entradas de esa prueba coinciden con la base.
+
 ## Agenda de clases, pagos y correo — 24 de noviembre de 2026
 
 - Agenda y pagos desplegados desde `main@8216abf2` en
