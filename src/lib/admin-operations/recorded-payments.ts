@@ -30,20 +30,23 @@ function validMethod(value: string): value is Method {
   return PAYMENT_METHODS.some(method => value === method);
 }
 
+export function parsePaymentAmount(amount: string): number | null {
+  if (!/^\d{1,10}(?:\.\d{1,2})?$/.test(amount)) return null;
+  const [pesos, cents = ''] = amount.split('.');
+  const total = Number(pesos) * 100 + Number(cents.padEnd(2, '0'));
+  return validAmount(total) ? total : null;
+}
+
 export function parseManualPayment(form: FormData, today = bogotaDay()): RecordedPayment | null {
   const id = String(form.get('requestId') ?? '');
   const paidOn = String(form.get('paidOn') ?? '');
-  const amount = String(form.get('amountInCop') ?? '');
+  const amountInCents = parsePaymentAmount(String(form.get('amountInCop') ?? ''));
   const customer = String(form.get('customerName') ?? '').trim();
   const description = String(form.get('description') ?? '').trim();
   const method = String(form.get('method') ?? '');
   const reference = String(form.get('reference') ?? '').trim();
-  if (!isRecordId(id) || !parseDay(paidOn) || paidOn > today || !/^\d{1,10}(?:\.\d{1,2})?$/.test(amount)
+  if (!isRecordId(id) || !parseDay(paidOn) || paidOn > today || amountInCents === null
     || !validText(customer, 150) || !validText(description, 300) || !validMethod(method) || reference.length > 120) return null;
-
-  const [pesos, cents = ''] = amount.split('.');
-  const amountInCents = Number(pesos) * 100 + Number(cents.padEnd(2, '0'));
-  if (!validAmount(amountInCents)) return null;
 
   return {
     id: id.toLowerCase(),
@@ -59,7 +62,11 @@ export function parseManualPayment(form: FormData, today = bogotaDay()): Recorde
 }
 
 export function isRecordedPaymentId(value: string): boolean {
-  return isRecordId(value) || HISTORICAL_REFERENCE.test(value);
+  return isRecordId(value) || isNumbersPaymentId(value);
+}
+
+export function isNumbersPaymentId(value: string): boolean {
+  return HISTORICAL_REFERENCE.test(value);
 }
 
 export function parseHistoricalPayments(input: unknown): RecordedPayment[] {

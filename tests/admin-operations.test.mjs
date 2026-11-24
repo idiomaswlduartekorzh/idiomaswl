@@ -8,6 +8,7 @@ import { googleCalendarDraft, parseLessonForm, weekOf } from '../src/lib/admin-o
 import { parseHistoricalPayments, parseManualPayment } from '../src/lib/admin-operations/recorded-payments.ts';
 import { makePaymentWorkbook } from '../src/lib/admin-operations/payment-workbook.ts';
 import { summarizePaymentYears } from '../src/lib/admin-payments/metrics.ts';
+import { needsDistinctReceipt, parseNumbersReviewPayment } from '../src/lib/admin-operations/numbers-payment-review.ts';
 
 const ownerId = '12345678-1234-4234-8234-123456789012';
 
@@ -60,6 +61,23 @@ test('Excel exports numbers as numeric cells and preserves input text without fo
   assert.doesNotMatch(sheet, /<f[> ]/);
 });
 
+test('Numbers review keeps the cell reference when the receipt confirms a different month', () => {
+  const fields = new FormData();
+  for (const [key, value] of Object.entries({
+    id: 'NUMBERS-2024-01-D6', amountInCop: '48000.05', paidOn: '2024-02-29',
+    customerName: ' Cliente ficticio ', description: 'Comprobante de prueba', receipt: ' Ref de prueba ',
+  })) fields.set(key, value);
+  const payment = parseNumbersReviewPayment(fields, '2026-11-24');
+  assert.deepEqual([payment.id, payment.numbers_review_id, payment.period, payment.amount_in_cents, payment.external_reference],
+    ['NUMBERS-2024-01-D6', 'NUMBERS-2024-01-D6', '2024-02-01', 4_800_005, 'Ref de prueba']);
+  assert.equal(parseNumbersReviewPayment(fields, '2024-02-28'), null);
+  fields.set('id', ownerId);
+  assert.equal(parseNumbersReviewPayment(fields, '2026-11-24'), null);
+  assert.equal(needsDistinctReceipt('posible_duplicado'), true);
+  assert.equal(needsDistinctReceipt('coincidencia_de_nombre_e_importe_en_el_mes'), true);
+  assert.equal(needsDistinctReceipt('fecha_fuera_del_mes'), false);
+});
+
 test('monthly payment totals use the historical month and Bogotá dates without counting unpaid or voided rows', () => {
   const history = {
     source: 'historical', status: 'APPROVED', sourcePeriod: '2024-02-01', paidOn: null,
@@ -108,6 +126,10 @@ test('database prevents teacher collisions, keeps direct records private and exp
       grant select on public.admin_payment_ledger to service_role;
     `);
     await db.exec(await readFile(new URL('../supabase/migrations/20261124161345_admin_agenda_and_recorded_payments.sql', import.meta.url), 'utf8'));
+    await db.exec(await readFile(new URL('../supabase/migrations/20261124181510_admin_numbers_payment_review.sql', import.meta.url), 'utf8'));
+    await db.exec(`insert into public.admin_numbers_payment_review(id, reported_amount_in_cents, reason) values
+      ('NUMBERS-2024-01-D6', 450000, 'fecha_fuera_del_mes'),
+      ('NUMBERS-2024-01-D7', null, 'posible_duplicado')`);
     await db.exec('set role service_role');
     assert.deepEqual((await db.query('select source, reference from public.admin_online_payment_ledger')).rows, [
       { source: 'plans', reference: 'TEST-WOMPI' },
@@ -160,9 +182,22 @@ test('database prevents teacher collisions, keeps direct records private and exp
     await db.query("update public.admin_recorded_payments set voided_at=now(), voided_by=$1::uuid, void_reason='Registro duplicado' where id=$1", [ownerId]);
     assert.equal((await db.query("select status from public.admin_full_payment_ledger where source='manual'")).rows[0].status, 'VOIDED');
 
+    const reviewedInsert = `insert into public.admin_recorded_payments
+      (id, source, period, paid_on, amount_in_cents, customer_name, description, external_reference, numbers_review_id)
+      values ($1, 'historical', '2024-02-01', '2024-02-12', 450000, 'Cliente ficticio', 'Prueba', $2, $3)`;
+    assert.equal((await db.query('select * from public.admin_numbers_payment_review')).rows.length, 2);
+    await assert.rejects(db.query('update public.admin_numbers_payment_review set reported_amount_in_cents=2'), { code: '42501' });
+    await assert.rejects(db.query(reviewedInsert, ['NUMBERS-2024-01-D6', 'TEST-RECIBO', null]), { code: '23514' });
+    await assert.rejects(db.query(reviewedInsert, ['NUMBERS-2024-01-D8', 'TEST-RECIBO', 'NUMBERS-2024-01-D8']), { code: '23503' });
+    await db.query(reviewedInsert, ['NUMBERS-2024-01-D6', 'TEST-RECIBO', 'NUMBERS-2024-01-D6']);
+    await assert.rejects(db.query(reviewedInsert, ['NUMBERS-2024-01-D6', 'OTRO', 'NUMBERS-2024-01-D6']), { code: '23505' });
+    await assert.rejects(db.query(reviewedInsert, ['NUMBERS-2024-01-D7', 'test-recibo', 'NUMBERS-2024-01-D7']), { code: '23505' });
+    const reviewed = await db.query("select source_period::text, paid_on::text from public.admin_full_payment_ledger where record_id='historical:NUMBERS-2024-01-D6'");
+    assert.deepEqual(reviewed.rows, [{ source_period: '2024-02-01', paid_on: '2024-02-12' }]);
+
     for (const role of ['anon', 'authenticated']) {
       await db.exec(`set role ${role}`);
-      for (const table of ['admin_lessons', 'admin_recorded_payments', 'admin_full_payment_ledger', 'admin_online_payment_ledger']) {
+      for (const table of ['admin_lessons', 'admin_recorded_payments', 'admin_full_payment_ledger', 'admin_online_payment_ledger', 'admin_numbers_payment_review']) {
         await assert.rejects(db.query(`select * from public.${table}`), { code: '42501' });
       }
       await assert.rejects(db.query('select * from public.admin_toefl_payment_entries()'), { code: '42501' });

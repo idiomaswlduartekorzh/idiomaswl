@@ -1,8 +1,7 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
-import { requireAdmin } from '@/lib/auth/require-admin.server';
-import { isJoseAdminEmail } from '@/lib/config/admins';
+import { requireOwnerAdmin } from '@/lib/auth/require-admin.server';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { HISTORICAL_UPLOAD_LIMIT, PAYMENTS_PATH, isRecordedPaymentId, parseHistoricalPayments, parseManualPayment } from '@/lib/admin-operations/recorded-payments';
 
@@ -12,8 +11,7 @@ export async function changeRecordedPayment(
 ): Promise<typeof _state> {
   let admin;
   try {
-    admin = await requireAdmin();
-    if (!isJoseAdminEmail(admin.email)) throw new Error();
+    admin = await requireOwnerAdmin();
   } catch {
     return { ok: false, message: 'Esta operación requiere una cuenta de propietario.' };
   }

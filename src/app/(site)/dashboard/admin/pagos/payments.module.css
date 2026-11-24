@@ -175,6 +175,11 @@
 .tableWrap td small { max-width: 230px; margin-top: 3px; overflow: hidden; color: #989299; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
 .tableWrap time { white-space: nowrap; }
 .tableWrap code { display: block; max-width: 150px; overflow: hidden; color: #6b6570; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.reviewTable th[scope='row'] { text-transform: none; letter-spacing: 0; }
+.reviewTable th[scope='row'] code { max-width: none; color: #514c54; font-size: 11px; }
+.reviewTable td:nth-child(2), .reviewTable td:nth-child(4) { white-space: nowrap; }
+.reviewForm summary { color: #75401f; font-weight: 750; white-space: nowrap; cursor: pointer; }
+.reviewForm .form { min-width: min(310px, 65vw); margin-top: 9px; }
 .amount { font-size: 12px; font-weight: 800; white-space: nowrap; }
 .badge { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 9px; font-weight: 800; white-space: nowrap; }
 .statusAPPROVED { color: #166534; background: #dcfce7; }

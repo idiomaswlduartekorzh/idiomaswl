@@ -34,6 +34,7 @@ import type {
   AdminPaymentsData,
 } from '@/lib/admin-payments/server';
 import { bogotaDay } from '@/lib/admin-operations/agenda';
+import { NUMBERS_REVIEW_PATH } from '@/lib/admin-operations/numbers-payment-review';
 import { CURRENCY, money, monthKey, paymentMonth, shortMoney } from '@/lib/admin-payments/metrics';
 import { createPaymentLinkAction } from './actions';
 import MonthlyPaymentsOverview from './MonthlyPaymentsOverview';
@@ -288,6 +289,7 @@ export default function PaymentsAdminClient({
         <div className={styles.headerActions}>
           <span className={styles.admin}>{adminEmail}</span>
           <Link href="/dashboard/admin/agenda" className={styles.secondaryButton}>Agenda de clases</Link>
+          {owner && <Link href={NUMBERS_REVIEW_PATH} prefetch={false} className={styles.secondaryButton}>Revisar pagos de Numbers</Link>}
           <button type="button" className={styles.secondaryButton} onClick={() => window.location.reload()}>
             <RefreshCw size={15} /> Actualizar
           </button>

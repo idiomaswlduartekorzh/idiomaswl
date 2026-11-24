@@ -22,8 +22,11 @@ Fecha de corte: 25 de agosto de 2026.
   en Supabase de producción. Se comprobaron los permisos y la consulta del
   registro de pagos en línea. Se importaron los movimientos validados de Numbers
   y se comprobó que el historial solo aparezca en el acceso de propietario.
-- `codex/metricas-pagos-mensuales` amplía Pagos con una vista de recaudo por mes
-  y año, filtrable por origen y con descarga de agregados a Excel.
+- Las métricas mensuales de Pagos se verificaron en producción desde `main@1b18ad1b`
+  en `dpl_E4jxbDyaTMGbkR5UiNpKYYM679no`. Incluyen filtro por origen y Excel.
+- `codex/revision-pagos-numbers` agrega una bandeja de propietario para los
+  movimientos de Numbers pendientes de cotejar. La confirmación conserva la
+  celda original y contabiliza con la fecha efectiva del comprobante.
   [Guía de operación](admin-operations.md).
 
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
