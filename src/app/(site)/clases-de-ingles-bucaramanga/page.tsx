@@ -12,6 +12,7 @@ const wa = (msg: string) =>
   `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
 const WA_GENERAL  = wa('Hola, vi su página de clases de inglés en Bucaramanga. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
+const WA_HORARIOS = wa('Hola, vi las clases de inglés presencial de WeLearn en Bucaramanga. ¿Qué horarios tienen disponibles y cuánto cuestan las clases y el diagnóstico con tutor?');
 const WA_CONVERSACION = wa('Hola, quiero mejorar mi conversación en inglés en Bucaramanga. ¿Cómo son las clases y cuánto cuesta el diagnóstico con tutor?');
 const WA_TRABAJO = wa('Hola, busco clases de inglés en Bucaramanga para el trabajo. ¿Qué horarios y precios tienen?');
 const WA_ESTUDIO = wa('Hola, busco clases de inglés en Bucaramanga para estudiar. ¿Cómo es la ruta y cuánto cuesta el diagnóstico?');
@@ -102,7 +103,7 @@ const FAQS_LOCAL = [
   },
   {
     q: '¿Cuánto cuestan las clases de inglés en Bucaramanga?',
-    a: 'Depende de la intensidad semanal y de si tomas clases sueltas o un paquete de horas, porque el valor por hora baja a mayor volumen. La sesión de diagnóstico con tutor es paga; te informamos su precio antes de agendar. Escríbenos al 300 500 4253.',
+    a: 'El precio depende del plan, la modalidad y la intensidad semanal. Puedes consultar el precio de las clases y del diagnóstico con tutor antes de agendar. Escríbenos al 300 500 4253.',
   },
   {
     q: '¿WeLearn prepara para IELTS y TOEFL desde Bucaramanga?',
@@ -153,7 +154,7 @@ export default function ClasesInglessBucaramangaPage() {
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section style={{ background: 'var(--bg)', paddingTop: '3.5rem', paddingBottom: '3rem' }}>
         <div className="wrap">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+          <div className={s.heroGrid}>
 
             {/* Copy */}
             <div>
@@ -171,24 +172,26 @@ export default function ClasesInglessBucaramangaPage() {
                 Atendemos Bucaramanga, Floridablanca, Girón y Piedecuesta.
               </p>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted)', lineHeight: 1.6, marginBottom: '2rem', maxWidth: 440 }}>
-                Aprende inglés para conversación, estudio o trabajo con tutor asignado. Si necesitas una certificación, también tenemos rutas específicas para IELTS, TOEFL e ICFES.
+                Aprende inglés para conversación, estudio o trabajo con tutor asignado.
+                En los <Link href="/precios?idioma=ingles" className={s.pricingLink}>planes por ciclo</Link>, cada clase dura 100 minutos.
+                Consulta la disponibilidad de horarios antes de agendar.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <a
-                  href={WA_GENERAL}
+                  href={WA_HORARIOS}
                   data-wa-cta="ingles-bucaramanga-hero"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#25D366', color: '#fff', fontWeight: 700, fontSize: '1rem', padding: '0.85rem 2rem', borderRadius: 12, textDecoration: 'none' }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#25D366', color: '#10261a', fontWeight: 700, fontSize: '1rem', padding: '0.85rem 2rem', borderRadius: 12, textDecoration: 'none' }}
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.852L.057 23.273c-.083.311.202.596.513.513l5.421-1.471A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.497-5.197-1.367l-.373-.216-3.216.873.873-3.216-.216-.373A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                   </svg>
-                  Consultar ruta y precio
+                  Consultar horarios presenciales
                 </a>
                 <a href={WA_PAQUETE} data-wa-cta="ingles-bucaramanga-paquetes" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ fontSize: '0.9rem' }}>
-                  Ver paquetes →
+                  Consultar paquetes por WhatsApp →
                 </a>
               </div>
               <p style={{ fontSize: '0.82rem', color: 'var(--muted)', marginTop: '0.8rem', lineHeight: 1.5 }}>
@@ -310,8 +313,8 @@ export default function ClasesInglessBucaramangaPage() {
           </div>
           <div className={s.examPaths}>
             <strong>¿Necesitas preparar un examen?</strong>
-            <Link href="/preparacion-ielts">IELTS →</Link>
-            <Link href="/preparacion-toefl">TOEFL iBT →</Link>
+            <Link href="/preparacion-ielts">Preparación IELTS con tutor →</Link>
+            <Link href="/preparacion-toefl">Preparación TOEFL iBT con tutor →</Link>
             <Link href="/preparacion-icfes">ICFES Inglés →</Link>
           </div>
         </div>
@@ -329,8 +332,17 @@ export default function ClasesInglessBucaramangaPage() {
           </p>
 
           {/* Planes mensuales */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem', marginTop: '2.5rem' }}>
+          <div className={s.plansGrid}>
             {[
+              {
+                name: 'Plan Intensivo',
+                price: 'Consultar',
+                cadence: '/ mes',
+                desc: '2 a 4 sesiones en vivo por semana con tutor asignado, plan personalizado y evaluación mensual. Consulta la disponibilidad presencial.',
+                cta: 'Consultar horarios presenciales',
+                url: WA_HORARIOS,
+                featured: true,
+              },
               {
                 name: 'Diagnóstico',
                 price: 'Consultar',
@@ -347,22 +359,13 @@ export default function ClasesInglessBucaramangaPage() {
                 desc: 'Simulacros ilimitados + feedback escrito por sección + chat con tutor. Sin sesiones en vivo.',
                 cta: 'Consultar por WhatsApp',
                 url: WA_GENERAL,
-                featured: true,
-              },
-              {
-                name: 'Plan Intensivo',
-                price: 'Consultar',
-                cadence: '/ mes',
-                desc: '2 a 4 sesiones en vivo por semana + tutor asignado + plan personalizado + evaluación mensual.',
-                cta: 'Consultar ruta y precio',
-                url: WA_GENERAL,
                 featured: false,
               },
             ].map(plan => (
               <div key={plan.name} style={{ background: plan.featured ? 'var(--accent-action, var(--accent))' : 'rgba(255,255,255,0.06)', border: `1px solid ${plan.featured ? 'var(--accent-action, var(--accent))' : 'rgba(255,255,255,0.12)'}`, borderRadius: 16, padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative' }}>
                 {plan.featured && (
                   <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#fff', color: 'var(--accent-action, var(--accent))', fontSize: '0.72rem', fontWeight: 700, padding: '0.22rem 0.9rem', borderRadius: 20, whiteSpace: 'nowrap' }}>
-                    Más popular
+                    Clases en vivo
                   </span>
                 )}
                 <h3 style={{ fontWeight: 700, color: '#fff', fontSize: '1.05rem' }}>{plan.name}</h3>

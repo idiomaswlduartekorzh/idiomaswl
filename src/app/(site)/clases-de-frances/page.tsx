@@ -10,6 +10,7 @@ import s from './page.module.css';
 
 const WA = '573005004253';
 const WA_GENERAL = encodeURIComponent('Hola, vi la página de clases de francés en WeLearn. Quiero contarles mi objetivo y conocer la ruta, el tutor, la modalidad y el precio.');
+const WA_HORARIOS = encodeURIComponent('Hola, vi las clases de francés de WeLearn y quiero consultar la disponibilidad presencial en Bucaramanga. ¿Qué horarios tienen y cuánto cuestan las clases y el diagnóstico con tutor?');
 const WA_DELF    = encodeURIComponent('Hola, quiero prepararme para el examen DELF con WeLearn. ¿Cuándo puedo empezar?');
 
 export const metadata: Metadata = {
@@ -39,15 +40,17 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-frances' },
 };
 
-const faqJsonLd = (faqs: ReadonlyArray<{ q: string; a: string }>) => ({
+type Faq = { q: string; a: string; link?: { href: string; label: string } };
+
+const faqJsonLd = (faqs: readonly Faq[]) => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: faqs.map(({ q, a }) => ({
+  mainEntity: faqs.map(({ q, a, link }) => ({
     '@type': 'Question',
     name: q,
     acceptedAnswer: {
       '@type': 'Answer',
-      text: a,
+      text: link ? `${a} ${link.label}.` : a,
     },
   })),
 });
@@ -129,7 +132,7 @@ const DELF_EXAMS = [
   },
 ];
 
-const FAQS = [
+const FAQS: Faq[] = [
   {
     q: '¿Necesito saber francés para empezar?',
     a: 'No. Empezamos desde A1 absoluto. La primera sesión cubre pronunciación básica, saludos y la lógica del idioma para hispanohablantes.',
@@ -156,7 +159,8 @@ const FAQS = [
   },
   {
     q: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
-    a: 'Depende de la intensidad y de si tomas clases sueltas o un paquete de horas: el valor por hora baja a mayor volumen. Puedes consultar por chat sin costo la ruta y el precio; el diagnóstico con tutor es pago. Puedes ver los planes vigentes en la página de precios.',
+    a: 'El precio depende del ritmo que elijas para tu ciclo de clases con tutor. Puedes consultar por WhatsApp la ruta y el precio sin costo. El diagnóstico con tutor es pago.',
+    link: { href: '/precios?idioma=frances', label: 'Ver planes y precios de francés' },
   },
   {
     q: '¿El DELF sirve para migrar a Canadá?',
@@ -213,19 +217,19 @@ export default function ClasesDeFrancesPage() {
                 <span className={s.accent}>en Bucaramanga y online.</span>
               </h1>
               <p className={s.heroSub}>
-                Estudia francés con un tutor en nuestra sede de Sotomayor, Bucaramanga, o por
-                videollamada desde cualquier ciudad. Trabaja conversación y comprensión desde
-                tu nivel actual, o prepara DELF, DALF y TCF/TEF según tu objetivo.
+                Estudia francés presencialmente con un tutor en nuestra sede de Sotomayor,
+                Bucaramanga, o por videollamada. Puedes empezar desde A1, mejorar tu conversación
+                o preparar el DELF B2, el DALF o el TCF/TEF según tu nivel y objetivo.
               </p>
               <div className={s.heroCtas}>
                 <a
-                  href={`https://wa.me/${WA}?text=${WA_GENERAL}`}
+                  href={`https://wa.me/${WA}?text=${WA_HORARIOS}`}
                   data-wa-cta="frances-hero"
                   target="_blank" rel="noopener noreferrer"
                   className={s.waBtn}
                 >
                   <WaIcon />
-                  Consultar ruta y precio
+                  Consultar horarios y precios
                 </a>
                 <Link href="/examenes/delf-dalf" className={s.ghostBtn}>
                   Ver simulacros DELF →
@@ -514,10 +518,10 @@ export default function ClasesDeFrancesPage() {
                 <p className={s.practicaTitle}>Simulacros DELF / DALF</p>
                 <p className={s.practicaDesc}>Practica con el formato real del examen y recibe un informe con tu desempeño por sección.</p>
               </Link>
-              <Link href="/nivel-radar" className={s.practicaCard}>
+              <Link href="/practica/frances/a1" className={s.practicaCard}>
                 <span className={s.practicaBadge}>Gratis</span>
-                <p className={s.practicaTitle}>Descubre tu nivel real</p>
-                <p className={s.practicaDesc}>Si no sabes por dónde empezar, el diagnóstico de nivel te ubica en el MCER antes de la primera clase.</p>
+                <p className={s.practicaTitle}>Practica francés desde A1</p>
+                <p className={s.practicaDesc}>Empieza con ejercicios de comprensión, vocabulario y expresión para principiantes.</p>
               </Link>
             </div>
           </div>
@@ -532,7 +536,10 @@ export default function ClasesDeFrancesPage() {
               {FAQS.map(f => (
                 <details key={f.q} className={s.faqItem}>
                   <summary className={s.faqQ}>{f.q}</summary>
-                  <p className={s.faqA}>{f.a}</p>
+                  <p className={s.faqA}>
+                    {f.a}
+                    {f.link && <> <Link href={f.link.href} style={{ textDecoration: 'underline' }}>{f.link.label}</Link>.</>}
+                  </p>
                 </details>
               ))}
             </div>

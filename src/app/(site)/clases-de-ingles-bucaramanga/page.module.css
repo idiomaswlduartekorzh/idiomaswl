@@ -1,3 +1,22 @@
+.heroGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.pricingLink {
+  color: var(--accent-action, var(--accent));
+  text-decoration: underline;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
 .objectiveGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -20,5 +39,9 @@
 .examPaths a { color: var(--accent-action, var(--accent)); font-weight: 700; }
 
 @media (max-width: 720px) {
+  .heroGrid,
+  .plansGrid,
   .objectiveGrid { grid-template-columns: 1fr; }
+
+  .heroGrid { gap: 2rem; }
 }

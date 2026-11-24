@@ -183,7 +183,7 @@
   align-items: center;
   gap: 0.5rem;
   background: #25D366;
-  color: #fff;
+  color: #10261a;
   padding: 0.8rem 1.5rem;
   border-radius: 40px;
   font-weight: 700;
@@ -522,7 +522,6 @@
 /* ─── Responsive ────────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .heroInner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .heroVisual { order: -1; }
   .whyGrid { grid-template-columns: repeat(2, 1fr); }
   .levelsGrid { grid-template-columns: 1fr; }
   .delfGrid { grid-template-columns: 1fr; }
@@ -533,4 +532,9 @@
   .whyGrid { grid-template-columns: 1fr; }
   .heroCtas { flex-direction: column; align-items: flex-start; }
   .ctaBtns { flex-direction: column; align-items: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .waBtn { transition: none; }
+  .waBtn:hover { transform: none; }
 }
