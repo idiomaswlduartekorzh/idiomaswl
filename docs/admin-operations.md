@@ -131,6 +131,12 @@ la identidad responsable y el motivo en la base. Agenda y Pagos se abren con una
 navegación completa y una política de scripts propios. La descarga Excel y CSV aplica
 los filtros de la tabla. Los valores quedan en COP.
 
+«Pagos por mes y año» usa el mismo registro privado de propietario y el ambiente
+seleccionado. Agrupa los pagos aprobados por el periodo original de Numbers, la
+fecha de un pago directo o la fecha de aprobación en la zona America/Bogota.
+Permite comparar totales anuales, consultar los meses de un año y descargar a
+Excel los agregados de todos los años del origen seleccionado.
+
 ### Importación privada
 
 El script `scripts/prepare-numbers-payment-history.py` lee el archivo original

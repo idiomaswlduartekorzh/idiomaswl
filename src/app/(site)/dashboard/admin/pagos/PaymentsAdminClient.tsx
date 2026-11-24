@@ -34,7 +34,9 @@ import type {
   AdminPaymentsData,
 } from '@/lib/admin-payments/server';
 import { bogotaDay } from '@/lib/admin-operations/agenda';
+import { CURRENCY, money, monthKey, paymentMonth, shortMoney } from '@/lib/admin-payments/metrics';
 import { createPaymentLinkAction } from './actions';
+import MonthlyPaymentsOverview from './MonthlyPaymentsOverview';
 import { RecordedPaymentForms, VoidRecordedPayment } from './RecordedPaymentForms';
 import { INITIAL_CREATE_PAYMENT_LINK_STATE } from './state';
 import styles from './payments.module.css';
@@ -70,38 +72,12 @@ const LINK_STATUS_LABELS: Record<AdminPaymentLinkRow['status'], string> = {
   ERROR: 'Error',
 };
 
-const CURRENCY = new Intl.NumberFormat('es-CO', {
-  style: 'currency',
-  currency: 'COP',
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 2,
-});
-
-function money(cents: number): string {
-  return CURRENCY.format(cents / 100);
-}
-
-function shortMoney(cents: number): string {
-  const pesos = cents / 100;
-  if (pesos >= 1_000_000) return `$${(pesos / 1_000_000).toFixed(pesos % 1_000_000 ? 1 : 0)} M`;
-  if (pesos >= 1_000) return `$${Math.round(pesos / 1_000)} mil`;
-  return `$${pesos}`;
-}
-
 function formatDate(value: string): string {
   return new Date(value).toLocaleString('es-CO', {
     dateStyle: 'medium',
     timeStyle: 'short',
     timeZone: 'America/Bogota',
   });
-}
-
-function monthKey(date: Date): string {
-  return new Intl.DateTimeFormat('en-CA', {
-    year: 'numeric',
-    month: '2-digit',
-    timeZone: 'America/Bogota',
-  }).format(date);
 }
 
 function monthLabel(key: string): string {
@@ -150,8 +126,7 @@ function csvCell(value: string | number): string {
   return `"${safe.replace(/"/g, '""')}"`;
 }
 
-async function exportLedger(rows: AdminPaymentLedgerRow[], format: 'xlsx' | 'csv'): Promise<void> {
-  const cells = ledgerExportRows(rows);
+async function exportPayments(cells: (string | number)[][], name: string, format: 'xlsx' | 'csv'): Promise<void> {
   let file: Blob;
   if (format === 'xlsx') {
     const { makePaymentWorkbook } = await import('@/lib/admin-operations/payment-workbook');
@@ -163,7 +138,7 @@ async function exportLedger(rows: AdminPaymentLedgerRow[], format: 'xlsx' | 'csv
   const url = URL.createObjectURL(file);
   const anchor = document.createElement('a');
   anchor.href = url;
-  anchor.download = `idiomaswl-pagos-${bogotaDay()}.${format}`;
+  anchor.download = `${name}.${format}`;
   anchor.click();
   window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
@@ -228,7 +203,7 @@ export default function PaymentsAdminClient({
   const approvedGross = approved.reduce((sum, row) => sum + row.amountInCents, 0);
   const currentMonth = monthKey(new Date(data.generatedAt));
   const approvedThisMonth = approved
-    .filter(row => monthKey(new Date(row.paidAt ?? row.observedAt)) === currentMonth)
+    .filter(row => paymentMonth(row) === currentMonth)
     .reduce((sum, row) => sum + row.amountInCents, 0);
   const averageTicket = approved.length ? Math.round(approvedGross / approved.length) : 0;
   const receivableRows = latestPayments.filter(row => row.status === 'CREATED' || row.status === 'PENDING');
@@ -266,18 +241,15 @@ export default function PaymentsAdminClient({
   }, [environmentRows, generatedAtTimestamp, period, query, source, status]);
 
   const monthlyData = useMemo(() => {
-    const cursor = new Date(data.generatedAt);
-    const keys: string[] = [];
-    for (let offset = 5; offset >= 0; offset -= 1) {
-      keys.push(monthKey(new Date(cursor.getFullYear(), cursor.getMonth() - offset, 15)));
-    }
+    const [year, month] = currentMonth.split('-').map(Number);
+    const keys = Array.from({ length: 6 }, (_, index) => monthKey(new Date(Date.UTC(year, month - 6 + index, 15))));
     const totals = new Map(keys.map(key => [key, 0]));
     for (const row of approved) {
-      const key = monthKey(new Date(row.paidAt ?? row.observedAt));
-      if (totals.has(key)) totals.set(key, (totals.get(key) ?? 0) + row.amountInCents);
+      const key = paymentMonth(row);
+      if (key && totals.has(key)) totals.set(key, (totals.get(key) ?? 0) + row.amountInCents);
     }
     return keys.map(key => ({ month: monthLabel(key), amount: (totals.get(key) ?? 0) / 100 }));
-  }, [approved, data.generatedAt]);
+  }, [approved, currentMonth]);
 
   const paymentMethods = useMemo(() => {
     const methods = new Map<string, { count: number; total: number }>();
@@ -301,7 +273,8 @@ export default function PaymentsAdminClient({
 
   function download(format: 'xlsx' | 'csv') {
     setExportError(false);
-    void exportLedger(visibleRows, format).catch(() => setExportError(true));
+    void exportPayments(ledgerExportRows(visibleRows), `idiomaswl-pagos-${bogotaDay()}`, format)
+      .catch(() => setExportError(true));
   }
 
   return (
@@ -371,6 +344,11 @@ export default function PaymentsAdminClient({
           <div><p>Conversión / alertas Wompi</p><strong>{conversion}% <em>· {reconciliationAlerts.length}</em></strong><small>Aprobados por referencia · revisar anomalías</small></div>
         </article>
       </section>
+
+      {owner && data.recordedPaymentsAvailable && (
+        <MonthlyPaymentsOverview key={environment} rows={approved} currentMonth={currentMonth}
+          downloadWorkbook={(cells, name) => exportPayments(cells, name, 'xlsx')} />
+      )}
 
       <section className={styles.twoColumns}>
         <article className={styles.panel}>
