@@ -10,13 +10,14 @@ Fecha de corte: 25 de agosto de 2026.
 - Rama `codex/admin-agenda-y-caja`. Estado `EN_VALIDACION`. Agenda y pagos
   están en la rama de trabajo. El historial real sigue en un directorio local
   privado, con 2.007 movimientos listos para importar y 273 filas por revisar.
-- La agenda puede replicar clases en un calendario secundario de Google
-  cuando se configura una cuenta de servicio. Las pruebas locales usan un
-  proveedor simulado. Faltan autorización de Google y verificación con un
-  calendario real.
-- `info@idiomaswl.com` es el contacto publicado. El DNS de Cloudflare carece
-  de MX y la sesión de Wrangler expiró. El acceso al Workspace debe confirmarse
-  antes de activar el buzón.
+- Google Calendar API está activa. Las variables de la agenda privada están
+  cifradas en Vercel para producción. Se verificaron creación, lectura,
+  resincronización sin duplicados y cancelación de un evento privado en Google
+  desde el código de la rama. Falta validar desde el panel desplegado.
+- Cloudflare Email Routing entrega `info@idiomaswl.com` a la bandeja de WeLearn.
+  Se confirmó la recepción con un mensaje de prueba. El propietario eligió
+  mantener su Gmail como acceso principal de Workspace. Sigue pendiente el
+  envío con remitente institucional.
 - Pendientes el build completo, la migración, la integración en `main` y
   la verificación productiva. Dot se hará después de Calendar y correo.
   [Guía de operación](admin-operations.md).

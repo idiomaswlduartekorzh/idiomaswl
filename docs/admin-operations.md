@@ -96,24 +96,28 @@ evento para guardarlo manualmente. Las ediciones realizadas en Google no se
 importan al panel. Escribir ambas credenciales tampoco confirma por sí solo el
 acceso, que se verifica al sincronizar una clase.
 
+El 24 de noviembre de 2026 quedó creada la agenda privada «Clases WeLearn» y su
+cuenta de servicio recibió permiso para editar los eventos de ese calendario.
+La API de Google está activa y las dos variables quedaron cifradas para
+Production en el proyecto `idiomaswl` de Vercel. Con el código de la rama se
+creó, consultó, resincronizó y canceló un evento privado de prueba en Google.
+La repetición no generó duplicados y el evento de prueba se retiró. Falta publicar
+la agenda y comprobar el flujo completo desde una sesión de administración.
+
 ### Correo institucional
 
-`info@idiomaswl.com` ya es el contacto publicado en el sitio. El 24 de noviembre
-de 2026 el dominio usa DNS de Cloudflare y carece de un registro MX publicado.
-La cuenta conectada al chat es `welearninstitute@gmail.com`. Falta acceso
-administrativo al Google Workspace indicado por el propietario y renovar la
-sesión de Cloudflare. Verificar el plan antes de elegir el proveedor.
+`info@idiomaswl.com` es el contacto publicado en el sitio. El 24 de noviembre
+de 2026 se activó en Cloudflare Email Routing una regla exacta que reenvía esa
+dirección a `welearninstitute@gmail.com`. Un mensaje de prueba enviado desde
+otra cuenta apareció en la bandeja de entrada de WeLearn. Se confirmó que el
+propietario tiene Google Workspace Business Standard activo con una licencia
+asignada. Eligió conservar su Gmail como acceso principal y configurar el
+correo institucional por separado.
 
-Si la cuenta administra Workspace con Gmail para el dominio, preparar allí
-`info@idiomaswl.com`, verificar la propiedad y configurar en Cloudflare los
-registros de entrega y autenticación que indique Google. Si se elige primero
-recibir en el Gmail existente, verificar esa bandeja en Email Routing y crear
-una regla exacta para `info@idiomaswl.com`. El reenvío resuelve la recepción.
-Las respuestas con remitente institucional requieren configurar el envío con
-un proveedor autorizado. Verificar recepción y envío entre cuentas del equipo.
-El envío transaccional de clases usa Resend. El DNS ya tiene autenticación de
-Resend y SPF para `send.idiomaswl.com`. Conservar esos registros al habilitar
-el buzón y comprobar que los correos transaccionales siguen llegando.
+Falta configurar y verificar un proveedor de envío para las respuestas desde
+`info@idiomaswl.com`. Google anunció que la opción «Enviar como» para direcciones
+externas en Gmail se retirará en enero de 2027. El DNS mantiene los registros
+de autenticación que usa Resend para los correos transaccionales del sitio.
 
 Pagos conserva los movimientos verificados de Wompi e incluye los informes
 TOEFL. Las cuentas de propietario de José pueden registrar pagos directos,
