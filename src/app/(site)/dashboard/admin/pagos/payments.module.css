@@ -83,6 +83,26 @@
 .panelTitle small { color: #8c8790; }
 .chart { width: 100%; height: 235px; }
 
+.monthlyOverview { margin-bottom: 14px; }
+.monthlyHeader { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 14px; margin-bottom: 17px; }
+.monthlyHeader h2 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.025em; }
+.monthlyHeader p { margin: 0; color: #6b6570; font-size: 12px; }
+.monthlyControls { display: flex; align-items: flex-end; gap: 8px; flex-wrap: wrap; }
+.monthlyControls label { display: grid; gap: 5px; color: #514c54; font-size: 12px; font-weight: 700; }
+.monthlyControls button:disabled { opacity: .45; cursor: not-allowed; }
+.monthlyTotals { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0 0 14px; }
+.monthlyTotals > div { min-width: 0; padding: 12px; border: 1px solid #eee5db; border-radius: 11px; background: #fbf8f4; }
+.monthlyTotals dt { color: #6b6570; font-size: 11px; }
+.monthlyTotals dd { margin: 4px 0 0; font-size: clamp(15px, 2vw, 21px); font-weight: 800; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.monthlyLayout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .8fr); gap: 20px; align-items: center; }
+.monthlyChart { min-width: 0; height: 280px; }
+.monthlyTable thead th:not(:first-child), .monthlyTable td { text-align: right; }
+.monthlyTable tbody th { text-transform: none; letter-spacing: normal; color: #514c54; font-size: 11px; }
+.monthlyTable th, .monthlyTable td { padding: 6px 8px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.annualTotals { margin-top: 12px; border-top: 1px solid #eee5db; }
+.annualTotals summary { padding: 11px 0 0; color: #75401f; font-size: 12px; font-weight: 750; cursor: pointer; }
+.annualTotals[open] summary { padding-bottom: 8px; }
+
 .methods { display: grid; gap: 2px; }
 .methodRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f0ebe6; }
 .methodRow > span { font-size: 13px; font-weight: 700; }
@@ -94,7 +114,7 @@
 
 .form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .form label { display: grid; align-content: start; gap: 6px; color: #514c54; font-size: 12px; font-weight: 700; }
-.form input, .form textarea, .form select, .filters input, .filters select {
+.form input, .form textarea, .form select, .filters input, .filters select, .monthlyControls select {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #ded7d0;
@@ -106,7 +126,7 @@
   font-size: 13px;
   outline: none;
 }
-.form input:focus, .form textarea:focus, .form select:focus, .filters input:focus, .filters select:focus { border-color: #c87941; box-shadow: 0 0 0 3px rgba(200, 121, 65, .12); }
+.form input:focus, .form textarea:focus, .form select:focus, .filters input:focus, .filters select:focus, .monthlyControls select:focus { border-color: #c87941; box-shadow: 0 0 0 3px rgba(200, 121, 65, .12); }
 .form textarea { resize: vertical; }
 .form small { color: #9a949a; font-size: 10px; font-weight: 500; }
 .fullField, .formFooter, .successMessage, .errorMessage, .createdLink { grid-column: 1 / -1; }
@@ -180,6 +200,9 @@
   .admin { width: 100%; }
   .environmentBar { align-items: flex-start; flex-direction: column; }
   .kpiGrid { grid-template-columns: 1fr; }
+  .monthlyTotals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .monthlyLayout { grid-template-columns: 1fr; gap: 10px; }
+  .monthlyChart { height: 205px; }
   .form { grid-template-columns: 1fr; }
   .fullField, .formFooter, .successMessage, .errorMessage, .createdLink { grid-column: 1; }
   .formFooter { align-items: stretch; flex-direction: column; }

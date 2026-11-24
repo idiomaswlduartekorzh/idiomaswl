@@ -7,6 +7,7 @@ import { btree_gist } from '../.local-tools/node_modules/@electric-sql/pglite/di
 import { googleCalendarDraft, parseLessonForm, weekOf } from '../src/lib/admin-operations/agenda.ts';
 import { parseHistoricalPayments, parseManualPayment } from '../src/lib/admin-operations/recorded-payments.ts';
 import { makePaymentWorkbook } from '../src/lib/admin-operations/payment-workbook.ts';
+import { summarizePaymentYears } from '../src/lib/admin-payments/metrics.ts';
 
 const ownerId = '12345678-1234-4234-8234-123456789012';
 
@@ -57,6 +58,31 @@ test('Excel exports numbers as numeric cells and preserves input text without fo
   assert.match(sheet, /r="A2" t="inlineStr".*?=1\+1 &lt; prueba &amp; control/);
   assert.match(sheet, /<c r="B2"><v>1000\.25<\/v><\/c>/);
   assert.doesNotMatch(sheet, /<f[> ]/);
+});
+
+test('monthly payment totals use the historical month and Bogotá dates without counting unpaid or voided rows', () => {
+  const history = {
+    source: 'historical', status: 'APPROVED', sourcePeriod: '2024-02-01', paidOn: null,
+    paidAt: null, observedAt: '2026-11-24T16:00:00Z', amountInCents: 15_025,
+  };
+  const online = {
+    source: 'courses', status: 'APPROVED', sourcePeriod: null, paidOn: null,
+    paidAt: '2025-01-01T04:59:59Z', observedAt: '2025-01-01T05:00:00Z', amountInCents: 22_075,
+  };
+  const manual = {
+    ...history, source: 'manual', sourcePeriod: '2025-01-01', paidOn: '2025-01-26', amountInCents: 10_150,
+  };
+  const rows = [history, online, manual, { ...history, status: 'VOIDED' }, { ...online, status: 'PENDING' }];
+  const [recent, older] = summarizePaymentYears(rows, 'all');
+  assert.deepEqual([recent.year, recent.amountInCents, recent.count], [2025, 10_150, 1]);
+  assert.deepEqual([older.year, older.amountInCents, older.count], [2024, 37_100, 2]);
+  assert.equal(older.months.length, 12);
+  assert.deepEqual(older.months[0], { amountInCents: 0, count: 0 });
+  assert.deepEqual(older.months[1], { amountInCents: 15_025, count: 1 });
+  assert.deepEqual(older.months[11], { amountInCents: 22_075, count: 1 });
+  assert.equal(summarizePaymentYears(rows, 'historical')[0].amountInCents, 15_025);
+  assert.equal(summarizePaymentYears(rows, 'online')[0].amountInCents, 22_075);
+  assert.equal(summarizePaymentYears(rows, 'manual')[0].amountInCents, 10_150);
 });
 
 test('database prevents teacher collisions, keeps direct records private and exposes verified TOEFL payments', async () => {
