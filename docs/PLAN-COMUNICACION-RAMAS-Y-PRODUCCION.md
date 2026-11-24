@@ -5,6 +5,26 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Agenda de clases, pagos y correo — 24 de noviembre de 2026
+
+- Rama `codex/admin-agenda-y-caja`. Estado `EN_VALIDACION`. Agenda y pagos
+  están en la rama de trabajo. El historial real sigue en un directorio local
+  privado, con 2.007 movimientos listos para importar y 273 filas por revisar.
+- Google Calendar API está activa. Las variables de la agenda privada están
+  cifradas en Vercel para producción. Se verificaron creación, lectura,
+  resincronización sin duplicados y cancelación de un evento privado en Google
+  desde el código de la rama. Falta validar desde el panel desplegado.
+- Cloudflare Email Routing entrega `info@idiomaswl.com` a la bandeja de WeLearn.
+  Se confirmó la recepción con un mensaje de prueba. El propietario eligió
+  mantener su Gmail como acceso principal de Workspace. Sigue pendiente el
+  envío con remitente institucional.
+- La migración `20261124161345_admin_agenda_and_recorded_payments.sql` se aplicó
+  en Supabase de producción. Se comprobaron los permisos y la consulta del
+  registro de pagos en línea. El historial sigue sin importar.
+- Pendientes la integración en `main` y la verificación de Agenda y Pagos en
+  el panel desplegado. Dot se hará después de Calendar y correo.
+  [Guía de operación](admin-operations.md).
+
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
 
 - Rama: `codex/reading-b2-c2-pilot-20261110`, actualizada contra `origin/main` antes de la auditoría. Estado: `EN_VALIDACION`; **no integrada ni desplegada**.

@@ -187,3 +187,8 @@
   .filters { width: 100%; justify-content: flex-start; }
   .filters select, .search { width: 100%; }
 }
+
+.voidPayment { min-width: 115px; }
+.voidPayment summary { color: #8a302c; cursor: pointer; font-weight: 700; }
+.voidPayment form { margin-top: 8px; min-width: 175px; }
+.voidPayment button { grid-column: 1 / -1; }

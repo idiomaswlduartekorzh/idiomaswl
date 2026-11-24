@@ -1,0 +1,46 @@
+.page { min-height: 100vh; padding: clamp(16px, 3vw, 40px); color: #232036; background: #f5f0eb; }
+.header, .weekNav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.header { justify-content: space-between; margin-bottom: 24px; }
+.header h1 { margin: 7px 0 4px; font-size: clamp(30px, 5vw, 46px); letter-spacing: -.045em; line-height: 1; }
+.header p { margin: 0; color: #635d68; font-size: .875rem; }
+.back, .calendar { display: inline-flex; align-items: center; gap: 5px; color: #85401e; text-decoration: none; font-size: .825rem; font-weight: 700; }
+.back:hover, .calendar:hover { text-decoration: underline; }
+.weekNav { margin-bottom: 12px; }
+.weekNav form { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+.button, .primary, .date, .form input, .form select { border: 1px solid #d9cabe; border-radius: 8px; padding: 8px 10px; background: #fff; color: #31293a; font: inherit; font-size: .85rem; }
+.button, .primary { display: inline-flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; font-weight: 700; }
+.button:hover { background: #fff4eb; }
+.primary { justify-self: start; color: #fff; background: #873b1c; border-color: #873b1c; }
+.button:disabled, .primary:disabled { opacity: .6; cursor: wait; }
+.week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: start; gap: 8px; }
+.day, .newLesson { padding: 12px; border: 1px solid #e2d5cb; border-radius: 12px; background: #fffdfa; }
+.day[aria-current] { border-color: #a9542c; }
+.day h2 { margin: 0 0 12px; text-transform: capitalize; font-size: .92rem; }
+.empty { font-size: .82rem; color: #6c6371; }
+.lesson { display: grid; gap: 4px; margin-bottom: 8px; padding: 9px; border-radius: 8px; border-left: 3px solid #965028; color: #31293a; background: #f6e8dd; overflow-wrap: anywhere; font-size: .825rem; }
+.lesson[data-status="completed"] { border-color: #3a725e; background: #e7f1ea; }
+.lesson[data-status="cancelled"] { border-color: #877d88; background: #f2eef1; }
+.time { color: #65422d; font-size: .75rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.lesson small, .manage summary { font-size: .72rem; }
+.manage { margin-top: 4px; }
+.manage summary { cursor: pointer; font-weight: 700; }
+.manage .form { grid-template-columns: 1fr; margin-top: 8px; }
+.lessonActions { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.lessonActions button { font-size: .73rem; padding: 5px; }
+.newLesson { margin-top: 16px; max-width: 760px; padding: 18px; }
+.newLesson h2 { margin: 0 0 12px; font-size: 1.1rem; }
+.form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.form label { display: grid; gap: 5px; color: #54495b; font-size: .81rem; font-weight: 700; min-width: 0; }
+.form input, .form select { width: 100%; min-width: 0; }
+.error, .success { margin: 0; padding: 8px; border-radius: 6px; color: #8b2227; background: #fae8e8; font-size: .82rem; }
+.success { color: #245748; background: #e5f1e9; }
+.srOnly { position: absolute; clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; white-space: nowrap; }
+@media (max-width: 1050px) { .week { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .week { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .weekNav form { margin-left: 0; }
+}
+@media (max-width: 400px) { .week, .form { grid-template-columns: 1fr; } }
+
+.calendarStatus, .calendarSync { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.calendarStatus { margin-bottom: 10px; color: #54495b; font-size: .83rem; }
