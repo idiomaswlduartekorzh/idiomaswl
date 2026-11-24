@@ -60,3 +60,47 @@ Antes de marcar este documento como desplegado deben registrarse el SHA de `main
 - IELTS y TOEFL no solicitan audio automáticamente. La carga manual de audio IELTS respondió `200` desde una ruta privada, autorizada y sin caché.
 - El historial de llamados delegados usa una ruta GET privada y sin caché; ya no dispara una Server Action durante el montaje.
 - Esta entrega no requirió una migración nueva de Supabase: usa las tablas, buckets y políticas ya desplegados.
+
+## Agenda de clases y registro financiero
+
+La rama de trabajo agrega `/dashboard/admin/agenda` y amplía `/dashboard/admin/pagos`.
+La migración es `20261124125330_admin_agenda_and_recorded_payments.sql`. La agenda
+usa la zona America/Bogota y muestra una semana de lunes a domingo. Admite clases
+sueltas y hasta 16 repeticiones semanales. Cada clase se puede mover, completar o
+cancelar. PostgreSQL impide que se crucen dos clases activas de un mismo tutor,
+incluso si dos administradores guardan al mismo tiempo.
+
+El enlace a Google Calendar abre un borrador con título genérico y los horarios
+de la clase. El administrador elige el calendario y guarda el evento en Google.
+Los cambios posteriores se gestionan en ambos lugares. Para crear una cuenta de
+estudiante con acceso al portal se usa la invitación del módulo Estudiantes.
+
+Pagos conserva los movimientos verificados de Wompi e incluye los informes
+TOEFL. Las cuentas de propietario de José pueden registrar pagos directos,
+anularlos con motivo y cargar el historial. Los demás administradores tienen
+acceso a los movimientos en línea. Anular un registro directo conserva su valor,
+la identidad responsable y el motivo en la base. Agenda y Pagos se abren con una
+navegación completa y una política de scripts propios. La descarga Excel y CSV aplica
+los filtros de la tabla. Los valores quedan en COP.
+
+### Importación privada
+
+El script `scripts/prepare-numbers-payment-history.py` lee el archivo original
+localmente con `numbers-parser`. Ejecutarlo con la ruta a `General.numbers` y
+un directorio nuevo con permisos 700 fuera del repositorio. Genera dos archivos
+con permisos 600. `historial-importable.json` se carga desde Pagos con una
+cuenta de propietario. El panel valida el archivo y muestra un resumen antes
+de importarlo. Al repetir la carga, la referencia de hoja, mes y celda previene
+duplicados.
+
+`filas-por-revisar.json` señala las filas con fechas o valores dudosos, posibles
+duplicados y bloques que requieren identificación. Faltan el extracto y los
+comprobantes para resolver esas filas. El original conserva los comparativos,
+notas y fórmulas que ayudan a revisarlas. La programación semanal histórica
+sirvió como referencia para la pantalla de agenda.
+
+Para comprobar este módulo en desarrollo, instalar PGlite 0.6.0 en
+`.local-tools` como en las otras pruebas de pagos y ejecutar
+`npm run test:admin-operations`. Para verificar el despliegue usar una cuenta
+de propietario y una de administración sin permiso sobre el historial, además
+de la verificación general de esta página.

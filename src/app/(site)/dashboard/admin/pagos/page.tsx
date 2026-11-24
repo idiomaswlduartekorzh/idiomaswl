@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
+import { isJoseAdminEmail } from '@/lib/config/admins';
 import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { loadAdminPaymentsData } from '@/lib/admin-payments/server';
 import PaymentsAdminClient from './PaymentsAdminClient';
@@ -17,6 +18,6 @@ export default async function AdminPaymentsPage() {
     redirect('/dashboard');
   }
 
-  const data = await loadAdminPaymentsData();
-  return <PaymentsAdminClient data={data} adminEmail={admin.email} />;
+  const data = await loadAdminPaymentsData(admin);
+  return <PaymentsAdminClient data={data} adminEmail={admin.email} owner={isJoseAdminEmail(admin.email)} manualRequestId={crypto.randomUUID()} />;
 }
