@@ -18,8 +18,11 @@ Fecha de corte: 25 de agosto de 2026.
   Se confirmó la recepción con un mensaje de prueba. El propietario eligió
   mantener su Gmail como acceso principal de Workspace. Sigue pendiente el
   envío con remitente institucional.
-- Pendientes el build completo, la migración, la integración en `main` y
-  la verificación productiva. Dot se hará después de Calendar y correo.
+- La migración `20261124161345_admin_agenda_and_recorded_payments.sql` se aplicó
+  en Supabase de producción. Se comprobaron los permisos y la consulta del
+  registro de pagos en línea. El historial sigue sin importar.
+- Pendientes la integración en `main` y la verificación de Agenda y Pagos en
+  el panel desplegado. Dot se hará después de Calendar y correo.
   [Guía de operación](admin-operations.md).
 
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026

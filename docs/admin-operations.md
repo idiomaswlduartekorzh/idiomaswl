@@ -64,7 +64,9 @@ Antes de marcar este documento como desplegado deben registrarse el SHA de `main
 ## Agenda de clases y registro financiero
 
 La rama de trabajo agrega `/dashboard/admin/agenda` y amplía `/dashboard/admin/pagos`.
-La migración es `20261124125330_admin_agenda_and_recorded_payments.sql`. La agenda
+La migración `20261124161345_admin_agenda_and_recorded_payments.sql` se aplicó
+en Supabase de producción el 24 de noviembre de 2026. Se verificó el acceso
+del servicio y el bloqueo de consultas de usuarios sin privilegios. La agenda
 usa la zona America/Bogota y muestra una semana de lunes a domingo. Admite clases
 sueltas y hasta 16 repeticiones semanales. Cada clase se puede mover, completar o
 cancelar. PostgreSQL impide que se crucen dos clases activas de un mismo tutor,

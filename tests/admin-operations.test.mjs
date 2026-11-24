@@ -81,7 +81,7 @@ test('database prevents teacher collisions, keeps direct records private and exp
         null::timestamptz as paid_at, null::text as payment_url;
       grant select on public.admin_payment_ledger to service_role;
     `);
-    await db.exec(await readFile(new URL('../supabase/migrations/20261124125330_admin_agenda_and_recorded_payments.sql', import.meta.url), 'utf8'));
+    await db.exec(await readFile(new URL('../supabase/migrations/20261124161345_admin_agenda_and_recorded_payments.sql', import.meta.url), 'utf8'));
     await db.exec('set role service_role');
     assert.deepEqual((await db.query('select source, reference from public.admin_online_payment_ledger')).rows, [
       { source: 'plans', reference: 'TEST-WOMPI' },
