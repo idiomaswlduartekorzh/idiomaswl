@@ -120,7 +120,9 @@ externas en Gmail se retirará en enero de 2027. El DNS mantiene los registros
 de autenticación que usa Resend para los correos transaccionales del sitio.
 
 Pagos conserva los movimientos verificados de Wompi e incluye los informes
-TOEFL. Las cuentas de propietario de José pueden registrar pagos directos,
+TOEFL cuando su tabla de órdenes está provisionada. En producción esa tabla
+todavía no existe y la migración de Agenda y Pagos funciona sin ella.
+Las cuentas de propietario de José pueden registrar pagos directos,
 anularlos con motivo y cargar el historial. Los demás administradores tienen
 acceso a los movimientos en línea. Anular un registro directo conserva su valor,
 la identidad responsable y el motivo en la base. Agenda y Pagos se abren con una

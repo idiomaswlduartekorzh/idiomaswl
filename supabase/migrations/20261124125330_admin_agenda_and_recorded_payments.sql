@@ -68,16 +68,33 @@ grant select, insert, update on public.admin_lessons to service_role;
 grant select, insert on public.admin_recorded_payments to service_role;
 grant update (voided_at, voided_by, void_reason) on public.admin_recorded_payments to service_role;
 
+-- TOEFL checkout is provisioned independently. Resolve its table only when present.
+create function public.admin_toefl_payment_entries()
+returns setof public.admin_payment_ledger
+language plpgsql stable security invoker
+set search_path = ''
+as $$
+begin
+  if to_regclass('public.toefl_report_orders') is not null then
+    return query
+      select
+        'toefl'::text, 'toefl:' || payment.id::text, payment.reference, payment.wompi_transaction_id,
+        submission.user_name, submission.user_email, null::text, 'Informe TOEFL'::text, payment.amount_in_cents,
+        payment.currency, payment.status, null::text, payment.environment, payment.created_at, payment.updated_at,
+        payment.paid_at, null::text
+      from public.toefl_report_orders payment
+      join public.exam_submissions submission on submission.id = payment.submission_id;
+  end if;
+end;
+$$;
+
+revoke all on function public.admin_toefl_payment_entries() from public, anon, authenticated, service_role;
+grant execute on function public.admin_toefl_payment_entries() to service_role;
+
 create view public.admin_online_payment_ledger with (security_invoker = true) as
 select * from public.admin_payment_ledger
 union all
-select
-  'toefl'::text, 'toefl:' || payment.id::text, payment.reference, payment.wompi_transaction_id,
-  submission.user_name, submission.user_email, null::text, 'Informe TOEFL'::text, payment.amount_in_cents,
-  payment.currency, payment.status, null::text, payment.environment, payment.created_at, payment.updated_at,
-  payment.paid_at, null::text
-from public.toefl_report_orders payment
-join public.exam_submissions submission on submission.id = payment.submission_id;
+select * from public.admin_toefl_payment_entries();
 
 create view public.admin_full_payment_ledger with (security_invoker = true) as
 select online.*, null::date as source_period, null::date as paid_on

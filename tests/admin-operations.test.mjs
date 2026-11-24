@@ -72,17 +72,22 @@ test('database prevents teacher collisions, keeps direct records private and exp
       create table public.exam_submissions(id uuid primary key, user_name text, user_email text);
       grant select on public.exam_submissions to service_role;
       create view public.admin_payment_ledger as select
-        null::text as source, null::text as record_id, null::text as reference, null::text as provider_id,
-        null::text as customer_name, null::text as customer_email, null::text as customer_phone,
-        null::text as description, null::bigint as amount_in_cents, null::text as currency,
-        null::text as status, null::text as payment_method_type, null::text as environment,
+        'plans'::text as source, 'plan:test'::text as record_id, 'TEST-WOMPI'::text as reference,
+        null::text as provider_id, 'Cliente Wompi ficticio'::text as customer_name, null::text as customer_email,
+        null::text as customer_phone, null::text as description, 100000::bigint as amount_in_cents,
+        'COP'::text as currency, 'APPROVED'::text as status, null::text as payment_method_type,
+        'production'::text as environment,
         null::timestamptz as created_at, null::timestamptz as observed_at,
-        null::timestamptz as paid_at, null::text as payment_url where false;
+        null::timestamptz as paid_at, null::text as payment_url;
       grant select on public.admin_payment_ledger to service_role;
     `);
-    for (const migration of ['20260821190614_toefl_report_payments.sql', '20261124125330_admin_agenda_and_recorded_payments.sql']) {
-      await db.exec(await readFile(new URL(`../supabase/migrations/${migration}`, import.meta.url), 'utf8'));
-    }
+    await db.exec(await readFile(new URL('../supabase/migrations/20261124125330_admin_agenda_and_recorded_payments.sql', import.meta.url), 'utf8'));
+    await db.exec('set role service_role');
+    assert.deepEqual((await db.query('select source, reference from public.admin_online_payment_ledger')).rows, [
+      { source: 'plans', reference: 'TEST-WOMPI' },
+    ]);
+    await db.exec('reset role');
+    await db.exec(await readFile(new URL('../supabase/migrations/20260821190614_toefl_report_payments.sql', import.meta.url), 'utf8'));
     await db.exec(`
       insert into public.exam_submissions values ('${ownerId}', 'Estudiante TOEFL ficticio', 'student@example.test');
       insert into public.toefl_report_orders(submission_id, reference, amount_in_cents, status, environment, access_token_hash, paid_at)
@@ -115,11 +120,13 @@ test('database prevents teacher collisions, keeps direct records private and exp
       insert into public.admin_recorded_payments(id, source, period, amount_in_cents, customer_name, description)
       values ('NUMBERS-2021-02-D3', 'historical', '2021-02-01', 100000, 'Cliente histórico ficticio', 'Prueba');
     `);
-    assert.deepEqual((await db.query('select source, customer_name from public.admin_online_payment_ledger')).rows, [
+    assert.deepEqual((await db.query('select source, customer_name from public.admin_online_payment_ledger order by source')).rows, [
+      { source: 'plans', customer_name: 'Cliente Wompi ficticio' },
       { source: 'toefl', customer_name: 'Estudiante TOEFL ficticio' },
     ]);
     assert.deepEqual((await db.query('select source, status from public.admin_full_payment_ledger order by source')).rows, [
-      { source: 'historical', status: 'APPROVED' }, { source: 'manual', status: 'APPROVED' }, { source: 'toefl', status: 'APPROVED' },
+      { source: 'historical', status: 'APPROVED' }, { source: 'manual', status: 'APPROVED' },
+      { source: 'plans', status: 'APPROVED' }, { source: 'toefl', status: 'APPROVED' },
     ]);
     const historical = (await db.query("select paid_on, paid_at from public.admin_full_payment_ledger where source='historical'")).rows[0];
     assert.deepEqual(historical, { paid_on: null, paid_at: null });
@@ -132,6 +139,7 @@ test('database prevents teacher collisions, keeps direct records private and exp
       for (const table of ['admin_lessons', 'admin_recorded_payments', 'admin_full_payment_ledger', 'admin_online_payment_ledger']) {
         await assert.rejects(db.query(`select * from public.${table}`), { code: '42501' });
       }
+      await assert.rejects(db.query('select * from public.admin_toefl_payment_entries()'), { code: '42501' });
     }
   } finally {
     await db.close();
