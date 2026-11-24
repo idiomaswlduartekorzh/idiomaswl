@@ -26,6 +26,7 @@
     "test:wompi": "npm run test:wompi-config && npm run test:wompi-checkout",
     "test:admin-payments": "node --experimental-strip-types --no-warnings --test tests/admin-payment-links.test.mjs tests/admin-payment-links-database.test.mjs",
     "test:xpress-commerce": "node --experimental-strip-types --no-warnings --test tests/xpress-commerce.test.mjs",
+    "test:admin-google-calendar": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/admin-google-calendar.test.mjs",
     "test:admin-operations": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/admin-operations.test.mjs",
     "test:admin-access": "node --experimental-strip-types --no-warnings --test tests/admin-access.test.mjs",
     "test:registration-onboarding": "node --experimental-strip-types --no-warnings --test tests/registration-onboarding.test.mjs",

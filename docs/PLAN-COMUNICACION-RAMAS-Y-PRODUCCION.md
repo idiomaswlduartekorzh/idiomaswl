@@ -5,6 +5,22 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Agenda de clases, pagos y correo — 24 de noviembre de 2026
+
+- Rama `codex/admin-agenda-y-caja`. Estado `EN_VALIDACION`. Agenda y pagos
+  están en la rama de trabajo. El historial real sigue en un directorio local
+  privado, con 2.007 movimientos listos para importar y 273 filas por revisar.
+- La agenda puede replicar clases en un calendario secundario de Google
+  cuando se configura una cuenta de servicio. Las pruebas locales usan un
+  proveedor simulado. Faltan autorización de Google y verificación con un
+  calendario real.
+- `info@idiomaswl.com` es el contacto publicado. El DNS de Cloudflare carece
+  de MX y la sesión de Wrangler expiró. El acceso al Workspace debe confirmarse
+  antes de activar el buzón.
+- Pendientes el build completo, la migración, la integración en `main` y
+  la verificación productiva. Dot se hará después de Calendar y correo.
+  [Guía de operación](admin-operations.md).
+
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
 
 - Rama: `codex/reading-b2-c2-pilot-20261110`, actualizada contra `origin/main` antes de la auditoría. Estado: `EN_VALIDACION`; **no integrada ni desplegada**.

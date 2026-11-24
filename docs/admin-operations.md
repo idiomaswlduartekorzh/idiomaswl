@@ -70,10 +70,50 @@ sueltas y hasta 16 repeticiones semanales. Cada clase se puede mover, completar 
 cancelar. PostgreSQL impide que se crucen dos clases activas de un mismo tutor,
 incluso si dos administradores guardan al mismo tiempo.
 
-El enlace a Google Calendar abre un borrador con título genérico y los horarios
-de la clase. El administrador elige el calendario y guarda el evento en Google.
-Los cambios posteriores se gestionan en ambos lugares. Para crear una cuenta de
-estudiante con acceso al portal se usa la invitación del módulo Estudiantes.
+La agenda del panel es la fuente de las clases. Si hay configuración de Google,
+al guardar se actualizan las clases de un calendario secundario del equipo. En
+Google aparecen el horario, el estado y un título genérico. Los nombres, los
+emails de estudiantes y los pagos se guardan en el panel. Las cancelaciones
+liberan el horario en Google. Si Google no confirma el cambio, la clase queda
+guardada en el panel y se puede volver a enviar con «Sincronizar semana».
+Para crear una cuenta de estudiante se usa la invitación del módulo Estudiantes.
+
+### Conectar Google Calendar
+
+1. En Google Calendar, crear un calendario secundario privado «Clases WeLearn»
+   desde la cuenta que debe conservar su propiedad.
+2. En un proyecto de Google Cloud de WeLearn, habilitar Calendar API. Dar a una
+   cuenta de servicio acceso de edición únicamente a «Clases WeLearn».
+3. Guardar el identificador del calendario en `WELEARN_GOOGLE_CALENDAR_ID` y el
+   JSON de la cuenta de servicio en `WELEARN_GOOGLE_CALENDAR_SERVICE_ACCOUNT`.
+   Configurarlos del lado del servidor. Usar un calendario independiente en pruebas.
+4. Desde una sesión admin, guardar y cancelar una clase de prueba. Comprobar la
+   copia en Google y repetir «Sincronizar semana» para verificar que el evento
+   se conserva sin duplicarse.
+
+Con las credenciales ausentes, «Borrador en Google Calendar» permite abrir un
+evento para guardarlo manualmente. Las ediciones realizadas en Google no se
+importan al panel. Escribir ambas credenciales tampoco confirma por sí solo el
+acceso, que se verifica al sincronizar una clase.
+
+### Correo institucional
+
+`info@idiomaswl.com` ya es el contacto publicado en el sitio. El 24 de noviembre
+de 2026 el dominio usa DNS de Cloudflare y carece de un registro MX publicado.
+La cuenta conectada al chat es `welearninstitute@gmail.com`. Falta acceso
+administrativo al Google Workspace indicado por el propietario y renovar la
+sesión de Cloudflare. Verificar el plan antes de elegir el proveedor.
+
+Si la cuenta administra Workspace con Gmail para el dominio, preparar allí
+`info@idiomaswl.com`, verificar la propiedad y configurar en Cloudflare los
+registros de entrega y autenticación que indique Google. Si se elige primero
+recibir en el Gmail existente, verificar esa bandeja en Email Routing y crear
+una regla exacta para `info@idiomaswl.com`. El reenvío resuelve la recepción.
+Las respuestas con remitente institucional requieren configurar el envío con
+un proveedor autorizado. Verificar recepción y envío entre cuentas del equipo.
+El envío transaccional de clases usa Resend. El DNS ya tiene autenticación de
+Resend y SPF para `send.idiomaswl.com`. Conservar esos registros al habilitar
+el buzón y comprobar que los correos transaccionales siguen llegando.
 
 Pagos conserva los movimientos verificados de Wompi e incluye los informes
 TOEFL. Las cuentas de propietario de José pueden registrar pagos directos,
@@ -101,6 +141,6 @@ sirvió como referencia para la pantalla de agenda.
 
 Para comprobar este módulo en desarrollo, instalar PGlite 0.6.0 en
 `.local-tools` como en las otras pruebas de pagos y ejecutar
-`npm run test:admin-operations`. Para verificar el despliegue usar una cuenta
+`npm run test:admin-operations` y `npm run test:admin-google-calendar`. Para verificar el despliegue usar una cuenta
 de propietario y una de administración sin permiso sobre el historial, además
 de la verificación general de esta página.

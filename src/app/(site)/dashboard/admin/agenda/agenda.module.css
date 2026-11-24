@@ -41,3 +41,6 @@
   .weekNav form { margin-left: 0; }
 }
 @media (max-width: 400px) { .week, .form { grid-template-columns: 1fr; } }
+
+.calendarStatus, .calendarSync { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.calendarStatus { margin-bottom: 10px; color: #54495b; font-size: .83rem; }

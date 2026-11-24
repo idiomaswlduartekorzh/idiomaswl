@@ -5,7 +5,8 @@ import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { requireAdmin } from '@/lib/auth/require-admin.server';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { AGENDA_PATH, BOGOTA, bogotaDay, bogotaDateTime, dayAtOffset, weekOf, type Lesson } from '@/lib/admin-operations/agenda';
-import { LessonForm, LessonCard } from './LessonForms';
+import { isGoogleCalendarConfigured } from '@/lib/admin-operations/google-calendar.server';
+import { CalendarSyncButton, LessonForm, LessonCard } from './LessonForms';
 import styles from './agenda.module.css';
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default async function AgendaPage({ searchParams }: { searchParams: Promi
   const week = weekOf(typeof params.semana === 'string' ? params.semana : today);
   const defaultDay = today >= week.first && today < week.next ? today : week.first;
   const db = createAdminClient();
+  const calendarConfigured = isGoogleCalendarConfigured();
   const { data, error } = await db.from('admin_lessons')
     .select('id,title,participant,teacher,starts_at,ends_at,status,updated_at')
     .gte('starts_at', `${week.first}T00:00:00-05:00`)
@@ -60,13 +62,19 @@ export default async function AgendaPage({ searchParams }: { searchParams: Promi
       </nav>
       {error ? <p className={styles.error} role="alert">La agenda no está disponible. Intenta actualizar la página.</p> : (
         <>
+          {calendarConfigured && (
+            <div className={styles.calendarStatus}>
+              <span>Los cambios se envían a Google Calendar al guardar.</span>
+              <CalendarSyncButton key={week.first} week={week.first} />
+            </div>
+          )}
           <div className={styles.week}>
             {week.days.map(day => {
               const lessons = (data ?? []).filter(lesson => bogotaDateTime(lesson.starts_at).startsWith(day));
               return (
                 <section key={day} className={styles.day} aria-current={day === today ? 'date' : undefined}>
                   <h2>{dayHeading.format(new Date(`${day}T12:00:00-05:00`))}</h2>
-                  {lessons.map(lesson => <LessonCard key={`${lesson.id}:${lesson.updated_at}`} lesson={lesson} />)}
+                  {lessons.map(lesson => <LessonCard key={`${lesson.id}:${lesson.updated_at}`} lesson={lesson} calendarConfigured={calendarConfigured} />)}
                   {!lessons.length && <p className={styles.empty}>Sin clases</p>}
                 </section>
               );

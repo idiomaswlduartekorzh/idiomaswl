@@ -55,7 +55,19 @@ export function LessonForm({ defaultDay, requestId, lesson }: { defaultDay?: str
   );
 }
 
-export function LessonCard({ lesson }: { lesson: Lesson }) {
+export function CalendarSyncButton({ week }: { week: string }) {
+  const [state, action, pending] = useActionState(changeLesson, INITIAL_STATE);
+  return (
+    <form action={action} className={styles.calendarSync}>
+      <input type="hidden" name="mode" value="syncWeek" />
+      <input type="hidden" name="week" value={week} />
+      <button className={styles.button} disabled={pending}>{pending ? 'Sincronizando…' : 'Sincronizar semana'}</button>
+      {state.message && <p className={state.ok ? styles.success : styles.error} role="status">{state.message}</p>}
+    </form>
+  );
+}
+
+export function LessonCard({ lesson, calendarConfigured = false }: { lesson: Lesson; calendarConfigured?: boolean }) {
   const [state, action, pending] = useActionState(changeLesson, INITIAL_STATE);
   const start = bogotaDateTime(lesson.starts_at).slice(11);
   const end = bogotaDateTime(lesson.ends_at).slice(11);
@@ -67,9 +79,11 @@ export function LessonCard({ lesson }: { lesson: Lesson }) {
       <small>{TEACHERS[lesson.teacher]} · {LESSON_STATUS[lesson.status]}</small>
       {lesson.status === 'scheduled' && (
         <>
-          <a className={styles.calendar} href={googleCalendarDraft(lesson)} target="_blank" rel="noreferrer">
-            Borrador en Google Calendar <ExternalLink size={12} aria-hidden />
-          </a>
+          {!calendarConfigured && (
+            <a className={styles.calendar} href={googleCalendarDraft(lesson)} target="_blank" rel="noreferrer">
+              Borrador en Google Calendar <ExternalLink size={12} aria-hidden />
+            </a>
+          )}
           <details className={styles.manage}>
             <summary>Gestionar clase</summary>
             <LessonForm lesson={lesson} />
