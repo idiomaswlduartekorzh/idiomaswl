@@ -166,6 +166,12 @@ const DEFAULT_CTA: CtaConfig = {
   pageLinkLabel: 'Ver clases de inglés',
 };
 
+const LOCAL_ENGLISH_GUIDES = new Set([
+  'academias-de-ingles-en-bucaramanga-comparativa-2026',
+  'cuanto-cuesta-aprender-ingles-en-bucaramanga-2026',
+  'clases-de-ingles-presenciales-vs-online-bucaramanga',
+]);
+
 // ── Page ──────────────────────────────────────────────────────────────────
 export default async function BlogArticlePage(
   { params }: { params: Promise<{ slug: string }> }
@@ -184,7 +190,14 @@ export default async function BlogArticlePage(
     })
     .slice(0, 2);
 
-  const cta = CTA_BY_CATEGORY[post.category] ?? DEFAULT_CTA;
+  const categoryCta = CTA_BY_CATEGORY[post.category] ?? DEFAULT_CTA;
+  const cta = LOCAL_ENGLISH_GUIDES.has(post.slug)
+    ? {
+        ...categoryCta,
+        pageLink: '/clases-de-ingles-bucaramanga',
+        pageLinkLabel: 'Ver clases de inglés presenciales en Bucaramanga',
+      }
+    : categoryCta;
 
   // JSON-LD: Article + BreadcrumbList
   const jsonLd = {
