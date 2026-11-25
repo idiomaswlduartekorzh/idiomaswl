@@ -1,7 +1,7 @@
 import 'server-only';
 
 import { createClient } from '@/lib/supabase/server';
-import { isVerifiedAdminUser, normalizeAdminEmail } from '@/lib/config/admins';
+import { isJoseAdminEmail, isVerifiedAdminUser, normalizeAdminEmail } from '@/lib/config/admins';
 
 export interface AuthorizedAdmin {
   id: string;
@@ -24,4 +24,10 @@ export async function requireAdmin(): Promise<AuthorizedAdmin> {
   }
 
   return { id: user.id, email };
+}
+
+export async function requireOwnerAdmin(): Promise<AuthorizedAdmin> {
+  const admin = await requireAdmin();
+  if (!isJoseAdminEmail(admin.email)) throw new Error('Esta operación requiere una cuenta de propietario.');
+  return admin;
 }

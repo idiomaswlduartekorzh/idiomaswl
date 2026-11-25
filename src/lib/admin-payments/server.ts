@@ -1,6 +1,8 @@
 import 'server-only';
 
 import { createAdminClient } from '@/lib/supabase/admin';
+import type { AuthorizedAdmin } from '@/lib/auth/require-admin.server';
+import { isJoseAdminEmail } from '@/lib/config/admins';
 import { sha256 } from '@/lib/wompi/security';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import {
@@ -26,7 +28,7 @@ export type AdminPaymentLedgerStatus =
   | 'EXPIRED';
 
 export interface AdminPaymentLedgerRow {
-  source: 'plans' | 'courses' | 'xpress' | 'icfes' | 'custom_link';
+  source: 'plans' | 'courses' | 'xpress' | 'icfes' | 'toefl' | 'custom_link' | 'manual' | 'historical';
   recordId: string;
   reference: string;
   providerId: string | null;
@@ -42,6 +44,8 @@ export interface AdminPaymentLedgerRow {
   createdAt: string;
   observedAt: string;
   paidAt: string | null;
+  paidOn: string | null;
+  sourcePeriod: string | null;
   paymentUrl: string | null;
 }
 
@@ -75,6 +79,7 @@ export interface AdminPaymentsData {
   wompiConfigured: boolean;
   configurationIssue: string | null;
   setupRequired: boolean;
+  recordedPaymentsAvailable: boolean;
   ledger: AdminPaymentLedgerRow[];
   links: AdminPaymentLinkRow[];
 }
@@ -344,6 +349,8 @@ function mapLedgerRow(row: Record<string, unknown>): AdminPaymentLedgerRow | nul
     createdAt: row.created_at,
     observedAt: row.observed_at,
     paidAt: typeof row.paid_at === 'string' ? row.paid_at : null,
+    paidOn: typeof row.paid_on === 'string' ? row.paid_on : null,
+    sourcePeriod: typeof row.source_period === 'string' ? row.source_period : null,
     paymentUrl: typeof row.payment_url === 'string' ? row.payment_url : null,
   };
 }
@@ -374,7 +381,24 @@ function mapPaymentLinkRow(row: Record<string, unknown>): AdminPaymentLinkRow {
   };
 }
 
-export async function loadAdminPaymentsData(): Promise<AdminPaymentsData> {
+async function readLedger(
+  db: ReturnType<typeof createAdminClient>,
+  table: 'admin_full_payment_ledger' | 'admin_online_payment_ledger' | 'admin_payment_ledger',
+) {
+  const rows: Record<string, unknown>[] = [];
+  const pageSize = 500;
+  for (let offset = 0; ; offset += pageSize) {
+    const { data, error } = await db.from(table).select('*')
+      .order('observed_at', { ascending: false })
+      .order('record_id')
+      .range(offset, offset + pageSize - 1);
+    if (error) return { data: null, error };
+    rows.push(...data);
+    if (data.length < pageSize) return { data: rows, error: null };
+  }
+}
+
+export async function loadAdminPaymentsData(admin: AuthorizedAdmin): Promise<AdminPaymentsData> {
   let currentEnvironment: WompiEnvironment = 'production';
   let wompiConfigured = false;
   let configurationIssue: string | null = null;
@@ -386,12 +410,9 @@ export async function loadAdminPaymentsData(): Promise<AdminPaymentsData> {
   }
 
   const db = createAdminClient();
-  const [ledgerResult, linksResult] = await Promise.all([
-    db
-      .from('admin_payment_ledger')
-      .select('*')
-      .order('observed_at', { ascending: false })
-      .limit(2_500),
+  const canReadRecordedPayments = isJoseAdminEmail(admin.email);
+  const [extendedLedger, linksResult] = await Promise.all([
+    readLedger(db, canReadRecordedPayments ? 'admin_full_payment_ledger' : 'admin_online_payment_ledger'),
     db
       .from('admin_payment_links')
       .select('*')
@@ -399,6 +420,7 @@ export async function loadAdminPaymentsData(): Promise<AdminPaymentsData> {
       .limit(300),
   ]);
 
+  const ledgerResult = extendedLedger.error ? await readLedger(db, 'admin_payment_ledger') : extendedLedger;
   const setupRequired = Boolean(ledgerResult.error || linksResult.error);
   if (ledgerResult.error) {
     console.error(`[admin-payments] No se pudo leer el ledger: ${ledgerResult.error.message}`);
@@ -424,6 +446,7 @@ export async function loadAdminPaymentsData(): Promise<AdminPaymentsData> {
     wompiConfigured,
     configurationIssue,
     setupRequired,
+    recordedPaymentsAvailable: canReadRecordedPayments && !extendedLedger.error,
     ledger: ((ledgerResult.data ?? []) as Record<string, unknown>[])
       .map(mapLedgerRow)
       .filter((row): row is AdminPaymentLedgerRow => row !== null),

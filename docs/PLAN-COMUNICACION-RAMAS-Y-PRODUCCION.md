@@ -5,12 +5,75 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
-## La hora en alemán A1 — 19 de noviembre de 2026
+## La hora en alemán A1 — actualización del 25 de noviembre de 2026
 
-- Rama: `codex/german-time-clocks-20261119`, creada desde `origin/main@40395be62` y comprobada de nuevo contra `origin/main` antes de integrar. Estado: `LISTO_PARA_INTEGRAR`, pendiente de acceso de escritura a GitHub; faltan push, PR, CI, deployment de Vercel y smoke público. El push HTTPS carece de credenciales, SSH rechaza la clave y la integración de GitHub responde `403 Resource not accessible by integration` al crear ramas y blobs.
-- Alcance: lección 21 de gramática alemana A1, con seis relojes explicativos, seis niveles y 41 decisiones de aprendizaje; infografía SVG; reloj visible en ejercicios interactivos; curso, cuaderno y soluciones en PDF. Los materiales PDF siguen el acceso de la plataforma.
-- Validación local: batería `prebuild` completa, catálogo protegido, calidad editorial, SEO de colecciones, TypeScript, build de producción con Turbopack, ruta de la lección y SVG con HTTP 200. Se regeneró el índice de gramática de Lectura para añadir solo `uhrzeit`. En navegador se revisaron escritorio y móvil sin desbordamiento horizontal y el primer nivel obtuvo 8/8, desbloqueando el segundo. Los tres PDF se renderizaron y revisaron visualmente.
-- Pendiente para declarar `DESPLEGADO`: commit en `main`, deployment `READY` de ese SHA y comprobación de las rutas públicas. Next.js 16.4.3 emitió un aviso de seguridad durante el build; esta entrega no modifica dependencias.
+- La rama `codex/german-time-clocks-20261119` conserva la lección del commit `3a6e2a38d` y recoge los cambios de `main@5793e1f24`. Su estado es `EN_VALIDACION`.
+- La lección 21 incluye seis relojes explicados, 41 ejercicios en seis niveles, una infografía y tres PDF (guía, cuaderno y soluciones). Veinte ejercicios muestran un reloj de agujas.
+- La validación original pasó el catálogo, los controles editoriales y de SEO, TypeScript y la compilación de producción. Se comprobaron la lección y su infografía en móvil y escritorio, el paso entre niveles y la representación de los tres PDF.
+- La auditoría local del 19 de noviembre recorrió los seis niveles. Las soluciones modelo obtuvieron 41/41. En el nivel 6, cuatro respuestas que omitían la hora o indicaban otra también recibieron 4/4. Los niveles 4 y 5 rechazaron respuestas válidas como «Um drei.» y «Es ist zehn Minuten nach fünf.».
+- La revisión editorial encontró «um ocho» en una explicación y una cruz junto a la lectura correcta de las 3:30, «halb vier». La auditoría documenta estos puntos para la revisión previa a publicar.
+
+## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
+
+- Trabajo `preparacion-tutor-examenes-20261124`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/preparacion-tutor-examenes-20261124@736ef4dd`, base `origin/main@1bcec454`.
+  Integración por squash del [PR #65](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/65).
+- Alcance. El catálogo enlaza las ofertas de IELTS, TOEFL e ICFES Inglés. Cambridge
+  B2 First incorpora una consulta específica después de los simulacros. Goethe,
+  CILS/CELI y Celpe-Bras enlazan los apartados existentes de preparación. Seis
+  archivos de rutas y estilos. Sin migraciones, variables ni dependencias entre ramas.
+- [Content integrity #666](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45516586988)
+  pasó catálogo, línea base, TypeScript y compilación completa. Pasaron 45 pruebas
+  de ICFES y los recorridos en modo claro y oscuro a 390 y 1440 px en la vista previa.
+- Producción. `main@5f7ab61429ef1f4251404bfc9d0dc3ce6f9a0a4f` en
+  `dpl_2A35N647EZqSNhFZTHeKhDVP5EWz` (`READY`, alias `www.idiomaswl.com`).
+  Las 25 rutas de comprobación respondieron 200. Se compararon los metadatos,
+  datos estructurados, accesos de práctica de las diez fichas y el sitemap de
+  3.839 URLs. El smoke oficial verificó 49 rutas y 17 audios en producción.
+
+## Inglés presencial y francés en Bucaramanga — 24 de noviembre de 2026
+
+- Trabajo `seo-ingles-frances-20261124`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/seo-ingles-frances-20261124@11aa3d8b`, base `origin/main@4237f681`.
+  Integración por squash del [PR #63](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/63).
+- Alcance. Horarios y planes de inglés presencial, tres enlaces del blog local,
+  consulta de francés, práctica A1 y FAQ de precios. Los enlaces existentes de
+  IELTS y TOEFL indican preparación con tutor. Cinco archivos de rutas y estilos.
+  Datos de sede fuera del alcance. Sin migraciones, variables ni dependencias entre ramas.
+- Validación del 24 de noviembre. [Content integrity #662](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45500974077)
+  pasó línea base, catálogo, TypeScript y compilación completa. Los botones y destinos
+  pasaron a 390 y 1440 px en la vista previa y en el sitio público.
+- Producción. `main@ed5db4926335eb3a76195ab736279c16f16e1b2e`, deployment
+  `dpl_EMjW9funnD5iQowSVxQnSsEzUp2Z` en estado `READY` con `www.idiomaswl.com`.
+  El smoke oficial verificó 49 rutas y 17 audios. Otras 17 páginas se compararon
+  con la captura previa para comprobar títulos, H1, canónicas, robots y datos
+  de sede. Las cinco páginas editadas están en el sitemap de 3.839 URLs.
+- La prueba adicional de gramática espera 24 plantillas y encuentra las 48
+  ya presentes en la base. Las entradas de esa prueba coinciden con la base.
+
+## Agenda de clases, pagos y correo — 24 de noviembre de 2026
+
+- Agenda y pagos desplegados desde `main@8216abf2` en
+  `dpl_nRqxye67fBneBVx9LEExCFqWMec7`. Se verificaron el menú, Agenda y Pagos
+  con una sesión de propietario y la redirección sin sesión.
+- Google Calendar API está activa. Las variables de la agenda privada están
+  cifradas en Vercel para producción. Se verificaron creación, lectura,
+  resincronización sin duplicados y cancelación de un evento privado en Google
+  desde el código de la rama. El panel desplegado mostró la sincronización activa.
+- Cloudflare Email Routing entrega `info@idiomaswl.com` a la bandeja de WeLearn.
+  Se confirmó la recepción con un mensaje de prueba. El propietario eligió
+  mantener su Gmail como acceso principal de Workspace. Sigue pendiente el
+  envío con remitente institucional.
+- La migración `20261124161345_admin_agenda_and_recorded_payments.sql` se aplicó
+  en Supabase de producción. Se comprobaron los permisos y la consulta del
+  registro de pagos en línea. Se importaron los movimientos validados de Numbers
+  y se comprobó que el historial solo aparezca en el acceso de propietario.
+- Las métricas mensuales de Pagos se verificaron en producción desde `main@1b18ad1b`
+  en `dpl_E4jxbDyaTMGbkR5UiNpKYYM679no`. Incluyen filtro por origen y Excel.
+- `codex/revision-pagos-numbers` agrega una bandeja de propietario para los
+  movimientos de Numbers pendientes de cotejar. La confirmación conserva la
+  celda original y contabiliza con la fecha efectiva del comprobante.
+  [Guía de operación](admin-operations.md).
 
 ## Reading B2–C2 multilingüe — 12 de noviembre de 2026
 

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EXAM_LIST } from '@/data/exams';
+import { LANGUAGE_RESOURCES } from '@/data/language-resources';
+import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Simulacros de Certificación Internacional',
@@ -30,9 +32,20 @@ export default function ExamenesPage() {
         <h1 style={{ fontSize: '2.4rem', letterSpacing: '-0.03em', margin: '0 0 0.5rem', fontWeight: 700 }}>
           Elige tu examen
         </h1>
-        <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 3rem' }}>
+        <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 1.5rem' }}>
           Simulacros completos, estrategia de examen y retroalimentación personalizada para cada certificación.
         </p>
+
+        <section className={styles.preparation} aria-labelledby="exam-preparation-title">
+          <h2 id="exam-preparation-title">Preparación con tutor</h2>
+          <ul className={styles.preparationLinks}>
+            {LANGUAGE_RESOURCES.ingles.exams.filter(({ href }) => href.startsWith('/preparacion-')).map(({ label, href }) => (
+              <li key={href}>
+                <Link href={href}>Preparación {label}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
 
         <div className="wl-exams-catalog">
           {EXAM_LIST.map(exam => (

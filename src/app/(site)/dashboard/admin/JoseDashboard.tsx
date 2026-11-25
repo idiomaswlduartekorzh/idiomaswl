@@ -121,7 +121,7 @@ function leadsCsv(leads: LeadRow[]): string {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 type Tab = 'overview' | 'students' | 'leads' | 'reviews'
 
-const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean }[] = [
+const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean; documentNavigation?: boolean }[] = [
   { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
   { Icon: Users,           tab: 'students', label: 'Estudiantes' },
   { Icon: ClipboardCheck,  tab: 'reviews', label: 'Corrección de exámenes' },
@@ -129,7 +129,8 @@ const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; 
   { Icon: KeyRound,        tab: null, href: '/dashboard/admin/claves', label: 'Claves de exámenes', highlight: true },
   { Icon: KeyRound,        tab: null, href: '/dashboard/admin/codigos-examen', label: 'Códigos de examen' },
   { Icon: MessageCircle,   tab: 'leads', label: 'Leads' },
-  { Icon: DollarSign,      tab: null, href: '/dashboard/admin/pagos', label: 'Pagos y finanzas' },
+  { Icon: Calendar,        tab: null, href: '/dashboard/admin/agenda', label: 'Agenda de clases', documentNavigation: true },
+  { Icon: DollarSign,      tab: null, href: '/dashboard/admin/pagos', label: 'Pagos y finanzas', documentNavigation: true },
   { Icon: Globe,           tab: null, href: '/dashboard/admin/contactos', label: 'Origen de contactos' },
   { Icon: BookOpen,        tab: null, href: '/dashboard/admin/live/create', label: 'Live Quiz' },
 ]
@@ -198,8 +199,10 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
           <GraduationCap size={18} color="#fff" />
           <span>Administración</span>
         </div>
-        {SIDEBAR_ITEMS.map(({ Icon, tab, href, label, highlight }, i) => (
-          href ? <Link key={i} href={href} className={`${styles.item} ${highlight ? styles.highlight : ''}`} title={label}><Icon size={17} /><span>{label}</span></Link>
+        {SIDEBAR_ITEMS.map(({ Icon, tab, href, label, highlight, documentNavigation }, i) => (
+          // Start a new document so the private route's script policy takes effect.
+          href && documentNavigation ? <a key={i} href={href} className={styles.item} title={label}><Icon size={17} /><span>{label}</span></a>
+          : href ? <Link key={i} href={href} className={`${styles.item} ${highlight ? styles.highlight : ''}`} title={label}><Icon size={17} /><span>{label}</span></Link>
             : <button key={i} type="button" onClick={() => tab && setActiveTab(tab)} className={`${styles.item} ${tab === activeTab ? styles.active : ''}`} title={label} aria-current={tab === activeTab ? 'page' : undefined}><Icon size={17} /><span>{label}</span></button>
         ))}
       </aside>
