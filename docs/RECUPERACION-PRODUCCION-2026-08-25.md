@@ -1077,3 +1077,7 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   dentro de los ejercicios.
 - Estado: `DESPLEGADO`. Este asiento de release solo modifica documentación;
   el contenido publicado corresponde al commit de contenido citado arriba.
+
+### 25 de noviembre de 2026 — revisión del piloto de skimming para IELTS Reading
+
+La rama `codex/revision-skimming-ielts` reúne el ejemplo comentado, el método de lectura y las devoluciones del ejercicio de árboles. Las cuatro capturas permiten revisar el tono antes de continuar con las demás lecciones. Estado `EN_VALIDACION`. [Ver el antes y el después](previews/ielts-skimming/README.md).
