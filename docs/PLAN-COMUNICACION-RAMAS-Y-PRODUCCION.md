@@ -5,6 +5,24 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
+
+- Trabajo `preparacion-tutor-examenes-20261124`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/preparacion-tutor-examenes-20261124@736ef4dd`, base `origin/main@1bcec454`.
+  Integración por squash del [PR #65](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/65).
+- Alcance. El catálogo enlaza las ofertas de IELTS, TOEFL e ICFES Inglés. Cambridge
+  B2 First incorpora una consulta específica después de los simulacros. Goethe,
+  CILS/CELI y Celpe-Bras enlazan los apartados existentes de preparación. Seis
+  archivos de rutas y estilos. Sin migraciones, variables ni dependencias entre ramas.
+- [Content integrity #666](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45516586988)
+  pasó catálogo, línea base, TypeScript y compilación completa. Pasaron 45 pruebas
+  de ICFES y los recorridos en modo claro y oscuro a 390 y 1440 px en la vista previa.
+- Producción. `main@5f7ab61429ef1f4251404bfc9d0dc3ce6f9a0a4f` en
+  `dpl_2A35N647EZqSNhFZTHeKhDVP5EWz` (`READY`, alias `www.idiomaswl.com`).
+  Las 25 rutas de comprobación respondieron 200. Se compararon los metadatos,
+  datos estructurados, accesos de práctica de las diez fichas y el sitemap de
+  3.839 URLs. El smoke oficial verificó 49 rutas y 17 audios en producción.
+
 ## Inglés presencial y francés en Bucaramanga — 24 de noviembre de 2026
 
 - Trabajo `seo-ingles-frances-20261124`, responsable Codex. Estado `DESPLEGADO`.
