@@ -272,7 +272,7 @@ export default function ClasesDeItalianoPage() {
         </section>
 
         {/* EXAMS */}
-        <section className={s.sectionDark}>
+        <section id="preparacion-cils-celi" className={s.sectionDark} style={{ scrollMarginTop: '5rem' }}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Certificaciones</p>
             <h2 className={s.h2}>CILS y CELI: las certificaciones oficiales</h2>
