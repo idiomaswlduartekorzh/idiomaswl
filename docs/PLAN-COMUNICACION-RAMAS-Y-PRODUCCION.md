@@ -8,6 +8,7 @@ Fecha de corte: 25 de agosto de 2026.
 ## La hora en alemán A1 — actualización del 25 de noviembre de 2026
 
 - La rama `codex/german-time-clocks-20261119` conserva la lección del commit `3a6e2a38d` y recoge los cambios de `main@5793e1f24`. Su estado es `EN_VALIDACION`.
+- Codex respaldó la entrega `c2e44c867` en GitHub. El [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67) está en borrador para revisar la calificación antes de integrar en `main`.
 - La lección 21 incluye seis relojes explicados, 41 ejercicios en seis niveles, una infografía y tres PDF (guía, cuaderno y soluciones). Veinte ejercicios muestran un reloj de agujas.
 - La validación original pasó el catálogo, los controles editoriales y de SEO, TypeScript y la compilación de producción. Se comprobaron la lección y su infografía en móvil y escritorio, el paso entre niveles y la representación de los tres PDF.
 - El 25 de noviembre pasaron la comparación con la línea base de producción, el catálogo (486 temas), el control de gramática alemana y TypeScript. La compilación terminó al segundo intento tras un aviso de seguridad de Next.js 16.4.3. El índice de gramática A1, la lección y la infografía con sus seis relojes respondieron HTTP 200 en local.
