@@ -15,6 +15,16 @@ import IcfesAnalyticsScope from '@/components/analytics/IcfesAnalyticsScope';
 import { hasGuidedMock, hasGuidedWorkbook } from '@/data/icfes/guided-registry';
 import styles from './exam-hub.module.css';
 
+const CAMBRIDGE_PREPARATION_ID = 'preparacion-con-tutor';
+const CAMBRIDGE_WHATSAPP = `https://wa.me/573005004253?text=${encodeURIComponent('Hola, quiero preparar Cambridge B2 First (FCE) con WeLearn. ¿Qué modalidad, horarios y precio tienen las clases con tutor?')}`;
+
+const PREPARATION_SECTIONS: Partial<Record<string, string>> = {
+  'cambridge-b2': `#${CAMBRIDGE_PREPARATION_ID}`,
+  goethe: `${LANGUAGE_RESOURCES.aleman.classes}#preparacion-goethe`,
+  'cils-celi': `${LANGUAGE_RESOURCES.italiano.classes}#preparacion-cils-celi`,
+  'celpe-bras': `${LANGUAGE_RESOURCES.portugues.classes}#preparacion-celpe-bras`,
+};
+
 export async function generateStaticParams() {
   return Object.keys(EXAMS).map(slug => ({ exam: slug }));
 }
@@ -98,10 +108,8 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   const icfesModeCount = slug === 'icfes'
     ? icfesResourceCount + exam.mocks.filter(mock => hasGuidedMock(mock.id) || hasGuidedWorkbook(mock.id)).length
     : 0;
-  const commercialHref = slug === 'ielts' ? '/preparacion-ielts'
-    : slug === 'toefl' ? '/preparacion-toefl'
-      : slug === 'icfes' ? '/preparacion-icfes'
-        : language?.classes;
+  const preparationHref = PREPARATION_SECTIONS[slug] ??
+    LANGUAGE_RESOURCES.ingles.exams.find(({ href }) => href === `/preparacion-${slug}`)?.href;
   const sectionLinks = [
     { href: '#resumen', label: 'Resumen' },
     { href: '#estructura', label: 'Estructura' },
@@ -142,9 +150,9 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
       {language ? (
         <nav className={styles.languageLinks} aria-label={`Más recursos de ${language.name}`}>
-          <span>{commercialHref !== language.classes ? `¿Quieres preparar ${exam.name} con un tutor?` : `¿Quieres reforzar tu ${language.name} antes del simulacro?`}</span>
+          <span>{preparationHref ? `¿Quieres preparar ${exam.name} con un tutor?` : `¿Quieres reforzar tu ${language.name} antes del simulacro?`}</span>
           <Link href={language.practice}>Ejercicios por nivel →</Link>
-          <Link href={commercialHref ?? language.classes}>{commercialHref !== language.classes ? 'Ver preparación con tutor →' : 'Clases con tutor →'}</Link>
+          <Link href={preparationHref ?? language.classes}>{preparationHref ? 'Ver preparación con tutor →' : 'Clases con tutor →'}</Link>
         </nav>
       ) : null}
 
@@ -162,6 +170,20 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
 
       {/* ── Practice mocks ── */}
       <MockGrid exam={exam} />
+
+      {slug === 'cambridge-b2' && (
+        <section id={CAMBRIDGE_PREPARATION_ID} className={`wl-section ${styles.anchorTarget}`} aria-labelledby="cambridge-preparation-title">
+          <div className="wrap wl-hub-panel">
+            <header className="wl-hub-heading">
+              <h2 id="cambridge-preparation-title">Preparación Cambridge B2 First con tutor</h2>
+              <p>Cuéntanos tu nivel y la fecha del examen. Consulta cómo preparar las secciones del B2 First con un tutor y confirma la modalidad, la disponibilidad y el precio.</p>
+            </header>
+            <a href={CAMBRIDGE_WHATSAPP} data-wa-cta="cambridge-b2-preparacion" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              Consultar preparación por WhatsApp
+            </a>
+          </div>
+        </section>
+      )}
 
       {/* ── Índice del superhub (hoy solo el SAT tiene clúster propio) ── */}
       {slug === 'sat' && <ExamCluster accent={exam.color} />}

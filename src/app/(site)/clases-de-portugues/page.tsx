@@ -318,7 +318,7 @@ export default function ClasesDePortuguesPage() {
         </section>
 
         {/* CELPE-BRAS */}
-        <section className={s.sectionDark}>
+        <section id="preparacion-celpe-bras" className={s.sectionDark} style={{ scrollMarginTop: '5rem' }}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Certificación</p>
             <h2 className={s.h2}>Celpe-Bras: la única certificación oficial de Brasil</h2>

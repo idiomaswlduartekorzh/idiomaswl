@@ -322,7 +322,7 @@ export default function ClasesDeAlemanPage() {
         </section>
 
         {/* ══════════════ GOETHE EXAMS ══════════════ */}
-        <section className={s.sectionDark}>
+        <section id="preparacion-goethe" className={s.sectionDark} style={{ scrollMarginTop: '5rem' }}>
           <div className={s.wrap}>
             <p className={s.sectionEyebrow}>Certificaciones</p>
             <h2 className={s.h2}>Goethe-Zertifikat: elige el nivel correcto</h2>
