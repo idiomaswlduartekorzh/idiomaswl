@@ -21,8 +21,17 @@ export interface InternationalReadingSkillLessonProps {
   facts: Fact[];
   outcomes: Point[];
   method: Point[];
+  methodIntroduction?: Point;
   weakExample: string;
   strongExample: string;
+  workedPassage?: {
+    heading: string;
+    paragraph: string;
+    firstNoteHeading: string;
+    revisedNoteHeading: string;
+    question: string;
+    explanation: string;
+  };
   independentPractice: string[];
   independentPracticeExperience?: ReactNode;
   progressEngine?: ReactNode;
@@ -48,8 +57,10 @@ export default function InternationalReadingSkillLesson({
   facts,
   outcomes,
   method,
+  methodIntroduction,
   weakExample,
   strongExample,
+  workedPassage,
   independentPractice,
   independentPracticeExperience,
   progressEngine,
@@ -156,8 +167,8 @@ export default function InternationalReadingSkillLesson({
           <section id="lesson-method" className={styles.section} aria-labelledby="method-heading">
             <div className={styles.sectionHeader}>
               <p className={styles.eyebrow}>WeLearn method</p>
-              <h2 id="method-heading">A repeatable process, not a shortcut</h2>
-              <p>Follow these steps until the sequence becomes automatic under time pressure.</p>
+              <h2 id="method-heading">{methodIntroduction?.title ?? 'A repeatable process, not a shortcut'}</h2>
+              <p>{methodIntroduction?.text ?? 'Follow these steps until the sequence becomes automatic under time pressure.'}</p>
             </div>
             <div className={`${styles.gridTwo} ${independentPracticeExperience ? styles.followupGrid : ''}`}>
               {method.map((point, index) => (
@@ -170,13 +181,29 @@ export default function InternationalReadingSkillLesson({
 
           <section id="worked-example" className={styles.section} aria-labelledby="example-heading">
             <div className={styles.sectionHeader}>
-              <p className={styles.eyebrow}>Worked contrast</p>
-              <h2 id="example-heading">See the difference before you practise</h2>
+              <p className={styles.eyebrow}>{workedPassage ? 'Read with a tutor' : 'Worked contrast'}</p>
+              <h2 id="example-heading">{workedPassage?.heading ?? 'See the difference before you practise'}</h2>
             </div>
+            {workedPassage && (
+              <figure className={styles.passageExcerpt}>
+                <figcaption>Practice paragraph</figcaption>
+                <blockquote>{workedPassage.paragraph}</blockquote>
+              </figure>
+            )}
             <div className={styles.gridTwo}>
-              <article className={`${styles.example} ${styles.weak}`}><h3>Weak move</h3><p>{weakExample}</p></article>
-              <article className={`${styles.example} ${styles.good}`}><h3>Strong move</h3><p>{strongExample}</p></article>
+              <article className={`${styles.example} ${workedPassage ? styles.firstNote : styles.weak}`}>
+                <h3>{workedPassage?.firstNoteHeading ?? 'Weak move'}</h3><p>{weakExample}</p>
+              </article>
+              <article className={`${styles.example} ${workedPassage ? styles.revisedNote : styles.good}`}>
+                <h3>{workedPassage?.revisedNoteHeading ?? 'Strong move'}</h3><p>{strongExample}</p>
+              </article>
             </div>
+            {workedPassage && (
+              <div className={styles.returnToText}>
+                <h3>{workedPassage.question}</h3>
+                <p>{workedPassage.explanation}</p>
+              </div>
+            )}
           </section>
 
           <section id="guided-practice" className={`${styles.section} ${styles.practice}`} aria-labelledby="guided-practice-heading">

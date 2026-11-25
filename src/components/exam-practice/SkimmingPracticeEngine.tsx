@@ -65,7 +65,7 @@ export default function SkimmingPracticeEngine({
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '0.75rem', marginBottom: '1rem' }}>
         {[
           { label: 'Goal', value: 'passage map' },
-          { label: 'Suggested time', value: practice.timeTarget },
+          { label: 'Guided practice', value: `${1 + practice.paragraphMap.length} decisions · ${practice.timeTarget}` },
           { label: 'Avoid', value: 'word-for-word translation' },
         ].map((item) => (
           <div key={item.label} style={{ border: '1px solid var(--line-soft)', borderRadius: 6, padding: '0.75rem', background: 'var(--bg-2)' }}>
@@ -188,13 +188,11 @@ export default function SkimmingPracticeEngine({
           </div>
         )}
 
-        {summaryChecked && !summaryCorrect && (
+        {summaryChecked && !summaryCorrect && summaryAnswer !== null && (
           <div style={{ marginTop: '0.75rem', display: 'grid', gap: '0.4rem' }}>
-            {practice.summaryQuestion.traps.map((trap) => (
-              <p key={trap} style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.86rem' }}>
-                {trap}
-              </p>
-            ))}
+            <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.5, fontSize: '0.86rem' }}>
+              {practice.summaryQuestion.traps[summaryAnswer < practice.summaryQuestion.answer ? summaryAnswer : summaryAnswer - 1]}
+            </p>
             <button type="button" className="btn btn-ghost btn-sm" onClick={() => { setSummaryAnswer(null); setSummaryChecked(false); }} style={{ justifySelf: 'start', minHeight: 44 }}>
               Try the summary again
             </button>

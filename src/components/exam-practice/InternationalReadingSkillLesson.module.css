@@ -264,6 +264,47 @@
 .good { border-top: 4px solid #059669; }
 .weak { border-top: 4px solid #dc2626; }
 
+.passageExcerpt {
+  margin: 0 0 1rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border-inline-start: 3px solid var(--skill-accent);
+  background: var(--wl-surface, var(--bg));
+}
+
+.passageExcerpt figcaption {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font: 700 0.76rem/1.5 var(--mono);
+}
+
+.passageExcerpt blockquote {
+  max-width: 75ch;
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.12rem;
+  line-height: 1.65;
+}
+
+.firstNote { border-top: 3px solid var(--wl-border, var(--line-soft)); }
+.revisedNote { border-top: 3px solid var(--skill-accent); }
+
+.returnToText {
+  max-width: 76ch;
+  margin-top: 1.2rem;
+}
+
+.returnToText h3 {
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.returnToText p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .practice {
   padding-top: 3.5rem;
 }
