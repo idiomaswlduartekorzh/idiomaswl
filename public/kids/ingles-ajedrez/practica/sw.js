@@ -1,4 +1,4 @@
-const CACHE_NAME='matecraft-shell-v2';
+const CACHE_NAME='matecraft-shell-v3';
 const SHELL=['/kids/ingles-ajedrez/practica/','/kids/ingles-ajedrez/practica/manifest.webmanifest'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
