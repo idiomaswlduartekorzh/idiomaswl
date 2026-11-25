@@ -10,10 +10,9 @@ import {
 } from '@/data/practica-exams/ielts-reading-skimming-progress';
 
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'skimming')!;
-const TITLE = 'Skimming: build a passage map before you hunt for answers';
-const DESCRIPTION = 'Learn to identify topic, paragraph purpose and changes of direction in 30–60 seconds, then use that map to return to the right evidence.';
+const TITLE = 'Skimming a passage for the first time';
+const DESCRIPTION = 'Have you ever read a question and thought, “I saw that somewhere”? A few words beside each paragraph can save you a second trip through the whole passage.';
 const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading';
-const practice = { ...IELTS_SKIMMING_PRACTICE, timeTarget: '5 decisions · 6 minutes' };
 const independentPassage = getSkimmingPassage(SKIMMING_INDEPENDENT_PASSAGE_ID)!;
 // Scaling contract: docs/ielts-reading-practice-engine-blueprint.md
 
@@ -32,22 +31,34 @@ export default function Page() {
       name="Skimming"
       title={TITLE}
       description={DESCRIPTION}
-      directAnswer="Skim once at the start of a passage. Read the title, opening sentences, repeated ideas and contrast markers. Your output is a short map, not an answer."
-      facts={[{ label: 'Orientation', value: '30–60 sec' }, { label: 'Output', value: 'Passage map' }, { label: 'Next move', value: 'Locate evidence' }]}
+      directAnswer="When you skim, you read quickly enough to see what each paragraph adds to the story. Leave yourself a note such as “why the plan changed”. When a question asks about that change, you’ll know which paragraph deserves a slower read."
+      facts={[{ label: 'First pass here', value: 'Try 30–60 sec' }, { label: 'In the margin', value: 'A few words' }, { label: 'With a question', value: 'Read closely' }]}
       outcomes={[
-        { title: 'Recognise the topic', text: 'Understand what the passage is broadly about before details and unfamiliar vocabulary compete for attention.' },
-        { title: 'Label paragraph purpose', text: 'Compress each paragraph into a role such as problem, evidence, contrast, limitation or response.' },
-        { title: 'Choose where to return', text: 'Use the map to select the most likely paragraph before scanning or reading closely.' },
+        { title: 'Let a difficult word wait', text: 'If you can follow what happened on either side of an unfamiliar word, keep going. You can come back if a question turns on its meaning.' },
+        { title: 'Tell two paragraphs apart', text: 'Two paragraphs might both mention a town’s water supply. A note like “why demand grew” separates the one explaining the problem from the one describing a repair.' },
+        { title: 'Find your way back', text: 'For a question about that repair, try the paragraph you marked. Once you get there, read the lines around the detail you need.' },
       ]}
+      methodIntroduction={{
+        title: 'How to make a note you’ll use again',
+        text: 'Try this with one paragraph first. A scrappy note in your own words is fine. You’re the person who’ll need to recognise it a few minutes from now.',
+      }}
       method={[
-        { title: 'Read the title', text: 'Predict the topic and likely purpose. Do not decide any answers yet.' },
-        { title: 'Read paragraph openings', text: 'Use each first sentence to form a provisional one-line label.' },
-        { title: 'Notice direction signals', text: 'Mark however, therefore, in contrast, for example and repeated content words.' },
-        { title: 'Compress the map', text: 'Write three to five words per paragraph so the map stays useful under time pressure.' },
+        { title: 'Start with a rough guess', text: 'Read the title and the paragraph’s opening line. What do you expect to hear more about? Hold that thought lightly. The writer may be setting up an idea they’ll question later.' },
+        { title: 'Follow a change of direction', text: 'Let your eye travel down the paragraph. If you see “yet”, read the thought on either side. Some writers change direction without a signal word, so glance at the ending too.' },
+        { title: 'Give the paragraph a job', text: 'Ask what you know by the end that you didn’t know at the start. Try putting that change into a few words. A verb often helps. “Demand doubled” will jog your memory better than “water”.' },
+        { title: 'Use the note when a question arrives', text: 'Say a question asks why demand grew. Your note can point you to a paragraph, but “demand doubled” only tells you how much. Read on for the reason before choosing an answer.' },
       ]}
-      weakExample="Reading every word, translating mentally and stopping at difficult vocabulary before you know what the paragraph is doing."
-      strongExample="Label Paragraph A ‘initial problem’, Paragraph B ‘pilot solution’ and Paragraph C ‘result + limitation’, then return only when the question points to that function."
-      practice={<SkimmingPracticeEngine practice={practice} accent="#0369a1" />}
+      workedPassage={{
+        heading: 'What would you write beside this paragraph?',
+        paragraph: 'The town installed water meters to find out which homes were using the most water. Yet at three in the morning, when most of the town was asleep, the meters showed almost as much water flowing as at midday. The engineers began checking the pipes beneath the streets.',
+        firstNoteHeading: 'After the first line',
+        revisedNoteHeading: 'After reading to the end',
+        question: 'What did the engineers do next?',
+        explanation: 'Your note takes you back to the last line. They began checking the pipes beneath the streets. If you were about to write “they found a leak”, look again at “began checking”. We leave the engineers while they’re still looking.',
+      }}
+      weakExample="I’d probably jot down “water meters” after the first line. Fair enough. But that note would also fit a paragraph about what meters cost. What made this paragraph worth remembering?"
+      strongExample="I’d change my note to “night readings point to pipes”. The surprise is how much water is still flowing when people are asleep. Now I can remember why the engineers turned their attention from homes to the street."
+      practice={<SkimmingPracticeEngine practice={IELTS_SKIMMING_PRACTICE} accent="#0369a1" />}
       independentPracticeExperience={<SkimmingIndependentPractice passage={independentPassage} />}
       progressEngine={<SkimmingProgressEngine />}
       sourceReview={(
@@ -66,19 +77,18 @@ export default function Page() {
         />
       )}
       independentPractice={[
-        'Start a clean passage and give yourself 45 seconds for title, paragraph openings and direction markers.',
-        'Write one short writer-action label for every paragraph before answering any question.',
-        'Compare each label with the complete paragraph, not only its first sentence.',
-        'Use the finished map to predict where three different question stems belong.',
+        'Try a fresh passage. Give yourself about 45 seconds for a first look at this short text. Allow longer if you lose the thread.',
+        'Leave a few words beside each paragraph. If two notes sound alike, look at how those paragraphs end.',
+        'Read a question and choose the paragraph you’d return to. Then check the line that supports your answer.',
       ]}
       checklist={[
         'you can state the passage topic in one sentence',
-        'every paragraph has a distinct functional label',
+        'your notes help you tell apart two paragraphs about the same subject',
         'you notice contrast and result markers without translating everything',
         'your map sends you to a likely evidence zone rather than a random paragraph',
       ]}
       faqs={ROUTE.faqs}
-      officialNote="Skimming is a WeLearn reading strategy, not an official IELTS question type. Use it to support question types that require paragraph purpose, main ideas and rapid evidence location."
+      officialNote="IELTS Academic Reading includes tasks such as Matching Headings, where you identify a paragraph’s main idea. WeLearn suggests 30–60 seconds for a first look at the short passages in this lesson. You can adjust that pace as you practise."
       nextLinks={[
         { href: '/practica/ielts/reading/habilidades/scanning', label: 'Continue to scanning', primary: true },
         { href: '/practica/ielts/reading/tipos-de-preguntas/matching-headings', label: 'Practise Matching Headings' },
