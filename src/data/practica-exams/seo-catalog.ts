@@ -1196,7 +1196,7 @@ export const IELTS_READING_SKILLS: PracticeRoute[] = [
     slug: 'skimming',
     title: 'Skimming en IELTS Reading',
     description:
-      'Aprende skimming para IELTS Reading con método de 45 segundos, ejemplo guiado, ejercicio interactivo y enlaces a tipos de pregunta donde esta habilidad sube la precisión.',
+      'Aprende a leer un pasaje por primera vez y a tomar notas que te ayuden a encontrar la respuesta. Incluye un ejemplo comentado y práctica con textos breves.',
     path: '/practica/ielts/reading/habilidades/skimming',
     parentPath: '/practica/ielts/reading/habilidades',
     skill: 'reading',
@@ -1218,12 +1218,12 @@ export const IELTS_READING_SKILLS: PracticeRoute[] = [
       {
         question: '¿Qué es skimming en IELTS Reading?',
         answer:
-          'Skimming es leer rápidamente para captar tema, propósito y estructura general del pasaje. No busca responder detalles; crea un mapa para saber dónde volver cuando una pregunta pida evidencia.',
+          'Es una primera lectura para orientarte. Fíjate en qué aporta cada párrafo y deja una nota corta al margen. Cuando leas la pregunta, esa nota te ayudará a decidir dónde volver para comprobar la respuesta.',
       },
       {
         question: '¿Cuánto tiempo debería dedicar al skimming?',
         answer:
-          'Como punto de partida, dedica entre 30 y 60 segundos por pasaje. La meta es orientación: título, primeras oraciones, conectores, palabras repetidas y función de cada párrafo.',
+          'Para los textos breves de esta lección puedes probar con 30–60 segundos. Si al terminar solo recuerdas el tema, vuelve al cierre de un párrafo y afina tu nota. En el examen tú decides cómo repartir el tiempo de Reading.',
       },
       {
         question: '¿Skimming es un tipo de pregunta oficial del IELTS?',
@@ -2826,8 +2826,8 @@ export const IELTS_SKIMMING_PRACTICE: SkimmingPracticeSet = {
   id: 'skimming-urban-trees',
   title: 'Urban trees and public health',
   instructions:
-    'Read quickly. Do not translate every sentence. Build a rough map: topic, shift, problem, solution.',
-  timeTarget: '45 seconds',
+    'Give each paragraph a few words in the margin or in your head. Then try the summary and check how well your notes fit the three paragraphs.',
+  timeTarget: 'about 6 minutes',
   passageTitle: 'Urban trees and public health',
   passage: `For many years, urban planners treated city trees mainly as decoration. Recent research has changed that view. Trees can lower surface temperatures by providing shade and by releasing moisture through transpiration. In dense neighborhoods, this cooling effect can reduce the need for air conditioning during hot months.
 
@@ -2844,7 +2844,7 @@ Planting trees is not a quick fix. Young trees need years of care before they pr
     ],
     answer: 1,
     explanation:
-      'The whole passage moves from benefits, to unequal distribution, to the need for long-term planning. Option B captures the complete structure without exaggerating.',
+      'Look at the word “can” in B. It leaves room for the cooling described near the start and the conditions the writer adds later. A summary that promises an immediate or complete result goes further than the passage does.',
     traps: [
       'Option A repeats the old decoration view but ignores the research shift.',
       'Option C mentions a real tool but turns it into a complete solution.',
@@ -2860,7 +2860,7 @@ Planting trees is not a quick fix. Young trees need years of care before they pr
       options: ['old view changes', 'funding dispute', 'species list', 'public complaints'],
       answer: 0,
       explanation:
-        'The paragraph begins with an old view and immediately signals a change: trees are now connected to cooling and health.',
+        'Read the words just after “decoration”. The writer says research “has changed that view”, then explains how trees cool a street. Even if “transpiration” slowed you down, “releasing moisture” gives you enough to follow the change.',
     },
     {
       id: 'skimming-map-02',
@@ -2870,7 +2870,7 @@ Planting trees is not a quick fix. Young trees need years of care before they pr
       options: ['new technology only', 'unequal benefits', 'tree biology', 'air conditioning'],
       answer: 1,
       explanation:
-        'The first sentence gives the function: the paragraph is about unequal distribution of benefits.',
+        'The writer compares two kinds of neighbourhood. Some have gardens and long-established parks. Others may have fewer trees and more exposed concrete. Satellite images help planners find areas like the second. A note about technology alone would lose the reason the city needs those images.',
     },
     {
       id: 'skimming-map-03',
@@ -2880,7 +2880,7 @@ Planting trees is not a quick fix. Young trees need years of care before they pr
       options: ['quick solution', 'tourism benefits', 'long-term planning', 'history of parks'],
       answer: 2,
       explanation:
-        'The paragraph warns that tree planting needs time, maintenance, participation and careful species selection.',
+        'Notice “need years of care”. Choosing a suitable species takes planning, and maintenance costs continue as the trees grow. Both details help explain the opening line. If “quick solution” caught your eye, go back and read the whole sentence that contains “quick”.',
     },
   ],
 };
