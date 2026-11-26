@@ -44,6 +44,15 @@ Fecha de corte: 25 de agosto de 2026.
   por separado con ratón y teclado en el sitio público. Pasaron el recorrido
   en escritorio y móvil y la prueba de producción de 49 rutas y 17 audios.
 
+- Colección de 20 dilemas C1. La tarjeta Speaking Dilemmas abre
+  [el catálogo](https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas/temas).
+  El piloto conserva su URL y las 19 fichas nuevas comparten su formato. Se
+  verificaron 320 ejemplos y 60 modelos distintos con lenguaje de las cuatro
+  tarjetas. Vercel publicó `main@54ca1b979f85fc34b4b987dc2eecffd6bd6af69b` en
+  `dpl_6ZuFdWykHM6WmLmmntKdF4BpTP5E` (`READY`). Pasaron TypeScript, la
+  compilación completa, las 20 fichas públicas, la navegación móvil y la
+  prueba de producción de 49 rutas y 17 audios.
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
