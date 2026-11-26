@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { DILEMMA_BASE_PATH } from '@/lib/practica/speaking-dilemma-routes'
 import { PILOT_DILEMMA } from '@/data/practica/speaking-dilemmas/pilot'
-import DilemmaExercise from './DilemmaExercise'
+import DilemmaExercise from '@/components/practica/speaking-dilemmas/DilemmaExercise'
 
 export const metadata: Metadata = {
   title: 'Speaking Dilemmas C1 — What should count as merit? | WeLearn',
@@ -10,5 +10,5 @@ export const metadata: Metadata = {
 }
 
 export default function SpeakingDilemmaPage() {
-  return <DilemmaExercise dilemma={PILOT_DILEMMA} />
+  return <DilemmaExercise level="c1" dilemma={PILOT_DILEMMA} />
 }

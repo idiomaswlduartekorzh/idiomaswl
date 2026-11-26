@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NEW_DILEMMAS } from '@/data/practica/speaking-dilemmas'
 import { dilemmaPath } from '@/lib/practica/speaking-dilemma-routes'
-import DilemmaExercise from '../DilemmaExercise'
+import DilemmaExercise from '@/components/practica/speaking-dilemmas/DilemmaExercise'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${dilemma.title} — Speaking C1 | WeLearn`,
     description: dilemma.prompt,
-    alternates: { canonical: `https://www.idiomaswl.com${dilemmaPath(slug)}` },
+    alternates: { canonical: `https://www.idiomaswl.com${dilemmaPath('c1', slug)}` },
   }
 }
 
@@ -29,5 +29,5 @@ export default async function SpeakingDilemmaPage({ params }: Props) {
   const dilemma = NEW_DILEMMAS.find((item) => item.slug === slug)
   if (!dilemma) notFound()
 
-  return <DilemmaExercise dilemma={dilemma} />
+  return <DilemmaExercise level="c1" dilemma={dilemma} />
 }
