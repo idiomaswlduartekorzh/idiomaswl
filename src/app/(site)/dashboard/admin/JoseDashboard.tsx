@@ -2,13 +2,14 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import {
   LayoutDashboard, Users, FileText, DollarSign,
   MessageCircle, Globe, BookOpen, GraduationCap,
   Calendar, Download,
   KeyRound,
-  ClipboardCheck,
+  ClipboardCheck, LibraryBig, ExternalLink, FolderArchive,
 } from 'lucide-react'
 import type React from 'react'
 import { signOut } from '@/lib/actions/signOut'
@@ -119,11 +120,33 @@ function leadsCsv(leads: LeadRow[]): string {
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
-type Tab = 'overview' | 'students' | 'leads' | 'reviews'
+type Tab = 'overview' | 'students' | 'leads' | 'reviews' | 'books'
+
+const ITALIAN_A1_FILES = [
+  {
+    title: 'Libro del estudiante',
+    detail: 'PDF · 272 páginas',
+    href: 'https://drive.google.com/file/d/1G9HBt0GPM32nBz2mDGBI7GLlUMq-J3Qa/view?usp=drivesdk',
+    Icon: FileText,
+  },
+  {
+    title: 'Edición con soluciones',
+    detail: 'PDF · 372 páginas',
+    href: 'https://drive.google.com/file/d/1FQo_3Wo48UvKoEd3xzBz1y0dvgaVMF7V/view?usp=drivesdk',
+    Icon: BookOpen,
+  },
+  {
+    title: 'Fuente editable',
+    detail: 'ZIP · 24 capítulos',
+    href: 'https://drive.google.com/file/d/15wRXJqq_aRCbakp3KF3RUgb2A4iWiArA/view?usp=drivesdk',
+    Icon: FolderArchive,
+  },
+] as const
 
 const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean; documentNavigation?: boolean }[] = [
   { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
   { Icon: Users,           tab: 'students', label: 'Estudiantes' },
+  { Icon: LibraryBig,      tab: 'books', label: 'Libros' },
   { Icon: ClipboardCheck,  tab: 'reviews', label: 'Corrección de exámenes' },
   { Icon: FileText,        tab: null, href: '/dashboard/admin/revisiones-xpress', label: 'Revisiones Xpress' },
   { Icon: KeyRound,        tab: null, href: '/dashboard/admin/claves', label: 'Claves de exámenes', highlight: true },
@@ -242,6 +265,61 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
 
         {/* CONTENT */}
         <main style={{ flex: 1, overflowY: 'auto', padding: '26px clamp(15px, 2.5vw, 34px)', display: 'flex', flexDirection: 'column', gap: 14 }}>
+          {activeTab === 'books' && (
+            <section className={styles.booksSection} aria-labelledby="admin-books-title">
+              <header className={styles.booksHeader}>
+                <div>
+                  <p className={styles.booksEyebrow}>Biblioteca editorial · Uso interno</p>
+                  <h1 id="admin-books-title">Libros</h1>
+                  <p>Materiales de estudio y archivos de trabajo del equipo WeLearn.</p>
+                </div>
+                <span className={styles.booksCount}>1 título</span>
+              </header>
+
+              <article className={styles.bookCard} aria-labelledby="italian-a1-title">
+                <div className={styles.bookCover}>
+                  <Image
+                    src="/images/books/progetto-italiano-a1.png"
+                    alt="Portada de Progetto Italiano A1 de WeLearn"
+                    width={637}
+                    height={900}
+                  />
+                </div>
+                <div className={styles.bookDetails}>
+                  <div className={styles.bookTags}>
+                    <span>Italiano</span><span>A1 · MCER</span><span>En revisión editorial</span>
+                  </div>
+                  <h2 id="italian-a1-title">Progetto Italiano A1</h2>
+                  <p className={styles.bookByline}>José David Duarte Silva · Idiomas WeLearn</p>
+                  <p className={styles.bookDescription}>
+                    Un recorrido de italiano inicial con explicaciones, tablas, lectura,
+                    escucha, práctica y soluciones comentadas. Conservamos aquí la edición
+                    para estudiantes y los materiales de revisión editorial.
+                  </p>
+                  <dl className={styles.bookFacts}>
+                    <div><dt>Capítulos</dt><dd>24</dd></div>
+                    <div><dt>Ejercicios</dt><dd>694</dd></div>
+                    <div><dt>Audios vinculados</dt><dd>20</dd></div>
+                  </dl>
+                  <h3>Archivos del libro</h3>
+                  <div className={styles.bookFiles}>
+                    {ITALIAN_A1_FILES.map(({ title, detail, href, Icon }) => (
+                      <a key={title} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${title}: abrir archivo privado en Google Drive`}>
+                        <span className={styles.bookFileIcon}><Icon size={20} /></span>
+                        <span className={styles.bookFileText}><strong>{title}</strong><small>{detail}</small></span>
+                        <ExternalLink size={17} aria-hidden="true" />
+                      </a>
+                    ))}
+                  </div>
+                  <p className={styles.bookAccessNote}>
+                    Pendiente la lectura final del autor y una prueba física de imprenta. Los archivos son privados en Drive;
+                    ábrelos con la cuenta WeLearn o una cuenta del equipo con acceso.
+                  </p>
+                </div>
+              </article>
+            </section>
+          )}
+
           {/* ── STUDENTS TAB ── */}
           {activeTab === 'students' && (
             <div>
