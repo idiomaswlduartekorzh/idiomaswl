@@ -21,6 +21,14 @@ Fecha de corte: 25 de agosto de 2026.
   [el dilema](https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas).
   La prueba de producción pasó con 49 rutas y 17 audios.
 
+- Revisión del dilema. Los candidatos son estudiantes de último año y el
+  impacto ocurre durante una práctica supervisada. Las 16 expresiones tienen un
+  ejemplo debajo de la definición. Vercel publicó
+  `main@402ea98393ef4fdf963aba4d91c19b7dfdc53017` en
+  `dpl_9bpBbX8iBPiQ38QSaa6Q9gb87eDm` (`READY`). El recorrido público verificó
+  el nuevo caso, los ejemplos, su contraste en modo claro y oscuro y el modelo
+  en escritorio y móvil.
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
