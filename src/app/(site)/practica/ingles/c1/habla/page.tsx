@@ -1,25 +1,24 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { DILEMMA_COLLECTION_PATH, SPEAKING_C1_PATH } from '@/lib/practica/speaking-dilemma-routes'
 import styles from './speaking.module.css'
-
-const base = '/practica/ingles/c1/habla'
 
 export const metadata: Metadata = {
   title: 'Speaking C1 | WeLearn',
-  description: 'Practise English C1 with 20 improvisation challenges and a dilemma with advanced vocabulary and a model answer.',
-  alternates: { canonical: `https://www.idiomaswl.com${base}` },
+  description: 'Practise English C1 with 20 improvisation challenges and 20 dilemmas with advanced vocabulary and three model answers each.',
+  alternates: { canonical: `https://www.idiomaswl.com${SPEAKING_C1_PATH}` },
 }
 
 const exercises = [
   {
     title: 'Improvisation',
     description: 'Pick one of 20 questions and work six surprise words into your answer.',
-    href: `${base}/solo`,
+    href: `${SPEAKING_C1_PATH}/solo`,
   },
   {
     title: 'Speaking Dilemmas',
-    description: 'Defend a position, try four sets of advanced expressions and compare your answer with a model.',
-    href: `${base}/dilemas`,
+    description: 'Choose from 20 dilemmas. Build an argument with four vocabulary cards and compare it with three model answers.',
+    href: DILEMMA_COLLECTION_PATH,
   },
 ]
 

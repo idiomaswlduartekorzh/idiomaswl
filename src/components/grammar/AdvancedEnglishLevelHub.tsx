@@ -53,7 +53,7 @@ export default function AdvancedEnglishLevelHub({ level }: { level: keyof typeof
         name: 'Speaking',
         eng: 'Speaking',
         desc: 'Improvise with surprise words or defend a position with advanced vocabulary.',
-        count: '20 improvisation questions · 1 dilemma',
+        count: '20 improvisation questions · 20 dilemmas',
         href: '/practica/ingles/c1/habla',
         available: true,
       }] : [])]}
