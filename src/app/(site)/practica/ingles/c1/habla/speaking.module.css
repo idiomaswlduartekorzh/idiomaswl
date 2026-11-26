@@ -1,0 +1,169 @@
+.shell {
+  --wlp-accent: var(--wlp-accent-habla);
+  max-width: 67rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.exerciseGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0;
+  list-style: none;
+}
+
+.exercise {
+  display: block;
+  height: 100%;
+}
+
+.exercise h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 1.35rem;
+}
+
+.exercise h2 span {
+  color: var(--wlp-accent);
+}
+
+.exercise p,
+.section > p {
+  color: var(--wlp-muted);
+  margin-top: 0.45rem;
+}
+
+.choices {
+  padding: 0;
+  border: 0;
+  margin: 1.5rem 0;
+  min-width: 0;
+}
+
+.choices legend,
+.section h2 {
+  margin-bottom: 0.65rem;
+  font-size: 1.2rem;
+  font-weight: 750;
+}
+
+.options {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.option,
+.wordCard,
+.model {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  background: var(--wlp-surface);
+  padding: 0.95rem;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  cursor: pointer;
+}
+
+.option input {
+  accent-color: var(--wlp-accent);
+  margin-top: 0.25rem;
+  flex: none;
+}
+
+.option strong,
+.option span span {
+  display: block;
+}
+
+.option span span {
+  margin-top: 0.3rem;
+  color: var(--wlp-muted);
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.option:has(input:checked) {
+  border-color: var(--wlp-accent);
+  background: color-mix(in srgb, var(--wlp-accent) 8%, var(--wlp-surface));
+}
+
+.option:has(input:focus-visible),
+.model summary:focus-visible {
+  outline: 2px solid var(--wlp-accent);
+  outline-offset: 3px;
+}
+
+.vocabulary {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 0.85rem;
+}
+
+.wordCard {
+  border-top: 3px solid var(--wlp-accent);
+}
+
+.wordCard h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.wordCard dl {
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+}
+
+.wordCard dt {
+  font-weight: 750;
+}
+
+.wordCard dd {
+  color: var(--wlp-muted);
+  line-height: 1.4;
+}
+
+.model {
+  margin-top: 1.3rem;
+}
+
+.model summary {
+  cursor: pointer;
+  color: var(--wlp-accent);
+  font-weight: 750;
+  padding: 0.25rem 0;
+}
+
+.model p {
+  margin: 0.8rem 0 0;
+  max-width: 70ch;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .vocabulary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .exerciseGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 370px) {
+  .vocabulary {
+    grid-template-columns: 1fr;
+  }
+}
