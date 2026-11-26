@@ -28,6 +28,25 @@ Fecha de corte: 25 de agosto de 2026.
   tras recargar en inglés y actualizar su caché. La prueba pública del sitio
   pasó las 49 rutas y los 17 audios protegidos.
 
+## Biblioteca interna de libros — 25 de noviembre de 2026
+
+- Trabajo `admin-books-italiano-a1-20261125`, responsable Codex. Rama
+  `codex/admin-books-italiano-a1`, creada desde `origin/main@c4e8e2c79`.
+  Estado: `LISTO_PARA_INTEGRAR`; [PR #69](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/69)
+  abierto; falta integración y comprobación en producción.
+- El menú lateral del centro operativo añade **Libros**. Su primera ficha guarda
+  *Progetto Italiano A1* con portada propia, PDF del estudiante (272 páginas),
+  PDF con soluciones (372 páginas) y fuente editable. Los tres archivos están en
+  Drive privado; no se añadieron PDF grandes al repositorio ni al directorio
+  público del sitio. [Registro y permisos](admin-books.md).
+- Pasaron TypeScript, ESLint del panel, `check:practica-catalog`,
+  `check:site-navigation`, `check:production-baseline`,
+  `check:admin-exam-copy` y el build completo de 5.368 páginas. Sin migraciones,
+  variables nuevas ni cambios de acceso del panel. Next 16.4.3 mostró un aviso
+  de actualización de seguridad; se deja para una actualización específica.
+- La aprobación del libro para venta sigue pendiente de lectura final del autor
+  y prueba física de imprenta. Integrar la biblioteca no cambia ese estado.
+
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 
 - Trabajo `preparacion-tutor-examenes-20261124`, responsable Codex. Estado `DESPLEGADO`.
