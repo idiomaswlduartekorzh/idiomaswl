@@ -5,6 +5,20 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Dilemas de Speaking en inglés A1–C2 — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. Los seis niveles de inglés tienen 20 dilemas cada uno.
+  Se añadieron 100 fichas para A1, A2, B1, B2 y C2. El catálogo C1 y su piloto
+  conservan sus URL. La duración sugerida y la tarea oral cambian con el nivel.
+  Las glosas de A1 y A2 aparecen en español y los ejemplos en inglés.
+- Los controles verificaron 120 fichas, 1.920 entradas con ejemplos, 360 modelos
+  distintos y tres posturas por dilema. Pasaron TypeScript, ESLint y los controles
+  de Práctica, Improvisa y Habla acompañada.
+- Vercel publicó `main@26aa55a02a7e56f259d7fd9781354a30db3fcf92` en
+  `dpl_FoS1UNmC7FXJkdB7HtgH5nUXV2bj` (`READY`). El dominio público sirvió las
+  120 fichas. El recorrido de móvil verificó los tres modelos por separado en
+  cada nivel. La prueba de producción pasó con 49 rutas y 17 audios.
+
 ## Speaking C1 y piloto de dilemas — 26 de noviembre de 2026
 
 - Estado `DESPLEGADO`. La tarjeta Speaking del nivel C1 de inglés abre dos
