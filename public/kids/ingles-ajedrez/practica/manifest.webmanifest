@@ -1,8 +1,8 @@
 {
-  "name": "Matecraft — Entrenador de ajedrez",
+  "name": "Matecraft — Chess Practice",
   "short_name": "Matecraft",
-  "description": "Mates, tácticas y finales con dificultad adaptativa.",
-  "lang": "es",
+  "description": "Practice checkmates, tactics, and endgames with adaptive difficulty.",
+  "lang": "en",
   "start_url": "/kids/ingles-ajedrez/practica/",
   "display": "standalone",
   "background_color": "#f5f2eb",

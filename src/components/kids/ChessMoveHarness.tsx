@@ -44,7 +44,7 @@ const scenarioCopy: Record<Scenario, { label: string; title: string; prompt: str
   guides: {
     label: 'Move guides',
     title: 'Pick a piece and see the path',
-    prompt: 'Choose a white piece. The legal-looking squares glow inside the board.',
+    prompt: 'Choose a white piece to see its move guides.',
   },
   wrong: {
     label: 'Try again',
@@ -123,23 +123,20 @@ export default function ChessMoveHarness() {
     <section id="practica" className={styles.harness} aria-labelledby="chess-harness-title" data-testid="chess-move-harness">
       <div className={styles.harnessHeader}>
         <div>
-          <p className={styles.eyebrow}>Visual practice lab · Laboratorio visual</p>
-          <h2 id="chess-harness-title">Move, notice, try again</h2>
-          <p className={styles.intro}>
-            A small, friendly playground to test the board feedback before a child starts a full puzzle.
-            <span> Un espacio breve para probar las animaciones antes de resolver un puzzle completo.</span>
-          </p>
+          <p className={styles.eyebrow}>Board demo</p>
+          <h2 id="chess-harness-title">Try the chessboard</h2>
+          <p className={styles.intro}>Try the move guides and see what happens when you get a move right or wrong.</p>
         </div>
         <div className={styles.headerActions}>
-          <a className={styles.practiceButton} href="/kids/ingles-ajedrez/practica">Practicar ahora · Practice now</a>
+          <a className={styles.practiceButton} href="/kids/ingles-ajedrez/practica">Start a puzzle</a>
           <div className={styles.statusBadge}>
             <span className={styles.statusDot} aria-hidden="true" />
-            <span>Ready to explore · Listo para explorar</span>
+            <span>Ready to explore</span>
           </div>
         </div>
       </div>
 
-      <div className={styles.scenarioTabs} role="tablist" aria-label="Harness scenarios">
+      <div className={styles.scenarioTabs} role="tablist" aria-label="Board demo scenarios">
         {(Object.keys(scenarioCopy) as Scenario[]).map((key) => (
           <button
             className={`${styles.scenarioTab} ${scenario === key ? styles.scenarioTabActive : ''}`}
@@ -158,7 +155,7 @@ export default function ChessMoveHarness() {
         <div id="chess-practice-board" className={styles.boardPanel}>
           <div className={styles.boardToolbar}>
             <div>
-              <span className={styles.kicker}>Scenario · Escenario</span>
+              <span className={styles.kicker}>Scenario</span>
               <h3>{activeCopy.title}</h3>
             </div>
             <button className={styles.resetButton} type="button" onClick={reset}>Reset</button>
@@ -218,22 +215,19 @@ export default function ChessMoveHarness() {
 
         <aside className={styles.coachPanel} aria-live="polite">
           <div className={styles.coachIcon} aria-hidden="true">♞</div>
-          <span className={styles.kicker}>Coach note · Nota del coach</span>
+          <span className={styles.kicker}>Coach tip</span>
           <h3>{feedback === 'wrong' ? 'Almost there!' : feedback === 'correct' ? 'Great choice!' : 'Your turn'}</h3>
           <p>
             {feedback === 'wrong'
-              ? 'That square is not in the guide. The board shakes softly so the child knows to look again.'
+              ? 'Try one of the marked squares.'
               : feedback === 'correct'
-                ? 'Nice! The green pulse confirms the move and gives the child a small moment of celebration.'
+                ? 'Nice! You found one of the marked squares.'
                 : activeCopy.prompt}
-          </p>
-          <p className={styles.bilingualNote}>
-            {feedback === 'wrong' ? 'Try again · Intenta de nuevo' : feedback === 'correct' ? 'Good move · Buen movimiento' : 'Your turn · Tu turno'}
           </p>
           <div className={styles.controls}>
             <label className={styles.toggleRow}>
               <input type="checkbox" checked={showCenters} onChange={(event) => setShowCenters(event.target.checked)} />
-              <span>Show center guides · Mostrar centros</span>
+              <span>Show center guides</span>
             </label>
             <div className={styles.centerProof}>
               <span className={styles.proofIcon}>◎</span>

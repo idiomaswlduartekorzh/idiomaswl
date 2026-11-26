@@ -5,6 +5,20 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
+
+- Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `EN_VALIDACION`.
+  Rama `codex/chess-kids-english-20261125`, base `origin/main@c4e8e2c7`.
+- Alcance. Traducir la página de Ajedrez Kids, su demostración interactiva y la
+  práctica de Matecraft, incluidos los mensajes que aparecen durante un puzzle.
+  Rutas `/kids/ingles-ajedrez` y `/kids/ingles-ajedrez/practica`.
+- Archivos compartidos. Navegación, enlace de salto, botón flotante de WhatsApp
+  y componentes de Kids, con inglés limitado a las rutas de ajedrez. Sin
+  migraciones, variables, dependencias nuevas ni cambios al banco de posiciones.
+- Validación local. Pasaron la línea base, el catálogo y la práctica en Chrome
+  de escritorio y WebKit táctil. Se comprobaron la carga, las pistas, los
+  indicadores de captura, el mate en uno y en dos y la recuperación del progreso.
+
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 
 - Trabajo `preparacion-tutor-examenes-20261124`, responsable Codex. Estado `DESPLEGADO`.
