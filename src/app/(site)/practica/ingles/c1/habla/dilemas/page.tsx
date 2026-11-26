@@ -4,7 +4,7 @@ import styles from '../speaking.module.css'
 
 export const metadata: Metadata = {
   title: 'Speaking Dilemmas C1 — What should count as merit? | WeLearn',
-  description: 'Weigh academic performance against final-semester placement performance with C1 vocabulary, short examples and two model answers.',
+  description: 'Weigh academic performance against final-semester placement performance with C1 vocabulary, short examples and three model answers.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas' },
 }
 
@@ -151,6 +151,25 @@ export default function SpeakingDilemmaPage() {
             <strong>All things considered</strong>, I&rsquo;d choose option B. I&rsquo;d still want to know whether
             those gains <strong>hold up</strong> over time and whether the approach is <strong>transferable</strong> to
             clinics with fewer resources.
+          </p>
+        </details>
+
+        <details className={styles.model}>
+          <summary>Reveal model answer · Conditional position</summary>
+          <p>
+            I&rsquo;d make my decision <strong>contingent on</strong> the quality of the evidence. I&rsquo;d lean
+            towards A if the academic <strong>track record</strong> shows consistent performance and an independent
+            team can reproduce the study&rsquo;s results. That would give other researchers something to <strong>build on</strong>.
+          </p>
+          <p>
+            <strong>Granted</strong>, the pilot reached only two clinics. I&rsquo;d lean towards B if the
+            appointment records <strong>bear out the claim</strong>, the improvement <strong>holds up</strong> after
+            the pilot ends, and it&rsquo;s clear what the student contributed.
+          </p>
+          <p>
+            <strong>All things considered</strong>, if both cases are equally well <strong>substantiated</strong>,
+            I&rsquo;d give B a slight edge because patients have already benefited. The first thing I&rsquo;d ask
+            for is follow-up data from both clinics.
           </p>
         </details>
       </div>
