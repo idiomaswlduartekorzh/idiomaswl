@@ -67,6 +67,19 @@ Fecha de corte: 25 de agosto de 2026.
   compilación completa, las 20 fichas públicas, la navegación móvil y la
   prueba de producción de 49 rutas y 17 audios.
 
+## Matecraft en Herramientas y página comercial de ajedrez en español — 26 de noviembre de 2026
+
+- Trabajo `chess-tools-spanish-seo-20261126`, responsable Codex. Estado `EN_VALIDACION`.
+  Rama `codex/chess-tools-spanish-seo-20261126`, base `origin/main@43297ba2`.
+- Alcance. Añadir acceso directo a Matecraft en `/herramientas` y restaurar el
+  español en la página comercial `/kids/ingles-ajedrez`, incluida su
+  demostración y los metadatos de búsqueda y redes. La práctica
+  `/kids/ingles-ajedrez/practica` conserva su interfaz en inglés.
+- Archivos compartidos. Navegación, accesibilidad, WhatsApp y componentes de
+  Kids. Sin dependencias nuevas ni cambios en la aplicación de práctica.
+- Pasaron la línea base, el catálogo de Práctica, la navegación y los controles
+  de SEO locales.
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
