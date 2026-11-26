@@ -37,6 +37,13 @@ Fecha de corte: 25 de agosto de 2026.
   recorrido público en escritorio y móvil, incluida la apertura y el cierre
   independiente de los dos modelos.
 
+- Modelo de postura intermedia. Explica qué evidencia inclinaría la decisión
+  hacia A o B y cómo resolver un empate, con expresiones de las cuatro tarjetas.
+  Vercel publicó `main@b7975368cd933997b203ee5544cf07e70ac443fb` en
+  `dpl_EwpMfMJVojRKLDJxMdCaGs63618F` (`READY`). Los tres modelos se abrieron
+  por separado con ratón y teclado en el sitio público. Pasaron el recorrido
+  en escritorio y móvil y la prueba de producción de 49 rutas y 17 audios.
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
