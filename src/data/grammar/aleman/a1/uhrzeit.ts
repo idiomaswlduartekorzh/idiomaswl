@@ -1,4 +1,19 @@
-import type { GrammarTopic } from '../../types'
+import type { ClockTip, GrammarTopic } from '../../types'
+
+const clockTips: ClockTip[] = [
+  {
+    cue: 'Las tres y media', example: 'Es ist halb vier.',
+    explanation: 'En los dos relojes la aguja larga marca media hora. Mira la corta. En el primero va hacia el 3 y en el segundo hacia el 4. El número que dices después de halb es la hora que viene.',
+    comparison: [
+      { hour: 2, minute: 30, digital: '02:30', spoken: 'halb drei' },
+      { hour: 3, minute: 30, digital: '03:30', spoken: 'halb vier' },
+    ],
+  },
+  { cue: 'Las cuatro menos cuarto', example: 'Es ist Viertel vor vier.', explanation: 'A las 3:45 faltan quince minutos para las cuatro. Vor te invita a mirar la hora que viene. Viertel vor drei sería un cuarto de hora antes de las tres, las 2:45.' },
+  { cue: 'La una en punto', example: 'Es ist ein Uhr.', explanation: 'Delante de Uhr, el número uno toma la forma ein. Si alguien te pregunta la hora y respondes solo con el número, puedes decir Es ist eins.' },
+  { cue: 'La hora de una clase', example: 'Der Kurs beginnt um drei Uhr.', explanation: 'La clase empieza a las tres. Um introduce la hora de esa actividad. Si miras el reloj y ya son las tres, dices Es ist drei Uhr.' },
+  { cue: 'Las dos o dos relojes', example: 'Es ist zwei Uhr.', explanation: 'Para dar la hora, Uhr se escribe con mayúscula y conserva esa forma. Zwei Uhren son dos relojes, como los dos que podrías ver en un escaparate.' },
+]
 
 const topic: GrammarTopic = {
   slug: 'uhrzeit',
@@ -10,7 +25,7 @@ const topic: GrammarTopic = {
   shortTitle: 'Die Uhrzeit · la hora',
   metaTitle: 'La hora en alemán A1: relojes, halb y Viertel | WeLearn',
   description: 'Aprende a leer relojes y a preguntar y decir la hora en alemán. Compara la forma de los horarios con nach, vor, halb y Viertel, y practica con relojes de manecillas.',
-  lead: 'Mira primero la aguja larga: marca los minutos. Luego mira la corta: indica la hora. A las 3:30 se dice halb vier, literalmente «media hora hacia las cuatro». Aquí aprenderás a leer el reloj y a comunicar la hora con seguridad.',
+  lead: 'Son las tres y media. En alemán oyes halb vier. ¿Por qué aparece el cuatro? Mira hacia dónde avanza la aguja corta y prueba después con otra hora.',
   outcomes: [
     'Lees horas y minutos en un reloj de manecillas sin confundir la aguja corta con la larga.',
     'Preguntas y respondes la hora en alemán con la forma de los horarios y la forma coloquial.',
@@ -22,17 +37,17 @@ const topic: GrammarTopic = {
     model: 'Wie spät ist es? — Es ist halb vier. (3:30) / Um wie viel Uhr beginnt der Kurs? — Um vierzehn Uhr dreißig. (14:30)',
     formula: 'Es ist + hora + Uhr + minutos | minutos + nach/vor + hora | halb + hora siguiente',
     decisions: [
-      'Busca la aguja larga: en el 12 son :00; en el 3 son :15; en el 6 son :30; en el 9 son :45.',
-      'Mira la aguja corta: si está entre dos números, todavía no ha llegado al segundo.',
-      'Para un horario escrito, usa la hora de 24 horas: 14:30 → vierzehn Uhr dreißig.',
-      'Con minutos del :01 al :29, puedes decir minutos + nach + la hora actual: 3:10 → zehn nach drei.',
-      'A los :15 di Viertel nach + hora actual: 3:15 → Viertel nach drei.',
-      'A los :30 di halb + hora siguiente: 3:30 → halb vier, no halb drei.',
-      'Con minutos del :31 al :59, cuenta lo que falta y usa vor + hora siguiente: 3:50 → zehn vor vier.',
-      'A los :45 di Viertel vor + hora siguiente: 3:45 → Viertel vor vier.',
-      'Para preguntar la hora actual: Wie spät ist es? o Wie viel Uhr ist es? Responde Es ist ...',
-      'Para preguntar a qué hora ocurre algo: Um wie viel Uhr ...? Responde Um ...',
-      'El reloj de manecillas no revela si son las 3:00 o las 15:00; añade contexto o usa 15 Uhr.',
+      'Busca el último número por el que pasó la aguja corta. Si está entre el 3 y el 4, todavía son las tres.',
+      'Sigue la aguja larga desde el 12. Cuenta cinco minutos por cada número hasta llegar a ella.',
+      'Con la larga en el 12, la hora está en punto. Las 3:00 se dicen drei Uhr.',
+      'A las 3:10 ya han pasado diez minutos desde las tres. Di zehn nach drei.',
+      'Quince minutos forman un cuarto de hora. A las 3:15 di Viertel nach drei.',
+      'A las 3:30 falta media hora para las cuatro. Di halb vier.',
+      'A las 3:45 falta un cuarto para las cuatro. Di Viertel vor vier.',
+      'A las 3:50 puedes contar los diez minutos que faltan. Di zehn vor vier.',
+      'Si ves 14:30 en un billete, lee de izquierda a derecha. Primero vierzehn, después Uhr y al final dreißig.',
+      'Para saber la hora de ahora, pregunta Wie spät ist es? Si te preguntan a ti, empieza con Es ist.',
+      'Para saber a qué hora empieza algo, pregunta Um wie viel Uhr beginnt es? Si empieza a las tres, puedes contestar Um drei Uhr.',
     ],
     table: [
       ['Hora', 'Horario o forma precisa', 'Conversación cotidiana'],
@@ -46,22 +61,17 @@ const topic: GrammarTopic = {
       ['14:10', 'vierzehn Uhr zehn', 'zehn nach zwei (por la tarde)'],
       ['0:00', 'null Uhr', 'Mitternacht'],
     ],
-    mistakes: [
-      '3:30 → halb vier ✓. Halb drei significa 2:30, porque la media hora apunta hacia las tres.',
-      '3:45 → Viertel vor vier ✓. Viertel vor drei corresponde a 2:45.',
-      '1:00 → ein Uhr ✓, no eins Uhr. Sin Uhr, en el habla se puede oír Es ist eins.',
-      'Wie spät ist es? — Es ist drei Uhr ✓. Para una cita: Der Kurs beginnt um drei Uhr ✓; no Es ist um drei Uhr.',
-      'Uhr lleva mayúscula y no cambia a plural al decir la hora: zwei Uhr, no zwei Uhren.',
-    ],
+    mistakes: clockTips.map(({ cue, example, explanation }) => `${cue}. ${example} ${explanation}`),
+    clockTips,
   },
   seo: [
     {
-      heading: 'Cómo leer un reloj de manecillas antes de hablar',
+      heading: 'Lee la hora con las dos agujas',
+      clockReading: true,
       paragraphs: [
-        'La aguja larga es el minutero (der Minutenzeiger); la corta es la aguja horaria (der Stundenzeiger). Empieza por la larga. Cada número representa cinco minutos: 1 = :05, 2 = :10, 3 = :15, 6 = :30 y 9 = :45. Si apunta al 12, la hora está en punto. No leas el número que señala el minutero como si fuera una hora.',
-        'Después observa la aguja corta. A las 3:30 no está clavada en el 3: va a medio camino hacia el 4. A las 3:45 está aún más cerca del 4, pero son todavía las tres. Esta posición física explica por qué en alemán aparecen expresiones que nombran la hora siguiente. Un reloj de doce horas no muestra si es de mañana o de tarde; para saberlo necesitas el contexto.',
+        'La aguja corta indica la hora que ya empezó. Para leer los minutos, sigue la aguja larga desde el 12 y cuenta de cinco en cinco. En el 1 van cinco minutos, en el 2 van diez y en el 3 ya van quince.',
+        'A las 3:30 la aguja corta está a medio camino entre el 3 y el 4. En español decimos «las tres y media» y nombramos la hora que empezó. En alemán decimos halb vier y nombramos la hora que viene. Doce horas después verás las agujas en el mismo lugar. El contexto te dirá si es de madrugada o de tarde.',
       ],
-      table: [['Minutero en', 'Minutos', 'Lectura básica'], ['12', ':00', 'en punto'], ['1', ':05', 'cinco minutos'], ['3', ':15', 'un cuarto'], ['6', ':30', 'media hora'], ['9', ':45', 'faltan quince'], ['11', ':55', 'faltan cinco']],
     },
     {
       heading: 'Vocabulario esencial de la hora en alemán',
@@ -75,7 +85,7 @@ const topic: GrammarTopic = {
       heading: 'Cómo preguntar la hora y cómo preguntar por un horario',
       paragraphs: [
         'Para saber la hora de ahora, pregunta Wie spät ist es? o Wie viel Uhr ist es? Las dos son naturales. Se responde Es ist ...: Wie spät ist es? — Es ist Viertel nach drei. La palabra spät forma parte de la pregunta establecida; no significa aquí que la persona llegue tarde.',
-        'Si quieres saber cuándo empieza una clase, un tren o una cita, pregunta Um wie viel Uhr beginnt ...? o, de forma más amplia, Wann beginnt ...? La respuesta lleva um: Der Kurs beginnt um acht Uhr. La diferencia es de función: Es ist informa qué marca el reloj; um ocho indica el momento en que ocurre una acción. En el habla también se oye Um drei, sin repetir Uhr, si la hora ya está clara.',
+        'Ahora imagina que tienes una clase. Um wie viel Uhr beginnt der Kurs? significa «¿A qué hora empieza la clase?». Der Kurs beginnt um acht Uhr significa «La clase empieza a las ocho». Si alguien te pregunta qué hora es y ya son las ocho, di Es ist acht Uhr. En conversación también puedes responder Um drei a una pregunta sobre una cita a las tres.',
       ],
       table: [['Intención', 'Pregunta', 'Respuesta'], ['Hora actual', 'Wie spät ist es?', 'Es ist halb vier.'], ['Hora actual', 'Wie viel Uhr ist es?', 'Es ist drei Uhr fünfzehn.'], ['Inicio de evento', 'Um wie viel Uhr beginnt der Kurs?', 'Um neun Uhr.'], ['Pregunta general', 'Wann fährt der Zug?', 'Er fährt um 14:10 Uhr.']],
     },
@@ -99,30 +109,41 @@ const topic: GrammarTopic = {
       heading: 'Matices para hispanohablantes: duración, contexto y variantes regionales',
       paragraphs: [
         'En español «hora» nombra tanto el momento como la duración. En alemán conviene separarlos: Es ist drei Uhr dice qué marca el reloj; Der Unterricht dauert eine Stunde dice que la clase dura sesenta minutos. Del mismo modo, Es ist halb vier informa la hora actual, pero Der Film beginnt um halb vier sitúa el inicio de la película.',
-        'Algunas regiones usan viertel vier para 3:15 y dreiviertel vier para 3:45. Puedes aprender a reconocer esas formas si las oyes, pero para empezar produce Viertel nach drei y Viertel vor vier: son expresiones claras en distintas regiones. Un reloj analógico tampoco decide por ti entre 3:15 y 15:15; si el contexto importa, usa fünfzehn Uhr fünfzehn o añade nachmittags.',
+        'Algunas regiones usan viertel vier para 3:15 y dreiviertel vier para 3:45. Si las oyes, ya sabes a qué hora se refieren. Cuando tú digas la hora, Viertel nach drei y Viertel vor vier se entienden en distintas regiones. Un reloj analógico tampoco decide por ti entre 3:15 y 15:15; si el contexto importa, usa fünfzehn Uhr fünfzehn o añade nachmittags.',
       ],
-      table: [['Si ves u oyes', 'Interprétalo como', 'Consejo A1'], ['halb vier', '3:30', 'piensa en la hora siguiente'], ['viertel vier (regional)', '3:15', 'produce Viertel nach drei'], ['dreiviertel vier (regional)', '3:45', 'produce Viertel vor vier'], ['eine Stunde', '60 minutos de duración', 'no es una hora del reloj'], ['um 15 Uhr', 'a las 15:00', 'momento de una acción'], ['Es ist 15 Uhr', 'son las 15:00', 'hora actual']],
+      table: [['Si ves u oyes', 'Interprétalo como', 'Consejo A1'], ['halb vier', '3:30', 'piensa en la hora siguiente'], ['viertel vier (regional)', '3:15', 'también puedes decir Viertel nach drei'], ['dreiviertel vier (regional)', '3:45', 'también puedes decir Viertel vor vier'], ['eine Stunde', '60 minutos de duración', 'no es una hora del reloj'], ['um 15 Uhr', 'a las 15:00', 'momento de una acción'], ['Es ist 15 Uhr', 'son las 15:00', 'hora actual']],
     },
     {
-      heading: 'De la imagen al diálogo: tres situaciones reales',
+      heading: 'La hora en tres conversaciones',
       paragraphs: [
-        'Situación 1, en casa: una persona ve las agujas en 6:30 y pregunta Wie spät ist es? Respuesta: Es ist halb sieben. Situación 2, en la estación: el billete indica 14:10. La información se lee Der Zug fährt um vierzehn Uhr zehn. Situación 3, antes de una cita: el reloj marca 8:45 y la reunión empieza a las 9. Puedes decir Es ist Viertel vor neun. Der Termin beginnt um neun Uhr.',
-        'Practica primero leyendo la aguja larga y luego la corta. Después elige una forma que encaje con la situación: coloquial para una conversación y precisa para un horario. Por último, pasa de decir simplemente la hora a usarla en una frase: Wir treffen uns um halb vier. Repite el mismo recorrido con relojes distintos hasta que puedas hacerlo sin traducir mentalmente cada palabra.',
+        '¿Qué hora es ahora? Empieza la respuesta con Es ist. ¿A qué hora sale el tren? Usa um para decir a qué hora ocurre algo. En el café puedes necesitar las dos formas.',
+        'Lee cada pregunta en voz alta. Para dar la hora que marca el reloj, empieza con Es ist. Para decir a qué hora tienes planes, escucha dónde aparece um. Después prueba a cambiar la hora de la cita por la de uno de los relojes de la lección.',
       ],
-      table: [['Contexto', 'Reloj o dato', 'Frase útil'], ['En casa', '6:30', 'Es ist halb sieben.'], ['Billete de tren', '14:10', 'Der Zug fährt um vierzehn Uhr zehn.'], ['Antes de una cita', '8:45', 'Es ist Viertel vor neun.'], ['Cita', '9:00', 'Der Termin beginnt um neun Uhr.']],
+      clockConversations: [
+        { title: 'Durante el desayuno', image: 'desayuno', alt: 'Una mano deja una taza de café junto al pan del desayuno.', setting: 'Acabas de levantarte y miras el reloj de la cocina.', exchanges: [
+          { time: '06:30', question: 'Wie spät ist es?', questionEs: '¿Qué hora es?', answer: 'Es ist halb sieben.', answerEs: 'Son las seis y media.' },
+        ] },
+        { title: 'En el andén', image: 'estacion', alt: 'Una viajera con su billete en la mano mira el tren en el andén.', setting: 'Miras el billete para confirmar la hora de salida.', exchanges: [
+          { time: '14:10', question: 'Um wie viel Uhr fährt der Zug ab?', questionEs: '¿A qué hora sale el tren?', answer: 'Er fährt um vierzehn Uhr zehn ab.', answerEs: 'Sale a las dos y diez de la tarde.' },
+        ] },
+        { title: 'Un café con una amiga', image: 'cita', alt: 'Dos amigas se saludan junto a la mesa de un café.', setting: 'Vas a ver a tu amiga a las nueve. Faltan quince minutos.', exchanges: [
+          { time: '08:45', question: 'Wie spät ist es?', questionEs: '¿Qué hora es?', answer: 'Es ist Viertel vor neun.', answerEs: 'Son las nueve menos cuarto.' },
+          { time: '09:00', question: 'Wann treffen wir uns?', questionEs: '¿Cuándo nos vemos?', answer: 'Um neun Uhr.', answerEs: 'A las nueve.' },
+        ] },
+      ],
     },
   ],
   visual: {
     mode: 'clock',
-    teacherLens: 'Lee primero el minutero y después la aguja horaria. Compara la misma imagen con la forma precisa y la forma coloquial.',
+    teacherLens: 'Sigue la aguja larga desde el 12. A medida que avanza, cambian los minutos y la forma de decir la hora.',
     graphicPrompt: 'Seis relojes analógicos con el minutero rojo y la aguja horaria azul muestran el paso de en punto a nach, halb y vor.',
     clocks: [
-      { hour: 3, minute: 0, digital: '03:00', spoken: 'drei Uhr', meaning: 'las tres en punto', note: 'El minutero está en el 12.' },
-      { hour: 3, minute: 5, digital: '03:05', spoken: 'fünf nach drei', meaning: 'las tres y cinco', note: 'El minutero está en el 1.' },
-      { hour: 3, minute: 15, digital: '03:15', spoken: 'Viertel nach drei', meaning: 'las tres y cuarto', note: 'El minutero está en el 3.' },
-      { hour: 3, minute: 30, digital: '03:30', spoken: 'halb vier', meaning: 'las tres y media', note: 'La aguja corta va hacia el 4.' },
-      { hour: 3, minute: 45, digital: '03:45', spoken: 'Viertel vor vier', meaning: 'las cuatro menos cuarto', note: 'El minutero está en el 9.' },
-      { hour: 3, minute: 55, digital: '03:55', spoken: 'fünf vor vier', meaning: 'las cuatro menos cinco', note: 'El minutero está en el 11.' },
+      { hour: 3, minute: 0, digital: '03:00', spoken: 'drei Uhr', meaning: 'las tres en punto', hourHint: 'Señala el 3. Acaban de empezar las tres.', minuteHint: 'Señala el 12. Han pasado cero minutos.', note: 'Para una hora en punto, di el número y añade Uhr.' },
+      { hour: 3, minute: 5, digital: '03:05', spoken: 'fünf nach drei', meaning: 'las tres y cinco', hourHint: 'Apenas ha pasado del 3. Siguen siendo las tres.', minuteHint: 'Del 12 al 1 hay un salto de cinco minutos.', note: 'Nach indica cuánto tiempo ha pasado desde las tres.' },
+      { hour: 3, minute: 15, digital: '03:15', spoken: 'Viertel nach drei', meaning: 'las tres y cuarto', hourHint: 'Está entre el 3 y el 4, todavía cerca del 3.', minuteHint: 'Al llegar al 3 ha dado tres saltos de cinco minutos. Ya van quince.', note: 'Viertel es un cuarto de hora. Viertel nach drei es un cuarto después de las tres.' },
+      { hour: 3, minute: 30, digital: '03:30', spoken: 'halb vier', meaning: 'las tres y media', hourHint: 'Está a medio camino entre el 3 y el 4. Todavía son las tres.', minuteHint: 'Apunta al 6. Ha recorrido media vuelta, treinta minutos.', note: 'Falta media hora para las cuatro. Por eso en alemán dices halb vier.' },
+      { hour: 3, minute: 45, digital: '03:45', spoken: 'Viertel vor vier', meaning: 'las cuatro menos cuarto', hourHint: 'Se acerca al 4. Las cuatro están por llegar.', minuteHint: 'Apunta al 9. Le queda un cuarto de vuelta para llegar al 12.', note: 'Vor indica cuánto falta. Viertel vor vier es un cuarto antes de las cuatro.' },
+      { hour: 3, minute: 55, digital: '03:55', spoken: 'fünf vor vier', meaning: 'las cuatro menos cinco', hourHint: 'Está casi en el 4. Aún son las tres.', minuteHint: 'Apunta al 11. Le falta un salto de cinco minutos para llegar al 12.', note: 'Faltan cinco minutos para las cuatro. Ese cinco se dice antes de vor.' },
     ],
     scene: [
       ['03:00', 'drei Uhr — hora en punto'],

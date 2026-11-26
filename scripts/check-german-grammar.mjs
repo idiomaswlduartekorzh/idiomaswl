@@ -86,6 +86,14 @@ for (const [level, topics] of Object.entries(levels)) {
       const clocks = topic.visual.clocks ?? []
       const visualItems = topic.practice.levels.flatMap((stage) => stage.type === 'choice' || stage.type === 'dual' || stage.type === 'write' ? stage.items.filter((item) => item.clock) : [])
       assert.ok(clocks.length >= 6, `${label}: seis relojes explicativos requeridos`)
+      assert.ok(clocks.every((clock) => clock.hourHint && clock.minuteHint && clock.note), `${label}: cada reloj debe explicar ambas agujas y la lectura`)
+      const conversations = topic.seo.flatMap((section) => section.clockConversations ?? [])
+      assert.ok(topic.seo.some((section) => section.clockReading) && conversations.length >= 3, `${label}: faltan la lectura guiada o las conversaciones`)
+      for (const scene of conversations) {
+        assert.ok(scene.alt && existsSync(path.join(ROOT, 'public/images/grammar/aleman/uhrzeit', scene.image + '.webp')), `${label}: falta la foto de ${scene.title}`)
+        assert.ok(scene.exchanges.length && scene.exchanges.every((turn) => turn.time && turn.question && turn.answer && turn.questionEs && turn.answerEs), `${label}: diálogo incompleto en ${scene.title}`)
+      }
+      assert.ok(topic.guide.clockTips?.length >= 5, `${label}: faltan los ejemplos de dudas frecuentes`)
       assert.ok(visualItems.length >= 15, `${label}: faltan ejercicios con relojes`)
       assert.ok([...clocks, ...visualItems.map((item) => item.clock)].every((clock) => Number.isInteger(clock.hour) && clock.hour >= 0 && clock.hour <= 23 && Number.isInteger(clock.minute) && clock.minute >= 0 && clock.minute <= 59 && clock.minute % 5 === 0), `${label}: hora de reloj inválida`)
       assert.ok(topic.practice.levels.some((stage) => stage.type === 'write' && stage.items.some((item) => item.clock && item.strict)), `${label}: falta producción de hora con corrección exacta`)

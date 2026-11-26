@@ -8,6 +8,29 @@ export interface ClockExample extends ClockTime {
   spoken: string
   meaning: string
   note: string
+  hourHint: string
+  minuteHint: string
+}
+
+export interface ClockConversation {
+  title: string
+  image: string
+  alt: string
+  setting: string
+  exchanges: Array<{
+    time: string
+    question: string
+    questionEs: string
+    answer: string
+    answerEs: string
+  }>
+}
+
+export interface ClockTip {
+  cue: string
+  example: string
+  explanation: string
+  comparison?: Array<ClockTime & { digital: string; spoken: string }>
 }
 
 export interface ChoiceItem {
@@ -102,12 +125,15 @@ export interface GrammarTopic {
     decisions: string[]
     table: [string, string, string][]
     mistakes: string[]
+    clockTips?: ClockTip[]
   }
   seo: Array<{
     heading: string
     paragraphs: string[]
     table?: string[][]
     examples?: string[][]
+    clockReading?: boolean
+    clockConversations?: ClockConversation[]
   }>
   visual: {
     mode: string

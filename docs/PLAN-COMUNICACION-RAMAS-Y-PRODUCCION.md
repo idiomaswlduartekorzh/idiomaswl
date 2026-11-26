@@ -7,13 +7,15 @@ Fecha de corte: 25 de agosto de 2026.
 
 ## La hora en alemán A1 — actualización del 25 de noviembre de 2026
 
-- La rama `codex/german-time-clocks-20261119` conserva la lección del commit `3a6e2a38d` y recoge los cambios de `main@5793e1f24`. Su estado es `EN_VALIDACION`.
+- La rama `codex/german-time-clocks-20261119` parte de la lección auditada en `3a6e2a38d`. La revisión visual incorpora `main@c4e8e2c79`. Su estado es `EN_VALIDACION`.
 - Codex respaldó la entrega `c2e44c867` en GitHub. El [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67) está en borrador para revisar la calificación antes de integrar en `main`.
 - La lección 21 incluye seis relojes explicados, 41 ejercicios en seis niveles, una infografía y tres PDF (guía, cuaderno y soluciones). Veinte ejercicios muestran un reloj de agujas.
 - La validación original pasó el catálogo, los controles editoriales y de SEO, TypeScript y la compilación de producción. Se comprobaron la lección y su infografía en móvil y escritorio, el paso entre niveles y la representación de los tres PDF.
 - El 25 de noviembre pasaron la comparación con la línea base de producción, el catálogo (486 temas), el control de gramática alemana y TypeScript. La compilación terminó al segundo intento tras un aviso de seguridad de Next.js 16.4.3. El índice de gramática A1, la lección y la infografía con sus seis relojes respondieron HTTP 200 en local.
 - La auditoría local del 19 de noviembre recorrió los seis niveles. Las soluciones modelo obtuvieron 41/41. En el nivel 6, cuatro respuestas que omitían la hora o indicaban otra también recibieron 4/4. Los niveles 4 y 5 rechazaron respuestas válidas como «Um drei.» y «Es ist zehn Minuten nach fünf.».
-- La revisión editorial encontró «um ocho» en una explicación y una cruz junto a la lectura correcta de las 3:30, «halb vier». La auditoría documenta estos puntos para la revisión previa a publicar.
+- Tras revisar las capturas del propietario, la lección presenta seis horas seleccionables, tres conversaciones ilustradas con traducción y una comparación entre las 2:30 y las 3:30. Los rótulos de la lámina comparten alineación y las secciones se abren desde un índice en español. La guía impresa incorpora las mismas escenas y ejemplos. Se corrigieron «um ocho» y las cruces junto a frases correctas.
+- El recorrido en navegador pasó a 320, 390, 768, 1020 y 1440 píxeles. Se probaron el selector con teclado y con JavaScript desactivado, el modo oscuro, los tres diálogos, la primera actividad y los 18 rótulos de la lámina. La guía de nueve páginas se renderizó para revisar los ejemplos impresos.
+- La revisión visual se entrega en el mismo borrador. Queda pendiente la calificación de las respuestas abiertas documentada el 19 de noviembre.
 
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 
