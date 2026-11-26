@@ -4,7 +4,9 @@ Fecha: 25 de noviembre de 2026. Ruta: `/kids/ingles-ajedrez/practica`.
 
 ## Experiencia
 
-- El menú ofrece mates, nueve familias de tácticas, aperturas y finales.
+- El menú, las pistas y las explicaciones aparecen en inglés, como la página
+  Ajedrez Kids que ya está en `main`. Ofrece mates, nueve familias de tácticas,
+  aperturas y finales.
 - Los ejercicios de mates, tácticas y finales conservan los datos locales de
   Lichess, validación con chess.js, dificultad por ELO y progreso en el navegador.
 - Aperturas contiene siete líneas de la Italiana jugando con blancas y ocho de

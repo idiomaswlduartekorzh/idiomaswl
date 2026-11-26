@@ -140,12 +140,13 @@ Fecha de corte: 25 de agosto de 2026.
 
 - Trabajo `ajedrez-mates-tacticas-aperturas-20261125`, responsable Codex. Estado
   `LISTO_PARA_INTEGRAR`; rama `codex/ajedrez-mates-tacticas-aperturas-20261125`, creada
-  desde `origin/main@5793e1f24` y actualizada hasta `origin/main@c4e8e2c79`.
+  desde `origin/main@5793e1f24` y actualizada hasta `origin/main@43297ba26`.
   No está integrada ni desplegada.
 - Alcance: menú funcional de mates, tácticas, aperturas y finales; siete líneas
   guiadas de la Italiana con blancas y ocho de la Caro-Kann con negras; respuesta
   rival automática, explicación por jugada, selector accesible de movimientos y
-  recursos del tablero servidos desde el propio sitio. Sin migraciones ni secretos.
+  recursos del tablero servidos desde el propio sitio. La interfaz y las
+  explicaciones mantienen el inglés incorporado en `main`. Sin migraciones ni secretos.
 - Validación local: 15 líneas legales con chess.js; recorrido completo de una
   línea de cada apertura y un mate en Chrome, Firefox y WebKit; arrastre de una
   pieza y resaltado de jugadas en los tres motores; progreso tras recarga y
