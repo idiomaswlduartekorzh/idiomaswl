@@ -11,8 +11,11 @@ export default function SiteSkipLink() {
     it: 'Vai al contenuto principale', pt: 'Ir para o conteúdo principal', ru: 'Перейти к основному содержимому',
     ja: 'メインコンテンツへ移動', ko: '본문으로 이동',
   };
-  const label = writingLocale ? writingLabels[writingLocale] : pathname.startsWith('/en/practice/') || pathname.startsWith('/practica/ielts')
-    ? 'Skip to main content' : 'Saltar al contenido principal';
+  const english = pathname.startsWith('/en/practice/')
+    || pathname.startsWith('/practica/ielts')
+    || pathname.startsWith('/kids/ingles-ajedrez');
+  const label = writingLocale ? writingLabels[writingLocale]
+    : english ? 'Skip to main content' : 'Saltar al contenido principal';
 
-  return <a className="wl-skip-link" href="#main">{label}</a>;
+  return <a className="wl-skip-link" href="#main" lang={writingLocale || (english ? 'en' : undefined)}>{label}</a>;
 }

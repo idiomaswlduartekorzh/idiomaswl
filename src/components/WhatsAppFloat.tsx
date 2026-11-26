@@ -8,6 +8,7 @@ const WA = '573005004253';
 
 // Per-page pre-written messages. Matched by pathname prefix (most specific first).
 const PAGE_MESSAGES: [string, string][] = [
+  ['/kids/ingles-ajedrez', 'Hello, I’d like to learn about Chess in English for my child.'],
   ['/practica/ielts',     'Hello, I was practising IELTS with WeLearn and would like guidance on how to continue my preparation.'],
   ['/practica/toefl',     'Hello, I was practising TOEFL with WeLearn and would like guidance on how to continue my preparation.'],
   ['/practica/ingles/b2/escritura', 'Hello, I was practising English writing at B2 with WeLearn and would like to know more about the classes.'],
@@ -51,7 +52,10 @@ declare global {
 
 export default function WhatsAppFloat() {
   const pathname = usePathname();
-  const english = pathname.startsWith('/practica/ielts') || pathname.startsWith('/practica/toefl') || isAdvancedEnglishWritingPath(pathname);
+  const english = pathname.startsWith('/practica/ielts')
+    || pathname.startsWith('/practica/toefl')
+    || pathname.startsWith('/kids/ingles-ajedrez')
+    || isAdvancedEnglishWritingPath(pathname);
   const msg = getMessageForPath(pathname);
   const href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
@@ -163,6 +167,7 @@ export default function WhatsAppFloat() {
         rel="noopener noreferrer"
         onClick={handleClick}
         className="wl-wa-float"
+        lang={english ? 'en' : undefined}
         aria-label={english ? 'Contact WeLearn on WhatsApp' : 'Contáctanos por WhatsApp'}
         title={english ? 'Message us on WhatsApp' : 'Escríbenos por WhatsApp'}
       >

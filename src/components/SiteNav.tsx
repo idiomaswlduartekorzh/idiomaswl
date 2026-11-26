@@ -169,6 +169,7 @@ export default function SiteNav() {
   const english = pathname.startsWith('/en/practice/')
     || pathname.startsWith('/practica/ielts')
     || pathname.startsWith('/practica/toefl')
+    || pathname.startsWith('/kids/ingles-ajedrez')
     || isAdvancedEnglishWritingPath(pathname)
     || pathname.startsWith('/learn-spanish-colombia')
     || pathname.startsWith('/spanish-classes-bucaramanga');
@@ -215,7 +216,7 @@ export default function SiteNav() {
   if (writingLocale && writingLocale !== 'en') return null;
 
   return (
-    <header className="wl-site-nav">
+    <header className="wl-site-nav" lang={english ? 'en' : undefined}>
       <div className="wl-site-nav__inner wrap">
         {/* Brand with logo */}
         <Link href="/" className="wl-site-nav__brand" aria-label={english ? 'Idiomas WeLearn — home' : 'Idiomas WeLearn — inicio'}>
