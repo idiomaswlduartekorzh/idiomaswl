@@ -48,7 +48,15 @@ export default function AdvancedEnglishLevelHub({ level }: { level: keyof typeof
         count: '20 workplace cases',
         href: `/practica/ingles/${level}/escritura`,
         available: true,
-      }]}
+      }, ...(level === 'c1' ? [{
+        id: 'habla',
+        name: 'Speaking',
+        eng: 'Speaking',
+        desc: 'Improvise with surprise words or defend a position with advanced vocabulary.',
+        count: '20 improvisation questions · 20 dilemmas',
+        href: '/practica/ingles/c1/habla',
+        available: true,
+      }] : [])]}
     />
   )
 }
