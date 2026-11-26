@@ -112,6 +112,8 @@ function verifyFinalReleaseApprovalEvidence(root, approval, set, fingerprint) {
 }
 
 const independentlyReviewedListeningMocks = new Map([[1, set1], [4, set4]]);
+export const INDEPENDENT_LISTENING_REVIEW_METHOD = 'Q1_Q40_AUDIBLE_EVIDENCE_WITH_INDEPENDENT_ACADEMIC_REVIEW';
+export const requiresIndependentListeningReview = set => independentlyReviewedListeningMocks.has(set);
 
 function verifyIndependentlyReviewedListening(root, artifact, setNumber, questions) {
   const authored = independentlyReviewedListeningMocks.get(setNumber);
@@ -146,13 +148,13 @@ function verifyMachineAlignmentEvidence(root, listening, expected, setNumber) {
   if (!verifyEvidenceFile(root, alignment)) return false;
   try {
     const report = JSON.parse(fs.readFileSync(path.resolve(root, alignment.evidencePath), 'utf8'));
-    if (alignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE_WITH_INDEPENDENT_ACADEMIC_REVIEW') {
+    if (alignment.method === INDEPENDENT_LISTENING_REVIEW_METHOD) {
       return report.audio?.sha256 === expected.audioSha256
         && report.transcript?.harnessTranscriptSha256 === expected.transcriptSha256
         && verifyIndependentlyReviewedListening(root, report, setNumber, listening.questions);
     }
     if (alignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE') {
-      return !independentlyReviewedListeningMocks.has(setNumber)
+      return !requiresIndependentListeningReview(setNumber)
         && !report.independentReview
         && report.schemaVersion === 1
         && report.status === 'PASS'
@@ -182,7 +184,7 @@ function verifyMachineAlignmentEvidence(root, listening, expected, setNumber) {
   }
 }
 
-function verifyTechnicalAudioEvidence(root, technical, expectedAudioSha256) {
+export function verifyTechnicalAudioEvidence(root, technical, expectedAudioSha256) {
   if (!verifyEvidenceFile(root, technical)) return false;
   try {
     const report = JSON.parse(fs.readFileSync(path.resolve(root, technical.evidencePath), 'utf8'));
@@ -368,6 +370,16 @@ function remediation(material, record, coverage, audioPublication) {
   return 'Realizar la aprobación humana final de release sobre la huella consolidada.';
 }
 
+export function hasCurrentFinalApproval(root, approval, set, fingerprint) {
+  return Boolean(
+    approval?.status === 'APPROVED'
+    && isIndependentHuman(approval.reviewer)
+    && reviewed(approval)
+    && approval.releaseFingerprintSha256 === fingerprint
+    && verifyFinalReleaseApprovalEvidence(root, approval, set, fingerprint)
+  );
+}
+
 export function evaluateSet(material, record, root, audioPublication = null) {
   const coverage = evidenceCoverage(material, record, root);
   const reasons = [];
@@ -384,13 +396,7 @@ export function evaluateSet(material, record, root, audioPublication = null) {
   for (const [area, passed] of Object.entries(coverage)) if (!passed) reasons.push(`${area.toUpperCase()}_EVIDENCE_INCOMPLETE`);
 
   const fingerprint = releaseFingerprint(material);
-  const finalApproval = Boolean(
-    record.releaseApproval?.status === 'APPROVED'
-    && isIndependentHuman(record.releaseApproval.reviewer)
-    && reviewed(record.releaseApproval)
-    && record.releaseApproval.releaseFingerprintSha256 === fingerprint
-    && verifyFinalReleaseApprovalEvidence(root, record.releaseApproval, material.set, fingerprint)
-  );
+  const finalApproval = hasCurrentFinalApproval(root, record.releaseApproval, material.set, fingerprint);
   let state;
   if (missingAudio || (!publishedHashVerified && record.knownAudioStatus === 'MISSING')) state = 'BLOCKED_ASSET';
   else if (!publishedHashVerified && record.knownAudioStatus === 'CONFIRMED_MISMATCH') state = 'BLOCKED_ALIGNMENT';

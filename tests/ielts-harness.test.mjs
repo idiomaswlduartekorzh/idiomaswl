@@ -315,6 +315,70 @@ test('the general harness recognizes only the complete, independently reviewed L
   }
 });
 
+test('regenerating the twenty dossiers preserves reviewed files and isolates a missing package', t => {
+  const repo = fileURLToPath(new URL('../', import.meta.url));
+  const clone = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-generator-copy-'));
+  t.after(() => fs.rmSync(clone, { recursive: true, force: true }));
+  for (const directory of ['scripts', 'config']) {
+    fs.cpSync(path.join(repo, directory), path.join(clone, directory), { recursive: true });
+  }
+  for (const directory of ['src', 'public', 'tests']) {
+    fs.symlinkSync(path.join(repo, directory), path.join(clone, directory), 'dir');
+  }
+  const harness = path.join(clone, 'config/ielts-harness');
+  const dossier = set => path.join(harness, `evidence/set-${set}.json`);
+  const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+  const write = (file, value) => fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
+  const digests = () => Object.fromEntries(fs.readdirSync(harness, { recursive: true })
+    .filter(file => file.endsWith('.json')).map(file => [file, sha256(fs.readFileSync(path.join(harness, file)))]));
+  const run = () => JSON.parse(execFileSync(process.execPath, ['--experimental-strip-types', '--no-warnings',
+    path.join(clone, 'scripts/generate-ielts-harness-evidence.mjs')], { cwd: clone, encoding: 'utf8' }));
+
+  const original = digests();
+  for (let runNumber = 0; runNumber < 2; runNumber++) {
+    const result = run();
+    assert.equal(result.status, 'PASS');
+    assert.equal(result.sets, 20);
+    assert.equal(result.listeningQuestions, 800);
+    assert.equal(result.changedFiles, 0);
+    assert.deepEqual(digests(), original);
+  }
+
+  const missing = path.join(harness, 'listening-evidence/set-4-listening-evidence.json');
+  const base1 = read(dossier(1));
+  const base3 = read(dossier(3));
+  const base4 = read(dossier(4));
+  fs.unlinkSync(missing);
+  const pending3 = structuredClone(base3);
+  pending3.speaking.status = 'PENDING';
+  write(dossier(3), pending3);
+  const partial = run();
+  assert.deepEqual(partial.pendingIndependentListening, [{ set: 4, reason: 'INDEPENDENT_PACKAGE_MISSING' }]);
+  assert.equal(partial.sets, 20);
+  assert.equal(partial.listeningQuestions, 760);
+  assert.equal(partial.changedFiles, 1);
+  assert.deepEqual(read(dossier(3)).speaking, base3.speaking);
+  assert.deepEqual(read(dossier(1)), base1);
+  assert.deepEqual(read(dossier(4)), base4);
+  assert.equal(fs.existsSync(missing), false);
+  assert.equal(run().changedFiles, 0);
+
+  const stale = structuredClone(base1);
+  stale.listening.binding.audioSha256 = 'former-audio';
+  stale.speaking.binding.speakingSha256 = 'former-speaking-material';
+  write(dossier(1), stale);
+  const staleResult = run();
+  assert.deepEqual(staleResult.pendingIndependentListening.map(item => item.reason),
+    ['LISTENING_MATERIAL_CHANGED', 'INDEPENDENT_PACKAGE_MISSING']);
+  assert.equal(staleResult.listeningQuestions, 720);
+  const after = read(dossier(1));
+  assert.deepEqual(after.listening, stale.listening);
+  assert.equal(after.speaking.status, 'PENDING');
+  assert.deepEqual(after.ux, base1.ux);
+  assert.deepEqual(after.releaseApproval, base1.releaseApproval);
+  assert.equal(run().changedFiles, 0);
+});
+
 test('Listening evidence cannot pass without a hash-bound technical audio report', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
   try {

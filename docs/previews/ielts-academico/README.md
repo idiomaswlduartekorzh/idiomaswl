@@ -12,6 +12,10 @@ Estas capturas muestran la aplicación funcionando antes y después de la revisi
 
 En Listening también puedes abrir la respuesta posterior al primer intento para ver cómo se explica una opción atractiva y cómo volver a escuchar. [Ver la corrección del descuento](listening-correccion.png).
 
+En el simulacro guiado, la corrección enlaza con una lección y permite volver a la fuente completa. Estas dos capturas proceden del componente de corrección en una prueba aislada con los datos del Set 1. [Reading, respuesta y pasaje](simulacro-reading-correccion.png) · [Listening, respuesta y grabación](simulacro-listening-correccion.png).
+
+En la hoja imprimible de Speaking, la última indicación de la tarjeta sobre la visita al trabajo quedaba sola al pasar la página. La consigna, sus tres viñetas y la indicación final ahora se pueden leer juntas. [Antes, página 1](speaking-tarjeta-antes-p1.png) · [Antes, página 2](speaking-tarjeta-antes-p2.png) · [Después, tarjeta completa](speaking-tarjeta-despues.png).
+
 La muestra de tono de *skimming* conserva sus dos pares de capturas. El blueprint describe cómo dar explicaciones con la misma voz en Reading, Writing, Listening y Speaking. [Piloto de skimming](../ielts-skimming/README.md) · [Blueprint y controles de calidad](../../ielts-explanations-blueprint.md).
 
 La comprobación editorial recorre las 21 lecciones de Reading, las siete familias visuales de Task 1, las cinco familias de Task 2, los cuatro fragmentos de Listening y las tres partes de Speaking. También prueba qué ocurre al bloquear el micrófono. Los expedientes de publicación de los simulacros tienen su propio informe. [Consultar el estado de los 20 sets guiados](../../ielts-harness.md).
