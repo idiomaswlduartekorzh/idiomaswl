@@ -13,3 +13,5 @@ Estas capturas muestran la aplicación funcionando antes y después de la revisi
 En Listening también puedes abrir la respuesta posterior al primer intento para ver cómo se explica una opción atractiva y cómo volver a escuchar. [Ver la corrección del descuento](listening-correccion.png).
 
 La muestra de tono de *skimming* conserva sus dos pares de capturas. El blueprint describe cómo dar explicaciones con la misma voz en Reading, Writing, Listening y Speaking. [Piloto de skimming](../ielts-skimming/README.md) · [Blueprint y controles de calidad](../../ielts-explanations-blueprint.md).
+
+La comprobación editorial recorre las 21 lecciones de Reading, las siete familias visuales de Task 1, las cinco familias de Task 2, los cuatro fragmentos de Listening y las tres partes de Speaking. También prueba qué ocurre al bloquear el micrófono. Los expedientes de publicación de los simulacros tienen su propio informe. [Consultar el estado de los 20 sets guiados](../../ielts-harness.md).

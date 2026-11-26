@@ -6,6 +6,7 @@ export type WorksheetExam = 'goethe' | 'toefl' | 'ielts';
 export type WorksheetQuestion = {
   label: string;
   lines: string[];
+  groupWithHeading?: number;
   response: 'choice' | 'short' | 'writing' | 'speaking';
   answerNumbers?: number[];
   stimulus?: string;
@@ -99,8 +100,17 @@ export function worksheetQuestion(question: Question, position: number, exam: Wo
       return { label: question.stimulusLabel ?? `Writing task ${question.taskNumber}`, response: 'writing', imageUrl: question.imageUrl, lines: [question.stimulus, question.text] };
     case 'repeat':
       return { label: `Listen and Repeat · ${question.itemNumber}`, response: 'speaking', lines: [question.mediaStatus === 'script-ready-audio-blocked' ? 'Audio pending: this item is not scored.' : 'Listen to the sentence on the live practice page and repeat it aloud.'] };
-    case 'speak':
-      return { label: exam === 'goethe' ? `Sprechen · Teil ${question.partNumber}` : exam === 'ielts' ? `Speaking · Part ${question.partNumber}` : `Take an Interview · ${question.partNumber}`, response: 'speaking', imageUrls: question.imageUrls, lines: [question.mediaStatus === 'script-ready-audio-blocked' ? 'Audio pending: this item is not scored.' : question.text, ...(question.cueCard ? [question.cueCard] : []), ...(question.followUp ?? [])] };
+    case 'speak': {
+      const prompt = question.mediaStatus === 'script-ready-audio-blocked' ? 'Audio pending: this item is not scored.' : question.text;
+      const promptLines = question.cueCard ? [prompt, question.cueCard] : [prompt];
+      return {
+        label: exam === 'goethe' ? `Sprechen · Teil ${question.partNumber}` : exam === 'ielts' ? `Speaking · Part ${question.partNumber}` : `Take an Interview · ${question.partNumber}`,
+        response: 'speaking',
+        imageUrls: question.imageUrls,
+        groupWithHeading: exam === 'ielts' && question.partNumber === 2 && question.cueCard ? promptLines.length : undefined,
+        lines: [...promptLines, ...(question.followUp ?? [])],
+      };
+    }
     case 'multiselect':
       return { label: exam === 'ielts' ? `Questions ${question.qRange[0]}–${question.qRange[1]}` : label, response: 'choice', answerNumbers: exam === 'ielts' ? numberRange(question.qRange) : undefined, lines: [question.text, `Choose ${question.selectCount} answers.`, ...question.options.map(option => `${option.letter}. ${option.text}`)] };
     case 'fill':

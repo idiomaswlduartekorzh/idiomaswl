@@ -116,6 +116,14 @@ for (const [exam, ids] of [
     } else {
       assert.equal(sections.length, 10, `${id}: IELTS set must have ten sections`);
       assert.deepEqual(skills.map(skill => sections.filter(section => section.skill === skill).length), [4, 3, 2, 1], `${id}: IELTS skill PDFs are incomplete`);
+      const speaking = mock.sections.find(section => section.skill === 'speaking');
+      const printableSpeaking = sections.find(section => section.skill === 'speaking');
+      for (const [index, question] of speaking.questions.entries()) {
+        const printed = printableSpeaking.questions[index];
+        const group = printed.lines.slice(0, printed.groupWithHeading ?? 0);
+        assert.deepEqual(group, question.partNumber === 2 ? [question.text, question.cueCard] : [], `${id}: keep the long-turn instructions and complete cue card together`);
+        if (question.partNumber === 2) assert.deepEqual(printed.lines.slice(group.length), question.followUp ?? [], `${id}: follow-up questions belong after the cue card`);
+      }
       for (const skill of ['listening', 'reading']) {
         const numbers = sections.filter(section => section.skill === skill).flatMap(section => section.questions.flatMap(question => question.answerNumbers ?? []));
         assert.deepEqual([...numbers].sort((a, b) => a - b), Array.from({ length: 40 }, (_, index) => index + 1), `${id}: IELTS ${skill} answer sheet must cover 1–40 exactly once`);

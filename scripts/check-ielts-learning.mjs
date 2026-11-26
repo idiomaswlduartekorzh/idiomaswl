@@ -11,6 +11,7 @@ const baseURL = new URL(args.base || 'http://127.0.0.1:3000').origin;
 const hub = '/practica/ielts';
 const skills = {};
 const errors = [];
+let passed = false;
 const options = { headless: true, args: ['--use-fake-device-for-media-stream'] };
 const browser = await chromium.launch({ ...options, channel: process.env.PLAYWRIGHT_CHROMIUM_CHANNEL || 'chrome' })
   .catch(() => chromium.launch(options));
@@ -19,6 +20,15 @@ const page = await desktop.newPage();
 page.setDefaultTimeout(30000);
 page.setDefaultNavigationTimeout(120000);
 page.on('pageerror', error => errors.push(error.message));
+
+async function openReviewIfProvided(context) {
+  const reviewURL = process.env.IELTS_QA_REVIEW_URL;
+  if (!reviewURL) return;
+  assert.equal(new URL(reviewURL).origin, baseURL, 'The review link must belong to the requested deployment');
+  const response = await context.request.get(reviewURL, { timeout: 90000 });
+  assert.equal(response.status(), 200, 'The review link must open this deployment');
+  await response.dispose();
+}
 
 async function visit(target, path) {
   const response = await target.goto(path, { waitUntil: 'domcontentloaded', timeout: 90000 });
@@ -50,6 +60,7 @@ async function checkRecording() {
 }
 
 try {
+  await openReviewIfProvided(desktop);
   await enterSkill('reading');
   await page.locator('main a[href$="/habilidades/gestion-del-tiempo"]').first().waitFor();
   const destinations = await page.locator('main a').evaluateAll(links =>
@@ -144,6 +155,7 @@ try {
   skills.Speaking = { parts: 3, separateRecordingsPlayed: 2 };
 
   const mobile = await browser.newContext({ baseURL, viewport: { width: 320, height: 844 }, colorScheme: 'dark' });
+  await openReviewIfProvided(mobile);
   const small = await mobile.newPage();
   small.on('pageerror', error => errors.push(error.message));
   await mobile.addInitScript(() => {
@@ -162,11 +174,12 @@ try {
   skills.Speaking.withoutMicrophone = true;
   await mobile.close();
   assert.deepEqual(errors, []);
+  passed = true;
   console.log('IELTS Academic browser checks passed across four skills.');
 } finally {
   await browser.close();
   if (args.output) {
     await mkdir(dirname(args.output), { recursive: true });
-    await writeFile(args.output, JSON.stringify({ passed: Object.keys(skills).length === 4 && !!skills.Speaking?.withoutMicrophone && !errors.length, skills, errors, baseURL }, null, 2) + '\n');
+    await writeFile(args.output, JSON.stringify({ passed, skills, errors, baseURL }, null, 2) + '\n');
   }
 }

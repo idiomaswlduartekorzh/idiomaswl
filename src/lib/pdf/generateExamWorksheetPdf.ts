@@ -93,8 +93,15 @@ async function printQuestion(api: BrandedDoc, question: WorksheetQuestion, secti
     || section.skill === 'speaking' && section.part === 11
   );
   const hasIllustration = !!question.imageUrl || !!question.imageUrls?.length || hasA1Illustration;
-  api.ensure(exam === 'goethe' && section.part === 5 ? 145 : hasIllustration ? 112 : 24);
-  api.heading(question.label, { size: 10.5, gapTop: 5, rule: false });
+  let lines = question.lines;
+  if (question.groupWithHeading) {
+    const prompt = lines.slice(0, question.groupWithHeading).join('\n\n');
+    api.callout(question.label, prompt, [246, 248, 252], NAVY);
+    lines = lines.slice(question.groupWithHeading);
+  } else {
+    api.ensure(exam === 'goethe' && section.part === 5 ? 145 : hasIllustration ? 112 : 24);
+    api.heading(question.label, { size: 10.5, gapTop: 5, rule: false });
+  }
   let stimulusShown = false;
   if (exam === 'goethe' && section.part === 5 && question.stimulusLabel) {
     api.paragraph(question.stimulusLabel, { size: 9.3, style: 'bold', gap: 2 });
@@ -127,7 +134,7 @@ async function printQuestion(api: BrandedDoc, question: WorksheetQuestion, secti
     api.callout(question.stimulusLabel ?? 'Material', question.stimulus.replace(/\n\n/g, '  |  ').replace(/\n/g, ' · '), [246, 248, 252], [34, 58, 107]);
     stimulusShown = true;
   }
-  printLines(api, question.lines.filter(line =>
+  printLines(api, lines.filter(line =>
     !(stimulusShown && (line === question.stimulus || line === question.stimulusLabel))
     && !(exam === 'goethe' && section.part === 4 && line === question.stimulusLabel)
   ));

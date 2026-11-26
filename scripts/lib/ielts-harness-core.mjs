@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import set1 from '../../src/data/mocks/ielts-set-1.ts';
+import set4 from '../../src/data/mocks/ielts-set-4.ts';
+import { withIeltsListeningProductionTranscript } from '../../src/data/mocks/ielts-listening-production.ts';
+import { withIeltsListeningLegacyReplacementTranscript } from '../../src/data/mocks/ielts-listening-legacy-replacement.ts';
+import { auditListeningEvidenceArtifact, auditSet1ListeningEvidenceArtifact } from './ielts-listening-audible-evidence.mjs';
 
 export const AUDIO_OBSERVATIONS = new Set([
   'FULL_MATCH_REVIEWED',
@@ -106,12 +111,50 @@ function verifyFinalReleaseApprovalEvidence(root, approval, set, fingerprint) {
   }
 }
 
-function verifyMachineAlignmentEvidence(root, alignment, expected) {
+const independentlyReviewedListeningMocks = new Map([[1, set1], [4, set4]]);
+
+function verifyIndependentlyReviewedListening(root, artifact, setNumber, questions) {
+  const authored = independentlyReviewedListeningMocks.get(setNumber);
+  if (artifact.set !== setNumber || !authored) return false;
+  const mock = withIeltsListeningLegacyReplacementTranscript(withIeltsListeningProductionTranscript(authored));
+  if (setNumber === 1) {
+    auditSet1ListeningEvidenceArtifact({ root, mock, artifact });
+  } else {
+    const reviewPath = 'config/ielts-harness/academic-reviews/set-4-objective-review.json';
+    if (artifact.academicReview?.path !== reviewPath) return false;
+    const academicReview = JSON.parse(fs.readFileSync(path.join(root, reviewPath), 'utf8'));
+    auditListeningEvidenceArtifact({ root, mock, academicReview, artifact });
+  }
+  const review = artifact.independentReview;
+  if (artifact.reviewer?.kind !== review.reviewer.kind || artifact.reviewer?.id !== review.reviewer.id
+    || artifact.reviewedAt !== review.reviewedAt) return false;
+  const registryRows = new Map(questions.map(row => [row.question, row]));
+  const evidenceFields = ['part', 'responseKey', 'startSeconds', 'endSeconds', 'audiblePhrase', 'rationale'];
+  return artifact.evidence.every(row => {
+    const entry = registryRows.get(row.question);
+    if (!entry || !evidenceFields.every(field => entry[field] === row[field])) return false;
+    if (!review.scope.includes(`Q${row.question}`)) return true;
+    return row.method === 'EXACT_ASR_SLICE' && row.reviewStatus === 'APPROVED'
+      && entry.reviewer.kind === review.reviewer.kind
+      && entry.reviewer.id === review.reviewer.id
+      && entry.reviewedAt === review.reviewedAt;
+  });
+}
+
+function verifyMachineAlignmentEvidence(root, listening, expected, setNumber) {
+  const alignment = listening.machineAlignment;
   if (!verifyEvidenceFile(root, alignment)) return false;
   try {
     const report = JSON.parse(fs.readFileSync(path.resolve(root, alignment.evidencePath), 'utf8'));
+    if (alignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE_WITH_INDEPENDENT_ACADEMIC_REVIEW') {
+      return report.audio?.sha256 === expected.audioSha256
+        && report.transcript?.harnessTranscriptSha256 === expected.transcriptSha256
+        && verifyIndependentlyReviewedListening(root, report, setNumber, listening.questions);
+    }
     if (alignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE') {
-      return report.schemaVersion === 1
+      return !independentlyReviewedListeningMocks.has(setNumber)
+        && !report.independentReview
+        && report.schemaVersion === 1
         && report.status === 'PASS'
         && report.audio?.sha256 === expected.audioSha256
         && report.transcript?.harnessTranscriptSha256 === expected.transcriptSha256
@@ -122,7 +165,11 @@ function verifyMachineAlignmentEvidence(root, alignment, expected) {
         && report.evidence.every(item => Number.isFinite(item.startSeconds)
           && Number.isFinite(item.endSeconds) && item.endSeconds > item.startSeconds && nonempty(item.audiblePhrase));
     }
-    return report.schemaVersion === 1
+    return alignment.method == null
+      && Number.isFinite(alignment.wordErrorRate)
+      && Number.isFinite(alignment.maximumWordErrorRate)
+      && alignment.wordErrorRate <= alignment.maximumWordErrorRate
+      && report.schemaVersion === 1
       && report.releaseAuthorized === false
       && report.status === 'PASS'
       && report.audioSha256 === expected.audioSha256
@@ -229,11 +276,7 @@ function evidenceCoverage(material, record, root) {
     && record.listening.machineAlignment?.status === 'PASS'
     && record.listening.machineAlignment?.audioSha256 === audioSha256
     && record.listening.machineAlignment?.transcriptSha256 === material.listeningTranscriptSha256
-    && (record.listening.machineAlignment.method === 'Q1_Q40_AUDIBLE_EVIDENCE'
-      || (Number.isFinite(record.listening.machineAlignment?.wordErrorRate)
-        && Number.isFinite(record.listening.machineAlignment?.maximumWordErrorRate)
-        && record.listening.machineAlignment.wordErrorRate <= record.listening.machineAlignment.maximumWordErrorRate))
-    && verifyMachineAlignmentEvidence(root, record.listening.machineAlignment, listeningBinding),
+    && verifyMachineAlignmentEvidence(root, record.listening, listeningBinding, material.set),
   );
   const reading = Boolean(
     exactQuestions(record.reading?.questions)

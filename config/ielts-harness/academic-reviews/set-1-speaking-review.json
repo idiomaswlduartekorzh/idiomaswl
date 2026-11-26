@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "set": 1,
+  "mockId": "set-1",
+  "scope": "Independent academic review of the Speaking prompts in the base mock",
+  "status": "APPROVED",
+  "reviewedAt": "2026-11-25",
+  "reviewer": {
+    "kind": "academic-agent",
+    "id": "/root/edicion"
+  },
+  "canonicalSource": "src/data/mocks/ielts-set-1.ts",
+  "formatContract": "docs/ielts-guided-sets-1-20.md",
+  "specVersion": "ielts-public-2026-10-20",
+  "binding": {
+    "speakingSha256": "ea00959bcdf0b3811d9ed0afbc63d3cfc2f710fe69deb72ae96dc93275c25120"
+  },
+  "method": "I read all three existing prompts and every follow-up against the speaking format recorded in the repository. I did not author or edit these prompts. I checked the candidate-facing mock data and printable worksheet against the same source.",
+  "checks": {
+    "threeOrderedParts": {
+      "result": "PASS",
+      "questionIds": ["sp1", "sp2", "sp3"],
+      "evidence": "Section 10 contains three response fields in order. The directions ask for a personal interview lasting 4–5 minutes, an individual long turn in a 3–4 minute part, and a 4–5 minute discussion. The long turn includes one minute to prepare and one to two minutes to speak."
+    },
+    "part1Breadth": {
+      "result": "PASS",
+      "questionId": "sp1",
+      "evidence": "The five entries cover work or study, hometown, and everyday food. The hometown entry first asks where the speaker comes from, then what they like about it. The cooking question lets someone who dislikes cooking give a reason of their own. The food question elicits a routine and can be answered by someone who never cooks."
+    },
+    "part2CueCard": {
+      "result": "PASS",
+      "questionId": "sp2",
+      "evidence": "The speaker describes one visit to a friend or family member at work. The three bullet points locate the visit, establish its purpose and ask what happened. The final instruction, “and explain how you felt about the experience”, gives the speaker something to develop after recounting the events. The card and preparation time support an uninterrupted individual account."
+    },
+    "part3Breadth": {
+      "result": "PASS",
+      "questionId": "sp3",
+      "evidence": "The five follow-ups ask which careers appeal to young people, why enjoying work matters, how satisfaction compares with salary, how work may change, and whether staying in one job is preferable to changing frequently. The enjoyment and salary questions reward different reasoning. Someone can value enjoyment highly and still explain when a reliable salary would take priority."
+    },
+    "part2ToPart3TopicContinuity": {
+      "result": "PASS",
+      "questionIds": ["sp2", "sp3"],
+      "evidence": "After describing one person's workplace, the speaker is asked what kinds of jobs young people find attractive and why. They can use an observation from the visit to start their answer, then discuss a wider group. The future-of-work and job-changing questions also make sense whoever the person visited was."
+    },
+    "examAppropriatePrompts": {
+      "result": "PASS",
+      "questionIds": ["sp1", "sp2", "sp3"],
+      "evidence": "The interview invites short personal answers, the card invites narrative and reflection, and the discussion invites comparisons, predictions and reasons. Each can be answered in ordinary language. The discussion of salary asks what people value and does not require disclosing anyone's income. The card assumes a remembered visit and does not assume the candidate has held a job."
+    }
+  },
+  "deliveryObservations": {
+    "publicMockData": "sanitizeIeltsMock preserves the instructions, five interview entries, full cue card and five discussion entries exactly as authored.",
+    "fullMockRoute": "/examenes/ielts/practica/set-1",
+    "anonymousBrowser": "On the local server, starting the full mock opened the “Empieza a preparar IELTS” access dialog. Closing it returned to the introduction. No candidate response was submitted.",
+    "recorderImplementation": "The base mock renderer offers optional preparation notes and one response recording per part. Its recording limits are five, two and five minutes. The Part 2 card gives the preparation instruction in writing. The base prompt supplies no separate examiner round-off question.",
+    "printableWorksheet": "The generated Speaking worksheet keeps the Part 2 heading, timing instructions, workplace prompt, three bullets and final instruction about feelings together on page 2 of 2. The same card is complete on page 22 of the 26-page full mock and on page 1 of the single-part worksheet. The five interview and five discussion entries are retained."
+  },
+  "releaseAuthorized": false
+}

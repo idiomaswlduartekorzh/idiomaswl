@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "status": "PENDING_AUTHENTICATED_BROWSER_REVIEW",
+  "reviewedAt": "2026-11-26T00:07:50.838Z",
+  "reviewer": {
+    "kind": "ux-agent",
+    "id": "codex/experiencia-ielts-browser-20261125"
+  },
+  "checkoutBaseCommit": "76ba7c05cb6656729b07ecc2afe62b94363c698a",
+  "browserReview": {
+    "status": "PENDING_AUTHENTICATED_BROWSER_REVIEW",
+    "browser": "Google Chrome 158.0.8127.38",
+    "baseUrl": "http://127.0.0.1:3306",
+    "mode": "Normal navigation, fresh anonymous profiles",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "scope": "Observed both current set intros, start controls, registration gates and return links. The authenticated runner was unavailable in these sessions.",
+    "screenshotsDirectory": {
+      "relativeTo": "repository root",
+      "path": "docs/previews/ielts-academico/ux-sets-2-4"
+    }
+  },
+  "automatedContractTest": {
+    "path": "tests/ielts-mock-experience.test.mjs",
+    "sha256": "a728fb98353a708011645d063284159928a101d4f4349b80a01be0d0ea9514df",
+    "status": "PASS",
+    "tests": 3,
+    "scope": "Canonical 40-set content, runner source contract and draft serialization. Browser interactions after authenticated start still require observation."
+  },
+  "completionDependency": "An authenticated test learner with active IELTS access must repeat both viewports for each set, including draft reload, timer, Writing chart, Speaking controls and the pre-submission contact summary.",
+  "sets": [
+    {
+      "set": 2,
+      "mockId": "set-2",
+      "route": "/examenes/ielts/practica/set-2",
+      "contentSha256": "ef879d4442a16b155078fa3b00b382b8624990282fabab2111ddf60bfa0c81a5",
+      "observations": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "httpStatus": 200,
+          "title": "IELTS Academic Set 2",
+          "introStats": [
+            "4",
+            "SECCIONES ACTIVAS",
+            "85",
+            "RESPUESTAS",
+            "164",
+            "MINUTOS"
+          ],
+          "introSectionLabels": [
+            "Listening",
+            "Listening",
+            "Listening",
+            "Listening",
+            "Reading",
+            "Reading",
+            "Reading",
+            "Writing",
+            "Writing",
+            "Speaking"
+          ],
+          "pageWidth": {
+            "width": 1440,
+            "scrollWidth": 1440
+          },
+          "clickedControl": "Empezar examen",
+          "observedGate": "Empieza a preparar IELTS",
+          "registrationPath": "/registro?path=exam&language=ingles&exam=ielts&plan=exam-free&next=%2Fexamenes%2Fielts%2Fpractica%2Fset-2",
+          "closingGateReturnedToIntro": true,
+          "screenshots": [
+            {
+              "filename": "set-2-1440-entrada.png",
+              "sha256": "c1bab14e9a949dd0ffe9eb01b39874400144d173f69603a13f982c8913944beb"
+            },
+            {
+              "filename": "set-2-1440-acceso.png",
+              "sha256": "c4aca699d86c3e87fba9faf2f6041099323d0550dd5c1da7ee9f56f5bcf1fd2a"
+            }
+          ],
+          "consoleLog": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "httpStatus": 200,
+          "title": "IELTS Academic Set 2",
+          "introStats": [
+            "4",
+            "SECCIONES ACTIVAS",
+            "85",
+            "RESPUESTAS",
+            "164",
+            "MINUTOS"
+          ],
+          "introSectionLabels": [
+            "Listening",
+            "Listening",
+            "Listening",
+            "Listening",
+            "Reading",
+            "Reading",
+            "Reading",
+            "Writing",
+            "Writing",
+            "Speaking"
+          ],
+          "pageWidth": {
+            "width": 390,
+            "scrollWidth": 390
+          },
+          "clickedControl": "Empezar examen",
+          "observedGate": "Empieza a preparar IELTS",
+          "registrationPath": "/registro?path=exam&language=ingles&exam=ielts&plan=exam-free&next=%2Fexamenes%2Fielts%2Fpractica%2Fset-2",
+          "closingGateReturnedToIntro": true,
+          "screenshots": [
+            {
+              "filename": "set-2-390-entrada.png",
+              "sha256": "9d81cfcb4aaebe22a3c047974456e9ac9ea3f77ad342e1c992578fa90221596b"
+            },
+            {
+              "filename": "set-2-390-acceso.png",
+              "sha256": "efcb781d22166293c4baa6d09152360bfce362aaaced876a803a50528b2ac091"
+            }
+          ],
+          "consoleLog": []
+        }
+      ],
+      "status": "PENDING_AUTHENTICATED_BROWSER_REVIEW",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "anonymousStartOpensRegistration": true,
+        "registrationPreservesReturnRoute": true,
+        "closingAccessDialogRestoresIntro": true
+      },
+      "unverifiedAfterStart": [
+        "fourSkillTabsAvailable",
+        "writingRendersTwoSeparateTasks",
+        "writingChartVisibleAndLegible",
+        "speakingRendersThreeOrderedParts",
+        "speakingRecordingLimitsVisible",
+        "draftIsVersionScopedAndRestores",
+        "timerUsesAbsoluteDeadline",
+        "leadCapturePrecedesSubmission",
+        "leadCaptureSummaryVisibleBeforeSend",
+        "mobileSkillTabsUseTwoColumnGrid"
+      ]
+    },
+    {
+      "set": 4,
+      "mockId": "set-4",
+      "route": "/examenes/ielts/practica/set-4",
+      "contentSha256": "19c62778e7e77bd86d75ab3db469579121f4bf3f3a7dde13eea602548603847e",
+      "observations": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "httpStatus": 200,
+          "title": "IELTS Academic Set 4",
+          "introStats": [
+            "4",
+            "SECCIONES ACTIVAS",
+            "85",
+            "RESPUESTAS",
+            "164",
+            "MINUTOS"
+          ],
+          "introSectionLabels": [
+            "Listening",
+            "Listening",
+            "Listening",
+            "Listening",
+            "Reading",
+            "Reading",
+            "Reading",
+            "Writing",
+            "Writing",
+            "Speaking"
+          ],
+          "pageWidth": {
+            "width": 1440,
+            "scrollWidth": 1440
+          },
+          "clickedControl": "Empezar examen",
+          "observedGate": "Empieza a preparar IELTS",
+          "registrationPath": "/registro?path=exam&language=ingles&exam=ielts&plan=exam-free&next=%2Fexamenes%2Fielts%2Fpractica%2Fset-4",
+          "closingGateReturnedToIntro": true,
+          "screenshots": [
+            {
+              "filename": "set-4-1440-entrada.png",
+              "sha256": "5ac6ac00d8eecad8ce24d5895c7d98b7a943420c9a9085c53e55d3fd7e8616b3"
+            },
+            {
+              "filename": "set-4-1440-acceso.png",
+              "sha256": "cd5345548a32893fac1e11f88a70cb20d0c3ecc1ffa812efd349db3fafcb5fab"
+            }
+          ],
+          "consoleLog": []
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "httpStatus": 200,
+          "title": "IELTS Academic Set 4",
+          "introStats": [
+            "4",
+            "SECCIONES ACTIVAS",
+            "85",
+            "RESPUESTAS",
+            "164",
+            "MINUTOS"
+          ],
+          "introSectionLabels": [
+            "Listening",
+            "Listening",
+            "Listening",
+            "Listening",
+            "Reading",
+            "Reading",
+            "Reading",
+            "Writing",
+            "Writing",
+            "Speaking"
+          ],
+          "pageWidth": {
+            "width": 390,
+            "scrollWidth": 390
+          },
+          "clickedControl": "Empezar examen",
+          "observedGate": "Empieza a preparar IELTS",
+          "registrationPath": "/registro?path=exam&language=ingles&exam=ielts&plan=exam-free&next=%2Fexamenes%2Fielts%2Fpractica%2Fset-4",
+          "closingGateReturnedToIntro": true,
+          "screenshots": [
+            {
+              "filename": "set-4-390-entrada.png",
+              "sha256": "da0491b87452d4528bfc7c20b5a7a5cf9fc2fe1bc2f1eeb7c76ba4907e54dd19"
+            },
+            {
+              "filename": "set-4-390-acceso.png",
+              "sha256": "efcb781d22166293c4baa6d09152360bfce362aaaced876a803a50528b2ac091"
+            }
+          ],
+          "consoleLog": []
+        }
+      ],
+      "status": "PENDING_AUTHENTICATED_BROWSER_REVIEW",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "anonymousStartOpensRegistration": true,
+        "registrationPreservesReturnRoute": true,
+        "closingAccessDialogRestoresIntro": true
+      },
+      "unverifiedAfterStart": [
+        "fourSkillTabsAvailable",
+        "writingRendersTwoSeparateTasks",
+        "writingChartVisibleAndLegible",
+        "speakingRendersThreeOrderedParts",
+        "speakingRecordingLimitsVisible",
+        "draftIsVersionScopedAndRestores",
+        "timerUsesAbsoluteDeadline",
+        "leadCapturePrecedesSubmission",
+        "leadCaptureSummaryVisibleBeforeSend",
+        "mobileSkillTabsUseTwoColumnGrid"
+      ]
+    }
+  ],
+  "reportSha256": "fd776b4d5163bd37cb80e8d4595d0b1010128feccdb4dff25bf4933e875138e9"
+}

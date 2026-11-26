@@ -4,13 +4,20 @@ La producción y conservación de audio se controlan por separado en [Producció
 
 El harness convierte el inventario de los 20 sets en un proceso de release reproducible. Separa las comprobaciones automáticas de la aprobación académica: un archivo existente, una coincidencia léxica o una clave que coincide consigo misma nunca hacen que un set quede listo.
 
-Estado productivo: Sets 1–20 están `RELEASE_READY` y se publican desde `main` en
-`https://www.idiomaswl.com/examenes/ielts`. El cierre del 12 de septiembre de 2026
-confirmó el hub, los 20 runners, los 20 MP3, 800 preguntas de Listening, los 20
-visuales de Writing, Speaking Parts 1–3, captura obligatoria del lead y el reporte de
-bandas. La expansión 21–40 se rige por
-[el blueprint de fábrica](./ielts-mock-factory-blueprint.md) y permanece sin
-autorización de consumo de ElevenLabs.
+## Revisión del 25 de noviembre de 2026
+
+El inventario de los 20 simulacros guiados reconoce 17 expedientes con aprobación humana final. Los tres expedientes abiertos tienen estas condiciones de cierre.
+
+| Set | Estado del harness | Evidencia pendiente |
+| --- | --- | --- |
+| 1 | `READY_FOR_HUMAN_REVIEW` | Una persona independiente debe revisar la versión actual y firmar el recibo de publicación. Listening tiene evidencia Q1–Q40 y las tres partes de Speaking cuentan con una revisión académica vinculada a las consignas. |
+| 2 y 4 | `NEEDS_FULL_EVIDENCE` | Falta recorrer el examen con una cuenta de alumno habilitada para comprobar el cronómetro, la restauración del borrador y el flujo de entrega. La entrada y la pantalla de acceso se comprobaron en escritorio y móvil. Después corresponde la revisión humana final. |
+
+Los 20 MP3 se verificaron contra sus recibos de publicación. El control general reconocía la denominación inicial de la evidencia audible y omitía la ampliación que documenta revisión académica independiente en los sets 1 y 4. Para estos dos expedientes ahora ejecuta el mismo cotejo específico del audio, el guion, los tiempos, el paquete académico y sus preguntas. La revisión académica de agente queda atribuida a su autor. En concreto, ese es el origen registrado de las preguntas 11 y 12 del Set 1 y de las preguntas 28 a 30 del Set 4. [Verificación de audio](../scripts/lib/ielts-listening-audible-evidence.mjs) · [Revisión de Speaking del Set 1](../config/ielts-harness/academic-reviews/set-1-speaking-review.json) · [Recorrido de los sets 2 y 4](../config/ielts-harness/ux-runtime-sets-2-4-2026-11-25.json).
+
+Las 40 prácticas de la biblioteca Academic y los 20 expedientes evaluados por este harness tienen alcances distintos. Para las explicaciones públicas, la prueba en navegador recorre las cuatro habilidades y los controles de contenido comprueban también la tutoría de 800 decisiones de Reading y 800 de Listening. [Blueprint pedagógico](./ielts-explanations-blueprint.md) · [Comparación visual](./previews/ielts-academico/README.md).
+
+En septiembre de 2026 se documentó una versión previa de los 20 sets. Los estados anteriores describen aquel corte y las huellas que se revisaron entonces.
 
 ## Estados
 
@@ -39,7 +46,7 @@ Todo cambio en contenido, clave, audio o visual produce una huella nueva. Las ap
    npm run scaffold:ielts-evidence -- --set=1 --output-json=/ruta/set-1-evidence.json
    ```
 
-3. Completar Listening Q1–Q40 con timecodes, frase audible, resultado ASR y revisión humana. Completar Reading Q1–Q40 con pasaje, párrafo, extracto y justificación. Revisar ambas tareas de Writing, fijar una clave independiente y ejecutar QA móvil/escritorio.
+3. Completar Listening Q1–Q40 con tiempos, frase audible, resultado ASR y el expediente de la revisión independiente identificado en el registro. Completar Reading Q1–Q40 con pasaje, párrafo, extracto y justificación. Revisar ambas tareas de Writing, fijar una clave independiente y ejecutar QA móvil/escritorio.
 
    Cuando exista una salida Whisper JSON con segmentos y tiempos, convertirla en evidencia automática con:
 
@@ -69,7 +76,7 @@ El modo `inventory` termina correctamente aunque existan bloqueos y genera la co
 
 ## Criterio mínimo de evidencia
 
-- Listening: un solo registro por Q1–Q40, timecodes, frase audible y decisión humana; además, QA técnico y alineación automática ASR ligados al hash del MP3 y del guion.
+- Listening exige una fila por pregunta, tiempos, frase audible y origen de la revisión. La verificación técnica y el cotejo automático de voz se vinculan a las huellas del MP3 y del guion. La firma de publicación humana se comprueba en su propio expediente.
 - Reading: un solo registro por Q1–Q40 con ubicación y razonamiento ligados al hash del pasaje y de la clave.
 - Writing: Task 1 compara visual, título, unidades, fechas, leyenda y legibilidad con la consigna; Task 2 revisa integridad y modalidad de respuesta.
 - Clave: fixture externo al código operativo, hash fijo y revisor humano identificado.

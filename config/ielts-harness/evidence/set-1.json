@@ -1281,7 +1281,7 @@
     ]
   },
   "speaking": {
-    "status": "PENDING",
+    "status": "APPROVED",
     "binding": {
       "speakingSha256": "ea00959bcdf0b3811d9ed0afbc63d3cfc2f710fe69deb72ae96dc93275c25120"
     },
@@ -1294,12 +1294,12 @@
       "examAppropriatePrompts": true
     },
     "reviewer": {
-      "kind": "agent",
-      "id": "codex-primary-speaking-review"
+      "kind": "academic-agent",
+      "id": "/root/edicion"
     },
-    "reviewedAt": "2026-09-09",
-    "evidencePath": "config/ielts-harness/speaking-semantic-review.json",
-    "evidenceSha256": "115a5434865da48c9eb7145721f20d8a8479d8cf6be2a0ca01056c3554e215b8"
+    "reviewedAt": "2026-11-25",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-1-speaking-review.json",
+    "evidenceSha256": "5f1330e974da3bd666360bb481c80fe3033c63d2736a3c6b4b19d01b8a4ecd93"
   },
   "objectiveKey": {
     "status": "APPROVED",

@@ -1081,3 +1081,7 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 ### 25 de noviembre de 2026 — revisión del piloto de skimming para IELTS Reading
 
 La rama `codex/revision-skimming-ielts` reúne el ejemplo comentado, el método de lectura y las devoluciones del ejercicio de árboles. Las cuatro capturas permiten revisar el tono antes de continuar con las demás lecciones. Estado `EN_VALIDACION`. [Ver el antes y el después](previews/ielts-skimming/README.md).
+
+### 25 de noviembre de 2026 — IELTS Academic, revisión editorial de las cuatro habilidades
+
+La rama `codex/ielts-academico-calidad-20261125` reúne el piloto de skimming, las mejoras de las cuatro habilidades y la tutoría posterior al intento de los 20 simulacros guiados. La comprobación usa el catálogo de 40 sets, los controles de extensión de los modelos de Writing y el recorrido en navegador publicado con la rama. El harness distingue los 17 expedientes con firma final, el Set 1 pendiente de revisión humana y los sets 2 y 4 pendientes del recorrido autenticado. [Galería de la rama](./previews/ielts-academico/README.md) · [Estado de los expedientes](./ielts-harness.md).

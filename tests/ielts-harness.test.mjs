@@ -4,7 +4,9 @@ import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 import { createHash } from 'node:crypto';
-import { evaluateSet, evidenceScaffold, releaseFingerprint } from '../scripts/lib/ielts-harness-core.mjs';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { evaluateSet, evidenceScaffold, hydrateRegistry, releaseFingerprint } from '../scripts/lib/ielts-harness-core.mjs';
 
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 const human = id => ({ kind: 'human', id });
@@ -240,6 +242,76 @@ test('machine alignment fields must agree with the hashed ASR report', () => {
     assert.equal(result.state, 'NEEDS_FULL_EVIDENCE');
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('the general harness recognizes only the complete, independently reviewed Listening packages', async t => {
+  const repo = fileURLToPath(new URL('../', import.meta.url));
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-reviewed-listening-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  for (const directory of ['config', 'public', 'tests']) {
+    fs.symlinkSync(path.join(repo, directory), path.join(root, directory), 'dir');
+  }
+  const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
+  const inventoryPath = path.join(root, 'materials.json');
+  execFileSync(process.execPath, ['--experimental-strip-types', '--no-warnings',
+    path.join(repo, 'scripts/audit-ielts-materials.mjs'), `--output=${inventoryPath}`]);
+  const materials = read('materials.json').sets;
+  const records = hydrateRegistry(read('config/ielts-harness/evidence-registry.json'), root).sets;
+
+  for (const set of [1, 4]) {
+    await t.test(`Set ${set} real recording, ASR sources and independent review scope`, () => {
+      const current = materials.find(row => row.set === set);
+      const record = records.find(row => row.set === set);
+      const original = read(record.listening.machineAlignment.evidencePath);
+      const result = evaluateSet(current, record, root);
+      assert.equal(result.coverage.listening, true);
+      const pendingRelease = { ...record, releaseApproval: { status: 'PENDING' } };
+      assert.equal(evaluateSet(current, pendingRelease, root).releaseReady, false);
+
+      const repairedQuestion = set === 1 ? 11 : 28;
+      const candidate = () => structuredClone(record);
+      const rejects = (changed, label) =>
+        assert.equal(evaluateSet(current, changed, root).coverage.listening, false, label);
+      for (const [label, mutate] of [
+        ['unknown method with a similar name', row => { row.machineAlignment.method += '_EXTRA'; }],
+        ['less specific method for the repaired package', row => { row.machineAlignment.method = 'Q1_Q40_AUDIBLE_EVIDENCE'; }],
+        ['missing evidence file', row => { row.machineAlignment.evidencePath = 'absent.json'; }],
+        ['stale evidence digest', row => { row.machineAlignment.evidenceSha256 = 'stale'; }],
+        ['registry phrase differs from the recording', row => { row.questions[0].audiblePhrase += ' changed'; }],
+        ['reassigned reviewer on a repaired row', row => { row.questions.find(q => q.question === repairedQuestion).reviewer.id = 'someone-else'; }],
+      ]) {
+        const changed = candidate();
+        mutate(changed.listening);
+        rejects(changed, label);
+      }
+
+      for (const [label, mutate, method] of [
+        ['missing independent review', artifact => { delete artifact.independentReview; }],
+        ['removed review and downgraded method', artifact => { delete artifact.independentReview; }, 'Q1_Q40_AUDIBLE_EVIDENCE'],
+        ['another review package', artifact => { artifact.independentReview.artifactPackageSha256 = '0'.repeat(64); }],
+        ['missing reviewed question', artifact => { artifact.independentReview.scope.pop(); }],
+        ['reassigned package reviewer', artifact => { artifact.reviewer.id = 'someone-else'; }],
+        ['withdrawn review on a repaired question', artifact => { artifact.evidence.find(q => q.question === repairedQuestion).reviewStatus = 'PENDING'; }],
+        ['stale published audio', artifact => { artifact.audio.sha256 = '0'.repeat(64); }],
+        ['stale transcript', artifact => { artifact.transcript.harnessTranscriptSha256 = '0'.repeat(64); }],
+        ['missing ASR source', artifact => { artifact.asr.globalSourcePath = 'absent.json'; }],
+        ['incomplete forty-question coverage', artifact => { artifact.evidence.pop(); }],
+        ['changed source timecode', artifact => { artifact.evidence[0].sourceAsr.startSeconds += 0.3; }],
+      ]) {
+        const changed = candidate();
+        const core = structuredClone(original);
+        delete core.artifactSha256;
+        mutate(core);
+        // Update both carrier digests so each failure exercises the evidence itself.
+        const bytes = JSON.stringify({ ...core, artifactSha256: sha256(JSON.stringify(core)) });
+        const evidencePath = `changed-set-${set}.json`;
+        fs.writeFileSync(path.join(root, evidencePath), bytes);
+        Object.assign(changed.listening.machineAlignment, { evidencePath, evidenceSha256: sha256(bytes) });
+        if (method) changed.listening.machineAlignment.method = method;
+        rejects(changed, label);
+      }
+    });
   }
 });
 
