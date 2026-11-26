@@ -5,6 +5,22 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Speaking C1 y piloto de dilemas — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. La tarjeta Speaking del nivel C1 de inglés abre dos
+  ejercicios. Improvisation enlaza al banco existente de 20 preguntas y
+  Speaking Dilemmas abre un debate sobre mérito académico e impacto profesional
+  con cuatro tarjetas de vocabulario y un modelo de respuesta oral.
+- Pasaron los catálogos de Práctica e Improvisa, ESLint de las rutas editadas,
+  la línea base y TypeScript en GitHub Actions, y la compilación de Vercel.
+  El recorrido público pasó en escritorio y móvil, incluida la selección
+  con teclado, la apertura del modelo y el acceso al banco de improvisación.
+- Vercel publicó `main@e9b1029bada447b5159a5d7cf4f7e5549ad60b8c` en
+  `dpl_J6i2znWGnh3Vd4eU2x3Qb7bXipyU` (`READY`). Verificados
+  [Speaking C1](https://www.idiomaswl.com/practica/ingles/c1/habla) y
+  [el dilema](https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas).
+  La prueba de producción pasó con 49 rutas y 17 audios.
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
