@@ -17,6 +17,110 @@ Fecha de corte: 25 de agosto de 2026.
 - El recorrido en navegador pasó a 320, 390, 768, 1020 y 1440 píxeles. Se probaron el selector con teclado y con JavaScript desactivado, el modo oscuro, los tres diálogos, la primera actividad y los 18 rótulos de la lámina. La guía de nueve páginas se renderizó para revisar los ejemplos impresos.
 - La revisión visual se entrega en el mismo borrador. Queda pendiente la calificación de las respuestas abiertas documentada el 19 de noviembre.
 
+## Dilemas de Speaking en inglés A1–C2 — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. Los seis niveles de inglés tienen 20 dilemas cada uno.
+  Se añadieron 100 fichas para A1, A2, B1, B2 y C2. El catálogo C1 y su piloto
+  conservan sus URL. La duración sugerida y la tarea oral cambian con el nivel.
+  Las glosas de A1 y A2 aparecen en español y los ejemplos en inglés.
+- Los controles verificaron 120 fichas, 1.920 entradas con ejemplos, 360 modelos
+  distintos y tres posturas por dilema. Pasaron TypeScript, ESLint y los controles
+  de Práctica, Improvisa y Habla acompañada.
+- Vercel publicó `main@26aa55a02a7e56f259d7fd9781354a30db3fcf92` en
+  `dpl_FoS1UNmC7FXJkdB7HtgH5nUXV2bj` (`READY`). El dominio público sirvió las
+  120 fichas. El recorrido de móvil verificó los tres modelos por separado en
+  cada nivel. La prueba de producción pasó con 49 rutas y 17 audios.
+
+## Speaking C1 y piloto de dilemas — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. La tarjeta Speaking del nivel C1 de inglés abre dos
+  ejercicios. Improvisation enlaza al banco existente de 20 preguntas y
+  Speaking Dilemmas abre un debate sobre mérito académico e impacto profesional
+  con cuatro tarjetas de vocabulario y un modelo de respuesta oral.
+- Pasaron los catálogos de Práctica e Improvisa, ESLint de las rutas editadas,
+  la línea base y TypeScript en GitHub Actions, y la compilación de Vercel.
+  El recorrido público pasó en escritorio y móvil, incluida la selección
+  con teclado, la apertura del modelo y el acceso al banco de improvisación.
+- Vercel publicó `main@e9b1029bada447b5159a5d7cf4f7e5549ad60b8c` en
+  `dpl_J6i2znWGnh3Vd4eU2x3Qb7bXipyU` (`READY`). Verificados
+  [Speaking C1](https://www.idiomaswl.com/practica/ingles/c1/habla) y
+  [el dilema](https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas).
+  La prueba de producción pasó con 49 rutas y 17 audios.
+
+- Revisión del dilema. Los candidatos son estudiantes de último año y el
+  impacto ocurre durante una práctica supervisada. Las 16 expresiones tienen un
+  ejemplo debajo de la definición. Vercel publicó
+  `main@402ea98393ef4fdf963aba4d91c19b7dfdc53017` en
+  `dpl_9bpBbX8iBPiQ38QSaa6Q9gb87eDm` (`READY`). El recorrido público verificó
+  el nuevo caso, los ejemplos, su contraste en modo claro y oscuro y el modelo
+  en escritorio y móvil.
+
+- Segunda revisión. La pregunta compara el desempeño académico durante la
+  carrera con el desempeño en las prácticas del último semestre. Cada postura
+  tiene un modelo desplegable que usa el vocabulario de las tarjetas. Vercel
+  publicó `main@49b98f5c7d5dc00781df949b0e34bac34b1c6802` en
+  `dpl_ECmZpbekC6rrXkEaxhpi4RKV39sP` (`READY`). Pasaron la compilación y el
+  recorrido público en escritorio y móvil, incluida la apertura y el cierre
+  independiente de los dos modelos.
+
+- Modelo de postura intermedia. Explica qué evidencia inclinaría la decisión
+  hacia A o B y cómo resolver un empate, con expresiones de las cuatro tarjetas.
+  Vercel publicó `main@b7975368cd933997b203ee5544cf07e70ac443fb` en
+  `dpl_EwpMfMJVojRKLDJxMdCaGs63618F` (`READY`). Los tres modelos se abrieron
+  por separado con ratón y teclado en el sitio público. Pasaron el recorrido
+  en escritorio y móvil y la prueba de producción de 49 rutas y 17 audios.
+
+- Colección de 20 dilemas C1. La tarjeta Speaking Dilemmas abre
+  [el catálogo](https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas/temas).
+  El piloto conserva su URL y las 19 fichas nuevas comparten su formato. Se
+  verificaron 320 ejemplos y 60 modelos distintos con lenguaje de las cuatro
+  tarjetas. Vercel publicó `main@54ca1b979f85fc34b4b987dc2eecffd6bd6af69b` en
+  `dpl_6ZuFdWykHM6WmLmmntKdF4BpTP5E` (`READY`). Pasaron TypeScript, la
+  compilación completa, las 20 fichas públicas, la navegación móvil y la
+  prueba de producción de 49 rutas y 17 audios.
+
+## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
+
+- Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/chess-kids-english-20261125@1cfc747e`, base `origin/main@c4e8e2c7`.
+  Integrada por squash en el [PR #68](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/68).
+- Alcance. Traducir la página de Ajedrez Kids, su demostración interactiva y la
+  práctica de Matecraft, incluidos los mensajes que aparecen durante un puzzle.
+  Rutas `/kids/ingles-ajedrez` y `/kids/ingles-ajedrez/practica`.
+- Archivos compartidos. Navegación, enlace de salto, botón flotante de WhatsApp
+  y componentes de Kids, con inglés limitado a las rutas de ajedrez. Sin
+  migraciones, variables, dependencias nuevas ni cambios al banco de posiciones.
+- Validación. [Content integrity](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45729521068)
+  pasó la línea base, el catálogo, TypeScript y la compilación completa. Chrome
+  de escritorio y WebKit táctil verificaron la carga, las pistas, las capturas,
+  el mate en uno y en dos y la recuperación del progreso.
+- Producción. `main@612425dcb63c67e278f0e923f64a6c38046f936b` en el
+  [despliegue de Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/GE69G2duKASPfYRkCHV1VxG46V3p)
+  con estado exitoso y comprobado en `www.idiomaswl.com`. Ambas páginas
+  respondieron HTTP 200 y el recorrido inglés pasó en Chrome y WebKit móvil.
+  Una sesión abierta con la versión en español conservó su puzzle resuelto
+  tras recargar en inglés y actualizar su caché. La prueba pública del sitio
+  pasó las 49 rutas y los 17 audios protegidos.
+
+## Biblioteca interna de libros — 25 de noviembre de 2026
+
+- Trabajo `admin-books-italiano-a1-20261125`, responsable Codex. Rama
+  `codex/admin-books-italiano-a1`, creada desde `origin/main@c4e8e2c79`.
+  Estado: `LISTO_PARA_INTEGRAR`; [PR #69](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/69)
+  abierto; falta integración y comprobación en producción.
+- El menú lateral del centro operativo añade **Libros**. Su primera ficha guarda
+  *Progetto Italiano A1* con portada propia, PDF del estudiante (272 páginas),
+  PDF con soluciones (372 páginas) y fuente editable. Los tres archivos están en
+  Drive privado; no se añadieron PDF grandes al repositorio ni al directorio
+  público del sitio. [Registro y permisos](admin-books.md).
+- Pasaron TypeScript, ESLint del panel, `check:practica-catalog`,
+  `check:site-navigation`, `check:production-baseline`,
+  `check:admin-exam-copy` y el build completo de 5.368 páginas. Sin migraciones,
+  variables nuevas ni cambios de acceso del panel. Next 16.4.3 mostró un aviso
+  de actualización de seguridad; se deja para una actualización específica.
+- La aprobación del libro para venta sigue pendiente de lectura final del autor
+  y prueba física de imprenta. Integrar la biblioteca no cambia ese estado.
+
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 
 - Trabajo `preparacion-tutor-examenes-20261124`, responsable Codex. Estado `DESPLEGADO`.

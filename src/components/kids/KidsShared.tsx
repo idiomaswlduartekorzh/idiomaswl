@@ -13,11 +13,13 @@ export function kidsWhatsApp(message: string) {
 
 export function KidsBreadcrumbs({
   items,
+  lang = 'es',
 }: {
   items: Array<{ label: string; href?: string }>;
+  lang?: 'es' | 'en';
 }) {
   return (
-    <nav className={styles.breadcrumbs} aria-label="Migas de pan">
+    <nav className={styles.breadcrumbs} aria-label={lang === 'en' ? 'Breadcrumb' : 'Migas de pan'}>
       <ol>
         {items.map((item, index) => (
           <li key={`${item.label}-${index}`}>
@@ -64,25 +66,29 @@ export function KidsCta({
   title,
   text,
   message,
+  lang = 'es',
   secondaryHref = '/kids',
-  secondaryLabel = 'Ver WeLearn Kids',
+  secondaryLabel = lang === 'en' ? 'Explore WeLearn Kids' : 'Ver WeLearn Kids',
 }: {
   title: string;
   text: string;
   message: string;
+  lang?: 'es' | 'en';
   secondaryHref?: string;
   secondaryLabel?: string;
 }) {
   return (
     <section className={styles.finalCta} aria-labelledby="kids-final-cta">
       <div>
-        <p className={styles.eyebrow}>Información para madres, padres y acudientes</p>
+        <p className={styles.eyebrow}>
+          {lang === 'en' ? 'Information for parents and guardians' : 'Información para madres, padres y acudientes'}
+        </p>
         <h2 id="kids-final-cta">{title}</h2>
         <p>{text}</p>
       </div>
       <div className={styles.ctaActions}>
         <a className={styles.primaryButton} href={kidsWhatsApp(message)} target="_blank" rel="noopener noreferrer">
-          Consultar por WhatsApp
+          {lang === 'en' ? 'Message us on WhatsApp' : 'Consultar por WhatsApp'}
         </a>
         <Link className={styles.secondaryButton} href={secondaryHref}>
           {secondaryLabel}
