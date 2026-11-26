@@ -4,7 +4,7 @@ import styles from '../speaking.module.css'
 
 export const metadata: Metadata = {
   title: 'Speaking Dilemmas C1 — What should count as merit? | WeLearn',
-  description: 'Weigh academic achievement against the impact of a supervised placement with C1 vocabulary, short examples and a model answer.',
+  description: 'Weigh academic performance against final-semester placement performance with C1 vocabulary, short examples and two model answers.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas' },
 }
 
@@ -61,8 +61,8 @@ export default function SpeakingDilemmaPage() {
           <h1>What should count as merit?</h1>
           <p className="wlp-hero-lead">
             Two final-year public health students are up for the same university award.
-            Which should carry more weight when choosing the winner: academic achievement
-            or the impact a student had during a supervised work placement?
+            When choosing the winner, which should carry more weight: academic performance
+            throughout their studies or performance during their final-semester placements?
           </p>
         </header>
 
@@ -72,15 +72,15 @@ export default function SpeakingDilemmaPage() {
             <label className={styles.option}>
               <input type="radio" name="position" value="academic" />
               <span>
-                <strong>A. Academic achievement</strong>
-                <span>One student published a peer-reviewed study on missed appointments. Other teams can test the method, but clinics have yet to act on the findings.</span>
+                <strong>A. Academic performance</strong>
+                <span>One student excelled throughout the degree and published a peer-reviewed study on missed appointments. Clinics have yet to act on the findings.</span>
               </span>
             </label>
             <label className={styles.option}>
               <input type="radio" name="position" value="professional" />
               <span>
-                <strong>B. Impact during a placement</strong>
-                <span>During a supervised placement, the other student led a pilot that reduced missed appointments at two clinics. It’s unclear whether the results would hold elsewhere.</span>
+                <strong>B. Final-semester placement</strong>
+                <span>In their final semester, the other student led a pilot during a supervised placement. It reduced missed appointments at two clinics. It’s unclear whether the results would hold elsewhere.</span>
               </span>
             </label>
             <label className={styles.option}>
@@ -117,8 +117,9 @@ export default function SpeakingDilemmaPage() {
         <details className={styles.model}>
           <summary>Reveal model answer · Option A</summary>
           <p>
-            I&rsquo;d give the award to the researcher. For me, the deciding factor is whether other teams can
-            <strong> build on the findings</strong>. If the method is transparent and the results are
+            I&rsquo;d give the award to the student with the stronger academic record. They performed well
+            throughout the degree, and other teams can <strong>build on the findings</strong> of their study.
+            If the method is transparent and the results are
             <strong> replicable</strong>, the study could influence practice well beyond those two clinics.
           </p>
           <p>
@@ -130,6 +131,26 @@ export default function SpeakingDilemmaPage() {
           <p>
             <strong>All things considered</strong>, I&rsquo;d give more weight to methodological <strong>rigour</strong> this
             year. If independent clinics could confirm similar gains from the pilot, I might vote differently.
+          </p>
+        </details>
+
+        <details className={styles.model}>
+          <summary>Reveal model answer · Option B</summary>
+          <p>
+            I&rsquo;d give the award to the student who led the clinic pilot. For me, a placement shows whether
+            someone can <strong>follow through on a plan</strong> when other people depend on them. There&rsquo;s
+            real <strong>accountability</strong> there because the clinics can check their appointment records
+            and see whether the pilot made a difference.
+          </p>
+          <p>
+            <strong>Granted</strong>, the other student&rsquo;s academic <strong>track record</strong> and the
+            <strong> rigour</strong> of their research deserve credit. <strong>Even so</strong>, fewer patients
+            missed appointments at two clinics. That&rsquo;s the kind of result I&rsquo;d want the award to recognise.
+          </p>
+          <p>
+            <strong>All things considered</strong>, I&rsquo;d choose option B. I&rsquo;d still want to know whether
+            those gains <strong>hold up</strong> over time and whether the approach is <strong>transferable</strong> to
+            clinics with fewer resources.
           </p>
         </details>
       </div>
