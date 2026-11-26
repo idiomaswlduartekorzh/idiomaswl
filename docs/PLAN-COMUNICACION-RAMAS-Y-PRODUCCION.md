@@ -7,17 +7,26 @@ Fecha de corte: 25 de agosto de 2026.
 
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
-- Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `EN_VALIDACION`.
-  Rama `codex/chess-kids-english-20261125`, base `origin/main@c4e8e2c7`.
+- Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/chess-kids-english-20261125@1cfc747e`, base `origin/main@c4e8e2c7`.
+  Integrada por squash en el [PR #68](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/68).
 - Alcance. Traducir la página de Ajedrez Kids, su demostración interactiva y la
   práctica de Matecraft, incluidos los mensajes que aparecen durante un puzzle.
   Rutas `/kids/ingles-ajedrez` y `/kids/ingles-ajedrez/practica`.
 - Archivos compartidos. Navegación, enlace de salto, botón flotante de WhatsApp
   y componentes de Kids, con inglés limitado a las rutas de ajedrez. Sin
   migraciones, variables, dependencias nuevas ni cambios al banco de posiciones.
-- Validación local. Pasaron la línea base, el catálogo y la práctica en Chrome
-  de escritorio y WebKit táctil. Se comprobaron la carga, las pistas, los
-  indicadores de captura, el mate en uno y en dos y la recuperación del progreso.
+- Validación. [Content integrity](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45729521068)
+  pasó la línea base, el catálogo, TypeScript y la compilación completa. Chrome
+  de escritorio y WebKit táctil verificaron la carga, las pistas, las capturas,
+  el mate en uno y en dos y la recuperación del progreso.
+- Producción. `main@612425dcb63c67e278f0e923f64a6c38046f936b` en el
+  [despliegue de Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/GE69G2duKASPfYRkCHV1VxG46V3p)
+  con estado exitoso y comprobado en `www.idiomaswl.com`. Ambas páginas
+  respondieron HTTP 200 y el recorrido inglés pasó en Chrome y WebKit móvil.
+  Una sesión abierta con la versión en español conservó su puzzle resuelto
+  tras recargar en inglés y actualizar su caché. La prueba pública del sitio
+  pasó las 49 rutas y los 17 audios protegidos.
 
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 
