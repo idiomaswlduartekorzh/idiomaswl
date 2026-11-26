@@ -4,7 +4,7 @@ import styles from '../speaking.module.css'
 
 export const metadata: Metadata = {
   title: 'Speaking Dilemmas C1 — What should count as merit? | WeLearn',
-  description: 'Debate academic achievement and professional impact in English with a C1 vocabulary toolkit and a model answer.',
+  description: 'Weigh academic achievement against the impact of a supervised placement with C1 vocabulary, short examples and a model answer.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/c1/habla/dilemas' },
 }
 
@@ -12,37 +12,37 @@ const vocabulary = [
   {
     title: 'Nouns',
     terms: [
-      ['rigour', 'care and precision in how work is done'],
-      ['track record', 'evidence of past performance'],
-      ['proxy', 'an indirect measure of something'],
-      ['accountability', 'being answerable for decisions and results'],
+      ['rigour', 'care and precision in how work is done', 'The study shows methodological rigour.'],
+      ['track record', 'evidence of past performance', 'The team has a track record of delivering results.'],
+      ['proxy', 'an indirect measure of something', 'Attendance is one proxy for access to care.'],
+      ['accountability', 'being answerable for decisions and results', 'Clear reporting improves accountability.'],
     ],
   },
   {
     title: 'Phrasal verbs',
     terms: [
-      ['bear out a claim', 'show that a claim is true'],
-      ['follow through on a plan', 'carry a plan to completion'],
-      ['hold up under scrutiny', 'remain convincing when examined closely'],
-      ['build on a finding', 'use a finding as a basis for further work'],
+      ['bear out a claim', 'show that a claim is true', 'The follow-up data bear out her claim.'],
+      ['follow through on a plan', 'carry a plan to completion', 'The team followed through on its plan.'],
+      ['hold up under scrutiny', 'remain convincing when examined closely', 'The results held up under scrutiny.'],
+      ['build on a finding', 'use a finding as a basis for further work', 'Two clinics built on that finding.'],
     ],
   },
   {
     title: 'Adjectives',
     terms: [
-      ['substantiated', 'supported by evidence'],
-      ['replicable', 'able to be repeated with similar results'],
-      ['transferable', 'useful in a different setting'],
-      ['contingent on', 'dependent on a particular condition'],
+      ['substantiated', 'supported by evidence', 'The claim was substantiated by the audit.'],
+      ['replicable', 'able to be repeated with similar results', 'Are these results replicable in larger clinics?'],
+      ['transferable', 'useful in a different setting', 'That approach is transferable to other settings.'],
+      ['contingent on', 'dependent on a particular condition', 'The rollout is contingent on funding.'],
     ],
   },
   {
     title: 'Connectors',
     terms: [
-      ['Granted, …', 'acknowledge a valid opposing point'],
-      ['Even so, …', 'keep your point despite that concession'],
-      ['Insofar as …', 'limit a claim to the extent it is true'],
-      ['All things considered, …', 'give your verdict after weighing both sides'],
+      ['Granted, …', 'acknowledge a valid opposing point', 'Granted, the pilot reached only two clinics.'],
+      ['Even so, …', 'keep your point despite that concession', 'Even so, the improvement is worth noting.'],
+      ['Insofar as …', 'limit a claim to the extent it is true', 'Insofar as the clinics are comparable, the findings are relevant.'],
+      ['All things considered, …', 'give your verdict after weighing both sides', 'All things considered, I’d back the clinic pilot.'],
     ],
   },
 ]
@@ -60,8 +60,9 @@ export default function SpeakingDilemmaPage() {
         <header className="wlp-hero wlp-hero--compact">
           <h1>What should count as merit?</h1>
           <p className="wlp-hero-lead">
-            Your university can name only one of two public health graduates Graduate of the Year.
-            What should carry more weight: academic achievement or professional impact?
+            Two final-year public health students are up for the same university award.
+            Which should carry more weight when choosing the winner: academic achievement
+            or the impact a student had during a supervised work placement?
           </p>
         </header>
 
@@ -72,14 +73,14 @@ export default function SpeakingDilemmaPage() {
               <input type="radio" name="position" value="academic" />
               <span>
                 <strong>A. Academic achievement</strong>
-                <span>One graduate published a peer-reviewed study with a method other teams can test. No clinics have used it yet.</span>
+                <span>One student published a peer-reviewed study on missed appointments. Other teams can test the method, but clinics have yet to act on the findings.</span>
               </span>
             </label>
             <label className={styles.option}>
               <input type="radio" name="position" value="professional" />
               <span>
-                <strong>B. Professional impact</strong>
-                <span>One graduate led a pilot that cut missed appointments at two clinics. It is unclear whether the results would hold elsewhere.</span>
+                <strong>B. Impact during a placement</strong>
+                <span>During a supervised placement, the other student led a pilot that reduced missed appointments at two clinics. It’s unclear whether the results would hold elsewhere.</span>
               </span>
             </label>
             <label className={styles.option}>
@@ -100,10 +101,11 @@ export default function SpeakingDilemmaPage() {
               <div key={title} className={styles.wordCard}>
                 <h3>{title}</h3>
                 <dl>
-                  {terms.map(([term, definition]) => (
+                  {terms.map(([term, definition, example]) => (
                     <div key={term}>
                       <dt>{term}</dt>
                       <dd>{definition}</dd>
+                      <dd className={styles.example}>{example}</dd>
                     </div>
                   ))}
                 </dl>
@@ -120,8 +122,8 @@ export default function SpeakingDilemmaPage() {
             <strong> replicable</strong>, the study could influence practice well beyond those two clinics.
           </p>
           <p>
-            <strong>Granted</strong>, the other graduate has a <strong>track record</strong> of delivering
-            tangible results. Fewer missed appointments matter to actual patients. <strong>Even so</strong>,
+            <strong>Granted</strong>, the other student has a <strong>track record</strong> of delivering
+            tangible results during their placement. Fewer missed appointments mean fewer delays in care. <strong>Even so</strong>,
             I&rsquo;d want to know whether the improvement would <strong>hold up</strong> in clinics with fewer
             staff and a different patient population.
           </p>
