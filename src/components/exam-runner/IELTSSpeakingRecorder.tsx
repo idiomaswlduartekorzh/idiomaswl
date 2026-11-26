@@ -129,6 +129,7 @@ export function IELTSSpeakingRecorder({
     }
 
     setState('requesting');
+    recordingStateCallbackRef.current?.(true);
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
         audio: {
@@ -138,6 +139,10 @@ export function IELTSSpeakingRecorder({
           channelCount: 1,
         },
       });
+      if (!mountedRef.current) {
+        stream.getTracks().forEach(track => track.stop());
+        return;
+      }
       streamRef.current = stream;
       chunksRef.current = [];
       elapsedRef.current = 0;
@@ -183,7 +188,6 @@ export function IELTSSpeakingRecorder({
 
       recorder.start(1000);
       setState('recording');
-      recordingStateCallbackRef.current?.(true);
     } catch (caught) {
       stopTracks();
       recordingStateCallbackRef.current?.(false);
@@ -236,7 +240,7 @@ export function IELTSSpeakingRecorder({
         {recording && state !== 'recording' ? (
           <span className="ielts-speak__rec-status">{english ? 'Audio ready' : 'Audio listo'} · {formatDuration(recording.durationSeconds)}</span>
         ) : state === 'idle' ? (
-          <span className="ielts-speak__rec-hint">{english ? 'Maximum' : 'Máximo'} {Math.floor(maxSeconds / 60)} {english ? 'minutes' : 'minutos'}</span>
+          <span className="ielts-speak__rec-hint">{english ? 'Recording limit' : 'Límite de grabación'} {Math.floor(maxSeconds / 60)} {english ? 'minutes' : 'minutos'}</span>
         ) : null}
       </div>
 

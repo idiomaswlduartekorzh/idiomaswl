@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   SummaryCompletionGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-summary-completion-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['summary-completion'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'summary-completion')!;
 const TITLE = 'Summary Completion: rebuild connected meaning';
 const DESCRIPTION = 'Read the complete summary, map its logical sequence, locate the equivalent passage section and copy the smallest exact answer that fits grammar and the stated limit.';
@@ -40,7 +42,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       accent="#0369a1"
-      directAnswer="Read the full summary before any gap. Use its sequence, reference words and grammar to locate one passage section, then copy only the missing words within the displayed limit."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'Connected summary meaning' },
         { label: 'Evidence', value: 'Summary logic + equivalent passage section' },
@@ -57,8 +59,7 @@ export default function Page() {
         { title: 'Predict and locate', text: 'Name the required grammar and meaning, then find the passage section with the same idea sequence.' },
         { title: 'Copy and reconnect', text: 'Insert the smallest exact span and reread the complete summary for cohesion and grammar.' },
       ]}
-      weakExample="Search each blank independently and copy the nearest repeated noun, even when it belongs to another stage of the summary."
-      strongExample="Use the summary’s cause-result sequence to locate the matching paragraph, then copy the two-word noun phrase that preserves both grammar and connected meaning."
+      tutorGuide={tutorGuide}
       practice={<SummaryCompletionGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<SummaryCompletionIndependentPractice passage={independentPassage} />}
       progressEngine={<SummaryCompletionProgressEngine />}

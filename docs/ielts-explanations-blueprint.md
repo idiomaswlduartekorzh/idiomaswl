@@ -1,21 +1,21 @@
 # Blueprint editorial de explicaciones IELTS Academic
 
-**Estado:** inventario y contrato de contenido, 19 de noviembre de 2026.
+Revisión editorial del 25 de noviembre de 2026. [Ver las capturas de las cuatro habilidades](./previews/ielts-academico/README.md).
 
 **Ámbito:** `/practica/ielts` y las rutas de práctica que enlaza.
-**Objetivo:** que una persona pueda entender qué le pide cada habilidad, cómo tomar una decisión y cómo aprender de un error, sin sustituir las lecciones que ya existen. El contenido público de las rutas IELTS está en inglés; este documento de trabajo está en español.
+**Objetivo:** que una persona pueda entender qué le pide cada habilidad, cómo tomar una decisión y cómo aprender de un error, sin sustituir las lecciones que ya existen. Las guías principales y las consignas de examen usan inglés. La rúbrica y la tutoría de las respuestas guiadas acompañan al alumno en español.
 
 ## 1. Qué existe y cuál es la fuente de verdad
 
-| Área | Ya disponible | Fuente que se conserva | Mejora concreta |
-| --- | --- | --- | --- |
-| Entrada IELTS y Academic | Cuatro habilidades, práctica por habilidad y mocks completos; 40 sets ensamblados | `src/app/(site)/practica/ielts/IELTSHubClient.tsx`, `academic/Content.tsx`, catálogo de sets | Una misma portada visual, cifras y enlaces consistentes; explicar la diferencia entre aprender y medir. |
-| Reading | Hub, 14 rutas de formatos, seis rutas de habilidades, Mixed Practice, 40 sets por habilidad | `reading/Content.tsx`, `reading/tipos-de-preguntas`, `reading/habilidades`, `reading/mixed-practice` | Añadir en el hub una explicación narrativa de cómo leer; mejorar la devolución de cada respuesta guiada. No copiar las 20 lecciones al hub. |
-| Writing | Task 1 con mapa de 14 rutas, Task 2 con tipos de ensayo, estructura, habilidades, tarea completa y 25 ensayos modelo; rúbrica | `academic/writing/task1`, `academic/writing/task2`, `academic/writing/rubrica` | Dar una entrada clara desde `/writing`; hacer que cada devolución señale el efecto de una decisión en el texto completo. No rehacer los cursos. |
-| Listening | 40 sets con audio y hoja PDF; primeros 20 también tienen clips de evidencia en el modo guiado | `listening/simulacros`, `src/data/ielts/guided-mock.ts` | Explicar los cuatro contextos, anticipación, distractores, formatos y revisión del audio. Convertir las justificaciones genéricas en explicaciones específicas. |
-| Speaking | 40 sets con prompts de las tres partes y grabación local; en los primeros 20 hay dos respuestas escritas de referencia para Part 2 | `speaking`, `src/data/ielts/guided-mock.ts` | Explicar cómo desarrollar una respuesta, los cuatro criterios y una rutina de autoescucha. Los audios de modelos están generados pero **no aprobados ni listos**: no ofrecer reproducción ni sugerir que se puede evaluar pronunciación por texto. |
-| Mock completo guiado | Sets 1–20 con respuesta y fragmento autorizado para las 40 preguntas de Listening y las 40 de Reading de cada set | `src/data/ielts/guided-mock.ts`, `src/data/ielts/guided-evidence.ts`, ruta `guiado` | Mejorar la explicación asociada a la evidencia y el distractor concreto. Los sets 21–40 no tienen ruta guiada: nunca mostrarles ese CTA. |
-| General Training | Introducción separada a Reading y Writing de cartas | `general-training` | Mantener la frontera Academic/GT visible. Este blueprint no promete 40 mocks GT. |
+| Área | Material de partida | Qué encuentra el estudiante en la rama de revisión |
+| --- | --- | --- |
+| Entrada IELTS y Academic | Índices y biblioteca de 40 sets ensamblados | Una entrada visual común para aprender una habilidad, practicarla en otro set o hacer el simulacro completo. |
+| Reading | Seis habilidades, 14 formatos, práctica mixta y ejercicios guiados e independientes | Un pasaje trabajado en cada recorrido, la pista que decide la respuesta, un error plausible y una ocasión para volver a probar el método. |
+| Writing | Curso Task 1 de 14 rutas, curso Task 2, 25 ensayos y rúbrica | Siete familias visuales con informes completos, cinco familias de consignas con argumentos comentados y revisión del mismo borrador frente al ejemplo. |
+| Listening | 40 sets con audio y prácticas guiadas para los primeros 20 | Una pregunta de escucha para cada parte, seis familias de tarea y devolución posterior al intento. Los cuatro fragmentos del taller proceden del MP3 existente del Set 2. |
+| Speaking | Biblioteca de 40 sets, consignas en tres partes, grabador local y referencias escritas | Tres preguntas del Set 1 para practicar la entrevista, el turno largo y la discusión. Se pueden grabar dos versiones de cada respuesta o practicar en voz alta sin micrófono. |
+| Simulacro guiado | 20 sets con 40 decisiones de Reading y 40 de Listening por set | Después del intento se puede revisar la decisión en español, volver al pasaje o a la grabación completa y seguir a la lección correspondiente. |
+| General Training | Introducción con Reading y Writing de cartas | Itinerario independiente. El alcance de esta revisión es Academic. |
 
 **Regla de conservación:** una ruta específica sigue siendo la fuente para su técnica. El hub orienta, enlaza y muestra un ejemplo de decisión; no reproduce lecciones enteras. Cuando una explicación necesite corrección, se corrige en el dato o componente canónico y se comprueba el enlace desde el hub.
 
@@ -62,7 +62,7 @@ La explicación pública del hub presenta esta secuencia con un pasaje imaginado
 
 ### 4.3 Catorce rutas de formatos existentes
 
-IELTS enumera 11 categorías numeradas de Academic Reading; WeLearn presenta 14 rutas porque separa Summary, Note, Table y Flow-chart Completion dentro de la categoría oficial de completion. Estas rutas ya están publicadas bajo `reading/tipos-de-preguntas`; cada una necesita su propio ejemplo y su propia explicación de error, no una definición copiada del índice.
+IELTS enumera 11 categorías numeradas de Academic Reading; WeLearn presenta 14 rutas porque separa Summary, Note, Table y Flow-chart Completion dentro de la categoría oficial de completion. Estas rutas ya están publicadas bajo `reading/tipos-de-preguntas`; cada una desarrolla un ejemplo propio y explica un error que podría cometer una persona al resolverlo.
 
 | Familia | Rutas | Qué debe explicar el ejemplo trabajado |
 | --- | --- | --- |
@@ -97,7 +97,7 @@ Las cuatro partes cambian de escenario: conversación práctica, exposición de 
 
 En completion se comprueba la forma de la frase y el límite impreso. En multiple choice se distingue “mencionado” de “elegido”; algunas opciones aparecen literalmente en el audio antes de que un hablante las descarte. En matching se identifica quién sostiene una idea y si cambió de opinión. En mapas y planos se establece punto de partida, orientación y siguiente referencia antes de seguir derecha o izquierda. Una explicación para estas tareas tiene que anclar la respuesta a un fragmento temporal, no solo repetir el texto transcrito.
 
-El primer intento puede hacerse de una vez para simular el hecho de que el test reproduce la grabación una sola vez. En la práctica de WeLearn se puede pausar y repetir para investigar. La devolución ideal pregunta: “¿oí la información equivocada, oí la correcta pero la escribí mal, o elegí la primera opción antes de la corrección?” Son problemas diferentes. Los primeros 20 sets tienen clips guiados; las justificaciones actuales reutilizan demasiado texto genérico y conviene editarlas a partir de cada clip aprobado. El resultado numérico es una estimación de estudio: los umbrales de banda pueden variar ligeramente entre versiones oficiales.
+El primer intento puede hacerse de una vez para simular el hecho de que el test reproduce la grabación una sola vez. En la práctica de WeLearn se puede pausar y repetir para investigar. La devolución ideal pregunta: “¿oí la información equivocada, oí la correcta pero la escribí mal, o elegí la primera opción antes de la corrección?” Son problemas diferentes. En los primeros 20 sets, la corrección relaciona la consigna, el intento y la frase registrada. Algunos recortes acaban justo antes de una confirmación. En esos casos el tutor señala el límite del fragmento y el alumno puede continuar en el audio completo. El resultado numérico es una estimación de estudio: los umbrales de banda pueden variar ligeramente entre versiones oficiales.
 
 ## 7. Speaking: hablar para alguien que escucha
 
@@ -109,12 +109,22 @@ Los cuatro criterios oficiales son fluidez y coherencia, vocabulario, rango y pr
 
 Los modelos escritos de Part 2 en sets guiados sirven para comparar desarrollo de ideas y están rotulados como perfiles pedagógicos aproximados. Sus audios generados no han pasado aprobación humana, por lo que la interfaz no debe reproducirlos todavía. Su eventual publicación requeriría revisión de naturalidad, claridad, duración, pronunciación y coherencia con el texto, además de comprobar que nadie los interprete como muestra oficial de una banda.
 
-## 8. Prioridades sin rehacer lo construido
+## 8. Cómo revisar una explicación con el alumno delante
 
-1. **Hecho en esta intervención:** portadas IELTS, Academic, Listening, Speaking y Writing alineadas con tokens y ancho compartidos; entrada detallada a Listening/Speaking; síntesis narrativa de Reading; enlaces y cifras de 40 sets corregidos; CTA guiado limitado a sets 1–20.
-2. **Siguiente mejora editorial:** auditar las devoluciones de los 1.600 ítems objetivos guiados (800 Listening y 800 Reading). Empezar por preguntas con más errores o distractores complejos. Mantener clave y evidencia aprobadas, añadir una razón específica y una trampa real. Un revisor de contenido comprueba cada pareja pregunta/evidencia/explicación antes de publicarla.
-3. **Siguiente mejora de producto:** hacer visible, desde el resultado de práctica por habilidad, la ruta de aprendizaje que responde al error. Por ejemplo, después de un fallo por word limit, enlazar esa lección; después de confundir un heading con un detalle, enlazar Matching Headings. No asignar una banda de Writing o Speaking a partir de un conteo o una grabación sin evaluación.
-4. **Auditoría visual posterior:** llevar progresivamente los interiores heredados de Reading, Task 1 y Task 2 al mismo contrato de superficies, foco, espaciado y móvil. La migración se hace ruta por ruta con una captura antes/después; no se sustituye el motor de ejercicios para conseguir paridad estética.
+En la muestra de *skimming*, una lectora escribe «water meters» en el margen. Es una nota comprensible si acaba de empezar el párrafo. Al llegar a la lectura de madrugada descubre qué quieren averiguar los ingenieros y revisa su nota. Una pregunta posterior le da un motivo para volver a «began checking». Ese recorrido es el modelo de voz. Conviene dejar visible el instante en que un detalle cambia lo que pensábamos. [Antes y después del piloto](./previews/ielts-skimming/README.md).
+
+En una tabla de Reading, el pasaje menciona dos refugios y varios materiales. Si el alumno recuerda «slate», se le puede pedir que mantenga un dedo sobre el nombre del refugio y que baje desde el encabezado del techo. Ya puede explicar dónde vio el material y comprobar si pertenece a esa casilla. En un juicio *Not Given* hace falta otro tipo de ayuda. ¿Qué dato tendría que añadir el autor para que la afirmación pudiera decidirse? En las 29 respuestas *Not Given* del banco guiado, la tutoría identifica la comparación, causa, fecha u otra relación que el texto deja abierta.
+
+En Writing resulta más fácil escuchar un consejo si se puede probar en una frase propia. Cuando el borrador afirma que Finlandia «spent the most», el alumno puede mirar el eje del gráfico, decidir si tiene un importe o un porcentaje y cambiar una sola frase. En Task 2 puede releer el segundo párrafo del ensayo sobre transporte tapando la introducción. Si el ejemplo también justificaría ensanchar la carretera, falta explicar por qué el tren resolvería mejor el problema en ese caso. Los siete informes completos de Task 1 y los 25 ensayos de Task 2 tienen controles permanentes de extensión. La rúbrica propone una revisión concreta para el mismo borrador.
+
+En Listening hace falta oír qué relación guardan dos intervenciones. Cuando la recepcionista ofrece un descuento, el cliente muestra interés en hacerse socio. La tarifa ofrecida, el interés del cliente y una inscripción confirmada son tres momentos diferentes. El taller permite escuchar, contestar, revisar las palabras exactas y repetir la pregunta. En Speaking el propio estudiante aporta la evidencia con su voz. En la segunda toma puede conservar la pregunta sobre el sueldo y precisar para quién sería decisivo un aumento. Solo después tiene sentido cambiar de pregunta para ver si puede trasladar esa manera de explicar.
+
+### Qué verifica la revisión
+
+- El recorrido de navegador parte del índice, abre las 21 rutas de Reading y prueba una decisión guiada de búsqueda y evidencia. En Writing comprueba que las siete figuras y las cinco familias de ensayo conducen a práctica. En Listening reproduce los cuatro audios y comprueba la corrección y el reintento. En Speaking comprueba los dos audios privados, el cambio de parte y la alternativa cuando el micrófono está bloqueado.
+- La batería de simulacros recorre los 800 ítems de cada habilidad objetiva. Verifica la procedencia de la evidencia, la ausencia de corrección si falta un intento, los grupos de respuestas en cualquier orden y los destinos de práctica. Las notas concretas de casos difíciles y las reglas por familia conviven en esta tutoría. Una comprobación automática de todos los ítems mide cobertura funcional.
+- El inventario de publicación examina por separado las huellas de los activos y la documentación académica de cada set. Sus estados y los expedientes que siguen abiertos figuran en el informe del harness. [Harness de los primeros 20 sets](./ielts-harness.md).
+- Con la aplicación en marcha, ejecutar `npm run check:ielts-learning -- --base=http://127.0.0.1:3000`. Para los datos, ejecutar `npm run test:ielts-guided`, `npm run check:ielts-task1` y `npm run check:ielts-task2`. La galería permite evaluar el tono y el resultado visual directamente. [Abrir las capturas](./previews/ielts-academico/README.md).
 
 ### Criterios para dar una explicación por terminada
 

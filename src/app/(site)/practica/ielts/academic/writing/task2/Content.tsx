@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import { ArrowRight, BookOpen, Braces, CheckCircle2, Clock3, FilePenLine, Headphones, Layers3, Route, Search, ShieldCheck, Wrench } from 'lucide-react';
 import task2Notes from '@/data/practica/podcasts/picking-the-task-2-lock';
 import EpisodeNotes from '@/components/practica/EpisodeNotes';
@@ -15,14 +16,6 @@ const BUILD_PATH = [
   { title: 'Final Review', detail: 'Check the instruction, position, paragraph logic and language.', href: '/practica/ielts/academic/writing/task2/revision-final', status: 'Complete lesson', icon: Wrench },
   { title: 'Complete Essay Practice', detail: 'Transfer every block to a timed 250+ word response.', href: '/practica/ielts/academic/writing/task2/tarea-completa', status: 'Live practice', icon: BookOpen },
 ];
-
-const QUESTION_TYPES = [
-  ['Opinion', 'opinion', 'Agree, disagree or evaluate an extent.'],
-  ['Discussion', 'discussion', 'Discuss both views and give your own opinion.'],
-  ['Problem–Solution', 'problem-solution', 'Analyse causes or problems and propose solutions.'],
-  ['Advantages–Disadvantages', 'advantages-disadvantages', 'Compare benefits and drawbacks, sometimes deciding which outweighs the other.'],
-  ['Direct Questions', 'direct-question', 'Answer two explicit questions completely and separately.'],
-] as const;
 
 const TOOLS = [
   // Las DIEZ tienen ya recorrido propio con los cuatro bloques del blueprint. Antes ocho eran
@@ -43,7 +36,7 @@ const TOOLS = [
   ['Critical final review', 'habilidades/critical-final-review', 'Check Task Response, logic, cohesion, vocabulary and grammar before finishing.'],
 ] as const;
 
-export default function Task2HubPage({ faqs }: { faqs: { question: string; answer: string }[] }) {
+export default function Task2HubPage({ faqs, children }: { faqs: { question: string; answer: string }[]; children: ReactNode }) {
   return (
     <div lang="en" className={styles.page}>
       <div className={styles.shell}>
@@ -51,7 +44,7 @@ export default function Task2HubPage({ faqs }: { faqs: { question: string; answe
         <header className={styles.hero}>
           <p className={styles.eyebrow}>IELTS Academic Writing Task 2</p>
           <h1>Build the essay. Adapt every paragraph to the question.</h1>
-          <p className={styles.heroLead}>This cluster separates the architecture of a complete essay from the skills that make each paragraph work. Follow the essay in order, study a specific question type, or strengthen one transferable writing tool.</p>
+          <p className={styles.heroLead}>Read the last line of the question first. Someone asking why a town lost its bus service wants a different paragraph from someone asking how the town could get it back. Try one of the <a href="#question-types">five questions below</a> before you choose your first reason.</p>
           <div className={styles.factGrid} aria-label="Official Task 2 facts">
             <div className={styles.fact}><strong>250+</strong><span>minimum words in the complete response</span></div>
             <div className={styles.fact}><strong>≈40 min</strong><span>recommended time for Task 2</span></div>
@@ -131,15 +124,15 @@ export default function Task2HubPage({ faqs }: { faqs: { question: string; answe
         </section>
 
         <section id="build-the-essay" className={styles.section} aria-labelledby="build-heading">
-          <div className={styles.sectionHeading}><p className={styles.kicker}>Path A · Build the essay</p><h2 id="build-heading">The response architecture</h2><p>A strong default is four paragraphs: introduction, two developed body paragraphs and conclusion. A third body paragraph is optional only when it adds a genuinely distinct, well-developed idea.</p></div>
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path A · Build the essay</p><h2 id="build-heading">Give each paragraph something to do</h2><p>Write your answer in a sentence you could defend. Use the introduction to tell the reader where you stand. Choose a reason for the first body paragraph, explain how it works and give one example that makes it visible. The next paragraph can add a reason, weigh an objection or answer the other part of the prompt. When you reach the conclusion, check whether your answer still follows from what you wrote.</p></div>
           <div className={styles.sequenceGrid}>
             {BUILD_PATH.map(({ title, detail, href, status, icon: Icon }, index) => <Link key={title} href={href} className={styles.sequenceCard}><span className={styles.sequenceNumber}>{String(index + 1).padStart(2, '0')}</span><Icon size={22} aria-hidden="true" /><h3>{title}</h3><p>{detail}</p><small>{status}</small></Link>)}
           </div>
         </section>
 
         <section id="question-types" className={styles.section} aria-labelledby="types-heading">
-          <div className={styles.sectionHeading}><p className={styles.kicker}>Path B · Study by question type</p><h2 id="types-heading">The blocks stay stable; their jobs change</h2><p>Each lesson shows how the thesis, Body 1, Body 2 and conclusion respond to a different instruction.</p></div>
-          <div className={styles.studyGrid}>{QUESTION_TYPES.map(([title, slug, detail]) => <Link key={slug} href={`/practica/ielts/academic/writing/task2/${slug}`} className={styles.studyCard}><span>Question type</span><h3>{title}</h3><p>{detail}</p><strong>Study this structure <ArrowRight size={15} /></strong></Link>)}</div>
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path B · Study by question type</p><h2 id="types-heading">What would you do with this question?</h2><p>Pick a prompt from the writing bank. Say what you would have to explain, then open the question underneath to test your idea against a possible example.</p></div>
+          {children}
         </section>
 
         <section id="transferable-skills" className={styles.section} aria-labelledby="tools-heading">

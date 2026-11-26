@@ -179,6 +179,8 @@ function recorrer(directorio, salida = []) {
 }
 
 const bancos = new Map()
+const informes = []
+const sesionCompleta = path.join(task1, 'tarea-completa', 'Content.tsx')
 
 for (const fichero of recorrer(task1)) {
   const codigo = fs.readFileSync(fichero, 'utf8')
@@ -197,6 +199,20 @@ for (const fichero of recorrer(task1)) {
   const ilegibles = []
 
   const visitar = (node) => {
+    if (fichero === sesionCompleta && ts.isVariableDeclaration(node) && node.name.getText() === 'SUPPORTED_FULL_TASKS') {
+      if (node.initializer && ts.isArrayLiteralExpression(node.initializer)) {
+        for (const fila of node.initializer.elements) {
+          if (!ts.isObjectLiteralExpression(fila)) {
+            failures.push('Task 1 completa: no se pudo leer un informe del banco que muestra la sesión.')
+            continue
+          }
+          const id = literal(propiedad(fila, 'id'))
+          const familia = literal(propiedad(fila, 'type'))
+          const texto = literal(propiedad(fila, 'model'))
+          informes.push({ id, familia, longitud: palabras(texto ?? '') })
+        }
+      }
+    }
     if (ts.isObjectLiteralExpression(node)) {
       const banco = leerBanco(node)
       if (!banco) {
@@ -361,6 +377,18 @@ for (const [unidad, campo] of [['procesos', 'modelParagraph'], ['mapas', 'modelS
   }
 }
 
+// Solo cuenta el cuerpo que la página muestra al abrir el modelo. El enunciado y el overview de ayuda van aparte.
+const familiasDeInforme = ['line', 'bar', 'pie', 'table', 'process', 'map', 'mixed']
+const familiasPublicadas = new Set(informes.map(informe => informe.familia))
+for (const familia of familiasDeInforme) {
+  if (!familiasPublicadas.has(familia)) failures.push(`Task 1 completa: falta un informe de la familia «${familia}».`)
+}
+if (new Set(informes.map(informe => informe.id)).size !== informes.length) failures.push('Task 1 completa: hay identificadores de informes repetidos.')
+for (const informe of informes) {
+  if (!informe.id) failures.push('Task 1 completa: hay un informe sin identificador de sesión.')
+  if (informe.longitud < 150) failures.push(`Task 1 completa/${informe.id}: el modelo publicado tiene ${informe.longitud} palabras. El mínimo es 150.`)
+}
+
 if (!bancos.size) {
   failures.push('No se encontró ningún banco de preguntas en Task 1. O se han borrado, o cambió su forma y esta comprobación se quedó ciega.')
 }
@@ -442,13 +470,14 @@ for (const [relativo, { preguntas, codigo }] of [...bancos].sort()) {
 }
 
 if (failures.length) {
-  console.error('IELTS Task 1 — el ejercicio se puede aprobar sin mirar el gráfico:')
+  console.error('IELTS Task 1 — revisión de ejercicios e informes completos:')
   for (const failure of failures) console.error(`- ${failure}`)
   process.exitCode = 1
 } else {
   const todas = [...bancos.values()].flatMap((banco) => banco.preguntas)
   const masLargas = todas.filter((pregunta) => pregunta.mia > pregunta.rival).length
   const maxVentaja = Math.max(...todas.map((pregunta) => pregunta.mia - pregunta.rival))
+  console.log(`Tarea 1 completa: ${informes.length} informes, ${familiasPublicadas.size} familias; el más corto tiene ${Math.min(...informes.map(informe => informe.longitud))} palabras.`)
   console.log(
     `IELTS Task 1: ${todas.length} preguntas en ${bancos.size} bancos. ` +
       `La correcta es la más larga en ${masLargas} (${Math.round((masLargas / todas.length) * 100)} %), ` +

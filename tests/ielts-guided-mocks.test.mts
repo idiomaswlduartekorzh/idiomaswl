@@ -5,10 +5,35 @@ import { getIeltsGuidedEvidence } from '../src/data/ielts/guided-evidence.ts';
 import {
   buildIeltsGuidedMock,
   getIeltsGuidedCorrectItemIds,
+  readingEvidenceParts,
   IELTS_GUIDED_MOCK_IDS,
   sanitizeIeltsGuidedIndex,
 } from '../src/data/ielts/guided-mock.ts';
 import { getMock } from '../src/data/mocks/index.ts';
+
+test('the guided trip table supplies the two printed costs and asks for the third', () => {
+  const mock = getMock('ielts', 'set-1');
+  assert.ok(mock);
+  const data = buildIeltsGuidedMock(mock, getIeltsGuidedEvidence('set-1'));
+  const item = data.listeningUnits.flatMap(unit => unit.items).find(question => question.number === 8);
+  assert.ok(item);
+  assert.match(item.frame, /accommodation, car rental and a _____/);
+  assert.equal(item.answer, 'flight');
+  assert.equal(item.maxWords, 1);
+  assert.equal(item.questionType, 'tablegroup');
+  assert.match(item.evidence.focus, /flight/i);
+});
+
+test('reading highlights whole answers, without treating a verdict as a quoted word', () => {
+  const mock = getMock('ielts', 'set-1')!;
+  const data = buildIeltsGuidedMock(mock, getIeltsGuidedEvidence('set-1'));
+  const original = data.readingUnits[0].items[0];
+  const excerpt = 'The carpenter took the car to the workshop.';
+  const item = { ...original, kind: 'fill' as const, answer: 'car', accepted: ['car'], evidence: { ...original.evidence, focus: excerpt } };
+  assert.deepEqual(readingEvidenceParts(item), { before: 'The carpenter took the ', focus: 'car', after: ' to the workshop.' });
+  const verdict = { ...item, answer: 'NO', accepted: ['no'], evidence: { ...item.evidence, focus: 'No one asked about wages.' } };
+  assert.equal(readingEvidenceParts(verdict).focus, verdict.evidence.focus);
+});
 
 test('all 20 IELTS guided mocks bind complete objective evidence and chronological verified audio segments', () => {
   assert.equal(IELTS_GUIDED_MOCK_IDS.length, 20);
@@ -258,6 +283,12 @@ test('guided Reading groups repeated task instructions instead of repeating them
   assert.match(coach, /className=\{styles\.readingTaskGroup\}/);
   assert.match(coach, /className=\{styles\.readingTaskHeader\}/);
   assert.match(coach, /readingEvidenceParts\(item\)/);
-  assert.match(coach, /item\.kind !== 'fill'/);
-  assert.match(coach, /La frase exacta del pasaje se subraya después, respuesta por respuesta/);
+  // Choice items retain the whole evidence passage. Completion highlights a literal answer.
+  const mock = getMock('ielts', 'set-3')!;
+  const data = buildIeltsGuidedMock(mock, getIeltsGuidedEvidence('set-3'));
+  const choice = data.readingUnits.flatMap(unit => unit.items).find(item => item.kind === 'choice')!;
+  assert.equal(readingEvidenceParts(choice).focus, choice.evidence.focus);
+  assert.match(coach, /Al verificar podrás comparar tu respuesta con las palabras del pasaje/);
+  assert.match(coach, /Releer el pasaje completo/);
+  assert.match(coach, /Escuchar lo que se dijo antes y después/);
 });

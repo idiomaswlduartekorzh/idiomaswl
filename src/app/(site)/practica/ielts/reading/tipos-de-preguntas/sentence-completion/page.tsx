@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   SentenceCompletionGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-sentence-completion-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['sentence-completion'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'sentence-completion')!;
 const TITLE = 'Sentence Completion: predict, locate and copy precisely';
 const DESCRIPTION = 'Learn to predict the missing grammar, locate an equivalent passage idea and copy the smallest exact answer that fits the displayed word limit.';
@@ -41,7 +43,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       accent="#0369a1"
-      directAnswer="Read the instruction first. Predict the missing grammatical form, locate the same idea in the passage and copy only the exact words needed to rebuild the sentence within the stated limit."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'Exact missing passage span' },
         { label: 'Evidence', value: 'Meaning + grammar + word limit' },
@@ -58,8 +60,7 @@ export default function Page() {
         { title: 'Locate the paraphrase', text: 'Find where the passage expresses the same relationship, then read enough context to reject nearby details.' },
         { title: 'Copy and rebuild', text: 'Insert the smallest exact span, count the submitted words and reread the completed sentence for natural grammar.' },
       ]}
-      weakExample="Copy a nearby phrase because it repeats one word from the sentence, even if it answers a different detail."
-      strongExample="Predict a two-word noun phrase, locate the equivalent passage sentence and copy only the missing phrase after checking grammar and the displayed limit."
+      tutorGuide={tutorGuide}
       practice={<SentenceCompletionGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<SentenceCompletionIndependentPractice passage={independentPassage} />}
       progressEngine={<SentenceCompletionProgressEngine />}

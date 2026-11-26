@@ -46,6 +46,7 @@ export type IeltsGuidedReferences = {
 };
 
 export type IeltsGuidedEvidence = {
+  paragraph?: string;
   before: string;
   focus: string;
   after: string;
@@ -83,6 +84,8 @@ export type IeltsGuidedObjectiveItem = {
   id: string;
   number: number;
   kind: 'fill' | 'choice';
+  questionType?: Question['type'];
+  maxWords?: number;
   prompt: string;
   frame: string;
   options?: readonly string[];
@@ -192,6 +195,23 @@ export function getIeltsGuidedCorrectItemIds(
   return result;
 }
 
+export function readingEvidenceParts(item: IeltsGuidedObjectiveItem) {
+  const excerpt = item.evidence.focus;
+  const full = { before: '', focus: excerpt, after: '' };
+  if (item.kind !== 'fill' || item.scoringGroup || /^(true|false|yes|no|not given)$/i.test(item.answer)) return full;
+  for (const candidate of [...item.accepted].sort((left, right) => right.length - left.length)) {
+    if (!candidate) continue;
+    const literal = candidate.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const match = new RegExp('(^|[^\\p{L}\\p{N}])(' + literal + ')(?![\\p{L}\\p{N}])', 'iu').exec(excerpt);
+    if (match) {
+      const start = match.index + match[1].length;
+      const end = start + match[2].length;
+      return { before: excerpt.slice(0, start), focus: excerpt.slice(start, end), after: excerpt.slice(end) };
+    }
+  }
+  return full;
+}
+
 function templateFrame(template: string, number: number) {
   const marker = `{{${number}}}`;
   const line = template.split('\n').find(value => value.includes(marker)) ?? template;
@@ -202,7 +222,7 @@ function templateFrame(template: string, number: number) {
     .trim();
 }
 
-function tableFrame(question: TableGroupQuestion, number: number) {
+function tableFrame(question: TableGroupQuestion, number: number, skill: string, setNumber: number) {
   for (const row of question.rows) {
     const targetIndex = row.findIndex(cell => typeof cell !== 'string' && cell.num === number);
     if (targetIndex < 0) continue;
@@ -211,6 +231,13 @@ function tableFrame(question: TableGroupQuestion, number: number) {
       .slice(0, 2)
       .join(' · ');
     const heading = question.headers[targetIndex] ?? 'Respuesta';
+    // In this guided cell three purchases are audible. Supply the two given
+    // items so a learner can identify the one missing purchase before answering.
+    const cell = row[targetIndex];
+    if (setNumber === 1 && skill === 'listening' && question.id === 'l1-table' && number === 8
+        && typeof cell !== 'string' && cell.answers.includes('flight')) {
+      return `${context} · ${heading}: accommodation, car rental and a _____`;
+    }
     return `${context ? `${context} · ` : ''}${heading}: _____`;
   }
   return `Pregunta ${number}: _____`;
@@ -220,6 +247,8 @@ function objectiveItem(input: {
   id: string;
   number: number;
   kind: IeltsGuidedObjectiveItem['kind'];
+  questionType: Question['type'];
+  maxWords?: number;
   prompt: string;
   frame: string;
   options?: readonly string[];
@@ -237,6 +266,7 @@ function objectiveItem(input: {
   const evidence: IeltsGuidedEvidence = {
     before: '',
     focus: sourceExcerpt,
+    paragraph: approved && 'paragraph' in input.evidenceRecord ? input.evidenceRecord.paragraph : undefined,
     after: '',
     status: approved ? 'approved-excerpt' : 'pending-independent-review',
   };
@@ -244,6 +274,8 @@ function objectiveItem(input: {
     id: input.id,
     number: input.number,
     kind: input.kind,
+    questionType: input.questionType,
+    maxWords: input.maxWords,
     prompt: input.prompt,
     frame: input.frame,
     options: input.options,
@@ -314,6 +346,8 @@ function flattenQuestion(
       id: `${skill}-${section.part}-${question.id}-${blank.num}`,
       number: blank.num,
       kind: 'fill',
+      questionType: question.type,
+      maxWords: blank.maxWords,
       prompt: question.groupLabel,
       frame: templateFrame(question.template, blank.num),
       answer: scoringGroupByNumber.get(blank.num)?.displayAnswer ?? blank.answers[0],
@@ -331,8 +365,10 @@ function flattenQuestion(
       id: `${skill}-${section.part}-${question.id}-${blank.num}`,
       number: blank.num,
       kind: 'fill',
+      questionType: question.type,
+      maxWords: blank.maxWords,
       prompt: question.groupLabel,
-      frame: tableFrame(question, blank.num),
+      frame: tableFrame(question, blank.num, skill, artifact.set),
       answer: blank.answers[0],
       accepted: blank.answers,
       skill,
@@ -364,6 +400,7 @@ function flattenQuestion(
         id: `${skill}-${section.part}-${question.id}-${number}`,
         number,
         kind: 'choice',
+        questionType: question.type,
         prompt: question.text,
         frame: `Selecciona una de las ${question.selectCount} respuestas correctas.`,
         options: question.options.map(option => `${option.letter} · ${option.text}`),
@@ -384,6 +421,7 @@ function flattenQuestion(
         id: `${skill}-${section.part}-${question.id}-${item.num}`,
         number: item.num,
         kind: 'choice',
+        questionType: question.type,
         prompt: question.groupLabel ?? 'Match each statement with the correct option.',
         frame: item.stem,
         options: question.endings.map(option => `${option.letter} · ${option.text}`),
@@ -404,6 +442,7 @@ function flattenQuestion(
       id: `${skill}-${section.part}-${question.id}-${numbers[0]}`,
       number: numbers[0],
       kind: 'choice',
+      questionType: question.type,
       prompt: question.text,
       frame: question.stimulus ?? 'Choose the correct answer.',
       options: question.options.map((value, index) => `${String.fromCharCode(65 + index)} · ${value}`),
@@ -420,6 +459,8 @@ function flattenQuestion(
       id: `${skill}-${section.part}-${question.id}-${numbers[0]}`,
       number: numbers[0],
       kind: 'fill',
+      questionType: question.type,
+      maxWords: question.maxWords,
       prompt: section.instructions,
       frame: question.text,
       answer: question.answers[0],

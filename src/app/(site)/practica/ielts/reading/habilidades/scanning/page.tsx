@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_SKILL_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import { ScanningIndependentPractice, ScanningPracticeEngine, ScanningProgressEngine } from '@/components/exam-practice/ScanningPracticeLab';
 import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 import { SCANNING_GUIDED_PASSAGE_ID, SCANNING_INDEPENDENT_PASSAGE_ID, getScanningPassage } from '@/data/practica-exams/ielts-reading-scanning-progress';
 
+const tutorGuide = READING_SKILL_GUIDES['scanning'];
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'scanning')!;
 const TITLE = 'Scanning: locate evidence without rereading the whole passage';
 const DESCRIPTION = 'Turn a question into searchable signals, find the likely evidence zone and read around the match before you commit to an answer.';
@@ -23,7 +25,7 @@ export default function Page() {
   return (
     <InternationalReadingSkillLesson
       slug="scanning" name="Scanning" title={TITLE} description={DESCRIPTION}
-      directAnswer="Scan only after you know what you are looking for. Search for a distinctive name, number, term or paraphrase, then read the full sentence and its immediate context."
+      directAnswer={tutorGuide.introduction}
       facts={[{ label: 'Input', value: 'Search signal' }, { label: 'Action', value: 'Locate + read' }, { label: 'Output', value: 'Exact evidence' }]}
       outcomes={[
         { title: 'Build a search signal', text: 'Reduce the question to a name, date, number, technical term, cause or scope word.' },
@@ -36,8 +38,7 @@ export default function Page() {
         { title: 'Move through the likely zone', text: 'Use your passage map and scan visually for the signal or a close paraphrase.' },
         { title: 'Read and verify', text: 'Read one sentence before and after the match, then test scope, polarity and word limit.' },
       ]}
-      weakExample="Starting again at Paragraph A every time a question asks for one date, name or local detail."
-      strongExample="Turn ‘When did the pilot expand?’ into the signals pilot + expand + date, scan the likely results paragraph, then read around the matching year."
+      tutorGuide={tutorGuide}
       practice={<ScanningPracticeEngine passage={guidedPassage} />}
       independentPracticeExperience={<ScanningIndependentPractice passage={independentPassage} />}
       progressEngine={<ScanningProgressEngine />}

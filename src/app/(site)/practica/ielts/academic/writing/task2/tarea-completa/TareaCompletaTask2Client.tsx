@@ -51,10 +51,10 @@ const GENERAL_CHECKS = [
 ];
 
 const CRITERIA = [
-  { code: 'TR', name: 'Task Response', desc: 'Did I answer every part of the prompt, with a position the reader can find?' },
-  { code: 'CC', name: 'Coherence and Cohesion', desc: 'Does the argument progress, and do the paragraphs and linkers carry it?' },
-  { code: 'LR', name: 'Lexical Resource', desc: 'Is the vocabulary varied and precise, or am I repeating the prompt?' },
-  { code: 'GRA', name: 'Grammatical Range and Accuracy', desc: 'Did I use a range of structures, and how often do errors interrupt meaning?' },
+  { code: 'TR', name: 'Task Response', desc: 'Read the last line of the prompt. Point to a sentence in your essay that answers each part. If an answer first appears in your conclusion, find a place to develop it in the body.' },
+  { code: 'CC', name: 'Coherence and Cohesion', desc: 'Read the sentence before your example and the one after it. Would the reader understand how the example supports that particular reason? Add the missing connection in your own words.' },
+  { code: 'LR', name: 'Lexical Resource', desc: 'Circle a word such as “better” or “important”. Could you name what changes for the people in your example, such as a shorter journey or a smaller bill?' },
+  { code: 'GRA', name: 'Grammatical Range and Accuracy', desc: 'Find a sentence with “because”, “if” or “although”. Read its main clause on its own. Give it a subject and a verb that agree, then check that the other clause expresses the relationship you meant.' },
 ];
 
 const PLAN_FIELDS = [
@@ -166,7 +166,7 @@ export default function TareaCompletaTask2Client() {
           <div className={styles.fact}><strong>{TASK2_PROMPT_BANK.length} prompts</strong><span>five per question family</span></div>
           <div className={styles.fact}><strong>40 minutes</strong><span>the time the task is designed for</span></div>
           <div className={styles.fact}><strong>250+ words</strong><span>every model answer clears the minimum</span></div>
-          <div className={styles.fact}><strong>No auto-band</strong><span>the page never reads your text</span></div>
+          <div className={styles.fact}><strong>Self-review</strong><span>compare your draft with a model</span></div>
         </div>
       </header>
 
@@ -179,7 +179,7 @@ export default function TareaCompletaTask2Client() {
           focus="Plan, write and review one complete essay under time."
           officialFormat="IELTS Academic Writing Task 2 is designed to take about 40 minutes and requires at least 250 words in response to a single prompt."
           welearnStrategy="WeLearn runs the whole flow: choose a prompt, plan it in five minutes, write against the clock, review your own text, and only then open the model."
-          answerCheck="Nothing here is marked automatically. A free text cannot be scored without being read, so the model is for comparison, not for grading."
+          answerCheck="Use the model and the four criteria to review your draft. Optional writing feedback can help you revise a sentence. The band estimates in this workshop are your own."
         />
       </section>
 
@@ -222,8 +222,8 @@ export default function TareaCompletaTask2Client() {
         <p className={styles.eyebrow}>Step 1 of 4 · Plan it</p>
         <h1>Decide the shape before the clock starts</h1>
         <p className={styles.heroLead}>
-          Five minutes is enough. Nothing in these boxes is checked or scored — the point is that you
-          are not inventing the structure while the clock runs. Your plan stays visible while you write.
+          Try spending a few minutes on the plan. This workshop starts its practice clock when you begin writing.
+          In the test, include planning and checking within your time for the task. Your notes will stay visible here while you write.
         </p>
       </header>
       <section className={styles.section}>
@@ -255,6 +255,7 @@ export default function TareaCompletaTask2Client() {
     <Shell>
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Step 2 of 4 · Write it</p>
+        <h1>{p.title}</h1>
         <div className={styles.timerRow}>
           <span className={`${styles.examTimer} ${timerTone}`}>{fmtTime(timeLeft)}</span>
           <span>{count} words {count < MIN_WORDS ? `· ${MIN_WORDS - count} to reach the minimum` : '· minimum reached'}</span>
@@ -285,9 +286,9 @@ export default function TareaCompletaTask2Client() {
 
         <textarea className={styles.essayWriter} rows={14} value={text} {...noAssist}
           aria-label="Your complete essay"
-          onChange={(event) => setText(event.target.value)}
+          onChange={(event) => { setText(event.target.value); setChecks({}); setBands({}); }}
           placeholder="Introduction · Body 1 · Body 2 · Conclusion" />
-        {p && <WritingFeedbackReview text={text} assignment={{
+        {p && <WritingFeedbackReview locale="en" text={text} assignment={{
           title: p.title,
           language: 'English',
           level: 'IELTS Academic',
@@ -297,7 +298,7 @@ export default function TareaCompletaTask2Client() {
         }} />}
 
         <div className={styles.workshopActions}>
-          <button type="button" className={styles.secondaryButton} onClick={() => setPhase('plan')}><ArrowLeft size={16} /> Back to the plan</button>
+          <button type="button" className={styles.secondaryButton} onClick={() => { setRunning(false); setPhase('plan'); }}><ArrowLeft size={16} /> Back to the plan</button>
           {/* Siempre presente. Antes desaparecía por debajo de 200 palabras y nada lo explicaba. */}
           <button type="button" onClick={() => { setRunning(false); setPhase('review'); }}>
             {count < MIN_WORDS ? `Finish anyway — ${count} words` : 'Finish and review'} <ArrowRight size={16} />
@@ -305,8 +306,8 @@ export default function TareaCompletaTask2Client() {
         </div>
         {count < MIN_WORDS && (
           <p className={styles.wordMeter}>
-            Task 2 asks for at least {MIN_WORDS} words. You can stop early, but a short answer loses marks
-            on Task Response before anything else is even read.
+            Task 2 requires at least {MIN_WORDS} words. If your draft feels short, pick the reason you
+            have explained least. A specific example can show the reader what it means in practice.
           </p>
         )}
       </section>
@@ -319,15 +320,20 @@ export default function TareaCompletaTask2Client() {
         <p className={styles.eyebrow}>Step 3 of 4 · Read your own text first</p>
         <h1>What to look for before you open the model</h1>
         <p className={styles.heroLead}>
-          The last three items are the mistakes this exact prompt tends to produce. Tick what is true of
-          your text. Nothing is blocked by the result — an unticked box is information, not a penalty.
+          Read the prompt and your draft together. Check the first four statements against your writing.
+          The last three describe possible mistakes in this particular essay. Mark each one once you have looked for it and made any change you need.
         </p>
       </header>
 
       <section className={styles.section}>
+        <PromptCard item={p} />
+        <div className={styles.completeParagraph}>
+          <strong>Your draft · {count} words</strong>
+          <p style={{ whiteSpace: 'pre-wrap' }}>{text || 'Return to the writing step to add your first paragraph.'}</p>
+        </div>
         <div className={styles.reviewGrid}>
           {allChecks.map((item, index) => (
-            <button key={item} type="button"
+            <button key={item} type="button" aria-pressed={Boolean(checks[item])}
               className={`${styles.option} ${checks[item] ? styles.correct : ''}`}
               onClick={() => setChecks((c) => ({ ...c, [item]: !c[item] }))}>
               <span>{checks[item] ? '✓' : '○'}</span>
@@ -335,17 +341,16 @@ export default function TareaCompletaTask2Client() {
             </button>
           ))}
         </div>
-        <p className={styles.wordMeter}>{ticked} of {allChecks.length} ticked.</p>
+        <p className={styles.wordMeter}>{ticked} of {allChecks.length} points reviewed.</p>
       </section>
 
       <section className={styles.section}>
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Your own estimate</p>
-          <h2>What would you give yourself, criterion by criterion?</h2>
+          <h2>Which sentence would you change first?</h2>
           <p>
-            IELTS weights these four equally. What you record here is <strong>your own judgement of your
-            own text</strong>: this page never reads your essay, so it cannot and does not award a band.
-            Comparing your estimate with the model is how you find out whether your judgement is calibrated.
+            The four criteria carry equal weight within this task. Try each check against a line of your draft.
+            If you use the numbers below, they record your own estimate. For worked revisions in Spanish, open the <Link href="/practica/ielts/academic/writing/rubrica">Writing rubric</Link>.
           </p>
         </div>
         <div className={styles.reviewGrid}>
@@ -358,7 +363,7 @@ export default function TareaCompletaTask2Client() {
                 </div>
                 <div className={styles.bandRow}>
                   {[5, 6, 7, 8, 9].map((b) => (
-                    <button key={b} type="button" aria-label={`${c.name}: ${b}`}
+                    <button key={b} type="button" aria-label={`${c.name}: ${b}`} aria-pressed={bands[c.code] === b}
                       className={`${styles.bandButton} ${bands[c.code] === b ? styles.bandButtonOn : ''}`}
                       onClick={() => setBands((v) => ({ ...v, [c.code]: b }))}>{b}</button>
                   ))}
@@ -370,7 +375,7 @@ export default function TareaCompletaTask2Client() {
         {Object.keys(bands).length === 4 && (
           <p className={styles.paragraphJob}>
             <strong>Average of your four estimates: {(Object.values(bands).reduce((a, b) => a + b, 0) / 4).toFixed(1)}</strong>
-            {' '}— this is your number, not a mark. Open the model and see whether you would still give it.
+            {' '}· Choose a paragraph in the model and compare how the two drafts develop the same idea.
           </p>
         )}
         <div className={styles.workshopActions}>
@@ -387,8 +392,8 @@ export default function TareaCompletaTask2Client() {
         <p className={styles.eyebrow}>Step 4 of 4 · Compare</p>
         <h1>Model answer · {p.modelWords} words</h1>
         <p className={styles.heroLead}>
-          Compare what each paragraph <em>does</em>, not the wording. Your sentences will be different;
-          the jobs should not be.
+          Pick one body paragraph from each draft. What example did you each choose, and which sentence
+          explains why it supports the claim? If the model uses different evidence, test your own choice against the exact words of the question.
         </p>
       </header>
 
@@ -412,6 +417,7 @@ export default function TareaCompletaTask2Client() {
         )}
 
         <div className={styles.workshopActions}>
+          <button type="button" onClick={() => setPhase('write')}>Revise my essay</button>
           <button type="button" className={styles.secondaryButton} onClick={() => setPhase('review')}><ArrowLeft size={16} /> Back to the review</button>
           <button type="button" onClick={() => start(p.id)}><RotateCcw size={16} /> Write this one again</button>
         </div>

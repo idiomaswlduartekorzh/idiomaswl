@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_SKILL_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import { ParaphraseGuidedPractice, ParaphraseIndependentPractice, ParaphraseProgressEngine } from '@/components/exam-practice/ParaphrasePracticeLab';
 import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 import { PARAPHRASE_GUIDED_PASSAGE_ID, PARAPHRASE_INDEPENDENT_PASSAGE_ID, getParaphrasePassage } from '@/data/practica-exams/ielts-reading-paraphrase-progress';
 
+const tutorGuide = READING_SKILL_GUIDES['parafrasis'];
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'parafrasis')!;
 const TITLE = 'Paraphrase recognition: compare meaning, not matching words';
 const DESCRIPTION = 'Learn to recognise equivalent meaning while controlling scope, cause, time, comparison, certainty and grammatical change.';
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return <InternationalReadingSkillLesson
     slug="parafrasis" name="Paraphrase recognition" title={TITLE} description={DESCRIPTION}
-    directAnswer="A valid paraphrase can change vocabulary and grammar, but it must preserve who, what, when, why, how much and how certain the original statement is."
+    directAnswer={tutorGuide.introduction}
     facts={[{ label: 'Compare', value: 'Meaning' }, { label: 'Control', value: 'Scope + logic' }, { label: 'Reject', value: 'Distortion' }]}
     outcomes={[
       { title: 'See beyond word matching', text: 'Recognise that reduce waiting times and shorten queues can express the same result.' },
@@ -35,8 +37,7 @@ export default function Page() {
       { title: 'Compare propositions', text: 'Ask whether both sentences make the same claim under the same conditions.' },
       { title: 'Run a distortion check', text: 'Reject any option that strengthens, weakens, reverses or invents information.' },
     ]}
-    weakExample="Choosing an option because it repeats the nouns from the passage, even though it changes ‘some residents’ to ‘all residents’."
-    strongExample="Accept ‘The trial may continue if demand remains high’ as equivalent to ‘Officials could extend the trial provided that demand stays strong’, because modality and condition are preserved."
+    tutorGuide={tutorGuide}
     practice={<ParaphraseGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<ParaphraseIndependentPractice passage={independentPassage} />}
     progressEngine={<ParaphraseProgressEngine />}

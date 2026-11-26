@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import InternationalQuestionTypePractice from '@/components/exam-practice/InternationalQuestionTypePractice';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
@@ -270,6 +271,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   if (!(rawSlug in TYPES)) notFound();
   const slug = rawSlug as Slug;
   const config = TYPES[slug];
+  const tutorGuide = READING_FORMAT_GUIDES[slug];
   const route = IELTS_READING_TYPES.find((item) => item.slug === slug)!;
   const isMatchingHeadings = slug === 'matching-headings';
   const isMatchingInformation = slug === 'matching-information';
@@ -321,16 +323,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     indexName="Question Types"
     lessonLabel="IELTS Academic Reading · Question-type lesson"
     name={config.name} title={config.title} description={config.description} accent={config.accent}
-    directAnswer={`${config.target}. Start from ${config.evidence.toLowerCase()}, and control the main risk: ${config.risk.toLowerCase()}.`}
+    directAnswer={tutorGuide.introduction}
     facts={[{ label: 'Target', value: config.target }, { label: 'Evidence', value: config.evidence }, { label: 'Main risk', value: config.risk }]}
-    outcomes={[
-      { title: 'Identify the task target', text: config.target },
-      { title: 'Locate the right evidence', text: config.evidence },
-      { title: 'Control the distractor', text: config.risk },
-    ]}
     method={config.method}
-    weakExample={config.weak}
-    strongExample={config.strong}
+    tutorGuide={tutorGuide}
     practice={guidedPassage
       ? <MatchingHeadingsGuidedPractice passage={guidedPassage} />
       : matchingInformationGuided

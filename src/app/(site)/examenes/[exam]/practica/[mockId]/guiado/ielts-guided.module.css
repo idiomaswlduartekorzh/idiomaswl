@@ -481,3 +481,9 @@
 :global([data-theme='dark']) .readingEvidence { background: #102a32; border-color: #28515a; }
 :global([data-theme='dark']) .readingEvidence p { color: #c6dbe1; }
 :global([data-theme='dark']) .modelCard { background: #2a2419; border-color: #665633; }
+
+.fullSource { margin-block-start: .8rem; }
+.fullSource summary { cursor: pointer; font-weight: 650; }
+.fullSource audio { display: block; width: min(100%, 30rem); margin-block-start: .75rem; }
+.feedback .lessonLink { display: inline-flex; align-items: center; gap: .35rem; margin-block-start: .65rem; font-size: .85rem; font-weight: 650; text-decoration: underline; text-underline-offset: .2em; }
+:global([data-theme='dark']) .feedback p { color: #d0d9e1; }

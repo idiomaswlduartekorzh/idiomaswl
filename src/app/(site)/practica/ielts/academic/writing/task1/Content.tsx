@@ -57,7 +57,7 @@ const SKILLS = [
     n: 2,
     label: 'Writing the overview',
     icon: '🔭',
-    desc: 'The most important paragraph: two sentences, no figures and the main trend. This is where many points are lost.',
+    desc: 'Give your reader the pattern they would miss in a list of figures. Practise choosing an overview and checking it against the visual.',
     href: '/practica/ielts/academic/writing/task1/overview',
     tag: 'Overall trend',
   },
@@ -184,7 +184,7 @@ export default function Task1HubPage() {
         <header className={styles.hero}>
           <p className={styles.eyebrow}>IELTS Academic Writing Task 1</p>
           <h1>Read the visual. Build one clear response.</h1>
-          <p className={styles.heroLead}>Separate response architecture from the visual-analysis tools used inside it. Follow the four-part WeLearn plan, practise one visual type, or strengthen a transferable data-writing skill.</p>
+          <p className={styles.heroLead}>Imagine describing the figure to someone who cannot see it. What would you tell them first? Choose one of the <a href="#visual-types">seven visual types</a> and try that sentence before you start listing numbers, places or stages.</p>
           <div className={styles.factGrid} aria-label="Official Task 1 facts">
             <div className={styles.fact}><strong>150+</strong><span>minimum words in the complete response</span></div>
             <div className={styles.fact}><strong>≈20 min</strong><span>recommended working time for Task 1</span></div>
@@ -262,12 +262,12 @@ export default function Task1HubPage() {
           </div>
           <div className={styles.pathGrid}>
             <article className={styles.pathCard}><span className={styles.cardLabel}>Official format</span><h3>Describe the visual accurately</h3><p>Write at least 150 words about the main features, comparisons or stages shown. IELTS does not prescribe paragraph names or a word count for each paragraph.</p></article>
-            <article className={styles.pathCard}><span className={styles.cardLabel}>WeLearn response strategy</span><h3>Build a readable evidence hierarchy</h3><p>Use Introduction, Overview, Body 1 and Body 2 as a reliable practice plan, then adapt grouping and language to the specific visual.</p></article>
+            <article className={styles.pathCard}><span className={styles.cardLabel}>WeLearn response strategy</span><h3>Give the reader a way into the figure</h3><p>Say what the visual measures or shows. Follow that introduction with the pattern a reader should remember. Once the overview is clear, two groups of details can show how you reached it.</p></article>
           </div>
         </section>
 
         <section className={styles.section} aria-labelledby="response-architecture">
-          <div className={styles.sectionHeading}><p className={styles.kicker}>Path A · Build the response</p><h2 id="response-architecture">The response architecture</h2><p>A third body paragraph is optional only for an unusually dense visual. It should never replace clear grouping.</p></div>
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Path A · Build the response</p><h2 id="response-architecture">How the overview earns its place</h2><p>In the map below, a park becomes a housing estate and a factory gives way to a school. You could spend the whole introduction naming buildings. Save the names for later. First tell the reader that several sites changed use. Then group the places you can compare across the two dates. The paragraph lengths below are suggestions for practising that sequence.</p></div>
           <div className={styles.sequenceGrid}>
             {RESPONSE_PLAN.map((item) => (
               <Link key={item.label} href={item.href} className={styles.sequenceCard}>

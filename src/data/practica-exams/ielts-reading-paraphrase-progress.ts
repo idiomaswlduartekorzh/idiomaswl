@@ -42,9 +42,20 @@ export const PARAPHRASE_LEGACY_STORAGE_KEY = 'welearn:ielts-reading:paraphrase:v
 export const PARAPHRASE_GUIDED_PASSAGE_ID = 'cooling-city-blocks';
 export const PARAPHRASE_INDEPENDENT_PASSAGE_ID = 'mangroves-after-storms';
 
+const COOLING_SURFACES_ANSWER = 'Dark roofs, roads and other built surfaces take in and retain more solar energy than many rural surfaces do.';
+
 const DECISIONS: Record<string, ParaphraseDecision[]> = {
   'cooling-city-blocks': [
-    { id: 'cooling-para-a', paragraphId: 'cooling-a', source: 'Dark roofs, roads and other developed surfaces absorb and hold more solar energy than many rural surfaces.', invariant: 'entity + comparison', answer: 'Many built surfaces take in and retain more energy from the sun than rural ones.', distractors: ['All urban buildings create more solar energy than the countryside.', 'Rural surfaces hold more heat than roads and dark roofs.', 'Only roads absorb solar energy after sunset.'], explanation: 'The entities, direction of comparison and qualified quantity remain unchanged.', trap: 'Do not turn “many” into “all”, reverse the comparison or narrow the list.', errorCode: 'comparison-shift' },
+    {
+      id: 'cooling-para-a', paragraphId: 'cooling-a',
+      source: 'Dark roofs, roads and other developed surfaces absorb and hold more solar energy than many rural surfaces.',
+      invariant: 'which surfaces are compared and which group “many” describes',
+      answer: COOLING_SURFACES_ANSWER,
+      distractors: ['All urban buildings create more solar energy than the countryside.', 'Rural surfaces hold more heat than roads and dark roofs.', 'Only roads absorb solar energy after sunset.'],
+      explanation: 'Read the words just after “than”. The writer compares dark roofs, roads and other built surfaces with many rural surfaces. The new sentence keeps “many” beside the rural group, so it leaves room for exceptions in the countryside.',
+      trap: 'Start with the roofs and roads, then follow the comparison to the rural surfaces. Check which group takes in more energy and which one the word “many” describes.',
+      errorCode: 'comparison-shift',
+    },
     { id: 'cooling-para-b', paragraphId: 'cooling-b', source: 'The benefit therefore comes from both shade and evaporation, not from greenery as decoration.', invariant: 'two-part cause + polarity', answer: 'Cooling is produced by shade together with evaporation, rather than by the plants’ appearance.', distractors: ['Shade is the only process that cools the street.', 'Decorative greenery causes evaporation but provides no shade.', 'Plants cool streets mainly because they make them look greener.'], explanation: 'Both mechanisms and the negative contrast are preserved.', trap: 'A valid paraphrase cannot delete one cause or reverse “not”.', errorCode: 'polarity-shift' },
     { id: 'cooling-para-c', paragraphId: 'cooling-c', source: 'This can reduce roof and indoor temperatures without rebuilding the entire property, although the result depends on climate, insulation and roof design.', invariant: 'possibility + condition', answer: 'The change may lower temperatures without full reconstruction, but its effect varies with three local factors.', distractors: ['The change will cool every building without any reconstruction.', 'Rebuilding the whole property is necessary in all climates.', 'Climate matters only when a roof has no insulation.'], explanation: '“Can” stays possible, and the limiting conditions remain active.', trap: 'Watch for certainty inflation and deleted conditions.', errorCode: 'certainty-shift' },
     { id: 'cooling-para-d', paragraphId: 'cooling-d', source: 'Before spending money, planners need to know where heat exposure and missing shade overlap.', invariant: 'sequence + overlap', answer: 'Planners should locate places with both heat risk and too little shade before investing.', distractors: ['Planners should invest before measuring heat and shade.', 'Any place with shade should receive heat funding.', 'Heat exposure and missing shade must be studied separately after spending.'], explanation: 'The order and the need for both conditions are retained.', trap: 'Do not reverse the sequence or change overlap into either condition alone.', errorCode: 'cause-or-sequence-shift' },
@@ -103,6 +114,15 @@ export const PARAPHRASE_LEVELS: ParaphraseLevel[] = [
 
 export function getParaphrasePassage(id: string) {
   return PARAPHRASE_PASSAGES.find((passage) => passage.id === id);
+}
+
+export function normalizeParaphraseDraftAnswers(value: unknown): Record<string, string> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const answers = Object.fromEntries(Object.entries(value).filter((row): row is [string, string] => typeof row[1] === 'string'));
+  if (answers['cooling-para-a'] === 'Many built surfaces take in and retain more energy from the sun than rural ones.') {
+    answers['cooling-para-a'] = COOLING_SURFACES_ANSWER;
+  }
+  return answers;
 }
 
 function hashSeed(value: string) {

@@ -3,6 +3,7 @@ import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/component
 import IeltsTask2PromptBank from '@/components/exam-practice/IeltsTask2PromptBank'
 import { IELTS_TASK2_PROMPT_BANK } from '@/data/practica-exams/seo-catalog'
 import Content from './Content'
+import Task2PlanningExamples from './Task2PlanningExamples'
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2'
 
@@ -67,7 +68,7 @@ export default function Page() {
           { name: 'Task 2', url: URL },
         ]}
       />
-      <Content faqs={FAQS} />
+      <Content faqs={FAQS}><Task2PlanningExamples /></Content>
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <IeltsTask2PromptBank prompts={IELTS_TASK2_PROMPT_BANK} />

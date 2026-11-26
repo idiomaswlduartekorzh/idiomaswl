@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, BookOpenCheck, CheckCircle2, SearchCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import ReadingTutorExample from '@/components/exam-practice/ReadingTutorExample';
+import { MIXED_READING_GUIDE } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import {
   MixedGuidedPractice,
   MixedIndependentPractice,
@@ -79,11 +81,10 @@ export default function Page() {
             <div>
               <p className={hubStyles.eyebrow}>IELTS Academic Reading · Transfer Practice</p>
               <h1>Choose the method before you choose the answer.</h1>
-              <p>
-                These guided sets mix several Reading formats inside short passages. Your job is to identify the task, select the right reading method and support the final decision with exact evidence.
-              </p>
+              <p>{MIXED_READING_GUIDE.introduction}</p>
               <div className={styles.heroActions}>
                 <a href="#practice">Start Mixed Practice <ArrowRight size={16} aria-hidden="true" /></a>
+                <a href="#worked-example">Read the worked example</a>
                 <Link href="/practica/ielts/reading"><ArrowLeft size={16} aria-hidden="true" /> Return to the Reading Hub</Link>
               </div>
             </div>
@@ -93,18 +94,9 @@ export default function Page() {
             </aside>
           </header>
 
-          <section className={styles.section} aria-labelledby="method-heading">
-            <div className={styles.sectionHeading}>
-              <p className={hubStyles.kicker}>Before you answer</p>
-              <h2 id="method-heading">Use the 3-part transfer check</h2>
-              <p>Do not treat the options as a guessing game. Name the task, locate the evidence and explain why the best option fits more precisely than its closest competitor.</p>
-            </div>
-            <div className={styles.methodGrid}>
-              <article><BookOpenCheck aria-hidden="true" /><span>1 · Identify</span><h3>What decision does the task require?</h3><p>Evidence state, paragraph matching, category matching or exact words from the passage?</p><small>Example: “Which paragraph mentions…” signals Matching Information.</small></article>
-              <article><SearchCheck aria-hidden="true" /><span>2 · Locate</span><h3>Where is the complete evidence window?</h3><p>Use an anchor to stop scanning, then read enough context to capture the whole claim.</p><small>Example: a number helps you arrive; the surrounding sentence tells you what it measures.</small></article>
-              <article><CheckCircle2 aria-hidden="true" /><span>3 · Justify</span><h3>Why does this answer fit best?</h3><p>State the evidence, the paraphrase and the exact problem with the strongest distractor.</p><small>Example: “smaller effect” contradicts “fell equally”; shared vocabulary does not rescue the distractor.</small></article>
-            </div>
-          </section>
+          <div className={styles.workedMethod} id="method-heading">
+            <ReadingTutorExample guide={MIXED_READING_GUIDE} />
+          </div>
 
           <section id="practice" className={styles.practiceSection} aria-labelledby="practice-heading">
             <div className={styles.sectionHeading}>

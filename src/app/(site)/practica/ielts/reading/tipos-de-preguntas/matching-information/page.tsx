@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   MatchingInformationGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-matching-information-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['matching-information'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'matching-information')!;
 const TITLE = 'Matching Information: locate the paragraph with the exact detail';
 const DESCRIPTION = 'Learn to build distinctive search signals, scan for paraphrase and confirm the complete detail before matching a statement to a paragraph.';
@@ -40,7 +42,7 @@ export default function Page() {
       name="Matching Information"
       title={TITLE}
       description={DESCRIPTION}
-      directAnswer="Read the statements first, build a distinctive search signal, scan every paragraph for a paraphrase and confirm the complete entity, action and relationship. The same paragraph may answer more than one statement."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'Specific information' },
         { label: 'Evidence', value: 'Exact detail + context' },
@@ -57,8 +59,7 @@ export default function Page() {
         { title: 'Scan the passage map', text: 'Move quickly by meaning and paraphrase; a paragraph may be used more than once.' },
         { title: 'Confirm both sides', text: 'Read around the candidate sentence and verify that entity, action and relationship all match the statement.' },
       ]}
-      weakExample="Choose Paragraph B because it discusses the same broad topic and repeats one word from the statement."
-      strongExample="Choose Paragraph D because it contains the delayed consequence and the affected group expressed in paraphrase; reject B because it mentions the topic but describes a different result."
+      tutorGuide={tutorGuide}
       practice={<MatchingInformationGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<MatchingInformationIndependentPractice passage={independentPassage} />}
       progressEngine={<MatchingInformationProgressEngine />}

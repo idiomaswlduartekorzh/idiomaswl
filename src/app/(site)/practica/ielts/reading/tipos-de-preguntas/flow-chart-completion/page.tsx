@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   FlowChartCompletionGuidedPractice,
@@ -14,6 +15,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-flow-chart-completion-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['flow-chart-completion'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'flow-chart-completion')!;
 const TITLE = 'Flow-chart Completion: follow the process before the blank';
 const DESCRIPTION = 'Read the complete process, classify each missing stage and use neighbouring boxes, sequence language and exact passage evidence to complete the flow within the displayed word limit.';
@@ -39,7 +41,7 @@ export default function Page() {
     title={TITLE}
     description={DESCRIPTION}
     accent="#0f766e"
-    directAnswer="Read the instruction and the entire flow first. Name the missing stage, connect the previous and next boxes, locate the matching passage section and copy only the exact words that keep the process logical."
+    directAnswer={tutorGuide.introduction}
     facts={[
       { label: 'Target', value: 'Process stage or result' },
       { label: 'Evidence', value: 'Sequence + neighbours + exact span' },
@@ -53,11 +55,10 @@ export default function Page() {
     method={[
       { title: 'Read the instruction', text: 'Confirm the answer source and record the maximum number of words.' },
       { title: 'Map the whole flow', text: 'Read every visible box and arrow; state the process from beginning to end.' },
-      { title: 'Predict and locate', text: 'Use the missing stage and its two neighbours to find the correct passage zone.' },
+      { title: 'Predict and locate', text: 'Read the previous and next boxes together. Which change must happen between them? Look for that change in the passage.' },
       { title: 'Copy and reconnect', text: 'Insert the smallest exact span and reread the complete process path.' },
     ]}
-    weakExample="Search the passage for one repeated noun while ignoring whether it belongs before or after the current process stage."
-    strongExample="The previous box names the raw material and the next box describes the cleaned output, so locate the intervening action and copy the exact two-word phrase that preserves that transition."
+    tutorGuide={tutorGuide}
     practice={<FlowChartCompletionGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<FlowChartCompletionIndependentPractice passage={independentPassage} />}
     progressEngine={<FlowChartCompletionProgressEngine />}

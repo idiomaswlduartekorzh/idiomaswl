@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   MatchingSentenceEndingsGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-matching-sentence-endings-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['matching-sentence-endings'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'matching-sentence-endings')!;
 const TITLE = 'Matching Sentence Endings: join grammar to passage evidence';
 const DESCRIPTION = 'Learn to predict the relationship a sentence needs, filter endings for grammar and prove the one best completion with exact passage evidence.';
@@ -41,7 +43,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       accent="#b45309"
-      directAnswer="Read the sentence beginnings first and predict the relationship each one needs. Use grammar to remove impossible endings, then use passage evidence—not natural sound or repeated vocabulary—to choose the one best completion."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'One best completion' },
         { label: 'Evidence', value: 'Grammar + relationship + text' },
@@ -58,8 +60,7 @@ export default function Page() {
         { title: 'Locate the passage idea', text: 'Find the beginning in paraphrase and read enough context to understand its exact claim.' },
         { title: 'Prove the final pair', text: 'Compare the best two endings and reject the competitor with one explicit mismatch in meaning or evidence.' },
       ]}
-      weakExample="Choose the ending because the completed sentence sounds natural and repeats words from the passage."
-      strongExample="Keep two grammatically possible endings, locate the claim in the passage and choose the one that preserves the stated cause and level of certainty."
+      tutorGuide={tutorGuide}
       practice={<MatchingSentenceEndingsGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<MatchingSentenceEndingsIndependentPractice passage={independentPassage} />}
       progressEngine={<MatchingSentenceEndingsProgressEngine />}

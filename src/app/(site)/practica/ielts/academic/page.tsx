@@ -3,7 +3,7 @@ import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/component
 import Content, { ACADEMIC_FAQS } from './Content'
 
 export const metadata: Metadata = {
-  title: 'IELTS Academic Practice: Listening, Reading, Writing and Speaking',
+  title: 'IELTS Academic Practice for All Four Skills',
   description: 'Practise all four IELTS Academic skills with 40 sets, Reading routes, Writing Task 1 and Task 2 courses, and Speaking recording practice.',
   keywords: ['IELTS Academic', 'IELTS practice', 'IELTS Writing exercises', 'IELTS preparation', 'IELTS Band 7'],
   openGraph: {

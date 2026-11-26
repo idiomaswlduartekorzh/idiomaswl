@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   DiagramLabelingGuidedPractice,
@@ -14,6 +15,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-diagram-labeling-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['diagram-labeling'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'diagram-labeling')!;
 const TITLE = 'Diagram Labeling: turn visual position into a search target';
 const DESCRIPTION = 'Read the complete visual first, classify every marked zone and connect position, function and exact passage evidence before writing a label within the displayed word limit.';
@@ -39,7 +41,7 @@ export default function Page() {
     title={TITLE}
     description={DESCRIPTION}
     accent="#0369a1"
-    directAnswer="Read the title and every visible marker before searching. Name the marked zone, use position and function to locate the matching description, then copy the smallest exact span that labels that component naturally."
+    directAnswer={tutorGuide.introduction}
     facts={[
       { label: 'Target', value: 'Part, location or component' },
       { label: 'Evidence', value: 'Marker + zone + detailed description' },
@@ -56,8 +58,7 @@ export default function Page() {
       { title: 'Predict the component', text: 'Name its zone, likely function and required word form.' },
       { title: 'Locate and reconnect', text: 'Find the detailed description, copy the smallest exact span and reread the finished label.' },
     ]}
-    weakExample="Search the passage for every noun in the topic and choose the first phrase that sounds technical."
-    strongExample="Marker E points to an external layer beside the window, so scan the shading paragraph for the named device outside the glass and reject materials from the thermal core."
+    tutorGuide={tutorGuide}
     practice={<DiagramLabelingGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<DiagramLabelingIndependentPractice passage={independentPassage} />}
     progressEngine={<DiagramLabelingProgressEngine />}

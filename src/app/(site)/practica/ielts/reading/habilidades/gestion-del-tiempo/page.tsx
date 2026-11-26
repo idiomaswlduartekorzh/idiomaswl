@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_SKILL_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import { TimeManagementGuidedPractice, TimeManagementIndependentPractice, TimeManagementProgressEngine } from '@/components/exam-practice/TimeManagementPracticeLab';
 import { TIME_MANAGEMENT_GUIDED_PASSAGE_ID, TIME_MANAGEMENT_INDEPENDENT_PASSAGE_ID, getTimeManagementPassage } from '@/data/practica-exams/ielts-reading-time-management-progress';
 import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_SKILL_GUIDES['gestion-del-tiempo'];
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'gestion-del-tiempo')!;
 const TITLE = 'Time management: protect points instead of racing the clock';
 const DESCRIPTION = 'Use a passage budget, prioritise visible evidence, mark productive uncertainty and return only when a second attempt has a clear target.';
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return <InternationalReadingSkillLesson
     slug="gestion-del-tiempo" name="Time management" title={TITLE} description={DESCRIPTION}
-    directAnswer="Use time as a decision rule. Solve evidence-rich items now, mark questions that already have a useful evidence zone and postpone searches that would restart from zero."
+    directAnswer={tutorGuide.introduction}
     facts={[{ label: 'Per passage', value: '≈20 min' }, { label: 'First move', value: 'Map' }, { label: 'Review', value: 'Evidence first' }]}
     outcomes={[
       { title: 'Protect the full passage', text: 'Prevent one uncertain item from consuming the time needed for several answerable questions.' },
@@ -35,8 +37,7 @@ export default function Page() {
       { title: 'Store useful context', text: 'When you move on, mark the paragraph and the exact uncertainty you need to resolve.' },
       { title: 'Review by expected return', text: 'Revisit items with located evidence before questions that still require a complete search.' },
     ]}
-    weakExample="Spending four minutes on one Not Given decision because leaving it temporarily feels like failure."
-    strongExample="Mark the evidence and the unresolved contrast, answer provisionally, secure three local-evidence items and return with the remaining review budget."
+    tutorGuide={tutorGuide}
     practice={<TimeManagementGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<TimeManagementIndependentPractice passage={independentPassage} />}
     progressEngine={<TimeManagementProgressEngine />}

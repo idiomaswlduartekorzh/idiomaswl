@@ -2,13 +2,31 @@ import type { CSSProperties, ReactNode } from 'react';
 import Link from 'next/link';
 import { BreadcrumbJsonLd, FaqJsonLd } from '@/components/exam-practice/StructuredData';
 import { PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
+import type { ReadingTutorGuide } from '@/data/practica-exams/ielts-reading-tutor-guides';
+import ReadingTutorExample from './ReadingTutorExample';
 import styles from './InternationalReadingSkillLesson.module.css';
 
 type Fact = { label: string; value: string };
 type Point = { title: string; text: string };
 type Faq = { question: string; answer: string };
 
-export interface InternationalReadingSkillLessonProps {
+type LessonExample =
+  | { tutorGuide: ReadingTutorGuide; workedPassage?: never; weakExample?: never; strongExample?: never }
+  | {
+      tutorGuide?: never;
+      weakExample: string;
+      strongExample: string;
+      workedPassage: {
+        heading: string;
+        paragraph: string;
+        firstNoteHeading: string;
+        revisedNoteHeading: string;
+        question: string;
+        explanation: string;
+      };
+    };
+
+export type InternationalReadingSkillLessonProps = LessonExample & {
   slug: string;
   path?: string;
   indexPath?: string;
@@ -19,19 +37,9 @@ export interface InternationalReadingSkillLessonProps {
   description: string;
   directAnswer: string;
   facts: Fact[];
-  outcomes: Point[];
+  outcomes?: Point[];
   method: Point[];
   methodIntroduction?: Point;
-  weakExample: string;
-  strongExample: string;
-  workedPassage?: {
-    heading: string;
-    paragraph: string;
-    firstNoteHeading: string;
-    revisedNoteHeading: string;
-    question: string;
-    explanation: string;
-  };
   independentPractice: string[];
   independentPracticeExperience?: ReactNode;
   progressEngine?: ReactNode;
@@ -42,7 +50,7 @@ export interface InternationalReadingSkillLessonProps {
   accent?: string;
   officialNote: string;
   nextLinks: Array<{ href: string; label: string; primary?: boolean }>;
-}
+};
 
 export default function InternationalReadingSkillLesson({
   slug,
@@ -58,6 +66,7 @@ export default function InternationalReadingSkillLesson({
   outcomes,
   method,
   methodIntroduction,
+  tutorGuide,
   weakExample,
   strongExample,
   workedPassage,
@@ -153,22 +162,24 @@ export default function InternationalReadingSkillLesson({
             </div>
           </nav>
 
-          <section className={styles.section} aria-labelledby="outcomes-heading">
-            <div className={styles.sectionHeader}>
-              <p className={styles.eyebrow}>What this skill changes</p>
-              <h2 id="outcomes-heading">Use it with a clear purpose</h2>
-              <p>A useful reading skill changes what you notice, what you ignore and how you prove an answer.</p>
-            </div>
-            <div className={styles.gridThree}>
-              {outcomes.map((point) => <article className={styles.card} key={point.title}><h3>{point.title}</h3><p>{point.text}</p></article>)}
-            </div>
-          </section>
+          {outcomes && (
+            <section className={styles.section} aria-labelledby="outcomes-heading">
+              <div className={styles.sectionHeader}>
+                <p className={styles.eyebrow}>What this skill changes</p>
+                <h2 id="outcomes-heading">Use it with a clear purpose</h2>
+                <p>A useful reading skill changes what you notice, what you ignore and how you prove an answer.</p>
+              </div>
+              <div className={styles.gridThree}>
+                {outcomes.map((point) => <article className={styles.card} key={point.title}><h3>{point.title}</h3><p>{point.text}</p></article>)}
+              </div>
+            </section>
+          )}
 
           <section id="lesson-method" className={styles.section} aria-labelledby="method-heading">
             <div className={styles.sectionHeader}>
               <p className={styles.eyebrow}>WeLearn method</p>
-              <h2 id="method-heading">{methodIntroduction?.title ?? 'A repeatable process, not a shortcut'}</h2>
-              <p>{methodIntroduction?.text ?? 'Follow these steps until the sequence becomes automatic under time pressure.'}</p>
+              <h2 id="method-heading">{methodIntroduction?.title ?? 'Working through a question'}</h2>
+              {methodIntroduction && <p>{methodIntroduction.text}</p>}
             </div>
             <div className={`${styles.gridTwo} ${independentPracticeExperience ? styles.followupGrid : ''}`}>
               {method.map((point, index) => (
@@ -179,32 +190,30 @@ export default function InternationalReadingSkillLesson({
             </div>
           </section>
 
-          <section id="worked-example" className={styles.section} aria-labelledby="example-heading">
-            <div className={styles.sectionHeader}>
-              <p className={styles.eyebrow}>{workedPassage ? 'Read with a tutor' : 'Worked contrast'}</p>
-              <h2 id="example-heading">{workedPassage?.heading ?? 'See the difference before you practise'}</h2>
-            </div>
-            {workedPassage && (
+          {tutorGuide ? <ReadingTutorExample guide={tutorGuide} /> : (
+            <section id="worked-example" className={styles.section} aria-labelledby="example-heading">
+              <div className={styles.sectionHeader}>
+                <p className={styles.eyebrow}>Read with a tutor</p>
+                <h2 id="example-heading">{workedPassage.heading}</h2>
+              </div>
               <figure className={styles.passageExcerpt}>
                 <figcaption>Practice paragraph</figcaption>
                 <blockquote>{workedPassage.paragraph}</blockquote>
               </figure>
-            )}
-            <div className={styles.gridTwo}>
-              <article className={`${styles.example} ${workedPassage ? styles.firstNote : styles.weak}`}>
-                <h3>{workedPassage?.firstNoteHeading ?? 'Weak move'}</h3><p>{weakExample}</p>
-              </article>
-              <article className={`${styles.example} ${workedPassage ? styles.revisedNote : styles.good}`}>
-                <h3>{workedPassage?.revisedNoteHeading ?? 'Strong move'}</h3><p>{strongExample}</p>
-              </article>
-            </div>
-            {workedPassage && (
+              <div className={styles.gridTwo}>
+                <article className={`${styles.example} ${styles.firstNote}`}>
+                  <h3>{workedPassage.firstNoteHeading}</h3><p>{weakExample}</p>
+                </article>
+                <article className={`${styles.example} ${styles.revisedNote}`}>
+                  <h3>{workedPassage.revisedNoteHeading}</h3><p>{strongExample}</p>
+                </article>
+              </div>
               <div className={styles.returnToText}>
                 <h3>{workedPassage.question}</h3>
                 <p>{workedPassage.explanation}</p>
               </div>
-            )}
-          </section>
+            </section>
+          )}
 
           <section id="guided-practice" className={`${styles.section} ${styles.practice}`} aria-labelledby="guided-practice-heading">
             <div className={styles.sectionHeader}>

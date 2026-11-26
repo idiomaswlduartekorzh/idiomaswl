@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   TableCompletionGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-table-completion-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['table-completion'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'table-completion')!;
 const TITLE = 'Table Completion: use headers as evidence coordinates';
 const DESCRIPTION = 'Read every row and column header, predict the missing information category and copy the smallest exact passage span that completes the cell within the displayed word limit.';
@@ -39,7 +41,7 @@ export default function Page() {
     title={TITLE}
     description={DESCRIPTION}
     accent="#7c3aed"
-    directAnswer="Read the word limit and the complete table first. Treat the active row and column as coordinates, predict the missing form and copy only the exact words that satisfy both headers."
+    directAnswer={tutorGuide.introduction}
     facts={[
       { label: 'Target', value: 'Categorised detail' },
       { label: 'Evidence', value: 'Row + column + exact span' },
@@ -56,8 +58,7 @@ export default function Page() {
       { title: 'Predict and locate', text: 'Use the cell grammar and both coordinates to find the matching evidence zone.' },
       { title: 'Copy and rebuild', text: 'Insert the smallest exact span, then reread the row, column and completed cell together.' },
     ]}
-    weakExample="Search the passage for one repeated word while ignoring which row topic and column category own that detail."
-    strongExample="The row is ‘Location’ and the column is ‘Condition or warning’, so search the design paragraph for a limiting condition and submit the exact adjective that completes the cell."
+    tutorGuide={tutorGuide}
     practice={<TableCompletionGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<TableCompletionIndependentPractice passage={independentPassage} />}
     progressEngine={<TableCompletionProgressEngine />}

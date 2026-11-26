@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   MatchingFeaturesGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-matching-features-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['matching-features'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'matching-features')!;
 const TITLE = 'Matching Features: prove who or what owns each claim';
 const DESCRIPTION = 'Learn to connect statements with people, projects, policies or processes by proving the exact actor–action–result relationship.';
@@ -40,7 +42,7 @@ export default function Page() {
       name="Matching Features"
       title={TITLE}
       description={DESCRIPTION}
-      directAnswer="Read the feature list first, define each person, project, policy or process, then match the statement's action, result and qualification. A nearby name or shared topic is not proof, and a feature may be used more than once when the instructions allow it."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'Exact attribution' },
         { label: 'Evidence', value: 'Actor + action + result' },
@@ -57,8 +59,7 @@ export default function Page() {
         { title: 'Scan names and references', text: 'Find names, labels and pronouns, then read around them rather than selecting the first match.' },
         { title: 'Prove the complete link', text: 'Confirm that the chosen feature owns every important part of the statement, including qualifiers.' },
       ]}
-      weakExample="Choose the Green Roof Collective because the statement mentions farming and its name appears close to a paragraph about vegetables."
-      strongExample="Choose the Riverside School Network because the statement asks for academic subjects becoming observable, and its paragraph explicitly makes biology, climate and nutrition visible in daily lessons."
+      tutorGuide={tutorGuide}
       practice={<MatchingFeaturesGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<MatchingFeaturesIndependentPractice passage={independentPassage} />}
       progressEngine={<MatchingFeaturesProgressEngine />}

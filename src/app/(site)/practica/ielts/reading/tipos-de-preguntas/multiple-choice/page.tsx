@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   MultipleChoiceGuidedPractice,
@@ -13,6 +14,7 @@ import {
   getMultipleChoicePassage,
 } from '@/data/practica-exams/ielts-reading-multiple-choice-progress';
 
+const tutorGuide = READING_FORMAT_GUIDES['multiple-choice'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'multiple-choice')!;
 const TITLE = 'IELTS Reading Multiple Choice: prove the one best answer';
 const DESCRIPTION = 'Learn to read the exact stem, locate the evidence zone and reject lexical echoes, partial truths and overconfident distractors.';
@@ -39,7 +41,7 @@ export default function Page() {
     name="Multiple Choice"
     title={TITLE}
     description={DESCRIPTION}
-    directAnswer="A strong Multiple Choice decision answers the exact question, matches a precise evidence zone and survives comparison with the closest distractor—not merely the option with familiar words."
+    directAnswer={tutorGuide.introduction}
     facts={[{ label: 'First', value: 'Read the stem' }, { label: 'Then', value: 'Locate evidence' }, { label: 'Finish', value: 'Compare scope' }]}
     outcomes={[
       { title: 'Control the stem', text: 'Distinguish a detail question from purpose, inference, main idea or vocabulary in context before evaluating options.' },
@@ -52,8 +54,7 @@ export default function Page() {
       { title: 'Test every option', text: 'Label each option supported, contradicted, not given or only partially true.' },
       { title: 'Defeat the closest rival', text: 'Choose the only option whose scope and relationship match the whole evidence zone.' },
     ]}
-    weakExample="The option repeats ‘sleep’ and ‘memory’, so it must be correct."
-    strongExample="The stem asks for paragraph purpose. Option B captures the old-view/new-view contrast; the other options reuse details but describe neither the paragraph’s job nor its whole meaning."
+    tutorGuide={tutorGuide}
     practice={<MultipleChoiceGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<MultipleChoiceIndependentPractice passage={independentPassage} />}
     progressEngine={<MultipleChoiceProgressEngine />}

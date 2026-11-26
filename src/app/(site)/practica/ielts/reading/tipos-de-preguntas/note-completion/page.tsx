@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   NoteCompletionGuidedPractice,
@@ -13,6 +14,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-note-completion-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['note-completion'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'note-completion')!;
 const TITLE = 'Note Completion: use headings as a search map';
 const DESCRIPTION = 'Read each note group as a structured map, predict the missing category and copy the smallest exact passage span within the displayed word limit.';
@@ -40,7 +42,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       accent="#0f766e"
-      directAnswer="Read the word limit and every note heading first. Use the active group to narrow the passage zone, predict the missing form and copy only the exact words that complete the bullet naturally."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'Structured detail' },
         { label: 'Evidence', value: 'Group heading + local cue + exact span' },
@@ -57,8 +59,7 @@ export default function Page() {
         { title: 'Predict and locate', text: 'Use the bullet grammar and local cues to find the matching evidence inside the correct passage zone.' },
         { title: 'Copy and rebuild', text: 'Insert the smallest exact span, then reread the heading and complete bullet together.' },
       ]}
-      weakExample="Scan the entire passage for a repeated noun and ignore which note heading owns that detail."
-      strongExample="The heading says ‘Planning around routines’, so search the paragraph about schedules, predict a time phrase after ‘after’ and submit the exact two-word evidence span."
+      tutorGuide={tutorGuide}
       practice={<NoteCompletionGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<NoteCompletionIndependentPractice passage={independentPassage} />}
       progressEngine={<NoteCompletionProgressEngine />}

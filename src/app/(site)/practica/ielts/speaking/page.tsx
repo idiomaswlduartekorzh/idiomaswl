@@ -1,8 +1,10 @@
-import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
+import type { CSSProperties } from 'react';
 import Link from 'next/link';
 import { SKILL_ACCENT } from '@/data/practica/skill-accents';
 import styles from '../IeltsHub.module.css';
+import SpeakingRehearsal from './SpeakingRehearsal';
+import { getSpeakingRehearsals } from './speaking-rehearsals';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/speaking';
 const OFFICIAL_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking';
@@ -10,48 +12,113 @@ const SCORING_URL = 'https://ielts.org/take-a-test/your-results/ielts-scoring-in
 const accent = { '--ielts-accent': SKILL_ACCENT.habla.var } as CSSProperties;
 
 export const metadata: Metadata = {
-  title: 'IELTS Speaking: All 3 Parts, Assessment Criteria and Practice',
-  description: 'Understand the three IELTS Speaking parts, develop answers without memorised scripts, review recordings and practise with 40 sets.',
+  title: 'IELTS Speaking Practice: Three Parts and Four Criteria',
+  description: 'Try all three parts with questions from Set 1, compare two recordings and hear what each of the four Speaking criteria asks you to do.',
   alternates: { canonical: URL },
 };
 
 export default function IeltsSpeakingPage() {
-  return <div className={styles.page} style={accent} lang="en"><div className={styles.shell}>
-    <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica/ielts">IELTS</Link><span>/</span><span>Speaking</span></nav>
-    <header className={styles.hero}>
-      <p className={styles.eyebrow}>IELTS Speaking · learning route</p>
-      <h1>Develop an answer you can actually say.</h1>
-      <p className={styles.heroLead}>Speaking is a conversation with an examiner, not a speech you have to memorise. Learn what each part asks you to do, what the four assessment criteria mean in ordinary language, and how to listen to your own recording with a useful question in mind.</p>
-      <div className={styles.factGrid} aria-label="Speaking route at a glance"><div className={styles.fact}><strong>3 parts</strong><span>personal, long turn, discussion</span></div><div className={styles.fact}><strong>11–14 min</strong><span>official test duration</span></div><div className={styles.fact}><strong>4 criteria</strong><span>equally weighted</span></div><div className={styles.fact}><strong>40 sets</strong><span>record and replay in practice</span></div></div>
-      <nav className={styles.lessonNav} aria-label="On this page"><a href="#three-parts">Three parts</a><a href="#develop">Develop answers</a><a href="#criteria">Four criteria</a><a href="#self-review">Review a recording</a><a href="#practice">Choose practice</a></nav>
-    </header>
+  return (
+    <div className={styles.page} style={accent} lang="en">
+      <div className={styles.shell}>
+        <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+          <Link href="/practica/ielts">IELTS</Link><span>/</span><span>Speaking</span>
+        </nav>
+        <header className={styles.hero}>
+          <p className={styles.eyebrow}>IELTS Speaking</p>
+          <h1>Develop an answer you can actually say.</h1>
+          <p className={styles.heroLead}>When someone asks whether you enjoy cooking, you can probably think of a meal before you can think of an impressive word. Start with that meal. The skill is deciding which detail this particular listener needs next.</p>
+          <div className={styles.factGrid} aria-label="Speaking route at a glance">
+            <div className={styles.fact}><strong>3 parts</strong><span>interview, long turn, discussion</span></div>
+            <div className={styles.fact}><strong>11–14 min</strong><span>official test duration</span></div>
+            <div className={styles.fact}><strong>4 criteria</strong><span>equally weighted</span></div>
+            <div className={styles.fact}><strong>40 sets</strong><span>record and replay in practice</span></div>
+          </div>
+          <nav className={styles.lessonNav} aria-label="On this page">
+            <a href="#three-parts">Three parts</a><a href="#develop">Try a prompt</a>
+            <a href="#criteria">Four criteria</a><a href="#self-review">Review a recording</a><a href="#practice">Choose a set</a>
+          </nav>
+        </header>
 
-    <section className={styles.section} id="three-parts" aria-labelledby="parts-title"><div className={styles.sectionHeading}><p className={styles.kicker}>The conversation changes shape</p><h2 id="parts-title">Give each part the kind of answer it needs.</h2><p>The same voice and language skills carry through the test, but the examiner gradually asks you to move from familiar experience to longer and more abstract ideas.</p></div><div className={styles.articleGrid}>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Part 1 · Interview</span><h3>Answer the question, then add a reason or detail.</h3><p>Expect familiar topics such as home, study, work or routines. A bare “yes” makes the examiner ask again; a rehearsed paragraph can sound detached from the question. A natural answer usually names your experience and adds a concrete reason. If the question asks what you usually do on weekends, explain one real habit rather than listing every hobby you know.</p></article>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Part 2 · Long turn</span><h3>Build a small story from the cue card.</h3><p>You have one minute to prepare and are asked to speak for up to two minutes. Use your notes to remember a sequence, not to write a script: where or when it happened, what changed, one specific detail and why it matters to you. If you finish the bullet points quickly, develop the moment or consequence instead of repeating the prompt.</p></article>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Part 3 · Discussion</span><h3>Move from your case to a wider idea.</h3><p>The examiner may ask why a pattern exists, whether it has changed or what might happen in the future. You do not need expert facts. State a view, explain the mechanism and acknowledge a reasonable limit when it matters. “Technology is useful” is a start; explaining who benefits, in what situation and at what cost makes it an answer.</p></article>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Across all three</span><h3>Stay responsive.</h3><p>Listen to the exact question before choosing an example. If you did not hear a word, ask for repetition rather than answering a different question confidently. A short pause to think is normal; filling every pause with memorised phrases can make the answer harder to follow.</p></article>
-    </div></section>
+        <section className={styles.section} id="three-parts" aria-labelledby="parts-title">
+          <div className={styles.sectionHeading}>
+            <h2 id="parts-title">What changes as the conversation moves on?</h2>
+            <p>The examiner starts with experiences you know. Later you have the floor for a longer turn, then discuss a broader issue related to its topic.</p>
+          </div>
+          <div className={styles.articleGrid}>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Part 1 · Interview · 4–5 minutes</span>
+              <h3>Give the examiner something to ask about.</h3>
+              <p>A question about food, home or work gives you somewhere familiar to start. Answer it and add a detail you can picture. If you usually cook for yourself, saying what you made last night can carry more meaning than a list of dishes.</p>
+            </article>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Part 2 · Long turn · 3–4 minutes</span>
+              <h3>Stay with a moment long enough for us to see it.</h3>
+              <p>You get one minute to prepare, then speak for one to two minutes. A few words for the setting, one event and your reaction can keep you going. If you reach the final cue quickly, go back to the detail that made the experience memorable. The examiner may ask a short follow-up.</p>
+            </article>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Part 3 · Discussion · 4–5 minutes</span>
+              <h3>Help someone follow the reason for your view.</h3>
+              <p>A story about visiting a workplace can lead to a question about why people choose their jobs. Think beyond the person you visited. What might be true for a new graduate? Would it still hold for someone supporting a family? You now have something to discuss.</p>
+            </article>
+          </div>
+        </section>
 
-    <section className={styles.section} id="develop" aria-labelledby="develop-title"><div className={styles.sectionHeading}><p className={styles.kicker}>Make a response grow</p><h2 id="develop-title">Specific detail does more work than more words.</h2></div><div className={styles.prose}>
-      <p>Suppose the examiner asks about a skill you learned. “I learned cooking and it was interesting” answers the topic, but gives your listener almost nothing to follow. You could instead say when you needed the skill, what went wrong at first and what you can do now. The listener can then hear a clear sequence and your language has a reason to include past events, contrast and reflection.</p>
-      <p>This is not a formula to paste into every answer. A question about a daily routine may need a short present-tense example; a question about a social change may need a cause and consequence. The useful habit is to ask, “What does this listener need in order to understand my point?” Then add the detail that answers that need.</p>
-      <p>When you compare model responses, notice the work each sentence does. A stronger answer often clarifies a relationship, qualifies a claim or uses a more precise example. It does not become stronger merely by replacing simple words with long synonyms.</p>
-    </div><div className={styles.example}><p><strong>Short answer:</strong> “I started cooking at university. It was difficult, but now I like it.”</p><p><strong>Developed answer:</strong> “When I moved away for university, I had to cook dinner for myself. I used to call my mother while the rice was already on the stove because I never knew when to turn it off. Now I make a few meals in advance, which saves money during the week.”</p><p>The second answer gives a listener a scene and a change over time. It remains ordinary speech; it does not need to sound like a written essay.</p></div></section>
+        <section className={styles.section} id="develop" aria-labelledby="develop-title">
+          <div className={styles.sectionHeading}>
+            <h2 id="develop-title">Try a question from each part.</h2>
+            <p>Say your answer aloud before opening the tutor’s example. If you use the microphone, you can keep two takes of each prompt in this tab and listen to both. Leaving or refreshing the page clears them.</p>
+          </div>
+          <SpeakingRehearsal parts={getSpeakingRehearsals()} />
+        </section>
 
-    <section className={styles.section} id="criteria" aria-labelledby="criteria-title"><div className={styles.sectionHeading}><p className={styles.kicker}>How Speaking is assessed</p><h2 id="criteria-title">Four criteria describe what the listener can hear.</h2><p>Use these as observation lenses, not as a calculator for your own official band.</p></div><div className={styles.articleGrid}>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Fluency & coherence</span><h3>Can the listener follow your thought?</h3><p>Notice whether you can continue beyond the first sentence, develop an idea and connect the next point naturally. Hesitation is not the whole story: a brief pause to find an honest example may help coherence, while fast speech that circles the same point may not.</p></article>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Lexical resource</span><h3>Can you choose words that fit?</h3><p>Precision matters more than decoration. If you do not know a word, describe the idea in another way. Listen for repeated vague words such as “thing” or “good” where a more exact everyday word would make the meaning clearer.</p></article>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Grammar range & accuracy</span><h3>Can your sentences carry the idea?</h3><p>Use time, comparison, cause and condition when the idea calls for them. A complex sentence earns no benefit if its meaning collapses. On replay, identify one recurring error that changes or obscures meaning, rather than trying to fix every small slip at once.</p></article>
-      <article className={styles.editorialCard}><span className={styles.cardLabel}>Pronunciation</span><h3>Is your message easy to understand?</h3><p>Listen for word stress, clear endings, sentence rhythm and sounds that repeatedly cause confusion. An accent is not itself a mistake. Pronunciation has to be judged from a real voice; a written transcript or a synthetic model cannot establish your pronunciation score.</p></article>
-    </div></section>
+        <section className={styles.section} id="criteria" aria-labelledby="criteria-title">
+          <div className={styles.sectionHeading}>
+            <h2 id="criteria-title">What can you hear in your own answer?</h2>
+            <p>An examiner considers four criteria across the whole interview. On a practice recording, pick one and listen for a moment you could improve.</p>
+          </div>
+          <div className={styles.articleGrid}>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Fluency and coherence</span><h3>Could someone follow the change in your thinking?</h3>
+              <p>Listen to your answer about salary. If you say “it depends” twice, listen for the point at which you name a condition. A brief pause followed by “once the rent is covered” gives the listener a way into your second idea.</p>
+            </article>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Lexical resource</span><h3>Did a word help the listener picture what you meant?</h3>
+              <p>In the studio example you can almost see the change from a sketch to a model. If “sketch” escapes you, “the first drawing she did by hand” still gets that idea across. Try it without stopping your story to search for the perfect word.</p>
+            </article>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Grammatical range and accuracy</span><h3>Can the listener tell what happened when?</h3>
+              <p>“She was preparing a proposal” sets the scene for the visit. “She showed me” moves it forward. On replay, notice a place where your time reference slips. Try that sentence again and listen for whether the order of events is clearer.</p>
+            </article>
+            <article className={styles.editorialCard}>
+              <span className={styles.cardLabel}>Pronunciation</span><h3>Which words would a listener pick out?</h3>
+              <p>Say “I used to cook on Sundays” once. Say it again as if someone had just guessed Saturdays. Hear where the emphasis lands? In your own recording, listen for a word ending or a stressed syllable that helped someone catch your meaning. That judgment needs your voice.</p>
+            </article>
+          </div>
+        </section>
 
-    <section className={styles.section} id="self-review" aria-labelledby="review-title"><div className={styles.sectionHeading}><p className={styles.kicker}>Practise with your own voice</p><h2 id="review-title">Record once, listen for one thing, then try again.</h2></div><div className={styles.prose}>
-      <p>Choose one prompt and record an honest first response. On replay, do not judge whether you “sound fluent” in general. Find a precise moment: did you stop after a claim without explaining it? Did you repeat a word because you could not name the object? Did a past event drift into the present tense? Write down one observation and make a second recording with a single improvement in mind.</p>
-      <p>Keep both versions long enough to compare the change. If the second answer sounds more natural but is not longer, that can still be progress. The focused WeLearn recorder stores audio only while the page is open and does not assign an automatic Speaking band. For an assessed result, a listener must hear the recording and apply the official criteria to the complete performance.</p>
-      <p>The guided sets include two written reference responses for Part 2, labelled as approximate teaching profiles. Read them after you have attempted the cue card. Compare how the examples develop ideas; do not memorise their sentences or treat their labels as a prediction of your score.</p>
-    </div><ol className={styles.stepList}><li><span>01 · First take</span><h3>Answer naturally</h3><p>Record without stopping to edit every phrase.</p></li><li><span>02 · Listen closely</span><h3>Mark one moment</h3><p>Choose one observable issue from the four criteria.</p></li><li><span>03 · Second take</span><h3>Change one move</h3><p>Compare whether the listener can follow you more easily.</p></li></ol></section>
+        <section className={styles.section} id="self-review" aria-labelledby="review-title">
+          <div className={styles.sectionHeading}><h2 id="review-title">Compare your two takes.</h2></div>
+          <div className={styles.prose}>
+            <p>Listen to your first take until you hear a place where a friend might ask “what do you mean?” For example, “the visit was interesting” leaves the whole studio behind a single word. Write down what the friend would need to hear. Then switch to <strong>Second take</strong> and answer the original question again.</p>
+            <p>Replay the same moment in both versions. Can you now hear what the person did, why you cared or where your view changed? Keep the part that sounds like you. The recorder lets you compare the versions by ear. An examiner would need the complete spoken performance to assign a Speaking band.</p>
+          </div>
+          <a href="#develop">Return to your recordings</a>
+        </section>
 
-    <section className={styles.section} id="practice" aria-labelledby="practice-title"><div className={styles.sectionHeading}><p className={styles.kicker}>Continue into practice</p><h2 id="practice-title">Use the 40 sets without taking a full mock.</h2><p>Each set gives you prompts from all three parts. You can record and replay your responses at your own pace. The guided Set 1 adds a comparison of Part 2 reference answers after the objective sections.</p></div><div className={styles.actions}><Link href="/practica/ielts/speaking/simulacros">Choose one of 40 Speaking sets</Link><Link href="/examenes/ielts/practica/set-1/guiado">Compare guided examples</Link><Link href="/examenes/ielts#practica">Full mocks</Link></div><p className={styles.sourceNote}><strong>Official boundary:</strong> The three-part structure and four equally weighted criteria come from the <a href={OFFICIAL_URL}>IELTS Speaking format</a> and <a href={SCORING_URL}>scoring guidance</a>. The recording and self-review routine above is a WeLearn practice method.</p></section>
-  </div></div>;
+        <section className={styles.section} id="practice" aria-labelledby="practice-title">
+          <div className={styles.sectionHeading}>
+            <h2 id="practice-title">Take the same skill into a fresh conversation.</h2>
+            <p>Set 1 contains the full interview, cue card and discussion you sampled here. For a fresh attempt, open another set and see whether the same habit helps when the topic changes.</p>
+          </div>
+          <div className={styles.actions}>
+            <Link href="/examenes/ielts/practica/set-1?mode=practice&skill=speaking">Practise the full Set 1 conversation</Link>
+            <Link href="/practica/ielts/speaking/simulacros">Choose one of 40 Speaking sets</Link>
+            <Link href="/examenes/ielts/practica/set-1/guiado">Read the Set 1 reference answers</Link>
+          </div>
+          <p className={styles.sourceNote}>IELTS explains the interview timing and the four equally weighted criteria. The two-take rehearsal is a WeLearn exercise. <a href={OFFICIAL_URL}>Official Speaking format</a> · <a href={SCORING_URL}>Official scoring guidance</a></p>
+        </section>
+      </div>
+    </div>
+  );
 }

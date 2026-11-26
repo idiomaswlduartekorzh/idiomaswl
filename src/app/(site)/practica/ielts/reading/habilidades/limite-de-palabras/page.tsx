@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_SKILL_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import { WordLimitGuidedPractice, WordLimitIndependentPractice, WordLimitProgressEngine } from '@/components/exam-practice/WordLimitPracticeLab';
 import { WORD_LIMIT_GUIDED_PASSAGE_ID, WORD_LIMIT_INDEPENDENT_PASSAGE_ID, getWordLimitPassage } from '@/data/practica-exams/ielts-reading-word-limit-progress';
 import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_SKILL_GUIDES['limite-de-palabras'];
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'limite-de-palabras')!;
 const TITLE = 'Word-limit control: copy the smallest answer that fits';
 const DESCRIPTION = 'Parse the instruction, predict the missing grammar, locate the exact passage span and remove every unnecessary word before submitting.';
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return <InternationalReadingSkillLesson
     slug="limite-de-palabras" name="Word-limit control" title={TITLE} description={DESCRIPTION}
-    directAnswer="Treat the word limit as part of the question. A factually correct phrase still loses the mark if it exceeds the stated maximum or fails to complete the sentence grammatically."
+    directAnswer={tutorGuide.introduction}
     facts={[{ label: 'First', value: 'Read the limit' }, { label: 'Then', value: 'Fit the gap' }, { label: 'Finally', value: 'Count again' }]}
     outcomes={[
       { title: 'Parse the instruction', text: 'Distinguish words-only instructions from words-and/or-a-number instructions.' },
@@ -34,8 +36,7 @@ export default function Page() {
       { title: 'Locate the exact span', text: 'Find the matching passage sentence and select only the required words.' },
       { title: 'Rebuild and count', text: 'Read the completed sentence aloud, remove duplication and count the final response.' },
     ]}
-    weakExample="Frame: ‘during ___’; passage: ‘during long summer afternoons’; answer: ‘long summer afternoons’ under a two-word limit."
-    strongExample="Answer ‘summer afternoons’: it keeps the required time meaning, fits after during and stays within two words."
+    tutorGuide={tutorGuide}
     practice={<WordLimitGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<WordLimitIndependentPractice passage={independentPassage} />}
     progressEngine={<WordLimitProgressEngine />}

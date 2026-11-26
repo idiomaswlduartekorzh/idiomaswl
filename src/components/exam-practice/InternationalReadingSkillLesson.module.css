@@ -261,9 +261,6 @@
   font: 900 0.83rem/1 var(--mono);
 }
 
-.good { border-top: 4px solid #059669; }
-.weak { border-top: 4px solid #dc2626; }
-
 .passageExcerpt {
   margin: 0 0 1rem;
   padding: clamp(1rem, 2vw, 1.5rem);
@@ -284,6 +281,51 @@
   font-size: 1.12rem;
   line-height: 1.65;
 }
+
+.passageExcerpt blockquote p { margin: 0; }
+.passageExcerpt blockquote p + p { margin-top: 0.75rem; }
+
+.tutorDecision {
+  max-width: 76ch;
+  margin-top: 1rem;
+  color: var(--wl-on-panel, var(--ink));
+}
+
+.tutorDecision h3 { margin: 0 0 0.6rem; font-size: 1.1rem; line-height: 1.45; }
+.tutorDecision p { margin: 0.65rem 0; line-height: 1.7; }
+.tutorDecision + .tutorDecision { margin-top: 1.5rem; }
+.tutorDecision .exampleInstruction { margin-bottom: 0.3rem; color: var(--muted); font-size: 0.92rem; }
+.exampleOptions { display: grid; gap: 0.35rem; margin: 0.65rem 0 1rem; padding: 0; list-style: none; line-height: 1.5; }
+
+.exampleNotes,
+.exampleTable,
+.exampleFlow li {
+  border: 1px solid var(--wl-rule);
+  background: var(--wl-surface-card, var(--bg));
+}
+
+.exampleNotes { padding: 0.75rem 1rem; border-radius: 6px; }
+.exampleNotes ul { margin: 0.4rem 0 0; padding-inline-start: 1.2rem; line-height: 1.5; }
+.exampleTable { width: min(100%, 30rem); margin: 0.75rem 0; border-collapse: collapse; }
+.exampleTable :is(th, td) { border: 1px solid var(--wl-rule); padding: 0.45rem 0.65rem; text-align: start; }
+.exampleTable thead { background: var(--wl-panel-raised, var(--bg-2)); }
+.exampleFlow { display: grid; gap: 1rem; width: fit-content; margin: 0.75rem 0; padding: 0; list-style: none; }
+.exampleFlow li { position: relative; padding: 0.5rem 0.85rem; border-radius: 4px; text-align: center; }
+.exampleFlow li + li::before { position: absolute; bottom: 100%; left: 50%; content: '↓'; line-height: 1rem; }
+
+.binDiagram {
+  display: grid;
+  grid-template: minmax(3.5rem, auto) 0.65rem minmax(2.5rem, auto) / minmax(0, 13rem) auto;
+  align-items: stretch;
+  width: min(100%, 18rem);
+  margin: 1rem 0;
+  color: var(--ink);
+}
+.binContents, .binTray { display: grid; border: 2px solid currentColor; place-items: center; }
+.binContents { grid-area: 1 / 1; border-bottom: 0; background: var(--wl-panel-raised, var(--bg-2)); }
+.binTray { grid-area: 3 / 1; border-top: 0; }
+.binLayer { grid-area: 2 / 1; border: 2px solid currentColor; background: repeating-linear-gradient(60deg, transparent 0 3px, currentColor 3px 4px); }
+.binMarker { grid-area: 2 / 2; align-self: center; font-weight: 800; line-height: 1; white-space: nowrap; }
 
 .firstNote { border-top: 3px solid var(--wl-border, var(--line-soft)); }
 .revisedNote { border-top: 3px solid var(--skill-accent); }

@@ -28,9 +28,12 @@ import type {
 } from '@/data/ielts/guided-mock';
 import {
   getIeltsGuidedCorrectItemIds,
+  readingEvidenceParts,
   normalizeIeltsGuidedAnswer,
   sanitizeIeltsGuidedIndex,
 } from '@/data/ielts/guided-mock';
+import { getReadingLearningFeedback } from '@/data/ielts/reading-learning-feedback';
+import { getListeningLearningFeedback } from '@/data/ielts/listening-learning-feedback';
 import styles from './ielts-guided.module.css';
 
 type Skill = 'listening' | 'reading' | 'writing' | 'speaking';
@@ -63,22 +66,6 @@ function questionRangeLabel(items: readonly IeltsGuidedObjectiveItem[]) {
   const first = items[0]?.number;
   const last = items.at(-1)?.number;
   return first === last ? `Pregunta ${first}` : `Preguntas ${first}–${last}`;
-}
-
-function readingEvidenceParts(item: IeltsGuidedObjectiveItem) {
-  const excerpt = item.evidence.focus;
-  if (item.kind !== 'fill') return { before: '', focus: excerpt, after: '' };
-  const normalizedExcerpt = excerpt.toLocaleLowerCase('en');
-  const literalAnswer = [...item.accepted]
-    .sort((left, right) => right.length - left.length)
-    .find(candidate => normalizedExcerpt.includes(candidate));
-  if (!literalAnswer) return { before: '', focus: excerpt, after: '' };
-  const start = normalizedExcerpt.indexOf(literalAnswer);
-  return {
-    before: excerpt.slice(0, start),
-    focus: excerpt.slice(start, start + literalAnswer.length),
-    after: excerpt.slice(start + literalAnswer.length),
-  };
 }
 
 function UnitPicker({ units, activeIndex, onChange }: {
@@ -135,7 +122,13 @@ function AnswerControl({ item, value, onChange }: {
   );
 }
 
-function Feedback({ correct, item }: { correct: boolean; item: IeltsGuidedObjectiveItem }) {
+function Feedback({ correct, item, skill, submitted, setNumber }: {
+  correct: boolean;
+  item: IeltsGuidedObjectiveItem;
+  skill: IeltsGuidedUnit['skill'];
+  submitted: string;
+  setNumber: number;
+}) {
   if (item.evidence.status === 'pending-independent-review') {
     return (
       <div className={styles.audioPending} role="status">
@@ -144,13 +137,18 @@ function Feedback({ correct, item }: { correct: boolean; item: IeltsGuidedObject
       </div>
     );
   }
+  const guide = skill === 'reading'
+    ? getReadingLearningFeedback(item, submitted, correct, setNumber)
+    : getListeningLearningFeedback(item, submitted, correct, setNumber);
+  if (!guide) return null;
   return (
     <div className={`${styles.feedback} ${correct ? styles.feedbackCorrect : styles.feedbackWrong}`} role="status">
       <span className={styles.feedbackIcon}>{correct ? <Check size={18} /> : <X size={18} />}</span>
       <div>
-        <strong>{correct ? 'Bien resuelto.' : `Respuesta: ${item.answer}`}</strong>
-        <p>{item.explanation}</p>
-        {!correct && <p className={styles.trap}><span>Por qué engaña:</span> {item.trap}</p>}
+        <strong>{correct ? 'Por qué encaja tu respuesta' : 'Cómo llegar a la respuesta'}</strong>
+        <p>{guide.reason}</p>
+        <p className={styles.trap}>{guide.retry}</p>
+        <Link className={styles.lessonLink} href={guide.link.href}>{guide.link.label} <ArrowRight size={14} aria-hidden="true" /></Link>
       </div>
     </div>
   );
@@ -204,7 +202,7 @@ function EvidenceClip({ unit, item }: { unit: IeltsGuidedUnit; item: IeltsGuided
         {playing ? <Pause size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" />}
       </button>
       <div className={styles.clipBody}>
-        <div className={styles.clipMeta}><strong>{playing ? 'Reproduciendo la pista exacta' : 'Escuchar sólo la evidencia'}</strong><span>{clip.startSeconds.toFixed(1)}s–{clip.endSeconds.toFixed(1)}s</span></div>
+        <div className={styles.clipMeta}><strong>{playing ? 'Reproduciendo el fragmento' : 'Escuchar el fragmento'}</strong><span>{clip.startSeconds.toFixed(1)}s–{clip.endSeconds.toFixed(1)}s</span></div>
         <div className={styles.wave} aria-hidden="true">{Array.from({ length: 28 }, (_, index) => <span key={index} className={index / 28 <= progress / 100 ? styles.wavePlayed : undefined} />)}</div>
       </div>
     </div>
@@ -295,11 +293,25 @@ function SourceEvidence({ unit, item }: { unit: IeltsGuidedUnit; item: IeltsGuid
   return (
     <div className={unit.skill === 'reading' ? styles.readingEvidence : styles.evidenceBlock}>
       <div className={styles.evidenceHeading}>
-        <span>{unit.skill === 'listening' ? 'Aquí se escucha la respuesta' : 'Aquí se sustenta la respuesta'}</span>
-        <small>Evidencia aprobada y vinculada a esta pregunta</small>
+        <span>{unit.skill === 'listening' ? 'Vuelve a escuchar este momento' : 'Vuelve a estas líneas del pasaje'}</span>
+        <small>Fragmento de la fuente original</small>
       </div>
       {unit.skill === 'listening' && <EvidenceClip unit={unit} item={item} />}
-      <p>{evidence.before}<mark>{evidence.focus}</mark>{evidence.after}</p>
+      <p lang="en">{evidence.before}<mark>{evidence.focus}</mark>{evidence.after}</p>
+      {unit.skill === 'listening' && unit.audioUrl && (
+        <details key={item.id} className={styles.fullSource}>
+          <summary>Escuchar lo que se dijo antes y después</summary>
+          <audio controls preload="none" src={unit.audioUrl}
+            aria-label={`Grabación completa, pregunta ${item.number}`}
+            onLoadedMetadata={event => { event.currentTarget.currentTime = Math.max(0, (item.audioClip?.startSeconds ?? 0) - 2); }} />
+        </details>
+      )}
+      {unit.skill === 'reading' && (
+        <details key={item.id} className={styles.fullSource}>
+          <summary>Releer el pasaje completo</summary>
+          {unit.sourceText.split('\n\n').map((paragraph, index) => <p key={index} lang="en">{paragraph}</p>)}
+        </details>
+      )}
     </div>
   );
 }
@@ -520,7 +532,7 @@ export default function IeltsGuidedMockCoach({ data }: { data: IeltsGuidedMockDa
                     );
                   })}
                 </div>
-                <div className={styles.readingSubmit}><p><strong>¿Listo para comprobar?</strong><span>La frase exacta del pasaje se subraya después, respuesta por respuesta.</span></p><button type="button" className={styles.primaryButton} disabled={!unitReady(unit)} onClick={() => { setItemIndex(0); setMode('review'); markReviewed(unit.items[0]); }}>Verificar respuestas <ArrowRight size={16} /></button></div>
+                <div className={styles.readingSubmit}><p><strong>¿Listo para comprobar?</strong><span>Al verificar podrás comparar tu respuesta con las palabras del pasaje y volver a leer el texto.</span></p><button type="button" className={styles.primaryButton} disabled={!unitReady(unit)} onClick={() => { setItemIndex(0); setMode('review'); markReviewed(unit.items[0]); }}>Verificar respuestas <ArrowRight size={16} /></button></div>
               </aside>
             </div>
           )
@@ -531,7 +543,7 @@ export default function IeltsGuidedMockCoach({ data }: { data: IeltsGuidedMockDa
               <div className={styles.questionMeta}><span>Pregunta {item.number}</span><small>{item.prompt}</small></div>
               <h3>{item.frame}</h3>
               <div className={styles.answerComparison}><div><span>Tu respuesta</span><strong>{answers[item.id]}</strong></div>{item.evidence.status === 'approved-excerpt' ? <div className={isCorrect(item) ? styles.answerRight : styles.answerCorrection}><span>Respuesta correcta</span><strong>{item.answer} {isCorrect(item) && <Check size={16} />}</strong></div> : <div><span>Respuesta correcta</span><strong>Pendiente de revisión</strong></div>}</div>
-              <Feedback correct={isCorrect(item)} item={item} />
+              <Feedback correct={isCorrect(item)} item={item} skill={unit.skill} submitted={answers[item.id] ?? ''} setNumber={data.setNumber} />
               <SourceEvidence unit={unit} item={item} />
             </div>
             <div className={styles.lessonFooter}><button type="button" className={styles.secondaryButton} onClick={() => itemIndex === 0 ? setMode('practice') : setItemIndex(itemIndex - 1)}><ArrowLeft size={16} />{itemIndex === 0 ? 'Volver a respuestas' : 'Anterior'}</button><span>Comprueba la relación entre pregunta, clave y fuente.</span><button type="button" className={styles.primaryButton} onClick={next}>{itemIndex < unit.items.length - 1 ? 'Siguiente corrección' : unitIndex < units.length - 1 ? 'Siguiente bloque' : isListening ? 'Continuar con Reading' : 'Continuar con Writing'} <ArrowRight size={16} /></button></div>

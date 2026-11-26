@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing/rubrica';
-const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test';
+const IELTS_ACADEMIC_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing';
 const IELTS_ACADEMIC_SAMPLE_URL = 'https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test';
+const IELTS_SCORING_URL = 'https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail';
 
 const FAQS = [
   {
@@ -21,62 +22,72 @@ const FAQS = [
   {
     question: '¿Puedo calcular mi band score exacto con esta página?',
     answer:
-      'No. La página ayuda a detectar problemas visibles y priorizar revisión. La banda real depende de evaluación oficial o de un profesor entrenado con muestras completas.',
+      'Aquí puedes encontrar una mejora en tu propio texto. Un tutor puede orientarte sobre tu nivel a partir de respuestas completas. La puntuación oficial la asignan los examinadores de IELTS.',
   },
 ];
 
 const criteria = [
   {
     name: 'Task Achievement / Task Response',
-    task1: 'Selecciona rasgos principales, compara datos relevantes y evita describir cada número sin jerarquía.',
-    task2: 'Responde exactamente la pregunta, sostiene una posición y desarrolla ideas con razones y ejemplos.',
-    warning: 'El texto parece correcto, pero no responde el foco del prompt.',
-    action: 'Subraya el verbo de la pregunta y escribe una oración que responda ese verbo antes de redactar.',
+    task1: 'Tapa los párrafos de detalle. Si solo pudieras leer tu overview, ¿qué sabrías del gráfico? Comprueba que puedes señalar en la figura el patrón que describes.',
+    task2: 'Vuelve a la última línea de la consigna. Si pide explicar dos posturas y dar tu opinión, localiza en tu ensayo dónde haces cada una de esas tres cosas.',
+    action: 'Corrige primero lo que falta. Un ejemplo nuevo sirve cuando ayuda a cumplir una parte concreta del encargo.',
   },
   {
     name: 'Coherence and Cohesion',
-    task1: 'Agrupa datos por patrón: tendencia, contraste, pico, caída, categoría dominante o cambio espacial.',
-    task2: 'Usa párrafos con una idea principal, progresión lógica y conectores que muestran relación real.',
-    warning: 'Hay conectores, pero las ideas saltan o se repiten.',
-    action: 'Escribe el plan en cuatro líneas: introducción, idea 1, idea 2, cierre. Cada línea debe tener función distinta.',
+    task1: 'Lee un párrafo y ponle un título al margen. «Los dos materiales con tasas más altas» da al lector una razón para encontrar esos datos juntos.',
+    task2: 'Toma la oración que precede al ejemplo y la que le sigue. ¿Queda claro cómo ese caso ayuda a entender la razón del párrafo?',
+    action: 'Si has escrito «Furthermore», cubre esa palabra un momento. Decide si necesitas añadir otra idea, mostrar una consecuencia o explicar mejor la que ya tienes.',
   },
   {
     name: 'Lexical Resource',
-    task1: 'Usa lenguaje de datos: increase, decline, remain stable, account for, respectively, compared with.',
-    task2: 'Usa vocabulario de argumento: policy, access, long-term effect, responsibility, trade-off, evidence.',
-    warning: 'El texto repite palabras del prompt o usa sinónimos imprecisos.',
-    action: 'Reemplaza solo palabras clave que entiendes bien; no cambies precisión por sonar avanzado.',
+    task1: 'Mira la unidad del eje. Un porcentaje puede ser la proporción de familias con internet o la parte del presupuesto destinada a vivienda. El sustantivo debe identificar ese grupo.',
+    task2: 'Busca una palabra amplia como «better». En el ejemplo de los autobuses, ¿quieres decir más barato, más rápido o capaz de transportar más personas?',
+    action: 'Prueba la palabra nueva dentro de la oración completa. Si cambia el grupo, la cantidad o el sentido de la afirmación, vuelve a la expresión que sí puedes justificar.',
   },
   {
     name: 'Grammatical Range and Accuracy',
-    task1: 'Controla tiempos, comparativos, superlativos, preposiciones de datos y oraciones subordinadas simples.',
-    task2: 'Combina oraciones simples y complejas sin sacrificar claridad ni concordancia.',
-    warning: 'La gramática ambiciosa oscurece la idea o genera errores básicos.',
-    action: 'Después de escribir, revisa tres zonas: sujeto-verbo, artículos/plurales y puntuación entre cláusulas.',
+    task1: 'Rodea los años y los verbos que los describen. Para un mapa propuesto para 2035, comprueba si tu frase da por terminada una construcción que todavía es un proyecto.',
+    task2: 'En la frase más larga, lee solo el sujeto y el verbo principal. Después incorpora la parte que empieza con «although», «if» o «because» y comprueba qué relación expresa.',
+    action: 'Haz una sola reparación cada vez. Primero recupera el sentido que querías dar a la frase y luego vuelve a leerla junto a la anterior.',
   },
 ];
 
 const diagnostics = [
   {
-    prompt:
-      'Task 1: “The chart shows the percentage of commuters using bicycles in three cities from 2010 to 2020.” Un estudiante escribe solo una lista de porcentajes año por año.',
-    bestCriterion: 'Task Achievement / Task Response',
-    explanation:
-      'El problema principal no es vocabulario sino selección. Task 1 necesita rasgos generales, comparaciones y agrupación de datos; listar todo sin overview debilita la respuesta.',
+    title: 'Task 1 · Una comparación que el gráfico sí permite',
+    prompt: 'El gráfico de acceso a internet muestra que A sigue por encima de B en los cinco años. El borrador dice “Region A grew the fastest”. A pasa del 30% al 88% y B pasa del 12% al 79%. ¿Qué conservarías de esa idea?',
+    bestCriterion: 'Task Achievement',
+    revision: 'Region A had the highest level of access throughout, while Region B recorded the larger increase of the two.',
+    explanation: 'A lidera en nivel, pero suma 58 puntos porcentuales y B suma 67. Puedes contar ambas cosas si distingues la altura de una línea de la diferencia entre sus extremos. En el siguiente gráfico comprueba qué cantidad estás comparando antes de usar «highest» o «fastest».',
   },
   {
-    prompt:
-      'Task 2: “Some people believe universities should focus on employability. Others think academic knowledge is more important.” El ensayo habla de educación en general, pero no contrasta las dos posturas.',
-    bestCriterion: 'Task Achievement / Task Response',
-    explanation:
-      'El ensayo se sale del foco. Para discussion essays, la respuesta debe cubrir ambas posturas y normalmente añadir posición propia si el prompt lo pide.',
+    title: 'Task 2 · Una postura que falta',
+    prompt: 'La pregunta sobre las entradas a museos pide discutir las dos posturas y dar tu opinión. Tu ensayo explica el costo para una familia y el mantenimiento de la colección. Terminas con “Both views are understandable”. ¿Qué parte queda pendiente?',
+    bestCriterion: 'Task Response',
+    revision: 'I would keep the permanent collection free so families can return, and charge for special exhibitions to help cover their costs.',
+    explanation: 'Las dos razones ya están en el cuerpo. Ahora el lector también sabe qué harías tú. Esta postura funciona si has explicado cómo afecta el precio a las visitas y por qué hacen falta fondos. Otra postura también puede responder bien si tu desarrollo la sostiene.',
   },
   {
-    prompt:
-      'Un párrafo usa “Furthermore” en tres oraciones seguidas, pero cada oración repite la misma idea con palabras distintas.',
+    title: 'Task 2 · La relación entre la razón y el ejemplo',
+    prompt: 'Un borrador dice “Buses use road space well. Furthermore, buses are efficient.” Las dos frases vuelven a la misma idea. ¿Qué podrías contar para que la segunda haga avanzar el argumento?',
     bestCriterion: 'Coherence and Cohesion',
-    explanation:
-      'El conector no crea progreso lógico. La revisión debe añadir desarrollo, ejemplo o consecuencia, no solo más marcadores discursivos.',
+    revision: 'One full bus can carry commuters who would otherwise take up space in separate cars. A city with a crowded main road could add a bus service before widening the street.',
+    explanation: 'Ahora se ve el mecanismo y una decisión concreta sobre el dinero público. Prueba a leer tu párrafo sin los conectores para escuchar si las ideas siguen avanzando.',
+  },
+  {
+    title: 'Task 1 · Una palabra que altera la unidad',
+    prompt: 'La figura de presupuesto familiar muestra que la proporción dedicada a vivienda pasó del 22% al 31%. El borrador dice “The share rose by nine per cent”. ¿Cómo nombrarías la diferencia al restar las cifras?',
+    bestCriterion: 'Lexical Resource',
+    revision: 'The share of household spending on housing rose by nine percentage points.',
+    explanation: 'Al restar dos porcentajes, la diferencia se expresa en puntos porcentuales. Un aumento relativo del nueve por ciento sobre 22% daría alrededor de 24%. Busca otra comparación en tu informe y comprueba la unidad.',
+  },
+  {
+    title: 'Task 2 · El verbo de una frase larga',
+    prompt: 'En el ensayo sobre el precio de las entradas aparece “Although the cost of tickets are high, a family may still pay for a special exhibition”. ¿Con qué palabra concuerda «are»?',
+    bestCriterion: 'Grammatical Range and Accuracy',
+    revision: 'Although the cost of tickets is high, a family may still pay for a special exhibition.',
+    explanation: 'Tapa «of tickets» y lee «the cost is high». El sujeto de esa parte es «cost». Conserva «although» porque la segunda idea introduce una excepción. Prueba la misma lectura en una de tus frases largas.',
   },
 ];
 
@@ -163,11 +174,10 @@ export default function Page() {
               <span className="ink-line" />
               IELTS Academic Writing
             </p>
-            <h1 style={{ margin: 0, maxWidth: 780 }}>IELTS Writing rúbrica y checklist de autoevaluación</h1>
+            <h1 style={{ margin: 0, maxWidth: 780 }}>Cómo revisar tu borrador de IELTS Writing</h1>
             <p style={{ maxWidth: 740, color: 'var(--muted)', fontSize: '1.02rem', lineHeight: 1.75 }}>
-              Esta página convierte los criterios de IELTS Writing en decisiones de revisión. No calcula una banda
-              oficial; te ayuda a ver si tu respuesta cumple la tarea, organiza ideas, usa vocabulario preciso y
-              mantiene control gramatical antes de pasar a un profesor o simulacro completo.
+              Abre tu borrador junto al gráfico o la consigna. Elige un párrafo y busca una frase que puedas mejorar.
+              Las preguntas de esta rúbrica te ayudan a encontrarla. Más abajo puedes ensayar la revisión con cinco fragmentos del curso.
             </p>
           </section>
 
@@ -201,41 +211,15 @@ export default function Page() {
 
           <section aria-labelledby="criteria" style={{ marginBottom: '2rem' }}>
             <h2 id="criteria">Criterios convertidos en acciones de revisión</h2>
-            <div style={{ overflowX: 'auto' }}>
-              <table style={{ width: '100%', minWidth: 860, borderCollapse: 'collapse' }}>
-                <thead>
-                  <tr>
-                    {['Criterio', 'Task 1', 'Task 2', 'Señal de alerta', 'Acción'].map((heading) => (
-                      <th
-                        key={heading}
-                        scope="col"
-                        style={{
-                          textAlign: 'left',
-                          padding: '0.75rem',
-                          borderBottom: '1px solid var(--line-soft)',
-                          color: 'var(--muted)',
-                          fontSize: '0.82rem',
-                        }}
-                      >
-                        {heading}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {criteria.map((criterion) => (
-                    <tr key={criterion.name}>
-                      <th scope="row" style={{ textAlign: 'left', padding: '0.75rem', borderBottom: '1px solid var(--line-soft)' }}>
-                        {criterion.name}
-                      </th>
-                      <td style={{ padding: '0.75rem', borderBottom: '1px solid var(--line-soft)' }}>{criterion.task1}</td>
-                      <td style={{ padding: '0.75rem', borderBottom: '1px solid var(--line-soft)' }}>{criterion.task2}</td>
-                      <td style={{ padding: '0.75rem', borderBottom: '1px solid var(--line-soft)' }}>{criterion.warning}</td>
-                      <td style={{ padding: '0.75rem', borderBottom: '1px solid var(--line-soft)' }}>{criterion.action}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '1rem' }}>
+              {criteria.map((criterion) => (
+                <article className="wl-card" key={criterion.name} style={{ padding: '1rem', lineHeight: 1.65 }}>
+                  <h3 lang="en" style={{ marginTop: 0 }}>{criterion.name}</h3>
+                  <p><strong>Task 1.</strong> {criterion.task1}</p>
+                  <p><strong>Task 2.</strong> {criterion.task2}</p>
+                  <p style={{ marginBottom: 0 }}>{criterion.action}</p>
+                </article>
+              ))}
             </div>
           </section>
 
@@ -264,16 +248,16 @@ export default function Page() {
               Lee cada caso y decide qué criterio limita más la respuesta. Después compara con la explicación.
             </p>
             <div style={{ display: 'grid', gap: '1rem' }}>
-              {diagnostics.map((item, index) => (
+              {diagnostics.map((item) => (
                 <article key={item.prompt} style={{ border: '1px solid var(--line-soft)', borderRadius: 8, padding: '1rem', background: 'var(--wl-surface-card)' }}>
-                  <p style={{ marginTop: 0, fontWeight: 800 }}>Caso {index + 1}</p>
+                  <h3 style={{ marginTop: 0 }}>{item.title}</h3>
                   <p style={{ lineHeight: 1.65 }}>{item.prompt}</p>
-                  <p style={{ marginBottom: '0.35rem' }}>
-                    <strong>Criterio principal:</strong> {item.bestCriterion}
-                  </p>
-                  <p style={{ color: 'var(--muted)', lineHeight: 1.65, marginBottom: 0 }}>
-                    <strong style={{ color: 'var(--ink)' }}>Explicación:</strong> {item.explanation}
-                  </p>
+                  <details>
+                    <summary style={{ cursor: 'pointer', fontWeight: 700 }}>Comparar mi revisión</summary>
+                    <p><strong>Criterio principal:</strong> <span lang="en">{item.bestCriterion}</span></p>
+                    <p lang="en" style={{ lineHeight: 1.65 }}><em>{item.revision}</em></p>
+                    <p style={{ lineHeight: 1.65 }}><strong>Explicación:</strong> {item.explanation}</p>
+                  </details>
                 </article>
               ))}
             </div>
@@ -317,12 +301,17 @@ export default function Page() {
             <ul>
               <li>
                 <a href={IELTS_ACADEMIC_URL} rel="noreferrer" target="_blank">
-                  IELTS Academic test format and sections
+                  Formato y criterios oficiales de IELTS Academic Writing
                 </a>
               </li>
               <li>
                 <a href={IELTS_ACADEMIC_SAMPLE_URL} rel="noreferrer" target="_blank">
                   IELTS Academic sample test questions
+                </a>
+              </li>
+              <li>
+                <a href={IELTS_SCORING_URL} rel="noreferrer" target="_blank">
+                  Cómo se ponderan los criterios y las tareas de Writing
                 </a>
               </li>
             </ul>

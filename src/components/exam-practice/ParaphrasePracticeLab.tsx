@@ -8,6 +8,7 @@ import {
   PARAPHRASE_STORAGE_KEY,
   getParaphraseOptions,
   getParaphrasePassage,
+  normalizeParaphraseDraftAnswers,
   type ParaphraseDecision,
   type ParaphraseErrorCode,
   type ParaphraseTrainingPassage,
@@ -57,8 +58,7 @@ function normalizeProgress(value: unknown): StoredProgress {
     ? Object.fromEntries(Object.entries(parsed.drafts).flatMap(([id, raw]) => {
       if (!knownLevels.has(id) || !raw || typeof raw !== 'object' || Array.isArray(raw)) return [];
       const draft = raw as Partial<AttemptDraft>;
-      const answers = draft.answers && typeof draft.answers === 'object' && !Array.isArray(draft.answers)
-        ? Object.fromEntries(Object.entries(draft.answers).filter((row): row is [string, string] => typeof row[1] === 'string')) : {};
+      const answers = normalizeParaphraseDraftAnswers(draft.answers);
       return [[id, { answers, elapsed: nonNegativeInteger(draft.elapsed), attemptSeed: nonNegativeInteger(draft.attemptSeed) }]];
     })) : {};
   const unlockedLevel = Math.min(PARAPHRASE_LEVELS.length - 1, nonNegativeInteger(parsed.unlockedLevel));

@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_SKILL_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import { InferenceGuidedPractice, InferenceIndependentPractice, InferenceProgressEngine } from '@/components/exam-practice/InferencePracticeLab';
 import { IELTS_READING_SKILLS, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 import { INFERENCE_GUIDED_PASSAGE_ID, INFERENCE_INDEPENDENT_PASSAGE_ID, getInferencePassage } from '@/data/practica-exams/ielts-reading-inference-progress';
 
+const tutorGuide = READING_SKILL_GUIDES['inferencia'];
 const ROUTE = IELTS_READING_SKILLS.find((item) => item.slug === 'inferencia')!;
 const TITLE = 'Inference: reach the safest conclusion the evidence allows';
 const DESCRIPTION = 'Combine explicit clues without importing outside knowledge, exaggerating certainty or turning a possible conclusion into a stated fact.';
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return <InternationalReadingSkillLesson
     slug="inferencia" name="Inference" title={TITLE} description={DESCRIPTION}
-    directAnswer="A sound inference is not a guess. It is the smallest conclusion that connects two or more explicit clues without adding a new cause, rule, attitude or degree of certainty."
+    directAnswer={tutorGuide.introduction}
     facts={[{ label: 'Start with', value: 'Explicit clues' }, { label: 'Choose', value: 'Safest claim' }, { label: 'Avoid', value: 'Outside knowledge' }]}
     outcomes={[
       { title: 'Separate text from assumption', text: 'Notice when an option sounds reasonable in the real world but has no support in the passage.' },
@@ -35,8 +37,7 @@ export default function Page() {
       { title: 'Form the minimum bridge', text: 'Connect those facts with the least additional assumption possible.' },
       { title: 'Stress-test every option', text: 'Reject options with invented causes, extreme language or a conclusion wider than the evidence.' },
     ]}
-    weakExample="The passage says visits rose after a renovation, so the renovation must have made every resident happier."
-    strongExample="Visits rose while workshop attendance grew and novel borrowing stayed flat, so the new use probably came from services beyond traditional borrowing."
+    tutorGuide={tutorGuide}
     practice={<InferenceGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<InferenceIndependentPractice passage={independentPassage} />}
     progressEngine={<InferenceProgressEngine />}

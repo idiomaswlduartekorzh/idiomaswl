@@ -331,6 +331,7 @@ for (const type of EXPECTED_TYPES) {
 const canonicos = new Set((bodyOne.BODY_ONE_LESSONS ?? []).flatMap((lesson) => lesson.examples.map((example) => example.prompt)))
 const idsBanco = new Set()
 const enunciadosBanco = new Set()
+const longitudesPublicadas = []
 
 for (const item of prompts) {
   const etiqueta = `tarea-completa/${item.title ?? '(sin título)'}`
@@ -351,8 +352,14 @@ for (const item of prompts) {
     if (!paragraph.text?.trim()) failures.push(`${etiqueta}: «${paragraph.label}» está vacío.`)
     if (!paragraph.job?.trim()) failures.push(`${etiqueta}: «${paragraph.label}» no dice qué hace.`)
   }
-  if (item.modelWords < PALABRAS_MINIMAS) {
-    failures.push(`${etiqueta}: el modelo tiene ${item.modelWords} palabras. La tarea exige ${PALABRAS_MINIMAS}: un modelo por debajo enseña lo contrario de lo que pide.`)
+  const textoPublicado = (item.model ?? []).map(parrafo => parrafo.text ?? '').join(' ')
+  const longitud = textoPublicado.trim().split(/\s+/u).filter(Boolean).length
+  longitudesPublicadas.push(longitud)
+  if (item.modelWords !== longitud) {
+    failures.push(`${etiqueta}: la interfaz anuncia ${item.modelWords} palabras, pero los párrafos publicados contienen ${longitud}.`)
+  }
+  if (longitud < PALABRAS_MINIMAS) {
+    failures.push(`${etiqueta}: el modelo publicado tiene ${longitud} palabras. La tarea exige ${PALABRAS_MINIMAS}.`)
   }
   if (!item.watchFor?.length) {
     failures.push(`${etiqueta}: sin errores típicos que revisar. Es lo que sustituye a la puntuación automática.`)
@@ -1231,7 +1238,7 @@ if (failures.length) {
   const totalDrills = drillsByType.reduce((sum, [, list]) => sum + list.length, 0)
   console.log(`IELTS Task 2 alineado: ${lessons.length} tipos × ${EXPECTED_EXAMPLES} ejemplos, ${seen.size} identificadores únicos, cada tema en su enunciado.`)
   console.log(`Motor de análisis: ${totalDrills} preguntas, ${usoDistractor.size} distractores distintos, ${secuencias.size} secuencias de letras, un mensaje por opción.`)
-  const cortos = Math.min(...prompts.map((item) => item.modelWords))
+  const cortos = Math.min(...longitudesPublicadas)
   console.log(`Tarea Completa: ${prompts.length} enunciados en ${EXPECTED_TYPES.length} familias, ensayo modelo de 4 párrafos, el más corto de ${cortos} palabras.`)
   console.log(`Cadena del curso: los ${(introduction.ESSAY_TYPES ?? []).reduce((n, t) => n + t.examples.length, 0)} enunciados de la introducción existen en análisis, Body 1, Body 2 y conclusión.`)
   console.log(`Tipo de ensayo: ${typeDrills.length} enunciados (posiciones ${posiciones.join(',')}), ${misreadCases.length} ensayos mal leídos, ninguna pista delata y ninguna promesa de banda.`)

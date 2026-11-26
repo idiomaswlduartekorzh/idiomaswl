@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   MatchingHeadingsGuidedPractice,
@@ -13,6 +14,7 @@ import {
   getMatchingHeadingsPassage,
 } from '@/data/practica-exams/ielts-reading-matching-headings-progress';
 
+const tutorGuide = READING_FORMAT_GUIDES['matching-headings'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'matching-headings')!;
 const TITLE = 'IELTS Matching Headings: match the whole paragraph function';
 const DESCRIPTION = 'Learn to identify a paragraph’s central purpose, reject detail-level distractors and prove one heading across the whole paragraph.';
@@ -46,7 +48,7 @@ export default function Page() {
       name="Matching Headings"
       title={TITLE}
       description={DESCRIPTION}
-      directAnswer="Read the paragraph before the options, name its complete job in your own words, and choose the one heading that covers the opening, development and conclusion. Each heading can be used once; two headings remain unused."
+      directAnswer={tutorGuide.introduction}
       facts={[
         { label: 'Target', value: 'Main idea + function' },
         { label: 'Evidence', value: 'Whole paragraph' },
@@ -63,8 +65,7 @@ export default function Page() {
         { title: 'Eliminate narrow options', text: 'Reject headings that cover only one example, sentence or repeated word.' },
         { title: 'Prove one-to-one coverage', text: 'Choose one unused heading that works as the title of the complete paragraph, then test the closest competitor.' },
       ]}
-      weakExample="Choose the heading with the most repeated vocabulary, even if it describes only one supporting example."
-      strongExample="Summarise the paragraph as ‘a useful method with context-dependent limits’, reject the universal-solution heading as too broad, and verify that the remaining heading covers both the result and its qualification."
+      tutorGuide={tutorGuide}
       practice={<MatchingHeadingsGuidedPractice passage={guidedPassage} />}
       independentPracticeExperience={<MatchingHeadingsIndependentPractice passage={independentPassage} />}
       progressEngine={<MatchingHeadingsProgressEngine />}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InternationalReadingSkillLesson from '@/components/exam-practice/InternationalReadingSkillLesson';
+import { READING_FORMAT_GUIDES } from '@/data/practica-exams/ielts-reading-tutor-guides';
 import SkillReviewSourceBlock from '@/components/exam-practice/SkillReviewSourceBlock';
 import {
   ShortAnswerGuidedPractice,
@@ -14,6 +15,7 @@ import {
 } from '@/data/practica-exams/ielts-reading-short-answer-progress';
 import { IELTS_READING_TYPES, PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
+const tutorGuide = READING_FORMAT_GUIDES['short-answer'];
 const ROUTE = IELTS_READING_TYPES.find((item) => item.slug === 'short-answer')!;
 const TITLE = 'Short Answer: answer the exact factual question';
 const DESCRIPTION = 'Classify what the question asks for, follow the passage evidence in order and copy the smallest exact span that answers that target within the displayed word limit.';
@@ -39,7 +41,7 @@ export default function Page() {
     title={TITLE}
     description={DESCRIPTION}
     accent="#be123c"
-    directAnswer="Read the word limit first. Classify the requested target—person, place, time, quantity, object, reason or result—then scan in question order and copy only the exact passage words that answer it."
+    directAnswer={tutorGuide.introduction}
     facts={[
       { label: 'Target', value: 'One precise factual detail' },
       { label: 'Evidence', value: 'Question focus + ordered passage span' },
@@ -56,8 +58,7 @@ export default function Page() {
       { title: 'Locate the next evidence zone', text: 'Follow question order, scan for meaning and read enough context to reject nearby true details.' },
       { title: 'Copy minimally and rebuild', text: 'Insert the smallest exact passage span, then reread question plus answer for scope, grammar and word count.' },
     ]}
-    weakExample="Copy a full sentence because it contains the topic words from the question."
-    strongExample="The question asks where the event takes place, so reject a nearby time expression and copy only the two-word location that answers the requested target."
+    tutorGuide={tutorGuide}
     practice={<ShortAnswerGuidedPractice passage={guidedPassage} />}
     independentPracticeExperience={<ShortAnswerIndependentPractice passage={independentPassage} />}
     progressEngine={<ShortAnswerProgressEngine />}

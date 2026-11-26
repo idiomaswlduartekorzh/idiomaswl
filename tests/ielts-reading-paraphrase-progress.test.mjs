@@ -10,6 +10,7 @@ import {
   PARAPHRASE_STORAGE_KEY,
   getParaphraseOptions,
   getParaphrasePassage,
+  normalizeParaphraseDraftAnswers,
 } from '../src/data/practica-exams/ielts-reading-paraphrase-progress.ts';
 
 test('guided, independent and progress pools remain separated', () => {
@@ -45,6 +46,19 @@ test('the engine has two control drills followed by four full passage sets', () 
   assert.equal(PARAPHRASE_LEVELS.length, 6);
   assert.ok(PARAPHRASE_LEVELS.slice(0, 2).every((level) => level.decisionIds?.length === 4 && level.masteryScore === 3));
   assert.ok(PARAPHRASE_LEVELS.slice(2).every((level) => !level.decisionIds && level.passageIds.length === 1 && level.masteryScore === 4));
+});
+
+test('the cooling comparison qualifies the rural group and restores only the previous accepted choice', () => {
+  const item = getParaphrasePassage(PARAPHRASE_GUIDED_PASSAGE_ID).decisions.find(decision => decision.id === 'cooling-para-a');
+  assert.match(item.source, /than many rural surfaces/);
+  assert.match(item.answer, /than many rural surfaces/);
+  const oldAnswer = 'Many built surfaces take in and retain more energy from the sun than rural ones.';
+  const saved = { [item.id]: oldAnswer, 'cooling-para-b': oldAnswer };
+  assert.deepEqual(normalizeParaphraseDraftAnswers(saved), { [item.id]: item.answer, 'cooling-para-b': oldAnswer });
+  for (const answer of [item.answer, ...item.distractors]) {
+    assert.equal(normalizeParaphraseDraftAnswers({ [item.id]: answer })[item.id], answer);
+  }
+  assert.equal(saved[item.id], oldAnswer);
 });
 
 test('option order is deterministic, varied and defeats always-first', () => {
