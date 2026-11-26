@@ -139,8 +139,9 @@ Fecha de corte: 25 de agosto de 2026.
 ## Práctica de ajedrez: mates, tácticas y aperturas — 25 de noviembre de 2026
 
 - Trabajo `ajedrez-mates-tacticas-aperturas-20261125`, responsable Codex. Estado
-  `EN_VALIDACION`; rama `codex/ajedrez-mates-tacticas-aperturas-20261125`, creada
-  desde `origin/main@5793e1f24`. No está integrada ni desplegada.
+  `LISTO_PARA_INTEGRAR`; rama `codex/ajedrez-mates-tacticas-aperturas-20261125`, creada
+  desde `origin/main@5793e1f24` y actualizada hasta `origin/main@c4e8e2c79`.
+  No está integrada ni desplegada.
 - Alcance: menú funcional de mates, tácticas, aperturas y finales; siete líneas
   guiadas de la Italiana con blancas y ocho de la Caro-Kann con negras; respuesta
   rival automática, explicación por jugada, selector accesible de movimientos y
@@ -149,8 +150,9 @@ Fecha de corte: 25 de agosto de 2026.
   línea de cada apertura y un mate en Chrome, Firefox y WebKit; arrastre de una
   pieza y resaltado de jugadas en los tres motores; progreso tras recarga y
   ancho móvil de 390 px. Pasaron la prueba E2E dirigida, el catálogo protegido,
-  TypeScript y la compilación completa de Next.js. La versión instalada de
-  Next.js emitió un aviso de seguridad que requiere actualización separada.
+  TypeScript y el build completo de Next.js 16.4.5 con 5.368 páginas, después
+  de reconciliar la rama con `main`. La actualización puntual de Next.js evita
+  el bloqueo de CI por la [alerta corregida en 16.4.5](https://github.com/advisories/GHSA-mfr8-8qww-v76h).
   [Estado técnico](ajedrez-estado.md).
 
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026

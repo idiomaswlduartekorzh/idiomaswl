@@ -33,6 +33,9 @@ No se presenta como repertorio universal frente a todas las primeras jugadas.
   está en `app.js` y las líneas pedagógicas en `openings.js`.
 - chess.js 1.4.0 (BSD-2-Clause) y cm-chessboard 8.15.8 (MIT) se sirven como
   archivos locales con sus licencias. El service worker usa una caché versionada.
+- Next.js quedó fijado en 16.4.5, versión que permite completar el build sin
+  el bloqueo de seguridad de 16.4.3. El catálogo protegido, TypeScript y la
+  compilación completa de 5.368 páginas pasaron tras la actualización.
 - `tests/chess-opening-lines.test.mjs` valida legalidad, unicidad y turno final
   de las 15 líneas. `tests/e2e/chess-practice.spec.ts` recorre una línea completa
   de cada apertura, cambia a tácticas y comprueba el ancho móvil.
