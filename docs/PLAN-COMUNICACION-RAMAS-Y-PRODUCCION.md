@@ -29,6 +29,14 @@ Fecha de corte: 25 de agosto de 2026.
   el nuevo caso, los ejemplos, su contraste en modo claro y oscuro y el modelo
   en escritorio y móvil.
 
+- Segunda revisión. La pregunta compara el desempeño académico durante la
+  carrera con el desempeño en las prácticas del último semestre. Cada postura
+  tiene un modelo desplegable que usa el vocabulario de las tarjetas. Vercel
+  publicó `main@49b98f5c7d5dc00781df949b0e34bac34b1c6802` en
+  `dpl_ECmZpbekC6rrXkEaxhpi4RKV39sP` (`READY`). Pasaron la compilación y el
+  recorrido público en escritorio y móvil, incluida la apertura y el cierre
+  independiente de los dos modelos.
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
