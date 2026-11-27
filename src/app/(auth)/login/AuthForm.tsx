@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { safeCourseReturnPath } from '@/lib/course-pricing/payment';
 import { formatCOP, PLANS, type CoursePlanId } from '@/lib/course-pricing/catalog';
 import {
   STUDENT_PATHS,
@@ -14,6 +13,7 @@ import {
   guidedLanguagePurchasePath,
   registrationIntentMetadata,
   registrationPurchasePath,
+  safeStudentReturnPath,
   xpressClassPurchasePath,
   type RegistrationIntent,
   type StudentPath,
@@ -58,7 +58,7 @@ export default function AuthForm({
   const [studentPath, setStudentPath] = useState<StudentPath | null>(initialIntent?.path ?? null);
   const [language, setLanguage] = useState<WelearnLanguage | ''>(initialIntent?.language ?? '');
   const [coursePlan, setCoursePlan] = useState<CoursePlanId | ''>(initialIntent?.path === 'welearn' ? initialIntent.plan : '');
-  const [exam, setExam] = useState<XpressExamSlug | ''>(initialIntent?.path === 'exam' ? initialIntent.exam : '');
+  const [exam, setExam] = useState<XpressExamSlug | ''>(initialIntent?.exam ?? '');
   const [examPlan, setExamPlan] = useState<AutodidactaPlanId | ''>(initialIntent?.path === 'exam' ? initialIntent.plan : '');
   const [examPreparationMode, setExamPreparationMode] = useState<ExamPreparationMode | ''>(initialIntent?.path === 'exam' ? 'self' : '');
   const [registrationStep, setRegistrationStep] = useState<1 | 2 | 3>(initialIntent ? 3 : 1);
@@ -68,14 +68,14 @@ export default function AuthForm({
   const router = useRouter();
 
   const registrationIntent = (): RegistrationIntent | null => {
-    if (studentPath === 'welearn' && language && coursePlan) return { path: 'welearn', language, plan: coursePlan };
+    if (studentPath === 'welearn' && language && coursePlan) return { path: 'welearn', language, plan: coursePlan, ...(exam ? { exam } : {}) };
     if (studentPath === 'exam' && language && exam && examPreparationMode === 'self' && examPlan) {
       return { path: 'exam', language, exam, plan: examPlan };
     }
     return null;
   };
 
-  const returnPath = () => safeCourseReturnPath(new URLSearchParams(window.location.search).get('next'));
+  const returnPath = () => safeStudentReturnPath(new URLSearchParams(window.location.search).get('next'), true);
   const registrationReady = mode === 'login' || registrationIntent() !== null;
 
   // ── Auth error normalisation ──────────────────────────────────────────────
@@ -118,7 +118,7 @@ export default function AuthForm({
     if (mode === 'login') {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) { setError(normalizeLoginError(error.message)); setLoading(false); return; }
-      router.push(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')));
+      router.push(returnPath());
       router.refresh();
     } else {
       const intent = registrationIntent();
@@ -128,7 +128,7 @@ export default function AuthForm({
         return;
       }
       const requestedReturn = new URLSearchParams(window.location.search).get('next');
-      const completionPath = registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : registrationPurchasePath(intent));
+      const completionPath = registrationCompletionPath(intent, requestedReturn ? safeStudentReturnPath(requestedReturn) : registrationPurchasePath(intent));
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
@@ -162,7 +162,7 @@ export default function AuthForm({
     }
     const requestedReturn = new URLSearchParams(window.location.search).get('next');
     const next = intent
-      ? registrationCompletionPath(intent, requestedReturn ? safeCourseReturnPath(requestedReturn) : registrationPurchasePath(intent))
+      ? registrationCompletionPath(intent, requestedReturn ? safeStudentReturnPath(requestedReturn) : registrationPurchasePath(intent))
       : returnPath();
     const { error: oauthError } = await supabase.auth.signInWithOAuth({
       provider,
@@ -701,13 +701,13 @@ export default function AuthForm({
           <p style={{ textAlign: 'center', fontSize: 13, color: MUTED, marginTop: '1.5rem' }}>
             {mode === 'login' ? (
               <>¿No tienes cuenta?{' '}
-                <Link href="/registro" onClick={e => { e.preventDefault(); router.push('/registro?next=' + encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))); }} style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
+                <Link href="/registro" onClick={e => { e.preventDefault(); router.push('/registro?next=' + encodeURIComponent(returnPath())); }} style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
                   Registrarse
                 </Link>
               </>
             ) : (
               <>¿Ya tienes cuenta?{' '}
-                <Link href="/login" onClick={e => { e.preventDefault(); router.push('/login?next=' + encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))); }} style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
+                <Link href="/login" onClick={e => { e.preventDefault(); router.push('/login?next=' + encodeURIComponent(returnPath())); }} style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
                   Iniciar sesión
                 </Link>
               </>

@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
+import { isIeltsMockOnePilot } from '../src/lib/ielts/mock-one-pilot.ts';
 
 const migration = await readFile(
   new URL('../supabase/migrations/20261020143934_exam_access_entitlements.sql', import.meta.url),
@@ -78,7 +79,21 @@ test('free result payloads do not include review keys or section score endpoints
     readFile(new URL('../src/app/api/practica/toefl/reading/score/route.ts', import.meta.url), 'utf8'),
   ]);
   assert.match(icfes, /toIcfesTotalResult\(result\)/);
-  assert.match(ielts, /xpressAccess\.detailedResults \? await loadIeltsMock\(mockId\) : null/);
+  // Both a new submission and an idempotent retry only return the detailed mock to an entitled learner or the active Set 1 pilot.
+  assert.equal(ielts.match(/const pilot = isIeltsMockOnePilot\(mockId\);/g)?.length, 2);
+  assert.equal(ielts.match(/const reviewMock = xpressAccess\.detailedResults \|\| pilot \? await loadIeltsMock\(mockId\) : null/g)?.length, 2);
+  const previousFlag = process.env.IELTS_MOCK1_FREE_ENABLED;
+  try {
+    for (const enabled of ['0', '1']) {
+      process.env.IELTS_MOCK1_FREE_ENABLED = enabled;
+      assert.equal(isIeltsMockOnePilot('set-1'), enabled === '1');
+      assert.equal(isIeltsMockOnePilot('set-2'), false);
+      assert.equal(isIeltsMockOnePilot('set-4'), false);
+    }
+  } finally {
+    if (previousFlag === undefined) delete process.env.IELTS_MOCK1_FREE_ENABLED;
+    else process.env.IELTS_MOCK1_FREE_ENABLED = previousFlag;
+  }
   assert.match(goethe, /automatic: xpressAccess\.detailedResults \? automatic : null/);
   assert.match(unlock, /examCan\(access\.level, 'view-detailed-results'\)/);
   assert.match(toeflScore, /hasDetailedExamResultsAccess\('toefl'\)/);

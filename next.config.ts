@@ -1,5 +1,11 @@
 import type { NextConfig } from "next";
 
+// A local Supabase stack serves Auth and Storage on a different loopback port.
+const localSupabase = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
+const devConnectOrigin = process.env.NODE_ENV === 'development' && /^http:\/\/(?:127\.0\.0\.1|localhost):\d{1,5}\/?$/.test(localSupabase)
+  ? ' ' + new URL(localSupabase).origin
+  : '';
+
 // ── Security headers applied to every response ────────────────────────────
 // See: https://owasp.org/www-project-secure-headers/
 const securityHeaders = [
@@ -64,7 +70,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
       "font-src 'self' https://fonts.gstatic.com data:",
       // Supabase project URL for storage, auth and realtime + GA4 + Meta Pixel + Cloudflare Web Analytics
-      "connect-src 'self' https://api.wompi.co https://api-sandbox.wompi.co https://sandbox.wompi.co https://production.wompi.co https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://cloudflareinsights.com https://cdn.jsdelivr.net",
+      "connect-src 'self' https://api.wompi.co https://api-sandbox.wompi.co https://sandbox.wompi.co https://production.wompi.co https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://cloudflareinsights.com https://cdn.jsdelivr.net" + devConnectOrigin,
       // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
       "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com https://cdn.jsdelivr.net",
       // GTM noscript iframe

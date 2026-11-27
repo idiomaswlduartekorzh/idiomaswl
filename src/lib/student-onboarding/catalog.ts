@@ -1,3 +1,4 @@
+import { safeCourseReturnPath } from '../course-pricing/payment.ts';
 import type { AutodidactaPlanId } from '../xpress-commerce/catalog.ts';
 import { LEVELS, PLANS, selectionPath, type CoursePlanId, type Selection } from '../course-pricing/catalog.ts';
 
@@ -130,7 +131,7 @@ export function registrationIntentMetadata(intent: RegistrationIntent) {
       student_path: 'welearn' as const,
       language: intent.language,
       subject: intent.exam ?? intent.language,
-      target_exam: intent.exam ?? null,
+      target_exam: null,
       xpress_plan_interest: null,
     };
   }
@@ -142,6 +143,38 @@ export function registrationIntentMetadata(intent: RegistrationIntent) {
     target_exam: intent.exam,
     xpress_plan_interest: intent.plan,
   };
+}
+
+type InitialProfile = {
+  student_path: string | null;
+  language: string | null;
+  subject: string | null;
+  target_exam: string | null;
+  xpress_plan_interest: string | null;
+  onboarding_completed_at: string | null;
+};
+
+export function mayInitializeRegistrationProfile(profile: InitialProfile, intent: RegistrationIntent): boolean {
+  const selection = registrationIntentMetadata(intent);
+  return profile.student_path === null && profile.onboarding_completed_at === null
+    && (profile.language === null || profile.language === selection.language)
+    && (profile.target_exam === null || profile.target_exam === selection.target_exam)
+    && (profile.xpress_plan_interest === null || profile.xpress_plan_interest === selection.xpress_plan_interest)
+    && (profile.subject === null || profile.subject === profile.language || profile.subject === selection.subject);
+}
+
+/** Sign-in may return to a specific exam or a purchase, including after an email or OAuth callback. */
+export function safeStudentReturnPath(value: string | null, allowCompletion = false): string {
+  if (!value?.startsWith('/') || value.startsWith('//') || /[\\\u0000-\u001f]/.test(value)) return '/dashboard';
+  const url = new URL(value, 'https://www.idiomaswl.com');
+  if (url.pathname === '/dashboard/student') return url.pathname;
+  const practice = /^\/examenes\/([a-z0-9-]+)\/practica\/set-[1-9]\d*(?:\/guiado)?$/.exec(url.pathname);
+  if (practice && XPRESS_EXAM_OPTIONS.some(exam => exam.id === practice[1])) return url.pathname + url.search;
+  if (allowCompletion && url.pathname === '/registro/completar') {
+    const intent = parseRegistrationIntent(Object.fromEntries(url.searchParams));
+    if (intent) return registrationCompletionPath(intent, safeStudentReturnPath(url.searchParams.get('return')));
+  }
+  return safeCourseReturnPath(value);
 }
 
 export function registrationCompletionPath(intent: RegistrationIntent, returnTo = '/dashboard'): string {

@@ -56,16 +56,19 @@ test('falla con mensajes seguros ante cuota, red, salida inválida y exceso de t
   assert.equal((await assessIeltsWritingOpenAi(base)).code, 'not_configured');
 });
 
-test('el piloto gratuito sigue cerrado en producción y solo habilita set-1', () => {
-  const originalNodeEnv = process.env.NODE_ENV;
-  process.env.IELTS_MOCK1_FREE_ENABLED = '1';
-  process.env.NODE_ENV = 'development';
-  assert.equal(isIeltsMockOnePilot('set-1'), true);
-  assert.equal(isIeltsMockOnePilot('set-2'), false);
-  process.env.NODE_ENV = 'production';
-  assert.equal(isIeltsMockOnePilot('set-1'), false);
-  process.env.NODE_ENV = originalNodeEnv;
-  delete process.env.IELTS_MOCK1_FREE_ENABLED;
+test('la bandera explícita abre únicamente el Mock 1 gratuito', () => {
+  const previousFlag = process.env.IELTS_MOCK1_FREE_ENABLED;
+  try {
+    delete process.env.IELTS_MOCK1_FREE_ENABLED;
+    assert.equal(isIeltsMockOnePilot('set-1'), false);
+    process.env.IELTS_MOCK1_FREE_ENABLED = '1';
+    assert.equal(isIeltsMockOnePilot('set-1'), true);
+    assert.equal(isIeltsMockOnePilot('set-2'), false);
+    assert.equal(isIeltsMockOnePilot('set-4'), false);
+  } finally {
+    if (previousFlag === undefined) delete process.env.IELTS_MOCK1_FREE_ENABLED;
+    else process.env.IELTS_MOCK1_FREE_ENABLED = previousFlag;
+  }
 });
 
 test('los topes duraderos mantienen acotada la prueba gratuita', () => {
