@@ -7,17 +7,20 @@ Fecha de corte: 25 de agosto de 2026.
 
 ## La hora en los ocho idiomas de gramática A1 — 26 y 27 de noviembre de 2026
 
-- Estado `EN_VALIDACION` en el [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67). El índice es `/practica/la-hora`. Cada colección A1 enlaza a su taller y la ruta de alemán sigue siendo `/practica/aleman/a1/gramatica/uhrzeit`.
+- Estado `DESPLEGADO`. El [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67) se integró en [`main@f62a67464`](https://github.com/idiomaswlduartekorzh/idiomaswl/commit/f62a674641fd1710e78fc57d7d4c690eeaecbe9a). Desde Práctica se llega a [La hora en ocho idiomas](https://www.idiomaswl.com/practica/la-hora). Cada colección A1 enlaza a su taller y la de alemán conserva [su lección de la hora](https://www.idiomaswl.com/practica/aleman/a1/gramatica/uhrzeit).
 - Inglés, francés, italiano, portugués de Brasil, coreano, japonés y ruso tienen ejemplos y explicaciones propios. Los ocho talleres incluyen seis relojes seleccionables, una lámina, conversaciones bilingües en tres escenas y práctica en seis niveles. Coreano, japonés y ruso añaden una lectura en letras latinas.
 - Las guías, los cuadernos y las soluciones usan los mismos ejemplos que la web. Se añadieron 21 PDF a los tres de alemán. Se revisaron los caracteres, las manecillas y la paginación de las siete series nuevas.
 - Las respuestas escritas se comprueban por hora y contexto. En alemán se admiten «Um drei.» y «Es ist zehn Minuten nach fünf.» donde corresponden. El último nivel comprueba la hora indicada en cada situación.
 - El recorrido local de Chromium completó los 48 niveles, con 328 respuestas modelo y un segundo intento con horas erróneas en el nivel final de cada idioma. WebKit verificó el selector y el avance de la primera pregunta en los ocho talleres.
 - El 27 de noviembre se preparó la integración desde `main@e238a3395`. El control de producción comprueba el índice público y las ocho lecciones, y conserva la auditoría de relojes en el proceso de compilación.
+- Vercel publicó el commit de `main` en [`dpl_2ZsB6g2u9pg1NhriwYyNpEJyTvms`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/2ZsB6g2u9pg1NhriwYyNpEJyTvms), entorno `Production`. El índice y las ocho lecciones respondieron HTTP 200 con el contenido y la URL canónica esperados en `www.idiomaswl.com`.
+- Desde Práctica, en sesiones anónimas de WebKit móvil y Chromium de escritorio, se abrieron las ocho lecciones, se cambió la hora y se avanzó hasta la segunda pregunta de cada una. También se comprobaron las entradas de los ocho índices A1, las láminas en seis anchos de pantalla y la redirección al registro de dos descargas protegidas.
+- La prueba de producción pasó con 65 rutas y 17 audios. También respondieron correctamente el blog, el acceso a la cuenta y la lección alemana de los verbos modales.
 
 ## La hora en alemán A1 — actualización del 25 de noviembre de 2026
 
-- La rama `codex/german-time-clocks-20261119` parte de la lección auditada en `3a6e2a38d`. La revisión visual incorpora `main@c4e8e2c79`. Su estado es `EN_VALIDACION`.
-- Codex respaldó la entrega `c2e44c867` en GitHub. El [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67) está en borrador para revisar la calificación antes de integrar en `main`.
+- La rama `codex/german-time-clocks-20261119` parte de la lección auditada en `3a6e2a38d`. La revisión visual incorpora `main@c4e8e2c79`. El 25 de noviembre estaba en `EN_VALIDACION`.
+- Codex respaldó la entrega `c2e44c867` en GitHub. El [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67) se abrió en borrador para revisar la calificación antes de la integración.
 - La lección 21 incluye seis relojes explicados, 41 ejercicios en seis niveles, una infografía y tres PDF (guía, cuaderno y soluciones). Veinte ejercicios muestran un reloj de agujas.
 - La validación original pasó el catálogo, los controles editoriales y de SEO, TypeScript y la compilación de producción. Se comprobaron la lección y su infografía en móvil y escritorio, el paso entre niveles y la representación de los tres PDF.
 - El 25 de noviembre pasaron la comparación con la línea base de producción, el catálogo (486 temas), el control de gramática alemana y TypeScript. La compilación terminó al segundo intento tras un aviso de seguridad de Next.js 16.4.3. El índice de gramática A1, la lección y la infografía con sus seis relojes respondieron HTTP 200 en local.
