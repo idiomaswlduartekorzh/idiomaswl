@@ -1,0 +1,1309 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "authenticated-student-journey",
+  "status": "PASS",
+  "reviewedAt": "2026-11-27T01:29:59.127714+00:00",
+  "reviewer": {
+    "kind": "ux-agent",
+    "id": "codex/recorrido-ielts-alumno-20261126"
+  },
+  "applicationCommit": "5123e8dd353ba01974485386d425dafdf4825868",
+  "browserReview": {
+    "status": "PASS",
+    "engine": "Google Chrome",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "mode": "Four isolated browser contexts signed in normally as the same confirmed student. Real Supabase Auth, PostgreSQL and private Storage on loopback. Synthetic speech recorded by the browser in real time. Mobile uses Chrome viewport and touch emulation.",
+    "developmentTransport": "The local Next.js development live-reload socket was isolated from the test pages so rebuilding another route cannot interrupt a recording. Application HTTP, auth, database, audio and Storage connections remained live.",
+    "baseURL": "http://127.0.0.1:3316",
+    "screenshotDirectory": "docs/previews/ielts-academico/recorrido-alumno",
+    "applicationSource": "Isolated filesystem copy of the tested Git commit with independent dependencies and static assets. Normal application requests use the local backend."
+  },
+  "registration": {
+    "before": "A confirmed learner was redirected to /registro?error=guardar. The first confirmation link also forgot the requested mock.",
+    "after": "The same learner completed onboarding from a verified login and returned to Set 2. A separately registered learner also reached the requested exam after confirming via local email and signing in.",
+    "entitlement": "Free IELTS access obtained through normal registration."
+  },
+  "databaseVerification": {
+    "distinctQaAccounts": 1,
+    "receipts": [
+      {
+        "receiptSha256": "7224dc04d7cf77e7abf75fbbdd2593e26cecd16352940ab8e13098f9d07a4abf",
+        "setId": "set-2",
+        "submissionStatus": "submitted",
+        "contentVersion": "ielts-set-2-v5",
+        "confirmedAccount": true,
+        "studentFreeAccess": true,
+        "task1Words": 173,
+        "task2Words": 278,
+        "objectiveScores": {
+          "Listening": "20/40 correct",
+          "Reading": "26/40 correct"
+        },
+        "storedSpeaking": [
+          {
+            "part": 1,
+            "durationSeconds": 35,
+            "persistedBytes": 285501,
+            "metadataMatches": true
+          },
+          {
+            "part": 2,
+            "durationSeconds": 65,
+            "persistedBytes": 529451,
+            "metadataMatches": true
+          },
+          {
+            "part": 3,
+            "durationSeconds": 55,
+            "persistedBytes": 448145,
+            "metadataMatches": true
+          }
+        ],
+        "overallPending": true,
+        "browserEvidence": [
+          {
+            "browserReceiptDigest": "7224dc04d7cf77e7",
+            "width": 390,
+            "setId": "set-2",
+            "uiStatus": "PASS",
+            "resultScreenVisible": true,
+            "savedAttemptVisible": true,
+            "matchesSet": true,
+            "matchesScore": true,
+            "browserBasicScore": "46/80",
+            "dashboardObjectiveScore": "46/80"
+          }
+        ]
+      },
+      {
+        "receiptSha256": "3040aed42f8b4e544df8695470d5f218deddea04417303fbd1663d4cb2e65bf4",
+        "setId": "set-2",
+        "submissionStatus": "submitted",
+        "contentVersion": "ielts-set-2-v5",
+        "confirmedAccount": true,
+        "studentFreeAccess": true,
+        "task1Words": 173,
+        "task2Words": 278,
+        "objectiveScores": {
+          "Listening": "20/40 correct",
+          "Reading": "26/40 correct"
+        },
+        "storedSpeaking": [
+          {
+            "part": 1,
+            "durationSeconds": 35,
+            "persistedBytes": 285501,
+            "metadataMatches": true
+          },
+          {
+            "part": 2,
+            "durationSeconds": 65,
+            "persistedBytes": 529451,
+            "metadataMatches": true
+          },
+          {
+            "part": 3,
+            "durationSeconds": 55,
+            "persistedBytes": 448145,
+            "metadataMatches": true
+          }
+        ],
+        "overallPending": true,
+        "browserEvidence": [
+          {
+            "browserReceiptDigest": "3040aed42f8b4e54",
+            "width": 1440,
+            "setId": "set-2",
+            "uiStatus": "PASS",
+            "resultScreenVisible": true,
+            "savedAttemptVisible": true,
+            "matchesSet": true,
+            "matchesScore": true,
+            "browserBasicScore": "46/80",
+            "dashboardObjectiveScore": "46/80"
+          }
+        ]
+      },
+      {
+        "receiptSha256": "47ce4c4a2511459e33eea6d3c2b896c75b5fd3a8aeaebe625c583c568b755d46",
+        "setId": "set-4",
+        "submissionStatus": "submitted",
+        "contentVersion": "ielts-set-4-v7",
+        "confirmedAccount": true,
+        "studentFreeAccess": true,
+        "task1Words": 180,
+        "task2Words": 295,
+        "objectiveScores": {
+          "Listening": "20/40 correct",
+          "Reading": "14/40 correct"
+        },
+        "storedSpeaking": [
+          {
+            "part": 1,
+            "durationSeconds": 35,
+            "persistedBytes": 285501,
+            "metadataMatches": true
+          },
+          {
+            "part": 2,
+            "durationSeconds": 65,
+            "persistedBytes": 529937,
+            "metadataMatches": true
+          },
+          {
+            "part": 3,
+            "durationSeconds": 55,
+            "persistedBytes": 448145,
+            "metadataMatches": true
+          }
+        ],
+        "overallPending": true,
+        "browserEvidence": [
+          {
+            "browserReceiptDigest": "47ce4c4a2511459e",
+            "width": 1440,
+            "setId": "set-4",
+            "uiStatus": "PASS",
+            "resultScreenVisible": true,
+            "savedAttemptVisible": true,
+            "matchesSet": true,
+            "matchesScore": true,
+            "browserBasicScore": "34/80",
+            "dashboardObjectiveScore": "34/80"
+          }
+        ]
+      },
+      {
+        "receiptSha256": "4aeeb77b5cdbd4327a7cdfc08bfd0af5e9bfae69eca9dd50b62ca4dbedd18448",
+        "setId": "set-4",
+        "submissionStatus": "submitted",
+        "contentVersion": "ielts-set-4-v7",
+        "confirmedAccount": true,
+        "studentFreeAccess": true,
+        "task1Words": 180,
+        "task2Words": 295,
+        "objectiveScores": {
+          "Listening": "20/40 correct",
+          "Reading": "14/40 correct"
+        },
+        "storedSpeaking": [
+          {
+            "part": 1,
+            "durationSeconds": 35,
+            "persistedBytes": 285501,
+            "metadataMatches": true
+          },
+          {
+            "part": 2,
+            "durationSeconds": 65,
+            "persistedBytes": 529451,
+            "metadataMatches": true
+          },
+          {
+            "part": 3,
+            "durationSeconds": 55,
+            "persistedBytes": 448145,
+            "metadataMatches": true
+          }
+        ],
+        "overallPending": true,
+        "browserEvidence": [
+          {
+            "browserReceiptDigest": "4aeeb77b5cdbd432",
+            "width": 390,
+            "setId": "set-4",
+            "uiStatus": "PASS",
+            "resultScreenVisible": true,
+            "savedAttemptVisible": true,
+            "matchesSet": true,
+            "matchesScore": true,
+            "browserBasicScore": "34/80",
+            "dashboardObjectiveScore": "34/80"
+          }
+        ]
+      }
+    ],
+    "unmatchedBrowserReceipts": [],
+    "ambiguousBrowserReceipts": [],
+    "browserCaseMatches": [
+      {
+        "set": "set-2",
+        "viewportWidth": 390,
+        "distinctReceipts": 1
+      },
+      {
+        "set": "set-2",
+        "viewportWidth": 1440,
+        "distinctReceipts": 1
+      },
+      {
+        "set": "set-4",
+        "viewportWidth": 390,
+        "distinctReceipts": 1
+      },
+      {
+        "set": "set-4",
+        "viewportWidth": 1440,
+        "distinctReceipts": 1
+      }
+    ],
+    "finalizedQaReceipts": 4,
+    "matchingDistinctReceipts": 4,
+    "allFourCasesMatch": true,
+    "allFourResultsAndHistoryVisible": true,
+    "allFourDashboardScoresMatch": true,
+    "round": "alumno-definitivo",
+    "totalFinalizedForQaAccount": 4,
+    "additionalFinalizedQaReceipts": 0,
+    "earlierFinalizedQaReceipts": 0
+  },
+  "sets": [
+    {
+      "set": 2,
+      "mockId": "set-2",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-2",
+      "contentSha256": "ef879d4442a16b155078fa3b00b382b8624990282fabab2111ddf60bfa0c81a5",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "listeningAudioPlays": true,
+        "listeningFortyAnswered": true,
+        "readingThreePassages": true,
+        "readingFortyAnswered": true,
+        "writingRendersTwoSeparateTasks": true,
+        "writingChartVisibleAndLegible": true,
+        "writingCountersMatch": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "speakingRendersThreeOrderedParts": true,
+        "speakingRecordingLimitsVisible": true,
+        "speakingPreviewPlays": true,
+        "speakingThreeRecordingsCaptured": true,
+        "all85ResponsesPresent": true,
+        "leadCapturePrecedesSubmission": true,
+        "leadCaptureSummaryVisibleBeforeSend": true,
+        "privateUploadsVerified": true,
+        "serverCompletionConfirmed": true,
+        "scoreMatchesExpected": true,
+        "studentResultVisible": true,
+        "draftRemovedAfterSuccess": true,
+        "dashboardListsAttempt": true,
+        "dashboardScoreMatchesReceipt": true,
+        "layoutFitsViewport": true,
+        "noUncaughtAppErrors": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      },
+      "observations": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "browser": "158.0.8127.38",
+          "startUTC": "2026-11-27T01:15:25.024Z",
+          "endUTC": "2026-11-27T01:29:30.124Z",
+          "objectiveExpected": {
+            "Listening": {
+              "correct": 20,
+              "total": 40
+            },
+            "Reading": {
+              "correct": 26,
+              "total": 40
+            }
+          },
+          "api": {
+            "uploadStatuses": [
+              200,
+              200,
+              200
+            ],
+            "prepare": {
+              "requestedUTC": "2026-11-27T01:29:20.887Z",
+              "respondedUTC": "2026-11-27T01:29:23.162Z",
+              "status": 200,
+              "ok": true,
+              "uploadCount": 3
+            },
+            "complete": {
+              "requestedUTC": "2026-11-27T01:29:23.310Z",
+              "respondedUTC": "2026-11-27T01:29:23.365Z",
+              "status": 200,
+              "ok": true,
+              "sameReceipt": true,
+              "receiptDigest": "3040aed42f8b4e54",
+              "score": "46/80",
+              "access": "public"
+            }
+          },
+          "recordedSeconds": [
+            35,
+            65,
+            55
+          ],
+          "totalProgress": "85/85 answered",
+          "draft": {
+            "contentVersion": "ielts-set-2-v5+balanced-positions-v1",
+            "beforeTimerText": "163:52",
+            "afterTimerText": "163:48",
+            "beforeTimerSeconds": 9832,
+            "afterTimerSeconds": 9828,
+            "deadlineUTC": "2026-11-27T03:59:26.872Z",
+            "absoluteDeadlineUnchanged": true
+          },
+          "layout": {
+            "intro": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "listening": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "reading": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "writing": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "speaking": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "contact": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "results": {
+              "visible": 1440,
+              "content": 1440
+            }
+          },
+          "dashboardBefore": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 0,
+            "sectionAvailable": true
+          },
+          "dashboardAfter": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 2,
+            "sectionAvailable": true,
+            "action": "Seguir practicando →",
+            "objectiveScoreShown": "46/80"
+          },
+          "outcome": "basic",
+          "report": "Marcador básico",
+          "browserDiagnostics": {
+            "application": [],
+            "otherExternal": [],
+            "browserNotices": [
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "intro",
+                "firstUTC": "2026-11-27T01:15:25.199Z",
+                "count": 5
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-1",
+                "firstUTC": "2026-11-27T01:15:42.207Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-2",
+                "firstUTC": "2026-11-27T01:16:17.688Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-3",
+                "firstUTC": "2026-11-27T01:17:23.784Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "formulario-listo",
+                "firstUTC": "2026-11-27T01:18:19.232Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "dashboard-history",
+                "firstUTC": "2026-11-27T01:29:26.537Z",
+                "count": 1
+              }
+            ],
+            "development": [],
+            "thirdPartyTelemetry": []
+          },
+          "deliverySummary": "Writing Task 1\n173 palabras · Lista\nWriting Task 2\n278 palabras · Lista\nSpeaking\n3 de 3 audios · Muestra lista",
+          "writingChart": {
+            "naturalWidth": 1499,
+            "naturalHeight": 847,
+            "shownWidth": 1100,
+            "shownHeight": 622,
+            "x": 170,
+            "alt": "Bar chart of global sales in billions of dollars for mobile phone, online, console and handheld games from 2000 to 2006"
+          },
+          "listeningAudio": {
+            "duration": 1745,
+            "playedSeconds": 0.5
+          },
+          "checks": {
+            "introInventoryMatchesMock": true,
+            "fourSkillTabsAvailable": true,
+            "listeningAudioPlays": true,
+            "listeningFortyAnswered": true,
+            "readingThreePassages": true,
+            "readingFortyAnswered": true,
+            "writingRendersTwoSeparateTasks": true,
+            "writingChartVisibleAndLegible": true,
+            "writingCountersMatch": true,
+            "draftIsVersionScopedAndRestores": true,
+            "timerUsesAbsoluteDeadline": true,
+            "speakingRendersThreeOrderedParts": true,
+            "speakingRecordingLimitsVisible": true,
+            "speakingPreviewPlays": true,
+            "speakingThreeRecordingsCaptured": true,
+            "all85ResponsesPresent": true,
+            "leadCapturePrecedesSubmission": true,
+            "leadCaptureSummaryVisibleBeforeSend": true,
+            "privateUploadsVerified": true,
+            "serverCompletionConfirmed": true,
+            "scoreMatchesExpected": true,
+            "studentResultVisible": true,
+            "draftRemovedAfterSuccess": true,
+            "dashboardListsAttempt": true,
+            "dashboardScoreMatchesReceipt": true,
+            "layoutFitsViewport": true,
+            "noUncaughtAppErrors": true
+          },
+          "findings": [],
+          "login": {
+            "authRole": "authenticated",
+            "status": 200,
+            "confirmed": true
+          },
+          "screenshots": [
+            {
+              "filename": "set-2-1440-resumen.png",
+              "sha256": "428e0d643c0aa2a7ba1d3bd59a463e9d1f415dcd2faa97e85d64b928e2635556"
+            },
+            {
+              "filename": "set-2-1440-resultado.png",
+              "sha256": "5f01479278919248d64dab81195ecf6f43663cc99d8ce62ca494ed1527e85a6e"
+            },
+            {
+              "filename": "set-2-1440-historial.png",
+              "sha256": "33f3045c39e11fffd33c4d7b38b8ae2abc9567f72e0eceff238b2572a1244e74"
+            }
+          ]
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "browser": "158.0.8127.38",
+          "startUTC": "2026-11-27T01:15:24.974Z",
+          "endUTC": "2026-11-27T01:29:30.232Z",
+          "objectiveExpected": {
+            "Listening": {
+              "correct": 20,
+              "total": 40
+            },
+            "Reading": {
+              "correct": 26,
+              "total": 40
+            }
+          },
+          "api": {
+            "uploadStatuses": [
+              200,
+              200,
+              200
+            ],
+            "prepare": {
+              "requestedUTC": "2026-11-27T01:29:20.874Z",
+              "respondedUTC": "2026-11-27T01:29:23.141Z",
+              "status": 200,
+              "ok": true,
+              "uploadCount": 3
+            },
+            "complete": {
+              "requestedUTC": "2026-11-27T01:29:23.288Z",
+              "respondedUTC": "2026-11-27T01:29:23.355Z",
+              "status": 200,
+              "ok": true,
+              "sameReceipt": true,
+              "receiptDigest": "7224dc04d7cf77e7",
+              "score": "46/80",
+              "access": "public"
+            }
+          },
+          "recordedSeconds": [
+            35,
+            65,
+            55
+          ],
+          "totalProgress": "85/85 answered",
+          "draft": {
+            "contentVersion": "ielts-set-2-v5+balanced-positions-v1",
+            "beforeTimerText": "163:52",
+            "afterTimerText": "163:48",
+            "beforeTimerSeconds": 9832,
+            "afterTimerSeconds": 9828,
+            "deadlineUTC": "2026-11-27T03:59:26.872Z",
+            "absoluteDeadlineUnchanged": true
+          },
+          "layout": {
+            "intro": {
+              "visible": 390,
+              "content": 390
+            },
+            "listening": {
+              "visible": 390,
+              "content": 390
+            },
+            "reading": {
+              "visible": 390,
+              "content": 390
+            },
+            "writing": {
+              "visible": 390,
+              "content": 390
+            },
+            "speaking": {
+              "visible": 390,
+              "content": 390
+            },
+            "contact": {
+              "visible": 390,
+              "content": 390
+            },
+            "results": {
+              "visible": 390,
+              "content": 390
+            }
+          },
+          "dashboardBefore": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 0,
+            "sectionAvailable": true
+          },
+          "dashboardAfter": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 2,
+            "sectionAvailable": true,
+            "action": "Seguir practicando →",
+            "objectiveScoreShown": "46/80"
+          },
+          "outcome": "basic",
+          "report": "Marcador básico",
+          "browserDiagnostics": {
+            "application": [],
+            "otherExternal": [],
+            "browserNotices": [
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "intro",
+                "firstUTC": "2026-11-27T01:15:25.174Z",
+                "count": 5
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-1",
+                "firstUTC": "2026-11-27T01:15:42.320Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-2",
+                "firstUTC": "2026-11-27T01:16:17.643Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-3",
+                "firstUTC": "2026-11-27T01:17:23.721Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "formulario-listo",
+                "firstUTC": "2026-11-27T01:18:19.133Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "dashboard-history",
+                "firstUTC": "2026-11-27T01:29:26.537Z",
+                "count": 1
+              }
+            ],
+            "development": [],
+            "thirdPartyTelemetry": []
+          },
+          "deliverySummary": "Writing Task 1\n173 palabras · Lista\nWriting Task 2\n278 palabras · Lista\nSpeaking\n3 de 3 audios · Muestra lista",
+          "writingChart": {
+            "naturalWidth": 1499,
+            "naturalHeight": 847,
+            "shownWidth": 290,
+            "shownHeight": 164,
+            "x": 50,
+            "alt": "Bar chart of global sales in billions of dollars for mobile phone, online, console and handheld games from 2000 to 2006"
+          },
+          "listeningAudio": {
+            "duration": 1745,
+            "playedSeconds": 0.5
+          },
+          "checks": {
+            "introInventoryMatchesMock": true,
+            "fourSkillTabsAvailable": true,
+            "mobileSkillTabsUseTwoColumnGrid": true,
+            "listeningAudioPlays": true,
+            "listeningFortyAnswered": true,
+            "readingThreePassages": true,
+            "readingFortyAnswered": true,
+            "writingRendersTwoSeparateTasks": true,
+            "writingChartVisibleAndLegible": true,
+            "writingCountersMatch": true,
+            "draftIsVersionScopedAndRestores": true,
+            "timerUsesAbsoluteDeadline": true,
+            "speakingRendersThreeOrderedParts": true,
+            "speakingRecordingLimitsVisible": true,
+            "speakingPreviewPlays": true,
+            "speakingThreeRecordingsCaptured": true,
+            "all85ResponsesPresent": true,
+            "leadCapturePrecedesSubmission": true,
+            "leadCaptureSummaryVisibleBeforeSend": true,
+            "privateUploadsVerified": true,
+            "serverCompletionConfirmed": true,
+            "scoreMatchesExpected": true,
+            "studentResultVisible": true,
+            "draftRemovedAfterSuccess": true,
+            "dashboardListsAttempt": true,
+            "dashboardScoreMatchesReceipt": true,
+            "layoutFitsViewport": true,
+            "noUncaughtAppErrors": true
+          },
+          "findings": [],
+          "login": {
+            "authRole": "authenticated",
+            "status": 200,
+            "confirmed": true
+          },
+          "screenshots": [
+            {
+              "filename": "set-2-390-writing-grafico.png",
+              "sha256": "7c21dcccbf8315fda088456fe6425032b461f0122dd9057baf1e6a7416d74471"
+            },
+            {
+              "filename": "set-2-390-resultado.png",
+              "sha256": "9b0ecb1f9f66768662064be0841de63207ffc118eb03e5d6a953b41cb10c99cb"
+            },
+            {
+              "filename": "set-2-390-historial.png",
+              "sha256": "02ce7fdedef58526455a36c861c66e346ec77f74dd5d04d46ed1a7071b35da14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "set": 4,
+      "mockId": "set-4",
+      "status": "PASS",
+      "route": "/examenes/ielts/practica/set-4",
+      "contentSha256": "80e11f2a79a439ac421a3d9a56e11124654f81dc2680da2d452a5cb943a0aed7",
+      "checks": {
+        "introInventoryMatchesMock": true,
+        "fourSkillTabsAvailable": true,
+        "listeningAudioPlays": true,
+        "listeningFortyAnswered": true,
+        "readingThreePassages": true,
+        "readingQuestionOneMatchesPassageGroups": true,
+        "readingFortyAnswered": true,
+        "writingRendersTwoSeparateTasks": true,
+        "writingChartVisibleAndLegible": true,
+        "writingCountersMatch": true,
+        "draftIsVersionScopedAndRestores": true,
+        "timerUsesAbsoluteDeadline": true,
+        "speakingRendersThreeOrderedParts": true,
+        "speakingRecordingLimitsVisible": true,
+        "speakingPreviewPlays": true,
+        "speakingThreeRecordingsCaptured": true,
+        "all85ResponsesPresent": true,
+        "leadCapturePrecedesSubmission": true,
+        "leadCaptureSummaryVisibleBeforeSend": true,
+        "privateUploadsVerified": true,
+        "serverCompletionConfirmed": true,
+        "scoreMatchesExpected": true,
+        "studentResultVisible": true,
+        "draftRemovedAfterSuccess": true,
+        "dashboardListsAttempt": true,
+        "dashboardScoreMatchesReceipt": true,
+        "layoutFitsViewport": true,
+        "noUncaughtAppErrors": true,
+        "mobileSkillTabsUseTwoColumnGrid": true
+      },
+      "observations": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "browser": "158.0.8127.38",
+          "startUTC": "2026-11-27T01:15:25.003Z",
+          "endUTC": "2026-11-27T01:29:29.774Z",
+          "objectiveExpected": {
+            "Listening": {
+              "correct": 20,
+              "total": 40
+            },
+            "Reading": {
+              "correct": 14,
+              "total": 40
+            }
+          },
+          "api": {
+            "uploadStatuses": [
+              200,
+              200,
+              200
+            ],
+            "prepare": {
+              "requestedUTC": "2026-11-27T01:29:20.874Z",
+              "respondedUTC": "2026-11-27T01:29:23.144Z",
+              "status": 200,
+              "ok": true,
+              "uploadCount": 3
+            },
+            "complete": {
+              "requestedUTC": "2026-11-27T01:29:23.299Z",
+              "respondedUTC": "2026-11-27T01:29:23.360Z",
+              "status": 200,
+              "ok": true,
+              "sameReceipt": true,
+              "receiptDigest": "47ce4c4a2511459e",
+              "score": "34/80",
+              "access": "public"
+            }
+          },
+          "recordedSeconds": [
+            35,
+            65,
+            55
+          ],
+          "totalProgress": "85/85 answered",
+          "draft": {
+            "contentVersion": "ielts-set-4-v7+balanced-positions-v1",
+            "beforeTimerText": "163:51",
+            "afterTimerText": "163:47",
+            "beforeTimerSeconds": 9831,
+            "afterTimerSeconds": 9827,
+            "deadlineUTC": "2026-11-27T03:59:27.092Z",
+            "absoluteDeadlineUnchanged": true
+          },
+          "layout": {
+            "intro": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "listening": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "reading": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "writing": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "speaking": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "contact": {
+              "visible": 1440,
+              "content": 1440
+            },
+            "results": {
+              "visible": 1440,
+              "content": 1440
+            }
+          },
+          "dashboardBefore": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 0,
+            "sectionAvailable": true
+          },
+          "dashboardAfter": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 2,
+            "sectionAvailable": true,
+            "action": "Seguir practicando →",
+            "objectiveScoreShown": "34/80"
+          },
+          "outcome": "basic",
+          "report": "Marcador básico",
+          "browserDiagnostics": {
+            "application": [],
+            "otherExternal": [],
+            "browserNotices": [
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "intro",
+                "firstUTC": "2026-11-27T01:15:25.166Z",
+                "count": 5
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-1",
+                "firstUTC": "2026-11-27T01:15:43.383Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-2",
+                "firstUTC": "2026-11-27T01:16:18.768Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-3",
+                "firstUTC": "2026-11-27T01:17:24.864Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "formulario-listo",
+                "firstUTC": "2026-11-27T01:18:20.295Z",
+                "count": 1
+              }
+            ],
+            "development": [],
+            "thirdPartyTelemetry": []
+          },
+          "deliverySummary": "Writing Task 1\n180 palabras · Lista\nWriting Task 2\n295 palabras · Lista\nSpeaking\n3 de 3 audios · Muestra lista",
+          "writingChart": {
+            "naturalWidth": 237,
+            "naturalHeight": 150,
+            "shownWidth": 1100,
+            "shownHeight": 696,
+            "x": 170,
+            "alt": "Line graph: consumption of chicken, beef, lamb and fish in grams per person per week, 1979–2004"
+          },
+          "listeningAudio": {
+            "duration": 1745,
+            "playedSeconds": 0.5
+          },
+          "readingRevision": {
+            "prompt": "According to the passage, studies of modern forager societies suggest that hunter-gatherers worked more hours per day than subsistence farmers.",
+            "passageComparison": "fewer hours per day than subsistence farmers"
+          },
+          "checks": {
+            "introInventoryMatchesMock": true,
+            "fourSkillTabsAvailable": true,
+            "listeningAudioPlays": true,
+            "listeningFortyAnswered": true,
+            "readingThreePassages": true,
+            "readingQuestionOneMatchesPassageGroups": true,
+            "readingFortyAnswered": true,
+            "writingRendersTwoSeparateTasks": true,
+            "writingChartVisibleAndLegible": true,
+            "writingCountersMatch": true,
+            "draftIsVersionScopedAndRestores": true,
+            "timerUsesAbsoluteDeadline": true,
+            "speakingRendersThreeOrderedParts": true,
+            "speakingRecordingLimitsVisible": true,
+            "speakingPreviewPlays": true,
+            "speakingThreeRecordingsCaptured": true,
+            "all85ResponsesPresent": true,
+            "leadCapturePrecedesSubmission": true,
+            "leadCaptureSummaryVisibleBeforeSend": true,
+            "privateUploadsVerified": true,
+            "serverCompletionConfirmed": true,
+            "scoreMatchesExpected": true,
+            "studentResultVisible": true,
+            "draftRemovedAfterSuccess": true,
+            "dashboardListsAttempt": true,
+            "dashboardScoreMatchesReceipt": true,
+            "layoutFitsViewport": true,
+            "noUncaughtAppErrors": true
+          },
+          "findings": [],
+          "login": {
+            "authRole": "authenticated",
+            "status": 200,
+            "confirmed": true
+          },
+          "screenshots": [
+            {
+              "filename": "set-4-1440-reading-pregunta-1.png",
+              "sha256": "83cb0740ebbe58c7d91549a2262bd69727a2cc381d28aa7b63d9b3356b82c3c2"
+            },
+            {
+              "filename": "set-4-1440-resumen.png",
+              "sha256": "7a3eafbadc59fe3a3896ee9245d7bcf9577e88c9a7cedcaf2fe1e1e13b1af5aa"
+            },
+            {
+              "filename": "set-4-1440-resultado.png",
+              "sha256": "dc2873d0aefd125f23166f742814153ae37e540ae5932c5dd5175b65a84012a7"
+            },
+            {
+              "filename": "set-4-1440-historial.png",
+              "sha256": "af55a2fff146890ea5f4fb320de1a11ae3d557e41173cb0997f068becbe9d733"
+            }
+          ]
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "browser": "158.0.8127.38",
+          "startUTC": "2026-11-27T01:15:25.006Z",
+          "endUTC": "2026-11-27T01:29:29.902Z",
+          "objectiveExpected": {
+            "Listening": {
+              "correct": 20,
+              "total": 40
+            },
+            "Reading": {
+              "correct": 14,
+              "total": 40
+            }
+          },
+          "api": {
+            "uploadStatuses": [
+              200,
+              200,
+              200
+            ],
+            "prepare": {
+              "requestedUTC": "2026-11-27T01:29:20.873Z",
+              "respondedUTC": "2026-11-27T01:29:23.151Z",
+              "status": 200,
+              "ok": true,
+              "uploadCount": 3
+            },
+            "complete": {
+              "requestedUTC": "2026-11-27T01:29:23.299Z",
+              "respondedUTC": "2026-11-27T01:29:23.361Z",
+              "status": 200,
+              "ok": true,
+              "sameReceipt": true,
+              "receiptDigest": "4aeeb77b5cdbd432",
+              "score": "34/80",
+              "access": "public"
+            }
+          },
+          "recordedSeconds": [
+            35,
+            65,
+            55
+          ],
+          "totalProgress": "85/85 answered",
+          "draft": {
+            "contentVersion": "ielts-set-4-v7+balanced-positions-v1",
+            "beforeTimerText": "163:51",
+            "afterTimerText": "163:48",
+            "beforeTimerSeconds": 9831,
+            "afterTimerSeconds": 9828,
+            "deadlineUTC": "2026-11-27T03:59:27.098Z",
+            "absoluteDeadlineUnchanged": true
+          },
+          "layout": {
+            "intro": {
+              "visible": 390,
+              "content": 390
+            },
+            "listening": {
+              "visible": 390,
+              "content": 390
+            },
+            "reading": {
+              "visible": 390,
+              "content": 390
+            },
+            "writing": {
+              "visible": 390,
+              "content": 390
+            },
+            "speaking": {
+              "visible": 390,
+              "content": 390
+            },
+            "contact": {
+              "visible": 390,
+              "content": 390
+            },
+            "results": {
+              "visible": 390,
+              "content": 390
+            }
+          },
+          "dashboardBefore": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 0,
+            "sectionAvailable": true
+          },
+          "dashboardAfter": {
+            "status": 200,
+            "route": "/dashboard/student",
+            "matching": 2,
+            "sectionAvailable": true,
+            "action": "Seguir practicando →",
+            "objectiveScoreShown": "34/80"
+          },
+          "outcome": "basic",
+          "report": "Marcador básico",
+          "browserDiagnostics": {
+            "application": [],
+            "otherExternal": [],
+            "browserNotices": [
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "intro",
+                "firstUTC": "2026-11-27T01:15:25.187Z",
+                "count": 5
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-1",
+                "firstUTC": "2026-11-27T01:15:43.205Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-2",
+                "firstUTC": "2026-11-27T01:16:18.510Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "speaking-part-3",
+                "firstUTC": "2026-11-27T01:17:24.605Z",
+                "count": 1
+              },
+              {
+                "type": "console-warning",
+                "reason": "preload-notice",
+                "location": "ielts-page",
+                "stage": "formulario-listo",
+                "firstUTC": "2026-11-27T01:18:20.031Z",
+                "count": 1
+              }
+            ],
+            "development": [],
+            "thirdPartyTelemetry": []
+          },
+          "deliverySummary": "Writing Task 1\n180 palabras · Lista\nWriting Task 2\n295 palabras · Lista\nSpeaking\n3 de 3 audios · Muestra lista",
+          "writingChart": {
+            "naturalWidth": 237,
+            "naturalHeight": 150,
+            "shownWidth": 290,
+            "shownHeight": 183,
+            "x": 50,
+            "alt": "Line graph: consumption of chicken, beef, lamb and fish in grams per person per week, 1979–2004"
+          },
+          "listeningAudio": {
+            "duration": 1745,
+            "playedSeconds": 0.5
+          },
+          "readingRevision": {
+            "prompt": "According to the passage, studies of modern forager societies suggest that hunter-gatherers worked more hours per day than subsistence farmers.",
+            "passageComparison": "fewer hours per day than subsistence farmers"
+          },
+          "checks": {
+            "introInventoryMatchesMock": true,
+            "fourSkillTabsAvailable": true,
+            "mobileSkillTabsUseTwoColumnGrid": true,
+            "listeningAudioPlays": true,
+            "listeningFortyAnswered": true,
+            "readingThreePassages": true,
+            "readingQuestionOneMatchesPassageGroups": true,
+            "readingFortyAnswered": true,
+            "writingRendersTwoSeparateTasks": true,
+            "writingChartVisibleAndLegible": true,
+            "writingCountersMatch": true,
+            "draftIsVersionScopedAndRestores": true,
+            "timerUsesAbsoluteDeadline": true,
+            "speakingRendersThreeOrderedParts": true,
+            "speakingRecordingLimitsVisible": true,
+            "speakingPreviewPlays": true,
+            "speakingThreeRecordingsCaptured": true,
+            "all85ResponsesPresent": true,
+            "leadCapturePrecedesSubmission": true,
+            "leadCaptureSummaryVisibleBeforeSend": true,
+            "privateUploadsVerified": true,
+            "serverCompletionConfirmed": true,
+            "scoreMatchesExpected": true,
+            "studentResultVisible": true,
+            "draftRemovedAfterSuccess": true,
+            "dashboardListsAttempt": true,
+            "dashboardScoreMatchesReceipt": true,
+            "layoutFitsViewport": true,
+            "noUncaughtAppErrors": true
+          },
+          "findings": [],
+          "login": {
+            "authRole": "authenticated",
+            "status": 200,
+            "confirmed": true
+          },
+          "screenshots": [
+            {
+              "filename": "set-4-390-writing-grafico.png",
+              "sha256": "1e9b1f82c16de14b1e3996830124b25f037a0bacb0abca305951750f027d4a43"
+            },
+            {
+              "filename": "set-4-390-resultado.png",
+              "sha256": "edb0f1adf85efb1823fec07e3cbfa31d869631fb41c1a1584a58065f0be9fa5a"
+            },
+            {
+              "filename": "set-4-390-historial.png",
+              "sha256": "12ae56c5b11ba11580f73ed36a1d56523a2f0d1a1723968ee5c593c7927934bc"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "resultPresentation": {
+    "before": "A first regression account had four confirmed receipts and twelve private audio objects. Rendering the free report attempted to grade redacted items in the browser and failed before showing the marker. The saved attempts were visible in that account’s dashboard.",
+    "after": "A clean confirmed learner completed the entire desktop/mobile matrix. The complimentary report displays the objective total returned by the same receipt. Detailed scoring only mounts with an authorized complete review."
+  },
+  "historyPresentation": {
+    "before": "Read-only inspection of the existing student dashboard found a 0% badge for the saved receipts, even though the completed exam showed 46/80 or 34/80. A null Overall Band had been converted to zero.",
+    "after": "The result card and dashboard both show the objective fraction. Writing and Speaking are still pending. The learner history applies the correction to existing stored submissions as well.",
+    "beforeScreenshots": [
+      {
+        "filename": "set-2-1440-historial-antes.png",
+        "sha256": "1a843fc03df65631e6c4e7650857761cd863af0a87ea42749b3d842b1811c94c"
+      },
+      {
+        "filename": "set-4-1440-historial-antes.png",
+        "sha256": "056288de238113a14a7d797041de5e54e9619a34c963aee77d2bb6f2f61ededd"
+      }
+    ],
+    "existingRows": {
+      "verificadoEn": "2026-11-27T00:45:25.426Z",
+      "tarjetas": [
+        {
+          "set": 2,
+          "conteo": 2,
+          "marcador": "46/80",
+          "fecha": "26 DE NOV DE 2026"
+        },
+        {
+          "set": 4,
+          "conteo": 2,
+          "marcador": "34/80",
+          "fecha": "26 DE NOV DE 2026"
+        }
+      ]
+    }
+  },
+  "guidedReadingSet4": {
+    "route": "/examenes/ielts/practica/set-4/guiado",
+    "studentConfirmed": true,
+    "submitted": "TRUE",
+    "visibleAnswer": "FALSE",
+    "feedbackFindsPassage": true,
+    "fullPassageReopened": true,
+    "file": "set-4-reading-1-explicacion.png",
+    "sha256": "7d013e4dc462c6f678ff1256799a79076c4b85abf15e0b7d411f41da7305c665"
+  },
+  "localBackend": {
+    "verifiedAt": "2026-11-27T00:02:33.326576+00:00",
+    "repositoryCommit": "dd24d1b4e65f6fa5fc3155bf05cbc3ce331940c8",
+    "runtime": "Supabase CLI 3.4.0 / native / Darwin arm64",
+    "testedFrom": "loopback",
+    "healthStatus": {
+      "auth": 200,
+      "dataApi": 200,
+      "storage": 200,
+      "mailpit": 200
+    },
+    "emailSignupEnabled": true,
+    "emailConfirmationRequired": true,
+    "speakingStorage": {
+      "name": "ielts-speaking-audio",
+      "public": false
+    },
+    "migrationCount": 86,
+    "appliedMigrationManifestSha256": "b0bfb3df7e5dcc50ac8968cfc956b8f0428f8af6278eae2c2cad12a1af2b8356",
+    "schemaBaseline": "20260514000000_initial_schema.sql + canonical reconciliation 20260826003233. The alternative historical May 15 role schema and May 29 progress schema conflict with that baseline and were omitted. Every other repository migration applied unmodified."
+  },
+  "contactValidation": {
+    "before": "All four first submissions were rejected by the contact RPC with invalid_whatsapp for a valid international number entered with spaces. No exam submission or audio was created in those attempts.",
+    "after": "The free student kept the same formatted test number for all four final attempts. The browser contacts were saved and the database independently confirmed each exam receipt."
+  },
+  "reportSha256": "6506b073a37eac4ccdcef76249a1da73c18c75de35f8edde0bdf6c131a5e90ec"
+}

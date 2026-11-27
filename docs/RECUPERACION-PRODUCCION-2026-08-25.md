@@ -1085,3 +1085,7 @@ La rama `codex/revision-skimming-ielts` reúne el ejemplo comentado, el método 
 ### 25 de noviembre de 2026 — IELTS Academic, revisión editorial de las cuatro habilidades
 
 La rama `codex/ielts-academico-calidad-20261125` reúne el piloto de skimming, las mejoras de las cuatro habilidades y la tutoría posterior al intento de los 20 simulacros guiados. La comprobación usa el catálogo de 40 sets, los controles de extensión de los modelos de Writing y el recorrido en navegador publicado con la rama. El harness distingue los 17 expedientes con firma final, el Set 1 pendiente de revisión humana y los sets 2 y 4 pendientes del recorrido autenticado. [Galería de la rama](./previews/ielts-academico/README.md) · [Estado de los expedientes](./ielts-harness.md).
+
+### 26 de noviembre de 2026 — IELTS Academic, recorrido de los sets 2 y 4
+
+En la rama `codex/ielts-academico-calidad-20261125` se corrigieron el alta de la cuenta para el examen solicitado, la validación de teléfonos con espacios, el marcador gratuito de IELTS y la tarjeta de «Mis intentos». Cuatro entregas en la instalación aislada, en escritorio y en móvil emulado, vinculan la puntuación visible con los textos y las grabaciones persistidos. Estado `EN_VALIDACION` para los sets 1, 2 y 4. Para resolver el Set 1, la pauta señala la casilla 8 de Listening. [Evidencia y capturas](./previews/ielts-academico/recorrido-alumno/README.md) · [Pauta del Set 1](./ielts-set-1-revision-del-titular.md).

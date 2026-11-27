@@ -19,3 +19,5 @@ En la hoja imprimible de Speaking, la última indicación de la tarjeta sobre la
 La muestra de tono de *skimming* conserva sus dos pares de capturas. El blueprint describe cómo dar explicaciones con la misma voz en Reading, Writing, Listening y Speaking. [Piloto de skimming](../ielts-skimming/README.md) · [Blueprint y controles de calidad](../../ielts-explanations-blueprint.md).
 
 La comprobación editorial recorre las 21 lecciones de Reading, las siete familias visuales de Task 1, las cinco familias de Task 2, los cuatro fragmentos de Listening y las tres partes de Speaking. También prueba qué ocurre al bloquear el micrófono. Los expedientes de publicación de los simulacros tienen su propio informe. [Consultar el estado de los 20 sets guiados](../../ielts-harness.md).
+
+Los sets 2 y 4 también tienen capturas de la experiencia completa de un alumno. Se ve la gráfica de Writing en móvil, qué se envía al terminar, el marcador y el intento guardado. [Ver el recorrido y los puntajes de los sets 2 y 4](./recorrido-alumno/README.md).

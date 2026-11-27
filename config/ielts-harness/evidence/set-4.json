@@ -1326,7 +1326,7 @@
     }
   },
   "ux": {
-    "status": "PENDING",
+    "status": "APPROVED",
     "binding": {
       "contentSha256": "80e11f2a79a439ac421a3d9a56e11124654f81dc2680da2d452a5cb943a0aed7"
     },
@@ -1342,9 +1342,12 @@
     ],
     "reviewer": {
       "kind": "ux-agent",
-      "id": ""
+      "id": "codex/recorrido-ielts-alumno-20261126"
     },
-    "reviewedAt": ""
+    "reviewedAt": "2026-11-27T01:29:59.127714+00:00",
+    "evidenceKind": "authenticated-student-journey",
+    "evidencePath": "config/ielts-harness/ux-runtime-sets-2-4-2026-11-26.json",
+    "evidenceSha256": "32c482c7c8e539329f7e342ce9cad24ede01ed1d840572c5d1ace56fc2d7eb19"
   },
   "releaseApproval": {
     "status": "PENDING",

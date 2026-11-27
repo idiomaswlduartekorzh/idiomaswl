@@ -4,6 +4,18 @@ La producción y conservación de audio se controlan por separado en [Producció
 
 El harness convierte el inventario de los 20 sets en un proceso de release reproducible. Separa las comprobaciones automáticas de la aprobación académica: un archivo existente, una coincidencia léxica o una clave que coincide consigo misma nunca hacen que un set quede listo.
 
+## Recorrido con cuenta de alumno del 26 de noviembre de 2026
+
+Una cuenta gratuita con correo confirmado completó el Set 2 y el Set 4 en escritorio y en móvil emulado. El control comprobó las 85 respuestas de cada entrega, la recuperación del borrador y del cronómetro al recargar, y la reproducción y el guardado de las tres grabaciones. Con las respuestas de prueba, el Set 2 dio 46/80 y el Set 4 dio 34/80. Cada puntaje se cotejó con el recibo, las filas de la base y las dos pantallas que ve el alumno al entregar y al volver a «Mis intentos». Writing y Speaking quedan pendientes de evaluación. [Capturas del alumno](./previews/ielts-academico/recorrido-alumno/README.md) · [Evidencia por set y tamaño de pantalla](../config/ielts-harness/ux-runtime-sets-2-4-2026-11-26.json).
+
+El inventario reconoce 17 expedientes con aprobación humana registrada y tres con la evidencia técnica completa para revisión humana, los sets 1, 2 y 4. Los 20 audios públicos coinciden con sus recibos. La pregunta 8 de Listening del Set 1 se detalla a continuación.
+
+La primera pregunta de Reading del Set 4 conserva en inglés el grupo que nombra el segundo párrafo, *subsistence farmers*. La explicación muestra por qué *more hours* contradice *fewer hours*. Se verificó la decisión de forma independiente. La versión 7 del Set 4 distingue los intentos nuevos de quienes recibieron el enunciado anterior. [Revisión específica de Reading 1](../config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json).
+
+## Revisión del Set 1 para el titular
+
+El Set 1 alcanza el estado técnico `READY_FOR_HUMAN_REVIEW`. La pregunta 8 de Listening aún requiere una decisión editorial. El alumno ve una casilla bajo «Includes» y oye tanto *accommodation* como *flight*. Las dos palabras responden a la tabla, pero la clave admite solo *flight*. Conviene corregir la casilla antes de firmar el expediente. [Simulacro, audio y pauta de revisión del Set 1](./ielts-set-1-revision-del-titular.md).
+
 ## Revisión del 25 de noviembre de 2026
 
 El inventario de los 20 simulacros guiados reconoce 17 expedientes con aprobación humana final. Los tres expedientes abiertos tienen estas condiciones de cierre.
