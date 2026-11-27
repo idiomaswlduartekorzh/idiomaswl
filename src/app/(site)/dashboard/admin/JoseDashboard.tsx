@@ -164,6 +164,33 @@ const PORTUGUESE_A1_FILES = [
   },
 ] as const
 
+const GERMAN_A1_FILES = [
+  {
+    title: 'Libro del estudiante',
+    detail: 'PDF · 203 páginas',
+    href: 'https://drive.google.com/file/d/1yCND10c1W_bpYR9ENSFeWYxX04LBIpFJ/view?usp=drivesdk',
+    Icon: FileText,
+  },
+  {
+    title: 'Profesor · parte 1 de 2',
+    detail: 'PDF · páginas 1–129',
+    href: 'https://drive.google.com/file/d/1Vjgeaj_FtpoKh83-QE8r-AxRc6TbBK0c/view?usp=drivesdk',
+    Icon: BookOpen,
+  },
+  {
+    title: 'Profesor · parte 2 de 2',
+    detail: 'PDF · páginas 130–260 y soluciones',
+    href: 'https://drive.google.com/file/d/1RzEdMEt9HcsNjFqj3gke6ZzHP6cL0Lwe/view?usp=drivesdk',
+    Icon: BookOpen,
+  },
+  {
+    title: 'Fuente editable',
+    detail: 'ZIP · 24 capítulos',
+    href: 'https://drive.google.com/file/d/1Z8DaJqDMszraAo78eDR0tT0lgtRDQ3I6/view?usp=drivesdk',
+    Icon: FolderArchive,
+  },
+] as const
+
 const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean; documentNavigation?: boolean }[] = [
   { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
   { Icon: Users,           tab: 'students', label: 'Estudiantes' },
@@ -294,7 +321,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                   <h1 id="admin-books-title">Libros</h1>
                   <p>Materiales de estudio y archivos de trabajo del equipo WeLearn.</p>
                 </div>
-                <span className={styles.booksCount}>2 títulos</span>
+                <span className={styles.booksCount}>3 títulos</span>
               </header>
 
               <article className={styles.bookCard} aria-labelledby="italian-a1-title">
@@ -378,6 +405,50 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                   <p className={styles.bookAccessNote}>
                     Pendiente la lectura final del autor y una prueba física de imprenta. Los archivos son privados en Drive;
                     ábrelos con la cuenta WeLearn o una cuenta del equipo con acceso.
+                  </p>
+                </div>
+              </article>
+
+              <article className={styles.bookCard} aria-labelledby="german-a1-title">
+                <div className={styles.bookCover}>
+                  <Image
+                    src="/images/books/welearn-aleman-a1.png"
+                    alt="Portada de WeLearn Alemán A1, edición del estudiante"
+                    width={637}
+                    height={900}
+                  />
+                </div>
+                <div className={styles.bookDetails}>
+                  <div className={styles.bookTags}>
+                    <span>Alemán</span><span>A1 · MCER</span><span>En revisión editorial</span>
+                  </div>
+                  <h2 id="german-a1-title">WeLearn Alemán A1</h2>
+                  <p className={styles.bookByline}>José David Duarte Silva · Idiomas WeLearn</p>
+                  <p className={styles.bookDescription}>
+                    Veinticuatro capítulos con gramática paso a paso, escenas, lectura,
+                    escucha y práctica escrita. La edición docente añade respuestas
+                    razonadas, transcripciones y guiones de dictado.
+                  </p>
+                  <dl className={styles.bookFacts}>
+                    <div><dt>Capítulos</dt><dd>24</dd></div>
+                    <div><dt>Páginas del estudiante</dt><dd>203</dd></div>
+                    <div><dt>Audios vinculados</dt><dd>20</dd></div>
+                  </dl>
+                  <h3>Archivos del libro</h3>
+                  <div className={`${styles.bookFiles} ${styles.bookFilesTwoColumn}`}>
+                    {GERMAN_A1_FILES.map(({ title, detail, href, Icon }) => (
+                      <a key={title} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${title}: abrir archivo privado en Google Drive`}>
+                        <span className={styles.bookFileIcon}><Icon size={20} /></span>
+                        <span className={styles.bookFileText}><strong>{title}</strong><small>{detail}</small></span>
+                        <ExternalLink size={17} aria-hidden="true" />
+                      </a>
+                    ))}
+                  </div>
+                  <p className={styles.bookAccessNote}>
+                    La edición del profesor se consulta en dos partes y contiene las soluciones.
+                    Los archivos son privados en Drive; ábrelos con la cuenta WeLearn o
+                    una cuenta del equipo con acceso. Pendientes la lectura final del autor
+                    y la prueba física de imprenta.
                   </p>
                 </div>
               </article>

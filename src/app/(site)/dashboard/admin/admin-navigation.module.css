@@ -43,6 +43,7 @@
 .bookFacts dd { margin: 5px 0 0; color: #14233f; font-size: 22px; font-weight: 850; line-height: 1; }
 .bookDetails h3 { margin: 0 0 10px; color: #14233f; font-size: 16px; }
 .bookFiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.bookFilesTwoColumn { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .bookFiles a { display: flex; align-items: center; gap: 10px; min-width: 0; min-height: 74px; padding: 12px; border: 1px solid #d7e2ef; border-radius: 10px; color: #213c66; background: #fff; text-decoration: none; transition: border-color .15s, background .15s, transform .15s; }
 .bookFiles a:hover { border-color: #3971c7; background: #f5f9ff; transform: translateY(-2px); }
 .bookFiles a:focus-visible { outline: 2px solid #3971c7; outline-offset: 3px; }
@@ -59,6 +60,7 @@
   .item { width: 42px; justify-content: center; padding: 9px; }
   .bookCard { grid-template-columns: 220px minmax(0, 1fr); }
   .bookFiles { grid-template-columns: 1fr; }
+  .bookFilesTwoColumn { grid-template-columns: 1fr; }
 }
 .adminShell{}
 :global(body):has(.adminShell) :global(.wl-site-nav),:global(body):has(.adminShell) :global(.wl-wa-float){display:none!important}
