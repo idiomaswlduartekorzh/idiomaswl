@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#123d30">
   <meta name="description" content="Practice checkmates, tactics, and Italian and Caro-Kann opening variations on an interactive chessboard.">
   <title>Matecraft · Checkmates, tactics and openings</title>
-  <link rel="manifest" href="manifest.webmanifest?v=20261125-openings">
+  <link rel="manifest" href="manifest.webmanifest?v=20261127-ui">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="vendor/cm-chessboard/assets/chessboard.css">
   <style>
@@ -124,6 +124,14 @@
     @media(max-width:1150px) { .board-zone { grid-template-columns:minmax(0,1fr); } #board { max-width:510px; } .board-frame { width:min(100%,530px); } }
     @media(max-width:820px) { .layout { grid-template-columns:minmax(0,1fr); } .route-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .modes { grid-template-columns:repeat(2,minmax(0,1fr)); } }
     @media(max-width:600px) { .app { padding:14px 13px 30px; } .topbar { align-items:start; } .top-actions { flex-wrap:wrap; justify-content:flex-end; } .top-actions .ghost { font-size:.85rem; padding:6px 8px; } .hero { display:block; } .hero .primary { margin-top:16px; } .mode { min-height:77px; padding:9px; gap:8px; } .mode-icon { width:36px; height:36px; } .mode strong { font-size:1rem; } .mode small { font-size:.77rem; } .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .progress-card { display:block; } .elo-picker { justify-content:flex-start; margin-top:15px; } .opening-picker { display:block; } .opening-picker label { display:block; margin-bottom:5px; } .opening-picker select { width:100%; } .workbench { padding:13px; } .work-head { display:block; } .tag { display:inline-block; margin-top:9px; } .board-zone { gap:15px; } .route-list { grid-template-columns:1fr; } .move-input { flex-wrap:wrap; } }
+    @media(max-width:360px) {
+      .topbar { flex-wrap:wrap; gap:10px; }
+      .top-actions { width:100%; justify-content:flex-start; }
+      .mode { min-height:106px; flex-direction:column; align-items:flex-start; gap:6px; }
+      .mode-icon { width:33px; height:33px; }
+      .move-input { display:grid; grid-template-columns:minmax(0,1fr); }
+      .move-input select, .play-move { width:100%; }
+    }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .toast { transition:none; } }
   </style>
 </head>
@@ -203,16 +211,19 @@
       function scheduleFit() {
         if (scheduled) return;
         scheduled = true;
-        requestAnimationFrame(fit);
+        window.setTimeout(fit, 0);
       }
       if ('ResizeObserver' in window) new ResizeObserver(scheduleFit).observe(content);
-      else new MutationObserver(scheduleFit).observe(content, { subtree: true, childList: true, characterData: true });
+      new MutationObserver(scheduleFit).observe(content, { subtree: true, childList: true, characterData: true, attributes: true });
       window.addEventListener('resize', scheduleFit);
       window.addEventListener('load', scheduleFit);
-      scheduleFit();
+      window.addEventListener('pageshow', scheduleFit);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+      [100, 300, 750, 1500, 3000].forEach(function(delay) { window.setTimeout(fit, delay); });
+      fit();
     }());
   </script>
   <script type="module" src="app.js"></script>
-  <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js?v=20261125-openings').catch(function(){})})}</script>
+  <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js?v=20261127-ui').catch(function(){})})}</script>
 </body>
 </html>

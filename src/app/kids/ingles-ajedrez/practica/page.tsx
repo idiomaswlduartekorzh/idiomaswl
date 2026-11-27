@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical },
-  manifest: '/kids/ingles-ajedrez/practica/manifest.webmanifest?v=20261125-openings',
+  manifest: '/kids/ingles-ajedrez/practica/manifest.webmanifest?v=20261127-ui',
   openGraph: { title, description, url: canonical, type: 'website', locale: 'en_US', images: [shareImage] },
   twitter: { card: 'summary_large_image', title, description, images: [shareImage] },
 };
@@ -32,7 +32,7 @@ export default function ChessPracticePage() {
       </div>
       <iframe
         className={styles.frame}
-        src="/kids/ingles-ajedrez/practica/index.html?v=20261125-openings"
+        src="/kids/ingles-ajedrez/practica/index.html?v=20261127-ui"
         title="Matecraft checkmates, tactics, and openings practice"
         allow="fullscreen"
       />
