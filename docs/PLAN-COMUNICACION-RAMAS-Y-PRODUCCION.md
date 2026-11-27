@@ -5,6 +5,22 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Dilemas de Speaking en los ocho idiomas — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. Francés, alemán, italiano, portugués de Brasil, ruso,
+  japonés y coreano tienen 20 dilemas por nivel de A1 a C2. Las 840 fichas nuevas
+  suman 960 con el catálogo de inglés. Cada ficha tiene cuatro tarjetas de
+  vocabulario con ejemplos y tres respuestas modelo independientes.
+- La vista previa `dpl_BPgk2gMRyJgKqjyHadZcVrjpc94Y` pasó TypeScript y la
+  compilación de Vercel. En esa vista se verificó un catálogo y una ficha de
+  cada idioma nuevo. Los controles locales de Práctica, Improvisa, Habla
+  acompañada, la línea base y ESLint también pasaron.
+- Vercel publicó `main@de87af02a0ea63247eb8fdfacabeee6c992caff6` en
+  `dpl_J4cMyiw48Epem3gmMzTJTnwKkz5g` (`READY`). En el dominio público se
+  recorrieron los 42 catálogos y las 840 fichas, con pruebas de teclado de los
+  tres desplegables en una ficha por catálogo. Pasaron las 120 rutas de inglés
+  y el smoke de producción de 56 rutas y 17 audios.
+
 ## Dilemas de Speaking en inglés A1–C2 — 26 de noviembre de 2026
 
 - Estado `DESPLEGADO`. Los seis niveles de inglés tienen 20 dilemas cada uno.
