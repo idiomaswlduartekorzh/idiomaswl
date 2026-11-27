@@ -1,6 +1,33 @@
+import { ieltsObjectiveScoreLabel } from '@/lib/ielts/submission';
 import type { StudentAttempt, StudentProgressSummary, StudentSkillScore } from './types';
 
 type SkillSource = Readonly<{ skill?: unknown; name?: unknown; score?: unknown; max?: unknown }>;
+
+function numericScore(value: unknown): number | null {
+  if (typeof value !== 'number' && !(typeof value === 'string' && value.trim())) return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+export function studentAttemptScore(row: { exam_slug: string; total_score: unknown; total_max: unknown; total_label: string | null; skills: unknown }):
+  Pick<StudentAttempt, 'score' | 'scoreLabel' | 'scoreDisplay'> {
+  const value = numericScore(row.total_score);
+  const maximum = numericScore(row.total_max);
+  const score = value !== null && maximum !== null && maximum > 0
+    ? Math.max(0, Math.min(100, Math.round(value / maximum * 100))) : null;
+  if (row.exam_slug !== 'ielts') {
+    return { score, scoreLabel: row.total_label?.trim() || (score === null ? 'Reporte disponible' : `${score}%`) };
+  }
+  if (value !== null && maximum === 9 && value >= 0 && value <= 9 && Number.isInteger(value * 2)) {
+    const band = `${value}/9`;
+    return { score, scoreLabel: `Banda global ${band}`, scoreDisplay: { value: band, caption: 'Banda global' } };
+  }
+  const objective = ieltsObjectiveScoreLabel(row.skills);
+  if (objective !== null) {
+    return { score: null, scoreLabel: `${objective} aciertos de Listening y Reading`, scoreDisplay: { value: objective, caption: 'Aciertos de Listening y Reading' } };
+  }
+  return { score: null, scoreLabel: 'Banda global pendiente', scoreDisplay: { value: '—', caption: 'Banda global pendiente' } };
+}
 
 export function parseSkillScores(value: unknown): StudentSkillScore[] {
   if (!Array.isArray(value)) return [];
@@ -8,9 +35,9 @@ export function parseSkillScores(value: unknown): StudentSkillScore[] {
     if (!entry || typeof entry !== 'object') return [];
     const source = entry as SkillSource;
     const name = typeof source.skill === 'string' ? source.skill.trim() : typeof source.name === 'string' ? source.name.trim() : '';
-    const score = Number(source.score);
-    const maximum = Number(source.max);
-    if (!name || !Number.isFinite(score) || !Number.isFinite(maximum) || maximum <= 0) return [];
+    const score = numericScore(source.score);
+    const maximum = numericScore(source.max);
+    if (!name || score === null || maximum === null || maximum <= 0) return [];
     const percentage = Math.max(0, Math.min(100, Math.round((score / maximum) * 100)));
     return [{ name, score, maximum, percentage }];
   });

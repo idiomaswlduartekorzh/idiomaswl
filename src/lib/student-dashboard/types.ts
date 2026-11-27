@@ -11,6 +11,7 @@ export type StudentAttempt = Readonly<{
   createdAt: string;
   score: number | null;
   scoreLabel: string;
+  scoreDisplay?: Readonly<{ value: string; caption: string }>;
   reportHref: string;
   reportAvailable: boolean;
   feedbackState: 'not-included' | 'available' | 'processing' | 'delivered' | 'failed';

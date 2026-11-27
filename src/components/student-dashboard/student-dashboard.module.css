@@ -115,3 +115,12 @@ linear-gradient(145deg,#f8faff 0%,#f2f5fc 52%,#edf2fb 100%)}
 .insightsFooter strong{color:var(--ink)}.insightsFooter a{font-weight:800;color:#285bb1;text-decoration:none}
 @media(max-width:900px){.insightsGrid{grid-template-columns:1fr}.insightMetrics{grid-template-columns:repeat(2,1fr)}.insightMetrics article:nth-child(2){border-right:0}.insightMetrics article:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:620px){.insightsHeader{display:grid;padding:19px}.insightsFilters{display:grid;grid-template-columns:1fr 1fr}.insightsFilters select{min-width:0;width:100%}.insightMetrics article{padding:14px}.insightMetrics strong{font-size:23px}.insightsGrid{padding:12px}.insightsFooter{display:grid;padding:13px 18px}}
+
+.ieltsScore {
+  width: auto;
+  min-width: 62px;
+  padding: 0 9px;
+  align-items: center;
+  border-radius: 12px;
+  font-variant-numeric: tabular-nums;
+}

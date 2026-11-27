@@ -4,7 +4,7 @@ import { createAdminClient } from '@/lib/supabase/admin';
 import { objectiveLabel } from '@/lib/course-pricing/catalog';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { authenticatedResultHref, getStudentExamWorkspace, productKindForOffer } from './catalog';
-import { buildStudentProgress, parseSkillScores } from './progress';
+import { buildStudentProgress, parseSkillScores, studentAttemptScore } from './progress';
 import type { StudentAssignment, StudentAttempt, StudentCourse, StudentDashboardData, StudentHumanReview, StudentSubscription } from './types';
 import { examCan } from '@/lib/xpress-commerce/access';
 import { parseXpressExamSlug, resolveExamAccessForUser } from '@/lib/xpress-commerce/access.server';
@@ -54,16 +54,6 @@ function displayName(user: AuthUser, profile: Profile): string {
   return profile?.full_name?.trim() || metadataName?.trim() || user.email?.split('@')[0] || 'Estudiante';
 }
 
-function normalizedScore(row: SubmissionRow): { score: number | null; label: string } {
-  const value = Number(row.total_score);
-  const maximum = Number(row.total_max);
-  if (Number.isFinite(value) && Number.isFinite(maximum) && maximum > 0) {
-    const score = Math.max(0, Math.min(100, Math.round((value / maximum) * 100)));
-    return { score, label: row.total_label?.trim() || `${score}%` };
-  }
-  return { score: null, label: row.total_label?.trim() || 'Reporte disponible' };
-}
-
 function teacherFeedback(value: unknown): StudentAttempt['teacherFeedback'] {
   if (!value || typeof value !== 'object') return null;
   const report = value as Record<string, unknown>;
@@ -87,7 +77,6 @@ function humanReviewReport(value: unknown): StudentHumanReview['report'] {
 }
 
 function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: FeedbackRow, detailed = true): StudentAttempt {
-  const score = normalizedScore(row);
   const exam = getStudentExamWorkspace(row.exam_slug);
   const deliveredFeedback = feedback?.status === 'completed' ? teacherFeedback(feedback.generated_report) : null;
   return {
@@ -99,8 +88,7 @@ function toAttempt(row: SubmissionRow, personalized: boolean, feedback?: Feedbac
     mockId: row.mock_id,
     title: row.mock_title?.trim() || 'Simulacro completado',
     createdAt: row.created_at,
-    score: score.score,
-    scoreLabel: score.label,
+    ...studentAttemptScore(row),
     reportHref: detailed ? authenticatedResultHref(row.id) : (exam?.hubHref ?? '/examenes'),
     reportAvailable: detailed,
     skills: detailed ? parseSkillScores(row.skills) : [],

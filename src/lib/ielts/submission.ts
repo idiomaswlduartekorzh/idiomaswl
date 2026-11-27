@@ -65,6 +65,33 @@ export function countEssayWords(value: string): number {
   return value.trim() ? value.trim().split(/\s+/).length : 0;
 }
 
+/** The combined count is available only when both objective skills have a recorded numerator and denominator. */
+export function ieltsObjectiveScoreLabel(skills: unknown): string | null {
+  if (!Array.isArray(skills)) return null;
+  const counts = new Map<string, { correct: number; total: number }>();
+  for (const entry of skills) {
+    if (!entry || typeof entry !== 'object') continue;
+    const name = typeof entry.skill === 'string' ? entry.skill : typeof entry.name === 'string' ? entry.name : '';
+    const skill = name.trim().toLowerCase();
+    if (skill !== 'listening' && skill !== 'reading') continue;
+    if (counts.has(skill)) return null;
+
+    const raw = typeof entry.raw === 'string' ? entry.raw.trim().match(/^(\d+)\s*\/\s*(\d+)(?:\s+(?:correct|aciertos?))?$/i) : null;
+    // Older records sometimes store the objective points directly on the 40-point scale.
+    // A score out of 9 is a band and does not uniquely identify a number of correct answers.
+    const legacyPoints = entry.raw == null && (entry.max === 40 || entry.max === '40')
+      && (typeof entry.score === 'number' || (typeof entry.score === 'string' && /^\d+$/.test(entry.score.trim())));
+    if (!raw && !legacyPoints) return null;
+    const correct = Number(raw ? raw[1] : entry.score);
+    const total = raw ? Number(raw[2]) : 40;
+    if (!Number.isSafeInteger(correct) || !Number.isSafeInteger(total) || total <= 0 || total > 40 || correct < 0 || correct > total) return null;
+    counts.set(skill, { correct, total });
+  }
+  const listening = counts.get('listening');
+  const reading = counts.get('reading');
+  return listening && reading ? `${listening.correct + reading.correct}/${listening.total + reading.total}` : null;
+}
+
 export function ieltsSpeakingEvidenceIssues(
   prompts: readonly IeltsSpeakingPromptRef[],
   audio: readonly IeltsAudioDescriptor[],

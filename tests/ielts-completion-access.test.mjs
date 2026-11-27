@@ -34,7 +34,7 @@ const owner = { id: 'student-a', email_confirmed_at: '2026-08-10T08:00:00Z' };
 function makeFixture({ mockId = 'set-2', userId = owner.id, status = 'submitted' } = {}) {
   const submission = {
     id: attemptId, exam_slug: 'ielts', mock_id: mockId, mock_title: 'IELTS Academic Set '+mockId.slice(4),
-    user_id: userId, submission_status: status, skills: [{ raw: '20/40 correct' }, { raw: '26/40 correct' }],
+    user_id: userId, submission_status: status, skills: [{ skill: 'Listening', raw: '20/40 correct' }, { skill: 'Reading', raw: '26/40 correct' }],
     speaking_audio_paths: { sp1: mockId+'/'+attemptId+'/sp1.webm' }, speaking_audio_metadata: { sp1: { size: 3200 } },
   };
   const tables = { exam_submissions: [submission], exam_access_code_redemptions: [] };
@@ -132,6 +132,10 @@ test('IELTS completion resolves a receipt and its institutional grant, independe
   unavailable.ledgerUnavailable = true;
   assert.equal((await unavailable.complete()).status, 503);
   assert.equal(unavailable.mockLoads, 0);
+
+  const incompleteSkills = makeFixture();
+  incompleteSkills.submission.skills = [{ skill: 'Reading', raw: '0/40 correct' }, { skill: 'Listening', max: 9, score: 5 }];
+  assert.equal((await (await incompleteSkills.complete()).json()).basicScore, 'Resultado guardado');
 
   const historical = makeFixture({ userId: null });
   historical.viewer = null;

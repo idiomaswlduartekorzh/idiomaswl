@@ -118,9 +118,21 @@ function ProductCard({ data, cardId = 'primary' }: { data: StudentDashboardData;
 }
 
 function AttemptRow({ attempt }: { attempt: StudentDashboardData['attempts'][number] }) {
+  const display = attempt.scoreDisplay;
+  const feedback = attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible'
+    : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado'
+    : attempt.feedbackState === 'failed' ? 'Retomaremos tu revisión'
+    : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : null;
   return <article className={styles.attempt}>
-    <div className={styles.score} aria-label={attempt.score === null ? attempt.scoreLabel : `${attempt.score} por ciento`}><strong>{attempt.score ?? '✓'}</strong>{attempt.score !== null ? <span>%</span> : null}</div>
-    <div className={styles.attemptBody}><span>{dateLabel(attempt.createdAt)} · {attempt.examFlag} {attempt.examName}</span><h3>{attempt.title}</h3><p>{attempt.feedbackState === 'delivered' ? 'Feedback personalizado disponible' : attempt.feedbackState === 'processing' ? 'Preparando feedback personalizado' : attempt.feedbackState === 'failed' ? 'Retomaremos tu revisión' : attempt.feedbackState === 'available' ? 'Feedback personalizado incluido' : 'Corrección automática guardada'}</p></div>
+    <div className={display ? `${styles.score} ${styles.ieltsScore}` : styles.score}
+      aria-label={display || attempt.score === null ? attempt.scoreLabel : `${attempt.score} por ciento`}>
+      <strong>{display?.value ?? attempt.score ?? '✓'}</strong>{!display && attempt.score !== null ? <span>%</span> : null}
+    </div>
+    <div className={styles.attemptBody}>
+      <span>{dateLabel(attempt.createdAt)} · {attempt.examFlag} {attempt.examName}</span><h3>{attempt.title}</h3>
+      {display && <p>{display.caption}</p>}
+      {(feedback || !display) && <p>{feedback ?? 'Corrección automática guardada'}</p>}
+    </div>
     <Link href={attempt.reportHref}>{attempt.reportAvailable ? 'Ver reporte' : 'Seguir practicando'} <span aria-hidden="true">→</span></Link>
   </article>;
 }

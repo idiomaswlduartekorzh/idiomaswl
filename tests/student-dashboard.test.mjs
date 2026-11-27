@@ -5,10 +5,53 @@ import path from 'node:path';
 import { XPRESS_EXAM_OPTIONS } from '../src/lib/student-onboarding/catalog.ts';
 import { getStudentExamWorkspace, productKindForOffer, STUDENT_PRODUCT_COPY } from '../src/lib/student-dashboard/catalog.ts';
 import { studentDashboardPreview } from '../src/lib/student-dashboard/preview-data.ts';
-import { buildStudentProgress, parseSkillScores } from '../src/lib/student-dashboard/progress.ts';
+import { buildStudentProgress, parseSkillScores, studentAttemptScore } from '../src/lib/student-dashboard/progress.ts';
 
 const root = process.cwd();
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
+
+test('IELTS history shows the two objective counts, distinct from the final band', () => {
+  const row = { exam_slug: 'ielts', total_score: null, total_max: 9, total_label: 'Listening Band 5.5 · Reading Band 6.5' };
+  const listening = { skill: 'Listening', score: 5.5, max: 9, raw: '20/40 correct' };
+  const reading = { skill: 'Reading', score: 6.5, max: 9, raw: '26/40 correct' };
+  const attempt = skills => studentAttemptScore({ ...row, skills });
+  const recent = attempt([reading, { skill: 'Writing', raw: '5/9 correct' }, listening]);
+  assert.deepEqual(recent, {
+    score: null, scoreLabel: '46/80 aciertos de Listening y Reading',
+    scoreDisplay: { value: '46/80', caption: 'Aciertos de Listening y Reading' },
+  });
+  const historical = attempt([{ name: 'listening', score: 20, max: 40 }, { name: 'reading', score: '14', max: '40' }]);
+  assert.equal(historical.scoreDisplay.value, '34/80');
+  const zero = attempt([{ ...listening, raw: '0/40 correct' }, { ...reading, raw: '0/40 correct' }]);
+  assert.equal(zero.scoreDisplay.value, '0/80');
+  const progress = buildStudentProgress([{ ...recent, id: 'attempt', title: 'Set 2', createdAt: '2026-10-01', examSlug: 'ielts', examName: 'IELTS', skills: [] }], 'ielts');
+  assert.equal(progress.averageScore, null);
+  assert.deepEqual(progress.points, []);
+  for (const skills of [
+    [], [reading], [reading, listening, listening], [{ raw: '20/40 correct' }, reading],
+    [{ skill: 'Listening', score: 5.5, max: 9 }, reading], [{ ...listening, raw: '41/40 correct' }, reading],
+    [{ ...listening, raw: '0/0 correct' }, reading], [{ name: 'Listening', score: null, max: 40 }, reading],
+  ]) {
+    assert.deepEqual(attempt(skills).scoreDisplay, { value: '—', caption: 'Banda global pendiente' });
+  }
+  for (const total of [0, '6.5']) {
+    const final = studentAttemptScore({ ...row, total_score: total, skills: [reading, listening] });
+    assert.deepEqual(final.scoreDisplay, { value: `${total}/9`, caption: 'Banda global' });
+    assert.equal(final.score, Math.round(Number(total)/9*100));
+  }
+});
+
+test('missing totals and skill measurements stay distinct from genuine zeroes in other exams', () => {
+  const row = { exam_slug: 'goethe', total_max: 100, total_label: null, skills: null };
+  for (const absent of [null, undefined, ' ', false]) {
+    assert.deepEqual(studentAttemptScore({ ...row, total_score: absent }), { score: null, scoreLabel: 'Reporte disponible' });
+  }
+  assert.deepEqual(studentAttemptScore({ ...row, total_score: 0 }), { score: 0, scoreLabel: '0%' });
+  assert.deepEqual(studentAttemptScore({ ...row, total_score: '73' }), { score: 73, scoreLabel: '73%' });
+  assert.deepEqual(parseSkillScores([
+    { skill: 'Reading', score: null, max: 9 }, { skill: 'Writing', score: ' ', max: 9 }, { skill: 'Listening', score: 0, max: 9 },
+  ]), [{ name: 'Listening', score: 0, maximum: 9, percentage: 0 }]);
+});
 
 test('the ten purchasable exam families resolve to their real mock routes', () => {
   assert.equal(XPRESS_EXAM_OPTIONS.length, 10);

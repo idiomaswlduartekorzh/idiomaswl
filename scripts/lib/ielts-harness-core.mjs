@@ -205,6 +205,41 @@ export function verifyTechnicalAudioEvidence(root, technical, expectedAudioSha25
   }
 }
 
+const STUDENT_JOURNEY = 'authenticated-student-journey';
+
+function verifyStudentJourney(root, ux, report, row) {
+  const { reportSha256, ...content } = report;
+  const database = report.databaseVerification;
+  if (ux.evidenceKind !== STUDENT_JOURNEY || report.evidenceKind !== STUDENT_JOURNEY
+    || sha256(JSON.stringify(content)) !== reportSha256 || database?.distinctQaAccounts !== 1
+    || database.allFourResultsAndHistoryVisible !== true || database.allFourDashboardScoresMatch !== true) return false;
+  const observed = row.observations ?? [];
+  const receipts = new Set();
+  if (observed.length !== ux.viewports.length) return false;
+  return ux.viewports.every(({ width, height }) => {
+    const run = observed.find(entry => entry.viewport.width === width && entry.viewport.height === height);
+    const completion = run?.api?.complete;
+    if (!run?.login?.confirmed || !completion?.ok || !completion.sameReceipt
+      || !/^[a-f0-9]{16,64}$/.test(completion.receiptDigest) || receipts.has(completion.receiptDigest)
+      || !run.checks.studentResultVisible || !run.checks.dashboardListsAttempt || !run.checks.dashboardScoreMatchesReceipt
+      || run.dashboardAfter?.objectiveScoreShown !== completion.score) return false;
+    receipts.add(completion.receiptDigest);
+    const matches = database.receipts.filter(receipt => receipt.receiptSha256.startsWith(completion.receiptDigest));
+    const receipt = matches[0];
+    if (matches.length !== 1 || receipt.setId !== row.mockId || receipt.submissionStatus !== 'submitted'
+      || !receipt.browserEvidence.some(item => item.width === width && item.browserBasicScore === completion.score
+        && item.dashboardObjectiveScore === completion.score && item.matchesSet && item.matchesScore)) return false;
+
+    return ['resultado', 'historial'].every(stage => {
+      const filename = `${row.mockId}-${width}-${stage}.png`;
+      const shot = run.screenshots.find(entry => entry.filename === filename);
+      return shot && verifyEvidenceFile(root, {
+        evidencePath: path.join(report.browserReview.screenshotDirectory, filename), evidenceSha256: shot.sha256,
+      });
+    });
+  });
+}
+
 function verifyUxEvidence(root, ux, expectedContentSha256, setNumber) {
   if (!verifyEvidenceFile(root, ux)) return false;
   try {
@@ -215,8 +250,10 @@ function verifyUxEvidence(root, ux, expectedContentSha256, setNumber) {
       && row?.status === 'PASS'
       && row.contentSha256 === expectedContentSha256
       && row.checks
+      && Object.keys(row.checks).length > 0
       && Object.values(row.checks).every(Boolean)
-      && report.browserReview?.status === 'PASS';
+      && report.browserReview?.status === 'PASS'
+      && (!(ux.evidenceKind || report.evidenceKind) || verifyStudentJourney(root, ux, report, row));
   } catch {
     return false;
   }

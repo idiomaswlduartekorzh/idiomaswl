@@ -158,6 +158,47 @@ test('complete fresh evidence stops at final human release review', () => {
   }
 });
 
+test('a student journey compares the result, history card, receipt and images for each viewport', t => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-history-proof-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  const current = material();
+  const record = completeRecord(root, current);
+  const kind = 'authenticated-student-journey';
+  const viewports = [{ width: 390, height: 844 }, { width: 1440, height: 900 }];
+  const receipts = [];
+  const observations = viewports.map(viewport => {
+    const { width } = viewport;
+    const receiptSha256 = sha256(String(width));
+    const score = '46/80';
+    receipts.push({ receiptSha256, setId: 'set-1', submissionStatus: 'submitted',
+      browserEvidence: [{ width, browserBasicScore: score, dashboardObjectiveScore: score, matchesSet: true, matchesScore: true }] });
+    const screenshots = ['resultado', 'historial'].map(stage => {
+      const filename = `set-1-${width}-${stage}.png`;
+      fs.writeFileSync(path.join(root, filename), filename);
+      return { filename, sha256: sha256(filename) };
+    });
+    return { viewport, screenshots, login: { confirmed: true },
+      api: { complete: { ok: true, sameReceipt: true, receiptDigest: receiptSha256.slice(0, 16), score } },
+      checks: { studentResultVisible: true, dashboardListsAttempt: true, dashboardScoreMatchesReceipt: true },
+      dashboardAfter: { objectiveScoreShown: score } };
+  });
+  const report = { schemaVersion: 1, evidenceKind: kind, status: 'PASS', browserReview: { status: 'PASS', screenshotDirectory: '.' },
+    sets: [{ set: 1, mockId: 'set-1', contentSha256: current.contentSha256, status: 'PASS', checks: { history: true }, observations }],
+    databaseVerification: { distinctQaAccounts: 1, allFourResultsAndHistoryVisible: true, allFourDashboardScoresMatch: true, receipts } };
+  function bindAndEvaluate() {
+    const body = JSON.stringify({ ...report, reportSha256: sha256(JSON.stringify(report)) });
+    fs.writeFileSync(path.join(root, 'ux.json'), body);
+    Object.assign(record.ux, { evidenceKind: kind, viewports, evidenceSha256: sha256(body) });
+    return evaluateSet(current, record, root).coverage.ux;
+  }
+  assert.equal(bindAndEvaluate(), true);
+  observations[0].dashboardAfter.objectiveScoreShown = '0%';
+  assert.equal(bindAndEvaluate(), false);
+  observations[0].dashboardAfter.objectiveScoreShown = '46/80';
+  fs.writeFileSync(path.join(root, 'set-1-390-resultado.png'), 'changed');
+  assert.equal(bindAndEvaluate(), false);
+});
+
 test('final independent approval over the current fingerprint releases the set', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
   try {

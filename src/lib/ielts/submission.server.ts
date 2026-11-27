@@ -17,6 +17,7 @@ import { consumeIeltsRateLimit } from './rate-limit.server';
 import {
   IELTS_SPEAKING_BUCKET,
   IELTS_SUBMISSION_CONSENT_VERSION,
+  ieltsObjectiveScoreLabel,
   ieltsSpeakingEvidenceIssues,
   countEssayWords,
   type IeltsAudioDescriptor,
@@ -182,21 +183,6 @@ function clientIp(request: Request): string {
   return request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
     || request.headers.get('x-real-ip')
     || 'unknown';
-}
-
-function ieltsBasicScore(value: unknown): string {
-  if (!Array.isArray(value)) return 'Resultado guardado';
-  let correct = 0;
-  let total = 0;
-  for (const row of value) {
-    if (!row || typeof row !== 'object') continue;
-    const raw = (row as { raw?: unknown }).raw;
-    const match = typeof raw === 'string' ? raw.match(/^(\d+)\/(\d+)\s+correct$/) : null;
-    if (!match) continue;
-    correct += Number(match[1]);
-    total += Number(match[2]);
-  }
-  return total > 0 ? `${correct}/${total}` : 'Resultado guardado';
 }
 
 async function prepareSubmission(request: Request, mockId: string, rawPayload: unknown): Promise<Response> {
@@ -387,7 +373,7 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
   const reviewMock = reviewAccess === 'public' ? null : await loadIeltsMock(mockId);
   if (reviewAccess !== 'public' && !reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 503);
   return Response.json({
-    ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: reviewAccess,
+    ok: true, submissionId, reviewMock, basicScore: ieltsObjectiveScoreLabel(submission.skills) ?? 'Resultado guardado', xpressAccess: reviewAccess,
   } satisfies IeltsCompleteResponse, { headers: { 'cache-control': 'private, no-store' } });
 }
 

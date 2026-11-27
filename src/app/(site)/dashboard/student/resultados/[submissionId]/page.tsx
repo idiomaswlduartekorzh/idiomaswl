@@ -27,7 +27,7 @@ export default async function StudentResultPage({ params }: { params: Promise<{ 
     <nav><Link href="/dashboard/student">← Volver a mi espacio</Link><span>Reporte privado</span></nav>
     <header><p>WeLearn Xpress</p><h1>{attempt.title}</h1><span>{attempt.examFlag} {attempt.examName}</span></header>
     <section className={styles.result}>
-      <div className={styles.score}><span>Resultado</span><strong>{attempt.score === null ? 'Listo' : `${attempt.score}%`}</strong><small>{attempt.scoreLabel}</small></div>
+      <div className={styles.score}><span>Resultado</span><strong>{attempt.scoreDisplay?.value ?? (attempt.score === null ? 'Listo' : `${attempt.score}%`)}</strong><small>{attempt.scoreDisplay?.caption ?? attempt.scoreLabel}</small></div>
       <div><p>Intento guardado en tu cuenta</p><h2>Tu reporte está disponible de forma permanente dentro del acceso contratado.</h2><p>El detalle pedagógico se construye con la información que registró este simulacro. Las correcciones y escalas son de práctica y no constituyen un resultado oficial.</p></div>
     </section>
     {attempt.skills.length ? <section className={styles.breakdown}>
