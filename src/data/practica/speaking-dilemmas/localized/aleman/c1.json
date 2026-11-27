@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "academic-merit",
+    "title": "Akademische Leistung oder Praxiserfolg",
+    "prompt": "Zwei Studierende der Gesundheitswissenschaften konkurrieren um einen universitären Preis. Was soll stärker gewichten: die konstanten Studienleistungen oder der konkrete Erfolg im Praxissemester?",
+    "conditionalPrompt": "Wäge beide Leistungen ab und nenne die entscheidenden Beweise.",
+    "options": [
+      {
+        "label": "Studienleistungen",
+        "description": "Exzellentes Studium und eine veröffentlichte Studie über versäumte Termine."
+      },
+      {
+        "label": "Praxiserfolg",
+        "description": "Erfolgreiches Pilotprojekt im Praxissemester zur Reduzierung versäumter Termine."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Leistungsnachweis", "ein Dokument über erbrachte akademische Leistungen", "Der aktuelle Leistungsnachweis zeigt hervorragende Noten."],
+        ["die Praxiserfahrung", "gesammelte Kenntnisse in einem beruflichen Arbeitsfeld", "Ausreichende Praxiserfahrung ist für diese Position unverzichtbar."],
+        ["die Studienleistung", "eine im Rahmen des Studiums erbrachte Leistung", "Jede einzelne Studienleistung fließt in die Gesamtnote ein."],
+        ["der Entscheidungsträger", "eine Person, die wichtige Entscheidungen trifft", "Alle Entscheidungsträger müssen den Bericht sorgfältig prüfen."]
+      ],
+      "phrasalVerbs": [
+        ["in Betracht ziehen", "etwas berücksichtigen oder erwägen", "Wir müssen alle relevanten Faktoren ernsthaft in Betracht ziehen."],
+        ["unter Beweis stellen", "zeigen, was man kann; sich beweisen", "Du musst dein Können in der neuen Abteilung unter Beweis stellen."],
+        ["zu Buche schlagen", "sich deutlich bemerkbar machen oder kosten", "Die hohen Kosten für das Projekt schlagen stark zu Buche."],
+        ["auf den Prüfstand stellen", "etwas kritisch überprüfen und bewerten", "Wir sollten unsere bisherigen Strategien kritisch auf den Prüfstand stellen."]
+      ],
+      "adjectives": [
+        ["fundiert", "auf solider Basis stehend und gut durchdacht", "Sie hat eine sehr fundierte Analyse der Daten vorgelegt."],
+        ["wegweisend", "für die Zukunft von großer Bedeutung", "Diese Entscheidung wird für unser Unternehmen absolut wegweisend sein."],
+        ["praxisnah", "nahe an den Bedürfnissen der beruflichen Praxis", "Das neue Seminar vermittelt äußerst praxisnahe Kompetenzen."],
+        ["vielversprechend", "gute Aussichten auf Erfolg bietend", "Dieser vielversprechende Ansatz verdient unsere volle Unterstützung."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Er hat hart gearbeitet, folglich hat er die Prüfung bestanden."],
+        ["andererseits", "auf der anderen Seite; zum Gegenteil", "Die Theorie ist wichtig, andererseits zählt vor allem die Praxis."],
+        ["zwar", "räumt einen Sachverhalt ein", "Das Ziel ist zwar ambitioniert, aber durchaus erreichbar."],
+        ["darüber hinaus", "als zusätzliche Information oder Verstärkung", "Die Arbeit war präzise, darüber hinaus war sie sehr kreativ."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Aus meiner Sicht gebührt der Preis der Studierenden mit den durchgehenden Studienleistungen. Sie hat während des gesamten Studiums exzellente Ergebnisse erzielt und eine fundierte Studie veröffentlicht.",
+        "**Zwar** haben praktische Projekte ihren eigenen Wert, aber eine wissenschaftliche Publikation zeigt nachhaltiges theoretisches Verständnis. Das schlägt bei einer akademischen Auszeichnung besonders schwer zu Buche.",
+        "**Folglich** sollten wir ihre kontinuierliche akademische Exzellenz belohnen. Das ist ein wegweisender Beleg für wissenschaftliche Disziplin und intellektuelle Leistungsfähigkeit."
+      ],
+      "b": [
+        "Meiner Meinung nach verdient die Person mit dem Praxiserfolg die Auszeichnung. Sie hat im Praxissemester ein Pilotprojekt geleitet und versäumte Termine nachweislich reduziert.",
+        "**Zwar** sind Noten wichtig, aber echte **Praxiserfahrung** stellt Problemlösungskompetenz unter Beweis. Wenn jemand direkt vor Ort greifbare Verbesserungen erzielt, ist das für Kliniken von unschätzbarem Wert.",
+        "**Darüber hinaus** zeigt dieser praktische Erfolg unmittelbare Wirkung im Berufsalltag. **Folglich** müssen wir diesen praxisnahen Ansatz honorieren, da er konkreten Nutzen stiftet."
+      ],
+      "conditional": [
+        "Welche Leistung schwerer wiegt, hängt von den konkreten Rahmenbedingungen ab. Wenn die theoretische Forschung langfristig universelle Standards setzt, ist dieser akademische Erfolg ausschlaggebend.",
+        "**Andererseits** spricht vieles für den Praxisefolg, sofern sich die lokalen Ergebnisse verallgemeinern lassen. Wir müssen prüfen, ob das Pilotprojekt auch anderswo funktioniert.",
+        "**Zwar** bleiben beide Ansätze **vielversprechend**, aber erst harte Beweise für die Skalierbarkeit rechtfertigen den Preis. **Folglich** treffen wir die finale Wahl nach strenger Verifizierung."
+      ]
+    }
+  },
+  {
+    "slug": "city-centre-access",
+    "title": "Fußgängerzone oder Mischverkehr",
+    "prompt": "Deine Stadt hat Fördermittel für die Neugestaltung der Einkaufsstraße erhalten. Soll die Straße fast komplett Fußgängern gehören oder eine Spur für Busse und autorisierte Fahrzeuge behalten?",
+    "conditionalPrompt": "Identifiziere wer auf Tür-zu-Tür-Zugang angewiesen ist und was einen Testlauf überzeugend macht.",
+    "options": [
+      {
+        "label": "Fußgängerzone",
+        "description": "Lieferungen vor Ladenöffnung, Pick-up-Points, ansonsten Raum für Fußgänger und Gastronomie."
+      },
+      {
+        "label": "Mischverkehr",
+        "description": "Eine Spur für Busse und autorisierte Fahrzeuge bei gleichzeitig verbreiterten Gehwegzonen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Fußgänger", "eine Person, die zu Fuß unterwegs ist", "Die neue Fußgängerzone zieht täglich viele Fußgänger an."],
+        ["der Lieferverkehr", "die Gesamtheit aller Fahrzeuge für Warentransporte", "Der Lieferverkehr muss auf die frühen Morgenstunden beschränkt werden."],
+        ["die Erreichbarkeit", "die Möglichkeit, einen Ort problemlos zu erreichen", "Eine gute Erreichbarkeit ist für alle Geschäfte überlebenswichtig."],
+        ["der Testlauf", "ein zeitlich begrenzter Versuch zur Erprobung", "Der erste Testlauf verlief äußerst vielversprechend und ruhig."]
+      ],
+      "phrasalVerbs": [
+        ["in Kauf nehmen", "einen Nachteil als unvermeidlich akzeptieren", "Wir müssen gewisse Anlaufschwierigkeiten unbedingt in Kauf nehmen."],
+        ["zur Verfügung stehen", "für einen Zweck vorhanden sein", "Ausreichende finanzielle Mittel stehen uns ab sofort zur Verfügung."],
+        ["Rücksicht nehmen auf", "auf die Bedürfnisse anderer achten", "Alle Verkehrsteilnehmer müssen aufeinander gegenseitig Rücksicht nehmen."],
+        ["ins Leben rufen", "ein Projekt oder eine Initiative gründen", "Die Stadtverwaltung hat eine neue Initiative ins Leben gerufen."]
+      ],
+      "adjectives": [
+        ["barrierefrei", "ohne Barrieren und für alle Menschen zugänglich", "Das Gebäude wurde komplett barrierefrei und modern umgebaut."],
+        ["attraktiv", "reizvoll und ansprechend gestaltet", "Die neugestaltete Innenstadt wirkt nun wesentlich attraktiver."],
+        ["verkehrsberuhigt", "mit eingeschränktem und langsamem Fahrzeugverkehr", "Diese Wohngegend soll künftig komplett verkehrsberuhigt sein."],
+        ["unumgänglich", "absolut notwendig und nicht zu vermeiden", "Ein solcher Kompromiss ist für das Gelingen unumgänglich."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Die Straße wird gesperrt, folglich steigt die Luftqualität."],
+        ["andererseits", "auf der anderen Seite; zum Gegenteil", "Das Konzept ist sicher, andererseits entstehen hohe Kosten."],
+        ["zwar", "räumt einen Sachverhalt ein", "Der Plan ist zwar teuer, aber er lohnt sich."],
+        ["darüber hinaus", "als zusätzliche Information oder Verstärkung", "Der Lärm sinkt, darüber hinaus gewinnen wir mehr Grünflächen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Aus meiner Sicht sollten wir die Einkaufsstraße komplett in eine Fußgängerzone umwandeln. Durch Lieferungen vor Ladenöffnung und feste Pick-up-Points bleibt die Logistik gewährleistet.",
+        "**Zwar** müssen einige Anwohner gewisse Umwege **in Kauf nehmen**, aber der gewonnene Raum macht die Innenstadt viel attraktiver. **Fußgänger** können sich endlich sicher und frei bewegen.",
+        "**Darüber hinaus** entsteht ein barrierefreier Bereich ohne störenden Autoverkehr. **Folglich** profitiert die gesamte Lebensqualität im Zentrum nachhaltig."
+      ],
+      "b": [
+        "Meiner Meinung nach ist die Beibehaltung einer Bus- und Behördenspur die bessere Entscheidung. Wichtige Fahrzeuge und der öffentliche Nahverkehr müssen jederzeit freie Fahrt haben.",
+        "**Zwar** wird der Platz etwas knapp, aber wir können die Gehwege dennoch deutlich verbreitern. So nehmen wir Rücksicht auf **Fußgänger** und sichern gleichzeitig die Zufahrt.",
+        "**Folglich** bleibt **die Erreichbarkeit** für ältere Menschen gewährt. Das ist ein unumgänglicher Kompromiss für eine funktionierende Stadt."
+      ],
+      "conditional": [
+        "Welche Variante sinnvoll ist, hängt von den Bedürfnissen der betroffenen Bürger ab. Ältere Menschen und Personen mit eingeschränkter Mobilität sind auf direkten Tür-zu-Tür-Zugang angewiesen.",
+        "**Andererseits** zeigt erst ein praktischer **Testlauf**, ob die Busspur wirklich notwendig ist oder ob die reine Fußgängerzone reibungslos funktioniert.",
+        "**Zwar** sind beide Konzepte gut durchdacht, aber nur transparente Messungen der Lärm- und Kundenzahlen liefern den entscheidenden Beweis für unsere finale Wahl."
+      ]
+    }
+  },
+  {
+    "slug": "heatwave-investment",
+    "title": "Hitzewellen-Investition",
+    "prompt": "Eine Gemeinde erwartet heißere Sommer und verfügt über einen Fördertopf zur Klimaanpassung. Soll sie in Straßenbäume investieren, die erst nach mehreren Jahren Schatten spenden, oder für die nächsten drei Sommer besetzte Kühlzentren eröffnen?",
+    "conditionalPrompt": "Entscheide, welches Risiko sofortige Hilfe rechtfertigt und welche Bedingungen eine Investition in Schatten zuverlässig machen.",
+    "options": [
+      {
+        "label": "Stadtbäume pflanzen",
+        "description": "Großkronige Arten an Fußwegen pflanzen und die Pflege finanzieren, damit der Schatten langsam wächst."
+      },
+      {
+        "label": "Kühlzentren öffnen",
+        "description": "Öffnungszeiten klimatisierter Gebäude verlängern, damit Bürger Schutz finden, auch wenn der Hinweg heiß bleibt."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Hitzewelle", "Eine Periode extrem hoher Temperaturen und Sonneneinstrahlung im Sommer.", "Die extreme Hitzewelle belastet vor allem ältere Menschen in der Stadt schwer."],
+        ["der Fördertopf", "Ein finanzielles Budget, das für bestimmte öffentliche Zwecke bereitsteht.", "Die Gemeinde setzt den verfügbaren Fördertopf gezielt für ökologische Projekte ein."],
+        ["die Schattenwirkung", "Der kühlende Effekt von Pflanzen oder Bauten gegen direkte Sonnenstrahlung.", "Eine ausreichende Schattenwirkung lässt sich nur durch großkronige Bäume langfristig erzielen."],
+        ["die Kühlzone", "Ein Bereich, der vor starker Hitze schützt und Abkühlung verschafft.", "Besonders gefährdete Bürger benötigen in jedem Stadtteil eine erreichbare Kühlzone."]
+      ],
+      "phrasalVerbs": [
+        ["die Hitze ertragen", "Große thermische Belastungen physisch aushalten können.", "Viele Anwohner können die drückende Hitze in ihren unsanierten Dachwohnungen kaum ertragen."],
+        ["die Maßnahme umsetzen", "Einen geplanten Schritt in die praktische Realität übertragen.", "Die Stadtverwaltung muss diese dringend notwendigen Schutzmaßnahmen unverzüglich umsetzen."],
+        ["die Pflege übernehmen", "Die Verantwortung für die Erhaltung und Betreuung von etwas tragen.", "Ehrenamtliche Initiativen könnten langfristig die Bewässerung und Pflege übernehmen."],
+        ["vor der Sonne schützen", "Abdeckung oder Schatten bieten, um Verbrennungen oder Überhitzung zu verhindern.", "Dichte Baumkronen schützen Fußgänger effektiv vor der intensiven Sonneneinstrahlung."]
+      ],
+      "adjectives": [
+        ["langfristig", "Über einen sehr großen Zeitraum wirksam oder angelegt.", "Wir brauchen langfristig gedachte Konzepte gegen den städtischen Wärmeinstand."],
+        ["anfällig", "Sehr empfindlich gegenüber äußeren negativen Einflüssen oder Belastungen.", "Junge Baumpflanzungen sind in den ersten trockenen Sommern extrem anfällig."],
+        ["überhitzt", "Stark aufgeheizt durch Sonneneinstrahlung und fehlende Luftzirkulation.", "In den stark versiegelten Straßen kühlen die überhitzten Fassaden nachts kaum ab."],
+        ["unerlässlich", "Zwingend notwendig für das Erreichen eines bestimmten wichtigen Ziels.", "Eine verlässliche Wasserversorgung ist für den Erhalt des Grüns unerlässlich."]
+      ],
+      "connectors": [
+        ["obwohl", "Drückt einen konzedessiven Gegensatz zwischen zwei Sachverhalten aus.", "Obwohl die Bäume erst spät Schatten spenden, lohnt sich die langfristige Investition."],
+        ["hingegen", "Dient der Gegenüberstellung von zwei unterschiedlichen Optionen oder Ansichten.", "Die Kühlzentren helfen sofort, während die Baumpflanzung hingegen Geduld fordert."],
+        ["zudem", "Fügt einen weiteren unterstützenden Aspekt oder Grund hinzu.", "Die Bepflanzung verbessert das Stadtklima; zudem fördert sie die Biodiversität."],
+        ["deshalb", "Leitet eine logische Konsequenz oder Wirkung aus dem zuvor Gesagten ein.", "Die Sommer werden immer heißer, weshalb wir jetzt vorausschauend handeln müssen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Angesichts der zunehmend unerträglichen Sommer in unserer Gemeinde müssen wir unbedingt nachhaltige und dauerhafte Strukturen zur Temperatur Senkung aufbauen. **Obwohl** die Pflanzung großer Straßenbäume erst in vielen Jahren den gewünschten Schatten spenden wird, ist sie alternativlos für ein gesundes Stadtklima. Wir dürfen nicht länger nur kurzfristig reagieren, sondern müssen den städtischen Raum dauerhaft gegen die unbarmherzige Hitze rüsten.",
+        "Zwar bringt die sofortige Öffnung klimatisierter Räume eine spürbare Entlastung für gefährdete Personen, aber sie löst das grundlegende Problem der überheizten Betonwüsten überhaupt nicht. Bäume verbessern nachweislich die Luftqualität, binden CO2 und schaffen eine natürliche Ästhetik, von der alle Generationen **langfristig** profitieren. **Deshalb** plädiere ich entschieden für die Investition in das urbane Grün und gegen reine Symptombekämpfung.",
+        "Zusammenfassend lässt sich sagen, dass nur durch konsequente Baumpflanzungen eine lebenswerte Zukunft unserer Stadt gesichert werden kann, selbst wenn der Weg dorthin viel Geduld und kontinuierliche Pflege erfordert."
+      ],
+      "b": [
+        "Die akute Gefährdung älterer und geschwächter Menschen durch extreme Hitzewellen verlangt nach sofort wirksamen Sofortmaßnahmen ohne jegliche Verzögerung. **Obwohl** die Pflanzung von Straßenbäumen **langfristig** sinnvoll ist, schützt sie die Bürger in den kommenden drei hochgefährlichen Sommern absolut gar nicht. Wir müssen jetzt Leben retten und den Menschen schnell zugängliche, klimatisierte Zufluchtsorte in ihrer unmittelbaren Nachbarschaft zur Verfügung stellen.",
+        "**Zudem** sind junge Bäume extrem **anfällig** für Dürreperioden und würden ohne intensive künstliche Bewässerung ohnehin absterben, was die investierten öffentlichen Gelder verschwenden würde. Die Ausweitung der Öffnungszeiten in öffentlichen Gebäuden **hingegen** garantiert einen verlässlichen Schutz vor Kollapsen und Hitzeschlägen an den heißesten Tagen des Jahres. Aus diesem Grund müssen wir die verfügbaren Mittel zwingend für die Eröffnung dieser lebensrettenden Kühlzentren einsetzen.",
+        "Abschließend betrachtet hat der unmittelbare Schutz der körperlichen Unversehrtheit unserer Bevölkerung absoluten Vorrang vor jeder noch so lobenswerten städtebaulichen Zukunftsvision."
+      ],
+      "conditional": [
+        "Die Entscheidung zwischen diesen beiden Maßnahmen hängt primär von der aktuellen gesundheitlichen Gefährdungslage und der bereits vorhandenen Infrastruktur in den einzelnen Stadtteilen ab. Wenn in den kommenden Sommern extrem lebensbedrohliche Hitzewellen prognostiziert werden, rechtfertigt dieses unmittelbare Risiko den Betrieb betreuter Kühlzentren als schnelle Notfallhilfe. Steht **hingegen** das generelle Wohlbefinden und die dauerhafte thermische Entlastung der urbanen Bevölkerung im Vordergrund, wird die Baumpflanzung zur zuverlässigen Investition.",
+        "In dicht besiedelten Vierteln ohne jede natürliche Beschattung ist die kurzfristige Bereitstellung kühler Räume **unerlässlich**, um gesundheitliche Notfälle wirksam zu verhindern. Sobald jedoch ein grundlegendes Notfallnetz existiert, sollten die Mittel sofort in die ökologische Umgestaltung und Baumbepflanzung fließen. Letztlich müssen wir akuten Schutz und langfristige Vorsorge intelligent miteinander verknüpfen, anstatt starr nur eine Option zu wählen.",
+        "Eine differenzierte Abwägung der lokalen Gegebenheiten zeigt, dass beide Ansätze nacheinander und in angepasster Gewichtung umgesetzt werden müssen, um allen Anforderungen gerecht zu werden."
+      ]
+    }
+  },
+  {
+    "slug": "affordable-housing-mix",
+    "title": "Bezahlbarer Wohnraum: Büroumbau oder Familienwohnungen",
+    "prompt": "Ein Wohnungsunternehmen kann einen Zuschuss nutzen, um entweder Büros in vierzig kleine Wohnungen umzubauen oder zwanzig größere Familienwohnungen in der Nähe von Schulen zu errichten. Beide Vorhaben würden Mieten unter dem Marktwert anbieten. Welches Projekt sollte zuerst realisiert werden?",
+    "conditionalPrompt": "Analysieren Sie den verdeckten Wohnungsbedarf der Warteliste und erläutern Sie, wie Sie beide Vorhaben sachlich abwägen würden.",
+    "options": [
+      {
+        "label": "Büroumbau",
+        "description": "Ein leerstehendes Gebäude nahe dem Nahverkehr nutzen und schnell mehr Haushalte unterbringen. Der Grundriss eignet sich für ein bis zwei Personen."
+      },
+      {
+        "label": "Familienwohnungen",
+        "description": "Wohnungen mit ausreichend Schlafzimmern für größere Haushalte errichten. Die Fertigstellung dauert länger und weniger Haushalte profitieren zuerst."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Zuschuss", "finanzielle Unterstützung von staatlicher Seite", "Das Unternehmen beantragt einen öffentlichen Zuschuss für die geplante Sanierung."],
+        ["die Warteliste", "Verzeichnis von Personen, die auf eine Leistung warten", "Viele Familien stehen seit Jahren auf der langen Warteliste für günstigen Wohnraum."],
+        ["der Grundriss", "grafische Darstellung der Raumaufteilung", "Der flexible Grundriss ermöglicht eine optimale Nutzung der kleinen Fläche."],
+        ["die Fertigstellung", "die Beendigung eines Bau- oder Arbeitsprozesses", "Die offizielle Fertigstellung des Gebäudes ist für den kommenden Herbst geplant."]
+      ],
+      "phrasalVerbs": [
+        ["in Angriff nehmen", "mit der Durchführung einer Aufgabe beginnen", "Wir müssen dieses wichtige Bauprojekt nun entschlossen in Angriff nehmen."],
+        ["zur Verfügung stehen", "für einen bestimmten Zweck vorhanden sein", "Für die moderne Stadtentwicklung stehen derzeit nur begrenzte Finanzmittel zur Verfügung."],
+        ["in Betracht ziehen", "über etwas nachdenken als mögliche Option", "Der Vorstand wird diesen alternativen Standort unbedingt in Betracht ziehen."],
+        ["ins Gewicht fallen", "von Bedeutung sein oder Einfluss haben", "Die langen Fahrzeiten zur Arbeit fallen bei dieser Entscheidung schwer ins Gewicht."]
+      ],
+      "adjectives": [
+        ["leerstehend", "nicht bewohnt oder ungenutzt", "Das leerstehende Bürogebäude soll im nächsten Monat komplett entkernt werden."],
+        ["bezahlbar", "so günstig, dass man es sich leisten kann", "Besonders in den Großstädten fehlt es an bezahlbarem Wohnraum für junge Leute."],
+        ["langfristig", "über einen längeren Zeitraum wirksam", "Eine durchdachte Stadtplanung erfordert immer eine langfristige Perspektive."],
+        ["dringend", "keinen Aufschub duldend, sehr wichtig", "Wegen der steigenden Mieten besteht ein dringender Handlungsbedarf für die Politik."]
+      ],
+      "connectors": [
+        ["zwar", "drückt eine Einräumung aus", "Das Projekt ist zwar teuer, bringt aber enorme Vorteile für die Region."],
+        ["allerdings", "schränkt eine vorherige Aussage ein", "Die Lage ist hervorragend, allerdings sind die Baukosten extrem hoch."],
+        ["folglich", "drückt eine logische Konsequenz aus", "Die Nachfrage übersteigt das Angebot, folglich steigen die Mieten rasant."],
+        ["außerdem", "dient zur Reihung von Argumenten", "Die Wohnungen sind gut isoliert, außerdem verfügen sie über einen großen Balkon."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Ich halte den schnellen Umbau von Büros für die absolut beste Entscheidung. Ein leerstehendes Gebäude nahe dem Nahverkehr kann sofort genutzt werden, um **dringend** benötigten Wohnraum zu schaffen. **Zwar** sind die Apartments klein, aber sie bieten vielen Menschen schnell ein sicheres Dach über dem Kopf.",
+        "Angesichts der aktuellen Krise müssen wir innovative Maßnahmen entschlossen **in Angriff nehmen**. Der flexible **Grundriss** eignet sich hervorragend für Singles und Paare, die auf dem freien Markt kaum noch eine Chance haben. **Folglich** erhalten zahlreiche Haushalte ohne lange Verzögerung endlich eine bezahlbare Bleibe.",
+        "Man darf nicht vergessen, dass jeder Monat Zögern die Not der Wohnungssuchenden verschärft. Die Politik sollte daher den schnellen Umbau priorisieren, weil er sofort greifbare Ergebnisse liefert. Letztlich überwiegt der Vorteil, vielen Menschen schnell zu helfen, bei Weitem."
+      ],
+      "b": [
+        "Die Errichtung von Familienwohnungen ist meiner Ansicht nach der einzig sinnvolle Weg. Große Haushalte leiden besonders unter dem Mangel an passenden Immobilien und benötigen **dringend** adäquate Unterstützung. **Zwar** dauert **die Fertigstellung** deutlich länger, aber diese Investition sichert nachhaltig die soziale Stabilität unserer Stadt.",
+        "Ein öffentlicher **Zuschuss** sollte gezielt dort fließen, wo der Bedarf am größten und **langfristig** am schwersten ist. Wenn wir jetzt nur kleine Apartments bauen, bleiben Familien mit Kindern weiterhin auf der **Warteliste**. **Außerdem** stehen solche größeren Einheiten für die gesellschaftliche Entwicklung im Viertel im Mittelpunkt.",
+        "Wir müssen über den Tag hinausdenken und vorausschauend planen. Familienwohnungen mögen **zwar** höhere Kosten verursachen, aber sie verhindern die Verdrängung von Kindern aus den Zentren. Zusammenfassend ist dieser nachhaltige Ansatz für die Zukunft unserer Gesellschaft unersetzlich."
+      ],
+      "conditional": [
+        "Die Entscheidung zwischen beiden Konzepten hängt stark von der genauen Zusammensetzung der lokalen **Warteliste** ab. Wenn vor allem junge Berufstätige eine Bleibe suchen, ist der schnelle Büroumbau absolut gerechtfertigt. Herrscht jedoch akuter Mangel an großen Wohnungen, müssen Familienwohnungen Priorität haben.",
+        "**Zwar** bietet der Büroumbau den Vorteil einer schnellen Entlastung, **allerdings** löst er das Problem größerer Haushalte überhaupt nicht. Man muss daher prüfen, welche demografische Gruppe in der jeweiligen Nachbarschaft stärker vertreten ist. **Folglich** fällt das Urteil je nach sozialer Struktur völlig unterschiedlich aus.",
+        "Ein ausgewogener Ansatz berücksichtigt beide Seiten, indem er vorhandene Mittel optimal aufteilt. Wenn man die Realität genau analysiert, zeigt sich, dass eine Mischung beider Konzepte **langfristig** am meisten bewirkt. Daher sollte man je nach konkretem Bedarf flexibel entscheiden."
+      ]
+    }
+  },
+  {
+    "slug": "heritage-site-access",
+    "title": "Zugang zu einer sensiblen historischen Stätte",
+    "prompt": "Eine fragile historische Stätte darf täglich nur eine begrenzte Anzahl von Besuchern einlassen. Sollte sie kostenlose Plätze per Losverfahren vergeben oder kostenpflichtige Zeitfenster einführen und die Einnahmen für den Denkmalschutz verwenden?",
+    "conditionalPrompt": "Entscheiden Sie, wie man einen fairen Zugang, verlässliche Buchungen und die Notwendigkeit der Denkmalpflege miteinander in Einklang bringen kann.",
+    "options": [
+      {
+        "label": "Losverfahren",
+        "description": "Plätze nach dem Zufallsprinzip verteilen und Einnahmen vernachlässigen."
+      },
+      {
+        "label": "Kostenpflichtige Zeitfenster",
+        "description": "Feste Buchungen gegen Gebühr anbieten und den Erhalt finanzieren."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["das Losverfahren", "eine Methode zur zufälligen Auswahl von Personen aus einer Gruppe.", "Das Losverfahren garantiert allen interessierten Bürgern exakt die gleichen Chancen auf eine Teilnahme."],
+        ["die Einnahme", "das Geld, das durch den Verkauf von Waren oder Dienstleistungen eingenommen wird.", "Durch gezielte Investitionen steigen die Einnahmen der gesamten Region spürbar an."],
+        ["die Instandhaltung", "die kontinuierliche Pflege und Reparatur von Anlagen oder Gebäuden.", "Eine professionelle Instandhaltung verhindert teure Folgeschäden an den historischen Mauern."],
+        ["das Zeitfenster", "ein zeitlich genau definierter Rahmen für eine bestimmte Aktivität.", "Jeder Besucher erhält ein festes Zeitfenster, um den Andrang im Museum optimal zu steuern."]
+      ],
+      "phrasalVerbs": [
+        ["zur Verfügung stellen", "etwas für einen bestimmten Zweck bereitstellen oder anbieten.", "Die Gemeinde wird zusätzliche finanzielle Mittel für das ehrgeizige Projekt zur Verfügung stellen."],
+        ["in Betracht ziehen", "eine Option ernsthaft prüfen oder als Möglichkeit ansehen.", "Wir müssen alle verfügbaren Alternativen in Betracht ziehen, bevor wir eine endgültige Entscheidung treffen."],
+        ["unter Beweis stellen", "zeigen, was man kann oder wie gut etwas funktioniert.", "In dieser schwierigen Situation konnte das neue Konzept seinen praktischen Nutzen unter Beweis stellen."],
+        ["Rücksicht nehmen", "auf die Bedürfnisse oder Gefühle anderer achten.", "Besucher sollten stets auf die fragile Architektur der historischen Anlage Rücksicht nehmen."]
+      ],
+      "adjectives": [
+        ["fragil", "leicht zerbrechlich oder sehr empfindlich beschaffen.", "Das fragile Ökosystem benötigt dringend einen besseren Schutz vor allzu starkem Tourismus."],
+        ["verbindlich", "so beschaffen, dass es absolut verlässlich und einzuhalten ist.", "Wir benötigen eine verbindliche Zusage, um die langfristige Planung verlässlich durchführen zu können."],
+        ["lukrativ", "finanziell lohnend oder gewinnbringend.", "Dieses innovative Angebot erweist sich als äußerst lukrativ für die regionale Wirtschaft."],
+        ["transparent", "für jeden gut nachvollziehbar und offen gestaltet.", "Eine transparente Vergabe der begrenzten Plätze schafft sofort großes Vertrauen bei den Bürgern."]
+      ],
+      "connectors": [
+        ["folglich", "als direkte Konsequenz aus dem zuvor Genannten.", "Die historischen Gebäude sind stark beschädigt, folglich müssen dringend umfangreiche Sanierungsarbeiten beginnen."],
+        ["hingegen", "drückt einen deutlichen Gegensatz oder eine Kontrastierung aus.", "Während die erste Option sehr teuer ist, erscheint die zweite Alternative hingegen äußerst kostengünstig."],
+        ["zudem", "als zusätzliches Argument oder weiterer Aspekt.", "Die Maßnahme spart wertvolle Zeit und steigert zudem die allgemeine Effizienz der Verwaltung."],
+        ["schließlich", "führt das letzte und oft gewichtigste Argument an.", "Wir dürfen bei unseren Planungen schließlich nicht die Interessen der lokalen Bevölkerung völlig ignorieren."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Das Losverfahren** garantiert allen interessierten Bürgern exakt die gleichen Chancen auf eine Teilnahme an der kulturellen Veranstaltung. Da historische Stätten ein gemeinsames Erbe darstellen, sollte der finanzielle Status niemals über den Zugang entscheiden. Durch dieses gerechte System bleibt die Barrierefreiheit für jedermann uneingeschränkt gewahrt.",
+        "**Zudem** müssen wir alle verfügbaren Alternativen **in Betracht ziehen**, bevor wir eine endgültige Entscheidung über die Vergabe treffen. Die Gemeinde wird zusätzliche finanzielle Mittel für das ehrgeizige Projekt **zur Verfügung stellen**, um den Verlust von Einnahmen auszugleichen. **Folglich** entsteht eine ausgewogene Balance zwischen sozialer Gerechtigkeit und kultureller Bildung.",
+        "**Schließlich** zeigt sich hier deutlich, dass der Schutz des Gemeinwohls immer Vorrang vor rein kommerziellen Interessen haben muss. Eine transparente Vergabe der begrenzten Plätze schafft sofort großes Vertrauen bei den Bürgern und stärkt den gesellschaftlichen Zusammenhalt. Wir sollten daher unbedingt an diesem bewährten Prinzip festhalten."
+      ],
+      "b": [
+        "Die Einführung von festen Zeitfenstern gegen eine Gebühr erweist sich als äußerst **lukrativ** für die regionale Wirtschaft. Eine professionelle **Instandhaltung** verhindert teure Folgeschäden an den historischen Mauern, die durch mangelnde Pflege entstehen könnten. Wir benötigen eine verbindliche Zusage, um die langfristige Planung verlässlich durchführen zu können.",
+        "Durch diese gezielten Einnahmen steigen die finanziellen Möglichkeiten für den Denkmalschutz im gesamten Landkreis spürbar an. Jeder Besucher erhält ein genaues **Zeitfenster**, um den Andrang im Museum optimal zu steuern und das fragile Ökosystem zu entlasten. In dieser schwierigen Situation konnte das neue Konzept seinen praktischen Nutzen **unter Beweis stellen**.",
+        "**Schließlich** müssen wir bei unseren Überlegungen bedenken, dass der Erhalt solcher Denkmäler enorme Kosten verursacht, die gedeckt werden müssen. Besucher sollten stets auf die fragile Architektur **Rücksicht nehmen**, was durch kontrollierte Besucherströme hervorragend gelingt. Daher ist dieses kommerzielle Modell die einzig sinnvolle Lösung."
+      ],
+      "conditional": [
+        "Wenn der Erhalt der historischen Bausubstanz akut gefährdet ist und die laufenden Kosten steigen, sind kostenpflichtige **Zeitfenster** die einzig sinnvolle Maßnahme. In diesem Fall überwiegt der finanzielle Bedarf zur professionellen **Instandhaltung** der Anlage deutlich gegenüber den reinen Zugangsfragen. Die generierten Einnahmen sichern dann das Überleben des Denkmals.",
+        "Wenn **hingegen** die soziale Teilhabe im Vordergrund steht und die öffentliche Hand die nötigen Sanierungskosten ohnehin vollständig übernimmt, bietet sich ein faires **Losverfahren** an. Solange keine unmittelbare bautechnische Bedrohung vorliegt, wiegt das Prinzip der Chancengleichheit für alle Bürger schwerer als kommerzieller Gewinn. Dies stärkt das Vertrauen in die Kulturpolitik.",
+        "Letztlich hängt die richtige Entscheidung also stets von der aktuellen Haushaltslage und dem konkreten Zustand des jeweiligen Bauwerks ab. Man muss beide Aspekte sorgfältig abwägen, bevor man eine endgültige Regelung für den Besucherstrom trifft. Nur eine flexible Anpassung an die Realität garantiert langfristigen Erfolg."
+      ]
+    }
+  },
+  {
+    "slug": "wildlife-conservation",
+    "title": "Schutz von Lebensräumen oder Feuchtgebieten",
+    "prompt": "Eine Naturschutzstiftung kann entweder einen Habitatkorridor finanzieren, der zwei kleine Reservate verbindet, oder zusätzlichen Schutz für ein intaktes Feuchtgebiet bieten. Was würde einen besseren Nutzen aus einem Fünfjahreszuschuss ziehen?",
+    "conditionalPrompt": "Erklären Sie, was als Beweis für die Tierwanderung oder als akute Bedrohung des Feuchtgebiets gelten würde.",
+    "options": [
+      {
+        "label": "Habitatkorridor",
+        "description": "Hecken und Streifen zwischen Reservaten schaffen."
+      },
+      {
+        "label": "Feuchtgebiet",
+        "description": "Grenzen sichern und beschädigte Ränder renaturieren."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Korridor", "ein schmaler Streifen Land, der verschiedene Naturräume miteinander verbindet.", "Der neu geschaffene Korridor ermöglicht den Tieren eine sichere Wanderung zwischen den isolierten Schutzgebieten."],
+        ["das Feuchtgebiet", "ein feuchter, oft sumpfiger Lebensraum für zahlreiche seltene Tier- und Pflanzenarten.", "Dieses wertvolle Feuchtgebiet bietet zahlreichen bedrohten Vogelarten einen unersetzlichen Brutplatz."],
+        ["die Artenvielfalt", "die große Fülle verschiedener Tier- und Pflanzenarten in einem Ökosystem.", "Eine hohe Artenvielfalt gilt als verlässliches Indiz für ein gesundes und stabiles ökologisches Gleichgewicht."],
+        ["die Maßnahme", "eine gezielte Handlung zur Erreichung eines bestimmten poltischen oder ökologischen Ziels.", "Um den Bestand der Amphibien zu sichern, wurden dringend effektive Schutzmaßnahmen eingeleitet."]
+      ],
+      "phrasalVerbs": [
+        ["zurückgreifen auf", "eine verfügbare Option in einer bestimmten Situation nutzen.", "Bei der Finanzierung des Projekts müssen wir auf zusätzliche öffentliche Fördermittel zurückgreifen."],
+        ["aufsuchen", "einen bestimmten Ort gezielt besuchen oder aufsuchen.", "Viele Zugvögel aufsuchen dieses geschützte Gewässer jedes Jahr im Frühherbst zur Rast."],
+        ["sicherstellen", "garantieren, dass etwas Bestimmtes planmäßig und zuverlässig geschieht.", "Die Stiftung will durch strenge Kontrollen den langfristigen Erfolg der Renaturierung sicherstellen."],
+        ["heranziehen", "jemanden oder etwas als Beweis oder Hilfe nutzen.", "Als Beleg für den Erfolg der Maßnahme können wir wissenschaftliche Beobachtungsdaten heranziehen."]
+      ],
+      "adjectives": [
+        ["intakt", "voll funktionsfähig, unbeschädigt und in gutem Zustand.", "Ein intaktes Ökosystem kann Umweltschäden deutlich besser abfedern als eine gestörte Naturlandschaft."],
+        ["nachhaltig", "so beschaffen, dass die Wirkung langfristig und umweltschonend ist.", "Wir brauchen dringend nachhaltige Konzepte zum Schutz unserer heimischen Wälder und Wiesen."],
+        ["akut", "plötzlich auftretend und sofortiges Handeln erfordernd.", "Die anhaltende Trockenheit stellt eine akute Bedrohung für das empfindliche Biotop dar."],
+        ["ökologisch", "die Wechselwirkungen zwischen Lebewesen und ihrer Umwelt betreffend.", "Das neue Schutzprojekt hat einen enormen ökologischen Wert für die gesamte Region."]
+      ],
+      "connectors": [
+        ["demzufolge", "als logische Folge aus dem zuvor genannten Sachverhalt.", "Der Lebensraum wurde stark verkleinert, demzufolge sinkt die Population der Tiere rasant."],
+        ["andererseits", "leitet eine Gegenperspektive oder einen anderen Blickwinkel ein.", "Die Maßnahme kostet viel Geld; andererseits bringt sie langfristig einen großen Nutzen."],
+        ["insbesondere", "hebt einen bestimmten Aspekt oder Einzelfall besonders hervor.", "Viele heimische Tierarten, insbesondere seltene Insekten, profitieren von diesen Blühstreifen."],
+        ["schließlich", "führt das letzte und oft gewichtigste Argument an.", "Wir müssen die knappen finanziellen Mittel schließlich sinnvoll und zielgerichtet einsetzen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Schaffung eines ökologischen Korridors ermöglicht den Tieren eine sichere Wanderung zwischen den isolierten Schutzgebieten. Viele heimische Tierarten, **insbesondere** seltene Säugetiere, profitieren von diesen vernetzten Lebensräumen enorm. Ein intaktes Ökosystem kann Umweltschäden deutlich besser abfedern als eine gestörte Naturlandschaft.",
+        "Bei der Finanzierung des Projekts müssen wir auf zusätzliche öffentliche Fördermittel zurückgreifen, um die Landbesitzer langfristig einzubinden. **Demzufolge** steigt **die Artenvielfalt** in der gesamten Region spürbar an, was durch wissenschaftliche Daten belegt wird. Wir müssen die knappen finanziellen Mittel **schließlich** sinnvoll und zielgerichtet einsetzen.",
+        "**Schließlich** zeigt sich hier deutlich, dass die Vernetzung kleiner Biotope den langfristigen Artenerhalt am effektivsten sichert. Die Stiftung will durch vertragliche Vereinbarungen den dauerhaften Erfolg der **Maßnahme** **sicherstellen**. Daher ist dieser **Korridor** die beste Investition."
+      ],
+      "b": [
+        "Die Sicherung des Feuchtgebiets bietet sofortigen Schutz für zahlreiche bedrohte Vogelarten in einem geschlossenen Lebensraum. Dieses wertvolle **Feuchtgebiet** bietet vielen Tieren einen unersetzlichen Brutplatz, der vor weiteren Eingriffen bewahrt werden muss. Die anhaltende Trockenheit stellt jedoch eine akute Bedrohung für das empfindliche Biotop dar.",
+        "Viele Zugvögel **aufsuchen** dieses geschützte Gewässer jedes Jahr im Frühherbst zur Rast und sind auf intakte Bedingungen angewiesen. Um den Bestand der Amphibien zu sichern, wurden dringend effektive Schutzmaßnahmen an den Rändern eingeleitet. Als Beleg für den Erfolg können wir wissenschaftliche Beobachtungsdaten **heranziehen**, die den Zustand dokumentieren.",
+        "**Schließlich** müssen wir bei unseren Überlegungen bedenken, dass bereits vorhandene Populationen den schnellsten Schutz benötigen. Die Stiftung kann hier mit überschaubarem Aufwand eine maximale ökologische Wirkung erzielen und Verluste verhindern. Daher verdient **das Feuchtgebiet** unsere absolute Priorität bei der Vergabe."
+      ],
+      "conditional": [
+        "Wenn wissenschaftliche Untersuchungen belegen, dass Tiere isolierte Reservate regelmäßig verlassen und neue Wanderwege dringend benötigen, ist der Habitatkorridor die richtige Wahl. In diesem Fall überwiegt der langfristige Nutzen der Vernetzung gegenüber dem isolierten Schutz einzelner Rückzugsorte. **Die Maßnahme** fördert effektiv die genetische Vielfalt.",
+        "Wenn hingegen eine akute Zerstörung des Feuchtgebiets droht und dort bereits vom Aussterben bedrohte Arten leben, hat der direkte Gebotsschutz Priorität. Solange keine klaren Belege für erfolgreiche Tierwanderungen vorliegen, ist die Investition in ein intaktes **Feuchtgebiet** sicherer. Dies verhindert unwiederbringliche Verluste an Biodiversität.",
+        "Letztlich hängt die Entscheidung von der akuten Gefährdungslage vor Ort und den wissenschaftlichen Nachweisen der lokalen Tierbestände ab. Man muss beide Optionen sorgfältig abwägen, bevor man die Fördermittel endgültig zuweist. Nur eine datenbasierte Priorisierung garantiert den bestmöglichen Naturschutzeffekt."
+      ]
+    }
+  },
+  {
+    "slug": "library-access",
+    "title": "Bibliotheksprojekt finanzieren",
+    "prompt": "Ein Bezirk hat Finanzmittel für ein einziges Bibliotheksprojekt. Soll er die Hauptzweigstelle als größeren Arbeits- und Besprechungsraum renovieren oder eine fahrbare Bibliothek in abgelegene Stadtteile schicken?",
+    "conditionalPrompt": "Erklären Sie, ob das Hauptproblem darin besteht, einen Dienst zu erreichen oder einen Arbeitsplatz zu finden, sobald man dort ist.",
+    "options": [
+      {
+        "label": "Hauptzweigstelle renovieren",
+        "description": "Barrierefreie Tische, ruhige Räume und zuverlässiges Internet am geschäftigsten Standort ergänzen."
+      },
+      {
+        "label": "Mobiles Angebot",
+        "description": "Bücher und grundlegende Dienstleistungen nach Fahrplan in verschiedene Viertel bringen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Hauptzweigstelle", "Der wichtigste und größte Standort einer Institution.", "Die Hauptzweigstelle bietet umfassende Dienstleistungen für alle Bürger an."],
+        ["der Arbeitsplatz", "Ein Ort, an dem man konzentriert arbeiten oder lernen kann.", "Jeder Student benötigt einen ruhigen Arbeitsplatz mit schnellem Internet."],
+        ["die Fördergelder", "Finanzielle Mittel, die für einen bestimmten Zweck bereitgestellt werden.", "Ohne zusätzliche Fördergelder kann das Projekt nicht rechtzeitig fertiggestellt werden."],
+        ["die Barrierefreiheit", "Die Eigenschaft, dass Gebäude oder Dienste für Menschen mit Behinderungen zugänglich sind.", "Bei der Renovierung wurde besonderer Wert auf die Barrierefreiheit gelegt."]
+      ],
+      "phrasalVerbs": [
+        ["zur Verfügung stehen", "Als Ressource vorhanden sein und genutzt werden können.", "Für dieses Projekt stehen leider nur sehr begrenzte finanzielle Mittel zur Verfügung."],
+        ["in Anspruch nehmen", "Eine Dienstleistung oder ein Angebot nutzen.", "Viele Bürger nehmen das neue digitale Angebot sehr gerne in Anspruch."],
+        ["Rücksicht nehmen", "Auf die Bedürfnisse anderer achten.", "Bei der Planung müssen wir unbedingt auf die Wünsche der Anwohner Rücksicht nehmen."],
+        ["ins Leben rufen", "Ein Projekt oder eine Initiative gründen oder starten.", "Die Stadtverwaltung hat eine neue Initiative zur Leseförderung ins Leben gerufen."]
+      ],
+      "adjectives": [
+        ["barrierefrei", "Ohne bauliche Hindernisse für Menschen mit körperlichen Einschränkungen.", "Das gesamte Gebäude muss komplett barrierefrei umgebaut werden."],
+        ["zuverlässig", "Vertrauenswürdig und von gleichbleibend guter Qualität.", "Wir brauchen eine zuverlässige Internetverbindung für alle Besucher."],
+        ["zentral", "An einem Ort gelegen, der von überall gut erreichbar ist.", "Die Bibliothek befindet sich an einem sehr zentralen Platz in der Stadt."],
+        ["eingeschränkt", "In den Möglichkeiten oder im Umfang begrenzt.", "Das mobile Angebot hat leider nur einen stark eingeschränkten Platz."]
+      ],
+      "connectors": [
+        ["einerseits", "Wird verwendet, um den ersten Aspekt eines Sachverhalts darzustellen.", "Einerseits sparen wir durch diese Maßnahme wertvolle Zeit und Geld."],
+        ["andererseits", "Wird verwendet, um einen Gegenaspekt oder eine Einschränkung zu nennen.", "Andererseits dürfen wir die langfristigen Kosten dabei keineswegs unterschätzen."],
+        ["folglich", "Drückt eine logische Konsequenz aus.", "Die Nachfrage ist stark gestiegen, folglich müssen wir das Angebot ausweiten."],
+        ["zudem", "Dient dazu, einen weiteren Punkt hinzuzufügen.", "Die neuen Räume sind modern eingerichtet, zudem bieten sie viel Platz."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Einerseits** müssen wir **die Hauptzweigstelle** umfassend renovieren, weil immer mehr Menschen einen ruhigen **Arbeitsplatz** und zuverlässiges Internet suchen. Die bestehende Infrastruktur reicht längst nicht mehr aus, um den wachsenden Bedarf der Bevölkerung zu decken.",
+        "**Zudem** profitieren alle Bürger von modernen, barrierefreien Räumen, die gezielt für konzentriertes Lernen und Arbeiten ausgelegt sind. Obwohl manche Menschen weit anreisen müssen, lohnt sich die Investition in diesen zentralen Ort für die gesamte Region.",
+        "**Folglich** ist die Modernisierung des Hauptstandorts die nachhaltigste Entscheidung für die Zukunft unserer Stadt."
+      ],
+      "b": [
+        "**Andererseits** sollten wir eine mobile Bibliothek in entlegene Stadtteile schicken, damit auch ältere oder immobile Menschen regelmäßigen Zugang zu Büchern erhalten. Viele Bewohner dieser Viertel können **die Hauptzweigstelle** aufgrund langer Wege kaum noch erreichen.",
+        "Obwohl das Fahrzeug nur einen begrenzten Bestand transportieren kann, bringt es Kultur und Bildung direkt zu den Menschen vor Ort. Das stärkt den sozialen Zusammenhalt in den Quartieren und schließt wichtige Lücken in der kommunalen Versorgung.",
+        "**Zudem** gleicht dieses flexible Angebot die räumliche Benachteiligung der Randbezirke effektiv aus."
+      ],
+      "conditional": [
+        "Welche Maßnahme sinnvoll ist, hängt primär davon ab, ob das Hauptproblem in der Erreichbarkeit oder im Mangel an Arbeitsplätzen liegt. Wenn die Menschen vor allem Literatur ausleihen möchten, ist das mobile Angebot klar im Vorteil.",
+        "Wenn sie jedoch einen ruhigen Lernort benötigen, stellt die Renovierung der **Hauptzweigstelle** die einzig vernünftige Lösung dar. Man muss daher die konkreten Bedürfnisse der lokalen Bevölkerung genau analysieren, bevor man die endgültige Entscheidung trifft.",
+        "**Folglich** sollte die Politik flexibel auf die tatsächlichen Mängel vor Ort reagieren."
+      ]
+    }
+  },
+  {
+    "slug": "household-energy-grants",
+    "title": "Energiezuschüsse für Haushalte",
+    "prompt": "Ein Bezirk verfügt über finanzielle Mittel, um die Energierechnungen von Haushalten mit geringem Einkommen zu senken. Soll er weniger Zuschüsse für die Baudämmung gewähren oder kleinere Zuschüsse, mit denen mehr Haushalte ineffiziente Elektrogeräte ersetzen können?",
+    "conditionalPrompt": "Erkläre, was als eine sinnvolle Einsparung gelten würde und wie die Richtlinie Mieter behandeln sollte.",
+    "options": [
+      {
+        "label": "Baudämmung",
+        "description": "Zugige Wohnungen mit dem höchsten Heizbedarf verbessern. Begutachtung und Installation brauchen Zeit, und einige Mieter benötigen die Erlaubnis ihres Vermieters."
+      },
+      {
+        "label": "Geräteersatz",
+        "description": "Ineffiziente Kühlschränke und andere intensiv genutzte Geräte ersetzen. Die Arbeit kann schnell beginnen, obwohl die Ersparnis davon abhängt, welches Gerät ersetzt wird."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Wärmedämmung", "Maßnahmen zur Reduzierung des Wärmeverlusts an Gebäudehüllen", "Eine professionelle Wärmedämmung senkt den Energiebedarf spürbar."],
+        ["der Energieverbrauch", "die Menge der verbrauchten Energie in einem bestimmten Zeitraum", "Durch bewussten Verzicht lässt sich der Energieverbrauch drastisch reduzieren."],
+        ["die Mieterschaft", "die Gesamtheit der Mieter in einem Gebäude oder Gebiet", "Die örtliche Mieterschaft fordert dringend niedrigere Nebenkosten."],
+        ["das Haushaltsbudget", "der finanzielle Rahmen für die Ausgaben eines Haushalts", "Unerwartete Stromnachzahlungen belasten das Haushaltsbudget schwer."]
+      ],
+      "phrasalVerbs": [
+        ["aufbringen für", "finanzielle Mittel für einen bestimmten Zweck bereitstellen", "Viele Familien können das Geld für neue Fenster kaum aufbringen."],
+        ["ausfallen", "nicht stattfinden oder in einer bestimmten Weise beschaffen sein", "Die monatlichen Einsparungen fallen bei diesem alten Gerät gering aus."],
+        ["nachrüsten", "nachträglich mit technischen Teilen oder Bauteilen versehen", "Der Vermieter weigert sich oft, veraltete Heizungsanlagen nachzurüsten."],
+        ["einsparen", "durch sparsamen Umgang einen Verbrauch verringern", "Wir müssen im kommenden Winter unbedingt mehr Heizenergie einsparen."]
+      ],
+      "adjectives": [
+        ["energieeffizient", "mit einem geringen Energieverbrauch arbeitend", "Moderne Kühlschränke arbeiten im Vergleich zu alten Modellen sehr energieeffizient."],
+        ["langfristig", "über einen sehr großen Zeitraum wirksam", "Eine solide Sanierung bringt langfristig die höchsten finanziellen Ersparnisse."],
+        ["zugig", "von Zugluft durchzogen oder erfüllt", "In einer zugigen Altbauwohnung friert man trotz voller Heizleistung."],
+        ["finanzschwach", "über nur sehr wenige finanzielle Mittel verfügend", "Finanzschwache Haushalte leiden besonders stark unter steigenden Strompreisen."]
+      ],
+      "connectors": [
+        ["folglich", "aus dem zuvor Genannten als logische Konsequenschaft resultierend", "Die Heizkosten steigen stetig, folglich müssen wir dringend handeln."],
+        ["stattdessen", "als Alternative zu dem zuvor Genannten", "Wir kaufen kein teures Neugerät, stattdessen reparieren wir das alte."],
+        ["außerdem", "als zusätzlicher Aspekt oder Punkt", "Die Dämmung senkt die Kosten, außerdem schützt sie das Klima."],
+        ["dennoch", "trotz des zuvor genannten Umstands", "Die Maßnahme kostet viel Geld, dennoch ist sie absolut notwendig."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Angesichts stark steigender Energiepreise müssen wir finanzschwache Haushalte nachhaltig entlasten. Die gezielte Förderung von **Wärmedämmung** stellt hierbei den effektivsten Weg dar. Eine professionelle **Wärmedämmung** senkt den Energiebedarf spürbar und schützt Gebäude dauerhaft vor Kälte.",
+        "Zwar erfordern bauliche Maßnahmen oft viel Geduld, aber die Investition lohnt sich für alle Beteiligten. Unerwartete Stromnachzahlungen belasten **das Haushaltsbudget** schwer, weshalb strukturelle Hilfe wichtiger ist als kurzfristiger Konsum. Die örtliche **Mieterschaft** fordert dringend niedrigere Nebenkosten durch dauerhafte Sanierungen.",
+        "Wir müssen im kommenden Winter unbedingt mehr Heizenergie **einsparen**, um die Armut im Bezirk zu bekämpfen. Die Dämmung senkt die Kosten, **außerdem** schützt sie das Klima wirksam. **Folglich** sollten wir die knappen Gelder ausschließlich für umfassende Gebäudeisolierungen einsetzen."
+      ],
+      "b": [
+        "Viele Familien in unserem Bezirk leiden unter extrem hohen Stromkosten durch veraltete Haushaltsgeräte. Der Austausch dieser Stromfresser bringt sofortige Erleichterung für den Alltag. Moderne Kühlschränke arbeiten im Vergleich zu alten Modellen sehr **energieeffizient** und entlasten die Betroffenen direkt.",
+        "Viele Familien können das Geld für neue Fenster kaum aufbringen, weil der tägliche Lebensunterhalt bereits alle Reserven verschlingt. Die monatlichen Einsparungen fallen bei diesem alten Gerät gering aus, wenn wir nicht sofort handeln. Der Vermieter weigert sich oft, veraltete Heizungsanlagen nachzurüsten, weshalb der Gerätekauf die einzige realistische Option bleibt.",
+        "Wir müssen schnell reagieren, anstatt jahrelang auf langwierige Baugenehmigungen zu warten. Die Maßnahme kostet viel Geld, **dennoch** ist sie absolut notwendig für die Soforthilfe. Wir kaufen kein teures Neugerät auf Verdacht, **stattdessen** ersetzen wir gezielt die verbliebenen Stromfresser im Haushalt."
+      ],
+      "conditional": [
+        "Eine sinnvolle Einsparung liegt dann vor, wenn die monatlichen Energiekosten eines Haushalts dauerhaft um mindestens zwanzig Prozent sinken. Bei baulichen Maßnahmen müssen wir die Rechte der **Mieterschaft** streng beachten, damit keine ungerechtfertigten Mieterhöhungen drohen. Der Bezirk sollte klare Kriterien festlegen, die sowohl den Zustand der Immobilie als auch das Einkommen der Bewohner berücksichtigen.",
+        "Wenn ein Gebäude stark sanierungsbedürftig ist und der Vermieter kooperiert, hat **die Wärmedämmung** eindeutig Vorrang. Handelt es sich jedoch um ungeduldige Mieter in unsicheren Mietverhältnissen, hilft nur der sofortige Austausch defekter Haushaltsgeräte. Die Heizkosten steigen stetig, **folglich** müssen wir je nach Einzelfall flexibel entscheiden.",
+        "Unerwartete Stromnachzahlungen belasten **das Haushaltsbudget** schwer, weshalb wir eine gerechte Mischung aus beiden Ansätzen finden müssen. Die Dämmung senkt die Kosten **langfristig**, **außerdem** bringt der Gerätekauf sofortige Hilfe. Wir müssen die Zuschüsse exakt nach dem tatsächlichen Bedarf der Familien verteilen."
+      ]
+    }
+  },
+  {
+    "slug": "hybrid-work-days",
+    "title": "Hybride Arbeitstage im Büro",
+    "prompt": "Ein Unternehmen möchte, dass die Belegschaft einige Tage im Büro verbringt. Sollen alle an denselben zwei Tagen kommen oder soll jedes Team je nach Arbeit selbst wählen?",
+    "conditionalPrompt": "Nennen Sie eine Art von Arbeit, die von Überschneidungen profitiert, und ein Anzeichen dafür, dass ein starrer Zeitplan übertrieben wäre.",
+    "options": [
+      {
+        "label": "Feste Präsenztage",
+        "description": "Treffen Sie Kollegen aus anderen Teams einfach ohne Planung. Angestellte haben weniger Kontrolle über den Arbeitsweg."
+      },
+      {
+        "label": "Flexible Teamzeiten",
+        "description": "Teams planen Präsenzzeiten nach Projekten. Teams verpassen sich oft bei unterschiedlichen Plänen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Überschneidung", "das Zusammentreffen von Terminen oder Personen", "Eine zeitliche Überschneidung der Teams erleichtert die bereichsübergreifende Zusammenarbeit im Projekt."],
+        ["die Flexibilität", "die Fähigkeit, sich auf neue Bedingungen einzustellen", "Die betriebliche Flexibilität erhöht die Zufriedenheit der Angestellten erheblich."],
+        ["der Pendler", "eine Person, die zwischen Wohnort und Arbeitsstätte hin- und herfährt", "Jeder Pendler profitiert von vorhersehbaren Präsenztagen im Unternehmen."],
+        ["die Richtlinie", "eine verbindliche Regel oder Vorschrift", "Klare Richtlinien schaffen Transparenz für die gesamte Abteilung."]
+      ],
+      "phrasalVerbs": [
+        ["sich abstimmen", "miteinander kommunizieren, um Entscheidungen zu treffen", "Wir müssen uns vor dem Meeting bezüglich der Agenda abstimmen."],
+        ["Rücksicht nehmen", "die Bedürfnisse anderer beachten", "Gute Kollegen nehmen bei der Urlaubsplanung aufeinander Rücksicht."],
+        ["zu Ende führen", "eine Aufgabe erfolgreich abschließen", "Sie will das wichtige Projekt unbedingt noch heute zu Ende führen."],
+        ["ins Gewicht fallen", "von Bedeutung sein", "Die zusätzlichen Fahrtkosten fallen bei diesem Gehalt kaum ins Gewicht."]
+      ],
+      "adjectives": [
+        ["verbindlich", "so beschaffen, dass es eingehalten werden muss", "Die vereinbarten Präsenztage sind für alle Mitarbeiter verbindlich."],
+        ["spontan", "ohne lange Überlegung oder Vorbereitung", "Für spontane Absprachen ist die Anwesenheit im Büro von Vorteil."],
+        ["effizient", "mit geringem Aufwand den größten Nutzen erzielend", "Digitale Konferenzen machen die Abstimmung oft sehr effizient."],
+        ["strukturiert", "klar geordnet und übersichtlich", "Ein strukturierter Arbeitsalltag hilft gegen unnötigen Stress."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Die Kernarbeitszeit wurde verkürzt, folglich steigt die Eigenverantwortung."],
+        ["andererseits", "als Ausdruck eines Gegensatzes", "Feste Tage geben Halt, andererseits schränken sie die Freiheit ein."],
+        ["zudem", "als ergänzender Aspekt", "Die Fahrtzeit kostet Kraft, zudem belastet sie die Umwelt."],
+        ["schließlich", "als letztes Argument oder am Ende", "Schließlich müssen wir auch die Wünsche der Kunden berücksichtigen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Feste Präsenztage im Unternehmen garantieren, dass sich die Abteilungen regelmässig und ohne grossen Koordinationsaufwand treffen. Wenn alle Angestellten am Dienstag und Donnerstag im Büro erscheinen, entstehen wertvolle Momente für den spontanen Austausch. **Folglich** sinken die Hürden für bereichsübergreifende Projekte deutlich, weil man einander schlicht persönlich antrifft.",
+        "**Andererseits** bedeutet diese starre Regelung für viele Beschäftigte eine spürbare Einschränkung ihrer persönlichen Autonomie. Die wöchentliche Anfahrt verlangt eine exakte Organisation des privaten Alltags, und zusätzlicher Pendelverkehr fällt ins Gewicht. Dennoch überwiegen die Vorteile einer verlässlichen Bürostruktur für die gemeinschaftliche Kultur.",
+        "**Schließlich** schaffen einheitliche Anwesenheitszeiten klare Verhältnisse und verhindern langwierige Diskussionen über den optimalen Rhythmus. Die Zusammenarbeit wird verbindlicher, wenn feste Tage den organisatorischen Rahmen bilden."
+      ],
+      "b": [
+        "Flexible Teamzeiten erlauben es den Gruppen, ihre Präsenz im Büro präzise an aktuellen Projektphasen und konkreten Aufgaben auszurichten. Jedes Team weiß selbst am besten, wann persönliche Treffen einen echten Mehrwert für die gemeinsame Arbeit bieten. **Zudem** bleibt dadurch der wöchentliche Pendelaufwand für die Angestellten im zumutbaren Rahmen.",
+        "**Andererseits** besteht die Gefahr, dass sich Teams im Gebäude kaum noch begegnen und bereichsübergreifende Synergien verloren gehen. Wenn die Zeitpläne stark voneinander abweichen, erfordert die Kontaktaufnahme zwischen verschiedenen Abteilungen mehr bewusste Planung. **Folglich** leidet bisweilen das übergreifende Wir-Gefühl im gesamten Betrieb.",
+        "Dennoch fördert diese Eigenverantwortung die Motivation der Beschäftigten, da sie ihren Arbeitsalltag eigenständig gestalten können. **Schließlich** müssen Unternehmen ihren Mitarbeitern vertrauen, wenn sie moderne Arbeitsformen erfolgreich etablieren wollen."
+      ],
+      "conditional": [
+        "Komplexe Innovationsprojekte und kreative Workshops profitieren maßgeblich von festen Überschneidungen, weil dort der direkte persönliche Austausch unverzichtbar ist. Wenn jedoch routinierte Entwicklungsarbeit im Vordergrund steht, wäre ein starrer Präsenzzweikampf völlig übertrieben. **Folglich** hängt die optimale Lösung stark von der konkreten Art der täglichen Aufgaben ab.",
+        "**Andererseits** zeigt sich der Erfolg eines flexiblen Modells schnell an einer hohen Zufriedenheit und stabilen Leistungskennzahlen der jeweiligen Arbeitsgruppen. Wenn Teams ihre Ziele zuverlässig erreichen, beweist dies die Tauglichkeit individueller Absprachen.",
+        "**Schließlich** muss die Unternehmensführung stets prüfen, ob der gewählte Rhythmus die tatsächlichen Anforderungen der Arbeit widerspiegelt oder eher bürokratische Hürden aufbaut."
+      ]
+    }
+  },
+  {
+    "slug": "hiring-first-round",
+    "title": "Erste Auswahlrunde bei Bewerbungen",
+    "prompt": "Ein Arbeitgeber hat Zeit für eine erste Auswahlrunde pro Kandidat. Soll er eine kurze anonyme Arbeitsprobe anfordern oder ein strukturiertes Interview mit denselben Fragen für alle führen?",
+    "conditionalPrompt": "Wählen Sie die wichtigste Fähigkeit für eine Rolle und sagen Sie, welche Bewertung Ihnen die klarsten Beweise dafür liefern würde.",
+    "options": [
+      {
+        "label": "Anonyme Arbeitsprobe",
+        "description": "Geben Sie Bewerbern eine kurze Aufgabe, die dem Job ähnelt. Bewerten Sie diese anhand fester Kriterien vor der Namensbekanntgabe."
+      },
+      {
+        "label": "Strukturiertes Interview",
+        "description": "Bitten Sie jeden Bewerber, dieselben Arbeitsszenarien zu erklären, und bewerten Sie die Antworten mit einer Matrix. Der Interviewer kennt den Namen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Qualifikation", "die berufliche Eignung", "Die fachliche Qualifikation ist für diese anspruchsvolle Position unerlässlich."],
+        ["die Neutralität", "die Unparteilichkeit", "Absolute Neutralität bei der Bewertung schützt den Prozess vor Vorurteilen."],
+        ["das Kriterium", "der Maßstab für eine Beurteilung", "Ein klar definiertes Kriterium erleichtert die Vergleichbarkeit der Bewerbungen."],
+        ["der Eindruck", "die Wirkung einer Person auf andere", "Der persönliche Eindruck im Gespräch ergänzt die schriftlichen Unterlagen."]
+      ],
+      "phrasalVerbs": [
+        ["in Betracht ziehen", "etwas als Möglichkeit erwägen", "Wir sollten diesen erfahrenen Kandidaten unbedingt in Betracht ziehen."],
+        ["Wert legen", "eine hohe Bedeutung auf etwas richten", "Das Unternehmen legt großen Wert auf transparente Auswahlverfahren."],
+        ["unter Beweis stellen", "zeigen, was man kann", "Jeder Bewerber muss seine analytischen Fähigkeiten unter Beweis stellen."],
+        ["aus dem Weg gehen", "eine Situation vermeiden", "Man sollte unklare Formulierungen im Anforderungsprofil aus dem Weg gehen."]
+      ],
+      "adjectives": [
+        ["objektiv", "sachlich und unabhängig von persönlichen Gefühlen", "Eine anonyme Probe sorgt für eine möglichst objektive Entscheidung."],
+        ["geeignet", "für einen bestimmten Zweck passend", "Nicht jeder Bewerber ist für diese verantwortungsvolle Aufgabe geeignet."],
+        ["transparent", "durchschaubar und nachvollziehbar", "Das gesamte Einstellungsverfahren soll für alle Beteiligten transparent sein."],
+        ["analytisch", "die Fähigkeit besitzend, Dinge logisch zu zerlegen und zu prüfen", "Analytische Fähigkeiten lassen sich durch konkrete Aufgaben hervorragend testen."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Die Arbeitsprobe war anonym, folglich blieben persönliche Sympathien außen vor."],
+        ["indem", "durch die Art und Weise, wie etwas geschieht", "Man vermeidet Fehler, indem man feste Kriterien konsequent anwendet."],
+        ["außerdem", "als zusätzlicher Punkt", "Die Aufgabe spart Zeit, außerdem zeigt sie direkt das praktische Können."],
+        ["schließlich", "als abschließendes Argument", "Schließlich entscheidet die Passung ins Team über den langfristigen Erfolg."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Eine anonyme Arbeitsprobe in der ersten Auswahlrunde stellt sicher, dass ausschliesslich fachliche Kompetenzen und konkrete Problemlösungen bewertet werden. **Indem** Namen und persönliche Hintergründe verborgen bleiben, sinkt die Gefahr unbewusster Vorurteile aufseiten der Personalverantwortlichen drastisch. **Folglich** erhalten auch chancenarme Bewerber eine faire Chance.",
+        "Andererseits lässt sich auf diese Weise der persönliche Auftritt und die Kommunikationsfähigkeit eines Menschen nur sehr schwer einschätzen. Die schriftliche Ausarbeitung liefert zwar wertvolle Hinweise auf das Fachwissen, ersetzt jedoch nicht das direkte Gespräch. Dennoch wiegt die objektive Chancengleichheit bei der ersten Sichtung besonders schwer.",
+        "**Schließlich** zeigt eine praktische Aufgabe sofort, ob jemand die geforderten Aufgaben eigenständig bearbeiten kann. Das Unternehmen minimiert dadurch das Risiko von Fehlentscheidungen bei der Besetzung."
+      ],
+      "b": [
+        "Ein strukturiertes Interview mit standardisierten Fragen für alle Bewerber garantiert eine hohe Vergleichbarkeit der persönlichen und kommunikativen Fähigkeiten. **Indem** jede Person exakt dieselben Szenarien beantwortet, erkennen die Interviewer sofort Unterschiede in der Herangehensweise und im strategischen Denken. **Folglich** entsteht ein sehr runder **Eindruck** vom Kandidaten.",
+        "Andererseits kann dieses Format durch die namentliche Bekanntheit anfälliger für subjektive Sympathien oder unbewusste Präferenzen der Prüfer sein. Das gesprochene Wort verleitet manchmal dazu, eloquente Selbstdarsteller besser einzustufen als ruhigere Fachleute. Dennoch schätzen viele Personalteams das persönliche Gespräch als unverzichtbar ein.",
+        "**Schließlich** lässt sich die Passung zur Unternehmenskultur am besten im direkten Dialog ausloten. Die strukturierte Führung des Gesprächs sorgt für die nötige Fairness."
+      ],
+      "conditional": [
+        "Für kreative und handwerkliche Berufe liefert eine praktische Arbeitsprobe die weitaus aussagekräftigeren Beweise als jedes noch so gut geführte Interview. Wenn es hingegen um Führungspositionen geht, ist das strukturierte Gespräch für die Beurteilung der sozialen Kompetenz unersetzlich. **Folglich** bestimmt das Anforderungsprofil die Wahl der Methode.",
+        "Andererseits zeigt sich die Qualität der Entscheidung daran, ob der ausgewählte Mitarbeiter die täglichen Herausforderungen langfristig bewältigt. Wenn die Leistung im Job stimmt, bestätigt dies den gewählten Weg.",
+        "**Schließlich** muss jede Organisation selbst entscheiden, welche Eigenschaft für den Erfolg der jeweiligen Rolle am wichtigsten ist."
+      ]
+    }
+  },
+  {
+    "slug": "salary-range-transparency",
+    "title": "Gehaltsspannen-Transparenz",
+    "prompt": "Eine Organisation hat vereinbart, Gehaltsspannen öffentlich zu machen. Sollen die Spannen jetzt intern und in Stellenanzeigen veröffentlicht werden, oder zuerst mit den Mitarbeitern geteilt und Unstimmigkeiten korrigiert werden, bevor die Anzeigen nach drei Monaten aktualisiert werden?",
+    "conditionalPrompt": "Trennen Sie Probleme, die durch einfache Erklärungen gelöst werden können, von Differenzen, die eine Gehaltsanpassung erfordern.",
+    "options": [
+      {
+        "label": "Sofortige Veröffentlichung",
+        "description": "Geben Sie Mitarbeitern und Bewerbern sofort dieselbe Information. Einige Gehälter müssen während der Gehaltsüberprüfung vielleicht erklärt werden."
+      },
+      {
+        "label": "Dreimonatige Übergangsphase",
+        "description": "Geben Sie Mitarbeitern die Spannen jetzt und prüfen Sie bestätigte Unstimmigkeiten vor der Aktualisierung der Stellenanzeigen. Bewerber erhalten weniger Informationen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Transparenz", "die Durchschaubarkeit von Abläufen", "Mehr Transparenz bei der Vergütung stärkt das Vertrauen in die Führung."],
+        ["die Vergütung", "das Gehalt oder der Lohn für Arbeit", "Eine faire Vergütung ist die Basis für langfristige Mitarbeiterbindung."],
+        ["die Inkonsistenz", "ein Widerspruch oder Mangel an Einheitlichkeit", "Gefundene Inkonsistenzen im Gehaltssystem müssen zeitnah behoben werden."],
+        ["das Vertrauen", "die Überzeugung von der Zuverlässigkeit", "Das gegenseitige Vertrauen wächst durch einen offenen Umgang mit Zahlen."]
+      ],
+      "phrasalVerbs": [
+        ["aus der Welt schaffen", "ein Problem oder einen Konflikt endgültig lösen", "Wir müssen die offenen Fragen vor der Veröffentlichung aus der Welt schaffen."],
+        ["zur Sprache bringen", "etwas in einem Gespräch ansprechen", "Er hat die ungleiche Bezahlung in der Abteilung direkt zur Sprache gebracht."],
+        ["ins Auge fassen", "einen Plan machen oder etwas beabsichtigen", "Die Geschäftsführung fasst eine generelle Lohnerhöhung ins Auge."],
+        ["zur Geltung kommen", "sich optimal entfalten können", "Seine langjährige Erfahrung soll bei der Neueinstufung zur Geltung kommen."]
+      ],
+      "adjectives": [
+        ["transparent", "offen und nachvollziehbar", "Ein transparentes Gehaltsmodell verhindert unnötigen Unmut im Team."],
+        ["gerecht", "fair und unparteiisch", "Die Mitarbeiter erwarten eine gerechte Bezahlung für ihre Leistung."],
+        ["notwendig", "erforderlich und unumgänglich", "Eine sorgfältige Überprüfung der Gehälter ist vorab absolut notwendig."],
+        ["sensibel", "feinfühlig oder leicht verletzlich", "Das Thema Gehalt ist im Unternehmen traditionell ein sehr sensibler Bereich."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Die Spannen wurden veröffentlicht, folglich gab es viele Nachfragen."],
+        ["bevor", "zeitlich früher als", "Man sollte alle Unstimmigkeiten klären, bevor man die externen Anzeigen schaltet."],
+        ["außerdem", "als zusätzlicher Aspekt", "Die Übergabe schafft Klarheit, außerdem beruhigt sie die bestehende Belegschaft."],
+        ["schließlich", "als letztes Argument", "Schließlich verdienen alle Mitarbeiter eine ehrliche Kommunikation."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Eine sofortige Veröffentlichung der Gehaltsspannen intern sowie in allen Stellenanzeigen schafft sofortige **Transparenz** und zeigt echten Mut zur Offenheit. Wenn alle Beteiligten dieselben Informationen erhalten, entfällt der Verdacht heimlicher Ungerechtigkeiten im Betrieb. **Folglich** weiß jeder sofort, woran er ist.",
+        "Andererseits können unvorbereitete Zahlen bei bestehenden Mitarbeitern kurzfristig für Verwirrung oder Unzufriedenheit sorgen, wenn Erklärungen fehlen. Das Management muss dann zeitnah viele Fragen beantworten und manch alte Einstufung rechtfertigen. Dennoch wiegt der Gewinn an Glaubwürdigkeit meist schwerer.",
+        "**Schließlich** setzt ein sofortiger Schritt ein starkes Zeichen auf dem Arbeitsmarkt und zieht motivierte Bewerber an. Das Unternehmen positioniert sich damit als moderner und fairer Arbeitgeber."
+      ],
+      "b": [
+        "Eine dreimonatige Übergangsphase erlaubt es der Organisation, bestehende Gehaltsunterschiede intern zu besprechen und gravierende Ungereimtheiten vorab zu korrigieren. Indem die Belegschaft zuerst informiert wird, vermeidet man das Entstehen von Unruhe durch ungefilterte Daten. **Folglich** startet die externe Veröffentlichung auf einer soliden Basis.",
+        "Andererseits erhalten externe Bewerber während dieser drei Monate weniger Informationen als nach dem offiziellen Stichtag, was manche Interessenten abschrecken könnte. Die bewusste Verzögerung der **Transparenz** nach außen verlangt von den Rekrutiern eine gute Argumentation. Dennoch schützt dieses Vorgehen den innerbetrieblichen Frieden.",
+        "**Schließlich** ist es klüger, interne Baustellen zuerst zu schließen, **bevor** man den Markt mit neuen Zahlen konfrontiert. Das verhindert spätere Erklärungsnot im Bewerbungsgespräch."
+      ],
+      "conditional": [
+        "Einfache Missverständnisse über die Einordnung in eine Gehaltsstufe lassen sich durch ein kurzes klärendes Gespräch schnell **aus der Welt schaffen**. Wenn jedoch systematische Benachteiligungen vorliegen, ist eine echte Gehaltsanpassung zwingend erforderlich. **Folglich** muss die Organisation genau unterscheiden, welche Fälle nur Information oder tatsächliche Korrekturen verlangen.",
+        "Andererseits zeigt sich der Erfolg der Strategie daran, dass die Mitarbeiter die offengelegten Spannen als fair und nachvollziehbar akzeptieren. Wenn keine großen Konflikte entstehen, war der gewählte Weg richtig.",
+        "**Schließlich** bildet die sorgfältige Vorbereitung das Fundament für ein dauerhaft funktionierendes Entlohnungssystem."
+      ]
+    }
+  },
+  {
+    "slug": "community-project-funding",
+    "title": "Finanzierung eines Community-Projekts",
+    "prompt": "Ein Freiwilligenteam pflegt ein kostenloses Budgetierungstool für kleine Gemeinschaften. Ein Zuschuss könnte zwei erfahrene Betreuer für ein Jahr bezahlen oder das Training und den Support für eine größere Gruppe neuer Mitwirkender finanzieren. Was soll gefördert werden?",
+    "conditionalPrompt": "Entscheiden Sie, ob das unmittelbare Problem zu viel Arbeit für das aktuelle Team oder zu wenig Nachwuchs ist.",
+    "options": [
+      {
+        "label": "Zwei erfahrene Betreuer",
+        "description": "Geben Sie zwei Personen geschützte Zeit für Support und Verbesserungen. Das Projekt könnte nach Ablauf des Zuschusses immer noch von ihnen abhängen."
+      },
+      {
+        "label": "Schulung neuer Mitwirkender",
+        "description": "Führen Sie ein strukturiertes Programm durch und paaren Sie Teilnehmer mit Freiwilligen. Es dauert, bis genügend Personen die Arbeit teilen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Wartung", "die Instandhaltung von Software oder Systemen", "Die regelmäßige Wartung sichert die langfristige Stabilität der Anwendung."],
+        ["die Unabhängigkeit", "der Zustand, frei von fremdem Einfluss zu sein", "Langfristige Unabhängigkeit ist für dieses Open-Source-Projekt von zentraler Bedeutung."],
+        ["der Nachwuchs", "junge oder neue Kräfte in einem Bereich", "Gezielte Nachwuchsförderung sichert das Überleben des Vereins."],
+        ["die Belastung", "eine drückende Anforderung oder Last", "Die hohe Arbeitsbelastung führt bei den ehrenamtlichen Helfern oft zur Erschöpfung."]
+      ],
+      "phrasalVerbs": [
+        ["auf die Beine stellen", "etwas erfolgreich organisieren oder ins Leben rufen", "Die Gruppe hat ein fantastisches Projekt auf die Beine gestellt."],
+        ["ins Leben rufen", "etwas gründen oder starten", "Diese Initiative wurde ins Leben gerufen, um den Zusammenhalt zu stärken."],
+        ["unter die Arme greifen", "jemandem aktiv helfen", "Er ist immer bereit, den neuen Kollegen tatkräftig unter die Arme zu greifen."],
+        ["zu kurz kommen", "vernachlässigt werden oder weniger Aufmerksamkeit erhalten", "Bei so viel Arbeit darf die Dokumentation auf keinen Fall zu kurz kommen."]
+      ],
+      "adjectives": [
+        ["nachhaltig", "so beschaffen, dass es langfristig positive Wirkungen hat", "Eine nachhaltige Förderung stärkt die Basis des gesamten Projekts."],
+        ["ehrenamtlich", "freiwillig und unbezahlt", "Viele wichtige Aufgaben im Verein basieren auf ehrenamtlichem Engagement."],
+        ["zuverlässig", "vertrauenswürdig und konstant in der Leistung", "Wir brauchen verlässliche Partner für die Weiterentwicklung der Software."],
+        ["zentral", "von entscheidender Wichtigkeit", "Die technische Sicherheit ist ein zentrales Anliegen der Entwickler."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Das Budget wurde bewilligt, folglich konnten zwei Entwickler eingestellt werden."],
+        ["während", "als Ausdruck der Gleichzeitigkeit", "Einige programmieren neue Funktionen, während andere den Support betreuen."],
+        ["zudem", "als Ergänzung", "Das Tool ist kostenlos, zudem bietet es eine hohe Datensicherheit."],
+        ["schließlich", "als letztes Argument", "Schließlich soll das Werkzeug auch in Zukunft allen Gruppen frei zur Verfügung stehen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Bezahlung von zwei erfahrenen Betreuern für ein volles Jahr garantiert sofortige Stabilität und professionellen Support für das Budgetierungstool. Mit geschützter Arbeitszeit können die beiden Experten dringend notwendige Verbesserungen vorantreiben und aufgelaufene Anfragen zügig bearbeiten. **Folglich** läuft das System ohne Verzögerungen weiter.",
+        "Andererseits bleibt das Projekt durch diese Fokussierung stark von diesen beiden Personen abhängig, was die langfristige **Unabhängigkeit** gefährdet. Wenn der Zuschuss nach zwölf Monaten ausläuft, droht ein erneuter Engpass bei der Betreuung. Dennoch bringt diese Soforthilfe die nötige Entlastung im akuten Notstand.",
+        "**Schließlich** sichert professionelle Pflege in dieser kritischen Phase die Qualität des gesamten Angebots. Die Nutzer verlassen sich auf eine fehlerfreie Funktion."
+      ],
+      "b": [
+        "Ein strukturiertes Ausbildungsprogramm für neue Mitwirkende verteilt die Last auf viele Schultern und sorgt für eine nachhaltige Zukunft des Projekts. Indem man Teilnehmer eng mit erfahrenen Freiwilligen zusammenbringt, wächst eine breite Basis an kompetenten Helfern heran. **Folglich** sinkt die Abhängigkeit von einzelnen Personen spürbar.",
+        "Andererseits erfordert dieser Ansatz viel Zeit und Geduld, bis die neuen Mitwirkenden eigenständig arbeiten und spürbare Entlastung bringen können. In der Übergangsphase bleibt die Arbeitsbelastung für das bestehende Kernteam unverändert hoch. Dennoch ist dieser Aufbau langfristig die klügste Investition.",
+        "**Schließlich** stärkt die Einbindung vieler Köpfe das gesamte Gemeinschaftsgefühl der Initiative. Das Projekt wird dadurch krisenfester und lebendiger."
+      ],
+      "conditional": [
+        "Wenn das Tool kurz vor dem Zusammenbruch steht und sofortige technische Hilfe braucht, ist die Bezahlung erfahrener Betreuer die einzig sinnvolle Maßnahme. Wenn jedoch genügend Zeit vorhanden ist und das Hauptproblem in der fehlenden Breite liegt, gewinnt die Schulung neuer Helfer. **Folglich** entscheidet der akute Zustand des Projekts über die Priorität.",
+        "Andererseits zeigt sich der Erfolg jeder Variante daran, ob das Tool auch nach einem Jahr noch reibungslos funktioniert. Stabile Nutzerzahlen beweisen die Richtigkeit der Entscheidung.",
+        "**Schließlich** muss die finanzielle Hilfe dort ansetzen, wo die Existenz des Angebots am meisten gefährdet ist."
+      ]
+    }
+  },
+  {
+    "slug": "local-news-funding",
+    "title": "Finanzierung lokaler Nachrichten",
+    "prompt": "Eine lokale Redaktion braucht ein verlässliches Einkommen für die Berichterstattung über den Stadtrat. Soll sie ihre Arbeit durch ein einjähriges Stiftungsgeld kostenlos machen oder den Dienst über Mitgliedschaften finanzieren, die zahlenden Lesern die Meisten Artikel geben?",
+    "conditionalPrompt": "Sagen Sie, was Sie davon überzeugen würde, dass die kostenlose Option unabhängig ist oder die bezahlte Option ein öffentlicher Dienst bleibt.",
+    "options": [
+      {
+        "label": "Kostenlos durch Stiftungsgeld",
+        "description": "Lassen Sie alle Berichte offen und vereinbaren Sie schriftliche Schutzmaßnahmen für redaktionelle Entscheidungen. Die Redaktion braucht nach einem Jahr eine neue Finanzierung."
+      },
+      {
+        "label": "Mitgliedschaft und Paywall",
+        "description": "Halten Sie wichtige amtliche Bekanntmachungen frei und stellen Sie die Berichterstattung hinter eine Paywall. Einnahmen steigen nur bei ausreichend Mitgliedern."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Redaktion", "das Team von Journalisten in einem Medienbetrieb", "Die lokale Redaktion leistet einen unverzichtbaren Beitrag zur demokratischen Kontrolle."],
+        ["die Unabhängigkeit", "die Freiheit von äußerer Einflussnahme", "Pressefreiheit und redaktionelle Unabhängigkeit sind für eine Demokratie unerlässlich."],
+        ["die Finanzierung", "die Bereitstellung von Geldmitteln", "Eine gesicherte Finanzierung erlaubt den Journalisten eine sorgfältige Recherche."],
+        ["das Publikum", "die Gesamtheit der Leser, Hörer oder Zuschauer", "Das treue Publikum schätzt die fundierten Berichte über die Lokalpolitik."]
+      ],
+      "phrasalVerbs": [
+        ["ins Leben rufen", "etwas gründen oder ins Werk setzen", "Die Stiftung wurde ins Leben gerufen, um den investigativen Journalismus zu stützen."],
+        ["zur Verfügung stehen", "greifbar oder nutzbar sein", "Alle wichtigen Informationen sollen den Bürgerinnen kostenfrei zur Verfügung stehen."],
+        ["unter Druck geraten", "in eine schwierige Situation kommen", "Durch sinkende Werbeeinnahmen geriet der Verlag stark unter Druck."],
+        ["auf die Beine helfen", "jemandem in einer schwierigen Lage helfen", "Mitgliederbeiträge können dem Verlag wieder wirtschaftlich auf die Beine helfen."]
+      ],
+      "adjectives": [
+        ["unabhängig", "frei und unbeeinflusst", "Journalisten müssen stets unabhängig und kritisch über die Politik berichten."],
+        ["verbindlich", "festgelegt und gültig", "Schriftliche Verträge schaffen verbindliche Regeln für die redaktionelle Arbeit."],
+        ["kritisch", "hinterfragend und prüfend", "Eine kritische Berichterstattung deckt Missstände in der Verwaltung auf."],
+        ["öffentlich", "für alle zugänglich", "Die Sitzungen des Stadtrates müssen für die Öffentlichkeit transparent bleiben."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Die Artikel waren frei zugänglich, folglich lasen sehr viele Menschen den Bericht."],
+        ["während", "als Gegensatz oder Gleichzeitigkeit", "Einige Artikel bleiben frei, während Hintergrundberichte Abonnenten vorbehalten sind."],
+        ["zudem", "als Ergänzung", "Die Stiftung zahlt das Gehalt, zudem fördert sie neue Rechercheprojekte."],
+        ["schließlich", "als letztes Argument", "Schließlich haben alle Bürger ein Recht auf freie Informationen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Eine kostenlose Berichterstattung durch ein einjähriges Stiftungsgeld garantiert, dass alle Bürger ohne finanzielle Hürden Zugang zu wichtigen Informationen über den Stadtrat erhalten. Durch vertraglich fixierte Schutzmaßnahmen bleibt die redaktionelle Freiheit gewahrt und politische Einflussnahme wird untersagt. **Folglich** kann **die Redaktion** völlig unbeschwert recherchieren.",
+        "Andererseits läuft dieses Modell nach exakt zwölf Monaten aus und zwingt die Medienschaffenden zu einer schnellen Suche nach neuen Geldgebern. Die kurzfristige Sicherheit löst das langfristige wirtschaftliche Problem des Verlags keineswegs dauerhaft. Dennoch ist dies ein hervorragender Start für wichtige Aufklärungsarbeit.",
+        "**Schließlich** dient ein komplett freier Zugang dem demokratischen Diskurs in der gesamten Stadt. Jeder Einwohner kann sich ohne Kosten ein eigenes Bild machen."
+      ],
+      "b": [
+        "**Die Finanzierung** über Mitgliedschaften und eine Paywall etabliert ein stabiles und unabhängiges Geschäftsmodell, das sich langfristig selbst trägt. Wichtige amtliche Bekanntmachungen bleiben frei zugänglich, **während** vertiefende Artikel den zahlenden Mitgliedern vorbehalten sind. **Folglich** wächst das Budget kontinuierlich mit der Zahl treuer Leser.",
+        "Andererseits schließt eine solche Bezahlschranke ärmere Bevölkerungsschichten von bestimmten Hintergrundinformationen aus, was dem öffentlichen Auftrag widerspricht. Der Aufbau einer treuen Mitgliederschaft erfordert **zudem** viel Marketing und Geduld. Dennoch sichert dieses System das Überleben des lokalen Journalismus.",
+        "**Schließlich** belohnt dieses Modell die direkte Unterstützung durch die Gemeinschaft. Die Leser investieren gezielt in den Erhalt ihrer lokalen Zeitung."
+      ],
+      "conditional": [
+        "Wenn strenge vertragliche Garantien und ein weitsichtiger Stiftungsrat die redaktionelle Freiheit sichern, bleibt das kostenlose Angebot **unabhängig** und vertrauenswürdig. Wenn jedoch die Einnahmen aus Mitgliedschaften genau für die Kontrolle der Verwaltung sorgen, erfüllt auch die bezahlte Option ihren öffentlichen Dienst. **Folglich** entscheiden die konkreten Kontrollstrukturen über den Wert des Angebots.",
+        "Andererseits zeigt sich der Erfolg an einer wachsenden Zahl von Lesern, die den Wert der Berichterstattung schätzen. Wenn die Auflage stabil bleibt, funktioniert das System.",
+        "**Schließlich** muss die journalistische Qualität stets im Mittelpunkt stehen, egal welche Finanzierungsform gewählt wird."
+      ]
+    }
+  },
+  {
+    "slug": "returnable-takeaway-containers",
+    "title": "Mehrweg-Behälter für Imbisse",
+    "prompt": "Eine Gruppe von Imbissgeschäften möchte Verpackungsmüll reduzieren. Sollen sie gemeinsame Mehrwegbehälter mit Pfand einführen oder auf ein einziges recycelbares Format umstellen, das Kunden in lokale Tonnen werfen können?",
+    "conditionalPrompt": "Nennen Sie die Rückgabe- oder Recycling-Nachweise, die ein System glaubwürdiger machen würden als das andere.",
+    "options": [
+      {
+        "label": "Mehrweg mit Pfand",
+        "description": "Erheben Sie ein Pfand und lassen Sie Kunden Behälter in jedem Geschäft der Gruppe zurückgeben. Geschäfte teilen Wasch- und Lagerkosten."
+      },
+      {
+        "label": "Einheitliches Recycling-Format",
+        "description": "Nutzen Sie ein lokal akzeptiertes Verpackungsmaterial mit klaren Entsorgungsanweisungen. Kunden müssen keine Behälter zurückbringen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Kreislaufwirtschaft", "ein Wirtschaftssystem, das Abfall durch Wiederverwendung minimiert", "Die moderne Kreislaufwirtschaft schont wertvolle Rohstoffe und die Umwelt."],
+        ["das Pfand", "eine Geldeinlage als Sicherheit für die Rückgabe", "Ein angemessenes Pfand motiviert die Kunden zur pünktlichen Rückgabe der Schalen."],
+        ["die Entsorgung", "das Beseitigen oder Wiederverwerten von Abfall", "Eine umweltgerechte Entsorgung von Verpackungen wird gesetzlich immer strenger reguliert."],
+        ["die Logistik", "die Organisation des Transports und der Lagerung", "Die gemeinsame Logistik für das Reinigen der Behälter spart den Imbissen viel Geld."]
+      ],
+      "phrasalVerbs": [
+        ["ins Leben rufen", "etwas ins Werk setzen oder gründen", "Die Geschäfte haben eine gemeinsame Initiative für Mehrwegverpackungen ins Leben gerufen."],
+        ["zur Verfügung stellen", "etwas bereitstellen", "Die teilnehmenden Läden stellen einheitliche Rückgabeboxen zur Verfügung."],
+        ["in Anspruch nehmen", "etwas nutzen", "Viele Kunden nehmen das neue Angebot für umweltfreundliches Essen gerne in Anspruch."],
+        ["aus dem Weg gehen", "einer Sache ausweichen", "Man sollte komplizierte Rückgaberegeln für die Kunden unbedingt aus dem Weg gehen."]
+      ],
+      "adjectives": [
+        ["umweltfreundlich", "die Natur und Umwelt wenig belastend", "Umweltfreundliche Verpackungen sind für moderne Gastronomen ein echtes Verkaufsargument."],
+        ["unkompliziert", "einfach und ohne Schwierigkeiten", "Das Entsorgungssystem muss für alle Beteiligten völlig unkompliziert sein."],
+        ["wiederverwendbar", "so beschaffen, dass man es mehrfach nutzen kann", "Stabile und wiederverwendbare Behälter ersetzen unzählige Einwegbecher."],
+        ["effizient", "wirtschaftlich und zielgerichtet", "Eine effiziente Reinigung der Schalen ist für den Erfolg des Netzwerks zentral."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Das Pfand wurde eingeführt, folglich brachten die Gäste die Behälter zurück."],
+        ["während", "als Gegensatz", "Einige Kunden lieben das Mehrwegsystem, während andere die einfache Tonne bevorzugen."],
+        ["zudem", "als Ergänzung", "Die Schalen sind robust, zudem lassen sie sich gut stapeln."],
+        ["schließlich", "als letztes Argument", "Schließlich wollen alle Imbisse den Plastikmüll in der Stadt drastisch verringern."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Gemeinsame Mehrwegbehälter mit **Pfand** reduzieren den Verpackungsmüll in der Stadt drastisch, weil jede Schale hunderte Male im Kreislauf geführt wird. Da die Kunden ihre Behälter in jedem teilnehmenden Geschäft zurückgeben können, bleibt das System für die Verbraucher extrem flexibel. **Folglich** sinken die Müllberge auf den Straßen spürbar.",
+        "Andererseits erfordert das Einsammeln, Waschen und Lagern der Behältnisse einen erheblichen logistischen Aufwand für die kooperierenden Imbissinhaber. Manchmal verlangen Kunden nach ihrem Geld, obwohl die Rückgabefrist überschritten ist. Dennoch ist dieses System der ökologisch sauberste Weg.",
+        "**Schließlich** fördert das gemeinsame Handeln auch die Kooperation der kleinen Läden untereinander. Alle profitieren von einem professionellen Reinigungsservice."
+      ],
+      "b": [
+        "Ein einheitliches, recycelbares Einwegformat mit klaren Entsorgungsanweisungen macht die Rückgabe für die Kunden komplett überflüssig und spart Logistikaufwand. Die Verbraucher werfen die leeren Verpackungen einfach in die örtlichen Wertstofftonnen, wo sie fachgerecht recycelt werden. **Folglich** funktioniert der Ablauf ohne zusätzliche Hürden.",
+        "Andererseits bleibt bei der Einwegvariante trotz bester Recyclingquoten immer ein gewisser Materialverlust und Müll bestehen, der die Natur belastet. Die ständige Produktion neuer Verpackungen kostet wertvolle Ressourcen. Dennoch schätzen viele eilige Kunden diesen unkomplizierten Komfort.",
+        "**Schließlich** entfallen für die Imbisse teure Investitionen in Spülstraßen und Reinigungspersonal. Das spart gerade in der Startphase viel Kapital."
+      ],
+      "conditional": [
+        "Wenn die Rückgabequote der Mehrwegschalen über achtzig Prozent liegt und die Spüllogistik reibungslos funktioniert, ist das Pfandsystem ökologisch eindeutig überlegen. Wenn jedoch die Wege zu den Geschäften zu weit sind und die Behälter verloren gehen, erweist sich das recycelbare Format als realistischer. **Folglich** belegen die tatsächlichen Nutzungszahlen den wahren Umwelterfolg.",
+        "Andererseits zeigt sich die Tauglichkeit daran, wie sauber die umliegenden Straßen nach der Einführung der Behälter bleiben.",
+        "**Schließlich** muss jede Lösung im Alltag der Kunden reibungslos funktionieren."
+      ]
+    }
+  },
+  {
+    "slug": "ai-feedback-in-assessed-writing",
+    "title": "KI-Feedback bei bewerteten Texten",
+    "prompt": "Eine Hochschule möchte, dass schriftliche Arbeiten zeigen, was Studierende leisten können. Soll sie erlauben, dass Studierende ein KI-Werkzeug um Feedback zu ihren eigenen Entwürfen bitten und dies offenlegen, oder sollen KI-Werkzeuge für Übungen außerhalb bewerteter Arbeiten reserviert bleiben?",
+    "conditionalPrompt": "Entscheiden Sie, was die Arbeit messen soll und welche Beweise den Schreibprozess sichtbar machen würden.",
+    "options": [
+      {
+        "label": "Erlaubtes KI-Feedback mit Offenlegung",
+        "description": "Studierende schreiben den Entwurf selbst und dürfen nach Kommentaren fragen. Sie fügen den Entwurf bei und erklären, welche Vorschläge sie genutzt haben."
+      },
+      {
+        "label": "KI nur für Übungen außerhalb",
+        "description": "Studierende üben zu anderen Zeiten mit Werkzeugen. Für benotete Arbeiten entwerfen und überarbeiten sie eigenständig unter vereinbarten Bedingungen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Integrität", "die moralische Unversehrtheit und Ehrlichkeit", "Akademische Integrität bei Prüfungen hat für die Universität oberste Priorität."],
+        ["die Verfassung", "der Zustand eines Textes oder einer Person", "Der erste Entwurf der Arbeit befand sich noch in einer sehr frühen Verfassung."],
+        ["der Nachweis", "ein Beleg für eine Leistung oder Eigenschaft", "Die Hausarbeit muss einen eigenständigen Nachweis der analytischen Fähigkeiten erbringen."],
+        ["die Täuschung", "ein betrügerisches Handeln", "Unerlaubte Hilfe bei Prüfungen gilt als Täuschung und wird streng bestraft."]
+      ],
+      "phrasalVerbs": [
+        ["zur Geltung kommen", "sich optimal entfalten", "Eigene Gedanken sollen in dieser wissenschaftlichen Arbeit voll zur Geltung kommen."],
+        ["unter die Lupe nehmen", "etwas sehr genau prüfen", "Die Dozenten haben jeden eingereichten Text kritisch unter die Lupe genommen."],
+        ["in Anspruch nehmen", "ein Angebot oder Hilfsmittel nutzen", "Man darf digitale Rechtschreibhilfen bei der Korrektur in Anspruch nehmen."],
+        ["aus dem Weg räumen", "ein Hindernis beseitigen", "Wir müssen alle Zweifel an der Eigenleistung durch Protokolle aus dem Weg räumen."]
+      ],
+      "adjectives": [
+        ["eigenständig", "ohne fremde Hilfe ausgeführt", "Jeder Studierende muss die wissenschaftliche Arbeit völlig eigenständig verfassen."],
+        ["transparent", "offen und nachvollziehbar", "Die Dokumentation der genutzten Hilfsmittel muss für den Prüfer transparent sein."],
+        ["authentisch", "echt und wahrhaftig", "Der Schreibstil muss über das gesamte Semester hinweg authentisch bleiben."],
+        ["kritisch", "hinterfragend", "Man sollte die Vorschläge künstlicher Intelligenz stets kritisch prüfen."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Der KI-Einsatz wurde offengelegt, folglich konnte die Leistung fair bewertet werden."],
+        ["während", "als Gegensatz", "Einige Dozenten erlauben smarte Korrekturen, während andere strikte Isolation fordern."],
+        ["zudem", "als Ergänzung", "Das Tool hilft beim Strukturieren, zudem spart es wertvolle Zeit."],
+        ["schließlich", "als letztes Argument", "Schließlich soll die Note die wahre intellektuelle Leistung des Lernenden widerspiegeln."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Erlaubtes KI-Feedback mit vollständiger Offenlegung bereichert den Schreibprozess, weil Studierende wertvolle Hinweise zur Verbesserung ihrer eigenen Entwürfe erhalten. Indem sie genau dokumentieren, welche Vorschläge übernommen wurden, bleibt ihre Eigenleistung **transparent** und für die Prüfer nachvollziehbar. **Folglich** lernen sie den kritischen Umgang mit digitalen Werkzeugen.",
+        "Andererseits besteht die ständige Gefahr, dass künstliche Intelligenz zu stark in den kreativen Prozess eingreift und die eigentliche Autorschaft verwässert. Die Grenze zwischen eigener Leistung und maschineller Hilfe verschwimmt leicht. Dennoch ist ein offener Umgang realistischer als ein striktes Verbot.",
+        "**Schließlich** bereitet dieser verantwortungsvolle Ansatz die Studierenden optimal auf die moderne Berufswelt vor. Der korrekte Umgang mit neuen Technologien gehört heute dazu."
+      ],
+      "b": [
+        "Das Verbot von KI bei bewerteten Arbeiten stellt sicher, dass die Note ausschließlich die authentische Denkleistung und den wahren Schreibstil des Studierenden widerspiegelt. Wenn alle Texte unter genau definierten Bedingungen ohne fremde Hilfe entstehen, herrscht absolute Chancengleichheit bei den Prüfungen. **Folglich** wissen die Dozenten genau, was jeder Einzelne kann.",
+        "Andererseits ignoriert diese strenge Haltung die Realität einer digitalisierten Arbeitswelt, in der smarte Assistenten längst zum Standard gehören. Man verpasst die Chance, den klugen Umgang mit diesen Systemen im Studium zu trainieren. Dennoch schützt diese Regel die akademische **Integrität**.",
+        "**Schließlich** bleibt die handwerkliche Schreibkompetenz das wichtigste Fundament für jede wissenschaftliche Karriere. Ohne diese Basis leidet die Qualität."
+      ],
+      "conditional": [
+        "Wenn die Aufgabe vor allem die eigenständige Problemlösung misst, sind Hilfsmittel fehl am Platz und der Text muss völlig autonom entstehen. Wenn es jedoch um stilistische Feinarbeit und den professionellen Schreibprozess geht, macht transparentes Feedback Sinn. **Folglich** bestimmt das Lernziel der Prüfung den erlaubten Rahmen.",
+        "Andererseits zeigt sich der Erfolg der gewählten Regel an der Qualität der eingereichten Arbeiten und dem ehrlichen Dialog im Seminar.",
+        "**Schließlich** müssen die Prüfungsbedingungen den Studierenden absolute Klarheit bieten."
+      ]
+    }
+  },
+  {
+    "slug": "phones-at-school",
+    "title": "Handys an weiterführenden Schulen",
+    "prompt": "Eine weiterführende Schule verliert Unterrichtszeit an Smartphones. Sollen Handys für den ganzen Schultag weggelegt werden oder sollen Lehrer entscheiden, wann sie während des Unterrichts weggelegt werden, während der Zugang in Pausen erlaubt ist?",
+    "conditionalPrompt": "Identifizieren Sie, wo die Handynutzung die größte Störung verursacht und was zeigen würde, dass eine engere Regel funktioniert.",
+    "options": [
+      {
+        "label": "Sichere Verwahrung den ganzen Tag",
+        "description": "Bewahren Sie Handys von der Ankunft bis zur Abfahrt sicher auf. Leiten Sie dringende Familiennachrichten über das Schulsekretariat und machen Sie vereinbarte Ausnahmen."
+      },
+      {
+        "label": "Regel durch Lehrer mit Pausennutzung",
+        "description": "Geben Sie Lehrern eine gemeinsame Startregel und erlauben Sie Handys für bestimmte Aufgaben. Schüler können ihre Handys in den Pausen nutzen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Ablenkung", "etwas, das die Aufmerksamkeit von der Arbeit abzieht", "Ständige Nachrichten auf dem Smartphone sind im Unterricht eine enorme Ablenkung."],
+        ["die Konzentration", "die Fokussierung auf eine bestimmte Sache", "Gute Konzentration ist die Voraussetzung für erfolgreiches Lernen im Klassenzimmer."],
+        ["die Vorschrift", "eine verbindliche Regel für das Verhalten", "Eine klare Vorschrift zum Umgang mit Geräten beendet lange Diskussionen."],
+        ["die Gemeinschaft", "das soziale Miteinander von Menschen", "Das persönliche Gespräch in den Pausen stärkt die schulische Gemeinschaft."]
+      ],
+      "phrasalVerbs": [
+        ["zur Geltung kommen", "seine Wirkung voll entfalten", "Im echten Pausengespräch soll die soziale Kommunikation wieder zur Geltung kommen."],
+        ["unter die Lupe nehmen", "etwas sorgfältig prüfen", "Die Schulleitung hat das Nutzungsverhalten in den Klassen genau unter die Lupe genommen."],
+        ["aus dem Weg gehen", "Konflikten oder Problemen ausweichen", "Klare Regeln helfen uns, ständigen Ärger im Unterricht aus dem Weg zu gehen."],
+        ["in Anspruch nehmen", "etwas nutzen", "Schüler sollen das analoge Freizeitangebot auf dem Schulhof gerne in Anspruch nehmen."]
+      ],
+      "adjectives": [
+        ["konzentriert", "aufmerksam bei einer Sache", "Die Schüler arbeiten wesentlich konzentrierter, wenn keine Telefone auf dem Tisch liegen."],
+        ["verbindlich", "für alle gleichermaßen geltend", "Eine verbindliche Handyverbotszone schützt die Lernatmosphäre im Gebäude."],
+        ["sozial", "das Miteinander fördernd", "Ein Handyverzicht in den Pausen fördert den direkten sozialen Kontakt."],
+        ["effektiv", "wirkungsvoll mit gutem Ergebnis", "Der Unterricht verläuft ohne digitale Ablenkungen deutlich effektiver."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz", "Die Handys wurden eingesammelt, folglich stieg die Aufmerksamkeit im Raum sofort."],
+        ["während", "als Gegensatz", "Einige Lehrer wünschen sich klare Verbote, während andere digitale Werkzeuge nutzen."],
+        ["zudem", "als Ergänzung", "Die Geräte stören den Unterricht, zudem belasten sie den sozialen Frieden."],
+        ["schließlich", "als letztes Argument", "Schließlich sind die Kinder in der Schule, um gemeinsam zu lernen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die sichere Verwahrung der Smartphones von der Ankunft bis zur Abfahrt garantiert eine störungsfreie Lernumgebung und steigert **die Konzentration** im Klassenzimmer massiv. Wenn alle Geräte im Schrank eingeschlossen sind, fällt die ständige Versuchung weg, heimlich Nachrichten zu lesen. **Folglich** verläuft der Unterricht deutlich ruhiger und effektiver.",
+        "Andererseits bedeutet diese strikte Regel für ältere Jugendliche einen Eingriff in ihre persönliche Freiheit, auch wenn Notfälle über das Sekretariat geregelt werden. Die Eigenverantwortung der Schüler wird durch das generelle Verbot kaum gefördert. Dennoch überwiegt der Schutz des Unterrichtsfriedens bei Weitem.",
+        "**Schließlich** gewinnen die Jugendlichen in den Pausen ihren direkten sozialen Raum zurück, da wieder miteinander gesprochen wird. Das Miteinander auf dem Schulhof blüht auf."
+      ],
+      "b": [
+        "Das flexible Modell mit einer gemeinsamen Grundregel gibt den Lehrkräften die Freiheit, Handys gezielt für bestimmte Lernaufgaben im Unterricht einzusetzen. In den Pausen dürfen die Jugendlichen ihre Geräte nutzen, was ihrem Bedürfnis nach digitaler Kommunikation entgegenkommt. **Folglich** lernen sie einen pragmatischen Umgang mit der Technik.",
+        "Andererseits führt diese uneinheitliche Regelung oft zu Diskussionen zwischen Schülern und Lehrern über den genauen Zeitpunkt der Nutzung. Die ständige Verfügbarkeit bleibt **zudem** eine permanente **Ablenkung** im Schulalltag. Dennoch stärkt dieser Ansatz das Vertrauen in die Eigenkompetenz.",
+        "**Schließlich** müssen junge Menschen lernen, ihre Geräte selbstbestimmt und diszipliniert zu steuern. Ein völliges Verbot schiebt das Problem im Grunde nur auf."
+      ],
+      "conditional": [
+        "Wenn die heimliche Handynutzung unter dem Tisch den gesamten Unterricht lahmlegt, ist die sichere Verwahrung den ganzen Tag über die einzige Rettung. Wenn jedoch gezielte digitale Aufgaben den Unterricht bereichern sollen, funktioniert die flexible Lehrerentscheidung besser. **Folglich** zeigt das Ausmaß der Störung im Klassenzimmer, welche Regel notwendig ist.",
+        "Andererseits beweist ein starker Anstieg der Noten und der Aufmerksamkeit, dass eine strikte Beschränkung erfolgreich war.",
+        "**Schließlich** muss das Wohl und der Lernerfolg aller Kinder im Mittelpunkt stehen."
+      ]
+    }
+  },
+  {
+    "slug": "scholarship-depth-or-reach",
+    "title": "Stipendienvergabe: Volle Förderung oder Teilfinanzierung?",
+    "prompt": "Eine Hochschule hat genügend Mittel für zwei vollständige Stipendien für Studierende mit geringem Einkommen. Alternativ könnte sie acht Studierenden einen Zuschuss gewähren, der ein Viertel ihrer Studiengebühren abdeckt. Was würde mehr dazu beitragen, einen akademischen Grad erreichbar zu machen?",
+    "conditionalPrompt": "Entscheide, welche Förderhöhe tatsächlich beeinflusst, ob ein Studierender das Studium antreten und bis zum Abschluss durchziehen kann.",
+    "options": [
+      {
+        "label": "Vollstipendium für wenige",
+        "description": "Die gesamten Studiengebühren für zwei Studierende mit erheblichem Bedarf decken. Andere geeignete Bewerber erhalten aus diesem Fonds keine Zuwendung."
+      },
+      {
+        "label": "Teilstipendium für viele",
+        "description": "Ein Viertel der Studiengebühren für eine breitere Gruppe übernehmen. Die Empfänger benötigen jedoch weiterhin einen verlässlichen Weg, um den Rest ihrer Kosten zu decken."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Chancengleichheit", "die Gewährleistung gleicher Möglichkeiten im Bildungssystem", "Die Hochschule setzt sich aktiv für die soziale Chancengleichheit aller Studierenden ein."],
+        ["die Studienfinanzierung", "die Sicherstellung der finanziellen Mittel für das Studium", "Eine verlässliche Studienfinanzierung nimmt den enormen Druck von den jungen Menschen."],
+        ["die Belastungsgrenze", "der Punkt, an dem eine maximale Beanspruchung erreicht ist", "Viele Familien erreichen während des Studiums ihrer Kinder schnell ihre finanzielle Belastungsgrenze."],
+        ["der Lebensunterhalt", "die Gesamtheit der Mittel, die man zum Leben benötigt", "Neben den Gebühren müssen auch die laufenden Kosten für den Lebensunterhalt bestritten werden."]
+      ],
+      "phrasalVerbs": [
+        ["in Anspruch nehmen", "etwas nutzen oder beanspruchen", "Bedürftige Studierende sollten diese gezielte finanzielle Hilfe unbedingt in Anspruch nehmen."],
+        ["unter die Arme greifen", "jemandem in einer schwierigen Lage helfen", "Wir müssen den talentierten Nachwuchskräften in finanzieller Not tatkräftig unter die Arme greifen."],
+        ["auf die Beine stellen", "etwas erfolgreich organisieren oder verwirklichen", "Die Fakultät hat ein hervorragendes Förderprogramm für Erstsemester auf die Beine gestellt."],
+        ["ins Auge fassen", "etwas als Möglichkeit planen oder erwägen", "Der Senat wird im kommenden Haushaltsjahr eine Ausweitung der Stipendien ins Auge fassen."]
+      ],
+      "adjectives": [
+        ["chancenreich", "gute Aussichten auf Erfolg bietend", "Dieser innovative Studiengang gilt auf dem aktuellen Arbeitsmarkt als besonders chancenreich."],
+        ["unterprivilegiert", "benachteiligt und mit geringeren gesellschaftlichen Chancen ausgestattet", "Unterprivilegierten Jugendlichen muss der Zugang zur Universität nachhaltig erleichtert werden."],
+        ["existenzielle", "für das Überleben oder die Existenz von grundlegender Bedeutung", "Die hohen Wohnkosten stellen für viele Studierende eine existenzielle Bedrohung dar."],
+        ["ausschlaggebend", "für die Entscheidung von entscheidender Wichtigkeit", "Die Höhe des Stipendiums war für meine endgültige Entscheidung schlussendlich ausschlaggebend."]
+      ],
+      "connectors": [
+        ["angesichts", "unter Berücksichtigung oder wegen", "Angesichts der steigenden Lebenshaltungskosten reicht eine Teilfinanzierung oft nicht aus."],
+        ["einerseits", "beim Aufzeigen des ersten von zwei entgegenstehenden Gesichtspunkten", "Einerseits entlastet das Vollstipendium den Einzelnen vollständig von jeglichen Sorgen."],
+        ["andererseits", "beim Aufzeigen des zweiten, entgegengesetzten Aspekts", "Andererseits profitieren deutlich mehr Menschen von einer gestaffelten Teilförderung."],
+        ["infolgedessen", "als direkte Folge des zuvor genannten Umstands", "Die Studiengebühren wurden erhöht, infolgedessen gerieten viele Familien in Bedrängnis."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Angesichts** der sozialen **Chancengleichheit** ist die Vergabe von Vollstipendien eindeutig der richtige Weg. **Einerseits** geraten viele Familien rasch an ihre finanzielle **Belastungsgrenze**, wenn sie den akademischen Bildungsweg ihrer Kinder unterstützen müssen. Anderseits können wir talentierten Jugendlichen aus unterprivilegierten Verhältnissen nur dann helfen, wenn wir ihnen die gesamte Last abnehmen.",
+        "Wer **die Studienfinanzierung** komplett übernimmt, greift den Betroffenen effektiv unter die Arme. Die Studierenden müssen nicht nebenbei arbeiten und können sich voll auf ihre Prüfungen konzentrieren. **Infolgedessen** sinkt die Abbruchquote drastisch, weil die **existenzielle** Sorge um das tägliche Überleben komplett wegfällt.",
+        "Zwar erhalten auf diese Weise weniger Personen eine Zuwendung, aber diese wenigen werden sicher zum Abschluss geführt. Die Entscheidung für die Tiefe der Förderung ist daher **ausschlaggebend** für echten Bildungserfolg."
+      ],
+      "b": [
+        "Ein Teilstipendium für viele ist die gerechtere Lösung. **Einerseits** bleibt das Budget begrenzt, sodass eine breitere Streuung deutlich mehr jungen Menschen den Zugang überhaupt erst ermöglicht. Anderseits können wir auf diese Weise deutlich mehr Familien spürbar entlasten, ohne einzelne Personen komplett zu finanzieren.",
+        "Die Hochschule setzt ein starkes Zeichen, wenn sie viele chancenreiche Bewerber unterstützt. Wer ein solches Programm auf die Beine stellt, erreicht eine größere Wirkung in der Breite. **Infolgedessen** fühlen sich mehr Menschen ermutigt, den Schritt an die Universität zu wagen.",
+        "Zwar bleibt eine Restfinanzierung zu klären, aber die Grundlast sinkt für alle erheblich. Diese Strategie maximiert den gesellschaftlichen Nutzen der verfügbaren Mittel."
+      ],
+      "conditional": [
+        "Die Frage, welche Förderform greift, hängt stark von der individuellen Ausgangslage ab. **Einerseits** benötigen absolut mittellose Personen die volle Unterstützung, um überhaupt anfangen zu können. Anderseits reicht bei moderat knappen Kassen oft schon ein kleiner Zuschuss aus, um die Belastung tragbar zu machen.",
+        "Wer keinerlei Ersparnisse besitzt, kann ein Teilstipendium schlicht nicht **in Anspruch nehmen**. **Infolgedessen** müssen wir genau prüfen, ob die Empfänger den Restbetrag selbst aufbringen können.",
+        "Somit macht das Vollstipendium bei extrem Bedürftigen Sinn, während die Teilförderung bei stabilerem Hintergrund ausreicht."
+      ]
+    }
+  },
+  {
+    "slug": "capstone-portfolio-or-team-project",
+    "title": "Abschlussarbeit: Portfolio oder Teamprojekt",
+    "prompt": "Eine Hochschule gestaltet ihre Abschlussprüfung neu. Soll jeder Studierende ein individuelles Portfolio einreichen oder sollen Teams ein echtes Projekt für eine lokale Organisation umsetzen und dokumentieren, was jeder Einzelne beigetragen hat?",
+    "conditionalPrompt": "Entscheide, wo gemeinsame Arbeit einen besseren Nachweis der Fähigkeiten liefert und wie individuelle Beiträge sichtbar gemacht werden können.",
+    "options": [
+      {
+        "label": "Individuelles Portfolio",
+        "description": "Jeder Studierende wählt mehrere Arbeiten aus, erklärt seine Überarbeitungen und verteidigt eine Auswahl in einem kurzen Gespräch."
+      },
+      {
+        "label": "Teamprojekt",
+        "description": "Kleine Gruppen erstellen ein konkretes Produkt für einen lokalen Partner. Jeder Studierende protokolliert seine Rolle und beantwortet Fragen zur Arbeit."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Teamarbeit", "die gemeinsame Erarbeitung von Ergebnissen in einer Gruppe von Personen", "Erfolgreiche Teamarbeit erfordert eine klare Kommunikation und ein hohes Maß an gegenseitiger Verlässlichkeit."],
+        ["die Eigenleistung", "der persönlich erbrachte Beitrag zu einem gemeinsamen Werk oder Projekt", "Bei der Bewertung der Gruppenarbeit muss die individuelle Eigenleistung klar erkennbar bleiben."],
+        ["die Kompetenz", "die Fähigkeit, bestimmtes Wissen anzuwenden und Probleme zu lösen", "Das neue Studienformat fördert gezielt die fachliche und soziale Kompetenz der angehenden Absolventen."],
+        ["die Dokumentation", "die schriftliche oder visuelle Festhaltung von Abläufen und Ergebnissen", "Eine lückenlose Dokumentation aller Projektschritte ist für eine faire Benotung unerlässlich."]
+      ],
+      "phrasalVerbs": [
+        ["etwas nachweisen", "belegen oder beweisen, dass etwas Bestimmtes wahr ist oder existiert", "Im Rahmen der Abschlussprüfung müssen die Studierenden ihre praktischen Fähigkeiten überzeugend nachweisen."],
+        ["jemanden bewerten", "eine Note oder ein Urteil über die Leistung einer Person abgeben", "Es ist oft schwierig, die genaue Leistung einzelner Mitglieder in einer Gruppe fair zu bewerten."],
+        ["sich beteiligen", "aktiv an einer gemeinsamen Aktion oder Diskussion teilnehmen", "Alle Gruppenmitglieder müssen sich gleichermaßen an der praktischen Umsetzung des Projekts beteiligen."],
+        ["etwas darlegen", "einen Sachverhalt verständlich und detailliert erklären oder schildern", "Die Studierenden sollen ihre methodischen Entscheidungen in einem ausführlichen Bericht darlegen."]
+      ],
+      "adjectives": [
+        ["transparent", "für jeden klar erkennbar und nachvollziehbar", "Ein gerechtes Prüfungsverfahren muss für alle Beteiligten absolut transparent gestaltet sein."],
+        ["verantwortungsbewusst", "sich der eigenen Verantwortung bewusst und zuverlässig handelnd", "Für ein erfolgreiches Abschlussprojekt braucht die Gruppe engagierte und verantwortungsbewusste Mitglieder."],
+        ["praxisnah", "einen direkten Bezug zur realen Berufswelt aufweisend", "Diese moderne Form der Abschlussprüfung bereitet die jungen Menschen optimal auf den Berufsalltag vor."],
+        ["individuell", "auf die einzelne Person bezogen und auf sie zugeschnitten", "Jeder Studierende bekommt die Chance, seine ganz eigenen Stärken und Talente individuell einzubringen."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz aus dem zuvor Genannten", "Die Gruppenarbeit lässt oft Fragen offen; folglich ist eine mündliche Ergänzung notwendig."],
+        ["hingegen", "drückt einen Gegensatz oder eine Gegenüberstellung aus", "Das Portfolio zeigt das individuelle Können; die Gruppenarbeit hingegen fordert soziale Stärke."],
+        ["darüber hinaus", "als Steigerung oder Ergänzung zu einem vorherigen Gedanken", "Das Projekt bringt reale Praxiserfahrung; darüber hinaus stärkt es die Kommunikationsfähigkeit."],
+        ["somit", "als unmittelbare Folge des Beschriebenen", "Die Rollen sind im Team klar verteilt; somit lässt sich der Beitrag exakt zuordnen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Das individuelle Portfolio ist meiner Meinung nach der beste Weg, um das echte Können eines Studierenden zu prüfen. Hier zeigt sich schwarz auf weiß, was die Person ganz allein geleistet hat, ohne sich hinter einer Gruppe zu verstecken. Die ausführliche Reflexion und das gezielte Verteidigen der eigenen Arbeit in einem persönlichen Gespräch offenbaren das wahre fachliche Niveau.",
+        "Eine Gruppenarbeit verschleiert **hingegen** allzu oft die tatsächlichen Leistungsunterschiede zwischen den beteiligten Personen. Nicht selten ruhen sich schwächere Studierende auf dem Fleiß ihrer Kommilitonen aus, während am Ende alle dieselbe Note bekommen. Das ist ungerecht und sagt rein gar nichts über die individuelle Qualifikation aus.",
+        "**Darüber hinaus** fördert das Portfolio eine eigenständige wissenschaftliche Haltung und kritisches Denken. Wer sich intensiv mit den eigenen Fehlern auseinandersetzt, lernt für das spätere Berufsleben unendlich viel mehr. Stattdessen faule Kompromisse in Teams einzugehen, bringt niemanden wirklich weiter."
+      ],
+      "b": [
+        "Das praxisnahe Teamprojekt ist zweifellos die zeitgemäße Form der Abschlussprüfung für unsere Studierenden. In der realen Berufswelt arbeitet schließlich auch niemand im einsamen Kämmerlein an Portfolios, sondern stets gemeinsam in interdisziplinären Teams. Wenn Studierende ein echtes Produkt für einen externen Partner entwickeln, lernen sie Verantwortung zu übernehmen und Konflikte zu lösen.",
+        "Das starre Einzelportfolio bietet im Gegensatz dazu kaum Möglichkeiten, wichtige soziale und organisatorische Kompetenzen unter Beweis zu stellen. Es bleibt eine theoretische Übung ohne echten Bezug zu den tatsächlichen Bedürfnissen der Wirtschaft. Wer dort glänzt, scheitert oft an der ersten echten Teamaufgabe im Berufsleben.",
+        "Allerdings muss man dafür sorgen, dass die individuellen Beiträge absolut **transparent** bleiben. Wenn jeder seine Rolle klar dokumentiert und im Gespräch verteidigt, ist die oft kritisierte Ungerechtigkeit der Gruppenarbeit gelöst. **Somit** verbindet dieses Modell das Beste aus beiden Welten perfekt miteinander."
+      ],
+      "conditional": [
+        "Die Wahl zwischen Portfolio und Teamprojekt hängt stark von den Lernzielen und den Kapazitäten des jeweiligen Studiengangs ab. Wenn das Fach eher theoretisch ausgerichtet ist und präzises Einzeldenken erfordert, ist das Portfolio klar im Vorteil. Geht es jedoch um Management, Kreativität oder technische Umsetzung, bietet das Projekt wertvolle Einblicke.",
+        "Man muss daher genau analysieren, welche Kompetenzen für den späteren Beruf wirklich im Vordergrund stehen. Wenn die Hochschule nicht sicherstellen kann, dass **die Eigenleistung** im Team fair bewertet wird, droht das Verfahren ungerecht zu werden. Stattdessen sollte man die Prüfungsform wählen, die zu den verfügbaren Betreuungsressourcen passt.",
+        "**Somit** lässt sich keine allgemeingültige Entscheidung für alle Fachbereiche treffen. Jedes Format hat seine berechtigten Stärken, solange die Durchführung sauber geplant und konsequent umgesetzt wird. Die Qualität der Betreuung entscheidet am Ende über den Erfolg der Methode."
+      ]
+    }
+  },
+  {
+    "slug": "conference-working-language",
+    "title": "Konferenzsprache: Einheit oder Vielfalt",
+    "prompt": "Eine regionale Universitätskonferenz kann Englisch für alle Hauptsitzungen nutzen oder Sprechern erlauben, ihre Sprache zu wählen, während Dolmetscher für die Hauptvorträge finanziert werden. Was macht die Veranstaltung wertvoller?",
+    "conditionalPrompt": "Entscheide, ob die größere Hürde die Sprecher oder das Publikum betrifft und was das Dolmetschen praktikabel macht.",
+    "options": [
+      {
+        "label": "Einheitssprache Englisch",
+        "description": "Nutze Englisch für Vorträge und Diskussionen, damit alle nur eine Sprache verstehen müssen. Biete Zeit zum Proben mit einem Kollegen."
+      },
+      {
+        "label": "Mehrsprachigkeit",
+        "description": "Lass Vortragende in ihrer präzisesten Sprache sprechen. Biete Dolmetschung für die Hauptsitzungen und begrenzten Service in Kleingruppen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Verständigung", "der erfolgreiche Austausch von Informationen und das gegenseitige Verstehen", "Eine klare und deutliche Aussprache ist die wichtigste Grundlage für eine gelungene Verständigung."],
+        ["die Mehrsprachigkeit", "die Fähigkeit, mehrere Sprachen fließend zu sprechen und anzuwenden", "Die bewusste Förderung von Mehrsprachigkeit bereichert den akademischen Austausch enorm."],
+        ["die Hürde", "ein Hindernis oder eine Schwierigkeit, die überwunden werden muss", "Komplexe Fachbegriffe in einer Fremdsprache stellen für viele Teilnehmer eine enorme Hürde dar."],
+        ["die Übersetzung", "die schriftliche oder mündliche Übertragung eines Textes in eine andere Sprache", "Eine präzise Übersetzung fachlicher Nuancen erfordert hochqualifizierte Dolmetscher."]
+      ],
+      "phrasalVerbs": [
+        ["etwas bewältigen", "eine schwierige sprachliche oder organisatorische Situation erfolgreich meistern", "Mit etwas Übung lassen sich auch sprachliche Hürden auf einer Konferenz gut bewältigen."],
+        ["jemanden entlasten", "jemandem eine sprachliche Last abnehmen und die Situation erleichtern", "Gute Dolmetscher können das Publikum im Saal spürbar entlasten."],
+        ["sich verständigen", "mit anderen Personen durch Sprache in Kontakt treten und Ideen austauschen", "Forscher aus aller Welt müssen sich auf Konferenzen problemlos miteinander verständigen können."],
+        ["etwas darbieten", "einen Vortrag oder ein künstlerisches Werk vor Publikum präsentieren", "In der eigenen Muttersprache kann man komplexe Gedanken viel eleganter darbieten."]
+      ],
+      "adjectives": [
+        ["präzise", "äußerst genau, treffend und frei von unklaren Formulierungen", "In der Muttersprache gelingen den Wissenschaftlern oft viel präzisere Ausführungen."],
+        ["wertvoll", "von hohem Nutzen, sehr nützlich oder wichtig für die Beteiligten", "Der persönliche und fachliche Austausch auf dieser internationalen Tagung ist unglaublich wertvoll."],
+        ["komplex", "schwierig, vielschichtig und aus vielen verschiedenen Teilen zusammengesetzt", "Wissenschaftliche Theorien sind meist zu komplex, als dass man sie leicht in einer Fremdsprache erklärt."],
+        ["effizient", "mit einem geringen Aufwand einen großen und schnellen Nutzen erzgebend", "Eine einzige Konferenzsprache macht den Ablauf des gesamten Programms extrem effizient."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz aus dem zuvor Genannten", "Nicht jeder spricht fließend Englisch; folglich entstehen bei reinen Fremdsprachenkonferenzen Missverständnisse."],
+        ["hingegen", "drückt einen Gegensatz oder eine Gegenüberstellung aus", "Englisch spart Zeit; die Muttersprache hingegen garantiert fachliche Tiefe."],
+        ["darüber hinaus", "als Steigerung oder Ergänzung zu einem vorherigen Gedanken", "Dolmetscher kosten viel Geld; darüber hinaus erfordern sie eine komplexe Technik im Saal."],
+        ["somit", "als unmittelbare Folge des Beschriebenen", "Alle folgen nur einer Sprache; somit läuft die Diskussion absolut reibungslos ab."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Nutzung von Englisch als einziger Konferenzsprache ist meiner Ansicht nach die einzig effiziente Lösung für eine moderne Tagung. Wenn alle Beteiligten dieselbe Sprache sprechen, läuft das gesamte Programm reibungslos ab und es geht keine kostbare Zeit verloren. Missverständnisse werden minimiert und der wissenschaftliche Diskurs bleibt stets fokussiert auf den inhaltlichen Kern.",
+        "Das Zulassen vieler verschiedener Sprachen führt **hingegen** unweigerlich zu Chaos und enormen organisatorischen Problemen. Teure Dolmetschanlagen fallen aus, Übersetzungen hinken dem Inhalt hinterher und viele nuancierte Details gehen im Sprachgewirr verloren. Das ist für das Publikum extrem anstrengend und keineswegs zielführend.",
+        "**Darüber hinaus** lernen junge Forschende ohnehin, dass Englisch die internationale Wissenschaftssprache ist. Wer sich auf internationalem Parkett bewegen will, muss diese **Hürde** überwinden. Stattdessen künstliche Sprachbarrieren zu pflegen, schadet der globalen Konkurrenzfähigkeit unserer Universität massiv."
+      ],
+      "b": [
+        "**Die Mehrsprachigkeit** mit professioneller Verdolmetschung ist zweifellos der wertvollste Ansatz für eine regionale Konferenz. Wissenschaft lebt von Präzision, und komplexe Sachverhalte lassen sich in der eigenen Muttersprache nun einmal am feinsten ausformulieren. Wer gezwungen ist, auf Englisch zu referieren, verliert oft an Ausdruckskraft und Tiefe.",
+        "Das Diktat einer einzigen Fremdsprache schließt im Gegensatz dazu viele hervorragende Forscher aus, die sich sprachlich nicht sicher fühlen. Es ist schade, wenn brillante Ideen wegen mangelnder Englischkenntnisse im Saal ungehört verhallen. Eine Konferenz muss offen sein für alle, die fachlich etwas zu sagen haben.",
+        "Allerdings kostet dieser inklusive Ansatz deutlich mehr Geld und erfordert eine sorgfältige Planung im Vorfeld. Man muss die Kosten für Dolmetscher gegen den immensen Gewinn an inhaltlicher Qualität abwägen. Somits ist dieses Modell zwar aufwendiger, aber für den akademischen Austausch unendlich viel wertvoller."
+      ],
+      "conditional": [
+        "Die Entscheidung zwischen einer Einheitssprache und echter **Mehrsprachigkeit** hängt vom Budget und der Zusammensetzung des Publikums ab. Wenn Gäste aus allen Erdteilen anreisen, ist Englisch mangels Alternativen der kleinste gemeinsame Nenner. Handelt es sich um eine regionale Tagung mit hohem Fachniveau, lohnt sich der Aufwand für Dolmetscher.",
+        "Man muss daher realistisch prüfen, ob die Universität die enormen Kosten für professionelle **Übersetzung** tragen kann. Ist das Budget zu knapp, führt der Versuch von **Mehrsprachigkeit** nur zu schlechter Qualität in den Kleingruppen. Stattdessen muss man ehrlich zu den eigenen finanziellen Grenzen stehen.",
+        "**Somit** lässt sich keine universelle Regel aufstellen, sondern jede Konferenzleitung muss den Bedarf genau analysieren. Wenn die Sprecher unter Sprachangst leiden, hilft nur die Muttersprache; wenn das Publikum international ist, siegt das Englische. Die Balance aus Machbarkeit und Anspruch ist entscheidend."
+      ]
+    }
+  },
+  {
+    "slug": "museum-return-or-shared-custody",
+    "title": "Museumsobjekte: Rückgabe oder Teilung",
+    "prompt": "Ein Museum und eine Herkunftsgesellschaft haben vereinbart, dass ein Kulturgegenstand zurückkehrt. Soll das Museum das Eigentum dauerhaft übertragen oder sollen beide Seiten eine gemeinsame Betreuung mit Ausstellungen an beiden Orten vereinbaren?",
+    "conditionalPrompt": "Entscheide, welche Entscheidungen die Gemeinschaft kontrollieren sollte und welche Bedingungen die Zusammenarbeit für beide Seiten akzeptabel machen.",
+    "options": [
+      {
+        "label": "Vollständige Rückgabe",
+        "description": "Übertrage das Eigentum und lass die Herkunftsgesellschaft entscheiden, wie und wo das Objekt gezeigt wird. Jede Leihgabe wäre ihre Wahl."
+      },
+      {
+        "label": "Gemeinsame Betreuung",
+        "description": "Bestimme Verantwortlichkeiten gemeinsam und plane Ausstellungen an beiden Orten. Die Vereinbarung braucht klare Regeln zu Transport und Pflege."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Rückgabe", "die offizielle Übertragung eines Gegenstands an den früheren Eigentümer", "Die feierliche Rückgabe kolonialer Kulturgüter ist ein wichtiger Schritt zur historischen Versöhnung."],
+        ["die Betreuung", "die sorgsame Pflege und wissenschaftliche Begleitung eines Objekts oder Projekts", "Die gemeinsame Betreuung der wertvollen Exponate erfordert ein hohes Maß an gegenseitigem Vertrauen."],
+        ["die Verantwortung", "die moralische oder rechtliche Pflicht für etwas Bestimmtes einzustehen", "Beide Museen müssen die Verantwortung für den sicheren Transport des Kulturguts gemeinsam tragen."],
+        ["die Vereinbarung", "ein offizieller Vertrag oder eine Abmachung zwischen zwei Parteien", "Eine faire Vereinbarung schützt die Interessen der Herkunftsgesellschaft ebenso wie die des Museums."]
+      ],
+      "phrasalVerbs": [
+        ["etwas zurückgeben", "einen unrechtmäßig oder historisch erworbenen Gegenstand an den Besitzer übertreffen", "Es ist eine Frage des Respekts, geraubte Kunstwerke an die Herkunftsländer zurückzugeben."],
+        ["jemanden beteiligen", "anderen Personen Mitspracherechte oder Anteile an einer Sache einräumen", "Das Museum muss die Herkunftsgesellschaft unbedingt an allen konservatorischen Entscheidungen beteiligen."],
+        ["etwas aushandeln", "durch Verhandlungen zu einer gemeinsamen Einigung in einem Konflikt kommen", "Die genauen Bedingungen für den dauerhaften Leihverkehr müssen sorgfältig ausgehandelt werden."],
+        ["etwas anerkennen", "die Bedeutung oder den rechtlichen Anspruch von etwas offiziell akzeptieren", "Man muss das moralische Recht der Herkunftsgesellschaft auf ihre eigenen Artefakte anerkennen."]
+      ],
+      "adjectives": [
+        ["historisch", "die Geschichte betreffend oder von großer geschichtlicher Bedeutung", "Dieser historische Moment markiert einen echten Wendepunkt im Umgang mit kolonialer Vergangenheit."],
+        ["respektvoll", "von Achtung und Anerkennung gegenüber anderen geprägt", "Der Dialog zwischen den Kulturen muss auf Augenhöhe und absolut respektvoll geführt werden."],
+        ["gemeinsam", "von allen beteiligten Personen zusammen getragen oder ausgeführt", "Nur eine gemeinsame Ausstellung kann die unterschiedlichen Perspektiven angemessen vermitteln."],
+        ["rechtmäßig", "den geltenden Gesetzen entsprechend und moralisch unbedenklich", "Die Herkunftsgesellschaft fordert die rechtmäßige Rückgabe ihres kulturellen Erbes."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz aus dem zuvor Genannten", "Das Eigentum liegt nun bei der Gemeinschaft; folglich bestimmt sie allein über den Verbleib."],
+        ["hingegen", "drückt einen Gegensatz oder eine Gegenüberstellung aus", "Die Rückgabe beendet den Streit; die Kooperation hingegen schafft neue Brücken."],
+        ["darüber hinaus", "als Steigerung oder Ergänzung zu einem vorherigen Gedanken", "Das Objekt kehrt physisch zurück; darüber hinaus entsteht ein dauerhafter wissenschaftlicher Austausch."],
+        ["somit", "als unmittelbare Folge des Beschriebenen", "Beide Seiten unterschreiben den Vertrag; somit ist die friedliche Zukunft des Artefakts gesichert."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die vollständige und bedingungslose **Rückgabe** des Objekts ist meiner Meinung nach die einzig moralisch vertretbare Handlung für das Museum. Nach Jahrzehnten des Unrechts hat die Herkunftsgesellschaft das absolute Recht, frei über ihr eigenes kulturelles Erbe zu verfügen. Jede Einmischung aus Europa wirkt paternalistisch und ignoriert die Souveränität der betroffenen Menschen.",
+        "Ein geteiltes Eigentum oder komplizierte Leihverträge schaffen **hingegen** nur neue Abhängigkeiten und schüren Misstrauen. Das Museum im Westen darf nicht länger als Vormund auftreten, der gnädig bestimmt, was mit fremdem Eigentum geschieht. Wer es ernst meint mit der Dekolonialisierung, muss das Eigentum komplett und unwiderruflich übertragen.",
+        "**Darüber hinaus** zeigt sich wahre Partnerschaft genau darin, dass man loslassen kann und der Gemeinschaft die alleinige Kontrolle überlässt. Ob sie das Artefakt zeigen oder einlagern, geht uns schlicht nichts mehr an. Stattdessen Bedingungen zu diktieren, torpediert den gesamten Prozess der Versöhnung von vornherein."
+      ],
+      "b": [
+        "Die gemeinsame **Betreuung** und Kooperation ist zweifellos der konstruktivste Weg, um mit sensiblen Kulturgegenständen umzugehen. Wenn beide Institutionen **Verantwortung** übernehmen und Ausstellungen an beiden Orten planen, entsteht ein echter interkultureller Dialog. Niemand wird ausgeschlossen, und das wertvolle Erbe kann weltweit staunenden Menschen nahegebracht werden.",
+        "Die radikale **Rückgabe** ohne Rücksprache bricht im Gegensatz dazu oft jeden weiteren wissenschaftlichen und musealen Austausch ab. Wenn das Objekt spurlos verschwindet, verlieren auch die europäischen Forscher die Möglichkeit, **gemeinsam** an der Geschichte zu arbeiten. Das nützt am Ende weder der Gemeinschaft noch der globalen Wissenschaft.",
+        "Allerdings setzt dieses Modell voraus, dass beide Seiten harte Bedingungen und genaue Regeln für Transport und Pflege aushandeln. Wenn diese Verträge auf Augenhöhe geschlossen werden, respektieren sie den Willen der Herkunft und sichern gleichzeitig den Erhalt. **Somit** ist dieses Modell zwar komplex, aber für die Zukunft am nachhaltigsten."
+      ],
+      "conditional": [
+        "Die Frage nach **Rückgabe** oder geteiltem Eigentum hängt vom konkreten Wunsch der Herkunftsgesellschaft und den konservatorischen Bedingungen ab. Wenn die Gemeinschaft ausdrücklich die vollständige Kontrolle fordert und die Infrastruktur besitzt, sollte das Museum diesen Wunsch ohne Zögern erfüllen. Fehlt es **hingegen** an sicheren Räumen, bietet die gemeinsame **Betreuung** einen guten Ausweg.",
+        "Man muss daher genau hinhören, welche Form der Wiedergutmachung von den Betroffenen als würdevoll empfunden wird. Wenn europäische Museen versuchen, ihre eigenen Sicherheitsstandards als Dogma aufzuzwingen, scheitert jede Zusammenarbeit. Stattdessen müssen die Wünsche der Herkunft der absolute Maßstab für alle Verträge sein.",
+        "**Somit** lässt sich kein allgemeines Schema auf alle Kulturgüter anwenden, da jeder Fall eine eigene Geschichte hat. Die Ehrlichkeit im Umgang mit der kolonialen Vergangenheit bestimmt, ob eine Lösung gelingt. Wenn Respekt und Vertrauen die Basis bilden, finden beide Seiten den richtigen Weg."
+      ]
+    }
+  }
+]

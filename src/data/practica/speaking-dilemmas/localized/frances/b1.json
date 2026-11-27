@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "central-or-quiet-flat",
+    "title": "Choisir son logement",
+    "prompt": "Deux appartements coûtent le même prix. L'un est proche du travail mais sur une rue bruyante. L'autre est calme mais ajoute quarante minutes de trajet. Où préfères-tu habiter ?",
+    "conditionalPrompt": "Explique quand tu choisirais chaque option avec un exemple concret.",
+    "options": [
+      {
+        "label": "Appartement central",
+        "description": "Aller au travail à pied en dix minutes et accepter le bruit de la rue."
+      },
+      {
+        "label": "Appartement calme",
+        "description": "Profiter d'un logement tranquille et prendre deux bus pour aller travailler."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le quartier", "zone géographique d'une ville", "J'aime beaucoup l'ambiance de ce quartier."],
+        ["le trajet", "déplacement entre deux lieux", "Mon trajet quotidien dure trente minutes."],
+        ["le bruit", "son désagréable ou fort", "Il y a trop de bruit dans cette rue."],
+        ["le confort", "état de bien-être matériel", "Ce nouvel appartement offre un grand confort."]
+      ],
+      "phrasalVerbs": [
+        ["se rendre à", "aller vers un lieu", "Je me rends à mon travail en vélo."],
+        ["se lever tôt", "sortir du lit de bonne heure", "Je dois me lever tôt pour éviter les bouchons."],
+        ["faire attention à", "être vigilant envers quelque chose", "Il faut faire attention au bruit la nuit."],
+        ["avoir besoin de", "nécessiter quelque chose", "J'ai besoin de calme pour bien dormir."]
+      ],
+      "adjectives": [
+        ["bruyant", "qui fait beaucoup de bruit", "Cet appartement est trop bruyant pour moi."],
+        ["calme", "qui est tranquille et silencieux", "Le quartier est très calme le soir."],
+        ["fatigant", "qui cause de la fatigue", "Ce long trajet devient vraiment fatigant."],
+        ["pratique", "qui est utile et facile à utiliser", "Ce logement est très pratique pour travailler."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "Le loyer est bas, en revanche le quartier est bruyant."],
+        ["par contre", "pour exprimer un contraste", "C'est loin, par contre le trajet est agréable."],
+        ["c'est pourquoi", "pour introduire une conséquence", "Le quartier est calme, c'est pourquoi je dors bien."],
+        ["d'ailleurs", "pour ajouter une information", "Le bus est rapide, d'ailleurs il passe souvent."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis sans hésiter l'appartement situé dans le centre-ville. Aller au travail à pied en dix minutes est un avantage énorme pour moi.",
+        "Je préfère accepter **le bruit** de la rue pour gagner du temps chaque matin. C'est très **pratique** de ne pas dépendre des transports en commun.",
+        "Si je travaille beaucoup, je choisis le centre. Par exemple, quand j'ai des dossiers urgents, je préfère dormir plus longtemps le matin."
+      ],
+      "b": [
+        "Je préfère habiter dans l'appartement **calme**, même si **le trajet** est plus long. Le silence est essentiel pour mon bien-être après une journée de travail.",
+        "Je prends deux bus pour me rendre au bureau, mais je peux lire pendant **le trajet**. C'est un moment de détente avant d'arriver chez moi.",
+        "Si j'ai besoin de repos, je choisis le **calme**. Par exemple, après une semaine stressante, je préfère habiter loin du bruit de la ville."
+      ],
+      "conditional": [
+        "Le choix dépend vraiment de mon rythme de vie actuel et de mes priorités. Il faut peser le pour et le contre avant de décider.",
+        "Si je suis très occupé, le centre est idéal. **En revanche**, si je cherche la tranquillité, le **calme** est préférable pour ma santé mentale.",
+        "Par exemple, un étudiant choisira le centre pour la proximité. **Par contre**, une famille préférera le **calme** pour que les enfants dorment bien."
+      ]
+    }
+  },
+  {
+    "slug": "bus-pass-or-bike-at-work",
+    "title": "Aller au travail",
+    "prompt": "Ton lieu de travail est à cinq kilomètres. Préfères-tu acheter un abonnement de bus mensuel ou faire du vélo la plupart du temps ?",
+    "conditionalPrompt": "Explique quand tu choisirais chaque option avec un exemple concret.",
+    "options": [
+      {
+        "label": "Abonnement de bus",
+        "description": "Utiliser le bus par tous les temps et payer un prix fixe."
+      },
+      {
+        "label": "Vélo personnel",
+        "description": "Utiliser ton propre vélo et choisir un itinéraire avec moins de circulation."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le transport", "moyen de déplacement", "Le transport en commun est très efficace ici."],
+        ["la météo", "état du temps qu'il fait", "La météo est mauvaise, il pleut beaucoup."],
+        ["le trafic", "circulation des véhicules", "Le trafic est dense aux heures de pointe."],
+        ["le budget", "somme d'argent disponible", "Je dois respecter mon budget chaque mois."]
+      ],
+      "phrasalVerbs": [
+        ["prendre le bus", "utiliser le service de bus", "Je prends le bus tous les matins."],
+        ["faire du vélo", "utiliser un vélo pour se déplacer", "J'aime faire du vélo dans le parc."],
+        ["s'habituer à", "s'adapter à une situation", "Il faut s'habituer à la circulation urbaine."],
+        ["se déplacer", "aller d'un endroit à un autre", "Je me déplace toujours en vélo en ville."]
+      ],
+      "adjectives": [
+        ["mensuel", "qui arrive tous les mois", "J'ai acheté mon abonnement mensuel hier."],
+        ["fixe", "qui ne change pas", "Le prix de ce ticket est fixe."],
+        ["dangereux", "qui présente un risque", "Faire du vélo ici est parfois dangereux."],
+        ["rapide", "qui va vite", "Le bus est très rapide le matin."]
+      ],
+      "connectors": [
+        ["cependant", "pour marquer une restriction", "Le vélo est sain, cependant il faut faire attention."],
+        ["donc", "pour exprimer une conclusion", "Il pleut, donc je prends le bus aujourd'hui."],
+        ["en fait", "pour préciser une pensée", "En fait, le vélo est plus rapide que le bus."],
+        ["par conséquent", "pour introduire un résultat", "Le bus est cher, par conséquent je choisis le vélo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis l'abonnement de bus pour aller au travail tous les jours. C'est une solution très simple qui me permet de voyager sans stress.",
+        "Je peux utiliser le bus par tous les temps, même quand il pleut beaucoup. Le prix est **fixe**, **donc** je gère mieux mon budget **mensuel**.",
+        "Si **la météo** est mauvaise, je choisis le bus. Par exemple, en hiver, je préfère rester au chaud dans le bus plutôt que de pédaler."
+      ],
+      "b": [
+        "Je préfère **faire du vélo** pour me rendre au bureau chaque matin. C'est un excellent moyen de **se déplacer** sans dépendre des horaires de transport.",
+        "Je choisis un itinéraire avec moins de **trafic** pour éviter les voitures. C'est beaucoup plus agréable de rouler tranquillement dans les petites rues.",
+        "Si la **météo** est clémente, je choisis le vélo. Par exemple, au printemps, c'est très plaisant de traverser le parc pour aller au travail."
+      ],
+      "conditional": [
+        "Le choix dépend surtout de **la météo** et de mon envie de faire du sport. Chaque option a ses avantages selon les circonstances quotidiennes.",
+        "Si je suis pressé, le bus est plus fiable. En revanche, si je veux être actif, le vélo est une meilleure solution pour moi.",
+        "Par exemple, pour un trajet court, le vélo est parfait. Par contre, s'il fait très froid, le bus est indispensable pour arriver au travail."
+      ]
+    }
+  },
+  {
+    "slug": "fixed-or-open-trip",
+    "title": "Un week-end organisé ou improvisé ?",
+    "prompt": "Vous partez en week-end avec des amis dans une nouvelle ville. Préférez-vous réserver les activités principales à l'avance ou laisser le programme libre ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple concret.",
+    "options": [
+      {
+        "label": "Activités fixées",
+        "description": "Réserver deux activités majeures et fixer des heures de rendez-vous."
+      },
+      {
+        "label": "Week-end libre",
+        "description": "Ne rien prévoir et décider des visites une fois sur place."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le planning", "programme détaillé des activités prévues.", "J'ai déjà préparé le planning pour samedi matin."],
+        ["la contrainte", "ce qui limite la liberté ou le choix.", "C'est une contrainte de devoir se lever si tôt."],
+        ["la flexibilité", "capacité à s'adapter facilement aux changements.", "J'aime garder de la flexibilité pendant mes voyages."],
+        ["le séjour", "période passée dans un lieu.", "Nous avons passé un séjour inoubliable à Lyon."]
+      ],
+      "phrasalVerbs": [
+        ["se mettre d'accord", "arriver à une décision commune.", "Nous devons nous mettre d'accord sur le restaurant."],
+        ["s'y prendre", "agir d'une certaine manière pour faire quelque chose.", "Il faut s'y prendre à l'avance pour avoir des billets."],
+        ["se rendre compte", "devenir conscient de quelque chose.", "Je me suis rendu compte que nous étions en retard."],
+        ["se laisser porter", "suivre le mouvement sans planifier.", "En vacances, j'aime simplement me laisser porter."]
+      ],
+      "adjectives": [
+        ["imprévu", "qui n'était pas prévu ou attendu.", "Un changement imprévu a modifié notre itinéraire."],
+        ["stressant", "qui provoque de l'anxiété ou de la tension.", "Organiser ce voyage était un peu stressant."],
+        ["spontané", "qui agit sans réflexion préalable.", "Il est très spontané et adore les surprises."],
+        ["organisé", "qui est bien structuré ou méthodique.", "Elle est très organisée avec ses documents."]
+      ],
+      "connectors": [
+        ["en revanche", "exprime une opposition.", "J'aime planifier ; en revanche, mon ami préfère improviser."],
+        ["par conséquent", "exprime une conséquence logique.", "Le train est annulé ; par conséquent, nous restons ici."],
+        ["d'ailleurs", "ajoute une information supplémentaire.", "Il fait beau ; d'ailleurs, nous irons au parc."],
+        ["sinon", "exprime une alternative ou une condition négative.", "Il faut partir maintenant, sinon nous raterons le bus."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère largement réserver les activités principales à l'avance. Cela évite le stress de chercher des billets ou des places disponibles au dernier moment.",
+        "Avec un planning bien **organisé**, nous ne perdons pas de temps inutilement. Nous pouvons ainsi profiter pleinement de chaque visite sans aucune contrainte logistique.",
+        "Par exemple, pour visiter un musée populaire, il est indispensable de **s'y prendre** tôt. **Sinon**, nous risquons de ne pas pouvoir entrer le jour même."
+      ],
+      "b": [
+        "Pour moi, le plus important est de garder le week-end totalement libre. Je déteste avoir des horaires fixes quand je suis en vacances avec mes amis.",
+        "Nous préférons nous laisser porter par nos envies du moment. C'est beaucoup plus **spontané** et cela permet de découvrir des lieux imprévus très agréables.",
+        "Par exemple, si nous trouvons un café charmant, nous pouvons y rester des heures. Nous n'avons pas besoin de courir après un planning trop rigide."
+      ],
+      "conditional": [
+        "Je choisirais les activités fixées si nous visitons une grande capitale très touristique. Dans ce cas, **la flexibilité** devient difficile à gérer sans réservation préalable.",
+        "**En revanche**, je préfère laisser le week-end libre si nous allons dans une petite ville calme. Il est alors facile de se décider sur place.",
+        "Par exemple, à Paris, je réserve la tour Eiffel, mais à la campagne, je préfère simplement me laisser porter par les découvertes du moment."
+      ]
+    }
+  },
+  {
+    "slug": "group-trip-room-sharing",
+    "title": "Partager sa chambre ou payer plus ?",
+    "prompt": "Votre groupe part en voyage pour deux nuits. Partager une chambre réduit les coûts, mais les rythmes de sommeil diffèrent. Que choisissez-vous ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple concret.",
+    "options": [
+      {
+        "label": "Partage de chambre",
+        "description": "Économiser de l'argent et établir des règles de calme."
+      },
+      {
+        "label": "Chambre individuelle",
+        "description": "Payer plus cher pour avoir son intimité et son propre rythme."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le budget", "somme d'argent disponible pour une dépense.", "Nous devons respecter notre budget pour ce voyage."],
+        ["l'intimité", "état de ce qui est privé et personnel.", "J'ai besoin d'un peu d'intimité après une longue journée."],
+        ["le rythme", "vitesse ou cadence de vie habituelle.", "Nous n'avons pas le même rythme de sommeil."],
+        ["le confort", "état de bien-être physique.", "Ce nouvel hôtel offre un confort exceptionnel."]
+      ],
+      "phrasalVerbs": [
+        ["se coucher", "aller au lit pour dormir.", "Je préfère me coucher tôt pour être en forme."],
+        ["se lever", "sortir du lit le matin.", "Il aime se lever tard pendant le week-end."],
+        ["faire des économies", "dépenser moins d'argent.", "Nous voulons faire des économies sur le logement."],
+        ["s'entendre", "avoir de bonnes relations avec quelqu'un.", "Nous nous entendons très bien malgré nos différences."]
+      ],
+      "adjectives": [
+        ["disponible", "qui est libre ou accessible.", "La chambre simple n'est plus disponible ce soir."],
+        ["bruyant", "qui fait beaucoup de bruit.", "Ce quartier est trop bruyant pour bien dormir."],
+        ["économique", "qui permet de dépenser peu d'argent.", "C'est une solution très économique pour les étudiants."],
+        ["fatigué", "qui a besoin de repos.", "Je suis trop fatigué pour sortir ce soir."]
+      ],
+      "connectors": [
+        ["cependant", "marque une opposition ou une réserve.", "C'est moins cher ; cependant, c'est moins confortable."],
+        ["donc", "exprime une conclusion logique.", "Il est tard, donc nous allons nous coucher."],
+        ["par contre", "introduit une opposition marquée.", "J'aime le calme ; par contre, il aime la musique."],
+        ["en effet", "confirme ou explique une idée précédente.", "C'est une bonne idée ; en effet, cela nous aidera."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis de partager la chambre pour **faire des économies** importantes. C'est une excellente solution pour respecter notre budget global de voyage.",
+        "**Cependant**, il faut se mettre d'accord sur des règles de calme. Si nous communiquons bien, nous pouvons éviter les problèmes de sommeil.",
+        "Par exemple, nous pouvons décider que la lumière s'éteint à minuit. Cela permet à tout le monde de se reposer sans conflit inutile."
+      ],
+      "b": [
+        "Je préfère payer plus cher pour avoir ma propre chambre. **L'intimité** est essentielle pour moi, surtout quand je suis **fatigué** après une longue journée.",
+        "Chacun a son propre rythme et je ne veux pas déranger les autres. C'est **donc** plus simple d'avoir mon espace personnel pour dormir.",
+        "Par exemple, si je veux me lever très tôt pour travailler, je ne veux pas réveiller mes amis. C'est un confort qui vaut bien le prix."
+      ],
+      "conditional": [
+        "Je choisirais de partager la chambre si je voyage avec mon meilleur ami. **En effet**, nous nous entendons très bien et nous avons des habitudes similaires.",
+        "**Par contre**, je choisirais une chambre individuelle si je pars avec des collègues. Je préfère avoir mon espace privé pour me détendre tranquillement.",
+        "Par exemple, lors d'un séminaire professionnel, je prends toujours une chambre seule. Cela me permet de rester concentré et en forme pour le lendemain."
+      ]
+    }
+  },
+  {
+    "slug": "volunteer-or-buy-a-festival-ticket",
+    "title": "Bénévolat ou billet de festival",
+    "prompt": "Un festival de musique propose l'entrée gratuite aux personnes qui travaillent pendant trois heures. Préfères-tu faire du bénévolat ou payer ton billet pour profiter de toute la journée en tant que visiteur ?",
+    "conditionalPrompt": "Explique quand tu choisirais chaque option et donne un exemple.",
+    "options": [
+      {
+        "label": "Faire du bénévolat",
+        "description": "Aider à l'entrée l'après-midi et voir quelques concerts."
+      },
+      {
+        "label": "Payer son billet",
+        "description": "Payer pour choisir exactement ce que tu veux voir."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["bénévolat", "activité non rémunérée au service d'une organisation", "Le bénévolat est une excellente façon de découvrir le festival."],
+        ["créneau", "période de temps réservée pour une tâche", "J'ai choisi un créneau de trois heures pour travailler."],
+        ["concert", "représentation musicale publique", "Ce concert était vraiment incroyable avec une ambiance géniale."],
+        ["budget", "somme d'argent disponible pour une dépense", "Mon budget est limité donc je cherche des solutions économiques."]
+      ],
+      "phrasalVerbs": [
+        ["s'inscrire à", "s'enregistrer pour participer", "Je vais m'inscrire à la mission dès demain matin."],
+        ["se rendre à", "aller dans un lieu", "Il faut se rendre à l'accueil pour récupérer le badge."],
+        ["s'occuper de", "prendre en charge une tâche", "Je peux m'occuper de l'entrée pendant tout l'après-midi."],
+        ["se détendre avec", "se relaxer en utilisant quelque chose", "Je veux me détendre avec mes amis devant la scène."]
+      ],
+      "adjectives": [
+        ["gratuit", "qui ne coûte rien", "L'accès au site est gratuit pour tous les bénévoles."],
+        ["épuisant", "qui fatigue beaucoup", "Travailler sous le soleil peut devenir assez épuisant."],
+        ["flexible", "qui peut s'adapter facilement", "Avoir un emploi du temps flexible est très pratique."],
+        ["attendu", "que l'on espère voir", "Ce groupe est très attendu par tous les fans."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "Le travail est dur, en revanche l'entrée est offerte."],
+        ["par conséquent", "pour introduire une conséquence", "J'ai peu d'argent, par conséquent je préfère travailler."],
+        ["d'ailleurs", "pour ajouter une information", "C'est une bonne expérience, d'ailleurs j'ai rencontré du monde."],
+        ["sinon", "pour présenter une alternative", "Je peux travailler, sinon je paierai mon billet complet."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère faire du **bénévolat** pour ce festival de musique. C'est une opportunité idéale pour économiser de l'argent tout en participant activement à l'événement.",
+        "Je vais m'inscrire à un **créneau** de trois heures l'après-midi. Cela me permet de voir quelques concerts gratuits après avoir terminé mes tâches.",
+        "C'est un choix intelligent car le **budget** est limité. **En revanche**, je reste disponible pour profiter de la soirée avec mes amis."
+      ],
+      "b": [
+        "Je préfère payer mon billet pour profiter pleinement de la journée. Je veux choisir exactement les artistes que je souhaite voir sans aucune contrainte.",
+        "Travailler pendant le festival semble assez **épuisant** pour moi. **Par conséquent**, je préfère dépenser un peu d'argent pour rester totalement libre.",
+        "**D'ailleurs**, je peux me rendre à tous les concerts sans stress. C'est la meilleure solution pour passer un moment vraiment agréable et relaxant."
+      ],
+      "conditional": [
+        "Je choisis le **bénévolat** si je veux économiser ou rencontrer des gens. Par exemple, si je suis seul, c'est parfait pour discuter.",
+        "**Sinon**, je paie mon billet si je suis avec des amis. Si nous voulons voir un groupe très **attendu**, nous devons être libres.",
+        "Il faut donc évaluer ses priorités avant de décider. Si le programme est chargé, le billet est préférable pour ne rien rater."
+      ]
+    }
+  },
+  {
+    "slug": "mend-or-replace-headphones",
+    "title": "Réparer ou remplacer un casque",
+    "prompt": "Un côté de ton casque audio ne fonctionne plus. Un atelier peut essayer de le réparer, ou tu peux acheter une nouvelle paire. Que ferais-tu ?",
+    "conditionalPrompt": "Explique quand tu choisirais chaque option et donne un exemple.",
+    "options": [
+      {
+        "label": "Faire réparer",
+        "description": "Payer une inspection et réparer si le problème est simple."
+      },
+      {
+        "label": "Acheter neuf",
+        "description": "Acheter immédiatement et recycler l'ancien casque."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["panne", "dysfonctionnement d'un appareil", "La panne de mon casque est arrivée soudainement ce matin."],
+        ["atelier", "lieu où l'on répare des objets", "J'ai déposé mon appareil dans un petit atelier spécialisé."],
+        ["devis", "estimation du coût d'une réparation", "Le technicien m'a envoyé un devis pour la réparation."],
+        ["matériel", "ensemble d'objets ou d'équipements", "Ce matériel audio est de très grande qualité sonore."]
+      ],
+      "phrasalVerbs": [
+        ["se débarrasser de", "jeter quelque chose d'inutile", "Il faut se débarrasser de ce vieux câble cassé."],
+        ["se renseigner sur", "chercher des informations", "Je vais me renseigner sur le prix des réparations."],
+        ["se servir de", "utiliser un objet", "Je ne peux plus me servir de mon casque actuel."],
+        ["se tourner vers", "choisir une autre option", "Je vais me tourner vers un modèle plus récent."]
+      ],
+      "adjectives": [
+        ["défectueux", "qui ne fonctionne pas bien", "Ce produit est défectueux, je dois le ramener au magasin."],
+        ["coûteux", "qui demande beaucoup d'argent", "La réparation est parfois plus coûteuse qu'un achat neuf."],
+        ["durable", "qui dure longtemps", "Je cherche un appareil plus durable pour le futur."],
+        ["pratique", "facile à utiliser", "Ce nouveau casque sans fil est vraiment très pratique."]
+      ],
+      "connectors": [
+        ["toutefois", "pour introduire une réserve", "La réparation est écologique, toutefois elle prend du temps."],
+        ["par contre", "pour marquer une opposition", "Le neuf est cher, par contre il est garanti."],
+        ["en effet", "pour confirmer une explication", "C'est un bon choix, en effet le son est excellent."],
+        ["ainsi", "pour introduire une conséquence", "J'ai réparé l'objet, ainsi j'ai évité de polluer."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère faire réparer mon casque audio. C'est une solution plus **durable** et écologique que d'acheter un nouveau **matériel** inutilement.",
+        "Je vais me renseigner sur le prix du **devis** dans un **atelier**. Si la réparation n'est pas trop coûteuse, je choisis cette option.",
+        "**Toutefois**, si le problème est complexe, je devrai changer d'avis. C'est une démarche responsable pour éviter de gaspiller des ressources."
+      ],
+      "b": [
+        "Je préfère acheter une nouvelle paire immédiatement. C'est souvent plus rapide et **pratique** quand on a besoin de son casque tous les jours.",
+        "**Par contre**, je vais recycler l'ancien appareil **défectueux** correctement. Je ne veux pas le jeter dans une poubelle classique par négligence.",
+        "**En effet**, le temps perdu à attendre une réparation est précieux. Je préfère investir dans un modèle moderne avec une garantie complète."
+      ],
+      "conditional": [
+        "Je choisis la réparation si le casque est cher. Par exemple, si c'est un modèle professionnel, cela vaut vraiment le coup.",
+        "Sinon, je préfère le neuf si le casque est bon marché. Si la réparation coûte presque le prix du neuf, c'est inutile.",
+        "**Ainsi**, je décide selon la valeur réelle de l'objet. Il faut toujours comparer les coûts avant de prendre une décision finale."
+      ]
+    }
+  },
+  {
+    "slug": "weekly-budget-or-spending-log",
+    "title": "Gérer son budget",
+    "prompt": "Tu veux économiser pour un voyage. Préfères-tu fixer un budget hebdomadaire pour la nourriture et les loisirs, ou noter chaque achat pendant un mois avant de décider quoi changer ?",
+    "conditionalPrompt": "Explique quand tu choisirais chaque option et donne un exemple.",
+    "options": [
+      {
+        "label": "Budget hebdomadaire",
+        "description": "Décider combien tu peux dépenser dans chaque catégorie avant le début de la semaine."
+      },
+      {
+        "label": "Suivi des dépenses",
+        "description": "Noter tout ce que tu achètes, puis chercher des postes de dépenses à réduire."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["budget", "somme d'argent allouée à une dépense", "J'ai établi un budget serré pour mes vacances."],
+        ["dépense", "action de dépenser de l'argent", "Mes dépenses augmentent beaucoup à la fin du mois."],
+        ["économie", "action de dépargner de l'argent", "Faire des économies demande une grande discipline personnelle."],
+        ["achat", "action d'acquérir quelque chose", "Chaque achat doit être réfléchi pour éviter le gaspillage."]
+      ],
+      "phrasalVerbs": [
+        ["faire attention", "être vigilant", "Il faut faire attention à ne pas trop dépenser."],
+        ["se priver", "s'interdire quelque chose", "Je ne veux pas me priver de sorties ce mois-ci."],
+        ["mettre de côté", "épargner de l'argent", "J'essaie de mettre de côté un peu d'argent chaque semaine."],
+        ["s'en sortir", "réussir à gérer ses ressources", "Avec ce petit salaire, c'est difficile de s'en sortir."]
+      ],
+      "adjectives": [
+        ["hebdomadaire", "qui se produit chaque semaine", "Mon rapport hebdomadaire est prêt pour la réunion."],
+        ["raisonnable", "qui est modéré et sensé", "Il faut rester raisonnable face aux tentations du magasin."],
+        ["précis", "qui est exact et détaillé", "J'ai besoin d'un calcul précis pour mon projet."],
+        ["utile", "qui sert à quelque chose", "Cette application est très utile pour suivre mes comptes."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "J'aime sortir, en revanche je surveille mes comptes."],
+        ["par conséquent", "pour exprimer une conséquence", "J'ai trop dépensé, par conséquent je reste chez moi."],
+        ["d'ailleurs", "pour ajouter une information", "C'est trop cher, d'ailleurs je n'en ai pas besoin."],
+        ["tout d'abord", "pour commencer une énumération", "Tout d'abord, il faut lister toutes les dépenses fixes."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère fixer un **budget** **hebdomadaire** pour mes loisirs. C'est une méthode simple pour contrôler mes dépenses sans stresser.",
+        "Je sais exactement combien je peux dépenser chaque semaine. Cela m'aide à **faire attention** à mes achats inutiles au quotidien.",
+        "Si je veux partir en voyage rapidement, cette méthode est très **utile**. **Par conséquent**, je réussis à **mettre de côté** régulièrement."
+      ],
+      "b": [
+        "Je préfère noter chaque **achat** pendant un mois complet. C'est la meilleure façon de voir où part mon argent réellement.",
+        "Je regarde mes habitudes et je cherche des postes de dépenses à réduire. **D'ailleurs**, je découvre souvent des frais inutiles.",
+        "Si je ne connais pas mes habitudes, cette méthode est nécessaire. **En revanche**, cela demande beaucoup de temps chaque soir."
+      ],
+      "conditional": [
+        "Je choisis le **budget** **hebdomadaire** si je veux une discipline immédiate. Par exemple, je limite mes sorties à cinquante euros par semaine.",
+        "Je choisis le suivi des dépenses si je veux comprendre mes erreurs. Par exemple, je réalise que je **dépense** trop en cafés.",
+        "**Tout d'abord**, il faut analyser ses besoins. **Par conséquent**, le choix dépendra surtout de ton objectif financier actuel."
+      ]
+    }
+  },
+  {
+    "slug": "second-hand-or-fewer-new-clothes",
+    "title": "Renouveler sa garde-robe",
+    "prompt": "Tu veux dépenser moins en vêtements cette année. Préfères-tu acheter principalement de seconde main ou acheter quelques nouveaux articles que tu comptes porter plus longtemps ?",
+    "conditionalPrompt": "Explique quand tu choisirais chaque option et donne un exemple.",
+    "options": [
+      {
+        "label": "Seconde main",
+        "description": "Chercher des vêtements d'occasion et vérifier leur état avant d'acheter."
+      },
+      {
+        "label": "Qualité durable",
+        "description": "Acheter un petit nombre de pièces neuves qui vont avec ce que tu possèdes déjà."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["vêtement", "article que l'on porte sur soi", "J'ai trié mes vêtements pour donner ceux inutilisés."],
+        ["occasion", "objet déjà utilisé par quelqu'un d'autre", "J'ai trouvé ce manteau d'occasion dans une friperie."],
+        ["qualité", "degré de valeur d'un objet", "Je préfère payer plus cher pour une meilleure qualité."],
+        ["garde-robe", "ensemble des vêtements d'une personne", "Ma garde-robe est trop pleine, je dois faire du tri."]
+      ],
+      "phrasalVerbs": [
+        ["aller avec", "être assorti à quelque chose", "Ce pantalon va bien avec ma chemise bleue."],
+        ["faire des affaires", "trouver des objets à bon prix", "On peut faire des affaires incroyables en ligne."],
+        ["tenir le coup", "résister à l'usure", "Ce vieux pull tient le coup depuis plusieurs années."],
+        ["se débarrasser", "jeter ou donner ce qu'on n'utilise plus", "Il est temps de se débarrasser de ces vieilles chaussures."]
+      ],
+      "adjectives": [
+        ["durable", "qui dure longtemps", "Il faut privilégier des matériaux durables et solides."],
+        ["usé", "qui est abîmé par l'usage", "Ce jean est trop usé pour être porté au travail."],
+        ["neuf", "qui n'a jamais été utilisé", "J'ai acheté un pantalon neuf pour mon entretien."],
+        ["accessible", "qui est facile à obtenir ou payer", "Ces prix sont très accessibles pour les étudiants."]
+      ],
+      "connectors": [
+        ["par contre", "pour marquer un contraste", "C'est joli, par contre c'est un peu trop cher."],
+        ["en effet", "pour confirmer une idée", "La qualité est bonne, en effet il durera longtemps."],
+        ["ainsi", "pour introduire une manière", "Il faut choisir des basiques, ainsi tout est assorti."],
+        ["de plus", "pour ajouter un argument", "C'est écologique, de plus c'est très économique."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère acheter principalement des vêtements de seconde main. C'est une excellente façon de renouveler mon style sans dépenser beaucoup.",
+        "Je cherche des pièces originales et je vérifie toujours leur état. **De plus**, je fais des économies importantes chaque mois.",
+        "Si je veux un look unique, cette option est idéale. **Par contre**, il faut parfois chercher longtemps pour trouver sa taille."
+      ],
+      "b": [
+        "Je préfère acheter quelques nouveaux articles de très bonne **qualité**. Je choisis des pièces classiques qui vont avec tout.",
+        "Je préfère avoir peu de vêtements mais qu'ils durent longtemps. **En effet**, c'est un investissement plus intelligent sur le long terme.",
+        "Si je veux une **garde-robe** minimaliste, cette option est parfaite. **Ainsi**, je ne perds plus de temps à choisir mes tenues."
+      ],
+      "conditional": [
+        "Je choisis la seconde main si mon budget est vraiment limité. Par exemple, j'achète des pulls en laine dans des friperies.",
+        "Je choisis la **qualité** **durable** si je veux éviter de racheter souvent. Par exemple, j'achète un manteau **neuf** qui tient le coup.",
+        "**De plus**, le choix dépend de tes priorités. Par conséquent, réfléchis bien à ce que tu possèdes déjà dans ton armoire."
+      ]
+    }
+  },
+  {
+    "slug": "one-big-or-small-neighbour-events",
+    "title": "Fête de quartier : une grande ou plusieurs petites ?",
+    "prompt": "Votre rue a un petit budget pour organiser des rencontres. Préférez-vous une grande fête ou trois petits événements ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Une grande fête",
+        "description": "Dépenser le budget pour la nourriture et la musique."
+      },
+      {
+        "label": "Trois petits événements",
+        "description": "Proposer des activités simples chaque mois."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["voisinage", "l'ensemble des voisins", "Le voisinage est très calme dans cette rue."],
+        ["budget", "somme d'argent disponible", "Nous avons un budget limité pour ce projet."],
+        ["ambiance", "atmosphère d'un lieu", "Il y a une excellente ambiance à cette fête."],
+        ["convivialité", "caractère amical et chaleureux", "La convivialité est importante pour bien s'entendre."]
+      ],
+      "phrasalVerbs": [
+        ["faire connaissance", "rencontrer quelqu'un pour la première fois", "J'aimerais faire connaissance avec mes nouveaux voisins."],
+        ["se réunir", "se rassembler dans un lieu", "Nous nous réunissons souvent le dimanche après-midi."],
+        ["s'entendre bien", "avoir de bonnes relations", "Je m'entends bien avec tout le monde ici."],
+        ["passer un moment", "vivre une période de temps", "Nous allons passer un bon moment ensemble ce soir."]
+      ],
+      "adjectives": [
+        ["festif", "qui concerne la fête", "Le quartier a pris un air très festif."],
+        ["abordable", "qui n'est pas trop cher", "Ce restaurant est très abordable pour les étudiants."],
+        ["régulier", "qui arrive souvent", "Il a un rythme de vie très régulier."],
+        ["chaleureux", "accueillant et sympathique", "L'accueil des voisins a été très chaleureux."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "J'aime le calme, en revanche j'aime aussi sortir."],
+        ["par conséquent", "pour exprimer une conséquence", "Il pleut, par conséquent nous restons à l'intérieur."],
+        ["d'une part", "pour introduire le premier point", "D'une part, c'est utile, d'autre part c'est cher."],
+        ["par ailleurs", "pour ajouter une information", "C'est un bon choix, par ailleurs c'est gratuit."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisirais sans hésiter la grande fête annuelle pour tout le quartier. C'est le meilleur moyen de créer une **ambiance** festive et de rassembler tout le monde.",
+        "Avec ce **budget**, nous pouvons louer une sono et acheter de la nourriture de qualité. Cela permet de vraiment **faire connaissance** avec les voisins que l'on croise rarement.",
+        "Si nous voulons marquer les esprits, une seule grande journée est plus efficace. Par exemple, un barbecue géant en juin est toujours un succès garanti."
+      ],
+      "b": [
+        "Je préfère organiser trois petits événements tout au long de l'année. Cela permet de maintenir un lien **régulier** et de renforcer la **convivialité** entre nous.",
+        "Avec des activités simples, comme un goûter ou un atelier, les gens se sentent plus à l'aise. C'est une approche plus **abordable** et moins stressante pour les organisateurs.",
+        "Si les voisins sont occupés, ils peuvent au moins venir à l'une des trois dates. Par exemple, un café le samedi matin est parfait pour discuter tranquillement."
+      ],
+      "conditional": [
+        "Si le quartier est nouveau, je choisis la grande fête pour créer un lien fort immédiatement. Par exemple, lors de l'arrivée de nouveaux habitants, c'est idéal.",
+        "**En revanche**, si les gens se connaissent déjà, je préfère les petits événements réguliers. Cela permet de garder le contact sans bloquer tout un week-end.",
+        "Tout dépend de la disponibilité des gens. Si tout le monde travaille beaucoup, des rencontres courtes et fréquentes sont souvent plus adaptées à la réalité."
+      ]
+    }
+  },
+  {
+    "slug": "extra-shifts-or-evening-course",
+    "title": "Plus d'argent ou une nouvelle formation ?",
+    "prompt": "Vous avez du temps libre après le travail. Préférez-vous faire des heures supplémentaires payées ou suivre un cours du soir ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Heures supplémentaires",
+        "description": "Gagner plus d'argent tout de suite."
+      },
+      {
+        "label": "Cours du soir",
+        "description": "Apprendre une nouvelle compétence pour plus tard."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["revenu", "argent gagné par le travail", "Mon revenu actuel ne suffit pas pour ce projet."],
+        ["compétence", "capacité acquise par l'expérience", "Il a développé une nouvelle compétence en informatique."],
+        ["perspectives", "possibilités pour l'avenir", "Ce travail offre de bonnes perspectives de carrière."],
+        ["emploi du temps", "organisation des heures", "Mon emploi du temps est très chargé cette semaine."]
+      ],
+      "phrasalVerbs": [
+        ["se lancer", "commencer une nouvelle activité", "Il a décidé de se lancer dans la photographie."],
+        ["mettre de côté", "économiser de l'argent", "Je mets de côté un peu d'argent chaque mois."],
+        ["se perfectionner", "améliorer ses connaissances", "Elle veut se perfectionner en anglais cette année."],
+        ["prendre du recul", "analyser une situation calmement", "Il faut prendre du recul sur ce problème."]
+      ],
+      "adjectives": [
+        ["rentable", "qui rapporte de l'argent", "Ce petit travail est très rentable pour moi."],
+        ["déterminant", "qui décide de l'avenir", "Ce cours sera déterminant pour mon futur métier."],
+        ["épuisant", "qui fatigue beaucoup", "Travailler le soir est parfois très épuisant."],
+        ["ambitieux", "qui veut réussir", "C'est un projet ambitieux mais très intéressant."]
+      ],
+      "connectors": [
+        ["toutefois", "pour marquer une nuance", "J'aime ce travail, toutefois il est difficile."],
+        ["en effet", "pour confirmer une idée", "C'est un bon choix, en effet c'est très utile."],
+        ["par contre", "pour opposer deux idées", "C'est pratique, par contre c'est un peu cher."],
+        ["ainsi", "pour illustrer une méthode", "Il travaille dur, ainsi il réussit ses examens."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis de faire des heures supplémentaires pour augmenter mon **revenu** immédiatement. C'est une solution très **rentable** quand on a des projets à court terme.",
+        "Travailler plus me permet de **mettre de côté** une somme importante pour mes vacances. C'est un choix pragmatique qui aide à gérer les dépenses imprévues.",
+        "Par exemple, si je veux acheter une nouvelle voiture, ces heures en plus sont nécessaires. C'est un effort temporaire pour un résultat concret et rapide."
+      ],
+      "b": [
+        "Je préfère m'inscrire à un cours du soir pour acquérir une nouvelle **compétence**. C'est un investissement sur le long terme pour améliorer mes **perspectives** professionnelles.",
+        "Apprendre quelque chose de nouveau est très stimulant. **En effet**, cela permet de **se perfectionner** et de ne pas rester bloqué dans la même routine.",
+        "Par exemple, suivre un cours de gestion m'aidera à changer de poste l'année prochaine. C'est un choix **ambitieux** qui prépare mon avenir."
+      ],
+      "conditional": [
+        "Si j'ai besoin d'un **revenu** immédiat pour payer une dette, je choisis les heures supplémentaires. C'est une nécessité qui passe avant la formation.",
+        "En revanche, si je veux **se perfectionner** pour changer de carrière, je privilégie le cours du soir. C'est le meilleur moyen d'améliorer mes **perspectives** professionnelles.",
+        "Tout dépend de mon **emploi du temps**. Si je suis disponible, je choisis la formation pour évoluer, sinon je choisis l'argent."
+      ]
+    }
+  },
+  {
+    "slug": "summer-shift-start-time",
+    "title": "Horaires d'été : flexibilité ou équipe unie ?",
+    "prompt": "Votre équipe veut éviter la chaleur de l'après-midi. Préférez-vous commencer tous plus tôt ou choisir vos horaires individuellement ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Horaires collectifs",
+        "description": "Tout le monde commence et finit plus tôt."
+      },
+      {
+        "label": "Horaires individuels",
+        "description": "Chacun choisit ses heures avec le manager."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["cohésion", "union des membres d'un groupe", "La cohésion d'équipe est essentielle pour réussir."],
+        ["contrainte", "obligation ou difficulté", "Chacun a des contraintes familiales différentes."],
+        ["productivité", "efficacité au travail", "La chaleur diminue beaucoup notre productivité."],
+        ["organisation", "manière de structurer le travail", "Une bonne organisation évite beaucoup de problèmes."]
+      ],
+      "phrasalVerbs": [
+        ["se mettre d'accord", "trouver un consensus", "Nous devons nous mettre d'accord sur les horaires."],
+        ["s'adapter à", "ajuster son comportement", "Il faut s'adapter à la chaleur de l'été."],
+        ["se relayer", "travailler à tour de rôle", "Nous pouvons nous relayer pour couvrir toute la journée."],
+        ["tenir compte de", "considérer un élément", "Il faut tenir compte de la fatigue de chacun."]
+      ],
+      "adjectives": [
+        ["flexible", "qui peut changer facilement", "Mon emploi du temps est très flexible cette semaine."],
+        ["commun", "partagé par tous", "Nous avons un objectif commun à atteindre."],
+        ["efficace", "qui produit un bon résultat", "Travailler le matin est souvent plus efficace."],
+        ["contraignant", "qui impose des limites", "Cet horaire est trop contraignant pour moi."]
+      ],
+      "connectors": [
+        ["au contraire", "pour marquer une opposition forte", "Il n'est pas fatigué, au contraire il est en forme."],
+        ["de même", "pour marquer une similitude", "Il travaille le matin, de même que ses collègues."],
+        ["par ailleurs", "pour ajouter un point", "C'est une bonne idée, par ailleurs c'est simple."],
+        ["en revanche", "pour opposer deux situations", "Le matin est calme, en revanche l'après-midi est bruyant."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère que toute l'équipe commence plus tôt pour éviter les heures les plus chaudes. Cela permet de garder une bonne **cohésion** et de travailler ensemble.",
+        "Quand tout le monde est présent aux mêmes heures, la communication est plus **efficace**. En effet, nous pouvons nous entraider et résoudre les problèmes rapidement.",
+        "Par exemple, finir à quatorze heures permet de profiter de l'après-midi. C'est une **organisation** simple qui convient à la majorité."
+      ],
+      "b": [
+        "Je choisis des horaires individuels pour mieux gérer mes contraintes personnelles. Chacun a des besoins différents, comme chercher les enfants ou éviter les transports.",
+        "Cette flexibilité permet à chacun d'être plus serein et donc plus productif. Il faut simplement **se mettre d'accord** avec le manager pour assurer la continuité.",
+        "Par exemple, si je préfère travailler très tôt et un collègue plus tard, nous pouvons nous relayer. C'est une solution moderne et respectueuse."
+      ],
+      "conditional": [
+        "Si nous avons beaucoup de projets collaboratifs, je choisis les horaires collectifs. La présence commune est indispensable pour avancer efficacement.",
+        "**En revanche**, si le travail est surtout individuel, la flexibilité est préférable. Chacun peut **s'adapter à** son rythme de vie sans gêner les autres.",
+        "Tout dépend de la nature du travail. Si nous devons être disponibles pour les clients, les horaires collectifs sont nécessaires pour éviter les erreurs."
+      ]
+    }
+  },
+  {
+    "slug": "sports-league-or-friendly-games",
+    "title": "Sport : compétition ou détente ?",
+    "prompt": "Votre groupe peut rejoindre une ligue amateur ou jouer des matchs amicaux. Qu'est-ce qui convient le mieux ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Ligue amateur",
+        "description": "Jouer avec des règles et des scores."
+      },
+      {
+        "label": "Matchs amicaux",
+        "description": "Changer d'équipe et jouer sans pression."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["compétition", "action de rivaliser", "Il aime beaucoup la compétition sportive."],
+        ["règlement", "ensemble des règles", "Il faut respecter le règlement du tournoi."],
+        ["détente", "moment de repos", "Le sport est un excellent moyen de détente."],
+        ["esprit", "état d'esprit ou mentalité", "Il faut garder un bon esprit d'équipe."]
+      ],
+      "phrasalVerbs": [
+        ["se donner à fond", "faire le maximum d'efforts", "Il faut se donner à fond pour gagner."],
+        ["prendre du plaisir", "s'amuser", "L'important est de prendre du plaisir en jouant."],
+        ["se mesurer à", "affronter quelqu'un", "J'aime me mesurer à des joueurs plus forts."],
+        ["s'inscrire à", "s'enregistrer pour une activité", "Nous allons nous inscrire à ce club de sport."]
+      ],
+      "adjectives": [
+        ["motivé", "qui a envie de faire quelque chose", "Toute l'équipe est très motivée ce dimanche."],
+        ["amical", "qui est basé sur l'amitié", "C'est un match amical sans aucun enjeu."],
+        ["exigeant", "qui demande beaucoup d'efforts", "Ce sport est très exigeant physiquement."],
+        ["décontracté", "qui est calme et sans stress", "L'ambiance est très décontractée dans ce groupe."]
+      ],
+      "connectors": [
+        ["par contre", "pour marquer une opposition", "C'est sérieux, par contre c'est très amusant."],
+        ["en effet", "pour confirmer une idée", "C'est un bon choix, en effet nous voulons progresser."],
+        ["au contraire", "pour marquer une opposition", "Il n'est pas stressé, au contraire il adore ça."],
+        ["ainsi", "pour exprimer une manière", "Il joue régulièrement, ainsi il progresse vite."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère rejoindre une ligue amateur pour avoir un cadre et des objectifs. La **compétition** motive tout le groupe à **se donner à fond** chaque semaine.",
+        "Avec des règles claires et des scores, nous pouvons mesurer nos progrès. C'est très stimulant de jouer contre d'autres équipes et de respecter le **règlement**.",
+        "Par exemple, avoir un match officiel le dimanche nous oblige à être réguliers. C'est idéal pour ceux qui veulent vraiment progresser."
+      ],
+      "b": [
+        "Je choisis les matchs amicaux pour privilégier la **détente** et le plaisir. C'est une approche plus décontractée qui permet à tout le monde de jouer sans pression.",
+        "Changer d'équipe chaque semaine permet de rencontrer plus de monde. **En effet**, cela évite les tensions et renforce l'**esprit** **amical** du groupe.",
+        "Par exemple, si quelqu'un est fatigué, il peut jouer moins intensément sans culpabiliser. C'est parfait pour s'amuser simplement."
+      ],
+      "conditional": [
+        "Si le groupe est composé de joueurs expérimentés, je choisis la ligue. La **compétition** est nécessaire pour maintenir leur niveau et leur intérêt.",
+        "En revanche, si le groupe est là pour se relaxer après le travail, les matchs amicaux sont bien meilleurs. La priorité est le plaisir, pas le score.",
+        "Tout dépend de l'objectif. Si nous voulons progresser techniquement, la ligue est utile. Si nous voulons juste passer un bon moment, les matchs amicaux suffisent."
+      ]
+    }
+  },
+  {
+    "slug": "library-room-bookings",
+    "title": "Salle de bibliothèque : réservation ou premier arrivé ?",
+    "prompt": "La bibliothèque a une grande salle d'étude. Faut-il réserver ou laisser les gens utiliser la salle selon l'ordre d'arrivée ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Réservation",
+        "description": "Réserver une heure à l'avance."
+      },
+      {
+        "label": "Premier arrivé",
+        "description": "Utiliser la salle immédiatement."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["créneau", "espace de temps disponible", "Il faut réserver un créneau pour étudier."],
+        ["organisation", "manière de gérer", "Cette organisation évite les conflits."],
+        ["priorité", "ce qui passe avant", "La priorité est donnée aux étudiants."],
+        ["disponibilité", "fait d'être libre", "Vérifiez la disponibilité de la salle en ligne."]
+      ],
+      "phrasalVerbs": [
+        ["s'organiser", "prévoir son emploi du temps", "Il faut s'organiser pour avoir une salle."],
+        ["prendre possession", "occuper un lieu", "Nous avons pris possession de la salle à dix heures."],
+        ["libérer", "laisser un lieu libre", "Il faut libérer la salle après une heure."],
+        ["se présenter", "arriver physiquement", "Il faut se présenter à l'accueil pour entrer."]
+      ],
+      "adjectives": [
+        ["disponible", "qui est libre", "La salle est disponible cet après-midi."],
+        ["efficace", "qui fonctionne bien", "Ce système de réservation est très efficace."],
+        ["imprévu", "qui n'est pas prévu", "J'ai un travail imprévu à terminer."],
+        ["équitable", "qui est juste pour tous", "C'est une solution équitable pour tout le monde."]
+      ],
+      "connectors": [
+        ["par conséquent", "pour exprimer une conséquence", "La salle est pleine, par conséquent nous attendons."],
+        ["en revanche", "pour marquer une opposition", "C'est pratique, en revanche c'est souvent complet."],
+        ["par ailleurs", "pour ajouter une information", "C'est gratuit, par ailleurs c'est très calme."],
+        ["au contraire", "pour marquer une opposition", "Il n'est pas occupé, au contraire il est libre."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère le système de réservation pour être sûr d'avoir une salle. C'est une **organisation** **efficace** qui évite de perdre du temps à chercher une place.",
+        "En réservant un **créneau**, on peut planifier son travail sereinement. **Par ailleurs**, cela garantit que la salle est **disponible** quand on en a besoin.",
+        "Par exemple, pour un projet de groupe important, la réservation est indispensable. C'est la seule façon d'être certain d'avoir l'espace nécessaire."
+      ],
+      "b": [
+        "Je choisis le système du premier arrivé pour plus de flexibilité. C'est idéal pour ceux qui ont des besoins imprévus et qui ne peuvent pas réserver à l'avance.",
+        "Cela permet d'utiliser la salle immédiatement si elle est libre. C'est une solution **équitable** qui donne une chance à tout le monde sans contrainte.",
+        "Par exemple, si je veux juste réviser une heure, je peux entrer sans formalités. C'est parfait pour les besoins spontanés."
+      ],
+      "conditional": [
+        "Si la bibliothèque est très fréquentée, je choisis la réservation. C'est nécessaire pour éviter les conflits et gérer le flux de personnes.",
+        "**En revanche**, si elle est peu utilisée, le système du premier arrivé est suffisant. C'est plus simple et moins contraignant pour les usagers.",
+        "Tout dépend de la demande. Si tout le monde veut la salle, la réservation est plus juste. Sinon, la liberté est préférable."
+      ]
+    }
+  },
+  {
+    "slug": "club-guest-or-equipment",
+    "title": "Club photo : invité ou matériel ?",
+    "prompt": "Le club photo a assez d'argent pour un invité professionnel ou du nouveau matériel. Que choisir ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Invité professionnel",
+        "description": "Une après-midi de conseils."
+      },
+      {
+        "label": "Nouveau matériel",
+        "description": "Pratiquer avec du matériel partagé."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["conseil", "recommandation utile", "Il m'a donné un très bon conseil technique."],
+        ["matériel", "ensemble des outils", "Le matériel de ce club est très moderne."],
+        ["progression", "fait de s'améliorer", "J'ai fait une grande progression en photo."],
+        ["budget", "argent disponible", "Nous devons gérer notre budget avec soin."]
+      ],
+      "phrasalVerbs": [
+        ["se perfectionner", "améliorer ses compétences", "Je veux me perfectionner dans le portrait."],
+        ["mettre en pratique", "utiliser ce qu'on a appris", "Il faut mettre en pratique ces conseils."],
+        ["faire appel à", "demander l'aide de quelqu'un", "Nous allons faire appel à un expert."],
+        ["se partager", "utiliser quelque chose à plusieurs", "Nous pouvons nous partager cet appareil photo."]
+      ],
+      "adjectives": [
+        ["professionnel", "qui est expert", "C'est un photographe professionnel très connu."],
+        ["pratique", "qui est utile", "Ce nouveau matériel est très pratique."],
+        ["instructif", "qui apprend quelque chose", "Cet après-midi a été très instructif."],
+        ["partagé", "utilisé par plusieurs", "C'est un espace partagé par tous les membres."]
+      ],
+      "connectors": [
+        ["en effet", "pour confirmer", "C'est utile, en effet cela aide beaucoup."],
+        ["par contre", "pour opposer", "C'est cher, par contre c'est de qualité."],
+        ["toutefois", "pour nuancer", "C'est une bonne idée, toutefois c'est limité."],
+        ["ainsi", "pour illustrer", "Il pratique, ainsi il apprend vite."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère inviter un **professionnel** pour une après-midi de conseils. C'est une occasion unique d'apprendre des techniques avancées directement d'un expert.",
+        "**En effet**, ses conseils seront très instructifs et nous aideront à progresser rapidement. C'est un investissement sur notre savoir-faire.",
+        "Par exemple, il peut nous montrer comment gérer la lumière. C'est une expérience très enrichissante qui vaut mieux que du **matériel**."
+      ],
+      "b": [
+        "Je choisis d'acheter du **matériel** que nous pouvons partager. C'est plus **pratique** pour s'entraîner régulièrement et **mettre en pratique** ce que nous apprenons.",
+        "Avec du bon équipement, tout le monde peut s'améliorer à son rythme. **Par contre**, un invité ne vient qu'une seule fois.",
+        "Par exemple, un nouvel objectif permet de faire de meilleures photos tout au long de l'année. C'est un choix très utile pour le club."
+      ],
+      "conditional": [
+        "Si les membres sont débutants, je choisis l'invité **professionnel**. Ils ont besoin de conseils pour bien commencer et éviter les erreurs.",
+        "En revanche, si les membres sont déjà avancés, le **matériel** est préférable. Ils savent déjà quoi faire et ont besoin d'outils pour progresser.",
+        "Tout dépend du niveau du club. S'il manque de connaissances, l'invité est prioritaire. S'il manque d'outils, le **matériel** est la solution."
+      ]
+    }
+  },
+  {
+    "slug": "listening-with-or-without-transcript",
+    "title": "Écoute de podcast : avec ou sans texte ?",
+    "prompt": "Vous pratiquez avec un podcast. Préférez-vous lire la transcription en écoutant ou écouter d'abord et lire après ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Lire en écoutant",
+        "description": "Suivre les mots écrits."
+      },
+      {
+        "label": "Écouter d'abord",
+        "description": "Vérifier le texte après."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["compréhension", "capacité à comprendre", "Ma compréhension orale s'améliore chaque jour."],
+        ["transcription", "texte écrit d'un audio", "La transcription aide à vérifier les mots."],
+        ["prononciation", "manière de dire les mots", "Sa prononciation est très claire."],
+        ["contexte", "situation globale", "Le contexte aide à comprendre le sens."]
+      ],
+      "phrasalVerbs": [
+        ["se concentrer sur", "porter toute son attention", "Il faut se concentrer sur le sens général."],
+        ["relever", "noter quelque chose", "J'ai relevé quelques mots difficiles."],
+        ["s'habituer à", "s'adapter à quelque chose", "Je m'habitue à la vitesse du podcast."],
+        ["vérifier", "contrôler l'exactitude", "Il faut vérifier le sens de ce mot."]
+      ],
+      "adjectives": [
+        ["efficace", "qui donne un bon résultat", "Cette méthode est très efficace pour apprendre."],
+        ["clair", "facile à comprendre", "Le message est très clair."],
+        ["difficile", "qui demande des efforts", "Ce podcast est un peu difficile pour moi."],
+        ["utile", "qui sert à quelque chose", "C'est un exercice très utile."]
+      ],
+      "connectors": [
+        ["en effet", "pour confirmer", "C'est vrai, en effet cela aide beaucoup."],
+        ["par contre", "pour opposer", "C'est utile, par contre c'est fatiguant."],
+        ["toutefois", "pour nuancer", "C'est une bonne méthode, toutefois elle est lente."],
+        ["ainsi", "pour illustrer", "Il écoute, ainsi il apprend les sons."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère lire la **transcription** en écoutant le podcast. C'est très **efficace** pour associer les sons aux mots écrits et améliorer ma **compréhension**.",
+        "**En effet**, cela permet de voir immédiatement comment les mots sont prononcés. C'est une méthode très **utile** pour les débutants.",
+        "Par exemple, si je ne comprends pas un mot, je le vois écrit et je peux **vérifier** son sens. C'est très rassurant."
+      ],
+      "b": [
+        "Je choisis d'écouter d'abord sans le texte pour tester ma **compréhension**. C'est un exercice plus **difficile** mais très formateur pour l'oreille.",
+        "Ensuite, je lis la **transcription** pour **vérifier** ce que j'ai compris. **Par contre**, il faut **se concentrer sur** le sens général avant tout.",
+        "Par exemple, après une première écoute, je note ce que j'ai compris. C'est **ainsi** que je progresse vraiment en autonomie."
+      ],
+      "conditional": [
+        "Si le podcast est très **difficile**, je lis la **transcription** en écoutant. Cela m'aide à ne pas me décourager et à apprendre de nouveaux mots.",
+        "En revanche, si le sujet est facile, j'écoute d'abord sans le texte. C'est le meilleur moyen de tester ma **compréhension** réelle.",
+        "Tout dépend de mon objectif. Si je veux apprendre le vocabulaire, je lis. Si je veux tester mon oreille, j'écoute d'abord."
+      ]
+    }
+  },
+  {
+    "slug": "peer-feedback-public-or-private",
+    "title": "Feedback : public ou privé ?",
+    "prompt": "Les étudiants font des présentations. Faut-il donner les commentaires devant tout le monde ou en privé ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option avec un exemple.",
+    "options": [
+      {
+        "label": "Feedback public",
+        "description": "Partager un commentaire utile."
+      },
+      {
+        "label": "Feedback privé",
+        "description": "Commentaires détaillés en tête-à-tête."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["présentation", "action de parler devant un groupe", "Sa présentation était très intéressante."],
+        ["commentaire", "avis ou remarque", "J'ai reçu un commentaire très positif."],
+        ["apprentissage", "processus pour apprendre", "L'apprentissage demande de la patience."],
+        ["confiance", "croyance en ses capacités", "Il a besoin de plus de confiance en lui."]
+      ],
+      "phrasalVerbs": [
+        ["s'améliorer", "devenir meilleur", "Il faut s'améliorer pour réussir."],
+        ["faire part de", "partager une information", "Je veux lui faire part de mon avis."],
+        ["se sentir à l'aise", "être confortable", "Il faut se sentir à l'aise pour parler."],
+        ["prendre en compte", "considérer une remarque", "Il faut prendre en compte ces conseils."]
+      ],
+      "adjectives": [
+        ["constructif", "qui aide à progresser", "C'est un commentaire très constructif."],
+        ["détaillé", "qui contient beaucoup de détails", "Il a donné un avis très détaillé."],
+        ["encourageant", "qui donne du courage", "C'est un message très encourageant."],
+        ["public", "devant tout le monde", "Ce n'est pas un secret, c'est public."]
+      ],
+      "connectors": [
+        ["en effet", "pour confirmer", "C'est vrai, en effet cela aide tout le monde."],
+        ["par contre", "pour opposer", "C'est utile, par contre c'est parfois gênant."],
+        ["toutefois", "pour nuancer", "C'est une bonne idée, toutefois il faut être prudent."],
+        ["ainsi", "pour illustrer", "Il écoute, ainsi il apprend des autres."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère partager un **commentaire** utile devant tout le monde. C'est une méthode très constructive car tout le groupe peut apprendre de l'expérience des autres.",
+        "**En effet**, entendre les erreurs ou les réussites des autres aide chacun à **s'améliorer**. C'est un **apprentissage** collectif très efficace.",
+        "Par exemple, si quelqu'un fait une excellente introduction, tout le monde peut s'en inspirer. C'est très **encourageant**."
+      ],
+      "b": [
+        "Je choisis de donner des commentaires détaillés en privé. Cela permet à l'étudiant de se sentir plus à l'aise et de ne pas avoir peur de ses erreurs.",
+        "**Par contre**, le feedback **public** peut être gênant. En privé, on peut discuter plus librement et **prendre en compte** les points faibles sans stress.",
+        "Par exemple, pour un étudiant timide, un **commentaire** privé est beaucoup plus efficace. C'est une approche plus respectueuse."
+      ],
+      "conditional": [
+        "Si le groupe est très soudé, je choisis le feedback **public**. Tout le monde est bienveillant et les commentaires aident vraiment à progresser.",
+        "En revanche, si les étudiants sont stressés, le feedback privé est préférable. Il faut protéger leur **confiance** en eux avant tout.",
+        "Tout dépend de l'ambiance. Si elle est positive, le **public** est utile. Si elle est tendue, le privé est nécessaire."
+      ]
+    }
+  },
+  {
+    "slug": "choose-or-assign-presentation-topic",
+    "title": "Choix du sujet d'exposé",
+    "prompt": "Votre classe doit faire un exposé de trois minutes. Est-ce que chaque étudiant choisit son sujet ou est-ce que le professeur impose une question unique ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option et donnez un exemple concret.",
+    "options": [
+      {
+        "label": "Choisir son sujet",
+        "description": "Sélectionner un thème que vous connaissez ou que vous souhaitez découvrir."
+      },
+      {
+        "label": "Sujet imposé",
+        "description": "Répondre à la même question que tout le monde en choisissant vos propres exemples."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sujet", "thème abordé", "J'ai choisi un sujet passionnant pour mon exposé."],
+        ["exposé", "présentation orale", "Nous devons préparer un exposé de trois minutes."],
+        ["recherche", "travail d'investigation", "La recherche d'informations prend beaucoup de temps."],
+        ["contrainte", "limite imposée", "Cette contrainte de temps est difficile à respecter."]
+      ],
+      "phrasalVerbs": [
+        ["se lancer", "commencer une activité", "Il faut se lancer dans la préparation rapidement."],
+        ["faire le tour", "explorer un sujet", "Nous avons fait le tour de la question."],
+        ["prendre la parole", "s'exprimer devant un public", "J'aime prendre la parole devant mes camarades."],
+        ["se mettre d'accord", "s'entendre sur une décision", "Nous devons nous mettre d'accord sur le plan."]
+      ],
+      "adjectives": [
+        ["passionnant", "très intéressant", "Ce livre sur l'histoire est vraiment passionnant."],
+        ["complexe", "difficile à comprendre", "Le problème est trop complexe pour moi."],
+        ["pertinent", "approprié à la situation", "Ton exemple est très pertinent pour cet exposé."],
+        ["original", "qui sort de l'ordinaire", "C'est une idée originale pour notre projet."]
+      ],
+      "connectors": [
+        ["par contre", "marque une opposition", "J'aime ce sujet, par contre il est difficile."],
+        ["en revanche", "marque une opposition forte", "Il est très intelligent, en revanche il est timide."],
+        ["d'ailleurs", "ajoute une information", "C'est un bon choix, d'ailleurs tout le monde aime."],
+        ["par conséquent", "marque une conséquence", "Il a beaucoup travaillé, par conséquent il a réussi."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère choisir mon **sujet** car je peux parler de ce qui me passionne vraiment.",
+        "C'est plus facile de faire des recherches quand le thème est intéressant pour moi.",
+        "**Par conséquent**, je suis beaucoup plus motivé pour préparer mon **exposé** devant la classe."
+      ],
+      "b": [
+        "Je préfère que le professeur impose une question car cela nous donne un cadre clair.",
+        "C'est une bonne opportunité pour travailler sur des sujets complexes que je ne choisirais pas seul.",
+        "**En revanche**, cela demande un effort supplémentaire pour bien comprendre les attentes du professeur."
+      ],
+      "conditional": [
+        "Si le temps est limité, je choisis mon **sujet** pour gagner en efficacité immédiate.",
+        "**Par contre**, si je veux apprendre de nouvelles choses, je préfère une question imposée.",
+        "**D'ailleurs**, cela permet de comparer nos approches avec celles des autres étudiants facilement."
+      ]
+    }
+  },
+  {
+    "slug": "packed-lunch-or-canteen",
+    "title": "Repas au travail",
+    "prompt": "Votre entreprise a une cantine, mais vous pouvez apporter votre repas. Quelle option préférez-vous ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option et donnez un exemple concret.",
+    "options": [
+      {
+        "label": "Repas maison",
+        "description": "Préparer le repas la veille et manger quand vous voulez."
+      },
+      {
+        "label": "Cantine",
+        "description": "Acheter un repas chaud et s'asseoir avec les collègues."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["cantine", "restaurant d'entreprise", "La cantine propose un menu différent chaque jour."],
+        ["budget", "argent disponible", "Je dois surveiller mon budget ce mois-ci."],
+        ["équilibre", "santé physique", "Il faut trouver un bon équilibre alimentaire."],
+        ["pause", "moment de repos", "Je prends une courte pause pour déjeuner."]
+      ],
+      "phrasalVerbs": [
+        ["faire des économies", "épargner de l'argent", "Cuisiner soi-même permet de faire des économies."],
+        ["se détendre", "se relaxer", "J'aime me détendre après une longue réunion."],
+        ["manger sur le pouce", "manger rapidement", "J'ai mangé sur le pouce avant de partir."],
+        ["prendre le temps", "ne pas se presser", "Il faut prendre le temps de bien manger."]
+      ],
+      "adjectives": [
+        ["sain", "bon pour la santé", "Manger des fruits est très sain."],
+        ["convivial", "agréable et social", "Le déjeuner était très convivial aujourd'hui."],
+        ["pratique", "utile et facile", "C'est très pratique d'avoir un micro-ondes."],
+        ["équilibré", "bien proportionné", "J'essaie de préparer un repas équilibré."]
+      ],
+      "connectors": [
+        ["en effet", "justification", "Il est fatigué, en effet il a beaucoup travaillé."],
+        ["par ailleurs", "en plus", "C'est bon, par ailleurs c'est très rapide."],
+        ["toutefois", "opposition", "C'est cher, toutefois la qualité est excellente."],
+        ["donc", "conclusion", "Il pleut, donc je prends mon parapluie."]
+      ]
+    },
+    "models": {
+      "a": [
+        "J'aime préparer mon repas la veille pour contrôler exactement ce que je mange.",
+        "C'est une solution très saine et cela me permet de **faire des économies** importantes.",
+        "Je peux **donc** manger ce que j'aime pendant ma **pause** sans aucune contrainte."
+      ],
+      "b": [
+        "Je préfère manger à la **cantine** pour rencontrer mes collègues et discuter avec eux.",
+        "C'est un moment **convivial** qui me permet de vraiment me détendre après une matinée chargée.",
+        "**Par ailleurs**, je n'ai pas besoin de cuisiner le soir en rentrant chez moi."
+      ],
+      "conditional": [
+        "Si je veux surveiller mon **budget**, j'apporte mon repas fait maison chaque jour.",
+        "**Toutefois**, si j'ai besoin de socialiser, je choisis la **cantine** sans hésiter.",
+        "**En effet**, c'est le meilleur moyen de renforcer les liens avec mon équipe."
+      ]
+    }
+  },
+  {
+    "slug": "sale-or-sponsored-walk",
+    "title": "Récolter des fonds",
+    "prompt": "Votre classe veut récolter de l'argent pour la fête de fin d'année. Préférez-vous vendre des objets faits maison ou organiser une marche sponsorisée ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option et donnez un exemple concret.",
+    "options": [
+      {
+        "label": "Vente d'objets",
+        "description": "Fabriquer des choses simples à vendre à l'école."
+      },
+      {
+        "label": "Marche sponsorisée",
+        "description": "Choisir un parcours et demander aux gens de donner de l'argent."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["bénéfice", "profit réalisé", "Nous avons fait un gros bénéfice avec la vente."],
+        ["projet", "plan d'action", "C'est un beau projet pour toute la classe."],
+        ["participation", "action de participer", "La participation de tous est nécessaire."],
+        ["objectif", "but à atteindre", "Notre objectif est de récolter mille euros."]
+      ],
+      "phrasalVerbs": [
+        ["mettre en place", "organiser", "Nous devons mettre en place une stratégie."],
+        ["faire appel à", "solliciter quelqu'un", "Il faut faire appel à nos parents."],
+        ["se mobiliser", "s'engager pour une cause", "Toute l'équipe doit se mobiliser maintenant."],
+        ["récolter des fonds", "collecter de l'argent", "Nous allons récolter des fonds pour l'école."]
+      ],
+      "adjectives": [
+        ["accessible", "facile à faire", "Le parcours de la marche est très accessible."],
+        ["motivant", "qui donne envie", "C'est un défi très motivant pour nous."],
+        ["solidaire", "qui aide les autres", "C'est une action solidaire pour les enfants."],
+        ["rentable", "qui rapporte de l'argent", "La vente de gâteaux est très rentable."]
+      ],
+      "connectors": [
+        ["de plus", "ajout", "C'est facile, de plus c'est amusant."],
+        ["en fait", "réalité", "Il dit qu'il est prêt, en fait il dort."],
+        ["néanmoins", "opposition", "C'est difficile, néanmoins nous allons réussir."],
+        ["par contre", "opposition", "J'aime le sport, par contre je déteste courir."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère vendre des objets faits maison car c'est très gratifiant de créer quelque chose.",
+        "Nous pouvons fixer nos prix et réaliser des bénéfices rapidement pour notre fête.",
+        "**En fait**, c'est un **projet** très **motivant** pour toute la classe de travailler ensemble."
+      ],
+      "b": [
+        "Je préfère organiser une marche sponsorisée car c'est une activité physique et très **solidaire**.",
+        "Nous pouvons demander à nos familles de nous soutenir pour chaque kilomètre parcouru.",
+        "**Néanmoins**, il faut bien préparer le parcours pour que ce soit **accessible** à tous."
+      ],
+      "conditional": [
+        "Si nous voulons un gain rapide, je choisis la vente d'objets faits maison.",
+        "**Par contre**, si nous voulons impliquer beaucoup de monde, la marche est idéale.",
+        "**De plus**, cela permet de sensibiliser les gens à notre cause commune efficacement."
+      ]
+    }
+  },
+  {
+    "slug": "tutor-or-conversation-group",
+    "title": "Pratique de l'anglais",
+    "prompt": "Vous avez une heure par semaine pour pratiquer l'anglais. Préférez-vous un professeur particulier ou un groupe de conversation ?",
+    "conditionalPrompt": "Expliquez quand vous choisiriez chaque option et donnez un exemple concret.",
+    "options": [
+      {
+        "label": "Professeur particulier",
+        "description": "Travailler les points difficiles et demander des corrections."
+      },
+      {
+        "label": "Groupe de conversation",
+        "description": "Parler avec des gens différents et apprendre à maintenir une discussion."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["progrès", "amélioration", "J'ai fait beaucoup de progrès cette année."],
+        ["échange", "discussion", "C'était un échange très intéressant."],
+        ["blocage", "difficulté", "J'ai un blocage avec la grammaire anglaise."],
+        ["vocabulaire", "ensemble de mots", "Il faut enrichir mon vocabulaire chaque jour."]
+      ],
+      "phrasalVerbs": [
+        ["prendre confiance", "se rassurer", "Il doit prendre confiance en lui."],
+        ["faire des erreurs", "se tromper", "C'est normal de faire des erreurs au début."],
+        ["mettre en pratique", "utiliser", "Je veux mettre en pratique ce que j'apprends."],
+        ["se corriger", "rectifier ses fautes", "Il apprend à se corriger tout seul."]
+      ],
+      "adjectives": [
+        ["efficace", "qui fonctionne bien", "C'est une méthode très efficace pour apprendre."],
+        ["intimidant", "qui fait peur", "Parler devant tout le monde est intimidant."],
+        ["dynamique", "actif", "Le groupe est très dynamique et motivé."],
+        ["utile", "pratique", "Ce cours est très utile pour mon travail."]
+      ],
+      "connectors": [
+        ["en revanche", "opposition", "Il est riche, en revanche il est avare."],
+        ["par conséquent", "conséquence", "Il a plu, par conséquent le match est annulé."],
+        ["par ailleurs", "en plus", "C'est beau, par ailleurs c'est très calme."],
+        ["certes", "accord partiel", "Certes, c'est cher, mais c'est de qualité."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère un professeur particulier pour travailler mes points faibles et obtenir des corrections.",
+        "C'est très **efficace** pour progresser rapidement sans avoir peur de **faire des erreurs**.",
+        "**Par conséquent**, je gagne vite en confiance et je peux poser toutes mes questions."
+      ],
+      "b": [
+        "Je préfère un groupe de conversation pour échanger avec des personnes différentes.",
+        "C'est un environnement **dynamique** où l'on apprend à maintenir une discussion naturellement.",
+        "**Par ailleurs**, c'est souvent moins cher qu'un cours privé et très amusant."
+      ],
+      "conditional": [
+        "Si j'ai un examen bientôt, je choisis le professeur particulier sans hésiter.",
+        "**Certes**, c'est plus cher, mais c'est nécessaire pour corriger mes erreurs précises.",
+        "**En revanche**, si je veux juste pratiquer pour le plaisir, le groupe est idéal."
+      ]
+    }
+  }
+]

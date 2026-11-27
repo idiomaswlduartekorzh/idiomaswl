@@ -33,3 +33,31 @@ El harness final (`output/italiano-a1/informe-harness-final.json`) pasó para lo
 24 capítulos y 20 pistas de audio vinculadas. El registro editorial del libro
 cuenta 694 actividades con respuesta. Sigue pendiente la lectura final del
 autor y la prueba de imprenta descritas en `book_italiano_a1_v3/README.md`.
+
+## WeLearn Portugués A1
+
+| Recurso | Archivo en Drive | Fuente local |
+|---|---|---|
+| Libro del estudiante, 205 páginas | [PDF](https://drive.google.com/file/d/1PbfRmf4n1SYKDKdM01pim4GvNOgtCndQ/view?usp=drivesdk) | `output/portugues-a1/WeLearn_Portugues_A1_libro_del_estudiante.pdf` |
+| Edición del profesor con soluciones, 260 páginas | [PDF](https://drive.google.com/file/d/1I4PXiO-uizyv0xVhuruLBzRkEel5ZIXb/view?usp=drivesdk) | `output/portugues-a1/WeLearn_Portugues_A1_libro_con_soluciones_para_profesor.pdf` |
+| Fuente editable compacta, 20 capítulos | [ZIP](https://drive.google.com/file/d/1_o6N1DFGyrvGJiugMH-D9QypfAcuhiFi/view?usp=drivesdk) | `output/portugues-a1/WeLearn_Portugues_A1_editable_compacto.zip` |
+
+El libro enseña portugués brasileño A1. El alfabeto y la pronunciación aparecen
+antes del capítulo 01. Tiene 20 capítulos, cuatro repasos, 577 actividades de
+capítulos y repasos, diez actividades iniciales de pronunciación y 20 audios A1
+activos vinculados. La edición del estudiante no lleva el solucionario; la del
+profesor sí. La portada del catálogo se renderizó del PDF del estudiante y no
+usa una imagen externa.
+
+Los tres archivos están en la misma carpeta privada que los de italiano, con
+lectura para el propietario `WeLearnInstitute@gmail.com` y las mismas tres
+cuentas del equipo indicadas arriba. No se activó el acceso público mediante
+enlace. El harness editorial pasó para los 20 capítulos y los cuatro repasos;
+la auditoría de las dos ediciones pasó en
+`output/portugues-a1/ediciones/auditoria-ediciones.json`. Siguen pendientes la
+lectura final del autor y una prueba física de imprenta.
+
+La ficha se publicó mediante el [PR #72](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/72)
+en `main@ab241cd449b71454045ddf968106048bf659dc9f`. Vercel informó
+despliegue exitoso y la portada pública respondió HTTP 200 con la misma huella
+que el archivo versionado. El panel sigue exigiendo sesión administradora.

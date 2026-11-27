@@ -36,8 +36,8 @@
 .frame {
   display: block;
   width: 100%;
+  height: calc(100vh - 48px);
   height: calc(100dvh - 48px);
-  min-height: 760px;
   border: 0;
   background: #f5f2eb;
 }
@@ -52,7 +52,7 @@
   }
 
   .frame {
+    height: calc(100vh - 44px);
     height: calc(100dvh - 44px);
-    min-height: 900px;
   }
 }

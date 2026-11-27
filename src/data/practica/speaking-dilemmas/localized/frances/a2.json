@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "market-or-supermarket",
+    "title": "Où faire les courses ?",
+    "prompt": "Tu as besoin de fruits et de quelques produits pour le dîner. Préfères-tu aller au marché ou au supermarché ?",
+    "conditionalPrompt": "Dis où tu fais tes courses quand tu as du temps libre et quand tu es pressé.",
+    "options": [
+      {
+        "label": "Le marché",
+        "description": "Acheter des fruits frais chez un producteur."
+      },
+      {
+        "label": "Le supermarché",
+        "description": "Tout acheter au même endroit rapidement."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["marché", "mercado", "Je vais au marché le samedi matin."],
+        ["produit", "producto", "Ce magasin vend des produits locaux."],
+        ["fruit", "fruta", "J'aime manger un fruit après le repas."],
+        ["temps", "tiempo", "Je n'ai pas beaucoup de temps aujourd'hui."]
+      ],
+      "phrasalVerbs": [
+        ["faire les courses", "hacer la compra", "Je dois faire les courses pour ce soir."],
+        ["avoir besoin de", "necesitar", "J'ai besoin de pain pour le petit-déjeuner."],
+        ["passer voir", "pasar a ver", "Je vais passer voir mon ami au marché."],
+        ["se dépêcher", "darse prisa", "Il faut se dépêcher pour arriver à l'heure."]
+      ],
+      "adjectives": [
+        ["frais", "fresco", "Ces légumes sont très frais."],
+        ["local", "local", "C'est un petit marché local."],
+        ["rapide", "rápido", "C'est une solution rapide pour dîner."],
+        ["pratique", "práctico", "Ce supermarché est très pratique."]
+      ],
+      "connectors": [
+        ["par contre", "sin embargo", "J'aime le marché, par contre c'est cher."],
+        ["d'abord", "primero", "D'abord, je choisis mes fruits."],
+        ["ensuite", "luego", "Ensuite, je vais à la boulangerie."],
+        ["donc", "por lo tanto", "J'ai faim, donc je vais manger."]
+      ]
+    },
+    "models": {
+      "a": [
+        "J'aime beaucoup aller au **marché** le samedi. Les produits sont toujours très **frais** et locaux.",
+        "Je demande souvent au vendeur quels fruits sont les meilleurs. C'est plus agréable que le supermarché.",
+        "Si j'ai du **temps** libre, je préfère vraiment discuter avec les producteurs locaux."
+      ],
+      "b": [
+        "Je préfère faire mes courses au supermarché. C'est beaucoup plus **pratique** pour tout acheter ensemble.",
+        "Je prends mes fruits et le reste de mes produits rapidement. Je gagne beaucoup de **temps**.",
+        "Quand je suis pressé après le travail, c'est la solution la plus efficace pour moi."
+      ],
+      "conditional": [
+        "Quand j'ai du **temps** le week-end, je vais au **marché** pour choisir des produits **frais**.",
+        "**Par contre**, quand je suis pressé en semaine, je choisis le supermarché pour aller vite.",
+        "Chaque option est utile selon mon emploi du **temps** et mes besoins du moment."
+      ]
+    }
+  },
+  {
+    "slug": "meal-prep-or-fresh-dinner",
+    "title": "Préparer le dîner",
+    "prompt": "Tu travailles jusqu'à dix-huit heures en semaine. Préfères-tu cuisiner plusieurs repas le dimanche ou cuisiner chaque soir ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Cuisiner le dimanche",
+        "description": "Préparer trois repas pour la semaine."
+      },
+      {
+        "label": "Cuisiner chaque soir",
+        "description": "Faire un repas rapide en rentrant."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["repas", "comida", "Ce repas est délicieux."],
+        ["semaine", "semana", "La semaine est très chargée."],
+        ["soir", "tarde/noche", "Je rentre tard le soir."],
+        ["cuisine", "cocina", "J'aime passer du temps dans ma cuisine."]
+      ],
+      "phrasalVerbs": [
+        ["préparer à l'avance", "preparar con antelación", "Je préfère préparer à l'avance mes plats."],
+        ["rentrer chez soi", "volver a casa", "Je rentre chez moi à dix-huit heures."],
+        ["avoir envie de", "tener ganas de", "J'ai envie de manger quelque chose de chaud."],
+        ["se reposer", "descansar", "Je veux me reposer après le travail."]
+      ],
+      "adjectives": [
+        ["organisé", "organizado", "Il est très organisé avec son temps."],
+        ["fatigué", "cansado", "Je suis fatigué après cette journée."],
+        ["simple", "simple", "C'est une recette simple et rapide."],
+        ["chaud", "caliente", "Je veux un plat chaud ce soir."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je cuisine parce que j'ai faim."],
+        ["cependant", "sin embargo", "C'est bien, cependant c'est long."],
+        ["en fait", "de hecho", "En fait, je préfère cuisiner le dimanche."],
+        ["alors", "entonces", "Alors, on prépare le dîner ?"]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je prépare trois **repas** le dimanche. C'est très **organisé** et je gagne du temps.",
+        "Je garde ces plats pour la **semaine**. Je n'ai pas besoin de cuisiner le **soir**.",
+        "Quand je suis **fatigué** en rentrant, je suis content d'avoir déjà mon dîner."
+      ],
+      "b": [
+        "Je préfère cuisiner chaque **soir**. J'aime manger quelque chose de frais et **chaud**.",
+        "Je fais un **repas** **simple** en rentrant. Cela me prend seulement vingt minutes.",
+        "Si j'ai de l'énergie, je préfère cuisiner au moment de manger."
+      ],
+      "conditional": [
+        "Quand ma **semaine** est très chargée, je préfère préparer mes **repas** le dimanche.",
+        "Par contre, quand j'ai le temps, j'aime cuisiner un plat frais chaque **soir**.",
+        "Chaque méthode est utile selon mon niveau de fatigue et mon envie."
+      ]
+    }
+  },
+  {
+    "slug": "recipe-or-cooking-class",
+    "title": "Apprendre à cuisiner",
+    "prompt": "Tu veux apprendre une nouvelle recette. Préfères-tu suivre une recette à la maison ou faire un cours de cuisine ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Recette à la maison",
+        "description": "Essayer seul dans sa cuisine."
+      },
+      {
+        "label": "Cours de cuisine",
+        "description": "Apprendre avec un professeur."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["recette", "receta", "J'ai trouvé une bonne recette."],
+        ["professeur", "profesor", "Le professeur explique très bien."],
+        ["plat", "plato", "C'est un plat traditionnel."],
+        ["question", "pregunta", "J'ai une question sur la cuisson."]
+      ],
+      "phrasalVerbs": [
+        ["suivre une recette", "seguir una receta", "Je suis une recette sur internet."],
+        ["apprendre à faire", "aprender a hacer", "Je veux apprendre à faire ce gâteau."],
+        ["poser des questions", "hacer preguntas", "Tu peux poser des questions au chef."],
+        ["s'arrêter", "parar", "Je peux m'arrêter quand je veux."]
+      ],
+      "adjectives": [
+        ["nouveau", "nuevo", "C'est un nouveau plat."],
+        ["calme", "tranquilo", "J'aime cuisiner dans un endroit calme."],
+        ["difficile", "difícil", "Cette recette est un peu difficile."],
+        ["utile", "útil", "Ce cours est très utile."]
+      ],
+      "connectors": [
+        ["par exemple", "por ejemplo", "J'aime les plats, par exemple les pâtes."],
+        ["en plus", "además", "C'est bon, en plus c'est facile."],
+        ["donc", "por lo tanto", "J'ai appris, donc je suis content."],
+        ["au contraire", "al contrario", "Au contraire, c'est très simple."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère essayer la **recette** chez moi. Je suis dans ma cuisine et c'est **calme**.",
+        "Je peux m'arrêter quand je veux si je suis fatigué. C'est très relaxant.",
+        "Si la **recette** est simple, je préfère apprendre seul avec un livre."
+      ],
+      "b": [
+        "Je préfère faire un cours avec un **professeur**. Je peux poser toutes mes questions.",
+        "C'est mieux pour apprendre les bonnes techniques. Je progresse beaucoup plus vite.",
+        "Quand le **plat** est **difficile**, je préfère avoir quelqu'un pour m'aider."
+      ],
+      "conditional": [
+        "Quand je veux être tranquille, je préfère **suivre une recette** à la maison.",
+        "Par contre, quand je veux apprendre une technique **difficile**, je choisis un cours.",
+        "Chaque option est bien selon mes objectifs et mon envie de sortir."
+      ]
+    }
+  },
+  {
+    "slug": "early-or-late-train",
+    "title": "Prendre le train",
+    "prompt": "Tu visites un ami dans une autre ville. Préfères-tu un train tôt pour avoir plus de temps ou un train tard moins cher ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Train tôt",
+        "description": "Arriver pour le déjeuner."
+      },
+      {
+        "label": "Train tard",
+        "description": "Économiser de l'argent."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["train", "tren", "Le train part à huit heures."],
+        ["billet", "billete", "J'ai acheté mon billet sur internet."],
+        ["ville", "ciudad", "C'est une très belle ville."],
+        ["argent", "dinero", "Je n'ai pas beaucoup d'argent."]
+      ],
+      "phrasalVerbs": [
+        ["prendre le train", "coger el tren", "Je vais prendre le train demain."],
+        ["arriver à l'heure", "llegar a tiempo", "Il faut arriver à l'heure."],
+        ["passer du temps", "pasar tiempo", "Je veux passer du temps avec lui."],
+        ["payer moins cher", "pagar menos", "Je veux payer moins cher mon voyage."]
+      ],
+      "adjectives": [
+        ["tôt", "temprano", "Je me lève très tôt."],
+        ["tard", "tarde", "Il est arrivé tard."],
+        ["cher", "caro", "Ce billet est trop cher."],
+        ["long", "largo", "Le voyage est assez long."]
+      ],
+      "connectors": [
+        ["donc", "por lo tanto", "C'est moins cher, donc je prends ça."],
+        ["par contre", "sin embargo", "C'est rapide, par contre c'est cher."],
+        ["en fait", "de hecho", "En fait, je préfère arriver tôt."],
+        ["aussi", "también", "Je veux voir la ville aussi."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère **prendre le train** **tôt**. Je veux arriver pour le déjeuner avec mon ami.",
+        "Je paye un peu plus **cher**, mais je passe plus de temps avec lui.",
+        "Si je veux profiter de la journée, c'est la meilleure solution pour moi."
+      ],
+      "b": [
+        "Je préfère prendre un **train** plus **tard**. Je peux économiser de l'**argent** sur le **billet**.",
+        "J'arrive dans l'après-midi et nous dînons ensemble. C'est très agréable.",
+        "Quand je veux faire attention à mon budget, je choisis le **billet** moins **cher**."
+      ],
+      "conditional": [
+        "Quand je veux profiter au maximum de mon ami, je prends le **train** **tôt**.",
+        "**Par contre**, quand je veux économiser, je choisis le **train** le moins **cher**.",
+        "Chaque choix est bon selon mon budget et mon envie de voyager."
+      ]
+    }
+  },
+  {
+    "slug": "guest-room-or-hotel",
+    "title": "Où dormir ?",
+    "prompt": "Tu visites une ville pour le week-end. Préfères-tu dormir chez des amis ou réserver un petit hôtel ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Chez des amis",
+        "description": "Partager le petit-déjeuner avec eux."
+      },
+      {
+        "label": "Hôtel",
+        "description": "Avoir sa propre chambre."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["chambre", "habitación", "Ma chambre est très confortable."],
+        ["hôtel", "hotel", "L'hôtel est près du centre."],
+        ["petit-déjeuner", "desayuno", "Le petit-déjeuner est inclus."],
+        ["centre", "centro", "L'hôtel est au centre."]
+      ],
+      "phrasalVerbs": [
+        ["dormir chez", "dormir en casa de", "Je vais dormir chez mon ami."],
+        ["réserver une chambre", "reservar una habitación", "Je dois réserver une chambre."],
+        ["partager un moment", "compartir un momento", "On va partager un moment ensemble."],
+        ["être tranquille", "estar tranquilo", "Je veux être tranquille ce soir."]
+      ],
+      "adjectives": [
+        ["propre", "limpio", "La chambre est très propre."],
+        ["confortable", "cómodo", "C'est un hôtel confortable."],
+        ["sympa", "simpático", "Mes amis sont très sympas."],
+        ["indépendant", "independiente", "Je veux être indépendant."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je choisis l'hôtel parce que c'est calme."],
+        ["en plus", "además", "C'est sympa, en plus c'est gratuit."],
+        ["cependant", "sin embargo", "C'est bien, cependant je préfère mon calme."],
+        ["donc", "por lo tanto", "Je suis fatigué, donc je vais dormir."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère **dormir chez** mes amis. On partage le **petit-déjeuner** et on discute bien.",
+        "C'est très **sympa** et je me sens comme à la maison.",
+        "Si je veux passer tout mon week-end avec eux, c'est le meilleur choix."
+      ],
+      "b": [
+        "Je préfère réserver un petit **hôtel**. J'ai ma **propre** **chambre** et ma salle de bain.",
+        "C'est plus pratique pour être **indépendant** près du **centre**-ville.",
+        "Quand je veux **être tranquille** et me reposer, je choisis l'**hôtel**."
+      ],
+      "conditional": [
+        "Quand je veux être avec mes amis, je préfère **dormir chez** eux.",
+        "Par contre, quand je veux mon indépendance, je réserve un **hôtel**.",
+        "Chaque option est utile selon mon besoin de calme ou de compagnie."
+      ]
+    }
+  },
+  {
+    "slug": "carry-on-or-big-suitcase",
+    "title": "Les bagages",
+    "prompt": "Tu voyages pour trois jours. Préfères-tu prendre un petit sac dans l'avion ou payer pour une grande valise ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Petit sac",
+        "description": "Garder le sac avec soi."
+      },
+      {
+        "label": "Grande valise",
+        "description": "Avoir plus de vêtements."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sac", "bolsa", "J'ai un petit sac pour le voyage."],
+        ["valise", "maleta", "Ma valise est très lourde."],
+        ["vêtement", "ropa", "J'ai besoin de nouveaux vêtements."],
+        ["avion", "avión", "L'avion part à dix heures."]
+      ],
+      "phrasalVerbs": [
+        ["prendre avec soi", "llevar consigo", "Je prends mon sac avec moi."],
+        ["payer pour", "pagar por", "Je ne veux pas payer pour une valise."],
+        ["faire sa valise", "hacer la maleta", "Je dois faire ma valise ce soir."],
+        ["attendre après", "esperar a", "Je n'aime pas attendre après l'avion."]
+      ],
+      "adjectives": [
+        ["petit", "pequeño", "C'est un petit sac pratique."],
+        ["grand", "grande", "J'ai une grande valise pour les vacances."],
+        ["lourd", "pesado", "Cette valise est trop lourde."],
+        ["pratique", "práctico", "Voyager léger est très pratique."]
+      ],
+      "connectors": [
+        ["donc", "por lo tanto", "C'est léger, donc c'est facile."],
+        ["par contre", "sin embargo", "C'est grand, par contre c'est lourd."],
+        ["aussi", "también", "J'ai des chaussures, aussi."],
+        ["en fait", "de hecho", "En fait, je préfère voyager léger."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère prendre un **petit** **sac** dans l'**avion**. Je le garde avec moi.",
+        "C'est très **pratique**, je n'ai pas besoin d'**attendre après** mon **sac**.",
+        "Si je pars seulement trois jours, c'est suffisant pour mes vêtements."
+      ],
+      "b": [
+        "Je préfère **payer pour** une grande **valise**. Je peux prendre plus de vêtements.",
+        "C'est plus confortable d'avoir tout ce dont j'ai besoin avec moi.",
+        "Quand je pars pour un long voyage, je choisis toujours la grande **valise**."
+      ],
+      "conditional": [
+        "Quand je pars pour un court séjour, je prends un **petit** **sac**.",
+        "**Par contre**, quand je veux beaucoup de choix, je prends une grande **valise**.",
+        "Chaque choix est bien selon la durée de mon voyage."
+      ]
+    }
+  },
+  {
+    "slug": "phone-map-or-directions",
+    "title": "Trouver son chemin",
+    "prompt": "Tu es dans un quartier inconnu. Comment trouves-tu la gare : avec ton téléphone ou en demandant à quelqu'un ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Téléphone",
+        "description": "Suivre la carte sur l'écran."
+      },
+      {
+        "label": "Demander",
+        "description": "Parler à quelqu'un dans la rue."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["gare", "estación", "La gare est au bout de la rue."],
+        ["téléphone", "teléfono", "Mon téléphone n'a plus de batterie."],
+        ["carte", "mapa", "Je regarde la carte sur mon écran."],
+        ["chemin", "camino", "Je cherche le chemin pour la gare."]
+      ],
+      "phrasalVerbs": [
+        ["trouver son chemin", "encontrar el camino", "Je ne peux pas trouver mon chemin."],
+        ["demander à", "preguntar a", "Je vais demander à ce monsieur."],
+        ["regarder la carte", "mirar el mapa", "Je regarde la carte sur mon téléphone."],
+        ["se perdre", "perderse", "J'ai peur de me perdre."]
+      ],
+      "adjectives": [
+        ["inconnu", "desconocido", "C'est un quartier inconnu pour moi."],
+        ["utile", "útil", "C'est une application très utile."],
+        ["sympa", "simpático", "Il est très sympa, il m'a aidé."],
+        ["rapide", "rápido", "C'est un moyen rapide de trouver."]
+      ],
+      "connectors": [
+        ["par exemple", "por ejemplo", "Je demande, par exemple, à un passant."],
+        ["en fait", "de hecho", "En fait, je préfère mon téléphone."],
+        ["donc", "por lo tanto", "Je suis perdu, donc je demande."],
+        ["cependant", "sin embargo", "C'est simple, cependant je préfère parler."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère utiliser mon **téléphone**. Je regarde la **carte** et je suis le **chemin**.",
+        "C'est très **rapide** et je ne me perds pas dans la ville.",
+        "Si je suis dans un quartier **inconnu**, c'est la solution la plus efficace."
+      ],
+      "b": [
+        "Je préfère **demander à** quelqu'un dans la rue. C'est plus humain.",
+        "Je parle avec la personne et je vérifie le **chemin** avec elle.",
+        "Quand mon **téléphone** n'a plus de batterie, je demande toujours mon **chemin**."
+      ],
+      "conditional": [
+        "Quand j'ai mon **téléphone**, je préfère **regarder la carte**.",
+        "Par contre, quand je veux parler aux gens, je demande mon **chemin**.",
+        "Chaque option est **utile** selon ma situation et mon matériel."
+      ]
+    }
+  },
+  {
+    "slug": "present-or-day-out",
+    "title": "Cadeau d'anniversaire",
+    "prompt": "Ton ami a bientôt son anniversaire. Préfères-tu acheter un cadeau ou l'inviter à faire une activité ensemble ?",
+    "conditionalPrompt": "Dis quand chaque choix fonctionne mieux pour toi.",
+    "options": [
+      {
+        "label": "Cadeau",
+        "description": "Choisir un objet pour lui."
+      },
+      {
+        "label": "Activité",
+        "description": "Payer pour une sortie ensemble."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["cadeau", "regalo", "J'ai acheté un beau cadeau."],
+        ["anniversaire", "cumpleaños", "C'est son anniversaire demain."],
+        ["activité", "actividad", "Quelle activité on peut faire ?"],
+        ["ami", "amigo", "C'est mon meilleur ami."]
+      ],
+      "phrasalVerbs": [
+        ["acheter un cadeau", "comprar un regalo", "Je dois acheter un cadeau."],
+        ["faire une activité", "hacer una actividad", "On va faire une activité ensemble."],
+        ["inviter quelqu'un", "invitar a alguien", "Je veux inviter mon ami au restaurant."],
+        ["passer du temps", "pasar tiempo", "On va passer du temps ensemble."]
+      ],
+      "adjectives": [
+        ["original", "original", "C'est un cadeau très original."],
+        ["sympa", "simpático", "C'est une idée très sympa."],
+        ["heureux", "feliz", "Il est très heureux de son cadeau."],
+        ["cher", "caro", "Ce n'est pas un cadeau cher."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je choisis ça parce qu'il aime."],
+        ["en plus", "además", "C'est bien, en plus on s'amuse."],
+        ["donc", "por lo tanto", "C'est son anniversaire, donc je fête."],
+        ["par contre", "sin embargo", "C'est beau, par contre c'est cher."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère **acheter un cadeau**. Je choisis un objet qu'il peut garder.",
+        "C'est une attention qui fait toujours plaisir à mon **ami**.",
+        "Si je connais bien ses goûts, c'est le meilleur **cadeau** possible."
+      ],
+      "b": [
+        "Je préfère l'inviter à **faire une activité**. On passe du temps ensemble.",
+        "C'est plus **sympa** de partager un moment que d'acheter un objet.",
+        "Quand je veux fêter son **anniversaire**, je choisis une sortie ensemble."
+      ],
+      "conditional": [
+        "Quand je veux offrir un souvenir, je préfère **acheter un cadeau**.",
+        "**Par contre**, quand je veux partager un moment, je choisis une **activité**.",
+        "Chaque choix est bien selon ce que mon **ami** préfère."
+      ]
+    }
+  },
+  {
+    "slug": "voice-note-or-text",
+    "title": "Envoyer un message vocal ou écrit ?",
+    "prompt": "Tu dois changer tes plans avec un ami. Est-ce que tu envoies un message vocal ou tu écris un texte ?",
+    "conditionalPrompt": "Dis quand chaque choix est préférable.",
+    "options": [
+      {
+        "label": "Message vocal",
+        "description": "Utilise ta voix pour expliquer la situation et proposer une heure."
+      },
+      {
+        "label": "Message écrit",
+        "description": "Écris la nouvelle heure et le lieu dans un court message."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le rendez-vous", "cita", "J'ai un rendez-vous important demain."],
+        ["le changement", "cambio", "Je suis désolé pour ce changement soudain."],
+        ["le détail", "detalle", "Il me manque un détail pour comprendre."],
+        ["le message", "mensaje", "Tu as reçu mon message ce matin ?"]
+      ],
+      "phrasalVerbs": [
+        ["avoir besoin de", "necesitar", "J'ai besoin de changer nos plans."],
+        ["faire attention", "prestar atención", "Fais attention à bien noter l'heure."],
+        ["prendre contact", "contactar", "Je vais prendre contact avec lui."],
+        ["se mettre d'accord", "ponerse de acuerdo", "On doit se mettre d'accord rapidement."]
+      ],
+      "adjectives": [
+        ["rapide", "rápido", "C'est une solution très rapide."],
+        ["clair", "claro", "Ton explication est vraiment claire."],
+        ["occupé", "ocupado", "Je suis trop occupé pour téléphoner."],
+        ["pratique", "práctico", "Ce système est vraiment pratique."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je t'appelle parce que c'est urgent."],
+        ["donc", "así que", "Il est absent, donc je laisse un message."],
+        ["en revanche", "en cambio", "En revanche, je préfère écrire."],
+        ["sinon", "si no", "Dis-moi vite, sinon je change mes plans."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère envoyer un message vocal.",
+        "C'est plus **rapide** pour expliquer ce qui s'est passé avec mon emploi du temps.",
+        "Si je suis pressé, je propose une nouvelle heure directement avec ma voix."
+      ],
+      "b": [
+        "Je préfère **envoyer** un court texte.",
+        "C'est plus **pratique** pour noter l'heure et le lieu sans faire d'erreur.",
+        "Quand je suis au travail, **donc** je préfère écrire un message à mon ami."
+      ],
+      "conditional": [
+        "Le vocal est bien pour les amis proches.",
+        "Le texte est mieux pour les informations précises.",
+        "Si tu as besoin de détails, choisis le vocal, **sinon** écris un message."
+      ]
+    }
+  },
+  {
+    "slug": "exercise-class-or-home",
+    "title": "Cours collectif ou vidéo à la maison ?",
+    "prompt": "Tu veux bouger plus après le travail. Est-ce que tu t'inscris à un cours de fitness ou est-ce que tu fais une vidéo chez toi ?",
+    "conditionalPrompt": "Dis quand chaque option est préférable.",
+    "options": [
+      {
+        "label": "Cours collectif",
+        "description": "Suivre un prof avec un groupe."
+      },
+      {
+        "label": "Vidéo à la maison",
+        "description": "Choisir une vidéo courte quand tu as le temps."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["motivation", "motivación", "Le groupe me donne de la motivation."],
+        ["séance", "sesión", "Je fais une séance de sport intense."],
+        ["salon", "salón", "Je pousse les meubles dans mon salon."],
+        ["professeur", "profesor", "Le professeur montre bien les mouvements."]
+      ],
+      "phrasalVerbs": [
+        ["s'inscrire", "inscribirse", "Je veux m'inscrire au club de sport."],
+        ["suivre", "seguir", "C'est motivant de suivre un rythme."],
+        ["s'entraîner", "entrenar", "Je vais m'entraîner deux fois par semaine."],
+        ["ranger", "recoger", "Je dois ranger mon tapis après l'exercice."]
+      ],
+      "adjectives": [
+        ["hebdomadaire", "semanal", "Je préfère un rendez-vous hebdomadaire fixe."],
+        ["souple", "flexible", "Mon emploi du temps n'est pas souple."],
+        ["efficace", "eficaz", "Cette vidéo de dix minutes est efficace."],
+        ["fatigué", "cansado", "Je suis souvent fatigué après le bureau."]
+      ],
+      "connectors": [
+        ["alors", "entonces", "Je suis libre alors je fais du sport."],
+        ["pourtant", "sin embargo", "C'est dur, pourtant je continue l'effort."],
+        ["surtout", "sobre todo", "J'aime bouger, surtout avec de la musique."],
+        ["quand", "cuando", "Je commence quand je rentre chez moi."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je décide de m'inscrire à un cours de fitness **hebdomadaire**. C'est motivant de **suivre** un **professeur** et de **s'entraîner** avec un groupe dynamique.",
+        "Le rythme de la **séance** est intense et je fais plus d'efforts. Je rencontre aussi des gens qui habitent dans mon quartier.",
+        "**Quand** je paie pour un cours, je suis obligé d'y aller. C'est la meilleure solution pour rester régulier."
+      ],
+      "b": [
+        "Je préfère regarder une vidéo de sport dans mon **salon**. C'est une option très **souple** parce que je choisis mon propre horaire.",
+        "Je peux faire une **séance** **efficace** même si j'ai seulement vingt minutes. Je n'ai pas besoin de prendre les transports.",
+        "Si je suis **fatigué**, je choisis une vidéo plus calme. C'est parfait pour bouger sans aucune pression extérieure."
+      ],
+      "conditional": [
+        "Le cours collectif est idéal si j'ai besoin de **motivation** sociale. C'est bien **quand** je veux une structure fixe.",
+        "La vidéo à la maison est préférable si je termine le travail tard. C'est pratique **quand** mon emploi du temps change.",
+        "Si le temps est mauvais, je reste chez moi pour m'entraîner tranquillement."
+      ]
+    }
+  },
+  {
+    "slug": "borrow-or-rent-party-chairs",
+    "title": "Emprunter ou louer des chaises ?",
+    "prompt": "Tu invites huit personnes à dîner. Est-ce que tu empruntes des chaises aux voisins ou est-ce que tu en loues un lot ?",
+    "conditionalPrompt": "Dis dans quel cas chaque choix est le meilleur.",
+    "options": [
+      {
+        "label": "Emprunter",
+        "description": "Demander aux voisins et les rendre le lendemain."
+      },
+      {
+        "label": "Louer",
+        "description": "Payer pour des chaises identiques."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["voisin", "vecino", "Mon voisin est vraiment très sympathique."],
+        ["lot", "lote", "Je réserve un lot de dix chaises."],
+        ["transport", "transporte", "Le transport des meubles est assez difficile."],
+        ["frais", "gastos", "Il y a des frais de location importants."]
+      ],
+      "phrasalVerbs": [
+        ["emprunter", "tomar prestado", "Je vais emprunter deux chaises en bois."],
+        ["rendre", "devolver", "Je dois rendre le matériel demain matin."],
+        ["organiser", "organizar", "Je dois organiser le salon pour l'invitation."],
+        ["rapporter", "traer de vuelta", "Je vais rapporter les chaises après le café."]
+      ],
+      "adjectives": [
+        ["identique", "idéntico", "Toutes les chaises sont enfin identiques."],
+        ["gratuit", "gratis", "C'est une solution totalement gratuite."],
+        ["élégant", "elegante", "La table est très élégante pour l'occasion."],
+        ["lourd", "pesado", "Ces vieux fauteuils sont vraiment trop lourds."]
+      ],
+      "connectors": [
+        ["mais", "pero", "C'est gratuit mais c'est un peu compliqué."],
+        ["ensuite", "luego", "Je mange ensuite je range tout."],
+        ["chez", "en casa de", "On dîne ce soir chez moi."],
+        ["plutôt", "más bien", "Je vais plutôt choisir la location."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je vais **emprunter** des chaises à mes voisins pour le dîner. C'est une solution gratuite et simple pour recevoir mes amis.",
+        "Je demande poliment et je vais les chercher juste avant la fête. Je dois les **rapporter** le lendemain matin.",
+        "Si mes voisins sont d'accord, j'économise de l'argent. C'est pratique pour un petit repas informel entre amis."
+      ],
+      "b": [
+        "Je préfère louer un **lot** de chaises identiques pour la soirée. C'est plus **élégant** pour la décoration de ma salle à manger.",
+        "Je paie les **frais** de location et l'entreprise s'occupe du **transport**. C'est moins de stress pour **organiser** l'événement.",
+        "Je choisis cette option si je veux une table parfaite. Je rends tout le matériel le lundi matin."
+      ],
+      "conditional": [
+        "**Emprunter** est parfait pour un dîner décontracté avec des proches. C'est bien quand on a un petit budget.",
+        "Louer est la meilleure idée pour une occasion spéciale ou officielle. C'est utile quand on veut des meubles assortis.",
+        "Si j'ai des voisins sportifs, je porte les chaises moi-même avec eux."
+      ]
+    }
+  },
+  {
+    "slug": "live-or-recorded-class",
+    "title": "Cours en direct ou enregistré ?",
+    "prompt": "Tu peux suivre un cours d'anglais en direct ou regarder des leçons enregistrées. Que choisis-tu ?",
+    "conditionalPrompt": "Dis quand chaque option est la plus efficace.",
+    "options": [
+      {
+        "label": "Cours en direct",
+        "description": "Rencontrer un professeur en ligne."
+      },
+      {
+        "label": "Leçons enregistrées",
+        "description": "Regarder quand tu es libre."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["progrès", "progreso", "Je fais des progrès chaque semaine."],
+        ["écran", "pantalla", "Je regarde mon écran pendant une heure."],
+        ["horaire", "horario", "L'horaire du cours est toujours le même."],
+        ["question", "pregunta", "Je pose une question au professeur."]
+      ],
+      "phrasalVerbs": [
+        ["participer", "participar", "Je veux participer à la discussion."],
+        ["répéter", "repetir", "Je peux répéter la vidéo plusieurs fois."],
+        ["comprendre", "comprender", "Je ne comprends pas ce mot difficile."],
+        ["allumer", "encender", "J'allume mon ordinateur à l'heure."]
+      ],
+      "adjectives": [
+        ["difficile", "difícil", "La grammaire est parfois un peu difficile."],
+        ["libre", "libre", "Je regarde la leçon quand je suis libre."],
+        ["interactif", "interactivo", "Le cours en direct est très interactif."],
+        ["calme", "tranquilo", "Je cherche un endroit calme pour étudier."]
+      ],
+      "connectors": [
+        ["pendant que", "mientras", "J'écoute pendant que je prends des notes."],
+        ["parfois", "a veces", "Parfois, je ne comprends pas tout."],
+        ["donc", "por lo tanto", "Je travaille donc je regarde le soir."],
+        ["puis", "luego", "Je regarde puis je fais l'exercice."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis de suivre le cours d'anglais en direct. C'est plus **interactif** parce que je peux poser une **question** au professeur.",
+        "Je rencontre d'autres étudiants en ligne et nous parlons ensemble. Cela m'aide à faire des **progrès** rapidement à l'oral.",
+        "Quand le cours commence, je dois être devant mon **écran**. Cette discipline est nécessaire pour bien apprendre la langue."
+      ],
+      "b": [
+        "Je préfère regarder les leçons enregistrées sur mon ordinateur. Je peux étudier quand je suis **libre**, par exemple tard le soir.",
+        "Si une partie est **difficile**, je peux **répéter** la vidéo. Je prends mon temps pour bien **comprendre** chaque phrase.",
+        "C'est une méthode très souple pour mon emploi du temps. Je progresse à mon rythme dans un endroit **calme**."
+      ],
+      "conditional": [
+        "Le cours en direct est idéal pour pratiquer la conversation. C'est bien si on aime avoir un **horaire** fixe.",
+        "Les vidéos enregistrées sont meilleures pour réviser la grammaire complexe. C'est parfait quand on travaille beaucoup la journée.",
+        "Si je suis motivé, je combine les deux méthodes pour apprendre."
+      ]
+    }
+  },
+  {
+    "slug": "flashcards-or-own-sentences",
+    "title": "Flashcards ou phrases personnelles ?",
+    "prompt": "Tu as dix minutes pour réviser ton anglais. Est-ce que tu utilises des flashcards ou est-ce que tu écris tes propres phrases ?",
+    "conditionalPrompt": "Dis quand chaque méthode est la plus utile.",
+    "options": [
+      {
+        "label": "Flashcards",
+        "description": "Regarder un mot et vérifier le sens."
+      },
+      {
+        "label": "Phrases personnelles",
+        "description": "Utiliser les mots dans des exemples."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["mémoire", "memoria", "Je travaille ma mémoire tous les jours."],
+        ["sens", "sentido", "Je vérifie le sens derrière la carte."],
+        ["exemple", "ejemplo", "J'écris un exemple sur ma journée."],
+        ["recto", "anverso", "Le mot est écrit sur le recto."]
+      ],
+      "phrasalVerbs": [
+        ["vérifier", "verificar", "Je dois vérifier la traduction exacte."],
+        ["mémoriser", "memorizar", "C'est facile de mémoriser avec des images."],
+        ["inventer", "inventar", "J'aime inventer des petites histoires."],
+        ["tourner", "dar la vuelta", "Je vais tourner la carte pour voir."]
+      ],
+      "adjectives": [
+        ["efficace", "eficaz", "Cette méthode est efficace pour le vocabulaire."],
+        ["personnel", "personal", "J'écris un texte très personnel."],
+        ["court", "corto", "Je préfère faire des exercices courts."],
+        ["utile", "útil", "C'est utile pour apprendre de nouveaux mots."]
+      ],
+      "connectors": [
+        ["pour", "para", "J'étudie pour parler mieux anglais."],
+        ["ou", "o", "Je choisis les cartes ou les phrases."],
+        ["ensuite", "después", "Je lis ensuite je cache le mot."],
+        ["surtout", "sobre todo", "C'est utile surtout pour la mémoire."]
+      ]
+    },
+    "models": {
+      "a": [
+        "J'utilise des flashcards **pour** réviser mon vocabulaire rapidement. Je regarde le **recto** de la carte et je cherche le **sens**.",
+        "**Ensuite**, je vais **tourner** la carte **pour** **vérifier** ma réponse. C'est une méthode **efficace** **pour** **mémoriser** beaucoup de mots.",
+        "Si j'ai seulement dix minutes, c'est le meilleur exercice. Je peux faire ça dans le bus **ou** le train."
+      ],
+      "b": [
+        "Je préfère écrire mes propres phrases avec les nouveaux mots. J'invente un **exemple** **personnel** sur ma vie **ou** ma journée.",
+        "C'est plus **utile** **pour** apprendre à utiliser le vocabulaire correctement. Je construis des phrases courtes mais complètes et intéressantes.",
+        "Quand j'écris, je fais un effort de création important. Cela m'aide à fixer les mots dans ma **mémoire** durablement."
+      ],
+      "conditional": [
+        "Les flashcards sont parfaites **pour** apprendre des définitions simples. C'est bien quand on veut réviser très vite.",
+        "Les phrases personnelles sont meilleures **pour** pratiquer la grammaire. C'est idéal quand on veut vraiment parler la langue.",
+        "Si je prépare un examen, je mélange les deux techniques."
+      ]
+    }
+  },
+  {
+    "slug": "exchange-or-refund",
+    "title": "Échange ou remboursement ?",
+    "prompt": "Tu as acheté des chaussures trop petites sur internet. Est-ce que tu demandes un échange ou un remboursement ?",
+    "conditionalPrompt": "Dis quand chaque option est préférable.",
+    "options": [
+      {
+        "label": "Échange",
+        "description": "Renvoyer la paire et attendre la taille au-dessus."
+      },
+      {
+        "label": "Remboursement",
+        "description": "Rendre les chaussures et récupérer l'argent."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["taille", "talla", "Je commande la taille au-dessus."],
+        ["remboursement", "reembolso", "Je demande un remboursement sur ma carte."],
+        ["paire", "par", "Cette paire de chaussures est trop petite."],
+        ["colis", "paquete", "Je dois préparer le colis pour l'envoi."]
+      ],
+      "phrasalVerbs": [
+        ["renvoyer", "devolver (enviar)", "Je vais renvoyer l'article par la poste."],
+        ["attendre", "esperar", "Je dois attendre la livraison du colis."],
+        ["chercher", "buscar", "Je vais chercher un autre modèle."],
+        ["recevoir", "recibir", "Je veux recevoir mon argent rapidement."]
+      ],
+      "adjectives": [
+        ["petit", "pequeño", "Le modèle est vraiment trop petit."],
+        ["neuf", "nuevo", "Les chaussures sont encore toutes neuves."],
+        ["déçu", "decepcionado", "Je suis un peu déçu par l'achat."],
+        ["gratuit", "gratis", "Le retour du colis est souvent gratuit."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je les change parce qu'elles serrent."],
+        ["sinon", "si no", "Je demande l'échange, sinon le remboursement."],
+        ["donc", "por lo tanto", "C'est trop petit donc je renvoie."],
+        ["enfin", "finalmente", "Enfin, je reçois la bonne pointure."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je décide de demander un échange pour une **taille** au-dessus. J'aime beaucoup ce modèle **donc** je veux vraiment le porter.",
+        "Je vais **renvoyer** le **colis** par la poste demain matin. Je dois ensuite **attendre** la livraison de la nouvelle **paire**.",
+        "Si le magasin a du stock, c'est très simple. C'est la solution idéale pour avoir les bonnes chaussures."
+      ],
+      "b": [
+        "Je préfère demander un **remboursement** total de mon achat. Je suis un peu **déçu** par la qualité du cuir.",
+        "Je vais **chercher** un autre modèle dans un magasin physique. Je veux **recevoir** mon argent rapidement sur mon compte.",
+        "Quand le vendeur reçoit le **colis**, il me rembourse. C'est plus sûr si je ne connais pas la marque."
+      ],
+      "conditional": [
+        "L'échange est parfait si on adore le style des chaussures. C'est bien quand on connaît déjà bien la marque.",
+        "Le **remboursement** est préférable si on a un doute. C'est utile quand on veut essayer un autre magasin.",
+        "Si les frais de port sont chers, je réfléchis bien."
+      ]
+    }
+  },
+  {
+    "slug": "volunteer-park-or-kitchen",
+    "title": "Parc ou cuisine solidaire ?",
+    "prompt": "Tu as deux heures libres samedi. Est-ce que tu aides à nettoyer un parc ou à servir le déjeuner dans une cuisine solidaire ?",
+    "conditionalPrompt": "Dis quand chaque activité est la plus adaptée.",
+    "options": [
+      {
+        "label": "Nettoyer le parc",
+        "description": "Ramasser les déchets avec un groupe."
+      },
+      {
+        "label": "Cuisine solidaire",
+        "description": "Servir le repas à l'intérieur."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["déchet", "residuo", "On ramasse les déchets dans l'herbe."],
+        ["repas", "comida", "Je sers un repas chaud aux gens."],
+        ["nature", "naturaleza", "J'aime passer du temps dans la nature."],
+        ["équipe", "equipo", "On travaille avec une équipe de bénévoles."]
+      ],
+      "phrasalVerbs": [
+        ["aider", "ayudar", "Je veux aider ma communauté locale."],
+        ["ramasser", "recoger", "Je vais ramasser les bouteilles en plastique."],
+        ["servir", "servir", "Je vais servir le déjeuner à midi."],
+        ["marcher", "caminar", "On va marcher dans tout le parc."]
+      ],
+      "adjectives": [
+        ["propre", "limpio", "Le parc devient propre après notre passage."],
+        ["utile", "útil", "C'est une action utile pour l'environnement."],
+        ["social", "social", "C'est un engagement social très important."],
+        ["extérieur", "exterior", "Je préfère travailler à l'extérieur aujourd'hui."]
+      ],
+      "connectors": [
+        ["pendant", "durante", "Je travaille pendant deux heures entières."],
+        ["ensemble", "juntos", "On nettoie tout le quartier ensemble."],
+        ["mais", "pero", "C'est fatigant mais c'est très gratifiant."],
+        ["d'abord", "primero", "D'abord, je mets mes gants de protection."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis d'**aider** à nettoyer le parc ce samedi. Je vais **marcher** avec un groupe pour **ramasser** les déchets par terre.",
+        "C'est une action **utile** pour protéger la **nature** en ville. J'aime travailler à l'**extérieur** quand il y a du soleil.",
+        "Si nous sommes nombreux, le parc devient vite **propre**. C'est agréable de voir un résultat immédiat et concret."
+      ],
+      "b": [
+        "Je préfère aller à la cuisine solidaire pour **aider**. Je vais préparer les tables et **servir** le **repas** aux gens.",
+        "C'est un engagement **social** qui me permet de discuter un peu. On travaille **ensemble** dans une ambiance très chaleureuse.",
+        "Quand le service est fini, on nettoie la salle. C'est une expérience humaine riche et vraiment très importante."
+      ],
+      "conditional": [
+        "Nettoyer le parc est idéal si on veut bouger. C'est parfait quand on a besoin de prendre l'air.",
+        "La cuisine solidaire est meilleure pour rencontrer des gens. C'est bien quand on veut **aider** à l'intérieur.",
+        "Si il pleut, je choisis la cuisine sans hésiter."
+      ]
+    }
+  },
+  {
+    "slug": "swap-shift-or-day-off",
+    "title": "Changer de service ou congé ?",
+    "prompt": "Un événement familial important tombe un jour de travail. Est-ce que tu échanges ton service avec un collègue ou demandes un congé ?",
+    "conditionalPrompt": "Dis quand chaque option est la plus appropriée.",
+    "options": [
+      {
+        "label": "Échanger le service",
+        "description": "Travailler un autre jour à la place."
+      },
+      {
+        "label": "Demander un congé",
+        "description": "Faire une demande officielle au manager."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["service", "turno", "Je travaille pendant le service du matin."],
+        ["collègue", "colega", "Mon collègue accepte de changer avec moi."],
+        ["congé", "permiso/vacaciones", "Je pose un jour de congé officiel."],
+        ["manager", "gerente", "Je dois parler avec mon manager demain."]
+      ],
+      "phrasalVerbs": [
+        ["échanger", "intercambiar", "Je vais échanger mon samedi contre un lundi."],
+        ["demander", "pedir", "Je vais demander une autorisation d'absence."],
+        ["attendre", "esperar", "Je dois attendre la réponse du bureau."],
+        ["s'arranger", "arreglarse", "On peut s'arranger entre nous facilement."]
+      ],
+      "adjectives": [
+        ["important", "importante", "C'est un événement familial très important."],
+        ["officiel", "oficial", "Je préfère suivre la procédure officielle."],
+        ["disponible", "disponible", "Est-ce que tu es disponible ce jour-là ?"],
+        ["flexible", "flexible", "Mon emploi du temps est assez flexible."]
+      ],
+      "connectors": [
+        ["donc", "por lo tanto", "Je ne travaille pas donc je viens."],
+        ["si", "si", "Si tu travailles pour moi, je t'aide."],
+        ["parce que", "porque", "Je demande parce que j'ai un mariage."],
+        ["ensuite", "luego", "Je demande ensuite je prépare mon voyage."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je vais **échanger** mon **service** avec un **collègue** sympathique. Je travaille un autre jour et il couvre mon samedi.",
+        "C'est une solution **flexible** qui ne demande pas de paperasse. On peut **s'arranger** directement entre nous sans déranger la direction.",
+        "**Si** mon **collègue** est **disponible**, c'est vraiment très pratique. Je garde mes jours de vacances pour plus tard."
+      ],
+      "b": [
+        "Je préfère **demander** un jour de **congé** à mon **manager**. Je fais une demande officielle et j'attends sa réponse.",
+        "C'est plus sûr pour l'organisation de mon emploi du temps. Je ne dois rien à personne et je suis libre.",
+        "Quand le **manager** accepte, je peux préparer mon événement. C'est la procédure normale dans mon entreprise actuelle."
+      ],
+      "conditional": [
+        "**Échanger** le **service** est bien **si** on s'entend bien. C'est utile quand on veut économiser ses congés.",
+        "**Demander** un **congé** est préférable pour un événement majeur. C'est plus professionnel **si** le planning est chargé.",
+        "**Si** personne ne peut me remplacer, je demande officiellement."
+      ]
+    }
+  },
+  {
+    "slug": "library-e-book-or-print",
+    "title": "Livre numérique ou papier ?",
+    "prompt": "La bibliothèque a les deux versions d'un livre. Est-ce que tu empruntes le livre numérique ou tu attends la version papier ?",
+    "conditionalPrompt": "Dis quand chaque choix est préférable.",
+    "options": [
+      {
+        "label": "Livre numérique",
+        "description": "Commence à lire aujourd'hui sur ton téléphone ou ta tablette."
+      },
+      {
+        "label": "Livre papier",
+        "description": "Réserve le livre et récupère-le quand quelqu'un le rend."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["la bibliothèque", "biblioteca", "Je vais souvent à la bibliothèque."],
+        ["le lecteur", "lector", "C'est un lecteur très passionné."],
+        ["la version", "versión", "Je préfère la version originale."],
+        ["le choix", "elección", "C'est un choix difficile pour moi."]
+      ],
+      "phrasalVerbs": [
+        ["avoir envie de", "tener ganas de", "J'ai envie de lire ce livre."],
+        ["prendre le temps", "tomarse el tiempo", "Je prends le temps de choisir."],
+        ["passer voir", "pasar a ver", "Je vais passer voir la bibliothèque."],
+        ["faire la queue", "hacer cola", "Je ne veux pas faire la queue."]
+      ],
+      "adjectives": [
+        ["disponible", "disponible", "Le livre est enfin disponible."],
+        ["gratuit", "gratis", "C'est un service gratuit."],
+        ["confortable", "cómodo", "Lire sur tablette est confortable."],
+        ["patient", "paciente", "Il faut être patient pour ce livre."]
+      ],
+      "connectors": [
+        ["alors que", "mientras que", "Je lis alors que j'attends le bus."],
+        ["par contre", "sin embargo", "Par contre, le papier est mieux."],
+        ["puisque", "puesto que", "Puisque c'est gratuit, je le prends."],
+        ["donc", "por lo tanto", "Le livre est prêt, donc je pars."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je **fais le choix** du livre numérique.",
+        "Je peux commencer à lire immédiatement sur ma tablette sans **faire la queue**.",
+        "Si je **prends le temps** de lire, c'est la meilleure solution aujourd'hui."
+      ],
+      "b": [
+        "Je préfère attendre le livre papier.",
+        "J'ai **envie de** toucher les pages et de lire sans écran le soir.",
+        "Quand j'ai le temps, **alors** je réserve le livre et j'attends."
+      ],
+      "conditional": [
+        "Le numérique est parfait pour **voyager** avec un **lecteur** léger.",
+        "Le papier est idéal pour se **reposer** le soir chez soi.",
+        "Si tu veux lire vite, choisis le numérique, **sinon** attends le papier."
+      ]
+    }
+  },
+  {
+    "slug": "chores-daily-or-weekend",
+    "title": "Ménage quotidien ou hebdomadaire ?",
+    "prompt": "Tu partages un appartement avec un ami. Est-ce que tu fais un peu de ménage chaque soir ou vous nettoyez tout le samedi ?",
+    "conditionalPrompt": "Dis quand chaque choix est préférable.",
+    "options": [
+      {
+        "label": "Ménage quotidien",
+        "description": "Passe dix minutes sur une tâche après le dîner."
+      },
+      {
+        "label": "Ménage hebdomadaire",
+        "description": "Travaillez ensemble pendant une heure le week-end."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le ménage", "limpieza", "Je déteste faire le ménage."],
+        ["la tâche", "tarea", "J'ai une tâche à terminer."],
+        ["le colocataire", "compañero de piso", "Mon colocataire est très sympa."],
+        ["le week-end", "fin de semana", "On se repose le week-end."]
+      ],
+      "phrasalVerbs": [
+        ["s'occuper de", "ocuparse de", "Je m'occupe de la cuisine."],
+        ["faire le ménage", "hacer la limpieza", "On doit faire le ménage ensemble."],
+        ["se mettre au travail", "ponerse a trabajar", "Il faut se mettre au travail."],
+        ["donner un coup de main", "echar una mano", "Tu peux me donner un coup de main ?"]
+      ],
+      "adjectives": [
+        ["propre", "limpio", "L'appartement est très propre."],
+        ["fatigué", "cansado", "Je suis trop fatigué le soir."],
+        ["organisé", "organizado", "Il est très organisé avec ses tâches."],
+        ["efficace", "eficaz", "C'est une méthode efficace."]
+      ],
+      "connectors": [
+        ["en plus", "además", "C'est rapide, en plus c'est propre."],
+        ["par contre", "en cambio", "Par contre, le samedi c'est long."],
+        ["donc", "así que", "On est libres, donc on nettoie."],
+        ["cependant", "sin embargo", "C'est bien, cependant je préfère le calme."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère faire un peu chaque soir.",
+        "Dix minutes après le dîner suffisent pour garder l'appartement **propre**.",
+        "Si je fais ça, je ne suis pas **fatigué** **le week-end**."
+      ],
+      "b": [
+        "Je préfère nettoyer tout le week-end.",
+        "On travaille ensemble et **donc** on est plus **efficace**.",
+        "Quand on a fini, on peut **profiter** du reste du temps libre."
+      ],
+      "conditional": [
+        "Le quotidien est bien pour les gens occupés.",
+        "**Le week-end** est mieux pour les colocataires.",
+        "Si tu aimes le calme, nettoie chaque soir, sinon choisis le samedi."
+      ]
+    }
+  },
+  {
+    "slug": "photos-or-travel-journal",
+    "title": "Photos ou journal de voyage ?",
+    "prompt": "Tu veux te souvenir d'un week-end. Est-ce que tu prends quelques photos ou tu écris un court journal de voyage ?",
+    "conditionalPrompt": "Dis quand chaque choix est préférable.",
+    "options": [
+      {
+        "label": "Photos",
+        "description": "Garde une image de chaque endroit que tu visites."
+      },
+      {
+        "label": "Journal de voyage",
+        "description": "Écris quelques lignes sur ce que tu as fait et tes sentiments."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le souvenir", "recuerdo", "J'ai un bon souvenir de ce voyage."],
+        ["la photo", "foto", "Tu as pris une belle photo ?"],
+        ["le journal", "diario", "J'écris dans mon journal chaque soir."],
+        ["le sentiment", "sentimiento", "C'est un sentiment très fort."]
+      ],
+      "phrasalVerbs": [
+        ["se souvenir de", "acordarse de", "Je veux me souvenir de tout."],
+        ["prendre des photos", "hacer fotos", "J'aime prendre des photos en voyage."],
+        ["écrire un mot", "escribir una nota", "Je vais écrire un mot sur mon carnet."],
+        ["faire attention à", "prestar atención a", "Fais attention à bien noter les détails."]
+      ],
+      "adjectives": [
+        ["joli", "bonito", "C'est un très joli paysage."],
+        ["émotionnel", "emocional", "C'est un moment très émotionnel."],
+        ["visuel", "visual", "J'ai une mémoire très visuelle."],
+        ["court", "corto", "C'est un texte très court."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je prends des photos parce que c'est beau."],
+        ["en plus", "además", "C'est joli, en plus c'est facile."],
+        ["cependant", "sin embargo", "C'est beau, cependant je préfère écrire."],
+        ["donc", "por lo tanto", "Je veux me souvenir, donc j'écris."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère **prendre des photos**.",
+        "C'est très rapide et **parce que** c'est **visuel**, je garde une belle image.",
+        "Si je **veux** me souvenir, je regarde mes clichés plus tard."
+      ],
+      "b": [
+        "Je préfère **écrire un mot** dans mon journal.",
+        "J'exprime mon **sentiment** sur ce que j'ai fait et ressenti.",
+        "Quand je relis mon carnet, **donc** je me **souviens de** mes émotions."
+      ],
+      "conditional": [
+        "Les photos sont bien pour les paysages.",
+        "**Le journal** est mieux pour les sentiments.",
+        "Si tu es **visuel**, prends des photos, sinon écris un journal."
+      ]
+    }
+  },
+  {
+    "slug": "plant-or-small-herb-garden",
+    "title": "Plante verte ou herbes aromatiques ?",
+    "prompt": "Tu as une fenêtre ensoleillée et de la place pour deux pots. Est-ce que tu prends une plante verte ou tu cultives des herbes ?",
+    "conditionalPrompt": "Dis quand chaque choix est préférable.",
+    "options": [
+      {
+        "label": "Plante verte",
+        "description": "Choisis une plante qui peut vivre à l'intérieur toute l'année."
+      },
+      {
+        "label": "Herbes aromatiques",
+        "description": "Fais pousser du basilic et de la menthe dans des pots séparés."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["la plante", "planta", "J'ai une belle plante verte."],
+        ["la fenêtre", "ventana", "La plante est près de la fenêtre."],
+        ["la cuisine", "cocina", "J'utilise des herbes dans ma cuisine."],
+        ["le pot", "maceta", "J'ai acheté un nouveau pot."]
+      ],
+      "phrasalVerbs": [
+        ["faire pousser", "hacer crecer", "Je veux faire pousser du basilic."],
+        ["s'occuper de", "cuidar de", "Je m'occupe de mes plantes."],
+        ["avoir besoin de", "necesitar", "La plante a besoin de soleil."],
+        ["mettre en place", "colocar", "Je vais mettre en place mes pots."]
+      ],
+      "adjectives": [
+        ["ensoleillé", "soleado", "C'est un appartement très ensoleillé."],
+        ["frais", "fresco", "J'aime le basilic frais."],
+        ["vert", "verde", "La plante est très verte."],
+        ["utile", "útil", "C'est une plante très utile."]
+      ],
+      "connectors": [
+        ["parce que", "porque", "Je choisis ça parce que c'est beau."],
+        ["en plus", "además", "C'est joli, en plus c'est bon."],
+        ["par contre", "en cambio", "Par contre, il faut arroser souvent."],
+        ["donc", "así que", "J'aime cuisiner, donc je choisis ça."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je préfère **avoir besoin de** peu d'entretien pour une plante verte.",
+        "C'est **facile** à garder à l'intérieur toute l'année près de la **fenêtre**.",
+        "Si je **veux** une belle décoration, je choisis cette option."
+      ],
+      "b": [
+        "Je préfère cultiver des herbes.",
+        "J'adore utiliser du basilic **frais** pour ma cuisine.",
+        "Quand je cuisine, je coupe mes herbes dans mes pots."
+      ],
+      "conditional": [
+        "**La plante** est bien pour la décoration.",
+        "Les herbes sont mieux pour cuisiner.",
+        "Si tu aimes la déco, prends une plante, sinon cultive des herbes."
+      ]
+    }
+  }
+]

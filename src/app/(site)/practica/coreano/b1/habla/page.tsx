@@ -1,5 +1,7 @@
-import { redirect } from 'next/navigation'
+import SpeakingDilemmaHub, { speakingDilemmaHubMetadata } from '@/components/practica/speaking-dilemmas/SpeakingDilemmaHub'
+
+export const metadata = speakingDilemmaHubMetadata('b1', 'coreano')
 
 export default function Page() {
-  redirect('/practica/coreano/b1/habla/solo')
+  return <SpeakingDilemmaHub level="b1" language="coreano" />
 }

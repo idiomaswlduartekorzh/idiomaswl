@@ -25,6 +25,22 @@ Fecha de corte: 25 de agosto de 2026.
 - El recorrido en navegador pasó a 320, 390, 768, 1020 y 1440 píxeles. Se probaron el selector con teclado y con JavaScript desactivado, el modo oscuro, los tres diálogos, la primera actividad y los 18 rótulos de la lámina. La guía de nueve páginas se renderizó para revisar los ejemplos impresos.
 - La revisión visual se entregó en el mismo borrador. La ampliación del 26 de noviembre recoge el ajuste de calificación detectado el 19.
 
+## Dilemas de Speaking en los ocho idiomas — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. Francés, alemán, italiano, portugués de Brasil, ruso,
+  japonés y coreano tienen 20 dilemas por nivel de A1 a C2. Las 840 fichas nuevas
+  suman 960 con el catálogo de inglés. Cada ficha tiene cuatro tarjetas de
+  vocabulario con ejemplos y tres respuestas modelo independientes.
+- La vista previa `dpl_BPgk2gMRyJgKqjyHadZcVrjpc94Y` pasó TypeScript y la
+  compilación de Vercel. En esa vista se verificó un catálogo y una ficha de
+  cada idioma nuevo. Los controles locales de Práctica, Improvisa, Habla
+  acompañada, la línea base y ESLint también pasaron.
+- Vercel publicó `main@de87af02a0ea63247eb8fdfacabeee6c992caff6` en
+  `dpl_J4cMyiw48Epem3gmMzTJTnwKkz5g` (`READY`). En el dominio público se
+  recorrieron los 42 catálogos y las 840 fichas, con pruebas de teclado de los
+  tres desplegables en una ficha por catálogo. Pasaron las 120 rutas de inglés
+  y el smoke de producción de 56 rutas y 17 audios.
+
 ## Dilemas de Speaking en inglés A1–C2 — 26 de noviembre de 2026
 
 - Estado `DESPLEGADO`. Los seis niveles de inglés tienen 20 dilemas cada uno.
@@ -87,6 +103,28 @@ Fecha de corte: 25 de agosto de 2026.
   compilación completa, las 20 fichas públicas, la navegación móvil y la
   prueba de producción de 49 rutas y 17 audios.
 
+## Matecraft en Herramientas y página comercial de ajedrez en español — 26 de noviembre de 2026
+
+- Trabajo `chess-tools-spanish-seo-20261126`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/chess-tools-spanish-seo-20261126@b255f65b`, base `origin/main@43297ba2`.
+  Integrada por squash en el [PR #74](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/74).
+- Alcance. Añadir acceso directo a Matecraft en `/herramientas` y restaurar el
+  español en la página comercial `/kids/ingles-ajedrez`, incluida su
+  demostración y los metadatos de búsqueda y redes. La práctica
+  `/kids/ingles-ajedrez/practica` conserva su interfaz en inglés.
+- Archivos compartidos. Navegación, accesibilidad, WhatsApp y componentes de
+  Kids. Sin dependencias nuevas ni cambios en la aplicación de práctica.
+- Validación. Pasaron la línea base, el catálogo de Práctica, la navegación,
+  los controles de SEO, TypeScript y la compilación de producción.
+  [Content integrity](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45913871808).
+- Producción. Vercel publicó `main@38a9d5ce026fa71b18550338d4478a726240a91d`.
+  Las tres rutas respondieron HTTP 200. Chrome y WebKit táctil abrieron la
+  práctica en inglés desde Herramientas y volvieron a la página comercial en
+  español. Se comprobó el título y la descripción comerciales en español, el
+  locale `es_CO` y la URL canónica en el sitemap. Pasaron las 49 rutas y los
+  17 audios de la prueba pública del sitio.
+  [Despliegue de Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/14bGdo3H5XCYFnPfisruDKrDPPRu).
+
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
 - Trabajo `chess-kids-english-20261125`, responsable Codex. Estado `DESPLEGADO`.
@@ -114,8 +152,8 @@ Fecha de corte: 25 de agosto de 2026.
 
 - Trabajo `admin-books-italiano-a1-20261125`, responsable Codex. Rama
   `codex/admin-books-italiano-a1`, creada desde `origin/main@c4e8e2c79`.
-  Estado: `LISTO_PARA_INTEGRAR`; [PR #69](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/69)
-  abierto; falta integración y comprobación en producción.
+  Estado: `DESPLEGADO` mediante [PR #69](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/69),
+  integrado por squash en `main@0ce3274a04ced02af01d096da30234f5c9ad5bdf`.
 - El menú lateral del centro operativo añade **Libros**. Su primera ficha guarda
   *Progetto Italiano A1* con portada propia, PDF del estudiante (272 páginas),
   PDF con soluciones (372 páginas) y fuente editable. Los tres archivos están en
@@ -123,11 +161,65 @@ Fecha de corte: 25 de agosto de 2026.
   público del sitio. [Registro y permisos](admin-books.md).
 - Pasaron TypeScript, ESLint del panel, `check:practica-catalog`,
   `check:site-navigation`, `check:production-baseline`,
-  `check:admin-exam-copy` y el build completo de 5.368 páginas. Sin migraciones,
-  variables nuevas ni cambios de acceso del panel. Next 16.4.3 mostró un aviso
-  de actualización de seguridad; se deja para una actualización específica.
+  `check:admin-exam-copy` y el build completo de 5.368 páginas. Los controles de
+  GitHub y la vista previa de Vercel del PR también pasaron. El despliegue de
+  producción del commit integrado terminó con éxito en
+  [Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/9z7USTFm9TGACsLDTgw7yUdrzP44).
+  La portada pública respondió 200 y su SHA-256 coincidió con el archivo local;
+  `/dashboard/admin` redirigió a `/login` sin sesión. Sin migraciones, variables
+  nuevas ni cambios de acceso del panel. Next 16.4.3 mostró un aviso de
+  actualización de seguridad; requiere una actualización específica.
 - La aprobación del libro para venta sigue pendiente de lectura final del autor
   y prueba física de imprenta. Integrar la biblioteca no cambia ese estado.
+
+### Portugués A1 — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. El [PR #72](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/72)
+  añadió la segunda ficha de **Libros** y se integró por squash como
+  `main@ab241cd449b71454045ddf968106048bf659dc9f`.
+- La ficha enlaza desde el panel privado al PDF del estudiante (205 páginas),
+  la edición del profesor con soluciones (260 páginas) y la fuente editable.
+  Los tres archivos siguen en Drive privado con los permisos del equipo.
+  [Registro y permisos](admin-books.md).
+- La auditoría de las dos ediciones y el harness de 20 capítulos y cuatro
+  repasos pasaron. La rama pasó catálogo, TypeScript, ESLint del panel y build
+  completo de 5.497 páginas; los tres controles del PR terminaron en verde.
+- [Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/Bb6bHE8gZ5U5DhosptDyJE5Q2EWe)
+  publicó ese commit. La [portada](https://www.idiomaswl.com/images/books/welearn-portugues-a1.png)
+  respondió HTTP 200 y su SHA-256 coincidió con el archivo versionado:
+  `4ca8b2ec73bcd98f01293706a81f62a4987f8cbe293faf459a52475493c3d792`.
+  `/dashboard/admin` redirigió a `/login` sin sesión. No se inspeccionó la
+  vista autenticada porque el navegador de este equipo no estaba disponible.
+  La lectura final del autor y la prueba física de imprenta siguen pendientes.
+
+## Práctica de ajedrez: mates, tácticas y aperturas — 25 de noviembre de 2026
+
+- Trabajo `ajedrez-mates-tacticas-aperturas-20261125`, responsable Codex. Estado
+  `DESPLEGADO`; rama `codex/ajedrez-mates-tacticas-aperturas-20261125@445f401aa`,
+  creada desde `origin/main@5793e1f24` y actualizada hasta
+  `origin/main@ab241cd44`. Integrada por squash en el
+  [PR #73](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/73) como
+  `main@25873b981e5cdda924faac71ed3407ac7a4215ff`.
+- Alcance: menú funcional de mates, tácticas, aperturas y finales; siete líneas
+  guiadas de la Italiana con blancas y ocho de la Caro-Kann con negras; respuesta
+  rival automática, explicación por jugada, selector accesible de movimientos y
+  recursos del tablero servidos desde el propio sitio. La interfaz y las
+  explicaciones mantienen el inglés incorporado en `main`. Sin migraciones ni secretos.
+- Validación local: 15 líneas legales con chess.js; recorrido completo de una
+  línea de cada apertura y un mate en Chrome, Firefox y WebKit; arrastre de una
+  pieza y resaltado de jugadas en los tres motores; progreso tras recarga y
+  ancho móvil de 390 px. Pasaron la prueba E2E dirigida, el catálogo protegido,
+  TypeScript y el build completo de Next.js 16.4.5, después
+  de reconciliar la rama con `main`. La actualización puntual de Next.js evita
+  el bloqueo de CI por la [alerta corregida en 16.4.5](https://github.com/advisories/GHSA-mfr8-8qww-v76h).
+  [Estado técnico](ajedrez-estado.md).
+- Producción: Vercel marcó exitoso el
+  [despliegue de `main@25873b981`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/ATT3rb1prK6wRfdvi2h9kZApzmpq).
+  La [práctica pública](https://www.idiomaswl.com/kids/ingles-ajedrez/practica)
+  sirvió el menú nuevo y la atribución de las piezas. En Chrome, Firefox y
+  WebKit se completaron una línea Italiana, una Caro-Kann y un mate; el progreso
+  persistió tras recargar y no hubo errores de página ni desbordamiento móvil.
+  La ruta integrada de Next.js respondió HTTP 200 en los tres motores.
 
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 

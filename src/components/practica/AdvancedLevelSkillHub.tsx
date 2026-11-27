@@ -22,7 +22,7 @@ type Copy = {
     writing: [string, string, string]
     speaking: [string, string, string]
   }
-  units: [string, string, string, string]
+  units: [string, string, string, string, string]
 }
 
 const COPY: Record<Language, Copy> = {
@@ -37,9 +37,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['Lesen', 'Texte verstehen', 'Lies anspruchsvolle Texte und belege deine Antworten mit Textstellen.'],
       grammar: ['Grammatik', 'Strukturen beherrschen', 'Erklärungen, visuelle Karten, Übungen und drei PDF-Materialien pro Thema.'],
       writing: ['Schreiben', 'Berufliche Fälle', 'Bearbeite berufliche Situationen und überarbeite deine Antwort.'],
-      speaking: ['Sprechen', 'Freies Sprechen', 'Antworte frei auf konkrete Fragen mit sechs überraschenden Wörtern.'],
+      speaking: ['Sprechen', 'Freies Sprechen', 'Improvisiere mit Überraschungswörtern oder begründe deine Position zu einem Dilemma.'],
     },
-    units: ['Lektionen', 'Texte', 'Fälle', 'Fragen'],
+    units: ['Lektionen', 'Texte', 'Fälle', 'Fragen', 'Dilemmata'],
   },
   frances: {
     label: '🇫🇷 Français', seoName: 'Français', accent: '#003189', readingLanguage: 'fr', breadcrumb: 'Pratique', breadcrumbAria: 'Fil d’Ariane', title: 'Choisissez une compétence',
@@ -52,9 +52,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['Lecture', 'Compréhension', 'Lisez des textes complexes et justifiez vos réponses à partir des indices.'],
       grammar: ['Grammaire', 'Structures avancées', 'Explications, cartes visuelles, exercices et trois PDF par thème.'],
       writing: ['Rédaction', 'Situations professionnelles', 'Analysez une situation professionnelle et rédigez une réponse précise.'],
-      speaking: ['Expression orale', 'Parole spontanée', 'Répondez à des questions concrètes en intégrant six mots surprises.'],
+      speaking: ['Expression orale', 'Parole spontanée', 'Improvisez avec des mots surprises ou défendez votre choix face à un dilemme.'],
     },
-    units: ['leçons', 'textes', 'situations', 'questions'],
+    units: ['leçons', 'textes', 'situations', 'questions', 'dilemmes'],
   },
   italiano: {
     label: '🇮🇹 Italiano', seoName: 'Italiano', accent: '#009246', readingLanguage: 'it', breadcrumb: 'Pratica', breadcrumbAria: 'Percorso di navigazione', title: 'Scegli una competenza',
@@ -67,9 +67,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['Lettura', 'Comprensione', 'Leggi testi complessi e giustifica le risposte con prove dal testo.'],
       grammar: ['Grammatica', 'Strutture avanzate', 'Spiegazioni, mappe visive, esercizi e tre PDF per argomento.'],
       writing: ['Scrittura', 'Situazioni professionali', 'Analizza casi professionali e rivedi la tua risposta.'],
-      speaking: ['Produzione orale', 'Parlare liberamente', 'Rispondi a domande concrete usando sei parole a sorpresa.'],
+      speaking: ['Produzione orale', 'Parlare liberamente', 'Improvvisa con parole a sorpresa o motiva la tua scelta di fronte a un dilemma.'],
     },
-    units: ['lezioni', 'testi', 'situazioni', 'domande'],
+    units: ['lezioni', 'testi', 'situazioni', 'domande', 'dilemmi'],
   },
   portugues: {
     label: '🇧🇷 Português', seoName: 'Português', accent: '#009c3b', readingLanguage: 'pt', breadcrumb: 'Prática', breadcrumbAria: 'Trilha de navegação', title: 'Escolha uma habilidade',
@@ -82,9 +82,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['Leitura', 'Compreensão', 'Leia textos complexos e justifique as respostas com evidências.'],
       grammar: ['Gramática', 'Estruturas avançadas', 'Explicações, mapas visuais, exercícios e três PDFs por tema.'],
       writing: ['Escrita', 'Situações profissionais', 'Analise situações de trabalho e revise sua resposta.'],
-      speaking: ['Fala', 'Expressão espontânea', 'Responda a perguntas concretas usando seis palavras surpresa.'],
+      speaking: ['Fala', 'Expressão espontânea', 'Improvise com palavras surpresa ou defenda sua escolha em um dilema.'],
     },
-    units: ['aulas', 'textos', 'situações', 'perguntas'],
+    units: ['aulas', 'textos', 'situações', 'perguntas', 'dilemas'],
   },
   ruso: {
     label: '🇷🇺 Русский', seoName: 'Русский', accent: '#cc0000', readingLanguage: 'ru', breadcrumb: 'Практика', breadcrumbAria: 'Навигационная цепочка', title: 'Выберите навык',
@@ -97,9 +97,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['Чтение', 'Понимание текста', 'Читайте сложные тексты и подтверждайте ответы фрагментами.'],
       grammar: ['Грамматика', 'Сложные конструкции', 'Подробные объяснения, визуальные карты, упражнения и три PDF к теме.'],
       writing: ['Письмо', 'Рабочие ситуации', 'Разбирайте рабочие ситуации и редактируйте свой ответ.'],
-      speaking: ['Устная речь', 'Свободный ответ', 'Отвечайте на конкретные вопросы с шестью неожиданными словами.'],
+      speaking: ['Устная речь', 'Свободный ответ', 'Импровизируйте со словами-подсказками или обоснуйте свой выбор в спорной ситуации.'],
     },
-    units: ['уроков', 'текстов', 'ситуаций', 'вопросов'],
+    units: ['уроков', 'текстов', 'ситуаций', 'вопросов', 'дилемм'],
   },
   japones: {
     label: '🇯🇵 日本語', seoName: '日本語', accent: '#bc002d', readingLanguage: 'ja', breadcrumb: '練習', breadcrumbAria: 'パンくずリスト', title: '練習する技能を選ぶ',
@@ -112,9 +112,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['読解', '文章を読み解く', '複雑な文章を読み、本文の根拠を示して答えます。'],
       grammar: ['文法', '高度な表現', '解説、視覚マップ、練習問題、各テーマのPDF三種類を使います。'],
       writing: ['作文', '職場での課題', '仕事の場面を分析し、文章を書いて推敲します。'],
-      speaking: ['会話', '即興で話す', '具体的な質問に、六つの意外な言葉を入れて答えます。'],
+      speaking: ['会話', '即興で話す', '指定された言葉で即興で話したり、難しい選択について自分の立場を説明したりします。'],
     },
-    units: ['レッスン', '本の文章', '課題', 'の質問'],
+    units: ['レッスン', '本の文章', '課題', 'の質問', 'のジレンマ'],
   },
   coreano: {
     label: '🇰🇷 한국어', seoName: '한국어', accent: '#534AB7', readingLanguage: 'ko', breadcrumb: '연습', breadcrumbAria: '현재 위치', title: '연습할 영역을 고르세요',
@@ -127,9 +127,9 @@ const COPY: Record<Language, Copy> = {
       reading: ['읽기', '글 이해하기', '복잡한 글을 읽고 본문의 근거로 답을 설명하세요.'],
       grammar: ['문법', '고급 표현', '설명, 시각 자료, 연습 문제와 주제별 PDF 세 종류를 활용하세요.'],
       writing: ['쓰기', '직장 상황', '직장 상황을 분석하고 답장을 쓴 뒤 수정하세요.'],
-      speaking: ['말하기', '즉흥적으로 말하기', '구체적인 질문에 예상치 못한 단어 여섯 개를 넣어 답하세요.'],
+      speaking: ['말하기', '즉흥적으로 말하기', '주어진 단어로 즉흥적으로 말하거나, 딜레마에 대한 자신의 입장을 설명하세요.'],
     },
-    units: ['개 강의', '편의 글', '개 상황', '개 질문'],
+    units: ['개 강의', '편의 글', '개 상황', '개 질문', '개 딜레마'],
   },
 }
 
@@ -163,7 +163,7 @@ export default function AdvancedLevelSkillHub({ language, level }: { language: L
       { id: 'lectura', name: copy.skills.reading[0], eng: copy.skills.reading[1], desc: copy.skills.reading[2], count: `20${separator}${copy.units[1]}`, href: readingHubPath('en', copy.readingLanguage, levelLabel) },
       { id: 'gramatica', name: copy.skills.grammar[0], eng: copy.skills.grammar[1], desc: copy.skills.grammar[2], count: `${grammarCount}${separator}${copy.units[0]} · ${grammarCount * 3} PDF`, href: `${base}/gramatica` },
       { id: 'escritura', name: copy.skills.writing[0], eng: copy.skills.writing[1], desc: copy.skills.writing[2], count: `20${separator}${copy.units[2]}`, href: `${base}/escritura` },
-      { id: 'habla', name: copy.skills.speaking[0], eng: copy.skills.speaking[1], desc: copy.skills.speaking[2], count: `20${separator}${copy.units[3]}`, href: `${base}/habla/solo` },
+      { id: 'habla', name: copy.skills.speaking[0], eng: copy.skills.speaking[1], desc: copy.skills.speaking[2], count: `20${separator}${copy.units[3]} · 20${separator}${copy.units[4]}`, href: `${base}/habla` },
     ]}
   />
 }

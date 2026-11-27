@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "coastal-adaptation-protection-or-relocation",
+    "title": "Küstenschutz oder Umsiedlung",
+    "prompt": "Eine Küstenbehörde muss entscheiden, ob sie den Schutz eines gefährdeten Wohnviertels finanziert oder die Häuser aufkauft, um die Infrastruktur auf sichereres Gelände zu verlagern. Was ist der vertretbarere Einsatz knapper Mittel?",
+    "conditionalPrompt": "Definiere, wann ein fortgesetzter Schutz gerechtfertigt ist und wer die Konsequenzen trägt, falls dieser fehlschlägt.",
+    "options": [
+      {
+        "label": "Schutzmaßnahmen",
+        "description": "Erhalt der Häuser und der lokalen Wirtschaft durch Verteidigungsanlagen für einen definierten Zeitraum."
+      },
+      {
+        "label": "Umsiedlung",
+        "description": "Unterstützung beim Umzug und Investitionen in aufnehmende Stadtteile, auch wenn einige Bewohner bleiben möchten."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Küstenschutz", "Maßnahmen zur Sicherung der Küstenlinie vor Erosion oder Überflutung.", "Der Küstenschutz erfordert langfristige Planung und enorme finanzielle Ressourcen."],
+        ["die Umsiedlung", "das Verlegen von Wohnsitz oder Infrastruktur an einen anderen Ort.", "Die Umsiedlung der Bewohner in sicherere Gebiete ist oft mit sozialen Härten verbunden."],
+        ["die Investition", "die Verwendung von Kapital zur Erzielung eines langfristigen Nutzens.", "Jede Investition in den Hochwasserschutz muss auf ihre Nachhaltigkeit geprüft werden."],
+        ["die Konsequenz", "die zwangsläufige Folge einer Handlung oder Entscheidung.", "Wir müssen die Konsequenzen unseres Handelns tragen, wenn der Deich bricht."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas setzen", "eine bestimmte Strategie oder Option wählen.", "Wir sollten auf langfristige Lösungen setzen, statt kurzfristige Reparaturen zu finanzieren."],
+        ["etwas in Kauf nehmen", "einen Nachteil oder ein Risiko akzeptieren.", "Die Anwohner müssen in Kauf nehmen, dass ihr gewohntes Umfeld sich grundlegend wandelt."],
+        ["auf etwas hinauslaufen", "ein bestimmtes Ergebnis zur Folge haben.", "Letztlich läuft die Debatte darauf hinaus, wer die Kosten für die Anpassung trägt."],
+        ["etwas aus den Augen verlieren", "etwas Wichtiges nicht mehr beachten.", "Wir dürfen bei der technischen Planung die sozialen Bedürfnisse der Menschen nicht aus den Augen verlieren."]
+      ],
+      "adjectives": [
+        ["vertretbar", "moralisch oder logisch akzeptabel.", "Es ist kaum vertretbar, öffentliche Gelder in gefährdete Gebiete zu investieren."],
+        ["gefährdet", "einem Risiko ausgesetzt.", "Die gefährdeten Stadtteile benötigen dringend ein schlüssiges Sicherheitskonzept."],
+        ["langfristig", "sich über einen langen Zeitraum erstreckend.", "Eine langfristige Strategie ist der einzige Weg, um die Sicherheit zu gewährleisten."],
+        ["unvermeidbar", "nicht zu verhindern.", "Der Anstieg des Meeresspiegels macht manche Anpassungsmaßnahmen unvermeidbar."]
+      ],
+      "connectors": [
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der steigenden Kosten müssen wir Prioritäten setzen."],
+        ["demzufolge", "als Folge davon.", "Die Kosten sind gestiegen, demzufolge müssen wir das Projekt neu bewerten."],
+        ["nichtsdestotrotz", "trotzdem, dennoch.", "Die Lage ist kritisch, nichtsdestotrotz müssen wir eine Lösung finden."],
+        ["insofern", "in dem Maße, wie.", "Die Maßnahme ist insofern sinnvoll, als sie den Wert der Immobilien kurzfristig sichert."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Der Schutz der bestehenden Infrastruktur ist die vertretbarste Option, da er den sozialen Zusammenhalt bewahrt. **In Anbetracht** der tief verwurzelten Bindung der Bewohner an ihre Heimat sollten wir auf den **Küstenschutz** setzen, anstatt gewachsene Strukturen vorschnell aufzugeben.",
+        "Zwar ist das Risiko bei extremen Wetterereignissen hoch, doch durch gezielte Investitionen lassen sich Schäden über Jahrzehnte hinweg minimieren. Die lokale Wirtschaft bleibt stabil, und die Bewohner müssen nicht in Kauf nehmen, ihre soziale Identität durch eine erzwungene **Umsiedlung** zu verlieren.",
+        "Schutzmaßnahmen sind gerechtfertigt, solange die technische Machbarkeit gegeben ist und die Kosten im Verhältnis zum Nutzen stehen. Wir müssen jedoch klar kommunizieren, dass dies eine zeitlich befristete Strategie ist, und die Verantwortung für das Restrisiko transparent bei der öffentlichen Hand belassen."
+      ],
+      "b": [
+        "**Die Umsiedlung** ist die einzig verantwortungsvolle Strategie, da sie den Menschen **langfristig** Sicherheit bietet. Wir sollten auf eine geplante Verlagerung setzen, anstatt öffentliche Gelder in den Erhalt von Objekten zu stecken, deren Zerstörung durch den Anstieg des Meeresspiegels **langfristig** **unvermeidbar** ist.",
+        "Kritiker wenden ein, dass dies die lokale Gemeinschaft zerreißt, doch die Alternative ist eine ständige Bedrohung. Indem wir in aufnehmende Stadtteile investieren, schaffen wir neue Perspektiven, anstatt die Konsequenzen einer Katastrophe nur hinauszuzögern, bis die Kosten für den Schutz unbezahlbar werden.",
+        "Eine **Umsiedlung** ist dann geboten, wenn die Risikomodelle eine dauerhafte Bewohnbarkeit ausschließen. Die Entscheidung muss auf wissenschaftlichen Fakten basieren, wobei die öffentliche Hand die Bewohner bei der Suche nach neuem Wohnraum unterstützen muss, um den sozialen Übergang fair zu gestalten."
+      ],
+      "conditional": [
+        "Die Wahl zwischen Schutz und **Umsiedlung** hängt maßgeblich von der geologischen Prognose ab. **Insofern** die Gefahr moderat ist, sollten wir auf Schutzmaßnahmen setzen, um den sozialen Frieden zu wahren, während bei existenziellen Risiken **die Umsiedlung** **unvermeidbar** wird.",
+        "Man könnte einwenden, dass eine solche Unterscheidung zu bürokratisch ist. **Nichtsdestotrotz** ist es notwendig, klare Schwellenwerte zu definieren, ab denen der Schutz nicht mehr **vertretbar** ist. Wer diese Grenzen ignoriert, handelt grob fahrlässig gegenüber den künftigen Generationen.",
+        "Die Entscheidung muss auf einer transparenten Risikobewertung basieren, die sowohl ökonomische als auch soziale Faktoren einbezieht. Wenn die Kosten für den Schutz den Wert der Infrastruktur übersteigen, ist **die Umsiedlung** zwingend. Die öffentliche Hand trägt die Verantwortung, diesen Prozess frühzeitig und sozialverträglich zu moderieren."
+      ]
+    }
+  },
+  {
+    "slug": "urgent-public-notices-translation",
+    "title": "Dringende öffentliche Bekanntmachungen",
+    "prompt": "Eine Behörde muss Verkehrshinweise bei Störungen innerhalb einer Stunde in mehreren Sprachen veröffentlichen. Soll sie maschinengestützte Entwürfe mit sichtbaren Hinweisen veröffentlichen und später aktualisieren, oder Übersetzungen erst nach Prüfung durch Fachkräfte freigeben?",
+    "conditionalPrompt": "Nenne, welche Arten von Missverständnissen tolerierbar sind und was geschehen sollte, wenn keine Prüfer verfügbar sind.",
+    "options": [
+      {
+        "label": "Maschinengestützte Entwürfe",
+        "description": "Veröffentlichung eines kurzen, deutlich gekennzeichneten Entwurfs und Austausch nach der Überprüfung."
+      },
+      {
+        "label": "Geprüfte Übersetzungen",
+        "description": "Veröffentlichung des Originals und Hinzufügen weiterer Sprachen, sobald diese verifiziert wurden."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Bekanntmachung", "eine offizielle Mitteilung an die Öffentlichkeit.", "Die kurzfristige Bekanntmachung der Störung ist für alle Pendler essenziell."],
+        ["das Missverständnis", "eine falsche Interpretation einer Aussage oder Information.", "Ein Missverständnis bei der Übersetzung kann zu gefährlichen Situationen im Verkehr führen."],
+        ["die Sorgfalt", "die gewissenhafte und gründliche Ausführung einer Aufgabe.", "Bei der Übersetzung von Sicherheitshinweisen ist äußerste Sorgfalt geboten."],
+        ["die Verzögerung", "das Hinauszögern oder die Verspätung eines Ablaufs.", "Jede Verzögerung bei der Information führt zu Frustration bei den Reisenden."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas zurückgreifen", "etwas als Hilfsmittel nutzen.", "Wir müssen in Notfällen auf maschinelle Übersetzungen zurückgreifen, um Zeit zu gewinnen."],
+        ["etwas in Betracht ziehen", "etwas als Möglichkeit erwägen.", "Man sollte die Risiken einer ungenauen Übersetzung ernsthaft in Betracht ziehen."],
+        ["sich auf etwas verlassen", "jemandem oder etwas vertrauen.", "Man kann sich bei kritischen Informationen nicht blind auf Algorithmen verlassen."],
+        ["etwas aus dem Weg räumen", "ein Hindernis oder Problem beseitigen.", "Wir müssen alle Unklarheiten in den Hinweisen sofort aus dem Weg räumen."]
+      ],
+      "adjectives": [
+        ["dringend", "sofortiges Handeln erfordernd.", "Es handelt sich um eine dringende Warnung, die sofort verbreitet werden muss."],
+        ["fehleranfällig", "dazu neigend, Fehler zu produzieren.", "Maschinelle Übersetzungen sind oft fehleranfällig, besonders bei komplexen Satzstrukturen."],
+        ["präzise", "genau und exakt.", "Wir benötigen eine präzise Kommunikation, um Panik in der Bevölkerung zu vermeiden."],
+        ["verbindlich", "verpflichtend und gültig.", "Die veröffentlichten Hinweise müssen für alle Nutzer verbindlich sein."]
+      ],
+      "connectors": [
+        ["demnach", "folglich, daher.", "Die Zeit drängt, demnach ist eine schnelle Information wichtiger als Perfektion."],
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der Sicherheitslage ist eine sofortige Information unerlässlich."],
+        ["nichtsdestotrotz", "dennoch, trotz alledem.", "Die Technik ist unvollkommen, nichtsdestotrotz bietet sie einen Mehrwert."],
+        ["insofern", "in dem Maße, wie.", "Die Lösung ist insofern akzeptabel, als sie als vorläufig gekennzeichnet ist."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Veröffentlichung maschinengestützter Entwürfe ist die einzig vertretbare Strategie, um die Bevölkerung bei Notfällen zeitnah zu informieren. **In Anbetracht** der Dringlichkeit ist eine schnelle, wenn auch fehleranfällige Information besser als eine **Verzögerung**, die zu gefährlichen Situationen führen kann.",
+        "Man könnte einwenden, dass ungenaue Übersetzungen zu einem **Missverständnis** führen könnten. **Nichtsdestotrotz** können wir dieses Risiko minimieren, indem wir die Texte als vorläufig kennzeichnen. **Demnach** ist der Nutzen einer sofortigen Warnung höher zu bewerten als die absolute sprachliche Präzision.",
+        "Die Strategie ist **insofern** sinnvoll, als sie den Informationsfluss aufrechterhält. Wir müssen jedoch sicherstellen, dass die Korrekturen unverzüglich nachgereicht werden. Die Verantwortung für die Qualität der endgültigen Fassung muss dabei klar bei der Behörde liegen, die den Prozess überwacht."
+      ],
+      "b": [
+        "Die Veröffentlichung geprüfter Übersetzungen ist zwingend erforderlich, um die Autorität und Verlässlichkeit der Behörde zu wahren. Wir sollten auf eine sorgfältige Prüfung setzen, anstatt fehleranfällige Texte zu verbreiten, die bei den Bürgern für Verwirrung sorgen könnten.",
+        "Zwar führt dies zu einer **Verzögerung**, doch die Qualität der Information ist bei Sicherheitsfragen entscheidend. Wir können uns nicht darauf verlassen, dass die Öffentlichkeit die Fehler in einer maschinellen Übersetzung selbst korrigiert. Eine falsche Anweisung kann fatale Folgen haben, die wir nicht in Kauf nehmen dürfen.",
+        "Die Entscheidung für geprüfte Texte ist dann geboten, wenn die Sicherheit der Bürger direkt von der Korrektheit der Information abhängt. Wir müssen sicherstellen, dass qualifizierte Übersetzer in Bereitschaft stehen, um **die Bekanntmachung** ohne unnötigen Zeitverlust zu verifizieren und freizugeben."
+      ],
+      "conditional": [
+        "Die Wahl zwischen Entwurf und Prüfung hängt von der Schwere der Störung ab. **Insofern** die Situation lebensbedrohlich ist, sollte man auf maschinelle Entwürfe zurückgreifen. Bei weniger kritischen Informationen ist hingegen die geprüfte Übersetzung der Standard, um Missverständnisse zu vermeiden.",
+        "Man könnte einwenden, dass diese Unterscheidung in der Praxis schwer umzusetzen ist. **Nichtsdestotrotz** ist es notwendig, klare Kriterien für die Dringlichkeit festzulegen. Wenn keine Prüfer verfügbar sind, muss die Behörde die Verantwortung für die maschinelle Übersetzung übernehmen und dies explizit kommunizieren.",
+        "Die Entscheidung muss auf einer Risikoanalyse basieren, die den potenziellen Schaden einer falschen Information gegen den Schaden einer **Verzögerung** abwägt. Wenn die Klarheit der Botschaft nicht garantiert werden kann, ist eine sofortige, aber unpräzise Warnung inakzeptabel, da sie mehr Verwirrung stiftet als Nutzen bringt."
+      ]
+    }
+  },
+  {
+    "slug": "citizen-panel-selection",
+    "title": "Auswahl eines Bürgergremiums",
+    "prompt": "Ein Stadtrat möchte ein Beratungsgremium zur Prüfung eines großen Stadtentwicklungsprojekts einsetzen. Sollen die Plätze durch ein geschichtetes Losverfahren vergeben oder durch Nominierungen anerkannter lokaler Organisationen besetzt werden?",
+    "conditionalPrompt": "Unterscheide faire Auswahl von nützlicher Partizipation und entscheide dann, was die Beratung des Gremiums glaubwürdig macht.",
+    "options": [
+      {
+        "label": "Geschichtetes Losverfahren",
+        "description": "Einladung von Bürgern per Zufall, wobei Plätze reserviert werden, um die Mischung aus Stadtteilen und Altersgruppen abzubilden."
+      },
+      {
+        "label": "Nominierung durch Organisationen",
+        "description": "Aufforderung an lokale Gruppen, Personen mit praktischem Wissen und sichtbarer Bindung zu den Vertretenen zu benennen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["das Gremium", "eine Gruppe von Personen, die mit einer bestimmten Aufgabe betraut ist.", "Das Gremium soll die Auswirkungen des Bauprojekts kritisch hinterfragen."],
+        ["die Partizipation", "die aktive Beteiligung an Entscheidungsprozessen.", "Eine echte Partizipation erfordert, dass die Bürger ihre Anliegen direkt einbringen können."],
+        ["die Glaubwürdigkeit", "die Eigenschaft, vertrauenswürdig und glaubhaft zu sein.", "Die Glaubwürdigkeit des Gremiums hängt von der Unabhängigkeit seiner Mitglieder ab."],
+        ["die Repräsentation", "die Vertretung von Interessen oder Bevölkerungsgruppen.", "Eine ausgewogene Repräsentation ist für die Akzeptanz des Projekts entscheidend."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas hinauslaufen", "ein bestimmtes Ergebnis zur Folge haben.", "Die Diskussion läuft letztlich darauf hinaus, ob das Projekt den Bürgern dient."],
+        ["etwas in den Vordergrund stellen", "etwas besonders betonen oder wichtig machen.", "Wir sollten die fachliche Expertise der Mitglieder in den Vordergrund stellen."],
+        ["sich für etwas einsetzen", "sich engagiert für ein Ziel verwenden.", "Die Organisationen setzen sich für die Interessen ihrer Mitglieder ein."],
+        ["etwas zur Sprache bringen", "ein Thema ansprechen oder diskutieren.", "Die Bürger müssen ihre Bedenken im Gremium zur Sprache bringen können."]
+      ],
+      "adjectives": [
+        ["geschichtet", "in Gruppen oder Schichten unterteilt.", "Das geschichtete Losverfahren stellt sicher, dass alle Altersgruppen vertreten sind."],
+        ["sichtbar", "deutlich erkennbar.", "Die Verbindung der Mitglieder zu ihrem Stadtteil muss für alle sichtbar sein."],
+        ["praktisch", "auf die Anwendung bezogen.", "Die Mitglieder benötigen praktisches Wissen über die lokalen Gegebenheiten."],
+        ["unabhängig", "nicht von anderen beeinflusst.", "Ein unabhängiges Gremium ist die Voraussetzung für eine objektive Beratung."]
+      ],
+      "connectors": [
+        ["demzufolge", "als Folge davon.", "Die Auswahl ist zufällig, demzufolge ist die Repräsentation statistisch ausgewogen."],
+        ["insofern", "in dem Maße, wie.", "Das Verfahren ist insofern fair, als jeder Bürger die gleiche Chance hat."],
+        ["nichtsdestotrotz", "dennoch, trotz alledem.", "Die Organisationen haben ihre eigenen Interessen, nichtsdestotrotz verfügen sie über wertvolles Wissen."],
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der Komplexität des Projekts benötigen wir fachkundige Mitglieder."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Das geschichtete Losverfahren ist die fairste Methode, um ein **Gremium** zu besetzen, da es jedem Bürger die gleiche Chance auf **Partizipation** bietet. **In Anbetracht** der Notwendigkeit einer breiten **Repräsentation** sollten wir auf das Los setzen, anstatt die Auswahl auf etablierte Organisationen zu beschränken.",
+        "Zwar fehlt den gelosten Bürgern oft das spezifische Fachwissen, doch dies lässt sich durch Expertenanhörungen ausgleichen. **Die Glaubwürdigkeit** des Gremiums steigt, wenn die Mitglieder nicht als verlängerter Arm von Interessengruppen agieren, sondern als unabhängige Stimme der gesamten Stadtbevölkerung.",
+        "Ein solches Verfahren ist **insofern** sinnvoll, als es die Vielfalt der Perspektiven widerspiegelt. Wir müssen jedoch sicherstellen, dass die gelosten Personen durch Schulungen in die Lage versetzt werden, die komplexen Unterlagen zu verstehen und fundierte Empfehlungen abzugeben."
+      ],
+      "b": [
+        "Die Nominierung durch lokale Organisationen ist der einzig effektive Weg, um ein **Gremium** mit praktischem Wissen zu besetzen. Wir sollten auf die Expertise der Gruppen setzen, die seit Jahren in den Stadtteilen aktiv sind und eine sichtbare Bindung zu den Anwohnern haben.",
+        "Kritiker wenden ein, dass dies die Auswahl einschränkt, doch **die Partizipation** ist nur dann nützlich, wenn die Mitglieder die Probleme der Menschen wirklich verstehen. Ein zufällig zusammengesetztes **Gremium** läuft Gefahr, an der Realität vorbeizureden, während nominierte Vertreter die Interessen ihrer Gemeinschaft kompetent einbringen.",
+        "Die Nominierung ist dann geboten, wenn es um hochspezialisierte städtebauliche Fragen geht. **Die Glaubwürdigkeit** des Gremiums wird dadurch gestärkt, dass die Mitglieder ihren Wählern gegenüber rechenschaftspflichtig sind und somit eine echte Verbindung zwischen der Planung und der betroffenen Bevölkerung herstellen."
+      ],
+      "conditional": [
+        "Die Wahl zwischen Losverfahren und Nominierung hängt von der Zielsetzung des Gremiums ab. **Insofern** das Ziel eine breite demokratische Legitimation ist, ist das Losverfahren überlegen. Soll **das Gremium** hingegen komplexe technische Probleme lösen, ist die Nominierung von Fachleuten durch Organisationen vorzuziehen.",
+        "Man könnte einwenden, dass beides wichtig ist. **Nichtsdestotrotz** müssen wir uns für einen Schwerpunkt entscheiden. Eine faire Auswahl garantiert noch keine nützliche **Partizipation**, wenn die Mitglieder überfordert sind. Umgekehrt kann eine fachlich kompetente Gruppe an **Glaubwürdigkeit** verlieren, wenn sie als elitär wahrgenommen wird.",
+        "Die Entscheidung muss darauf basieren, was die Beratung für die Öffentlichkeit glaubwürdig macht. Ein hybrides Modell, bei dem ein Teil der Plätze gelost und ein Teil durch Organisationen besetzt wird, könnte die Vorteile beider Ansätze vereinen und so sowohl Fairness als auch Kompetenz sicherstellen."
+      ]
+    }
+  },
+  {
+    "slug": "policy-forecast-uncertainty",
+    "title": "Unsicherheit bei Prognosen",
+    "prompt": "Ein öffentliches Haushaltsbüro muss die möglichen Kosten einer neuen Politik erklären. Soll es mit einer Referenzzahl führen und Unsicherheiten in einen Anhang auslagern, oder mehrere plausible Szenarien präsentieren, ohne eine Hauptzahl zu wählen?",
+    "conditionalPrompt": "Erkläre, wie du Unsicherheit kommunizieren würdest, ohne die Öffentlichkeit unfähig zu machen, die Schätzung zu nutzen.",
+    "options": [
+      {
+        "label": "Referenzzahl",
+        "description": "Bereitstellung einer gemeinsamen Planungszahl für Entscheidungsträger und Erläuterung anderer Möglichkeiten in den technischen Notizen."
+      },
+      {
+        "label": "Szenarien",
+        "description": "Aufzeigen, wie Annahmen die Kosten verändern, und Aufforderung an das Publikum, die Bandbreite zu berücksichtigen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Prognose", "eine Vorhersage über die zukünftige Entwicklung.", "Die Prognose der Kosten ist aufgrund der wirtschaftlichen Lage sehr schwierig."],
+        ["die Unsicherheit", "der Zustand, in dem Informationen oder Ergebnisse nicht sicher sind.", "Wir müssen die Unsicherheit unserer Schätzungen offen kommunizieren."],
+        ["die Annahme", "eine Voraussetzung, die als wahr angenommen wird.", "Die gesamte Berechnung basiert auf der Annahme, dass die Inflation stabil bleibt."],
+        ["die Bandbreite", "der Bereich zwischen einem Minimum und einem Maximum.", "Die Bandbreite der möglichen Kosten ist so groß, dass eine einzige Zahl irreführend wäre."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas hinauslaufen", "ein bestimmtes Ergebnis zur Folge haben.", "Die Debatte läuft darauf hinaus, wie viel Transparenz die Öffentlichkeit verträgt."],
+        ["etwas in den Vordergrund stellen", "etwas besonders betonen.", "Wir sollten die realistischste Schätzung in den Vordergrund stellen."],
+        ["sich auf etwas stützen", "etwas als Grundlage verwenden.", "Die Entscheidungsträger stützen sich auf die Referenzzahl, um planen zu können."],
+        ["etwas aus dem Weg räumen", "ein Hindernis beseitigen.", "Wir müssen alle Zweifel an der Methodik aus dem Weg räumen."]
+      ],
+      "adjectives": [
+        ["plausibel", "glaubwürdig und nachvollziehbar.", "Wir müssen mehrere plausible Szenarien entwickeln, um die Risiken abzubilden."],
+        ["technisch", "die Technik oder Fachmethodik betreffend.", "Die technischen Details der Berechnung sind für Laien oft schwer verständlich."],
+        ["irreführend", "zu einem falschen Schluss führend.", "Eine einzelne Zahl ohne Kontext kann für die Öffentlichkeit irreführend sein."],
+        ["transparent", "durchsichtig und nachvollziehbar.", "Die Kommunikation der Haushaltszahlen muss absolut transparent sein."]
+      ],
+      "connectors": [
+        ["demzufolge", "als Folge davon.", "Die Annahmen sind unsicher, demzufolge müssen wir verschiedene Szenarien zeigen."],
+        ["insofern", "in dem Maße, wie.", "Die Schätzung ist insofern nützlich, als sie die Größenordnung verdeutlicht."],
+        ["nichtsdestotrotz", "dennoch, trotz alledem.", "Die Unsicherheit ist hoch, nichtsdestotrotz benötigen wir eine Orientierungshilfe."],
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der politischen Tragweite müssen wir mehrere Szenarien präsentieren."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Verwendung einer Referenzzahl ist die einzig praktikable Methode, um Entscheidungsträgern eine klare Orientierung zu bieten. **In Anbetracht** der Komplexität politischer Prozesse sollten wir auf eine zentrale Zahl setzen, anstatt die Öffentlichkeit mit einer Vielzahl von Szenarien zu überfordern.",
+        "Zwar ist jede Schätzung mit **Unsicherheit** behaftet, doch diese lässt sich in den technischen Notizen **transparent** darlegen. Die Entscheidungsträger stützen sich auf eine klare Vorgabe, um Budgets zu planen, und würden durch eine **Bandbreite** an Möglichkeiten eher in die Irre geführt als unterstützt.",
+        "Die Referenzzahl ist **insofern** sinnvoll, als sie eine gemeinsame Basis für die politische Debatte schafft. Wir müssen jedoch explizit darauf hinweisen, dass es sich um eine Schätzung handelt, die von bestimmten Annahmen abhängt, und die Risiken im Anhang detailliert erläutern."
+      ],
+      "b": [
+        "Die Präsentation mehrerer Szenarien ist der einzig ehrliche Weg, um **die Unsicherheit** einer neuen Politik abzubilden. Wir sollten auf die Darstellung einer **Bandbreite** setzen, anstatt eine einzelne Zahl in den Vordergrund zu stellen, die den Anschein einer falschen Präzision erweckt.",
+        "Kritiker wenden ein, dass dies die Entscheidung erschwert, doch die Öffentlichkeit muss verstehen, wie Annahmen die Kosten beeinflussen. Eine einzelne Referenzzahl ist oft **irreführend**, da sie die Realität auf einen Punkt reduziert, der in der Praxis kaum eintreten wird.",
+        "Die Szenarien sind dann geboten, wenn die Kosten stark von variablen Faktoren abhängen. Indem wir die verschiedenen Möglichkeiten aufzeigen, befähigen wir das Publikum, die Risiken selbst einzuschätzen und die politische Entscheidung auf eine breitere Informationsbasis zu stellen."
+      ],
+      "conditional": [
+        "Die Wahl zwischen Referenzzahl und Szenarien hängt von der Zielgruppe ab. **Insofern** sich die Kommunikation an Fachleute richtet, sind Szenarien vorzuziehen. Für die breite Öffentlichkeit ist hingegen eine Referenzzahl als Ankerpunkt notwendig, um die politische Diskussion überhaupt zu ermöglichen.",
+        "Man könnte einwenden, dass dies zu einer Informationsasymmetrie führt. **Nichtsdestotrotz** ist es notwendig, die Komplexität zu reduzieren, ohne die Wahrheit zu verschleiern. Wenn wir **Unsicherheit** kommunizieren, müssen wir den Kontext liefern, damit die Zahlen nicht falsch interpretiert werden.",
+        "Die Entscheidung muss darauf basieren, wie die Öffentlichkeit die Schätzung nutzen soll. Ein guter Kompromiss ist die Angabe einer Referenzzahl, die jedoch als Mittelwert einer plausiblen **Bandbreite** präsentiert wird, wobei die wichtigsten Annahmen und deren Auswirkungen auf die Kosten **transparent** gemacht werden."
+      ]
+    }
+  },
+  {
+    "slug": "adaptation-investment-equity-test",
+    "title": "Anpassungsinvestitionen und Gerechtigkeit",
+    "prompt": "Eine Region kann nicht jedes Projekt zur Verringerung von Störungen durch extremes Wetter finanzieren. Sollen Projekte nach Nutzen pro Ausgabeneinheit eingestuft oder Gemeinschaften priorisiert werden, in denen die Bewohner die wenigsten Alternativen haben?",
+    "conditionalPrompt": "Entscheide, wie man weit verbreitete bescheidene Gewinne mit konzentrierten Verlusten vergleicht und wo ein Schwellenwert die Priorität ändern würde.",
+    "options": [
+      {
+        "label": "Effizienz-Ranking",
+        "description": "Finanzierung von Projekten mit der höchsten geschätzten Schadensminderung für das verfügbare Budget."
+      },
+      {
+        "label": "Bedürftigkeits-Test",
+        "description": "Finanzierung von Projekten für Gemeinschaften mit begrenzten Ressourcen oder Optionen, unter Anwendung eines Tests auf praktische Wirksamkeit."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Anpassung", "die Reaktion auf veränderte Umweltbedingungen.", "Die Anpassung an den Klimawandel erfordert enorme finanzielle Anstrengungen."],
+        ["die Gerechtigkeit", "die faire Verteilung von Ressourcen oder Chancen.", "Die Gerechtigkeit gebietet es, auch schwächere Gemeinschaften zu unterstützen."],
+        ["die Wirksamkeit", "die Fähigkeit, ein gewünschtes Ergebnis zu erzielen.", "Wir müssen die Wirksamkeit jedes Projekts vor der Finanzierung prüfen."],
+        ["die Alternative", "eine andere Möglichkeit oder Option.", "Die Bewohner haben kaum eine Alternative, wenn ihr Wohnort überflutet wird."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas setzen", "eine Strategie wählen.", "Wir sollten auf eine gerechte Verteilung der Mittel setzen."],
+        ["etwas in den Vordergrund stellen", "etwas besonders betonen.", "Wir müssen die soziale Gerechtigkeit in den Vordergrund stellen."],
+        ["sich für etwas einsetzen", "sich engagieren.", "Die Behörden setzen sich für den Schutz der gefährdeten Gebiete ein."],
+        ["etwas aus dem Weg räumen", "Hindernisse beseitigen.", "Wir müssen bürokratische Hürden aus dem Weg räumen, um schnell zu helfen."]
+      ],
+      "adjectives": [
+        ["konzentriert", "auf einen Punkt oder Bereich fokussiert.", "Die Verluste sind in bestimmten Gebieten sehr konzentriert."],
+        ["bescheiden", "einfach oder geringfügig.", "Wir erzielen viele bescheidene Gewinne durch kleine Schutzmaßnahmen."],
+        ["praktisch", "auf die Anwendung bezogen.", "Die Lösung muss eine praktische Wirksamkeit aufweisen."],
+        ["verfügbar", "vorhanden und nutzbar.", "Das verfügbare Budget reicht nicht für alle notwendigen Projekte aus."]
+      ],
+      "connectors": [
+        ["demzufolge", "als Folge davon.", "Die Mittel sind knapp, demzufolge müssen wir Prioritäten setzen."],
+        ["insofern", "in dem Maße, wie.", "Das Projekt ist insofern sinnvoll, als es die größten Schäden verhindert."],
+        ["nichtsdestotrotz", "dennoch, trotz alledem.", "Die Effizienz ist wichtig, nichtsdestotrotz müssen wir soziale Härten vermeiden."],
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der begrenzten Ressourcen müssen wir klug entscheiden."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Das Effizienz-Ranking ist die einzig rationale Strategie, um den Gesamtschaden durch extremes Wetter zu minimieren. **In Anbetracht** der begrenzten Mittel sollten wir auf Projekte setzen, die den höchsten Nutzen pro Ausgabeneinheit versprechen, anstatt Gelder in ineffiziente Maßnahmen zu investieren.",
+        "Zwar ist dies für einige Gemeinschaften hart, doch wir müssen das Gesamtwohl im Blick behalten. Wenn wir die knappen Ressourcen dort einsetzen, wo sie die größte Wirkung entfalten, schützen wir die Region als Ganzes am effektivsten. Wir können es uns nicht leisten, die Effizienz zugunsten anderer Ziele zu opfern.",
+        "Das Ranking ist **insofern** sinnvoll, als es eine objektive Entscheidungsgrundlage schafft. Wir müssen jedoch sicherstellen, dass die Schadensberechnung alle relevanten Faktoren einbezieht, einschließlich der langfristigen wirtschaftlichen Folgen, um eine faire Verteilung der Mittel zu gewährleisten."
+      ],
+      "b": [
+        "Der Bedürftigkeits-Test ist der einzig gerechte Ansatz, da er den Schutz derjenigen priorisiert, die die wenigsten Alternativen haben. Wir sollten auf die Unterstützung schwacher Gemeinschaften setzen, anstatt nur die Effizienz der Investitionen in den Vordergrund zu stellen.",
+        "Kritiker wenden ein, dass dies weniger Gesamtschaden verhindert, doch die soziale **Gerechtigkeit** ist ein höheres Gut. Wenn wir Gemeinschaften mit begrenzten Ressourcen im Stich lassen, riskieren wir eine soziale Spaltung, die langfristig teurer ist als jede ineffiziente Investition. Wir müssen die praktische **Wirksamkeit** prüfen, aber die soziale Notlage als entscheidendes Kriterium werten.",
+        "Dieser Test ist dann geboten, wenn die Ungleichheit in der Region groß ist. Die Priorisierung muss sicherstellen, dass die Hilfe dort ankommt, wo sie am dringendsten benötigt wird, um die Lebensgrundlagen der Menschen zu sichern, die sich aus eigener Kraft nicht schützen können."
+      ],
+      "conditional": [
+        "Die Wahl zwischen Effizienz und Bedürftigkeit hängt von der Schwere der sozialen Ungleichheit ab. **Insofern** die Region homogen ist, ist das Effizienz-Ranking überlegen. Bei einer starken sozialen Schichtung ist hingegen der Bedürftigkeits-Test zwingend, um niemanden zurückzulassen.",
+        "Man könnte einwenden, dass ein solcher Test die Effizienz untergräbt. **Nichtsdestotrotz** ist es notwendig, einen Schwellenwert für die soziale Notlage zu definieren, ab dem die Bedürftigkeit die Effizienz überwiegt. Wenn wir weit verbreitete bescheidene Gewinne gegen konzentrierte Verluste abwägen, müssen wir die menschliche Dimension einbeziehen.",
+        "Die Entscheidung muss auf einer umfassenden Analyse basieren, die sowohl ökonomische als auch soziale Kriterien integriert. Ein Modell, das eine Mindesteffizienz für alle Projekte fordert, aber bei der Priorisierung die soziale Lage berücksichtigt, ist der beste Weg, um sowohl ökonomische Vernunft als auch soziale **Gerechtigkeit** zu vereinen."
+      ]
+    }
+  },
+  {
+    "slug": "ecological-composite-or-minimum-targets",
+    "title": "Gesamtbewertung oder Einzelziele für Habitate?",
+    "prompt": "Ein Regionalplan muss den Zustand von Flüssen, Wäldern und städtischen Lebensräumen erfassen. Sollte man einen Gesamtindex verwenden, bei dem Gewinne Verluste ausgleichen können, oder strikte Mindestziele für jedes Habitat festlegen?",
+    "conditionalPrompt": "Entscheide, in welchen Fällen ökologische Gewinne Verluste legitim ausgleichen können und wo ein solcher Vergleich methodisch unzulässig ist.",
+    "options": [
+      {
+        "label": "Gesamtindex",
+        "description": "Maßnahmen werden gewichtet und ein Gesamttrend wird visualisiert."
+      },
+      {
+        "label": "Mindestziele",
+        "description": "Schwellenwerte werden für jedes Habitat einzeln definiert und überwacht."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Schwellenwert", "Grenze, die nicht unterschritten werden darf", "Der Schwellenwert für die Wasserqualität wurde im letzten Jahr deutlich unterschritten."],
+        ["die Kompensation", "Ausgleich für einen erlittenen Nachteil", "Eine ökologische Kompensation ist nur dann sinnvoll, wenn die Qualität des Habitats vergleichbar bleibt."],
+        ["die Gewichtung", "Zuweisung von Bedeutung oder Wert", "Die Gewichtung der verschiedenen Umweltfaktoren muss transparent und wissenschaftlich fundiert sein."],
+        ["das Habitat", "natürlicher Lebensraum einer Art", "Der Schutz für dieses spezifische Habitat ist für den Erhalt der Artenvielfalt essenziell."]
+      ],
+      "phrasalVerbs": [
+        ["ausgleichen durch", "einen Mangel beheben", "Man kann den Verlust an Waldfläche nicht einfach durch die Begrünung von Dächern ausgleichen."],
+        ["zurückgreifen auf", "etwas als Hilfsmittel nutzen", "Wir müssen bei der Datenanalyse auf bewährte statistische Methoden zurückgreifen."],
+        ["ausfallen unter", "einen bestimmten Wert unterschreiten", "Wenn die Biodiversitätsrate unter den Durchschnitt ausfällt, müssen sofort Schutzmaßnahmen eingeleitet werden."],
+        ["sich niederschlagen in", "sichtbar werden in einem Ergebnis", "Die positiven Effekte der Renaturierung schlagen sich erst nach Jahren in den Daten nieder."]
+      ],
+      "adjectives": [
+        ["ökologisch", "die Umwelt betreffend", "Ein ökologisch nachhaltiger Plan berücksichtigt die langfristigen Auswirkungen auf das Ökosystem."],
+        ["transparent", "durchsichtig, nachvollziehbar", "Die Entscheidungsprozesse der Behörde müssen für alle Bürger transparent gestaltet sein."],
+        ["methodisch", "nach einer bestimmten Methode vorgehend", "Eine methodisch saubere Auswertung ist die Voraussetzung für jede politische Entscheidung."],
+        ["vergleichbar", "in Bezug auf Eigenschaften ähnlich", "Die Daten aus verschiedenen Regionen sind aufgrund unterschiedlicher Messverfahren kaum vergleichbar."]
+      ],
+      "connectors": [
+        ["infolgedessen", "als logische Folge", "Die Mittel wurden gekürzt; infolgedessen konnten die geplanten Schutzmaßnahmen nicht umgesetzt werden."],
+        ["demgegenüber", "im Vergleich dazu", "Die Befürworter betonen die Effizienz; demgegenüber warnen Kritiker vor einem Verlust an Detailgenauigkeit."],
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Die Datenlage ist lückenhaft; nichtsdestotrotz müssen wir eine fundierte Entscheidung treffen."],
+        ["beziehungsweise", "oder genauer gesagt", "Wir müssen die lokalen Habitate beziehungsweise deren spezifische Schutzbedürfnisse genau analysieren."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Ein Gesamtindex bietet den Vorteil, dass er die ökologische Entwicklung einer Region auf einen Blick erfassbar macht. Durch **die Gewichtung** verschiedener Faktoren lässt sich ein klarer Trend ableiten, der politische Prioritäten vereinfacht.",
+        "Wenn man ökologische Gewinne gegen Verluste aufrechnet, kann man Ressourcen effizienter dort einsetzen, wo sie den größten Nutzen stiften. Ein solcher Ansatz verhindert, dass man sich in Details verliert, während das große Ganze aus dem Blick gerät.",
+        "Letztlich ist ein Gesamtindex die pragmatischste Lösung, sofern **die Gewichtung** **transparent** bleibt. Er erlaubt es, Fortschritte messbar zu machen, ohne die Komplexität der Natur durch starre Einzelvorgaben zu ersticken, solange der Gesamttrend positiv bleibt."
+      ],
+      "b": [
+        "Strikte Mindestziele für jedes **Habitat** sind unerlässlich, um das Aussterben lokaler Arten durch eine rein statistische Verrechnung zu verhindern. Ein Gesamtindex verschleiert oft, dass ein florierender Wald den Verlust eines wichtigen Flusshabitats nicht kompensieren kann.",
+        "Indem man für jeden Lebensraum spezifische Schwellenwerte definiert, zwingt man die Planer dazu, auch weniger populäre Gebiete zu schützen. Nur so lässt sich sicherstellen, dass kein **Habitat** unter ein kritisches Niveau fällt, was bei einer bloßen Gesamtbewertung leicht übersehen würde.",
+        "Die Entscheidung für Mindestziele ist daher die einzige ethisch vertretbare Wahl. Sie garantiert, dass ökologische Integrität nicht gegen kurzfristige Erfolge eingetauscht wird, und stellt sicher, dass jeder Lebensraum für sich genommen geschützt bleibt."
+      ],
+      "conditional": [
+        "Wenn man einen Gesamtindex wählt, kann man eine **ökologische** **Kompensation** zwischen verschiedenen Gebieten vornehmen. Dies ist sinnvoll, wenn man eine **methodisch** klare **Gewichtung** der Gesamtsituation anstrebt.",
+        "Wenn jedoch der Schutz eines spezifischen **Habitats** Priorität hat, ist ein **Schwellenwert** zwingend. **Demgegenüber** würde ein Gesamtindex Verluste in einem Bereich durch Gewinne in einem anderen kaschieren, was **ökologisch** riskant ist.",
+        "Der entscheidende Faktor ist die Substituierbarkeit. Wo ein **Habitat** einzigartig ist, muss der **Schwellenwert** gelten; wo Funktionen **vergleichbar** sind, bietet der Index eine **methodisch** effiziente Steuerung."
+      ]
+    }
+  },
+  {
+    "slug": "public-contract-low-bid-or-life-cycle",
+    "title": "Billigster Anbieter oder Lebenszykluskosten?",
+    "prompt": "Eine öffentliche Einrichtung beschafft Ausrüstung für eine zehnjährige Nutzung. Sollte sie den günstigsten Anbieter wählen oder die Kosten für Reparaturen, Ausfallzeiten und Ersatz in ein transparentes Bewertungsmodell integrieren?",
+    "conditionalPrompt": "Entscheide, welche Nachweise für eine langfristige Kostenschätzung ausreichen und wie man mit Anbietern umgeht, deren Daten schwer vergleichbar sind.",
+    "options": [
+      {
+        "label": "Niedrigster Preis",
+        "description": "Mindestqualitätsstandards werden gesetzt und der günstigste Anbieter gewählt."
+      },
+      {
+        "label": "Lebenszykluskosten",
+        "description": "Anschaffungskosten werden mit Wartungs-, Ausfall- und Ersatzkosten verrechnet."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Anschaffung", "Erwerb von Gütern", "Die Anschaffung neuer technischer Geräte erfordert eine sorgfältige Budgetplanung."],
+        ["die Instandhaltung", "Maßnahmen zur Erhaltung des Zustands", "Die Kosten für die Instandhaltung steigen bei minderwertigen Produkten oft überproportional an."],
+        ["die Ausfallzeit", "Zeitraum, in dem ein System nicht funktioniert", "Jede Ausfallzeit der Maschinen führt zu erheblichen Verzögerungen im gesamten Betriebsablauf."],
+        ["die Ausschreibung", "öffentliches Verfahren zur Vergabe von Aufträgen", "Die Ausschreibung muss so gestaltet sein, dass sie sowohl Qualität als auch Wirtschaftlichkeit berücksichtigt."]
+      ],
+      "phrasalVerbs": [
+        ["einbeziehen in", "etwas als Teil von etwas anderem betrachten", "Wir müssen die langfristigen Betriebskosten in unsere Kalkulation einbeziehen."],
+        ["zurückgreifen auf", "etwas als Hilfsmittel nutzen", "Bei der Bewertung der Angebote können wir auf Erfahrungen aus früheren Projekten zurückgreifen."],
+        ["sich herausstellen als", "sich im Nachhinein erweisen", "Das vermeintlich günstige Angebot stellte sich nach zwei Jahren als teure Fehlinvestition heraus."],
+        ["abwägen gegen", "zwei Dinge vergleichen", "Man muss den niedrigen Kaufpreis gegen die potenziellen Risiken hoher Reparaturkosten abwägen."]
+      ],
+      "adjectives": [
+        ["wirtschaftlich", "ökonomisch sinnvoll", "Eine wirtschaftliche Entscheidung berücksichtigt nicht nur den Preis, sondern auch die Folgekosten."],
+        ["qualitativ", "die Qualität betreffend", "Die qualitativ hochwertigen Geräte haben zwar einen höheren Preis, halten aber deutlich länger."],
+        ["transparent", "durchsichtig, nachvollziehbar", "Ein transparentes Bewertungsmodell schützt die öffentliche Hand vor Korruptionsvorwürfen."],
+        ["zuverlässig", "vertrauenswürdig, sicher", "Wir benötigen zuverlässige Daten über die Lebensdauer der Ausrüstung, um fundierte Entscheidungen zu treffen."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Folge", "Die Qualität war mangelhaft; folglich stiegen die Reparaturkosten massiv an."],
+        ["demgegenüber", "im Vergleich dazu", "Der Anschaffungspreis ist niedrig; demgegenüber stehen hohe laufende Betriebskosten."],
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Die Daten sind unvollständig; nichtsdestotrotz ist eine Entscheidung über den Auftrag notwendig."],
+        ["beziehungsweise", "oder genauer gesagt", "Wir müssen die Wartungskosten beziehungsweise die Kosten für Ersatzteile genau prüfen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Der Fokus auf den niedrigsten Preis bei der **Ausschreibung** ist der sicherste Weg, um **wirtschaftlich** zu handeln. Durch klare Mindeststandards stellen wir sicher, dass die **Anschaffung** **qualitativ** den Anforderungen genügt.",
+        "Wenn wir den günstigsten Anbieter wählen, vermeiden wir zudem die subjektive Bewertung von Prognosen über die **Instandhaltung**. Diese sind oft spekulativ und können sich als **unzuverlässig** herausstellen, wenn man sie gegen den Preis **abwägt**.",
+        "Letztlich ist der niedrigste Preis das objektivste Kriterium. Er bietet eine **transparente** Basis für den Vergleich und schützt die öffentliche Hand vor den Risiken komplexer Berechnungen, sofern die **Anschaffung** strikt kontrolliert wird."
+      ],
+      "b": [
+        "Die Integration von Lebenszykluskosten in die **Ausschreibung** ist der einzig verantwortungsvolle Weg, um den wahren Wert zu erfassen. Eine günstige **Anschaffung** ist wertlos, wenn die **Instandhaltung** hohe Kosten verursacht.",
+        "Indem wir **Ausfallzeiten** in ein Modell **einbeziehen**, schaffen wir einen Anreiz für Anbieter, **zuverlässige** Produkte zu liefern. Dies fördert Innovationen und ist langfristig **wirtschaftlich** sinnvoller als der reine Preisvergleich.",
+        "Die Entscheidung für Lebenszykluskosten ist daher **transparent** und zukunftsorientiert. Sie stellt sicher, dass wir nicht an der falschen Stelle sparen, während wir gleichzeitig die **Instandhaltung** und **Ausfallzeit** minimieren."
+      ],
+      "conditional": [
+        "Wenn es sich um standardisierte Produkte handelt, ist der Preis bei der **Ausschreibung** ein verlässlicher Indikator. Hier ist die **Anschaffung** **wirtschaftlich** am besten durch den niedrigsten Preis zu steuern.",
+        "Wenn es jedoch um komplexe Systeme geht, ist der Preis allein irreführend. Hier müssen wir die **Instandhaltung** und **Ausfallzeit** **einbeziehen**, um eine **transparente** Kostenübersicht zu erhalten.",
+        "Der entscheidende Faktor ist die Prognosefähigkeit. Wo Daten über **Ausfallzeiten** vorliegen, sind Lebenszykluskosten der Standard; wo diese fehlen, ist der Preis das einzige **zuverlässige** Kriterium."
+      ]
+    }
+  },
+  {
+    "slug": "centralise-public-service-or-local-offices",
+    "title": "Zentralisierung oder lokale Präsenz?",
+    "prompt": "Mehrere Städte teilen sich einen öffentlichen Beratungsdienst. Sollten sie spezialisiertes Personal in einem regionalen Zentrum bündeln oder kleine lokale Büros beibehalten, die Routinefälle bearbeiten und schwierige Fälle weiterleiten?",
+    "conditionalPrompt": "Entscheide, wo Skaleneffekte überwiegen und wo lokale Kenntnisse oder persönlicher Zugang für die Entscheidungsfindung unerlässlich sind.",
+    "options": [
+      {
+        "label": "Zentralisierung",
+        "description": "Spezialisten werden gebündelt und Städte ohne Büro nutzen digitale Kanäle."
+      },
+      {
+        "label": "Lokale Präsenz",
+        "description": "Lokale Teams bearbeiten Routinefälle und leiten komplexe Anfragen weiter."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Skaleneffekte", "Kostenvorteile durch größere Produktionsmengen", "Durch die Zentralisierung lassen sich erhebliche Skaleneffekte erzielen, die das Budget entlasten."],
+        ["die Präsenz", "Anwesenheit vor Ort", "Die physische Präsenz in den Städten stärkt das Vertrauen der Bürger in die Verwaltung."],
+        ["die Routine", "wiederkehrende, standardisierte Abläufe", "Die Bearbeitung von Routinefällen kann effizient durch standardisierte Prozesse abgewickelt werden."],
+        ["der Zugang", "Möglichkeit der Nutzung oder des Eintritts", "Ein barrierefreier Zugang zu Beratungsdiensten ist für ältere Menschen besonders wichtig."]
+      ],
+      "phrasalVerbs": [
+        ["bündeln in", "zusammenführen an einem Ort", "Wir müssen das Fachwissen in einem Zentrum bündeln, um die Qualität zu steigern."],
+        ["zurückgreifen auf", "etwas als Hilfsmittel nutzen", "Bei komplexen Anfragen können die lokalen Büros auf das Expertenwissen der Zentrale zurückgreifen."],
+        ["sich niederschlagen in", "sichtbar werden in einem Ergebnis", "Die Einsparungen durch die Zentralisierung schlagen sich direkt im Haushalt nieder."],
+        ["abwägen gegen", "zwei Dinge vergleichen", "Man muss die Effizienz der Zentralisierung gegen den Verlust an lokaler Nähe abwägen."]
+      ],
+      "adjectives": [
+        ["spezialisiert", "auf ein Fachgebiet ausgerichtet", "Das spezialisierte Personal in der Zentrale kann auch schwierigste Fälle kompetent lösen."],
+        ["effizient", "mit geringem Aufwand viel erreichend", "Ein effizienter Beratungsdienst nutzt digitale Kanäle, um Wartezeiten zu verkürzen."],
+        ["lokal", "vor Ort stattfindend", "Die lokale Verankerung der Beratungsstellen ist für die Akzeptanz der Dienstleistung entscheidend."],
+        ["komplex", "vielschichtig, kompliziert", "Bei komplexen Anliegen ist ein persönliches Gespräch oft hilfreicher als eine digitale Beratung."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Folge", "Die Büros wurden geschlossen; folglich mussten die Bürger weitere Wege in Kauf nehmen."],
+        ["demgegenüber", "im Vergleich dazu", "Die Zentrale spart Kosten; demgegenüber steht der Verlust an persönlicher Beratung vor Ort."],
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Die Digitalisierung schreitet voran; nichtsdestotrotz bleibt der Bedarf an persönlichem Kontakt bestehen."],
+        ["beziehungsweise", "oder genauer gesagt", "Wir müssen die Routineanfragen beziehungsweise die komplexen Fälle unterschiedlich behandeln."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Zentralisierung des Fachpersonals in einem regionalen Zentrum ist der effizienteste Weg, um eine gleichbleibend hohe Beratungsqualität sicherzustellen. Durch die Bündelung von Expertenwissen können wir **Skaleneffekte** nutzen, die in kleinen, isolierten Büros schlichtweg nicht möglich wären.",
+        "Digitale Kanäle wie Telefon oder Video ermöglichen es zudem, dass Bürger in Städten ohne eigenes Büro dennoch **Zugang** zu hochspezialisierter Beratung erhalten. Dies demokratisiert den **Zugang** zu Expertenwissen und macht den Dienst unabhängig von geografischen Grenzen.",
+        "Die Entscheidung für ein zentrales Modell ist daher zukunftsweisend. Sie erlaubt es, Ressourcen dort einzusetzen, wo sie am meisten bewirken, und stellt sicher, dass komplexe Anfragen stets von den qualifiziertesten Mitarbeitern bearbeitet werden, anstatt sie auf unterbesetzte lokale Büros zu verteilen."
+      ],
+      "b": [
+        "Die Beibehaltung lokaler Büros ist entscheidend, um den persönlichen **Zugang** zu öffentlichen Dienstleistungen zu gewährleisten. Viele Bürger, insbesondere in schwierigen Lebenslagen, benötigen ein direktes Gespräch vor Ort, das durch digitale Kanäle nicht ersetzt werden kann.",
+        "Lokale Teams können Routinefälle schnell und unbürokratisch lösen, während sie bei komplexen Anfragen auf die Expertise der Zentrale zurückgreifen. Diese Arbeitsteilung stellt sicher, dass die Verwaltung nah am Bürger bleibt und gleichzeitig fachlich kompetent agiert.",
+        "Die Entscheidung für lokale **Präsenz** ist daher die menschlichere Wahl. Sie stärkt das Vertrauen in die Verwaltung und stellt sicher, dass niemand aufgrund mangelnder digitaler Kompetenz oder fehlender technischer Ausstattung von der Beratung ausgeschlossen wird."
+      ],
+      "conditional": [
+        "Die Entscheidung zwischen Zentralisierung und lokaler **Präsenz** hängt davon ab, ob die Beratungsleistung standardisiert oder individuell ist. Bei Routinefällen sind **Skaleneffekte** durch Zentralisierung sinnvoll, um Kosten zu senken.",
+        "Bei komplexen, sensiblen Anliegen hingegen ist die lokale **Präsenz** unerlässlich, da hier oft Kontextwissen und Vertrauen eine Rolle spielen. Ein hybrides Modell, das lokale Büros für den Erstkontakt nutzt und Experten zentral bündelt, ist hier oft die beste Lösung.",
+        "Der entscheidende Faktor ist die Art der Interaktion. Wo Effizienz und Standardisierung dominieren, ist Zentralisierung das Mittel der Wahl; wo jedoch soziale Nähe und individuelle Beratung gefragt sind, muss die lokale **Präsenz** Vorrang haben."
+      ]
+    }
+  },
+  {
+    "slug": "minority-language-archive-access",
+    "title": "Offener Zugang oder kontrollierte Archivierung?",
+    "prompt": "Ein Spracharchiv besitzt Aufnahmen von Sprechern, die unterschiedliche Gründe für die Weitergabe hatten. Sollte es alle berechtigten Aufnahmen standardmäßig öffentlich machen oder den Beitragenden und Gemeinschaftsorganisationen die Zugangsbedingungen überlassen?",
+    "conditionalPrompt": "Entscheide, welche Nutzungsrechte an die Aufnahmen gebunden bleiben sollten und wann eine erneute Zustimmung erforderlich ist.",
+    "options": [
+      {
+        "label": "Offener Zugang",
+        "description": "Material wird für Lernende und Forscher leicht auffindbar gemacht, mit Widerspruchsrecht."
+      },
+      {
+        "label": "Kontrollierter Zugang",
+        "description": "Entscheidungen liegen bei den Beitragenden, während Sammlungen für breitere Nutzung geöffnet werden."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Archivierung", "systematische Aufbewahrung von Dokumenten", "Die Archivierung von Sprachaufnahmen erfordert eine sorgfältige Dokumentation der Nutzungsrechte."],
+        ["die Zustimmung", "Einverständnis zu einer Handlung", "Ohne die explizite Zustimmung der Sprecher dürfen die Aufnahmen nicht veröffentlicht werden."],
+        ["das Nutzungsrecht", "Befugnis, etwas zu verwenden", "Die Klärung der Nutzungsrechte ist bei Spracharchiven oft ein langwieriger Prozess."],
+        ["die Gemeinschaft", "Gruppe von Menschen mit gemeinsamen Interessen", "Die lokale Gemeinschaft sollte ein Mitspracherecht bei der Verwendung ihrer kulturellen Daten haben."]
+      ],
+      "phrasalVerbs": [
+        ["zurückgreifen auf", "etwas als Hilfsmittel nutzen", "Forscher können bei ihrer Arbeit auf die umfangreichen Sammlungen des Archivs zurückgreifen."],
+        ["sich niederschlagen in", "sichtbar werden in einem Ergebnis", "Die kulturelle Bedeutung der Aufnahmen schlägt sich in der hohen Nachfrage nach Zugang nieder."],
+        ["abwägen gegen", "zwei Dinge vergleichen", "Man muss den Wunsch nach öffentlichem Zugang gegen die Privatsphäre der Sprecher abwägen."],
+        ["einbeziehen in", "etwas als Teil von etwas anderem betrachten", "Wir sollten die Sprecher aktiv in die Entscheidung über die Zugangsbedingungen einbeziehen."]
+      ],
+      "adjectives": [
+        ["berechtigt", "einen Anspruch habend", "Nur berechtigte Aufnahmen, für die eine klare Einwilligung vorliegt, sollten öffentlich zugänglich sein."],
+        ["transparent", "durchsichtig, nachvollziehbar", "Ein transparentes Verfahren für Widersprüche ist essenziell für das Vertrauen der Gemeinschaft."],
+        ["kulturell", "die Kultur betreffend", "Die kulturelle Sensibilität der Aufnahmen erfordert einen respektvollen Umgang mit den Daten."],
+        ["zugänglich", "erreichbar, offen", "Die Aufnahmen sollten für die Sprachforschung leicht zugänglich sein, ohne die Rechte der Sprecher zu verletzen."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Folge", "Die Rechte waren unklar; folglich wurde der Zugang vorerst eingeschränkt."],
+        ["demgegenüber", "im Vergleich dazu", "Der offene Zugang fördert die Forschung; demgegenüber steht der Schutz der Privatsphäre."],
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Die Daten sind wertvoll; nichtsdestotrotz müssen die Wünsche der Sprecher respektiert werden."],
+        ["beziehungsweise", "oder genauer gesagt", "Wir müssen die Aufnahmen beziehungsweise deren Metadaten sorgfältig prüfen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Der offene Zugang zu Sprachaufnahmen ist der beste Weg, um die Forschung zu fördern und das Wissen über gefährdete Sprachen zu bewahren. Indem wir Material standardmäßig öffentlich machen, erleichtern wir Lernenden und Wissenschaftlern den Zugang zu wertvollen Daten.",
+        "Ein Widerspruchsverfahren bietet dabei genügend Schutz für die Sprecher, ohne den Zugang unnötig zu bürokratisieren. Dies schafft eine offene Kultur des Teilens, die dem Ziel des Archivs, Sprachen zu dokumentieren und lebendig zu halten, am besten entspricht.",
+        "Die Entscheidung für den offenen Zugang ist daher die wissenschaftlich progressivste Wahl. Sie maximiert den Nutzen der Aufnahmen für **die Gemeinschaft** und stellt sicher, dass das kulturelle Erbe nicht in Archiven verstaubt, sondern aktiv genutzt wird."
+      ],
+      "b": [
+        "Die Kontrolle über den Zugang bei den Beitragenden und Gemeinschaftsorganisationen zu belassen, ist eine Frage des Respekts und der ethischen Verantwortung. Viele Sprecher haben ihre Aufnahmen unter bestimmten Bedingungen geteilt, die respektiert werden müssen.",
+        "Indem wir **die Gemeinschaft** in die Entscheidungsprozesse einbeziehen, stellen wir sicher, dass **die Archivierung** nicht als Enteignung wahrgenommen wird. Dies fördert das Vertrauen und ermutigt andere, ihre Aufnahmen ebenfalls dem Archiv anzuvertrauen.",
+        "Die Entscheidung für einen kontrollierten Zugang ist daher die ethisch fundiertere Wahl. Sie schützt die Würde der Sprecher und stellt sicher, dass die Nutzung der Aufnahmen im Einklang mit den kulturellen Werten der **Gemeinschaft** steht, anstatt sie pauschal zu veröffentlichen."
+      ],
+      "conditional": [
+        "Die Entscheidung zwischen offenem und kontrolliertem Zugang hängt davon ab, ob die Aufnahmen als öffentliches Gut oder als privates Eigentum betrachtet werden. Bei Aufnahmen, die explizit für die Öffentlichkeit bestimmt waren, ist der offene Zugang angemessen.",
+        "Bei sensiblen oder persönlichen Inhalten ist jedoch **die Zustimmung** der Beitragenden zwingend erforderlich. Ein differenziertes Modell, das den Zugang je nach Art der Aufnahme regelt, ist hier der einzige Weg, um beiden Ansprüchen gerecht zu werden.",
+        "Der entscheidende Faktor ist die ursprüngliche Intention der Sprecher. Wo diese klar ist, sollte man ihr folgen; wo sie fehlt, muss der Schutz der Privatsphäre Vorrang vor dem Wunsch nach öffentlichem Zugang haben."
+      ]
+    }
+  },
+  {
+    "slug": "qualitative-research-data-sharing",
+    "title": "Offene Daten oder kontrollierter Zugang?",
+    "prompt": "Ein Forschungsteam hat Interviewtranskripte zur Arbeitslosigkeit gesammelt. Es darf de-identifizierte Auszüge unter Bedingungen teilen. Sollte es einen großen, anonymisierten Datensatz veröffentlichen oder geprüften Forschern Zugang in einer kontrollierten Umgebung gewähren?",
+    "conditionalPrompt": "Entscheide, wie man die Interpretation von Daten von der Offenlegung persönlicher Geschichten unterscheidet und setze Standards für die Überprüfung.",
+    "options": [
+      {
+        "label": "Veröffentlichung",
+        "description": "Ausreichend Beweise werden sichtbar gemacht, um die Interpretation zu prüfen."
+      },
+      {
+        "label": "Kontrollierter Zugang",
+        "description": "Geprüfte Forscher untersuchen vollständige Aufzeichnungen unter strengen Auflagen."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Anonymisierung", "Entfernung von Identifikationsmerkmalen", "Die Anonymisierung der Transkripte ist ein komplexer Prozess, der viel Zeit in Anspruch nimmt."],
+        ["die Interpretation", "Deutung von Daten", "Die Interpretation der Interviews muss durch die zugrunde liegenden Daten nachvollziehbar sein."],
+        ["die Auflage", "verbindliche Bedingung", "Der Zugang zu den Daten ist an strenge Auflagen gebunden, um den Datenschutz zu gewährleisten."],
+        ["die Integrität", "Unversehrtheit, ethische Redlichkeit", "Die Integrität der Forschung hängt davon ab, wie sorgfältig mit den sensiblen Daten umgegangen wird."]
+      ],
+      "phrasalVerbs": [
+        ["zurückgreifen auf", "etwas als Hilfsmittel nutzen", "Forscher können bei der Überprüfung der Ergebnisse auf die anonymisierten Daten zurückgreifen."],
+        ["sich niederschlagen in", "sichtbar werden in einem Ergebnis", "Die Qualität der Forschung schlägt sich in der Transparenz der Datenanalyse nieder."],
+        ["abwägen gegen", "zwei Dinge vergleichen", "Man muss den Nutzen der Datenteilung gegen das Risiko der Re-Identifizierung abwägen."],
+        ["einbeziehen in", "etwas als Teil von etwas anderem betrachten", "Wir müssen die ethischen Standards in jede Phase der Datenauswertung einbeziehen."]
+      ],
+      "adjectives": [
+        ["de-identifiziert", "anonymisiert", "Die de-identifizierten Auszüge erlauben eine Analyse, ohne die Privatsphäre der Teilnehmer zu verletzen."],
+        ["kontrolliert", "unter Aufsicht stehend", "Eine kontrollierte Umgebung für den Datenzugang minimiert das Risiko von Datenlecks."],
+        ["transparent", "durchsichtig, nachvollziehbar", "Eine transparente Dokumentation der Forschungsmethoden ist für die wissenschaftliche Anerkennung unerlässlich."],
+        ["sensibel", "empfindlich, vertraulich", "Die Interviewdaten sind hochsensibel und erfordern einen besonders sorgfältigen Umgang."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Folge", "Die Daten waren zu sensibel; folglich wurde der Zugang auf geprüfte Forscher beschränkt."],
+        ["demgegenüber", "im Vergleich dazu", "Die Veröffentlichung fördert die Transparenz; demgegenüber steht das Risiko für die Teilnehmer."],
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Die Anonymisierung ist schwierig; nichtsdestotrotz ist sie für die Datenteilung notwendig."],
+        ["beziehungsweise", "oder genauer gesagt", "Wir müssen die Transkripte beziehungsweise die Metadaten vor der Veröffentlichung prüfen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Veröffentlichung eines großen, de-identifizierten Datensatzes ist der beste Weg, um die Transparenz und Nachvollziehbarkeit qualitativer Forschung zu erhöhen. Indem wir Auszüge der Daten öffentlich machen, ermöglichen wir es anderen Forschern, unsere **Interpretation** kritisch zu prüfen.",
+        "Dies stärkt das Vertrauen in die wissenschaftlichen Ergebnisse und fördert die Sekundäranalyse, ohne die Privatsphäre der Teilnehmer zu gefährden, sofern **die Anonymisierung** sorgfältig durchgeführt wurde. Es ist ein notwendiger Schritt, um die Qualität der Forschung zu sichern.",
+        "Die Entscheidung für die Veröffentlichung ist daher die wissenschaftlich offenste Wahl. Sie macht die Forschung für eine breitere Öffentlichkeit zugänglich und stellt sicher, dass die Ergebnisse auf einer soliden, überprüfbaren Basis stehen, anstatt sie hinter verschlossenen Türen zu halten."
+      ],
+      "b": [
+        "Der kontrollierte Zugang für geprüfte Forscher ist der einzig verantwortungsvolle Weg, um mit sensiblen Interviewdaten umzugehen. Eine vollständige **Anonymisierung** ist bei qualitativen Daten oft unmöglich, da der Kontext die Identität der Teilnehmer verraten kann.",
+        "Durch eine kontrollierte Umgebung stellen wir sicher, dass nur qualifizierte Personen Zugang zu den Daten erhalten und diese unter strengen Auflagen nutzen. Dies schützt die Teilnehmer vor einer ungewollten Offenlegung ihrer persönlichen Geschichten, während die Forschung dennoch vorankommt.",
+        "Die Entscheidung für einen kontrollierten Zugang ist daher die ethisch sicherste Wahl. Sie bewahrt **die Integrität** der Forschung und den Schutz der Teilnehmer, ohne den wissenschaftlichen Fortschritt zu behindern, und setzt klare Standards für die Überprüfung."
+      ],
+      "conditional": [
+        "Die Entscheidung zwischen Veröffentlichung und kontrolliertem Zugang hängt davon ab, wie stark die Daten anonymisiert werden können, ohne ihren wissenschaftlichen Wert zu verlieren. Wenn eine **Anonymisierung** möglich ist, ist die Veröffentlichung vorzuziehen.",
+        "Wenn die Daten jedoch so **sensibel** sind, dass jede **Anonymisierung** den Kontext zerstört, ist der kontrollierte Zugang zwingend erforderlich. Ein hybrides Modell, das anonymisierte Auszüge veröffentlicht und den Zugang zu vollständigen Daten **kontrolliert**, ist hier oft die beste Lösung.",
+        "Der entscheidende Faktor ist das Risiko der Re-Identifizierung. Wo dieses Risiko gering ist, sollte Transparenz durch Veröffentlichung herrschen; wo es hoch ist, muss der Schutz der Teilnehmer durch einen kontrollierten Zugang Vorrang haben."
+      ]
+    }
+  },
+  {
+    "slug": "recognition-original-or-replication",
+    "title": "Vergabe eines Forschungspreises",
+    "prompt": "Ein Forschungsverband vergibt einen Preis. Eine Gruppe lieferte eine überraschende Entdeckung; eine andere bestätigte diese unabhängig und grenzte die Gültigkeit ein. Wen sollte man auszeichnen?",
+    "conditionalPrompt": "Erkläre, wie man zwischen der Pionierleistung und der Validierung unterscheidet.",
+    "options": [
+      {
+        "label": "Priorität für die Entdeckung",
+        "description": "Die Gruppe auszeichnen, die eine wichtige Möglichkeit als Erste formulierte."
+      },
+      {
+        "label": "Fokus auf Validierung",
+        "description": "Die Gruppe auszeichnen, die die Behauptung prüfte und präzisierte."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["der Durchbruch", "ein bedeutender Fortschritt in der Forschung", "Dieser wissenschaftliche Durchbruch hat unser Verständnis der Materie grundlegend verändert."],
+        ["die Validität", "die Gültigkeit oder Belastbarkeit von Ergebnissen", "Die Validität der Daten muss durch unabhängige Studien zweifelsfrei belegt werden."],
+        ["der Erkenntnisgewinn", "der Zuwachs an Wissen", "Der eigentliche Erkenntnisgewinn liegt oft in der sorgfältigen Überprüfung bestehender Theorien."],
+        ["die Pionierarbeit", "eine bahnbrechende, neue Leistung", "Ohne die ursprüngliche Pionierarbeit wäre eine spätere Überprüfung gar nicht erst möglich gewesen."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas aufbauen", "eine Grundlage nutzen", "Die zweite Gruppe konnte direkt auf der Pionierarbeit der ersten Forscher aufbauen."],
+        ["einen Beitrag leisten", "etwas zu einem Ziel beitragen", "Beide Gruppen leisten einen wichtigen Beitrag zur wissenschaftlichen Gemeinschaft."],
+        ["in Frage stellen", "anzweifeln", "Es ist wichtig, etablierte Thesen immer wieder kritisch in Frage zu stellen."],
+        ["sich abzeichnen", "sichtbar werden", "In den Daten zeichnet sich bereits ein klarer Trend ab."]
+      ],
+      "adjectives": [
+        ["wegweisend", "richtungsweisend für die Zukunft", "Die erste Entdeckung war zweifellos wegweisend für das gesamte Fachgebiet."],
+        ["belastbar", "stabil und verlässlich", "Nur belastbare Ergebnisse sollten in einer renommierten Fachzeitschrift veröffentlicht werden."],
+        ["strittig", "diskussionswürdig", "Die Frage der Preisvergabe bleibt in der Fachwelt weiterhin strittig."],
+        ["fundiert", "gut begründet", "Eine fundierte Analyse erfordert Zeit und methodische Sorgfalt."]
+      ],
+      "connectors": [
+        ["nichtsdestotrotz", "trotzdem", "Die Entdeckung war riskant; nichtsdestotrotz war sie der entscheidende Impuls."],
+        ["in Anbetracht", "unter Berücksichtigung", "In Anbetracht der Faktenlage ist eine differenzierte Entscheidung notwendig."],
+        ["demgegenüber", "im Vergleich dazu", "Die erste Gruppe lieferte die Idee; demgegenüber steht die präzise Nachprüfung."],
+        ["folglich", "als Konsequenz", "Die Validierung war unvollständig; folglich ist die ursprüngliche Entdeckung höher zu bewerten."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Ich plädiere für die Auszeichnung der ersten Gruppe, da sie den eigentlichen **Durchbruch** erzielte. Ohne diesen kreativen Funken gäbe es keine Hypothese, die man überhaupt prüfen könnte.",
+        "Man könnte einwenden, dass nur bestätigte Fakten zählen. **Demgegenüber** steht jedoch die Tatsache, dass **Pionierarbeit** das Risiko des Scheiterns trägt und somit den größten Mut erfordert.",
+        "**Folglich** sollte der Preis die ursprüngliche Idee würdigen. **In Anbetracht** der wissenschaftlichen Dynamik ist es wichtiger, neue Wege zu ebnen, als lediglich bestehende Pfade zu bestätigen."
+      ],
+      "b": [
+        "Ich bevorzuge die zweite Gruppe, da sie **die Validität** der Behauptung erst sicherstellte. Eine Entdeckung ohne präzise Eingrenzung ist oft nur eine vage Vermutung ohne praktischen Nutzen.",
+        "Kritiker betonen oft die Originalität. **Nichtsdestotrotz** ist ein wissenschaftliches Ergebnis erst dann **fundiert**, wenn es unabhängig reproduziert wurde und seine Grenzen klar definiert sind.",
+        "Daher sollte der Preis die Qualität der Überprüfung belohnen. Die Entscheidung fällt zugunsten der Gruppe, die durch ihre Arbeit ein belastbares Fundament für künftige Forschung schuf."
+      ],
+      "conditional": [
+        "Wenn die ursprüngliche Entdeckung eine völlig neue Richtung vorgibt, sollte die erste Gruppe den Preis erhalten. **Der Erkenntnisgewinn** durch den ersten Schritt ist hierbei das entscheidende Kriterium.",
+        "Wenn die erste Entdeckung jedoch unklar oder spekulativ bleibt, sollte die validierende Gruppe gewinnen. Hier ist die methodische Präzision der Gruppe, die die Grenzen aufzeigt, wertvoller.",
+        "Die Entscheidung hängt davon ab, ob man Innovation oder Verlässlichkeit priorisiert. Wenn **die Pionierarbeit** **wegweisend** war, gewinnt A; wenn die Validierung erst den Nutzen stiftet, gewinnt B."
+      ]
+    }
+  },
+  {
+    "slug": "preregister-all-or-separate-analysis-tracks",
+    "title": "Präregistrierung von Forschungsanalysen",
+    "prompt": "Eine Fachzeitschrift möchte sicherstellen, dass Leser erkennen, welche Ergebnisse vor der Datenanalyse vorhergesagt wurden. Sollte sie verlangen, dass jede Analyse im Voraus geplant wird, oder sollte sie explorative Arbeiten in einer separat gekennzeichneten Rubrik veröffentlichen?",
+    "conditionalPrompt": "Erkläre, wie eine Fachzeitschrift wissenschaftliche Entdeckungen fördern kann, ohne dass neue Erklärungen fälschlicherweise als erfolgreiche Vorhersagen präsentiert werden.",
+    "options": [
+      {
+        "label": "Strikte Präregistrierung",
+        "description": "Autoren müssen ihre Forschungsfragen und Analyseschritte aufzeichnen, bevor sie die Daten einsehen."
+      },
+      {
+        "label": "Explorative Rubrik",
+        "description": "Veröffentlichung beider Ansätze, wobei Autoren klar kennzeichnen müssen, welche Behauptungen zu welcher Kategorie gehören."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Validität", "die wissenschaftliche Gültigkeit einer Aussage.", "Die Validität der Ergebnisse hängt maßgeblich von der methodischen Strenge ab."],
+        ["der Bias", "eine systematische Verzerrung in der Forschung.", "Ein unbewusster Bias kann die Interpretation der Daten stark beeinflussen."],
+        ["die Transparenz", "die Offenlegung von Prozessen.", "Mehr Transparenz im Publikationsprozess stärkt das Vertrauen in die Wissenschaft."],
+        ["die Hypothese", "eine wissenschaftliche Vermutung.", "Jede Hypothese muss vor der eigentlichen Datenerhebung präzise formuliert werden."]
+      ],
+      "phrasalVerbs": [
+        ["auf etwas zurückgreifen", "eine Ressource oder Methode nutzen.", "Wir greifen bei der Auswertung auf etablierte statistische Verfahren zurück."],
+        ["etwas nachvollziehen", "einen Gedankengang verstehen.", "Der Gutachter konnte die Argumentation der Autoren nicht vollständig nachvollziehen."],
+        ["etwas herausstellen", "etwas besonders betonen.", "Die Studie stellt die Bedeutung der Vorab-Registrierung deutlich heraus."],
+        ["etwas ausräumen", "einen Zweifel oder ein Problem beseitigen.", "Diese klare Trennung kann alle Zweifel an der Integrität der Studie ausräumen."]
+      ],
+      "adjectives": [
+        ["methodisch", "die Methode betreffend.", "Ein methodisch sauberes Vorgehen ist für die Publikation unerlässlich."],
+        ["explorativ", "erkundend, ohne feste Hypothese.", "Explorative Analysen sind wertvoll, um neue Zusammenhänge zu entdecken."],
+        ["konklusiv", "eine Schlussfolgerung zulassend.", "Die vorliegenden Daten sind leider nicht konklusiv genug für eine Publikation."],
+        ["systematisch", "nach einem Plan geordnet.", "Wir benötigen ein systematisches Verfahren zur Kontrolle der Forschungsdaten."]
+      ],
+      "connectors": [
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten.", "Die Datenlage ist dünn; nichtsdestotrotz ist die Studie von hoher Relevanz."],
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der neuen Erkenntnisse müssen wir unsere Strategie anpassen."],
+        ["demgegenüber", "im Vergleich dazu.", "Die Präregistrierung ist sehr streng; demgegenüber bietet die explorative Rubrik Flexibilität."],
+        ["folglich", "als logische Konsequenz.", "Die Hypothese wurde widerlegt; folglich müssen wir die Theorie überarbeiten."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die strikte Präregistrierung ist der einzige Weg, um **die Validität** wissenschaftlicher Arbeiten dauerhaft zu sichern. Wenn Autoren ihre **Hypothese** vor der Datenerhebung festlegen, wird ein unbewusster **Bias** bei der Auswertung effektiv verhindert.",
+        "**Methodisch** sauberes Arbeiten erfordert, dass man nicht nachträglich Daten so zurechtbiegt, dass sie zur Theorie passen. Durch die verpflichtende Registrierung wird sichergestellt, dass die Forschungsgemeinschaft genau weiß, was ursprünglich geplant war.",
+        "**Folglich** ist dieses Vorgehen die beste Strategie, um die Integrität der Wissenschaft zu wahren. Es schafft **Transparenz** und verhindert, dass zufällige Korrelationen als bedeutende Entdeckungen verkauft werden, was das Vertrauen in die Forschung nachhaltig stärkt."
+      ],
+      "b": [
+        "Die Einführung einer explorativen Rubrik ist der sinnvollere Ansatz, da Wissenschaft auch von der Entdeckung unerwarteter Phänomene lebt. Ein zu starres Korsett würde viele innovative, aber unvorhersehbare Erkenntnisse bereits im Keim ersticken.",
+        "**Demgegenüber** ermöglicht die Kennzeichnung explorativer Arbeiten, dass Forscher ihre neuen Ideen präsentieren können, ohne sie als bestätigte Vorhersagen auszugeben. Dies fördert die Kreativität, während die methodische Trennung für die nötige Klarheit sorgt.",
+        "**In Anbetracht** der Komplexität moderner Forschung ist diese Differenzierung der richtige Weg. Sie erlaubt es, sowohl geplante Bestätigungen als auch neue Entdeckungen zu veröffentlichen, solange die Autoren ihre methodischen Schritte transparent und ehrlich offenlegen."
+      ],
+      "conditional": [
+        "Wenn eine Studie auf einer klaren, vorab definierten Theorie basiert, sollte die strikte Präregistrierung die zwingende Voraussetzung für die Publikation sein. Dies ist der Goldstandard, um **die Validität** der Ergebnisse ohne jeden Zweifel zu gewährleisten.",
+        "Wenn jedoch eine Untersuchung primär **explorativ** ist, sollte die Zeitschrift diese Arbeit in einer separaten Rubrik willkommen heißen. Hierbei ist es entscheidend, dass die Autoren explizit darauf hinweisen, dass es sich um eine hypothesengenerierende und nicht um eine hypothesenprüfende Studie handelt.",
+        "Die Entscheidung hängt also davon ab, ob die Arbeit eine Vorhersage testet oder ein neues Phänomen beschreibt. Die Zeitschrift muss verlangen, dass dieser Unterschied für den Leser sofort erkennbar ist, um die Integrität der wissenschaftlichen Kommunikation zu wahren."
+      ]
+    }
+  },
+  {
+    "slug": "university-composite-or-dashboard",
+    "title": "Hochschulranking oder Dashboard",
+    "prompt": "Ein Informationsdienst für Studieninteressierte muss entscheiden, ob er ein einzelnes Hochschulranking mit festen Gewichtungen veröffentlicht oder ein Dashboard mit separaten Indikatoren anbietet. Welcher Ansatz unterstützt eine fundierte Entscheidung besser?",
+    "conditionalPrompt": "Erkläre, wann eine Vereinfachung durch ein Ranking hilfreich ist und welche Annahmen sichtbar bleiben müssen, falls ein Gesamtwert verwendet wird.",
+    "options": [
+      {
+        "label": "Gesamtwert-Ranking",
+        "description": "Kombination verschiedener Kennzahlen zu einem Score mit sichtbaren Gewichtungen und Veröffentlichung der Rangliste."
+      },
+      {
+        "label": "Indikatoren-Dashboard",
+        "description": "Darstellung verschiedener Dimensionen einzeln, damit Studierende selbst vergleichen können."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Gewichtung", "die relative Bedeutung eines Faktors.", "Die Gewichtung der Forschungsergebnisse im Ranking ist oft umstritten."],
+        ["die Präferenz", "die persönliche Vorliebe.", "Jeder Studierende hat eine andere Präferenz bei der Wahl der Universität."],
+        ["die Vergleichbarkeit", "die Eigenschaft, dass Dinge vergleichbar sind.", "Die Vergleichbarkeit der Daten ist durch unterschiedliche Erhebungsmethoden eingeschränkt."],
+        ["die Komplexität", "die Vielschichtigkeit eines Sachverhalts.", "Die Komplexität der Studienwahl lässt sich nicht in einer einzigen Zahl abbilden."]
+      ],
+      "phrasalVerbs": [
+        ["etwas zusammenfassen", "das Wesentliche kurz darstellen.", "Wir können die wichtigsten Kriterien in einer Tabelle zusammenfassen."],
+        ["sich an etwas orientieren", "einem Maßstab folgen.", "Studierende orientieren sich bei der Wahl oft an der Reputation der Fakultät."],
+        ["etwas ausblenden", "etwas nicht berücksichtigen.", "Ein Ranking kann wichtige individuelle Bedürfnisse leicht ausblenden."],
+        ["etwas hervorheben", "etwas betonen.", "Das Dashboard hilft dabei, die Stärken einzelner Fachbereiche hervorzuheben."]
+      ],
+      "adjectives": [
+        ["transparent", "durchsichtig, nachvollziehbar.", "Ein transparentes Modell zeigt genau, wie der Score berechnet wurde."],
+        ["individuell", "auf die einzelne Person bezogen.", "Eine individuelle Beratung ist bei der Studienwahl oft hilfreicher als ein Ranking."],
+        ["aussagekräftig", "eine klare Aussage enthaltend.", "Die Indikatoren müssen für die Studierenden wirklich aussagekräftig sein."],
+        ["subjektiv", "von der persönlichen Sicht geprägt.", "Die Gewichtung der Kriterien ist immer ein Stück weit subjektiv."]
+      ],
+      "connectors": [
+        ["folglich", "als logische Konsequenz.", "Die Daten sind unvollständig; folglich ist das Ranking wenig aussagekräftig."],
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten.", "Das Ranking ist vereinfachend; nichtsdestotrotz bietet es eine erste Orientierung."],
+        ["demgegenüber", "im Vergleich dazu.", "Das Dashboard ist detailliert; demgegenüber wirkt das Ranking sehr oberflächlich."],
+        ["in Anbetracht", "unter Berücksichtigung von.", "In Anbetracht der Vielfalt der Studiengänge ist ein Dashboard vorzuziehen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Ein Gesamtwert-Ranking bietet Studieninteressierten eine notwendige Orientierung in einer unübersichtlichen Bildungslandschaft. Durch die Kombination verschiedener Kennzahlen wird **die Komplexität** reduziert und eine schnelle erste Einschätzung ermöglicht.",
+        "Wenn **die Gewichtung** der einzelnen Faktoren **transparent** dargelegt wird, können Nutzer nachvollziehen, wie das Ergebnis zustande kommt. Dies schafft eine **Vergleichbarkeit**, die bei einer Vielzahl von Einzeldaten oft verloren geht.",
+        "**Folglich** ist ein Ranking ein wertvolles Werkzeug, sofern es nicht als absolute Wahrheit, sondern als erste Entscheidungshilfe verstanden wird. Es bietet eine klare Struktur, an der sich Studierende orientieren können, ohne sich in Details zu verlieren."
+      ],
+      "b": [
+        "Ein Dashboard ist der deutlich bessere Ansatz, da es **die Komplexität** der Studienwahl respektiert und nicht durch eine willkürliche **Gewichtung** verzerrt. Studierende haben sehr unterschiedliche Präferenzen, die sich nicht in einem einzigen Score abbilden lassen.",
+        "**Demgegenüber** ermöglicht das Dashboard eine individuelle Analyse, bei der jeder Nutzer die für ihn relevanten Indikatoren selbst gewichten kann. So werden wichtige Aspekte nicht einfach ausgeblendet, nur weil sie in ein starres Ranking nicht hineinpassen.",
+        "**In Anbetracht** der persönlichen Relevanz der Studienwahl ist diese Flexibilität entscheidend. Das Dashboard fördert eine fundierte Entscheidung, indem es alle notwendigen Informationen **aussagekräftig** und vergleichbar darstellt, statt eine subjektive Rangfolge vorzugeben."
+      ],
+      "conditional": [
+        "Wenn das Ziel eine schnelle Orientierung für eine große Gruppe ist, kann ein Ranking hilfreich sein, um **die Komplexität** zu reduzieren. Es dient als grober Filter, der den Suchprozess effizienter gestaltet.",
+        "Wenn jedoch eine tiefergehende Entscheidung getroffen werden soll, müssen die Annahmen hinter dem Score zwingend sichtbar bleiben. Ein Ranking ist nur dann nützlich, wenn der Nutzer **die Gewichtung** der einzelnen Indikatoren selbst anpassen oder zumindest vollständig nachvollziehen kann.",
+        "Die Entscheidung hängt davon ab, ob man eine erste Übersicht oder eine fundierte Auswahl anstrebt. Ein Ranking ist akzeptabel, solange es **transparent** bleibt; ein Dashboard ist jedoch immer vorzuziehen, wenn man eine wirklich individuelle Entscheidung unterstützen möchte."
+      ]
+    }
+  },
+  {
+    "slug": "streaming-royalties-pool-or-listener",
+    "title": "Vergütungsmodelle für Musik-Streaming",
+    "prompt": "Eine Musikplattform überarbeitet die Ausschüttung ihrer Abonnementeinnahmen. Sollten Künstler aus einem zentralen Pool basierend auf ihrem Anteil an der Gesamthörzeit bezahlt werden oder sollte der Beitrag jedes Abonnenten nur an die Künstler fließen, die diese Person tatsächlich gehört hat?",
+    "conditionalPrompt": "Entscheide, wessen Beitrag die Gebühr repräsentiert und welche Verzerrungen bei der Implementierung einer Regel am schwerwiegendsten sind.",
+    "options": [
+      {
+        "label": "Zentraler Pool",
+        "description": "Einnahmen werden gemäß dem Anteil der Künstler an der gesamten Plattformnutzung verteilt."
+      },
+      {
+        "label": "Nutzerzentrierte Verteilung",
+        "description": "Der Beitrag jedes einzelnen Hörers wird exklusiv unter den Künstlern aufgeteilt, die dieser Hörer aktiv konsumiert hat."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Vergütung", "finanzielle Entschädigung für eine erbrachte Leistung", "Die faire Vergütung der Urheber ist ein zentrales Anliegen der Plattform."],
+        ["die Verzerrung", "eine einseitige Verschiebung oder Verfälschung von Verhältnissen", "Diese statistische Verzerrung führt dazu, dass Nischenkünstler kaum Einnahmen erzielen."],
+        ["der Anteil", "ein Teil an einem Ganzen", "Ein hoher Anteil an den Gesamteinnahmen sichert das Überleben der Musikschaffenden."],
+        ["die Transparenz", "Durchschaubarkeit und Nachvollziehbarkeit von Prozessen", "Mehr Transparenz bei der Abrechnung schafft Vertrauen zwischen Plattform und Künstlern."]
+      ],
+      "phrasalVerbs": [
+        ["sich auswirken auf", "einen Einfluss auf etwas haben", "Das neue Modell wirkt sich direkt auf die monatlichen Auszahlungen aus."],
+        ["zurückgreifen auf", "etwas als Hilfsmittel verwenden", "Wir müssen auf bewährte Daten zurückgreifen, um die Verteilung zu berechnen."],
+        ["aufteilen unter", "etwas in Teile zerlegen und verteilen", "Die Einnahmen werden unter den beteiligten Künstlern gerecht aufgeteilt."],
+        ["zu Buche schlagen", "sich finanziell bemerkbar machen", "Kleine Beträge schlagen bei Millionen von Nutzern massiv zu Buche."]
+      ],
+      "adjectives": [
+        ["substanziell", "wesentlich oder von großer Bedeutung", "Die Änderung der Regeln hat einen substanziellen Einfluss auf die Branche."],
+        ["rechnerisch", "auf einer mathematischen Berechnung beruhend", "Es gibt eine rechnerische Differenz zwischen den beiden Modellen."],
+        ["proportional", "in einem bestimmten Verhältnis stehend", "Die Auszahlung sollte proportional zur tatsächlichen Hördauer erfolgen."],
+        ["systematisch", "nach einem festen Plan oder Prinzip", "Eine systematische Benachteiligung kleinerer Künstler muss unbedingt vermieden werden."]
+      ],
+      "connectors": [
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Das Modell ist komplex; nichtsdestotrotz bietet es die fairste Lösung."],
+        ["in Anbetracht", "unter Berücksichtigung von", "In Anbetracht der hohen Nutzerzahlen ist eine einfache Lösung kaum möglich."],
+        ["folglich", "als logische Konsequenz", "Die Einnahmen sinken; folglich müssen wir das Modell anpassen."],
+        ["demgegenüber", "im Vergleich dazu", "Das Pool-Modell ist effizient; demgegenüber steht die nutzerzentrierte Abrechnung."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Das Modell des zentralen Pools ist die effizienteste Methode, um **die Vergütung** der Künstler zu regeln. **In Anbetracht** der enormen Datenmengen auf einer globalen Plattform sorgt diese Methode für eine stabile und **rechnerisch** nachvollziehbare Verteilung der Gelder.",
+        "Kritiker bemängeln zwar eine gewisse **Verzerrung**, da Hörer indirekt Künstler finanzieren, die sie nie konsumiert haben. **Nichtsdestotrotz** ist dieser Effekt bei einer großen Nutzerbasis vernachlässigbar, da sich die individuellen Vorlieben über die gesamte Plattform hinweg statistisch ausgleichen.",
+        "**Folglich** entscheide ich mich für den zentralen Pool, da er die Verwaltungskosten minimiert. **Die Transparenz** bleibt gewahrt, während die Einnahmen **proportional** zum Gesamterfolg verteilt werden, was für die Stabilität des gesamten Musik-Ökosystems unerlässlich ist."
+      ],
+      "b": [
+        "Die nutzerzentrierte Verteilung ist das einzig moralisch vertretbare Modell, da sie den Beitrag jedes Abonnenten direkt an die Künstler weiterleitet, die diese Person tatsächlich hört. Dies verhindert eine systematische Umverteilung von Geldern an Künstler, die der jeweilige Nutzer gar nicht unterstützt.",
+        "Zwar ist der technische Aufwand höher, um diese Daten präzise zu verarbeiten, doch dies sollte kein Hindernis für Gerechtigkeit sein. Wenn wir auf dieses Modell zurückgreifen, schlagen auch kleine Nischenkünstler bei ihren Fans direkt zu Buche, anstatt im großen Pool unterzugehen.",
+        "Daher ist dieses Modell vorzuziehen, weil es die individuelle Entscheidung des Hörers respektiert. **Die Verzerrung** durch den Pool-Ansatz wird eliminiert, und **die Vergütung** spiegelt exakt das tatsächliche Konsumverhalten wider, was die einzige faire Lösung darstellt."
+      ],
+      "conditional": [
+        "Wenn das Ziel die maximale Unterstützung von Nischenkünstlern ist, wähle ich das nutzerzentrierte Modell. In diesem Fall ist die direkte Verbindung zwischen Hörer und Künstler entscheidend, um eine faire **Vergütung** sicherzustellen, die nicht durch den Gesamterfolg der Plattform verwässert wird.",
+        "Wenn jedoch die Stabilität der Plattform und die Minimierung der Verwaltungskosten im Vordergrund stehen, ist der zentrale Pool vorzuziehen. Hierbei ist die rechnerische Einfachheit der entscheidende Faktor, da sie eine schnelle und transparente Auszahlung an alle Beteiligten ermöglicht.",
+        "Die Entscheidung hängt letztlich davon ab, ob man die individuelle Präferenz oder die kollektive Effizienz priorisiert. Ich entscheide mich für das nutzerzentrierte Modell, da die Vermeidung der **Verzerrung** durch fremde Hörgewohnheiten das wichtigere Prinzip für eine gerechte Plattform ist."
+      ]
+    }
+  },
+  {
+    "slug": "online-article-corrections-versioning",
+    "title": "Korrekturpraxis bei Online-Artikeln",
+    "prompt": "Eine Online-Zeitung entdeckt, dass ein zentrales Detail in einem weit verbreiteten Artikel falsch ist. Sollte sie den veröffentlichten Text korrigieren und die Änderungen transparent machen oder den ursprünglichen Wortlaut beibehalten und eine Korrektur prominent daneben platzieren?",
+    "conditionalPrompt": "Entscheide, welche Versionen zugänglich bleiben müssen und wie verhindert werden kann, dass ein alter Fehler ohne Korrektur weiterverbreitet wird.",
+    "options": [
+      {
+        "label": "Aktualisierung",
+        "description": "Den Lesern wird die korrekte Version präsentiert, wobei die Änderung zeitlich und inhaltlich offengelegt wird."
+      },
+      {
+        "label": "Archivierung",
+        "description": "Der ursprüngliche Text bleibt unverändert, während die Korrektur deutlich sichtbar daneben platziert wird."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Integrität", "die Unversehrtheit oder moralische Geradlinigkeit", "Die journalistische Integrität erfordert einen offenen Umgang mit Fehlern."],
+        ["die Nachvollziehbarkeit", "die Eigenschaft, dass etwas logisch und verständlich ist", "Die Nachvollziehbarkeit der Korrektur ist für das Vertrauen der Leser essenziell."],
+        ["die Dokumentation", "das Festhalten von Informationen oder Vorgängen", "Eine lückenlose Dokumentation der Änderungen schützt vor späteren Vorwürfen."],
+        ["der Wortlaut", "die genaue sprachliche Fassung eines Textes", "Der ursprüngliche Wortlaut sollte bei historischen Dokumenten erhalten bleiben."]
+      ],
+      "phrasalVerbs": [
+        ["aufzeigen", "deutlich machen oder demonstrieren", "Der Artikel muss klar aufzeigen, welche Fakten sich geändert haben."],
+        ["zurückverfolgen", "den Ursprung oder Verlauf von etwas finden", "Man muss die Entwicklung des Artikels bis zur ursprünglichen Fassung zurückverfolgen können."],
+        ["einsehen", "etwas zugeben oder als richtig erkennen", "Es ist wichtig, Fehler öffentlich einzusehen und transparent zu korrigieren."],
+        ["verbreiten", "etwas unter vielen Menschen bekannt machen", "Falschinformationen verbreiten sich im Internet leider oft rasend schnell."]
+      ],
+      "adjectives": [
+        ["irreführend", "in die Irre führend, falsch informierend", "Ein irreführendes Detail kann das gesamte Verständnis des Artikels verfälschen."],
+        ["transparent", "durchsichtig, klar und offen", "Eine transparente Korrekturpolitik stärkt die Glaubwürdigkeit des Mediums."],
+        ["unverfälscht", "nicht verändert oder manipuliert", "Die Leser haben ein Recht auf den unverfälschten ursprünglichen Text."],
+        ["peinlich", "ein unangenehmes Gefühl verursachend", "Es ist zwar peinlich, aber notwendig, den Fehler sofort zu korrigieren."]
+      ],
+      "connectors": [
+        ["nichtsdestotrotz", "trotz des zuvor Gesagten", "Der Fehler ist gravierend; nichtsdestotrotz muss die Korrektur sachlich bleiben."],
+        ["folglich", "als logische Konsequenz", "Der Artikel war falsch; folglich wurde er umgehend aktualisiert."],
+        ["demgegenüber", "im Vergleich dazu", "Die Aktualisierung ist schnell; demgegenüber steht die Archivierung als historisches Zeugnis."],
+        ["in Anbetracht", "unter Berücksichtigung von", "In Anbetracht der weiten Verbreitung ist eine sofortige Korrektur unumgänglich."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Aktualisierung des Textes ist die einzig verantwortungsvolle Methode, um **die Integrität** der Berichterstattung zu wahren. **In Anbetracht** der Tatsache, dass Leser meist nur die aktuelle Fassung konsumieren, muss sichergestellt werden, dass diese keine irreführenden Informationen mehr enthält.",
+        "Zwar könnte man argumentieren, dass der ursprüngliche Text erhalten bleiben sollte, doch dies führt oft zu Verwirrung. **Nichtsdestotrotz** ist eine transparente **Dokumentation** der Änderungen unerlässlich, damit die Leser genau nachvollziehen können, was korrigiert wurde und warum dies geschah.",
+        "**Folglich** ist die direkte Korrektur vorzuziehen. Sie stellt sicher, dass die Wahrheit verbreitet wird, während die Historie der Änderung für Interessierte sichtbar bleibt. Dies schützt die Glaubwürdigkeit des Mediums und verhindert, dass sich falsche Details weiter festsetzen."
+      ],
+      "b": [
+        "Die Archivierung des ursprünglichen Wortlauts ist notwendig, um die journalistische **Nachvollziehbarkeit** zu garantieren. Wenn man Texte nachträglich ändert, verliert man das historische Zeugnis dessen, was tatsächlich veröffentlicht wurde, was das Vertrauen in **die Dokumentation** schwächen kann.",
+        "**Demgegenüber** steht die Gefahr, dass Leser den Fehler übersehen, wenn die Korrektur nur daneben steht. **Nichtsdestotrotz** ist es ehrlicher, den Fehler einzugestehen, anstatt den Text heimlich zu glätten. So bleibt der Prozess **transparent** und der Fehler wird nicht einfach gelöscht.",
+        "Ich entscheide mich für die Archivierung, da sie den unverfälschten Zustand bewahrt. Ein prominenter Hinweis daneben sorgt dafür, dass niemand getäuscht wird, während **die Integrität** des ursprünglichen Beitrags gewahrt bleibt. Dies ist die professionellste Art, mit Fehlern umzugehen."
+      ],
+      "conditional": [
+        "Wenn der Artikel eine historische Quelle darstellt, wähle ich die Archivierung. In diesem Fall ist es entscheidend, den ursprünglichen **Wortlaut** zu bewahren, um die Entwicklung der Berichterstattung **zurückverfolgen** zu können, wobei die Korrektur als Anhang deutlich sichtbar sein muss.",
+        "Wenn der Artikel jedoch eine aktuelle Nachricht ist, die zur Meinungsbildung dient, ist die Aktualisierung vorzuziehen. Hier ist es wichtiger, dass die Leser nicht durch irreführende Fakten in die Irre geführt werden, weshalb der Text sofort korrigiert werden muss.",
+        "Die Entscheidung hängt davon ab, ob der Text als historisches Dokument oder als aktuelle Information dient. Ich entscheide mich für die Aktualisierung, da die Verbreitung korrekter Informationen im digitalen Zeitalter das wichtigste Prinzip für ein glaubwürdiges Medium ist."
+      ]
+    }
+  },
+  {
+    "slug": "official-place-names-one-or-parallel",
+    "title": "Einheitliche Beschilderung oder Vielfalt?",
+    "prompt": "Eine Verkehrsbehörde aktualisiert Karten in einem Gebiet, in dem viele Haltestellen sowohl offizielle Namen als auch Namen einer lokalen Sprachgemeinschaft haben. Sollte sie einen Standardnamen verwenden oder beide Namen anzeigen, wo immer es der Platz erlaubt?",
+    "conditionalPrompt": "Überlege dir, wo Konsistenz notwendig ist und wo der Ausschluss eines Namens einen öffentlichen Dienst weniger erkennbar machen würde.",
+    "options": [
+      {
+        "label": "Einheitliche Referenz",
+        "description": "Verwende einen Standardnamen auf Schildern, Karten und in Durchsagen. Nenne andere Namen in einem durchsuchbaren Verzeichnis."
+      },
+      {
+        "label": "Zweisprachige Anzeige",
+        "description": "Zeige beide Namen, wo immer möglich, und programmiere die Durchsagen so, dass sie den Wechsel widerspiegeln."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Normierung", "die Festlegung von Standards", "Die Normierung der Ortsnamen sorgt für eine klare Orientierung im öffentlichen Nahverkehr."],
+        ["die Beschilderung", "das System von Schildern", "Eine intuitive Beschilderung ist für Ortsfremde unerlässlich, um sich zurechtzufinden."],
+        ["die Identität", "das Selbstverständnis einer Gruppe", "Die Sprache ist ein wesentlicher Bestandteil der kulturellen Identität einer Gemeinschaft."],
+        ["der Wiedererkennungswert", "die Eigenschaft, sofort erkannt zu werden", "Ein einheitliches Design erhöht den Wiedererkennungswert der Marke erheblich."]
+      ],
+      "phrasalVerbs": [
+        ["sich durchsetzen", "allgemein akzeptiert werden", "In einer globalisierten Welt setzen sich oft englische Begriffe im Alltag durch."],
+        ["auf etwas zurückgreifen", "etwas als Hilfsmittel nutzen", "Bei Unklarheiten können wir jederzeit auf das digitale Archiv zurückgreifen."],
+        ["etwas einbeziehen", "etwas berücksichtigen", "Es ist wichtig, die Anwohner bei der Planung frühzeitig in den Prozess einzubeziehen."],
+        ["etwas ausweisen", "etwas offiziell kennzeichnen", "Die Stadt plant, die historischen Viertel deutlicher als solche auszuweisen."]
+      ],
+      "adjectives": [
+        ["verbindlich", "verpflichtend", "Die neuen Richtlinien sind für alle Mitarbeiter ab sofort verbindlich."],
+        ["zweisprachig", "in zwei Sprachen", "Die zweisprachige Beschilderung fördert die Akzeptanz in der Bevölkerung."],
+        ["inklusiv", "alle einbeziehend", "Ein inklusiv gestaltetes Leitsystem berücksichtigt die Bedürfnisse aller Nutzergruppen."],
+        ["übersichtlich", "klar strukturiert", "Die neue Karte ist sehr übersichtlich und erleichtert die Navigation enorm."]
+      ],
+      "connectors": [
+        ["wohingegen", "im Gegensatz dazu", "Die offizielle Karte ist statisch, wohingegen die digitale Version ständig aktualisiert wird."],
+        ["folglich", "als logische Konsequenz", "Die Daten waren unvollständig, folglich mussten wir die Erhebung wiederholen."],
+        ["ungeachtet dessen", "trotzdem", "Die Kosten waren hoch, ungeachtet dessen haben wir das Projekt abgeschlossen."],
+        ["in Anbetracht", "angesichts", "In Anbetracht der aktuellen Lage ist eine schnelle Entscheidung erforderlich."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Entscheidung für eine einheitliche Referenz ist aus Gründen der Effizienz und Klarheit vorzuziehen. Wenn wir uns auf einen offiziellen Namen konzentrieren, gewährleisten wir, dass **die Beschilderung** und die Durchsagen für alle Nutzer, unabhängig von ihrer Herkunft, verständlich bleiben.",
+        "Eine solche **Normierung** verhindert Missverständnisse, die bei einer zweisprachigen Anzeige entstehen könnten. Wenn Fahrgäste auf ein durchsuchbares Verzeichnis zurückgreifen können, bleibt die Information zugänglich, ohne den öffentlichen Raum mit redundanten Informationen zu überladen, was die Übersichtlichkeit massiv beeinträchtigt.",
+        "Letztlich ist die Standardisierung ein Akt der Inklusion, da sie ein verlässliches System schafft. Ein einheitliches Leitsystem bietet den höchsten **Wiedererkennungswert** und stellt sicher, dass der öffentliche Nahverkehr für alle gleichermaßen funktional bleibt, während die kulturelle Vielfalt in ergänzenden Medien gewürdigt wird."
+      ],
+      "b": [
+        "Die Entscheidung für eine zweisprachige Anzeige ist ein notwendiger Schritt, um die kulturelle **Identität** der lokalen Bevölkerung zu respektieren. Indem wir beide Namen im öffentlichen Raum präsentieren, signalisieren wir Offenheit und Wertschätzung gegenüber der Sprachgemeinschaft, die diese Namen seit Generationen verwendet.",
+        "Diese Praxis macht den öffentlichen Dienst nicht nur inklusiver, sondern auch authentischer. Wenn wir die Namen in die Durchsagen einbeziehen, wird die lokale Geschichte lebendig gehalten, was den **Wiedererkennungswert** der Region stärkt, anstatt sie durch eine sterile **Normierung** zu entwerten, die den lokalen Kontext ignoriert.",
+        "Zusammenfassend lässt sich sagen, dass die Sichtbarkeit von Minderheitensprachen im öffentlichen Raum ein Zeichen für eine moderne, inklusive Gesellschaft ist. Wir sollten den Platz nutzen, um Vielfalt abzubilden, da dies **die Identität** des Ortes festigt und den öffentlichen Dienst für alle Bürger relevanter macht."
+      ],
+      "conditional": [
+        "Wenn die Priorität auf der schnellen Orientierung und der Vermeidung von Verwirrung liegt, ist die einheitliche Referenz die bessere Wahl. In komplexen Verkehrsknotenpunkten ist eine klare, verbindliche **Beschilderung** essenziell, da zusätzliche Informationen den Nutzer überfordern könnten und die Sicherheit gefährden.",
+        "Wenn das Ziel hingegen die soziale Integration und die Anerkennung kultureller Identitäten ist, sollte man die zweisprachige Anzeige wählen. In Gebieten mit einer starken lokalen Sprachgemeinschaft ist es wichtig, diese **Identität** im öffentlichen Raum abzubilden, um die Akzeptanz und das Zugehörigkeitsgefühl der Bürger zu stärken.",
+        "Die Entscheidung hängt letztlich vom Kontext ab: In hochfrequentierten, unübersichtlichen Transitbereichen ist Konsistenz das entscheidende Kriterium, während in städtischen Quartieren die Repräsentation der lokalen **Identität** Vorrang haben sollte, um die soziale Bindung zu fördern."
+      ]
+    }
+  },
+  {
+    "slug": "modular-repairable-or-cheaper-product",
+    "title": "Langlebigkeit oder Kosteneffizienz?",
+    "prompt": "Ein Gerätehersteller kann ein Basisprodukt mit leicht austauschbaren Teilen zu einem höheren Preis neu gestalten. Alternativ kann er das günstigere Design beibehalten und das Austausch- und Rücknahmesystem stärken. Welcher Weg würde den Haushalten besser dienen?",
+    "conditionalPrompt": "Vergleiche, wer sich welches Produkt leisten kann und welche Beweise die langfristigen Einsparungen glaubwürdig machen würden.",
+    "options": [
+      {
+        "label": "Modulares Design",
+        "description": "Verwende standardisierte, austauschbare Komponenten und biete Ersatzteile für einen definierten Zeitraum an."
+      },
+      {
+        "label": "Günstiges Design",
+        "description": "Behalte das günstigere Design bei und verbessere den Prozess für den Austausch defekter Geräte und die Rücknahme."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Langlebigkeit", "die lange Lebensdauer", "Die Langlebigkeit unserer Produkte ist ein zentrales Qualitätsmerkmal unseres Unternehmens."],
+        ["die Kreislaufwirtschaft", "ein nachhaltiges Wirtschaftssystem", "Durch die Kreislaufwirtschaft reduzieren wir den Ressourcenverbrauch und den Abfall erheblich."],
+        ["der Anschaffungspreis", "der Preis beim Kauf", "Ein niedriger Anschaffungspreis ist für viele Haushalte das entscheidende Kaufkriterium."],
+        ["die Instandsetzung", "die Reparatur", "Die Instandsetzung alter Geräte ist oft nachhaltiger als der Kauf eines neuen Modells."]
+      ],
+      "phrasalVerbs": [
+        ["etwas instand halten", "etwas funktionsfähig erhalten", "Es ist kostengünstiger, die Maschinen regelmäßig instand zu halten, als sie zu ersetzen."],
+        ["auf etwas setzen", "eine Strategie wählen", "Wir setzen bei unserer neuen Produktlinie konsequent auf modulare Bauweisen."],
+        ["etwas abwägen", "etwas sorgfältig prüfen", "Wir müssen die Vor- und Nachteile beider Ansätze sorgfältig abwägen."],
+        ["etwas ausgleichen", "etwas kompensieren", "Die höheren Produktionskosten lassen sich durch die längere Nutzungsdauer ausgleichen."]
+      ],
+      "adjectives": [
+        ["reparaturfreundlich", "leicht zu reparieren", "Ein reparaturfreundliches Design spart dem Kunden langfristig viel Geld und Zeit."],
+        ["erschwinglich", "bezahlbar", "Wir möchten hochwertige Technologie für alle Haushalte erschwinglich machen."],
+        ["nachhaltig", "ressourcenschonend", "Eine nachhaltige Produktion ist heute für jedes Unternehmen eine moralische Verpflichtung."],
+        ["kostenintensiv", "teuer", "Die Entwicklung neuer Technologien ist oft sehr kostenintensiv und risikoreich."]
+      ],
+      "connectors": [
+        ["einerseits", "auf der einen Seite", "Einerseits sparen modulare Geräte langfristig Kosten, andererseits ist der Anschaffungspreis hoch."],
+        ["demnach", "folglich", "Die Reparatur ist zu teuer, demnach lohnt sich der Austausch des Geräts nicht."],
+        ["nichtsdestotrotz", "trotzdem", "Das Design ist veraltet, nichtsdestotrotz funktioniert das Gerät einwandfrei."],
+        ["infolgedessen", "als Ergebnis", "Die Nachfrage stieg, infolgedessen mussten wir die Produktion deutlich erhöhen."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Entscheidung für ein modulares Design ist der nachhaltigste Weg, um den Haushalten langfristig zu dienen. Durch die Verwendung standardisierter Komponenten wird **die Langlebigkeit** der Geräte sichergestellt, da Kunden defekte Teile selbst austauschen können, anstatt das gesamte Gerät zu entsorgen.",
+        "Obwohl **der Anschaffungspreis** initial höher ist, amortisieren sich diese Kosten durch die eingesparten Neuanschaffungen. Ein reparaturfreundliches Produkt fördert zudem die Eigenverantwortung der Nutzer und reduziert den Elektroschrott, was einen wesentlichen Beitrag zur **Kreislaufwirtschaft** leistet und den ökologischen Fußabdruck minimiert.",
+        "Zusammenfassend ist die modulare Bauweise die ökonomisch und ökologisch sinnvollere Strategie. Sie setzt auf Qualität und Beständigkeit, was den Haushalten Sicherheit gibt und sie unabhängig von kurzlebigen Trends macht, während sie gleichzeitig die Abhängigkeit vom Hersteller durch eine transparente Ersatzteilpolitik verringert."
+      ],
+      "b": [
+        "Die Entscheidung für das günstigere Design in Kombination mit einem verbesserten Rücknahmesystem ist die sozial gerechtere Lösung. Viele Haushalte sind auf erschwingliche Produkte angewiesen, und ein hoher **Anschaffungspreis** würde diese Gruppen vom Zugang zu moderner Technologie ausschließen.",
+        "Durch ein effizientes System zur **Instandsetzung** und Rücknahme alter Geräte stellen wir sicher, dass auch kostengünstige Produkte nicht sofort im Müll landen. Der Hersteller übernimmt hierbei die Verantwortung für den gesamten Lebenszyklus, was eine professionelle Aufarbeitung ermöglicht und die Umweltbelastung effektiv begrenzt.",
+        "Letztlich ist dieser Ansatz pragmatisch und inklusiv. Er erkennt an, dass finanzielle Hürden real sind, und bietet dennoch eine Lösung, die den Ressourcenverbrauch reduziert. Durch die professionelle Rücknahme wird **die Kreislaufwirtschaft** gefördert, ohne die finanzielle Belastung für die Verbraucher unnötig zu erhöhen."
+      ],
+      "conditional": [
+        "Wenn die Zielgruppe über ein hohes Einkommen verfügt und Wert auf Unabhängigkeit bei der Reparatur legt, ist das modulare Design die richtige Wahl. Hier überwiegen die langfristigen Einsparungen und die Autonomie, da der Nutzer das Gerät selbst instand halten kann, ohne auf den Service des Herstellers angewiesen zu sein.",
+        "Wenn das Produkt jedoch für Haushalte mit begrenztem Budget konzipiert ist, ist das günstigere Design mit einem starken Rücknahmesystem vorzuziehen. Hier ist der niedrige **Anschaffungspreis** das entscheidende Kriterium, um den Zugang zu ermöglichen, während die ökologische Verantwortung durch den Hersteller wahrgenommen wird.",
+        "Die Entscheidung basiert auf der finanziellen Leistungsfähigkeit der Kunden und dem Ziel der Nachhaltigkeit. Während das modulare Modell auf Eigenverantwortung setzt, bietet das Rücknahmesystem eine kollektive Lösung, die den Zugang für alle sichert und gleichzeitig die Umwelt schont."
+      ]
+    }
+  },
+  {
+    "slug": "in-house-capability-or-specialist-contract",
+    "title": "Eigenleistung oder Fremdvergabe?",
+    "prompt": "Eine öffentliche Einrichtung benötigt einen wiederkehrenden Dienst, der derzeit schwer zu besetzen ist. Soll sie über zwei Jahre ein internes Team aufbauen oder eine spezialisierte Organisation beauftragen, um den Dienst sofort zu erbringen?",
+    "conditionalPrompt": "Unterscheide das Risiko eines zu langsamen Starts vom Risiko, die Fähigkeit zur Überwachung der Arbeit zu verlieren.",
+    "options": [
+      {
+        "label": "Internes Team",
+        "description": "Trainiere ein festes Team und akzeptiere einen langsameren Start, während sich das Wissen entwickelt."
+      },
+      {
+        "label": "Spezialist beauftragen",
+        "description": "Beginne früher mit einem erfahrenen Anbieter und verhandle, wie der Vertrag enden soll."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Fachkompetenz", "das Expertenwissen", "Die Fachkompetenz unserer Mitarbeiter ist unser wichtigstes Kapital."],
+        ["die Abhängigkeit", "der Zustand des Angewiesenseins", "Eine zu starke Abhängigkeit von externen Dienstleistern kann langfristig problematisch sein."],
+        ["die Ausschreibung", "das öffentliche Auswahlverfahren", "Die Ausschreibung für das neue Projekt wurde bereits offiziell veröffentlicht."],
+        ["der Wissensaufbau", "der Prozess des Lernens", "Der Wissensaufbau innerhalb des Teams erfordert Zeit und kontinuierliche Unterstützung."]
+      ],
+      "phrasalVerbs": [
+        ["sich einarbeiten", "sich in ein Thema vertiefen", "Es dauert einige Wochen, bis sich neue Mitarbeiter vollständig in die Prozesse einarbeiten."],
+        ["auf etwas angewiesen sein", "etwas zwingend benötigen", "Wir sind bei diesem speziellen Projekt auf externe Expertise angewiesen."],
+        ["etwas auslagern", "etwas an Dritte abgeben", "Wir haben den IT-Support komplett ausgelagert, um Kosten zu sparen."],
+        ["etwas sicherstellen", "etwas garantieren", "Wir müssen sicherstellen, dass die Qualität der Dienstleistung jederzeit gewährleistet bleibt."]
+      ],
+      "adjectives": [
+        ["langfristig", "über einen langen Zeitraum", "Eine langfristige Planung ist für den Erfolg dieses Projekts unerlässlich."],
+        ["extern", "von außerhalb kommend", "Die externe Beratung hat uns wertvolle Impulse für die Umstrukturierung gegeben."],
+        ["unerlässlich", "absolut notwendig", "Eine gründliche Vorbereitung ist für den Erfolg unerlässlich."],
+        ["risikobehaftet", "mit Risiken verbunden", "Die Entscheidung für eine neue Technologie ist immer etwas risikobehaftet."]
+      ],
+      "connectors": [
+        ["insofern", "in diesem Punkt", "Die Lösung ist insofern ideal, als sie beide Anforderungen gleichzeitig erfüllt."],
+        ["demgegenüber", "im Vergleich dazu", "Das interne Team ist teurer, demgegenüber bietet es eine höhere Flexibilität."],
+        ["folgerichtig", "logisch daraus folgend", "Die Analyse war korrekt, folgerichtig haben wir die Strategie angepasst."],
+        ["unter Berücksichtigung", "wenn man etwas einbezieht", "Unter Berücksichtigung aller Faktoren ist die Fremdvergabe die sicherste Option."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Entscheidung für den Aufbau eines internen Teams ist **langfristig** die stabilere Lösung. Auch wenn der Start langsamer verläuft, entwickeln wir so die notwendige **Fachkompetenz** im eigenen Haus, was uns **langfristig** unabhängiger von externen Anbietern macht und die Qualität der Arbeit besser kontrollierbar hält.",
+        "Ein internes Team identifiziert sich stärker mit den Zielen der Einrichtung und kann flexibler auf interne Veränderungen reagieren. **Der Wissensaufbau** ist zwar ein zeitintensiver Prozess, aber er stellt sicher, dass das Know-how dauerhaft erhalten bleibt, anstatt es bei Vertragsende wieder zu verlieren.",
+        "Zusammenfassend ist der Aufbau eigener Kapazitäten eine Investition in die Zukunft. Wir vermeiden **die Abhängigkeit** von externen Partnern und stellen sicher, dass die Dienstleistung exakt auf unsere Bedürfnisse zugeschnitten ist, was die Qualität und Zuverlässigkeit der Arbeit nachhaltig sichert."
+      ],
+      "b": [
+        "Die Beauftragung eines spezialisierten Anbieters ist die einzige Möglichkeit, den Dienst sofort und in hoher Qualität zu erbringen. Da wir derzeit Schwierigkeiten haben, das Personal zu finden, ist der Aufbau eines internen Teams zu **risikobehaftet** und würde den Betrieb unnötig lange verzögern.",
+        "Durch die Zusammenarbeit mit Experten profitieren wir sofort von deren Erfahrung und **Fachkompetenz**. Wir können vertraglich genau festlegen, wie der Übergang oder das Ende der Zusammenarbeit gestaltet wird, um sicherzustellen, dass wir nicht in eine dauerhafte **Abhängigkeit** geraten, sondern den Prozess kontrollieren.",
+        "Letztlich ist die Fremdvergabe eine pragmatische Entscheidung, um den unmittelbaren Bedarf zu decken. Sie ermöglicht es uns, sofort handlungsfähig zu sein, während wir gleichzeitig die Zeit gewinnen, um langfristige Strategien für den internen **Wissensaufbau** in Ruhe zu entwickeln."
+      ],
+      "conditional": [
+        "Wenn der **Wissensaufbau** innerhalb der Einrichtung oberste Priorität hat, ist der Aufbau eines internen Teams die richtige Wahl. Das Risiko eines langsamen Starts ist **unerlässlich**, um die **Fachkompetenz** intern zu sichern.",
+        "Wenn hingegen die sofortige Verfügbarkeit entscheidend ist, ist die Beauftragung eines **externen** Spezialisten vorzuziehen. **Demgegenüber** ist das Risiko, von einem Partner **abhängig** zu sein, durch klare Verträge **risikobehaftet**, aber beherrschbar.",
+        "Die Entscheidung hängt davon ab, ob man das Risiko einer Verzögerung oder die **Abhängigkeit** von **externen** Partnern höher gewichtet. **Unter Berücksichtigung** der **Fachkompetenz** ist der interne Aufbau **folgerichtig**, sofern man Zeit hat."
+      ]
+    }
+  },
+  {
+    "slug": "school-library-guidance-or-open-access",
+    "title": "Altersfreigabe oder Eigenverantwortung?",
+    "prompt": "Eine weiterführende Schule muss entscheiden, wie sie mit Büchern zu anspruchsvollen Themen umgeht, die viele ältere Schüler lesen wollen. Soll sie Altersfreigaben mit individuellen Zugangsgesprächen nutzen oder allen Schülern der Oberstufe den Zugriff auf denselben Katalog ermöglichen?",
+    "conditionalPrompt": "Spezifiziere, wann Beratung beim Wählen hilft und wann sie zu einer Barriere wird, die schwer anzufechten ist.",
+    "options": [
+      {
+        "label": "Altersfreigabe",
+        "description": "Veröffentliche Altersfreigaben und erlaube Schülern, ein Gespräch anzufordern, wenn sie ein Buch über dem empfohlenen Alter lesen möchten."
+      },
+      {
+        "label": "Offener Zugang",
+        "description": "Lasse Schüler der Oberstufe selbst wählen und biete optionale Inhaltsinformationen sowie Unterstützung durch Bibliothekare an."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Mündigkeit", "die Fähigkeit, selbstständig zu entscheiden", "Die Förderung der Mündigkeit ist ein zentrales Ziel unserer pädagogischen Arbeit."],
+        ["die Hemmschwelle", "die psychologische Barriere", "Ein persönliches Gespräch kann für manche Schüler eine zu hohe Hemmschwelle darstellen."],
+        ["die Altersfreigabe", "die offizielle Empfehlung für ein Alter", "Die Altersfreigabe dient als Orientierungshilfe, sollte aber nicht als Verbot missverstanden werden."],
+        ["die Medienkompetenz", "die Fähigkeit, Medien kritisch zu nutzen", "Die Stärkung der Medienkompetenz ist in der heutigen Zeit wichtiger denn je."]
+      ],
+      "phrasalVerbs": [
+        ["sich auseinandersetzen mit", "sich intensiv mit etwas beschäftigen", "Schüler müssen lernen, sich kritisch mit komplexen Themen auseinanderzusetzen."],
+        ["etwas einschränken", "etwas begrenzen", "Wir sollten den Zugang zu Informationen nicht unnötig einschränken."],
+        ["etwas fördern", "etwas unterstützen", "Die Bibliothek sollte das Interesse am Lesen aktiv fördern."],
+        ["auf etwas zugreifen", "etwas nutzen können", "Alle Schüler sollten auf die gesamte Bibliothek zugreifen können."]
+      ],
+      "adjectives": [
+        ["altersgerecht", "für ein bestimmtes Alter geeignet", "Das Buch ist nicht unbedingt altersgerecht, bietet aber wichtige Diskussionsgrundlagen."],
+        ["eigenverantwortlich", "selbstständig handelnd", "Wir erwarten von den Schülern der Oberstufe ein eigenverantwortliches Handeln."],
+        ["restriktiv", "einschränkend", "Eine zu restriktive Politik führt oft zu Widerstand bei den Schülern."],
+        ["anspruchsvoll", "hohe Anforderungen stellend", "Die Lektüre ist inhaltlich sehr anspruchsvoll und erfordert eine gewisse Reife."]
+      ],
+      "connectors": [
+        ["demzufolge", "als logische Folge", "Die Schüler sind reif, demzufolge ist ein offener Zugang angemessen."],
+        ["im Gegensatz dazu", "als Kontrast", "Die Unterstufe braucht Anleitung, im Gegensatz dazu ist die Oberstufe selbstständig."],
+        ["nichtsdestoweniger", "trotzdem", "Die Themen sind schwierig, nichtsdestoweniger sollten sie zugänglich sein."],
+        ["unter der Voraussetzung", "wenn die Bedingung erfüllt ist", "Wir erlauben den Zugriff unter der Voraussetzung, dass eine pädagogische Begleitung stattfindet."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Entscheidung für Altersfreigaben ist ein verantwortungsvoller Weg, um Schüler bei der Auswahl anspruchsvoller Literatur zu unterstützen. Dies bedeutet nicht, dass der Zugang verwehrt wird, sondern dass ein Rahmen geschaffen wird, in dem Schüler und Bibliothekare über die Inhalte sprechen können.",
+        "Ein solches Gespräch fördert **die Medienkompetenz**, da die Schüler lernen, ihre Wahl zu reflektieren. Die Freigabe dient als Orientierungshilfe, die sicherstellt, dass Schüler nicht unvorbereitet auf komplexe Themen treffen, während sie gleichzeitig die Möglichkeit haben, durch ein Gespräch den Zugang zu erhalten.",
+        "Zusammenfassend ist diese Struktur eine pädagogische Unterstützung, keine Barriere. Sie stellt sicher, dass die Auswahl der Lektüre ein bewusster Prozess ist, der die Reife der Schüler berücksichtigt und ihnen hilft, sich fundiert mit anspruchsvollen Inhalten auseinanderzusetzen."
+      ],
+      "b": [
+        "Die Entscheidung für einen offenen Zugang ist der richtige Weg, um **die Mündigkeit** der Schüler in der Oberstufe zu fördern. Wenn wir den Schülern vertrauen, dass sie selbst entscheiden können, was sie lesen möchten, stärken wir ihr Selbstvertrauen und ihre Eigenverantwortung.",
+        "Optionale Inhaltsinformationen bieten eine hilfreiche Unterstützung, ohne den Zugang **restriktiv** zu begrenzen. Bibliothekare stehen beratend zur Seite, aber die Entscheidung liegt bei den Schülern selbst, was den Zugang zu Literatur demokratisiert und die Bibliothek als einen Ort des freien Lernens etabliert.",
+        "Letztlich ist der offene Zugang ein Zeichen von Respekt gegenüber den Schülern. Er erkennt an, dass sie in der Lage sind, komplexe Themen zu bewältigen, und fördert eine Kultur der Offenheit, in der Lesen als ein freier, selbstbestimmter Prozess verstanden wird, der nicht durch bürokratische Hürden behindert wird."
+      ],
+      "conditional": [
+        "Wenn das Ziel der Schutz vor Überforderung und die pädagogische Begleitung sind, ist **die Altersfreigabe** mit Gesprächsangebot die bessere Wahl. Beratung hilft hier, den Schülern bei der Einordnung schwieriger Themen zu helfen, sofern das Gespräch als Unterstützung und nicht als Zensur wahrgenommen wird.",
+        "Wenn das Ziel hingegen die Förderung der Selbstständigkeit und der **Mündigkeit** ist, sollte man den offenen Zugang wählen. Hier wird Beratung zu einer Barriere, wenn sie als verpflichtende Erlaubnis wahrgenommen wird, die schwer anzufechten ist, anstatt als freiwilliges Angebot zur Unterstützung.",
+        "Die Entscheidung hängt davon ab, ob man den Fokus auf den Schutz oder auf die Eigenverantwortung legt. Während **die Altersfreigabe** einen sicheren Rahmen bietet, ermöglicht der offene Zugang eine freie intellektuelle Entwicklung, die für Schüler der Oberstufe essenziell ist."
+      ]
+    }
+  },
+  {
+    "slug": "permanent-monument-or-rotating-memorial",
+    "title": "Beständigkeit oder Wandel?",
+    "prompt": "Eine Stadt hat einen prominenten öffentlichen Ort und Geld, um an ein Ereignis zu erinnern, das viele Gruppen unterschiedlich betroffen hat. Soll sie ein dauerhaftes Denkmal mit vereinbartem Wortlaut in Auftrag geben oder eine Reihe temporärer Installationen mit verschiedenen Mitwirkenden finanzieren?",
+    "conditionalPrompt": "Entscheide, was über die Zeit stabil bleiben sollte und wo die Stadt Raum für eine andere Darstellung lassen sollte.",
+    "options": [
+      {
+        "label": "Dauerhaftes Denkmal",
+        "description": "Schaffe einen dauerhaften öffentlichen Gedenkort nach Beratung und stelle unterstützende Informationen bereit."
+      },
+      {
+        "label": "Temporäre Installationen",
+        "description": "Gib verschiedenen Mitwirkenden Zeit am Ort und bewahre eine Aufzeichnung jeder Installation auf."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["die Gedenkkultur", "die Art und Weise des Erinnerns", "Eine lebendige Gedenkkultur ist für die Aufarbeitung der Geschichte unerlässlich."],
+        ["der Diskurs", "der fachliche Austausch", "Der Diskurs über die Gestaltung des Denkmals war sehr intensiv und kontrovers."],
+        ["die Beständigkeit", "die Dauerhaftigkeit", "Die Beständigkeit des Denkmals soll ein Zeichen für das dauerhafte Gedenken sein."],
+        ["das Narrativ", "die Erzählweise", "Es gibt nicht das eine Narrativ, sondern viele verschiedene Perspektiven auf das Ereignis."]
+      ],
+      "phrasalVerbs": [
+        ["etwas würdigen", "etwas ehren", "Wir möchten die Opfer des Ereignisses angemessen würdigen."],
+        ["in den Vordergrund rücken", "etwas betonen", "Die temporären Installationen rücken die verschiedenen Perspektiven der Betroffenen in den Vordergrund."],
+        ["sich wandeln", "sich verändern", "Die Art und Weise, wie wir uns erinnern, kann sich im Laufe der Zeit wandeln."],
+        ["etwas festhalten", "etwas dokumentieren", "Es ist wichtig, jede Installation digital festzuhalten, damit sie nicht in Vergessenheit gerät."]
+      ],
+      "adjectives": [
+        ["dynamisch", "beweglich", "Eine dynamische Erinnerungskultur passt sich den neuen Erkenntnissen an."],
+        ["statisch", "unveränderlich", "Ein statisches Denkmal kann den komplexen Ereignissen oft nicht gerecht werden."],
+        ["vielschichtig", "komplex", "Die Geschichte ist vielschichtig und sollte auch so dargestellt werden."],
+        ["repräsentativ", "stellvertretend", "Das Denkmal soll repräsentativ für alle betroffenen Gruppen sein."]
+      ],
+      "connectors": [
+        ["gleichermaßen", "in gleichem Maße", "Die Installationen sollten alle betroffenen Gruppen gleichermaßen berücksichtigen."],
+        ["demgegenüber", "im Vergleich dazu", "Das permanente Denkmal ist stabil, demgegenüber sind die Installationen wandelbar."],
+        ["infolgedessen", "als Ergebnis", "Die Debatte war erfolgreich, infolgedessen haben wir das Konzept angepasst."],
+        ["ungeachtet", "trotz", "Ungeachtet der unterschiedlichen Meinungen haben wir einen Konsens gefunden."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Die Entscheidung für ein dauerhaftes Denkmal schafft einen stabilen Ankerpunkt für **die Gedenkkultur** der Stadt. Ein solches Denkmal bietet einen festen Ort, an dem sich die Gemeinschaft versammeln kann, um gemeinsam zu erinnern, was eine wichtige Funktion für den sozialen Zusammenhalt hat.",
+        "Durch einen sorgfältig abgestimmten Wortlaut wird ein gemeinsames **Narrativ** geschaffen, das die verschiedenen Perspektiven integriert. Auch wenn ein Denkmal **statisch** wirkt, kann es durch begleitende Informationen **vielschichtig** gestaltet werden, sodass es nicht nur an das Ereignis erinnert, sondern auch zur Reflexion anregt.",
+        "Zusammenfassend ist das dauerhafte Denkmal ein Zeichen der **Beständigkeit**. Es signalisiert, dass die Stadt die Verantwortung für das Gedenken übernimmt und einen dauerhaften Raum schafft, der über Generationen hinweg als Ort der Würdigung und des Lernens dient."
+      ],
+      "b": [
+        "Die Entscheidung für temporäre Installationen ist der beste Weg, um der Vielschichtigkeit des Ereignisses gerecht zu werden. Da viele Gruppen unterschiedlich betroffen waren, kann ein einzelnes, statisches Denkmal niemals alle Perspektiven angemessen abbilden, ohne dabei jemanden auszuschließen.",
+        "Temporäre Installationen ermöglichen einen dynamischen **Diskurs**, in dem verschiedene Mitwirkende ihre Sichtweise einbringen können. Indem wir jede Installation dokumentieren, bewahren wir die Vielfalt der Erinnerungen, anstatt sie in einem einzigen, möglicherweise umstrittenen **Narrativ** zu verfestigen, das sich nicht mehr wandeln kann.",
+        "Letztlich ist dieser Ansatz Ausdruck einer modernen, lebendigen Erinnerungskultur. Er lässt Raum für unterschiedliche Stimmen und ermöglicht es, dass sich das Gedenken mit der Zeit weiterentwickelt, was den Ort für alle Bürger relevant und lebendig hält."
+      ],
+      "conditional": [
+        "Wenn das Ziel ein stabiler, gemeinsamer Gedenkort ist, der über lange Zeit Bestand hat, ist das dauerhafte Denkmal die richtige Wahl. Hier sollte **die Beständigkeit** im Vordergrund stehen, um einen festen Bezugspunkt für die Stadtgesellschaft zu schaffen, der unabhängig von aktuellen Debatten existiert.",
+        "Wenn das Ziel hingegen die Abbildung einer komplexen, vielschichtigen Geschichte ist, sind temporäre Installationen vorzuziehen. Hier sollte die Stadt Raum für eine andere Darstellung lassen, da dies den **Diskurs** fördert und verhindert, dass eine einzige Sichtweise die Erinnerung dominiert, die sich mit der Zeit wandeln muss.",
+        "Die Entscheidung hängt davon ab, ob man den Wert der Stabilität oder den Wert der Vielfalt höher gewichtet. Während das Denkmal einen festen Rahmen bietet, ermöglichen die Installationen eine dynamische Auseinandersetzung, die den unterschiedlichen Erfahrungen der Betroffenen gerecht wird."
+      ]
+    }
+  }
+]

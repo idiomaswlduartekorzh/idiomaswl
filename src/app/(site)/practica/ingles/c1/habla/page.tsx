@@ -1,7 +1,7 @@
-import EnglishSpeakingHub, { englishSpeakingMetadata } from '@/components/practica/speaking-dilemmas/EnglishSpeakingHub'
+import SpeakingDilemmaHub, { speakingDilemmaHubMetadata } from '@/components/practica/speaking-dilemmas/SpeakingDilemmaHub'
 
-export const metadata = englishSpeakingMetadata('c1')
+export const metadata = speakingDilemmaHubMetadata('c1')
 
 export default function Page() {
-  return <EnglishSpeakingHub level="c1" />
+  return <SpeakingDilemmaHub level="c1" />
 }

@@ -137,6 +137,7 @@ export interface GrammarTopic {
     heading: string
     paragraphs: string[]
     table?: string[][]
+    tables?: Array<{ caption: string; rows: string[][] }>
     examples?: string[][]
     clockReading?: boolean
     clockConversations?: ClockConversation[]

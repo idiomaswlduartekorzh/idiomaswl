@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "tea-or-milk",
+    "title": "Tè o latte?",
+    "prompt": "È l'ora di colazione. Vuoi bere il tè o il latte?",
+    "conditionalPrompt": "Spiega quando bevi il tè e quando bevi il latte.",
+    "options": [
+      {
+        "label": "Il tè",
+        "description": "Prendi il tè in una tazza piccola."
+      },
+      {
+        "label": "Il latte",
+        "description": "Prendi il latte in un bicchiere."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["tazza", "taza", "La tazza di tè è calda."],
+        ["bicchiere", "vaso", "Bevo un bicchiere di latte fresco."],
+        ["zucchero", "azúcar", "Metto un po' di zucchero nel tè."],
+        ["mattina", "mañana", "La mattina mangio sempre i biscotti."]
+      ],
+      "phrasalVerbs": [
+        ["fare colazione", "desayunar", "Faccio colazione alle sette ogni giorno."],
+        ["preferire", "preferire", "Preferisco il tè perché è leggero."],
+        ["aggiungere", "añadir", "Aggiungo il latte freddo nel bicchiere."],
+        ["riscaldare", "calentar", "Riscaldo il latte nel forno a microonde."]
+      ],
+      "adjectives": [
+        ["caldo", "caliente", "Il tè caldo è molto buono."],
+        ["freddo", "frío", "Il latte freddo è perfetto in estate."],
+        ["piccolo", "pequeño", "Uso una tazza piccola per il tè."],
+        ["dolce", "dulce", "Il latte è dolce e mi piace."]
+      ],
+      "connectors": [
+        ["perché", "perché", "Bevo il tè perché non ho fame."],
+        ["ma", "pero", "Voglio il latte ma non c'è."],
+        ["invece", "en cambio", "Prendo il tè invece del caffè."],
+        ["anche", "también", "Bevo il latte e anche il tè."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco bere il tè.",
+        "Uso una **tazza** piccola e calda.",
+        "Il tè è leggero la **mattina**."
+      ],
+      "b": [
+        "Voglio un **bicchiere** di latte.",
+        "Il latte è **dolce** e fresco.",
+        "Mi piace bere il latte bianco."
+      ],
+      "conditional": [
+        "**Se** ho tempo alla **mattina**, preferisco bere il tè **caldo**.",
+        "Invece, prendo il latte **freddo** **se** ho molta fame.",
+        "La regola è semplice: decido **subito** **perché** amo la **colazione**."
+      ]
+    }
+  },
+  {
+    "slug": "cereal-or-eggs",
+    "title": "Cereali o uova?",
+    "prompt": "Hai tempo per una sola colazione. Scegli i cereali o le uova?",
+    "conditionalPrompt": "Dì cosa mangi nei giorni di scuola e nel fine settimana.",
+    "options": [
+      {
+        "label": "Cereali",
+        "description": "Metti i cereali e il latte in una ciotola."
+      },
+      {
+        "label": "Uova",
+        "description": "Cucina le uova e mangiale con il pane."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["ciotola", "bol", "Metto i cereali nella ciotola."],
+        ["uovo", "huevo", "Cucino un uovo in padella."],
+        ["pane", "pan", "Mangio le uova con il pane."],
+        ["settimana", "semana", "Durante la settimana mangio in fretta."]
+      ],
+      "phrasalVerbs": [
+        ["cucinare", "cocinar", "Cucino le uova con il burro."],
+        ["versare", "verter", "Verso il latte sopra i cereali."],
+        ["mangiare", "comer", "Mangio i cereali con il cucchiaio."],
+        ["preparare", "preparar", "Preparo la colazione in cinque minuti."]
+      ],
+      "adjectives": [
+        ["veloce", "rápido", "I cereali sono una colazione veloce."],
+        ["salato", "salado", "Le uova sono un piatto salato."],
+        ["fresco", "fresco", "Il latte fresco è nella ciotola."],
+        ["pronto", "listo", "La colazione è pronta sul tavolo."]
+      ],
+      "connectors": [
+        ["quindi", "por lo tanto", "Ho fretta quindi mangio i cereali."],
+        ["o", "o", "Preferisci le uova o i cereali?"],
+        ["mentre", "mientras", "Mangio mentre guardo la televisione."],
+        ["poi", "luego", "Cucino le uova e poi mangio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Scelgo i cereali con il latte.",
+        "Metto tutto in una **ciotola** grande.",
+        "Questa colazione è molto **veloce**."
+      ],
+      "b": [
+        "Preferisco **cucinare** le uova fresche.",
+        "Mangio le uova con il **pane**.",
+        "Mi piace il sapore **salato** oggi."
+      ],
+      "conditional": [
+        "Mangio i cereali nei giorni feriali.",
+        "Cucino le uova nel fine **settimana**.",
+        "Cambio colazione ogni sabato mattina."
+      ]
+    }
+  },
+  {
+    "slug": "soup-or-sandwich",
+    "title": "Zuppa o panino?",
+    "prompt": "Puoi comprare un solo pranzo. Vuoi la zuppa o un panino?",
+    "conditionalPrompt": "Dì cosa scegli in una giornata fredda e in una giornata impegnata.",
+    "options": [
+      {
+        "label": "Zuppa",
+        "description": "Mangia una zuppa calda al tavolo."
+      },
+      {
+        "label": "Panino",
+        "description": "Porta un panino con te."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["zuppa", "sopa", "La zuppa di verdure è calda."],
+        ["panino", "bocadillo", "Compro un panino con il prosciutto."],
+        ["tavolo", "mesa", "Mi siedo al tavolo del bar."],
+        ["pausa", "descanso", "Faccio una pausa pranzo molto breve."]
+      ],
+      "phrasalVerbs": [
+        ["comprare", "comprar", "Compro un panino al bar."],
+        ["sedersi", "sentarse", "Mi siedo al tavolo per mangiare."],
+        ["portare", "llevar", "Porto il panino in ufficio."],
+        ["scegliere", "elegir", "Scelgo la zuppa perché fa freddo."]
+      ],
+      "adjectives": [
+        ["caldo", "caliente", "La zuppa calda è molto buona."],
+        ["veloce", "rápido", "Il panino è un pasto veloce."],
+        ["impegnato", "ocupado", "Oggi sono molto impegnato al lavoro."],
+        ["buono", "bueno", "Il panino è buono e fresco."]
+      ],
+      "connectors": [
+        ["se", "si", "Mangio la zuppa se ho tempo."],
+        ["oppure", "o bien", "Prendo la zuppa oppure il panino."],
+        ["quando", "cuando", "Prendo il panino quando ho fretta."],
+        ["infatti", "de hecho", "Ho fame infatti mangio tutto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Voglio mangiare una **zuppa** calda.",
+        "Mi siedo al **tavolo** con calma.",
+        "La **zuppa** è buona e nutriente."
+      ],
+      "b": [
+        "Prendo un **panino** da **portare** via.",
+        "Mangio il **panino** mentre cammino.",
+        "È la scelta migliore oggi."
+      ],
+      "conditional": [
+        "Mangio la **zuppa** **se** fa freddo.",
+        "Prendo il **panino** **se** sono **impegnato**.",
+        "Dipende dal tempo che ho oggi."
+      ]
+    }
+  },
+  {
+    "slug": "home-or-cafe",
+    "title": "A casa o al bar?",
+    "prompt": "È sabato. Vuoi pranzare a casa o al bar?",
+    "conditionalPrompt": "Dì quando mangi a casa e quando vai al bar.",
+    "options": [
+      {
+        "label": "A casa",
+        "description": "Prepara il pranzo nella tua cucina."
+      },
+      {
+        "label": "Al bar",
+        "description": "Incontra un amico e compra il pranzo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["cucina", "cocina", "Cucino la pasta nella mia cucina."],
+        ["amico", "amigo", "Vado al bar con un amico."],
+        ["pranzo", "almuerzo", "Il pranzo del sabato è speciale."],
+        ["città", "ciudad", "Il bar è in centro città."]
+      ],
+      "phrasalVerbs": [
+        ["incontrare", "encontrar/quedar con", "Incontro un amico per il pranzo."],
+        ["cucinare", "cocinar", "Cucino un piatto semplice a casa."],
+        ["uscire", "salir", "Esco di casa alle dodici."],
+        ["restare", "quedarse", "Resto a casa perché sono stanco."]
+      ],
+      "adjectives": [
+        ["tranquillo", "tranquilo", "Il pranzo a casa è tranquillo."],
+        ["costoso", "caro", "Mangiare al bar è più costoso."],
+        ["aperto", "abierto", "Il bar in piazza è aperto."],
+        ["fatto in casa", "casero", "Il cibo fatto in casa è sano."]
+      ],
+      "connectors": [
+        ["con", "con", "Pranzo al bar con un amico."],
+        ["senza", "sin", "Mangio a casa senza spendere troppo."],
+        ["spesso", "a menudo", "Vado spesso al bar il sabato."],
+        ["qualche volta", "a veces", "Qualche volta cucino per gli amici."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Pranzo** a casa nella mia **cucina**.",
+        "Preparo un piatto di pasta semplice.",
+        "Mi piace **restare** a casa oggi."
+      ],
+      "b": [
+        "Vado al bar **con** un **amico**.",
+        "Compriamo il **pranzo** in centro **città**.",
+        "È divertente **uscire** il sabato."
+      ],
+      "conditional": [
+        "**Se** desidero un pasto **tranquillo**, **cucino** a casa **spesso**.",
+        "Invece, vado al bar **se** incontro un **amico** **caro**.",
+        "La regola è chiara: scelgo **sempre** **con** grande **cura**."
+      ]
+    }
+  },
+  {
+    "slug": "bus-or-walk",
+    "title": "Autobus o a piedi?",
+    "prompt": "Il negozio è vicino a casa tua. Ci vai a piedi o prendi l'autobus?",
+    "conditionalPrompt": "Dì cosa fai quando c'è il sole e quando piove.",
+    "options": [
+      {
+        "label": "A piedi",
+        "description": "Vai a piedi. Ci vogliono dieci minuti."
+      },
+      {
+        "label": "Autobus",
+        "description": "Prendi l'autobus fuori da casa tua."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["piedi", "pies", "Vado al negozio a piedi."],
+        ["autobus", "autobús", "L'autobus ferma vicino alla casa."],
+        ["pioggia", "lluvia", "Prendo l'autobus se c'è pioggia."],
+        ["sole", "sol", "Cammino quando c'è il sole."]
+      ],
+      "phrasalVerbs": [
+        ["camminare", "caminar", "Cammino per dieci minuti circa."],
+        ["prendere", "tomar", "Prendo l'autobus alla fermata."],
+        ["aspettare", "esperar", "Aspetto l'autobus per cinque minuti."],
+        ["arrivare", "llegar", "Arrivo al negozio molto presto."]
+      ],
+      "adjectives": [
+        ["vicino", "cerca", "Il negozio è molto vicino."],
+        ["lontano", "lejos", "La fermata non è lontana."],
+        ["bello", "bueno/bello", "Il tempo oggi è molto bello."],
+        ["veloce", "rápido", "L'autobus è veloce e comodo."]
+      ],
+      "connectors": [
+        ["per", "para", "Cammino per dieci minuti."],
+        ["quindi", "así que", "Piove quindi prendo l'autobus."],
+        ["anche se", "aunque", "Vado a piedi anche se piove."],
+        ["invece", "en cambio", "Prendo l'autobus invece di camminare."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Vado al negozio a **piedi**.",
+        "Ci vogliono solo dieci minuti.",
+        "**Camminare** fa bene alla salute."
+      ],
+      "b": [
+        "Prendo l'**autobus** fuori da casa.",
+        "La fermata è proprio qui **vicino**.",
+        "Arrivo al negozio molto velocemente."
+      ],
+      "conditional": [
+        "Vado a **piedi** se c'è **sole**.",
+        "Prendo l'**autobus** se piove forte.",
+        "Scelgo il mezzo più comodo."
+      ]
+    }
+  },
+  {
+    "slug": "bike-or-car",
+    "title": "Bici o macchina?",
+    "prompt": "Stai andando al parco. Vuoi andare in bicicletta o in macchina?",
+    "conditionalPrompt": "Dì cosa scegli in una giornata di sole e in una giornata fredda.",
+    "options": [
+      {
+        "label": "Bicicletta",
+        "description": "Pedala su una strada piccola verso il parco."
+      },
+      {
+        "label": "Macchina",
+        "description": "Vai con la tua famiglia in macchina."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["bicicletta", "bicicleta", "Vado al parco in bicicletta."],
+        ["macchina", "coche", "Uso la macchina con la famiglia."],
+        ["parco", "parque", "Il parco è grande e verde."],
+        ["strada", "calle/carretera", "La strada per il parco è bella."]
+      ],
+      "phrasalVerbs": [
+        ["andare", "ir", "Vado al parco ogni domenica."],
+        ["guidare", "conducir", "Mio padre guida la macchina."],
+        ["pedalare", "pedalear", "Pedalo sulla strada piccola."],
+        ["usare", "usar", "Uso la bicicletta se fa caldo."]
+      ],
+      "adjectives": [
+        ["freddo", "frío", "Oggi fa troppo freddo."],
+        ["soleggiato", "soleado", "Il tempo è bello e soleggiato."],
+        ["piccolo", "pequeño", "Passo per una strada piccola."],
+        ["stanco", "cansado", "Sono stanco e prendo la macchina."]
+      ],
+      "connectors": [
+        ["insieme", "juntos", "Andiamo in macchina tutti insieme."],
+        ["perché", "porque", "Uso la bici perché è divertente."],
+        ["se", "si", "Prendo la macchina se fa freddo."],
+        ["o", "o", "Preferisci la bici o la macchina?"]
+      ]
+    },
+    "models": {
+      "a": [
+        "Vado al **parco** in **bicicletta**.",
+        "Pedalo su una **strada** piccola.",
+        "Mi piace fare sport all'aperto."
+      ],
+      "b": [
+        "Vado in **macchina** con la famiglia.",
+        "La **macchina** è comoda e veloce.",
+        "Siamo in quattro persone oggi."
+      ],
+      "conditional": [
+        "Uso la bici **se** è **soleggiato**.",
+        "Prendo la **macchina** **se** fa **freddo**.",
+        "Decido in base al tempo."
+      ]
+    }
+  },
+  {
+    "slug": "stairs-or-lift",
+    "title": "Scale o ascensore?",
+    "prompt": "Devi salire di due piani. Prendi le scale o l'ascensore?",
+    "conditionalPrompt": "Dì cosa scegli con una borsa pesante e senza borsa.",
+    "options": [
+      {
+        "label": "Scale",
+        "description": "Sali a piedi per due piani."
+      },
+      {
+        "label": "Ascensore",
+        "description": "Aspetta l'ascensore e sali."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["scale", "escaleras", "Salgo le scale con calma."],
+        ["ascensore", "ascensor", "L'ascensore è al piano terra."],
+        ["piano", "piso", "Abito al secondo piano."],
+        ["borsa", "bolsa", "La mia borsa è molto pesante."]
+      ],
+      "phrasalVerbs": [
+        ["salire", "subir", "Salgo le scale ogni giorno."],
+        ["aspettare", "esperar", "Aspetto l'ascensore nel corridoio."],
+        ["portare", "llevar", "Porto una borsa molto grande."],
+        ["camminare", "caminar", "Cammino su per le scale."]
+      ],
+      "adjectives": [
+        ["pesante", "pesado", "La borsa della spesa è pesante."],
+        ["leggero", "ligero", "Senza borsa sono molto leggero."],
+        ["veloce", "rápido", "L'ascensore è un mezzo veloce."],
+        ["stanco", "cansado", "Sono stanco e non cammino."]
+      ],
+      "connectors": [
+        ["senza", "sin", "Salgo le scale senza borsa."],
+        ["con", "con", "Vado in ascensore con la borsa."],
+        ["ancora", "todavía", "L'ascensore è ancora al terzo piano."],
+        ["invece", "en cambio", "Prendo le scale invece dell'ascensore."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Salgo a piedi per due piani.",
+        "Le **scale** sono un buon esercizio.",
+        "Arrivo subito al mio **piano**."
+      ],
+      "b": [
+        "Aspetto l'**ascensore** per **salire**.",
+        "L'**ascensore** è comodo e **veloce**.",
+        "Non voglio fare fatica oggi."
+      ],
+      "conditional": [
+        "Prendo l'**ascensore** **con** una **borsa**.",
+        "Uso le **scale** se sono **leggero**.",
+        "Dipende da cosa porto oggi."
+      ]
+    }
+  },
+  {
+    "slug": "inside-or-outside",
+    "title": "Dentro o fuori?",
+    "prompt": "Sei al bar. Ti siedi dentro o fuori?",
+    "conditionalPrompt": "Dì dove ti siedi quando c'è il sole e quando fa freddo.",
+    "options": [
+      {
+        "label": "Dentro",
+        "description": "Siediti a un tavolo vicino alla finestra."
+      },
+      {
+        "label": "Fuori",
+        "description": "Siediti a un tavolo al sole."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["finestra", "ventana", "Mi siedo vicino alla finestra."],
+        ["sole", "sol", "Il sole è caldo oggi."],
+        ["tavolo", "mesa", "C'è un tavolo libero fuori."],
+        ["bar", "bar", "Il bar è molto affollato."]
+      ],
+      "phrasalVerbs": [
+        ["sedersi", "sentarsi", "Mi siedo fuori al sole."],
+        ["guardare", "mirar", "Guardo la gente dalla finestra."],
+        ["preferire", "preferir", "Preferisco stare dentro al caldo."],
+        ["bere", "beber", "Bevo un caffè al tavolo."]
+      ],
+      "adjectives": [
+        ["caldo", "caliente/calor", "Fuori fa molto caldo oggi."],
+        ["freddo", "frío", "Dentro non fa freddo."],
+        ["libero", "libre", "Il tavolo fuori è libero."],
+        ["bello", "hermoso", "Il tempo fuori è bellissimo."]
+      ],
+      "connectors": [
+        ["fuori", "fuera", "Mi siedo fuori al sole."],
+        ["dentro", "dentro", "Resto dentro perché piove."],
+        ["vicino", "cerca", "Siedo vicino alla grande finestra."],
+        ["perché", "porque", "Siedo fuori perché è bello."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Mi siedo **dentro** al **bar**.",
+        "Scelgo un **tavolo** **vicino** alla **finestra**.",
+        "Guardo la strada mentre bevo."
+      ],
+      "b": [
+        "Preferisco sedermi **fuori** al **sole**.",
+        "Il **tavolo** **fuori** è molto **bello**.",
+        "Mi piace l'aria fresca oggi."
+      ],
+      "conditional": [
+        "Siedo **fuori** se c'è **sole**.",
+        "Resto **dentro** se fa **freddo**.",
+        "Scelgo il posto più comodo."
+      ]
+    }
+  },
+  {
+    "slug": "morning-or-evening-class",
+    "title": "Corso di mattina o di sera?",
+    "prompt": "Puoi studiare inglese alle otto di mattina oppure alle sei di sera. Quale corso scegli?",
+    "conditionalPrompt": "Spiega quale orario funziona nei giorni di scuola e quale nei giorni liberi.",
+    "options": [
+      {
+        "label": "Corso alle otto",
+        "description": "Vai a lezione la mattina presto."
+      },
+      {
+        "label": "Corso alle sei",
+        "description": "Vai a lezione il pomeriggio tardi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["corso", "curso", "Seguo un corso di inglese molto utile."],
+        ["mattina", "mañana", "La mattina ho sempre molta energia."],
+        ["sera", "tarde/noche", "La sera torno a casa stanco."],
+        ["lavoro", "trabajo", "Finito il lavoro posso studiare con calma."]
+      ],
+      "phrasalVerbs": [
+        ["preferire", "preferir", "Io preferisco studiare la mattina presto."],
+        ["cominciare", "empezar", "La lezione comincia subito alle otto."],
+        ["finire", "terminar", "Il corso finisce prima di cena."],
+        ["frequentare", "asistir a", "Frequento la scuola tutte le settimane."]
+      ],
+      "adjectives": [
+        ["riposato", "descansado", "La mattina sono fresco e riposato."],
+        ["occupato", "ocupado", "Il mio pomeriggio è molto occupato."],
+        ["libero", "libre", "La sera ho poco tempo libero."],
+        ["attento", "atento", "In classe sono sempre molto attento."]
+      ],
+      "connectors": [
+        ["perché", "porque", "Studio ora perché ho il tempo."],
+        ["quindi", "por lo tanto", "Sono sveglio quindi capisco la lezione."],
+        ["ma", "pero", "Vorrei uscire ma devo studiare."],
+        ["invece", "en cambio", "La sera invece preferisco riposare."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Io scelgo la lezione delle otto di **mattina**.",
+        "La **mattina** sono molto **riposato** e **attento**.",
+        "**Quindi** imparo l'inglese con grande facilità."
+      ],
+      "b": [
+        "Io preferisco il **corso** delle sei di **sera**.",
+        "La **mattina** **lavoro** e sono sempre **occupato**.",
+        "**Invece** la **sera** posso studiare con calma."
+      ],
+      "conditional": [
+        "Nei giorni di scuola vado la **sera**.",
+        "Nei giorni liberi preferisco la **mattina** presto.",
+        "Così organizzo bene tutto il mio tempo."
+      ]
+    }
+  },
+  {
+    "slug": "backpack-or-tote",
+    "title": "Zaino o borsa piccola?",
+    "prompt": "Devi portare le tue cose a lezione. Prendi uno zaino o una borsa piccola?",
+    "conditionalPrompt": "Spiega cosa usi in una giornata lunga e in una giornata corta.",
+    "options": [
+      {
+        "label": "Usare lo zaino",
+        "description": "Porti un libro, la borraccia e l'astuccio."
+      },
+      {
+        "label": "Usare la borsa",
+        "description": "Porti solo un quaderno e una penna."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["zaino", "mochila", "Lo zaino verde è molto capiente."],
+        ["borsa", "bolso", "La borsa piccola è comoda oggi."],
+        ["libro", "libro", "Metto il libro nello zaino grande."],
+        ["penna", "bolígrafo", "Prendo una penna per scrivere subito."]
+      ],
+      "phrasalVerbs": [
+        ["portare", "llevar", "Porto molte cose con me oggi."],
+        ["usare", "usar", "Uso la borsa per le lezioni brevi."],
+        ["mettere", "poner", "Metto la borraccia nello zaino pesante."],
+        ["scegliere", "elegir", "Scelgo lo zaino perché è comodo."]
+      ],
+      "adjectives": [
+        ["comodo", "cómodo", "Questo zaino è comodo sulle spalle."],
+        ["leggero", "ligero", "La borsa piccola è molto leggera."],
+        ["pesante", "pesado", "Il libro grande è troppo pesante."],
+        ["piccolo", "pequeño", "Porto solo un quaderno piccolo."]
+      ],
+      "connectors": [
+        ["perché", "porque", "Uso lo zaino perché è grande."],
+        ["invece", "en cambio", "Oggi invece prendo la borsa leggera."],
+        ["quindi", "por lo tanto", "Ho tante cose quindi prendo lo zaino."],
+        ["anche", "también", "Porto il libro e anche l'astuccio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Io prendo lo **zaino** per andare a lezione.",
+        "Porto un **libro** **pesante**, la borraccia e l'astuccio.",
+        "Lo **zaino** è **comodo** per tutte queste cose."
+      ],
+      "b": [
+        "Io scelgo la **borsa** piccola per la scuola.",
+        "Porto soltanto un quaderno e una **penna**.",
+        "Così la mia spalla resta leggera tutto il giorno."
+      ],
+      "conditional": [
+        "Nelle giornate lunghe uso sempre lo **zaino** grande.",
+        "Nelle giornate corte prendo la **borsa** piccola.",
+        "Dipende dalle cose che devo **portare** oggi."
+      ]
+    }
+  },
+  {
+    "slug": "list-on-paper-or-phone",
+    "title": "Lista su carta o sul telefono?",
+    "prompt": "Stai andando al negozio. Scrivi la lista della spesa su un foglio o sul telefono?",
+    "conditionalPrompt": "Spiega cosa fai quando il telefono resta a casa.",
+    "options": [
+      {
+        "label": "Lista su carta",
+        "description": "Scrivi quattro cose su un foglio."
+      },
+      {
+        "label": "Lista sul telefono",
+        "description": "Fai la lista sul tuo telefono."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["foglio", "papel", "Scrivo la spesa su un foglio."],
+        ["telefono", "teléfono", "Il telefono è sul tavolo in cucina."],
+        ["lista", "lista", "La lista contiene solo quattro cose."],
+        ["negozio", "tienda", "Vado al negozio sotto casa mia."]
+      ],
+      "phrasalVerbs": [
+        ["scrivere", "escribir", "Scrivo la lista prima di uscire."],
+        ["usare", "usar", "Uso l'applicazione sul telefono moderno."],
+        ["leggere", "leer", "Lego i nomi delle cose da comprare."],
+        ["dimenticare", "olvidar", "Non voglio dimenticare il pane fresco."]
+      ],
+      "adjectives": [
+        ["pratico", "práctico", "Il foglio di carta è molto pratico."],
+        ["veloce", "rápido", "Scrivere sul telefono è molto veloce."],
+        ["chiaro", "claro", "I nomi sulla carta sono molto chiari."],
+        ["scarico", "sin batería", "Il mio telefono è spesso scarico."]
+      ],
+      "connectors": [
+        ["perché", "porque", "Uso la carta perché è semplice."],
+        ["ma", "pero", "Ho il telefono ma uso il foglio."],
+        ["quindi", "por lo tanto", "Non ho carta quindi uso il telefono."],
+        ["se", "si (condicional)", "Se il telefono va, uso l'applicazione."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Io scrivo la **lista** della spesa sulla carta.",
+        "Metto quattro cose importanti su un piccolo **foglio**.",
+        "È un metodo classico, **chiaro** e molto **pratico**."
+      ],
+      "b": [
+        "Io preferisco fare la **lista** sul **telefono**.",
+        "Uso una semplice applicazione per le cose da comprare.",
+        "Ho sempre il mio **telefono** in mano al **negozio**."
+      ],
+      "conditional": [
+        "Di solito uso la mia applicazione sul **telefono**.",
+        "**Se** il **telefono** resta a casa, uso la carta.",
+        "Così non dimentico mai la spesa importante."
+      ]
+    }
+  },
+  {
+    "slug": "study-alone-or-together",
+    "title": "Studiare da soli o in compagnia?",
+    "prompt": "Hai dieci minuti per studiare inglese. Studi da solo o con un amico?",
+    "conditionalPrompt": "Spiega quando vuoi il silenzio e quando vuoi aiuto.",
+    "options": [
+      {
+        "label": "Studiare da soli",
+        "description": "Leggi le parole alla tua scrivania."
+      },
+      {
+        "label": "Studiare in due",
+        "description": "Ripetete le parole insieme ad alta voce."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["amico", "amigo", "Studio l'inglese con un amico simpatico."],
+        ["scrivania", "escritorio", "Sulla scrivania ci sono i miei libri."],
+        ["silenzio", "silencio", "Ho bisogno di silenzio per concentrarmi."],
+        ["parola", "palabra", "Ripeto ogni parola difficile molte volte."]
+      ],
+      "phrasalVerbs": [
+        ["leggere", "leer", "Lego le frasi del libro da solo."],
+        ["ripetere", "repetir", "Ripetiamo le parole insieme ad alta voce."],
+        ["concentrarsi", "concentrarse", "Mi concentro bene nella mia camera tranquilla."],
+        ["aiutare", "ayudar", "Il mio compagno mi aiuta con la pronuncia."]
+      ],
+      "adjectives": [
+        ["tranquillo", "tranquilo", "La mia camera è un luogo molto tranquillo."],
+        ["utile", "útil", "Parlare con un amico è sempre utile."],
+        ["solo", "solo", "Oggi studio solo alla mia scrivania."],
+        ["pronto", "listo", "Sono pronto per l'esercizio di lingua."]
+      ],
+      "connectors": [
+        ["perché", "porque", "Studio solo perché c'è molto silenzio."],
+        ["quando", "cuando", "Studio in due quando ho tempo."],
+        ["invece", "en cambio", "Oggi invece voglio parlare con te."],
+        ["quindi", "por lo tanto", "Ho dieci minuti quindi mi concentro subito."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Io preferisco studiare da **solo** per dieci minuti.",
+        "Lego le parole in **silenzio** alla mia **scrivania**.",
+        "Così posso concentrarmi bene su ogni frase."
+      ],
+      "b": [
+        "Io scelgo di studiare insieme a un **amico**.",
+        "Ripetiamo tutte le parole nuove ad alta voce.",
+        "Parlare insieme è molto **utile** per la pronuncia."
+      ],
+      "conditional": [
+        "**Quando** voglio il **silenzio** studio **solo** in camera.",
+        "**Quando** voglio aiuto parlo subito con un **amico**.",
+        "Entrambi i modi sono ottimi per imparare bene."
+      ]
+    }
+  },
+  {
+    "slug": "park-or-cinema",
+    "title": "Parco o cinema?",
+    "prompt": "Hai un pomeriggio libero. Vai al parco o al cinema?",
+    "conditionalPrompt": "Spiega cosa fai quando piove.",
+    "options": [
+      {
+        "label": "Andare al parco",
+        "description": "Camminare e sedersi all'aperto."
+      },
+      {
+        "label": "Andare al cinema",
+        "description": "Comprare un biglietto e guardare un film."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["parco", "parque", "Vado al parco ogni pomeriggio."],
+        ["cinema", "cine", "Il cinema apre alle cinque."],
+        ["biglietto", "billete", "Compro un biglietto per il film."],
+        ["pioggia", "lluvia", "La pioggia cade sulla città."]
+      ],
+      "phrasalVerbs": [
+        ["fare una passeggiata", "dar un paseo", "Faccio una passeggiata al sole."],
+        ["guardare un film", "ver una película", "Guardo un film divertente stasera."],
+        ["prendere il sole", "tomar el sol", "Prendo il sole su una panchina."],
+        ["stare a casa", "quedarse en casa", "Preferisco stare a casa oggi."]
+      ],
+      "adjectives": [
+        ["aperto", "abierto", "Il bar del parco è aperto."],
+        ["bello", "bonito", "Oggi è un bel giorno di sole."],
+        ["tranquillo", "tranquilo", "Il parco è un posto molto tranquillo."],
+        ["coperto", "cubierto", "Il cinema è un luogo coperto."]
+      ],
+      "connectors": [
+        ["perché", "porque", "Resto a casa perché piove."],
+        ["ma", "pero", "Vorrei uscire ma fa freddo."],
+        ["se", "si", "Se fa bel tempo vado fuori."],
+        ["invece", "en cambio", "Oggi invece guardo la televisione."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco andare al **parco** oggi.",
+        "Faccio una passeggiata **perché** c'è un bellissimo sole.",
+        "Mi siedo su una panchina tranquilla."
+      ],
+      "b": [
+        "Preferisco andare al **cinema** stasera.",
+        "Compro un **biglietto** per guardare un bel film.",
+        "La sala è un luogo **coperto** e comodo."
+      ],
+      "conditional": [
+        "**Se** fa bel tempo vado subito al **parco**.",
+        "**Se** c'è la **pioggia** vado **invece** al **cinema**.",
+        "Così sto sempre bene nel tempo libero."
+      ]
+    }
+  },
+  {
+    "slug": "book-or-video",
+    "title": "Libro o video?",
+    "prompt": "Hai venti minuti a casa. Leggi un libro o guardi un video?",
+    "conditionalPrompt": "Spiega cosa scegli quando sei stanco.",
+    "options": [
+      {
+        "label": "Leggere un libro",
+        "description": "Leggere una storia sul divano."
+      },
+      {
+        "label": "Guardare un video",
+        "description": "Guardare un breve video sul telefono."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["libro", "libro", "Leggo un libro molto interessante."],
+        ["divano", "sofá", "Mi siedo sul divano in soggiorno."],
+        ["telefono", "teléfono", "Guardo il telefono per cinque minuti."],
+        ["storia", "historia", "Questa storia è davvero bella."]
+      ],
+      "phrasalVerbs": [
+        ["leggere una storia", "leer una historia", "Leggo una storia prima di dormire."],
+        ["guardare un video", "ver un video", "Guardo un video breve sul cellulare."],
+        ["riposare un po'", "descansar un poco", "Voglio riposare un po' adesso."],
+        ["mettersi comodo", "ponerse cómodo", "Mi metto comodo sul divano."]
+      ],
+      "adjectives": [
+        ["stanco", "cansado", "Sono molto stanco questa sera."],
+        ["breve", "breve", "Guardo solo un video breve."],
+        ["interessante", "interesante", "Questo romanzo è molto interessante."],
+        ["facile", "fácil", "Vedere un video è facile e veloce."]
+      ],
+      "connectors": [
+        ["quando", "cuando", "Leggo quando ho poco tempo."],
+        ["quindi", "por lo tanto", "Sono stanco quindi mi riposo."],
+        ["o", "o", "Scegli un libro o un film."],
+        ["anche", "también", "Leggo anche la sera a letto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Scelgo di leggere un buon **libro**.",
+        "Mi metto comodo sul **divano** per venti minuti.",
+        "La **storia** è molto **interessante** e tranquilla."
+      ],
+      "b": [
+        "Preferisco **guardare un video** sul **telefono**.",
+        "Vedo un filmato **breve** e molto divertente.",
+        "È una scelta **facile** **quando** ho poco tempo."
+      ],
+      "conditional": [
+        "**Quando** sono riposato leggo volentieri un **libro**.",
+        "**Quando** sono **stanco** guardo invece un **breve** video.",
+        "Così uso bene i miei venti minuti."
+      ]
+    }
+  },
+  {
+    "slug": "music-or-quiet",
+    "title": "Musica o silenzio?",
+    "prompt": "Stai facendo i compiti. Vuoi la musica o una stanza silenziosa?",
+    "conditionalPrompt": "Spiega quando ti piace la musica e quando hai bisogno di silenzio.",
+    "options": [
+      {
+        "label": "Ascoltare la musica",
+        "description": "Mettere la musica a basso volume."
+      },
+      {
+        "label": "Stare in silenzio",
+        "description": "Spegnere la musica."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["musica", "música", "Ascolto la musica in camera mia."],
+        ["silenzio", "silencio", "Ho bisogno di silenzio per studiare."],
+        ["volume", "volumen", "Il volume della radio è basso."],
+        ["compiti", "deberes", "Faccio i compiti per la scuola."]
+      ],
+      "phrasalVerbs": [
+        ["mettere la musica", "poner música", "Metto la musica a basso volume."],
+        ["spegnere la radio", "apagar la radio", "Spengo la radio per concentrarmi."],
+        ["fare i compiti", "hacer los deberes", "Faccio i compiti sul tavolo grande."],
+        ["avere bisogno di", "necesitar", "Ho bisogno di silenzio adesso."]
+      ],
+      "adjectives": [
+        ["basso", "bajo", "Uso un volume molto basso."],
+        ["silenzioso", "silencioso", "La mia stanza è davvero silenziosa."],
+        ["difficile", "difícil", "Questo esercizio di matematica è difficile."],
+        ["calmo", "calmado", "La musica mi rende molto calmo."]
+      ],
+      "connectors": [
+        ["mentre", "mientras", "Ascolto musica mentre scrivo la lettera."],
+        ["però", "pero", "Vorrei ascoltare la radio però devo studiare."],
+        ["se", "si", "Se il compito è facile metto la musica."],
+        ["invece", "en cambio", "Se il compito è difficile voglio invece il silenzio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Voglio ascoltare la **musica** adesso.",
+        "Metto la **musica** a **basso** **volume** **mentre** studio.",
+        "La **musica** mi aiuta a restare molto **calmo**."
+      ],
+      "b": [
+        "Preferisco stare in una stanza silenziosa.",
+        "Spengo la **musica** per **fare i compiti** subito.",
+        "Con il **silenzio** finisco di studiare prima."
+      ],
+      "conditional": [
+        "Mi piace la **musica** **se** i **compiti** sono facili.",
+        "Ho bisogno di **silenzio** **se** l'esercizio è **difficile**.",
+        "Cambio scelta in base allo studio del giorno."
+      ]
+    }
+  },
+  {
+    "slug": "saturday-morning-or-afternoon",
+    "title": "Sabato mattina o pomeriggio?",
+    "prompt": "Il tuo amico può incontrarti sabato. Vi vedete alle dieci o alle quindici?",
+    "conditionalPrompt": "Spiega quale orario va bene in una giornata occupata.",
+    "options": [
+      {
+        "label": "Incontrarsi la mattina",
+        "description": "Vedersi il sabato mattina alle dieci."
+      },
+      {
+        "label": "Incontrarsi il pomeriggio",
+        "description": "Vedersi il sabato pomeriggio alle quindici."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sabato", "sábado", "Sabato incontro il mio migliore amico."],
+        ["mattina", "mañana", "La mattina bevo un buon caffè."],
+        ["pomeriggio", "tarde", "Il pomeriggio studio in biblioteca."],
+        ["orario", "horario", "Questo orario è perfetto per noi."]
+      ],
+      "phrasalVerbs": [
+        ["incontrare un amico", "encontrar a un amigo", "Incontro un amico in centro città."],
+        ["prendere un caffè", "tomar un café", "Prendiamo un caffè insieme al bar."],
+        ["fare la spesa", "hacer la compra", "Faccio la spesa al supermercato sabato."],
+        ["andare in centro", "ir al centro", "Vado in centro con gli amici."]
+      ],
+      "adjectives": [
+        ["occupato", "ocupado", "Il mio sabato è sempre occupato."],
+        ["libero", "libre", "Sono libero tutta la mattina."],
+        ["perfetto", "perfecto", "Le dieci è un orario perfetto."],
+        ["tardi", "tarde", "Nel pomeriggio è troppo tardi per me."]
+      ],
+      "connectors": [
+        ["alle", "a las", "Ci vediamo alle dieci al bar."],
+        ["quindi", "por lo tanto", "Ho tempo libero quindi usciamo insieme."],
+        ["ma", "pero", "Vorrei uscire presto ma dormo molto."],
+        ["oppure", "o bien", "Ci vediamo la mattina oppure il pomeriggio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Ci vediamo **sabato** **mattina** **alle** dieci.",
+        "Prendiamo un caffè insieme e facciamo una passeggiata.",
+        "La **mattina** ho tempo **libero** per incontrarti."
+      ],
+      "b": [
+        "Preferisco vederci **sabato** **pomeriggio** **alle** quindici.",
+        "Possiamo **andare in centro** con molta calma.",
+        "Il **pomeriggio** è l'**orario** **perfetto** per me."
+      ],
+      "conditional": [
+        "Se la giornata è occupata scelgo la **mattina**.",
+        "Così finisco presto e faccio le mie cose.",
+        "Se sono **libero** scelgo invece il **pomeriggio**."
+      ]
+    }
+  },
+  {
+    "slug": "blue-or-red-shirt",
+    "title": "Camicia blu o rossa?",
+    "prompt": "Puoi comprare solo una camicia. Scegli la camicia blu o quella rossa?",
+    "conditionalPrompt": "Spiega quale colore indossi a lezione e quale per una festa.",
+    "options": [
+      {
+        "label": "Camicia blu",
+        "description": "Provi una camicia blu semplice."
+      },
+      {
+        "label": "Camicia rossa",
+        "description": "Provi una camicia rossa vivace."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["camicia", "camisa", "Compro una camicia azzurra."],
+        ["colore", "color", "Il rosso è un bel colore."],
+        ["festa", "fiesta", "Vado a una festa divertente."],
+        ["lezione", "clase", "Oggi abbiamo la lezione di italiano."]
+      ],
+      "phrasalVerbs": [
+        ["mettere su", "ponerse (ropa)", "Metto su la camicia pulita."],
+        ["provare", "probarse", "Voglio provare questo modello."],
+        ["indossare", "llevar puesto", "Indosso sempre vestiti comodi."],
+        ["andare bene", "quedar bien", "Questo vestito ti sta molto bene."]
+      ],
+      "adjectives": [
+        ["blu", "azul", "La mia borsa è blu."],
+        ["rosso", "rojo", "Scelgo la camicia rossa."],
+        ["semplice", "simple", "Prendo un modello semplice."],
+        ["vivace", "vivo/llamativo", "Questo colore è molto vivace."]
+      ],
+      "connectors": [
+        ["perché", "porque", "Usciamo perché c'è il sole."],
+        ["invece", "en cambio", "Tu studi, io invece lavoro."],
+        ["se", "si", "Se fa freddo, resto a casa."],
+        ["ma", "pero", "È bella, ma costa troppo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Io scelgo la **camicia** **blu** **semplice**.",
+        "Questo **colore** mi piace molto per il lavoro.",
+        "Metto su questo capo **perché** è elegante."
+      ],
+      "b": [
+        "Io preferisco la **camicia** rossa **vivace**.",
+        "Questo **colore** mi dà molta energia positiva.",
+        "La indosso volentieri **perché** è molto bella."
+      ],
+      "conditional": [
+        "Indosso la **camicia** **blu** **se** vado a **lezione**.",
+        "Mentre scelgo la **camicia** rossa per una **festa**.",
+        "Così ho l'abito giusto in ogni occasione."
+      ]
+    }
+  },
+  {
+    "slug": "big-or-small-room",
+    "title": "Stanza grande o piccola?",
+    "prompt": "Puoi scegliere una stanza per il soggiorno. Vuoi una stanza grande o una stanza piccola?",
+    "conditionalPrompt": "Di' quale stanza va bene per una persona e quale per due persone.",
+    "options": [
+      {
+        "label": "Stanza grande",
+        "description": "Prendi una stanza con due letti."
+      },
+      {
+        "label": "Stanza piccola",
+        "description": "Prendi una stanza più economica con un letto."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["stanza", "habitación", "La stanza è molto luminosa."],
+        ["letto", "cama", "Il letto è grande e comodo."],
+        ["prezzo", "precio", "Il prezzo dell'hotel è basso."],
+        ["spazio", "espacio", "C'è tanto spazio in camera."]
+      ],
+      "phrasalVerbs": [
+        ["dormire", "dormir", "Voglio dormire molto stasera."],
+        ["prendere", "tomar/alquilar", "Prendo una camera con due letti."],
+        ["risparmiare", "ahorrar", "Preferisco risparmiare sul soggiorno."],
+        ["stare comodi", "estar cómodo", "In due possiamo stare comodi."]
+      ],
+      "adjectives": [
+        ["grande", "grande", "La casa è molto grande."],
+        ["piccolo", "pequeño", "Abito in un piccolo appartamento."],
+        ["economico", "económico", "Cerco un posto molto economico."],
+        ["libero", "libre", "La stanza è subito libera."]
+      ],
+      "connectors": [
+        ["quindi", "por lo tanto", "Piove, quindi prendo l'ombrello."],
+        ["anche se", "aunque", "Vengo anche se sono stanco."],
+        ["oppure", "o bien", "Mangiamo la pizza oppure la pasta."],
+        ["mentre", "mientras", "Io leggo mentre tu dormi."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Prendo la **stanza** **grande** con due letti.",
+        "Voglio stare comodo e avere molto **spazio**.",
+        "**Quindi** questa camera è perfetta per me."
+      ],
+      "b": [
+        "Io scelgo la **stanza** piccola ed economica.",
+        "C'è un **letto** solo e costa meno.",
+        "Così posso **risparmiare** soldi durante il viaggio."
+      ],
+      "conditional": [
+        "La **stanza** piccola va bene per una persona.",
+        "Se siamo in due persone prendiamo quella **grande**.",
+        "Così ognuno sceglie in base alle esigenze."
+      ]
+    }
+  },
+  {
+    "slug": "window-open-or-closed",
+    "title": "Finestra aperta o chiusa?",
+    "prompt": "Sei nella tua stanza. Vuoi la finestra aperta o chiusa?",
+    "conditionalPrompt": "Spiega cosa fai quando fa caldo e quando c'è rumore.",
+    "options": [
+      {
+        "label": "Finestra aperta",
+        "description": "Lasci entrare l'aria da fuori."
+      },
+      {
+        "label": "Finestra chiusa",
+        "description": "Mantieni la stanza calda e silenziosa."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["finestra", "ventana", "Apro la finestra della cucina."],
+        ["aria", "aire", "Entra un po' di aria fresca."],
+        ["caldo", "calor", "Oggi fa molto caldo fuori."],
+        ["rumore", "ruido", "C'è troppo rumore in strada."]
+      ],
+      "phrasalVerbs": [
+        ["aprire", "abrir", "Voglio aprire la finestra subito."],
+        ["chiudere", "cerrar", "Devo chiudere bene la porta."],
+        ["lasciare entrare", "dejar entrar", "Lascio entrare il sole in camera."],
+        ["riposare", "descansar", "Preferisco riposare a lungo adesso."]
+      ],
+      "adjectives": [
+        ["aperto", "abierto", "La porta è sempre aperta."],
+        ["chiuso", "cerrado", "Il negozio oggi è chiuso."],
+        ["silenzioso", "silencioso", "Questo posto è molto silenzioso."],
+        ["fresco", "fresco", "L'aria di montagna è fresca."]
+      ],
+      "connectors": [
+        ["quando", "cuando", "Studio quando ho tempo libero."],
+        ["però", "pero", "Fa freddo, però esco comunque."],
+        ["allora", "entonces", "Se sei pronto, allora andiamo."],
+        ["inoltre", "además", "La camera è pulita e inoltre grande."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Lascio subito la **finestra** aperta ora.",
+        "Voglio che entri l'**aria** fresca da fuori.",
+        "Così la stanza diventa subito molto piacevole."
+      ],
+      "b": [
+        "Tengo la **finestra** chiusa tutta la sera.",
+        "Voglio mantenere la stanza calda e silenziosa.",
+        "**Inoltre** posso **riposare** senza sentire il **rumore**."
+      ],
+      "conditional": [
+        "Apro la **finestra** **quando** fa molto **caldo**.",
+        "**Però** la chiudo se c'è troppo **rumore**.",
+        "**Allora** sto sempre bene nella mia camera."
+      ]
+    }
+  },
+  {
+    "slug": "new-or-used-table",
+    "title": "Tavolo nuovo o usato?",
+    "prompt": "Ti serve un tavolo per la stanza. Compri un tavolo nuovo o un tavolo usato?",
+    "conditionalPrompt": "Di' cosa compri quando hai pochi soldi.",
+    "options": [
+      {
+        "label": "Tavolo nuovo",
+        "description": "Scegli un tavolo nuovo in negozio."
+      },
+      {
+        "label": "Tavolo usato",
+        "description": "Compri un tavolo più economico da un vicino."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["tavolo", "mesa", "Il tavolo di legno è grande."],
+        ["negozio", "tienda", "Vado al negozio di mobili."],
+        ["vicino", "vecino", "Chiedo aiuto al mio vicino."],
+        ["soldi", "dinero", "Ho pochi soldi nel portafoglio."]
+      ],
+      "phrasalVerbs": [
+        ["comprare", "comprar", "Voglio comprare una sedia nuova."],
+        ["spendere", "gastar", "Non voglio spendere troppo oggi."],
+        ["trovare", "encontrar", "Possiamo trovare una buona occasione."],
+        ["scegliere", "elegir", "Devo scegliere il modello giusto."]
+      ],
+      "adjectives": [
+        ["nuovo", "nuevo", "Ho un telefono nuovo e bello."],
+        ["usato", "usado", "Cerco un tavolo usato ma buono."],
+        ["bello", "bonito", "Questo mobile è davvero bello."],
+        ["poco", "poco", "Ho poco tempo per scegliere."]
+      ],
+      "connectors": [
+        ["perciò", "por eso", "Ho fame, perciò mangio qualcosa."],
+        ["infatti", "de hecho", "Fa caldo, infatti c'è il sole."],
+        ["sebbene", "aunque", "Esco sebbene stia piovendo adesso."],
+        ["quindi", "por lo tanto", "Ho terminato, quindi posso uscire."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Compri un **tavolo** **nuovo** nel **negozio**.",
+        "Questo mobile è **bello** e dura tanto tempo.",
+        "Scegli un prodotto perfetto per la stanza."
+      ],
+      "b": [
+        "Prendo un **tavolo** **usato** dal mio **vicino**.",
+        "Questo articolo costa davvero pochi **soldi** oggi.",
+        "Così non devo **spendere** troppo adesso."
+      ],
+      "conditional": [
+        "Se ho pochi **soldi** prendo un **tavolo** **usato**.",
+        "Se posso **spendere** di più ne compro uno **nuovo**.",
+        "**Perciò** scelgo l'opzione migliore per me."
+      ]
+    }
+  }
+]

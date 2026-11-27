@@ -1,37 +1,42 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import DilemmaExercise from '@/components/practica/speaking-dilemmas/DilemmaExercise'
-import { DILEMMAS_BY_LEVEL } from '@/data/practica/speaking-dilemmas/levels'
-import { ADDITIONAL_DILEMMA_LEVELS, dilemmaPath, isAdditionalDilemmaLevel } from '@/lib/practica/speaking-dilemma-routes'
+import { DILEMMA_COPY } from '@/components/practica/speaking-dilemmas/copy'
+import { DILEMMA_COLLECTION_PARAMS, loadDilemmaCollection } from '@/data/practica/speaking-dilemmas/catalog'
+import { dilemmaPath } from '@/lib/practica/speaking-dilemma-routes'
 
 type Props = { params: Promise<{ idioma: string; nivel: string; slug: string }> }
 
 export const dynamicParams = false
 
-export function generateStaticParams() {
-  return ADDITIONAL_DILEMMA_LEVELS.flatMap((nivel) => (
-    DILEMMAS_BY_LEVEL[nivel].map(({ slug }) => ({ idioma: 'ingles', nivel, slug }))
-  ))
+export async function generateStaticParams() {
+  const collections = await Promise.all(DILEMMA_COLLECTION_PARAMS.map(async ({ idioma, nivel }) => {
+    const dilemmas = await loadDilemmaCollection(idioma, nivel)
+    return dilemmas.map(({ slug }) => ({ idioma, nivel, slug }))
+  }))
+  return collections.flat()
 }
 
 async function findDilemma(params: Props['params']) {
   const { idioma, nivel, slug } = await params
-  if (idioma !== 'ingles' || !isAdditionalDilemmaLevel(nivel)) notFound()
-  const dilemma = DILEMMAS_BY_LEVEL[nivel].find((item) => item.slug === slug)
+  const route = DILEMMA_COLLECTION_PARAMS.find((entry) => entry.idioma === idioma && entry.nivel === nivel)
+  if (!route) notFound()
+  const dilemmas = await loadDilemmaCollection(route.idioma, route.nivel)
+  const dilemma = dilemmas.find((item) => item.slug === slug)
   if (!dilemma) notFound()
-  return { dilemma, nivel }
+  return { ...route, dilemma }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { dilemma, nivel } = await findDilemma(params)
+  const { idioma, dilemma, nivel } = await findDilemma(params)
   return {
-    title: `${dilemma.title} — Speaking ${nivel.toUpperCase()} | WeLearn`,
+    title: `${dilemma.title} — ${DILEMMA_COPY[idioma].speaking} ${nivel.toUpperCase()} | WeLearn`,
     description: dilemma.prompt,
-    alternates: { canonical: `https://www.idiomaswl.com${dilemmaPath(nivel, dilemma.slug)}` },
+    alternates: { canonical: `https://www.idiomaswl.com${dilemmaPath(nivel, dilemma.slug, idioma)}` },
   }
 }
 
 export default async function Page({ params }: Props) {
-  const { dilemma, nivel } = await findDilemma(params)
-  return <DilemmaExercise level={nivel} dilemma={dilemma} />
+  const { idioma, dilemma, nivel } = await findDilemma(params)
+  return <DilemmaExercise level={nivel} language={idioma} dilemma={dilemma} />
 }

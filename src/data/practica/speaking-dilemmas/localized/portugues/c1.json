@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "academic-merit",
+    "title": "Mérito acadêmico",
+    "prompt": "Dois estudantes de saúde pública do último ano disputam o mesmo prêmio universitário. Ao escolher o vencedor, o que deve ter mais peso: o desempenho acadêmico ao longo do curso ou o desempenho nos estágios do último semestre?",
+    "conditionalPrompt": "Pese ambas as realizações e aponte a evidência que inclinaria a decisão.",
+    "options": [
+      {
+        "label": "Desempenho acadêmico",
+        "description": "Um estudante se destacou no curso e publicou um estudo sobre faltas, mas as clínicas ainda não aplicaram os dados."
+      },
+      {
+        "label": "Prática de estágio",
+        "description": "No último semestre, o outro estudante liderou um projeto em estágio que reduziu faltas, embora o impacto amplo seja incerto."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["desempenho", "resultado obtido através de esforço e competência em uma atividade", "O desempenho exemplar ao longo da graduação garantiu o reconhecimento institucional."],
+        ["diretriz", "norma ou instrução que orienta a execução de algo", "A diretriz estabelecida pela faculdade norteou a avaliação do prêmio."],
+        ["pesquisa", "investigação sistemática com o objetivo de gerar novo conhecimento", "Essa pesquisa científica trouxe contribuições valiosas para a área da saúde."],
+        ["evidência", "fato claro que demonstra a veracidade de uma situação", "A evidência empírica coletada no campo validou a hipótese inicial."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar algo importante ao tomar uma decisão", "Devemos levar em conta o impacto prático de cada trabalho realizado."],
+        ["levar a cabo", "realizar ou concluir com sucesso um plano ou projeto", "O aluno conseguiu levar a cabo a intervenção de forma brilhante."],
+        ["colocar em prática", "executar uma teoria ou ideia no mundo real", "É fundamental colocar em prática o conhecimento adquirido na universidade."],
+        ["vir à tona", "tornar-se conhecido ou evidente após um período oculto", "Muitas questões relevantes vieram à tona durante a discussão do comitê."]
+      ],
+      "adjectives": [
+        ["rigoroso", "que cumpre normas estritas e demonstra exatidão", "O estudante manteve um padrão rigoroso em todas as disciplinas cursadas."],
+        ["inovador", "que introduz novidades ou métodos inéditos", "O projeto se mostrou altamente inovador no contexto da saúde pública."],
+        ["promissor", "que apresenta indícios de sucesso ou bom resultado futuro", "A iniciativa demonstrou um potencial promissor para futuras aplicações."],
+        ["abrangente", "que inclui muitos elementos ou atinge uma grande extensão", "A análise teórica foi abrangente o suficiente para embasar o artigo."]
+      ],
+      "connectors": [
+        ["por um lado", "expressão usada para introduzir o primeiro argumento de um contraste", "Por um lado, a consistência acadêmica demonstra dedicação contínua."],
+        ["por outro lado", "expressão usada para apresentar um argumento oposto ou complementar", "Por outro lado, a aplicação prática resolve problemas imediatos."],
+        ["sendo assim", "conector conclusivo equivalente a portanto ou logo", "O aluno cumpriu todas as exigências; sendo assim, merece destaque."],
+        ["em contrapartida", "indica oposição ou compensação em relação ao que foi dito antes", "A teoria é sólida; em contrapartida, falta validação em larga escala."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Por um lado**, a consistência teórica acumulada ao longo da graduação deve ser o critério principal para a premiação.",
+        "O estudante que manteve um **desempenho** **rigoroso** e publicou uma **pesquisa** relevante demonstrou compromisso intelectual duradouro com a área de saúde pública.",
+        "**Sendo assim**, premiar essa trajetória sólida valoriza o esforço contínuo e a capacidade de reflexão crítica que sustentam a profissão."
+      ],
+      "b": [
+        "**Por outro lado**, a capacidade de liderar mudanças reais em campo demonstra uma maturidade profissional indispensável para o sistema de saúde.",
+        "O aluno que soube **colocar em prática** um plano **inovador** durante o estágio gerou resultados diretos que beneficiaram imediatamente os pacientes atendidos.",
+        "**Em contrapartida** à teoria pura, essa entrega prática comprova a aptidão imediata para transformar a realidade das clínicas."
+      ],
+      "conditional": [
+        "A decisão entre as duas trajetórias depende de saber se a teoria publicada já possui potencial comprovado de replicação em outros contextos.",
+        "Caso a **evidência** prática mostre que a intervenção do estágio pode ser ampliada, o prêmio deve ir para a ação direta.",
+        "No entanto, se a **pesquisa** acadêmica oferecer uma **diretriz** mais profunda e duradoura, o mérito teórico deve prevalecer."
+      ]
+    }
+  },
+  {
+    "slug": "city-centre-access",
+    "title": "Redesenho da rua principal",
+    "prompt": "Sua cidade tem verba para redesenhar a principal rua de comércio. Deve-se dar a rua quase inteiramente a pedestres, ou manter uma faixa de baixa velocidade para onibus e veiculos autorizados?",
+    "conditionalPrompt": "Identifique quem depende de acesso porta a porta e o que tornaria um teste de acesso convincente.",
+    "options": [
+      {
+        "label": "Pedonalização total",
+        "description": "Permitir entregas antes de as lojas abrirem e oferecer pontos de coleta em ambas as extremidades, usando o restante para caminhada, assentos e barracas ao ar livre."
+      },
+      {
+        "label": "Via mista limitada",
+        "description": "Manter ônibus e veículos autorizados em uma única faixa, alargando as calçadas com o espaço restante para melhorar o fluxo de pedestres."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["calçada", "parte da rua destinada ao trânsito de pedestres", "A prefeitura decidiu ampliar a calçada para garantir mais segurança."],
+        ["comércio", "atividade de compra e venda de mercadorias", "O comércio local depende de um bom fluxo de clientes todos os dias."],
+        ["transporte", "ato ou meio de transportar pessoas ou cargas", "O transporte público precisa ser eficiente para atrair mais usuários."],
+        ["circulação", "movimento de pessoas ou veículos em uma área", "A circulação de carros foi proibida para diminuir a poluição."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar algo importante ao tomar uma decisão", "Precisamos levar em conta a opinião dos moradores antes de mudar a rua."],
+        ["abrir mão", "renunciar a algo voluntariamente", "Os motoristas terão de abrir mão de estacionar na avenida principal."],
+        ["dar conta", "ser capaz de realizar ou suportar algo", "O novo sistema de entregas vai dar conta da demanda do comércio."],
+        ["fazer falta", "ser necessário ou sentido quando ausente", "O espaço para pedestres vai fazer falta caso o projeto seja cancelado."]
+      ],
+      "adjectives": [
+        ["acessível", "que permite fácil acesso ou aproximação", "O novo calçadão tornou a área central muito mais acessível a todos."],
+        ["movimentado", "que tem grande atividade ou circulação", "A rua principal continua muito movimentada durante os fins de semana."],
+        ["sustentável", "que pode ser mantido sem esgotar recursos", "Precisamos adotar medidas urbanísticas que sejam realmente sustentáveis."],
+        ["eficiente", "que produz bons resultados com o mínimo de desperdício", "O plano de trânsito precisa ser eficiente para evitar grandes congestionamentos."]
+      ],
+      "connectors": [
+        ["por outro lado", "introduz um argumento oposto ao anterior", "A medida reduz o trânsito; por outro lado, gera preocupação nos lojistas."],
+        ["sendo assim", "indica uma consequência lógica da situação descrita", "A verba foi aprovada; sendo assim, as obras começam no próximo mês."],
+        ["além disso", "acrescenta um novo argumento ou informação", "O projeto melhora o ar; além disso, atrai mais turistas para a região."],
+        ["em contrapartida", "apresenta um contraponto a uma afirmação anterior", "O custo inicial é alto; em contrapartida, o benefício a longo prazo compensa."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A transformação da via principal em um espaço totalmente dedicado aos pedestres representa uma oportunidade histórica para modernizar o nosso município e valorizar o **comércio** local de forma definitiva.",
+        "**Por outro lado**, é fundamental **levar em conta** que as entregas comerciais podem ocorrer em horários alternativos, garantindo que o abastecimento das lojas aconteça sem prejudicar a **circulação** das pessoas.",
+        "**Sendo assim**, ao **abrir mão** dos carros na maior parte do tempo, criamos um ambiente urbano muito mais **sustentável**, agradável e seguro para todos os cidadãos que frequentam o centro."
+      ],
+      "b": [
+        "Manter uma faixa exclusiva para ônibus e veículos autorizados é a decisão mais realista para equilibrar as necessidades de **transporte** público e a mobilidade urbana na nossa movimentada cidade comercial.",
+        "**Além disso**, os comerciantes locais frequentemente argumentam que precisam de acesso constante para carga e descarga, algo que seria inviabilizado se fechássemos completamente a rua para o tráfego rodoviário.",
+        "**Em contrapartida**, as calçadas alargadas ainda oferecerão muito mais espaço para quem caminha, provando que a via mista é uma solução **eficiente** e equilibrada para todos os envolvidos."
+      ],
+      "conditional": [
+        "Identificar quem realmente depende de acesso porta a porta é o primeiro passo para decidir o futuro da nossa rua principal e atender às demandas legítimas de todos os cidadãos.",
+        "Um teste de acesso só será convincente se monitorar rigorosamente o impacto econômico sobre o **comércio** local enquanto avalia a satisfação dos pedestres durante o período de adaptação urbana.",
+        "**Sendo assim**, a escolha entre a pedonalização total ou a via mista depende exclusivamente dos resultados obtidos nessa fase experimental, garantindo que a decisão final reflita as reais necessidades comunitárias."
+      ]
+    }
+  },
+  {
+    "slug": "heatwave-investment",
+    "title": "Investimento em Adaptação ao Calor",
+    "prompt": "Uma cidade espera verões mais quentes e tem apenas uma verba para adaptação climática. Deve investir em árvores urbanas que levarão anos para amadurecer ou abrir centros de climatização com funcionários pelos próximos três verões?",
+    "conditionalPrompt": "Decida qual risco justificaria o alívio imediato e o que tornaria o investimento em sombra confiável.",
+    "options": [
+      {
+        "label": "Plantio de árvores",
+        "description": "Plantar espécies de grande copa ao longo de rotas de pedestres expostas e financiar a manutenção inicial."
+      },
+      {
+        "label": "Centros de climatização",
+        "description": "Estender o horário de funcionamento em três edifícios públicos refrigerados para uso durante alertas de calor."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["verba", "recurso financeiro disponibilizado para um fim específico", "A prefeitura recebeu uma verba federal para melhorar a infraestrutura urbana."],
+        ["copa", "conjunto de ramos e folhas de uma árvore", "A copa densa daquela árvore antiga proporciona uma sombra muito agradável."],
+        ["alívio", "sensação de conforto após a redução de um sofrimento", "A abertura dos centros de atendimento trouxe alívio imediato para os moradores."],
+        ["risco", "probabilidade de que aconteça um evento adverso", "Precisamos mitigar o risco de desidratação entre os idosos durante as ondas de calor."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar um fator importante na tomada de decisão", "Devemos levar em conta o impacto a longo prazo antes de aplicar os recursos."],
+        ["contar com", "depender de algo ou alguém para obter apoio", "Não podemos contar apenas com soluções temporárias para um problema crônico."],
+        ["levar a", "causar ou resultar em determinada consequência", "A falta de planejamento adequado pode levar a um colapso no sistema público."],
+        ["abrir mão", "renunciar a algo em favor de outra prioridade", "A comunidade não quer abrir mão de melhorias estruturais na região."]
+      ],
+      "adjectives": [
+        ["exposto", "vulnerável à ação direta do sol ou do tempo", "Os pedestres caminham por trechos totalmente expostos ao sol escaldante."],
+        ["confiável", "que merece confiança ou demonstra eficácia comprovada", "Precisamos desenvolver um sistema de alerta que seja realmente confiável."],
+        ["crônico", "problema ou condição que se prolonga por muito tempo", "O aumento das temperaturas urbanas tornou-se um problema crônico na nossa região."],
+        ["sustentável", "capaz de se manter ao longo do tempo sem esgotar recursos", "Devemos buscar soluções mais sustentáveis para o resfriamento dos bairros."]
+      ],
+      "connectors": [
+        ["por outro lado", "expressa um contraste ou contraponto em relação ao argumento anterior", "As reformas trazem custo alto; por outro lado, reduzem gastos futuros."],
+        ["sendo assim", "indica uma conclusão decorrente dos fatos apresentados", "A verba é limitada e, sendo assim, precisamos priorizar o plantio de árvores."],
+        ["além disso", "acrescenta um argumento adicional na mesma direção", "As árvores reduzem a temperatura local e, além disso, melhoram a paisagem urbana."],
+        ["em contrapartida", "apresenta uma situação oposta para ponderação", "O alívio imediato resolve o agora; em contrapartida, não resolve a causa raiz."]
+      ]
+    },
+    "models": {
+      "a": [
+        "O investimento contínuo no plantio de grandes árvores urbanas representa a escolha mais sensata para transformar o microclima da nossa cidade a longo prazo. As ruas arborizadas reduzem drasticamente a temperatura do asfalto, criando corredores sombreados que beneficiam milhares de pedestres todos os dias.",
+        "**Além disso**, embora o crescimento vegetal exija paciência e manutenção rigorosa nos primeiros anos, essa solução natural fortalece a resiliência urbana sem depender de energia elétrica constante. **Sendo assim**, devemos canalizar nossos recursos para o verde estrutural.",
+        "**Em contrapartida**, ignorar a necessidade de sombreamento permanente nos deixará vulneráveis a ondas de calor cada vez mais intensas nas próximas décadas. Portanto, plantar árvores hoje garante um futuro muito mais habitável e seguro para todos."
+      ],
+      "b": [
+        "A abertura imediata de centros de climatização equipados e com equipes dedicadas constitui a única resposta humanitária aceitável para proteger a população vulnerável agora. As ondas de calor atuais representam um perigo mortal, especialmente para idosos e crianças que transitam por áreas expostas.",
+        "**Por outro lado**, esperar anos até que as mudas cresçam significa abandonar esses cidadãos à própria sorte durante os próximos verões rigorosos. **Sendo assim**, precisamos priorizar o **alívio** imediato através de abrigos públicos climatizados.",
+        "**Além disso**, **contar com** edifícios adaptados oferece um refúgio seguro enquanto planejamos outras medidas complementares para o futuro da nossa comunidade. Portanto, salvar vidas hoje deve ser sempre a nossa prioridade absoluta."
+      ],
+      "conditional": [
+        "A escolha entre o investimento em arborização e os centros de climatização depende essencialmente da gravidade imediata das previsões meteorológicas para os próximos anos. Se os registros indicarem picos extremos e letais de calor a curto prazo, o **alívio** imediato torna-se imperativo.",
+        "**Por outro lado**, caso a cidade enfrente um aquecimento gradual mas constante, o investimento em infraestrutura verde passa a ser a opção mais racional e econômica. **Sendo assim**, a decisão correta exige analisar dados científicos rigorosos sobre a vulnerabilidade local.",
+        "**Além disso**, podemos adotar uma estratégia mista se houver flexibilidade orçamentária para atender emergências sem comprometer o plantio futuro. Portanto, cada contexto específico determina qual alternativa maximiza a proteção da vida humana."
+      ]
+    }
+  },
+  {
+    "slug": "affordable-housing-mix",
+    "title": "Mistura de Habitação Acessível",
+    "prompt": "Um provedor de habitação pode usar uma verba para converter escritórios em quarenta pequenos apartamentos ou construir vinte lares familiares maiores perto de escolas. Ambos os projetos cobrariam aluguéis abaixo do mercado. Qual deve vir primeiro?",
+    "conditionalPrompt": "Identifique a necessidade habitacional que a lista de espera pode ocultar e decida como você compararia os dois projetos.",
+    "options": [
+      {
+        "label": "Conversão de escritórios",
+        "description": "Usar um edifício vazio perto do transporte público e colocar mais famílias em residências mais rapidamente."
+      },
+      {
+        "label": "Casas para famílias",
+        "description": "Construir moradias com quartos suficientes para famílias maiores, embora leve mais tempo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["demanda", "procura por um bem ou serviço em determinado momento", "A demanda por moradias populares supera largamente a oferta atual do município."],
+        ["prioridade", "condição do que deve ser tratado antes de outras coisas", "Atender as famílias com crianças pequenas deve ser nossa prioridade principal."],
+        ["habitação", "lugar destinado à moradia de pessoas", "O acesso à habitação digna é um direito fundamental garantido por lei."],
+        ["localização", "lugar ou posição onde algo está situado", "A boa localização dos imóveis facilita o deslocamento diário dos trabalhadores."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar aspectos relevantes antes de decidir", "Precisamos levar em conta o tamanho médio das famílias inscritas."],
+        ["contar com", "ter a participação ou o apoio de algo ou alguém", "O projeto pode contar com subsídios estaduais para acelerar as obras."],
+        ["fazer frente", "enfrentar ou resistir a uma situação difícil", "O programa social busca fazer frente à grave crise imobiliária urbana."],
+        ["abrir mão", "renunciar voluntariamente a um direito ou vantagem", "Não podemos abrir mão de padrões mínimos de qualidade na construção."]
+      ],
+      "adjectives": [
+        ["acessível", "que possui preço compatível com a renda da população", "Precisamos garantir moradia acessível para os trabalhadores de baixa renda."],
+        ["urgente", "que exige solução imediata devido à sua gravidade", "A falta de teto para tantas pessoas é um problema extremamente urgente."],
+        ["adequado", "que atende perfeitamente aos requisitos necessários", "O novo layout oferece um espaço adequado para o desenvolvimento infantil."],
+        ["vulnerável", "que está exposto a riscos ou desprotegido socialmente", "As famílias monoparentais são as mais vulneráveis no mercado de aluguel."]
+      ],
+      "connectors": [
+        ["por outro lado", "introduz um ponto de vista contrastante ou complementar", "Os apartamentos menores atendem muitos jovens; por outro lado, não servem para famílias."],
+        ["sendo assim", "apresenta uma conclusão lógica baseada no contexto", "A fila de espera é enorme e, sendo assim, precisamos otimizar os espaços."],
+        ["além disso", "adiciona um novo argumento favorável à tese", "A conversão é mais rápida e, além disso, aproveita edifícios já existentes."],
+        ["em contrapartida", "indica oposição ou contraponto entre duas situações", "Construir casas demora mais; em contrapartida, atende uma demanda familiar profunda."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A conversão de antigos escritórios em quarenta pequenos apartamentos representa a estratégia mais eficiente para reduzir imediatamente a fila de espera por moradia. Essa abordagem aproveita estruturas já existentes em zonas centrais, garantindo acesso rápido ao transporte público e aos postos de trabalho.",
+        "**Além disso**, atender um número maior de domicílios em menos tempo alivia a pressão sobre o mercado de aluguel e abriga pessoas vulneráveis sem demora. **Sendo assim**, maximizar o volume de unidades entregues deve nortear nossa decisão.",
+        "**Em contrapartida**, focar apenas em grandes construções deixaria centenas de adultos desamparados enquanto as obras se arrastam. Portanto, transformar escritórios é a escolha mais pragmática para enfrentar a crise atual."
+      ],
+      "b": [
+        "A construção de vinte casas espaçosas para famílias com crianças constitui a única resposta justa às necessidades profundas da nossa comunidade a longo prazo. As famílias numerosas enfrentam uma escassez crônica de imóveis com quartos suficientes perto de escolas e creches.",
+        "**Por outro lado**, insistir em quitinetes e pequenos apartamentos ignora a realidade dolorosa de pais e filhos amontoados em espaços inadequados. **Sendo assim**, precisamos priorizar moradias estruturadas que garantam dignidade e desenvolvimento saudável.",
+        "**Além disso**, investir em lares duradouros evita deslocamentos diários desgastantes e fixa raízes sólidas nos bairros periféricos. Portanto, construir pensando nas famílias é investir no futuro coletivo da sociedade."
+      ],
+      "conditional": [
+        "A priorização entre converter escritórios ou construir casas familiares depende diretamente da composição demográfica predominante na lista de espera municipal. Se a maioria dos solicitantes for composta por indivíduos sozinhos ou casais sem filhos, a conversão rápida faz todo o sentido.",
+        "**Por outro lado**, caso os dados revelem um predomínio alarmante de famílias com crianças carentes de infraestrutura escolar, as novas casas tornam-se inegociáveis. **Sendo assim**, a análise minuciosa dos cadastros habitacionais dita o caminho correto.",
+        "**Além disso**, o gestor deve ponderar se prefere atender mais pessoas rapidamente ou resolver o problema estrutural de núcleos familiares maiores. Portanto, o contexto socioeconômico de cada cidade valida a escolha do projeto."
+      ]
+    }
+  },
+  {
+    "slug": "heritage-site-access",
+    "title": "Acesso a sitio historico",
+    "prompt": "Um sitio historico fragil so pode admitir um numero fixo de visitantes por dia. Deve alocar vagas gratuitas por sorteio ou cobrar por horarios agendados e usar a receita para conservacao?",
+    "conditionalPrompt": "Decida como equilibrar acesso justo, reservas confiaveis e a necessidade de cuidar do local.",
+    "options": [
+      {
+        "label": "Sorteio publico",
+        "description": "Alocar vagas aleatoriamente entre os solicitantes, com espacos reservados para pedidos da mesma semana."
+      },
+      {
+        "label": "Taxa de reserva",
+        "description": "Deixar os visitantes reservarem um horario especifico mediante taxa e usar a receita para reparos."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["patrimonio", "Bens culturais ou naturais de grande valor historico.", "O patrimonio cultural precisa de protecao rigida."],
+        ["receita", "Renda ou montante arrecadado por uma organizacao.", "A receita obtida sera revertida em melhorias."],
+        ["demanda", "Procura por bens ou servicos.", "A demanda por ingressos superou nossa expectativa."],
+        ["conservacao", "Ato de preservar e manter algo em bom estado.", "A conservacao do local exige recursos constantes."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "Considerar algo importante ao tomar uma decisao.", "Devemos levar em conta a fragilidade do solo."],
+        ["contar com", "Depender de algo ou de alguém.", "Podemos contar com a ajuda dos moradores."],
+        ["abrir mao", "Renunciar a algo voluntariamente.", "Nao podemos abrir mao da seguranca do sitio."],
+        ["levar a cabo", "Realizar ou concluir uma tarefa ou projeto.", "Vamos levar a cabo a reforma estrutural."]
+      ],
+      "adjectives": [
+        ["vulneravel", "Que e susceptivel a danos ou fragil.", "O ecossistema e extremamente vulneravel."],
+        ["sustentavel", "Que pode ser mantido a longo prazo sem esgotar recursos.", "Precisamos de um modelo turistico sustentavel."],
+        ["rigoroso", "Que e estrito ou severo nas normas.", "O controle de acesso deve ser rigoroso."],
+        ["essencial", "Que e absolutamente necessario ou imprescindivel.", "A manutencao preventiva e essencial."]
+      ],
+      "connectors": [
+        ["por outro lado", "Expressa contraste ou oposicao em relacao ao que foi dito.", "O ingresso pago gera renda; por outro lado, pode excluir familias."],
+        ["alem disso", "Adiciona um argumento ou informacao.", "O local e fragil; alem disso, recebe muitos turistas."],
+        ["portanto", "Indica uma conclusao logica.", "Os recursos sao escassos; portanto, precisamos priorizar reparos."],
+        ["embora", "Introduz uma concessao ou ideia oposta.", "Embora o custo seja alto, a obra e necessaria."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A defesa de um sorteio publico fundamenta-se na garantia de igualdade de oportunidades para todos os cidadaos interessados. **Embora** a cobranca gere recursos financeiros imediatos, ela frequentemente restringe o acesso das camadas de menor renda ao **patrimonio** historico. **Portanto**, a distribuicao aleatoria assegura que o fator economico nao determine quem pode vivenciar a cultura.",
+        "Ademais, o modelo participativo promove uma conexao democratica entre a populacao e os bens preservados. Devemos **levar em conta** que o espaco pertence a sociedade como um todo e nao apenas a quem pode pagar por ele. O sistema de sorteio mitiga o elitismo cultural e fomenta um sentimento coletivo de pertencimento.",
+        "Em suma, a priorizacao do acesso igualitario justifica os desafios logisticos na gestao das visitas diarias. **Contar com** a sorte pode parecer informal, mas preserva o carater publico do monumento. Assim, garantimos que a **conservacao** caminhe junto com a inclusao social."
+      ],
+      "b": [
+        "A implementacao de uma taxa de reserva mostra-se indispensavel para a manutencao financeira a longo prazo do monumento. **Embora** o sorteio promova equidade inicial, ele nao gera a **receita** necessaria para cobrir os altos custos de restauracao. **Portanto**, cobrar por horarios especificos garante recursos constantes para proteger a estrutura fisica.",
+        "**Alem disso**, a cobranca reduz o absenteismo e organiza melhor o fluxo diario de visitantes interessados. Precisamos **levar em conta** que um espaco **vulneravel** exige investimentos rigorosos em seguranca e infraestrutura. O modelo pago assegura que apenas quem realmente pretende ir ocupe as vagas limitadas.",
+        "Em suma, a sustentabilidade economica do sitio historico depende diretamente dessa arrecadacao regular. **Embora** restrinja alguns publicos, a medida viabiliza reparos essenciais e garante a sobrevivencia do local. Assim, equilibramos o uso turistico com a preservacao necessaria."
+      ],
+      "conditional": [
+        "A escolha entre sorteio e taxa depende essencialmente do estado atual de **conservacao** do monumento historico. Se o local sofre danos estruturais graves, a arrecadacao imediata torna-se prioridade absoluta para evitar sua ruina. **Portanto**, em cenarios de crise financeira, a cobranca de ingressos e a unica alternativa viavel.",
+        "**Por outro lado**, quando o espaco apresenta estabilidade estrutural e **demanda** social reprimida, o sorteio ganha total sentido. Devemos avaliar se o deficit orcamentario compromete mais a integridade do que a exclusao de visitantes de baixa renda. A decisao correta exige diagnosticos tecnicos precisos.",
+        "Em suma, a estrategia deve adaptar-se as necessidades urgentes de cada periodo de gestao administrativa. Se faltam verbas, a taxa e **essencial**; se o caixa esta equilibrado, o sorteio promove inclusao. A avaliacao continua de cada cenario e o verdadeiro segredo."
+      ]
+    }
+  },
+  {
+    "slug": "wildlife-conservation",
+    "title": "Conservacao da vida selvagem",
+    "prompt": "Um fundo de conservacao pode financiar um corredor de habitat ligando duas pequenas reservas ou protecao extra para um unico wetland intacto. Qual faria melhor uso de uma subvencao de cinco anos?",
+    "conditionalPrompt": "Explique o que contaria como evidencia de movimento ou uma ameaca urgente ao wetland.",
+    "options": [
+      {
+        "label": "Corredor de habitat",
+        "description": "Trabalhar com proprietarios de terras para criar sebes e faixas de habitat entre as reservas."
+      },
+      {
+        "label": "Protecao do wetland",
+        "description": "Garantir a fronteira do wetland e restaurar margens danificadas com foco em especies locais."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["corredor", "Area que conecta habitats naturais fragmentados.", "O corredor ecologico facilita o transito de especies."],
+        ["biodiversidade", "Variedade de vida em um determinado ambiente.", "A conservacao da biodiversidade e uma prioridade."],
+        ["impacto", "Efeito ou consequencia de uma acao.", "O impacto ambiental da obra foi minimizado."],
+        ["especie", "Conjunto de seres vivos com caracteristicas semelhantes.", "Cada especie desempenha um papel no ecossistema."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "Considerar um aspecto relevante em um planejamento.", "Precisamos levar em conta a migracao dos animais."],
+        ["contar com", "Ter a participacao ou o apoio de algo ou alguem.", "O projeto podera contar com apoio federal."],
+        ["dar conta", "Ser capaz de realizar ou suportar algo.", "Uma so reserva nao da conta de proteger todos."],
+        ["levar a cabo", "Executar um plano ate o fim.", "Vamos levar a cabo este programa ambiental."]
+      ],
+      "adjectives": [
+        ["fragmentado", "Dividido em partes isoladas ou desconectadas.", "O habitat esta cada vez mais fragmentado."],
+        ["intacto", "Que nao sofreu danos ou alteracoes.", "O wetland permanece quase totalmente intacto."],
+        ["vulneravel", "Exposto a riscos ou ameacas constantes.", "A fauna local e muito vulneravel a predacao."],
+        ["sustentavel", "Capaz de se manter ecologicamente estavel.", "Buscamos um desenvolvimento ecologicamente sustentavel."]
+      ],
+      "connectors": [
+        ["por outro lado", "Apresenta um argumento contraposto.", "O corredor une areas; por outro lado, exige acordos."],
+        ["alem disso", "Introduz um argumento adicional relevante.", "O wetland e rico; alem disso, abriga especies raras."],
+        ["portanto", "Conclui um raciocinio logico com base em premissas.", "Ha pressao imobiliaria; portanto, precisamos agir."],
+        ["embora", "Denota concessao ou contraste moderado.", "Embora o custo seja alto, o resultado compensa."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A opcao pelo **corredor** de habitat justifica-se pela necessidade urgente de combater a fragmentacao ecossistematica. **Embora** o wetland exija protecao pontual, as especies locais sofrem com o isolamento genetico entre as reservas. **Portanto**, conectar essas areas promove um fluxo biologico saudavel e **sustentavel**.",
+        "Ademais, a iniciativa estimula a cooperacao ativa entre proprietarios rurais e conservacionistas na regiao. Devemos **levar em conta** que a **biodiversidade** prospera quando os animais conseguem transitar livremente em busca de recursos. O **corredor** amplia o territorio disponivel para a fauna silvestre.",
+        "Em suma, investir na conectividade territorial e a estrategia mais eficaz a longo prazo. **Contar com** a parceria dos fazendeiros garante o sucesso operacional do projeto. Assim, superamos os limites rigidos das pequenas reservas isoladas."
+      ],
+      "b": [
+        "A concentracao de recursos na protecao do wetland **intacto** mostra-se a escolha mais prudente e imediata. **Embora** os corredores tenham valor ecologico, eles dependem de acordos incertos com diversos proprietarios de terras. **Portanto**, garantir o perimetro de um ecossistema ja estabelecido assegura resultados concretos.",
+        "**Alem disso**, o local abriga especies endemicas que necessitam de defesa rigorosa contra ameacas externas. Precisamos **levar em conta** que salvar um refugio funcional e mais seguro do que criar novas rotas incertas. A integridade do wetland justifica todo o aporte financeiro.",
+        "Em suma, consolidar uma area rica e preservada evita a perda irreviavel de **biodiversidade** local. **Embora** a conexao seja importante, focar no wetland maximiza o retorno da subvencao. Assim, garantimos a salvaguarda de um habitat vital."
+      ],
+      "conditional": [
+        "A decisao entre o **corredor** e o wetland depende da existencia de ameacas iminentes sobre a regiao. Se o wetland sofre pressao antropica direta, a protecao imediata de suas fronteiras torna-se prioridade absoluta. **Portanto**, cenarios de risco critico exigem defensiva territorial focalizada.",
+        "**Por outro lado**, caso o wetland esteja seguro e o isolamento genetico seja o problema real, o **corredor** impera. Devemos avaliar se ha dados comprovando o deslocamento efetivo de animais entre as pequenas reservas. A evidencia cientifica dita o rumo do investimento.",
+        "Em suma, a analise empirica de campo deve guiar a aplicacao correta dos recursos financeiros. Se ha ameaca de drenagem, proteja o wetland; se ha isolamento, construa o **corredor**. A adaptabilidade tecnica e sempre o melhor caminho."
+      ]
+    }
+  },
+  {
+    "slug": "library-access",
+    "title": "Renovação da biblioteca central versus biblioteca móvel",
+    "prompt": "Um distrito tem recursos financeiros para apenas um projeto de biblioteca. Deve-se reformar a matriz transformando-a em um espaÃ§o amplo de estudos e reuniÃµes, ou enviar uma biblioteca móvel para bairros distantes?",
+    "conditionalPrompt": "Identifique se o problema principal Ã© o acesso ao serviÃ§o ou a disponibilidade de um espaÃ§o adequado de trabalho ao chegar lÃ¡.",
+    "options": [
+      {
+        "label": "Reforma da matriz",
+        "description": "Adicionar mesas acessÃ­veis, salas silenciosas e internet estÃ¡vel na unidade principal. As pessoas ainda precisam se deslocar atÃ© um Ãºnico local."
+      },
+      {
+        "label": "Biblioteca móvel",
+        "description": "Enviar livros e serviÃ§os bÃ¡sicos para diversos bairros em horÃ¡rio programado. O veÃ­culo transporta pouco acervo e nÃ£o oferece salas de estudo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["acervo", "Conjunto de livros e documentos de uma biblioteca.", "O acervo precisa ser atualizado constantemente para atender aos estudantes."],
+        ["demanda", "Procura por um determinado produto ou serviÃ§o.", "A demanda por salas de estudo silenciosas cresceu muito neste ano."],
+        ["deslocamento", "Ato de ir de um lugar para outro.", "O deslocamento diÃ¡rio atÃ© o centro consome muito tempo dos moradores."],
+        ["infraestrutura", "Conjunto de instalaÃ§Ãµes bÃ¡sicas de uma organizaÃ§Ã£o ou cidade.", "A infraestrutura precÃ¡ria da regiÃ£o dificulta o acesso Ã  cultura."]
+      ],
+      "phrasalVerbs": [
+        ["atender a", "Prestar atendimento ou suprir uma necessidade.", "Precisamos atender a todas as solicitaÃ§Ãµes da comunidade local."],
+        ["contar com", "Ter a ajuda ou a presenÃ§a de algo ou alguÃ©m.", "O projeto deve contar com o apoio financeiro da prefeitura municipal."],
+        ["levar em conta", "Considerar ou ponderar um aspecto importante.", "Devemos levar em conta a opiniÃ£o dos moradores antes da decisÃ£o."],
+        ["por em prática", "Realizar ou executar um plano ou ideia.", "SerÃ¡ difÃ­cil por em prÃ¡tica essa mudanÃ§a sem novos recursos."]
+      ],
+      "adjectives": [
+        ["abrangente", "Que abarque ou inclua muitos elementos ou pessoas.", "Um plano abrangente garantiria o atendimento a todos os bairros."],
+        ["precário", "Que se encontra em estado ruÃ­m ou insuficiente.", "O atendimento mÃ³vel atual Ã© muito precÃ¡rio para a nossa demanda."],
+        ["eficiente", "Que produz o efeito desejado com o mÃ­nimo de desperdÃ­cio.", "Precisamos de uma soluÃ§Ã£o eficiente para os problemas de leitura."],
+        ["limitado", "Que tem limites estreitos ou restriÃ§Ãµes.", "O espaÃ§o disponÃ­vel no caminhÃ£o Ã© bastante limitado para livros."]
+      ],
+      "connectors": [
+        ["por outro lado", "Expressa oposiÃ§Ã£o ou contraste em relaÃ§Ã£o ao que foi dito.", "O custo Ã© alto; por outro lado, o benefÃ­cio social compensa."],
+        ["portanto", "Indica uma consequÃªncia ou conclusÃ£o lÃ³gica.", "Faltam recursos; portanto, devemos priorizar a reforma central."],
+        ["além disso", "Adiciona um argumento ou informaÃ§Ã£o complementar.", "O local Ã© central; alÃ©m disso, possui fÃ¡cil acesso de Ã´nibus."],
+        ["em contrapartida", "Indica uma compensaÃ§Ã£o ou contraponto a uma situaÃ§Ã£o.", "A reforma Ã© cara; em contrapartida, durarÃ¡ por muitas dÃ©cadas."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Investir na reforma da biblioteca central Ã© a decisÃ£o mais acertada porque a **demanda** por **infraestrutura** adequada de estudos cresce continuamente em nossa cidade. A unidade principal precisa de mesas acessÃ­veis e internet estÃ¡vel para apoiar os estudantes que buscam um espaÃ§o propÃ­cio para o desenvolvimento acadÃªmico e profissional.",
+        "AlÃ©m disso, concentrar os recursos financeiros em um Ãºnico local permite criar um **acervo** mais completo e salas silenciosas de alta qualidade. Embora exista o problema do **deslocamento** para alguns moradores, a qualidade do serviÃ§o prestado na matriz compensa amplamente o esforÃ§o de viagem atÃ© lÃ¡.",
+        "**Portanto**, transformar a biblioteca central em um polo moderno garante um impacto cultural duradouro e profundo para toda a comunidade. Devemos priorizar a excelÃªncia estrutural para que cada cidadÃ£o encontre um ambiente perfeitamente equipado para estudar e realizar suas pesquisas."
+      ],
+      "b": [
+        "Enviar uma biblioteca mÃ³vel para os bairros distantes representa uma polÃ­tica pÃºblica muito mais inclusiva e prÃ¡tica para quem vive longe do centro. Muitas famÃ­lias enfrentam barreiras severas de transporte e nÃ£o conseguem frequentar a matriz regularmente devido ao custo e ao tempo de **deslocamento**.",
+        "**Por outro lado**, o veÃ­culo possui um espaÃ§o **limitado** e nÃ£o oferece salas silenciosas para estudos prolongados. **Em contrapartida**, levar livros bÃ¡sicos e atendimento cultural diretamente Ã s comunidades perifÃ©ricas garante que nenhuma crianÃ§a ou adulto fique completamente isolado do acesso Ã  leitura e Ã  cultura.",
+        "**Portanto**, a unidade mÃ³vel cumpre um papel social indispensÃ¡vel ao democratizar o acesso aos livros onde eles mais fazem falta. Devemos aproximar os serviÃ§os essenciais da populaÃ§Ã£o vulnerÃ¡vel, superando as barreiras geogrÃ¡ficas que impedem o desenvolvimento cultural dos bairros afastados."
+      ],
+      "conditional": [
+        "A escolha entre reformar a matriz ou enviar uma biblioteca mÃ³vel depende essencialmente da natureza do obstÃ¡culo enfrentado pelos frequentes leitores locais. Se o principal problema for a falta de um espaÃ§o adequado para ler e pesquisar, a reforma da biblioteca central se mostra totalmente indispensÃ¡vel para suprir essa carÃªncia estrutural.",
+        "Caso a dificuldade maior seja a impossibilidade fÃ­sica de chegar atÃ© o centro urbano devido ao transporte precÃ¡rio, a unidade mÃ³vel torna-se a melhor alternativa. Cada regiÃ£o apresenta uma realidade distinta e exige uma anÃ¡lise cuidadosa da **demanda** real antes de por em prÃ¡tica qualquer investimento pÃºblico.",
+        "**Portanto**, a administraÃ§Ã£o deve avaliar se a comunidade sofre mais com a ausÃªncia de **infraestrutura** de estudo ou com o isolamento geogrÃ¡fico severo. Somente considerando essas circunstÃ¢ncias concretas poderemos direcionar os recursos financeiros para a opÃ§Ã£o que realmente transforma a vida dos munÃ­cipes."
+      ]
+    }
+  },
+  {
+    "slug": "household-energy-grants",
+    "title": "SubsÃ­dios para isolamento tÃ©rmico versus troca de eletrodomÃ©sticos",
+    "prompt": "Um distrito tem verba para reduzir a conta de luz de famÃ­lias de baixa renda. Deve-se oferecer menos subvenÃ§Ãµes para isolamento tÃ©rmico ou subvenÃ§Ãµes menores que permitam trocar eletrodomÃ©sticos ineficientes?",
+    "conditionalPrompt": "Explique o que constituiria uma economia significativa e como a polÃ­tica pÃºblica deve lidar com os inquilinos.",
+    "options": [
+      {
+        "label": "Isolamento tÃ©rmico",
+        "description": "Melhorar residÃªncias frias com maior necessidade de aquecimento. AvaliaÃ§Ãµes e instalaÃ§Ã£o exigem tempo, e alguns inquilinos precisam da autorizaÃ§Ã£o do senhorio."
+      },
+      {
+        "label": "Troca de aparelhos",
+        "description": "Substituir geladeiras e outros aparelhos muito usados. O trabalho comeÃ§a rÃ¡pido, embora a economia dependa do aparelho substituÃ­do."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["subvenção", "Apoio financeiro concedido pelo governo para um fim especÃ­fico.", "A subvenÃ§Ã£o ajudou muitas famÃ­lias a reduzirem suas despesas mensais."],
+        ["inquilino", "Pessoa que aluga um imÃ³vel para morar.", "O inquilino precisa da autorizaÃ§Ã£o formal do proprietÃ¡rio para a reforma."],
+        ["desperdício", "Ato de gastar recursos ou energia sem necessidade.", "O uso de geladeiras antigas gera um enorme desperdÃ­cio de eletricidade."],
+        ["consumo", "Ato de gastar energia ou bens.", "A troca do aparelho reduziu drasticamente o consumo de energia da casa."]
+      ],
+      "phrasalVerbs": [
+        ["contar com", "Dispor de algo ou confiar em um auxÃ­lio.", "As famÃ­lias de baixa renda precisam contar com o apoio do governo."],
+        ["levar em conta", "Considerar um fator importante em uma avaliaÃ§Ã£o.", "O programa deve levar em conta a situaÃ§Ã£o dos inquilinos locais."],
+        ["por em prática", "Executar uma medida ou projeto planejado.", "Vamos por em prÃ¡tica o plano de troca de eletrodomÃ©sticos velhos."],
+        ["fazer face", "Enfrentar uma dificuldade financeira ou situaÃ§Ã£o complexa.", "Muitas pessoas nÃ£o conseguem fazer face Ã s contas de luz no inverno."]
+      ],
+      "adjectives": [
+        ["ineficiente", "Que consome mais recursos do que o necessÃ¡rio para funcionar.", "O aquecedor antigo Ã© extremamente ineficiente e gasta muita energia."],
+        ["significativo", "Que temimportÃ¢ncia ou valor expressivo.", "A economia na conta de luz deve ser significativa para valer a pena."],
+        ["vulnerável", "Que estÃ¡ exposto a riscos ou desprotegido.", "As famÃ­lias vulnerÃ¡veis precisam de ajuda urgente contra o frio."],
+        ["essencial", "Que Ã© absolutamente indispensÃ¡vel.", "O isolamento tÃ©rmico Ã© essencial para manter a casa aquecida."]
+      ],
+      "connectors": [
+        ["portanto", "Indica uma conclusÃ£o lÃ³gica a partir de premissas anteriores.", "O aparelho gasta muito; portanto, sua substituiÃ§Ã£o Ã© urgente."],
+        ["além disso", "Introduz um argumento adicional de reforÃ§o.", "A reforma melhora o conforto; alÃ©m disso, valoriza o imÃ³vel alugado."],
+        ["por outro lado", "Apresenta um contraponto ou argumento divergente.", "O isolamento Ã© duradouro; por outro lado, sua instalaÃ§Ã£o Ã© demorada."],
+        ["em contrapartida", "Demonstra compensaÃ§Ã£o frente a uma dificuldade.", "O custo inicial Ã© alto; em contrapartida, a economia Ã© garantida."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Oferecer subsÃ­dios para o isolamento tÃ©rmico das residÃªncias Ã© a melhor escolha porque combate a raiz do desperdÃ­cio de energia em dias frios. ImÃ¶veis mal isolados exigem esforÃ§os excessivos de aquecimento, elevando o **consumo** e prejudicando o bem-estar de famÃ­lias vulnerÃ¡veis que sofrem com o frio intenso.",
+        "Embora o processo de avaliaÃ§Ã£o e instalaÃ§Ã£o exija tempo e dependa da autorizaÃ§Ã£o do senhorio para os inquilinos, os resultados estruturais sÃ£o duradouros. AlÃ©m disso, uma casa bem isolada garante reduÃ§Ãµes permanentes nas despesas domÃ©sticas, protegendo os moradores contra as flutuaÃ§Ãµes drÃ¡sticas das tarifas energÃ©ticas.",
+        "**Portanto**, focar no isolamento tÃ©rmico assegura um ganho estrutural profundo para o parque habitacional do distrito. Devemos priorizar essa intervenÃ§Ã£o profunda para que nenhuma famÃ­lia precise escolher entre aquecer a casa e pagar outras contas essenciais."
+      ],
+      "b": [
+        "Substituir eletrodomÃ©sticos ineficientes representa a polÃ­tica mais Ã¡gil e direta para aliviar o orçamento imediato de quem mais precisa de ajuda financeira. Geladeiras velhas e chuveiros desgastados consomem uma quantidade absurda de eletricidade, gerando faturas elevadas que penalizam injustamente os lares de baixa renda.",
+        "**Por outro lado**, a economia depende diretamente do modelo de aparelho substituÃ­do e exige critÃ©rios claros para evitar distorÃ§Ãµes no programa. **Em contrapartida**, o trabalho comeÃ§a rÃ¡pido e beneficia um nÃºmero muito maior de pessoas sem esbarrar nas burocracias contratuais exigidas pelos proprietÃ¡rios de imÃ³veis alugados.",
+        "**Portanto**, trocar equipamentos obsoletos traz um alÃ­vio imediato e mensurÃ¡vel para o cotidiano das famÃ­lias atendidas pelo subsÃ­dios pÃºblicos. Devemos priorizar essa distribuÃ§Ã£o ampla para garantir resultados prÃ¡ticos visÃ­veis em curto prazo em todo o distrito."
+      ],
+      "conditional": [
+        "A definiÃ§Ã£o de uma economia significativa e o tratamento adequado aos inquilinos determinam qual polÃ­tica de subsÃ­dio deve ser implementada no distrito. Uma reduÃ§Ã£o expressiva na fatura mensal sÃ³ ocorre se atacarmos o principal foco de desperdÃ­cio, seja ele o isolamento deficiente ou um aparelho obsoleto.",
+        "Para os inquilinos que moram de aluguel, a polÃ­tica pÃºblica deve exigir acordos simples com os proprietÃ¡rios ou focar em bens mÃ³veis como geladeiras. Caso a residÃªncia sofra com problemas estruturais graves de frio, o isolamento tÃ©rmico compensa apenas se houver garantias de permanÃªncia no imÃ³vel.",
+        "**Portanto**, a escolha depende de calcular onde o dinheiro pÃºblico trarÃ¡ o maior impacto financeiro lÃ­quido para o cidadÃ£o. Devemos analisar cada situaÃ§Ã£o contratual e tÃ©rmica individualmente para assegurar que o subsÃ­dio atinja sua finalidade com mÃ¡xima justiÃ§a social."
+      ]
+    }
+  },
+  {
+    "slug": "hybrid-work-days",
+    "title": "Dias de trabalho híbrido",
+    "prompt": "Uma empresa quer que os funcionários passem algum tempo no escritório. Todos devem vir nos mesmos dois dias, ou cada equipe deve escolher quando se reunir com base no seu trabalho?",
+    "conditionalPrompt": "Nomeie um tipo de trabalho que realmente se beneficia da sobreposição e um sinal de que um horário fixo seria excessivo.",
+    "options": [
+      {
+        "label": "Dias fixos",
+        "description": "Facilita encontrar alguém de outra equipe sem programar uma viagem especial, mas a equipe tem menos controle sobre as viagens semanais."
+      },
+      {
+        "label": "Escolha flexível",
+        "description": "Permite que equipes organizem o tempo presencial em torno de projetos, embora possam perder o contato quando as agendas diferem."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["prioridade", "prioridade estabelecida para o trabalho", "A prioridade da empresa é garantir colaboração diária."],
+        ["deslocamento", "deslocamento diário para o escritório", "O deslocamento longo cansa os funcionários."],
+        ["sobreposição", "sobreposição de horários entre equipes", "A sobreposição de equipes melhora a comunicação."],
+        ["compromisso", "compromisso firmado com a equipe", "O compromisso coletivo exige presença regular."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar um fator importante", "Devemos levar em conta a opinião de todos."],
+        ["chegar a", "alcançar um acordo", "Precisamos chegar a um consenso sobre os dias."],
+        ["abrir mão", "renunciar a algo", "Ninguém quer abrir mão da flexibilidade."],
+        ["levar a cabo", "concluir uma tarefa", "Vamos levar a cabo este projeto juntos."]
+      ],
+      "adjectives": [
+        ["rigoroso", "que segue regras estritas", "O controle de horários precisa ser rigoroso."],
+        ["flexível", "que se adapta facilmente", "Um modelo flexível atrai novos talentos."],
+        ["presencial", "que ocorre no local de trabalho", "A reunião presencial resolve problemas complexos."],
+        ["eficiente", "que produz bons resultados", "A comunicação eficiente reduz reuniões desnecessárias."]
+      ],
+      "connectors": [
+        ["portanto", "indica consequência lógica", "O trânsito é intenso; portanto, saia mais cedo."],
+        ["no entanto", "indica oposição ou contraste", "O plano é bom; no entanto, exige custos altos."],
+        ["além disso", "indica adição de argumento", "O escritório é moderno; além disso, fica bem localizado."],
+        ["por um lado", "introduz um argumento inicial", "Por um lado, a rotina ajuda na organização."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A adoção de dias fixos garante que todas as equipes estejam presentes simultaneamente no escritório. Essa previsibilidade facilita o alinhamento de projetos e fortalece a cultura corporativa. **Portanto**, a empresa ganha em coesão e agilidade operacional.",
+        "**No entanto**, essa abordagem reduz a autonomia individual e pode gerar resistência entre os colaboradores. O **deslocamento** obrigatório em dias de pico também impacta a qualidade de vida. Por isso, a gestão precisa avaliar os custos e os benefícios com cuidado.",
+        "Em suma, a padronização elimina ambiguidades e assegura a presença física necessária para a colaboração. Embora existam desvantagens logísticas, o ganho coletivo justifica a medida. A consistência diária supera a conveniência isolada."
+      ],
+      "b": [
+        "A flexibilidade permite que cada equipe organize sua rotina **presencial** conforme suas demandas específicas. Essa autonomia valoriza o profissional e reduz o estresse associado a deslocamentos desnecessários. **Além disso**, otimiza o uso do espaço físico disponível.",
+        "**Por um lado**, a falta de dias coincidentes pode dificultar a comunicação espontânea entre departamentos diferentes. **No entanto**, o planejamento adequado mitiga esse risco sem sacrificar a liberdade de escolha. As equipes aprendem a coordenar suas agendas de forma madura.",
+        "Em conclusão, confiar na maturidade dos colaboradores traz resultados superiores e maior engajamento. A gestão por objetivos substitui o controle rígido de presença. Dessa forma, a empresa constrói um ambiente mais moderno e atraente."
+      ],
+      "conditional": [
+        "O trabalho altamente colaborativo e criativo, como o desenvolvimento de novos produtos, beneficia-se diretamente da **sobreposição** de equipes. Nesses casos, a troca rápida de ideias acelera a resolução de problemas complexos. A presença física simultânea é fundamental.",
+        "Por outro lado, um sinal claro de que o horário fixo se tornou excessivo é a realização constante de reuniões virtuais dentro do próprio escritório. Se as pessoas vão ao escritório apenas para usar o computador isoladamente, o modelo perde o sentido. A rigidez deixa de agregar valor prático.",
+        "**Portanto**, a escolha entre dias fixos e flexíveis deve refletir a natureza real das tarefas diárias. As lideranças precisam analisar dados de uso do espaço e feedback sincero das equipes. Ajustes contínuos garantem o equilíbrio ideal entre colaboração e autonomia."
+      ]
+    }
+  },
+  {
+    "slug": "hiring-first-round",
+    "title": "Processo seletivo inicial",
+    "prompt": "Um empregador tem tempo para apenas uma avaliação de primeira fase por candidato. Deve pedir uma pequena amostra de trabalho anônima ou conduzir uma entrevista estruturada com as mesmas perguntas para todos?",
+    "conditionalPrompt": "Escolha a habilidade mais importante para uma função e diga qual avaliação lhe daria a evidência mais clara dela.",
+    "options": [
+      {
+        "label": "Amostra anônima",
+        "description": "Dar aos candidatos uma tarefa curta semelhante ao cargo e avaliá-la usando critérios objetivos antes de ver os nomes."
+      },
+      {
+        "label": "Entrevista estruturada",
+        "description": "Pedir a cada candidato que explique os mesmos cenários de trabalho e pontuar suas respostas com uma rubrica, sabendo quem ele é."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["candidato", "pessoa que concorre a uma vaga", "Cada candidato apresentou soluções muito criativas."],
+        ["critério", "norma ou regra de avaliação", "O critério de seleção deve ser transparente."],
+        ["desempenho", "modo como o trabalho é realizado", "O desempenho prático superou as expectativas."],
+        ["competência", "capacidade profissional demonstrada", "A competência técnica é essencial para a vaga."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar aspectos relevantes", "Vamos levar em conta o histórico profissional."],
+        ["levar a cabo", "executar uma tarefa até o fim", "O comitê vai levar a cabo todas as entrevistas."],
+        ["contar com", "depender de algo ou alguém", "Podemos contar com uma equipe de apoio experiente."],
+        ["dar conta de", "ser capaz de realizar algo", "Nenhum avaliador consegue dar conta de tantos testes sozinho."]
+      ],
+      "adjectives": [
+        ["imparcial", "que não favorece nenhuma das partes", "O processo de avaliação deve ser totalmente imparcial."],
+        ["objetivo", "baseado em factos reais e mensuráveis", "Precisamos de um critério objetivo para pontuar."],
+        ["rigoroso", "feito com extremo cuidado e precisão", "O método de análise precisa ser rigoroso."],
+        ["adequado", "que serve perfeitamente para o fim", "A ferramenta escolhida é adequada ao cargo."]
+      ],
+      "connectors": [
+        ["portanto", "indica conclusão lógica", "O teste foi anônimo; portanto, evitou preconceitos."],
+        ["no entanto", "indica oposição ou contraste", "A entrevista é útil; no entanto, consome mais tempo."],
+        ["além disso", "indica acréscimo de argumento", "A tarefa avalia a técnica; além disso, testa a lógica."],
+        ["por conseguinte", "indica consequência direta", "O currículo foi aprovado; por conseguinte, avançamos."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A utilização de amostras de trabalho anônimas garante um processo seletivo estritamente **imparcial**. Ao avaliar a **competência** técnica sem influências pessoais, a empresa reduz vieses inconscientes. **Portanto**, os melhores talentos são identificados de forma justa.",
+        "**No entanto**, essa abordagem não revela as habilidades interpessoais ou a capacidade de comunicação verbal do **candidato**. O avaliador precisa complementar a análise posteriormente antes de tomar uma decisão final. Por isso, o escopo da tarefa inicial deve ser muito bem planejado.",
+        "Em suma, priorizar a entrega prática assegura que o contratado realmente domina as funções do cargo. O anonimato protege a integridade da seleção inicial. Essa estratégia fortalece a base de qualquer recrutamento moderno e eficiente."
+      ],
+      "b": [
+        "A entrevista estruturada com perguntas padronizadas permite avaliar a capacidade de raciocínio e a experiência dos candidatos em profundidade. Conhecer a identidade da pessoa ajuda a contextualizar suas respostas e trajetória. **Além disso**, gera um diálogo imediato sobre expectativas.",
+        "Por um lado, a falta de anonimato pode introduzir vieses subjetivos na avaliação do entrevistador. **No entanto**, o uso de uma rubrica detalhada minimiza esse risco e garante equidade. Todos respondem às mesmas indagações sob igualdade de condições.",
+        "Em conclusão, esse modelo combina rigor técnico com a oportunidade de avaliar a adaptação cultural do profissional. O formato estruturado oferece clareza e previsibilidade para a empresa. A decisão final torna-se mais segura e fundamentada."
+      ],
+      "conditional": [
+        "Para uma função de atendimento ao cliente, a habilidade mais importante é a comunicação empática sob pressão. A entrevista estruturada oferece a evidência mais clara dessa **competência**, pois permite observar a reação verbal e o tom de voz em tempo real.",
+        "Por outro lado, se a função exige programação de software, a amostra de código anônima demonstra a habilidade técnica com muito mais precisão do que qualquer relato verbal. O **desempenho** prático fala por si mesmo, eliminando ruídos de comunicação.",
+        "**Portanto**, a escolha do método depende inteiramente da natureza crítica da função. A empresa deve alinhar a ferramenta de avaliação ao requisito principal do cargo. Garantir essa correspondência é o segredo de uma contratação assertiva."
+      ]
+    }
+  },
+  {
+    "slug": "salary-range-transparency",
+    "title": "Transparência salarial",
+    "prompt": "Uma organização concordou em tornar as faixas salariais públicas. Deve publicar as faixas internamente e em anúncios de emprego agora, ou compartilhá-las com a equipe primeiro e corrigir inconsistências antes de atualizar os anúncios em três meses?",
+    "conditionalPrompt": "Separe problemas que uma explicação simples pode resolver de diferenças que exigem um ajuste salarial.",
+    "options": [
+      {
+        "label": "Publicar agora",
+        "description": "Dar a funcionários e candidatos a mesma informação imediatamente, embora alguns salários precisem de explicação durante a revisão."
+      },
+      {
+        "label": "Atualizar depois",
+        "description": "Dar as faixas à equipe agora e revisar inconsistências confirmadas antes de atualizar anúncios; candidatos recebem menos dados na transição."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["transparência", "clareza nas informações prestadas", "A transparência salarial gera confiança na empresa."],
+        ["inconsistência", "falta de harmonia ou coerência", "Identificamos uma inconsistência grave nos salários."],
+        ["ajuste", "modificação para corrigir algo", "O ajuste salarial será aplicado no próximo mês."],
+        ["comunicação", "ato de transmitir mensagens claras", "A comunicação interna deve ser imediata e clara."]
+      ],
+      "phrasalVerbs": [
+        ["vir à tona", "tornar-se conhecido publicamente", "As diferenças salariais acabaram por vir à tona."],
+        ["levar em conta", "considerar um aspecto importante", "É preciso levar em conta o impacto emocional."],
+        ["dar conta de", "suportar ou resolver uma demanda", "O RH não consegue dar conta de tantas dúvidas ao mesmo tempo."],
+        ["levar a cabo", "executar um plano até o fim", "Vamos levar a cabo a revisão de todos os cargos."]
+      ],
+      "adjectives": [
+        ["transparente", "que não oculta informações", "Uma política salarial transparente atrai profissionais."],
+        ["consistente", "que tem firmeza e lógica interna", "A tabela de remuneração precisa ser consistente."],
+        ["justo", "que atua com equidade e retidão", "O plano de carreira deve ser justo para todos."],
+        ["complexo", "que é difícil de resolver ou entender", "O alinhamento de salários é um processo complexo."]
+      ],
+      "connectors": [
+        ["portanto", "indica consequência lógica", "A regra foi divulgada; portanto, todos devem segui-la."],
+        ["no entanto", "indica oposição ou contraste", "A intenção é boa; no entanto, faltou planejamento."],
+        ["além disso", "indica adição de argumentos", "A medida aumenta a confiança; além disso, moderniza o RH."],
+        ["por conseguinte", "indica consequência direta", "O erro foi corrigido; por conseguinte, evitamos conflitos."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A publicação imediata de todas as faixas salariais demonstra um compromisso radical com a **transparência** e a justiça organizacional. Compartilhar a informação com funcionários e candidatos ao mesmo tempo evita a sensação de segredo. **Portanto**, a empresa constrói uma relação de confiança desde o primeiro contato.",
+        "**No entanto**, essa pressa pode expor discrepâncias históricas que exigiriam tempo para correção adequada. Algumas equipes podem questionar diferenças que parecem injustas à primeira vista. Por isso, a liderança deve estar preparada para explicar o contexto com clareza.",
+        "Em suma, o choque inicial da abertura total é superado pelos benefícios de uma cultura verdadeiramente aberta. Adiar a **transparência** apenas alimenta desconfianças desnecessárias. A franqueza imediata fortalece a reputação da organização a longo prazo."
+      ],
+      "b": [
+        "Compartilhar as faixas salariais com a equipe atual e corrigir as distorções antes de divulgá-las publicamente é uma atitude prudente. Essa janela de três meses permite ajustar desníveis sem a pressão de novos candidatos. **Além disso**, protege a moral dos colaboradores atuais.",
+        "Por um lado, manter os candidatos sem essa informação por um breve período reduz a atratividade inicial das vagas. **No entanto**, o dano é temporário e compensado pela segurança de uma tabela revisada. A empresa evita promessas inconsistentes no mercado.",
+        "Em conclusão, a transição planejada garante que a empresa fale a mesma língua internamente antes de expor suas fragilidades externas. A correção prévia de erros demonstra profissionalismo. Essa cautela resulta em uma **comunicação** externa muito mais sólida e confiável."
+      ],
+      "conditional": [
+        "Diferenças salariais causadas por falta de clareza nas descrições de cargo ou por negociações antigas mal documentadas podem ser resolvidas com uma explicação simples sobre o histórico da empresa. O diálogo aberto esclarece o contexto sem gerar custos imediatos.",
+        "Por outro lado, discrepâncias graves em que funcionários com a mesma senioridade e desempenho recebem valores muito diferentes exigem um **ajuste** salarial real. Nesses casos, apenas explicar o problema não basta; é preciso investir recursos para corrigir a injustiça.",
+        "**Portanto**, a organização deve usar o período de transição para separar o que é mero mal-entendido do que constitui uma falha estrutural remuneração. Resolver as distorções antes da abertura externa protege a credibilidade institucional."
+      ]
+    }
+  },
+  {
+    "slug": "community-project-funding",
+    "title": "Financiamento de projeto comunitário",
+    "prompt": "Uma equipe de voluntários mantém uma ferramenta gratuita de orçamento para pequenos grupos comunitários. Uma verba pode pagar dois mantenedores experientes por um ano ou financiar treinamento e suporte para um grupo maior de novos colaboradores. Qual deve financiar?",
+    "conditionalPrompt": "Decida se o problema imediato é excesso de trabalho para a equipe atual ou poucas pessoas capazes de assumir.",
+    "options": [
+      {
+        "label": "Mantenedores experientes",
+        "description": "Dar a duas pessoas tempo protegido para lidar com suporte e melhorias, embora o projeto possa continuar dependendo delas no fim."
+      },
+      {
+        "label": "Novos colaboradores",
+        "description": "Executar um programa estruturado e emparelhar participantes com voluntários, exigindo tempo até que muitos possam compartilhar o trabalho."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["suporte", "apoio técnico prestado aos usuários", "O suporte técnico garantiu a estabilidade do sistema."],
+        ["treinamento", "preparação prática de novos membros", "O treinamento intensivo acelerou a integração da equipe."],
+        ["demanda", "procurou ou exigência por serviços", "A demanda por novas funções cresceu muito este mês."],
+        ["contribuição", "participação ativa em um projeto", "Cada contribuição voluntária é muito valiosa para nós."]
+      ],
+      "phrasalVerbs": [
+        ["dar conta de", "conseguir realizar todas as tarefas", "Dois mantenedores sozinhos não conseguem dar conta de toda a demanda."],
+        ["levar em conta", "considerar um fator relevante", "Precisamos levar em conta a sustentabilidade a longo prazo."],
+        ["contar com", "depender da ajuda de alguém", "O projeto precisa contar com uma comunidade ativa."],
+        ["levar a cabo", "concluir um plano com sucesso", "Vamos levar a cabo este programa de capacitação."]
+      ],
+      "adjectives": [
+        ["sustentável", "que se mantém ao longo do tempo", "Precisamos criar um modelo financeiro sustentável."],
+        ["experiente", "que tem muita prática em uma área", "Mantenedores experientes resolvem bugs rapidamente."],
+        ["disponível", "que está pronto para ser usado", "Há pouco tempo disponível para novos projetos."],
+        ["eficaz", "que produz o efeito desejado", "O treinamento estruturado provou ser muito eficaz."]
+      ],
+      "connectors": [
+        ["portanto", "indica consequência lógica", "O projeto cresceu; portanto, precisamos de mais braços."],
+        ["no entanto", "indica oposição ou contraste", "A verba é útil; no entanto, o prazo é curto."],
+        ["além disso", "indica acréscimo de argumento", "O curso atrai voluntários; além disso, descentraliza o poder."],
+        ["por conseguinte", "indica consequência direta", "O suporte falhou; por conseguinte, os usuários reclamaram."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Garantir dois mantenedores experientes com tempo dedicado assegura a estabilidade imediata da ferramenta comunitária. Com dedicação exclusiva, eles conseguem corrigir falhas urgentes e implementar melhorias cruciais. **Portanto**, a qualidade do serviço permanece alta durante todo o ano de financiamento.",
+        "**No entanto**, essa escolha mantém a vulnerabilidade central do projeto na dependência de poucas pessoas. Se a verba acabar e nenhum novo voluntário tiver sido integrado, a sustentabilidade futura estará em risco. Por isso, a gestão precisa planejar o pós-financiamento.",
+        "Em suma, a prioridade máxima é manter a ferramenta funcionando sem interrupções para os usuários. A experiência técnica reduz o risco de colapso operacional a curto prazo. O investimento direto na manutenção protege o valor já construído."
+      ],
+      "b": [
+        "Investir no **treinamento** de novos colaboradores descentraliza o conhecimento e fortalece a comunidade em torno do projeto. Criar uma base maior de pessoas capazes de assumir tarefas garante autonomia e longevidade. **Além disso**, reduz a sobrecarga histórica sobre os mantenedores originais.",
+        "Por um lado, esse processo exige paciência, pois leva tempo até que os iniciantes alcancem autonomia plena. **No entanto**, o retorno desse investimento supera a dependência de um grupo restrito. A ferramenta ganha resiliência estrutural.",
+        "Em conclusão, apostar na expansão da comunidade é a única forma de garantir um futuro verdadeiramente **sustentável**. Compartilhar a responsabilidade técnica distribui o peso do trabalho voluntário. A base de contribuintes torna-se mais forte e diversificada."
+      ],
+      "conditional": [
+        "Se o problema imediato for o excesso de trabalho urgente e a iminência de paralisação do sistema, contratar mantenedores experientes é a única saída viável. Eles entregam resultados rápidos e evitam que a ferramenta fique fora do ar.",
+        "Por outro lado, se a ferramenta funciona bem no dia a dia, mas a equipe original está esgotada pela falta de sucessores, o foco deve mudar para o **treinamento**. O gargalo real é a ausência de novas pessoas capazes de assumir a responsabilidade.",
+        "**Portanto**, a decisão exige diagnosticar se a crise é de estabilidade técnica ou de escassez de capital humano. O financiamento deve atacar a ferida mais aberta no momento presente. Cada cenário **demanda** uma estratégia distinta de alocação de recursos."
+      ]
+    }
+  },
+  {
+    "slug": "local-news-funding",
+    "title": "Financiamento de jornalismo local",
+    "prompt": "Uma redação local precisa de renda confiável para reportagens sobre a câmara municipal. Deve tornar seu trabalho gratuito usando uma subvenção de fundação de um ano ou financiar o serviço por meio de assinaturas que dão aos leitores pagantes a maioria dos artigos?",
+    "conditionalPrompt": "Diga o que o convenceria de que a opção gratuita é independente ou a opção paga continua sendo um serviço público.",
+    "options": [
+      {
+        "label": "Subvenção de fundação",
+        "description": "Deixar todas as reportagens abertas e concordar com proteções escritas para decisões editoriais; a redação precisará de outra fonte de fundo após um ano."
+      },
+      {
+        "label": "Modelo de assinaturas",
+        "description": "Manter avisos públicos gratuitos e colocar a maioria das reportagens atrás de um paywall; a renda cresce apenas se leitores virarem assinantes."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["assinatura", "contrato de acesso regular a conteúdos", "O número de assinaturas digitais dobrou este ano."],
+        ["subvenção", "ajuda financeira concedida por instituição", "A subvenção permitiu cobrir as reuniões da câmara."],
+        ["independência", "liberdade de ação e pensamento editorial", "A independência jornalística é um valor inegociável."],
+        ["comunidade", "grupo de pessoas que vivem na mesma região", "A comunidade local precisa de informações confiáveis."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar um fator relevante", "É preciso levar em conta a saúde financeira do jornal."],
+        ["contar com", "depender de apoio financeiro ou social", "O projeto não pode contar apenas com doações."],
+        ["vir à tona", "tornar-se público ou evidente", "Os conflitos de interesse acabaram por vir à tona."],
+        ["levar a cabo", "realizar uma investigação até o fim", "Os jornalistas vão levar a cabo esta reportagem investigativa."]
+      ],
+      "adjectives": [
+        ["independente", "que não depende de influências externas", "Uma imprensa livre deve ser totalmente independente."],
+        ["essencial", "que é fundamental para a sobrevivência", "O jornalismo investigativo é essencial para a democracia."],
+        ["acessível", "que está ao alcance de todos", "A informação pública precisa ser acessível a qualquer cidadão."],
+        ["vulnerável", "que está sujeito a riscos ou pressões", "Sem receita garantida, a redação fica muito vulnerável."]
+      ],
+      "connectors": [
+        ["portanto", "indica consequência lógica", "O acesso é livre; portanto, mais pessoas se informam."],
+        ["no entanto", "indica oposição ou contraste", "A verba ajuda; no entanto, dura apenas doze meses."],
+        ["além disso", "indica acréscimo de argumento", "O paywall gera receita; além disso, valoriza o conteúdo."],
+        ["por conseguinte", "indica consequência direta", "O subsídio acabou; por conseguinte, o jornal enfrentou crise."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Garantir que todas as reportagens fiquem abertas ao público por meio de uma **subvenção** de fundação maximiza o impacto cívico do jornalismo. Com acesso livre, nenhum cidadão fica excluído do debate político municipal. **Portanto**, a informação cumpre seu papel democrático **essencial**.",
+        "**No entanto**, essa gratuidade tem prazo de validade e expõe a redação a uma crise financeira abrupta após doze meses. A dependência de editais exige busca constante por novas fontes de apoio. Por isso, a estabilidade a longo prazo fica comprometida.",
+        "Em suma, o benefício social imediato de uma imprensa aberta justifica o risco financeiro temporário. O jornal atinge o maior número possível de leitores quando não há barreiras econômicas. A prioridade é informar a **comunidade** sem restrições."
+      ],
+      "b": [
+        "O modelo de assinaturas cria uma fonte de receita autossustentável que liberta a redação de doadores externos ou governamentais. Ao cobrar pelo conteúdo, o jornal valoriza o trabalho investigativo de seus profissionais. **Além disso**, garante previsibilidade orçamentária para o futuro.",
+        "Por um lado, restringir o acesso à informação pode deixar parte da população desinformada sobre decisões cruciais da cidade. **No entanto**, manter avisos essenciais gratuitos mitiga esse efeito excludente. O equilíbrio financeiro permite a sobrevivência da instituição.",
+        "Em conclusão, um jornal financeiramente viável é mais útil à **comunidade** do que um veículo falido. O pagamento voluntário pelos leitores valida a relevância do jornalismo produzido. A **independência** econômica assegura a continuidade das fiscalizações políticas."
+      ],
+      "conditional": [
+        "O que me convenceria de que a opção gratuita é realmente **independente** seria a existência de um fundo patrimonial gerido por um conselho comunitário sem laços políticos. A proteção contratual contra interferências da fundação é indispensável.",
+        "Por outro lado, para que a opção paga continue sendo um serviço público, o jornal precisa garantir que investigações de interesse geral fiquem abertas a todos. O paywall não pode bloquear reportagens vitais para a saúde e a segurança pública.",
+        "**Portanto**, a escolha depende de como cada modelo protege o interesse coletivo acima do lucro ou da conveniência temporária. A transparência nos critérios editoriais é a garantia definitiva de credibilidade. Ambas as vias exigem salvaguardas rigorosas contra abusos."
+      ]
+    }
+  },
+  {
+    "slug": "returnable-takeaway-containers",
+    "title": "Embalagens retornáveis para viagem",
+    "prompt": "Um grupo de lojas de comida para viagem quer reduzir o desperdício de embalagens. Deve adotar recipientes retornáveis compartilhados com depósito, ou mudar para um formato único reciclável que os clientes possam colocar em lixeiras locais?",
+    "conditionalPrompt": "Nomeie a evidência de devolução ou reciclagem que tornaria um sistema mais credível do que o outro.",
+    "options": [
+      {
+        "label": "Recipientes com depósito",
+        "description": "Cobrar um depósito reembolsável e deixar clientes devolverem recipientes em qualquer loja do grupo, dividindo custos de lavagem."
+      },
+      {
+        "label": "Material reciclável único",
+        "description": "Usar um material de embalagem aceito localmente com instruções claras de descarte, sem exigir que clientes tragam os recipientes de volta."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["embalagem", "recipiente usado para guardar produtos", "A embalagem ecológica reduziu o lixo na rua."],
+        ["desperdício", "ato de desperdiçar recursos ou materiais", "Precisamos combater o desperdício de plástico."],
+        ["coleta", "recolha de materiais para reaproveitamento", "A coleta seletiva funciona bem neste bairro."],
+        ["sustentabilidade", "capacidade de sustentar processos ecológicos", "A sustentabilidade do negócio depende de adesão real."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar um fator importante na decisão", "É preciso levar em conta a comodidade do cliente."],
+        ["dar conta de", "suportar o volume de trabalho necessário", "As lojas não conseguem dar conta de lavar tantas embalagens."],
+        ["contar com", "depender da colaboração das pessoas", "O sistema vai contar com a honestidade dos consumidores."],
+        ["levar a cabo", "executar um projeto até o fim", "Vamos levar a cabo esta campanha ambiental."]
+      ],
+      "adjectives": [
+        ["retornável", "que pode ser devolvido e reutilizado", "O uso de copos retornáveis diminuiu o lixo."],
+        ["reciclável", "que pode passar por reciclagem", "Todo o papelão utilizado é totalmente reciclável."],
+        ["prático", "que facilita a realização de tarefas", "O modelo reciclável é muito mais prático para o dia a dia."],
+        ["efetivo", "que produz o resultado esperado", "A política de devolução precisa ser efetiva."]
+      ],
+      "connectors": [
+        ["portanto", "indica consequência lógica", "O custo é alto; portanto, precisamos de uma taxa."],
+        ["no entanto", "indica oposição ou contraste", "A ideia é ecológica; no entanto, exige esforço do cliente."],
+        ["além disso", "indica acréscimo de argumento", "O material é leve; além disso, reduz emissões de carbono."],
+        ["por conseguinte", "indica consequência direta", "A taxa foi paga; por conseguinte, o depósito será devolvido."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A adoção de recipientes retornáveis com depósito reembolsável ataca diretamente a raiz do **desperdício** de embalagens descartáveis. Compartilhar a infraestrutura de lavagem entre várias lojas torna o processo viável e organizado. **Portanto**, a economia circular ganha força real no comércio local.",
+        "**No entanto**, esse sistema depende da boa vontade do consumidor em lembrar de devolver os itens após o uso. Se a taxa de retorno for baixa, as lojas acumularão prejuízos operacionais consideráveis. Por isso, a conveniência da devolução é um fator crítico.",
+        "Em suma, o esforço logístico vale a pena pelo impacto ambiental positivo da reutilização constante. Substituir o descartável exige mudanças de hábito que o mercado deve liderar. A responsabilidade ecológica supera o incômodo temporário da devolução."
+      ],
+      "b": [
+        "Mudar para um formato único de **embalagem** **reciclável** elimina a necessidade de logística reversa e devolução. Os clientes descartam o material nas lixeiras comuns de **coleta** seletiva que já utilizam em casa. **Além disso**, simplifica drasticamente a operação das lojas.",
+        "Por um lado, sabemos que grande parte do material **reciclável** ainda acaba em aterros por falhas na **coleta** municipal. **No entanto**, instruções claras e padronização ajudam a mitigar esse problema estrutural. O formato único oferece uma solução prática e imediata.",
+        "Em conclusão, a praticidade do descarte comum garante uma adesão muito maior por parte do público. Reduzir a fricção do processo é essencial para obter resultados em larga escala. A simplicidade operativa viabiliza a transição ecológica."
+      ],
+      "conditional": [
+        "A evidência que tornaria o sistema **retornável** mais credível seria uma taxa de devolução superior a oitenta por cento comprovada por dados auditados das lojas. Se as pessoas realmente devolvem os recipientes, o modelo circular prova seu valor ambiental.",
+        "Por outro lado, para que o sistema de material **reciclável** único seja mais credível, precisaríamos de laudos oficiais confirmando que as usinas locais realmente reciclam aquele polímero específico. De nada adianta **embalagem** **reciclável** sem infraestrutura real de reaproveitamento.",
+        "**Portanto**, a credibilidade de qualquer escolha depende de dados transparentes sobre o comportamento real do consumidor e da indústria de reciclagem. A intenção verde precisa ser validada por números concretos e verificáveis."
+      ]
+    }
+  },
+  {
+    "slug": "ai-feedback-in-assessed-writing",
+    "title": "Feedback de IA em redações avaliadas",
+    "prompt": "Uma faculdade quer que trabalhos escritos mostrem o que os alunos conseguem fazer. Deve permitir que alunos peçam feedback a uma ferramenta de IA em seus próprios rascunhos e divulguem esse uso, ou reservar ferramentas de IA para prática fora de trabalhos avaliados?",
+    "conditionalPrompt": "Decida o que a tarefa deve medir e qual evidência tornaria o processo de escrita visível.",
+    "options": [
+      {
+        "label": "Uso divulgado de IA",
+        "description": "Alunos escrevem o rascunho sozinhos, podem pedir comentários, anexar o texto e explicar quais sugestões utilizaram."
+      },
+      {
+        "label": "Prática isolada",
+        "description": "Alunos praticam com ferramentas em outros momentos; para trabalhos com nota, redigem e revisam de forma independente sob regras combinadas."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["rascunho", "primeira versão escrita de um texto", "O rascunho inicial continha várias falhas de coesão."],
+        ["avaliação", "processo de medir o aprendizado do aluno", "A avaliação final exigiu dedicação intensa da turma."],
+        ["autenticidade", "qualidade do que é autêntico e original", "A autenticidade do texto foi comprovada na defesa."],
+        ["ferramenta", "recurso tecnológico usado para um fim", "A ferramenta de IA ajudou a melhorar a clareza."]
+      ],
+      "phrasalVerbs": [
+        ["levar em conta", "considerar um fator importante no trabalho", "O professor deve levar em conta o esforço de revisão."],
+        ["dar conta de", "conseguir lidar com uma demanda compleja", "Os alunos não conseguem dar conta de tantas normas sozinhos."],
+        ["contar com", "utilizar um recurso externo como apoio", "Podemos contar com a tecnologia para sugerir melhorias."],
+        ["levar a cabo", "executar uma tarefa até o fim com rigor", "Vamos levar a cabo esta pesquisa acadêmica sem atalhos."]
+      ],
+      "adjectives": [
+        ["autêntico", "que é genuíno e criado pelo próprio autor", "Queremos ver o estilo autêntico de cada estudante."],
+        ["transparente", "que revela claramente os métodos usados", "O processo de escrita deve ser totalmente transparente."],
+        ["rigoroso", "que segue normas acadêmicas estritas", "O critério de avaliação precisa ser rigoroso."],
+        ["adequado", "que atende perfeitamente aos objetivos", "A regra proposta é adequada ao ensino superior."]
+      ],
+      "connectors": [
+        ["portanto", "indica consequência lógica", "A IA foi usada; portanto, o aluno deve declará-lo."],
+        ["no entanto", "indica oposição ou contraste", "A tecnologia é útil; no entanto, pode gerar dependência."],
+        ["além disso", "indica acréscimo de argumento", "O rascunho melhora; além disso, ensina uso ético."],
+        ["por conseguinte", "indica consequência direta", "O limite foi violado; por conseguinte, a nota foi anulada."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Permitir que os alunos utilizem ferramentas de IA para obter feedback nos rascunhos, desde que haja divulgação completa, reflete a realidade do mercado moderno. O estudante aprende a interagir criticamente com a tecnologia sem perder a autoria. **Portanto**, a faculdade prepara o aluno para o futuro profissional.",
+        "**No entanto**, monitorar o grau exato de interferência da inteligência artificial em cada texto pode sobrecarregar os docentes. A linha entre sugestão estilística e reescrita automática é frequentemente tênue. Por isso, exigem-se diretrizes muito claras de uso.",
+        "Em suma, abraçar a tecnologia de forma **transparente** é mais eficaz do que tentar bani-la em vão. Educar para o uso ético supera a proibição cega. O processo de escrita torna-se colaborativo, reflexivo e contemporâneo."
+      ],
+      "b": [
+        "Reservar o uso de inteligência artificial apenas para momentos de prática extracurricular protege a validade da **avaliação** acadêmica. Para trabalhos com nota, o estudante deve demonstrar sua capacidade intelectual sem interferências externas. **Além disso**, garante-se a equidade entre todos os inscritos.",
+        "Por um lado, essa proibição pode parecer anacrônica em um mundo dominado por ferramentas digitais avançadas. **No entanto**, a escrita autônoma continua sendo um exercício cognitivo fundamental. O desenvolvimento mental exige esforço próprio e genuíno.",
+        "E conclusão, preservar espaços livres de IA assegura que a faculdade meça o talento real do aluno, e não sua habilidade de prompt. A **avaliação** justa exige condições controladas de produção textual. A integridade acadêmica permanece inegociável."
+      ],
+      "conditional": [
+        "A tarefa escolar deve medir a capacidade de argumentação crítica e a clareza de raciocínio do próprio aluno. A evidência que tornaria o processo de escrita visível seria a entrega obrigatória do histórico de revisões e do diálogo com a IA.",
+        "Por outro lado, se o aluno apenas aceitar correções automáticas sem refletir sobre elas, o aprendizado real desaparece. O **rascunho** comentado só tem valor pedagógico se o estudante explicar com suas palavras por que aceitou ou rejeitou cada sugestão.",
+        "**Portanto**, a decisão depende de a faculdade priorizar o produto final polido ou a compreensão metacognitiva do processo. Tornar a escrita visível exige evidências claras do pensamento crítico, seja com ou sem apoio tecnológico."
+      ]
+    }
+  },
+  {
+    "slug": "phones-at-school",
+    "title": "Uso de celulares na escola",
+    "prompt": "Uma escola de ensino medio esta perdendo tempo de aula por causa de celulares. Ela deve guardar os aparelhos durante todo o periodo escolar ou deixar que os professores decidam quando guarda-los nas aulas, permitindo o uso nos intervalos?",
+    "conditionalPrompt": "Identifique onde o uso do celular causa mais interrupcao e o que mostraria que uma regra mais restrita esta funcionando.",
+    "options": [
+      {
+        "label": "Armazenamento total",
+        "description": "Manter os celulares em guarda segura desde a chegada ate a saida. Encaminhar recados familiares urgentes pela secretaria da escola e abrir excecoes de acessibilidade combinadas."
+      },
+      {
+        "label": "Autonomia docente",
+        "description": "Dar aos professores uma regra basica comum e permitir o uso dos celulares para tarefas especificas. Os alunos podem usar seus proprios aparelhos durante os intervalos."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["desatencao", "Falta de foco ou concentracao em uma atividade.", "A desatencao dos alunos aumentou muito com a chegada dos smartphones."],
+        ["norma", "Regra estabelecida para reger o comportamento em uma instituicao.", "Essa nova norma escolar visa melhorar o rendimento academico de todos."],
+        ["intervalo", "Pequeno descanso entre periodos de aula.", "Os estudantes aproveitam o intervalo para conversar e lanchar no patio."],
+        ["aparelho", "Dispositivo eletronico ou mecanico.", "Cada aluno deve guardar seu aparelho na mochila antes da primeira aula."]
+      ],
+      "phrasalVerbs": [
+        ["entregar", "Dar algo a alguem para guarda ou controle.", "E obrigatorio entregar o telefone na entrada da instituicao."],
+        ["restringir", "Limitar ou reduzir o alcance de algo.", "Precisamos restringir o uso de telas durante os momentos pedagogicos."],
+        ["atrapalhar", "Causar perturbacao ou obstaculo.", "Notificacoes constantes acabam por atrapalhar o raciocinio logico."],
+        ["fiscalizar", "Inspecionar rigorosamente o cumprimento de regras.", "A coordenacao precisa fiscalizar os corredores para garantir a ordem."]
+      ],
+      "adjectives": [
+        ["rigoroso", "Que segue regras de maneira estrita.", "O colegio adotou um posicionamento rigoroso quanto ao porte de eletronicos."],
+        ["flexivel", "Que se adapta facilmente a diferentes circunstancias.", "Uma abordagem mais flexivel permite atender as necessidades pedagogicas."],
+        ["dispersivo", "Que causa distracao ou desvio de foco.", "A presenca de redes sociais torna o ambiente excessivamente dispersivo."],
+        ["urgente", "Que exige solucao imediata.", "Caso ocorra algum imprevisto urgente, a familia avisara a secretaria."]
+      ],
+      "connectors": [
+        ["por outro lado", "Expressa uma oposicao ou contraste de ideias.", "Por outro lado, alguns pais exigem contato direto com os filhos."],
+        ["em contrapartida", "Indica uma compensacao ou contraponto a um argumento anterior.", "Em contrapartida, a autonomia docente valoriza o julgamento profissional."],
+        ["sendo assim", "Indica uma decorrencia logica do que foi dito.", "Sendo assim, o recolhimento geral parece ser a medida mais prudente."],
+        ["alem disso", "Adiciona um argumento novo ao discurso.", "Alem disso, evitam-se casos de cyberbullying dentro do ambiente escolar."]
+      ]
+    },
+    "models": {
+      "a": [
+        "A implementacao de uma **norma** de armazenamento total dos telefones celulares na escola representa uma decisao necessaria para combater a crescente **desatencao** dos alunos durante as atividades academicas diarias.",
+        "**Sendo assim**, cada estudante deve **entregar** seu **aparelho** logo na chegada, garantindo que qualquer contato familiar ocorra exclusivamente por meio da secretaria em casos de situacoes realmente urgentes e imprevisiveis.",
+        "**Alem disso**, adotar um criterio tao **rigoroso** protege o ambiente de aprendizagem contra o comportamento **dispersivo**, assegurando que o foco pedagogico permaneca inteiramente voltado para a construcao coletiva do conhecimento."
+      ],
+      "b": [
+        "Conceder autonomia aos professores para definirem o uso pedagogico dos aparelhos celulares promove uma integracao equilibrada entre a tecnologia moderna e as exigencias tradicionais do plano curricular vigente.",
+        "**Por outro lado**, os estudantes mantêm o direito de utilizar seus dispositivos durante o **intervalo**, o que preserva momentos essenciais de socializacao livre e descanso mental entre as aulas intensas.",
+        "**Em contrapartida**, essa flexibilidade exige que a equipe escolar saiba **fiscalizar** adequadamente o cumprimento combinado, evitando que a liberdade concedida resulte em prejuizos para o rendimento coletivo da turma."
+      ],
+      "conditional": [
+        "A escolha entre o bloqueio total e a autonomia docente depende fundamentalmente da gravidade da **desatencao** observada em cada turma especifica ao longo do semestre letivo corrente.",
+        "Caso o corpo docente consiga **restringir** o uso digital apenas a tarefas educacionais produtivas, a abordagem **flexivel** funcionara muito bem sem comprometer o tempo dedicado as explicacoes.",
+        "**Sendo assim**, indicadores claros de melhora no desempenho avaliativo e na participacao em sala provarao se a estrategia escolhida foi realmente adequada para aquela comunidade."
+      ]
+    }
+  },
+  {
+    "slug": "scholarship-depth-or-reach",
+    "title": "Bolsa integral ou parcial",
+    "prompt": "Uma faculdade tem verba para duas bolsas de estudo integrais para estudantes de baixa renda ou para oito auxílios parciais cobrindo um quarto da mensalidade. O que tornaria o diploma mais acessível?",
+    "conditionalPrompt": "Decida qual valor realmente muda a capacidade do estudante de se matricular e concluir o curso.",
+    "options": [
+      {
+        "label": "Cobertura integral",
+        "description": "Pagar todo o custo para dois estudantes carentes."
+      },
+      {
+        "label": "Auxílio parcial",
+        "description": "Distribuir a ajuda para um grupo maior de alunos."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["mensalidade", "valor pago mensalmente por um serviço educacional.", "A mensalidade subiu muito neste ano letivo."],
+        ["carentes", "pessoas que necessitam de assistência financeira ou social.", "A instituição prioriza o atendimento aos jovens carentes."],
+        ["verba", "recurso financeiro destinado a um fim específico.", "A verba pública foi direcionada para a educação."],
+        ["matrícula", "ato de registrar a entrada em um curso.", "O prazo de matrícula termina na próxima sexta-feira."]
+      ],
+      "phrasalVerbs": [
+        ["arcar com", "responsabilizar-se pelo pagamento de algo.", "Muitas famílias não conseguem arcar com os custos."],
+        ["contar com", "depender de algo ou alguém para obter apoio.", "Podemos contar com novos patrocínios no próximo semestre."],
+        ["abrir mão", "renunciar a algo voluntariamente.", "Não podemos abrir mão de uma educação inclusiva."],
+        ["levar em conta", "considerar um fator importante em uma decisão.", "É preciso levar em conta a realidade econômica."]
+      ],
+      "adjectives": [
+        ["inelegível", "que não preenche os requisitos necessários.", "O candidato foi considerado inelegível para o subsídio."],
+        ["abrangente", "que inclui muitos elementos ou pessoas.", "Precisamos de uma política mais abrangente para todos."],
+        ["decisivo", "que tem importância fundamental para um resultado.", "Esse apoio financeiro foi decisivo para minha formação."],
+        ["insustentável", "que não pode ser mantido nas condições atuais.", "O modelo atual tornou-se insustentável para os alunos."]
+      ],
+      "connectors": [
+        ["por outro lado", "expressão usada para introduzir um contraponto.", "Por outro lado, o alcance social seria menor."],
+        ["em contrapartida", "indica oposição ou compensação em relação a algo.", "Em contrapartida, muitos ficariam sem qualquer auxílio."],
+        ["visto que", "indica causa ou justificativa para um fato.", "O projeto avançou, visto que havia recursos suficientes."],
+        ["sendo assim", "conclui um raciocínio com base no que foi dito.", "Sendo assim, devemos priorizar os casos mais graves."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Garantir bolsas integrais para poucos alunos representa uma estratégia mais justa para quem realmente precisa de apoio total para estudar. **Visto que** a **mensalidade** consome toda a renda familiar, qualquer valor parcial ainda deixaria o estudante vulnerável à evasão escolar. **Sendo assim**, concentrar os recursos elimina a barreira financeira completamente.",
+        "**Por outro lado**, oferecer auxílios menores criaria uma ilusão de ajuda, pois o restante da dívida continuaria impagável. A universidade deve **arcar com** a totalidade para assegurar que esses jovens concluam o curso sem dívidas esmagadoras. É preciso **levar em conta** que a permanência depende de estabilidade.",
+        "Em suma, a profundidade do impacto supera a quantidade de beneficiados quando falamos de transformação social profunda. Essa escolha garante que a educação superior seja verdadeiramente viabilizada para aqueles que jamais entrariam na universidade sem ajuda total."
+      ],
+      "b": [
+        "Distribuir auxílios parciais para um grupo maior maximiza o impacto social dos recursos disponíveis na instituição de ensino. **Sendo assim**, mais estudantes conseguem o alívio financeiro necessário para equilibrar suas contas e continuar frequentando as aulas regularmente. A universidade atende muito mais famílias dessa forma.",
+        "**Por outro lado**, focar apenas em duas bolsas integrais deixaria centenas de outros candidatos qualificados totalmente desamparados pelo fundo. Podemos **contar com** o esforço próprio dos alunos para complementar o restante da **mensalidade** com trabalho ou outras fontes. O importante é ampliar o acesso democrático.",
+        "Em conclusão, atender um número superior de pessoas promove uma justiça distributiva mais alinhada com as demandas da sociedade contemporânea. Essa abordagem garante que a ajuda chegue a quem realmente deseja vencer barreiras."
+      ],
+      "conditional": [
+        "A decisão entre ajuda integral ou parcial depende fundamentalmente do perfil socioeconômico predominante dos candidatos inscritos no processo seletivo atual. **Sendo assim**, se a maioria absoluta não possui nenhuma condição de pagar, apenas a bolsa integral resolve o problema. Caso contrário, auxílios parciais funcionam perfeitamente.",
+        "**Por outro lado**, é preciso avaliar se existem fontes complementares de renda que permitam ao estudante cobrir o saldo remanescente da **mensalidade**. **Visto que** cada curso exige dedications diferentes, a viabilidade de trabalhar paralelamente muda completamente o cenário de apoio financeiro necessário. **Levar em conta** a realidade local é essencial.",
+        "Portanto, a política de bolsas deve ser flexível e adaptada às circunstâncias concretas de vulnerabilidade de cada turma específica na instituição. Essa análise detalhada assegura que nenhum recurso público ou privado seja desperdiçado em ações ineficazes."
+      ]
+    }
+  },
+  {
+    "slug": "capstone-portfolio-or-team-project",
+    "title": "Portfólio individual ou projeto em equipe",
+    "prompt": "Uma faculdade redesenha sua avaliação final. Os alunos devem enviar um portfólio individual ou equipes devem entregar um projeto real para uma organização local documentando a contribuição de cada um?",
+    "conditionalPrompt": "Decida onde o trabalho compartilhado oferece melhores evidências de habilidade e como tornar as contribuições individuais visíveis.",
+    "options": [
+      {
+        "label": "Portfólio individual",
+        "description": "Cada aluno seleciona trabalhos e defende uma escolha em entrevista."
+      },
+      {
+        "label": "Projeto em equipe",
+        "description": "Pequenos grupos entregam demanda real com registro de papéis."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["desempenho", "forma como alguém realiza uma tarefa ou trabalho.", "O desempenho acadêmico superou todas as expectativas."],
+        ["equipe", "grupo de pessoas que trabalham juntas em um objetivo.", "A equipe apresentou resultados excelentes no projeto."],
+        ["avaliação", "processo de julgar o valor ou o resultado de algo.", "A avaliação final ocorrerá no final deste mês."],
+        ["competência", "capacidade de realizar algo com eficácia e conhecimento.", "Essa tarefa exige competência técnica avançada."]
+      ],
+      "phrasalVerbs": [
+        ["levar adiante", "continuar ou concluir um plano ou projeto iniciado.", "Precisamos levar adiante essa proposta inovadora."],
+        ["fazer jus", "merecer algo devido ao esforço ou qualidade demonstrada.", "O relatório final faz jus ao esforço investido."],
+        ["dar conta", "conseguir realizar uma tarefa difícil ou volumosa.", "Nem todos conseguem dar conta de tantas demandas."],
+        ["levar em conta", "considerar aspectos relevantes antes de decidir.", "Devemos levar em conta a opinião dos colegas."]
+      ],
+      "adjectives": [
+        ["rigoroso", "que segue regras estritas e padrões elevados.", "O processo seletivo foi extremamente rigoroso."],
+        ["colaborativo", "caracterizado pela cooperação entre várias pessoas.", "O ambiente de trabalho tornou-se muito mais colaborativo."],
+        ["individual", "referente a uma única pessoa, de forma isolada.", "Cada participante recebeu uma orientação individual."],
+        ["transparente", "que é claro, honesto e fácil de compreender.", "A gestão precisa ser transparente com todos."]
+      ],
+      "connectors": [
+        ["portanto", "indica uma conclusão lógica derivada de fatos anteriores.", "O prazo é curto; portanto, precisamos acelerar."],
+        ["além disso", "adiciona um argumento novo que reforça o anterior.", "O método é eficiente; além disso, custa menos."],
+        ["por conseguinte", "indica consequência direta de uma ação anterior.", "Houve falha na comunicação e, por conseguinte, atrasos."],
+        ["a despeito de", "indica concessão ou oposição a um fato.", "A despeito das dificuldades, o trabalho foi concluído."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Adotar um portfólio **individual** assegura que o mérito acadêmico pertença exclusivamente ao estudante avaliado. Sendo assim, evitamos injustiças comuns em trabalhos coletivos onde alguns membros trabalham menos. A entrevista final permite comprovar o domínio real do conteúdo.",
+        "**Além disso**, a **avaliação** **individual** testa a capacidade de reflexão crítica sem interferências externas. O aluno demonstra autonomia intelectual e responsabilidade total sobre suas escolhas metodológicas. **Portanto**, o resultado reflete fielmente sua **competência** profissional.",
+        "Em suma, o modelo garante clareza absoluta sobre o conhecimento adquirido durante a graduação. Essa abordagem protege o estudante de ser prejudicado por dinâmicas disfuncionais de grupo."
+      ],
+      "b": [
+        "Realizar projetos práticos em **equipe** prepara os estudantes para os desafios reais do mercado corporativo moderno. Sendo assim, eles aprendem a negociar conflitos, dividir tarefas complexas e entregar resultados tangíveis para clientes reais. A experiência coletiva é insubstituível.",
+        "**Por conseguinte**, a universidade forma profissionais mais adaptáveis e conscientes das demandas sociais contemporâneas. **Além disso**, o portfólio isolado não consegue mensurar habilidades interpessoais fundamentais para qualquer carreira de sucesso hoje.",
+        "Em conclusão, o trabalho em grupo reflete o funcionamento do mundo profissional atual com precisão. Essa vivência prática enriquece o currículo de maneira incomparável."
+      ],
+      "conditional": [
+        "A escolha entre portfólio ou projeto em **equipe** depende dos objetivos específicos de aprendizagem do curso em questão. Sendo assim, se a ênfase for técnica e teórica, o formato **individual** funciona melhor. Caso contrário, a vivência coletiva é superior.",
+        "A despeito das dificuldades de medição, projetos reais trazem um valor inegável para a formação cidadã do aluno. **Portanto**, cabe à instituição estruturar critérios rigorosos para que a contribuição de cada membro seja devidamente identificada e pontuada.",
+        "Em suma, combinar ambos os formatos pode ser a solução ideal para atender a todas as exigências pedagógicas da graduação moderna."
+      ]
+    }
+  },
+  {
+    "slug": "conference-working-language",
+    "title": "Idioma único ou interpretação",
+    "prompt": "Uma conferência regional pode usar inglês em todas as sessões ou permitir que falantes usem seu idioma financiando interpretação. O que tornaria o evento mais valioso?",
+    "conditionalPrompt": "Decida se a maior barreira afeta palestrantes ou público, e o que tornaria a interpretação viável.",
+    "options": [
+      {
+        "label": "Inglês universal",
+        "description": "Usar inglês para falas e discussões com ensaio prévio."
+      },
+      {
+        "label": "Múltiplos idiomas",
+        "description": "Permitir idioma nativo com interpretação simultânea."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["idioma", "sistema de comunicação verbal próprio de um povo.", "O domínio de outro idioma abre portas profissionais."],
+        ["plateia", "conjunto de pessoas que assistem a um evento ou espetáculo.", "A plateia aplaudiu o palestrante efusivamente."],
+        ["palestrante", "pessoa que faz uma apresentação ou palestra.", "O palestrante respondeu às perguntas do público."],
+        ["intérprete", "profissional que traduz a fala oral em tempo real.", "O intérprete facilitou a comunicação entre as delegações."]
+      ],
+      "phrasalVerbs": [
+        ["levar a cabo", "conduzir um plano ou evento até o fim com sucesso.", "A equipe conseguiu levar a cabo o congresso internacional."],
+        ["dar conta", "conseguir lidar com uma situação complexa ou exigente.", "O sistema de som não deu conta da demanda."],
+        ["fazer questão", "demonstrar forte interesse ou exigência por algo.", "Muitos pesquisadores fazem questão de falar português."],
+        ["levar em consideração", "analisar um aspecto importante antes de agir.", "Precisamos levar em consideração o conforto da plateia."]
+      ],
+      "adjectives": [
+        ["fluente", "que se expressa com facilidade e naturalidade.", "Ela é fluente em três línguas estrangeiras."],
+        ["complexo", "que tem muitas partes interligadas e difíceis de entender.", "O debate sobre políticas públicas tornou-se complexo."],
+        ["acessível", "que é fácil de alcançar, entender ou utilizar.", "O auditório precisa ser acessível para todos."],
+        ["limitado", "que tem restrições em sua extensão ou capacidade.", "O tempo para perguntas no painel foi limitado."]
+      ],
+      "connectors": [
+        ["por conseguinte", "indica uma consequência lógica de um fato anterior.", "Houve falha técnica e, por conseguinte, o som falhou."],
+        ["ao passo que", "indica simultaneidade ou contraste entre duas situações.", "Alguns preferem inglês, ao passo que outros exigem tradução."],
+        ["com efeito", "confirma ou reforça um argumento anterior.", "Com efeito, a participação aumentou significativamente."],
+        ["não obstante", "indica contraste ou ressalva, semelhante a apesar de.", "O custo era alto; não obstante, o projeto avançou."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Adotar o inglês como **idioma** único simplifica a logística e garante que todos participem do mesmo fluxo de debate. Sendo assim, eliminam-se barreiras técnicas complexas que costumam atrapalhar eventos acadêmicos de grande porte. A **plateia** e os convidados seguem uma única linha.",
+        "**Com efeito**, ensaiar previamente com os palestrantes eleva a qualidade das apresentações e reduz o nervosismo inicial. **Por conseguinte**, o evento flui de maneira uniforme, otimizando o tempo disponível para discussões profundas. Todos ganham em clareza.",
+        "Em suma, padronizar o **idioma** maximiza a eficiência e atrai um público global diversificado e conectado. Essa escolha prática fortalece a integração internacional da instituição organizadora."
+      ],
+      "b": [
+        "Permitir que cada pesquisador use seu **idioma** nativo garante maior precisão conceitual e profundidade nas discussões. Sendo assim, ninguém sofre limitações de expressão por falta de vocabulário avançado em línguas estrangeiras. A ciência ganha em autenticidade.",
+        "**Ao passo que** o inglês facilita a logística, ele exclui pensadores brilhantes que não dominam o **idioma** perfeitamente. **Com efeito**, investir em interpretação simultânea demonstra respeito pela diversidade cultural e intelectual da região.",
+        "Em conclusão, o esforço financeiro para viabilizar a tradução compensa amplamente pela riqueza do conteúdo apresentado. Essa abertura enriquece o diálogo regional de maneira duradoura."
+      ],
+      "conditional": [
+        "A escolha entre **idioma** único ou tradução depende essencialmente da diversidade linguística real dos participantes esperados no evento. Sendo assim, se a maioria domina o inglês, adotar um padrão universal é a decisão mais sensata.",
+        "**Não obstante**, caso o público regional sinta forte dificuldade, a interpretação torna-se obrigatória para garantir inclusão. **Com efeito**, avaliar o orçamento disponível e a capacidade técnica dos intérpretes é um passo fundamental antes de definir.",
+        "Portanto, equilibrar custos operacionais e conforto intelectual da **plateia** é o grande desafio dos organizadores modernos."
+      ]
+    }
+  },
+  {
+    "slug": "museum-return-or-shared-custody",
+    "title": "Devolução ou guarda compartilhada",
+    "prompt": "Um museu e a comunidade de origem concordam sobre o retorno de um objeto. Devem transferir a propriedade permanentemente ou adotar guarda compartilhada com exibições em ambos os locais?",
+    "conditionalPrompt": "Decida quais decisões a comunidade deve controlar e quais termos tornam a colaboração aceitável para ambos.",
+    "options": [
+      {
+        "label": "Transferência total",
+        "description": "Transferir propriedade e deixar comunidade decidir sobre o objeto."
+      },
+      {
+        "label": "Guarda compartilhada",
+        "description": "Definir responsabilidades e planejar exibições em ambos os lugares."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["patrimônio", "conjunto de bens de valor histórico, cultural ou material.", "O patrimônio cultural deve ser preservado para o futuro."],
+        ["propriedade", "direito legal de posse sobre algo.", "A propriedade da obra foi transferida formalmente."],
+        ["acordo", "entendimento ou contrato firmado entre partes.", "O acordo entre os museus beneficiou a comunidade."],
+        ["exibição", "ato de mostrar obras ou objetos ao público.", "A exibição temporária atraiu muitos visitantes."]
+      ],
+      "phrasalVerbs": [
+        ["abrir mão", "renunciar a um direito ou posse voluntariamente.", "O museu decidiu abrir mão de parte de seu acervo."],
+        ["levar em conta", "considerar fatores importantes na tomada de decisões.", "É preciso levar em conta os direitos ancestrais."],
+        ["entrar em acordo", "chegar a um entendimento mútuo após negociação.", "As instituições conseguiram entrar em acordo rapidamente."],
+        ["dar conta", "conseguir gerenciar uma responsabilidade complexa.", "A comunidade local vai dar conta da preservação."]
+      ],
+      "adjectives": [
+        ["legítimo", "que está de acordo com a lei ou a justiça.", "O pedido de restituição é totalmente legítimo."],
+        ["permanente", "que dura por tempo indeterminado ou para sempre.", "A transferência da posse foi definitiva e permanente."],
+        ["conjunto", "feito em colaboração por mais de uma parte.", "O planejamento conjunto evitou conflitos futuros."],
+        ["vulnerável", "que está exposto a riscos ou falta de proteção.", "O objeto histórico estava vulnerável a danos ambientais."]
+      ],
+      "connectors": [
+        ["por conseguinte", "indica consequência lógica de um fato anterior.", "Houve quebra de contrato e, por conseguinte, sanções."],
+        ["por outro lado", "introduz um argumento opuesto para ponderar o debate.", "Por outro lado, a guarda conjunta garante segurança."],
+        ["com efeito", "confirma a veracidade de um fato ou argumento.", "Com efeito, a devolução reparou uma injustiça histórica."],
+        ["não obstante", "indica ressalva ou oposição, equivalente a apesar de.", "O processo foi longo; não obstante, o resultado foi positivo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Transferir a **propriedade** permanentemente devolve o controle **legítimo** do **patrimônio** à comunidade de origem. Sendo assim, reparam-se injustiças históricas e garante-se autonomia total sobre o futuro da peça sagrada. Os herdeiros decidem como exibi-la.",
+        "**Com efeito**, **abrir mão** da posse colonial demonstra um compromisso ético real com a justiça cultural global. **Por conseguinte**, o museu central encerra um ciclo de apropriação indevida que durou décadas. A devolução total é imperativa.",
+        "Em suma, a soberania cultural da comunidade deve prevalecer sem restrições ou tutelas externas indesejadas. Essa atitude consolida uma nova era de respeito mútuo entre as instituições envolvidas."
+      ],
+      "b": [
+        "Estabelecer uma guarda compartilhada garante a preservação técnica adequada enquanto mantém o vínculo cultural ativo. Sendo assim, exposições conjuntas em ambos os locais educam públicos diversos sobre a história do artefato. A cooperação supera o conflito.",
+        "**Por outro lado**, a transferência total sem garantias de conservação pode expor o objeto a riscos ambientais graves. **Com efeito**, planejar regras claras de transporte e segurança protege o **patrimônio** histórico contra danos irreversíveis. O **acordo** **conjunto** é benéfico.",
+        "Em conclusão, o modelo colaborativo une diplomacia cultural e responsabilidade técnica de forma exemplar. Essa parceria beneficia acadêmicos, visitantes e detentores originais da herança."
+      ],
+      "conditional": [
+        "A decisão entre devolução total ou guarda compartilhada depende da capacidade técnica de conservação da comunidade de origem. Sendo assim, se houver infraestrutura adequada, a transferência **permanente** é a escolha mais justa e ética.",
+        "**Não obstante**, caso faltem recursos de preservação, o modelo compartilhado protege o objeto sem ignorar os direitos legítimos dos herdeiros. **Com efeito**, estipular regras transparentes de empréstimo e cuidado mútuo resolve o impasse.",
+        "Portanto, o diálogo aberto entre todas as partes interessadas dita o sucesso de qualquer **acordo** cultural."
+      ]
+    }
+  }
+]

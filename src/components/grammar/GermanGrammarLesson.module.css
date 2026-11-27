@@ -1,0 +1,36 @@
+.tableGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.tableGrid > div > table {
+  min-width: 0;
+}
+
+.tableGrid caption {
+  padding: .75rem;
+  color: var(--kr-ink);
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.tableGrid table :is(th, td) {
+  padding: .55rem .65rem;
+}
+
+.tableGrid tbody th {
+  background: transparent;
+  color: var(--kr-ink);
+  font-family: inherit;
+  font-size: .88rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+
+.tableGrid tbody tr:last-child th {
+  border-bottom: 0;
+}
