@@ -1,4 +1,4 @@
-const CACHE_NAME = 'matecraft-shell-v5';
+const CACHE_NAME = 'matecraft-shell-v6';
 const BASE = '/kids/ingles-ajedrez/practica/';
 const PRECACHE = [
   "index.html",
@@ -9,7 +9,6 @@ const PRECACHE = [
   "vendor/chess.js/chess.js",
   "vendor/cm-chessboard/assets/chessboard.css",
   "vendor/cm-chessboard/assets/pieces/standard.svg",
-  "vendor/cm-chessboard/assets/pieces/staunty.svg",
   "vendor/cm-chessboard/src/Chessboard.js",
   "vendor/cm-chessboard/src/extensions/accessibility/Accessibility.js",
   "vendor/cm-chessboard/src/extensions/accessibility/I18n.js",

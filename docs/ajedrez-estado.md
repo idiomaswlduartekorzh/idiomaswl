@@ -34,7 +34,9 @@ No se presenta como repertorio universal frente a todas las primeras jugadas.
 - La página está en `public/kids/ingles-ajedrez/practica/index.html`; su lógica
   está en `app.js` y las líneas pedagógicas en `openings.js`.
 - chess.js 1.4.0 (BSD-2-Clause) y cm-chessboard 8.15.8 (MIT) se sirven como
-  archivos locales con sus licencias. El service worker usa una caché versionada.
+  archivos locales con sus licencias. El sprite usado conserva su atribución a
+  Wikimedia Commons (CC BY-SA 3.0); se excluyó un sprite alternativo con
+  restricción no comercial. El service worker usa una caché versionada.
 - Next.js quedó fijado en 16.4.5, versión que permite completar el build sin
   el bloqueo de seguridad de 16.4.3. El catálogo protegido, TypeScript y la
   compilación completa pasaron tras la actualización.
