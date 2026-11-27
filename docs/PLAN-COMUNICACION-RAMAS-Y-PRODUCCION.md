@@ -9,7 +9,7 @@ Fecha de corte: 25 de agosto de 2026.
 
 - Trabajo `chess-ui-320px-fix-20261127`, responsable Codex. Estado
   `LISTO_PARA_INTEGRAR`; rama `codex/chess-ui-320px-fix-20261127`, actualizada
-  sobre `origin/main@038ac7375`.
+  sobre `origin/main@88f483fbd`.
 - Alcance. Corregir el solapamiento de tarjetas del menú y la estrechez del
   selector de jugadas en teléfonos de 320 px. Hacer estable la altura del
   iframe en WebKit al pasar de mates a una variante de apertura. Se versionó
