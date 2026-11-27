@@ -61,3 +61,35 @@ La ficha se publicó mediante el [PR #72](https://github.com/idiomaswlduartekorz
 en `main@ab241cd449b71454045ddf968106048bf659dc9f`. Vercel informó
 despliegue exitoso y la portada pública respondió HTTP 200 con la misma huella
 que el archivo versionado. El panel sigue exigiendo sesión administradora.
+
+## WeLearn Alemán A1
+
+| Recurso | Archivo en Drive | Fuente local |
+|---|---|---|
+| Libro del estudiante, 203 páginas | [PDF](https://drive.google.com/file/d/1yCND10c1W_bpYR9ENSFeWYxX04LBIpFJ/view?usp=drivesdk) | `output/pdf/welearn-aleman-a1-libro-del-estudiante.pdf` |
+| Edición del profesor, parte 1 de 2, páginas 1–129 | [PDF](https://drive.google.com/file/d/1Vjgeaj_FtpoKh83-QE8r-AxRc6TbBK0c/view?usp=drivesdk) | `output/pdf/welearn-aleman-a1-libro-del-profesor.pdf` |
+| Edición del profesor, parte 2 de 2, páginas 130–260 | [PDF](https://drive.google.com/file/d/1RzEdMEt9HcsNjFqj3gke6ZzHP6cL0Lwe/view?usp=drivesdk) | `output/pdf/welearn-aleman-a1-libro-del-profesor.pdf` |
+| Fuente editable de 24 capítulos | [ZIP](https://drive.google.com/file/d/1Z8DaJqDMszraAo78eDR0tT0lgtRDQ3I6/view?usp=drivesdk) | `output/aleman-a1/libro-final/WeLearn-Aleman-A1-fuente-editable.zip` |
+
+El PDF original del profesor reúne 260 páginas en un solo archivo; se conserva
+intacto en la ruta local. La copia de Drive se dividió después del capítulo 15
+para respetar el límite de 100 MiB del conector. La segunda parte incluye los
+capítulos 16–24, el material de consulta y 57 páginas de respuestas razonadas,
+transcripciones y guiones. El estudiante no recibe esas soluciones.
+
+El PDF de consulta del estudiante codificó 20 ilustraciones grandes como JPEG de
+calidad 95 y sin submuestreo de color. Las partes docentes codificaron dos
+ilustraciones cada una. Las 463 páginas resultantes conservaron el mismo texto,
+los flujos de contenido, el tamaño A4 y todos los enlaces externos de sus
+correspondientes páginas originales. La diferencia visual media máxima por
+canal, en las páginas modificadas a escala 1,35×, fue 0,21 sobre 255; la portada
+y dos páginas docentes se inspeccionaron. Los tamaños y SHA-256 se registran en
+`output/aleman-a1/libro-final/entrega-admin-verificacion.json`.
+
+Los cuatro archivos son privados: propietario `WeLearnInstitute@gmail.com` y
+lectura para `josedavidduartesilva@gmail.com`, `david.duartes182@gmail.com` y
+`zhanna.korzh@gmail.com`. No hay permiso «cualquiera con el enlace». La pestaña
+del administrador es una biblioteca editorial interna; aún no publica el PDF
+del estudiante a una cohorte matriculada. Ese acceso requiere una ruta con
+control por matrícula independiente. La lectura final del autor y la prueba
+física de imprenta siguen pendientes.
