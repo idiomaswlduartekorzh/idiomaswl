@@ -20,6 +20,7 @@ import {
   ieltsSpeakingEvidenceIssues,
   countEssayWords,
   type IeltsAudioDescriptor,
+  type IeltsCompleteResponse,
   type IeltsObjectiveAnswers,
   type IeltsSubmissionPayload,
 } from './submission';
@@ -333,47 +334,61 @@ async function completeSubmission(mockId: string, submissionId: unknown, complet
     .eq('mock_title', blueprint.mockTitle)
     .maybeSingle();
   if (readError || !submission) return jsonError('No encontramos la entrega para confirmarla.', 404);
-  if (submission.submission_status === 'submitted') {
-    const pilot = isIeltsMockOnePilot(mockId);
-    const xpressAccess = !pilot && submission.user_id
-      ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId })
-      : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
-    const reviewMock = xpressAccess.detailedResults || pilot ? await loadIeltsMock(mockId) : null;
-    if ((xpressAccess.detailedResults || pilot) && !reviewMock) return jsonError('No pudimos cargar la revisión del simulacro.', 500);
-    return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: pilot ? 'free-sample' : xpressAccess.access });
-  }
+  if (submission.submission_status !== 'submitted') {
+    if (submission.submission_status !== 'uploading') return jsonError('Esta entrega todavía no se puede confirmar.', 409);
+    const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
+    const metadata = (submission.speaking_audio_metadata ?? {}) as Record<string, IeltsAudioDescriptor>;
+    const folder = `${mockId}/${submissionId}`;
+    const { data: files, error: listError } = await admin.storage.from(IELTS_SPEAKING_BUCKET).list(folder, { limit: 20 });
+    if (listError) return jsonError('No pudimos verificar los audios. Revisa tu conexión e inténtalo otra vez.', 503);
+    const uploadedByName = new Map((files ?? []).map(file => [file.name, file]));
+    for (const [questionId, path] of Object.entries(paths)) {
+      const file = uploadedByName.get(path.split('/').pop() ?? '');
+      if (!file) return jsonError(`El audio ${questionId.toUpperCase()} todavía no terminó de subir.`, 409);
+      const expectedSize = metadata[questionId]?.size;
+      const actualSize = Number((file.metadata as { size?: unknown } | null)?.size);
+      if (!Number.isFinite(actualSize) || actualSize < MIN_AUDIO_BYTES || actualSize !== expectedSize) {
+        return jsonError(`El audio ${questionId.toUpperCase()} llegó incompleto o con un tamaño distinto. Grábalo y envíalo otra vez.`, 409);
+      }
+    }
 
-  const paths = (submission.speaking_audio_paths ?? {}) as Record<string, string>;
-  const metadata = (submission.speaking_audio_metadata ?? {}) as Record<string, IeltsAudioDescriptor>;
-  const folder = `${mockId}/${submissionId}`;
-  const { data: files, error: listError } = await admin.storage.from(IELTS_SPEAKING_BUCKET).list(folder, { limit: 20 });
-  if (listError) return jsonError('No pudimos verificar los audios. Revisa tu conexión e inténtalo otra vez.', 503);
-  const uploadedByName = new Map((files ?? []).map(file => [file.name, file]));
-  for (const [questionId, path] of Object.entries(paths)) {
-    const file = uploadedByName.get(path.split('/').pop() ?? '');
-    if (!file) return jsonError(`El audio ${questionId.toUpperCase()} todavía no terminó de subir.`, 409);
-    const expectedSize = metadata[questionId]?.size;
-    const actualSize = Number((file.metadata as { size?: unknown } | null)?.size);
-    if (!Number.isFinite(actualSize) || actualSize < MIN_AUDIO_BYTES || actualSize !== expectedSize) {
-      return jsonError(`El audio ${questionId.toUpperCase()} llegó incompleto o con un tamaño distinto. Grábalo y envíalo otra vez.`, 409);
+    const { data: updated, error: updateError } = await admin.from('exam_submissions')
+      .update({ submission_status: 'submitted' }).eq('id', submissionId).eq('submission_status', 'uploading')
+      .select('id').maybeSingle();
+    if (updateError) return jsonError('No pudimos confirmar la entrega. Inténtalo otra vez.', 503);
+    if (!updated) {
+      // Another confirmation of this receipt may have committed first.
+      const { data: confirmed, error } = await admin.from('exam_submissions').select('id')
+        .eq('id', submissionId).eq('exam_slug', 'ielts').eq('mock_id', mockId).eq('submission_status', 'submitted').maybeSingle();
+      if (error || !confirmed) return jsonError('No pudimos confirmar la entrega. Inténtalo otra vez.', 503);
     }
   }
 
-  const { data: updated, error: updateError } = await admin
-    .from('exam_submissions')
-    .update({ submission_status: 'submitted' })
-    .eq('id', submissionId)
-    .eq('submission_status', 'uploading')
-    .select('id')
-    .maybeSingle();
-  if (updateError || !updated) return jsonError('Los archivos llegaron, pero no pudimos cerrar la entrega. Inténtalo otra vez.', 500);
   const pilot = isIeltsMockOnePilot(mockId);
   const xpressAccess = !pilot && submission.user_id
     ? await recordXpressSubmissionAccess({ userId: String(submission.user_id), examSlug: 'ielts', submissionId })
-    : { access: 'public' as const, detailedResults: false, personalizedFeedback: false };
-  const reviewMock = xpressAccess.detailedResults || pilot ? await loadIeltsMock(mockId) : null;
-  if ((xpressAccess.detailedResults || pilot) && !reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 500);
-  return Response.json({ ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: pilot ? 'free-sample' : xpressAccess.access });
+    : { access: 'public' as const, detailedResults: false };
+  let reviewAccess: IeltsCompleteResponse['xpressAccess'] = xpressAccess.detailedResults ? xpressAccess.access : 'public';
+  if (pilot) reviewAccess = 'free-sample';
+  if (reviewAccess === 'public') {
+    const { data: redemption, error } = await admin.from('exam_access_code_redemptions').select('id')
+      .eq('exam_slug', 'ielts').eq('attempt_ref', submissionId).maybeSingle();
+    if (error) return jsonError('Tu entrega está guardada. No pudimos verificar el acceso al informe. Inténtalo otra vez.', 503);
+    if (redemption) {
+      if (submission.user_id) {
+        const { data: { user } } = await (await createClient()).auth.getUser();
+        if (!user?.email_confirmed_at || user.id !== submission.user_id) {
+          return jsonError('Inicia sesión con la cuenta que envió el simulacro para abrir su informe.', 403);
+        }
+      }
+      reviewAccess = 'access-code';
+    }
+  }
+  const reviewMock = reviewAccess === 'public' ? null : await loadIeltsMock(mockId);
+  if (reviewAccess !== 'public' && !reviewMock) return jsonError('La entrega quedó guardada, pero no pudimos cargar la revisión. Inténtalo otra vez.', 503);
+  return Response.json({
+    ok: true, submissionId, reviewMock, basicScore: ieltsBasicScore(submission.skills), xpressAccess: reviewAccess,
+  } satisfies IeltsCompleteResponse, { headers: { 'cache-control': 'private, no-store' } });
 }
 
 export async function handleIeltsSubmissionRequest(request: Request, mockId: string): Promise<Response> {

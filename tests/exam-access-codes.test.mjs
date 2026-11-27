@@ -71,8 +71,9 @@ test('an ICFES institutional grant unlocks detail without faking purchase analyt
 });
 
 test('existing Xpress memberships and single-exam credits unlock results without consuming a code', () => {
+  const ielts = read('src/lib/ielts/submission.server.ts');
+  assert.match(ielts, /reviewAccess: IeltsCompleteResponse\['xpressAccess'\] = xpressAccess\.detailedResults \? xpressAccess\.access : 'public'/);
   for (const serverFile of [
-    'src/lib/ielts/submission.server.ts',
     'src/lib/toefl/submission.server.ts',
     'src/lib/goethe/submission.server.ts',
   ]) assert.match(read(serverFile), /xpressAccess: xpressAccess\.access/);
@@ -84,6 +85,6 @@ test('existing Xpress memberships and single-exam credits unlock results without
   ]) {
     const source = read(clientFile);
     assert.match(source, /completed\.xpressAccess !== 'public'/);
-    assert.match(source, /if \(!access\.unlocked && accessCode\.trim\(\)\)/);
+    assert.match(source, /if \((?:!openAiPilot && )?!access\.unlocked && accessCode\.trim\(\)\)/);
   }
 });

@@ -19,6 +19,7 @@ import {
 } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
 import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
+import type { IeltsCompleteResponse } from '@/lib/ielts/submission';
 import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect } from '@/lib/ielts/mock-scoring';
 import type { IeltsReadingPracticeResult } from '@/lib/ielts/reading-practice-contract';
 import { trackIeltsEvent } from '@/lib/analytics/ielts';
@@ -644,9 +645,78 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
-function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, access, onAccessUnlocked, onRetry, openAiPilot }: {
-  mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; studentName: string; basicScore: string; access: ExamAccessOutcome; onAccessUnlocked: () => void; onRetry: ()=>void; openAiPilot: boolean;
+type DetailedIeltsResultProps = {
+  mock: MockExam;
+  exam: Exam;
+  ans: AllAnswers;
+  receipt: IeltsSubmissionReceipt | null;
+  studentName: string;
+  onRetry: () => void;
+  openAiPilot: boolean;
+};
+
+function IELTSResults({ mockId, reviewMock, basicScore, access, onAccessUnlocked, ...details }: Omit<DetailedIeltsResultProps, 'mock'> & {
+  mockId: string;
+  reviewMock: MockExam | null;
+  basicScore: string;
+  access: ExamAccessOutcome;
+  onAccessUnlocked: () => void;
 }) {
+  const { exam, receipt, onRetry } = details;
+  const [redeemedReview, setRedeemedReview] = useState<MockExam | null>(null);
+  const [reviewError, setReviewError] = useState(false);
+  const [retry, setRetry] = useState(0);
+  useEffect(() => {
+    if (!access.unlocked || reviewMock || !receipt) return;
+    const controller = new AbortController();
+    async function loadReview(currentReceipt: IeltsSubmissionReceipt) {
+      try {
+        const response = await fetch(`/api/ielts/${encodeURIComponent(mockId)}/submissions`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ action: 'complete', ...currentReceipt }),
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error('review_unavailable');
+        const result = await response.json() as IeltsCompleteResponse;
+        if (!result.ok || result.submissionId !== currentReceipt.submissionId || result.reviewMock?.id !== mockId) {
+          throw new Error('review_unavailable');
+        }
+        if (!controller.signal.aborted) setRedeemedReview(result.reviewMock);
+      } catch {
+        if (!controller.signal.aborted) setReviewError(true);
+      }
+    }
+    void loadReview(receipt);
+    return () => controller.abort();
+  }, [access.unlocked, mockId, receipt, retry, reviewMock]);
+
+  if (!access.unlocked) {
+    return <ExamResultOffers
+      examSlug="ielts"
+      examName={exam.name}
+      attemptRef={receipt?.submissionId ?? `ielts:${mockId}`}
+      score={basicScore || 'Resultado guardado'}
+      initialCodeMessage={access.message}
+      fullResult={null}
+      onRetry={onRetry}
+      onUnlocked={onAccessUnlocked}
+    />;
+  }
+  const authorizedMock = reviewMock ?? redeemedReview;
+  if (authorizedMock?.id === mockId) return <IELTSDetailedResults {...details} mock={authorizedMock} />;
+  return <section className="prac-results" aria-live="polite">
+    <h1>Tu marcador</h1>
+    <p>{basicScore || 'Resultado guardado'}</p>
+    <p>{reviewError || !receipt ? 'Tu entrega está guardada. El informe detallado aún no pudo cargarse.' : 'Cargando tu informe detallado…'}</p>
+    {reviewError && receipt && <button type="button" className="btn" onClick={() => {
+      setReviewError(false);
+      setRetry(value => value + 1);
+    }}>Volver a cargar el informe</button>}
+  </section>;
+}
+
+function IELTSDetailedResults({ mock, exam, ans, receipt, studentName, onRetry, openAiPilot }: DetailedIeltsResultProps) {
   const [reviewRequested, setReviewRequested] = useState(false);
   const objectiveScore = scoreIeltsObjectiveAnswers(mock, ans);
   const lCorrect = objectiveScore.listening?.correct ?? 0;
@@ -666,8 +736,8 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
   // con revisión manual. Se llama SIEMPRE (reglas de hooks) con essay=''
   // cuando no aplica — el hook no fetchea en ese caso.
   const writingEnabled = writeQs.length > 0 && isFreeIeltsMock(mock.id);
-  const task1Essay = writingEnabled && access.unlocked && task1 ? (ans.write[task1.id] ?? '').trim() : '';
-  const task2Essay = writingEnabled && access.unlocked && task2 ? (ans.write[task2.id] ?? '').trim() : '';
+  const task1Essay = writingEnabled && task1 ? (ans.write[task1.id] ?? '').trim() : '';
+  const task2Essay = writingEnabled && task2 ? (ans.write[task2.id] ?? '').trim() : '';
   const task1Assessment = useWritingAssessment('ielts', mock.id, 1, task1Essay, receipt, !openAiPilot || reviewRequested);
   const task2Assessment = useWritingAssessment('ielts', mock.id, 2, task2Essay, receipt, !openAiPilot || reviewRequested);
 
@@ -716,19 +786,6 @@ function IELTSResults({ mock, exam, ans, receipt, studentName, basicScore, acces
     date: new Date().toLocaleDateString('es-ES', { day:'numeric', month:'long', year:'numeric' }),
     skills: autoSkills,
   };
-
-  if (!access.unlocked) {
-    return <ExamResultOffers
-      examSlug="ielts"
-      examName={exam.name}
-      attemptRef={receipt?.submissionId ?? `ielts:${mock.id}`}
-      score={basicScore || `${lCorrect + rCorrect}/${lTotal + rTotal}`}
-      initialCodeMessage={access.message}
-      fullResult={null}
-      onRetry={onRetry}
-      onUnlocked={onAccessUnlocked}
-    />;
-  }
 
   return (
     <div className="prac-results">
@@ -1177,7 +1234,7 @@ export default function IELTSPracticeClient({ exam, mock, practiceSkill, openAiP
     if (practiceSkill) return <div className="exam-unified" data-exam="ielts"><IELTSFocusedResults mock={mock} skill={practiceSkill} ans={ans} recordings={recordings} reading={readingResult} onRetry={handleRetry} onReview={() => setPhase('exam')} /><div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor(practiceSkill)} label={`${SKILL_LABEL[practiceSkill]} PDF`} /></div></div>;
     return (
       <div className="prac-shell exam-unified" data-exam="ielts">
-        <IELTSResults mock={completedReviewMock ?? mock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} basicScore={completedBasicScore} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} openAiPilot={openAiPilot} />
+        <IELTSResults mockId={mock.id} reviewMock={completedReviewMock} exam={exam} ans={ans} receipt={submissionReceipt} studentName={submittedStudentName} basicScore={completedBasicScore} access={resultAccess} onAccessUnlocked={() => setResultAccess({ unlocked: true })} onRetry={handleRetry} openAiPilot={openAiPilot} />
         <div className="exam-pdf-options"><PdfDownloadButton generate={downloadWorksheetFor()} label="Full practice PDF" /></div>
       </div>
     );

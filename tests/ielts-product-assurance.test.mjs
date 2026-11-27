@@ -45,3 +45,13 @@ test('the shared IELTS runner captures the lead, gates the report and supports a
   assert.match(runner, /studentName=\{studentName\}/u);
   assert.match(runner, /overallBand=\{null\}/u);
 });
+
+test('the free learner sees the saved server score without attempting to grade a redacted mock', () => {
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx');
+  const results = runner.slice(runner.indexOf('function IELTSResults('), runner.indexOf('function IELTSDetailedResults('));
+  assert.match(results, /if \(!access\.unlocked\)[\s\S]*?score=\{basicScore \|\| 'Resultado guardado'\}/u);
+  assert.doesNotMatch(results, /scoreIeltsObjectiveAnswers/u);
+  assert.match(results, /result\.submissionId !== currentReceipt\.submissionId \|\| result\.reviewMock\?\.id !== mockId/u);
+  assert.match(results, /authorizedMock\?\.id === mockId\) return <IELTSDetailedResults/u);
+  assert.doesNotMatch(runner, /completedReviewMock\s*\?\?\s*mock/u);
+});

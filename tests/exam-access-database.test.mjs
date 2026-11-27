@@ -79,9 +79,7 @@ test('free result payloads do not include review keys or section score endpoints
     readFile(new URL('../src/app/api/practica/toefl/reading/score/route.ts', import.meta.url), 'utf8'),
   ]);
   assert.match(icfes, /toIcfesTotalResult\(result\)/);
-  // Both a new submission and an idempotent retry only return the detailed mock to an entitled learner or the active Set 1 pilot.
-  assert.equal(ielts.match(/const pilot = isIeltsMockOnePilot\(mockId\);/g)?.length, 2);
-  assert.equal(ielts.match(/const reviewMock = xpressAccess\.detailedResults \|\| pilot \? await loadIeltsMock\(mockId\) : null/g)?.length, 2);
+  assert.match(ielts, /const reviewMock = reviewAccess === 'public' \? null : await loadIeltsMock\(mockId\)/);
   const previousFlag = process.env.IELTS_MOCK1_FREE_ENABLED;
   try {
     for (const enabled of ['0', '1']) {
