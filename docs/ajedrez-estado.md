@@ -76,3 +76,8 @@ operativo.
   controles, el tablero y la variante Fantasía de la Caro-Kann permanecen
   accesibles, sin desbordamiento horizontal ni recorte vertical después de
   estabilizarse el contenido. La prueba E2E dirigida pasó con tres casos.
+- El [PR #80](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/80) quedó
+  en `main@61bdfcdde4c7d475209811c55abfa5d6db2b962a`. El despliegue de
+  Vercel terminó en verde. En producción se repitieron las doce combinaciones
+  de cuatro anchos y tres motores; a 320 px se comprobó además el primer
+  movimiento de la Caro-Kann con toque en Android Chrome y WebKit móvil.

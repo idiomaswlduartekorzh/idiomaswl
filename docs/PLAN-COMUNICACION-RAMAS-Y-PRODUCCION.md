@@ -8,8 +8,10 @@ Fecha de corte: 25 de agosto de 2026.
 ## Revisión visual de Matecraft — 27 de noviembre de 2026
 
 - Trabajo `chess-ui-320px-fix-20261127`, responsable Codex. Estado
-  `LISTO_PARA_INTEGRAR`; rama `codex/chess-ui-320px-fix-20261127`, actualizada
-  sobre `origin/main@88f483fbd`.
+  `DESPLEGADO`; rama `codex/chess-ui-320px-fix-20261127`, actualizada sobre
+  `origin/main@88f483fbd` e integrada por squash en el
+  [PR #80](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/80) como
+  `main@61bdfcdde4c7d475209811c55abfa5d6db2b962a`.
 - Alcance. Corregir el solapamiento de tarjetas del menú y la estrechez del
   selector de jugadas en teléfonos de 320 px. Hacer estable la altura del
   iframe en WebKit al pasar de mates a una variante de apertura. Se versionó
@@ -21,6 +23,12 @@ Fecha de corte: 25 de agosto de 2026.
   contenido. La revisión adicional de tarjetas entre 320 y 390 px pasó en los
   tres motores.
   [Estado técnico](ajedrez-estado.md).
+- Producción. [Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/82yS6QzKv17Tp2kSBhD5dgBa16UF)
+  publicó ese commit. La [ruta pública](https://www.idiomaswl.com/kids/ingles-ajedrez/practica)
+  sirvió el HTML nuevo. Chrome, Firefox y WebKit pasaron las doce combinaciones
+  de ancho y motor, con menú, tablero y variante Fantasía de la Caro-Kann sin
+  desbordamiento horizontal ni recorte vertical. Android Chrome y WebKit móvil
+  permitieron jugar `1...c6` con toque a 320 px; no hubo errores de página.
 
 ## La hora en los ocho idiomas de gramática A1 — 26 y 27 de noviembre de 2026
 
