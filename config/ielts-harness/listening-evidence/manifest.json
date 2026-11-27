@@ -28,8 +28,8 @@
       "questions": 40,
       "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
       "artifactPath": "config/ielts-harness/listening-evidence/set-4-listening-evidence.json",
-      "artifactFileSha256": "b3b8433fd820f96ff6543c3aa35e150ee1385c04115763354c51e90ec358a5c1",
-      "artifactSha256": "edad629254c577746acaa5216d14d04601122974d526b80629f5689bd803a971"
+      "artifactFileSha256": "f4c4b963a4eda9f63b5793431cf17701bd2bcbf6ad67aff34b7f350172ff4ba9",
+      "artifactSha256": "6a76948f97751e6c75a5ee26af0afdfd0e86885a3f2a22470de41ea3c1c7064a"
     },
     {
       "set": 5,
@@ -182,5 +182,5 @@
     "supported": 760,
     "unresolved": 0
   },
-  "manifestSha256": "980d2c37c395d7e03f8c51d7c8281870820111e88e69b68c9b39f3b57151aff5"
+  "manifestSha256": "dbdcb5839d1f4e481942e0cdb44138c9db9950591fc0b4e4e3a34bbbcfcffaf6"
 }

@@ -3,8 +3,8 @@
   "set": 4,
   "generatedFrom": {
     "source": "src/data/mocks/ielts-set-4.ts",
-    "sourceSha256": "da4d563071e91f2470d8e6014c2c099dd66ddfb3beaaeea053710dc1f4c0d8c4",
-    "releaseFingerprintSha256": "9cd6bdb05e89ad26db96cd5ec4834b69ec18c6bfdab376e8f34c4079da943d9d"
+    "sourceSha256": "36853cfcd93d0cd5227eab3e52fb8c634a312ecfd49b62529a144637e84e962e",
+    "releaseFingerprintSha256": "a86e0fdf19d4e2467d3d72349103296113ae4d173fa96c7ee7ecc33ae766b2c8"
   },
   "listening": {
     "binding": {
@@ -24,7 +24,7 @@
       "audioSha256": "6d2e9614af1ca6442c5fa98bfcd91bbee610dfc06b2de8f093a68003d1859846",
       "transcriptSha256": "ab176d25c08c34a5d3d9bbd5ed25ddcaca091e7e7314ca01cd78eb3f1cafd9ad",
       "evidencePath": "config/ielts-harness/listening-evidence/set-4-listening-evidence.json",
-      "evidenceSha256": "b3b8433fd820f96ff6543c3aa35e150ee1385c04115763354c51e90ec358a5c1"
+      "evidenceSha256": "f4c4b963a4eda9f63b5793431cf17701bd2bcbf6ad67aff34b7f350172ff4ba9"
     },
     "questions": [
       {
@@ -640,15 +640,17 @@
         "responseKey": "r1q1",
         "responseKind": "mcq",
         "passagePart": 1,
-        "paragraph": "Reviewed passage 1",
+        "paragraph": "Passage 1, paragraph 2",
         "sourceExcerpt": "For most of the 200,000-year history of anatomically modern humans, our ancestors were nomadic foragers, moving with the seasons in search of wild plants and animals. This lifestyle, often mischaracterised as primitive, was remarkably effective. Studies of modern forager societies suggest that hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs, and enjoyed a diverse and often highly nutritious diet. Such comparisons must be handled cautiously because recent foragers live in environments already shaped by states, markets and displaced populations. Even so, they challenge the assumption that cultivation automatically reduced effort or improved health. Farming demanded clearing, sowing, weeding, harvesting and storage, while tying households to fields that could fail. So why did people abandon this apparently successful lifestyle?",
-        "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+        "rationale": "La afirmación invierte la dirección de la comparación entre los mismos grupos. La advertencia posterior limita la interpretación de los estudios.",
         "status": "APPROVED",
         "reviewer": {
           "kind": "academic-agent",
-          "id": "codex-audit-harness-bias-review"
+          "id": "/root/revision_set1"
         },
-        "reviewedAt": "2026-09-12"
+        "reviewedAt": "2026-11-26",
+        "evidencePath": "config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json",
+        "evidenceSha256": "cffd9756ab39a5d9d54ce0cb13a6b3304439ff2a98f0478df6350cdfe8c02f29"
       },
       {
         "question": 2,
@@ -1305,17 +1307,28 @@
     "status": "APPROVED",
     "objectiveSha256": "c2cfc7fbf057c5656dcfe570479c97de75f97ae81f62318637fbac1012fcc1f7",
     "evidencePath": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
-    "evidenceSha256": "d06ae1206c43df5a6855826f292309424cd974cf1a54571a1ec37ab8d4447b51",
+    "evidenceSha256": "d69f3664b36ece5ce3dd0df041cc39470c6c71de131d44e541daf92b8931a608",
     "reviewer": {
       "kind": "academic-agent",
       "id": "/root/objective_reviewer_final2"
     },
-    "reviewedAt": "2026-10-20"
+    "reviewedAt": "2026-10-20",
+    "amendment": {
+      "responseKey": "r1q1",
+      "scope": "Enunciado, clave y explicación guiada de Reading 1. Las demás preguntas conservan sus revisiones y atribuciones anteriores.",
+      "reviewer": {
+        "kind": "academic-agent",
+        "id": "/root/revision_set1"
+      },
+      "reviewedAt": "2026-11-26",
+      "evidencePath": "config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json",
+      "evidenceSha256": "cffd9756ab39a5d9d54ce0cb13a6b3304439ff2a98f0478df6350cdfe8c02f29"
+    }
   },
   "ux": {
     "status": "PENDING",
     "binding": {
-      "contentSha256": "19c62778e7e77bd86d75ab3db469579121f4bf3f3a7dde13eea602548603847e"
+      "contentSha256": "80e11f2a79a439ac421a3d9a56e11124654f81dc2680da2d452a5cb943a0aed7"
     },
     "viewports": [
       {
@@ -1335,7 +1348,7 @@
   },
   "releaseApproval": {
     "status": "PENDING",
-    "releaseFingerprintSha256": "9cd6bdb05e89ad26db96cd5ec4834b69ec18c6bfdab376e8f34c4079da943d9d",
+    "releaseFingerprintSha256": "a86e0fdf19d4e2467d3d72349103296113ae4d173fa96c7ee7ecc33ae766b2c8",
     "reviewer": {
       "kind": "human",
       "id": ""

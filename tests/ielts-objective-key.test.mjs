@@ -1,7 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import mock from '../src/data/mocks/ielts-set-1.ts';
+import set4 from '../src/data/mocks/ielts-set-4.ts';
+import { buildIeltsGuidedMock } from '../src/data/ielts/guided-mock.ts';
+import { getReadingLearningFeedback } from '../src/data/ielts/reading-learning-feedback.ts';
 import { auditObjectiveKey } from '../scripts/lib/ielts-answer-key-audit.mjs';
 import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect, scoreIeltsUnorderedFillGroup } from '../src/lib/ielts/mock-scoring.ts';
 import { getIeltsReviewBlueprint, isIeltsSubmissionVersionCurrent } from '../src/lib/ielts/review-blueprint.ts';
@@ -15,6 +19,44 @@ function answersFor(rows) {
   return answers;
 }
 test('approved independent key: every identity, option and number agrees', () => auditObjectiveKey(mock, fixture));
+test('Set 4 Reading 1 displays the statement, comparison and feedback from its independent amendment', () => {
+  const read = path => fs.readFileSync(new URL(`../${path}`, import.meta.url));
+  const hash = value => createHash('sha256').update(value).digest('hex');
+  const dossier = JSON.parse(read('config/ielts-harness/evidence/set-4.json'));
+  const academic = JSON.parse(read(dossier.objectiveKey.evidencePath));
+  const amendment = academic.currentItemReview;
+  const receiptBytes = read(amendment.evidencePath);
+  const receipt = JSON.parse(receiptBytes);
+  const itemEvidence = academic.evidence.find(row => row.responseKey === 'r1q1');
+  const reviewedRow = dossier.reading.questions.find(row => row.responseKey === 'r1q1');
+  assert.deepEqual(amendment, dossier.objectiveKey.amendment);
+  for (const record of [amendment, reviewedRow, itemEvidence]) {
+    assert.equal(record.responseKey, receipt.responseKey);
+    assert.equal(record.evidencePath, amendment.evidencePath);
+    assert.equal(record.evidenceSha256, hash(receiptBytes));
+    assert.deepEqual(record.reviewer, receipt.reviewer);
+    assert.equal(record.reviewedAt, receipt.reviewedAt);
+  }
+  const section = set4.sections.find(section => section.skill === 'reading');
+  const question = section.questions.find(question => question.id === receipt.responseKey);
+  const paragraph = section.passage.split(/\n\s*\n/u)[receipt.passageEvidence.paragraph - 1];
+  assert.equal(question.text, receipt.statement);
+  assert.equal(hash(question.text), receipt.binding.statementSha256);
+  assert.equal(itemEvidence.questionPrompt, question.text);
+  assert.equal(itemEvidence.sourceExcerpt, paragraph);
+  assert.equal(reviewedRow.sourceExcerpt, paragraph);
+  assert.equal(hash(paragraph), receipt.binding.paragraphSha256);
+  assert.ok(paragraph.includes(receipt.passageEvidence.excerpt));
+  assert.equal(question.options[question.answer], receipt.blindSolve.answer);
+  assert.notEqual(receipt.blindSolve.reviewer.id, receipt.reviewer.id);
+
+  const item = buildIeltsGuidedMock(set4, dossier).readingUnits[0].items[0];
+  const feedback = getReadingLearningFeedback(item, item.accepted[0], true, 4);
+  // The interface appends its source cue after the reviewed explanation.
+  const ends = feedback.reason.matchAll(/\.(?=\s|$)/gu);
+  const displayedPrefixes = Array.from(ends, match => hash(feedback.reason.slice(0, match.index + 1)));
+  assert.ok(displayedPrefixes.includes(receipt.binding.guidedFeedbackSha256));
+});
 test('all 80 points and every accepted variant score exactly once', () => {
   const perfect = scoreIeltsObjectiveAnswers(mock, answersFor(fixture.questions));
   assert.deepEqual(perfect, { listening:{correct:40,total:40,band:9}, reading:{correct:40,total:40,band:9} });
@@ -93,7 +135,7 @@ test('guardian rejects old key, missing questions and shuffled options', () => {
   assert.throws(()=>auditObjectiveKey(shuffled,fixture));
 });
 test('old tabs fail closed while every historical W/S version remains reviewable', () => {
-  const revisions = [4, 5, 3, 6, 4, 5, 4, 3, 6, 4, 5, 4, 4, 3, 2, 5, 4, 3, 4, 3];
+  const revisions = [4, 5, 3, 7, 4, 5, 4, 3, 6, 4, 5, 4, 4, 3, 2, 5, 4, 3, 4, 3];
   revisions.forEach((revision, index) => {
     const setNumber = index + 1;
     const mockId = `set-${setNumber}`;

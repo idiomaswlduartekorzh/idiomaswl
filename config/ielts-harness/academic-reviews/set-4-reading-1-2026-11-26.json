@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "set": 4,
+  "mockId": "set-4",
+  "skill": "reading",
+  "question": 1,
+  "responseKey": "r1q1",
+  "status": "PASS",
+  "reviewedAt": "2026-11-26",
+  "reviewer": { "kind": "academic-agent", "id": "/root/revision_set1" },
+  "scope": "Enunciado, clave y explicación guiada de Reading 1. Las demás preguntas conservan sus revisiones y atribuciones anteriores.",
+  "statement": "According to the passage, studies of modern forager societies suggest that hunter-gatherers worked more hours per day than subsistence farmers.",
+  "passageEvidence": {
+    "source": "src/data/mocks/ielts-set-4.ts",
+    "title": "The Origins of Agriculture",
+    "paragraph": 2,
+    "excerpt": "hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs"
+  },
+  "blindSolve": {
+    "reviewer": { "kind": "academic-agent", "id": "/root/entorno" },
+    "input": "Enunciado, fragmento del pasaje con la advertencia sobre las comparaciones y las tres opciones. El agente confirmó que desconocía la clave.",
+    "answer": "FALSE",
+    "reason": "La afirmación invierte la dirección de la comparación entre los mismos grupos. La advertencia posterior limita la interpretación de los estudios."
+  },
+  "keyCheck": "La opción marcada en el simulacro es FALSE. La explicación guiada remite al segundo párrafo y contrasta fewer con more para los mismos agricultores de subsistencia.",
+  "binding": {
+    "encoding": "SHA-256 del texto UTF-8 literal sin salto de línea final",
+    "statementSha256": "1d21c0760ad7f53360211f87946b1b2139637de020e930d1ca836758f05151a4",
+    "paragraphSha256": "78dd73cbcaa992014681bf1b04493e2446cbb77043e72091d3de8408bc08f9f9",
+    "guidedFeedbackSource": "src/data/ielts/reading-learning-feedback.ts",
+    "guidedFeedbackKey": "4-1",
+    "guidedFeedbackSha256": "143e9810ab7cfa1f06c2796eb31952f8e5566d867920096ec9e716c280ee2a54"
+  }
+}

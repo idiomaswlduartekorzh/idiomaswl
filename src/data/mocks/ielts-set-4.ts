@@ -475,7 +475,7 @@ Today, scholars debate whether agriculture was genuinely "invented" at a single 
           type: 'mcq',
           id: 'r1q1',
           part: 5,
-          text: 'According to the passage, studies of modern forager societies suggest that hunter-gatherers worked MORE hours per day than early farmers.',
+          text: 'According to the passage, studies of modern forager societies suggest that hunter-gatherers worked more hours per day than subsistence farmers.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 1,
         },

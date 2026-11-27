@@ -47,6 +47,15 @@ test('all 800 approved Reading items coach an attempted answer with a verbatim c
   assert.equal(routes.size, 12);
 });
 
+test('Set 4 Reading 1 keeps both comparison groups and explains the change in direction', () => {
+  const question = readingSet(4)[0];
+  assert.match(question.prompt, /more hours per day than subsistence farmers/u);
+  assert.match(question.evidence.focus, /fewer hours per day than subsistence farmers/u);
+  const feedback = getReadingLearningFeedback(question, question.accepted[0], true, 4);
+  assert.match(feedback!.reason, /agricultores de subsistencia/u);
+  assert.match(feedback!.reason, /menos a más/u);
+});
+
 test('an empty attempt, an unapproved excerpt, missing evidence or a different skill leaves feedback closed', () => {
   const item = readingSet(1)[0];
   for (const answer of ['', '  \n\t']) assert.equal(getReadingLearningFeedback(item, answer, false, 1), null);

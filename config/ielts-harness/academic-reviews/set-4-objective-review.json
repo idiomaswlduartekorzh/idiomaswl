@@ -4,11 +4,11 @@
   "scope": "independent_academic_objective_key_review",
   "set": 4,
   "mockId": "set-4",
-  "contentVersionAtReview": "ielts-set-4-v6",
-  "reviewedAt": "2026-10-20",
+  "contentVersionAtReview": "ielts-set-4-v7",
+  "reviewedAt": "2026-11-26",
   "reviewer": {
     "kind": "academic-agent",
-    "id": "/root/objective_reviewer_final2"
+    "id": "/root/revision_set1"
   },
   "independentReview": {
     "reviewer": { "kind": "academic-agent", "id": "/root/objective_reviewer_final2" },
@@ -31,8 +31,8 @@
   "binding": {
     "objectiveSha256": "c2cfc7fbf057c5656dcfe570479c97de75f97ae81f62318637fbac1012fcc1f7",
     "listeningMaterialSha256": "1a89215e864c6cb2127510b8d4e162a8beead0bb370f55a847f3df8fbbce5292",
-    "readingMaterialSha256": "2938871cc9b4ef724396d154658b3ef89b072883fb9e5533296ef6e4dbc238d8",
-    "objectiveMaterialSha256": "0a7d172f12f8fb230dca223357383399e7d3d4e65d6587ff63fb26ffe220e7c1"
+    "readingMaterialSha256": "fac23c81e4578a58e8b89661facfa11605e7c10fed6e35dd959c4d1cfbb60393",
+    "objectiveMaterialSha256": "2f5f9e7b8a8b716a977e412a51c51d0b78bf9fe571ab0a4af5b63a63dbdf714f"
   },
   "summary": {
     "responseRows": 79,
@@ -2488,13 +2488,13 @@
       "acceptedAnswers": [
         1
       ],
-      "questionPrompt": "According to the passage, studies of modern forager societies suggest that hunter-gatherers worked MORE hours per day than early farmers.",
+      "questionPrompt": "According to the passage, studies of modern forager societies suggest that hunter-gatherers worked more hours per day than subsistence farmers.",
       "sourcePart": 5,
       "sourceTitle": "Reading Passage 1: The Origins of Agriculture",
       "sourceExcerpt": "For most of the 200,000-year history of anatomically modern humans, our ancestors were nomadic foragers, moving with the seasons in search of wild plants and animals. This lifestyle, often mischaracterised as primitive, was remarkably effective. Studies of modern forager societies suggest that hunter-gatherers typically worked fewer hours per day than subsistence farmers to meet their nutritional needs, and enjoyed a diverse and often highly nutritious diet. Such comparisons must be handled cautiously because recent foragers live in environments already shaped by states, markets and displaced populations. Even so, they challenge the assumption that cultivation automatically reduced effort or improved health. Farming demanded clearing, sowing, weeding, harvesting and storage, while tying households to fields that could fail. So why did people abandon this apparently successful lifestyle?",
       "sourceExcerptSha256": "78dd73cbcaa992014681bf1b04493e2446cbb77043e72091d3de8408bc08f9f9",
       "verdict": "SUPPORTED",
-      "rationale": "The cited material directly supports the keyed option or options; the alternatives are contradicted, explicitly rejected, or unsupported at the scope asked.",
+      "rationale": "La afirmación invierte la dirección de la comparación entre los mismos grupos. La advertencia posterior limita la interpretación de los estudios.",
       "correctOptions": [
         {
           "key": 1,
@@ -2514,7 +2514,11 @@
           "verdict": "DISMISSED",
           "rationale": "The effective material supports 1 for the precise question; option 2 is contradicted, rejected, or not stated as the answer."
         }
-      ]
+      ],
+      "reviewer": { "kind": "academic-agent", "id": "/root/revision_set1" },
+      "reviewedAt": "2026-11-26",
+      "evidencePath": "config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json",
+      "evidenceSha256": "cffd9756ab39a5d9d54ce0cb13a6b3304439ff2a98f0478df6350cdfe8c02f29"
     },
     {
       "skill": "reading",
@@ -4044,5 +4048,23 @@
       "optionLengthHeuristicGatePassed": true
     }
   },
-  "reviewSha256": "31d3875cf40cde2eb4d5f47c738b1c60c6b17499f704858bb8264d5cee2d3299"
+  "retainedObjectiveReview": {
+    "gitCommit": "deb56b7c1c333aa72733fc5d30570efedd324bac",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
+    "evidenceSha256": "d06ae1206c43df5a6855826f292309424cd974cf1a54571a1ec37ab8d4447b51",
+    "reviewSha256": "31d3875cf40cde2eb4d5f47c738b1c60c6b17499f704858bb8264d5cee2d3299",
+    "contentVersion": "ielts-set-4-v6",
+    "reviewer": { "kind": "academic-agent", "id": "/root/objective_reviewer_final2" },
+    "reviewedAt": "2026-10-20",
+    "scope": "All objective response rows except Reading r1q1 are carried forward unchanged from this reviewed package."
+  },
+  "currentItemReview": {
+    "responseKey": "r1q1",
+    "scope": "Enunciado, clave y explicación guiada de Reading 1. Las demás preguntas conservan sus revisiones y atribuciones anteriores.",
+    "reviewer": { "kind": "academic-agent", "id": "/root/revision_set1" },
+    "reviewedAt": "2026-11-26",
+    "evidencePath": "config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json",
+    "evidenceSha256": "cffd9756ab39a5d9d54ce0cb13a6b3304439ff2a98f0478df6350cdfe8c02f29"
+  },
+  "reviewSha256": "4e42559b2475eda7d94da338a051249346fc34a7d71e51bd95a5d55666830b3a"
 }
