@@ -216,14 +216,26 @@ Fecha de corte: 25 de agosto de 2026.
 ### Alemán A1 — 27 de noviembre de 2026
 
 - Trabajo `admin-books-german-a1-20261127`, responsable Codex. Estado
-  `EN_VALIDACION`; rama `codex/admin-books-german-a1-20261127`, base
-  `origin/main@e238a3395`. Integración y comprobación de producción pendientes.
+  `DESPLEGADO`; rama `codex/admin-books-german-a1-20261127`, creada desde
+  `origin/main@e238a3395` y actualizada hasta `origin/main@038ac7375`.
+  El [PR #78](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/78)
+  se integró por squash en
+  [`main@88f483fbd`](https://github.com/idiomaswlduartekorzh/idiomaswl/commit/88f483fbd435213483b253389114185827f2da23).
 - La tercera ficha de **Libros** enlaza el PDF del estudiante de 203 páginas,
   dos partes de la edición docente que juntas conservan las 260 páginas y la
   fuente editable. Las cuatro piezas están en Drive privado con permisos del
   equipo. La parte docente con soluciones no se ofrece a estudiantes.
 - La comprobación local cotejó tamaño A4, texto, flujos de contenido y enlaces
   externos con los originales; inspeccionó la portada y dos páginas docentes.
+  Pasaron el catálogo de práctica, TypeScript, ESLint del panel y la compilación
+  completa local. Los cuatro controles del PR, incluidos CI y preview de
+  Vercel, terminaron en verde.
+- [Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/3XKEhqrKBCsqCnaeaxG8fpn1h2cb)
+  publicó el commit. La [portada](https://www.idiomaswl.com/images/books/welearn-aleman-a1.png)
+  respondió HTTP 200 y su SHA-256 coincidió con el archivo versionado:
+  `dd1a84de7225d541b919f6badc3d550accd2d0cac5ffdf64852ec4d57a26654e`.
+  `/dashboard/admin` redirigió a `/login` sin sesión. No se inspeccionó la vista
+  autenticada porque el navegador de este equipo no tenía una sesión activa.
   La distribución a una cohorte matriculada no forma parte de esta biblioteca
   editorial interna. [Registro y permisos](admin-books.md).
 
