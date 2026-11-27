@@ -152,6 +152,26 @@ Fecha de corte: 25 de agosto de 2026.
 - La aprobación del libro para venta sigue pendiente de lectura final del autor
   y prueba física de imprenta. Integrar la biblioteca no cambia ese estado.
 
+### Portugués A1 — 26 de noviembre de 2026
+
+- Estado `DESPLEGADO`. El [PR #72](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/72)
+  añadió la segunda ficha de **Libros** y se integró por squash como
+  `main@ab241cd449b71454045ddf968106048bf659dc9f`.
+- La ficha enlaza desde el panel privado al PDF del estudiante (205 páginas),
+  la edición del profesor con soluciones (260 páginas) y la fuente editable.
+  Los tres archivos siguen en Drive privado con los permisos del equipo.
+  [Registro y permisos](admin-books.md).
+- La auditoría de las dos ediciones y el harness de 20 capítulos y cuatro
+  repasos pasaron. La rama pasó catálogo, TypeScript, ESLint del panel y build
+  completo de 5.497 páginas; los tres controles del PR terminaron en verde.
+- [Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/Bb6bHE8gZ5U5DhosptDyJE5Q2EWe)
+  publicó ese commit. La [portada](https://www.idiomaswl.com/images/books/welearn-portugues-a1.png)
+  respondió HTTP 200 y su SHA-256 coincidió con el archivo versionado:
+  `4ca8b2ec73bcd98f01293706a81f62a4987f8cbe293faf459a52475493c3d792`.
+  `/dashboard/admin` redirigió a `/login` sin sesión. No se inspeccionó la
+  vista autenticada porque el navegador de este equipo no estaba disponible.
+  La lectura final del autor y la prueba física de imprenta siguen pendientes.
+
 ## Práctica de ajedrez: mates, tácticas y aperturas — 25 de noviembre de 2026
 
 - Trabajo `ajedrez-mates-tacticas-aperturas-20261125`, responsable Codex. Estado
