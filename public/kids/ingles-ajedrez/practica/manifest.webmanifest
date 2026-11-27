@@ -1,7 +1,7 @@
 {
   "name": "Matecraft — Chess Practice",
   "short_name": "Matecraft",
-  "description": "Practice checkmates, tactics, and endgames with adaptive difficulty.",
+  "description": "Practice checkmates, tactics, endgames, and Italian and Caro-Kann opening variations.",
   "lang": "en",
   "start_url": "/kids/ingles-ajedrez/practica/",
   "display": "standalone",
