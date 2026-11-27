@@ -143,6 +143,27 @@ const ITALIAN_A1_FILES = [
   },
 ] as const
 
+const PORTUGUESE_A1_FILES = [
+  {
+    title: 'Libro del estudiante',
+    detail: 'PDF · 205 páginas',
+    href: 'https://drive.google.com/file/d/1PbfRmf4n1SYKDKdM01pim4GvNOgtCndQ/view?usp=drivesdk',
+    Icon: FileText,
+  },
+  {
+    title: 'Edición del profesor con soluciones',
+    detail: 'PDF · 260 páginas',
+    href: 'https://drive.google.com/file/d/1I4PXiO-uizyv0xVhuruLBzRkEel5ZIXb/view?usp=drivesdk',
+    Icon: BookOpen,
+  },
+  {
+    title: 'Fuente editable',
+    detail: 'ZIP · 20 capítulos',
+    href: 'https://drive.google.com/file/d/1_o6N1DFGyrvGJiugMH-D9QypfAcuhiFi/view?usp=drivesdk',
+    Icon: FolderArchive,
+  },
+] as const
+
 const SIDEBAR_ITEMS: { Icon: React.ElementType; tab: Tab | null; href?: string; label: string; highlight?: boolean; documentNavigation?: boolean }[] = [
   { Icon: LayoutDashboard, tab: 'overview', label: 'Centro operativo' },
   { Icon: Users,           tab: 'students', label: 'Estudiantes' },
@@ -273,7 +294,7 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                   <h1 id="admin-books-title">Libros</h1>
                   <p>Materiales de estudio y archivos de trabajo del equipo WeLearn.</p>
                 </div>
-                <span className={styles.booksCount}>1 título</span>
+                <span className={styles.booksCount}>2 títulos</span>
               </header>
 
               <article className={styles.bookCard} aria-labelledby="italian-a1-title">
@@ -304,6 +325,49 @@ export default function JoseDashboard({ data, viewer }: { data: DashboardData; v
                   <h3>Archivos del libro</h3>
                   <div className={styles.bookFiles}>
                     {ITALIAN_A1_FILES.map(({ title, detail, href, Icon }) => (
+                      <a key={title} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${title}: abrir archivo privado en Google Drive`}>
+                        <span className={styles.bookFileIcon}><Icon size={20} /></span>
+                        <span className={styles.bookFileText}><strong>{title}</strong><small>{detail}</small></span>
+                        <ExternalLink size={17} aria-hidden="true" />
+                      </a>
+                    ))}
+                  </div>
+                  <p className={styles.bookAccessNote}>
+                    Pendiente la lectura final del autor y una prueba física de imprenta. Los archivos son privados en Drive;
+                    ábrelos con la cuenta WeLearn o una cuenta del equipo con acceso.
+                  </p>
+                </div>
+              </article>
+
+              <article className={styles.bookCard} aria-labelledby="portuguese-a1-title">
+                <div className={styles.bookCover}>
+                  <Image
+                    src="/images/books/welearn-portugues-a1.png"
+                    alt="Portada de WeLearn Portugués A1, edición del estudiante"
+                    width={637}
+                    height={900}
+                  />
+                </div>
+                <div className={styles.bookDetails}>
+                  <div className={styles.bookTags}>
+                    <span>Portugués brasileño</span><span>A1 · MCER</span><span>En revisión editorial</span>
+                  </div>
+                  <h2 id="portuguese-a1-title">WeLearn Portugués A1</h2>
+                  <p className={styles.bookByline}>José David Duarte Silva · Idiomas WeLearn</p>
+                  <p className={styles.bookDescription}>
+                    El alfabeto y la pronunciación se trabajan desde el inicio. Después siguen
+                    20 capítulos con explicaciones, tablas, lecturas, audios y práctica escrita,
+                    más cuatro repasos. La edición del estudiante tiene espacio para responder;
+                    la del profesor reúne las soluciones.
+                  </p>
+                  <dl className={styles.bookFacts}>
+                    <div><dt>Capítulos</dt><dd>20</dd></div>
+                    <div><dt>Actividades</dt><dd>587</dd></div>
+                    <div><dt>Audios vinculados</dt><dd>20</dd></div>
+                  </dl>
+                  <h3>Archivos del libro</h3>
+                  <div className={styles.bookFiles}>
+                    {PORTUGUESE_A1_FILES.map(({ title, detail, href, Icon }) => (
                       <a key={title} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${title}: abrir archivo privado en Google Drive`}>
                         <span className={styles.bookFileIcon}><Icon size={20} /></span>
                         <span className={styles.bookFileText}><strong>{title}</strong><small>{detail}</small></span>
