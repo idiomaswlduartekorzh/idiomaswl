@@ -1299,6 +1299,12 @@
           "file": "src/data/grammar/aleman/a1/trennbare-verben.ts"
         },
         {
+          "slug": "uhrzeit",
+          "title": "Die Uhrzeit · la hora",
+          "category": "Alltag",
+          "file": "src/data/grammar/aleman/a1/uhrzeit.ts"
+        },
+        {
           "slug": "verb-haben",
           "title": "Verb haben",
           "category": "Verben",

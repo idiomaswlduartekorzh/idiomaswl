@@ -1,12 +1,53 @@
+export interface ClockTime {
+  hour: number
+  minute: number
+}
+
+export interface ClockExample extends ClockTime {
+  digital: string
+  spoken: string
+  meaning: string
+  sentence?: string
+  pronunciation?: string
+  note: string
+  hourHint: string
+  minuteHint: string
+}
+
+export interface ClockConversation {
+  title: string
+  image: string
+  alt: string
+  setting: string
+  exchanges: Array<{
+    time: string
+    question: string
+    questionEs: string
+    questionReading?: string
+    answerReading?: string
+    answer: string
+    answerEs: string
+  }>
+}
+
+export interface ClockTip {
+  cue: string
+  example: string
+  explanation: string
+  comparison?: Array<ClockTime & { digital: string; spoken: string }>
+}
+
 export interface ChoiceItem {
   scene: string
   lines: [string, string][]
+  clock?: ClockTime
   options: string[]
   answer: string
   explain: string
 }
 
 export interface Blank {
+  clockLanguage?: string
   options?: string[]
   answer: string
   accepted?: string[]
@@ -16,15 +57,19 @@ export interface Blank {
 export interface DualItem {
   scene: string
   lines: [string, string][]
+  clock?: ClockTime
   blanks: Blank[]
 }
 
 export interface WriteItem {
+  clockLanguage?: string
   scene: string
   prompt: string
   answer: string
   accepted?: string[]
   explain: string
+  clock?: ClockTime
+  strict?: boolean
 }
 
 export type LevelType = 'choice' | 'dual' | 'guidedText' | 'freeText' | 'write'
@@ -86,6 +131,7 @@ export interface GrammarTopic {
     decisions: string[]
     table: [string, string, string][]
     mistakes: string[]
+    clockTips?: ClockTip[]
   }
   seo: Array<{
     heading: string
@@ -93,12 +139,15 @@ export interface GrammarTopic {
     table?: string[][]
     tables?: Array<{ caption: string; rows: string[][] }>
     examples?: string[][]
+    clockReading?: boolean
+    clockConversations?: ClockConversation[]
   }>
   visual: {
     mode: string
     teacherLens: string
     graphicPrompt: string
     scene: [string, string][]
+    clocks?: ClockExample[]
     learnerModes: string[]
     practiceVerbs?: string[]
     reviewFocus?: string[]

@@ -199,6 +199,7 @@
     "src/app/sitemap.ts": ["GRAMMAR_ENTRIES", "`${BASE}/podcasts`", "EXAM_PODCASTS"]
   },
   "requiredNpmScripts": [
+    "check:clock-lessons",
     "check:production-baseline",
     "check:site-navigation",
     "check:exam-hub-ui",
@@ -225,6 +226,7 @@
     "check:writing-workplace-release"
   ],
   "requiredPrebuildChecks": [
+    "check:clock-lessons",
     "check:production-baseline",
     "check:site-navigation",
     "check:exam-hub-ui",
@@ -251,6 +253,15 @@
     "check:writing-workplace-release"
   ],
   "smokeRoutes": [
+    { "path": "/practica/la-hora", "marker": "La hora en ocho idiomas" },
+    { "path": "/practica/la-hora/ingles", "marker": "Telling the time" },
+    { "path": "/practica/la-hora/frances", "marker": "Il est trois heures" },
+    { "path": "/practica/aleman/a1/gramatica/uhrzeit", "marker": "halb vier" },
+    { "path": "/practica/la-hora/italiano", "marker": "Sono le tre" },
+    { "path": "/practica/la-hora/portugues", "marker": "São três" },
+    { "path": "/practica/la-hora/coreano", "marker": "세 시 반" },
+    { "path": "/practica/la-hora/japones", "marker": "三時半です" },
+    { "path": "/practica/la-hora/ruso", "marker": "половина четвёртого" },
     { "path": "/", "marker": "WeLearn" },
     { "path": "/precios", "marker": "Elige qué quieres aprender y cuántas veces por semana." },
     { "path": "/practica/ingles/a2/escucha", "marker": "Escucha" },

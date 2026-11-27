@@ -3,11 +3,15 @@ import type { GrammarTopic } from '@/data/grammar/types'
 import type { GermanGrammarLevel } from '@/data/german-grammar-resources'
 import { getGermanGrammarResource } from '@/data/german-grammar-resources'
 import GermanGrammarLesson from '@/components/grammar/GermanGrammarLesson'
+import ClockLesson from '@/components/grammar/ClockLesson'
 import TopicNav from '@/components/grammar/TopicNav'
-import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
+import { grammarVisualImageObject, grammarVisualPath, grammarVisualUrl } from '@/lib/grammar-visual'
 
 export default function GermanGrammarTopicPage({ topic, level }: { topic: GrammarTopic; level: GermanGrammarLevel }) {
   const levelLabel = level.toUpperCase()
+  const clocks = level === 'a1' && topic.slug === 'uhrzeit' && topic.guide.clockTips
+    ? topic.visual.clocks
+    : undefined
   const canonical = `https://www.idiomaswl.com/practica/aleman/${level}/gramatica/${topic.slug}`
   const indexUrl = `https://www.idiomaswl.com/practica/aleman/${level}/gramatica`
   const resource = getGermanGrammarResource(topic, level)
@@ -38,5 +42,26 @@ export default function GermanGrammarTopicPage({ topic, level }: { topic: Gramma
     ],
   }
 
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /><div className="gram-page" style={{ '--topic-color': topic.color } as React.CSSProperties}><div className="wrap"><nav aria-label="Brotkrümelnavigation" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0 0', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}><Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Übungen</Link><span>/</span><Link href={`/practica/aleman/${level}`} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Deutsch {levelLabel}</Link><span>/</span><Link href={indexUrl.replace('https://www.idiomaswl.com', '')} style={{ color: 'var(--muted)', textDecoration: 'none' }}>Grammatik</Link><span>/</span><span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span></nav><GermanGrammarLesson topic={topic} level={level} /><TopicNav idioma="aleman" nivel={level} slug={topic.slug} indexLabel={`Grammatik ${levelLabel}`} uiLanguage="de" /></div></div></>
+  const crumbLink = { color: 'var(--muted)', textDecoration: 'none' }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <div className="gram-page" style={{ '--topic-color': topic.color } as React.CSSProperties}>
+        <div className="wrap">
+          <nav aria-label={clocks ? 'Ruta de navegación' : 'Brotkrümelnavigation'}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '1.5rem 0 0', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
+            <Link href="/practica" style={crumbLink}>{clocks ? 'Práctica' : 'Übungen'}</Link><span>/</span>
+            <Link href={`/practica/aleman/${level}`} style={crumbLink}>Deutsch {levelLabel}</Link><span>/</span>
+            <Link href={indexUrl.replace('https://www.idiomaswl.com', '')} style={crumbLink}>{clocks ? 'Gramática' : 'Grammatik'}</Link><span>/</span>
+            <span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span>
+          </nav>
+          {clocks?.length
+            ? <ClockLesson topic={topic} language="aleman" clocks={clocks} resource={resource} visualUrl={grammarVisualPath('aleman', level, topic.slug)} />
+            : <GermanGrammarLesson topic={topic} level={level} />}
+          <TopicNav idioma="aleman" nivel={level} slug={topic.slug}
+            indexLabel={`${clocks ? 'Gramática' : 'Grammatik'} ${levelLabel}`} uiLanguage={clocks ? 'es' : 'de'} />
+        </div>
+      </div>
+    </>
+  )
 }

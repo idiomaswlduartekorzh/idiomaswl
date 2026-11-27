@@ -111,6 +111,17 @@ pierde ese ejemplo en el PDF, y el propio PDF lo dice.
 - `VocabularyJourney` vive en las páginas de bloque, no en el índice del nivel:
   buscar el botón en el índice da cero y parece un fallo que no existe.
 
+## Cuadernos de la hora A1
+
+Cada idioma de `/practica/la-hora` ofrece una guía ilustrada, un cuaderno de seis niveles y sus soluciones. Los 24 PDF se sirven desde `/api/site-materials` con el acceso habitual de los materiales. Las siete series nuevas viven en `private/site-materials/<idioma>-a1/grammar/relojes/`. La serie alemana conserva sus nombres y enlaces.
+
+Para regenerar las siete series, exporta el contenido de la lección con el cargador del repositorio y ejecuta el generador con ReportLab y Pillow instalados. La guía incluye las escenas bilingües y el cuaderno deja los relojes de práctica sin resolver.
+
+```sh
+node --experimental-strip-types --loader ./tests/ts-paths-loader.mjs scripts/export-clock-lessons.mjs
+python3 scripts/generate-clock-materials.py
+```
+
 ## Pendiente
 
 - El piloto de Reading B2–C2 añadió caracteres japoneses y coreanos. Los recortes `welearn-ja-{400,700}.ttf` y `welearn-ko-{400,700}.ttf` se regeneraron el 10 de noviembre de 2026 desde Noto Sans oficiales; `check:pdf-fonts` confirmó cobertura. Las fuentes rusas existentes ya cubrían el texto nuevo y se conservaron.

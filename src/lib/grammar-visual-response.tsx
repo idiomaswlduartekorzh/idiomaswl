@@ -4,6 +4,7 @@ import { ImageResponse } from 'next/og'
 import GrammarVisualImage from '@/components/grammar/GrammarVisualImage'
 import { getTopicBySlug } from '@/data/grammar/registry'
 import { isGrammarVisualLanguage, isGrammarVisualLevel } from '@/lib/grammar-visual'
+import { clockInfographic } from '@/lib/clock-infographic'
 
 export type GrammarVisualParams = { idioma: string; nivel: string; slug: string }
 type ImageFont = { name: string; data: ArrayBuffer; weight: 400 | 700; style: 'normal' }
@@ -42,8 +43,22 @@ export async function renderGrammarVisual({ idioma, nivel, slug }: GrammarVisual
     return new Response('Imagen no encontrada', { status: 404 })
   }
 
-  const topic = getTopicBySlug(idioma, nivel, slug)
+  const standaloneClock = nivel === 'a1' && slug === 'la-hora' && idioma !== 'aleman'
+  const topic = standaloneClock
+    ? (await import('@/data/clock-lessons/lessons')).getClockLesson(idioma).topic
+    : getTopicBySlug(idioma, nivel, slug)
   if (!topic) return new Response('Imagen no encontrada', { status: 404 })
+
+  if (nivel === 'a1' && topic.visual.clocks) {
+    return new Response(clockInfographic(topic.visual.clocks, idioma), {
+      headers: {
+        'Content-Type': 'image/svg+xml; charset=utf-8',
+        'Cache-Control': 'public, max-age=86400, s-maxage=31536000, stale-while-revalidate=604800',
+        'Content-Disposition': `inline; filename="idiomaswl-${idioma}-${nivel}-${slug}.svg"`,
+        'X-WeLearn-Visual-System': 'clock-v1',
+      },
+    })
+  }
 
   const fonts = await loadFonts(idioma)
   const fontFamily = (FONT_PREFIXES[idioma] ?? ['ja']).map((prefix) => `WeLearn ${prefix}`).join(', ')

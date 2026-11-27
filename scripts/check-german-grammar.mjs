@@ -27,7 +27,8 @@ let totalTopics = 0
 let totalInteractions = 0
 
 for (const [level, topics] of Object.entries(levels)) {
-  assert.equal(topics.length, 20, `${level.toUpperCase()}: 20 Themen erwartet`)
+  const expectedTopics = level === 'a1' ? 21 : 20
+  assert.equal(topics.length, expectedTopics, `${level.toUpperCase()}: ${expectedTopics} Themen erwartet`)
   assert.equal(new Set(topics.map((topic) => topic.slug)).size, topics.length, `${level.toUpperCase()}: doppelte Slugs`)
   assert.deepEqual(topics.map((topic) => Number(topic.order)), Array.from({ length: topics.length }, (_, index) => index + 1), `${level.toUpperCase()}: Reihenfolge mit Lücken`)
 
@@ -81,6 +82,23 @@ for (const [level, topics] of Object.entries(levels)) {
     assert.ok(topic.guide.decisions.length >= 10, `${label}: Entscheidungsweg zu kurz`)
     assert.ok(interactions >= minimumInteractions, `${label}: nur ${interactions} Lernentscheidungen`)
 
+    if (topic.slug === 'uhrzeit') {
+      const clocks = topic.visual.clocks ?? []
+      const visualItems = topic.practice.levels.flatMap((stage) => stage.type === 'choice' || stage.type === 'dual' || stage.type === 'write' ? stage.items.filter((item) => item.clock) : [])
+      assert.ok(clocks.length >= 6, `${label}: seis relojes explicativos requeridos`)
+      assert.ok(clocks.every((clock) => clock.hourHint && clock.minuteHint && clock.note), `${label}: cada reloj debe explicar ambas agujas y la lectura`)
+      const conversations = topic.seo.flatMap((section) => section.clockConversations ?? [])
+      assert.ok(topic.seo.some((section) => section.clockReading) && conversations.length >= 3, `${label}: faltan la lectura guiada o las conversaciones`)
+      for (const scene of conversations) {
+        assert.ok(scene.alt && existsSync(path.join(ROOT, 'public/images/grammar/aleman/uhrzeit', scene.image + '.webp')), `${label}: falta la foto de ${scene.title}`)
+        assert.ok(scene.exchanges.length && scene.exchanges.every((turn) => turn.time && turn.question && turn.answer && turn.questionEs && turn.answerEs), `${label}: diálogo incompleto en ${scene.title}`)
+      }
+      assert.ok(topic.guide.clockTips?.length >= 5, `${label}: faltan los ejemplos de dudas frecuentes`)
+      assert.ok(visualItems.length >= 15, `${label}: faltan ejercicios con relojes`)
+      assert.ok([...clocks, ...visualItems.map((item) => item.clock)].every((clock) => Number.isInteger(clock.hour) && clock.hour >= 0 && clock.hour <= 23 && Number.isInteger(clock.minute) && clock.minute >= 0 && clock.minute <= 59 && clock.minute % 5 === 0), `${label}: hora de reloj inválida`)
+      assert.ok(topic.practice.levels.some((stage) => stage.type === 'write' && stage.items.some((item) => item.clock && item.strict)), `${label}: falta producción de hora con corrección exacta`)
+    }
+
     if (withAssets) {
       const root = path.join(ROOT, 'private', 'site-materials', `aleman-${level}`, 'grammar')
       const stem = topic.slug.endsWith(`-${level}`) ? `idiomaswl-${topic.slug}` : `idiomaswl-${topic.slug}-${level}`
@@ -98,4 +116,4 @@ for (const [level, topics] of Object.entries(levels)) {
   console.log(`✓ Deutsch ${level.toUpperCase()}: ${topics.length} Lektionen und ${levelInteractions} Lernentscheidungen.`)
 }
 
-console.log(`✓ Deutsch A1-B1: ${totalTopics} Lektionen und ${totalInteractions} Lernentscheidungen${withAssets ? ' mit 180 geprüften PDFs' : ''}.`)
+console.log(`✓ Deutsch A1-B1: ${totalTopics} Lektionen und ${totalInteractions} Lernentscheidungen${withAssets ? ` mit ${totalTopics * 3} geprüften PDFs` : ''}.`)

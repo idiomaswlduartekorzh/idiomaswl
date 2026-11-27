@@ -1,3 +1,4 @@
+import { clockHub, clockLanguageKeys, clockLessonUrl } from '@/data/clock-lessons/catalog';
 import type { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/blog';
 import { EXAMS } from '@/data/exams';
@@ -66,6 +67,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/metodo`, changeFrequency: 'monthly', priority: 0.9  },
     { url: `${BASE}/leccion`, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/practica`, changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${BASE}${clockHub}`, changeFrequency: 'monthly', priority: 0.76 },
+    ...clockLanguageKeys.filter(language => language !== 'aleman').map(language => ({ url: `${BASE}${clockLessonUrl(language)}`, changeFrequency: 'monthly' as const, priority: 0.72 })),
     { url: `${BASE}/podcasts`, changeFrequency: 'monthly', priority: 0.82 },
     { url: `${BASE}/nivel-radar`, changeFrequency: 'weekly',  priority: 0.95 },
 

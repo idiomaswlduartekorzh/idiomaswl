@@ -87,6 +87,8 @@ export default function PracticaClient() {
             </Link>
           </div>
 
+          <p><Link href="/practica/la-hora" className="wl-link">Practica la hora con relojes en ocho idiomas →</Link></p>
+
           {/* Global progress stats */}
           {globalStats && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', margin: '0.25rem 0 1.5rem', flexWrap: 'wrap' }}>

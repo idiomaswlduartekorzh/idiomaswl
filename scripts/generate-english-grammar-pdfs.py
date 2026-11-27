@@ -2,13 +2,16 @@
 """Generate the complete multilingual grammar workbook collection."""
 
 import json
+import math
 import os
 import re
 import shutil
+from io import BytesIO
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 from pypdf import PdfReader, PdfWriter
+from PIL import Image as PillowImage
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import A4
@@ -16,7 +19,8 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import BaseDocTemplate, Frame, KeepTogether, NotAtTopPageBreak as PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.graphics.shapes import Circle, Drawing, Line, String
+from reportlab.platypus import BaseDocTemplate, Frame, Image, KeepTogether, NotAtTopPageBreak as PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
 PDF_LANGUAGE = os.environ.get('GRAMMAR_PDF_LANGUAGE', 'english').lower()
@@ -604,6 +608,73 @@ def blank_text(text):
     return re.sub(r'_{3,}', '________________', expanded)
 
 
+def clock_description(clock):
+    """Text equivalent for the complete guide's compact exercise list."""
+    hour = clock['hour'] % 12 or 12
+    next_hour = hour % 12 + 1
+    minute = clock['minute']
+    minute_position = minute // 5 or 12
+    short_hand = f'en el {hour}' if minute == 0 else f'entre el {hour} y el {next_hour}'
+    return f'Reloj: aguja corta {short_hand}; minutero en el {minute_position}.'
+
+
+def clock_diagram(clock, size=27 * mm):
+    """Print the same precise hand positions as the interactive SVG clock."""
+    drawing = Drawing(size, size)
+    center = size / 2
+    radius = size * .46
+
+    def mark(angle, distance):
+        radians = math.radians(angle)
+        return center + math.sin(radians) * distance, center + math.cos(radians) * distance
+
+    drawing.add(Circle(center, center, radius, fillColor=colors.HexColor('#FFFDF5'), strokeColor=colors.HexColor('#242424'), strokeWidth=2))
+    for number in range(1, 13):
+        angle = number * 30
+        x1, y1 = mark(angle, radius * .83)
+        x2, y2 = mark(angle, radius * .94)
+        drawing.add(Line(x1, y1, x2, y2, strokeColor=colors.HexColor('#242424'), strokeWidth=1.1))
+        x, y = mark(angle, radius * .68)
+        drawing.add(String(x, y - 2.2, str(number), fontName='WeLearnEN-Bold', fontSize=6.4, textAnchor='middle', fillColor=colors.HexColor('#242424')))
+    hour_angle = ((clock['hour'] % 12) + clock['minute'] / 60) * 30
+    minute_angle = clock['minute'] * 6
+    hour_x, hour_y = mark(hour_angle, radius * .52)
+    minute_x, minute_y = mark(minute_angle, radius * .76)
+    drawing.add(Line(center, center, hour_x, hour_y, strokeColor=colors.HexColor('#244363'), strokeWidth=3.4))
+    drawing.add(Line(center, center, minute_x, minute_y, strokeColor=colors.HexColor('#BA4A32'), strokeWidth=2.1))
+    drawing.add(Circle(center, center, 2.2, fillColor=colors.HexColor('#242424'), strokeColor=None))
+    return drawing
+
+
+def clock_examples_table(examples):
+    if not examples:
+        return None
+    rows = []
+    for start in range(0, len(examples), 3):
+        cells = []
+        for example in examples[start:start + 3]:
+            cells.append([
+                clock_diagram(example, 27 * mm),
+                p(example['digital'], STYLES['small']),
+                p(example['spoken'], STYLES['example']),
+                p(example['meaning'], STYLES['small']),
+            ])
+        while len(cells) < 3:
+            cells.append('')
+        rows.append(cells)
+    table = Table(rows, colWidths=[56.3 * mm] * 3, hAlign='LEFT')
+    table.setStyle(TableStyle([
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ('BOX', (0, 0), (-1, -1), .55, LINE),
+        ('INNERGRID', (0, 0), (-1, -1), .45, LINE),
+        ('LEFTPADDING', (0, 0), (-1, -1), 7),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 7),
+        ('TOPPADDING', (0, 0), (-1, -1), 7),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 7),
+    ]))
+    return table
+
+
 def exercises_for(topic):
     exercises, answers, number = [], [], 1
     advanced = topic['level'].lower() in ('b2', 'c1', 'c2')
@@ -613,12 +684,16 @@ def exercises_for(topic):
         if kind == 'choice':
             for item in level['items']:
                 prompt = ' '.join(line[1] for line in item['lines'])
+                if item.get('clock'):
+                    prompt = f"{item['scene']}. {clock_description(item['clock'])} {prompt}"
                 exercises.append((number, title, blank_text(prompt)))
                 answers.append((number, item['answer'], item['explain']))
                 number += 1
         elif kind == 'dual':
             for item in level['items']:
                 prompt = blank_text(' '.join(line[1] for line in item['lines']))
+                if item.get('clock'):
+                    prompt = f"{item['scene']}. {clock_description(item['clock'])} {prompt}"
                 exercises.append((number, title, prompt))
                 answers.append((number, ' / '.join(blank['answer'] for blank in item['blanks']), ' '.join(blank['explain'] for blank in item['blanks'])))
                 number += 1
@@ -628,7 +703,10 @@ def exercises_for(topic):
             number += 1
         elif kind == 'write':
             for item in level['items']:
-                exercises.append((number, title, f"{item['prompt']}\n\n____________________________________________________________"))
+                prompt = f"{item['prompt']}\n\n____________________________________________________________"
+                if item.get('clock'):
+                    prompt = f"{item['scene']}. {clock_description(item['clock'])} {prompt}"
+                exercises.append((number, title, prompt))
                 answers.append((number, item['answer'], item['explain']))
                 number += 1
     return exercises, answers
@@ -692,7 +770,7 @@ def practice_box(code, scene, prompt, options=None, lines=0, background=WHITE):
     return table
 
 
-def worksheet_item(code, prompt, lines=0):
+def worksheet_item(code, prompt, lines=0, clock=None):
     """A quiet worksheet row: one task, ample writing room, no embedded hints."""
     code_style = ParagraphStyle(
         f'worksheet_code_{code}', parent=STYLES['eyebrow'], fontSize=8,
@@ -703,6 +781,8 @@ def worksheet_item(code, prompt, lines=0):
         leading=15.5, spaceAfter=0,
     )
     content = [p(blank_text(prompt), prompt_style)]
+    if clock:
+        content.insert(0, clock_diagram(clock))
     for _ in range(lines):
         content.append(Spacer(1, 3.8 * mm))
         content.append(p('____________________________________________________________________', STYLES['small']))
@@ -1002,29 +1082,34 @@ def build_exercises_only_story(topic):
     story = compact_exercise_cover(topic)
     levels = topic['practice']['levels']
     for level_index, level in enumerate(levels):
-        story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'), level['title'], level['intro'])]
+        print_intro = level['intro']
+        if any(item.get('clock') for item in level.get('items', [])):
+            print_intro = 'Lee el reloj (azul = hora; rojo = minutos) y escribe la respuesta sin opciones. Corrige al terminar el nivel.'
+        story += [PageBreak(), *section_heading(f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'), level['title'], print_intro)]
         prefix = chr(ord('A') + level_index) if level_index < 26 else f'S{level_index + 1}'
         if level['type'] == 'choice':
             for index, item in enumerate(level['items'], 1):
-                if index > 1 and (index - 1) % 6 == 0:
+                if index > 1 and (index - 1) % 6 == 0 and not item.get('clock'):
                     story += [PageBreak(), *section_heading(
                         f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'),
-                        level['title'], level['intro'],
+                        level['title'], print_intro,
                     )]
-                story += [worksheet_item(f'{prefix}{index}', ' '.join(line[1] for line in item['lines']))]
+                prompt = f"{item['scene']}. " + ' '.join(line[1] for line in item['lines']) if item.get('clock') else ' '.join(line[1] for line in item['lines'])
+                story += [worksheet_item(f'{prefix}{index}', prompt, clock=item.get('clock'))]
         elif level['type'] == 'dual':
             for index, item in enumerate(level['items'], 1):
-                if index > 1 and (index - 1) % 6 == 0:
+                if index > 1 and (index - 1) % 6 == 0 and not item.get('clock'):
                     story += [PageBreak(), *section_heading(
                         f'{level_index + 1:02d}', l('Practice stage', 'Étape de pratique'),
-                        level['title'], level['intro'],
+                        level['title'], print_intro,
                     )]
-                story += [worksheet_item(f'{prefix}{index}', ' '.join(line[1] for line in item['lines']))]
+                prompt = f"{item['scene']}. " + ' '.join(line[1] for line in item['lines']) if item.get('clock') else ' '.join(line[1] for line in item['lines'])
+                story += [worksheet_item(f'{prefix}{index}', prompt, clock=item.get('clock'))]
         elif level['type'] in ('guidedText', 'freeText'):
             story += [worksheet_item(f'{prefix}1', level['text'], lines=3 if level['type'] == 'freeText' else 1)]
         else:
             for index, item in enumerate(level['items'], 1):
-                story += [worksheet_item(f'{prefix}{index}', item['prompt'], lines=3 if level_index == 5 else 2)]
+                story += [worksheet_item(f'{prefix}{index}', item['prompt'], lines=3 if level_index == 5 else 2, clock=item.get('clock'))]
     story += [PageBreak(), *section_heading('07', l('Retrieval', 'Rappel actif'), l('Final self-check', 'Autoévaluation finale'), l('Complete these prompts without reopening the guide.', 'Répondez sans rouvrir le cours.'))]
     focus_prompts = [
         l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.')
@@ -1242,6 +1327,31 @@ def build_story(topic):
     for section in topic['seo']:
         block = [p(section['heading'], STYLES['h2'])] + [p(paragraph, STYLES['body']) for paragraph in section.get('paragraphs', [])]
         story.append(KeepTogether(block))
+        if section.get('clockReading'):
+            example = next(clock for clock in topic['visual']['clocks'] if clock['minute'] == 30)
+            reading = [p(f"{example['digital']} · Es ist {example['spoken']}.", STYLES['example']),
+                       p('Aguja corta. ' + example['hourHint'], STYLES['body']),
+                       p('Aguja larga. ' + example['minuteHint'], STYLES['body']),
+                       p(example['note'], STYLES['body'])]
+            story.append(Table([[clock_diagram(example, 32 * mm), reading]], colWidths=[40 * mm, 125 * mm],
+                               style=TableStyle([('VALIGN', (0, 0), (-1, -1), 'MIDDLE')])))
+        for scene in section.get('clockConversations', []):
+            photo = ROOT / 'public' / 'images' / 'grammar' / 'aleman' / 'uhrzeit' / (scene['image'] + '.webp')
+            photo_data = BytesIO()
+            with PillowImage.open(photo) as original:
+                original.thumbnail((576, 384), PillowImage.Resampling.LANCZOS)
+                original.convert('RGB').save(photo_data, 'JPEG', quality=84)
+            photo_data.seek(0)
+            dialogue = [p(scene['title'], STYLES['h2']), p(scene['setting'], STYLES['body'])]
+            for exchange in scene['exchanges']:
+                dialogue += [p(exchange['time'], STYLES['small']),
+                             p(exchange['question'] + ' — ' + exchange['answer'], STYLES['example']),
+                             p(exchange['questionEs'] + ' — ' + exchange['answerEs'], STYLES['body'])]
+            story.append(Table([[Image(photo_data, width=49 * mm, height=49 * mm * 2 / 3), dialogue]],
+                               colWidths=[54 * mm, 113 * mm], style=TableStyle([
+                                   ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                                   ('TOPPADDING', (0, 0), (-1, -1), 6),
+                                   ('BOTTOMPADDING', (0, 0), (-1, -1), 6)])))
         if section.get('table'):
             # The following heading already supplies vertical rhythm. A trailing
             # spacer can spill onto an otherwise empty page immediately before
@@ -1249,8 +1359,11 @@ def build_story(topic):
             story += [Spacer(1, 2 * mm), data_table(section['table'])]
     story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['glance'], STYLES['title']), info_box(labels['formula'], topic['guide']['formula'], CREAM, 'formula'), Spacer(1, 4 * mm), p(labels['order'], STYLES['h1'])]
     story.extend(p(f'{index}. {decision}', STYLES['body']) for index, decision in enumerate(topic['guide']['decisions'], 1))
-    story += [Spacer(1, 2 * mm), data_table(topic['guide']['table']), Spacer(1, 3 * mm), p(labels['errors'], STYLES['h2'])]
-    story.extend(p(f'× {mistake}', STYLES['body']) for mistake in topic['guide']['mistakes'])
+    tips = topic['guide'].get('clockTips')
+    story += [Spacer(1, 2 * mm), data_table(topic['guide']['table'])]
+    if not tips:
+        story += [Spacer(1, 3 * mm), p(labels['errors'], STYLES['h2'])]
+        story.extend(p(f'× {mistake}', STYLES['body']) for mistake in topic['guide']['mistakes'])
     examples_copy = 'Cover the second column, reconstruct the pattern, and explain why the inversion is required.' if advanced else 'Tapa la columna en español, explica el sentido y lee el ejemplo en voz alta.'
     if IS_ITALIAN and not advanced:
         examples_copy = 'Copri la seconda colonna, ricostruisci lo schema e spiega ad alta voce quale scelta controlla la forma.'
@@ -1259,7 +1372,25 @@ def build_story(topic):
     if IS_RUSSIAN and not advanced: examples_copy='Закройте второй столбец, восстановите модель и вслух объясните, какое решение управляет формой.'
     if IS_KOREAN and not advanced: examples_copy='두 번째 열을 가리고 구조를 복원한 뒤, 어떤 판단이 형태를 결정하는지 소리 내어 설명하세요.'
     if IS_JAPANESE and not advanced: examples_copy='二列目を隠して型を再現し、どの判断が形を決めるのか声に出して説明してください。'
-    story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']), p(examples_copy, STYLES['lead']), examples_table(topic['visual']['scene']), PageBreak()]
+    if tips:
+        story += [PageBreak(), p('De las tres a las cuatro', STYLES['title']),
+                  p('Sigue la aguja larga y di cada hora en voz alta.', STYLES['lead']),
+                  clock_examples_table(topic['visual']['clocks']), Spacer(1, 5 * mm),
+                  p('Dudas frecuentes al decir la hora', STYLES['h1'])]
+        for tip in tips:
+            group = [p(tip['cue'] + ' · ' + tip['example'], STYLES['example']), p(tip['explanation'], STYLES['body'])]
+            if tip.get('comparison'):
+                pairs = [[clock_diagram(clock, 19 * mm),
+                          p(clock['digital'] + ' · ' + clock['spoken'], STYLES['body'])] for clock in tip['comparison']]
+                group.append(Table([pairs], colWidths=[55 * mm] * len(pairs), hAlign='LEFT'))
+            story.append(KeepTogether(group))
+        story.append(PageBreak())
+    else:
+        story += [PageBreak(), p(labels['map'], STYLES['eyebrow']), p(labels['examples'], STYLES['title']),
+                  p(examples_copy, STYLES['lead'])]
+        if topic['visual'].get('clocks'):
+            story += [clock_examples_table(topic['visual']['clocks']), Spacer(1, 4 * mm)]
+        story += [examples_table(topic['visual']['scene']), PageBreak()]
     exercises, answers = exercises_for(topic)
     exercise_copy = f'{len(exercises)} printable exercises. Work without checking the answer key.' if advanced else f'{len(exercises)} ejercicios imprimibles. Trabaja sin consultar las soluciones.'
     if IS_ITALIAN and not advanced:
@@ -1295,22 +1426,23 @@ def build_story(topic):
     if IS_RUSSIAN and not advanced: closing_copy='Напишите три новых предложения, прочитайте их вслух и вернитесь к визуальной карте через сутки.'
     if IS_KOREAN and not advanced: closing_copy='새 문장 세 개를 쓰고 소리 내어 읽은 뒤, 하루 안에 시각 지도를 다시 확인하세요.'
     if IS_JAPANESE and not advanced: closing_copy='新しい文を三つ書いて声に出して読み、24時間以内に視覚マップをもう一度確認してください。'
-    review_rows = [[
-        l('Review focus', 'Point de révision'),
-        l('Retrieval', 'Rappel actif'),
-        l('Feedback', 'Rétroaction'),
-    ]]
-    for index, focus in enumerate((topic['visual'].get('reviewFocus') or [topic['guide']['formula']])[:4]):
-        review_rows.append([
-            focus,
-            l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.'),
-            topic['guide']['decisions'][index % len(topic['guide']['decisions'])],
-        ])
+    if tips:
+        review_rows = [['Si quieres decir…', 'Comprueba tu respuesta']] + [
+            [tip['cue'], tip['example']] for tip in tips[:4]
+        ]
+    else:
+        review_rows = [[l('Review focus', 'Point de révision'), l('Retrieval', 'Rappel actif'), l('Feedback', 'Rétroaction')]]
+        for index, focus in enumerate((topic['visual'].get('reviewFocus') or [topic['guide']['formula']])[:4]):
+            review_rows.append([
+                focus,
+                l(f'Explain and exemplify: {focus}.', f'Expliquez et illustrez : {focus}.'),
+                topic['guide']['decisions'][index % len(topic['guide']['decisions'])],
+            ])
     story += [
         Spacer(1, 4 * mm),
         info_box(labels['close'], closing_copy, PALE_BLUE),
         Spacer(1, 5 * mm),
-        p(l('Retrieval', 'Rappel actif'), STYLES['h1']),
+        p('Repaso en voz alta' if tips else l('Retrieval', 'Rappel actif'), STYLES['h1']),
         data_table(review_rows),
     ]
     return story

@@ -1,3 +1,5 @@
+import { ClockLessonEntry } from '@/components/grammar/ClockLessonEntry'
+import { clockLanguages } from '@/data/clock-lessons/catalog'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -123,6 +125,7 @@ export default async function GrammarTopicPage({ params }: Props) {
             <span>/</span>
             <span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span>
           </nav>
+          {topic.slug === clockLanguages.japones.related && <ClockLessonEntry language="japones" />}
 
           {scriptLesson ? (
             <><JapaneseScriptLesson scriptId={scriptLesson.id} /><GrammarTopicVisual topic={topic} idioma={IDIOMA} nivel={NIVEL} /></>

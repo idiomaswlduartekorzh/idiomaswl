@@ -1,0 +1,32 @@
+.face { display: block; width: min(100%, 190px); height: auto; flex: none; }
+.rim { fill: #242424; }
+.dial { fill: #fffdf5; }
+.majorTick { stroke: #242424; stroke-width: 2.4; stroke-linecap: round; }
+.minorTick { stroke: #999084; stroke-width: 1; stroke-linecap: round; }
+.numeral { fill: #242424; font-size: 16px; font-weight: 800; font-family: Arial, sans-serif; }
+.hourHand { stroke: #244363; stroke-width: 7; stroke-linecap: round; }
+.minuteHand { stroke: #ba4a32; stroke-width: 4; stroke-linecap: round; }
+.pin { fill: #242424; }
+.gallery { margin: 1rem 0; }
+.legend { display: flex; gap: .5rem 1.1rem; flex-wrap: wrap; margin: 0 0 .75rem; color: var(--ink); font-size: .9rem; font-weight: 650; }
+.legend > span { display: inline-flex; align-items: center; gap: .45rem; }
+.hourKey, .minuteKey { display: inline-block; width: 1.15rem; height: .25rem; border-radius: 1rem; }
+.hourKey { background: var(--clock-short, #244363); }
+.minuteKey { width: 1.65rem; height: .18rem; background: var(--clock-long, #ba4a32); }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; }
+.card { min-width: 0; margin: 0; padding: clamp(.85rem, 1.7vw, 1.35rem); border: 1px solid var(--clock-line, var(--line-soft)); border-radius: 14px; background: var(--clock-paper, var(--surface)); }
+.cardTop { display: flex; align-items: center; gap: clamp(.65rem, 1.6vw, 1.3rem); }
+.card .face { width: clamp(108px, 11vw, 138px); }
+.card .face text { font-size: 18px; }
+.digital { color: var(--clock-accent, #805516); font: 650 clamp(.95rem, 1.9vw, 1.32rem)/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+.card figcaption { display: grid; gap: .2rem; margin-top: .75rem; color: var(--muted); line-height: 1.5; }
+.card strong { color: var(--ink); font-size: 1.12rem; line-height: 1.4; }
+.analogNote { margin: .85rem 0 0; color: var(--muted); line-height: 1.55; }
+@media (max-width: 800px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) {
+  .grid { grid-template-columns: 1fr; }
+  .card { display: grid; align-items: center; grid-template-columns: auto minmax(0, 1fr); gap: .9rem; }
+  .cardTop { flex-direction: column; gap: .25rem; }
+  .card .face { width: clamp(88px, 24vw, 108px); }
+  .card figcaption { margin: 0; }
+}

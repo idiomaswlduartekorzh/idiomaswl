@@ -7,7 +7,7 @@ const languages = ['ingles', 'frances', 'aleman', 'italiano', 'portugues', 'ruso
 const minimumTopics = {
   ingles: { a1: 25, a2: 20, b1: 20 },
   frances: { a1: 20, a2: 20, b1: 20 },
-  aleman: { a1: 20, a2: 20, b1: 20 },
+  aleman: { a1: 21, a2: 20, b1: 20 },
   italiano: { a1: 20, a2: 20, b1: 20 },
   portugues: { a1: 20, a2: 20, b1: 20 },
   ruso: { a1: 20, a2: 20, b1: 20 },

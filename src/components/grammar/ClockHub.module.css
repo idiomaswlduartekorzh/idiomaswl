@@ -1,0 +1,22 @@
+.hub { max-width: 1090px; margin: 0 auto; padding: clamp(1.6rem, 5vw, 4rem) 0 4rem; color: var(--ink); }
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; align-items: stretch; overflow: hidden; border: 1px solid var(--line-soft); border-radius: 20px; background: var(--surface, white); }
+.heroCopy { padding: clamp(1.5rem, 4.5vw, 3.5rem); align-self: center; }
+.heroCopy h1 { font-size: clamp(2.3rem, 5.2vw, 4.8rem); line-height: 1.01; letter-spacing: -.055em; margin: .6rem 0 .85rem; }
+.heroCopy p { line-height: 1.6; color: var(--muted); max-width: 39ch; margin: 0; }
+.heroCopy > span { font: 650 .85rem var(--mono); color: var(--muted); }
+.photo { position: relative; display: grid; min-height: 210px; justify-items: center; align-items: center; overflow: hidden; }
+.photo img { object-fit: cover; }
+.photo svg { position: relative; z-index: 1; width: clamp(130px, 15vw, 185px); border-radius: 50%; box-shadow: 0 7px 35px #251b1559; }
+.hub h2 { font-size: clamp(1.55rem, 3vw, 2.25rem); margin: 2rem 0 .85rem; letter-spacing: -.035em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,210px),1fr)); gap: .85rem; }
+.card,.entry { border-radius: 12px; border: 1px solid var(--line-soft); background: var(--surface,white); text-decoration: none; color: var(--ink); }
+.card { display: grid; align-content: start; gap: .45rem; padding: 1.25rem; min-height: 7rem; }
+.card strong,.entry strong { display: block; font-size: 1.15rem; }
+.card span { color: var(--muted); line-height: 1.45; }
+.card:is(:hover,:focus-visible),.entry:is(:hover,:focus-visible) { border-color: var(--ink); }
+.card:focus-visible,.entry:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.entry { display:flex; justify-content: space-between; align-items:center; gap:1.25rem; padding:1rem 1.3rem; margin:1.2rem 0; }
+.entry small { display:block; color:var(--muted); font-size:.95rem; margin-top:.15rem; }
+.crumbs { display:flex; flex-wrap:wrap; gap:.5rem; padding-top:1.2rem; color:var(--muted); font-size:.9rem; }
+.crumbs a { color:inherit; }
+@media (max-width: 650px) { .hero { grid-template-columns: 1fr; } .photo { min-height: 155px; } }
