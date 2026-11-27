@@ -5,13 +5,14 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
-## La hora en los ocho idiomas de gramática A1 — 26 de noviembre de 2026
+## La hora en los ocho idiomas de gramática A1 — 26 y 27 de noviembre de 2026
 
 - Estado `EN_VALIDACION` en el [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67). El índice es `/practica/la-hora`. Cada colección A1 enlaza a su taller y la ruta de alemán sigue siendo `/practica/aleman/a1/gramatica/uhrzeit`.
 - Inglés, francés, italiano, portugués de Brasil, coreano, japonés y ruso tienen ejemplos y explicaciones propios. Los ocho talleres incluyen seis relojes seleccionables, una lámina, conversaciones bilingües en tres escenas y práctica en seis niveles. Coreano, japonés y ruso añaden una lectura en letras latinas.
 - Las guías, los cuadernos y las soluciones usan los mismos ejemplos que la web. Se añadieron 21 PDF a los tres de alemán. Se revisaron los caracteres, las manecillas y la paginación de las siete series nuevas.
 - Las respuestas escritas se comprueban por hora y contexto. En alemán se admiten «Um drei.» y «Es ist zehn Minuten nach fünf.» donde corresponden. El último nivel comprueba la hora indicada en cada situación.
 - El recorrido local de Chromium completó los 48 niveles, con 328 respuestas modelo y un segundo intento con horas erróneas en el nivel final de cada idioma. WebKit verificó el selector y el avance de la primera pregunta en los ocho talleres.
+- El 27 de noviembre se preparó la integración desde `main@e238a3395`. El control de producción comprueba el índice público y las ocho lecciones, y conserva la auditoría de relojes en el proceso de compilación.
 
 ## La hora en alemán A1 — actualización del 25 de noviembre de 2026
 
