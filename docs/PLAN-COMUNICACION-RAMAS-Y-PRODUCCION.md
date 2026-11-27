@@ -155,9 +155,11 @@ Fecha de corte: 25 de agosto de 2026.
 ## Práctica de ajedrez: mates, tácticas y aperturas — 25 de noviembre de 2026
 
 - Trabajo `ajedrez-mates-tacticas-aperturas-20261125`, responsable Codex. Estado
-  `LISTO_PARA_INTEGRAR`; rama `codex/ajedrez-mates-tacticas-aperturas-20261125`, creada
-  desde `origin/main@5793e1f24` y actualizada hasta `origin/main@ab241cd44`.
-  No está integrada ni desplegada.
+  `DESPLEGADO`; rama `codex/ajedrez-mates-tacticas-aperturas-20261125@445f401aa`,
+  creada desde `origin/main@5793e1f24` y actualizada hasta
+  `origin/main@ab241cd44`. Integrada por squash en el
+  [PR #73](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/73) como
+  `main@25873b981e5cdda924faac71ed3407ac7a4215ff`.
 - Alcance: menú funcional de mates, tácticas, aperturas y finales; siete líneas
   guiadas de la Italiana con blancas y ocho de la Caro-Kann con negras; respuesta
   rival automática, explicación por jugada, selector accesible de movimientos y
@@ -171,6 +173,13 @@ Fecha de corte: 25 de agosto de 2026.
   de reconciliar la rama con `main`. La actualización puntual de Next.js evita
   el bloqueo de CI por la [alerta corregida en 16.4.5](https://github.com/advisories/GHSA-mfr8-8qww-v76h).
   [Estado técnico](ajedrez-estado.md).
+- Producción: Vercel marcó exitoso el
+  [despliegue de `main@25873b981`](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/ATT3rb1prK6wRfdvi2h9kZApzmpq).
+  La [práctica pública](https://www.idiomaswl.com/kids/ingles-ajedrez/practica)
+  sirvió el menú nuevo y la atribución de las piezas. En Chrome, Firefox y
+  WebKit se completaron una línea Italiana, una Caro-Kann y un mate; el progreso
+  persistió tras recargar y no hubo errores de página ni desbordamiento móvil.
+  La ruta integrada de Next.js respondió HTTP 200 en los tres motores.
 
 ## Preparación con tutor desde Exámenes — 24 de noviembre de 2026
 

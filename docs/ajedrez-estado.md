@@ -55,5 +55,10 @@ No se presenta como repertorio universal frente a todas las primeras jugadas.
   El toque de dos casillas para mover una pieza pasó en Chrome y WebKit móvil.
 
 La validación se hizo con el servidor de archivos estáticos y con la ruta real
-de Next.js. La integración en `main`, el despliegue de Vercel y la prueba de
-producción se registrarán en el plan operativo cuando ocurran.
+de Next.js. El [PR #73](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/73)
+se integró en `main@25873b981e5cdda924faac71ed3407ac7a4215ff` el 26 de
+noviembre de 2026. Vercel publicó ese commit y la ruta pública respondió HTTP
+200. Chrome, Firefox y WebKit completaron en producción una línea de cada
+apertura y un mate, conservaron el progreso tras recargar y no mostraron
+errores ni desbordamiento a 390 px. La evidencia de despliegue está en el plan
+operativo.
