@@ -10,6 +10,7 @@
     "kind": "academic-agent",
     "id": "/root/revision_set1"
   },
+  "reviewerScope": "La revisión de esta fecha y de este agente cubre únicamente Reading 1 (r1q1). Los otros 79 puntos objetivos conservan su evidencia y autoría anteriores en retainedObjectiveReview.",
   "independentReview": {
     "reviewer": { "kind": "academic-agent", "id": "/root/objective_reviewer_final2" },
     "reviewedAt": "2026-10-20",
@@ -2518,7 +2519,7 @@
       "reviewer": { "kind": "academic-agent", "id": "/root/revision_set1" },
       "reviewedAt": "2026-11-26",
       "evidencePath": "config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json",
-      "evidenceSha256": "cffd9756ab39a5d9d54ce0cb13a6b3304439ff2a98f0478df6350cdfe8c02f29"
+      "evidenceSha256": "c65d737d9a9b30087659a5b6f02ea7ac0c1d696a3331cc1848ad5abdf50490b6"
     },
     {
       "skill": "reading",
@@ -4064,7 +4065,7 @@
     "reviewer": { "kind": "academic-agent", "id": "/root/revision_set1" },
     "reviewedAt": "2026-11-26",
     "evidencePath": "config/ielts-harness/academic-reviews/set-4-reading-1-2026-11-26.json",
-    "evidenceSha256": "cffd9756ab39a5d9d54ce0cb13a6b3304439ff2a98f0478df6350cdfe8c02f29"
+    "evidenceSha256": "c65d737d9a9b30087659a5b6f02ea7ac0c1d696a3331cc1848ad5abdf50490b6"
   },
-  "reviewSha256": "4e42559b2475eda7d94da338a051249346fc34a7d71e51bd95a5d55666830b3a"
+  "reviewSha256": "2653d7d1205c1a2f2457c424ecbeefd440e1aa402f06c434a55820ce4461c5bd"
 }

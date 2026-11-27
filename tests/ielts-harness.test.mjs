@@ -363,7 +363,7 @@ test('regenerating the twenty dossiers preserves reviewed files and isolates a m
   for (const directory of ['scripts', 'config']) {
     fs.cpSync(path.join(repo, directory), path.join(clone, directory), { recursive: true });
   }
-  for (const directory of ['src', 'public', 'tests']) {
+  for (const directory of ['src', 'public', 'tests', 'docs']) {
     fs.symlinkSync(path.join(repo, directory), path.join(clone, directory), 'dir');
   }
   const harness = path.join(clone, 'config/ielts-harness');

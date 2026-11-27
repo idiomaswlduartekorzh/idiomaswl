@@ -32,8 +32,8 @@
   },
   "academicReview": {
     "path": "config/ielts-harness/academic-reviews/set-4-objective-review.json",
-    "fileSha256": "d69f3664b36ece5ce3dd0df041cc39470c6c71de131d44e541daf92b8931a608",
-    "reviewSha256": "4e42559b2475eda7d94da338a051249346fc34a7d71e51bd95a5d55666830b3a"
+    "fileSha256": "d2b2ae3709c638a11564918857235bc4c8aed7cdc7a058f2a6fc454c06137965",
+    "reviewSha256": "2653d7d1205c1a2f2457c424ecbeefd440e1aa402f06c434a55820ce4461c5bd"
   },
   "asr": {
     "qaPath": "config/ielts-harness/listening-evidence/sources/set-4/59007598e855-staged-asr-qa-set-4.json",
@@ -906,5 +906,5 @@
     "supported": 40,
     "unresolved": 0
   },
-  "artifactSha256": "6a76948f97751e6c75a5ee26af0afdfd0e86885a3f2a22470de41ea3c1c7064a"
+  "artifactSha256": "7278d5f6151f4f77fbe6b2a1c484888f18692e539f5bc4c7e7c979f6e217c895"
 }
