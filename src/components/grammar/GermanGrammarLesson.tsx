@@ -8,6 +8,7 @@ import GrammarTopicClient from '@/components/grammar/GrammarTopicClient'
 import GrammarTopicVisual from '@/components/grammar/GrammarTopicVisual'
 import { protectedMaterialHref } from '@/lib/material-download'
 import styles from './KoreanGrammarLesson.module.css'
+import germanStyles from './GermanGrammarLesson.module.css'
 
 type SectionId = 'verstehen' | 'karte' | 'schritte' | 'uebungen' | 'materialien'
 const sections: Array<{ id: SectionId; number: string; label: string }> = [
@@ -52,7 +53,39 @@ export default function GermanGrammarLesson({ topic, level }: { topic: GrammarTo
     <nav id="german-grammar-nav" className={styles.tabs} aria-label="Inhalt der Lektion">{sections.map((section) => <button key={section.id} type="button" data-german-section={section.id} className={active === section.id ? styles.active : ''} onClick={() => selectSection(section.id)}><span>{section.number}</span>{section.label}</button>)}</nav>
 
     <div className={styles.panel}>
-      {active === 'verstehen' ? <article className={styles.article}><SectionIntro kicker="Pädagogische Erklärung" title={topic.title} copy={topic.description} /><div className={styles.outcomeGrid}>{topic.outcomes.map((outcome, index) => <div key={outcome}><span>{index + 1}</span><p>{outcome}</p></div>)}</div>{topic.seo.map((section) => <section key={section.heading} className={styles.explainBlock}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.table ? <ReferenceTable rows={section.table} /> : null}{section.examples ? <div className={styles.exampleRows}>{section.examples.map((row, rowIndex) => <div key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <span key={`${cellIndex}-${cell}`}>{cell}</span>)}</div>)}</div> : null}</section>)}</article> : null}
+      {active === 'verstehen' ? (
+        <article className={styles.article}>
+          <SectionIntro kicker="Pädagogische Erklärung" title={topic.title} copy={topic.description} />
+          <div className={styles.outcomeGrid}>
+            {topic.outcomes.map((outcome, index) => (
+              <div key={outcome}><span>{index + 1}</span><p>{outcome}</p></div>
+            ))}
+          </div>
+          {topic.seo.map((section) => (
+            <section key={section.heading} className={styles.explainBlock}>
+              <h2>{section.heading}</h2>
+              {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {section.table ? <ReferenceTable rows={section.table} /> : null}
+              {section.tables ? (
+                <div className={germanStyles.tableGrid}>
+                  {section.tables.map(({ caption, rows }) => (
+                    <ReferenceTable key={caption} caption={caption} rows={rows} />
+                  ))}
+                </div>
+              ) : null}
+              {section.examples ? (
+                <div className={styles.exampleRows}>
+                  {section.examples.map((row, rowIndex) => (
+                    <div key={`${rowIndex}-${row.join('|')}`}>
+                      {row.map((cell, cellIndex) => <span key={`${cellIndex}-${cell}`}>{cell}</span>)}
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+            </section>
+          ))}
+        </article>
+      ) : null}
 
       {active === 'karte' ? <section className={styles.visualSection} aria-labelledby="german-visual-title"><SectionIntro kicker="Visuelles Labor" title="Die Regel auf einen Blick" copy={topic.visual.teacherLens} titleId="german-visual-title" /><div className={styles.formula} aria-label={`Formel: ${topic.guide.formula}`}>{formulaParts.map((part, index) => <div key={`${part}-${index}`} style={{ '--delay': `${index * 90}ms` } as React.CSSProperties}><span>{String(index + 1).padStart(2, '0')}</span><b>{part}</b></div>)}</div><div className={styles.sceneGrid}>{topic.visual.scene.map(([pattern, meaning], index) => <div key={pattern} style={{ '--delay': `${index * 110}ms` } as React.CSSProperties}><strong lang="de">{pattern}</strong><span>→</span><p>{meaning}</p></div>)}</div><ReferenceTable rows={topic.guide.table} /><div className={styles.modeRow}>{topic.visual.learnerModes.map((mode) => <span key={mode}>{mode}</span>)}</div></section> : null}
 
@@ -73,7 +106,35 @@ export default function GermanGrammarLesson({ topic, level }: { topic: GrammarTo
 }
 
 function SectionIntro({ kicker, title, copy, titleId }: { kicker: string; title: string; copy?: string; titleId?: string }) { return <div className={styles.sectionIntro}><div><span>{kicker}</span><h2 id={titleId}>{title}</h2></div>{copy ? <p>{copy}</p> : null}</div> }
-function ReferenceTable({ rows }: { rows: string[][] }) { if (!rows.length) return null; return <div className={styles.tableWrap} role="region" aria-label="Referenztabelle" tabIndex={0}><table><thead><tr>{rows[0].map((cell, index) => <th key={`${index}-${cell}`}>{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={`${rowIndex}-${row.join('|')}`}>{row.map((cell, cellIndex) => <td key={`${cellIndex}-${cell}`}>{cell}</td>)}</tr>)}</tbody></table></div> }
+function ReferenceTable({ rows, caption }: { rows: string[][]; caption?: string }) {
+  const [headers, ...body] = rows
+  if (!headers) return null
+
+  const scrollRegion = caption ? {} : { role: 'region', 'aria-label': 'Referenztabelle', tabIndex: 0 }
+
+  return (
+    <div className={styles.tableWrap} {...scrollRegion}>
+      <table>
+        {caption ? <caption lang="de">{caption}</caption> : null}
+        <thead>
+          <tr>
+            {headers.map((cell, index) => <th key={`${index}-${cell}`} scope="col">{cell}</th>)}
+          </tr>
+        </thead>
+        <tbody lang={caption ? 'de' : undefined}>
+          {body.map((row, rowIndex) => (
+            <tr key={`${rowIndex}-${row.join('|')}`}>
+              {row.map((cell, cellIndex) => caption && cellIndex === 0
+                ? <th key={cell} scope="row">{cell}</th>
+                : <td key={`${cellIndex}-${cell}`}>{cell}</td>
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
 function ResourceCard({ code, title, copy, status, href }: { code: string; title: string; copy: string; status: string; href?: string }) { return <div><span className={styles.resourceIcon}>{code}</span><div><strong>{title}</strong><p>{copy}</p>{href ? <a className="korean-resource-action" href={protectedMaterialHref(href)} download>{status}</a> : <em>{status}</em>}</div></div> }
 function heroWords(topic: GrammarTopic): string[] { return Array.from(new Set(topic.visual.scene.flatMap(([left, right]) => [left, right]).filter(Boolean))).slice(0, 4) }
 function countPracticeActivities(topic: GrammarTopic): number { return topic.practice.levels.reduce((total, level) => { if (level.type === 'dual') return total + level.items.reduce((sum, item) => sum + item.blanks.length, 0); if (level.type === 'choice' || level.type === 'write') return total + level.items.length; return total + level.blanks.length }, 0) }

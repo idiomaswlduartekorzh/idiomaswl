@@ -58,8 +58,82 @@ const topic: GrammarTopic = {
     {
       heading: '¿Cómo se conjugan los verbos modales en alemán?',
       paragraphs: [
-        'Los modales son irregulares de una manera especial: las formas de ich y er/sie/es son idénticas y no llevan terminación. Ich kann = er kann. Ich muss = sie muss. Ich will = es will. Esto los diferencia de los verbos regulares donde er/sie/es lleva -t.',
-        'La conjugación completa de können como modelo: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können. Nota que wir/sie/Sie recuperan el infinitivo (können), igual que los verbos regulares.',
+        'En presente, los seis modales tienen la misma forma para ich y er/sie/es, sin terminación. Las formas de wir, sie (ellos/ellas) y Sie (usted/ustedes) coinciden con el infinitivo.',
+        'Mögen expresa gusto, como en Ich mag Tee (Me gusta el té). Möchten sirve para expresar un deseo o pedir algo con cortesía, como en Ich möchte Tee (Quisiera té).',
+      ],
+      tables: [
+        {
+          caption: 'können',
+          rows: [
+            ['Pronombre', 'Forma'],
+            ['ich', 'kann'],
+            ['du', 'kannst'],
+            ['er / sie / es', 'kann'],
+            ['wir', 'können'],
+            ['ihr', 'könnt'],
+            ['sie / Sie', 'können'],
+          ],
+        },
+        {
+          caption: 'müssen',
+          rows: [
+            ['Pronombre', 'Forma'],
+            ['ich', 'muss'],
+            ['du', 'musst'],
+            ['er / sie / es', 'muss'],
+            ['wir', 'müssen'],
+            ['ihr', 'müsst'],
+            ['sie / Sie', 'müssen'],
+          ],
+        },
+        {
+          caption: 'wollen',
+          rows: [
+            ['Pronombre', 'Forma'],
+            ['ich', 'will'],
+            ['du', 'willst'],
+            ['er / sie / es', 'will'],
+            ['wir', 'wollen'],
+            ['ihr', 'wollt'],
+            ['sie / Sie', 'wollen'],
+          ],
+        },
+        {
+          caption: 'mögen / möchten',
+          rows: [
+            ['Pronombre', 'mögen', 'möchten'],
+            ['ich', 'mag', 'möchte'],
+            ['du', 'magst', 'möchtest'],
+            ['er / sie / es', 'mag', 'möchte'],
+            ['wir', 'mögen', 'möchten'],
+            ['ihr', 'mögt', 'möchtet'],
+            ['sie / Sie', 'mögen', 'möchten'],
+          ],
+        },
+        {
+          caption: 'dürfen',
+          rows: [
+            ['Pronombre', 'Forma'],
+            ['ich', 'darf'],
+            ['du', 'darfst'],
+            ['er / sie / es', 'darf'],
+            ['wir', 'dürfen'],
+            ['ihr', 'dürft'],
+            ['sie / Sie', 'dürfen'],
+          ],
+        },
+        {
+          caption: 'sollen',
+          rows: [
+            ['Pronombre', 'Forma'],
+            ['ich', 'soll'],
+            ['du', 'sollst'],
+            ['er / sie / es', 'soll'],
+            ['wir', 'sollen'],
+            ['ihr', 'sollt'],
+            ['sie / Sie', 'sollen'],
+          ],
+        },
       ],
     },
     {
