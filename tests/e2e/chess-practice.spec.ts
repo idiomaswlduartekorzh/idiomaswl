@@ -84,6 +84,10 @@ test('narrow phones keep the mode cards and move controls readable', async ({ pa
   expect(moveControls.selectWidth).toBeGreaterThan(200);
   expect(moveControls.buttonWidth).toBeGreaterThan(200);
 
+  await trainer.locator('[data-mode="opening"]').click();
+  await trainer.locator('[data-family="caro"]').click();
+  await trainer.locator('[data-opening="caro-fantasy"]').click();
+  await expect(trainer.locator('#puzzleTitle')).toHaveText('Fantasy Variation');
   await expect.poll(() => page.locator('iframe').evaluate(element => {
     const frame = element as HTMLIFrameElement;
     return frame.getBoundingClientRect().height >= (frame.contentDocument?.querySelector('.app')?.getBoundingClientRect().height ?? Infinity);

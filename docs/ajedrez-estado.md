@@ -62,3 +62,17 @@ noviembre de 2026. Vercel publicó ese commit y la ruta pública respondió HTTP
 apertura y un mate, conservaron el progreso tras recargar y no mostraron
 errores ni desbordamiento a 390 px. La evidencia de despliegue está en el plan
 operativo.
+
+## Revisión visual del 27 de noviembre de 2026
+
+- La auditoría adicional encontró que, a 320 px, la tarjeta de mates invadía la
+  de tácticas y el selector de jugadas quedaba demasiado estrecho. El menú ahora
+  coloca icono y texto en dos filas y apila el selector y el botón en ese ancho.
+- Dentro de la ruta de Next.js, el desplazamiento vertical queda en la página
+  principal. Así el ancho del contenido no cambia al aparecer una barra de
+  desplazamiento en el iframe, que hacía oscilar su altura en WebKit.
+- La ruta integrada pasó el recorrido de mates y aperturas y la revisión de
+  320, 390, 768 y 1440 px en Chrome, Firefox y WebKit: las cuatro tarjetas, los
+  controles, el tablero y la variante Fantasía de la Caro-Kann permanecen
+  accesibles, sin desbordamiento horizontal ni recorte vertical después de
+  estabilizarse el contenido. La prueba E2E dirigida pasó con tres casos.
