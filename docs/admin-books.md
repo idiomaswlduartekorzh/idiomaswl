@@ -56,3 +56,8 @@ enlace. El harness editorial pasó para los 20 capítulos y los cuatro repasos;
 la auditoría de las dos ediciones pasó en
 `output/portugues-a1/ediciones/auditoria-ediciones.json`. Siguen pendientes la
 lectura final del autor y una prueba física de imprenta.
+
+La ficha se publicó mediante el [PR #72](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/72)
+en `main@ab241cd449b71454045ddf968106048bf659dc9f`. Vercel informó
+despliegue exitoso y la portada pública respondió HTTP 200 con la misma huella
+que el archivo versionado. El panel sigue exigiendo sesión administradora.
