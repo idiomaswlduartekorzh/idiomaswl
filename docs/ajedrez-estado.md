@@ -4,8 +4,8 @@ Fecha: 25 de noviembre de 2026. Ruta: `/kids/ingles-ajedrez/practica`.
 
 ## Experiencia
 
-- El menú, las pistas y las explicaciones aparecen en inglés, como la página
-  Ajedrez Kids que ya está en `main`. Ofrece mates, nueve familias de tácticas,
+- El menú, las pistas y las explicaciones aparecen en inglés, como la práctica
+  de Matecraft que ya está en `main`. Ofrece mates, nueve familias de tácticas,
   aperturas y finales.
 - Los ejercicios de mates, tácticas y finales conservan los datos locales de
   Lichess, validación con chess.js, dificultad por ELO y progreso en el navegador.
@@ -37,7 +37,7 @@ No se presenta como repertorio universal frente a todas las primeras jugadas.
   archivos locales con sus licencias. El service worker usa una caché versionada.
 - Next.js quedó fijado en 16.4.5, versión que permite completar el build sin
   el bloqueo de seguridad de 16.4.3. El catálogo protegido, TypeScript y la
-  compilación completa de 5.368 páginas pasaron tras la actualización.
+  compilación completa pasaron tras la actualización.
 - `tests/chess-opening-lines.test.mjs` valida legalidad, unicidad y turno final
   de las 15 líneas. `tests/e2e/chess-practice.spec.ts` recorre una línea completa
   de cada apertura, cambia a tácticas y comprueba el ancho móvil.
