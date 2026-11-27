@@ -5,6 +5,23 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## Revisión visual de Matecraft — 27 de noviembre de 2026
+
+- Trabajo `chess-ui-320px-fix-20261127`, responsable Codex. Estado
+  `LISTO_PARA_INTEGRAR`; rama `codex/chess-ui-320px-fix-20261127`, actualizada
+  sobre `origin/main@88f483fbd`.
+- Alcance. Corregir el solapamiento de tarjetas del menú y la estrechez del
+  selector de jugadas en teléfonos de 320 px. Hacer estable la altura del
+  iframe en WebKit al pasar de mates a una variante de apertura. Se versionó
+  la caché del service worker para entregar el diseño nuevo.
+- Validación local. Pasaron catálogo de Práctica, TypeScript, el build completo
+  y tres pruebas E2E dirigidas, incluidos los controles a 320 px. La ruta
+  integrada se recorrió en Chrome, Firefox y WebKit a 320, 390, 768 y 1440 px,
+  sin desbordamiento horizontal ni recorte vertical tras estabilizarse el
+  contenido. La revisión adicional de tarjetas entre 320 y 390 px pasó en los
+  tres motores.
+  [Estado técnico](ajedrez-estado.md).
+
 ## La hora en los ocho idiomas de gramática A1 — 26 y 27 de noviembre de 2026
 
 - Estado `DESPLEGADO`. El [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67) se integró en [`main@f62a67464`](https://github.com/idiomaswlduartekorzh/idiomaswl/commit/f62a674641fd1710e78fc57d7d4c690eeaecbe9a). Desde Práctica se llega a [La hora en ocho idiomas](https://www.idiomaswl.com/practica/la-hora). Cada colección A1 enlaza a su taller y la de alemán conserva [su lección de la hora](https://www.idiomaswl.com/practica/aleman/a1/gramatica/uhrzeit).

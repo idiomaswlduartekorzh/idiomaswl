@@ -63,3 +63,34 @@ test('the mobile site page expands the trainer so all variants stay reachable', 
   })).toBe(true);
   await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBe(0);
 });
+
+test('narrow phones keep the mode cards and move controls readable', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 568 });
+  await page.goto('/kids/ingles-ajedrez/practica');
+  const trainer = page.frameLocator('iframe');
+  await expect(trainer.locator('#puzzleTitle')).not.toHaveText('Loading your first position');
+
+  const cardOverflow = await trainer.locator('.mode').evaluateAll(cards =>
+    cards.map(card => card.scrollWidth - card.clientWidth),
+  );
+  expect(cardOverflow.every(value => value <= 0)).toBe(true);
+
+  const moveControls = await trainer.locator('.move-input').evaluate(container => {
+    const select = container.querySelector('select')!.getBoundingClientRect();
+    const button = container.querySelector('button')!.getBoundingClientRect();
+    return { selectWidth: select.width, buttonWidth: button.width, buttonBelow: button.top >= select.bottom };
+  });
+  expect(moveControls.buttonBelow).toBe(true);
+  expect(moveControls.selectWidth).toBeGreaterThan(200);
+  expect(moveControls.buttonWidth).toBeGreaterThan(200);
+
+  await trainer.locator('[data-mode="opening"]').click();
+  await trainer.locator('[data-family="caro"]').click();
+  await trainer.locator('[data-opening="caro-fantasy"]').click();
+  await expect(trainer.locator('#puzzleTitle')).toHaveText('Fantasy Variation');
+  await expect.poll(() => page.locator('iframe').evaluate(element => {
+    const frame = element as HTMLIFrameElement;
+    return frame.getBoundingClientRect().height >= (frame.contentDocument?.querySelector('.app')?.getBoundingClientRect().height ?? Infinity);
+  })).toBe(true);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBe(0);
+});

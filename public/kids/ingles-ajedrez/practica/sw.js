@@ -1,10 +1,10 @@
-const CACHE_NAME = 'matecraft-shell-v6';
+const CACHE_NAME = 'matecraft-shell-v7';
 const BASE = '/kids/ingles-ajedrez/practica/';
 const PRECACHE = [
   "index.html",
   "app.js",
   "openings.js",
-  "manifest.webmanifest?v=20261125-openings",
+  "manifest.webmanifest?v=20261127-ui",
   "icon.svg",
   "vendor/chess.js/chess.js",
   "vendor/cm-chessboard/assets/chessboard.css",
