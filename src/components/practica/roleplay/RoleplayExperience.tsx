@@ -75,7 +75,7 @@ export function SpeakingModeHub({ set }: { set: RoleplaySet }) {
           <p className="wlp-eyebrow">Speaking · {language.label} {level.label}</p>
           <h1>¿Cómo quieres practicar hoy?</h1>
           <p className="wlp-hero-lead">
-            Practica a solas con preguntas de improvisación{set.language === 'ingles' ? ' y dilemas' : ''}. También puedes hacer un juego de rol con otra persona.
+            Practica a solas con preguntas de improvisación y dilemas. También puedes hacer un juego de rol con otra persona.
           </p>
         </header>
 
@@ -109,14 +109,12 @@ export function SpeakingModeHub({ set }: { set: RoleplaySet }) {
               </ul>
               <strong>Elegir un juego de rol →</strong>
             </Link>
-            {set.language === 'ingles' && (
-              <Link className="wlp-card wlp-card--path" href={dilemmaCollectionPath(set.level)}>
-                <span className="wlp-eyebrow wlp-eyebrow--card">Individual</span>
-                <h3>Speaking Dilemmas</h3>
-                <p>Elige una situación y prepara tu respuesta con vocabulario y ejemplos. Después compárala con tres modelos.</p>
-                <strong>Ver los 20 dilemas →</strong>
-              </Link>
-            )}
+            <Link className="wlp-card wlp-card--path" href={dilemmaCollectionPath(set.level, set.language)}>
+              <span className="wlp-eyebrow wlp-eyebrow--card">Individual</span>
+              <h3>{set.language === 'ingles' ? 'Speaking Dilemmas' : 'Dilemas de conversación'}</h3>
+              <p>Elige una situación y prepara tu respuesta con vocabulario y ejemplos. Después compárala con tres modelos.</p>
+              <strong>Ver los 20 dilemas →</strong>
+            </Link>
           </div>
         </section>
 

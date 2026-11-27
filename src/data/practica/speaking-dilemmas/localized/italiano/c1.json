@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "academic-merit",
+    "title": "Merito accademico o tirocinio",
+    "prompt": "Due studenti del ultimo anno di sanita pubblica contendono un premio universitario. Bisogna decidere se dare piu peso al rendimento accademico complessivo o ai risultati ottenuti durante il tirocinio del ultimo semestre.",
+    "conditionalPrompt": "Valuta entrambi i meriti e indica quali prove concrete inclinerebbero la decisione finale.",
+    "options": [
+      {
+        "label": "Rendimento accademico",
+        "description": "Eccelse per tutto il percorso e pubblico uno studio sulle mancate visite."
+      },
+      {
+        "label": "Risultati del tirocinio",
+        "description": "Diresse un progetto pilota durante il tirocinio riducendo le assenze in due cliniche."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["rendimento", "risultato utile ottenuto nello studio o nel lavoro", "Il rendimento costante ripaga sempre alla fine."],
+        ["tirocinio", "periodo di formazione pratica sul campo", "Questo tirocinio ha migliorato le mie capacita cliniche."],
+        ["studio", "approfondimento scientifico di un argomento", "Il suo studio analizza la gestione delle cliniche."],
+        ["premio", "riconoscimento ufficiale di merito", "Vincere questo premio sarebbe un grande onore."]
+      ],
+      "phrasalVerbs": [
+        ["portare a termine", "completare con successo un impegno", "Dobbiamo portare a termine il progetto entro domani."],
+        ["tenere in conto", "considerare attentamente un fattore", "Bisogna tenere in conto tutte le varianti cliniche."],
+        ["mettere in luce", "evidenziare chiaramente qualcosa di importante", "Questa ricerca mette in luce gravi carenze organizzative."],
+        ["fare a meno", "rinunciare a qualcosa o qualcuno", "Non possiamo fare a meno di dati certi."]
+      ],
+      "adjectives": [
+        ["rigoroso", "condotto con estrema precisione e severita metodologica", "Il suo approccio scientifico e stato molto rigoroso."],
+        ["concreto", "basato su fatti reali e tangibili piuttosto che su teorie", "Cerchiamo risultati concreti e misurabili sul campo."],
+        ["determinante", "decisivo per l esito di una situazione", "Quel fattore e stato determinante per il successo."],
+        ["affidabile", "meritevole di fiducia e costante nel tempo", "Considero questo metodo sicuro e affidabile."]
+      ],
+      "connectors": [
+        ["d'altra parte", "per contro, introducendo una prospettiva diversa", "D'altra parte, la teoria richiede prove pratiche."],
+        ["inoltre", "per aggiungere un argomento ulteriore", "Inoltre, dobbiamo valutare i costi complessivi."],
+        ["di conseguenza", "per indicare una conseguenza logica", "Il metodo ha funzionato e di conseguenza lo adotteremo."],
+        ["ciononostante", "nonostante quanto appena detto", "Ciononostante, permangono alcuni dubbi legittimi."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Dal mio punto di vista, bisogna premiare soprattutto il **rendimento** accademico costante lungo tutto il percorso di studi universitari. Chi dimostra una dedizione rigorosa per anni merita un riconoscimento ufficiale perche getta solide basi teoriche.",
+        "**Inoltre**, pubblicare uno **studio** scientifico sulle mancate visite dimostra una capacita di analisi superiore che va oltre la semplice applicazione pratica quotidiana.",
+        "Sebbene le cliniche non abbiano ancora applicato tali scoperte, il valore intellettuale di una ricerca approfondita resta **determinante** per il progresso dell intera disciplina sanitaria."
+      ],
+      "b": [
+        "A mio avviso, il **premio** spetta di diritto allo studente che ha dimostrato competenze pratiche straordinarie durante il **tirocinio** del ultimo semestre. Dirigere un progetto pilota sul campo richiede doti organizzative eccezionali.",
+        "**D'altra parte**, ridurre concretamente le assenze in due cliniche prova che il suo intervento ha risolto un problema reale ed immediato per i pazienti.",
+        "**Di conseguenza**, valorizzare risultati cosi tangibili spinge giustamente i giovani professionisti ad affrontare le sfide sanitarie con spirito innovativo ed orientato all azione."
+      ],
+      "conditional": [
+        "La scelta tra i due candidati dipende interamente dagli obiettivi strategici che l universita intende perseguire attraverso questo prestigioso riconoscimento accademico.",
+        "Se l istituzione vuole premiare la ricerca teorica pura, allora il **rendimento** costante e lo **studio** pubblicato diventano decisivi per confermare il valore intellettuale del vincitore.",
+        "**Ciononostante**, se si cerca un impatto immediato sulla comunita, le prove concrete del progetto pilota nei reparti clinici ribaltano completamente la prospettiva a favore del **tirocinio**."
+      ]
+    }
+  },
+  {
+    "slug": "city-centre-access",
+    "title": "Accesso al centro cittadino",
+    "prompt": "Il tuo comune ha fondi per riprogettare la via principale dello shopping. Dovrebbe destinare la strada quasi interamente ai pedoni, oppure mantenere una corsia a bassa velocità per autobus e veicoli autorizzati?",
+    "conditionalPrompt": "Identifica chi dipende dall'accesso porta a porta e spiega cosa renderebbe convincente una prova di viabilità.",
+    "options": [
+      {
+        "label": "Zona pedonale",
+        "description": "Consenti le consegne prima dell'apertura e crea punti di raccolta alle due estremità."
+      },
+      {
+        "label": "Corsia mista",
+        "description": "Mantieni autobus e veicoli autorizzati su una corsia, allargando i marciapiedi rimanenti."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["pedone", "Persona che cammina a piedi per strada.", "Ogni pedone merita di camminare in sicurezza lungo la via principale."],
+        ["marciapiede", "Parte della strada riservata al transito dei pedoni.", "Allargare questo marciapiede permetterà alle persone di camminare senza ostacoli."],
+        ["consegna", "Operazione di recapito di merci o prodotti commerciali.", "Ogni consegna commerciale deve avvenire prima dell'apertura dei negozi."],
+        ["viabilità", "Insieme delle condizioni di circolazione delle strade.", "Una buona viabilità urbana deve bilanciare le esigenze di tutti i cittadini."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro", "Far fronte alle esigenze o ai bisogni di qualcuno.", "Dobbiamo andare incontro alle richieste dei residenti anziani e disabili."],
+        ["dare spazio", "Offrire opportunità o superficie a qualcosa.", "Questo progetto vuole dare spazio alla mobilità sostenibile e al verde."],
+        ["mettere a rischio", "Esporre qualcuno o qualcosa a un pericolo concreto.", "Non possiamo mettere a rischio la sicurezza di chi cammina in centro."],
+        ["venire meno", "Venire a mancare o venir meno a un obbligo.", "Se i controlli dovessero venire meno, la situazione del traffico peggiorerebbe."]
+      ],
+      "adjectives": [
+        ["sostenibile", "Che rispetta l'ambiente e le risorse naturali del pianeta.", "Una mobilità urbana sostenibile migliora la qualità della vita di tutti."],
+        ["accessibile", "Facilmente raggiungibile o fruibile da chiunque senza barriere.", "La nuova strada pedonale deve essere accessibile anche alle persone disabili."],
+        ["agevole", "Che si compie o si svolge senza particolari difficoltà.", "Il trasporto pubblico renderà il tragitto molto più agevole per i lavoratori."],
+        ["indispensabile", "Di cui non si può fare assolutamente a meno.", "Il passaggio dei mezzi autorizzati resta indispensabile per rifornire i negozi."]
+      ],
+      "connectors": [
+        ["al contrario", "Introducendo una circostanza o un'opinione opposta.", "Molti temono il blocco del traffico; al contrario, i negozianti vedranno più clienti."],
+        ["inoltre", "In aggiunta a quanto appena detto.", "La nuova isola pedonale ridurrà lo smog; inoltre, aumenterà il turismo."],
+        ["pertanto", "Perciò, di conseguenza, introducendo una conclusione logica.", "I fondi comunali sono limitati; pertanto, dobbiamo scegliere la soluzione migliore."],
+        ["tuttavia", "Nonostante quanto detto in precedenza, introducendo un limite.", "La chiusura totale è ideale; tuttavia, crea problemi logistici ai residenti."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Pedonalizzerei la via principale. Una soluzione **sostenibile** deve **dare spazio** a chi attraversa il centro a piedi e a chi vuole fermarsi davanti a un negozio, senza dover contendere il **marciapiede** ai veicoli.",
+        "**Tuttavia**, la **consegna** delle merci è **indispensabile** per molti esercizi. Per **andare incontro** ai commercianti, fisserei una fascia oraria comune al mattino e allestirei punti di ritiro alle due estremità della via.",
+        "**Inoltre**, durante un periodo di prova verificherei se gli ingressi rimangono **accessibili** e se le consegne arrivano in orario. Se il sistema regge, la pedonalizzazione risponde sia alle esigenze di chi vive in centro sia a quelle di chi ci lavora."
+      ],
+      "b": [
+        "Terrei aperta una corsia per autobus e veicoli autorizzati. La **viabilità** deve consentire a chi cammina con difficoltà di raggiungere il centro, senza **mettere a rischio** chi si muove a piedi.",
+        "**Tuttavia**, per funzionare, la corsia non può diventare una scorciatoia per il traffico privato. Un controllo degli accessi e una velocità ridotta sono **indispensabili**. Così possiamo allargare i marciapiedi e **dare spazio** ai pedoni.",
+        "Il criterio è verificare se il centro resta **accessibile** senza tornare ai volumi di traffico precedenti. Misurerei i tempi degli autobus, il passaggio dei pedoni e i ritardi nelle consegne. Sceglierei la corsia mista se i dati confermassero questi benefici."
+      ],
+      "conditional": [
+        "La decisione finale dipende dalla capacità della sperimentazione di dimostrare che i punti di raccolta soddisfano davvero le consegne commerciali.",
+        "Se i test dimostrassero che i negozi non subiscono perdite economiche, allora la chiusura totale ai veicoli diventerebbe la soluzione ottimale.",
+        "**Tuttavia**, finché non avremo dati certi sui residenti a mobilità ridotta, mantenere una corsia protetta resterà l'opzione più sicura."
+      ]
+    }
+  },
+  {
+    "slug": "heatwave-investment",
+    "title": "Investimento contro le ondate di calore",
+    "prompt": "Un comune prevede estati piu calde e possiede un solo fondo per l'adattamento al caldo. Dovrebbe investire in alberi stradali che cresceranno in piu anni o aprire centri di raffrescamento con personale per le prossime tre estati?",
+    "conditionalPrompt": "Decidi quale rischio giustificherebbe un sollievo immediato e cosa renderebbe affidabile l'investimento nell'ombra.",
+    "options": [
+      {
+        "label": "Alberi stradali",
+        "description": "Piantare specie con grande chioma lungo i percorsi esposti e finanziare la manutenzione iniziale."
+      },
+      {
+        "label": "Centri di raffrescamento",
+        "description": "Prolungare l'orario di apertura in tre edifici pubblici climatizzati per le allerte di calore."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["chiave", "fattore risolutivo o elemento fondamentale per interpretare una situazione complessa.", "La chiave per comprendere il problema climatico risiede nella pianificazione urbana a lungo termine."],
+        ["urgenza", "necessita impellente di agire immediatamente di fronte a un pericolo grave.", "Affrontiamo ogni giorno un urgenza straordinaria a causa delle temperature record estive."],
+        ["tutela", "azione mirata a proteggere e preservare beni pubblici o persone vulnerabili.", "La tutela della salute pubblica richiede interventi tempestivi e risorse adeguate."],
+        ["risorsa", "mezzo economico o materiale disponibile per risolvere un problema.", "Ogni risorsa finanziaria disponibile deve essere allocata con la massima cura."]
+      ],
+      "phrasalVerbs": [
+        ["venire meno", "cessare di esistere o venir meno a un impegno fondamentale.", "Non bisogna mai fare in modo che il sostegno pubblico venga meno per i piu deboli."],
+        ["andare incontro", "affrontare una situazione difficile o prepararsi a un evento futuro.", "Dobbiamo andare incontro alle esigenze della cittadinanza con soluzioni concrete."],
+        ["fare i conti", "valutare attentamente le difficolta e i limiti reali di una situazione.", "Senza una strategia solida faremo presto i conti con disagi climatici insostenibili."],
+        ["mettere in conto", "prevedere e accettare le conseguenze negative o le difficolta di un progetto.", "Bisogna mettere in conto costi di gestione elevati per mantenere i servizi attivi."]
+      ],
+      "adjectives": [
+        ["vulnerabile", "persona o gruppo esposto a rischi particolari e privo di difese sufficienti.", "La popolazione anziana risulta particolarmente vulnerabile durante le ondate di calore estivo."],
+        ["tempestivo", "intervento effettuato esattamente nel momento opportuno senza ritardi.", "Un intervento tempestivo puo salvare molte vite umane durante le emergenze climatiche."],
+        ["duraturo", "fenomeno o struttura capace di resistere nel tempo senza deteriorarsi.", "Cerchiamo un beneficio duraturo che possa proteggere i nostri quartieri per decenni."],
+        ["sostenibile", "attivita o progetto che rispetta l'ambiente e puo essere mantenuto nel tempo.", "Dobbiamo sviluppare un modello di citta sostenibile che affronti i cambiamenti climatici."]
+      ],
+      "connectors": [
+        ["di conseguenza", "indica che quanto segue e il risultato logico della premessa precedente.", "Le temperature continuano a salire e di conseguenza dobbiamo cambiare strategia."],
+        ["d'altro canto", "espressione usata per introdurre un punto di vista opposto o complementare.", "I centri offrono sollievo immediato ma d'altro canto non risolvono il problema strutturale."],
+        ["ciononostante", "congiunzione avversativa che esprime opposizione nonostante una difficolta.", "Il progetto richiede anni di cure e ciononostante rappresenta la scelta piu saggia."],
+        ["inoltre", "avverbio usato per aggiungere un ulteriore argomento alla tesi esposta.", "Gli alberi migliorano la qualita dell'aria e inoltre abbelliscono il nostro paesaggio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Dobbiamo assolutamente puntare sulla piantumazione di grandi alberi lungo tutte le strade esposte al sole cocente. Questa scelta garantisce una riduzione naturale delle temperature urbane che aumentera progressivamente anno dopo anno senza sosta. La **tutela** dei residenti passa necessariamente attraverso soluzioni verdi e radicate nel territorio comunale.",
+        "I centri di raffrescamento offrono soltanto un sollievo temporaneo che non affronta la radice profonda del problema climatico attuale. **D'altro canto** gli alberi cresceranno robusti e offriranno ombra costante a chiunque cammini per i quartieri durante le estati piu torride. Dobbiamo accettare i tempi della natura per costruire un futuro migliore e piu fresco.",
+        "Investire oggi nel verde urbano significa pianificare con intelligenza la qualita della vita dei nostri figli e nipoti. **Ciononostante** la manutenzione iniziale richiede impegno costante e risorse finanziarie che dobbiamo assolutamente garantire senza esitazioni. Alla fine la nostra citta sara molto piu resiliente e gradevole per tutti i cittadini."
+      ],
+      "b": [
+        "La priorita assoluta deve essere data all'apertura immediata di edifici pubblici climatizzati per proteggere la popolazione piu fragile. Molti anziani rischiano seriamente la vita durante le ondate di calore e non possono aspettare anni che gli alberi crescano. **Di conseguenza** dobbiamo mobilitare subito il personale necessario per gestire questi centri di accoglienza.",
+        "Le piante offrono benefici eccellenti ma richiedono troppo tempo prima di garantire un riparo efficace contro le temperature estreme. **D'altro canto** i centri climatizzati offrono un rifugio sicuro e immediato durante le allerte meteo piu pericolose per la salute. Dobbiamo **mettere in conto** costi di gestione elevati pur di salvare vite umane adesso.",
+        "La gestione dell'emergenza climatica richiede risposte concrete e tempestive che non ammettono ritardi ingiustificati nella protezione civile. **Ciononostante** dovremo valutare future soluzioni a lungo termine non appena l'emergenza immediata sara completamente superata. La salute dei cittadini vulnerabili rimane la nostra unica vera bussola decisionale."
+      ],
+      "conditional": [
+        "La scelta tra alberi e centri dipende interamente dal livello di rischio immediato che la nostra comunita deve affrontare. Se le ondate di calore causano gia decessi tra gli anziani allora i centri climatizzati diventano una necessita assoluta. **Di conseguenza** ogni altra considerazione deve cedere il passo di fronte a questa drammatica **urgenza** umanitaria.",
+        "**D'altro canto** se le proiezioni meteorologiche indicano estati sempre piu estreme dobbiamo assolutamente avviare la piantumazione arborea senza indugio. **Ciononostante** bisogna bilanciare le risorse per non lasciare scoperte le persone vulnerabili durante le fasi di transizione ecologica. La **chiave** consiste nel trovare il giusto equilibrio tra prevenzione e soccorso.",
+        "In definitiva la decisione finale richiede un'attenta analisi statistica dei dati sanitari registrati nelle scorse stagioni estive. Solo cosi potremo comprendere se prevale il bisogno di un riparo immediato o la necessita di una trasformazione urbana duratura. La nostra amministrazione deve dimostrarsi flessibile e pronta a proteggere tutti i residenti."
+      ]
+    }
+  },
+  {
+    "slug": "affordable-housing-mix",
+    "title": "Mix di edilizia residenziale accessibile",
+    "prompt": "Un ente di edilizia popolare puo usare un fondo per convertire uffici in quaranta piccoli appartamenti o costruire venti case familiari piu grandi vicino alle scuole. Entrambi i progetti prevedono affitti inferiori a quelli di mercato. Quale dovrebbe venire prima?",
+    "conditionalPrompt": "Identifica il bisogno abitativo che la lista d'attesa potrebbe celare e decidi come confronteresti i due progetti.",
+    "options": [
+      {
+        "label": "Piccoli appartamenti",
+        "description": "Utilizzare un edificio vuoto vicino ai trasporti e sistemare piu nuclei familiari prima, con spazi adatti a uno o due adulti."
+      },
+      {
+        "label": "Case familiari",
+        "description": "Costruire abitazioni con camere sufficienti per famiglie numerose, anche se il completamento richiedera piu tempo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["criterio", "principio guida adottato per effettuare una scelta ponderata e razionale.", "Il criterio principale per assegnare le case popolari deve essere la reale necessita economica."],
+        ["fabbisogno", "quantita di beni o servizi necessari a soddisfare una domanda sociale essenziale.", "Analizziamo attentamente il fabbisogno abitativo della citta prima di approvare qualsiasi piano."],
+        ["contesto", "insieme delle condizioni ambientali e sociali in cui si inserisce un problema.", "Ogni intervento urbanistico deve integrarsi perfettamente nel contesto del quartiere esistente."],
+        ["prospettiva", "visione a lungo termine degli sviluppi futuri di una situazione complessa.", "Dobbiamo valutare il progetto in una prospettiva di crescita demografica sostenibile."]
+      ],
+      "phrasalVerbs": [
+        ["venire incontro", "offrire aiuto o soluzioni concrete per soddisfare le richieste di qualcuno.", "Cerchiamo di venire incontro alle famiglie numerose che faticano a trovare affitti equi."],
+        ["fare a meno", "rinunciare a qualcosa o a qualcuno perche non strettamente indispensabile.", "Nessun cittadino in difficolta puo fare a meno di un supporto pubblico costante."],
+        ["mettere in luce", "rivelare chiaramente aspetti nascosti o particolarmente significativi di un problema.", "La nuova indagine statistica ha messo in luce una grave carenza di alloggi popolari."],
+        ["prendere in esame", "analizzare dettagliatamente una proposta o una situazione complessa.", "Dobbiamo prendere in esame tutte le richieste prima di definire la graduatoria finale."]
+      ],
+      "adjectives": [
+        ["idoneo", "persona o cosa che possiede tutte le caratteristiche adatte allo scopo.", "Questo edificio dismesso risulta perfettamente idoneo alla conversione in monolocali moderni."],
+        ["rilevante", "elemento di grande importanza che incide in modo significativo sul risultato.", "Il risparmio di tempo rappresenta un vantaggio rilevante per i giovani lavoratori."],
+        ["sollecito", "persona pronta ad agire con rapidita e diligenza per risolvere un problema.", "L'amministrazione si e dimostrata sollecita nel rispondere alle domande delle famiglie."],
+        ["prezioso", "risorsa o aiuto di grandissimo valore per il raggiungimento di un obiettivo.", "Ogni appartamento economico costituisce un aiuto prezioso per chi vive nel disagio."]
+      ],
+      "connectors": [
+        ["pertanto", "congiunzione conclusiva che introduce una conseguenza logica inevitabile.", "La lista d'attesa e lunghissima e pertanto dobbiamo agire con la massima rapidita."],
+        ["d'altronde", "espressione usata per giustificare un punto di vista o aggiungere una riflessione.", "Le risorse sono limitate e d'altronde non possiamo accontentare tutti nello stesso momento."],
+        ["tuttavia", "avverbio che introduce una restrizione o un'opposizione rispetto a quanto detto.", "Il recupero degli uffici e rapido tuttavia non risolve il problema delle famiglie con figli."],
+        ["inoltre", "connettivo impiegato per aggiungere ulteriori informazioni alla linea argomentativa.", "La posizione centrale facilita gli spostamenti e inoltre riduce i costi di trasporto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Dobbiamo assolutamente convertire subito quegli uffici vuoti per dare una casa a un numero maggiore di persone. La crisi abitativa morde forte e la priorita assoluta spetta a chi attende un alloggio da anni. Utilizzare edifici esistenti riduce i tempi burocratici e offre una risposta concreta ed economica.",
+        "Le famiglie numerose necessitano di spazi ampi ma la costruzione ex novo richiede tempi lunghi e costi elevati per l'ente. **D'altronde** i monolocali e bilocali ricavati dagli uffici possono accogliere subito moltissimi adulti in cerca di autonomia. **Pertanto** questa scelta massimizza il numero di beneficiari nel minor tempo possibile.",
+        "Investire nella riconversione rappresenta una strategia intelligente che valorizza il patrimonio immobiliare urbano gia esistente sul territorio. **Inoltre** la vicinanza ai mezzi pubblici garantisce ai nuovi inquilini una mobilita eccellente verso i luoghi di lavoro. Questa soluzione pratica dimostra una grande attenzione verso le urgenze sociali immediate."
+      ],
+      "b": [
+        "La costruzione di case familiari spaziose vicino alle scuole deve essere la nostra priorita strategica fondamentale. I bambini hanno bisogno di stabilita e di ambienti idonei alla crescita che i piccoli appartamenti non possono offrire. Dobbiamo pensare al benessere a lungo termine delle famiglie con figli che soffrono la mancanza di spazi.",
+        "La conversione degli uffici risolverebbe il problema di molti singoli ma lascerebbe del tutto scoperte le famiglie con minori a carico. **D'altronde** le case piu grandi richiedono cantieri complessi e investimenti ingenti che **tuttavia** ripagano la comunita in termini di giustizia sociale. Dobbiamo avere il coraggio di pianificare opere durature.",
+        "Ogni bambino merita una stanza adeguata e un **contesto** urbano vicino ai servizi scolastici essenziali per la sua formazione. **Pertanto** sacrificare la quantita iniziale a favore della qualita abitativa familiare rappresenta una scelta etica e lungimirante. La nostra citta sara piu forte se sapra sostenere concretamente i nuclei familiari numerosi."
+      ],
+      "conditional": [
+        "La decisione finale dipende da un'analisi approfondita della composizione reale delle domande presenti nelle nostre liste d'attesa. Se prevalgono i lavoratori singoli e le coppie senza figli allora la conversione degli uffici risulta imbattibile. **Pertanto** dobbiamo esaminare i dati demografici con estrema cura prima di impegnare l'intero finanziamento pubblico.",
+        "**D'altronde** se emergesse che la maggioranza degli aventi diritto e costituita da famiglie con minori la strategia dovrebbe mutare radicalmente. **Tuttavia** bisogna sempre considerare i tempi di attesa perche rimandare gli interventi significa prolungare il disagio sociale. La chiave risiede nel trovare un punto d'incontro tra urgenza numerica e qualita dello spazio.",
+        "In definitiva un'amministrazione saggia dovrebbe valutare se sia possibile suddividere il fondo per finanziare entrambe le soluzioni parzialmente. Solo confrontando i benefici sociali dei due progetti potremo garantire una distribuzione equa e mirata delle risorse pubbliche. La trasparenza dei criteri di scelta sara sempre la nostra garanzia di successo."
+      ]
+    }
+  },
+  {
+    "slug": "heritage-site-access",
+    "title": "Accesso ai siti storici",
+    "prompt": "Un sito storico fragile puo accogliere solo un numero limitato di visitatori giornalieri. Bisogna assegnare i biglietti gratuiti tramite sorteggio o far pagare fasce orarie prenotabili usando i ricavi per la conservazione?",
+    "conditionalPrompt": "Decidi come bilanciare l accesso equo, le prenotazioni affidabili e la necessita di prendersi cura del sito.",
+    "options": [
+      {
+        "label": "Sorteggio casuale",
+        "description": "Assegnare i posti in modo casuale tra i candidati con riserve per richieste settimanali."
+      },
+      {
+        "label": "Fasce orarie a pagamento",
+        "description": "Permettere di prenotare a pagamento offrendo spazi gratuiti alle scuole locali."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sorteggi", "estrazione casuale a sorte per assegnare qualcosa", "I sorteggi garantiscono una possibilita equa per tutti i visitatori."],
+        ["vincolo", "limitazione o obbligo da rispettare", "Il vincolo paesaggistico protegge l autenticita dell antico monumento."],
+        ["introito", "somma di denaro incassata", "Ogni introito derivante dai biglietti viene reinvestito nella tutela."],
+        ["degrado", "deterioramento progressivo di un bene", "Interventi tempestivi prevengono il degrado strutturale delle rovine."]
+      ],
+      "phrasalVerbs": [
+        ["venire incontro", "andare incontro alle esigenze di qualcuno", "Dobbiamo venire incontro alle richieste dei residenti locali."],
+        ["mettere in conto", "prevedere una difficolta o una spesa", "Bisogna mettere in conto costi elevati per la manutenzione straordinaria."],
+        ["fare a meno", "rinunciare a qualcosa o qualcuno", "Non possiamo fare a meno di risorse economiche adeguate."],
+        ["andare incontro", "esporsi a un rischio o a una conseguenza", "Un afflusso incontrollato rischia di andare incontro a danni irreparabili."]
+      ],
+      "adjectives": [
+        ["vulnerabile", "esposto a rischi o facili danni", "Questa struttura architettonica risulta estremamente vulnerabile al flusso turistico."],
+        ["sostenibile", "compatibile con la salvaguardia delle risorse ambientali", "Dobbiamo promuovere un turismo sostenibile che rispetti il patrimonio."],
+        ["redditizio", "capace di produrre un profitto economico", "Un sistema di biglietteria a pagamento si rivela molto redditizio per l ente."],
+        ["disponibile", "che puo essere trovato o utilizzato facilmente", "Ogni spazio disponibile deve essere contingentato per evitare la calca."]
+      ],
+      "connectors": [
+        ["malgrado", "nonostante una determinata circostanza", "Malgrado i controlli severi i rischi di usura rimangono elevati."],
+        ["inoltre", "per aggiungere un ulteriore argomento", "Inoltre i fondi raccolti migliorano la sicurezza generale."],
+        ["pertanto", "di conseguenza per questo motivo", "Il sito e fragile pertanto richiede una gestione particolarmente accorta."],
+        ["invece", "per introdurre un contrasto o un opposizione", "Un sistema casuale esclude i ricavi invece la tariffazione li garantisce."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Il patrimonio storico richiede una tutela rigorosa che garantisca pari opportunita a ogni cittadino desideroso di visitarlo. Optare per un sistema di **sorteggi** casuali elimina qualsiasi barriera economica ingiusta. **Malgrado** la gestione logistica risulti complessa, questo metodo tutela l accessibilita democratica.",
+        "**Inoltre**, riservare spazi per richieste dell ultima ora permette di mantenere una certa flessibilita stagionale per i turisti occasionali. Il sito rimane cosi accessibile anche a chi non possiede abilita digitali avanzate o grandi disponibilita economiche. Si evita in tal modo una spiacevole elitarieta nella fruizione culturale.",
+        "**Pertanto**, la priorita assoluta resta la salvaguardia dell uguaglianza sociale nell accesso ai beni comuni. Un modello basato sulla sorte impedisce che il denaro diventi l unico criterio di selezione per il pubblico. L istituzione adempie cosi al proprio mandato pubblico senza discriminazioni di reddito."
+      ],
+      "b": [
+        "La conservazione di beni architettonici cosi delicati richiede investimenti economici costanti che nessun fondo pubblico puo coprire interamente. Introdurre fasce orarie a pagamento genera un flusso costante di introiti indispensabili per la manutenzione. **Invece** di dipendere da sussidi incerti, il monumento si autofinanzia garantendo la propria sopravvivenza futura.",
+        "**Inoltre**, la prenotazione a pagamento permette di regolare con precisione millimetrica i flussi giornalieri dei visitatori. Questo sistema riduce drasticamente l usura dei pavimenti antichi e previene il **degrado** delle strutture murarie. Bisogna **mettere in conto** che la gestione professionale richiede tariffe adeguate per mantenere standard elevati.",
+        "**Pertanto**, monetizzare l accesso rappresenta la scelta piu responsabile per tutelare l integrita materiale del sito. Offrire contemporaneamente ingressi gratuiti alle scuole locali preserva la funzione educativa del patrimonio storico. Questa strategia coniuga la sostenibilita finanziaria con l impegno civile verso le nuove generazioni."
+      ],
+      "conditional": [
+        "Valutare quale sistema adottare dipende principalmente dallo stato di conservazione attuale e dalle risorse economiche disponibili dell ente. Se il monumento rischia un collasso strutturale immediato, la priorita assoluta diventa la generazione di entrate. **Pertanto**, l adozione di tariffe e biglietti prenotabili risulta indispensabile per finanziare interventi urgenti di restauro.",
+        "Al contrario, se il sito gode di buona salute e necessita soprattutto di equita sociale, il sorteggio e preferibile. Questo metodo garantisce che l accesso non sia un privilegio riservato esclusivamente a chi possiede maggiore capacita di spesa. **Malgrado** i mancati introiti, la missione pubblica viene pienamente rispettata e valorizzata.",
+        "In sintesi, la decisione finale deve bilanciare la necessita di sopravvivenza materiale con il principio democratico dell inclusione. L amministrazione deve analizzare attentamente i dati di bilancio prima di stabilire quale via percorrere. Solo un analisi approfondita del contesto locale consente di individuare la soluzione piu saggia ed equilibrata."
+      ]
+    }
+  },
+  {
+    "slug": "wildlife-conservation",
+    "title": "Conservazione della fauna selvatica",
+    "prompt": "Un trust di conservazione puo finanziare un corridoio di habitat tra due piccole riserve o una protezione extra per una singola zona umida intatta. Quale scelta farebbe un uso migliore di una sovvenzione quinquennale?",
+    "conditionalPrompt": "Spiega cosa costituirebbe prova di movimento o una minaccia urgente per la zona umida.",
+    "options": [
+      {
+        "label": "Corridoio ecologico",
+        "description": "Collaborare con i proprietari terrieri per creare siepi e fasce di habitat tra le riserve."
+      },
+      {
+        "label": "Protezione zona umida",
+        "description": "Proteggere il confine della zona umida e ripristinare i margini danneggiati concentrandosi sulle specie."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["corridoio", "via di passaggio che collega ambienti naturali diversi", "Il corridoio ecologico permette agli animali di spostarsi in sicurezza."],
+        ["recinto", "barriera fisica per delimitare e proteggere un area", "Un nuovo recinto impedisce ai predatori di entrare nella riserva."],
+        ["minaccia", "pericolo concreto per la sopravvivenza di qualcosa", "La siccita prolungata rappresenta una minaccia grave per l ecosistema."],
+        ["esemplare", "singolo individuo appartenente a una specie protetta", "Ogni esemplare censito viene monitorato con grande attenzione dai biologi."]
+      ],
+      "phrasalVerbs": [
+        ["venire meno", "mancare o cessare di esistere nel tempo", "Il sostegno dei proprietari terrieri non deve venire meno durante il progetto."],
+        ["mettere in atto", "realizzare concretamente un piano o una misura", "Dobbiamo mettere in atto strategie efficaci per preservare la biodiversita."],
+        ["andare incontro", "far fronte a una situazione complessa o critica", "Le specie isolate rischiano di andare incontro a una progressiva estinzione."],
+        ["fare affidamento", "contare sulla collaborazione o sull utilita di qualcuno", "Il successo del programma richiede di fare affidamento sui residenti."]
+      ],
+      "adjectives": [
+        ["isolato", "separato dal proprio contesto naturale o sociale", "Questo habitat frammentato lascia le popolazioni animali troppo isolate."],
+        ["urgente", "che richiede un intervento immediato e indifferibile", "La protezione della zona umida costituisce un emergenza urgente."],
+        ["vitale", "essenziale per la sopravvivenza e il benessere biologico", "Il flusso costante di acqua pulita risulta vitale per la fauna."],
+        ["delicato", "fragile e bisognoso di cure particolari e costanti", "L equilibrio ecologico di quest area protetta e estremamente delicato."]
+      ],
+      "connectors": [
+        ["tuttavia", "per introdurre una restrizione o un opposizione logica", "Il progetto e ambizioso tuttavia presenta notevoli rischi gestionali."],
+        ["pertanto", "di conseguenza per logica deduzione", "I fondi sono limitati pertanto bisogna concentrarli con criterio."],
+        ["invece", "per indicare un alternativa netta tra due opzioni", "La protezione circoscritta garantisce risultati certi invece il corridoio e incerto."],
+        ["infatti", "per confermare quanto appena affermato con una prova", "La specie autoctona e in pericolo infatti la popolazione sta diminuendo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Investire in un **corridoio** ecologico rappresenta una visione lungimirante per contrastare la frammentazione degli habitat naturali. Collegare due piccole riserve permette agli animali di spostarsi liberamente alla ricerca di risorse e partner. Malgrado la complessita di coordinare i proprietari terrieri, questa strategia offre benefici ecologici immensi.",
+        "Inoltre, le specie confinate in spazi ristretti rischiano di **andare incontro** a problemi genetici legati all inbreeding. Creare percorsi di collegamento riduce questo pericolo consentendo il flusso naturale della fauna selvatica locale. Bisogna mettere in conto un impegno costante per mantenere attivi gli accordi di gestione con i privati.",
+        "**Pertanto**, la priorita strategica deve essere la connettivita ambientale per garantire la resilienza a lungo termine. La presenza di tracce fresche e di monitoraggi GPS costituisce una prova inequivocabile del loro utilizzo. Questo approccio sistemico supera la visione miope della protezione isolata e promuove una vera rete ecologica."
+      ],
+      "b": [
+        "Concentrare tutte le risorse disponibili sulla protezione di una zona umida intatta garantisce risultati immediati e tangibili. Messa in sicurezza la perimetrazione, l ente puo salvaguardare specie rare che gia dipendono da quel fragile ecosistema. **Tuttavia**, frammentare i fondi su progetti incerti rischierebbe di compromettere l unico rifugio sicuro rimasto.",
+        "Inoltre, la pressione antropica ai confini della palude rappresenta una **minaccia** **urgente** che richiede interventi tempestivi e risolutivi. Riorganizzare i margini degradati crea una zona tamponamento efficace contro l inquinamento agricolo circostante. **Pertanto**, ogni euro investito produce un effetto protettivo diretto e misurabile sugli esemplari presenti.",
+        "In sintesi, la difesa di un area gia funzionale batte l incertezza di un **corridoio** tutto da costruire. La presenza di specie endemiche in declino demografico costituisce l evidenza lampante della necessita di questo intervento mirato. Meglio blindare un santuario naturale esistente che rischiare il fallimento su terre altrui."
+      ],
+      "conditional": [
+        "Determinare quale opzione finanziare richiede un analisi rigorosa delle priorita ecologiche e delle minacce presenti sul territorio. Se i censimenti mostrano un declino demografico dovuto all isolamento genetico, il **corridoio** ecologico diventa fondamentale. L osservazione costante di esemplari che attraversano i confini fornisce la prova concreta del loro utilizzo.",
+        "Al contrario, se la zona umida subisce invasioni costanti e inquinamento chimico, la protezione locale ha la precedenza. L urgenza di bloccare il degrado di un rifugio **vitale** giustifica la concentrazione delle risorse finanziarie. La presenza di specie a rischio di estinzione locale rappresenta l evidenza decisiva per questa scelta.",
+        "In definitiva, la decisione finale dipende da dove si manifesta l emergenza ecologica piu grave e documentata. Un analisi approfondita del territorio orienta l investimento verso la massima efficacia biologica possibile. Cosi la sovvenzione quinquennale raggiunge il suo massimo impatto conservazionistico reale e duraturo."
+      ]
+    }
+  },
+  {
+    "slug": "library-access",
+    "title": "Finanziamento per le biblioteche",
+    "prompt": "Un distretto ha fondi per un solo progetto bibliotecario. Dovrebbe ristrutturare la sede centrale come spazio di studio e riunione più ampio o inviare una biblioteca mobile nei quartieri lontani dalla sede?",
+    "conditionalPrompt": "Identifica se il problema principale è raggiungere un servizio o trovare uno spazio per lavorare una volta arrivati.",
+    "options": [
+      {
+        "label": "Ristrutturazione della sede centrale",
+        "description": "Aggiungere scrivanie accessibili, sale silenziose e internet affidabile nella filiale più frequentata. Le persone devono comunque recarsi in un'unica posizione."
+      },
+      {
+        "label": "Biblioteca mobile",
+        "description": "Inviare libri e servizi di base in diversi quartieri secondo un orario pubblicato. Il veicolo può trasportare solo una scorta limitata e non offre sale di studio silenziose."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["finanziamento", "somma di denaro concessa per un progetto.", "Il comune ha ottenuto un nuovo finanziamento per migliorare i servizi."],
+        ["riqualificazione", "intervento per recuperare e valorizzare un'area o un edificio.", "La riqualificazione della biblioteca centrale attirerà molti studenti."],
+        ["spazio", "area determinata che offre possibilità d'uso.", "Abbiamo bisogno di uno spazio adeguato per il lavoro di gruppo."],
+        ["servizio", "prestazione volta a soddisfare un bisogno della collettività.", "Questo servizio mobile raggiunge anche le zone più isolate della città."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro", "venire incontro alle esigenze di qualcuno.", "Dobbiamo andare incontro alle richieste dei residenti periferici."],
+        ["mettere a disposizione", "rendere disponibile qualcosa per l'uso comune.", "La giunta vuole mettere a disposizione nuove risorse per lo studio."],
+        ["fare a meno", "rinunciare a qualcosa o qualcuno.", "Nessun quartiere dovrebbe fare a meno di un accesso culturale."],
+        ["venire meno", "mancare, venir meno a un impegno o a una funzione.", "Se tagliamo i fondi, i servizi essenziali rischiano di venir meno."]
+      ],
+      "adjectives": [
+        ["accessibile", "che può essere raggiunto o utilizzato facilmente.", "Rendiamo la struttura pienamente accessibile a tutti gli studenti."],
+        ["periferico", "situato in periferia, lontano dal centro.", "I quartieri periferici necessitano di maggiori investimenti pubblici."],
+        ["efficace", "che produce l'effetto desiderato.", "Cerchiamo una soluzione efficace per il prestito librario."],
+        ["limitato", "che ha confini precisi o una scarsa quantità.", "Il budget attuale resta limitato per coprire tutte le richieste."]
+      ],
+      "connectors": [
+        ["d'altro canto", "per altro verso, introducendo un punto di vista opposto.", "La sede centrale è grande, d'altro canto la periferia soffre."],
+        ["di conseguenza", "per effetto di quanto detto precedentemente.", "I costi aumenteranno e di conseguenza dovremo fare delle scelte."],
+        ["in primo luogo", "per cominciare, come primo argomento importante.", "In primo luogo dobbiamo considerare le esigenze degli studenti."],
+        ["tuttavia", "nonostante ciò, eppure.", "Il progetto è costoso, tuttavia porterà grandi benefici a lungo termine."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**In primo luogo** dobbiamo considerare che la sede centrale rappresenta il punto di riferimento storico per tutti gli studenti del distretto. Ristrutturare questo edificio significa creare un ambiente moderno e attrezzato con postazioni di lavoro silenziose e connessioni internet stabili.",
+        "Sebbene alcune zone periferiche rimangano distanti, concentrare le risorse su un'unica struttura centrale garantisce una gestione ottimale dei costi di manutenzione e del personale specializzato. Gli utenti potranno così usufruire di servizi avanzati che una piccola unità mobile non potrebbe mai offrire stabilmente.",
+        "**D'altro canto**, la centralizzazione stimola la collaborazione accademica e offre uno **spazio** adeguato per la ricerca avanzata. Pertanto, investire nella sede principale rimane la scelta più logica per elevare la qualità complessiva dell'offerta culturale."
+      ],
+      "b": [
+        "**In primo luogo** dobbiamo ammettere che molti residenti delle zone periferiche faticano enormemente a raggiungere la biblioteca centrale a causa dei collegamenti insufficienti. Mandare una biblioteca mobile direttamente nei quartieri significa abbattere le barriere geografiche e portare la cultura dove serve davvero.",
+        "Sebbene il veicolo offra una scelta limitata di libri e non disponga di sale di studio tradizionali, la sua flessibilità garantisce un contatto costante con le fasce di popolazione più isolate e impossibilitate a viaggiare regolarmente.",
+        "In conclusione, la vicinanza territoriale rappresenta il vero parametro di giustizia sociale. Scegliere il **servizio** mobile dimostra un impegno concreto verso chi rischia l'isolamento culturale quotidiano."
+      ],
+      "conditional": [
+        "Se il problema principale dei cittadini consiste nel trovare uno **spazio** di lavoro adeguato e silenzioso, allora la ristrutturazione della sede centrale rappresenta chiaramente la soluzione più **efficace** per rispondere a questa specifica esigenza.",
+        "Al contrario, qualora la difficoltà maggiore riguardi l'impossibilità fisica di spostarsi e raggiungere il centro urbano, il **servizio** di biblioteca mobile diventa indispensabile per garantire un accesso minimo ai libri.",
+        "In definitiva, la decisione finale dipende interamente dalle priorità locali: se prevale la necessità di studio intensivo si sceglie la sede, mentre se domina il bisogno di prossimità territoriale si opta per il veicolo."
+      ]
+    }
+  },
+  {
+    "slug": "household-energy-grants",
+    "title": "Sussidi energetici domestici",
+    "prompt": "Un distretto ha fondi per tagliare le bollette energetiche delle famiglie a basso reddito. Dovrebbe offrire meno sussidi per l'isolamento termico delle case o sussidi più piccoli che permettano a più famiglie di sostituire gli elettrodomestici inefficienti?",
+    "conditionalPrompt": "Spiega cosa costituirei un risparmio significativo e come la politica dovrebbe trattare gli inquilini in affitto.",
+    "options": [
+      {
+        "label": "Isolamento termico",
+        "description": "Migliorare le case piene di spifferi con i maggiori bisogni di riscaldamento. Le valutazioni e l'installazione richiedono tempo e alcuni inquilini necessitano del permesso del proprietario."
+      },
+      {
+        "label": "Sostituzione elettrodomestici",
+        "description": "Sostituire frigoriferi inefficienti e altri apparecchi molto usati. Il lavoro può iniziare rapidamente, sebbene i risparmi dipendano da quale elettrodomestico viene sostituito."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sussidio", "aiuto finanziario concesso dallo Stato o da un ente pubblico.", "Molte famiglie in difficoltà attendono questo sussidio per l'inverno."],
+        ["isolamento", "intervento per impedire la dispersione termica di un edificio.", "L'isolamento delle pareti riduce drasticamente i costi della bolletta."],
+        ["elettrodomestico", "apparecchio elettrico usato per lavori domestici.", "Un vecchio elettrodomestico consuma troppa energia elettrica."],
+        ["risparmio", "riduzione delle spese o conservazione di risorse.", "Questo intervento garantisce un risparmio duraturo sulle spese mensili."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro", "fornire supporto economico o pratico.", "Dobbiamo andare incontro alle famiglie che faticano a riscaldare casa."],
+        ["fare fronte", "affrontare una spesa o una situazione difficile.", "Molti cittadini non riescono a fare fronte alle spese energetiche."],
+        ["portare via", "rimuovere qualcosa, come un vecchio apparecchio.", "Gli operai verranno a portare via il frigorifero vecchio."],
+        ["venire incontro", "agevolare qualcuno nelle sue necessità.", "Il comune cerca di venire incontro ai proprietari di case popolari."]
+      ],
+      "adjectives": [
+        ["inefficiente", "che spreca risorse o non funziona bene.", "Un impianto di riscaldamento inefficiente fa lievitare i costi."],
+        ["energetico", "relativo all'energia e al suo consumo.", "La crisi energetica colpisce duramente i bilanci familiari."],
+        ["tempestivo", "fatto al momento giusto e senza ritardi.", "Un intervento tempestivo evita disagi gravi durante l'inverno."],
+        ["significativo", "che ha un'importanza notevole e misurabile.", "Ci aspettiamo un calo significativo dei consumi domestici."]
+      ],
+      "connectors": [
+        ["d'altronde", "del resto, per confermare quanto detto.", "I fondi sono scarsi, d'altronde non possiamo aiutare tutti."],
+        ["inoltre", "per aggiungere un ulteriore elemento alla discussione.", "Il bonus copre i costi e inoltre offre consulenza gratuita."],
+        ["pertanto", "perciò, di conseguenza.", "La casa perde calore, pertanto dobbiamo rifare l'isolamento."],
+        ["tuttavia", "nonostante ciò che si è detto.", "La spesa iniziale è alta, tuttavia i benefici saranno duraturi."]
+      ]
+    },
+    "models": {
+      "a": [
+        "In primo luogo dobbiamo considerare che le case con gravi problemi di dispersione termica causano bollette altissime per le famiglie a basso reddito. Intervenire sull'**isolamento** strutturale garantisce un taglio duraturo ed efficace dei consumi energetici durante tutto l'anno.",
+        "Sebbene i lavori richiedano valutazioni tecniche complesse e spesso l'autorizzazione formale dei proprietari immobiliari, il beneficio a lungo termine supera nettamente la lentezza burocratica iniziale. Proteggere l'involucro edilizio significa risolvere la radice del problema.",
+        "**D'altronde**, un frigorifero nuovo offre vantaggi limitati se la casa continua a disperdere calore. **Pertanto**, puntare sull'**isolamento** termico rappresenta la strategia più saggia e strutturale per il bilancio pubblico."
+      ],
+      "b": [
+        "In primo luogo bisogna sottolineare che la sostituzione degli elettrodomestici obsoleti permette di avviare gli interventi in tempi rapidissimi. Molte famiglie possiedono frigoriferi vecchi che consumano una quantità enorme di energia elettrica ogni singolo giorno.",
+        "Sebbene l'entità del **risparmio** dipenda strettamente dal tipo di apparecchio sostituito e dalle abitudini d'uso, questo approccio consente di distribuire piccoli sussidi a un numero molto più elevato di cittadini bisognosi.",
+        "**Inoltre**, questa misura evita le complicazioni burocratiche legate ai permessi dei proprietari per le case in affitto. **Pertanto**, la sostituzione degli elettrodomestici rappresenta la risposta più rapida e inclusiva alla crisi."
+      ],
+      "conditional": [
+        "Se consideriamo un **risparmio** **significativo** quello capace di dimezzare le spese di riscaldamento invernale, allora i sussidi per l'**isolamento** termico sono essenziali, pur richiedendo accordi specifici tra inquilini e proprietari.",
+        "Al contrario, se l'obiettivo principale consiste nel dare un sollievo immediato a chi vive in affitto senza poter modificare le strutture murarie, i contributi per i nuovi elettrodomestici risultano decisamente più appropriati.",
+        "In definitiva, la politica abitativa deve valutare caso per caso: l'**isolamento** conviene per interventi strutturali a lungo termine, mentre i sussidi per gli apparecchi offrono flussi di aiuto rapidi e flessibili."
+      ]
+    }
+  },
+  {
+    "slug": "hybrid-work-days",
+    "title": "Giorni di lavoro ibrido in ufficio",
+    "prompt": "Un'azienda desidera che il personale trascorra del tempo in ufficio. Tutti dovrebbero venire negli stessi due giorni oppure ogni squadra dovrebbe scegliere quando incontrarsi in base al proprio lavoro?",
+    "conditionalPrompt": "Indica un tipo di lavoro che trae genuinamente beneficio dalla sovrapposizione e un segno che un programma fisso sarebbe eccessivo.",
+    "options": [
+      {
+        "label": "Giorni fissi aziendali",
+        "description": "Rendi facile incontrare qualcuno di un'altra squadra senza organizzare un viaggio speciale. Il personale ha meno controllo sui viaggi settimanali."
+      },
+      {
+        "label": "Scelta autonoma della squadra",
+        "description": "Lascia che le squadre organizzino il tempo in presenza attorno ai progetti e alle esigenze individuali. Le squadre potrebbero non incontrarsi quando i loro orari differiscono."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sovrapposizione", "coincidenza di orari o presenze tra persone diverse", "La sovrapposizione degli orari migliora la collaborazione."],
+        ["flessibilità", "capacità di adattarsi facilmente alle variazioni", "La flessibilità lavorativa riduce lo stress quotidiano."],
+        ["esigenza", "necessità fondamentale o bisogno specifico", "Dobbiamo rispettare ogni esigenza del team."],
+        ["spostamento", "azione di viaggiare da un luogo a un altro", "Ogni spostamento richiede una pianificazione attenta."]
+      ],
+      "phrasalVerbs": [
+        ["venire incontro", "andare incontro alle esigenze altrui", "Dobbiamo venire incontro alle richieste del personale."],
+        ["fare a meno", "rinunciare a qualcosa o qualcuno", "Non possiamo fare a meno di una buona comunicazione."],
+        ["mettere in conto", "prevedere una difficoltà o un costo", "Bisogna mettere in conto qualche piccolo ritardo."],
+        ["portare a termine", "completare con successo un compito", "Vogliamo portare a termine questo progetto insieme."]
+      ],
+      "adjectives": [
+        ["eccessivo", "che supera i limiti della ragionevolezza", "Un controllo così rigido risulta del tutto eccessivo."],
+        ["efficiente", "che produce ottimi risultati senza sprechi", "Questo metodo di lavoro è molto efficiente."],
+        ["autonomo", "indipendente nelle proprie decisioni", "Ogni gruppo rimane autonomo nella gestione."],
+        ["indispensabile", "strettamente necessario", "La presenza fisica è indispensabile per la creatività."]
+      ],
+      "connectors": [
+        ["d'altra parte", "espressione per introdurre un punto di vista opposto", "D'altra parte, dobbiamo considerare i costi di gestione."],
+        ["di conseguenza", "per effetto di quanto detto in precedenza", "I calendari differiscono e, di conseguenza, diminuiscono gli incontri casuali."],
+        ["inoltre", "per aggiungere un ulteriore argomento", "Inoltre, la coordinazione richiede tempo prezioso."],
+        ["tuttavia", "congiunzione avversativa che introduce una limitazione", "La soluzione è pratica; tuttavia, presenta alcuni limiti."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Adottare giorni fissi stabiliti dall'azienda garantisce che tutti i dipendenti condividano lo stesso spazio nello stesso momento esatto.",
+        "In questo modo si facilita enormemente la comunicazione spontanea tra reparti differenti senza dover pianificare appuntamenti formali con giorni di anticipo.",
+        "**D'altra parte**, il personale subisce una notevole limitazione nella gestione dei propri spostamenti settimanali e della propria routine quotidiana."
+      ],
+      "b": [
+        "Permettere alle singole squadre di organizzare il lavoro in presenza offre una **flessibilità** **indispensabile** per la gestione dei progetti complessi.",
+        "Ogni gruppo può decidere autonomamente quando riunirsi in base alle reali esigenze operative e alle scadenze imminenti.",
+        "**Tuttavia**, quando i calendari differiscono troppo tra i vari reparti, le persone rischiano di non incontrarsi mai nei corridoi dell'ufficio."
+      ],
+      "conditional": [
+        "La scelta tra un calendario fisso e uno flessibile dipende strettamente dalla natura delle mansioni svolte dai singoli dipendenti aziendali.",
+        "Ad esempio, lo sviluppo software trae enorme beneficio da una forte **sovrapposizione** temporale per risolvere rapidamente i problemi tecnici imprevisti.",
+        "Se **tuttavia** il lavoro è prevalentemente indipendente, imporre la presenza fissa in ufficio risulta **eccessivo** e frustrante per tutti."
+      ]
+    }
+  },
+  {
+    "slug": "hiring-first-round",
+    "title": "Valutazione iniziale dei candidati",
+    "prompt": "Un datore di lavoro ha tempo per una sola valutazione preliminare per ogni candidato. Conviene richiedere un breve campione di lavoro anonimo o condurre un colloquio strutturato con le stesse domande per tutti?",
+    "conditionalPrompt": "Scegli l'abilità più importante per un ruolo e indica quale metodo di valutazione ti fornirebbe le prove più chiare al riguardo.",
+    "options": [
+      {
+        "label": "Campione anonimo",
+        "description": "Assegnare un breve compito simile al lavoro reale e valutarlo con una griglia prima di conoscere i nomi."
+      },
+      {
+        "label": "Colloquio strutturato",
+        "description": "Chiedere a ogni candidato di spiegare gli stessi scenari lavorativi e votare le risposte sapendo chi è la persona."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["criterio", "principio o norma di giudizio", "Adottiamo un criterio rigoroso per valutare ogni curriculum."],
+        ["competenza", "abilità acquisita in un determinato campo", "La competenza tecnica è fondamentale per questo ruolo."],
+        ["oggettività", "qualità di ciò che è obiettivo e imparziale", "L'oggettività della prova garantisce pari opportunità a tutti."],
+        ["potenziale", "insieme delle capacità non ancora pienamente sviluppate", "Dobbiamo valutare anche il potenziale di crescita del candidato."]
+      ],
+      "phrasalVerbs": [
+        ["venire meno", "mancare, venir meno a un impegno o a una regola", "Non bisogna mai venire meno ai principi di equità."],
+        ["mettere in luce", "fare emergere chiaramente qualcosa", "Il test pratico riesce a mettere in luce le vere capacità."],
+        ["fare a meno", "rinunciare a qualcosa o qualcuno", "Non possiamo fare a meno di una verifica approfondita."],
+        ["portare a termine", "concludere con successo un'attività", "Il candidato ideale sa portare a termine ogni compito assegnato."]
+      ],
+      "adjectives": [
+        ["imparziale", "che giudica senza favoritismi", "La commissione deve rimanere assolutamente imparziale durante i colloqui."],
+        ["rigoroso", "severo e meticoloso nell'applicazione delle regole", "Seguiamo un protocollo rigoroso per la selezione del personale."],
+        ["efficace", "capace di produrre il risultato desiderato", "Questo metodo di selezione si è rivelato molto efficace."],
+        ["trasparente", "chiaro, limpido e senza zone d'ombra", "Il nostro processo di assunzione è del tutto trasparente."]
+      ],
+      "connectors": [
+        ["d'altro canto", "espressione per introdurre un punto di vista opposto", "D'altro canto, dobbiamo considerare i costi dell'operazione."],
+        ["di conseguenza", "perciò, come effetto logico di quanto detto", "La prova è risultata difficile e di conseguenza molti sono stati scartati."],
+        ["in primo luogo", "come primo punto di un discorso o ragionamento", "In primo luogo dobbiamo definire i requisiti minimi."],
+        ["tuttavia", "nonostante ciò, eppure", "La procedura è lunga, tuttavia garantisce ottimi risultati finali."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**In primo luogo** ritengo fondamentale puntare su un campione di lavoro anonimo per eliminare qualsiasi pregiudizio iniziale. Valutare un elaborato tecnico senza conoscere l'identità del candidato garantisce un giudizio davvero **imparziale** e basato unicamente sui fatti.",
+        "**D'altro canto**, i colloqui tradizionali rischiano di essere influenzati da fattori superficiali come l'aspetto o il modo di parlare. **Di conseguenza**, preferisco concentrarmi sulla **competenza** pratica dimostrata concretamente nel compito assegnato.",
+        "In conclusione, questa modalità tutela l'equità aziendale e permette di **mettere in luce** il vero talento senza distrazioni. Scegliere questa strada significa investire sulla qualità oggettiva del lavoro svolto fin dall'inizio."
+      ],
+      "b": [
+        "**In primo luogo** preferisco optare per il colloquio strutturato perché permette di osservare direttamente la personalità e la comunicazione del candidato. Discutere insieme gli scenari lavorativi offre una visione completa del suo carattere e della sua attitudine.",
+        "**D'altro canto**, un compito scritto mostra solo una parte ristretta delle capacità operative di una persona. **Di conseguenza**, ritengo essenziale il confronto diretto per comprendere come il professionista affronta le sfide quotidiane.",
+        "In conclusione, il dialogo faccia a faccia rimane lo strumento più **efficace** per valutare l'empatia e il fit culturale. Scegliere questo approccio assicura una comprensione profonda delle reali motivazioni del candidato."
+      ],
+      "conditional": [
+        "Nel caso in cui la posizione richieda principalmente abilità tecniche di scrittura o programmazione, scelgo il campione anonimo per valutare senza filtri la **competenza**. Se invece il ruolo prevede una forte interazione con il pubblico, scelgo il colloquio strutturato per testare le doti comunicative.",
+        "**Tuttavia**, il fattore decisivo dipende sempre dalla natura specifica delle mansioni che la persona dovrà svolgere quotidianamente. Ogni contesto lavorativo richiede un bilanciamento diverso tra capacità pratiche e relazionali.",
+        "In conclusione, la scelta ottimale emerge analizzando attentamente le priorità strategiche dell'azienda in quel momento preciso. Solo così possiamo garantire un inserimento di successo e duraturo nel team."
+      ]
+    }
+  },
+  {
+    "slug": "salary-range-transparency",
+    "title": "Trasparenza salariale aziendale",
+    "prompt": "Un'organizzazione ha deciso di pubblicare le fasce di retribuzione. Conviene pubblicarle immediatamente all'interno e negli annunci di lavoro, oppure condividerle prima con il personale per correggere eventuali incoerenze prima di aggiornare gli annunci dopo tre mesi?",
+    "conditionalPrompt": "Separa i problemi semplici da risolvere dalle differenze che richiedono un adeguamento salariale.",
+    "options": [
+      {
+        "label": "Pubblicazione immediata",
+        "description": "Fornire a dipendenti e candidati le stesse informazioni subito, accettando di spiegare le differenze mentre la revisione continua."
+      },
+      {
+        "label": "Condivisione interna graduale",
+        "description": "Dare le fasce al personale adesso e verificare le incoerenze prima di aggiornare gli annunci esterni tre mesi dopo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["trasparenza", "Chiarezza e accessibilità delle informazioni aziendali.", "La trasparenza salariale migliora notevolmente il clima di fiducia tra i dipendenti."],
+        ["incoerenza", "Mancanza di logica o di uniformità in una situazione.", "Abbiamo rilevato una grave incoerenza nei compensi tra reparti simili."],
+        ["retribuzione", "Il compenso economico corrisposto per un lavoro svolto.", "Ogni retribuzione deve rispecchiare equamente le competenze richieste dal ruolo."],
+        ["transizione", "Periodo di passaggio da una condizione a un'altra.", "Durante questa delicata transizione informativa dobbiamo mantenere la massima calma."]
+      ],
+      "phrasalVerbs": [
+        ["portare alla luce", "Rivelare chiaramente qualcosa che era nascosto.", "Questa nuova politica salariale porterà alla luce vecchie disparità."],
+        ["fare il punto", "Fare una verifica complessiva della situazione attuale.", "Dobbiamo fare il punto sulla situazione prima di procedere con la pubblicazione."],
+        ["mettere in conto", "Prevedere e accettare una possibile difficoltà futura.", "Bisogna mettere in conto qualche protesta iniziale da parte dei dipendenti scontenti."],
+        ["andare incontro", "Affrontare una situazione o venire incontro a un'esigenza.", "Così facendo rischiamo di andare incontro a inutili complicazioni legali."]
+      ],
+      "adjectives": [
+        ["trasparente", "Che agisce con chiarezza e senza nascondere nulla.", "Un'azienda veramente trasparente guadagna subito la stima dei suoi collaboratori."],
+        ["dettagliato", "Ricco di particolari e approfondito in ogni sua parte.", "Ho preparato un prospetto dettagliato per giustificare ogni singola variazione."],
+        ["vulnerabile", "Esposto a critiche o a possibili rischi esterni.", "Senza dati certi il nostro dipartimento HR risulta estremamente vulnerabile."],
+        ["equo", "Giusto e imparziale nel trattamento delle persone.", "Solo un sistema di compensi equo può garantire una stabilità a lungo termine."]
+      ],
+      "connectors": [
+        ["tuttavia", "Ciò nonostante, nondimeno.", "La misura è necessaria; tuttavia richiede una pianificazione molto rigorosa."],
+        ["invece", "A differenza di quanto detto o fatto.", "Potremmo invece anticipare i tempi e pubblicare tutto subito."],
+        ["d'altra parte", "Espressione usata per introdurre un punto di vista opposto.", "D'altra parte i candidati esterni meritano chiarezza fin dal primo colloquio."],
+        ["pertanto", "Perciò, di conseguenza.", "La situazione è complessa; pertanto dobbiamo procedere con grande prudenza."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Adottare una **trasparenza** immediata su tutte le fasce retributive rappresenta una scelta coraggiosa che azzera ogni sospetto di favoritismo interno. Fornire dati completi sia ai dipendenti sia ai candidati esterni dimostra un rispetto profondo per il mercato del lavoro e per la dignità professionale di ciascuno.",
+        "Sebbene emergano inevitabilmente alcune disparità temporanee che richiederanno spiegazioni dettagliate, la gestione aperta accelera la risoluzione dei conflitti latenti. **Portare alla luce** queste discrepanze permette di affrontarle apertamente senza alimentare inutili malumori sotterranei.",
+        "In conclusione, rimandare la pubblicazione esterna creerebbe soltanto una pericolosa asimmetria informativa difficilmente giustificabile eticamente. **Pertanto** conviene pubblicare tutto adesso, mettendo in conto qualche discussione iniziale ma guadagnando una credibilità duratura."
+      ],
+      "b": [
+        "Condividere le fasce salariali esclusivamente con il personale interno prima di aggiornare gli annunci costituisce un atto di prudenza amministrativa indispensabile. Questa fase di **transizione** protetta permette di **fare il punto** sulle reali disallineamenti retributivi senza subire pressioni esterne immediate.",
+        "**D'altra parte**, pubblicare dati non verificati rischierebbe di esporre l'azienda a contestazioni incontrollabili da parte di candidati disinformati sulle specificità interne. Lavorare prima sulle incoerenze garantisce che ogni valore comunicato all'esterno risulti perfettamente difendibile.",
+        "**Pertanto**, procedere per gradi tutela la reputazione aziendale e permette di **andare incontro** alle richieste dei dipendenti con soluzioni ponderate. Solo dopo aver sistemato le basi interne risulterà saggio estendere la **trasparenza** anche agli annunci di lavoro."
+      ],
+      "conditional": [
+        "La scelta tra pubblicazione immediata e **transizione** graduale dipende essenzialmente dalla gravità e dalla natura delle discrepanze salariali presenti nell'organizzazione. Se i problemi sono marginali e facilmente risolvibili con una semplice spiegazione verbale, la **trasparenza** totale immediata premi l'onestà aziendale.",
+        "**Tuttavia**, quando le difformità retributive derivano da storiche disfunzioni strutturali che richiedono interventi correttivi complessi, anticipare i dati all'esterno diventa rischioso. In quel contesto specifico, condividere le informazioni solo internamente evita malintesi devastanti durante le selezioni.",
+        "In definitiva, bisogna valutare se l'azienda possiede già gli argomenti per giustificare i propri divari stipendiali oppure se necessita di tempo. Chi ha una struttura ordinata sceglie la via diretta; chi deve correggere storture profonde opta giustamente per la verifica graduale."
+      ]
+    }
+  },
+  {
+    "slug": "community-project-funding",
+    "title": "Finanziamento per progetto comunitario",
+    "prompt": "Un gruppo di volontari gestisce uno strumento di bilancio gratuito per piccole comunità. Una sovvenzione potrebbe pagare due manutentori esperti per un anno oppure finanziare la formazione e il supporto per un gruppo più ampio di nuovi collaboratori. Quale opzione scegliere?",
+    "conditionalPrompt": "Decidi se il problema immediato è il troppo lavoro per il team attuale o la carenza di persone in grado di subentrare.",
+    "options": [
+      {
+        "label": "Stipendiare esperti",
+        "description": "Dare a due persone tempo protetto per gestire supporto e miglioramenti, pur sapendo che il progetto dipenderà ancora da loro."
+      },
+      {
+        "label": "Formare nuovi contributori",
+        "description": "Avviare un programma strutturato e affiancare i partecipanti ai volontari, accettando che ci vorrà tempo per condividere il lavoro."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["manutenzione", "Insieme degli interventi per mantenere efficiente un sistema.", "Una buona manutenzione del codice previene guasti improvvisi della piattaforma."],
+        ["formazione", "Processo di apprendimento per acquisire nuove competenze.", "La formazione dei nuovi volontari richiede molta pazienza e costanza."],
+        ["sostenibilità", "Capacità di durare nel tempo senza esaurire le risorse.", "Dobbiamo garantire la sostenibilità a lungo termine di questo prezioso strumento."],
+        ["sovvenzione", "Contributo economico concesso da un ente per uno scopo specifico.", "Questa sovvenzione ci offre un'opportunità straordinaria per crescere."]
+      ],
+      "phrasalVerbs": [
+        ["fare affidamento", "Contare sulla collaborazione o sull'aiuto di qualcuno.", "Non possiamo fare affidamento soltanto su due persone per tutto il lavoro."],
+        ["mettere in piedi", "Organizzare e avviare un'attività o un progetto da zero.", "Vogliamo mettere in piedi un programma formativo davvero efficace per tutti."],
+        ["venire meno", "Mancare, cessare di esistere o non essere più garantito.", "Il supporto rischia di venire meno non appena finiranno i fondi."],
+        ["portare avanti", "Continuare a gestire un'attività superando gli ostacoli.", "È difficile portare avanti il progetto senza un ricambio generazionale."]
+      ],
+      "adjectives": [
+        ["competente", "Dotato di adeguate capacità e conoscenze specifiche.", "Cerchiamo personale altamente competente per risolvere questi problemi tecnici."],
+        ["strutturato", "Organizzato secondo uno schema logico e rigoroso.", "Abbiamo bisogno di un percorso formativo molto più strutturato."],
+        ["vulnerabile", "Facilmente attaccabile o esposto a rischi operativi.", "Il nostro team attuale è troppo piccolo e vulnerabile al sovraccarico."],
+        ["autonomo", "Capace di agire e decidere senza dipendere da altri.", "L'obiettivo finale è rendere ogni partecipante completamente autonomo."]
+      ],
+      "connectors": [
+        ["invece", "Nel contempo o per contro, indicando opposizione.", "Potremmo invece investire sui giovani per garantire una vera continuità."],
+        ["d'altra parte", "Dall'altro lato, introducendo una considerazione contraria.", "D'altra parte, assumere esperti garantisce risultati immediati e sicuri."],
+        ["pertanto", "Per questa ragione, conseguentemente.", "Il carico di lavoro è eccessivo; pertanto dobbiamo proteggere i manutentori attuali."],
+        ["tuttavia", "Nonostante ciò, eppure.", "La soluzione è costosa; tuttavia rappresenta l'unico investimento duraturo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Assegnare la **sovvenzione** a due manutentori esperti garantisce la stabilità immediata e la qualità tecnica impeccabile dello strumento comunitario. Mettere in sicurezza le operazioni quotidiane permette alla piattaforma di evitare blocchi improvvisi che danneggerebbero gli utenti.",
+        "**D'altra parte**, affidarsi esclusivamente a un gruppo ristretto rende il progetto **vulnerabile** qualora queste figure decidessero di andarsene. **Tuttavia**, di fronte a un'emergenza di carico di lavoro, blindare le competenze chiave rappresenta una mossa obbligata.",
+        "**Pertanto**, conviene stipendiare chi già sa come muoversi, rimandando a un momento successivo la **formazione** di nuove leve."
+      ],
+      "b": [
+        "Investire la **sovvenzione** nella **formazione** di un ampio gruppo di nuovi contributori risolve il problema strutturale della dipendenza da pochi singoli. **Mettere in piedi** un percorso **strutturato** assicura che il progetto diventi veramente **autonomo** e resiliente nel corso degli anni.",
+        "È vero che ci vorrà tempo prima che i partecipanti siano operativi, e all'inizio i volontari storici dovranno farsi carico di un doppio impegno. **Tuttavia**, questa scelta evita che il progetto muoia nel momento in cui i fondi attuali dovessero esaurirsi.",
+        "In conclusione, costruire una comunità ampia garantisce una **sostenibilità** reale che ripaga ampiamente la fatica iniziale."
+      ],
+      "conditional": [
+        "La decisione ottimale dipende da quale crisi stia minacciando la sopravvivenza dello strumento di bilancio in questo preciso momento. Se il software è instabile e il team attuale è sul punto di crollare per sfinimento, bisogna assolutamente pagare i manutentori esperti.",
+        "Se **invece** il codice è stabile ma il progetto rischia la chiusura per mancanza di ricambio generazionale, allora la priorità assoluta diventa la **formazione**. Valutare lo stato di salute del gruppo permette di indirizzare i fondi dove servono davvero.",
+        "In definitiva, chi è sull'orlo del collasso tecnico sceglie i professionisti; chi guarda al futuro punta decisamente sulla comunità."
+      ]
+    }
+  },
+  {
+    "slug": "local-news-funding",
+    "title": "Finanziamento del giornalismo locale",
+    "prompt": "Una redazione locale ha bisogno di entrate affidabili per seguire il consiglio comunale. Dovrebbe rendere il suo lavoro gratuito usando un sussidio di fondazione di un anno o finanziare il servizio attraverso abbonamenti che offrono ai lettori paganti la maggior parte degli articoli?",
+    "conditionalPrompt": "Spiega cosa ti convincerebbe che l'opzione gratuita sia indipendente o che quella a pagamento resti un servizio pubblico.",
+    "options": [
+      {
+        "label": "Sussidio di fondazione",
+        "description": "Lasciare tutto il giornalismo aperto e concordare tutele scritte per le decisioni editoriali. La redazione avrà bisogno di un'altra fonte di finanziamento dopo un anno."
+      },
+      {
+        "label": "Abbonamenti dei lettori",
+        "description": "Mantenere gratuiti gli avvisi pubblici chiave e mettere la maggior parte dei reportage dietro un paywall. Le entrate crescono solo se abbastanza lettori diventano e restano abbonati."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sussidio", "Somma di denaro concessa da un ente pubblico o privato per sostenere un'attività.", "Abbiamo ottenuto un sussidio importante per ampliare la nostra redazione."],
+        ["redazione", "Insieme dei giornalisti che lavorano per un giornale.", "La redazione ha discusso a lungo sulla linea editoriale da seguire."],
+        ["abbonamento", "Contratto che dà diritto a ricevere un periodico o un servizio per un determinato periodo.", "Il nostro abbonamento digitale garantisce l'accesso a tutti i contenuti esclusivi."],
+        ["trasparenza", "Chiarezza e correttezza di comportamento nella gestione di attività pubbliche o private.", "Dobbiamo pretendere massima trasparenza nella gestione dei fondi ricevuti."]
+      ],
+      "phrasalVerbs": [
+        ["fare affidamento", "Contare su qualcuno o qualcosa per ottenere aiuto o sicurezza economica.", "Non possiamo fare affidamento soltanto sui contributi occasionali dei lettori."],
+        ["mettere in discussione", "Rimettere in dubbio la validità o l'autonomia di una decisione presa.", "Nessuno deve mettere in discussione la nostra totale indipendenza giornalistica."],
+        ["portare avanti", "Continuare a sviluppare un progetto o un'attività nonostante le difficoltà.", "Continueremo a portare avanti le nostre inchieste senza alcun timore."],
+        ["venire meno", "Mancare, venir meno a un impegno preso o esaurirsi nel tempo.", "Temo che questo finanziamento possa venire meno improvvisamente l'anno prossimo."]
+      ],
+      "adjectives": [
+        ["affidabile", "Meritevole di fiducia, sicuro e costante nel tempo.", "Cerchiamo una fonte di reddito affidabile per garantire il futuro del giornale."],
+        ["indipendente", "Libero da condizionamenti esterni o pressioni politiche ed economiche.", "Una stampa veramente indipendente è il pilastro fondamentale della nostra democrazia locale."],
+        ["fondamentale", "Di importanza primaria per la riuscita o la sopravvivenza di qualcosa.", "Il controllo civico sul consiglio comunale resta fondamentale per i cittadini."],
+        ["sostenibile", "Capace di mantenersi economicamente in equilibrio nel lungo periodo.", "Dobbiamo trovare un modello economico sostenibile prima della fine dell'anno."]
+      ],
+      "connectors": [
+        ["d'altra parte", "Espressione usata per introdurre un punto di vista opposto o complementare.", "D'altra parte, gli abbonamenti garantiscono un legame diretto con il nostro pubblico."],
+        ["di conseguenza", "Per effetto logico di quanto appena detto o stabilito.", "La fondazione garantisce fondi immediati e, di conseguenza, possiamo assumere nuovi giornalisti."],
+        ["ciononostante", "Nonostante quanto è stato detto o fatto in precedenza.", "Il bilancio è in difficoltà, ciononostante rifiutiamo qualsiasi compromesso politico."],
+        ["inoltre", "Per aggiungere un ulteriore elemento o argomento alla discussione.", "Inoltre, la gratuità permette a tutti i cittadini di informarsi senza barriere economiche."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Accettare il **sussidio** iniziale rappresenta una scelta **fondamentale** per garantire un'informazione totalmente libera e accessibile a tutti i cittadini. Nel corso di questo primo anno possiamo concentrarci unicamente sulle inchieste senza subire le pressioni commerciali dei lettori paganti. Questa soluzione ci permette di mantenere un rapporto di fiducia duraturo con la nostra comunità locale.",
+        "**D'altra parte**, sappiamo perfettamente che le risorse pubbliche o di fondazione sono destinate a esaurirsi rapidamente nel tempo. Per questo motivo utilizzeremo i prossimi mesi per costruire un modello di business alternativo e veramente **sostenibile** prima della scadenza. La **trasparenza** dei nostri bilanci eviterà qualsiasi dubbio sulla nostra totale autonomia editoriale.",
+        "In conclusione, preferisco rischiare la ricerca di nuovi fondi in futuro piuttosto che chiudere subito l'accesso alle notizie dietro un muro a pagamento. La democrazia locale ha bisogno di una stampa aperta che raggiunga ogni singolo cittadino senza discriminazioni economiche. Dobbiamo assolutamente difendere questo diritto **fondamentale**."
+      ],
+      "b": [
+        "Puntare sugli abbonamenti dei lettori costituisce la strategia più **affidabile** per assicurare un futuro solido e duraturo alla nostra **redazione**. Quando i cittadini pagano direttamente per il servizio informativo riconoscono il valore reale del nostro lavoro quotidiano sul territorio. **Di conseguenza**, il giornale diventa economicamente **indipendente** da qualsiasi condizionamento esterno.",
+        "**Ciononostante**, comprendo perfettamente le preoccupazioni di chi teme che un paywall possa escludere le fasce più deboli della popolazione locale. Proprio per questo motivo lasceremo sempre liberi e accessibili tutti gli avvisi pubblici essenziali per la vita della comunità. Vogliamo che il controllo civico sul consiglio comunale resti sempre garantito per chiunque.",
+        "In sintesi, la sostenibilità economica attraverso i membri rappresenta l'unica vera garanzia di sopravvivenza per un giornalismo investigativo rigoroso. Nessuna fondazione potrà mai sostituire il legame forte e diretto con un pubblico che sceglie volontariamente di sostenerci. Questo è il percorso migliore per il nostro futuro."
+      ],
+      "conditional": [
+        "Per accettare con convinzione l'opzione gratuita vorrei vedere garanzie contrattuali ferree che proteggano la **redazione** da qualsiasi ingerenza della fondazione finanziatrice. Se i contratti vietassero esplicitamente qualsiasi tentativo di censura preventiva allora potremmo fidarci di quel **sussidio** iniziale. Altrimenti il rischio di subire pressioni occulte resterebbe troppo elevato.",
+        "**D'altra parte**, riterrei accettabile il modello a pagamento soltanto se una percentuale minima dei ricavi venisse reinvestita in programmi di alfabetizzazione mediatica. Solo in quel modo il paywall cesserebbe di essere una barriera classista per trasformarsi in uno strumento collettivo. La funzione pubblica deve rimanere sempre al centro.",
+        "In definitiva, cambierei radicalmente idea soltanto di fronte a prove concrete sulla reale volontà degli editori di servire l'interesse generale. Senza una dimostrazione tangibile di indipendenza o di inclusività sociale, nessuna delle due strade può dirsi completamente soddisfacente. Dobbiamo vigilare costantemente."
+      ]
+    }
+  },
+  {
+    "slug": "returnable-takeaway-containers",
+    "title": "Contenitori d'asporto riutilizzabili",
+    "prompt": "Un gruppo di negozi d'asporto vuole ridurre i rifiuti da imballaggio. Dovrebbe adottare contenitori riutilizzabili condivisi con cauzione o passare a un formato monouso riciclabile che i clienti possono mettere nei cassonetti locali della raccolta differenziata?",
+    "conditionalPrompt": "Nomina le prove di restituzione o riciclo che renderebbero un sistema più credibile dell'altro.",
+    "options": [
+      {
+        "label": "Cauzione e restituzione",
+        "description": "Far pagare una cauzione rimborsabile e lasciare che i clienti restituiscano i contenitori a qualsiasi negozio del gruppo. I negozi condividono i costi di lavaggio e conservazione."
+      },
+      {
+        "label": "Monouso riciclabile",
+        "description": "Usare un unico materiale d'imballaggio accettato a livello locale con istruzioni chiare per lo smaltimento. I clienti non hanno bisogno di riportare i contenitori indietro."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["cauzione", "somma di denaro versata a titolo di garanzia che viene restituita alla riconsegna del bene", "I clienti pagano una piccola cauzione per il contenitore riutilizzabile."],
+        ["imballaggio", "materiale usato per avvolgere, proteggere e presentare i prodotti alimentari d'asporto", "Dobbiamo assolutamente ridurre la quantità di plastica usata per ogni imballaggio."],
+        ["smaltimento", "operazione di raccolta, trasporto e trattamento dei rifiuti urbani o speciali", "Le istruzioni per il corretto smaltimento devono essere chiare su ogni confezione."],
+        ["raccolta", "sistema organizzato per prelevare e dividere i rifiuti riciclabili sul territorio", "La raccolta differenziata dei materiali plastici funziona bene in questa città."]
+      ],
+      "phrasalVerbs": [
+        ["fare a meno", "rinunciare a qualcosa ritenuto non indispensabile per le proprie attività", "Non possiamo fare a meno di un sistema di imballaggi ecologici."],
+        ["tornare utile", "risultare utile o vantaggioso in una determinata situazione pratica", "Questo sistema di cauzioni potrebbe tornare utile per educare i consumatori."],
+        ["mettere in atto", "realizzare concretamente un progetto o una decisione presa in precedenza", "Dobbiamo mettere in atto misure drastiche contro l'inquinamento da plastica."],
+        ["portare via", "rimuovere un oggetto da un luogo per riportarlo al punto di origine", "I clienti devono riportare via i contenitori sporchi dopo ogni pasto."]
+      ],
+      "adjectives": [
+        ["riutilizzabile", "prodotto che può essere impiegato più volte prima di diventare un rifiuto", "Adottiamo solo contenitori riutilizzabili per azzerare i rifiuti alimentari."],
+        ["riciclabile", "materiale che può essere trattato per ottenere nuove materie prime riutilizzabili", "Usiamo esclusivamente carta riciclabile per le nostre confezioni d'asporto."],
+        ["efficiente", "sistema che produce i massimi risultati con il minor spreco di risorse", "Il servizio di lavaggio centralizzato deve diventare molto più efficiente."],
+        ["responsabile", "comportamento consapevole che rispetta l'ambiente e la comunità locale", "Chiediamo un consumo responsabile a tutti i clienti dei nostri ristoranti."]
+      ],
+      "connectors": [
+        ["invece", "introduce una contrapposizione netta tra due idee o situazioni distinte", "Molti clienti preferiscono il monouso; noi invece puntiamo sul riuso."],
+        ["pertanto", "segnala una conseguenza logica derivante dai fatti appena esposti", "I contenitori tornano sporchi; pertanto serve una struttura di lavaggio comune."],
+        ["infatti", "conferma quanto detto prima aggiungendo un esempio o una prova concreta", "Il sistema funziona benissimo; infatti la percentuale di restituzione è altissima."],
+        ["dunque", "conclude un ragionamento collegando le premesse alla decisione finale", "Dobbiamo dunque scegliere la soluzione più pratica per i nostri clienti."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Il nostro gruppo di negozi d'asporto deve assolutamente adottare il sistema dei contenitori riutilizzabili con **cauzione** per eliminare i rifiuti. Nonostante la complessità logistica della gestione, questa scelta dimostra un impegno ambientale concreto e duraturo. La riduzione drastica della plastica monouso costituisce la nostra priorità ecologica fondamentale.",
+        "Tuttavia siamo consapevoli che molti clienti potrebbero dimenticare di riportare i contenitori nei punti vendita convenzionati. Dobbiamo quindi organizzare un servizio di lavaggio centralizzato estremamente **efficiente** per mantenere bassi i costi operativi. L'impegno collettivo dei commercianti rappresenta la chiave di volta per il successo di questa iniziativa verde.",
+        "In conclusione questa soluzione virtuosa offre il massimo impatto positivo sulla tutela ambientale del nostro territorio. Se la percentuale di restituzione supererà le attese potremo dimostrare la superiorità economica del riuso. Dobbiamo **dunque** investire con coraggio in questo progetto di economia circolare."
+      ],
+      "b": [
+        "Il nostro gruppo di negozi d'asporto deve assolutamente scegliere il formato monouso **riciclabile** per semplificare la vita ai clienti. Nonostante la produzione continua di scarti, questo materiale si inserisce perfettamente nella **raccolta** differenziata locale esistente. La chiarezza delle istruzioni di **smaltimento** garantisce che ogni confezione venga trattata nel modo corretto.",
+        "Tuttavia sappiamo bene che il riciclo richiede comunque un dispendio energetico notevole rispetto al riuso diretto dei materiali. Dobbiamo quindi pretendere certificazioni rigorose dai nostri fornitori per evitare qualsiasi impatto ecologico negativo. La comodità d'uso rimane comunque un fattore decisivo per mantenere alti i volumi delle vendite.",
+        "In sintesi questo approccio pragmatico garantisce una transizione ecologica rapida senza gravare sulle abitudini quotidiane dei consumatori. Se i dati sul recupero dei materiali confermeranno l'efficacia del cassonetto locale, avremo raggiunto il nostro obiettivo. Dobbiamo **dunque** puntare sulla semplicità per diffondere pratiche ecologiche sostenibili su larga scala."
+      ],
+      "conditional": [
+        "La scelta tra i contenitori riutilizzabili e il monouso **riciclabile** dipende dai dati reali sulla restituzione e sul riciclo effettivo. Se i clienti restituiscono regolarmente la **cauzione**, il sistema **riutilizzabile** dimostra una superiorità ecologica indiscutibile. Tuttavia, se i tassi di perdita dei contenitori sono troppo alti, il bilancio ambientale diventa negativo.",
+        "D'altra parte il monouso **riciclabile** funziona come vera alternativa ecologica solo se gli impianti locali recuperano davvero quel materiale. Nel caso in cui i rifiuti finiscano comunque in discarica, l'intero progetto perde la sua credibilità iniziale. **Pertanto** la trasparenza dei dati sullo **smaltimento** rappresenta l'unico criterio valido per giudicare i due sistemi.",
+        "In definitiva ogni negoziante deve verificare quale tecnologia rispetti meglio le risorse naturali della nostra comunità urbana. Valuteremo il successo finale osservando i volumi di rifiuti evitati e la partecipazione attiva dei consumatori. Solo prove concrete e verificabili potranno orientare la nostra scelta definitiva verso la sostenibilità."
+      ]
+    }
+  },
+  {
+    "slug": "ai-feedback-in-assessed-writing",
+    "title": "Feedback dell'intelligenza artificiale nei testi valutati",
+    "prompt": "Un'università vuole che i compiti scritti mostrino ciò che gli studenti sanno fare. Dovrebbe permettere agli studenti di chiedere a uno strumento di intelligenza artificiale un parere sulle loro bozze e dichiarare tale uso, oppure riservare gli strumenti di intelligenza artificiale alla pratica al di fuori dei compiti valutati?",
+    "conditionalPrompt": "Decidi cosa debba misurare il compito e quali prove renderebbero visibile il processo di scrittura.",
+    "options": [
+      {
+        "label": "Uso dichiarato dell'intelligenza artificiale",
+        "description": "Gli studenti scrivono la bozza da soli e possono chiedere commenti. Allegano la bozza e spiegano quali suggerimenti hanno usato."
+      },
+      {
+        "label": "Pratica separata e lavoro indipendente",
+        "description": "Gli studenti fanno pratica con gli strumenti in altri momenti. Per i lavori valutati, redigono e rivedono in modo indipendente a condizioni concordate."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["traccia", "Indicazione scritta che guida lo svolgimento di un compito.", "La traccia del saggio richiede un'analisi critica molto approfondita."],
+        ["criterio", "Principio adottato per esprimere un giudizio o una valutazione.", "Ogni docente applica un criterio rigoroso nella correzione."],
+        ["trasparenza", "Qualità di chi agisce con chiarezza e senza nascondere nulla.", "La trasparenza accademica garantisce l'onestà di tutti i partecipanti."],
+        ["verifica", "Controllo volto a constatare la validità o l'esito di un'attività.", "Questa verifica finale attesta le competenze realmente acquisite."]
+      ],
+      "phrasalVerbs": [
+        ["venire meno", "Mancare all'impegno assunto o dissolversi.", "Il principio di equità non deve mai venire meno in questi contesti."],
+        ["mettere in luce", "Fare emergere con chiarezza un aspetto particolare.", "Questo elaborato riesce a mettere in luce le tue capacità critiche."],
+        ["fare affidamento", "Contare su qualcuno o qualcosa per ottenere aiuto.", "Non possiamo fare affidamento su strumenti esterni non verificati."],
+        ["portare a termine", "Condurre un'attività fino alla sua completa conclusione.", "Gli studenti devono portare a termine il saggio senza alcun aiuto."]
+      ],
+      "adjectives": [
+        ["autonomo", "Che agisce o produce senza dipendere da altri.", "Ogni studente deve dimostrare un percorso di studio completamente autonomo."],
+        ["rigoroso", "Che viene eseguito con estrema precisione e severità.", "Il comitato richiede un controllo rigoroso su tutti i testi presentati."],
+        ["dichiarato", "Espresso apertamente e senza alcuna ambiguità.", "Questo contributo esterno va dichiarato chiaramente nella premessa."],
+        ["formativo", "Che contribuisce alla crescita culturale e personale.", "Considero questo esercizio particolarmente formativo per la scrittura."]
+      ],
+      "connectors": [
+        ["di conseguenza", "Per effetto di quanto appena detto o stabilito.", "Il testo non rispetta le regole e di conseguenza verrà penalizzato."],
+        ["d'altra parte", "Espressione usata per introdurre un punto di vista opposto.", "D'altra parte, l'uso moderato della tecnologia offre grandi vantaggi."],
+        ["inoltre", "Per aggiungere un nuovo elemento o argomento alla discussione.", "Inoltre, dobbiamo considerare l'impatto sul carico di lavoro."],
+        ["ciononostante", "Nonostante la circostanza appena menzionata.", "Ciononostante, la regola principale resta la prova individuale."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Integrare strumenti di intelligenza artificiale nei compiti valutati permette di riflettere sulle reali pratiche lavorative moderne. Gli studenti imparano a gestire il feedback tecnologico in modo critico.",
+        "**D'altra parte**, dichiarare apertamente l'aiuto ricevuto garantisce la **trasparenza** accademica richiesta dall'istituto. **Di conseguenza**, il docente può valutare la capacità di revisione.",
+        "**Inoltre**, questo metodo trasforma l'uso della tecnologia in un'occasione di apprendimento attivo. **Ciononostante**, resta fondamentale mantenere un controllo **rigoroso** sul testo finale."
+      ],
+      "b": [
+        "Mantenere i compiti valutati completamente indipendenti serve a misurare le competenze reali dello studente. Qualsiasi supporto esterno rischia di falsificare il risultato finale.",
+        "**D'altra parte**, la pratica con gli strumenti digitali dovrebbe avvenire in momenti dedicati all'apprendimento. **Di conseguenza**, evitiamo qualsiasi confusione sui confini dell'onestà accademica.",
+        "**Inoltre**, un approccio così **rigoroso** spinge i giovani a sviluppare una voce autonoma. **Ciononostante**, la scuola deve comunque offrire occasioni per esplorare queste nuove tecnologie."
+      ],
+      "conditional": [
+        "La scelta tra queste due opzioni dipende dagli obiettivi specifici che il docente intende perseguire. Se l'obiettivo principale è la scrittura autonoma, allora dobbiamo vietare qualsiasi ausilio.",
+        "**D'altra parte**, se vogliamo insegnare l'uso critico degli strumenti moderni, l'integrazione dichiarata diventa fondamentale. **Di conseguenza**, ogni prova richiede criteri di valutazione adeguati.",
+        "**Inoltre**, bisogna esaminare le prove concrete del processo di apprendimento prima di decidere. **Ciononostante**, la chiarezza delle regole rimane la priorità assoluta per tutti."
+      ]
+    }
+  },
+  {
+    "slug": "phones-at-school",
+    "title": "Telefoni cellulari a scuola",
+    "prompt": "Una scuola secondaria perde tempo prezioso di lezione a causa dei telefoni. Dovrebbe custodire i telefoni per l'intera giornata scolastica oppure lasciare che gli insegnanti decidano quando riporli durante le ore di lezione, consentendone l'uso durante le pause?",
+    "conditionalPrompt": "Individua dove l'uso del telefono provoca la maggiore interruzione e cosa dimostrerebbe che una regola più restrittiva sta funzionando.",
+    "options": [
+      {
+        "label": "Custodia sicura per tutta la giornata",
+        "description": "I telefoni restano in un luogo sicuro dall'arrivo alla partenza. Le comunicazioni urgenti passano attraverso la segreteria e si prevedono eccezioni concordate."
+      },
+      {
+        "label": "Gestione autonoma dei docenti e pause libere",
+        "description": "Si offre agli insegnanti una regola di base comune per permettere i telefoni in compiti specifici. Gli studenti possono usarli durante gli intervalli."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["distrazione", "Fattore che devia l'attenzione da un'attività principale.", "Il telefono rappresenta una distrazione costante durante la lezione."],
+        ["interruzione", "Sospensione temporanea di un'attività in corso.", "Ogni notifica provoca un'interruzione grave della concentrazione."],
+        ["comunicazione", "Scambio di informazioni tra due o più persone.", "Una buona comunicazione con le famiglie avviene tramite la segreteria."],
+        ["dispositivo", "Apparecchio elettronico progettato per una funzione specifica.", "Questo dispositivo deve rimanere spento nello zaino."]
+      ],
+      "phrasalVerbs": [
+        ["venire meno", "Mancare agli obblighi o alle regole stabilite.", "La concentrazione non deve mai venire meno in aula."],
+        ["mettere in atto", "Realizzare concretamente una decisione o un piano.", "Dobbiamo mettere in atto una regola severa per tutti."],
+        ["fare a meno", "Rinunciare volontariamente a qualcosa o qualcuno.", "Molti studenti fanno fatica a fare a meno del cellulare."],
+        ["andare incontro", "Affrontare una situazione o venire incontro a esigenze.", "La scuola cerca di andare incontro alle richieste urgenti delle famiglie."]
+      ],
+      "adjectives": [
+        ["disciplinato", "Che rispetta le regole e l'ordine stabilito.", "Un ambiente scolastico disciplinato favorisce l'apprendimento di tutti."],
+        ["ristretto", "Limitato nei confini o nelle possibilità concesse.", "Adottiamo un uso ristretto della tecnologia durante le ore di studio."],
+        ["urgente", "Che richiede un intervento immediato e non prorogabile.", "Gestiamo solo le comunicazioni davvero urgenti tramite l'ufficio."],
+        ["concentrato", "Rivolto con attenzione esclusiva su un'attività.", "Restare concentrati senza il telefono diventa molto più semplice."]
+      ],
+      "connectors": [
+        ["pertanto", "Perciò, quindi, come conseguenza logica.", "Il regolamento vieta i dispositivi e pertanto vanno depositati."],
+        ["d'altra parte", "Dall'altro lato, introducendo un punto di vista differente.", "D'altra parte, le pause offrono momenti di svago legittimi."],
+        ["inoltre", "In aggiunta a quanto detto precedentemente.", "Inoltre, la segreteria gestisce le emergenze familiari."],
+        ["ciononostante", "Nonostante quanto appena affermato.", "Ciononostante, alcuni docenti preferiscono una gestione flessibile."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Rimuovere completamente i telefoni dall'ambiente scolastico garantisce un clima di classe sereno e privo di distrazioni. Gli studenti possono finalmente dedicarsi allo studio senza continue interruzioni.",
+        "**D'altra parte**, le comunicazioni urgenti con le famiglie passano attraverso la segreteria in modo sicuro. **Pertanto**, nessuno perde il contatto con i propri cari in caso di necessità.",
+        "**Inoltre**, questa regola chiara elimina qualsiasi conflitto quotidiano tra docenti e alunni. **Ciononostante**, richiede una gestione iniziale molto rigorosa da parte di tutto il personale."
+      ],
+      "b": [
+        "Lasciare ai docenti la decisione sull'uso dei telefoni educa a un rapporto responsabile con la tecnologia. I ragazzi imparano quando è il momento di spegnere i dispositivi.",
+        "**D'altra parte**, consentire l'accesso durante le pause rispetta il loro bisogno di socializzazione e svago. **Pertanto**, bilanciamo il rigore della lezione con momenti di libertà controllata.",
+        "**Inoltre**, questo metodo flessibile valorizza la professionalità e l'autorità dei singoli insegnanti. **Ciononostante**, richiede coerenza e accordo tra tutti i membri del consiglio di classe."
+      ],
+      "conditional": [
+        "La decisione migliore dipende dall'entità del problema riscontrato nei singoli gruppi classe. Se la **distrazione** digitale compromette ogni lezione, allora serve una custodia totale.",
+        "**D'altra parte**, se gli studenti dimostrano già maturità, una regola flessibile gestita dai docenti funziona meglio. **Pertanto**, dobbiamo analizzare le prove concrete di disturbo prima di agire.",
+        "**Inoltre**, ogni provvedimento deve dimostrare di migliorare realmente il rendimento e l'attenzione generale. **Ciononostante**, la collaborazione delle famiglie resta sempre il fattore decisivo."
+      ]
+    }
+  },
+  {
+    "slug": "scholarship-depth-or-reach",
+    "title": "Borsa di studio totale o parziale?",
+    "prompt": "Un'università ha abbastanza fondi per due borse di studio integrali per studenti a basso reddito. In alternativa, potrebbe assegnare a otto studenti un contributo pari a un quarto della retta. Quale opzione renderebbe la laurea più accessibile?",
+    "conditionalPrompt": "Valuta quale importo influisce davvero sulla decisione di uno studente di iscriversi e completare gli studi.",
+    "options": [
+      {
+        "label": "Copertura totale",
+        "description": "Coprire l'intera retta per due studenti con grande necessità. Gli altri idonei non riceverebbero nulla da questo fondo."
+      },
+      {
+        "label": "Copertura parziale",
+        "description": "Coprire un quarto della retta per un gruppo più ampio. I beneficiari avrebbero comunque bisogno di trovare il resto dei fondi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sussidio", "Aiuto finanziario concesso dallo Stato o da un ente per un bisogno specifico.", "Questo sussidio permette agli studenti meritevoli di proseguire gli studi universitari."],
+        ["indigenza", "Condizione di grave povertà e mancanza dei mezzi di sussistenza essenziali.", "Molte famiglie vivono in uno stato di indigenza che impedisce l'accesso all'istruzione."],
+        ["traguardo", "Meta ambita o risultato importante raggiunto dopo un impegno prolungato.", "La laurea rappresenta un traguardo fondamentale per il futuro professionale dei giovani."],
+        ["onere", "Peso economico o morale gravoso da sostenere.", "Il pagamento delle tasse universitarie costituisce un onere notevole per molte famiglie."]
+      ],
+      "phrasalVerbs": [
+        ["far fronte", "Affrontare e superare una difficoltà o una spesa economica rilevante.", "Molti studenti faticano a far fronte alle spese quotidiane della vita universitaria."],
+        ["andare incontro", "Prendere iniziative favorevoli per venire incontro alle esigenze di qualcuno.", "L'ateneo cerca di andare incontro alle richieste dei giovani in difficoltà economica."],
+        ["venire meno", "Mancare, venir meno a un impegno o esaurirsi di risorse.", "Se i finanziamenti pubblici dovessero venire meno, molti ragazzi abbandonerebbero gli studi."],
+        ["fare affidamento", "Contare fermamente sull'aiuto o sul sostegno di qualcuno o qualcosa.", "I candidati devono poter fare affidamento su borse di studio sicure e trasparenti."]
+      ],
+      "adjectives": [
+        ["meritevole", "Che dimostra valore, impegno e meriti particolari nello studio o nel lavoro.", "Uno studente meritevole dovrebbe sempre ricevere il supporto necessario per laurearsi."],
+        ["considerevole", "Di grande entità, importanza o rilievo economico.", "La riduzione delle tasse ha generato un risparmio considerevole per le famiglie."],
+        ["fondamentale", "Di assoluta importanza per la comprensione o la riuscita di qualcosa.", "Un sostegno economico adeguato risulta fondamentale per garantire l'uguaglianza."],
+        ["preario", "Instabile, incerto, privo di garanzie solide per il futuro.", "La situazione lavorativa dei giovani appare spesso troppo precaria."]
+      ],
+      "connectors": [
+        ["d'altro canto", "Espressione usata per introdurre un punto di vista opposto o complementare.", "D'altro canto, ampliare la platea dei beneficiari aiuta un numero maggiore di persone."],
+        ["di conseguenza", "Per effetto logico di quanto appena detto o fatto.", "Le risorse sono limitate e, di conseguenza, bisogna fare delle scelte rigorose."],
+        ["ciononostante", "Nonostante quanto detto precedentemente, tuttavia.", "I costi della vita sono alti ciononostante molti studenti riescono a laurearsi."],
+        ["inoltre", "In aggiunta a quanto già affermato, per di più.", "Il bando premia il merito accademico e, inoltre, valuta la situazione economica."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Assegnare borse di studio integrali rappresenta la scelta migliore perché garantisce una copertura totale a chi vive in reale **indigenza** e non potrebbe pagare l'**onere** universitario.",
+        "**D'altro canto**, un aiuto parziale lascerebbe troppi debiti insoluti e costringerebbe i giovani a lavorare rinunciando al loro **traguardo** accademico.",
+        "**Di conseguenza**, concentrare tutte le risorse su pochi studenti meritevoli permette loro di **far fronte** serenamente alle spese senza alcuna preoccupazione."
+      ],
+      "b": [
+        "Offrire piccoli contributi a un gruppo più ampio permette a molti giovani di **andare incontro** alle spese iniziali senza sentirsi completamente esclusi dal sistema universitario.",
+        "**Inoltre**, questo **sussidio** parziale distribuisce meglio il rischio finanziario e offre a un numero maggiore di persone la possibilità concreta di iniziare il percorso.",
+        "**Ciononostante**, resta il fatto che i beneficiari dovranno **fare affidamento** su altre entrate per completare con successo la propria formazione accademica."
+      ],
+      "conditional": [
+        "La scelta tra borse totali o parziali dipende dalla situazione economica generale e dal livello di povertà della popolazione studentesca locale.",
+        "Se la priorità è salvare pochi studenti da una situazione insostenibile, allora la copertura integrale risulta **fondamentale** per evitare l'abbandono precoce.",
+        "Se invece la maggior parte delle famiglie necessita solo di un piccolo aiuto per **far fronte** alle tasse, allora conviene distribuire equamente il fondo disponibile."
+      ]
+    }
+  },
+  {
+    "slug": "capstone-portfolio-or-team-project",
+    "title": "Portfolio individuale o progetto di gruppo?",
+    "prompt": "Un'università sta ridisegnando la valutazione finale. Gli studenti devono presentare un portfolio individuale o lavorare in team a un progetto reale per un'organizzazione locale documentando il proprio contributo?",
+    "conditionalPrompt": "Decidi in quali circostanze il lavoro condiviso offre prove migliori delle capacità e come rendere visibili i contributi individuali.",
+    "options": [
+      {
+        "label": "Portfolio individuale",
+        "description": "Ogni studente seleziona diversi lavori, spiega le revisioni e difende una scelta in un breve colloquio."
+      },
+      {
+        "label": "Progetto di gruppo",
+        "description": "Piccoli gruppi producono un risultato per un partner locale registrando il proprio ruolo e rispondendo a domande."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["competenza", "Abilità acquisita tramite lo studio e l'esperienza in un determinato campo.", "Ogni studente deve dimostrare la propria competenza tecnica durante la discussione finale."],
+        ["contributo", "Partecipazione attiva e apporto personale dato a un'opera o a un progetto comune.", "Il docente ha valutato attentamente il contributo di ciascun membro del gruppo."],
+        ["trasparenza", "Chiarezza e correttezza nei comportamenti e nei criteri di valutazione adottati.", "La trasparenza dei criteri di giudizio è fondamentale per garantire equità."],
+        ["verifica", "Controllo accurato volto a constatare la validità o la preparazione di qualcuno.", "Questa prova finale costituisce una verifica rigorosa delle conoscenze acquisite."]
+      ],
+      "phrasalVerbs": [
+        ["mettere in risalto", "Dare particolare evidenza o importanza a una qualità o a un dettaglio specifico.", "Il colloquio orale serve a mettere in risalto le capacità critiche del candidato."],
+        ["rendere conto", "Spiegare le proprie azioni assumendosene la responsabilità di fronte ad altri.", "Ogni studente deve rendere conto del lavoro svolto all'interno del team."],
+        ["prendere in carico", "Assumersi la responsabilità di gestire un compito o un progetto assegnato.", "Il gruppo ha deciso di prendere in carico lo sviluppo della piattaforma digitale."],
+        ["portare a termine", "Condurre qualcosa fino alla sua completa e regolare conclusione.", "I partecipanti devono saper portare a termine il progetto entro la scadenza stabilita."]
+      ],
+      "adjectives": [
+        ["autonomo", "Capace di agire e decidere da solo senza dipendere dall'aiuto altrui.", "Il laureato deve dimostrarsi autonomo nella risoluzione dei problemi professionali."],
+        ["rigoroso", "Che si attiene strettamente a regole precise, severo e metodico nel lavoro.", "La commissione ha adottato un metodo di valutazione molto rigoroso."],
+        ["collaborativo", "Disposto a cooperare attivamente con gli altri per raggiungere un obiettivo comune.", "Un buon professionista deve possedere uno spirito collaborativo spiccato."],
+        ["dettagliato", "Ricco di particolari precisi e approfonditi riguardo a un argomento.", "Il report finale deve presentare un'analisi dettagliata dei risultati ottenuti."]
+      ],
+      "connectors": [
+        ["inoltre", "In aggiunta a quanto già detto, per di più.", "Il portfolio mostra la crescita personale e, inoltre, attesta le abilità tecniche."],
+        ["d'altro canto", "Espressione usata per introdurre un punto di vista opposto o complementare.", "D'altro canto, il lavoro di squadra simula meglio le reali dinamiche aziendali."],
+        ["pertanto", "Per questa ragione, di conseguenza, perciò.", "Il progetto è stato completato in ritardo e, pertanto, la valutazione è inferiore."],
+        ["invece", "Nel frattempo o in contrapposizione a quanto detto prima.", "Il primo studente ha scelto l'esame orale, mentre il secondo ha preferito il progetto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "La scelta del portfolio individuale risulta ottimale perché consente a ogni studente di lavorare in modo **autonomo** e dimostrare le proprie competenze specifiche.",
+        "**Inoltre**, il colloquio orale permette alla commissione di **mettere in risalto** i progressi personali senza le distorsioni causate dal lavoro di gruppo.",
+        "**Pertanto**, questa modalità garantisce una **verifica** rigorosa e trasparente del percorso di studi compiuto da ciascun candidato."
+      ],
+      "b": [
+        "Il progetto di gruppo rispecchia fedelmente le dinamiche del mondo del lavoro odierno, dove saper collaborare è importante quanto le competenze tecniche.",
+        "**D'altro canto**, ogni partecipante deve **prendere in carico** compiti precisi e **rendere conto** del proprio apporto attraverso una documentazione dettagliata.",
+        "In questo modo i giovani imparano a **portare a termine** obiettivi complessi affrontando insieme le difficoltà impreviste."
+      ],
+      "conditional": [
+        "La decisione tra portfolio e progetto dipende dagli obiettivi formativi specifici del corso di laurea e dalle richieste del mercato del lavoro.",
+        "Se il programma punta sulle capacità di ricerca autonoma, allora il portfolio individuale rimane lo strumento più adatto.",
+        "Se **invece** si privilegiano le abilità relazionali e organizzative, allora il progetto di gruppo con clienti reali offre una prova decisamente migliore."
+      ]
+    }
+  },
+  {
+    "slug": "conference-working-language",
+    "title": "Lingua di lavoro della conferenza",
+    "prompt": "Una conferenza universitaria regionale puo usare l inglese per ogni sessione principale o lasciare che i relatori scelgano la loro lingua finanziando l interpretariato per gli interventi chiave. Quale opzione renderebbe l evento piu prezioso per il suo pubblico?",
+    "conditionalPrompt": "Decidi se la barriera maggiore colpisce i relatori o il pubblico e cosa renderebbe l interpretariato fattibile.",
+    "options": [
+      {
+        "label": "Uso esclusivo dell inglese",
+        "description": "Usa l inglese per conferenze e discussioni affinche tutti debbano seguire una sola lingua offrendo tempo per le prove con un collega."
+      },
+      {
+        "label": "Lingue libere e interpretariato",
+        "description": "Lascia che i relatori parlino la lingua in cui sono piu precisi fornendo interpretariato per le sessioni principali."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["interpretariato", "Servizio di traduzione orale in tempo reale", "L interpretariato simultaneo facilita la comprensione tra partecipanti di madrelingua diversa."],
+        ["relatore", "Persona che tiene una conferenza o un intervento pubblico", "Ogni relatore deve preparare la propria presentazione con grande cura ed attenzione."],
+        ["confronto", "Scambio di idee e opinioni tra piu persone", "Il confronto aperto arricchisce il dibattito accademico durante le sessioni pomeridiane."],
+        ["pubblico", "Insieme degli spettatori o degli ascoltatori presenti", "Il pubblico ha seguito con molta attenzione tutti gli interventi della sessione mattutina."]
+      ],
+      "phrasalVerbs": [
+        ["portare avanti", "Continuare a sviluppare un attivita o un progetto", "Dobbiamo portare avanti questo ambizioso progetto nonostante le difficolta iniziali."],
+        ["tenere conto", "Considerare un fattore importante prima di decidere", "Bisogna tenere conto delle esigenze linguistiche di tutti i partecipanti stranieri."],
+        ["far fronte", "Affrontare una situazione difficile con decisione", "La conferenza deve far fronte a problemi organizzativi complessi quest anno."],
+        ["venire meno", "Mancare o venir meno a un impegno preso", "La qualita della comunicazione non deve mai venir meno durante i dibattiti."]
+      ],
+      "adjectives": [
+        ["efficace", "Che produce il risultato desiderato in modo ottimale", "Una strategia di comunicazione efficace garantisce il successo dell intero evento."],
+        ["competente", "Che possiede adeguate capacita e conoscenze specifiche", "Un comitato scientifico competente sa scegliere i contributi piu stimolanti."],
+        ["complesso", "Articolato e difficile da gestire o comprendere", "Gestire un evento multilingue risulta piuttosto complesso per la segreteria."],
+        ["fluido", "Che scorre senza interruzioni o difficolta evidenti", "Il dialogo tra i partecipanti e rimasto fluido per tutta la durata."]
+      ],
+      "connectors": [
+        ["d altronde", "Espressione usata per introdurre una considerazione di compensazione", "D altronde l adozione di una lingua franca semplifica la logistica."],
+        ["tuttavia", "Congiunzione avversativa che indica opposizione parziale", "Molti preferiscono l inglese; tuttavia alcuni docenti esprimono riserve."],
+        ["inoltre", "Avverbio usato per aggiungere un nuovo argomento", "Inoltre la presenza di interpreti professionisti alza notevolmente i costi."],
+        ["pertanto", "Conclusivo che indica una conseguenza logica", "I fondi sono limitati; pertanto dobbiamo ottimizzare ogni singola spesa."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Adottare una sola lingua di lavoro rappresenta la scelta piu logica per la nostra universita perche elimina ogni barriera tecnica e riduce i costi complessivi di gestione dell intero evento accademico. **D altronde** l uso esclusivo dell inglese permette a tutti i partecipanti di seguire i lavori senza distrazioni e garantisce un **confronto** immediato e diretto durante le sessioni plenarie.",
+        "**Tuttavia** alcuni colleghi temono che i relatori non madrelingua possano perdere parte della loro consueta efficacia espressiva esponendo concetti complessi in una lingua straniera. Ciononostante ritengo che l opportunita di effettuare prove generali con un collega esperto possa risolvere brillantemente questo problema specifico.",
+        "In conclusione puntare sull inglese unificato assicura il massimo coinvolgimento del **pubblico** e favorisce un dibattito piu **fluido** ed efficiente per tutti i presenti."
+      ],
+      "b": [
+        "Garantire la liberta linguistica ai relatori costituisce un passo fondamentale per valorizzare le competenze specifiche di ciascuno senza penalizzare chi possiede una padronanza limitata delle lingue straniere. **D altronde** ascoltare un intervento nella propria lingua madre permette di apprezzare pienamente le sfumature piu sottili di ogni ricerca accademica avanzata.",
+        "**Inoltre** l uso di servizi di **interpretariato** professionale assicura che il **pubblico** possa seguire ogni argomento senza alcuna difficolta di comprensione tecnica. **Pertanto** investire in questo supporto linguistico giustifica ampiamente la spesa economica iniziale perche nobilita l intera conferenza.",
+        "In definitiva rispettare la diversita linguistica arricchisce il dialogo scientifico e dimostra una maggiore apertura culturale verso tutte le comunita accademiche internazionali."
+      ],
+      "conditional": [
+        "La scelta tra una lingua unica e l **interpretariato** dipende principalmente dalla natura del **pubblico** e dalle risorse finanziarie disponibili per l organizzazione dell evento. Se la maggioranza dei partecipanti proviene da contesti internazionali diversi l adozione dell inglese risulta obbligatoria per mantenere il dibattito scorrevole ed efficiente.",
+        "**D altronde** quando la conferenza affronta temi culturali locali complessi diventa essenziale permettere ai relatori di esprimersi nella propria lingua nativa per preservare la precisione dei concetti. In questo secondo scenario l uso di interpreti qualificati diventa indispensabile per non escludere gli ascoltatori stranieri.",
+        "In conclusione bisogna valutare attentamente il profilo dei partecipanti prima di stabilire quale modello di comunicazione adottare per garantire il successo della conferenza."
+      ]
+    }
+  },
+  {
+    "slug": "museum-return-or-shared-custody",
+    "title": "Restituzione o custodia condivisa",
+    "prompt": "Un museo e un organizzazione che rappresenta la comunita di origine di un reperto hanno concordato il suo ritorno. Il museo dovrebbe trasferire la proprieta in modo permanente o entrambe le organizzazioni dovrebbero considerare una custodia condivisa con esposizioni in ogni luogo?",
+    "conditionalPrompt": "Decidi quali decisioni la comunita dovrebbe controllare e quali termini renderebbero la collaborazione accettabile per entrambe le parti.",
+    "options": [
+      {
+        "label": "Trasferimento definitivo",
+        "description": "Trasferisce la proprieta e lascia che l organizzazione decida dove mostrare l oggetto."
+      },
+      {
+        "label": "Custodia condivisa",
+        "description": "Determina le responsabilita congiuntamente pianificando mostre in entrambi i luoghi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["patrimonio", "Insieme dei beni culturali appartenenti a una comunita", "Il patrimonio storico deve essere tutelato e valorizzato con grande cura."],
+        ["proprieta", "Diritto di godere e disporre di un bene in modo pieno", "Il trasferimento di proprieta definitiva richiede accordi legali molto rigorosi."],
+        ["comunita", "Insieme di persone che condividono origini o interessi comuni", "La comunita locale rivendica giustamente il ritorno dei propri beni culturali."],
+        ["accordo", "Intesa formale tra due o piu parti su un determinato argomento", "Un buon accordo garantisce la protezione dell opera e la mobilita futura."]
+      ],
+      "phrasalVerbs": [
+        ["fare a meno", "Rinunciare a qualcosa o a qualcuno ritenuto importante", "Il museo non puo fare a meno di una consulenza scientifica adeguata."],
+        ["mettere in luce", "Evidenziare un aspetto particolare di una questione", "L esposizione congiunta riesce a mettere in luce il valore storico del reperto."],
+        ["andare incontro", "Cercare di soddisfare le esigenze o le richieste altrui", "Dobbiamo andare incontro alle legittime richieste della comunita d origine."],
+        ["prendere in carico", "Assumersi la responsabilita di gestire qualcosa", "Il comitato locale ha deciso di prendere in carico la custodia del reperto."]
+      ],
+      "adjectives": [
+        ["responsabile", "Che agisce con consapevolezza dei propri doveri morali", "Un direttore responsabile sa bilanciare le esigenze di conservazione e tutela."],
+        ["condiviso", "Gestito o accettato congiuntamente da piu soggetti", "Un progetto culturale condiviso rafforza i legami di fiducia tra le istituzioni."],
+        ["delicato", "Che richiede estrema attenzione e tatto nella gestione", "La trattativa sulla restituzione del reperto risulta particolarmente delicata."],
+        ["trasparente", "Chiaro e corretto nei comportamenti e nelle decisioni", "Ogni accordo internazionale deve rimanere trasparente per evitare futuri contenziosi."]
+      ],
+      "connectors": [
+        ["d altra parte", "Espressione usata per introdurre un punto di vista opposto", "D altra parte il museo centrale possiede strutture di conservazione avanzate."],
+        ["infatti", "Avverbio che conferma o spiega quanto appena affermato", "La comunita locale rivendica il reperto; infatti esso appartiene alla sua storia."],
+        ["nello stesso tempo", "Locuzione che indica contemporaneita di azioni o aspetti", "Bisogna tutelare il bene e nello stesso tempo favorire gli scambi culturali."],
+        ["di conseguenza", "Connettivo che esprime un effetto logico inevitabile", "Il contratto tutela il prestito; di conseguenza ogni rischio viene ridotto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Trasferire definitivamente la **proprieta** del reperto rappresenta l atto piu giusto per riparare ai torti storici subiti dalla **comunita** di origine nel corso del tempo. **D altra parte** trattenere un bene culturale lontano dalla sua terra d origine alimenta tensioni che nessun **accordo** temporaneo puo realmente risolvere in modo definitivo.",
+        "Tuttavia alcuni esperti temono che le strutture locali non possiedano ancora le competenze tecniche necessarie per garantire una perfetta conservazione preventiva. Ciononostante credo che la fiducia reciproca debba prevalere sulle preoccupazioni puramente conservative.",
+        "In conclusione restituire la piena **proprieta** restituisce anche la dignita culturale a chi custodisce la memoria di quel **patrimonio** storico."
+      ],
+      "b": [
+        "Adottare una formula di custodia condivisa garantisce una gestione piu equilibrata e sicura del reperto attraverso la collaborazione diretta tra le due istituzioni museali. **D altra parte** organizzare mostre in entrambi i luoghi permette a un pubblico piu ampio di ammirare l opera senza rischiare danni irreparabili durante i viaggi.",
+        "Inoltre la stesura di regole chiare sulla sicurezza e sulla cura reciproca rassicura i curatori piu prudenti ed evita malintesi futuri tra le parti coinvolte. Pertanto questo approccio cooperativo tutela gli interessi di tutti i soggetti interessati.",
+        "In definitiva la condivisione **responsabile** unisce le comunitainvece di dividerle attraverso rivendicazioni rigide e contrapposte."
+      ],
+      "conditional": [
+        "La decisione tra la restituzione totale e la custodia condivisa dipende dallo stato di conservazione dell oggetto e dalla stabilita politica della **comunita** d origine. Se il reperto e estremamente fragile e richiede condizioni climatiche particolari la custodia condivisa rappresenta l unica soluzione tecnica sostenibile.",
+        "**D altra parte** quando la **comunita** possiede spazi espositivi moderni e sicuri il trasferimento permanente della **proprieta** diventa un atto etico dovuto. In questo caso la restituzione totale riconosce i diritti storici legittimi dei proprietari originari.",
+        "In conclusione bisogna analizzare le capacita tecniche locali prima di stabilire quale forma di **accordo** giuridico adottare per la tutela del bene."
+      ]
+    }
+  }
+]

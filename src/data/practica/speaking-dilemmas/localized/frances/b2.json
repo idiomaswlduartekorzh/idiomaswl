@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "later-school-start",
+    "title": "Faut-il décaler les horaires scolaires ?",
+    "prompt": "Un lycée envisage de décaler ses horaires de quarante-cinq minutes. Est-ce une bonne idée malgré les contraintes logistiques ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et ce qui vous ferait changer d'avis.",
+    "options": [
+      {
+        "label": "Horaires décalés",
+        "description": "Commencer plus tard et finir la journée plus tard."
+      },
+      {
+        "label": "Horaires actuels",
+        "description": "Maintenir le rythme actuel et tester de nouvelles méthodes pédagogiques."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["rythme", "cadence de vie ou d'activité", "Le rythme scolaire est parfois épuisant pour les adolescents."],
+        ["contrainte", "obligation ou difficulté imposée", "Nous devons gérer cette contrainte de transport avec souplesse."],
+        ["sommeil", "état de repos physiologique", "Un sommeil suffisant est indispensable pour réussir ses examens."],
+        ["organisation", "manière de structurer une activité", "Une bonne organisation permet d'éviter le stress inutile."]
+      ],
+      "phrasalVerbs": [
+        ["se lever", "sortir du lit", "Je préfère me lever un peu plus tard le matin."],
+        ["se coucher", "aller dormir", "Il faut se coucher tôt pour être en forme."],
+        ["prendre en compte", "considérer un facteur", "Il faut prendre en compte les besoins des élèves."],
+        ["faire face à", "affronter une situation", "Nous devons faire face à ces changements logistiques."]
+      ],
+      "adjectives": [
+        ["efficace", "qui produit l'effet attendu", "Cette méthode est très efficace pour apprendre."],
+        ["fatigué", "qui manque d'énergie", "Les élèves sont souvent fatigués le lundi matin."],
+        ["flexible", "qui peut s'adapter", "Il faut rester flexible face aux imprévus."],
+        ["scolaire", "relatif à l'école", "La vie scolaire demande beaucoup d'investissement."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "Le matin est calme, en revanche le soir est chargé."],
+        ["par conséquent", "pour exprimer une conséquence", "Le bus est complet, par conséquent nous attendons."],
+        ["toutefois", "pour introduire une réserve", "Toutefois, ce changement demande une grande adaptation."],
+        ["d'ailleurs", "pour ajouter une information", "C'est une bonne idée, d'ailleurs tout le monde est d'accord."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je soutiens l'idée de décaler les horaires scolaires pour permettre aux élèves de mieux dormir. Un **rythme** plus adapté à leur horloge biologique améliorerait leur concentration globale.",
+        "En commençant plus tard, les jeunes seraient moins fatigués et plus attentifs durant les cours. Cette **organisation** favoriserait un meilleur climat de travail au sein de l'établissement.",
+        "**Toutefois**, il faut **prendre en compte** les contraintes des parents. Si les transports étaient ajustés, ce choix serait incontestablement le plus **efficace** pour la réussite **scolaire**."
+      ],
+      "b": [
+        "Je préfère maintenir les horaires actuels pour éviter de bouleverser l'**organisation** des familles. Il est préférable de tester des méthodes pédagogiques innovantes sans changer tout le calendrier **scolaire**.",
+        "Les élèves doivent apprendre à **se lever** tôt pour se préparer à la vie active. **En revanche**, nous pourrions optimiser les cours pour qu'ils soient moins pénibles le matin.",
+        "**Par conséquent**, je choisis le statu quo. **Toutefois**, si les résultats scolaires chutaient drastiquement, je serais prêt à reconsidérer ma position sur ce décalage horaire."
+      ],
+      "conditional": [
+        "Je choisirais le décalage si les transports étaient synchronisés, car le **sommeil** est une priorité. Si les contraintes logistiques restaient trop lourdes, je privilégierais le maintien des horaires.",
+        "Le choix dépendrait surtout de l'impact réel sur les élèves. Une étude approfondie serait nécessaire pour valider l'efficacité de chaque option avant de décider.",
+        "En somme, le facteur décisif serait la flexibilité des transports. Si le système de bus s'adapte, le décalage devient pertinent, sinon le maintien des horaires reste préférable."
+      ]
+    }
+  },
+  {
+    "slug": "school-volunteering-requirement",
+    "title": "Faut-il rendre le bénévolat scolaire obligatoire ?",
+    "prompt": "Un établissement souhaite que ses élèves s'engagent davantage dans la vie de leur communauté. Faut-il rendre obligatoires vingt heures de bénévolat pour l'obtention du diplôme ou maintenir un engagement basé sur le volontariat accompagné ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui modifierait votre décision finale.",
+    "options": [
+      {
+        "label": "Rendre l'engagement obligatoire",
+        "description": "Imposer vingt heures à tous en proposant des projets intégrés au temps scolaire."
+      },
+      {
+        "label": "Conserver le volontariat",
+        "description": "Guider et valoriser les élèves volontaires en leur laissant le choix de leur implication."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["la citoyenneté", "Statut et sentiment d'appartenance exigeant des devoirs envers la collectivité.", "L'apprentissage de la citoyenneté passe par des actions concrètes sur le terrain."],
+        ["la contrainte", "Obligation imposée qui limite la liberté d'action.", "Transformer le bénévolat en contrainte risque de décourager les élèves les plus réticents."],
+        ["la valorisation", "Action de mettre en valeur ou d'accorder du prix à un effort.", "La valorisation des diplômes repose aussi sur les compétences relationnelles acquises."],
+        ["le volontariat", "Engagement libre d'une personne accomplissant un service sans obligation.", "Le volontariat garantit un enthousiasme sincère lors des interventions dans la commune."]
+      ],
+      "phrasalVerbs": [
+        ["s'impliquer dans", "Prendre une part active et personnelle dans un projet.", "Chaque élève devrait s'impliquer dans la vie locale selon ses propres centres d'intérêt."],
+        ["sensibiliser à", "Rendre quelqu'un attentif à une cause ou une problématique.", "Il faut sensibiliser les jeunes aux besoins des associations avant de leur imposer un quota."],
+        ["rendre obligatoire", "Imposer légalement ou réglementairement une pratique à tout le monde.", "Rendre obligatoire ce diplôme permet d'assumer une responsabilité collective claire."],
+        ["découler de", "Être la conséquence directe et naturelle d'une situation.", "La véritable générosité doit décourager la pression et découler d'un choix personnel."]
+      ],
+      "adjectives": [
+        ["formateur", "Qui apporte des connaissances utiles et développe la personnalité.", "Ce travail auprès des aînés s'est révélé particulièrement formateur pour les adolescents."],
+        ["enrichissant", "Qui développe les qualités morales, intellectuelles ou humaines.", "Une expérience solidaire est toujours plus enrichissante quand elle est librement consentie."],
+        ["contraignant", "Qui impose des sacrifices d'emploi du temps gênants.", "Un quota d'heures obligatoire devient vite contraignant pour les élèves très occupés."],
+        ["motivant", "Qui suscite de l'intérêt et pousse à agir avec envie.", "Recevoir un diplôme de reconnaissance est un élément motivant pour poursuivre l'action."]
+      ],
+      "connectors": [
+        ["toutefois", "Nuance un propos en introduisant une réserve importante.", "L'idée est généreuse, toutefois sa mise en pratique exige un encadrement rigoureux."],
+        ["en résumé", "Permet de synthétiser les arguments principaux d'une démonstration.", "En résumé, imposer une obligation risque d'altérer la nature même de l'altruisme."],
+        ["faute de quoi", "Indique la conséquence négative si une condition n'est pas remplie.", "Les projets doivent être bien encadrés, faute de quoi les élèves se sentiront livrés à eux-mêmes."],
+        ["au contraire", "Marque une opposition nette avec l'affirmation précédente.", "L'école ne doit pas punir, au contraire elle doit susciter des vocations."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Rendre obligatoire** ce parcours garantit que chaque élève découvre **la citoyenneté** sur le terrain. L'école offre des créneaux dédiés, ce qui évite d'empiéter sur le temps personnel. Cette expérience partagée est extrêmement formatrice pour l'ensemble d'une classe.",
+        "Par exemple, un projet solidaire mené l'an dernier a permis à tous d'apprendre à s'impliquer ensemble. Même les élèves timides ont révélé des compétences inattendues. Par conséquent, cette mesure crée une dynamique d'entraide très bénéfique pour le groupe.",
+        "**Toutefois**, imposer cette contrainte peut parfois susciter une hésitation initiale chez certains jeunes. Mais en encadrant bien ces vingt heures, on transforme rapidement cette réticence en une fierté partagée et un vrai vecteur de cohésion."
+      ],
+      "b": [
+        "Maintenir le principe du volontariat préserve la valeur morale de la solidarité. Un engagement doit découler d'une démarche sincère pour être pleinement **enrichissant**. Offrir un accompagnement personnalisé motive les élèves sans leur imposer de pression inutile.",
+        "Dans mon entourage, les jeunes qui ont choisi d'aider une association locale l'ont fait avec passion. **La valorisation** de leurs efforts par l'établissement a suffit à les encourager. **Au contraire**, imposer un quota risque d'en faire une simple tâche administrative.",
+        "Certes, l'obligation assure que cent pour cent des élèves effectuent ces heures. Néanmoins, il vaut mieux privilégier une implication choisie, car une démarche forcée perd souvent son sens profond et son impact éducatif."
+      ],
+      "conditional": [
+        "Imposer vingt heures se justifie pleinement dès lors que l'école intègre entièrement ces activités dans l'emploi du temps hebdomadaire. En revanche, si les élèves doivent trouver leurs missions seuls le soir, cela devient bien trop **contraignant**.",
+        "Pour rendre **le volontariat** plus efficace, l'établissement pourrait créer un forum des associations et attribuer des mentions sur le diplôme. Ces incitations renforceraient la participation sans jamais utiliser la menace d'un blocage de la scolarité.",
+        "**En résumé**, si les projets sont intégrés et accompagnés sur le temps scolaire, l'obligation constitue un excellent tremplin. Si le temps manque, il convient de préserver la liberté de choix et de miser sur un accompagnement bienveillant."
+      ]
+    }
+  },
+  {
+    "slug": "night-buses-or-daytime-frequency",
+    "title": "Où faut-il ajouter des trajets de bus ?",
+    "prompt": "Une municipalité dispose d'un budget pour financer un nombre limité de trajets de bus supplémentaires. Faut-il prolonger le service tard la nuit sur les lignes principales ou augmenter la fréquence en journée aux heures de pointe ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui modifierait votre décision finale.",
+    "options": [
+      {
+        "label": "Ajouter des bus nocturnes",
+        "description": "Faire rouler les bus deux heures de plus la nuit sur les lignes les plus fréquentées."
+      },
+      {
+        "label": "Densifier la journée",
+        "description": "Réduire le temps d'attente pendant les heures où les bus sont saturés."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["la saturation", "État d'un réseau ou véhicule totalement rempli et incapable d'absorber la demande.", "La saturation des lignes de journée provoque d'importants retards pour les usagers."],
+        ["la mobilité", "Facilité de déplacement des personnes dans un espace donné.", "Développer la mobilité nocturne aide les travailleurs aux horaires décalés à rentrer chez eux."],
+        ["la fluidité", "Caractère de ce qui circule facilement et sans interruption.", "L'ajout de bus à quatorze heures apporte une meilleure fluidité sur l'ensemble du réseau."],
+        ["l'engorgement", "Accumulation de véhicules ou de passagers créant un blocage.", "Pour lutter contre l'engorgement du centre-ville, il faut augmenter les fréquences."]
+      ],
+      "phrasalVerbs": [
+        ["désengorger", "Réduire l'affluence excessive pour rendre la circulation praticable.", "Ces nouveaux véhicules permettent de désengorger les arrêts les plus fréquentés."],
+        ["répondre à", "Satisfaire une demande ou un besoin exprimé par la population.", "Cette mesure vise à répondre au besoin croissant de sécurité durant la nuit."],
+        ["circuler", "Se déplacer d'un endroit à un autre en utilisant un transport.", "Les bus vont circuler jusqu'à deux heures du matin chaque week-end."],
+        ["optimiser", "Utiliser des ressources de la manière la plus efficace possible.", "La mairie cherche à optimiser le réseau sans augmenter le prix des billets."]
+      ],
+      "adjectives": [
+        ["saturé", "Qui contient le maximum de personnes possible.", "Les véhicules saturés rendent le trajet du matin très inconfortable."],
+        ["sécurisant", "Qui inspire la confiance et rassure les usagers.", "Rentrer en bus tard le soir est beaucoup plus sécurisant que de marcher seul."],
+        ["rentable", "Qui apporte un bénéfice ou un service maximal par rapport à son coût.", "Renforcer les heures de pointe est très rentable au vu du nombre de passagers."],
+        ["accessible", "Facile à utiliser ou à rejoindre à tout moment.", "Un service nocturne rend le centre-ville accessible aux employés de nuit."]
+      ],
+      "connectors": [
+        ["de ce fait", "Introduit une conséquence logique qui découle directement d'un constat.", "Les bus sont pleins, de ce fait de nombreux clients renoncent à les prendre."],
+        ["par ailleurs", "Ajoute une information complémentaire sur le même sujet.", "Par ailleurs, les jeunes réclament des transports pour sortir le week-end."],
+        ["non seulement", "S'utilise souvent avec 'mais aussi' pour associer deux arguments.", "Ce choix désengorge le trafic, mais il améliore aussi le confort général."],
+        ["en premier lieu", "Sert à ordonner un argument prioritaire dans une démonstration.", "Il faut en premier lieu penser aux milliers de salariés du matin."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Prolonger le service nocturne répond à une nécessité sociale et sécuritaire majeure. De nombreux salariés terminent tard et la jeunesse a besoin de déplacements sûrs. Permettre aux bus de **circuler** la nuit offre une mobilité bienvenue à ces usagers.",
+        "Par exemple, un trajet nocturne **sécurisant** évite le recours à la voiture individuelle après une soirée. Les employés des hôpitaux ou de la restauration en profitent également. **De ce fait**, toute la collectivité gagne en sécurité et en sérénité.",
+        "Certes, le nombre absolu de voyageurs reste inférieur à celui de la journée. Cependant, garantir une desserte minimale tard le soir transforme la vie nocturne et soutient l'activité économique de la ville."
+      ],
+      "b": [
+        "Ajouter des courses aux heures de pointe améliore le quotidien du plus grand nombre d'usagers. Actuellement, **la saturation** des bus du matin crée des désagréments et des retards répétés. Réduire l'attente est indispensable pour **désengorger** le réseau principal.",
+        "Pendant mes trajets quotidiens, je constate souvent que les véhicules sont totalement saturés. Un passage toutes les cinq minutes permettrait d'**optimiser** l'espace et de voyager dignement. **De ce fait**, ce choix bénéficie immédiatement à des milliers de travailleurs.",
+        "Même si la demande nocturne existe, elle ne concerne qu'une minorité d'habitants. Il convient donc de traiter **en premier lieu** la congestion diurne, car **la fluidité** des trajets scolaires et professionnels reste la priorité absolue."
+      ],
+      "conditional": [
+        "Développer la desserte nocturne est le meilleur choix si la ville compte beaucoup d'étudiants et de services fonctionnant la nuit. En revanche, si les lignes de journée frôlent la paralysie, il faut impérativement intervenir sur les plages saturées.",
+        "Pour renforcer l'option diurne, la municipalité pourrait créer des voies réservées garantissant la ponctualité des bus. Ainsi, le gain de temps aux heures de pointe deviendrait immédiatement visible pour tous les abonnés du réseau.",
+        "En résumé, si les transports du soir affichent un manque criant de sécurité, la nuit doit être financée. Mais si **la saturation** diurne décourage les usagers, il faut affecter le budget aux trajets du quotidien."
+      ]
+    }
+  },
+  {
+    "slug": "station-bike-lockers-or-rental",
+    "title": "Vélos en gare : casiers ou location ?",
+    "prompt": "Une gare veut faciliter les déplacements à vélo. Faut-il installer des casiers sécurisés ou proposer des vélos en libre-service ?",
+    "conditionalPrompt": "Identifiez ce qui rendrait chaque option plus convaincante et ce qui modifierait votre décision.",
+    "options": [
+      {
+        "label": "Casiers sécurisés",
+        "description": "Permettre aux usagers de laisser leur propre vélo en sécurité."
+      },
+      {
+        "label": "Vélos en libre-service",
+        "description": "Proposer des vélos à emprunter et à rendre près de la gare."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["usager", "personne qui utilise un service", "Chaque usager doit respecter les règles de sécurité."],
+        ["déplacement", "action de se déplacer", "Mes déplacements quotidiens sont facilités par le vélo."],
+        ["investissement", "dépense pour un projet", "Cet investissement est nécessaire pour moderniser la gare."],
+        ["autonomie", "capacité à agir seul", "Le vélo offre une grande autonomie en ville."]
+      ],
+      "phrasalVerbs": [
+        ["se rendre", "aller quelque part", "Je me rends au travail à vélo tous les jours."],
+        ["avoir besoin de", "nécessiter quelque chose", "J'ai besoin de mon propre vélo pour être confortable."],
+        ["se garer", "stationner un véhicule", "Il est difficile de se garer près de la gare."],
+        ["faire le choix de", "décider de faire quelque chose", "Nous devons faire le choix de la mobilité durable."]
+      ],
+      "adjectives": [
+        ["sécurisé", "qui est protégé", "Le parking doit être parfaitement sécurisé."],
+        ["pratique", "utile et facile à utiliser", "Ce système de location est très pratique."],
+        ["urbain", "relatif à la ville", "La circulation urbaine est souvent dense."],
+        ["accessible", "facile d'accès", "La gare doit rester accessible à tous."]
+      ],
+      "connectors": [
+        ["par ailleurs", "pour ajouter un point", "Par ailleurs, le coût est un facteur important."],
+        ["ainsi", "pour illustrer ou conclure", "Ainsi, les usagers seront plus enclins à pédaler."],
+        ["cependant", "pour marquer une opposition", "Cependant, le vol de vélos reste un problème."],
+        ["en effet", "pour confirmer une idée", "En effet, la demande augmente chaque année."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie l'installation de casiers sécurisés pour les usagers réguliers. Avoir un endroit sûr pour laisser son propre vélo est essentiel pour encourager les déplacements quotidiens.",
+        "**En effet**, les cyclistes préfèrent souvent utiliser leur propre matériel, mieux adapté à leur morphologie. Cela garantit une meilleure **autonomie** et évite les mauvaises surprises.",
+        "**Cependant**, cet **investissement** est coûteux. Si le nombre de places était insuffisant, je changerais d'avis pour opter vers une solution de location plus flexible."
+      ],
+      "b": [
+        "Je choisis la location de vélos en libre-service car c'est une solution très **pratique** pour les voyageurs occasionnels. Cela permet de répondre aux besoins de mobilité sans encombrer la gare.",
+        "**Par ailleurs**, ce système est plus **accessible** pour ceux qui ne possèdent pas de vélo. **Ainsi**, davantage de personnes peuvent **faire le choix de** pédaler pour finir leur trajet.",
+        "Toutefois, si les vélos étaient souvent dégradés, je préférerais les casiers sécurisés. La fiabilité du matériel est le facteur décisif pour maintenir ce service."
+      ],
+      "conditional": [
+        "Je choisirais les casiers si la majorité des **usagers** étaient des abonnés réguliers ayant **besoin de** laisser leur vélo en sécurité.",
+        "En revanche, si la gare accueille surtout des touristes, le libre-service est plus **pratique** pour faciliter leur **déplacement** en ville.",
+        "En somme, le facteur décisif est la fréquence d'utilisation. Si les gens viennent tous les jours, un espace **sécurisé** prime, sinon la flexibilité l'emporte."
+      ]
+    }
+  },
+  {
+    "slug": "pool-lanes-or-family-lessons",
+    "title": "Comment occuper le créneau disponible à la piscine ?",
+    "prompt": "Une piscine municipale dispose d'une heure libre chaque week-end. Faut-il réserver ce créneau aux nageurs individuels souhaitant faire des longueurs ou proposer des cours collectifs en famille pour les débutants ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui modifierait votre décision finale.",
+    "options": [
+      {
+        "label": "Réserver des couloirs de nage",
+        "description": "Ouvrir le bassin aux nageurs réguliers cherchant un entraînement sportif."
+      },
+      {
+        "label": "Organiser des cours en famille",
+        "description": "Proposer une séance encadrée pour adultes et enfants débutants."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le créneau", "Période horaire disponible dans le calendrier d'un équipement public.", "Le créneau du dimanche matin est très prisé par les sportifs locaux."],
+        ["l'apprentissage", "Processus d'acquisition de nouvelles connaissances ou compétences.", "L'apprentissage de la natation est essentiel pour assurer la sécurité des enfants."],
+        ["la convivialité", "Caractère chaleureux et accueillant des relations au sein d'un groupe.", "Ces cours en famille favorisent la convivialité et le partage entre générations."],
+        ["la ligne de nage", "Couloir délimité dans un bassin pour pratiquer les longueurs.", "Conserver une ligne de nage libre permet aux sportifs d'entretenir leur forme."]
+      ],
+      "phrasalVerbs": [
+        ["s'entraîner", "Pratiquer régulièrement un sport pour maintenir ou améliorer sa condition.", "De nombreux adultes cherchent un bassin calme pour s'entraîner le week-end."],
+        ["s'initier à", "Faire ses premiers pas dans une activité sportive ou culturelle.", "Les enfants peuvent s'initier aux plaisirs de l'eau en toute confiance avec leurs parents."],
+        ["accueillir", "Recevoir du public dans un établissement équipé.", "La piscine doit accueillir des publics variés tout au long de la semaine."],
+        ["maximiser", "Tirer le meilleur parti d'une ressource ou d'un temps disponible.", "Cette formule permet de maximiser l'utilisation de l'eau pendant l'heure creuse."]
+      ],
+      "adjectives": [
+        ["pédagogique", "Qui relève de l'enseignement et facilite l'assimilation des savoirs.", "Un encadrement pédagogique rassure les parents peu à l'aise dans l'eau."],
+        ["régulier", "Qui se fait de façon constante et méthodique.", "Un entraînement sportif régulier demande des plages horaires bien définies."],
+        ["ludique", "Qui a le caractère du jeu et rend l'activité plaisante.", "Une approche ludique permet de surmonter rapidement la peur de l'eau."],
+        ["intense", "Qui demande un effort physique soutenu et continu.", "Les nageurs confirmés recherchent une séance intense sans être gênés."]
+      ],
+      "connectors": [
+        ["par conséquent", "Marque la suite logique d'une explication.", "Le bassin est calme, par conséquent les nageurs peuvent faire leurs séries."],
+        ["de même", "Permet d'associer deux idées allant dans le même sens.", "Les enfants apprennent à nager, de même leurs parents prennent confiance."],
+        ["en revanche", "Introduit un contraste marquant entre deux utilisations possibles.", "Les cours demandent du matériel, en revanche les longueurs ne coûtent rien en équipement."],
+        ["bref", "Sert à conclure rapidement une argumentation.", "Bref, chaque public attend un service adapté à ses besoins spécifiques."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Réserver ce temps aux lignes de nage répond à une forte demande des sportifs réguliers. En fin de semaine, il est souvent difficile de **s'entraîner** correctement dans un bassin surchargé. Offrir cette heure garantit une séance **intense** et calme.",
+        "Par exemple, beaucoup d'adultes travaillent la semaine et n'ont que ce créneau pour maintenir leur forme. Avoir des couloirs dégagés leur permet d'enchaîner les longueurs sans devoir slalomer. **Par conséquent**, l'équipement remplit parfaitement son rôle sportif.",
+        "Toutefois, ce choix réserve le bassin à des pratiquants déjà autonomes. Mais comme le reste du planning propose déjà des loisirs familiaux, il paraît juste de consacrer cette heure précise à l'effort individuel et au perfectionnement."
+      ],
+      "b": [
+        "Organiser des séances familiales offre un moment d'apprentissage unique et rassurant. Permettre aux parents et aux enfants de s'initier ensemble crée un cadre **ludique** et **pédagogique**. C'est une excellente façon de promouvoir la sécurité aquatique pour tous.",
+        "J'ai vu des enfants faire d'immenses progrès quand leurs parents participent directement à la leçon. Cette formule renforce **la convivialité** tout en rendant l'eau accessible aux débutants. **De même**, cela crée des souvenirs très positifs en famille.",
+        "Bien que cette activité réduise l'espace disponible pour les nageurs rapides, son impact social est remarquable. Donner confiance aux familles vulnérables dans l'eau constitue une mission prioritaire pour un service public municipal."
+      ],
+      "conditional": [
+        "Ouvrir des lignes de nage est préférable si les créneaux sportifs de la semaine sont déjà complets. **En revanche**, si la commune constate une hausse des noyades chez les enfants, la leçon familiale s'impose comme une évidence.",
+        "Pour renforcer l'option sportive, la piscine pourrait instaurer un système de réservation par niveau. Cela éviterait les écarts de vitesse dans un même couloir et maximiserait le confort des pratiquants pendant toute l'heure.",
+        "**Bref**, si le besoin local porte sur la santé par le sport individuel, les couloirs sont idéaux. Si la demande concerne **l'apprentissage** partagé, l'atelier **pédagogique** reste la décision la plus pertinente."
+      ]
+    }
+  },
+  {
+    "slug": "postgraduate-now-or-work-first",
+    "title": "Études supérieures ou travail immédiat ?",
+    "prompt": "Faut-il poursuivre ses études immédiatement ou travailler d'abord et reprendre ses études plus tard ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Études immédiates",
+        "description": "Spécialiser ses compétences pendant qu'elles sont fraîches."
+      },
+      {
+        "label": "Travailler d'abord",
+        "description": "Acquérir de l'expérience et un salaire avant de décider."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["compétence", "capacité acquise par l'expérience", "Il faut développer ses compétences tout au long de la vie."],
+        ["salaire", "rémunération du travail", "Un bon salaire permet de financer ses projets futurs."],
+        ["parcours", "cheminement professionnel ou académique", "Mon parcours professionnel est assez varié."],
+        ["diplôme", "titre officiel d'études", "Ce diplôme est indispensable pour obtenir ce poste."]
+      ],
+      "phrasalVerbs": [
+        ["se spécialiser", "choisir un domaine précis", "Je souhaite me spécialiser dans le marketing digital."],
+        ["se lancer", "commencer une activité", "Il est temps de se lancer dans la vie active."],
+        ["reprendre ses études", "retourner à l'université", "Il n'est jamais trop tard pour reprendre ses études."],
+        ["faire valoir", "utiliser ses atouts", "Il faut savoir faire valoir ses expériences passées."]
+      ],
+      "adjectives": [
+        ["frais", "récent ou nouveau", "Mes connaissances sont encore fraîches."],
+        ["motivé", "qui a de l'enthousiasme", "Je suis très motivé par ce nouveau projet."],
+        ["pragmatique", "qui privilégie l'action", "Il faut adopter une approche pragmatique."],
+        ["ambitieux", "qui a de grandes aspirations", "C'est un objectif ambitieux mais réalisable."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "Le travail est formateur, en revanche les études sont théoriques."],
+        ["par conséquent", "pour exprimer une conséquence", "J'ai besoin d'argent, par conséquent je travaille."],
+        ["toutefois", "pour introduire une réserve", "Toutefois, l'expérience est souvent plus valorisée."],
+        ["d'ailleurs", "pour ajouter une information", "C'est un choix difficile, d'ailleurs beaucoup hésitent."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis de poursuivre mes études immédiatement pour spécialiser mes compétences tant qu'elles sont encore fraîches. C'est une stratégie ambitieuse qui permet d'obtenir un **diplôme** supérieur rapidement.",
+        "En effet, il est plus facile de rester dans le rythme académique. **Par conséquent**, je serai plus efficace sur le marché du travail avec une expertise pointue.",
+        "**Toutefois**, si je manquais de motivation, je préférerais travailler d'abord. Le facteur décisif est mon envie réelle d'approfondir mes connaissances théoriques."
+      ],
+      "b": [
+        "Je préfère travailler d'abord pour acquérir une expérience concrète et un **salaire**. Cela permet de mieux comprendre le monde professionnel avant de choisir une spécialisation pertinente.",
+        "**En revanche**, **reprendre ses études** plus tard est un défi. **D'ailleurs**, avoir un vécu professionnel est un atout majeur pour **faire valoir** ses compétences lors des entretiens.",
+        "**Toutefois**, si je trouvais une formation très spécifique, je changerais d'avis. Le facteur décisif est l'opportunité professionnelle qui se présente à moi."
+      ],
+      "conditional": [
+        "Je choisirais les études si le domaine est très technique, car la théorie est indispensable. Si le secteur est plutôt pratique, je privilégierais l'expérience professionnelle immédiate.",
+        "Le choix dépend de la maturité et des objectifs personnels. Il faut évaluer ce qui est le plus utile pour atteindre le poste visé.",
+        "En somme, le facteur décisif est le besoin du marché. Si les entreprises exigent un **diplôme**, je fonce, sinon je privilégie le terrain."
+      ]
+    }
+  },
+  {
+    "slug": "mentoring-or-training-budget",
+    "title": "Mentorat ou formation budgétée ?",
+    "prompt": "Une entreprise veut aider ses nouveaux employés. Faut-il privilégier un mentorat interne ou un budget de formation externe ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui modifierait votre décision.",
+    "options": [
+      {
+        "label": "Mentorat interne",
+        "description": "Rencontrer un collègue expérimenté pour apprendre sur le tas."
+      },
+      {
+        "label": "Budget formation",
+        "description": "Choisir une formation externe liée à un objectif personnel."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["collègue", "personne avec qui l'on travaille", "Mon collègue m'a beaucoup aidé à progresser."],
+        ["objectif", "but à atteindre", "Mon objectif est de devenir manager."],
+        ["tâche", "travail à accomplir", "Cette tâche demande beaucoup de précision."],
+        ["développement", "processus de croissance", "Le développement professionnel est une priorité ici."]
+      ],
+      "phrasalVerbs": [
+        ["s'occuper de", "prendre en charge", "Il faut s'occuper de la formation des nouveaux."],
+        ["se former", "apprendre un métier", "Je veux me former aux nouvelles technologies."],
+        ["faire le point", "évaluer une situation", "Il faut faire le point sur nos compétences."],
+        ["s'adapter à", "s'ajuster à une situation", "Il est important de s'adapter à la culture d'entreprise."]
+      ],
+      "adjectives": [
+        ["expérimenté", "qui a de l'expérience", "Il est très expérimenté dans ce domaine."],
+        ["pratique", "utile et concret", "Cette approche pratique est très appréciée."],
+        ["personnel", "qui concerne l'individu", "C'est un projet de développement personnel."],
+        ["efficace", "qui donne de bons résultats", "Cette méthode est très efficace pour apprendre."]
+      ],
+      "connectors": [
+        ["par ailleurs", "pour ajouter un point", "Par ailleurs, le mentorat renforce la cohésion."],
+        ["ainsi", "pour illustrer ou conclure", "Ainsi, l'employé se sent mieux intégré."],
+        ["cependant", "pour marquer une opposition", "Cependant, la formation externe est parfois plus riche."],
+        ["en effet", "pour confirmer une idée", "En effet, le mentorat est très formateur."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie le mentorat interne car apprendre avec un **collègue** **expérimenté** est très **efficace**. Cela permet de comprendre les tâches concrètes et la culture de l'entreprise.",
+        "**En effet**, le mentorat favorise une intégration rapide. **Par ailleurs**, il crée des liens solides au sein de l'équipe, ce qui est essentiel pour le **développement** professionnel.",
+        "**Cependant**, si le mentor n'est pas disponible, je choisirais la formation. Le facteur décisif est la qualité de la relation avec le mentor."
+      ],
+      "b": [
+        "Je choisis le budget de formation externe pour permettre à chacun de choisir un **objectif** **personnel**. Cela offre une liberté précieuse pour **se former** aux compétences de demain.",
+        "**Ainsi**, chaque employé peut se spécialiser selon ses envies. En revanche, le mentorat est parfois trop limité aux pratiques internes de l'entreprise.",
+        "Toutefois, si la formation était trop théorique, je préférerais le mentorat. Le facteur décisif est la pertinence de la formation choisie."
+      ],
+      "conditional": [
+        "Je choisirais le mentorat si l'entreprise a des processus spécifiques, car un **collègue** **expérimenté** aide mieux à s'adapter à la culture interne.",
+        "Si l'employé a un **objectif** de carrière précis, le budget de formation est préférable pour **se former** sur des compétences techniques pointues.",
+        "En somme, le facteur décisif est le besoin immédiat. Si l'intégration est prioritaire, le mentorat gagne, sinon la formation externe l'emporte."
+      ]
+    }
+  },
+  {
+    "slug": "daily-call-or-written-update",
+    "title": "Réunion quotidienne ou compte-rendu écrit ?",
+    "prompt": "Une équipe doit suivre ses projets. Faut-il une réunion quotidienne de dix minutes ou un compte-rendu écrit ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Réunion quotidienne",
+        "description": "Se réunir pour résoudre les problèmes ensemble."
+      },
+      {
+        "label": "Compte-rendu écrit",
+        "description": "Lire les mises à jour quand c'est pratique."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["réunion", "rassemblement de personnes", "La réunion de ce matin était très productive."],
+        ["problème", "difficulté à résoudre", "Nous devons régler ce problème rapidement."],
+        ["équipe", "groupe de travail", "Notre équipe est très soudée et efficace."],
+        ["suivi", "action de surveiller un projet", "Le suivi des tâches est essentiel pour réussir."]
+      ],
+      "phrasalVerbs": [
+        ["faire le point", "évaluer la situation", "Nous devons faire le point sur ce projet."],
+        ["se réunir", "se rassembler", "Nous allons nous réunir chaque matin."],
+        ["mettre à jour", "actualiser des informations", "Il faut mettre à jour le document partagé."],
+        ["s'organiser", "préparer son travail", "Il faut bien s'organiser pour gagner du temps."]
+      ],
+      "adjectives": [
+        ["quotidien", "qui a lieu chaque jour", "Ce compte-rendu quotidien est très utile."],
+        ["bref", "court et concis", "Il faut faire un résumé très bref."],
+        ["pratique", "utile et commode", "Cette solution est beaucoup plus pratique."],
+        ["disponible", "qui peut être contacté", "Je suis disponible pour un appel si besoin."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition", "La réunion est rapide, en revanche elle interrompt le travail."],
+        ["par conséquent", "pour exprimer une conséquence", "Le projet avance, par conséquent nous sommes sereins."],
+        ["toutefois", "pour introduire une réserve", "Toutefois, l'écrit manque parfois de clarté."],
+        ["d'ailleurs", "pour ajouter une information", "C'est une bonne méthode, d'ailleurs tout le monde l'utilise."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je soutiens la **réunion** quotidienne car elle permet de résoudre les problèmes ensemble. C'est un moment **bref** mais essentiel pour assurer le **suivi** de l'**équipe**.",
+        "En effet, **se réunir** chaque matin favorise la communication directe. **Par conséquent**, les blocages sont identifiés rapidement et tout le monde reste bien organisé.",
+        "**Toutefois**, si la **réunion** devenait trop longue, je préférerais l'écrit. Le facteur décisif est la discipline de l'**équipe** à rester concise."
+      ],
+      "b": [
+        "Je préfère le compte-rendu écrit car c'est une solution plus **pratique**. Chacun peut lire les mises à jour quand il est **disponible**, sans interrompre son travail.",
+        "**En revanche**, la **réunion** quotidienne peut être une perte de temps. **D'ailleurs**, l'écrit permet de garder une trace précise des décisions prises par l'**équipe**.",
+        "**Toutefois**, si les projets étaient très complexes, je choisirais la **réunion**. Le facteur décisif est la nécessité d'une coordination immédiate."
+      ],
+      "conditional": [
+        "Je choisirais la **réunion** si l'**équipe** est en phase de lancement. Si le projet est bien rodé, le compte-rendu écrit est largement suffisant et moins intrusif.",
+        "Le choix dépend de la nature du travail. Il faut évaluer si la communication orale est indispensable pour débloquer les situations.",
+        "En somme, le facteur décisif est la complexité des tâches. Si tout est fluide, l'écrit suffit, sinon la **réunion** est nécessaire."
+      ]
+    }
+  },
+  {
+    "slug": "promotion-service-or-performance",
+    "title": "Promotion : ancienneté ou performance ?",
+    "prompt": "Deux candidats sont qualifiés pour une promotion. L'un travaille dans l'entreprise depuis longtemps, l'autre a de meilleurs résultats récents. Que privilégier ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et quel facteur ferait changer votre décision.",
+    "options": [
+      {
+        "label": "Valoriser l'ancienneté",
+        "description": "Donner la priorité à l'expérience et à la connaissance interne."
+      },
+      {
+        "label": "Valoriser la performance",
+        "description": "Donner la priorité aux résultats récents et aux compétences techniques."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["ancienneté", "durée de présence dans une entreprise", "Son ancienneté lui donne une vision globale de la stratégie."],
+        ["résultat", "aboutissement d'une action ou d'un travail", "Ses résultats trimestriels sont excellents cette année."],
+        ["compétence", "capacité reconnue dans un domaine", "Il a prouvé ses compétences lors du dernier projet."],
+        ["promotion", "avancement dans la hiérarchie", "Elle mérite cette promotion après ses efforts constants."]
+      ],
+      "phrasalVerbs": [
+        ["prendre en compte", "considérer un élément", "Il faut prendre en compte son dévouement quotidien."],
+        ["faire ses preuves", "démontrer ses capacités", "Elle a su faire ses preuves sur le terrain."],
+        ["se démarquer", "se distinguer des autres", "Il a réussi à se démarquer par son efficacité."],
+        ["mettre en avant", "valoriser ou souligner", "Il faut mettre en avant ses qualités relationnelles."]
+      ],
+      "adjectives": [
+        ["interne", "qui se passe à l'intérieur d'une organisation", "La promotion interne est une excellente motivation."],
+        ["récent", "qui vient de se produire", "Son travail récent est très impressionnant."],
+        ["qualifié", "qui possède les capacités nécessaires", "C'est un candidat très qualifié pour ce poste."],
+        ["global", "qui concerne l'ensemble", "Il a une vision globale des enjeux actuels."]
+      ],
+      "connectors": [
+        ["par ailleurs", "en outre, de plus", "Par ailleurs, son expérience est un atout majeur."],
+        ["en revanche", "au contraire, par contre", "En revanche, il manque parfois de flexibilité."],
+        ["certes", "il est vrai que", "Certes, il est jeune, mais il est très efficace."],
+        ["toutefois", "cependant", "Toutefois, nous devons rester prudents sur ce choix."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie l'**ancienneté** car elle garantit une stabilité précieuse. Un employé fidèle connaît parfaitement la culture **interne** et les processus complexes.",
+        "**Par ailleurs**, cette loyauté mérite une reconnaissance concrète. En récompensant la fidélité, l'entreprise renforce son image et rassure ses autres collaborateurs.",
+        "**Certes**, la performance est importante, mais l'expérience accumulée reste irremplaçable. C'est un investissement sur le long terme pour la structure."
+      ],
+      "b": [
+        "Je choisis de valoriser la performance, car elle reflète l'efficacité actuelle. Un candidat qui obtient des résultats récents prouve sa valeur immédiate.",
+        "**En revanche**, l'**ancienneté** ne garantit pas toujours une adaptation aux nouveaux défis. Il faut **mettre en avant** ceux qui innovent et progressent.",
+        "**Toutefois**, il faut s'assurer que ces compétences sont durables. La **promotion** doit récompenser le talent brut et la capacité à atteindre les objectifs."
+      ],
+      "conditional": [
+        "Si je choisis l'**ancienneté**, c'est pour stabiliser l'équipe. Cependant, si le candidat manque de résultats, je changerais d'avis immédiatement.",
+        "Si je choisis la performance, c'est pour dynamiser le service. **En revanche**, si le candidat manque de loyauté, je préférerais l'**ancienneté**.",
+        "Le facteur décisif est le besoin actuel de l'entreprise. Si nous avons besoin de changement, la performance l'emporte sur l'**ancienneté**."
+      ]
+    }
+  },
+  {
+    "slug": "anonymous-survey-or-open-workshop",
+    "title": "Sondage ou atelier : comment écouter ?",
+    "prompt": "Les managers veulent comprendre pourquoi le personnel part. Faut-il faire un sondage anonyme ou un atelier ouvert pour discuter ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et quel facteur ferait changer votre décision.",
+    "options": [
+      {
+        "label": "Sondage anonyme",
+        "description": "Permettre des retours sans nom pour analyser les tendances."
+      },
+      {
+        "label": "Atelier ouvert",
+        "description": "Offrir un espace de discussion pour expliquer les problèmes."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sondage", "enquête d'opinion", "Le sondage a révélé un malaise général."],
+        ["atelier", "réunion de travail participative", "Cet atelier permet de libérer la parole."],
+        ["tendance", "orientation générale", "Nous avons identifié une tendance inquiétante."],
+        ["personnel", "ensemble des employés", "Le personnel attend des changements concrets."]
+      ],
+      "phrasalVerbs": [
+        ["faire remonter", "transmettre des informations vers le haut", "Il faut faire remonter les plaintes à la direction."],
+        ["prendre conscience", "réaliser une situation", "La direction doit prendre conscience du problème."],
+        ["mettre en place", "organiser ou installer", "Nous allons mettre en place une nouvelle méthode."],
+        ["libérer la parole", "permettre de s'exprimer librement", "Cet espace permet de libérer la parole des salariés."]
+      ],
+      "adjectives": [
+        ["anonyme", "sans nom", "Le questionnaire reste totalement anonyme."],
+        ["ouvert", "accessible à tous", "Le débat doit rester ouvert et constructif."],
+        ["concret", "réel et tangible", "Nous attendons des solutions concrètes rapidement."],
+        ["général", "qui concerne tout le monde", "Il existe un mécontentement général dans l'équipe."]
+      ],
+      "connectors": [
+        ["en effet", "effectivement, car", "En effet, l'anonymat favorise la sincérité."],
+        ["par conséquent", "donc, pour cette raison", "Par conséquent, la direction doit agir vite."],
+        ["néanmoins", "cependant", "Néanmoins, le dialogue direct reste essentiel."],
+        ["ainsi", "de cette manière", "Ainsi, nous pourrons comprendre les causes réelles."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie le **sondage** **anonyme** car il garantit une sincérité totale. Les employés craignent souvent les représailles et préfèrent rester discrets.",
+        "**En effet**, cette méthode permet de **faire remonter** des problèmes réels sans peur. Nous pourrons **ainsi** analyser les tendances générales du **personnel**.",
+        "Toutefois, il manque le contact humain. C'est une solution efficace pour obtenir des données, mais elle ne remplace pas le dialogue direct."
+      ],
+      "b": [
+        "Je choisis l'**atelier** **ouvert** pour **libérer la parole** collectivement. Discuter ensemble permet de **mettre en place** des solutions concrètes et partagées.",
+        "**Néanmoins**, il faut un animateur neutre pour éviter les tensions. Si le climat est sain, cet échange sera très constructif pour tous.",
+        "**Par conséquent**, cette option est préférable si nous voulons vraiment comprendre les causes. L'interaction humaine est indispensable pour résoudre les conflits."
+      ],
+      "conditional": [
+        "Si je choisis le **sondage**, c'est pour obtenir des chiffres clairs. Cependant, si le **personnel** est très en colère, je préférerais l'**atelier**.",
+        "Si je choisis l'**atelier**, c'est pour favoriser l'échange. En revanche, si la peur domine, le **sondage** **anonyme** devient la seule option viable.",
+        "Le facteur décisif est le niveau de confiance. Si la confiance est rompue, l'anonymat est nécessaire avant de passer à l'**atelier**."
+      ]
+    }
+  },
+  {
+    "slug": "rail-vouchers-or-new-connections",
+    "title": "Train : prix ou accès ?",
+    "prompt": "Une région veut améliorer le train le week-end. Faut-il baisser le prix des billets ou créer une nouvelle liaison vers des villes isolées ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et quel facteur ferait changer votre décision.",
+    "options": [
+      {
+        "label": "Baisser les prix",
+        "description": "Réduire le coût des trajets existants pour augmenter la demande."
+      },
+      {
+        "label": "Nouvelles liaisons",
+        "description": "Relier les petites villes à la ligne principale."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["liaison", "connexion entre deux points", "Cette nouvelle liaison facilite les déplacements."],
+        ["demande", "besoin des usagers", "La demande pour ce trajet est très forte."],
+        ["trajet", "déplacement d'un point à un autre", "Le trajet est trop long sans connexion directe."],
+        ["usager", "personne qui utilise un service", "Les usagers demandent plus de trains le week-end."]
+      ],
+      "phrasalVerbs": [
+        ["prendre en charge", "s'occuper de quelque chose", "La région doit prendre en charge ces coûts."],
+        ["mettre en service", "rendre opérationnel", "Ils vont mettre en service une nouvelle ligne."],
+        ["faire face à", "affronter une situation", "Il faut faire face à la hausse des prix."],
+        ["se déplacer", "aller d'un endroit à un autre", "Il est difficile de se déplacer sans voiture."]
+      ],
+      "adjectives": [
+        ["isolé", "éloigné, difficile d'accès", "Ces villages isolés ont besoin de transports."],
+        ["accessible", "facile à atteindre", "Le train doit rester accessible pour tous."],
+        ["principal", "le plus important", "La ligne principale est déjà saturée."],
+        ["efficace", "qui fonctionne bien", "Nous voulons un système plus efficace."]
+      ],
+      "connectors": [
+        ["par ailleurs", "en outre", "Par ailleurs, le prix est un frein majeur."],
+        ["toutefois", "cependant", "Toutefois, l'accès reste le problème principal."],
+        ["en revanche", "au contraire", "En revanche, baisser les prix aide les familles."],
+        ["ainsi", "de cette manière", "Ainsi, nous réduisons l'usage de la voiture."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie la baisse des prix pour encourager les usagers. Le coût actuel est un frein majeur pour **se déplacer** le week-end.",
+        "**Par ailleurs**, cela permet de **faire face à** la **demande** existante. En rendant le **trajet** plus **accessible**, nous augmentons la fréquentation globale.",
+        "**Toutefois**, cela ne règle pas le problème des zones isolées. C'est une solution immédiate, mais limitée pour le développement régional."
+      ],
+      "b": [
+        "Je choisis de créer de nouvelles liaisons pour désenclaver les villes. Il est injuste que certains usagers ne puissent pas **se déplacer** facilement.",
+        "**En revanche**, le coût sera plus élevé pour la région. Il faut **mettre en service** des trains réguliers pour que ce soit **efficace**.",
+        "**Ainsi**, nous offrons une vraie alternative à la voiture. C'est un investissement nécessaire pour l'équité territoriale sur le long terme."
+      ],
+      "conditional": [
+        "Si je choisis les prix bas, c'est pour aider les familles. Cependant, si les zones isolées sont totalement oubliées, je changerais d'avis.",
+        "Si je choisis les nouvelles liaisons, c'est pour l'équité. **En revanche**, si la ligne principale est vide, je préférerais baisser les prix.",
+        "Le facteur décisif est la densité de population. Si beaucoup de gens sont isolés, la **liaison** est prioritaire sur le prix."
+      ]
+    }
+  },
+  {
+    "slug": "vouchers-or-shop-rent-support",
+    "title": "Commerces : bons ou loyers ?",
+    "prompt": "Une ville veut aider les petits commerces. Faut-il offrir des bons d'achat aux habitants ou aider les boutiques à payer leur loyer ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et quel facteur ferait changer votre décision.",
+    "options": [
+      {
+        "label": "Bons d'achat",
+        "description": "Encourager les visites et laisser le choix aux habitants."
+      },
+      {
+        "label": "Aide au loyer",
+        "description": "Soutenir les boutiques proches de la fermeture."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["commerce", "magasin, boutique", "Ce commerce local est essentiel pour le quartier."],
+        ["loyer", "somme payée pour occuper un local", "Le loyer est devenu trop cher pour eux."],
+        ["habitant", "personne qui réside dans la ville", "Les habitants soutiennent leurs commerçants locaux."],
+        ["soutien", "aide financière ou morale", "Ce soutien financier arrive au bon moment."]
+      ],
+      "phrasalVerbs": [
+        ["mettre en péril", "menacer l'existence de quelque chose", "La hausse des prix met en péril ces boutiques."],
+        ["faire vivre", "animer, maintenir en activité", "Ces magasins font vivre le centre-ville."],
+        ["prendre en charge", "payer une dépense", "La ville doit prendre en charge une partie des coûts."],
+        ["se tourner vers", "choisir une option", "Les clients se tournent vers les grandes surfaces."]
+      ],
+      "adjectives": [
+        ["local", "qui concerne la proximité", "Il faut privilégier le commerce local."],
+        ["fixe", "qui ne change pas", "Les coûts fixes sont très lourds ici."],
+        ["indépendant", "qui n'appartient pas à une chaîne", "C'est une boutique indépendante très appréciée."],
+        ["urgent", "qui nécessite une action rapide", "La situation de ce magasin est urgente."]
+      ],
+      "connectors": [
+        ["en effet", "effectivement", "En effet, les habitants aiment choisir leurs achats."],
+        ["par conséquent", "donc", "Par conséquent, le commerce risque de fermer."],
+        ["néanmoins", "cependant", "Néanmoins, l'aide directe est parfois nécessaire."],
+        ["ainsi", "de cette manière", "Ainsi, nous sauvons les emplois locaux."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie les bons d'achat car ils encouragent les habitants à sortir. C'est une manière dynamique de **faire vivre** le **commerce** **local**.",
+        "**En effet**, les clients choisissent eux-mêmes où dépenser leur aide. Cela crée une concurrence saine entre les boutiques indépendantes de la ville.",
+        "Toutefois, cela ne sauve pas les magasins en difficulté immédiate. C'est une aide à la consommation plutôt qu'une aide à la survie."
+      ],
+      "b": [
+        "Je choisis l'aide au **loyer** pour soutenir les boutiques en péril. Les coûts fixes sont souvent trop lourds pour les petits commerçants.",
+        "**Par conséquent**, cette aide directe est plus efficace pour éviter les fermetures. Il faut protéger ces lieux qui font vivre notre quartier.",
+        "**Néanmoins**, il faut cibler les commerces vraiment viables. Soutenir une boutique sans avenir serait un gaspillage de l'argent public."
+      ],
+      "conditional": [
+        "Si je choisis les bons, c'est pour la vitalité. Cependant, si beaucoup de boutiques ferment, je préférerais l'aide au **loyer**.",
+        "Si je choisis l'aide au **loyer**, c'est pour la survie. En revanche, si le problème est le manque de clients, les bons sont meilleurs.",
+        "Le facteur décisif est la santé financière. Si les boutiques sont saines, les bons suffisent. Sinon, l'aide au **loyer** est indispensable."
+      ]
+    }
+  },
+  {
+    "slug": "imperfect-produce-discount-or-donation",
+    "title": "Fruits moches : solde ou don ?",
+    "prompt": "Un magasin a des fruits abîmés mais bons. Faut-il les vendre à prix réduit ou les donner à une cuisine communautaire ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et quel facteur ferait changer votre décision.",
+    "options": [
+      {
+        "label": "Vente à prix réduit",
+        "description": "Vendre les produits pour couvrir les frais de tri."
+      },
+      {
+        "label": "Don alimentaire",
+        "description": "Envoyer les produits vers une cuisine solidaire."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["produit", "marchandise vendue", "Ce produit est encore très bon à manger."],
+        ["don", "action de donner gratuitement", "Le don alimentaire aide les plus démunis."],
+        ["frais", "dépenses nécessaires", "Les frais de tri sont importants pour nous."],
+        ["cuisine", "lieu de préparation des repas", "La cuisine communautaire prépare des repas sains."]
+      ],
+      "phrasalVerbs": [
+        ["mettre en valeur", "présenter de manière positive", "Il faut mettre en valeur ces fruits atypiques."],
+        ["faire face à", "gérer une difficulté", "Nous devons faire face à la hausse des coûts."],
+        ["se tourner vers", "choisir une autre direction", "Le magasin peut se tourner vers le don."],
+        ["prendre en charge", "s'occuper de quelque chose", "La cuisine peut prendre en charge le tri."]
+      ],
+      "adjectives": [
+        ["abîmé", "qui a un défaut physique", "Ce fruit est abîmé mais parfaitement comestible."],
+        ["communautaire", "qui concerne la collectivité", "La cuisine communautaire est un projet solidaire."],
+        ["réduit", "diminué", "Le prix réduit attire beaucoup de clients."],
+        ["solidaire", "qui aide les autres", "C'est un geste solidaire très apprécié."]
+      ],
+      "connectors": [
+        ["en effet", "effectivement", "En effet, le tri coûte cher au magasin."],
+        ["par conséquent", "donc", "Par conséquent, le don est une solution éthique."],
+        ["néanmoins", "cependant", "Néanmoins, la vente permet de couvrir les frais."],
+        ["ainsi", "de cette manière", "Ainsi, nous évitons le gaspillage alimentaire."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie la vente à prix **réduit** pour couvrir les **frais** de tri. C'est une solution pragmatique qui évite de perdre de l'argent.",
+        "**En effet**, les clients apprécient ces produits moins chers. Cela permet de **mettre en valeur** des fruits abîmés qui seraient sinon jetés.",
+        "Toutefois, cela ne répond pas à l'urgence sociale. C'est une gestion commerciale efficace, mais elle manque d'une dimension purement **solidaire**."
+      ],
+      "b": [
+        "Je choisis le **don** alimentaire pour aider la **cuisine** **communautaire**. C'est un geste **solidaire** qui a un impact social très fort.",
+        "**Par conséquent**, nous évitons le gaspillage tout en aidant ceux qui en ont besoin. C'est une action concrète et très positive.",
+        "**Néanmoins**, il faut que le magasin puisse assumer les coûts. Si la situation financière est difficile, le **don** devient un défi logistique."
+      ],
+      "conditional": [
+        "Si je choisis la vente, c'est pour la viabilité. Cependant, si la précarité augmente, je préférerais donner les produits.",
+        "Si je choisis le **don**, c'est pour l'éthique. En revanche, si le magasin est en difficulté, la vente est nécessaire.",
+        "Le facteur décisif est la situation financière. Si le magasin est rentable, le **don** est idéal. Sinon, la vente est prioritaire."
+      ]
+    }
+  },
+  {
+    "slug": "compost-pickup-or-drop-off",
+    "title": "Collecte des déchets organiques",
+    "prompt": "Un quartier résidentiel veut mettre en place une collecte de déchets alimentaires. Faut-il installer des bacs individuels devant chaque immeuble ou demander aux résidents d'apporter leurs déchets dans des points de collecte centralisés ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Bacs individuels",
+        "description": "Collecte hebdomadaire devant les immeubles."
+      },
+      {
+        "label": "Points de dépôt",
+        "description": "Dépôt volontaire lors des trajets quotidiens."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["compost", "matière organique décomposée", "Le compost est essentiel pour enrichir la terre de notre jardin."],
+        ["déchet", "ce qui est jeté", "Il faut réduire la quantité de déchet que nous produisons chaque semaine."],
+        ["fréquence", "rythme de répétition", "La fréquence de passage des camions doit être adaptée aux besoins réels."],
+        ["participation", "action de prendre part", "La participation des habitants est la clé du succès de ce projet."]
+      ],
+      "phrasalVerbs": [
+        ["mettre en place", "installer", "Nous devons mettre en place un nouveau système de gestion dès lundi."],
+        ["faire le tri", "séparer les déchets", "Apprendre à faire le tri est un geste simple pour la planète."],
+        ["prendre l'habitude", "s'habituer", "Il faut prendre l'habitude de vérifier les consignes avant de jeter."],
+        ["faciliter la vie", "rendre les choses simples", "Ce nouveau service va vraiment faciliter la vie des familles du quartier."]
+      ],
+      "adjectives": [
+        ["hebdomadaire", "chaque semaine", "La réunion hebdomadaire permet de suivre l'avancement des travaux."],
+        ["centralisé", "regroupé", "Un service centralisé est souvent plus facile à gérer pour la mairie."],
+        ["contraignant", "difficile à suivre", "Ce règlement est trop contraignant pour les personnes âgées."],
+        ["efficace", "qui produit un bon résultat", "Cette méthode est très efficace pour réduire le gaspillage alimentaire."]
+      ],
+      "connectors": [
+        ["en revanche", "par contre", "Le projet est ambitieux ; en revanche, il demande beaucoup de moyens."],
+        ["par conséquent", "donc", "Le budget est épuisé, par conséquent nous devons arrêter les dépenses."],
+        ["d'une part", "structure de comparaison", "D'une part, c'est une bonne idée, mais d'autre part, c'est coûteux."],
+        ["bien que", "malgré le fait que", "Bien que ce soit difficile, nous devons continuer nos efforts."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie la collecte **hebdomadaire** devant les immeubles. C'est une solution très **efficace** pour garantir une **participation** massive des habitants.",
+        "En effet, le confort est essentiel pour que les gens prennent l'habitude de **faire le tri**. Si c'est trop **contraignant**, personne ne le fera sérieusement.",
+        "**Bien que** cela coûte plus cher, c'est la seule méthode pour gérer correctement le **compost** à grande échelle."
+      ],
+      "b": [
+        "Je préfère les points de dépôt centralisés pour les déchets alimentaires. Cela permet de réduire les coûts logistiques liés au ramassage devant chaque bâtiment.",
+        "**D'une part**, cela responsabilise les citoyens lors de leurs trajets quotidiens. D'autre part, cela évite les odeurs désagréables sous les fenêtres des résidents.",
+        "**Par conséquent**, je trouve cette approche plus durable, même si elle demande un effort supplémentaire aux habitants."
+      ],
+      "conditional": [
+        "Si le quartier est très dense, je choisis les bacs individuels pour **faciliter la vie** des familles.",
+        "**En revanche**, dans une zone plus étendue, je privilégie les points de dépôt pour limiter la **fréquence** des camions.",
+        "Le facteur décisif serait le budget disponible : si les fonds sont limités, je choisirais les points de dépôt."
+      ]
+    }
+  },
+  {
+    "slug": "practical-skills-or-more-electives",
+    "title": "Compétences pratiques ou choix libres",
+    "prompt": "Une école dispose d'une heure supplémentaire par semaine. Faut-il imposer un cours sur les compétences domestiques et financières ou laisser les élèves choisir une option selon leurs intérêts ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Compétences pratiques",
+        "description": "Cours obligatoire sur la vie quotidienne."
+      },
+      {
+        "label": "Choix libre",
+        "description": "Option choisie par chaque élève."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["autonomie", "indépendance", "L'autonomie est une compétence clé pour les jeunes adultes."],
+        ["budget", "gestion financière", "Apprendre à gérer son budget est indispensable pour éviter les dettes."],
+        ["curiosité", "envie d'apprendre", "La curiosité des élèves doit être encouragée par les professeurs."],
+        ["programme", "plan d'études", "Ce nouveau programme scolaire inclut des cours de cuisine."]
+      ],
+      "phrasalVerbs": [
+        ["prendre des décisions", "choisir", "Il est important d'apprendre à prendre des décisions seul."],
+        ["se préparer à", "s'anticiper", "Les élèves doivent se préparer à la vie active dès maintenant."],
+        ["approfondir un sujet", "étudier en détail", "Il est passionnant d'approfondir un sujet qui nous intéresse vraiment."],
+        ["avoir un impact", "influencer", "Ces cours vont avoir un impact positif sur leur avenir."]
+      ],
+      "adjectives": [
+        ["indispensable", "nécessaire", "Il est indispensable de savoir cuisiner des repas sains."],
+        ["personnalisé", "adapté", "Un apprentissage personnalisé permet de mieux progresser."],
+        ["scolaire", "relatif à l'école", "Le système scolaire doit évoluer avec la société moderne."],
+        ["pragmatique", "pratique", "Il faut adopter une approche pragmatique pour résoudre ce problème."]
+      ],
+      "connectors": [
+        ["par ailleurs", "de plus", "Ce cours est utile ; par ailleurs, il est très apprécié."],
+        ["au contraire", "à l'opposé", "Il ne faut pas limiter les choix, au contraire, il faut les encourager."],
+        ["en somme", "pour conclure", "En somme, c'est une excellente initiative pour l'école."],
+        ["tandis que", "alors que", "Certains préfèrent les cours théoriques, tandis que d'autres aiment la pratique."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis le cours obligatoire sur les compétences domestiques. C'est **indispensable** pour garantir une certaine **autonomie** à tous les élèves avant leur départ.",
+        "**Par ailleurs**, apprendre à gérer un **budget** est une compétence **pragmatique** qui leur servira toute leur vie, peu importe leur future carrière professionnelle.",
+        "**En somme**, ce **programme** est nécessaire pour préparer les jeunes à la réalité du monde adulte."
+      ],
+      "b": [
+        "Je préfère laisser les élèves choisir une option selon leurs intérêts. Cela favorise leur **curiosité** et leur permet d'**approfondir un sujet** spécifique.",
+        "**Au contraire** d'un cours imposé, cette approche offre un apprentissage **personnalisé** qui motive davantage les étudiants pendant toute l'année **scolaire**.",
+        "**Tandis que** les compétences de base sont utiles, je pense que le développement personnel a un impact plus fort sur leur motivation."
+      ],
+      "conditional": [
+        "Si les élèves manquent de bases, je choisis le cours sur les compétences pratiques pour assurer leur **autonomie**.",
+        "En revanche, si les élèves sont déjà matures, je privilégie le choix libre pour stimuler leur **curiosité**.",
+        "Le facteur décisif serait le niveau de maturité : si les élèves sont jeunes, je choisirais les compétences pratiques."
+      ]
+    }
+  },
+  {
+    "slug": "language-classes-mixed-or-grouped",
+    "title": "Groupes de langues",
+    "prompt": "Une école de langues peut séparer les élèves par niveau ou utiliser des groupes mixtes avec des rôles variés. Quelle approche choisiriez-vous ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Groupes par niveau",
+        "description": "Classement selon les compétences orales."
+      },
+      {
+        "label": "Groupes mixtes",
+        "description": "Tâches avec rôles adaptés."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["progression", "avancement", "La progression des élèves est plus rapide dans des groupes homogènes."],
+        ["interaction", "échange", "L'interaction entre les étudiants est essentielle pour apprendre."],
+        ["niveau", "degré de compétence", "Il est difficile de gérer un groupe avec un niveau trop varié."],
+        ["soutien", "aide", "Le soutien du professeur est nécessaire pour les élèves en difficulté."]
+      ],
+      "phrasalVerbs": [
+        ["se sentir à l'aise", "être confortable", "Il est important de se sentir à l'aise pour oser parler."],
+        ["faire des progrès", "avancer", "Tous les élèves veulent faire des progrès rapidement."],
+        ["s'adapter à", "ajuster", "Le professeur doit s'adapter à chaque élève du groupe."],
+        ["tirer profit de", "bénéficier", "Les élèves peuvent tirer profit de la diversité du groupe."]
+      ],
+      "adjectives": [
+        ["homogène", "uniforme", "Un groupe homogène permet un rythme de travail constant."],
+        ["hétérogène", "diversifié", "Un groupe hétérogène est plus stimulant pour les échanges."],
+        ["stimulant", "motivant", "Travailler en équipe est un exercice très stimulant."],
+        ["complexe", "difficile", "La grammaire française est un sujet parfois complexe."]
+      ],
+      "connectors": [
+        ["cependant", "mais", "L'idée est bonne ; cependant, elle demande beaucoup d'organisation."],
+        ["ainsi", "de cette manière", "Il faut parler souvent, ainsi on améliore sa prononciation."],
+        ["en revanche", "par contre", "Les débutants ont besoin de calme ; en revanche, les avancés aiment débattre."],
+        ["par conséquent", "donc", "Le groupe est trop grand, par conséquent nous allons le diviser."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis de séparer les élèves par **niveau**. C'est la meilleure façon de garantir une **progression** constante pour tout le monde.",
+        "Dans un groupe **homogène**, les étudiants se sentent plus à l'aise pour parler, car ils ont tous un **niveau** similaire.",
+        "**Par conséquent**, cette approche permet de **faire des progrès** plus rapides sans que les élèves les plus faibles ne se sentent dépassés."
+      ],
+      "b": [
+        "Je préfère les groupes mixtes avec des rôles variés. Cela permet aux élèves de **tirer profit de** la diversité des compétences.",
+        "C'est un environnement très **stimulant**, car les élèves avancés peuvent aider les autres, ce qui rend l'**interaction** plus naturelle.",
+        "**Cependant**, le professeur doit **s'adapter à** chaque élève pour que l'exercice ne devienne pas trop **complexe** pour les débutants."
+      ],
+      "conditional": [
+        "Si le but est la rapidité, je choisis les groupes par **niveau** pour assurer une **progression** fluide.",
+        "**En revanche**, si l'objectif est la communication réelle, je privilégie les groupes mixtes pour varier les échanges.",
+        "Le facteur décisif serait la taille de la classe : si elle est petite, je choisirais les groupes mixtes."
+      ]
+    }
+  },
+  {
+    "slug": "article-comments-open-or-reviewed",
+    "title": "Modération des commentaires",
+    "prompt": "Un magazine veut ouvrir les commentaires sur son site. Faut-il les publier immédiatement avec un signalement ou les vérifier avant publication ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Publication immédiate",
+        "description": "Système de signalement."
+      },
+      {
+        "label": "Publication modérée",
+        "description": "Vérification préalable."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["débat", "discussion", "Le débat sur ce sujet est très animé sur les réseaux."],
+        ["modération", "contrôle", "Une modération stricte est nécessaire pour éviter les insultes."],
+        ["règle", "norme", "Il faut respecter la règle de politesse dans chaque commentaire."],
+        ["publication", "mise en ligne", "La publication de l'article aura lieu demain matin."]
+      ],
+      "phrasalVerbs": [
+        ["donner son avis", "s'exprimer", "Chacun a le droit de donner son avis sur le site."],
+        ["prendre le temps", "ne pas se précipiter", "Il faut prendre le temps de lire avant de répondre."],
+        ["faire respecter", "imposer", "Le modérateur doit faire respecter les règles du site."],
+        ["éviter les débordements", "prévenir les problèmes", "Cette mesure permet d'éviter les débordements dans les discussions."]
+      ],
+      "adjectives": [
+        ["instantané", "immédiat", "Le partage instantané des idées est très populaire aujourd'hui."],
+        ["respectueux", "poli", "Il est important de rester respectueux, même en cas de désaccord."],
+        ["lent", "pas rapide", "Le processus de vérification est parfois un peu lent."],
+        ["constructif", "utile", "Un commentaire constructif aide à améliorer la qualité du débat."]
+      ],
+      "connectors": [
+        ["néanmoins", "cependant", "Le système est simple ; néanmoins, il demande une surveillance."],
+        ["par ailleurs", "de plus", "C'est rapide ; par ailleurs, cela encourage la participation."],
+        ["en effet", "car", "La modération est utile, en effet elle protège les utilisateurs."],
+        ["toutefois", "cependant", "L'idée est bonne, toutefois il faut prévoir des risques."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis la **publication** immédiate avec un système de signalement. Cela permet aux lecteurs de donner leur avis sans attendre.",
+        "**Par ailleurs**, c'est une approche plus dynamique qui favorise le **débat** **instantané** entre les utilisateurs du site.",
+        "**Néanmoins**, il faut **faire respecter** des règles strictes pour **éviter les débordements** et garder un ton **respectueux**."
+      ],
+      "b": [
+        "Je préfère vérifier les commentaires avant **publication**. Cela garantit que le **débat** reste **constructif** et évite les insultes inutiles.",
+        "**En effet**, même si le processus est un peu **lent**, cela protège la qualité du site et la réputation du magazine.",
+        "**Toutefois**, il faut s'assurer que le modérateur ne censure pas les opinions divergentes, mais seulement les propos agressifs."
+      ],
+      "conditional": [
+        "Si le magazine est très populaire, je choisis la **modération** préalable pour **éviter les débordements**.",
+        "En revanche, pour un petit blog, je privilégie la **publication** immédiate pour encourager le **débat**.",
+        "Le facteur décisif serait le volume de commentaires : s'il est trop élevé, je choisirais la **modération** préalable."
+      ]
+    }
+  },
+  {
+    "slug": "audience-vote-or-arts-panel",
+    "title": "Prix artistique",
+    "prompt": "Une galerie doit attribuer une bourse à un artiste. Faut-il laisser le public voter ou demander à un jury d'évaluer le travail selon des critères publiés ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui changerait votre décision.",
+    "options": [
+      {
+        "label": "Vote du public",
+        "description": "Choix par les visiteurs."
+      },
+      {
+        "label": "Jury d'experts",
+        "description": "Évaluation selon critères."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["jury", "groupe d'experts", "Le jury a passé des heures à examiner chaque dossier."],
+        ["critère", "norme de jugement", "Chaque critère de sélection doit être clair pour les artistes."],
+        ["public", "ensemble des gens", "Le public a été très enthousiaste lors de l'exposition."],
+        ["bourse", "financement", "Cette bourse permet à l'artiste de travailler sereinement."]
+      ],
+      "phrasalVerbs": [
+        ["faire un choix", "décider", "Il est difficile de faire un choix parmi tant de talents."],
+        ["mettre en avant", "valoriser", "Le but est de mettre en avant les nouveaux talents locaux."],
+        ["prendre au sérieux", "considérer avec attention", "Il faut prendre au sérieux les avis des professionnels."],
+        ["se baser sur", "utiliser comme fondement", "Le jury doit se baser sur des faits pour décider."]
+      ],
+      "adjectives": [
+        ["subjectif", "personnel", "Le goût artistique est souvent très subjectif."],
+        ["objectif", "impartial", "Une évaluation doit être aussi objective que possible."],
+        ["artistique", "relatif à l'art", "Le projet artistique a été très bien accueilli par la critique."],
+        ["transparent", "clair", "Le processus de sélection doit être totalement transparent."]
+      ],
+      "connectors": [
+        ["d'une part", "comparaison", "D'une part, le public est nombreux, d'autre part, le jury est expert."],
+        ["en revanche", "par contre", "Le vote est populaire ; en revanche, il manque parfois d'expertise."],
+        ["par conséquent", "donc", "Le jury est qualifié, par conséquent le choix sera plus professionnel."],
+        ["ainsi", "donc", "Les critères sont publiés, ainsi tout le monde peut comprendre le choix."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je choisis de laisser le **public** voter pour le gagnant. C'est une excellente façon de **mettre en avant** les artistes préférés des visiteurs.",
+        "**D'une part**, cela implique la communauté locale, et d'autre part, cela rend l'art accessible à tous sans jugement expert.",
+        "**Par conséquent**, même si le choix est **subjectif**, je pense que l'avis du **public** est le plus important pour une galerie."
+      ],
+      "b": [
+        "Je préfère demander à un **jury** d'évaluer le travail selon des critères publiés. C'est une approche plus professionnelle et transparente.",
+        "**En revanche**, le vote du **public** est souvent trop émotionnel. Le **jury** prend au sérieux la qualité technique et **artistique** de chaque œuvre.",
+        "**Ainsi**, en se basant sur des critères objectifs, nous garantissons que la **bourse** est attribuée au projet le plus solide."
+      ],
+      "conditional": [
+        "Si l'**objectif** est la popularité, je choisis le vote du **public** pour attirer plus de visiteurs.",
+        "**En revanche**, si l'**objectif** est la reconnaissance professionnelle, je privilégie le **jury** d'experts.",
+        "Le facteur décisif serait la nature de la **bourse** : si elle est prestigieuse, je choisirais le **jury**."
+      ]
+    }
+  },
+  {
+    "slug": "orchestra-rehearsals-or-school-visits",
+    "title": "Soutenir la musique locale",
+    "prompt": "Un orchestre local doit choisir entre financer des répétitions publiques gratuites ou organiser des ateliers pédagogiques dans plusieurs écoles. Quelle est la meilleure stratégie pour attirer un nouveau public ?",
+    "conditionalPrompt": "Expliquez ce qui renforcerait chaque option et quel facteur ferait basculer votre décision.",
+    "options": [
+      {
+        "label": "Répétitions ouvertes",
+        "description": "Permettre au public d'assister à une partie de la répétition et de poser des questions."
+      },
+      {
+        "label": "Ateliers scolaires",
+        "description": "Envoyer des musiciens dans les écoles pour des sessions guidées liées aux projets de classe."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["le rayonnement", "l'influence ou la diffusion d'une activité.", "Le rayonnement de cet orchestre dépend de sa présence sur le terrain."],
+        ["la sensibilisation", "l'action de rendre quelqu'un conscient d'un sujet.", "La sensibilisation des jeunes à la musique classique est une priorité absolue."],
+        ["le créneau", "un espace de temps disponible ou une spécialisation.", "Nous avons trouvé un créneau idéal pour organiser ces rencontres musicales."],
+        ["le budget", "la somme d'argent disponible pour un projet.", "Il faut gérer le budget avec prudence pour maximiser l'impact culturel."]
+      ],
+      "phrasalVerbs": [
+        ["se rendre compte", "prendre conscience de quelque chose.", "Les élèves se rendent compte de la complexité du travail orchestral."],
+        ["faire appel à", "solliciter l'aide ou les services de quelqu'un.", "L'orchestre doit faire appel à des pédagogues pour ces ateliers."],
+        ["se mettre à la place de", "imaginer le point de vue d'autrui.", "Il est important de se mettre à la place de l'auditeur débutant."],
+        ["prendre en charge", "assumer la responsabilité ou le coût de quelque chose.", "La mairie va prendre en charge les frais de déplacement des musiciens."]
+      ],
+      "adjectives": [
+        ["pédagogique", "relatif à l'enseignement ou à l'éducation.", "Cette approche pédagogique permet de mieux comprendre les œuvres jouées."],
+        ["accessible", "facile à comprendre ou à fréquenter.", "La musique classique devient plus accessible grâce à ces initiatives locales."],
+        ["interactif", "qui implique un échange entre les parties.", "Un format interactif encourage les spectateurs à participer activement."],
+        ["déterminant", "qui décide de l'issue d'une chose.", "Le choix du lieu est déterminant pour le succès de l'événement."]
+      ],
+      "connectors": [
+        ["en revanche", "pour marquer une opposition.", "Les répétitions sont gratuites ; en revanche, elles demandent un déplacement."],
+        ["par ailleurs", "pour ajouter une information supplémentaire.", "Par ailleurs, les ateliers scolaires créent un lien durable avec les jeunes."],
+        ["étant donné que", "pour introduire une cause ou une raison.", "Étant donné que le temps est limité, il faut cibler le public."],
+        ["dans la mesure où", "pour exprimer une condition ou une limite.", "C'est une bonne idée dans la mesure où cela reste gratuit."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie les répétitions ouvertes car elles offrent une immersion immédiate. En permettant au public d'assister au travail des musiciens, on démystifie l'art orchestral. C'est une méthode très **accessible** pour les curieux.",
+        "**Par ailleurs**, ce format permet une interaction directe lors des échanges après la séance. Les spectateurs peuvent poser des questions précises, ce qui renforce **le rayonnement** de l'orchestre auprès des citoyens locaux.",
+        "Certes, les ateliers scolaires sont utiles, mais les répétitions touchent un public plus large et varié. C'est un choix **déterminant** pour fidéliser les mélomanes de demain sans contrainte scolaire."
+      ],
+      "b": [
+        "Je choisis les ateliers scolaires car ils assurent une sensibilisation profonde auprès des jeunes. En intervenant directement dans les écoles, les musiciens captent une audience qui n'irait jamais spontanément à l'opéra.",
+        "**Étant donné que** les sessions sont liées aux projets de classe, l'impact **pédagogique** est bien plus fort. Les élèves se rendent compte de la richesse du répertoire grâce à cet encadrement spécifique.",
+        "Bien que les répétitions soient intéressantes, elles manquent de suivi. Je préfère donc l'option scolaire, car elle crée un lien durable, surtout si **le budget** permet d'organiser des visites régulières."
+      ],
+      "conditional": [
+        "Si l'orchestre vise une visibilité immédiate, je choisis les répétitions ouvertes. C'est idéal pour attirer les curieux qui veulent découvrir les coulisses sans engagement, surtout si l'entrée est gratuite.",
+        "**En revanche**, si l'objectif est de former le public de demain, je choisis les ateliers scolaires. C'est une stratégie plus efficace **dans la mesure où** elle s'inscrit dans un programme éducatif.",
+        "Le facteur **déterminant** serait le temps disponible. Si nous avons peu de ressources, les répétitions suffisent. Si nous avons un budget important, les ateliers scolaires deviennent alors la priorité absolue."
+      ]
+    }
+  },
+  {
+    "slug": "stars-or-written-reviews",
+    "title": "Système d'évaluation en ligne",
+    "prompt": "Un site marchand hésite entre afficher d'abord la note moyenne par étoiles ou présenter plusieurs avis détaillés expliquant les raisons des préférences des clients. Quelle méthode aide le mieux les acheteurs ?",
+    "conditionalPrompt": "Identifiez ce qui renforcerait chaque option et ce qui modifierait votre décision.",
+    "options": [
+      {
+        "label": "Note par étoiles",
+        "description": "Afficher un score rapide et permettre aux gens de lire les détails s'ils le souhaitent."
+      },
+      {
+        "label": "Avis détaillés",
+        "description": "Montrer plusieurs avis courts sur différentes caractéristiques avant la note moyenne."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["la fiabilité", "le caractère de ce qui est digne de confiance.", "La fiabilité des avis est essentielle pour rassurer les futurs acheteurs."],
+        ["le comportement", "la manière d'agir d'une personne.", "Le comportement des consommateurs change selon les informations disponibles."],
+        ["le critère", "un élément de jugement.", "Le prix est souvent le critère principal avant la qualité technique."],
+        ["la transparence", "la qualité de ce qui est clair et honnête.", "La transparence des commentaires renforce la confiance envers le site."]
+      ],
+      "phrasalVerbs": [
+        ["se baser sur", "utiliser quelque chose comme fondement.", "Il ne faut pas se baser uniquement sur une note globale."],
+        ["faire le tri", "sélectionner ce qui est important.", "Les clients doivent faire le tri parmi tous ces commentaires."],
+        ["prendre en compte", "considérer un élément dans sa réflexion.", "Il faut prendre en compte les besoins spécifiques de chaque utilisateur."],
+        ["revenir sur", "changer d'avis ou réexaminer une décision.", "Je ne reviendrai pas sur mon choix, les avis détaillés sont meilleurs."]
+      ],
+      "adjectives": [
+        ["subjectif", "qui dépend de l'opinion personnelle.", "Un avis est toujours subjectif, mais il apporte des détails utiles."],
+        ["synthétique", "qui résume l'essentiel de manière concise.", "Une note par étoiles est une information très synthétique et rapide."],
+        ["nuancé", "qui exprime des différences subtiles.", "Un commentaire écrit permet un avis plus nuancé sur le produit."],
+        ["pertinent", "qui est approprié et sensé.", "Ce conseil est très pertinent pour ceux qui hésitent entre deux modèles."]
+      ],
+      "connectors": [
+        ["par conséquent", "pour exprimer une conséquence logique.", "Le produit est cher ; par conséquent, les clients veulent des avis détaillés."],
+        ["certes", "pour marquer une concession.", "Certes, les étoiles sont pratiques, mais elles manquent de précision."],
+        ["en revanche", "pour marquer une opposition.", "Les étoiles sont rapides ; en revanche, les avis sont plus informatifs."],
+        ["par ailleurs", "pour ajouter une information.", "Par ailleurs, les avis permettent de comprendre les défauts cachés."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Je privilégie la note par étoiles car elle offre une information **synthétique** immédiate. Pour un acheteur pressé, voir une note globale permet de se faire une idée rapide de la qualité du produit.",
+        "**Par ailleurs**, ce système est très efficace pour filtrer les articles médiocres. Si la note est basse, le client passe son chemin sans perdre de temps à lire des commentaires inutiles.",
+        "**Certes**, les avis détaillés sont utiles, mais la note moyenne reste **le critère** le plus fiable. **Par conséquent**, je recommande ce format pour sa simplicité et sa clarté visuelle."
+      ],
+      "b": [
+        "Je choisis les avis détaillés car ils offrent une vision beaucoup plus nuancée. Une note par étoiles est trop subjective et ne permet pas de comprendre pourquoi un client a aimé ou détesté l'article.",
+        "**En revanche**, lire les expériences des autres aide à **prendre en compte** les détails techniques. C'est une approche qui renforce **la transparence** et aide vraiment à **faire le tri** avant l'achat.",
+        "Bien que les étoiles soient rapides, elles manquent de contexte. Je préfère donc les commentaires écrits, car ils sont plus pertinents pour les achats importants où chaque détail compte."
+      ],
+      "conditional": [
+        "Si le produit est simple, comme un accessoire, je choisis la note par étoiles. C'est rapide et efficace, étant donné que le client n'a pas besoin de lire des pages d'explications.",
+        "**En revanche**, pour un appareil complexe, je choisis les avis détaillés. C'est indispensable dans la mesure où le consommateur doit comprendre les avantages et les défauts précis du produit.",
+        "Le facteur déterminant serait le type de clientèle. Si les utilisateurs sont pressés, les étoiles gagnent. Si les clients sont exigeants, les avis détaillés deviennent alors la solution idéale."
+      ]
+    }
+  }
+]

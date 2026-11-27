@@ -1,13 +1,9 @@
 import Link from 'next/link'
-import { dilemmaCollectionPath, englishSpeakingPath, type EnglishDilemmaLevel } from '@/lib/practica/speaking-dilemma-routes'
+import { LANGUAGE_NAMES, type ImprovisaLanguage, type ImprovisaLevel } from '@/data/practica/improvisa/config'
+import { dilemmaCollectionPath, speakingHubPath } from '@/lib/practica/speaking-dilemma-routes'
 import { WORD_CARDS, type SpeakingDilemma } from '@/data/practica/speaking-dilemmas/types'
+import { DILEMMA_COPY } from './copy'
 import styles from './speaking.module.css'
-
-const positions = [
-  ['a', 'Option A'],
-  ['b', 'Option B'],
-  ['conditional', 'Conditional position'],
-] as const
 
 function highlightedVocabulary(paragraph: string) {
   return paragraph.split(/(\*\*[^*]+\*\*)/g).map((part, index) => (
@@ -15,31 +11,25 @@ function highlightedVocabulary(paragraph: string) {
   ))
 }
 
-const INSTRUCTIONS: Record<EnglishDilemmaLevel, string> = {
-  a1: 'Say A, B or both. Give one simple reason. Try for 15–25 seconds.',
-  a2: 'Choose an option or say when you prefer each one. Give a reason and a short example. Try for 25–40 seconds.',
-  b1: 'Choose a position. Give a reason and an example, then say when you might change your mind. Speak for 40–60 seconds.',
-  b2: 'Speak for 60–75 seconds. Compare the options, support your choice with an example and address a drawback.',
-  c1: 'Speak for 60–90 seconds: state your position, explain your criterion, concede a point and give your verdict.',
-  c2: 'Speak for 75–120 seconds. State the principle behind your choice, test it against a strong objection and qualify your conclusion.',
-}
-
-export default function DilemmaExercise({ level, dilemma }: { level: EnglishDilemmaLevel; dilemma: SpeakingDilemma }) {
+export default function DilemmaExercise({ level, dilemma, language = 'ingles' }: { level: ImprovisaLevel; dilemma: SpeakingDilemma; language?: ImprovisaLanguage }) {
   const beginner = level === 'a1' || level === 'a2'
+  const copy = DILEMMA_COPY[language]
+  const middle = beginner ? copy.beginnerMiddle : copy.middle
+  const modelTitles = { a: copy.options[0], b: copy.options[1], conditional: middle }
   const [optionA, optionB] = dilemma.options
   const options = [
     { value: 'a', label: `A. ${optionA.label}`, description: optionA.description },
     { value: 'b', label: `B. ${optionB.label}`, description: optionB.description },
-    { value: 'conditional', label: beginner ? 'It depends' : 'A conditional position', description: dilemma.conditionalPrompt },
+    { value: 'conditional', label: !beginner && language === 'ingles' ? 'A conditional position' : middle, description: dilemma.conditionalPrompt },
   ]
 
   return (
-    <div className="wlp-page" lang="en">
+    <div className="wlp-page" lang={LANGUAGE_NAMES[language].code}>
       <div className={`wlp-shell ${styles.shell}`}>
-        <nav className="wlp-breadcrumb" aria-label="Breadcrumb">
-          <Link href={englishSpeakingPath(level)}>Speaking {level.toUpperCase()}</Link>
+        <nav className="wlp-breadcrumb" aria-label={copy.speaking}>
+          <Link href={speakingHubPath(level, language)}>{copy.speaking} {level.toUpperCase()}</Link>
           <span aria-hidden="true">/</span>
-          <Link href={dilemmaCollectionPath(level)}>All dilemmas</Link>
+          <Link href={dilemmaCollectionPath(level, language)}>{copy.all}</Link>
         </nav>
 
         <header className="wlp-hero wlp-hero--compact">
@@ -48,7 +38,7 @@ export default function DilemmaExercise({ level, dilemma }: { level: EnglishDile
         </header>
 
         <fieldset className={styles.choices}>
-          <legend>Choose your position</legend>
+          <legend>{copy.position}</legend>
           <div className={`${styles.grid} ${styles.options}`}>
             {options.map(({ value, label, description }) => (
               <label key={value} className={styles.option}>
@@ -63,12 +53,12 @@ export default function DilemmaExercise({ level, dilemma }: { level: EnglishDile
         </fieldset>
 
         <section className={styles.section} aria-labelledby="word-bank">
-          <h2 id="word-bank">Build your answer</h2>
-          <p>{beginner ? 'Try two or three words from the cards.' : 'Pick one expression from each card.'} {INSTRUCTIONS[level]}</p>
+          <h2 id="word-bank">{copy.preparation}</h2>
+          <p>{copy.instructions[level]}</p>
           <div className={`${styles.grid} ${styles.vocabulary}`}>
-            {WORD_CARDS.map(([category, title]) => (
+            {WORD_CARDS.map(([category]) => (
               <div key={category} className={styles.wordCard}>
-                <h3>{title}</h3>
+                <h3>{copy.cards[category]}</h3>
                 <dl>
                   {dilemma.vocabulary[category].map(([term, definition, example]) => (
                     <div key={term}>
@@ -83,9 +73,9 @@ export default function DilemmaExercise({ level, dilemma }: { level: EnglishDile
           </div>
         </section>
 
-        {positions.map(([key, label]) => (
+        {(['a', 'b', 'conditional'] as const).map((key) => (
           <details key={key} className={styles.model}>
-            <summary>Reveal model answer · {beginner && key === 'conditional' ? 'It depends' : label}</summary>
+            <summary>{copy.reveal} · {modelTitles[key]}</summary>
             {dilemma.models[key].map((paragraph) => <p key={paragraph}>{highlightedVocabulary(paragraph)}</p>)}
           </details>
         ))}

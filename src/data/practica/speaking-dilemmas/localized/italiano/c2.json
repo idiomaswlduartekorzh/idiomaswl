@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "coastal-adaptation-protection-or-relocation",
+    "title": "Protezione costiera o ricollocamento",
+    "prompt": "Un'autorità costiera deve decidere se finanziare anni di protezione per un quartiere esposto o acquistare volontariamente le case per ricollocare i servizi in zone più sicure. Qual è l'uso più difendibile di un fondo limitato?",
+    "conditionalPrompt": "Definisci quando la protezione continuata è giustificabile e chi ne sopporta le conseguenze in caso di fallimento.",
+    "options": [
+      {
+        "label": "Preservare l'esistente",
+        "description": "Proteggere le case e l'economia locale con difese progettate per un periodo definito."
+      },
+      {
+        "label": "Ricollocamento strategico",
+        "description": "Offrire supporto per trasferirsi e investire in quartieri riceventi, nonostante il desiderio di alcuni residenti di restare."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["argine", "struttura di difesa contro l'acqua", "È necessario costruire un argine solido per proteggere l'abitato dalle mareggiate."],
+        ["sostenibilità", "capacità di durare nel tempo", "La sostenibilità economica del progetto è messa a dura prova dall'innalzamento del mare."],
+        ["esodo", "spostamento massiccio di persone", "Un esodo forzato dalla costa causerebbe traumi sociali difficili da gestire."],
+        ["infrastruttura", "complesso di opere necessarie", "Ogni infrastruttura esistente lungo la costa richiede una manutenzione costante e costosa."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro a", "affrontare una situazione", "Dobbiamo andare incontro a una realtà climatica che non permette più di ignorare i rischi."],
+        ["tirare avanti", "proseguire con difficoltà", "Non possiamo continuare a tirare avanti con soluzioni temporanee che non risolvono il problema."],
+        ["fare i conti con", "valutare le conseguenze", "La comunità deve fare i conti con l'impossibilità di difendere ogni singolo metro di costa."],
+        ["venire meno", "cessare di esistere", "Se i fondi dovessero venire meno, la protezione costiera diventerebbe immediatamente insostenibile."]
+      ],
+      "adjectives": [
+        ["vulnerabile", "esposto a pericoli", "Il quartiere rimane estremamente vulnerabile nonostante i recenti lavori di consolidamento."],
+        ["imminente", "che sta per accadere", "Il pericolo di inondazioni è imminente e richiede decisioni rapide e coraggiose."],
+        ["lungimirante", "che guarda al futuro", "Una strategia lungimirante deve considerare il cambiamento climatico nei prossimi decenni."],
+        ["precario", "instabile o insicuro", "Il futuro di queste abitazioni appare sempre più precario a causa dell'erosione."]
+      ],
+      "connectors": [
+        ["a patto che", "a condizione che", "Possiamo finanziare l'opera, a patto che la manutenzione sia garantita per vent'anni."],
+        ["al di là di", "oltre a", "Al di là di ogni considerazione economica, dobbiamo tutelare la sicurezza dei residenti."],
+        ["in virtù di", "grazie a", "In virtù di una pianificazione rigorosa, abbiamo ridotto i rischi di inondazione."],
+        ["posto che", "assumendo che", "Posto che le risorse sono scarse, dobbiamo dare priorità alle zone più densamente popolate."]
+      ]
+    },
+    "models": {
+      "a": [
+        "La protezione dell'esistente rappresenta un investimento necessario per preservare il tessuto sociale e l'economia locale. Costruire un **argine** solido permette di mantenere la stabilità di un quartiere **vulnerabile**, evitando traumi inutili ai residenti che desiderano restare nelle proprie case.",
+        "Sebbene alcuni critici sostengano che sia una strategia poco **lungimirante**, la difesa costiera garantisce tempo prezioso per adattarsi. **In virtù di** una pianificazione rigorosa, possiamo gestire il rischio in modo controllato, evitando l'**esodo** immediato di intere famiglie.",
+        "In definitiva, la protezione è giustificabile finché il rapporto tra costi e benefici rimane accettabile. Dobbiamo **fare i conti con** la realtà, ma mantenere l'**infrastruttura** esistente è un dovere morale verso chi ha costruito la propria vita in questi luoghi."
+      ],
+      "b": [
+        "Il ricollocamento strategico è l'unica opzione responsabile quando il rischio diventa insostenibile. Invece di **tirare avanti** con difese precarie, è preferibile investire in zone sicure, garantendo ai cittadini un futuro lontano dal pericolo **imminente** di inondazioni.",
+        "**Al di là di** ogni attaccamento affettivo, la **sostenibilità** a lungo termine impone di accettare che alcune aree non possono essere protette. Supportare il trasferimento significa offrire una soluzione definitiva, evitando che le persone debbano affrontare la distruzione dei propri beni.",
+        "La decisione si basa sulla consapevolezza che la natura vincerà sempre. **Posto che** le risorse sono scarse, è più logico aiutare le persone a spostarsi piuttosto che sprecare fondi in una battaglia persa contro l'innalzamento del mare."
+      ],
+      "conditional": [
+        "Se la protezione è tecnicamente fattibile e i costi sono proporzionati al valore del bene, allora la difesa è la scelta giusta. In questo caso, il pubblico accetta di finanziare l'opera **a patto che** i residenti comprendano i limiti temporali della soluzione.",
+        "Se invece il rischio di fallimento dell'**infrastruttura** è elevato, allora il ricollocamento diventa l'unica via percorribile. Qui, l'autorità deve agire con fermezza, offrendo incentivi economici per facilitare il trasferimento e prevenire situazioni di pericolo estremo.",
+        "Il fattore decisivo è la soglia di rischio accettabile. Quando la protezione cessa di essere efficace, l'autorità deve assumersi la responsabilità di dichiarare l'area non più abitabile, distinguendo chiaramente tra la difesa temporanea e l'abbandono definitivo."
+      ]
+    }
+  },
+  {
+    "slug": "urgent-public-notices-translation",
+    "title": "Traduzioni di emergenza",
+    "prompt": "Un'agenzia pubblica deve pubblicare avvisi di interruzione dei trasporti in diverse lingue entro un'ora. Dovrebbe pubblicare bozze assistite da macchine con limiti visibili e aggiornarle in seguito, o rilasciare traduzioni solo dopo la revisione di esperti?",
+    "conditionalPrompt": "Indica quali tipi di incomprensione sono tollerabili e cosa dovrebbe accadere quando i revisori non sono disponibili.",
+    "options": [
+      {
+        "label": "Bozza immediata",
+        "description": "Rilasciare una bozza breve, chiaramente etichettata, e sostituirla dopo la revisione."
+      },
+      {
+        "label": "Revisione preventiva",
+        "description": "Rilasciare l'originale immediatamente e aggiungere altre lingue non appena le persone le verificano."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["tempestività", "capacità di agire in tempo", "La tempestività dell'informazione è cruciale durante un'emergenza nei trasporti pubblici."],
+        ["imprecisione", "mancanza di esattezza", "Una minima imprecisione nella traduzione può causare confusione tra i viaggiatori stranieri."],
+        ["disagio", "condizione di difficoltà", "L'interruzione improvvisa della linea ha creato un notevole disagio per migliaia di pendolari."],
+        ["trasparenza", "chiarezza comunicativa", "La trasparenza sui limiti della traduzione automatica aiuta a mantenere la fiducia del pubblico."]
+      ],
+      "phrasalVerbs": [
+        ["andare a buon fine", "avere successo", "Non sempre le traduzioni automatiche vanno a buon fine senza un controllo umano."],
+        ["venire incontro a", "soddisfare le esigenze", "Dobbiamo venire incontro a chi non parla la lingua locale durante le emergenze."],
+        ["fare capo a", "dipendere da", "In situazioni critiche, non possiamo fare capo solo a sistemi automatizzati."],
+        ["tirare le somme", "concludere valutando", "Dopo l'emergenza, dovremo tirare le somme sull'efficacia del nostro sistema di comunicazione."]
+      ],
+      "adjectives": [
+        ["ambiguo", "che può essere interpretato in modi diversi", "Un messaggio ambiguo può peggiorare la situazione invece di chiarirla."],
+        ["tempestivo", "che avviene al momento giusto", "Un avviso tempestivo è più utile di una traduzione perfetta ma tardiva."],
+        ["affidabile", "che merita fiducia", "Il sistema di revisione deve essere affidabile per garantire la correttezza dei dati."],
+        ["approssimativo", "non preciso", "Un testo approssimativo è accettabile solo se accompagnato da un avviso chiaro."]
+      ],
+      "connectors": [
+        ["a prescindere da", "indipendentemente da", "A prescindere da quanto sia urgente, la chiarezza deve rimanere la nostra priorità."],
+        ["in quanto", "poiché", "Il messaggio è critico in quanto contiene istruzioni per l'evacuazione della stazione."],
+        ["nel caso in cui", "qualora", "Nel caso in cui la traduzione sia errata, è necessario un piano di correzione rapido."],
+        ["al fine di", "allo scopo di", "Abbiamo pubblicato la bozza al fine di informare il pubblico il prima possibile."]
+      ]
+    },
+    "models": {
+      "a": [
+        "La pubblicazione immediata di una bozza assistita è la scelta più coerente con la necessità di **tempestività**. In una situazione di emergenza, fornire un'informazione approssimativa è preferibile al silenzio, a patto che il testo sia chiaramente etichettato come non revisionato.",
+        "Questa strategia permette di **venire incontro a** chi non parla la lingua locale, riducendo il **disagio** immediato. La **trasparenza** sui limiti del sistema garantisce che il pubblico non consideri il testo come definitivo, evitando malintesi pericolosi durante la crisi.",
+        "In definitiva, la priorità è la diffusione rapida dei dati. Posto che la perfezione è impossibile in tempi brevi, preferisco un avviso **tempestivo** che possa essere corretto in seguito, piuttosto che un ritardo che lasci i passeggeri senza alcuna guida."
+      ],
+      "b": [
+        "Rilasciare solo traduzioni verificate è l'unico modo per garantire un'informazione **affidabile**. Un messaggio **ambiguo**, generato da una macchina, potrebbe causare panico o errori di comportamento, peggiorando la situazione invece di risolverla durante un'interruzione dei trasporti.",
+        "È preferibile pubblicare l'originale e attendere la revisione, **al fine di** mantenere standard qualitativi elevati. La chiarezza è fondamentale **in quanto** i viaggiatori dipendono da queste indicazioni per muoversi in sicurezza all'interno di una rete complessa.",
+        "La decisione si basa sulla qualità del servizio. **A prescindere da** quanto sia urgente, un'informazione errata è peggiore di nessuna informazione. Dobbiamo garantire che ogni parola sia corretta prima di diffonderla, evitando di dover smentire noi stessi in un secondo momento."
+      ],
+      "conditional": [
+        "Pubblicarei una bozza **nel caso in cui** anche pochi minuti di ritardo possano lasciare parte della popolazione senza istruzioni. La **tempestività** conta, purché il testo provvisorio contenga azioni semplici e sia riconoscibile come tale.",
+        "Aspetterei la revisione se una formula **ambigua** potesse indirizzare le persone verso il posto sbagliato o indurle a interpretare male un divieto. Nel frattempo, l’originale può uscire subito, accompagnato da simboli già noti e da un’indicazione **trasparente** dei tempi di verifica.",
+        "Deciderei confrontando due rischi concreti, quello di lasciare i residenti senza informazioni utilizzabili e quello di diffondere un’indicazione **approssimativa**. Una procedura è **affidabile** quando prevede sia la verifica sia la sostituzione della bozza su tutti i canali."
+      ]
+    }
+  },
+  {
+    "slug": "citizen-panel-selection",
+    "title": "Selezione del comitato cittadino",
+    "prompt": "Un consiglio comunale vuole un comitato consultivo per esaminare una grande riqualificazione. I posti dovrebbero essere assegnati tramite lotteria stratificata o riempiti da nomine di organizzazioni locali riconosciute?",
+    "conditionalPrompt": "Distingui la selezione equa dalla partecipazione utile, poi decidi cosa renderebbe credibile il parere del comitato.",
+    "options": [
+      {
+        "label": "Lotteria stratificata",
+        "description": "Invitare i residenti a caso, riservando posti per riflettere il mix di quartieri ed età."
+      },
+      {
+        "label": "Nomine organizzate",
+        "description": "Chiedere ai gruppi locali di nominare persone con conoscenze pratiche e legami visibili."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["rappresentatività", "capacità di riflettere la popolazione", "La rappresentatività del comitato è fondamentale per la legittimità delle sue decisioni."],
+        ["competenza", "conoscenza specifica", "La competenza tecnica dei membri nominati garantisce un esame approfondito del progetto."],
+        ["criterio", "principio di giudizio", "Il criterio di selezione deve essere trasparente per evitare accuse di favoritismo."],
+        ["coinvolgimento", "partecipazione attiva", "Un reale coinvolgimento dei cittadini richiede tempo e una comunicazione efficace."]
+      ],
+      "phrasalVerbs": [
+        ["mettere in luce", "evidenziare", "Il comitato deve mettere in luce le criticità del progetto di riqualificazione."],
+        ["fare capo a", "riferirsi a", "Per le decisioni tecniche, il comitato può fare capo a esperti esterni."],
+        ["tirare fuori", "far emergere", "La discussione ha permesso di tirare fuori dubbi che non erano stati considerati."],
+        ["andare a fondo", "analizzare accuratamente", "Dobbiamo andare a fondo della questione per capire l'impatto reale sul quartiere."]
+      ],
+      "adjectives": [
+        ["imparziale", "senza pregiudizi", "Un comitato imparziale è essenziale per valutare il progetto senza influenze politiche."],
+        ["eterogeneo", "composto da elementi diversi", "Un gruppo eterogeneo porta prospettive variegate che arricchiscono il dibattito."],
+        ["autorevole", "che gode di stima", "Il parere del comitato deve essere autorevole per influenzare le scelte del consiglio."],
+        ["incompetente", "privo di capacità", "Un comitato incompetente rischia di rallentare il processo senza produrre risultati utili."]
+      ],
+      "connectors": [
+        ["a patto che", "a condizione che", "La lotteria funziona, a patto che sia accompagnata da una formazione adeguata."],
+        ["in quanto", "poiché", "Il metodo è valido in quanto garantisce l'inclusione di ogni fascia d'età."],
+        ["al di là di", "oltre a", "Al di là di ogni preferenza, dobbiamo scegliere il metodo più democratico."],
+        ["posto che", "assumendo che", "Posto che il progetto è complesso, serve un comitato con una visione d'insieme."]
+      ]
+    },
+    "models": {
+      "a": [
+        "La lotteria stratificata è il metodo più democratico per garantire la **rappresentatività** del comitato. Invitando i cittadini a caso, assicuriamo che ogni voce, anche quella meno organizzata, possa essere ascoltata, evitando che il gruppo sia composto solo da chi ha interessi particolari.",
+        "Questo approccio permette di **mettere in luce** le esigenze reali della popolazione, **al di là di** ogni influenza politica. Un gruppo **eterogeneo** è fondamentale **in quanto** porta prospettive diverse, arricchendo il dibattito sulla riqualificazione con visioni che spesso sfuggono ai rappresentanti ufficiali.",
+        "In definitiva, la credibilità del comitato deriva dalla sua imparzialità. **Posto che** la partecipazione è un diritto, la lotteria assicura che il parere finale non sia il prodotto di una lobby, ma la sintesi onesta delle preoccupazioni dei residenti."
+      ],
+      "b": [
+        "Le nomine da parte di organizzazioni locali sono preferibili perché garantiscono che i membri abbiano una conoscenza pratica del territorio. Chi vive quotidianamente le problematiche del quartiere è in grado di **andare a fondo** delle questioni tecniche, offrendo un contributo concreto.",
+        "Questo metodo assicura che il comitato sia composto da persone autorevoli, capaci di rappresentare efficacemente i propri vicini. È un approccio utile **in quanto** crea un legame diretto tra chi decide e chi subisce le conseguenze della riqualificazione, evitando perdite di tempo.",
+        "La decisione si basa sulla qualità della partecipazione. **Al di là di** ogni ideale democratico, serve un comitato che sappia dialogare con i progettisti. Solo chi ha una storia di impegno locale può garantire che il parere del comitato sia davvero ascoltato."
+      ],
+      "conditional": [
+        "Se l'obiettivo è la legittimazione democratica, allora la lotteria stratificata è la scelta corretta. In questo caso, il fattore decisivo è l'inclusività, che garantisce che il comitato sia visto come **imparziale** e non manipolato da gruppi di potere locali.",
+        "Se invece l'obiettivo è l'efficacia tecnica, allora le nomine sono preferibili. Qualora il progetto sia estremamente complesso, è necessario che i membri abbiano competenze specifiche, rendendo la partecipazione utile solo se basata su una conoscenza profonda del contesto.",
+        "Il fattore decisivo è la natura del parere richiesto. Per questioni di principio, la lotteria è superiore; per questioni tecniche, le nomine sono necessarie. Un comitato credibile deve bilanciare queste due esigenze, garantendo sia l'equità che la **competenza** nel processo decisionale."
+      ]
+    }
+  },
+  {
+    "slug": "policy-forecast-uncertainty",
+    "title": "Incertezza nelle previsioni",
+    "prompt": "Un ufficio di bilancio pubblico deve spiegare il possibile costo di una nuova politica. Dovrebbe presentare una cifra di riferimento e mettere l'incertezza in un'appendice, o presentare diversi scenari plausibili senza scegliere una cifra principale?",
+    "conditionalPrompt": "Spiega come comunicheresti l'incertezza senza rendere il pubblico incapace di utilizzare la stima.",
+    "options": [
+      {
+        "label": "Cifra di riferimento",
+        "description": "Fornire ai decisori un numero comune di pianificazione e spiegare le altre possibilità nelle note tecniche."
+      },
+      {
+        "label": "Scenari multipli",
+        "description": "Mostrare come le ipotesi cambiano il costo e chiedere al pubblico di considerare l'intervallo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["stima", "valutazione approssimativa", "La stima dei costi è soggetta a variazioni a causa dell'instabilità dei mercati."],
+        ["ipotesi", "presupposto teorico", "Ogni ipotesi di calcolo deve essere chiaramente dichiarata per garantire trasparenza."],
+        ["impatto", "effetto di una decisione", "L'impatto finanziario di questa politica sarà significativo per i prossimi anni."],
+        ["scenari", "possibili evoluzioni future", "Abbiamo elaborato diversi scenari per coprire ogni eventualità economica."]
+      ],
+      "phrasalVerbs": [
+        ["andare a incidere su", "influenzare negativamente", "L'inflazione potrebbe andare a incidere su ogni stima che abbiamo elaborato."],
+        ["tirare fuori", "estrarre dati", "È difficile tirare fuori una cifra precisa da un modello così complesso."],
+        ["fare capo a", "basarsi su", "Dobbiamo fare capo a dati storici per rendere la nostra previsione più solida."],
+        ["venire a capo di", "risolvere un problema", "Non è facile venire a capo di tutte le variabili che influenzano il bilancio."]
+      ],
+      "adjectives": [
+        ["plausibile", "che appare verosimile", "Ogni scenario presentato deve essere plausibile per essere preso sul serio."],
+        ["ambiguo", "poco chiaro", "Un messaggio ambiguo sui costi rischia di confondere i decisori politici."],
+        ["preciso", "esatto", "Nonostante l'incertezza, cerchiamo di essere il più precisi possibile nei calcoli."],
+        ["volubile", "che cambia facilmente", "Il mercato è estremamente volubile e rende difficile ogni previsione a lungo termine."]
+      ],
+      "connectors": [
+        ["a patto che", "a condizione che", "La cifra è valida, a patto che le condizioni economiche rimangano stabili."],
+        ["in quanto", "poiché", "Il modello è utile in quanto permette di testare diverse variabili contemporaneamente."],
+        ["al di là di", "oltre a", "Al di là di ogni stima, dobbiamo prepararci a gestire eventuali imprevisti."],
+        ["posto che", "assumendo che", "Posto che le risorse sono limitate, dobbiamo scegliere lo scenario più probabile."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Fornire una cifra di riferimento è essenziale per permettere ai decisori di pianificare con chiarezza. Anche se il futuro è incerto, la politica richiede un numero su cui basarsi, lasciando le analisi tecniche e le varianti in appendice per chi desidera approfondire.",
+        "Questo approccio è utile **in quanto** evita la paralisi decisionale che deriva dall'eccesso di informazioni. È preferibile avere una **stima** precisa, anche se soggetta a revisioni, piuttosto che un ventaglio di **scenari** che non permettono di **tirare fuori** una conclusione operativa.",
+        "In definitiva, la responsabilità dell'ufficio è fornire una guida. **Posto che** l'incertezza esiste, dobbiamo gestirla internamente, offrendo ai politici un dato chiaro su cui costruire il bilancio, **al di là di** ogni complicazione teorica che potrebbe confondere l'opinione pubblica."
+      ],
+      "b": [
+        "Presentare diversi **scenari** è l'unico modo onesto per comunicare l'incertezza intrinseca di ogni previsione economica. Nascondere le variabili dietro una singola cifra è un errore, poiché induce i decisori a credere in una precisione che non esiste.",
+        "Mostrare come le **ipotesi** cambiano il costo è fondamentale **in quanto** permette di comprendere i rischi reali. **Al di là di** ogni semplificazione, il pubblico deve capire che il bilancio è una **stima** **volubile**, influenzata da fattori che non possiamo controllare pienamente.",
+        "La decisione si basa sulla trasparenza. Non dobbiamo cercare di **venire a capo di** ogni variabile con un numero unico, ma educare i decisori a considerare l'intervallo di possibilità. Solo così la pianificazione diventa davvero consapevole e resiliente agli imprevisti."
+      ],
+      "conditional": [
+        "Se il pubblico ha competenze tecniche, allora presentare **scenari** multipli è la scelta migliore. In questo caso, il fattore decisivo è la completezza dell'informazione, che permette agli esperti di valutare i rischi e le opportunità in modo critico.",
+        "Se invece il pubblico è composto da decisori politici che necessitano di una direzione, allora una cifra di riferimento è necessaria. Qualora si scelga questa via, è fondamentale accompagnarla con un intervallo di confidenza, evitando di presentare il dato come una certezza assoluta.",
+        "Il fattore decisivo è l'uso che verrà fatto della **stima**. Per la pianificazione operativa, serve un numero chiaro; per la valutazione strategica, servono **scenari**. La comunicazione deve adattarsi al destinatario, garantendo sempre che l'incertezza sia visibile, ma mai paralizzante."
+      ]
+    }
+  },
+  {
+    "slug": "adaptation-investment-equity-test",
+    "title": "Equità negli investimenti",
+    "prompt": "Una regione non può finanziare ogni progetto per ridurre i disagi del maltempo. Dovrebbe classificare i progetti in base ai benefici per unità di spesa o dare priorità alle comunità dove i residenti hanno meno alternative?",
+    "conditionalPrompt": "Decidi come confrontare guadagni modesti diffusi con perdite concentrate e dove una soglia cambierebbe la priorità.",
+    "options": [
+      {
+        "label": "Efficienza economica",
+        "description": "Finanziare i progetti con la più alta riduzione stimata dei danni rispetto al denaro disponibile."
+      },
+      {
+        "label": "Priorità sociale",
+        "description": "Finanziare progetti per comunità con risorse limitate, applicando un test minimo di efficacia."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["disagio", "condizione di difficoltà", "Il maltempo causa un disagio costante alle comunità che vivono in zone esposte."],
+        ["efficacia", "capacità di produrre risultati", "L'efficacia di un progetto si misura dalla sua capacità di ridurre i danni reali."],
+        ["equità", "giustizia distributiva", "Dobbiamo garantire l'equità nella distribuzione delle risorse regionali per la sicurezza."],
+        ["soglia", "limite minimo", "Abbiamo stabilito una soglia di protezione minima che ogni progetto deve rispettare."]
+      ],
+      "phrasalVerbs": [
+        ["andare a beneficio di", "favorire", "I fondi devono andare a beneficio di chi ha meno possibilità di difendersi."],
+        ["tirare le somme", "valutare i risultati", "Dopo aver analizzato i danni, dobbiamo tirare le somme per decidere gli interventi."],
+        ["fare capo a", "utilizzare come risorsa", "Le comunità più povere non possono fare capo a fondi privati per la sicurezza."],
+        ["venire incontro a", "aiutare", "Il piano regionale deve venire incontro a chi vive in aree ad alto rischio."]
+      ],
+      "adjectives": [
+        ["modesto", "limitato", "Anche un modesto intervento può migliorare significativamente la sicurezza di un quartiere."],
+        ["concentrato", "raccolto in un punto", "Il rischio è concentrato in alcune aree specifiche che richiedono attenzione immediata."],
+        ["pratico", "concreto", "Cerchiamo soluzioni di carattere pratico che diano risultati visibili in tempi brevi."],
+        ["vulnerabile", "esposto", "Le popolazioni più vulnerabili sono quelle che soffrono maggiormente per il maltempo."]
+      ],
+      "connectors": [
+        ["a patto che", "a condizione che", "Finanziamo il progetto, a patto che dimostri un'efficacia misurabile nel tempo."],
+        ["in quanto", "poiché", "Il criterio è giusto in quanto considera le diverse capacità economiche dei cittadini."],
+        ["al di là di", "oltre a", "Al di là di ogni calcolo economico, dobbiamo considerare il valore sociale dell'intervento."],
+        ["posto che", "assumendo che", "Posto che le risorse sono scarse, dobbiamo scegliere dove l'impatto è maggiore."]
+      ]
+    },
+    "models": {
+      "a": [
+        "L'efficienza economica è il criterio più razionale per gestire risorse pubbliche limitate. Finanziare i progetti che offrono la maggiore riduzione dei danni per ogni euro speso permette di massimizzare il beneficio collettivo, proteggendo il maggior numero di persone e beni.",
+        "Questo approccio è utile **in quanto** garantisce che il denaro pubblico non venga sprecato in interventi di scarsa **efficacia**. **Al di là di** ogni considerazione emotiva, dobbiamo **tirare le somme** e scegliere le soluzioni che offrono il miglior ritorno in termini di sicurezza.",
+        "In definitiva, la priorità deve essere la riduzione totale del rischio. **Posto che** non possiamo proteggere tutti, dobbiamo concentrare gli investimenti dove hanno il massimo impatto, garantendo che la regione sia nel complesso più sicura e meno **vulnerabile**."
+      ],
+      "b": [
+        "La priorità sociale è fondamentale per garantire l'**equità** in una società civile. Dobbiamo finanziare le comunità più vulnerabili, che non possono **fare capo a** risorse private per difendersi dal maltempo, anche se il costo per beneficiario è più alto rispetto ad altre zone.",
+        "Questo metodo permette di **venire incontro a** chi ha meno alternative, evitando che la sicurezza diventi un privilegio di pochi. È un approccio necessario **in quanto** il **disagio** **concentrato** in queste aree rischia di diventare una crisi sociale permanente se ignorato.",
+        "La decisione si basa sulla giustizia distributiva. **Al di là di** ogni calcolo di efficienza, la regione deve proteggere chi è più esposto. Un progetto è giustificabile se supera una **soglia** minima di **efficacia**, garantendo dignità e sicurezza a tutti i cittadini."
+      ],
+      "conditional": [
+        "Se il guadagno è diffuso ma **modesto**, allora l'efficienza economica è la guida corretta. In questo caso, il fattore decisivo è il numero di persone protette, che giustifica un investimento che massimizza il benessere generale della regione.",
+        "Se invece la perdita è concentrata e devastante per una piccola comunità, allora la priorità sociale deve prevalere. Qualora l'impatto sulla vita dei residenti sia estremo, la **soglia** di **efficacia** deve essere flessibile, dando precedenza a chi non ha altre difese.",
+        "Il fattore decisivo è la gravità del rischio. Quando l'impatto è catastrofico, l'**equità** sociale è prioritaria; quando l'impatto è gestibile, l'efficienza economica è la regola. Un sistema equilibrato deve saper distinguere tra queste due situazioni, applicando il criterio più adatto."
+      ]
+    }
+  },
+  {
+    "slug": "ecological-composite-or-minimum-targets",
+    "title": "Monitoraggio ambientale: punteggio aggregato o soglie minime?",
+    "prompt": "Un piano regionale deve monitorare lo stato di fiumi, boschi e habitat urbani. È preferibile utilizzare un punteggio complessivo che possa salire quando i guadagni superano le perdite, oppure mantenere soglie minime separate per ogni habitat?",
+    "conditionalPrompt": "Decidi in quali casi i guadagni possono legittimamente compensare le perdite e dove invece il confronto perde di significato.",
+    "options": [
+      {
+        "label": "Punteggio aggregato",
+        "description": "Combinare le misure con pesi pubblicati e visualizzare una tendenza generale."
+      },
+      {
+        "label": "Soglie minime",
+        "description": "Fissare dei limiti per ogni habitat e mostrare quali scendono al di sotto di essi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["deterioramento", "il processo di peggioramento delle condizioni di qualcosa", "Il costante deterioramento degli ecosistemi richiede interventi immediati."],
+        ["compensazione", "l'atto di bilanciare un danno con un beneficio equivalente", "La compensazione ambientale non sempre riesce a riparare i danni irreversibili."],
+        ["biodiversità", "la varietà di organismi viventi in un determinato ambiente", "Dobbiamo proteggere la biodiversità locale per garantire la resilienza del territorio."],
+        ["criterio", "principio o norma in base alla quale si effettua una scelta", "Il criterio principale per la valutazione deve essere la sostenibilità a lungo termine."]
+      ],
+      "phrasalVerbs": [
+        ["andare a discapito di", "essere svantaggioso per qualcosa o qualcuno", "Uno sviluppo industriale incontrollato va spesso a discapito di aree protette."],
+        ["far fronte a", "affrontare una situazione difficile o una necessità", "Il piano deve far fronte a molteplici sfide ecologiche simultaneamente."],
+        ["venire meno", "cessare di esistere o non essere più rispettato", "Se le tutele vengono meno, l'intero ecosistema rischia il collasso."],
+        ["mettere in conto", "prevedere o considerare una possibilità", "Dobbiamo mettere in conto anche gli effetti imprevisti del cambiamento climatico."]
+      ],
+      "adjectives": [
+        ["omogeneo", "che presenta caratteristiche uniformi", "Non è possibile applicare un metodo omogeneo a ecosistemi così diversi."],
+        ["frammentato", "diviso in parti separate o non coerenti", "Un approccio frammentato impedisce una visione d'insieme efficace."],
+        ["preminente", "che ha un'importanza superiore rispetto ad altro", "La conservazione deve avere un ruolo preminente in ogni decisione politica."],
+        ["irrimediabile", "che non può essere riparato o corretto", "La perdita di una specie selvatica è un danno irrimediabile per la natura."]
+      ],
+      "connectors": [
+        ["di conseguenza", "per effetto di quanto detto precedentemente", "Le risorse sono scarse; di conseguenza, dobbiamo dare priorità agli interventi urgenti."],
+        ["tuttavia", "introduce un'opposizione o una limitazione", "Il progetto è ambizioso; tuttavia, mancano i fondi necessari per realizzarlo."],
+        ["inoltre", "aggiunge un'informazione ulteriore", "Il piano riduce le emissioni; inoltre, favorisce la mobilità sostenibile."],
+        ["al contrario", "introduce una contrapposizione netta", "Non dobbiamo ignorare i rischi; al contrario, vanno analizzati con rigore."]
+      ]
+    },
+    "models": {
+      "a": [
+        "L'adozione di un punteggio aggregato rappresenta la scelta più razionale quando l'obiettivo è monitorare la tendenza generale della salute ambientale. Attraverso un sistema di pesi ponderati, possiamo sintetizzare dati complessi in un unico indicatore di performance.",
+        "Questo metodo permette di bilanciare le criticità, evitando che il **deterioramento** di una piccola area oscuri i progressi significativi compiuti altrove. **Di conseguenza**, le autorità possono comunicare i risultati in modo chiaro e comprensibile a tutta la cittadinanza.",
+        "In definitiva, preferisco questo modello perché facilita una gestione strategica delle risorse. Quando i guadagni superano le perdite, il punteggio aggregato riflette un miglioramento reale, rendendo la pianificazione un processo dinamico e orientato al raggiungimento di obiettivi macroscopici."
+      ],
+      "b": [
+        "Ritengo che mantenere soglie minime separate per ogni habitat sia l'unico modo per garantire una protezione efficace. Un punteggio aggregato rischia di nascondere situazioni critiche, permettendo che il degrado di un ecosistema specifico venga mascherato da successi in altri settori.",
+        "Fissare dei limiti inderogabili significa riconoscere che la **biodiversità** non è interscambiabile. Se un bosco o un fiume scendono sotto la soglia critica, l'intervento deve essere immediato, indipendentemente dai risultati ottenuti in altre zone della regione.",
+        "In sintesi, la mia scelta ricade su questo approccio perché impedisce che la **compensazione** diventi una scusa per l'inazione. La protezione di ogni singolo habitat è un obbligo morale e tecnico che non può essere sacrificato in nome di una media statistica."
+      ],
+      "conditional": [
+        "Scelgo il punteggio aggregato quando gli habitat sono simili e le interazioni ecologiche permettono una reale **compensazione**. In questi casi, un sistema di pesi ben definito aiuta a gestire le priorità senza bloccare ogni iniziativa a causa di singole fluttuazioni locali.",
+        "**Al contrario**, opto per le soglie minime quando ci troviamo di fronte a ecosistemi unici o fragili, dove la perdita di una componente non può essere compensata da un guadagno altrove. Qui, il rischio di un danno **irrimediabile** impone un rigore assoluto.",
+        "Il fattore decisivo è la natura dell'impatto: se l'ecosistema è resiliente e interconnesso, l'aggregazione è utile; se invece la perdita è irreversibile, le soglie minime sono l'unico **criterio** accettabile per evitare il collasso ambientale."
+      ]
+    }
+  },
+  {
+    "slug": "public-contract-low-bid-or-life-cycle",
+    "title": "Appalti pubblici: prezzo minimo o costo del ciclo di vita?",
+    "prompt": "Un ente pubblico deve acquistare attrezzature che utilizzerà per dieci anni. È meglio selezionare l'offerta più economica che soddisfa i requisiti minimi, oppure includere i costi di riparazione, inattività e sostituzione in un modello di punteggio pubblicato?",
+    "conditionalPrompt": "Decidi quali prove possono supportare una stima a lungo termine e come comportarsi quando le offerte sono difficili da confrontare.",
+    "options": [
+      {
+        "label": "Prezzo minimo",
+        "description": "Fissare standard minimi di qualità e scegliere l'offerta meno costosa che li rispetta."
+      },
+      {
+        "label": "Costo del ciclo di vita",
+        "description": "Valutare il costo d'acquisto insieme alle prove di riparazioni attese, disponibilità e sostituzione."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["manutenzione", "l'insieme delle operazioni per mantenere un bene in buono stato", "Una corretta manutenzione previene guasti costosi e prolunga la vita utile."],
+        ["affidabilità", "la capacità di un sistema di funzionare senza interruzioni", "L'affidabilità dei macchinari è fondamentale per garantire la continuità del servizio."],
+        ["onere", "un peso o una responsabilità, spesso di natura economica", "I costi di gestione rappresentano un onere significativo per il bilancio pubblico."],
+        ["trasparenza", "la chiarezza e l'accessibilità delle procedure decisionali", "La trasparenza nelle gare d'appalto è essenziale per prevenire la corruzione."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro a", "affrontare una situazione o un costo", "Scegliere prodotti economici significa andare incontro a spese di riparazione elevate."],
+        ["venire a galla", "emergere o diventare evidente", "I difetti di progettazione vengono a galla solo dopo anni di utilizzo."],
+        ["tirare le somme", "fare un bilancio conclusivo di una situazione", "Dopo dieci anni, è necessario tirare le somme sull'efficacia dell'investimento."],
+        ["farsi carico di", "assumersi la responsabilità di qualcosa", "L'ente deve farsi carico di una pianificazione finanziaria a lungo termine."]
+      ],
+      "adjectives": [
+        ["dispendioso", "che richiede una spesa elevata", "Un acquisto apparentemente economico può rivelarsi molto dispendioso nel tempo."],
+        ["prevedibile", "che si può anticipare o stimare", "Il tasso di guasto di questi componenti è facilmente prevedibile."],
+        ["obsoleto", "che non è più attuale o efficiente", "Evitiamo di acquistare tecnologie che diventeranno obsolete in pochi mesi."],
+        ["rigoroso", "che segue regole precise e severe", "Abbiamo bisogno di un metodo rigoroso per confrontare offerte diverse."]
+      ],
+      "connectors": [
+        ["tuttavia", "introduce un'opposizione o una limitazione", "Il prezzo è basso; tuttavia, la qualità dei materiali è discutibile."],
+        ["inoltre", "aggiunge un'informazione ulteriore", "Il modello riduce i costi; inoltre, garantisce una maggiore efficienza operativa."],
+        ["pertanto", "indica una conseguenza logica", "La qualità è insufficiente; pertanto, dobbiamo scartare questa proposta."],
+        ["d'altronde", "introduce una considerazione che rafforza quanto detto", "Dobbiamo risparmiare; d'altronde, non possiamo ignorare i costi futuri."]
+      ]
+    },
+    "models": {
+      "a": [
+        "La scelta dell'offerta più economica, purché conforme a standard minimi rigorosi, garantisce la massima **trasparenza** e semplicità nella gestione degli appalti pubblici. Questo approccio evita valutazioni soggettive che potrebbero influenzare l'esito della gara.",
+        "Concentrarsi sul prezzo d'acquisto permette di rispettare i vincoli di bilancio immediati. Se i requisiti tecnici sono ben definiti, il rischio di acquistare prodotti di scarsa qualità è ridotto, garantendo comunque un livello di **affidabilità** accettabile per l'ente.",
+        "In definitiva, preferisco questo metodo perché è oggettivo e facile da verificare. Quando le specifiche sono chiare, non c'è bisogno di stime complesse sui costi futuri; **pertanto**, il prezzo minimo rimane il criterio più solido per una spesa pubblica responsabile."
+      ],
+      "b": [
+        "Scegliere basandosi sul costo del ciclo di vita è l'unico modo per evitare spese impreviste e oneri di **manutenzione** eccessivi. Spesso, un prodotto economico si rivela molto **dispendioso** nel lungo periodo a causa di guasti frequenti e inattività.",
+        "Valutare l'**affidabilità** e i costi di sostituzione permette di fare una scelta davvero conveniente. **Inoltre**, questo metodo incoraggia i fornitori a proporre soluzioni durevoli, poiché sanno che la loro offerta sarà giudicata sulla base della performance reale.",
+        "In sintesi, la mia scelta ricade su questo modello perché guarda oltre il momento dell'acquisto. Dobbiamo **farsi carico di** una visione a lungo termine; **pertanto**, investire in qualità oggi significa risparmiare risorse preziose domani, evitando sprechi evitabili."
+      ],
+      "conditional": [
+        "Sceglierei il prezzo minimo per un prodotto standardizzato, se il collaudo consente di verificare l’**affidabilità** prima della consegna. Con requisiti **rigorosi** e un mercato in cui sostituire il prodotto è semplice, una stima dettagliata della vita utile rischia di aggiungere burocrazia.",
+        "Per un macchinario essenziale, **tuttavia**, darei più peso al ciclo di vita. La **manutenzione** può diventare un **onere** rilevante se l’ente deve **farsi carico di** riparazioni e periodi di fermo. Chiederei dati sulle riparazioni e impegni sulla disponibilità dei ricambi.",
+        "Il criterio è quanto il costo futuro sia **prevedibile** e documentabile. Se le stime non sono confrontabili, preferirei fissare requisiti più severi e valutare il prezzo. Se si possono verificare, una valutazione sul ciclo di vita offre maggiore **trasparenza**."
+      ]
+    }
+  },
+  {
+    "slug": "centralise-public-service-or-local-offices",
+    "title": "Servizi pubblici: centro regionale o uffici locali?",
+    "prompt": "Diverse città condividono un servizio di consulenza pubblica. È meglio centralizzare il personale specializzato in un centro regionale o mantenere piccoli uffici locali che gestiscono i casi di routine e rimandano quelli difficili?",
+    "conditionalPrompt": "Decidi dove le economie di scala sono importanti e dove alcune decisioni richiedono conoscenza locale o accesso diretto.",
+    "options": [
+      {
+        "label": "Centro regionale",
+        "description": "Accorpare il personale specializzato e usare contatti telefonici o video per le città senza un ufficio vicino."
+      },
+      {
+        "label": "Uffici locali",
+        "description": "Mantenere l'accesso diretto e un team locale più piccolo, inviando i casi complessi a un team di esperti quando necessario."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["accessibilità", "la facilità con cui si può usufruire di un servizio", "L'accessibilità è fondamentale per garantire che tutti i cittadini ricevano assistenza."],
+        ["specializzazione", "l'approfondimento di competenze in un settore specifico", "La specializzazione del personale permette di risolvere anche i problemi più complessi."],
+        ["efficienza", "la capacità di ottenere risultati ottimali con il minimo spreco", "Il nuovo modello organizzativo punta a migliorare l'efficienza dei servizi pubblici."],
+        ["prossimità", "la vicinanza fisica tra il servizio e l'utente", "La prossimità degli uffici locali aumenta la fiducia dei cittadini nelle istituzioni."]
+      ],
+      "phrasalVerbs": [
+        ["andare a buon fine", "avere successo o concludersi positivamente", "Speriamo che il nuovo sistema di consulenza vada a buon fine per tutti."],
+        ["farsi avanti", "proporsi o manifestare la propria disponibilità", "Molti esperti si sono fatti avanti per collaborare con il centro regionale."],
+        ["venire incontro a", "soddisfare le esigenze di qualcuno", "Dobbiamo venire incontro a chi ha difficoltà a usare strumenti digitali."],
+        ["tirare le fila", "organizzare o gestire le fasi finali di un progetto", "Il centro regionale deve tirare le fila di tutte le richieste complesse."]
+      ],
+      "adjectives": [
+        ["capillare", "diffuso in modo esteso e dettagliato sul territorio", "Una rete capillare di uffici garantisce un supporto costante ai cittadini."],
+        ["remoto", "che avviene a distanza, spesso tramite tecnologia", "Il supporto remoto è utile, ma non sostituisce il contatto umano."],
+        ["burocratico", "relativo a procedure amministrative complesse", "Dobbiamo semplificare il processo burocratico per velocizzare le pratiche."],
+        ["tempestivo", "che avviene nel momento opportuno e senza ritardi", "Un intervento tempestivo può prevenire il peggioramento di molte situazioni."]
+      ],
+      "connectors": [
+        ["tuttavia", "introduce un'opposizione o una limitazione", "Il centro è efficiente; tuttavia, perde il contatto con la realtà locale."],
+        ["inoltre", "aggiunge un'informazione ulteriore", "La centralizzazione riduce i costi; inoltre, facilita la formazione continua."],
+        ["pertanto", "indica una conseguenza logica", "La distanza è un ostacolo; pertanto, dobbiamo potenziare i servizi digitali."],
+        ["al contrario", "introduce una contrapposizione netta", "Non dobbiamo isolare gli utenti; al contrario, dobbiamo favorire l'interazione."]
+      ]
+    },
+    "models": {
+      "a": [
+        "La centralizzazione del personale specializzato in un centro regionale rappresenta la soluzione più efficace per garantire un servizio di alta qualità. Accorpare le risorse permette di gestire casi complessi con maggiore competenza, migliorando l'**efficienza** complessiva dell'ente.",
+        "Sebbene il contatto **remoto** possa sembrare meno personale, esso garantisce una risposta tempestiva e uniforme per tutti i cittadini, indipendentemente dalla loro posizione geografica. **Inoltre**, la formazione continua degli esperti è facilitata dalla condivisione costante di conoscenze.",
+        "In definitiva, preferisco questo modello perché ottimizza le risorse. Quando la **specializzazione** è il fattore chiave, la centralizzazione è la scelta obbligata; **pertanto**, dobbiamo investire in tecnologie che rendano il supporto **remoto** accessibile a chiunque."
+      ],
+      "b": [
+        "Ritengo che mantenere uffici locali sia essenziale per garantire la **prossimità** e la fiducia dei cittadini. Un servizio pubblico deve essere radicato nel territorio per comprendere appieno le esigenze specifiche di ogni comunità, che spesso sfuggono a una gestione centralizzata.",
+        "Gli uffici locali possono gestire agevolmente le pratiche di routine, lasciando al team di esperti solo i casi realmente complessi. Questo approccio non solo migliora l'**accessibilità**, ma permette anche di risolvere i problemi in modo più rapido e mirato.",
+        "In sintesi, la mia scelta ricade su questo modello perché valorizza la conoscenza locale. La burocrazia non può sostituire il rapporto umano; **pertanto**, dobbiamo preservare una rete **capillare** che faccia sentire il cittadino ascoltato e supportato."
+      ],
+      "conditional": [
+        "Scelgo il centro regionale quando le competenze richieste sono altamente tecniche e raramente necessarie a livello locale. In questi casi, l'**efficienza** della **specializzazione** supera i benefici della vicinanza fisica, rendendo la centralizzazione la scelta più logica.",
+        "**Al contrario**, opto per gli uffici locali quando il servizio richiede una comprensione profonda del contesto sociale. Qui, la **prossimità** è fondamentale per gestire situazioni delicate; **pertanto**, il personale locale deve avere la priorità per mantenere il legame con l'utenza.",
+        "Il fattore decisivo è la natura del caso: se la procedura è standardizzata, la centralizzazione è preferibile; se invece la decisione richiede sensibilità locale, gli uffici di **prossimità** sono indispensabili per un intervento efficace."
+      ]
+    }
+  },
+  {
+    "slug": "minority-language-archive-access",
+    "title": "Archivio linguistico: accesso pubblico o controllato?",
+    "prompt": "Un archivio linguistico contiene registrazioni fornite da parlanti che hanno dato motivi diversi per condividerle. È meglio rendere pubbliche tutte le registrazioni idonee per impostazione predefinita, o lasciare che i contributori e le organizzazioni comunitarie stabiliscano i termini di accesso per ogni gruppo?",
+    "conditionalPrompt": "Spiega quali permessi dovrebbero viaggiare con le registrazioni e quali dovrebbero richiedere un nuovo consenso.",
+    "options": [
+      {
+        "label": "Accesso pubblico",
+        "description": "Rendere il materiale condivisibile facile da trovare per studenti e ricercatori, con un processo per le obiezioni."
+      },
+      {
+        "label": "Accesso controllato",
+        "description": "Lasciare le decisioni di accesso ai contributori e ai custodi designati, aprendo al contempo le collezioni che invitano a un uso più ampio."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["consenso", "l'accordo espresso liberamente da qualcuno", "È necessario ottenere il consenso informato prima di pubblicare qualsiasi registrazione."],
+        ["patrimonio", "l'insieme dei beni culturali e linguistici di una comunità", "La tutela del patrimonio linguistico è un dovere verso le generazioni future."],
+        ["riservatezza", "la protezione di informazioni personali o sensibili", "Dobbiamo garantire la massima riservatezza per le testimonianze più intime."],
+        ["custode", "chi ha la responsabilità di proteggere e gestire qualcosa", "Le organizzazioni comunitarie agiscono come custodi della memoria collettiva."]
+      ],
+      "phrasalVerbs": [
+        ["venire a conoscenza di", "scoprire o apprendere un'informazione", "Molti ricercatori sono venuti a conoscenza di questo archivio tramite il web."],
+        ["farsi carico di", "assumersi la responsabilità di gestire qualcosa", "L'archivio deve farsi carico di proteggere i diritti dei parlanti."],
+        ["tirare fuori", "estrarre o rendere pubblico qualcosa di nascosto", "È importante tirare fuori dall'oblio le lingue meno parlate."],
+        ["andare d'accordo con", "essere in armonia con le intenzioni di qualcuno", "Le politiche di accesso devono andare d'accordo con i desideri dei contributori."]
+      ],
+      "adjectives": [
+        ["sensibile", "che richiede delicatezza o attenzione particolare", "Alcune registrazioni contengono dati sensibili che non possono essere diffusi."],
+        ["inclusivo", "che mira a coinvolgere tutti senza esclusioni", "Un archivio inclusivo permette a chiunque di esplorare la diversità linguistica."],
+        ["vincolante", "che impone un obbligo o una restrizione", "Il contratto firmato dai parlanti è vincolante per l'archivio."],
+        ["accessibile", "che può essere facilmente raggiunto o consultato", "Rendere il materiale accessibile è fondamentale per la ricerca scientifica."]
+      ],
+      "connectors": [
+        ["tuttavia", "introduce un'opposizione o una limitazione", "L'archivio è pubblico; tuttavia, alcune parti richiedono autorizzazioni speciali."],
+        ["inoltre", "aggiunge un'informazione ulteriore", "La condivisione aiuta la ricerca; inoltre, valorizza la lingua stessa."],
+        ["pertanto", "indica una conseguenza logica", "Il consenso è mancante; pertanto, dobbiamo limitare l'accesso ai file."],
+        ["d'altronde", "introduce una considerazione che rafforza quanto detto", "La protezione è prioritaria; d'altronde, la diffusione è lo scopo dell'archivio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Rendere tutte le registrazioni idonee pubbliche per impostazione predefinita è la scelta migliore per promuovere la ricerca e la conservazione linguistica. Un archivio aperto permette a studenti e studiosi di accedere facilmente a un **patrimonio** prezioso.",
+        "Sebbene la **riservatezza** sia importante, un processo chiaro per le obiezioni garantisce che i diritti dei parlanti siano rispettati senza bloccare l'accesso generale. **Inoltre**, la visibilità del materiale incoraggia la valorizzazione della lingua stessa.",
+        "In definitiva, preferisco questo modello perché è **inclusivo**. Quando il materiale è condivisibile, la diffusione è il fine ultimo; **pertanto**, dobbiamo rendere l'accesso il più semplice possibile, intervenendo solo in caso di reclami motivati."
+      ],
+      "b": [
+        "Ritengo che lasciare le decisioni di accesso ai contributori e alle organizzazioni comunitarie sia l'unico modo per rispettare la volontà di chi ha condiviso la propria storia. Ogni comunità ha il diritto di definire come il proprio **patrimonio** debba essere usato.",
+        "Questo approccio permette di aprire le collezioni che invitano a un uso pubblico, proteggendo al contempo le testimonianze più sensibili. **Inoltre**, il coinvolgimento dei custodi locali garantisce che l'accesso sia gestito in modo etico e consapevole.",
+        "In sintesi, la mia scelta ricade su questo modello perché è rispettoso. Il **consenso** non è un atto unico; **pertanto**, dobbiamo permettere ai contributori di mantenere il controllo, assicurando che l'archivio sia un luogo di fiducia e non solo di consumo."
+      ],
+      "conditional": [
+        "Scelgo l'accesso pubblico quando il materiale è stato esplicitamente donato per scopi educativi e non contiene informazioni sensibili. In questi casi, le restrizioni sono inutili e limitano solo la diffusione del **patrimonio** linguistico.",
+        "Al contrario, opto per l'accesso controllato quando le registrazioni contengono racconti personali o dati che potrebbero danneggiare i parlanti. Qui, il **consenso** deve viaggiare con il file; **pertanto**, ogni nuovo utilizzo richiede una verifica.",
+        "Il fattore decisivo è l'intenzione originale: se il parlante ha autorizzato la diffusione, l'accesso deve essere libero; se invece la registrazione è privata, il controllo deve rimanere nelle mani della comunità."
+      ]
+    }
+  },
+  {
+    "slug": "qualitative-research-data-sharing",
+    "title": "Ricerca qualitativa: pubblicazione aperta o accesso controllato?",
+    "prompt": "Un team di ricerca ha trascrizioni di interviste raccolte per uno studio sulla disoccupazione a lungo termine. Ha il permesso di condividere estratti anonimizzati a certe condizioni. È meglio pubblicare un ampio set accuratamente anonimizzato o dare accesso ai revisori approvati in un ambiente controllato?",
+    "conditionalPrompt": "Distingui tra verificare un'interpretazione ed esporre la storia di una persona, e stabilisci uno standard per una revisione accettabile.",
+    "options": [
+      {
+        "label": "Pubblicazione aperta",
+        "description": "Rendere visibile abbastanza evidenza affinché i lettori più ampi possano verificare l'interpretazione del team."
+      },
+      {
+        "label": "Accesso controllato",
+        "description": "Lasciare che i revisori approvati esaminino registrazioni più complete sotto restrizioni di copia e utilizzo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["anonimizzazione", "il processo di rimozione di dati identificativi da un documento", "L'anonimizzazione accurata è essenziale per proteggere l'identità degli intervistati."],
+        ["interpretazione", "l'analisi e la spiegazione dei dati raccolti", "Ogni interpretazione deve essere supportata da prove concrete tratte dalle interviste."],
+        ["riservatezza", "la protezione di informazioni personali o sensibili", "La riservatezza dei partecipanti deve essere garantita in ogni fase della ricerca."],
+        ["revisore", "chi esamina criticamente il lavoro di ricerca", "Il revisore ha il compito di verificare la solidità delle conclusioni raggiunte."]
+      ],
+      "phrasalVerbs": [
+        ["venire a galla", "emergere o diventare evidente", "I dettagli personali potrebbero venire a galla se l'anonimizzazione non è perfetta."],
+        ["farsi carico di", "assumersi la responsabilità di gestire qualcosa", "Il team deve farsi carico di proteggere le storie di vita raccolte."],
+        ["tirare fuori", "estrarre o rendere pubblico qualcosa di nascosto", "Dobbiamo tirare fuori le conclusioni principali senza esporre i singoli individui."],
+        ["andare d'accordo con", "essere in armonia con le intenzioni di qualcuno", "Le procedure di condivisione devono andare d'accordo con le norme etiche."]
+      ],
+      "adjectives": [
+        ["sensibile", "che richiede delicatezza o attenzione particolare", "Le interviste sulla disoccupazione trattano temi molto sensibili."],
+        ["rigoroso", "che segue regole precise e severe", "È necessario un metodo rigoroso per garantire la validità dei risultati."],
+        ["vincolante", "che impone un obbligo o una restrizione", "L'accordo di riservatezza è vincolante per tutti i revisori approvati."],
+        ["trasparente", "che è chiaro e facile da comprendere", "La ricerca deve essere trasparente per permettere una verifica indipendente."]
+      ],
+      "connectors": [
+        ["tuttavia", "introduce un'opposizione o una limitazione", "I dati sono utili; tuttavia, la protezione dei soggetti è prioritaria."],
+        ["inoltre", "aggiunge un'informazione ulteriore", "L'accesso controllato è sicuro; inoltre, permette un'analisi più approfondita."],
+        ["pertanto", "indica una conseguenza logica", "L'anonimizzazione è difficile; pertanto, preferiamo l'accesso controllato."],
+        ["d'altronde", "introduce una considerazione che rafforza quanto detto", "La scienza richiede verifica; d'altronde, non possiamo violare la privacy."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Pubblicare un ampio set di dati accuratamente anonimizzati è la scelta migliore per garantire la trasparenza della ricerca. Rendere visibile l'evidenza permette a una comunità più ampia di verificare l'**interpretazione** del team, rafforzando la validità scientifica dello studio.",
+        "Sebbene l'**anonimizzazione** richieda un lavoro **rigoroso**, è un compromesso necessario per bilanciare l'apertura dei dati con la protezione dei partecipanti. **Inoltre**, questo metodo rende la ricerca accessibile a chiunque senza barriere burocratiche.",
+        "In definitiva, preferisco questo modello perché promuove la scienza aperta. Quando l'evidenza è pubblica, la verifica è immediata; **pertanto**, dobbiamo investire tempo nell'**anonimizzazione** per permettere a tutti di testare le nostre conclusioni."
+      ],
+      "b": [
+        "Ritengo che dare accesso ai revisori approvati in un ambiente controllato sia l'unico modo per gestire dati così sensibili. Le storie di vita raccolte richiedono una protezione che la semplice **anonimizzazione** non può sempre garantire.",
+        "Questo metodo permette ai revisori di esaminare registrazioni più complete, comprendendo appieno il contesto senza esporre inutilmente l'identità dei partecipanti. **Inoltre**, le restrizioni sull'uso proteggono l'integrità delle testimonianze.",
+        "In sintesi, la mia scelta ricade su questo modello perché è etico. La verifica scientifica non deve passare per l'esposizione delle persone; **pertanto**, l'accesso controllato è lo standard più sicuro per mantenere la fiducia dei soggetti intervistati."
+      ],
+      "conditional": [
+        "Scelgo la pubblicazione aperta quando i dati sono stati raccolti in contesti pubblici e l'**anonimizzazione** è sufficiente a eliminare ogni rischio. In questi casi, la trasparenza è il valore principale e l'accesso deve essere libero.",
+        "Al contrario, opto per l'accesso controllato quando le interviste toccano temi intimi dove il rischio di identificazione è alto. Qui, verificare l'**interpretazione** è importante, ma non deve mai avvenire a discapito della storia personale.",
+        "Il fattore decisivo è il rischio di esposizione: se l'**anonimizzazione** è sicura, la pubblicazione è preferibile; se invece il rischio è reale, l'accesso controllato è l'unico standard accettabile per una revisione etica."
+      ]
+    }
+  },
+  {
+    "slug": "recognition-original-or-replication",
+    "title": "Premiare l'intuizione o la verifica?",
+    "prompt": "Un'associazione di ricerca deve assegnare un unico premio. Un gruppo ha prodotto una scoperta sorprendente; un altro ha confermato indipendentemente il dato, chiarendone i limiti. Quale contributo va premiato?",
+    "conditionalPrompt": "Spiega come distinguere il merito di chi ha aperto una linea di ricerca da quello di chi ne ha reso affidabili i risultati.",
+    "options": [
+      {
+        "label": "Priorità all'intuizione",
+        "description": "Premiare chi ha identificato una possibilità importante prima di chiunque altro."
+      },
+      {
+        "label": "Priorità alla verifica",
+        "description": "Riconoscere chi ha testato l'ipotesi stabilendo cosa significhi realmente."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["intuizione", "capacità di comprendere immediatamente senza ragionamento logico", "La sua intuizione si è rivelata fondamentale per risolvere il problema."],
+        ["rigore", "precisione estrema e severità metodologica", "Il rigore scientifico impone di verificare ogni singola variabile."],
+        ["avanguardia", "posizione di chi guida un movimento o una ricerca", "Il laboratorio si trova all'avanguardia nella ricerca genetica."],
+        ["limite", "confine o restrizione di validità", "Dobbiamo riconoscere il limite di questa teoria sperimentale."]
+      ],
+      "phrasalVerbs": [
+        ["mettere in luce", "evidenziare o chiarire un aspetto", "L'esperimento ha messo in luce contraddizioni inaspettate."],
+        ["andare a fondo", "analizzare in modo approfondito", "Bisogna andare a fondo della questione prima di trarre conclusioni."],
+        ["farsi strada", "affermarsi progressivamente", "Questa nuova metodologia sta facendosi strada nel settore accademico."],
+        ["venire meno", "cessare di esistere o di essere valido", "Le certezze iniziali sono venute meno dopo i nuovi test."]
+      ],
+      "adjectives": [
+        ["pionieristico", "che apre nuove strade o campi di studio", "Il lavoro pionieristico del gruppo ha cambiato il paradigma."],
+        ["metodologico", "relativo al metodo di ricerca", "Il dibattito metodologico è essenziale per la validità dei dati."],
+        ["indiscutibile", "che non può essere messo in dubbio", "Il successo dell'esperimento appare ormai indiscutibile."],
+        ["preliminare", "che avviene prima di un'azione principale", "I risultati preliminari suggeriscono una direzione promettente."]
+      ],
+      "connectors": [
+        ["di conseguenza", "per effetto di quanto detto", "La scoperta era inattesa; di conseguenza, abbiamo rivisto i calcoli."],
+        ["tuttavia", "introduce una restrizione o opposizione", "Il progetto è ambizioso; tuttavia, mancano i fondi necessari."],
+        ["inoltre", "aggiunge un'informazione supplementare", "Il metodo è rapido; inoltre, garantisce una precisione elevata."],
+        ["al contrario", "introduce un'opposizione netta", "Non è un fallimento; al contrario, è un passo avanti."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Premiare chi ha avuto l'**intuizione** originale significa riconoscere il valore del rischio intellettuale. Senza quel primo passo **pionieristico**, la ricerca non avrebbe mai preso il via, lasciando il campo in uno stato di stasi metodologica.",
+        "**Tuttavia**, il merito di chi ha confermato il dato non va sottovalutato, poiché il **rigore** è ciò che trasforma una semplice idea in scienza. Nonostante ciò, l'innovazione pura resta il motore principale del progresso accademico.",
+        "**Di conseguenza**, scelgo di premiare l'**intuizione** perché essa rappresenta l'atto creativo fondamentale. Sebbene la verifica sia necessaria, il merito di aver individuato una possibilità inedita rimane il contributo più significativo per la comunità scientifica."
+      ],
+      "b": [
+        "Riconoscere il gruppo che ha testato l'ipotesi significa valorizzare la solidità del metodo scientifico. Spesso le intuizioni iniziali sono fragili e solo un lavoro di verifica attento permette di distinguere la verità dall'errore.",
+        "Sebbene l'**intuizione** sia importante, essa rischia di restare sterile senza una conferma empirica. Il gruppo che ha chiarito i limiti della scoperta ha fornito un servizio indispensabile, rendendo il dato finalmente utilizzabile per altri ricercatori.",
+        "**Inoltre**, scelgo la verifica perché il progresso dipende dalla capacità di rendere i risultati indiscutibili. Il contributo di chi consolida la conoscenza è più prezioso di quello di chi si limita a proporre una teoria non ancora validata."
+      ],
+      "conditional": [
+        "Se l'obiettivo è stimolare la creatività, allora premiare l'**intuizione** è la scelta corretta. In questo caso, il riconoscimento serve a incoraggiare i ricercatori a esplorare territori ignoti, accettando il rischio che le loro idee iniziali possano essere incomplete.",
+        "**Al contrario**, se la priorità è la qualità della letteratura scientifica, allora bisogna premiare la verifica. Questo approccio è preferibile quando la comunità ha bisogno di certezze solide per costruire nuove teorie su basi stabili e condivise.",
+        "In definitiva, il fattore decisivo è lo stadio di sviluppo della disciplina. Se il campo è nuovo, va premiata l'**intuizione**; se il campo è maturo, va premiata la verifica, poiché solo così si garantisce il **rigore** necessario per il progresso."
+      ]
+    }
+  },
+  {
+    "slug": "preregister-all-or-separate-analysis-tracks",
+    "title": "Pianificazione o esplorazione?",
+    "prompt": "Una rivista scientifica vuole che i lettori sappiano quali risultati fossero previsti prima dell'analisi dei dati. Dovrebbe richiedere che ogni analisi sia pianificata in anticipo o pubblicare il lavoro esplorativo in una sezione separata?",
+    "conditionalPrompt": "Spiega come una rivista possa accogliere la scoperta senza che una nuova spiegazione venga presentata come una previsione riuscita.",
+    "options": [
+      {
+        "label": "Pre-registrazione obbligatoria",
+        "description": "Chiedere agli autori di registrare domande e passaggi di analisi prima di vedere i risultati."
+      },
+      {
+        "label": "Percorsi separati",
+        "description": "Pubblicare sia lavori pianificati che esplorativi, richiedendo agli autori di distinguere le rivendicazioni."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["trasparenza", "chiarezza e onestà nel processo", "La trasparenza dei dati è fondamentale per la fiducia dei lettori."],
+        ["previsione", "ipotesi formulata prima dell'osservazione", "La sua previsione si è rivelata corretta dopo l'analisi statistica."],
+        ["esplorazione", "ricerca senza ipotesi predefinite", "L'esplorazione dei dati ha rivelato correlazioni inaspettate."],
+        ["distorsione", "alterazione dei fatti o dei risultati", "Dobbiamo evitare ogni distorsione nell'interpretazione dei risultati."]
+      ],
+      "phrasalVerbs": [
+        ["venire a galla", "emergere o diventare evidente", "Nuovi dettagli sono venuti a galla durante la revisione."],
+        ["tenere conto di", "considerare un fattore", "Bisogna tenere conto di tutte le variabili nel modello."],
+        ["andare incontro a", "affrontare o subire una situazione", "Il progetto è andato incontro a molte difficoltà tecniche."],
+        ["fare capo a", "riferirsi a una fonte o autorità", "Dobbiamo fare capo a protocolli standardizzati per l'analisi."]
+      ],
+      "adjectives": [
+        ["rigoroso", "che segue regole precise", "Un approccio rigoroso garantisce la validità scientifica."],
+        ["esplicito", "chiaro e senza ambiguità", "È necessario un riferimento esplicito alla metodologia usata."],
+        ["attendibile", "che merita fiducia", "Solo un metodo attendibile può supportare queste conclusioni."],
+        ["predefinito", "stabilito in precedenza", "Il percorso predefinito limita la libertà di analisi."]
+      ],
+      "connectors": [
+        ["tuttavia", "introduce una restrizione", "Il metodo è valido; tuttavia, richiede molto tempo."],
+        ["inoltre", "aggiunge un punto", "Il sistema è sicuro; inoltre, è molto semplice da usare."],
+        ["pertanto", "di conseguenza", "I dati sono incompleti; pertanto, non possiamo decidere."],
+        ["d'altro canto", "introduce un punto di vista opposto", "La teoria è affascinante; d'altro canto, manca di prove."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Richiedere la pre-registrazione garantisce la massima **trasparenza**, evitando che gli autori adattino le ipotesi ai risultati ottenuti. Questo approccio **rigoroso** impedisce ogni **distorsione**, rendendo il processo di ricerca onesto e verificabile fin dall'inizio.",
+        "**Tuttavia**, questo metodo potrebbe limitare la creatività, poiché i ricercatori si sentono vincolati a un percorso **predefinito**. Nonostante ciò, la necessità di mantenere l'attendibilità dei risultati prevale sulla libertà esplorativa immediata.",
+        "**Pertanto**, scelgo la pre-registrazione obbligatoria perché protegge l'integrità scientifica. Sebbene la scoperta sia importante, è preferibile che ogni analisi sia pianificata, evitando che le conclusioni siano presentate come previsioni riuscite quando in realtà sono nate a posteriori."
+      ],
+      "b": [
+        "Pubblicare lavori esplorativi in percorsi separati permette di accogliere la scoperta senza sacrificare il rigore. In questo modo, gli autori possono esplorare i dati liberamente, purché dichiarino esplicitamente che si tratta di un'analisi non pianificata.",
+        "**D'altro canto**, la pre-registrazione rigida rischia di soffocare l'innovazione. Separare le tracce garantisce che il lettore sappia distinguere tra una **previsione** confermata e una correlazione emersa durante l'**esplorazione** dei dati.",
+        "**Inoltre**, scelgo i percorsi separati perché promuovono sia la scoperta che la chiarezza. Il fattore decisivo è l'onestà intellettuale: finché gli autori dichiarano la natura del lavoro, la scienza ne guadagna in ricchezza senza perdere in precisione."
+      ],
+      "conditional": [
+        "Se la rivista vuole evitare che le scoperte siano spacciate per previsioni, la soluzione è imporre una distinzione netta tra i due tipi di analisi. Il ricercatore deve dichiarare se l'ipotesi è nata prima o dopo aver visto i dati.",
+        "Al contrario, se si vuole incoraggiare l'**esplorazione**, bisogna permettere la pubblicazione di risultati non previsti, ma etichettandoli chiaramente come tali. Questo impedisce che una nuova spiegazione venga presentata come una **previsione** riuscita.",
+        "In definitiva, il fattore decisivo è la **trasparenza** della comunicazione. La rivista deve esigere che ogni analisi sia accompagnata da una nota esplicita sulla sua origine, garantendo che il lettore possa valutare correttamente la forza delle prove presentate."
+      ]
+    }
+  },
+  {
+    "slug": "university-composite-or-dashboard",
+    "title": "Classifica unica o dashboard?",
+    "prompt": "Un servizio informativo per studenti universitari deve decidere se pubblicare una classifica unica o una dashboard con indicatori separati. Quale scelta sosterrebbe meglio una decisione reale su dove studiare?",
+    "conditionalPrompt": "Spiega quando la semplificazione aiuta e quali assunzioni dovrebbero restare visibili se si usa un punteggio.",
+    "options": [
+      {
+        "label": "Punteggio unico",
+        "description": "Combinare le misure in un punteggio con pesi visibili e pubblicare l'ordine."
+      },
+      {
+        "label": "Dashboard separata",
+        "description": "Mostrare diverse dimensioni separatamente e lasciare che gli studenti scelgano cosa confrontare."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["criterio", "principio di giudizio", "Il criterio di selezione deve essere chiaro per tutti."],
+        ["ponderazione", "assegnazione di un peso specifico", "La ponderazione dei voti favorisce la ricerca rispetto alla didattica."],
+        ["complessità", "carattere di ciò che è composto da molte parti", "La complessità del sistema universitario richiede analisi dettagliate."],
+        ["autonomia", "capacità di decidere da soli", "Vogliamo garantire agli studenti l'autonomia nella scelta del percorso."]
+      ],
+      "phrasalVerbs": [
+        ["tenere in considerazione", "valutare un aspetto", "Bisogna tenere in considerazione anche i costi di vita."],
+        ["andare a scapito di", "causare un danno a qualcosa", "La rapidità non deve andare a scapito della qualità."],
+        ["fare luce su", "chiarire un aspetto oscuro", "Questi dati fanno luce su una realtà spesso ignorata."],
+        ["venire incontro a", "soddisfare un bisogno", "Il servizio deve venire incontro alle esigenze degli utenti."]
+      ],
+      "adjectives": [
+        ["sintetico", "che riassume in modo breve", "Un giudizio sintetico è utile ma spesso impreciso."],
+        ["trasparente", "chiaro e comprensibile", "Il processo di valutazione deve essere del tutto trasparente."],
+        ["eterogeneo", "composto da elementi diversi", "Il pubblico degli studenti è estremamente eterogeneo."],
+        ["arbitrario", "basato su una scelta soggettiva", "Il peso assegnato a questo indicatore appare arbitrario."]
+      ],
+      "connectors": [
+        ["infatti", "conferma quanto detto", "Il sistema è complesso; infatti, richiede una guida."],
+        ["tuttavia", "introduce un contrasto", "Il punteggio è comodo; tuttavia, nasconde molte differenze."],
+        ["pertanto", "conclusione logica", "I dati sono chiari; pertanto, la scelta è ovvia."],
+        ["d'altro canto", "punto di vista opposto", "La classifica è utile; d'altro canto, è limitante."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Pubblicare un punteggio unico con pesi visibili aiuta gli studenti a orientarsi rapidamente in un panorama universitario complesso. La semplificazione, **infatti**, è necessaria quando le informazioni sono troppe e rischiano di confondere l'utente meno esperto.",
+        "**Tuttavia**, bisogna essere consapevoli che ogni **ponderazione** è in parte arbitraria. Nonostante ciò, fornire un ordine chiaro è un servizio che viene incontro alla necessità di una decisione rapida, purché i criteri siano espliciti.",
+        "**Pertanto**, scelgo il punteggio unico perché la chiarezza sintetica è il valore principale. Sebbene si perdano dettagli, l'assunzione di base rimane visibile e lo studente può decidere se accettare o meno quel **criterio** di valutazione."
+      ],
+      "b": [
+        "Mostrare dimensioni separate in una dashboard permette agli studenti di esercitare la propria **autonomia**, confrontando solo ciò che è rilevante per le loro esigenze. Un punteggio unico rischia di andare a scapito della specificità, nascondendo le differenze reali.",
+        "**D'altro canto**, la **complessità** di una dashboard può spaventare chi cerca una risposta immediata. **Tuttavia**, è preferibile offrire uno strumento che rispetti la natura eterogenea delle università, piuttosto che forzare un confronto artificiale.",
+        "Inoltre, scelgo la dashboard perché fa luce su aspetti che un punteggio **sintetico** ignorerebbe. Il fattore decisivo è la capacità di fornire dati grezzi, permettendo allo studente di costruire il proprio **criterio** di scelta personale."
+      ],
+      "conditional": [
+        "Adotterei un indice **sintetico** come primo orientamento se il pubblico cercasse una selezione rapida. La **ponderazione** dovrebbe essere **trasparente**, dichiarata prima della pubblicazione e accompagnata dai valori delle singole dimensioni.",
+        "**D'altro canto**, darei priorità alla dashboard se i profili degli studenti fossero molto **eterogenei**. Uno potrebbe voler **tenere in considerazione** soprattutto il costo, un altro la qualità delle attività di laboratorio. Un punteggio medio potrebbe andare a scapito di entrambi.",
+        "Deciderei dopo aver osservato come gli studenti usano il servizio. Il punteggio ha valore se velocizza la ricerca senza orientare indebitamente il giudizio. Se occulta differenze decisive, una dashboard ben guidata tutela meglio l’**autonomia** di chi sceglie."
+      ]
+    }
+  },
+  {
+    "slug": "streaming-royalties-pool-or-listener",
+    "title": "Pool unico o ascolto diretto?",
+    "prompt": "Una piattaforma musicale sta rivedendo la distribuzione dei ricavi. Gli artisti dovrebbero essere pagati da un pool unico basato sulla quota di ascolti totali, o il contributo di ogni abbonato dovrebbe essere diviso tra gli artisti che ha effettivamente ascoltato?",
+    "conditionalPrompt": "Spiega di chi rappresenta il contributo la quota e quali distorsioni contano di più quando si implementa una regola.",
+    "options": [
+      {
+        "label": "Pool unico",
+        "description": "Allocare i ricavi in base alla quota di ascolti dell'artista su tutta la piattaforma."
+      },
+      {
+        "label": "Ascolto diretto",
+        "description": "Dividere il contributo di ogni ascoltatore tra gli artisti che ha effettivamente ascoltato."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["equità", "principio di giustizia distributiva", "L'equità nella distribuzione dei ricavi è una questione centrale."],
+        ["distorsione", "alterazione del valore reale", "Il sistema attuale crea una distorsione a favore dei grandi artisti."],
+        ["abbonamento", "pagamento periodico per un servizio", "Il costo dell'abbonamento dovrebbe riflettere i gusti dell'utente."],
+        ["trasparenza", "chiarezza nel funzionamento", "La trasparenza dei pagamenti è richiesta da molti musicisti."]
+      ],
+      "phrasalVerbs": [
+        ["andare a favore di", "favorire un gruppo", "Questo modello va a favore di chi ha milioni di ascolti."],
+        ["fare capo a", "riferirsi a un'entità", "I pagamenti devono fare capo a criteri di consumo reale."],
+        ["venire meno", "cessare di essere valido", "Il principio di solidarietà è venuto meno con questo nuovo sistema."],
+        ["tenere conto di", "considerare un fattore", "Dobbiamo tenere conto di tutti gli artisti coinvolti."]
+      ],
+      "adjectives": [
+        ["proporzionale", "che segue una proporzione", "Il compenso deve essere proporzionale all'ascolto effettivo."],
+        ["arbitrario", "basato su una scelta soggettiva", "Un criterio arbitrario penalizza gli artisti indipendenti."],
+        ["complessivo", "che riguarda l'insieme", "Il ricavo complessivo è diviso tra tutti gli aventi diritto."],
+        ["diretto", "senza intermediari", "Un rapporto diretto tra fan e artista è più gratificante."]
+      ],
+      "connectors": [
+        ["infatti", "conferma quanto detto", "Il sistema è ingiusto; infatti, premia solo i grandi nomi."],
+        ["tuttavia", "introduce un contrasto", "Il modello è semplice; tuttavia, è poco equo."],
+        ["pertanto", "conclusione logica", "I dati sono chiari; pertanto, dobbiamo cambiare rotta."],
+        ["d'altro canto", "punto di vista opposto", "Il pool è efficiente; d'altro canto, ignora le preferenze individuali."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Allocare i ricavi in base alla quota di ascolti complessiva è il metodo più efficiente per gestire milioni di transazioni. Questo sistema, **infatti**, garantisce una distribuzione rapida e **proporzionale**, evitando la complessità di calcoli individuali per ogni singolo abbonato.",
+        "**Tuttavia**, bisogna ammettere che questo modello va a favore dei grandi artisti, creando una **distorsione** che penalizza le nicchie. Nonostante ciò, la semplicità operativa del pool unico rimane un vantaggio difficile da ignorare per la piattaforma.",
+        "**Pertanto**, scelgo il pool unico perché la stabilità del sistema è la priorità. Sebbene l'**equità** individuale sia importante, il fattore decisivo è l'efficienza: il contributo dell'abbonato finisce in un sistema che sostiene l'intero ecosistema musicale."
+      ],
+      "b": [
+        "Dividere il contributo di ogni ascoltatore tra gli artisti che ha effettivamente ascoltato è la scelta più equa. Questo modello garantisce che il denaro dell'abbonato vada direttamente a chi ha scelto, eliminando ogni **distorsione** causata dal peso dei grandi numeri.",
+        "**D'altro canto**, implementare questo sistema è molto più complesso e costoso. **Tuttavia**, è necessario se vogliamo che il rapporto tra fan e artista sia autentico, evitando che il consumo di massa oscuri le preferenze individuali.",
+        "Inoltre, scelgo l'ascolto **diretto** perché il fattore decisivo è la coerenza tra pagamento e consumo. Il contributo dell'abbonato rappresenta una scelta consapevole; **pertanto**, è giusto che i ricavi riflettano esattamente tale preferenza, senza mediazioni arbitrarie."
+      ],
+      "conditional": [
+        "Il contributo dell'**abbonamento** rappresenta un impegno economico che dovrebbe essere legato alle scelte dell'utente. Se si vuole rispettare questa volontà, il modello **diretto** è l'unico che garantisce che il denaro arrivi a chi è stato realmente ascoltato.",
+        "Al contrario, se si ritiene che la piattaforma sia un bene comune, allora il pool unico è preferibile. In questo caso, le distorsioni contano meno della capacità di sostenere l'intero mercato musicale, anche a scapito di una precisione individuale.",
+        "In definitiva, il fattore decisivo è la natura del servizio: se è un mercato di preferenze individuali, va scelto l'ascolto **diretto**; se è un servizio di utilità collettiva, va scelto il pool unico, accettando le conseguenti iniquità distributive."
+      ]
+    }
+  },
+  {
+    "slug": "online-article-corrections-versioning",
+    "title": "Correzione o versione originale?",
+    "prompt": "Un giornale online scopre che un dettaglio centrale in un articolo molto condiviso è errato. Dovrebbe correggere il testo pubblicato mostrando cosa è cambiato, o preservare la dicitura originale con una correzione prominente allegata?",
+    "conditionalPrompt": "Spiega quali versioni devono restare accessibili e come impedire a un vecchio errore di viaggiare senza la sua correzione.",
+    "options": [
+      {
+        "label": "Testo aggiornato",
+        "description": "Dare ai lettori la versione accurata e rivelare la modifica con tempo e motivo."
+      },
+      {
+        "label": "Testo originale",
+        "description": "Mantenere la dicitura apparsa e inserire la correzione in modo prominente a fianco."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["integrità", "onestà e coerenza del testo", "L'integrità dell'informazione è il pilastro del giornalismo."],
+        ["trasparenza", "chiarezza nel processo di modifica", "La trasparenza sulle correzioni aumenta la fiducia dei lettori."],
+        ["versione", "forma specifica di un testo", "Dobbiamo conservare ogni versione dell'articolo per la cronaca."],
+        ["errore", "inesattezza nel contenuto", "Un errore centrale può minare la credibilità dell'intera testata."]
+      ],
+      "phrasalVerbs": [
+        ["venire a galla", "emergere dopo un'indagine", "La verità è venuta a galla dopo la revisione dei fatti."],
+        ["tenere traccia di", "registrare le modifiche", "È fondamentale tenere traccia di ogni cambiamento apportato."],
+        ["andare incontro a", "affrontare le conseguenze", "Il giornale deve andare incontro alle richieste di rettifica."],
+        ["fare capo a", "riferirsi a una fonte", "Le correzioni devono fare capo a prove documentate."]
+      ],
+      "adjectives": [
+        ["prominente", "che si nota facilmente", "La correzione deve essere prominente per non passare inosservata."],
+        ["accurato", "privo di errori", "Un giornalismo accurato è essenziale in un'epoca di fake news."],
+        ["originale", "che è apparso per primo", "Il testo originale va conservato per motivi di archiviazione."],
+        ["accessibile", "facilmente consultabile", "Ogni versione deve restare accessibile al pubblico."]
+      ],
+      "connectors": [
+        ["tuttavia", "introduce una restrizione", "L'aggiornamento è utile; tuttavia, cancella la prova dell'errore."],
+        ["inoltre", "aggiunge un punto", "La correzione è chiara; inoltre, spiega il motivo dell'errore."],
+        ["pertanto", "conclusione logica", "L'errore è grave; pertanto, va segnalato con chiarezza."],
+        ["d'altro canto", "punto di vista opposto", "La modifica è necessaria; d'altro canto, altera la storia."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Aggiornare il testo garantisce che i lettori attuali abbiano sempre accesso all'informazione accurata. La **trasparenza** è mantenuta rivelando la modifica, il tempo e il motivo, permettendo così di correggere l'**errore** senza creare confusione nel flusso informativo.",
+        "**Tuttavia**, questo metodo altera la **versione** **originale**, che è un documento storico. Nonostante ciò, la responsabilità verso il lettore odierno prevale sulla necessità di conservare il testo errato come testimonianza del passato.",
+        "**Pertanto**, scelgo il testo aggiornato perché la precisione dell'informazione è il valore supremo. Sebbene la storia vada rispettata, è essenziale che l'**errore** non continui a circolare, garantendo che ogni lettore trovi subito la verità dei fatti."
+      ],
+      "b": [
+        "Preservare la dicitura **originale** con una correzione **prominente** è l'unico modo per mantenere l'**integrità** del documento. In questo modo, il lettore vede esattamente cosa è stato scritto e come è stato corretto, evitando ogni sospetto di manipolazione.",
+        "**D'altro canto**, lasciare l'**errore** nel testo può indurre in inganno chi legge velocemente. **Tuttavia**, è preferibile rischiare questo inconveniente piuttosto che cancellare le tracce di ciò che è apparso inizialmente, garantendo la **trasparenza** storica.",
+        "**Inoltre**, scelgo il testo **originale** perché la storia del giornalismo deve essere onesta. Il fattore decisivo è la tracciabilità: l'**errore** deve restare visibile, ma sempre accompagnato dalla sua correzione, impedendo che viaggi da solo senza smentita."
+      ],
+      "conditional": [
+        "Per impedire che un **errore** viaggi senza correzione, la soluzione è legare indissolubilmente la rettifica al contenuto **originale**. Ogni **versione** deve restare **accessibile**, ma la correzione deve essere la prima cosa che il lettore vede.",
+        "Al contrario, se si preferisce l'aggiornamento, bisogna creare un sistema di versioning che permetta di consultare la storia delle modifiche. In questo modo, l'**integrità** dell'informazione è salva e il lettore può verificare l'evoluzione del testo.",
+        "In definitiva, il fattore decisivo è la visibilità della correzione. Che si scelga di aggiornare o di mantenere, l'importante è che il lettore non possa mai visualizzare l'**errore** senza essere immediatamente informato della sua inesattezza."
+      ]
+    }
+  },
+  {
+    "slug": "official-place-names-one-or-parallel",
+    "title": "Nomi ufficiali: unificazione o bilinguismo?",
+    "prompt": "Un ente di trasporto sta aggiornando le mappe in un'area dove molte fermate hanno sia nomi ufficiali ampiamente utilizzati che nomi usati da una comunità linguistica locale. È meglio usare un'etichetta standard o mostrare entrambi i nomi ovunque lo spazio lo permetta?",
+    "conditionalPrompt": "Decidi quando la coerenza è fondamentale e quando escludere un nome renderebbe un servizio pubblico meno riconoscibile.",
+    "options": [
+      {
+        "label": "Nome di riferimento unico",
+        "description": "Utilizzare un solo nome su insegne, mappe e annunci audio, includendo gli altri in un elenco ricercabile."
+      },
+      {
+        "label": "Visualizzazione bilingue",
+        "description": "Mostrare entrambi i nomi quando possibile e programmare gli annunci affinché riflettano il cambiamento."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["coerenza", "rispondenza logica tra le parti", "La coerenza del progetto garantisce una comunicazione efficace."],
+        ["segnaletica", "insieme dei segnali e delle indicazioni", "La segnaletica stradale deve essere chiara per tutti i cittadini."],
+        ["fruibilità", "possibilità di utilizzare un servizio", "La fruibilità dei trasporti pubblici dipende dalla chiarezza delle informazioni."],
+        ["toponomastica", "studio dei nomi dei luoghi", "La toponomastica locale riflette la storia profonda del territorio."]
+      ],
+      "phrasalVerbs": [
+        ["far capo a", "dipendere da o riferirsi a", "Tutti gli utenti devono far capo a un unico sistema informativo."],
+        ["venire incontro a", "soddisfare le esigenze di qualcuno", "È necessario venire incontro a chi parla lingue diverse."],
+        ["andare a discapito di", "causare un danno o una perdita", "La semplificazione non deve andare a discapito della precisione."],
+        ["tenere conto di", "considerare attentamente", "Bisogna tenere conto di ogni sfumatura culturale."]
+      ],
+      "adjectives": [
+        ["univoco", "che ha un solo significato o forma", "Un sistema univoco evita qualsiasi confusione tra i passeggeri."],
+        ["inclusivo", "che accoglie e integra tutti", "Un approccio inclusivo valorizza le identità linguistiche locali."],
+        ["capillare", "molto diffuso e dettagliato", "La rete dei trasporti richiede una segnaletica capillare."],
+        ["ambiguo", "che può essere interpretato in modi diversi", "Un messaggio ambiguo crea disorientamento negli utenti."]
+      ],
+      "connectors": [
+        ["d'altronde", "peraltro, inoltre", "D'altronde, la chiarezza è un requisito essenziale."],
+        ["a patto che", "alla condizione che", "Accetto la proposta a patto che sia rispettata la norma."],
+        ["di conseguenza", "per questo motivo", "Il sistema è complesso e, di conseguenza, richiede manutenzione."],
+        ["tuttavia", "ma, nonostante ciò", "La soluzione è elegante; tuttavia, presenta alcuni limiti."]
+      ]
+    },
+    "models": {
+      "a": [
+        "L'adozione di un nome di riferimento unico garantisce la massima **coerenza** all'interno della rete di trasporti. Un sistema **univoco** permette agli utenti di orientarsi senza incertezze, evitando che la **segnaletica** diventi ambigua o difficile da interpretare durante gli spostamenti quotidiani.",
+        "**D'altronde**, la gestione di una **toponomastica** complessa non deve andare a discapito della **fruibilità** del servizio pubblico. Inserire troppe varianti linguistiche su mappe e insegne rischierebbe di sovraccaricare l'utente, rendendo la navigazione meno immediata per chi non conosce il contesto locale.",
+        "Ritengo che la soluzione migliore sia mantenere un'etichetta standard su tutti i supporti fisici. È possibile, **tuttavia**, venire incontro alle esigenze della comunità includendo i nomi alternativi in un database digitale, garantendo così un accesso **inclusivo** senza compromettere la chiarezza visiva."
+      ],
+      "b": [
+        "Visualizzare entrambi i nomi quando possibile è un atto di rispetto verso l'identità culturale del territorio. Un approccio **inclusivo** trasforma la **segnaletica** in uno strumento che valorizza le radici linguistiche della comunità, rendendo il servizio pubblico più vicino ai cittadini.",
+        "**Tuttavia**, la sfida principale è mantenere una **coerenza** visiva che non crei confusione. Se lo spazio lo permette, la doppia dicitura non deve essere vista come un ostacolo, ma come un arricchimento che riflette la realtà multiculturale in cui viviamo quotidianamente.",
+        "Scelgo di dare priorità alla rappresentazione bilingue perché la **toponomastica** è parte integrante del tessuto sociale. **Di conseguenza**, programmare annunci che riflettano questa pluralità è fondamentale per garantire che ogni utente si senta pienamente riconosciuto nel sistema di trasporto."
+      ],
+      "conditional": [
+        "Se l'obiettivo primario è la sicurezza e l'efficienza operativa in un nodo di scambio complesso, scelgo il nome unico. In questo caso, la **coerenza** è fondamentale per evitare errori di percorso che potrebbero avere conseguenze gravi per i passeggeri meno esperti.",
+        "Se invece il contesto è un'area urbana dove la visibilità culturale è prioritaria, scelgo la visualizzazione bilingue. Qui, escludere un nome renderebbe il servizio pubblico meno riconoscibile per la comunità locale, che si sentirebbe alienata da un sistema troppo rigido.",
+        "Il criterio decisivo è la leggibilità immediata: se la doppia dicitura non compromette la comprensione, va adottata. **A patto che** il design rimanga pulito, la scelta di mostrare entrambi i nomi è sempre preferibile per promuovere un ambiente urbano più accogliente."
+      ]
+    }
+  },
+  {
+    "slug": "modular-repairable-or-cheaper-product",
+    "title": "Elettrodomestici: riparabilità o convenienza?",
+    "prompt": "Un produttore di elettrodomestici può riprogettare un prodotto base con componenti facilmente sostituibili a un prezzo più alto. In alternativa, può mantenere il design più economico e rafforzare il suo schema di sostituzione e ritiro. Quale strada servirebbe meglio le famiglie?",
+    "conditionalPrompt": "Confronta chi può permettersi ogni prodotto e quali prove renderebbero credibili i risparmi a lungo termine.",
+    "options": [
+      {
+        "label": "Componenti sostituibili",
+        "description": "Utilizzare componenti standard sostituibili e offrire pezzi di ricambio per un periodo definito."
+      },
+      {
+        "label": "Design economico",
+        "description": "Mantenere il design più economico e migliorare il processo per scambiare i guasti e raccogliere i vecchi prodotti."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["sostenibilità", "capacità di durare nel tempo", "La sostenibilità economica è cruciale per le famiglie moderne."],
+        ["manutenzione", "operazioni per mantenere in efficienza", "Una manutenzione regolare prolunga la vita degli apparecchi."],
+        ["affidabilità", "capacità di funzionare senza guasti", "L'affidabilità del marchio è un fattore determinante nell'acquisto."],
+        ["investimento", "impiego di risorse per un guadagno futuro", "L'acquisto di un prodotto durevole è un investimento intelligente."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro a", "soddisfare una necessità", "Dobbiamo andare incontro a chi ha un budget limitato."],
+        ["puntare su", "scegliere come strategia", "L'azienda ha deciso di puntare su materiali riciclabili."],
+        ["far fronte a", "gestire una difficoltà", "È difficile far fronte a costi di riparazione elevati."],
+        ["mettere in conto", "prevedere come possibile", "Bisogna mettere in conto anche i costi di spedizione."]
+      ],
+      "adjectives": [
+        ["accessibile", "che si può ottenere facilmente", "Il prezzo deve essere accessibile per la maggior parte dei consumatori."],
+        ["obsoleto", "non più attuale o funzionante", "Un design obsoleto non garantisce l'efficienza energetica."],
+        ["efficiente", "che produce buoni risultati", "Un sistema di ritiro efficiente riduce l'impatto ambientale."],
+        ["duraturo", "che resiste nel tempo", "Cerchiamo un prodotto duraturo che non richieda sostituzioni frequenti."]
+      ],
+      "connectors": [
+        ["pertanto", "perciò, di conseguenza", "Il costo è alto; pertanto, la qualità deve essere garantita."],
+        ["inoltre", "aggiungendo un'informazione", "Inoltre, la riparazione riduce la produzione di rifiuti."],
+        ["anziché", "invece di", "È meglio riparare anziché gettare via l'intero apparecchio."],
+        ["viceversa", "al contrario", "Il modello base è economico; viceversa, quello modulare costa."]
+      ]
+    },
+    "models": {
+      "a": [
+        "**Puntare su** componenti sostituibili rappresenta un **investimento** lungimirante per la **sostenibilità** domestica. Un prodotto progettato per essere riparato facilmente garantisce un'**affidabilità** superiore, permettendo alle famiglie di evitare la frustrazione di dover sostituire l'intero apparecchio a causa di un singolo guasto.",
+        "**Inoltre**, la disponibilità di pezzi di ricambio standardizzati riduce la necessità di assistenza tecnica specializzata, rendendo la **manutenzione** un'operazione semplice e **accessibile**. **Pertanto**, il costo iniziale più elevato viene ammortizzato nel tempo grazie alla maggiore durata del bene.",
+        "Credo che questa sia la scelta migliore per chi cerca un prodotto **duraturo**. **Anziché** dipendere da un sistema di ritiro esterno, l'utente acquisisce autonomia, riducendo drasticamente la produzione di rifiuti elettronici e contribuendo a un modello di consumo più consapevole e responsabile."
+      ],
+      "b": [
+        "Mantenere il design economico è fondamentale per andare incontro alle esigenze delle famiglie con budget limitati. Non tutti possono permettersi un **investimento** iniziale elevato; **pertanto**, offrire un prodotto **accessibile** rimane la priorità per garantire l'inclusione sociale.",
+        "**Viceversa**, un sistema di ritiro e sostituzione ben organizzato può essere estremamente **efficiente**. Se l'azienda si occupa di gestire i guasti e raccogliere i prodotti vecchi, il consumatore non deve preoccuparsi della **manutenzione**, delegando ogni incombenza al produttore stesso.",
+        "Scelgo questa strada perché la **sostenibilità** deve essere democratica. Migliorare la logistica di recupero permette di gestire il ciclo di vita del prodotto senza gravare sulle tasche dei cittadini, garantendo che nessuno sia escluso dall'accesso a tecnologie moderne ed efficienti."
+      ],
+      "conditional": [
+        "Se il target di riferimento è una famiglia con disponibilità economica limitata, scelgo il design economico con un forte sistema di ritiro. In questo caso, l'accessibilità immediata è il fattore determinante, poiché permette di far fronte alle necessità quotidiane senza sacrifici eccessivi.",
+        "Se invece il consumatore cerca un risparmio a lungo termine e ha la capacità di gestire piccole riparazioni, scelgo i componenti sostituibili. Qui, la durabilità diventa il criterio principale, poiché l'**investimento** iniziale si traduce in una riduzione dei costi totali di possesso.",
+        "Il fattore decisivo è la trasparenza dei costi: se l'azienda può dimostrare che il risparmio nel tempo supera il prezzo maggiorato, allora la modularità è vincente. Tuttavia, senza prove concrete di tale risparmio, l'opzione economica rimane la scelta più prudente per la maggioranza."
+      ]
+    }
+  },
+  {
+    "slug": "in-house-capability-or-specialist-contract",
+    "title": "Servizi pubblici: team interno o esternalizzazione?",
+    "prompt": "Un'istituzione pubblica necessita di un servizio ricorrente che è attualmente difficile da gestire internamente. È meglio sviluppare un team interno in due anni o contrattare un'organizzazione specializzata per fornirlo immediatamente?",
+    "conditionalPrompt": "Distingui il rischio di iniziare troppo lentamente dal rischio di perdere la capacità di supervisionare il lavoro.",
+    "options": [
+      {
+        "label": "Team interno",
+        "description": "Formare un team permanente e accettare un avvio più lento mentre le competenze si sviluppano."
+      },
+      {
+        "label": "Fornitore specializzato",
+        "description": "Iniziare prima utilizzando un fornitore esperto e negoziare come finirà il contratto."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["competenza", "capacità professionale acquisita", "La competenza del personale è il vero valore dell'istituzione."],
+        ["supervisione", "attività di controllo e direzione", "Una supervisione costante garantisce la qualità del servizio."],
+        ["autonomia", "capacità di agire senza dipendere da altri", "L'autonomia operativa è essenziale per la gestione dei servizi."],
+        ["strategia", "piano d'azione a lungo termine", "La strategia adottata deve essere flessibile e lungimirante."]
+      ],
+      "phrasalVerbs": [
+        ["farsi carico di", "assumersi la responsabilità", "L'istituzione deve farsi carico di questa nuova sfida."],
+        ["andare a regime", "raggiungere la piena operatività", "Il nuovo team impiegherà tempo per andare a regime."],
+        ["venire meno", "cessare di esistere o mancare", "Se la supervisione viene meno, la qualità cala rapidamente."],
+        ["puntare su", "investire in una direzione", "È necessario puntare su una formazione continua dei dipendenti."]
+      ],
+      "adjectives": [
+        ["tempestivo", "che avviene al momento giusto", "Un intervento tempestivo è necessario per risolvere il problema."],
+        ["strategico", "fondamentale per un piano", "Il controllo interno è un asset strategico per l'ente."],
+        ["qualificato", "che possiede le giuste capacità", "Abbiamo bisogno di personale altamente qualificato."],
+        ["vincolante", "che obbliga a rispettare condizioni", "Il contratto deve avere clausole non troppo vincolanti."]
+      ],
+      "connectors": [
+        ["tuttavia", "ma, nonostante ciò", "Il progetto è ambizioso; tuttavia, richiede pazienza."],
+        ["di conseguenza", "per questo motivo", "Il personale è nuovo e, di conseguenza, serve formazione."],
+        ["piuttosto che", "invece di", "Dobbiamo investire internamente piuttosto che esternalizzare."],
+        ["inoltre", "aggiungendo un'informazione", "Inoltre, la gestione interna garantisce maggiore controllo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sviluppare un team interno è una scelta strategica che garantisce l'**autonomia** dell'istituzione a lungo termine. Sebbene l'avvio sia più lento, investire nella formazione di personale **qualificato** permette di costruire una **competenza** solida, rendendo l'ente indipendente da fornitori esterni.",
+        "**Inoltre**, la gestione diretta consente una **supervisione** costante e capillare, assicurando che il servizio risponda perfettamente alle esigenze specifiche dell'istituzione. **Di conseguenza**, il tempo impiegato per **andare a regime** è un investimento necessario per evitare la dipendenza da terzi.",
+        "Credo che **puntare su** risorse interne sia la strada migliore. **Piuttosto che** affidarsi a contratti esterni, l'istituzione deve farsi carico della propria crescita, garantendo così che il sapere rimanga all'interno dell'organizzazione, pronto per essere adattato alle sfide future."
+      ],
+      "b": [
+        "Affidarsi a un fornitore specializzato è la soluzione più tempestiva per garantire la continuità del servizio. In situazioni in cui l'urgenza è massima, non possiamo permetterci attese prolungate; pertanto, l'esternalizzazione permette di ottenere risultati immediati e di alta qualità.",
+        "**Tuttavia**, è fondamentale negoziare con attenzione le clausole di uscita per evitare che il contratto diventi troppo **vincolante**. È necessario mantenere una **supervisione** costante sul lavoro svolto, assicurandosi che il fornitore trasferisca gradualmente il proprio know-how al personale interno.",
+        "Scelgo questa opzione perché la priorità è il servizio al cittadino. Iniziare subito con un partner esperto permette di soddisfare le necessità attuali, mentre l'istituzione può pianificare con calma una transizione verso una gestione interna, senza compromettere l'efficacia operativa."
+      ],
+      "conditional": [
+        "Se il rischio principale è l'incapacità di gestire il servizio nei primi due anni, scelgo il fornitore specializzato. In questo caso, l'urgenza di un intervento **tempestivo** prevale sulla necessità di costruire competenze interne, poiché il fallimento del servizio sarebbe inaccettabile.",
+        "Se invece il rischio è perdere il controllo **strategico** e la capacità di supervisionare il lavoro, scelgo il team interno. Qui, la priorità è mantenere la **competenza** in casa, evitando che l'istituzione diventi una scatola vuota dipendente da terzi.",
+        "Il fattore decisivo è la natura del servizio: se è critico, la continuità immediata è prioritaria. **Tuttavia**, se il servizio è core, la costruzione di un team interno è l'unica via per garantire l'**autonomia** e la qualità nel tempo."
+      ]
+    }
+  },
+  {
+    "slug": "school-library-guidance-or-open-access",
+    "title": "Biblioteca scolastica: guida o accesso libero?",
+    "prompt": "Una scuola secondaria deve decidere come gestire i libri con temi impegnativi che molti alunni più grandi vogliono leggere. È meglio usare una guida all'età con discussioni di accesso individuali o lasciare che tutti gli alunni del triennio superiore prendano in prestito dallo stesso catalogo?",
+    "conditionalPrompt": "Specifica quando la guida aiuta qualcuno a scegliere e quando diventa una barriera difficile da contestare.",
+    "options": [
+      {
+        "label": "Guida all'età",
+        "description": "Pubblicare una guida all'età e lasciare che gli alunni richiedano una discussione quando desiderano un libro sopra l'età suggerita."
+      },
+      {
+        "label": "Accesso libero",
+        "description": "Lasciare che gli alunni del triennio superiore facciano la propria scelta e fornire informazioni opzionali sul contenuto e supporto bibliotecario."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["maturità", "grado di sviluppo intellettuale", "La maturità degli studenti permette loro di affrontare temi complessi."],
+        ["autonomia", "capacità di decidere da soli", "L'autonomia di scelta è fondamentale per la crescita culturale."],
+        ["mediazione", "intervento per facilitare un processo", "La mediazione del bibliotecario aiuta a interpretare i testi difficili."],
+        ["censura", "limitazione della libertà di espressione", "Dobbiamo evitare qualsiasi forma di censura nelle scelte letterarie."]
+      ],
+      "phrasalVerbs": [
+        ["andare incontro a", "venire incontro alle esigenze", "La scuola deve andare incontro alla curiosità degli studenti."],
+        ["mettere in discussione", "sottoporre a critica", "È importante mettere in discussione le proprie convinzioni."],
+        ["farsi un'idea", "formarsi un'opinione", "Leggere permette agli studenti di farsi un'idea del mondo."],
+        ["tenere conto di", "considerare", "Bisogna tenere conto di ogni sensibilità individuale."]
+      ],
+      "adjectives": [
+        ["impegnativo", "che richiede sforzo", "Un testo impegnativo stimola il pensiero critico."],
+        ["consapevole", "che ha coscienza di sé", "Una scelta consapevole nasce dalla conoscenza dei contenuti."],
+        ["limitante", "che pone dei confini", "Un approccio troppo limitante scoraggia la lettura."],
+        ["formativo", "che contribuisce all'educazione", "Il confronto con temi complessi è estremamente formativo."]
+      ],
+      "connectors": [
+        ["tuttavia", "ma, nonostante ciò", "Il libro è complesso; tuttavia, è adatto a molti."],
+        ["di conseguenza", "per questo motivo", "Gli studenti sono maturi e, di conseguenza, scelgono bene."],
+        ["piuttosto che", "invece di", "Preferisco il dialogo piuttosto che il divieto."],
+        ["inoltre", "aggiungendo un'informazione", "Inoltre, la biblioteca è un luogo di libertà."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Pubblicare una guida all'età è un modo responsabile per accompagnare gli studenti nel loro percorso di crescita. Un testo **impegnativo** può talvolta richiedere una **mediazione**, e la guida serve proprio a segnalare quando un confronto con un adulto potrebbe arricchire l'esperienza di lettura.",
+        "**Tuttavia**, questo non deve essere visto come una **censura**, ma come un supporto. Se uno studente desidera un libro sopra l'età suggerita, la discussione individuale permette di valutare insieme la **maturità** necessaria per affrontare certi temi, garantendo una scelta **consapevole**.",
+        "Ritengo che questa sia la soluzione migliore per proteggere gli alunni senza limitare la loro curiosità. **Piuttosto che** lasciare tutto al caso, la scuola si assume il ruolo di guida, assicurando che ogni lettura sia un momento **formativo** e non un'esperienza disorientante."
+      ],
+      "b": [
+        "Lasciare che gli alunni del triennio superiore scelgano liberamente è un segno di fiducia nella loro **maturità**. A questa età, gli studenti sono in grado di **farsi un'idea** dei propri interessi e di gestire temi complessi, purché abbiano accesso a informazioni chiare sui contenuti.",
+        "**Inoltre**, il supporto bibliotecario opzionale è sufficiente per chiunque cerchi un consiglio o un approfondimento. **Di conseguenza**, non c'è bisogno di barriere formali che potrebbero apparire come una limitazione ingiustificata, mettendo in discussione la libertà intellettuale dei ragazzi.",
+        "Scelgo l'accesso libero perché la biblioteca deve essere un luogo di esplorazione. La scuola deve promuovere l'**autonomia**, incoraggiando gli studenti a confrontarsi con testi impegnativi in modo diretto, sapendo che il supporto degli adulti è sempre disponibile, ma mai imposto."
+      ],
+      "conditional": [
+        "Se l'obiettivo è proteggere gli studenti più giovani da contenuti potenzialmente traumatici senza preparazione, scelgo la guida all'età. In questo caso, la guida aiuta qualcuno a scegliere, agendo come un segnale di avvertimento utile per chi non ha ancora gli strumenti per affrontare certi temi.",
+        "Se invece l'obiettivo è favorire l'**autonomia** critica degli studenti del triennio, scelgo l'accesso libero. Qui, la guida diventa una barriera difficile da contestare, che limita inutilmente la libertà di lettura di ragazzi ormai pronti a esplorare ogni genere letterario.",
+        "Il criterio decisivo è la capacità di discernimento: se gli studenti hanno già sviluppato un pensiero critico, l'accesso libero è preferibile. **Tuttavia**, se mancano le basi per una lettura **consapevole**, una guida non vincolante è necessaria per facilitare il percorso."
+      ]
+    }
+  },
+  {
+    "slug": "permanent-monument-or-rotating-memorial",
+    "title": "Memoria civica: monumento o installazioni?",
+    "prompt": "Una città ha un sito civico importante e fondi per ricordare un evento che ha colpito molti gruppi in modi diversi. È meglio commissionare un monumento permanente con una dicitura concordata o finanziare una serie di installazioni temporanee con diversi contributori?",
+    "conditionalPrompt": "Decidi cosa dovrebbe rimanere stabile nel tempo e dove la città dovrebbe lasciare spazio per un racconto diverso.",
+    "options": [
+      {
+        "label": "Monumento permanente",
+        "description": "Creare un punto di memoria pubblico durevole dopo una consultazione e fornire informazioni di supporto."
+      },
+      {
+        "label": "Installazioni temporanee",
+        "description": "Dare tempo a diversi contributori sul sito e preservare un registro di ogni installazione."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["memoria", "ricordo collettivo di un evento", "La memoria di questo evento deve essere preservata con cura."],
+        ["testimonianza", "prova o racconto di un fatto", "Ogni installazione è una testimonianza preziosa della storia."],
+        ["identità", "caratteristiche che definiscono un gruppo", "Il monumento rafforza l'identità civica della nostra città."],
+        ["pluralità", "presenza di molteplici punti di vista", "La pluralità delle voci arricchisce il racconto storico."]
+      ],
+      "phrasalVerbs": [
+        ["farsi portavoce di", "rappresentare le idee di altri", "Il monumento deve farsi portavoce di tutte le vittime."],
+        ["andare a comporre", "formare un insieme", "Queste opere vanno a comporre un mosaico di ricordi."],
+        ["venire meno", "perdere di significato o importanza", "Il significato del sito non deve venire meno col tempo."],
+        ["tenere conto di", "considerare", "Bisogna tenere conto di tutte le diverse prospettive."]
+      ],
+      "adjectives": [
+        ["durevole", "che resiste nel tempo", "Cerchiamo un segno durevole che resti per le generazioni future."],
+        ["effimero", "che dura poco", "Un'arte effimera permette di cambiare spesso il punto di vista."],
+        ["condiviso", "accettato da tutti", "Un ricordo condiviso unisce la comunità dopo la tragedia."],
+        ["significativo", "che ha un valore profondo", "Il sito scelto è particolarmente significativo per la città."]
+      ],
+      "connectors": [
+        ["tuttavia", "ma, nonostante ciò", "Il monumento è solido; tuttavia, è statico."],
+        ["di conseguenza", "per questo motivo", "La storia è complessa e, di conseguenza, richiede molti racconti."],
+        ["piuttosto che", "invece di", "Preferisco la pluralità piuttosto che una verità unica."],
+        ["inoltre", "aggiungendo un'informazione", "Inoltre, le installazioni permettono un dialogo continuo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Creare un monumento permanente è un atto solenne che garantisce la stabilità della **memoria** civica. Un punto di riferimento **durevole** permette alla comunità di riconoscersi in un evento **condiviso**, offrendo uno spazio fisico dove riflettere sulla storia comune dopo un'ampia consultazione.",
+        "**Tuttavia**, la sfida è trovare una dicitura che sia accettata da tutti. Fornire informazioni di supporto è fondamentale per spiegare la complessità dell'evento, assicurando che il monumento non diventi un simbolo statico, ma un luogo vivo di riflessione per le generazioni future.",
+        "Ritengo che questa sia la scelta migliore per dare un senso di continuità. **Piuttosto che** frammentare il ricordo, un monumento solido fissa la **memoria** nel tessuto urbano, diventando un pilastro dell'**identità** cittadina che non deve **venire meno** con il passare degli anni."
+      ],
+      "b": [
+        "Finanziare una serie di installazioni temporanee permette di accogliere la **pluralità** delle voci che hanno vissuto l'evento in modi diversi. Questo approccio dinamico trasforma il sito in uno spazio di dialogo continuo, dove ogni contributore può offrire la propria **testimonianza** unica.",
+        "**Inoltre**, preservare un registro di ogni installazione crea un archivio digitale che arricchisce la **memoria** collettiva. **Di conseguenza**, la città non impone una verità unica, ma lascia spazio a un racconto che evolve, riflettendo le diverse sensibilità della nostra comunità multiforme.",
+        "Scelgo questa strada perché la storia è complessa e non può essere ridotta a una sola dicitura. Le installazioni temporanee permettono di esplorare prospettive differenti, rendendo il sito un luogo di scoperta costante, dove il ricordo si rinnova e si arricchisce continuamente."
+      ],
+      "conditional": [
+        "Se l'evento ha colpito la città in modo unitario e richiede un simbolo di coesione, scelgo il monumento permanente. In questo caso, ciò che dovrebbe rimanere stabile è il riconoscimento del dolore comune, che funge da fondamento per la pace sociale futura.",
+        "Se invece l'evento è stato vissuto in modo conflittuale da diversi gruppi, scelgo le installazioni temporanee. Qui, la città dovrebbe lasciare spazio per un racconto diverso, permettendo a ogni voce di emergere senza essere soffocata da una dicitura ufficiale troppo rigida.",
+        "Il criterio decisivo è la natura del ricordo: se serve un punto fermo, il monumento è ideale. **Tuttavia**, se serve un processo di elaborazione, la rotazione delle installazioni è la scelta più onesta per una città che vuole ascoltare tutti."
+      ]
+    }
+  }
+]

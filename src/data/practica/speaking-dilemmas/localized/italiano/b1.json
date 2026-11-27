@@ -1,0 +1,1182 @@
+[
+  {
+    "slug": "central-or-quiet-flat",
+    "title": "Dove preferisci vivere?",
+    "prompt": "Hai trovato due appartamenti allo stesso prezzo. Uno è vicino al lavoro ma si trova su una strada molto trafficata. L'altro è silenzioso ma richiede quaranta minuti di viaggio in più ogni giorno. Quale scegli?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Appartamento centrale",
+        "description": "Vai al lavoro a piedi in dieci minuti e accetti il rumore della strada."
+      },
+      {
+        "label": "Appartamento tranquillo",
+        "description": "Goditi una casa silenziosa e prendi due autobus per andare al lavoro."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["quartiere", "zona di una città", "Il mio quartiere è molto vivace e pieno di negozi."],
+        ["rumore", "suono fastidioso", "C'è troppo rumore in questa strada per dormire bene."],
+        ["comodità", "vantaggio pratico", "Vivere vicino al centro è una grande comodità per me."],
+        ["spostamento", "viaggio quotidiano", "Il mio spostamento verso l'ufficio dura quasi un'ora."]
+      ],
+      "phrasalVerbs": [
+        ["andare d'accordo", "avere un buon rapporto", "Spero di andare d'accordo con i miei nuovi vicini."],
+        ["venire incontro", "aiutare qualcuno", "Il mio capo mi è venuto incontro con gli orari."],
+        ["tirare avanti", "sopravvivere con poco", "Dobbiamo tirare avanti con questo budget limitato."],
+        ["andare a genio", "piacere a qualcuno", "Questa zona non mi va proprio a genio."]
+      ],
+      "adjectives": [
+        ["rumoroso", "pieno di rumore", "Questo locale è troppo rumoroso per parlare."],
+        ["caotico", "disordinato e affollato", "Il centro città è caotico durante il fine settimana."],
+        ["accogliente", "caldo e ospitale", "La mia nuova casa è piccola ma molto accogliente."],
+        ["stancante", "che causa stanchezza", "Il lungo viaggio in treno è stato molto stancante."]
+      ],
+      "connectors": [
+        ["d'altro canto", "per contro", "D'altro canto, vivere in centro costa molto di più."],
+        ["tuttavia", "ma", "È una casa bella, tuttavia è troppo lontana dal centro."],
+        ["inoltre", "aggiungendo informazioni", "Inoltre, il quartiere offre molti servizi utili."],
+        ["di conseguenza", "perciò", "Il traffico è bloccato, di conseguenza arriverò in ritardo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei sicuramente l'appartamento vicino al lavoro per risparmiare tempo prezioso ogni mattina.",
+        "Potrei andare in ufficio a piedi in dieci minuti e godermi la colazione con calma.",
+        "Accetterei il **rumore** della strada perché la **comodità** di non usare i mezzi pubblici è fondamentale."
+      ],
+      "b": [
+        "Preferirei l'appartamento **tranquillo** perché il silenzio è **essenziale** per il mio riposo.",
+        "**Anche** se devo prendere due autobus, posso **ascoltare** musica durante il **tragitto**.",
+        "La qualità della **vita** in una zona silenziosa vale il tempo perso nel **viaggio**."
+      ],
+      "conditional": [
+        "Sceglierei la soluzione centrale se avessi un orario di lavoro molto rigido e stressante.",
+        "**D'altro canto**, opterei per la casa tranquilla se lavorassi spesso da casa in smart working.",
+        "Ad esempio, se avessi bisogno di concentrazione assoluta, la calma del **quartiere** periferico sarebbe la priorità."
+      ]
+    }
+  },
+  {
+    "slug": "bus-pass-or-bike-at-work",
+    "title": "Come vai al lavoro?",
+    "prompt": "Il tuo ufficio dista cinque chilometri da casa. Preferisci comprare un abbonamento mensile dell'autobus o andare in bicicletta quasi tutti i giorni?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Abbonamento autobus",
+        "description": "Usa l'autobus con qualsiasi tempo e paga un prezzo fisso."
+      },
+      {
+        "label": "Andare in bici",
+        "description": "Usa la tua bicicletta e scegli un percorso con meno traffico."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["abbonamento", "tessera per servizi", "Ho fatto l'abbonamento annuale per i mezzi pubblici."],
+        ["percorso", "strada da seguire", "Ho trovato un percorso alternativo senza traffico."],
+        ["meteo", "condizioni atmosferiche", "Il meteo oggi è perfetto per una passeggiata."],
+        ["risparmio", "denaro messo da parte", "Questo abbonamento è un grande risparmio per me."]
+      ],
+      "phrasalVerbs": [
+        ["andare avanti", "continuare a fare qualcosa", "Devo andare avanti con il mio progetto di fitness."],
+        ["mettersi in viaggio", "partire per un tragitto", "Domani mattina mi metterò in viaggio molto presto."],
+        ["tornare indietro", "ritornare al punto di partenza", "Ho dimenticato le chiavi e sono dovuto tornare indietro."],
+        ["dare una mano", "aiutare", "Puoi darmi una mano a riparare la bicicletta?"]
+      ],
+      "adjectives": [
+        ["costante", "che non cambia", "Ho bisogno di un esercizio fisico costante ogni giorno."],
+        ["comodo", "pratico e facile", "L'autobus è molto comodo quando piove forte."],
+        ["ecologico", "che rispetta l'ambiente", "Andare in bici è una scelta molto ecologica."],
+        ["imprevedibile", "che non si può prevedere", "Il traffico in questa città è davvero imprevedibile."]
+      ],
+      "connectors": [
+        ["invece", "al contrario", "Io preferisco la bici, lui invece usa l'autobus."],
+        ["infatti", "per confermare", "È molto stanco, infatti è andato a dormire presto."],
+        ["perciò", "quindi", "Piove molto, perciò prenderò l'autobus oggi."],
+        ["dunque", "per concludere", "Dunque, la bicicletta è la scelta migliore per me."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei l'**abbonamento** dell'autobus per avere la certezza di arrivare sempre in orario.",
+        "Non importa se piove o fa freddo, posso sedermi e rilassarmi durante il tragitto.",
+        "È una soluzione pratica che mi permette di pagare una cifra fissa ogni mese."
+      ],
+      "b": [
+        "Preferirei andare in bicicletta per fare un po' di movimento fisico ogni giorno, poiché è un mezzo **ecologico** e mi permette di evitare il traffico.",
+        "Posso scegliere un **percorso** più tranquillo e godermi l'aria aperta; anche se il **meteo** è **imprevedibile**, preferisco questa libertà.",
+        "**Infatti**, pedalare è un modo fantastico per iniziare la giornata con energia, **invece** di aspettare l'autobus."
+      ],
+      "conditional": [
+        "Sceglierei l'autobus se dovessi arrivare in ufficio sempre perfettamente in ordine e vestito bene.",
+        "D'altro canto, userei la bicicletta se volessi migliorare la mia salute e risparmiare denaro.",
+        "Ad esempio, se il **percorso** avesse una bella pista ciclabile, sceglierei sicuramente la bicicletta."
+      ]
+    }
+  },
+  {
+    "slug": "fixed-or-open-trip",
+    "title": "Come organizzi il viaggio?",
+    "prompt": "Tre amici hanno un fine settimana in una nuova città. Dovreste prenotare la maggior parte delle attività in anticipo o lasciare il programma aperto?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Programma fisso",
+        "description": "Prenotate due attività principali e concordate gli orari di incontro."
+      },
+      {
+        "label": "Programma aperto",
+        "description": "Mantenete il fine settimana libero e scegliete le attività dopo l'arrivo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["prenotazione", "atto di prenotare", "Ho fatto la prenotazione per il ristorante stasera."],
+        ["programma", "piano di attività", "Il nostro programma per il weekend è molto pieno."],
+        ["imprevisto", "evento non previsto", "È successo un imprevisto e non possiamo uscire."],
+        ["libertà", "assenza di vincoli", "In vacanza voglio avere totale libertà di scelta."]
+      ],
+      "phrasalVerbs": [
+        ["andare d'accordo", "avere un buon rapporto", "Spero che andremo d'accordo durante questo viaggio."],
+        ["tirare fuori", "estrarre o proporre", "Dobbiamo tirare fuori qualche idea per la cena."],
+        ["venire fuori", "risultare da qualcosa", "Da questa discussione è venuto fuori un bel piano."],
+        ["mettersi d'accordo", "trovare un accordo", "Dobbiamo metterci d'accordo sull'orario di partenza."]
+      ],
+      "adjectives": [
+        ["organizzato", "che ha un piano", "Sono una persona molto organizzata con i viaggi."],
+        ["spontaneo", "che agisce d'impulso", "Mi piace essere spontaneo quando visito una città."],
+        ["indeciso", "che non sa scegliere", "Siamo ancora indecisi su cosa visitare domani."],
+        ["interessante", "che suscita interesse", "Abbiamo trovato un museo molto interessante in centro."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiungendo informazioni", "Inoltre, prenotare in anticipo costa meno."],
+        ["tuttavia", "ma", "È un'idea bella, tuttavia preferisco decidere sul momento."],
+        ["infatti", "per confermare", "Siamo stanchi, infatti restiamo in hotel."],
+        ["invece", "al contrario", "Io voglio vedere il museo, lui invece vuole riposare."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Prenoterei le attività principali in anticipo per evitare lunghe code alle biglietterie.",
+        "Così abbiamo un **programma** chiaro e non perdiamo tempo a decidere cosa fare.",
+        "È la soluzione ideale per sfruttare al meglio i pochi giorni a disposizione."
+      ],
+      "b": [
+        "Preferirei lasciare il fine settimana aperto per seguire i nostri desideri del momento.",
+        "Possiamo scoprire posti nuovi camminando senza fretta e fermarci dove ci piace.",
+        "Questa **libertà** rende il viaggio molto più rilassante e meno stressante per tutti."
+      ],
+      "conditional": [
+        "Sceglierei il **programma** fisso se la città fosse molto affollata e turistica.",
+        "D'altro canto, terrei il **programma** aperto se volessi esplorare la città con calma.",
+        "Ad esempio, se piovesse tutto il giorno, un **programma** aperto ci permetterebbe di cambiare piano facilmente."
+      ]
+    }
+  },
+  {
+    "slug": "group-trip-room-sharing",
+    "title": "Condividi la stanza?",
+    "prompt": "Il tuo gruppo parte per due notti. Condividere una stanza riduce il prezzo, ma alcune persone si svegliano a orari diversi. Condivideresti o prenoteresti separatamente?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Condividere la stanza",
+        "description": "Risparmia denaro e concorda gli orari di silenzio."
+      },
+      {
+        "label": "Prenotare separatamente",
+        "description": "Paga di più per la privacy e per i tuoi orari."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["risparmio", "denaro messo da parte", "Condividere la stanza è un grande risparmio."],
+        ["privacy", "riservatezza", "In vacanza ho bisogno di un po' di privacy."],
+        ["accordo", "intesa tra persone", "Abbiamo raggiunto un accordo sugli orari di riposo."],
+        ["abitudine", "comportamento abituale", "Ognuno ha la sua abitudine al mattino."]
+      ],
+      "phrasalVerbs": [
+        ["andare a dormire", "andare a letto", "Stasera voglio andare a dormire presto."],
+        ["svegliarsi presto", "alzarsi dal letto", "Domani devo svegliarmi presto per il treno."],
+        ["venire incontro", "aiutare qualcuno", "Dobbiamo venire incontro alle esigenze di tutti."],
+        ["tirare avanti", "continuare a fare qualcosa", "Nonostante la stanchezza, dobbiamo tirare avanti."]
+      ],
+      "adjectives": [
+        ["economico", "che costa poco", "Questo hotel è molto economico e pulito."],
+        ["rispettoso", "che rispetta gli altri", "Sii rispettoso verso chi dorme ancora."],
+        ["comodo", "confortevole", "Il letto in questa stanza è molto comodo."],
+        ["fastidioso", "che dà fastidio", "Il rumore della sveglia è molto fastidioso."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiungendo informazioni", "Inoltre, stare insieme è più divertente."],
+        ["tuttavia", "ma", "È economico, tuttavia preferisco la mia privacy."],
+        ["invece", "al contrario", "Io mi sveglio tardi, lui invece si sveglia presto."],
+        ["perciò", "quindi", "Voglio dormire bene, perciò prenoto da solo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei di condividere la stanza per ottenere un buon **risparmio** economico, dato che è la soluzione più **economica** per un gruppo.",
+        "Possiamo trovare un **accordo** sugli orari per non disturbare chi vuole **andare a dormire** presto.",
+        "**Inoltre**, è un'ottima occasione per stare insieme; **tuttavia**, dobbiamo cercare di **venirci incontro** a vicenda."
+      ],
+      "b": [
+        "Preferirei pagare di più per avere la mia **privacy** e gestire i miei orari.",
+        "Così posso svegliarmi quando voglio senza disturbare nessuno o essere disturbato.",
+        "Per me la qualità del sonno è fondamentale per godermi la vacanza."
+      ],
+      "conditional": [
+        "Sceglierei di condividere la stanza se fossi in viaggio con amici stretti, perché è un'opzione **economica** e divertente.",
+        "**Tuttavia**, prenoterei separatamente se fossi con colleghi, per avere più **privacy** e non dover **venire incontro** alle abitudini altrui.",
+        "La regola è semplice: se il gruppo è affiatato, condivido; **invece**, se cerco riposo assoluto, scelgo la camera singola."
+      ]
+    }
+  },
+  {
+    "slug": "volunteer-or-buy-a-festival-ticket",
+    "title": "Come partecipi al festival?",
+    "prompt": "Un festival musicale offre l'ingresso gratuito a chi lavora per un turno di tre ore. Preferisci fare volontariato o pagare il biglietto e passare tutto il giorno come visitatore?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Fare volontariato",
+        "description": "Aiuta all'ingresso nel pomeriggio e guarda alcuni spettacoli."
+      },
+      {
+        "label": "Pagare il biglietto",
+        "description": "Paga l'ingresso così puoi scegliere esattamente cosa vedere."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["ingresso", "accesso a un luogo", "Il prezzo dell'ingresso è troppo alto quest'anno."],
+        ["turno", "periodo di lavoro", "Il mio turno di lavoro inizia alle tre."],
+        ["spettacolo", "esibizione artistica", "Questo spettacolo musicale è davvero incredibile."],
+        ["scelta", "opzione disponibile", "Ho fatto la mia scelta e sono soddisfatto."]
+      ],
+      "phrasalVerbs": [
+        ["andare a vedere", "recarsi per guardare", "Voglio andare a vedere il concerto stasera."],
+        ["venire fuori", "risultare da qualcosa", "Da questo lavoro è venuta fuori una bella esperienza."],
+        ["tirare avanti", "continuare a fare qualcosa", "Nonostante la stanchezza, dobbiamo tirare avanti."],
+        ["mettersi in fila", "fare la coda", "Dobbiamo metterci in fila per entrare al festival."]
+      ],
+      "adjectives": [
+        ["gratuito", "senza costo", "L'ingresso per i volontari è completamente gratuito."],
+        ["impegnativo", "che richiede sforzo", "Lavorare al festival è un po' impegnativo."],
+        ["libero", "senza vincoli", "Voglio essere libero di girare tutto il giorno."],
+        ["entusiasta", "molto felice", "Sono entusiasta di vedere il mio gruppo preferito."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiungendo informazioni", "Inoltre, conosci molte persone interessanti."],
+        ["tuttavia", "ma", "È un'opportunità, tuttavia preferisco pagare."],
+        ["invece", "al contrario", "Io lavoro, lui invece si diverte."],
+        ["perciò", "quindi", "Voglio vedere tutto, perciò compro il biglietto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei di fare volontariato perché è un modo **gratuito** per accedere al festival.",
+        "Il mio **turno** di tre ore non è **impegnativo** e mi permette di vivere l'evento da dentro.",
+        "**Inoltre**, dopo il lavoro, sono **libero** di godermi ogni **spettacolo** con gli altri visitatori."
+      ],
+      "b": [
+        "Preferirei pagare il biglietto per avere la totale libertà di **scelta** su cosa vedere.",
+        "Non voglio vincoli di orario e desidero evitare di **mettermi in fila** per lavorare.",
+        "**Invece** di fare volontariato, preferisco pagare per godermi ogni momento senza interruzioni durante il mio **ingresso**."
+      ],
+      "conditional": [
+        "Sceglierei il volontariato se il biglietto fosse molto costoso e il budget limitato.",
+        "D'altro canto, pagherei il biglietto se volessi vedere un artista specifico.",
+        "Ad esempio, se il mio gruppo preferito suonasse proprio durante il mio **turno**, pagherei."
+      ]
+    }
+  },
+  {
+    "slug": "mend-or-replace-headphones",
+    "title": "Ripari o compri?",
+    "prompt": "Un lato delle tue cuffie ha smesso di funzionare. Un negozio può provare a ripararle, oppure puoi comprarne un paio nuovo. Cosa faresti?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Riparazione",
+        "description": "Paga per un controllo e riparale se il negozio trova il guasto."
+      },
+      {
+        "label": "Sostituzione",
+        "description": "Compra subito un paio nuovo e ricicla le vecchie se non sono riutilizzabili."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["guasto", "problema tecnico", "Il guasto alle cuffie è molto fastidioso."],
+        ["controllo", "verifica tecnica", "Ho chiesto un controllo al tecnico del negozio."],
+        ["prezzo", "costo di un oggetto", "Il prezzo della riparazione è troppo alto."],
+        ["rifiuto", "oggetto da buttare", "Dobbiamo smaltire i rifiuti elettronici correttamente."]
+      ],
+      "phrasalVerbs": [
+        ["andare a finire", "concludersi", "Come andrà a finire questa storia delle cuffie?"],
+        ["tirare via", "rimuovere", "Ho tirato via il cavo rotto dalle cuffie."],
+        ["venire bene", "riuscire bene", "La riparazione è venuta bene, funzionano ancora."],
+        ["mettersi a posto", "sistemarsi", "Spero che tutto si metta a posto presto."]
+      ],
+      "adjectives": [
+        ["rotto", "non funzionante", "Il mio telefono è rotto da due giorni."],
+        ["nuovo", "appena comprato", "Ho comprato un paio di cuffie nuovo oggi."],
+        ["costoso", "che costa molto", "Queste cuffie sono troppo costose per me."],
+        ["sostenibile", "che rispetta l'ambiente", "Voglio fare una scelta più sostenibile."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiungendo informazioni", "Inoltre, riparare è meglio per l'ambiente."],
+        ["tuttavia", "ma", "Sono vecchie, tuttavia funzionano ancora bene."],
+        ["invece", "al contrario", "Io riparo, lui invece compra sempre nuovo."],
+        ["perciò", "quindi", "Il costo è basso, perciò le riparo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei di riparare le cuffie per evitare di produrre rifiuti elettronici inutili.",
+        "Se il costo del **controllo** è ragionevole, vale la pena provare a salvarle.",
+        "È una scelta responsabile che allunga la vita dei miei oggetti tecnologici."
+      ],
+      "b": [
+        "Preferirei comprare un paio **nuovo** perché spesso la riparazione costa quasi come l'acquisto.",
+        "Le nuove cuffie avranno sicuramente una garanzia e una qualità del suono migliore.",
+        "È la soluzione più veloce per tornare ad ascoltare la mia musica preferita."
+      ],
+      "conditional": [
+        "Sceglierei la riparazione se le cuffie fossero di alta qualità e molto costose.",
+        "D'altro canto, comprerei un paio **nuovo** se fossero cuffie economiche e vecchie.",
+        "Ad esempio, se il negozio chiedesse troppo, la riparazione non avrebbe senso."
+      ]
+    }
+  },
+  {
+    "slug": "weekly-budget-or-spending-log",
+    "title": "Come gestisci i soldi?",
+    "prompt": "Vuoi risparmiare per un viaggio. Preferisci stabilire un limite per cibo e svago ogni settimana, o registrare ogni acquisto per un mese prima di decidere cosa cambiare?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Limite settimanale",
+        "description": "Decidi quanto puoi spendere in ogni categoria prima che inizi la settimana."
+      },
+      {
+        "label": "Diario delle spese",
+        "description": "Scrivi cosa compri, poi cerca posti dove spendere meno."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["budget", "piano di spesa", "Il mio budget mensile è molto limitato."],
+        ["limite", "tetto massimo", "Ho superato il limite di spesa questa settimana."],
+        ["acquisto", "cosa comprata", "Ho fatto un acquisto importante oggi."],
+        ["risparmio", "denaro messo da parte", "Il risparmio è fondamentale per il mio viaggio."]
+      ],
+      "phrasalVerbs": [
+        ["andare d'accordo", "avere un buon rapporto", "Devo andare d'accordo con il mio conto bancario."],
+        ["tirare avanti", "sopravvivere con poco", "Dobbiamo tirare avanti fino alla fine del mese."],
+        ["venire fuori", "risultare da qualcosa", "Dalle mie note è venuto fuori che spendo troppo."],
+        ["mettersi a scrivere", "iniziare a scrivere", "Mi devo mettere a scrivere tutte le spese."]
+      ],
+      "adjectives": [
+        ["attento", "che presta attenzione", "Devo essere più attento alle mie spese."],
+        ["preciso", "esatto e accurato", "Il mio diario delle spese è molto preciso."],
+        ["necessario", "indispensabile", "Questo acquisto non era davvero necessario."],
+        ["complicato", "difficile", "Gestire il budget è un po' complicato."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiungendo informazioni", "Inoltre, è un ottimo esercizio di disciplina."],
+        ["tuttavia", "ma", "È utile, tuttavia richiede molto tempo."],
+        ["invece", "al contrario", "Io uso il limite, lui invece il diario."],
+        ["perciò", "quindi", "Voglio risparmiare, perciò controllo tutto."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei di stabilire un **limite** settimanale per avere un controllo immediato del denaro.",
+        "È un metodo semplice che mi impedisce di spendere troppo in cose inutili.",
+        "Così so esattamente quanto posso usare per il cibo e lo svago ogni settimana."
+      ],
+      "b": [
+        "Preferirei tenere un diario delle spese per capire esattamente dove finiscono i miei soldi.",
+        "Analizzare ogni **acquisto** mi aiuta a trovare abitudini sbagliate da correggere subito.",
+        "È un processo più lungo ma molto efficace per cambiare il mio stile di vita."
+      ],
+      "conditional": [
+        "Sceglierei il **limite** settimanale se avessi uno stipendio fisso e poche spese variabili.",
+        "D'altro canto, userei il diario se volessi capire perché arrivo sempre a fine mese senza soldi.",
+        "Ad esempio, se spendessi troppo al bar, il diario mi aiuterebbe a notarlo."
+      ]
+    }
+  },
+  {
+    "slug": "second-hand-or-fewer-new-clothes",
+    "title": "Come ti vesti?",
+    "prompt": "Vuoi spendere meno in vestiti quest'anno. Compri principalmente usato o compri pochi capi nuovi che prevedi di indossare più a lungo?",
+    "conditionalPrompt": "Spiega quando sceglieresti ciascuna opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Vestiti usati",
+        "description": "Cerca vestiti usati e controlla le loro condizioni prima di comprare."
+      },
+      {
+        "label": "Pochi capi nuovi",
+        "description": "Compra un piccolo numero di pezzi nuovi che si abbinano a ciò che già possiedi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["abbigliamento", "insieme di vestiti", "Il mio abbigliamento è semplice ma curato."],
+        ["qualità", "valore di un oggetto", "La qualità di questo tessuto è eccellente."],
+        ["scelta", "opzione disponibile", "Questa è la scelta migliore per il mio stile."],
+        ["armadio", "mobile per vestiti", "Il mio armadio è pieno di vestiti che non uso."]
+      ],
+      "phrasalVerbs": [
+        ["andare bene", "essere adatto", "Questi pantaloni mi vanno bene con tutto."],
+        ["tirare fuori", "estrarre", "Ho tirato fuori i vestiti invernali dall'armadio."],
+        ["venire incontro", "aiutare", "Il negozio mi è venuto incontro con uno sconto."],
+        ["mettersi addosso", "indossare", "Mi piace mettermi addosso vestiti comodi."]
+      ],
+      "adjectives": [
+        ["usato", "non nuovo", "Ho comprato questo cappotto usato in un mercatino."],
+        ["resistente", "che dura nel tempo", "Cerco sempre vestiti resistenti e ben fatti."],
+        ["versatile", "che si adatta a tutto", "Questo maglione è molto versatile per l'inverno."],
+        ["elegante", "di buon gusto", "Cerco sempre un look semplice ed elegante."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiungendo informazioni", "Inoltre, è una scelta molto ecologica."],
+        ["tuttavia", "ma", "È bello, tuttavia costa troppo."],
+        ["invece", "al contrario", "Io compro usato, lei invece compra nuovo."],
+        ["perciò", "quindi", "Voglio risparmiare, perciò scelgo l'usato."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Sceglierei di comprare abbigliamento **usato** per trovare pezzi unici a prezzi bassi.",
+        "È un modo **versatile** per rinnovare il mio stile senza spendere troppo per capi nuovi.",
+        "**Inoltre**, controllare la **qualità** dei tessuti è importante, ma si trovano veri tesori da **mettermi addosso**."
+      ],
+      "b": [
+        "Preferirei comprare pochi capi nuovi di alta **qualità** che durano molti anni.",
+        "Così posso creare tanti abbinamenti diversi con pochi pezzi scelti con cura.",
+        "È una strategia intelligente per avere un **armadio** ordinato e sempre funzionale."
+      ],
+      "conditional": [
+        "Sceglierei l'**usato** se cercassi uno stile particolare o vintage per occasioni speciali.",
+        "D'altro canto, comprerei capi nuovi se avessi bisogno di vestiti base per l'ufficio.",
+        "Ad esempio, se mi servisse una giacca classica, preferirei comprarla nuova e **resistente**."
+      ]
+    }
+  },
+  {
+    "slug": "one-big-or-small-neighbour-events",
+    "title": "Organizzare eventi nel quartiere",
+    "prompt": "Il tuo quartiere ha un piccolo budget per far incontrare i vicini. Preferisci una grande festa o tre incontri più piccoli?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Una grande festa",
+        "description": "Spendere la maggior parte del budget per cibo e musica in un pomeriggio."
+      },
+      {
+        "label": "Tre piccoli incontri",
+        "description": "Offrire un rinfresco semplice e un'attività diversa ogni mese."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["budget", "somma di denaro disponibile", "Il nostro budget per la festa è limitato."],
+        ["vicinato", "insieme degli abitanti di una zona", "Il vicinato si è riunito per discutere i problemi."],
+        ["rinfresco", "piccolo pasto leggero", "Abbiamo preparato un rinfresco per gli ospiti."],
+        ["occasione", "momento propizio o evento", "Questa è un'ottima occasione per conoscerci meglio."]
+      ],
+      "phrasalVerbs": [
+        ["andare d'accordo", "avere un buon rapporto", "Spero che tutti vadano d'accordo durante la cena."],
+        ["tirare su", "sollevare o organizzare qualcosa", "Possiamo tirare su un piccolo evento in giardino."],
+        ["venire fuori", "emergere o risultare", "Da questo incontro sono venute fuori idee interessanti."],
+        ["mettersi in gioco", "partecipare attivamente", "È importante mettersi in gioco per fare nuove amicizie."]
+      ],
+      "adjectives": [
+        ["vivace", "pieno di vita", "Il quartiere è molto vivace durante il fine settimana."],
+        ["disponibile", "pronto ad aiutare", "Il mio vicino è sempre molto disponibile con tutti."],
+        ["semplice", "facile o senza complicazioni", "Preferisco una soluzione semplice per questo problema."],
+        ["comunitario", "relativo alla comunità", "Abbiamo creato un senso di spirito comunitario."]
+      ],
+      "connectors": [
+        ["d'altra parte", "introducendo un punto di vista opposto", "D'altra parte, preferirei qualcosa di più tranquillo."],
+        ["inoltre", "aggiungendo un'informazione", "Inoltre, abbiamo bisogno di più volontari."],
+        ["di conseguenza", "per indicare un risultato", "Il budget è basso, di conseguenza dobbiamo risparmiare."],
+        ["piuttosto che", "per indicare una preferenza", "Preferisco parlare piuttosto che stare in silenzio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Organizzare una grande festa è la scelta migliore per unire tutti i residenti. Con un **budget** unico possiamo affittare attrezzature professionali e comprare cibo di qualità per tutti.",
+        "Questo evento crea un'atmosfera **vivace** e permette al **vicinato** di divertirsi insieme. È un'**occasione** perfetta per rompere il ghiaccio e parlare con persone che vediamo raramente.",
+        "**Inoltre**, un grande evento richiede meno pianificazione rispetto a tre incontri separati. Possiamo concentrare tutte le nostre energie in un solo pomeriggio indimenticabile per la comunità."
+      ],
+      "b": [
+        "Preferisco organizzare tre piccoli incontri perché permettono di creare legami più profondi. Con un **rinfresco** **semplice**, le persone si sentono più a loro agio e meno sotto pressione.",
+        "Ogni mese possiamo proporre un'attività diversa, come un laboratorio o un gioco, coinvolgendo gruppi differenti. Questo approccio è molto più flessibile e adatto a chi ha poco tempo.",
+        "**D'altra parte**, tre eventi distribuiti nel tempo mantengono vivo l'interesse. **Di conseguenza**, il senso di comunità cresce gradualmente invece di esaurirsi in un solo pomeriggio di festa."
+      ],
+      "conditional": [
+        "Sceglierei la grande festa se volessi celebrare un traguardo importante, come la fine dei lavori stradali. È ideale quando l'obiettivo principale è far conoscere il maggior numero di persone.",
+        "Al contrario, opterei per i piccoli incontri se il **vicinato** fosse molto timido o impegnato. Ad esempio, un caffè mensile aiuta le persone anziane a sentirsi meno sole.",
+        "In definitiva, la scelta dipende dal tipo di legame che vogliamo costruire. Se cerchiamo un impatto immediato, la festa vince, ma per relazioni durature, la costanza è fondamentale."
+      ]
+    }
+  },
+  {
+    "slug": "extra-shifts-or-evening-course",
+    "title": "Lavoro extra o corso serale",
+    "prompt": "Hai tempo per un'attività regolare dopo il lavoro. Preferisci fare turni extra pagati o seguire un corso per cambiare carriera?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Turni extra",
+        "description": "Guadagnare più soldi subito mantenendo il lavoro attuale."
+      },
+      {
+        "label": "Corso serale",
+        "description": "Usare il tempo per studiare e imparare una competenza utile in futuro."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["stipendio", "denaro guadagnato lavorando", "Il mio stipendio attuale non basta per i risparmi."],
+        ["competenza", "abilità professionale", "Questa nuova competenza sarà utile per il mio futuro."],
+        ["carriera", "percorso professionale", "Voglio cambiare carriera per essere più soddisfatto."],
+        ["impegno", "dedizione o obbligo", "Il corso richiede un grande impegno ogni sera."]
+      ],
+      "phrasalVerbs": [
+        ["mettere da parte", "risparmiare denaro", "Devo mettere da parte dei soldi per l'affitto."],
+        ["andare avanti", "proseguire nel lavoro", "Non posso andare avanti così per molto tempo."],
+        ["tirare avanti", "sopravvivere economicamente", "Con questo stipendio riesco a malapena a tirare avanti."],
+        ["darsi da fare", "impegnarsi molto", "Devo darmi da fare se voglio trovare un nuovo lavoro."]
+      ],
+      "adjectives": [
+        ["stancante", "che causa stanchezza", "Lavorare dieci ore al giorno è molto stancante."],
+        ["ambizioso", "che punta in alto", "È un progetto ambizioso ma molto interessante."],
+        ["utile", "che serve a uno scopo", "Imparare l'informatica è molto utile oggi."],
+        ["stabile", "che non cambia facilmente", "Cerco un lavoro più stabile per il futuro."]
+      ],
+      "connectors": [
+        ["tuttavia", "per introdurre un contrasto", "Il lavoro paga bene; tuttavia, non mi piace."],
+        ["infatti", "per confermare o spiegare", "Voglio studiare; infatti, mi sono già iscritto."],
+        ["perciò", "per indicare una conseguenza", "Sono molto stanco, perciò vado a dormire."],
+        ["invece", "per indicare un'alternativa", "Lui lavora, io invece studio per l'esame."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Scegliere i turni extra è la decisione più pratica quando si ha bisogno di liquidità immediata. Guadagnare di più permette di **mettere da parte** soldi per progetti personali importanti.",
+        "Questo **impegno** extra è **stancante**, ma garantisce una stabilità economica necessaria in momenti difficili. Non devo preoccuparmi delle spese impreviste perché ho un fondo di riserva pronto.",
+        "Inoltre, lavorare di più dimostra serietà al mio attuale datore di lavoro. **Perciò**, questa scelta mi aiuta a mantenere una posizione solida mentre aspetto tempi migliori."
+      ],
+      "b": [
+        "Preferisco seguire un corso serale perché è un investimento per la mia futura **carriera**. Imparare una nuova **competenza** mi rende più competitivo sul mercato del lavoro attuale.",
+        "Anche se non guadagno subito, questa scelta mi permette di cambiare strada e trovare un impiego più soddisfacente. È un **impegno** che richiede tempo, ma i risultati arriveranno.",
+        "**Tuttavia**, bisogna **darsi da fare** molto per conciliare studio e lavoro. **Infatti**, la fatica di oggi sarà ripagata domani con un lavoro più **stabile** e gratificante."
+      ],
+      "conditional": [
+        "Sceglierei i turni extra se avessi un debito urgente da pagare o una spesa imprevista. Ad esempio, se la mia auto si rompesse, avrei bisogno di soldi subito.",
+        "Al contrario, opterei per il corso serale se fossi infelice nel mio lavoro attuale. Ad esempio, se volessi diventare un programmatore, studiare la sera è l'unico modo per iniziare.",
+        "In definitiva, tutto dipende dalle mie priorità attuali. Se la sopravvivenza economica è la priorità, scelgo il lavoro; se **invece** cerco crescita personale, scelgo lo studio."
+      ]
+    }
+  },
+  {
+    "slug": "summer-shift-start-time",
+    "title": "Orari estivi di lavoro",
+    "prompt": "Il tuo team vuole evitare il caldo. Preferite iniziare e finire tutti prima, o scegliere l'orario con il manager?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Orario collettivo",
+        "description": "Mantenere il team unito e finire prima delle ore più calde."
+      },
+      {
+        "label": "Orario flessibile",
+        "description": "Concordare gli orari in base a viaggi, famiglia e bisogni del team."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["orario", "programmazione del tempo", "Il mio orario di lavoro è molto rigido."],
+        ["esigenza", "bisogno o necessità", "Dobbiamo rispettare le esigenze di ogni collega."],
+        ["collega", "persona con cui si lavora", "Il mio collega è sempre puntuale al mattino."],
+        ["accordo", "intesa tra persone", "Abbiamo raggiunto un accordo sulla pausa pranzo."]
+      ],
+      "phrasalVerbs": [
+        ["andare avanti", "proseguire", "Dobbiamo andare avanti con il progetto estivo."],
+        ["venire incontro", "aiutare qualcuno", "Il capo cerca di venire incontro alle nostre richieste."],
+        ["mettersi d'accordo", "raggiungere un'intesa", "Dobbiamo metterci d'accordo sull'orario di inizio."],
+        ["tirare fuori", "proporre un'idea", "Hai tirato fuori un'ottima soluzione per il caldo."]
+      ],
+      "adjectives": [
+        ["flessibile", "che si adatta facilmente", "Un orario flessibile aiuta molto la vita privata."],
+        ["caldo", "che ha una temperatura elevata", "Oggi fa troppo caldo per lavorare in ufficio."],
+        ["coeso", "unito e compatto", "Siamo un team molto coeso e collaborativo."],
+        ["personale", "che riguarda l'individuo", "Ho degli impegni personali da gestire oggi."]
+      ],
+      "connectors": [
+        ["invece", "per contrastare", "Io preferisco la mattina, lui invece il pomeriggio."],
+        ["dunque", "per concludere", "Il caldo è insopportabile, dunque dobbiamo cambiare."],
+        ["tuttavia", "per limitare", "L'idea è buona; tuttavia, crea problemi logistici."],
+        ["inoltre", "per aggiungere", "Inoltre, dobbiamo finire il lavoro entro venerdì."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco che tutto il team inizi e finisca prima per evitare il **caldo** pomeridiano. Lavorare insieme durante le ore fresche ci rende più produttivi e concentrati.",
+        "Questo **orario** collettivo mantiene il gruppo **coeso**, poiché siamo tutti presenti negli stessi momenti. È molto più facile comunicare e risolvere i problemi quando siamo tutti in ufficio.",
+        "**Inoltre**, finire presto ci permette di godere del pomeriggio libero. **Dunque**, questa soluzione è ideale per chi vuole evitare il traffico e il sole intenso dell'estate."
+      ],
+      "b": [
+        "Scegliere l'**orario** con il manager è la soluzione migliore per rispettare le esigenze personali. Ognuno ha situazioni diverse, come accompagnare i figli a scuola o lunghi viaggi.",
+        "Un **orario** **flessibile** ci permette di lavorare quando siamo più riposati, migliorando la qualità del lavoro. Il manager può **venire incontro** a tutti senza creare conflitti inutili.",
+        "**Tuttavia**, è necessario **mettersi d'accordo** per garantire la copertura del servizio. **Invece** di imporre un **orario** fisso, questa flessibilità dimostra fiducia e rispetto verso ogni **collega**."
+      ],
+      "conditional": [
+        "Sceglierei l'**orario** collettivo se il lavoro richiedesse molta collaborazione costante. Ad esempio, in un cantiere dove tutti devono essere presenti per completare una fase specifica.",
+        "Al contrario, opterei per l'**orario** **flessibile** se il lavoro fosse individuale e basato su obiettivi. Ad esempio, se fossi un traduttore, potrei lavorare meglio la sera.",
+        "In definitiva, la scelta dipende dalla natura del compito. Se il team deve essere unito, l'**orario** fisso vince; se la libertà è prioritaria, la flessibilità è la chiave."
+      ]
+    }
+  },
+  {
+    "slug": "sports-league-or-friendly-games",
+    "title": "Lega sportiva o partite amichevoli",
+    "prompt": "Il vostro gruppo può unirsi a una lega amatoriale o giocare partite amichevoli ogni domenica. Cosa preferite?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Lega amatoriale",
+        "description": "Giocare con regole fisse, tenere i punteggi e allenarsi ogni settimana."
+      },
+      {
+        "label": "Partite amichevoli",
+        "description": "Cambiare squadre ogni settimana e permettere a chiunque di unirsi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["lega", "associazione sportiva", "Abbiamo deciso di iscriverci a una nuova lega."],
+        ["punteggio", "risultato di una gara", "Il punteggio finale è stato molto equilibrato."],
+        ["regola", "norma da seguire", "Le regole della lega sono molto severe."],
+        ["squadra", "gruppo di giocatori", "La mia squadra gioca ogni domenica mattina."]
+      ],
+      "phrasalVerbs": [
+        ["mettersi in forma", "migliorare la salute fisica", "Voglio mettermi in forma prima dell'estate."],
+        ["andare avanti", "continuare l'attività", "La partita deve andare avanti nonostante la pioggia."],
+        ["tirare su", "formare un gruppo", "Possiamo tirare su una squadra per il torneo."],
+        ["venire fuori", "risultare bene", "La partita è venuta fuori molto divertente."]
+      ],
+      "adjectives": [
+        ["competitivo", "che ama la sfida", "Il mio amico è un giocatore molto competitivo."],
+        ["amichevole", "basato sull'amicizia", "È stata una partita amichevole e rilassante."],
+        ["costante", "che non cambia", "Serve un impegno costante per vincere il torneo."],
+        ["aperto", "accessibile a tutti", "Il nostro gruppo è aperto a nuovi giocatori."]
+      ],
+      "connectors": [
+        ["invece", "per contrastare", "Loro vogliono vincere, io invece voglio divertirmi."],
+        ["dunque", "per concludere", "Siamo in pochi, dunque dobbiamo invitare altri."],
+        ["tuttavia", "per limitare", "La lega è bella; tuttavia, richiede molto tempo."],
+        ["inoltre", "per aggiungere", "Inoltre, dobbiamo pagare una quota d'iscrizione."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco unirmi a una **lega** amatoriale perché mi piace la sfida di un campionato organizzato. Avere regole fisse e tenere i punteggi rende ogni partita più seria.",
+        "Allenarsi ogni settimana con la stessa **squadra** aiuta a migliorare le prestazioni e a creare un legame forte. È un impegno **costante** che mi motiva a dare il massimo.",
+        "**Inoltre**, la competizione sana è un ottimo modo per **mettersi in forma**. **Dunque**, se vuoi vedere progressi reali, una **lega** è la scelta giusta per il nostro gruppo."
+      ],
+      "b": [
+        "Preferisco le partite amichevoli perché sono più rilassate e aperte a tutti. Cambiare squadre ogni settimana permette di conoscere persone nuove e giocare con chiunque voglia unirsi.",
+        "Non c'è la pressione di dover vincere o seguire regole rigide. L'obiettivo principale è divertirsi insieme, senza preoccuparsi troppo del **punteggio** finale o della classifica.",
+        "**Tuttavia**, questo approccio è perfetto per chi ha un orario irregolare. **Invece** di un impegno fisso, possiamo giocare quando vogliamo, mantenendo lo spirito **amichevole** del gruppo."
+      ],
+      "conditional": [
+        "Sceglierei la **lega** amatoriale se il gruppo fosse composto da atleti esperti che cercano una sfida. Ad esempio, se volessimo vincere un trofeo, la disciplina è necessaria.",
+        "Al contrario, opterei per le partite amichevoli se il gruppo fosse formato da amici che vogliono solo svagarsi. Ad esempio, se alcuni non sanno giocare bene, è meglio evitare la competizione.",
+        "In definitiva, la scelta dipende dall'obiettivo del gruppo. Se cerchiamo il miglioramento tecnico, la **lega** è ideale; se cerchiamo socialità, le partite amichevoli sono migliori."
+      ]
+    }
+  },
+  {
+    "slug": "library-room-bookings",
+    "title": "Prenotazioni in biblioteca",
+    "prompt": "Una biblioteca ha una grande sala studio. Preferite prenotarla in anticipo o usarla in base all'ordine di arrivo?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Prenotazione anticipata",
+        "description": "Riservare un'ora e cedere la sala se il gruppo è in ritardo."
+      },
+      {
+        "label": "Ordine di arrivo",
+        "description": "Usare la sala subito se è libera e impostare un limite di tempo."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["prenotazione", "riserva di un posto", "Ho fatto una prenotazione per la sala studio."],
+        ["limite", "confine temporale", "C'è un limite di due ore per ogni gruppo."],
+        ["ritardo", "arrivo dopo l'orario", "Siamo arrivati con dieci minuti di ritardo."],
+        ["sala", "ambiente per attività", "La sala studio è sempre molto affollata."]
+      ],
+      "phrasalVerbs": [
+        ["andare avanti", "continuare a studiare", "Dobbiamo andare avanti con la ricerca."],
+        ["venire fuori", "risultare disponibile", "La sala è venuta fuori libera all'ultimo minuto."],
+        ["tirare fuori", "mostrare i libri", "Ho tirato fuori i libri per iniziare a studiare."],
+        ["mettersi d'accordo", "decidere insieme", "Dobbiamo metterci d'accordo su chi usa la sala."]
+      ],
+      "adjectives": [
+        ["libero", "non occupato", "La sala è libera, possiamo entrare subito."],
+        ["occupato", "già utilizzato", "Mi dispiace, ma il tavolo è già occupato."],
+        ["organizzato", "ben pianificato", "Un gruppo organizzato prenota sempre in anticipo."],
+        ["spontaneo", "senza pianificazione", "Il nostro studio è stato molto spontaneo oggi."]
+      ],
+      "connectors": [
+        ["invece", "per contrastare", "Loro prenotano, io invece arrivo presto."],
+        ["dunque", "per concludere", "La sala è piena, dunque dobbiamo aspettare."],
+        ["tuttavia", "per limitare", "L'idea è buona; tuttavia, è poco pratica."],
+        ["inoltre", "per aggiungere", "Inoltre, dobbiamo rispettare il silenzio."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco prenotare la **sala** in anticipo perché mi garantisce uno spazio sicuro per studiare. È un metodo molto **organizzato** che evita di perdere tempo cercando un posto **libero**.",
+        "Sapere di avere la **sala** riservata mi permette di pianificare meglio la giornata. Se arriviamo in **ritardo**, è giusto cedere il posto ad altri, mantenendo la correttezza.",
+        "**Inoltre**, questo sistema riduce lo stress di non trovare spazio. **Dunque**, per chi ha scadenze importanti, la **prenotazione** è la soluzione più affidabile e tranquilla."
+      ],
+      "b": [
+        "Preferisco l'ordine di arrivo perché è più **spontaneo** e flessibile. Se trovo la **sala** libera, posso entrare subito senza dover pianificare tutto giorni prima.",
+        "Impostare un **limite** di tempo garantisce che tutti abbiano la possibilità di usare la **sala**. È un sistema equo che premia chi è già presente in biblioteca.",
+        "**Tuttavia**, bisogna essere pronti a cambiare piano se la **sala** è occupata. **Invece** di aspettare una **prenotazione**, cerchiamo un altro posto o torniamo più tardi."
+      ],
+      "conditional": [
+        "Sceglierei la **prenotazione** anticipata se dovessi preparare un esame importante con un gruppo numeroso. Ad esempio, se dobbiamo fare una presentazione, serve certezza.",
+        "Al contrario, opterei per l'ordine di arrivo se fossi da solo o con un amico per un ripasso veloce. Ad esempio, se ho solo un'ora libera, non ha senso prenotare.",
+        "In definitiva, la scelta dipende dalla necessità di pianificazione. Se il gruppo è grande, la **prenotazione** è necessaria; se siamo pochi, la spontaneità è più comoda."
+      ]
+    }
+  },
+  {
+    "slug": "club-guest-or-equipment",
+    "title": "Ospite o attrezzatura per il club",
+    "prompt": "Un club di fotografia ha soldi per un ospite o per attrezzatura da condividere. Cosa dovrebbe scegliere?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Ospite professionista",
+        "description": "Passare un pomeriggio a ricevere consigli da un fotografo esperto."
+      },
+      {
+        "label": "Attrezzatura condivisa",
+        "description": "Permettere ai membri di prendere in prestito l'attrezzatura per settimane."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["attrezzatura", "strumenti tecnici", "La nostra attrezzatura fotografica è molto moderna."],
+        ["consiglio", "suggerimento utile", "Ho ricevuto un ottimo consiglio dal fotografo."],
+        ["sessione", "incontro di lavoro", "La sessione con l'esperto è stata molto istruttiva."],
+        ["membro", "partecipante al club", "Ogni membro ha diritto a usare la macchina."]
+      ],
+      "phrasalVerbs": [
+        ["mettersi in gioco", "provare nuove cose", "Devi metterti in gioco per imparare la fotografia."],
+        ["tirare fuori", "mostrare il talento", "Il fotografo ha tirato fuori il meglio da noi."],
+        ["andare avanti", "migliorare nel tempo", "Dobbiamo andare avanti con la pratica costante."],
+        ["venire incontro", "aiutare i soci", "Il club cerca di venire incontro alle nostre necessità."]
+      ],
+      "adjectives": [
+        ["professionale", "di alto livello", "È un fotografo professionista molto famoso."],
+        ["utile", "che serve a imparare", "Questa lente è molto utile per i ritratti."],
+        ["pratico", "concreto", "Preferisco un approccio pratico alla fotografia."],
+        ["condiviso", "usato da molti", "Questo è un bene condiviso tra tutti i soci."]
+      ],
+      "connectors": [
+        ["invece", "per contrastare", "Lui vuole l'ospite, io invece l'attrezzatura."],
+        ["dunque", "per concludere", "Abbiamo poco budget, dunque dobbiamo scegliere."],
+        ["tuttavia", "per limitare", "L'ospite è bravo; tuttavia, l'attrezzatura dura."],
+        ["inoltre", "per aggiungere", "Inoltre, l'attrezzatura serve a tutti i soci."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco invitare un ospite professionista perché i suoi consigli possono cambiare il nostro modo di fotografare. Un pomeriggio con un esperto offre ispirazione e tecniche nuove.",
+        "Imparare direttamente da chi lavora nel settore è un'occasione unica. Le sue spiegazioni pratiche ci aiutano a capire errori che non avremmo mai notato da soli.",
+        "**Inoltre**, l'esperienza di un professionista vale più di qualsiasi macchina fotografica. **Dunque**, per crescere artisticamente, l'incontro con un esperto è la scelta migliore per il club."
+      ],
+      "b": [
+        "Preferisco investire in **attrezzatura** condivisa perché permette a tutti di fare pratica per settimane. Avere strumenti di qualità a disposizione è fondamentale per migliorare la tecnica.",
+        "Molti membri non possono permettersi macchine costose, quindi questo servizio è molto **utile**. Permette a chiunque di sperimentare e imparare con calma, senza fretta.",
+        "**Tuttavia**, bisogna gestire bene i prestiti. **Invece** di un evento unico, l'**attrezzatura** offre un beneficio costante. **Dunque**, è un investimento che dura nel tempo per tutto il club."
+      ],
+      "conditional": [
+        "Sceglierei l'ospite professionista se il club fosse composto da fotografi esperti che cercano nuove idee. Ad esempio, se volessimo imparare una tecnica specifica come la fotografia notturna.",
+        "Al contrario, opterei per l'**attrezzatura** se il club avesse molti principianti. Ad esempio, se i soci non hanno una macchina propria, l'**attrezzatura** è indispensabile per iniziare.",
+        "In definitiva, la scelta dipende dal livello del club. Se cerchiamo ispirazione, l'ospite vince; se cerchiamo strumenti per imparare, l'**attrezzatura** è la scelta giusta."
+      ]
+    }
+  },
+  {
+    "slug": "listening-with-or-without-transcript",
+    "title": "Ascolto con o senza trascrizione",
+    "prompt": "Ti eserciti con un podcast inglese. Preferisci leggere la trascrizione mentre ascolti o ascoltare prima e leggere dopo?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Leggere subito",
+        "description": "Seguire le parole scritte per capire meglio i suoni."
+      },
+      {
+        "label": "Ascoltare prima",
+        "description": "Ascoltare per l'idea principale, poi leggere per controllare."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["trascrizione", "testo scritto dell'audio", "La trascrizione aiuta a capire le parole difficili."],
+        ["ascolto", "attività di sentire", "Il mio ascolto è migliorato molto quest'anno."],
+        ["idea", "concetto principale", "Ho capito l'idea generale del podcast."],
+        ["suono", "pronuncia delle parole", "Il suono di questa parola è molto strano."]
+      ],
+      "phrasalVerbs": [
+        ["andare avanti", "proseguire nell'ascolto", "Non riesco ad andare avanti senza leggere."],
+        ["venire fuori", "risultare chiaro", "Il significato è venuto fuori dopo la lettura."],
+        ["tirare fuori", "estrarre informazioni", "Devo tirare fuori le parole nuove dal testo."],
+        ["mettersi d'accordo", "coordinare audio e testo", "Devo mettermi d'accordo con il ritmo del podcast."]
+      ],
+      "adjectives": [
+        ["chiaro", "facile da capire", "Il podcast è molto chiaro e interessante."],
+        ["difficile", "non semplice", "L'inglese parlato è molto difficile per me."],
+        ["utile", "che aiuta l'apprendimento", "Questo metodo è molto utile per studiare."],
+        ["principale", "più importante", "L'idea principale è spiegata all'inizio."]
+      ],
+      "connectors": [
+        ["invece", "per contrastare", "Lui legge subito, io invece ascolto prima."],
+        ["dunque", "per concludere", "Non capisco, dunque leggo la trascrizione."],
+        ["tuttavia", "per limitare", "È utile; tuttavia, è un metodo lento."],
+        ["inoltre", "per aggiungere", "Inoltre, imparo anche la grammatica."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco leggere la **trascrizione** mentre **ascolto** perché mi aiuta a collegare i suoni alle parole scritte. È un metodo molto **chiaro** per chi ha difficoltà con la pronuncia.",
+        "Seguire il testo mi permette di non perdere il filo del discorso. In questo modo, capisco ogni singola parola e imparo anche come si scrive correttamente.",
+        "**Inoltre**, questo approccio riduce la frustrazione quando il podcast è veloce. **Dunque**, per i principianti, leggere subito è la scelta migliore per costruire una base solida."
+      ],
+      "b": [
+        "Preferisco ascoltare prima senza testo per concentrarmi sull'**idea** **principale**. È un ottimo esercizio per allenare l'orecchio a capire il senso generale senza aiuti esterni.",
+        "Dopo l'**ascolto**, leggo la **trascrizione** per controllare le parti che non ho capito bene. Questo metodo mi aiuta a scoprire nuovi vocaboli e a migliorare la comprensione.",
+        "**Tuttavia**, richiede molta attenzione. **Invece** di leggere subito, preferisco mettermi alla prova. **Dunque**, è un metodo più impegnativo ma molto efficace per progredire davvero."
+      ],
+      "conditional": [
+        "Sceglierei di leggere subito se il podcast fosse molto tecnico o **difficile**. Ad esempio, se **ascolto** notizie di economia, ho bisogno del testo per non perdermi.",
+        "Al contrario, opterei per ascoltare prima se il podcast fosse una storia semplice o un'intervista. Ad esempio, se capisco già il 70%, non serve leggere subito.",
+        "In definitiva, la scelta dipende dal mio livello e dalla difficoltà del contenuto. Se sono in difficoltà, leggo; se voglio sfidarmi, **ascolto** prima."
+      ]
+    }
+  },
+  {
+    "slug": "peer-feedback-public-or-private",
+    "title": "Feedback tra studenti",
+    "prompt": "Gli studenti fanno brevi presentazioni. Il feedback deve essere pubblico o privato?",
+    "conditionalPrompt": "Spiega quando sceglieresti ogni opzione e fai un esempio.",
+    "options": [
+      {
+        "label": "Feedback pubblico",
+        "description": "Condividere un commento utile ad alta voce per tutti."
+      },
+      {
+        "label": "Feedback privato",
+        "description": "Dare commenti dettagliati a ogni studente senza ascoltatori."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["feedback", "commento sul lavoro", "Il feedback del professore è stato molto utile."],
+        ["presentazione", "esposizione orale", "La mia presentazione è durata cinque minuti."],
+        ["commento", "osservazione fatta", "Ho ricevuto un commento positivo sulla mia idea."],
+        ["studente", "chi impara", "Ogni studente deve fare una presentazione."]
+      ],
+      "phrasalVerbs": [
+        ["mettersi in gioco", "affrontare la sfida", "È importante mettersi in gioco davanti a tutti."],
+        ["tirare fuori", "esporre le idee", "Devi tirare fuori il coraggio per parlare."],
+        ["andare avanti", "migliorare con i consigli", "I consigli mi aiutano ad andare avanti."],
+        ["venire incontro", "aiutare chi è timido", "Il professore cerca di venire incontro agli studenti."]
+      ],
+      "adjectives": [
+        ["utile", "che serve a migliorare", "Un commento utile è sempre ben accetto."],
+        ["pubblico", "davanti a tutti", "Parlare in pubblico è molto difficile."],
+        ["privato", "tra poche persone", "Preferisco un feedback privato e sincero."],
+        ["dettagliato", "con molti particolari", "Ho ricevuto un feedback molto dettagliato."]
+      ],
+      "connectors": [
+        ["invece", "per contrastare", "Lui preferisce il pubblico, io invece il privato."],
+        ["dunque", "per concludere", "Siamo timidi, dunque meglio il privato."],
+        ["tuttavia", "per limitare", "È utile; tuttavia, può imbarazzare."],
+        ["inoltre", "per aggiungere", "Inoltre, impariamo dagli errori altrui."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco il **feedback** **pubblico** perché tutti possono imparare dagli errori e dai successi degli altri. Condividere un **commento** **utile** ad alta voce crea un'atmosfera di collaborazione.",
+        "Ascoltare le critiche costruttive aiuta ogni **studente** a migliorare la propria **presentazione**. È un modo per vedere diverse prospettive e imparare nuove tecniche di esposizione.",
+        "**Inoltre**, parlare davanti a tutti è una sfida importante. **Dunque**, il **feedback** **pubblico** è un'ottima occasione per crescere insieme come gruppo e superare la timidezza."
+      ],
+      "b": [
+        "Preferisco il **feedback** **privato** perché permette di essere più onesti e dettagliati senza imbarazzo. Alcuni studenti sono timidi e potrebbero sentirsi a disagio davanti alla classe.",
+        "In una conversazione privata, posso spiegare meglio i punti deboli e dare consigli specifici. È un approccio più personale che rispetta la sensibilità di ogni **studente**.",
+        "**Tuttavia**, richiede più tempo per il docente. **Invece** di un **commento** veloce, offro un supporto completo. **Dunque**, è la scelta migliore per chi ha bisogno di attenzione individuale."
+      ],
+      "conditional": [
+        "Sceglierei il **feedback** **pubblico** se la classe fosse molto unita e abituata a collaborare. Ad esempio, se facciamo spesso esercizi di gruppo, il **feedback** **pubblico** è naturale.",
+        "Al contrario, opterei per il **feedback** **privato** se la classe fosse composta da studenti molto insicuri. Ad esempio, se qualcuno piange o si blocca, il **privato** è necessario.",
+        "In definitiva, la scelta dipende dal clima della classe. Se c'è fiducia, il **pubblico** è ottimo; se c'è tensione, il **privato** è più rispettoso."
+      ]
+    }
+  },
+  {
+    "slug": "choose-or-assign-presentation-topic",
+    "title": "Come preferisci preparare la presentazione?",
+    "prompt": "La tua classe deve fare una presentazione di tre minuti. Preferisci scegliere tu l'argomento o rispondere a una domanda assegnata dall'insegnante?",
+    "conditionalPrompt": "Spiega quando sceglieresti l'una o l'altra opzione con un esempio.",
+    "options": [
+      {
+        "label": "Scegliere l'argomento",
+        "description": "Seleziona qualcosa che conosci bene o che vuoi approfondire."
+      },
+      {
+        "label": "Domanda assegnata",
+        "description": "Rispondi alla stessa domanda di tutti e scegli i tuoi esempi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["argomento", "tema di cui si parla o si scrive", "Ho scelto un argomento molto interessante per la mia ricerca."],
+        ["pubblico", "insieme delle persone che ascoltano", "Il pubblico ha apprezzato molto la mia presentazione oggi."],
+        ["approfondimento", "studio più dettagliato di un tema", "Serve un approfondimento per capire meglio questo concetto difficile."],
+        ["sicurezza", "fiducia in se stessi", "Parlare di un tema noto mi dà molta sicurezza."]
+      ],
+      "phrasalVerbs": [
+        ["tirare fuori", "menzionare o introdurre un tema", "Dovresti tirare fuori qualche esempio pratico durante il discorso."],
+        ["andare sul sicuro", "scegliere l'opzione più protetta", "Preferisco andare sul sicuro e parlare di cose che conosco."],
+        ["mettersi in gioco", "accettare una sfida", "È importante mettersi in gioco per migliorare le proprie competenze."],
+        ["venire a capo", "risolvere un problema o un dubbio", "Non riesco a venire a capo di questo argomento complesso."]
+      ],
+      "adjectives": [
+        ["preparato", "che ha studiato bene", "Mi sento molto preparato per affrontare questa presentazione."],
+        ["stimolante", "che incoraggia a pensare", "L'insegnante ha proposto un tema davvero stimolante per tutti."],
+        ["chiaro", "facile da capire", "Il tuo discorso è stato molto chiaro e ben strutturato."],
+        ["spontaneo", "naturale, non forzato", "Il suo modo di parlare è sempre molto spontaneo e piacevole."]
+      ],
+      "connectors": [
+        ["d'altra parte", "introduce un punto di vista opposto", "D'altra parte, scegliere un tema nuovo è una sfida utile."],
+        ["di conseguenza", "indica una logica conseguenza", "Ho studiato molto e, di conseguenza, sono pronto a parlare."],
+        ["inoltre", "aggiunge un'informazione in più", "Inoltre, preferisco gestire il tempo come voglio io."],
+        ["piuttosto che", "indica una preferenza tra due cose", "Preferisco scegliere io, piuttosto che seguire regole rigide."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco scegliere personalmente l'**argomento** della mia presentazione scolastica.",
+        "In questo modo posso parlare di qualcosa che conosco bene e che mi appassiona davvero, sentendomi molto più **preparato**.",
+        "**Inoltre**, parlando di un tema **stimolante**, riesco a trasmettere più **sicurezza** al **pubblico** durante il mio discorso."
+      ],
+      "b": [
+        "Penso che rispondere a una domanda assegnata sia la scelta migliore per tutti.",
+        "Tutti gli studenti devono affrontare la stessa sfida e, **di conseguenza**, possiamo confrontare meglio le nostre idee.",
+        "**D'altra parte**, è un ottimo esercizio per imparare a gestire argomenti nuovi che non avrei mai scelto da solo."
+      ],
+      "conditional": [
+        "Sceglierei il mio **argomento** se avessi poco tempo per preparare la presentazione.",
+        "Invece, accetterei la domanda dell'insegnante se volessi mettermi in gioco con un tema difficile.",
+        "Per esempio, sceglierei il mio tema per un esame importante, ma accetterei quello assegnato per fare pratica in classe."
+      ]
+    }
+  },
+  {
+    "slug": "packed-lunch-or-canteen",
+    "title": "Dove preferisci pranzare al lavoro?",
+    "prompt": "Il tuo posto di lavoro ha una mensa, ma puoi anche portare il cibo da casa. Cosa preferisci fare?",
+    "conditionalPrompt": "Spiega quando sceglieresti l'una o l'altra opzione con un esempio.",
+    "options": [
+      {
+        "label": "Cibo da casa",
+        "description": "Prepara il pasto la sera prima e mangia quando sei pronto."
+      },
+      {
+        "label": "Mensa aziendale",
+        "description": "Compra un pasto caldo e siediti con i colleghi."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["pausa", "momento di riposo", "La mia pausa pranzo dura esattamente un'ora ogni giorno."],
+        ["collega", "persona con cui si lavora", "Vado spesso a mangiare con un collega molto simpatico."],
+        ["risparmio", "denaro messo da parte", "Portare il pranzo da casa è un ottimo risparmio mensile."],
+        ["scelta", "decisione presa", "La mia scelta dipende sempre da quanto sono stanco."]
+      ],
+      "phrasalVerbs": [
+        ["tirare avanti", "continuare a lavorare nonostante la stanchezza", "Con un buon pranzo riesco a tirare avanti fino a sera."],
+        ["staccare la spina", "riposarsi completamente dal lavoro", "In mensa riesco finalmente a staccare la spina dal computer."],
+        ["mettersi ai fornelli", "iniziare a cucinare", "La sera mi metto ai fornelli per preparare il pranzo."],
+        ["andare d'accordo", "avere un buon rapporto", "Vado d'accordo con tutti i colleghi che incontro in mensa."]
+      ],
+      "adjectives": [
+        ["frettoloso", "fatto in fretta", "Non mi piace fare un pranzo frettoloso davanti al computer."],
+        ["nutriente", "che dà energia", "Cerco sempre di preparare un pasto nutriente e sano."],
+        ["sociale", "che riguarda le relazioni", "Il pranzo in mensa è un momento molto sociale per noi."],
+        ["economico", "che costa poco", "Cucinare a casa è molto più economico che mangiare fuori."]
+      ],
+      "connectors": [
+        ["invece", "indica un contrasto", "Io preferisco cucinare; il mio collega, invece, va in mensa."],
+        ["tuttavia", "introduce un'obiezione", "La mensa è comoda; tuttavia, il cibo non è sempre ottimo."],
+        ["infatti", "conferma quanto detto", "Portare il cibo aiuta; infatti, risparmio molti soldi ogni mese."],
+        ["dunque", "conclusione logica", "Ho poco tempo, dunque preferisco mangiare un panino veloce."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco portare il cibo da casa per la mia **pausa** pranzo.",
+        "In questo modo posso preparare un pasto **nutriente** la sera prima, risparmiando anche molti soldi durante la settimana.",
+        "Inoltre, mangiando da solo, riesco a **staccare la spina** dal lavoro e a rilassarmi in tranquillità."
+      ],
+      "b": [
+        "Trovo che la mensa aziendale sia la soluzione migliore per me.",
+        "È un momento molto **sociale** dove posso parlare con i colleghi e dimenticare per un po' le scadenze.",
+        "Inoltre, preferisco comprare un pasto caldo piuttosto che mangiare qualcosa di **frettoloso** preparato la sera prima."
+      ],
+      "conditional": [
+        "Sceglierei il cibo da casa se avessi bisogno di risparmiare per un viaggio.",
+        "**Invece**, andrei in mensa se avessi bisogno di socializzare con i nuovi colleghi dell'ufficio.",
+        "Per esempio, porto il pranzo se ho molto lavoro, ma vado in mensa se voglio rilassarmi."
+      ]
+    }
+  },
+  {
+    "slug": "sale-or-sponsored-walk",
+    "title": "Come raccogliamo i soldi?",
+    "prompt": "La tua classe vuole raccogliere fondi per l'evento di fine anno. Preferisci vendere oggetti fatti in casa o organizzare una camminata sponsorizzata?",
+    "conditionalPrompt": "Spiega quando sceglieresti l'una o l'altra opzione con un esempio.",
+    "options": [
+      {
+        "label": "Vendita oggetti",
+        "description": "Crea cose semplici da vendere a scuola e controlla i costi."
+      },
+      {
+        "label": "Camminata",
+        "description": "Scegli un percorso facile e chiedi donazioni per partecipare."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["fondo", "denaro raccolto per uno scopo", "Abbiamo raccolto un buon fondo per la festa finale."],
+        ["evento", "manifestazione pubblica", "L'evento di fine anno sarà sicuramente un grande successo."],
+        ["partecipante", "chi prende parte a qualcosa", "Ogni partecipante deve versare una piccola quota di iscrizione."],
+        ["spesa", "denaro che si deve pagare", "Dobbiamo calcolare bene ogni spesa prima di iniziare."]
+      ],
+      "phrasalVerbs": [
+        ["tirare su", "raccogliere denaro", "Dobbiamo tirare su molti soldi per pagare la sala."],
+        ["andare a ruba", "essere venduto velocemente", "I dolci fatti in casa sono andati a ruba subito."],
+        ["mettersi d'accordo", "raggiungere un'intesa", "Dobbiamo metterci d'accordo sul percorso della camminata."],
+        ["dare una mano", "aiutare qualcuno", "Puoi dare una mano a organizzare la vendita domani?"]
+      ],
+      "adjectives": [
+        ["accessibile", "facile da raggiungere o fare", "Abbiamo scelto un percorso molto accessibile per tutti gli studenti."],
+        ["creativo", "che ha molta fantasia", "Il nostro gruppo è molto creativo nel fare oggetti belli."],
+        ["generoso", "che dà volentieri", "Spero che il pubblico sia generoso con le donazioni."],
+        ["impegnativo", "che richiede sforzo", "Organizzare la vendita è un lavoro abbastanza impegnativo."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiunge un punto", "La camminata è divertente; inoltre, fa bene alla salute."],
+        ["tuttavia", "contrasto", "Vendere oggetti è bello; tuttavia, richiede molto tempo."],
+        ["perciò", "conseguenza", "Abbiamo pochi fondi, perciò dobbiamo vendere molti oggetti."],
+        ["al contrario", "opposto", "La vendita è statica; al contrario, la camminata è dinamica."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco vendere oggetti fatti in casa per raccogliere fondi.",
+        "È un'attività molto creativa e, se i prodotti sono belli, possono **andare a ruba** tra gli studenti.",
+        "**Inoltre**, controllando bene ogni **spesa**, possiamo guadagnare molto di più rispetto ad altre iniziative scolastiche."
+      ],
+      "b": [
+        "Penso che una camminata sponsorizzata sia l'idea migliore.",
+        "È un **evento** molto **accessibile** a tutti e permette di stare all'aria aperta insieme ai compagni.",
+        "**Inoltre**, chiedendo donazioni per ogni chilometro, possiamo **tirare su** molti soldi in modo semplice e divertente."
+      ],
+      "conditional": [
+        "Sceglierei la vendita se avessimo poco tempo per organizzare tutto.",
+        "Invece, organizzerei la camminata se volessimo coinvolgere tutta la scuola in un **evento** sportivo.",
+        "Per esempio, vendo torte se serve poco denaro, ma cammino se l'obiettivo è molto alto."
+      ]
+    }
+  },
+  {
+    "slug": "tutor-or-conversation-group",
+    "title": "Come migliori il tuo inglese?",
+    "prompt": "Hai un'ora a settimana per fare pratica di inglese. Preferisci un tutor privato o un piccolo gruppo di conversazione?",
+    "conditionalPrompt": "Spiega quando sceglieresti l'una o l'altra opzione con un esempio.",
+    "options": [
+      {
+        "label": "Tutor privato",
+        "description": "Esercita le abilità difficili e chiedi correzioni specifiche."
+      },
+      {
+        "label": "Gruppo conversazione",
+        "description": "Parla con persone diverse e impara a mantenere la conversazione."
+      }
+    ],
+    "vocabulary": {
+      "nouns": [
+        ["competenza", "capacità acquisita", "La mia competenza orale è migliorata molto quest'anno."],
+        ["correzione", "atto di correggere un errore", "Chiedo sempre una correzione immediata per imparare meglio."],
+        ["imbarazzo", "sensazione di disagio", "Parlare in gruppo mi aiuta a superare ogni imbarazzo."],
+        ["progresso", "miglioramento graduale", "Voglio vedere un progresso costante nel mio inglese."]
+      ],
+      "phrasalVerbs": [
+        ["andare avanti", "proseguire nel discorso", "È difficile andare avanti quando non trovo le parole."],
+        ["tirar fuori", "esprimere un'idea", "Devo tirar fuori il coraggio per parlare con stranieri."],
+        ["mettersi in gioco", "affrontare una sfida", "Il gruppo mi aiuta a mettermi in gioco ogni volta."],
+        ["venire a capo", "risolvere un dubbio", "Con il tutor riesco a venire a capo della grammatica."]
+      ],
+      "adjectives": [
+        ["efficace", "che produce risultati", "Il tutor privato è un metodo molto efficace per me."],
+        ["timido", "che ha paura di parlare", "Ero molto timido, ma ora parlo con tutti tranquillamente."],
+        ["vario", "che ha molte forme", "Il gruppo offre un ambiente vario e stimolante."],
+        ["specifico", "preciso e particolare", "Ho bisogno di un aiuto specifico per la pronuncia."]
+      ],
+      "connectors": [
+        ["inoltre", "aggiunge un punto", "Il tutor è utile; inoltre, è molto flessibile."],
+        ["tuttavia", "contrasto", "Il gruppo è divertente; tuttavia, parlo meno spesso."],
+        ["infatti", "conferma", "Il tutor mi corregge; infatti, faccio meno errori."],
+        ["piuttosto che", "scelta", "Preferisco il gruppo, piuttosto che studiare da solo."]
+      ]
+    },
+    "models": {
+      "a": [
+        "Preferisco prenotare un tutor privato per la mia pratica settimanale.",
+        "È un metodo molto **efficace** perché posso concentrarmi sulle abilità che trovo più difficili.",
+        "**Inoltre**, chiedo sempre una **correzione** specifica per ogni mio errore, riuscendo così a fare un **progresso** costante."
+      ],
+      "b": [
+        "Trovo che un gruppo di conversazione sia la scelta migliore.",
+        "Parlando con persone diverse, imparo a mantenere la conversazione viva e supero ogni **imbarazzo** iniziale.",
+        "**Inoltre**, è un ambiente molto **vario** dove posso ascoltare opinioni differenti e mettermi in gioco costantemente."
+      ],
+      "conditional": [
+        "Sceglierei il tutor privato se avessi bisogno di una **correzione** immediata per migliorare la mia **competenza** grammaticale.",
+        "**Invece**, mi iscriverei al gruppo se volessi **mettermi in gioco** parlando con persone diverse.",
+        "La scelta dipende dall'obiettivo: il tutor è più **efficace** per lo studio, **piuttosto che** il gruppo, che serve per la fluidità."
+      ]
+    }
+  }
+]

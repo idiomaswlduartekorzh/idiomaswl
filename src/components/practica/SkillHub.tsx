@@ -78,30 +78,28 @@ export default function SkillHub({
 }: SkillHubProps) {
   const language = langHref.match(/^\/practica\/(ingles|frances|aleman|italiano|portugues|ruso|japones|coreano)$/)?.[1]
   const level = levelLabel.toLowerCase()
-  const speakingBase = language && /^(a1|a2|b1|b2|c1|c2)$/.test(level)
+  const speakingHref = language && /^(a1|a2|b1|b2|c1|c2)$/.test(level)
     ? `/practica/${language}/${level}/habla`
     : null
-  const hasSpeakingHub = language === 'ingles' || level === 'a2'
-  const speakingHref = speakingBase ? `${speakingBase}${hasSpeakingHub ? '' : '/solo'}` : null
   const advancedSpeaking: Record<string, { name: string; desc: string; count: string }> = {
     ingles: { name: 'Speaking', desc: 'Improvise with surprise words or practise making a case with vocabulary and model answers.', count: '20 improvisation questions · 20 dilemmas' },
-    frances: { name: 'Expression orale', desc: '20 questions et six mots surprise dans chaque défi oral.', count: '20 questions' },
-    aleman: { name: 'Sprechen', desc: '20 Fragen und sechs überraschende Wörter pro Sprechaufgabe.', count: '20 Fragen' },
-    italiano: { name: 'Espressione orale', desc: '20 domande e sei parole a sorpresa in ogni sfida orale.', count: '20 domande' },
-    portugues: { name: 'Expressão oral', desc: '20 perguntas e seis palavras surpresa em cada desafio oral.', count: '20 perguntas' },
-    ruso: { name: 'Expresión oral', desc: '20 preguntas de ruso con seis palabras sorpresa por reto.', count: '20 preguntas' },
-    japones: { name: 'Expresión oral', desc: '20 preguntas de japonés con seis palabras sorpresa por reto.', count: '20 preguntas' },
-    coreano: { name: 'Expresión oral', desc: '20 preguntas de coreano con seis palabras sorpresa por reto.', count: '20 preguntas' },
+    frances: { name: 'Expression orale', desc: 'Improvise avec des mots surprises ou prépare une réponse à un dilemme.', count: '20 questions · 20 dilemmes' },
+    aleman: { name: 'Sprechen', desc: 'Improvisiere mit Überraschungswörtern oder begründe eine Position.', count: '20 Fragen · 20 Dilemmata' },
+    italiano: { name: 'Espressione orale', desc: 'Improvvisa con parole a sorpresa o prepara una risposta a un dilemma.', count: '20 domande · 20 dilemmi' },
+    portugues: { name: 'Expressão oral', desc: 'Improvise com palavras surpresa ou prepare uma resposta a um dilema.', count: '20 perguntas · 20 dilemas' },
+    ruso: { name: 'Expresión oral', desc: 'Improvisa en ruso o defiende una postura con vocabulario y modelos.', count: '20 preguntas · 20 dilemas' },
+    japones: { name: 'Expresión oral', desc: 'Improvisa en japonés o defiende una postura con vocabulario y modelos.', count: '20 preguntas · 20 dilemas' },
+    coreano: { name: 'Expresión oral', desc: 'Improvisa en coreano o defiende una postura con vocabulario y modelos.', count: '20 preguntas · 20 dilemas' },
   }
   const soloSpeakingCopy = language === 'ingles'
     ? { desc: 'Practica con preguntas de improvisación, dilemas y juegos de rol.', count: '20 preguntas · 20 dilemas' }
-    : { desc: '20 preguntas para hablar solo, con seis palabras sorpresa en cada reto.', count: '20 preguntas' }
+    : { desc: 'Practica con preguntas de improvisación y dilemas de conversación.', count: '20 preguntas · 20 dilemas' }
   const displayedSkills = skills.map((skill) => skill.id === 'habla' && speakingHref
     ? { ...skill, ...(/^(b2|c1|c2)$/.test(level) ? {} : soloSpeakingCopy), href: speakingHref, available: true }
     : skill)
   if (speakingHref && /^(b2|c1|c2)$/.test(level) && !displayedSkills.some((skill) => skill.id === 'habla')) {
     const copy = advancedSpeaking[language ?? 'ingles']
-    displayedSkills.push({ id: 'habla', name: copy.name, eng: copy.name, desc: copy.desc, count: copy.count, href: language === 'ingles' ? speakingHref : `${speakingBase}/solo`, available: true })
+    displayedSkills.push({ id: 'habla', name: copy.name, eng: copy.name, desc: copy.desc, count: copy.count, href: speakingHref, available: true })
   }
   return (
     <div className="wlp-page" style={{ '--wlp-accent': accent } as React.CSSProperties}>
