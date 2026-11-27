@@ -3,9 +3,9 @@ import type { GrammarTopic } from '@/data/grammar/types'
 import type { GermanGrammarLevel } from '@/data/german-grammar-resources'
 import { getGermanGrammarResource } from '@/data/german-grammar-resources'
 import GermanGrammarLesson from '@/components/grammar/GermanGrammarLesson'
-import GermanClockLesson from '@/components/grammar/GermanClockLesson'
+import ClockLesson from '@/components/grammar/ClockLesson'
 import TopicNav from '@/components/grammar/TopicNav'
-import { grammarVisualImageObject, grammarVisualUrl } from '@/lib/grammar-visual'
+import { grammarVisualImageObject, grammarVisualPath, grammarVisualUrl } from '@/lib/grammar-visual'
 
 export default function GermanGrammarTopicPage({ topic, level }: { topic: GrammarTopic; level: GermanGrammarLevel }) {
   const levelLabel = level.toUpperCase()
@@ -56,7 +56,7 @@ export default function GermanGrammarTopicPage({ topic, level }: { topic: Gramma
             <span style={{ color: topic.color, fontWeight: 800 }}>{topic.shortTitle}</span>
           </nav>
           {clocks?.length
-            ? <GermanClockLesson topic={topic} level={level} clocks={clocks} />
+            ? <ClockLesson topic={topic} language="aleman" clocks={clocks} resource={resource} visualUrl={grammarVisualPath('aleman', level, topic.slug)} />
             : <GermanGrammarLesson topic={topic} level={level} />}
           <TopicNav idioma="aleman" nivel={level} slug={topic.slug}
             indexLabel={`${clocks ? 'Gramática' : 'Grammatik'} ${levelLabel}`} uiLanguage={clocks ? 'es' : 'de'} />

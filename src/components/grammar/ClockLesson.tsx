@@ -1,20 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { ClockConversation, ClockExample, GrammarTopic } from '@/data/grammar/types'
-import { getGermanGrammarResource, type GermanGrammarLevel } from '@/data/german-grammar-resources'
-import { grammarVisualPath } from '@/lib/grammar-visual'
+import { clockHub, clockLanguages, type ClockLanguage } from '@/data/clock-lessons/catalog'
 import { protectedMaterialHref } from '@/lib/material-download'
 import GrammarTopicClient from './GrammarTopicClient'
-import { GermanClockExplorer } from './GermanClockExplorer'
-import { GermanClockFace, GermanClockGallery } from './GermanClockVisuals'
-import styles from './GermanClockLesson.module.css'
+import { ClockExplorer } from './ClockExplorer'
+import { ClockFace, ClockGallery } from './ClockVisuals'
+import styles from './ClockLesson.module.css'
 
 const sections = [
   ['leer', 'Leer el reloj'], ['situaciones', 'Conversaciones'], ['relojes', 'Seis relojes'],
   ['dudas', 'Dudas frecuentes'], ['ejercicios', 'Ejercicios'], ['materiales', 'PDF'],
 ]
 
-function Conversation({ scene }: { scene: ClockConversation }) {
+function Conversation({ scene, lang }: { scene: ClockConversation; lang: string }) {
   return (
     <article className={styles.scene}>
       <Image src={`/images/grammar/aleman/uhrzeit/${scene.image}.webp`} alt={scene.alt} width={768} height={512}
@@ -25,8 +24,8 @@ function Conversation({ scene }: { scene: ClockConversation }) {
         {scene.exchanges.map((exchange) => (
           <div className={styles.exchange} key={exchange.time}>
             <span className={styles.sceneTime}>{exchange.time}</span>
-            <p lang="de">{exchange.question}</p><span>{exchange.questionEs}</span>
-            <p lang="de">{exchange.answer}</p><span>{exchange.answerEs}</span>
+            <p lang={lang}>{exchange.question}</p>{exchange.questionReading && <small>{exchange.questionReading}</small>}<span>{exchange.questionEs}</span>
+            <p lang={lang}>{exchange.answer}</p>{exchange.answerReading && <small>{exchange.answerReading}</small>}<span>{exchange.answerEs}</span>
           </div>
         ))}
       </div>
@@ -34,21 +33,25 @@ function Conversation({ scene }: { scene: ClockConversation }) {
   )
 }
 
-export default function GermanClockLesson({ topic, level, clocks }: {
+export default function ClockLesson({ topic, language, clocks, resource, visualUrl, reference }: {
   topic: GrammarTopic
-  level: GermanGrammarLevel
+  language: ClockLanguage
   clocks: ClockExample[]
+  resource: { pdf: string; exercisesPdf: string; answerKeyPdf: string }
+  visualUrl?: string
+  reference?: [string, string]
 }) {
-  const resource = getGermanGrammarResource(topic, level)
+  const { lang, name, title, native, related } = clockLanguages[language]
+  const languageName = name.toLowerCase()
   const intro = topic.seo.find((section) => section.clockReading)
   const scenes = topic.seo.find((section) => section.clockConversations)
   const references = topic.seo.filter((section) => !section.clockReading && !section.clockConversations)
 
   return (
-    <article className={styles.lesson} aria-labelledby="german-grammar-title">
+    <article data-clock-page className={styles.lesson} aria-labelledby="clock-lesson-title">
       <header className={styles.intro}>
-        <p className={styles.kicker} lang="de">Deutsch {level.toUpperCase()} · Die Uhrzeit</p>
-        <h1 id="german-grammar-title">La hora en alemán</h1>
+        <p className={styles.kicker} lang={lang}>{native} A1 · {title}</p>
+        <h1 id="clock-lesson-title">La hora en {languageName}</h1>
         <p>{topic.lead}</p>
       </header>
       <nav className={styles.nav} aria-label="Apartados de la lección">
@@ -58,35 +61,35 @@ export default function GermanClockLesson({ topic, level, clocks }: {
       <section id="leer" className={styles.section}>
         <h2>{intro?.heading}</h2>
         <p className={styles.sectionLead}>{intro?.paragraphs[0]}</p>
-        <GermanClockExplorer examples={clocks} />
+        <ClockExplorer examples={clocks} lang={lang} />
       </section>
 
       {scenes?.clockConversations && (
         <section id="situaciones" className={styles.section}>
           <h2>{scenes.heading}</h2>
           <p className={styles.sectionLead}>{scenes.paragraphs[0]}</p>
-          <div className={styles.scenes}>{scenes.clockConversations.map((scene) => <Conversation key={scene.title} scene={scene} />)}</div>
+          <div className={styles.scenes}>{scenes.clockConversations.map((scene) => <Conversation key={scene.title} scene={scene} lang={lang} />)}</div>
         </section>
       )}
 
       <section id="relojes" className={styles.section}>
         <h2>De las tres a las cuatro</h2>
         <p className={styles.sectionLead}>Sigue la aguja larga desde el 12 hasta el 11. Lee en voz alta cómo se dice cada hora.</p>
-        <GermanClockGallery examples={clocks} />
-        <a className={styles.textLink} href={grammarVisualPath('aleman', level, topic.slug)}>Abrir la lámina de los seis relojes</a>
+        <ClockGallery examples={clocks} lang={lang} />
+        {visualUrl && <a className={styles.textLink} href={visualUrl}>Abrir la lámina de los seis relojes</a>}
       </section>
 
       <section id="dudas" className={styles.section}>
         <h2>Dudas frecuentes al decir la hora</h2>
         <div className={styles.tips}>{topic.guide.clockTips?.map((tip) => (
           <div className={styles.tip} key={tip.cue}>
-            <div><h3>{tip.cue}</h3><p lang="de">{tip.example}</p></div>
+            <div><h3>{tip.cue}</h3><p lang={lang}>{tip.example}</p></div>
             <div>
               <p>{tip.explanation}</p>
               {tip.comparison && <div className={styles.comparison}>
                 {tip.comparison.map((clock) => <figure key={clock.digital}>
-                  <GermanClockFace clock={clock} />
-                  <figcaption><span>{clock.digital}</span><strong lang="de">{clock.spoken}</strong></figcaption>
+                  <ClockFace clock={clock} />
+                  <figcaption><span>{clock.digital}</span><strong lang={lang}>{clock.spoken}</strong></figcaption>
                 </figure>)}
               </div>}
             </div>
@@ -110,7 +113,7 @@ export default function GermanClockLesson({ topic, level, clocks }: {
       <section id="ejercicios" className={styles.section}>
         <h2>Ahora te toca decir la hora</h2>
         <p className={styles.sectionLead}>Empieza por leer las agujas. Con el 65 % de aciertos se abre el siguiente nivel.</p>
-        <GrammarTopicClient topic={topic} idioma="aleman" nivel={level} mode="practiceOnly" uiLanguage="es" />
+        <GrammarTopicClient topic={topic} idioma={language} nivel="a1" mode="practiceOnly" uiLanguage="es" />
       </section>
 
       <section id="materiales" className={styles.section}>
@@ -120,8 +123,14 @@ export default function GermanClockLesson({ topic, level, clocks }: {
             <a key={url} href={protectedMaterialHref(url)} download><span>{label}</span><small>PDF ↓</small></a>
           ))}
         </div>
+        {reference && <p className={styles.source}>Para seguir practicando · <a href={reference[1]}>{reference[0]}</a></p>}
       </section>
-      <aside className={styles.more} aria-label="Más alemán"><Link href="/nivel-radar" data-german-cta="level-test">Prueba de nivel</Link><Link href="/clases-de-aleman" data-german-cta="classes">Clases de alemán</Link></aside>
+      <aside className={styles.more} aria-label="Más recursos">
+        <Link href={clockHub}>La hora en otros idiomas</Link>
+        {related && language !== 'aleman' && <Link href={`/practica/${language}/a1/gramatica/${related}`}>Continuar con el curso de {languageName}</Link>}
+        <Link href="/nivel-radar" data-german-cta={language === 'aleman' ? 'level-test' : undefined}>Prueba de nivel</Link>
+        <Link href={`/clases-de-${language}`} data-german-cta={language === 'aleman' ? 'classes' : undefined}>Clases de {languageName}</Link>
+      </aside>
     </article>
   )
 }

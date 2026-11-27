@@ -874,6 +874,11 @@ button {
   .wl-site-nav__links, .wl-site-nav__cta { display: none; }
   .wl-site-nav__toggle { display: flex; }
 }
+@media (min-width: 1021px) and (max-width: 1199px) {
+  body:has([data-clock-page]) .wl-site-nav__links,
+  body:has([data-clock-page]) .wl-site-nav__cta { display: none; }
+  body:has([data-clock-page]) .wl-site-nav__toggle { display: flex; }
+}
 
 /* 
    HOME PAGE

@@ -1,9 +1,9 @@
 import { Fragment } from 'react'
 import type { ClockExample } from '@/data/grammar/types'
-import { GermanClockFace } from './GermanClockVisuals'
-import styles from './GermanClockLesson.module.css'
+import { ClockFace } from './ClockVisuals'
+import styles from './ClockLesson.module.css'
 
-export function GermanClockExplorer({ examples }: { examples: ClockExample[] }) {
+export function ClockExplorer({ examples, lang }: { examples: ClockExample[]; lang: string }) {
   const initial = examples.find((clock) => clock.minute === 30) ?? examples[0]
   return (
     <fieldset className={styles.explorer}>
@@ -19,11 +19,12 @@ export function GermanClockExplorer({ examples }: { examples: ClockExample[] }) 
               <label htmlFor={id}>{example.digital}</label>
               <div id={`lectura-${id}`} className={styles.demo} role="region" aria-label={`Lectura de las ${example.digital}`}>
                 <div className={styles.dial}>
-                  <GermanClockFace clock={example} />
+                  <ClockFace clock={example} />
                   <span>{example.digital}</span>
                 </div>
                 <div className={styles.reading}>
-                  <h3 lang="de">Es ist {example.spoken}.</h3>
+                  <h3 lang={lang}>{example.sentence ?? example.spoken}</h3>
+                  {example.pronunciation && <p className={styles.readingHelp}>{example.pronunciation}</p>}
                   <p className={styles.translation}>{example.meaning.startsWith('las ') ? 'Son' : 'Es'} {example.meaning}.</p>
                   <dl className={styles.hands}>
                     <div><dt className={styles.shortHand}>Aguja corta · hora</dt><dd>{example.hourHint}</dd></div>

@@ -1,5 +1,5 @@
 import type { ClockExample, ClockTime } from '@/data/grammar/types'
-import styles from './GermanClockVisuals.module.css'
+import styles from './ClockVisuals.module.css'
 
 function point(angle: number, radius: number) {
   const radians = ((angle - 90) * Math.PI) / 180
@@ -23,7 +23,7 @@ function handDescription({ hour, minute }: ClockTime) {
   return `${shortHand}. ${longHand.charAt(0).toUpperCase()}${longHand.slice(1)}.`
 }
 
-export function GermanClockFace({ clock, className = '' }: { clock: ClockTime; className?: string }) {
+export function ClockFace({ clock, className = '' }: { clock: ClockTime; className?: string }) {
   const hourEnd = point(((clock.hour % 12) + clock.minute / 60) * 30, 40)
   const minuteEnd = point(clock.minute * 6, 56)
 
@@ -51,14 +51,14 @@ export function GermanClockFace({ clock, className = '' }: { clock: ClockTime; c
   </svg>
 }
 
-export function GermanClockGallery({ examples }: { examples: ClockExample[] }) {
+export function ClockGallery({ examples, lang }: { examples: ClockExample[]; lang: string }) {
   return <div className={styles.gallery} aria-label="Relojes de ejemplo">
     <p className={styles.legend}><span><i className={styles.hourKey} /> Corta · horas</span><span><i className={styles.minuteKey} /> Larga · minutos</span></p>
     <div className={styles.grid}>
       {examples.map((example) => <figure key={example.digital} className={styles.card}>
-        <div className={styles.cardTop}><GermanClockFace clock={example} /><span className={styles.digital}>{example.digital}</span></div>
+        <div className={styles.cardTop}><ClockFace clock={example} /><span className={styles.digital}>{example.digital}</span></div>
         <figcaption>
-          <strong lang="de">{example.spoken}</strong>
+          <strong lang={lang}>{example.spoken}</strong>
           <span>{example.meaning}</span>
         </figcaption>
       </figure>)}

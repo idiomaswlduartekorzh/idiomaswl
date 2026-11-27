@@ -1,3 +1,4 @@
+import { ClockLessonEntry } from '@/components/grammar/ClockLessonEntry'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -80,6 +81,7 @@ export default function GrammarIndexPage() {
             <dl><div><dt>{topics.length}</dt><dd>lecciones</dd></div><div><dt>5–6</dt><dd>niveles por tema</dd></div><div><dt>75+</dt><dd>recursos nuevos</dd></div></dl>
           </section>
 
+          <ClockLessonEntry language="japones" />
           <div className={styles.route}>
             {stages.map((stage) => (
               <section key={stage.number} className={styles.stage}>

@@ -7,6 +7,8 @@ export interface ClockExample extends ClockTime {
   digital: string
   spoken: string
   meaning: string
+  sentence?: string
+  pronunciation?: string
   note: string
   hourHint: string
   minuteHint: string
@@ -21,6 +23,8 @@ export interface ClockConversation {
     time: string
     question: string
     questionEs: string
+    questionReading?: string
+    answerReading?: string
     answer: string
     answerEs: string
   }>
@@ -43,6 +47,7 @@ export interface ChoiceItem {
 }
 
 export interface Blank {
+  clockLanguage?: string
   options?: string[]
   answer: string
   accepted?: string[]
@@ -57,6 +62,7 @@ export interface DualItem {
 }
 
 export interface WriteItem {
+  clockLanguage?: string
   scene: string
   prompt: string
   answer: string

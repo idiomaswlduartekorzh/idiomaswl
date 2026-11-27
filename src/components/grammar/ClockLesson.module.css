@@ -97,3 +97,8 @@
   .selector { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .reference :is(td, th) { padding: .45rem .25rem; font-size: .83rem; }
 }
+
+.readingHelp, .exchange small { display: block; margin: .18rem 0; color: var(--muted); font-size: .91rem; }
+.source { margin: 1.15rem 0 0; font-size: .95rem; }
+.source a { color: var(--ink); text-underline-offset: .2em; }
+.reading h3, .sceneText, .comparison strong { overflow-wrap: anywhere; }

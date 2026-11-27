@@ -1,3 +1,4 @@
+import { clockLanguages, type ClockLanguage } from '@/data/clock-lessons/catalog'
 import type { ClockExample } from '@/data/grammar/types'
 
 function xml(value: string) {
@@ -22,9 +23,7 @@ function textLines(value: string, x: number, firstBaseline: number, maxCharacter
   return lines.map((line, i) => `<tspan x="${x}" y="${firstBaseline + i * lineHeight}">${xml(line)}</tspan>`).join('')
 }
 
-function clockSvg(example: ClockExample, x: number, y: number) {
-  const cx = x + 73
-  const cy = y + 94
+function dial(example: ClockExample, cx: number, cy: number) {
   const hour = position(cx, cy, ((example.hour % 12) + example.minute / 60) * 30, 24)
   const minute = position(cx, cy, example.minute * 6, 34)
   const ticks = Array.from({ length: 12 }, (_, index) => {
@@ -37,22 +36,26 @@ function clockSvg(example: ClockExample, x: number, y: number) {
     const p = position(cx, cy, number * 30, 42)
     return `<text x="${p.x}" y="${p.y}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="700" fill="#302c25">${number}</text>`
   }).join('')
-  const labelX = x + 148
-
-  return `<g>
-    <rect x="${x}" y="${y}" width="360" height="188" rx="18" fill="#fffdf8" stroke="#d6c8aa" stroke-width="2"/>
-    <circle cx="${cx}" cy="${cy}" r="57" fill="#fffdf5" stroke="#242424" stroke-width="3"/>
+  return `<circle cx="${cx}" cy="${cy}" r="57" fill="#fffdf5" stroke="#242424" stroke-width="3"/>
     ${ticks}${numerals}
     <line x1="${cx}" y1="${cy}" x2="${hour.x}" y2="${hour.y}" stroke="#244363" stroke-width="6" stroke-linecap="round"/>
     <line x1="${cx}" y1="${cy}" x2="${minute.x}" y2="${minute.y}" stroke="#ba4a32" stroke-width="3.5" stroke-linecap="round"/>
-    <circle cx="${cx}" cy="${cy}" r="4" fill="#242424"/>
+    <circle cx="${cx}" cy="${cy}" r="4" fill="#242424"/>`
+}
+
+function clockSvg(example: ClockExample, x: number, y: number) {
+  const labelX = x + 148
+
+  return `<g data-clock-card="">
+    <rect x="${x}" y="${y}" width="360" height="188" rx="18" fill="#fffdf8" stroke="#d6c8aa" stroke-width="2"/>
+    ${dial(example, x + 73, y + 94)}
     <text x="${labelX}" y="${y + 63}" font-size="19" font-weight="700" fill="#805516">${xml(example.digital)}</text>
     <text lang="de" font-size="20" font-weight="700" fill="#171717">${textLines(example.spoken, labelX, y + 94, 19, 21)}</text>
     <text lang="es" font-size="16" fill="#4e4638">${textLines(example.meaning, labelX, y + 128, 25, 18)}</text>
   </g>`
 }
 
-export function germanClockInfographic(examples: ClockExample[]) {
+function germanClockInfographic(examples: ClockExample[]) {
   const cards = examples.slice(0, 6).map((example, index) => clockSvg(example, 40 + (index % 3) * 380, 170 + Math.floor(index / 3) * 205)).join('')
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" font-family="Arial, Helvetica, sans-serif">
     <title id="title">Leer relojes y decir la hora en alemán A1</title>
@@ -66,5 +69,39 @@ export function germanClockInfographic(examples: ClockExample[]) {
     <line x1="40" y1="588" x2="1160" y2="588" stroke="#ddc987"/>
     <text x="40" y="615" font-size="15" fill="#4e4638">Aguja corta azul · Aguja larga roja · <tspan font-weight="700">halb vier = 03:30</tspan></text>
     <text x="1160" y="615" text-anchor="end" font-size="15" font-weight="700" fill="#856100">idiomaswl.com</text>
+  </svg>`
+}
+
+function bilingualCard(example: ClockExample, x: number, y: number, lang: string) {
+  const reading = example.pronunciation
+    ? `<text lang="es" font-size="15" fill="#605449">${textLines(example.pronunciation, x + 154, y + 82, 24, 17)}</text>`
+    : ''
+  return `<g data-clock-card="">
+    <rect x="${x}" y="${y}" width="360" height="210" rx="18" fill="#fffdf8" stroke="#d6c8aa" stroke-width="2"/>
+    ${dial(example, x + 80, y + 72)}
+    <text x="${x + 154}" y="${y + 65}" font-size="31" font-weight="700" fill="#805516">${xml(example.digital)}</text>
+    ${reading}
+    <text lang="${lang}" font-size="21" font-weight="700" fill="#171717">${textLines(example.spoken, x + 19, y + 151, 26, 23)}</text>
+    <text lang="es" x="${x + 19}" y="${y + 195}" font-size="17" fill="#4e4638">${xml(example.meaning)}</text>
+  </g>`
+}
+
+export function clockInfographic(examples: ClockExample[], language: ClockLanguage) {
+  if (language === 'aleman') return germanClockInfographic(examples)
+  const { name, lang, title } = clockLanguages[language]
+  const cards = examples.map((example, index) =>
+    bilingualCard(example, 40 + (index % 3) * 380, 131 + Math.floor(index / 3) * 225, lang)
+  ).join('')
+  return `<svg xmlns="http://www.w3.org/2000/svg" lang="es" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" font-family="system-ui, sans-serif">
+    <title id="title">La hora en ${xml(name.toLowerCase())}</title>
+    <desc id="description">Seis relojes de las tres a las cuatro con su lectura en ${xml(name.toLowerCase())} y en español.</desc>
+    <rect width="1200" height="630" fill="#fff9e8"/>
+    <rect width="1200" height="10" fill="#d7a300"/>
+    <text x="40" y="48" font-size="17" font-weight="700" fill="#74541b">WELEARN · ${xml(name.toLocaleUpperCase('es'))} A1</text>
+    <text lang="${lang}" x="40" y="100" font-size="41" font-weight="700" fill="#171717">${xml(title)}</text>
+    ${cards}
+    <line x1="40" y1="585" x2="1160" y2="585" stroke="#d6c8aa"/>
+    <text x="40" y="613" font-size="17" fill="#4e4638">La aguja corta azul marca la hora. La larga roja marca los minutos.</text>
+    <text x="1160" y="613" text-anchor="end" font-size="16" fill="#74541b">idiomaswl.com</text>
   </svg>`
 }

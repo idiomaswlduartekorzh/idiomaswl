@@ -1,3 +1,4 @@
+import { ClockLessonEntry } from '@/components/grammar/ClockLessonEntry'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { GrammarTopic } from '@/data/grammar/types'
@@ -65,6 +66,7 @@ export default function KoreanGrammarIndex({ level, topics }: { level: KoreanGra
             <Link href={`/practica/coreano/${level}/gramatica/${previewSlug}`}>Abrir primera lección <b>→</b></Link>
           </aside>
         </header>
+        {level === 'a1' && <ClockLessonEntry language="coreano" />}
 
         <section className={styles.method} aria-label="Método de estudio">
           <div><span>01</span><b>Comprende</b><p>Explicación directa para hispanohablantes.</p></div>

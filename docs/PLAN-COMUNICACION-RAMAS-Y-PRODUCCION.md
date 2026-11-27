@@ -5,6 +5,14 @@ Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implem
 
 Fecha de corte: 25 de agosto de 2026.
 
+## La hora en los ocho idiomas de gramática A1 — 26 de noviembre de 2026
+
+- Estado `EN_VALIDACION` en el [PR #67](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/67). El índice es `/practica/la-hora`. Cada colección A1 enlaza a su taller y la ruta de alemán sigue siendo `/practica/aleman/a1/gramatica/uhrzeit`.
+- Inglés, francés, italiano, portugués de Brasil, coreano, japonés y ruso tienen ejemplos y explicaciones propios. Los ocho talleres incluyen seis relojes seleccionables, una lámina, conversaciones bilingües en tres escenas y práctica en seis niveles. Coreano, japonés y ruso añaden una lectura en letras latinas.
+- Las guías, los cuadernos y las soluciones usan los mismos ejemplos que la web. Se añadieron 21 PDF a los tres de alemán. Se revisaron los caracteres, las manecillas y la paginación de las siete series nuevas.
+- Las respuestas escritas se comprueban por hora y contexto. En alemán se admiten «Um drei.» y «Es ist zehn Minuten nach fünf.» donde corresponden. El último nivel comprueba la hora indicada en cada situación.
+- El recorrido local de Chromium completó los 48 niveles, con 328 respuestas modelo y un segundo intento con horas erróneas en el nivel final de cada idioma. WebKit verificó el selector y el avance de la primera pregunta en los ocho talleres.
+
 ## La hora en alemán A1 — actualización del 25 de noviembre de 2026
 
 - La rama `codex/german-time-clocks-20261119` parte de la lección auditada en `3a6e2a38d`. La revisión visual incorpora `main@c4e8e2c79`. Su estado es `EN_VALIDACION`.
@@ -15,7 +23,7 @@ Fecha de corte: 25 de agosto de 2026.
 - La auditoría local del 19 de noviembre recorrió los seis niveles. Las soluciones modelo obtuvieron 41/41. En el nivel 6, cuatro respuestas que omitían la hora o indicaban otra también recibieron 4/4. Los niveles 4 y 5 rechazaron respuestas válidas como «Um drei.» y «Es ist zehn Minuten nach fünf.».
 - Tras revisar las capturas del propietario, la lección presenta seis horas seleccionables, tres conversaciones ilustradas con traducción y una comparación entre las 2:30 y las 3:30. Los rótulos de la lámina comparten alineación y las secciones se abren desde un índice en español. La guía impresa incorpora las mismas escenas y ejemplos. Se corrigieron «um ocho» y las cruces junto a frases correctas.
 - El recorrido en navegador pasó a 320, 390, 768, 1020 y 1440 píxeles. Se probaron el selector con teclado y con JavaScript desactivado, el modo oscuro, los tres diálogos, la primera actividad y los 18 rótulos de la lámina. La guía de nueve páginas se renderizó para revisar los ejemplos impresos.
-- La revisión visual se entrega en el mismo borrador. Queda pendiente la calificación de las respuestas abiertas documentada el 19 de noviembre.
+- La revisión visual se entregó en el mismo borrador. La ampliación del 26 de noviembre recoge el ajuste de calificación detectado el 19.
 
 ## Dilemas de Speaking en inglés A1–C2 — 26 de noviembre de 2026
 

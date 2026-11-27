@@ -13,7 +13,8 @@ import type {
   Blank,
 } from '@/data/grammar/types'
 import { useGrammarProgress } from '@/components/grammar/useGrammarProgress'
-import { GermanClockFace } from '@/components/grammar/GermanClockVisuals'
+import { matchesClockAnswer } from '@/lib/clock-answer'
+import { ClockFace } from '@/components/grammar/ClockVisuals'
 import PdfDownloadButton from '@/components/practica/PdfDownloadButton'
 import { WritingFeedbackReview } from '@/components/writing/WritingFeedbackReview'
 import { canRenderPdf } from '@/lib/pdf/languages'
@@ -107,9 +108,10 @@ function norm(s: string) {
   return s.toLowerCase().trim().replace(/[.,!?]/g, '').replace(/\s+/g, ' ')
 }
 
-function matchAnswer(user: string, answer: string, accepted?: string[]) {
-  const u = norm(user)
-  return u === norm(answer) || (accepted ?? []).some((a) => u === norm(a))
+function matchAnswer(user: string, answer: string, accepted?: string[], clockLanguage?: string) {
+  if (clockLanguage) return matchesClockAnswer(user, answer, accepted ?? [], clockLanguage)
+  const entered = norm(user)
+  return entered === norm(answer) || (accepted ?? []).some(value => norm(value) === entered)
 }
 
 // Pistas objetivo en alfabeto latino nombradas en el enunciado tras un disparador
@@ -144,7 +146,7 @@ function writeCues(item: WriteItem): string[] {
 // Cambio monótono: nada que hoy se marque correcto pasa a incorrecto; solo se
 // recupera producción libre válida que antes se marcaba en rojo indebidamente.
 function evaluateWrite(item: WriteItem, user: string): boolean {
-  if (matchAnswer(user, item.answer, item.accepted)) return true
+  if (matchAnswer(user, item.answer, item.accepted, item.clockLanguage)) return true
   if (item.strict) return false
   const u = norm(user)
   if (!u) return false
@@ -205,7 +207,7 @@ function scoreLevel(level: Level, answers: Record<string, string>): { score: num
       const blank = l.blanks[i]
       if (!blank) return // hueco extra sin respuesta: no puntúa (evita bloqueo)
       total++
-      if (matchAnswer(answers[`${i}`] ?? '', blank.answer, blank.accepted)) score++
+      if (matchAnswer(answers[`${i}`] ?? '', blank.answer, blank.accepted, blank.clockLanguage)) score++
     })
     return { score, total }
   }
@@ -470,7 +472,7 @@ function ChoicePractice({
         </div>
       </div>
       <span className="scene-label">{item.scene}</span>
-      {item.clock && <div className="clock-question"><GermanClockFace clock={item.clock} /><p>Azul: hora · Rojo: minutos</p></div>}
+      {item.clock && <div className="clock-question"><ClockFace clock={item.clock} /><p>Azul: hora · Rojo: minutos</p></div>}
       <div className="dialogue">
         {item.lines.map(([speaker, text], li) => (
           <div key={li} className="dialogue-line">
@@ -577,7 +579,7 @@ function DualPractice({
         </div>
       </div>
       <span className="scene-label">{item.scene}</span>
-      {item.clock && <div className="clock-question"><GermanClockFace clock={item.clock} /><p>Azul: hora · Rojo: minutos</p></div>}
+      {item.clock && <div className="clock-question"><ClockFace clock={item.clock} /><p>Azul: hora · Rojo: minutos</p></div>}
       <div className="dialogue">
         {item.lines.map((line, li) => (
           <Fragment key={li}>{renderLine(line)}</Fragment>
@@ -686,7 +688,7 @@ function WritePractice({
         </div>
       </div>
       <span className="scene-label">{item.scene}</span>
-      {item.clock && <div className="clock-question"><GermanClockFace clock={item.clock} /><p>Azul: hora · Rojo: minutos</p></div>}
+      {item.clock && <div className="clock-question"><ClockFace clock={item.clock} /><p>Azul: hora · Rojo: minutos</p></div>}
       <div className="write-card">
         <span className="write-card__label">{tr(uiLanguage, 'Instruction', 'Instrucción', 'Consigne')}</span>
         <p className="write-card__text">{item.prompt}</p>
@@ -767,7 +769,7 @@ function DeferredReview({ level, answers, uiLanguage }: { level: Level; answers:
         user: user || tr(uiLanguage, '(no answer)', '(sin respuesta)', '(sans réponse)'),
         correct: blank.answer,
         explain: blank.explain,
-        isGood: matchAnswer(user, blank.answer, blank.accepted),
+        isGood: matchAnswer(user, blank.answer, blank.accepted, blank.clockLanguage),
       })
     })
   } else if (level.type === 'write') {

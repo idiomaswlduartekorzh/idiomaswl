@@ -1,3 +1,4 @@
+import { ClockLessonEntry } from '@/components/grammar/ClockLessonEntry'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { generateGrammarIndexMetadata } from '@/lib/grammar-metadata'
@@ -45,6 +46,7 @@ export default function GrammarIndexPage() {
             <p className="gram-lead">Cada tema incluye explicación de especialista orientada al hispanohablante, laboratorio visual y práctica progresiva de 6 niveles. Supera el 65 % en cada nivel para desbloquear el siguiente.</p>
           </section>
 
+          <ClockLessonEntry language="ingles" />
           <div style={{ display: 'grid', gap: '0.9rem', paddingBottom: '3rem' }}>
             {topics.map((topic) => (
               <Link key={topic.slug} href={`/practica/${IDIOMA}/${NIVEL}/gramatica/${topic.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
