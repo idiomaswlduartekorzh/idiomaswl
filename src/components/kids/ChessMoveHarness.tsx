@@ -25,13 +25,13 @@ const files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 const ranks = [8, 7, 6, 5, 4, 3, 2, 1];
 
 const pieces: Partial<Record<SquareName, Piece>> = {
-  a1: { glyph: '♖', label: 'White rook', color: 'light' },
-  e1: { glyph: '♔', label: 'White king', color: 'light' },
-  e2: { glyph: '♙', label: 'White pawn', color: 'light' },
-  g1: { glyph: '♘', label: 'White knight', color: 'light' },
-  a7: { glyph: '♟', label: 'Black pawn', color: 'dark' },
-  e8: { glyph: '♚', label: 'Black king', color: 'dark' },
-  h8: { glyph: '♜', label: 'Black rook', color: 'dark' },
+  a1: { glyph: '♖', label: 'torre blanca', color: 'light' },
+  e1: { glyph: '♔', label: 'rey blanco', color: 'light' },
+  e2: { glyph: '♙', label: 'peón blanco', color: 'light' },
+  g1: { glyph: '♘', label: 'caballo blanco', color: 'light' },
+  a7: { glyph: '♟', label: 'peón negro', color: 'dark' },
+  e8: { glyph: '♚', label: 'rey negro', color: 'dark' },
+  h8: { glyph: '♜', label: 'torre negra', color: 'dark' },
 };
 
 const guidesByPiece: Partial<Record<SquareName, SquareName[]>> = {
@@ -42,24 +42,24 @@ const guidesByPiece: Partial<Record<SquareName, SquareName[]>> = {
 
 const scenarioCopy: Record<Scenario, { label: string; title: string; prompt: string }> = {
   guides: {
-    label: 'Move guides',
-    title: 'Pick a piece and see the path',
-    prompt: 'Choose a white piece to see its move guides.',
+    label: 'Movimientos',
+    title: 'Elige una pieza y mira sus opciones',
+    prompt: 'Toca una pieza blanca para ver las casillas sugeridas.',
   },
   wrong: {
-    label: 'Try again',
-    title: 'A friendly correction',
-    prompt: 'Choose the pawn, then tap d4 to preview the wrong-move animation.',
+    label: 'Intenta de nuevo',
+    title: 'Prueba otra casilla',
+    prompt: 'Selecciona el peón y toca d4 para ver cómo el tablero te avisa que pruebes de nuevo.',
   },
   correct: {
-    label: 'Good move',
-    title: 'Celebrate the idea',
-    prompt: 'Choose the pawn, then tap e4 to preview the correct-move animation.',
+    label: 'Buena jugada',
+    title: 'Prueba una jugada correcta',
+    prompt: 'Selecciona el peón y toca e4 para ver la confirmación.',
   },
   check: {
-    label: 'Check',
-    title: 'Notice the king in danger',
-    prompt: 'The yellow halo shows the king that needs attention before the next move.',
+    label: 'Jaque',
+    title: 'Así se señala un jaque',
+    prompt: 'El círculo amarillo muestra cómo se avisa que un rey está en jaque.',
   },
 };
 
@@ -123,20 +123,20 @@ export default function ChessMoveHarness() {
     <section id="practica" className={styles.harness} aria-labelledby="chess-harness-title" data-testid="chess-move-harness">
       <div className={styles.harnessHeader}>
         <div>
-          <p className={styles.eyebrow}>Board demo</p>
-          <h2 id="chess-harness-title">Try the chessboard</h2>
-          <p className={styles.intro}>Try the move guides and see what happens when you get a move right or wrong.</p>
+          <p className={styles.eyebrow}>Demostración del tablero</p>
+          <h2 id="chess-harness-title">Prueba el tablero de ajedrez</h2>
+          <p className={styles.intro}>Explora los movimientos sugeridos y mira cómo responde el tablero a tus jugadas.</p>
         </div>
         <div className={styles.headerActions}>
-          <a className={styles.practiceButton} href="/kids/ingles-ajedrez/practica">Start a puzzle</a>
+          <a className={styles.practiceButton} href="/kids/ingles-ajedrez/practica">Empezar la práctica en inglés</a>
           <div className={styles.statusBadge}>
             <span className={styles.statusDot} aria-hidden="true" />
-            <span>Ready to explore</span>
+            <span>Listo para explorar</span>
           </div>
         </div>
       </div>
 
-      <div className={styles.scenarioTabs} role="tablist" aria-label="Board demo scenarios">
+      <div className={styles.scenarioTabs} role="tablist" aria-label="Escenarios de la demostración">
         {(Object.keys(scenarioCopy) as Scenario[]).map((key) => (
           <button
             className={`${styles.scenarioTab} ${scenario === key ? styles.scenarioTabActive : ''}`}
@@ -155,17 +155,17 @@ export default function ChessMoveHarness() {
         <div id="chess-practice-board" className={styles.boardPanel}>
           <div className={styles.boardToolbar}>
             <div>
-              <span className={styles.kicker}>Scenario</span>
+              <span className={styles.kicker}>Escenario</span>
               <h3>{activeCopy.title}</h3>
             </div>
-            <button className={styles.resetButton} type="button" onClick={reset}>Reset</button>
+            <button className={styles.resetButton} type="button" onClick={reset}>Reiniciar</button>
           </div>
 
           <div className={styles.boardShell}>
             <div className={styles.rankLabels} aria-hidden="true">
               {ranks.map((rank) => <span key={rank}>{rank}</span>)}
             </div>
-            <div className={boardClassName()} role="grid" aria-label="Interactive chess board">
+            <div className={boardClassName()} role="grid" aria-label="Tablero interactivo de ajedrez">
               {ranks.flatMap((rank, row) => files.map((file, column) => {
                 const square = squareName(column, rank);
                 const piece = pieces[square];
@@ -189,7 +189,7 @@ export default function ChessMoveHarness() {
                     key={square}
                     type="button"
                     role="gridcell"
-                    aria-label={`${square}${piece ? `, ${piece.label}` : ''}${isGuide ? ', suggested move' : ''}`}
+                    aria-label={`${square}${piece ? `, ${piece.label}` : ''}${isGuide ? ', movimiento sugerido' : ''}`}
                     onClick={() => chooseSquare(square)}
                   >
                     {showCenters && isGuide && <span className={styles.centerCrosshair} aria-hidden="true" />}
@@ -208,30 +208,30 @@ export default function ChessMoveHarness() {
           </div>
 
           <div className={styles.boardLegend}>
-            <span><i className={styles.legendDot} /> Suggested square</span>
-            <span><i className={styles.legendRing} /> King alert</span>
+            <span><i className={styles.legendDot} /> Casilla sugerida</span>
+            <span><i className={styles.legendRing} /> Aviso de jaque</span>
           </div>
         </div>
 
         <aside className={styles.coachPanel} aria-live="polite">
           <div className={styles.coachIcon} aria-hidden="true">♞</div>
-          <span className={styles.kicker}>Coach tip</span>
-          <h3>{feedback === 'wrong' ? 'Almost there!' : feedback === 'correct' ? 'Great choice!' : 'Your turn'}</h3>
+          <span className={styles.kicker}>Ayuda del tablero</span>
+          <h3>{feedback === 'wrong' ? '¡Casi!' : feedback === 'correct' ? '¡Buena jugada!' : 'Tu turno'}</h3>
           <p>
             {feedback === 'wrong'
-              ? 'Try one of the marked squares.'
+              ? 'Prueba una de las casillas marcadas.'
               : feedback === 'correct'
-                ? 'Nice! You found one of the marked squares.'
+                ? 'Encontraste una de las casillas marcadas.'
                 : activeCopy.prompt}
           </p>
           <div className={styles.controls}>
             <label className={styles.toggleRow}>
               <input type="checkbox" checked={showCenters} onChange={(event) => setShowCenters(event.target.checked)} />
-              <span>Show center guides</span>
+              <span>Marcar el centro de las casillas</span>
             </label>
             <div className={styles.centerProof}>
               <span className={styles.proofIcon}>◎</span>
-              <span><strong>Centered by design</strong><br />Each dot is centered inside its own square.</span>
+              <span><strong>Guías centradas</strong><br />Cada punto aparece en el centro de su casilla.</span>
             </div>
           </div>
         </aside>

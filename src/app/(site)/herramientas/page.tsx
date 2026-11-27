@@ -9,7 +9,7 @@ const URL = 'https://www.idiomaswl.com/herramientas'
 export const metadata: Metadata = {
   title: 'Herramientas gratuitas para estudiar idiomas',
   description:
-    'Utilidades abiertas de Idiomas WeLearn: vocabulario, podcasts para preparar exámenes, quizes y transcripción fonética. Sin registro.',
+    'Practica ajedrez en inglés y explora vocabulario, podcasts de exámenes, quizzes y transcripción fonética con WeLearn. Sin registro.',
   alternates: { canonical: URL },
   // Sin esto se hereda el `openGraph` del layout raíz entero, `url` incluida: compartir
   // esta página por WhatsApp enseñaba el título del sitio y un enlace a la portada.
@@ -46,6 +46,15 @@ interface Tool {
 }
 
 const TOOLS: Tool[] = [
+  {
+    slug: 'practica-ajedrez',
+    href: '/kids/ingles-ajedrez/practica',
+    flag: '♞',
+    name: 'Práctica de ajedrez',
+    tagline: 'Resuelve mates, tácticas y finales con pistas. Tu progreso se guarda en este dispositivo.',
+    detail: 'En inglés · dificultad adaptativa',
+    color: SKILL_ACCENT.escritura.light,
+  },
   {
     slug: 'podcasts-examenes',
     href: '/podcasts',
