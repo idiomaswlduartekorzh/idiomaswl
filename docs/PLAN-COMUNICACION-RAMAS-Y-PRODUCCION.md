@@ -69,16 +69,25 @@ Fecha de corte: 25 de agosto de 2026.
 
 ## Matecraft en Herramientas y página comercial de ajedrez en español — 26 de noviembre de 2026
 
-- Trabajo `chess-tools-spanish-seo-20261126`, responsable Codex. Estado `EN_VALIDACION`.
-  Rama `codex/chess-tools-spanish-seo-20261126`, base `origin/main@43297ba2`.
+- Trabajo `chess-tools-spanish-seo-20261126`, responsable Codex. Estado `DESPLEGADO`.
+  Rama `codex/chess-tools-spanish-seo-20261126@b255f65b`, base `origin/main@43297ba2`.
+  Integrada por squash en el [PR #74](https://github.com/idiomaswlduartekorzh/idiomaswl/pull/74).
 - Alcance. Añadir acceso directo a Matecraft en `/herramientas` y restaurar el
   español en la página comercial `/kids/ingles-ajedrez`, incluida su
   demostración y los metadatos de búsqueda y redes. La práctica
   `/kids/ingles-ajedrez/practica` conserva su interfaz en inglés.
 - Archivos compartidos. Navegación, accesibilidad, WhatsApp y componentes de
   Kids. Sin dependencias nuevas ni cambios en la aplicación de práctica.
-- Pasaron la línea base, el catálogo de Práctica, la navegación y los controles
-  de SEO locales.
+- Validación. Pasaron la línea base, el catálogo de Práctica, la navegación,
+  los controles de SEO, TypeScript y la compilación de producción.
+  [Content integrity](https://github.com/idiomaswlduartekorzh/idiomaswl/actions/runs/45913871808).
+- Producción. Vercel publicó `main@38a9d5ce026fa71b18550338d4478a726240a91d`.
+  Las tres rutas respondieron HTTP 200. Chrome y WebKit táctil abrieron la
+  práctica en inglés desde Herramientas y volvieron a la página comercial en
+  español. Se comprobó el título y la descripción comerciales en español, el
+  locale `es_CO` y la URL canónica en el sitemap. Pasaron las 49 rutas y los
+  17 audios de la prueba pública del sitio.
+  [Despliegue de Vercel](https://vercel.com/idiomaswlduartekorzhs-projects/idiomaswl/14bGdo3H5XCYFnPfisruDKrDPPRu).
 
 ## Ajedrez Kids y Matecraft en inglés — 25 de noviembre de 2026
 
