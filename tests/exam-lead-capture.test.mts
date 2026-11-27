@@ -6,6 +6,8 @@ import { dirname, resolve } from 'node:path'
 
 import {
   isPlausibleEmail,
+  isPlausibleWhatsapp,
+  normalizeLeadWhatsapp,
   normalizeEmail,
   normalizeWhatsapp,
 } from '../src/lib/leads/contact.ts'
@@ -22,6 +24,27 @@ test('normaliza contactos utilizables y rechaza datos evidentemente falsos', () 
   assert.equal(normalizeWhatsapp('+1234567890123456'), null)
   assert.equal(normalizeEmail('  Persona@Example.COM '), 'persona@example.com')
   assert.equal(isPlausibleEmail('correo-raro'), false)
+})
+
+test('el WhatsApp que acepta el alumno llega en el formato que exige la base de datos', () => {
+  for (const [typed, canonical] of [
+    ['+1 202 555 0147', '+12025550147'],
+    ['300 123 4567', '+573001234567'],
+    ['57 (300) 123-4567', '+573001234567'],
+    ['+44 20 7946 0958', '+442079460958'],
+    ['00 44 20 7946 0958', '+442079460958'],
+    ['+507 612 3456', '+5076123456'],
+  ]) {
+    assert.equal(isPlausibleWhatsapp(typed), true)
+    assert.equal(normalizeLeadWhatsapp(typed), canonical)
+    assert.match(canonical, /^\+[1-9]\d{9,14}$/)
+    assert.equal(normalizeLeadWhatsapp(canonical), canonical)
+  }
+  for (const invalid of ['123', '+659123456', '+000 1234 567', '12+34567890', '12025550147', 'texto3001234567', '1111111111']) {
+    assert.equal(normalizeLeadWhatsapp(invalid), null)
+    assert.equal(isPlausibleWhatsapp(invalid), false)
+  }
+  assert.match(source('src/lib/actions/saveLead.ts'), /whatsapp = normalizeLeadWhatsapp\(input.whatsapp\)/)
 })
 
 test('los runners protegen el resultado con lead persistido o acceso autenticado por examen', () => {

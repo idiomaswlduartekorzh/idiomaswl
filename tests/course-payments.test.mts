@@ -39,6 +39,7 @@ test('WhatsApp number accepts Colombian local entry and international E.164',()=
  assert.equal(normalizeWhatsAppPhone('+57 300 123 4567'),'+573001234567');
  assert.equal(normalizeWhatsAppPhone('573001234567'),'+573001234567');
  assert.equal(normalizeWhatsAppPhone('+1 (415) 555-2671'),'+14155552671');
+ assert.equal(normalizeWhatsAppPhone('+507 612 3456'),'+5076123456');
  for(const value of ['123','300-12','+000 300 123 4567','abc3001234567'])assert.equal(normalizeWhatsAppPhone(value),null);
 });
 test('released course sales retain an emergency stop',()=>{

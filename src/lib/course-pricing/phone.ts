@@ -6,9 +6,9 @@ export function normalizeWhatsAppPhone(value: unknown): string | null {
   if (!input || /[\x00-\x1f\x7f]/.test(input) || !/^\+?[\d\s().-]+$/.test(input)) return null;
 
   const digits = input.replace(/\D/g, '');
+  if (input.startsWith('+')) return /^[1-9]\d{7,14}$/.test(digits) ? `+${digits}` : null;
   if (/^\d{10}$/.test(digits)) return `+57${digits}`;
   if (/^57\d{10}$/.test(digits)) return `+${digits}`;
-  if (input.startsWith('+') && /^[1-9]\d{7,14}$/.test(digits)) return `+${digits}`;
 
   return null;
 }

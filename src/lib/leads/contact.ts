@@ -1,20 +1,20 @@
+import { normalizeWhatsAppPhone } from '../course-pricing/phone.ts'
+
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-/**
- * Conserva un formato legible para el panel, pero exige suficientes dígitos
- * para que el contacto pueda usarse de verdad. El máximo de 15 viene del
- * formato telefónico internacional; 10 cubre los celulares colombianos.
- */
-export function normalizeWhatsapp(value: unknown): string | null {
+/** Match the contact-capture RPC's E.164 contract while accepting a local Colombian number. */
+export function normalizeLeadWhatsapp(value: unknown): string | null {
   if (typeof value !== 'string') return null
+  const input = value.normalize('NFKC').trim().replace(/^00[ ]*(?=[1-9])/, '+')
+  if (/^(\d)\1+$/.test(input.replace(/\D/g, ''))) return null
+  const phone = normalizeWhatsAppPhone(input)
+  return phone && /^\+[1-9]\d{9,14}$/.test(phone) ? phone : null
+}
 
-  const cleaned = value.replace(/[^\d+\s\-()]/g, '').trim()
-  const digits = cleaned.replace(/\D/g, '')
-
-  if (digits.length < 10 || digits.length > 15) return null
-  if (/^(\d)\1+$/.test(digits)) return null
-
-  return cleaned.slice(0, 24)
+/** Keep a readable phone label for callers that display the user's input. */
+export function normalizeWhatsapp(value: unknown): string | null {
+  if (typeof value !== 'string' || !normalizeLeadWhatsapp(value)) return null
+  return value.normalize('NFKC').trim().slice(0, 24)
 }
 
 export function normalizeEmail(value: unknown): string | null {
@@ -25,7 +25,7 @@ export function normalizeEmail(value: unknown): string | null {
 }
 
 export function isPlausibleWhatsapp(value: unknown): boolean {
-  return normalizeWhatsapp(value) !== null
+  return normalizeLeadWhatsapp(value) !== null
 }
 
 export function isPlausibleEmail(value: unknown): boolean {

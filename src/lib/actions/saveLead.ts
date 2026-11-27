@@ -3,7 +3,7 @@
 import { createHmac } from 'node:crypto';
 import { headers } from 'next/headers';
 import { createAdminClient } from '@/lib/supabase/admin';
-import { normalizeEmail, normalizeWhatsapp } from '@/lib/leads/contact';
+import { normalizeEmail, normalizeLeadWhatsapp } from '@/lib/leads/contact';
 import { createExamLeadReceipt } from '@/lib/exams/lead-receipt.server';
 import { grantExamScoreAccess } from '@/lib/exams/score-access.server';
 
@@ -60,7 +60,7 @@ export async function saveLead(input: LeadInput): Promise<{ ok: boolean; id?: st
   // Honeypots receive a successful-looking response so bots do not learn how to bypass it.
   if (sanitize(input.company, 120)) return { ok: true };
 
-  const whatsapp = normalizeWhatsapp(input.whatsapp);
+  const whatsapp = normalizeLeadWhatsapp(input.whatsapp);
   if (!whatsapp) return { ok: false, error: 'Ingresa un WhatsApp válido de 10 a 15 dígitos.' };
 
   const rawEmail = sanitize(input.email, 254);
